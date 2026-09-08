@@ -2,17 +2,44 @@
 
 ### Additions and New Features
 
+- Completed and independently accepted WP-L2, the format-neutral layout compiler. It compiles all
+  18 layouts without output-format imports, uses committed exact font metrics (including
+  quarter-point sizes), and applies 36 pt / 28 pt defaults with 30 pt / 24 pt floors. Its 171
+  focused tests cover recursive inline/handoff/metadata continuation context, grapheme-safe explicit
+  breaks, table and unsupported-fact parity, and grid-stream co-packing with immutable provenance.
+  The complete `lect02a` source deterministically compiles to 99 physical pages; the approximately
+  0.69-second cold compile is informational only. This completes compiler authority, not WP-O1/P1
+  adapter work or the migration's native ODP/LibreOffice acceptance gates.
+
+- Bundled hash-verified OpenDyslexic and PT Sans Narrow font faces with SIL OFL provenance and
+  immutable style selection. Theme loading now exposes real intrinsic face metrics and refuses
+  missing, tampered, or unavailable styles instead of using a system-font substitution.
+
+- Added an execution-ready native ODP layout migration plan. It defines a shared format-neutral
+  physical layout model, direct ODF 1.3 and sibling PPTX adapters, native ODF/SMIL reveals, explicit
+  owners, dependency-ready work packages, and autonomous XML-contract, headless-preservation,
+  PDF/render, and reveal-state acceptance gates.
 - Made `genetics/xlect99-template_2023.otp` the authoritative master-slide theme. Added a validated
   format-neutral reader for its 16:10 page, top gradient, centered title typography, and nine native
   outline levels, plus ODP and PPTX adapters over that shared model.
-- The ODP build now creates editable content, applies the real OTP master and styles, and exports
-  PDF from that themed ODP. PPTX remains an editable interchange artifact that mirrors the same
-  theme.
+- Recorded the target ODP-first artifact graph for the approved migration: the future direct ODP
+  writer will create editable content from the shared layout plan, and PDF will derive from that
+  ODP while PPTX remains an independent interchange artifact. The current build still uses the
+  PPTX-to-ODP bridge until WP-I1 removes it; this entry is a plan/decision record, not completion
+  evidence.
 - Kept layout authoring on a stable 1280x800 logical canvas. The 16:10 ratio is mandatory while the
   template's physical centimeter or inch dimensions are not an authoring constraint.
 
 ### Fixes and Maintenance
 
+- Corrected the native ODP layout evidence so its pruned XML comparator is described as a
+  deterministic structural fixture, while the complete `lect02a` slide 3 deck supplies the real
+  `ODP -> FODP -> ODP` LibreOffice preservation proof. Layout identifiers are now documented as
+  document-local names validated through their resolved placeholder topology.
+- Extended the XML-only native-layout transition contract with the captured compatible alternate
+  topology. It retains the One Box title and primary outline exactly once, permits only one empty
+  secondary outline, and rejects duplicate or malformed slot mappings without a LibreOffice or
+  human interaction dependency.
 - Ran the requested six-pass code audit over the native Djot theme, legacy importer normalization,
   screenshot-fallback removal, tests, documentation, dead code, and comments.
 - Removed permanent tests that pinned tunable theme coordinates, exact gradient colors, the dense
@@ -28,6 +55,83 @@
 
 ### Decisions and Failures
 
+- Approved the executable list-continuation and leading contract for the native layout migration.
+  Ordinary outline text uses the OTP's 130 percent (1.30em) nominal line spacing; the compiler
+  carries an exact per-wrapped-line safe advance of `max(nominal, mixed-face ascent+descent)` plus
+  resolved list start/hanging indents in the physical plan, and both adapters serialize those facts
+  unchanged. Overflow reduces only to 24 pt before ordinary atomic partitioning; only an oversized
+  root-list subtree may recursively split between descendant subtrees. Repeated ancestry is explicit
+  static `continuation_context`, and a too-tall leaf fails at its source location. WP-L2/T1/T2/O1/
+  P1/V2 now have plan, projection, and LibreOffice parity gates; this records required work and does
+  not claim it is implemented.
+- Added the architect-approved context-handoff continuation addendum. The physical plan carries an
+  ordered `ContinuationContext`, display mode (`INLINE_STATIC`, `HANDOFF_STATIC`, or
+  `METADATA_ONLY`), and physical kind (`NORMAL`, `AUTHORED`, or `CONTEXT_HANDOFF`). A trail and new
+  descendant share a page only when they fit; otherwise one static handoff page immediately precedes
+  the detached descendant, with metadata-only context when the trail itself cannot fit. The
+  descendant retains its level and must fit or fail source-locally. ODP/PPTX project nonvisual trails
+  into equivalent accessibility descriptions and generated continuation notes. WP-L2/O1/P1/V2 own
+  scripted fixture, cross-adapter, `lect02a` line 293, Student Profile line 470, and full-deck gates;
+  this is a target contract, not completion evidence.
+- Approved `DECOMPOSE_TO_ONE_PANEL` as the only overflow transition for eligible generic grids:
+  `two-panels`, `one-plus-two-panels`, `two-plus-one-panels`, `stacked-panels`,
+  `two-over-one-panels`, `four-panels`, and `six-panels`. Only a failed true-fit preflight with
+  `paginate: true` may gather all nonempty slots in reading order and route them through the shared
+  one-panel splitter; fitting grids remain unchanged. Resulting pages retain one-panel topology,
+  repeat H1/context/qualified notes but not slot labels, use canonical image/table placement,
+  preserve origin provenance and deterministic identities, and place every content unit and reveal
+  once. Semantic layouts are excluded, while `paginate: false` and excluded or unsplittable input
+  fail at the source location. The migration acceptance gate now includes `lect02a` line 362 and
+  full-deck public-CLI success plus ODP/PPTX physical-page parity.
+- Approved compiler-owned continuation policy for the native migration. A source slide begins as one
+  panel; only true-fit failure with `paginate: true` may create same-topology physical pages, using
+  the latest-fitting mixed partition while preserving paragraph, root-list-subtree, table-row-group,
+  and atomic boundaries. Continuations repeat the H1 and active H2 without stranded headings, use
+  deterministic `source_id-pN` identities, reset reveals per page, repeat qualified notes, and use
+  physical page numbers. `paginate: false` and unsplittable atomic content fail at their source
+  location before serialization. The acceptance gate requires `lect02a` line 112 to produce two or
+  more pages at 24 pt or above with matching ODP/PPTX count and continuation order.
+- Decomposed the approved layout compiler before WP-L2: `layout_engine.py` is specified as an at-most
+  350-physical-line public API exposing only compilation and layout lookup; declarative contracts
+  live in `_layout_registry.py`, pure fit/pagination work in `_layout_measurement.py`, and plan
+  construction in `_layout_builders.py`. The model ownership layers are
+  `layout_primitives -> layout_content -> layout_model`, while `native_model` remains independent
+  source-semantic input to the compiler. The exact import DAG, physical-line budgets, private-helper
+  isolation, import-graph test, and no-module-at-or-over-1,000-lines gate are part of the migration
+  plan; this is a design record, not an implementation-completion claim.
+- Refined the approved native ODP architecture: `layout_engine.py` is the sole 18-layout compiler;
+  adapters consume `LayoutDeck` only; canonical layout topology now includes semantic placeholder
+  member kinds and geometry while excluding authored content; and ODP XML names are treated as opaque
+  document-local serialization details. Direct ODP retains template masters, styles, and resources,
+  replaces `content.xml`, reconciles the manifest under strict reachability rules, parents local
+  styles to shipped `Default-*`, and assigns deterministic adapter-owned media identities. Fast
+  package/XML tests remain separate from serialized headless LibreOffice E2E preservation evidence.
+- Diagnosed the generated layout failure on slide 3 of `lect02a-2025_announcements`. The blank-layout
+  PPTX intermediate becomes imported `ooxml-rect` custom shapes in ODP, so applying One Box creates
+  new empty placeholders instead of reusing the authored content; replacing the master and styles
+  cannot restore layout identity that the intermediate never supplied.
+- Replaced the planned PPTX-parent architecture with direct native ODP and optional sibling PPTX
+  adapters over one format-neutral layout plan. The theme contract now starts standard titles at
+  36 pt with a 30 pt build floor, and ordinary body/list text at 28 pt with a 24 pt build floor;
+  the compiler rejects below-floor fits before serialization, while native shrink-on-overflow is
+  only a font-metric safety net.
+- Approved WP-T2 as a hard precondition for compiler capacity acceptance: committed, hash-verified
+  OFL font assets and provenance define immutable theme face profiles; Pillow measures styled runs
+  with token-aware line breaks, actual OTP list text-start/hanging indents, and mixed-face line
+  boxes. Missing, changed, unresolved, or substituted faces fail before publication; cache keys
+  include font identity and measurement inputs. OpenDyslexic serves ordinary text, while PT Sans
+  Narrow is limited to its committed applicable URL faces with no invented italic fallback. The
+  rejected `0.25em` heuristic and generic 10-percent width cap cannot determine fit. Offline asset
+  tests and V2 runtime-drift evidence are required before this becomes completion evidence.
+- Rejected `pyuno` as the current automation harness after reproducible host failures: external
+  Python 3.12 segfaults during LibreOffice `pyuno` import or initialization (exit 139), and the
+  bundled LibreOffice Python launcher is killed (exit 137). Completion instead relies on the desired
+  ODP XML contract, captured minimal fixtures, deterministic package-XML transitions and
+  reveal-state interpretation, headless LibreOffice open/save preservation, and PDF/render metrics;
+  UNO is an optional future diagnostic only after its runtime is repaired.
+- Identified an implementation tracking gap: the authoritative OTP and approved minimal ODP fixtures
+  are hidden by broad `*.ot?` and `*.od?` ignore rules and are absent from `HEAD`. The integration
+  work owns narrow allowlists; this documentation update does not use force-add or index workarounds.
 - Simplification retains the same instructional text and genuine content images through an existing
   Djot layout whenever possible; a review diagnostic accompanies content instead of replacing it.
 - The audit found two unresolved importer defects: dense positioned-label normalization currently

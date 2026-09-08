@@ -5,7 +5,7 @@ import itertools
 
 # Local modules
 import slide_lib.importers.geometry as geometry
-import slide_lib.layouts
+import slide_lib.layout_engine
 
 
 TOPOLOGY_MAX_SCORE = .32
@@ -29,10 +29,11 @@ def ordinary_layout_match(
 		return None
 	source = normalized_boxes(bounds)
 	ranked: list[tuple[float, str, tuple[int, ...]]] = []
-	for spec in slide_lib.layouts.LAYOUTS.values():
+	for name in slide_lib.layout_engine.registered_layout_names():
+		spec = slide_lib.layout_engine.layout_contract(name)
 		if not spec.topology_matchable or spec.cell_count != len(bounds):
 			continue
-		slots = slide_lib.layouts.normalized_topology_slots(spec)
+		slots = spec.topology_slots
 		matches = [
 			(score(source, slots, order), order)
 			for order in itertools.permutations(range(len(bounds)))

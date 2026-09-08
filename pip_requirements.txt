@@ -1,4 +1,5 @@
 defusedxml  # Safe XML parsing for ODP slide imports
 Pillow  # Validate extracted raster image dimensions and content
+fonttools  # Read metrics from bundled, hash-verified layout fonts
 python-pptx  # Extract normalized slide text, images, notes, and geometry
 rich  # Concise presentation-build progress, summaries, and error panels

@@ -29,5 +29,11 @@ site/
 slide_*source.png
 *.ot?
 *.od?
+# Authoritative native-layout template and minimal ODP semantic fixtures.
+!genetics/xlect99-template_2023.otp
+!tests/fixtures/odp_native_layouts/*.odp
+# Licensed layout-measurement assets are source inputs, not generated OpenType output.
+!assets/fonts/**/*.otf
+!assets/fonts/**/*.ttf
 *.pdf
 *.pptx

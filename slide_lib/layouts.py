@@ -19,6 +19,7 @@ import slide_lib.layout_validation
 import slide_lib.editable_text
 import slide_lib.pptx_animation
 import slide_lib.pptx_theme
+import slide_lib._legacy_pptx_animation
 import slide_lib.presentation_theme
 
 
@@ -32,18 +33,19 @@ TITLE_TOP = 52.0
 CONTENT_BOTTOM = 754.0
 CELL_GUTTER = 42.0
 GRID_GUTTER = 24.0
-LOGICAL_PX_TO_POINTS = slide_lib.presentation_theme.POINTS_PER_LOGICAL_PIXEL
-STANDARD_TITLE_SIZE = THEME.standard_title_size
+STANDARD_TITLE_SIZE_PT = THEME.standard_title_size_pt
+STANDARD_BODY_SIZE_PT = THEME.ordinary_body_size_pt
+TITLE_FLOOR_SIZE_PT = THEME.title_floor_size_pt
+BODY_FLOOR_SIZE_PT = THEME.body_floor_size_pt
 BODY_LINE_HEIGHT = 1.3
 LIST_ITEM_SPACE_EM = 0.25
-MIN_READABLE_BODY_SIZE = 14.0
-FONT_NAME = THEME.title_font_name
+FONT_NAME = THEME.western_font_name
 URL_FONT_NAME = "PT Sans Narrow"
 ACCENT = RGBColor(0x24, 0x57, 0x8F)
 FOREGROUND = RGBColor(0x17, 0x20, 0x33)
 MUTED = RGBColor(0x52, 0x61, 0x76)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
-MULTIPLE_CHOICE_ANSWER_RECTANGLE = (820.0, 618.0, 360.0, 108.0)
+MULTIPLE_CHOICE_ANSWER_RECTANGLE = (600.0, 496.0, 580.0, 230.0)
 MULTIPLE_CHOICE_POPUP_GUTTER = 24.0
 # The full-width question stops above the popup's reserved bottom-right footprint.
 MULTIPLE_CHOICE_QUESTION_RECTANGLE = (LEFT, 82.0, RIGHT - LEFT,
@@ -72,7 +74,7 @@ class LayoutSpec:
 class TitleBodyPlan:
 	"""One validated title and content allocation before native shapes exist."""
 	title_rectangle: tuple[float, float, float, float] | None
-	title_size: float
+	title_size_pt: float
 	content_rectangle: tuple[float, float, float, float]
 	vertical_title: bool
 
@@ -95,21 +97,15 @@ class FlowStep:
 class CellFlowPlan:
 	"""One preflight-approved ordered text/image flow and shared text size."""
 	steps: tuple[FlowStep, ...]
-	text_size: float
-
-
+	text_size_pt: float
 #============================================
 def px(value: float) -> Emu:
 	"""Convert a 1280x800 logical coordinate to template-scaled Office EMUs."""
 	return Emu(round(value * PX))
-
-
 #============================================
-def logical_px_to_pt(value: float) -> float:
-	"""Convert one logical font unit to Office points exactly once."""
-	return value * LOGICAL_PX_TO_POINTS
-
-
+def point_height_in_logical_px(size_pt: float) -> float:
+	"""Convert physical point height into the logical canvas for layout geometry."""
+	return float(Pt(size_pt)) / PX
 #============================================
 def inline_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 	"""Return visible authored text while retaining native runs for rendering."""
@@ -124,8 +120,6 @@ def inline_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 		else:
 			parts.append(inline_text(inline.children))
 	return "".join(parts).strip()
-
-
 #============================================
 def add_textbox(slide: object, left: float, top: float, width: float, height: float,
 		vertical_anchor: object = MSO_ANCHOR.TOP, vertical_text: bool = False) -> object:
@@ -148,56 +142,48 @@ def add_textbox(slide: object, left: float, top: float, width: float, height: fl
 	if vertical_text:
 		body_properties.set("vert", "vert")
 	return frame
-
-
 #============================================
-def write_run(run: object, text: str, size: float, color: object, bold: bool = False,
+def write_run(run: object, text: str, size_pt: float, color: object, bold: bool = False,
 		italic: bool = False, url: str | None = None, displayed_url: bool = False) -> None:
 	"""Apply the repository font contract to one editable run."""
 	run.text = text
 	run.font.name = URL_FONT_NAME if displayed_url else FONT_NAME
-	run.font.size = Pt(logical_px_to_pt(size))
+	run.font.size = Pt(size_pt)
 	run.font.bold = bold
 	run.font.italic = italic
 	run.font.color.rgb = color
 	if url is not None:
 		run.hyperlink.address = url
 		run.font.underline = True
-
-
 #============================================
-def add_inline_runs(paragraph: object, inlines: tuple[slide_lib.native_model.Inline, ...], size: float,
+def add_inline_runs(paragraph: object, inlines: tuple[slide_lib.native_model.Inline, ...], size_pt: float,
 		color: object = FOREGROUND, bold: bool = False, italic: bool = False,
 		url: str | None = None, displayed_url: bool = False) -> None:
 	"""Write the typed inline tree as editable, formatted Office text runs."""
 	for inline in inlines:
 		if isinstance(inline, slide_lib.native_model.Text):
-			write_run(paragraph.add_run(), inline.value, size, color, bold, italic, url, displayed_url)
+			write_run(paragraph.add_run(), inline.value, size_pt, color, bold, italic, url, displayed_url)
 		elif isinstance(inline, slide_lib.native_model.InlineCode):
-			write_run(paragraph.add_run(), inline.value, size, color, bold, italic, url, displayed_url)
+			write_run(paragraph.add_run(), inline.value, size_pt, color, bold, italic, url, displayed_url)
 		elif isinstance(inline, slide_lib.native_model.InlineMath):
 			raise LayoutError("InlineMath requires source validation before native rendering")
 		elif isinstance(inline, slide_lib.native_model.Break):
 			paragraph.add_line_break()
 		elif isinstance(inline, slide_lib.native_model.Strong):
-			add_inline_runs(paragraph, inline.children, size, color, True, italic, url, displayed_url)
+			add_inline_runs(paragraph, inline.children, size_pt, color, True, italic, url, displayed_url)
 		elif isinstance(inline, slide_lib.native_model.Emphasis):
-			add_inline_runs(paragraph, inline.children, size, color, bold, True, url, displayed_url)
+			add_inline_runs(paragraph, inline.children, size_pt, color, bold, True, url, displayed_url)
 		elif isinstance(inline, slide_lib.native_model.Link):
 			is_literal_url = inline_text(inline.children) == inline.url
-			add_inline_runs(paragraph, inline.children, size, ACCENT, bold, italic, inline.url, is_literal_url)
+			add_inline_runs(paragraph, inline.children, size_pt, ACCENT, bold, italic, inline.url, is_literal_url)
 	if not paragraph.runs:
-		write_run(paragraph.add_run(), "", size, color, bold, italic, url, displayed_url)
-
-
+		write_run(paragraph.add_run(), "", size_pt, color, bold, italic, url, displayed_url)
 #============================================
 def flatten_list(block: slide_lib.native_model.ListBlock, level: int = 0) -> list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]]:
 	"""Flatten nested lists into Office paragraphs, preserving ordered starts."""
 	return [(paragraph.inlines, paragraph.level + level, paragraph.ordered,
 		paragraph.paragraph_only, paragraph.start) for paragraph in
 		slide_lib.editable_text.project_list(block)]
-
-
 #============================================
 def body_parts(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[list[slide_lib.native_model.Heading], list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], list[slide_lib.native_model.Image], list[slide_lib.native_model.Table]]:
 	"""Classify already typed blocks without reparsing canonical Markdown."""
@@ -217,17 +203,16 @@ def body_parts(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[list[s
 		elif isinstance(block, slide_lib.native_model.Table):
 			tables.append(block)
 	return headings, items, images, tables
-
-
 #============================================
-def wrapped_line_count(inlines: tuple[slide_lib.native_model.Inline, ...], size: float, width: float,
+def wrapped_line_count(inlines: tuple[slide_lib.native_model.Inline, ...], size_pt: float, width: float,
 		level: int = 0, list_item: bool = False) -> int:
-	"""Estimate wrapped editable text lines conservatively."""
-	if list_item and level >= len(slide_lib.pptx_theme.LIST_LEVEL_STYLES):
-		raise LayoutError(f"list nesting exceeds the {len(slide_lib.pptx_theme.LIST_LEVEL_STYLES)} native theme levels")
-	text_inset = slide_lib.pptx_theme.LIST_LEVEL_STYLES[level].text_position if list_item else 0.0
-	available_width = max(width - text_inset, size * 3)
-	characters_per_line = max(int(available_width / (size * 0.54)), 1)
+	"""Estimate wrapped editable text lines from point-valued typography."""
+	if list_item and level >= len(THEME.list_levels):
+		raise LayoutError(f"list nesting exceeds the {len(THEME.list_levels)} native theme levels")
+	text_inset = THEME.list_levels[level].text_position if list_item else 0.0
+	logical_character_height = point_height_in_logical_px(size_pt)
+	available_width = max(width - text_inset, logical_character_height * 3)
+	characters_per_line = max(int(available_width / (logical_character_height * 0.54)), 1)
 	words = inline_text(inlines).split()
 	if not words:
 		return 1
@@ -239,29 +224,24 @@ def wrapped_line_count(inlines: tuple[slide_lib.native_model.Inline, ...], size:
 			current += len(word) + (1 if current else 0)
 		lines += max((len(word) - 1) // characters_per_line, 0)
 	return lines
-
-
 #============================================
-def estimate_items_height(items: list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], size: float, width: float) -> float:
-	"""Estimate native paragraph height in CSS pixels."""
-	return sum(wrapped_line_count(inlines, size, width, level, not paragraph_only) *
-		size * BODY_LINE_HEIGHT + size * LIST_ITEM_SPACE_EM
+def estimate_items_height(items: list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], size_pt: float, width: float) -> float:
+	"""Estimate native paragraph height in logical canvas units from points."""
+	logical_line_height = point_height_in_logical_px(size_pt)
+	return sum(wrapped_line_count(inlines, size_pt, width, level, not paragraph_only) *
+		logical_line_height * BODY_LINE_HEIGHT + logical_line_height * LIST_ITEM_SPACE_EM
 		for inlines, level, _ordered, paragraph_only, _start in items)
-
-
 #============================================
 def fit_body_size(item_sets: list[list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]]], width: float,
-		height: float, preferred_size: float, source: slide_lib.native_model.SourceLocation,
+		height: float, preferred_size_pt: float, source: slide_lib.native_model.SourceLocation,
 		context: str) -> float:
-	"""Choose one shared readable body size or report a capacity violation."""
-	for quarter_points in range(int(preferred_size * 4), int(MIN_READABLE_BODY_SIZE * 4) - 1, -1):
-		size = quarter_points / 4
-		if all(estimate_items_height(items, size, width) <= height for items in item_sets):
-			return size
+	"""Choose one shared readable body point size or report a capacity violation."""
+	for quarter_points in range(int(preferred_size_pt * 4), int(BODY_FLOOR_SIZE_PT * 4) - 1, -1):
+		size_pt = quarter_points / 4
+		if all(estimate_items_height(items, size_pt, width) <= height for items in item_sets):
+			return size_pt
 	raise LayoutError(f"{source.path}:{source.line}: {context} content cannot fit within the supported readable minimum of "
-		f"{MIN_READABLE_BODY_SIZE:g} logical units")
-
-
+		f"{BODY_FLOOR_SIZE_PT:g} pt")
 #============================================
 def table_dimensions(table: slide_lib.native_model.Table) -> tuple[int, int]:
 	"""Return already validated native table row and column counts."""
@@ -270,12 +250,14 @@ def table_dimensions(table: slide_lib.native_model.Table) -> tuple[int, int]:
 
 
 #============================================
-def estimate_table_height(table: slide_lib.native_model.Table, size: float, width: float) -> float:
+def estimate_table_height(table: slide_lib.native_model.Table, size_pt: float, width: float) -> float:
 	"""Estimate equal-column wrapped cell rows within one native table rectangle."""
 	_, column_count = table_dimensions(table)
 	cell_width = width / column_count
 	rows = ((table.headers,) if table.headers else ()) + table.rows
-	return sum(max(wrapped_line_count(cell, size, cell_width) for cell in row) * size * BODY_LINE_HEIGHT +
+	logical_line_height = point_height_in_logical_px(size_pt)
+	return sum(max(wrapped_line_count(cell, size_pt, cell_width) for cell in row) *
+		logical_line_height * BODY_LINE_HEIGHT +
 		8 for row in rows)
 
 
@@ -283,13 +265,13 @@ def estimate_table_height(table: slide_lib.native_model.Table, size: float, widt
 def fit_table_size(table: slide_lib.native_model.Table, width: float, height: float,
 		context: str) -> float:
 	"""Choose readable shared native table type before any table shape allocation."""
-	for quarter_points in range(22 * 4, int(MIN_READABLE_BODY_SIZE * 4) - 1, -1):
-		size = quarter_points / 4
-		if estimate_table_height(table, size, width) <= height:
-			return size
+	for quarter_points in range(int(STANDARD_BODY_SIZE_PT * 4), int(BODY_FLOOR_SIZE_PT * 4) - 1, -1):
+		size_pt = quarter_points / 4
+		if estimate_table_height(table, size_pt, width) <= height:
+			return size_pt
 	raise layout_error(table.location,
 		f"{context} table cannot fit within the supported readable minimum of "
-		f"{MIN_READABLE_BODY_SIZE:g} logical units")
+		f"{BODY_FLOOR_SIZE_PT:g} pt")
 
 
 #============================================
@@ -298,7 +280,7 @@ def render_table(slide: object, table: slide_lib.native_model.Table,
 	"""Render one selectable native table with its typed editable cell runs."""
 	left, top, width, height = rectangle
 	row_count, column_count = table_dimensions(table)
-	size = fit_table_size(table, width, height, context)
+	size_pt = fit_table_size(table, width, height, context)
 	shape = slide.shapes.add_table(row_count, column_count, px(left), px(top), px(width), px(height))
 	native_table = shape.table
 	rows = ((table.headers, True),) if table.headers else ()
@@ -314,27 +296,27 @@ def render_table(slide: object, table: slide_lib.native_model.Table,
 				cell.fill.fore_color.rgb = ACCENT
 			paragraph = cell.text_frame.paragraphs[0]
 			paragraph.alignment = PP_ALIGN.LEFT
-			add_inline_runs(paragraph, inlines, size, WHITE if is_header else FOREGROUND)
+			add_inline_runs(paragraph, inlines, size_pt, WHITE if is_header else FOREGROUND)
 			if is_header:
 				for run in paragraph.runs:
 					run.font.bold = True
 
 
 #============================================
-def write_items(frame: object, items: list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], size: float,
+def write_items(frame: object, items: list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], size_pt: float,
 		first_paragraph: object | None = None) -> None:
 	"""Write paragraphs using native bullet and automatic-number OOXML."""
 	for index, (inlines, level, ordered, paragraph_only, start) in enumerate(items):
 		paragraph = first_paragraph if index == 0 and first_paragraph is not None else (
 			frame.paragraphs[0] if index == 0 else frame.add_paragraph())
 		paragraph.level = level
-		paragraph.space_after = Pt(logical_px_to_pt(size * LIST_ITEM_SPACE_EM))
+		paragraph.space_after = Pt(size_pt * LIST_ITEM_SPACE_EM)
 		paragraph.line_spacing = BODY_LINE_HEIGHT
 		try:
-			slide_lib.pptx_theme.apply_list_theme(paragraph, level, ordered, paragraph_only, start)
+			slide_lib.pptx_theme.apply_list_theme(paragraph, level, ordered, paragraph_only, start, THEME)
 		except ValueError as error:
 			raise LayoutError(str(error)) from error
-		add_inline_runs(paragraph, inlines, size)
+		add_inline_runs(paragraph, inlines, size_pt)
 
 
 #============================================
@@ -346,7 +328,7 @@ def add_background(slide: object) -> None:
 		px(SLIDE_WIDTH), px(THEME.top_band_height))
 	accent.fill.solid()
 	accent.fill.fore_color.rgb = ACCENT
-	slide_lib.pptx_theme.apply_top_band_gradient(accent)
+	slide_lib.pptx_theme.apply_top_band_gradient(accent, THEME)
 	accent.line.fill.background()
 
 
@@ -389,7 +371,7 @@ def image_flow_height(deck: slide_lib.native_model.Deck, image: slide_lib.native
 
 #============================================
 def plan_cell_flow(deck: slide_lib.native_model.Deck, cell: slide_lib.native_model.Cell,
-		rectangle: tuple[float, float, float, float], preferred_size: float,
+		rectangle: tuple[float, float, float, float], preferred_size_pt: float,
 		context: str) -> CellFlowPlan | None:
 	"""Allocate source-ordered mixed flow while preserving readable text first."""
 	_, items, images, tables = body_parts(cell.blocks)
@@ -401,9 +383,9 @@ def plan_cell_flow(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mod
 	image_heights = {id(block): image_flow_height(deck, block, width) for block in blocks
 		if isinstance(block, slide_lib.native_model.Image)}
 	gap_height = 12 * (len(blocks) - 1)
-	for quarter_points in range(int(preferred_size * 4), int(MIN_READABLE_BODY_SIZE * 4) - 1, -1):
-		size = quarter_points / 4
-		text_heights = {id(block): estimate_items_height(slide_lib.editable_text.flow_items(block), size, width) for block in blocks
+	for quarter_points in range(int(preferred_size_pt * 4), int(BODY_FLOOR_SIZE_PT * 4) - 1, -1):
+		size_pt = quarter_points / 4
+		text_heights = {id(block): estimate_items_height(slide_lib.editable_text.flow_items(block), size_pt, width) for block in blocks
 			if not isinstance(block, slide_lib.native_model.Image)}
 		remaining_image_height = height - gap_height - sum(text_heights.values())
 		if remaining_image_height > 0:
@@ -416,11 +398,11 @@ def plan_cell_flow(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mod
 					isinstance(block, slide_lib.native_model.Image) else text_heights[id(block)])
 				steps.append(FlowStep(block, (left, y, width, block_height)))
 				y += block_height + 12
-			return CellFlowPlan(tuple(steps), size)
+			return CellFlowPlan(tuple(steps), size_pt)
 	offending = next(block for block in blocks if isinstance(block, slide_lib.native_model.Image))
 	raise layout_error(offending.location,
 		f"{context} ordered text and component-image flow cannot fit within the supported readable minimum of "
-		f"{MIN_READABLE_BODY_SIZE:g} logical units")
+		f"{BODY_FLOOR_SIZE_PT:g} pt")
 
 
 #============================================
@@ -430,22 +412,22 @@ def render_cell_flow(slide: object, deck: slide_lib.native_model.Deck, plan: Cel
 		left, top, width, height = step.rectangle
 		if isinstance(step.block, slide_lib.native_model.Image):
 			picture = add_picture(slide, resolve_image_path(deck, step.block), step.block, left, top, width, height)
-			slide_lib.pptx_animation.register_reveal(slide, picture, step.block.reveal)
+			slide_lib._legacy_pptx_animation.register_reveal(slide, picture, step.block.reveal)
 		else:
 			frame = add_textbox(slide, left, top, width, height)
-			write_items(frame, slide_lib.editable_text.flow_items(step.block), plan.text_size)
-			slide_lib.pptx_animation.register_text_reveal(slide, frame, step.block)
+			write_items(frame, slide_lib.editable_text.flow_items(step.block), plan.text_size_pt)
+			slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, step.block)
 
 
 #============================================
-def title_height(title: slide_lib.native_model.Heading, size: float,
+def title_height(title: slide_lib.native_model.Heading, size_pt: float,
 		width: float, vertical: bool = False) -> float:
-	"""Measure the layout's authored title at its fixed native size."""
+	"""Measure the layout's authored title in logical geometry at a point size."""
 	if vertical:
 		line_count = max(len(inline_text(title.inlines).replace(" ", "")), 1)
 	else:
-		line_count = wrapped_line_count(title.inlines, size, width)
-	return line_count * size * 1.12
+		line_count = wrapped_line_count(title.inlines, size_pt, width)
+	return line_count * point_height_in_logical_px(size_pt) * 1.12
 
 
 #============================================
@@ -455,21 +437,21 @@ def title_and_content_top(slide: object, source: slide_lib.native_model.Slide,
 	if vertical_title:
 		frame = add_textbox(slide, LEFT, 60, 94, 666, vertical_text=True)
 		paragraph = frame.paragraphs[0]
-		size = 38.0
-		add_inline_runs(paragraph, title.inlines, size)
+		size_pt = 38.0
+		add_inline_runs(paragraph, title.inlines, size_pt)
 		for run in paragraph.runs:
 			run.font.bold = True
-		slide_lib.pptx_animation.register_text_reveal(slide, frame, title)
+		slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, title)
 		return 178, 82, RIGHT - 178
-	size = STANDARD_TITLE_SIZE
-	height = title_height(title, size, RIGHT - LEFT)
+	size_pt = STANDARD_TITLE_SIZE_PT
+	height = title_height(title, size_pt, RIGHT - LEFT)
 	frame = add_textbox(slide, LEFT, TITLE_TOP, RIGHT - LEFT, height)
 	paragraph = frame.paragraphs[0]
 	paragraph.alignment = PP_ALIGN.CENTER
-	add_inline_runs(paragraph, title.inlines, size)
+	add_inline_runs(paragraph, title.inlines, size_pt)
 	for run in paragraph.runs:
 		run.font.bold = True
-	slide_lib.pptx_animation.register_text_reveal(slide, frame, title)
+	slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, title)
 	return LEFT, TITLE_TOP + height + 24, RIGHT - LEFT
 
 
@@ -532,14 +514,15 @@ def plan_cell_body(cell: slide_lib.native_model.Cell,
 	headings, _, _, _ = body_parts(cell.blocks)
 	if not headings:
 		return CellBodyPlan(rectangle, None)
-	for quarter_points in range(28 * 4, int(MIN_READABLE_BODY_SIZE * 4) - 1, -1):
-		size = quarter_points / 4
-		heading_height = wrapped_line_count(headings[0].inlines, size, width) * size * 1.2
+	for quarter_points in range(int(STANDARD_BODY_SIZE_PT * 4), int(BODY_FLOOR_SIZE_PT * 4) - 1, -1):
+		size_pt = quarter_points / 4
+		heading_height = wrapped_line_count(headings[0].inlines, size_pt, width) * \
+			point_height_in_logical_px(size_pt) * 1.2
 		if heading_height + 10 <= height:
-			return CellBodyPlan((left, top + heading_height + 10, width, height - heading_height - 10), size)
+			return CellBodyPlan((left, top + heading_height + 10, width, height - heading_height - 10), size_pt)
 	raise layout_error(headings[0].location,
 		f"local H2 cannot fit within the supported readable minimum of "
-		f"{MIN_READABLE_BODY_SIZE:g} logical units")
+		f"{BODY_FLOOR_SIZE_PT:g} pt")
 
 
 #============================================
@@ -551,14 +534,14 @@ def content_cell_rectangles(source: slide_lib.native_model.Slide, spec: LayoutSp
 	left, top, width, height = content
 	bottom = next(cell for cell in source.cells if cell.name == "bottom")
 	_headings, items, _images, tables = body_parts(bottom.blocks)
-	minimum_need = estimate_items_height(items, MIN_READABLE_BODY_SIZE, width) if items else 0.0
-	preferred_need = estimate_items_height(items, 26.0, width) if items else 0.0
+	minimum_need = estimate_items_height(items, BODY_FLOOR_SIZE_PT, width) if items else 0.0
+	preferred_need = estimate_items_height(items, STANDARD_BODY_SIZE_PT, width) if items else 0.0
 	if tables:
-		minimum_need = max(minimum_need, estimate_table_height(tables[0], MIN_READABLE_BODY_SIZE, width))
-		preferred_need = max(preferred_need, estimate_table_height(tables[0], 22.0, width))
+		minimum_need = max(minimum_need, estimate_table_height(tables[0], BODY_FLOOR_SIZE_PT, width))
+		preferred_need = max(preferred_need, estimate_table_height(tables[0], STANDARD_BODY_SIZE_PT, width))
 	top_width = (width - CELL_GUTTER) / 2
 	top_need = max(estimate_items_height(body_parts(next(cell for cell in source.cells
-		if cell.name == name).blocks)[1], MIN_READABLE_BODY_SIZE, top_width) for name in spec.slot_names[:2])
+		if cell.name == name).blocks)[1], BODY_FLOOR_SIZE_PT, top_width) for name in spec.slot_names[:2])
 	bottom_height = max(min(preferred_need, height - GRID_GUTTER - top_need), minimum_need)
 	top_height = height - GRID_GUTTER - bottom_height
 	top_rectangles = grid_rectangles(left, top, width, top_height, 2, 1)
@@ -577,7 +560,7 @@ def readability_failure(source: slide_lib.native_model.Slide, spec: LayoutSpec,
 			continue
 		_, _, width, _ = rectangle
 		_, _, _, body_height = body_plan.body_rectangle
-		if estimate_items_height(items, MIN_READABLE_BODY_SIZE, width) > body_height:
+		if estimate_items_height(items, BODY_FLOOR_SIZE_PT, width) > body_height:
 			body_block = next(block for block in cell.blocks if not isinstance(block,
 				slide_lib.native_model.Heading))
 			return slot_name, body_block.location
@@ -589,28 +572,41 @@ def plan_title_body(source: slide_lib.native_model.Slide, title: slide_lib.nativ
 		spec: LayoutSpec) -> TitleBodyPlan:
 	"""Allocate title and body space before native title or body shapes are written."""
 	if spec.vertical_title:
-		size = 38.0
+		size_pt = 38.0
 		content = (178.0, 82.0, RIGHT - 178, CONTENT_BOTTOM - 82)
 		failure = readability_failure(source, spec, content)
 		if failure is not None:
 			slot_name, location = failure
 			raise layout_error(location,
 				f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
-				f"{MIN_READABLE_BODY_SIZE:g} logical units")
-		return TitleBodyPlan((LEFT, 60.0, 94.0, 666.0), size, content, True)
-	size = STANDARD_TITLE_SIZE
-	title_height_value = title_height(title, size, RIGHT - LEFT)
-	content_top = TITLE_TOP + title_height_value + 24
-	content = (LEFT, content_top, RIGHT - LEFT, CONTENT_BOTTOM - content_top)
-	failure = readability_failure(source, spec, content)
-	if failure is None:
-		return TitleBodyPlan((LEFT, TITLE_TOP, RIGHT - LEFT, title_height_value), size, content, False)
+				f"{BODY_FLOOR_SIZE_PT:g} pt")
+		return TitleBodyPlan((LEFT, 60.0, 94.0, 666.0), size_pt, content, True)
+	for quarter_points in range(int(STANDARD_TITLE_SIZE_PT * 4), int(TITLE_FLOOR_SIZE_PT * 4) - 1, -1):
+		size_pt = quarter_points / 4
+		title_height_value = title_height(title, size_pt, RIGHT - LEFT)
+		content_top = TITLE_TOP + title_height_value + 24
+		content = (LEFT, content_top, RIGHT - LEFT, CONTENT_BOTTOM - content_top)
+		if readability_failure(source, spec, content) is None:
+			return TitleBodyPlan((LEFT, TITLE_TOP, RIGHT - LEFT, title_height_value), size_pt, content, False)
+	title_height_value = title_height(title, TITLE_FLOOR_SIZE_PT, RIGHT - LEFT)
 	maximum_content = (LEFT, TITLE_TOP + 24, RIGHT - LEFT, CONTENT_BOTTOM - TITLE_TOP - 24)
 	if title_height_value <= 170 or readability_failure(source, spec, maximum_content) is not None:
+		failure = readability_failure(source, spec, (LEFT, TITLE_TOP + title_height_value + 24,
+			RIGHT - LEFT, CONTENT_BOTTOM - TITLE_TOP - title_height_value - 24))
+		if failure is None:
+			raise layout_error(title.location,
+				f"{spec.name} H1 cannot fit within the supported readable minimum of "
+				f"{TITLE_FLOOR_SIZE_PT:g} pt")
 		slot_name, location = failure
 		raise layout_error(location,
 			f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
-			f"{MIN_READABLE_BODY_SIZE:g} logical units")
+			f"{BODY_FLOOR_SIZE_PT:g} pt")
+	failure = readability_failure(source, spec, (LEFT, TITLE_TOP + title_height_value + 24,
+		RIGHT - LEFT, CONTENT_BOTTOM - TITLE_TOP - title_height_value - 24))
+	if failure is None:
+		raise layout_error(title.location,
+			f"{spec.name} H1 cannot fit within the supported readable minimum of "
+			f"{TITLE_FLOOR_SIZE_PT:g} pt")
 	slot_name, _ = failure
 	raise layout_error(title.location,
 		f"{spec.name} H1 allocation leaves {slot_name} without its readable body region")
@@ -627,8 +623,8 @@ def plan_content(source: slide_lib.native_model.Slide, spec: LayoutSpec) -> Titl
 	if failure is not None:
 		slot_name, location = failure
 		raise layout_error(location,
-			f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
-			f"{MIN_READABLE_BODY_SIZE:g} logical units")
+				f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
+				f"{BODY_FLOOR_SIZE_PT:g} pt")
 	return TitleBodyPlan(None, 0.0, content, False)
 
 
@@ -643,10 +639,10 @@ def write_planned_title(slide: object, title: slide_lib.native_model.Heading,
 	paragraph = frame.paragraphs[0]
 	if not plan.vertical_title:
 		paragraph.alignment = PP_ALIGN.CENTER
-	add_inline_runs(paragraph, title.inlines, plan.title_size)
+	add_inline_runs(paragraph, title.inlines, plan.title_size_pt)
 	for run in paragraph.runs:
 		run.font.bold = True
-	slide_lib.pptx_animation.register_text_reveal(slide, frame, title)
+	slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, title)
 
 
 #============================================
@@ -666,7 +662,8 @@ def validate_layout_source(source: slide_lib.native_model.Slide) -> LayoutSpec:
 
 
 def render_cell(slide: object, deck: slide_lib.native_model.Deck, cell: slide_lib.native_model.Cell, rectangle: tuple[float, float, float, float],
-		vertical: bool = False, preferred_body_size: float = 22, context: str = "cell") -> None:
+		vertical: bool = False, preferred_body_size_pt: float = STANDARD_BODY_SIZE_PT,
+		context: str = "cell") -> None:
 	"""Render one independently editable cell in its assigned rectangle."""
 	left, top, width, height = rectangle
 	headings, items, images, tables = body_parts(cell.blocks)
@@ -677,14 +674,15 @@ def render_cell(slide: object, deck: slide_lib.native_model.Deck, cell: slide_li
 		heading_size = body_plan.heading_size
 		if heading_size is None:
 			raise LayoutError("local H2 requires a readable cell-body plan")
-		heading_height = wrapped_line_count(heading.inlines, heading_size, width) * heading_size * 1.2
+		heading_height = wrapped_line_count(heading.inlines, heading_size, width) * \
+			point_height_in_logical_px(heading_size) * 1.2
 		head_frame = add_textbox(slide, left, top, width, heading_height, vertical_text=vertical)
 		heading_paragraph = head_frame.paragraphs[0]
 		add_inline_runs(heading_paragraph, heading.inlines, heading_size)
 		for run in heading_paragraph.runs:
 			run.font.bold = True
-		slide_lib.pptx_animation.register_text_reveal(slide, head_frame, heading)
-	flow_plan = plan_cell_flow(deck, cell, body_plan.body_rectangle, preferred_body_size, context)
+		slide_lib._legacy_pptx_animation.register_text_reveal(slide, head_frame, heading)
+	flow_plan = plan_cell_flow(deck, cell, body_plan.body_rectangle, preferred_body_size_pt, context)
 	if flow_plan is not None:
 		render_cell_flow(slide, deck, flow_plan)
 		return
@@ -696,24 +694,24 @@ def render_cell(slide: object, deck: slide_lib.native_model.Deck, cell: slide_li
 		for index, image in enumerate(images):
 			picture = add_picture(slide, resolve_image_path(deck, image), image,
 				body_left + index * (image_width + gap), body_top, image_width, body_height)
-			slide_lib.pptx_animation.register_reveal(slide, picture, image.reveal)
+			slide_lib._legacy_pptx_animation.register_reveal(slide, picture, image.reveal)
 	elif items:
 		text_blocks = tuple(block for block in cell.blocks if isinstance(block,
 			(slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
 		item_sets = [slide_lib.editable_text.flow_items(block) for block in text_blocks]
-		size = fit_body_size(item_sets if any(slide_lib.editable_text.has_reveal(block) for block in text_blocks) else [items],
-			body_width, body_height, preferred_body_size, text_blocks[0].location, context)
+		size_pt = fit_body_size(item_sets if any(slide_lib.editable_text.has_reveal(block) for block in text_blocks) else [items],
+				body_width, body_height, preferred_body_size_pt, text_blocks[0].location, context)
 		if any(slide_lib.editable_text.has_reveal(block) for block in text_blocks):
 			y = body_top
 			for block, block_items in zip(text_blocks, item_sets):
-				block_height = estimate_items_height(block_items, size, body_width)
+				block_height = estimate_items_height(block_items, size_pt, body_width)
 				frame = add_textbox(slide, body_left, y, body_width, block_height, vertical_text=vertical)
-				write_items(frame, block_items, size)
-				slide_lib.pptx_animation.register_text_reveal(slide, frame, block)
+				write_items(frame, block_items, size_pt)
+				slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, block)
 				y += block_height
 		else:
 			frame = add_textbox(slide, body_left, body_top, body_width, body_height, vertical_text=vertical)
-			write_items(frame, items, size)
+			write_items(frame, items, size_pt)
 
 
 #============================================
@@ -735,21 +733,24 @@ def build_blank(slide: object, source: object, deck: object, spec: LayoutSpec) -
 def build_title_slide(slide: object, source: slide_lib.native_model.Slide, deck: slide_lib.native_model.Deck, spec: LayoutSpec) -> None:
 	"""Render centered title and optional subtitle."""
 	headings, _, _, _ = body_parts(source.blocks)
-	title_size_value = 60.0
+	title_size_pt = 60.0
+	subtitle_size_pt = 31.0
 	if any(heading.reveal is not None for heading in headings):
-		title_heights = [wrapped_line_count(heading.inlines, title_size_value if index == 0 else 31, 1060) *
-			(title_size_value if index == 0 else 31) * 1.12 for index, heading in enumerate(headings)]
+		title_heights = [wrapped_line_count(heading.inlines,
+			title_size_pt if index == 0 else subtitle_size_pt, 1060) *
+			point_height_in_logical_px(title_size_pt if index == 0 else subtitle_size_pt) * 1.12
+			for index, heading in enumerate(headings)]
 		gutter = 18.6666666667
 		top = 180 + (390 - sum(title_heights) - gutter * (len(headings) - 1)) / 2
 		for index, (heading, height) in enumerate(zip(headings, title_heights)):
 			frame = add_textbox(slide, 110, top, 1060, height, MSO_ANCHOR.MIDDLE)
 			paragraph = frame.paragraphs[0]
 			paragraph.alignment = PP_ALIGN.CENTER
-			add_inline_runs(paragraph, heading.inlines, title_size_value if index == 0 else 31,
+			add_inline_runs(paragraph, heading.inlines, title_size_pt if index == 0 else subtitle_size_pt,
 				FOREGROUND if index == 0 else MUTED)
 			for run in paragraph.runs:
 				run.font.bold = index == 0
-			slide_lib.pptx_animation.register_text_reveal(slide, frame, heading)
+			slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, heading)
 			top += height + gutter
 		return
 	frame = add_textbox(slide, 110, 180, 1060, 390, MSO_ANCHOR.MIDDLE)
@@ -757,11 +758,11 @@ def build_title_slide(slide: object, source: slide_lib.native_model.Slide, deck:
 		paragraph = frame.paragraphs[0] if index == 0 else frame.add_paragraph()
 		paragraph.alignment = PP_ALIGN.CENTER
 		paragraph.space_after = Pt(14)
-		add_inline_runs(paragraph, heading.inlines, title_size_value if index == 0 else 31,
+		add_inline_runs(paragraph, heading.inlines, title_size_pt if index == 0 else subtitle_size_pt,
 			FOREGROUND if index == 0 else MUTED)
 		for run in paragraph.runs:
 			run.font.bold = index == 0
-		slide_lib.pptx_animation.register_text_reveal(slide, frame, heading)
+		slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, heading)
 #============================================
 def build_title_only(slide: object, source: slide_lib.native_model.Slide, deck: slide_lib.native_model.Deck, spec: LayoutSpec) -> None:
 	"""Render one native title centered horizontally and vertically."""
@@ -779,7 +780,8 @@ def render_root_body(slide: object, source: slide_lib.native_model.Slide, deck: 
 	plan = plan_content(source, spec)
 	if headings:
 		write_planned_title(slide, headings[0], plan)
-	render_cell(slide, deck, body, plan.content_rectangle, bool(spec.vertical_cells), 26, spec.name)
+	render_cell(slide, deck, body, plan.content_rectangle, bool(spec.vertical_cells),
+		STANDARD_BODY_SIZE_PT, spec.name)
 #============================================
 def build_title_content(slide: object, source: slide_lib.native_model.Slide,
 		deck: slide_lib.native_model.Deck, spec: LayoutSpec) -> None:
@@ -880,14 +882,14 @@ def build_multiple_choice(slide: object, source: slide_lib.native_model.Slide,
 	autofit.set("lnSpcReduction", "0")
 	body_properties.append(autofit)
 	answer_items = [(block.inlines, 0, False, True, 1) for block in answer.blocks]
-	size = fit_body_size([answer_items], width - 36, height - 20,
-		26, answer.blocks[0].location, "multiple-choice answer")
-	write_items(frame, answer_items, size)
+	size_pt = fit_body_size([answer_items], width - 36, height - 20,
+		STANDARD_BODY_SIZE_PT, answer.blocks[0].location, "multiple-choice answer")
+	write_items(frame, answer_items, size_pt)
 	for paragraph in frame.paragraphs:
 		for run in paragraph.runs:
 			run.font.color.rgb = WHITE
 			run.font.bold = True
-	slide_lib.pptx_animation.register_text_reveal(slide, frame, answer.blocks[0])
+	slide_lib._legacy_pptx_animation.register_text_reveal(slide, frame, answer.blocks[0])
 #============================================
 def build_gallery(slide: object, source: slide_lib.native_model.Slide, deck: slide_lib.native_model.Deck, spec: LayoutSpec) -> None:
 	"""Render a row of independently contained component images."""
@@ -902,7 +904,7 @@ def build_gallery(slide: object, source: slide_lib.native_model.Slide, deck: sli
 	for index, image in enumerate(images):
 		picture = add_picture(slide, resolve_image_path(deck, image), image, LEFT + index * (width + 18),
 			top, width, CONTENT_BOTTOM - top)
-		slide_lib.pptx_animation.register_reveal(slide, picture, image.reveal)
+		slide_lib._legacy_pptx_animation.register_reveal(slide, picture, image.reveal)
 #============================================
 def preflight_layout_capacity(source: slide_lib.native_model.Slide, spec: LayoutSpec,
 		deck: slide_lib.native_model.Deck) -> None:
@@ -910,17 +912,18 @@ def preflight_layout_capacity(source: slide_lib.native_model.Slide, spec: Layout
 	if spec.name == "multiple-choice":
 		question = next(cell for cell in source.cells if cell.name == "question")
 		answer = next(cell for cell in source.cells if cell.name == "answer")
-		flow = plan_cell_flow(deck, question, MULTIPLE_CHOICE_QUESTION_RECTANGLE, 22,
+		flow = plan_cell_flow(deck, question, MULTIPLE_CHOICE_QUESTION_RECTANGLE,
+			STANDARD_BODY_SIZE_PT,
 			"multiple-choice question")
 		if flow is None:
 			_, items, _, _ = body_parts(question.blocks)
 			if items:
 				fit_body_size([items], MULTIPLE_CHOICE_QUESTION_RECTANGLE[2],
-					MULTIPLE_CHOICE_QUESTION_RECTANGLE[3], 22, question.blocks[0].location,
+					MULTIPLE_CHOICE_QUESTION_RECTANGLE[3], STANDARD_BODY_SIZE_PT, question.blocks[0].location,
 					"multiple-choice question")
 		answer_items = [(block.inlines, 0, False, True, 1) for block in answer.blocks]
 		fit_body_size([answer_items], MULTIPLE_CHOICE_ANSWER_RECTANGLE[2] - 36,
-			MULTIPLE_CHOICE_ANSWER_RECTANGLE[3] - 20, 26, answer.blocks[0].location,
+			MULTIPLE_CHOICE_ANSWER_RECTANGLE[3] - 20, STANDARD_BODY_SIZE_PT, answer.blocks[0].location,
 			"multiple-choice answer")
 		return
 	if spec.slot_names and spec.name not in ("gallery", "multiple-choice"):
@@ -929,8 +932,8 @@ def preflight_layout_capacity(source: slide_lib.native_model.Slide, spec: Layout
 			cell = next(cell for cell in source.cells if cell.name == slot_name)
 			_, _, _, tables = body_parts(cell.blocks)
 			body_rectangle = plan_cell_body(cell, rectangle).body_rectangle
-			plan_cell_flow(deck, cell, body_rectangle,
-				26 if slot_name == "body" else 22, f"{spec.name} {slot_name}")
+			plan_cell_flow(deck, cell, body_rectangle, STANDARD_BODY_SIZE_PT,
+				f"{spec.name} {slot_name}")
 			if tables:
 				_, _, width, height = body_rectangle
 				fit_table_size(tables[0], width, height, f"{spec.name} {slot_name}")

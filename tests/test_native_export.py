@@ -115,6 +115,20 @@ def test_standard_theme_uses_gradient_band_and_centered_title(tmp_path: pathlib.
 
 
 #============================================
+def test_one_panel_emits_theme_point_sizes_without_font_unit_scaling(tmp_path: pathlib.Path) -> None:
+	"""A fitting ordinary slide retains the 36-point title and 28-point body contract."""
+	deck_path = tmp_path / "theme-points.djot"
+	deck_path.write_text("=== layout: one-panel\n# Theme title\n@body\n- Theme body\n", encoding="utf-8")
+	output_path = tmp_path / "theme-points.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	shapes = Presentation(output_path).slides[0].shapes
+	title = next(shape for shape in shapes if shape.has_text_frame and shape.text == "Theme title")
+	body = next(shape for shape in shapes if shape.has_text_frame and shape.text == "Theme body")
+	assert title.text_frame.paragraphs[0].runs[0].font.size.pt == 36.0 and 'sz="3600"' in title.element.xml
+	assert body.text_frame.paragraphs[0].runs[0].font.size.pt == 28.0 and 'sz="2800"' in body.element.xml
+
+
+#============================================
 def test_title_only_theme_centers_its_single_title_both_ways(tmp_path: pathlib.Path) -> None:
 	"""Title-only questions keep centered native text instead of a top-left title box."""
 	deck_path = tmp_path / "question.djot"
@@ -269,18 +283,24 @@ def test_unreadable_local_h2_fails_before_background_or_shapes(tmp_path: pathlib
 
 #============================================
 def test_two_over_one_reserves_readable_footer_space(tmp_path: pathlib.Path) -> None:
-	"""A dense full-width footer receives height from two short upper components."""
+	"""A full-width footer receives responsive space while retaining ordinary type."""
 	deck_path = tmp_path / "footer.djot"
-	footer = "\n".join(f"- Footer line {index}" for index in range(24))
+	footer = "\n".join(f"- Footer line {index}" for index in range(5))
 	deck_path.write_text("=== layout: two-over-one-panels\n# Title\n@top-left\n- Left\n"
 		"@top-right\n- Right\n@bottom\n" + footer + "\n", encoding="utf-8")
 	source = slide_lib.native_export.parse_deck(deck_path).slides[0]
 	plan = layouts.plan_content(source, layouts.LAYOUTS["two-over-one-panels"])
 	canonical = layouts.cell_rectangles(layouts.LAYOUTS["two-over-one-panels"], plan.content_rectangle)
 	responsive = layouts.content_cell_rectangles(source, layouts.LAYOUTS["two-over-one-panels"], plan.content_rectangle)
+	output_path = tmp_path / "footer.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	footer_shape = next(shape for shape in Presentation(output_path).slides[0].shapes
+		if shape.has_text_frame and "Footer line 0" in shape.text)
 
 	assert responsive[2][3] > canonical[2][3]
 	assert responsive[0][3] < canonical[0][3]
+	assert all(run.font.size.pt == layouts.STANDARD_BODY_SIZE_PT for paragraph in footer_shape.text_frame.paragraphs
+		for run in paragraph.runs)
 
 
 #============================================
@@ -430,7 +450,7 @@ def test_named_slots_keep_their_tables_as_distinct_native_shapes(tmp_path: pathl
 
 #============================================
 def test_titleless_table_readability_fails_before_mutating_a_slide(tmp_path: pathlib.Path) -> None:
-	"""A body-only overfull table fails rather than reducing native text below 14px."""
+	"""A body-only overfull table fails before text could fall below the 24 pt floor."""
 	location = slide_lib.native_model.SourceLocation(tmp_path / "dense-table.ir", 7)
 	cell = (slide_lib.native_model.Text(" ".join("adaptable" for _ in range(100))),)
 	table = slide_lib.native_model.Table(location, ((slide_lib.native_model.Text("Header"),),),
@@ -508,6 +528,24 @@ def test_one_panel_can_normalize_multiple_legitimate_images_natively(tmp_path: p
 		"First component", "Second component",
 	]
 	assert all(picture.width < Presentation(output_path).slide_width for picture in pictures)
+
+
+#============================================
+def test_mixed_flow_preserves_every_source_ordered_text_and_image_step(tmp_path: pathlib.Path) -> None:
+	"""A text-image-text cell creates each native object in authored reading order."""
+	write_png(tmp_path / "component.png")
+	deck_path = tmp_path / "mixed-flow.djot"
+	deck_path.write_text("=== layout: one-panel\n# Mixed flow\n@body\nIntroductory text\n\n"
+		"![Component](component.png)\n\nConcluding text\n", encoding="utf-8")
+	output_path = tmp_path / "mixed-flow.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	flow_objects = []
+	for shape in Presentation(output_path).slides[0].shapes:
+		if shape.shape_type == MSO_SHAPE_TYPE.PICTURE:
+			flow_objects.append("image")
+		elif shape.has_text_frame and shape.text in ("Introductory text", "Concluding text"):
+			flow_objects.append(shape.text)
+	assert flow_objects == ["Introductory text", "image", "Concluding text"]
 
 
 #============================================
@@ -678,7 +716,7 @@ def test_named_cells_render_in_their_declared_slots_not_source_order(tmp_path: p
 
 #============================================
 def test_multiple_choice_renders_a_native_question_and_answer_popup(tmp_path: pathlib.Path) -> None:
-	"""The automatic answer remains one editable popup object beside its visible question."""
+	"""The editable answer popup remains distinct from the visible readable question."""
 	location = slide_lib.native_model.SourceLocation(tmp_path / "choice.ir", 7)
 	question = slide_lib.native_model.Cell(location, (
 		slide_lib.native_model.Paragraph(location, (slide_lib.native_model.Text("Which molecule stores heredity?"),)),
@@ -698,8 +736,17 @@ def test_multiple_choice_renders_a_native_question_and_answer_popup(tmp_path: pa
 	output_path = tmp_path / "choice.pptx"
 	slide_lib.native_export.render_native_pptx(deck, output_path)
 	shapes = [shape for shape in Presentation(output_path).slides[0].shapes if shape.has_text_frame]
+	question_shape = next(shape for shape in shapes if "Which molecule stores heredity?" in shape.text)
 	popups = [shape for shape in shapes if shape.text == "Answer: B. DNA\nDNA stores hereditary information."]
 	assert len(popups) == 1
+	popup = popups[0]
+	assert question_shape.left + question_shape.width <= popup.left or \
+		popup.left + popup.width <= question_shape.left or \
+		question_shape.top + question_shape.height <= popup.top or \
+		popup.top + popup.height <= question_shape.top
+	assert all(run.font.size.pt == layouts.STANDARD_BODY_SIZE_PT
+		for shape in (question_shape, popup) for paragraph in shape.text_frame.paragraphs
+		for run in paragraph.runs)
 
 
 #============================================

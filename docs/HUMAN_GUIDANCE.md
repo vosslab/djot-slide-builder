@@ -15,8 +15,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - An existing ODP is imported once; Djot and its local assets then become authoritative.
 - Do not show slide numbers; they encourage the audience to track remaining time and watch the
   clock instead of the presenter.
-- Build canonical Djot through repository-owned Python into native editable PPTX objects,
-  then use LibreOffice to make editable ODP, then make PDF from that ODP.
+- Compile canonical Djot through repository-owned Python into a shared format-neutral layout plan.
+  Build native editable ODP directly, make PDF from that ODP, and build PPTX only as an independent
+  optional interchange artifact.
 - Run LibreOffice conversion with `--headless --norestore` through the established user profile.
   Keep LibreOffice closed during the batch build; use `--safe-mode` when repairing profile problems.
 - Export ODP to PDF with the Impress PDF filter, 70 percent JPEG quality, a documented 150 DPI image
@@ -67,6 +68,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - My ODP slides are hand-authored structured documents, not scans; normal conversion uses text and
   image objects rather than OCR.
 - Use OpenDyslexic for ordinary slide text and PT Sans Narrow only when a long URL is displayed.
+- Make standard titles default to 36 pt and ordinary body text default to 28 pt.
+- Use shrink-on-overflow for native presentation frames only after build preflight proves the text
+  remains above a readable floor; LibreOffice's unbounded manual shrink is not the floor owner.
+- Make generated title and content objects real LibreOffice layout members. Reapplying One Box must
+  reuse the authored title and body instead of adding empty placeholders over them.
+- Every implementation milestone must complete without my participation. When I am unavailable, the
+  manager and subagents use captured fixtures, desired XML contracts, and deterministic package-XML
+  transitions.
+- The autonomous acceptance path also uses headless LibreOffice preservation, PDF/render metrics,
+  and automated reveal-state checks.
 - Use OpenDyslexic for ordinary and inline-code runs. Apply PT Sans Narrow only to a displayed
   literal URL; keep ordinary linked labels in OpenDyslexic with their native hyperlink.
 - Treat `slide_*_source` raster names as retired full-slide fallback evidence, not component images.
@@ -197,5 +208,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Prompt positively: state the desired action directly and keep safety or correctness boundaries
   explicit.
 - Use parallel, atomic delegation when it reduces wall time; subagents and tokens are cheap.
-- Favor adaptable, long-term designs that build on the existing ambition of the repository.
+- Fix the design that allowed incorrect behavior. Use a narrow fallback or special case only when it
+  is part of the intended design.
+- Prefer durable long-term fixes, accepting a small immediate cost to avoid larger maintenance costs.
+- Make adaptability a primary design goal so changing requirements and new evidence do not require
+  repeated architectural rewrites.
+- Build on the repository's ambition, then turn the strongest version into practical, owned,
+  verifiable work.
 - Treat this pre-production codebase as a place to keep only durable tests with meaningful behavior.

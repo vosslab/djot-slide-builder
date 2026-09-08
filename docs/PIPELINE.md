@@ -20,7 +20,7 @@ inserted as substitute content.
 Audit status: this is the intended ownership flow, but the current reader still constructs planner
 region records for positioned content. Moving that projection into `slide_plan.py` remains open.
 
-REPEATABLE BUILD
+CURRENT REPEATABLE BUILD (until WP-I1 of the native ODP migration completes)
 
 canonical extended-Djot source
   -> deck_tools.py application CLI
@@ -29,7 +29,7 @@ canonical extended-Djot source
   -> slide_lib.native_export
   -> slide_lib.djot_parser
   -> typed native slide-object model
-  -> slide_lib.layouts using the format-neutral OTP theme
+  -> slide_lib.layouts transitional geometry/PPTX construction using the format-neutral OTP theme
   -> python-pptx editable PPTX interchange artifact
   -> background-free native PPTX intermediate
   -> LibreOffice content ODP
@@ -42,8 +42,93 @@ genetics/xlect99-template_2023.otp
   -> slide_lib.pptx_theme adapter and slide_lib.odp_theme master application
 ```
 
+## Approved target architecture (not current behavior)
+
+The active [native ODP layout migration](active_plans/active/native_odp_layout_migration.md) replaces
+the bridge above only after its implementation and acceptance gates pass:
+
+```text
+semantic Deck + PresentationTheme.template_path
+  -> compile_layout_deck(Deck, PresentationTheme) -> LayoutDeck
+  -> write_odp(LayoutDeck, PresentationTheme, Path) -> editable ODP -> LibreOffice PDF
+  -> write_pptx(LayoutDeck, PresentationTheme, Path) -> optional editable PPTX
+```
+
+Before `compile_layout_deck` accepts capacity, the approved WP-T2 font-metric contract resolves
+every styled run to a committed, hash-verified OFL face profile. It measures Pillow `getlength()`
+token-aware line breaks with OTP list text-start/hanging indents and mixed-face ascent/descent line
+boxes. OpenDyslexic profiles serve ordinary text; PT Sans Narrow is available only for the shipped
+face states used by displayed literal URLs, never as a fabricated italic fallback. Missing,
+hash-mismatched, unresolved, or substituted faces fail before publication. Font/hash/style and all
+measurement inputs participate in the cache key, so host substitution or a stale result cannot
+silently alter capacity. The obsolete `0.25em` heuristic and generic 10-percent width cap are not
+part of this pipeline.
+
+The theme's ordinary outline policy is 1.30em line spacing, serialized in the OTP as
+`fo:line-height="130%"`. `ParagraphProperties` holds the resolved list text-start and hanging
+indents. For every wrapped line, compilation records a safe advance equal to the greater of nominal
+1.30em and that line's maximum mixed-face ascent plus descent. ODP and PPTX project this physical
+plan fact unchanged; neither adapter measures text, selects leading, or derives list geometry.
+
+The target has three direct-import modules with no compatibility facade: `layout_model.py` owns
+immutable physical facts, `layout_engine.py` owns all 18-layout allocation/pagination/preflight,
+and `pptx_export.py` owns PPTX projection. `PresentationTheme.template_path` is the sole template
+authority. The direct ODP route must not create or read PPTX. Until WP-I1 removes
+`slide_lib/layouts.py` and `slide_lib/odp_theme.py`, the preceding diagram is the accurate current
+pipeline and this section is a design contract rather than an implementation claim.
+
 The PDF path is intentionally downstream of editable ODP. Rendering a final ODP-derived PDF for
 visual QA is separate from the production object-conversion chain and never supplies slide content.
+
+## Continuation policy
+
+`layout_engine` owns continuation before either adapter receives a `LayoutDeck`. A logical source
+slide is initially one panel. Only a real fit failure may expand it when `paginate: true`; a
+`paginate: false` source instead fails at its source location before output publication. The
+fallback order is: reduce ordinary text only to 24 pt; partition whole paragraphs, root-list
+subtrees, table-row groups, and atomic objects; then, only for a root-list subtree that alone cannot
+fit, recursively partition between descendant list-item subtrees. A leaf item that cannot fit fails
+at its source location.
+
+The implemented compiler measures committed font profiles at exact requested point sizes (including
+quarter-point values) and carries the result in the physical plan; it does not use a host-font
+fallback. Explicit line breaks remain grapheme-safe. It uses the shared 36 pt / 28 pt defaults
+and 30 pt / 24 pt floors. At the title floor, a title remains one atomic semantic unit rather than
+being fragmented to satisfy a local fit. The current compiler deterministically expands the complete
+`lect02a` source to 99 physical pages; ODP and PPTX projection parity is a remaining adapter gate,
+not an implied completed export claim.
+
+The physical model carries an ordered `ContinuationContext` ancestor trail and the explicit display
+modes `INLINE_STATIC`, `HANDOFF_STATIC`, and `METADATA_ONLY`; each physical slide has continuation
+kind `NORMAL`, `AUTHORED`, or `CONTEXT_HANDOFF`. The compiler puts the minimum ancestor trail with
+the new authored descendant only when that combined page fits (`INLINE_STATIC`). If it does not fit,
+the compiler puts one deterministic static `CONTEXT_HANDOFF` page immediately before the detached
+descendant (`HANDOFF_STATIC`). If that trail cannot fit, the descendant carries
+`METADATA_ONLY` context. The descendant retains its original list level and must fit, or the
+compiler raises the source-local error. This policy uses no abbreviation, clipping, subfloor, or
+text-specific exception. Existing `continuation_context` marks visible static repeats; context is
+never an authored unit or a reveal target. Ordinary repeated H1 behavior is independent of the
+ancestor trail and stays unchanged.
+
+Every authored unit and reveal target occurs exactly once. Context-handoff pages are static with no
+reveal targets; authored continuations have only local reveal targets. Physical pages retain the
+same topology and title behavior, use deterministic `source_id-pN` identities and contiguous
+indexes, repeat qualified notes, and use physical page numbering. For nonvisual trails, both output
+adapters serialize the ordered context into an accessibility description and a generated continuation
+note. ODP and PPTX serialize that one plan and must therefore agree on physical-page count, order,
+continuation kind, context mode, safe line advances, list indents, notes, and accessibility meaning.
+
+For a true-fit failure of an eligible generic grid, the compiler instead uses
+`DECOMPOSE_TO_ONE_PANEL`. The eligible layouts are `two-panels`, `one-plus-two-panels`,
+`two-plus-one-panels`, `stacked-panels`, `two-over-one-panels`, `four-panels`, and `six-panels`.
+Only `paginate: true` permits this transition. A fitting grid is unchanged; a failing eligible grid
+contributes all nonempty slots in canonical reading order to the same one-panel splitter used by
+ordinary continuation. Every output page is a one-panel physical topology, repeats H1/context/notes
+but not source slot labels, places images and tables through the canonical one-panel rules, and
+retains source-grid and source-slot provenance. Content and reveals occur once across the resulting
+pages, with deterministic physical identities. Semantic layouts (including title, centered-text,
+vertical, gallery, and multiple-choice layouts) do not decompose; they, `paginate: false`, and an
+unsplittable atomic unit fail at the originating source location before either adapter serializes.
 
 ## Ownership boundaries
 
@@ -94,8 +179,9 @@ matcher first; special relations are positive, bounded classifications rather th
 A narrow coarse-body and picture-inset pair remains two direct editable objects in `two-panels`,
 using exact source provenance and one explicit permission. Caption pairing is a single shared
 positive relation grouped before topology and reuses the existing `two-plus-one` and footer
-permission. Adaptive vertical image flow reserves text at 28 through 14 logical units, then uniformly
-scales every image. These routes do not use slide-specific geometry exceptions.
+permission. Adaptive vertical image flow starts ordinary text at 28 pt and rejects a fit below the
+24 pt build floor before uniformly scaling every image. These routes do not use slide-specific
+geometry exceptions.
 
 A tightly coupled diagram and its distributed labels project as native text and genuine source
 images in one standard source-order flow. Unsupported vector members are recorded for review rather
@@ -111,9 +197,9 @@ blank cells remain source-derived. Merged or spanned table cells require review 
 a diagram that merely resembles a grid stays native review content. Ambiguous component geometry
 uses the documented source-order normalization rather than inventing a legacy layout match.
 
-## Native layout contract
+## Current native layout contract (superseded at WP-I1)
 
-`slide_lib.layouts` has one distinct builder for each LibreOffice layout-grid entry:
+`slide_lib.layouts` currently has one distinct builder for each LibreOffice layout-grid entry:
 
 - `blank`
 - `title-only`
@@ -138,6 +224,10 @@ The first sixteen names are the LibreOffice grid catalog. `gallery` is a reposit
 contained image row. LibreOffice is not asked to apply the grid: Python creates the text boxes,
 lists, images, shapes, and vertical text direction directly through `python-pptx`.
 
+After WP-I1, this catalog moves without aliases to `slide_lib.layout_engine`, which compiles the
+same 18 semantic layouts into `LayoutDeck`; `odp_export` and `pptx_export` then project that plan
+independently.
+
 Every standard slide receives the native lecture theme defined by
 `genetics/xlect99-template_2023.otp`: a shallow gradient band across the top, centered standard
 titles, and consistent content insets. The repository maps its 16:10 page to a stable 1280x800
@@ -159,9 +249,10 @@ fallback.
 Ordinary panel layouts accept zero or one global H1. Each ordinary cell may also carry one local H2
 followed by native text, images, or one source-derived table. A validated table renders only in a
 layout region with a native table destination. Before any shape is created, the layout preflight
-gives a local heading its required height and fits body text from 28 down to 14 logical units. A
-title, heading, table, or body that cannot fit reports its source location before a partial slide
-can exist.
+gives a local heading its required height, starts ordinary body/list text at 28 pt, and rejects a
+fit below the 24 pt body floor. Standard titles start at 36 pt and reject a fit below 30 pt. Native
+shrink-on-overflow is only a font-metric safety net after that preflight. A title, heading, table,
+or body that cannot fit reports its source location before a partial slide can exist.
 
 ## Extended-Djot language boundary
 

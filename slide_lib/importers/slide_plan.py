@@ -8,7 +8,7 @@ import slide_lib.importers.visual_relations as visual_relations
 import slide_lib.importers.rotated_vector_label as rotated_vector_label
 import slide_lib.importers.source_model as source_model
 import slide_lib.importers.topology as topology
-import slide_lib.layouts
+import slide_lib.layout_engine
 TITLE_TOP_RATIO = 0.24
 TITLE_BOTTOM_RATIO = 0.28
 TITLE_MIN_WIDTH_RATIO = 0.34
@@ -827,7 +827,7 @@ def slot_plans(
 		match = topology.ordinary_layout_match(tuple(bounds for _texts, _images, bounds in units))
 		if match is not None:
 			name, order = match
-			return tuple(SlotPlan(slide_lib.layouts.LAYOUTS[name].slot_names[index], units[item][0], units[item][1])
+			return tuple(SlotPlan(slide_lib.layout_engine.layout_contract(name).slot_names[index], units[item][0], units[item][1])
 				for index, item in enumerate(order))
 		return (SlotPlan("body", ordinary, ordinary_images),)
 	direct = tuple(("text", region) for region in ordinary) + tuple(("image", image) for image in ordinary_images)
@@ -843,7 +843,7 @@ def slot_plans(
 	if match is not None:
 		name, order = match
 		return tuple(
-			SlotPlan(slide_lib.layouts.LAYOUTS[name].slot_names[index], (item,) if kind == "text" else (),
+			SlotPlan(slide_lib.layout_engine.layout_contract(name).slot_names[index], (item,) if kind == "text" else (),
 				(item,) if kind == "image" else ())
 			for index, (kind, item) in enumerate(direct[item_index] for item_index in order)
 		)

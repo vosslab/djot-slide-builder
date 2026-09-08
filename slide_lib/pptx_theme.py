@@ -1,4 +1,4 @@
-"""PPTX adapter for the format-neutral ODP-template theme."""
+"""PPTX theme projection helpers with no ambient theme authority."""
 
 # PIP3 modules
 from pptx.oxml.xmlchemy import OxmlElement
@@ -6,24 +6,20 @@ from pptx.oxml.xmlchemy import OxmlElement
 # local repo modules
 import slide_lib.presentation_theme
 
-THEME = slide_lib.presentation_theme.default_theme()
-PX = THEME.emu_per_logical_pixel
-TOP_BAND_HEIGHT = THEME.top_band_height
-LIST_LEVEL_STYLES = THEME.list_levels
-
 
 #============================================
-def office_coordinate(value: float) -> str:
+def office_coordinate(value: float, theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Convert one theme coordinate into the integer EMUs expected by OOXML."""
-	return str(round(value * PX))
+	return str(round(value * theme.emu_per_logical_pixel))
 
 
 #============================================
 def apply_list_theme(paragraph: object, level: int, ordered: bool,
-		paragraph_only: bool, start: int) -> None:
+		paragraph_only: bool, start: int,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
 	"""Apply native bullets, tab stops, and hanging indents to one paragraph."""
-	if level >= len(LIST_LEVEL_STYLES):
-		raise ValueError(f"list nesting exceeds the {len(LIST_LEVEL_STYLES)} native theme levels")
+	if level >= len(theme.list_levels):
+		raise ValueError(f"list nesting exceeds the {len(theme.list_levels)} native theme levels")
 	properties = paragraph._p.get_or_add_pPr()
 	for child in list(properties):
 		if child.tag.endswith(("buNone", "buAutoNum", "buChar", "tabLst")):
@@ -33,9 +29,9 @@ def apply_list_theme(paragraph: object, level: int, ordered: bool,
 		properties.set("indent", "0")
 		properties.append(OxmlElement("a:buNone"))
 		return
-	style = LIST_LEVEL_STYLES[level]
-	properties.set("marL", office_coordinate(style.text_position))
-	properties.set("indent", office_coordinate(style.bullet_position - style.text_position))
+	style = theme.list_levels[level]
+	properties.set("marL", office_coordinate(style.text_position, theme))
+	properties.set("indent", office_coordinate(style.bullet_position - style.text_position, theme))
 	bullet = OxmlElement("a:buAutoNum" if ordered else "a:buChar")
 	if ordered:
 		bullet.set("type", "arabicPeriod")
@@ -45,21 +41,22 @@ def apply_list_theme(paragraph: object, level: int, ordered: bool,
 	properties.append(bullet)
 	tabs = OxmlElement("a:tabLst")
 	tab = OxmlElement("a:tab")
-	tab.set("pos", office_coordinate(style.text_position))
+	tab.set("pos", office_coordinate(style.text_position, theme))
 	tabs.append(tab)
 	properties.append(tabs)
 
 
 #============================================
-def apply_top_band_gradient(shape: object) -> None:
+def apply_top_band_gradient(shape: object,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
 	"""Replace one shape's solid fill with the native lecture-theme gradient."""
 	properties = shape.element.spPr
 	solid_fill = next(child for child in properties if child.tag.endswith("solidFill"))
 	gradient = OxmlElement("a:gradFill")
 	stops = OxmlElement("a:gsLst")
 	# ASVS 2.2.1: gradient colors come only from the validated template contract.
-	for position, color in ((0, THEME.gradient_start_color),
-			(100000, THEME.gradient_end_color)):
+	for position, color in ((0, theme.gradient_start_color),
+			(100000, theme.gradient_end_color)):
 		stop = OxmlElement("a:gs")
 		stop.set("pos", str(position))
 		value = OxmlElement("a:srgbClr")

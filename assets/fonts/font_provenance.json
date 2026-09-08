@@ -1,0 +1,107 @@
+{
+  "manifest_version": 1,
+  "fonts": [
+    {
+      "path": "assets/fonts/opendyslexic/OpenDyslexic-Regular.otf",
+      "family": "OpenDyslexic",
+      "bold": false,
+      "italic": false,
+      "sha256": "215f0b29780dbafa8c02f2f22118fb9e2ab6b27b6686e3f13c8754041a035f64",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Regular.otf",
+        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
+        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+      }
+    },
+    {
+      "path": "assets/fonts/opendyslexic/OpenDyslexic-Bold.otf",
+      "family": "OpenDyslexic",
+      "bold": true,
+      "italic": false,
+      "sha256": "ee7a8b9590a78e183826d16d6a22a50f6253c62e2f7f5e0e01ef44eb0676a9e0",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Bold.otf",
+        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
+        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+      }
+    },
+    {
+      "path": "assets/fonts/opendyslexic/OpenDyslexic-Italic.otf",
+      "family": "OpenDyslexic",
+      "bold": false,
+      "italic": true,
+      "sha256": "bd5c83e5c2a3e203fe816330572afe4ece576f8e2c20fb6359bd399e6ef37aaf",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Italic.otf",
+        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
+        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+      }
+    },
+    {
+      "path": "assets/fonts/opendyslexic/OpenDyslexic-Bold-Italic.otf",
+      "family": "OpenDyslexic",
+      "bold": true,
+      "italic": true,
+      "sha256": "b50779f4f547917a648d38976a664cab8952563112ce03209ff568b1eb364090",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Bold-Italic.otf",
+        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
+        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+      }
+    },
+    {
+      "path": "assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Regular.ttf",
+      "family": "PT Sans Narrow",
+      "bold": false,
+      "italic": false,
+      "sha256": "4102edda03059163771869d258df54ac8563c408fa6e9ef75b2ddc85eabea6f4",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/google/fonts/baa2e5561af8a4873b058859dcfe158bdd033942/ofl/ptsansnarrow/PT_Sans-Narrow-Web-Regular.ttf",
+        "revision": "baa2e5561af8a4873b058859dcfe158bdd033942"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/PT-Sans-Narrow-OFL-1.1.txt",
+        "sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+      }
+    },
+    {
+      "path": "assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Bold.ttf",
+      "family": "PT Sans Narrow",
+      "bold": true,
+      "italic": false,
+      "sha256": "e69d83bcf5bd647892b4e2b22f5098dabd55c989413513197722fc156fb9f00e",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/google/fonts/baa2e5561af8a4873b058859dcfe158bdd033942/ofl/ptsansnarrow/PT_Sans-Narrow-Web-Bold.ttf",
+        "revision": "baa2e5561af8a4873b058859dcfe158bdd033942"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/PT-Sans-Narrow-OFL-1.1.txt",
+        "sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+      }
+    }
+  ]
+}

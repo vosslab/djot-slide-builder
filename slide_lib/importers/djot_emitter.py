@@ -6,7 +6,7 @@ import itertools
 import re
 
 # local repo modules
-import slide_lib.layouts
+import slide_lib.layout_engine
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.native_normalization as native_normalization
 import slide_lib.importers.topology as topology
@@ -720,20 +720,20 @@ def component_layout(components: list[EmissionComponent]) -> tuple[str, tuple[st
 	if not 1 <= len(components) <= 6:
 		raise ValueError("source components require manual layout review before Djot emission")
 	if coarse_inset_key_layout(components):
-		return "two-panels", slide_lib.layouts.LAYOUTS["two-panels"].slot_names, (0, 1)
+		return "two-panels", slide_lib.layout_engine.layout_contract("two-panels").slot_names, (0, 1)
 	if coarse_picture_inset_layout(components):
 		picture_index = next(index for index, item in enumerate(components) if item.kind == "image")
 		body_index = next(index for index, item in enumerate(components) if item.kind == "text")
-		return "two-panels", slide_lib.layouts.LAYOUTS["two-panels"].slot_names, (picture_index, body_index) \
+		return "two-panels", slide_lib.layout_engine.layout_contract("two-panels").slot_names, (picture_index, body_index) \
 			if components[picture_index].classification_reason.endswith(":left") else (body_index, picture_index)
 	footer_match = bottom_footer_layout(components)
 	if footer_match is not None:
 		_score, order = footer_match
-		return "two-over-one-panels", slide_lib.layouts.LAYOUTS["two-over-one-panels"].slot_names, order
+		return "two-over-one-panels", slide_lib.layout_engine.layout_contract("two-over-one-panels").slot_names, order
 	explanatory_match = asymmetric_explanatory_pair_layout(components)
 	if explanatory_match is not None:
 		_score, order = explanatory_match
-		return "two-panels", slide_lib.layouts.LAYOUTS["two-panels"].slot_names, order
+		return "two-panels", slide_lib.layout_engine.layout_contract("two-panels").slot_names, order
 	match = topology.ordinary_layout_match(
 		tuple(component.bounds for component in components), not coarse_image_geometry(components),
 	)
@@ -741,7 +741,7 @@ def component_layout(components: list[EmissionComponent]) -> tuple[str, tuple[st
 		bounds = ", ".join(str(component.bounds) for component in components)
 		raise ValueError(f"ambiguous topology bounds [{bounds}]")
 	name, order = match
-	return name, slide_lib.layouts.LAYOUTS[name].slot_names, order
+	return name, slide_lib.layout_engine.layout_contract(name).slot_names, order
 
 
 def coarse_inset_key_layout(components: list[EmissionComponent]) -> bool:
@@ -777,7 +777,7 @@ def bottom_footer_layout(components: list[EmissionComponent]) -> tuple[float, tu
 	if not topology.material(peers[0].bounds.top, peers[0].bounds.height, peers[1].bounds.top, peers[1].bounds.height):
 		return None
 	source = topology.normalized_boxes(tuple(component.bounds for component in components))
-	slots = slide_lib.layouts.normalized_topology_slots(slide_lib.layouts.LAYOUTS["two-over-one-panels"])
+	slots = slide_lib.layout_engine.layout_contract("two-over-one-panels").topology_slots
 	matches = [(topology.score(source, slots, order), order) for order in itertools.permutations(range(3))
 		if order[2] == footer_indexes[0] and topology.relations_match(source, slots, order)]
 	if not matches:
@@ -796,10 +796,11 @@ def asymmetric_explanatory_pair_layout(components: list[EmissionComponent]) -> t
 		return None
 	source = topology.normalized_boxes(tuple(component.bounds for component in components))
 	candidates: list[tuple[str, list[tuple[float, tuple[int, ...]]]]] = []
-	for spec in slide_lib.layouts.LAYOUTS.values():
+	for name in slide_lib.layout_engine.registered_layout_names():
+		spec = slide_lib.layout_engine.layout_contract(name)
 		if not spec.topology_matchable or spec.cell_count != 2:
 			continue
-		slots = slide_lib.layouts.normalized_topology_slots(spec)
+		slots = spec.topology_slots
 		matches = [(topology.score(source, slots, order), order) for order in itertools.permutations(range(2))
 			if topology.relations_match(source, slots, order)]
 		if matches:

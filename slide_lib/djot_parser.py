@@ -9,7 +9,8 @@ import re
 import slide_lib.djot_blocks
 import slide_lib.djot_errors
 import slide_lib.djot_grammar
-import slide_lib.layouts
+import slide_lib.layout_engine
+import slide_lib.layout_primitives
 import slide_lib.native_model
 
 
@@ -261,7 +262,7 @@ def parse_region(path: pathlib.Path, lines: tuple[_SourceLine, ...], layout_name
 
 
 #============================================
-def validate_global_titles(path: pathlib.Path, layout: slide_lib.layouts.LayoutSpec,
+def validate_global_titles(path: pathlib.Path, layout: slide_lib.layout_primitives.LayoutContract,
 		blocks: tuple[slide_lib.native_model.Block, ...]) -> None:
 	"""Enforce title and subtitle regions before source reaches a layout builder."""
 	for block in blocks:
@@ -300,7 +301,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	"""Bind one layout directive's global and named regions to a native slide."""
 	if source.layout_name not in slide_lib.djot_grammar.legal_layout_names():
 		fail(path, source.location.line, f"unknown Djot layout: {source.layout_name}")
-	layout = slide_lib.layouts.LAYOUTS[source.layout_name]
+	layout = slide_lib.layout_engine.layout_contract(source.layout_name)
 	global_lines: list[_SourceLine] = []
 	regions: dict[str, list[_SourceLine]] = {}
 	active_slot: str | None = None
