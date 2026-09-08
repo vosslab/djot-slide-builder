@@ -47,6 +47,7 @@ IMPORT_REQUIREMENT_ALIASES = {
 	"image": "pillow",
 	"imagedraw": "pillow",
 	"imagetk": "pillow",
+	"markdown_it": "markdown-it-py",
 	"material": "mkdocs-material",
 	"pdfminer": "pdfminer.six",
 	"pil": "pillow",

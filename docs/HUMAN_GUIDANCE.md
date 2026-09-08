@@ -57,6 +57,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - For `vertical-text-panel` and `vertical-panel`, author one level-one title and one
   root body block: one paragraph, one list, or one component image.
 - Use lots of images and aim for a visual image on every slide.
+- Hold image-bearing slide PNGs out of publication until their copyright status is assessed;
+  text-only slide-page screenshots may be published in `docs/screenshots/`.
 - Avoid raw HTML or XML in Djot. Keep visual geometry in the shared native layout registry.
 - A normal instructor workflow must not require VS Code, npm, TypeScript, or Node.
 - This pre-production repository uses direct replacements when terminology or architecture changes.
@@ -157,6 +159,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Working style
 
+- Use a 350-character limit for the plain-prose GitHub About paragraph at the top of README.md.
+- This repository is an application/toolchain, not a PyPI package as currently written. Do not add a
+  root `pyproject.toml` merely for release-version cross-checking; resolve date-block release versions
+  from root `VERSION` unless a future packaging decision changes that need.
 - Keep `PYTHONDONTWRITEBYTECODE=1` active and do not run explicit bytecode-compilation commands that
   create `__pycache__`; the absence of an ignore rule makes accidental cache writes visible.
 - Have single-repository propagation add a `devel/changelog_lib.py`-compatible changelog entry only

@@ -30,7 +30,7 @@ the current source-to-native boundary is [PIPELINE.md](PIPELINE.md).
 ## Compatibility and future language work
 
 - [ ] Pin the remaining formatter and editor-rule lanes of the strict-Djot compatibility suite.
-- [ ] Name the language and write its standalone authoring guide when that broader naming task is
+- [ ] Write a standalone extended-Djot authoring guide when that broader documentation task is
   approved.
 - [ ] Add native editable mappings for currently source-located unsupported content only when a
   teaching need and an acceptance path are defined.

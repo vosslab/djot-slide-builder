@@ -72,7 +72,7 @@ vendored header in each file restates it, and `AGENTS.md` points here.
 
 - The first paragraph of `README.md` is the source text for the GitHub About description.
 - The first paragraph must remain readable as raw Markdown source text.
-- Repository About descriptions must stay under 250 characters.
+- Repository About descriptions must stay at or below 350 characters.
 - Agents edit only the first paragraph of `README.md`; the user copies that text into the GitHub About field.
 - Write a clear, searchable hook that helps readers quickly understand the repository.
 - Lead with the repository purpose and the main user benefit.

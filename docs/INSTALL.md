@@ -32,6 +32,16 @@ source source_me.sh && jotdown --version
 
 Expected output: `jotdown 0.10.0`.
 
+To install that optional strict-source validator, use Rust/Cargo 1.82 or later:
+
+```bash
+cargo install jotdown --version 0.10.0 --locked --features cli
+source source_me.sh && jotdown --version
+```
+
+Rust and Cargo are needed only to install Jotdown for strict-source acceptance; the normal build
+prerequisites above do not require them.
+
 ## Verify install
 
 ```bash

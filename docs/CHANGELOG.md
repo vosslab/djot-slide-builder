@@ -15,6 +15,11 @@
 - Added `source_model.py` and `pptx_reader.py` so imported-presentation readers retain raw runs,
   links, images, notes, and first-class `TableBlock` facts.
 - Defined the intended `pptx_reader` -> `slide_plan` -> `djot_emitter` ownership boundary.
+- Added newcomer-facing `CODE_ARCHITECTURE.md`, `FILE_STRUCTURE.md`, `FILE_FORMATS.md`,
+  `DEVELOPMENT.md`, `COOKBOOK.md`, `TROUBLESHOOTING.md`, and `RELATED_PROJECTS.md` guides, plus
+  differentiated `NEWS.md` and `RELEASE_HISTORY.md` v26.09 release views from `VERSION` and the
+  current changelog.
+- Added a static, text-only rendered slide page to the README as an output-proof example.
 
 ### Behavior or Interface Changes
 
@@ -45,8 +50,9 @@
 
 ### Fixes and Maintenance
 
-- Refreshed install and usage guidance for Python 3.12 environment activation, Homebrew tools,
-  strict Jotdown acceptance, bounded Poppler source-region imports, and native export workflows.
+- Refreshed install and usage guidance for Python 3.12 environment activation, Homebrew tools, a
+  validated pinned Jotdown 0.10.0 Cargo install route, bounded Poppler source-region imports, and
+  native export workflows.
 - Corrected current acceptance documentation to name the one retained Djot native-layout E2E after
   the duplicate runners were removed.
 - Removed claims that authored Djot or the current native E2E preserves presenter notes. Import
@@ -61,7 +67,6 @@
 - Made missing animation-writer reveal intent fail loudly and corrected source/native-renderability
   documentation.
 - Synchronized shared style guides, tests, and repository support files from the starter template.
-- Synchronized shared style guides, tests, and repository support files from the starter template.
 - Fixed imported text and links being escaped before the output boundary; the Djot emitter now
   escapes raw characters exactly once and encodes link-target delimiters only while rendering.
 - Fixed the PPTX reader inventing spaces between adjacent alphanumeric runs; formatting-only run
@@ -70,6 +75,10 @@
   flattened text, including literal pipes, links, blank cells, and DNA prime projection.
 - Renamed imported-deck planning modules and `LegacySlidePlan` to package-scoped Djot-first names,
   and renamed the private animation-writer attachment to `_slide_animation_writer`.
+- Refreshed the README newcomer route and `INSTALL.md` / `USAGE.md` workflows; updated
+  `ROADMAP.md` and `TODO.md` to describe current open boundaries.
+- Recorded the 350-character GitHub About limit and the publication boundary: image-bearing slide
+  PNGs remain unpublished pending copyright assessment, while text-only slide pages may publish.
 
 ### Removals and Deprecations
 
@@ -102,6 +111,8 @@
 - Made the fork Djot-first while holding the implemented Djot grammar and layout behavior fixed.
   Historical changelog and language-decision records retain their provenance; they are not runtime
   compatibility promises.
+- For this non-PyPI application, `VERSION` supplies the date-block release identity; a root
+  `pyproject.toml` is not required solely as a release-document cross-check.
 - Used the pre-production state to replace the extraction boundary directly rather than preserving
   old output-shaped records or aliases.
 - The six-pass Djot-first audit found two open design issues: `pptx_reader.py` still constructs
@@ -154,6 +165,7 @@
   diagnostic created two `__pycache__` directories despite `PYTHONDONTWRITEBYTECODE`; both were
   removed, and subsequent Python verification used `source source_me.sh` without explicit bytecode
   compilation.
+- The final documentation refresh ran the current permanent offline suite: 1,689 passed.
 
 ## 2026-09-06
 

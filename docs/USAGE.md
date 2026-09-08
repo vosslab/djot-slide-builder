@@ -34,8 +34,9 @@ Build every eligible source deck recursively below a folder as PPTX, ODP, and PD
 ```
 
 `deck_tools.py build` accepts `--format all`, `odp`, `pdf`, or `pptx`; `all` is the default. It
-recognizes `.djot` source only. Folder discovery recursively selects only `.djot` files. Outputs are
-written below `output/pptx/`, `output/odp/`, and `output/pdf/`.
+recognizes `.djot` source only, and folder discovery recursively selects only `.djot` files. Every
+build begins with editable PPTX: `pptx` stops there, `odp` adds editable ODP, and `pdf` adds the
+ODP-derived PDF. Outputs are written below `output/pptx/`, `output/odp/`, and `output/pdf/`.
 
 ## Import existing slides
 
@@ -53,8 +54,11 @@ source source_me.sh && python3 deck_tools.py import genetics/lecture.pptx \
   --output genetics/lecture.djot
 ```
 
-Djot is the only import target. Use `deck_tools.py visibility INPUT.odp` to inspect resolved
-source-slide visibility before import.
+Djot is the only import target. Inspect resolved source-slide visibility before import:
+
+```bash
+source source_me.sh && python3 deck_tools.py visibility genetics/lecture.odp
+```
 
 The importer refuses an existing output target or its asset directory. It keeps text, tables when
 their native source metadata is available, ordinary images, and geometry-supported layouts

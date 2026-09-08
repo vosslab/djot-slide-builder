@@ -53,6 +53,10 @@ editable-object pipeline.
    headless bridge and ODP-derived PDF final state already passed.
 2. Complete the remaining strict-Djot formatter/editor-rule suite selection before claiming full
    compatibility-suite coverage.
+3. Move positioned-content region projection from `pptx_reader.py` into `slide_plan.py`, restoring
+   the documented raw-reader-to-geometry-planner ownership boundary.
+4. Define a non-Djot preservation design for imported presenter notes before claiming that imported
+   note content survives normalization.
 
 ## Verification lanes
 
