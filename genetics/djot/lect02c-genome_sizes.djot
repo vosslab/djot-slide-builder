@@ -1,0 +1,645 @@
+=== layout: title-slide
+
+# Lecture 2C
+
+## Genes, Genomes,
+## and Genetic Analysis
+## Chapter 1
+## Dr. Neil Voss
+## Sept 2, 2025
+
+=== layout: title-only
+
+# Today we are talking about DNA. What are some various genome sizes...
+
+=== layout: title-only
+
+# Define Genome.
+
+=== layout: two-panels
+
+# Genome
+
+@left
+
+- A genome is an organism's complete set of DNA
+  - including all of its genes.
+- In humans, a copy of the entire genome is contained in all cells that have a nucleus.
+  - In theory, each genome contains all of the information needed to build and maintain that organism.
+
+@right
+
+![Slide image 1](assets/lect02c-genome_sizes/image_001.png)
+
+=== layout: title-only
+
+# DNA Number Game
+
+=== layout: title-only
+
+# Number of Chromosomes
+
+=== layout: multiple-choice
+
+@question
+
+How many chromosomes do humans have in diploid cells?
+
+- A. 22
+- B. 23
+- C. 46
+- D. 48
+- E. 54
+- F. 56
+- G. 92
+
+@answer
+
+Answer: C
+
+=== layout: one-panel
+
+# Which of the following organisms has the LARGEST number of CHROMOSOMES?
+
+@body
+
+- A. Chicken
+- B. Corn
+- C. Fruit fly (Drosophila)
+- D. Human
+- E. Mouse
+- F. Rice
+- G. Zebrafish
+
+=== layout: one-panel
+
+# Number of Chromosomes
+
+@body
+
+- E. coli: 1
+- Fruit fly: 8
+- Corn: 20
+- Rice: 24
+- S. cerevisiae (yeast): 32
+- Mouse: 40
+- Human: 46
+- Monkeys, Great Apes: 48
+- Zebrafish: 50
+- Chicken: 78
+- Carp: 104
+
+=== layout: one-panel
+
+# Chromosome Number
+
+@body
+
+- Mosquito: 6
+- Onion: 16
+- Cat, Pig: 38
+- Dolphin, Rabbit: 44
+- Tobacco: 48
+- Dog: 78
+- Carp: 104
+
+=== layout: title-only
+
+# Name the Five Great Apes (Hominidae taxonomic family)
+
+=== layout: two-panels
+
+# Great Apes
+
+@left
+
+- Bonobo
+- Chimpanzee
+- Gorilla
+- Human
+- Orangutan
+
+@right
+
+![Slide image 2](assets/lect02c-genome_sizes/image_002.png)
+
+=== layout: two-panels
+
+# Great Apes
+
+@left
+
+- 46 chromosomes
+  - Human
+- 48 chromosomes
+  - Bonobo
+  - Chimpanzee
+  - Gorilla
+  - Orangutan
+
+@right
+
+![Slide image 3](assets/lect02c-genome_sizes/image_003.png)
+
+=== layout: one-panel
+
+# The proposed mechanism for the creation of the long human chromosome 2 by fusion of two shorter chromosomes
+
+@body
+
+![Coupled source region](assets/lect02c-genome_sizes/source_region_ea0f1c9c5dd20221e29e81d7d040d751e1c3a582d5c30315bb099e360d8ea195.png)
+
+=== layout: one-panel
+
+# Neanderthal Karyotype(46 Chromosomes)
+
+@body
+
+![Slide image 5](assets/lect02c-genome_sizes/image_005.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 6](assets/lect02c-genome_sizes/image_006.jpg)
+
+=== layout: two-panels
+
+# Jack jumper ant
+
+@left
+
+![Slide image 7](assets/lect02c-genome_sizes/image_007.png)
+
+@right
+
+- A species of bull ant that is native to Australia.
+- Fewest known chromosomes
+- Females have two chromosomes (diploid)
+- Male have only one (haploid)
+  - (XO system)
+
+=== layout: two-panels
+
+# Adder's tongue fern
+
+@left
+
+![Slide image 8](assets/lect02c-genome_sizes/image_008.png)
+
+@right
+
+- Most known chromosomes
+- Adders-tongue
+- Ophioglossum reticulatum
+- Fern with a stalk is thought to resemble a snake's tongue
+- Has about 1260 chromosomes in its diploid cells
+
+=== layout: title-only
+
+# Total DNA mass
+
+=== layout: two-panels
+
+# First Genome in 1995
+
+@left
+
+- The first free-living organism to have its genome completely sequenced was the bacterium Haemophilus influenzae, in 1995.
+  - A non-moving rod-shaped bacterium that causes meningitis.
+  - Genome size of 1.8 million base pairs
+
+@right
+
+![Slide image 9](assets/lect02c-genome_sizes/image_009.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect02c-genome_sizes/image_010.jpg)
+
+=== layout: multiple-choice
+
+@question
+
+About how many base pairs does a diploid human genome have?
+
+- A) 6 million
+- B) 60 million
+- C) 600 million
+- D) 6 billion
+- E) 60 billion
+- F) 600 billion
+
+@answer
+
+Answer: D
+
+=== layout: one-panel
+
+# Human Genome Project
+
+@body
+
+- The goals of the Human Genome Project include
+  - identifying all the genes in human DNA
+  - determining the sequences of the more than 3 billion base pairs in human DNA
+  - storing this information in databases
+  - improving tools for data analysis
+  - transferring related technologies to the private sector
+  - addressing the ethical, legal, and social issues that would arise from this knowledge
+
+=== layout: one-panel
+
+# Which of the following organisms has the LARGEST number of BASE PAIRS?
+
+@body
+
+- A. Chicken
+- B. Corn
+- C. Fruit fly (Drosophila)
+- D. Human
+- E. Mouse
+- F. Rice
+- G. Zebrafish
+
+=== layout: one-panel
+
+# Results
+
+@body
+
+- E. coli: 4.6Mb
+- S. cerevisiae (yeast): 12.2Mb
+- Fruit fly: 165Mb
+- Rice: 420Mb
+- Chicken: 1,126Mb
+- Zebrafish: 1,400Mb
+- Corn: 2,300Mb
+- Mouse: 2,640Mb
+- Humans: 3,080Mb
+- Mexican axolotl 32,000Mb
+- Lungfish: 1,300,000Mb!!!
+- Mb = millions of base pairs
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect02c-genome_sizes/image_011.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 12](assets/lect02c-genome_sizes/image_012.png)
+
+=== layout: two-panels
+
+# Human Genome Project
+
+@left
+
+- One of the most interesting projects in modern genetics was the sequencing of the entire human genome
+  - A genome is the complete set of genes (and alleles) in a certain organism
+- The Human Genome Project, begun in 1989 and essentially finished in 2003, was a massive research undertaking
+
+@right
+
+![Slide image 13](assets/lect02c-genome_sizes/image_013.png)
+
+=== layout: two-panels
+
+# Genome Sequence History
+
+@left
+
+- 1976 – Phage MS2 – 3.5 kbp
+- 1995 – H. influenza – 1.8 Mbp
+- 1996 – S. cerevisiae – 12.1 Mbp
+- 1998 – C. elegans – 100 Mbp
+- 2000 – Arabidopsis – 119 Mbp
+- 2000 – Drosophila – 165 Mbp
+- 2003 – Human – 3.2 Gbp
+- 2005 – Rice – 430 Mbp
+- 2009 – Corn – 2.3 Gbp
+- 2014 – Pine tree – 21 Gbp
+  - 82% duplicated
+- TBD – Japanese canopy plant – 150 Gbp
+
+@right
+
+![Slide image 14](assets/lect02c-genome_sizes/image_014.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 15](assets/lect02c-genome_sizes/image_015.jpg)
+
+=== layout: multiple-choice
+
+@question
+
+What percentage of DNA do all humans identically share?
+
+- A) 60%
+- B) 75%
+- C) 90%
+- D) 99.9%
+
+@answer
+
+Answer: D
+
+=== layout: two-panels
+
+# Differences in Human DNA
+
+@left
+
+- There are service that looks at only the highly variable parts of Human DNA
+  - Based on single nucleotide polymorphisms (SNPs or “snips”)
+  - The nucleotide diversity between humans is about 0.1%
+  - But only 1% of these are expected to have any meaningful difference
+    - so only about 30,000 letters are important
+- The service checks certain letters in your DNA that are associated with diseases.
+  - 23andMe sequences about 650,000 SNPs.
+
+@right
+
+![Slide image 16](assets/lect02c-genome_sizes/image_016.png)
+
+=== layout: one-panel
+
+# Genetic Similarities of Humans
+
+@body
+
+![Slide image 17](assets/lect02c-genome_sizes/image_017.png)
+
+=== layout: two-panels
+
+# Personal Genome Sequencing
+
+@left
+
+![Slide image 18](assets/lect02c-genome_sizes/image_018.png)
+
+@right
+
+- Fill a cup with spit and send off the sample
+
+=== layout: title-only
+
+# Dr. Voss Navigenics DNA analysis circa 2009
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02c-genome_sizes/source_region_8afae644844c47723661e6e54a75aeb16a5266f51bd36f874e0af0eaf92dc849.png)
+
+=== layout: title-only
+
+# 23andMe Health Data
+
+=== layout: one-panel
+
+# 23andMe
+
+@body
+
+![Slide image 21](assets/lect02c-genome_sizes/image_021.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect02c-genome_sizes/image_022.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 23](assets/lect02c-genome_sizes/image_023.png)
+
+=== layout: one-panel
+
+# Raw SNP Data Download
+
+@body
+
+![Slide image 24](assets/lect02c-genome_sizes/image_024.png)
+
+=== layout: two-plus-one-panels
+
+# SNP rs2802292
+
+@top-left
+
+- A study of 5 genes in 3,741 Japanese men
+  - some of whom lived significantly longer than average (centarians)
+- concluded that the FOXO3 gene harbors several SNPs linked to longevity, including this SNP, rs2802292
+  - as well as rs2764264 and rs13217795.
+
+@bottom-left
+
+- [https://www.snpedia.com/index.php/Rs2802292](https://www.snpedia.com/index.php/Rs2802292)
+
+@right
+
+![Slide image 25](assets/lect02c-genome_sizes/image_025.png)
+
+- 23andMe for
+- Dr. Voss: G;T
+
+=== layout: two-panels
+
+# Promethease
+
+@left
+
+- Promethease is a literature retrieval system that builds a personal DNA report based on connecting a file of DNA genotypes to the scientific findings cited in SNPedia.
+  - Customers of DNA testing services (such as 23andMe, Ancestry.com, FamilyTreeDNA, etc.), can retrieve information published science articles about their DNA variations.
+
+@right
+
+![Slide image 26](assets/lect02c-genome_sizes/image_026.png)
+
+=== layout: title-only
+
+# Number of Genes
+
+=== layout: two-over-one-panels
+
+# Minimal Organism
+
+@top-left
+
+- Mycoplasma laboratorium is a designed, partially synthetic species of bacterium
+  - It is estimated that the synthetic genome cost US$40 million to make and took 20 people more than a decade of work.
+- Version 3.0 – contains 531,560 base pairs and 473 genes.
+  - Of these genes 149 are of unknown biological function.
+  - announced March 24, 2016
+
+@top-right
+
+![Slide image 27](assets/lect02c-genome_sizes/image_027.png)
+
+@bottom
+
+- [http://astrobiology.com/2016/03/first-minimal-synthetic-bacterial-cell.html](http://astrobiology.com/2016/03/first-minimal-synthetic-bacterial-cell.html)
+
+- [https://en.wikipedia.org/wiki/Mycoplasma_laboratorium](https://en.wikipedia.org/wiki/Mycoplasma_laboratorium)
+
+=== layout: multiple-choice
+
+@question
+
+Scientists now think humans have how many protein-encoding genes:
+
+- a) 20,000 - 25,000
+- b) 30,000 - 40,000
+- c) 65,000 - 75,000
+- d) more than 100,000
+
+@answer
+
+Answer: A
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 28](assets/lect02c-genome_sizes/image_028.png)
+
+=== layout: one-panel
+
+# Which of the following organisms has the LARGEST number of GENES?
+
+@body
+
+- A. Chicken
+- B. Corn
+- C. Fruit fly (Drosophila)
+- D. Human
+- E. Mouse
+- F. Rice
+- G. Zebrafish
+
+=== layout: two-panels
+
+# Number of Genes
+
+@left
+
+![Slide image 29](assets/lect02c-genome_sizes/image_029.png)
+
+@right
+
+- E. coli: 5,349
+- Yeast: 6,294
+- Fruit fly: 13,931
+- Chicken: 19,113
+- Human: 20,338
+- Mouse: 22,612
+- Zebrafish: 25,903
+- Rice: 32,000
+- Corn: 39,656
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 30](assets/lect02c-genome_sizes/image_030.emf)
+
+=== layout: title-only
+
+# Percent of Genome in Use
+
+=== layout: multiple-choice
+
+@question
+
+What percent of human DNA are genes, i.e., code for proteins
+
+- A) 1.5%
+- B) 5.1%
+- C) 15%
+- D) 51%
+
+@answer
+
+Answer: A
+
+=== layout: one-panel
+
+# Human genome abundance of non-coding DNA
+
+@body
+
+- 98.5% “junk” DNA
+- 1.5% protein-coding genes
+
+=== layout: one-panel
+
+# Human genome abundance of non-coding DNA
+
+@body
+
+- 25.9% introns
+- 20.4% long interspersed nuclear elements \[LINES\]
+- 13.1% short interspersed nuclear elements \[SINES\]
+- 11.6% miscellaneous unique sequences
+- 8.3% long terminal repeats \[LTR\] retrotransposons
+- 8% miscellaneous compacted DNA or heterochromatin
+- 5% segmental duplications
+- 3% simple sequence repeats
+- 2.9% DNA transposons
+- 1.5% protein-coding genes
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 31](assets/lect02c-genome_sizes/image_031.jpg)
+
+=== layout: title-only
+
+# Summary
+
+=== layout: one-panel
+
+# Summary
+
+@body
+
+- Complexity ≠ # of Genes
+- More complex organisms do not always have larger genomes than simpler ones.
+  - Any given genome seems to contain more DNA than would be needed for the predicted gene number
+- Some closely related species exhibit divergent DNA contents.
+
+=== layout: one-panel
+
+# Genomes and proteomes differ in size and complexity
+
+@body
+
+![Slide image 32](assets/lect02c-genome_sizes/image_032.jpg)
+
+=== layout: title-only
+
+# THE END

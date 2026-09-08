@@ -1,0 +1,1552 @@
+{
+  "source": "lect02b-genes_dogma.odp",
+  "slide_count": 49,
+  "visible_slides": 49,
+  "hidden_slides": [],
+  "unique_media_assets": 31,
+  "slides": [
+    {
+      "source_slide": 1,
+      "visible_page": 1,
+      "layout": "title-slide",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 2,
+      "visible_page": 2,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 3,
+      "visible_page": 3,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 4,
+      "visible_page": 4,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 5,
+      "visible_page": 5,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 6,
+      "visible_page": 6,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 7,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 8,
+      "visible_page": 8,
+      "layout": "two-panels",
+      "text_blocks": 2,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 9,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 10,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 11,
+      "images": 1,
+      "notes_omitted": 1,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "protected source text shapes: 41"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-10-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_4fabd0df7ab818009beac4876c37fffe38ea5323906aee17a43d57007dbbbe68.png",
+        "sha256": "4fabd0df7ab818009beac4876c37fffe38ea5323906aee17a43d57007dbbbe68",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.14963357926715853,
+          "top": 0.0173692560359117,
+          "right": 0.8523042966085932,
+          "bottom": 0.9694216025043216
+        },
+        "pixel_bounds": [
+          237,
+          17,
+          1354,
+          963
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_002.jpg"
+        ],
+        "included_source_ordinals": [
+          40
+        ],
+        "coupled_text_count": 10,
+        "protected_text_shape_ids": [
+          41
+        ],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [
+        41
+      ],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 11,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 12,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 69,
+      "images": 1,
+      "notes_omitted": 1,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-12-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_06c09a6b9ce2ddca68b33369f1fc2f057188e2f7176798934ac0e64aff8ba435.png",
+        "sha256": "06c09a6b9ce2ddca68b33369f1fc2f057188e2f7176798934ac0e64aff8ba435",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.03260512121024242,
+          "top": 0.04445158288137928,
+          "right": 0.9671900303800608,
+          "bottom": 1.0
+        },
+        "pixel_bounds": [
+          51,
+          44,
+          1536,
+          993
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_003.jpg",
+          "source-vector-108",
+          "source-vector-110",
+          "source-vector-117",
+          "source-vector-120",
+          "source-vector-123",
+          "source-vector-125",
+          "source-vector-126",
+          "source-vector-127",
+          "source-vector-128",
+          "source-connector-131",
+          "source-vector-132",
+          "source-connector-135",
+          "source-vector-136",
+          "source-connector-139",
+          "source-vector-140",
+          "source-connector-143"
+        ],
+        "included_source_ordinals": [
+          54,
+          108,
+          110,
+          117,
+          120,
+          123,
+          125,
+          126,
+          127,
+          128,
+          131,
+          132,
+          135,
+          136,
+          139,
+          140,
+          143
+        ],
+        "coupled_text_count": 68,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 13,
+      "visible_page": 13,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 14,
+      "visible_page": 14,
+      "layout": "two-panels",
+      "text_blocks": 2,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 15,
+      "visible_page": 15,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 16,
+      "visible_page": 16,
+      "layout": "stacked-panels",
+      "text_blocks": 14,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-16-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_5369fbb5dfb8784ec0a50dbe241df8d9e7af1d5b3d90f11942cb9453f53cb502.png",
+        "sha256": "5369fbb5dfb8784ec0a50dbe241df8d9e7af1d5b3d90f11942cb9453f53cb502",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.011677847355694711,
+          "top": 0.6205509533093321,
+          "right": 0.9704755409510819,
+          "bottom": 0.8918313074491635
+        },
+        "pixel_bounds": [
+          18,
+          616,
+          1542,
+          886
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_005.jpg"
+        ],
+        "included_source_ordinals": [
+          153
+        ],
+        "coupled_text_count": 12,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 17,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 18,
+      "visible_page": 18,
+      "layout": "stacked-panels",
+      "text_blocks": 5,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "ignored non-content shape type FREEFORM (5)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-18-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_295ec1a2a7f10fb3823694abc3b1f171c5dda919ca2b7f7c32a6338c8b9789c3.png",
+        "sha256": "295ec1a2a7f10fb3823694abc3b1f171c5dda919ca2b7f7c32a6338c8b9789c3",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.09620832041664083,
+          "top": 0.2811076963706762,
+          "right": 0.8684461528923058,
+          "bottom": 0.7183672899326243
+        },
+        "pixel_bounds": [
+          152,
+          279,
+          1380,
+          714
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_006.jpg",
+          "source-connector-173",
+          "source-connector-174",
+          "source-connector-175",
+          "source-connector-176"
+        ],
+        "included_source_ordinals": [
+          168,
+          173,
+          174,
+          175,
+          176
+        ],
+        "coupled_text_count": 4,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 19,
+      "visible_page": 19,
+      "layout": "one-panel",
+      "text_blocks": 18,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-19-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_1244e2d9f5b11412f982cc43d4ffed74ef80b6ef343e005d4778eee38da535f0.png",
+        "sha256": "1244e2d9f5b11412f982cc43d4ffed74ef80b6ef343e005d4778eee38da535f0",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.004464008928017856,
+          "top": 0.034567104939890056,
+          "right": 0.967261454522909,
+          "bottom": 0.9946184508985225
+        },
+        "pixel_bounds": [
+          7,
+          34,
+          1537,
+          988
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_007.png",
+          "source-connector-198",
+          "source-connector-199",
+          "source-vector-200",
+          "source-vector-201",
+          "source-vector-202",
+          "source-vector-203"
+        ],
+        "included_source_ordinals": [
+          179,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203
+        ],
+        "coupled_text_count": 18,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 20,
+      "visible_page": 20,
+      "layout": "one-panel",
+      "text_blocks": 18,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-20-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_9a4cedbb7a70177a1a6b8eac311e014ccc003ec775bf52d087993d287f686bc1.png",
+        "sha256": "9a4cedbb7a70177a1a6b8eac311e014ccc003ec775bf52d087993d287f686bc1",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.004464008928017856,
+          "top": 0.034567104939890056,
+          "right": 0.967261454522909,
+          "bottom": 0.9946184508985225
+        },
+        "pixel_bounds": [
+          7,
+          34,
+          1537,
+          988
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_007.png",
+          "source-connector-223",
+          "source-connector-224",
+          "source-vector-225",
+          "source-vector-226",
+          "source-vector-227"
+        ],
+        "included_source_ordinals": [
+          204,
+          223,
+          224,
+          225,
+          226,
+          227
+        ],
+        "coupled_text_count": 18,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 21,
+      "visible_page": 21,
+      "layout": "one-panel",
+      "text_blocks": 18,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-21-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_a4be5115d01f6a39f0f20c38477b76bad845bf9d75e1ac60b90e87e8ac77184f.png",
+        "sha256": "a4be5115d01f6a39f0f20c38477b76bad845bf9d75e1ac60b90e87e8ac77184f",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.004464008928017856,
+          "top": 0.034567104939890056,
+          "right": 0.967261454522909,
+          "bottom": 0.9946184508985225
+        },
+        "pixel_bounds": [
+          7,
+          34,
+          1537,
+          988
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_007.png",
+          "source-connector-247",
+          "source-connector-248",
+          "source-vector-249",
+          "source-vector-250"
+        ],
+        "included_source_ordinals": [
+          228,
+          247,
+          248,
+          249,
+          250
+        ],
+        "coupled_text_count": 18,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 22,
+      "visible_page": 22,
+      "layout": "one-panel",
+      "text_blocks": 18,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-22-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_5eadcbaeaf042f49955a4c5675cd199265b4ffe630e717f9976d18e682f9c503.png",
+        "sha256": "5eadcbaeaf042f49955a4c5675cd199265b4ffe630e717f9976d18e682f9c503",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.004464008928017856,
+          "top": 0.034567104939890056,
+          "right": 0.967261454522909,
+          "bottom": 0.9946184508985225
+        },
+        "pixel_bounds": [
+          7,
+          34,
+          1537,
+          988
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_007.png",
+          "source-connector-270",
+          "source-connector-271",
+          "source-vector-272"
+        ],
+        "included_source_ordinals": [
+          251,
+          270,
+          271,
+          272
+        ],
+        "coupled_text_count": 18,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 23,
+      "visible_page": 23,
+      "layout": "one-panel",
+      "text_blocks": 18,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-23-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_7224f0cf4bb8434b78b19da4ce3aacb047f3d70b8db87ee12ec7bf39bb9e904f.png",
+        "sha256": "7224f0cf4bb8434b78b19da4ce3aacb047f3d70b8db87ee12ec7bf39bb9e904f",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.004464008928017856,
+          "top": 0.034567104939890056,
+          "right": 0.967261454522909,
+          "bottom": 0.9946184508985225
+        },
+        "pixel_bounds": [
+          7,
+          34,
+          1537,
+          988
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_007.png",
+          "source-connector-292",
+          "source-connector-293"
+        ],
+        "included_source_ordinals": [
+          273,
+          292,
+          293
+        ],
+        "coupled_text_count": 18,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 24,
+      "visible_page": 24,
+      "layout": "one-panel",
+      "text_blocks": 37,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-24-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_cb3c897b8ad1b31dc4ac53014b91b30a34a0677ddf3ac63745bf99c0d2f5cd36.png",
+        "sha256": "cb3c897b8ad1b31dc4ac53014b91b30a34a0677ddf3ac63745bf99c0d2f5cd36",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.03185516771033542,
+          "top": 0.19803237309365115,
+          "right": 0.967261454522909,
+          "bottom": 0.8016140203415827
+        },
+        "pixel_bounds": [
+          50,
+          196,
+          1537,
+          797
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_008.jpg",
+          "source-vector-332",
+          "source-vector-333",
+          "source-vector-334"
+        ],
+        "included_source_ordinals": [
+          294,
+          332,
+          333,
+          334
+        ],
+        "coupled_text_count": 37,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 25,
+      "visible_page": 25,
+      "layout": "one-panel",
+      "text_blocks": 37,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-25-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_dacac696d4ffc8af4f4eb64df49a002a6a3f2f57098b6f2d1f2d196c3f2e4e1d.png",
+        "sha256": "dacac696d4ffc8af4f4eb64df49a002a6a3f2f57098b6f2d1f2d196c3f2e4e1d",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.03185516771033542,
+          "top": 0.19803237309365115,
+          "right": 0.967261454522909,
+          "bottom": 0.8016140203415827
+        },
+        "pixel_bounds": [
+          50,
+          196,
+          1537,
+          797
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_008.jpg",
+          "source-vector-373",
+          "source-vector-374"
+        ],
+        "included_source_ordinals": [
+          335,
+          373,
+          374
+        ],
+        "coupled_text_count": 37,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 26,
+      "visible_page": 26,
+      "layout": "one-panel",
+      "text_blocks": 37,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-26-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_efec0f3e3db72ef98c9c49574a5e379070681d1c3ea108d91948221861ab820d.png",
+        "sha256": "efec0f3e3db72ef98c9c49574a5e379070681d1c3ea108d91948221861ab820d",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.03185516771033542,
+          "top": 0.19803237309365115,
+          "right": 0.967261454522909,
+          "bottom": 0.8016140203415827
+        },
+        "pixel_bounds": [
+          50,
+          196,
+          1537,
+          797
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_008.jpg",
+          "source-vector-413"
+        ],
+        "included_source_ordinals": [
+          375,
+          413
+        ],
+        "coupled_text_count": 37,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 27,
+      "visible_page": 27,
+      "layout": "one-panel",
+      "text_blocks": 37,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-27-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_33608ca8655be08486af0f5cc126182ef77f236cc83236f34e4dc81e78af237d.png",
+        "sha256": "33608ca8655be08486af0f5cc126182ef77f236cc83236f34e4dc81e78af237d",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.028283960567921138,
+          "top": 0.19803237309365115,
+          "right": 0.967261454522909,
+          "bottom": 0.8016140203415827
+        },
+        "pixel_bounds": [
+          44,
+          196,
+          1537,
+          797
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_008.jpg"
+        ],
+        "included_source_ordinals": [
+          414
+        ],
+        "coupled_text_count": 37,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 28,
+      "visible_page": 28,
+      "layout": "multiple-choice",
+      "text_blocks": 1,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure with top figure",
+        "question": {
+          "source_ordinal": 452,
+          "bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.10010176504907005,
+            "right": 0.9499053878107756,
+            "bottom": 0.7973288420432492
+          }
+        },
+        "answer": {
+          "source_ordinal": 453,
+          "bounds": {
+            "left": 0.45354330708661417,
+            "top": 0.8088702555934274,
+            "right": 0.9161574803149606,
+            "bottom": 0.9155997630772532
+          }
+        },
+        "image": {
+          "source_ordinal": 454,
+          "bounds": {
+            "left": 0.2699475478950958,
+            "top": 0.11278589281213715,
+            "right": 0.6799221278442557,
+            "bottom": 0.21323047212507387
+          }
+        },
+        "question_visual_region": null
+      },
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 29,
+      "visible_page": 29,
+      "layout": "multiple-choice",
+      "text_blocks": 1,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure with top figure",
+        "question": {
+          "source_ordinal": 455,
+          "bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.10010176504907005,
+            "right": 0.9499053878107756,
+            "bottom": 0.7973288420432492
+          }
+        },
+        "answer": {
+          "source_ordinal": 456,
+          "bounds": {
+            "left": 0.45354330708661417,
+            "top": 0.7974431134645381,
+            "right": 0.9161574803149606,
+            "bottom": 0.9041726209483639
+          }
+        },
+        "image": {
+          "source_ordinal": 457,
+          "bounds": {
+            "left": 0.2699475478950958,
+            "top": 0.11278589281213715,
+            "right": 0.6799221278442557,
+            "bottom": 0.21323047212507387
+          }
+        },
+        "question_visual_region": null
+      },
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 30,
+      "visible_page": 30,
+      "layout": "multiple-choice",
+      "text_blocks": 1,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure with top figure",
+        "question": {
+          "source_ordinal": 458,
+          "bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.10010176504907005,
+            "right": 0.9499053878107756,
+            "bottom": 0.7973288420432492
+          }
+        },
+        "answer": {
+          "source_ordinal": 459,
+          "bounds": {
+            "left": 0.45354330708661417,
+            "top": 0.7974431134645381,
+            "right": 0.9161574803149606,
+            "bottom": 0.9041726209483639
+          }
+        },
+        "image": {
+          "source_ordinal": 460,
+          "bounds": {
+            "left": 0.2699475478950958,
+            "top": 0.11278589281213715,
+            "right": 0.6799221278442557,
+            "bottom": 0.21323047212507387
+          }
+        },
+        "question_visual_region": null
+      },
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 31,
+      "visible_page": 31,
+      "layout": "multiple-choice",
+      "text_blocks": 5,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure with associated overlay",
+        "question": {
+          "source_ordinal": 461,
+          "bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.10010176504907005,
+            "right": 0.9499053878107756,
+            "bottom": 0.882803865167341
+          }
+        },
+        "answer": {
+          "source_ordinal": 462,
+          "bounds": {
+            "left": 0.5533228346456693,
+            "top": 0.653061172666022,
+            "right": 0.861732283464567,
+            "bottom": 0.7836734071992265
+          }
+        },
+        "image": null,
+        "question_visual_region": {
+          "local_key": "multiple-choice-visual-1",
+          "global_key": "source-31-multiple-choice-visual-1",
+          "asset": "assets/lect02b-genes_dogma/source_region_96ee4ec0afe9a47caca5bfa56ed7806d0a61e4a2036fa46b1322c374b87559cd.png",
+          "sha256": "96ee4ec0afe9a47caca5bfa56ed7806d0a61e4a2036fa46b1322c374b87559cd",
+          "dpi": 144,
+          "normalized_bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.03628117625922345,
+            "right": 0.9842961125922252,
+            "bottom": 0.882803865167341
+          },
+          "pixel_bounds": [
+            79,
+            36,
+            1564,
+            877
+          ],
+          "included_source_image_refs": [],
+          "included_source_ordinals": [],
+          "overlay_text_count": 4,
+          "protected_text_shape_ids": [
+            461,
+            462
+          ],
+          "classification_reason": "question-associated overlay component"
+        }
+      },
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 32,
+      "visible_page": 32,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 33,
+      "visible_page": 33,
+      "layout": "multiple-choice",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure",
+        "question": {
+          "source_ordinal": 469,
+          "bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.1000446293384256,
+            "right": 0.9499053878107756,
+            "bottom": 0.7972717063326048
+          }
+        },
+        "answer": {
+          "source_ordinal": 470,
+          "bounds": {
+            "left": 0.45354330708661417,
+            "top": 0.8126983482066052,
+            "right": 0.9161574803149606,
+            "bottom": 0.9635937600185881
+          }
+        },
+        "image": null,
+        "question_visual_region": null
+      },
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 34,
+      "visible_page": 34,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 35,
+      "visible_page": 35,
+      "layout": "one-panel",
+      "text_blocks": 12,
+      "images": 1,
+      "notes_omitted": 1,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "ignored non-content shape type FREEFORM (5)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-35-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_7ff973ffdcfebed4fceb6c3b82808287dfc7c7aed9eb744b5136d16725f3bec3.png",
+        "sha256": "7ff973ffdcfebed4fceb6c3b82808287dfc7c7aed9eb744b5136d16725f3bec3",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.016606113212226426,
+          "top": 0.0,
+          "right": 0.8052714985429971,
+          "bottom": 0.9850196515102555
+        },
+        "pixel_bounds": [
+          26,
+          0,
+          1279,
+          979
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_010.jpg",
+          "source-connector-475",
+          "source-connector-481"
+        ],
+        "included_source_ordinals": [
+          472,
+          475,
+          481
+        ],
+        "coupled_text_count": 12,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 36,
+      "visible_page": 36,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 37,
+      "visible_page": 37,
+      "layout": "multiple-choice",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure",
+        "question": {
+          "source_ordinal": 494,
+          "bounds": {
+            "left": 0.049996899993799984,
+            "top": 0.10010176504907005,
+            "right": 0.9499053878107756,
+            "bottom": 0.7973288420432492
+          }
+        },
+        "answer": {
+          "source_ordinal": 495,
+          "bounds": {
+            "left": 0.45354330708661417,
+            "top": 0.7974431134645381,
+            "right": 0.9161574803149606,
+            "bottom": 0.9041726209483639
+          }
+        },
+        "image": null,
+        "question_visual_region": null
+      },
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 38,
+      "visible_page": 38,
+      "layout": "stacked-panels",
+      "text_blocks": 7,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "vector-component-1",
+        "global_key": "source-38-vector-component-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_abb30db8da90a95b5874e284dfb943d47d92a4b1137620fd889e880b3034f03f.png",
+        "sha256": "abb30db8da90a95b5874e284dfb943d47d92a4b1137620fd889e880b3034f03f",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.21745080290160582,
+          "top": 0.6977412983899791,
+          "right": 0.7956649513299027,
+          "bottom": 0.9393682187053429
+        },
+        "pixel_bounds": [
+          345,
+          692,
+          1264,
+          933
+        ],
+        "included_source_image_refs": [
+          "source-connector-503",
+          "source-connector-504",
+          "source-connector-505",
+          "source-connector-507",
+          "source-vector-508"
+        ],
+        "included_source_ordinals": [
+          503,
+          504,
+          505,
+          507,
+          508
+        ],
+        "coupled_text_count": 5,
+        "protected_text_shape_ids": [],
+        "kind": "vector-scaffold",
+        "classification_reason": "connected vector scaffold with distributed annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 39,
+      "visible_page": 39,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 40,
+      "visible_page": 40,
+      "layout": "two-panels",
+      "text_blocks": 3,
+      "images": 2,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 41,
+      "visible_page": 41,
+      "layout": "one-panel",
+      "text_blocks": 39,
+      "images": 1,
+      "notes_omitted": 1,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-41-content-region-1",
+        "asset": "assets/lect02b-genes_dogma/source_region_4577f29a9623fb4b9ee7452b6c4c7b2dd62ce6aaeb64f299ba04f9620ef4f3b0.png",
+        "sha256": "4577f29a9623fb4b9ee7452b6c4c7b2dd62ce6aaeb64f299ba04f9620ef4f3b0",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.03206944013888028,
+          "top": 0.08924598002662525,
+          "right": 0.9676185752371504,
+          "bottom": 0.9213133341416978
+        },
+        "pixel_bounds": [
+          50,
+          88,
+          1537,
+          915
+        ],
+        "included_source_image_refs": [
+          "assets/lect02b-genes_dogma/image_014.jpg"
+        ],
+        "included_source_ordinals": [
+          515
+        ],
+        "coupled_text_count": 38,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; local figure heading"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 42,
+      "visible_page": 42,
+      "layout": "two-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 43,
+      "visible_page": 43,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 4,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 44,
+      "visible_page": 44,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 45,
+      "visible_page": 45,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 46,
+      "visible_page": 46,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 47,
+      "visible_page": 47,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 48,
+      "visible_page": 48,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 49,
+      "visible_page": 49,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "unconsumed vector requires review: 570"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": [
+        {
+          "source_ordinal": 570,
+          "bounds": {
+            "left": 0.5651792423584847,
+            "top": 0.5208491382347732,
+            "right": 0.637746171492343,
+            "bottom": 0.6706589715445116
+          },
+          "reason": "unconsumed-vector"
+        }
+      ]
+    }
+  ]
+}

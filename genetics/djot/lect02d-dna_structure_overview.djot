@@ -1,0 +1,396 @@
+=== layout: title-slide
+
+# Lecture 2D
+
+## DNA Structure Review
+## Chapter 2
+## Dr. Neil Voss
+## Sept 2, 2025
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: title-only
+
+# DNA Structure Review
+
+=== layout: title-only
+
+# Name the three (3) components of a nucleic acid
+
+=== layout: one-panel
+
+# Nucleotides
+
+@body
+
+![Slide image 1](assets/lect02d-dna_structure_overview/image_001.jpg)
+
+=== layout: title-only
+
+# Name the two (2) types of nucleobases
+
+=== layout: one-panel
+
+# Nitrogenous bases
+
+@body
+
+![Slide image 2](assets/lect02d-dna_structure_overview/image_002.jpg)
+
+=== layout: title-only
+
+# Name the two (2) types of purines
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02d-dna_structure_overview/source_region_5800f45e4919acd5001540e786a469f8b869bf626199c7a29da590c0852dbe1e.png)
+
+=== layout: title-only
+
+# Name the three (3) types of pyrimidines
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02d-dna_structure_overview/source_region_81cfe39e91f2114ab8f6b1891e5a84db7ce0b4969e63847eee18752adc9b9115.png)
+
+=== layout: title-only
+
+# Difference between DNA and RNA sugars
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect02d-dna_structure_overview/image_005.jpg)
+
+=== layout: one-panel
+
+# Terms
+
+@body
+
+- Nucleobase – Purine or Pyrimidine
+- Nucleoside – Base + Sugar
+- Nucleotide – Base + Sugar + Phosphate
+- Polynucleotide – More than one nucleotides in a chain
+- Nucleic acids – All of the above
+
+=== layout: one-panel
+
+# Bases, nucleosides, and nucleotides
+
+@body
+
+![Slide image 6](assets/lect02d-dna_structure_overview/image_006.jpg)
+
+=== layout: two-panels
+
+# Nucleotides join to form a DNA or an RNA chain
+
+@left
+
+![Slide image 7](assets/lect02d-dna_structure_overview/image_007.jpg)
+
+@right
+
+- Polynucleotide chains have a 5&prime;-phosphate at one end and a 3&prime;-OH on the other end
+
+=== layout: one-panel
+
+# Sugar-Phosphate Backbone
+
+@body
+
+![Slide image 8](assets/lect02d-dna_structure_overview/image_008.jpg)
+
+=== layout: title-only
+
+# Base Pairing
+
+=== layout: one-panel
+
+# Base Pairing
+
+@body
+
+![Coupled source region](assets/lect02d-dna_structure_overview/source_region_dabaec29ff7dec2e945919315568dcb970c69fcdc78381682f88cecf6ff26d64.png)
+
+=== layout: two-panels
+
+# Nucleotide Base Pairing
+
+@left
+
+![Slide image 10](assets/lect02d-dna_structure_overview/image_010.png)
+
+@right
+
+![Slide image 11](assets/lect02d-dna_structure_overview/image_011.png)
+
+=== layout: one-plus-two-panels
+
+# Structure of A-T and G-C base pairs in DNA
+
+@left
+
+- A-T base pairs have two H-bonds.
+- G-C base pairs have three
+- H-bonds
+
+@top-right
+
+![Slide image 12](assets/lect02d-dna_structure_overview/image_012.jpg)
+
+- A-T base pairing.
+
+@bottom-right
+
+![Slide image 13](assets/lect02d-dna_structure_overview/image_013.jpg)
+
+- G-C base pairing
+
+=== layout: title-only
+
+# The Double Strand
+
+=== layout: two-panels
+
+# The DNA double helix
+
+@left
+
+![Slide image 14](assets/lect02d-dna_structure_overview/image_014.jpg)
+
+@right
+
+- Figure 1.6: Molecular structure of the DNA double helix in the standard “B form.”
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 15](assets/lect02d-dna_structure_overview/image_015.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 16](assets/lect02d-dna_structure_overview/image_016.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02d-dna_structure_overview/source_region_dddf044953e76eeb53045bee0fb13812acd45807b31ffed7dbe981de2c61325d.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 17](assets/lect02d-dna_structure_overview/image_017.jpg)
+
+@right
+
+- DNA strands
+- are anti-parallel
+
+- A segment of a DNA molecule, showing the antiparallel orientation of the complementary strands.
+
+=== layout: two-panels
+
+# Strands
+
+@left
+
+- Template
+- Complimentary
+- Anti-sense
+- Read 3&prime; to 5&prime;
+
+@right
+
+- Non-template
+- Actual Sequence
+- Sense
+- Read 5&prime; to 3&prime;
+
+=== layout: title-only
+
+# Complementary Sequences
+
+=== layout: multiple-choice
+
+@question
+
+1. Which one of the following sequences is complimentary to the sequence `ATGC`?
+
+- A. `CGTA`
+- B. `CGAT`
+- C. `GCTA`
+- D. `TACG`
+- E. `ATGC`
+
+@answer
+
+Answer: D
+
+=== layout: multiple-choice
+
+@question
+
+2. Which one of the following DNA sequences is complimentary to the direction-less DNA sequence `CGC,ATA,GG`?
+
+- A. `GGA,TAC,GC`
+- B. `GCG,TTA,GG`
+- C. `CGC,AAT,CC`
+- D. `GCG,TAT,CC`
+- E. `GCG,TCC,TA`
+
+@answer
+
+Answer: D
+
+=== layout: multiple-choice
+
+@question
+
+3. Which one of the following sequences is complimentary to the sequence 5&prime;-`ATGC`-3&prime;?
+
+- A. 5&prime;-`CGTA`-3&prime;
+- B. 5&prime;-`GCAT`-3&prime;
+- C. 5&prime;-`CGAT`-3&prime;
+- D. 5&prime;-`TACG`-3&prime;
+- E. 5&prime;-`ATGC`-3&prime;
+
+@answer
+
+Answer: B
+
+3&prime;-`TACG`-5&prime;
+
+=== layout: multiple-choice
+
+@question
+
+4. Which one of the following sequences is complimentary to the sequence
+
+- 3&prime;-`CAA,AGG,T`-5&prime;?
+  - Hint: pay attention to the 5&prime; and 3&prime; directions!
+  - A. 5&prime;-`GTT,TCC,A`-3&prime;
+  - B. 5&prime;-`CAA,AGG,T`-3&prime;
+  - C. 5&prime;-`ACC,TTT,G`-3&prime;
+  - D. 5&prime;-`TGG,AAA,C`-3&prime;
+  - E. 5&prime;-`TGG,TCC,A`-3&prime;
+
+@answer
+
+Answer: A
+
+=== layout: title-only
+
+# Base Composition
+
+=== layout: one-panel
+
+# Base composition (%G+C) varies among organisms
+
+@body
+
+![Slide image 18](assets/lect02d-dna_structure_overview/image_018.jpg)
+
+=== layout: one-panel
+
+# Chargaff's Rules
+
+@body
+
+- \[A\] = \[T\]
+- \[G\] = \[C\]
+- \[A\] + \[G\] = \[T\] + \[C\] = 50%
+- \[A\] + \[C\] = \[T\] + \[G\] = 50%
+- These rules hold true regardless of the % G+C or the source of the DNA
+
+=== layout: one-panel
+
+# Chargaff's Rules
+
+@body
+
+- A sample of dsDNA contains 14% Adenine, what percentages are the other nucleobases?
+
+=== layout: one-panel
+
+# Chargaff's Rules
+
+@body
+
+- A sample of dsDNA contains 14% Adenine, what percentages are the other nucleobases?
+- \[A\] = 14%
+- \[A\] = \[T\]
+- so \[T\] = 14%
+
+=== layout: one-panel
+
+# Chargaff's Rules
+
+@body
+
+- A sample of dsDNA contains 14% Adenine, what percentages are the other nucleobases?
+- \[A\] = \[T\] = 14%
+- 100 – 14 – 14 = 72%
+- \[G\] + \[C\] = 72%; \[G\] = \[C\]
+- 2 \[G\] = 72%; → \[G\] = 36%
+- \[G\] = \[C\] = 36%
+
+=== layout: one-panel
+
+# Chargaff's Rules
+
+@body
+
+- A sample of dsDNA contains 14% Adenine, what percentages are the other nucleobases?
+- \[A\] = \[T\] = 14%
+- \[G\] = \[C\] = 36%
+
+=== layout: title-only
+
+# More Sample Problems
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect02d-dna_structure_overview/image_019.png)
+
+=== layout: title-only
+
+# THE END

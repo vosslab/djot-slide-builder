@@ -1,0 +1,778 @@
+=== layout: title-slide
+
+# Lecture 2E
+
+## Restriction Enzymes
+## Chapter 2
+## Dr. Neil Voss
+## Sept 2, 2025
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: title-only
+
+# What is a palindrome?
+
+=== layout: two-plus-one-panels
+
+# Literary Palindromes
+
+@top-left
+
+- A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward.
+
+@bottom-left
+
+![Slide image 2](assets/lect02e-restriction_enzymes/image_002.png)
+
+@right
+
+![Slide image 1](assets/lect02e-restriction_enzymes/image_001.png)
+
+=== layout: two-panels
+
+# Literary Palindromes
+
+@left
+
+- Madam
+- Race car
+- Never odd or Even
+- Go Hang a Salami I’m a lasagna hog
+
+@right
+
+- Literary Palindromes are same both forwards and backwards
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect02e-restriction_enzymes/image_003.png)
+
+=== layout: two-over-one-panels
+
+# “Weird Al” Yankovic – “Bob”
+
+@top-left
+
+- I, man, am Regal, a German am I
+- Never odd or even
+- If I had a Hi-Fi
+- Madam, I′m Adam
+- Too hot to hoot
+- No lemons, no melon
+- Too bad I hid a boot
+- Lisa Bonet ate no basil
+- Warsaw was raw
+- Was it a car or a cat I saw?
+
+@top-right
+
+![Slide image 4](assets/lect02e-restriction_enzymes/image_004.png)
+
+@bottom
+
+- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+
+=== layout: two-panels
+
+# “Weird Al” Yankovic – “Bob”
+
+@left
+
+![Slide image 5](assets/lect02e-restriction_enzymes/image_005.png)
+
+- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+
+@right
+
+- Rise to vote, sir
+- Do geese see God?
+- Do nine men interpret? Nine men I nod
+- Rats live on no evil star
+- Won't lovers revolt now?
+- Race fast safe car
+- Pa′s a sap
+- Ma is as selfless as I am
+- May a moody baby doom a yam
+
+=== layout: two-over-one-panels
+
+# “Weird Al” Yankovic – “Bob”
+
+@top-left
+
+- Ah Satan sees Natasha
+- No devil lived on
+- Lonely Tylenol
+- Not a banana baton
+- No X in Nixon
+- O stone, be not so
+- O Geronimo, no minor ego
+- "Naomi" I moan
+- A Toyota's a Toyota
+- A dog, a panic, in a pagoda
+
+@top-right
+
+![Slide image 6](assets/lect02e-restriction_enzymes/image_006.png)
+
+@bottom
+
+- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+
+=== layout: two-over-one-panels
+
+# “Weird Al” Yankovic – “Bob”
+
+@top-left
+
+![Slide image 7](assets/lect02e-restriction_enzymes/image_007.png)
+
+@top-right
+
+- Oh no, Don Ho
+- Nurse, I spy gypsies, run!
+- Senile felines
+- Now I see bees, I won
+- UFO tofu
+- We panic in a pew
+- Oozy rat in a sanitary zoo
+- God, a red nugget, a fat egg under a dog
+- Go hang a salami, I'm a lasagna hog
+
+@bottom
+
+- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+
+=== layout: title-only
+
+# Palindrome DNA Sequences
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_5d5abb46b241f7820756f6cec552ce07d9fea6ab888284dc6059247c41124250.png)
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 3&prime;-`TCATGA`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 3&prime;-`TCATGA`-3&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 3&prime;-`TCATGA`-5&prime;
+
+=== layout: two-panels
+
+# Genetic Palindromes
+
+@left
+
+- A palindromic sequence is one where the 5&prime; to 3&prime; sequence is identical on both strands of a double strand polynucleotide
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_eabecc84421f40d72f47280dd708960bf4e1d5c580150e4df42253ee3524a3e4.png)
+
+=== layout: one-panel
+
+# Base Pair from Front to Back
+
+@body
+
+- 5&prime;-`AGTACT`-3&prime;
+
+=== layout: one-panel
+
+# Base Pair from Front to Back
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_9aed425553b1fa96f81ff16ef9583b44e7176b2e35862b8900326305ca9d6d94.png)
+
+=== layout: one-panel
+
+# Base Pair from Front to Back
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_fbc2a3c670d0c8a450daecfb09c8346d00bb1e5c7c82e2088d01d82c33f4cd37.png)
+
+=== layout: one-panel
+
+# Base Pair from Front to Back
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_2f5b165bce3d6f3b21a5b5170763b06e9c2d80dccbcb09b37678c40add058a99.png)
+
+=== layout: title-only
+
+# Restriction Enzymes
+
+=== layout: one-panel
+
+# Restriction enzymes cleave DNA at a specific sequence
+
+@body
+
+![Slide image 8](assets/lect02e-restriction_enzymes/image_008.jpg)
+
+=== layout: two-panels
+
+# Restriction enzymes
+
+@left
+
+![Slide image 9](assets/lect02e-restriction_enzymes/image_009.png)
+
+@right
+
+- The DNA recognition sequence is usually a 4-6 bp palindrome
+- Restriction enzymes are named after the organisms from which they were isolated
+- The cuts may result in blunt or sticky ends
+- Sticky ends may have 5&prime; or 3&prime;-overhangs
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect02e-restriction_enzymes/image_010.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect02e-restriction_enzymes/image_011.png)
+
+=== layout: one-panel
+
+# Restriction enzymes and their recognition sites
+
+@body
+
+| HaeIII | Haemophilus aegiptius | `GG/CC` | Blunt cut |
+| Sau3A | Staphylococcus aureus | /`GATC` | 5&prime;-overhang |
+| HhaI | Haemophilus haemolyticus | `GCG/C` | 3&prime;-overhang |
+| SmaI | Serratia marcescens | CCC / GGG | Blunt cut |
+| EcoRI | Escherichia coli RY13 | G / `AATTC` | 5&prime;-overhang |
+| PstI | Providencia Stuartii | `CTGCA` / G | 3&prime;-overhang |
+| HaeII | Haemophilus aegiptius | RGCGC / Y | Ambiguous sequence |
+| NotI | Nocardia otitidis | GC / `GGCCGC` | 8 nt sequence |
+
+=== layout: title-only
+
+# Sample Problems
+
+=== layout: two-panels
+
+# Restriction Enzyme: EcoRI
+
+@left
+
+- `G|AATTC`
+- Draw the double strand?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: EcoRI
+
+@left
+
+- `G|AATTC`
+- Draw the double strand?
+  - 5&prime;-`G|AATTC`-3&prime;
+  - 3&prime;-`CTTAA|G`-5&prime;
+- Is it a blunt or sticky end?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: EcoRI
+
+@left
+
+- `G|AATTC`
+- Draw the double strand?
+  - 5&prime;-`G|AATTC`-3&prime;
+  - 3&prime;-`CTTAA|G`-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-G
+  - 3&prime;-`CTTAA`-5&prime;
+- What is the overhang?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: EcoRI
+
+@left
+
+- `G|AATTC`
+- Draw the double strand?
+  - 5&prime;-`G|AATTC`-3&prime;
+  - 3&prime;-`CTTAA|G`-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-G-3&prime;
+  - 3&prime;-`CTTAA`-5&prime;
+- What is the overhang?
+  - 5&prime; overhang (the 5&prime; is all alone at the end)
+  - 3&prime;-`TTAA`-5&prime; or 5&prime;-`AATT`-3&prime;
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: PstI
+
+@left
+
+- `CTGCA|G`
+- Draw the double strand?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: PstI
+
+@left
+
+- `CTGCA|G`
+- Draw the double strand?
+  - 5&prime;-`CTGCA|G`-3&prime;
+  - 3&prime;-`G|ACGTC`-5&prime;
+- Is it a blunt or sticky end?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: PstI
+
+@left
+
+- `CTGCA|G`
+- Draw the double strand?
+  - 5&prime;-`CTGCA|G`-3&prime;
+  - 3&prime;-`G|ACGTC`-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-`CTGCA`-3&prime;
+  - 3&prime;-G
+- What is the overhang?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: PstI
+
+@left
+
+- `CTGCA|G`
+- Draw the double strand?
+  - 5&prime;-`CTGCA|G`-3&prime;
+  - 3&prime;-`G|ACGTC`-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-`CTGCA`-3&prime;
+  - 3&prime;-G
+- What is the overhang?
+  - 3&prime; overhang (the 3&prime; is all alone at the end)
+  - 5&prime;-`TGCA`-3&prime; or 3&prime;-`ACGT`-5&prime;
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: HaeIII
+
+@left
+
+- `GG|CC`
+- Draw the double strand?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: HaeIII
+
+@left
+
+- `GG|CC`
+- Draw the double strand?
+  - 5&prime;-`GG|CC`-3&prime;
+  - 3&prime;-`CC|GG`-5&prime;
+- Is it a blunt or sticky end?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: HaeIII
+
+@left
+
+- `GG|CC`
+- Draw the double strand?
+  - 5&prime;-`GG|CC`-3&prime;
+  - 3&prime;-`CC|GG`-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-GG
+  - 3&prime;-CC
+- What is the overhang?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: HaeIII
+
+@left
+
+- `GG|CC`
+- Draw the double strand?
+  - 5&prime;-`GG|CC`-3&prime;
+  - 3&prime;-`CC|GG`-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-GG
+  - 3&prime;-CC
+- What is the overhang?
+  - none
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: Sau3A
+
+@left
+
+- |`GATC`
+- Draw the double strand?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: Sau3A
+
+@left
+
+- |`GATC`
+- Draw the double strand?
+  - 5&prime;-|`GATC`-3&prime;
+  - 3&prime;-`CTAG`|-5&prime;
+- Is it a blunt or sticky end?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: Sau3A
+
+@left
+
+- |`GATC`
+- Draw the double strand?
+  - 5&prime;-|`GATC`-3&prime;
+  - 3&prime;-`CTAG`|-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-...-3&prime;
+  - 3&prime;-...`CTAG`-5&prime;
+- What is the overhang?
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+
+=== layout: two-panels
+
+# Restriction Enzyme: Sau3A
+
+@left
+
+- |`GATC`
+- Draw the double strand?
+  - 5&prime;-|`GATC`-3&prime;
+  - 3&prime;-`CTAG`|-5&prime;
+- Is it a blunt or sticky end?
+  - 5&prime;-...-3&prime;
+  - 3&prime;-...`CTAG`-5&prime;
+- What is the overhang?
+  - 5&prime; overhang (the 5&prime; is all alone at the end)
+  - 3&prime;-`CTAG`-5&prime; or 5&prime;-`GATC`-3&prime;
+
+@right
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+
+=== layout: one-panel
+
+# Restriction Enzyme: ClaI
+
+@body
+
+- `AT|CGAT`
+- Draw the double strand?
+- Is it a blunt or sticky end?
+- What is the overhang?
+
+=== layout: title-only
+
+# What are Restriction Sites useful for?
+
+=== layout: one-panel
+
+# Figure 20.6a
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_060ce7ba5b2f7ae205e6e955bd079912a62a2e4458562900ffb91616159fa851.png)
+
+=== layout: one-panel
+
+# Figure 20.UN04
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_bbcf4f61e8856aeeee51bc6f3c4191364e8f6bfa603f93a1d30f64eb8f8cc11d.png)
+
+=== layout: one-panel
+
+# Figure 20.6b
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_887919633031b9c72d3ea2f8a87407e775b10be9c21d686b451b3f70b3531e8f.png)
+
+=== layout: one-panel
+
+# Figure 20.6c
+
+@body
+
+![Coupled source region](assets/lect02e-restriction_enzymes/source_region_9ec2d8e9f4b1c529d50adbc8e9cb411d3cc1d61ceb7ddcdd4d8a58117ef21edf.png)
+
+=== layout: title-only
+
+# Sample Problems
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 16](assets/lect02e-restriction_enzymes/image_016.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 17](assets/lect02e-restriction_enzymes/image_017.png)
+
+=== layout: title-only
+
+# Summary
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 18](assets/lect02e-restriction_enzymes/image_018.png)
+
+=== layout: title-only
+
+# THE END

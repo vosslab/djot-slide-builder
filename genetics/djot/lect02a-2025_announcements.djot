@@ -1,0 +1,540 @@
+=== layout: title-slide
+
+# Lecture 2A
+
+## Genetics 351/451
+## Announcements
+## Dr. Neil Voss
+## Sept 2, 2025
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Ice Breaker
+- Announcements
+- Chapter 1
+  - Genomics Game
+- Chapter 2
+  - DNA Structure
+  - DNA Fragmentation
+  - DNA Analysis
+- Closing Remarks
+
+=== layout: one-panel
+
+# Breakout Room Chat
+
+@body
+
+- State your name, major, and post-grad plans
+- We had great weather this weekend. What is your favorite outdoor activity?
+  - Dr. Voss: riding my bicycle, watching my kids play sports, go on a walk
+
+=== layout: one-panel
+
+# Make Sure Dr. Voss Is Recording
+
+@body
+
+![Slide image 1](assets/lect02a-2025_announcements/image_001.png)
+
+=== layout: title-only
+
+# Informational Slides
+
+=== layout: one-panel
+
+# Lecture Format
+
+@body
+
+- All Lectures will be held LIVE using the Zoom video conference software
+- I do expect you to be present during the entire video conference, unless you provide a reason for your absence prior to class.
+  - If you cannot make it to the lecture, I want students to check in with me via email or Discord (preferred).
+- Lectures will be recorded and available for download a few hours after their completion.
+
+=== layout: two-panels
+
+# Class Zoom Info
+
+@left
+
+- Mon, 2:00pm–5:00pm
+- Zoom Video Conference:
+  - [https://roosevelt.zoom.us/j/94016849339](https://roosevelt.zoom.us/j/94016849339?pwd=M25VNTl5bnNDWTFQS04zZ1JYOFd3Zz09)
+- Meeting ID:
+  - 940 1684 9339
+- Password: mendel
+- Add to Your Calendar:
+  - [Click Here](https://roosevelt.zoom.us/meeting/tJAtdu-gqjIpGd2nk6P_LVPnN3ZbYhaJs5rT/ics) for Apple iCal link
+
+@right
+
+![Slide image 2](assets/lect02a-2025_announcements/image_002.png)
+
+=== layout: two-panels
+
+# How to Use Zoom Like a Pro
+
+@left
+
+- 1. Mute yourself when you are not speaking.
+- 2. Plug in your headphones.
+- 3. Turn off video if you have a slow connection
+- Other resources
+  - [https://www.owllabs.com/blog/voice-echoing](https://www.owllabs.com/blog/voice-echoing)
+  - [https://www.nytimes.com/wirecutter/blog/use-zoom-like-a-pro/](https://www.nytimes.com/wirecutter/blog/use-zoom-like-a-pro/)
+
+@right
+
+![Slide image 3](assets/lect02a-2025_announcements/image_003.png)
+
+=== layout: one-panel
+
+# Dr. Voss YouTube Channel
+
+@body
+
+![Slide image 4](assets/lect02a-2025_announcements/image_004.png)
+
+- [https://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)
+- a few videos for hard problems
+
+=== layout: one-panel
+
+# Ways to Contact Dr. Voss
+
+@body
+
+- 1. Attend Office Hours
+- 2. Discord
+  - by far the quickest, check multiple times per day
+  - you can send direct message (DM) to me or post to the whole class
+  - response time: 1-2 calendar days
+- 4. Email
+  - I receive 20 emails per day and only check once per day for mental health reasons
+  - response time: 2 business days
+- 5. Anonymous Google Form
+  - goes to my email, but I can only read on laptop
+  - response time: 2-4 business days
+
+=== layout: four-panels
+
+# Office Hours
+
+@top-left
+
+- Via Zoom Video Conference:
+- [https://zoom.us/j/97638754024](https://roosevelt.zoom.us/j/97638754024?pwd=djdlTlFhNEQ0WFV5TTNUMW1xeldYZz09)
+- Meeting ID:
+  - 976 3875 4024
+- Password: voss
+
+@top-right
+
+![Slide image 5](assets/lect02a-2025_announcements/image_005.png)
+
+@bottom-left
+
+![Slide image 6](assets/lect02a-2025_announcements/image_006.png)
+
+@bottom-right
+
+- Wed, 12-1p on Schaumburg-campus
+- To be determined
+- also available by appointment
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+![Coupled source region](assets/lect02a-2025_announcements/source_region_ad5f0b3ca1fd7a3959d2857bfec0b6b9ca2c562dbae61dbf9e270c798f813648.png)
+
+@right
+
+- New Google Form to send me an anonymous message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- [https://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+
+=== layout: one-plus-two-panels
+
+# Discord Server
+
+@left
+
+- I created a Discord Server called Neil Voss Lab
+  - Participation in Discord is technically not required, but I give you are required to sign up
+- Sign-up link is available on Blackboard
+  - It is available as a mobile app, a desktop app, and a website
+  - Be sure to connect to my server, you should not create your own server
+
+@top-right
+
+![Slide image 9](assets/lect02a-2025_announcements/image_009.png)
+
+@bottom-right
+
+![Slide image 8](assets/lect02a-2025_announcements/image_008.png)
+
+=== layout: one-panel
+
+# Discord Signup
+
+@body
+
+![Coupled source region](assets/lect02a-2025_announcements/source_region_80fcfa5d6dd344ae0837ad57d603228241449a9c45f9bddeda1ad5b87443b75f.png)
+
+=== layout: title-only
+
+# Textbooks
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02a-2025_announcements/source_region_dfbd3604acb5b39eb433e68834e4324e2577e97019d3fe0da0ce5eb029e676b0.png)
+
+=== layout: two-panels
+
+# New, Free OER Textbook for 2025
+
+@left
+
+- Advanced Genetics: Mechanisms of Inheritance and Analysis
+  - [https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis](https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis)
+- Dr. Voss is creating his own custom textbook but it will take some time.
+
+@right
+
+![Slide image 13](assets/lect02a-2025_announcements/image_013.png)
+
+=== layout: two-panels
+
+# Idiom: “build the plane while flying it”
+
+@left
+
+- This idiom can also be applied in education when teachers try out new teaching methods or curriculums during actual classes with students. They may experiment with different approaches until they find what works best for their students.
+- [https://crossidiomas.com/build-the-plane-while-flying-it/](https://crossidiomas.com/build-the-plane-while-flying-it/)
+
+@right
+
+![Slide image 14](assets/lect02a-2025_announcements/image_014.png)
+
+=== layout: title-only
+
+# Course Content
+
+=== layout: one-panel
+
+# Syllabus Links
+
+@body
+
+- Syllabus
+  - [https://docs.google.com/document/d/1ircUaOjg9mUbYbaXYBHPc4R76qit50W1pPK8T8exdyg/edit](https://docs.google.com/document/d/1ircUaOjg9mUbYbaXYBHPc4R76qit50W1pPK8T8exdyg/edit)
+- Course Schedule
+  - [https://docs.google.com/spreadsheets/d/1niHh8ECDTfMujpgiD3XtXgPhOXLPh2wLyGSC3v9XGvM/edit](https://docs.google.com/spreadsheets/d/1niHh8ECDTfMujpgiD3XtXgPhOXLPh2wLyGSC3v9XGvM/edit)
+- Assessment and Points Possible
+  - [https://docs.google.com/spreadsheets/d/1jdQe1wHH6jQcl2hlY30pYFz7BT5uN7tAGer4Q7U8gUc/edit](https://docs.google.com/spreadsheets/d/1jdQe1wHH6jQcl2hlY30pYFz7BT5uN7tAGer4Q7U8gUc/edit)
+- Suggested Weekly Timetable
+  - [https://docs.google.com/document/d/1KavB9A8XLwvisdU1nKV0d8ZvlAxZtgVKdsG8dObUbsI/edit](https://docs.google.com/document/d/1KavB9A8XLwvisdU1nKV0d8ZvlAxZtgVKdsG8dObUbsI/edit)
+- Policies and Student Resources
+  - [https://docs.google.com/document/d/1E86Rh_pVHYyNZOFLCzdLRn_AIYyzQXdJPnAoAEPYwBM/edit](https://docs.google.com/document/d/1E86Rh_pVHYyNZOFLCzdLRn_AIYyzQXdJPnAoAEPYwBM/edit)
+- University Important Dates
+  - [https://docs.google.com/spreadsheets/d/1YuK02ObBJgxFlQSLx0xtKdaLNBfuOgM466Hh6MRQczE/edit](https://docs.google.com/spreadsheets/d/1YuK02ObBJgxFlQSLx0xtKdaLNBfuOgM466Hh6MRQczE/edit)
+
+=== layout: one-panel
+
+# PREVIEW Slides
+
+@body
+
+- Limited versions of lecture slides will be available on blackboard BEFORE class, when available.
+  - They will be labeled with PREVIEW in the filename.
+- Full versions of lecture slides will be available on blackboard within 36 hours AFTER the lecture.
+
+=== layout: title-only
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# Assignments, Quizzes, and Exams
+
+@body
+
+- Assignments: Tasks completed outside of class
+  - Aims to reinforce learning or explore new topics.
+  - Assigned weekly, 5-15 points, Unlimited retakes allowed.
+  - Collaboration and seeking help encouraged.
+- Quizzes: Short assessments to test knowledge on recent topics.
+  - Aims to quickly assess understanding of recent material.
+  - 20 points, 30 min, individual.
+  - Followed by a group quiz during class.
+- Exams: Cumulative assessments covering course material.
+  - Cumulative, mid-term/final.
+  - 100 points total (50 points/75 minutes each part).
+  - Completed individually.
+
+=== layout: two-panels
+
+# Graded vs Total Percentage
+
+@left
+
+- Graded percentage only includes items that have a grade
+- Ignores all uncompleted assignments
+- More accurate when Dr. Voss has ungraded entries in the grade book
+
+@right
+
+- Total percentage is all gradable items in blackboard.
+- Gives you a zero score on all uncompleted assignments.
+  - including assignments waiting for a grade from the professor.
+- More accurate when you have unattempted blackboard assignments
+
+=== layout: title-only
+
+# Quiz/Exam
+
+=== layout: one-panel
+
+# Don’t Panic
+
+@body
+
+- If you experience internet troubles or non-academic distractions during a quiz/exam:
+  - 1. Don’t panic
+  - 2. Stop and close the quiz/exam without looking at all the questions
+  - 3. Contact me immediately, preferably via Discord, but you do not need to rush
+- Note: Once class begins, I no longer check my email.
+- If you haven't looked at all the questions, I can reset the quiz/exam
+- If you have looked at some questions, I can create a new custom quiz/exam with only the portion that you haven't seen yet.
+
+=== layout: one-panel
+
+# Illness Policy
+
+@body
+
+- Since COVID, I am trying to be more considerate of student illnesses.
+- If you are sick, let me know. I will provide an extension.
+- If a major event interferes (car accident, etc.), again contact me.
+- Communication is always helpful.
+
+=== layout: title-only
+
+# Quiz
+
+=== layout: two-panels
+
+# Quiz System Information
+
+@left
+
+- 20 points total in 18-24 questions
+  - 1 point for each multiple choice
+  - ½ point for each choice in a matching question
+- 30 minutes for the quiz
+  - Back-tracking is allowed
+  - random order
+  - Limited calculations, not testing calculator use
+  - 1½  min per question
+- Final Score
+  - Average of Individual and Group Scores: (14 + 20)/2 = 17 points
+
+@right
+
+- Individual Quiz
+  - on blackboard
+  - Opens &gt; 20 hours before start of class
+  - due BEFORE class
+- Group Quiz
+  - During class over Zoom and Blackboard
+  - Form groups of 3-4 students
+    - may take awhile to organize break out groups
+  - Group scores are curved for hard quizzes
+
+=== layout: one-panel
+
+# Missing Group Quizzes
+
+@body
+
+- Make-up quizzes will be allowed for full credit only if the student notifies the instructor BEFORE the quiz/exam
+- Students missing group quizzes cannot later work in a group
+  - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
+  - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
+
+=== layout: one-panel
+
+# Please Volunteer Only If Plan to Work in Group
+
+@body
+
+- You get Group Quiz points no matter what.
+  - your individual score will be averaged with the standard 18 points (sometimes higher) instead of a group quiz score
+- Group Quiz is not required.
+- Do not join if you do not want to actively participate.
+- Let me know if you want to work with someone in particular.
+
+=== layout: one-panel
+
+# Group Quiz Setup
+
+@body
+
+- If you have not finished the individual quiz, you MUST complete it before participating in the group quiz.
+- Pre-Group Quiz:
+  - You have been pre-assigned into groups
+  - You will be placed into breakout rooms based on these groups.
+  - Select one student in your group as the Recorder.
+  - The Recorder will share their screen and enter the decided upon answers for the quiz.
+  - The Recorder should go into Blackboard to begin the group quiz.
+  - Make sure only the Recorder starts the quiz because each quiz has unique questions.
+- Begin the Group Quiz:
+  - You will have 30 minutes to complete the quiz
+  - The first question will ask you to enter your first names.
+  - Your group can discuss answers either verbally or through the chat.
+  - If you need my assistance, click the 'Ask for Help' button.
+- Post-Group Quiz:
+  - After you submit, you should see the correct answers along with what you submitted.
+  - If your group experience was not good, please reach out to me through email or direct message.
+  - Once you are finished, you are free to return to the main room or stay in the breakout room and chat or whatever.
+
+=== layout: one-panel
+
+# Low Quiz Grades
+
+@body
+
+- How can I do better in this class?
+- Did you complete the relevant assignments before taking the quiz?
+  - The assignments and quizzes mostly have the same questions.
+- Did you retake the relevant assignments and make sure you understood the questions? Did you retake them until you had a grade you were happy with?
+  - The assignments and quizzes mostly have the same questions.
+
+=== layout: one-panel
+
+# Exam and Quiz Schedule
+
+@body
+
+- Q1 – Due Sept 9
+- Q2 – Due Sept 23
+- Q3 – Due Oct 7
+- MidTerm Exam – Due Oct 14
+- Q4 – Due Nov 4
+- Q5 – Due Dec 2
+- Final Exam – Due Dec 9
+
+=== layout: title-only
+
+# Weekly Assignments
+
+=== layout: one-panel
+
+# Student Profile
+
+@body
+
+- Include a picture of your face
+- Answer the following questions about yourself:
+  - what are your career goals? what is your favorite biology subject? what would you like to learn in this class? what are you nervous about in this class? what is your favorite local restaurant? what is one interesting thing that you did over the break?
+- Link Available on Blackboard
+  - Within First Two Weeks of Class, Due Sept 21.
+  - no points awarded after date.
+- See link on Blackboard
+
+=== layout: one-panel
+
+# Discord Server
+
+@body
+
+- Discord Server:
+  - Students will be awarded 2 points for simply signing up for the Discord Server.
+  - Please use this method to contact the instructor rather than email.
+- Due Within First Few Weeks of Class,
+  - Due Sept 21.
+
+=== layout: one-plus-two-panels
+
+# Discord Server
+
+@left
+
+- I created a Discord Server called Neil Voss Lab
+  - Participation in Discord is technically not required, but I give you are required to sign up
+- Sign-up link is available on Blackboard
+  - It is available as a mobile app, a desktop app, and a website
+  - Be sure to connect to my server, you should not create your own server
+
+@top-right
+
+![Slide image 9](assets/lect02a-2025_announcements/image_009.png)
+
+@bottom-right
+
+![Slide image 8](assets/lect02a-2025_announcements/image_008.png)
+
+=== layout: one-panel
+
+# Discord Signup
+
+@body
+
+![Coupled source region](assets/lect02a-2025_announcements/source_region_80fcfa5d6dd344ae0837ad57d603228241449a9c45f9bddeda1ad5b87443b75f.png)
+
+=== layout: two-panels
+
+# Blackboard Homework (Part 1)
+
+@left
+
+- HW1 – Due Sept 10
+- HW2 – Due Sept 10
+- HW3 – Due
+- HW4 – Due
+- HW5 – Due
+- HW6 – Due
+
+@right
+
+- Due Wednesdays at Midnight
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+=== layout: title-only
+
+# General Announcements
+
+=== layout: two-over-one-panels
+
+# Graduating Students
+
+@top-left
+
+- Last day to apply for graduation is:
+  - September 2, 2025
+- Late applications will cost you a $100 late fee
+
+@top-right
+
+![Slide image 15](assets/lect02a-2025_announcements/image_015.png)
+
+@bottom
+
+- [https://www.roosevelt.edu/current-students/academics/grad-prep](https://www.roosevelt.edu/current-students/academics/grad-prep)
+
+=== layout: title-only
+
+# THE END

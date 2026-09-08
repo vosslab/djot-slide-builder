@@ -1,0 +1,977 @@
+{
+  "source": "lect02f-dna_electrophoresis.odp",
+  "slide_count": 27,
+  "visible_slides": 26,
+  "hidden_slides": [
+    13
+  ],
+  "unique_media_assets": 20,
+  "slides": [
+    {
+      "source_slide": 1,
+      "visible_page": 1,
+      "layout": "title-slide",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 2,
+      "visible_page": 2,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "dense text requires post-conversion polish"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 3,
+      "visible_page": 3,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 4,
+      "visible_page": 4,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 5,
+      "visible_page": 5,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 6,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 2,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "protected source text shapes: 33"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "dominant-image-narrative-1",
+        "global_key": "source-6-dominant-image-narrative-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_cf39e09682e4cd041821cb55871abdd0ae87b4372dcd335ec3811eb08b681f1c.png",
+        "sha256": "cf39e09682e4cd041821cb55871abdd0ae87b4372dcd335ec3811eb08b681f1c",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.02721259842519685,
+          "top": 0.030167655220267688,
+          "right": 0.9705826771653543,
+          "bottom": 0.9975323721413893
+        },
+        "pixel_bounds": [
+          43,
+          29,
+          1542,
+          991
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_001.png",
+          "assets/lect02f-dna_electrophoresis/image_002.png"
+        ],
+        "included_source_ordinals": [
+          34,
+          35
+        ],
+        "coupled_text_count": 1,
+        "protected_text_shape_ids": [
+          33
+        ],
+        "kind": "dominant-image-narrative",
+        "classification_reason": "unique bounded visual composition"
+      },
+      "protected_text_shape_ids": [
+        33
+      ],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 7,
+      "visible_page": 7,
+      "layout": "stacked-panels",
+      "text_blocks": 3,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 8,
+      "visible_page": 8,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 2,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "shared-figure-row-1",
+        "global_key": "source-8-shared-figure-row-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_73438b8fa331fdaeb40333769af7a036e5a470b60c2aacc38f3c4f7006563096.png",
+        "sha256": "73438b8fa331fdaeb40333769af7a036e5a470b60c2aacc38f3c4f7006563096",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.0,
+          "top": 0.23328510656127455,
+          "right": 0.9999379998759997,
+          "bottom": 0.9553662176857879
+        },
+        "pixel_bounds": [
+          0,
+          231,
+          1588,
+          949
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_004.jpg",
+          "assets/lect02f-dna_electrophoresis/image_005.jpg"
+        ],
+        "included_source_ordinals": [
+          42,
+          43
+        ],
+        "coupled_text_count": 1,
+        "protected_text_shape_ids": [],
+        "kind": "shared-figure-row",
+        "classification_reason": "peer figure row with one shared caption"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 9,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 10,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 11,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 16,
+      "images": 1,
+      "notes_omitted": 1,
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-11-content-region-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_c2753e602a88ae9aea8569940c240d4f236507cc5eacd88f9178fe7d54e53169.png",
+        "sha256": "c2753e602a88ae9aea8569940c240d4f236507cc5eacd88f9178fe7d54e53169",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.017998883997767997,
+          "top": 0.0,
+          "right": 0.8611608903217807,
+          "bottom": 0.9850196515102555
+        },
+        "pixel_bounds": [
+          28,
+          0,
+          1368,
+          979
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_008.jpg",
+          "source-vector-49",
+          "source-vector-50",
+          "source-vector-51",
+          "source-connector-63",
+          "source-connector-65",
+          "source-connector-66",
+          "source-connector-67"
+        ],
+        "included_source_ordinals": [
+          48,
+          49,
+          50,
+          51,
+          63,
+          65,
+          66,
+          67
+        ],
+        "coupled_text_count": 16,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 12,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 1,
+      "notes_omitted": 1,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-12-content-region-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_ac934ea3e842efe9869aa159b626f4c48d131da810f51d040084e82027002d46.png",
+        "sha256": "ac934ea3e842efe9869aa159b626f4c48d131da810f51d040084e82027002d46",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.17056085312170624,
+          "top": 0.04353741151106814,
+          "right": 0.7933436666873334,
+          "bottom": 0.9310835406618981
+        },
+        "pixel_bounds": [
+          270,
+          43,
+          1260,
+          925
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_009.jpg",
+          "source-connector-74",
+          "source-vector-75"
+        ],
+        "included_source_ordinals": [
+          72,
+          74,
+          75
+        ],
+        "coupled_text_count": 2,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations; aligned connectors"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 14,
+      "visible_page": 13,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 15,
+      "visible_page": 14,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-15-content-region-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_d36b5e23331512cc4aa2df01e68a33aa845b6421d6003f4c71f807eb1cdb5e5d.png",
+        "sha256": "d36b5e23331512cc4aa2df01e68a33aa845b6421d6003f4c71f807eb1cdb5e5d",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.04535433070866142,
+          "top": 0.04353741151106814,
+          "right": 0.9067652055304111,
+          "bottom": 0.9310835406618981
+        },
+        "pixel_bounds": [
+          72,
+          43,
+          1440,
+          925
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_010.png"
+        ],
+        "included_source_ordinals": [
+          82
+        ],
+        "coupled_text_count": 2,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 16,
+      "visible_page": 15,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-1",
+        "global_key": "source-16-content-region-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_538242d6258457d9a7c53f291e6c3dede35c34fcbc8132a81de6bb9aceb4e736.png",
+        "sha256": "538242d6258457d9a7c53f291e6c3dede35c34fcbc8132a81de6bb9aceb4e736",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.09974381548763098,
+          "top": 0.05804988201475752,
+          "right": 0.9001227602455205,
+          "bottom": 0.9310835406618981
+        },
+        "pixel_bounds": [
+          158,
+          57,
+          1430,
+          925
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_010.png"
+        ],
+        "included_source_ordinals": [
+          85
+        ],
+        "coupled_text_count": 5,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 17,
+      "visible_page": 16,
+      "layout": "one-panel",
+      "text_blocks": 3,
+      "images": 2,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "repeated-labeled-figure-1",
+        "global_key": "source-17-repeated-labeled-figure-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_0d44a8d15f96459f300e492db9bcd56b4e8452fb6da0a73396a2b91dc78a87c0.png",
+        "sha256": "0d44a8d15f96459f300e492db9bcd56b4e8452fb6da0a73396a2b91dc78a87c0",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.2032016864033728,
+          "top": 0.23385646366771903,
+          "right": 1.0,
+          "bottom": 0.9310835406618981
+        },
+        "pixel_bounds": [
+          322,
+          232,
+          1588,
+          925
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_011.jpg",
+          "assets/lect02f-dna_electrophoresis/image_012.jpg"
+        ],
+        "included_source_ordinals": [
+          91,
+          92
+        ],
+        "coupled_text_count": 2,
+        "protected_text_shape_ids": [],
+        "kind": "repeated-labeled-figure",
+        "classification_reason": "mutual same-band side labels"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 18,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "coupled-visual-sequence-1",
+        "global_key": "source-18-coupled-visual-sequence-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_55588624f919b283286fc1ecb651219f79e14c3b3490f7324c4a09339a5136fb.png",
+        "sha256": "55588624f919b283286fc1ecb651219f79e14c3b3490f7324c4a09339a5136fb",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.035069254138508275,
+          "top": 0.039994997451112464,
+          "right": 0.8899091078182156,
+          "bottom": 0.9515381250726099
+        },
+        "pixel_bounds": [
+          55,
+          39,
+          1414,
+          945
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_014.png",
+          "assets/lect02f-dna_electrophoresis/image_013.png",
+          "assets/lect02f-dna_electrophoresis/image_015.png"
+        ],
+        "included_source_ordinals": [
+          97,
+          96,
+          98
+        ],
+        "coupled_text_count": 0,
+        "protected_text_shape_ids": [],
+        "kind": "coupled-visual-sequence",
+        "classification_reason": "unique bounded visual composition"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 19,
+      "visible_page": 18,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "mixed-visual-1",
+        "global_key": "source-19-mixed-visual-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_1fb926efc7c25372645cea6856577fe1c28d0b51d830f132e2909f28d5eb1aec.png",
+        "sha256": "1fb926efc7c25372645cea6856577fe1c28d0b51d830f132e2909f28d5eb1aec",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.035069254138508275,
+          "top": 0.039994997451112464,
+          "right": 0.8899091078182156,
+          "bottom": 1.0
+        },
+        "pixel_bounds": [
+          55,
+          39,
+          1414,
+          993
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_013.png",
+          "assets/lect02f-dna_electrophoresis/image_014.png",
+          "assets/lect02f-dna_electrophoresis/image_015.png",
+          "source-vector-102",
+          "source-vector-103",
+          "source-vector-104"
+        ],
+        "included_source_ordinals": [
+          99,
+          100,
+          101,
+          102,
+          103,
+          104
+        ],
+        "coupled_text_count": 1,
+        "protected_text_shape_ids": [],
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 20,
+      "visible_page": 19,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "mixed-visual-1",
+        "global_key": "source-20-mixed-visual-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_44f788f1c9138a448feccf9b8fda2c2f4b9181df5e0513911fef7d770c8f34f3.png",
+        "sha256": "44f788f1c9138a448feccf9b8fda2c2f4b9181df5e0513911fef7d770c8f34f3",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.035069254138508275,
+          "top": 0.039994997451112464,
+          "right": 0.8899091078182156,
+          "bottom": 1.0
+        },
+        "pixel_bounds": [
+          55,
+          39,
+          1414,
+          993
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_013.png",
+          "assets/lect02f-dna_electrophoresis/image_014.png",
+          "assets/lect02f-dna_electrophoresis/image_015.png",
+          "source-vector-109",
+          "source-vector-110",
+          "source-vector-111",
+          "source-vector-112",
+          "source-vector-113",
+          "source-vector-114"
+        ],
+        "included_source_ordinals": [
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "coupled_text_count": 2,
+        "protected_text_shape_ids": [],
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 21,
+      "visible_page": 20,
+      "layout": "one-panel",
+      "text_blocks": 3,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-3",
+        "global_key": "source-21-content-region-3",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_dbec2fab8afb90bbdb33b0c2b039a7b31b211ebb0939105015e52515431d7251.png",
+        "sha256": "dbec2fab8afb90bbdb33b0c2b039a7b31b211ebb0939105015e52515431d7251",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.035069254138508275,
+          "top": 0.039994997451112464,
+          "right": 0.8899091078182156,
+          "bottom": 0.9515381250726099
+        },
+        "pixel_bounds": [
+          55,
+          39,
+          1414,
+          945
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_013.png",
+          "assets/lect02f-dna_electrophoresis/image_014.png",
+          "assets/lect02f-dna_electrophoresis/image_015.png",
+          "source-vector-120",
+          "source-vector-121",
+          "source-vector-122",
+          "source-vector-123",
+          "source-vector-124",
+          "source-vector-125",
+          "source-vector-126",
+          "source-vector-127",
+          "source-vector-128"
+        ],
+        "included_source_ordinals": [
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128
+        ],
+        "coupled_text_count": 3,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 22,
+      "visible_page": 21,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "mixed-visual-1",
+        "global_key": "source-22-mixed-visual-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_63e14cddfc6e5bc440824a99495083122fa0224fbea198d6cf79eac646a135db.png",
+        "sha256": "63e14cddfc6e5bc440824a99495083122fa0224fbea198d6cf79eac646a135db",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.014249116498232996,
+          "top": 0.07444783096971364,
+          "right": 0.9699398598797198,
+          "bottom": 0.954223503472899
+        },
+        "pixel_bounds": [
+          22,
+          73,
+          1541,
+          948
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_016.png",
+          "assets/lect02f-dna_electrophoresis/image_017.png",
+          "assets/lect02f-dna_electrophoresis/image_018.png"
+        ],
+        "included_source_ordinals": [
+          132,
+          133,
+          134
+        ],
+        "coupled_text_count": 0,
+        "protected_text_shape_ids": [],
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 23,
+      "visible_page": 22,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "mixed-visual-1",
+        "global_key": "source-23-mixed-visual-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_af049a4a13bb30aaec503e88c08472956d7b52d58b7b275a963d085501730f5a.png",
+        "sha256": "af049a4a13bb30aaec503e88c08472956d7b52d58b7b275a963d085501730f5a",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.014249116498232996,
+          "top": 0.07444783096971364,
+          "right": 0.9699398598797198,
+          "bottom": 0.954223503472899
+        },
+        "pixel_bounds": [
+          22,
+          73,
+          1541,
+          948
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_016.png",
+          "assets/lect02f-dna_electrophoresis/image_017.png",
+          "assets/lect02f-dna_electrophoresis/image_018.png",
+          "source-vector-138",
+          "source-vector-139"
+        ],
+        "included_source_ordinals": [
+          135,
+          136,
+          137,
+          138,
+          139
+        ],
+        "coupled_text_count": 1,
+        "protected_text_shape_ids": [],
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 24,
+      "visible_page": 23,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "mixed-visual-1",
+        "global_key": "source-24-mixed-visual-1",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_19c062ffe1adc0b60ef5717209949d32f8b845713b123fbcf8123f696fab4117.png",
+        "sha256": "19c062ffe1adc0b60ef5717209949d32f8b845713b123fbcf8123f696fab4117",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.014249116498232996,
+          "top": 0.07444783096971364,
+          "right": 0.9699398598797198,
+          "bottom": 0.9571945604264102
+        },
+        "pixel_bounds": [
+          22,
+          73,
+          1541,
+          951
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_016.png",
+          "assets/lect02f-dna_electrophoresis/image_017.png",
+          "assets/lect02f-dna_electrophoresis/image_018.png",
+          "source-vector-144",
+          "source-vector-145",
+          "source-vector-147",
+          "source-vector-148"
+        ],
+        "included_source_ordinals": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          147,
+          148
+        ],
+        "coupled_text_count": 2,
+        "protected_text_shape_ids": [],
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 25,
+      "visible_page": 24,
+      "layout": "one-panel",
+      "text_blocks": 3,
+      "images": 3,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "local_key": "content-region-3",
+        "global_key": "source-25-content-region-3",
+        "asset": "assets/lect02f-dna_electrophoresis/source_region_c7c81e39859a132390ad912f4a1d127a2bad9b65c9d6fbe5c30687b7c2c50491.png",
+        "sha256": "c7c81e39859a132390ad912f4a1d127a2bad9b65c9d6fbe5c30687b7c2c50491",
+        "dpi": 144,
+        "normalized_bounds": {
+          "left": 0.014249116498232996,
+          "top": 0.07444783096971364,
+          "right": 0.9699398598797198,
+          "bottom": 0.9803916589480554
+        },
+        "pixel_bounds": [
+          22,
+          73,
+          1541,
+          974
+        ],
+        "included_source_image_refs": [
+          "assets/lect02f-dna_electrophoresis/image_016.png",
+          "assets/lect02f-dna_electrophoresis/image_017.png",
+          "assets/lect02f-dna_electrophoresis/image_018.png",
+          "source-vector-153",
+          "source-vector-154",
+          "source-vector-156",
+          "source-vector-157",
+          "source-vector-159",
+          "source-vector-161"
+        ],
+        "included_source_ordinals": [
+          150,
+          151,
+          152,
+          153,
+          154,
+          156,
+          157,
+          159,
+          161
+        ],
+        "coupled_text_count": 3,
+        "protected_text_shape_ids": [],
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations"
+      },
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 26,
+      "visible_page": 25,
+      "layout": "stacked-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": []
+    },
+    {
+      "source_slide": 27,
+      "visible_page": 26,
+      "layout": "title-only",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "unconsumed vector requires review: 165"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "protected_text_shape_ids": [],
+      "multiple_choice": null,
+      "omitted_vectors": [],
+      "review_vectors": [
+        {
+          "source_ordinal": 165,
+          "bounds": {
+            "left": 0.5651792423584847,
+            "top": 0.5208491382347732,
+            "right": 0.637746171492343,
+            "bottom": 0.6706589715445116
+          },
+          "reason": "unconsumed-vector"
+        }
+      ]
+    }
+  ]
+}

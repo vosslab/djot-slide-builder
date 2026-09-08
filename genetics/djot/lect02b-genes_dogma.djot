@@ -1,0 +1,473 @@
+=== layout: title-slide
+
+# Lecture 2B
+
+## Genes, Genomes, and Genetic Analysis
+## Chapter 1
+## Dr. Neil Voss
+## Sept 2, 2025
+
+=== layout: title-only
+
+# Define Genetics?
+
+=== layout: one-panel
+
+# Inheritance Genetics
+
+@body
+
+- the study of heredity and the variation of inherited characteristics.
+- study of genes, genetic variation, and heredity in organisms.
+- resemblances and differences of related organisms resulting from the interaction of their genes
+- scientific study of how genes control the characteristics of plants and animals
+- study of both trait and molecular inheritance mechanisms of genes
+- modern genetics has expanded beyond inheritance to studying the function and behavior of genes
+
+=== layout: title-only
+
+# What is genomics? What is the different between genetics and genomics?
+
+=== layout: one-panel
+
+# Genes, Genomes, and Genetic Analysis
+
+@body
+
+- Genetics is the study of heredity
+  - and how genes control the inherited characteristics
+- Genomics is the study of all of the genes in an organism
+  - the structure, function, evolution, and mapping of genomes
+- Genes are the elements of heredity
+
+=== layout: title-only
+
+# What are the differences between molecular biology, biochemistry, cell biology, and genetics?
+
+=== layout: one-panel
+
+# Definitions of Biological Fields
+
+@body
+
+- Biochemistry is the study of the chemical substances and vital processes occurring in living organisms.
+  - Biochemists focus heavily on the role, function, and structure of biomolecules. The study of the chemistry behind biological processes and the synthesis of biologically active molecules.
+- Genetics is the study of the effect of genetic differences on organisms.
+  - Often this can be inferred by the absence of a normal component (e.g., one gene). It is the study of mutants with respect to the normal phenotype. Genetic interactions can often confound simple interpretations of such "knock-out" studies.
+- Molecular biology is the study of molecular underpinnings of the processes of replication, transcription, translation, and cell function.
+  - The central dogma of molecular biology where genetic material is transcribed into RNA and then translated into protein.
+- Cell biology is the study of cells, organelles, cell cycle, and cell division
+  - their physiological properties, their structure, the organelles they contain, interactions with their environment, their life cycle, division and death. This is done both on a microscopic and molecular level.
+
+=== layout: two-panels
+
+# Fundamental concepts
+
+@left
+
+- Each organism has its own “Genetic Blueprint” that makes it different from others.
+- The genetic information is stored in the chromosomes located in the nucleus.
+- The genetic information is stored as discrete instructions called “genes”.
+
+@right
+
+![Slide image 1](assets/lect02b-genes_dogma/image_001.png)
+
+=== layout: one-panel
+
+# History of Genetics
+
+@body
+
+- The existence of genes was first suggested by the work of Gregor Mendel in 1866
+  - Classical genetics is the approach to the study of genetics through analysis of the offspring of matings.
+- Friedrich Meischer discovered nucleic acids in 1869.
+  - Molecular genetics is the analysis of differences between species through the study of DNA itself.
+
+=== layout: one-panel
+
+# Figure 14.3-3
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_4fabd0df7ab818009beac4876c37fffe38ea5323906aee17a43d57007dbbbe68.png)
+
+=== layout: one-panel
+
+# Evidence for Chromosomes
+
+@body
+
+- Nuclei of male and female reproductive cells undergo fusion during fertilization
+  - Chromosomes split and each daughter cell receives an identical set
+- Chromosome number may differ between species but is the same within a particular species
+
+=== layout: one-panel
+
+# Figure 15.2b
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_06c09a6b9ce2ddca68b33369f1fc2f057188e2f7176798934ac0e64aff8ba435.png)
+
+=== layout: title-only
+
+# The Idea of the Gene
+
+=== layout: two-panels
+
+# Early History
+
+@left
+
+- Mendel’s experiments with pea plants led him to postulate on the existence of “heritable factors”
+- In 1909, Archibald Gerrod suggested that genotype dictates phenotype through enzymes that catalyze specific chemical reactions
+
+@right
+
+![Slide image 4](assets/lect02b-genes_dogma/image_004.png)
+
+=== layout: one-panel
+
+# Metabolism as a cause of hereditary disease
+
+@body
+
+- Blocks in metabolic pathways can cause disease
+  - Alkaptonuria – excretion of homogentisic acid
+  - Phenylketonuria – phenylalanine accumulation
+
+=== layout: stacked-panels
+
+# Gene = Enzyme
+
+@top
+
+- Linking genes and enzymes was helped by understanding that cells synthesize and degrade most organic molecules in a series of steps, a metabolic pathway.
+
+@bottom
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_5369fbb5dfb8784ec0a50dbe241df8d9e7af1d5b3d90f11942cb9453f53cb502.png)
+
+=== layout: one-panel
+
+# Nutritional Mutants in Neurospora
+
+@body
+
+- George Beadle and Edward Tatum exposed bread mold to X-rays, creating mutants that were unable to survive on minimal medium as a result of inability to synthesize certain molecules
+  - Using crosses, they identified three classes of arginine-deficient mutants, each lacking a different enzyme necessary for synthesizing arginine
+- They developed a one gene–one enzyme hypothesis, which states that each gene dictates production of a specific enzyme
+
+=== layout: stacked-panels
+
+
+@top
+
+- X-rays
+
+@bottom
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_295ec1a2a7f10fb3823694abc3b1f171c5dda919ca2b7f7c32a6338c8b9789c3.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_1244e2d9f5b11412f982cc43d4ffed74ef80b6ef343e005d4778eee38da535f0.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_9a4cedbb7a70177a1a6b8eac311e014ccc003ec775bf52d087993d287f686bc1.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_a4be5115d01f6a39f0f20c38477b76bad845bf9d75e1ac60b90e87e8ac77184f.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_5eadcbaeaf042f49955a4c5675cd199265b4ffe630e717f9976d18e682f9c503.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_7224f0cf4bb8434b78b19da4ce3aacb047f3d70b8db87ee12ec7bf39bb9e904f.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_cb3c897b8ad1b31dc4ac53014b91b30a34a0677ddf3ac63745bf99c0d2f5cd36.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_dacac696d4ffc8af4f4eb64df49a002a6a3f2f57098b6f2d1f2d196c3f2e4e1d.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_efec0f3e3db72ef98c9c49574a5e379070681d1c3ea108d91948221861ab820d.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_33608ca8655be08486af0f5cc126182ef77f236cc83236f34e4dc81e78af237d.png)
+
+=== layout: multiple-choice
+
+@question
+
+![Slide image 9](assets/lect02b-genes_dogma/image_009.emf)
+
+The figure above shows a simple metabolic pathway. According to Beadle and Tatum's hypothesis, how many genes are necessary for this pathway?
+
+- A. 1
+- B. 2
+- C. 3
+- D. It cannot be determined from the pathway.
+
+@answer
+
+Answer: B
+
+=== layout: multiple-choice
+
+@question
+
+![Slide image 9](assets/lect02b-genes_dogma/image_009.emf)
+
+Product C is required for growth.
+
+- Strains mutant for the gene-encoding enzyme A would be able to grow on medium supplemented with _____.
+  - A. nutrient A only
+  - B. nutrient B only
+  - C. nutrient C only
+  - D. nutrients B or C
+  - E. nutrients A or C
+
+@answer
+
+Answer: D
+
+=== layout: multiple-choice
+
+@question
+
+![Slide image 9](assets/lect02b-genes_dogma/image_009.emf)
+
+Product C is required for growth.
+
+- Strains mutant for the gene-encoding enzyme B would be able to grow on medium supplemented with _____.
+  - A. nutrient A only
+  - B. nutrient B only
+  - C. nutrient C only
+  - D. nutrients B or C
+  - E. nutrients A or C
+
+@answer
+
+Answer: C
+
+=== layout: multiple-choice
+
+@question
+
+![Question visual region](assets/lect02b-genes_dogma/source_region_96ee4ec0afe9a47caca5bfa56ed7806d0a61e4a2036fa46b1322c374b87559cd.png)
+
+Molecule D is the only molecule required for growth.
+
+- Strains mutant for the gene-encoding enzyme B would be able to grow on medium supplemented with _____.
+  - A) nutrient D only
+  - B) nutrients A and D
+  - C) nutrients B and D
+  - D) nutrients C and D
+  - E) nutrients B, C, and D
+  - F) nutrients A, B, and D
+  - G) nutrients A, C, and D
+
+@answer
+
+Answer: D
+
+=== layout: one-panel
+
+# Gene = Polypeptide
+
+@body
+
+- Many proteins are composed of several polypeptides, each of which has its own gene. Beadle and Tatum’s hypothesis is now:
+  - one gene–one polypeptide
+- Note that it is common to refer to gene products as proteins rather than polypeptides
+
+=== layout: multiple-choice
+
+@question
+
+Which of the following contradicts the one-gene, one-enzyme hypothesis?
+
+- A) A mutation in a single gene can result in a defective protein.
+- B) Alkaptonuria results when individuals lack a single enzyme involved in the catalysis of homogentisic acid.
+- C) Sickle-cell anemia results in defective hemoglobin.
+- D) A single antibody gene can code for different related proteins, depending on the splicing that takes place post-transcriptionally.
+
+@answer
+
+Answer: D
+
+=== layout: title-only
+
+# The Genetic Code From RNA to Protein
+
+=== layout: one-panel
+
+
+@body
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_7ff973ffdcfebed4fceb6c3b82808287dfc7c7aed9eb744b5136d16725f3bec3.png)
+
+=== layout: one-panel
+
+# The genetic code
+
+@body
+
+![Slide image 11](assets/lect02b-genes_dogma/image_011.jpg)
+
+=== layout: multiple-choice
+
+@question
+
+What does it mean when we say the genetic code is redundant?
+
+- A) A single codon (three nucleotides) can specify the addition of more than one amino acid.
+- B) The genetic code is different for different domains of organisms.
+- C) The genetic code is universal (the same for all organisms).
+- D) More than one codon can specify the addition of the same amino acid.
+
+@answer
+
+Answer: D
+
+=== layout: stacked-panels
+
+# Genetic Code
+
+@top
+
+- The genetic code is redundant and unambiguous
+  - Redundant:
+    - degenerate; being in excess; characterized by verbosity or unnecessary repetition
+    - two different codons can specify the same amino acid
+  - Unambiguous:
+    - unequivocal; clear; indistinct; having only a single meaning or interpretation
+    - no codon specifies more than one amino acid
+
+@bottom
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_abb30db8da90a95b5874e284dfb943d47d92a4b1137620fd889e880b3034f03f.png)
+
+=== layout: title-only
+
+# Mutation
+
+=== layout: two-panels
+
+# Mutations can lead to altered proteins
+
+@left
+
+![Slide image 12](assets/lect02b-genes_dogma/image_012.jpg)
+
+- The M1V mutant in the PAH gene.
+
+@right
+
+![Slide image 13](assets/lect02b-genes_dogma/image_013.jpg)
+
+- The R408W mutant in the PAH gene.
+
+=== layout: one-panel
+
+
+@body
+
+## Fig. 17-22
+
+![Coupled source region](assets/lect02b-genes_dogma/source_region_4577f29a9623fb4b9ee7452b6c4c7b2dd62ce6aaeb64f299ba04f9620ef4f3b0.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 15](assets/lect02b-genes_dogma/image_015.png)
+
+@right
+
+![Slide image 16](assets/lect02b-genes_dogma/image_016.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 17](assets/lect02b-genes_dogma/image_017.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 18](assets/lect02b-genes_dogma/image_018.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect02b-genes_dogma/image_019.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 20](assets/lect02b-genes_dogma/image_020.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 21](assets/lect02b-genes_dogma/image_021.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect02b-genes_dogma/image_022.png)
+
+=== layout: title-only
+
+# THE END
