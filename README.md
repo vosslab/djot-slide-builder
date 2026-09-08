@@ -1,5 +1,9 @@
 # djot-slides
 
+Open-source Python toolchain for building complete, lecture-ready presentations from concise, human-editable 
+Djot. Supports structured teaching layouts, text, nested lists, images, tables, and links; imports existing 
+ODP/PPTX decks; and exports editable PPTX and LibreOffice ODP files plus PDF.
+
 Build editable classroom presentations from concise Djot source, preserving native text, lists,
 links, images, and tables through PPTX, ODP, and PDF.
 
