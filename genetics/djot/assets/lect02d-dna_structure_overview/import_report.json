@@ -3,28 +3,25 @@
   "slide_count": 43,
   "visible_slides": 43,
   "hidden_slides": [],
-  "unique_media_assets": 20,
+  "unique_media_assets": 19,
   "slides": [
     {
       "source_slide": 1,
       "visible_page": 1,
       "layout": "title-slide",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 2,
       "visible_page": 2,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -32,100 +29,79 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 3,
       "visible_page": 3,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 4,
       "visible_page": 4,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 5,
       "visible_page": 5,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 6,
       "visible_page": 6,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 7,
       "visible_page": 7,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 8,
       "visible_page": 8,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 9,
@@ -134,56 +110,29 @@
       "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized sole material interior overlay label into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "single-interior-overlay-label-1",
-        "global_key": "source-9-single-interior-overlay-label-1",
-        "asset": "assets/lect02d-dna_structure_overview/source_region_5800f45e4919acd5001540e786a469f8b869bf626199c7a29da590c0852dbe1e.png",
-        "sha256": "5800f45e4919acd5001540e786a469f8b869bf626199c7a29da590c0852dbe1e",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.05810354020708042,
-          "top": 0.04353741151106814,
-          "right": 0.9417273234546469,
-          "bottom": 0.9310835406618981
-        },
-        "pixel_bounds": [
-          92,
-          43,
-          1496,
-          925
-        ],
-        "included_source_image_refs": [
-          "assets/lect02d-dna_structure_overview/image_003.jpg"
-        ],
-        "included_source_ordinals": [
-          32
-        ],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "single-interior-overlay-label-1",
         "kind": "single-interior-overlay-label",
-        "classification_reason": "sole material interior overlay label"
+        "classification_reason": "sole material interior overlay label",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 10,
       "visible_page": 10,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 11,
@@ -192,56 +141,29 @@
       "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "content-region-1",
-        "global_key": "source-11-content-region-1",
-        "asset": "assets/lect02d-dna_structure_overview/source_region_81cfe39e91f2114ab8f6b1891e5a84db7ce0b4969e63847eee18752adc9b9115.png",
-        "sha256": "81cfe39e91f2114ab8f6b1891e5a84db7ce0b4969e63847eee18752adc9b9115",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.020713001426002853,
-          "top": 0.02902494100737876,
-          "right": 0.973761051522103,
-          "bottom": 0.9622796386737659
-        },
-        "pixel_bounds": [
-          32,
-          28,
-          1547,
-          956
-        ],
-        "included_source_image_refs": [
-          "assets/lect02d-dna_structure_overview/image_004.jpg"
-        ],
-        "included_source_ordinals": [
-          35
-        ],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "content-region-1",
         "kind": "diagram",
-        "classification_reason": "distributed pictorial annotations"
+        "classification_reason": "distributed pictorial annotations",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 12,
       "visible_page": 12,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 13,
@@ -253,194 +175,134 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 14,
       "visible_page": 14,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 15,
       "visible_page": 15,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 16,
       "visible_page": 16,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 17,
       "visible_page": 17,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 18,
       "visible_page": 18,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 19,
       "visible_page": 19,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
-        "protected source text shapes: 50"
+        "normalized sole material interior overlay label into native source-order content"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "single-interior-overlay-label-1",
-        "global_key": "source-19-single-interior-overlay-label-1",
-        "asset": "assets/lect02d-dna_structure_overview/source_region_dabaec29ff7dec2e945919315568dcb970c69fcdc78381682f88cecf6ff26d64.png",
-        "sha256": "dabaec29ff7dec2e945919315568dcb970c69fcdc78381682f88cecf6ff26d64",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.06678157356314712,
-          "top": 0.13855409831278245,
-          "right": 0.9396560233120467,
-          "bottom": 0.9442818898207653
-        },
-        "pixel_bounds": [
-          106,
-          137,
-          1493,
-          938
-        ],
-        "included_source_image_refs": [
-          "assets/lect02d-dna_structure_overview/image_009.jpg"
-        ],
-        "included_source_ordinals": [
-          49
-        ],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [
-          50
-        ],
+        "region_key": "single-interior-overlay-label-1",
         "kind": "single-interior-overlay-label",
-        "classification_reason": "sole material interior overlay label"
+        "classification_reason": "sole material interior overlay label",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [
-        50
-      ],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 20,
       "visible_page": 20,
       "layout": "two-panels",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 21,
       "visible_page": 21,
       "layout": "one-plus-two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 22,
       "visible_page": 22,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 23,
       "visible_page": 23,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 24,
@@ -452,10 +314,7 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 25,
@@ -467,10 +326,7 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 26,
@@ -481,63 +337,17 @@
       "notes_omitted": 0,
       "review_reasons": [
         "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized single connected materially coupled visual graph into native source-order content",
         "unconsumed vector requires review: 68, 69"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "mixed-visual-1",
-        "global_key": "source-26-mixed-visual-1",
-        "asset": "assets/lect02d-dna_structure_overview/source_region_dddf044953e76eeb53045bee0fb13812acd45807b31ffed7dbe981de2c61325d.png",
-        "sha256": "dddf044953e76eeb53045bee0fb13812acd45807b31ffed7dbe981de2c61325d",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.2705546531093062,
-          "top": 0.04353741151106814,
-          "right": 0.7293119226238453,
-          "bottom": 0.9310835406618981
-        },
-        "pixel_bounds": [
-          429,
-          43,
-          1159,
-          925
-        ],
-        "included_source_image_refs": [
-          "assets/lect02d-dna_structure_overview/image_016.jpg"
-        ],
-        "included_source_ordinals": [
-          67
-        ],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "mixed-visual-1",
         "kind": "mixed-visual",
-        "classification_reason": "single connected materially coupled visual graph"
+        "classification_reason": "single connected materially coupled visual graph",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 68,
-          "bounds": {
-            "left": 0.1654540269080538,
-            "top": 0.09330261548238093,
-            "right": 0.1745248930497861,
-            "bottom": 0.9065151850847862
-          },
-          "reason": "unconsumed-vector"
-        },
-        {
-          "source_ordinal": 69,
-          "bounds": {
-            "left": 0.8299485398970798,
-            "top": 0.039994997451112464,
-            "right": 0.8399479198958398,
-            "bottom": 0.9198849413755866
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     },
     {
       "source_slide": 27,
@@ -549,40 +359,31 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 28,
       "visible_page": 28,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 29,
       "visible_page": 29,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 30,
@@ -594,7 +395,6 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
       "multiple_choice": {
         "reason": "complete question-list-answer structure",
         "question": {
@@ -617,9 +417,7 @@
         },
         "image": null,
         "question_visual_region": null
-      },
-      "omitted_vectors": [],
-      "review_vectors": []
+      }
     },
     {
       "source_slide": 31,
@@ -631,7 +429,6 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
       "multiple_choice": {
         "reason": "complete question-list-answer structure",
         "question": {
@@ -654,9 +451,7 @@
         },
         "image": null,
         "question_visual_region": null
-      },
-      "omitted_vectors": [],
-      "review_vectors": []
+      }
     },
     {
       "source_slide": 32,
@@ -668,7 +463,6 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
       "multiple_choice": {
         "reason": "complete question-list-answer structure",
         "question": {
@@ -691,9 +485,7 @@
         },
         "image": null,
         "question_visual_region": null
-      },
-      "omitted_vectors": [],
-      "review_vectors": []
+      }
     },
     {
       "source_slide": 33,
@@ -705,7 +497,6 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
       "multiple_choice": {
         "reason": "complete question-list-answer structure",
         "question": {
@@ -728,129 +519,103 @@
         },
         "image": null,
         "question_visual_region": null
-      },
-      "omitted_vectors": [],
-      "review_vectors": []
+      }
     },
     {
       "source_slide": 34,
       "visible_page": 34,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 35,
       "visible_page": 35,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 36,
       "visible_page": 36,
       "layout": "one-panel",
-      "text_blocks": 2,
-      "images": 0,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 37,
-      "visible_page": 37,
-      "layout": "one-panel",
-      "text_blocks": 2,
-      "images": 0,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 38,
-      "visible_page": 38,
-      "layout": "one-panel",
-      "text_blocks": 2,
-      "images": 0,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 39,
-      "visible_page": 39,
-      "layout": "one-panel",
-      "text_blocks": 2,
-      "images": 0,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 40,
-      "visible_page": 40,
-      "layout": "one-panel",
-      "text_blocks": 2,
-      "images": 0,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 41,
-      "visible_page": 41,
-      "layout": "title-only",
       "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 37,
+      "visible_page": 37,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 38,
+      "visible_page": 38,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 39,
+      "visible_page": 39,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 40,
+      "visible_page": 40,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 41,
+      "visible_page": 41,
+      "layout": "title-only",
+      "text_blocks": 0,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
     },
     {
       "source_slide": 42,
@@ -862,16 +627,13 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 43,
       "visible_page": 43,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -880,21 +642,7 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 106,
-          "bounds": {
-            "left": 0.5651792423584847,
-            "top": 0.5208491382347732,
-            "right": 0.637746171492343,
-            "bottom": 0.6706589715445116
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     }
   ]
 }

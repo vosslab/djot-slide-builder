@@ -23,7 +23,7 @@ Brewfile             declared macOS command-line and desktop dependencies
   LibreOffice conversion, and terminal reporting.
 - [../slide_lib/importers/](../slide_lib/importers/) contains the trusted existing-presentation
   import pipeline: ODP/PPTX readers, source records, geometry and topology analysis, slide
-  planning, bounded region rendering, and Djot emission.
+  planning, native normalization, and Djot emission.
 - [../genetics/djot/](../genetics/djot/) contains the repository's Djot lecture sources and its
   local authoring README. A deck-local asset tree is created beside an imported deck when needed.
 - [../tests/](../tests/) holds permanent offline pytest coverage. The
@@ -39,8 +39,8 @@ Brewfile             declared macOS command-line and desktop dependencies
 
 - `output/` contains generated `pptx`, `odp`, and `pdf` presentation products.
   The directory is ignored by Git and is not an authored source.
-- Imported decks may include local PNG assets under an adjacent `assets/` directory. The importer
-  validates and publishes only reachable assets with the Djot source.
+- Imported decks may include genuine source-image assets under an adjacent `assets/` directory. The
+  importer validates and publishes only reachable assets with the Djot source.
 - `graphify-out/` contains repository-local Graphify mapping output and is
   ignored by Git.
 

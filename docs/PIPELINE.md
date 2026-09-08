@@ -12,10 +12,10 @@ ONE-TIME EXISTING-PRESENTATION IMPORT
 trusted ODP -> LibreOffice temporary PPTX -> pptx_reader raw facts
   -> SlidePlan geometry -> djot_emitter -> extended-Djot + validated local assets
 
-The original ODP supplies raster evidence for an ODP import, and the trusted input PPTX supplies it
-for a direct PPTX import. The importer renders only a bounded, title-excluded source region through
-Poppler's fixed `pdftoppm` 144 DPI path. It keeps ordinary text, pictures, and supported tables as
-native editable source instead of producing an exact full-slide raster.
+The imported presentation supplies structured text, list, table, image, and geometry facts only.
+Ordinary source images remain assets. Difficult spatial compositions normalize into standard native
+source-order layouts with review reasons; no source slide or composite region is rendered and
+inserted as substitute content.
 
 Audit status: this is the intended ownership flow, but the current reader still constructs planner
 region records for positioned content. Moving that projection into `slide_plan.py` remains open.
@@ -51,12 +51,12 @@ visual QA is separate from the production object-conversion chain and never supp
 | `slide_lib/importers/pptx_to_djot.py` | Staged import orchestration and atomic publication | Djot source, assets, and provenance |
 | `slide_lib/importers/slide_plan.py` | Geometry-first semantic planning | `SlidePlan` |
 | `slide_lib/importers/topology.py` | Shared ordinary-layout topology matching | Registry-derived layout candidate |
-| `slide_lib/importers/source_region_render.py` | Bounded coupled-region rendering | Validated hash-named PNG assets |
 | `slide_lib/importers/djot_emitter.py` | Escaping and atomic component-to-Djot projection | Source-located Djot components |
 | `slide_lib/djot_parser.py` | Extended-Djot framing, slots, actions, and block assembly | Typed slide model |
 | `slide_lib/djot_grammar.py` | Exact directive and action spellings derived from the layout registry | Shared Djot contract |
 | `slide_lib/djot_lint.py` | Strict-tool invocation and source-only Djot semantics | Source diagnostics |
 | `slide_lib/layouts.py` | Registry and native geometry for every supported layout | Editable PPTX objects |
+| `slide_lib/pptx_theme.py` | Native lecture theme and outline-level semantics | Gradient, bullets, tabs, and hanging indents |
 | `slide_lib/libreoffice.py` | Process preflight, conversion, and PDF filter | PPTX, ODP, and PDF conversions |
 | `slide_lib/native_export.py` | Deck discovery, export stages, notes, pagination, and paths | Ordered deck and artifact paths |
 | `slide_lib/terminal_output.py` | Transient progress, summaries, and expected failures | One concise Rich interface |
@@ -70,11 +70,11 @@ and artifact orchestration separate.
 
 ## Existing-presentation import contract
 
-Import normalization retains text, lists, images, tables, and geometry before selecting a target
-layout. `SlidePlan` is the geometry handoff: it carries a selected title,
-editable slot candidates, true source-table metadata, and at most one coupled spatial content
-region. The importer assigns a component as a complete unit; it does not reconstruct diagrams from
-their labels or use deck-, slide-, or text-specific exceptions.
+Import normalization retains text, lists, genuine images, tables, and geometry before selecting a
+target layout. `SlidePlan` is the geometry handoff: it carries a selected title, editable slot
+candidates, true source-table metadata, and positive relation evidence used for native grouping.
+The importer assigns a component as a complete unit and uses no deck-, slide-, or text-specific
+exceptions.
 
 Ordinary source prose and pictures project to editable Djot blocks. Direct source style, placeholder
 role, actual top/group z-path, signed rotation, and normalized geometry provide the evidence for
@@ -86,14 +86,12 @@ A narrow coarse-body and picture-inset pair remains two direct editable objects 
 using exact source provenance and one explicit permission. Caption pairing is a single shared
 positive relation grouped before topology and reuses the existing `two-plus-one` and footer
 permission. Adaptive vertical image flow reserves text at 28 through 14 CSS px, then uniformly
-scales every image. These routes do not use global or crop exceptions.
+scales every image. These routes do not use slide-specific geometry exceptions.
 
-A tightly coupled diagram and its distributed labels may project to one bounded component image. Its
-private crop protects the selected title, includes only its coupled source members, and must remain
-smaller than the original slide after pixel rounding. The original ODP supplies that evidence for an
-ODP import, while a direct PPTX import uses its trusted input PPTX. Poppler renders source pages at
-fixed 144 DPI; the importer validates decoded PNGs, records source-slide provenance, and publishes
-digest-named assets only after the staged Djot source and assets validate together.
+A tightly coupled diagram and its distributed labels project as native text and genuine source
+images in one standard source-order flow. Unsupported vector members are recorded for review rather
+than photographed. Ambiguous or overlapping legacy geometry collapses into one standard native
+panel with a review reason, making the loss of spatial semantics visible for redesign.
 
 Publication also retains only assets reachable from the parsed Djot deck below that deck's local
 `assets/` directory. Missing, unsafe, or symlinked references fail staging, and unreachable generated
@@ -101,9 +99,8 @@ files are pruned before the atomic publication step.
 
 Only actual PPTX table metadata may become an editable native table. Header status and intentional
 blank cells remain source-derived. Merged or spanned table cells require review before publication;
-a diagram that merely resembles a grid stays a bounded component or review case. Ambiguous component
-geometry likewise stops with a source-located review failure rather than silently changing teaching
-content.
+a diagram that merely resembles a grid stays native review content. Ambiguous component geometry
+uses the documented source-order normalization rather than inventing a legacy layout match.
 
 ## Native layout contract
 
@@ -132,13 +129,20 @@ The first sixteen names are the LibreOffice grid catalog. `gallery` is a reposit
 contained image row. LibreOffice is not asked to apply the grid: Python creates the text boxes,
 lists, images, shapes, and vertical text direction directly through `python-pptx`.
 
+Every standard slide receives the native lecture theme from `pptx_theme.py`: a shallow
+blue-to-white band across the top, centered standard titles, and consistent content insets. Each
+Djot list item becomes its own presentation paragraph. Nine outline levels define separate bullet
+positions, text tab stops, and hanging indents so wrapped lines align with the text; these native
+semantics survive the PPTX-to-ODP-to-PDF chain.
+
 Each Djot slide begins with exact `=== layout: <name>` and uses exact `@<slot>` directives. The
 layout registry is the authority for legal layout and slot names, including asymmetric slots:
 `one-plus-two-panels` uses `left`, `top-right`, and `bottom-right`; `two-plus-one-panels` uses
 `top-left`, `bottom-left`, and `right`; `two-panels-vertical-clipart` uses `top-left`,
 `bottom-left`, and `right-clipart`. `gallery` accepts a slide title and two through six component
-images; use `one-panel` for one image. Layout validation reports unsupported or overflowing source
-rather than emitting a raster fallback.
+images. An ordinary panel may also contain up to six genuine images in a native row or source-order
+flow. Layout validation reports unsupported or overflowing source rather than emitting a raster
+fallback.
 
 Ordinary panel layouts accept zero or one global H1. Each ordinary cell may also carry one local H2
 followed by native text, images, or one source-derived table. A validated table renders only in a
@@ -184,7 +188,7 @@ rendered page cannot prove editability. The E2E build verifies the ordered PPTX-
 The strict Jotdown gate is a one-time/source-acceptance check, not a replacement for permanent
 offline parser tests. Importer conversion, a full-corpus build, visual comparisons, and native
 all-format output are likewise one-time acceptance evidence. The native gate passed through strict
-lint for 8 decks/336 visible slides/186 image occurrences, `build_slides.sh genetics`, the Djot
+lint for 8 decks/336 visible slides/185 image occurrences, `build_slides.sh genetics`, the Djot
 native-layout E2E, and eight sequential matching PPTX/ODP/PDF exports with editable text/direct
 images and the Lecture 02e native table retained. Permanent pytest remains offline, fast, and
 deterministic.

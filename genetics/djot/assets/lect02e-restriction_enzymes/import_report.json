@@ -3,28 +3,25 @@
   "slide_count": 62,
   "visible_slides": 62,
   "hidden_slides": [],
-  "unique_media_assets": 27,
+  "unique_media_assets": 18,
   "slides": [
     {
       "source_slide": 1,
       "visible_page": 1,
       "layout": "title-slide",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 2,
       "visible_page": 2,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -32,55 +29,43 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 3,
       "visible_page": 3,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 4,
       "visible_page": 4,
       "layout": "two-plus-one-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 5,
       "visible_page": 5,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 6,
@@ -92,16 +77,13 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 7,
       "visible_page": 7,
       "layout": "two-over-one-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
@@ -109,33 +91,25 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 8,
       "visible_page": 8,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 1,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 9,
       "visible_page": 9,
       "layout": "two-over-one-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
@@ -143,63 +117,49 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 10,
       "visible_page": 10,
       "layout": "two-over-one-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 1,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 11,
       "visible_page": 11,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 12,
       "visible_page": 12,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 13,
       "visible_page": 13,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -208,27 +168,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 61,
-          "bounds": {
-            "left": 0.6531023622047244,
-            "top": 0.3482992920885451,
-            "right": 0.7075275590551181,
-            "bottom": 0.5079364676291283
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     },
     {
       "source_slide": 14,
       "visible_page": 14,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -236,16 +182,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 15,
       "visible_page": 15,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -253,16 +196,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 16,
       "visible_page": 16,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -270,16 +210,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 17,
       "visible_page": 17,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -287,108 +224,70 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 18,
       "visible_page": 18,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 19,
       "visible_page": 19,
       "layout": "two-panels",
-      "text_blocks": 5,
+      "text_blocks": 4,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized unique connected rotated vector-label graph into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "rotated-vector-label-1",
-        "global_key": "source-19-rotated-vector-label-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_5d5abb46b241f7820756f6cec552ce07d9fea6ab888284dc6059247c41124250.png",
-        "sha256": "5d5abb46b241f7820756f6cec552ce07d9fea6ab888284dc6059247c41124250",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.49500502201004404,
-          "top": 0.25099717686105294,
-          "right": 0.8526614173228346,
-          "bottom": 0.6449479017545107
-        },
-        "pixel_bounds": [
-          786,
-          249,
-          1355,
-          641
-        ],
-        "included_source_image_refs": [
-          "source-vector-91",
-          "source-vector-92"
-        ],
-        "included_source_ordinals": [
-          91,
-          92
-        ],
-        "coupled_text_count": 3,
-        "protected_text_shape_ids": [],
+        "region_key": "rotated-vector-label-1",
         "kind": "rotated-vector-label",
-        "classification_reason": "unique connected rotated vector-label graph"
+        "classification_reason": "unique connected rotated vector-label graph",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 20,
       "visible_page": 20,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 21,
       "visible_page": 21,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 22,
       "visible_page": 22,
       "layout": "two-panels",
-      "text_blocks": 4,
+      "text_blocks": 3,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -397,429 +296,147 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 105,
-          "bounds": {
-            "left": 0.6077837435674872,
-            "top": 0.34784220640338953,
-            "right": 0.6115692231384463,
-            "bottom": 0.3710393049250348
-          },
-          "reason": "unconsumed-vector"
-        },
-        {
-          "source_ordinal": 106,
-          "bounds": {
-            "left": 0.6385675491350983,
-            "top": 0.34784220640338953,
-            "right": 0.6423530287060574,
-            "bottom": 0.3710393049250348
-          },
-          "reason": "unconsumed-vector"
-        },
-        {
-          "source_ordinal": 107,
-          "bounds": {
-            "left": 0.6649587699175399,
-            "top": 0.34784220640338953,
-            "right": 0.668744249488499,
-            "bottom": 0.3710393049250348
-          },
-          "reason": "unconsumed-vector"
-        },
-        {
-          "source_ordinal": 108,
-          "bounds": {
-            "left": 0.695742575485151,
-            "top": 0.34784220640338953,
-            "right": 0.69952805505611,
-            "bottom": 0.3710393049250348
-          },
-          "reason": "unconsumed-vector"
-        },
-        {
-          "source_ordinal": 109,
-          "bounds": {
-            "left": 0.7265263810527621,
-            "top": 0.34784220640338953,
-            "right": 0.7303118606237212,
-            "bottom": 0.3710393049250348
-          },
-          "reason": "unconsumed-vector"
-        },
-        {
-          "source_ordinal": 110,
-          "bounds": {
-            "left": 0.7529176018352037,
-            "top": 0.34784220640338953,
-            "right": 0.7567030814061628,
-            "bottom": 0.3710393049250348
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     },
     {
       "source_slide": 23,
       "visible_page": 23,
       "layout": "two-panels",
-      "text_blocks": 5,
+      "text_blocks": 4,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized connected vector scaffold with distributed annotations into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "vector-component-1",
-        "global_key": "source-23-vector-component-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_eabecc84421f40d72f47280dd708960bf4e1d5c580150e4df42253ee3524a3e4.png",
-        "sha256": "eabecc84421f40d72f47280dd708960bf4e1d5c580150e4df42253ee3524a3e4",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.544251968503937,
-          "top": 0.25099717686105294,
-          "right": 0.8708031496062992,
-          "bottom": 0.616437182142932
-        },
-        "pixel_bounds": [
-          864,
-          249,
-          1383,
-          613
-        ],
-        "included_source_image_refs": [
-          "source-connector-116",
-          "source-connector-117",
-          "source-connector-118",
-          "source-connector-119",
-          "source-connector-120",
-          "source-connector-121"
-        ],
-        "included_source_ordinals": [
-          116,
-          117,
-          118,
-          119,
-          120,
-          121
-        ],
-        "coupled_text_count": 3,
-        "protected_text_shape_ids": [],
+        "region_key": "vector-component-1",
         "kind": "vector-scaffold",
-        "classification_reason": "connected vector scaffold with distributed annotations"
+        "classification_reason": "connected vector scaffold with distributed annotations",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 24,
       "visible_page": 24,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 25,
       "visible_page": 25,
       "layout": "one-panel",
-      "text_blocks": 8,
+      "text_blocks": 7,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
         "ignored non-content shape type AUTO_SHAPE (1)",
         "ignored non-content shape type LINE (9)",
-        "regular text lattice requires border and span reconstruction"
+        "normalized connected vector scaffold with distributed annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "vector-component-1",
-        "global_key": "source-25-vector-component-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_9aed425553b1fa96f81ff16ef9583b44e7176b2e35862b8900326305ca9d6d94.png",
-        "sha256": "9aed425553b1fa96f81ff16ef9583b44e7176b2e35862b8900326305ca9d6d94",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.0544251968503937,
-          "top": 0.23357078511449678,
-          "right": 0.9829747659495319,
-          "bottom": 0.9287981122361203
-        },
-        "pixel_bounds": [
-          86,
-          231,
-          1561,
-          923
-        ],
-        "included_source_image_refs": [
-          "source-connector-128",
-          "source-connector-129",
-          "source-connector-130",
-          "source-connector-134",
-          "source-connector-135",
-          "source-connector-136",
-          "source-connector-140",
-          "source-connector-141",
-          "source-connector-142",
-          "source-connector-148",
-          "source-connector-149",
-          "source-connector-150",
-          "source-connector-151",
-          "source-connector-152",
-          "source-connector-153"
-        ],
-        "included_source_ordinals": [
-          128,
-          129,
-          130,
-          134,
-          135,
-          136,
-          140,
-          141,
-          142,
-          148,
-          149,
-          150,
-          151,
-          152,
-          153
-        ],
-        "coupled_text_count": 7,
-        "protected_text_shape_ids": [],
+        "region_key": "vector-component-1",
         "kind": "vector-scaffold",
-        "classification_reason": "connected vector scaffold with distributed annotations"
+        "classification_reason": "connected vector scaffold with distributed annotations",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 26,
       "visible_page": 26,
       "layout": "one-panel",
-      "text_blocks": 8,
+      "text_blocks": 7,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
         "ignored non-content shape type AUTO_SHAPE (1)",
         "ignored non-content shape type LINE (9)",
-        "regular text lattice requires border and span reconstruction"
+        "normalized connected vector scaffold with distributed annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "vector-component-1",
-        "global_key": "source-26-vector-component-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_fbc2a3c670d0c8a450daecfb09c8346d00bb1e5c7c82e2088d01d82c33f4cd37.png",
-        "sha256": "fbc2a3c670d0c8a450daecfb09c8346d00bb1e5c7c82e2088d01d82c33f4cd37",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.054496620993241984,
-          "top": 0.23357078511449678,
-          "right": 0.9924384648769298,
-          "bottom": 0.9289123836574092
-        },
-        "pixel_bounds": [
-          86,
-          231,
-          1576,
-          923
-        ],
-        "included_source_image_refs": [
-          "source-connector-158",
-          "source-connector-159",
-          "source-connector-160",
-          "source-connector-164",
-          "source-connector-165",
-          "source-connector-166",
-          "source-connector-170",
-          "source-connector-171",
-          "source-connector-172",
-          "source-connector-177",
-          "source-connector-178",
-          "source-connector-179",
-          "source-connector-180",
-          "source-connector-181",
-          "source-connector-182",
-          "source-vector-185",
-          "source-vector-186"
-        ],
-        "included_source_ordinals": [
-          158,
-          159,
-          160,
-          164,
-          165,
-          166,
-          170,
-          171,
-          172,
-          177,
-          178,
-          179,
-          180,
-          181,
-          182,
-          185,
-          186
-        ],
-        "coupled_text_count": 7,
-        "protected_text_shape_ids": [],
+        "region_key": "vector-component-1",
         "kind": "vector-scaffold",
-        "classification_reason": "connected vector scaffold with distributed annotations"
+        "classification_reason": "connected vector scaffold with distributed annotations",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 27,
       "visible_page": 27,
       "layout": "one-panel",
-      "text_blocks": 10,
+      "text_blocks": 9,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
         "dense text requires post-conversion polish",
         "ignored non-content shape type AUTO_SHAPE (1)",
         "ignored non-content shape type LINE (9)",
-        "protected source text shapes: 188",
-        "regular text lattice requires border and span reconstruction"
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.029069626139252278, top=0.19523272327207328, right=1.0, bottom=0.9036012638419194), NormalizedBounds(left=0.009070866141732284, top=0.7547056019024923, right=0.3356577593155186, bottom=0.9288552479467648)] into one native source-order panel",
+        "normalized single connected materially coupled visual graph; aligned connectors into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "mixed-visual-1",
-        "global_key": "source-27-mixed-visual-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_2f5b165bce3d6f3b21a5b5170763b06e9c2d80dccbcb09b37678c40add058a99.png",
-        "sha256": "2f5b165bce3d6f3b21a5b5170763b06e9c2d80dccbcb09b37678c40add058a99",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.009070866141732284,
-          "top": 0.19523272327207328,
-          "right": 1.0,
-          "bottom": 0.9288552479467648
-        },
-        "pixel_bounds": [
-          14,
-          193,
-          1588,
-          923
-        ],
-        "included_source_image_refs": [
-          "source-connector-191",
-          "source-connector-192",
-          "source-connector-193",
-          "source-connector-197",
-          "source-connector-198",
-          "source-connector-199",
-          "source-connector-203",
-          "source-connector-204",
-          "source-connector-205",
-          "source-vector-208",
-          "source-connector-213",
-          "source-connector-214",
-          "source-connector-215",
-          "source-connector-216",
-          "source-connector-217",
-          "source-connector-218",
-          "source-connector-219",
-          "source-vector-222",
-          "source-vector-223"
-        ],
-        "included_source_ordinals": [
-          191,
-          192,
-          193,
-          197,
-          198,
-          199,
-          203,
-          204,
-          205,
-          208,
-          213,
-          214,
-          215,
-          216,
-          217,
-          218,
-          219,
-          222,
-          223
-        ],
-        "coupled_text_count": 9,
-        "protected_text_shape_ids": [
-          188
-        ],
+        "region_key": "mixed-visual-1",
         "kind": "mixed-visual",
-        "classification_reason": "single connected materially coupled visual graph; aligned connectors; styled callout"
+        "classification_reason": "single connected materially coupled visual graph; aligned connectors",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [
-        188
-      ],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 28,
       "visible_page": 28,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 29,
       "visible_page": 29,
       "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 30,
+      "visible_page": 30,
+      "layout": "two-panels",
       "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 30,
-      "visible_page": 30,
-      "layout": "two-panels",
-      "text_blocks": 2,
-      "images": 1,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 31,
@@ -831,10 +448,7 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 32,
@@ -846,929 +460,467 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 33,
       "visible_page": 33,
       "layout": "one-panel",
-      "text_blocks": 41,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 1,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 34,
       "visible_page": 34,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 35,
       "visible_page": 35,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-35-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png",
-        "sha256": "49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 36,
       "visible_page": 36,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-36-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png",
-        "sha256": "49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 37,
       "visible_page": 37,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-37-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png",
-        "sha256": "49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 38,
       "visible_page": 38,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
-        "dense text requires post-conversion polish"
+        "dense text requires post-conversion polish",
+        "normalized styled inset key paired with coarse object body into native source-order content"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-38-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png",
-        "sha256": "49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 39,
       "visible_page": 39,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-39-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png",
-        "sha256": "77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 40,
       "visible_page": 40,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-40-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png",
-        "sha256": "77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 41,
       "visible_page": 41,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-41-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png",
-        "sha256": "77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 42,
       "visible_page": 42,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
-        "dense text requires post-conversion polish"
+        "dense text requires post-conversion polish",
+        "normalized styled inset key paired with coarse object body into native source-order content"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-42-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png",
-        "sha256": "77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 43,
       "visible_page": 43,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-43-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png",
-        "sha256": "1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 44,
       "visible_page": 44,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-44-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png",
-        "sha256": "1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 45,
       "visible_page": 45,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-45-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png",
-        "sha256": "1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 46,
       "visible_page": 46,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
-        "dense text requires post-conversion polish"
+        "normalized styled inset key paired with coarse object body into native source-order content"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-46-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png",
-        "sha256": "1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 47,
       "visible_page": 47,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-47-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png",
-        "sha256": "c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 48,
       "visible_page": 48,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-48-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png",
-        "sha256": "c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 49,
       "visible_page": 49,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized styled inset key paired with coarse object body into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-49-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png",
-        "sha256": "c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 50,
       "visible_page": 50,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
-        "dense text requires post-conversion polish"
+        "dense text requires post-conversion polish",
+        "normalized styled inset key paired with coarse object body into native source-order content"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "styled-inset-key-1",
-        "global_key": "source-50-styled-inset-key-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png",
-        "sha256": "c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.7528818897637796,
-          "top": 0.23391359937836348,
-          "right": 0.9252283464566929,
-          "bottom": 0.37903830441525727
-        },
-        "pixel_bounds": [
-          1195,
-          232,
-          1470,
-          377
-        ],
-        "included_source_image_refs": [],
-        "included_source_ordinals": [],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "styled-inset-key-1",
         "kind": "styled-inset-key",
-        "classification_reason": "styled inset key paired with coarse object body"
+        "classification_reason": "styled inset key paired with coarse object body",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 51,
       "visible_page": 51,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 52,
       "visible_page": 52,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 53,
       "visible_page": 53,
       "layout": "one-panel",
-      "text_blocks": 25,
+      "text_blocks": 24,
       "images": 1,
       "notes_omitted": 1,
       "review_reasons": [
+        "24 positioned labels require native redesign",
         "dense text requires post-conversion polish",
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized distributed pictorial annotations; aligned connectors into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "content-region-1",
-        "global_key": "source-53-content-region-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_060ce7ba5b2f7ae205e6e955bd079912a62a2e4458562900ffb91616159fa851.png",
-        "sha256": "060ce7ba5b2f7ae205e6e955bd079912a62a2e4458562900ffb91616159fa851",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.09999379998759997,
-          "top": 0.04445158288137928,
-          "right": 0.9008370016740034,
-          "bottom": 0.942967768475943
-        },
-        "pixel_bounds": [
-          158,
-          44,
-          1431,
-          937
-        ],
-        "included_source_image_refs": [
-          "assets/lect02e-restriction_enzymes/image_012.jpg",
-          "source-connector-289",
-          "source-vector-293",
-          "source-vector-294",
-          "source-vector-312"
-        ],
-        "included_source_ordinals": [
-          287,
-          289,
-          293,
-          294,
-          312
-        ],
-        "coupled_text_count": 24,
-        "protected_text_shape_ids": [],
+        "region_key": "content-region-1",
         "kind": "diagram",
-        "classification_reason": "distributed pictorial annotations; aligned connectors"
+        "classification_reason": "distributed pictorial annotations; aligned connectors",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 54,
       "visible_page": 54,
       "layout": "one-panel",
-      "text_blocks": 14,
+      "text_blocks": 13,
       "images": 1,
       "notes_omitted": 1,
       "review_reasons": [
+        "13 positioned labels require native redesign",
         "dense text requires post-conversion polish",
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized distributed pictorial annotations; aligned connectors into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "content-region-1",
-        "global_key": "source-54-content-region-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_bbcf4f61e8856aeeee51bc6f3c4191364e8f6bfa603f93a1d30f64eb8f8cc11d.png",
-        "sha256": "bbcf4f61e8856aeeee51bc6f3c4191364e8f6bfa603f93a1d30f64eb8f8cc11d",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.14831223262446525,
-          "top": 0.3630974411454567,
-          "right": 0.8564111848223697,
-          "bottom": 0.6110092896317095
-        },
-        "pixel_bounds": [
-          235,
-          360,
-          1360,
-          607
-        ],
-        "included_source_image_refs": [
-          "assets/lect02e-restriction_enzymes/image_013.jpg",
-          "source-connector-321",
-          "source-vector-322"
-        ],
-        "included_source_ordinals": [
-          318,
-          321,
-          322
-        ],
-        "coupled_text_count": 13,
-        "protected_text_shape_ids": [],
+        "region_key": "content-region-1",
         "kind": "diagram",
-        "classification_reason": "distributed pictorial annotations; aligned connectors"
+        "classification_reason": "distributed pictorial annotations; aligned connectors",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 55,
       "visible_page": 55,
       "layout": "one-panel",
-      "text_blocks": 50,
+      "text_blocks": 49,
       "images": 1,
       "notes_omitted": 1,
       "review_reasons": [
+        "49 positioned labels require native redesign",
         "dense text requires post-conversion polish",
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized distributed pictorial annotations; aligned connectors into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "content-region-1",
-        "global_key": "source-55-content-region-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_887919633031b9c72d3ea2f8a87407e775b10be9c21d686b451b3f70b3531e8f.png",
-        "sha256": "887919633031b9c72d3ea2f8a87407e775b10be9c21d686b451b3f70b3531e8f",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.032640833281666566,
-          "top": 0.05656435353800191,
-          "right": 0.9702255564511129,
-          "bottom": 0.9270269052061425
-        },
-        "pixel_bounds": [
-          51,
-          56,
-          1541,
-          921
-        ],
-        "included_source_image_refs": [
-          "assets/lect02e-restriction_enzymes/image_014.jpg",
-          "source-vector-337",
-          "source-connector-339",
-          "source-vector-340"
-        ],
-        "included_source_ordinals": [
-          335,
-          337,
-          339,
-          340
-        ],
-        "coupled_text_count": 49,
-        "protected_text_shape_ids": [],
+        "region_key": "content-region-1",
         "kind": "diagram",
-        "classification_reason": "distributed pictorial annotations; aligned connectors"
+        "classification_reason": "distributed pictorial annotations; aligned connectors",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 56,
       "visible_page": 56,
       "layout": "one-panel",
-      "text_blocks": 34,
+      "text_blocks": 33,
       "images": 1,
       "notes_omitted": 1,
       "review_reasons": [
+        "33 positioned labels require native redesign",
         "dense text requires post-conversion polish",
         "ignored non-content shape type AUTO_SHAPE (1)",
-        "protected source text shapes: 391",
-        "regular text lattice requires border and span reconstruction"
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "content-region-1",
-        "global_key": "source-56-content-region-1",
-        "asset": "assets/lect02e-restriction_enzymes/source_region_9ec2d8e9f4b1c529d50adbc8e9cb411d3cc1d61ceb7ddcdd4d8a58117ef21edf.png",
-        "sha256": "9ec2d8e9f4b1c529d50adbc8e9cb411d3cc1d61ceb7ddcdd4d8a58117ef21edf",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.06663872527745056,
-          "top": 0.03291016933120111,
-          "right": 0.9331921383842767,
-          "bottom": 0.9415965114204763
-        },
-        "pixel_bounds": [
-          105,
-          32,
-          1482,
-          936
-        ],
-        "included_source_image_refs": [
-          "assets/lect02e-restriction_enzymes/image_015.jpg",
-          "source-vector-420"
-        ],
-        "included_source_ordinals": [
-          389,
-          420
-        ],
-        "coupled_text_count": 33,
-        "protected_text_shape_ids": [
-          391
-        ],
+        "region_key": "content-region-1",
         "kind": "diagram",
-        "classification_reason": "distributed pictorial annotations"
+        "classification_reason": "distributed pictorial annotations",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [
-        391
-      ],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 57,
       "visible_page": 57,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 58,
@@ -1780,10 +932,7 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 59,
@@ -1795,25 +944,19 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 60,
       "visible_page": 60,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 61,
@@ -1825,16 +968,13 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 62,
       "visible_page": 62,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -1843,21 +983,7 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 431,
-          "bounds": {
-            "left": 0.5651792423584847,
-            "top": 0.5208491382347732,
-            "right": 0.637746171492343,
-            "bottom": 0.6706589715445116
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     }
   ]
 }

@@ -8,8 +8,8 @@
   ODP visibility checks.
 - Made Djot the sole authored deck source: builds route through `deck_tools.py build`, while
   trusted ODP and PPTX imports emit Djot.
-- Added geometry-first ODP/PPTX import planning, source-region provenance, editable source tables,
-  and bounded native OOXML animation generation.
+- Added geometry-first ODP/PPTX import planning, native source-order normalization, editable source
+  tables, and bounded native OOXML animation generation.
 - Added newcomer documentation for the architecture, file structure, formats, development,
   classroom workflows, troubleshooting, and related projects.
 
@@ -19,6 +19,10 @@
   boundary.
 - Limited recursive folder builds to `.djot` sources and rejected unsafe, missing, or symlinked
   imported assets before publication.
+- Removed rendered source-slide and composite-region substitution; difficult legacy geometry now
+  remains native and visibly reviewable.
+- Added the native lecture theme with a shallow top gradient, centered titles, and hierarchical
+  bullets with explicit tab stops and hanging indents.
 - Clarified current installation, usage, presenter-note, reveal, grammar, and acceptance evidence.
 
 ### Compatibility notes
@@ -31,7 +35,7 @@
 
 ### Validation
 
-- The permanent offline suite passed 1,689 tests, including CLI, import-boundary, typing,
+- The permanent offline suite passed 1,660 tests, including CLI, import-boundary, typing,
   security, hygiene, and link checks.
 - One-time checks passed for recursive eight-deck builds, strict Djot linting, native PPTX/ODP/PDF
   exports, legacy-corpus regeneration, and a 62-slide ODP import.

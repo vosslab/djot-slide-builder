@@ -58,8 +58,9 @@ source source_me.sh && python3 deck_tools.py lint genetics/djot/lecture.djot
 For an ODP source, visibility reports the resolved visible and hidden slide state before migration.
 After import, inspect the new Djot source and its `assets/lecture/` folder, then build and review
 the resulting deck. Text, lists, ordinary images, supported tables, and geometry-supported layouts
-remain editable; coupled visual components can become bounded source-region images. Once reviewed,
-edit the new Djot file rather than maintaining parallel source decks.
+remain editable. Difficult spatial compositions normalize to standard native source-order panels
+and carry review reasons instead of rendered source substitutes. Once reviewed, edit the new Djot
+file rather than maintaining parallel source decks.
 
 ## Accept source deliberately
 

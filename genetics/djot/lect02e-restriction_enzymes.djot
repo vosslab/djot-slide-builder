@@ -91,7 +91,7 @@
 
 @bottom
 
-- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+- [https\://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
 
 === layout: two-panels
 
@@ -101,7 +101,7 @@
 
 ![Slide image 5](assets/lect02e-restriction_enzymes/image_005.png)
 
-- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+- [https\://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
 
 @right
 
@@ -138,7 +138,7 @@
 
 @bottom
 
-- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+- [https\://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
 
 === layout: two-over-one-panels
 
@@ -162,7 +162,7 @@
 
 @bottom
 
-- [https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
+- [https\://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
 
 === layout: title-only
 
@@ -274,7 +274,13 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_5d5abb46b241f7820756f6cec552ce07d9fea6ab888284dc6059247c41124250.png)
+- 5&prime;-`AGTACT`-3&prime;
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 3&prime;-`TCATGA`-3&prime;
+
+
 
 === layout: two-panels
 
@@ -328,7 +334,17 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_eabecc84421f40d72f47280dd708960bf4e1d5c580150e4df42253ee3524a3e4.png)
+- 5&prime;-`AGTACT`-3&prime;
+
+- 3&prime;-`TCATGA`-5&prime;
+
+- all the base pairs match
+
+
+
+
+
+
 
 === layout: one-panel
 
@@ -344,7 +360,35 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_9aed425553b1fa96f81ff16ef9583b44e7176b2e35862b8900326305ca9d6d94.png)
+- 5&prime;-`AGTACT`-3&prime;
+
+
+
+
+- G-C pair
+
+
+
+
+- T-A pair
+
+
+
+
+- A-T pair
+
+- YES, it’s a
+- palindrome
+
+- 5&prime;-`AGTACT`-3&prime;
+
+- 3&prime;-`TCATGA`-3&prime;
+
+
+
+
+
+
 
 === layout: one-panel
 
@@ -352,7 +396,37 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_fbc2a3c670d0c8a450daecfb09c8346d00bb1e5c7c82e2088d01d82c33f4cd37.png)
+- 5&prime;-`AGTGCT`-3&prime;
+
+
+
+
+- G-C pair
+
+
+
+
+- T-G pair
+
+
+
+
+- A-T pair
+
+- 5&prime;-`AGTGCT`-3&prime;
+
+- 3&prime;-`TCGTGA`-3&prime;
+
+
+
+
+
+
+
+- NO, it’s not a
+- palindrome
+
+
 
 === layout: one-panel
 
@@ -360,7 +434,47 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_2f5b165bce3d6f3b21a5b5170763b06e9c2d80dccbcb09b37678c40add058a99.png)
+- 5&prime;-`AGTGACT`-3&prime;
+
+
+
+
+- G-C pair
+
+
+
+
+- T-A pair
+
+
+
+
+- A-T pair
+
+
+- central
+- unpaired
+
+- 5&prime;-`AGTGACT`-3&prime;
+
+- 3&prime;-`TCAGTGA`-3&prime;
+
+
+
+
+
+
+
+
+
+
+- you cannot have
+- an odd number of
+- nucleotides in a
+- genetic palindrome
+
+- NO, it’s not a
+- palindrome
 
 === layout: title-only
 
@@ -424,7 +538,7 @@
 
 === layout: two-panels
 
-# Restriction Enzyme: EcoRI
+# Restriction Enzyme\: EcoRI
 
 @left
 
@@ -433,11 +547,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+- EcoRI
 
 === layout: two-panels
 
-# Restriction Enzyme: EcoRI
+# Restriction Enzyme\: EcoRI
 
 @left
 
@@ -449,11 +563,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+- EcoRI
 
 === layout: two-panels
 
-# Restriction Enzyme: EcoRI
+# Restriction Enzyme\: EcoRI
 
 @left
 
@@ -468,11 +582,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+- EcoRI
 
 === layout: two-panels
 
-# Restriction Enzyme: EcoRI
+# Restriction Enzyme\: EcoRI
 
 @left
 
@@ -489,11 +603,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_49c247fe3440e21fb61dfbc7e70c94d3fc1bec6435f296a7a116a123879ea685.png)
+- EcoRI
 
 === layout: two-panels
 
-# Restriction Enzyme: PstI
+# Restriction Enzyme\: PstI
 
 @left
 
@@ -502,11 +616,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+- PstI
 
 === layout: two-panels
 
-# Restriction Enzyme: PstI
+# Restriction Enzyme\: PstI
 
 @left
 
@@ -518,11 +632,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+- PstI
 
 === layout: two-panels
 
-# Restriction Enzyme: PstI
+# Restriction Enzyme\: PstI
 
 @left
 
@@ -537,11 +651,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+- PstI
 
 === layout: two-panels
 
-# Restriction Enzyme: PstI
+# Restriction Enzyme\: PstI
 
 @left
 
@@ -558,11 +672,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_77516f3d7476fba3351d31b13365e2cedfdb47c3208118437ab3d752a5e83610.png)
+- PstI
 
 === layout: two-panels
 
-# Restriction Enzyme: HaeIII
+# Restriction Enzyme\: HaeIII
 
 @left
 
@@ -571,11 +685,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+- HaeIII
 
 === layout: two-panels
 
-# Restriction Enzyme: HaeIII
+# Restriction Enzyme\: HaeIII
 
 @left
 
@@ -587,11 +701,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+- HaeIII
 
 === layout: two-panels
 
-# Restriction Enzyme: HaeIII
+# Restriction Enzyme\: HaeIII
 
 @left
 
@@ -606,11 +720,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+- HaeIII
 
 === layout: two-panels
 
-# Restriction Enzyme: HaeIII
+# Restriction Enzyme\: HaeIII
 
 @left
 
@@ -626,11 +740,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_1b919e522f385b348ac4513113cb49fa53d12235609ab45ab90b0c6456b9b064.png)
+- HaeIII
 
 === layout: two-panels
 
-# Restriction Enzyme: Sau3A
+# Restriction Enzyme\: Sau3A
 
 @left
 
@@ -639,11 +753,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+- Sau3A
 
 === layout: two-panels
 
-# Restriction Enzyme: Sau3A
+# Restriction Enzyme\: Sau3A
 
 @left
 
@@ -655,11 +769,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+- Sau3A
 
 === layout: two-panels
 
-# Restriction Enzyme: Sau3A
+# Restriction Enzyme\: Sau3A
 
 @left
 
@@ -674,11 +788,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+- Sau3A
 
 === layout: two-panels
 
-# Restriction Enzyme: Sau3A
+# Restriction Enzyme\: Sau3A
 
 @left
 
@@ -695,11 +809,11 @@
 
 @right
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_c55cf692edddbf8ab957b8ac275bd0e48bb4dbced23f4a5d707edfa083315578.png)
+- Sau3A
 
 === layout: one-panel
 
-# Restriction Enzyme: ClaI
+# Restriction Enzyme\: ClaI
 
 @body
 
@@ -718,7 +832,13 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_060ce7ba5b2f7ae205e6e955bd079912a62a2e4458562900ffb91616159fa851.png)
+![Slide image 12](assets/lect02e-restriction_enzymes/image_012.jpg)
+
+
+
+
+
+Native reconstruction needed: 24 positioned diagram labels.
 
 === layout: one-panel
 
@@ -726,7 +846,11 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_bbcf4f61e8856aeeee51bc6f3c4191364e8f6bfa603f93a1d30f64eb8f8cc11d.png)
+![Slide image 13](assets/lect02e-restriction_enzymes/image_013.jpg)
+
+
+
+Native reconstruction needed: 13 positioned diagram labels.
 
 === layout: one-panel
 
@@ -734,7 +858,12 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_887919633031b9c72d3ea2f8a87407e775b10be9c21d686b451b3f70b3531e8f.png)
+![Slide image 14](assets/lect02e-restriction_enzymes/image_014.jpg)
+
+
+
+
+Native reconstruction needed: 49 positioned diagram labels.
 
 === layout: one-panel
 
@@ -742,7 +871,10 @@
 
 @body
 
-![Coupled source region](assets/lect02e-restriction_enzymes/source_region_9ec2d8e9f4b1c529d50adbc8e9cb411d3cc1d61ceb7ddcdd4d8a58117ef21edf.png)
+![Slide image 15](assets/lect02e-restriction_enzymes/image_015.jpg)
+
+
+Native reconstruction needed: 33 positioned diagram labels.
 
 === layout: title-only
 

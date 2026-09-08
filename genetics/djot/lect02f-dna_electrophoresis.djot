@@ -28,7 +28,7 @@
 
 === layout: title-only
 
-# Fragmenting DNA: Gel Electrophoresis
+# Fragmenting DNA\: Gel Electrophoresis
 
 === layout: one-panel
 
@@ -59,11 +59,15 @@
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_cf39e09682e4cd041821cb55871abdd0ae87b4372dcd335ec3811eb08b681f1c.png)
+![Slide image 1](assets/lect02f-dna_electrophoresis/image_001.png)
+
+![Slide image 2](assets/lect02f-dna_electrophoresis/image_002.png)
+
+- Agar melts at 85 °C (185 °F) and solidifies around 32-40 °C (90-104 °F). This property lends a suitable balance between easy melting and good gel stability at relatively high temperatures. Gel density is controlled by concentration of agarose
 
 === layout: stacked-panels
 
-# Size separation of DNA fragments by electrophoresis in agarose gels
+# Size separation of DNA fragmentsby electrophoresis in agarose gels
 
 @top
 
@@ -81,7 +85,11 @@
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_73438b8fa331fdaeb40333769af7a036e5a470b60c2aacc38f3c4f7006563096.png)
+- DNA molecules must pass through pores in the gel - smaller fragments migrate more rapidly
+
+![Slide image 4](assets/lect02f-dna_electrophoresis/image_004.jpg)
+
+![Slide image 5](assets/lect02f-dna_electrophoresis/image_005.jpg)
 
 === layout: one-panel
 
@@ -92,7 +100,7 @@
 
 === layout: one-panel
 
-# DNA migration as function of base pairs
+# DNA migration asfunction of base pairs
 
 @body
 
@@ -103,14 +111,29 @@
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_c2753e602a88ae9aea8569940c240d4f236507cc5eacd88f9178fe7d54e53169.png)
+![Slide image 8](assets/lect02f-dna_electrophoresis/image_008.jpg)
+
+
+
+
+
+
+
+
+Native reconstruction needed: 16 positioned diagram labels.
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_ac934ea3e842efe9869aa159b626f4c48d131da810f51d040084e82027002d46.png)
+![Slide image 9](assets/lect02f-dna_electrophoresis/image_009.jpg)
+
+- Restriction fragments(size standards)
+
+
+
+- (b) Shorter molecules are slowed down less than longer ones, so they move faster through the gel.
 
 === layout: title-only
 
@@ -121,14 +144,36 @@
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_d36b5e23331512cc4aa2df01e68a33aa845b6421d6003f4c71f807eb1cdb5e5d.png)
+![Slide image 10](assets/lect02f-dna_electrophoresis/image_010.png)
+
+- gel is
+- loaded
+- here
+
+- Which band will be on top?
+- A. 4kb
+- B. 8kb
+- C. 10kb
+- D. 13kb
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_538242d6258457d9a7c53f291e6c3dede35c34fcbc8132a81de6bb9aceb4e736.png)
+![Slide image 10](assets/lect02f-dna_electrophoresis/image_010.png)
+
+- 13 kb
+
+- 10 kb
+
+- 8 kb
+
+- 4 kb
+
+- gel is
+- loaded
+- here
 
 === layout: one-panel
 
@@ -136,63 +181,173 @@
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_0d44a8d15f96459f300e492db9bcd56b4e8452fb6da0a73396a2b91dc78a87c0.png)
+![Slide image 11](assets/lect02f-dna_electrophoresis/image_011.jpg)
+
+![Slide image 12](assets/lect02f-dna_electrophoresis/image_012.jpg)
+
+- EcoRI
+
+- Both enzymes together
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_55588624f919b283286fc1ecb651219f79e14c3b3490f7324c4a09339a5136fb.png)
+![Slide image 13](assets/lect02f-dna_electrophoresis/image_013.png)
+
+![Slide image 14](assets/lect02f-dna_electrophoresis/image_014.png)
+
+![Slide image 15](assets/lect02f-dna_electrophoresis/image_015.png)
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_1fb926efc7c25372645cea6856577fe1c28d0b51d830f132e2909f28d5eb1aec.png)
+![Slide image 13](assets/lect02f-dna_electrophoresis/image_013.png)
+
+![Slide image 14](assets/lect02f-dna_electrophoresis/image_014.png)
+
+![Slide image 15](assets/lect02f-dna_electrophoresis/image_015.png)
+
+
+
+
+- 6kb
+- 4kb
+- 2kb
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_44f788f1c9138a448feccf9b8fda2c2f4b9181df5e0513911fef7d770c8f34f3.png)
+![Slide image 13](assets/lect02f-dna_electrophoresis/image_013.png)
+
+![Slide image 14](assets/lect02f-dna_electrophoresis/image_014.png)
+
+![Slide image 15](assets/lect02f-dna_electrophoresis/image_015.png)
+
+
+
+
+
+
+
+- 6kb
+- 4kb
+- 2kb
+
+- 5kb
+- 4kb
+- 3kb
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_dbec2fab8afb90bbdb33b0c2b039a7b31b211ebb0939105015e52515431d7251.png)
+![Slide image 13](assets/lect02f-dna_electrophoresis/image_013.png)
+
+![Slide image 14](assets/lect02f-dna_electrophoresis/image_014.png)
+
+![Slide image 15](assets/lect02f-dna_electrophoresis/image_015.png)
+
+
+
+
+
+
+
+
+
+
+- 5kb
+- 4kb
+- 3kb
+
+- 6kb
+- 4kb
+- 2kb
+
+- 5kb
+- 2kb
+- 1kb
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_63e14cddfc6e5bc440824a99495083122fa0224fbea198d6cf79eac646a135db.png)
+![Slide image 16](assets/lect02f-dna_electrophoresis/image_016.png)
+
+![Slide image 17](assets/lect02f-dna_electrophoresis/image_017.png)
+
+![Slide image 18](assets/lect02f-dna_electrophoresis/image_018.png)
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_af049a4a13bb30aaec503e88c08472956d7b52d58b7b275a963d085501730f5a.png)
+![Slide image 16](assets/lect02f-dna_electrophoresis/image_016.png)
+
+![Slide image 17](assets/lect02f-dna_electrophoresis/image_017.png)
+
+![Slide image 18](assets/lect02f-dna_electrophoresis/image_018.png)
+
+
+
+- 7kb
+- 3kb
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_19c062ffe1adc0b60ef5717209949d32f8b845713b123fbcf8123f696fab4117.png)
+![Slide image 16](assets/lect02f-dna_electrophoresis/image_016.png)
+
+![Slide image 17](assets/lect02f-dna_electrophoresis/image_017.png)
+
+![Slide image 18](assets/lect02f-dna_electrophoresis/image_018.png)
+
+
+
+- 7kb
+- 3kb
+
+
+
+- 7kb
+- 3kb
 
 === layout: one-panel
 
 
 @body
 
-![Coupled source region](assets/lect02f-dna_electrophoresis/source_region_c7c81e39859a132390ad912f4a1d127a2bad9b65c9d6fbe5c30687b7c2c50491.png)
+![Slide image 16](assets/lect02f-dna_electrophoresis/image_016.png)
+
+![Slide image 17](assets/lect02f-dna_electrophoresis/image_017.png)
+
+![Slide image 18](assets/lect02f-dna_electrophoresis/image_018.png)
+
+
+
+- 7kb
+- 3kb
+
+
+
+- 7kb
+- 3kb
+
+
+- 3kb
+- 2kb
+
 
 === layout: stacked-panels
 

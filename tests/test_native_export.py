@@ -9,6 +9,7 @@ import PIL.Image
 import pytest
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
+from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 
 # Local Modules
 from slide_lib import layouts
@@ -61,12 +62,57 @@ def test_horizontal_grid_layout_keeps_bullets_numbers_and_links(tmp_path: pathli
 	"""Two-content cells retain independently editable native text semantics."""
 	deck_path = tmp_path / "two-content.djot"
 	deck_path.write_text("=== layout: two-panels\n# Overview\n@left\n"
-		"## [Left](https://example.edu/left)\n- First\n\n  - Nested\n1. Ordered\n"
+		"## [Left](https://example.edu/left)\n- First\n  - Nested\n1. Ordered\n"
 		"@right\n## Right\n- Second\n", encoding="utf-8")
 	output_path = tmp_path / "two-content.pptx"
 	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
 	shape_xml = "".join(shape.element.xml for shape in Presentation(output_path).slides[0].shapes)
 	assert "buChar" in shape_xml and "buAutoNum" in shape_xml and "hlinkClick" in shape_xml
+
+
+#============================================
+def test_native_list_theme_uses_level_specific_hanging_indents(tmp_path: pathlib.Path) -> None:
+	"""Nested bullets remain separate paragraphs with explicit theme tab stops."""
+	deck_path = tmp_path / "nested-list.djot"
+	deck_path.write_text("=== layout: one-panel\n# Outline\n@body\n"
+		"- Parent wraps onto another line when the content is long enough to need it\n"
+		"  - Child\n", encoding="utf-8")
+	output_path = tmp_path / "nested-list.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	paragraphs = {paragraph.text: paragraph for shape in Presentation(output_path).slides[0].shapes
+		if shape.has_text_frame for paragraph in shape.text_frame.paragraphs if paragraph.text}
+	root = paragraphs["Parent wraps onto another line when the content is long enough to need it"]
+	child = paragraphs["Child"]
+	assert (root.level, child.level) == (0, 1)
+	assert all(marker in root._p.xml and marker in child._p.xml
+		for marker in ('marL=', 'indent="-', '<a:tab pos=', '<a:buChar char='))
+	assert root._p.xml != child._p.xml
+
+
+#============================================
+def test_standard_theme_uses_gradient_band_and_centered_title(tmp_path: pathlib.Path) -> None:
+	"""Ordinary slides carry the shared native band and centered title semantics."""
+	deck_path = tmp_path / "theme.djot"
+	deck_path.write_text("=== layout: one-panel\n# Centered title\n@body\n- Body\n", encoding="utf-8")
+	output_path = tmp_path / "theme.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	shapes = Presentation(output_path).slides[0].shapes
+	title = next(shape for shape in shapes if shape.has_text_frame and shape.text == "Centered title")
+	assert title.text_frame.paragraphs[0].alignment == PP_ALIGN.CENTER
+	assert any("gradFill" in shape.element.xml for shape in shapes)
+
+
+#============================================
+def test_title_only_theme_centers_its_single_title_both_ways(tmp_path: pathlib.Path) -> None:
+	"""Title-only questions keep centered native text instead of a top-left title box."""
+	deck_path = tmp_path / "question.djot"
+	deck_path.write_text("=== layout: title-only\n# What causes mutation?\n", encoding="utf-8")
+	output_path = tmp_path / "question.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	title = next(shape for shape in Presentation(output_path).slides[0].shapes
+		if shape.has_text_frame and shape.text == "What causes mutation?")
+	assert title.text_frame.vertical_anchor == MSO_ANCHOR.MIDDLE
+	assert title.text_frame.paragraphs[0].alignment == PP_ALIGN.CENTER
 
 
 #============================================
@@ -432,6 +478,24 @@ def test_gallery_images_keep_descriptions_and_are_not_full_slide(tmp_path: pathl
 	]
 	assert all(picture.width < presentation.slide_width and picture.height < presentation.slide_height
 		for picture in pictures)
+
+
+#============================================
+def test_one_panel_can_normalize_multiple_legitimate_images_natively(tmp_path: pathlib.Path) -> None:
+	"""Standard content can retain several source images without a composite raster."""
+	write_png(tmp_path / "one.png")
+	write_png(tmp_path / "two.png")
+	deck_path = tmp_path / "native-images.djot"
+	deck_path.write_text("=== layout: one-panel\n# Native images\n@body\n"
+		"![First component](one.png)\n![Second component](two.png)\n", encoding="utf-8")
+	output_path = tmp_path / "native-images.pptx"
+	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	pictures = [shape for shape in Presentation(output_path).slides[0].shapes
+		if shape.shape_type == MSO_SHAPE_TYPE.PICTURE]
+	assert [picture.element.nvPicPr.cNvPr.get("descr") for picture in pictures] == [
+		"First component", "Second component",
+	]
+	assert all(picture.width < Presentation(output_path).slide_width for picture in pictures)
 
 
 #============================================

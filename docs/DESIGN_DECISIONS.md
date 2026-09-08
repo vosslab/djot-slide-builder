@@ -258,10 +258,32 @@ output objects.
 **Why.** A full-slide image loses editability, searchability, accessibility, and durable layout
 ownership.
 
-**Consequence.** Source features without an explicit native mapping fail with an actionable source
-diagnostic. Temporary visual renders may support QA but never enter canonical Djot or output.
+**Consequence.** Source features without an explicit native mapping remain visibly incomplete or
+fail with an actionable source diagnostic. Existing layouts should retain the same instructional
+text and genuine content images even when their arrangement changes; diagnostics accompany content
+rather than replace it. Import never substitutes a full-slide or composite render. Temporary visual
+renders may support QA but never enter canonical Djot or output.
 
-**Owner.** `slide_lib/layouts.py`, `slide_lib/native_export.py`, and their tests.
+**Owner.** `slide_lib/importers/djot_emitter.py`, `slide_lib/layouts.py`,
+`slide_lib/native_export.py`, and their tests.
+
+### The default theme normalizes lecture structure
+
+**Decision.** Apply one native, rule-based lecture theme to standard Djot layouts: a shallow
+blue-to-white top gradient, horizontally centered standard titles, consistent content margins, and
+native hierarchical list paragraphs with theme-owned bullet positions, text tab stops, and hanging
+indents at every supported outline level.
+
+**Why.** The legacy lecture decks establish useful common visual rules, but reproducing their
+individual quirks would weaken the consistent authoring system. Explicit presentation semantics let
+PPTX, ODP, and PDF share the same intended structure.
+
+**Consequence.** Wrapped list lines align with their paragraph text, not with the bullet. Nested
+levels have distinct positions and alternating bullet forms. Title-only, title-slide, and centered
+question layouts retain vertical centering where their teaching role calls for it. Exporters may
+translate these native semantics, but no slide-specific pixel matching overrides the theme.
+
+**Owner.** `slide_lib/pptx_theme.py`, `slide_lib/layouts.py`, and their native-export tests.
 
 ### Vertical root-body layouts use one author-visible block
 
@@ -385,27 +407,23 @@ overlay` remains deferred.
 
 ### Geometry-first import plans preserve editable intent
 
-**Decision.** Normalize trusted ODP/PPTX content into `SlidePlan` before emitting
-extended-Djot. The plan carries source geometry, title evidence, independent editable components,
-true table metadata, and a bounded spatial component only when the original relationship cannot be
-represented as separate native objects.
+**Decision.** Normalize trusted ODP/PPTX content into `SlidePlan` before emitting extended-Djot. The
+plan carries source geometry, title evidence, independent editable components, true table metadata,
+and positive visual-relation evidence used only to choose a native standard layout.
 
 **Why.** Existing teaching slides mix ordinary semantic content with diagrams whose labels depend on
-their original arrangement. Geometry-first planning preserves the editable majority while retaining
-the coupled minority as one traceable component. It allows new layouts and source shapes to gain a
-native owner without changing the import authority.
+their original arrangement. Geometry-first planning can identify those relationships without making
+the old rendering authoritative. A difficult slide is useful redesign evidence.
 
-**Consequence.** The importer chooses titles from bounded upper-lane geometry, assigns components
-atomically, and stops ambiguous arrangements for review. Ordinary text and pictures remain editable.
-When a coupled region is necessary, an ODP import uses the original ODP and a direct PPTX import uses
-the trusted input PPTX to supply a title-excluded, bounded raster crop; an exact full-slide crop
-fails before publication. Poppler's fixed 144 DPI rendering, decoded-image validation, source-slide
-provenance, digest-named assets, and staged all-or-nothing publication make the retained component
-reproducible and auditable.
+**Consequence.** The importer chooses titles from bounded upper-lane geometry and assigns native
+components atomically. Ambiguous or overlapping legacy geometry normalizes into one standard
+source-order panel with a review reason. Difficult slides retain their instructional text and
+genuine images through an existing registered layout; review diagnostics do not replace source
+content. Ordinary source pictures remain independent image assets; unsupported vectors stay
+explicit in diagnostics. No rendered source slide or composite region is an import product.
 
-**Owner.** `slide_lib/importers/slide_plan.py`,
-`slide_lib/importers/source_region_render.py`, `slide_lib/importers/pptx_to_djot.py`, and
-[PIPELINE.md](PIPELINE.md).
+**Owner.** `slide_lib/importers/slide_plan.py`, `slide_lib/importers/djot_emitter.py`,
+`slide_lib/importers/pptx_to_djot.py`, and [PIPELINE.md](PIPELINE.md).
 
 ### Source table metadata controls native tables
 
@@ -452,9 +470,10 @@ footprint and may recognize only positive, bounded relation classes. A narrow co
 picture-inset pair stays as direct editable objects in `two-panels`, with exact provenance and one
 explicit permission. Caption pairing is one shared positive relation, grouped before topology and
 reusing the existing `two-plus-one` and footer permission. Adaptive vertical image flow reserves text
-at 28 through 14 CSS px, then scales every image uniformly. A private source crop must remain
-bounded, protect a selected title, and retain only coupled source members; global or crop exceptions
-are not a routing mechanism. Ambiguous arrangements remain editable components or stop for review.
+at 28 through 14 CSS px, then scales every image uniformly. Visual relations retain source
+membership only long enough to normalize it into standard native components; no private render or
+geometry exception is a routing mechanism. Ambiguous arrangements become a native source-order
+panel with review evidence.
 Geometry, heading relations, topology, and Djot emission symbols are imported from their owning
 modules. Slide planning and conversion consume those owners directly and do not re-export
 compatibility facades.
@@ -471,11 +490,10 @@ that deck's local `assets/` directory.
 becoming unreviewed source dependencies.
 
 **Consequence.** Missing, unsafe, or symlinked asset references stop publication. The staged importer
-prunes unreachable files before its atomic publication step; future component owners can replace a
-raster asset without changing this containment rule.
+prunes unreachable files before its atomic publication step. Published assets are genuine imported
+content rather than rendered reconstructions of source layout.
 
-**Owner.** `slide_lib/importers/pptx_to_djot.py` and
-`slide_lib/importers/source_region_render.py`.
+**Owner.** `slide_lib/importers/pptx_to_djot.py`.
 
 ### Djot is the editable source
 

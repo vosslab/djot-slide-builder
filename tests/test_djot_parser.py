@@ -10,6 +10,7 @@ import pytest
 import slide_lib.djot_blocks
 import slide_lib.djot_errors
 import slide_lib.djot_parser
+import slide_lib.layouts
 import slide_lib.native_model
 
 
@@ -177,3 +178,18 @@ def test_list_boundaries_and_dash_table_rows_remain_distinct(tmp_path: pathlib.P
 	assert isinstance(parsed.blocks[0], slide_lib.native_model.ListBlock)
 	assert (isinstance(parsed.blocks[1], slide_lib.native_model.Table) and
 		parsed.blocks[1].headers != ())
+
+
+#============================================
+def test_adjacent_nested_list_items_retain_their_semantic_tree(tmp_path: pathlib.Path) -> None:
+	"""Indentation alone preserves ordinary Djot list hierarchy."""
+	parsed = slide_lib.djot_blocks.parse_blocks(tmp_path / "nested.djot",
+		"- Parent\n  - Child\n    - Grandchild\n- Sibling\n")
+	root = parsed.blocks[0]
+	child = root.items[0].children[0]
+	grandchild = child.items[0].children[0]
+	assert isinstance(root, slide_lib.native_model.ListBlock)
+	assert (slide_lib.layouts.inline_text(root.items[0].inlines),
+		slide_lib.layouts.inline_text(child.items[0].inlines),
+		slide_lib.layouts.inline_text(grandchild.items[0].inlines)) == (
+		"Parent", "Child", "Grandchild")

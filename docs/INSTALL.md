@@ -8,7 +8,7 @@ PDF presentations. It also imports trusted existing ODP or PPTX into extended-Dj
 - macOS with Homebrew.
 - Python 3.12; run repository Python commands through `source source_me.sh && python3`.
 - LibreOffice Impress for ODP input and the editable PPTX -> ODP -> PDF conversion chain.
-- Poppler, including `pdftoppm`, for bounded source-region assets during geometry-first import.
+- Poppler, including `pdfinfo`, for native end-to-end PDF verification.
 - The packages in `pip_requirements.txt`.
 - Jotdown 0.10.0 on `PATH` for strict-Djot source acceptance. `source_me.sh` adds the conventional
   Cargo bin directory when it exists.

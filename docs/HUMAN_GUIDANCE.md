@@ -31,6 +31,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Give every slide exactly one explicit layout. Keep `-` as ordinary list syntax and use named
   `@<slot>` directives for layout structure.
 - Preserve text, lists, component images, links, layouts, and presenter notes as native objects.
+- Use one consistent, rule-based Djot theme rather than preserving slide-specific quirks. Use the
+  old lecture decks only as visual guidance: a shallow blue-to-white top band, centered standard
+  titles, sensible margins, and hierarchical bullets with hanging indents and aligned wraps.
+- Remove full-slide and large composite screenshot substitution from import and production. Keep
+  genuine source figures, photographs, diagrams, and intentional screenshots as normal images.
+- An imperfect native reconstruction is useful diagnostic information. Normalize hard legacy slides
+  into standard Djot layouts, leave limitations visible, and simplify or redesign them rather than
+  photographing the old rendering.
+- Simplification is the overall goal. Present the same instructional content through an existing
+  Djot layout whenever possible instead of preserving the original slide composition.
 - Treat every full-slide raster image or raster fallback in generated PPTX, ODP, or PDF production
   as a failed product result. A browser is not a normal build dependency.
 - Use the heavily edited `md2pptx` clone for native-object implementation ideas while retaining

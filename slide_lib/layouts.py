@@ -18,6 +18,7 @@ import slide_lib.native_model
 import slide_lib.layout_validation
 import slide_lib.editable_text
 import slide_lib.pptx_animation
+import slide_lib.pptx_theme
 
 
 PX = 9525
@@ -217,9 +218,12 @@ def body_parts(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[list[s
 
 #============================================
 def wrapped_line_count(inlines: tuple[slide_lib.native_model.Inline, ...], size: float, width: float,
-		level: int = 0) -> int:
+		level: int = 0, list_item: bool = False) -> int:
 	"""Estimate wrapped editable text lines conservatively."""
-	available_width = max(width - level * size * 1.43, size * 3)
+	if list_item and level >= len(slide_lib.pptx_theme.LIST_LEVEL_STYLES):
+		raise LayoutError(f"list nesting exceeds the {len(slide_lib.pptx_theme.LIST_LEVEL_STYLES)} native theme levels")
+	text_inset = slide_lib.pptx_theme.LIST_LEVEL_STYLES[level].text_position if list_item else 0.0
+	available_width = max(width - text_inset, size * 3)
 	characters_per_line = max(int(available_width / (size * 0.54)), 1)
 	words = inline_text(inlines).split()
 	if not words:
@@ -237,8 +241,9 @@ def wrapped_line_count(inlines: tuple[slide_lib.native_model.Inline, ...], size:
 #============================================
 def estimate_items_height(items: list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], size: float, width: float) -> float:
 	"""Estimate native paragraph height in CSS pixels."""
-	return sum(wrapped_line_count(inlines, size, width, level) * size * BODY_LINE_HEIGHT +
-		size * LIST_ITEM_SPACE_EM for inlines, level, _, _, _ in items)
+	return sum(wrapped_line_count(inlines, size, width, level, not paragraph_only) *
+		size * BODY_LINE_HEIGHT + size * LIST_ITEM_SPACE_EM
+		for inlines, level, _ordered, paragraph_only, _start in items)
 
 
 #============================================
@@ -321,25 +326,23 @@ def write_items(frame: object, items: list[tuple[tuple[slide_lib.native_model.In
 		paragraph.level = level
 		paragraph.space_after = Pt(css_px_to_pt(size * LIST_ITEM_SPACE_EM))
 		paragraph.line_spacing = BODY_LINE_HEIGHT
-		bullet = OxmlElement("a:buNone" if paragraph_only else
-			"a:buAutoNum" if ordered else "a:buChar")
-		if ordered:
-			bullet.set("type", "arabicPeriod")
-			bullet.set("startAt", str(start))
-		elif not paragraph_only:
-			bullet.set("char", "\u2022")
-		paragraph._p.get_or_add_pPr().insert(0, bullet)
+		try:
+			slide_lib.pptx_theme.apply_list_theme(paragraph, level, ordered, paragraph_only, start)
+		except ValueError as error:
+			raise LayoutError(str(error)) from error
 		add_inline_runs(paragraph, inlines, size)
 
 
 #============================================
 def add_background(slide: object) -> None:
-	"""Write the white canvas and native blue accent rule."""
+	"""Write the white canvas and shallow native blue-to-white theme band."""
 	slide.background.fill.solid()
 	slide.background.fill.fore_color.rgb = WHITE
-	accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, px(0), px(0), px(SLIDE_WIDTH), px(10))
+	accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, px(0), px(0),
+		px(SLIDE_WIDTH), px(slide_lib.pptx_theme.TOP_BAND_HEIGHT))
 	accent.fill.solid()
 	accent.fill.fore_color.rgb = ACCENT
+	slide_lib.pptx_theme.apply_top_band_gradient(accent)
 	accent.line.fill.background()
 
 
@@ -458,6 +461,7 @@ def title_and_content_top(slide: object, source: slide_lib.native_model.Slide,
 	height = title_height(title, size, RIGHT - LEFT)
 	frame = add_textbox(slide, LEFT, TITLE_TOP, RIGHT - LEFT, height)
 	paragraph = frame.paragraphs[0]
+	paragraph.alignment = PP_ALIGN.CENTER
 	add_inline_runs(paragraph, title.inlines, size)
 	for run in paragraph.runs:
 		run.font.bold = True
@@ -542,13 +546,21 @@ def content_cell_rectangles(source: slide_lib.native_model.Slide, spec: LayoutSp
 	left, top, width, height = content
 	bottom = next(cell for cell in source.cells if cell.name == "bottom")
 	_headings, items, _images, tables = body_parts(bottom.blocks)
-	need = estimate_items_height(items, MIN_READABLE_BODY_SIZE, width) if items else 0.0
+	minimum_need = estimate_items_height(items, MIN_READABLE_BODY_SIZE, width) if items else 0.0
+	preferred_need = estimate_items_height(items, 26.0, width) if items else 0.0
 	if tables:
-		need = max(need, estimate_table_height(tables[0], MIN_READABLE_BODY_SIZE, width))
-	bottom_height = max((height - GRID_GUTTER) / 2, need)
+		minimum_need = max(minimum_need, estimate_table_height(tables[0], MIN_READABLE_BODY_SIZE, width))
+		preferred_need = max(preferred_need, estimate_table_height(tables[0], 22.0, width))
+	top_width = (width - CELL_GUTTER) / 2
+	top_need = max(estimate_items_height(body_parts(next(cell for cell in source.cells
+		if cell.name == name).blocks)[1], MIN_READABLE_BODY_SIZE, top_width) for name in spec.slot_names[:2])
+	bottom_height = max(min(preferred_need, height - GRID_GUTTER - top_need), minimum_need)
 	top_height = height - GRID_GUTTER - bottom_height
 	top_rectangles = grid_rectangles(left, top, width, top_height, 2, 1)
 	return [*top_rectangles, (left, top + top_height + GRID_GUTTER, width, bottom_height)]
+
+
+#============================================
 def readability_failure(source: slide_lib.native_model.Slide, spec: LayoutSpec,
 		content: tuple[float, float, float, float]) -> tuple[str, slide_lib.native_model.SourceLocation] | None:
 	"""Return the first region that cannot retain the minimum readable body type."""
@@ -624,6 +636,8 @@ def write_planned_title(slide: object, title: slide_lib.native_model.Heading,
 	left, top, width, height = plan.title_rectangle
 	frame = add_textbox(slide, left, top, width, height, vertical_text=plan.vertical_title)
 	paragraph = frame.paragraphs[0]
+	if not plan.vertical_title:
+		paragraph.alignment = PP_ALIGN.CENTER
 	add_inline_runs(paragraph, title.inlines, plan.title_size)
 	for run in paragraph.runs:
 		run.font.bold = True
@@ -745,9 +759,8 @@ def build_title_slide(slide: object, source: slide_lib.native_model.Slide, deck:
 		slide_lib.pptx_animation.register_text_reveal(slide, frame, heading)
 #============================================
 def build_title_only(slide: object, source: slide_lib.native_model.Slide, deck: slide_lib.native_model.Deck, spec: LayoutSpec) -> None:
-	"""Render only the native title region."""
-	title = body_parts(source.blocks)[0][0]
-	title_and_content_top(slide, source, title)
+	"""Render one native title centered horizontally and vertically."""
+	build_title_slide(slide, source, deck, spec)
 #============================================
 def build_centered_text(slide: object, source: slide_lib.native_model.Slide, deck: slide_lib.native_model.Deck, spec: LayoutSpec) -> None:
 	"""Render centered editable title and optional subtitle."""

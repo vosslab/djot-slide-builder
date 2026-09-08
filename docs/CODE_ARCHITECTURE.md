@@ -25,6 +25,8 @@ source. Trusted ODP and PPTX files enter only through the one-time import workfl
 - [../slide_lib/layouts.py](../slide_lib/layouts.py) owns the native layout registry, capacity
   preflight, and editable PPTX object construction. It uses `python-pptx`, Pillow, and the text and
   animation helpers beside it.
+- [../slide_lib/pptx_theme.py](../slide_lib/pptx_theme.py) owns the native top-band gradient and
+  level-specific list bullet, tab-stop, and hanging-indent semantics shared by standard slides.
 - [../slide_lib/layout_validation.py](../slide_lib/layout_validation.py) is the semantic gate between
   typed authored blocks and a layout: it rejects unsupported or unplaceable source with its
   canonical source location before native objects are constructed.
@@ -44,9 +46,9 @@ source. Trusted ODP and PPTX files enter only through the one-time import workfl
 - [../slide_lib/importers/slide_plan.py](../slide_lib/importers/slide_plan.py) owns the
   deterministic, geometry-first `SlidePlan`; it uses
   [../slide_lib/importers/visual_relations.py](../slide_lib/importers/visual_relations.py) only for
-  conservative, bounded exceptional visual relations. When a coupled visual cannot remain as
-  separate editable objects, [../slide_lib/importers/source_region_render.py](../slide_lib/importers/source_region_render.py)
-  validates the request and renders a bounded, non-full-slide PNG region.
+  conservative visual-relation evidence. The emitter normalizes difficult spatial compositions into
+  standard native source-order panels and records review reasons; it never renders source layout as
+  substitute content.
 - [../build_slides.sh](../build_slides.sh) is a thin convenience wrapper that builds every Djot
   deck below one supplied folder.
 
@@ -76,10 +78,10 @@ trusted ODP or PPTX
   -> validated .djot source and local assets
 ```
 
-The detailed ownership and conversion boundary are documented in
-[PIPELINE.md](PIPELINE.md). In particular, imported source regions may become bounded component
-images when the importer cannot retain a tightly coupled visual as separate editable objects; the
-pipeline does not use a full-slide raster fallback.
+The detailed ownership and conversion boundary are documented in [PIPELINE.md](PIPELINE.md).
+Imported source figures remain ordinary image assets, while surrounding text and structure become
+native Djot. Unsupported relationships remain visible in source or diagnostics rather than becoming
+full-slide or composite raster fallbacks.
 
 ## Testing and verification
 

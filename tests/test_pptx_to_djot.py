@@ -198,7 +198,7 @@ def test_complete_placeholder_list_and_callout_emit_multiple_choice() -> None:
 		source_model.SlideData(4, False, (), (), (), (), ()), plan, visible_page_index=3,
 	)
 
-	lines, layout, _reasons = djot_emitter.render_planned_slide(planned, {}, False)
+	lines, layout, _reasons = djot_emitter.render_planned_slide(planned, False)
 
 	assert layout == "multiple-choice"
 	assert "@question" in lines and "@answer" in lines
@@ -301,8 +301,8 @@ def test_genuine_vertical_lane_uses_one_ordered_flow() -> None:
 
 
 #============================================
-def test_planned_slots_emit_named_cells_without_duplicate_coupled_content() -> None:
-	"""The emitter consumes planner slots and reserves coupled labels for one crop."""
+def test_planned_coupled_content_normalizes_to_native_flow() -> None:
+	"""The emitter keeps coupled labels as native content in a standard cell."""
 	title = text_region(0.05, 0.04, 0.90, 0.14, "Editable title", title_identity=True)
 	left = text_region(0.05, 0.30, 0.35, 0.70, "Native left")
 	annotation = text_region(0.65, 0.42, 0.72, 0.48, "Diagram label")
@@ -311,7 +311,7 @@ def test_planned_slots_emit_named_cells_without_duplicate_coupled_content() -> N
 	)
 	content = slide_plan.ContentRegionPlan(
 		"content-region-1", geometry.NormalizedBounds(0.45, 0.25, 0.92, 0.82),
-		(annotation,), (image,), (91,),
+		(annotation,), (image,),
 	)
 	plan = slide_plan.SlidePlan(
 		slide_plan.TitleDecision(title, "test"),
@@ -321,17 +321,16 @@ def test_planned_slots_emit_named_cells_without_duplicate_coupled_content() -> N
 	data = source_model.SlideData(1, False, (), (), (), (), ())
 	planned = djot_emitter.PlannedSlide(data, plan, (title, left, annotation), (image,), 1)
 
-	lines, layout, _reasons = djot_emitter.render_planned_slide(
-		planned, {(1, "content-region-1"): "assets/deck/source_region.png"}, False,
-	)
+	lines, layout, reasons = djot_emitter.render_planned_slide(planned, False)
 
 	assert layout == "two-panels"
-	assert all("Diagram label" not in line for line in lines)
+	assert "- Diagram label" in lines
+	assert any("normalized" in reason for reason in reasons)
 
 
 #============================================
-def test_planned_content_requires_its_renderer_asset() -> None:
-	"""A crop plan fails before an emitter can silently flatten its diagram labels."""
+def test_planned_content_without_native_members_emits_review_placeholder() -> None:
+	"""An unsupported legacy relationship remains visible without a raster substitute."""
 	content = slide_plan.ContentRegionPlan(
 		"content-region-1", geometry.NormalizedBounds(0.20, 0.20, 0.80, 0.80), (), (),
 	)
@@ -343,8 +342,9 @@ def test_planned_content_requires_its_renderer_asset() -> None:
 		source_model.SlideData(1, False, (), (), (), (), ()), plan, visible_page_index=1,
 	)
 
-	with pytest.raises(ValueError, match="required renderer asset"):
-		djot_emitter.render_planned_slide(planned, {}, False)
+	lines, layout, reasons = djot_emitter.render_planned_slide(planned, False)
+	assert layout == "one-panel" and any("Native reconstruction needed" in line for line in lines)
+	assert any("normalized" in reason for reason in reasons)
 
 
 #============================================
@@ -369,11 +369,11 @@ def test_separable_images_emit_once_as_atomic_components() -> None:
 	)
 	planned = djot_emitter.PlannedSlide(data, plan, visible_page_index=1)
 
-	components, _reasons = djot_emitter.emit_components(planned, None)
+	components, _reasons = djot_emitter.emit_components(planned)
 	assert tuple(component.source_image_ids for component in components) == (
 		((11, "assets/shared.png"),), ((12, "assets/shared.png"),),
 	)
-	assert djot_emitter.render_planned_slide(planned, {}, False)[1] == "two-panels"
+	assert djot_emitter.render_planned_slide(planned, False)[1] == "two-panels"
 
 
 #============================================
@@ -397,7 +397,7 @@ def test_table_projection_keeps_blank_cells_editable() -> None:
 		plan, visible_page_index=1,
 	)
 
-	lines, _layout, reasons = djot_emitter.render_planned_slide(planned, {}, False)
+	lines, _layout, reasons = djot_emitter.render_planned_slide(planned, False)
 
 	assert "| Header |  |" in lines
 	assert reasons == []
@@ -421,12 +421,12 @@ def test_merged_table_requires_review_instead_of_flattening() -> None:
 	)
 
 	with pytest.raises(ValueError, match="source table requires review"):
-		djot_emitter.render_planned_slide(planned, {}, False)
+		djot_emitter.render_planned_slide(planned, False)
 
 
 #============================================
-def test_planner_body_and_coupled_component_receive_separate_cells() -> None:
-	"""A normal planner body plus diagram crop is emitted as two bounded components."""
+def test_planner_body_and_coupled_component_receive_native_cells() -> None:
+	"""A normal body plus legacy diagram content emits as native standard cells."""
 	title = text_region(0.05, 0.04, 0.90, 0.14, "Title", title_identity=True)
 	prose = text_region(0.05, 0.30, 0.35, 0.75, "Editable prose")
 	first = text_region(0.55, 0.35, 0.62, 0.42, "Label one", source_kind="auto-shape")
@@ -435,16 +435,16 @@ def test_planner_body_and_coupled_component_receive_separate_cells() -> None:
 		"assets/diagram.png", geometry.NormalizedBounds(0.45, 0.25, 0.92, 0.82),
 	)
 	plan = slide_plan.plan_slide((title, prose, first, second), (image,))
-	planned = djot_emitter.PlannedSlide(
-		source_model.SlideData(1, False, (), (), (), (), ()), plan, visible_page_index=1,
-	)
+	data = source_model.SlideData(1, False, (), (), (
+		source_model.ImageAsset(0, 0, 1, 1, "assets/diagram.png", "Diagram"),
+	), (), ())
+	planned = djot_emitter.PlannedSlide(data, plan, visible_page_index=1)
 
-	lines, layout, _reasons = djot_emitter.render_planned_slide(
-		planned, {(1, "content-region-1"): "assets/deck/crop.png"}, False,
-	)
+	lines, layout, reasons = djot_emitter.render_planned_slide(planned, False)
 
-	assert "- Editable prose" in lines
-	assert "![Coupled source region](assets/deck/crop.png)" in lines
+	assert layout == "two-panels" and "- Editable prose" in lines
+	assert "- Label one" in lines and "![Diagram](assets/diagram.png)" in lines
+	assert any("normalized" in reason for reason in reasons)
 
 
 #============================================
@@ -470,15 +470,15 @@ def test_publish_rollback_removes_only_just_published_assets(
 
 #============================================
 def test_pruning_keeps_only_generated_djot_reachable_media(tmp_path: pathlib.Path) -> None:
-	"""Consumed source pictures are not published while shared media and crops remain."""
+	"""Only ordinary source images reachable from generated Djot are published."""
 	staging_assets = tmp_path / "staging-assets"
 	staging_assets.mkdir()
-	for name in ("image_001.png", "shared.png", "source_region_hash.png"):
+	for name in ("image_001.png", "shared.png", "figure.png"):
 		(staging_assets / name).write_bytes(b"media")
 	staging_djot = tmp_path / "deck.djot"
 	staging_djot.write_text(
 		"=== layout: two-panels\n\n@left\n![Shared](assets/deck/shared.png)\n\n"
-		"@right\n![Coupled source region](assets/deck/source_region_hash.png)\n",
+		"@right\n![Figure](assets/deck/figure.png)\n",
 		encoding="utf-8",
 	)
 
@@ -518,38 +518,6 @@ def test_symlinked_assets_parent_is_rejected_without_clobbering(tmp_path: pathli
 		pptx_to_djot.validate_output_path(tmp_path / "deck.djot")
 
 	assert list(outside.iterdir()) == []
-
-
-#============================================
-@pytest.mark.parametrize(
-	"bounds",
-	[
-		((0.05, 0.20, 0.40, 0.90), (0.55, 0.20, 0.85, 0.55), (0.55, 0.40, 0.85, 0.80)),
-	],
-)
-def test_component_layout_rejects_ambiguous_peer_or_grid_geometry(
-	bounds: tuple[tuple[float, float, float, float], ...],
-) -> None:
-	"""Ambiguous source geometry reports its source slide and visible page."""
-	regions = tuple(slide_plan.SourceTextRegion(
-		((0, (source_model.TextRun("item"),)),), geometry.NormalizedBounds(*item), False, 0.0,
-		source_ordinal=index,
-	) for index, item in enumerate(bounds))
-	plan = slide_plan.SlidePlan(
-		slide_plan.TitleDecision(None, "test"),
-		tuple(slide_plan.SlotPlan(f"item-{index}", (region,))
-			for index, region in enumerate(regions)),
-	)
-	planned = djot_emitter.PlannedSlide(
-		source_model.SlideData(7, False, (), (), (), (), ()), plan,
-		visible_page_index=3,
-	)
-
-	with pytest.raises(
-		ValueError,
-		match=r"source slide 7 \(visible page 3\): overlapping direct components",
-	):
-		djot_emitter.render_planned_slide(planned, {}, False)
 
 
 #============================================

@@ -38,10 +38,11 @@ editable-object pipeline.
 - `blue overlay` is a recognized, explicit deferral rather than a silent no-op.
 - The explicit Djot native-layout E2E passed through editable PPTX, LibreOffice ODP, and PDF across
   the registry, including gallery images and distinct editable multiple-choice shapes/final state.
-- The one-time all-eight imported-corpus acceptance passed: 378 source slides, 336 visible slides, 42
-  hidden slides, 167 reachable assets, 72 bounded source regions, 96 review slides, and 186 image
-  occurrences. A second private regeneration independently reproduced the generated corpus.
-- One-time native acceptance passed: strict lint covered 8 decks, 336 visible slides, and 186 image
+- The native-only all-eight imported-corpus acceptance passed: 378 source slides, 336 visible slides,
+  42 hidden slides, 150 reachable genuine source-image assets, 72 native normalization relations,
+  113 review slides, and 185 image occurrences. No rendered source-slide or composite substitute
+  remains.
+- One-time native acceptance passed: strict lint covered 8 decks, 336 visible slides, and 185 image
   occurrences; `build_slides.sh genetics`, the Djot native-layout E2E, and eight sequential matching
   PPTX/ODP/PDF exports passed. Text and direct images remained editable, and Lecture 02e retained its
   native table.

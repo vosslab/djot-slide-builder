@@ -69,7 +69,7 @@ Install the declared macOS tools from the repository root, then repeat the build
 brew bundle
 ```
 
-The dependency bundle installs LibreOffice and Poppler. A conversion timeout, nonzero conversion,
+The dependency bundle installs LibreOffice and Poppler for PDF verification. A conversion timeout, nonzero conversion,
 or absent generated artifact remains a failed Office conversion; preserve its displayed diagnostic
 and retry only after resolving the local LibreOffice condition.
 

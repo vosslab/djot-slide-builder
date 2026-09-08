@@ -63,7 +63,9 @@
 
 @body
 
-![Coupled source region](assets/lect02d-dna_structure_overview/source_region_5800f45e4919acd5001540e786a469f8b869bf626199c7a29da590c0852dbe1e.png)
+![Slide image 3](assets/lect02d-dna_structure_overview/image_003.jpg)
+
+- “Purines = 2 rings” (try saying it with a funny accent)
 
 === layout: title-only
 
@@ -74,7 +76,9 @@
 
 @body
 
-![Coupled source region](assets/lect02d-dna_structure_overview/source_region_81cfe39e91f2114ab8f6b1891e5a84db7ce0b4969e63847eee18752adc9b9115.png)
+![Slide image 4](assets/lect02d-dna_structure_overview/image_004.jpg)
+
+- pYrimidines \: cYtosine, thYmine, uracYl (!)
 
 === layout: title-only
 
@@ -109,7 +113,7 @@
 
 === layout: two-panels
 
-# Nucleotides join to form a DNA or an RNA chain
+# Nucleotides join to forma DNA or an RNA chain
 
 @left
 
@@ -137,7 +141,10 @@
 
 @body
 
-![Coupled source region](assets/lect02d-dna_structure_overview/source_region_dabaec29ff7dec2e945919315568dcb970c69fcdc78381682f88cecf6ff26d64.png)
+![Slide image 9](assets/lect02d-dna_structure_overview/image_009.jpg)
+
+- Standard base pairs
+- 1 base pair Mr = \~640
 
 === layout: two-panels
 
@@ -187,7 +194,7 @@
 
 @right
 
-- Figure 1.6: Molecular structure of the DNA double helix in the standard “B form.”
+- Figure 1.6\: Molecular structure of the DNA double helix in the standard “B form.”
 
 === layout: one-panel
 
@@ -208,7 +215,9 @@
 
 @body
 
-![Coupled source region](assets/lect02d-dna_structure_overview/source_region_dddf044953e76eeb53045bee0fb13812acd45807b31ffed7dbe981de2c61325d.png)
+![Slide image 16](assets/lect02d-dna_structure_overview/image_016.jpg)
+
+- Anti-parallel
 
 === layout: two-panels
 
@@ -260,7 +269,7 @@
 
 @answer
 
-Answer: D
+Answer\: D
 
 === layout: multiple-choice
 
@@ -276,7 +285,7 @@ Answer: D
 
 @answer
 
-Answer: D
+Answer\: D
 
 === layout: multiple-choice
 
@@ -292,7 +301,7 @@ Answer: D
 
 @answer
 
-Answer: B
+Answer\: B
 
 3&prime;-`TACG`-5&prime;
 
@@ -303,7 +312,7 @@ Answer: B
 4. Which one of the following sequences is complimentary to the sequence
 
 - 3&prime;-`CAA,AGG,T`-5&prime;?
-  - Hint: pay attention to the 5&prime; and 3&prime; directions!
+  - Hint\: pay attention to the 5&prime; and 3&prime; directions!
   - A. 5&prime;-`GTT,TCC,A`-3&prime;
   - B. 5&prime;-`CAA,AGG,T`-3&prime;
   - C. 5&prime;-`ACC,TTT,G`-3&prime;
@@ -312,7 +321,7 @@ Answer: B
 
 @answer
 
-Answer: A
+Answer\: A
 
 === layout: title-only
 

@@ -8,6 +8,7 @@ import re
 # local repo modules
 import slide_lib.layouts
 import slide_lib.importers.geometry as geometry
+import slide_lib.importers.native_normalization as native_normalization
 import slide_lib.importers.topology as topology
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
@@ -153,24 +154,27 @@ def multiple_choice_question_lines(region: slide_plan.SourceTextRegion) -> list[
 
 
 #============================================
-def render_multiple_choice(
-	planned: PlannedSlide,
-	assets: dict[tuple[int, str], str],
-) -> tuple[list[str], str, list[str]]:
+def render_multiple_choice(planned: PlannedSlide) -> tuple[list[str], str, list[str]]:
 	"""Emit one complete structural question without inferring any animation."""
 	if planned.plan is None or planned.plan.multiple_choice is None:
 		raise ValueError("multiple-choice emission requires a multiple-choice slide plan")
 	choice = planned.plan.multiple_choice
 	lines = ["=== layout: multiple-choice", "", "@question", ""]
+	reasons = list(planned.data.review_reasons)
 	visual = choice.question_visual_region
 	if visual is not None:
-		asset = assets.get((planned.data.source_index, visual.asset_key))
-		if not asset:
-			raise ValueError(f"required renderer asset is missing for {visual.asset_key}")
-		lines.extend((f"![Question visual region]({asset})", ""))
+		image_lines, image_reasons = slot_image_lines(visual.image_regions, planned.data.images)
+		reasons.extend(image_reasons)
+		for image_line in image_lines:
+			lines.extend((image_line, ""))
+		for region in visual.text_regions:
+			lines.extend((*region_lines((region,)), ""))
+		reasons.append(
+			f"normalized {visual.classification_reason} into native source-order content"
+		)
 	elif choice.image is not None:
-		image_lines, reasons = slot_image_lines((choice.image,), planned.data.images)
-		if reasons:
+		image_lines, image_reasons = slot_image_lines((choice.image,), planned.data.images)
+		if image_reasons:
 			raise ValueError("multiple-choice figure requires a native raster asset")
 		lines.extend((*image_lines, ""))
 	lines.extend(multiple_choice_question_lines(choice.question))
@@ -180,7 +184,7 @@ def render_multiple_choice(
 		if index:
 			lines.append("")
 		lines.append(text)
-	return lines, "multiple-choice", list(planned.data.review_reasons)
+	return lines, "multiple-choice", reasons
 
 
 #============================================
@@ -254,7 +258,6 @@ def shared_footer_sources(
 #============================================
 def emit_components(
 	planned: PlannedSlide,
-	content_asset: str | None,
 ) -> tuple[list[EmissionComponent], list[str]]:
 	"""Project each planned component without combining text, tables, and images."""
 	if planned.plan is None:
@@ -329,20 +332,52 @@ def emit_components(
 						member_footprints=(region.bounds,) if caption is None else (region.bounds, caption.bounds),
 						classification_reason=slot.relation_id,
 					))
-	if content_asset is not None:
-		content = planned.plan.content_region
-		if content is None:
-			raise ValueError("content asset requires a coupled content-region plan")
+	content = planned.plan.content_region
+	if content is not None:
 		local_heading = content.local_heading
-		lines = (f"![Coupled source region]({content_asset})",) if local_heading is None else (
-			f"## {' '.join(render_runs(runs) for _level, runs in local_heading.paragraphs)}", "",
-			f"![Coupled source region]({content_asset})",
+		content_text_regions = tuple(region for region in content.text_regions if region is not local_heading)
+		positioned_label_count = len(content_text_regions)
+		if positioned_label_count > native_normalization.MAX_POSITIONED_LABELS:
+			content_text_regions = ()
+			reasons.append(f"{positioned_label_count} positioned labels require native redesign")
+		flow_items: list[tuple[geometry.NormalizedBounds, int, str, object]] = []
+		for region in content_text_regions:
+			flow_items.append((region.bounds, region.source_ordinal, "text", region))
+		for region in content.image_regions:
+			flow_items.append((region.bounds, region.source_ordinal, "image", region))
+		flow_items.sort(key=lambda item: (item[1], item[0].top, item[0].left))
+		lines: list[str] = ([] if local_heading is None else
+			[f"## {' '.join(render_runs(runs) for _level, runs in local_heading.paragraphs)}"])
+		image_references: list[str] = []
+		source_image_ids: list[tuple[int, str]] = []
+		for _bounds, _ordinal, kind, item in flow_items:
+			if lines:
+				lines.append("")
+			if kind == "text":
+				lines.extend(region_lines((item,)))
+				continue
+			image_lines, image_reasons = slot_image_lines((item,), planned.data.images)
+			reasons.extend(image_reasons)
+			if image_lines:
+				lines.extend(image_lines)
+				image_references.append(item.asset_reference)
+				source_image_ids.append((item.source_ordinal, item.asset_reference))
+		if positioned_label_count > native_normalization.MAX_POSITIONED_LABELS:
+			if lines:
+				lines.append("")
+			lines.append(f"Native reconstruction needed: {positioned_label_count} positioned diagram labels.")
+		if not lines:
+			lines.append(f"Native reconstruction needed: {content.classification_reason}.")
+		reasons.append(
+			f"normalized {content.classification_reason} into native source-order content"
 		)
 		components.append(EmissionComponent(
-			content.bounds if local_heading is None else content.bounds.union(local_heading.bounds), lines, "flow",
-			source_kind="content-region", source_ordinals=tuple(region.source_ordinal for region in (*content.text_regions,)
-				if region is not local_heading) + (() if local_heading is None else (local_heading.source_ordinal,)),
-			member_footprints=tuple(region.bounds for region in (*content.image_regions, *content.text_regions)) +
+			content.bounds if local_heading is None else content.bounds.union(local_heading.bounds),
+			tuple(lines), "flow", tuple(image_references), tuple(source_image_ids),
+			source_kind="native-reconstruction",
+			source_ordinals=(() if local_heading is None else (local_heading.source_ordinal,)) +
+				tuple(item[1] for item in flow_items),
+			member_footprints=tuple(region.bounds for region in (*content.image_regions, *content_text_regions)) +
 				(() if local_heading is None else (local_heading.bounds,)),
 			classification_reason=content.kind,
 		))
@@ -715,7 +750,7 @@ def coarse_inset_key_layout(components: list[EmissionComponent]) -> bool:
 		return False
 	body = next((item for item in components if item.coarse_text_container), None)
 	key = next((item for item in components if item is not body), None)
-	return body is not None and key is not None and key.source_kind == "content-region" and \
+	return body is not None and key is not None and key.source_kind == "native-reconstruction" and \
 		key.classification_reason == "styled-inset-key" and \
 		key.bounds.left >= .65 and key.bounds.width <= .25 and key.bounds.height <= .20 and \
 		body.bounds.left <= key.bounds.left and key.bounds.right <= body.bounds.right and \
@@ -783,7 +818,7 @@ def asymmetric_explanatory_pair_layout(components: list[EmissionComponent]) -> t
 def asymmetric_explanatory_pair(components: list[EmissionComponent]) -> bool:
 	"""Recognize only two direct, aligned textual components with asymmetric roles."""
 	if len(components) != 2 or any(item.kind != "text" or not any(line.strip() for line in item.lines) or
-		item.source_kind in {"table", "content-region"} or item.classification_reason or
+		item.source_kind in {"table", "native-reconstruction"} or item.classification_reason or
 		len(component_footprints(item)) != 1 for item in components):
 		return False
 	coarse = [item for item in components if item.coarse_text_container]
@@ -823,12 +858,9 @@ def contextualize_slide_error(planned: PlannedSlide, error: ValueError) -> Value
 	if str(error).startswith("source slide "):
 		return error
 	return ValueError(f"{source_slide_context(planned)}: {error}")
-
-
 #============================================
 def _render_planned_slide(
 	planned: PlannedSlide,
-	assets: dict[tuple[int, str], str],
 	is_first: bool,
 ) -> tuple[list[str], str, list[str]]:
 	"""Emit one geometry plan, never combining text and imagery in one cell."""
@@ -837,25 +869,13 @@ def _render_planned_slide(
 	data = planned.data
 	plan = planned.plan
 	if plan.multiple_choice is not None:
-		return render_multiple_choice(planned, assets)
+		return render_multiple_choice(planned)
 	reasons = list(data.review_reasons)
 	heading = []
 	if plan.title.region is not None:
 		heading = [f"# {' '.join(render_runs(runs) for _level, runs in plan.title.region.paragraphs)}"]
-	content_asset = slide_plan.require_region_asset(
-		plan.content_region,
-		None if plan.content_region is None or \
-			(data.source_index, plan.content_region.asset_key) not in assets else {
-			plan.content_region.asset_key: assets[(data.source_index, plan.content_region.asset_key)],
-		},
-	)
-	components, component_reasons = emit_components(planned, content_asset)
+	components, component_reasons = emit_components(planned)
 	reasons.extend(component_reasons)
-	if plan.content_region is not None and plan.content_region.protected_text_shape_ids:
-		reasons.append(
-			"protected source text shapes: " +
-			", ".join(str(item) for item in plan.content_region.protected_text_shape_ids),
-		)
 	if plan.review_reason:
 		reasons.append(plan.review_reason)
 	if not components:
@@ -867,21 +887,30 @@ def _render_planned_slide(
 		image_id for component in components for image_id in component.source_image_ids
 	]
 	emitted_ids = set(emitted_image_ids)
+	required_regions = tuple(image for slot in plan.slots for image in slot.image_regions) + (
+		() if plan.content_region is None else plan.content_region.image_regions
+	)
+	available_references = {image.asset_path for image in data.images}
 	required_ids = {
 		(image.source_ordinal, image.asset_reference)
-		for slot in plan.slots for image in slot.image_regions
+		for image in required_regions if image.asset_reference in available_references
 	}
 	if emitted_ids != required_ids or len(emitted_image_ids) != len(required_ids):
 		raise ValueError("did not preserve every outside picture exactly once")
 	if components_overlap(components):
-		raise ValueError("overlapping direct components require a coupled region or manual review")
+		reasons.append("normalized overlapping legacy components into one native source-order panel")
+		return native_normalization.one_panel_lines(heading, components), "one-panel", reasons
 	if is_first and heading and len(components) == 1 and components[0].kind == "text" and \
 		all(line.startswith("## ") for line in components[0].lines):
 		return ["=== layout: title-slide", "", *heading, "", *components[0].lines], "title-slide", reasons
 	if gallery_eligible(components):
 		return ["=== layout: gallery", "", *heading, "", "@gallery", "",
 			*(line for component in components for line in component.lines)], "gallery", reasons
-	layout, slots, order = component_layout(components)
+	try:
+		layout, slots, order = component_layout(components)
+	except ValueError as error:
+		reasons.append(f"normalized {error} into one native source-order panel")
+		return native_normalization.one_panel_lines(heading, components), "one-panel", reasons
 	lines = [f"=== layout: {layout}", "", *heading]
 	for index, slot in zip(order, slots, strict=True):
 		component = components[index]
@@ -892,12 +921,11 @@ def _render_planned_slide(
 #============================================
 def render_planned_slide(
 	planned: PlannedSlide,
-	assets: dict[tuple[int, str], str],
 	is_first: bool,
 ) -> tuple[list[str], str, list[str]]:
 	"""Emit one planned slide with source coordinates on every ValueError."""
 	try:
-		return _render_planned_slide(planned, assets, is_first)
+		return _render_planned_slide(planned, is_first)
 	except ValueError as error:
 		contextual_error = contextualize_slide_error(planned, error)
 		if contextual_error is error:
@@ -908,7 +936,6 @@ def render_planned_slide(
 #============================================
 def render_planned_djot(
 	planned_slides: list[PlannedSlide],
-	assets: dict[tuple[int, str], str],
 ) -> tuple[str, list[dict[str, object]]]:
 	"""Emit all visible planned slides and an auditable geometry import report."""
 	lines: list[str] = []
@@ -917,7 +944,7 @@ def render_planned_djot(
 		if lines:
 			lines.append("")
 		slide_lines, layout, reasons = render_planned_slide(
-			planned, assets, planned.visible_page_index == 1,
+			planned, planned.visible_page_index == 1,
 		)
 		lines.extend(slide_lines)
 		content = planned.plan.content_region if planned.plan else None
@@ -931,12 +958,11 @@ def render_planned_djot(
 			"review_reasons": sorted(set(reasons)),
 			"native_table_count": len(planned.plan.tables) if planned.plan else 0,
 			"content_region": None if content is None else {
-				"local_key": content.asset_key,
+				"region_key": content.region_key,
 				"kind": content.kind,
 				"classification_reason": content.classification_reason,
 				"local_heading_source_ordinal": None if content.local_heading is None else content.local_heading.source_ordinal,
 			},
-			"protected_text_shape_ids": [] if content is None else list(content.protected_text_shape_ids),
 			"multiple_choice": None if planned.plan is None or planned.plan.multiple_choice is None else {
 				"reason": planned.plan.multiple_choice.reason,
 				"question": {
@@ -952,7 +978,7 @@ def render_planned_djot(
 					"bounds": dataclasses.asdict(planned.plan.multiple_choice.image.bounds),
 				},
 				"question_visual_region": None if planned.plan.multiple_choice.question_visual_region is None else {
-					"local_key": planned.plan.multiple_choice.question_visual_region.asset_key,
+					"region_key": planned.plan.multiple_choice.question_visual_region.region_key,
 					"classification_reason": planned.plan.multiple_choice.question_visual_region.classification_reason,
 				},
 			},

@@ -31,7 +31,7 @@ def test_minimal_odp_preserves_visibility_contract_for_djot(
 	tmp_path: pathlib.Path,
 	monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-	"""The Djot wrapper retains ODP raster authority and hidden visibility."""
+	"""The Djot wrapper retains hidden-slide facts through native normalization."""
 	input_path = tmp_path / "lecture.odp"
 	with zipfile.ZipFile(input_path, "w") as archive:
 		archive.writestr("mimetype", odp_reader.ODP_MIMETYPE)
@@ -60,5 +60,8 @@ def test_minimal_odp_preserves_visibility_contract_for_djot(
 
 	odp_to_djot.convert_odp(input_path, output_path)
 
-	assert received["render_source_path"] == input_path.resolve()
-	assert received["expected_hidden"] == {2}
+	assert received == {
+		"expected_slide_count": 2,
+		"expected_hidden": {2},
+		"source_name": "lecture.odp",
+	}

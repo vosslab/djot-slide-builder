@@ -75,16 +75,16 @@ def test_caption_footer_and_shared_footer_relations_are_individually_bounded() -
 
 
 #============================================
-def test_content_crop_retains_individual_source_member_footprints() -> None:
-	"""A rendered crop keeps source members for collisions while using their union as bounds."""
+def test_native_normalization_retains_individual_source_member_footprints() -> None:
+	"""A normalized flow keeps source members for collisions while using their union as bounds."""
 	text = slide_plan.SourceTextRegion(((0, (source_model.TextRun("Label"),)),),
 		bounds((0.20, 0.20, 0.30, 0.30)), False, 0.0)
 	image = slide_plan.SourceImageRegion("source.png", bounds((0.60, 0.60, 0.80, 0.80)))
-	content = slide_plan.ContentRegionPlan("crop", bounds((0.20, 0.20, 0.80, 0.80)), (text,), (image,))
+	content = slide_plan.ContentRegionPlan("relation", bounds((0.20, 0.20, 0.80, 0.80)), (text,), (image,))
 	plan = slide_plan.SlidePlan(slide_plan.TitleDecision(None, "test"), (), content)
 	planned = djot_emitter.PlannedSlide(source_model.SlideData(1, False, (), (), (), (), ()), plan)
 
-	components, _reasons = djot_emitter.emit_components(planned, "assets/crop.png")
+	components, _reasons = djot_emitter.emit_components(planned)
 	gap = djot_emitter.EmissionComponent(bounds((0.40, 0.40, 0.50, 0.50)), ("- outside",), "text")
 
 	assert not djot_emitter.components_overlap([components[0], gap])

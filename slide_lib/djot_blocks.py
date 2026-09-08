@@ -308,7 +308,7 @@ def parse_display_math(path: pathlib.Path, lines: list[str], index: int,
 #============================================
 def parse_list(path: pathlib.Path, lines: list[str], index: int, base_line: int,
 		indent: int | None = None) -> tuple[slide_lib.native_model.ListBlock, int]:
-	"""Parse Djot lists, requiring a blank boundary before nested lists."""
+	"""Parse Djot lists while retaining directly adjacent nested items."""
 	# Attributes immediately before a nested list apply to the list element, not
 	# to its first item.  Djot does not require their indentation to reproduce
 	# the following marker's indentation, so discover the marker after collecting
@@ -347,35 +347,33 @@ def parse_list(path: pathlib.Path, lines: list[str], index: int, base_line: int,
 		text_lines = [match.group("text")]
 		index += 1
 		children: list[slide_lib.native_model.ListBlock] = []
-		nested_boundary = False
 		while index < len(lines):
 			next_item = _LIST_ITEM.fullmatch(lines[index])
 			if next_item is not None and len(next_item.group("indent")) == current_indent:
 				break
-			attributes = parse_attributes(path, base_line + index, lines[index])
-			leading = len(lines[index]) - len(lines[index].lstrip(" "))
-			if attributes is not None and leading == current_indent:
-				break
-			if (nested_boundary and next_item is not None and
-					len(next_item.group("indent")) > current_indent):
+			if next_item is not None and len(next_item.group("indent")) > current_indent:
+				# ASVS 2.2.1: indentation is the positive structural boundary for
+				# nested list input; the recursive parser validates the exact level.
 				child_indent = len(next_item.group("indent"))
 				child, index = parse_list(path, lines, index, base_line, child_indent)
 				children.append(child)
 				continue
-			if nested_boundary and attributes is not None and leading > current_indent:
+			attributes = parse_attributes(path, base_line + index, lines[index])
+			leading = len(lines[index]) - len(lines[index].lstrip(" "))
+			if attributes is not None and leading == current_indent:
+				break
+			if attributes is not None and leading > current_indent:
 				child, index = parse_list(path, lines, index, base_line)
 				children.append(child)
 				continue
 			if not lines[index].strip():
 				index += 1
-				nested_boundary = True
 				continue
 			leading = len(lines[index]) - len(lines[index].lstrip(" "))
 			if leading <= current_indent:
 				break
 			text_lines.append(lines[index].lstrip(" "))
 			index += 1
-			nested_boundary = False
 		text = "\n".join(text_lines)
 		inlines = slide_lib.djot_inline.parse_inlines(path, line, text)
 		items.append(slide_lib.native_model.ListItem(location(path, line), inlines, tuple(children),

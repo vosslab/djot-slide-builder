@@ -150,8 +150,8 @@ def test_degenerate_connectors_join_existing_vector_scaffold_without_consuming_p
 		and connectors[0].source_line.endpoints == first.endpoints and exterior in plan.slots[0].text_regions
 
 
-def test_local_figure_heading_stays_editable_above_an_unchanged_crop() -> None:
-	"""One short exterior auto-shape becomes local H2 before its source-region asset."""
+def test_local_figure_heading_stays_editable_above_normalized_content() -> None:
+	"""One short exterior auto-shape remains a local H2 above native content."""
 	heading = text(.25, .13, .35, .17, ordinal=31)
 	labels = (text(.30, .40, .37, .47, ordinal=32), text(.65, .60, .72, .67, ordinal=33))
 	picture = image(.20, .20, .80, .80, ordinal=34)
@@ -160,12 +160,11 @@ def test_local_figure_heading_stays_editable_above_an_unchanged_crop() -> None:
 	planned = djot_emitter.PlannedSlide(
 		source_model.SlideData(1, False, (), (), (), (), ()), plan,
 	)
-	lines, layout, _reasons = djot_emitter.render_planned_slide(
-		planned, {(1, content.asset_key): "assets/crop.png"}, False,
-	)
+	lines, layout, reasons = djot_emitter.render_planned_slide(planned, False)
 
 	assert content is not None and content.local_heading is heading and content.bounds == picture.bounds
-	assert layout == "one-panel" and lines[-3:] == ["## Label", "", "![Coupled source region](assets/crop.png)"]
+	assert layout == "one-panel" and "## Label" in lines
+	assert any("normalized" in reason for reason in reasons)
 
 
 def test_local_figure_heading_rejects_competing_heading() -> None:
@@ -173,7 +172,7 @@ def test_local_figure_heading_rejects_competing_heading() -> None:
 	picture = image(.20, .20, .80, .80, ordinal=40)
 	heading = text(.30, .13, .40, .17, ordinal=41)
 	competing = text(.55, .13, .65, .17, ordinal=42)
-	content = slide_plan.ContentRegionPlan("crop", picture.bounds, (), (picture,))
+	content = slide_plan.ContentRegionPlan("relation", picture.bounds, (), (picture,))
 
 	assert heading_relation.local_figure_heading(
 		content, (heading, competing), (picture,), slide_plan.TitleDecision(None, "test"), (),
@@ -206,7 +205,7 @@ def test_rotated_vector_labels_require_rotation_evidence() -> None:
 
 
 def test_styled_callout_requires_connector_and_matching_left_edge() -> None:
-	"""A connector crop grows only for one matching, explicitly styled editable callout."""
+	"""A connector relation grows only for one matching, explicitly styled callout."""
 	vector = image(.20, .25, .70, .70, kind="connector", ordinal=80)
 	inside = text(.30, .35, .45, .42, ordinal=81, paragraphs=4, fill=True, line=True)
 	callout = text(.31, .72, .46, .79, ordinal=82, fill=True, line=True)
@@ -223,7 +222,7 @@ def test_styled_callout_requires_connector_and_matching_left_edge() -> None:
 
 
 def test_coarse_body_styled_key_plans_native_body_and_two_panel_asset() -> None:
-	"""A transparent object placeholder retains a styled inset key as a crop asset."""
+	"""A transparent object placeholder retains a styled inset key as native text."""
 	body = text(.10, .10, .90, .90, confidence=1.0, ordinal=90, role="OBJECT", z_order=(1,))
 	key = text(.68, .11, .82, .19, ordinal=91, fill=True, line=True, z_order=(2,))
 	title = text(.10, .02, .90, .08, confidence=1.0, ordinal=89, role="TITLE", z_order=(0,))
@@ -232,13 +231,12 @@ def test_coarse_body_styled_key_plans_native_body_and_two_panel_asset() -> None:
 	planned = djot_emitter.PlannedSlide(
 		source_model.SlideData(1, False, (), (), (), (), ()), plan,
 	)
-	lines, layout, reasons = djot_emitter.render_planned_slide(
-		planned, {(1, content.asset_key): "assets/key.png"}, False,
-	)
+	lines, layout, reasons = djot_emitter.render_planned_slide(planned, False)
 
 	assert content is not None and content.kind == "styled-inset-key" and plan.title.region is title \
 		and plan.slots[0].text_regions == (body,)
-	assert layout == "two-panels" and "@left" in lines and "@right" in lines and not reasons
+	assert layout == "two-panels" and "@left" in lines and "@right" in lines
+	assert any("normalized" in reason for reason in reasons)
 
 
 def test_coarse_body_picture_inset_keeps_both_members_native() -> None:
@@ -251,7 +249,7 @@ def test_coarse_body_picture_inset_keeps_both_members_native() -> None:
 		1, False, (), (), (source_model.ImageAsset(0, 0, 1, 1, "source-91", "Inset"),), (), (),
 	)
 	lines, layout, reasons = djot_emitter.render_planned_slide(
-		djot_emitter.PlannedSlide(data, plan), {}, False,
+		djot_emitter.PlannedSlide(data, plan), False,
 	)
 
 	assert plan.title.region is title and plan.content_region is None \
@@ -271,8 +269,8 @@ def test_caption_unit_and_footer_use_existing_two_plus_one_tolerance() -> None:
 		1, False, (), (), (source_model.ImageAsset(0, 0, 1, 1, "source-82", "Figure"),), (), (),
 	)
 	planned = djot_emitter.PlannedSlide(data, plan)
-	lines, layout, reasons = djot_emitter.render_planned_slide(planned, {}, False)
-	components, _reasons = djot_emitter.emit_components(planned, None)
+	lines, layout, reasons = djot_emitter.render_planned_slide(planned, False)
+	components, _reasons = djot_emitter.emit_components(planned)
 	permissions = djot_emitter.overlap_permissions(components)
 
 	assert layout == "two-plus-one-panels" and not reasons
@@ -280,7 +278,7 @@ def test_caption_unit_and_footer_use_existing_two_plus_one_tolerance() -> None:
 
 
 def test_coarse_body_picture_inset_rejects_multiple_insets() -> None:
-	"""A coarse body crop needs exactly one side inset."""
+	"""A coarse body relation needs exactly one side inset."""
 	title = text(.10, .02, .90, .08, confidence=1.0, ordinal=89, role="TITLE")
 	body = text(.10, .10, .90, .90, confidence=1.0, ordinal=90, role="OBJECT", z_order=(1,))
 	picture = image(.10, .30, .25, .60, ordinal=91, z_order=(2,))
@@ -292,7 +290,7 @@ def test_coarse_body_picture_inset_rejects_multiple_insets() -> None:
 
 
 def test_dominant_picture_narrative_uses_the_complete_visual_membership() -> None:
-	"""A large picture, upper-right inset, and lower prose form one bounded crop."""
+	"""A large picture, upper-right inset, and lower prose form one native relation."""
 	dominant = image(.10, .12, .80, .72, ordinal=100)
 	inset = image(.65, .16, .75, .26, ordinal=101)
 	narrative = text(.12, .74, .78, .82, ordinal=102)
@@ -302,8 +300,8 @@ def test_dominant_picture_narrative_uses_the_complete_visual_membership() -> Non
 	assert content.text_regions == (narrative,) and content.image_regions == (dominant, inset)
 
 
-def test_dominant_picture_narrative_protects_title_overlapped_only_by_union() -> None:
-	"""A full-width crop protects a title when only its union AABB reaches the title."""
+def test_dominant_picture_narrative_keeps_title_separate_from_union_bounds() -> None:
+	"""A title remains separate when only a native relation's union reaches it."""
 	dominant = image(.10, .12, .80, .72, ordinal=103)
 	inset = image(.65, .09, .75, .11, ordinal=104)
 	narrative = text(.12, .74, .78, .82, ordinal=105)
@@ -312,11 +310,11 @@ def test_dominant_picture_narrative_protects_title_overlapped_only_by_union() ->
 	relation = visual_relations.dominant_image_narrative((title_region, narrative),
 		(dominant, inset), title)
 
-	assert relation is not None and relation.protected_text_shape_ids == (106,)
+	assert relation is not None and relation.bounds == dominant.bounds.union(inset.bounds).union(narrative.bounds)
 
 
-def test_visual_relations_reject_exact_full_crop_bounds() -> None:
-	"""Exceptional relations never rasterize an exact full-slide region."""
+def test_visual_relations_reject_exact_full_slide_bounds() -> None:
+	"""An exact-full exceptional relation remains an explicit planning limitation."""
 	relation = visual_relations.VisualRelationMembers((), (), bounds(0.0, 0.0, 1.0, 1.0))
 
 	assert not visual_relations.relation_is_safe(
@@ -336,7 +334,7 @@ def test_repeated_figures_accept_mutual_labels_on_the_same_side() -> None:
 	assert content.text_regions == labels and content.image_regions == (left, right)
 
 
-def test_visual_sequence_and_topology_viability_suppress_nonunique_crops() -> None:
+def test_visual_sequence_and_topology_viability_suppress_nonunique_relations() -> None:
 	"""A qualified sequence is withheld when an existing native topology can represent it."""
 	images = (image(.15, .15, .35, .30, ordinal=120), image(.30, .32, .50, .47, ordinal=121),
 		image(.45, .49, .65, .64, ordinal=122))
@@ -347,7 +345,7 @@ def test_visual_sequence_and_topology_viability_suppress_nonunique_crops() -> No
 	assert visual_relations.coupled_visual_sequence((), images, title, lambda _relation: True) is None
 
 
-def test_single_interior_overlay_label_uses_one_named_crop() -> None:
+def test_single_interior_overlay_label_uses_one_named_relation() -> None:
 	"""One large source picture and its sole interior label remain spatially coupled."""
 	label = text(.42, .42, .58, .50, confidence=1.0, role="BODY", ordinal=205)
 	picture = image(.10, .20, .90, .80, ordinal=206)
@@ -358,8 +356,8 @@ def test_single_interior_overlay_label_uses_one_named_crop() -> None:
 		and planned.content_region.text_regions == (label,) and planned.content_region.image_regions == (picture,)
 
 
-def test_single_interior_overlay_label_protects_overlapping_title() -> None:
-	"""A title overlapping only the picture remains outside its full protected crop."""
+def test_single_interior_overlay_label_keeps_overlapping_title_separate() -> None:
+	"""A title and picture become separate native objects under standard geometry."""
 	title = slide_plan.SourceTextRegion(
 		((0, (source_model.TextRun("Title"),)),),
 		bounds(.10, .05, .90, .15), False, 1.0, True, "text", 204,
@@ -370,7 +368,7 @@ def test_single_interior_overlay_label_protects_overlapping_title() -> None:
 	planned = slide_plan.plan_slide((title, label), (picture,))
 
 	assert planned.content_region is not None and planned.content_region.bounds == picture.bounds \
-		and planned.content_region.protected_text_shape_ids == (204,) and planned.title.region is title \
+		and planned.title.region is title \
 		and title not in planned.content_region.text_regions
 
 

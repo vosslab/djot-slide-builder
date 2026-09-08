@@ -1,3 +1,36 @@
+## 2026-09-08
+
+### Fixes and Maintenance
+
+- Ran the requested six-pass code audit over the native Djot theme, legacy importer normalization,
+  screenshot-fallback removal, tests, documentation, dead code, and comments.
+- Removed permanent tests that pinned tunable theme coordinates, exact gradient colors, the dense
+  label threshold, and one geometry-specific diagnostic phrase. Retained semantic native bullet,
+  gradient, and centered-title coverage.
+- Removed unused import-planning return state and unused vector fields. Replaced the obsolete root
+  migration plan with a concise retired marker because repository file discovery still includes the
+  tracked path while Git operations remain outside this work.
+- Corrected current changelog wording that described the superseded bounded-raster implementation as
+  live behavior, and clarified the canonical theme and simplification behavior for newcomers.
+
+### Decisions and Failures
+
+- Simplification retains the same instructional text and genuine content images through an existing
+  Djot layout whenever possible; a review diagnostic accompanies content instead of replacing it.
+- The audit found two unresolved importer defects: dense positioned-label normalization currently
+  drops label text, and a table-bearing fallback can choose an invalid one-panel layout. Source-order
+  normalization also currently receives geometry-ordered components. These require a focused native
+  normalization redesign rather than audit-cleanup patches.
+
+### Developer Tests and Notes
+
+- Focused importer, exporter, and hygiene verification passed 557 tests after pruning. The full
+  permanent offline suite passed 1,657 tests, and strict native Jotdown validation retained 8 Djot
+  sources, 336 slides, and 185 genuine image references.
+- The first full-suite cleanup run stopped during collection because the deleted tracked migration
+  plan remained in repository file discovery. Git operations were out of scope, so the path was
+  restored as a concise retired marker; the corrected full suite then passed.
+
 ## 2026-09-07
 
 ### Additions and New Features
@@ -14,6 +47,11 @@
   Djot's authoring syntax.
 - Added `source_model.py` and `pptx_reader.py` so imported-presentation readers retain raw runs,
   links, images, notes, and first-class `TableBlock` facts.
+- Added `pptx_theme.py` as the native lecture-theme owner: every standard slide receives a shallow
+  blue-to-white top band, centered title, and nine explicit list levels with bullet positions, text
+  tab stops, and hanging indents.
+- Added native source-order normalization for ambiguous legacy geometry and visible redesign
+  diagnostics for dense positioned-label fields that do not map cleanly to standard slide language.
 - Defined the intended `pptx_reader` -> `slide_plan` -> `djot_emitter` ownership boundary.
 - Added newcomer-facing `CODE_ARCHITECTURE.md`, `FILE_STRUCTURE.md`, `FILE_FORMATS.md`,
   `DEVELOPMENT.md`, `COOKBOOK.md`, `TROUBLESHOOTING.md`, and `RELATED_PROJECTS.md` guides, plus
@@ -28,10 +66,9 @@
 - Made `deck_tools.py build` dispatch `.md` and `.djot` sources through the same command, and made
   Djot the concise default target for trusted ODP/PPTX imports.
 - Changed `build_slides.sh` into a thin folder-build convenience around `deck_tools.py build`.
-- An ODP import uses its original ODP and a direct PPTX import uses its trusted input PPTX as the
-  source-region raster authority. Poppler renders only title-excluded, bounded regions at fixed 144
-  DPI; validated digest-named assets retain source-slide provenance and publish with staged source
-  validation.
+- An intermediate ODP/PPTX import path used bounded Poppler renders for difficult regions. The
+  same-day native-only redesign removed that path before acceptance; current imports normalize
+  difficult slides through standard Djot layouts.
 - Ordinary panel layouts now describe optional global titles and one local H2 per cell, with
   source-located capacity preflight before native shapes are created. Source tables remain editable
   only when the source provides actual table metadata; merged or spanned cells require review.
@@ -47,12 +84,16 @@
   ODP or PPTX input and no longer accepts `-t` / `--to`.
 - Imported text and hyperlinks now remain raw reader facts until the emitter renders Djot, and
   source tables retain rows, cells, headers, blanks, and exact shape binding.
+- Adjacent nested Djot lists now retain their semantic hierarchy without requiring a blank line.
+- `two-over-one-panels` now allocates its footer from actual content need while preserving the
+  readable minimum for both upper panels.
+- Ordinary native panels now retain up to six legitimate component images without requiring a
+  composite representation.
 
 ### Fixes and Maintenance
 
 - Refreshed install and usage guidance for Python 3.12 environment activation, Homebrew tools, a
-  validated pinned Jotdown 0.10.0 Cargo install route, bounded Poppler source-region imports, and
-  native export workflows.
+  validated pinned Jotdown 0.10.0 Cargo install route, and native import/export workflows.
 - Corrected current acceptance documentation to name the one retained Djot native-layout E2E after
   the duplicate runners were removed.
 - Removed claims that authored Djot or the current native E2E preserves presenter notes. Import
@@ -93,11 +134,17 @@
 - Removed Marp-only title-size state, the duplicate PPTX extraction implementation, the obsolete
   native-layout E2E, `tools/`, and completed rename-plan archives instead of retaining compatibility
   shims in this pre-production fork.
+- Removed the `source_region` raster subsystem completely: implementation, importer hooks, crop and
+  protected-render state, dedicated tests, generated composite references, and stale corpus assets.
 
 ### Decisions and Failures
 
 - Exact full-slide rasterization remains outside the importer contract. Ambiguous geometry and
   source-table spans stop for review so a later native owner can extend the model deliberately.
+- Exact legacy appearance is not an import contract. Difficult slides normalize to the shared Djot
+  theme or expose a visible native limitation; genuine source figures remain ordinary image assets.
+- Final acceptance passed 1,660 permanent tests, strict Djot validation for 8 decks/336 slides/185
+  image references, the native-layout E2E, and the full 8-deck/24-artifact PPTX/ODP/PDF build.
 - `multiple-choice` answers allow one or two short flat paragraphs and carry implicit reveal intent;
   M5 is reopened around a bounded OOXML builder with LibreOffice Impress as the playback authority.
 - Corrected the animation architecture: PPTX is the Python-friendly native-builder and interchange

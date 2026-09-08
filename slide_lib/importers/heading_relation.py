@@ -3,6 +3,7 @@
 LOCAL_HEADING_MAX_GAP_RATIO = 0.05
 
 
+#============================================
 def local_figure_heading(
 	content: object,
 	text_regions: tuple[object, ...],
@@ -26,7 +27,6 @@ def local_figure_heading(
 		region.source_kind != "auto-shape" or region.placeholder_confidence != 0.0
 		or len(region.paragraphs) != 1
 		or not "".join(run.text for run in region.paragraphs[0][1]).strip()
-		or region.source_ordinal in content.protected_text_shape_ids
 		or not 0.0 <= gap <= LOCAL_HEADING_MAX_GAP_RATIO
 		or not content.bounds.left <= center_x <= content.bounds.right
 	):

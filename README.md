@@ -42,8 +42,8 @@ LibreOffice Impress.
 
 This macOS-focused workflow builds one existing lecture deck as an editable ODP. It needs Python
 3.12, the packages in `pip_requirements.txt`, and LibreOffice Impress. `brew bundle` installs the
-normal Homebrew build/import tools; Poppler is only needed for source-region import, and the pinned
-Jotdown validator is a separate dependency for strict-Djot acceptance. Complete details are in
+normal Homebrew build and verification tools; the pinned Jotdown validator is a separate dependency
+for strict-Djot acceptance. Complete details are in
 [docs/INSTALL.md](docs/INSTALL.md).
 
 ```bash
@@ -89,8 +89,11 @@ visual layout, editable Office output, or attended animation playback.
 
 `deck_tools.py import` is a one-time migration path for trusted instructor-owned ODP or PPTX. It
 uses source facts and geometry to select layouts, preserves ordinary content as editable Djot where
-supported, and keeps a coupled visual only as a bounded source-region asset when needed. Review the
-result once, then maintain the Djot deck as the sole canonical source.
+supported, and normalizes difficult spatial compositions into standard native source-order layouts
+with explicit review reasons. It never substitutes a rendered source slide or composite region.
+Those standard layouts own the lecture theme, including the top gradient, centered titles, margins,
+and nested-list indentation, so imported slides become consistent rather than visually copied.
+Review the result once, then maintain the Djot deck as the sole canonical source.
 
 ```bash
 source source_me.sh && python3 deck_tools.py import genetics/lecture.odp \

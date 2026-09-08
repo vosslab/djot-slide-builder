@@ -62,8 +62,9 @@ source source_me.sh && python3 deck_tools.py visibility genetics/lecture.odp
 
 The importer refuses an existing output target or its asset directory. It keeps text, tables when
 their native source metadata is available, ordinary images, and geometry-supported layouts
-editable. Where a coupled visual component cannot be reconstructed faithfully, it writes a bounded
-title-excluded source-region PNG in `assets/<deck>/`; it never requests a full-slide raster.
+editable. Difficult spatial compositions become standard native source-order panels with a review
+reason. Unsupported relationships remain visibly incomplete or fail with a source-located
+diagnostic; the importer never renders the source slide or a composite region as substitute content.
 
 This is a one-time migration aid. Choose and maintain one canonical source after review; the
 imported ODP or PPTX does not become a second authoring source. See [PIPELINE.md](PIPELINE.md) for ownership and
@@ -98,8 +99,8 @@ layout declares a slot. The layout registry is the authority for supported names
 source-located diagnostics identify unsupported or overflowing content instead of approximating it.
 
 Keep source explanations, lists, links, and ordinary images as editable content. Use complete image
-paragraphs for component images. Tables and source-region components have their own native or
-bounded-image ownership; raw HTML and raw XML are not authoring inputs.
+paragraphs for component images. Tables require real source metadata, and difficult legacy
+compositions normalize into ordinary native layouts; raw HTML and raw XML are not authoring inputs.
 
 ## Known gaps
 

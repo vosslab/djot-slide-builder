@@ -493,5 +493,6 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 		raise source_error(offending, f"{spec.name} slides require one body mode: editable text or component images")
 	if not body_headings and not body_items and not body_images:
 		raise source_error(body.location, f"{spec.name} slides require editable body text or one component image")
-	if len(body_images) > 1:
-		raise source_error(body_images[1].location, f"{spec.name} slides support one contained component image")
+	if len(body_images) > 6:
+		raise source_error(body_images[6].location,
+			f"{spec.name} slides support at most six contained component images")

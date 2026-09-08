@@ -55,7 +55,7 @@ How many chromosomes do humans have in diploid cells?
 
 @answer
 
-Answer: C
+Answer\: C
 
 === layout: one-panel
 
@@ -77,17 +77,17 @@ Answer: C
 
 @body
 
-- E. coli: 1
-- Fruit fly: 8
-- Corn: 20
-- Rice: 24
-- S. cerevisiae (yeast): 32
-- Mouse: 40
-- Human: 46
-- Monkeys, Great Apes: 48
-- Zebrafish: 50
-- Chicken: 78
-- Carp: 104
+- E. coli\: 1
+- Fruit fly\: 8
+- Corn\: 20
+- Rice\: 24
+- S. cerevisiae (yeast)\: 32
+- Mouse\: 40
+- Human\: 46
+- Monkeys, Great Apes\: 48
+- Zebrafish\: 50
+- Chicken\: 78
+- Carp\: 104
 
 === layout: one-panel
 
@@ -95,13 +95,13 @@ Answer: C
 
 @body
 
-- Mosquito: 6
-- Onion: 16
-- Cat, Pig: 38
-- Dolphin, Rabbit: 44
-- Tobacco: 48
-- Dog: 78
-- Carp: 104
+- Mosquito\: 6
+- Onion\: 16
+- Cat, Pig\: 38
+- Dolphin, Rabbit\: 44
+- Tobacco\: 48
+- Dog\: 78
+- Carp\: 104
 
 === layout: title-only
 
@@ -147,7 +147,13 @@ Answer: C
 
 @body
 
-![Coupled source region](assets/lect02c-genome_sizes/source_region_ea0f1c9c5dd20221e29e81d7d040d751e1c3a582d5c30315bb099e360d8ea195.png)
+![Slide image 4](assets/lect02c-genome_sizes/image_004.jpg)
+
+- Genetically unstable
+
+- Chimpanzee
+- Gorilla – have
+- 48 chromosomes
 
 === layout: one-panel
 
@@ -236,7 +242,7 @@ About how many base pairs does a diploid human genome have?
 
 @answer
 
-Answer: D
+Answer\: D
 
 === layout: one-panel
 
@@ -272,17 +278,17 @@ Answer: D
 
 @body
 
-- E. coli: 4.6Mb
-- S. cerevisiae (yeast): 12.2Mb
-- Fruit fly: 165Mb
-- Rice: 420Mb
-- Chicken: 1,126Mb
-- Zebrafish: 1,400Mb
-- Corn: 2,300Mb
-- Mouse: 2,640Mb
-- Humans: 3,080Mb
+- E. coli\: 4.6Mb
+- S. cerevisiae (yeast)\: 12.2Mb
+- Fruit fly\: 165Mb
+- Rice\: 420Mb
+- Chicken\: 1,126Mb
+- Zebrafish\: 1,400Mb
+- Corn\: 2,300Mb
+- Mouse\: 2,640Mb
+- Humans\: 3,080Mb
 - Mexican axolotl 32,000Mb
-- Lungfish: 1,300,000Mb!!!
+- Lungfish\: 1,300,000Mb!!!
 - Mb = millions of base pairs
 
 === layout: one-panel
@@ -356,7 +362,7 @@ What percentage of DNA do all humans identically share?
 
 @answer
 
-Answer: D
+Answer\: D
 
 === layout: two-panels
 
@@ -405,7 +411,13 @@ Answer: D
 
 @body
 
-![Coupled source region](assets/lect02c-genome_sizes/source_region_8afae644844c47723661e6e54a75aeb16a5266f51bd36f874e0af0eaf92dc849.png)
+![Slide image 19](assets/lect02c-genome_sizes/image_019.png)
+
+- Dr. Voss' Genome
+
+![Slide image 20](assets/lect02c-genome_sizes/image_020.png)
+
+- Atrial fibrillation = abnormal heart rhythm
 
 === layout: title-only
 
@@ -454,14 +466,14 @@ Answer: D
 
 @bottom-left
 
-- [https://www.snpedia.com/index.php/Rs2802292](https://www.snpedia.com/index.php/Rs2802292)
+- [https\://www.snpedia.com/index.php/Rs2802292](https://www.snpedia.com/index.php/Rs2802292)
 
 @right
 
 ![Slide image 25](assets/lect02c-genome_sizes/image_025.png)
 
 - 23andMe for
-- Dr. Voss: G;T
+- Dr. Voss\: G;T
 
 === layout: two-panels
 
@@ -487,7 +499,7 @@ Answer: D
 @top-left
 
 - Mycoplasma laboratorium is a designed, partially synthetic species of bacterium
-  - It is estimated that the synthetic genome cost US$40 million to make and took 20 people more than a decade of work.
+  - It is estimated that the synthetic genome cost US\$40 million to make and took 20 people more than a decade of work.
 - Version 3.0 – contains 531,560 base pairs and 473 genes.
   - Of these genes 149 are of unknown biological function.
   - announced March 24, 2016
@@ -498,15 +510,15 @@ Answer: D
 
 @bottom
 
-- [http://astrobiology.com/2016/03/first-minimal-synthetic-bacterial-cell.html](http://astrobiology.com/2016/03/first-minimal-synthetic-bacterial-cell.html)
+- [http\://astrobiology.com/2016/03/first-minimal-synthetic-bacterial-cell.html](http://astrobiology.com/2016/03/first-minimal-synthetic-bacterial-cell.html)
 
-- [https://en.wikipedia.org/wiki/Mycoplasma_laboratorium](https://en.wikipedia.org/wiki/Mycoplasma_laboratorium)
+- [https\://en.wikipedia.org/wiki/Mycoplasma\_laboratorium](https://en.wikipedia.org/wiki/Mycoplasma_laboratorium)
 
 === layout: multiple-choice
 
 @question
 
-Scientists now think humans have how many protein-encoding genes:
+Scientists now think humans have how many protein-encoding genes\:
 
 - a) 20,000 - 25,000
 - b) 30,000 - 40,000
@@ -515,7 +527,7 @@ Scientists now think humans have how many protein-encoding genes:
 
 @answer
 
-Answer: A
+Answer\: A
 
 === layout: one-panel
 
@@ -548,15 +560,15 @@ Answer: A
 
 @right
 
-- E. coli: 5,349
-- Yeast: 6,294
-- Fruit fly: 13,931
-- Chicken: 19,113
-- Human: 20,338
-- Mouse: 22,612
-- Zebrafish: 25,903
-- Rice: 32,000
-- Corn: 39,656
+- E. coli\: 5,349
+- Yeast\: 6,294
+- Fruit fly\: 13,931
+- Chicken\: 19,113
+- Human\: 20,338
+- Mouse\: 22,612
+- Zebrafish\: 25,903
+- Rice\: 32,000
+- Corn\: 39,656
 
 === layout: one-panel
 
@@ -582,11 +594,11 @@ What percent of human DNA are genes, i.e., code for proteins
 
 @answer
 
-Answer: A
+Answer\: A
 
 === layout: one-panel
 
-# Human genome abundance of non-coding DNA
+# Human genome abundanceof non-coding DNA
 
 @body
 
@@ -595,7 +607,7 @@ Answer: A
 
 === layout: one-panel
 
-# Human genome abundance of non-coding DNA
+# Human genome abundanceof non-coding DNA
 
 @body
 

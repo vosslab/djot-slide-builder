@@ -21,17 +21,17 @@ list; the answer is one or two short flat paragraphs. The parser records implici
 intent. The bounded OOXML builder and one-time LibreOffice bridge preserve it through editable ODP
 and the PDF final state; attended Impress first-advance playback remains unobserved.
 
-| Deck | Source | Visible | Hidden | Assets | Regions | Reviews |
+| Deck | Source | Visible | Hidden | Images | Normalized | Reviews |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | `lect01a-course_intro.djot` | 40 | 31 | 9 | 18 | 6 | 11 |
-| `lect01b-genetic_disorders.djot` | 23 | 23 | 0 | 6 | 0 | 8 |
-| `lect02a-2025_announcements.djot` | 75 | 43 | 32 | 14 | 4 | 10 |
-| `lect02b-genes_dogma.djot` | 49 | 49 | 0 | 31 | 16 | 18 |
-| `lect02c-genome_sizes.djot` | 59 | 59 | 0 | 31 | 2 | 8 |
-| `lect02d-dna_structure_overview.djot` | 43 | 43 | 0 | 20 | 4 | 4 |
-| `lect02e-restriction_enzymes.djot` | 62 | 62 | 0 | 27 | 25 | 26 |
-| `lect02f-dna_electrophoresis.djot` | 27 | 26 | 1 | 20 | 15 | 11 |
-| **Total** | **378** | **336** | **42** | **167** | **72** | **96** |
+| `lect01b-genetic_disorders.djot` | 23 | 23 | 0 | 6 | 0 | 5 |
+| `lect02a-2025_announcements.djot` | 75 | 43 | 32 | 15 | 4 | 10 |
+| `lect02b-genes_dogma.djot` | 49 | 49 | 0 | 22 | 16 | 19 |
+| `lect02c-genome_sizes.djot` | 59 | 59 | 0 | 32 | 2 | 10 |
+| `lect02d-dna_structure_overview.djot` | 43 | 43 | 0 | 19 | 4 | 6 |
+| `lect02e-restriction_enzymes.djot` | 62 | 62 | 0 | 18 | 25 | 35 |
+| `lect02f-dna_electrophoresis.djot` | 27 | 26 | 1 | 20 | 15 | 17 |
+| **Total** | **378** | **336** | **42** | **150** | **72** | **113** |
 
 `assets/<deck>/import_report.json` retains the import inventory, including each visible source-slide
 number, selected layout, omitted-note count, and extraction-review reason. Image placement count can
@@ -39,14 +39,13 @@ exceed the distinct-asset count because a figure may recur across teaching steps
 
 ## Corpus acceptance evidence
 
-The 2026-09-07 one-time acceptance sweep converted and validated all eight authoritative ODP
-decks: 378 source slides, 336 visible slides, 42 hidden slides, 167 reachable assets, 72 bounded
-source regions, 96 review slides, and 186 image occurrences. Every Djot image reference resolved to
-a file; there were no missing or extra assets, symlinks, or exact-full source regions.
+The 2026-09-07 native-only acceptance sweep converted and validated all eight authoritative ODP
+decks: 378 source slides, 336 visible slides, 42 hidden slides, 150 reachable genuine source-image
+assets, 72 native normalization relations, 113 review slides, and 185 image occurrences. Every Djot
+image reference resolved to a file; no rendered slide or composite-region substitute remains.
 
-A second private regeneration independently reproduced the Djot, import-report, and asset corpus.
-The one-time native acceptance also passed: strict lint covered 8 decks, 336 visible
-slides, and 186 image occurrences; `build_slides.sh genetics` passed; and the Djot native-layout E2E
+The one-time native acceptance also passed: strict lint covered 8 decks and 336 visible slides;
+`build_slides.sh genetics` passed; and the Djot native-layout E2E
 passed. Sequential `--format all` exports for every deck retained matching PPTX, ODP, and PDF page
 counts (31, 23, 43, 49, 59, 43, 62, and 26), editable text and direct images, and the native table
 in Lecture 02e. This does not establish attended animation acceptance.

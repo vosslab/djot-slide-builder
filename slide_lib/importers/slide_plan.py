@@ -1,5 +1,4 @@
 """Geometry-first planning for imported presentation slides."""
-import collections.abc
 import dataclasses
 import itertools
 import math
@@ -23,7 +22,7 @@ ANNOTATION_PROXIMITY_RATIO = 0.08
 VECTOR_COMPONENT_PROXIMITY_RATIO = 0.08
 FLOW_VERTICAL_CENTER_SEPARATION_RATIO = 0.05
 FLOW_TEXT_BOUNDARY_EPSILON_RATIO = 0.02
-CROP_EDGE_LABEL_PADDING = 0.02
+RELATION_EDGE_LABEL_PADDING = 0.02
 TINY_DECORATIVE_VECTOR_AREA_RATIO = 0.002
 TINY_DECORATIVE_VECTOR_SPAN_RATIO = 0.04
 SHARED_FIGURE_ROW_ALIGNMENT_RATIO = 0.06
@@ -122,12 +121,11 @@ class SlotPlan:
 	relation_id: str = ""
 @dataclasses.dataclass(frozen=True)
 class ContentRegionPlan:
-	"""A diagram and annotations that must remain spatially coupled."""
-	asset_key: str
+	"""A legacy spatial relationship requiring native normalization or review."""
+	region_key: str
 	bounds: geometry.NormalizedBounds
 	text_regions: tuple[SourceTextRegion, ...]
 	image_regions: tuple[SourceImageRegion, ...]
-	protected_text_shape_ids: tuple[int, ...] = ()
 	kind: str = "diagram"
 	classification_reason: str = "qualified pictorial annotation component"
 	local_heading: SourceTextRegion | None = None
@@ -148,8 +146,6 @@ class SlidePlan:
 	tables: tuple[TablePlan, ...] = ()
 	review_reason: str | None = None
 	multiple_choice: MultipleChoicePlan | None = None
-	omitted_vectors: tuple[SourceImageRegion, ...] = ()
-	review_vectors: tuple[SourceImageRegion, ...] = ()
 def select_title(text_regions: tuple[SourceTextRegion, ...]) -> TitleDecision:
 	"""Choose a native title from shallow, wide source evidence first."""
 	plausible = tuple(
@@ -228,22 +224,6 @@ def annotation_centers_are_distributed(
 		max(centers_x) - min(centers_x) >= ANNOTATION_CENTER_SPAN_RATIO
 		or max(centers_y) - min(centers_y) >= ANNOTATION_CENTER_SPAN_RATIO
 	)
-def title_excluded_content_bounds(
-	bounds: geometry.NormalizedBounds,
-	annotations: tuple[SourceTextRegion, ...],
-	title: TitleDecision,
-) -> tuple[geometry.NormalizedBounds, tuple[int, ...]]:
-	"""Either crop a clear title strip or protect its source shape during rendering."""
-	if title.region is None or not geometry.overlaps_or_contains(bounds, title.region.bounds):
-		return bounds, ()
-	top = max(bounds.top, title.region.bounds.bottom)
-	if top >= bounds.bottom:
-		raise ValueError("title-excluded diagram crop requires review")
-	if any(region.bounds.top < top for region in annotations):
-		if title.region.source_ordinal <= 0:
-			raise ValueError("protected title source shape requires review")
-		return bounds, (title.region.source_ordinal,)
-	return geometry.NormalizedBounds(bounds.left, top, bounds.right, bounds.bottom), ()
 def regular_text_grid(text_regions: tuple[SourceTextRegion, ...]) -> bool:
 	"""Recognize a dense row-and-column lattice as an editable table candidate."""
 	if len(text_regions) < 8:
@@ -395,11 +375,8 @@ def multiple_choice_plan(
 	bounds = question.bounds
 	for member in (*members, *connectors):
 		bounds = bounds.union(member.bounds)
-	protected = tuple(sorted({question.source_ordinal, answer.source_ordinal}))
-	if 0 in protected:
-		return None
 	visual = ContentRegionPlan("multiple-choice-visual-1", bounds, overlay_text, (*visuals, *connectors),
-		protected, "multiple-choice-overlay", "question-associated overlay component")
+		"multiple-choice-overlay", "question-associated overlay component")
 	return MultipleChoicePlan(question, answer, None,
 		"complete question-list-answer structure with associated overlay", visual)
 def content_region(
@@ -477,21 +454,18 @@ def content_region(
 				bounds = bounds.union(member.bounds)
 			for annotation in annotations:
 				bounds = bounds.union(annotation.bounds)
-			bounds, protected_text_shape_ids = title_excluded_content_bounds(bounds, annotations, title)
 			return ContentRegionPlan(
-				asset_key=f"content-region-{image_index}",
+				region_key=f"content-region-{image_index}",
 				bounds=bounds,
 				text_regions=annotations,
 				image_regions=tuple(sorted(component_images, key=lambda item: item.source_ordinal)),
-				protected_text_shape_ids=protected_text_shape_ids,
 				kind="diagram",
 				classification_reason="distributed pictorial annotations",
 			)
 	rotated = rotated_vector_label.rotated_vector_label_members(available_text, image_regions)
 	if rotated is not None:
-		bounds, protected = title_excluded_content_bounds(rotated.bounds, rotated.text_regions, title)
 		return ContentRegionPlan(
-			"rotated-vector-label-1", bounds, rotated.text_regions, rotated.image_regions, protected,
+			"rotated-vector-label-1", rotated.bounds, rotated.text_regions, rotated.image_regions,
 			"rotated-vector-label", "unique connected rotated vector-label graph",
 		)
 	vector_region = vector_scaffold_region(available_text, image_regions, title)
@@ -530,10 +504,9 @@ def vector_scaffold_region(
 	bounds = nodes[0].bounds
 	for node in nodes[1:]:
 		bounds = bounds.union(node.bounds)
-	bounds, protected_text_shape_ids = title_excluded_content_bounds(bounds, annotations, title)
 	return ContentRegionPlan(
 		"vector-component-1", bounds, tuple(sorted(annotations, key=lambda item: item.source_ordinal)),
-		tuple(sorted(vectors, key=lambda item: item.source_ordinal)), protected_text_shape_ids,
+		tuple(sorted(vectors, key=lambda item: item.source_ordinal)),
 		"vector-scaffold", "connected vector scaffold with distributed annotations",
 	)
 def bounds_are_near(first: geometry.NormalizedBounds,
@@ -612,10 +585,9 @@ def mixed_visual_region(
 		bounds = bounds.union(node.bounds)
 	if bounds.left == 0.0 and bounds.top == 0.0 and bounds.right == 1.0 and bounds.bottom == 1.0:
 		return None
-	bounds, protected_text_shape_ids = title_excluded_content_bounds(bounds, text_members, title)
 	return ContentRegionPlan(
 		"mixed-visual-1", bounds, tuple(sorted(text_members, key=lambda item: item.source_ordinal)),
-		tuple(sorted(anchor_members, key=lambda item: item.source_ordinal)), protected_text_shape_ids,
+		tuple(sorted(anchor_members, key=lambda item: item.source_ordinal)),
 		"mixed-visual", "single connected materially coupled visual graph",
 	)
 def shared_figure_row_region(
@@ -643,9 +615,8 @@ def shared_figure_row_region(
 		return None
 	row, caption = maximal[0]
 	bounds = union_bounds((*tuple(item.bounds for item in row), caption.bounds))
-	bounds, protected = title_excluded_content_bounds(bounds, (caption,), title)
 	return ContentRegionPlan(
-		"shared-figure-row-1", bounds, (caption,), row, protected,
+		"shared-figure-row-1", bounds, (caption,), row,
 		"shared-figure-row", "peer figure row with one shared caption",
 	)
 def coherent_figure_row(row: tuple[SourceImageRegion, ...]) -> bool:
@@ -690,9 +661,8 @@ def repeated_labeled_figure_region(
 	if any(nearest_side_picture(label, pictures) is not picture for picture, label in pairs):
 		return None
 	bounds = union_bounds((*tuple(item.bounds for item in pictures), *(label.bounds for _picture, label in pairs)))
-	bounds, protected = title_excluded_content_bounds(bounds, tuple(label for _picture, label in pairs), title)
 	return ContentRegionPlan("repeated-labeled-figure-1", bounds, tuple(label for _picture, label in pairs),
-		pictures, protected, "repeated-labeled-figure", "mutual same-band side labels")
+		pictures, "repeated-labeled-figure", "mutual same-band side labels")
 def nearest_side_label(picture: SourceImageRegion, labels: tuple[SourceTextRegion, ...]) -> SourceTextRegion | None:
 	"""Return one unique, vertically aligned neighboring auto-shape label."""
 	candidates = tuple((side_gap(label.bounds, picture.bounds), label) for label in labels
@@ -746,7 +716,6 @@ def title_is_component_member(
 def absorb_connected_connectors(
 	content: ContentRegionPlan | None,
 	image_regions: tuple[SourceImageRegion, ...],
-	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Add uniquely aligned visible connectors to an already-coupled source region."""
 	if content is None:
@@ -756,32 +725,29 @@ def absorb_connected_connectors(
 	if not connectors:
 		return content
 	bounds = union_bounds((content.bounds, *(item.bounds for item in connectors)))
-	bounds, protected = title_excluded_content_bounds(bounds, content.text_regions, title)
 	return dataclasses.replace(content, bounds=bounds,
 		image_regions=tuple(sorted((*content.image_regions, *connectors), key=lambda item: item.source_ordinal)),
-		protected_text_shape_ids=protected,
 		classification_reason=f"{content.classification_reason}; aligned connectors")
-def absorb_coarse_crop_text(
+def absorb_coarse_relation_text(
 	content: ContentRegionPlan | None,
 	text_regions: tuple[SourceTextRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
-	"""Assign one short coarse placeholder only when its complete shape is inside one crop."""
+	"""Assign one short coarse placeholder only when its shape belongs to the relation."""
 	if content is None:
 		return None
 	candidates = tuple(region for region in text_regions if (
 		region is not title.region and region not in content.text_regions
 		and region.source_kind != "table" and region.placeholder_confidence >= 0.75
-		and len(region.paragraphs) <= 2 and bounds_contains(content.bounds, region.bounds, CROP_EDGE_LABEL_PADDING)
+		and len(region.paragraphs) <= 2 and bounds_contains(content.bounds, region.bounds, RELATION_EDGE_LABEL_PADDING)
 	))
 	if len(candidates) != 1:
 		return content
 	region = candidates[0]
 	bounds = content.bounds.union(region.bounds)
 	if bounds.left == 0.0 and bounds.top == 0.0 and bounds.right == 1.0 and bounds.bottom == 1.0:
-		raise ValueError("coarse crop expansion would cover the full slide")
-	bounds, protected = title_excluded_content_bounds(bounds, (*content.text_regions, region), title)
-	return dataclasses.replace(content, bounds=bounds, protected_text_shape_ids=protected,
+		raise ValueError("coarse relation expansion would cover the full slide")
+	return dataclasses.replace(content, bounds=bounds,
 		text_regions=tuple(sorted((*content.text_regions, region), key=lambda item: item.source_ordinal)),
 		classification_reason=f"{content.classification_reason}; enclosed coarse text")
 def absorb_contained_vector_label(
@@ -803,7 +769,7 @@ def absorb_contained_vector_label(
 		classification_reason=f"{content.classification_reason}; contained vector label")
 def bounds_contains(outer: geometry.NormalizedBounds,
 		inner: geometry.NormalizedBounds, padding: float) -> bool:
-	"""Require center and every edge within a bounded crop padding envelope."""
+	"""Require center and every edge within a bounded relation padding envelope."""
 	return (outer.left - padding <= inner.left and inner.right <= outer.right + padding
 		and outer.top - padding <= inner.top and inner.bottom <= outer.bottom + padding
 		and geometry.center_is_within(inner, outer))
@@ -933,30 +899,30 @@ def plan_slide(
 		content = repeated if repeated is not None else shared
 		if content is None and interior is not None:
 			content = ContentRegionPlan("single-interior-overlay-label-1", interior.bounds, interior.text_regions, interior.image_regions,
-				interior.protected_text_shape_ids, "single-interior-overlay-label", "sole material interior overlay label")
+				"single-interior-overlay-label", "sole material interior overlay label")
 		if content is None:
 			content = None if tables else content_region(text_regions, planning_images, title)
 		if not tables:
 			relation = visual_relations.dominant_image_narrative(text_regions, planning_images, title)
 			if relation is not None:
 				content = ContentRegionPlan("dominant-image-narrative-1", relation.bounds, relation.text_regions,
-					relation.image_regions, relation.protected_text_shape_ids, "dominant-image-narrative", "unique bounded visual composition")
+					relation.image_regions, "dominant-image-narrative", "unique bounded visual composition")
 			elif content is None:
 				relation = visual_relations.coupled_visual_sequence(text_regions, planning_images, title,
 					lambda members: topology.ordinary_layout_viable(tuple(item.bounds for item in members.image_regions)))
 				if relation is not None:
 					content = ContentRegionPlan("coupled-visual-sequence-1", relation.bounds, relation.text_regions, relation.image_regions,
-						relation.protected_text_shape_ids, "coupled-visual-sequence", "unique bounded visual composition")
-		content = absorb_connected_connectors(content, planning_images, title)
+						"coupled-visual-sequence", "unique bounded visual composition")
+		content = absorb_connected_connectors(content, planning_images)
 		extension = visual_relations.styled_callout_extension(content, text_regions, title)
 		if extension is not None:
 			content = dataclasses.replace(content, bounds=extension.bounds, text_regions=extension.text_regions,
-				protected_text_shape_ids=extension.protected_text_shape_ids, classification_reason=f"{content.classification_reason}; styled callout")
+				classification_reason=f"{content.classification_reason}; styled callout")
 		if content is None and inset_pair is not None:
-			content = ContentRegionPlan("styled-inset-key-1", inset_pair.key.bounds, (inset_pair.key,), (), (),
+			content = ContentRegionPlan("styled-inset-key-1", inset_pair.key.bounds, (inset_pair.key,), (),
 				"styled-inset-key", "styled inset key paired with coarse object body")
 		content = absorb_contained_vector_label(content, text_regions, title)
-		content = absorb_coarse_crop_text(content, text_regions, title)
+		content = absorb_coarse_relation_text(content, text_regions, title)
 		heading = heading_relation.local_figure_heading(content, text_regions,
 			planning_images, title, tables)
 		if heading is not None:
@@ -974,26 +940,5 @@ def plan_slide(
 		review_reason = vector_reason if review_reason is None else f"{review_reason}; {vector_reason}"
 	emittable_images = tuple(item for item in planning_images if item not in review_vectors)
 	slots = slot_plans(text_regions, emittable_images, content, tables, title, picture_inset)
-	plan = SlidePlan(title, slots, content, tables, review_reason, None, omitted_vectors, review_vectors)
+	plan = SlidePlan(title, slots, content, tables, review_reason)
 	return plan
-
-
-#============================================
-def require_region_asset(
-	content: ContentRegionPlan | None,
-	assets: collections.abc.Mapping[str, str] | None,
-) -> str | None:
-	"""Resolve a renderer-produced region asset without inventing a fallback.
-	ASVS 5.3.2: region assets use internally generated keys, never archive names.
-	"""
-	if content is None:
-		return None
-	if assets is None or content.asset_key not in assets:
-		raise ValueError(
-			f"required renderer asset is missing for {content.asset_key}; "
-			"supply the coupled-region asset before emission"
-		)
-	asset = assets[content.asset_key]
-	if not asset:
-		raise ValueError(f"renderer supplied an empty asset for {content.asset_key}")
-	return asset

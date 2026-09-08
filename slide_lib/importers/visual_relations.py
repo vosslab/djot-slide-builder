@@ -32,12 +32,11 @@ CAPTION_MAX_WIDTH_TO_IMAGE_RATIO = 1.60
 
 @dataclasses.dataclass(frozen=True)
 class VisualRelationMembers:
-	"""Exact source membership and crop evidence for one visual relation."""
+	"""Exact source membership and bounds for one native visual relation."""
 
 	text_regions: tuple[object, ...]
 	image_regions: tuple[object, ...]
 	bounds: geometry.NormalizedBounds
-	protected_text_shape_ids: tuple[int, ...] = ()
 
 
 @dataclasses.dataclass(frozen=True)
@@ -111,16 +110,14 @@ def styled_callout_extension(
 	)
 	if len(matches) != 1:
 		return None
-	relation = members_for(
-		(*content.text_regions, candidate), content.image_regions, title,
-	)
-	return protected_callout_relation(content, candidate, relation, title)
+	relation = members_for((*content.text_regions, candidate), content.image_regions)
+	return safe_callout_relation(content, candidate, relation, title)
 
 
-def protected_callout_relation(
+def safe_callout_relation(
 		content: object, candidate: object, relation: VisualRelationMembers, title: object,
 ) -> VisualRelationMembers | None:
-	"""Permit only an already-protected base/title overlap during callout expansion."""
+	"""Reject a callout expansion that collides with the independently selected title."""
 	if relation.bounds == geometry.NormalizedBounds(0.0, 0.0, 1.0, 1.0):
 		return None
 	title_region = getattr(title, "region", None)
@@ -129,15 +126,11 @@ def protected_callout_relation(
 	if geometry.overlaps_or_contains(title_region.bounds, candidate.bounds):
 		return None
 	base_members = (*content.text_regions, *content.image_regions)
-	base_overlaps = any(
+	if any(
 		geometry.overlaps_or_contains(title_region.bounds, member.bounds)
 		for member in base_members
-	)
-	protected = tuple(sorted(set((*content.protected_text_shape_ids, *relation.protected_text_shape_ids))))
-	if base_overlaps and title_region.source_ordinal not in content.protected_text_shape_ids:
+	):
 		return None
-	if base_overlaps:
-		return dataclasses.replace(relation, protected_text_shape_ids=protected)
 	return relation if relation_is_safe(relation, title) else None
 
 
@@ -200,7 +193,7 @@ def dominant_image_narrative(
 	candidates = tuple(region for region in available if lower_narrative(region, dominant.bounds))
 	if len(candidates) != 1:
 		return None
-	relation = members_for((candidates[0],), (dominant, inset), title)
+	relation = members_for((candidates[0],), (dominant, inset))
 	return relation if relation_is_safe(relation, title) else None
 
 
@@ -208,7 +201,7 @@ def single_interior_overlay_label(
 		texts: tuple[object, ...], images: tuple[object, ...], title: object,
 		viable_callback: Callable[[VisualRelationMembers], bool] | None = None,
 ) -> VisualRelationMembers | None:
-	"""Crop one large picture only with its sole materially interior short label."""
+	"""Group one large picture only with its sole materially interior short label."""
 	available = tuple(region for region in texts if region is not getattr(title, "region", None))
 	if len(available) != 1 or len(images) != 1 or getattr(images[0], "source_kind", None) != "picture":
 		return None
@@ -221,7 +214,7 @@ def single_interior_overlay_label(
 	if not (picture.bounds.left < center_x < picture.bounds.right and picture.bounds.top < center_y < picture.bounds.bottom
 		and overlap_x >= label.bounds.width * .50 and overlap_y >= label.bounds.height * .50):
 		return None
-	relation = members_for((label,), (picture,), title)
+	relation = members_for((label,), (picture,))
 	title_region = getattr(title, "region", None)
 	if relation.bounds == geometry.NormalizedBounds(0.0, 0.0, 1.0, 1.0) or (
 		title_region is not None and (
@@ -259,7 +252,7 @@ def coupled_visual_sequence(
 	if max(centers_x) - min(centers_x) < SEQUENCE_CENTER_SPAN_RATIO and \
 		max(aspects) / min(aspects) < SEQUENCE_ASPECT_RATIO_VARIATION:
 		return None
-	result = members_for((), ordered, title)
+	result = members_for((), ordered)
 	if not relation_is_safe(result, title):
 		return None
 	return result if viable_callback is None or not viable_callback(result) else None
@@ -322,19 +315,15 @@ def lower_narrative(region: object, dominant: geometry.NormalizedBounds) -> bool
 
 
 def members_for(
-	texts: tuple[object, ...], images: tuple[object, ...], title: object,
+	texts: tuple[object, ...], images: tuple[object, ...],
 ) -> VisualRelationMembers:
-	"""Build source membership and protect an overlapping selected title by ordinal."""
+	"""Build exact source membership and its normalized geometric union."""
 	bounds = union_bounds(tuple(region.bounds for region in (*texts, *images)))
-	title_region = getattr(title, "region", None)
-	protected = ()
-	if title_region is not None and geometry.overlaps_or_contains(title_region.bounds, bounds):
-		protected = (title_region.source_ordinal,)
-	return VisualRelationMembers(texts, images, bounds, protected)
+	return VisualRelationMembers(texts, images, bounds)
 
 
 def relation_is_safe(relation: VisualRelationMembers, title: object) -> bool:
-	"""Reject exact-full and actual member/title collisions, retaining AABB protection."""
+	"""Reject exact-full relations and actual member/title collisions."""
 	if relation.bounds == geometry.NormalizedBounds(0.0, 0.0, 1.0, 1.0):
 		return False
 	title_region = getattr(title, "region", None)

@@ -34,7 +34,6 @@ def convert_odp(
 			expected_slide_count=len(imported_slides),
 			expected_hidden=hidden_indexes,
 			source_name=input_path.name,
-			render_source_path=input_path,
 		)
 	return summary
 

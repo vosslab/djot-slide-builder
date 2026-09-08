@@ -21,7 +21,6 @@ import slide_lib.importers.geometry as geometry
 import slide_lib.importers.pptx_reader as pptx_reader
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
-import slide_lib.importers.source_region_render as source_region_render
 
 
 ASSET_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]*$")
@@ -77,9 +76,9 @@ def plan_slides(
 	assets_dir: pathlib.Path,
 	djot_root: pathlib.PurePosixPath,
 	expected_hidden: set[int] | None,
-) -> tuple[list[djot_emitter.PlannedSlide], int]:
+) -> list[djot_emitter.PlannedSlide]:
 	"""Read raw slide facts, plan their geometry, and retain both layers."""
-	data_slides, image_count = pptx_reader.extract_slides(
+	data_slides, _ = pptx_reader.extract_slides(
 		presentation, assets_dir, djot_root, expected_hidden,
 	)
 	planned_slides: list[djot_emitter.PlannedSlide] = []
@@ -105,7 +104,7 @@ def plan_slides(
 		planned_slides.append(djot_emitter.PlannedSlide(
 			data, plan, text_regions, visual_regions, visible_page_index,
 		))
-	return planned_slides, image_count
+	return planned_slides
 
 
 #============================================
@@ -217,127 +216,6 @@ def publish_conversion(staging_assets: pathlib.Path, staging_djot: pathlib.Path,
 
 
 #============================================
-def render_requests(
-	planned_slides: list[djot_emitter.PlannedSlide],
-) -> tuple[
-	list[source_region_render.SourceRegionRequest],
-	dict[str, tuple[djot_emitter.PlannedSlide, str]],
-]:
-	"""Build bounded raster requests for planned coupled source regions."""
-	requests: list[source_region_render.SourceRegionRequest] = []
-	request_details: dict[str, tuple[djot_emitter.PlannedSlide, str]] = {}
-	for planned in planned_slides:
-		regions = [] if planned.plan is None else [planned.plan.content_region]
-		if planned.plan is not None and planned.plan.multiple_choice is not None:
-			regions.append(planned.plan.multiple_choice.question_visual_region)
-		for content in regions:
-			if content is None:
-				continue
-			global_key = f"source-{planned.data.source_index}-{content.asset_key}"
-			requests.append(source_region_render.SourceRegionRequest(
-				global_key,
-				planned.data.source_index,
-				planned.visible_page_index or 0,
-				source_region_render.NormalizedRegion(
-					content.bounds.left,
-					content.bounds.top,
-					content.bounds.right,
-					content.bounds.bottom,
-				),
-				content.protected_text_shape_ids,
-			))
-			request_details[global_key] = (planned, content.asset_key)
-	return requests, request_details
-
-
-#============================================
-def require_planned_assets(
-	planned_slides: list[djot_emitter.PlannedSlide],
-	assets: dict[tuple[int, str], str],
-) -> None:
-	"""Fail before publication when any planned crop lacks its rendered asset."""
-	for planned in planned_slides:
-		regions = [] if planned.plan is None else [planned.plan.content_region]
-		if planned.plan is not None and planned.plan.multiple_choice is not None:
-			regions.append(planned.plan.multiple_choice.question_visual_region)
-		for content in regions:
-			key = None if content is None else (planned.data.source_index, content.asset_key)
-			slide_plan.require_region_asset(
-				content,
-				None if key is None or key not in assets else {
-					content.asset_key: assets[key],
-				},
-			)
-
-
-#============================================
-def add_region_records(
-	records: list[dict[str, object]],
-	planned_slides: list[djot_emitter.PlannedSlide],
-	assets: dict[tuple[int, str], str],
-	asset_details: dict[tuple[int, str], source_region_render.SourceRegionAsset],
-) -> None:
-	"""Attach bounded source-region provenance to conversion report records."""
-	for record, planned in zip(records, planned_slides, strict=True):
-		content = planned.plan.content_region if planned.plan else None
-		if planned.plan is not None:
-			record["omitted_vectors"] = [
-				{
-					"source_ordinal": item.source_ordinal,
-					"bounds": dataclasses.asdict(item.bounds),
-					"reason": "decorative-vector",
-				}
-				for item in planned.plan.omitted_vectors
-			]
-			record["review_vectors"] = [
-				{
-					"source_ordinal": item.source_ordinal,
-					"bounds": dataclasses.asdict(item.bounds),
-					"reason": "unconsumed-vector",
-				}
-				for item in planned.plan.review_vectors
-			]
-			choice = planned.plan.multiple_choice
-			if choice is not None and choice.question_visual_region is not None:
-				visual = choice.question_visual_region
-				key = (planned.data.source_index, visual.asset_key)
-				asset = asset_details[key]
-				record["multiple_choice"]["question_visual_region"] = {
-					"local_key": visual.asset_key,
-					"global_key": asset.asset_key,
-					"asset": assets[key],
-					"sha256": asset.sha256,
-					"dpi": asset.dpi,
-					"normalized_bounds": dataclasses.asdict(visual.bounds),
-					"pixel_bounds": list(asset.pixel_bounds),
-					"included_source_image_refs": [item.asset_reference for item in visual.image_regions],
-					"included_source_ordinals": [item.source_ordinal for item in visual.image_regions],
-					"overlay_text_count": len(visual.text_regions),
-					"protected_text_shape_ids": list(visual.protected_text_shape_ids),
-					"classification_reason": visual.classification_reason,
-				}
-		if content is None:
-			continue
-		key = (planned.data.source_index, content.asset_key)
-		asset = asset_details[key]
-		record["content_region"] = {
-			"local_key": content.asset_key,
-			"global_key": asset.asset_key,
-			"asset": assets[key],
-			"sha256": asset.sha256,
-			"dpi": asset.dpi,
-			"normalized_bounds": dataclasses.asdict(content.bounds),
-			"pixel_bounds": list(asset.pixel_bounds),
-			"included_source_image_refs": [item.asset_reference for item in content.image_regions],
-			"included_source_ordinals": [item.source_ordinal for item in content.image_regions],
-			"coupled_text_count": len(content.text_regions),
-			"protected_text_shape_ids": list(content.protected_text_shape_ids),
-			"kind": content.kind,
-			"classification_reason": content.classification_reason,
-		}
-
-
-#============================================
 def convert_pptx(
 	input_path: pathlib.Path,
 	output_path: pathlib.Path,
@@ -345,9 +223,8 @@ def convert_pptx(
 	expected_slide_count: int | None = None,
 	expected_hidden: set[int] | None = None,
 	source_name: str | None = None,
-	render_source_path: pathlib.Path | None = None,
 ) -> ConversionSummary:
-	"""Convert one trusted PPTX into supported bounded Djot source."""
+	"""Convert one trusted PPTX into native-object-oriented Djot source."""
 	input_path = input_path.resolve()
 	output_path = output_path.resolve()
 	# ASVS 1.5.2: validate the existing OOXML boundary before python-pptx reads it.
@@ -362,30 +239,11 @@ def convert_pptx(
 		staging_assets = temporary_root / "assets"
 		staging_assets.mkdir()
 		djot_root = pathlib.PurePosixPath("assets") / output_path.stem
-		slides, _image_count = plan_slides(presentation, staging_assets, djot_root, expected_hidden)
+		slides = plan_slides(presentation, staging_assets, djot_root, expected_hidden)
 		visible_slides = [slide for slide in slides if not slide.data.hidden]
 		if not visible_slides:
 			raise ValueError("presentation contains no visible slides")
-		visible_indexes = tuple(slide.data.source_index for slide in visible_slides)
-		requests, request_details = render_requests(visible_slides)
-		render_source = (render_source_path or input_path).resolve()
-		rendered = source_region_render.render_source_regions(
-			render_source,
-			staging_assets,
-			visible_indexes,
-			tuple(requests),
-			protected_source_path=input_path,
-		)
-		assets: dict[tuple[int, str], str] = {}
-		asset_details: dict[tuple[int, str], source_region_render.SourceRegionAsset] = {}
-		for asset in rendered:
-			planned, local_key = request_details[asset.asset_key]
-			key = (planned.data.source_index, local_key)
-			assets[key] = (djot_root / asset.asset_name).as_posix()
-			asset_details[key] = asset
-		require_planned_assets(visible_slides, assets)
-		djot, records = djot_emitter.render_planned_djot(slides, assets)
-		add_region_records(records, visible_slides, assets, asset_details)
+		djot, records = djot_emitter.render_planned_djot(slides)
 		staging_djot = temporary_root / output_path.name
 		staging_djot.write_text(djot, encoding="utf-8")
 		published_media_count = prune_staged_media(staging_djot, staging_assets, output_path.stem)

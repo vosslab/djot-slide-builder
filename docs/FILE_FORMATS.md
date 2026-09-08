@@ -25,8 +25,9 @@ locate editable deliverables.
 - The importer does not overwrite an existing `.djot` target or `assets/<deck-name>/` directory.
   Choose a new destination when repeating an import.
 - Text, supported source tables, ordinary images, and recognized layouts become editable Djot.
-  A coupled visual that cannot be faithfully reconstructed becomes a bounded title-excluded PNG in
-  the adjacent asset directory, never a full-slide raster.
+  Difficult spatial compositions normalize into standard native source-order panels. A limitation
+  remains visible in the generated source or import report; no rendered slide or composite source
+  region is inserted as substitute content.
 - The asset directory includes `import_report.json`, which records source-slide visibility, selected
   layouts, asset inventory, and review reasons. After review, maintain the Djot deck as the one
   canonical source; imported presentations remain one-time migration evidence.

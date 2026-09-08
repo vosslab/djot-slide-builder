@@ -9,151 +9,121 @@
       "source_slide": 1,
       "visible_page": 1,
       "layout": "title-slide",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 2,
       "visible_page": 2,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 3,
       "visible_page": 3,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 4,
       "visible_page": 4,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 5,
       "visible_page": 5,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 6,
       "visible_page": 6,
       "layout": "one-panel",
-      "text_blocks": 2,
-      "images": 0,
-      "notes_omitted": 0,
-      "review_reasons": [],
-      "native_table_count": 0,
-      "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
-    },
-    {
-      "source_slide": 7,
-      "visible_page": 7,
-      "layout": "title-only",
       "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
+    },
+    {
+      "source_slide": 7,
+      "visible_page": 7,
+      "layout": "title-only",
+      "text_blocks": 0,
+      "images": 0,
+      "notes_omitted": 0,
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null
     },
     {
       "source_slide": 8,
       "visible_page": 8,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 9,
       "visible_page": 9,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 10,
       "visible_page": 10,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 11,
@@ -165,16 +135,13 @@
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 12,
       "visible_page": 12,
       "layout": "two-over-one-panels",
-      "text_blocks": 5,
+      "text_blocks": 4,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -182,16 +149,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 13,
       "visible_page": 13,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -199,127 +163,97 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 14,
       "visible_page": 14,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 15,
       "visible_page": 15,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 16,
       "visible_page": 16,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 17,
       "visible_page": 17,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 18,
       "visible_page": 18,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 19,
       "visible_page": 19,
       "layout": "two-panels",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 20,
       "visible_page": 20,
       "layout": "two-panels",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 21,
       "visible_page": 21,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -327,16 +261,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 22,
       "visible_page": 22,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -344,16 +275,13 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 23,
       "visible_page": 23,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -362,21 +290,7 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 61,
-          "bounds": {
-            "left": 0.5858922437844876,
-            "top": 0.6038101900905093,
-            "right": 0.6257112034224068,
-            "bottom": 0.6569464009898445
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     }
   ]
 }

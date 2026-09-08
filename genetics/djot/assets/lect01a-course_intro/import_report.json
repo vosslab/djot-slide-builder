@@ -19,54 +19,43 @@
       "source_slide": 1,
       "visible_page": 1,
       "layout": "title-slide",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 2,
       "visible_page": 2,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 3,
       "visible_page": 3,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
-      "review_reasons": [
-        "dense text requires post-conversion polish"
-      ],
+      "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 4,
       "visible_page": 4,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -74,166 +63,97 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 5,
       "visible_page": 5,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 6,
       "visible_page": 6,
       "layout": "one-plus-two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 7,
       "visible_page": 7,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "mixed-visual-1",
-        "global_key": "source-7-mixed-visual-1",
-        "asset": "assets/lect01a-course_intro/source_region_80fcfa5d6dd344ae0837ad57d603228241449a9c45f9bddeda1ad5b87443b75f.png",
-        "sha256": "80fcfa5d6dd344ae0837ad57d603228241449a9c45f9bddeda1ad5b87443b75f",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.07449538099076199,
-          "top": 0.23385646366771903,
-          "right": 0.8180564201128402,
-          "bottom": 0.9310835406618981
-        },
-        "pixel_bounds": [
-          118,
-          232,
-          1300,
-          925
-        ],
-        "included_source_image_refs": [
-          "assets/lect01a-course_intro/image_005.png",
-          "source-vector-64",
-          "source-vector-65"
-        ],
-        "included_source_ordinals": [
-          62,
-          64,
-          65
-        ],
-        "coupled_text_count": 0,
-        "protected_text_shape_ids": [],
+        "region_key": "mixed-visual-1",
         "kind": "mixed-visual",
-        "classification_reason": "single connected materially coupled visual graph"
+        "classification_reason": "single connected materially coupled visual graph",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 8,
       "visible_page": 8,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "mixed-visual-1",
-        "global_key": "source-8-mixed-visual-1",
-        "asset": "assets/lect01a-course_intro/source_region_ad5f0b3ca1fd7a3959d2857bfec0b6b9ca2c562dbae61dbf9e270c798f813648.png",
-        "sha256": "ad5f0b3ca1fd7a3959d2857bfec0b6b9ca2c562dbae61dbf9e270c798f813648",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.049961187922375846,
-          "top": 0.30813288750549933,
-          "right": 0.48911253022506046,
-          "bottom": 0.8568642525347623
-        },
-        "pixel_bounds": [
-          79,
-          305,
-          777,
-          851
-        ],
-        "included_source_image_refs": [
-          "assets/lect01a-course_intro/image_006.png",
-          "source-vector-69"
-        ],
-        "included_source_ordinals": [
-          67,
-          69
-        ],
-        "coupled_text_count": 0,
-        "protected_text_shape_ids": [],
+        "region_key": "mixed-visual-1",
         "kind": "mixed-visual",
-        "classification_reason": "single connected materially coupled visual graph"
+        "classification_reason": "single connected materially coupled visual graph",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 9,
       "visible_page": 9,
       "layout": "four-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 10,
       "visible_page": 10,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 11,
@@ -243,97 +163,60 @@
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized distributed pictorial annotations; enclosed coarse text into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "content-region-3",
-        "global_key": "source-11-content-region-3",
-        "asset": "assets/lect01a-course_intro/source_region_3535476d6064f01dee7ba6d7186925fb1c478c397ea41b00f239242433eb9ce7.png",
-        "sha256": "3535476d6064f01dee7ba6d7186925fb1c478c397ea41b00f239242433eb9ce7",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.045318618637237275,
-          "top": 0.0,
-          "right": 0.9452271064542129,
-          "bottom": 1.0
-        },
-        "pixel_bounds": [
-          71,
-          0,
-          1502,
-          993
-        ],
-        "included_source_image_refs": [
-          "assets/lect01a-course_intro/image_009.png",
-          "assets/lect01a-course_intro/image_010.png",
-          "source-vector-82"
-        ],
-        "included_source_ordinals": [
-          76,
-          81,
-          82
-        ],
-        "coupled_text_count": 4,
-        "protected_text_shape_ids": [],
+        "region_key": "content-region-3",
         "kind": "diagram",
-        "classification_reason": "distributed pictorial annotations; enclosed coarse text"
+        "classification_reason": "distributed pictorial annotations; enclosed coarse text",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 12,
       "visible_page": 12,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 13,
       "visible_page": 13,
       "layout": "two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 14,
       "visible_page": 14,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 15,
       "visible_page": 15,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -341,25 +224,19 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 16,
       "visible_page": 16,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 17,
@@ -368,203 +245,113 @@
       "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
-      "review_reasons": [],
+      "review_reasons": [
+        "normalized sole material interior overlay label into native source-order content"
+      ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "single-interior-overlay-label-1",
-        "global_key": "source-17-single-interior-overlay-label-1",
-        "asset": "assets/lect01a-course_intro/source_region_ef26607e2ab4ea53d03c75dbe076949a426e43e1d6206a304af6425be40b4d21.png",
-        "sha256": "ef26607e2ab4ea53d03c75dbe076949a426e43e1d6206a304af6425be40b4d21",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.09274424948849898,
-          "top": 0.05804988201475752,
-          "right": 0.9771536983073966,
-          "bottom": 0.9723355237471885
-        },
-        "pixel_bounds": [
-          147,
-          57,
-          1552,
-          966
-        ],
-        "included_source_image_refs": [
-          "assets/lect01a-course_intro/image_013.png"
-        ],
-        "included_source_ordinals": [
-          94
-        ],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "single-interior-overlay-label-1",
         "kind": "single-interior-overlay-label",
-        "classification_reason": "sole material interior overlay label"
+        "classification_reason": "sole material interior overlay label",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 18,
       "visible_page": 18,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 26,
       "visible_page": 19,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 27,
       "visible_page": 20,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 28,
       "visible_page": 21,
       "layout": "one-plus-two-panels",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 2,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 29,
       "visible_page": 22,
       "layout": "one-panel",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "mixed-visual-1",
-        "global_key": "source-29-mixed-visual-1",
-        "asset": "assets/lect01a-course_intro/source_region_c1926b7921d571cafdc0126a68a15a9982abc44d95555f65ab39635d77c90af0.png",
-        "sha256": "c1926b7921d571cafdc0126a68a15a9982abc44d95555f65ab39635d77c90af0",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.07449538099076199,
-          "top": 0.23385646366771903,
-          "right": 0.8180564201128402,
-          "bottom": 0.9310835406618981
-        },
-        "pixel_bounds": [
-          118,
-          232,
-          1300,
-          925
-        ],
-        "included_source_image_refs": [
-          "assets/lect01a-course_intro/image_005.png",
-          "source-vector-123",
-          "source-vector-124"
-        ],
-        "included_source_ordinals": [
-          121,
-          123,
-          124
-        ],
-        "coupled_text_count": 0,
-        "protected_text_shape_ids": [],
+        "region_key": "mixed-visual-1",
         "kind": "mixed-visual",
-        "classification_reason": "single connected materially coupled visual graph"
+        "classification_reason": "single connected materially coupled visual graph",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 30,
       "visible_page": 23,
       "layout": "two-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [
-        "ignored non-content shape type AUTO_SHAPE (1)"
+        "ignored non-content shape type AUTO_SHAPE (1)",
+        "normalized single connected materially coupled visual graph; contained vector label into native source-order content",
+        "unprojected non-raster visual requires review"
       ],
       "native_table_count": 0,
       "content_region": {
-        "local_key": "mixed-visual-1",
-        "global_key": "source-30-mixed-visual-1",
-        "asset": "assets/lect01a-course_intro/source_region_57884ecdb461a810f0af7129e83fac03e44dfd78629e5f45cefd14ce91cbfad8.png",
-        "sha256": "57884ecdb461a810f0af7129e83fac03e44dfd78629e5f45cefd14ce91cbfad8",
-        "dpi": 144,
-        "normalized_bounds": {
-          "left": 0.49886192572385146,
-          "top": 0.20665986540096254,
-          "right": 0.9750823981647964,
-          "bottom": 0.967421852631766
-        },
-        "pixel_bounds": [
-          792,
-          205,
-          1549,
-          961
-        ],
-        "included_source_image_refs": [
-          "source-vector-125",
-          "assets/lect01a-course_intro/image_014.jpg"
-        ],
-        "included_source_ordinals": [
-          125,
-          128
-        ],
-        "coupled_text_count": 1,
-        "protected_text_shape_ids": [],
+        "region_key": "mixed-visual-1",
         "kind": "mixed-visual",
-        "classification_reason": "single connected materially coupled visual graph; contained vector label"
+        "classification_reason": "single connected materially coupled visual graph; contained vector label",
+        "local_heading_source_ordinal": null
       },
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 31,
       "visible_page": 24,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -572,61 +359,49 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 32,
       "visible_page": 25,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 33,
       "visible_page": 26,
       "layout": "two-plus-one-panels",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 3,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 34,
       "visible_page": 27,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 35,
       "visible_page": 28,
       "layout": "one-panel",
-      "text_blocks": 2,
+      "text_blocks": 1,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -634,46 +409,37 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 36,
       "visible_page": 29,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 37,
       "visible_page": 30,
       "layout": "two-over-one-panels",
-      "text_blocks": 3,
+      "text_blocks": 2,
       "images": 1,
       "notes_omitted": 0,
       "review_reasons": [],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": []
+      "multiple_choice": null
     },
     {
       "source_slide": 40,
       "visible_page": 31,
       "layout": "title-only",
-      "text_blocks": 1,
+      "text_blocks": 0,
       "images": 0,
       "notes_omitted": 0,
       "review_reasons": [
@@ -682,21 +448,7 @@
       ],
       "native_table_count": 0,
       "content_region": null,
-      "protected_text_shape_ids": [],
-      "multiple_choice": null,
-      "omitted_vectors": [],
-      "review_vectors": [
-        {
-          "source_ordinal": 156,
-          "bounds": {
-            "left": 0.5623937007874016,
-            "top": 0.6167799964067986,
-            "right": 0.6349606299212598,
-            "bottom": 0.7836734071992265
-          },
-          "reason": "unconsumed-vector"
-        }
-      ]
+      "multiple_choice": null
     }
   ]
 }
