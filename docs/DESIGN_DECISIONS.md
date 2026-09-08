@@ -193,8 +193,9 @@ The layout registry supplies the allowed visible layout and slot vocabulary.
 
 ### ODP-derived PDF is the only PDF path
 
-**Decision.** Generate PPTX first, convert it to editable ODP, then have LibreOffice create PDF from
-that ODP.
+**Decision.** Generate native content with `python-pptx`, convert a background-free intermediate to
+editable ODP, apply the authoritative OTP master and styles, then have LibreOffice create PDF from
+that themed ODP. Publish the optional PPTX separately through its shared-theme adapter.
 
 **Why.** One ordered pathway avoids a second PDF implementation and makes the distributed PDF
 represent the editable classroom artifact.
@@ -269,21 +270,25 @@ renders may support QA but never enter canonical Djot or output.
 
 ### The default theme normalizes lecture structure
 
-**Decision.** Apply one native, rule-based lecture theme to standard Djot layouts: a shallow
-blue-to-white top gradient, horizontally centered standard titles, consistent content margins, and
-native hierarchical list paragraphs with theme-owned bullet positions, text tab stops, and hanging
-indents at every supported outline level.
+**Decision.** Use `genetics/xlect99-template_2023.otp` as the sole master-slide theme authority.
+Load its 16:10 page ratio, native top gradient, title typography, and outline-level bullet geometry
+into a format-neutral theme model. Apply the template master and styles to ODP; make PPTX mirror the
+same model as an optional interchange adapter.
 
 **Why.** The legacy lecture decks establish useful common visual rules, but reproducing their
 individual quirks would weaken the consistent authoring system. Explicit presentation semantics let
 PPTX, ODP, and PDF share the same intended structure.
 
-**Consequence.** Wrapped list lines align with their paragraph text, not with the bullet. Nested
-levels have distinct positions and alternating bullet forms. Title-only, title-slide, and centered
-question layouts retain vertical centering where their teaching role calls for it. Exporters may
-translate these native semantics, but no slide-specific pixel matching overrides the theme.
+**Consequence.** The repository retains a stable 1280x800 logical layout canvas, and every accepted
+template must have a 16:10 page ratio; its physical centimeter or inch dimensions may vary. The ODP
+contains the template's real master page rather than a repeated per-slide background. Wrapped list
+lines align with their paragraph text, not with the bullet, and nested levels have distinct bullet
+and text positions. Title-only, title-slide, and centered question layouts retain vertical centering
+where their teaching role calls for it. CSS and browser rendering are not part of the build.
 
-**Owner.** `slide_lib/pptx_theme.py`, `slide_lib/layouts.py`, and their native-export tests.
+**Owner.** `genetics/xlect99-template_2023.otp`, `slide_lib/presentation_theme.py`,
+`slide_lib/odp_theme.py`, `slide_lib/pptx_theme.py`, `slide_lib/layouts.py`, and their native-export
+tests.
 
 ### Vertical root-body layouts use one author-visible block
 
@@ -390,8 +395,8 @@ playback contract; PPTX is the native-builder and interchange artifact.
 
 **Why.** Python provides stronger practical PPTX construction support, while the instructor uses
 LibreOffice rather than Microsoft products. Official OOXML semantics plus observed LibreOffice
-importer/exporter and Impress behavior provide a stable, replaceable boundary without external deck
-templates.
+importer/exporter and Impress behavior provide a stable, replaceable boundary without
+PowerPoint-authored animation templates. The separate ODP master-theme template does not own timing.
 
 **Consequence.** M5 implementation is complete. `pptx_animation.py` is the sole timing-tree owner
 and builds OOXML directly; runtime XML templates and PowerPoint-authored decks are not contracts.
@@ -451,8 +456,8 @@ native shapes.
 same source allocation must remain readable whether the title is present or absent.
 
 **Consequence.** A titleless layout receives its full content region. Local H2 allocation adapts
-from 28 down to 14 CSS px before body placement. An unsupported combination or unreadable allocation
-reports the relevant source location and leaves no partial shapes.
+from 28 down to 14 logical units before body placement. An unsupported combination or unreadable
+allocation reports the relevant source location and leaves no partial shapes.
 
 **Owner.** `slide_lib/layout_validation.py`, `slide_lib/layouts.py`, and [PIPELINE.md](PIPELINE.md).
 
@@ -470,7 +475,7 @@ footprint and may recognize only positive, bounded relation classes. A narrow co
 picture-inset pair stays as direct editable objects in `two-panels`, with exact provenance and one
 explicit permission. Caption pairing is one shared positive relation, grouped before topology and
 reusing the existing `two-plus-one` and footer permission. Adaptive vertical image flow reserves text
-at 28 through 14 CSS px, then scales every image uniformly. Visual relations retain source
+at 28 through 14 logical units, then scales every image uniformly. Visual relations retain source
 membership only long enough to normalize it into standard native components; no private render or
 geometry exception is a routing mechanism. Ambiguous arrangements become a native source-order
 panel with review evidence.

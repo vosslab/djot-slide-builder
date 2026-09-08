@@ -38,6 +38,11 @@ recognizes `.djot` source only, and folder discovery recursively selects only `.
 build begins with editable PPTX: `pptx` stops there, `odp` adds editable ODP, and `pdf` adds the
 ODP-derived PDF. Outputs are written below `output/pptx/`, `output/odp/`, and `output/pdf/`.
 
+The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
+native master and PDF is exported from the themed ODP. PPTX mirrors the same gradient, centered
+title, and hierarchical list rules as an optional interchange format; no CSS or browser rendering
+is part of the build.
+
 ## Import existing slides
 
 Import a trusted ODP into a new extended-Djot deck and adjacent asset directory:

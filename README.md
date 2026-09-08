@@ -14,9 +14,14 @@ raster stage.
 canonical extended-Djot source
   -> repository-owned Djot parser
   -> typed native slide-object model
-  -> slide_lib.layouts native layout builders
-  -> editable PPTX -> editable ODP -> ODP-derived PDF
+  -> slide_lib.layouts native layout builders and shared OTP theme
+  -> editable PPTX interchange artifact
+  -> editable ODP with the authoritative OTP master -> ODP-derived PDF
 ```
+
+The 16:10 master-slide theme is `genetics/xlect99-template_2023.otp`. ODP and PDF are the
+LibreOffice-first outputs; PPTX mirrors the same rules as an optional interchange artifact. The
+theme is native presentation structure, not CSS or a browser-rendered slide.
 
 The included genetics corpus demonstrates the complete path: eight canonical source decks cover
 336 visible slides, with text, nested lists, links, images, and a source-derived table retained as

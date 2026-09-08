@@ -16,6 +16,7 @@ from slide_lib import layouts
 import slide_lib.native_export
 import slide_lib.layout_validation
 import slide_lib.native_model
+import slide_lib.presentation_theme
 
 
 #============================================
@@ -65,7 +66,8 @@ def test_horizontal_grid_layout_keeps_bullets_numbers_and_links(tmp_path: pathli
 		"## [Left](https://example.edu/left)\n- First\n  - Nested\n1. Ordered\n"
 		"@right\n## Right\n- Second\n", encoding="utf-8")
 	output_path = tmp_path / "two-content.pptx"
-	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
+	deck = slide_lib.native_export.parse_deck(deck_path)
+	slide_lib.native_export.render_native_pptx(deck, output_path)
 	shape_xml = "".join(shape.element.xml for shape in Presentation(output_path).slides[0].shapes)
 	assert "buChar" in shape_xml and "buAutoNum" in shape_xml and "hlinkClick" in shape_xml
 
@@ -95,11 +97,21 @@ def test_standard_theme_uses_gradient_band_and_centered_title(tmp_path: pathlib.
 	deck_path = tmp_path / "theme.djot"
 	deck_path.write_text("=== layout: one-panel\n# Centered title\n@body\n- Body\n", encoding="utf-8")
 	output_path = tmp_path / "theme.pptx"
-	slide_lib.native_export.render_native_pptx(slide_lib.native_export.parse_deck(deck_path), output_path)
-	shapes = Presentation(output_path).slides[0].shapes
-	title = next(shape for shape in shapes if shape.has_text_frame and shape.text == "Centered title")
+	deck = slide_lib.native_export.parse_deck(deck_path)
+	slide_lib.native_export.render_native_pptx(deck, output_path)
+	presentation = Presentation(output_path)
+	theme = slide_lib.presentation_theme.default_theme()
+	shapes = presentation.slides[0].shapes
+	title = next(shape for shape in shapes
+		if shape.has_text_frame and shape.text == "Centered title")
 	assert title.text_frame.paragraphs[0].alignment == PP_ALIGN.CENTER
-	assert any("gradFill" in shape.element.xml for shape in shapes)
+	gradient_xml = next(shape.element.xml for shape in shapes if "gradFill" in shape.element.xml)
+	assert presentation.slide_width == round(
+		theme.emu_per_logical_pixel * slide_lib.presentation_theme.LOGICAL_SLIDE_WIDTH)
+	assert presentation.slide_height == round(
+		theme.emu_per_logical_pixel * slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT)
+	assert theme.gradient_start_color in gradient_xml and \
+		theme.gradient_end_color in gradient_xml
 
 
 #============================================
@@ -779,6 +791,7 @@ def test_presentation_chain_converts_odp_to_pdf(tmp_path: pathlib.Path) -> None:
 	deck_path = tmp_path / "chain.djot"
 	deck_path.write_text("=== layout: one-panel\n# Chain\n@body\n- Editable body\n", encoding="utf-8")
 	with mock.patch.object(slide_lib.native_export, "find_repo_root", return_value=tmp_path), \
+		mock.patch.object(slide_lib.native_export, "render_template_odp"), \
 		mock.patch.object(slide_lib.native_export, "convert_presentation"):
 		outputs = slide_lib.native_export.export_deck(str(deck_path), "pdf")
 	assert list(outputs) == ["pptx", "odp", "pdf"]
@@ -827,6 +840,7 @@ def test_export_progress_follows_artifact_dependency_order(tmp_path: pathlib.Pat
 	deck_path.write_text("=== layout: blank\n", encoding="utf-8")
 	stages: list[str] = []
 	with mock.patch.object(slide_lib.native_export, "find_repo_root", return_value=tmp_path), \
+		mock.patch.object(slide_lib.native_export, "render_template_odp"), \
 		mock.patch.object(slide_lib.native_export, "convert_presentation"):
 		slide_lib.native_export.export_deck(str(deck_path), "all", stages.append)
 	assert stages == ["parsing", "pptx", "odp", "pdf"]

@@ -26,6 +26,9 @@ Brewfile             declared macOS command-line and desktop dependencies
   planning, native normalization, and Djot emission.
 - [../genetics/djot/](../genetics/djot/) contains the repository's Djot lecture sources and its
   local authoring README. A deck-local asset tree is created beside an imported deck when needed.
+- `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.
+  `presentation_theme.py` validates and reads it, `odp_theme.py` applies its real master to ODP,
+  and `pptx_theme.py` mirrors it for optional PPTX output.
 - [../tests/](../tests/) holds permanent offline pytest coverage. The
   [../tests/e2e/](../tests/e2e/) subtree holds non-browser whole-system runners that pytest does
   not collect; [../tests/TESTS_README.md](../tests/TESTS_README.md) explains the test lanes.

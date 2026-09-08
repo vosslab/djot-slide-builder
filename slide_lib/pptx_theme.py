@@ -1,35 +1,15 @@
-"""Native PPTX theme semantics shared by every standard Djot slide."""
-
-# Standard Library
-from dataclasses import dataclass
+"""PPTX adapter for the format-neutral ODP-template theme."""
 
 # PIP3 modules
 from pptx.oxml.xmlchemy import OxmlElement
 
+# local repo modules
+import slide_lib.presentation_theme
 
-PX = 9525
-TOP_BAND_HEIGHT = 58.0
-
-
-@dataclass(frozen=True)
-class ListLevelStyle:
-	"""Bullet and text positions for one native outline level, in CSS pixels."""
-	bullet_position: float
-	text_position: float
-	bullet_character: str
-
-
-LIST_LEVEL_STYLES = (
-	ListLevelStyle(11.0, 45.0, "\u25cf"),
-	ListLevelStyle(57.0, 91.0, "\u2013"),
-	ListLevelStyle(106.0, 136.0, "\u25cf"),
-	ListLevelStyle(159.0, 182.0, "\u2013"),
-	ListLevelStyle(204.0, 227.0, "\u25cf"),
-	ListLevelStyle(249.0, 272.0, "\u2013"),
-	ListLevelStyle(295.0, 318.0, "\u25cf"),
-	ListLevelStyle(340.0, 363.0, "\u2013"),
-	ListLevelStyle(386.0, 409.0, "\u25cf"),
-)
+THEME = slide_lib.presentation_theme.default_theme()
+PX = THEME.emu_per_logical_pixel
+TOP_BAND_HEIGHT = THEME.top_band_height
+LIST_LEVEL_STYLES = THEME.list_levels
 
 
 #============================================
@@ -77,8 +57,9 @@ def apply_top_band_gradient(shape: object) -> None:
 	solid_fill = next(child for child in properties if child.tag.endswith("solidFill"))
 	gradient = OxmlElement("a:gradFill")
 	stops = OxmlElement("a:gsLst")
-	# ASVS 1.1.2 and 1.2.1: construct typed OOXML only at the final output boundary.
-	for position, color in ((0, "94B0CC"), (65000, "DEE8F2"), (100000, "FFFFFF")):
+	# ASVS 2.2.1: gradient colors come only from the validated template contract.
+	for position, color in ((0, THEME.gradient_start_color),
+			(100000, THEME.gradient_end_color)):
 		stop = OxmlElement("a:gs")
 		stop.set("pos", str(position))
 		value = OxmlElement("a:srgbClr")

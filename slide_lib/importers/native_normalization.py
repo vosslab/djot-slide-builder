@@ -1,25 +1,26 @@
 """Canonical native fallbacks for legacy spatial presentation structures."""
 
-# Standard Library
-from typing import Protocol
-
-
 MAX_POSITIONED_LABELS = 12
 
 
-class LineComponent(Protocol):
-	"""Structural line surface required by native source-order normalization."""
-	lines: tuple[str, ...]
+#============================================
+def component_lines(component: object) -> tuple[str, ...]:
+	"""Read the emitter component line surface without creating a circular import."""
+	lines = getattr(component, "lines", None)
+	if not isinstance(lines, tuple) or any(not isinstance(line, str) for line in lines):
+		raise TypeError("native normalization requires a tuple of component lines")
+	return lines
 
 
 #============================================
-def one_panel_lines(heading: list[str], components: list[LineComponent]) -> list[str]:
+def one_panel_lines(heading: list[str], components: list[object]) -> list[str]:
 	"""Collapse components into one standard panel while retaining visible source order."""
-	local_headings = [line for component in components for line in component.lines
+	component_groups = [component_lines(component) for component in components]
+	local_headings = [line for lines in component_groups for line in lines
 		if line.startswith("## ")]
 	body_groups: list[list[str]] = []
-	for component in components:
-		group = [line[3:] if line.startswith("## ") else line for line in component.lines
+	for lines in component_groups:
+		group = [line[3:] if line.startswith("## ") else line for line in lines
 			if not (line.startswith("## ") and line == local_headings[0] if local_headings else False)]
 		while group and not group[0]:
 			group.pop(0)

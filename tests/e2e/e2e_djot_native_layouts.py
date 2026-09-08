@@ -23,11 +23,14 @@ from pptx.enum.shapes import MSO_SHAPE_TYPE
 
 # Local Modules
 import slide_lib.layouts
+import slide_lib.presentation_theme
 
 
 NAMESPACES = {
 	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
 	"office": "urn:oasis:names:tc:opendocument:xmlns:office:1.0",
+	"style": "urn:oasis:names:tc:opendocument:xmlns:style:1.0",
+	"svg": "urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0",
 	"text": "urn:oasis:names:tc:opendocument:xmlns:text:1.0",
 }
 
@@ -67,6 +70,8 @@ def title_source(spec: slide_lib.layouts.LayoutSpec) -> list[str]:
 #============================================
 def cell_source(spec: slide_lib.layouts.LayoutSpec, slot_name: str) -> list[str]:
 	"""Return minimal valid source for one declared named cell."""
+	if spec.name == "one-panel":
+		return ["- Native parent list item", "  - Native nested list item"]
 	if spec.name == "multiple-choice" and slot_name == "question":
 		return ["Which editable object remains visible?", "", "- Choice A", "- Choice B"]
 	if spec.name == "multiple-choice" and slot_name == "answer":
@@ -135,6 +140,14 @@ def inspect_pptx(pptx_path: pathlib.Path, layout_names: tuple[str, ...]) -> None
 	require(pictures, "PPTX gallery retains the Djot component image as a native picture")
 	multiple_choice_index = layout_names.index("multiple-choice")
 	inspect_multiple_choice_pptx(presentation.slides[multiple_choice_index])
+	one_panel_index = layout_names.index("one-panel")
+	list_paragraphs = {paragraph.text: paragraph
+		for shape in presentation.slides[one_panel_index].shapes if shape.has_text_frame
+		for paragraph in shape.text_frame.paragraphs if paragraph.text}
+	parent = list_paragraphs["Native parent list item"]
+	nested = list_paragraphs["Native nested list item"]
+	require(parent.level == 0 and nested.level == 1 and parent._p.xml != nested._p.xml,
+		"PPTX preserves distinct native list levels and theme indentation")
 
 
 #============================================
@@ -160,9 +173,31 @@ def inspect_odp(odp_path: pathlib.Path, layout_names: tuple[str, ...]) -> None:
 	"""Verify LibreOffice preserved separate editable ODP text and image objects."""
 	with zipfile.ZipFile(odp_path) as archive:
 		content_root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+		styles_root = defusedxml.ElementTree.fromstring(archive.read("styles.xml"))
 	pages = content_root.findall("./office:body/office:presentation/draw:page", NAMESPACES)
 	require(odp_path.stat().st_size > 0 and len(pages) == len(layout_names),
 		"ODP exists, is nonempty, and has one page per live layout")
+	theme = slide_lib.presentation_theme.default_theme()
+	master_attribute = slide_lib.presentation_theme.qname("draw", "master-page-name")
+	masters = styles_root.findall(".//style:master-page", NAMESPACES)
+	require(all(page.attrib[master_attribute] == theme.master_name for page in pages) and
+		len(masters) == 1,
+		"ODP pages use the sole authoritative template master")
+	direct_bands = [shape for page in pages
+		for shape in page.findall("./draw:custom-shape", NAMESPACES)
+		if shape.attrib.get(slide_lib.presentation_theme.qname("svg", "x")) == "0cm" and
+		shape.attrib.get(slide_lib.presentation_theme.qname("svg", "y")) == "0cm" and
+		not element_text(shape).strip()]
+	require(not direct_bands, "ODP top band comes from the master rather than repeated slide shapes")
+	one_panel_index = layout_names.index("one-panel")
+	outlines = pages[one_panel_index].findall(".//text:list", NAMESPACES)
+	parent_outline = next(item for item in outlines
+		if "Native parent list item" in element_text(item))
+	nested_outline = next(item for item in outlines
+		if "Native nested list item" in element_text(item))
+	require(parent_outline is not nested_outline and
+		nested_outline.find("./text:list-item/text:list", NAMESPACES) is not None,
+		"ODP preserves parent and nested items as native level-specific lists")
 	gallery_index = layout_names.index("gallery")
 	gallery_images = pages[gallery_index].findall(".//draw:image", NAMESPACES)
 	require(gallery_images, "ODP gallery retains the Djot component image as an editable draw image")

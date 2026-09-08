@@ -65,7 +65,7 @@ editable-object pipeline.
 | --- | --- | --- |
 | Fast pytest | Permanent, offline | Parser, grammar, layout, suffix, and source diagnostics |
 | Strict Jotdown and source lint | One-time/source acceptance | Raw-Djot syntax and project slide semantics |
-| Native E2E | Passed explicit E2E | The real editable PPTX -> ODP -> PDF chain |
+| Native E2E | Passed explicit E2E | Editable PPTX plus OTP-master ODP and ODP-derived PDF |
 | Imported corpus review | Passed one-time acceptance | Regenerated corpus, provenance, asset integrity, and reproducibility |
 | Native all-format output | Passed one-time acceptance | Editable PPTX, ODP, and PDF artifacts for every regenerated deck |
 | LibreOffice bridge | Passed one-time check | Timing package semantics, editable ODP objects, and PDF final state |

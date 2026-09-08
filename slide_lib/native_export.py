@@ -15,6 +15,7 @@ from pptx.enum.text import PP_ALIGN
 from slide_lib import layouts
 from slide_lib import libreoffice
 from slide_lib import djot_parser
+from slide_lib import odp_theme
 from slide_lib import pptx_animation
 import slide_lib.native_model
 
@@ -77,7 +78,8 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 
 
 #============================================
-def render_native_pptx(deck: slide_lib.native_model.Deck, output_path: pathlib.Path) -> pathlib.Path:
+def render_native_pptx(deck: slide_lib.native_model.Deck, output_path: pathlib.Path,
+		include_theme_background: bool = True) -> pathlib.Path:
 	"""Write every parsed slide as separate editable native PPTX objects."""
 	presentation = Presentation()
 	presentation.slide_width = layouts.px(layouts.SLIDE_WIDTH)
@@ -87,7 +89,8 @@ def render_native_pptx(deck: slide_lib.native_model.Deck, output_path: pathlib.P
 	for number, source in enumerate(deck.slides, start=1):
 		slide = presentation.slides.add_slide(blank_layout)
 		writer = pptx_animation.PptxAnimationWriter(slide)
-		layouts.render_layout(slide, source, deck, writer)
+		layouts.render_layout(slide, source, deck, writer,
+			include_theme_background=include_theme_background)
 		if source.paginate:
 			text_frame = layouts.add_textbox(slide, 1190, 762, 62, 22)
 			text_frame.paragraphs[0].alignment = PP_ALIGN.RIGHT
@@ -116,6 +119,22 @@ def convert_presentation(input_path: pathlib.Path, output_path: pathlib.Path,
 
 
 #============================================
+def render_template_odp(deck: slide_lib.native_model.Deck, output_path: pathlib.Path,
+		repo_root: pathlib.Path) -> pathlib.Path:
+	"""Render editable slide objects beneath the authoritative ODP template master."""
+	output_root = repo_root / "output"
+	output_root.mkdir(parents=True, exist_ok=True)
+	with tempfile.TemporaryDirectory(prefix=".template_odp.", dir=output_root) as temporary_value:
+		temporary_root = pathlib.Path(temporary_value)
+		content_pptx = temporary_root / "content.pptx"
+		converted_odp = temporary_root / "content.odp"
+		render_native_pptx(deck, content_pptx, include_theme_background=False)
+		convert_presentation(content_pptx, converted_odp, "odp", repo_root)
+		odp_theme.apply_template_master(converted_odp, output_path)
+	return output_path
+
+
+#============================================
 def report_progress(progress_callback: collections.abc.Callable[[str], None] | None,
 		stage: str) -> None:
 	"""Report a build stage when the caller supplied a progress callback."""
@@ -141,7 +160,7 @@ def export_deck(input_value: str, output_format: str,
 	generated = {"pptx": render_native_pptx(deck, outputs["pptx"])}
 	if output_format in ("all", "odp", "pdf"):
 		report_progress(progress_callback, "odp")
-		convert_presentation(outputs["pptx"], outputs["odp"], "odp", repo_root)
+		render_template_odp(deck, outputs["odp"], repo_root)
 		generated["odp"] = outputs["odp"]
 	if output_format in ("all", "pdf"):
 		report_progress(progress_callback, "pdf")

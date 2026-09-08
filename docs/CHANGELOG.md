@@ -1,5 +1,16 @@
 ## 2026-09-08
 
+### Additions and New Features
+
+- Made `genetics/xlect99-template_2023.otp` the authoritative master-slide theme. Added a validated
+  format-neutral reader for its 16:10 page, top gradient, centered title typography, and nine native
+  outline levels, plus ODP and PPTX adapters over that shared model.
+- The ODP build now creates editable content, applies the real OTP master and styles, and exports
+  PDF from that themed ODP. PPTX remains an editable interchange artifact that mirrors the same
+  theme.
+- Kept layout authoring on a stable 1280x800 logical canvas. The 16:10 ratio is mandatory while the
+  template's physical centimeter or inch dimensions are not an authoring constraint.
+
 ### Fixes and Maintenance
 
 - Ran the requested six-pass code audit over the native Djot theme, legacy importer normalization,
@@ -12,6 +23,8 @@
   tracked path while Git operations remain outside this work.
 - Corrected current changelog wording that described the superseded bounded-raster implementation as
   live behavior, and clarified the canonical theme and simplification behavior for newcomers.
+- Replaced residual `CSS px` terminology with format-neutral logical units; CSS and browser
+  rendering are not part of the presentation theme pipeline.
 
 ### Decisions and Failures
 
@@ -24,9 +37,15 @@
 
 ### Developer Tests and Notes
 
-- Focused importer, exporter, and hygiene verification passed 557 tests after pruning. The full
-  permanent offline suite passed 1,657 tests, and strict native Jotdown validation retained 8 Djot
+- Theme, native-export, importer, and hygiene verification passed 757 focused tests. The full
+  permanent offline suite passed 1,682 tests, and strict native Jotdown validation retained 8 Djot
   sources, 336 slides, and 185 genuine image references.
+- The native-layout E2E passed through editable PPTX, OTP-master ODP, and ODP-derived PDF with
+  distinct native list levels. The full Genetics build produced 24 artifacts; all 336 slides had
+  matching counts, every ODP used the exact template styles and master, every PPTX was 16:10, and no
+  PPTX contained a full-slide picture substitution.
+- Cropped ODP-derived PDF checks, rather than whole-slide screenshots, confirmed the shallow
+  gradient, centered title, level-specific bullet forms, and wrapped-line hanging alignment.
 - The first full-suite cleanup run stopped during collection because the deleted tracked migration
   plan remained in repository file discovery. Git operations were out of scope, so the path was
   restored as a concise retired marker; the corrected full suite then passed.

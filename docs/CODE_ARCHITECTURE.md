@@ -25,8 +25,12 @@ source. Trusted ODP and PPTX files enter only through the one-time import workfl
 - [../slide_lib/layouts.py](../slide_lib/layouts.py) owns the native layout registry, capacity
   preflight, and editable PPTX object construction. It uses `python-pptx`, Pillow, and the text and
   animation helpers beside it.
-- [../slide_lib/pptx_theme.py](../slide_lib/pptx_theme.py) owns the native top-band gradient and
-  level-specific list bullet, tab-stop, and hanging-indent semantics shared by standard slides.
+- [../slide_lib/presentation_theme.py](../slide_lib/presentation_theme.py) validates and reads the
+  format-neutral theme from `genetics/xlect99-template_2023.otp`.
+  [../slide_lib/pptx_theme.py](../slide_lib/pptx_theme.py) projects its gradient and outline
+  values into the optional PPTX artifact;
+  [../slide_lib/odp_theme.py](../slide_lib/odp_theme.py) applies the actual template master and
+  styles to editable ODP.
 - [../slide_lib/layout_validation.py](../slide_lib/layout_validation.py) is the semantic gate between
   typed authored blocks and a layout: it rejects unsupported or unplaceable source with its
   canonical source location before native objects are constructed.
@@ -62,9 +66,11 @@ The normal build path is:
   -> slide_lib.cli and slide_lib.terminal_output
   -> slide_lib.native_export
   -> slide_lib.djot_parser and slide_lib.native_model
-  -> slide_lib.layouts
-  -> editable PPTX
-  -> LibreOffice ODP
+  -> slide_lib.layouts and the format-neutral OTP theme
+  -> editable PPTX interchange artifact
+  -> LibreOffice content ODP
+  -> authoritative OTP master and styles
+  -> editable themed ODP
   -> LibreOffice PDF
 ```
 

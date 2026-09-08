@@ -19,9 +19,11 @@ import slide_lib.layout_validation
 import slide_lib.editable_text
 import slide_lib.pptx_animation
 import slide_lib.pptx_theme
+import slide_lib.presentation_theme
 
 
-PX = 9525
+THEME = slide_lib.presentation_theme.default_theme()
+PX = THEME.emu_per_logical_pixel
 SLIDE_WIDTH = 1280
 SLIDE_HEIGHT = 800
 LEFT = 60.0
@@ -30,11 +32,12 @@ TITLE_TOP = 52.0
 CONTENT_BOTTOM = 754.0
 CELL_GUTTER = 42.0
 GRID_GUTTER = 24.0
-CSS_TO_OFFICE_POINTS = 0.75
+LOGICAL_PX_TO_POINTS = slide_lib.presentation_theme.POINTS_PER_LOGICAL_PIXEL
+STANDARD_TITLE_SIZE = THEME.standard_title_size
 BODY_LINE_HEIGHT = 1.3
 LIST_ITEM_SPACE_EM = 0.25
 MIN_READABLE_BODY_SIZE = 14.0
-FONT_NAME = "OpenDyslexic"
+FONT_NAME = THEME.title_font_name
 URL_FONT_NAME = "PT Sans Narrow"
 ACCENT = RGBColor(0x24, 0x57, 0x8F)
 FOREGROUND = RGBColor(0x17, 0x20, 0x33)
@@ -97,14 +100,14 @@ class CellFlowPlan:
 
 #============================================
 def px(value: float) -> Emu:
-	"""Convert a 1280x800 CSS-pixel coordinate to Office EMUs."""
+	"""Convert a 1280x800 logical coordinate to template-scaled Office EMUs."""
 	return Emu(round(value * PX))
 
 
 #============================================
-def css_px_to_pt(value: float) -> float:
-	"""Convert CSS font pixels to Office points exactly once."""
-	return value * CSS_TO_OFFICE_POINTS
+def logical_px_to_pt(value: float) -> float:
+	"""Convert one logical font unit to Office points exactly once."""
+	return value * LOGICAL_PX_TO_POINTS
 
 
 #============================================
@@ -153,7 +156,7 @@ def write_run(run: object, text: str, size: float, color: object, bold: bool = F
 	"""Apply the repository font contract to one editable run."""
 	run.text = text
 	run.font.name = URL_FONT_NAME if displayed_url else FONT_NAME
-	run.font.size = Pt(css_px_to_pt(size))
+	run.font.size = Pt(logical_px_to_pt(size))
 	run.font.bold = bold
 	run.font.italic = italic
 	run.font.color.rgb = color
@@ -256,7 +259,7 @@ def fit_body_size(item_sets: list[list[tuple[tuple[slide_lib.native_model.Inline
 		if all(estimate_items_height(items, size, width) <= height for items in item_sets):
 			return size
 	raise LayoutError(f"{source.path}:{source.line}: {context} content cannot fit within the supported readable minimum of "
-		f"{MIN_READABLE_BODY_SIZE:g} CSS px")
+		f"{MIN_READABLE_BODY_SIZE:g} logical units")
 
 
 #============================================
@@ -285,7 +288,8 @@ def fit_table_size(table: slide_lib.native_model.Table, width: float, height: fl
 		if estimate_table_height(table, size, width) <= height:
 			return size
 	raise layout_error(table.location,
-		f"{context} table cannot fit within the supported readable minimum of {MIN_READABLE_BODY_SIZE:g} CSS px")
+		f"{context} table cannot fit within the supported readable minimum of "
+		f"{MIN_READABLE_BODY_SIZE:g} logical units")
 
 
 #============================================
@@ -324,7 +328,7 @@ def write_items(frame: object, items: list[tuple[tuple[slide_lib.native_model.In
 		paragraph = first_paragraph if index == 0 and first_paragraph is not None else (
 			frame.paragraphs[0] if index == 0 else frame.add_paragraph())
 		paragraph.level = level
-		paragraph.space_after = Pt(css_px_to_pt(size * LIST_ITEM_SPACE_EM))
+		paragraph.space_after = Pt(logical_px_to_pt(size * LIST_ITEM_SPACE_EM))
 		paragraph.line_spacing = BODY_LINE_HEIGHT
 		try:
 			slide_lib.pptx_theme.apply_list_theme(paragraph, level, ordered, paragraph_only, start)
@@ -339,7 +343,7 @@ def add_background(slide: object) -> None:
 	slide.background.fill.solid()
 	slide.background.fill.fore_color.rgb = WHITE
 	accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, px(0), px(0),
-		px(SLIDE_WIDTH), px(slide_lib.pptx_theme.TOP_BAND_HEIGHT))
+		px(SLIDE_WIDTH), px(THEME.top_band_height))
 	accent.fill.solid()
 	accent.fill.fore_color.rgb = ACCENT
 	slide_lib.pptx_theme.apply_top_band_gradient(accent)
@@ -416,7 +420,7 @@ def plan_cell_flow(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mod
 	offending = next(block for block in blocks if isinstance(block, slide_lib.native_model.Image))
 	raise layout_error(offending.location,
 		f"{context} ordered text and component-image flow cannot fit within the supported readable minimum of "
-		f"{MIN_READABLE_BODY_SIZE:g} CSS px")
+		f"{MIN_READABLE_BODY_SIZE:g} logical units")
 
 
 #============================================
@@ -457,7 +461,7 @@ def title_and_content_top(slide: object, source: slide_lib.native_model.Slide,
 			run.font.bold = True
 		slide_lib.pptx_animation.register_text_reveal(slide, frame, title)
 		return 178, 82, RIGHT - 178
-	size = 48.0
+	size = STANDARD_TITLE_SIZE
 	height = title_height(title, size, RIGHT - LEFT)
 	frame = add_textbox(slide, LEFT, TITLE_TOP, RIGHT - LEFT, height)
 	paragraph = frame.paragraphs[0]
@@ -534,7 +538,8 @@ def plan_cell_body(cell: slide_lib.native_model.Cell,
 		if heading_height + 10 <= height:
 			return CellBodyPlan((left, top + heading_height + 10, width, height - heading_height - 10), size)
 	raise layout_error(headings[0].location,
-		f"local H2 cannot fit within the supported readable minimum of {MIN_READABLE_BODY_SIZE:g} CSS px")
+		f"local H2 cannot fit within the supported readable minimum of "
+		f"{MIN_READABLE_BODY_SIZE:g} logical units")
 
 
 #============================================
@@ -591,9 +596,9 @@ def plan_title_body(source: slide_lib.native_model.Slide, title: slide_lib.nativ
 			slot_name, location = failure
 			raise layout_error(location,
 				f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
-				f"{MIN_READABLE_BODY_SIZE:g} CSS px")
+				f"{MIN_READABLE_BODY_SIZE:g} logical units")
 		return TitleBodyPlan((LEFT, 60.0, 94.0, 666.0), size, content, True)
-	size = 48.0
+	size = STANDARD_TITLE_SIZE
 	title_height_value = title_height(title, size, RIGHT - LEFT)
 	content_top = TITLE_TOP + title_height_value + 24
 	content = (LEFT, content_top, RIGHT - LEFT, CONTENT_BOTTOM - content_top)
@@ -605,7 +610,7 @@ def plan_title_body(source: slide_lib.native_model.Slide, title: slide_lib.nativ
 		slot_name, location = failure
 		raise layout_error(location,
 			f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
-			f"{MIN_READABLE_BODY_SIZE:g} CSS px")
+			f"{MIN_READABLE_BODY_SIZE:g} logical units")
 	slot_name, _ = failure
 	raise layout_error(title.location,
 		f"{spec.name} H1 allocation leaves {slot_name} without its readable body region")
@@ -623,7 +628,7 @@ def plan_content(source: slide_lib.native_model.Slide, spec: LayoutSpec) -> Titl
 		slot_name, location = failure
 		raise layout_error(location,
 			f"{spec.name} {slot_name} content cannot fit within the supported readable minimum of "
-			f"{MIN_READABLE_BODY_SIZE:g} CSS px")
+			f"{MIN_READABLE_BODY_SIZE:g} logical units")
 	return TitleBodyPlan(None, 0.0, content, False)
 
 
@@ -968,11 +973,13 @@ LAYOUTS: dict[str, LayoutSpec] = {
 }
 #============================================
 def render_layout(slide: object, source: slide_lib.native_model.Slide, deck: slide_lib.native_model.Deck,
-		writer: slide_lib.pptx_animation.PptxAnimationWriter | None = None) -> None:
+		writer: slide_lib.pptx_animation.PptxAnimationWriter | None = None,
+		include_theme_background: bool = True) -> None:
 	"""Validate and render exactly one native layout on a blank slide."""
 	spec = validate_layout_source(source)
 	preflight_layout_capacity(source, spec, deck)
 	if writer is not None:
 		setattr(slide, "_slide_animation_writer", writer)
-	add_background(slide)
+	if include_theme_background:
+		add_background(slide)
 	spec.builder(slide, source, deck, spec)

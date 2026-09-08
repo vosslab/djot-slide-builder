@@ -34,6 +34,12 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Use one consistent, rule-based Djot theme rather than preserving slide-specific quirks. Use the
   old lecture decks only as visual guidance: a shallow blue-to-white top band, centered standard
   titles, sensible margins, and hierarchical bullets with hanging indents and aligned wraps.
+- Use `genetics/xlect99-template_2023.otp` solely as the master-slide theme authority. ODP and PDF
+  are the primary classroom outputs; PPTX is an optional interchange artifact, not the theme owner.
+- Keep every presentation at 16:10. The physical page dimensions are not important; authoring and
+  layout should use a stable 1280x800 logical canvas instead of paper-size assumptions.
+- Do not use a browser or CSS as the presentation theme engine. Preserve theme and list behavior as
+  native ODP/PPTX presentation semantics so LibreOffice can edit and export them.
 - Remove full-slide and large composite screenshot substitution from import and production. Keep
   genuine source figures, photographs, diagrams, and intentional screenshots as normal images.
 - An imperfect native reconstruction is useful diagnostic information. Normalize hard legacy slides

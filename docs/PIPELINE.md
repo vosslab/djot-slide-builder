@@ -29,10 +29,17 @@ canonical extended-Djot source
   -> slide_lib.native_export
   -> slide_lib.djot_parser
   -> typed native slide-object model
-  -> slide_lib.layouts
-  -> python-pptx editable PPTX
-  -> LibreOffice editable ODP
-  -> LibreOffice PDF from that ODP
+  -> slide_lib.layouts using the format-neutral OTP theme
+  -> python-pptx editable PPTX interchange artifact
+  -> background-free native PPTX intermediate
+  -> LibreOffice content ODP
+  -> authoritative OTP master and styles applied to editable ODP
+  -> LibreOffice PDF from that themed ODP
+
+genetics/xlect99-template_2023.otp
+  -> slide_lib.presentation_theme
+  -> shared 16:10 geometry, title, gradient, and outline semantics
+  -> slide_lib.pptx_theme adapter and slide_lib.odp_theme master application
 ```
 
 The PDF path is intentionally downstream of editable ODP. Rendering a final ODP-derived PDF for
@@ -55,8 +62,10 @@ visual QA is separate from the production object-conversion chain and never supp
 | `slide_lib/djot_parser.py` | Extended-Djot framing, slots, actions, and block assembly | Typed slide model |
 | `slide_lib/djot_grammar.py` | Exact directive and action spellings derived from the layout registry | Shared Djot contract |
 | `slide_lib/djot_lint.py` | Strict-tool invocation and source-only Djot semantics | Source diagnostics |
-| `slide_lib/layouts.py` | Registry and native geometry for every supported layout | Editable PPTX objects |
-| `slide_lib/pptx_theme.py` | Native lecture theme and outline-level semantics | Gradient, bullets, tabs, and hanging indents |
+| `slide_lib/layouts.py` | Registry and 1280x800 logical geometry for every supported layout | Editable native objects |
+| `slide_lib/presentation_theme.py` | Validated, format-neutral reading of the authoritative OTP | 16:10 page, gradient, title, and outline values |
+| `slide_lib/pptx_theme.py` | Optional PPTX projection of the shared theme | Gradient, bullets, tabs, and hanging indents |
+| `slide_lib/odp_theme.py` | ODP package retargeting to the authoritative template master | Editable themed ODP |
 | `slide_lib/libreoffice.py` | Process preflight, conversion, and PDF filter | PPTX, ODP, and PDF conversions |
 | `slide_lib/native_export.py` | Deck discovery, export stages, notes, pagination, and paths | Ordered deck and artifact paths |
 | `slide_lib/terminal_output.py` | Transient progress, summaries, and expected failures | One concise Rich interface |
@@ -85,7 +94,7 @@ matcher first; special relations are positive, bounded classifications rather th
 A narrow coarse-body and picture-inset pair remains two direct editable objects in `two-panels`,
 using exact source provenance and one explicit permission. Caption pairing is a single shared
 positive relation grouped before topology and reuses the existing `two-plus-one` and footer
-permission. Adaptive vertical image flow reserves text at 28 through 14 CSS px, then uniformly
+permission. Adaptive vertical image flow reserves text at 28 through 14 logical units, then uniformly
 scales every image. These routes do not use slide-specific geometry exceptions.
 
 A tightly coupled diagram and its distributed labels project as native text and genuine source
@@ -129,11 +138,14 @@ The first sixteen names are the LibreOffice grid catalog. `gallery` is a reposit
 contained image row. LibreOffice is not asked to apply the grid: Python creates the text boxes,
 lists, images, shapes, and vertical text direction directly through `python-pptx`.
 
-Every standard slide receives the native lecture theme from `pptx_theme.py`: a shallow
-blue-to-white band across the top, centered standard titles, and consistent content insets. Each
-Djot list item becomes its own presentation paragraph. Nine outline levels define separate bullet
-positions, text tab stops, and hanging indents so wrapped lines align with the text; these native
-semantics survive the PPTX-to-ODP-to-PDF chain.
+Every standard slide receives the native lecture theme defined by
+`genetics/xlect99-template_2023.otp`: a shallow gradient band across the top, centered standard
+titles, and consistent content insets. The repository maps its 16:10 page to a stable 1280x800
+logical canvas; the template's physical page size is not an authoring contract. Each Djot list item
+becomes its own presentation paragraph. Nine outline levels define separate bullet positions, text
+tab stops, and hanging indents so wrapped lines align with the text. ODP pages reference the actual
+template master, PDF is exported from that ODP, and PPTX mirrors the same values as an interchange
+adapter. No browser or CSS runtime participates in this theme path.
 
 Each Djot slide begins with exact `=== layout: <name>` and uses exact `@<slot>` directives. The
 layout registry is the authority for legal layout and slot names, including asymmetric slots:
@@ -147,8 +159,9 @@ fallback.
 Ordinary panel layouts accept zero or one global H1. Each ordinary cell may also carry one local H2
 followed by native text, images, or one source-derived table. A validated table renders only in a
 layout region with a native table destination. Before any shape is created, the layout preflight
-gives a local heading its required height and fits body text from 28 down to 14 CSS px. A title,
-heading, table, or body that cannot fit reports its source location before a partial slide can exist.
+gives a local heading its required height and fits body text from 28 down to 14 logical units. A
+title, heading, table, or body that cannot fit reports its source location before a partial slide
+can exist.
 
 ## Extended-Djot language boundary
 
@@ -174,7 +187,7 @@ source-located rather than disappearing.
 | Lane | Establishes |
 | --- | --- |
 | Fast Python tests | Parser, layout validation, native object construction, and source diagnostics |
-| Native semantic E2E | PPTX/ODP text, lists, links, component images, counts, and no full-slide image |
+| Native semantic E2E | PPTX/ODP text, lists, links, component images, template master, counts, and no full-slide image |
 | ODP-derived PDF review | Final-page containment and visual teaching clarity |
 | Strict Jotdown gate | Raw-Djot syntax before project slide semantics |
 | Importer acceptance | Source conversion, full-corpus build, provenance, and visual comparisons |
