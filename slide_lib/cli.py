@@ -11,7 +11,6 @@ import slide_lib.djot_lint
 import slide_lib.terminal_output
 import slide_lib.importers.odp_to_djot
 import slide_lib.importers.odp_visibility
-import slide_lib.importers.pptx_to_djot
 
 
 ImportOperation = collections.abc.Callable[[pathlib.Path, pathlib.Path | None], None]
@@ -24,13 +23,10 @@ class CliUsageError(ValueError):
 #============================================
 def select_importer(source_suffix: str) -> ImportOperation:
 	"""Select the Djot import operation for one imported-deck suffix."""
-	importers = {
-		".odp": slide_lib.importers.odp_to_djot.run_import,
-		".pptx": slide_lib.importers.pptx_to_djot.run_import,
-	}
+	importers = {".odp": slide_lib.importers.odp_to_djot.run_import}
 	# ASVS 2.2.1: select import behavior only from the supported suffix allow list.
 	if source_suffix.lower() not in importers:
-		raise CliUsageError("import source must use the .odp or .pptx extension")
+		raise CliUsageError("import source must use the .odp extension")
 	operation = importers[source_suffix.lower()]
 	return operation
 
@@ -44,10 +40,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 	build_parser = subparsers.add_parser("build", help="build one deck or a deck folder")
 	build_parser.add_argument("input_path", help="source deck or folder tree")
 	build_parser.add_argument("-f", "--format", dest="output_format",
-		choices=("all", "pptx", "odp", "pdf"), default="all")
+		choices=("all", "odp", "pdf"), default="all")
+	capacity_parser = subparsers.add_parser("capacity",
+		help="inspect capacity concerns without writing presentation artifacts")
+	capacity_parser.add_argument("input_path", help="source deck or folder tree")
 
-	import_parser = subparsers.add_parser("import", help="import one trusted ODP or PPTX deck")
-	import_parser.add_argument("input_file", type=pathlib.Path, help="trusted ODP or PPTX")
+	import_parser = subparsers.add_parser("import", help="import one trusted ODP deck")
+	import_parser.add_argument("input_file", type=pathlib.Path, help="trusted ODP")
 	import_parser.add_argument("-o", "--output", dest="output_file", type=pathlib.Path)
 
 	lint_parser = subparsers.add_parser("lint", help="validate extended-Djot source")
@@ -74,6 +73,8 @@ def main(argv: list[str] | None = None) -> int:
 	args = parse_args(argv)
 	if args.command == "build":
 		return slide_lib.terminal_output.run_build(args.input_path, args.output_format)
+	if args.command == "capacity":
+		return slide_lib.terminal_output.run_capacity(args.input_path)
 	if args.command == "import":
 		try:
 			operation = select_importer(args.input_file.suffix)

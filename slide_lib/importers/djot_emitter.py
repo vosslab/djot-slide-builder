@@ -6,7 +6,7 @@ import itertools
 import re
 
 # local repo modules
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.import_report as import_report
 import slide_lib.importers.native_normalization as native_normalization
@@ -40,7 +40,7 @@ SHALLOW_FLOW_MAX_SMALLER_HEIGHT_RATIO = 0.25
 PRIMED_SEQUENCE = re.compile(
 	r"([35])[\u2032\u2019'']-([ACGTU][ACGTU|/,.]{2,}[ACGTU])-[\u2032\u2019'']([35])"
 )
-# Direct PPTX text commonly retains the conventional number-then-prime order.
+# Imported source text commonly retains the conventional number-then-prime order.
 CONVENTIONAL_PRIMED_SEQUENCE = re.compile(
 	r"([35])[\u2032\u2019'']-([ACGTU][ACGTU|/,.]{2,}[ACGTU])-([35])[\u2032\u2019'']"
 )
@@ -427,26 +427,18 @@ def coalesce_bottom_footer(components: list[EmissionComponent]) -> list[Emission
 		classification_reason=BOTTOM_FOOTER_RELATION_REASON,
 		source_order=min((item.source_order for item in footer if item.source_order), default=()))
 	return [item for item in components if item not in footer] + [merged]
-
-
 #============================================
 def column_footer_padding(column: EmissionComponent) -> float:
 	"""Bound source padding by both normalized and column-relative footer limits."""
 	return min(FOOTER_IMAGE_PADDING_RATIO, FOOTER_COLUMN_BOTTOM_PADDING_RATIO * column.bounds.height)
-
-
 #============================================
 def component_read_key(component: EmissionComponent) -> tuple[float, float, int]:
 	"""Order components geometrically; immutable source ordinals break exact ties."""
 	return component.bounds.top, component.bounds.left, min(component.source_ordinals, default=0)
-
-
 #============================================
 def component_footprints(component: EmissionComponent) -> tuple[geometry.NormalizedBounds, ...]:
 	"""Return immutable component members, with direct bounds for synthetic callers."""
 	return component.member_footprints or (component.bounds,)
-
-
 #============================================
 def coalesce_text_flows(components: list[EmissionComponent]) -> list[EmissionComponent]:
 	"""Join unique vertically stacked editable text blocks within one source lane."""
@@ -480,18 +472,14 @@ def coalesce_text_flows(components: list[EmissionComponent]) -> list[EmissionCom
 			source_kind=members[0].source_kind if all(member.source_kind == members[0].source_kind for member in members) else "",
 			source_order=min((member.source_order for member in members if member.source_order), default=())))
 	return result
-
-
 #============================================
 def follows_text_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
 	"""Recognize a separated next text block that shares a substantial lane."""
 	gap = second.bounds.top - first.bounds.bottom
 	return gap >= 0.0 and follows_same_lane(first, second) or shallow_overlap_text_lane(first, second)
-
-
 #============================================
 def shallow_overlap_text_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
-	"""Recognize one direct text-box continuation with a bounded source border overlap."""
+	"""Recognize one adjacent direct text box with a bounded source border overlap."""
 	if component_read_key(first) >= component_read_key(second) or any(item.kind != "text" or
 		item.source_kind != "text-box" or item.coarse_text_container or abs(item.rotation_degrees) >= 1.0 or
 		len(component_footprints(item)) != 1 for item in (first, second)):
@@ -500,8 +488,6 @@ def shallow_overlap_text_lane(first: EmissionComponent, second: EmissionComponen
 	return abs(first.bounds.left - second.bounds.left) <= .01 and \
 		abs(first.bounds.width - second.bounds.width) <= max(first.bounds.width, second.bounds.width) * .02 and \
 		0.0 < overlap <= SHALLOW_FLOW_MAX_VERTICAL_OVERLAP and overlap <= min(first.bounds.height, second.bounds.height) * SHALLOW_FLOW_MAX_SMALLER_HEIGHT_RATIO
-
-
 #============================================
 def shallow_overlap_lane_competes(components: list[EmissionComponent], first: EmissionComponent,
 		second: EmissionComponent) -> bool:
@@ -511,8 +497,6 @@ def shallow_overlap_lane_competes(components: list[EmissionComponent], first: Em
 			abs(candidate_first.bounds.left - first.bounds.left) > .01:
 			return True
 	return False
-
-
 #============================================
 def follows_footer_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
 	"""Allow bounded source padding only for ordered full-width footer members."""
@@ -520,8 +504,6 @@ def follows_footer_lane(first: EmissionComponent, second: EmissionComponent) -> 
 	return component_read_key(first) < component_read_key(second) and gap >= -FOOTER_VERTICAL_PADDING_RATIO and \
 		first.bounds.width >= FOOTER_MIN_WIDTH_RATIO and second.bounds.width >= FOOTER_MIN_WIDTH_RATIO and \
 		follows_same_lane(first, second)
-
-
 #============================================
 def follows_same_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
 	"""Require substantial overlap, span agreement, and center agreement in one lane."""
@@ -531,8 +513,6 @@ def follows_same_lane(first: EmissionComponent, second: EmissionComponent) -> bo
 	return overlap_ratio >= FLOW_MIN_HORIZONTAL_OVERLAP_RATIO and \
 		max(first.bounds.width, second.bounds.width) <= min(first.bounds.width, second.bounds.width) * FLOW_LANE_SPAN_VARIATION_RATIO and \
 		center_offset <= min(first.bounds.width, second.bounds.width) * FLOW_LANE_CENTER_OFFSET_RATIO
-
-
 #============================================
 def image_interleaves_lane(components: list[EmissionComponent], first: EmissionComponent,
 		second: EmissionComponent) -> bool:
@@ -544,8 +524,6 @@ def image_interleaves_lane(components: list[EmissionComponent], first: EmissionC
 		if overlap > 0:
 			return True
 	return False
-
-
 #============================================
 def nontext_interleaves_lane(components: list[EmissionComponent], first: EmissionComponent,
 		second: EmissionComponent) -> bool:
@@ -558,8 +536,6 @@ def nontext_interleaves_lane(components: list[EmissionComponent], first: Emissio
 			max(component.bounds.left, min(first.bounds.left, second.bounds.left)):
 			return True
 	return False
-
-
 #============================================
 def components_overlap(components: list[EmissionComponent]) -> bool:
 	"""Return whether direct components materially overlap beyond border contact."""
@@ -573,8 +549,6 @@ def components_overlap(components: list[EmissionComponent]) -> bool:
 					if geometry.substantially_overlaps(first_footprint, second_footprint):
 						return True
 	return False
-
-
 #============================================
 def raw_components_overlap(components: list[EmissionComponent]) -> bool:
 	"""Check member collisions without treating any composition as an allowed relation."""
@@ -584,8 +558,6 @@ def raw_components_overlap(components: list[EmissionComponent]) -> bool:
 				for right in component_footprints(second)):
 				return True
 	return False
-
-
 #============================================
 def overlap_permissions(components: list[EmissionComponent]) -> tuple[OverlapPermission, ...]:
 	"""Return only component-pair permissions proven by one unique native topology."""
@@ -633,8 +605,6 @@ def overlap_permissions(components: list[EmissionComponent]) -> tuple[OverlapPer
 				if record is not None:
 					records.append(record)
 	return tuple(records)
-
-
 #============================================
 def pair_permission(components: list[EmissionComponent], first_index: int, second_index: int,
 		relation: str, layout: str) -> OverlapPermission | None:
@@ -651,8 +621,6 @@ def pair_permission(components: list[EmissionComponent], first_index: int, secon
 	return OverlapPermission(first_index, second_index, relation, component_footprints(first),
 		component_footprints(second), max(vertical_overlap(left, right) for left in component_footprints(first)
 		for right in component_footprints(second)), selected, order)
-
-
 #============================================
 def vertical_overlap(first: geometry.NormalizedBounds, second: geometry.NormalizedBounds) -> float:
 	"""Measure signed vertical intersection for a recorded source-padding relation."""
@@ -733,20 +701,20 @@ def component_layout(components: list[EmissionComponent]) -> tuple[str, tuple[st
 	if not 1 <= len(components) <= 6:
 		raise ValueError("source components require manual layout review before Djot emission")
 	if coarse_inset_key_layout(components):
-		return "two-panels", slide_lib.layout_engine.layout_contract("two-panels").slot_names, (0, 1)
+		return "two-panels", slide_lib.layout_registry.contract_for("two-panels").slot_names, (0, 1)
 	if coarse_picture_inset_layout(components):
 		picture_index = next(index for index, item in enumerate(components) if item.kind == "image")
 		body_index = next(index for index, item in enumerate(components) if item.kind == "text")
-		return "two-panels", slide_lib.layout_engine.layout_contract("two-panels").slot_names, (picture_index, body_index) \
+		return "two-panels", slide_lib.layout_registry.contract_for("two-panels").slot_names, (picture_index, body_index) \
 			if components[picture_index].classification_reason.endswith(":left") else (body_index, picture_index)
 	footer_match = bottom_footer_layout(components)
 	if footer_match is not None:
 		_score, order = footer_match
-		return "two-over-one-panels", slide_lib.layout_engine.layout_contract("two-over-one-panels").slot_names, order
+		return "two-over-one-panels", slide_lib.layout_registry.contract_for("two-over-one-panels").slot_names, order
 	explanatory_match = asymmetric_explanatory_pair_layout(components)
 	if explanatory_match is not None:
 		_score, order = explanatory_match
-		return "two-panels", slide_lib.layout_engine.layout_contract("two-panels").slot_names, order
+		return "two-panels", slide_lib.layout_registry.contract_for("two-panels").slot_names, order
 	match = topology.ordinary_layout_match(
 		tuple(component.bounds for component in components), not coarse_image_geometry(components),
 	)
@@ -754,7 +722,7 @@ def component_layout(components: list[EmissionComponent]) -> tuple[str, tuple[st
 		bounds = ", ".join(str(component.bounds) for component in components)
 		raise ValueError(f"ambiguous topology bounds [{bounds}]")
 	name, order = match
-	return name, slide_lib.layout_engine.layout_contract(name).slot_names, order
+	return name, slide_lib.layout_registry.contract_for(name).slot_names, order
 
 
 def coarse_inset_key_layout(components: list[EmissionComponent]) -> bool:
@@ -790,7 +758,7 @@ def bottom_footer_layout(components: list[EmissionComponent]) -> tuple[float, tu
 	if not topology.material(peers[0].bounds.top, peers[0].bounds.height, peers[1].bounds.top, peers[1].bounds.height):
 		return None
 	source = topology.normalized_boxes(tuple(component.bounds for component in components))
-	slots = slide_lib.layout_engine.layout_contract("two-over-one-panels").topology_slots
+	slots = slide_lib.layout_registry.contract_for("two-over-one-panels").topology_slots
 	matches = [(topology.score(source, slots, order), order) for order in itertools.permutations(range(3))
 		if order[2] == footer_indexes[0] and topology.relations_match(source, slots, order)]
 	if not matches:
@@ -809,8 +777,8 @@ def asymmetric_explanatory_pair_layout(components: list[EmissionComponent]) -> t
 		return None
 	source = topology.normalized_boxes(tuple(component.bounds for component in components))
 	candidates: list[tuple[str, list[tuple[float, tuple[int, ...]]]]] = []
-	for name in slide_lib.layout_engine.registered_layout_names():
-		spec = slide_lib.layout_engine.layout_contract(name)
+	for name in slide_lib.layout_registry.names():
+		spec = slide_lib.layout_registry.contract_for(name)
 		if not spec.topology_matchable or spec.cell_count != 2:
 			continue
 		slots = spec.topology_slots
@@ -888,6 +856,13 @@ def _render_planned_slide(
 	heading = []
 	if plan.title.region is not None:
 		heading = [f"# {' '.join(render_runs(runs) for _level, runs in plan.title.region.paragraphs)}"]
+	if data.page_evidence is not None and data.page_evidence.is_section_page():
+		section_lines = [
+			render_runs(runs) for block in data.text_blocks
+			for _level, runs in block.lines
+		]
+		if section_lines:
+			return ["=== layout: section", "", f"# {' '.join(section_lines)}"], "section", reasons
 	components, component_reasons = emit_components(planned)
 	reasons.extend(component_reasons)
 	if plan.review_reason:

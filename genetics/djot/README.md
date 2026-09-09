@@ -1,26 +1,12 @@
 # Extended-Djot genetics decks
 
 This folder contains the canonical extended-Djot presentation source for the native pipeline. Each
-file was imported from the authoritative ODP with `deck_tools.py import`, which
-normalizes through a temporary PPTX only to recover text, images, reading order, and source-hidden
-slide state.
+file was imported from the authoritative ODP with `deck_tools.py import`, which reads native ODP
+directly to recover text, images, reading order, and source-hidden slide state. The corpus preserves
+that source evidence while using the shared native theme and layout system.
 
-The generated source uses exact `=== layout: <name>` and `@<slot>` lines, standard Djot headings and
-lists, and complete-paragraph `![alt](path)` component images. Legal layout and slot names derive
-from `slide_lib.layout_registry`; current corpus examples include the canonical short names. It
-deliberately omits presenter notes and does not infer animation or visual styling from an imported
-file. Short DNA sequences use inline verbatim; ordinary `&prime;` text projects to U+2032 PRIME in
-the native model.
-
-Use `#` and `##` only where the chosen layout permits global title/subtitle content. A title slide
-may contain several H2 lines, which become one subtitle region. One-line Djot attributes precede the
-element they describe. `$inline$` and `$$display$$` are local math extensions, but editable native
-math is not implemented yet. `<= blue overlay` is recognized and reports "not yet supported".
-
-`multiple-choice` requires exactly `@question` and `@answer`. The question contains a visible choice
-list; the answer is one or two short flat paragraphs. The parser records implicit answer reveal
-intent. The independent OOXML writer and native ODF/SMIL writer preserve it through editable PPTX,
-ODP, and the ODP-derived PDF final state; attended Impress first-advance playback remains unobserved.
+[DJOT_SLIDE_SYNTAX.md](../../docs/DJOT_SLIDE_SYNTAX.md) is the normative authoring reference for
+these decks. This README records corpus provenance, inventory, and validation evidence.
 
 | Deck | Source | Visible | Hidden | Images | Normalized | Reviews |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -47,7 +33,7 @@ image reference resolved to a file; no rendered slide or composite-region substi
 
 The one-time native acceptance also passed: strict lint covered 8 decks and 336 visible slides;
 `build_slides.sh genetics` passed; and the Djot native-layout E2E
-passed. Sequential `--format all` exports for every deck retained matching PPTX, ODP, and PDF page
+passed. Sequential `--format all` exports for every deck retained matching ODP and PDF page
 counts (31, 23, 43, 49, 59, 43, 62, and 26), editable text and direct images, and the native table
 in Lecture 02e. This does not establish attended animation acceptance.
 

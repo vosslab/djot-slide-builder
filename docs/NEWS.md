@@ -6,9 +6,9 @@
 
 - Djot is now the sole authored deck format, with one CLI for builds, imports, linting, and ODP
   visibility checks.
-- Trusted ODP and PPTX imports preserve editable text, source tables, bounded image regions, and
+- Trusted ODP imports preserve editable text, source tables, bounded image regions, and
   source provenance in generated Djot.
-- Native PPTX, ODP, and PDF exports now have a clearer documented path, backed by 1,689 permanent
+- Native ODP and LibreOffice-derived PDF exports now have a clearer documented path, backed by permanent
   offline tests and one-time native-chain checks.
 - New architecture, setup, workflow, format, troubleshooting, and related-project guides make the
   project easier to enter.

@@ -8,20 +8,17 @@ locate editable deliverables.
 
 - Author decks as repository-local `.djot` files. The build command accepts one file or searches a
   repository-local folder recursively for `.djot` files.
-- Start every slide with `=== layout: <name>` and place content in the slots that layout declares.
-  Standard Djot headings, paragraphs, lists, links, complete-paragraph images, and supported tables
-  remain editable native content.
 - Reference component images with paths relative to the `.djot` deck's directory. Paths must name
   existing local files and remain inside the repository. An imported deck keeps its generated media
   beside the source as `assets/<deck-name>/`; its `.djot` image references point directly into that
   deck-local namespace.
-- Raw HTML and XML are not authoring inputs. See [USAGE.md](USAGE.md) for the supported authoring
-  subset and [PIPELINE.md](PIPELINE.md) for layout and ownership details.
+- [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines the source language and editable native
+  destinations. [USAGE.md](USAGE.md) provides build and import commands.
 
 ## Imported presentations
 
-- `deck_tools.py import` accepts one trusted `.odp` or `.pptx` presentation and writes a new `.djot`
-  source file. An `.odp` is normalized through a temporary PPTX only for import analysis.
+- `deck_tools.py import` accepts one trusted `.odp` presentation and writes a new `.djot` source
+  file. Save a legacy PPTX as ODP in LibreOffice before importing it.
 - The importer does not overwrite an existing `.djot` target or `assets/<deck-name>/` directory.
   Choose a new destination when repeating an import.
 - Text, supported source tables, ordinary images, and recognized layouts become editable Djot.
@@ -36,18 +33,16 @@ locate editable deliverables.
 ## Build products
 
 All build products use the 16:10 theme from `genetics/xlect99-template_2023.otp`. The ODP contains
-that template's native master page and supplies the PDF; the PPTX is an editable interchange
-projection of the same title, gradient, and list rules. CSS and browser rendering are not involved.
+that template's native master page and supplies the PDF. CSS and browser rendering are not involved.
 
 | Requested format | File written | Meaning |
 | --- | --- | --- |
-| `pptx` | `output/pptx/<deck-name>.pptx` | Editable PowerPoint presentation generated from Djot. |
 | `odp` | `output/odp/<deck-name>.odp` | Native editable LibreOffice Impress presentation using the OTP master. |
 | `pdf` | `output/odp/<deck-name>.odp`, then `output/pdf/<deck-name>.pdf` | PDF derived from the native editable ODP. |
-| `all` | All three output paths | Sibling PPTX/ODP projection followed by ODP-derived PDF. |
+| `all` | Both output paths | Native ODP followed by its LibreOffice-derived PDF. |
 
 The deck filename stem supplies each output filename. A PDF is a distribution and review artifact;
-edit the PPTX or ODP rather than treating the PDF as source. Build and format-selection commands are
+edit the ODP rather than treating the PDF as source. Build and format-selection commands are
 in [USAGE.md](USAGE.md); installation and macOS conversion prerequisites are in [INSTALL.md](INSTALL.md).
 
 ## OpenDocument package boundary

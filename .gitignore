@@ -36,4 +36,3 @@ slide_*source.png
 !assets/fonts/**/*.otf
 !assets/fonts/**/*.ttf
 *.pdf
-*.pptx

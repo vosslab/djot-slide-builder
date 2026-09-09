@@ -28,71 +28,14 @@ class MetadataEntry:
 
 @dataclass(frozen=True)
 class SlideIdentity:
-	"""Stable source-relative slide identity, including continuation lineage."""
+	"""Stable source-relative slide identity."""
 	slide_id: str
 	index: int
 	source: slide_lib.native_model.SourceLocation
-	source_parent_id: str | None = None
-	continuation_index: int = 0
 
 	def __post_init__(self) -> None:
 		slide_lib.layout_primitives.require_nonempty(self.slide_id, "slide identity")
 		slide_lib.layout_primitives.require_nonnegative_integer(self.index, "slide index")
-		slide_lib.layout_primitives.require_nonnegative_integer(self.continuation_index, "slide continuation index")
-		if self.continuation_index and self.source_parent_id is None:
-			raise ValueError("continued slides require a source parent identity")
-		if self.source_parent_id is not None:
-			slide_lib.layout_primitives.require_nonempty(self.source_parent_id, "slide source parent identity")
-
-
-@dataclass(frozen=True)
-class ContinuationContextEntry:
-	"""One resolved ancestor list item retained across a physical page boundary."""
-	inlines: tuple[slide_lib.layout_content.InlineContent, ...]
-	kind: slide_lib.layout_primitives.ListKind
-	level: int
-	start: int
-	source: slide_lib.native_model.SourceLocation
-
-	def __post_init__(self) -> None:
-		slide_lib.layout_primitives.canonicalize_tuple(self, "inlines")
-		if not isinstance(self.kind, slide_lib.layout_primitives.ListKind):
-			raise ValueError("continuation context kind must be a ListKind")
-		slide_lib.layout_primitives.require_nonnegative_integer(self.level, "continuation context level")
-		slide_lib.layout_primitives.require_positive_integer(self.start, "continuation context start")
-		if not isinstance(self.source, slide_lib.native_model.SourceLocation):
-			raise ValueError("continuation context source must be a SourceLocation")
-		if not self.inlines:
-			raise ValueError("continuation context entries require resolved source inlines")
-		text = ""
-		for inline in self.inlines:
-			if not isinstance(inline, (slide_lib.layout_content.TextRun, slide_lib.layout_content.LineBreak)):
-				raise ValueError("continuation context entries require resolved InlineContent")
-			if isinstance(inline, slide_lib.layout_content.TextRun):
-				text += inline.text
-		if not text.strip():
-			raise ValueError("continuation context entries require nonempty resolved source text")
-
-
-@dataclass(frozen=True)
-class ContinuationContext:
-	"""Ordered resolved ancestor trail and its intended physical presentation."""
-	display: slide_lib.layout_primitives.ContinuationContextDisplay
-	entries: tuple[ContinuationContextEntry, ...]
-
-	def __post_init__(self) -> None:
-		slide_lib.layout_primitives.canonicalize_tuple(self, "entries")
-		if not isinstance(self.display, slide_lib.layout_primitives.ContinuationContextDisplay):
-			raise ValueError("continuation context display must be a ContinuationContextDisplay")
-		if not self.entries:
-			raise ValueError("continuation context requires a nonempty ordered ancestor trail")
-		previous_level = -1
-		for entry in self.entries:
-			if not isinstance(entry, ContinuationContextEntry):
-				raise ValueError("continuation context entries must be immutable context entries")
-			if entry.level <= previous_level:
-				raise ValueError("continuation context entries must be ordered from outer to inner level")
-			previous_level = entry.level
 
 
 @dataclass(frozen=True)
@@ -178,22 +121,6 @@ class RevealTarget:
 
 
 @dataclass(frozen=True)
-class DecompositionOrigin:
-	"""Non-rendered provenance for an object expanded from a source grid slot."""
-	source_slide_id: str
-	original_layout: str
-	original_slot: str
-	source: slide_lib.native_model.SourceLocation
-	source_order: int
-
-	def __post_init__(self) -> None:
-		slide_lib.layout_primitives.require_nonempty(self.source_slide_id, "decomposition source slide identity")
-		slide_lib.layout_primitives.require_nonempty(self.original_layout, "decomposition original layout")
-		slide_lib.layout_primitives.require_nonempty(self.original_slot, "decomposition original slot")
-		slide_lib.layout_primitives.require_nonnegative_integer(self.source_order, "decomposition source order")
-
-
-@dataclass(frozen=True)
 class LayoutObject:
 	object_id: str
 	role: slide_lib.layout_primitives.PresentationRole
@@ -209,7 +136,6 @@ class LayoutObject:
 	placeholder_kind: slide_lib.layout_primitives.PlaceholderKind = slide_lib.layout_primitives.PlaceholderKind.NONE
 	source: slide_lib.native_model.SourceLocation | None = None
 	reveal_targets: tuple[RevealTarget, ...] = ()
-	decomposition_origin: DecompositionOrigin | None = None
 	origin: slide_lib.layout_primitives.LayoutObjectOrigin = slide_lib.layout_primitives.LayoutObjectOrigin.AUTHORED
 
 	def __post_init__(self) -> None:
@@ -259,34 +185,34 @@ class LayoutSlide:
 	slots: tuple[LayoutSlot, ...]
 	objects: tuple[LayoutObject, ...]
 	notes: tuple[SpeakerNote, ...]
-	continuation_kind: slide_lib.layout_primitives.ContinuationKind = slide_lib.layout_primitives.ContinuationKind.NORMAL
-	continuation_context: ContinuationContext | None = None
 
 	def __post_init__(self) -> None:
 		for name in ("slots", "objects", "notes"):
 			slide_lib.layout_primitives.canonicalize_tuple(self, name)
 		slide_lib.layout_primitives.validate_unique((slot.slot_id for slot in self.slots), "slide slot identities")
 		slide_lib.layout_primitives.validate_unique((item.object_id for item in self.objects), "slide object identities")
-		if not isinstance(self.continuation_kind, slide_lib.layout_primitives.ContinuationKind):
-			raise ValueError("slide continuation kind must be a ContinuationKind")
-		self._validate_continuation_context()
 		reveal_targets = tuple(target for item in self.objects for target in item.reveal_targets)
+		# Native animation adapters require stable unique target identities.
 		slide_lib.layout_primitives.validate_unique((target.target_id for target in reveal_targets),
 			"slide reveal target identities")
+		# Native animation adapters consume this sequence as the click order.
 		if tuple(target.activation_order for target in reveal_targets) != tuple(range(len(reveal_targets))):
 			raise ValueError("slide reveal targets must use contiguous source-ordered activation")
+		# Native presentation layouts can only receive the topology they declare.
 		if tuple(slot.topology_member() for slot in self.slots) != self.layout.topology.members:
 			raise ValueError("slide slots must match the declared presentation layout topology")
 		slot_ids = {slot.slot_id for slot in self.slots}
 		members = {member.member_id: member for member in self.layout.topology.members}
 		occupied: set[str] = set()
 		for item in self.objects:
+			# An emitted object may only occupy an allocation slot on this slide.
 			if item.slot_id is not None and item.slot_id not in slot_ids:
 				raise ValueError("layout object references unknown allocation slot")
 			if item.presentation_member_id is None:
 				continue
 			if item.presentation_member_id not in members:
 				raise ValueError("layout object references unknown presentation member")
+			# LibreOffice placeholders are one editable object per presentation member.
 			if item.presentation_member_id in occupied:
 				raise ValueError("presentation members accept at most one occupying object")
 			occupied.add(item.presentation_member_id)
@@ -295,30 +221,6 @@ class LayoutSlide:
 					member.properties.style_role is not item.style_role or
 					member.properties.frame_text != item.frame_text):
 				raise ValueError("layout object is incompatible with its presentation member")
-
-	def _validate_continuation_context(self) -> None:
-		"""Reject a context trail whose display semantics disagree with its physical page."""
-		context = self.continuation_context
-		kind = self.continuation_kind
-		if context is None:
-			if kind is slide_lib.layout_primitives.ContinuationKind.CONTEXT_HANDOFF:
-				raise ValueError("context handoff slides require a nonempty static continuation context")
-			return
-		if not isinstance(context, ContinuationContext):
-			raise ValueError("slide continuation context must be a ContinuationContext")
-		if kind is slide_lib.layout_primitives.ContinuationKind.NORMAL:
-			raise ValueError("normal slides must not carry a continuation context")
-		if kind is slide_lib.layout_primitives.ContinuationKind.CONTEXT_HANDOFF:
-			if context.display is not slide_lib.layout_primitives.ContinuationContextDisplay.HANDOFF_STATIC:
-				raise ValueError("context handoff slides require HANDOFF_STATIC context")
-			if any(item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.AUTHORED for item in self.objects):
-				raise ValueError("context handoff slides must not carry authored objects")
-			if any(item.reveal_targets for item in self.objects):
-				raise ValueError("context handoff slides must not carry reveal targets")
-			return
-		if context.display is slide_lib.layout_primitives.ContinuationContextDisplay.HANDOFF_STATIC:
-			raise ValueError("authored continuation slides require INLINE_STATIC or METADATA_ONLY context")
-
 
 @dataclass(frozen=True)
 class LayoutDeck:
@@ -343,7 +245,7 @@ class LayoutDeck:
 			object.__setattr__(self, "presentation_page_layouts", expected)
 
 	def _validate_slide_identities(self) -> None:
-		"""Keep physical ordering and continuation lineage deterministic for adapters."""
+		"""Keep source order deterministic for adapters."""
 		identities = tuple(slide.identity for slide in self.slides)
 		slide_lib.layout_primitives.validate_unique((identity.slide_id for identity in identities),
 			"deck slide identities")
@@ -351,17 +253,3 @@ class LayoutDeck:
 		slide_lib.layout_primitives.validate_unique(indexes, "deck physical slide indexes")
 		if indexes != tuple(range(len(identities))):
 			raise ValueError("deck slides must be in contiguous physical index order")
-		by_id = {identity.slide_id: identity for identity in identities}
-		continuations: dict[str, list[int]] = {}
-		for identity in identities:
-			parent_id = identity.source_parent_id
-			if parent_id is None:
-				continue
-			if parent_id not in by_id:
-				raise ValueError("continuation parent must exist in the deck")
-			if by_id[parent_id].index >= identity.index:
-				raise ValueError("continuation parent must precede its child")
-			continuations.setdefault(parent_id, []).append(identity.continuation_index)
-		for sequence in continuations.values():
-			if sorted(sequence) != list(range(len(sequence))):
-				raise ValueError("continuation indexes must be zero-based without gaps or duplicates")

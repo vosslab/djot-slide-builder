@@ -9,7 +9,7 @@ import sys
 
 # Local Modules
 import slide_lib.djot_parser
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 import slide_lib.layout_validation
 import slide_lib.native_model
 
@@ -94,7 +94,7 @@ def lint_source(path: pathlib.Path) -> tuple[list[LintProblem], int, int]:
 	try:
 		deck = slide_lib.djot_parser.parse_deck(path)
 		for slide in deck.slides:
-			contract = slide_lib.layout_engine.layout_contract(slide.layout_class)
+			contract = slide_lib.layout_registry.contract_for(slide.layout_class)
 			slide_lib.layout_validation.validate_layout_source(slide, contract)
 	except ValueError as error:
 		return [source_problem(path, error)], 0, 0

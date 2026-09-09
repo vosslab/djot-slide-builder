@@ -15,7 +15,7 @@ pytest rules rather than repeating them.
 
 - Inspect the affected owner before changing it. The [pipeline map](PIPELINE.md) identifies the
   parser, import, layout, export, and terminal-output boundaries.
-- Treat `.djot` files and their reachable local assets as authored inputs. PPTX, ODP, and PDF files
+- Treat `.djot` files and their reachable local assets as authored inputs. ODP and PDF files
   are reproducible products; repair the source or its generator instead of editing a generated deck.
 - Record an intentional source, interface, or validation change in [CHANGELOG.md](CHANGELOG.md).
   Put human requirements in [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) and settled technical choices in
@@ -62,15 +62,31 @@ cross-deck coverage:
 ./build_slides.sh genetics
 ```
 
-The folder wrapper delegates to `deck_tools.py build --format all`, producing editable PPTX and ODP
-followed by an ODP-derived PDF. Inspect each artifact for the question at hand: semantic tests do not
+The folder wrapper delegates to `deck_tools.py build --format all`, producing editable ODP followed
+by an ODP-derived PDF. Inspect each artifact for the question at hand: semantic tests do not
 prove visual containment, and a rendered page does not prove editability. The [pipeline verification
 lanes](PIPELINE.md#verification-lanes) define the evidence each check establishes.
 
-When changing import behavior, begin with a trusted ODP or PPTX input and review the emitted Djot and
-local assets before treating them as canonical. The supported command shapes and native-lint option
-are in [USAGE.md](USAGE.md); importer ownership and publication constraints are in
+When changing import behavior, begin with a trusted ODP input and review the emitted Djot and local
+assets before treating them as canonical. Save legacy PPTX as ODP in LibreOffice first. ODP imports
+read bounded native ODF facts directly. The supported command shapes and native-lint option are in
+[USAGE.md](USAGE.md); importer ownership and publication constraints are in
 [PIPELINE.md](PIPELINE.md).
+
+## Review rendered teaching pages
+
+Use [SLIDE_VISUAL_REVIEW_RUBRIC.md](SLIDE_VISUAL_REVIEW_RUBRIC.md) on demand after a presentation
+change that may affect classroom clarity, hierarchy, or visual balance. Generate each review page by
+building editable ODP and letting LibreOffice create its PDF. Standalone review uses the generated
+PDF page. Migration review pairs the original PDF page with its corresponding LibreOffice-generated
+PDF page and records functional visual equivalence as `improved`, `roughly equivalent`, or
+`materially worse` with a visible teaching reason.
+
+Record the qualitative concern and specific reason first, then use the advisory total band to select
+follow-up. The rubric gives 18--20 as generally strong, 15--17 as contextual review, and 0--14 as
+advisory visual attention. A small disposable paired-PDF check is the next calibration step for
+migration-category repeatability; it belongs with rendered-review evidence rather than the permanent
+offline test suite.
 
 ## Maintain repository tooling
 

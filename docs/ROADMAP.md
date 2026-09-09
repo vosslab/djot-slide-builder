@@ -1,6 +1,6 @@
 # Roadmap: extended-Djot native presentations
 
-Status: M1-M6 implementation is complete, including one-time all-eight corpus acceptance, private
+Status: M1-M7 implementation is complete, including one-time all-eight corpus acceptance,
 regeneration reproducibility, native acceptance, and native ODP round-trip/PDF evidence.
 M5's attended Impress click-playback observation remains open because macOS permissions blocked the
 attempt before slideshow control. Djot is the sole authored source front end to the native
@@ -14,41 +14,28 @@ editable-object pipeline.
 | M2 | Djot parser | Complete | `.djot` source parses to named cells with source locations |
 | M3 | Short layouts and multiple choice | Complete | Canonical names and slot contracts, no aliases |
 | M4 | Djot export | Complete | `.djot` is the only admitted deck source suffix |
-| M5 | Animation backend | Implementation complete; attended gate open | Bounded ODF/SMIL and OOXML writers; structural and headless ODP/PDF evidence passed |
+| M5 | Animation backend | Implementation complete; attended gate open | Bounded ODF/SMIL writer; structural and headless ODP/PDF evidence passed |
 | M6 | Linter and corpus | Complete | Strict lint and one-time eight-deck corpus/reproducibility acceptance |
-| M7 | Verification and close-out | In progress | Permanent and native acceptance passed; attended animation observation remains |
+| M7 | Verification and close-out | Complete | Permanent and native acceptance passed; attended animation observation remains separate |
 
 ## Completed design and implementation
 
-- The layout registry owns geometry, canonical short layout names, and legal slot names.
-- Djot grammar is exact and whole-line based: `=== layout: <name>`, `@<slot>`, `<= appear`,
-  `=> appear`, and `=> cascade appear`.
-- Source is normalized into global title/subtitle blocks and named cells. Multiple H2 lines on a
-  title slide form one subtitle region.
-- One-line attributes precede and attach to the next element. A standalone component image is a
-  complete image paragraph; mixed image paragraphs are source-located unsupported input.
-- `$inline$` and `$$display$$` are intentional local math extensions after strict-Djot validation.
-  Their editable native rendering remains future work.
-- `multiple-choice` uses required `question` and `answer` slots. Its answer has implicit object
-  reveal intent and permits one or two short flat paragraphs; native package semantics passed,
-  while attended Impress click playback remains unobserved.
+- [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines the completed source language, layout,
+  content, and reveal contract. The layout registry implements its canonical names and slots.
 - M5's bounded adapters support object APPEAR/FADE and paragraph APPEAR on click. Permanent
   structural tests and parser contract tests passed; a LibreOffice ODP round trip retained native
   layouts and editable objects, and PDF export retained the final state.
-- `blue overlay` is a recognized, explicit deferral rather than a silent no-op.
-- The explicit Djot native-layout E2E passed through sibling editable PPTX/native ODP, a LibreOffice
-  ODP open/save round trip, and ODP-derived PDF across the registry, including gallery images,
-  distinct editable multiple-choice shapes, all 18 native page-layout references, all 16 generated
-  built-in classifier signatures, and preservation of the 15 nonblank identities. LibreOffice
-  normalizes the empty blank page's saved reference to its title-slide definition without adding
-  page content.
+- The current native-layout evidence covers the 14-layout catalog: twelve LibreOffice identities
+  plus the project-owned `multiple-choice` and `gallery` layouts. It establishes editable native
+  ODP, a LibreOffice ODP open/save round trip, and ODP-derived PDF; LibreOffice normalizes an empty
+  blank page's saved reference to its title-slide definition while preserving the empty page.
 - The native-only all-eight imported-corpus acceptance passed: 378 source slides, 336 visible slides,
   42 hidden slides, 150 reachable genuine source-image assets, 72 native normalization relations,
   113 review slides, and 185 image occurrences. No rendered source-slide or composite substitute
   remains.
 - One-time native acceptance passed: strict lint covered 8 decks, 336 visible slides, and 185 image
   occurrences; `build_slides.sh genetics`, the Djot native-layout E2E, and eight sequential matching
-  PPTX/ODP/PDF exports passed. Text and direct images remained editable, and Lecture 02e retained its
+  ODP/PDF exports passed. Text and direct images remained editable, and Lecture 02e retained its
   native table.
 
 ## Remaining gates
@@ -67,10 +54,11 @@ editable-object pipeline.
 | --- | --- | --- |
 | Fast pytest | Permanent, offline | Parser, grammar, layout, suffix, and source diagnostics |
 | Strict Jotdown and source lint | One-time/source acceptance | Raw-Djot syntax and project slide semantics |
-| Native E2E | Passed explicit E2E | Sibling editable PPTX/native ODP, ODP round trip, and ODP-derived PDF |
+| Native E2E | Passed explicit E2E | Editable native ODP, ODP round trip, and ODP-derived PDF |
 | Imported corpus review | Passed one-time acceptance | Regenerated corpus, provenance, asset integrity, and reproducibility |
-| Native all-format output | Passed one-time acceptance | Editable PPTX, ODP, and PDF artifacts for every regenerated deck |
+| Native all-format output | Passed one-time acceptance | Editable ODP and PDF artifacts for every regenerated deck |
 | LibreOffice ODP round trip | Passed explicit E2E | Nonblank built-in identities, editable ODP objects, and PDF final state |
 | Impress slideshow | Attended check open | Click-by-click playback observation |
 
-Do not treat a fast test, native lint, or render as a substitute for the attended timing checks.
+Use the attended Impress check to establish click-by-click timing; fast tests, native lint, and
+renders establish their separate evidence lanes.

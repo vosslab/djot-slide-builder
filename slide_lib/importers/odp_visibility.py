@@ -1,13 +1,9 @@
 """Resolve ODP drawing-page visibility across page and style cascades."""
 
 # Standard Library
-import zipfile
 import pathlib
 import dataclasses
 import xml.etree.ElementTree
-
-# PIP3 modules
-import defusedxml.ElementTree
 
 NS = {
 	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
@@ -59,21 +55,6 @@ def style_definitions_from_root(
 			parent_name=style.get(qname("style", "parent-style-name"), ""),
 			visibility=style_visibility(style),
 		)
-	return definitions
-
-
-#============================================
-def read_style_definitions(
-	input_path: pathlib.Path,
-	content_root: xml.etree.ElementTree.Element,
-) -> dict[str, DrawingPageStyle]:
-	"""Read named and automatic drawing-page styles with local override order."""
-	definitions: dict[str, DrawingPageStyle] = {}
-	with zipfile.ZipFile(input_path) as archive:
-		if "styles.xml" in archive.namelist():
-			styles_root = defusedxml.ElementTree.fromstring(archive.read("styles.xml"))
-			definitions.update(style_definitions_from_root(styles_root))
-	definitions.update(style_definitions_from_root(content_root))
 	return definitions
 
 

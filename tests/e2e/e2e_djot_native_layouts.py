@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise every Djot native layout through PPTX, ODP, and PDF export.
+"""Exercise every Djot native layout through ODP and PDF export.
 
 This E2E verifies the source-to-editable-artifact chain.  LibreOffice Impress
 click-playback remains the attended presentation-fidelity gate.
@@ -19,11 +19,9 @@ import zipfile
 # PIP3 modules
 import defusedxml.ElementTree
 import PIL.Image
-from pptx import Presentation
-from pptx.enum.shapes import MSO_SHAPE_TYPE
 
 # Local Modules
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.libreoffice
@@ -106,57 +104,11 @@ def slide_source(spec: slide_lib.layout_primitives.LayoutContract) -> str:
 #============================================
 def write_deck(deck_path: pathlib.Path) -> tuple[str, ...]:
 	"""Write one Djot slide per live layout and return their rendering order."""
-	layout_names = slide_lib.layout_engine.registered_layout_names()
-	source = "\n\n".join(slide_source(slide_lib.layout_engine.layout_contract(name))
+	layout_names = slide_lib.layout_registry.names()
+	source = "\n\n".join(slide_source(slide_lib.layout_registry.contract_for(name))
 		for name in layout_names) + "\n"
 	deck_path.write_text(source, encoding="utf-8")
 	return layout_names
-
-
-#============================================
-def slide_text(slide: object) -> str:
-	"""Return editable text from every PPTX text frame on one slide."""
-	result = "\n".join(shape.text for shape in slide.shapes if shape.has_text_frame)
-	return result
-
-
-#============================================
-def inspect_multiple_choice_pptx(slide: object) -> None:
-	"""Confirm question and answer are separate editable shapes in the final PPTX."""
-	question_shapes = [shape for shape in slide.shapes if shape.has_text_frame and
-		"Whicheditableobjectremainsvisible?" in re.sub(r"\s+", "", shape.text)]
-	answer_shapes = [shape for shape in slide.shapes if shape.has_text_frame and
-		"Answer:ChoiceA" in re.sub(r"\s+", "", shape.text)]
-	require(len(question_shapes) == 1 and len(answer_shapes) == 1 and
-		question_shapes[0] is not answer_shapes[0],
-		"multiple-choice retains distinct editable question and answer shapes")
-
-
-#============================================
-def inspect_pptx(pptx_path: pathlib.Path, layout_names: tuple[str, ...]) -> None:
-	"""Verify every Djot layout produced editable native PPTX content."""
-	presentation = Presentation(pptx_path)
-	require(pptx_path.stat().st_size > 0 and len(presentation.slides) == len(layout_names),
-		"PPTX exists, is nonempty, and has one slide per live layout")
-	for index, layout_name in enumerate(layout_names):
-		if layout_name == "blank":
-			continue
-		text = slide_text(presentation.slides[index])
-		require(bool(text.strip()), f"PPTX {layout_name} retains authored editable text")
-	gallery_index = layout_names.index("gallery")
-	pictures = [shape for shape in presentation.slides[gallery_index].shapes
-		if shape.shape_type == MSO_SHAPE_TYPE.PICTURE]
-	require(pictures, "PPTX gallery retains the Djot component image as a native picture")
-	multiple_choice_index = layout_names.index("multiple-choice")
-	inspect_multiple_choice_pptx(presentation.slides[multiple_choice_index])
-	one_panel_index = layout_names.index("one-panel")
-	list_paragraphs = {paragraph.text: paragraph
-		for shape in presentation.slides[one_panel_index].shapes if shape.has_text_frame
-		for paragraph in shape.text_frame.paragraphs if paragraph.text}
-	parent = list_paragraphs["Native parent list item"]
-	nested = list_paragraphs["Native nested list item"]
-	require(parent.level == 0 and nested.level == 1 and parent._p.xml != nested._p.xml,
-		"PPTX preserves distinct native list levels and theme indentation")
 
 
 #============================================
@@ -194,18 +146,10 @@ def classify_libreoffice_layout(layout: object) -> str:
 			return "AUTOLAYOUT_TITLE"
 		if objects[1] == "outline":
 			return "AUTOLAYOUT_TITLE_CONTENT"
-		if objects[1] == "vertical_outline":
-			if objects[0] == "vertical_title":
-				return "AUTOLAYOUT_VTITLE_VCONTENT"
-			return "AUTOLAYOUT_TITLE_VCONTENT"
 		return "AUTOLAYOUT_NONE"
 	if len(objects) == 3:
 		if objects[1] == "outline" and objects[2] == "outline":
 			return "AUTOLAYOUT_TITLE_2CONTENT"
-		if objects[1] == "graphic" and objects[2] == "vertical_outline":
-			return "AUTOLAYOUT_TITLE_2VTEXT"
-		if objects[1] == "vertical_outline":
-			return "AUTOLAYOUT_VTITLE_VCONTENT_OVER_VCONTENT"
 		if objects[1] not in ("outline", "chart", "graphic") and x_values[1] >= x_values[2]:
 			return "AUTOLAYOUT_TITLE_CONTENT_OVER_CONTENT"
 		return "AUTOLAYOUT_NONE"
@@ -268,13 +212,13 @@ def inspect_odp(odp_path: pathlib.Path, layout_names: tuple[str, ...],
 	layouts = {item.attrib[name_attribute]: item for item in
 		styles_root.findall(".//style:presentation-page-layout", NAMESPACES)}
 	standard_identities = tuple(contract.libreoffice_autolayout for name in layout_names
-		if (contract := slide_lib.layout_engine.layout_contract(name)).libreoffice_autolayout
+		if (contract := slide_lib.layout_registry.contract_for(name)).libreoffice_autolayout
 		is not None)
 	require(len(standard_identities) == len(set(standard_identities)),
 		"standard Djot layouts declare distinct LibreOffice AutoLayout identities")
 	classification_mismatches: list[str] = []
 	for index, layout_name in enumerate(layout_names):
-		contract = slide_lib.layout_engine.layout_contract(layout_name)
+		contract = slide_lib.layout_registry.contract_for(layout_name)
 		if contract.libreoffice_autolayout is None or (after_libreoffice and layout_name == "blank"):
 			continue
 		layout_reference = referenced_values[index]
@@ -360,25 +304,24 @@ def inspect_pdf(pdf_path: pathlib.Path, layout_names: tuple[str, ...]) -> None:
 
 #============================================
 def run() -> None:
-	"""Run source Djot through the public PPTX, ODP, and PDF export chain."""
+	"""Run source Djot through the public ODP and PDF export chain."""
 	root = repo_root()
 	output_root = root / "output"
 	output_root.mkdir(exist_ok=True)
 	stem = f"djot_native_layouts_{uuid.uuid4().hex}"
 	workspace = pathlib.Path(tempfile.mkdtemp(prefix=f"{stem}_", dir=output_root))
 	deck_path = workspace / f"{stem}.djot"
-	pptx_path = output_root / "pptx" / f"{stem}.pptx"
 	odp_path = output_root / "odp" / f"{stem}.odp"
 	pdf_path = output_root / "pdf" / f"{stem}.pdf"
 	completed = False
 	try:
 		write_image(workspace / "component.png")
 		layout_names = write_deck(deck_path)
-		plan, _theme = slide_lib.native_export.compile_deck(
+		compilation, _theme = slide_lib.native_export.compile_deck(
 			slide_lib.native_export.parse_deck(deck_path))
+		plan = compilation.plan
 		command = [sys.executable, "deck_tools.py", "build", str(deck_path), "--format", "all"]
 		subprocess.run(command, cwd=root, check=True)
-		inspect_pptx(pptx_path, layout_names)
 		inspect_odp(odp_path, layout_names, plan)
 		inspect_pdf(pdf_path, layout_names)
 		fodp_root = workspace / "fodp"
@@ -389,11 +332,11 @@ def run() -> None:
 		round_trip_path = slide_lib.libreoffice.convert_file(fodp_path, round_trip_root, "odp")
 		inspect_odp(round_trip_path, layout_names, plan, require_distinct_layouts=False,
 			after_libreoffice=True)
-		print("PASS: Djot source retains editable PPTX and ODP semantics through LibreOffice and PDF")
+		print("PASS: Djot source retains editable ODP semantics through LibreOffice and PDF")
 		completed = True
 	finally:
 		if completed:
-			for artifact_path in (pptx_path, odp_path, pdf_path):
+			for artifact_path in (odp_path, pdf_path):
 				artifact_path.unlink(missing_ok=True)
 			shutil.rmtree(workspace, ignore_errors=True)
 		else:

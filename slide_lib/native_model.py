@@ -5,7 +5,6 @@ import enum
 import pathlib
 from dataclasses import dataclass, field
 
-
 @dataclass(frozen=True)
 class SourceLocation:
 	"""One physical source position retained through native rendering."""
@@ -192,7 +191,6 @@ class Slide:
 	"""One canonical source slide, ready for a named native layout builder."""
 	location: SourceLocation
 	layout_class: str
-	paginate: bool
 	notes: tuple[str, ...]
 	blocks: tuple[Block, ...]
 	cells: tuple[Cell, ...]
@@ -205,6 +203,5 @@ class Deck:
 	asset_root: pathlib.Path
 	repo_root: pathlib.Path
 	title: str
-	paginate: bool
 	slides: tuple[Slide, ...]
 	front_matter: dict[str, object] = field(compare=False)

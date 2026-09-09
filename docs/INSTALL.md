@@ -1,7 +1,7 @@
 # Install
 
-This repository runs local Python commands against the checkout to create editable PPTX, ODP, and
-PDF presentations. It also imports trusted existing ODP or PPTX into extended-Djot source.
+This repository runs local Python commands against the checkout to create editable ODP and PDF
+presentations. It imports trusted existing ODP into extended-Djot source.
 
 ## Requirements
 
@@ -54,7 +54,8 @@ source source_me.sh && python3 deck_tools.py --help
 Close the LibreOffice desktop application before a command that imports ODP or produces ODP/PDF.
 The repository invokes LibreOffice headlessly through its established user profile.
 
-Import only trusted instructor-owned ODP or PPTX files. Archive and image validation bounds
+Import only trusted instructor-owned ODP files. Save legacy PPTX as ODP in LibreOffice first.
+Archive and image validation bounds
 repository processing, but it does not sandbox LibreOffice or make an untrusted presentation safe
 to open.
 

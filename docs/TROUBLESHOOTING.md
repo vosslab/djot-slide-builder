@@ -51,15 +51,32 @@ local files, and must remain inside the repository. The authoring contract and f
 ### Build rejects an input path
 
 `deck_tools.py build` accepts an existing `.djot` file inside this repository or a repository folder
-containing `.djot` files. Supply a source path rather than an ODP, PPTX, Markdown file, missing
-path, or folder with no Djot decks. Use `deck_tools.py import` for a trusted ODP or PPTX source.
+containing `.djot` files. Supply a source path rather than an ODP, Markdown file, missing path, or
+folder with no Djot decks. Use `deck_tools.py import` for a trusted ODP source.
+
+### Capacity inspection reports a concern
+
+Use the compile-only inspection command to see every current capacity concern in one source deck or
+folder:
+
+```bash
+source source_me.sh && python3 deck_tools.py capacity genetics/djot
+```
+
+Each line identifies the source location, layout slot, readable floor, and explicit compiler cause.
+`required=<size>pt` records content that remains representable at a reduced size; the normal build
+keeps that authored slide and reports the same compromise. `required<1pt` records content beyond the
+shared serializer-safe minimum, so no editable native slide can represent it. The command continues
+after those physical-capacity findings and returns `1` whenever it reports a concern. A silent `0`
+means the selected decks are floor-safe. Capacity inspection creates no presentation artifacts and
+uses no LibreOffice conversion.
 
 ## Restore Office conversions
 
 ### Build says LibreOffice is running
 
-Close the LibreOffice desktop application, then rerun the build. ODP and PDF conversions use the
-established LibreOffice user profile and require its desktop process to be closed before batch work.
+Close the LibreOffice desktop application, then rerun the build. ODP and PDF conversions preflight
+that desktop state once, then run direct headless conversions sequentially.
 
 ### Build says LibreOffice is not installed
 
@@ -69,7 +86,7 @@ Install the declared macOS tools from the repository root, then repeat the build
 brew bundle
 ```
 
-The dependency bundle installs LibreOffice and Poppler for PDF verification. A conversion timeout, nonzero conversion,
+The dependency bundle installs LibreOffice and Poppler for PDF verification. A nonzero conversion
 or absent generated artifact remains a failed Office conversion; preserve its displayed diagnostic
 and retry only after resolving the local LibreOffice condition.
 
@@ -84,9 +101,10 @@ established source automatically.
 
 ### Import rejects the source format
 
-The `import` command accepts trusted `.odp` and `.pptx` inputs only. Use `visibility` to inspect
-resolved ODP slide visibility before importing an ODP. An import that reports no presentation
-slides or no visible presentation slides needs a source presentation with visible slides.
+The `import` command accepts trusted `.odp` inputs only. Save a legacy PPTX as ODP with LibreOffice
+before importing. Use `visibility` to inspect resolved ODP slide visibility before importing. An
+import that reports no presentation slides or no visible presentation slides needs a source
+presentation with visible slides.
 
 See [INSTALL.md](INSTALL.md) for tool prerequisites, [USAGE.md](USAGE.md) for workflows, and
 [PIPELINE.md](PIPELINE.md) for source and artifact ownership.

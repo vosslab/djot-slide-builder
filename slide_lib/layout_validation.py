@@ -4,6 +4,9 @@
 import slide_lib.native_model
 
 
+Component = slide_lib.native_model.Image
+
+
 class LayoutError(ValueError):
 	"""Report an expected source or native-layout validation failure."""
 
@@ -44,11 +47,11 @@ def flatten_list(block: slide_lib.native_model.ListBlock, level: int = 0) -> lis
 
 
 #============================================
-def body_parts(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[list[slide_lib.native_model.Heading], list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], list[slide_lib.native_model.Image], list[slide_lib.native_model.Table]]:
+def body_parts(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[list[slide_lib.native_model.Heading], list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]], list[Component], list[slide_lib.native_model.Table]]:
 	"""Classify supported semantic blocks for layout-contract checks."""
 	headings: list[slide_lib.native_model.Heading] = []
 	items: list[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool, bool, int]] = []
-	images: list[slide_lib.native_model.Image] = []
+	images: list[Component] = []
 	tables: list[slide_lib.native_model.Table] = []
 	for block in blocks:
 		if isinstance(block, slide_lib.native_model.Heading):
@@ -69,7 +72,8 @@ def unsupported_block(blocks: tuple[slide_lib.native_model.Block, ...]) -> slide
 	"""Return the first semantic block without a native layout destination."""
 	for block in blocks:
 		if not isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
-				slide_lib.native_model.Image, slide_lib.native_model.ListBlock, slide_lib.native_model.Table)):
+				slide_lib.native_model.Image,
+				slide_lib.native_model.ListBlock, slide_lib.native_model.Table)):
 			return block
 	return None
 
@@ -418,7 +422,7 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 	if spec.name == "multiple-choice":
 		validate_multiple_choice(source)
 		return
-	if spec.name in ("title-slide", "title-only", "centered-text", "gallery") and root_tables:
+	if spec.name in ("title-slide", "section", "gallery") and root_tables:
 		raise source_error(root_tables[0].location, f"{spec.name} slides do not have a native table destination")
 	if spec.cell_count and not spec.allows_root_body and spec.name != "gallery":
 		if items or images or root_tables or any(heading.level != 1 for heading in headings):
@@ -444,15 +448,16 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 			if not cell_headings and not cell_items and not cell_images:
 				raise source_error(cell.location, f"{spec.name} cell {index} requires editable text or component images")
 		return
-	if spec.name in ("title-slide", "centered-text"):
+	if spec.name in ("title-slide", "section"):
 		if not headings or headings[0].level != 1 or items or images:
 			raise source_error(source, f"{spec.name} slides support a title and level-two subtitle lines only")
 		if any(heading.level != 2 for heading in headings[1:]):
 			raise source_error(source, f"{spec.name} subtitle lines must use level-two Markdown")
 		return
 	if spec.name == "title-only":
-		if len(headings) != 1 or headings[0].level != 1 or items or images:
-			raise source_error(source, "title-only slides require exactly one level-one title")
+		if len(headings) != 1 or headings[0].level != 1 or source.blocks[0] is not headings[0]:
+			raise source_error(source, "title-only slides begin with one level-one title")
+		validate_flow_region(source.blocks[1:], source.location, "title-only body")
 		return
 	if spec.name == "gallery":
 		gallery = next(cell for cell in cells if cell.name == "gallery")
@@ -473,19 +478,7 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 			body_headings[1].location if len(body_headings) > 1 else body.location)
 		raise source_error(offending, f"{spec.name} body supports one optional level-two heading")
 	validate_flow_region(body.blocks, body.location, f"{spec.name} body")
-	if spec.name in ("vertical-text-panel", "vertical-panel"):
-		body_blocks = tuple(block for block in body.blocks if not isinstance(block,
-			slide_lib.native_model.Heading))
-		if len(body_blocks) != 1:
-			offending = body_blocks[1].location if len(body_blocks) > 1 else body.location
-			raise source_error(offending, f"{spec.name} slides require exactly one body block")
-		if not isinstance(body_blocks[0], (slide_lib.native_model.Paragraph,
-				slide_lib.native_model.ListBlock, slide_lib.native_model.Image)):
-			raise source_error(body_blocks[0].location,
-				f"{spec.name} slides require exactly one body block")
 	if body_tables:
-		if spec.name in ("vertical-text-panel", "vertical-panel"):
-			raise source_error(body_tables[0].location, f"{spec.name} slides do not have a native table destination")
 		return
 	if not spec.allows_root_body:
 		offending = next((block.location for block in body.blocks if isinstance(block,

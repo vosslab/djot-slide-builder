@@ -1,7 +1,7 @@
 """Canonical native fallbacks for legacy spatial presentation structures."""
 
 # local repo modules
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 
 
 MAX_POSITIONED_LABELS = 12
@@ -93,7 +93,7 @@ def table_grid_lines(heading: list[str], components: list[object]) -> tuple[list
 		raise ValueError(
 			f"{len(ordered)} components including a table have no exact native grid"
 		)
-	slots = slide_lib.layout_engine.layout_contract(layout).slot_names
+	slots = slide_lib.layout_registry.contract_for(layout).slot_names
 	lines = [f"=== layout: {layout}", "", *heading]
 	for component, slot in zip(ordered, slots, strict=True):
 		lines.extend(("", f"@{slot}", "", *component_lines(component)))

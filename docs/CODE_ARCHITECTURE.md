@@ -2,14 +2,14 @@
 
 ## Overview
 
-This repository turns extended-Djot lecture decks into editable PPTX, ODP, and PDF
-presentations. The authored source is a `.djot` deck; generated presentations are products of that
-source. Trusted ODP and PPTX files enter only through the one-time import workflow.
+This repository turns extended-Djot lecture decks into editable ODP and PDF presentations. The
+authored source is a `.djot` deck; generated presentations are products of that source. Trusted ODP
+enters only through the one-time import workflow.
 
 ## Major components
 
 - [../deck_tools.py](../deck_tools.py) is the user-facing application entry point. It exposes build,
-  import, lint, and ODP visibility commands.
+  capacity, import, lint, and ODP visibility commands.
 - [../slide_lib/cli.py](../slide_lib/cli.py) parses command arguments and dispatches each operation
   without making format-specific decisions at the entry point.
 - [../slide_lib/djot_parser.py](../slide_lib/djot_parser.py),
@@ -29,26 +29,26 @@ source. Trusted ODP and PPTX files enter only through the one-time import workfl
   physical object construction. [../slide_lib/multiple_choice_layout.py](../slide_lib/multiple_choice_layout.py)
   isolates the context, stem, choice, and answer measurement policy for the adaptive teaching layout.
   [../slide_lib/layout_engine.py](../slide_lib/layout_engine.py) is their public compiler boundary.
+  At that boundary, title slides and sections use master-backed frames; title-only keeps its native
+  title placeholder and emits following root content as ordinary editable body objects. See
+  [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) for author-facing layout rules.
 - [../slide_lib/presentation_theme.py](../slide_lib/presentation_theme.py) validates and reads the
   format-neutral theme from `genetics/xlect99-template_2023.otp`.
   [../slide_lib/odp_export.py](../slide_lib/odp_export.py) writes native ODF page layouts and
   presentation frames, while [../slide_lib/odp_text.py](../slide_lib/odp_text.py) owns editable
   paragraphs, styled spans, links, lists, and tables. Standard-layout inference tokens remain
   separate from occupied editable frame roles.
-  [../slide_lib/pptx_export.py](../slide_lib/pptx_export.py) independently projects the same compiled
-  plan to optional PPTX.
 - [../slide_lib/layout_validation.py](../slide_lib/layout_validation.py) is the semantic gate
   between typed authored blocks and a layout: it rejects unsupported or unplaceable source with
   its canonical source location before native objects are constructed.
 - [../slide_lib/editable_text.py](../slide_lib/editable_text.py) projects supported text into
-  renderer-neutral editable paragraphs and source-owned reveal ranges.
-  [../slide_lib/pptx_animation.py](../slide_lib/pptx_animation.py) then writes the bounded
-  per-slide OOXML timing tree for supported on-click reveals; LibreOffice remains the separate
-  conversion boundary rather than an animation writer.
+  renderer-neutral editable paragraphs and source-owned reveal ranges. ODF/SMIL retains supported
+  on-click reveals; LibreOffice remains the separate PDF conversion boundary.
 - [../slide_lib/odf_package.py](../slide_lib/odf_package.py) validates bounded ODF ZIP packages and
   publishes them atomically. [../slide_lib/libreoffice.py](../slide_lib/libreoffice.py) preflights
-  and drives headless ODP-to-PDF conversion.
-- [../slide_lib/importers/](../slide_lib/importers/) imports trusted ODP or PPTX decks. The
+  and drives direct sequential headless ODP-to-PDF conversion. Folder PDF work stages all generated
+  ODPs, verifies every converted PDF, then publishes the full result set.
+- [../slide_lib/importers/](../slide_lib/importers/) imports trusted ODP decks. The
   readers retain raw source facts, planners validate and normalize geometry before selecting
   semantic layouts, and the emitter publishes validated Djot plus local assets.
 - [../slide_lib/importers/slide_plan.py](../slide_lib/importers/slide_plan.py) owns the
@@ -75,13 +75,12 @@ The normal build path is:
   -> slide_lib.djot_parser and slide_lib.native_model
   -> slide_lib.layout_engine and the format-neutral OTP theme
   -> native editable ODP -> LibreOffice PDF
-  -> optional sibling editable PPTX
 ```
 
 The one-time import path is separate:
 
 ```text
-trusted ODP or PPTX
+trusted ODP
   -> slide_lib.importers reader
   -> source_model records and geometry-first SlidePlan
   -> djot_emitter
@@ -103,6 +102,8 @@ full-slide or composite raster fallbacks.
   `output/`.
 - Run the fast suite with `source source_me.sh && python3 -m pytest tests/`.
 - Run source validation through `source source_me.sh && python3 deck_tools.py lint PATH`.
+- Inspect fitting concerns through `source source_me.sh && python3 deck_tools.py capacity PATH`.
+  This compile-only command writes no ODP or PDF and invokes no LibreOffice process.
   Strict-Djot validation and real LibreOffice output remain separate acceptance lanes; see
   [PIPELINE.md](PIPELINE.md) and [E2E_TESTS.md](E2E_TESTS.md).
 
@@ -110,7 +111,7 @@ full-slide or composite raster fallbacks.
 
 - Add a supported presentation layout to
   [../slide_lib/layout_registry.py](../slide_lib/layout_registry.py), then implement its physical
-  allocation in the compiler-side layout modules before either adapter projects it.
+  allocation in the compiler-side layout modules before the ODP serializer projects it.
 - Add a typed source construct in [../slide_lib/native_model.py](../slide_lib/native_model.py),
   its parser support, and a native layout owner before accepting it in authored source.
 - Add trusted-import extraction or planning behavior under

@@ -6,11 +6,11 @@
 ## Dr. Neil Voss
 ## Aug 26, 2025
 
-=== layout: title-only
+=== layout: section
 
 # What is a genetic disorder?
 
-=== layout: title-only
+=== layout: section
 
 # What is the difference between a disorder and a disease?
 
@@ -24,7 +24,7 @@
 - A disorder is a disruption to regular bodily structure and function. Can simply mean something is not working right. An irregular heartbeat is a disorder
 - Diseases may cause disorders, and disorders can lead to diseases.
 
-=== layout: title-only
+=== layout: section
 
 # What is a genetic disorder?
 
@@ -41,7 +41,7 @@
   - polygenic or multifactoral (many genes)
   - chromosomal
 
-=== layout: title-only
+=== layout: section
 
 # In terms of genetic disorders, what types of anomalies can happen to your DNA?
 
@@ -357,6 +357,6 @@
 - Typhoid fever
 - Ulcers
 
-=== layout: title-only
+=== layout: section
 
 # THE END

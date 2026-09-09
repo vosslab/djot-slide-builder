@@ -1,11 +1,11 @@
-"""Focused tests for the shared LibreOffice batch-conversion contract."""
+"""Focused public-behavior tests for sequential LibreOffice conversion."""
 
 # Standard Library
 import pathlib
 import subprocess
 from unittest import mock
 
-# PIP3 modules
+# PIP3 Modules
 import pytest
 
 # Local Modules
@@ -13,88 +13,54 @@ from slide_lib import libreoffice
 
 
 #============================================
-def test_convert_file_uses_headless_norestore_and_established_profile(
-		tmp_path: pathlib.Path) -> None:
-	"""Normal conversion uses batch flags without a disposable user profile."""
-	input_path = tmp_path / "deck.odp"
-	input_path.write_bytes(b"source")
+def test_convert_files_runs_direct_commands_in_source_order(tmp_path: pathlib.Path) -> None:
+	"""One desktop preflight precedes direct sequential conversion commands."""
+	inputs = tuple(tmp_path / name for name in ("alpha.odp", "beta.odp"))
+	for input_path in inputs:
+		input_path.write_bytes(b"source")
 	output_dir = tmp_path / "converted"
 	output_dir.mkdir()
 	commands: list[list[str]] = []
 
-	def write_converted_file(command: list[str], **kwargs: object) -> subprocess.CompletedProcess[str]:
-		"""Create the output that the mocked LibreOffice command represents."""
+	def run(command: list[str], **_kwargs: object) -> subprocess.CompletedProcess[str]:
 		commands.append(command)
-		(output_dir / "deck.pdf").write_bytes(b"pdf")
-		return subprocess.CompletedProcess(command, 0)
+		(output_dir / f"{pathlib.Path(command[-1]).stem}.pdf").write_bytes(b"pdf")
+		return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
 
-	with mock.patch.object(libreoffice, "require_libreoffice_closed"), \
-		mock.patch.object(libreoffice, "require_soffice", return_value=pathlib.Path("/usr/bin/soffice")), \
-		mock.patch.object(libreoffice.subprocess, "run", side_effect=write_converted_file):
-		converted_path = libreoffice.convert_file(input_path, output_dir, "pdf")
+	with mock.patch.object(libreoffice, "require_libreoffice_closed") as preflight, \
+			mock.patch.object(libreoffice, "require_soffice", return_value=pathlib.Path("/usr/bin/soffice")), \
+			mock.patch.object(libreoffice.subprocess, "run", side_effect=run), \
+			mock.patch.object(libreoffice.time, "sleep") as settle:
+		converted = libreoffice.convert_files(inputs, output_dir, "pdf")
 
-	assert converted_path == output_dir / "deck.pdf"
-	assert "--headless" in commands[0]
-	assert "--norestore" in commands[0]
-	assert all(not value.startswith("-env:UserInstallation=") for value in commands[0])
-
-
-#============================================
-def test_require_libreoffice_closed_rejects_desktop_process() -> None:
-	"""A running main LibreOffice process receives an actionable batch-build error."""
-	processes = "/Applications/LibreOffice.app/Contents/MacOS/soffice.bin --writer\n"
-	result = subprocess.CompletedProcess(["ps"], 0, stdout=processes)
-	with mock.patch.object(libreoffice.subprocess, "run", return_value=result):
-		with pytest.raises(RuntimeError, match="LibreOffice is running; close it"):
-			libreoffice.require_libreoffice_closed()
+	assert converted == tuple(output_dir / f"{path.stem}.pdf" for path in inputs)
+	assert preflight.call_count == 1 and [command[-1] for command in commands] == [str(path) for path in inputs]
+	assert all("--headless" in command and "--norestore" in command and "--outdir" in command
+		and command[command.index("--convert-to") + 1].startswith("pdf:impress_pdf_Export:")
+		and not any(value.startswith("-env:UserInstallation=") for value in command)
+		for command in commands) and settle.call_count == 2
 
 
 #============================================
-def test_require_libreoffice_closed_ignores_quicklook_extension() -> None:
-	"""The LibreOffice Quick Look extension does not block presentation builds."""
-	processes = "/Applications/LibreOffice.app/Contents/PlugIns/QuickLookThumbnail.appex/helper\n"
-	result = subprocess.CompletedProcess(["ps"], 0, stdout=processes)
-	with mock.patch.object(libreoffice.subprocess, "run", return_value=result):
-		libreoffice.require_libreoffice_closed()
-
-
-#============================================
-def test_successful_conversion_captures_and_hides_libreoffice_output(
-		tmp_path: pathlib.Path, capsys: pytest.CaptureFixture[str]) -> None:
-	"""Successful third-party chatter never reaches the presentation build stream."""
-	input_path = tmp_path / "deck.pptx"
+def test_convert_files_reports_missing_expected_output(tmp_path: pathlib.Path) -> None:
+	"""A successful converter result still requires the expected PDF artifact."""
+	input_path = tmp_path / "deck.odp"
 	input_path.write_bytes(b"source")
 	output_dir = tmp_path / "converted"
 	output_dir.mkdir()
-	call_options: list[dict[str, object]] = []
-
-	def finish_conversion(command: list[str], **kwargs: object) -> subprocess.CompletedProcess[str]:
-		"""Return noisy success while creating the represented ODP artifact."""
-		call_options.append(kwargs)
-		(output_dir / "deck.odp").write_bytes(b"odp")
-		return subprocess.CompletedProcess(command, 0, stdout="convert chatter\n", stderr="warning\n")
-
+	result = subprocess.CompletedProcess(["soffice"], 0, stdout="", stderr="")
 	with mock.patch.object(libreoffice, "require_libreoffice_closed"), \
-		mock.patch.object(libreoffice, "require_soffice", return_value=pathlib.Path("/usr/bin/soffice")), \
-		mock.patch.object(libreoffice.subprocess, "run", side_effect=finish_conversion):
-		libreoffice.convert_file(input_path, output_dir, "odp")
-	captured = capsys.readouterr()
-	assert captured.out == "" and captured.err == ""
-	assert call_options[0]["capture_output"] is True and call_options[0]["text"] is True
+			mock.patch.object(libreoffice, "require_soffice", return_value=pathlib.Path("/usr/bin/soffice")), \
+			mock.patch.object(libreoffice.subprocess, "run", return_value=result):
+		with pytest.raises(libreoffice.LibreOfficeError, match="deck.pdf"):
+			libreoffice.convert_files((input_path,), output_dir, "pdf")
 
 
 #============================================
-def test_failed_conversion_reports_captured_diagnostics(tmp_path: pathlib.Path) -> None:
-	"""A failed conversion retains actionable stdout and stderr without a raw command."""
-	input_path = tmp_path / "deck.pptx"
-	input_path.write_bytes(b"source")
+def test_convert_file_delegates_one_input_to_sequential_boundary(tmp_path: pathlib.Path) -> None:
+	"""The one-file API remains a compact wrapper around the common converter."""
+	input_path = tmp_path / "deck.odp"
 	output_dir = tmp_path / "converted"
-	output_dir.mkdir()
-	result = subprocess.CompletedProcess(["soffice"], 7,
-		stdout="source format rejected\n", stderr="presentation filter unavailable\n")
-	with mock.patch.object(libreoffice, "require_libreoffice_closed"), \
-		mock.patch.object(libreoffice, "require_soffice", return_value=pathlib.Path("/usr/bin/soffice")), \
-		mock.patch.object(libreoffice.subprocess, "run", return_value=result):
-		with pytest.raises(libreoffice.LibreOfficeError,
-			match="presentation filter unavailable; source format rejected"):
-			libreoffice.convert_file(input_path, output_dir, "odp")
+	with mock.patch.object(libreoffice, "convert_files", return_value=(output_dir / "deck.pdf",)) as convert:
+		converted = libreoffice.convert_file(input_path, output_dir, "pdf")
+	assert converted == output_dir / "deck.pdf" and convert.call_args.args == ((input_path,), output_dir, "pdf")

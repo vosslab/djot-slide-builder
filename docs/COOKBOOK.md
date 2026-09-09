@@ -8,8 +8,8 @@ replaceable classroom artifacts.
 
 Use this loop when you are changing wording, a question, or a figure in an existing lecture.
 
-1. Edit the `.djot` source. Start every slide with a declared `=== layout: <name>` and use only
-   slots that layout supports.
+1. Edit the `.djot` source. [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines layout directives
+   and the slots each layout supports.
 2. Check the deck's structural contract before producing a presentation:
 
    ```bash
@@ -21,10 +21,10 @@ Use this loop when you are changing wording, a question, or a figure in an exist
 
    ```bash
    source source_me.sh && python3 deck_tools.py build \
-     genetics/djot/lect01b-genetic_disorders.djot --format pptx
+     genetics/djot/lect01b-genetic_disorders.djot --format odp
    ```
 
-The result is `output/pptx/lect01b-genetic_disorders.pptx`. A successful lint proves source
+The result is `output/odp/lect01b-genetic_disorders.odp`. A successful lint proves source
 structure and image references; it does not prove that a changed visual reads well on a projected
 slide. Open the output for that review before class.
 
@@ -38,14 +38,15 @@ source source_me.sh && python3 deck_tools.py lint genetics/djot
 ./build_slides.sh genetics
 ```
 
-The first command checks all discovered Djot decks without rendering them. The second writes PPTX,
-ODP, and ODP-derived PDF files under `output/pptx/`, `output/odp/`, and `output/pdf/`. Check the
+The first command checks all discovered Djot decks without rendering them. The second writes ODP
+and ODP-derived PDF files under `output/odp/` and `output/pdf/`. Check the
 PDF for final-state handouts or upload, and retain the Djot files for the next revision rather than
 editing an export.
 
 ## Migrate a trusted legacy deck
 
-Use import once to begin maintaining an instructor-owned ODP or PPTX as Djot. Pick a new target
+Use import once to begin maintaining an instructor-owned ODP as Djot. Save legacy PPTX as ODP in
+LibreOffice first. Pick a new target
 name; import refuses to replace an existing Djot file or asset directory.
 
 ```bash

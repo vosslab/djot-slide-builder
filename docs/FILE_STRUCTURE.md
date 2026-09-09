@@ -3,7 +3,7 @@
 ## Top-level layout
 
 ```text
-deck_tools.py        application CLI for build, import, lint, and visibility
+deck_tools.py        application CLI for build, capacity, import, lint, and visibility
 slide_lib/           reusable Djot, native-export, and importer package
 genetics/            example and lecture Djot corpus
 tests/               fast tests and explicitly separate native E2E runners
@@ -22,13 +22,13 @@ Brewfile             declared macOS command-line and desktop dependencies
   command interface, Djot syntax and semantic validation, typed native model, layouts, export,
   LibreOffice conversion, and terminal reporting.
 - [../slide_lib/importers/](../slide_lib/importers/) contains the trusted existing-presentation
-  import pipeline: ODP/PPTX readers, source records, geometry and topology analysis, slide
+  import pipeline: ODP reader, source records, geometry and topology analysis, slide
   planning, native normalization, Djot emission, and lossless migration reports.
 - [../genetics/djot/](../genetics/djot/) contains the repository's Djot lecture sources and its
   local authoring README. A deck-local asset tree is created beside an imported deck when needed.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.
-  `presentation_theme.py` validates and reads it; `odp_export.py`, `odp_text.py`, and
-  `pptx_export.py` project the compiled physical plan directly to sibling editable formats.
+  `presentation_theme.py` validates and reads it; `odp_export.py` projects the compiled physical
+  plan directly to editable ODP, and `odp_text.py` writes its editable text objects.
 - [../tests/](../tests/) holds permanent offline pytest coverage. The
   [../tests/e2e/](../tests/e2e/) subtree holds non-browser whole-system runners that pytest does
   not collect; [../tests/TESTS_README.md](../tests/TESTS_README.md) explains the test lanes.
@@ -40,8 +40,9 @@ Brewfile             declared macOS command-line and desktop dependencies
 
 ## Generated artifacts
 
-- `output/` contains generated `pptx`, `odp`, and `pdf` presentation products.
-  The directory is ignored by Git and is not an authored source.
+- `output/` contains generated `odp` and `pdf` presentation products.
+  The directory is ignored by Git and is not an authored source. Folder PDF conversion stages a
+  complete set below it before replacing published PDFs.
 - Imported decks may include genuine source-image assets under an adjacent `assets/` directory. The
   importer validates and publishes only reachable assets with the Djot source.
 - `graphify-out/` contains repository-local Graphify mapping output and is

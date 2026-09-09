@@ -1,11 +1,14 @@
 {
   "manifest_version": 1,
+  "odp_derivative_recipe": "TTFont(recalcTimestamp=False); rename name IDs 1, 4, 6, and 16 only",
   "fonts": [
     {
       "path": "assets/fonts/opendyslexic/OpenDyslexic-Regular.otf",
       "family": "OpenDyslexic",
       "bold": false,
       "italic": false,
+      "version": "Version 0.990;Glyphs 3.4.1 (3436)",
+      "odp_derivative_sha256": "c2a9f00f59b9ec20c20ffb2d8f24ffa0bbad0fc9e3596fe6e1fedc3af4311a42",
       "sha256": "215f0b29780dbafa8c02f2f22118fb9e2ab6b27b6686e3f13c8754041a035f64",
       "face_index": 0,
       "upstream": {
@@ -23,6 +26,8 @@
       "family": "OpenDyslexic",
       "bold": true,
       "italic": false,
+      "version": "Version 0.990;Glyphs 3.4.1 (3436)",
+      "odp_derivative_sha256": "4bc40ce3fc644a95ed0bc489d46f8bbcd5aa074aeeab116ad4e4d816f533a08d",
       "sha256": "ee7a8b9590a78e183826d16d6a22a50f6253c62e2f7f5e0e01ef44eb0676a9e0",
       "face_index": 0,
       "upstream": {
@@ -40,6 +45,8 @@
       "family": "OpenDyslexic",
       "bold": false,
       "italic": true,
+      "version": "Version 0.950;Glyphs 3.4.1 (3436)",
+      "odp_derivative_sha256": "eeaa38db5df8eae4ea85839c0ca4b45eb11fd188240bc1a9b4ed39ee53b7acbb",
       "sha256": "bd5c83e5c2a3e203fe816330572afe4ece576f8e2c20fb6359bd399e6ef37aaf",
       "face_index": 0,
       "upstream": {
@@ -57,6 +64,8 @@
       "family": "OpenDyslexic",
       "bold": true,
       "italic": true,
+      "version": "Version 0.940;hotconv 1.0.109;makeotfexe 2.5.65596",
+      "odp_derivative_sha256": "60958372cfa6e977cf315528c907a1b51c535aef914493b22c7eab1ce9950563",
       "sha256": "b50779f4f547917a648d38976a664cab8952563112ce03209ff568b1eb364090",
       "face_index": 0,
       "upstream": {
@@ -74,6 +83,8 @@
       "family": "PT Sans Narrow",
       "bold": false,
       "italic": false,
+      "version": "Version 2.003W OFL",
+      "odp_derivative_sha256": "62a3917efec07dfaac3925d4e0e938f86f9bec5c9ab3f1760b49485cce99b736",
       "sha256": "4102edda03059163771869d258df54ac8563c408fa6e9ef75b2ddc85eabea6f4",
       "face_index": 0,
       "upstream": {
@@ -91,6 +102,8 @@
       "family": "PT Sans Narrow",
       "bold": true,
       "italic": false,
+      "version": "Version 2.003W OFL",
+      "odp_derivative_sha256": "330a05f8815103d839af82b9c92a210af2dea4ac82a6c52fd39c9d2b8145104b",
       "sha256": "e69d83bcf5bd647892b4e2b22f5098dabd55c989413513197722fc156fb9f00e",
       "face_index": 0,
       "upstream": {

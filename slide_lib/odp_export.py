@@ -63,17 +63,33 @@ def _xml_bytes(root: xml.etree.ElementTree.Element) -> bytes:
 def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		layout_names: dict[slide_lib.layout_primitives.PresentationPageLayoutKey, str],
-		picture_members: dict[tuple[str, str], str]) -> bytes:
+		picture_members: dict[tuple[str, str], str],
+		font_faces: tuple[slide_lib.presentation_theme.OdfFontFace, ...] | None = None) -> bytes:
 	"""Project the complete physical plan into editable native ODF objects."""
 	root = xml.etree.ElementTree.Element(_qname(OFFICE_NS, "document-content"), {
 		_qname(OFFICE_NS, "version"): "1.3",
 	})
 	xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "scripts"))
 	fonts = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "font-face-decls"))
-	for family in ("OpenDyslexic", "PT Sans Narrow"):
-		xml.etree.ElementTree.SubElement(fonts, _qname(STYLE_NS, "font-face"), {
-			_qname(STYLE_NS, "name"): family,
-			_qname(SVG_NS, "font-family"): family,
+	if font_faces is None:
+		font_faces = slide_lib.presentation_theme.odf_font_faces()
+	for face in font_faces:
+		attributes = {
+			_qname(STYLE_NS, "name"): face.odf_name,
+			_qname(SVG_NS, "font-family"): face.embedded_family,
+			_qname(SVG_NS, "font-weight"): "bold" if face.profile.bold else "normal",
+			_qname(SVG_NS, "font-style"): "italic" if face.profile.italic else "normal",
+		}
+		declaration = xml.etree.ElementTree.SubElement(fonts, _qname(STYLE_NS, "font-face"),
+			attributes)
+		source = xml.etree.ElementTree.SubElement(declaration,
+			_qname(SVG_NS, "font-face-src"))
+		xml.etree.ElementTree.SubElement(source, _qname(SVG_NS, "font-face-uri"), {
+			_qname(XLINK_NS, "href"): face.package_member,
+		})
+		uri = source[-1]
+		xml.etree.ElementTree.SubElement(uri, _qname(SVG_NS, "font-face-format"), {
+			_qname(SVG_NS, "string"): face.format_name,
 		})
 	automatic = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "automatic-styles"))
 	_add_page_style(automatic)
@@ -108,6 +124,9 @@ def _add_page_style(automatic: xml.etree.ElementTree.Element) -> None:
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "drawing-page-properties"), {
 		_qname(PRESENTATION_NS, "background-visible"): "true",
 		_qname(PRESENTATION_NS, "background-objects-visible"): "true",
+		_qname(PRESENTATION_NS, "display-page-number"): "false",
+		_qname(PRESENTATION_NS, "display-footer"): "false",
+		_qname(PRESENTATION_NS, "display-date-time"): "false",
 	})
 
 
@@ -173,14 +192,16 @@ def _write_object(page: xml.etree.ElementTree.Element,
 		else:
 			raise ValueError(f"unsupported planned ODP content: {type(content).__name__}")
 
-
 #============================================
 def _frame_attributes(item: slide_lib.layout_model.LayoutObject,
 		deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
 		target_ids: dict[str, str]) -> dict[str, str]:
 	"""Return geometry, role, style, and animation identity for one native frame."""
-	rectangle = item.rectangle
+	if isinstance(item.content, slide_lib.layout_content.PictureContent):
+		rectangle = item.content.placement.displayed_rectangle
+	else:
+		rectangle = item.rectangle
 	attributes = {
 		_qname(DRAW_NS, "name"): item.object_id,
 		_qname(DRAW_NS, "layer"): item.layer.value,
@@ -234,7 +255,7 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 	if item.frame_text is not None:
 		frame = item.frame_text
 		properties[_qname(DRAW_NS, "fit-to-size")] = "false"
-		properties[_qname(STYLE_NS, "shrink-to-fit")] = "true"
+		properties[_qname(STYLE_NS, "shrink-to-fit")] = "false"
 		properties[_qname(DRAW_NS, "textarea-vertical-align")] = frame.vertical_alignment.value
 		properties[_qname(FO_NS, "padding-left")] = _cm_x(frame.padding.left, deck, theme)
 		properties[_qname(FO_NS, "padding-right")] = _cm_x(frame.padding.right, deck, theme)
@@ -252,11 +273,6 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 		properties[_qname(SVG_NS, "stroke-color")] = f"#{_color_for(shape_style.line_role)}"
 		properties[_qname(SVG_NS, "stroke-width")] = _pt(shape_style.line_width_pt)
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), properties)
-	if item.frame_text is not None and \
-			item.frame_text.text_direction is slide_lib.layout_primitives.TextDirection.VERTICAL:
-		xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "paragraph-properties"), {
-			_qname(STYLE_NS, "writing-mode"): "tb-rl",
-		})
 
 
 #============================================
@@ -333,12 +349,8 @@ def _write_accessibility(element: xml.etree.ElementTree.Element,
 def _write_notes(page: xml.etree.ElementTree.Element,
 		slide: slide_lib.layout_model.LayoutSlide, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
-	"""Write speaker notes and nonvisual continuation context."""
+	"""Write authored speaker notes."""
 	note_values = [note.text for note in slide.notes]
-	if slide.continuation_context is not None:
-		trail = " > ".join(_inline_text(entry.inlines)
-			for entry in slide.continuation_context.entries)
-		note_values.append(f"Continuation context ({slide.continuation_context.display.value}): {trail}")
 	if not note_values:
 		return
 	notes = xml.etree.ElementTree.SubElement(page, _qname(PRESENTATION_NS, "notes"))
@@ -356,13 +368,6 @@ def _write_notes(page: xml.etree.ElementTree.Element,
 
 
 #============================================
-def _inline_text(inlines: tuple[slide_lib.layout_content.InlineContent, ...]) -> str:
-	"""Flatten resolved continuation inlines for notes accessibility metadata."""
-	result = "".join(item.text if isinstance(item, slide_lib.layout_content.TextRun) else "\n"
-		for item in inlines)
-	return result
-
-
 #============================================
 def _clip_value(item: slide_lib.layout_model.LayoutObject,
 		crop: slide_lib.layout_primitives.CropInsets, deck: slide_lib.layout_model.LayoutDeck,
@@ -460,7 +465,6 @@ def _picture_payloads(deck: slide_lib.layout_model.LayoutDeck) -> tuple[dict[str
 			path = path.resolve()
 			if not path.is_file():
 				raise ValueError(f"planned picture source is missing: {item.content.source_path}")
-			# ASVS 5.2.1 and 5.2.3: reject a member before reading it into the output archive.
 			if path.stat().st_size > slide_lib.odf_package.MAX_MEMBER_BYTES:
 				raise ValueError(f"planned picture exceeds package member limit: {item.content.source_path}")
 			content = path.read_bytes()
@@ -472,6 +476,18 @@ def _picture_payloads(deck: slide_lib.layout_model.LayoutDeck) -> tuple[dict[str
 			payloads[member_name] = content
 			members[(slide.identity.slide_id, item.object_id)] = member_name
 	return payloads, members
+
+
+#============================================
+def _font_payloads(font_faces: tuple[slide_lib.presentation_theme.OdfFontFace, ...]) \
+		-> tuple[dict[str, bytes], dict[str, str]]:
+	"""Read the already-validated bundled faces into stable ODP package members."""
+	payloads = {}
+	media_types = {}
+	for face in font_faces:
+		payloads[face.package_member] = slide_lib.presentation_theme.embedded_font_payload(face)
+		media_types[face.package_member] = face.media_type
+	return payloads, media_types
 
 
 #============================================
@@ -508,7 +524,7 @@ def _template_payloads(template_path: pathlib.Path) -> dict[str, bytes]:
 
 
 #============================================
-def _manifest_xml(payloads: dict[str, bytes]) -> bytes:
+def _manifest_xml(payloads: dict[str, bytes], media_types: dict[str, str] | None = None) -> bytes:
 	"""Reconcile the ODF manifest with the exact retained/generated member set."""
 	root = xml.etree.ElementTree.Element(_qname(MANIFEST_NS, "manifest"), {
 		_qname(MANIFEST_NS, "version"): "1.3",
@@ -518,10 +534,12 @@ def _manifest_xml(payloads: dict[str, bytes]) -> bytes:
 		_qname(MANIFEST_NS, "media-type"): slide_lib.odf_package.ODP_MIMETYPE,
 		_qname(MANIFEST_NS, "version"): "1.3",
 	})
+	if media_types is None:
+		media_types = {}
 	for name in sorted(set(payloads) - {"mimetype", slide_lib.odf_package.MANIFEST_NAME}):
 		xml.etree.ElementTree.SubElement(root, _qname(MANIFEST_NS, "file-entry"), {
 			_qname(MANIFEST_NS, "full-path"): name,
-			_qname(MANIFEST_NS, "media-type"): _media_type(name),
+			_qname(MANIFEST_NS, "media-type"): media_types.get(name, _media_type(name)),
 		})
 	return _xml_bytes(root)
 
@@ -540,10 +558,16 @@ def write_odp(deck: slide_lib.layout_model.LayoutDeck,
 	payloads = _template_payloads(theme.template_path)
 	layout_names = _layout_names(deck)
 	picture_payloads, picture_members = _picture_payloads(deck)
+	font_faces = slide_lib.presentation_theme.odf_font_faces()
+	font_payloads, font_media_types = _font_payloads(font_faces)
+	license_payloads, license_media_types = slide_lib.presentation_theme.odf_font_license_payloads()
 	payloads["mimetype"] = slide_lib.odf_package.ODP_MIMETYPE.encode("ascii")
 	payloads["styles.xml"] = _styles_xml(payloads["styles.xml"], deck, theme, layout_names)
 	payloads.update(picture_payloads)
-	payloads["content.xml"] = _content_xml(deck, theme, layout_names, picture_members)
-	payloads[slide_lib.odf_package.MANIFEST_NAME] = _manifest_xml(payloads)
+	payloads.update(font_payloads)
+	payloads.update(license_payloads)
+	payloads["content.xml"] = _content_xml(deck, theme, layout_names, picture_members, font_faces)
+	payloads[slide_lib.odf_package.MANIFEST_NAME] = _manifest_xml(payloads,
+		font_media_types | license_media_types)
 	return slide_lib.odf_package.publish_odp(destination, payloads,
-		frozenset(picture_payloads))
+		frozenset(picture_payloads) | frozenset(font_payloads))

@@ -33,6 +33,21 @@ def parse_error(tmp_path: pathlib.Path, source: str) -> str:
 
 
 #============================================
+@pytest.mark.parametrize("layout_name", (
+	"vertical-panel",
+	"vertical-title-two-panels",
+	"vertical-text-panel",
+	"two-panels-vertical-clipart",
+	"centered-text",
+))
+def test_retired_layout_names_report_source_located_unknown_layout(
+		tmp_path: pathlib.Path, layout_name: str) -> None:
+	"""Retired authored spellings use the normal source-located layout diagnostic."""
+	message = parse_error(tmp_path, f"=== layout: {layout_name}\n")
+	assert f"{tmp_path / 'deck.djot'}:1: unknown Djot layout: {layout_name}" in message
+
+
+#============================================
 def test_parse_deck_binds_global_headings_and_named_cells(tmp_path: pathlib.Path) -> None:
 	"""A canonical source deck keeps title material global and slots named."""
 	deck = parse_source(tmp_path, "=== layout: one-panel\n# Genetics\n@body\nVisible text\n")

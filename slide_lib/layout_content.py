@@ -8,7 +8,6 @@ from slide_lib.layout_primitives import (CropInsets, Insets, LinePattern, ListKi
 	require_boolean, require_nonnegative_finite, require_nonnegative_integer, require_positive_finite,
 	require_positive_integer)
 
-
 @dataclass(frozen=True)
 class RunStyle:
 	"""Resolved run facts; adapters never choose a font or color token."""
@@ -51,12 +50,10 @@ class ListMetadata:
 	kind: ListKind
 	level: int
 	start: int
-	continuation_context: bool = False
 
 	def __post_init__(self) -> None:
 		require_nonnegative_integer(self.level, "list level")
 		require_positive_integer(self.start, "list start")
-		require_boolean(self.continuation_context, "list continuation_context")
 
 
 @dataclass(frozen=True)
@@ -170,19 +167,14 @@ class PicturePlacement:
 	def __post_init__(self) -> None:
 		allocation = self.allocation_rectangle
 		displayed = self.displayed_rectangle
+		# Keep an adapter from emitting an image frame outside its assigned slot.
 		if not _rectangle_contains(allocation, displayed):
 			raise ValueError("picture displayed rectangle must remain inside its allocation")
-		if self.fit is PictureFit.CONTAIN:
-			if self.crop != CropInsets(0.0, 0.0, 0.0, 0.0):
-				raise ValueError("contained pictures cannot crop their source")
-		elif self.fit is PictureFit.COVER:
-			if displayed != allocation:
-				raise ValueError("covered pictures must fill their allocation rectangle")
-		elif self.fit is PictureFit.STRETCH:
-			if displayed != allocation:
-				raise ValueError("stretched pictures must use their allocation rectangle exactly")
-			if self.crop != CropInsets(0.0, 0.0, 0.0, 0.0):
-				raise ValueError("stretched pictures cannot crop their source")
+		# Contain is the sole supported image policy: preserve source proportions without crop.
+		if self.fit is not PictureFit.CONTAIN:
+			raise ValueError("pictures require the contain fit policy")
+		if self.crop != CropInsets(0.0, 0.0, 0.0, 0.0):
+			raise ValueError("contained pictures cannot crop their source")
 
 
 def _rectangle_contains(outer: LogicalRectangle, inner: LogicalRectangle) -> bool:

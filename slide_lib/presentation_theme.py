@@ -5,6 +5,7 @@ import dataclasses
 import enum
 import functools
 import hashlib
+import io
 import json
 import pathlib
 import xml.etree.ElementTree
@@ -24,6 +25,10 @@ LOGICAL_SLIDE_HEIGHT = 800.0
 EMU_PER_CM = 360000.0
 OTP_MIMETYPE = "application/vnd.oasis.opendocument.presentation-template"
 ORDINARY_LINE_SPACING_EM = 1.30
+# The original-deck measurement found readable ordinary body at 20 pt and exceptional titles at
+# 22 pt.
+CORPUS_DERIVED_TITLE_FLOOR_SIZE_PT = 22.0
+CORPUS_DERIVED_BODY_FLOOR_SIZE_PT = 20.0
 DEFAULT_TEMPLATE_PATH = pathlib.Path(__file__).resolve().parent.parent / \
 	"genetics/xlect99-template_2023.otp"
 REPOSITORY_ROOT = DEFAULT_TEMPLATE_PATH.parent.parent
@@ -71,6 +76,19 @@ class FontMetricProfile:
 
 
 @dataclasses.dataclass(frozen=True)
+class OdfFontFace:
+	"""One validated bundled face as a stable editable ODF package resource."""
+
+	profile: FontFaceProfile
+	odf_name: str
+	embedded_family: str
+	package_member: str
+	media_type: str
+	format_name: str
+	derivative_sha256: str
+
+
+@dataclasses.dataclass(frozen=True)
 class FontProvenance:
 	"""One pinned upstream source and local OFL record for a bundled face."""
 
@@ -79,6 +97,7 @@ class FontProvenance:
 	upstream_revision: str
 	license_path: pathlib.PurePosixPath
 	license_sha256: str
+	odp_derivative_sha256: str
 
 
 FONT_FACE_PROFILES = (
@@ -102,6 +121,20 @@ FONT_FACE_PROFILES = (
 		"e69d83bcf5bd647892b4e2b22f5098dabd55c989413513197722fc156fb9f00e", 0),
 )
 
+_ODF_FONT_NAMES = (
+	"DjotOpenDyslexicRegular",
+	"DjotOpenDyslexicBold",
+	"DjotOpenDyslexicItalic",
+	"DjotOpenDyslexicBoldItalic",
+	"DjotPTSansNarrowRegular",
+	"DjotPTSansNarrowBold",
+)
+
+_EMBEDDED_FONT_FAMILIES = {
+	"OpenDyslexic": "DjotOpenDyslexic",
+	"PT Sans Narrow": "DjotPTSansNarrow",
+}
+
 
 @dataclasses.dataclass(frozen=True)
 class ListLevelStyle:
@@ -124,7 +157,7 @@ class FrameGeometry:
 
 @dataclasses.dataclass(frozen=True)
 class PresentationTheme:
-	"""Validated theme values shared by the PPTX and ODP output adapters."""
+	"""Validated theme values used by the native ODP output adapter."""
 
 	template_path: pathlib.Path
 	master_name: str
@@ -208,6 +241,9 @@ def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> t
 		manifest = json.load(manifest_file)
 	if manifest["manifest_version"] != 1:
 		raise ThemeError("unsupported bundled font provenance manifest version")
+	if manifest.get("odp_derivative_recipe") != \
+		"TTFont(recalcTimestamp=False); rename name IDs 1, 4, 6, and 16 only":
+		raise ThemeError("unsupported ODP font derivative recipe")
 	entries = manifest["fonts"]
 	if not isinstance(entries, list):
 		raise ThemeError("bundled font provenance manifest fonts must be a list")
@@ -222,6 +258,12 @@ def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> t
 			entry["face_index"])
 		if declared != registered:
 			raise ThemeError(f"font provenance disagrees with registered face: {profile.relative_path}")
+		if not isinstance(entry.get("version"), str) or not entry["version"]:
+			raise ThemeError(f"font provenance is missing its face version: {profile.relative_path}")
+		derivative_sha256 = entry.get("odp_derivative_sha256")
+		if not isinstance(derivative_sha256, str) or len(derivative_sha256) != 64:
+			raise ThemeError(f"font provenance is missing its ODP derivative hash: "
+				f"{profile.relative_path}")
 		license = entry["license"]
 		license_path = pathlib.PurePosixPath(license["path"])
 		if license["spdx"] != "OFL-1.1" or license_path.is_absolute() or ".." in license_path.parts:
@@ -237,7 +279,7 @@ def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> t
 		if not upstream["url"].startswith("https://") or not upstream["revision"]:
 			raise ThemeError(f"font provenance has invalid upstream source: {profile.relative_path}")
 		provenance.append(FontProvenance(profile, upstream["url"], upstream["revision"],
-			license_path, license["sha256"]))
+			license_path, license["sha256"], derivative_sha256))
 	if len(entries) != len(provenance):
 		raise ThemeError("bundled font provenance has unregistered font records")
 	return tuple(provenance)
@@ -261,6 +303,8 @@ def validate_font_face(profile: FontFaceProfile,
 		with fontTools.ttLib.TTFont(path, fontNumber=profile.face_index, lazy=True) as font:
 			head = font["head"]
 			hhea = font["hhea"]
+			fs_type = font["OS/2"].fsType
+			validate_editable_embedding_permission(profile, fs_type)
 			family = font_name(font, 16, 1)
 			style = font_name(font, 17, 2)
 			if family != profile.family or font_style_flags(style) != (profile.bold, profile.italic):
@@ -271,6 +315,113 @@ def validate_font_face(profile: FontFaceProfile,
 	if metrics.units_per_em <= 0 or metrics.ascender <= 0 or metrics.descender >= 0:
 		raise ThemeError(f"bundled font metrics are invalid: {profile.relative_path}")
 	return metrics
+
+
+#============================================
+def validate_editable_embedding_permission(profile: FontFaceProfile, fs_type: int) -> None:
+	"""Require an OS/2 embedding mode that permits editable document embedding."""
+	if fs_type < 0 or fs_type > 0xffff:
+		raise ThemeError(f"bundled font has invalid OS/2 fsType: {profile.relative_path}")
+	mode = fs_type & 0x000f
+	if fs_type & 0x0200 or mode not in (0, 0x0008):
+		raise ThemeError(
+			f"bundled font forbids editable embedding (OS/2 fsType={fs_type}): "
+			f"{profile.relative_path}")
+
+
+#============================================
+def odf_font_faces(
+		repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[OdfFontFace, ...]:
+	"""Return every verified bundled face with its deterministic ODF resource identity."""
+	faces = []
+	provenance_by_profile = {item.profile: item for item in validate_font_manifest(repository_root)}
+	for profile, odf_name in zip(FONT_FACE_PROFILES, _ODF_FONT_NAMES, strict=True):
+		validate_font_face(profile, repository_root)
+		path = font_asset_path(profile, repository_root)
+		embedded_family = _EMBEDDED_FONT_FAMILIES[profile.family]
+		is_otf = path.suffix.lower() == ".otf"
+		faces.append(OdfFontFace(profile, odf_name, embedded_family,
+			f"Fonts/{embedded_family}-{_font_style_name(profile)}{path.suffix.lower()}",
+			"application/vnd.ms-opentype" if is_otf else "application/x-font-ttf",
+			"opentype" if is_otf else "truetype",
+			provenance_by_profile[profile].odp_derivative_sha256))
+	return tuple(faces)
+
+
+#============================================
+def odf_font_face_name(family: str, bold: bool = False, italic: bool = False) -> str:
+	"""Return the ODF resource name for one already-resolved semantic run style."""
+	profile = select_font_face(family, bold, italic)
+	for registered, odf_name in zip(FONT_FACE_PROFILES, _ODF_FONT_NAMES, strict=True):
+		if registered == profile:
+			return odf_name
+	raise ThemeError(f"missing ODF font resource for {profile.relative_path}")
+
+
+#============================================
+def odf_font_family(family: str, bold: bool = False, italic: bool = False) -> str:
+	"""Return the unique embedded family for one already-resolved semantic run style."""
+	select_font_face(family, bold, italic)
+	return _EMBEDDED_FONT_FAMILIES[family]
+
+
+#============================================
+def _font_style_name(profile: FontFaceProfile) -> str:
+	"""Return the stable face suffix used by ODF resources and renamed font records."""
+	if profile.bold and profile.italic:
+		return "BoldItalic"
+	if profile.bold:
+		return "Bold"
+	if profile.italic:
+		return "Italic"
+	return "Regular"
+
+
+#============================================
+def embedded_font_payload(face: OdfFontFace,
+		repository_root: pathlib.Path = REPOSITORY_ROOT) -> bytes:
+	"""Derive one OFL-compliant uniquely named package font from a pinned source face."""
+	validate_font_face(face.profile, repository_root)
+	path = font_asset_path(face.profile, repository_root)
+	style_name = _font_style_name(face.profile)
+	try:
+		with fontTools.ttLib.TTFont(path, fontNumber=face.profile.face_index,
+				recalcTimestamp=False) as font:
+			name_table = font["name"]
+			for record in tuple(name_table.names):
+				if record.nameID in (1, 16):
+					value = face.embedded_family
+				elif record.nameID == 4:
+					value = f"{face.embedded_family} {style_name}"
+				elif record.nameID == 6:
+					value = f"{face.embedded_family}-{style_name}"
+				else:
+					continue
+				name_table.setName(value, record.nameID, record.platformID,
+					record.platEncID, record.langID)
+			output = io.BytesIO()
+			font.save(output)
+	except (OSError, fontTools.ttLib.TTLibError) as error:
+		raise ThemeError(f"bundled font cannot be renamed for ODP embedding: "
+			f"{face.profile.relative_path}") from error
+	payload = output.getvalue()
+	if hashlib.sha256(payload).hexdigest() != face.derivative_sha256:
+		raise ThemeError(f"ODP font derivative hash differs: {face.profile.relative_path}")
+	return payload
+
+
+#============================================
+def odf_font_license_payloads(
+		repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[dict[str, bytes], dict[str, str]]:
+	"""Return the deduplicated OFL notices required beside generated font derivatives."""
+	payloads = {}
+	media_types = {}
+	for provenance in validate_font_manifest(repository_root):
+		path = (repository_root / provenance.license_path).resolve()
+		member = f"Fonts/licenses/{path.name}"
+		payloads[member] = path.read_bytes()
+		media_types[member] = "text/plain"
+	return payloads, media_types
 
 
 #============================================
@@ -460,7 +611,7 @@ def fixed_shrink_only(style: xml.etree.ElementTree.Element, name: str) -> None:
 #============================================
 def list_level_styles(outline_style: xml.etree.ElementTree.Element,
 		logical_pixels_per_cm: float) -> tuple[ListLevelStyle, ...]:
-	"""Read the nine native PPTX outline levels from the ODP outline style."""
+	"""Read the nine native ODP outline levels from the ODP outline style."""
 	levels: list[tuple[int, ListLevelStyle]] = []
 	for bullet in outline_style.findall("./style:graphic-properties/text:list-style/"
 			"text:list-level-style-bullet", NS):
@@ -569,7 +720,8 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 		resolved_path, master_name, slide_width_cm, slide_height_cm, emu_per_logical_pixel,
 		top_band_height, start_color, end_color, title_font, frame_geometry(title_frame_element),
 		frame_geometry(outline_frame_element), title_style_name, style_names, title_sizes[0],
-		28.0, ORDINARY_LINE_SPACING_EM, 30.0, 24.0, OverflowPolicy.SHRINK_ONLY, levels, font_metrics,
+		28.0, ORDINARY_LINE_SPACING_EM, CORPUS_DERIVED_TITLE_FLOOR_SIZE_PT,
+		CORPUS_DERIVED_BODY_FLOOR_SIZE_PT, OverflowPolicy.SHRINK_ONLY, levels, font_metrics,
 	)
 	return theme
 

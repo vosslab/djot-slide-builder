@@ -1,7 +1,7 @@
 # djot-slides
 
 A Python toolchain for biology instructors and other educators who need editable, lecture-ready
-slides from concise Djot source, with native PPTX, ODP, and PDF output.
+slides from concise Djot source, with native editable ODP and PDF output.
 
 ## One source, editable classroom decks
 
@@ -14,14 +14,13 @@ raster stage.
 canonical extended-Djot source
   -> repository-owned Djot parser
   -> typed native slide-object model
-  -> one format-neutral compiled LayoutDeck and shared OTP theme
+  -> one CompilationResult with a format-neutral LayoutDeck and shared OTP theme
   -> native editable ODP -> LibreOffice PDF
-  -> optional sibling editable PPTX
 ```
 
-The 16:10 master-slide theme is `genetics/xlect99-template_2023.otp`. ODP and PDF are the
-LibreOffice-first outputs; PPTX mirrors the same rules as an optional interchange artifact. The
-theme is native presentation structure, not CSS or a browser-rendered slide.
+The 16:10 master-slide theme is `genetics/xlect99-template_2023.otp`. ODP is the editable
+artifact and LibreOffice derives its PDF. The theme is native presentation structure, not CSS or a
+browser-rendered slide.
 
 The included genetics corpus demonstrates the complete path: eight canonical source decks cover
 336 visible slides, with text, nested lists, links, images, and a source-derived table retained as
@@ -59,14 +58,14 @@ source source_me.sh && python3 deck_tools.py build \
 ```
 
 The command writes `output/odp/lect01b-genetic_disorders.odp`, which you can open and edit in
-LibreOffice Impress. Use `--format pptx`, `--format pdf`, or `--format all` when a different
-deliverable is needed.
+LibreOffice Impress. Use `--format pdf` or `--format all` when a PDF is needed.
 
 ## What Djot source looks like
 
 Layouts and slots make a slide's teaching structure visible in source. This small excerpt creates a
 titled panel with three flat definition bullets; the full 23-slide deck is
 [genetics/djot/lect01b-genetic_disorders.djot](genetics/djot/lect01b-genetic_disorders.djot).
+See [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) for the complete authoring reference.
 
 ```djot
 === layout: one-panel
@@ -92,7 +91,8 @@ visual layout, editable Office output, or attended animation playback.
 
 ## Bring forward trusted decks
 
-`deck_tools.py import` is a one-time migration path for trusted instructor-owned ODP or PPTX. It
+`deck_tools.py import` is a one-time migration path for trusted instructor-owned ODP. Save a legacy
+PPTX as ODP in LibreOffice before importing it. The importer
 uses source facts and geometry to select layouts, preserves ordinary content as editable Djot where
 supported, and normalizes difficult spatial compositions into standard native source-order layouts
 with explicit review reasons. It never substitutes a rendered source slide or composite region.
@@ -116,8 +116,9 @@ Start here:
 
 - [docs/INSTALL.md](docs/INSTALL.md) - macOS tools, Python environment, and conversion boundary.
 - [docs/USAGE.md](docs/USAGE.md) - build, import, lint, and authoring commands.
-- [genetics/djot/README.md](genetics/djot/README.md) - source syntax, deck inventory, and corpus
-  evidence.
+- [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) - layouts, slots, source blocks, and
+  reveal behavior.
+- [genetics/djot/README.md](genetics/djot/README.md) - deck inventory and corpus evidence.
 - [docs/ROADMAP.md](docs/ROADMAP.md) - current milestones and open acceptance gates.
 
 Understand the implementation:

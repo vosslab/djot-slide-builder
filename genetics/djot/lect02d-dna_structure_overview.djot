@@ -26,11 +26,11 @@
   - Single Nucleotide Polymorphisms
   - Whole Genome Analysis
 
-=== layout: title-only
+=== layout: section
 
 # DNA Structure Review
 
-=== layout: title-only
+=== layout: section
 
 # Name the three (3) components of a nucleic acid
 
@@ -42,7 +42,7 @@
 
 ![Slide image 1](assets/lect02d-dna_structure_overview/image_001.jpg)
 
-=== layout: title-only
+=== layout: section
 
 # Name the two (2) types of nucleobases
 
@@ -54,7 +54,7 @@
 
 ![Slide image 2](assets/lect02d-dna_structure_overview/image_002.jpg)
 
-=== layout: title-only
+=== layout: section
 
 # Name the two (2) types of purines
 
@@ -67,7 +67,7 @@
 
 - “Purines = 2 rings” (try saying it with a funny accent)
 
-=== layout: title-only
+=== layout: section
 
 # Name the three (3) types of pyrimidines
 
@@ -80,7 +80,7 @@
 
 - pYrimidines \: cYtosine, thYmine, uracYl (!)
 
-=== layout: title-only
+=== layout: section
 
 # Difference between DNA and RNA sugars
 
@@ -131,7 +131,7 @@
 
 ![Slide image 8](assets/lect02d-dna_structure_overview/image_008.jpg)
 
-=== layout: title-only
+=== layout: section
 
 # Base Pairing
 
@@ -180,7 +180,7 @@
 
 - G-C base pairing
 
-=== layout: title-only
+=== layout: section
 
 # The Double Strand
 
@@ -251,7 +251,7 @@
 - Sense
 - Read 5&prime; to 3&prime;
 
-=== layout: title-only
+=== layout: section
 
 # Complementary Sequences
 
@@ -323,7 +323,7 @@ Answer\: B
 
 Answer\: A
 
-=== layout: title-only
+=== layout: section
 
 # Base Composition
 
@@ -389,7 +389,7 @@ Answer\: A
 - \[A\] = \[T\] = 14%
 - \[G\] = \[C\] = 36%
 
-=== layout: title-only
+=== layout: section
 
 # More Sample Problems
 
@@ -400,6 +400,6 @@ Answer\: A
 
 ![Slide image 19](assets/lect02d-dna_structure_overview/image_019.png)
 
-=== layout: title-only
+=== layout: section
 
 # THE END

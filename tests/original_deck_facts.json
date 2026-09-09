@@ -1,0 +1,1589 @@
+{
+	"schema_version": 1,
+	"corpus": {
+		"physical_page_count": 378,
+		"hidden_page_count": 42,
+		"visible_page_count": 336
+	},
+	"decks": [
+		{
+			"deck": "lect01a-course_intro",
+			"physical_page_count": 40,
+			"hidden_page_count": 9,
+			"visible_page_count": 31,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL5T14"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "AL6T12"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "AL7T18"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "AL8T19"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 28,
+					"layout_identity": "AL6T12"
+				},
+				{
+					"physical_page_index": 29,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 30,
+					"layout_identity": "AL8T19"
+				},
+				{
+					"physical_page_index": 31,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 32,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 33,
+					"layout_identity": "AL9T15"
+				},
+				{
+					"physical_page_index": 34,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 35,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 36,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 37,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 40,
+					"layout_identity": "AL2T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"18": 2,
+					"21": 1,
+					"24": 6,
+					"26": 5,
+					"28": 2,
+					"36": 2
+				},
+				"title": {
+					"32": 4,
+					"35.5": 4,
+					"36": 3,
+					"40": 1,
+					"45": 3,
+					"50": 2,
+					"54": 1,
+					"59.6": 4,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect01b-genetic_disorders",
+			"physical_page_count": 23,
+			"hidden_page_count": 0,
+			"visible_page_count": 23,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "AL2T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"18": 1,
+					"20": 15,
+					"26.8": 6
+				},
+				"title": {
+					"32": 1,
+					"39.9": 3,
+					"48.5": 5,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect02a-2025_announcements",
+			"physical_page_count": 75,
+			"hidden_page_count": 32,
+			"visible_page_count": 43,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL5T14"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL6T18"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "AL7T12"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "AL8T19"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 24,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 25,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 28,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 29,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 30,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 36,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 37,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 38,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 47,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 48,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 49,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 50,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 51,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 52,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 53,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 54,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 55,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 56,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 57,
+					"layout_identity": "AL7T12"
+				},
+				{
+					"physical_page_index": 58,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 59,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 61,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 62,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 75,
+					"layout_identity": "AL3T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"18": 2,
+					"20": 6,
+					"21": 1,
+					"22": 7,
+					"23.3": 4,
+					"24": 2,
+					"26": 10,
+					"26.7": 10,
+					"27.5": 24,
+					"28": 2,
+					"31": 15,
+					"31.1": 1,
+					"35.5": 2,
+					"36": 2
+				},
+				"title": {
+					"32": 4,
+					"35.5": 4,
+					"40": 1,
+					"45": 6,
+					"64": 1,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect02b-genes_dogma",
+			"physical_page_count": 49,
+			"hidden_page_count": 0,
+			"visible_page_count": 49,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL5T19"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL4T3"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "AL6T14"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 24,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 25,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 28,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 29,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 30,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 31,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 32,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 33,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 34,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 35,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 36,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 37,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 38,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 39,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 40,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 41,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 42,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 43,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 44,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 45,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 46,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 47,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 48,
+					"layout_identity": "AL3T1"
+				},
+				{
+					"physical_page_index": 49,
+					"layout_identity": "AL2T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"17": 3,
+					"18": 75,
+					"20": 5,
+					"21": 48,
+					"22": 12,
+					"24": 8,
+					"25.4": 4,
+					"26.5": 2,
+					"28": 16,
+					"29.1": 3,
+					"32": 8,
+					"36": 8,
+					"40": 1
+				},
+				"title": {
+					"12": 2,
+					"32": 3,
+					"36": 4,
+					"36.7": 3,
+					"39.9": 2,
+					"40": 3,
+					"42": 8,
+					"48.5": 1,
+					"58.1": 2,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect02c-genome_sizes",
+			"physical_page_count": 59,
+			"hidden_page_count": 0,
+			"visible_page_count": 59,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL5T19"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 24,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 25,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 28,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 29,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 30,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 31,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 32,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 33,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 34,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 35,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 36,
+					"layout_identity": "AL5T19"
+				},
+				{
+					"physical_page_index": 37,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 38,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 39,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 40,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 41,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 42,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 43,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 44,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 45,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 46,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 47,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 48,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 49,
+					"layout_identity": "AL3T3"
+				},
+				{
+					"physical_page_index": 50,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 51,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 52,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 53,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 54,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 55,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 56,
+					"layout_identity": "AL2T32"
+				},
+				{
+					"physical_page_index": 57,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 58,
+					"layout_identity": "AL4T1"
+				},
+				{
+					"physical_page_index": 59,
+					"layout_identity": "AL2T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"20": 10,
+					"22": 1,
+					"23.3": 2,
+					"24": 12,
+					"25.4": 8,
+					"29.1": 6,
+					"36": 5,
+					"42": 1
+				},
+				"title": {
+					"22": 2,
+					"24": 1,
+					"26": 1,
+					"32": 6,
+					"36": 5,
+					"36.6": 6,
+					"40": 1,
+					"40.4": 1,
+					"44": 3,
+					"48": 2,
+					"58.1": 1,
+					"64": 1,
+					"72": 1,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect02d-dna_structure_overview",
+			"physical_page_count": 43,
+			"hidden_page_count": 0,
+			"visible_page_count": 43,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "AL4T19"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "AL4T19"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 24,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 25,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 28,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 29,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 30,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 31,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 32,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 33,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 34,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 35,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 36,
+					"layout_identity": "AL4T19"
+				},
+				{
+					"physical_page_index": 37,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 38,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 39,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 40,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 41,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 42,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 43,
+					"layout_identity": "AL3T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"22.1": 4,
+					"26.5": 12,
+					"30": 5,
+					"36": 1,
+					"40": 2
+				},
+				"title": {
+					"36": 1,
+					"39.9": 4,
+					"48.5": 2,
+					"64": 10,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect02e-restriction_enzymes",
+			"physical_page_count": 62,
+			"hidden_page_count": 0,
+			"visible_page_count": 62,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL4T15"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 13,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 24,
+					"layout_identity": "AL6T19"
+				},
+				{
+					"physical_page_index": 25,
+					"layout_identity": "AL6T19"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "AL6T19"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "AL6T19"
+				},
+				{
+					"physical_page_index": 28,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 29,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 30,
+					"layout_identity": "AL5T3"
+				},
+				{
+					"physical_page_index": 31,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 32,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 33,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 34,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 35,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 36,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 37,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 38,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 39,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 40,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 41,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 42,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 43,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 44,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 45,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 46,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 47,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 48,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 49,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 50,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 51,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 52,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 53,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 54,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 55,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 56,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 57,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 58,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 59,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 60,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 61,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 62,
+					"layout_identity": "AL3T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"19": 142,
+					"20": 52,
+					"22": 2,
+					"23": 4,
+					"24": 46,
+					"28": 10,
+					"31": 2,
+					"32": 4,
+					"84": 4
+				},
+				"title": {
+					"12": 4,
+					"32": 1,
+					"39.9": 4,
+					"48.5": 1,
+					"64": 1,
+					"128": 2
+				}
+			}
+		},
+		{
+			"deck": "lect02f-dna_electrophoresis",
+			"physical_page_count": 27,
+			"hidden_page_count": 1,
+			"visible_page_count": 26,
+			"visible_page_layouts": [
+				{
+					"physical_page_index": 1,
+					"layout_identity": "AL1T0"
+				},
+				{
+					"physical_page_index": 2,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 3,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 4,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 5,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 6,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 7,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 8,
+					"layout_identity": "AL4T19"
+				},
+				{
+					"physical_page_index": 9,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 10,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 11,
+					"layout_identity": "AL2T1"
+				},
+				{
+					"physical_page_index": 12,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 14,
+					"layout_identity": "AL3T32"
+				},
+				{
+					"physical_page_index": 15,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 16,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 17,
+					"layout_identity": "AL6T3"
+				},
+				{
+					"physical_page_index": 18,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 19,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 20,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 21,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 22,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 23,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 24,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 25,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 26,
+					"layout_identity": "(absent)"
+				},
+				{
+					"physical_page_index": 27,
+					"layout_identity": "AL3T32"
+				}
+			],
+			"font_size_runs_pt": {
+				"body": {
+					"18": 23,
+					"20": 9,
+					"26": 1,
+					"26.5": 5,
+					"28": 5
+				},
+				"title": {
+					"24": 1,
+					"26": 2,
+					"32": 1,
+					"39.9": 4,
+					"48.5": 3,
+					"128": 2
+				}
+			}
+		}
+	]
+}

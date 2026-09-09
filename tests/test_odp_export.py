@@ -2,10 +2,12 @@
 
 # Standard Library
 import dataclasses
+import io
 import pathlib
 import zipfile
 
 import defusedxml.ElementTree
+import fontTools.ttLib
 import pytest
 
 import slide_lib.djot_parser
@@ -27,7 +29,7 @@ def source() -> slide_lib.native_model.SourceLocation:
 def frame_text() -> primitives.FrameTextProperties:
 	return primitives.FrameTextProperties(primitives.Insets(0.0, 0.0, 0.0, 0.0),
 		primitives.VerticalAlignment.TOP, primitives.TextWrap.WRAP,
-		primitives.TextDirection.HORIZONTAL, primitives.OverflowPolicy.SHRINK)
+		primitives.OverflowPolicy.SHRINK)
 
 
 def deck() -> model.LayoutDeck:
@@ -92,6 +94,142 @@ def test_write_odp_replaces_content_and_preserves_reachable_template_resource(tm
 		package.validate_odp_members({info.filename: archive.read(info.filename) for info in members})
 
 
+def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib.Path) -> None:
+	"""Editable text styles select deterministic embedded resources for every supported face."""
+	layout_deck = deck()
+	item = layout_deck.slides[0].objects[0]
+	styles = tuple(content.TextRun(str(index), content.RunStyle(profile.family, "ink",
+		bold=profile.bold, italic=profile.italic)) for index, profile in enumerate(
+		slide_lib.presentation_theme.FONT_FACE_PROFILES, start=1))
+	paragraph = dataclasses.replace(item.content.paragraphs[0], inlines=styles)
+	updated_item = dataclasses.replace(item, content=content.TextContent((paragraph,)))
+	updated_deck = dataclasses.replace(layout_deck, slides=(dataclasses.replace(
+		layout_deck.slides[0], objects=(updated_item,)),))
+	output = exporter.write_odp(updated_deck, slide_lib.presentation_theme.default_theme(),
+		tmp_path / "embedded.odp")
+	with zipfile.ZipFile(output) as archive:
+		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+		manifest = package.manifest_file_targets(archive.read(package.MANIFEST_NAME))
+		faces = slide_lib.presentation_theme.odf_font_faces()
+		assert all(face.package_member in archive.namelist() and face.package_member in manifest
+			for face in faces)
+		license_payloads, _license_media_types = \
+			slide_lib.presentation_theme.odf_font_license_payloads()
+		assert set(license_payloads) <= set(archive.namelist()) and set(license_payloads) <= manifest
+		assert all(archive.read(member) == payload for member, payload in license_payloads.items())
+		manifest_root = defusedxml.ElementTree.fromstring(archive.read(package.MANIFEST_NAME))
+		manifest_media = {element.attrib[package.MANIFEST_FULL_PATH]: element.attrib[
+			f"{{{exporter.MANIFEST_NS}}}media-type"]
+			for element in manifest_root.findall(f".//{package.MANIFEST_FILE_ENTRY}")}
+		assert all(manifest_media[face.package_member] == face.media_type for face in faces)
+		assert all(manifest_media[member] == "text/plain" for member in license_payloads)
+		declarations = {element.attrib[f"{{{exporter.STYLE_NS}}}name"]: element
+			for element in root.findall(f".//{{{exporter.STYLE_NS}}}font-face")}
+		assert set(declarations) == {face.odf_name for face in faces}
+		for face in faces:
+			uri = declarations[face.odf_name].find(
+				f"{{{exporter.SVG_NS}}}font-face-src/{{{exporter.SVG_NS}}}font-face-uri")
+			assert uri is not None and uri.attrib[f"{{{exporter.XLINK_NS}}}href"] == face.package_member
+			assert uri.find(f"{{{exporter.SVG_NS}}}font-face-format").attrib[
+				f"{{{exporter.SVG_NS}}}string"] == face.format_name
+			with fontTools.ttLib.TTFont(io.BytesIO(archive.read(face.package_member))) as font:
+				assert slide_lib.presentation_theme.font_name(font, 16, 1) == face.embedded_family
+		font_names = {element.attrib[f"{{{exporter.STYLE_NS}}}font-name"]
+			for element in root.findall(f".//{{{exporter.STYLE_NS}}}text-properties")}
+		assert font_names == {face.odf_name for face in faces}
+		font_families = {element.attrib[f"{{{exporter.FO_NS}}}font-family"]
+			for element in root.findall(f".//{{{exporter.STYLE_NS}}}text-properties")}
+		assert font_families == {face.embedded_family for face in faces}
+		style_properties = {}
+		for element in root.findall(f".//{{{exporter.STYLE_NS}}}style"):
+			properties = element.find(f"{{{exporter.STYLE_NS}}}text-properties")
+			if properties is not None:
+				style_properties[element.attrib[f"{{{exporter.STYLE_NS}}}name"]] = properties.attrib
+		for index, face in enumerate(faces[:4], start=1):
+			span = next(element for element in root.findall(f".//{{{exporter.TEXT_NS}}}span")
+				if element.text == str(index))
+			properties = style_properties[span.attrib[f"{{{exporter.TEXT_NS}}}style-name"]]
+			assert properties[f"{{{exporter.STYLE_NS}}}font-name"] == face.odf_name and \
+				properties[f"{{{exporter.FO_NS}}}font-family"] == face.embedded_family
+		for index, face in enumerate(faces[4:], start=5):
+			span = next(element for element in root.findall(f".//{{{exporter.TEXT_NS}}}span")
+				if element.text == str(index))
+			properties = style_properties[span.attrib[f"{{{exporter.TEXT_NS}}}style-name"]]
+			assert properties[f"{{{exporter.STYLE_NS}}}font-name"] == face.odf_name and \
+				properties[f"{{{exporter.FO_NS}}}font-family"] == face.embedded_family
+
+
+def test_linked_text_nests_destination_inside_its_styled_span() -> None:
+	"""LibreOffice receives a visible linked label within its resolved text style."""
+	layout_deck = deck()
+	item = layout_deck.slides[0].objects[0]
+	linked_run = content.TextRun("Course website", content.RunStyle("OpenDyslexic", "24578F",
+		underline=True, link_url="https://example.test/course"))
+	paragraph = dataclasses.replace(item.content.paragraphs[0], inlines=(linked_run,))
+	updated_item = dataclasses.replace(item, content=content.TextContent((paragraph,)))
+	updated_deck = dataclasses.replace(layout_deck, slides=(dataclasses.replace(
+		layout_deck.slides[0], objects=(updated_item,)),))
+	root = defusedxml.ElementTree.fromstring(exporter._content_xml(updated_deck,
+		slide_lib.presentation_theme.default_theme(), exporter._layout_names(updated_deck), {}))
+	span = root.find(f".//{{{exporter.TEXT_NS}}}span")
+	link = span.find(f"{{{exporter.TEXT_NS}}}a")
+	assert link is not None and link.text == "Course website"
+	assert link.attrib[f"{{{exporter.XLINK_NS}}}href"] == "https://example.test/course" and \
+		span.attrib[f"{{{exporter.TEXT_NS}}}style-name"].startswith("DjotText")
+
+
+def test_text_frames_preserve_the_compiler_selected_size() -> None:
+	"""Text-frame styles keep the compiler's measured point size authoritative."""
+	root = defusedxml.ElementTree.fromstring(exporter._content_xml(deck(),
+		slide_lib.presentation_theme.default_theme(), exporter._layout_names(deck()), {}))
+	properties = root.find(f".//{{{exporter.STYLE_NS}}}graphic-properties").attrib
+	assert properties[f"{{{exporter.STYLE_NS}}}shrink-to-fit"] == "false"
+
+
+def test_picture_frames_use_the_compiler_resolved_display_rectangle() -> None:
+	"""Contained pictures retain their aspect-correct displayed bounds in ODP."""
+	layout_deck = deck()
+	theme = slide_lib.presentation_theme.default_theme()
+	text_item = layout_deck.slides[0].objects[0]
+	displayed = primitives.LogicalRectangle(50.0, 60.0, 300.0, 100.0)
+	picture = content.PictureContent("picture.png", content.PicturePlacement(
+		text_item.rectangle, displayed, primitives.PictureFit.CONTAIN,
+		primitives.CropInsets(0.0, 0.0, 0.0, 0.0)),
+		primitives.ObjectAccessibility("Picture", "A wide illustration"))
+	picture_item = dataclasses.replace(text_item, content=picture, frame_text=None,
+		presentation_member_id=None, placeholder_kind=primitives.PlaceholderKind.NONE)
+	picture_slide = dataclasses.replace(layout_deck.slides[0], objects=(picture_item,))
+	picture_deck = dataclasses.replace(layout_deck, slides=(picture_slide,))
+	root = defusedxml.ElementTree.fromstring(exporter._content_xml(picture_deck, theme,
+		exporter._layout_names(picture_deck), {("slide-1", "body"): "Pictures/picture.png"}))
+	picture_attributes = root.find(f".//{{{exporter.DRAW_NS}}}frame").attrib
+	text_attributes = exporter._frame_attributes(text_item, layout_deck, theme, "Text", {})
+	assert (picture_attributes[f"{{{exporter.SVG_NS}}}x"],
+		picture_attributes[f"{{{exporter.SVG_NS}}}y"],
+		picture_attributes[f"{{{exporter.SVG_NS}}}width"],
+		picture_attributes[f"{{{exporter.SVG_NS}}}height"]) == (
+		exporter._cm_x(displayed.x, layout_deck, theme),
+		exporter._cm_y(displayed.y, layout_deck, theme),
+		exporter._cm_x(displayed.width, layout_deck, theme),
+		exporter._cm_y(displayed.height, layout_deck, theme))
+	assert text_attributes[f"{{{exporter.SVG_NS}}}width"] == exporter._cm_x(
+		text_item.rectangle.width, layout_deck, theme)
+
+
+def test_drawing_page_style_hides_master_chrome() -> None:
+	"""Every emitted page suppresses master date, footer, and page-number placeholders."""
+	layout_deck = deck()
+	root = defusedxml.ElementTree.fromstring(exporter._content_xml(layout_deck,
+		slide_lib.presentation_theme.default_theme(), exporter._layout_names(layout_deck), {}))
+	properties = root.find(f".//{{{exporter.STYLE_NS}}}drawing-page-properties").attrib
+	assert (properties[f"{{{exporter.PRESENTATION_NS}}}background-visible"],
+		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"],
+		properties[f"{{{exporter.PRESENTATION_NS}}}display-page-number"],
+		properties[f"{{{exporter.PRESENTATION_NS}}}display-footer"],
+		properties[f"{{{exporter.PRESENTATION_NS}}}display-date-time"]) == (
+		"true", "true", "false", "false", "false")
+
+
 def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathlib.Path) -> None:
 	"""Every native ODF timing step targets an emitted editable paragraph identity."""
 	source_path = tmp_path / "cascade.djot"
@@ -99,7 +237,7 @@ def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathli
 		"- Parent\n\n  - Child\n- Second\n", encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme()
 	plan = slide_lib.layout_engine.compile_layout_deck(
-		slide_lib.djot_parser.parse_deck(source_path), theme)
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
 	output = exporter.write_odp(plan, theme, tmp_path / "cascade.odp")
 	with zipfile.ZipFile(output) as archive:
 		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
@@ -115,10 +253,10 @@ def test_object_reveal_target_is_a_libreoffice_presentation_frame(tmp_path: path
 	"""LibreOffice must retain the answer's layout membership and reveal identity."""
 	source_path = tmp_path / "multiple_choice.djot"
 	source_path.write_text("=== layout: multiple-choice\n\n@question\n\nQuestion?\n\n"
-		"@answer\n\nAnswer.\n", encoding="utf-8")
+		"- Choice A\n- Choice B\n\n@answer\n\nAnswer.\n", encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme()
 	plan = slide_lib.layout_engine.compile_layout_deck(
-		slide_lib.djot_parser.parse_deck(source_path), theme)
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
 	output = exporter.write_odp(plan, theme, tmp_path / "multiple_choice.odp")
 	with zipfile.ZipFile(output) as archive:
 		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))

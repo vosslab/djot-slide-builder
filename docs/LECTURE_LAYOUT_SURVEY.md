@@ -136,7 +136,7 @@ Simple staged reveals are nevertheless a new explicit requirement for future lec
   animation timeline.
 
 This capability is intentionally separate from the recorded imported-deck behavior. Its semantics
-must still be shown to become editable native PPTX and ODP animation objects.
+must still be shown to become editable native ODP animation objects.
 
 ## Implications for the selected Djot grammar
 

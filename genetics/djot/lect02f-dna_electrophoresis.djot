@@ -26,7 +26,7 @@
   - Single Nucleotide Polymorphisms
   - Whole Genome Analysis
 
-=== layout: title-only
+=== layout: section
 
 # Fragmenting DNA\: Gel Electrophoresis
 
@@ -135,7 +135,7 @@ Native reconstruction needed: 16 positioned diagram labels.
 
 - (b) Shorter molecules are slowed down less than longer ones, so they move faster through the gel.
 
-=== layout: title-only
+=== layout: section
 
 # Problem Solving
 
@@ -360,6 +360,6 @@ Native reconstruction needed: 16 positioned diagram labels.
 
 ![Slide image 20](assets/lect02f-dna_electrophoresis/image_020.png)
 
-=== layout: title-only
+=== layout: section
 
 # THE END

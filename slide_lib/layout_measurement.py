@@ -1,5 +1,6 @@
 """Pure physical measurement and preflight for the shared layout compiler."""
 
+import collections.abc
 import dataclasses
 
 import PIL.Image
@@ -7,6 +8,7 @@ import PIL.ImageFont
 
 import slide_lib.editable_text
 import slide_lib.layout_content
+import slide_lib.capacity_report
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.native_model
@@ -22,6 +24,51 @@ GRID_GUTTER = 24.0
 ITEM_SPACE = .25
 TABLE_HORIZONTAL_PADDING = 6.0
 TABLE_VERTICAL_PADDING = 4.0
+TEXT_FRAME_CLEARANCE_PT = 1.0
+
+
+@dataclasses.dataclass(frozen=True)
+class TextFrameMeasurement:
+	"""Represent the logical line and block extents for one text frame."""
+
+	wrapping_extent: float
+	available_extent: float
+
+
+@dataclasses.dataclass(frozen=True)
+class CenteredHeadingSizes:
+	"""Retain the independently selected title and subtitle sizes in one fixed frame."""
+
+	title_size_pt: float
+	subtitle_size_pt: float | None
+
+
+#============================================
+def text_frame_measurement(rectangle: slide_lib.layout_primitives.LogicalRectangle) -> TextFrameMeasurement:
+	"""Map one horizontal native text frame to its wrap and available extents."""
+	return TextFrameMeasurement(rectangle.width, rectangle.height)
+
+
+def text_frame_fits(required_extent: float, measurement: TextFrameMeasurement,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> bool:
+	"""Keep one rendered point clear at the bottom of every bounded text frame."""
+	return required_extent + point_height(TEXT_FRAME_CLEARANCE_PT, theme) <= measurement.available_extent
+
+
+#============================================
+def heading_rectangle(rectangle: slide_lib.layout_primitives.LogicalRectangle,
+		extent: float) -> slide_lib.layout_primitives.LogicalRectangle:
+	"""Allocate a local heading above the horizontal body flow."""
+	return slide_lib.layout_primitives.LogicalRectangle(rectangle.x, rectangle.y, rectangle.width, extent)
+
+
+#============================================
+def remaining_after_heading(rectangle: slide_lib.layout_primitives.LogicalRectangle,
+		extent: float) -> slide_lib.layout_primitives.LogicalRectangle:
+	"""Reserve a local-heading gap above the horizontal body flow."""
+	gap = 10.0
+	return slide_lib.layout_primitives.LogicalRectangle(rectangle.x, rectangle.y + extent + gap,
+		rectangle.width, rectangle.height - extent - gap)
 
 
 def point_height(size_pt: float, theme: slide_lib.presentation_theme.PresentationTheme) -> float:
@@ -52,16 +99,6 @@ def visible_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 	return result
 
 
-@dataclasses.dataclass(frozen=True)
-class MeasurementStatistics:
-	"""A copy-safe snapshot used to prove compiler measurement reuse."""
-
-	profile_resolutions: int
-	face_loads: int
-	shape_calls: int
-	paragraph_cache_hits: int
-
-
 class MeasurementSession:
 	"""One compile-scoped owner of pinned faces and exact physical measurements."""
 
@@ -79,13 +116,16 @@ class MeasurementSession:
 		self._line_metrics: dict[tuple[tuple[object, ...], int], tuple[float, float]] = {}
 		self._paragraphs: dict[tuple[object, ...], tuple[float, float, int]] = {}
 		self._fragments: dict[tuple[object, ...], tuple[str, ...]] = {}
-		self._shape_calls = 0
-		self._paragraph_cache_hits = 0
+		self.capacity_diagnostics: list[slide_lib.capacity_report.CapacityDiagnostic] = []
 
-	def statistics(self) -> MeasurementStatistics:
-		"""Return immutable counters without exposing mutable cache internals."""
-		return MeasurementStatistics(len(self._profiles), len(self._faces), self._shape_calls,
-			self._paragraph_cache_hits)
+	def record_capacity(self, location: slide_lib.native_model.SourceLocation,
+			layout: str, slot: str, required: float, floor: float,
+			cause: slide_lib.capacity_report.CapacityCause) -> None:
+		"""Retain a bounded, source-located compromise for the build result."""
+		diagnostic = slide_lib.capacity_report.CapacityDiagnostic(location, layout, slot, required,
+			floor, cause)
+		if diagnostic not in self.capacity_diagnostics:
+			self.capacity_diagnostics.append(diagnostic)
 
 	def _entry(self, family: str, bold: bool, italic: bool) -> tuple[object, object, str]:
 		try:
@@ -127,7 +167,6 @@ class MeasurementSession:
 			raise ValueError("theme measurement profile must be a FontFaceProfile")
 		key = (self._face_identity(profile), self._size_quarters(size_pt), text)
 		if key not in self._advances:
-			self._shape_calls += 1
 			self._advances[key] = self._face(family, bold, italic, size_pt).getlength(text)
 		return self._advances[key]
 
@@ -172,7 +211,6 @@ class MeasurementSession:
 		"""Measure paragraph wrapping once per immutable semantic and geometry key."""
 		key = (inlines, size_pt, width, level, list_item, bold, italic)
 		if key in self._paragraphs:
-			self._paragraph_cache_hits += 1
 			return self._paragraphs[key]
 		available = max(width - (self.theme.list_levels[level].text_position if list_item else 0.0), 1.0)
 		lines: list[list[tuple[str, str, bool, bool]]] = [[]]; line_widths = [0.0]
@@ -227,7 +265,6 @@ def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: boo
 			for text, _family, child_bold, child_italic in _styled_tokens(inline.children, bold, italic, inline.url):
 				result.append((text, "" if text == "\n" else family, child_bold, child_italic))
 	return tuple(result)
-
 
 def grapheme_clusters(text: str) -> tuple[str, ...]:
 	"""Return conservative Unicode clusters without splitting combining/ZWJ text."""
@@ -312,10 +349,10 @@ def wrapped_lines(inlines: tuple[slide_lib.native_model.Inline, ...], size_pt: f
 
 def text_height(items: tuple[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool], ...],
 		size_pt: float, width: float, theme: slide_lib.presentation_theme.PresentationTheme,
-		session: MeasurementSession | None = None) -> float:
+		session: MeasurementSession | None = None, bold: bool = False) -> float:
 	"""Measure flattened body/list paragraphs at one selected size."""
 	active = session or MeasurementSession(theme)
-	result = sum(active.paragraph_metrics(inlines, size_pt, width, level, listed)[0] +
+	result = sum(active.paragraph_metrics(inlines, size_pt, width, level, listed, bold=bold)[0] +
 		point_height(size_pt * ITEM_SPACE, theme) for inlines, level, listed in items)
 	# A physical text frame has no meaningful trailing paragraph gap.  Keeping
 	# measurement aligned with projection prevents a terminal 6--7 px artefact
@@ -337,16 +374,150 @@ def items_for(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[tuple[t
 	return tuple(items)
 
 
-def select_size(items: tuple[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool], ...],
-		rectangle: slide_lib.layout_primitives.LogicalRectangle, preferred: float, floor: float,
-		theme: slide_lib.presentation_theme.PresentationTheme, location: slide_lib.native_model.SourceLocation,
-		context: str, session: MeasurementSession | None = None) -> float:
-	"""Choose a quarter-point size or reject before a physical plan exists."""
-	for quarters in range(int(preferred * 4), int(floor * 4) - 1, -1):
-		size = quarters / 4
-		if text_height(items, size, rectangle.width, theme, session) <= rectangle.height:
+def _quarter_sizes(preferred: float, minimum: float) -> tuple[float, ...]:
+	"""Return descending exact quarter-point candidates within one physical bound."""
+	return tuple(quarters / 4 for quarters in range(int(preferred * 4), int(minimum * 4) - 1, -1))
+
+
+def largest_fitting_size(preferred: float, minimum: float,
+		fits: collections.abc.Callable[[float], bool]) -> float | None:
+	"""Return the largest serializer-valid quarter point satisfying one exact predicate."""
+	return next((size for size in _quarter_sizes(preferred, minimum) if fits(size)), None)
+
+
+def select_title_size(preferred: float, floor: float,
+		geometry_for_size: collections.abc.Callable[[float], slide_lib.layout_primitives.LogicalRectangle | None],
+		body_fits_floor: collections.abc.Callable[[slide_lib.layout_primitives.LogicalRectangle], bool],
+		location: slide_lib.native_model.SourceLocation, layout: str, slot: str,
+		session: MeasurementSession) -> float:
+	"""Select the largest valid title whose canonical body geometry keeps its readable floor."""
+	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
+	fallback: float | None = None
+	for size in _quarter_sizes(preferred, minimum):
+		content = geometry_for_size(size)
+		if content is None:
+			continue
+		if fallback is None:
+			fallback = size
+		if body_fits_floor(content):
+			if size < floor:
+				session.record_capacity(location, layout, slot, size, floor,
+					slide_lib.capacity_report.CapacityCause.TITLE)
 			return size
-	raise ValueError(f"{location.path}:{location.line}: {context} cannot fit within the supported readable minimum of {floor:g} pt")
+	if fallback is not None:
+		if fallback < floor:
+			session.record_capacity(location, layout, slot, fallback, floor,
+				slide_lib.capacity_report.CapacityCause.TITLE)
+		return fallback
+	raise slide_lib.capacity_report.PhysicalCapacityError(location, layout, slot, floor,
+		slide_lib.capacity_report.CapacityCause.TITLE, minimum)
+
+
+def select_size(items: tuple[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool], ...],
+		measurement: TextFrameMeasurement, preferred: float, floor: float,
+		theme: slide_lib.presentation_theme.PresentationTheme, location: slide_lib.native_model.SourceLocation,
+		layout: str, slot: str, session: MeasurementSession | None = None,
+		cause: slide_lib.capacity_report.CapacityCause =
+		slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST,
+		record_capacity: bool = True, bold: bool = False) -> float:
+	"""Choose a quarter-point size, recording a visible sub-floor compromise."""
+	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
+	def fits(value: float) -> bool:
+		"""Measure one candidate against the shared serialized-frame boundary."""
+		required = text_height(items, value, measurement.wrapping_extent, theme, session, bold=bold)
+		return text_frame_fits(required, measurement, theme)
+	size = largest_fitting_size(preferred, minimum, fits)
+	if size is None:
+		raise slide_lib.capacity_report.PhysicalCapacityError(location, layout, slot, floor,
+			cause, minimum)
+	if size < floor and session is not None and record_capacity:
+		session.record_capacity(location, layout, slot, size, floor, cause)
+	return size
+
+
+#============================================
+def heading_items(headings: tuple[slide_lib.native_model.Heading, ...]
+		) -> tuple[tuple[tuple[slide_lib.native_model.Inline, ...], int, bool], ...]:
+	"""Project fixed-frame heading paragraphs into the shared text measurement input."""
+	return tuple((heading.inlines, 0, False) for heading in headings)
+
+
+#============================================
+def select_fixed_heading_size(headings: tuple[slide_lib.native_model.Heading, ...],
+		rectangle: slide_lib.layout_primitives.LogicalRectangle, preferred: float, floor: float,
+		theme: slide_lib.presentation_theme.PresentationTheme, layout: str, slot: str,
+		cause: slide_lib.capacity_report.CapacityCause, bold: bool,
+		session: MeasurementSession) -> float:
+	"""Select one serializer-safe size for all heading paragraphs in a fixed frame."""
+	items = heading_items(headings)
+	if not items:
+		raise ValueError("fixed heading measurement requires at least one heading")
+	return select_size(items, text_frame_measurement(rectangle), preferred, floor, theme,
+		headings[0].location, layout, slot, session, cause, bold=bold)
+
+
+#============================================
+def select_centered_heading_sizes(title: slide_lib.native_model.Heading,
+		subtitles: tuple[slide_lib.native_model.Heading, ...],
+		rectangle: slide_lib.layout_primitives.LogicalRectangle,
+		theme: slide_lib.presentation_theme.PresentationTheme, layout: str,
+		session: MeasurementSession) -> CenteredHeadingSizes:
+	"""Fit centered title/subtitle text together while preserving title priority."""
+	title_items = heading_items((title,))
+	subtitle_items = heading_items(subtitles)
+	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
+	for title_size in _quarter_sizes(theme.standard_title_size_pt, minimum):
+		title_height = text_height(title_items, title_size, rectangle.width, theme, session,
+			bold=True)
+		gap = point_height(title_size * ITEM_SPACE, theme) if subtitle_items else 0.0
+		available = rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme) - title_height - gap
+		if available <= 0:
+			continue
+		if not subtitle_items:
+			if title_size < theme.title_floor_size_pt:
+				session.record_capacity(title.location, layout, "title", title_size,
+					theme.title_floor_size_pt, slide_lib.capacity_report.CapacityCause.TITLE)
+			return CenteredHeadingSizes(title_size, None)
+		subtitle_size = largest_fitting_size(theme.ordinary_body_size_pt, minimum,
+			lambda size: text_height(subtitle_items, size, rectangle.width, theme, session) <= available)
+		if subtitle_size is None:
+			continue
+		if title_size < theme.title_floor_size_pt:
+			session.record_capacity(title.location, layout, "title", title_size,
+				theme.title_floor_size_pt, slide_lib.capacity_report.CapacityCause.TITLE)
+		if subtitle_size < theme.body_floor_size_pt:
+			session.record_capacity(subtitles[0].location, layout, "subtitle", subtitle_size,
+				theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.LOCAL_HEADING)
+		return CenteredHeadingSizes(title_size, subtitle_size)
+	if not text_frame_fits(text_height(title_items, minimum, rectangle.width, theme, session,
+			bold=True), text_frame_measurement(rectangle), theme):
+		raise slide_lib.capacity_report.PhysicalCapacityError(title.location, layout, "title",
+			theme.title_floor_size_pt, slide_lib.capacity_report.CapacityCause.TITLE, minimum)
+	location = subtitles[0].location if subtitles else title.location
+	raise slide_lib.capacity_report.PhysicalCapacityError(location, layout, "subtitle",
+		theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.LOCAL_HEADING, minimum)
+
+
+def select_paragraph_size(inlines: tuple[slide_lib.native_model.Inline, ...],
+		measurement: TextFrameMeasurement, preferred: float, floor: float,
+		theme: slide_lib.presentation_theme.PresentationTheme, location: slide_lib.native_model.SourceLocation,
+		layout: str, slot: str, bold: bool, session: MeasurementSession,
+		cause: slide_lib.capacity_report.CapacityCause =
+		slide_lib.capacity_report.CapacityCause.LOCAL_HEADING) -> float:
+	"""Select one heading-like paragraph size that fully occupies its final text frame."""
+	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
+	def fits(value: float) -> bool:
+		"""Measure one candidate against the shared serialized-frame boundary."""
+		required = paragraph_height(inlines, value, measurement.wrapping_extent, theme,
+			bold=bold, session=session)
+		return text_frame_fits(required, measurement, theme)
+	size = largest_fitting_size(preferred, minimum, fits)
+	if size is None:
+		raise slide_lib.capacity_report.PhysicalCapacityError(location, layout, slot, floor,
+			cause, minimum)
+	if size < floor:
+		session.record_capacity(location, layout, slot, size, floor, cause)
+	return size
 
 
 def table_height(table: slide_lib.native_model.Table, size_pt: float, width: float,
@@ -364,13 +535,19 @@ def table_height(table: slide_lib.native_model.Table, size_pt: float, width: flo
 def select_table_size(table: slide_lib.native_model.Table,
 		rectangle: slide_lib.layout_primitives.LogicalRectangle, preferred: float, floor: float,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: MeasurementSession | None = None) -> float:
-	"""Choose a floor-safe table size using actual row-height semantics."""
-	for quarters in range(int(preferred * 4), int(floor * 4) - 1, -1):
-		size = quarters / 4
-		if table_height(table, size, rectangle.width, theme, session) <= rectangle.height:
-			return size
-	raise ValueError(f"{table.location.path}:{table.location.line}: table cannot fit within the supported readable minimum of {floor:g} pt")
+		layout: str, slot: str, session: MeasurementSession | None = None) -> float:
+	"""Choose a table size and report when it must cross the readable floor."""
+	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
+	size = largest_fitting_size(preferred, minimum,
+		lambda value: text_frame_fits(table_height(table, value, rectangle.width, theme, session),
+			text_frame_measurement(rectangle), theme))
+	if size is None:
+		raise slide_lib.capacity_report.PhysicalCapacityError(table.location, layout, slot, floor,
+			slide_lib.capacity_report.CapacityCause.TABLE, minimum)
+	if size < floor and session is not None:
+		session.record_capacity(table.location, layout, slot, size, floor,
+			slide_lib.capacity_report.CapacityCause.TABLE)
+	return size
 
 
 def grid(left: float, top: float, width: float, height: float, columns: int, rows: int) -> tuple[slide_lib.layout_primitives.LogicalRectangle, ...]:
@@ -387,12 +564,10 @@ def grid(left: float, top: float, width: float, height: float, columns: int, row
 def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRectangle) -> tuple[slide_lib.layout_primitives.LogicalRectangle, ...]:
 	"""Return all standard named-cell allocations from a contract name."""
 	left, top, width, height = content.x, content.y, content.width, content.height
-	if name in ("one-panel", "vertical-panel", "vertical-text-panel"):
+	if name == "one-panel":
 		return (content,)
-	if name in ("two-panels", "two-panels-vertical-clipart"):
+	if name == "two-panels":
 		return grid(left, top, width, height, 2, 1)
-	if name == "vertical-title-two-panels":
-		return grid(left, top, width, height, 1, 2)
 	if name == "one-plus-two-panels":
 		cell_width = (width - CELL_GUTTER) / 2
 		half = (height - GRID_GUTTER) / 2
@@ -418,14 +593,50 @@ def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRecta
 	raise ValueError(f"unknown physical geometry: {name}")
 
 
-def image_size(deck: slide_lib.native_model.Deck, image: slide_lib.native_model.Image) -> tuple[int, int]:
-	"""Resolve an image inside the repository and read its intrinsic dimensions."""
+def image_size(deck: slide_lib.native_model.Deck,
+		image: slide_lib.native_model.Image) -> tuple[float, float]:
+	"""Return the intrinsic dimensions of one ordinary image."""
 	path = (deck.asset_root / image.source).resolve()
 	if not path.is_relative_to(deck.repo_root) or not path.is_file():
 		raise ValueError(f"{image.location.path}:{image.location.line}: component image is missing or outside the repository: {image.source}")
 	with PIL.Image.open(path) as opened:
 		result = opened.size
 	return result
+
+
+@dataclasses.dataclass(frozen=True)
+class MixedFlowAllocation:
+	"""Retain the exact proportional image/text heights for one final mixed-flow frame."""
+
+	size_pt: float
+	blocks: tuple[slide_lib.native_model.Block, ...]
+	heights: tuple[float, ...]
+
+
+#============================================
+def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
+		text_blocks: tuple[slide_lib.native_model.Block, ...],
+		images: tuple[slide_lib.native_model.Image, ...],
+		rectangle: slide_lib.layout_primitives.LogicalRectangle, size_pt: float,
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		session: MeasurementSession) -> MixedFlowAllocation | None:
+	"""Allocate floor-safe text then proportionally scale images into every remaining pixel."""
+	blocks = tuple(sorted(text_blocks + images, key=lambda block: block.location.line))
+	text_heights = {id(block): text_height(items_for((block,)), size_pt, rectangle.width, theme, session)
+		for block in text_blocks}
+	natural_image_heights = {id(image): rectangle.width * image_size(deck, image)[1] /
+		image_size(deck, image)[0] for image in images}
+	available = rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme) - \
+		12 * (len(blocks) - 1) - sum(text_heights.values())
+	if available <= 0:
+		return None
+	scale = min(1.0, available / sum(natural_image_heights.values()))
+	heights = tuple(natural_image_heights[id(block)] * scale if isinstance(block,
+		slide_lib.native_model.Image) else text_heights[id(block)] for block in blocks)
+	if not text_frame_fits(sum(heights) + 12 * (len(blocks) - 1),
+			text_frame_measurement(rectangle), theme):
+		return None
+	return MixedFlowAllocation(size_pt, blocks, heights)
 
 
 def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.layout_model.UnsupportedSourceFact, ...]:
@@ -491,139 +702,3 @@ def _descendant_list_items(block: slide_lib.native_model.ListBlock) -> tuple[sli
 		for child in item.children:
 			result.extend(_descendant_list_items(child))
 	return tuple(result)
-
-
-@dataclasses.dataclass(frozen=True)
-class ContinuationUnit:
-	"""One atomic pagination unit plus resolved repeated-ancestor provenance."""
-	block: slide_lib.native_model.Block
-	active_heading: slide_lib.native_model.Heading | None
-	context_paragraphs: int = 0
-	context_sources: tuple[slide_lib.native_model.SourceLocation, ...] = ()
-
-
-@dataclasses.dataclass(frozen=True)
-class GridStreamUnit:
-	"""One grid-source continuation unit with exact slot-level provenance."""
-	unit: ContinuationUnit
-	origin: slide_lib.layout_model.DecompositionOrigin
-
-
-def grid_stream_units(source: slide_lib.native_model.Slide, source_id: str,
-		original_layout: str, slot_names: tuple[str, ...]) -> tuple[GridStreamUnit, ...]:
-	"""Linearize nonempty grid slots in contract order without losing their identity."""
-	cells = {cell.name: cell for cell in source.cells}
-	result: list[GridStreamUnit] = []
-	for source_order, slot_name in enumerate(slot_names):
-		cell = cells[slot_name]
-		if not cell.blocks:
-			continue
-		slot_units = continuation_units(cell.blocks)
-		if not slot_units:
-			continue
-		origin = slide_lib.layout_model.DecompositionOrigin(source_id, original_layout,
-			slot_name, slot_units[0].block.location, source_order)
-		result.extend(GridStreamUnit(unit, origin) for unit in slot_units)
-	return tuple(result)
-
-
-def continuation_units(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[ContinuationUnit, ...]:
-	"""Split only at semantic paragraph, list-item, or table-row boundaries."""
-	result: list[ContinuationUnit] = []
-	active_heading: slide_lib.native_model.Heading | None = None
-	for block in blocks:
-		if isinstance(block, slide_lib.native_model.Heading):
-			if block.level != 2:
-				raise ValueError(f"{block.location.path}:{block.location.line}: only local H2 headings are supported in a paginated one-panel body")
-			active_heading = block
-		elif isinstance(block, slide_lib.native_model.ListBlock):
-			result.extend(ContinuationUnit(dataclasses.replace(block, items=(item,)), active_heading)
-				for item in block.items)
-		elif isinstance(block, slide_lib.native_model.Table) and block.rows:
-			result.extend(ContinuationUnit(dataclasses.replace(block, rows=(row,)), active_heading)
-				for row in block.rows)
-		else:
-			result.append(ContinuationUnit(block, active_heading))
-	return tuple(result)
-
-
-def descendant_list_units(unit: ContinuationUnit) -> tuple[ContinuationUnit, ...]:
-	"""Expand an oversized nested-list subtree to leaf paths at any depth."""
-	block = unit.block
-	if not isinstance(block, slide_lib.native_model.ListBlock) or len(block.items) != 1:
-		return ()
-	paths = list_leaf_paths(block, block.items[0], ())
-	if len(paths) < 2:
-		return ()
-	return tuple(ContinuationUnit(path_fragment(path), unit.active_heading, len(path) - 1,
-		tuple(item.location for _list, item in path[:-1])) for path in paths)
-
-
-def list_leaf_paths(list_block: slide_lib.native_model.ListBlock, item: slide_lib.native_model.ListItem,
-		parents: tuple[tuple[slide_lib.native_model.ListBlock, slide_lib.native_model.ListItem], ...]
-		) -> tuple[tuple[tuple[slide_lib.native_model.ListBlock, slide_lib.native_model.ListItem], ...], ...]:
-	path = parents + ((list_block, item),)
-	children = tuple((child, child_item) for child in item.children for child_item in child.items)
-	return (path,) if not children else tuple(leaf for child, child_item in children
-		for leaf in list_leaf_paths(child, child_item, path))
-
-
-def path_fragment(path: tuple[tuple[slide_lib.native_model.ListBlock,
-		slide_lib.native_model.ListItem], ...]) -> slide_lib.native_model.ListBlock:
-	inner: slide_lib.native_model.ListBlock | None = None
-	for list_block, item in reversed(path):
-		inner = dataclasses.replace(list_block, items=(dataclasses.replace(item,
-			children=() if inner is None else (inner,)),))
-	if inner is None:
-		raise ValueError("list path fragments require at least one list item")
-	return inner
-
-
-def mark_context_paragraphs(page: slide_lib.layout_model.LayoutSlide,
-		units: tuple[ContinuationUnit, ...]) -> slide_lib.layout_model.LayoutSlide:
-	"""Mark only repeated projected ancestor paragraphs as static context."""
-	remaining = [(unit.context_paragraphs, unit.context_sources) for unit in units]
-	objects: list[slide_lib.layout_model.LayoutObject] = []
-	for item in page.objects:
-		if not isinstance(item.content, slide_lib.layout_content.TextContent):
-			objects.append(item); continue
-		paragraphs: list[slide_lib.layout_content.TextParagraph] = []
-		for paragraph in item.content.paragraphs:
-			metadata = paragraph.list_metadata
-			while remaining and remaining[0][0] == 0:
-				remaining.pop(0)
-			if metadata is not None and remaining:
-				count, sources = remaining[0]
-				metadata = dataclasses.replace(metadata, continuation_context=count > 0)
-				remaining[0] = (max(count - 1, 0), sources)
-			paragraph = dataclasses.replace(paragraph, list_metadata=metadata)
-			paragraphs.append(paragraph)
-		objects.append(dataclasses.replace(item, content=slide_lib.layout_content.TextContent(tuple(paragraphs))))
-	return dataclasses.replace(page, objects=tuple(objects))
-
-
-def inline_context(page: slide_lib.layout_model.LayoutSlide,
-		units: tuple[ContinuationUnit, ...]) -> slide_lib.layout_model.ContinuationContext | None:
-	"""Create one resolved outer-to-inner context trail for a page candidate."""
-	remaining = [(unit.context_paragraphs, unit.context_sources) for unit in units]
-	entries: list[slide_lib.layout_model.ContinuationContextEntry] = []
-	for item in page.objects:
-		if not isinstance(item.content, slide_lib.layout_content.TextContent):
-			continue
-		for paragraph in item.content.paragraphs:
-			metadata = paragraph.list_metadata
-			while remaining and remaining[0][0] == 0:
-				remaining.pop(0)
-			if metadata is None or not remaining or remaining[0][0] <= 0:
-				continue
-			count, sources = remaining[0]
-			remaining[0] = (count - 1, sources)
-			if entries and metadata.level <= entries[-1].level:
-				continue
-			source = sources[len(sources) - count] if len(sources) >= count else item.source or page.identity.source
-			entries.append(slide_lib.layout_model.ContinuationContextEntry(
-				paragraph.inlines, metadata.kind, metadata.level, metadata.start, source))
-	if not entries:
-		return None
-	return slide_lib.layout_model.ContinuationContext(
-		slide_lib.layout_primitives.ContinuationContextDisplay.INLINE_STATIC, tuple(entries))

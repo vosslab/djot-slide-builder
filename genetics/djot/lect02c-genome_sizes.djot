@@ -8,11 +8,11 @@
 ## Dr. Neil Voss
 ## Sept 2, 2025
 
-=== layout: title-only
+=== layout: section
 
 # Today we are talking about DNA. What are some various genome sizes...
 
-=== layout: title-only
+=== layout: section
 
 # Define Genome.
 
@@ -31,11 +31,11 @@
 
 ![Slide image 1](assets/lect02c-genome_sizes/image_001.png)
 
-=== layout: title-only
+=== layout: section
 
 # DNA Number Game
 
-=== layout: title-only
+=== layout: section
 
 # Number of Chromosomes
 
@@ -103,7 +103,7 @@ Answer\: C
 - Dog\: 78
 - Carp\: 104
 
-=== layout: title-only
+=== layout: section
 
 # Name the Five Great Apes (Hominidae taxonomic family)
 
@@ -202,7 +202,7 @@ Answer\: C
 - Fern with a stalk is thought to resemble a snake's tongue
 - Has about 1260 chromosomes in its diploid cells
 
-=== layout: title-only
+=== layout: section
 
 # Total DNA mass
 
@@ -402,7 +402,7 @@ Answer\: D
 
 - Fill a cup with spit and send off the sample
 
-=== layout: title-only
+=== layout: section
 
 # Dr. Voss Navigenics DNA analysis circa 2009
 
@@ -419,7 +419,7 @@ Answer\: D
 
 - Atrial fibrillation = abnormal heart rhythm
 
-=== layout: title-only
+=== layout: section
 
 # 23andMe Health Data
 
@@ -488,7 +488,7 @@ Answer\: D
 
 ![Slide image 26](assets/lect02c-genome_sizes/image_026.png)
 
-=== layout: title-only
+=== layout: section
 
 # Number of Genes
 
@@ -577,7 +577,7 @@ Answer\: A
 
 ![Slide image 30](assets/lect02c-genome_sizes/image_030.emf)
 
-=== layout: title-only
+=== layout: section
 
 # Percent of Genome in Use
 
@@ -629,7 +629,7 @@ Answer\: A
 
 ![Slide image 31](assets/lect02c-genome_sizes/image_031.jpg)
 
-=== layout: title-only
+=== layout: section
 
 # Summary
 
@@ -652,6 +652,6 @@ Answer\: A
 
 ![Slide image 32](assets/lect02c-genome_sizes/image_032.jpg)
 
-=== layout: title-only
+=== layout: section
 
 # THE END

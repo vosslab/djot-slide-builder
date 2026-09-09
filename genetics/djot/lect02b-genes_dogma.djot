@@ -7,7 +7,7 @@
 ## Dr. Neil Voss
 ## Sept 2, 2025
 
-=== layout: title-only
+=== layout: section
 
 # Define Genetics?
 
@@ -24,7 +24,7 @@
 - study of both trait and molecular inheritance mechanisms of genes
 - modern genetics has expanded beyond inheritance to studying the function and behavior of genes
 
-=== layout: title-only
+=== layout: section
 
 # What is genomics? What is the different between genetics and genomics?
 
@@ -40,7 +40,7 @@
   - the structure, function, evolution, and mapping of genomes
 - Genes are the elements of heredity
 
-=== layout: title-only
+=== layout: section
 
 # What are the differences between molecular biology, biochemistry, cell biology, and genetics?
 
@@ -155,7 +155,7 @@
 
 Native reconstruction needed: 68 positioned diagram labels.
 
-=== layout: title-only
+=== layout: section
 
 # The Idea of the Gene
 
@@ -466,7 +466,7 @@ Which of the following contradicts the one-gene, one-enzyme hypothesis?
 
 Answer\: D
 
-=== layout: title-only
+=== layout: section
 
 # The Genetic Code From RNA to Protein
 
@@ -560,7 +560,7 @@ Answer\: D
 
 
 
-=== layout: title-only
+=== layout: section
 
 # Mutation
 
@@ -644,6 +644,6 @@ Native reconstruction needed: 38 positioned diagram labels.
 
 ![Slide image 22](assets/lect02b-genes_dogma/image_022.png)
 
-=== layout: title-only
+=== layout: section
 
 # THE END

@@ -26,7 +26,7 @@
   - Single Nucleotide Polymorphisms
   - Whole Genome Analysis
 
-=== layout: title-only
+=== layout: section
 
 # What is a palindrome?
 
@@ -164,7 +164,7 @@
 
 - [https\://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob](https://www.musixmatch.com/lyrics/Weird-Al-Yankovic-2/Bob)
 
-=== layout: title-only
+=== layout: section
 
 # Palindrome DNA Sequences
 
@@ -476,7 +476,7 @@
 - NO, it’s not a
 - palindrome
 
-=== layout: title-only
+=== layout: section
 
 # Restriction Enzymes
 
@@ -532,7 +532,7 @@
 | HaeII | Haemophilus aegiptius | RGCGC / Y | Ambiguous sequence |
 | NotI | Nocardia otitidis | GC / `GGCCGC` | 8 nt sequence |
 
-=== layout: title-only
+=== layout: section
 
 # Sample Problems
 
@@ -822,7 +822,7 @@
 - Is it a blunt or sticky end?
 - What is the overhang?
 
-=== layout: title-only
+=== layout: section
 
 # What are Restriction Sites useful for?
 
@@ -876,7 +876,7 @@ Native reconstruction needed: 49 positioned diagram labels.
 
 Native reconstruction needed: 33 positioned diagram labels.
 
-=== layout: title-only
+=== layout: section
 
 # Sample Problems
 
@@ -894,7 +894,7 @@ Native reconstruction needed: 33 positioned diagram labels.
 
 ![Slide image 17](assets/lect02e-restriction_enzymes/image_017.png)
 
-=== layout: title-only
+=== layout: section
 
 # Summary
 
@@ -905,6 +905,6 @@ Native reconstruction needed: 33 positioned diagram labels.
 
 ![Slide image 18](assets/lect02e-restriction_enzymes/image_018.png)
 
-=== layout: title-only
+=== layout: section
 
 # THE END

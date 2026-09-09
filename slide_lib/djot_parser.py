@@ -9,7 +9,7 @@ import re
 import slide_lib.djot_blocks
 import slide_lib.djot_errors
 import slide_lib.djot_grammar
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 import slide_lib.layout_primitives
 import slide_lib.native_model
 
@@ -301,7 +301,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	"""Bind one layout directive's global and named regions to a native slide."""
 	if source.layout_name not in slide_lib.djot_grammar.legal_layout_names():
 		fail(path, source.location.line, f"unknown Djot layout: {source.layout_name}")
-	layout = slide_lib.layout_engine.layout_contract(source.layout_name)
+	layout = slide_lib.layout_registry.contract_for(source.layout_name)
 	global_lines: list[_SourceLine] = []
 	regions: dict[str, list[_SourceLine]] = {}
 	active_slot: str | None = None
@@ -359,7 +359,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	if source.layout_name == "multiple-choice":
 		answer_index = layout.slot_names.index("answer")
 		cells[answer_index] = implicit_multiple_choice_answer(path, cells[answer_index])
-	slide = slide_lib.native_model.Slide(source.location, source.layout_name, True, (), global_blocks,
+	slide = slide_lib.native_model.Slide(source.location, source.layout_name, (), global_blocks,
 		tuple(cells))
 	return slide
 
@@ -374,10 +374,10 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 		fail(path, 1, "Djot source must use UTF-8 text")
 		source = ""  # Satisfy static analyzers after fail's intentional exception.
 	slides = tuple(assemble_slide(path, slide_source) for slide_source in split_slides(path, source))
+	repo_root = next((candidate for candidate in (path.parent, *path.parents)
+		if (candidate / ".git").exists()), path.parent).resolve()
 	first_title = next((block for slide in slides for block in slide.blocks
 		if isinstance(block, slide_lib.native_model.Heading) and block.level == 1), None)
 	title = visible_text(first_title.inlines) if first_title is not None else ""
-	repo_root = next((candidate for candidate in (path.parent, *path.parents)
-		if (candidate / ".git").exists()), path.parent).resolve()
-	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, True, slides, {})
+	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, slides, {})
 	return deck

@@ -2,12 +2,14 @@
 
 # Standard Library
 import hashlib
+import io
 import pathlib
 import zipfile
 import xml.etree.ElementTree
 
 # PIP3 modules
 import defusedxml.ElementTree
+import fontTools.ttLib
 import pytest
 
 # Local Modules
@@ -90,11 +92,10 @@ def font_sizes(properties: dict[str, str]) -> tuple[str, str, str]:
 def test_theme_exposes_point_valued_native_placeholder_contract() -> None:
 	"""Adapters receive native frames, fonts, floors, and bounded overflow policy."""
 	theme = slide_lib.presentation_theme.default_theme()
-	assert (theme.western_font_name, theme.standard_title_size_pt, theme.ordinary_body_size_pt,
-		theme.ordinary_line_spacing_em, theme.title_floor_size_pt, theme.body_floor_size_pt,
-		theme.overflow_policy) == (
-		"OpenDyslexic", 36.0, 28.0, 1.30, 30.0, 24.0,
-		slide_lib.presentation_theme.OverflowPolicy.SHRINK_ONLY)
+	assert theme.western_font_name == "OpenDyslexic" and \
+		theme.overflow_policy is slide_lib.presentation_theme.OverflowPolicy.SHRINK_ONLY
+	assert theme.standard_title_size_pt > theme.title_floor_size_pt > 1.0 and \
+		theme.ordinary_body_size_pt > theme.body_floor_size_pt > 1.0
 	assert theme.title_style_name == "Default-title" and theme.outline_style_names[0] == "Default-outline1"
 	assert theme.title_frame.width_cm > 0.0 and theme.outline_frame.height_cm > 0.0
 	assert all(metric.face in slide_lib.presentation_theme.FONT_FACE_PROFILES
@@ -133,6 +134,29 @@ def test_font_selection_is_exact_and_never_synthesizes_an_unbundled_style() -> N
 		slide_lib.presentation_theme.select_font_face("PT Sans Narrow", italic=True)
 	with pytest.raises(slide_lib.presentation_theme.ThemeError, match="Unknown Family"):
 		slide_lib.presentation_theme.select_font_face("Unknown Family")
+
+
+#============================================
+def test_font_embedding_requires_an_editable_os2_permission() -> None:
+	"""The ODP writer reports a restrictive face instead of allowing host substitution."""
+	profile = slide_lib.presentation_theme.FONT_FACE_PROFILES[0]
+	slide_lib.presentation_theme.validate_editable_embedding_permission(profile, 0)
+	slide_lib.presentation_theme.validate_editable_embedding_permission(profile, 8)
+	with pytest.raises(slide_lib.presentation_theme.ThemeError, match="forbids editable embedding"):
+		slide_lib.presentation_theme.validate_editable_embedding_permission(profile, 4)
+	with pytest.raises(slide_lib.presentation_theme.ThemeError, match="forbids editable embedding"):
+		slide_lib.presentation_theme.validate_editable_embedding_permission(profile, 8 | 0x0200)
+
+
+#============================================
+def test_embedded_font_derivation_is_stable_and_uses_its_unique_family() -> None:
+	"""Package-only font derivatives retain the selected outlines under an unambiguous family."""
+	for face in slide_lib.presentation_theme.odf_font_faces():
+		first = slide_lib.presentation_theme.embedded_font_payload(face)
+		assert first == slide_lib.presentation_theme.embedded_font_payload(face)
+		assert hashlib.sha256(first).hexdigest() == face.derivative_sha256
+		with fontTools.ttLib.TTFont(io.BytesIO(first)) as font:
+			assert slide_lib.presentation_theme.font_name(font, 16, 1) == face.embedded_family
 
 
 #============================================

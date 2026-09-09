@@ -4,7 +4,7 @@
 import re
 
 # Local Modules
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 import slide_lib.native_model
 
 
@@ -33,14 +33,14 @@ TEXT_PROJECTIONS = {"&prime;": "\u2032"}
 #============================================
 def legal_layout_names() -> frozenset[str]:
 	"""Return the current layout spellings from the authoritative registry."""
-	layout_names = frozenset(slide_lib.layout_engine.registered_layout_names())
+	layout_names = frozenset(slide_lib.layout_registry.names())
 	return layout_names
 
 
 #============================================
 def legal_slot_names(layout_name: str) -> tuple[str, ...]:
 	"""Return the slots declared by one authoritative layout specification."""
-	slot_names = slide_lib.layout_engine.layout_contract(layout_name).slot_names
+	slot_names = slide_lib.layout_registry.contract_for(layout_name).slot_names
 	return slot_names
 
 

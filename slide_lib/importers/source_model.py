@@ -90,6 +90,34 @@ class TableBlock:
 
 
 @dataclasses.dataclass(frozen=True)
+class SourcePageEvidence:
+	"""Immutable ODP-only page facts retained beside format-neutral content.
+
+	The importer records original page-layout evidence without treating its
+	identity or geometry as a target layout.  Future planning rules can use the
+	positive source facts while ordinary content remains format-neutral.
+	"""
+
+	source_index: int
+	layout_identity: str | None
+	declared_placeholder_roles: tuple[str, ...]
+	populated_placeholder_roles: tuple[str, ...]
+	populated_text_placeholder_roles: tuple[str, ...]
+	populated_image_placeholder_roles: tuple[str, ...]
+	populated_table_placeholder_roles: tuple[str, ...]
+	meaningful_content_count: int
+
+	def is_section_page(self) -> bool:
+		"""Return whether positive ODP evidence identifies a section page."""
+		return (
+			self.layout_identity is not None
+			and self.declared_placeholder_roles == ("subtitle",)
+			and self.populated_text_placeholder_roles == ("subtitle",)
+			and self.meaningful_content_count == 1
+		)
+
+
+@dataclasses.dataclass(frozen=True)
 class SlideData:
 	"""Raw semantic content extracted from one imported slide."""
 
@@ -101,3 +129,4 @@ class SlideData:
 	notes: tuple[str, ...]
 	review_reasons: tuple[str, ...]
 	tables: tuple[TableBlock, ...] = ()
+	page_evidence: SourcePageEvidence | None = None

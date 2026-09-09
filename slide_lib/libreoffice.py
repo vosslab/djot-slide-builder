@@ -1,9 +1,11 @@
-"""Run LibreOffice presentation conversions through one batch contract."""
+"""Run simple, sequential LibreOffice presentation conversions."""
 
 # Standard Library
+import collections.abc
 import pathlib
 import shutil
 import subprocess
+import time
 
 
 SOFFICE_CANDIDATES = (
@@ -15,10 +17,11 @@ IMPRESS_PDF_EXPORT = (
 	'pdf:impress_pdf_Export:{'
 	'"Quality":{"type":"long","value":"70"},'
 	'"ReduceImageResolution":{"type":"boolean","value":"true"},'
-	'"MaxImageResolution":{"type":"long","value":"150"},'
+	'"MaxImageResolution":{"type":"long","value":"100"},'
 	'"SelectPdfVersion":{"type":"long","value":"3"}'
 	'}'
 )
+SETTLING_SECONDS = 2
 
 
 class LibreOfficeError(RuntimeError):
@@ -26,14 +29,15 @@ class LibreOfficeError(RuntimeError):
 
 
 #============================================
-def format_diagnostics(stdout: str | None, stderr: str | None) -> str:
+def format_diagnostics(stdout: str | bytes | None, stderr: str | bytes | None) -> str:
 	"""Return concise nonempty LibreOffice diagnostics from captured streams."""
 	lines: list[str] = []
 	for stream in (stderr, stdout):
+		if isinstance(stream, bytes):
+			stream = stream.decode("utf-8", errors="replace")
 		if stream:
 			lines.extend(line.strip() for line in stream.splitlines() if line.strip())
-	diagnostics = "; ".join(dict.fromkeys(lines))
-	return diagnostics
+	return "; ".join(dict.fromkeys(lines))
 
 
 #============================================
@@ -50,7 +54,7 @@ def require_soffice() -> pathlib.Path:
 
 #============================================
 def require_libreoffice_closed() -> None:
-	"""Require the desktop LibreOffice process to be closed before batch conversion."""
+	"""Require the desktop LibreOffice process to be closed before conversion."""
 	result = subprocess.run(
 		["ps", "-axo", "command="],
 		check=True,
@@ -63,45 +67,49 @@ def require_libreoffice_closed() -> None:
 
 
 #============================================
-def convert_file(input_path: pathlib.Path, output_dir: pathlib.Path, output_format: str,
-		timeout_seconds: int = 180) -> pathlib.Path:
-	"""Convert one presentation using LibreOffice's established user profile."""
+def convert_files(input_paths: collections.abc.Sequence[pathlib.Path], output_dir: pathlib.Path,
+		output_format: str) -> tuple[pathlib.Path, ...]:
+	"""Convert ordered presentations one at a time after one desktop preflight."""
+	inputs = tuple(input_paths)
+	if not inputs:
+		raise ValueError("LibreOffice conversion needs at least one input file")
+	expected_paths = tuple(output_dir / f"{input_path.stem}.{output_format}" for input_path in inputs)
+	if len(set(expected_paths)) != len(expected_paths):
+		raise ValueError("LibreOffice conversion inputs must have distinct output filenames")
 	require_libreoffice_closed()
 	soffice_path = require_soffice()
 	conversion_target = IMPRESS_PDF_EXPORT if output_format == "pdf" else output_format
-	command = [
-		str(soffice_path),
-		"--headless",
-		"--norestore",
-		"--convert-to",
-		conversion_target,
-		"--outdir",
-		str(output_dir),
-		str(input_path),
-	]
-	# User paths remain separate subprocess arguments; no shell is used.
-	try:
-		result = subprocess.run(command, check=False, timeout=timeout_seconds,
-			capture_output=True, text=True)
-	except subprocess.TimeoutExpired as exc:
-		diagnostics = format_diagnostics(exc.stdout, exc.stderr)
-		reason = f"LibreOffice {output_format.upper()} conversion timed out"
-		if diagnostics:
-			reason += f": {diagnostics}"
-		raise LibreOfficeError(reason) from exc
-	if result.returncode != 0:
-		diagnostics = format_diagnostics(result.stdout, result.stderr)
-		reason = f"LibreOffice {output_format.upper()} conversion failed"
-		if diagnostics:
-			reason += f": {diagnostics}"
-		else:
-			reason += f" with exit status {result.returncode}"
-		raise LibreOfficeError(reason)
-	converted_path = output_dir / f"{input_path.stem}.{output_format}"
-	if not converted_path.is_file():
-		diagnostics = format_diagnostics(result.stdout, result.stderr)
-		reason = f"LibreOffice did not create the expected {output_format.upper()} output"
-		if diagnostics:
-			reason += f": {diagnostics}"
-		raise LibreOfficeError(reason)
-	return converted_path
+	for input_path, expected_path in zip(inputs, expected_paths, strict=True):
+		command = [
+			str(soffice_path),
+			"--headless",
+			"--norestore",
+			"--convert-to",
+			conversion_target,
+			"--outdir",
+			str(output_dir),
+			str(input_path),
+		]
+		result = subprocess.run(command, capture_output=True, text=True)
+		if result.returncode != 0:
+			diagnostics = format_diagnostics(result.stdout, result.stderr)
+			reason = f"LibreOffice {output_format.upper()} conversion failed for {input_path}"
+			if diagnostics:
+				reason += f": {diagnostics}"
+			else:
+				reason += f" with exit status {result.returncode}"
+			raise LibreOfficeError(reason)
+		if not expected_path.is_file():
+			diagnostics = format_diagnostics(result.stdout, result.stderr)
+			reason = f"LibreOffice did not create expected {output_format.upper()} output: {expected_path}"
+			if diagnostics:
+				reason += f": {diagnostics}"
+			raise LibreOfficeError(reason)
+		time.sleep(SETTLING_SECONDS)
+	return expected_paths
+
+
+#============================================
+def convert_file(input_path: pathlib.Path, output_dir: pathlib.Path, output_format: str) -> pathlib.Path:
+	"""Convert one presentation through the shared sequential conversion boundary."""
+	return convert_files((input_path,), output_dir, output_format)[0]

@@ -15,11 +15,12 @@ import rich.text
 # Local Modules
 from slide_lib import libreoffice
 from slide_lib import djot_errors
+from slide_lib import capacity_report
 import slide_lib.layout_validation
 import slide_lib.native_export
 
 
-FORMAT_ORDER = ("pptx", "odp", "pdf")
+FORMAT_ORDER = ("odp", "pdf")
 TEMP_PATH_PATTERN = re.compile(r"output/\.libreoffice\.[^/\s:;]+/converted/")
 
 
@@ -83,14 +84,16 @@ def print_failure(error_console: rich.console.Console, repo_root: pathlib.Path,
 
 #============================================
 def print_summary(output_console: rich.console.Console,
-		results: list[tuple[pathlib.Path, dict[str, pathlib.Path]]], elapsed_seconds: float) -> None:
+		results: list[tuple[pathlib.Path, slide_lib.native_export.ExportResult]], elapsed_seconds: float,
+		repo_root: pathlib.Path) -> None:
 	"""Write one borderless artifact table and aggregate build result."""
-	formats = [name for name in FORMAT_ORDER if name in results[0][1]]
+	formats = [name for name in FORMAT_ORDER if name in results[0][1].output_paths()]
 	table = rich.table.Table(box=None, pad_edge=False, show_edge=False, header_style="bold")
 	table.add_column("Deck", style="cyan")
 	for output_format in formats:
 		table.add_column(output_format.upper(), justify="right")
-	for deck_path, outputs in results:
+	for deck_path, result in results:
+		outputs = result.output_paths()
 		row = [deck_path.stem]
 		row.extend(format_file_size(outputs[name].stat().st_size) for name in formats)
 		table.add_row(*(rich.text.Text(value) for value in row))
@@ -103,10 +106,49 @@ def print_summary(output_console: rich.console.Console,
 		location = f"output/{{{','.join(formats)}}}/"
 	output_console.print(rich.text.Text(f"Output: {location}"))
 	deck_word = "deck" if len(results) == 1 else "decks"
-	file_count = sum(len(outputs) for _, outputs in results)
+	file_count = sum(len(result.artifacts) for _, result in results)
 	file_word = "file" if file_count == 1 else "files"
 	done = f"Done: {len(results)} {deck_word}, {file_count} {file_word} in {elapsed_seconds:.1f} seconds"
 	output_console.print(rich.text.Text(done, style="green"))
+	for _deck_path, result in results:
+		for diagnostic in result.compilation.capacity_diagnostics:
+			message = clean_reason(diagnostic.message(), repo_root)
+			output_console.print(rich.text.Text(f"Capacity: {message}", style="yellow"))
+
+
+#============================================
+def run_capacity(input_value: str, allow_folder: bool = True,
+		output_console: rich.console.Console | None = None,
+		error_console: rich.console.Console | None = None) -> int:
+	"""Inspect every selected deck once without creating native artifacts or PDFs."""
+	repo_root = slide_lib.native_export.find_repo_root()
+	stdout = output_console if output_console is not None else rich.console.Console()
+	stderr = error_console if error_console is not None else rich.console.Console(stderr=True)
+	try:
+		decks = slide_lib.native_export.discover_decks(input_value, repo_root, allow_folder)
+	except slide_lib.native_export.PresentationInputError as exc:
+		print_failure(stderr, repo_root, pathlib.Path(input_value), "input", str(exc), 0)
+		return 1
+	diagnostics: list[capacity_report.CapacityDiagnostic] = []
+	for deck_path in decks:
+		try:
+			deck = slide_lib.native_export.parse_deck(deck_path)
+			compilation, _theme = slide_lib.native_export.compile_deck(deck)
+		except capacity_report.PhysicalCapacityError as exc:
+			diagnostics.append(exc.diagnostic)
+			continue
+		except (slide_lib.native_export.PresentationInputError, djot_errors.DjotParseError,
+				slide_lib.layout_validation.LayoutError) as exc:
+			print_failure(stderr, repo_root, deck_path, "compiling", str(exc), 0)
+			return 1
+		diagnostics.extend(compilation.capacity_diagnostics)
+	ordered = capacity_report.sorted_diagnostics(diagnostics, repo_root)
+	if not ordered:
+		return 0
+	for diagnostic in ordered:
+		stdout.print(rich.text.Text(capacity_report.format_diagnostic(diagnostic, repo_root)), soft_wrap=True)
+	stdout.print(rich.text.Text(capacity_report.format_summary(ordered)), soft_wrap=True)
+	return 1
 
 
 #============================================
@@ -134,7 +176,7 @@ def run_build(input_value: str, output_format: str, allow_folder: bool = True,
 		disable=not stdout.is_terminal,
 	)
 	task_id = progress.add_task(f"{decks[0].stem}  PARSING", total=None)
-	results: list[tuple[pathlib.Path, dict[str, pathlib.Path]]] = []
+	results: list[tuple[pathlib.Path, slide_lib.native_export.ExportResult]] = []
 	failure: tuple[pathlib.Path, str, BaseException] | None = None
 	current_stage = ["parsing"]
 	with progress:
@@ -146,16 +188,31 @@ def run_build(input_value: str, output_format: str, allow_folder: bool = True,
 				description = f"{deck_path.stem}  {stage.upper()}"
 				progress.update(task_id, description=description, refresh=True)
 			try:
-				outputs = slide_lib.native_export.export_deck(str(deck_path), output_format, update_progress)
+				deck_format = "odp" if output_format in ("all", "pdf") else output_format
+				outputs = slide_lib.native_export.export_deck(str(deck_path), deck_format, update_progress)
 			except (slide_lib.native_export.PresentationInputError, djot_errors.DjotParseError,
-				slide_lib.layout_validation.LayoutError, libreoffice.LibreOfficeError) as exc:
+				slide_lib.layout_validation.LayoutError, libreoffice.LibreOfficeError,
+				capacity_report.PhysicalCapacityError) as exc:
 				failure = (deck_path, current_stage[0], exc)
 				break
 			results.append((deck_path, outputs))
+		if failure is None and output_format in ("all", "pdf"):
+			current_stage[0] = "pdf"
+			progress.update(task_id, description="PDF", refresh=True)
+			pdf_paths = tuple(repo_root / f"output/pdf/{deck_path.stem}.pdf" for deck_path, _result in results)
+			try:
+				slide_lib.native_export.convert_odps_to_pdfs(
+					tuple(result.output_paths()["odp"] for _deck_path, result in results), pdf_paths, repo_root)
+			except libreoffice.LibreOfficeError as exc:
+				failure = (decks[-1], current_stage[0], exc)
+			else:
+				results = [(deck_path, slide_lib.native_export.ExportResult(
+					result.compilation, (*result.artifacts, ("pdf", pdf_path))))
+					for (deck_path, result), pdf_path in zip(results, pdf_paths, strict=True)]
 	if failure is not None:
 		deck_path, stage, exc = failure
 		print_failure(stderr, repo_root, deck_path, stage, str(exc), len(results))
 		return 1
 	elapsed_seconds = time.perf_counter() - started
-	print_summary(stdout, results, elapsed_seconds)
+	print_summary(stdout, results, elapsed_seconds, repo_root)
 	return 0

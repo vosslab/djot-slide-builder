@@ -243,17 +243,17 @@ def _write_inlines(parent: xml.etree.ElementTree.Element,
 			f"{paragraph_index + 1}_{inline_index + 1}")
 		_add_text_style(automatic, style_name, inline.style,
 			paragraph.typography.selected_size_pt)
-		container = parent
+		span = xml.etree.ElementTree.SubElement(parent, _qname(TEXT_NS, "span"), {
+			_qname(TEXT_NS, "style-name"): style_name,
+		})
+		container = span
 		if inline.style.link_url is not None:
-			container = xml.etree.ElementTree.SubElement(parent, _qname(TEXT_NS, "a"), {
+			container = xml.etree.ElementTree.SubElement(span, _qname(TEXT_NS, "a"), {
 				_qname(XLINK_NS, "href"): inline.style.link_url,
 				_qname(XLINK_NS, "type"): "simple",
 			})
-		span = xml.etree.ElementTree.SubElement(container, _qname(TEXT_NS, "span"), {
-			_qname(TEXT_NS, "style-name"): style_name,
-		})
 		# ASVS 1.1.2: retain canonical text here; ElementTree performs final XML escaping.
-		span.text = inline.text
+		container.text = inline.text
 
 
 #============================================
@@ -266,8 +266,10 @@ def _add_text_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 	})
 	color = style_value.foreground if len(style_value.foreground) == 6 else _FOREGROUND
 	attributes = {
-		_qname(STYLE_NS, "font-name"): style_value.font_family,
-		_qname(FO_NS, "font-family"): style_value.font_family,
+		_qname(STYLE_NS, "font-name"): slide_lib.presentation_theme.odf_font_face_name(
+			style_value.font_family, style_value.bold, style_value.italic),
+		_qname(FO_NS, "font-family"): slide_lib.presentation_theme.odf_font_family(
+			style_value.font_family, style_value.bold, style_value.italic),
 		_qname(FO_NS, "font-size"): _points(size_pt),
 		_qname(FO_NS, "color"): f"#{color}",
 		_qname(FO_NS, "font-weight"): "bold" if style_value.bold else "normal",

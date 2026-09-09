@@ -8,12 +8,17 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+## Current presentation decision (2026-09-09)
+
+- ODP is the sole editable artifact. LibreOffice makes every classroom PDF and every generated
+  review PDF from that ODP. Save legacy PPTX as ODP in LibreOffice before one-time import.
+
 ## Slide migration and presentation
 
-- This is a requirement 1 slide in original source is 1 slide in djot and 1 slide in output, no taking one 
+- This is a requirement 1 slide in original source is 1 slide in djot and 1 slide in output, no taking one
   slide and making it three to get all of the content in.
-- I want better formatting match to the original slides (not byte nor exact) but like title and section 
-  layouts should be centered; the outline layouts do appear better 
+- I want better formatting match to the original slides (not byte nor exact) but like title and section
+  layouts should be centered; the outline layouts do appear better
 - images must always maintain their original aspect; never stretch images, it always looks wrong.
 - I do not own any microsoft products, Powerpoint is not a blocker, we only use PPTX because
   python supports PPTX better than ODP
@@ -21,19 +26,17 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Do not show slide numbers; they encourage the audience to track remaining time and watch the
   clock instead of the presenter.
 - Compile canonical Djot through repository-owned Python into a shared format-neutral layout plan.
-  Build native editable ODP directly, make PDF from that ODP, and build PPTX only as an independent
-  optional interchange artifact.
-- Run LibreOffice conversion with `--headless --norestore` through the established user profile.
-  Keep LibreOffice closed during the batch build; use `--safe-mode` when repairing profile problems.
-- Export ODP to PDF with the Impress PDF filter, 70 percent JPEG quality, a documented 150 DPI image
-  limit, and PDF/A-3b output.
-- Implement every individual LibreOffice layout-grid pattern as native editable Python objects, plus
-  the repository `gallery` layout. The grid is a visual catalog, not a rendering dependency.
-- Use layouts `blank`, `title-only`, `title-slide`, `one-panel`, `centered-text`, `two-panels`,
-  `one-plus-two-panels`, and `two-plus-one-panels`.
-- Use layouts `stacked-panels`, `two-over-one-panels`, `four-panels`, `six-panels`,
-  `vertical-panel`, `vertical-title-two-panels`, `vertical-text-panel`,
-  `two-panels-vertical-clipart`, `gallery`, and `multiple-choice`.
+  Build native editable ODP directly and make PDF from that ODP through LibreOffice.
+- Keep LibreOffice closed, preflight that desktop state once, then convert each generated ODP in
+  source order with direct `soffice --headless --norestore --convert-to --outdir` commands.
+  Use the two-second settling interval from `~/nsh/junk-drawer/makePDFSlides.sh` between files.
+- Presentation PDFs use `pdf:impress_pdf_Export`; the command verifies its expected PDF before
+  continuing. Do not add profiles, GUI/AppleScript control, process groups, or timeout cleanup.
+- `~/nsh/junk-drawer/makePDFSlides.sh` is workflow evidence. Quality 70, image reduction,
+  maximum image resolution 100 DPI, and `SelectPdfVersion=3` are current defaults, not gates.
+- Implement the twelve standard LibreOffice grid layouts as native editable objects. The registry
+  records project vocabulary and extensions in [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md). The grid
+  is a visual catalog, not a rendering dependency.
 - Give every slide exactly one explicit layout. Keep `-` as ordinary list syntax and use named
   `@<slot>` directives for layout structure.
 - Preserve text, lists, component images, links, layouts, and presenter notes as native objects.
@@ -41,11 +44,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   old lecture decks only as visual guidance: a shallow blue-to-white top band, centered standard
   titles, sensible margins, and hierarchical bullets with hanging indents and aligned wraps.
 - Use `genetics/xlect99-template_2023.otp` solely as the master-slide theme authority. ODP and PDF
-  are the primary classroom outputs; PPTX is an optional interchange artifact, not the theme owner.
+  are the classroom outputs.
 - Keep every presentation at 16:10. The physical page dimensions are not important; authoring and
   layout should use a stable 1280x800 logical canvas instead of paper-size assumptions.
 - Do not use a browser or CSS as the presentation theme engine. Preserve theme and list behavior as
-  native ODP/PPTX presentation semantics so LibreOffice can edit and export them.
+  native ODP presentation semantics so LibreOffice can edit and export them.
 - Remove full-slide and large composite screenshot substitution from import and production. Keep
   genuine source figures, photographs, diagrams, and intentional screenshots as normal images.
 - An imperfect native reconstruction is useful diagnostic information. Normalize hard legacy slides
@@ -53,7 +56,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   photographing the old rendering.
 - Simplification is the overall goal. Present the same instructional content through an existing
   Djot layout whenever possible instead of preserving the original slide composition.
-- Treat every full-slide raster image or raster fallback in generated PPTX, ODP, or PDF production
+- Treat every full-slide raster image or raster fallback in generated ODP or PDF production
   as a failed product result. A browser is not a normal build dependency.
 - Use the heavily edited `md2pptx` clone for native-object implementation ideas while retaining
   Djot syntax as this repository's authoring contract.
@@ -76,6 +79,18 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Make standard titles default to 36 pt and ordinary body text default to 28 pt.
 - Use shrink-on-overflow for native presentation frames only after build preflight proves the text
   remains above a readable floor; LibreOffice's unbounded manual shrink is not the floor owner.
+- I want five universal gestalt dimensions for visual review; keep objective gates and standalone
+  versus migration review separate, and make the concern reason more important than the total.
+- Calibrate roughly 20 pages across vision models before setting precision or an attention threshold;
+  centralize rubric provenance instead of repeating brittle source-line references.
+- I want visual review to use the original slide PDF and the generated ODP rendered to PDF by
+  LibreOffice. Assess the generated page on its classroom value and assess the pair for functional
+  visual equivalence: preserved teaching emphasis, grouping, relationships, balance, and character.
+- Use positive reviewer prompts: give appropriate PDF artifacts, ask for effects with a reason, and
+  use deterministic checks for mechanical facts. Small language models follow direct desired-action
+  phrasing; omission is often stronger than naming unwanted actions.
+- Use LibreOffice for every ODP-to-PDF conversion so generated review artifacts and classroom PDFs
+  share one consistent conversion authority.
 - Make generated title and content objects real LibreOffice layout members. Reapplying One Box must
   reuse the authored title and body instead of adding empty placeholders over them.
 - Every implementation milestone must complete without my participation. When I am unavailable, the
@@ -86,8 +101,6 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Use OpenDyslexic for ordinary and inline-code runs. Apply PT Sans Narrow only to a displayed
   literal URL; keep ordinary linked labels in OpenDyslexic with their native hyperlink.
 - Treat `slide_*_source` raster names as retired full-slide fallback evidence, not component images.
-- For `vertical-text-panel` and `vertical-panel`, author one level-one title and one
-  root body block: one paragraph, one list, or one component image.
 - Use lots of images and aim for a visual image on every slide.
 - Hold image-bearing slide PNGs out of publication until their copyright status is assessed;
   text-only slide-page screenshots may be published in `docs/screenshots/`.
@@ -117,11 +130,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   - Simple teaching animation: on an advance, make an authored item appear or reveal an outline one
     bullet at a time. Complex motion paths, timing tracks, and animation choreography are not needed.
   - Hand-writable source with very little structural punctuation or comment scaffolding.
-  - Native editable output: text, lists, practical equations, and images remain real PPTX and ODP
-    objects, never slide screenshots.
+  - Native editable output: text, lists, practical equations, and images remain real ODP objects,
+    never slide screenshots.
 - These are requirements for the language choice, not approval for a particular grammar.
 - Regardless of the chosen source language, the repository will own the parser, native editable
-  PPTX/ODP builders, LibreOffice conversion boundary, and validation. "Adopt a language" means adopt or adapt
+  ODP builder, LibreOffice conversion boundary, and validation. "Adopt a language" means adopt or adapt
   its source grammar and semantics, never its runtime or presentation pipeline.
 - No surveyed presentation format is a direct-adoption target. The successor language is extended
   Djot; its implemented spatial grammar remains adaptable as new native owners gain evidence.
@@ -155,7 +168,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Kova's `|||` split delimiter is notable prior art, but triple repeated characters are not ideal for
   ordinary authoring.
 - `multiple-choice` requires `@question` and `@answer`. The question and choices show initially;
-  the answer appears in a bottom-right popup. Use another layout for open-ended questions.
+  the answer is revealed in an editable, measured layout-owned popup selected in the available
+  left or right region. Use another layout for open-ended questions.
 - Reserve `![alt](path)`, `$inline$`, and `$$display$$` for component images and mathematics.
   A repository-owned adapter may accept the math surface without adopting extra image modifiers.
 - The Djot language supports normal Djot syntax. Use Djot tables for tabular source, inline
@@ -220,6 +234,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   repeated architectural rewrites.
 - Make the software robust: imperfect inputs, data, state, or behavior should preserve useful
   operation through context-appropriate graceful recovery whenever possible.
+- Prefer the smallest coherent design that satisfies actual requirements and known failure modes.
+  Mechanisms, abstractions, policies, state, and tests earn their place by solving demonstrated
+  needs.
 - Prefer clear boundaries, stable domain concepts, and replaceable components over speculative
   edge-case machinery. Address concrete requirements and likely failure modes now.
 - Build on the repository's ambition, then turn the strongest version into practical, owned,

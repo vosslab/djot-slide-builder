@@ -51,7 +51,6 @@ IMPORT_REQUIREMENT_ALIASES = {
 	"material": "mkdocs-material",
 	"pdfminer": "pdfminer.six",
 	"pil": "pillow",
-	"pptx": "python-pptx",
 	"pytestqt": "pytest-qt",
 	"rottentomatoes": "rottentomatoes-python",
 	"screencapturekit": "pyobjc-framework-ScreenCaptureKit",

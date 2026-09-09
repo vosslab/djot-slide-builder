@@ -7,7 +7,7 @@ usage() {
 	cat <<'EOF'
 Usage: ./build_slides.sh FOLDER
 
-Build every .djot deck recursively below FOLDER as PDF, PPTX, and ODP.
+Build every .djot deck recursively below FOLDER as editable ODP and classroom PDF.
 
 For one deck or a selected destination, use deck_tools.py build instead.
 EOF

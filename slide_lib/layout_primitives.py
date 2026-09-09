@@ -8,6 +8,7 @@ from dataclasses import dataclass
 
 LOGICAL_SLIDE_WIDTH = 1280.0
 LOGICAL_SLIDE_HEIGHT = 800.0
+MIN_SERIALIZABLE_FONT_SIZE_PT = 1.0
 
 
 class PresentationRole(enum.Enum):
@@ -32,11 +33,6 @@ class LibreOfficeAutoLayout(enum.Enum):
 	TITLE_4CONTENT = "AUTOLAYOUT_TITLE_4CONTENT"
 	TITLE_ONLY = "AUTOLAYOUT_TITLE_ONLY"
 	NONE = "AUTOLAYOUT_NONE"
-	VERTICAL_TITLE_VERTICAL_CONTENT_OVER_VERTICAL_CONTENT = \
-		"AUTOLAYOUT_VTITLE_VCONTENT_OVER_VCONTENT"
-	VERTICAL_TITLE_VERTICAL_CONTENT = "AUTOLAYOUT_VTITLE_VCONTENT"
-	TITLE_VERTICAL_CONTENT = "AUTOLAYOUT_TITLE_VCONTENT"
-	TITLE_2VERTICAL_CONTENT = "AUTOLAYOUT_TITLE_2VTEXT"
 	ONLY_TEXT = "AUTOLAYOUT_ONLY_TEXT"
 	TITLE_6CONTENT = "AUTOLAYOUT_TITLE_6CONTENT"
 
@@ -48,8 +44,6 @@ class LibreOfficePlaceholderObject(enum.Enum):
 	OUTLINE = "outline"
 	OBJECT = "object"
 	GRAPHIC = "graphic"
-	VERTICAL_TITLE = "vertical_title"
-	VERTICAL_OUTLINE = "vertical_outline"
 
 
 class PlaceholderKind(enum.Enum):
@@ -69,10 +63,8 @@ class ObjectLayer(enum.Enum):
 
 
 class LayoutObjectOrigin(enum.Enum):
-	"""Declare whether a physical object is authored, repeated, or chrome."""
+	"""Declare whether a physical object is authored."""
 	AUTHORED = "authored"
-	REPEATED_CONTEXT = "repeated-context"
-	GENERATED_CHROME = "generated-chrome"
 
 
 class StyleRole(enum.Enum):
@@ -99,26 +91,6 @@ class LineSpacingMode(enum.Enum):
 	EXACT = "exact"
 
 
-class ContinuationPolicy(enum.Enum):
-	FORBID = "forbid"
-	ALLOW = "allow"
-	DECOMPOSE_TO_ONE_PANEL = "decompose-to-one-panel"
-
-
-class ContinuationContextDisplay(enum.Enum):
-	"""Declare how an inherited list trail is exposed on a physical slide."""
-	INLINE_STATIC = "inline-static"
-	HANDOFF_STATIC = "handoff-static"
-	METADATA_ONLY = "metadata-only"
-
-
-class ContinuationKind(enum.Enum):
-	"""Keep authored and compiler-created continuation pages distinguishable."""
-	NORMAL = "normal"
-	AUTHORED = "authored"
-	CONTEXT_HANDOFF = "context-handoff"
-
-
 class ListKind(enum.Enum):
 	ORDERED = "ordered"
 	UNORDERED = "unordered"
@@ -142,15 +114,8 @@ class TextWrap(enum.Enum):
 	NO_WRAP = "no-wrap"
 
 
-class TextDirection(enum.Enum):
-	HORIZONTAL = "horizontal"
-	VERTICAL = "vertical"
-
-
 class PictureFit(enum.Enum):
 	CONTAIN = "contain"
-	COVER = "cover"
-	STRETCH = "stretch"
 
 
 class ShapeKind(enum.Enum):
@@ -283,7 +248,6 @@ class FrameTextProperties:
 	padding: Insets
 	vertical_alignment: VerticalAlignment
 	wrap: TextWrap
-	text_direction: TextDirection
 	overflow_policy: OverflowPolicy
 
 
@@ -325,6 +289,8 @@ class Typography:
 		require_nonempty(self.font_family, "typography font family")
 		for value in (self.floor_size_pt, self.start_size_pt, self.selected_size_pt):
 			require_positive_finite(value, "typography point size")
+		if self.floor_size_pt < MIN_SERIALIZABLE_FONT_SIZE_PT:
+			raise ValueError("typography floor_size_pt must meet the serializer-safe minimum")
 		if not self.floor_size_pt <= self.selected_size_pt <= self.start_size_pt:
 			raise ValueError("typography selected_size_pt must remain within its point bounds")
 
@@ -443,24 +409,17 @@ class LayoutContract:
 	allows_root_body: bool
 	allows_title: bool
 	allows_subtitle: bool
-	vertical_title: bool = False
-	vertical_slots: tuple[str, ...] = ()
 	topology_matchable: bool = False
 	topology_slots: tuple[tuple[float, float, float, float, float, float], ...] = ()
-	continuation_policy: ContinuationPolicy = ContinuationPolicy.FORBID
 	libreoffice_autolayout: LibreOfficeAutoLayout | None = None
 	libreoffice_placeholder_members: tuple[tuple[LibreOfficePlaceholderObject, str], ...] = ()
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "slot_names")
-		canonicalize_tuple(self, "vertical_slots")
 		canonicalize_tuple(self, "topology_slots")
 		canonicalize_tuple(self, "libreoffice_placeholder_members")
 		require_nonempty(self.name, "layout contract name")
 		validate_unique(self.slot_names, "layout contract slots")
-		validate_unique(self.vertical_slots, "layout contract vertical slots")
-		if any(slot not in self.slot_names for slot in self.vertical_slots):
-			raise ValueError("vertical layout slots must be declared layout slots")
 		if self.topology_slots and len(self.topology_slots) != len(self.slot_names):
 			raise ValueError("layout topology slots must match declared layout slots")
 		for bounds in self.topology_slots:

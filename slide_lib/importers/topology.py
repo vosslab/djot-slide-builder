@@ -5,7 +5,7 @@ import itertools
 
 # Local modules
 import slide_lib.importers.geometry as geometry
-import slide_lib.layout_engine
+import slide_lib.layout_registry
 
 
 TOPOLOGY_MAX_SCORE = .32
@@ -29,8 +29,8 @@ def ordinary_layout_match(
 		return None
 	source = normalized_boxes(bounds)
 	ranked: list[tuple[float, str, tuple[int, ...]]] = []
-	for name in slide_lib.layout_engine.registered_layout_names():
-		spec = slide_lib.layout_engine.layout_contract(name)
+	for name in slide_lib.layout_registry.names():
+		spec = slide_lib.layout_registry.contract_for(name)
 		if not spec.topology_matchable or spec.cell_count != len(bounds):
 			continue
 		slots = spec.topology_slots

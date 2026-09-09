@@ -1,3 +1,141 @@
+## 2026-09-09
+
+### Additions and New Features
+
+- WP-E3: `title-only` now accepts a leading H1 followed by ordinary editable root text, lists,
+  component images, or one table in the blank region below its native Title Only placeholder.  It
+  retains `AUTOLAYOUT_TITLE_ONLY`, one title placeholder, and the established START/TOP title.
+- Embedded OFL-compliant uniquely renamed copies of the six hash-validated bundled font faces in
+  every generated ODP with stable face-specific ODF declarations and editable-run mappings. The
+  exporter validates OS/2 editable-embedding permission before publication; the unique package
+  families prevent a host same-name substitute from replacing the measured repository asset. The
+  package now includes the applicable OFL notices and freezes derivative font timestamps.
+- WP-S1: Added `docs/DJOT_SLIDE_SYNTAX.md` as the compact authoritative Djot presentation-surface
+  reference. It defines the 14-layout catalog, slots, title and section semantics, supported
+  teaching syntax, reveal behavior, and native-destination boundaries.
+
+### Behavior or Interface Changes
+
+- Final eight-deck delivery is ODP-first: `./build_slides.sh genetics` now publishes exactly eight
+  editable ODP files and eight LibreOffice-derived PDFs. The completed 50.6-second build preserved
+  the 31/23/43/49/59/43/62/26 visible-page counts (336 total).
+
+### Fixes and Maintenance
+
+- WP-D1/D4: Consolidated active Djot authoring guidance in `DJOT_SLIDE_SYNTAX.md`. Operational
+  documents now link to that reference while retaining their command, pipeline, corpus, and status
+  roles; dated decisions now distinguish retired PPTX/OOXML paths from the active ODP/ODF boundary.
+  Architecture references now describe master-backed heading layouts, title-only body objects,
+  capacity inspection, and staged sequential LibreOffice PDF conversion.
+- WP-C1/C2: Section dividers now use the authoritative native master outline rectangle while
+  retaining centered text and middle vertical alignment.
+- Replaced the private-profile, one-process LibreOffice batch experiment with the established
+  simple method: one desktop-process preflight, then direct sequential `soffice --headless
+  --norestore --convert-to` commands with the Impress PDF filter, output directory, expected-PDF
+  verification, and a two-second settling interval. Folder PDF builds still stage and verify the
+  complete set before publication, preserving existing final PDFs if conversion fails. The retired
+  profile, process-group, timeout-cleanup, and GUI-orchestration complexity caused recovery prompts
+  without solving a demonstrated problem; quality and DPI remain defaults rather than gates.
+- WP-D3: Retired the direct PPTX exporter, OOXML animation writer, PPTX importer, temporary
+  conversion path, `python-pptx` dependency, and their dedicated tests. Native ODP is now the sole
+  editable build artifact; `all` writes ODP and its LibreOffice-derived PDF, and legacy PPTX is
+  saved as ODP in LibreOffice before bounded import.
+- WP-D3: Restored four compact format-neutral planner checks using direct source-model facts;
+  the ODP pairing boundary remains covered without rebuilding PPTX fixtures.
+- WP-D2: Removed measurement-cache counters and retired the unreachable cover/stretch picture-fit
+  variants. The retained model checks name the native ODP adapter boundary they protect: declared
+  placeholder topology, contiguous reveal activation, and contained image placement.
+
+- Multiple-choice questions now use one adaptive choice-and-popup geometry whether or not they
+  include an image, reserving the answer reveal outside every visible choice.
+- WP-E2: Direct ODP import now recognizes a section only from immutable positive source evidence:
+  a declared layout identity with one `subtitle` placeholder, one populated subtitle text frame,
+  and no other meaningful object. The 63 matching genetics source markers now use `section`;
+  ordinary heading-only slides retain their existing semantic layout.
+- WP-A6: Title slides now use the authoritative native master title and outline frames, restoring
+  readable subtitle metadata while retaining title/subtitle placeholders. Standard layouts preserve
+  the largest readable title before reporting a genuinely constrained named body slot. Title
+  measurement keeps the repository-owned font facts and an 8-logical-pixel serializer margin while
+  LibreOffice font determinism is resolved; body/list measurement and standard slot geometry are unchanged.
+- Recorded the KISS and positive-prompting guidance: use the smallest coherent design that solves
+  demonstrated needs, and phrase desired actions directly for small language models.
+- WP-E1: Renamed the authored `centered-text` layout to `section` while retaining LibreOffice
+  `AUTOLAYOUT_ONLY_TEXT` and its outline placeholder semantics. The centered one-frame builder now
+  carries the `section` identity; `title-only` remains the separate `AUTOLAYOUT_TITLE_ONLY` layout.
+- WP-A3: Set named corpus-derived typography recovery floors to 22 pt for titles and 20 pt for
+  body text while retaining the 36 pt / 28 pt classroom defaults. The visible original-deck facts
+  fixture records the migration baseline. The first selected-floor scan recorded 105 explicit
+  residuals (82 paragraph/list, 10 title, 8 local-heading, 4 mixed-flow, 1 table) for WP-A6.
+- Patch 3 (WP-A2): Added `deck_tools.py capacity <source>` for compile-only, deterministic
+  capacity inspection. It aggregates explicit title, paragraph/list, table, mixed-flow,
+  local-heading, and geometry/slot-constraint causes across a selected corpus, continues after
+  source-located physical-capacity boundaries, and returns a nonzero result whenever a concern is
+  present. Fixed title frames now measure their title and subtitle regions, while the project-owned
+  `multiple-choice` layout evaluates its adaptive answer geometries before recording only the final
+  capacity result. Normal builds retain their one-compilation recovery reporting; capacity inspection
+  writes no presentation artifacts and invokes no LibreOffice conversion.
+- Patch 2b (WP-A1, WP-A4): The compiler now emits exactly one `LayoutSlide` per authored Djot
+  slide, with stable `slide-N` identities. Removed continuation, grid decomposition, context
+  handoff, pagination fields, generated page chrome, and their serializer/accessibility paths.
+  Representable over-capacity content now remains on its authored slide at a measured sub-floor
+  quarter-point size and returns a source-located capacity diagnostic shown by normal builds.
+  Title fitting now measures body capacity before construction and selects one deterministic title
+  size instead of using exceptions as a layout-search oracle.
+- Patch 3b (WP-A1, WP-A4): Compilation now returns an immutable result that pairs the render-only
+  `LayoutDeck` with structured source-location/layout/slot capacity diagnostics. Normal builds
+  propagate that single result to their summaries rather than recompiling completed decks. Capacity
+  recovery uses a shared 1 pt serializer-safe minimum and raises a source-located physical-capacity
+  error below that bound. Public PDF builds pass their generated ODP to LibreOffice directly.
+- Patch 3c (WP-A4): Direct title fitting now uses the exact proportional mixed text/image allocation
+  consumed by final construction. Vertical CJK layouts were retired before the final title solver,
+  leaving one horizontal text-flow geometry for preflight and native output.
+- WP-D5: Removed the unused CJK-only vertical layout contracts from Djot grammar, validation,
+  measurement, and ODP/PPTX adapters. The supported catalog now contains the twelve standard
+  Impress layout-panel identities plus the project-owned `multiple-choice` and `gallery` layouts.
+- WP-A5: Collapsed the `layout_engine` catalog pass-throughs. `layout_registry` now directly owns
+  public layout-name and contract lookup for Djot validation, import topology, and their tests,
+  leaving the compiler's public boundary as `compile_layout_deck` only.
+- M1: Native ODP picture frames now serialize the compiler-resolved displayed rectangle, preserving
+  contained-image proportions instead of stretching every image to its allocated slot. Drawing-page
+  styles now suppress the master page-number, footer, and date-time chrome while retaining the
+  visible gradient background and background objects.
+- WP-I1: Replaced the ODP migration bridge with direct native ODP extraction into typed source facts.
+  Import admission now uses bounded archive/XML/manifest/media checks,
+  source-page evidence, reviewable unsupported objects, and private same-parent staging. Publication
+  prunes unreachable media, atomically renames assets, then uses the Djot file as its commit marker;
+  bounded rollback preserves non-overwriting behavior. Local media requires both package and manifest
+  membership; decoded raster bytes must match their published extension.
+
+- Final artifact audit accepted 336 editable pages and 185 picture frames (maximum aspect error
+  0.0068%) with suppressed chrome. The PDFs identify Impress as creator and LibreOffice 26.2.5.2 as
+  producer; bounded direct import and both ODP/LibreOffice E2E gates passed.
+
+### Removals and Deprecations
+
+- M7 removed the canonical-SVG/diagram subsystem and its tests. The remaining importer uses simple
+  same-parent staging, atomic asset rename, and a Djot commit marker; one durable rollback behavior
+  test remains. The publication implementation fell from 521 to 245 lines and its tests from 327 to
+  136 lines.
+- The final six-pass audit removed the unneeded descriptor-level ODP input snapshot, two unused ODP
+  reader helpers, and six mechanism-focused tests. Bounded package, XML, manifest, media, link, and
+  page-evidence validation remains at the direct-reader boundary. The audit also corrected the
+  roadmap and import-failure recovery documentation.
+
+### Developer Tests and Notes
+
+- One-time closeout evidence: 63 `title-only` markers changed to `section` with no other genetics
+  Djot source diff; capacity reported 99 explicit accepted diagnostics (94 paragraph/list, 4
+  mixed-flow, 1 table), all source-located; strict Jotdown 0.10.0 lint passed 8 sources, 336 slides,
+  and 185 images; the post-audit fast suite passed 1,908 tests in 5.17 seconds.
+- Six independent closeout review passes found no blocker or high-severity issue. The affected real
+  23-slide direct import, original-deck parity E2E, and LibreOffice native-layout roundtrip passed
+  after the accepted KISS fixes.
+- The advisory visual review covered 336 standalone pages and 336 original/generated pairs: 48
+  improved, 272 roughly equivalent, and 16 materially worse only at explicit native reconstruction
+  placeholders. Those source-migration limitations remain accepted because the plan forbids
+  source/image edits and the diagram abstraction was removed. Graphify rebuilt 1,497 nodes, 3,288
+  edges, and 66 communities; `slide_lib/` is 12,532 lines.
+
 ## 2026-09-08
 
 ### Additions and New Features
