@@ -93,6 +93,56 @@ def test_text_uses_point_sizes_and_native_shrink_policy(tmp_path: pathlib.Path) 
 	assert title.frame_text.overflow_policy.value == "shrink"
 
 
+def test_dense_multiple_choice_balances_native_choices_and_keeps_the_popup(
+		tmp_path: pathlib.Path) -> None:
+	"""A dense quiz remains one useful editable slide instead of aborting the deck."""
+	choices = "\n".join(f"  - Choice {letter}: " + "word " * 4
+		for letter in "ABCDEFGH")
+	source = "=== layout: multiple-choice\n\n@question\n\nA pathway question.\n\n" + \
+		"- Select the best supported answer.\n" + choices + "\n\n@answer\n\nAnswer: D"
+	deck = compile_source(tmp_path, source)
+	left = next(item for item in deck.slides[0].objects
+		if item.object_id == "question-choices-1")
+	right = next(item for item in deck.slides[0].objects
+		if item.object_id == "question-choices-2")
+	answer = next(item for item in deck.slides[0].objects if item.object_id == "answer")
+	popup_column = next(item for item in (left, right) if item.rectangle.x == answer.rectangle.x)
+	visible = "".join(run.text for item in deck.slides[0].objects
+		if isinstance(item.content, slide_lib.layout_content.TextContent)
+		for paragraph in item.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun))
+	assert left.rectangle.x < right.rectangle.x and all(
+		paragraph.typography.selected_size_pt >= paragraph.typography.floor_size_pt
+		for item in (left, right) for paragraph in item.content.paragraphs)
+	assert popup_column.rectangle.y + popup_column.rectangle.height < answer.rectangle.y
+	assert all(visible.count(f"Choice {letter}") == 1 for letter in "ABCDEFGH") and \
+		answer.reveal_targets
+
+
+def test_multiple_choice_keeps_leading_pathway_labels_as_editable_context(
+		tmp_path: pathlib.Path) -> None:
+	"""Imported pathway labels compact without displacing the stem, choices, or answer."""
+	labels = "\n\n".join(("- Enzyme A", "- Enzyme B", "- Enzyme C", "- A to B to C to D"))
+	choices = "\n".join(f"  - {letter}) nutrient " + "word " * 3
+		for letter in "ABCDEFG")
+	source = "=== layout: multiple-choice\n\n@question\n\n" + labels + \
+		"\n\nMolecule D is required for growth.\n\n- Which supplement restores growth?\n" + \
+		choices + "\n\n@answer\n\nAnswer: D"
+	deck = compile_source(tmp_path, source)
+	objects = deck.slides[0].objects
+	answer = next(item for item in objects if item.object_id == "answer")
+	context_ids = tuple(item.object_id for item in objects if item.object_id.startswith(
+		"question-context-"))
+	assert context_ids == ("question-context-1", "question-context-2",
+		"question-context-3", "question-context-4", "question-context-prose")
+	assert any(item.object_id == "question-stem" for item in objects)
+	assert all(not (item.rectangle.x < answer.rectangle.x + answer.rectangle.width and
+		answer.rectangle.x < item.rectangle.x + item.rectangle.width and
+		item.rectangle.y < answer.rectangle.y + answer.rectangle.height and
+		answer.rectangle.y < item.rectangle.y + item.rectangle.height)
+		for item in objects if item.object_id != "answer")
+
+
 def test_overflow_and_unsupported_source_fail_at_the_source_location(tmp_path: pathlib.Path) -> None:
 	long_line = " ".join("word" for _ in range(5000))
 	with pytest.raises(ValueError, match=r"specimen\.djot:5:.*24 pt"):
@@ -134,6 +184,41 @@ def test_continuation_preserves_root_list_subtrees_and_does_not_repeat_context_r
 		assert any("Context" in "".join(run.text for run in item.content.paragraphs[0].inlines
 			if hasattr(run, "text")) for item in text_objects)
 		assert any(len(item.content.paragraphs) > 1 for item in text_objects)
+
+
+def test_tall_leaf_uses_static_handoff_before_a_titleless_authored_page(
+		tmp_path: pathlib.Path) -> None:
+	"""Redundant H1 context yields when one readable leaf needs the full body area."""
+	leaf = ("Honorable mentions: " + "word " * 50).strip()
+	source = "=== layout: one-panel\n\n# Dr. Voss Best Movies of the Decade\n\n" + \
+		"@body\n\n- Context\n  - " + leaf
+	deck = compile_source(tmp_path, source)
+	authored = next(page for page in deck.slides if page.continuation_context is not None and
+		page.continuation_context.display.value == "metadata-only")
+	visible = "".join(run.text for item in authored.objects
+		if isinstance(item.content, slide_lib.layout_content.TextContent)
+		for paragraph in item.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun))
+	assert any(page.continuation_kind.value == "context-handoff" for page in deck.slides)
+	assert not any(item.object_id == "title" for item in authored.objects) and visible.count(leaf) == 1
+
+
+def test_one_child_grid_list_decomposes_through_the_shared_handoff(
+		tmp_path: pathlib.Path) -> None:
+	"""A single deep grid path makes progress while retaining source-slot provenance."""
+	source = "=== layout: two-panels\n\n# Promethease\n\n@left\n\n" + \
+		"- Promethease is a literature retrieval system that builds a personal DNA report based on " + \
+		"connecting a file of DNA genotypes to the scientific findings cited in SNPedia.\n" + \
+		"  - Customers of DNA testing services can retrieve information published in science articles " + \
+		"about their DNA variations.\n\n@right\n\n![Report](pixel.gif)"
+	deck = compile_source(tmp_path, source)
+	handoffs = tuple(page for page in deck.slides
+		if page.continuation_kind.value == "context-handoff")
+	authored = tuple(item for page in deck.slides for item in page.objects
+		if item.decomposition_origin is not None and item.origin.value == "authored")
+	assert handoffs and any(item.decomposition_origin is not None
+		for page in handoffs for item in page.objects)
+	assert any(item.decomposition_origin.original_slot == "left" for item in authored)
 
 
 def test_pagination_does_not_rescue_forbidden_layout_or_atomic_content(tmp_path: pathlib.Path) -> None:

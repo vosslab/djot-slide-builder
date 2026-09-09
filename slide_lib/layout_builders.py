@@ -10,6 +10,7 @@ import slide_lib.editable_text
 import slide_lib.layout_content
 import slide_lib.layout_model
 import slide_lib.layout_primitives
+import slide_lib.multiple_choice_layout
 import slide_lib.native_model
 import slide_lib.presentation_theme
 
@@ -18,6 +19,7 @@ FOREGROUND = "172033"
 ACCENT = "24578F"
 MUTED = "526176"
 WHITE = "FFFFFF"
+QUIZ_FLOOR_SIZE_PT = slide_lib.multiple_choice_layout.QUESTION_FLOOR_SIZE_PT
 
 
 def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
@@ -449,24 +451,30 @@ def _multiple_choice(deck: slide_lib.native_model.Deck, source: slide_lib.native
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
-	"""Build non-overlapping question and answer-popup objects."""
+	"""Build one visible adaptive question and its on-click answer popup."""
 	question = next(cell for cell in source.cells if cell.name == "question")
 	answer = next(cell for cell in source.cells if cell.name == "answer")
-	question_rect = slide_lib.layout_primitives.LogicalRectangle(60, 82, 1160, 390)
-	answer_rect = slide_lib.layout_primitives.LogicalRectangle(600, 496, 580, 230)
+	question_rect = slide_lib.layout_primitives.LogicalRectangle(60, 36, 1160, 728)
 	frame = _frame_text(contract, "question")
+	column_gap = 42.0
+	answer_frame = dataclasses.replace(frame,
+		padding=slide_lib.layout_primitives.Insets(18, 10, 18, 10),
+		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
+	objects, popup_column, left_width, answer_size, answer_height, answer_y = \
+		_multiple_choice_question(deck, question, answer, question_rect,
+			theme, frame, session)
+	right_width = question_rect.width - column_gap - left_width
+	popup_width = left_width if popup_column == 0 else right_width
+	answer_rect = slide_lib.layout_primitives.LogicalRectangle(
+		question_rect.x if popup_column == 0 else question_rect.x + left_width + column_gap,
+		answer_y, popup_width, answer_height)
 	slots = [_slot("question", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
 		slide_lib.layout_primitives.PresentationRole.OUTLINE, question_rect, 0, frame,
 		slide_lib.layout_primitives.StyleRole.OUTLINE), _slot("answer",
 		slide_lib.layout_primitives.PlaceholderKind.OBJECT, slide_lib.layout_primitives.PresentationRole.OBJECT,
-		answer_rect, 1, frame, slide_lib.layout_primitives.StyleRole.ACCENT)]
-	objects = _cell_objects(deck, question, question_rect, theme, contract, "question", 0, frame, session)
-	items = slide_lib.layout_measurement.items_for(answer.blocks)
-	size = slide_lib.layout_measurement.select_size(items,
-		slide_lib.layout_primitives.LogicalRectangle(618, 506, 544, 210), theme.ordinary_body_size_pt,
-		theme.body_floor_size_pt, theme, answer.blocks[0].location, "multiple-choice answer", session)
-	text = _text_content(answer.blocks, size, theme.body_floor_size_pt,
-		slide_lib.layout_primitives.StyleRole.ACCENT, WHITE, answer_rect.width, theme,
+		answer_rect, 1, answer_frame, slide_lib.layout_primitives.StyleRole.ACCENT)]
+	text = _text_content(answer.blocks, answer_size, theme.body_floor_size_pt,
+		slide_lib.layout_primitives.StyleRole.ACCENT, WHITE, popup_width - 36, theme,
 		bold=True, session=session)
 	accessibility = slide_lib.layout_primitives.ObjectAccessibility("Answer", "Multiple-choice answer popup")
 	style = slide_lib.layout_content.ShapeStyle(slide_lib.layout_primitives.StyleRole.ACCENT,
@@ -475,9 +483,180 @@ def _multiple_choice(deck: slide_lib.native_model.Deck, source: slide_lib.native
 		style, accessibility, text)
 	objects.append(slide_lib.layout_model.LayoutObject("answer", slide_lib.layout_primitives.PresentationRole.OBJECT,
 		slide_lib.layout_primitives.StyleRole.ACCENT, answer_rect, slide_lib.layout_primitives.ObjectLayer.CONTENT,
-		len(objects), len(objects), shape, frame, "answer", "answer",
+		len(objects), len(objects), shape, answer_frame, "answer", "answer",
 		slide_lib.layout_primitives.PlaceholderKind.OBJECT, answer.location, _reveal_targets("answer", answer.blocks, len(objects))))
 	return _slide(source, index, contract, slots, objects)
+
+
+def _multiple_choice_question(deck: slide_lib.native_model.Deck,
+		question: slide_lib.native_model.Cell,
+		answer: slide_lib.native_model.Cell,
+		rectangle: slide_lib.layout_primitives.LogicalRectangle,
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		frame: slide_lib.layout_primitives.FrameTextProperties,
+		session: slide_lib.layout_measurement.MeasurementSession
+		) -> tuple[list[slide_lib.layout_model.LayoutObject], int, float, float, float, float]:
+	"""Keep all final-state question text outside the adaptive answer popup."""
+	answer_items = slide_lib.layout_measurement.items_for(answer.blocks)
+	content_gap = 12.0
+	image = next((block for block in question.blocks
+		if isinstance(block, slide_lib.native_model.Image)), None)
+	if image is None:
+		left_width = (rectangle.width - 42) / 2
+		answer_size, answer_height = slide_lib.multiple_choice_layout.answer_metrics(
+			answer_items, left_width, answer, theme, session)
+		items = slide_lib.layout_measurement.items_for(question.blocks)
+		for quarters in range(int(theme.ordinary_body_size_pt * 4),
+				int(theme.body_floor_size_pt * 4) - 1, -1):
+			size = quarters / 4
+			height = slide_lib.layout_measurement.text_height(
+				items, size, rectangle.width, theme, session)
+			if height + answer_height + content_gap <= rectangle.height:
+				item = _text_object("question", question.blocks, rectangle, size,
+					theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.OUTLINE,
+					frame, "question", 0, slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
+					theme, session=session)
+				answer_y = rectangle.y + rectangle.height - answer_height
+				return [item], 1, left_width, answer_size, answer_height, answer_y
+	parts = slide_lib.multiple_choice_layout.question_parts(question)
+	image_height = 0.0
+	if parts.image is not None:
+		# ASVS 5.3.2: image_size retains the existing repository-containment check.
+		width, height = slide_lib.layout_measurement.image_size(deck, parts.image)
+		image_height = min(rectangle.width * height / width, rectangle.height * .30)
+	column_gap = 42.0
+	selected: tuple[float, float, float, int, int, float, float, float] | None = None
+	for quarters in range(int(theme.ordinary_body_size_pt * 4),
+			int(QUIZ_FLOOR_SIZE_PT * 4) - 1, -1):
+		size = quarters / 4
+		prompt = slide_lib.multiple_choice_layout.prompt_metrics(
+			parts, size, rectangle.width, theme, session)
+		best: tuple[tuple[float, float, float, int, int], float, float, float,
+			float, float] | None = None
+		for split in range(1, len(parts.choices)):
+			for percent in range(30, 71, 5):
+				left_width = (rectangle.width - column_gap) * percent / 100
+				right_width = rectangle.width - column_gap - left_width
+				left_height = slide_lib.layout_measurement.text_height(
+					slide_lib.layout_measurement.items_for(parts.choices[:split]), size,
+					left_width, theme, session)
+				right_height = slide_lib.layout_measurement.text_height(
+					slide_lib.layout_measurement.items_for(parts.choices[split:]), size,
+					right_width, theme, session)
+				popup_column = 0 if left_height <= right_height else 1
+				popup_height = left_height if popup_column == 0 else right_height
+				popup_width = left_width if popup_column == 0 else right_width
+				answer_size, answer_height = slide_lib.multiple_choice_layout.answer_metrics(
+					answer_items, popup_width, answer, theme, session)
+				gaps = content_gap * ((parts.image is not None) + bool(prompt.height))
+				available = rectangle.height - image_height - prompt.height - gaps
+				if max(left_height, right_height) > available or \
+						popup_height + answer_height + content_gap > available:
+					continue
+				rank = (abs(percent - 50), max(left_height, right_height),
+					popup_height, split, popup_column)
+				if best is None or rank < best[0]:
+					best = (rank, left_height, right_height, left_width,
+						answer_size, answer_height)
+		if best is None:
+			continue
+		rank, left_height, right_height, left_width, answer_size, answer_height = best
+		selected = (size, left_height, right_height, rank[3], rank[4], left_width,
+			answer_size, answer_height)
+		break
+	if selected is None:
+		location = question.blocks[0].location
+		raise ValueError(f"{location.path}:{location.line}: multiple-choice question cannot fit within the supported adaptive minimum of {QUIZ_FLOOR_SIZE_PT:g} pt")
+	size, left_height, right_height, split, popup_column, left_width, \
+		answer_size, answer_height = selected
+	right_width = rectangle.width - column_gap - left_width
+	prompt = slide_lib.multiple_choice_layout.prompt_metrics(
+		parts, size, rectangle.width, theme, session)
+	objects: list[slide_lib.layout_model.LayoutObject] = []
+	y = rectangle.y
+	if parts.image is not None:
+		allocation = slide_lib.layout_primitives.LogicalRectangle(
+			rectangle.x, y, rectangle.width, image_height)
+		objects.append(_picture_object("question-image", deck, parts.image, allocation,
+			"question", len(objects)))
+		y += image_height + content_gap
+	if parts.context_labels:
+		leading_gap = 30.0
+		leading_width = (rectangle.width - leading_gap) / 2
+		context_gap = 12.0
+		context_width = (leading_width - context_gap * (prompt.label_columns - 1)) / \
+			prompt.label_columns
+		label_y = y
+		for start in range(0, len(parts.context_labels), prompt.label_columns):
+			row = parts.context_labels[start:start + prompt.label_columns]
+			row_heights = prompt.label_item_heights[start:start + len(row)]
+			for column, (block, height) in enumerate(zip(row, row_heights)):
+				allocation = slide_lib.layout_primitives.LogicalRectangle(
+					rectangle.x + column * (context_width + context_gap), label_y,
+					context_width, height)
+				objects.append(_text_object(f"question-context-{start + column + 1}",
+					block, allocation, size, QUIZ_FLOOR_SIZE_PT,
+					slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question",
+					len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE,
+					theme, session=session))
+			label_y += max(row_heights) + context_gap
+		if parts.context_prose:
+			allocation = slide_lib.layout_primitives.LogicalRectangle(
+				rectangle.x, label_y,
+				leading_width, prompt.prose_height)
+			objects.append(_text_object("question-context-prose", parts.context_prose,
+				allocation, size, QUIZ_FLOOR_SIZE_PT,
+				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question",
+				len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE,
+				theme, session=session))
+		if parts.stem:
+			allocation = slide_lib.layout_primitives.LogicalRectangle(
+				rectangle.x + leading_width + leading_gap, y,
+				leading_width, prompt.stem_height)
+			objects.append(_text_object("question-stem", parts.stem, allocation, size,
+				QUIZ_FLOOR_SIZE_PT,
+				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
+				slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
+		y += prompt.height
+	elif parts.context_prose:
+		allocation = slide_lib.layout_primitives.LogicalRectangle(
+			rectangle.x, y, rectangle.width, prompt.prose_height)
+		objects.append(_text_object("question-context-prose", parts.context_prose,
+			allocation, size,
+			QUIZ_FLOOR_SIZE_PT,
+			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
+			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
+		y += prompt.leading_height
+	if not parts.context_labels and prompt.leading_height and prompt.stem_height:
+		y += content_gap
+	if not parts.context_labels and parts.stem:
+		allocation = slide_lib.layout_primitives.LogicalRectangle(
+			rectangle.x, y, rectangle.width, prompt.stem_height)
+		objects.append(_text_object("question-stem", parts.stem, allocation, size,
+			QUIZ_FLOOR_SIZE_PT,
+			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
+			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
+		y += prompt.stem_height
+	if prompt.height:
+		y += content_gap
+	columns = ((parts.choices[:split], left_height, rectangle.x, left_width),
+		(parts.choices[split:], right_height, rectangle.x + left_width + column_gap,
+			right_width))
+	for column, (blocks, height, x, width) in enumerate(columns):
+		allocation = slide_lib.layout_primitives.LogicalRectangle(
+			x, y, width, height)
+		objects.append(_text_object(f"question-choices-{column + 1}", blocks, allocation,
+			size, QUIZ_FLOOR_SIZE_PT,
+			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
+			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
+	text_index = next(index for index, item in enumerate(objects)
+		if isinstance(item.content, slide_lib.layout_content.TextContent))
+	objects[text_index] = dataclasses.replace(objects[text_index],
+		layer=slide_lib.layout_primitives.ObjectLayer.LAYOUT,
+		presentation_member_id="question",
+		placeholder_kind=slide_lib.layout_primitives.PlaceholderKind.OUTLINE)
+	answer_y = rectangle.y + rectangle.height - answer_height
+	return objects, popup_column, left_width, answer_size, answer_height, answer_y
 
 
 def _text_object(object_id: str, block: object, rectangle: slide_lib.layout_primitives.LogicalRectangle,

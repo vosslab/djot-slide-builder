@@ -85,8 +85,9 @@ slide is initially one panel. Only a real fit failure may expand it when `pagina
 `paginate: false` source instead fails at its source location before output publication. The
 fallback order is: reduce ordinary text only to 24 pt; partition whole paragraphs, root-list
 subtrees, table-row groups, and atomic objects; then, only for a root-list subtree that alone cannot
-fit, recursively partition between descendant list-item subtrees. A leaf item that cannot fit fails
-at its source location.
+fit, recursively partition between descendant list-item subtrees. When a detached leaf needs the
+full 24 pt body, its static context handoff precedes a titleless authored page; a leaf that still
+cannot fit fails at its source location.
 
 The compiler measures committed font profiles at exact requested point sizes (including
 quarter-point values) and carries the result in the physical plan; it does not use a host-font
@@ -103,30 +104,36 @@ the new authored descendant only when that combined page fits (`INLINE_STATIC`).
 the compiler puts one deterministic static `CONTEXT_HANDOFF` page immediately before the detached
 descendant (`HANDOFF_STATIC`). If that trail cannot fit, the descendant carries
 `METADATA_ONLY` context. The descendant retains its original list level and must fit, or the
-compiler raises the source-local error. This policy uses no abbreviation, clipping, subfloor, or
-text-specific exception. Existing `continuation_context` marks visible static repeats; context is
-never an authored unit or a reveal target. Ordinary repeated H1 behavior is independent of the
-ancestor trail and stays unchanged.
+compiler raises the source-local error. This policy uses no abbreviation, clipping, or ordinary-body
+subfloor. Existing `continuation_context` marks visible static repeats; context is never an authored
+unit or a reveal target. Ordinary continuations repeat H1 when it fits; the H1 yields only after a
+static handoff when the authored leaf needs the full body.
 
 Every authored unit and reveal target occurs exactly once. Context-handoff pages are static with no
 reveal targets; authored continuations have only local reveal targets. Physical pages retain the
-same topology and title behavior, use deterministic `source_id-pN` identities and contiguous
-indexes, repeat qualified notes, and use physical page numbering. For nonvisual trails, both output
-adapters serialize the ordered context into an accessibility description and a generated continuation
-note. ODP and PPTX serialize that one plan and must therefore agree on physical-page count, order,
-continuation kind, context mode, safe line advances, list indents, notes, and accessibility meaning.
+same topology and the H1 recovery described above, use deterministic `source_id-pN` identities and
+contiguous indexes, repeat qualified notes, and use physical page numbering. For nonvisual trails,
+both output adapters serialize the ordered context into an accessibility description and a generated
+continuation note. ODP and PPTX serialize that one plan and must therefore agree on physical-page
+count, order, continuation kind, context mode, safe line advances, list indents, notes, and
+accessibility meaning.
 
 For a true-fit failure of an eligible generic grid, the compiler instead uses
 `DECOMPOSE_TO_ONE_PANEL`. The eligible layouts are `two-panels`, `one-plus-two-panels`,
 `two-plus-one-panels`, `stacked-panels`, `two-over-one-panels`, `four-panels`, and `six-panels`.
 Only `paginate: true` permits this transition. A fitting grid is unchanged; a failing eligible grid
 contributes all nonempty slots in canonical reading order to the same one-panel splitter used by
-ordinary continuation. Every output page is a one-panel physical topology, repeats H1/context/notes
-but not source slot labels, places images and tables through the canonical one-panel rules, and
-retains source-grid and source-slot provenance. Content and reveals occur once across the resulting
-pages, with deterministic physical identities. Semantic layouts (including title, centered-text,
-vertical, gallery, and multiple-choice layouts) do not decompose; they, `paginate: false`, and an
-unsplittable atomic unit fail at the originating source location before either adapter serializes.
+ordinary continuation. Every output page is a one-panel physical topology, applies the same
+H1/context/notes recovery but does not repeat source slot labels, places images and tables through
+the canonical one-panel rules, and retains source-grid and source-slot provenance. Content and
+reveals occur once across the resulting pages, with deterministic physical identities. Semantic
+layouts (including title, centered-text,
+vertical, gallery, and multiple-choice layouts) do not decompose. `multiple-choice` instead uses its
+full question region and, on true-fit failure, separates context, stem, and choices into measured
+editable regions. The choice split and column widths adapt down to an 18 pt quiz-specific floor; a
+sized answer popup uses space reserved beneath the shorter column and overlays only after its reveal.
+Other semantic-layout failures, `paginate: false`, and unsplittable atomic units fail at the
+originating source location before either adapter serializes.
 
 ## Ownership boundaries
 

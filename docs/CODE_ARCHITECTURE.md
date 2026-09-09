@@ -26,7 +26,8 @@ source. Trusted ODP and PPTX files enter only through the one-time import workfl
   [../slide_lib/layout_measurement.py](../slide_lib/layout_measurement.py), and
   [../slide_lib/layout_builders.py](../slide_lib/layout_builders.py) own declarative layout
   contracts, distinct LibreOffice classifier signatures, font-backed capacity, and format-neutral
-  physical object construction.
+  physical object construction. [../slide_lib/multiple_choice_layout.py](../slide_lib/multiple_choice_layout.py)
+  isolates the context, stem, choice, and answer measurement policy for the adaptive teaching layout.
   [../slide_lib/layout_engine.py](../slide_lib/layout_engine.py) is their public compiler boundary.
 - [../slide_lib/presentation_theme.py](../slide_lib/presentation_theme.py) validates and reads the
   format-neutral theme from `genetics/xlect99-template_2023.otp`.

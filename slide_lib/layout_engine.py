@@ -119,6 +119,14 @@ def _decompose_grid(deck: slide_lib.native_model.Deck, source: slide_lib.native_
 						unit.origin) for fragment in replacements)
 					units = units[:start] + fragments + units[start + 1:]
 					continue
+				cell = next(item for item in source.cells
+					if item.name == unit.origin.original_slot)
+				handoff = _context_handoff_pages(deck, source, cell, unit.unit, theme,
+					session, unit.origin)
+				if handoff:
+					pages.extend(handoff)
+					start += 1
+					continue
 			block = unit.unit.block
 			raise ValueError(f"{block.location.path}:{block.location.line}: one atomic grid stream unit cannot fit within the supported readable minimum of {theme.body_floor_size_pt:g} pt")
 		if start:
@@ -181,7 +189,8 @@ def _context_handoff_pages(deck: slide_lib.native_model.Deck,
 		source: slide_lib.native_model.Slide, cell: slide_lib.native_model.Cell,
 		unit: slide_lib.layout_measurement.ContinuationUnit,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
+		session: slide_lib.layout_measurement.MeasurementSession,
+		origin: slide_lib.layout_model.DecompositionOrigin | None = None) -> tuple[_PageCandidate, ...]:
 	block = unit.block
 	if not isinstance(block, slide_lib.native_model.ListBlock) or len(block.items) != 1:
 		return ()
@@ -199,13 +208,28 @@ def _context_handoff_pages(deck: slide_lib.native_model.Deck,
 			children=(), reveal=leaf_item.reveal),), reveal=None)
 		leaf_source = _continuation_source(source, cell,
 			(slide_lib.layout_measurement.ContinuationUnit(leaf_block, unit.active_heading),), True)
-		# Diagnose an unsplittable leaf before testing whether its static trail fits.
-		authored = slide_lib.layout_builders.compile_slide(deck, leaf_source, theme, 0, session)
+		if origin is not None:
+			leaf_source = dataclasses.replace(leaf_source, layout_class="one-panel",
+				cells=(dataclasses.replace(leaf_source.cells[0], name="body"),))
+		try:
+			authored = slide_lib.layout_builders.compile_slide(deck, leaf_source, theme, 0, session)
+		except ValueError:
+			blocks = tuple(block for block in leaf_source.blocks if not (
+				isinstance(block, slide_lib.native_model.Heading) and block.level == 1))
+			authored = slide_lib.layout_builders.compile_slide(deck,
+				dataclasses.replace(leaf_source, blocks=blocks), theme, 0, session)
+		if origin is not None:
+			authored = dataclasses.replace(authored, objects=tuple(dataclasses.replace(item,
+				decomposition_origin=origin) if item.object_id != "title" else item
+				for item in authored.objects))
 		metadata = slide_lib.layout_model.ContinuationContext(
 			slide_lib.layout_primitives.ContinuationContextDisplay.METADATA_ONLY, entries)
 		trail_block = slide_lib.layout_measurement.path_fragment(trail)
 		trail_source = _continuation_source(source, cell,
 			(slide_lib.layout_measurement.ContinuationUnit(trail_block, unit.active_heading),), True)
+		if origin is not None:
+			trail_source = dataclasses.replace(trail_source, layout_class="one-panel",
+				cells=(dataclasses.replace(trail_source.cells[0], name="body"),))
 		try:
 			handoff = slide_lib.layout_builders.compile_slide(deck, trail_source, theme, 0, session)
 		except ValueError:
@@ -218,7 +242,8 @@ def _context_handoff_pages(deck: slide_lib.native_model.Deck,
 			slide_lib.layout_measurement.ContinuationUnit(trail_block, unit.active_heading,
 				len(trail), tuple(item.location for _list, item in trail)),))
 		handoff = dataclasses.replace(handoff, objects=tuple(dataclasses.replace(item,
-			origin=slide_lib.layout_primitives.LayoutObjectOrigin.REPEATED_CONTEXT)
+			origin=slide_lib.layout_primitives.LayoutObjectOrigin.REPEATED_CONTEXT,
+			decomposition_origin=origin if item.object_id != "title" else item.decomposition_origin)
 			for item in handoff.objects))
 		pages.extend((_PageCandidate(handoff,
 			slide_lib.layout_primitives.ContinuationKind.CONTEXT_HANDOFF, static),

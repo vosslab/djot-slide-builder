@@ -43,6 +43,14 @@
 
 ### Fixes and Maintenance
 
+- Fixed the first public `./build_slides.sh genetics` run after the native ODP migration. The
+  compiler now recovers from the 17 masked corpus-capacity failures: dense multiple-choice
+  questions separate context, stem, and choices, then adapt the editable choice split and column
+  widths down to an 18 pt quiz-specific floor; the sized answer popup uses reserved space beneath
+  the shorter column instead of covering final-state choices. One-descendant list overflow uses the
+  existing static context handoff, and redundant repeated H1 context yields only when a readable
+  authored leaf needs the full body. Ordinary body content retains its 24 pt floor, source order and
+  slot provenance remain intact.
 - Rotated the September 1, 5, and 6 entries into `CHANGELOG-2026-09a.md` after the active changelog
   crossed its documented 800-line threshold.
 - Removed the superseded PPTX-to-ODP bridge, theme splice, legacy layout facade, and their
@@ -103,6 +111,10 @@
 
 ### Decisions and Failures
 
+- The post-migration compiler and focused `lect02a` acceptance both passed while the user-facing
+  eight-deck build still crashed on its first deck. A source-by-source preflight exposed 16 more
+  failures hidden behind that first exception. Full public-command acceptance is required for this
+  recovery; a passing representative deck is not corpus acceptance.
 - The six-pass review found that the archived migration checked WP-V2 complete without retaining all
   proposed acceptance machinery and that planned `odp_text.py` ownership remained folded into
   `odp_export.py`. The resolution restores the text boundary and narrows acceptance to durable

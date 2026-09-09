@@ -118,8 +118,8 @@ and the future approved language guide.
 
 **Decision.** `multiple-choice` is an official layout in the implemented language catalog.
 It requires exactly one `@question` slot and one `@answer` slot. The question contains the prompt
-and its ordinary choice list; the answer contains one or two short, flat paragraphs in a fixed
-bottom-right popup region. It carries implicit reveal intent only.
+and its ordinary choice list; the answer contains one or two short, flat paragraphs in a bounded
+popup region selected from measured question geometry. It carries implicit reveal intent only.
 
 **Why.** Multiple-choice questions have a short, revealable answer. Implicit intent removes redundant
 animation spelling while keeping open-ended questions out of a layout that would misstate their
@@ -527,11 +527,16 @@ object-appear reveal intent and no explicit action directive.
 **Why.** The layout communicates the instructional structure without making the author repeat a
 redundant answer action or turning a popup into a general overlay system.
 
-**Consequence.** The answer is placed in the fixed popup region and rejects explicit `<=` or `=>`
-actions. The intent becomes a bounded OOXML animation request only when M5 builds it. Package
-semantics and the automated reveal-state harness are the acceptance evidence.
+**Consequence.** The visible question owns the full question region. A question first fits at the
+ordinary 24 pt floor; on true-fit failure, the compiler separates leading context labels, context
+prose, the teaching stem, and choices, then adapts the editable choice split and column widths down
+to an 18 pt quiz-specific floor. The answer is sized against its selected column and placed in
+reserved space below the shorter column, so its revealed final state does not hide a choice. The
+intent becomes a bounded OOXML animation request only when M5 builds it. Package semantics and the
+automated reveal-state harness are the acceptance evidence.
 
-**Owner.** `slide_lib/layout_engine.py`, `slide_lib/djot_parser.py`, and
+**Owner.** `slide_lib/multiple_choice_layout.py`, `slide_lib/layout_builders.py`,
+`slide_lib/djot_parser.py`, and
 [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
 
 ### Animation uses OOXML and Impress evidence
@@ -625,20 +630,23 @@ equivalent without a format-specific rescue path.
 
 **Consequence.** The ordered fallback reduces ordinary text only to 24 pt, then partitions whole
 paragraphs, root-list subtrees, table-row groups, and atomic objects. Only a root-list subtree that
-cannot itself fit may recursively partition between descendant list-item subtrees; a too-tall leaf
-fails source-locally. The format-neutral plan holds an ordered `ContinuationContext` ancestor trail,
-the `INLINE_STATIC`, `HANDOFF_STATIC`, or `METADATA_ONLY` display mode, and physical
+cannot itself fit may recursively partition between descendant list-item subtrees. A detached leaf
+that needs the full body follows its static context-handoff page without a redundant repeated H1;
+a leaf that still cannot fit fails source-locally. The format-neutral plan holds an ordered
+`ContinuationContext` ancestor trail, the `INLINE_STATIC`, `HANDOFF_STATIC`, or `METADATA_ONLY`
+display mode, and physical
 `ContinuationKind.NORMAL`, `AUTHORED`, or `CONTEXT_HANDOFF`. When a trail and new authored
 descendant fit together, the compiler uses `INLINE_STATIC`. Otherwise it creates one deterministic
 static context-handoff page immediately before the detached descendant; if the trail itself cannot
 fit, it retains metadata-only context on the descendant. The descendant stays at its original level
 and must fit. Context uses no abbreviation, clipping, subfloor, or text-specific branch, is never
 authored or revealable, and existing `continuation_context` marks visible repeats. Every authored
-unit occurs exactly once. Ordinary repeated H1 behavior remains independent of the ancestor trail.
-Continuations retain the same topology and title behavior, use stable `source_id-pN` identities with
-contiguous indexes, reset local reveals per physical page, repeat qualified notes, and number
-physical pages. The adapters receive only this plan, preserve its count and order, and serialize
-nonvisual trails into matching accessibility descriptions and generated continuation notes.
+unit occurs exactly once. Ordinary continuations repeat H1 when it fits; a static handoff already
+supplies that context before the one titleless leaf recovery. Continuations retain the same topology,
+use stable `source_id-pN` identities with contiguous indexes, reset local reveals per physical page,
+repeat qualified notes, and number physical pages. The adapters receive only this plan, preserve its
+count and order, and serialize nonvisual trails into matching accessibility descriptions and
+generated continuation notes.
 
 **Owner.** `slide_lib/layout_engine.py`, `slide_lib/layout_model.py`, `slide_lib/odp_export.py`, and
 `slide_lib/pptx_export.py`.
@@ -649,7 +657,9 @@ nonvisual trails into matching accessibility descriptions and generated continua
 `ContinuationContext`. Select `INLINE_STATIC` when the required ancestor trail and its new authored
 descendant fit one physical page. Otherwise emit one immediately preceding static
 `CONTEXT_HANDOFF` page using `HANDOFF_STATIC`; use `METADATA_ONLY` only when the trail itself cannot
-fit. The descendant remains at its original level and must fit or fail source-locally.
+fit. The descendant remains at its original level. After a static handoff, redundant repeated H1
+may yield so the descendant can use the full 24 pt body; content that still cannot fit fails
+source-locally.
 
 **Why.** A requirement that every physical continuation page visibly contain both ancestry and new
 content fails for legitimate deep-list splits. Dropping context makes the detached descendant
@@ -729,15 +739,20 @@ different plan on a later run. Fragmenting a title to satisfy one local constrai
 source's semantic structure and recreate adapter-specific fallback behavior.
 
 **Consequence.** WP-L2 is accepted with 171 focused tests and a deterministic 99-page `lect02a`
-compile. The compiler uses 36 pt / 28 pt defaults with 30 pt / 24 pt floors, retains atomic leaf
-failure for content that truly cannot fit, and supports recursive inline, handoff, and metadata-only
-continuation context. Eligible overflowing grids co-pack their canonical source stream into
-one-panel pages with immutable provenance; unsupported facts and tables retain recursive parity.
-ODP and PPTX remain responsible only for projecting this completed `LayoutDeck`, so WP-O1 and WP-P1
-must validate adapter parity rather than remeasure or repaginate it.
+compile. The compiler uses 36 pt / 28 pt defaults with 30 pt / 24 pt ordinary floors, retains atomic
+leaf failure for content that truly cannot fit, and supports recursive inline, handoff, and
+metadata-only continuation context. The custom multiple-choice layout first tries its full visible
+question region at the ordinary floor, then separates context, stem, and choices into editable
+regions down to its 18 pt question floor. Choice splits and widths adapt to measured content, and a
+sized answer popup uses reserved space beneath the shorter column.
+Eligible overflowing grids co-pack their canonical source stream into one-panel pages with immutable
+provenance; unsupported facts and tables retain recursive parity. ODP and PPTX remain responsible
+only for projecting this completed `LayoutDeck`, so WP-O1 and WP-P1 must validate adapter parity
+rather than remeasure or repaginate it.
 
-**Owner.** `slide_lib/layout_engine.py`, `layout_measurement.py`, `layout_builders.py`; WP-O1,
-WP-P1, and WP-V2 consume and verify the plan.
+**Owner.** `slide_lib/layout_engine.py`, `layout_measurement.py`,
+`multiple_choice_layout.py`, and `layout_builders.py`; WP-O1, WP-P1, and WP-V2 consume and verify
+the plan.
 
 ### Imported evidence keeps relations adaptable
 
