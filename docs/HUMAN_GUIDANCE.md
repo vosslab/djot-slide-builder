@@ -116,7 +116,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
     objects, never slide screenshots.
 - These are requirements for the language choice, not approval for a particular grammar.
 - Regardless of the chosen source language, the repository will own the parser, native editable
-  PPTX/ODP builders, LibreOffice bridge, and validation. "Adopt a language" means adopt or adapt
+  PPTX/ODP builders, LibreOffice conversion boundary, and validation. "Adopt a language" means adopt or adapt
   its source grammar and semantics, never its runtime or presentation pipeline.
 - No surveyed presentation format is a direct-adoption target. The successor language is extended
   Djot; its implemented spatial grammar remains adaptable as new native owners gain evidence.
@@ -213,6 +213,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Prefer durable long-term fixes, accepting a small immediate cost to avoid larger maintenance costs.
 - Make adaptability a primary design goal so changing requirements and new evidence do not require
   repeated architectural rewrites.
+- Make the software robust: imperfect inputs, data, state, or behavior should preserve useful
+  operation through context-appropriate graceful recovery whenever possible.
+- Prefer clear boundaries, stable domain concepts, and replaceable components over speculative
+  edge-case machinery. Address concrete requirements and likely failure modes now.
 - Build on the repository's ambition, then turn the strongest version into practical, owned,
   verifiable work.
 - Treat this pre-production codebase as a place to keep only durable tests with meaningful behavior.
+- Keep test-only file inputs inline and create them under `tmp_path`; do not retain committed fixture
+  trees that conflict with the repository pytest policy.
+- Reserve leading-underscore filenames for temporary-only work. Permanent modules need descriptive
+  snake_case names without a leading underscore.
+- Finish LibreOffice layout synchronization through the user-visible build path and remove migration
+  scaffolding or drift instead of preserving unfinished compatibility code.

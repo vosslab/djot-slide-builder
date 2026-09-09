@@ -169,11 +169,12 @@ class RevealTarget:
 		slide_lib.layout_primitives.require_nonnegative_integer(self.activation_order, "reveal activation order")
 		for index in self.paragraph_indexes:
 			slide_lib.layout_primitives.require_nonnegative_integer(index, "reveal paragraph index")
-		if self.reveal.sequence is slide_lib.native_model.RevealSequence.OBJECT and self.paragraph_indexes:
-			raise ValueError("object reveals must not carry paragraph indexes")
-		if self.reveal.sequence is not slide_lib.native_model.RevealSequence.OBJECT and \
-				len(self.paragraph_indexes) != 1:
-			raise ValueError("paragraph reveals must target exactly one paragraph per activation")
+		if self.reveal.sequence is slide_lib.native_model.RevealSequence.PARAGRAPHS and \
+				not self.paragraph_indexes:
+			raise ValueError("paragraph reveals require an inclusive paragraph range")
+		if self.paragraph_indexes and self.paragraph_indexes != tuple(range(
+				self.paragraph_indexes[0], self.paragraph_indexes[-1] + 1)):
+			raise ValueError("paragraph reveal indexes must form one inclusive range")
 
 
 @dataclass(frozen=True)

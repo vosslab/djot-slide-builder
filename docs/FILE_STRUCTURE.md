@@ -23,12 +23,12 @@ Brewfile             declared macOS command-line and desktop dependencies
   LibreOffice conversion, and terminal reporting.
 - [../slide_lib/importers/](../slide_lib/importers/) contains the trusted existing-presentation
   import pipeline: ODP/PPTX readers, source records, geometry and topology analysis, slide
-  planning, native normalization, and Djot emission.
+  planning, native normalization, Djot emission, and lossless migration reports.
 - [../genetics/djot/](../genetics/djot/) contains the repository's Djot lecture sources and its
   local authoring README. A deck-local asset tree is created beside an imported deck when needed.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.
-  `presentation_theme.py` validates and reads it, `odp_theme.py` applies its real master to ODP,
-  and `pptx_theme.py` mirrors it for optional PPTX output.
+  `presentation_theme.py` validates and reads it; `odp_export.py`, `odp_text.py`, and
+  `pptx_export.py` project the compiled physical plan directly to sibling editable formats.
 - [../tests/](../tests/) holds permanent offline pytest coverage. The
   [../tests/e2e/](../tests/e2e/) subtree holds non-browser whole-system runners that pytest does
   not collect; [../tests/TESTS_README.md](../tests/TESTS_README.md) explains the test lanes.

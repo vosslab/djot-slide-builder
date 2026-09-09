@@ -23,6 +23,34 @@ class TextBlock:
 
 
 @dataclasses.dataclass(frozen=True)
+class PositionedText:
+	"""Raw positioned text evidence awaiting planner-owned normalization."""
+
+	paragraphs: tuple[tuple[int, tuple[TextRun, ...]], ...]
+	left: int
+	top: int
+	width: int
+	height: int
+	is_subtitle: bool
+	placeholder_confidence: float
+	title_identity: bool = False
+	source_kind: str = "text"
+	source_ordinal: int = 0
+	table_row: int | None = None
+	table_column: int | None = None
+	table_row_count: int = 0
+	table_column_count: int = 0
+	table_id: int | None = None
+	table_has_header: bool = False
+	table_unsupported_reason: str | None = None
+	rotation_degrees: float = 0.0
+	has_positive_fill: bool = False
+	has_positive_line: bool = False
+	placeholder_role: str | None = None
+	z_order: tuple[int, ...] = ()
+
+
+@dataclasses.dataclass(frozen=True)
 class ImageAsset:
 	"""One extracted content image and its source geometry."""
 
@@ -32,6 +60,21 @@ class ImageAsset:
 	height: int
 	asset_path: str
 	alt_text: str
+
+
+@dataclasses.dataclass(frozen=True)
+class PositionedVisual:
+	"""Raw positioned visual evidence awaiting planner-owned normalization."""
+
+	asset_reference: str
+	left: int
+	top: int
+	width: int
+	height: int
+	source_kind: str = "picture"
+	source_ordinal: int = 0
+	stroke_width: float | None = None
+	z_order: tuple[int, ...] = ()
 
 
 @dataclasses.dataclass(frozen=True)

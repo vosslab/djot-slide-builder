@@ -5,12 +5,16 @@ import dataclasses
 import pathlib
 import zipfile
 
+import defusedxml.ElementTree
 import pytest
 
+import slide_lib.djot_parser
+import slide_lib.layout_engine
 import slide_lib.layout_content as content
 import slide_lib.layout_model as model
 import slide_lib.layout_primitives as primitives
 import slide_lib.native_model
+import slide_lib.odp_animation
 import slide_lib.odf_package as package
 import slide_lib.odp_export as exporter
 import slide_lib.presentation_theme
@@ -86,6 +90,44 @@ def test_write_odp_replaces_content_and_preserves_reachable_template_resource(tm
 		assert archive.read("Pictures/theme.png") == b"theme image"
 		assert b'draw:name="slide-1"' in archive.read("content.xml")
 		package.validate_odp_members({info.filename: archive.read(info.filename) for info in members})
+
+
+def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathlib.Path) -> None:
+	"""Every native ODF timing step targets an emitted editable paragraph identity."""
+	source_path = tmp_path / "cascade.djot"
+	source_path.write_text("=== layout: one-panel\n\n@body\n\n=> cascade appear\n"
+		"- Parent\n\n  - Child\n- Second\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme)
+	output = exporter.write_odp(plan, theme, tmp_path / "cascade.odp")
+	with zipfile.ZipFile(output) as archive:
+		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+	target_attribute = f"{{{slide_lib.odp_animation.SMIL_NS}}}targetElement"
+	xml_id = "{http://www.w3.org/XML/1998/namespace}id"
+	targets = [element.attrib[target_attribute] for element in root.findall(
+		".//{urn:oasis:names:tc:opendocument:xmlns:animation:1.0}set")]
+	ids = {element.attrib[xml_id] for element in root.iter() if xml_id in element.attrib}
+	assert len(targets) == 2 and set(targets) <= ids
+
+
+def test_object_reveal_target_is_a_libreoffice_presentation_frame(tmp_path: pathlib.Path) -> None:
+	"""LibreOffice must retain the answer's layout membership and reveal identity."""
+	source_path = tmp_path / "multiple_choice.djot"
+	source_path.write_text("=== layout: multiple-choice\n\n@question\n\nQuestion?\n\n"
+		"@answer\n\nAnswer.\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme)
+	output = exporter.write_odp(plan, theme, tmp_path / "multiple_choice.odp")
+	with zipfile.ZipFile(output) as archive:
+		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+	target_attribute = f"{{{slide_lib.odp_animation.SMIL_NS}}}targetElement"
+	target = root.find(".//{urn:oasis:names:tc:opendocument:xmlns:animation:1.0}set").attrib[target_attribute]
+	xml_id = "{http://www.w3.org/XML/1998/namespace}id"
+	object_frame = next(item for item in root.iter() if item.attrib.get(xml_id) == target)
+	assert object_frame.tag == f"{{{exporter.DRAW_NS}}}frame" and \
+		object_frame.attrib[f"{{{exporter.PRESENTATION_NS}}}class"] == "object"
 
 
 def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:

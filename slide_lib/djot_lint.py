@@ -9,7 +9,8 @@ import sys
 
 # Local Modules
 import slide_lib.djot_parser
-import slide_lib.layouts
+import slide_lib.layout_engine
+import slide_lib.layout_validation
 import slide_lib.native_model
 
 
@@ -39,10 +40,13 @@ def image_problem(path: pathlib.Path, deck: slide_lib.native_model.Deck,
 	if candidate.is_absolute() or ".." in candidate.parts:
 		return LintProblem(path, image.location.line,
 			"image path must be a local relative path without traversal")
-	try:
-		slide_lib.layouts.resolve_image_path(deck, image)
-	except slide_lib.layouts.LayoutError as error:
-		return source_problem(path, error)
+	image_path = (deck.asset_root / image.source).resolve()
+	if not image_path.is_relative_to(deck.repo_root):
+		return LintProblem(path, image.location.line,
+			f"component image must be inside the repository: {image.source}")
+	if not image_path.is_file():
+		return LintProblem(path, image.location.line,
+			f"component image is missing: {image.source}")
 	return None
 
 
@@ -90,7 +94,8 @@ def lint_source(path: pathlib.Path) -> tuple[list[LintProblem], int, int]:
 	try:
 		deck = slide_lib.djot_parser.parse_deck(path)
 		for slide in deck.slides:
-			slide_lib.layouts.validate_layout_source(slide)
+			contract = slide_lib.layout_engine.layout_contract(slide.layout_class)
+			slide_lib.layout_validation.validate_layout_source(slide, contract)
 	except ValueError as error:
 		return [source_problem(path, error)], 0, 0
 	images: list[slide_lib.native_model.Image] = []

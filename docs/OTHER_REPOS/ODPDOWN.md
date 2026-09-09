@@ -5,7 +5,7 @@
 - Local metadata version: 0.5.1; module constant: 0.5.0
 - Content type: Direct Python Markdown-to-ODP renderer
 - License found: BSD-3-Clause
-- Recommendation: Future native-ODP prior art
+- Recommendation: Historical native-ODP prior art
 
 ## What it contains
 
@@ -16,8 +16,8 @@ styles, and renders formatted text and code. Relevant areas include `ODFRenderer
 
 ## Reuse assessment
 
-- Ideas: Template-owned master pages and direct ODP shape construction are directly relevant to a
-  future alternative to the flattening PPTX-to-LibreOffice bridge.
+- Ideas: Template-owned master pages and direct ODP shape construction informed the now-complete
+  repository-owned native ODP adapter.
 - Code and functions: BSD permits reuse with notice, but the implementation is a large older-style
   module built around another Markdown parser and an old Mistune constraint. It also permits
   network image loading.
@@ -26,6 +26,5 @@ styles, and renders formatted text and code. Relevant areas include `ODFRenderer
 
 ## Decision
 
-Do not fork or integrate Odpdown. If a native ODP output project is approved, study its odfdo
-object construction and master-page geometry while building a narrow repository-owned adapter from
-a defined format-neutral intermediate model.
+Do not fork or integrate Odpdown. Its odfdo object construction and master-page geometry remain
+historical comparison points for the narrower repository-owned adapter over `LayoutDeck`.

@@ -29,8 +29,9 @@ locate editable deliverables.
   remains visible in the generated source or import report; no rendered slide or composite source
   region is inserted as substitute content.
 - The asset directory includes `import_report.json`, which records source-slide visibility, selected
-  layouts, asset inventory, and review reasons. After review, maintain the Djot deck as the one
-  canonical source; imported presentations remain one-time migration evidence.
+  layouts, asset inventory, review reasons, presenter-note text, and lossless text/link/geometry
+  facts for normalized spatial regions. After review, maintain the Djot deck as the one canonical
+  source; imported presentations remain one-time migration evidence.
 
 ## Build products
 
@@ -41,9 +42,9 @@ projection of the same title, gradient, and list rules. CSS and browser renderin
 | Requested format | File written | Meaning |
 | --- | --- | --- |
 | `pptx` | `output/pptx/<deck-name>.pptx` | Editable PowerPoint presentation generated from Djot. |
-| `odp` | `output/pptx/<deck-name>.pptx`, then `output/odp/<deck-name>.odp` | Editable LibreOffice Impress presentation using the OTP master. |
-| `pdf` | `output/pptx/<deck-name>.pptx`, `output/odp/<deck-name>.odp`, then `output/pdf/<deck-name>.pdf` | PDF derived from the themed editable ODP. |
-| `all` | All three paths above | Default build sequence. |
+| `odp` | `output/odp/<deck-name>.odp` | Native editable LibreOffice Impress presentation using the OTP master. |
+| `pdf` | `output/odp/<deck-name>.odp`, then `output/pdf/<deck-name>.pdf` | PDF derived from the native editable ODP. |
+| `all` | All three output paths | Sibling PPTX/ODP projection followed by ODP-derived PDF. |
 
 The deck filename stem supplies each output filename. A PDF is a distribution and review artifact;
 edit the PPTX or ODP rather than treating the PDF as source. Build and format-selection commands are

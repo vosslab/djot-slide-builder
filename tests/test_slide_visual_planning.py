@@ -46,20 +46,23 @@ def image(left: float, top: float, right: float, bottom: float, *, kind: str = "
 	)
 
 
-def test_source_text_inventory_preserves_canonical_shape_rotation() -> None:
+def test_planner_preserves_canonical_source_shape_rotation() -> None:
 	"""Rotation remains normalized source evidence without affecting text extraction."""
 	presentation = Presentation()
 	slide = presentation.slides.add_slide(presentation.slide_layouts[5])
 	shape = slide.shapes.add_textbox(Inches(1), Inches(1), Inches(2), Inches(1))
 	shape.text = "Rotated label"
 	shape.rotation = 315
-	regions = pptx_reader.source_text_regions(slide, presentation.slide_width, presentation.slide_height)
+	regions = slide_plan.text_regions(
+		pptx_reader.positioned_text_shapes(slide),
+		presentation.slide_width, presentation.slide_height,
+	)
 
 	assert len(regions) == 1
 	assert regions[0].rotation_degrees == -45.0
 
 
-def test_source_visual_regions_preserve_top_level_and_group_z_paths() -> None:
+def test_planner_preserves_top_level_and_group_visual_order() -> None:
 	"""Visual source paths retain both top-level and grouped stack positions."""
 	picture = lambda shape_id: types.SimpleNamespace(shape_type=MSO_SHAPE_TYPE.PICTURE, shape_id=shape_id,
 		left=0, top=0, width=10, height=10)
@@ -67,7 +70,7 @@ def test_source_visual_regions_preserve_top_level_and_group_z_paths() -> None:
 		shape_type=MSO_SHAPE_TYPE.GROUP, shapes=(picture(2),),
 	)))
 
-	regions = pptx_reader.source_visual_regions(slide, 100, 100)
+	regions = slide_plan.visual_regions(pptx_reader.positioned_visual_shapes(slide), 100, 100)
 
 	assert tuple(region.z_order for region in regions) == ((0,), (1, 0))
 
@@ -99,7 +102,10 @@ def test_source_inventory_retains_only_visible_degenerate_connector_metadata() -
 	slide.shapes.add_connector(
 		MSO_CONNECTOR.STRAIGHT, Inches(1), Inches(3), Inches(5), Inches(3),
 	)
-	regions = pptx_reader.source_visual_regions(slide, presentation.slide_width, presentation.slide_height)
+	regions = slide_plan.visual_regions(
+		pptx_reader.positioned_visual_shapes(slide),
+		presentation.slide_width, presentation.slide_height,
+	)
 
 	assert len(regions) == 1 and regions[0].source_kind == "connector" and regions[0].source_line is not None \
 		and regions[0].bounds.height > 0 and regions[0].source_line.endpoints.top == regions[0].source_line.endpoints.bottom
@@ -121,7 +127,7 @@ def test_source_inventory_rejects_unstroked_degenerate_connector() -> None:
 		), shape_id=61, left=10, top=10, width=0, height=40,
 	)
 
-	assert not pptx_reader.source_visual_inventory(shape, 100, 100)
+	assert not pptx_reader.positioned_visual_inventory(shape)
 
 
 def test_degenerate_connector_normalization_rejects_point_geometry() -> None:

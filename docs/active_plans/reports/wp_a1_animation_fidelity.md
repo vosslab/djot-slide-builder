@@ -8,8 +8,8 @@ was not a project requirement.
 
 ## Current contract
 
-LibreOffice Impress and ODP are the editing and playback contract. PPTX is a convenient native
-builder and interchange artifact because Python support is stronger than ODP support. Microsoft
+LibreOffice Impress and ODP are the editing and playback contract. ODF/SMIL and OOXML are written
+independently from one physical plan; PPTX is an optional interchange artifact. Microsoft
 PowerPoint is neither a compatibility oracle nor an acceptance gate.
 
 WP-A1 establishes the smallest useful evidence for the supported animation surface:
@@ -19,16 +19,16 @@ WP-A1 establishes the smallest useful evidence for the supported animation surfa
 - `on-click` trigger;
 - a top-level list item and its descendants for a paragraph sequence.
 
-Use official OOXML documentation and LibreOffice importer/exporter behavior to guide the builder.
-`slide_lib/pptx_animation.py` is the sole programmatic OOXML owner. It builds the required
-timing tree directly; no runtime XML templates or PowerPoint-authored reference decks are needed.
+Use ODF/SMIL, official OOXML documentation, and LibreOffice behavior to guide the adapters.
+`slide_lib/odp_animation.py` and `slide_lib/pptx_animation.py` own their respective timing trees;
+no runtime XML templates or PowerPoint-authored reference decks are needed.
 
 ## Historical evidence retained
 
 The 2026-09-06 check found no PowerPoint app in the bounded macOS paths. LibreOffice 26.2.5.2 is
 installed. A direct UNO Python route was killed after its local dependency/process route proved
-unsuitable for this task; the existing headless LibreOffice bridge works. The command evidence is
-retained in [ENVIRONMENT.md](../../../devel/animation_reference/ENVIRONMENT.md).
+unsuitable for this task; the established headless LibreOffice conversion boundary works. The
+command evidence is retained in [ENVIRONMENT.md](../../../devel/animation_reference/ENVIRONMENT.md).
 
 ## Acceptance evidence
 
@@ -53,8 +53,8 @@ offline structural checks of the builder's supported semantic model.
 
 ## Recorded implementation evidence
 
-The permanence-audited suite contains 1,635 tests, including the four focused structural M5 tests.
-The Djot native-layout PPTX-to-ODP-to-PDF E2E also passed as separate one-time evidence. A direct-IR
+The permanent suite includes focused structural M5 tests. The Djot native-layout sibling-export,
+ODP open/save, and ODP-to-PDF E2E also passed as separate whole-system evidence. A direct-IR
 FADE fixture used a one-second OOXML duration and LibreOffice retained it as a one-second ODP fade
 transition.
 

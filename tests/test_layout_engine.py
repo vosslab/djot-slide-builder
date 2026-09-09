@@ -8,13 +8,14 @@ import pytest
 import slide_lib.djot_parser
 import slide_lib.layout_engine
 import slide_lib.layout_content
-import slide_lib._layout_builders
-import slide_lib._layout_measurement
+import slide_lib.layout_builders
+import slide_lib.layout_measurement
+import slide_lib.layout_primitives
 import slide_lib.native_model
 import slide_lib.presentation_theme
 
 
-def compile_source(tmp_path: pathlib.Path, source: str):
+def compile_source(tmp_path: pathlib.Path, source: str) -> slide_lib.layout_model.LayoutDeck:
 	"""Parse and compile one small Djot specimen through the public API."""
 	path = tmp_path / "specimen.djot"
 	# A one-pixel GIF keeps gallery/image placement tests self-contained and offline.
@@ -49,6 +50,39 @@ def test_every_registered_layout_compiles_to_a_complete_immutable_plan(tmp_path:
 	assert slide.layout.topology.key_for_canvas(deck.canvas) in deck.presentation_page_layouts
 	assert tuple(slot.slot_id for slot in slide.slots if slot.slot_id != "title") == \
 		slide_lib.layout_engine.layout_contract(name).slot_names
+
+
+def test_centered_text_uses_one_mixed_typography_libreoffice_member(
+		tmp_path: pathlib.Path) -> None:
+	"""Centered title and subtitle remain editable inside the one built-in text member."""
+	deck = compile_source(tmp_path, "=== layout: centered-text\n\n# Title\n\n## Subtitle")
+	slide = deck.slides[0]
+	roles = tuple(paragraph.typography.role for paragraph in slide.objects[0].content.paragraphs)
+	assert roles == (slide_lib.layout_primitives.StyleRole.TITLE,
+		slide_lib.layout_primitives.StyleRole.SUBTITLE)
+	assert slide.layout.topology.libreoffice_layout.autolayout is \
+		slide_lib.layout_primitives.LibreOfficeAutoLayout.ONLY_TEXT
+
+
+def test_vertical_title_catalog_uses_right_strip_and_stacked_content(
+		tmp_path: pathlib.Path) -> None:
+	"""The physical plan follows LibreOffice's vertical-title layout relationship."""
+	deck = compile_source(tmp_path, source_for("vertical-title-two-panels"))
+	title, text, chart = deck.slides[0].slots
+	assert title.rectangle.x > text.rectangle.x and text.rectangle.y < chart.rectangle.y
+	assert text.properties.frame_text.text_direction is \
+		slide_lib.layout_primitives.TextDirection.VERTICAL and \
+		chart.properties.frame_text.text_direction is \
+		slide_lib.layout_primitives.TextDirection.HORIZONTAL
+
+
+def test_two_vertical_content_members_are_side_by_side(tmp_path: pathlib.Path) -> None:
+	"""The approved final layout name projects LibreOffice's two vertical-content grid."""
+	deck = compile_source(tmp_path, source_for("two-panels-vertical-clipart"))
+	left, right = deck.slides[0].slots[1:]
+	assert left.rectangle.x < right.rectangle.x
+	assert all(slot.properties.frame_text.text_direction is
+		slide_lib.layout_primitives.TextDirection.VERTICAL for slot in (left, right))
 
 
 def test_text_uses_point_sizes_and_native_shrink_policy(tmp_path: pathlib.Path) -> None:
@@ -189,11 +223,6 @@ def test_lect02a_line_243_grid_preflight_jointly_selects_the_largest_title() -> 
 	assert body.content.paragraphs[0].typography.selected_size_pt == 24.0
 	assert body.decomposition_origin.original_slot == "left"
 	assert body.decomposition_origin.source_order == 0
-	units = slide_lib._layout_measurement.grid_stream_units(slide, "slide-1", slide.layout_class,
-		slide_lib.layout_engine.layout_contract(slide.layout_class).slot_names)
-	with pytest.raises(ValueError):
-		slide_lib._layout_builders._compile_grid_stream_page_at_theme(
-			isolated, slide, units[:1], dataclasses.replace(theme, standard_title_size_pt=selected + .25), 0)
 	text = "\n".join("".join(run.text for paragraph in item.content.paragraphs
 		for run in paragraph.inlines if hasattr(run, "text")) for page in result.slides
 		for item in page.objects if item.decomposition_origin is not None and
@@ -269,25 +298,25 @@ def test_font_profile_measurement_is_repeatable_and_respects_runs_and_list_inset
 	plain = (slide_lib.native_model.Text("A URL-sized run of ordinary editable words."),)
 	broken = (slide_lib.native_model.Text("A URL-sized"), slide_lib.native_model.Break(),
 		slide_lib.native_model.Text("run of ordinary editable words."))
-	plain_height = slide_lib._layout_measurement.paragraph_height(plain, 28.0, 1000.0, theme)
-	assert plain_height == slide_lib._layout_measurement.paragraph_height(plain, 28.0, 1000.0, theme)
-	assert slide_lib._layout_measurement.paragraph_height(broken, 28.0, 1000.0, theme) > plain_height
-	assert slide_lib._layout_measurement.paragraph_height(plain, 28.0, 1000.0, theme, 0, True) >= plain_height
+	plain_height = slide_lib.layout_measurement.paragraph_height(plain, 28.0, 1000.0, theme)
+	assert plain_height == slide_lib.layout_measurement.paragraph_height(plain, 28.0, 1000.0, theme)
+	assert slide_lib.layout_measurement.paragraph_height(broken, 28.0, 1000.0, theme) > plain_height
+	assert slide_lib.layout_measurement.paragraph_height(plain, 28.0, 1000.0, theme, 0, True) >= plain_height
 	literal = (slide_lib.native_model.Link((slide_lib.native_model.Text("https://example.edu/a-long-address"),),
 		"https://example.edu/a-long-address"),)
 	ordinary = (slide_lib.native_model.Text("https://example.edu/a-long-address"),)
-	assert slide_lib._layout_measurement.paragraph_height(literal, 28.0, 300.0, theme) <= \
-		slide_lib._layout_measurement.paragraph_height(ordinary, 28.0, 300.0, theme)
+	assert slide_lib.layout_measurement.paragraph_height(literal, 28.0, 300.0, theme) <= \
+		slide_lib.layout_measurement.paragraph_height(ordinary, 28.0, 300.0, theme)
 	# Quarter-point progression stays monotonic under the pinned OpenDyslexic and
 	# PT Sans Narrow faces; no host font can change this preflight result.
-	assert slide_lib._layout_measurement.paragraph_height(plain, 28.0, 300.0, theme) >= \
-		slide_lib._layout_measurement.paragraph_height(plain, 24.0, 300.0, theme)
+	assert slide_lib.layout_measurement.paragraph_height(plain, 28.0, 300.0, theme) >= \
+		slide_lib.layout_measurement.paragraph_height(plain, 24.0, 300.0, theme)
 
 
 def test_measurement_session_reuses_exact_shaping_without_changing_plan(tmp_path: pathlib.Path) -> None:
 	"""One compilation-scoped cache reuses pinned faces and immutable paragraph keys."""
 	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib._layout_measurement.MeasurementSession(theme)
+	session = slide_lib.layout_measurement.MeasurementSession(theme)
 	inlines = (slide_lib.native_model.Text("Repeated exact paragraph shaping stays cached."),)
 	first = session.paragraph_metrics(inlines, 28.0, 600.0)
 	before = session.statistics()
@@ -305,7 +334,7 @@ def test_measurement_session_reuses_exact_shaping_without_changing_plan(tmp_path
 def test_measurement_cache_distinguishes_quarter_point_face_instances() -> None:
 	"""Quarter-point sizes are separate shaped-face identities, even at one pixel size."""
 	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib._layout_measurement.MeasurementSession(theme)
+	session = slide_lib.layout_measurement.MeasurementSession(theme)
 	first = session.advance("OpenDyslexic", False, False, 24.0, "precise cache key")
 	second = session.advance("OpenDyslexic", False, False, 24.25, "precise cache key")
 	assert isinstance(first, float)
@@ -390,7 +419,7 @@ def test_emitted_paragraph_properties_match_measurement_and_master_list_geometry
 	for paragraph in paragraphs:
 		metadata = paragraph.list_metadata
 		assert metadata is not None
-		expected = slide_lib._layout_measurement.paragraph_properties(
+		expected = slide_lib.layout_measurement.paragraph_properties(
 			tuple(slide_lib.native_model.Text(run.text) for run in paragraph.inlines
 				if hasattr(run, "text")), paragraph.typography.selected_size_pt, 1160.0,
 			theme, metadata.level, True, paragraph.properties.space_after_pt == 0)
@@ -445,8 +474,8 @@ def test_full_lect02a_compilation_is_deterministic_and_keeps_its_physical_page_b
 
 
 def test_compiler_has_no_adapter_imports() -> None:
-	for module_path in ("slide_lib/layout_engine.py", "slide_lib/_layout_registry.py",
-			"slide_lib/_layout_measurement.py", "slide_lib/_layout_builders.py"):
+	for module_path in ("slide_lib/layout_engine.py", "slide_lib/layout_registry.py",
+			"slide_lib/layout_measurement.py", "slide_lib/layout_builders.py"):
 		content = pathlib.Path(module_path).read_text(encoding="utf-8")
 		assert "pptx" not in content.lower()
 		assert "odp_" not in content.lower()

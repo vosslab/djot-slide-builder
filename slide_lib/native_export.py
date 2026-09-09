@@ -7,17 +7,15 @@ import subprocess
 import tempfile
 import collections.abc
 
-# PIP3 modules
-from pptx import Presentation
-from pptx.enum.text import PP_ALIGN
-
 # Local Modules
-from slide_lib import layouts
-from slide_lib import libreoffice
-from slide_lib import djot_parser
-from slide_lib import odp_theme
-from slide_lib import pptx_animation
+import slide_lib.djot_parser
+import slide_lib.layout_engine
+import slide_lib.layout_model
+import slide_lib.libreoffice
 import slide_lib.native_model
+import slide_lib.odp_export
+import slide_lib.pptx_export
+import slide_lib.presentation_theme
 
 
 SUPPORTED_SUFFIX = ".djot"
@@ -74,33 +72,24 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 	"""Parse one validated Djot source deck through its typed semantic parser."""
 	if input_path.suffix != SUPPORTED_SUFFIX:
 		raise PresentationInputError(f"input must use the .djot extension: {input_path}")
-	return djot_parser.parse_deck(input_path)
+	return slide_lib.djot_parser.parse_deck(input_path)
 
 
 #============================================
-def render_native_pptx(deck: slide_lib.native_model.Deck, output_path: pathlib.Path,
-		include_theme_background: bool = True) -> pathlib.Path:
-	"""Write every parsed slide as separate editable native PPTX objects."""
-	presentation = Presentation()
-	presentation.slide_width = layouts.px(layouts.SLIDE_WIDTH)
-	presentation.slide_height = layouts.px(layouts.SLIDE_HEIGHT)
-	presentation.core_properties.title = deck.title
-	blank_layout = presentation.slide_layouts[6]
-	for number, source in enumerate(deck.slides, start=1):
-		slide = presentation.slides.add_slide(blank_layout)
-		writer = pptx_animation.PptxAnimationWriter(slide)
-		layouts.render_layout(slide, source, deck, writer,
-			include_theme_background=include_theme_background)
-		if source.paginate:
-			text_frame = layouts.add_textbox(slide, 1190, 762, 62, 22)
-			text_frame.paragraphs[0].alignment = PP_ALIGN.RIGHT
-			layouts.write_run(text_frame.paragraphs[0].add_run(), str(number), 18, layouts.MUTED)
-		if source.notes:
-			slide.notes_slide.notes_text_frame.text = "\n\n".join(source.notes)
-		writer.finalize()
-	output_path.parent.mkdir(parents=True, exist_ok=True)
-	presentation.save(output_path)
-	return output_path
+def compile_deck(deck: slide_lib.native_model.Deck) -> tuple[slide_lib.layout_model.LayoutDeck,
+		slide_lib.presentation_theme.PresentationTheme]:
+	"""Compile one semantic deck once against the authoritative OTP theme."""
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(deck, theme)
+	return plan, theme
+
+
+#============================================
+def render_native_pptx(deck: slide_lib.native_model.Deck,
+		output_path: pathlib.Path) -> pathlib.Path:
+	"""Compile and write one editable PPTX without using an ODF intermediary."""
+	plan, theme = compile_deck(deck)
+	return slide_lib.pptx_export.write_pptx(plan, theme, output_path)
 
 
 #============================================
@@ -114,24 +103,17 @@ def convert_presentation(input_path: pathlib.Path, output_path: pathlib.Path,
 		temporary_root = pathlib.Path(temporary_value)
 		conversion_path = temporary_root / "converted"
 		conversion_path.mkdir()
-		converted_path = libreoffice.convert_file(input_path, conversion_path, output_format)
+		converted_path = slide_lib.libreoffice.convert_file(
+			input_path, conversion_path, output_format)
 		os.replace(converted_path, output_path)
 
 
 #============================================
-def render_template_odp(deck: slide_lib.native_model.Deck, output_path: pathlib.Path,
-		repo_root: pathlib.Path) -> pathlib.Path:
-	"""Render editable slide objects beneath the authoritative ODP template master."""
-	output_root = repo_root / "output"
-	output_root.mkdir(parents=True, exist_ok=True)
-	with tempfile.TemporaryDirectory(prefix=".template_odp.", dir=output_root) as temporary_value:
-		temporary_root = pathlib.Path(temporary_value)
-		content_pptx = temporary_root / "content.pptx"
-		converted_odp = temporary_root / "content.odp"
-		render_native_pptx(deck, content_pptx, include_theme_background=False)
-		convert_presentation(content_pptx, converted_odp, "odp", repo_root)
-		odp_theme.apply_template_master(converted_odp, output_path)
-	return output_path
+def render_native_odp(deck: slide_lib.native_model.Deck,
+		output_path: pathlib.Path) -> pathlib.Path:
+	"""Compile and write one editable native ODP without constructing PPTX."""
+	plan, theme = compile_deck(deck)
+	return slide_lib.odp_export.write_odp(plan, theme, output_path)
 
 
 #============================================
@@ -145,7 +127,7 @@ def report_progress(progress_callback: collections.abc.Callable[[str], None] | N
 #============================================
 def export_deck(input_value: str, output_format: str,
 		progress_callback: collections.abc.Callable[[str], None] | None = None) -> dict[str, pathlib.Path]:
-	"""Export PPTX, then editable ODP, then PDF from that ODP when requested."""
+	"""Compile once, write requested sibling artifacts, and derive PDF from ODP."""
 	if output_format not in ("all", "odp", "pdf", "pptx"):
 		raise ValueError(f"unsupported output format: {output_format}")
 	repo_root = find_repo_root()
@@ -156,12 +138,14 @@ def export_deck(input_value: str, output_format: str,
 		"pdf": repo_root / f"output/pdf/{deck_name}.pdf"}
 	report_progress(progress_callback, "parsing")
 	deck = parse_deck(input_path)
-	report_progress(progress_callback, "pptx")
-	generated = {"pptx": render_native_pptx(deck, outputs["pptx"])}
+	plan, theme = compile_deck(deck)
+	generated: dict[str, pathlib.Path] = {}
+	if output_format in ("all", "pptx"):
+		report_progress(progress_callback, "pptx")
+		generated["pptx"] = slide_lib.pptx_export.write_pptx(plan, theme, outputs["pptx"])
 	if output_format in ("all", "odp", "pdf"):
 		report_progress(progress_callback, "odp")
-		render_template_odp(deck, outputs["odp"], repo_root)
-		generated["odp"] = outputs["odp"]
+		generated["odp"] = slide_lib.odp_export.write_odp(plan, theme, outputs["odp"])
 	if output_format in ("all", "pdf"):
 		report_progress(progress_callback, "pdf")
 		convert_presentation(outputs["odp"], outputs["pdf"], "pdf", repo_root)

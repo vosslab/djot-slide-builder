@@ -4,15 +4,18 @@ import ast
 import pathlib
 import zipfile
 
+import defusedxml.ElementTree
 from pptx import Presentation
 
 import slide_lib.djot_parser
 import slide_lib.layout_engine
+import slide_lib.layout_model
 import slide_lib.pptx_export
 import slide_lib.presentation_theme
 
 
-def _compile(tmp_path: pathlib.Path, source: str):
+def _compile(tmp_path: pathlib.Path, source: str) -> tuple[slide_lib.layout_model.LayoutDeck,
+		slide_lib.presentation_theme.PresentationTheme]:
 	path = tmp_path / "deck.djot"
 	path.write_text(source, encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme()
@@ -30,8 +33,8 @@ def test_adapter_imports_only_plan_and_theme_layers() -> None:
 	path = pathlib.Path("slide_lib/pptx_export.py")
 	imports = {node.names[0].name for node in ast.walk(ast.parse(path.read_text(encoding="utf-8")))
 		if isinstance(node, ast.Import) and node.names[0].name.startswith("slide_lib")}
-	assert not imports & {"slide_lib.layout_engine", "slide_lib._layout_builders",
-		"slide_lib._layout_measurement", "slide_lib._layout_registry", "slide_lib.layouts",
+	assert not imports & {"slide_lib.layout_engine", "slide_lib.layout_builders",
+		"slide_lib.layout_measurement", "slide_lib.layout_registry",
 		"slide_lib.native_model", "slide_lib.odp_export", "slide_lib.odf_package"}
 
 
@@ -77,8 +80,11 @@ def test_plan_reveal_targets_and_notes_keep_source_order(tmp_path: pathlib.Path)
 	slide_lib.pptx_export.write_pptx(deck, theme, output)
 	expected = sum(len(item.reveal_targets) for item in deck.slides[0].objects)
 	with zipfile.ZipFile(output) as archive:
-		xml = archive.read("ppt/slides/slide1.xml").decode("utf-8")
-	assert xml.count("spTgt") == expected and "tmRoot" in xml and "mainSeq" in xml
+		xml = archive.read("ppt/slides/slide1.xml")
+	root = defusedxml.ElementTree.fromstring(xml)
+	namespace = {"p": "http://schemas.openxmlformats.org/presentationml/2006/main"}
+	assert len(root.findall(".//p:spTgt", namespace)) == expected
+	assert b"tmRoot" in xml and b"mainSeq" in xml
 
 
 def test_write_pptx_replaces_destination_atomically(tmp_path: pathlib.Path) -> None:

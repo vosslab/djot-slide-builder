@@ -133,8 +133,9 @@ slots:
 
 `@question` and `@answer` are each required once. The answer has one implicit object reveal, so
 `<= appear` and `=> appear` are invalid on its content. Implementation, structural tests, headless
-PPTX-to-ODP package evidence, and PDF final-state export have passed; attended click playback in
-LibreOffice Impress remains the sole open visual gate. Open-ended questions use another layout.
+native ODP package and headless open/save evidence, and PDF final-state export have passed; attended
+click playback in LibreOffice Impress remains the sole open visual gate. Open-ended questions use
+another layout.
 
 Examples:
 
@@ -237,7 +238,7 @@ fences. Djot permits multiline attributes; that capability is outside the curren
 1. Pin the remaining formatter/editor-rule lanes of the strict-Djot suite.
 2. Record attended LibreOffice Impress click playback in
    [wp_a1_animation_fidelity.md](../reports/wp_a1_animation_fidelity.md). This is the sole remaining
-   animation acceptance gate; implementation, structural tests, headless PPTX-to-ODP package
+   animation acceptance gate; implementation, structural tests, native ODP package/open-save
    inspection, and PDF final-state export have passed.
 3. Keep future native mappings behind a focused source diagnostic, editable-object design, and
    acceptance evidence.

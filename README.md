@@ -14,9 +14,9 @@ raster stage.
 canonical extended-Djot source
   -> repository-owned Djot parser
   -> typed native slide-object model
-  -> slide_lib.layouts native layout builders and shared OTP theme
-  -> editable PPTX interchange artifact
-  -> editable ODP with the authoritative OTP master -> ODP-derived PDF
+  -> one format-neutral compiled LayoutDeck and shared OTP theme
+  -> native editable ODP -> LibreOffice PDF
+  -> optional sibling editable PPTX
 ```
 
 The 16:10 master-slide theme is `genetics/xlect99-template_2023.otp`. ODP and PDF are the

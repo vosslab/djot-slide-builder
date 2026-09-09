@@ -203,9 +203,9 @@ pagination to cohesive private helpers. Ownership flows from `layout_primitives.
 content owns immutable editable-content records, and the model composes the complete physical plan.
 In import direction, `layout_content` imports `layout_primitives`, and `layout_model` imports both;
 `native_model` remains independent source-semantic authority and is imported only by the
-compiler-side translation modules. `_layout_registry.py` is declarative catalog data;
-`_layout_measurement.py` owns pure measurement/preflight/pagination/local-heading work; and
-`_layout_builders.py` turns resolved facts into planned objects without recomputing them. Typography
+compiler-side translation modules. `layout_registry.py` is declarative catalog data;
+`layout_measurement.py` owns pure measurement/preflight/pagination/local-heading work; and
+`layout_builders.py` turns resolved facts into planned objects without recomputing them. Typography
 uses points in the shared plan.
 Output adapters contain no layout allocation, fit-selection, or layout-registry logic, and source
 styling does not determine output geometry.
@@ -215,22 +215,31 @@ styling does not determine output geometry.
 
 ### Layout topology has canonical identity
 
-**Decision.** Model a semantic `PlaceholderKind` and member kind for every planned presentation
+**Decision.** Model a semantic `PlaceholderKind` and member kind for every occupied presentation
 member. Key each ODF presentation-page layout with a canonical `PresentationPageLayoutKey` containing
-the declared layout identity, canvas, and ordered placeholder IDs, kinds, roles, and geometry. The
-key excludes authored content.
+the declared layout identity, canvas, ordered member IDs, kinds, roles, and geometry, plus a separate
+LibreOffice `AutoLayout` classifier signature for each standard layout. The key excludes authored
+content.
 
 **Why.** Layout identity is structural. A title text change must not create a different page layout,
 while a placeholder-geometry change must not silently reuse one. XML layout names are opaque,
-document-local serialization details and cannot serve as the identity.
+document-local serialization details and cannot serve as the identity. LibreOffice's ODF importer
+infers some layouts from classifier-only `object` or `graphic` tokens even though the editable slide
+members remain outline frames, so frame roles cannot double as the classifier.
 
-**Consequence.** The compiler makes topology explicit before either adapter runs. The ODP adapter
-deduplicates page layouts only by this key, then assigns arbitrary stable ODP names and compares
-resolved topology in validation. Authored text, media, notes, and decorations remain members of a
-planned slide rather than inputs to page-layout identity.
+**Consequence.** The compiler makes occupied topology and LibreOffice inference explicit before
+either adapter runs. The ODP adapter deduplicates page layouts only by this key, assigns arbitrary
+stable ODP names, writes classifier placeholders to `styles.xml`, and writes actual occupied member
+roles to `content.xml`. The sixteen standard contracts map one-to-one to the current LibreOffice
+catalog; `gallery` and `multiple-choice` remain repository layouts without a claimed built-in
+`AutoLayout` identity. Authored text, media, notes, and decorations remain members of a planned
+slide rather than inputs to page-layout identity. LibreOffice saves a completely empty blank page
+with its title-slide layout reference; preserve the empty page instead of inserting hidden content
+to coerce the saved label.
 
-**Owner.** `slide_lib/layout_model.py`, `slide_lib/layout_engine.py`,
-`slide_lib/odp_export.py`, and `tests/test_layout_model.py`.
+**Owner.** `slide_lib/layout_primitives.py`, `slide_lib/layout_registry.py`,
+`slide_lib/layout_model.py`, `slide_lib/odp_export.py`, and
+`tests/e2e/e2e_djot_native_layouts.py`.
 
 ### Djot uses visible layout and slot directives
 
@@ -247,21 +256,19 @@ The layout registry supplies the allowed visible layout and slot vocabulary.
 
 ### ODP-derived PDF is the only PDF path
 
-**Decision.** The approved successor pipeline will generate editable ODP directly from the
-format-neutral layout plan and authoritative OTP, then have LibreOffice create PDF from that ODP.
-It will publish optional PPTX independently from the same plan. This is a migration decision, not
-a claim that the checked-out implementation has completed WP-I1.
+**Decision.** Generate editable ODP directly from the format-neutral layout plan and authoritative
+OTP, then have LibreOffice create PDF from that ODP. Publish optional PPTX independently from the
+same compiled plan.
 
 **Why.** One ordered ODP-to-PDF pathway makes the distributed PDF represent the editable classroom
 artifact. The former blank-layout PPTX intermediate caused LibreOffice to import generated text as
 custom OOXML rectangle shapes rather than layout-owned presentation frames; replacing its master and
 styles afterward could not restore discarded layout identity.
 
-**Consequence.** After WP-I1, ODP and PDF builds never create or read PPTX. `--format all` will build
-ODP and PPTX as sibling artifacts, then export PDF from ODP. The ODP writer will emit native
-page-layout references and title, subtitle, outline, and object presentation frames. Until then,
-the documented current pipeline remains the PPTX-to-ODP bridge described in `PIPELINE.md`. PDF review
-rendering remains evidence only and never becomes slide content.
+**Consequence.** ODP and PDF builds never create or read PPTX. `--format all` builds ODP and PPTX as
+sibling artifacts, then exports PDF from ODP. The ODP writer emits native page-layout references and
+title, subtitle, outline, and object presentation frames. PDF review rendering remains evidence only
+and never becomes slide content.
 
 **Owner.** `slide_lib/odp_export.py`, `slide_lib/native_export.py`, `build_slides.sh`, and
 `tests/e2e/e2e_djot_native_layouts.py`.
@@ -333,8 +340,8 @@ renders may support QA but never enter canonical Djot or output.
 **Decision.** Use `genetics/xlect99-template_2023.otp` as the sole master-slide theme authority.
 Load its 16:10 page ratio, native top gradient, presentation-frame geometry, typography, and
 outline-level bullet geometry into a format-neutral theme model. Standard titles begin at 36 pt and
-ordinary body/list text begins at 28 pt. After WP-I1, direct ODP will inherit the template's native
-styles; optional PPTX will mirror the same model.
+ordinary body/list text begins at 28 pt. Direct ODP inherits the template's native styles; optional
+PPTX mirrors the same model.
 
 **Why.** The legacy lecture decks establish useful common visual rules, but reproducing their
 individual quirks would weaken the consistent authoring system. Explicit presentation semantics let
@@ -352,7 +359,7 @@ point-valued and never passes through the logical-geometry conversion. Build pre
 small font-metric differences. CSS and browser rendering are not part of the build.
 
 **Owner.** `genetics/xlect99-template_2023.otp`, `slide_lib/presentation_theme.py`,
-`slide_lib/layout_engine.py`, `slide_lib/odp_export.py`, `slide_lib/pptx_theme.py`, and their
+`slide_lib/layout_engine.py`, `slide_lib/odp_export.py`, `slide_lib/pptx_export.py`, and their
 native-export tests.
 
 ### Font metrics are versioned theme inputs, not host behavior
@@ -396,8 +403,31 @@ reachable through masters or styles remain valid even without a slide-object ref
 inspect XML/package invariants only. Serialized headless LibreOffice preservation is a separate E2E
 and review gate.
 
-**Owner.** `slide_lib/odf_package.py`, `slide_lib/odp_export.py`,
+**Owner.** `slide_lib/odf_package.py`, `slide_lib/odp_export.py`, `slide_lib/odp_text.py`,
 `tests/test_odp_export.py`, and `tests/e2e/e2e_djot_native_layouts.py`.
+
+### Native acceptance uses evidence tiers
+
+**Decision.** Keep deterministic, offline behavior contracts in permanent pytest. Keep one
+source-built native-layout runner under `tests/e2e/` for the real PPTX/ODP/PDF and LibreOffice
+round-trip boundary. Treat full-corpus builds, production-deck inspection, visual comparisons, and
+rebuild inventories as one-time acceptance evidence that may be removed after the decision they
+support. Retain ignored diagnostic artifacts only when the durable E2E fails.
+
+**Why.** The external application boundary needs periodic real evidence, but snapshot-specific
+source lines, exact rendered-ink percentages, screenshot inventories, and permanent proof bundles
+do not provide stable behavior contracts. Keeping them would turn a completed rebuild into a
+fragile maintenance obligation.
+
+**Consequence.** The archived WP-V2 proposal for a retained acceptance directory, a dedicated
+acceptance report, and fixed 144-DPI geometry thresholds is superseded. Migration acceptance rests
+on the fixture-free 18-layout E2E, its LibreOffice `ODP -> FODP -> ODP` preservation check,
+ODP-derived PDF validation, the completed one-time 99-page production build, and the permanent
+offline suite. A future concrete rendering defect may add a focused temporary probe without
+changing the permanent test contract.
+
+**Owner.** [PYTEST_STYLE.md](PYTEST_STYLE.md), [E2E_TESTS.md](E2E_TESTS.md),
+`tests/e2e/e2e_djot_native_layouts.py`, and [PIPELINE.md](PIPELINE.md).
 
 ### Vertical root-body layouts use one author-visible block
 
@@ -407,9 +437,11 @@ block after the level-one title: a paragraph, list, or component image.
 **Why.** The one authored block maps directly to one native vertical text frame or contained image
 region without inventing a repository-specific Markdown wrapper language.
 
-**Consequence.** Preview and native geometry share the fixed 94px title, 24px spacer, and 1042px
-body tracks. `vertical-title-two-panels` uses 94px, 24px, 500px, 42px, and 500px tracks with
-explicit child placement.
+**Consequence.** Native geometry uses the fixed 94-unit vertical title, 24-unit spacer, and
+1042-unit body tracks. The two vertical-title layouts place the title strip on the right, matching
+LibreOffice. `vertical-title-two-panels` stacks a vertical text member over a normal content member;
+`two-panels-vertical-clipart` retains its approved source name but supplies LibreOffice's two
+side-by-side vertical-content members through `left` and `right` slots.
 
 **Owner.** `slide_lib/layout_engine.py` and its contract tests.
 
@@ -423,11 +455,13 @@ own details of the authored language.
 
 **Consequence.** `source_model.py` carries raw runs, links, images, tables, notes, and review facts;
 `slide_plan.py` owns geometry; `djot_emitter.py` renders supported source facts exactly once and
-preserves imported note content without inventing Djot syntax.
+`import_report.py` preserves imported note and normalized-region content without inventing Djot
+syntax.
 
-**Implementation status.** The six-pass Djot-first audit found this boundary incomplete:
-`pptx_reader.py` still constructs planner region records, and `djot_emitter.py` records note
-omissions instead of preserving the note content. Both require design-level follow-up.
+**Implementation status.** Complete. `pptx_reader.py` returns raw positioned facts;
+`slide_plan.py` validates and normalizes their geometry; `djot_emitter.py` owns Djot projection; and
+`import_report.py` retains canonical text, safe links, geometry, source order, and presenter notes.
+Promoting report-only notes into rebuilt native note objects remains a separate language decision.
 
 **Owner.** [PIPELINE.md](PIPELINE.md).
 
@@ -436,7 +470,7 @@ omissions instead of preserving the note content. Both require design-level foll
 **Decision.** `slide_lib.layout_engine.registered_layout_names()` and
 `slide_lib.layout_engine.layout_contract()` are the authoritative public layout catalog for canonical
 short names and named Djot slots. The engine delegates declarative values to the private
-`_layout_registry.py` catalog; the grammar derives legal vocabulary through the public API and
+`layout_registry.py` catalog; the grammar derives legal vocabulary through the public API and
 provides no aliases.
 
 **Why.** Source validation and native geometry must describe the same layouts. Derived vocabulary
@@ -448,7 +482,7 @@ keeps a later layout change local to the layout owner rather than creating paral
 `two-panels-vertical-clipart`; `blank`, `title-only`, `title-slide`, `centered-text`, and `gallery`
 remain. The asymmetric layouts use named slots rather than source position.
 
-**Owner.** `slide_lib/layout_engine.py`, `slide_lib/_layout_registry.py`, and
+**Owner.** `slide_lib/layout_engine.py`, `slide_lib/layout_registry.py`, and
 `slide_lib/djot_grammar.py`.
 
 ### Djot normalizes headings and cells before geometry
@@ -513,10 +547,10 @@ intent without making either output format the parent of the other.
 
 **Consequence.** Each adapter owns only its serialization and targets stable object identities from
 the shared layout plan. Runtime XML templates and PowerPoint-authored decks are not contracts. Fast
-tests cover structural semantics, while the desired ODP XML contract, captured minimal fixtures,
-deterministic package-XML transitions, headless LibreOffice round trips, PDF/render metrics, and the
-automated reveal-state interpreter are the final acceptance evidence. Unsupported reveal intent fails
-with its source location instead of disappearing. `blue overlay` remains deferred.
+tests cover structural semantics with inline inputs, while native ODP package validation, headless
+LibreOffice round trips, PDF/render metrics, and the automated reveal-state interpreter are the final
+acceptance evidence. Unsupported reveal intent fails with its source location instead of
+disappearing. `blue overlay` remains deferred.
 
 **Owner.** `slide_lib/odp_animation.py`, `slide_lib/pptx_animation.py`, [PIPELINE.md](PIPELINE.md), and
 [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
@@ -535,10 +569,12 @@ the old rendering authoritative. A difficult slide is useful redesign evidence.
 
 **Consequence.** The importer chooses titles from bounded upper-lane geometry and assigns native
 components atomically. Ambiguous or overlapping legacy geometry normalizes into one standard
-source-order panel with a review reason. Difficult slides retain their instructional text and
-genuine images through an existing registered layout; review diagnostics do not replace source
-content. Ordinary source pictures remain independent image assets; unsupported vectors stay
-explicit in diagnostics. No rendered source slide or composite region is an import product.
+source-order panel with a review reason. A table-bearing fallback isolates each table in its own
+native cell. Difficult slides retain their instructional text and genuine images through an
+existing registered layout; when dense labels cannot remain useful on-slide, the import report
+retains their lossless text/link/geometry facts beside a visible redesign diagnostic. Ordinary
+source pictures remain independent image assets; unsupported vectors stay explicit in diagnostics.
+No rendered source slide or composite region is an import product.
 
 **Owner.** `slide_lib/importers/slide_plan.py`, `slide_lib/importers/djot_emitter.py`,
 `slide_lib/importers/pptx_to_djot.py`, and [PIPELINE.md](PIPELINE.md).
@@ -626,11 +662,11 @@ rescue behavior.
 keeps authored units and reveal targets exactly once. Existing `continuation_context` continues to
 mark visible static repeats. ODP and PPTX project a nonvisual trail into equivalent accessibility
 descriptions and generated continuation notes. WP-L2 proves inline, handoff, metadata-only, and
-leaf-error behavior from fixtures; WP-O1/P1 prove projection parity; WP-V2 verifies `lect02a` line
+leaf-error behavior from inline test inputs; WP-O1/P1 prove projection parity; WP-V2 verifies `lect02a` line
 293, Student Profile at line 470, and the full deck without an attended step.
 
-**Owner.** WP-L2, WP-O1, WP-P1, and WP-V2 in
-[native_odp_layout_migration.md](active_plans/active/native_odp_layout_migration.md).
+**Owner.** WP-L2, WP-O1, WP-P1, and WP-V2 in the archived
+[native ODP layout migration](archive/native_odp_layout_migration.md).
 
 ### Physical plans own safe line advance and list geometry
 
@@ -700,7 +736,7 @@ one-panel pages with immutable provenance; unsupported facts and tables retain r
 ODP and PPTX remain responsible only for projecting this completed `LayoutDeck`, so WP-O1 and WP-P1
 must validate adapter parity rather than remeasure or repaginate it.
 
-**Owner.** `slide_lib/layout_engine.py`, `_layout_measurement.py`, `_layout_builders.py`; WP-O1,
+**Owner.** `slide_lib/layout_engine.py`, `layout_measurement.py`, `layout_builders.py`; WP-O1,
 WP-P1, and WP-V2 consume and verify the plan.
 
 ### Imported evidence keeps relations adaptable

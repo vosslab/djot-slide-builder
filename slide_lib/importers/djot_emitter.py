@@ -8,6 +8,7 @@ import re
 # local repo modules
 import slide_lib.layout_engine
 import slide_lib.importers.geometry as geometry
+import slide_lib.importers.import_report as import_report
 import slide_lib.importers.native_normalization as native_normalization
 import slide_lib.importers.topology as topology
 import slide_lib.importers.slide_plan as slide_plan
@@ -69,6 +70,7 @@ class EmissionComponent:
 	classification_reason: str = ""
 	placeholder_confidence: float = 0.0
 	rotation_degrees: float = 0.0
+	source_order: tuple[int, ...] = ()
 @dataclasses.dataclass(frozen=True)
 class OverlapPermission:
 	"""One exact component-pair overlap allowed by a uniquely matched composition."""
@@ -293,6 +295,7 @@ def emit_components(
 				region_bounds(tuple(item[3] for item in flow_items)), tuple(lines), "flow",
 				tuple(image_references), tuple(source_image_ids), source_ordinals=tuple(source_ordinals),
 				member_footprints=tuple(item[0] for item in flow_items),
+				source_order=min((item[3].z_order for item in flow_items if item[3].z_order), default=()),
 			))
 			continue
 		shared_footer = set(shared_footer_sources(slot.text_regions, slot.image_regions))
@@ -309,6 +312,7 @@ def emit_components(
 					placeholder_confidence=text.placeholder_confidence,
 					rotation_degrees=text.rotation_degrees,
 					classification_reason=slot.relation_id,
+					source_order=text.z_order,
 				))
 		for region in slot.image_regions:
 				lines, image_reasons = slot_image_lines((region,), planned.data.images)
@@ -331,6 +335,8 @@ def emit_components(
 							(region.source_ordinal, caption.source_ordinal),
 						member_footprints=(region.bounds,) if caption is None else (region.bounds, caption.bounds),
 						classification_reason=slot.relation_id,
+						source_order=min((item.z_order for item in (region, caption)
+							if item is not None and item.z_order), default=()),
 					))
 	content = planned.plan.content_region
 	if content is not None:
@@ -380,6 +386,9 @@ def emit_components(
 			member_footprints=tuple(region.bounds for region in (*content.image_regions, *content_text_regions)) +
 				(() if local_heading is None else (local_heading.bounds,)),
 			classification_reason=content.kind,
+			source_order=min((item.z_order for item in
+				(*content.image_regions, *content_text_regions,
+					*(() if local_heading is None else (local_heading,))) if item.z_order), default=()),
 		))
 	tables_by_id = {table.source_ordinal: table for table in planned.data.tables}
 	for table in planned.plan.tables:
@@ -391,6 +400,8 @@ def emit_components(
 		components.append(EmissionComponent(
 			table.bounds, tuple(table_lines((source_table,))), "table",
 			member_footprints=(table.bounds,),
+			source_ordinals=(table.table_id,),
+			source_order=min((item.z_order for item in table.text_regions if item.z_order), default=()),
 		))
 	return sorted(coalesce_text_flows(coalesce_bottom_footer(components)), key=component_read_key), reasons
 
@@ -413,7 +424,8 @@ def coalesce_bottom_footer(components: list[EmissionComponent]) -> list[Emission
 	merged = EmissionComponent(union_bounds(tuple(item.bounds for item in footer)), lines, "flow",
 		source_kind="text-box", source_ordinals=tuple(ordinal for item in footer for ordinal in item.source_ordinals),
 		member_footprints=tuple(footprint for item in footer for footprint in component_footprints(item)),
-		classification_reason=BOTTOM_FOOTER_RELATION_REASON)
+		classification_reason=BOTTOM_FOOTER_RELATION_REASON,
+		source_order=min((item.source_order for item in footer if item.source_order), default=()))
 	return [item for item in components if item not in footer] + [merged]
 
 
@@ -465,7 +477,8 @@ def coalesce_text_flows(components: list[EmissionComponent]) -> list[EmissionCom
 		result.append(EmissionComponent(union_bounds(tuple(member.bounds for member in members)), lines, "flow",
 			source_ordinals=tuple(ordinal for member in members for ordinal in member.source_ordinals),
 			member_footprints=tuple(footprint for member in members for footprint in component_footprints(member)),
-			source_kind=members[0].source_kind if all(member.source_kind == members[0].source_kind for member in members) else ""))
+			source_kind=members[0].source_kind if all(member.source_kind == members[0].source_kind for member in members) else "",
+			source_order=min((member.source_order for member in members if member.source_order), default=())))
 	return result
 
 
@@ -899,6 +912,10 @@ def _render_planned_slide(
 	if emitted_ids != required_ids or len(emitted_image_ids) != len(required_ids):
 		raise ValueError("did not preserve every outside picture exactly once")
 	if components_overlap(components):
+		if any(component.kind == "table" for component in components):
+			reasons.append("normalized overlapping legacy components into a table-safe native grid")
+			lines, layout = native_normalization.table_grid_lines(heading, components)
+			return lines, layout, reasons
 		reasons.append("normalized overlapping legacy components into one native source-order panel")
 		return native_normalization.one_panel_lines(heading, components), "one-panel", reasons
 	if is_first and heading and len(components) == 1 and components[0].kind == "text" and \
@@ -910,6 +927,10 @@ def _render_planned_slide(
 	try:
 		layout, slots, order = component_layout(components)
 	except ValueError as error:
+		if any(component.kind == "table" for component in components):
+			reasons.append(f"normalized {error} into a table-safe native source-order grid")
+			lines, layout = native_normalization.table_grid_lines(heading, components)
+			return lines, layout, reasons
 		reasons.append(f"normalized {error} into one native source-order panel")
 		return native_normalization.one_panel_lines(heading, components), "one-panel", reasons
 	lines = [f"=== layout: {layout}", "", *heading]
@@ -948,40 +969,7 @@ def render_planned_djot(
 			planned, planned.visible_page_index == 1,
 		)
 		lines.extend(slide_lines)
-		content = planned.plan.content_region if planned.plan else None
-		records.append({
-			"source_slide": planned.data.source_index,
-			"visible_page": planned.visible_page_index,
-			"layout": layout,
-			"text_blocks": len(planned.data.text_blocks),
-			"images": len(planned.data.images),
-			"notes_omitted": len(planned.data.notes),
-			"review_reasons": sorted(set(reasons)),
-			"native_table_count": len(planned.plan.tables) if planned.plan else 0,
-			"content_region": None if content is None else {
-				"region_key": content.region_key,
-				"kind": content.kind,
-				"classification_reason": content.classification_reason,
-				"local_heading_source_ordinal": None if content.local_heading is None else content.local_heading.source_ordinal,
-			},
-			"multiple_choice": None if planned.plan is None or planned.plan.multiple_choice is None else {
-				"reason": planned.plan.multiple_choice.reason,
-				"question": {
-					"source_ordinal": planned.plan.multiple_choice.question.source_ordinal,
-					"bounds": dataclasses.asdict(planned.plan.multiple_choice.question.bounds),
-				},
-				"answer": {
-					"source_ordinal": planned.plan.multiple_choice.answer.source_ordinal,
-					"bounds": dataclasses.asdict(planned.plan.multiple_choice.answer.bounds),
-				},
-				"image": None if planned.plan.multiple_choice.image is None else {
-					"source_ordinal": planned.plan.multiple_choice.image.source_ordinal,
-					"bounds": dataclasses.asdict(planned.plan.multiple_choice.image.bounds),
-				},
-				"question_visual_region": None if planned.plan.multiple_choice.question_visual_region is None else {
-					"region_key": planned.plan.multiple_choice.question_visual_region.region_key,
-					"classification_reason": planned.plan.multiple_choice.question_visual_region.classification_reason,
-				},
-			},
-		})
+		records.append(import_report.slide_record(
+			planned.data, planned.plan, planned.visible_page_index, layout, reasons,
+		))
 	return "\n".join(lines).rstrip() + "\n", records

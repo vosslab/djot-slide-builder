@@ -5,7 +5,7 @@ import pytest
 
 # Local Modules
 import slide_lib.djot_grammar
-import slide_lib.layouts
+import slide_lib.layout_engine
 import slide_lib.native_model
 
 
@@ -38,9 +38,11 @@ def test_directive_patterns_reject_near_matches(pattern: object, source: str) ->
 #============================================
 def test_grammar_derives_layout_and_slot_names_from_registry() -> None:
 	"""Grammar catalog remains an API projection of the layout owner."""
-	layout_name = next(name for name, spec in slide_lib.layouts.LAYOUTS.items() if spec.slot_names)
+	layout_name = next(name for name in slide_lib.layout_engine.registered_layout_names()
+		if slide_lib.layout_engine.layout_contract(name).slot_names)
 	assert (layout_name in slide_lib.djot_grammar.legal_layout_names() and
-		slide_lib.djot_grammar.legal_slot_names(layout_name) == slide_lib.layouts.LAYOUTS[layout_name].slot_names)
+		slide_lib.djot_grammar.legal_slot_names(layout_name) ==
+		slide_lib.layout_engine.layout_contract(layout_name).slot_names)
 
 
 #============================================

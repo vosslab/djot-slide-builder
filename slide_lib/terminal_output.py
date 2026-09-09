@@ -13,9 +13,9 @@ import rich.table
 import rich.text
 
 # Local Modules
-from slide_lib import layouts
 from slide_lib import libreoffice
 from slide_lib import djot_errors
+import slide_lib.layout_validation
 import slide_lib.native_export
 
 
@@ -148,7 +148,7 @@ def run_build(input_value: str, output_format: str, allow_folder: bool = True,
 			try:
 				outputs = slide_lib.native_export.export_deck(str(deck_path), output_format, update_progress)
 			except (slide_lib.native_export.PresentationInputError, djot_errors.DjotParseError,
-				layouts.LayoutError, libreoffice.LibreOfficeError) as exc:
+				slide_lib.layout_validation.LayoutError, libreoffice.LibreOfficeError) as exc:
 				failure = (deck_path, current_stage[0], exc)
 				break
 			results.append((deck_path, outputs))

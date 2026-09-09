@@ -1,7 +1,7 @@
 import dataclasses
-import slide_lib._layout_builders
-import slide_lib._layout_measurement
-import slide_lib._layout_registry
+import slide_lib.layout_builders
+import slide_lib.layout_measurement
+import slide_lib.layout_registry
 import slide_lib.layout_content
 import slide_lib.layout_model
 import slide_lib.layout_primitives
@@ -15,16 +15,16 @@ class _PageCandidate:
 	context: slide_lib.layout_model.ContinuationContext | None = None
 
 def registered_layout_names() -> tuple[str, ...]:
-	result = slide_lib._layout_registry.names()
+	result = slide_lib.layout_registry.names()
 	return result
 
 def layout_contract(name: str) -> slide_lib.layout_primitives.LayoutContract:
-	result = slide_lib._layout_registry.contract_for(name)
+	result = slide_lib.layout_registry.contract_for(name)
 	return result
 
 def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> slide_lib.layout_model.LayoutDeck:
-	session = slide_lib._layout_measurement.MeasurementSession(theme)
+	session = slide_lib.layout_measurement.MeasurementSession(theme)
 	physical: list[slide_lib.layout_model.LayoutSlide] = []
 	for source_index, source in enumerate(deck.slides):
 		source_id = f"slide-{source_index + 1}"
@@ -61,14 +61,14 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 
 def _compile_source_pages(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, source_id: str,
-		session: slide_lib._layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
+		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
 	# This is deliberately before the first candidate is built: a continuation
 	# must never make an unsupported source fact disappear by omitting it.
 	slide_lib.layout_model.reject_unsupported_source_facts(
-		slide_lib._layout_measurement.unsupported_facts(source))
+		slide_lib.layout_measurement.unsupported_facts(source))
 	failure: ValueError | None = None
 	try:
-		result = slide_lib._layout_builders.compile_slide(deck, source, theme, 0, session)
+		result = slide_lib.layout_builders.compile_slide(deck, source, theme, 0, session)
 		return (_PageCandidate(result),)
 	except ValueError as error:
 		failure = error
@@ -89,9 +89,9 @@ def _compile_source_pages(deck: slide_lib.native_model.Deck, source: slide_lib.n
 
 def _decompose_grid(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, source_id: str,
-		session: slide_lib._layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
+		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
 	contract = layout_contract(source.layout_class)
-	units = slide_lib._layout_measurement.grid_stream_units(source, source_id,
+	units = slide_lib.layout_measurement.grid_stream_units(source, source_id,
 		source.layout_class, contract.slot_names)
 	if not units:
 		return ()
@@ -105,7 +105,7 @@ def _decompose_grid(deck: slide_lib.native_model.Deck, source: slide_lib.native_
 		last_end = start
 		for end in range(start + 1, len(units) + 1):
 			try:
-				candidate = slide_lib._layout_builders.compile_grid_stream_page(deck, source,
+				candidate = slide_lib.layout_builders.compile_grid_stream_page(deck, source,
 					units[start:end], theme, 0, session)
 			except ValueError:
 				break
@@ -113,9 +113,9 @@ def _decompose_grid(deck: slide_lib.native_model.Deck, source: slide_lib.native_
 		if best is None:
 			unit = units[start]
 			if isinstance(unit.unit.block, slide_lib.native_model.ListBlock):
-				replacements = slide_lib._layout_measurement.descendant_list_units(unit.unit)
+				replacements = slide_lib.layout_measurement.descendant_list_units(unit.unit)
 				if replacements:
-					fragments = tuple(slide_lib._layout_measurement.GridStreamUnit(fragment,
+					fragments = tuple(slide_lib.layout_measurement.GridStreamUnit(fragment,
 						unit.origin) for fragment in replacements)
 					units = units[:start] + fragments + units[start + 1:]
 					continue
@@ -131,11 +131,11 @@ def _decompose_grid(deck: slide_lib.native_model.Deck, source: slide_lib.native_
 
 def _continuations(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib._layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
+		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
 	if len(source.cells) != 1:
 		return ()
 	cell = source.cells[0]
-	units = slide_lib._layout_measurement.continuation_units(cell.blocks)
+	units = slide_lib.layout_measurement.continuation_units(cell.blocks)
 	if not units:
 		return ()
 	pages: list[_PageCandidate] = []
@@ -148,13 +148,13 @@ def _continuations(deck: slide_lib.native_model.Deck, source: slide_lib.native_m
 			end = (low + high) // 2
 			candidate = _continuation_source(source, cell, units[start:end], start != 0)
 			try:
-				best = slide_lib._layout_builders.compile_slide(deck, candidate, theme, 0, session)
+				best = slide_lib.layout_builders.compile_slide(deck, candidate, theme, 0, session)
 				last_end = end
 				low = end + 1
 			except ValueError:
 				high = end - 1
 		if best is None and isinstance(units[start].block, slide_lib.native_model.ListBlock):
-			replacement = slide_lib._layout_measurement.descendant_list_units(units[start])
+			replacement = slide_lib.layout_measurement.descendant_list_units(units[start])
 			if replacement:
 				units = units[:start] + replacement + units[start + 1:]
 				continue
@@ -166,12 +166,12 @@ def _continuations(deck: slide_lib.native_model.Deck, source: slide_lib.native_m
 		if best is None:
 			unit = units[start].block
 			raise ValueError(f"{unit.location.path}:{unit.location.line}: one atomic continuation unit cannot fit within the supported readable minimum of {theme.body_floor_size_pt:g} pt")
-		best = slide_lib._layout_measurement.mark_context_paragraphs(best, units[start:last_end])
+		best = slide_lib.layout_measurement.mark_context_paragraphs(best, units[start:last_end])
 		if start:
 			best = dataclasses.replace(best, objects=tuple(dataclasses.replace(item,
 				origin=slide_lib.layout_primitives.LayoutObjectOrigin.REPEATED_CONTEXT)
 				if item.object_id == "title" else item for item in best.objects))
-		context = slide_lib._layout_measurement.inline_context(best, units[start:last_end])
+		context = slide_lib.layout_measurement.inline_context(best, units[start:last_end])
 		kind = slide_lib.layout_primitives.ContinuationKind.AUTHORED if context is not None else \
 			slide_lib.layout_primitives.ContinuationKind.NORMAL
 		pages.append(_PageCandidate(best, kind, context))
@@ -179,13 +179,13 @@ def _continuations(deck: slide_lib.native_model.Deck, source: slide_lib.native_m
 	return tuple(pages)
 def _context_handoff_pages(deck: slide_lib.native_model.Deck,
 		source: slide_lib.native_model.Slide, cell: slide_lib.native_model.Cell,
-		unit: slide_lib._layout_measurement.ContinuationUnit,
+		unit: slide_lib.layout_measurement.ContinuationUnit,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib._layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
+		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[_PageCandidate, ...]:
 	block = unit.block
 	if not isinstance(block, slide_lib.native_model.ListBlock) or len(block.items) != 1:
 		return ()
-	paths = slide_lib._layout_measurement._list_leaf_paths(block, block.items[0], ())
+	paths = slide_lib.layout_measurement.list_leaf_paths(block, block.items[0], ())
 	if not paths:
 		return ()
 	pages: list[_PageCandidate] = []
@@ -198,24 +198,24 @@ def _context_handoff_pages(deck: slide_lib.native_model.Deck,
 		leaf_block = dataclasses.replace(leaf_list, items=(dataclasses.replace(leaf_item,
 			children=(), reveal=leaf_item.reveal),), reveal=None)
 		leaf_source = _continuation_source(source, cell,
-			(slide_lib._layout_measurement.ContinuationUnit(leaf_block, unit.active_heading),), True)
+			(slide_lib.layout_measurement.ContinuationUnit(leaf_block, unit.active_heading),), True)
 		# Diagnose an unsplittable leaf before testing whether its static trail fits.
-		authored = slide_lib._layout_builders.compile_slide(deck, leaf_source, theme, 0, session)
+		authored = slide_lib.layout_builders.compile_slide(deck, leaf_source, theme, 0, session)
 		metadata = slide_lib.layout_model.ContinuationContext(
 			slide_lib.layout_primitives.ContinuationContextDisplay.METADATA_ONLY, entries)
-		trail_block = slide_lib._layout_measurement._path_fragment(trail)
+		trail_block = slide_lib.layout_measurement.path_fragment(trail)
 		trail_source = _continuation_source(source, cell,
-			(slide_lib._layout_measurement.ContinuationUnit(trail_block, unit.active_heading),), True)
+			(slide_lib.layout_measurement.ContinuationUnit(trail_block, unit.active_heading),), True)
 		try:
-			handoff = slide_lib._layout_builders.compile_slide(deck, trail_source, theme, 0, session)
+			handoff = slide_lib.layout_builders.compile_slide(deck, trail_source, theme, 0, session)
 		except ValueError:
 			pages.append(_PageCandidate(authored,
 				slide_lib.layout_primitives.ContinuationKind.AUTHORED, metadata))
 			continue
 		static = slide_lib.layout_model.ContinuationContext(
 			slide_lib.layout_primitives.ContinuationContextDisplay.HANDOFF_STATIC, entries)
-		handoff = slide_lib._layout_measurement.mark_context_paragraphs(handoff, (
-			slide_lib._layout_measurement.ContinuationUnit(trail_block, unit.active_heading,
+		handoff = slide_lib.layout_measurement.mark_context_paragraphs(handoff, (
+			slide_lib.layout_measurement.ContinuationUnit(trail_block, unit.active_heading,
 				len(trail), tuple(item.location for _list, item in trail)),))
 		handoff = dataclasses.replace(handoff, objects=tuple(dataclasses.replace(item,
 			origin=slide_lib.layout_primitives.LayoutObjectOrigin.REPEATED_CONTEXT)
@@ -231,8 +231,8 @@ def _context_entries(path: tuple[tuple[slide_lib.native_model.ListBlock,
 	"""Resolve every outer-to-inner ancestor once, independently of frame capacity."""
 	entries: list[slide_lib.layout_model.ContinuationContextEntry] = []
 	for level, (list_block, item) in enumerate(path):
-		inlines = slide_lib._layout_builders._runs(item.inlines,
-			slide_lib._layout_builders.FOREGROUND)
+		inlines = slide_lib.layout_builders.resolved_runs(item.inlines,
+			slide_lib.layout_builders.FOREGROUND)
 		if not inlines:
 			raise ValueError(f"{item.location.path}:{item.location.line}: list context item has no text")
 		entries.append(slide_lib.layout_model.ContinuationContextEntry(inlines,
@@ -241,7 +241,7 @@ def _context_entries(path: tuple[tuple[slide_lib.native_model.ListBlock,
 			level, list_block.start, item.location))
 	return tuple(entries)
 def _continuation_source(source: slide_lib.native_model.Slide, cell: slide_lib.native_model.Cell,
-		units: tuple[slide_lib._layout_measurement.ContinuationUnit, ...], continuation: bool) -> slide_lib.native_model.Slide:
+		units: tuple[slide_lib.layout_measurement.ContinuationUnit, ...], continuation: bool) -> slide_lib.native_model.Slide:
 	blocks: list[slide_lib.native_model.Block] = []
 	active_heading = units[0].active_heading
 	if active_heading is not None:
@@ -270,7 +270,7 @@ def _with_page_number(page: slide_lib.layout_model.LayoutSlide, source: slide_li
 	typography = slide_lib.layout_primitives.Typography(slide_lib.layout_primitives.StyleRole.MUTED,
 		"OpenDyslexic", 18.0, 18.0, 18.0)
 	inlines = (slide_lib.native_model.Text(str(number)),)
-	properties = slide_lib._layout_measurement.paragraph_properties(
+	properties = slide_lib.layout_measurement.paragraph_properties(
 		inlines, 18.0, 62.0, theme, terminal=True)
 	properties = dataclasses.replace(properties,
 		horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.END)

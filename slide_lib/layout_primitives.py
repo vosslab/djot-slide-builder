@@ -20,6 +20,38 @@ class PresentationRole(enum.Enum):
 	COMPONENT = "component"
 
 
+class LibreOfficeAutoLayout(enum.Enum):
+	"""Name one built-in Impress layout selected by ODF placeholder inference."""
+	TITLE = "AUTOLAYOUT_TITLE"
+	TITLE_CONTENT = "AUTOLAYOUT_TITLE_CONTENT"
+	TITLE_2CONTENT = "AUTOLAYOUT_TITLE_2CONTENT"
+	TITLE_CONTENT_2CONTENT = "AUTOLAYOUT_TITLE_CONTENT_2CONTENT"
+	TITLE_CONTENT_OVER_CONTENT = "AUTOLAYOUT_TITLE_CONTENT_OVER_CONTENT"
+	TITLE_2CONTENT_CONTENT = "AUTOLAYOUT_TITLE_2CONTENT_CONTENT"
+	TITLE_2CONTENT_OVER_CONTENT = "AUTOLAYOUT_TITLE_2CONTENT_OVER_CONTENT"
+	TITLE_4CONTENT = "AUTOLAYOUT_TITLE_4CONTENT"
+	TITLE_ONLY = "AUTOLAYOUT_TITLE_ONLY"
+	NONE = "AUTOLAYOUT_NONE"
+	VERTICAL_TITLE_VERTICAL_CONTENT_OVER_VERTICAL_CONTENT = \
+		"AUTOLAYOUT_VTITLE_VCONTENT_OVER_VCONTENT"
+	VERTICAL_TITLE_VERTICAL_CONTENT = "AUTOLAYOUT_VTITLE_VCONTENT"
+	TITLE_VERTICAL_CONTENT = "AUTOLAYOUT_TITLE_VCONTENT"
+	TITLE_2VERTICAL_CONTENT = "AUTOLAYOUT_TITLE_2VTEXT"
+	ONLY_TEXT = "AUTOLAYOUT_ONLY_TEXT"
+	TITLE_6CONTENT = "AUTOLAYOUT_TITLE_6CONTENT"
+
+
+class LibreOfficePlaceholderObject(enum.Enum):
+	"""Name an ODF page-layout hint consumed by LibreOffice's AutoLayout importer."""
+	TITLE = "title"
+	SUBTITLE = "subtitle"
+	OUTLINE = "outline"
+	OBJECT = "object"
+	GRAPHIC = "graphic"
+	VERTICAL_TITLE = "vertical_title"
+	VERTICAL_OUTLINE = "vertical_outline"
+
+
 class PlaceholderKind(enum.Enum):
 	TITLE = "title"
 	SUBTITLE = "subtitle"
@@ -348,9 +380,37 @@ class PlaceholderTopologyMember:
 
 
 @dataclass(frozen=True)
+class LibreOfficeLayoutPlaceholder:
+	"""Bind one AutoLayout classifier token to repository-owned geometry."""
+	object_name: LibreOfficePlaceholderObject
+	rectangle: LogicalRectangle
+
+	def __post_init__(self) -> None:
+		if not isinstance(self.object_name, LibreOfficePlaceholderObject):
+			raise ValueError("LibreOffice placeholder object must be a LibreOfficePlaceholderObject")
+
+
+@dataclass(frozen=True)
+class LibreOfficeLayoutSignature:
+	"""Carry the built-in Impress identity independently of occupied frame roles."""
+	autolayout: LibreOfficeAutoLayout
+	placeholders: tuple[LibreOfficeLayoutPlaceholder, ...]
+
+	def __post_init__(self) -> None:
+		canonicalize_tuple(self, "placeholders")
+		if not isinstance(self.autolayout, LibreOfficeAutoLayout):
+			raise ValueError("LibreOffice layout signature requires a LibreOfficeAutoLayout")
+		if self.autolayout is LibreOfficeAutoLayout.NONE and self.placeholders:
+			raise ValueError("LibreOffice blank layout cannot declare classifier placeholders")
+		if self.autolayout is not LibreOfficeAutoLayout.NONE and not self.placeholders:
+			raise ValueError("LibreOffice nonblank layout requires classifier placeholders")
+
+
+@dataclass(frozen=True)
 class PlaceholderTopology:
 	declared_layout_id: str
 	members: tuple[PlaceholderTopologyMember, ...]
+	libreoffice_layout: LibreOfficeLayoutSignature | None = None
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "members")
@@ -358,7 +418,8 @@ class PlaceholderTopology:
 		validate_unique((member.member_id for member in self.members), "presentation layout member identities")
 
 	def key_for_canvas(self, canvas: LogicalCanvas) -> "PresentationPageLayoutKey":
-		return PresentationPageLayoutKey(self.declared_layout_id, canvas, self.members)
+		return PresentationPageLayoutKey(self.declared_layout_id, canvas, self.members,
+			self.libreoffice_layout)
 
 
 @dataclass(frozen=True)
@@ -366,6 +427,7 @@ class PresentationPageLayoutKey:
 	declared_layout_id: str
 	canvas: LogicalCanvas
 	members: tuple[PlaceholderTopologyMember, ...]
+	libreoffice_layout: LibreOfficeLayoutSignature | None = None
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "members")
@@ -386,11 +448,14 @@ class LayoutContract:
 	topology_matchable: bool = False
 	topology_slots: tuple[tuple[float, float, float, float, float, float], ...] = ()
 	continuation_policy: ContinuationPolicy = ContinuationPolicy.FORBID
+	libreoffice_autolayout: LibreOfficeAutoLayout | None = None
+	libreoffice_placeholder_members: tuple[tuple[LibreOfficePlaceholderObject, str], ...] = ()
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "slot_names")
 		canonicalize_tuple(self, "vertical_slots")
 		canonicalize_tuple(self, "topology_slots")
+		canonicalize_tuple(self, "libreoffice_placeholder_members")
 		require_nonempty(self.name, "layout contract name")
 		validate_unique(self.slot_names, "layout contract slots")
 		validate_unique(self.vertical_slots, "layout contract vertical slots")
@@ -403,6 +468,29 @@ class LayoutContract:
 				raise ValueError("layout topology slots require normalized bounds and center")
 			for value in bounds:
 				require_finite(value, "layout topology coordinate")
+		if self.libreoffice_autolayout is None and self.libreoffice_placeholder_members:
+			raise ValueError("custom layouts cannot declare LibreOffice classifier placeholders")
+		if self.libreoffice_autolayout is not None:
+			if not isinstance(self.libreoffice_autolayout, LibreOfficeAutoLayout):
+				raise ValueError("layout contract LibreOffice identity must be a LibreOfficeAutoLayout")
+			if self.libreoffice_autolayout is LibreOfficeAutoLayout.NONE:
+				if self.libreoffice_placeholder_members:
+					raise ValueError("LibreOffice blank layout cannot declare classifier placeholders")
+			elif not self.libreoffice_placeholder_members:
+				raise ValueError("LibreOffice nonblank layout requires classifier placeholders")
+		allowed_members = set(self.slot_names)
+		if self.allows_title:
+			allowed_members.add("title")
+		if self.allows_subtitle:
+			allowed_members.add("subtitle")
+		for object_name, member_id in self.libreoffice_placeholder_members:
+			if not isinstance(object_name, LibreOfficePlaceholderObject):
+				raise ValueError("LibreOffice classifier object must be a LibreOfficePlaceholderObject")
+			require_nonempty(member_id, "LibreOffice classifier member identity")
+			if member_id not in allowed_members:
+				raise ValueError("LibreOffice classifier references an undeclared layout member")
+		validate_unique((member_id for _object_name, member_id in
+			self.libreoffice_placeholder_members), "LibreOffice classifier member identities")
 
 	@property
 	def cell_count(self) -> int:

@@ -3,7 +3,6 @@
 # Standard Library
 import io
 import hashlib
-import math
 import pathlib
 import re
 import zipfile
@@ -14,8 +13,6 @@ from pptx.enum.shapes import MSO_SHAPE_TYPE
 from pptx.oxml.ns import qn
 
 # local repo modules
-import slide_lib.importers.geometry as geometry
-import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
 
 
@@ -307,27 +304,22 @@ def shape_placeholder_role(shape: object) -> str | None:
 
 
 #============================================
-def source_text_inventory(
+def positioned_text_inventory(
 	shape: object,
 	title_id: int | None,
-	slide_width: int,
-	slide_height: int,
 	z_order: tuple[int, ...] = (),
-) -> list[slide_plan.SourceTextRegion]:
-	"""Read every text shape into raw geometry-first planning evidence."""
-	regions: list[slide_plan.SourceTextRegion] = []
+) -> list[source_model.PositionedText]:
+	"""Read every text shape into raw positioned planning evidence."""
+	regions: list[source_model.PositionedText] = []
 	if shape.shape_type == MSO_SHAPE_TYPE.GROUP:
 		for child_index, child in enumerate(shape.shapes):
-			regions.extend(source_text_inventory(
-				child, title_id, slide_width, slide_height, (*z_order, child_index),
+			regions.extend(positioned_text_inventory(
+				child, title_id, (*z_order, child_index),
 			))
 		return regions
 	has_positive_fill, has_positive_line = shape_style_evidence(shape)
 	placeholder_role = shape_placeholder_role(shape)
 	if getattr(shape, "has_table", False):
-		bounds = geometry.normalized_bounds(
-			shape.left, shape.top, shape.width, shape.height, slide_width, slide_height,
-		)
 		row_count = len(shape.table.rows)
 		column_count = len(shape.table.columns)
 		has_header = bool(shape.table.first_row)
@@ -340,8 +332,9 @@ def source_text_inventory(
 			for column_index, cell in enumerate(row.cells):
 				runs = cell_runs(cell)
 				if runs:
-					regions.append(slide_plan.SourceTextRegion(
-						((0, runs),), bounds, False, 0.0, False, "table",
+					regions.append(source_model.PositionedText(
+						((0, runs),), shape.left, shape.top, shape.width, shape.height,
+						False, 0.0, False, "table",
 						shape.shape_id * 10_000 + row_index * column_count + column_index,
 						row_index, column_index, row_count, column_count, shape.shape_id,
 						has_header, unsupported_reason, rotation_degrees=0.0,
@@ -358,9 +351,6 @@ def source_text_inventory(
 	)
 	if not paragraphs:
 		return regions
-	bounds = geometry.normalized_bounds(
-		shape.left, shape.top, shape.width, shape.height, slide_width, slide_height,
-	)
 	confidence = 1.0 if shape.is_placeholder else 0.0
 	if shape.is_placeholder:
 		source_kind = "text"
@@ -368,8 +358,9 @@ def source_text_inventory(
 		source_kind = "text-box"
 	else:
 		source_kind = "auto-shape"
-	regions.append(slide_plan.SourceTextRegion(
-		paragraphs, bounds, is_subtitle_shape(shape), confidence,
+	regions.append(source_model.PositionedText(
+		paragraphs, shape.left, shape.top, shape.width, shape.height,
+		is_subtitle_shape(shape), confidence,
 		shape.shape_id == title_id, source_kind, shape.shape_id,
 		rotation_degrees=getattr(shape, "rotation", 0.0),
 		has_positive_fill=has_positive_fill, has_positive_line=has_positive_line,
@@ -379,16 +370,13 @@ def source_text_inventory(
 
 
 #============================================
-def source_text_regions(slide: object, slide_width: int,
-		slide_height: int) -> tuple[slide_plan.SourceTextRegion, ...]:
-	"""Collect raw source text regions before title or slot interpretation."""
+def positioned_text_shapes(slide: object) -> tuple[source_model.PositionedText, ...]:
+	"""Collect raw positioned text facts in source stack order."""
 	title_id = title_shape_id(slide)
-	regions: list[slide_plan.SourceTextRegion] = []
+	regions: list[source_model.PositionedText] = []
 	for shape_index, shape in enumerate(slide.shapes):
-		regions.extend(source_text_inventory(shape, title_id, slide_width, slide_height, (shape_index,)))
-	result = tuple(sorted(regions, key=lambda item: (
-		item.bounds.top, item.bounds.left, item.source_ordinal,
-	)))
+		regions.extend(positioned_text_inventory(shape, title_id, (shape_index,)))
+	result = tuple(regions)
 	return result
 
 
@@ -409,9 +397,8 @@ def shape_is_stroked_connector(shape: object) -> bool:
 
 
 #============================================
-def degenerate_connector(shape: object, slide_width: int,
-		slide_height: int) -> geometry.DegenerateConnectorFootprint | None:
-	"""Return one planning-only footprint for a positively stroked line shape."""
+def connector_stroke_width(shape: object) -> float | None:
+	"""Return positive raw stroke evidence for a degenerate connector."""
 	properties = shape.element.find(qn("p:spPr"))
 	if properties is None:
 		return None
@@ -420,25 +407,21 @@ def degenerate_connector(shape: object, slide_width: int,
 	if width is None or not width.isdigit():
 		return None
 	stroke_width = float(width)
-	if not math.isfinite(stroke_width) or stroke_width <= 0:
+	if stroke_width <= 0:
 		return None
-	return geometry.degenerate_connector_footprint(
-		shape.left, shape.top, shape.width, shape.height, stroke_width, slide_width, slide_height,
-	)
+	return stroke_width
 
 
 #============================================
-def source_visual_inventory(
+def positioned_visual_inventory(
 	shape: object,
-	slide_width: int,
-	slide_height: int,
 	z_order: tuple[int, ...] = (),
-) -> list[slide_plan.SourceImageRegion]:
-	"""Collect picture and non-text vector anchors for spatial planning."""
-	regions: list[slide_plan.SourceImageRegion] = []
+) -> list[source_model.PositionedVisual]:
+	"""Collect raw picture and non-text vector evidence for planning."""
+	regions: list[source_model.PositionedVisual] = []
 	if shape.shape_type == MSO_SHAPE_TYPE.GROUP:
 		for child_index, child in enumerate(shape.shapes):
-			regions.extend(source_visual_inventory(child, slide_width, slide_height, (*z_order, child_index)))
+			regions.extend(positioned_visual_inventory(child, (*z_order, child_index)))
 		return regions
 	if shape.shape_type == MSO_SHAPE_TYPE.PICTURE:
 		kind = "picture"
@@ -455,31 +438,26 @@ def source_visual_inventory(
 		kind = "connector" if shape_is_stroked_connector(shape) else "vector"
 	else:
 		return regions
-	line = None
+	stroke_width = None
 	if shape.width <= 0 or shape.height <= 0:
 		if kind != "connector":
 			return regions
-		line = degenerate_connector(shape, slide_width, slide_height)
-		if line is None:
+		stroke_width = connector_stroke_width(shape)
+		if stroke_width is None:
 			return regions
-		bounds = line.footprint
-	else:
-		bounds = geometry.normalized_bounds(
-			shape.left, shape.top, shape.width, shape.height, slide_width, slide_height,
-		)
-	regions.append(slide_plan.SourceImageRegion(
-		f"source-{kind}-{shape.shape_id}", bounds, kind, shape.shape_id, line, z_order,
+	regions.append(source_model.PositionedVisual(
+		f"source-{kind}-{shape.shape_id}", shape.left, shape.top, shape.width,
+		shape.height, kind, shape.shape_id, stroke_width, z_order,
 	))
 	return regions
 
 
 #============================================
-def source_visual_regions(slide: object, slide_width: int,
-		slide_height: int) -> tuple[slide_plan.SourceImageRegion, ...]:
-	"""Return imported-deck visuals in z-order for geometry-only planning."""
-	visuals: list[slide_plan.SourceImageRegion] = []
+def positioned_visual_shapes(slide: object) -> tuple[source_model.PositionedVisual, ...]:
+	"""Return imported-deck raw visuals in source stack order."""
+	visuals: list[source_model.PositionedVisual] = []
 	for shape_index, shape in enumerate(slide.shapes):
-		visuals.extend(source_visual_inventory(shape, slide_width, slide_height, (shape_index,)))
+		visuals.extend(positioned_visual_inventory(shape, (shape_index,)))
 	return tuple(visuals)
 
 

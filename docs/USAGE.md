@@ -12,7 +12,7 @@ source source_me.sh && python3 deck_tools.py build \
 	genetics/djot/lect01b-genetic_disorders.djot -f pptx
 ```
 
-Write editable PPTX and ODP for one source deck:
+Write editable ODP for one source deck:
 
 ```bash
 source source_me.sh && python3 deck_tools.py build \
@@ -35,8 +35,9 @@ Build every eligible source deck recursively below a folder as PPTX, ODP, and PD
 
 `deck_tools.py build` accepts `--format all`, `odp`, `pdf`, or `pptx`; `all` is the default. It
 recognizes `.djot` source only, and folder discovery recursively selects only `.djot` files. Every
-build begins with editable PPTX: `pptx` stops there, `odp` adds editable ODP, and `pdf` adds the
-ODP-derived PDF. Outputs are written below `output/pptx/`, `output/odp/`, and `output/pdf/`.
+deck compiles once: `pptx` and `odp` write only that editable format, `pdf` writes native ODP plus
+its derived PDF, and `all` writes both sibling editable formats plus PDF. Outputs are written below
+`output/pptx/`, `output/odp/`, and `output/pdf/`.
 
 The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
 native master and PDF is exported from the themed ODP. PPTX mirrors the same gradient, centered
@@ -72,8 +73,9 @@ reason. Unsupported relationships remain visibly incomplete or fail with a sourc
 diagnostic; the importer never renders the source slide or a composite region as substitute content.
 
 This is a one-time migration aid. Choose and maintain one canonical source after review; the
-imported ODP or PPTX does not become a second authoring source. See [PIPELINE.md](PIPELINE.md) for ownership and
-[genetics/djot/README.md](../genetics/djot/README.md) for the regenerable corpus boundary.
+imported ODP or PPTX does not become a second authoring source. See [PIPELINE.md](PIPELINE.md) for
+ownership and [genetics/djot/README.md](../genetics/djot/README.md) for the regenerable corpus
+boundary.
 
 ## Validate Djot source
 
@@ -93,9 +95,10 @@ source source_me.sh && python3 deck_tools.py lint \
 
 Fast lint is a permanent, offline behavior check. Strict Jotdown validation, real native export,
 and visual/Office review are one-time acceptance evidence, not replacements for each other. The
-LibreOffice Impress animation implementation, structural tests, headless PPTX-to-ODP package
-inspection, and PDF final-state export have passed. Attended click playback in Impress remains the
-sole open visual gate; do not infer it from a successful export. See [ROADMAP.md](ROADMAP.md).
+LibreOffice Impress animation implementation, structural tests, native ODP package inspection,
+headless ODP open/save preservation, and PDF final-state export have passed. Attended click playback
+in Impress remains the sole open visual gate; do not infer it from a successful export. See
+[ROADMAP.md](ROADMAP.md).
 
 ## Authoring boundaries
 

@@ -1,6 +1,7 @@
 # Tests
 
-This folder holds three test tiers, each with its own execution model. Pytest runs the fast lane under 1 second; the other two tiers run directly and may take longer.
+This folder holds three test tiers, each with its own execution model. Pytest runs the fast offline
+lane in seconds; the other two tiers run directly and may take longer.
 
 ## Layout
 

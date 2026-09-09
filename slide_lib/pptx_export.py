@@ -13,7 +13,7 @@ import tempfile
 
 from pptx import Presentation
 from pptx.dml.color import RGBColor
-from pptx.enum.shapes import MSO_SHAPE
+from pptx.enum.shapes import MSO_CONNECTOR, MSO_SHAPE
 from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.oxml.xmlchemy import OxmlElement
 from pptx.util import Emu, Pt
@@ -22,7 +22,6 @@ import slide_lib.layout_content
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.pptx_animation
-import slide_lib.pptx_theme
 import slide_lib.presentation_theme
 
 
@@ -80,7 +79,8 @@ def _write_slide(slide: object, plan: slide_lib.layout_model.LayoutSlide,
 		key=lambda value: value.activation_order)
 	for target in targets:
 		writer.register(shapes[target.object_id], target.reveal,
-			tuple(target.paragraph_indexes) if target.paragraph_indexes else None)
+			(target.paragraph_indexes[0], target.paragraph_indexes[-1])
+			if target.paragraph_indexes else None)
 	writer.finalize()
 	_write_notes(slide, plan)
 
@@ -94,9 +94,33 @@ def _write_background(slide: object, deck: slide_lib.layout_model.LayoutDeck,
 		_emu(deck.canvas.width, theme), _emu(theme.top_band_height, theme))
 	band.fill.solid()
 	band.fill.fore_color.rgb = RGBColor.from_string(theme.gradient_start_color)
-	slide_lib.pptx_theme.apply_top_band_gradient(band, theme)
+	_apply_top_band_gradient(band, theme)
 	band.line.fill.background()
 	_set_accessibility(band, "Theme background", "Lecture template top band", False)
+
+
+def _apply_top_band_gradient(shape: object,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
+	"""Replace one solid fill with the validated lecture-theme gradient."""
+	properties = shape.element.spPr
+	solid_fill = next(child for child in properties if child.tag.endswith("solidFill"))
+	gradient = OxmlElement("a:gradFill")
+	stops = OxmlElement("a:gsLst")
+	# ASVS 2.2.1: gradient colors come only from the validated template contract.
+	for position, color in ((0, theme.gradient_start_color),
+			(100000, theme.gradient_end_color)):
+		stop = OxmlElement("a:gs")
+		stop.set("pos", str(position))
+		value = OxmlElement("a:srgbClr")
+		value.set("val", color)
+		stop.append(value)
+		stops.append(stop)
+	gradient.append(stops)
+	linear = OxmlElement("a:lin")
+	linear.set("ang", "5400000")
+	linear.set("scaled", "1")
+	gradient.append(linear)
+	properties.replace(solid_fill, gradient)
 
 
 def _write_object(slide: object, item: slide_lib.layout_model.LayoutObject,
@@ -277,13 +301,21 @@ def _write_shape(slide: object, rectangle: slide_lib.layout_primitives.LogicalRe
 		content: slide_lib.layout_content.ShapeContent,
 		frame: slide_lib.layout_primitives.FrameTextProperties | None,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> object:
-	kind = {slide_lib.layout_primitives.ShapeKind.RECTANGLE: MSO_SHAPE.RECTANGLE,
-		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE: MSO_SHAPE.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.ShapeKind.LINE: MSO_SHAPE.LINE}[content.kind]
-	shape = slide.shapes.add_shape(kind, _emu(rectangle.x, theme), _emu(rectangle.y, theme),
-		_emu(rectangle.width, theme), _emu(rectangle.height, theme))
-	shape.fill.solid()
-	shape.fill.fore_color.rgb = RGBColor.from_string(_color_for(content.style.fill_role))
+	if content.kind is slide_lib.layout_primitives.ShapeKind.LINE:
+		shape = slide.shapes.add_connector(MSO_CONNECTOR.STRAIGHT,
+			_emu(rectangle.x, theme), _emu(rectangle.y, theme),
+			_emu(rectangle.x + rectangle.width, theme),
+			_emu(rectangle.y + rectangle.height, theme))
+	else:
+		kind = {slide_lib.layout_primitives.ShapeKind.RECTANGLE: MSO_SHAPE.RECTANGLE,
+			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE:
+			MSO_SHAPE.ROUNDED_RECTANGLE}[content.kind]
+		shape = slide.shapes.add_shape(kind, _emu(rectangle.x, theme),
+			_emu(rectangle.y, theme), _emu(rectangle.width, theme),
+			_emu(rectangle.height, theme))
+		shape.fill.solid()
+		shape.fill.fore_color.rgb = RGBColor.from_string(
+			_color_for(content.style.fill_role))
 	shape.line.color.rgb = RGBColor.from_string(_color_for(content.style.line_role))
 	shape.line.width = Pt(content.style.line_width_pt)
 	if content.text is not None:

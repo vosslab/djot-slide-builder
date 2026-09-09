@@ -389,8 +389,10 @@ def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRecta
 	left, top, width, height = content.x, content.y, content.width, content.height
 	if name in ("one-panel", "vertical-panel", "vertical-text-panel"):
 		return (content,)
-	if name in ("two-panels", "vertical-title-two-panels"):
+	if name in ("two-panels", "two-panels-vertical-clipart"):
 		return grid(left, top, width, height, 2, 1)
+	if name == "vertical-title-two-panels":
+		return grid(left, top, width, height, 1, 2)
 	if name == "one-plus-two-panels":
 		cell_width = (width - CELL_GUTTER) / 2
 		half = (height - GRID_GUTTER) / 2
@@ -413,13 +415,6 @@ def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRecta
 		return grid(left, top, width, height, 2, 2)
 	if name == "six-panels":
 		return grid(left, top, width, height, 3, 2)
-	if name == "two-panels-vertical-clipart":
-		right = (width - CELL_GUTTER) * .34
-		left_width = width - CELL_GUTTER - right
-		half = (height - GRID_GUTTER) / 2
-		return (slide_lib.layout_primitives.LogicalRectangle(left, top, left_width, half),
-			slide_lib.layout_primitives.LogicalRectangle(left, top + half + GRID_GUTTER, left_width, half),
-			slide_lib.layout_primitives.LogicalRectangle(left + left_width + CELL_GUTTER, top, right, height))
 	raise ValueError(f"unknown physical geometry: {name}")
 
 
@@ -557,23 +552,23 @@ def descendant_list_units(unit: ContinuationUnit) -> tuple[ContinuationUnit, ...
 	block = unit.block
 	if not isinstance(block, slide_lib.native_model.ListBlock) or len(block.items) != 1:
 		return ()
-	paths = _list_leaf_paths(block, block.items[0], ())
+	paths = list_leaf_paths(block, block.items[0], ())
 	if len(paths) < 2:
 		return ()
-	return tuple(ContinuationUnit(_path_fragment(path), unit.active_heading, len(path) - 1,
+	return tuple(ContinuationUnit(path_fragment(path), unit.active_heading, len(path) - 1,
 		tuple(item.location for _list, item in path[:-1])) for path in paths)
 
 
-def _list_leaf_paths(list_block: slide_lib.native_model.ListBlock, item: slide_lib.native_model.ListItem,
+def list_leaf_paths(list_block: slide_lib.native_model.ListBlock, item: slide_lib.native_model.ListItem,
 		parents: tuple[tuple[slide_lib.native_model.ListBlock, slide_lib.native_model.ListItem], ...]
 		) -> tuple[tuple[tuple[slide_lib.native_model.ListBlock, slide_lib.native_model.ListItem], ...], ...]:
 	path = parents + ((list_block, item),)
 	children = tuple((child, child_item) for child in item.children for child_item in child.items)
 	return (path,) if not children else tuple(leaf for child, child_item in children
-		for leaf in _list_leaf_paths(child, child_item, path))
+		for leaf in list_leaf_paths(child, child_item, path))
 
 
-def _path_fragment(path: tuple[tuple[slide_lib.native_model.ListBlock,
+def path_fragment(path: tuple[tuple[slide_lib.native_model.ListBlock,
 		slide_lib.native_model.ListItem], ...]) -> slide_lib.native_model.ListBlock:
 	inner: slide_lib.native_model.ListBlock | None = None
 	for list_block, item in reversed(path):

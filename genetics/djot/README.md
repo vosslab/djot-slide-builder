@@ -7,9 +7,10 @@ slide state.
 
 The generated source uses exact `=== layout: <name>` and `@<slot>` lines, standard Djot headings and
 lists, and complete-paragraph `![alt](path)` component images. Legal layout and slot names derive
-from `slide_lib.layouts`; current corpus examples include the canonical short names. It deliberately
-omits presenter notes and does not infer animation or visual styling from an imported file. Short DNA
-sequences use inline verbatim; ordinary `&prime;` text projects to U+2032 PRIME in the native model.
+from `slide_lib.layout_registry`; current corpus examples include the canonical short names. It
+deliberately omits presenter notes and does not infer animation or visual styling from an imported
+file. Short DNA sequences use inline verbatim; ordinary `&prime;` text projects to U+2032 PRIME in
+the native model.
 
 Use `#` and `##` only where the chosen layout permits global title/subtitle content. A title slide
 may contain several H2 lines, which become one subtitle region. One-line Djot attributes precede the
@@ -18,8 +19,8 @@ math is not implemented yet. `<= blue overlay` is recognized and reports "not ye
 
 `multiple-choice` requires exactly `@question` and `@answer`. The question contains a visible choice
 list; the answer is one or two short flat paragraphs. The parser records implicit answer reveal
-intent. The bounded OOXML builder and one-time LibreOffice bridge preserve it through editable ODP
-and the PDF final state; attended Impress first-advance playback remains unobserved.
+intent. The independent OOXML writer and native ODF/SMIL writer preserve it through editable PPTX,
+ODP, and the ODP-derived PDF final state; attended Impress first-advance playback remains unobserved.
 
 | Deck | Source | Visible | Hidden | Images | Normalized | Reviews |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |

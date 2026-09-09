@@ -19,6 +19,8 @@ import slide_lib.importers.pptx_reader as pptx_reader
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.pptx_to_djot as pptx_to_djot
 import slide_lib.importers.source_model as source_model
+import slide_lib.layout_engine
+import slide_lib.layout_validation
 import slide_lib.native_model
 #============================================
 def write_png(output_path: pathlib.Path) -> pathlib.Path:
@@ -38,6 +40,8 @@ def text_region(
 	placeholder_confidence: float = 0.0,
 	source_kind: str = "text",
 	paragraph_count: int = 1,
+	source_ordinal: int = 0,
+	z_order: tuple[int, ...] = (),
 ) -> slide_plan.SourceTextRegion:
 	"""Build one concise synthetic source text region."""
 	return slide_plan.SourceTextRegion(
@@ -47,6 +51,8 @@ def text_region(
 		1.0 if title_identity else placeholder_confidence,
 		title_identity,
 		source_kind,
+		source_ordinal,
+		z_order=z_order,
 	)
 #============================================
 def test_empty_notes_part_is_treated_as_no_notes() -> None:
@@ -90,8 +96,8 @@ def test_blank_auto_shape_inventory_requires_visible_vector_evidence() -> None:
 		)
 	visible = shape(fill=True)
 	invisible = shape(xml="<p:txBody><a:rPr><a:solidFill/></a:rPr></p:txBody>")
-	assert pptx_reader.source_visual_inventory(visible, 100, 100)
-	assert not pptx_reader.source_visual_inventory(invisible, 100, 100)
+	assert pptx_reader.positioned_visual_inventory(visible)
+	assert not pptx_reader.positioned_visual_inventory(invisible)
 #============================================
 def test_vector_media_is_validated_and_emf_type_is_normalized() -> None:
 	"""Older vector blobs retain their actual type only after header validation."""
@@ -240,8 +246,14 @@ def test_actual_pptx_table_preserves_blank_cells(tmp_path: pathlib.Path) -> None
 	loaded_slide = loaded.slides[0]
 
 	plan = pptx_to_djot.plan_imported_slide(
-		pptx_reader.source_text_regions(loaded_slide, loaded.slide_width, loaded.slide_height),
-		pptx_reader.source_visual_regions(loaded_slide, loaded.slide_width, loaded.slide_height),
+		slide_plan.text_regions(
+			pptx_reader.positioned_text_shapes(loaded_slide),
+			loaded.slide_width, loaded.slide_height,
+		),
+		slide_plan.visual_regions(
+			pptx_reader.positioned_visual_shapes(loaded_slide),
+			loaded.slide_width, loaded.slide_height,
+		),
 		(), loaded.slide_width, loaded.slide_height,
 	)
 
@@ -401,6 +413,102 @@ def test_table_projection_keeps_blank_cells_editable() -> None:
 
 	assert "| Header |  |" in lines
 	assert reasons == []
+
+
+#============================================
+def test_table_fallback_keeps_table_and_prose_in_separate_native_cells(
+	tmp_path: pathlib.Path,
+) -> None:
+	"""Overlapping table and prose normalize to valid editable regions."""
+	prose = text_region(0.10, 0.30, 0.70, 0.70, "Editable prose", source_ordinal=4,
+		z_order=(0,))
+	filled = text_region(0.10, 0.30, 0.70, 0.70, "Header", source_kind="table",
+		source_ordinal=50_000, z_order=(1,))
+	table = slide_plan.TablePlan(
+		filled.bounds, (filled,), ((slide_plan.TableCellPlan(0, 0, (filled,)),),),
+		1, 1, table_id=5,
+	)
+	plan = slide_plan.SlidePlan(
+		slide_plan.TitleDecision(None, "test"),
+		(slide_plan.SlotPlan("body", (prose,)),), tables=(table,),
+	)
+	raw_table = source_model.TableBlock(((source_model.TextRun("Header"),),), (), 0, 0, 5)
+	planned = djot_emitter.PlannedSlide(
+		source_model.SlideData(1, False, (), (), (), (), (), (raw_table,)),
+		plan, visible_page_index=1,
+	)
+
+	lines, layout, _reasons = djot_emitter.render_planned_slide(planned, False)
+	path = tmp_path / "normalized.djot"
+	path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+	parsed = slide_lib.djot_parser.parse_deck(path).slides[0]
+	slide_lib.layout_validation.validate_layout_source(
+		parsed, slide_lib.layout_engine.layout_contract(layout),
+	)
+	cell_blocks = tuple(block for cell in parsed.cells for block in cell.blocks)
+
+	assert layout == "two-panels"
+	assert sum(isinstance(block, slide_lib.native_model.Table) for block in cell_blocks) == 1
+
+
+#============================================
+def test_one_panel_fallback_uses_source_stack_order() -> None:
+	"""Geometry fallback keeps authored stack order instead of visual coordinates."""
+	first = text_region(.40, .40, .90, .90, "First", source_ordinal=10, z_order=(0,))
+	second = text_region(.10, .10, .60, .60, "Second", source_ordinal=11, z_order=(1,))
+	plan = slide_plan.SlidePlan(
+		slide_plan.TitleDecision(None, "test"),
+		(slide_plan.SlotPlan("body", (first, second)),),
+	)
+	planned = djot_emitter.PlannedSlide(
+		source_model.SlideData(1, False, (), (), (), (), ()), plan, visible_page_index=1,
+	)
+
+	lines, layout, _reasons = djot_emitter.render_planned_slide(planned, False)
+
+	assert layout == "one-panel"
+	assert lines.index("- First") < lines.index("- Second")
+
+
+#============================================
+def test_import_report_retains_normalized_text_and_links() -> None:
+	"""Review records preserve source facts omitted from visible reconstruction."""
+	label = slide_plan.SourceTextRegion(
+		((0, (source_model.TextRun("A & B", "https://example.test/label"),)),),
+		geometry.NormalizedBounds(.20, .20, .30, .30), False, 0.0,
+		source_kind="auto-shape", source_ordinal=7, z_order=(2,),
+	)
+	content = slide_plan.ContentRegionPlan(
+		"content-region-1", label.bounds, (label,), (),
+	)
+	plan = slide_plan.SlidePlan(slide_plan.TitleDecision(None, "test"), (), content)
+	planned = djot_emitter.PlannedSlide(
+		source_model.SlideData(1, False, (), (), (), (), ()), plan, visible_page_index=1,
+	)
+
+	_record_source, records = djot_emitter.render_planned_djot([planned])
+	runs = records[0]["content_region"]["text_regions"][0]["paragraphs"][0]["runs"]
+
+	assert runs[0]["text"] == "A & B"
+	assert runs[0]["link"] == "https://example.test/label"
+
+
+#============================================
+def test_import_report_preserves_presenter_note_text() -> None:
+	"""A migration report retains notes that Djot cannot yet author."""
+	data = source_model.SlideData(
+		1, False, (), (), (), ("Explain the diagram after revealing the answer.",), (),
+	)
+	planned = djot_emitter.PlannedSlide(
+		data, slide_plan.SlidePlan(slide_plan.TitleDecision(None, "test"), ()),
+		visible_page_index=1,
+	)
+
+	_source, records = djot_emitter.render_planned_djot([planned])
+
+	assert records[0]["presenter_notes"] == [
+		"Explain the diagram after revealing the answer.",
+	]
 
 
 #============================================

@@ -12,7 +12,7 @@ cannot name the regions needed for the teaching layouts in this repository. The 
 is resolved: extend Djot. The remaining question is which small syntax adds spatial semantics while
 retaining strict Djot compatibility.
 
-The repository will own the Python parser, native editable-object builders, LibreOffice bridge, and
+The repository will own the Python parser, native editable-object builders, LibreOffice conversion boundary, and
 validation regardless of the source language. An external renderer or presentation pipeline is
 therefore not the deciding factor. The decision is about what an instructor can comfortably write
 and what the parser can understand without guessing.

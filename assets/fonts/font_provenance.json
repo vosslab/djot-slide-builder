@@ -15,7 +15,7 @@
       "license": {
         "spdx": "OFL-1.1",
         "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
       }
     },
     {
@@ -32,7 +32,7 @@
       "license": {
         "spdx": "OFL-1.1",
         "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
       }
     },
     {
@@ -49,7 +49,7 @@
       "license": {
         "spdx": "OFL-1.1",
         "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
       }
     },
     {
@@ -66,7 +66,7 @@
       "license": {
         "spdx": "OFL-1.1",
         "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "caafcccfb70fc72458fcbda812ec8f0a06cb300cbabb87eabbb30b946124394b"
+        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
       }
     },
     {
@@ -83,7 +83,7 @@
       "license": {
         "spdx": "OFL-1.1",
         "path": "assets/fonts/licenses/PT-Sans-Narrow-OFL-1.1.txt",
-        "sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+        "sha256": "fc209b64de0bfc41ce3fd323afee1f6f3bd3dade9f7d2a6e7d6e5035bebdcc08"
       }
     },
     {
@@ -100,7 +100,7 @@
       "license": {
         "spdx": "OFL-1.1",
         "path": "assets/fonts/licenses/PT-Sans-Narrow-OFL-1.1.txt",
-        "sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+        "sha256": "fc209b64de0bfc41ce3fd323afee1f6f3bd3dade9f7d2a6e7d6e5035bebdcc08"
       }
     }
   ]

@@ -87,6 +87,61 @@ class SourceImageRegion:
 	source_ordinal: int = 0
 	source_line: geometry.DegenerateConnectorFootprint | None = None
 	z_order: tuple[int, ...] = ()
+
+
+#============================================
+def text_regions(
+	positioned: tuple[source_model.PositionedText, ...],
+	slide_width: int,
+	slide_height: int,
+) -> tuple[SourceTextRegion, ...]:
+	"""Validate and normalize raw positioned text at the planning boundary."""
+	# ASVS 2.2.1 and 2.2.2: normalize external geometry at one trusted layer.
+	return tuple(SourceTextRegion(
+		source.paragraphs,
+		geometry.normalized_bounds(
+			source.left, source.top, source.width, source.height, slide_width, slide_height,
+		),
+		source.is_subtitle, source.placeholder_confidence, source.title_identity,
+		source.source_kind, source.source_ordinal, source.table_row, source.table_column,
+		source.table_row_count, source.table_column_count, source.table_id,
+		source.table_has_header, source.table_unsupported_reason, source.rotation_degrees,
+		source.has_positive_fill, source.has_positive_line, source.placeholder_role,
+		source.z_order,
+	) for source in positioned)
+
+
+#============================================
+def visual_regions(
+	positioned: tuple[source_model.PositionedVisual, ...],
+	slide_width: int,
+	slide_height: int,
+) -> tuple[SourceImageRegion, ...]:
+	"""Validate and normalize raw positioned visuals at the planning boundary."""
+	# ASVS 2.2.1 and 2.2.2: reject unusable external geometry before planning.
+	result: list[SourceImageRegion] = []
+	for source in positioned:
+		line = None
+		if source.width <= 0 or source.height <= 0:
+			if source.source_kind != "connector" or source.stroke_width is None:
+				continue
+			line = geometry.degenerate_connector_footprint(
+				source.left, source.top, source.width, source.height, source.stroke_width,
+				slide_width, slide_height,
+			)
+			if line is None:
+				continue
+			bounds = line.footprint
+		else:
+			bounds = geometry.normalized_bounds(
+				source.left, source.top, source.width, source.height,
+				slide_width, slide_height,
+			)
+		result.append(SourceImageRegion(source.asset_reference, bounds, source.source_kind,
+			source.source_ordinal, line, source.z_order))
+	return tuple(result)
+
+
 @dataclasses.dataclass(frozen=True)
 class TablePlan:
 	"""A source table retained as editable structured content."""

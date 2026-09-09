@@ -3,9 +3,6 @@
 # PIP3 modules
 from pptx.oxml.xmlchemy import OxmlElement
 
-import slide_lib.layout_model
-
-
 _APPEAR_DURATION_MS = "1"
 _FADE_DURATION_MS = "1000"
 

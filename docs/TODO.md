@@ -19,12 +19,13 @@ the current source-to-native boundary is [PIPELINE.md](PIPELINE.md).
 
 ## Verification and evidence
 
-- [x] Complete one-time native acceptance: strict lint, `build_slides.sh genetics`, both explicit native
-  E2Es, and eight sequential matching PPTX/ODP/PDF exports with editable text/direct images and the
-  Lecture 02e native table.
+- [x] Complete one-time native acceptance, then remove its disposable runners after proof: strict
+  lint, `build_slides.sh genetics`, two explicit native E2Es, and eight sequential matching
+  PPTX/ODP/PDF exports with editable text/direct images and the Lecture 02e native table.
 - [x] Build the bounded OOXML animation model described in
   [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
-- [x] Record one-time headless PPTX-to-ODP/package semantics and ODP-derived PDF final-state evidence.
+- [x] Record native ODP package semantics, headless LibreOffice open/save preservation, and
+  ODP-derived PDF final-state evidence.
 - [ ] Attend and record Impress playback for object and top-level-list reveals.
 
 ## Compatibility and future language work

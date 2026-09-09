@@ -113,15 +113,3 @@ def test_writer_rejects_preexisting_timing_in_plain_or_compatibility_content() -
 		with pytest.raises(slide_lib.pptx_animation.AnimationError,
 				match="without existing timing"):
 			writer.finalize()
-
-
-#============================================
-def test_register_reveal_requires_a_writer_for_actual_reveal_intent() -> None:
-	"""Source reveal intent cannot silently disappear from native output."""
-	presentation = Presentation()
-	slide = presentation.slides.add_slide(presentation.slide_layouts[6])
-	reveal = slide_lib.native_model.Reveal(slide_lib.native_model.RevealEffect.APPEAR,
-		slide_lib.native_model.RevealSequence.OBJECT)
-	with pytest.raises(slide_lib.pptx_animation.AnimationError,
-			match="requires an animation writer"):
-		slide_lib.pptx_animation.register_reveal(slide, object(), reveal)

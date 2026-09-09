@@ -88,11 +88,13 @@ def plan_slides(
 			planned_slides.append(djot_emitter.PlannedSlide(data, None))
 			continue
 		visible_page_index += 1
-		text_regions = pptx_reader.source_text_regions(
-			source_slide, presentation.slide_width, presentation.slide_height,
+		text_regions = slide_plan.text_regions(
+			pptx_reader.positioned_text_shapes(source_slide),
+			presentation.slide_width, presentation.slide_height,
 		)
-		visual_regions = pptx_reader.source_visual_regions(
-			source_slide, presentation.slide_width, presentation.slide_height,
+		visual_regions = slide_plan.visual_regions(
+			pptx_reader.positioned_visual_shapes(source_slide),
+			presentation.slide_width, presentation.slide_height,
 		)
 		plan = plan_imported_slide(
 			text_regions,
