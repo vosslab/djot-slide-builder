@@ -10,6 +10,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide migration and presentation
 
+- I want better formatting match to the original slides (not byte nor exact) but like title and section 
+  layouts should be centered; the outline layouts do appear better 
+- images must always maintain their original aspect; never stretch images, it always looks wrong.
 - I do not own any microsoft products, Powerpoint is not a blocker, we only use PPTX because
   python supports PPTX better than ODP
 - An existing ODP is imported once; Djot and its local assets then become authoritative.
