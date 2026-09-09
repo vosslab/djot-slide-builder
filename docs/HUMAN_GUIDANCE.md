@@ -10,6 +10,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide migration and presentation
 
+- This is a requirement 1 slide in original source is 1 slide in djot and 1 slide in output, no taking one 
+  slide and making it three to get all of the content in.
 - I want better formatting match to the original slides (not byte nor exact) but like title and section 
   layouts should be centered; the outline layouts do appear better 
 - images must always maintain their original aspect; never stretch images, it always looks wrong.
