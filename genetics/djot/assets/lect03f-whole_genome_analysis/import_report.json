@@ -1,0 +1,1913 @@
+{
+  "source": "lect03f-whole_genome_analysis.odp",
+  "slide_count": 24,
+  "visible_slides": 24,
+  "hidden_slides": [],
+  "unique_media_assets": 9,
+  "slides": [
+    {
+      "source_slide": 1,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 2,
+      "visible_page": 2,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 3,
+      "visible_page": 3,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 4,
+      "visible_page": 4,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 5,
+      "visible_page": 5,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 6,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 21.2-1 Whole-genome shotgun approach to sequencing (step 1)"
+      ],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 80.6740157480315,
+          "top": 16.01574803149606,
+          "width": 632.267716535433,
+          "height": 465.6188976377952,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 21.288188976377953,
+          "width": 214.5543307086614,
+          "height": 83.36692913385826,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 21.68503937007874,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            3,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 20.43779527559055,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            3,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 155.79212598425198,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            4,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 154.5448818897638,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            4,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 156.3307086614173,
+          "width": 199.10551181102363,
+          "height": 56.267716535433074,
+          "z_order": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 7,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 21.2-2 Whole-genome shotgun approach to sequencing (step 2)"
+      ],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 80.6740157480315,
+          "top": 16.01574803149606,
+          "width": 632.267716535433,
+          "height": 465.6188976377952,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.75748031496063,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 21.288188976377953,
+          "width": 214.5543307086614,
+          "height": 83.36692913385826,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 21.68503937007874,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            4,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 20.43779527559055,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            4,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 155.79212598425198,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            5,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 154.5448818897638,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            5,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 274.76220472440946,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            6,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 273.51496062992123,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            6,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 156.3307086614173,
+          "width": 199.10551181102363,
+          "height": 56.267716535433074,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 274.8472440944882,
+          "width": 149.5275590551181,
+          "height": 35.121259842519684,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 351.4393700787401,
+          "top": 285.8740157480315,
+          "width": 96.06614173228346,
+          "height": 12.64251968503937,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 456.1795275590551,
+          "top": 285.8740157480315,
+          "width": 130.76220472440946,
+          "height": 13.096062992125985,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 598.9322834645669,
+          "top": 285.8740157480315,
+          "width": 102.13228346456694,
+          "height": 11.707086614173228,
+          "z_order": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 8,
+      "visible_page": 8,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 21.2-3 Whole-genome shotgun approach to sequencing (step 3)"
+      ],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 80.6740157480315,
+          "top": 16.01574803149606,
+          "width": 632.267716535433,
+          "height": 465.6188976377952,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.75748031496063,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 21.288188976377953,
+          "width": 214.5543307086614,
+          "height": 83.36692913385826,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 21.68503937007874,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            4,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 20.43779527559055,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            4,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 155.79212598425198,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            5,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 154.5448818897638,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            5,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 274.76220472440946,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            6,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 273.51496062992123,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            6,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 156.3307086614173,
+          "width": 199.10551181102363,
+          "height": 56.267716535433074,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 274.8472440944882,
+          "width": 149.5275590551181,
+          "height": 35.121259842519684,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 351.4393700787401,
+          "top": 285.8740157480315,
+          "width": 96.06614173228346,
+          "height": 12.64251968503937,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 372.38740157480316,
+          "top": 364.8755905511811,
+          "width": 96.06614173228346,
+          "height": 12.64251968503937,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 456.1795275590551,
+          "top": 285.8740157480315,
+          "width": 130.76220472440946,
+          "height": 13.096062992125985,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 598.9322834645669,
+          "top": 285.8740157480315,
+          "width": 102.13228346456694,
+          "height": 11.707086614173228,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 532.8,
+          "top": 364.8755905511811,
+          "width": 100.99842519685039,
+          "height": 11.253543307086614,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 439.05826771653545,
+          "top": 400.25196850393695,
+          "width": 129.68503937007875,
+          "height": 11.707086614173228,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 357.13700787401575,
+          "top": 458.58897637795275,
+          "width": 299.2535433070866,
+          "height": 11.707086614173228,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 85.88976377952756,
+          "top": 383.1590551181102,
+          "width": 21.51496062992126,
+          "height": 17.943307086614173,
+          "z_order": [
+            16,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 87.33543307086615,
+          "top": 381.9118110236221,
+          "width": 19.445669291338582,
+          "height": 16.83779527559055,
+          "z_order": [
+            16,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 114.43464566929133,
+          "top": 383.2724409448819,
+          "width": 196.35590551181102,
+          "height": 75.08976377952756,
+          "z_order": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 9,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.7007874015748,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 10,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 11,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Table 21.1 Genome sizes and estimated numbers of genes"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 224.87244094488187,
+          "top": 10.119685039370077,
+          "width": 343.9275590551181,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.75748031496063,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 12,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 17.603149606299212,
+          "width": 761.9527559055118,
+          "height": 87.10866141732284,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 13,
+      "visible_page": 13,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 21.6 Types of DNA sequences in the human genome"
+      ],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 87.30708661417323,
+          "top": 10.204724409448819,
+          "width": 539.0929133858268,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 195.16535433070865,
+          "top": 9.722834645669291,
+          "width": 119.14015748031497,
+          "height": 23.329133858267713,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 312.3779527559055,
+          "top": 19.61574803149606,
+          "width": 78.57637795275593,
+          "height": 0.028346456692911914,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 390.64251968503936,
+          "top": 19.247244094488188,
+          "width": 0.34015748031492876,
+          "height": 29.59370078740158,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 432.11338582677166,
+          "top": 20.182677165354328,
+          "width": 30.444094488189023,
+          "height": 29.28188976377953,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 113.75433070866141,
+          "top": 278.78740157480314,
+          "width": 102.04724409448819,
+          "height": 15.533858267716539,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 227.3952755905512,
+          "top": 364.1102362204725,
+          "width": 45.26929133858266,
+          "height": 37.3322834645669,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 333.7795275590551,
+          "top": 409.6062992125984,
+          "width": 10.856692913385814,
+          "height": 28.573228346456688,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 459.5811023622047,
+          "top": 407.28188976377953,
+          "width": 17.206299212598424,
+          "height": 29.990551181102376,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 467.2062992125984,
+          "top": 8.844094488188976,
+          "width": 138.5007874015748,
+          "height": 39.344881889763776,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 456.15118110236216,
+          "top": 130.90393700787402,
+          "width": 60.03779527559055,
+          "height": 45.496062992125985,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 462.41574803149604,
+          "top": 245.0267716535433,
+          "width": 99.97795275590552,
+          "height": 62.87244094488189,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 233.23464566929133,
+          "top": 159.53385826771654,
+          "width": 119.11181102362204,
+          "height": 157.66299212598426,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 361.7574803149606,
+          "top": 310.8755905511811,
+          "width": 136.3748031496063,
+          "height": 96.85984251968503,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 90.2267716535433,
+          "top": 281.792125984252,
+          "width": 93.71338582677166,
+          "height": 62.47559055118111,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 150.68976377952754,
+          "top": 397.8992125984252,
+          "width": 114.1795275590551,
+          "height": 42.85984251968504,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 234.93543307086614,
+          "top": 434.04094488188974,
+          "width": 149.78267716535433,
+          "height": 40.422047244094486,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 454.22362204724413,
+          "top": 433.1338582677165,
+          "width": 170.30551181102362,
+          "height": 39.968503937007874,
+          "z_order": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 14,
+      "visible_page": 14,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 137.2251968503937,
+          "width": 714.3023622047244,
+          "height": 303.5055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 15,
+      "visible_page": 15,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 16,
+      "visible_page": 16,
+      "layout": "stacked-panels",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 134.9291338582677,
+          "top": 454.8755905511811,
+          "width": 618.6047244094489,
+          "height": 37.33228346456693,
+          "z_order": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 17,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 11.962204724409448,
+          "top": 28.8,
+          "width": 769.6913385826771,
+          "height": 433.1338582677165,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 9.836220472440944,
+          "top": 467.3196850393701,
+          "width": 774.0,
+          "height": 25.28503937007874,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 18,
+      "visible_page": 18,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 19,
+      "visible_page": 19,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.02204724409448,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 20,
+      "visible_page": 20,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 20,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 50.45669291338583,
+          "top": 36.0,
+          "width": 692.7307086614172,
+          "height": 438.0094488188976,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 21,
+      "visible_page": 21,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 21,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 28.8,
+          "top": 116.02204724409448,
+          "width": 734.4,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 22,
+      "visible_page": 22,
+      "layout": "title-only",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source image requires review: unsupported ODP image type: .svm"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 22,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 143.46141732283465,
+          "width": 714.3023622047244,
+          "height": 291.06141732283464,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 23,
+      "visible_page": 23,
+      "layout": "title-only",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source image requires review: unsupported ODP image type: .svm"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 23,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 177.39212598425198,
+          "width": 714.3023622047244,
+          "height": 223.22834645669292,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 24,
+      "visible_page": 24,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 24,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 496.8,
+          "top": 258.4062992125984,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

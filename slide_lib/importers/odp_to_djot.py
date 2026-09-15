@@ -73,10 +73,8 @@ def plan_slides(presentation: odp_reader.ImportedPresentation) -> list[djot_emit
 	planned_slides: list[djot_emitter.PlannedSlide] = []
 	visible_page_index = 0
 	for source_slide in presentation.slides:
-		if source_slide.data.hidden:
-			planned_slides.append(djot_emitter.PlannedSlide(source_slide.data, None))
-			continue
-		visible_page_index += 1
+		if not source_slide.data.hidden:
+			visible_page_index += 1
 		text_regions = slide_plan.text_regions(
 			source_slide.positioned_text, source_slide.page_width, source_slide.page_height,
 		)
@@ -88,7 +86,8 @@ def plan_slides(presentation: odp_reader.ImportedPresentation) -> list[djot_emit
 			source_slide.page_width, source_slide.page_height,
 		)
 		planned_slides.append(djot_emitter.PlannedSlide(
-			source_slide.data, plan, text_regions, visual_regions, visible_page_index,
+			source_slide.data, plan, text_regions, visual_regions,
+			None if source_slide.data.hidden else visible_page_index,
 		))
 	return planned_slides
 
@@ -203,11 +202,8 @@ def convert_odp(input_path: pathlib.Path, output_path: pathlib.Path) -> Conversi
 			raise ValueError("ODP contains no presentation slides")
 		slides = plan_slides(presentation)
 		visible_slides = [slide for slide in slides if not slide.data.hidden]
-		if not visible_slides:
-			raise ValueError("ODP contains no visible presentation slides")
 		djot, records = djot_emitter.render_planned_djot(slides)
-		visible_source_slides = [slide for slide in presentation.slides if not slide.data.hidden]
-		for record, source_slide in zip(records, visible_source_slides, strict=True):
+		for record, source_slide in zip(records, presentation.slides, strict=True):
 			direct_record(record, source_slide)
 		staging_djot = staging_root / output_path.name
 		staging_djot.write_text(djot, encoding="utf-8")
@@ -225,7 +221,7 @@ def convert_odp(input_path: pathlib.Path, output_path: pathlib.Path) -> Conversi
 		validate_staged_djot(staging_djot)
 		publish_conversion(staging_djot, staging_assets, output_path)
 		return ConversionSummary(
-			len(visible_slides), len(visible_slides), len(slides) - len(visible_slides),
+			len(visible_slides), len(slides), len(slides) - len(visible_slides),
 			published_media_count, sum(bool(record["review_reasons"]) for record in records),
 			output_path, output_path.parent / "assets" / output_path.stem / "import_report.json",
 		)
@@ -237,9 +233,9 @@ def run_import(input_file: pathlib.Path, output_file: pathlib.Path | None = None
 	output_path = input_file.with_suffix(".djot") if output_file is None else output_file
 	summary = convert_odp(input_file, output_path)
 	print(
-		f"Converted {summary.visible_slides} visible slides: "
-		f"{summary.editable_slides} editable, {summary.review_slides} layout review, "
-		f"{summary.hidden_slides} hidden, {summary.extracted_images} content images"
+		f"Converted {summary.editable_slides} editable slides: "
+		f"{summary.visible_slides} visible, {summary.hidden_slides} hidden, "
+		f"{summary.review_slides} layout review, {summary.extracted_images} content images"
 	)
 	print(f"Djot: {summary.output_path}")
 	print(f"Import report: {summary.report_path}")

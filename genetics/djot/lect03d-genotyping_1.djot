@@ -1,0 +1,559 @@
+=== layout: title-slide
+
+# Lecture 3D
+
+## Genetic Analysis / SNP Genotyping / Chapter 2 / Dr. Neil Voss / Sept 15, 2026
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: section
+
+# DNA Fingerprinting\: Single Nucleotide Polymorphisms
+
+=== layout: one-panel
+
+# SNP Genotyping
+
+@body
+
+- SNP genotyping is the measurement of genetic variations of single nucleotide polymorphisms (SNPs).
+  - It is a form of genotyping, which is the measurement of more general genetic variation.
+- A single-nucleotide polymorphism (pronounced “snips” ✂︎✂✂)
+  - is a substitution of a single nucleotide at a specific position in the genome, that is present in a sufficiently large fraction of the population (e.g. 1% or more)
+
+=== layout: two-panels
+
+# Size of Different Genotypes
+
+@left
+
+- Diploid genome: about 6 billion base pairs.
+- Exome: protein-coding exons; about 30 million base pairs.
+- About 4-5 million SNPs per person relative to the reference genome.
+
+@right
+
+| Assay | Sites |
+| --- | --- |
+| Genome | 3,200,000,000 |
+| All SNPs | 149,735,377 |
+| Exome | 39,000,000 |
+| Omni SNP | 2,381,000 |
+| FTDNA | 720,350 |
+| Ancestry | 664,000 |
+| 23andMe | 654,027 |
+| SNPedia | 111,300 |
+
+=== layout: one-panel
+
+# Genotype Coverage and Costs (2020)
+
+@body
+
+| Assay | Sites | % | 2020 $ |
+| --- | --- | --- | --- |
+| Genome | 3,200,000,000 | 100.000% | $599 |
+| All SNPs | 149,735,377 | 4.679% |  |
+| Exome | 39,000,000 | 1.219% | $400 |
+| Omni SNP | 2,381,000 | 0.074% |  |
+| FTDNA | 720,350 | 0.023% | $59 |
+| Ancestry | 664,000 | 0.021% | $59 |
+| 23andMe | 654,027 | 0.020% | $99 |
+| SNPedia | 111,300 | 0.003% |  |
+
+=== layout: two-panels
+
+# Differences in Human DNA
+
+@left
+
+![Slide image 1](assets/lect03d-genotyping_1/image_001.png)
+
+@right
+
+- There are service that looks at only the highly variable parts of Human DNA
+- Based on single nucleotide polymorphisms (SNPs or “snips”)
+  - The nucleotide diversity between humans is about 0.1%
+  - But only 1% of these are expected to have any meaningful difference
+  - so only about 30,000 letters are important
+- The service checks certain letters in your DNA that are associated with diseases.
+  - 23andMe tests 640,000 SNPs
+
+=== layout: one-panel
+
+# SNP chips are used to identify SNPs
+
+@body
+
+![Slide image 2](assets/lect03d-genotyping_1/image_002.jpg)
+
+=== layout: two-panels
+
+# SNP chips are used to identify SNPs
+
+@left
+
+![Slide image 3](assets/lect03d-genotyping_1/image_003.jpg)
+
+@right
+
+- The SNP genotype of an individual can be determined by hybridization because DNA from genotypes that are homozygous `TA/TA`, homozygous `CG/CG`, or heterozygous `TA/CG` each gives a different pattern of fluorescence.
+
+=== layout: one-panel
+
+# Video
+
+@body
+
+- Lab Video\:
+  - [http\://youtu.be/Enn3BHE3v4s](http://youtu.be/Enn3BHE3v4s)
+- Dustin Visit to 23andMe sequencing center
+  - [http\://youtu.be/U3EEmVfbKNs](http://youtu.be/U3EEmVfbKNs)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect03d-genotyping_1/image_004.png)
+
+@right
+
+- As of May 2020
+- [https\://geneticgenie.org/article/best-dna-raw-data-23andme-ancestrydna-or-myheritage/](https://geneticgenie.org/article/best-dna-raw-data-23andme-ancestrydna-or-myheritage/)
+
+=== layout: section
+
+# Dr. Voss Navigenics DNA analysis circa 2009
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect03d-genotyping_1/image_005.png)
+
+![Slide image 6](assets/lect03d-genotyping_1/image_006.png)
+
+- Atrial fibrillation = abnormal heart rhythm
+
+- Dr. Voss' SNPs 2009
+
+=== layout: section
+
+# Dr. Voss 23andMe DNA analysis Black Friday 2016
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 7](assets/lect03d-genotyping_1/image_007.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect03d-genotyping_1/image_008.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 9](assets/lect03d-genotyping_1/image_009.png)
+
+=== layout: section
+
+# Ancestry.com DNA analysis Black Friday 2020
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect03d-genotyping_1/image_010.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect03d-genotyping_1/image_011.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 12](assets/lect03d-genotyping_1/image_012.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect03d-genotyping_1/image_013.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 14](assets/lect03d-genotyping_1/image_014.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 15](assets/lect03d-genotyping_1/image_015.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 16](assets/lect03d-genotyping_1/image_016.png)
+
+=== layout: section
+
+# Top Posts from Reddit/r/23andMe
+
+=== layout: two-panels
+
+# I’m Korean, Just Korean
+
+@left
+
+![Slide image 17](assets/lect03d-genotyping_1/image_017.png)
+
+@right
+
+![Slide image 18](assets/lect03d-genotyping_1/image_018.png)
+
+=== layout: two-panels
+
+# Ancestry Results
+
+@left
+
+My parents were mad i spent \$100 on something they already knew. (South Indian results)
+
+@right
+
+![Slide image 19](assets/lect03d-genotyping_1/image_019.png)
+
+![Slide image 20](assets/lect03d-genotyping_1/image_020.png)
+
+![Slide image 21](assets/lect03d-genotyping_1/image_021.png)
+
+=== layout: two-panels
+
+# Ancestry Results
+
+@left
+
+Just your ordinary Black American here! Surprised, not surprised, very confused about the hair thing. Anyone else get extremely rare traits that you thought were common ones?
+
+@right
+
+![Slide image 22](assets/lect03d-genotyping_1/image_022.png)
+
+![Slide image 23](assets/lect03d-genotyping_1/image_023.png)
+
+=== layout: two-panels
+
+# Palestinian grandma
+
+@left
+
+![Slide image 24](assets/lect03d-genotyping_1/image_024.png)
+
+@right
+
+![Slide image 25](assets/lect03d-genotyping_1/image_025.png)
+
+=== layout: two-panels
+
+# Ancestry Results
+
+@left
+
+UPDATED Black American. Very little change. More West African and Spanish And Portuguese Now. Lol
+
+@right
+
+![Slide image 26](assets/lect03d-genotyping_1/image_026.png)
+
+![Slide image 27](assets/lect03d-genotyping_1/image_027.png)
+
+![Slide image 28](assets/lect03d-genotyping_1/image_028.png)
+
+![Slide image 29](assets/lect03d-genotyping_1/image_029.png)
+
+=== layout: two-panels
+
+# Ancestry Results
+
+@left
+
+Korean + Nigerian Results! Both parents are 1st generation immigrants.
+
+@right
+
+![Slide image 30](assets/lect03d-genotyping_1/image_030.png)
+
+![Slide image 31](assets/lect03d-genotyping_1/image_031.png)
+
+![Slide image 32](assets/lect03d-genotyping_1/image_032.png)
+
+![Slide image 33](assets/lect03d-genotyping_1/image_033.png)
+
+=== layout: two-panels
+
+# Ancestry Results
+
+@left
+
+My Parents weren't lying when they told me i'm only Chinese LMAO I'm a bit disappointed there wasn't any variety, not even 0.1%!
+
+@right
+
+![Slide image 34](assets/lect03d-genotyping_1/image_034.png)
+
+![Slide image 35](assets/lect03d-genotyping_1/image_035.png)
+
+![Slide image 36](assets/lect03d-genotyping_1/image_036.png)
+
+=== layout: two-panels
+
+# Ancestry Results
+
+@left
+
+Updated results. East Asian & Native American at 99.2%😀
+
+@right
+
+![Slide image 37](assets/lect03d-genotyping_1/image_037.png)
+
+![Slide image 38](assets/lect03d-genotyping_1/image_038.png)
+
+![Slide image 39](assets/lect03d-genotyping_1/image_039.png)
+
+![Slide image 40](assets/lect03d-genotyping_1/image_040.png)
+
+=== layout: two-plus-one-panels
+
+# Black / African American for generations results
+
+@top-left
+
+![Slide image 41](assets/lect03d-genotyping_1/image_041.png)
+
+@bottom-left
+
+![Slide image 43](assets/lect03d-genotyping_1/image_043.png)
+
+@right
+
+![Slide image 42](assets/lect03d-genotyping_1/image_042.png)
+
+=== layout: one-plus-two-panels
+
+
+@left
+
+![Slide image 44](assets/lect03d-genotyping_1/image_044.png)
+
+@top-right
+
+- Post-Update Results w/ Picture!!
+
+@bottom-right
+
+![Slide image 45](assets/lect03d-genotyping_1/image_045.png)
+
+=== layout: section
+
+# Genetics and Race
+
+=== layout: one-panel
+
+# Question 1
+
+@body
+
+- People of the SAME racial group are genetically UNIFORM.
+  - A. Mostly True
+  - B. Somewhat True
+  - C. Somewhat False
+  - D. Mostly False
+
+=== layout: one-panel
+
+# Question 2
+
+@body
+
+- People of DISPARATE races are categorically DIFFERENT.
+  - A. Mostly True
+  - B. Somewhat True
+  - C. Somewhat False
+  - D. Mostly False
+
+=== layout: one-panel
+
+# Question 3
+
+@body
+
+- Biologically-influenced abilities CANNOT CHANGE.
+  - A. Mostly True
+  - B. Somewhat True
+  - C. Somewhat False
+  - D. Mostly False
+
+=== layout: one-panel
+
+# Question 4
+
+@body
+
+- People of the SAME sex/gender are genetically UNIFORM.
+  - A. Mostly True
+  - B. Somewhat True
+  - C. Somewhat False
+  - D. Mostly False
+
+=== layout: one-panel
+
+# Question 5
+
+@body
+
+- Males/boys and females/girls are categorically DIFFERENT genetically and neurologically.
+  - A. Mostly True
+  - B. Somewhat True
+  - C. Somewhat False
+  - D. Mostly False
+
+=== layout: one-panel
+
+# Question 6
+
+@body
+
+- Genes are the most powerful and important cause of complex human traits.
+  - A. Mostly True
+  - B. Somewhat True
+  - C. Somewhat False
+  - D. Mostly False
+
+=== layout: one-panel
+
+# Answers on Race
+
+@body
+
+- As human populations spread around the globe, with people living in relative isolation for millenniums, some differences emerged.
+- Belief in genetic causes of racial inequality remains widespread in the United States
+- Health disparities between black and white Americans are more readily explained by environmental effects such as racism than the DNA they inherited from ancestors
+- However, variation between members of the same race is often greater than variation between races.
+- [https\://www.nytimes.com/2019/12/07/us/race-biology-genetics.html](https://www.nytimes.com/2019/12/07/us/race-biology-genetics.html)
+
+=== layout: one-panel
+
+# Answers on Sex/Gender
+
+@body
+
+- there is more genetic variation within human sexes than there is between them
+- it is hard to categorize a person as male or female based just on their brain
+- females/girls and males/boys are much more similar to each other than students, and perhaps teachers, realize
+
+=== layout: one-panel
+
+# Most Textbooks are Wrong
+
+@body
+
+- The Humane Genetics project explores the role biology education can play in tackling this problem.
+- When biology education causes students to perceive too much genetic variation between racial groups, it can increase racial prejudice.
+- Will this curricular intervention help students and teachers believe that males/boys are not innately better at STEM than females/girls?
+- Could interventions like this play a role in reducing sex/gender disparities in STEM?
+
+=== layout: one-panel
+
+# Genetics and Race Education
+
+@body
+
+  - [https\://bscs.org/humanegenetics/research/](https://bscs.org/humanegenetics/research/)
+- In this webinar, Dr. Brian Donovan shares why Genetics education needs to move beyond Mendel to combat white supremacy.
+  - [https\://player.vimeo.com/video/626604303](https://player.vimeo.com/video/626604303)
+
+=== layout: one-panel
+
+# Eugenics
+
+@body
+
+- Our day-to-day conversations tend to overestimate the differences between humans, whether they pertain to skin pigmentation, culture, linguistics, personality, etc. 
+- While such differences can be enriching, misinterpretation of their importance can be outright dangerous and clearly not based in any sort of mathematical logic.
+- However, variation between members of the same race is often greater than variation between races.
+
+=== layout: one-panel
+
+# First Three Genomes
+
+@body
+
+- The first nearly complete human genomes sequenced were two Americans of predominantly Northwestern European ancestry in 2007
+  - J. Craig Venter
+  - James Watson
+- This was followed in 2008 by sequencing of
+  - anonymous Han Chinese man
+  - Yoruban man from Nigeria
+  - a female clinical geneticist (Marjolein Kriek) from the Netherlands
+  - a female leukemia patient in her mid-50s
+- Steve Jobs was among the first 20 people to have their whole genome sequenced, reportedly for the cost of \$100,000
+
+=== layout: two-panels
+
+# The Eugenics Crusade (2017)
+
+@left
+
+- The Eugenics Crusade tells the story of the eugenics movement and its long history in the United States, from its beginnings in the study of heredity, to its rise as a popular movement promising to uplift the human race through state sponsored sterilization, to its influence on immigration laws designed to close our borders to groups deemed genetically inferior.
+  - IMDB rating 7.8, 77 votes
+- Director\: Michelle Ferrari
+- Run time\: 115 min
+
+@right
+
+![Slide image 46](assets/lect03d-genotyping_1/image_046.png)
+
+=== layout: section
+
+# THE END
+

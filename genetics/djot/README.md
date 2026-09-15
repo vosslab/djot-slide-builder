@@ -18,11 +18,24 @@ these decks. This README records corpus provenance, inventory, and validation ev
 | `lect02d-dna_structure_overview.djot` | 43 | 43 | 0 | 19 | 4 | 6 |
 | `lect02e-restriction_enzymes.djot` | 62 | 62 | 0 | 18 | 25 | 35 |
 | `lect02f-dna_electrophoresis.djot` | 27 | 26 | 1 | 20 | 15 | 17 |
-| **Total** | **378** | **336** | **42** | **150** | **72** | **113** |
+| `lect03a-2026_announcements.djot` | 66 | 40 | 26 | 15 | 3 | 15 |
+| `lect03b-blood_hla_typing.djot` | 44 | 44 | 0 | 16 | 11 | 27 |
+| `lect03c-fingerprinting.djot` | 51 | 51 | 0 | 23 | 5 | 26 |
+| `lect03d-genotyping_1.djot` | 51 | 51 | 0 | 46 | 4 | 19 |
+| `lect03e-genotyping_2.djot` | 28 | 28 | 0 | 15 | 4 | 11 |
+| `lect03f-whole_genome_analysis.djot` | 24 | 24 | 0 | 9 | 0 | 9 |
+| `lect03g-chap2_challenges.djot` | 11 | 11 | 0 | 2 | 7 | 8 |
+| **Total** | **653** | **585** | **68** | **276** | **106** | **228** |
 
 `assets/<deck>/import_report.json` retains the import inventory, including each visible source-slide
 number, selected layout, omitted-note count, and extraction-review reason. Image placement count can
 exceed the distinct-asset count because a figure may recur across teaching steps.
+
+The inventory records the initial import, before manual teaching-layout repairs. Lecture 03 uses
+the 2026 announcements; the older 2025 announcements remain only in the legacy input folder.
+All 26 hidden Lecture 03 slides are retained in Djot with `hidden: true`. The earlier Lecture 01/02
+imports still record their omitted hidden slides in their reports; they have not been reimported.
+See [LECT03_REVIEW.md](LECT03_REVIEW.md) for the conversion, repairs, and verification boundary.
 
 ## Corpus acceptance evidence
 

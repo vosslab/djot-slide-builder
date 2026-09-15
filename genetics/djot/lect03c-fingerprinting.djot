@@ -1,0 +1,580 @@
+=== layout: title-slide
+
+# Lecture 3C
+
+## Genetic Analysis / DNA Profiling / Chapter 2 / Dr. Neil Voss / Sept 15, 2026
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: section
+
+# DNA Fingerprinting\: Overview
+
+=== layout: one-panel
+
+# Types of DNA markers present in genomic DNA
+
+@body
+
+- Single nucleotide polymorphism (SNP)
+- Restriction fragment length polymorphism (RFLP)
+- Tandem repeat polymorphisms
+  - simple sequence repeat (SSR)
+  - variable number of tandem repeats (VNTR)
+- Copy number polymorphism (CNP)
+
+=== layout: one-panel
+
+# Disease genes can be mapped using DNA markers
+
+@body
+
+![Slide image 1](assets/lect03c-fingerprinting/image_001.jpg)
+
+=== layout: section
+
+# Using Restriction Sites for Genetic Profiling
+
+=== layout: one-panel
+
+# DNA Profiling
+
+@body
+
+- DNA profiling is a method used to identify an individual from a sample of DNA by looking at unique patterns in their DNA.
+  - It is essentially a DNA “fingerprint”
+- Many different methods have been developed for DNA profiling individuals using DNA fragments and restriction enzymes.
+- Different aspects of our genome lead to the ability to fingerprint individuals
+  - RFLPs, VNTRs, and STRs
+
+=== layout: one-panel
+
+# RFLPs are due to SNPs in restriction sites
+
+@body
+
+![Slide image 2](assets/lect03c-fingerprinting/image_002.jpg)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect03c-fingerprinting/image_003.jpg)
+
+@right
+
+- RFLPs are codominant
+
+- RFLPs create DNA fragments of different sizes.
+- The fragments are the same size in a homozygote.
+- The fragments are different sizes in a heterozygote.
+
+=== layout: two-panels
+
+# Tandem repeat polymorphism
+
+@left
+
+![Slide image 4](assets/lect03c-fingerprinting/image_004.jpg)
+
+@right
+
+- A genetic polymorphism in which the alleles in a population differ in the number of copies of a DNA sequence
+  - (typically 2–60 bp) that is repeated in tandem along the chromosome.
+
+=== layout: one-panel
+
+# Tandem repeat polymorphisms
+
+@body
+
+- STR
+  - Also called microsatellites
+  - tract of repetitive DNA in which certain DNA motifs (2–13 base pairs in length) are repeated, typically 5–50 times.
+  - abundant in the human genome
+  - often highly polymorphic in human populations
+- VNTR
+  - Variable number of tandem repeats
+  - \~ 10-60 nt
+
+=== layout: section
+
+# DNA Fingerprinting\: Short Tandem Repeats (STR)
+
+=== layout: one-panel
+
+# Forensic Evidence and Genetic Profiles
+
+@body
+
+- An individual’s unique DNA sequence, or genetic profile, can be obtained by analysis of tissue or body fluids
+- DNA testing can identify individuals with a high degree of certainty
+- Genetic profiles are currently analyzed using genetic markers called short tandem repeats (STRs)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect03c-fingerprinting/image_005.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 6](assets/lect03c-fingerprinting/image_006.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 7](assets/lect03c-fingerprinting/image_007.jpg)
+
+@right
+
+- In a crime scene blood sample, we are usually looking for an exact match
+- In some cases the victim and criminal fractions will be mixed.
+
+=== layout: one-panel
+
+# DNA Evidence Exonerated Earl Washington
+
+@body
+
+| Sample | STR 1 | STR 2 | STR 3 |
+| --- | --- | --- | --- |
+| Semen | 17,19 | 13,16 | 12,12 |
+| Earl W. | 16,18 | 14,15 | 11,12 |
+| Tinsley | 17,19 | 13,16 | 12,12 |
+
+=== layout: one-panel
+
+# STR Fingerprinting Video
+
+@body
+
+- Boseman Science\:
+  - [https\://youtu.be/DbR9xMXuK7c](https://youtu.be/DbR9xMXuK7c)
+
+=== layout: section
+
+# Who’s the Daddy?
+
+=== layout: one-panel
+
+# Who’s the father?
+
+@body
+
+![Slide image 9](assets/lect03c-fingerprinting/image_009.png)
+
+=== layout: one-panel
+
+# Paternity Sample Rules
+
+@body
+
+- 1. ALL of the bands in the child must come from a parent
+  - every band in the child must be accounted for
+- 2. Only some bands from each parent are present in the child.
+  - Just because the mother/father has a band does not mean the child has to have it.
+- 3. If the child has a band that the mother is missing, it must come from the father.
+
+=== layout: two-panels
+
+# Who’s the father?
+
+@left
+
+![Slide image 9](assets/lect03c-fingerprinting/image_009.png)
+
+@right
+
+- 1. ALL of the bands in the child must come from a parent
+- 2. Only some bands from each parent are present in the child.
+- 3. If the child has a band that the mother is missing it must come from the father.
+
+=== layout: two-panels
+
+# Who’s the father?
+
+@left
+
+![Slide image 9](assets/lect03c-fingerprinting/image_009.png)
+
+@right
+
+- 1. ALL of the bands in the child must come from a parent
+- 2. Only some bands from each parent are present in the child.
+- 3. If the child has a band that the mother is missing it must come from the father.
+  - Compare the child's bands that are absent from the mother with each possible father.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect03c-fingerprinting/image_010.png)
+
+- Answer\: A
+
+![Slide image 11](assets/lect03c-fingerprinting/image_011.png)
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 12](assets/lect03c-fingerprinting/image_012.png)
+
+@bottom
+
+![Slide image 13](assets/lect03c-fingerprinting/image_013.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect03c-fingerprinting/image_013.png)
+
+=== layout: one-panel
+
+# Paternity Sample Rules
+
+@body
+
+- 1. ALL of the bands in the child must come from a parent
+  - every band in the child must be accounted for
+- 2. Only some bands from each parent are present in the child.
+  - Just because the mother/father has a band does not mean the child has to have it.
+- 3. If the child has a band that the mother is missing, it must come from the father.
+
+=== layout: section
+
+# Crime Scene Investigation (CSI)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 14](assets/lect03c-fingerprinting/image_014.png)
+
+![Slide image 15](assets/lect03c-fingerprinting/image_015.png)
+
+=== layout: four-panels
+
+
+@top-left
+
+![Slide image 16](assets/lect03c-fingerprinting/image_016.png)
+
+@top-right
+
+![Slide image 17](assets/lect03c-fingerprinting/image_017.png)
+
+@bottom-left
+
+![Slide image 18](assets/lect03c-fingerprinting/image_018.png)
+
+@bottom-right
+
+![Slide image 19](assets/lect03c-fingerprinting/image_019.png)
+
+=== layout: four-panels
+
+
+@top-left
+
+![Slide image 19](assets/lect03c-fingerprinting/image_016.png)
+
+@top-right
+
+![Slide image 19](assets/lect03c-fingerprinting/image_017.png)
+
+@bottom-left
+
+![Slide image 19](assets/lect03c-fingerprinting/image_018.png)
+
+@bottom-right
+
+![Slide image 19](assets/lect03c-fingerprinting/image_019.png)
+
+
+
+Compare A and B at locus 1; A and F at locus 2; A, B, and F at locus 3.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect03c-fingerprinting/image_016.png)
+
+![Slide image 19](assets/lect03c-fingerprinting/image_017.png)
+
+![Slide image 19](assets/lect03c-fingerprinting/image_018.png)
+
+![Slide image 19](assets/lect03c-fingerprinting/image_019.png)
+
+- Answer\: A
+
+=== layout: one-panel
+
+# Crime Scene Sample Rules
+
+@body
+
+- 1. ALL of the bands in the crime scene sample must come the victim or the criminal
+  - every band in the crime scene sample must be accounted for
+- 2. ALL bands from both the criminal and victim are present in the crime scene sample
+  - If the suspect has a band that is not in the crime scene sample, then they must be innocent
+- 3. If a band from the crime scene is not present in the victim, then the criminal must have that band.
+
+=== layout: one-panel
+
+# Which suspect was at the crime scene?
+
+@body
+
+![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+
+=== layout: two-panels
+
+# Which suspect was at the crime scene?
+
+@left
+
+![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+
+@right
+
+Exclude suspects 1, 4, and 5: they have bands absent from the crime-scene sample.
+
+=== layout: two-panels
+
+# Which suspect was at the crime scene?
+
+@left
+
+![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+
+@right
+
+- every band in the crime scene sample must be accounted for
+
+
+
+Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
+
+=== layout: two-panels
+
+# Which suspect was at the crime scene?
+
+@left
+
+![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+
+@right
+
+- every band in the crime scene sample must be accounted for
+
+
+
+*Answer: suspect 3.*
+
+=== layout: one-panel
+
+# Crime Scene Sample Rules
+
+@body
+
+- 1. ALL of the bands in the crime scene sample must come the victim or the criminal
+  - every band in the crime scene sample must be accounted for
+- 2. ALL bands from both the criminal and victim are present in the crime scene sample
+  - If the suspect has a band that is not in the crime scene sample, then they must be innocent
+- 3. If a band from the crime scene is not present in the victim, then the criminal must have that band.
+
+=== layout: one-panel
+
+# 2024 Breakout Rooms
+
+@body
+
+- Group 01\: [https\://docs.google.com/presentation/d/1j0m6HGaJoSiswI3TZEA\_7n8vKDmkjgQtRogSI-hWlQU/edit](https://docs.google.com/presentation/d/1j0m6HGaJoSiswI3TZEA_7n8vKDmkjgQtRogSI-hWlQU/edit)
+- Group 02\: [https\://docs.google.com/presentation/d/1NtHfZ0\_NIiWPkjxO55dzO17rzInwO4pV3m0NMyQrGLY/edit](https://docs.google.com/presentation/d/1NtHfZ0_NIiWPkjxO55dzO17rzInwO4pV3m0NMyQrGLY/edit)
+- Group 03\: [https\://docs.google.com/presentation/d/1FwYVHgGivIHLXFciuqJXUXyXSGSVx9um99PO07e\_6F4/edit](https://docs.google.com/presentation/d/1FwYVHgGivIHLXFciuqJXUXyXSGSVx9um99PO07e_6F4/edit)
+- Group 04\: [https\://docs.google.com/presentation/d/1ajxU9PC556hcJ4TBZ0e2dpdQaozd9un4qHoMh2xycAQ/edit](https://docs.google.com/presentation/d/1ajxU9PC556hcJ4TBZ0e2dpdQaozd9un4qHoMh2xycAQ/edit)
+- Group 05\: [https\://docs.google.com/presentation/d/1hIbuM9ELGEa71HJpDJzWv-TiRmriwVV8w6nfNWuqzQE/edit](https://docs.google.com/presentation/d/1hIbuM9ELGEa71HJpDJzWv-TiRmriwVV8w6nfNWuqzQE/edit)
+- Group 06\: [https\://docs.google.com/presentation/d/1Ma6j1pP-lWgks7OI2FLvzANX57zz0mtRdMIWKwZfVMA/edit](https://docs.google.com/presentation/d/1Ma6j1pP-lWgks7OI2FLvzANX57zz0mtRdMIWKwZfVMA/edit)
+- Group 07\: [https\://docs.google.com/presentation/d/1ZvU440C4Yps0kOUfJVU9XMrd-ZZHj9cdnqAq\_\_xqNL0/edit](https://docs.google.com/presentation/d/1ZvU440C4Yps0kOUfJVU9XMrd-ZZHj9cdnqAq__xqNL0/edit)
+- Group 08\: [https\://docs.google.com/presentation/d/1XOkRtbcssLku8g4oDxIWvl-YBjQGt0TQFfUqVXanHoI/edit](https://docs.google.com/presentation/d/1XOkRtbcssLku8g4oDxIWvl-YBjQGt0TQFfUqVXanHoI/edit)
+- Group 09\: [https\://docs.google.com/presentation/d/1d0lh5EfdF28VG9mSqz5J\_dhRadB\_8BOdqfG0Rm1BGZA/edit](https://docs.google.com/presentation/d/1d0lh5EfdF28VG9mSqz5J_dhRadB_8BOdqfG0Rm1BGZA/edit)
+- Group 10\: [https\://docs.google.com/presentation/d/1nSV6fpRn6nIuwypuraaZvDuVIc5VLlFpcxecJfHz7fE/edit](https://docs.google.com/presentation/d/1nSV6fpRn6nIuwypuraaZvDuVIc5VLlFpcxecJfHz7fE/edit)
+- Group 11\: [https\://docs.google.com/presentation/d/1AvKvWylO-Uc4xsu3jyyJObmxfsORx-dLSi8EHWtqdRw/edit](https://docs.google.com/presentation/d/1AvKvWylO-Uc4xsu3jyyJObmxfsORx-dLSi8EHWtqdRw/edit)
+- Group 12\: [https\://docs.google.com/presentation/d/1JHHDclc1PVWyHx-8As3DxRuQbWq4\_ZWlxeBBtW-TS0k/edit](https://docs.google.com/presentation/d/1JHHDclc1PVWyHx-8As3DxRuQbWq4_ZWlxeBBtW-TS0k/edit)
+- Group 13\: [https\://docs.google.com/presentation/d/1xI6cMoHRWPg3gVSdoqdZhRbKdKKb707yHfPPvRNoUqk/edit](https://docs.google.com/presentation/d/1xI6cMoHRWPg3gVSdoqdZhRbKdKKb707yHfPPvRNoUqk/edit)
+- Group 14\: [https\://docs.google.com/presentation/d/1M5aRlcPnqBcgizxA2lzKzqwEU0xBeen05uNMPaB-3Fk/edit](https://docs.google.com/presentation/d/1M5aRlcPnqBcgizxA2lzKzqwEU0xBeen05uNMPaB-3Fk/edit)
+- Group 15\: [https\://docs.google.com/presentation/d/1OfF9FIxekEiCsLPaueysfhBhZOrfqwhOok7h1I1K\_U8/edit](https://docs.google.com/presentation/d/1OfF9FIxekEiCsLPaueysfhBhZOrfqwhOok7h1I1K_U8/edit)
+- Group 16\: [https\://docs.google.com/presentation/d/1ShLRZePN-fBMKCz0p08DP1QRxDmrrD9zRtWZBfjk90k/edit](https://docs.google.com/presentation/d/1ShLRZePN-fBMKCz0p08DP1QRxDmrrD9zRtWZBfjk90k/edit)
+
+=== layout: one-panel
+
+# 2023 Breakout Groups
+
+@body
+
+- Group 01\: [https\://docs.google.com/presentation/d/1nQGShnsX\_MGM8MFwCQP9SM8aQ\_XJo0uPgEQJ3riEzoc/edit](https://docs.google.com/presentation/d/1nQGShnsX_MGM8MFwCQP9SM8aQ_XJo0uPgEQJ3riEzoc/edit)
+- Group 02\: [https\://docs.google.com/presentation/d/1gdTR9CFABdTyPNcZbiLdVBmnx1tNjM24-7iOj6GvzcE/edit](https://docs.google.com/presentation/d/1gdTR9CFABdTyPNcZbiLdVBmnx1tNjM24-7iOj6GvzcE/edit)
+- Group 03\: [https\://docs.google.com/presentation/d/18k485cWN\_QIoHM6qD2KOwx8ojzL9YFHAwlVzly7sO3A/edit](https://docs.google.com/presentation/d/18k485cWN_QIoHM6qD2KOwx8ojzL9YFHAwlVzly7sO3A/edit)
+- Group 04\: [https\://docs.google.com/presentation/d/16KgHnCuGsH8JMoGgwa4xI4j8kh4Cqy1DprGPl4rvJQY/edit](https://docs.google.com/presentation/d/16KgHnCuGsH8JMoGgwa4xI4j8kh4Cqy1DprGPl4rvJQY/edit)
+- Group 05\: [https\://docs.google.com/presentation/d/1rQclqNxoqSMxLx8DIkA1t1EtH-0rD4yfyLvyEY-o9cI/edit](https://docs.google.com/presentation/d/1rQclqNxoqSMxLx8DIkA1t1EtH-0rD4yfyLvyEY-o9cI/edit)
+- Group 06\: [https\://docs.google.com/presentation/d/1XcOf5-UM-13tyA0m6Fi1cotXCDgv\_d1srDkAST-8v28/edit](https://docs.google.com/presentation/d/1XcOf5-UM-13tyA0m6Fi1cotXCDgv_d1srDkAST-8v28/edit)
+- Group 07\: [https\://docs.google.com/presentation/d/1djaQOdslXqFVW89lAzNHWgOVktI0Koimq1meWw-djlc/edit](https://docs.google.com/presentation/d/1djaQOdslXqFVW89lAzNHWgOVktI0Koimq1meWw-djlc/edit)
+- Group 08\: [https\://docs.google.com/presentation/d/13OArnVuJULvYDAL78pX9kb3aLpyJks-UE2ytSiyfAP0/edit](https://docs.google.com/presentation/d/13OArnVuJULvYDAL78pX9kb3aLpyJks-UE2ytSiyfAP0/edit)
+- Group 09\: [https\://docs.google.com/presentation/d/1T3UyMbW-zezhNVCZTZKIn5JpzV5LnncoCQ-0wkyCxmg/edit](https://docs.google.com/presentation/d/1T3UyMbW-zezhNVCZTZKIn5JpzV5LnncoCQ-0wkyCxmg/edit)
+- Group 10\: [https\://docs.google.com/presentation/d/10RGe7XwSCIldGUAmS-G5LGEcxWejku7Ob9XKE3wyK4E/edit](https://docs.google.com/presentation/d/10RGe7XwSCIldGUAmS-G5LGEcxWejku7Ob9XKE3wyK4E/edit)
+- Group 11\: [https\://docs.google.com/presentation/d/1GrfvNw1OvmO8Y9g7PoakrIomVyfeXTIvx3kl2YVXVyM/edit](https://docs.google.com/presentation/d/1GrfvNw1OvmO8Y9g7PoakrIomVyfeXTIvx3kl2YVXVyM/edit)
+
+=== layout: one-panel
+
+# 2022 Breakout Groups
+
+@body
+
+- Group 01\: [https\://docs.google.com/presentation/d/1pzMmdwx1MH6ak7FtellmP79LptDi8SCplOg4h0LIQJY/edit?usp=sharing](https://docs.google.com/presentation/d/1pzMmdwx1MH6ak7FtellmP79LptDi8SCplOg4h0LIQJY/edit?usp=sharing)
+- Group 02\: [https\://docs.google.com/presentation/d/1877-L6TTDsP-KTTLOx5CNx3W7C2HxCUEyJjrBB-aVYI/edit?usp=sharing](https://docs.google.com/presentation/d/1877-L6TTDsP-KTTLOx5CNx3W7C2HxCUEyJjrBB-aVYI/edit?usp=sharing)
+- Group 03\: [https\://docs.google.com/presentation/d/1QkC4KWaVhU-p5k\_Pxp67GCILrm0X1\_sgpCKDb9QN59c/edit?usp=sharing](https://docs.google.com/presentation/d/1QkC4KWaVhU-p5k_Pxp67GCILrm0X1_sgpCKDb9QN59c/edit?usp=sharing)
+- Group 04\: [https\://docs.google.com/presentation/d/1y10mWwZIAItu-\_XTG7WFclmB7UjB5R3231JF0GowS-U/edit?usp=sharing](https://docs.google.com/presentation/d/1y10mWwZIAItu-_XTG7WFclmB7UjB5R3231JF0GowS-U/edit?usp=sharing)
+- Group 05\: [https\://docs.google.com/presentation/d/1PTnJ2bh9CHIfzjqqxUrlC9uGWQ39lYZSFU5R7Kv1imc/edit?usp=sharing](https://docs.google.com/presentation/d/1PTnJ2bh9CHIfzjqqxUrlC9uGWQ39lYZSFU5R7Kv1imc/edit?usp=sharing)
+- Group 06\: [https\://docs.google.com/presentation/d/1fXtENh6Jdrv0HkIWTEVt2jR19dZXk41KexFmmJZ4EDA/edit?usp=sharing](https://docs.google.com/presentation/d/1fXtENh6Jdrv0HkIWTEVt2jR19dZXk41KexFmmJZ4EDA/edit?usp=sharing)
+- Group 07\: [https\://docs.google.com/presentation/d/1K5UpvbAHrpYcQcHrH2IPHVhIPVZLFAVaa-mbZN-\_g-A/edit?usp=sharing](https://docs.google.com/presentation/d/1K5UpvbAHrpYcQcHrH2IPHVhIPVZLFAVaa-mbZN-_g-A/edit?usp=sharing)
+- Group 08\: [https\://docs.google.com/presentation/d/1FS9p7KaVWjEhARcyUaHzBJbc8K-1BLPj4FwH5AZQcac/edit?usp=sharing](https://docs.google.com/presentation/d/1FS9p7KaVWjEhARcyUaHzBJbc8K-1BLPj4FwH5AZQcac/edit?usp=sharing)
+- Group 09\: [https\://docs.google.com/presentation/d/1F8POI\_QPaWmIwLOei5zMyb3bb1D-HC-NVx5yFcWp2Ss/edit?usp=sharing](https://docs.google.com/presentation/d/1F8POI_QPaWmIwLOei5zMyb3bb1D-HC-NVx5yFcWp2Ss/edit?usp=sharing)
+
+=== layout: one-panel
+
+# 2021 Breakout Groups
+
+@body
+
+- Group 1
+  - [https\://docs.google.com/presentation/d/1tob-pdNU6Z4aYRfoPdK19ikXPBSSVd2phEaOrc447vA/edit?usp=sharing](https://docs.google.com/presentation/d/1tob-pdNU6Z4aYRfoPdK19ikXPBSSVd2phEaOrc447vA/edit?usp=sharing)
+- Group 2
+  - [https\://docs.google.com/presentation/d/122f5Q72kNoGJUuWSMJFpBZIxJorQUkH07NwGAuEzxgo/edit?usp=sharing](https://docs.google.com/presentation/d/122f5Q72kNoGJUuWSMJFpBZIxJorQUkH07NwGAuEzxgo/edit?usp=sharing)
+- Group 3
+  - [https\://docs.google.com/presentation/d/14x4D2AAiJUEJFEMdR83pgBPQ7Ajek04vL2kGjHR\_hJw/edit?usp=sharing](https://docs.google.com/presentation/d/14x4D2AAiJUEJFEMdR83pgBPQ7Ajek04vL2kGjHR_hJw/edit?usp=sharing)
+- Group 4
+  - [https\://docs.google.com/presentation/d/1ISke1-mPi6x3ngNSUg0PzFCbKLcyXfmzEq3oLZ8c5dA/edit?usp=sharing](https://docs.google.com/presentation/d/1ISke1-mPi6x3ngNSUg0PzFCbKLcyXfmzEq3oLZ8c5dA/edit?usp=sharing)
+- Group 5
+  - [https\://docs.google.com/presentation/d/1\_gaCPHr8FfT4BPF54D-NPqEgkFyWXOnFXfTE6O4I-vI/edit?usp=sharing](https://docs.google.com/presentation/d/1_gaCPHr8FfT4BPF54D-NPqEgkFyWXOnFXfTE6O4I-vI/edit?usp=sharing)
+- Group 6
+  - [https\://docs.google.com/presentation/d/1bRr53qH\_wURwXWGC-RTftKi\_0um1755ZnNfDfX1gubE/edit?usp=sharing](https://docs.google.com/presentation/d/1bRr53qH_wURwXWGC-RTftKi_0um1755ZnNfDfX1gubE/edit?usp=sharing)
+- Group 7
+  - [https\://docs.google.com/presentation/d/1U0KGq-pEZwboJqL4GxTjTBdu2KUyvo3uU9Gjd4Tzvf0/edit?usp=sharing](https://docs.google.com/presentation/d/1U0KGq-pEZwboJqL4GxTjTBdu2KUyvo3uU9Gjd4Tzvf0/edit?usp=sharing)
+- Group 8
+  - [https\://docs.google.com/presentation/d/1m7NpuIUgDrz026sNkOByUedj3WBmcik3OIXUHRK9xf0/edit?usp=sharing](https://docs.google.com/presentation/d/1m7NpuIUgDrz026sNkOByUedj3WBmcik3OIXUHRK9xf0/edit?usp=sharing)
+- Group 9
+  - [https\://docs.google.com/presentation/d/1mT3VDNCQxh2WoaTSOUuXTeQKM8rA\_AIYK5Fn5dSNS2U/edit?usp=sharing](https://docs.google.com/presentation/d/1mT3VDNCQxh2WoaTSOUuXTeQKM8rA_AIYK5Fn5dSNS2U/edit?usp=sharing)
+
+=== layout: section
+
+# Challenge Problems
+
+=== layout: one-panel
+
+# Paternity Sample Rules
+
+@body
+
+- 1. ALL of the bands in the child must come from a parent
+  - every band in the child must be accounted for
+- 2. Only some bands from each parent are present in the child.
+  - Just because the mother/father has a band does not mean the child has to have it.
+- 3. If the child has a band that the mother is missing, it must come from the father.
+
+=== layout: one-panel
+
+# Challenge?
+
+@body
+
+![Slide image 21](assets/lect03c-fingerprinting/image_021.png)
+
+=== layout: two-panels
+
+# Challenge?
+
+@left
+
+![Slide image 21](assets/lect03c-fingerprinting/image_021.png)
+
+@right
+
+*Answer: male 1.*
+
+=== layout: one-panel
+
+# Crime Scene Sample Rules
+
+@body
+
+- 1. ALL of the bands in the crime scene sample must come the victim or the criminal
+  - every band in the crime scene sample must be accounted for
+- 2. ALL bands from both the criminal and victim are present in the crime scene sample
+  - If the suspect has a band that is not in the crime scene sample, then they must be innocent
+- 3. If a band from the crime scene is not present in the victim, then the criminal must have that band.
+
+=== layout: one-panel
+
+# Challenge?
+
+@body
+
+![Slide image 22](assets/lect03c-fingerprinting/image_022.png)
+
+=== layout: two-panels
+
+# Challenge?
+
+@left
+
+![Slide image 22](assets/lect03c-fingerprinting/image_022.png)
+
+@right
+
+*Answer: suspect 3.*
+
+=== layout: one-panel
+
+# Next Week Review
+
+@body
+
+![Slide image 23](assets/lect03c-fingerprinting/image_023.png)
+
+=== layout: section
+
+# THE END
+

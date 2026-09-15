@@ -847,7 +847,7 @@ def _render_planned_slide(
 ) -> tuple[list[str], str, list[str]]:
 	"""Emit one geometry plan, never combining text and imagery in one cell."""
 	if planned.plan is None:
-		raise ValueError("hidden slides cannot be emitted")
+		raise ValueError("slide has no import plan")
 	data = planned.data
 	plan = planned.plan
 	if plan.multiple_choice is not None:
@@ -934,15 +934,17 @@ def render_planned_slide(
 def render_planned_djot(
 	planned_slides: list[PlannedSlide],
 ) -> tuple[str, list[dict[str, object]]]:
-	"""Emit all visible planned slides and an auditable geometry import report."""
+	"""Emit every planned slide, preserving source order and hidden metadata."""
 	lines: list[str] = []
 	records: list[dict[str, object]] = []
-	for planned in (item for item in planned_slides if not item.data.hidden):
+	for planned in planned_slides:
 		if lines:
 			lines.append("")
 		slide_lines, layout, reasons = render_planned_slide(
 			planned, planned.visible_page_index == 1,
 		)
+		if planned.data.hidden:
+			slide_lines.insert(1, "hidden: true")
 		lines.extend(slide_lines)
 		records.append(import_report.slide_record(
 			planned.data, planned.plan, planned.visible_page_index, layout, reasons,

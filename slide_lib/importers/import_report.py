@@ -81,6 +81,7 @@ def slide_record(data: source_model.SlideData, plan: slide_plan.SlidePlan | None
 	"""Build one stable, JSON-ready import report record."""
 	return {
 		"source_slide": data.source_index,
+		"hidden": data.hidden,
 		"visible_page": visible_page_index,
 		"layout": layout,
 		"text_blocks": len(data.text_blocks),

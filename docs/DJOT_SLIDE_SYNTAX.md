@@ -1,7 +1,7 @@
 # Djot slide syntax
 
-Djot is the one authored source for a lecture.  Each declared source slide compiles to one editable
-native ODP slide.  Use `deck_tools.py lint --require-native --native-executable <tool> <source>`
+Djot is the one authored source for a lecture. Each visible source slide compiles to one editable
+native ODP slide. Use `deck_tools.py lint --require-native --native-executable <tool> <source>`
 for the separate strict-native-Djot validation lane; compilation then applies the repository's
 presentation parser and reports source-located errors for constructs without a native destination.
 
@@ -29,6 +29,37 @@ Use an exact `@slot` line to enter a named layout region.  Every named slot appe
 before a slot is global content; it supplies titles, subtitles, or root content only when the
 chosen layout accepts it.  Keep ordinary prose and lists in normal Djot form; a layout directive
 and a slot directive are short, whole lines.
+
+## Hidden slides
+
+Keep optional or previously hidden material in source with `hidden: true` after the layout line:
+
+```djot
+=== layout: one-panel
+hidden: true
+
+# Optional review
+
+@body
+
+- Material to keep for a future lecture.
+```
+
+The metadata is one exact, unindented line before any heading, slot, or other content. Blank lines
+may surround it. Accept only lowercase `true` or `false`, without a semicolon. Duplicate metadata,
+invalid values, and metadata after content are errors. Inside a fenced code block it is ordinary
+code text.
+
+Omission or `hidden: false` makes the slide visible. Change the value or remove the line to restore
+the slide at its existing source position. This setting belongs to one slide and never carries
+forward to the next slide.
+
+Hidden slides and their assets remain in Djot and receive the same structural and asset lint checks.
+Normal builds and capacity inspection skip them; they do not appear in either the generated ODP
+or PDF. An entirely hidden deck can be imported and linted, but a build reports no visible slides.
+ODP import preserves all source slides in order and emits `hidden: true` for hidden pages.
+
+## Heading placement
 
 `#` is the level-one slide title in title-bearing layouts.  In `section`, it is instead the centered
 text in that layout's only outline box.  `##` is a subtitle on `title-slide` and `section`; inside a

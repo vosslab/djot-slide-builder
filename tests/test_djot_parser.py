@@ -55,6 +55,25 @@ def test_parse_deck_binds_global_headings_and_named_cells(tmp_path: pathlib.Path
 
 
 #============================================
+@pytest.mark.parametrize("metadata", (
+	"hidden: yes", "hidden: True", "hidden: true;", " hidden: true",
+	"hidden: true\nhidden: false", "# Heading\nhidden: true", "@body\nhidden: true",
+))
+def test_invalid_hidden_metadata_reports_its_source(tmp_path: pathlib.Path, metadata: str) -> None:
+	"""A typo, duplicate, or misplaced directive cannot silently change visibility."""
+	message = parse_error(tmp_path, f"=== layout: one-panel\n{metadata}\n\n@body\nContent.")
+	assert str(tmp_path / "deck.djot") in message and "hidden metadata" in message
+
+
+#============================================
+def test_hidden_metadata_inside_fenced_code_is_content(tmp_path: pathlib.Path) -> None:
+	"""Code examples do not change the surrounding slide's visibility."""
+	deck = parse_source(tmp_path, "=== layout: one-panel\n@body\n```\nhidden: true\n```")
+	assert not deck.slides[0].hidden
+	assert deck.slides[0].cells[0].blocks[0].value == "hidden: true"
+
+
+#============================================
 def test_parse_deck_retains_multiple_subtitles_in_one_global_region(tmp_path: pathlib.Path) -> None:
 	"""Title-slide subtitle text survives global-region assembly."""
 	deck = parse_source(tmp_path, "=== layout: title-slide\n# Genetics\n## Week one\n## Open notes\n")

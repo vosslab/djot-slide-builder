@@ -1,0 +1,295 @@
+=== layout: title-slide
+
+# Lecture 3E
+
+## Genetic Analysis / SNP Genotyping / Chapter 2 / Dr. Neil Voss / Sept 15, 2026
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: section
+
+# 23andMe Health Data
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect03e-genotyping_2/image_001.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 2](assets/lect03e-genotyping_2/image_002.png)
+
+=== layout: one-panel
+
+# Raw SNP Data Download
+
+@body
+
+![Slide image 3](assets/lect03e-genotyping_2/image_003.png)
+
+=== layout: two-over-one-panels
+
+# SNP rs2802292
+
+@top-left
+
+- A study of 5 genes in 3,741 Japanese men
+  - some of whom lived significantly longer than average (centarians)
+- concluded that the FOXO3 gene harbors several SNPs linked to longevity, including this SNP, rs2802292
+  - as well as rs2764264 and rs13217795.
+
+@top-right
+
+![Slide image 4](assets/lect03e-genotyping_2/image_004.png)
+
+@bottom
+
+- [https\://www.snpedia.com/index.php/Rs2802292](https://www.snpedia.com/index.php/Rs2802292)
+
+=== layout: two-panels
+
+# Promethease
+
+@left
+
+- Promethease is a literature retrieval system that builds a personal DNA report based on connecting a file of DNA genotypes to the scientific findings cited in SNPedia.
+  - Customers of DNA testing services (such as 23andMe, Ancestry.com, FamilyTreeDNA, etc.), can retrieve information published science articles about their DNA variations.
+
+@right
+
+![Slide image 5](assets/lect03e-genotyping_2/image_005.png)
+
+=== layout: one-panel
+
+
+@body
+
+- Family secrets exposed for just one easy payment of \$99!
+
+- I was raised in a big Italian family - Christmas dinner meant cannolis, pasta, and lots of red wine. There's just one problem, thanks to 23AndMe, I found out today that I'm not Italian.
+- My grandpa had already taken a genetics test, and boasted to the family that he was 93.7% Italian. Bad news, gramps, we are not biologically related.
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 6](assets/lect03e-genotyping_2/image_006.png)
+
+@right
+
+- Both adopted from China by different American families
+
+=== layout: two-panels
+
+# 23andMe Informed Me My Husband and I Are Related
+
+@left
+
+- After 38 years of marriage, I thought I knew my spouse. Then I got an email from the personalized genomics company 23AndMe with the subject line, “You have new DNA relatives.” Which is how I discovered that my husband Marc and I are related through more than mere marriage. We’re third cousins.
+
+@right
+
+![Slide image 7](assets/lect03e-genotyping_2/image_007.png)
+
+=== layout: one-panel
+
+# 23andme has just shown that I've been accidentally dating my half-sister
+
+@body
+
+- My girlfriend (I'll refer to her as Sarah) and I have been dating for a little over than a year and our relationship has been going very well. We both happen to come from the same town and met each other in college after being introduced by a mutual friend of ours.
+- Christmas day rolls around, and Sarah had bought the both of us 23andme DNA kits. The thing is, is that we were both conceived by in-vitro fertilization via sperm donors. Both of our fathers were infertile so our parents had no choice. Deep down, the both of us were hoping to find our biological fathers through the service.
+- At the top of my screen, I see Sarah's name.... "27% DNA shared...half-sister.........."
+
+=== layout: two-panels
+
+# Warren Releases DNA Results, Challenges Trump Over Native American Ancestry
+
+@left
+
+![Slide image 8](assets/lect03e-genotyping_2/image_008.png)
+
+@right
+
+- Oct 2018, Sen. Elizabeth Warren has released the results of a DNA test that says there is "strong evidence" of Native American ancestry dating back six to 10 generations
+  - less than 1/64th percent
+
+=== layout: section
+
+# The Golden State Killer
+
+=== layout: two-panels
+
+# Golden State Killer DNA
+
+@left
+
+- 1. used DNA taken from an old crime scene
+- 2. upload DNA to public genealogy database \[GEDmatch\]
+- 3. find distant relatives with matching genetic profiles
+  - matches found in GEDmatch were to relatives of the suspect, not the suspect himself.
+  - site provides family trees, able to look for relatives who did not upload genetic data
+
+@right
+
+- 4. family profile was created, and find feasible "suspects" within a family.
+- 5. eliminate suspects based on age, sex, and places of residence
+- 6. prove that his DNA matched that from the crime scenes
+- 7. lifted trace of DNA from suspect car door while at Hobby Lobby
+- 8. arrest and convict
+
+=== layout: two-panels
+
+# Golden State Killer DNA
+
+@left
+
+- In short, the investigators tracked down DeAngelo based on genetic information provided not by him but by one of his relatives.
+
+@right
+
+![Slide image 9](assets/lect03e-genotyping_2/image_009.png)
+
+=== layout: section
+
+# 60 Minutes\: Genetic Genealogy s51e04 Original Air Date Oct 21, 2018 13m42s
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect03e-genotyping_2/image_010.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect03e-genotyping_2/image_011.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 12](assets/lect03e-genotyping_2/image_012.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 13](assets/lect03e-genotyping_2/image_013.png)
+
+@right
+
+- [https\://www.familysearch.org/tree/person/details/LH1D-F9S](https://www.familysearch.org/tree/person/details/LH1D-F9S)
+
+=== layout: section
+
+# Blood Typing via SNP Genotype
+
+=== layout: two-over-one-panels
+
+# 23andMe Paper
+
+@top-left
+
+- We classified haplotypes into blood groups on the basis of genotypes at three SNPs\:
+  - rs8176747, rs41302905, and rs8176719.
+- A deletion at rs8176719 confers a type O haplotype
+  - as does a T allele at rs41302905.
+- If neither rs8176719 nor rs41302905 confers type O,
+- then rs8176747 distinguishes between types A and B.
+
+@top-right
+
+- The blood group assignment methodology described is incomplete
+- there are other rare variants that can influence blood group.
+  - compared to self-reported blood groups from over 1.47 million research participants,
+  - the genetic assignments achieved 90-94% precision and 72-96% recall depending on blood group.
+
+@bottom
+
+- Trans-ethnic analysis reveals genetic and non-genetic associations with COVID-19 susceptibility and severity.
+- [https\://www.medrxiv.org/content/10.1101/2020.09.04.20188318v1](https://www.medrxiv.org/content/10.1101/2020.09.04.20188318v1)
+
+=== layout: one-panel
+
+# SNPedia rs8176719
+
+@body
+
+- rs8176719 represents a site in the ABO gene, often referred to as either c.261delG or, less commonly, c.260\_262insG, and it is a key SNP in determining blood group type O status. \[PMID 2333095\]
+- An allele that encodes either a blood group type A or type B will have a (G) at this SNP site, i.e. such an allele will be rs8176719(G).
+- If a one-base deletion has occurred at this site, removing this nucleotide all together, the corresponding allele is considered to be rs8176719(-) and encodes the most common blood group type O allele.
+  - However, an individual will typically only be blood group type O if they are carry two copies of (are homozygous) for this deletion, in other words, if their genotype is rs8176719(-;-).
+- If they carry one copy, they could be blood type A, or blood type B (but are unlikely to be type O).
+- A person who is rs8176719(G;G) is likely to be of blood type A, B, or AB,
+  - but due to the existence of (rare) nonfunctional O alleles brought about by (nondeletional) mutations at other positions than rs8176719, they could at least theoretically still be phenotyped as type O.
+- i4001527 or rs590787 are relevant to Rh+ or Rh-
+
+- [https\://www.snpedia.com/index.php/Rs8176719](https://www.snpedia.com/index.php/Rs8176719)
+
+=== layout: two-panels
+
+# Spreadsheet
+
+@left
+
+![Slide image 14](assets/lect03e-genotyping_2/image_014.png)
+
+@right
+
+- [https\://docs.google.com/spreadsheets/d/1aqnLQGwAPubG0KLvQ2KOUSYfevl6Q56jF880IxFPCxc/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1aqnLQGwAPubG0KLvQ2KOUSYfevl6Q56jF880IxFPCxc/edit?usp=sharing)
+
+=== layout: one-panel
+
+# Common SNP Patterns for ABO Blood Types
+
+@body
+
+| rs8176719 | rs8176746 | rs8176747 | Blood type |
+| --- | --- | --- | --- |
+| D;D | Any | Any | O |
+| D;I or I;I | C;C | G;G | A |
+| D;I or I;I | A;A | C;C | B |
+| D;I | A;C | C;G | B |
+| I;I | A;C | C;G | AB |
+
+=== layout: one-panel
+
+# Actually, I’m A+
+
+@body
+
+![Slide image 15](assets/lect03e-genotyping_2/image_015.png)
+
+=== layout: section
+
+# THE END
+

@@ -1,0 +1,272 @@
+=== layout: title-slide
+
+# Lecture 3F
+
+## Whole Genome Analysis / Chapter 2 / Dr. Neil Voss / Sept 15, 2026
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: section
+
+# Whole Genome Analysis
+
+=== layout: one-panel
+
+# The Human Genome Project
+
+@body
+
+- Officially begun as the Human Genome Project in 1990, the sequencing of the human genome was largely completed by 2003
+- The genome was completed using sequencing machines and the dideoxy-chain termination method
+- A major thrust of the project was development of technology for faster sequencing
+
+=== layout: one-panel
+
+# J. Craig Venter
+
+@body
+
+- Two approaches complemented each other in obtaining the complete sequence
+- The initial approach built on an earlier storehouse of human genetic information
+- Then J. Craig Venter set up a company to sequence the entire genome using an alternative whole-genome shotgun approach
+- This used cloning and sequencing of fragments of randomly cut DNA followed by assembly into a single continuous sequence
+
+=== layout: two-panels
+
+# Shotgun Genome Sequencing
+
+@left
+
+![Slide image 1](assets/lect03f-whole_genome_analysis/image_001.jpg)
+
+@right
+
+- Cut DNA into overlapping fragments short enough to sequence.
+- Clone the fragments in plasmids or other vectors.
+
+=== layout: two-panels
+
+# Shotgun Genome Sequencing
+
+@left
+
+![Slide image 2](assets/lect03f-whole_genome_analysis/image_002.jpg)
+
+@right
+
+- Cut DNA into overlapping fragments short enough to sequence.
+- Clone the fragments in plasmids or other vectors.
+- Sequence each fragment.
+  - `CGCCATCAGT`
+  - `AGTCCGCTATACGA`
+  - `ACGATACTGGT`
+
+=== layout: two-panels
+
+# Shotgun Genome Sequencing
+
+@left
+
+![Slide image 3](assets/lect03f-whole_genome_analysis/image_003.jpg)
+
+@right
+
+- Cut DNA into overlapping fragments short enough to sequence.
+- Clone the fragments in plasmids or other vectors.
+- Sequence each fragment.
+  - `CGCCATCAGT`
+  - `AGTCCGCTATACGA`
+  - `ACGATACTGGT`
+- Use overlaps to assemble the sequence with software.
+  - `CGCCATCAGTCCGCTATACGATACTGGT`
+
+=== layout: one-panel
+
+# Identifying Protein-Coding Genes
+
+@body
+
+- Using available DNA sequences, geneticists can study genes directly
+- The identification of protein coding genes within DNA sequences in a database is called gene annotation
+
+=== layout: one-panel
+
+# Genome Size
+
+@body
+
+- Genomes of most bacteria and archaea range from 1 to 6 million base pairs (Mb); genomes of eukaryotes are usually larger
+- Most plants and animals have genomes greater than 100 Mb; humans have 3,000 Mb
+- Within each domain there is no systematic relationship between genome size and phenotype
+
+=== layout: one-panel
+
+# Table 21.1
+
+@body
+
+![Slide image 4](assets/lect03f-whole_genome_analysis/image_004.jpg)
+
+=== layout: one-panel
+
+# Multicellular eukaryotes have significant non-coding DNA
+
+@body
+
+- Sequencing of the human genome reveals that 98.5% does not code for proteins, rRNAs, or tRNAs
+- About a quarter of the human genome codes for introns and gene-related regulatory sequences
+
+=== layout: two-panels
+
+# Components of the Human Genome
+
+@left
+
+![Slide image 5](assets/lect03f-whole_genome_analysis/image_005.jpg)
+
+@right
+
+- Exons: 1.5%
+- Regulatory sequences: 5%
+- Introns: about 20%
+- Unique noncoding DNA: 15%
+- Repeats related to transposable elements: 44%
+  - L1: 17%; Alu: 10%
+- Other repetitive DNA: 14%
+  - Simple repeats: 3%
+  - Large duplications: 5-6%
+
+=== layout: one-panel
+
+# Function of each human gene product
+
+@body
+
+![Slide image 6](assets/lect03f-whole_genome_analysis/image_006.png)
+
+=== layout: one-panel
+
+# Comparing Genomes Within a Species
+
+@body
+
+- As a species, humans have only been around about 200,000 years and have low within-species genetic variation
+- Variation within humans is due to single nucleotide polymorphisms, inversions, deletions, and duplications
+- Most surprising is the large number of copy-number variants
+- These variations are useful for studying human evolution and human health
+
+=== layout: stacked-panels
+
+# Whole Genome Sequencing
+
+@top
+
+- The cost to generate a high-quality 'draft' whole human genome sequence in mid-2015 was just above \$4,000;
+  - by late in 2015, that figure had fallen below \$1,500.
+- The cost to generate a whole-exome sequence was generally below \$1,000.
+- Commercial prices for whole-genome and whole-exome sequences have often (but not always) been slightly below these numbers.
+
+@bottom
+
+- [https\://www.genome.gov/sequencingcosts/](https://www.genome.gov/sequencingcosts/)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 7](assets/lect03f-whole_genome_analysis/image_007.png)
+
+@right
+
+- [https\://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data)
+
+=== layout: section
+
+# What is the difference between exome and genome?
+
+=== layout: one-panel
+
+# Human Genome Information
+
+@body
+
+- Diploid Genome\:
+  - 6.46966 billion DNA base pairs
+- Haploid Genome\:
+  - 3,234.83 Mb (Mega-basepairs)
+- Exome\:
+  - 30Mb
+    - Exons overlap, so total sequence is probably \~50Mb
+    - 180,000 exons constituting about 1% of the total genome
+- Genotyping
+  - 0.6 Mb
+    - 600,000 bp of SNPs
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect03f-whole_genome_analysis/image_008.png)
+
+=== layout: one-panel
+
+# Whole Exome Sequencing (WES)
+
+@body
+
+![Slide image 9](assets/lect03f-whole_genome_analysis/image_009.png)
+
+=== layout: one-panel
+
+# Genotype Coverage and Costs (2020)
+
+@body
+
+| Assay | Sites | % | 2020 $ |
+| --- | --- | --- | --- |
+| Genome | 3,200,000,000 | 100.000% | $399 |
+| All SNPs | 149,735,377 | 4.679% |  |
+| Exome | 39,000,000 | 1.219% | $400 |
+| Omni SNP | 2,381,000 | 0.074% |  |
+| FTDNA | 720,350 | 0.023% | $59 |
+| Ancestry | 664,000 | 0.021% | $59 |
+| 23andMe | 654,027 | 0.020% | $99 |
+| SNPedia | 111,300 | 0.003% |  |
+
+=== layout: one-panel
+
+# Source Links
+
+@body
+
+- Haploid genome (WGS): [Veritas Genetics](https://www.veritasgenetics.com/mygenome/)
+- Documented SNPs: [Sequencing.com](https://sequencing.com/order/ultimate-genome-sequencing-kit-package?quantity=1)
+- Exome (WES): [IDT exome sequencing](https://www.idtdna.com/pages/technology/next-generation-sequencing/dna-sequencing/targeted-sequencing/exome-sequencing)
+- Omni / Infinium Bead Chip: [Illumina](https://www.illumina.com/products/by-type/microarray-kits/infinium-global-screening.html)
+- [Family Tree DNA](https://www.familytreedna.com/)
+- [AncestryDNA](https://www.ancestry.com/)
+- [SNPedia](https://www.snpedia.com/)
+
+=== layout: section
+
+# THE END
+

@@ -20,6 +20,15 @@ def write_source(tmp_path: pathlib.Path, content: str) -> pathlib.Path:
 
 
 #============================================
+def test_hidden_slide_still_checks_its_assets(tmp_path: pathlib.Path) -> None:
+	"""Hiding a slide does not mask a missing source figure."""
+	path = write_source(tmp_path,
+		"=== layout: one-panel\nhidden: true\n@body\n![Figure](assets/missing.png)\n")
+	problems, _summary = slide_lib.djot_lint.lint_paths([path])
+	assert problems[0].message == "component image is missing: assets/missing.png"
+
+
+#============================================
 def test_valid_two_panel_source_has_no_structural_problems(tmp_path: pathlib.Path) -> None:
 	"""The linter accepts a documented layout, slot, and local-image arrangement."""
 	path = write_source(

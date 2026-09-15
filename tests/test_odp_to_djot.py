@@ -28,10 +28,10 @@ STYLES_XML = """<office:document-styles
 
 
 #============================================
-def png_bytes() -> bytes:
+def png_bytes(color: tuple[int, int, int]) -> bytes:
 	"""Return a validated inline source PNG."""
 	buffer = io.BytesIO()
-	Image.new("RGB", (8, 6), (40, 120, 180)).save(buffer, format="PNG")
+	Image.new("RGB", (8, 6), color).save(buffer, format="PNG")
 	return buffer.getvalue()
 
 
@@ -71,8 +71,8 @@ def write_source_odp(tmp_path: pathlib.Path) -> pathlib.Path:
 		archive.writestr("content.xml", content)
 		archive.writestr("styles.xml", STYLES_XML)
 		archive.writestr("META-INF/manifest.xml", manifest)
-		archive.writestr("Pictures/visible.png", png_bytes())
-		archive.writestr("Pictures/hidden.png", png_bytes())
+		archive.writestr("Pictures/visible.png", png_bytes((40, 120, 180)))
+		archive.writestr("Pictures/hidden.png", png_bytes((180, 40, 120)))
 	return path
 
 
@@ -86,11 +86,12 @@ def test_direct_conversion_publishes_valid_djot_reachable_media_and_source_evide
 	report = json.loads(summary.report_path.read_text(encoding="utf-8"))
 	parsed = slide_lib.djot_parser.parse_deck(output_path)
 
-	assert summary.visible_slides == len(parsed.slides) == 2
+	assert tuple(slide.hidden for slide in parsed.slides) == (False, False, True)
 	assert (tmp_path / "assets" / "lecture" / "image_001.png").is_file()
-	assert not (tmp_path / "assets" / "lecture" / "image_002.png").exists()
+	assert (tmp_path / "assets" / "lecture" / "image_002.png").is_file()
 	assert report["slides"][0]["presenter_notes"] == ["Start with the central question."]
 	assert report["slides"][0]["source_page_evidence"]["layout_identity"] == "section"
+	assert report["slides"][2]["hidden"] and report["slides"][2]["visible_page"] is None
 
 
 #============================================

@@ -122,13 +122,17 @@ and a future approved language guide.
 ### Djot is the sole authored deck source
 
 **Decision.** Accept `.djot` as the only authored presentation source and parse it with the
-repository-owned Djot modules.
+repository-owned Djot modules. Per-slide `hidden: true` metadata preserves optional content in
+source; omission or `hidden: false` makes it visible. Metadata precedes content and slots.
 
 **Why.** One source language keeps authoring, validation, import output, and native export aligned
 without maintaining a second parser or compatibility vocabulary.
 
 **Consequence.** `native_export` admits only `.djot`; ODP import emits Djot. The
 runtime has no alternate source-language parser, suffix dispatch table, or target-selection flag.
+Import retains hidden slides and assets; lint validates them, while compilation skips them for
+ODP/PDF output. An all-hidden source can be imported and linted but cannot produce a classroom deck.
+This is one boolean on the semantic slide, not a generic metadata or export-mode framework.
 
 **Owner.** `slide_lib/native_export.py`, `slide_lib/djot_parser.py`, and [PIPELINE.md](PIPELINE.md).
 

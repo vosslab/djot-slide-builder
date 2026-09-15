@@ -1,4 +1,4 @@
-"""Compile one immutable physical slide for each validated source slide."""
+"""Compile one immutable physical slide for each visible source slide."""
 
 import dataclasses
 
@@ -13,10 +13,13 @@ import slide_lib.presentation_theme
 
 def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> slide_lib.compilation_result.CompilationResult:
-	"""Compile every authored slide once, preserving source order and identity."""
+	"""Compile visible authored slides once, retaining their physical source locations."""
+	visible_slides = tuple(source for source in deck.slides if not source.hidden)
+	if not visible_slides:
+		raise ValueError(f"{deck.path}:1: deck has no visible slides")
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
 	slides: list[slide_lib.layout_model.LayoutSlide] = []
-	for index, source in enumerate(deck.slides):
+	for index, source in enumerate(visible_slides):
 		slide_lib.layout_model.reject_unsupported_source_facts(
 			slide_lib.layout_measurement.unsupported_facts(source))
 		page = slide_lib.layout_builders.compile_slide(deck, source, theme, index, session)

@@ -15,6 +15,18 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide migration and presentation
 
+- My announcements workflow is `LECT(N) 2026 + LECT(N+1) 2025 -> LECT(N+1) 2026`: copy the
+  current year's previous lecture announcements, then merge in the next lecture's announcements
+  from the previous year.
+- Carry forward current-year course information: policies, grading, office hours, contact details,
+  course links, platforms, and the current exam and assignment schedule.
+- Use last year's matching lecture for recurring weekly material: topics, agenda, readings,
+  homework reminders, activities, review questions, and which upcoming deadlines to highlight.
+- Update details that depend on both year and week: lecture number, presentation date, due dates,
+  exam countdowns, and phrases such as "next week." Last year's lecture supplies what to remind
+  students about; this year's schedule supplies when it happens.
+- Include hidden source slides in Djot. Add slide-language metadata like `hidden: true` so they
+  remain available for editing rather than being discarded during conversion.
 - This is a requirement 1 slide in original source is 1 slide in djot and 1 slide in output, no taking one
   slide and making it three to get all of the content in.
 - I want better formatting match to the original slides (not byte nor exact) but like title and section
@@ -205,6 +217,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Working style
 
+- Write plans in plain, concrete language with familiar words and direct sentences. Write to
+  clarify the plan, not to make it sound sophisticated. If a simpler word conveys the same meaning
+  accurately, use it.
+- Treat vocabulary and jargon as liabilities as well as assets: uncommon terms add cognitive load.
+  Use technical terms when they add precision or explain an established concept more clearly.
+  Complex wording must earn its place; when in doubt, use the simpler word.
+- For the Lecture 03 conversion needed for tomorrow, perfect is the enemy of good: use the
+  current system when it is good enough. Apply KISS aggressively; complexity must earn its place.
 - Use a 350-character limit for the plain-prose GitHub About paragraph at the top of README.md.
 - This repository is an application/toolchain, not a PyPI package as currently written. Do not add a
   root `pyproject.toml` merely for release-version cross-checking; resolve date-block release versions

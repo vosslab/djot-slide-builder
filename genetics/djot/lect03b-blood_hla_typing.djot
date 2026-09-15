@@ -1,0 +1,602 @@
+=== layout: title-slide
+
+# Lecture 3B
+
+## Genetic Analysis / Blood & HLA Typing / Chapter 2 / Dr. Neil Voss / Sept 15, 2026
+
+=== layout: one-panel
+
+# Chapter 2 Outline
+
+@body
+
+- DNA Structure
+  - History
+  - Review
+- DNA Analysis
+  - Restriction Enzymes
+  - Gel electrophoresis analysis
+- DNA Profiling
+  - Blood typing
+  - HLA typing
+  - STR fingerprint
+  - Single Nucleotide Polymorphisms
+  - Whole Genome Analysis
+
+=== layout: section
+
+# Genetic Analysis
+
+=== layout: section
+
+# The story of Baby 81
+
+=== layout: one-panel
+
+# Baby 81 incident
+
+@body
+
+- The Baby 81 incident was a widely reported parental identity dispute about a baby who survived the 2004 Indian Ocean earthquake.
+- The baby, around 2 months old, was reportedly found on the beach.
+- After remaining unclaimed for several days, nine couples were reported to have said that the child was theirs
+
+![Slide image 1](assets/lect03b-blood_hla_typing/image_001.png)
+
+![Slide image 2](assets/lect03b-blood_hla_typing/image_002.png)
+
+- [https\://en.wikipedia.org/wiki/Baby\_81\_incident](https://en.wikipedia.org/wiki/Baby_81_incident)
+
+=== layout: section
+
+# Blood typing
+
+=== layout: one-panel
+
+# ABO blood group
+
+@body
+
+![Slide image 3](assets/lect03b-blood_hla_typing/image_003.png)
+
+=== layout: two-panels
+
+# Blood Types
+
+@left
+
+![Slide image 4](assets/lect03b-blood_hla_typing/image_004.jpg)
+
+@right
+
+- Universal receiver
+
+- Universal donor
+
+- Antibodies in plasma need not be considered during donation because of they are so few.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect03b-blood_hla_typing/image_005.jpg)
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  Empty |
+| B |  Empty |
+| D |  Empty |
+| None |  Empty |
+
+@right
+
+Prepare four reaction spots: anti-A, anti-B, anti-D, and a control.
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  Empty |
+| B |  Empty |
+| D |  Empty |
+| None |  Empty |
+
+@right
+
+Place a blood sample in each spot.
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  Blood |
+| B |  Blood |
+| D |  Blood |
+| None |  Blood |
+
+@right
+
+Blood has been added to all four spots. Observe the reactions.
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  Blood |
+| B |  Blood |
+| D |  Blood |
+| None |  Blood |
+
+@right
+
+Matching antigen and antibody cause visible clumping (agglutination).
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  No |
+| B |  Yes |
+| D |  No |
+| None |  No |
+
+@right
+
+Only the anti-B sample clumps.
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  No |
+| B |  Yes |
+| D |  No |
+| None |  No |
+
+@right
+
+What blood type is being displayed?
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  No |
+| B |  Yes |
+| D |  No |
+| None |  No |
+
+@right
+
+*Blood type: B negative.*
+
+B antigen is detected; A and Rh(D) are not detected.
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  Yes |
+| B |  Yes |
+| D |  Yes |
+| None |  No |
+
+@right
+
+What blood type is being displayed?
+
+=> appear
+*Answer: AB positive.*
+
+=== layout: two-panels
+
+# Blood Test: Clumping
+
+@left
+
+| Test | Result |
+| --- | --- |
+| A |  No |
+| B |  No |
+| D |  Yes |
+| None |  No |
+
+@right
+
+What blood type is being displayed?
+
+=> appear
+*Answer: O positive.*
+
+=== layout: two-panels
+
+# Blood Typing
+
+@left
+
+![Slide image 6](assets/lect03b-blood_hla_typing/image_006.png)
+
+@right
+
+![Slide image 7](assets/lect03b-blood_hla_typing/image_007.png)
+
+=== layout: section
+
+# Human leukocyte antigen (HLA) typing
+
+=== layout: two-panels
+
+# HLA Genes
+
+@left
+
+- Cell-surface proteins are responsible for the regulation of the immune system in humans.
+- HLA genes are highly polymorphic, which means that they have many different alleles.
+- They are the major cause of organ transplant rejections.
+
+@right
+
+![Slide image 8](assets/lect03b-blood_hla_typing/image_008.png)
+
+=== layout: one-panel
+
+# HLA genes are close together
+
+@body
+
+![Slide image 9](assets/lect03b-blood_hla_typing/image_009.png)
+
+=== layout: two-panels
+
+# Inheritance of HLA Haplotypes
+
+@left
+
+![Slide image 10](assets/lect03b-blood_hla_typing/image_010.png)
+
+@right
+
+- Child 2 and Child 4 have matching HLA haplotypes.
+- Each parent passes one of two haplotypes: four combinations.
+- Siblings have a 1 in 4 (25%) chance of matching.
+- Identical twins usually match; rare recombination can change this.
+
+=== layout: one-panel
+
+# Inheritance of HLA Haplotypes
+
+@body
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+- How many combinations are possible?
+
+=== layout: two-panels
+
+# HLA Combinations
+
+@left
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+
+@right
+
+| # | Dad | Mom |
+| --- | --- | --- |
+| 1 | ? | ? |
+| 2 | ? | ? |
+| 3 | ? | ? |
+| 4 | ? | ? |
+
+=== layout: two-panels
+
+# HLA Combinations
+
+@left
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+
+@right
+
+| # | Dad | Mom |
+| --- | --- | --- |
+| 1 | FL | MR |
+| 2 | ? | ? |
+| 3 | ? | ? |
+| 4 | ? | ? |
+
+=== layout: two-panels
+
+# HLA Combinations
+
+@left
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+
+@right
+
+| # | Dad | Mom |
+| --- | --- | --- |
+| 1 | FL | MR |
+| 2 | FL | ML |
+| 3 | ? | ? |
+| 4 | ? | ? |
+
+=== layout: two-panels
+
+# HLA Combinations
+
+@left
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+
+@right
+
+| # | Dad | Mom |
+| --- | --- | --- |
+| 1 | FL | MR |
+| 2 | FL | ML |
+| 3 | FR | MR |
+| 4 | ? | ? |
+
+=== layout: two-panels
+
+# HLA Combinations
+
+@left
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+
+@right
+
+| # | Dad | Mom |
+| --- | --- | --- |
+| 1 | FL | MR |
+| 2 | FL | ML |
+| 3 | FR | MR |
+| 4 | FR | ML |
+
+=== layout: two-panels
+
+# HLA Combinations
+
+@left
+
+- Father has haplotypes FL and FR.
+- Mother has haplotypes ML and MR.
+- Each child receives one haplotype from each parent.
+
+@right
+
+| # | Dad | Mom |
+| --- | --- | --- |
+| 1 | FL | MR |
+| 2 | FL | ML |
+| 3 | FR | MR |
+| 4 | FR | ML |
+
+=== layout: two-panels
+
+# HLA Alleles
+
+@left
+
+![Slide image 11](assets/lect03b-blood_hla_typing/image_011.png)
+
+@right
+
+![Slide image 12](assets/lect03b-blood_hla_typing/image_012.png)
+
+=== layout: one-panel
+
+# HLA offspring
+
+@body
+
+- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- Which one of the following is a possible HLA genotype of their offspring?
+  - A. A6/A8, B2/B7, C3/C8
+  - B. A5/A6, B4/B7, C1/C8
+  - C. A3/A6, B4/B5, C3/C8
+  - D. A6/A8, B5/B7, C4/C8
+
+=== layout: one-panel
+
+# HLA offspring
+
+@body
+
+- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- Which one of the following is a possible HLA genotype of their offspring?
+  - A. A6/A8, B2/B7, C3/C8
+  - B. A5/A6, B4/B7, C1/C8
+  - C. A3/A6, B4/B5, C3/C8
+  - D. A6/A8, B5/B7, C4/C8
+
+
+
+Keep each parent's linked A, B, and C alleles together as a haplotype.
+
+=== layout: one-panel
+
+# HLA offspring
+
+@body
+
+- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- Which one of the following is a possible HLA genotype of their offspring?
+  - A. A6, B7, C8/A8, B2, C3
+  - B. A6, B4, C8/A5, B7, C1
+  - C. A6, B4, C8/A3, B5, C3
+  - D. A6, B7, C8/A8, B5, C4
+
+
+
+Crossing over is unlikely for adjacent genes. Eliminate A and D.
+
+=== layout: one-panel
+
+# HLA offspring
+
+@body
+
+- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- Which one of the following is a possible HLA genotype of their offspring?
+  - A. A6, B7, C8/A8, B2, C3
+  - B. A6, B4, C8/A5, B7, C1
+  - C. A6, B4, C8/A3, B5, C3
+  - D. A6, B7, C8/A8, B5, C4
+
+
+
+One haplotype must come from each parent. Eliminate B.
+
+=== layout: one-panel
+
+# HLA offspring
+
+@body
+
+- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- Which one of the following is a possible HLA genotype of their offspring?
+  - A. A6, B7, C8/A8, B2, C3
+  - B. A6, B4, C8/A5, B7, C1
+  - C. A6, B4, C8/A3, B5, C3
+  - D. A6, B7, C8/A8, B5, C4
+
+
+
+*Answer: C.*
+
+=== layout: one-panel
+
+
+@body
+
+- A mother has a HLA genotype of A7,B5 on one chromosome and A3,B3 on the other. The father has a HLA genotype of A1,B4 on one chromosome and A8,B1 on the other. Which one of the following is a possible genotype for one of their offspring?
+  - A. A3,A7,B3,B5
+  - B. A1,A7,B1,B3
+  - C. A3,A8,B4,B5
+  - D. A3,A8,B1,B3
+  - E. A1,A8,B1,B4
+
+
+
+=> appear
+*Answer: D.*
+
+=== layout: one-panel
+
+
+@body
+
+- A mother has a HLA genotype of A6,B3,C4 on one chromosome and A9,B5,C7 on the other. The father has a HLA genotype of A8,B9,C2 on one chromosome and A2,B1,C9 on the other. Which one of the following is a possible genotype for one of their offspring?
+  - A. A6,A9,B3,B5,C4,C7
+  - B. A8,A9,B5,B9,C2,C7
+  - C. A2,A8,B1,B9,C2,C9
+  - D. A8,A9,B1,B5,C4,C9
+  - E. A2,A6,B5,B9,C4,C9
+
+
+
+=> appear
+*Answer: B.*
+
+=== layout: one-panel
+
+# Comparing Haplotypes
+
+@body
+
+![Slide image 13](assets/lect03b-blood_hla_typing/image_013.png)
+
+=== layout: one-panel
+
+# Comparing Haplotypes
+
+@body
+
+![Slide image 14](assets/lect03b-blood_hla_typing/image_014.png)
+
+=== layout: one-panel
+
+# Comparing Haplotypes
+
+@body
+
+![Slide image 15](assets/lect03b-blood_hla_typing/image_015.png)
+
+=== layout: section
+
+# Summary
+
+=== layout: two-panels
+
+# Baby 81
+
+@left
+
+- The 2 month old baby was found on the beach on 26 December 2004 the day of the earthquake
+- On 14 February 2005, the results of the DNA tests confirmed the couple's claim
+  - The family were permitted to take the child home on 16 February 2005, almost 2 months after the earthquake
+- It was later reported that only one couple had claimed the baby at the hospital, and that the press circus surrounding the baby was blamed for delaying his return to his family.
+
+@right
+
+![Slide image 16](assets/lect03b-blood_hla_typing/image_016.png)
+
+=== layout: section
+
+# THE END
+

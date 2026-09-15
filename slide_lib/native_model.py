@@ -194,6 +194,7 @@ class Slide:
 	notes: tuple[str, ...]
 	blocks: tuple[Block, ...]
 	cells: tuple[Cell, ...]
+	hidden: bool = False
 
 
 @dataclass(frozen=True)

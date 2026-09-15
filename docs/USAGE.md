@@ -29,6 +29,10 @@ Build every eligible source deck recursively below a folder as ODP and PDF:
 once: `odp` writes the editable format, `pdf` writes native ODP plus its LibreOffice-derived PDF,
 and `all` writes both. Outputs are written below `output/odp/` and `output/pdf/`.
 
+A slide marked `hidden: true` stays in the Djot source but is omitted from ODP/PDF output and
+capacity inspection. Lint still checks it and its assets. Remove that line or use `hidden: false`
+to include it again. See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#hidden-slides).
+
 The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
 native master and LibreOffice exports PDF from the themed ODP; no CSS or browser rendering is part
 of the build.
@@ -76,6 +80,10 @@ native source metadata is available, ordinary images, and geometry-supported lay
 Difficult spatial compositions become standard native source-order panels with a review reason.
 Unsupported relationships remain visibly incomplete or fail with a source-located diagnostic; the
 importer never renders the source slide or a composite region as substitute content.
+
+Import retains hidden slides in source order with `hidden: true`, including their referenced
+assets and import-report notes. Each report record includes `hidden`; hidden records have no
+`visible_page`. Even an entirely hidden deck can be imported for later editing.
 
 If final publication fails after the importer publishes its new asset leaf, it removes that exact
 leaf and publishes no Djot source. Fix the reported failure, then rerun the command.

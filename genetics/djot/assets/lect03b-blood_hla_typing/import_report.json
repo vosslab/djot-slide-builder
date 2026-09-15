@@ -1,0 +1,6641 @@
+{
+  "source": "lect03b-blood_hla_typing.odp",
+  "slide_count": 44,
+  "visible_slides": 44,
+  "hidden_slides": [],
+  "unique_media_assets": 16,
+  "slides": [
+    {
+      "source_slide": 1,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 89.46141732283465,
+          "width": 714.3023622047244,
+          "height": 399.0897637795276,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 2,
+      "visible_page": 2,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 3,
+      "visible_page": 3,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 4,
+      "visible_page": 4,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 5,
+      "visible_page": 5,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL4T12",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "object",
+          "object"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 5
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 500.4850393700787,
+          "top": 116.05039370078741,
+          "width": 158.9952755905512,
+          "height": 164.9763779527559,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 455.6409448818898,
+          "top": 296.73070866141734,
+          "width": 248.711811023622,
+          "height": 164.9763779527559,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "frame",
+          "left": 16.129133858267714,
+          "top": 450.0,
+          "width": 603.0708661417323,
+          "height": 28.23307086614173,
+          "z_order": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 6,
+      "visible_page": 6,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 7,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 209.56535433070866,
+          "top": 116.02204724409448,
+          "width": 374.51338582677164,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 8,
+      "visible_page": 8,
+      "layout": "one-panel",
+      "text_blocks": 3,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.04996428571428572, top=0.24822857142857144, right=0.9499285714285715, bottom=0.8706857142857143), NormalizedBounds(left=0.07500000000000001, top=0.6878857142857143, right=0.5442857142857143, bottom=0.9289142857142858), NormalizedBounds(left=0.8250000000000001, top=0.7000000000000001, right=0.9500000000000001, bottom=0.8301142857142857)] into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 5
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 123.13700787401575,
+          "width": 714.3023622047244,
+          "height": 218.3244094488189,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 476.2204724409449,
+          "top": 347.244094488189,
+          "width": 99.21259842519684,
+          "height": 84.67086614173229,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 654.8031496062993,
+          "top": 347.244094488189,
+          "width": 99.21259842519684,
+          "height": 64.54488188976379,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "frame",
+          "left": 59.52755905511811,
+          "top": 341.23464566929135,
+          "width": 372.4724409448819,
+          "height": 119.56535433070866,
+          "z_order": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 9,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source object crosses physical page bounds"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 157.66299212598426,
+          "top": 14.4,
+          "width": 478.28976377952756,
+          "height": 511.19999999999993,
+          "z_order": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 10,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 4,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35410714285714284, top=0.45085714285714285, right=0.49857142857142855, bottom=0.5559999999999999), NormalizedBounds(left=0.5273928571428571, top=0.45085714285714285, right=0.6757857142857143, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 5
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.779527559055,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 281.0551181102362,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 418.59212598425194,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 11,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35410714285714284, top=0.45085714285714285, right=0.49857142857142855, bottom=0.5559999999999999), NormalizedBounds(left=0.5273928571428571, top=0.45085714285714285, right=0.6757857142857143, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.7685142857142857)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.779527559055,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 281.0551181102362,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 418.59212598425194,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 103.43622047244094,
+          "z_order": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 12,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.7685142857142857)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 103.43622047244094,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 164.83464566929135,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 299.76377952755905,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 434.6929133858268,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 13,
+      "visible_page": 13,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.8668)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 152.19212598425196,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 164.83464566929135,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 299.76377952755905,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 434.6929133858268,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 14,
+      "visible_page": 14,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.8668)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 152.19212598425196,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 164.83464566929135,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 302.88188976377955,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 434.6929133858268,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 331.51181102362204,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 301.60629921259846,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 325.24724409448817,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 15,
+      "visible_page": 15,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.7685142857142857)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 103.43622047244094,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 164.83464566929135,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 302.88188976377955,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 434.6929133858268,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 331.51181102362204,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 301.60629921259846,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 325.24724409448817,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 16,
+      "visible_page": 16,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=1.0)] into one native source-order panel",
+        "source object crosses physical page bounds",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 249.703937007874,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 164.83464566929135,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 302.88188976377955,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 434.6929133858268,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 331.51181102362204,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 301.60629921259846,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 325.24724409448817,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 17,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.7685142857142857)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 103.43622047244094,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 302.88188976377955,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 331.51181102362204,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 301.60629921259846,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 325.24724409448817,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 171.63779527559055,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 200.26771653543307,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 170.36220472440945,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 194.00314960629922,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 437.244094488189,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 465.87401574803147,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 435.9685039370079,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 459.6094488188976,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 246.04724409448818,
+          "top": 350.5606299212599,
+          "width": 444.4724409448819,
+          "height": 92.57952755905512,
+          "z_order": [
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 18,
+      "visible_page": 18,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.18085714285714286, top=0.45085714285714285, right=0.33075000000000004, bottom=0.5559999999999999), NormalizedBounds(left=0.35664285714285715, top=0.45085714285714285, right=0.5011071428571429, bottom=0.5559999999999999), NormalizedBounds(left=0.5252142857142857, top=0.45085714285714285, right=0.6736071428571428, bottom=0.5559999999999999), NormalizedBounds(left=0.6848928571428572, top=0.45085714285714285, right=0.8464285714285715, bottom=0.5559999999999999), NormalizedBounds(left=0.08000000000000002, top=0.5599999999999999, right=0.87, bottom=0.7685142857142857)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": "AL5T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 144.99212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 279.9212598425197,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.8503937007874,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 549.4110236220473,
+          "top": 132.29291338582675,
+          "width": 95.24409448818898,
+          "height": 79.37007874015747,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 223.6535433070866,
+          "width": 118.97007874015748,
+          "height": 52.15748031496063,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "frame",
+          "left": 283.0677165354331,
+          "top": 223.6535433070866,
+          "width": 114.66141732283464,
+          "height": 52.15748031496063,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "frame",
+          "left": 416.86299212598425,
+          "top": 223.6535433070866,
+          "width": 117.77952755905513,
+          "height": 52.15748031496063,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "frame",
+          "left": 543.6,
+          "top": 223.6535433070866,
+          "width": 128.21102362204724,
+          "height": 52.15748031496063,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 63.49606299212599,
+          "top": 277.79527559055117,
+          "width": 627.0236220472441,
+          "height": 103.43622047244094,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 569.2535433070866,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 437.244094488189,
+          "top": 147.4015748031496,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 465.87401574803147,
+          "top": 160.12913385826772,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 435.9685039370079,
+          "top": 175.26614173228344,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 459.6094488188976,
+          "top": 183.06141732283464,
+          "width": 17.716535433070867,
+          "height": 9.921259842519683,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 246.04724409448818,
+          "top": 350.5606299212599,
+          "width": 444.4724409448819,
+          "height": 92.57952755905512,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 297.15590551181106,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 166.76220472440946,
+          "top": 142.21417322834645,
+          "width": 55.55905511811024,
+          "height": 59.52755905511811,
+          "z_order": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 19,
+      "visible_page": 19,
+      "layout": "two-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 164.38110236220473,
+          "width": 348.57637795275593,
+          "height": 249.25039370078738,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 148.6204724409449,
+          "width": 348.57637795275593,
+          "height": 280.7716535433071,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 20,
+      "visible_page": 20,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 20,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 21,
+      "visible_page": 21,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 21,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 182.1259842519685,
+          "width": 348.57637795275593,
+          "height": 213.78897637795274,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 22,
+      "visible_page": 22,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 22,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 95.52755905511812,
+          "top": 180.0,
+          "width": 602.5606299212599,
+          "height": 267.6755905511811,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.05511811023622,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 561.6,
+          "top": 155.99055118110238,
+          "width": 57.60000000000002,
+          "height": 65.99055118110235,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 590.4,
+          "top": 90.0,
+          "width": 172.8,
+          "height": 83.99055118110236,
+          "z_order": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 23,
+      "visible_page": 23,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 23,
+        "layout_identity": "AL7T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 134.10708661417323,
+          "top": 116.02204724409448,
+          "width": 525.4299212598426,
+          "height": 165.0047244094488,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 6.661417322834645,
+          "width": 761.9527559055118,
+          "height": 109.04881889763779,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 296.73070866141734,
+          "width": 714.3023622047244,
+          "height": 165.0047244094488,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 24,
+      "visible_page": 24,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 24,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 248.65511811023623,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 25,
+      "visible_page": 25,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 25,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 415.8992125984252,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 731.0267716535433,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 285.05196850393696,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 508.0251968503937,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 43.2,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 458.9574803149606,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 666.8220472440945,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 251.06456692913383,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 26,
+      "visible_page": 26,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 26,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 415.8992125984252,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 731.0267716535433,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 285.05196850393696,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 508.0251968503937,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 43.2,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 458.9574803149606,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 666.8220472440945,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 251.06456692913383,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 40.733858267716535,
+          "top": 280.9700787401575,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 26.588976377952754,
+          "top": 309.34488188976377,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 43.59685039370079,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 107.40472440944882,
+          "top": 277.3417322834646,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 31,
+          "source_kind": "vector",
+          "left": 101.76377952755905,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            30
+          ]
+        },
+        {
+          "source_ordinal": 32,
+          "source_kind": "vector",
+          "left": 115.93700787401575,
+          "top": 305.7165354330709,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            31
+          ]
+        },
+        {
+          "source_ordinal": 33,
+          "source_kind": "vector",
+          "left": 79.2,
+          "top": 161.9716535433071,
+          "width": 165.59999999999997,
+          "height": 101.99055118110235,
+          "z_order": [
+            32
+          ]
+        },
+        {
+          "source_ordinal": 34,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 155.99055118110238,
+          "width": 352.8,
+          "height": 144.0,
+          "z_order": [
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 27,
+      "visible_page": 27,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 27,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 415.8992125984252,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 731.0267716535433,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 285.05196850393696,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 508.0251968503937,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 43.2,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 458.9574803149606,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 666.8220472440945,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 251.06456692913383,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 40.733858267716535,
+          "top": 280.9700787401575,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 26.588976377952754,
+          "top": 309.34488188976377,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 43.59685039370079,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 244.8566929133858,
+          "top": 280.9984251968504,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 31,
+          "source_kind": "vector",
+          "left": 230.71181102362203,
+          "top": 309.3732283464567,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            30
+          ]
+        },
+        {
+          "source_ordinal": 32,
+          "source_kind": "vector",
+          "left": 247.7196850393701,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            31
+          ]
+        },
+        {
+          "source_ordinal": 33,
+          "source_kind": "vector",
+          "left": 107.40472440944882,
+          "top": 277.3417322834646,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            32
+          ]
+        },
+        {
+          "source_ordinal": 34,
+          "source_kind": "vector",
+          "left": 101.76377952755905,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            33
+          ]
+        },
+        {
+          "source_ordinal": 35,
+          "source_kind": "vector",
+          "left": 115.93700787401575,
+          "top": 305.7165354330709,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            34
+          ]
+        },
+        {
+          "source_ordinal": 36,
+          "source_kind": "vector",
+          "left": 312.0094488188976,
+          "top": 273.7133858267717,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            35
+          ]
+        },
+        {
+          "source_ordinal": 37,
+          "source_kind": "vector",
+          "left": 326.2110236220472,
+          "top": 304.4409448818898,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            36
+          ]
+        },
+        {
+          "source_ordinal": 38,
+          "source_kind": "vector",
+          "left": 314.8724409448819,
+          "top": 335.14015748031494,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            37
+          ]
+        },
+        {
+          "source_ordinal": 39,
+          "source_kind": "vector",
+          "left": 360.0,
+          "top": 161.9716535433071,
+          "width": 280.80000000000007,
+          "height": 132.00944881889765,
+          "z_order": [
+            38
+          ]
+        },
+        {
+          "source_ordinal": 40,
+          "source_kind": "vector",
+          "left": 244.79999999999998,
+          "top": 153.80787401574804,
+          "width": 7.200000000000017,
+          "height": 116.16377952755903,
+          "z_order": [
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 28,
+      "visible_page": 28,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 28,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 415.8992125984252,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 731.0267716535433,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 285.05196850393696,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 508.0251968503937,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 43.2,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 458.9574803149606,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 666.8220472440945,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 251.06456692913383,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 40.733858267716535,
+          "top": 280.9700787401575,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 26.588976377952754,
+          "top": 309.34488188976377,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 43.59685039370079,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 455.38582677165357,
+          "top": 278.6173228346457,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 31,
+          "source_kind": "vector",
+          "left": 444.0755905511811,
+          "top": 306.99212598425197,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            30
+          ]
+        },
+        {
+          "source_ordinal": 32,
+          "source_kind": "vector",
+          "left": 455.41417322834644,
+          "top": 337.6913385826772,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            31
+          ]
+        },
+        {
+          "source_ordinal": 33,
+          "source_kind": "vector",
+          "left": 244.8566929133858,
+          "top": 280.9984251968504,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            32
+          ]
+        },
+        {
+          "source_ordinal": 34,
+          "source_kind": "vector",
+          "left": 230.71181102362203,
+          "top": 309.3732283464567,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            33
+          ]
+        },
+        {
+          "source_ordinal": 35,
+          "source_kind": "vector",
+          "left": 247.7196850393701,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            34
+          ]
+        },
+        {
+          "source_ordinal": 36,
+          "source_kind": "vector",
+          "left": 107.40472440944882,
+          "top": 277.3417322834646,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            35
+          ]
+        },
+        {
+          "source_ordinal": 37,
+          "source_kind": "vector",
+          "left": 101.76377952755905,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            36
+          ]
+        },
+        {
+          "source_ordinal": 38,
+          "source_kind": "vector",
+          "left": 115.93700787401575,
+          "top": 305.7165354330709,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            37
+          ]
+        },
+        {
+          "source_ordinal": 39,
+          "source_kind": "vector",
+          "left": 524.1259842519685,
+          "top": 277.37007874015745,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            38
+          ]
+        },
+        {
+          "source_ordinal": 40,
+          "source_kind": "vector",
+          "left": 518.4850393700788,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            39
+          ]
+        },
+        {
+          "source_ordinal": 41,
+          "source_kind": "vector",
+          "left": 532.6582677165354,
+          "top": 305.74488188976375,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            40
+          ]
+        },
+        {
+          "source_ordinal": 42,
+          "source_kind": "vector",
+          "left": 312.0094488188976,
+          "top": 273.7133858267717,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            41
+          ]
+        },
+        {
+          "source_ordinal": 43,
+          "source_kind": "vector",
+          "left": 326.2110236220472,
+          "top": 304.4409448818898,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            42
+          ]
+        },
+        {
+          "source_ordinal": 44,
+          "source_kind": "vector",
+          "left": 314.8724409448819,
+          "top": 335.14015748031494,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            43
+          ]
+        },
+        {
+          "source_ordinal": 45,
+          "source_kind": "vector",
+          "left": 540.0,
+          "top": 167.98110236220472,
+          "width": 0.0,
+          "height": 90.00000000000003,
+          "z_order": [
+            44
+          ]
+        },
+        {
+          "source_ordinal": 46,
+          "source_kind": "vector",
+          "left": 144.0,
+          "top": 161.9716535433071,
+          "width": 295.2,
+          "height": 132.00944881889765,
+          "z_order": [
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 29,
+      "visible_page": 29,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 29,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 415.8992125984252,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 731.0267716535433,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 285.05196850393696,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 508.0251968503937,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 43.2,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 458.9574803149606,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 666.8220472440945,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 251.06456692913383,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 40.733858267716535,
+          "top": 280.9700787401575,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 26.588976377952754,
+          "top": 309.34488188976377,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 43.59685039370079,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 455.38582677165357,
+          "top": 278.6173228346457,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 31,
+          "source_kind": "vector",
+          "left": 444.0755905511811,
+          "top": 306.99212598425197,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            30
+          ]
+        },
+        {
+          "source_ordinal": 32,
+          "source_kind": "vector",
+          "left": 455.41417322834644,
+          "top": 337.6913385826772,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            31
+          ]
+        },
+        {
+          "source_ordinal": 33,
+          "source_kind": "vector",
+          "left": 662.3433070866141,
+          "top": 278.6456692913386,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            32
+          ]
+        },
+        {
+          "source_ordinal": 34,
+          "source_kind": "vector",
+          "left": 651.0330708661417,
+          "top": 307.02047244094484,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            33
+          ]
+        },
+        {
+          "source_ordinal": 35,
+          "source_kind": "vector",
+          "left": 662.371653543307,
+          "top": 337.71968503937006,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            34
+          ]
+        },
+        {
+          "source_ordinal": 36,
+          "source_kind": "vector",
+          "left": 244.8566929133858,
+          "top": 280.9984251968504,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            35
+          ]
+        },
+        {
+          "source_ordinal": 37,
+          "source_kind": "vector",
+          "left": 230.71181102362203,
+          "top": 309.3732283464567,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            36
+          ]
+        },
+        {
+          "source_ordinal": 38,
+          "source_kind": "vector",
+          "left": 247.7196850393701,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            37
+          ]
+        },
+        {
+          "source_ordinal": 39,
+          "source_kind": "vector",
+          "left": 107.40472440944882,
+          "top": 277.3417322834646,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            38
+          ]
+        },
+        {
+          "source_ordinal": 40,
+          "source_kind": "vector",
+          "left": 101.76377952755905,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            39
+          ]
+        },
+        {
+          "source_ordinal": 41,
+          "source_kind": "vector",
+          "left": 115.93700787401575,
+          "top": 305.7165354330709,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            40
+          ]
+        },
+        {
+          "source_ordinal": 42,
+          "source_kind": "vector",
+          "left": 524.1259842519685,
+          "top": 277.37007874015745,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            41
+          ]
+        },
+        {
+          "source_ordinal": 43,
+          "source_kind": "vector",
+          "left": 518.4850393700788,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            42
+          ]
+        },
+        {
+          "source_ordinal": 44,
+          "source_kind": "vector",
+          "left": 532.6582677165354,
+          "top": 305.74488188976375,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            43
+          ]
+        },
+        {
+          "source_ordinal": 45,
+          "source_kind": "vector",
+          "left": 312.0094488188976,
+          "top": 273.7133858267717,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            44
+          ]
+        },
+        {
+          "source_ordinal": 46,
+          "source_kind": "vector",
+          "left": 326.2110236220472,
+          "top": 304.4409448818898,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            45
+          ]
+        },
+        {
+          "source_ordinal": 47,
+          "source_kind": "vector",
+          "left": 314.8724409448819,
+          "top": 335.14015748031494,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            46
+          ]
+        },
+        {
+          "source_ordinal": 48,
+          "source_kind": "vector",
+          "left": 725.896062992126,
+          "top": 273.74173228346456,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            47
+          ]
+        },
+        {
+          "source_ordinal": 49,
+          "source_kind": "vector",
+          "left": 740.0976377952757,
+          "top": 304.46929133858265,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            48
+          ]
+        },
+        {
+          "source_ordinal": 50,
+          "source_kind": "vector",
+          "left": 728.7590551181102,
+          "top": 335.16850393700787,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            49
+          ]
+        },
+        {
+          "source_ordinal": 51,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 161.9716535433071,
+          "width": 496.8,
+          "height": 143.99999999999997,
+          "z_order": [
+            50
+          ]
+        },
+        {
+          "source_ordinal": 52,
+          "source_kind": "vector",
+          "left": 676.8000000000001,
+          "top": 155.99055118110238,
+          "width": 43.19999999999993,
+          "height": 108.0,
+          "z_order": [
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 30,
+      "visible_page": 30,
+      "layout": "blank",
+      "text_blocks": 0,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 30,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 0
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 137.2251968503937,
+          "top": 51.81732283464567,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 534.0755905511811,
+          "top": 54.0,
+          "width": 122.39999999999999,
+          "height": 101.99055118110236,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 278.05039370078737,
+          "top": 101.99055118110236,
+          "width": 237.60000000000002,
+          "height": 0.0,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 396.8503937007874,
+          "top": 101.99055118110236,
+          "width": 0.0,
+          "height": 125.99999999999999,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 669.6,
+          "height": 0.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 123.703937007874,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 115.22834645669292,
+          "top": 92.01259842519684,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 126.56692913385827,
+          "top": 125.06456692913385,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 241.96535433070864,
+          "top": 61.285039370078735,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 250.49763779527558,
+          "top": 96.71811023622047,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 241.9937007874016,
+          "top": 127.44566929133859,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 640.8000000000001,
+          "top": 54.0,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 652.1669291338583,
+          "top": 89.46141732283465,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 640.8283464566929,
+          "top": 124.89448818897637,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 60.00944881889764,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 526.9322834645669,
+          "top": 123.78897637795275,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 515.5937007874015,
+          "top": 93.08976377952756,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 151.2,
+          "top": 415.8992125984252,
+          "width": 496.8,
+          "height": 52.100787401574806,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 62.0503937007874,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 731.0267716535433,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 285.05196850393696,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 508.0251968503937,
+          "top": 229.26614173228344,
+          "width": 0.0,
+          "height": 46.71496062992131,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 43.2,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 458.9574803149606,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 666.8220472440945,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 251.06456692913383,
+          "top": 284.54173228346457,
+          "width": 86.4,
+          "height": 72.0,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 40.733858267716535,
+          "top": 280.9700787401575,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 26.588976377952754,
+          "top": 309.34488188976377,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 43.59685039370079,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 455.38582677165357,
+          "top": 278.6173228346457,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 31,
+          "source_kind": "vector",
+          "left": 444.0755905511811,
+          "top": 306.99212598425197,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            30
+          ]
+        },
+        {
+          "source_ordinal": 32,
+          "source_kind": "vector",
+          "left": 455.41417322834644,
+          "top": 337.6913385826772,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            31
+          ]
+        },
+        {
+          "source_ordinal": 33,
+          "source_kind": "vector",
+          "left": 662.3433070866141,
+          "top": 278.6456692913386,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            32
+          ]
+        },
+        {
+          "source_ordinal": 34,
+          "source_kind": "vector",
+          "left": 651.0330708661417,
+          "top": 307.02047244094484,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            33
+          ]
+        },
+        {
+          "source_ordinal": 35,
+          "source_kind": "vector",
+          "left": 662.371653543307,
+          "top": 337.71968503937006,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            34
+          ]
+        },
+        {
+          "source_ordinal": 36,
+          "source_kind": "vector",
+          "left": 244.8566929133858,
+          "top": 280.9984251968504,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            35
+          ]
+        },
+        {
+          "source_ordinal": 37,
+          "source_kind": "vector",
+          "left": 230.71181102362203,
+          "top": 309.3732283464567,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            36
+          ]
+        },
+        {
+          "source_ordinal": 38,
+          "source_kind": "vector",
+          "left": 247.7196850393701,
+          "top": 340.07244094488186,
+          "width": 28.8,
+          "height": 20.154330708661416,
+          "z_order": [
+            37
+          ]
+        },
+        {
+          "source_ordinal": 39,
+          "source_kind": "vector",
+          "left": 107.40472440944882,
+          "top": 277.3417322834646,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            38
+          ]
+        },
+        {
+          "source_ordinal": 40,
+          "source_kind": "vector",
+          "left": 101.76377952755905,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            39
+          ]
+        },
+        {
+          "source_ordinal": 41,
+          "source_kind": "vector",
+          "left": 115.93700787401575,
+          "top": 305.7165354330709,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            40
+          ]
+        },
+        {
+          "source_ordinal": 42,
+          "source_kind": "vector",
+          "left": 524.1259842519685,
+          "top": 277.37007874015745,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            41
+          ]
+        },
+        {
+          "source_ordinal": 43,
+          "source_kind": "vector",
+          "left": 518.4850393700788,
+          "top": 338.79685039370077,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            42
+          ]
+        },
+        {
+          "source_ordinal": 44,
+          "source_kind": "vector",
+          "left": 532.6582677165354,
+          "top": 305.74488188976375,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            43
+          ]
+        },
+        {
+          "source_ordinal": 45,
+          "source_kind": "vector",
+          "left": 312.0094488188976,
+          "top": 273.7133858267717,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            44
+          ]
+        },
+        {
+          "source_ordinal": 46,
+          "source_kind": "vector",
+          "left": 326.2110236220472,
+          "top": 304.4409448818898,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            45
+          ]
+        },
+        {
+          "source_ordinal": 47,
+          "source_kind": "vector",
+          "left": 314.8724409448819,
+          "top": 335.14015748031494,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            46
+          ]
+        },
+        {
+          "source_ordinal": 48,
+          "source_kind": "vector",
+          "left": 725.896062992126,
+          "top": 273.74173228346456,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            47
+          ]
+        },
+        {
+          "source_ordinal": 49,
+          "source_kind": "vector",
+          "left": 740.0976377952757,
+          "top": 304.46929133858265,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            48
+          ]
+        },
+        {
+          "source_ordinal": 50,
+          "source_kind": "vector",
+          "left": 728.7590551181102,
+          "top": 335.16850393700787,
+          "width": 28.8,
+          "height": 23.981102362204723,
+          "z_order": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 31,
+      "visible_page": 31,
+      "layout": "two-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 31,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 137.31023622047243,
+          "width": 348.57637795275593,
+          "height": 303.33543307086615,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 184.4220472440945,
+          "width": 348.57637795275593,
+          "height": 209.14015748031497,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 32,
+      "visible_page": 32,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 32,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 33,
+      "visible_page": 33,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 33,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 34,
+      "visible_page": 34,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 34,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 500.0314960629921,
+          "top": 376.9795275590551,
+          "width": 253.955905511811,
+          "height": 84.98267716535433,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 35,
+      "visible_page": 35,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 35,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 500.0314960629921,
+          "top": 377.00787401574803,
+          "width": 253.955905511811,
+          "height": 84.98267716535433,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 36,
+      "visible_page": 36,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 36,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 500.0314960629921,
+          "top": 377.00787401574803,
+          "width": 253.955905511811,
+          "height": 84.95433070866142,
+          "z_order": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 37,
+      "visible_page": 37,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 37,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.99055118110236,
+          "width": 714.3023622047244,
+          "height": 431.9716535433071,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 424.8,
+          "top": 371.9905511811023,
+          "width": 288.0,
+          "height": 65.99055118110236,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 38,
+      "visible_page": 38,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 38,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.99055118110236,
+          "width": 714.3023622047244,
+          "height": 431.9716535433071,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 460.8,
+          "top": 371.9905511811023,
+          "width": 288.0,
+          "height": 65.99055118110236,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 39,
+      "visible_page": 39,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 39,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 46.23307086614173,
+          "top": 116.02204724409448,
+          "width": 701.1496062992126,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 40,
+      "visible_page": 40,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 40,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 50.881889763779526,
+          "top": 116.02204724409448,
+          "width": 691.851968503937,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 41,
+      "visible_page": 41,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 41,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 130.50708661417323,
+          "width": 714.3023622047244,
+          "height": 316.9700787401575,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 42,
+      "visible_page": 42,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 42,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 43,
+      "visible_page": 43,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 43,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 158.08818897637795,
+          "width": 348.57637795275593,
+          "height": 261.80787401574804,
+          "z_order": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "source_slide": 44,
+      "visible_page": 44,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 44,
+        "layout_identity": "AL3T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 451.44566929133856,
+          "top": 258.4062992125984,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

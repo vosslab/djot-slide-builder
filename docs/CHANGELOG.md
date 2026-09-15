@@ -1,3 +1,41 @@
+## 2026-09-14
+
+### Additions and New Features
+
+- Converted Lecture 03's seven current ODP decks to canonical Djot and local source-image assets:
+  275 authored slides, including 26 hidden announcement slides and 249 visible slides. Used the
+  2026 announcements and retained the original teaching sequence and visible slide counts.
+- Added per-slide `hidden: true` / `hidden: false` metadata before content. ODP import now retains
+  hidden slides and their assets; lint checks all source slides while ODP/PDF builds omit hidden
+  slides. Restored Lecture 03's 26 hidden slides without changing the 40 edited visible slides.
+
+### Fixes and Maintenance
+
+- Recorded the announcements workflow: copy the current year's previous lecture announcements,
+  then merge in the target lecture's announcements from the previous year:
+  `LECT(N) 2026 + LECT(N+1) 2025 -> LECT(N+1) 2026`.
+- Clarified which announcement content follows the year, which follows the lecture/week, and
+  which dates and reminders must be updated for both in `docs/HUMAN_GUIDANCE.md`.
+- Recorded the plain-language planning criteria in `docs/HUMAN_GUIDANCE.md`: prefer familiar words
+  and direct sentences, and use technical terms only when they improve precision or clarity.
+- Repaired content omitted by legacy drawing and SVM import using existing Djot layouts: blood-test
+  results, HLA combinations and answers, STR evidence, genotype tables, ABO SNP outcomes, sequencing
+  steps, genome-chart labels, and review-challenge cues. Improved figure/text placement and shortened
+  table labels after rendered inspection. Updated lecture covers and the Lecture 03 agenda.
+- Recorded the requested KISS priority and conversion details in the human guidance and
+  `genetics/djot/LECT03_REVIEW.md`. Content repairs use the existing layouts; the hidden-slide feature
+  adds one semantic boolean and filters classroom compilation without adding an export mode.
+
+### Developer Tests and Notes
+
+- Strict native Djot lint and ODP/PDF exports passed for all seven decks. Verified 249 visible slides,
+  249 native ODP pages, and 249 PDF pages; inspected rendered contact sheets and repaired problem
+  slides against the original PDFs. Dense inherited content still produces capacity warnings;
+  historical links and facts were retained, and attended reveal playback was not tested.
+- The hidden-slide feature passed the full pytest suite (1,921 tests), covering metadata errors,
+  hide/show output, hidden-asset validation, and import preservation. Strict lint accepts the
+  restored 66-slide announcements source.
+
 ## 2026-09-09
 
 ### Additions and New Features

@@ -11,6 +11,7 @@ import slide_lib.native_model
 # Each pattern accepts one complete physical source line.  Callers pass a line
 # without its newline, keeping hard-wrapped prose ordinary Djot content.
 LAYOUT_DIRECTIVE_PATTERN = re.compile(r"\A=== layout: (?P<layout>[a-z][a-z0-9-]*)\Z")
+HIDDEN_DIRECTIVE_PATTERN = re.compile(r"\Ahidden: (?P<hidden>true|false)\Z")
 SLOT_DIRECTIVE_PATTERN = re.compile(r"\A@(?P<slot>[a-z][a-z0-9-]*)\Z")
 PREFIX_ACTION_PATTERN = re.compile(r"\A=> (?P<action>[a-z]+(?: [a-z]+)*)\Z")
 TERMINAL_ACTION_PATTERN = re.compile(r"\A<= (?P<action>[a-z]+(?: [a-z]+)*)\Z")

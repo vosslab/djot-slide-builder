@@ -306,6 +306,9 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	regions: dict[str, list[_SourceLine]] = {}
 	active_slot: str | None = None
 	fence: tuple[str, int] | None = None
+	hidden = False
+	hidden_seen = False
+	content_started = False
 	for source_line in source.lines:
 		if fence is not None:
 			if active_slot is None:
@@ -315,6 +318,20 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 			if re.fullmatch(rf"{re.escape(fence[0])}{{{fence[1]},}}[ \t]*", source_line.value) is not None:
 				fence = None
 			continue
+		if source_line.value.strip().startswith("hidden:"):
+			# ASVS 2.2.1: accept only an explicit boolean at the slide metadata boundary.
+			match = slide_lib.djot_grammar.HIDDEN_DIRECTIVE_PATTERN.fullmatch(source_line.value)
+			if match is None:
+				fail(path, source_line.line, "hidden metadata must be exactly hidden: true or hidden: false")
+			if content_started:
+				fail(path, source_line.line, "hidden metadata must precede slide content and slots")
+			if hidden_seen:
+				fail(path, source_line.line, "duplicate hidden metadata")
+			hidden = match.group("hidden") == "true"
+			hidden_seen = True
+			continue
+		if source_line.value.strip():
+			content_started = True
 		fence_match = _FENCE_OPEN.fullmatch(source_line.value)
 		if fence_match is not None:
 			if active_slot is None:
@@ -360,7 +377,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 		answer_index = layout.slot_names.index("answer")
 		cells[answer_index] = implicit_multiple_choice_answer(path, cells[answer_index])
 	slide = slide_lib.native_model.Slide(source.location, source.layout_name, (), global_blocks,
-		tuple(cells))
+		tuple(cells), hidden=hidden)
 	return slide
 
 
@@ -376,7 +393,7 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 	slides = tuple(assemble_slide(path, slide_source) for slide_source in split_slides(path, source))
 	repo_root = next((candidate for candidate in (path.parent, *path.parents)
 		if (candidate / ".git").exists()), path.parent).resolve()
-	first_title = next((block for slide in slides for block in slide.blocks
+	first_title = next((block for slide in slides if not slide.hidden for block in slide.blocks
 		if isinstance(block, slide_lib.native_model.Heading) and block.level == 1), None)
 	title = visible_text(first_title.inlines) if first_title is not None else ""
 	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, slides, {})

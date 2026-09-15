@@ -41,6 +41,33 @@ def test_two_sources_produce_two_stable_source_slides(tmp_path: pathlib.Path) ->
 	assert tuple(slide.identity.slide_id for slide in result.plan.slides) == ("slide-1", "slide-2")
 
 
+def test_hidden_source_is_retained_but_not_compiled(tmp_path: pathlib.Path) -> None:
+	"""Hide/show changes physical output without discarding authored slide content."""
+	source = ("=== layout: title-only\nhidden: true\n\n# Optional\n"
+		"=== layout: title-only\n\n# Teaching\n"
+		"=== layout: title-only\nhidden: false\n\n# Closing\n")
+	deck = parsed_source(tmp_path, source)
+	result = slide_lib.layout_engine.compile_layout_deck(
+		deck, slide_lib.presentation_theme.default_theme())
+	assert deck.title == "Teaching" and deck.slides[0].blocks[0].inlines[0].value == "Optional"
+	assert tuple(page.identity.source for page in result.plan.slides) == \
+		tuple(slide.location for slide in deck.slides[1:])
+
+
+def test_unhiding_source_restores_its_output_position(tmp_path: pathlib.Path) -> None:
+	"""An explicit false value restores the slide before the following material."""
+	result = compile_source(tmp_path,
+		"=== layout: title-only\nhidden: false\n# Optional\n"
+		"=== layout: title-only\n# Teaching\n")
+	assert tuple(page.identity.source.line for page in result.plan.slides) == (1, 4)
+
+
+def test_all_hidden_deck_has_no_classroom_output(tmp_path: pathlib.Path) -> None:
+	"""A retained source-only deck gets a clear diagnostic instead of an empty export."""
+	with pytest.raises(ValueError, match="deck has no visible slides"):
+		compile_source(tmp_path, "=== layout: blank\nhidden: true\n")
+
+
 def test_section_keeps_its_centered_libreoffice_layout_identity(tmp_path: pathlib.Path) -> None:
 	"""The section semantic name remains native Centered Text."""
 	result = compile_source(tmp_path, "=== layout: section\n\n# Section\n\n## Context")
