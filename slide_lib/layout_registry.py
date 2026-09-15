@@ -127,6 +127,7 @@ LAYOUT_CONTRACTS = {
 			(LibreOfficePlaceholder.OUTLINE, "bottom-right"))),
 	"multiple-choice": _contract("multiple-choice", ("question", "answer")),
 	"gallery": _contract("gallery", ("gallery",), title=True),
+	"big-image": _contract("big-image", ("image", "caption")),
 }
 
 

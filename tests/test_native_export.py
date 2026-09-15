@@ -8,12 +8,12 @@ import zipfile
 from unittest import mock
 
 # PIP3 Modules
-import defusedxml.ElementTree
 import pytest
 
 # Local Modules
 import slide_lib.capacity_report
 import slide_lib.native_export
+import slide_lib.odf_package
 import slide_lib.odp_export
 import slide_lib.presentation_theme
 
@@ -42,7 +42,7 @@ def test_native_odp_renderer_writes_editable_objects(tmp_path: pathlib.Path) -> 
 	deck = slide_lib.native_export.parse_deck(source_path)
 	odp_path = slide_lib.native_export.render_native_odp(deck, tmp_path / "deck.odp")
 	with zipfile.ZipFile(odp_path) as archive:
-		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+		root = slide_lib.odf_package.parse_xml(archive.read("content.xml"), "content.xml")
 	page = root.find(".//draw:page", ODF_NAMESPACES)
 	assert page is not None and page.attrib[
 		f"{{{ODF_NAMESPACES['presentation']}}}presentation-page-layout-name"]
@@ -62,9 +62,11 @@ def test_representable_capacity_recovery_exports_one_native_page_per_source_slid
 		slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST
 	odp_path = slide_lib.odp_export.write_odp(compilation.plan, theme, tmp_path / "deck.odp")
 	with zipfile.ZipFile(odp_path) as archive:
-		content = archive.read("content.xml").decode("utf-8")
-	assert len(defusedxml.ElementTree.fromstring(content).findall(".//draw:page", ODF_NAMESPACES)) == 1
-	sizes = tuple(float(value) for value in re.findall(r'font-size="([0-9.]+)pt"', content))
+		content = archive.read("content.xml")
+	root = slide_lib.odf_package.parse_xml(content, "content.xml")
+	assert len(root.findall(".//draw:page", ODF_NAMESPACES)) == 1
+	sizes = tuple(float(value) for value in re.findall(
+		r'font-size="([0-9.]+)pt"', content.decode("utf-8")))
 	assert sizes and all(size >= 1.0 for size in sizes)
 
 

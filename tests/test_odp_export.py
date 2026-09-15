@@ -6,7 +6,6 @@ import io
 import pathlib
 import zipfile
 
-import defusedxml.ElementTree
 import fontTools.ttLib
 import pytest
 
@@ -108,7 +107,7 @@ def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib
 	output = exporter.write_odp(updated_deck, slide_lib.presentation_theme.default_theme(),
 		tmp_path / "embedded.odp")
 	with zipfile.ZipFile(output) as archive:
-		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
 		manifest = package.manifest_file_targets(archive.read(package.MANIFEST_NAME))
 		faces = slide_lib.presentation_theme.odf_font_faces()
 		assert all(face.package_member in archive.namelist() and face.package_member in manifest
@@ -117,7 +116,7 @@ def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib
 			slide_lib.presentation_theme.odf_font_license_payloads()
 		assert set(license_payloads) <= set(archive.namelist()) and set(license_payloads) <= manifest
 		assert all(archive.read(member) == payload for member, payload in license_payloads.items())
-		manifest_root = defusedxml.ElementTree.fromstring(archive.read(package.MANIFEST_NAME))
+		manifest_root = package.parse_xml(archive.read(package.MANIFEST_NAME), package.MANIFEST_NAME)
 		manifest_media = {element.attrib[package.MANIFEST_FULL_PATH]: element.attrib[
 			f"{{{exporter.MANIFEST_NS}}}media-type"]
 			for element in manifest_root.findall(f".//{package.MANIFEST_FILE_ENTRY}")}
@@ -169,8 +168,9 @@ def test_linked_text_nests_destination_inside_its_styled_span() -> None:
 	updated_item = dataclasses.replace(item, content=content.TextContent((paragraph,)))
 	updated_deck = dataclasses.replace(layout_deck, slides=(dataclasses.replace(
 		layout_deck.slides[0], objects=(updated_item,)),))
-	root = defusedxml.ElementTree.fromstring(exporter._content_xml(updated_deck,
-		slide_lib.presentation_theme.default_theme(), exporter._layout_names(updated_deck), {}))
+	root = package.parse_xml(exporter._content_xml(updated_deck,
+		slide_lib.presentation_theme.default_theme(), exporter._layout_names(updated_deck), {}),
+		"content.xml")
 	span = root.find(f".//{{{exporter.TEXT_NS}}}span")
 	link = span.find(f"{{{exporter.TEXT_NS}}}a")
 	assert link is not None and link.text == "Course website"
@@ -180,8 +180,8 @@ def test_linked_text_nests_destination_inside_its_styled_span() -> None:
 
 def test_text_frames_preserve_the_compiler_selected_size() -> None:
 	"""Text-frame styles keep the compiler's measured point size authoritative."""
-	root = defusedxml.ElementTree.fromstring(exporter._content_xml(deck(),
-		slide_lib.presentation_theme.default_theme(), exporter._layout_names(deck()), {}))
+	root = package.parse_xml(exporter._content_xml(deck(),
+		slide_lib.presentation_theme.default_theme(), exporter._layout_names(deck()), {}), "content.xml")
 	properties = root.find(f".//{{{exporter.STYLE_NS}}}graphic-properties").attrib
 	assert properties[f"{{{exporter.STYLE_NS}}}shrink-to-fit"] == "false"
 
@@ -200,8 +200,9 @@ def test_picture_frames_use_the_compiler_resolved_display_rectangle() -> None:
 		presentation_member_id=None, placeholder_kind=primitives.PlaceholderKind.NONE)
 	picture_slide = dataclasses.replace(layout_deck.slides[0], objects=(picture_item,))
 	picture_deck = dataclasses.replace(layout_deck, slides=(picture_slide,))
-	root = defusedxml.ElementTree.fromstring(exporter._content_xml(picture_deck, theme,
-		exporter._layout_names(picture_deck), {("slide-1", "body"): "Pictures/picture.png"}))
+	root = package.parse_xml(exporter._content_xml(picture_deck, theme,
+		exporter._layout_names(picture_deck), {("slide-1", "body"): "Pictures/picture.png"}),
+		"content.xml")
 	picture_attributes = root.find(f".//{{{exporter.DRAW_NS}}}frame").attrib
 	text_attributes = exporter._frame_attributes(text_item, layout_deck, theme, "Text", {})
 	assert (picture_attributes[f"{{{exporter.SVG_NS}}}x"],
@@ -219,8 +220,9 @@ def test_picture_frames_use_the_compiler_resolved_display_rectangle() -> None:
 def test_drawing_page_style_hides_master_chrome() -> None:
 	"""Every emitted page suppresses master date, footer, and page-number placeholders."""
 	layout_deck = deck()
-	root = defusedxml.ElementTree.fromstring(exporter._content_xml(layout_deck,
-		slide_lib.presentation_theme.default_theme(), exporter._layout_names(layout_deck), {}))
+	root = package.parse_xml(exporter._content_xml(layout_deck,
+		slide_lib.presentation_theme.default_theme(), exporter._layout_names(layout_deck), {}),
+		"content.xml")
 	properties = root.find(f".//{{{exporter.STYLE_NS}}}drawing-page-properties").attrib
 	assert (properties[f"{{{exporter.PRESENTATION_NS}}}background-visible"],
 		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"],
@@ -237,8 +239,8 @@ def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) 
 	theme = slide_lib.presentation_theme.default_theme()
 	plan = slide_lib.layout_engine.compile_layout_deck(
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
-	root = defusedxml.ElementTree.fromstring(exporter._content_xml(
-		plan, theme, exporter._layout_names(plan), {}))
+	root = package.parse_xml(exporter._content_xml(
+		plan, theme, exporter._layout_names(plan), {}), "content.xml")
 	page = root.find(f".//{{{exporter.DRAW_NS}}}page")
 	page_style_name = page.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
 	page_style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
@@ -273,7 +275,7 @@ def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathli
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
 	output = exporter.write_odp(plan, theme, tmp_path / "cascade.odp")
 	with zipfile.ZipFile(output) as archive:
-		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
 	target_attribute = f"{{{slide_lib.odp_animation.SMIL_NS}}}targetElement"
 	xml_id = "{http://www.w3.org/XML/1998/namespace}id"
 	targets = [element.attrib[target_attribute] for element in root.findall(
@@ -282,8 +284,8 @@ def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathli
 	assert len(targets) == 2 and set(targets) <= ids
 
 
-def test_object_reveal_target_is_a_libreoffice_presentation_frame(tmp_path: pathlib.Path) -> None:
-	"""LibreOffice must retain the answer's layout membership and reveal identity."""
+def test_object_reveal_target_is_a_native_rounded_answer_popup(tmp_path: pathlib.Path) -> None:
+	"""The answer retains its reveal identity and native editable popup styling."""
 	source_path = tmp_path / "multiple_choice.djot"
 	source_path.write_text("=== layout: multiple-choice\n\n@question\n\nQuestion?\n\n"
 		"- Choice A\n- Choice B\n\n@answer\n\nAnswer.\n", encoding="utf-8")
@@ -292,13 +294,34 @@ def test_object_reveal_target_is_a_libreoffice_presentation_frame(tmp_path: path
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
 	output = exporter.write_odp(plan, theme, tmp_path / "multiple_choice.odp")
 	with zipfile.ZipFile(output) as archive:
-		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
 	target_attribute = f"{{{slide_lib.odp_animation.SMIL_NS}}}targetElement"
 	target = root.find(".//{urn:oasis:names:tc:opendocument:xmlns:animation:1.0}set").attrib[target_attribute]
 	xml_id = "{http://www.w3.org/XML/1998/namespace}id"
-	object_frame = next(item for item in root.iter() if item.attrib.get(xml_id) == target)
-	assert object_frame.tag == f"{{{exporter.DRAW_NS}}}frame" and \
-		object_frame.attrib[f"{{{exporter.PRESENTATION_NS}}}class"] == "object"
+	answer = next(item for item in root.iter() if item.attrib.get(xml_id) == target)
+	assert answer.tag == f"{{{exporter.DRAW_NS}}}rect"
+	assert answer.attrib[f"{{{exporter.PRESENTATION_NS}}}class"] == "object"
+	radius = answer.attrib[f"{{{exporter.DRAW_NS}}}corner-radius"]
+	assert float(radius.removesuffix("pt")) == 16
+	style_name = answer.attrib[f"{{{exporter.PRESENTATION_NS}}}style-name"]
+	style = next(item for item in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == style_name)
+	properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties").attrib
+	assert properties[f"{{{exporter.DRAW_NS}}}fill-color"] == "#F2F3F5"
+	assert properties[f"{{{exporter.SVG_NS}}}stroke-color"] == "#7B1E2B"
+	assert properties[f"{{{exporter.DRAW_NS}}}stroke"] == "solid"
+	span = answer.find(f".//{{{exporter.TEXT_NS}}}span")
+	text_style_name = span.attrib[f"{{{exporter.TEXT_NS}}}style-name"]
+	text_style = next(item for item in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == text_style_name)
+	text_properties = text_style.find(f"{{{exporter.STYLE_NS}}}text-properties").attrib
+	assert text_properties[f"{{{exporter.FO_NS}}}color"] == "#7B1E2B"
+
+
+def test_scoped_xml_parser_rejects_dtds() -> None:
+	"""ODF XML cannot declare entities even when lxml would leave them unresolved."""
+	with pytest.raises(ValueError, match="DTD is not allowed"):
+		package.parse_xml(b'<!DOCTYPE root [<!ENTITY local "blocked">]><root/>', "content.xml")
 
 
 def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:

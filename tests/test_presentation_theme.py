@@ -5,27 +5,27 @@ import hashlib
 import io
 import pathlib
 import zipfile
-import xml.etree.ElementTree
 
 # PIP3 modules
-import defusedxml.ElementTree
 import fontTools.ttLib
+import lxml.etree
 import pytest
 
 # Local Modules
+import slide_lib.odf_package
 import slide_lib.presentation_theme
 
 
 #============================================
-def shipped_styles_root() -> xml.etree.ElementTree.Element:
+def shipped_styles_root() -> lxml.etree._Element:
 	"""Load the styles member from the production OTP package."""
 	with zipfile.ZipFile(slide_lib.presentation_theme.DEFAULT_TEMPLATE_PATH) as archive:
-		root = defusedxml.ElementTree.fromstring(archive.read("styles.xml"))
+		root = slide_lib.odf_package.parse_xml(archive.read("styles.xml"), "styles.xml")
 	return root
 
 
 #============================================
-def theme_style(root: xml.etree.ElementTree.Element, name: str) -> xml.etree.ElementTree.Element:
+def theme_style(root: lxml.etree._Element, name: str) -> lxml.etree._Element:
 	"""Return one named presentation style from the shipped OTP."""
 	style = slide_lib.presentation_theme.presentation_style(root, name)
 	return style
@@ -46,7 +46,7 @@ def otp_without_title_shrink_policy(tmp_path: pathlib.Path) -> pathlib.Path:
 	with zipfile.ZipFile(output_path, "w") as destination:
 		for member, content in members:
 			if member.filename == "styles.xml":
-				content = xml.etree.ElementTree.tostring(styles_root, encoding="utf-8",
+				content = lxml.etree.tostring(styles_root, encoding="utf-8",
 					xml_declaration=True)
 			destination.writestr(member, content, compress_type=member.compress_type)
 	return output_path
@@ -71,7 +71,7 @@ def otp_with_outline_line_height(tmp_path: pathlib.Path, line_height: str | None
 	with zipfile.ZipFile(output_path, "w") as destination:
 		for member, member_content in members:
 			if member.filename == "styles.xml":
-				member_content = xml.etree.ElementTree.tostring(styles_root, encoding="utf-8",
+				member_content = lxml.etree.tostring(styles_root, encoding="utf-8",
 					xml_declaration=True)
 			destination.writestr(member, member_content, compress_type=member.compress_type)
 	return output_path

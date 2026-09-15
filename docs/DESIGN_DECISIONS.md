@@ -13,8 +13,8 @@ The native-ODP decision below supersedes earlier decisions that describe a maint
 writer, animation adapter, temporary conversion, or sibling artifact. Current operation builds one
 editable ODP from Djot and asks LibreOffice to make every classroom and review PDF from that ODP.
 Import reads bounded ODP; a legacy PPTX is first saved as ODP in LibreOffice. The active catalog has
-twelve LibreOffice layouts plus the project-owned `multiple-choice` and `gallery` layouts, and
-native reveals use ODF/SMIL. Earlier references remain dated design history.
+twelve LibreOffice layouts plus the project-owned `multiple-choice`, `gallery`, and `big-image`
+layouts, and native reveals use ODF/SMIL. Earlier references remain dated design history.
 
 ### Sequential LibreOffice PDF conversion
 
@@ -253,7 +253,7 @@ and a future approved language guide.
 
 ### Historical (2026-09-08): native layout registry owned 18 layouts
 
-**Status.** Superseded by the 2026-09-09 ODP-only 14-layout catalog stated above. This entry
+**Status.** Superseded by the 2026-09-09 ODP-only 14-layout catalog used at that time. This entry
 preserves the earlier registry rationale and its former optional-PPTX boundary.
 
 **Decision.** Compile all sixteen LibreOffice layout-grid patterns, `gallery`, and
@@ -462,8 +462,8 @@ renders may support QA but never enter canonical Djot or output.
 
 **Decision.** Use `genetics/xlect99-template_2023.otp` as the sole master-slide theme authority.
 Load its 16:10 page ratio, native top gradient, presentation-frame geometry, typography, and
-outline-level bullet geometry into a format-neutral theme model. Standard titles begin at 36 pt and
-ordinary body/list text begins at 28 pt. Direct ODP inherits the template's native styles.
+outline-level bullet geometry into a format-neutral theme model. Standard primary titles are
+centered and begin at 36 pt; ordinary body/list text begins at 28 pt. Direct ODP inherits the template's native styles.
 
 **Why.** The legacy lecture decks establish useful common visual rules, but reproducing their
 individual quirks would weaken the consistent authoring system. Explicit presentation semantics let
@@ -474,8 +474,8 @@ template must have a 16:10 page ratio; its physical centimeter or inch dimension
 ODP contains the template's real master page, with its background outside the planned slide-object
 stream, rather than a repeated per-slide background. Authored decorations remain planned objects with normal
 reading and z order. Wrapped list lines align with their paragraph text, not with the bullet, and
-nested levels have distinct bullet and text positions. Title-only, title-slide, and centered question
-layouts retain vertical centering where their teaching role calls for it. Typography remains
+nested levels have distinct bullet and text positions. Body content and local headings retain their
+reading alignment; title-slide and section text retain vertical centering where their role calls for it. Typography remains
 point-valued and never passes through the logical-geometry conversion. Build preflight enforces a
 30 pt title floor and 24 pt ordinary-text floor before native shrink-on-overflow protects against
 small font-metric differences. CSS and browser rendering are not part of the build.
@@ -510,7 +510,8 @@ format-neutral measurement owner, committed font assets/provenance, and their fo
 
 **Decision.** Seed direct ODP from the authoritative OTP, retain its masters, `styles.xml`, and
 reachable resources, replace `content.xml`, and reconcile the manifest under strict package rules.
-Local automatic styles parent the shipped `Default-*` presentation styles. The ODP adapter owns
+Local automatic styles parent the shipped `Default-*` presentation styles. Scoped `lxml` parsing
+rejects DTDs while disabling entity resolution and network access. The ODP adapter owns
 deterministic media identities.
 
 **Why.** The template defines theme-level master visuals and presentation defaults, while each build
@@ -529,7 +530,7 @@ and review gate.
 
 ### Historical (2026-09-08): native acceptance used the 18-layout evidence set
 
-**Status.** Superseded by the current 14-layout ODP/ODF evidence boundary. This entry preserves
+**Status.** Superseded by the later 14-layout ODP/ODF evidence boundary. This entry preserves
 the rationale for separating permanent tests from one-time acceptance evidence.
 
 **Decision.** Keep deterministic, offline behavior contracts in permanent pytest. Keep one
@@ -556,14 +557,14 @@ changing the permanent test contract.
 ### CJK vertical layouts stay outside the catalog
 
 **Decision.** Support the twelve standard LibreOffice Impress layout-panel identities and the
-project-owned `multiple-choice` and `gallery` extensions. Remove the four CJK-only vertical
-AutoLayouts from the Djot grammar, layout registry, measurement path, and native adapters.
+project-owned `multiple-choice`, `gallery`, and `big-image` extensions. Remove the four CJK-only
+vertical AutoLayouts from the Djot grammar, layout registry, measurement path, and native adapters.
 
 **Why.** The CJK-only identities are absent from the standard layout panel and no genetics source
 or importer output uses them. A single horizontal text-flow model gives title preflight and native
 output one physical contract.
 
-**Consequence.** The supported catalog contains fourteen layouts. Text frames use horizontal
+**Consequence.** The supported catalog contains fifteen layouts. Text frames use horizontal
 writing only, and the ODP adapter serializes no vertical-writing metadata.
 
 **Owner.** `slide_lib/layout_registry.py`, `slide_lib/layout_measurement.py`,
@@ -607,8 +608,8 @@ and removes that false dependency.
 **Consequence.** The canonical standard names are `blank`, `title-only`, `title-slide`,
 `one-panel`, `section`, `two-panels`, `one-plus-two-panels`, `two-plus-one-panels`,
 `stacked-panels`, `two-over-one-panels`, `four-panels`, and `six-panels`. Project-owned
-`multiple-choice` and `gallery` remain explicit extensions. `section` is the authored semantic
-name for LibreOffice Centered Text (`AUTOLAYOUT_ONLY_TEXT`), whose single outline member carries
+`multiple-choice`, `gallery`, and `big-image` remain explicit extensions. `section` is the authored
+semantic name for LibreOffice Centered Text (`AUTOLAYOUT_ONLY_TEXT`), whose single outline member carries
 the centered title and subtitle lines. The asymmetric layouts use named slots rather than source
 position.
 
@@ -693,11 +694,12 @@ object-appear reveal intent and no explicit action directive.
 redundant answer action or turning a popup into a general overlay system.
 
 **Consequence.** The visible question owns the full question region. A question first fits at the
-ordinary 20 pt floor; on true-fit failure, the compiler separates leading context labels, context
-prose, the teaching stem, and choices, then adapts the editable choice split and column widths down
-to an 18 pt quiz-specific floor. The answer is sized against its selected column and placed in
-reserved space below the shorter column, so its revealed final state does not hide a choice. The
-intent becomes a bounded ODF/SMIL animation request only when M5 builds it. Package semantics and the
+ordinary 20 pt body floor; on true-fit failure, the compiler separates leading context labels,
+context prose, the teaching stem, and choices, then adapts the editable choice split and column
+widths using that same floor. The answer is sized against its selected column and placed in
+reserved space below the shorter column, so its revealed final state does not hide a choice. Its
+native rounded popup uses a light-gray fill with dark-red outline and text. The intent becomes a
+bounded ODF/SMIL animation request only when M5 builds it. Package semantics and the
 automated reveal-state harness are the acceptance evidence.
 
 **Owner.** `slide_lib/multiple_choice_layout.py`, `slide_lib/layout_builders.py`,
@@ -847,8 +849,8 @@ title/body floors. It
 selects a full-fit recovery at or above the shared 1 pt serializer-safe minimum and records a
 structured source-location/layout/slot diagnostic when a selected size is below a readable floor.
 Content below the serializer-safe minimum raises one source-located physical-capacity error. The
-custom multiple-choice layout first tries its full visible question region at the ordinary floor,
-then separates context, stem, and choices into editable regions down to its 18 pt question floor.
+custom multiple-choice layout first tries its full visible question region at the ordinary body
+floor, then separates context, stem, and choices into editable regions using that same floor.
 ODP and PPTX project the completed `LayoutDeck` from the same `CompilationResult`; normal build
 summaries report those diagnostics without a second compilation.
 
@@ -876,20 +878,24 @@ explicit residual layout work, not evidence to lower the ordinary teaching floor
 
 **Decision.** Title slides use the native master rectangles and select the largest readable title
 that preserves the 20 pt body floor; otherwise the body records its capacity diagnostic. Covers add
-a rounded metadata frame and accent rule. Sections use the solid gradient-start color and center
-their text in a rounded frame. An exact `THE END` becomes two giant lines with a native star in the D.
+a rounded metadata frame and accent rule. Sections use the solid Genetics blue and center white text
+in a rounded frame. An exact `THE END` becomes two giant lines with a native star in the D.
+`big-image` places one focal image above a short full-width bottom caption, and ordinary content
+reserves a visible bottom margin.
 
 **Why.** The hand-written cover frame made metadata tiny, body-driven title shrinking hid the real
 constraint, and the master section outline appeared 42 logical pixels below the page midpoint.
-Recurring cover, transition, and closer roles need a clear identity without rasterized lettering.
+Recurring cover, transition, closer, and image-focus roles need a clear identity without rasterized
+lettering.
 
 **Consequence.** Covers use `Lecture ##<letter>` and separate subject, optional chapter, instructor,
 and date paragraphs. `LayoutSlide.surface` controls the native page style and master visibility.
 Decorations carry theme provenance as ODF geometry; every letter stays an editable font glyph. The
-14-layout catalog, existing placeholders, and `AUTOLAYOUT_ONLY_TEXT` section identity stay unchanged.
+15-layout catalog, existing placeholders, and `AUTOLAYOUT_ONLY_TEXT` section identity stay unchanged.
 
 **Owner.** `slide_lib/layout_model.py`, `slide_lib/layout_builders.py`,
-`slide_lib/layout_object_builders.py`, `slide_lib/odp_export.py`, and [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+`slide_lib/layout_specialty_builders.py`, `slide_lib/odp_export.py`, and
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
 ### Imported evidence keeps relations adaptable
 

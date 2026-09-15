@@ -32,7 +32,8 @@ def text_object(object_id: str, block: object,
 	measure = slide_lib.layout_measurement.text_frame_measurement(rectangle)
 	content = text_content(blocks, size, floor, role, FOREGROUND,
 		measure.wrapping_extent, theme, bold, session)
-	if frame.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE:
+	if frame.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE or \
+			role is slide_lib.layout_primitives.StyleRole.TITLE:
 		content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph,
 			properties=dataclasses.replace(paragraph.properties,
 				horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER))

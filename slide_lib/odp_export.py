@@ -8,7 +8,7 @@ import xml.etree.ElementTree
 import zipfile
 
 # PIP3 modules
-import defusedxml.ElementTree
+import lxml.etree
 
 # Local Modules
 import slide_lib.layout_content
@@ -37,6 +37,8 @@ _ROLE_COLORS = {
 	slide_lib.layout_primitives.StyleRole.ACCENT: "24578F",
 	slide_lib.layout_primitives.StyleRole.TABLE_HEADER: "24578F",
 	slide_lib.layout_primitives.StyleRole.MUTED: "526176",
+	slide_lib.layout_primitives.StyleRole.ANSWER: "7B1E2B",
+	slide_lib.layout_primitives.StyleRole.PANEL: "F2F3F5",
 	slide_lib.layout_primitives.StyleRole.DECORATION: "FFFFFF",
 }
 
@@ -333,22 +335,13 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 			_qname(SVG_NS, "y2"): _cm_y(rectangle.y + rectangle.height, deck, theme)})
 		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "line"), attributes)
 	elif content.kind in (slide_lib.layout_primitives.ShapeKind.RECTANGLE,
-			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE) and \
-			item.presentation_member_id is None and not item.reveal_targets:
+			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE):
 		if content.kind is slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE:
 			attributes[_qname(DRAW_NS, "corner-radius")] = \
 				_pt(content.style.corner_radius_pt)
 		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "rect"), attributes)
 		if content.text is not None:
 			slide_lib.odp_text.write_text(element, automatic, content.text, slide_index,
-				object_index, target_ids, item.reveal_targets)
-	elif item.presentation_member_id is not None or item.reveal_targets:
-		# LibreOffice retains presentation membership and object-level reveal IDs
-		# on frames; it strips those semantics from imported custom shapes.
-		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "frame"), attributes)
-		if content.text is not None:
-			text_box = xml.etree.ElementTree.SubElement(element, _qname(DRAW_NS, "text-box"))
-			slide_lib.odp_text.write_text(text_box, automatic, content.text, slide_index,
 				object_index, target_ids, item.reveal_targets)
 	else:
 		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "custom-shape"),
@@ -462,13 +455,13 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		layout_names: dict[slide_lib.layout_primitives.PresentationPageLayoutKey, str]) -> bytes:
 	"""Append compiler-selected page-layout classifiers to the template styles."""
-	# ASVS 1.5.1: parse retained template XML with external entities disabled.
-	root = defusedxml.ElementTree.fromstring(content)
+	# ASVS 1.5.1: parse retained template XML without DTDs or external entities.
+	root = slide_lib.odf_package.parse_xml(content, "styles.xml")
 	styles = root.find(_qname(OFFICE_NS, "styles"))
 	if styles is None:
 		raise ValueError("template styles.xml is missing office:styles")
 	for key in deck.presentation_page_layouts:
-		layout = xml.etree.ElementTree.SubElement(styles,
+		layout = lxml.etree.SubElement(styles,
 			_qname(STYLE_NS, "presentation-page-layout"), {
 				_qname(STYLE_NS, "name"): layout_names[key],
 			})
@@ -478,7 +471,7 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 			placeholders = tuple((member.object_name.value, member.rectangle)
 				for member in key.libreoffice_layout.placeholders)
 		for object_name, rectangle in placeholders:
-			xml.etree.ElementTree.SubElement(layout,
+			lxml.etree.SubElement(layout,
 				_qname(PRESENTATION_NS, "placeholder"), {
 					_qname(PRESENTATION_NS, "object"): object_name,
 					_qname(SVG_NS, "x"): _cm_x(rectangle.x, deck, theme),
@@ -486,7 +479,7 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 					_qname(SVG_NS, "width"): _cm_x(rectangle.width, deck, theme),
 					_qname(SVG_NS, "height"): _cm_y(rectangle.height, deck, theme),
 				})
-	return _xml_bytes(root)
+	return _XML_DECLARATION + lxml.etree.tostring(root, encoding="utf-8")
 
 
 #============================================

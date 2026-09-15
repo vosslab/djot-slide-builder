@@ -422,6 +422,21 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 	if spec.name == "multiple-choice":
 		validate_multiple_choice(source)
 		return
+	if spec.name == "big-image":
+		if source.blocks:
+			raise source_error(source.blocks[0].location,
+				"big-image slides place content in the image and caption slots")
+		image_cell = next(cell for cell in cells if cell.name == "image")
+		caption_cell = next(cell for cell in cells if cell.name == "caption")
+		if len(image_cell.blocks) != 1 or not isinstance(
+				image_cell.blocks[0], slide_lib.native_model.Image):
+			raise source_error(image_cell.location,
+				"big-image image slot requires exactly one component image")
+		if not 1 <= len(caption_cell.blocks) <= 2 or any(not isinstance(
+				block, slide_lib.native_model.Paragraph) for block in caption_cell.blocks):
+			raise source_error(caption_cell.location,
+				"big-image caption slot requires one or two editable text paragraphs")
+		return
 	if spec.name in ("title-slide", "section", "gallery") and root_tables:
 		raise source_error(root_tables[0].location, f"{spec.name} slides do not have a native table destination")
 	if spec.cell_count and not spec.allows_root_body and spec.name != "gallery":

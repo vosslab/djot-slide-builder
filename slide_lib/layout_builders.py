@@ -10,21 +10,13 @@ import slide_lib.layout_content
 import slide_lib.layout_model
 import slide_lib.layout_object_builders
 import slide_lib.layout_primitives
+import slide_lib.layout_specialty_builders
 import slide_lib.multiple_choice_layout
 import slide_lib.native_model
 import slide_lib.presentation_theme
 
 
-FOREGROUND = "172033"
-ACCENT = "24578F"
-MUTED = "526176"
-WHITE = "FFFFFF"
-QUIZ_FLOOR_SIZE_PT = slide_lib.multiple_choice_layout.QUESTION_FLOOR_SIZE_PT
-SECTION_TITLE_SIZE_PT = 48.0
-SECTION_SUBTITLE_SIZE_PT = 30.0
-END_TITLE_SIZE_PT = 156.0
-END_TITLE_FLOOR_SIZE_PT = 110.0
-END_LINE_SPACING_EM = 1.06
+ANSWER = "7B1E2B"
 
 def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
@@ -38,6 +30,11 @@ def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_mo
 		return _multiple_choice(deck, source, theme, index, contract, session)
 	if source.layout_class == "gallery":
 		return _gallery(deck, source, theme, index, contract, session)
+	if source.layout_class == "big-image":
+		components = slide_lib.layout_specialty_builders.big_image_components(
+			deck, source, theme, contract, session)
+		return _slide(source, index, contract, list(components.slots),
+			list(components.objects), components.surface)
 	if source.layout_class == "title-only":
 		return _title_only_slide(deck, source, theme, index, contract, session)
 	if not contract.slot_names:
@@ -95,7 +92,7 @@ def _title_geometry(title: slide_lib.native_model.Heading, size: float,
 		return None
 	title_rectangle = slide_lib.layout_primitives.LogicalRectangle(60, 52, 1160, reserved_height)
 	content = slide_lib.layout_primitives.LogicalRectangle(60, 52 + reserved_height + 24, 1160,
-		754 - (52 + reserved_height + 24))
+		slide_lib.layout_measurement.CONTENT_BOTTOM - (52 + reserved_height + 24))
 	return title_rectangle, content
 
 def _body_fits_floor(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
@@ -173,7 +170,10 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 	"""Build title-only, title-slide, section, and blank slide physical frames."""
 	headings = tuple(block for block in source.blocks if isinstance(block, slide_lib.native_model.Heading))
 	if contract.name == "section":
-		return _section_slide(source, headings, theme, index, contract, session)
+		components = slide_lib.layout_specialty_builders.section_components(
+			headings, theme, contract, session)
+		return _slide(source, index, contract, list(components.slots),
+			list(components.objects), components.surface)
 	slots: list[slide_lib.layout_model.LayoutSlot] = []
 	objects: list[slide_lib.layout_model.LayoutObject] = []
 	is_title_slide = contract.name == "title-slide"
@@ -209,7 +209,7 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 			text_order + 1, slide_lib.layout_primitives.PlaceholderKind.SUBTITLE, theme,
 			session=session))
 	if is_title_slide and len(headings) > 1:
-		objects = _title_slide_decorations(theme) + objects
+		objects = list(slide_lib.layout_specialty_builders.title_slide_decorations(theme)) + objects
 	return _slide(source, index, contract, slots, objects)
 
 def _title_only_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide, theme: slide_lib.presentation_theme.PresentationTheme, index: int,
@@ -229,7 +229,8 @@ def _title_only_slide(deck: slide_lib.native_model.Deck, source: slide_lib.nativ
 		slide_lib.layout_primitives.StyleRole.TITLE, frame, "title", 0, slide_lib.layout_primitives.PlaceholderKind.TITLE, theme, bold=True, session=session)]
 	body = tuple(block for block in source.blocks if block is not title)
 	if body:
-		content = slide_lib.layout_primitives.LogicalRectangle(60, 454, 1160, 286)
+		content = slide_lib.layout_primitives.LogicalRectangle(60, 454, 1160,
+			slide_lib.layout_measurement.CONTENT_BOTTOM - 454)
 		cell = slide_lib.native_model.Cell(source.location, body, "body")
 		slots.append(_slot("body", slide_lib.layout_primitives.PlaceholderKind.NONE,
 			slide_lib.layout_primitives.PresentationRole.CONTENT, content, 1, frame, slide_lib.layout_primitives.StyleRole.BODY))
@@ -246,184 +247,13 @@ def _master_rectangle(frame: slide_lib.presentation_theme.FrameGeometry,
 		frame.width_cm * logical_per_cm, frame.height_cm * logical_per_cm)
 
 
-def _title_slide_decorations(theme: slide_lib.presentation_theme.PresentationTheme
-		) -> list[slide_lib.layout_model.LayoutObject]:
-	"""Frame title-slide metadata with restrained theme-derived native shapes."""
-	outline = _master_rectangle(theme.outline_frame, theme)
-	card = slide_lib.layout_primitives.LogicalRectangle(
-		outline.x + 64, outline.y + 64, outline.width - 128, outline.height - 128)
-	title = _master_rectangle(theme.title_frame, theme)
-	accent = slide_lib.layout_primitives.LogicalRectangle(
-		title.x + (title.width - 140) / 2, title.y + title.height + 24, 140, 7)
-	return [
-		_decorative_shape("title-metadata-frame", card,
-			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-			slide_lib.layout_primitives.StyleRole.DECORATION,
-			slide_lib.layout_primitives.StyleRole.TRANSITION,
-			slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 22, 0, 2),
-		_decorative_shape("title-accent", accent,
-			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-			slide_lib.layout_primitives.StyleRole.ACCENT,
-			slide_lib.layout_primitives.StyleRole.ACCENT,
-			slide_lib.layout_primitives.LinePattern.NONE, 1, 4, 1, 3),
-	]
-
-
-def _decorative_shape(object_id: str,
-		rectangle: slide_lib.layout_primitives.LogicalRectangle,
-		kind: slide_lib.layout_primitives.ShapeKind,
-		fill_role: slide_lib.layout_primitives.StyleRole,
-		line_role: slide_lib.layout_primitives.StyleRole,
-		line_pattern: slide_lib.layout_primitives.LinePattern,
-		line_width_pt: float, corner_radius_pt: float, z_index: int,
-		reading_order: int) -> slide_lib.layout_model.LayoutObject:
-	"""Build one editable layout-owned decoration outside presentation members."""
-	style = slide_lib.layout_content.ShapeStyle(fill_role, line_role, line_width_pt,
-		line_pattern, corner_radius_pt)
-	content = slide_lib.layout_content.ShapeContent(kind, style,
-		slide_lib.layout_primitives.ObjectAccessibility(decorative=True))
-	return slide_lib.layout_model.LayoutObject(object_id,
-		slide_lib.layout_primitives.PresentationRole.GRAPHIC,
-		slide_lib.layout_primitives.StyleRole.DECORATION, rectangle,
-		slide_lib.layout_primitives.ObjectLayer.DECORATION, z_index, reading_order, content,
-		origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
-
-def _section_slide(source: slide_lib.native_model.Slide,
-		headings: tuple[slide_lib.native_model.Heading, ...],
-		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
-		contract: slide_lib.layout_primitives.LayoutContract,
-		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
-	"""Build one centered transition card in LibreOffice's Centered Text member."""
-	if len(headings) == 1 and slide_lib.layout_measurement.visible_text(
-			headings[0].inlines) == "THE END":
-		return _end_slide(source, headings[0], theme, index, contract, session)
-	rectangle = slide_lib.layout_primitives.LogicalRectangle(150, 235, 980, 330)
-	frame = dataclasses.replace(_frame_text(),
-		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
-	transition_theme = dataclasses.replace(theme,
-		standard_title_size_pt=SECTION_TITLE_SIZE_PT,
-		ordinary_body_size_pt=SECTION_SUBTITLE_SIZE_PT)
-	sizes = slide_lib.layout_measurement.select_centered_heading_sizes(headings[0], headings[1:],
-		rectangle, transition_theme, contract.name, session)
-	subtitle_size = sizes.subtitle_size_pt if sizes.subtitle_size_pt is not None else \
-		theme.ordinary_body_size_pt
-	title = slide_lib.layout_object_builders.text_content((headings[0],), sizes.title_size_pt,
-		theme.title_floor_size_pt, slide_lib.layout_primitives.StyleRole.TITLE,
-		FOREGROUND, rectangle.width, theme, bold=True, session=session)
-	subtitle = slide_lib.layout_object_builders.text_content(headings[1:], subtitle_size,
-		theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.SUBTITLE,
-		FOREGROUND, rectangle.width, theme, session=session)
-	paragraphs = tuple(dataclasses.replace(paragraph, properties=dataclasses.replace(
-		paragraph.properties,
-		horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER))
-		for paragraph in title.paragraphs + subtitle.paragraphs)
-	content = slide_lib.layout_content.TextContent(paragraphs)
-	slot = _slot("title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
-		slide_lib.layout_primitives.PresentationRole.OUTLINE, rectangle, 0, frame,
-		slide_lib.layout_primitives.StyleRole.BODY)
-	item = slide_lib.layout_model.LayoutObject("section",
-		slide_lib.layout_primitives.PresentationRole.OUTLINE,
-		slide_lib.layout_primitives.StyleRole.BODY, rectangle,
-		slide_lib.layout_primitives.ObjectLayer.LAYOUT, 1, 0, content, frame,
-		"title", "title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
-		headings[0].location,
-		slide_lib.layout_object_builders.reveal_targets("section", headings, 0))
-	border = _decorative_shape("section-frame",
-		slide_lib.layout_primitives.LogicalRectangle(105, 190, 1070, 420),
-		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.TRANSITION,
-		slide_lib.layout_primitives.StyleRole.DECORATION,
-		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
-	surface = slide_lib.layout_primitives.SlideSurface(
-		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
-	return _slide(source, index, contract, [slot], [border, item], surface)
-
-
-def _end_slide(source: slide_lib.native_model.Slide,
-		title: slide_lib.native_model.Heading,
-		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
-		contract: slide_lib.layout_primitives.LayoutContract,
-		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
-	"""Build the two-line THE END closer with editable type and a vector star inside the D."""
-	rectangle = slide_lib.layout_primitives.LogicalRectangle(190, 130, 900, 600)
-	frame = dataclasses.replace(_frame_text(),
-		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
-	def fits(candidate: float) -> bool:
-		"""Keep both display lines inside their exact native frame."""
-		width = max(session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
-			True, False, candidate, value) for value in ("THE", "END"))
-		line_spacing_pt = candidate * END_LINE_SPACING_EM
-		height = 2 * slide_lib.layout_measurement.point_height(line_spacing_pt, theme)
-		return width <= rectangle.width and slide_lib.layout_measurement.text_frame_fits(
-			height, slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
-	size = slide_lib.layout_measurement.largest_fitting_size(
-		END_TITLE_SIZE_PT, END_TITLE_FLOOR_SIZE_PT, fits)
-	if size is None:
-		raise slide_lib.capacity_report.PhysicalCapacityError(title.location, contract.name,
-			"title", END_TITLE_FLOOR_SIZE_PT,
-			slide_lib.capacity_report.CapacityCause.TITLE, END_TITLE_FLOOR_SIZE_PT)
-	the_heading = dataclasses.replace(title, inlines=(slide_lib.native_model.Text("THE"),))
-	end_heading = dataclasses.replace(title, inlines=(slide_lib.native_model.Text("END"),))
-	content = slide_lib.layout_object_builders.text_content(
-		(the_heading, end_heading), size, END_TITLE_FLOOR_SIZE_PT,
-		slide_lib.layout_primitives.StyleRole.TITLE, WHITE, rectangle.width,
-		theme, bold=True, session=session)
-	line_spacing_pt = size * END_LINE_SPACING_EM
-	content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph,
-		properties=dataclasses.replace(paragraph.properties,
-			horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER,
-			space_after_pt=0, line_spacing_pt=line_spacing_pt))
-		for paragraph in content.paragraphs))
-	slot = _slot("title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
-		slide_lib.layout_primitives.PresentationRole.OUTLINE, rectangle, 0, frame,
-		slide_lib.layout_primitives.StyleRole.TITLE)
-	text = slide_lib.layout_model.LayoutObject("end-title",
-		slide_lib.layout_primitives.PresentationRole.OUTLINE,
-		slide_lib.layout_primitives.StyleRole.TITLE, rectangle,
-		slide_lib.layout_primitives.ObjectLayer.LAYOUT, 2, 0, content, frame,
-		"title", "title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
-		title.location)
-	outer = _decorative_shape("end-outer-frame",
-		slide_lib.layout_primitives.LogicalRectangle(110, 40, 1060, 720),
-		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.TRANSITION,
-		slide_lib.layout_primitives.StyleRole.DECORATION,
-		slide_lib.layout_primitives.LinePattern.SOLID, 3, 54, 0, 1)
-	inner = _decorative_shape("end-inner-frame",
-		slide_lib.layout_primitives.LogicalRectangle(155, 75, 970, 650),
-		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.ACCENT,
-		slide_lib.layout_primitives.StyleRole.DECORATION,
-		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 44, 1, 2)
-	total_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
-		True, False, size, "END")
-	prefix_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
-		True, False, size, "EN")
-	d_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
-		True, False, size, "D")
-	text_left = rectangle.x + (rectangle.width - total_width) / 2
-	line_height = slide_lib.layout_measurement.point_height(line_spacing_pt, theme)
-	star_size = 34.0
-	star_center_x = text_left + prefix_width + d_width / 2
-	star = _decorative_shape("end-star",
-			slide_lib.layout_primitives.LogicalRectangle(
-				star_center_x - star_size / 2,
-				rectangle.y + rectangle.height / 2 + line_height / 2 - 28 - star_size / 2,
-			star_size, star_size),
-		slide_lib.layout_primitives.ShapeKind.STAR,
-		slide_lib.layout_primitives.StyleRole.DECORATION,
-		slide_lib.layout_primitives.StyleRole.DECORATION,
-		slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 3, 3)
-	surface = slide_lib.layout_primitives.SlideSurface(
-		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
-	return _slide(source, index, contract, [slot], [outer, inner, text, star], surface)
-
 def _content_area(source: slide_lib.native_model.Slide, title: slide_lib.native_model.Heading | None,
 		theme: slide_lib.presentation_theme.PresentationTheme, contract: slide_lib.layout_primitives.LayoutContract,
 		index: int, session: slide_lib.layout_measurement.MeasurementSession) -> tuple[slide_lib.layout_primitives.LogicalRectangle, slide_lib.layout_model.LayoutObject | None]:
 	"""Reserve a title at a bounded point size and return remaining body area."""
 	if title is None:
-		return slide_lib.layout_primitives.LogicalRectangle(60, 82, 1160, 672), None
+		return slide_lib.layout_primitives.LogicalRectangle(60, 82, 1160,
+			slide_lib.layout_measurement.CONTENT_BOTTOM - 82), None
 	geometry = _title_geometry(title, theme.standard_title_size_pt, theme, contract, session)
 	size = theme.standard_title_size_pt
 	if geometry is None:
@@ -700,7 +530,8 @@ def _multiple_choice(deck: slide_lib.native_model.Deck, source: slide_lib.native
 	"""Build one visible adaptive question and its on-click answer popup."""
 	question = next(cell for cell in source.cells if cell.name == "question")
 	answer = next(cell for cell in source.cells if cell.name == "answer")
-	question_rect = slide_lib.layout_primitives.LogicalRectangle(60, 36, 1160, 728)
+	question_rect = slide_lib.layout_primitives.LogicalRectangle(60, 36, 1160,
+		slide_lib.layout_measurement.CONTENT_BOTTOM - 36)
 	frame = _frame_text()
 	column_gap = 42.0
 	answer_frame = dataclasses.replace(frame,
@@ -718,18 +549,19 @@ def _multiple_choice(deck: slide_lib.native_model.Deck, source: slide_lib.native
 		slide_lib.layout_primitives.PresentationRole.OUTLINE, question_rect, 0, frame,
 		slide_lib.layout_primitives.StyleRole.OUTLINE), _slot("answer",
 		slide_lib.layout_primitives.PlaceholderKind.OBJECT, slide_lib.layout_primitives.PresentationRole.OBJECT,
-		answer_rect, 1, answer_frame, slide_lib.layout_primitives.StyleRole.ACCENT)]
+		answer_rect, 1, answer_frame, slide_lib.layout_primitives.StyleRole.ANSWER)]
 	text = slide_lib.layout_object_builders.text_content(
 		answer.blocks, answer_size, theme.body_floor_size_pt,
-		slide_lib.layout_primitives.StyleRole.ACCENT, WHITE, popup_width - 36, theme,
+		slide_lib.layout_primitives.StyleRole.ANSWER, ANSWER, popup_width - 36, theme,
 		bold=True, session=session)
 	accessibility = slide_lib.layout_primitives.ObjectAccessibility("Answer", "Multiple-choice answer popup")
-	style = slide_lib.layout_content.ShapeStyle(slide_lib.layout_primitives.StyleRole.ACCENT,
-		slide_lib.layout_primitives.StyleRole.ACCENT, 1, slide_lib.layout_primitives.LinePattern.NONE, 12)
+	style = slide_lib.layout_content.ShapeStyle(slide_lib.layout_primitives.StyleRole.PANEL,
+		slide_lib.layout_primitives.StyleRole.ANSWER, 2.5,
+		slide_lib.layout_primitives.LinePattern.SOLID, 16)
 	shape = slide_lib.layout_content.ShapeContent(slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
 		style, accessibility, text)
 	objects.append(slide_lib.layout_model.LayoutObject("answer", slide_lib.layout_primitives.PresentationRole.OBJECT,
-		slide_lib.layout_primitives.StyleRole.ACCENT, answer_rect, slide_lib.layout_primitives.ObjectLayer.CONTENT,
+		slide_lib.layout_primitives.StyleRole.ANSWER, answer_rect, slide_lib.layout_primitives.ObjectLayer.CONTENT,
 		len(objects), len(objects), shape, answer_frame, "answer", "answer",
 		slide_lib.layout_primitives.PlaceholderKind.OBJECT, answer.location,
 		slide_lib.layout_object_builders.reveal_targets("answer", answer.blocks, len(objects))))
@@ -793,7 +625,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 					context_width, height)
 				objects.append(slide_lib.layout_object_builders.text_object(
 					f"question-context-{start + column + 1}",
-					block, allocation, size, QUIZ_FLOOR_SIZE_PT,
+					block, allocation, size, theme.body_floor_size_pt,
 					slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question",
 					len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE,
 					theme, session=session))
@@ -804,7 +636,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 				leading_width, prompt.prose_height)
 			objects.append(slide_lib.layout_object_builders.text_object(
 				"question-context-prose", parts.context_prose,
-				allocation, size, QUIZ_FLOOR_SIZE_PT,
+				allocation, size, theme.body_floor_size_pt,
 				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question",
 				len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE,
 				theme, session=session))
@@ -814,7 +646,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 				leading_width, prompt.stem_height)
 			objects.append(slide_lib.layout_object_builders.text_object(
 				"question-stem", parts.stem, allocation, size,
-				QUIZ_FLOOR_SIZE_PT,
+				theme.body_floor_size_pt,
 				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 				slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
 		y += prompt.height
@@ -824,7 +656,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 		objects.append(slide_lib.layout_object_builders.text_object(
 			"question-context-prose", parts.context_prose,
 			allocation, size,
-			QUIZ_FLOOR_SIZE_PT,
+			theme.body_floor_size_pt,
 			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
 		y += prompt.leading_height
@@ -835,7 +667,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 			rectangle.x, y, rectangle.width, prompt.stem_height)
 		objects.append(slide_lib.layout_object_builders.text_object(
 			"question-stem", parts.stem, allocation, size,
-			QUIZ_FLOOR_SIZE_PT,
+			theme.body_floor_size_pt,
 			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
 		y += prompt.stem_height
@@ -852,7 +684,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 			x, y, width, height)
 		objects.append(slide_lib.layout_object_builders.text_object(
 			f"question-choices-{column + 1}", blocks, allocation,
-			size, QUIZ_FLOOR_SIZE_PT,
+			size, theme.body_floor_size_pt,
 			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
 	text_index = next(index for index, item in enumerate(objects)

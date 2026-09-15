@@ -75,7 +75,7 @@ unchanged; the exporter does not measure text, select leading, or derive list ge
 
 The pipeline has direct-import modules with no compatibility facade: `layout_model.py` owns
 immutable physical facts, `layout_engine.py` owns allocation and preflight for the twelve
-LibreOffice-backed layouts plus the project-owned `multiple-choice` and `gallery` layouts,
+LibreOffice-backed layouts plus the project-owned `multiple-choice`, `gallery`, and `big-image` layouts,
 `odp_export.py` owns ODF document/frame/package projection and `odp_text.py` owns ODF editable
 text, lists, links, and tables. `PresentationTheme.template_path` is the sole template authority.
 
@@ -121,13 +121,14 @@ or invoking LibreOffice, then reports the same source-located capacity diagnosti
 | `slide_lib/djot_lint.py` | Strict-tool invocation and source-only Djot semantics | Source diagnostics |
 | `slide_lib/layout_registry.py` | Names, slots, topology, and LibreOffice classifier policies | `LayoutContract` |
 | `slide_lib/layout_measurement.py` | Font-backed capacity, flow, and title measurement | Resolved physical facts |
-| `slide_lib/layout_builders.py` | Format-neutral native object construction | `LayoutSlide` objects |
+| `slide_lib/layout_builders.py` | Standard and multiple-choice object construction | `LayoutSlide` objects |
+| `slide_lib/layout_specialty_builders.py` | Cover, transition, closer, and focal-image construction | Native specialty objects |
 | `slide_lib/layout_engine.py` | Public one-to-one compilation orchestration | Immutable `CompilationResult` |
 | `slide_lib/presentation_theme.py` | Validated, format-neutral reading of the authoritative OTP | 16:10 page, gradient, title, and outline values |
 | `slide_lib/odp_export.py` | ODF document structure, layouts, frames, notes, images, and package orchestration | Editable ODP structure |
 | `slide_lib/odp_text.py` | Editable ODF paragraphs, spans, links, native lists, tables, and text styles | ODF text and table objects |
 | `slide_lib/odp_animation.py` | Source-ordered ODF/SMIL timing trees | Native reveal timing |
-| `slide_lib/odf_package.py` | Bounded ODF package validation and atomic publication | Validated ODP package |
+| `slide_lib/odf_package.py` | Scoped lxml parsing, bounded ODF validation, and atomic publication | Validated ODP package |
 | `slide_lib/libreoffice.py` | Process preflight and PDF conversion | ODP-derived PDF |
 | `slide_lib/native_export.py` | Deck discovery, export stages, notes, and paths | Ordered deck and artifact paths |
 | `slide_lib/terminal_output.py` | Transient progress, summaries, and expected failures | One concise Rich interface |

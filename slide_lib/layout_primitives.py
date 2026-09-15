@@ -80,6 +80,8 @@ class StyleRole(enum.Enum):
 	MUTED = "muted"
 	DECORATION = "decoration"
 	TRANSITION = "transition"
+	ANSWER = "answer"
+	PANEL = "panel"
 
 
 class OverflowPolicy(enum.Enum):

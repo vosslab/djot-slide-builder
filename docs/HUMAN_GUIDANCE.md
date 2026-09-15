@@ -124,6 +124,18 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   inside the D.
 - Keep every font character as a real glyph in the final product. Never rasterize type; use native
   vector shapes for decorations such as the star.
+- Use the existing `multiple-choice` layout for question-and-answer slides. Reveal the answer in a
+  rounded light-gray box with a dark-red outline and dark-red editable text.
+- Use `big-image` when one image is the focus. Give the image the main page region and place a small
+  editable caption across the bottom, including recording, YouTube, and Discord signup slides.
+- Keep ordinary slide text clear of the bottom edge with a visible margin comparable to the other
+  page edges.
+- Center the primary title in most layouts. Keep body text, local headings, captions, and question
+  content aligned for reading.
+- Multiple-choice content uses the ordinary body-text floor; there is no separate quiz category.
+- Prefer properly scoped `lxml` over `defusedxml` for bounded XML parsing.
+- Color-code courses at the theme level: Genetics is blue, Biostatistics is green, Biochemistry is
+  purple, and Biotechnology is red.
 - Treat `slide_*_source` raster names as retired full-slide fallback evidence, not component images.
 - Use lots of images and aim for a visual image on every slide.
 - Hold image-bearing slide PNGs out of publication until their copyright status is assessed;
@@ -181,9 +193,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - The Djot slide surface uses `=== layout: <name>` to start a slide and choose its layout, and
   `@<slot>` to select a predefined slot from that layout. The parser and layout catalog implement
   these spellings while keeping new grammar decisions evidence-driven.
-- The Djot layout catalog includes every default LibreOffice layout plus the custom
-  `multiple-choice` layout. Preserve familiar Markdown content where compatible with Djot;
-  `=== layout:` starts each slide, and extra image modifiers are not adopted.
+- Include every default LibreOffice layout plus `multiple-choice`, `gallery`, and `big-image`.
+  Preserve familiar Markdown content where compatible with Djot. Use `=== layout:` to start each
+  slide; do not add image modifiers.
 - In title-bearing layouts, `#` supplies the title; in subtitle-bearing layouts, `##` supplies the
   subtitle. Layouts without title placement reject both headings.
 - Use `<= <action>` as a terminal animation directive for the preceding item or block and

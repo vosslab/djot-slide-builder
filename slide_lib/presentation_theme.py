@@ -8,12 +8,10 @@ import hashlib
 import io
 import json
 import pathlib
-import xml.etree.ElementTree
-import zipfile
 
 # PIP3 modules
-import defusedxml.ElementTree
 import fontTools.ttLib
+import lxml.etree
 import PIL.ImageFont
 
 # local repo modules
@@ -471,8 +469,8 @@ def nonnegative_length_value(raw_value: str, unit: str) -> float:
 
 
 #============================================
-def named_element(root: xml.etree.ElementTree.Element, path: str,
-		name_attribute: str, name: str) -> xml.etree.ElementTree.Element:
+def named_element(root: lxml.etree._Element, path: str,
+		name_attribute: str, name: str) -> lxml.etree._Element:
 	"""Return one uniquely named XML element from the template."""
 	matches = [element for element in root.findall(path, NS)
 		if element.attrib.get(name_attribute) == name]
@@ -482,8 +480,8 @@ def named_element(root: xml.etree.ElementTree.Element, path: str,
 
 
 #============================================
-def presentation_style(root: xml.etree.ElementTree.Element,
-		name: str) -> xml.etree.ElementTree.Element:
+def presentation_style(root: lxml.etree._Element,
+		name: str) -> lxml.etree._Element:
 	"""Return one named presentation-family style."""
 	style = named_element(root, ".//style:style", qname("style", "name"), name)
 	if style.attrib.get(qname("style", "family")) != "presentation":
@@ -492,8 +490,8 @@ def presentation_style(root: xml.etree.ElementTree.Element,
 
 
 #============================================
-def master_frame(master: xml.etree.ElementTree.Element,
-		presentation_class: str) -> xml.etree.ElementTree.Element:
+def master_frame(master: lxml.etree._Element,
+		presentation_class: str) -> lxml.etree._Element:
 	"""Return one placeholder frame from the selected master page."""
 	matches = [frame for frame in master.findall("draw:frame", NS)
 		if frame.attrib.get(qname("presentation", "class")) == presentation_class]
@@ -506,7 +504,7 @@ def master_frame(master: xml.etree.ElementTree.Element,
 
 
 #============================================
-def frame_geometry(frame: xml.etree.ElementTree.Element) -> FrameGeometry:
+def frame_geometry(frame: lxml.etree._Element) -> FrameGeometry:
 	"""Read one master-placeholder rectangle in physical ODF centimeters."""
 	geometry = FrameGeometry(
 		nonnegative_length_value(frame.attrib[qname("svg", "x")], "cm"),
@@ -518,7 +516,7 @@ def frame_geometry(frame: xml.etree.ElementTree.Element) -> FrameGeometry:
 
 
 #============================================
-def outline_style_names(styles_root: xml.etree.ElementTree.Element) -> tuple[str, ...]:
+def outline_style_names(styles_root: lxml.etree._Element) -> tuple[str, ...]:
 	"""Return the complete ordinary outline style hierarchy in native order."""
 	names = tuple(f"Default-outline{level}" for level in range(1, 10))
 	for name in names:
@@ -527,8 +525,8 @@ def outline_style_names(styles_root: xml.etree.ElementTree.Element) -> tuple[str
 
 
 #============================================
-def effective_text_properties(styles_root: xml.etree.ElementTree.Element,
-		style: xml.etree.ElementTree.Element, name: str) -> dict[str, str]:
+def effective_text_properties(styles_root: lxml.etree._Element,
+		style: lxml.etree._Element, name: str) -> dict[str, str]:
 	"""Resolve inherited presentation text properties from child through parent styles."""
 	properties: dict[str, str] = {}
 	current = style
@@ -550,8 +548,8 @@ def effective_text_properties(styles_root: xml.etree.ElementTree.Element,
 
 
 #============================================
-def effective_paragraph_properties(styles_root: xml.etree.ElementTree.Element,
-		style: xml.etree.ElementTree.Element, name: str) -> dict[str, str]:
+def effective_paragraph_properties(styles_root: lxml.etree._Element,
+		style: lxml.etree._Element, name: str) -> dict[str, str]:
 	"""Resolve inherited presentation paragraph properties from child through parent styles."""
 	properties: dict[str, str] = {}
 	current = style
@@ -598,7 +596,7 @@ def presentation_font_sizes(properties: dict[str, str], name: str) -> tuple[floa
 
 
 #============================================
-def fixed_shrink_only(style: xml.etree.ElementTree.Element, name: str) -> None:
+def fixed_shrink_only(style: lxml.etree._Element, name: str) -> None:
 	"""Require the bounded native overflow mode for generated standard frames."""
 	properties = style.find("style:graphic-properties", NS)
 	if properties is None:
@@ -610,7 +608,7 @@ def fixed_shrink_only(style: xml.etree.ElementTree.Element, name: str) -> None:
 
 
 #============================================
-def list_level_styles(outline_style: xml.etree.ElementTree.Element,
+def list_level_styles(outline_style: lxml.etree._Element,
 		logical_pixels_per_cm: float) -> tuple[ListLevelStyle, ...]:
 	"""Read the nine native ODP outline levels from the ODP outline style."""
 	levels: list[tuple[int, ListLevelStyle]] = []
@@ -643,9 +641,8 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 	font_metrics = validated_font_metrics()
 	resolved_path = template_path.resolve()
 	required = frozenset({"mimetype", "content.xml", "styles.xml"})
-	slide_lib.odf_package.validate_package(resolved_path, ".otp", OTP_MIMETYPE, required)
-	with zipfile.ZipFile(resolved_path) as archive:
-		styles_root = defusedxml.ElementTree.fromstring(archive.read("styles.xml"))
+	package = slide_lib.odf_package.admit_package(resolved_path, ".otp", OTP_MIMETYPE, required)
+	styles_root = package.styles_root
 	masters = styles_root.findall(".//style:master-page", NS)
 	if len(masters) != 1:
 		raise ThemeError("theme template must define exactly one master page")

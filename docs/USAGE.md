@@ -57,6 +57,9 @@ The project-owned `multiple-choice` teaching layout retains its question, choice
 semantics. Its adaptive capacity selection evaluates supported choice geometries before reporting
 only the final selected recovery or physical boundary.
 
+Use `big-image` for one focal image with a short full-width caption at the bottom. The image and
+caption remain separate editable native objects.
+
 ## Import existing slides
 
 Import a trusted ODP into a new extended-Djot deck and adjacent asset directory:

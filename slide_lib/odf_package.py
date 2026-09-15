@@ -8,11 +8,10 @@ import posixpath
 import stat
 import tempfile
 import urllib.parse
-import xml.etree.ElementTree
 import zipfile
 
 # PIP3 modules
-import defusedxml.ElementTree
+import lxml.etree
 
 
 ODP_MIMETYPE = "application/vnd.oasis.opendocument.presentation"
@@ -37,8 +36,8 @@ class AdmittedOdfPackage:
 	members: tuple[zipfile.ZipInfo, ...]
 	member_names: frozenset[str]
 	manifest_targets: frozenset[str]
-	content_root: xml.etree.ElementTree.Element
-	styles_root: xml.etree.ElementTree.Element
+	content_root: lxml.etree._Element
+	styles_root: lxml.etree._Element
 
 
 #============================================
@@ -86,7 +85,18 @@ def package_reference_target(member_name: str, raw_value: str) -> str | None:
 
 
 #============================================
-def validate_xml_tree(root: xml.etree.ElementTree.Element, member_name: str) -> None:
+def parse_xml(content: bytes, member_name: str) -> lxml.etree._Element:
+	"""Parse bounded ODF XML without DTDs, entity expansion, or network access."""
+	parser = lxml.etree.XMLParser(resolve_entities=False, load_dtd=False,
+		no_network=True, recover=False, huge_tree=False)
+	root = lxml.etree.fromstring(content, parser)
+	if root.getroottree().docinfo.doctype:
+		raise ValueError(f"ODF XML DTD is not allowed in {member_name!r}")
+	return root
+
+
+#============================================
+def validate_xml_tree(root: lxml.etree._Element, member_name: str) -> None:
 	"""Apply explicit breadth, depth, and text limits to an admitted XML tree."""
 	stack = [(root, 1)]
 	node_count = 0
@@ -106,7 +116,7 @@ def validate_xml_tree(root: xml.etree.ElementTree.Element, member_name: str) -> 
 
 #============================================
 def xml_reference_targets_from_root(member_name: str,
-		root: xml.etree.ElementTree.Element) -> frozenset[str]:
+		root: lxml.etree._Element) -> frozenset[str]:
 	"""Return validated package-local href targets from one parsed XML root."""
 	targets: set[str] = set()
 	for element in root.iter():
@@ -120,7 +130,7 @@ def xml_reference_targets_from_root(member_name: str,
 
 
 #============================================
-def manifest_file_targets_from_root(root: xml.etree.ElementTree.Element) -> frozenset[str]:
+def manifest_file_targets_from_root(root: lxml.etree._Element) -> frozenset[str]:
 	"""Read validated package-local file targets from a parsed manifest root."""
 	targets: set[str] = set()
 	for entry in root.findall(f".//{MANIFEST_FILE_ENTRY}"):
@@ -188,10 +198,10 @@ def admit_package(input_path: pathlib.Path, expected_suffix: str,
 			raise ValueError("OpenDocument package is missing required members")
 		if archive.read("mimetype").decode("ascii", errors="strict") != expected_mimetype:
 			raise ValueError("OpenDocument package mimetype member is invalid")
-		# ASVS 1.5.1: defusedxml disables DTD and external entity processing.
-		content_root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
-		styles_root = defusedxml.ElementTree.fromstring(archive.read("styles.xml"))
-		manifest_root = defusedxml.ElementTree.fromstring(archive.read(MANIFEST_NAME))
+		# ASVS 1.5.1: DTD-free lxml parsing disables entity resolution and network access.
+		content_root = parse_xml(archive.read("content.xml"), "content.xml")
+		styles_root = parse_xml(archive.read("styles.xml"), "styles.xml")
+		manifest_root = parse_xml(archive.read(MANIFEST_NAME), MANIFEST_NAME)
 		for xml_name, root in (
 			("content.xml", content_root), ("styles.xml", styles_root),
 			(MANIFEST_NAME, manifest_root),
@@ -236,7 +246,7 @@ def xml_reference_targets(member_name: str, content: bytes) -> frozenset[str]:
 		ValueError: A referenced package path is unsafe.
 	"""
 	# ASVS 1.5.1: inspect XML through a restrictive parser before consuming attributes.
-	root = defusedxml.ElementTree.fromstring(content)
+	root = parse_xml(content, member_name)
 	validate_xml_tree(root, member_name)
 	return xml_reference_targets_from_root(member_name, root)
 
@@ -255,7 +265,7 @@ def manifest_file_targets(content: bytes) -> frozenset[str]:
 		ValueError: A manifest entry names an unsafe archive location.
 	"""
 	# ASVS 1.5.1 and 5.3.3: restrictive XML and package-local path validation.
-	root = defusedxml.ElementTree.fromstring(content)
+	root = parse_xml(content, MANIFEST_NAME)
 	validate_xml_tree(root, MANIFEST_NAME)
 	return manifest_file_targets_from_root(root)
 

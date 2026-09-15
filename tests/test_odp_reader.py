@@ -3,10 +3,10 @@
 # Standard Library
 import io
 import pathlib
-import xml.etree.ElementTree
 import zipfile
 
 # PIP3 modules
+import lxml.etree
 from PIL import Image
 import pytest
 
@@ -280,7 +280,7 @@ def test_reader_rejects_malformed_xml_before_source_object_extraction(tmp_path: 
 		archive.writestr("content.xml", "<office:document-content")
 		archive.writestr("styles.xml", STYLES_XML)
 		archive.writestr("META-INF/manifest.xml", manifest_xml())
-	with pytest.raises(xml.etree.ElementTree.ParseError):
+	with pytest.raises(lxml.etree.XMLSyntaxError):
 		odp_reader.validate_odp(malformed)
 
 

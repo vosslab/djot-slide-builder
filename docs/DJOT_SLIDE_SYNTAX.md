@@ -6,7 +6,7 @@ for the separate strict-native-Djot validation lane; compilation then applies th
 presentation parser and reports source-located errors for constructs without a native destination.
 
 The catalog uses the twelve built-in Impress layouts, with author-facing names where that makes a
-teaching choice clearer, plus two explicit project layouts.  LibreOffice documents the built-ins in
+teaching choice clearer, plus three explicit project layouts.  LibreOffice documents the built-ins in
 its [Slide Layout help](https://help.libreoffice.org/latest/en-US/text/simpress/01/05080000.html).
 
 ## Slide framing
@@ -68,8 +68,8 @@ Other heading levels have no native slide destination.
 
 ## Layout catalog
 
-The first twelve rows are LibreOffice-backed catalog layouts.  `multiple-choice` and `gallery` are
-intentional project layouts.  "Root" means that ordinary content may appear outside a named slot;
+The first twelve rows are LibreOffice-backed catalog layouts. `multiple-choice`, `gallery`, and
+`big-image` are intentional project layouts. "Root" means ordinary content may appear outside a named slot;
 required named slots still appear where listed.
 
 | Djot layout | Impress layout and AutoLayout | Slots | Root | Choose it when |
@@ -88,6 +88,7 @@ required named slots still appear where listed.
 | `six-panels` | Title, 6 Content, `AUTOLAYOUT_TITLE_6CONTENT` | `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` | no | Six short, comparable items need a 3 by 2 grid. |
 | `multiple-choice` | project custom | `question`, `answer` | no | You are asking a closed question with visible choices and a revealed answer. |
 | `gallery` | project custom | `gallery` | title only | Two through six component images are the teaching focus. |
+| `big-image` | project custom | `image`, `caption` | no | One focal image needs the main page area with a short bottom caption. |
 
 `section` and `title-only` are deliberately different.  `section` is `ONLY_TEXT`: one centered,
 Subtitle-style outline box, no title placeholder, and a `#` heading becomes that centered text.
@@ -108,6 +109,20 @@ Use one exact closing heading to select the specialty closer while retaining the
 The closer renders the words as two giant centered editable text lines. A native LibreOffice vector
 star sits inside the D; it is decoration rather than a font character. Every authored character in
 the ODP and derived PDF remains a font-backed glyph. The layout never rasterizes lettering.
+
+Use `big-image` for a single focal image and a short editable caption:
+
+```djot
+=== layout: big-image
+
+@image
+
+![Blackboard Discord signup page](assets/discord-signup.png)
+
+@caption
+
+Sign up for the course Discord server through Blackboard.
+```
 
 ## Teaching content
 
@@ -166,8 +181,9 @@ item at a time in source order.
 `multiple-choice` has fixed teaching semantics.  `@question` supplies an optional first component
 image, an optional prompt, and a visible choice list.  `@answer` supplies one or two editable
 paragraphs.  The layout measures the question, choices, and answer, then places the answer popup
-in the available left or right region with its bounded on-click appear reveal.  Authors write no
-reveal directive in `@answer`.
+in the available left or right region with its bounded on-click appear reveal. The popup is a native
+rounded light-gray rectangle with dark-red outline and editable text. Authors write no reveal directive
+in `@answer`.
 
 ## Supported boundaries
 

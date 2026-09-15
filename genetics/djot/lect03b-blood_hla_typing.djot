@@ -522,39 +522,37 @@ One haplotype must come from each parent. Eliminate B.
 
 *Answer: C.*
 
-=== layout: one-panel
+=== layout: multiple-choice
 
+@question
 
-@body
+A mother has a HLA genotype of A7,B5 on one chromosome and A3,B3 on the other. The father has a HLA genotype of A1,B4 on one chromosome and A8,B1 on the other. Which one of the following is a possible genotype for one of their offspring?
 
-- A mother has a HLA genotype of A7,B5 on one chromosome and A3,B3 on the other. The father has a HLA genotype of A1,B4 on one chromosome and A8,B1 on the other. Which one of the following is a possible genotype for one of their offspring?
-  - A. A3,A7,B3,B5
-  - B. A1,A7,B1,B3
-  - C. A3,A8,B4,B5
-  - D. A3,A8,B1,B3
-  - E. A1,A8,B1,B4
+- A. A3,A7,B3,B5
+- B. A1,A7,B1,B3
+- C. A3,A8,B4,B5
+- D. A3,A8,B1,B3
+- E. A1,A8,B1,B4
 
+@answer
 
+Answer: D.
 
-=> appear
-*Answer: D.*
+=== layout: multiple-choice
 
-=== layout: one-panel
+@question
 
+A mother has a HLA genotype of A6,B3,C4 on one chromosome and A9,B5,C7 on the other. The father has a HLA genotype of A8,B9,C2 on one chromosome and A2,B1,C9 on the other. Which one of the following is a possible genotype for one of their offspring?
 
-@body
+- A. A6,A9,B3,B5,C4,C7
+- B. A8,A9,B5,B9,C2,C7
+- C. A2,A8,B1,B9,C2,C9
+- D. A8,A9,B1,B5,C4,C9
+- E. A2,A6,B5,B9,C4,C9
 
-- A mother has a HLA genotype of A6,B3,C4 on one chromosome and A9,B5,C7 on the other. The father has a HLA genotype of A8,B9,C2 on one chromosome and A2,B1,C9 on the other. Which one of the following is a possible genotype for one of their offspring?
-  - A. A6,A9,B3,B5,C4,C7
-  - B. A8,A9,B5,B9,C2,C7
-  - C. A2,A8,B1,B9,C2,C9
-  - D. A8,A9,B1,B5,C4,C9
-  - E. A2,A6,B5,B9,C4,C9
+@answer
 
-
-
-=> appear
-*Answer: B.*
+Answer: B.
 
 === layout: one-panel
 

@@ -32,13 +32,15 @@
 - We had great weather this weekend. What is your favorite outdoor activity?
   - Dr. Voss\: riding my bicycle, watching my kids play sports, go on a walk
 
-=== layout: one-panel
+=== layout: big-image
 
-# Make Sure Dr. Voss Is Recording
-
-@body
+@image
 
 ![Slide image 1](assets/lect02a-2025_announcements/image_001.png)
+
+@caption
+
+Make sure Dr. Voss is recording.
 
 === layout: section
 
@@ -91,16 +93,15 @@
 
 ![Slide image 3](assets/lect02a-2025_announcements/image_003.png)
 
-=== layout: one-panel
+=== layout: big-image
 
-# Dr. Voss YouTube Channel
-
-@body
+@image
 
 ![Slide image 4](assets/lect02a-2025_announcements/image_004.png)
 
-- [https\://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)
-- a few videos for hard problems
+@caption
+
+[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for hard problems.
 
 === layout: one-panel
 
@@ -182,15 +183,15 @@
 
 ![Slide image 8](assets/lect02a-2025_announcements/image_008.png)
 
-=== layout: one-panel
+=== layout: big-image
 
-# Discord Signup
-
-@body
+@image
 
 ![Slide image 10](assets/lect02a-2025_announcements/image_010.png)
 
+@caption
 
+Sign up for the Neil Voss Lab Discord server through Blackboard.
 
 === layout: section
 

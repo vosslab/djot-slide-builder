@@ -214,13 +214,13 @@ def test_section_uses_a_centered_transition_surface(tmp_path: pathlib.Path) -> N
 @pytest.mark.parametrize("source", (
 	"=== layout: title-only\n\n# Title",
 	"=== layout: one-panel\n\n# Title\n\n@body\n\nBody."))
-def test_top_aligned_layouts_keep_start_top_titles(tmp_path: pathlib.Path, source: str) -> None:
-	"""Title Only and one-panel preserve the non-centered title contrast."""
+def test_top_aligned_layouts_center_their_primary_titles(tmp_path: pathlib.Path, source: str) -> None:
+	"""Title Only and one-panel center titles while retaining their top placement."""
 	title = compile_source(tmp_path, source).plan.slides[0].objects[0]
 	assert (title.frame_text.vertical_alignment,
 		title.content.paragraphs[0].properties.horizontal_alignment) == (
 		slide_lib.layout_primitives.VerticalAlignment.TOP,
-		slide_lib.layout_primitives.HorizontalAlignment.START)
+		slide_lib.layout_primitives.HorizontalAlignment.CENTER)
 
 
 def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
@@ -303,3 +303,27 @@ Answer: D
 		choice.rectangle.y + choice.rectangle.height <= answer.rectangle.y or
 		answer.rectangle.y + answer.rectangle.height <= choice.rectangle.y
 	for choice in choices)
+
+
+def test_big_image_keeps_one_focal_image_above_a_full_width_caption(tmp_path: pathlib.Path) -> None:
+	"""The image-focus layout preserves its editable image and caption contract."""
+	write_image(tmp_path, "focal.png")
+	slide = compile_source(tmp_path, """=== layout: big-image
+
+@image
+
+![Focal image](focal.png)
+
+@caption
+
+Short editable caption.
+""").plan.slides[0]
+	picture = next(item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.PictureContent))
+	caption = next(item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.ShapeContent))
+	assert picture.rectangle.x == caption.rectangle.x
+	assert picture.rectangle.width == caption.rectangle.width
+	assert picture.rectangle.y + picture.rectangle.height < caption.rectangle.y
+	assert caption.rectangle.y + caption.rectangle.height < \
+		slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT

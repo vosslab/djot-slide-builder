@@ -9,9 +9,6 @@ import slide_lib.native_model
 import slide_lib.presentation_theme
 
 
-QUESTION_FLOOR_SIZE_PT = 18.0
-
-
 @dataclasses.dataclass(frozen=True)
 class QuestionParts:
 	"""Validated semantic regions inside one multiple-choice question."""
@@ -261,7 +258,7 @@ def physical_capacity_error(question: slide_lib.native_model.Cell, answer: slide
 			"multiple-choice", "answer", theme.body_floor_size_pt,
 			slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST, minimum)
 	return slide_lib.capacity_report.PhysicalCapacityError(question.blocks[0].location,
-		"multiple-choice", "question", QUESTION_FLOOR_SIZE_PT,
+		"multiple-choice", "question", theme.body_floor_size_pt,
 		slide_lib.capacity_report.CapacityCause.GEOMETRY_SLOT_CONSTRAINT, minimum)
 
 
@@ -271,9 +268,9 @@ def record_final_capacity(question: slide_lib.native_model.Cell, answer: slide_l
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		session: slide_lib.layout_measurement.MeasurementSession) -> None:
 	"""Record only the selected question and answer constraints, never trial candidates."""
-	if question_size < QUESTION_FLOOR_SIZE_PT:
+	if question_size < theme.body_floor_size_pt:
 		session.record_capacity(question.blocks[0].location, "multiple-choice", "question",
-			question_size, QUESTION_FLOOR_SIZE_PT,
+			question_size, theme.body_floor_size_pt,
 			slide_lib.capacity_report.CapacityCause.GEOMETRY_SLOT_CONSTRAINT)
 	if answer_size < theme.body_floor_size_pt:
 		session.record_capacity(answer.blocks[0].location, "multiple-choice", "answer",

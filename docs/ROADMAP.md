@@ -25,8 +25,8 @@ editable-object pipeline.
 - M5's bounded adapters support object APPEAR/FADE and paragraph APPEAR on click. Permanent
   structural tests and parser contract tests passed; a LibreOffice ODP round trip retained native
   layouts and editable objects, and PDF export retained the final state.
-- The current native-layout evidence covers the 14-layout catalog: twelve LibreOffice identities
-  plus the project-owned `multiple-choice` and `gallery` layouts. It establishes editable native
+- The current native-layout evidence covers the 15-layout catalog: twelve LibreOffice identities
+  plus the project-owned `multiple-choice`, `gallery`, and `big-image` layouts. It establishes editable native
   ODP, a LibreOffice ODP open/save round trip, and ODP-derived PDF; LibreOffice normalizes an empty
   blank page's saved reference to its title-slide definition while preserving the empty page.
 - The native-only all-eight imported-corpus acceptance passed: 378 source slides, 336 visible slides,

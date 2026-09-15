@@ -17,7 +17,6 @@ import uuid
 import zipfile
 
 # PIP3 modules
-import defusedxml.ElementTree
 import PIL.Image
 
 # Local Modules
@@ -26,6 +25,7 @@ import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.libreoffice
 import slide_lib.native_export
+import slide_lib.odf_package
 import slide_lib.presentation_theme
 
 
@@ -86,6 +86,10 @@ def cell_source(spec: slide_lib.layout_primitives.LayoutContract, slot_name: str
 	if spec.name == "gallery":
 		return ["![Djot gallery component one](component.png)",
 			"![Djot gallery component two](component.png)"]
+	if spec.name == "big-image" and slot_name == "image":
+		return ["![Djot focal image](component.png)"]
+	if spec.name == "big-image" and slot_name == "caption":
+		return ["Editable focal-image caption"]
 	return [f"Editable {spec.name} {slot_name}"]
 
 
@@ -185,8 +189,8 @@ def inspect_odp(odp_path: pathlib.Path, layout_names: tuple[str, ...],
 		after_libreoffice: bool = False) -> None:
 	"""Verify LibreOffice preserved separate editable ODP text and image objects."""
 	with zipfile.ZipFile(odp_path) as archive:
-		content_root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
-		styles_root = defusedxml.ElementTree.fromstring(archive.read("styles.xml"))
+		content_root = slide_lib.odf_package.parse_xml(archive.read("content.xml"), "content.xml")
+		styles_root = slide_lib.odf_package.parse_xml(archive.read("styles.xml"), "styles.xml")
 	pages = content_root.findall("./office:body/office:presentation/draw:page", NAMESPACES)
 	require(odp_path.stat().st_size > 0 and len(pages) == len(layout_names),
 		"ODP exists, is nonempty, and has one page per live layout")

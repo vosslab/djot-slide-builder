@@ -83,34 +83,29 @@ hidden: true
   - I need to coordinate with the AV technicians to get things working at least 30 minutes before the start of class
 - You can Slack DM me or send an email
 
-=== layout: two-panels
+=== layout: big-image
 
-
-@left
+@image
 
 ![Slide image 1](assets/lect03a-2026_announcements/image_001.png)
 
-@right
+@caption
 
-- Make Sure Dr. Voss
-- Is Recording
+Make sure Dr. Voss is recording.
 
 === layout: section
 
 # Informational Slides
 
-=== layout: two-panels
+=== layout: big-image
 
-# Dr. Voss YouTube Channel
-
-@left
+@image
 
 ![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
 
-@right
+@caption
 
-- [https\://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)
-- a few videos for hard problems
+[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for hard problems.
 
 === layout: one-panel
 
@@ -191,13 +186,15 @@ hidden: true
 
 ![Slide image 6](assets/lect03a-2026_announcements/image_006.png)
 
-=== layout: one-panel
+=== layout: big-image
 
-# Discord Signup
-
-@body
+@image
 
 ![Slide image 8](assets/lect03a-2026_announcements/image_008.png)
+
+@caption
+
+Sign up for the Neil Voss Lab Discord server through Blackboard.
 
 === layout: section
 

@@ -10,6 +10,14 @@
   closer. Sections now use a solid dark transition surface with exactly centered text in a rounded
   frame. An exact `THE END` section renders as two giant centered lines with a vector star inside
   the D.
+- Added the `big-image` layout with one focal image and a separate full-width editable caption.
+  Converted the recording reminder, YouTube, and Discord signup examples in both announcement decks.
+- Restored the multiple-choice answer popup as a native rounded light-gray rectangle with a dark-red
+  outline and editable dark-red text. Converted the two HLA question-and-answer examples to that layout.
+- Changed the Genetics theme band and transition color from purple to blue, preserving purple as the
+  stated Biochemistry course color. Section text is white for accessible contrast.
+- Centered primary titles across the standard title-bearing layouts while retaining top placement
+  where the layout uses a top title band.
 
 ### Fixes and Maintenance
 
@@ -22,16 +30,22 @@
 - Added a format-neutral page-surface fact and native ODF projection for solid page colors, hidden
   master decorations, rounded rectangles, and five-point stars. Authored lettering remains editable
   font glyphs throughout ODP export and LibreOffice PDF conversion.
+- Reserved a visible bottom margin for ordinary slide content and removed the obsolete quiz-named
+  18 pt floor; multiple-choice questions now use the normal body-text floor.
+- Replaced `defusedxml` with a narrowly configured `lxml` parser that rejects DTDs and disables
+  entity resolution and network access. Removed one source emoji that forced a Type 3 PDF font.
 
 ### Developer Tests and Notes
 
-- The full pytest suite passed (1,953 tests), and structural lint accepted all 15 genetics sources
+- The full pytest suite passed (1,981 tests), and structural lint accepted all 15 genetics sources
   with 611 authored slides and 335 images. The pinned native Jotdown executable was unavailable, so
   its separate source-acceptance lane was not run.
-- The full genetics build produced 15 editable ODPs and 15 LibreOffice-derived PDFs with 585 visible
-  pages. Package inspection found all four renamed Atkinson faces in every ODP and no OpenDyslexic
-  reference. Rendered inspection confirmed the Lecture 03B cover format and even HLA-list spacing;
-  existing source-located capacity diagnostics remain visible for dense inherited slides.
+- The current full Genetics build produced 15 editable ODPs with 585 visible pages. Package
+  inspection found all four renamed Atkinson faces in every ODP and no OpenDyslexic reference.
+  A one-time semantic audit found six focal-image slides, 102 sections, 15 native closers, and the
+  two native HLA answer popups. Existing capacity diagnostics remain visible for dense inherited slides.
+- The LibreOffice round-trip and current PDF/font audit remain pending because the desktop
+  LibreOffice process was open; the build correctly refused to interfere with that session.
 
 ## 2026-09-14
 
