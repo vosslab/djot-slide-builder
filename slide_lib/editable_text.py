@@ -15,6 +15,7 @@ class EditableParagraph:
 	ordered: bool
 	paragraph_only: bool
 	start: int
+	attributes: tuple[slide_lib.native_model.Attribute, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -33,13 +34,18 @@ class EditableTextProjection:
 
 
 #============================================
-def project_list(block: slide_lib.native_model.ListBlock, level: int = 0) -> tuple[EditableParagraph, ...]:
+def project_list(block: slide_lib.native_model.ListBlock, level: int = 0,
+		inherited_attributes: tuple[slide_lib.native_model.Attribute, ...] = ()) \
+		-> tuple[EditableParagraph, ...]:
 	"""Flatten a nested list while preserving its native paragraph metadata."""
 	paragraphs: list[EditableParagraph] = []
+	block_attributes = inherited_attributes + block.attributes
 	for offset, item in enumerate(block.items):
-		paragraphs.append(EditableParagraph(item.inlines, level, block.ordered, False, block.start + offset))
+		attributes = block_attributes + item.attributes
+		paragraphs.append(EditableParagraph(item.inlines, level, block.ordered, False,
+			block.start + offset, attributes))
 		for child in item.children:
-			paragraphs.extend(project_list(child, level + 1))
+			paragraphs.extend(project_list(child, level + 1, attributes))
 	return tuple(paragraphs)
 
 
@@ -84,7 +90,8 @@ def project_block(block: slide_lib.native_model.Heading | slide_lib.native_model
 		if block.reveal is not None and block.reveal.sequence is slide_lib.native_model.RevealSequence.PARAGRAPHS:
 			ranges = cascade_ranges(block) + ranges
 		return EditableTextProjection(paragraphs, ranges)
-	return EditableTextProjection((EditableParagraph(block.inlines, 0, False, True, 1),), ())
+	return EditableTextProjection((EditableParagraph(
+		block.inlines, 0, False, True, 1, block.attributes),), ())
 
 
 #============================================

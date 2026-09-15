@@ -10,6 +10,7 @@ class TextRun:
 
 	text: str
 	link: str = ""
+	color: str = ""
 
 
 @dataclasses.dataclass(frozen=True)
@@ -75,6 +76,25 @@ class PositionedVisual:
 	source_ordinal: int = 0
 	stroke_width: float | None = None
 	z_order: tuple[int, ...] = ()
+
+
+@dataclasses.dataclass(frozen=True)
+class PositionedOverlay:
+	"""One supported native annotation before image-relative normalization."""
+
+	kind: str
+	first_x: float
+	first_y: float
+	second_x: float
+	second_y: float
+	color: str
+	source_ordinal: int
+	z_order: tuple[int, ...] = ()
+	reveal: bool = False
+
+	def __post_init__(self) -> None:
+		if self.kind not in {"arrow", "outline"}:
+			raise ValueError("source overlay kind is not supported")
 
 
 @dataclasses.dataclass(frozen=True)

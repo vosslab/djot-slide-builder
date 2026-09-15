@@ -1,3 +1,5 @@
+color-theme: genetics
+
 === layout: title-slide
 
 # Lecture 03B
@@ -456,13 +458,13 @@ What blood type is being displayed?
 
 @body
 
-- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
-- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- A father has a HLA genotype of [A6,B4,C8]{color=red} on one chromosome and [A5,B7,C1]{color=orange} on the other.
+- The mother has an HLA genotype of [A8,B2,C4]{color=green} on one chromosome and [A3,B5,C3]{color=purple} on the other.
 - Which one of the following is a possible HLA genotype of their offspring?
-  - A. A6/A8, B2/B7, C3/C8
-  - B. A5/A6, B4/B7, C1/C8
-  - C. A3/A6, B4/B5, C3/C8
-  - D. A6/A8, B5/B7, C4/C8
+  - A. [A6]{color=red}/[A8]{color=green}, [B2]{color=green}/[B7]{color=orange}, [C3]{color=purple}/[C8]{color=red}
+  - B. [A5]{color=orange}/[A6]{color=red}, [B4]{color=red}/[B7]{color=orange}, [C1]{color=orange}/[C8]{color=red}
+  - C. [A3]{color=purple}/[A6]{color=red}, [B4]{color=red}/[B5]{color=purple}, [C3]{color=purple}/[C8]{color=red}
+  - D. [A6]{color=red}/[A8]{color=green}, [B5]{color=purple}/[B7]{color=orange}, [C4]{color=green}/[C8]{color=red}
 
 
 
@@ -474,13 +476,13 @@ Keep each parent's linked A, B, and C alleles together as a haplotype.
 
 @body
 
-- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
-- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- A father has a HLA genotype of [A6,B4,C8]{color=red} on one chromosome and [A5,B7,C1]{color=orange} on the other.
+- The mother has an HLA genotype of [A8,B2,C4]{color=green} on one chromosome and [A3,B5,C3]{color=purple} on the other.
 - Which one of the following is a possible HLA genotype of their offspring?
-  - A. A6, B7, C8/A8, B2, C3
-  - B. A6, B4, C8/A5, B7, C1
-  - C. A6, B4, C8/A3, B5, C3
-  - D. A6, B7, C8/A8, B5, C4
+  - A. [A6]{color=red}, [B7]{color=orange}, [C8]{color=red}/[A8, B2]{color=green}, [C3]{color=purple}
+  - B. [A6, B4, C8]{color=red}/[A5, B7, C1]{color=orange}
+  - C. [A6, B4, C8]{color=red}/[A3, B5, C3]{color=purple}
+  - D. [A6]{color=red}, [B7]{color=orange}, [C8]{color=red}/[A8]{color=green}, [B5]{color=purple}, [C4]{color=green}
 
 
 
@@ -492,13 +494,13 @@ Crossing over is unlikely for adjacent genes. Eliminate A and D.
 
 @body
 
-- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
-- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- A father has a HLA genotype of [A6,B4,C8]{color=red} on one chromosome and [A5,B7,C1]{color=orange} on the other.
+- The mother has an HLA genotype of [A8,B2,C4]{color=green} on one chromosome and [A3,B5,C3]{color=purple} on the other.
 - Which one of the following is a possible HLA genotype of their offspring?
-  - A. A6, B7, C8/A8, B2, C3
-  - B. A6, B4, C8/A5, B7, C1
-  - C. A6, B4, C8/A3, B5, C3
-  - D. A6, B7, C8/A8, B5, C4
+  - A. [A6]{color=red}, [B7]{color=orange}, [C8]{color=red}/[A8, B2]{color=green}, [C3]{color=purple}
+  - B. [A6, B4, C8]{color=red}/[A5, B7, C1]{color=orange}
+  - C. [A6, B4, C8]{color=red}/[A3, B5, C3]{color=purple}
+  - D. [A6]{color=red}, [B7]{color=orange}, [C8]{color=red}/[A8]{color=green}, [B5]{color=purple}, [C4]{color=green}
 
 
 
@@ -510,13 +512,13 @@ One haplotype must come from each parent. Eliminate B.
 
 @body
 
-- A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
-- The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
+- A father has a HLA genotype of [A6,B4,C8]{color=red} on one chromosome and [A5,B7,C1]{color=orange} on the other.
+- The mother has an HLA genotype of [A8,B2,C4]{color=green} on one chromosome and [A3,B5,C3]{color=purple} on the other.
 - Which one of the following is a possible HLA genotype of their offspring?
-  - A. A6, B7, C8/A8, B2, C3
-  - B. A6, B4, C8/A5, B7, C1
-  - C. A6, B4, C8/A3, B5, C3
-  - D. A6, B7, C8/A8, B5, C4
+  - A. [A6]{color=red}, [B7]{color=orange}, [C8]{color=red}/[A8, B2]{color=green}, [C3]{color=purple}
+  - B. [A6, B4, C8]{color=red}/[A5, B7, C1]{color=orange}
+  - C. [A6, B4, C8]{color=red}/[A3, B5, C3]{color=purple}
+  - D. [A6]{color=red}, [B7]{color=orange}, [C8]{color=red}/[A8]{color=green}, [B5]{color=purple}, [C4]{color=green}
 
 
 

@@ -14,8 +14,9 @@ import slide_lib.presentation_theme
 
 
 FOREGROUND = "172033"
-ACCENT = "24578F"
 WHITE = "FFFFFF"
+OVERLAY_LINE_WIDTH_PT = 3.0
+OVERLAY_ARROW_WIDTH_PT = 12.0
 
 
 def text_object(object_id: str, block: object,
@@ -63,30 +64,47 @@ def text_content(blocks: tuple[slide_lib.native_model.Block, ...], size: float, 
 	typography = slide_lib.layout_primitives.Typography(
 		role, slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, size, size, min(floor, size))
 	entries: list[tuple[tuple[slide_lib.native_model.Inline, ...], bool,
-		slide_lib.layout_content.ListMetadata | None]] = []
+		slide_lib.layout_content.ListMetadata | None,
+		tuple[slide_lib.native_model.Attribute, ...]]] = []
 	for block in blocks:
 		if isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph)):
-			entries.append((block.inlines, False, None))
+			entries.append((block.inlines, False, None, block.attributes))
 		elif isinstance(block, slide_lib.native_model.ListBlock):
 			for item in slide_lib.editable_text.project_list(block):
 				kind = slide_lib.layout_primitives.ListKind.ORDERED if item.ordered \
 					else slide_lib.layout_primitives.ListKind.UNORDERED
 				entries.append((item.inlines, True,
-					slide_lib.layout_content.ListMetadata(kind, item.level, item.start)))
+					slide_lib.layout_content.ListMetadata(kind, item.level, item.start),
+					item.attributes))
 	paragraphs: list[slide_lib.layout_content.TextParagraph] = []
-	for index, (inlines, listed, metadata) in enumerate(entries):
+	for index, (inlines, listed, metadata, attributes) in enumerate(entries):
 		level = metadata.level if metadata is not None else 0
 		properties = slide_lib.layout_measurement.paragraph_properties(
 			inlines, size, width, theme, level, listed, index == len(entries) - 1,
 			bold, session=session)
 		available = width - (theme.list_levels[level].text_position if listed else 0.0)
+		paragraph_color = _authored_text_color(attributes, color, theme.accent_color)
 		paragraphs.append(slide_lib.layout_content.TextParagraph(
-			_fragment_runs(resolved_runs(inlines, color, bold), size, available, theme, session),
+			_fragment_runs(resolved_runs(inlines, paragraph_color, theme.accent_color, bold),
+				size, available, theme, session),
 			typography, properties, True, metadata))
 	return slide_lib.layout_content.TextContent(tuple(paragraphs))
 
 
+def _authored_text_color(attributes: tuple[slide_lib.native_model.Attribute, ...],
+		default: str, accent_color: str) -> str:
+	"""Resolve the nearest validated block or list-item text color."""
+	colors = [attribute.value for attribute in attributes if attribute.name == "color"]
+	if not colors:
+		return default
+	name = colors[-1]
+	if name is None:
+		raise ValueError("validated text-color attributes require a value")
+	return slide_lib.presentation_theme.resolve_text_color(name, accent_color)
+
+
 def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str,
+		accent_color: str,
 		bold: bool = False, italic: bool = False,
 		link: str | None = None) -> tuple[slide_lib.layout_content.InlineContent, ...]:
 	"""Resolve recursive strong/emphasis/link styling before adapters receive runs."""
@@ -105,12 +123,13 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 		elif isinstance(inline, slide_lib.native_model.Break):
 			runs.append(slide_lib.layout_content.LineBreak())
 		elif isinstance(inline, slide_lib.native_model.Strong):
-			runs.extend(resolved_runs(inline.children, color, True, italic, link))
+			runs.extend(resolved_runs(inline.children, color, accent_color, True, italic, link))
 		elif isinstance(inline, slide_lib.native_model.Emphasis):
-			runs.extend(resolved_runs(inline.children, color, bold, True, link))
+			runs.extend(resolved_runs(inline.children, color, accent_color, bold, True, link))
 		elif isinstance(inline, slide_lib.native_model.Link):
 			literal = slide_lib.layout_measurement.visible_text(inline.children) == inline.url
-			for run in resolved_runs(inline.children, ACCENT, bold, italic, inline.url):
+			for run in resolved_runs(inline.children, accent_color, accent_color,
+					bold, italic, inline.url):
 				if isinstance(run, slide_lib.layout_content.TextRun):
 					style = slide_lib.layout_content.RunStyle(
 						"PT Sans Narrow" if literal else run.style.font_family,
@@ -119,6 +138,11 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 					runs.append(slide_lib.layout_content.TextRun(run.text, style))
 				else:
 					runs.append(run)
+		elif isinstance(inline, slide_lib.native_model.StyledSpan):
+			span_color = slide_lib.presentation_theme.resolve_text_color(
+				inline.color.value, accent_color)
+			runs.extend(resolved_runs(inline.children, span_color, accent_color,
+				bold, italic, link))
 	return tuple(runs)
 
 
@@ -157,7 +181,6 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 	"""Project a rectangular semantic table with resolved 28-to-24 point fitting."""
 	rows = ((table.headers, True),) if table.headers else ()
 	rows += tuple((row, False) for row in table.rows)
-	columns = len(rows[0][0])
 	size = selected_size if selected_size is not None else \
 		slide_lib.layout_measurement.select_table_size(table, rectangle,
 			theme.ordinary_body_size_pt, theme.body_floor_size_pt,
@@ -166,31 +189,38 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 		slide_lib.layout_primitives.StyleRole.TABLE_BODY,
 		slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, size, size,
 		min(theme.body_floor_size_pt, size))
+	measurements = slide_lib.layout_measurement.table_measurements(
+		table, size, rectangle.width, theme, session)
 	def row_content(cells: tuple[tuple[slide_lib.native_model.Inline, ...], ...],
 			header: bool) -> slide_lib.layout_content.TableRow:
 		"""Project one semantic table row."""
 		return slide_lib.layout_content.TableRow(tuple(slide_lib.layout_content.TableCell(
 			(slide_lib.layout_content.TextParagraph(_fragment_runs(
-				resolved_runs(cell, WHITE if header else FOREGROUND, header), size,
-				rectangle.width / columns - 12, theme, session), typography,
+				resolved_runs(cell, WHITE if header else FOREGROUND,
+					theme.accent_color, header), size,
+				slide_lib.layout_measurement.table_cell_text_width(
+					measurements.column_widths[column], theme),
+				theme, session), typography,
 				slide_lib.layout_measurement.paragraph_properties(
-					cell, size, rectangle.width / columns - 12,
-					theme, terminal=True, session=session)),),
+					cell, size, slide_lib.layout_measurement.table_cell_text_width(
+						measurements.column_widths[column], theme),
+					theme, terminal=True, bold=header, session=session)),),
 			slide_lib.layout_primitives.Insets(
 				slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
 				slide_lib.layout_measurement.TABLE_VERTICAL_PADDING,
 				slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
 				slide_lib.layout_measurement.TABLE_VERTICAL_PADDING),
-			slide_lib.layout_primitives.VerticalAlignment.MIDDLE) for cell in cells))
+			slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
+			for column, cell in enumerate(cells)))
 	headers = (row_content(table.headers, True),) if table.headers else ()
 	body = tuple(row_content(row, False) for row in table.rows)
 	content = slide_lib.layout_content.TableContent(headers, body,
-		tuple(rectangle.width / columns for _ in range(columns)),
-		tuple(rectangle.height / len(rows) for _ in rows),
+		measurements.column_widths, measurements.row_heights,
 		slide_lib.layout_content.TableStyle(
 			slide_lib.layout_primitives.StyleRole.TABLE_HEADER,
 			slide_lib.layout_primitives.StyleRole.TABLE_BODY,
-			slide_lib.layout_primitives.StyleRole.ACCENT, 1,
+			slide_lib.layout_primitives.StyleRole.ACCENT,
+			slide_lib.layout_measurement.TABLE_BORDER_WIDTH_PT,
 			slide_lib.layout_primitives.LinePattern.SOLID))
 	return slide_lib.layout_model.LayoutObject(object_id,
 		slide_lib.layout_primitives.PresentationRole.OUTLINE,
@@ -223,6 +253,50 @@ def picture_object(object_id: str, deck: slide_lib.native_model.Deck,
 		slide_lib.layout_primitives.ObjectLayer.CONTENT, order, order, content, None,
 		slot, None, slide_lib.layout_primitives.PlaceholderKind.NONE, image.location,
 		reveal_targets(object_id, (image,), order))
+
+
+def image_overlay_object(object_id: str,
+		overlay: slide_lib.native_model.ImageArrow | slide_lib.native_model.ImageOutline,
+		displayed_image: slide_lib.layout_primitives.LogicalRectangle,
+		slot: str, order: int, theme: slide_lib.presentation_theme.PresentationTheme,
+		) -> slide_lib.layout_model.LayoutObject:
+	"""Map one normalized annotation into editable image-relative native geometry."""
+	line_color = _authored_text_color(overlay.attributes, theme.accent_color,
+		theme.accent_color)
+	accessibility = slide_lib.layout_primitives.ObjectAccessibility(decorative=True)
+	if isinstance(overlay, slide_lib.native_model.ImageArrow):
+		start = slide_lib.layout_primitives.LogicalPoint(
+			displayed_image.x + overlay.start_x * displayed_image.width,
+			displayed_image.y + overlay.start_y * displayed_image.height)
+		end = slide_lib.layout_primitives.LogicalPoint(
+			displayed_image.x + overlay.end_x * displayed_image.width,
+			displayed_image.y + overlay.end_y * displayed_image.height)
+		content: slide_lib.layout_content.ObjectContent = slide_lib.layout_content.LineContent(
+			slide_lib.layout_content.LineGeometry(start, end),
+			slide_lib.layout_content.LineStyle(
+				slide_lib.layout_primitives.StyleRole.ACCENT,
+				OVERLAY_LINE_WIDTH_PT, slide_lib.layout_primitives.LinePattern.SOLID,
+				slide_lib.layout_primitives.LineEndMarker.ARROW,
+				OVERLAY_ARROW_WIDTH_PT, line_color), accessibility)
+		rectangle = displayed_image
+	else:
+		rectangle = slide_lib.layout_primitives.LogicalRectangle(
+			displayed_image.x + overlay.x * displayed_image.width,
+			displayed_image.y + overlay.y * displayed_image.height,
+			overlay.width * displayed_image.width,
+			overlay.height * displayed_image.height)
+		content = slide_lib.layout_content.ShapeContent(
+			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
+			slide_lib.layout_content.ShapeStyle(None,
+				slide_lib.layout_primitives.StyleRole.ACCENT,
+				OVERLAY_LINE_WIDTH_PT, slide_lib.layout_primitives.LinePattern.SOLID,
+				line_color=line_color), accessibility)
+	return slide_lib.layout_model.LayoutObject(object_id,
+		slide_lib.layout_primitives.PresentationRole.GRAPHIC,
+		slide_lib.layout_primitives.StyleRole.ACCENT, rectangle,
+		slide_lib.layout_primitives.ObjectLayer.FOREGROUND, order, order, content,
+		slot_id=slot, source=overlay.location,
+		reveal_targets=reveal_targets(object_id, (overlay,), order))
 
 
 def reveal_targets(object_id: str, blocks: tuple[object, ...],

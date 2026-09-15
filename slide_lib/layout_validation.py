@@ -72,50 +72,53 @@ def unsupported_block(blocks: tuple[slide_lib.native_model.Block, ...]) -> slide
 	"""Return the first semantic block without a native layout destination."""
 	for block in blocks:
 		if not isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
-				slide_lib.native_model.Image,
+				slide_lib.native_model.Image, slide_lib.native_model.ImageArrow,
+				slide_lib.native_model.ImageOutline,
 				slide_lib.native_model.ListBlock, slide_lib.native_model.Table)):
 			return block
 	return None
 
 
 #============================================
-def attributed_list_item(item: slide_lib.native_model.ListItem) -> slide_lib.native_model.ListItem | slide_lib.native_model.Block | None:
-	"""Return the first attributed nested list item or block in source order."""
-	if item.attributes:
-		return item
-	for child in item.children:
-		attributed = attributed_block(child)
-		if attributed is not None:
-			return attributed
-	return None
+def validate_text_attributes(item: slide_lib.native_model.Block | slide_lib.native_model.ListItem,
+		layout_name: str) -> None:
+	"""Validate the one supported block attribute and recurse through lists."""
+	attributes = item.attributes
+	attribute_owner = isinstance(item, (slide_lib.native_model.Heading,
+		slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock,
+		slide_lib.native_model.ListItem, slide_lib.native_model.ImageArrow,
+		slide_lib.native_model.ImageOutline))
+	if attributes and (not attribute_owner or any(attribute.name != "color"
+			for attribute in attributes)):
+		raise source_error(item.location,
+			f"{layout_name} slides cannot yet place attributes on {type(item).__name__}")
+	colors = tuple(attribute for attribute in attributes if attribute.name == "color")
+	if len(colors) > 1:
+		raise source_error(item.location, "text content accepts one color attribute")
+	if colors:
+		name = colors[0].value
+		if name is None:
+			raise source_error(item.location, "text color requires a named value")
+		color_names = tuple(color.value for color in slide_lib.native_model.TextColor)
+		if name not in color_names:
+			expected = ", ".join(color_names)
+			raise source_error(item.location,
+				f"unknown text color: {name}; expected one of: {expected}")
+	if isinstance(item, slide_lib.native_model.ListBlock):
+		for list_item in item.items:
+			validate_text_attributes(list_item, layout_name)
+	if isinstance(item, slide_lib.native_model.ListItem):
+		for child in item.children:
+			validate_text_attributes(child, layout_name)
 
 
-#============================================
-def attributed_block(block: slide_lib.native_model.Block) -> slide_lib.native_model.ListItem | slide_lib.native_model.Block | None:
-	"""Return the first attributed block, including recursively nested content."""
-	if block.attributes:
-		return block
-	if isinstance(block, slide_lib.native_model.ListBlock):
-		for item in block.items:
-			attributed = attributed_list_item(item)
-			if attributed is not None:
-				return attributed
-	if isinstance(block, slide_lib.native_model.QuoteBlock):
-		for child in block.blocks:
-			attributed = attributed_block(child)
-			if attributed is not None:
-				return attributed
-	return None
-
-
-#============================================
-def attributed_source(blocks: tuple[slide_lib.native_model.Block, ...]) -> slide_lib.native_model.ListItem | slide_lib.native_model.Block | None:
-	"""Return the first source item whose attributes lack a native mapping."""
-	for block in blocks:
-		attributed = attributed_block(block)
-		if attributed is not None:
-			return attributed
-	return None
+def validate_source_attributes(source: slide_lib.native_model.Slide, layout_name: str) -> None:
+	"""Validate attributes on every root and named-cell block."""
+	for block in source.blocks:
+		validate_text_attributes(block, layout_name)
+	for cell in source.cells:
+		for block in cell.blocks:
+			validate_text_attributes(block, layout_name)
 
 
 #============================================
@@ -126,7 +129,7 @@ def inline_math_location(inlines: tuple[slide_lib.native_model.Inline, ...],
 		if isinstance(inline, slide_lib.native_model.InlineMath):
 			return location
 		if isinstance(inline, (slide_lib.native_model.Strong, slide_lib.native_model.Emphasis,
-				slide_lib.native_model.Link)):
+				slide_lib.native_model.Link, slide_lib.native_model.StyledSpan)):
 			math_location = inline_math_location(inline.children, location)
 			if math_location is not None:
 				return math_location
@@ -371,15 +374,13 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 		if unsupported is not None:
 			raise source_error(unsupported.location,
 				f"{spec.name} slides cannot yet place {type(unsupported).__name__} blocks")
-	attributed = attributed_source(source.blocks)
-	if attributed is None:
-		for cell in source.cells:
-			attributed = attributed_source(cell.blocks)
-			if attributed is not None:
-				break
-	if attributed is not None:
-		raise source_error(attributed.location,
-			f"{spec.name} slides cannot yet place attributes on {type(attributed).__name__}")
+	validate_source_attributes(source, spec.name)
+	overlay = next((block for blocks in (source.blocks,) + tuple(
+		cell.blocks for cell in source.cells) for block in blocks if isinstance(block,
+			(slide_lib.native_model.ImageArrow, slide_lib.native_model.ImageOutline))), None)
+	if overlay is not None and spec.name != "big-image":
+		raise source_error(overlay.location,
+			"image overlays are supported only in the big-image image slot")
 	math_location = source_inline_math_location(source.blocks)
 	if math_location is None:
 		for cell in source.cells:
@@ -428,10 +429,12 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 				"big-image slides place content in the image and caption slots")
 		image_cell = next(cell for cell in cells if cell.name == "image")
 		caption_cell = next(cell for cell in cells if cell.name == "caption")
-		if len(image_cell.blocks) != 1 or not isinstance(
-				image_cell.blocks[0], slide_lib.native_model.Image):
+		if not image_cell.blocks or not isinstance(image_cell.blocks[0],
+				slide_lib.native_model.Image) or any(not isinstance(block,
+					(slide_lib.native_model.ImageArrow, slide_lib.native_model.ImageOutline))
+				for block in image_cell.blocks[1:]):
 			raise source_error(image_cell.location,
-				"big-image image slot requires exactly one component image")
+				"big-image image slot requires one component image followed by optional overlays")
 		if not 1 <= len(caption_cell.blocks) <= 2 or any(not isinstance(
 				block, slide_lib.native_model.Paragraph) for block in caption_cell.blocks):
 			raise source_error(caption_cell.location,

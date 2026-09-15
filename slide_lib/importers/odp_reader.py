@@ -16,8 +16,11 @@ from PIL import Image
 
 # local repo modules
 import slide_lib.odf_package
+import slide_lib.importers.odf_styles as odf_styles
+import slide_lib.importers.odp_reveals as odp_reveals
 import slide_lib.importers.odp_visibility as odp_visibility
 import slide_lib.importers.source_model as source_model
+import slide_lib.presentation_theme
 
 
 NS = {
@@ -80,6 +83,7 @@ class ReadSlide:
 	page_width: float
 	page_height: float
 	raw_geometry: tuple[RawObjectGeometry, ...]
+	positioned_overlays: tuple[source_model.PositionedOverlay, ...] = ()
 
 
 @dataclasses.dataclass(frozen=True)
@@ -99,6 +103,7 @@ class _PageAccumulator:
 	images: list[source_model.ImageAsset]
 	positioned_text: list[source_model.PositionedText]
 	positioned_visual: list[source_model.PositionedVisual]
+	positioned_overlays: list[source_model.PositionedOverlay]
 	review_reasons: list[str]
 	populated_roles: list[str]
 	populated_text_roles: list[str]
@@ -317,49 +322,56 @@ def trim_runs(runs: list[source_model.TextRun]) -> tuple[source_model.TextRun, .
 		runs.pop()
 	if not runs:
 		return ()
-	runs[0] = source_model.TextRun(runs[0].text.lstrip(), runs[0].link)
-	runs[-1] = source_model.TextRun(runs[-1].text.rstrip(), runs[-1].link)
+	runs[0] = dataclasses.replace(runs[0], text=runs[0].text.lstrip())
+	runs[-1] = dataclasses.replace(runs[-1], text=runs[-1].text.rstrip())
 	return tuple(run for run in runs if run.text)
 
 
 #============================================
-def append_run(runs: list[source_model.TextRun], text: str, link: str) -> None:
+def append_run(runs: list[source_model.TextRun], text: str, link: str,
+		color: str) -> None:
 	"""Retain one visible source character sequence when it is nonempty."""
 	if text:
-		runs.append(source_model.TextRun(text, link))
+		runs.append(source_model.TextRun(text, link, color))
 
 
 #============================================
 def inline_runs(element: xml.etree.ElementTree.Element,
-		link: str = "") -> tuple[source_model.TextRun, ...]:
+		definitions: dict[str, odf_styles.StyleDefinition], link: str = "",
+		color: str = "") -> tuple[source_model.TextRun, ...]:
 	"""Extract styled ODF inline text and allow-listed link targets."""
 	runs: list[source_model.TextRun] = []
 
-	def visit(node: xml.etree.ElementTree.Element, inherited_link: str) -> None:
-		append_run(runs, node.text or "", inherited_link)
+	def visit(node: xml.etree.ElementTree.Element, inherited_link: str,
+			inherited_color: str) -> None:
+		source_color = odf_styles.attribute(node, definitions, qname("fo", "color"))
+		resolved_color = slide_lib.presentation_theme.source_text_color_name(source_color) \
+			or inherited_color
+		append_run(runs, node.text or "", inherited_link, resolved_color)
 		for child in node:
 			if child.tag == qname("text", "s"):
 				count_raw = child.get(qname("text", "c"), "1")
 				if not count_raw.isdigit() or int(count_raw) > MAX_TABLE_CELLS:
 					raise ValueError("ODF text space count exceeds the supported range")
-				append_run(runs, " " * int(count_raw), inherited_link)
+				append_run(runs, " " * int(count_raw), inherited_link, resolved_color)
 			elif child.tag == qname("text", "tab"):
-				append_run(runs, "\t", inherited_link)
+				append_run(runs, "\t", inherited_link, resolved_color)
 			elif child.tag == qname("text", "line-break"):
-				append_run(runs, " ", inherited_link)
+				append_run(runs, " ", inherited_link, resolved_color)
 			else:
 				child_link = inherited_link
 				if child.tag == qname("text", "a"):
 					child_link = safe_hyperlink(child.get(qname("xlink", "href")))
-				visit(child, child_link)
-			append_run(runs, child.tail or "", inherited_link)
+				visit(child, child_link, resolved_color)
+			append_run(runs, child.tail or "", inherited_link, resolved_color)
 
-	visit(element, link)
+	visit(element, link, color)
 	return trim_runs(runs)
 
 
 #============================================
-def text_paragraphs(container: xml.etree.ElementTree.Element) -> tuple[
+def text_paragraphs(container: xml.etree.ElementTree.Element,
+		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[
 	tuple[int, tuple[source_model.TextRun, ...]], ...,
 ]:
 	"""Extract paragraphs and explicit ODF nested-list levels in source order."""
@@ -368,7 +380,7 @@ def text_paragraphs(container: xml.etree.ElementTree.Element) -> tuple[
 	def visit_children(parent: xml.etree.ElementTree.Element, level: int) -> None:
 		for child in parent:
 			if child.tag in {qname("text", "p"), qname("text", "h")}:
-				runs = inline_runs(child)
+				runs = inline_runs(child, definitions)
 				if runs:
 					lines.append((level, runs))
 			elif child.tag == qname("text", "list"):
@@ -382,7 +394,7 @@ def text_paragraphs(container: xml.etree.ElementTree.Element) -> tuple[
 				continue
 			for child in item:
 				if child.tag in {qname("text", "p"), qname("text", "h")}:
-					runs = inline_runs(child)
+					runs = inline_runs(child, definitions)
 					if runs:
 						lines.append((level, runs))
 				elif child.tag == qname("text", "list"):
@@ -401,15 +413,28 @@ def plain_text(runs: tuple[source_model.TextRun, ...]) -> str:
 
 
 #============================================
-def page_notes(page: xml.etree.ElementTree.Element) -> tuple[str, ...]:
+def page_notes(page: xml.etree.ElementTree.Element,
+		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
 	"""Read presenter-note paragraphs from one ODP page."""
 	notes: list[str] = []
 	for notes_element in page.findall("./presentation:notes", NS):
-		for _level, runs in text_paragraphs(notes_element):
+		for _level, runs in text_paragraphs(notes_element, definitions):
 			text = plain_text(runs).strip()
 			if text:
 				notes.append(text)
 	return tuple(notes)
+
+
+def unrecognized_text_colors(page: xml.etree.ElementTree.Element,
+		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
+	"""Return explicit nonneutral source colors outside the semantic palette."""
+	text_tags = {qname("text", name) for name in ("a", "h", "p", "span")}
+	colors = {
+		color for element in page.iter() if element.tag in text_tags
+		if (color := odf_styles.attribute(element, definitions, qname("fo", "color")))
+		if slide_lib.presentation_theme.source_text_color_requires_review(color)
+	}
+	return tuple(sorted(colors))
 
 
 #============================================
@@ -450,6 +475,22 @@ def vector_geometry(element: xml.etree.ElementTree.Element,
 		abs(second_x - first_x), abs(second_y - first_y)
 
 
+def line_endpoints(element: xml.etree.ElementTree.Element) \
+		-> tuple[float, float, float, float]:
+	"""Read one native line without discarding its authored direction."""
+	first_x = parse_length(element.get(qname("svg", "x1")), field_name="line x1",
+		allow_negative=True)
+	first_y = parse_length(element.get(qname("svg", "y1")), field_name="line y1",
+		allow_negative=True)
+	second_x = parse_length(element.get(qname("svg", "x2")), field_name="line x2",
+		allow_negative=True)
+	second_y = parse_length(element.get(qname("svg", "y2")), field_name="line y2",
+		allow_negative=True)
+	if first_x == second_x and first_y == second_y:
+		raise ValueError("ODF line has identical endpoints")
+	return first_x, first_y, second_x, second_y
+
+
 #============================================
 def visible_geometry(
 		geometry: tuple[float, float, float, float], page_width: float,
@@ -463,10 +504,11 @@ def visible_geometry(
 
 
 #============================================
-def style_evidence(element: xml.etree.ElementTree.Element) -> tuple[bool, bool]:
+def style_evidence(element: xml.etree.ElementTree.Element,
+		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[bool, bool]:
 	"""Read direct positive style facts without treating ODF style names as data."""
-	fill = element.get(qname("draw", "fill"))
-	stroke = element.get(qname("svg", "stroke-color"))
+	fill = odf_styles.attribute(element, definitions, qname("draw", "fill"))
+	stroke = odf_styles.attribute(element, definitions, qname("svg", "stroke-color"))
 	return fill not in {None, "none"}, stroke not in {None, "none"}
 
 
@@ -524,10 +566,11 @@ def image_suffix(reference: str) -> str:
 
 
 #============================================
-def table_cell_runs(cell: xml.etree.ElementTree.Element) -> tuple[source_model.TextRun, ...]:
+def table_cell_runs(cell: xml.etree.ElementTree.Element,
+		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TextRun, ...]:
 	"""Read one ODF table cell into the native inline table vocabulary."""
 	result: list[source_model.TextRun] = []
-	for _level, runs in text_paragraphs(cell):
+	for _level, runs in text_paragraphs(cell, definitions):
 		if result:
 			result.append(source_model.TextRun(" "))
 		result.extend(runs)
@@ -545,7 +588,7 @@ def repeat_count(element: xml.etree.ElementTree.Element, attribute: str) -> int:
 
 #============================================
 def read_table(table: xml.etree.ElementTree.Element, left: float, top: float,
-		source_ordinal: int) -> tuple[source_model.TableBlock,
+		source_ordinal: int, definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TableBlock,
 		list[tuple[int, int, tuple[source_model.TextRun, ...]]]]:
 	"""Extract a rectangular ODF table and its planner-facing cell facts."""
 	rows: list[tuple[tuple[source_model.TextRun, ...], ...]] = []
@@ -567,7 +610,7 @@ def read_table(table: xml.etree.ElementTree.Element, left: float, top: float,
 			for _repeat in range(repeat_count(cell, "number-columns-repeated")):
 				if len(cells) >= MAX_TABLE_CELLS:
 					raise ValueError("ODF table exceeds the supported cell range")
-				cells.append(table_cell_runs(cell))
+				cells.append(table_cell_runs(cell, definitions))
 		row_repeats = repeat_count(row, "number-rows-repeated")
 		if total_cell_count + len(cells) * row_repeats > MAX_TABLE_CELLS:
 			raise ValueError("ODF table exceeds the supported cell range")
@@ -671,9 +714,10 @@ def add_text(
 		geometry: tuple[float, float, float, float], source_ordinal: int,
 		role: str | None, element: xml.etree.ElementTree.Element,
 		accumulator: _PageAccumulator, z_order: tuple[int, ...],
+		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> bool:
 	"""Add text runs and positioned facts from one visible ODP text object."""
-	paragraphs = text_paragraphs(text_box)
+	paragraphs = text_paragraphs(text_box, definitions)
 	if not paragraphs:
 		return False
 	left, top, width, height = geometry
@@ -682,7 +726,7 @@ def add_text(
 	is_subtitle = False
 	title_identity = role == "title"
 	source_kind = "text" if role else "text-box"
-	has_fill, has_line = style_evidence(element)
+	has_fill, has_line = style_evidence(element, definitions)
 	positioned = source_model.PositionedText(
 		paragraphs, left, top, width, height, is_subtitle, 1.0 if role else 0.0,
 		title_identity, source_kind, source_ordinal,
@@ -705,12 +749,13 @@ def add_table(
 		geometry: tuple[float, float, float, float], source_ordinal: int,
 		role: str | None, element: xml.etree.ElementTree.Element,
 		accumulator: _PageAccumulator, z_order: tuple[int, ...],
+		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> bool:
 	"""Add a real ODF table and its planning evidence without flattening cells."""
 	left, top, width, height = geometry
-	block, cells = read_table(table, left, top, source_ordinal)
+	block, cells = read_table(table, left, top, source_ordinal, definitions)
 	accumulator.tables.append(block)
-	has_fill, has_line = style_evidence(element)
+	has_fill, has_line = style_evidence(element, definitions)
 	row_count = len(block.rows) + (1 if block.headers else 0)
 	column_count = len(block.headers or block.rows[0])
 	for row_index, column_index, runs in cells:
@@ -732,6 +777,7 @@ def read_frame(
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
 		accumulator: _PageAccumulator, media_budget: _MediaBudget,
 		z_order: tuple[int, ...], source_ordinal: int,
+		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> None:
 	"""Read one ODP frame into supported facts or an explicit review lane."""
 	text_box = frame.find("./draw:text-box", NS)
@@ -746,9 +792,11 @@ def read_frame(
 	contains_table = False
 	contains_image = False
 	if text_box is not None:
-		contains_text = add_text(text_box, geometry, ordinal, role, frame, accumulator, z_order)
+		contains_text = add_text(text_box, geometry, ordinal, role, frame, accumulator, z_order,
+			definitions)
 	if table is not None:
-		contains_table = add_table(table, geometry, ordinal, role, frame, accumulator, z_order)
+		contains_table = add_table(table, geometry, ordinal, role, frame, accumulator, z_order,
+			definitions)
 	if image is not None:
 		contains_image = add_picture(
 			image, geometry, ordinal, archive, member_names, manifest_targets, assets_dir,
@@ -777,10 +825,11 @@ def read_page_objects(
 		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
 		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		media_budget: _MediaBudget,
+		media_budget: _MediaBudget, definitions: dict[str, odf_styles.StyleDefinition],
+		appear_targets: frozenset[str],
 ) -> _PageAccumulator:
 	"""Extract direct visible page objects in their original nested z-order."""
-	accumulator = _PageAccumulator([], [], [], [], [], [], [], [], [], [], [], [])
+	accumulator = _PageAccumulator([], [], [], [], [], [], [], [], [], [], [], [], [])
 
 	def next_object() -> int:
 		accumulator.object_count += 1
@@ -797,9 +846,35 @@ def read_page_objects(
 				f"source slide {source_index}: unsupported draw:{local_name(element)} has no bounded geometry",
 			)
 			return
-		if visible_geometry(geometry, page_width, page_height, source_index):
+		crosses_bounds = visible_geometry(geometry, page_width, page_height, source_index)
+		if crosses_bounds:
 			accumulator.review_reasons.append("source object crosses physical page bounds")
 		append_geometry(accumulator, ordinal, "vector", geometry, z_order)
+		if any(element.findall(path, NS) for path in (
+			"./text:p", "./text:h", "./text:list",
+		)) and add_text(element, geometry, ordinal, None, element, accumulator, z_order,
+			definitions):
+			accumulator.meaningful_content_count += 1
+			return
+		color = slide_lib.presentation_theme.source_overlay_color_name(
+			odf_styles.attribute(element, definitions, qname("svg", "stroke-color")))
+		if not crosses_bounds and element.tag == qname("draw", "line") and color and \
+				odf_styles.attribute(element, definitions, qname("draw", "marker-end")) \
+				not in {None, "none"}:
+			first_x, first_y, second_x, second_y = line_endpoints(element)
+			accumulator.positioned_overlays.append(source_model.PositionedOverlay(
+				"arrow", first_x, first_y, second_x, second_y, color, ordinal, z_order,
+				odp_reveals.element_appears(element, appear_targets)))
+			accumulator.meaningful_content_count += 1
+			return
+		if not crosses_bounds and element.tag == qname("draw", "rect") and color and \
+				odf_styles.attribute(element, definitions, qname("draw", "fill")) == "none":
+			left, top, width, height = geometry
+			accumulator.positioned_overlays.append(source_model.PositionedOverlay(
+				"outline", left, top, left + width, top + height, color, ordinal, z_order,
+				odp_reveals.element_appears(element, appear_targets)))
+			accumulator.meaningful_content_count += 1
+			return
 		accumulator.review_reasons.append(
 			f"unsupported source object draw:{local_name(element)} requires reconstruction")
 
@@ -817,7 +892,7 @@ def read_page_objects(
 			ordinal = next_object()
 			read_frame(element, source_index, page_width, page_height, archive, member_names,
 				manifest_targets, assets_dir, djot_root, known_images, accumulator, media_budget,
-				z_order, ordinal)
+				z_order, ordinal, definitions)
 			continue
 		if element.tag == qname("draw", "g"):
 			if len(z_order) >= MAX_DRAW_GROUP_DEPTH:
@@ -856,6 +931,7 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 		content_root = admitted.content_root
 		styles_root = admitted.styles_root
 		roots = (styles_root, content_root)
+		definitions = odf_styles.definitions(roots)
 		visibility = odp_visibility.style_definitions_from_root(styles_root)
 		visibility.update(odp_visibility.style_definitions_from_root(content_root))
 		style_layouts = page_style_layouts(roots)
@@ -880,7 +956,11 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 			accumulator = read_page_objects(
 				page, source_index, page_width, page_height, archive, member_names,
 				admitted.manifest_targets, assets_dir, djot_root, known_images, media_budget,
+				definitions, odp_reveals.appear_target_ids(page),
 			)
+			for color in unrecognized_text_colors(page, definitions):
+				accumulator.review_reasons.append(
+					f"unrecognized source text color {color} requires review")
 			line_count = sum(len(block.lines) for block in accumulator.text_blocks)
 			character_count = sum(
 				len(plain_text(runs)) for block in accumulator.text_blocks
@@ -898,13 +978,13 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 				source_index, identity.hidden, tuple(accumulator.titles),
 				tuple(sorted(accumulator.text_blocks, key=lambda block: (block.top, block.left))),
 				tuple(sorted(accumulator.images, key=lambda image: (image.top, image.left))),
-				page_notes(page), tuple(sorted(set(accumulator.review_reasons))),
+				page_notes(page, definitions), tuple(sorted(set(accumulator.review_reasons))),
 				tuple(sorted(accumulator.tables, key=lambda table: (table.top, table.left))), evidence,
 			)
 			read_slides_result.append(ReadSlide(
 				identity, data, tuple(accumulator.positioned_text),
 				tuple(accumulator.positioned_visual), page_width, page_height,
-				tuple(accumulator.raw_geometry),
+				tuple(accumulator.raw_geometry), tuple(accumulator.positioned_overlays),
 			))
 		return ImportedPresentation(tuple(read_slides_result))
 	finally:

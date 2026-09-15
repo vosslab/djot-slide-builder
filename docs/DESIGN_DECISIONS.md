@@ -217,23 +217,23 @@ short inputs inline, as required by the pytest policy.
 
 **Owner.** `slide_lib/djot_lint.py`, `slide_lib/djot_parser.py`, and their deterministic tests.
 
-### Standard Djot content covers tables and sequences
+### Native content keeps bounded styling and drawing semantics
 
-**Decision.** The implemented language accepts Djot tables and inline verbatim for native rendering
-where their selected layout has an editable destination. Fenced code and `$inline$` or
-`$$display$$` mathematics remain parse-valid/reserved source forms until dedicated native owners
-exist.
+**Decision.** Accept Djot tables, inline verbatim, and a closed `{color=name}` vocabulary. On
+`big-image`, accept only one-ended arrows and transparent rectangle outlines expressed as percentages
+of its single aspect-preserving displayed image. Fenced code and mathematics stay reserved until
+dedicated native owners exist.
 
-**Why.** The Lecture 02 survey shows all four forms in normal teaching content. They are ordinary
-content needs, not evidence for a custom biological notation or another slide-extension marker.
+**Why.** The lecture corpus needs meaningful mixed-run colors, readable tables, and editable image
+annotations. It does not justify arbitrary hexadecimal styling, page coordinates, or a general
+drawing language.
 
-**Consequence.** Inline verbatim renders as editable fixed-width text. A validated table renders
-only in a layout with a native table destination. Fenced code and mathematics receive
-source-located native-export rejections until their owners are implemented. The language does not
-introduce custom table, DNA-sequence, or math delimiters.
+**Consequence.** Text remains font-backed ODF spans. Tables use measured native rows and columns with
+light body cells. Image annotations become native `draw:line` or no-fill `draw:rect` objects and may
+reuse object reveal intent. Import preserves recognized colors and image-owned annotations, while
+ambiguous drawings, fenced code, and mathematics receive source-located review.
 
-**Owner.** [djot_slide_extension_exploration.md](active_plans/decisions/djot_slide_extension_exploration.md)
-and [lect02_genetics_syntax_gap_survey.md](active_plans/decisions/lect02_genetics_syntax_gap_survey.md).
+**Owner.** `djot_inline.py`, `layout_object_builders.py`, `odp_export.py`, and `importers/odp_reader.py`.
 
 ### ASCII character references project Unicode
 
@@ -725,7 +725,7 @@ the shared layout plan. Runtime XML templates and PowerPoint-authored decks are 
 tests cover structural semantics with inline inputs, while native ODP package validation, headless
 LibreOffice round trips, PDF/render metrics, and the automated reveal-state interpreter are the final
 acceptance evidence. Unsupported reveal intent fails with its source location instead of
-disappearing. `blue overlay` remains deferred.
+disappearing. The unused target-text `blue overlay` experiment was retired.
 
 **Owner.** `slide_lib/odp_animation.py`, `slide_lib/pptx_animation.py`, [PIPELINE.md](PIPELINE.md), and
 [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
@@ -878,7 +878,7 @@ explicit residual layout work, not evidence to lower the ordinary teaching floor
 
 **Decision.** Title slides use the native master rectangles and select the largest readable title
 that preserves the 20 pt body floor; otherwise the body records its capacity diagnostic. Covers add
-a rounded metadata frame and accent rule. Sections use the solid Genetics blue and center white text
+a rounded metadata frame and accent rule. Sections use the deck's course accent and center white text
 in a rounded frame. An exact `THE END` becomes two giant lines with a native star in the D.
 `big-image` places one focal image above a short full-width bottom caption, and ordinary content
 reserves a visible bottom margin.
@@ -890,8 +890,8 @@ lettering.
 
 **Consequence.** Covers use `Lecture ##<letter>` and separate subject, optional chapter, instructor,
 and date paragraphs. `LayoutSlide.surface` controls the native page style and master visibility.
-Decorations carry theme provenance as ODF geometry; every letter stays an editable font glyph. The
-15-layout catalog, existing placeholders, and `AUTOLAYOUT_ONLY_TEXT` section identity stay unchanged.
+Deck-level `color-theme` metadata selects the band and readable accent for native decorations,
+links, tables, and transitions; every letter stays an editable font glyph. Existing layouts stay unchanged.
 
 **Owner.** `slide_lib/layout_model.py`, `slide_lib/layout_builders.py`,
 `slide_lib/layout_specialty_builders.py`, `slide_lib/odp_export.py`, and

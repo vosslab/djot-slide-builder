@@ -34,8 +34,6 @@ OTP_MIMETYPE = "application/vnd.oasis.opendocument.presentation-template"
 _XML_DECLARATION = b'<?xml version="1.0" encoding="UTF-8"?>\n'
 _FOREGROUND = "172033"
 _ROLE_COLORS = {
-	slide_lib.layout_primitives.StyleRole.ACCENT: "24578F",
-	slide_lib.layout_primitives.StyleRole.TABLE_HEADER: "24578F",
 	slide_lib.layout_primitives.StyleRole.MUTED: "526176",
 	slide_lib.layout_primitives.StyleRole.ANSWER: "7B1E2B",
 	slide_lib.layout_primitives.StyleRole.PANEL: "F2F3F5",
@@ -193,6 +191,8 @@ def _write_object(page: xml.etree.ElementTree.Element,
 	if isinstance(content, slide_lib.layout_content.ShapeContent):
 		_write_shape(object_parent, automatic, item, content, deck, theme, style_name,
 			slide_index, object_index, target_ids)
+	elif isinstance(content, slide_lib.layout_content.LineContent):
+		_write_line(page, item, content, deck, theme, style_name, target_ids)
 	elif isinstance(content, slide_lib.layout_content.TableContent):
 		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "frame"),
 			_frame_attributes(item, deck, theme, style_name, target_ids))
@@ -292,14 +292,25 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 			properties[_qname(FO_NS, "clip")] = _clip_value(item, crop, deck, theme)
 	if isinstance(item.content, slide_lib.layout_content.ShapeContent):
 		shape_style = item.content.style
-		properties[_qname(DRAW_NS, "fill")] = "solid"
-		properties[_qname(DRAW_NS, "opacity")] = "100%"
-		properties[_qname(DRAW_NS, "fill-color")] = \
-			f"#{_color_for(shape_style.fill_role, theme)}"
+		if shape_style.fill_role is not None:
+			properties[_qname(DRAW_NS, "fill")] = "solid"
+			properties[_qname(DRAW_NS, "opacity")] = "100%"
+			properties[_qname(DRAW_NS, "fill-color")] = \
+				f"#{_color_for(shape_style.fill_role, theme)}"
 		properties[_qname(DRAW_NS, "stroke")] = shape_style.line_pattern.value
 		properties[_qname(SVG_NS, "stroke-color")] = \
-			f"#{_color_for(shape_style.line_role, theme)}"
+			f"#{shape_style.line_color or _color_for(shape_style.line_role, theme)}"
 		properties[_qname(SVG_NS, "stroke-width")] = _pt(shape_style.line_width_pt)
+	if isinstance(item.content, slide_lib.layout_content.LineContent):
+		line_style = item.content.style
+		properties[_qname(DRAW_NS, "stroke")] = line_style.line_pattern.value
+		properties[_qname(SVG_NS, "stroke-color")] = \
+			f"#{line_style.line_color or _color_for(line_style.line_role, theme)}"
+		properties[_qname(SVG_NS, "stroke-width")] = _pt(line_style.line_width_pt)
+		if line_style.end_marker is slide_lib.layout_primitives.LineEndMarker.ARROW:
+			properties[_qname(DRAW_NS, "marker-end")] = "DjotArrow"
+			properties[_qname(DRAW_NS, "marker-end-width")] = _pt(
+				line_style.marker_width_pt)
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), properties)
 
 
@@ -321,20 +332,9 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
 		slide_index: int, object_index: int,
 		target_ids: dict[str, str]) -> xml.etree.ElementTree.Element:
-	"""Write one editable rectangle, rounded rectangle, line, or star."""
+	"""Write one editable rectangle, rounded rectangle, or star."""
 	attributes = _frame_attributes(item, deck, theme, style_name, target_ids)
-	if content.kind is slide_lib.layout_primitives.ShapeKind.LINE:
-		attributes.pop(_qname(SVG_NS, "x"))
-		attributes.pop(_qname(SVG_NS, "y"))
-		attributes.pop(_qname(SVG_NS, "width"))
-		attributes.pop(_qname(SVG_NS, "height"))
-		rectangle = item.rectangle
-		attributes.update({_qname(SVG_NS, "x1"): _cm_x(rectangle.x, deck, theme),
-			_qname(SVG_NS, "y1"): _cm_y(rectangle.y, deck, theme),
-			_qname(SVG_NS, "x2"): _cm_x(rectangle.x + rectangle.width, deck, theme),
-			_qname(SVG_NS, "y2"): _cm_y(rectangle.y + rectangle.height, deck, theme)})
-		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "line"), attributes)
-	elif content.kind in (slide_lib.layout_primitives.ShapeKind.RECTANGLE,
+	if content.kind in (slide_lib.layout_primitives.ShapeKind.RECTANGLE,
 			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE):
 		if content.kind is slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE:
 			attributes[_qname(DRAW_NS, "corner-radius")] = \
@@ -357,17 +357,40 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 	return element
 
 
+def _write_line(page: xml.etree.ElementTree.Element,
+		item: slide_lib.layout_model.LayoutObject,
+		content: slide_lib.layout_content.LineContent,
+		deck: slide_lib.layout_model.LayoutDeck,
+		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
+		target_ids: dict[str, str]) -> xml.etree.ElementTree.Element:
+	"""Write one editable native line with explicit directional endpoints."""
+	attributes = _frame_attributes(item, deck, theme, style_name, target_ids)
+	for name in ("x", "y", "width", "height"):
+		attributes.pop(_qname(SVG_NS, name))
+	geometry = content.geometry
+	attributes.update({_qname(SVG_NS, "x1"): _cm_x(geometry.start.x, deck, theme),
+		_qname(SVG_NS, "y1"): _cm_y(geometry.start.y, deck, theme),
+		_qname(SVG_NS, "x2"): _cm_x(geometry.end.x, deck, theme),
+		_qname(SVG_NS, "y2"): _cm_y(geometry.end.y, deck, theme)})
+	element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "line"), attributes)
+	_write_accessibility(element, item)
+	return element
+
+
 #============================================
 def _write_accessibility(element: xml.etree.ElementTree.Element,
 		item: slide_lib.layout_model.LayoutObject) -> None:
 	"""Expose stable object identity and meaningful text to presentation readers."""
 	if isinstance(item.content, (slide_lib.layout_content.PictureContent,
-			slide_lib.layout_content.ShapeContent)) and item.content.accessibility.decorative:
+			slide_lib.layout_content.ShapeContent,
+			slide_lib.layout_content.LineContent)) and item.content.accessibility.decorative:
 		return
 	xml.etree.ElementTree.SubElement(element, _qname(SVG_NS, "title")).text = item.object_id
 	if isinstance(item.content, slide_lib.layout_content.PictureContent):
 		description = item.content.accessibility.description
 	elif isinstance(item.content, slide_lib.layout_content.ShapeContent):
+		description = item.content.accessibility.description
+	elif isinstance(item.content, slide_lib.layout_content.LineContent):
 		description = item.content.accessibility.description
 	else:
 		description = item.role.value
@@ -416,8 +439,10 @@ def _clip_value(item: slide_lib.layout_model.LayoutObject,
 def _color_for(role: slide_lib.layout_primitives.StyleRole,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the shared resolved palette color for a semantic role."""
-	if role is slide_lib.layout_primitives.StyleRole.TRANSITION:
-		return theme.gradient_start_color
+	if role in (slide_lib.layout_primitives.StyleRole.ACCENT,
+			slide_lib.layout_primitives.StyleRole.TABLE_HEADER,
+			slide_lib.layout_primitives.StyleRole.TRANSITION):
+		return theme.accent_color
 	return _ROLE_COLORS.get(role, _FOREGROUND)
 
 
@@ -457,9 +482,18 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 	"""Append compiler-selected page-layout classifiers to the template styles."""
 	# ASVS 1.5.1: parse retained template XML without DTDs or external entities.
 	root = slide_lib.odf_package.parse_xml(content, "styles.xml")
+	slide_lib.presentation_theme.apply_color_theme(root, theme)
 	styles = root.find(_qname(OFFICE_NS, "styles"))
 	if styles is None:
 		raise ValueError("template styles.xml is missing office:styles")
+	if any(isinstance(item.content, slide_lib.layout_content.LineContent) and
+			item.content.style.end_marker is slide_lib.layout_primitives.LineEndMarker.ARROW
+			for slide in deck.slides for item in slide.objects):
+		lxml.etree.SubElement(styles, _qname(DRAW_NS, "marker"), {
+			_qname(DRAW_NS, "name"): "DjotArrow",
+			_qname(SVG_NS, "viewBox"): "0 0 20 20",
+			_qname(SVG_NS, "d"): "M0 20l10-20 10 20z",
+		})
 	for key in deck.presentation_page_layouts:
 		layout = lxml.etree.SubElement(styles,
 			_qname(STYLE_NS, "presentation-page-layout"), {

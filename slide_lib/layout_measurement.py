@@ -25,6 +25,7 @@ ITEM_SPACE = .25
 TABLE_HORIZONTAL_PADDING = 6.0
 TABLE_VERTICAL_PADDING = 4.0
 TEXT_FRAME_CLEARANCE_PT = 1.0
+TABLE_BORDER_WIDTH_PT = 1.0
 
 
 @dataclasses.dataclass(frozen=True)
@@ -41,6 +42,14 @@ class CenteredHeadingSizes:
 
 	title_size_pt: float
 	subtitle_size_pt: float | None
+
+
+@dataclasses.dataclass(frozen=True)
+class TableMeasurements:
+	"""Carry the column and row geometry used by fitting and final serialization."""
+
+	column_widths: tuple[float, ...]
+	row_heights: tuple[float, ...]
 
 
 #============================================
@@ -93,7 +102,7 @@ def visible_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 		elif isinstance(inline, slide_lib.native_model.Break):
 			parts.append(" ")
 		elif isinstance(inline, (slide_lib.native_model.Strong, slide_lib.native_model.Emphasis,
-				slide_lib.native_model.Link)):
+				slide_lib.native_model.Link, slide_lib.native_model.StyledSpan)):
 			parts.append(visible_text(inline.children))
 	result = "".join(parts).strip()
 	return result
@@ -266,6 +275,8 @@ def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: boo
 				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
 			for text, _family, child_bold, child_italic in _styled_tokens(inline.children, bold, italic, inline.url):
 				result.append((text, "" if text == "\n" else family, child_bold, child_italic))
+		elif isinstance(inline, slide_lib.native_model.StyledSpan):
+			result.extend(_styled_tokens(inline.children, bold, italic, link_url))
 	return tuple(result)
 
 def grapheme_clusters(text: str) -> tuple[str, ...]:
@@ -522,16 +533,86 @@ def select_paragraph_size(inlines: tuple[slide_lib.native_model.Inline, ...],
 	return size
 
 
-def table_height(table: slide_lib.native_model.Table, size_pt: float, width: float,
+def table_measurements(table: slide_lib.native_model.Table, size_pt: float, width: float,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: MeasurementSession | None = None) -> float:
-	"""Measure table rows by their tallest cell, never by a fictitious cell stack."""
+		session: MeasurementSession | None = None) -> TableMeasurements:
+	"""Measure the exact content-aware columns and rows used by final output."""
+	active = session or MeasurementSession(theme)
 	rows = (table.headers,) if table.headers else ()
 	rows += table.rows
 	columns = len(rows[0])
-	cell_width = width / columns - TABLE_HORIZONTAL_PADDING * 2
-	return sum(max(text_height(((cell, 0, False),), size_pt, cell_width, theme, session) +
-		TABLE_VERTICAL_PADDING * 2 for cell in row) for row in rows)
+	padding = TABLE_HORIZONTAL_PADDING * 2
+	clearance = point_height((TABLE_BORDER_WIDTH_PT + TEXT_FRAME_CLEARANCE_PT) * 2, theme)
+	content_width = width - (padding + clearance) * columns
+	minimums: list[float] = []
+	preferred: list[float] = []
+	for column in range(columns):
+		bounds = tuple(_table_cell_widths(row[column], size_pt, active,
+			row_index == 0 and bool(table.headers)) for row_index, row in enumerate(rows))
+		minimums.append(max(1.0, *(minimum for minimum, _preferred in bounds)))
+		preferred.append(max(1.0, *(_preferred for _minimum, _preferred in bounds)))
+	column_widths = tuple(value + padding + clearance for value in
+		_distribute_table_widths(tuple(minimums), tuple(preferred), content_width))
+	row_heights = tuple(max(paragraph_height(cell, size_pt,
+		table_cell_text_width(column_widths[column], theme), theme,
+		bold=row_index == 0 and bool(table.headers), session=active) +
+		TABLE_VERTICAL_PADDING * 2 for column, cell in enumerate(row))
+		for row_index, row in enumerate(rows))
+	return TableMeasurements(column_widths, row_heights)
+
+
+def table_cell_text_width(column_width: float,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> float:
+	"""Return the serializer-safe text extent inside one bordered native cell."""
+	border_and_clearance = point_height(
+		(TABLE_BORDER_WIDTH_PT + TEXT_FRAME_CLEARANCE_PT) * 2, theme)
+	result = column_width - TABLE_HORIZONTAL_PADDING * 2 - border_and_clearance
+	return result
+
+
+def _table_cell_widths(inlines: tuple[slide_lib.native_model.Inline, ...], size_pt: float,
+		session: MeasurementSession, bold: bool) -> tuple[float, float]:
+	"""Return widest-token and widest-line advances for one native table cell."""
+	minimum = 0.0
+	line_width = 0.0
+	preferred = 0.0
+	for text, family, token_bold, token_italic in _styled_tokens(inlines, bold):
+		if text == "\n":
+			preferred = max(preferred, line_width)
+			line_width = 0.0
+			continue
+		for token in _split_wrap_tokens(text):
+			advance = session.advance(family, token_bold, token_italic, size_pt, token)
+			line_width += advance
+			if not token.isspace():
+				minimum = max(minimum, advance)
+	preferred = max(preferred, line_width)
+	return minimum, preferred
+
+
+def _distribute_table_widths(minimums: tuple[float, ...], preferred: tuple[float, ...],
+		available: float) -> tuple[float, ...]:
+	"""Allocate table content width between measured token and single-line bounds."""
+	if available <= 0:
+		raise ValueError("table width cannot accommodate cell padding")
+	minimum_total = sum(minimums)
+	if minimum_total >= available:
+		return tuple(available * value / minimum_total for value in minimums)
+	needs = tuple(max(0.0, preferred[index] - minimums[index])
+		for index in range(len(minimums)))
+	need_total = sum(needs)
+	usable = min(available - minimum_total, need_total)
+	widths = [minimums[index] + (usable * needs[index] / need_total if need_total else 0.0)
+		for index in range(len(minimums))]
+	remaining = available - sum(widths)
+	return tuple(value + remaining / len(widths) for value in widths)
+
+
+def table_height(table: slide_lib.native_model.Table, size_pt: float, width: float,
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		session: MeasurementSession | None = None) -> float:
+	"""Return the measured height of the exact rows used by final serialization."""
+	return sum(table_measurements(table, size_pt, width, theme, session).row_heights)
 
 
 def select_table_size(table: slide_lib.native_model.Table,
@@ -645,7 +726,7 @@ def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.la
 	"""Collect constructs without a deliberately approved editable projection."""
 	facts: list[slide_lib.layout_model.UnsupportedSourceFact] = []
 	for block in _descendant_blocks(slide.blocks + tuple(block for cell in slide.cells for block in cell.blocks)):
-		attributes = getattr(block, "attributes", ())
+		attributes = _unsupported_attributes(block)
 		if isinstance(block, (slide_lib.native_model.CodeBlock, slide_lib.native_model.DisplayMath,
 			slide_lib.native_model.QuoteBlock)):
 			facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, type(block).__name__, attributes))
@@ -656,10 +737,22 @@ def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.la
 				facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, "InlineMath"))
 		if isinstance(block, slide_lib.native_model.ListBlock):
 			for item in _descendant_list_items(block):
-				if item.attributes:
+				attributes = _unsupported_attributes(item)
+				if attributes:
 					facts.append(slide_lib.layout_model.UnsupportedSourceFact(
-						item.location, type(item).__name__, item.attributes))
+						item.location, type(item).__name__, attributes))
 	return tuple(facts)
+
+
+def _unsupported_attributes(item: slide_lib.native_model.Block |
+		slide_lib.native_model.ListItem) -> tuple[slide_lib.native_model.Attribute, ...]:
+	"""Return attributes left after the validated text-color projection."""
+	attributes = getattr(item, "attributes", ())
+	if isinstance(item, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
+			slide_lib.native_model.ListBlock, slide_lib.native_model.ListItem,
+			slide_lib.native_model.ImageArrow, slide_lib.native_model.ImageOutline)):
+		return tuple(attribute for attribute in attributes if attribute.name != "color")
+	return attributes
 
 
 def _block_inlines(block: slide_lib.native_model.Block) -> tuple[slide_lib.native_model.Inline, ...]:
@@ -679,7 +772,7 @@ def _descendant_inlines(inlines: tuple[slide_lib.native_model.Inline, ...]) -> t
 	for inline in inlines:
 		result.append(inline)
 		if isinstance(inline, (slide_lib.native_model.Strong, slide_lib.native_model.Emphasis,
-				slide_lib.native_model.Link)):
+				slide_lib.native_model.Link, slide_lib.native_model.StyledSpan)):
 			result.extend(_descendant_inlines(inline.children))
 	return tuple(result)
 

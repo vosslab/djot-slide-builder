@@ -9,10 +9,36 @@ The catalog uses the twelve built-in Impress layouts, with author-facing names w
 teaching choice clearer, plus three explicit project layouts.  LibreOffice documents the built-ins in
 its [Slide Layout help](https://help.libreoffice.org/latest/en-US/text/simpress/01/05080000.html).
 
+## Deck color theme
+
+Put one optional `color-theme` line before the first layout directive. The value applies to the
+whole deck. Omission uses `genetics` for compatibility with the existing lecture corpus.
+
+```djot
+color-theme: biochemistry
+
+=== layout: title-slide
+
+# Lecture 04A
+```
+
+Use one of the four course names:
+
+| Value | Course color | Readable accent |
+| --- | --- | --- |
+| `genetics` | Blue | `#24578F` |
+| `biostatistics` | Green | `#127622` |
+| `biochemistry` | Purple | `#6B638F` |
+| `biotechnology` | Red | `#C9211E` |
+
+The selected theme controls the top band, links, table headers, cover accents, section dividers,
+and the closer. Keep the line exact and unindented. A duplicate, an unknown value, or placement
+after the first layout is an error.
+
 ## Slide framing
 
-Begin every slide with one exact, unindented layout directive.  A deck begins with a directive, and
-the next directive begins the next slide.
+Begin every slide with one exact, unindented layout directive. After optional deck color metadata,
+the first layout directive begins the first slide and the next directive begins the next slide.
 
 ```djot
 === layout: one-panel
@@ -124,6 +150,34 @@ Use `big-image` for a single focal image and a short editable caption:
 Sign up for the course Discord server through Blackboard.
 ```
 
+Place an arrow or transparent outline directly after the image when it annotates that image. The
+four numbers are percentages of the image content actually displayed after aspect-ratio fitting.
+An arrow uses start x, start y, end x, and end y. An outline uses x, y, width, and height. Every
+coordinate must remain from 0 through 100, and an outline must stay inside the displayed image.
+
+```djot
+=== layout: big-image
+
+@image
+
+![Gel lanes](assets/gel.png)
+
+{color=red}
+arrow: 15 20 80 65
+
+=> appear
+{color=green}
+outline: 35 25 30 35
+
+@caption
+
+The arrow identifies migration; advance once to reveal the sample region.
+```
+
+The shapes remain editable LibreOffice vector objects. Omit `color` to use the deck accent. This
+first version accepts only one-ended `arrow` and no-fill `outline` records owned by the single image
+in `big-image`; it does not expose page coordinates or a general drawing language.
+
 ## Teaching content
 
 Component images are whole paragraphs with meaningful alt text and a repository-relative path.
@@ -143,6 +197,22 @@ its region, so place mixed prose or images in another slot or another slide.
 | Helicase | Opens the duplex |
 | Ligase | Seals a nick |
 ```
+
+Use `{color=<name>}` immediately before a paragraph, list, list item, arrow, or outline to color the
+whole object. Use a Djot attributed span for a shorter colored run:
+
+```djot
+{color=red}
+This whole warning is red.
+
+Each child inherits one [red haplotype]{color=red} and one
+[green haplotype]{color=green} in this example.
+```
+
+The closed names are `accent`, `black`, `red`, `orange`, `green`, `blue`, `purple`, and `gray`.
+`accent` follows the deck's course theme. The remaining names resolve to repository colors rather
+than arbitrary hexadecimal values. Duplicate colors, unknown names, and unsupported attribute
+scopes are source errors.
 
 Use backticks for a short fixed-width sequence.  Fenced code preserves aligned multiline Djot
 source and currently receives a native-destination diagnostic before rendering.
@@ -192,9 +262,9 @@ presentation parser then gives native destinations to headings at their layout-d
 paragraphs, nested lists, component images, links, inline verbatim, and rectangular pipe tables
 without alignment metadata.
 
-Raw HTML and XML tokens remain literal editable text under the current subset parser.  Generic
-divs, footnotes, raw blocks, definition lists, thematic breaks, Djot symbols, paired tilde or caret
-inline forms, and inline images have no presentation surface.  One-line Djot attributes are parsed
-as metadata but await a native presentation mapping.  Fenced code, display math, block quotes, and
-inline math are recognized source forms that currently receive a native-destination diagnostic.
-Source-located diagnostics make the available editable forms clear.
+Raw HTML and XML tokens remain literal editable text under the current subset parser. Generic divs,
+footnotes, raw blocks, definition lists, thematic breaks, Djot symbols, paired tilde or caret inline
+forms, and inline images have no presentation surface. One-line attributes have native meaning only
+for the color scopes documented above. Fenced code, display math, block quotes, and inline math are
+recognized source forms that currently receive a native-destination diagnostic. Source-located
+diagnostics make the available editable forms clear.

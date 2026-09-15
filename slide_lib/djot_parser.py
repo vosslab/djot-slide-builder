@@ -12,6 +12,7 @@ import slide_lib.djot_grammar
 import slide_lib.layout_registry
 import slide_lib.layout_primitives
 import slide_lib.native_model
+import slide_lib.presentation_theme
 
 
 _FENCE_OPEN = re.compile(r"^(?P<mark>`{3,}|~{3,}).*$")
@@ -62,10 +63,12 @@ def visible_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 
 
 #============================================
-def split_slides(path: pathlib.Path, source: str) -> tuple[_SlideSource, ...]:
-	"""Split exact layout-directive lines while retaining physical line numbers."""
+def split_slides(path: pathlib.Path, source: str) -> tuple[str, tuple[_SlideSource, ...]]:
+	"""Split deck metadata and exact layout directives while retaining line numbers."""
 	lines = source.replace("\r\n", "\n").replace("\r", "\n").split("\n")
 	slides: list[_SlideSource] = []
+	color_theme = slide_lib.presentation_theme.DEFAULT_COLOR_THEME
+	color_theme_seen = False
 	layout_name: str | None = None
 	layout_line = 0
 	content: list[_SourceLine] = []
@@ -83,6 +86,22 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[_SlideSource, ...]:
 			content.append(_SourceLine(number, value))
 			mark = fence_match.group("mark")
 			fence = (mark[0], len(mark))
+			continue
+		if value.strip().startswith("color-theme:"):
+			match = slide_lib.djot_grammar.COLOR_THEME_DIRECTIVE_PATTERN.fullmatch(value)
+			if match is None:
+				fail(path, number,
+					"color-theme metadata must be exactly color-theme: <course>")
+			if layout_name is not None:
+				fail(path, number, "color-theme metadata must precede the first layout")
+			if color_theme_seen:
+				fail(path, number, "duplicate color-theme metadata")
+			color_theme = match.group("theme")
+			if color_theme not in slide_lib.presentation_theme.color_theme_names():
+				expected = ", ".join(slide_lib.presentation_theme.color_theme_names())
+				fail(path, number,
+					f"unknown color-theme: {color_theme}; expected one of: {expected}")
+			color_theme_seen = True
 			continue
 		match = slide_lib.djot_grammar.LAYOUT_DIRECTIVE_PATTERN.fullmatch(value)
 		if match is not None:
@@ -102,7 +121,7 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[_SlideSource, ...]:
 	if layout_name is None:
 		fail(path, 1, "Djot decks require at least one layout directive")
 	slides.append(_SlideSource(location(path, layout_line), layout_name, tuple(content)))
-	result = tuple(slides)
+	result = (color_theme, tuple(slides))
 	return result
 
 
@@ -122,7 +141,9 @@ def reveal_block(path: pathlib.Path, line: int, block: slide_lib.native_model.Bl
 		reveal: slide_lib.native_model.Reveal) -> slide_lib.native_model.Block:
 	"""Attach one action to a block that owns reveal intent."""
 	if not isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
-			slide_lib.native_model.Image, slide_lib.native_model.ListBlock, slide_lib.native_model.QuoteBlock)):
+			slide_lib.native_model.Image, slide_lib.native_model.ImageArrow,
+			slide_lib.native_model.ImageOutline, slide_lib.native_model.ListBlock,
+			slide_lib.native_model.QuoteBlock)):
 		fail(path, line, f"{type(block).__name__} blocks cannot receive Djot actions")
 	if block.reveal is not None:
 		fail(path, line, "Djot actions cannot attach more than one reveal to the same block")
@@ -390,11 +411,12 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 	except UnicodeDecodeError:
 		fail(path, 1, "Djot source must use UTF-8 text")
 		source = ""  # Satisfy static analyzers after fail's intentional exception.
-	slides = tuple(assemble_slide(path, slide_source) for slide_source in split_slides(path, source))
+	color_theme, slide_sources = split_slides(path, source)
+	slides = tuple(assemble_slide(path, slide_source) for slide_source in slide_sources)
 	repo_root = next((candidate for candidate in (path.parent, *path.parents)
 		if (candidate / ".git").exists()), path.parent).resolve()
 	first_title = next((block for slide in slides if not slide.hidden for block in slide.blocks
 		if isinstance(block, slide_lib.native_model.Heading) and block.level == 1), None)
 	title = visible_text(first_title.inlines) if first_title is not None else ""
-	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, slides, {})
+	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, slides, color_theme)
 	return deck

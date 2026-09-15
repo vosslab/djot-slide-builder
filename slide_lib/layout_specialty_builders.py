@@ -115,8 +115,11 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 	"""Give one component image the page and retain a short editable bottom caption."""
 	image_cell = next(cell for cell in source.cells if cell.name == "image")
 	caption_cell = next(cell for cell in source.cells if cell.name == "caption")
-	image = next(block for block in image_cell.blocks
-		if isinstance(block, slide_lib.native_model.Image))
+	image = image_cell.blocks[0]
+	if not isinstance(image, slide_lib.native_model.Image):
+		raise ValueError("validated big-image source must begin with its component image")
+	overlays = tuple(block for block in image_cell.blocks[1:] if isinstance(block,
+		(slide_lib.native_model.ImageArrow, slide_lib.native_model.ImageOutline)))
 	image_rectangle = slide_lib.layout_primitives.LogicalRectangle(60, 26, 1160, 590)
 	caption_rectangle = slide_lib.layout_primitives.LogicalRectangle(60, 634, 1160, 118)
 	caption_frame = dataclasses.replace(_frame_text(),
@@ -148,10 +151,17 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 			"Caption", "Caption for the primary slide image"), caption_text)
 	image_object = slide_lib.layout_object_builders.picture_object(
 		"big-image", deck, image, image_rectangle, "image", 0)
+	if not isinstance(image_object.content, slide_lib.layout_content.PictureContent):
+		raise ValueError("big-image picture builder must return native picture content")
+	overlay_objects = tuple(slide_lib.layout_object_builders.image_overlay_object(
+		f"big-image-overlay-{index + 1}", overlay,
+		image_object.content.placement.displayed_rectangle, "image", index + 1, theme)
+		for index, overlay in enumerate(overlays))
+	caption_order = len(overlay_objects) + 1
 	caption_object = slide_lib.layout_model.LayoutObject("caption",
 		slide_lib.layout_primitives.PresentationRole.CONTENT,
 		slide_lib.layout_primitives.StyleRole.BODY, caption_rectangle,
-		slide_lib.layout_primitives.ObjectLayer.CONTENT, 1, 1,
+		slide_lib.layout_primitives.ObjectLayer.CONTENT, caption_order, caption_order,
 		caption_shape, caption_frame, "caption", source=caption_cell.location)
 	image_slot = _slot("image", slide_lib.layout_primitives.PlaceholderKind.NONE,
 		slide_lib.layout_primitives.PresentationRole.COMPONENT,
@@ -160,7 +170,7 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		slide_lib.layout_primitives.PresentationRole.CONTENT,
 		caption_rectangle, 1, caption_frame, slide_lib.layout_primitives.StyleRole.BODY)
 	return SpecialtySlideComponents(
-		(image_slot, caption_slot), (image_object, caption_object))
+		(image_slot, caption_slot), (image_object, *overlay_objects, caption_object))
 
 
 def _end_components(title: slide_lib.native_model.Heading,

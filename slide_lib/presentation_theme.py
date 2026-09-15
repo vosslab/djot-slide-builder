@@ -32,6 +32,7 @@ DEFAULT_TEMPLATE_PATH = pathlib.Path(__file__).resolve().parent.parent / \
 REPOSITORY_ROOT = DEFAULT_TEMPLATE_PATH.parent.parent
 FONT_MANIFEST_PATH = pathlib.PurePosixPath("assets/fonts/font_provenance.json")
 ORDINARY_FONT_FAMILY = "Atkinson Hyperlegible Next"
+DEFAULT_COLOR_THEME = "genetics"
 NS = {
 	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
 	"fo": "urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0",
@@ -44,6 +45,62 @@ NS = {
 
 class ThemeError(ValueError):
 	"""Report a malformed or unsupported presentation-template theme."""
+
+
+@dataclasses.dataclass(frozen=True)
+class CourseColorTheme:
+	"""Name one course palette with separate band and readable accent colors."""
+
+	name: str
+	band_color: str
+	accent_color: str
+
+
+_COURSE_COLOR_THEMES = {
+	"genetics": CourseColorTheme("genetics", "24578F", "24578F"),
+	"biostatistics": CourseColorTheme("biostatistics", "77BC65", "127622"),
+	"biochemistry": CourseColorTheme("biochemistry", "B7B3CA", "6B638F"),
+	"biotechnology": CourseColorTheme("biotechnology", "FF6D6D", "C9211E"),
+}
+
+_TEXT_COLORS = {
+	"black": "000000",
+	"red": "C9211E",
+	"orange": "A65A00",
+	"green": "127622",
+	"blue": "24578F",
+	"purple": "6B638F",
+	"gray": "526176",
+}
+
+_SOURCE_TEXT_COLOR_ALIASES = {
+	"800000": "red",
+	"B4232B": "red",
+	"B85C00": "orange",
+	"C9211E": "red",
+	"CE181E": "red",
+	"FF0000": "red",
+	"9A5500": "orange",
+	"A65A00": "orange",
+	"FAA61A": "orange",
+	"FF8000": "orange",
+	"00A65D": "green",
+	"069A2E": "green",
+	"127622": "green",
+	"158466": "green",
+	"24578F": "blue",
+	"2A6099": "blue",
+	"3465A4": "blue",
+	"55308D": "purple",
+	"6B638F": "purple",
+	"826AAF": "purple",
+	"526176": "gray",
+	"808080": "gray",
+	"999999": "gray",
+}
+_SOURCE_DEFAULT_TEXT_COLORS = frozenset({
+	"000000", "111111", "111827", "151B2E", "172033", "FFFFFF",
+})
 
 
 class OverflowPolicy(enum.StrEnum):
@@ -166,6 +223,8 @@ class PresentationTheme:
 	top_band_height: float
 	gradient_start_color: str
 	gradient_end_color: str
+	accent_color: str
+	color_theme_name: str
 	western_font_name: str
 	title_frame: FrameGeometry
 	outline_frame: FrameGeometry
@@ -179,6 +238,63 @@ class PresentationTheme:
 	overflow_policy: OverflowPolicy
 	list_levels: tuple[ListLevelStyle, ...]
 	font_metrics: tuple[FontMetricProfile, ...]
+
+
+#============================================
+def color_theme_names() -> tuple[str, ...]:
+	"""Return the canonical authored color-theme names."""
+	return tuple(_COURSE_COLOR_THEMES)
+
+
+#============================================
+def course_color_theme(name: str) -> CourseColorTheme:
+	"""Resolve one authored course palette or report the supported names."""
+	if name not in _COURSE_COLOR_THEMES:
+		expected = ", ".join(color_theme_names())
+		raise ThemeError(f"unknown color theme: {name}; expected one of: {expected}")
+	return _COURSE_COLOR_THEMES[name]
+
+
+def text_color_names() -> tuple[str, ...]:
+	"""Return the closed authored text-color vocabulary."""
+	return ("accent", *_TEXT_COLORS)
+
+
+def resolve_text_color(name: str, accent_color: str) -> str:
+	"""Resolve one semantic text color without accepting arbitrary color values."""
+	if name == "accent":
+		return accent_color
+	if name not in _TEXT_COLORS:
+		expected = ", ".join(text_color_names())
+		raise ThemeError(f"unknown text color: {name}; expected one of: {expected}")
+	return _TEXT_COLORS[name]
+
+
+def source_text_color_name(value: str | None) -> str | None:
+	"""Map one evidenced source color to the closed authored vocabulary."""
+	if value is None:
+		return None
+	canonical = value.removeprefix("#").upper()
+	return _SOURCE_TEXT_COLOR_ALIASES.get(canonical)
+
+
+def source_overlay_color_name(value: str | None) -> str | None:
+	"""Map a source stroke color, including ordinary black annotation lines."""
+	if value is None:
+		return None
+	canonical = value.removeprefix("#").upper()
+	if canonical == "000000":
+		return "black"
+	return _SOURCE_TEXT_COLOR_ALIASES.get(canonical)
+
+
+def source_text_color_requires_review(value: str | None) -> bool:
+	"""Identify an explicit source color outside known semantic and neutral colors."""
+	if value is None:
+		return False
+	canonical = value.removeprefix("#").upper()
+	return canonical not in _SOURCE_DEFAULT_TEXT_COLORS and \
+		canonical not in _SOURCE_TEXT_COLOR_ALIASES
 
 #============================================
 def qname(prefix: str, local_name: str) -> str:
@@ -716,8 +832,9 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 	top_band_height = length_value(band.attrib[qname("svg", "height")], "cm") * logical_pixels_per_cm
 	theme = PresentationTheme(
 		resolved_path, master_name, slide_width_cm, slide_height_cm, emu_per_logical_pixel,
-		top_band_height, start_color, end_color, title_font, frame_geometry(title_frame_element),
-		frame_geometry(outline_frame_element), title_style_name, style_names, title_sizes[0],
+		top_band_height, start_color, end_color, start_color, "template", title_font,
+		frame_geometry(title_frame_element), frame_geometry(outline_frame_element),
+		title_style_name, style_names, title_sizes[0],
 		28.0, ORDINARY_LINE_SPACING_EM, CORPUS_DERIVED_TITLE_FLOOR_SIZE_PT,
 		CORPUS_DERIVED_BODY_FLOOR_SIZE_PT, OverflowPolicy.SHRINK_ONLY, levels, font_metrics,
 	)
@@ -725,7 +842,34 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 
 
 #============================================
+def apply_color_theme(styles_root: lxml.etree._Element,
+		theme: PresentationTheme) -> None:
+	"""Apply the selected course band colors to retained master-page styles."""
+	master = named_element(styles_root, ".//style:master-page",
+		qname("style", "name"), theme.master_name)
+	bands = [shape for shape in master.findall("draw:custom-shape", NS)
+		if length_value(shape.attrib[qname("svg", "width")], "cm") >=
+			theme.slide_width_cm - 0.1 and
+			shape.attrib[qname("svg", "x")] == "0cm" and
+			shape.attrib[qname("svg", "y")] == "0cm"]
+	if len(bands) != 1:
+		raise ThemeError("theme master requires one full-width top-band shape")
+	band_style = presentation_style(styles_root,
+		bands[0].attrib[qname("presentation", "style-name")])
+	properties = band_style.find("style:graphic-properties", NS)
+	if properties is None:
+		raise ThemeError("theme top band style is missing graphic properties")
+	gradient = named_element(styles_root, ".//draw:gradient", qname("draw", "name"),
+		properties.attrib[qname("draw", "fill-gradient-name")])
+	gradient.attrib[qname("draw", "start-color")] = f"#{theme.gradient_start_color}"
+	gradient.attrib[qname("draw", "end-color")] = f"#{theme.gradient_end_color}"
+
+
+#============================================
 @functools.cache
-def default_theme() -> PresentationTheme:
-	"""Return the immutable repository theme loaded from its ODP template."""
-	return load_theme(DEFAULT_TEMPLATE_PATH)
+def default_theme(color_theme: str = DEFAULT_COLOR_THEME) -> PresentationTheme:
+	"""Return the repository theme using one authored course palette."""
+	colors = course_color_theme(color_theme)
+	return dataclasses.replace(load_theme(DEFAULT_TEMPLATE_PATH),
+		gradient_start_color=colors.band_color, accent_color=colors.accent_color,
+		color_theme_name=colors.name)

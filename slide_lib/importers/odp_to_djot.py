@@ -15,6 +15,7 @@ import slide_lib.djot_lint as djot_lint
 import slide_lib.djot_parser
 import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.geometry as geometry
+import slide_lib.importers.image_annotations as image_annotations
 import slide_lib.importers.odp_reader as odp_reader
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
@@ -81,13 +82,16 @@ def plan_slides(presentation: odp_reader.ImportedPresentation) -> list[djot_emit
 		visual_regions = slide_plan.visual_regions(
 			source_slide.positioned_visual, source_slide.page_width, source_slide.page_height,
 		)
+		overlays = image_annotations.normalized_overlays(
+			source_slide.positioned_overlays, source_slide.page_width, source_slide.page_height,
+		)
 		plan = plan_imported_slide(
 			text_regions, visual_regions, source_slide.data.images,
 			source_slide.page_width, source_slide.page_height,
 		)
 		planned_slides.append(djot_emitter.PlannedSlide(
 			source_slide.data, plan, text_regions, visual_regions,
-			None if source_slide.data.hidden else visible_page_index,
+			None if source_slide.data.hidden else visible_page_index, overlays,
 		))
 	return planned_slides
 
@@ -185,6 +189,9 @@ def direct_record(record: dict[str, object], source_slide: odp_reader.ReadSlide)
 		raise RuntimeError("direct ODP reader omitted required source page evidence")
 	record["source_page_evidence"] = dataclasses.asdict(evidence)
 	record["source_geometry"] = [dataclasses.asdict(item) for item in source_slide.raw_geometry]
+	record["source_overlays"] = [
+		dataclasses.asdict(item) for item in source_slide.positioned_overlays
+	]
 	return record
 
 

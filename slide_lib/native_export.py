@@ -93,7 +93,7 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 def compile_deck(deck: slide_lib.native_model.Deck) -> tuple[slide_lib.compilation_result.CompilationResult,
 		slide_lib.presentation_theme.PresentationTheme]:
 	"""Compile one semantic deck once against the authoritative OTP theme."""
-	theme = slide_lib.presentation_theme.default_theme()
+	theme = slide_lib.presentation_theme.default_theme(deck.color_theme)
 	compilation = slide_lib.layout_engine.compile_layout_deck(deck, theme)
 	return compilation, theme
 

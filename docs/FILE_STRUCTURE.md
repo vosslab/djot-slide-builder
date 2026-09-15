@@ -24,6 +24,8 @@ Brewfile             declared macOS command-line and desktop dependencies
 - [../slide_lib/importers/](../slide_lib/importers/) contains the trusted existing-presentation
   import pipeline: ODP reader, source records, geometry and topology analysis, slide
   planning, native normalization, Djot emission, and lossless migration reports.
+  `image_annotations.py` owns the bounded image-overlay import projection, while `odf_styles.py`
+  resolves inherited properties from already-admitted ODF XML.
 - [../genetics/djot/](../genetics/djot/) contains the repository's Djot lecture sources and its
   local authoring README. A deck-local asset tree is created beside an imported deck when needed.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.

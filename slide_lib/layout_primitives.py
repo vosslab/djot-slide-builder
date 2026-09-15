@@ -125,7 +125,6 @@ class PictureFit(enum.Enum):
 class ShapeKind(enum.Enum):
 	RECTANGLE = "rectangle"
 	ROUNDED_RECTANGLE = "rounded-rectangle"
-	LINE = "line"
 	STAR = "star"
 
 
@@ -134,6 +133,11 @@ class LinePattern(enum.Enum):
 	DASHED = "dashed"
 	DOTTED = "dotted"
 	NONE = "none"
+
+
+class LineEndMarker(enum.Enum):
+	NONE = "none"
+	ARROW = "arrow"
 
 
 def require_nonempty(value: str, label: str) -> None:
@@ -202,6 +206,16 @@ class LogicalCanvas:
 	def __post_init__(self) -> None:
 		require_positive_finite(self.width, "logical canvas width")
 		require_positive_finite(self.height, "logical canvas height")
+
+
+@dataclass(frozen=True)
+class LogicalPoint:
+	x: float
+	y: float
+
+	def __post_init__(self) -> None:
+		require_finite(self.x, "logical point x")
+		require_finite(self.y, "logical point y")
 
 
 @dataclass(frozen=True)

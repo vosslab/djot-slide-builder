@@ -2,8 +2,8 @@
 
 from dataclasses import dataclass
 
-from slide_lib.layout_primitives import (CropInsets, Insets, LinePattern, ListKind,
-	LogicalRectangle, ObjectAccessibility, ParagraphProperties, PictureFit, ShapeKind,
+from slide_lib.layout_primitives import (CropInsets, Insets, LineEndMarker, LinePattern, ListKind,
+	LogicalPoint, LogicalRectangle, ObjectAccessibility, ParagraphProperties, PictureFit, ShapeKind,
 	StyleRole, Typography, VerticalAlignment, canonicalize_tuple, require_nonempty,
 	require_boolean, require_nonnegative_finite, require_nonnegative_integer, require_positive_finite,
 	require_positive_integer)
@@ -199,15 +199,51 @@ class PictureContent:
 
 @dataclass(frozen=True)
 class ShapeStyle:
-	fill_role: StyleRole
+	fill_role: StyleRole | None
 	line_role: StyleRole
 	line_width_pt: float
 	line_pattern: LinePattern
 	corner_radius_pt: float = 0.0
+	line_color: str | None = None
 
 	def __post_init__(self) -> None:
 		require_positive_finite(self.line_width_pt, "shape line width")
 		require_nonnegative_finite(self.corner_radius_pt, "shape corner radius")
+		if self.line_color is not None and len(self.line_color) != 6:
+			raise ValueError("resolved shape line colors require six hexadecimal digits")
+
+
+@dataclass(frozen=True)
+class LineGeometry:
+	start: LogicalPoint
+	end: LogicalPoint
+
+	def __post_init__(self) -> None:
+		if self.start == self.end:
+			raise ValueError("native lines require distinct endpoints")
+
+
+@dataclass(frozen=True)
+class LineStyle:
+	line_role: StyleRole
+	line_width_pt: float
+	line_pattern: LinePattern
+	end_marker: LineEndMarker
+	marker_width_pt: float
+	line_color: str | None = None
+
+	def __post_init__(self) -> None:
+		require_positive_finite(self.line_width_pt, "line width")
+		require_positive_finite(self.marker_width_pt, "line marker width")
+		if self.line_color is not None and len(self.line_color) != 6:
+			raise ValueError("resolved line colors require six hexadecimal digits")
+
+
+@dataclass(frozen=True)
+class LineContent:
+	geometry: LineGeometry
+	style: LineStyle
+	accessibility: ObjectAccessibility
 
 
 @dataclass(frozen=True)
@@ -225,12 +261,13 @@ class ShapeContent:
 			raise ValueError("rounded rectangles require a positive corner radius")
 
 
-ObjectContent = TextContent | TableContent | PictureContent | ShapeContent
+ObjectContent = TextContent | TableContent | PictureContent | ShapeContent | LineContent
 
 
 def adapter_projectable_content(content: object) -> bool:
 	"""Return whether a physical adapter has an approved editable representation."""
-	return isinstance(content, (TextContent, TableContent, PictureContent, ShapeContent))
+	return isinstance(content, (TextContent, TableContent, PictureContent, ShapeContent,
+		LineContent))
 
 
 def text_capable_content(content: ObjectContent) -> bool:

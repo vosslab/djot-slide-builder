@@ -121,6 +121,27 @@ def test_title_only_table_remains_an_ordinary_native_object(tmp_path: pathlib.Pa
 	assert table.placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.NONE
 
 
+def test_table_serializes_content_dependent_row_heights(tmp_path: pathlib.Path) -> None:
+	"""A wrapped row receives more native height than a one-line row."""
+	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
+		"| Label | Explanation |\n| - | - |\n| Short | Fits |\n"
+		"| Long | This explanation wraps across several lines because it contains substantially more text than the short row. |")
+	table = next(item.content for item in result.plan.slides[0].objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+	assert table.row_heights[-1] > table.row_heights[-2]
+
+
+def test_table_allocates_more_width_to_a_content_heavy_column(tmp_path: pathlib.Path) -> None:
+	"""Measured content controls native column widths without changing the table frame."""
+	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
+		"| ID | Organism and strain | Cut |\n| - | - | - |\n"
+		"| A | Haemophilus haemolyticus | blunt |\n")
+	item = next(item for item in result.plan.slides[0].objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+	assert item.content.column_widths[1] > item.content.column_widths[0]
+	assert sum(item.content.column_widths) == pytest.approx(item.rectangle.width)
+
+
 @pytest.mark.parametrize("layout, slots", (("one-panel", ("body",)), ("two-panels", ("left", "right"))))
 def test_overfull_representable_slide_stays_one_page_and_reports_capacity(
 		tmp_path: pathlib.Path, layout: str, slots: tuple[str, ...]) -> None:

@@ -19,9 +19,8 @@ TABLE_NS = "urn:oasis:names:tc:opendocument:xmlns:table:1.0"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 _FOREGROUND = "172033"
 _ROLE_COLORS = {
-	slide_lib.layout_primitives.StyleRole.ACCENT: "24578F",
-	slide_lib.layout_primitives.StyleRole.TABLE_HEADER: "24578F",
 	slide_lib.layout_primitives.StyleRole.MUTED: "526176",
+	slide_lib.layout_primitives.StyleRole.TABLE_BODY: "F2F3F5",
 	slide_lib.layout_primitives.StyleRole.DECORATION: "FFFFFF",
 }
 
@@ -39,8 +38,12 @@ def _qname(namespace: str, local_name: str) -> str:
 
 
 #============================================
-def _color_for(role: slide_lib.layout_primitives.StyleRole) -> str:
+def _color_for(role: slide_lib.layout_primitives.StyleRole,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the resolved ODP palette color for a semantic role."""
+	if role in (slide_lib.layout_primitives.StyleRole.ACCENT,
+			slide_lib.layout_primitives.StyleRole.TABLE_HEADER):
+		return theme.accent_color
 	result = _ROLE_COLORS.get(role, _FOREGROUND)
 	return result
 
@@ -326,7 +329,8 @@ def write_table(parent: xml.etree.ElementTree.Element,
 			cell_style = (
 				f"DjotCell{slide_index + 1}_{object_index + 1}_"
 				f"{row_index + 1}_{column_index + 1}")
-			_add_cell_style(automatic, cell_style, row_index < len(content.header_rows), content)
+			_add_cell_style(automatic, cell_style, row_index < len(content.header_rows),
+				cell, content, deck, theme)
 			attributes = {
 				_qname(TABLE_NS, "style-name"): cell_style,
 				_qname(OFFICE_NS, "value-type"): "string",
@@ -371,22 +375,34 @@ def _add_dimension_style(automatic: xml.etree.ElementTree.Element, name: str,
 		_qname(STYLE_NS, "name"): name,
 		_qname(STYLE_NS, "family"): family,
 	})
-	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, f"{family}-properties"), {
+	properties = {
 		_qname(STYLE_NS, property_name): value,
-	})
+	}
+	if family == "table-row":
+		properties[_qname(STYLE_NS, "use-optimal-row-height")] = "false"
+	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, f"{family}-properties"),
+		properties)
 
 
 #============================================
 def _add_cell_style(automatic: xml.etree.ElementTree.Element, name: str,
-		header: bool, content: slide_lib.layout_content.TableContent) -> None:
-	"""Define native table fill and border semantics."""
+		header: bool, cell: slide_lib.layout_content.TableCell,
+		content: slide_lib.layout_content.TableContent,
+		deck: slide_lib.layout_model.LayoutDeck,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
+	"""Define native table fill, border, and compiler-measured padding."""
 	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
 		_qname(STYLE_NS, "name"): name,
 		_qname(STYLE_NS, "family"): "table-cell",
 	})
 	role = content.style.header_role if header else content.style.body_role
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "table-cell-properties"), {
-		_qname(FO_NS, "background-color"): f"#{_color_for(role)}",
+		_qname(FO_NS, "background-color"): f"#{_color_for(role, theme)}",
 		_qname(FO_NS, "border"): f"{_points(content.style.border_width_pt)} solid "
-			f"#{_color_for(content.style.border_role)}",
+			f"#{_color_for(content.style.border_role, theme)}",
+		_qname(FO_NS, "padding-left"): _centimeters_x(cell.padding.left, deck, theme),
+		_qname(FO_NS, "padding-top"): _centimeters_y(cell.padding.top, deck, theme),
+		_qname(FO_NS, "padding-right"): _centimeters_x(cell.padding.right, deck, theme),
+		_qname(FO_NS, "padding-bottom"): _centimeters_y(cell.padding.bottom, deck, theme),
+		_qname(STYLE_NS, "vertical-align"): cell.vertical_alignment.value,
 	})

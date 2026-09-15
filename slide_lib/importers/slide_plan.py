@@ -89,7 +89,6 @@ class SourceImageRegion:
 	z_order: tuple[int, ...] = ()
 
 
-#============================================
 def text_regions(
 	positioned: tuple[source_model.PositionedText, ...],
 	slide_width: int,

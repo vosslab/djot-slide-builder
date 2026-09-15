@@ -128,14 +128,20 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   rounded light-gray box with a dark-red outline and dark-red editable text.
 - Use `big-image` when one image is the focus. Give the image the main page region and place a small
   editable caption across the bottom, including recording, YouTube, and Discord signup slides.
+- Use `big-image` to close more of the gap with the original slides. The next fidelity priorities are
+  meaningful font colors, native arrows and outlines over images, and readable tables whose content
+  is fully visible.
+- Keep image annotations native and image-relative. Arrows use explicit endpoints and outlines use
+  explicit bounds measured against the aspect-preserving displayed image. Do not approximate
+  ambiguous legacy page drawings with slide-specific page coordinates.
 - Keep ordinary slide text clear of the bottom edge with a visible margin comparable to the other
   page edges.
 - Center the primary title in most layouts. Keep body text, local headings, captions, and question
   content aligned for reading.
 - Multiple-choice content uses the ordinary body-text floor; there is no separate quiz category.
 - Prefer properly scoped `lxml` over `defusedxml` for bounded XML parsing.
-- Color-code courses at the theme level: Genetics is blue, Biostatistics is green, Biochemistry is
-  purple, and Biotechnology is red.
+- Let each deck declare its course color theme. Genetics is blue, Biostatistics is green,
+  Biochemistry uses the established purple, and Biotechnology is red.
 - Treat `slide_*_source` raster names as retired full-slide fallback evidence, not component images.
 - Use lots of images and aim for a visual image on every slide.
 - Hold image-bearing slide PNGs out of publication until their copyright status is assessed;
@@ -222,12 +228,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   not silently change a slide's selected layout because of image count.
 - Keep teaching reveals within a small predefined action set rather than a general animation
   language. The provisional `<=` and `=>` spellings do not settle floating-answer geometry.
-- Explore `<= blue overlay` as a bounded action for an authored annotation or popup highlight. It
-  may become a predefined treatment, never a general coordinate attribute bag. With exactly one
-  Djot component image in a slot, it anchors there; otherwise the linter reports an error.
-- For an inline blue highlight, write the target as the unquoted remainder of `<= blue overlay`.
-  It must occur exactly once in the preceding logical item; the linter rejects missing or ambiguous
-  targets. This preserves hard-wrapping and avoids escaping DNA prime marks inside quoted strings.
+- Keep the image-annotation vocabulary bounded to one-ended arrows and transparent rectangle
+  outlines on `big-image`. Bind percentage coordinates to its one displayed image and keep color in
+  the same closed semantic vocabulary used by text. Route ambiguous imported drawings to review.
 - Write a simple, fast, source-only linter with pyflakes-level enforcement. It must report
   source-located structural mistakes without rendering or opening LibreOffice; geometry, overflow,
   native animation export, and visual quality remain separate validation lanes.

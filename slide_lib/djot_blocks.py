@@ -8,6 +8,7 @@ from collections.abc import Callable
 
 # Local Modules
 import slide_lib.djot_errors
+import slide_lib.djot_grammar
 import slide_lib.djot_inline
 import slide_lib.native_model
 
@@ -209,6 +210,28 @@ def parse_image(path: pathlib.Path, line: int, source: str) -> slide_lib.native_
 	image = slide_lib.native_model.Image(location(path, line), match.group("alt"), image_source,
 		match.group("title"))
 	return image
+
+
+def parse_image_overlay(path: pathlib.Path, line: int,
+		source: str) -> slide_lib.native_model.ImageArrow | slide_lib.native_model.ImageOutline | None:
+	"""Parse one normalized image-relative arrow or outline directive."""
+	arrow = slide_lib.djot_grammar.ARROW_OVERLAY_PATTERN.fullmatch(source)
+	outline = slide_lib.djot_grammar.OUTLINE_OVERLAY_PATTERN.fullmatch(source)
+	if arrow is None and outline is None:
+		return None
+	match = arrow if arrow is not None else outline
+	values = tuple(float(value) / 100.0 for value in match.groups())
+	if any(value < 0 or value > 1 for value in values):
+		fail(path, line, "image overlay coordinates must be between 0 and 100")
+	if arrow is not None:
+		if values[0:2] == values[2:4]:
+			fail(path, line, "image arrow endpoints must differ")
+		return slide_lib.native_model.ImageArrow(location(path, line), *values)
+	if values[2] <= 0 or values[3] <= 0:
+		fail(path, line, "image outline width and height must be positive")
+	if values[0] + values[2] > 1 or values[1] + values[3] > 1:
+		fail(path, line, "image outlines must remain inside the displayed image")
+	return slide_lib.native_model.ImageOutline(location(path, line), *values)
 
 
 #============================================
@@ -491,8 +514,12 @@ def parse_blocks(path: pathlib.Path, source: str, base_line: int = 1) -> ParsedB
 					fail(path, line, "display mathematics must close with $$")
 			block, next_index = parse_display_math(path, lines, index, base_line)
 		else:
+			overlay = parse_image_overlay(path, line, lines[index])
 			heading = _HEADING.fullmatch(lines[index])
-			if heading is not None:
+			if overlay is not None:
+				block = overlay
+				next_index = index + 1
+			elif heading is not None:
 				block = slide_lib.native_model.Heading(location(path, line), len(heading.group("marks")),
 					slide_lib.djot_inline.parse_inlines(path, line, heading.group("text")))
 				next_index = index + 1

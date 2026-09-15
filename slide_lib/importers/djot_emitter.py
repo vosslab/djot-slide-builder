@@ -8,6 +8,7 @@ import re
 # local repo modules
 import slide_lib.layout_registry
 import slide_lib.importers.geometry as geometry
+import slide_lib.importers.image_annotations as image_annotations
 import slide_lib.importers.import_report as import_report
 import slide_lib.importers.native_normalization as native_normalization
 import slide_lib.importers.topology as topology
@@ -55,6 +56,7 @@ class PlannedSlide:
 	text_regions: tuple[slide_plan.SourceTextRegion, ...] = ()
 	image_regions: tuple[slide_plan.SourceImageRegion, ...] = ()
 	visible_page_index: int | None = None
+	overlays: tuple[image_annotations.SourceOverlay, ...] = ()
 @dataclasses.dataclass(frozen=True)
 class EmissionComponent:
 	"""One bounded, single-kind source component assigned to one Djot Cell."""
@@ -103,22 +105,22 @@ def djot_link_target(target: str) -> str:
 #============================================
 def render_runs(runs: tuple[source_model.TextRun, ...]) -> str:
 	"""Render raw source runs into Djot inline syntax exactly once."""
-	# Join equal-link neighbors so formatting-only splits cannot break DNA recognition while
-	# hyperlink boundaries remain distinct.
+	# Join equal-style neighbors so formatting-only splits cannot break DNA recognition.
 	coalesced: list[source_model.TextRun] = []
 	for run in runs:
-		if coalesced and coalesced[-1].link == run.link:
+		if coalesced and (coalesced[-1].link, coalesced[-1].color) == (run.link, run.color):
 			previous = coalesced[-1]
-			coalesced[-1] = source_model.TextRun(previous.text + run.text, previous.link)
+			coalesced[-1] = dataclasses.replace(previous, text=previous.text + run.text)
 		else:
 			coalesced.append(run)
 	segments: list[str] = []
 	for run in coalesced:
 		text = djot_text(run.text)
 		if run.link:
-			segments.append(f"[{text}]({djot_link_target(run.link)})")
-		else:
-			segments.append(text)
+			text = f"[{text}]({djot_link_target(run.link)})"
+		if run.color:
+			text = f"[{text}]{{color={run.color}}}"
+		segments.append(text)
 	return "".join(segments)
 
 
@@ -840,6 +842,32 @@ def contextualize_slide_error(planned: PlannedSlide, error: ValueError) -> Value
 	if str(error).startswith("source slide "):
 		return error
 	return ValueError(f"{source_slide_context(planned)}: {error}")
+
+
+def render_big_image_with_overlays(planned: PlannedSlide) \
+		-> tuple[list[str], str, list[str]] | None:
+	"""Emit one proven image-owned annotation composition as native big-image Djot."""
+	if not planned.overlays:
+		return None
+	data = planned.data
+	if len(data.images) != 1 or len(planned.image_regions) != 1 or data.tables:
+		return None
+	image = planned.image_regions[0]
+	if image.source_kind != "picture" or image.asset_reference != data.images[0].asset_path:
+		return None
+	title_region = None if planned.plan is None else planned.plan.title.region
+	caption_regions = tuple(region for region in planned.text_regions if region is not title_region)
+	if len(caption_regions) > 2:
+		return None
+	caption_lines = []
+	for region in (() if title_region is None else (title_region,)) + caption_regions:
+		caption_lines.extend(render_runs(runs) for _level, runs in region.paragraphs)
+	if not caption_lines:
+		caption_lines.append(data.images[0].alt_text)
+	return image_annotations.render_big_image(planned.overlays, image,
+		image_djot(data.images[0]), caption_lines, data.review_reasons)
+
+
 #============================================
 def _render_planned_slide(
 	planned: PlannedSlide,
@@ -863,6 +891,11 @@ def _render_planned_slide(
 		]
 		if section_lines:
 			return ["=== layout: section", "", f"# {' '.join(section_lines)}"], "section", reasons
+	big_image = render_big_image_with_overlays(planned)
+	if big_image is not None:
+		return big_image
+	if planned.overlays:
+		reasons.append("native annotations could not be assigned to exactly one image")
 	components, component_reasons = emit_components(planned)
 	reasons.extend(component_reasons)
 	if plan.review_reason:

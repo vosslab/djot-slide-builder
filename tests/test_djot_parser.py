@@ -50,8 +50,24 @@ def test_retired_layout_names_report_source_located_unknown_layout(
 #============================================
 def test_parse_deck_binds_global_headings_and_named_cells(tmp_path: pathlib.Path) -> None:
 	"""A canonical source deck keeps title material global and slots named."""
-	deck = parse_source(tmp_path, "=== layout: one-panel\n# Genetics\n@body\nVisible text\n")
-	assert deck.title == "Genetics" and deck.slides[0].cells[0].name == "body"
+	deck = parse_source(tmp_path,
+		"color-theme: biochemistry\n\n=== layout: one-panel\n# Genetics\n@body\nVisible text\n")
+	assert (deck.title, deck.color_theme, deck.slides[0].cells[0].name) == (
+		"Genetics", "biochemistry", "body")
+
+
+#============================================
+@pytest.mark.parametrize("metadata", (
+	"color-theme: orange",
+	" color-theme: genetics",
+	"color-theme: genetics\ncolor-theme: biotechnology",
+	"=== layout: one-panel\ncolor-theme: genetics",
+))
+def test_invalid_color_theme_metadata_reports_its_source(
+		tmp_path: pathlib.Path, metadata: str) -> None:
+	"""Invalid deck color selection cannot silently fall back to another course."""
+	message = parse_error(tmp_path, f"{metadata}\n\n=== layout: one-panel\n@body\nContent.")
+	assert str(tmp_path / "deck.djot") in message and "color-theme" in message
 
 
 #============================================

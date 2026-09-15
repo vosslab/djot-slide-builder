@@ -2,6 +2,7 @@
 
 # Standard Library
 import pathlib
+import re
 import string
 
 # Local Modules
@@ -13,6 +14,7 @@ import slide_lib.native_model
 # Djot lets a backslash quote ASCII punctuation.  Keep this grammar fact local
 # to scanning: the resulting character is ordinary text, never a delimiter.
 ESCAPABLE_PUNCTUATION = frozenset(string.punctuation)
+_COLOR_SPAN = re.compile(r"\{color=(?P<color>[a-z][a-z0-9-]*)\}")
 
 
 #============================================
@@ -88,8 +90,31 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 			continue
 		if character == "[":
 			label_end = _find_closing_bracket(source, index, end)
-			if label_end is None or label_end + 1 >= end or source[label_end + 1] != "(":
+			if label_end is None or label_end + 1 >= end:
 				raise _error(path, line, source, index, "unsupported or unterminated link syntax")
+			if source[label_end + 1] == "{":
+				attribute = _COLOR_SPAN.match(source, label_end + 1, end)
+				if attribute is None:
+					raise _error(path, line, source, label_end + 1,
+						"inline spans support only {color=<name>}")
+				color_name = attribute.group("color")
+				color_names = tuple(color.value for color in slide_lib.native_model.TextColor)
+				if color_name not in color_names:
+					expected = ", ".join(color_names)
+					raise _error(path, line, source, label_end + 1,
+						f"unknown text color: {color_name}; expected one of: {expected}")
+				_append_text(runs, source[text_start:index])
+				children = _parse_runs(path, line, source, index + 1, label_end)
+				if not children:
+					raise _error(path, line, source, index,
+						"colored spans require visible text")
+				runs.append(slide_lib.native_model.StyledSpan(children,
+					slide_lib.native_model.TextColor(color_name)))
+				index = attribute.end()
+				text_start = index
+				continue
+			if source[label_end + 1] != "(":
+				raise _error(path, line, source, index, "unsupported inline span syntax")
 			url_end = _find_closing_parenthesis(source, label_end + 1, end)
 			if url_end is None:
 				raise _error(path, line, source, label_end + 1, "unterminated link destination")

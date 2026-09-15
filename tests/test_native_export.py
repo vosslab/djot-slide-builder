@@ -37,18 +37,24 @@ def write_deck(tmp_path: pathlib.Path, source: str) -> pathlib.Path:
 def test_native_odp_renderer_writes_editable_objects(tmp_path: pathlib.Path) -> None:
 	"""The public native renderer consumes Djot semantics directly into ODP."""
 	source_path = write_deck(tmp_path,
-		"=== layout: one-panel\n\n# Genetics\n\n@body\n\nVisible prose.\n\n"
+		"color-theme: biochemistry\n\n=== layout: one-panel\n\n# Genetics\n\n@body\n\n"
+		"[Course website](https://example.test/course)\n\n"
 		"- Parent\n\n  - Child\n")
 	deck = slide_lib.native_export.parse_deck(source_path)
 	odp_path = slide_lib.native_export.render_native_odp(deck, tmp_path / "deck.odp")
+	theme = slide_lib.presentation_theme.default_theme("biochemistry")
 	with zipfile.ZipFile(odp_path) as archive:
-		root = slide_lib.odf_package.parse_xml(archive.read("content.xml"), "content.xml")
+		content_xml = archive.read("content.xml")
+		styles_xml = archive.read("styles.xml")
+		root = slide_lib.odf_package.parse_xml(content_xml, "content.xml")
 	page = root.find(".//draw:page", ODF_NAMESPACES)
 	assert page is not None and page.attrib[
 		f"{{{ODF_NAMESPACES['presentation']}}}presentation-page-layout-name"]
 	assert root.find(".//draw:frame[@presentation:class='outline']", ODF_NAMESPACES) is not None
 	assert root.find(".//text:list-item/text:list/text:list-item", ODF_NAMESPACES) is not None
-	assert "Visible prose." in "".join(root.itertext())
+	assert "Course website" in "".join(root.itertext())
+	assert f"#{theme.accent_color}".encode() in content_xml
+	assert f"#{theme.gradient_start_color}".encode() in styles_xml
 
 
 def test_representable_capacity_recovery_exports_one_native_page_per_source_slide(

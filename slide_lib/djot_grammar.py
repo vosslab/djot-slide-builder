@@ -11,10 +11,18 @@ import slide_lib.native_model
 # Each pattern accepts one complete physical source line.  Callers pass a line
 # without its newline, keeping hard-wrapped prose ordinary Djot content.
 LAYOUT_DIRECTIVE_PATTERN = re.compile(r"\A=== layout: (?P<layout>[a-z][a-z0-9-]*)\Z")
+COLOR_THEME_DIRECTIVE_PATTERN = re.compile(r"\Acolor-theme: (?P<theme>[a-z][a-z0-9-]*)\Z")
 HIDDEN_DIRECTIVE_PATTERN = re.compile(r"\Ahidden: (?P<hidden>true|false)\Z")
 SLOT_DIRECTIVE_PATTERN = re.compile(r"\A@(?P<slot>[a-z][a-z0-9-]*)\Z")
 PREFIX_ACTION_PATTERN = re.compile(r"\A=> (?P<action>[a-z]+(?: [a-z]+)*)\Z")
 TERMINAL_ACTION_PATTERN = re.compile(r"\A<= (?P<action>[a-z]+(?: [a-z]+)*)\Z")
+_OVERLAY_NUMBER = r"[0-9]+(?:\.[0-9]+)?"
+ARROW_OVERLAY_PATTERN = re.compile(
+	rf"\Aarrow: (?P<x1>{_OVERLAY_NUMBER}) (?P<y1>{_OVERLAY_NUMBER}) "
+	rf"(?P<x2>{_OVERLAY_NUMBER}) (?P<y2>{_OVERLAY_NUMBER})\Z")
+OUTLINE_OVERLAY_PATTERN = re.compile(
+	rf"\Aoutline: (?P<x>{_OVERLAY_NUMBER}) (?P<y>{_OVERLAY_NUMBER}) "
+	rf"(?P<width>{_OVERLAY_NUMBER}) (?P<height>{_OVERLAY_NUMBER})\Z")
 
 
 ACTION_REVEALS: dict[str, slide_lib.native_model.Reveal] = {

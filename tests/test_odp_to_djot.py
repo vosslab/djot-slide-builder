@@ -15,6 +15,9 @@ import pytest
 import slide_lib.djot_parser
 import slide_lib.importers.odp_reader as odp_reader
 import slide_lib.importers.odp_to_djot as odp_to_djot
+import slide_lib.layout_engine
+import slide_lib.odp_export
+import slide_lib.presentation_theme
 
 
 STYLES_XML = """<office:document-styles
@@ -92,6 +95,58 @@ def test_direct_conversion_publishes_valid_djot_reachable_media_and_source_evide
 	assert report["slides"][0]["presenter_notes"] == ["Start with the central question."]
 	assert report["slides"][0]["source_page_evidence"]["layout_identity"] == "section"
 	assert report["slides"][2]["hidden"] and report["slides"][2]["visible_page"] is None
+
+
+#============================================
+def test_native_image_annotations_and_text_color_survive_odp_round_trip(
+		tmp_path: pathlib.Path) -> None:
+	"""Editable annotations and semantic color survive the native ODP boundary."""
+	assets = tmp_path / "assets" / "source"
+	assets.mkdir(parents=True)
+	(assets / "figure.png").write_bytes(png_bytes((40, 120, 180)))
+	source = tmp_path / "source.djot"
+	source.write_text("""=== layout: big-image
+
+@image
+
+![Figure](assets/source/figure.png)
+
+{color=red}
+arrow: 15 20 80 65
+
+=> appear
+{color=green}
+outline: 35 25 30 35
+
+@caption
+
+[Native]{color=purple} annotations.
+""", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source), theme).plan
+	odp_path = slide_lib.odp_export.write_odp(plan, theme, tmp_path / "source.odp")
+	output_path = tmp_path / "imported.djot"
+	summary = odp_to_djot.convert_odp(odp_path, output_path)
+
+	assert summary.review_slides == 0
+	assert output_path.read_text(encoding="utf-8") == """=== layout: big-image
+
+@image
+
+![Slide image 1](assets/imported/image_001.png)
+
+{color=red}
+arrow: 15 20 80 65
+
+=> appear
+{color=green}
+outline: 35 25 30 35
+
+@caption
+
+[Native]{color=purple} annotations.
+"""
 
 
 #============================================

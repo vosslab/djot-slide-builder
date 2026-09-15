@@ -2,8 +2,9 @@
 
 # Standard Library
 import enum
+import math
 import pathlib
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class SourceLocation:
@@ -27,6 +28,18 @@ class RevealSequence(enum.Enum):
 class RevealTrigger(enum.Enum):
 	"""The event that advances a reveal."""
 	ON_CLICK = "on-click"
+
+
+class TextColor(enum.Enum):
+	"""Closed authored text-color vocabulary with native editable output."""
+
+	ACCENT = "accent"
+	RED = "red"
+	ORANGE = "orange"
+	GREEN = "green"
+	BLUE = "blue"
+	PURPLE = "purple"
+	GRAY = "gray"
 
 
 @dataclass(frozen=True)
@@ -76,6 +89,14 @@ class Link:
 
 
 @dataclass(frozen=True)
+class StyledSpan:
+	"""Editable inline content carrying one supported semantic text color."""
+
+	children: tuple["Inline", ...]
+	color: TextColor
+
+
+@dataclass(frozen=True)
 class Break:
 	"""An author-requested editable line break."""
 
@@ -86,7 +107,7 @@ class InlineMath:
 	value: str
 
 
-Inline = Text | Strong | Emphasis | InlineCode | Link | Break | InlineMath
+Inline = Text | Strong | Emphasis | InlineCode | Link | StyledSpan | Break | InlineMath
 
 
 @dataclass(frozen=True)
@@ -117,6 +138,55 @@ class Image:
 	title: str | None
 	reveal: Reveal | None = None
 	attributes: tuple[Attribute, ...] = ()
+
+
+def _require_normalized(value: float, label: str) -> None:
+	if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+		raise ValueError(f"{label} must be a finite number")
+	if value < 0 or value > 1:
+		raise ValueError(f"{label} must be between zero and one")
+
+
+@dataclass(frozen=True)
+class ImageArrow:
+	"""One editable one-ended arrow positioned within a displayed image."""
+
+	location: SourceLocation
+	start_x: float
+	start_y: float
+	end_x: float
+	end_y: float
+	reveal: Reveal | None = None
+	attributes: tuple[Attribute, ...] = ()
+
+	def __post_init__(self) -> None:
+		for label, value in (("arrow start x", self.start_x), ("arrow start y", self.start_y),
+				("arrow end x", self.end_x), ("arrow end y", self.end_y)):
+			_require_normalized(value, label)
+		if self.start_x == self.end_x and self.start_y == self.end_y:
+			raise ValueError("image arrows require distinct endpoints")
+
+
+@dataclass(frozen=True)
+class ImageOutline:
+	"""One editable unfilled rectangle positioned within a displayed image."""
+
+	location: SourceLocation
+	x: float
+	y: float
+	width: float
+	height: float
+	reveal: Reveal | None = None
+	attributes: tuple[Attribute, ...] = ()
+
+	def __post_init__(self) -> None:
+		for label, value in (("outline x", self.x), ("outline y", self.y),
+				("outline width", self.width), ("outline height", self.height)):
+			_require_normalized(value, label)
+		if self.width <= 0 or self.height <= 0:
+			raise ValueError("image outlines require positive width and height")
+		if self.x + self.width > 1 or self.y + self.height > 1:
+			raise ValueError("image outlines must remain inside the displayed image")
 
 
 @dataclass(frozen=True)
@@ -175,7 +245,8 @@ class QuoteBlock:
 	attributes: tuple[Attribute, ...] = ()
 
 
-Block = Heading | Paragraph | Image | ListBlock | CodeBlock | Table | DisplayMath | QuoteBlock
+Block = Heading | Paragraph | Image | ImageArrow | ImageOutline | ListBlock | CodeBlock | Table | \
+	DisplayMath | QuoteBlock
 
 
 @dataclass(frozen=True)
@@ -205,4 +276,8 @@ class Deck:
 	repo_root: pathlib.Path
 	title: str
 	slides: tuple[Slide, ...]
-	front_matter: dict[str, object] = field(compare=False)
+	color_theme: str = "genetics"
+
+	def __post_init__(self) -> None:
+		if not self.color_theme.strip():
+			raise ValueError("deck color theme must not be empty")

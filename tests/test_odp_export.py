@@ -7,6 +7,7 @@ import pathlib
 import zipfile
 
 import fontTools.ttLib
+import lxml.etree
 import pytest
 
 import slide_lib.djot_parser
@@ -69,9 +70,15 @@ def payloads() -> dict[str, bytes]:
 
 
 def template(path: pathlib.Path) -> pathlib.Path:
-	items = payloads()
-	items["mimetype"] = exporter.OTP_MIMETYPE.encode("ascii")
-	items["styles.xml"] = xml('<office:document-styles xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.3"><office:styles><office:annotation xlink:href="Pictures/theme.png"/></office:styles></office:document-styles>')
+	with zipfile.ZipFile(slide_lib.presentation_theme.DEFAULT_TEMPLATE_PATH) as source:
+		items = {info.filename: source.read(info.filename) for info in source.infolist()
+			if not info.is_dir()}
+	root = package.parse_xml(items["styles.xml"], "styles.xml")
+	styles = root.find(f"{{{exporter.OFFICE_NS}}}styles")
+	lxml.etree.SubElement(styles, f"{{{exporter.OFFICE_NS}}}annotation", {
+		f"{{{exporter.XLINK_NS}}}href": "Pictures/theme.png",
+	})
+	items["styles.xml"] = exporter._XML_DECLARATION + lxml.etree.tostring(root, encoding="utf-8")
 	items["Pictures/theme.png"] = b"theme image"
 	items[package.MANIFEST_NAME] = exporter._manifest_xml(items)
 	with zipfile.ZipFile(path, "w") as archive:
@@ -257,7 +264,7 @@ def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) 
 	assert (properties[f"{{{exporter.DRAW_NS}}}fill"],
 		properties[f"{{{exporter.DRAW_NS}}}fill-color"],
 		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"]) == (
-		"solid", f"#{theme.gradient_start_color}", "false")
+		"solid", f"#{theme.accent_color}", "false")
 	assert star.find(f"{{{exporter.SVG_NS}}}title") is None
 	assert star_properties[f"{{{exporter.DRAW_NS}}}opacity"] == "100%"
 	assert rounded_rectangles and all(
@@ -316,6 +323,23 @@ def test_object_reveal_target_is_a_native_rounded_answer_popup(tmp_path: pathlib
 		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == text_style_name)
 	text_properties = text_style.find(f"{{{exporter.STYLE_NS}}}text-properties").attrib
 	assert text_properties[f"{{{exporter.FO_NS}}}color"] == "#7B1E2B"
+
+
+def test_native_table_uses_light_body_cells_and_theme_header(tmp_path: pathlib.Path) -> None:
+	"""Native table styles keep body text readable while retaining the deck accent header."""
+	source_path = tmp_path / "table.djot"
+	source_path.write_text("=== layout: one-panel\n\n@body\n\n"
+		"| Sample | Result |\n| - | - |\n| A | pass |\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
+	output = exporter.write_odp(plan, theme, tmp_path / "table.odp")
+	with zipfile.ZipFile(output) as archive:
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
+	backgrounds = [element.attrib[f"{{{exporter.FO_NS}}}background-color"]
+		for element in root.findall(f".//{{{exporter.STYLE_NS}}}table-cell-properties")]
+	assert backgrounds == [f"#{theme.accent_color}", f"#{theme.accent_color}",
+		"#F2F3F5", "#F2F3F5"]
 
 
 def test_scoped_xml_parser_rejects_dtds() -> None:

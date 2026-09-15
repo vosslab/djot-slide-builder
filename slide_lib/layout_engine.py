@@ -31,5 +31,6 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 	plan = slide_lib.layout_model.LayoutDeck(
 		slide_lib.layout_model.DeckIdentity(deck.path.stem, deck.path),
 		slide_lib.layout_primitives.LogicalCanvas(),
-		(slide_lib.layout_model.MetadataEntry("title", deck.title),), tuple(slides))
+		(slide_lib.layout_model.MetadataEntry("title", deck.title),
+			slide_lib.layout_model.MetadataEntry("color-theme", deck.color_theme)), tuple(slides))
 	return slide_lib.compilation_result.CompilationResult(plan, tuple(session.capacity_diagnostics))

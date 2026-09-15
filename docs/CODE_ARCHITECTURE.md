@@ -28,6 +28,10 @@ enters only through the one-time import workflow.
   contracts, distinct LibreOffice classifier signatures, font-backed capacity, and format-neutral
   physical object construction. [../slide_lib/multiple_choice_layout.py](../slide_lib/multiple_choice_layout.py)
   isolates the context, stem, choice, and answer measurement policy for the adaptive teaching layout.
+  [../slide_lib/layout_object_builders.py](../slide_lib/layout_object_builders.py) maps semantic text
+  colors and image-relative annotations into resolved text runs, explicit line endpoints, and
+  transparent shapes. [../slide_lib/layout_specialty_builders.py](../slide_lib/layout_specialty_builders.py)
+  owns their placement against the aspect-preserving displayed rectangle in `big-image`.
   [../slide_lib/layout_engine.py](../slide_lib/layout_engine.py) is their public compiler boundary.
   At that boundary, title slides and sections use master-backed frames; title-only keeps its native
   title placeholder and emits following root content as ordinary editable body objects. See
@@ -50,7 +54,9 @@ enters only through the one-time import workflow.
   ODPs, verifies every converted PDF, then publishes the full result set.
 - [../slide_lib/importers/](../slide_lib/importers/) imports trusted ODP decks. The
   readers retain raw source facts, planners validate and normalize geometry before selecting
-  semantic layouts, and the emitter publishes validated Djot plus local assets.
+  semantic layouts, and the emitter publishes validated Djot plus local assets. Recognized text
+  colors, arrow-ended lines, and transparent rectangles survive import only when the closed native
+  source vocabulary can represent them; annotations require one unambiguous owning image.
 - [../slide_lib/importers/slide_plan.py](../slide_lib/importers/slide_plan.py) owns the
   deterministic, geometry-first `SlidePlan`; it uses
   [../slide_lib/importers/visual_relations.py](../slide_lib/importers/visual_relations.py) only for

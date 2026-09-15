@@ -18,9 +18,24 @@
   stated Biochemistry course color. Section text is white for accessible contrast.
 - Centered primary titles across the standard title-bearing layouts while retaining top placement
   where the layout uses a top title band.
+- Added deck-level `color-theme` metadata with the course values `genetics`, `biostatistics`,
+  `biochemistry`, and `biotechnology`. The selected theme now controls the native top band, links,
+  table headers, cover accents, sections, and closers; all Genetics sources declare blue explicitly.
+- Added a closed semantic text-color vocabulary for attributed blocks, list items, and inline Djot
+  spans. Restored the original red, orange, green, and purple parental-haplotype grouping on HLA
+  offspring slides 33 through 36 as editable font-backed text.
+- Added image-relative `arrow` and `outline` records to `big-image`. They map through the displayed
+  aspect-preserving image rectangle and export as editable native ODF lines, arrow markers, and
+  transparent rectangles; object-level appearance reveals work on either shape.
 
 ### Fixes and Maintenance
 
+- Repaired native tables so light body cells, content-aware column widths, and measured row heights
+  reach ODF serialization from one shared measurement result. The eight-row restriction-site table
+  now retains every row and its bottom border without truncation.
+- Extended bounded ODP import to retain recognized text colors and native image annotations. The
+  importer resolves properties through admitted ODF styles and emits overlays only when both
+  endpoints belong unambiguously to one image; other legacy drawings remain explicit review items.
 - Normalized genetics title-slide metadata to a subject/topic line that accepts an optional
   colon-delimited subtopic, followed by separate chapter, instructor, and date lines. Removed the
   Lecture 03 slash separators, joined older split subject/subtopic lines, and standardized cover
@@ -37,15 +52,19 @@
 
 ### Developer Tests and Notes
 
-- The full pytest suite passed (1,981 tests), and structural lint accepted all 15 genetics sources
+- The full pytest suite passed (1,991 tests), and structural lint accepted all 15 genetics sources
   with 611 authored slides and 335 images. The pinned native Jotdown executable was unavailable, so
   its separate source-acceptance lane was not run.
 - The current full Genetics build produced 15 editable ODPs with 585 visible pages. Package
   inspection found all four renamed Atkinson faces in every ODP and no OpenDyslexic reference.
   A one-time semantic audit found six focal-image slides, 102 sections, 15 native closers, and the
   two native HLA answer popups. Existing capacity diagnostics remain visible for dense inherited slides.
-- The LibreOffice round-trip and current PDF/font audit remain pending because the desktop
-  LibreOffice process was open; the build correctly refused to interfere with that session.
+- A temporary four-theme build verified that every authored course name writes its selected native
+  band and accent colors. All four readable accents pass the documented 5.5:1 white-background target.
+- The normal Genetics build produced all 15 editable ODPs and LibreOffice-derived PDFs with 585
+  matching visible pages. Every PDF font was embedded and no Type 3 font appeared. Native package
+  inspection confirmed font-backed color spans, editable tables, an arrow marker, and a no-fill
+  outline; temporary rendered review confirmed alignment and absence of table clipping.
 
 ## 2026-09-14
 
