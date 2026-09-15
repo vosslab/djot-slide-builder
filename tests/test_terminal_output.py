@@ -189,7 +189,7 @@ def test_capacity_inspection_is_silent_and_zero_when_every_deck_is_floor_safe(
 #============================================
 @pytest.mark.parametrize(("layout", "source", "slot", "cause"), (
 	("title-only", "# " + "title " * 100, "title", "title"),
-	("title-slide", "# A concise title\n\n## " + "subtitle " * 100,
+	("title-slide", "# A concise title\n\n## " + "subtitle " * 125,
 		"subtitle", "local-heading"),
 	("section", "# A concise title\n\n## " + "subtitle " * 100,
 		"subtitle", "local-heading"),

@@ -63,8 +63,9 @@ class ObjectLayer(enum.Enum):
 
 
 class LayoutObjectOrigin(enum.Enum):
-	"""Declare whether a physical object is authored."""
+	"""Declare the provenance of a physical object."""
 	AUTHORED = "authored"
+	THEME = "theme"
 
 
 class StyleRole(enum.Enum):
@@ -78,6 +79,7 @@ class StyleRole(enum.Enum):
 	ACCENT = "accent"
 	MUTED = "muted"
 	DECORATION = "decoration"
+	TRANSITION = "transition"
 
 
 class OverflowPolicy(enum.Enum):
@@ -122,6 +124,7 @@ class ShapeKind(enum.Enum):
 	RECTANGLE = "rectangle"
 	ROUNDED_RECTANGLE = "rounded-rectangle"
 	LINE = "line"
+	STAR = "star"
 
 
 class LinePattern(enum.Enum):
@@ -311,6 +314,20 @@ class ObjectAccessibility:
 			raise ValueError("nondecorative objects require accessibility name and description")
 		if self.decorative and (self.name is not None or self.description is not None):
 			raise ValueError("decorative objects cannot carry accessibility text")
+
+
+@dataclass(frozen=True)
+class SlideSurface:
+	"""Select the native page background and master-decoration visibility."""
+	background_role: StyleRole | None = None
+	show_master_objects: bool = True
+
+	def __post_init__(self) -> None:
+		require_boolean(self.show_master_objects, "slide surface master-object visibility")
+		if self.background_role is not None and not isinstance(self.background_role, StyleRole):
+			raise ValueError("slide surface background role must be a StyleRole")
+		if not self.show_master_objects and self.background_role is None:
+			raise ValueError("a slide surface that hides master objects requires a background role")
 
 
 @dataclass(frozen=True)

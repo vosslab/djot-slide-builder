@@ -92,7 +92,8 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 			_qname(SVG_NS, "string"): face.format_name,
 		})
 	automatic = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "automatic-styles"))
-	_add_page_style(automatic)
+	page_style_names = _page_style_names(deck)
+	_add_page_styles(automatic, page_style_names, theme)
 	slide_lib.odp_text.add_list_styles(automatic, deck, theme)
 	body = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "body"))
 	presentation = xml.etree.ElementTree.SubElement(body, _qname(OFFICE_NS, "presentation"))
@@ -100,7 +101,7 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 		layout_key = slide.layout.topology.key_for_canvas(deck.canvas)
 		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), {
 			_qname(DRAW_NS, "name"): slide.identity.slide_id,
-			_qname(DRAW_NS, "style-name"): "DjotPage",
+			_qname(DRAW_NS, "style-name"): page_style_names[slide.surface],
 			_qname(DRAW_NS, "master-page-name"): theme.master_name,
 			_qname(PRESENTATION_NS, "presentation-page-layout-name"): layout_names[layout_key],
 		})
@@ -115,19 +116,41 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 
 
 #============================================
-def _add_page_style(automatic: xml.etree.ElementTree.Element) -> None:
-	"""Define the one visible theme-backed drawing-page style."""
-	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
-		_qname(STYLE_NS, "name"): "DjotPage",
-		_qname(STYLE_NS, "family"): "drawing-page",
-	})
-	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "drawing-page-properties"), {
-		_qname(PRESENTATION_NS, "background-visible"): "true",
-		_qname(PRESENTATION_NS, "background-objects-visible"): "true",
-		_qname(PRESENTATION_NS, "display-page-number"): "false",
-		_qname(PRESENTATION_NS, "display-footer"): "false",
-		_qname(PRESENTATION_NS, "display-date-time"): "false",
-	})
+def _page_style_names(deck: slide_lib.layout_model.LayoutDeck) -> dict[
+		slide_lib.layout_primitives.SlideSurface, str]:
+	"""Assign deterministic document-local names to used page surfaces."""
+	result: dict[slide_lib.layout_primitives.SlideSurface, str] = {}
+	for slide in deck.slides:
+		if slide.surface in result:
+			continue
+		result[slide.surface] = "DjotPage" if not result else f"DjotPage{len(result) + 1}"
+	return result
+
+
+#============================================
+def _add_page_styles(automatic: xml.etree.ElementTree.Element,
+		style_names: dict[slide_lib.layout_primitives.SlideSurface, str],
+		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
+	"""Define each compiler-selected native page surface."""
+	for surface, style_name in style_names.items():
+		style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
+			_qname(STYLE_NS, "name"): style_name,
+			_qname(STYLE_NS, "family"): "drawing-page",
+		})
+		properties = {
+			_qname(PRESENTATION_NS, "background-visible"): "true",
+			_qname(PRESENTATION_NS, "background-objects-visible"):
+				"true" if surface.show_master_objects else "false",
+			_qname(PRESENTATION_NS, "display-page-number"): "false",
+			_qname(PRESENTATION_NS, "display-footer"): "false",
+			_qname(PRESENTATION_NS, "display-date-time"): "false",
+		}
+		if surface.background_role is not None:
+			properties[_qname(DRAW_NS, "fill")] = "solid"
+			properties[_qname(DRAW_NS, "fill-color")] = \
+				f"#{_color_for(surface.background_role, theme)}"
+		xml.etree.ElementTree.SubElement(style,
+			_qname(STYLE_NS, "drawing-page-properties"), properties)
 
 
 #============================================
@@ -268,9 +291,12 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 	if isinstance(item.content, slide_lib.layout_content.ShapeContent):
 		shape_style = item.content.style
 		properties[_qname(DRAW_NS, "fill")] = "solid"
-		properties[_qname(DRAW_NS, "fill-color")] = f"#{_color_for(shape_style.fill_role)}"
+		properties[_qname(DRAW_NS, "opacity")] = "100%"
+		properties[_qname(DRAW_NS, "fill-color")] = \
+			f"#{_color_for(shape_style.fill_role, theme)}"
 		properties[_qname(DRAW_NS, "stroke")] = shape_style.line_pattern.value
-		properties[_qname(SVG_NS, "stroke-color")] = f"#{_color_for(shape_style.line_role)}"
+		properties[_qname(SVG_NS, "stroke-color")] = \
+			f"#{_color_for(shape_style.line_role, theme)}"
 		properties[_qname(SVG_NS, "stroke-width")] = _pt(shape_style.line_width_pt)
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), properties)
 
@@ -293,7 +319,7 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
 		slide_index: int, object_index: int,
 		target_ids: dict[str, str]) -> xml.etree.ElementTree.Element:
-	"""Write one editable rectangle, rounded rectangle, or line."""
+	"""Write one editable rectangle, rounded rectangle, line, or star."""
 	attributes = _frame_attributes(item, deck, theme, style_name, target_ids)
 	if content.kind is slide_lib.layout_primitives.ShapeKind.LINE:
 		attributes.pop(_qname(SVG_NS, "x"))
@@ -306,6 +332,16 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 			_qname(SVG_NS, "x2"): _cm_x(rectangle.x + rectangle.width, deck, theme),
 			_qname(SVG_NS, "y2"): _cm_y(rectangle.y + rectangle.height, deck, theme)})
 		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "line"), attributes)
+	elif content.kind in (slide_lib.layout_primitives.ShapeKind.RECTANGLE,
+			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE) and \
+			item.presentation_member_id is None and not item.reveal_targets:
+		if content.kind is slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE:
+			attributes[_qname(DRAW_NS, "corner-radius")] = \
+				_pt(content.style.corner_radius_pt)
+		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "rect"), attributes)
+		if content.text is not None:
+			slide_lib.odp_text.write_text(element, automatic, content.text, slide_index,
+				object_index, target_ids, item.reveal_targets)
 	elif item.presentation_member_id is not None or item.reveal_targets:
 		# LibreOffice retains presentation membership and object-level reveal IDs
 		# on frames; it strips those semantics from imported custom shapes.
@@ -320,11 +356,9 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 		if content.text is not None:
 			slide_lib.odp_text.write_text(element, automatic, content.text, slide_index,
 				object_index, target_ids, item.reveal_targets)
-		shape_type = "round-rect" if content.kind is \
-			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE else "rectangle"
 		xml.etree.ElementTree.SubElement(element, _qname(DRAW_NS, "enhanced-geometry"), {
 			_qname(SVG_NS, "viewBox"): "0 0 21600 21600",
-			_qname(DRAW_NS, "type"): shape_type,
+			_qname(DRAW_NS, "type"): "star5",
 		})
 	_write_accessibility(element, item)
 	return element
@@ -334,6 +368,9 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 def _write_accessibility(element: xml.etree.ElementTree.Element,
 		item: slide_lib.layout_model.LayoutObject) -> None:
 	"""Expose stable object identity and meaningful text to presentation readers."""
+	if isinstance(item.content, (slide_lib.layout_content.PictureContent,
+			slide_lib.layout_content.ShapeContent)) and item.content.accessibility.decorative:
+		return
 	xml.etree.ElementTree.SubElement(element, _qname(SVG_NS, "title")).text = item.object_id
 	if isinstance(item.content, slide_lib.layout_content.PictureContent):
 		description = item.content.accessibility.description
@@ -383,8 +420,11 @@ def _clip_value(item: slide_lib.layout_model.LayoutObject,
 
 
 #============================================
-def _color_for(role: slide_lib.layout_primitives.StyleRole) -> str:
+def _color_for(role: slide_lib.layout_primitives.StyleRole,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the shared resolved palette color for a semantic role."""
+	if role is slide_lib.layout_primitives.StyleRole.TRANSITION:
+		return theme.gradient_start_color
 	return _ROLE_COLORS.get(role, _FOREGROUND)
 
 

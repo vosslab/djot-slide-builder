@@ -1,3 +1,38 @@
+## 2026-09-15
+
+### Behavior or Interface Changes
+
+- Changed the ordinary slide-text default from OpenDyslexic to the bundled Atkinson Hyperlegible
+  Next 2.001 regular, bold, italic, and bold italic faces. Updated deterministic measurement, the
+  native OTP defaults, package-only font embedding, provenance, and inline-code rendering while
+  retaining PT Sans Narrow for displayed literal URLs.
+- Added restrained native shape treatments for the standard lecture cover, section divider, and
+  closer. Sections now use a solid dark transition surface with exactly centered text in a rounded
+  frame. An exact `THE END` section renders as two giant centered lines with a vector star inside
+  the D.
+
+### Fixes and Maintenance
+
+- Normalized genetics title-slide metadata to a subject/topic line that accepts an optional
+  colon-delimited subtopic, followed by separate chapter, instructor, and date lines. Removed the
+  Lecture 03 slash separators, joined older split subject/subtopic lines, and standardized cover
+  titles as `Lecture ##<letter>` with two-digit lecture numbers.
+- Recorded the title-slide line-boundary and Atkinson Hyperlegible Next typography guidance and
+  design decisions.
+- Added a format-neutral page-surface fact and native ODF projection for solid page colors, hidden
+  master decorations, rounded rectangles, and five-point stars. Authored lettering remains editable
+  font glyphs throughout ODP export and LibreOffice PDF conversion.
+
+### Developer Tests and Notes
+
+- The full pytest suite passed (1,953 tests), and structural lint accepted all 15 genetics sources
+  with 611 authored slides and 335 images. The pinned native Jotdown executable was unavailable, so
+  its separate source-acceptance lane was not run.
+- The full genetics build produced 15 editable ODPs and 15 LibreOffice-derived PDFs with 585 visible
+  pages. Package inspection found all four renamed Atkinson faces in every ODP and no OpenDyslexic
+  reference. Rendered inspection confirmed the Lecture 03B cover format and even HLA-list spacing;
+  existing source-located capacity diagnostics remain visible for dense inherited slides.
+
 ## 2026-09-14
 
 ### Additions and New Features

@@ -92,7 +92,7 @@ def font_sizes(properties: dict[str, str]) -> tuple[str, str, str]:
 def test_theme_exposes_point_valued_native_placeholder_contract() -> None:
 	"""Adapters receive native frames, fonts, floors, and bounded overflow policy."""
 	theme = slide_lib.presentation_theme.default_theme()
-	assert theme.western_font_name == "OpenDyslexic" and \
+	assert theme.western_font_name == "Atkinson Hyperlegible Next" and \
 		theme.overflow_policy is slide_lib.presentation_theme.OverflowPolicy.SHRINK_ONLY
 	assert theme.standard_title_size_pt > theme.title_floor_size_pt > 1.0 and \
 		theme.ordinary_body_size_pt > theme.body_floor_size_pt > 1.0
@@ -128,7 +128,7 @@ def test_machine_readable_font_provenance_covers_each_registered_face() -> None:
 #============================================
 def test_font_selection_is_exact_and_never_synthesizes_an_unbundled_style() -> None:
 	"""The run-style boundary accepts only real bundled faces."""
-	bold_italic = slide_lib.presentation_theme.select_font_face("OpenDyslexic", True, True)
+	bold_italic = slide_lib.presentation_theme.select_font_face("Atkinson Hyperlegible Next", True, True)
 	assert bold_italic.bold and bold_italic.italic
 	with pytest.raises(slide_lib.presentation_theme.ThemeError, match="PT Sans Narrow"):
 		slide_lib.presentation_theme.select_font_face("PT Sans Narrow", italic=True)
@@ -188,9 +188,9 @@ def test_shipped_otp_defaults_match_native_title_and_outline_contract() -> None:
 	title_graphics = title.find("style:graphic-properties", slide_lib.presentation_theme.NS)
 	outline_graphics = outline_styles[0].find("style:graphic-properties", slide_lib.presentation_theme.NS)
 	assert font_sizes(title_properties) == ("36pt", "36pt", "36pt") and \
-		title_properties[slide_lib.presentation_theme.qname("fo", "font-family")] == "OpenDyslexic"
+		title_properties[slide_lib.presentation_theme.qname("fo", "font-family")] == "Atkinson Hyperlegible Next"
 	assert all(font_sizes(properties) == ("28pt", "28pt", "28pt") and
-		properties[slide_lib.presentation_theme.qname("fo", "font-family")] == "OpenDyslexic"
+		properties[slide_lib.presentation_theme.qname("fo", "font-family")] == "Atkinson Hyperlegible Next"
 		for properties in outline_properties)
 	assert all(properties[slide_lib.presentation_theme.qname("fo", "line-height")] == "130%"
 		for properties in outline_paragraph_properties)

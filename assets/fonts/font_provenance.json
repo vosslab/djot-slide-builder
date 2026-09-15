@@ -3,79 +3,79 @@
   "odp_derivative_recipe": "TTFont(recalcTimestamp=False); rename name IDs 1, 4, 6, and 16 only",
   "fonts": [
     {
-      "path": "assets/fonts/opendyslexic/OpenDyslexic-Regular.otf",
-      "family": "OpenDyslexic",
+      "path": "assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Regular.ttf",
+      "family": "Atkinson Hyperlegible Next",
       "bold": false,
       "italic": false,
-      "version": "Version 0.990;Glyphs 3.4.1 (3436)",
-      "odp_derivative_sha256": "c2a9f00f59b9ec20c20ffb2d8f24ffa0bbad0fc9e3596fe6e1fedc3af4311a42",
-      "sha256": "215f0b29780dbafa8c02f2f22118fb9e2ab6b27b6686e3f13c8754041a035f64",
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "6b483e32f32e8f9e13634a53072ac2fb5944d5de6519f6cb53af1722f420974e",
+      "sha256": "88ed5c31a71584c7772963b02d04bef1eb7e3d2e9c8b9cb204339b1f82cf432c",
       "face_index": 0,
       "upstream": {
-        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Regular.otf",
-        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next/7925f50f649b3813257faf2f4c0b381011f434f1/fonts/ttf/AtkinsonHyperlegibleNext-Regular.ttf",
+        "revision": "7925f50f649b3813257faf2f4c0b381011f434f1"
       },
       "license": {
         "spdx": "OFL-1.1",
-        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Next-OFL-1.1.txt",
+        "sha256": "09636801ed3e868736cc359bb1c819c5ef76529cbb41473cb1f602ef166dad0a"
       }
     },
     {
-      "path": "assets/fonts/opendyslexic/OpenDyslexic-Bold.otf",
-      "family": "OpenDyslexic",
+      "path": "assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Bold.ttf",
+      "family": "Atkinson Hyperlegible Next",
       "bold": true,
       "italic": false,
-      "version": "Version 0.990;Glyphs 3.4.1 (3436)",
-      "odp_derivative_sha256": "4bc40ce3fc644a95ed0bc489d46f8bbcd5aa074aeeab116ad4e4d816f533a08d",
-      "sha256": "ee7a8b9590a78e183826d16d6a22a50f6253c62e2f7f5e0e01ef44eb0676a9e0",
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "afb7de78fca1e9b8418a1f11551ea7b23e87db7a346fcc754547a0ee38a2be50",
+      "sha256": "994414047df66bb4998d01c1cb1eeb4a2ddc4622d1aa56bbb8adbeca7645b041",
       "face_index": 0,
       "upstream": {
-        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Bold.otf",
-        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next/7925f50f649b3813257faf2f4c0b381011f434f1/fonts/ttf/AtkinsonHyperlegibleNext-Bold.ttf",
+        "revision": "7925f50f649b3813257faf2f4c0b381011f434f1"
       },
       "license": {
         "spdx": "OFL-1.1",
-        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Next-OFL-1.1.txt",
+        "sha256": "09636801ed3e868736cc359bb1c819c5ef76529cbb41473cb1f602ef166dad0a"
       }
     },
     {
-      "path": "assets/fonts/opendyslexic/OpenDyslexic-Italic.otf",
-      "family": "OpenDyslexic",
+      "path": "assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Italic.ttf",
+      "family": "Atkinson Hyperlegible Next",
       "bold": false,
       "italic": true,
-      "version": "Version 0.950;Glyphs 3.4.1 (3436)",
-      "odp_derivative_sha256": "eeaa38db5df8eae4ea85839c0ca4b45eb11fd188240bc1a9b4ed39ee53b7acbb",
-      "sha256": "bd5c83e5c2a3e203fe816330572afe4ece576f8e2c20fb6359bd399e6ef37aaf",
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "c3cb0768d5c2278ea7351a8e917a6bb5edb05b37baa81d22630d6d172f69fc26",
+      "sha256": "b7f8f03ceb28ebadb2de2332b2e869a00e8dbfb5c8e00fdbb06385770c8227e7",
       "face_index": 0,
       "upstream": {
-        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Italic.otf",
-        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next/7925f50f649b3813257faf2f4c0b381011f434f1/fonts/ttf/AtkinsonHyperlegibleNext-Italic.ttf",
+        "revision": "7925f50f649b3813257faf2f4c0b381011f434f1"
       },
       "license": {
         "spdx": "OFL-1.1",
-        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Next-OFL-1.1.txt",
+        "sha256": "09636801ed3e868736cc359bb1c819c5ef76529cbb41473cb1f602ef166dad0a"
       }
     },
     {
-      "path": "assets/fonts/opendyslexic/OpenDyslexic-Bold-Italic.otf",
-      "family": "OpenDyslexic",
+      "path": "assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-BoldItalic.ttf",
+      "family": "Atkinson Hyperlegible Next",
       "bold": true,
       "italic": true,
-      "version": "Version 0.940;hotconv 1.0.109;makeotfexe 2.5.65596",
-      "odp_derivative_sha256": "60958372cfa6e977cf315528c907a1b51c535aef914493b22c7eab1ce9950563",
-      "sha256": "b50779f4f547917a648d38976a664cab8952563112ce03209ff568b1eb364090",
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "4e8e759317204b02bea0f6e4065912e1ef52ae804e1e81cd4cb4077673264379",
+      "sha256": "c2d3c596b54d1565ca20d383cdfb127b50b18b500b85a774fd07d4d976cd018b",
       "face_index": 0,
       "upstream": {
-        "url": "https://forge.hackers.town/antijingoist/opendyslexic/raw/commit/48218028cc8bd9f4f244cd4ce4049e6c879d4d1a/compiled/OpenDyslexic-Bold-Italic.otf",
-        "revision": "48218028cc8bd9f4f244cd4ce4049e6c879d4d1a"
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next/7925f50f649b3813257faf2f4c0b381011f434f1/fonts/ttf/AtkinsonHyperlegibleNext-BoldItalic.ttf",
+        "revision": "7925f50f649b3813257faf2f4c0b381011f434f1"
       },
       "license": {
         "spdx": "OFL-1.1",
-        "path": "assets/fonts/licenses/OpenDyslexic-OFL-1.1.txt",
-        "sha256": "797cb441b593b3326a69fcf83d84264301d89e8871a75b38bae1d101e922e10c"
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Next-OFL-1.1.txt",
+        "sha256": "09636801ed3e868736cc359bb1c819c5ef76529cbb41473cb1f602ef166dad0a"
       }
     },
     {

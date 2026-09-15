@@ -33,6 +33,7 @@ DEFAULT_TEMPLATE_PATH = pathlib.Path(__file__).resolve().parent.parent / \
 	"genetics/xlect99-template_2023.otp"
 REPOSITORY_ROOT = DEFAULT_TEMPLATE_PATH.parent.parent
 FONT_MANIFEST_PATH = pathlib.PurePosixPath("assets/fonts/font_provenance.json")
+ORDINARY_FONT_FAMILY = "Atkinson Hyperlegible Next"
 NS = {
 	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
 	"fo": "urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0",
@@ -101,18 +102,18 @@ class FontProvenance:
 
 
 FONT_FACE_PROFILES = (
-	FontFaceProfile("OpenDyslexic", False, False,
-		pathlib.PurePosixPath("assets/fonts/opendyslexic/OpenDyslexic-Regular.otf"),
-		"215f0b29780dbafa8c02f2f22118fb9e2ab6b27b6686e3f13c8754041a035f64", 0),
-	FontFaceProfile("OpenDyslexic", True, False,
-		pathlib.PurePosixPath("assets/fonts/opendyslexic/OpenDyslexic-Bold.otf"),
-		"ee7a8b9590a78e183826d16d6a22a50f6253c62e2f7f5e0e01ef44eb0676a9e0", 0),
-	FontFaceProfile("OpenDyslexic", False, True,
-		pathlib.PurePosixPath("assets/fonts/opendyslexic/OpenDyslexic-Italic.otf"),
-		"bd5c83e5c2a3e203fe816330572afe4ece576f8e2c20fb6359bd399e6ef37aaf", 0),
-	FontFaceProfile("OpenDyslexic", True, True,
-		pathlib.PurePosixPath("assets/fonts/opendyslexic/OpenDyslexic-Bold-Italic.otf"),
-		"b50779f4f547917a648d38976a664cab8952563112ce03209ff568b1eb364090", 0),
+	FontFaceProfile(ORDINARY_FONT_FAMILY, False, False,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Regular.ttf"),
+		"88ed5c31a71584c7772963b02d04bef1eb7e3d2e9c8b9cb204339b1f82cf432c", 0),
+	FontFaceProfile(ORDINARY_FONT_FAMILY, True, False,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Bold.ttf"),
+		"994414047df66bb4998d01c1cb1eeb4a2ddc4622d1aa56bbb8adbeca7645b041", 0),
+	FontFaceProfile(ORDINARY_FONT_FAMILY, False, True,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Italic.ttf"),
+		"b7f8f03ceb28ebadb2de2332b2e869a00e8dbfb5c8e00fdbb06385770c8227e7", 0),
+	FontFaceProfile(ORDINARY_FONT_FAMILY, True, True,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-BoldItalic.ttf"),
+		"c2d3c596b54d1565ca20d383cdfb127b50b18b500b85a774fd07d4d976cd018b", 0),
 	FontFaceProfile("PT Sans Narrow", False, False,
 		pathlib.PurePosixPath("assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Regular.ttf"),
 		"4102edda03059163771869d258df54ac8563c408fa6e9ef75b2ddc85eabea6f4", 0),
@@ -122,16 +123,16 @@ FONT_FACE_PROFILES = (
 )
 
 _ODF_FONT_NAMES = (
-	"DjotOpenDyslexicRegular",
-	"DjotOpenDyslexicBold",
-	"DjotOpenDyslexicItalic",
-	"DjotOpenDyslexicBoldItalic",
+	"DjotAtkinsonHyperlegibleNextRegular",
+	"DjotAtkinsonHyperlegibleNextBold",
+	"DjotAtkinsonHyperlegibleNextItalic",
+	"DjotAtkinsonHyperlegibleNextBoldItalic",
 	"DjotPTSansNarrowRegular",
 	"DjotPTSansNarrowBold",
 )
 
 _EMBEDDED_FONT_FAMILIES = {
-	"OpenDyslexic": "DjotOpenDyslexic",
+	"Atkinson Hyperlegible Next": "DjotAtkinsonHyperlegibleNext",
 	"PT Sans Narrow": "DjotPTSansNarrow",
 }
 
@@ -693,8 +694,8 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 	title_sizes = presentation_font_sizes(title_properties, title_style_name)
 	if title_paragraph.attrib.get(qname("fo", "text-align")) != "center":
 		raise ThemeError("theme title style must be centered")
-	if title_font != "OpenDyslexic":
-		raise ThemeError("theme title style must use OpenDyslexic")
+	if title_font != ORDINARY_FONT_FAMILY:
+		raise ThemeError("theme title style must use Atkinson Hyperlegible Next")
 	if title_sizes != (36.0, 36.0, 36.0):
 		raise ThemeError("theme title style must use 36 pt")
 	fixed_shrink_only(title_style, title_style_name)
@@ -708,8 +709,8 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 		style = presentation_style(styles_root, name)
 		properties = effective_text_properties(styles_root, style, name)
 		paragraph_properties = effective_paragraph_properties(styles_root, style, name)
-		if properties[qname("fo", "font-family")].strip("'") != "OpenDyslexic":
-			raise ThemeError(f"theme outline style must inherit OpenDyslexic: {name}")
+		if properties[qname("fo", "font-family")].strip("'") != ORDINARY_FONT_FAMILY:
+			raise ThemeError(f"theme outline style must inherit Atkinson Hyperlegible Next: {name}")
 		if presentation_font_sizes(properties, name) != (28.0, 28.0, 28.0):
 			raise ThemeError(f"theme outline style must use 28 pt: {name}")
 		ordinary_line_spacing(paragraph_properties, name)

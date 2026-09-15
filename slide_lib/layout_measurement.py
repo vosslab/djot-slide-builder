@@ -252,7 +252,8 @@ def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: boo
 	result: list[tuple[str, str, bool, bool]] = []
 	for inline in inlines:
 		if isinstance(inline, (slide_lib.native_model.Text, slide_lib.native_model.InlineCode)):
-			result.append((inline.value, "OpenDyslexic", bold, italic))
+			result.append((inline.value, slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+				bold, italic))
 		elif isinstance(inline, slide_lib.native_model.Break):
 			result.append(("\n", "", False, False))
 		elif isinstance(inline, slide_lib.native_model.Strong):
@@ -261,7 +262,8 @@ def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: boo
 			result.extend(_styled_tokens(inline.children, bold, True, link_url))
 		elif isinstance(inline, slide_lib.native_model.Link):
 			literal = visible_text(inline.children) == inline.url
-			family = "PT Sans Narrow" if literal else "OpenDyslexic"
+			family = "PT Sans Narrow" if literal else \
+				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
 			for text, _family, child_bold, child_italic in _styled_tokens(inline.children, bold, italic, inline.url):
 				result.append((text, "" if text == "\n" else family, child_bold, child_italic))
 	return tuple(result)

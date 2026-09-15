@@ -39,8 +39,8 @@ def deck() -> model.LayoutDeck:
 		primitives.PlaceholderProperties(primitives.StyleRole.OUTLINE, frame_text()))
 	topology = primitives.PlaceholderTopology("one-panel", (slot.topology_member(),))
 	identity = model.LayoutIdentity("one-panel", topology)
-	typography = primitives.Typography(primitives.StyleRole.OUTLINE, "OpenDyslexic", 28.0, 28.0, 24.0)
-	paragraph = content.TextParagraph((content.TextRun("Body", content.RunStyle("OpenDyslexic", "ink")),),
+	typography = primitives.Typography(primitives.StyleRole.OUTLINE, "Atkinson Hyperlegible Next", 28.0, 28.0, 24.0)
+	paragraph = content.TextParagraph((content.TextRun("Body", content.RunStyle("Atkinson Hyperlegible Next", "ink")),),
 		typography, primitives.ParagraphProperties(primitives.HorizontalAlignment.START, 0.0, 0.0,
 			36.4, 0.0, 0.0, 0.0, ()))
 	item = model.LayoutObject("body", primitives.PresentationRole.OUTLINE,
@@ -163,7 +163,7 @@ def test_linked_text_nests_destination_inside_its_styled_span() -> None:
 	"""LibreOffice receives a visible linked label within its resolved text style."""
 	layout_deck = deck()
 	item = layout_deck.slides[0].objects[0]
-	linked_run = content.TextRun("Course website", content.RunStyle("OpenDyslexic", "24578F",
+	linked_run = content.TextRun("Course website", content.RunStyle("Atkinson Hyperlegible Next", "24578F",
 		underline=True, link_url="https://example.test/course"))
 	paragraph = dataclasses.replace(item.content.paragraphs[0], inlines=(linked_run,))
 	updated_item = dataclasses.replace(item, content=content.TextContent((paragraph,)))
@@ -228,6 +228,39 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 		properties[f"{{{exporter.PRESENTATION_NS}}}display-footer"],
 		properties[f"{{{exporter.PRESENTATION_NS}}}display-date-time"]) == (
 		"true", "true", "false", "false", "false")
+
+
+def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
+	"""LibreOffice receives the dark transition as a page style and the flourish as a vector."""
+	source_path = tmp_path / "closer.djot"
+	source_path.write_text("=== layout: section\n\n# THE END\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
+	root = defusedxml.ElementTree.fromstring(exporter._content_xml(
+		plan, theme, exporter._layout_names(plan), {}))
+	page = root.find(f".//{{{exporter.DRAW_NS}}}page")
+	page_style_name = page.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
+	page_style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page_style_name)
+	properties = page_style.find(f"{{{exporter.STYLE_NS}}}drawing-page-properties").attrib
+	star = next(shape for shape in page.findall(f"{{{exporter.DRAW_NS}}}custom-shape")
+		if shape.find(f"{{{exporter.DRAW_NS}}}enhanced-geometry").attrib[
+			f"{{{exporter.DRAW_NS}}}type"] == "star5")
+	star_style_name = star.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
+	star_style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == star_style_name)
+	star_properties = star_style.find(f"{{{exporter.STYLE_NS}}}graphic-properties").attrib
+	rounded_rectangles = tuple(page.findall(f"{{{exporter.DRAW_NS}}}rect"))
+	assert (properties[f"{{{exporter.DRAW_NS}}}fill"],
+		properties[f"{{{exporter.DRAW_NS}}}fill-color"],
+		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"]) == (
+		"solid", f"#{theme.gradient_start_color}", "false")
+	assert star.find(f"{{{exporter.SVG_NS}}}title") is None
+	assert star_properties[f"{{{exporter.DRAW_NS}}}opacity"] == "100%"
+	assert rounded_rectangles and all(
+		f"{{{exporter.DRAW_NS}}}corner-radius" in rectangle.attrib
+		for rectangle in rounded_rectangles)
 
 
 def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathlib.Path) -> None:

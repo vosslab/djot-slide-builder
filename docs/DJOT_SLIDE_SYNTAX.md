@@ -62,9 +62,9 @@ ODP import preserves all source slides in order and emits `hidden: true` for hid
 ## Heading placement
 
 `#` is the level-one slide title in title-bearing layouts.  In `section`, it is instead the centered
-text in that layout's only outline box.  `##` is a subtitle on `title-slide` and `section`; inside a
-named content slot, it is that slot's optional local heading.  Other heading levels have no native
-slide destination.
+text in that layout's only outline box on the dark transition surface.  `##` is a subtitle on
+`title-slide` and `section`; inside a named content slot, it is that slot's optional local heading.
+Other heading levels have no native slide destination.
 
 ## Layout catalog
 
@@ -78,7 +78,7 @@ required named slots still appear where listed.
 | `title-only` | Title Only, `AUTOLAYOUT_TITLE_ONLY` | none | H1 plus ordinary root body | A title introduces flexible editable text, lists, component images, or one table below when no panel layout fits. |
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
-| `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A section divider needs one prominent centered heading and little else. |
+| `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed transition needs one prominent centered heading and little else. |
 | `two-panels` | Title, 2 Content, `AUTOLAYOUT_TITLE_2CONTENT` | `left`, `right` | no | Two related ideas, figures, or comparisons belong side by side. |
 | `one-plus-two-panels` | Title, Content over 2 Content, `AUTOLAYOUT_TITLE_CONTENT_2CONTENT` | `left`, `top-right`, `bottom-right` | no | One broad idea pairs with two stacked supporting items. |
 | `two-plus-one-panels` | Title, 2 Content over Content, `AUTOLAYOUT_TITLE_2CONTENT_CONTENT` | `top-left`, `bottom-left`, `right` | no | Two stacked supporting items pair with one broad idea. |
@@ -96,6 +96,18 @@ blank region below.  It begins with one `#` heading; following root paragraphs, 
 images, or one table become ordinary editable native objects in source order.  That body region is
 not an invented content placeholder, so use `one-panel` when its native outline placeholder is
 the useful semantic surface.
+
+Use one exact closing heading to select the specialty closer while retaining the `section` layout:
+
+```djot
+=== layout: section
+
+# THE END
+```
+
+The closer renders the words as two giant centered editable text lines. A native LibreOffice vector
+star sits inside the D; it is decoration rather than a font character. Every authored character in
+the ODP and derived PDF remains a font-backed glyph. The layout never rasterizes lettering.
 
 ## Teaching content
 

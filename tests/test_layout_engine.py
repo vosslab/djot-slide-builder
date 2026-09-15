@@ -174,26 +174,41 @@ def test_unsupported_source_still_fails_at_the_validation_boundary(tmp_path: pat
 def test_title_slide_uses_native_master_frames_and_centered_text(tmp_path: pathlib.Path) -> None:
 	"""Title Slide uses its native title and outline frames with centered text."""
 	result = compile_source(tmp_path, "=== layout: title-slide\n\n# Genetics\n\n## Week one")
-	objects = {item.placeholder_kind: item for item in result.plan.slides[0].objects}
+	items = result.plan.slides[0].objects
+	objects = {item.placeholder_kind: item for item in items}
 	title = objects[slide_lib.layout_primitives.PlaceholderKind.TITLE]
 	subtitle = objects[slide_lib.layout_primitives.PlaceholderKind.SUBTITLE]
+	decorations = tuple(item for item in items
+		if isinstance(item.content, slide_lib.layout_content.ShapeContent))
 	assert tuple((item.frame_text.vertical_alignment,
 		item.content.paragraphs[0].properties.horizontal_alignment) for item in (title, subtitle)) == (
 		(slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
 			slide_lib.layout_primitives.HorizontalAlignment.CENTER),
 		(slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
 			slide_lib.layout_primitives.HorizontalAlignment.CENTER))
+	assert decorations and all(item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
+		for item in decorations)
 
 
-def test_section_uses_native_master_outline_frame_and_centered_text(tmp_path: pathlib.Path) -> None:
-	"""Centered Text uses its native outline frame for both section heading lines."""
+def test_section_uses_a_centered_transition_surface(tmp_path: pathlib.Path) -> None:
+	"""A section keeps editable Centered Text inside its layout-owned transition card."""
 	result = compile_source(tmp_path, "=== layout: section\n\n# Unit one\n\n## Central question")
-	section = result.plan.slides[0].objects[0]
+	slide = result.plan.slides[0]
+	section = next(item for item in slide.objects if item.object_id == "section")
+	frame = next(item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.ShapeContent))
 	assert (section.frame_text.vertical_alignment,
 		tuple(paragraph.properties.horizontal_alignment for paragraph in section.content.paragraphs)) == (
 		slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
 		(slide_lib.layout_primitives.HorizontalAlignment.CENTER,
 			slide_lib.layout_primitives.HorizontalAlignment.CENTER))
+	assert section.rectangle.y + section.rectangle.height / 2 == \
+		slide_lib.layout_primitives.LOGICAL_SLIDE_HEIGHT / 2
+	assert (slide.surface.background_role, slide.surface.show_master_objects,
+		frame.content.kind, frame.origin) == (
+		slide_lib.layout_primitives.StyleRole.TRANSITION, False,
+		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
 
 
 @pytest.mark.parametrize("source", (
@@ -212,7 +227,7 @@ def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
 		tmp_path: pathlib.Path) -> None:
 	"""A dense standard cell absorbs capacity recovery after the independently fitting title."""
 	result = compile_source(tmp_path, "=== layout: one-panel\n\n# " + "long title " * 20 +
-		"\n\n@body\n\n" + "body " * 120)
+		"\n\n@body\n\n" + "body " * 200)
 	title = next(item for item in result.plan.slides[0].objects
 		if item.placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.TITLE)
 	diagnostic = result.capacity_diagnostics[0]
@@ -225,9 +240,26 @@ def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
 def test_section_projection_preserves_plain_text_spacing(tmp_path: pathlib.Path) -> None:
 	"""A section heading remains one editable text run with its authored spaces."""
 	result = compile_source(tmp_path, "=== layout: section\n\n# Instructor Information")
-	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
+	text = next(item.content for item in result.plan.slides[0].objects
+		if isinstance(item.content, slide_lib.layout_content.TextContent))
+	paragraph = text.paragraphs[0]
 	assert tuple(run.text for run in paragraph.inlines
 		if isinstance(run, slide_lib.layout_content.TextRun)) == ("Instructor Information",)
+
+
+def test_the_end_section_is_large_two_line_text_with_a_native_star(tmp_path: pathlib.Path) -> None:
+	"""The recurring closer stays editable while its vector star supplies the flourish."""
+	slide = compile_source(tmp_path, "=== layout: section\n\n# THE END").plan.slides[0]
+	text = next(item.content for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.TextContent))
+	lines = tuple("".join(run.text for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun)) for paragraph in text.paragraphs)
+	star = next(item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.ShapeContent) and
+		item.content.kind is slide_lib.layout_primitives.ShapeKind.STAR)
+	assert lines == ("THE", "END")
+	assert text.paragraphs[0].typography.selected_size_pt >= 100
+	assert star.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
 
 
 def test_nonempty_notes_reveals_and_authored_content_remain_on_the_source_slide(tmp_path: pathlib.Path) -> None:
@@ -264,8 +296,8 @@ Answer: D
 	objects = result.plan.slides[0].objects
 	answer = next(item for item in objects if item.object_id == "answer")
 	choices = tuple(item for item in objects if item.object_id.startswith("question-choices-"))
-	assert len(choices) == 2
-	assert all(isinstance(item.content, slide_lib.layout_content.TextContent) for item in choices)
+	assert choices and all(isinstance(item.content, slide_lib.layout_content.TextContent)
+		for item in choices)
 	assert all(choice.rectangle.x + choice.rectangle.width <= answer.rectangle.x or
 		answer.rectangle.x + answer.rectangle.width <= choice.rectangle.x or
 		choice.rectangle.y + choice.rectangle.height <= answer.rectangle.y or

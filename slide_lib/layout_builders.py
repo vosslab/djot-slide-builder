@@ -1,8 +1,6 @@
 """Build immutable physical objects from resolved layout contracts and measurements."""
 
 import dataclasses
-import math
-import re
 
 import slide_lib.capacity_report
 import slide_lib.layout_measurement
@@ -10,6 +8,7 @@ import slide_lib.layout_registry
 import slide_lib.editable_text
 import slide_lib.layout_content
 import slide_lib.layout_model
+import slide_lib.layout_object_builders
 import slide_lib.layout_primitives
 import slide_lib.multiple_choice_layout
 import slide_lib.native_model
@@ -21,6 +20,11 @@ ACCENT = "24578F"
 MUTED = "526176"
 WHITE = "FFFFFF"
 QUIZ_FLOOR_SIZE_PT = slide_lib.multiple_choice_layout.QUESTION_FLOOR_SIZE_PT
+SECTION_TITLE_SIZE_PT = 48.0
+SECTION_SUBTITLE_SIZE_PT = 30.0
+END_TITLE_SIZE_PT = 156.0
+END_TITLE_FLOOR_SIZE_PT = 110.0
+END_LINE_SPACING_EM = 1.06
 
 def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
@@ -172,9 +176,10 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 		return _section_slide(source, headings, theme, index, contract, session)
 	slots: list[slide_lib.layout_model.LayoutSlot] = []
 	objects: list[slide_lib.layout_model.LayoutObject] = []
+	is_title_slide = contract.name == "title-slide"
+	text_order = 2 if is_title_slide and len(headings) > 1 else 0
 	if headings:
 		title = headings[0]
-		is_title_slide = contract.name == "title-slide"
 		rectangle = _master_rectangle(theme.title_frame, theme) if is_title_slide else \
 			slide_lib.layout_primitives.LogicalRectangle(110, 180, 1060, 250)
 		frame = dataclasses.replace(_frame_text(),
@@ -185,8 +190,9 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 		slots.append(_slot("title", slide_lib.layout_primitives.PlaceholderKind.TITLE,
 			slide_lib.layout_primitives.PresentationRole.TITLE, rectangle, 0, frame,
 			slide_lib.layout_primitives.StyleRole.TITLE))
-		objects.append(_text_object("title", title, rectangle, size,
-			theme.title_floor_size_pt, slide_lib.layout_primitives.StyleRole.TITLE, frame, "title", 0,
+		objects.append(slide_lib.layout_object_builders.text_object("title", title, rectangle, size,
+			theme.title_floor_size_pt, slide_lib.layout_primitives.StyleRole.TITLE, frame, "title",
+			text_order,
 			slide_lib.layout_primitives.PlaceholderKind.TITLE, theme, bold=True, session=session))
 	if len(headings) > 1:
 		rectangle = _master_rectangle(theme.outline_frame, theme)
@@ -198,9 +204,12 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 		slots.append(_slot("subtitle", slide_lib.layout_primitives.PlaceholderKind.SUBTITLE,
 			slide_lib.layout_primitives.PresentationRole.SUBTITLE, rectangle, len(slots), frame,
 			slide_lib.layout_primitives.StyleRole.SUBTITLE))
-		objects.append(_text_object("subtitle", headings[1:], rectangle, size,
+		objects.append(slide_lib.layout_object_builders.text_object("subtitle", headings[1:], rectangle, size,
 			theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.SUBTITLE, frame, "subtitle",
-			len(objects), slide_lib.layout_primitives.PlaceholderKind.SUBTITLE, theme, session=session))
+			text_order + 1, slide_lib.layout_primitives.PlaceholderKind.SUBTITLE, theme,
+			session=session))
+	if is_title_slide and len(headings) > 1:
+		objects = _title_slide_decorations(theme) + objects
 	return _slide(source, index, contract, slots, objects)
 
 def _title_only_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide, theme: slide_lib.presentation_theme.PresentationTheme, index: int,
@@ -216,7 +225,7 @@ def _title_only_slide(deck: slide_lib.native_model.Deck, source: slide_lib.nativ
 		theme.standard_title_size_pt, theme.title_floor_size_pt, theme, contract.name, "title", slide_lib.capacity_report.CapacityCause.TITLE, True, session)
 	slots = [_slot("title", slide_lib.layout_primitives.PlaceholderKind.TITLE,
 		slide_lib.layout_primitives.PresentationRole.TITLE, title_rectangle, 0, frame, slide_lib.layout_primitives.StyleRole.TITLE)]
-	objects = [_text_object("title", title, title_rectangle, title_size, theme.title_floor_size_pt,
+	objects = [slide_lib.layout_object_builders.text_object("title", title, title_rectangle, title_size, theme.title_floor_size_pt,
 		slide_lib.layout_primitives.StyleRole.TITLE, frame, "title", 0, slide_lib.layout_primitives.PlaceholderKind.TITLE, theme, bold=True, session=session)]
 	body = tuple(block for block in source.blocks if block is not title)
 	if body:
@@ -236,23 +245,72 @@ def _master_rectangle(frame: slide_lib.presentation_theme.FrameGeometry,
 		frame.x_cm * logical_per_cm, frame.y_cm * logical_per_cm,
 		frame.width_cm * logical_per_cm, frame.height_cm * logical_per_cm)
 
+
+def _title_slide_decorations(theme: slide_lib.presentation_theme.PresentationTheme
+		) -> list[slide_lib.layout_model.LayoutObject]:
+	"""Frame title-slide metadata with restrained theme-derived native shapes."""
+	outline = _master_rectangle(theme.outline_frame, theme)
+	card = slide_lib.layout_primitives.LogicalRectangle(
+		outline.x + 64, outline.y + 64, outline.width - 128, outline.height - 128)
+	title = _master_rectangle(theme.title_frame, theme)
+	accent = slide_lib.layout_primitives.LogicalRectangle(
+		title.x + (title.width - 140) / 2, title.y + title.height + 24, 140, 7)
+	return [
+		_decorative_shape("title-metadata-frame", card,
+			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+			slide_lib.layout_primitives.StyleRole.DECORATION,
+			slide_lib.layout_primitives.StyleRole.TRANSITION,
+			slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 22, 0, 2),
+		_decorative_shape("title-accent", accent,
+			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+			slide_lib.layout_primitives.StyleRole.ACCENT,
+			slide_lib.layout_primitives.StyleRole.ACCENT,
+			slide_lib.layout_primitives.LinePattern.NONE, 1, 4, 1, 3),
+	]
+
+
+def _decorative_shape(object_id: str,
+		rectangle: slide_lib.layout_primitives.LogicalRectangle,
+		kind: slide_lib.layout_primitives.ShapeKind,
+		fill_role: slide_lib.layout_primitives.StyleRole,
+		line_role: slide_lib.layout_primitives.StyleRole,
+		line_pattern: slide_lib.layout_primitives.LinePattern,
+		line_width_pt: float, corner_radius_pt: float, z_index: int,
+		reading_order: int) -> slide_lib.layout_model.LayoutObject:
+	"""Build one editable layout-owned decoration outside presentation members."""
+	style = slide_lib.layout_content.ShapeStyle(fill_role, line_role, line_width_pt,
+		line_pattern, corner_radius_pt)
+	content = slide_lib.layout_content.ShapeContent(kind, style,
+		slide_lib.layout_primitives.ObjectAccessibility(decorative=True))
+	return slide_lib.layout_model.LayoutObject(object_id,
+		slide_lib.layout_primitives.PresentationRole.GRAPHIC,
+		slide_lib.layout_primitives.StyleRole.DECORATION, rectangle,
+		slide_lib.layout_primitives.ObjectLayer.DECORATION, z_index, reading_order, content,
+		origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
+
 def _section_slide(source: slide_lib.native_model.Slide,
 		headings: tuple[slide_lib.native_model.Heading, ...],
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
-	"""Put mixed title/subtitle typography in LibreOffice's one Centered Text member."""
-	rectangle = _master_rectangle(theme.outline_frame, theme)
+	"""Build one centered transition card in LibreOffice's Centered Text member."""
+	if len(headings) == 1 and slide_lib.layout_measurement.visible_text(
+			headings[0].inlines) == "THE END":
+		return _end_slide(source, headings[0], theme, index, contract, session)
+	rectangle = slide_lib.layout_primitives.LogicalRectangle(150, 235, 980, 330)
 	frame = dataclasses.replace(_frame_text(),
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
+	transition_theme = dataclasses.replace(theme,
+		standard_title_size_pt=SECTION_TITLE_SIZE_PT,
+		ordinary_body_size_pt=SECTION_SUBTITLE_SIZE_PT)
 	sizes = slide_lib.layout_measurement.select_centered_heading_sizes(headings[0], headings[1:],
-		rectangle, theme, contract.name, session)
+		rectangle, transition_theme, contract.name, session)
 	subtitle_size = sizes.subtitle_size_pt if sizes.subtitle_size_pt is not None else \
 		theme.ordinary_body_size_pt
-	title = _text_content((headings[0],), sizes.title_size_pt,
+	title = slide_lib.layout_object_builders.text_content((headings[0],), sizes.title_size_pt,
 		theme.title_floor_size_pt, slide_lib.layout_primitives.StyleRole.TITLE,
 		FOREGROUND, rectangle.width, theme, bold=True, session=session)
-	subtitle = _text_content(headings[1:], subtitle_size,
+	subtitle = slide_lib.layout_object_builders.text_content(headings[1:], subtitle_size,
 		theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.SUBTITLE,
 		FOREGROUND, rectangle.width, theme, session=session)
 	paragraphs = tuple(dataclasses.replace(paragraph, properties=dataclasses.replace(
@@ -266,10 +324,99 @@ def _section_slide(source: slide_lib.native_model.Slide,
 	item = slide_lib.layout_model.LayoutObject("section",
 		slide_lib.layout_primitives.PresentationRole.OUTLINE,
 		slide_lib.layout_primitives.StyleRole.BODY, rectangle,
-		slide_lib.layout_primitives.ObjectLayer.LAYOUT, 0, 0, content, frame,
+		slide_lib.layout_primitives.ObjectLayer.LAYOUT, 1, 0, content, frame,
 		"title", "title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
-		headings[0].location, _reveal_targets("section", headings, 0))
-	return _slide(source, index, contract, [slot], [item])
+		headings[0].location,
+		slide_lib.layout_object_builders.reveal_targets("section", headings, 0))
+	border = _decorative_shape("section-frame",
+		slide_lib.layout_primitives.LogicalRectangle(105, 190, 1070, 420),
+		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_primitives.StyleRole.TRANSITION,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
+	surface = slide_lib.layout_primitives.SlideSurface(
+		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
+	return _slide(source, index, contract, [slot], [border, item], surface)
+
+
+def _end_slide(source: slide_lib.native_model.Slide,
+		title: slide_lib.native_model.Heading,
+		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
+		contract: slide_lib.layout_primitives.LayoutContract,
+		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
+	"""Build the two-line THE END closer with editable type and a vector star inside the D."""
+	rectangle = slide_lib.layout_primitives.LogicalRectangle(190, 130, 900, 600)
+	frame = dataclasses.replace(_frame_text(),
+		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
+	def fits(candidate: float) -> bool:
+		"""Keep both display lines inside their exact native frame."""
+		width = max(session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+			True, False, candidate, value) for value in ("THE", "END"))
+		line_spacing_pt = candidate * END_LINE_SPACING_EM
+		height = 2 * slide_lib.layout_measurement.point_height(line_spacing_pt, theme)
+		return width <= rectangle.width and slide_lib.layout_measurement.text_frame_fits(
+			height, slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
+	size = slide_lib.layout_measurement.largest_fitting_size(
+		END_TITLE_SIZE_PT, END_TITLE_FLOOR_SIZE_PT, fits)
+	if size is None:
+		raise slide_lib.capacity_report.PhysicalCapacityError(title.location, contract.name,
+			"title", END_TITLE_FLOOR_SIZE_PT,
+			slide_lib.capacity_report.CapacityCause.TITLE, END_TITLE_FLOOR_SIZE_PT)
+	the_heading = dataclasses.replace(title, inlines=(slide_lib.native_model.Text("THE"),))
+	end_heading = dataclasses.replace(title, inlines=(slide_lib.native_model.Text("END"),))
+	content = slide_lib.layout_object_builders.text_content(
+		(the_heading, end_heading), size, END_TITLE_FLOOR_SIZE_PT,
+		slide_lib.layout_primitives.StyleRole.TITLE, WHITE, rectangle.width,
+		theme, bold=True, session=session)
+	line_spacing_pt = size * END_LINE_SPACING_EM
+	content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph,
+		properties=dataclasses.replace(paragraph.properties,
+			horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER,
+			space_after_pt=0, line_spacing_pt=line_spacing_pt))
+		for paragraph in content.paragraphs))
+	slot = _slot("title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
+		slide_lib.layout_primitives.PresentationRole.OUTLINE, rectangle, 0, frame,
+		slide_lib.layout_primitives.StyleRole.TITLE)
+	text = slide_lib.layout_model.LayoutObject("end-title",
+		slide_lib.layout_primitives.PresentationRole.OUTLINE,
+		slide_lib.layout_primitives.StyleRole.TITLE, rectangle,
+		slide_lib.layout_primitives.ObjectLayer.LAYOUT, 2, 0, content, frame,
+		"title", "title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
+		title.location)
+	outer = _decorative_shape("end-outer-frame",
+		slide_lib.layout_primitives.LogicalRectangle(110, 40, 1060, 720),
+		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_primitives.StyleRole.TRANSITION,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.LinePattern.SOLID, 3, 54, 0, 1)
+	inner = _decorative_shape("end-inner-frame",
+		slide_lib.layout_primitives.LogicalRectangle(155, 75, 970, 650),
+		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_primitives.StyleRole.ACCENT,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 44, 1, 2)
+	total_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+		True, False, size, "END")
+	prefix_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+		True, False, size, "EN")
+	d_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+		True, False, size, "D")
+	text_left = rectangle.x + (rectangle.width - total_width) / 2
+	line_height = slide_lib.layout_measurement.point_height(line_spacing_pt, theme)
+	star_size = 34.0
+	star_center_x = text_left + prefix_width + d_width / 2
+	star = _decorative_shape("end-star",
+			slide_lib.layout_primitives.LogicalRectangle(
+				star_center_x - star_size / 2,
+				rectangle.y + rectangle.height / 2 + line_height / 2 - 28 - star_size / 2,
+			star_size, star_size),
+		slide_lib.layout_primitives.ShapeKind.STAR,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 3, 3)
+	surface = slide_lib.layout_primitives.SlideSurface(
+		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
+	return _slide(source, index, contract, [slot], [outer, inner, text, star], surface)
 
 def _content_area(source: slide_lib.native_model.Slide, title: slide_lib.native_model.Heading | None,
 		theme: slide_lib.presentation_theme.PresentationTheme, contract: slide_lib.layout_primitives.LayoutContract,
@@ -299,7 +446,7 @@ def _content_area(source: slide_lib.native_model.Slide, title: slide_lib.native_
 			slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT)
 	rectangle, content = geometry
 	frame = _frame_text()
-	title_object = _text_object("title", title, rectangle, size,
+	title_object = slide_lib.layout_object_builders.text_object("title", title, rectangle, size,
 		theme.title_floor_size_pt, slide_lib.layout_primitives.StyleRole.TITLE, frame, "title", 0,
 		slide_lib.layout_primitives.PlaceholderKind.TITLE, theme, bold=True, session=session)
 	return content, title_object
@@ -332,7 +479,8 @@ def _cell_objects(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mode
 		height = slide_lib.layout_measurement.paragraph_height(
 			heading.inlines, size, measure.wrapping_extent, theme, bold=True, session=session)
 		heading_rect = slide_lib.layout_measurement.heading_rectangle(rectangle, height)
-		objects.append(_text_object(f"{slot_name}-heading", heading, heading_rect, size,
+		objects.append(slide_lib.layout_object_builders.text_object(
+			f"{slot_name}-heading", heading, heading_rect, size,
 			theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.LOCAL_HEADING, frame,
 			slot_name, order, slide_lib.layout_primitives.PlaceholderKind.NONE, theme, bold=True, session=session))
 		rectangle = slide_lib.layout_measurement.remaining_after_heading(rectangle, height)
@@ -343,7 +491,8 @@ def _cell_objects(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mode
 	text_blocks = tuple(block for block in content_blocks if isinstance(block,
 		(slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
 	if tables and len(content_blocks) == 1:
-		objects.append(_table_object(f"{slot_name}-table", tables[0], rectangle, theme, contract.name,
+		objects.append(slide_lib.layout_object_builders.table_object(
+			f"{slot_name}-table", tables[0], rectangle, theme, contract.name,
 			slot_name, order + len(objects), frame, session=session))
 		return objects
 	if tables:
@@ -356,7 +505,8 @@ def _cell_objects(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mode
 		width = (rectangle.width - 12 * (len(images) - 1)) / len(images)
 		for image_index, image in enumerate(images):
 			allocation = slide_lib.layout_primitives.LogicalRectangle(rectangle.x + image_index * (width + 12), rectangle.y, width, rectangle.height)
-			objects.append(_picture_object(f"{slot_name}-image-{image_index}", deck, image, allocation, slot_name,
+			objects.append(slide_lib.layout_object_builders.picture_object(
+				f"{slot_name}-image-{image_index}", deck, image, allocation, slot_name,
 				order + len(objects)))
 		return objects
 	if text_blocks:
@@ -374,7 +524,8 @@ def _cell_objects(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mode
 		size = slide_lib.layout_measurement.select_size(items, slide_lib.layout_measurement.text_frame_measurement(rectangle), theme.ordinary_body_size_pt,
 			theme.body_floor_size_pt, theme, text_blocks[0].location, contract.name, slot_name, session,
 			slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST)
-		objects.append(_text_object(slot_name, _paragraph_block(text_blocks), rectangle, size,
+		objects.append(slide_lib.layout_object_builders.text_object(
+			slot_name, _paragraph_block(text_blocks), rectangle, size,
 			theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.OUTLINE, frame, slot_name,
 			order + len(objects), slide_lib.layout_primitives.PlaceholderKind.OUTLINE if occupy_placeholder else
 			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
@@ -393,14 +544,17 @@ def _ordered_flow(deck: slide_lib.native_model.Deck, blocks: tuple[slide_lib.nat
 		allocation = slide_lib.layout_primitives.LogicalRectangle(rectangle.x, y, rectangle.width, height)
 		object_id = f"{slot}-{len(objects)}"
 		if isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
-			objects.append(_text_object(object_id, block, allocation, size, theme.body_floor_size_pt,
+			objects.append(slide_lib.layout_object_builders.text_object(
+				object_id, block, allocation, size, theme.body_floor_size_pt,
 				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, slot, order + len(objects),
 				slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
 		elif isinstance(block, slide_lib.native_model.Table):
-			objects.append(_table_object(object_id, block, allocation, theme, layout, slot, order + len(objects), frame,
+			objects.append(slide_lib.layout_object_builders.table_object(
+				object_id, block, allocation, theme, layout, slot, order + len(objects), frame,
 				selected_size=size, session=session))
 		elif isinstance(block, slide_lib.native_model.Image):
-			objects.append(_picture_object(object_id, deck, block, allocation, slot, order + len(objects)))
+			objects.append(slide_lib.layout_object_builders.picture_object(
+				object_id, deck, block, allocation, slot, order + len(objects)))
 		else:
 			raise ValueError(f"{block.location.path}:{block.location.line}: unsupported ordered flow block")
 		y += height + 12
@@ -418,9 +572,11 @@ def _mixed_flow(deck: slide_lib.native_model.Deck, text_blocks: tuple[slide_lib.
 	for item, height in zip(allocation.blocks, allocation.heights):
 		item_rect = slide_lib.layout_primitives.LogicalRectangle(rectangle.x, y, rectangle.width, height)
 		if isinstance(item, slide_lib.native_model.Image):
-			objects.append(_picture_object(f"{slot}-image-{len(objects)}", deck, item, item_rect, slot, order + len(objects)))
+			objects.append(slide_lib.layout_object_builders.picture_object(
+				f"{slot}-image-{len(objects)}", deck, item, item_rect, slot, order + len(objects)))
 		else:
-			objects.append(_text_object(f"{slot}-text-{len(objects)}", item, item_rect, allocation.size_pt,
+			objects.append(slide_lib.layout_object_builders.text_object(
+				f"{slot}-text-{len(objects)}", item, item_rect, allocation.size_pt,
 				theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.OUTLINE, frame, slot,
 				order + len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
 		y += height + 12
@@ -527,7 +683,8 @@ def _gallery(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.S
 	width = (content.width - 18 * (len(images) - 1)) / len(images)
 	for image_index, image in enumerate(images):
 		allocation = slide_lib.layout_primitives.LogicalRectangle(content.x + image_index * (width + 18), content.y, width, content.height)
-		pictures.append(_picture_object(f"gallery-image-{image_index}", deck, image, allocation,
+		pictures.append(slide_lib.layout_object_builders.picture_object(
+			f"gallery-image-{image_index}", deck, image, allocation,
 			"gallery", len(objects) + len(pictures)))
 	slot = _occupy_primary_slot("gallery", content, 1 if title else 0, pictures)
 	objects.extend(pictures)
@@ -562,7 +719,8 @@ def _multiple_choice(deck: slide_lib.native_model.Deck, source: slide_lib.native
 		slide_lib.layout_primitives.StyleRole.OUTLINE), _slot("answer",
 		slide_lib.layout_primitives.PlaceholderKind.OBJECT, slide_lib.layout_primitives.PresentationRole.OBJECT,
 		answer_rect, 1, answer_frame, slide_lib.layout_primitives.StyleRole.ACCENT)]
-	text = _text_content(answer.blocks, answer_size, theme.body_floor_size_pt,
+	text = slide_lib.layout_object_builders.text_content(
+		answer.blocks, answer_size, theme.body_floor_size_pt,
 		slide_lib.layout_primitives.StyleRole.ACCENT, WHITE, popup_width - 36, theme,
 		bold=True, session=session)
 	accessibility = slide_lib.layout_primitives.ObjectAccessibility("Answer", "Multiple-choice answer popup")
@@ -573,7 +731,8 @@ def _multiple_choice(deck: slide_lib.native_model.Deck, source: slide_lib.native
 	objects.append(slide_lib.layout_model.LayoutObject("answer", slide_lib.layout_primitives.PresentationRole.OBJECT,
 		slide_lib.layout_primitives.StyleRole.ACCENT, answer_rect, slide_lib.layout_primitives.ObjectLayer.CONTENT,
 		len(objects), len(objects), shape, answer_frame, "answer", "answer",
-		slide_lib.layout_primitives.PlaceholderKind.OBJECT, answer.location, _reveal_targets("answer", answer.blocks, len(objects))))
+		slide_lib.layout_primitives.PlaceholderKind.OBJECT, answer.location,
+		slide_lib.layout_object_builders.reveal_targets("answer", answer.blocks, len(objects))))
 	return _slide(source, index, contract, slots, objects)
 
 def _multiple_choice_question(deck: slide_lib.native_model.Deck,
@@ -614,7 +773,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 	if parts.image is not None:
 		allocation = slide_lib.layout_primitives.LogicalRectangle(
 			rectangle.x, y, rectangle.width, image_height)
-		objects.append(_picture_object("question-image", deck, parts.image, allocation,
+		objects.append(slide_lib.layout_object_builders.picture_object(
+			"question-image", deck, parts.image, allocation,
 			"question", len(objects)))
 		y += image_height + content_gap
 	if parts.context_labels:
@@ -631,7 +791,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 				allocation = slide_lib.layout_primitives.LogicalRectangle(
 					rectangle.x + column * (context_width + context_gap), label_y,
 					context_width, height)
-				objects.append(_text_object(f"question-context-{start + column + 1}",
+				objects.append(slide_lib.layout_object_builders.text_object(
+					f"question-context-{start + column + 1}",
 					block, allocation, size, QUIZ_FLOOR_SIZE_PT,
 					slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question",
 					len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE,
@@ -641,7 +802,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 			allocation = slide_lib.layout_primitives.LogicalRectangle(
 				rectangle.x, label_y,
 				leading_width, prompt.prose_height)
-			objects.append(_text_object("question-context-prose", parts.context_prose,
+			objects.append(slide_lib.layout_object_builders.text_object(
+				"question-context-prose", parts.context_prose,
 				allocation, size, QUIZ_FLOOR_SIZE_PT,
 				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question",
 				len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE,
@@ -650,7 +812,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 			allocation = slide_lib.layout_primitives.LogicalRectangle(
 				rectangle.x + leading_width + leading_gap, y,
 				leading_width, prompt.stem_height)
-			objects.append(_text_object("question-stem", parts.stem, allocation, size,
+			objects.append(slide_lib.layout_object_builders.text_object(
+				"question-stem", parts.stem, allocation, size,
 				QUIZ_FLOOR_SIZE_PT,
 				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 				slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
@@ -658,7 +821,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 	elif parts.context_prose:
 		allocation = slide_lib.layout_primitives.LogicalRectangle(
 			rectangle.x, y, rectangle.width, prompt.prose_height)
-		objects.append(_text_object("question-context-prose", parts.context_prose,
+		objects.append(slide_lib.layout_object_builders.text_object(
+			"question-context-prose", parts.context_prose,
 			allocation, size,
 			QUIZ_FLOOR_SIZE_PT,
 			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
@@ -669,7 +833,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 	if not parts.context_labels and parts.stem:
 		allocation = slide_lib.layout_primitives.LogicalRectangle(
 			rectangle.x, y, rectangle.width, prompt.stem_height)
-		objects.append(_text_object("question-stem", parts.stem, allocation, size,
+		objects.append(slide_lib.layout_object_builders.text_object(
+			"question-stem", parts.stem, allocation, size,
 			QUIZ_FLOOR_SIZE_PT,
 			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
@@ -685,7 +850,8 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 	for column, (blocks, height, x, width) in enumerate(columns):
 		allocation = slide_lib.layout_primitives.LogicalRectangle(
 			x, y, width, height)
-		objects.append(_text_object(f"question-choices-{column + 1}", blocks, allocation,
+		objects.append(slide_lib.layout_object_builders.text_object(
+			f"question-choices-{column + 1}", blocks, allocation,
 			size, QUIZ_FLOOR_SIZE_PT,
 			slide_lib.layout_primitives.StyleRole.OUTLINE, frame, "question", len(objects),
 			slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
@@ -697,173 +863,6 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 		placeholder_kind=slide_lib.layout_primitives.PlaceholderKind.OUTLINE)
 	answer_y = rectangle.y + rectangle.height - answer_height
 	return objects, popup_column, left_width, answer_size, answer_height, answer_y
-
-def _text_object(object_id: str, block: object, rectangle: slide_lib.layout_primitives.LogicalRectangle,
-		size: float, floor: float, role: slide_lib.layout_primitives.StyleRole,
-		frame: slide_lib.layout_primitives.FrameTextProperties, slot: str, order: int,
-		placeholder: slide_lib.layout_primitives.PlaceholderKind,
-		theme: slide_lib.presentation_theme.PresentationTheme, bold: bool = False,
-		session: slide_lib.layout_measurement.MeasurementSession | None = None) -> slide_lib.layout_model.LayoutObject:
-	"""Create one resolved editable text object with stable reveal identity."""
-	blocks = (block,) if isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
-		slide_lib.native_model.ListBlock)) else tuple(block)
-	measure = slide_lib.layout_measurement.text_frame_measurement(rectangle)
-	content = _text_content(blocks, size, floor, role, FOREGROUND,
-		measure.wrapping_extent, theme, bold, session)
-	if frame.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE:
-		content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph, properties=
-			dataclasses.replace(paragraph.properties, horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER)) for paragraph in content.paragraphs))
-	presentation = slot if placeholder is not slide_lib.layout_primitives.PlaceholderKind.NONE else None
-	role_value = slide_lib.layout_primitives.PresentationRole.TITLE if placeholder is slide_lib.layout_primitives.PlaceholderKind.TITLE else (
-		slide_lib.layout_primitives.PresentationRole.SUBTITLE if placeholder is slide_lib.layout_primitives.PlaceholderKind.SUBTITLE else slide_lib.layout_primitives.PresentationRole.OUTLINE)
-	location = block.location if hasattr(block, "location") else (
-		block[0].location if block else None)
-	return slide_lib.layout_model.LayoutObject(object_id, role_value, role, rectangle,
-		slide_lib.layout_primitives.ObjectLayer.LAYOUT if presentation else slide_lib.layout_primitives.ObjectLayer.CONTENT,
-		order, order, content, frame, slot, presentation, placeholder, location,
-		_reveal_targets(object_id, blocks, order))
-
-def _text_content(blocks: tuple[slide_lib.native_model.Block, ...], size: float, floor: float,
-		role: slide_lib.layout_primitives.StyleRole, color: str, width: float,
-		theme: slide_lib.presentation_theme.PresentationTheme,
-		bold: bool = False, session: slide_lib.layout_measurement.MeasurementSession | None = None) -> slide_lib.layout_content.TextContent:
-	"""Project supported inline/list semantics into fully resolved text runs."""
-	typography = slide_lib.layout_primitives.Typography(role, "OpenDyslexic", size, size, min(floor, size))
-	entries: list[tuple[tuple[slide_lib.native_model.Inline, ...], bool,
-		slide_lib.layout_content.ListMetadata | None]] = []
-	for block in blocks:
-		if isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph)):
-			entries.append((block.inlines, False, None))
-		elif isinstance(block, slide_lib.native_model.ListBlock):
-			for item in slide_lib.editable_text.project_list(block):
-				metadata = slide_lib.layout_content.ListMetadata(
-					slide_lib.layout_primitives.ListKind.ORDERED if item.ordered else slide_lib.layout_primitives.ListKind.UNORDERED,
-					item.level, item.start)
-				entries.append((item.inlines, True, metadata))
-	paragraphs: list[slide_lib.layout_content.TextParagraph] = []
-	for index, (inlines, listed, metadata) in enumerate(entries):
-		level = metadata.level if metadata is not None else 0
-		properties = slide_lib.layout_measurement.paragraph_properties(
-			inlines, size, width, theme, level, listed, index == len(entries) - 1,
-			bold, session=session)
-		available = width - (theme.list_levels[level].text_position if listed else 0.0)
-		paragraphs.append(slide_lib.layout_content.TextParagraph(
-			_fragment_runs(resolved_runs(inlines, color, bold), size, available, theme, session),
-			typography, properties, True, metadata))
-	result = slide_lib.layout_content.TextContent(tuple(paragraphs))
-	return result
-
-def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str, bold: bool = False,
-		italic: bool = False, link: str | None = None) -> tuple[slide_lib.layout_content.InlineContent, ...]:
-	"""Resolve recursive strong/emphasis/link styling before adapters receive runs."""
-	runs: list[slide_lib.layout_content.InlineContent] = []
-	for inline in inlines:
-		if isinstance(inline, slide_lib.native_model.Text):
-			style = slide_lib.layout_content.RunStyle("OpenDyslexic", color, bold=bold, italic=italic, link_url=link)
-			runs.append(slide_lib.layout_content.TextRun(inline.value, style))
-		elif isinstance(inline, slide_lib.native_model.InlineCode):
-			style = slide_lib.layout_content.RunStyle("OpenDyslexic", color, bold=bold, italic=italic, code=True, link_url=link)
-			runs.append(slide_lib.layout_content.TextRun(inline.value, style))
-		elif isinstance(inline, slide_lib.native_model.Break):
-			runs.append(slide_lib.layout_content.LineBreak())
-		elif isinstance(inline, slide_lib.native_model.Strong):
-			runs.extend(resolved_runs(inline.children, color, True, italic, link))
-		elif isinstance(inline, slide_lib.native_model.Emphasis):
-			runs.extend(resolved_runs(inline.children, color, bold, True, link))
-		elif isinstance(inline, slide_lib.native_model.Link):
-			literal = slide_lib.layout_measurement.visible_text(inline.children) == inline.url
-			for run in resolved_runs(inline.children, ACCENT, bold, italic, inline.url):
-				if isinstance(run, slide_lib.layout_content.TextRun):
-					style = slide_lib.layout_content.RunStyle("PT Sans Narrow" if literal else run.style.font_family,
-						run.style.foreground, True, run.style.bold, run.style.italic, run.style.code,
-						run.style.link_url, literal)
-					runs.append(slide_lib.layout_content.TextRun(run.text, style))
-				else:
-					runs.append(run)
-	return tuple(runs)
-
-def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], size: float,
-		width: float, theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib.layout_measurement.MeasurementSession | None = None) -> tuple[slide_lib.layout_content.InlineContent, ...]:
-	"""Emit exact-width, grapheme-safe break markers retained by both adapters."""
-	result: list[slide_lib.layout_content.InlineContent] = []
-	for inline in inlines:
-		if not isinstance(inline, slide_lib.layout_content.TextRun):
-			result.append(inline)
-			continue
-		style = inline.style
-		for token in re.findall(r"\s+|\S+", inline.text):
-			fragments = slide_lib.layout_measurement.fragment_text(token, style.font_family,
-				style.bold, style.italic, size, width, theme, session)
-			for index, fragment in enumerate(fragments):
-				if index:
-					result.append(slide_lib.layout_content.LineBreak())
-				if result and isinstance(result[-1], slide_lib.layout_content.TextRun) and result[-1].style == style:
-					result[-1] = dataclasses.replace(result[-1], text=result[-1].text + fragment)
-				else:
-					result.append(slide_lib.layout_content.TextRun(fragment, style))
-	return tuple(result)
-
-def _table_object(object_id: str, table: slide_lib.native_model.Table,
-		rectangle: slide_lib.layout_primitives.LogicalRectangle,
-		theme: slide_lib.presentation_theme.PresentationTheme, layout: str, slot: str, order: int,
-		frame: slide_lib.layout_primitives.FrameTextProperties,
-		selected_size: float | None = None,
-		session: slide_lib.layout_measurement.MeasurementSession | None = None) -> slide_lib.layout_model.LayoutObject:
-	"""Project a rectangular semantic table with resolved 28-to-24 point fitting."""
-	rows = ((table.headers, True),) if table.headers else ()
-	rows += tuple((row, False) for row in table.rows)
-	columns = len(rows[0][0])
-	size = selected_size if selected_size is not None else slide_lib.layout_measurement.select_table_size(table, rectangle,
-		theme.ordinary_body_size_pt, theme.body_floor_size_pt, theme, layout, slot, session)
-	typography = slide_lib.layout_primitives.Typography(slide_lib.layout_primitives.StyleRole.TABLE_BODY,
-		"OpenDyslexic", size, size, min(theme.body_floor_size_pt, size))
-	def row_content(cells: tuple[tuple[slide_lib.native_model.Inline, ...], ...], header: bool) -> slide_lib.layout_content.TableRow:
-		result = slide_lib.layout_content.TableRow(tuple(slide_lib.layout_content.TableCell(
-			(slide_lib.layout_content.TextParagraph(_fragment_runs(resolved_runs(cell, WHITE if header else FOREGROUND, header),
-				size, rectangle.width / columns - 12, theme, session), typography,
-				slide_lib.layout_measurement.paragraph_properties(cell, size, rectangle.width / columns - 12,
-				theme, terminal=True, session=session)),),
-			slide_lib.layout_primitives.Insets(slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
-				slide_lib.layout_measurement.TABLE_VERTICAL_PADDING,
-				slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
-				slide_lib.layout_measurement.TABLE_VERTICAL_PADDING), slide_lib.layout_primitives.VerticalAlignment.MIDDLE) for cell in cells))
-		return result
-	headers = (row_content(table.headers, True),) if table.headers else ()
-	body = tuple(row_content(row, False) for row in table.rows)
-	content = slide_lib.layout_content.TableContent(headers, body, tuple(rectangle.width / columns for _ in range(columns)),
-		tuple(rectangle.height / len(rows) for _ in rows), slide_lib.layout_content.TableStyle(
-			slide_lib.layout_primitives.StyleRole.TABLE_HEADER, slide_lib.layout_primitives.StyleRole.TABLE_BODY,
-			slide_lib.layout_primitives.StyleRole.ACCENT, 1, slide_lib.layout_primitives.LinePattern.SOLID))
-	return slide_lib.layout_model.LayoutObject(object_id, slide_lib.layout_primitives.PresentationRole.OUTLINE,
-		slide_lib.layout_primitives.StyleRole.BODY, rectangle, slide_lib.layout_primitives.ObjectLayer.CONTENT,
-		order, order, content, frame, slot, None, slide_lib.layout_primitives.PlaceholderKind.NONE, table.location)
-
-def _picture_object(object_id: str, deck: slide_lib.native_model.Deck,
-		image: slide_lib.native_model.Image,
-		allocation: slide_lib.layout_primitives.LogicalRectangle, slot: str,
-		order: int) -> slide_lib.layout_model.LayoutObject:
-	"""Resolve contained display geometry and accessibility before adapter projection."""
-	width, height = slide_lib.layout_measurement.image_size(deck, image)
-	# Stay one representable step within the allocation after proportional rounding.
-	scale = math.nextafter(min(allocation.width / width, allocation.height / height), 0.0)
-	display_width, display_height = width * scale, height * scale
-	display = slide_lib.layout_primitives.LogicalRectangle(
-		allocation.x + (allocation.width - display_width) / 2,
-		allocation.y + (allocation.height - display_height) / 2,
-		display_width, display_height)
-	placement = slide_lib.layout_content.PicturePlacement(allocation, display,
-		slide_lib.layout_primitives.PictureFit.CONTAIN,
-		slide_lib.layout_primitives.CropInsets(0, 0, 0, 0))
-	accessibility = slide_lib.layout_primitives.ObjectAccessibility(
-		image.title or "Component image", image.alt_text)
-	content = slide_lib.layout_content.PictureContent(image.source, placement, accessibility)
-	return slide_lib.layout_model.LayoutObject(object_id,
-		slide_lib.layout_primitives.PresentationRole.COMPONENT,
-		slide_lib.layout_primitives.StyleRole.BODY, allocation,
-		slide_lib.layout_primitives.ObjectLayer.CONTENT, order, order, content, None,
-		slot, None, slide_lib.layout_primitives.PlaceholderKind.NONE, image.location,
-		_reveal_targets(object_id, (image,), order))
 
 def _slot(name: str, kind: slide_lib.layout_primitives.PlaceholderKind,
 		role: slide_lib.layout_primitives.PresentationRole, rectangle: slide_lib.layout_primitives.LogicalRectangle,
@@ -905,44 +904,22 @@ def _paragraph_block(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[
 	"""Keep source body/list sequence intact for one text frame."""
 	return blocks
 
-def _reveal_targets(object_id: str, blocks: tuple[object, ...], order: int) -> tuple[slide_lib.layout_model.RevealTarget, ...]:
-	"""Create stable whole-object and inclusive paragraph reveal targets."""
-	targets: list[slide_lib.layout_model.RevealTarget] = []
-	paragraph_offset = 0
-	for block in blocks:
-		if not isinstance(block, (slide_lib.native_model.Heading,
-				slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
-			reveal = getattr(block, "reveal", None)
-			if reveal is not None:
-				target_id = f"{object_id}-reveal-{len(targets)}"
-				targets.append(slide_lib.layout_model.RevealTarget(
-					target_id, object_id, reveal, order))
-			continue
-		projection = slide_lib.editable_text.project_block(block)
-		reveal = getattr(block, "reveal", None)
-		if reveal is not None and reveal.sequence is slide_lib.native_model.RevealSequence.OBJECT:
-			target_id = f"{object_id}-reveal-{len(targets)}"
-			targets.append(slide_lib.layout_model.RevealTarget(
-				target_id, object_id, reveal, order))
-		for reveal_range in projection.reveal_ranges:
-			target_id = f"{object_id}-reveal-{len(targets)}"
-			indexes = tuple(range(paragraph_offset + reveal_range.first_index,
-				paragraph_offset + reveal_range.last_index + 1))
-			targets.append(slide_lib.layout_model.RevealTarget(
-				target_id, object_id, reveal_range.reveal, order, indexes))
-		paragraph_offset += len(projection.paragraphs)
-	return tuple(targets)
-
-def _slide(source: slide_lib.native_model.Slide, index: int, contract: slide_lib.layout_primitives.LayoutContract,
-		slots: list[slide_lib.layout_model.LayoutSlot], objects: list[slide_lib.layout_model.LayoutObject]) -> slide_lib.layout_model.LayoutSlide:
+def _slide(source: slide_lib.native_model.Slide, index: int,
+		contract: slide_lib.layout_primitives.LayoutContract,
+		slots: list[slide_lib.layout_model.LayoutSlot],
+		objects: list[slide_lib.layout_model.LayoutObject],
+		surface: slide_lib.layout_primitives.SlideSurface | None = None
+		) -> slide_lib.layout_model.LayoutSlide:
 	"""Finalize one slide with occupied topology and independent AutoLayout hints."""
 	topology = slide_lib.layout_primitives.PlaceholderTopology(contract.name,
 		tuple(slot.topology_member() for slot in slots), _libreoffice_layout(contract, slots))
 	identity = slide_lib.layout_model.SlideIdentity(f"slide-{index + 1}", index, source.location)
 	notes = tuple(slide_lib.layout_model.SpeakerNote(f"slide-{index + 1}-note-{note_index}", text)
 		for note_index, text in enumerate(source.notes))
-	result = slide_lib.layout_model.LayoutSlide(identity, slide_lib.layout_model.LayoutIdentity(contract.name, topology),
-		tuple(slots), tuple(_renumber_reveals(objects)), notes)
+	surface_value = slide_lib.layout_primitives.SlideSurface() if surface is None else surface
+	result = slide_lib.layout_model.LayoutSlide(identity,
+		slide_lib.layout_model.LayoutIdentity(contract.name, topology), tuple(slots),
+		tuple(_renumber_reveals(objects)), notes, surface_value)
 	return result
 
 def _libreoffice_layout(contract: slide_lib.layout_primitives.LayoutContract,

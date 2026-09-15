@@ -63,13 +63,14 @@ operating-system font substitution.
 
 **Why.** A readable-floor calculation is only meaningful when its glyph metrics are reproducible.
 Host fonts and silent LibreOffice substitution turn the same Djot deck into different geometry on
-different machines.
+different machines. Atkinson Hyperlegible Next replaces OpenDyslexic because the OpenDyslexic
+metrics produced distracting line spacing in ordinary lecture text.
 
-**Consequence.** OpenDyslexic regular, bold, italic, and bold italic and PT Sans Narrow regular and
-bold are bundled under their SIL OFL licenses. PT Sans Narrow has no upstream italic face, so an
-italic URL run fails at face selection rather than becoming synthesized or substituted. Inline code
-continues to use OpenDyslexic; a future code family requires its own licensed profile before it can
-be emitted or measured.
+**Consequence.** Atkinson Hyperlegible Next regular, bold, italic, and bold italic and PT Sans
+Narrow regular and bold are bundled under their SIL OFL licenses. PT Sans Narrow has no upstream
+italic face, so an italic URL run fails at face selection rather than becoming synthesized or
+substituted. Inline code continues to use Atkinson Hyperlegible Next; a future code family requires
+its own licensed profile before it can be emitted or measured.
 
 **Owner.** `slide_lib/presentation_theme.py` and `assets/fonts/PROVENANCE.md`.
 
@@ -486,9 +487,9 @@ small font-metric differences. CSS and browser rendering are not part of the bui
 
 **Decision.** Treat every face used for layout capacity as a committed, hash-verified OFL asset with
 recorded provenance. `PresentationTheme` exposes immutable profiles for exact family, weight, and
-italic states; all measurement resolves styled runs against those profiles. OpenDyslexic is the
-ordinary-text family. PT Sans Narrow is permitted only for displayed literal URLs and only in the
-face states actually committed to the repository; it has no fabricated italic fallback.
+italic states; all measurement resolves styled runs against those profiles. Atkinson Hyperlegible
+Next is the ordinary-text family. PT Sans Narrow is permitted only for displayed literal URLs and
+only in the face states actually committed to the repository; it has no fabricated italic fallback.
 
 **Why.** A system-installed font, a silent substitution, or an average-glyph estimate makes line
 wrapping machine-dependent. That would allow the same deck to pass capacity on one host and shrink
@@ -871,25 +872,24 @@ and records why it improves normal teaching use.  The first 20 pt / 22 pt corpus
 diagnostics: 82 paragraph/list, 10 title, 8 local-heading, 4 mixed-flow, and 1 table.  These are
 explicit residual layout work, not evidence to lower the ordinary teaching floor.
 
-### Shared title paths preserve title hierarchy
+### Specialty slide paths preserve hierarchy and native output
 
-**Decision.** Title slides use the title and outline rectangles measured from the native master.
-Standard layouts select the largest title between the teaching default and the 22 pt title floor
-that leaves their named body slots at the 20 pt body floor.  When no title in that readable band
-does so, the largest physically fitting readable title remains and the body records its ordinary
-capacity diagnostic.  Title geometry retains an 8-logical-pixel serializer margin; measurement
-continues to use the repository-owned font facts until the LibreOffice font input is deterministic.
+**Decision.** Title slides use the native master rectangles and select the largest readable title
+that preserves the 20 pt body floor; otherwise the body records its capacity diagnostic. Covers add
+a rounded metadata frame and accent rule. Sections use the solid gradient-start color and center
+their text in a rounded frame. An exact `THE END` becomes two giant lines with a native star in the D.
 
-**Why.** The hand-written title-slide subtitle frame made every actual lecture title-slide metadata
-block tiny.  Coupling standard titles below their floor to preserve body text hid the real body
-constraint and lost teaching hierarchy.  LibreOffice currently renders some title text with a host
-font whose metrics differ from the repository-owned face, so that renderer disagreement remains an
-honest diagnostic rather than a width multiplier.
+**Why.** The hand-written cover frame made metadata tiny, body-driven title shrinking hid the real
+constraint, and the master section outline appeared 42 logical pixels below the page midpoint.
+Recurring cover, transition, and closer roles need a clear identity without rasterized lettering.
 
-**Consequence.** Native title and subtitle placeholders retain their identities, readable titles
-remain prominent, and genuinely dense named body slots remain visible capacity concerns.  The
-custom multiple-choice geometry and standard slot/gutter rules remain independent of this title
-path.
+**Consequence.** Covers use `Lecture ##<letter>` and separate subject, optional chapter, instructor,
+and date paragraphs. `LayoutSlide.surface` controls the native page style and master visibility.
+Decorations carry theme provenance as ODF geometry; every letter stays an editable font glyph. The
+14-layout catalog, existing placeholders, and `AUTOLAYOUT_ONLY_TEXT` section identity stay unchanged.
+
+**Owner.** `slide_lib/layout_model.py`, `slide_lib/layout_builders.py`,
+`slide_lib/layout_object_builders.py`, `slide_lib/odp_export.py`, and [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
 ### Imported evidence keeps relations adaptable
 

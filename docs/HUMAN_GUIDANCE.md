@@ -87,7 +87,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Preserve the teaching sequence unless I explicitly approve a change.
 - My ODP slides are hand-authored structured documents, not scans; normal conversion uses text and
   image objects rather than OCR.
-- Use OpenDyslexic for ordinary slide text and PT Sans Narrow only when a long URL is displayed.
+- Use Atkinson Hyperlegible Next for ordinary slide text and PT Sans Narrow only when a long URL is
+  displayed.
 - Make standard titles default to 36 pt and ordinary body text default to 28 pt.
 - Use shrink-on-overflow for native presentation frames only after build preflight proves the text
   remains above a readable floor; LibreOffice's unbounded manual shrink is not the floor owner.
@@ -110,8 +111,19 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   transitions.
 - The autonomous acceptance path also uses headless LibreOffice preservation, PDF/render metrics,
   and automated reveal-state checks.
-- Use OpenDyslexic for ordinary and inline-code runs. Apply PT Sans Narrow only to a displayed
-  literal URL; keep ordinary linked labels in OpenDyslexic with their native hyperlink.
+- Use Atkinson Hyperlegible Next for ordinary and inline-code runs. Apply PT Sans Narrow only to a
+  displayed literal URL; keep ordinary linked labels in Atkinson Hyperlegible Next with their native
+  hyperlink.
+- Use `Lecture ##<letter>` for each title-slide title, with a two-digit lecture number and its letter
+  suffix.
+- Format title-slide subtitles as the subject/topic with optional `: <Subtopic>`, then optional
+  `Chapter <#>`, `Dr. Neil Voss`, and the lecture date. Put each item on its own line.
+- Give title slides restrained flair around that consistent metadata. Use a dark solid transition
+  surface and a rounded frame for section dividers, with the text centered on the whole page.
+- Render the final `THE END` as two giant centered lines and place a native LibreOffice vector star
+  inside the D.
+- Keep every font character as a real glyph in the final product. Never rasterize type; use native
+  vector shapes for decorations such as the star.
 - Treat `slide_*_source` raster names as retired full-slide fallback evidence, not component images.
 - Use lots of images and aim for a visual image on every slide.
 - Hold image-bearing slide PNGs out of publication until their copyright status is assessed;
@@ -233,12 +245,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   create `__pycache__`; the absence of an ignore rule makes accidental cache writes visible.
 - Have single-repository propagation add a `devel/changelog_lib.py`-compatible changelog entry only
   when it makes real changes; recurring `.gitignore` churn must not create one.
-- Classify one-time implementation checks separately from permanent tests. Apply the permanent
-  pytest checklist, keep temporary proof out of the suite, and remove a test when in doubt.
+- Treat tests as liabilities as well as assets. Classify one-time implementation checks separately
+  from permanent tests, apply the permanent pytest checklist, keep temporary proof out of the suite,
+  and remove a test when in doubt.
 - Before letting a test block progress, ask whether it protects a current requirement, known
   failure mode, or stable boundary.
 - Remove a test or keep it as temporary verification when it mainly proves a hypothetical edge,
   exact implementation detail, or one-time migration or recovery behavior.
+- Give every new behavior gate a failure plan that leads to a decision or concrete recovery action.
+- Ground gates in actual needs; avoid arbitrary thresholds and unnecessary byte-, pixel-, or
+  exhaustive-matrix equivalence.
 - Follow the repository test rules before adding fixtures or special hooks. Treat a test design as
   suspect when it requires awkward production machinery users did not ask for.
 - Preserve behavior tests for credential routing, stale-result fencing, fallback semantics, exact
