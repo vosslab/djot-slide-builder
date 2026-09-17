@@ -1,3 +1,61 @@
+## 2026-09-17
+
+### Additions and New Features
+
+- Converted Biotechnology Lecture 03A, 03B, and 03C ODP sources to canonical Djot with adjacent
+  local source-image assets. The imports retain all 198 source slides, including the 31 hidden
+  announcement and project slides.
+- Merged the 2026 current-course and 2025 Lecture 03 announcement sources into the 2026 03A deck.
+  The deck uses the 2026 course context, the recurring Lecture 03 agenda and reminders, and the
+  September 17, 2026 presentation date.
+- Rebuilt 03C as a classroom deck organized by chapter. Each of the 25 talking points has a section
+  page, questions copied from the canonical single-topic template, and two short source-grounded
+  answer slides. The 105-slide source replaces the 117-slide legacy compilation without publishing
+  unverified student answers or names.
+
+### Fixes and Maintenance
+
+- Recorded the instructor's source-authority boundary for the Biotechnology Lecture 03C merge in
+  `docs/HUMAN_GUIDANCE.md` and `docs/DESIGN_DECISIONS.md`.
+- Corrected the 03A and 03B title pages to use the Biotechnology Lecture 03 title-slide structure,
+  with their proper letter suffixes and September 17, 2026 date.
+- Updated 03A Week 3 work and 03B project milestones from the published Fall 2026 Biotechnology
+  schedule. Replaced historical 2024/2025 dates and unsupported midnight cutoffs with the current
+  schedule's Sept 17, Sept 24, Oct 1, Oct 8, Oct 22, and Oct 29 milestones.
+- Rebuilt the 03A remote-participation and office-hours slides as two-panel layouts. Replaced
+  external legacy links and obsolete Zoom credentials with published Fall 2026 course links and
+  current office-hour information.
+- Rebuilt all Lecture 03B section dividers with an explicit topic heading and current-date subtitle,
+  eliminating the legacy, independently placed deadline text and red-on-red date treatment.
+- Formatted the Lecture 03B project-sequence date column as fixed-width `Mon DD` labels so its
+  current Fall 2026 milestones align clearly.
+- Added a roadmap item for a reusable centered-left two-panel layout without changing the standard
+  top-aligned comparison layout.
+- Added a roadmap item for a lower-weight subsection divider so chapter and numbered topic
+  transitions can carry distinct visual hierarchy.
+- Implemented the reusable `subsection` native centered-text layout with a burgundy transition
+  surface, and applied it to all numbered Lecture 03C talking points while preserving bright-red
+  chapter dividers.
+- Completed a topic-by-topic Lecture 03C provenance check. It distinguishes cross-year coverage
+  corroboration from factual certification and identifies the expanded-answer topics that require
+  independent review before classroom use.
+- Restored the source-provided Bozeman Science `What Is CRISPR?` YouTube reminder slide after the
+  Native CRISPR answer sequence.
+- Normalized the edited Lecture 03C Djot source to ASCII-only text, retaining project-supported
+  escapes and entities for rendered Unicode where needed.
+- Expanded Lecture 03C from three to four slides per talking point and added selected relevant
+  legacy-ODP and Fall 2025-PPTX visual assets to answer pages. The old ODP is retained only as a
+  partial historical source, while the Fall 2025 PPTX corroborates complete topic coverage.
+
+### Developer Tests and Notes
+
+- Strict Jotdown 0.10.0 validation and semantic Djot lint accepted all three Biotechnology Lecture
+  03 sources. The revised 03C passed its native build with an 80-page editable ODP and matching
+  LibreOffice-derived PDF; every question and answer slide meets the 20 pt capacity floor.
+- Completed a standalone LLM visual review of all 130 generated Biotechnology Lecture 03 PDF pages.
+  The per-page scores and follow-up calls are recorded in
+  `docs/active_plans/reports/biotech_lecture_03_slide_review.md`.
+
 ## 2026-09-15
 
 ### Behavior or Interface Changes

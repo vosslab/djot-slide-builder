@@ -1,0 +1,938 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 03C
+
+## Biotechnology: Set #2 Talking Points
+## Chapters 3-5
+## Dr. Neil Voss
+## Sept 17, 2026
+
+=== layout: section
+
+# Chapter 3: Recombinant DNA Technology
+
+=== layout: subsection
+
+# 1. DNA Isolation
+
+=== layout: one-panel
+
+# Questions: DNA Isolation
+
+@body
+
+- What are the principal methodologies for isolating DNA from cells?
+- How do isolation processes differ between eukaryotic and prokaryotic cells, particularly cell lysis mechanisms?
+- How do mechanical methods differ from chemical methods?
+- Explain the roles of lysozyme and proteinase K in breaking down cellular and protein components.
+
+=== layout: one-panel
+
+# Answers: DNA Isolation
+
+@body
+
+- Chemical lysis uses detergents such as SDS; mechanical lysis includes bead beating, sonication, homogenization, and freeze-thaw.
+- Lysozyme digests bacterial peptidoglycan. Proteinase K digests proteins and helps protect DNA from nucleases.
+- A common workflow lyses cells, removes proteins and RNA, then purifies DNA for analysis.
+
+=== layout: one-panel
+
+# Answers: DNA Isolation - Method choice
+
+@body
+
+- Eukaryotic cells lack peptidoglycan but may require disruption of membranes and, for plants or fungi, robust cell walls.
+- Prokaryotic samples often need lysozyme before detergent lysis because lysozyme weakens the peptidoglycan wall.
+- The method must balance yield, fragment length, purity, speed, and downstream use.
+
+=== layout: subsection
+
+# 2. Nucleotide Gels
+
+=== layout: one-panel
+
+# Questions: Nucleotide Gels
+
+@body
+
+- What are the various gel types used in nucleotide electrophoresis, and what are their pros and cons?
+- Describe molecular interactions involved in staining with EtBr, GelRed, and SYBR Safe.
+- Explain the Southern blotting process, particularly transfer of DNA from a gel to a membrane.
+- Do not discuss protein gels; they are a later topic.
+
+=== layout: one-panel
+
+# Answers: Nucleotide Gels
+
+@body
+
+- Agarose is the usual matrix for DNA fragments; pore size helps separate fragments by length.
+- DNA stains bind DNA and fluoresce under suitable illumination; stain choice changes sensitivity and safety handling.
+- Southern blotting transfers separated DNA to a membrane, then uses a labeled complementary probe to detect a target sequence.
+
+=== layout: two-panels
+
+# Answers: Nucleotide Gels - Staining and transfer
+
+@left
+
+- A gel resolves DNA fragments before staining reveals band positions.
+- A Southern blot preserves that separation on a membrane for probe hybridization.
+- A probe signal answers whether the target sequence is present at the expected fragment size.
+
+@right
+
+![EtBr and GelRed comparison from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_004.png)
+
+=== layout: subsection
+
+# 3. Detecting DNA
+
+=== layout: one-panel
+
+# Questions: Detecting DNA
+
+@body
+
+- How does the intrinsic nature of DNA make it suitable for UV spectroscopy?
+- Describe quantitative methods for DNA concentration measurement, including A260 and A260/A280.
+- What are three techniques used to detect specific DNA sequences?
+
+=== layout: one-panel
+
+# Answers: Detecting DNA
+
+@body
+
+- Purine and pyrimidine bases absorb UV near 260 nm; A260 estimates total nucleic acid concentration.
+- Pure DNA commonly has an A260/A280 ratio near 1.8; a lower ratio can indicate protein contamination.
+- Sequence-specific detection includes radioactive labeling, fluorescence detection, and chemical tagging of complementary probes.
+
+=== layout: one-panel
+
+# Answers: Detecting DNA - Interpreting measurements
+
+@body
+
+- A260 reports bulk nucleic acid, not identity of a particular sequence.
+- A260/A280 is a purity check: protein absorbance near 280 nm lowers the ratio.
+- Specific identification requires a complementary probe or sequence-specific assay after the sample is measured.
+
+=== layout: subsection
+
+# 4. FISH
+
+=== layout: one-panel
+
+# Questions: FISH
+
+@body
+
+- Explain fluorescence in situ hybridization (FISH).
+- What does the Latin phrase "in situ" mean in general and in this context?
+- Discuss molecular design strategies for fluorescent probes used in FISH.
+- What are specialized applications of FISH in genetic research and diagnostics?
+
+=== layout: one-panel
+
+# Answers: FISH
+
+@body
+
+- A fluorescent nucleic-acid probe hybridizes to a complementary sequence in a cell or tissue sample.
+- In situ means in the original place: FISH retains a sequence's chromosomal or cellular location.
+- FISH can identify gene location, copy-number changes, and chromosome rearrangements.
+
+=== layout: two-panels
+
+# Answers: FISH - What the signal shows
+
+@left
+
+- Probe design determines the sequence being located; fluorophores make the hybridized probe visible.
+- Signal number and position can reveal aneuploidy, deletions, duplications, or rearrangements.
+- FISH answers where a target is in intact cells or chromosomes, not merely whether it exists in extracted DNA.
+
+@right
+
+![FISH chromosome image from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_011.png)
+
+=== layout: subsection
+
+# 5. SNP DNA Microarrays
+
+=== layout: one-panel
+
+# Questions: SNP DNA Microarrays
+
+@body
+
+- What is a SNP, and why do scientists care about one-letter DNA changes?
+- How does a microarray distinguish one SNP allele from another?
+- How do fluorescent signals identify which SNP version is present?
+- What are the Illumina Infinium and Omni BeadChip platforms?
+
+=== layout: one-panel
+
+# Answers: SNP DNA Microarrays
+
+@body
+
+- A SNP is a single-base difference among DNA sequences; known SNPs can mark inherited variation.
+- Allele-specific probes bind best to matching target DNA at the SNP site.
+- Fluorescent signal patterns are converted into genotype calls at many known sites in parallel.
+
+=== layout: one-panel
+
+# Answers: SNP DNA Microarrays - Reading a genotype
+
+@body
+
+- Each array feature tests a known position, so a microarray does not discover every possible variant.
+- Signal clusters are interpreted as genotype categories such as homozygous reference, heterozygous, or homozygous alternate.
+- Illumina BeadChip platforms use many allele-specific measurements to genotype large SNP panels at once.
+
+=== layout: subsection
+
+# 6. Direct-to-Consumer Genetic Testing
+
+=== layout: one-panel
+
+# Questions: Direct-to-Consumer Genetic Testing
+
+@body
+
+- What DNA analyses are commonly offered in direct-to-consumer genetic tests?
+- How does consumer-test reliability compare with clinical genetic tests?
+- What ethical dilemmas concern data privacy and potential misuse of genetic information?
+- Can these tests produce clinically actionable results, and what are their limitations?
+
+=== layout: one-panel
+
+# Answers: Direct-to-Consumer Testing
+
+@body
+
+- Consumer tests commonly use SNP genotyping and sometimes selected sequencing panels.
+- A risk estimate is not a diagnosis; clinically important results need confirmation and professional interpretation.
+- Limitations include incomplete variant coverage, reference-data bias, privacy choices, and false-positive or false-negative results.
+
+=== layout: one-panel
+
+# Answers: Direct-to-Consumer Testing - Responsible interpretation
+
+@body
+
+- Ancestry estimates and relative-risk reports depend on the reference populations and variants included in the test.
+- A direct-to-consumer result can generate a question for clinical care, but it does not replace a validated diagnostic workflow.
+- Consent, data sharing, relatives' privacy, and third-party access are part of evaluating a consumer test.
+
+=== layout: subsection
+
+# 7. Mitochondrial DNA Analysis
+
+=== layout: one-panel
+
+# Questions: Mitochondrial DNA Analysis
+
+@body
+
+- What makes mitochondrial DNA different from nuclear DNA in size, organization, and inheritance?
+- What is heteroplasmy, and when does it matter for mitochondrial disease diagnosis?
+- What are NUMTs, and why can they complicate mtDNA studies?
+- What is the significance of Mitochondrial Eve?
+
+=== layout: one-panel
+
+# Answers: Mitochondrial DNA Analysis
+
+@body
+
+- mtDNA is a small circular genome, usually inherited through the maternal line, with many copies per cell.
+- Heteroplasmy means more than one mtDNA sequence in an individual or tissue; proportion can affect phenotype and testing.
+- NUMTs are mtDNA-derived sequences in nuclear DNA that can confuse mtDNA amplification or interpretation.
+
+=== layout: one-panel
+
+# Answers: Mitochondrial DNA - Inheritance and evidence
+
+@body
+
+- Maternal inheritance makes mtDNA useful for lineage studies, but it does not identify a single universal maternal ancestor in a recent generation.
+- Mitochondrial Eve refers to the most recent common matrilineal ancestor of living humans, not the only woman alive at that time.
+- Heteroplasmy and NUMTs mean that sampling, assay design, and interpretation matter in mtDNA diagnosis.
+
+=== layout: subsection
+
+# 8. Plasmid Vectors
+
+=== layout: one-panel
+
+# Questions: Plasmid Vectors
+
+@body
+
+- What features matter when selecting a plasmid vector for cloning?
+- How do plasmid vectors help identify cells carrying an inserted DNA fragment?
+- Compare low-copy-number and high-copy-number plasmids in applications and challenges.
+- Choose a commercial plasmid and describe its laboratory utility.
+
+=== layout: one-panel
+
+# Answers: Plasmid Vectors
+
+@body
+
+- A vector needs an origin of replication, selectable marker, and useful insertion site.
+- Restriction enzymes and ligase create a recombinant plasmid; transformation introduces it into host cells.
+- Antibiotic selection finds plasmid-containing cells, while screening distinguishes recombinant from empty vectors.
+
+=== layout: one-panel
+
+# Answers: Plasmid Vectors - Design logic
+
+@body
+
+- Copy number affects DNA yield and the burden placed on host cells.
+- A multiple-cloning site offers unique restriction sites for controlled insertion of foreign DNA.
+- Selection identifies cells with a plasmid; a separate screen tests whether the desired insert is present.
+
+=== layout: subsection
+
+# 9. Gene Libraries
+
+=== layout: one-panel
+
+# Questions: Gene Libraries
+
+@body
+
+- What is a genomic library, and why are DNA fragments used and stored in organisms?
+- What is a cDNA library, and what information is missing compared with a genomic library?
+- How can a cDNA library help in understanding gene function?
+- Contrast genomic and cDNA libraries and their uses.
+
+=== layout: one-panel
+
+# Answers: Gene Libraries
+
+@body
+
+- A genomic library is cloned DNA fragments representing an organism's genome, including introns and regulatory regions.
+- A cDNA library starts with mRNA and reverse transcriptase, so it represents expressed genes without introns.
+- Libraries support gene discovery, sequencing, expression analysis, and recombinant protein work.
+
+=== layout: one-panel
+
+# Answers: Gene Libraries - Comparing library types
+
+@body
+
+- A genomic library can preserve regulatory DNA and introns, so it represents the genome rather than only active transcripts.
+- A cDNA library depends on the RNA source: it represents genes expressed in that cell type at that time.
+- Researchers choose the library type according to whether they need genome structure, expression evidence, or a protein-coding sequence.
+
+=== layout: section
+
+# Chapter 4: DNA Synthesis and Sequencing
+
+=== layout: subsection
+
+# 10. In Vitro DNA Synthesis
+
+=== layout: one-panel
+
+# Questions: In Vitro DNA Synthesis
+
+@body
+
+- Define "in vitro" and "in vivo" in molecular biology.
+- Explain enzymatic in vitro DNA synthesis and how it differs from in vivo replication.
+- Discuss benefits and limitations of in vitro synthesis compared with in vivo methods.
+- How do DNA polymerases function differently under in vitro and in vivo conditions?
+
+=== layout: one-panel
+
+# Answers: In Vitro DNA Synthesis
+
+@body
+
+- In vitro occurs outside a living organism; in vivo occurs within a cell or organism.
+- DNA polymerase extends a pre-existing synthetic DNA primer using template DNA and dNTPs.
+- Cellular replication also requires coordinated helicase, primase, replication forks, and repair systems.
+
+=== layout: one-panel
+
+# Answers: In Vitro DNA Synthesis - What a reaction needs
+
+@body
+
+- A simplified synthesis reaction supplies template, primer, polymerase, dNTPs, buffer, and suitable temperature conditions.
+- In vitro control makes it useful for copying or modifying chosen sequences outside a cell.
+- In vivo replication is integrated with chromosome management, cell division, damage repair, and regulation.
+
+=== layout: subsection
+
+# 11. Chemical DNA Synthesis
+
+=== layout: one-panel
+
+# Questions: Chemical DNA Synthesis
+
+@body
+
+- Explain DNA synthesis without enzymes.
+- What are the advantages of chemically synthesizing DNA instead of using enzymatic methods?
+- Describe research where chemical DNA synthesis is particularly advantageous.
+- How has chemical DNA synthesis evolved over time?
+
+=== layout: one-panel
+
+# Answers: Chemical DNA Synthesis
+
+@body
+
+- Solid-phase phosphoramidite chemistry adds protected nucleotides sequentially to make an oligonucleotide.
+- Chemical synthesis produces custom primers, probes, and designed sequences without a DNA template.
+- Error accumulation limits practical length, so longer constructs often require assembly or enzymatic copying.
+
+=== layout: one-panel
+
+# Answers: Chemical DNA Synthesis - Strengths and limits
+
+@body
+
+- Stepwise chemistry is especially useful when a researcher needs a known sequence with deliberate changes.
+- Custom oligonucleotides provide primers, probes, adapters, and short engineered elements.
+- Each synthesis cycle can introduce a small failure rate, which makes sequence verification important for longer designs.
+
+=== layout: subsection
+
+# 12. Invention of PCR
+
+=== layout: one-panel
+
+# Questions: Invention of PCR
+
+@body
+
+- Briefly explain polymerase chain reaction.
+- How has PCR evolved since its inception? Do not cover RT-PCR or qPCR here.
+- Explain degenerate primers and their application in PCR.
+- Discuss temperature cycles and how thermally stable polymerases revolutionized PCR.
+
+=== layout: one-panel
+
+# Answers: PCR
+
+@body
+
+- PCR amplifies a target between two synthetic DNA primers through denaturation, annealing, and extension.
+- Taq polymerase survives repeated high-temperature denaturation, allowing automated thermal cycling.
+- Degenerate primers contain variable positions so they can amplify related but nonidentical target sequences.
+
+=== layout: one-panel
+
+# Answers: PCR - Cycle and specificity
+
+@body
+
+- Denaturation separates strands, annealing lets primers bind, and extension copies DNA from each primer.
+- Primer sequence and annealing conditions determine which target is amplified.
+- Thermocyclers and heat-stable polymerases made repeated cycles practical without manually moving samples between temperatures.
+
+=== layout: subsection
+
+# 13. Sanger Sequencing
+
+=== layout: one-panel
+
+# Questions: Sanger Sequencing
+
+@body
+
+- Explain the foundational principles of Sanger DNA sequencing.
+- How did Sanger sequencing evolve from gel electrophoresis to fluorescence-based techniques?
+- What is the chemical basis for chain termination?
+- How did fluorescence improve sequencing efficiency and output?
+
+=== layout: one-panel
+
+# Answers: Sanger Sequencing
+
+@body
+
+- Polymerase incorporates normal dNTPs and occasional fluorescent ddNTPs while copying a template.
+- A ddNTP lacks the 3' hydroxyl needed for further extension, terminating that DNA strand.
+- Capillary electrophoresis separates fragments by length; the terminal dye identifies each base.
+
+=== layout: one-panel
+
+# Answers: Sanger Sequencing - Reading the ladder
+
+@body
+
+- Chain termination creates a nested set of fragments ending at every position in the sequence.
+- Separation orders the fragments by length, from shortest to longest.
+- Fluorescent dyes allow an instrument to identify the terminating base in a single capillary run.
+
+=== layout: subsection
+
+# 14. Next-Generation Sequencing
+
+=== layout: one-panel
+
+# Questions: Next-Generation Sequencing
+
+@body
+
+- Provide an overview of pyrosequencing, sequencing by synthesis, and ion semiconductor sequencing.
+- Compare these techniques in speed and cost-effectiveness.
+- How do they differ in read length and accuracy?
+- Do specific applications favor one next-generation technique over another?
+
+=== layout: one-panel
+
+# Answers: Next-Generation Sequencing
+
+@body
+
+- Next-generation platforms sequence many fragmented molecules in parallel, typically producing many short reads.
+- Sequencing by synthesis detects base incorporation; pyrosequencing detects pyrophosphate; ion semiconductor methods detect released hydrogen ions.
+- Choice depends on read length, accuracy, throughput, cost, and the biological question.
+
+=== layout: two-panels
+
+# Answers: Next-Generation Sequencing - Parallel signals
+
+@left
+
+- NGS trades a single long read for many simultaneous measurements that are assembled or aligned computationally.
+- Each chemistry detects a physical consequence of base incorporation.
+- Platform choice should follow the biological question, not a claim that one method is always fastest or cheapest.
+
+@right
+
+![Ion semiconductor sequencing diagram from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_024.png)
+
+=== layout: subsection
+
+# 15. Third-Generation Sequencing
+
+=== layout: one-panel
+
+# Questions: Third-Generation Sequencing
+
+@body
+
+- Explain approaches used by PacBio and Oxford Nanopore for sequencing.
+- Differentiate SMRT sequencing and nanopore methods. What is a zero-mode waveguide?
+- Describe MinION nanopore technology in simple terms.
+- What are challenges of long reads, and what does portability enable?
+
+=== layout: one-panel
+
+# Answers: Third-Generation Sequencing
+
+@body
+
+- PacBio SMRT sequencing observes polymerase activity in tiny zero-mode waveguides.
+- Nanopore sequencing reads current changes as DNA passes through a protein pore; MinION is a portable nanopore device.
+- Long reads span repeats and structural variants, but error profiles, coverage, and cost still affect confidence.
+
+=== layout: one-panel
+
+# Answers: Third-Generation Sequencing - Long-read tradeoffs
+
+@body
+
+- A zero-mode waveguide is a tiny observation volume that lets a sequencing instrument monitor one polymerase molecule.
+- Nanopore instruments infer sequence from changing electrical current as a molecule passes through the pore.
+- Long reads can clarify genome structure, but validation and adequate coverage remain important when accuracy is limited.
+
+=== layout: subsection
+
+# 16. RT-PCR, qPCR, and RT-qPCR
+
+=== layout: one-panel
+
+# Questions: RT-PCR, qPCR, and RT-qPCR
+
+@body
+
+- What is reverse transcriptase, and what role does it play in retroviruses?
+- Explain real-time quantitative PCR and its utility in biological research.
+- Define RT-qPCR and how it combines reverse transcription and qPCR.
+- Differentiate RT-PCR, qPCR, and RT-qPCR and their uses.
+
+=== layout: one-panel
+
+# Answers: RT-PCR, qPCR, and RT-qPCR
+
+@body
+
+- Reverse transcriptase makes cDNA from an RNA template; retroviruses use it to copy RNA into DNA.
+- qPCR monitors DNA amplification by fluorescence in real time.
+- RT-qPCR first makes cDNA from RNA, then uses qPCR to estimate RNA abundance; controls and normalization are essential.
+
+=== layout: one-panel
+
+# Answers: RT-PCR, qPCR, and RT-qPCR - Keep terms distinct
+
+@body
+
+- Reverse-transcription PCR starts with RNA and converts it to cDNA before amplification.
+- qPCR measures accumulating product during amplification with fluorescence.
+- RT-qPCR combines both steps to compare RNA abundance, using controls and normalization to make comparisons meaningful.
+
+=== layout: subsection
+
+# 17. Gene Expression Microarrays
+
+=== layout: one-panel
+
+# Questions: Gene Expression Microarrays
+
+@body
+
+- How can a gene-expression microarray show which genes are turned on or off?
+- How is RNA converted into labeled DNA that can hybridize to an array?
+- How do one-color and two-color arrays differ?
+- What controls and clustering patterns help evaluate an expression-array experiment?
+
+=== layout: one-panel
+
+# Answers: Gene Expression Microarrays
+
+@body
+
+- RNA is reverse-transcribed into labeled cDNA, which hybridizes to gene-specific probes.
+- Signal intensity estimates relative transcript abundance for the represented genes.
+- Controls, normalization, replicates, and clustering help distinguish biological differences from technical variation.
+
+=== layout: one-panel
+
+# Answers: Gene Expression Microarrays - From signal to claim
+
+@body
+
+- An array measures transcripts represented by its probes; it is not a complete measurement of every possible RNA.
+- One-color designs compare separate samples to a reference framework, while two-color designs compare labeled samples on one array.
+- Replication and normalization are necessary before interpreting color or intensity differences as biology.
+
+=== layout: section
+
+# Chapter 5: RNA-Based and Genome Technologies
+
+=== layout: subsection
+
+# 18. CRISPR Native Bacteria Function
+
+=== layout: one-panel
+
+# Questions: CRISPR Native Bacteria Function
+
+@body
+
+- How was CRISPR discovered, and what does the acronym stand for?
+- What is the purpose of the repeated sequences and spacers in bacteria?
+- How does CRISPR function as a bacterial immune system?
+- What does the native Cas9 nuclease protein do in bacteria?
+
+=== layout: one-panel
+
+# Answers: Native CRISPR
+
+@body
+
+- CRISPR means clustered regularly interspaced short palindromic repeats.
+- Bacteria store fragments of prior viral DNA as spacers and transcribe guide RNAs from the array.
+- Guide RNA directs Cas proteins to complementary invading nucleic acid for sequence-specific defense.
+
+=== layout: one-panel
+
+# Answers: Native CRISPR - Bacterial memory
+
+@body
+
+- Spacer sequences are molecular records of prior invaders and give the system sequence specificity.
+- CRISPR defense includes acquiring spacers, producing guide RNAs, and targeting matching foreign nucleic acid.
+- Cas proteins carry out the recognition and cleavage steps directed by the RNA guide.
+
+=== layout: one-panel
+
+# Video reminder: What Is CRISPR?
+
+@body
+
+- Play in class: [Bozeman Science: What Is CRISPR?](https://www.youtube.com/watch?v=MnYppmstxIs)
+- Published February 18, 2016
+- Use after the native bacterial CRISPR explanation and before CRISPR/Cas9 design.
+
+=== layout: subsection
+
+# 19. CRISPR/Cas9 Invention and Design
+
+=== layout: one-panel
+
+# Questions: CRISPR/Cas9 Invention and Design
+
+@body
+
+- How did Charpentier and Doudna turn native Cas9 into a gene-editing technology?
+- What are crRNA and tracrRNA, and how do they form a guide RNA?
+- What is a PAM, and how does it restrict Cas9 targeting?
+- Why is Cas9 called molecular scissors, and can it edit DNA on its own?
+
+=== layout: one-panel
+
+# Answers: CRISPR/Cas9
+
+@body
+
+- A designed guide RNA combines targeting information with the RNA structure Cas9 needs.
+- Cas9 cuts complementary DNA only when a compatible PAM is adjacent to the target.
+- Cas9 makes a break; cellular DNA repair creates disruption or incorporates a donor-directed change.
+
+=== layout: two-panels
+
+# Answers: CRISPR/Cas9 - Targeting and repair
+
+@left
+
+- The guide RNA supplies target specificity, but Cas9 also requires a nearby PAM before it cuts DNA.
+- Cas9 is not a complete editing outcome by itself: the cell's repair pathways determine the resulting sequence change.
+- Repair can introduce small disruptions or, with an appropriate donor template, support a designed sequence change.
+
+@right
+
+![CRISPR/Cas9 visual from the Fall 2025 03C PPTX](assets/lect03c-talking_points_set_2/pptx_crispr_cas9.jpg)
+
+=== layout: subsection
+
+# 20. Cellular RNA
+
+=== layout: one-panel
+
+# Questions: Cellular RNA
+
+@body
+
+- Identify and briefly describe the three major classes of RNA in cells.
+- What other specialized RNA classes exist, such as snoRNA?
+- Pick two lesser-known RNA types and explain their functions and significance.
+- What are emerging research areas focusing on specialized RNA types?
+
+=== layout: one-panel
+
+# Answers: Cellular RNA
+
+@body
+
+- mRNA carries coding information, tRNA delivers amino acids, and rRNA forms the ribosome's catalytic core.
+- Specialized RNAs include miRNA, siRNA, snRNA, snoRNA, piRNA, and long noncoding RNA.
+- RNA processing, structure, and regulation influence gene expression and cell behavior.
+
+=== layout: one-panel
+
+# Answers: Cellular RNA - RNA roles beyond coding
+
+@body
+
+- mRNA, tRNA, and rRNA work together in translation, but they are not the only functional RNAs in cells.
+- Small RNAs can guide processing, modification, or regulation of other RNAs.
+- Specialized RNAs are studied because changes in RNA processing and regulation can alter cell behavior and disease states.
+
+=== layout: subsection
+
+# 21. RNA Interference
+
+=== layout: one-panel
+
+# Questions: RNA Interference
+
+@body
+
+- What is the role of antisense RNA in cellular regulation?
+- Describe the mechanisms of Dicer, dsRNA, RISC, and siRNA in RNA interference.
+- Are antisense RNA-based therapies approved for use? Describe their applications.
+- What are common side effects associated with antisense therapies?
+
+=== layout: one-panel
+
+# Answers: RNA Interference
+
+@body
+
+- Dicer cuts double-stranded RNA into siRNAs; one guide strand enters RISC and base-pairs with target RNA.
+- Strong complementarity commonly directs target cleavage; partial complementarity can repress translation or destabilize RNA.
+- Antisense and RNAi therapies require targeted delivery and can have sequence-specific or delivery-related adverse effects.
+
+=== layout: two-panels
+
+# Answers: RNA Interference - Sequence-guided silencing
+
+@left
+
+- Dicer produces short guide sequences from double-stranded RNA.
+- RISC uses one guide strand to recognize complementary RNA.
+- Complementarity determines whether the target is cleaved or its translation is repressed.
+
+@right
+
+![RNA interference pathway from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_060.png)
+
+=== layout: subsection
+
+# 22. Ribozymes
+
+=== layout: one-panel
+
+# Questions: Ribozymes
+
+@body
+
+- What are ribozymes, and what catalytic functions do they perform?
+- Describe riboswitches and their regulatory functions within a cell.
+- What are potential medical applications of riboswitches?
+- Explain synthetic ribozyme engineering and in vitro selection of desired ribozymes.
+
+=== layout: one-panel
+
+# Answers: Ribozymes
+
+@body
+
+- A ribozyme is RNA with catalytic activity, including RNA cleavage, ligation, and self-splicing reactions.
+- A riboswitch is a regulatory RNA segment that binds a small molecule and changes gene expression.
+- In vitro selection enriches rare RNA sequences with desired binding or catalytic activity from a large pool.
+
+=== layout: one-panel
+
+# Answers: Ribozymes - Catalysis and control
+
+@body
+
+- Ribozymes show that RNA can store information and catalyze chemical reactions.
+- Riboswitches regulate gene expression by changing RNA structure after binding a small molecule.
+- Iterative selection connects RNA sequence to a measurable function, allowing enrichment of useful variants from a large pool.
+
+=== layout: subsection
+
+# 23. Genome-wide Association Studies (GWAS)
+
+=== layout: one-panel
+
+# Questions: Genome-wide Association Studies
+
+@body
+
+- What do statistical models achieve in genome-wide association studies?
+- How do scientists control false positives from the multiple-testing problem?
+- How can machine learning help sort roles of numerous genes in complex traits?
+- After GWAS identifies an association, what are next steps in functional genomics or drug discovery?
+
+=== layout: one-panel
+
+# Answers: GWAS
+
+@body
+
+- GWAS tests many variants for statistical association with a trait across a population.
+- Strict significance thresholds, population-structure control, replication, and functional follow-up reduce false claims.
+- An associated SNP may only tag the causal variant; association alone does not establish mechanism or causation.
+
+=== layout: one-panel
+
+# Answers: GWAS - Association is a starting point
+
+@body
+
+- Testing many variants creates many opportunities for chance associations, so significance thresholds and replication matter.
+- Population structure can produce misleading associations if it is not modeled appropriately.
+- Functional studies are needed to connect a statistical signal to a gene, mechanism, or possible therapeutic target.
+
+=== layout: subsection
+
+# 24. Machine Learning Transcriptomics
+
+=== layout: one-panel
+
+# Questions: Machine Learning Transcriptomics
+
+@body
+
+- How can machine learning make transcriptomic analysis more efficient or insightful?
+- How do algorithms simplify data with many genes, conditions, and time points?
+- When might a decision tree or a neural network be more useful?
+- Can gene-expression profiles support predictions about cell behavior or disease risk?
+
+=== layout: one-panel
+
+# Answers: Machine Learning Transcriptomics
+
+@body
+
+- Supervised models learn to predict labeled outcomes; unsupervised models find clusters or low-dimensional structure.
+- Preprocessing and feature selection reduce dimensionality and highlight useful expression patterns.
+- Independent test data, representative training data, and confounder checks are required to avoid overfitting and biased predictions.
+
+=== layout: two-panels
+
+# Answers: Machine Learning Transcriptomics - Validation first
+
+@left
+
+- Supervised learning predicts an outcome with labeled examples; unsupervised learning finds structure without labels.
+- Feature selection can make a high-dimensional expression dataset more interpretable, but it can also introduce bias if done incorrectly.
+- A useful model must perform on independent data and be checked for confounders, not only fit its training set.
+
+@right
+
+![Machine-learning transcriptomics visual from the Fall 2025 03C PPTX](assets/lect03c-talking_points_set_2/pptx_ml_transcriptomics.png)
+
+=== layout: subsection
+
+# 25. Synthetic Biology
+
+=== layout: one-panel
+
+# Questions: Synthetic Biology
+
+@body
+
+- Explain core design principles of DNA-based logic gates.
+- How do DNA circuits interact with existing cellular machinery?
+- What challenges arise when scaling DNA circuits for broader applications?
+- What applications, limits, and future prospects exist for DNA circuits in biosensing or therapeutics?
+
+=== layout: one-panel
+
+# Answers: Synthetic Biology
+
+@body
+
+- Synthetic biology combines biological parts into circuits that sense inputs, process information, and produce an output.
+- Promoters, regulators, and reporters can implement genetic logic for biosensors and controlled production.
+- Noise, mutation, resource competition, delivery, and safety constraints limit predictable scale-up in real cells.
+
+=== layout: two-panels
+
+# Answers: Synthetic Biology - Engineering constraints
+
+@left
+
+- A genetic circuit connects an input, a regulatory computation, and an observable or functional output.
+- Cellular context matters because natural regulators, metabolism, and limited resources can change circuit behavior.
+- Biosensing and controlled production are promising applications, but reliability, delivery, and safety determine whether a design can scale.
+
+@right
+
+![Synthetic-biology visual from the Fall 2025 03C PPTX](assets/lect03c-talking_points_set_2/pptx_synthetic_biology.png)
+
+=== layout: section
+
+# THE END

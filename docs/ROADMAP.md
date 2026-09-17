@@ -48,6 +48,15 @@ editable-object pipeline.
 3. Decide whether presenter notes need authored Djot syntax before promoting their losslessly
    retained import-report text into rebuilt native note objects.
 
+## Planned layout extension
+
+- [ ] Build a reusable `two-panels-centered-left` layout for slides that pair a full-height right
+  image with a large, unbulleted text block centered both vertically and horizontally in the left
+  panel. Keep `two-panels` unchanged for ordinary top-aligned comparison content.
+- [x] Build a reusable `subsection` divider layout for topic transitions within a chapter. Keep the
+  full-page `section` layout for chapter transitions so, for example, Chapter 4 is visibly more
+  prominent than Topic 10 within that chapter.
+
 ## Verification lanes
 
 | Lane | Permanent status | What it proves |

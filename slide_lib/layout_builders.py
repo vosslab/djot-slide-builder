@@ -169,7 +169,7 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
 	"""Build title-only, title-slide, section, and blank slide physical frames."""
 	headings = tuple(block for block in source.blocks if isinstance(block, slide_lib.native_model.Heading))
-	if contract.name == "section":
+	if contract.name in ("section", "subsection"):
 		components = slide_lib.layout_specialty_builders.section_components(
 			headings, theme, contract, session)
 		return _slide(source, index, contract, list(components.slots),

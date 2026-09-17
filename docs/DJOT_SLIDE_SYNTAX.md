@@ -104,7 +104,8 @@ required named slots still appear where listed.
 | `title-only` | Title Only, `AUTOLAYOUT_TITLE_ONLY` | none | H1 plus ordinary root body | A title introduces flexible editable text, lists, component images, or one table below when no panel layout fits. |
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
-| `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed transition needs one prominent centered heading and little else. |
+| `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
+| `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A lighter framed topic transition belongs within a chapter. |
 | `two-panels` | Title, 2 Content, `AUTOLAYOUT_TITLE_2CONTENT` | `left`, `right` | no | Two related ideas, figures, or comparisons belong side by side. |
 | `one-plus-two-panels` | Title, Content over 2 Content, `AUTOLAYOUT_TITLE_CONTENT_2CONTENT` | `left`, `top-right`, `bottom-right` | no | One broad idea pairs with two stacked supporting items. |
 | `two-plus-one-panels` | Title, 2 Content over Content, `AUTOLAYOUT_TITLE_2CONTENT_CONTENT` | `top-left`, `bottom-left`, `right` | no | Two stacked supporting items pair with one broad idea. |

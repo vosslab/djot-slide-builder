@@ -89,20 +89,22 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 	slot = _slot("title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
 		slide_lib.layout_primitives.PresentationRole.OUTLINE, rectangle, 0, frame,
 		slide_lib.layout_primitives.StyleRole.BODY)
-	item = slide_lib.layout_model.LayoutObject("section",
+	item = slide_lib.layout_model.LayoutObject(contract.name,
 		slide_lib.layout_primitives.PresentationRole.OUTLINE,
 		slide_lib.layout_primitives.StyleRole.BODY, rectangle,
 		slide_lib.layout_primitives.ObjectLayer.LAYOUT, 1, 0, content, frame,
 		"title", "title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
 		headings[0].location,
-		slide_lib.layout_object_builders.reveal_targets("section", headings, 0))
-	border = _decorative_shape("section-frame",
+		slide_lib.layout_object_builders.reveal_targets(contract.name, headings, 0))
+	border = _decorative_shape(f"{contract.name}-frame",
 		slide_lib.layout_primitives.LogicalRectangle(105, 190, 1070, 420),
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_primitives.StyleRole.ANSWER if contract.name == "subsection" else
 		slide_lib.layout_primitives.StyleRole.TRANSITION,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
 	surface = slide_lib.layout_primitives.SlideSurface(
+		slide_lib.layout_primitives.StyleRole.ANSWER if contract.name == "subsection" else
 		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
 	return SpecialtySlideComponents((slot,), (border, item), surface)
 

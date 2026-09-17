@@ -9,6 +9,50 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 ## Current operational boundary (2026-09-09)
 
+### Biotechnology Lecture 03 source merge
+
+**Decision.** The canonical Biotechnology Lecture 03C Djot deck has a section slide, a canonical
+student-question slide, and two short answer slides for each of the 25 current talking points.
+Chapter dividers retain the curriculum sequence. Historical instructor and student sources
+establish coverage, but student claims and identities are not published.
+
+**Why.** The historical source collection is incomplete and includes unreliable student answers;
+no individual instructor or student deck is authoritative. Together, the sources corroborate
+coverage but do not certify factual claims.
+
+**Consequence.** The merged Djot deck is the sole editable source for Lecture 03C. It provides a
+105-slide classroom-ready 25-topic sequence without presenting unverified student work as course
+content. The old ODP supplies relevant historical figures only; the Fall 2025 PPTX corroborates
+complete topic coverage and supplies selected newer visuals.
+
+**Owner.** `biotech/djot/lect03c-talking_points_set_2.djot`.
+
+### Lecture 03B section-divider hierarchy
+
+**Decision.** Lecture 03B section dividers use `#` for the topic and `##` for its current Fall
+2026 date or deadline.
+
+**Why.** The legacy deck separated deadline text into an independently positioned visual object,
+which produced visibly awkward spacing after conversion.
+
+**Consequence.** Each generated divider has an intentional centered heading/subtitle hierarchy,
+with no red-on-red dates or legacy midnight cutoff fragments.
+
+**Owner.** `biotech/djot/lect03b-individual_project.djot`.
+
+### Chapter and topic divider hierarchy
+
+**Decision.** `section` remains the bright course-color chapter divider; `subsection` is a
+lower-weight burgundy divider for numbered topics within that chapter.
+
+**Why.** A shared transition treatment flattened the teaching hierarchy between chapters and their
+individual talking points.
+
+**Consequence.** Both remain native editable Centered Text layouts, but their color contrast makes
+the chapter/topic relationship immediately visible.
+
+**Owner.** `slide_lib.layout_registry` and `biotech/djot/lect03c-talking_points_set_2.djot`.
+
 The native-ODP decision below supersedes earlier decisions that describe a maintained PPTX reader,
 writer, animation adapter, temporary conversion, or sibling artifact. Current operation builds one
 editable ODP from Djot and asks LibreOffice to make every classroom and review PDF from that ODP.

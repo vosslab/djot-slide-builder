@@ -466,7 +466,7 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 			if not cell_headings and not cell_items and not cell_images:
 				raise source_error(cell.location, f"{spec.name} cell {index} requires editable text or component images")
 		return
-	if spec.name in ("title-slide", "section"):
+	if spec.name in ("title-slide", "section", "subsection"):
 		if not headings or headings[0].level != 1 or items or images:
 			raise source_error(source, f"{spec.name} slides support a title and level-two subtitle lines only")
 		if any(heading.level != 2 for heading in headings[1:]):

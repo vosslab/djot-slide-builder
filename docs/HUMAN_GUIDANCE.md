@@ -15,6 +15,28 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide migration and presentation
 
+- For Lecture 03C, merge the instructor and student source coverage into one deck. My original
+  source is missing topics, but student content is unreliable, so use it only to recover the
+  missing assignment topics and do not treat student answers or identities as authoritative.
+- The old Lecture 03C ODP contains only a subset of the talking points. Use it for relevant legacy
+  visuals or supporting explanations; use the Fall 2025 03C PPTX to corroborate complete coverage
+  and provide visuals for later topics.
+- Do not call any Lecture 03C instructor material authoritative. Treat the complete `lect03c*`
+  collection as corroborating source material and keep provenance review separate from factual
+  certification.
+- Restore the Bozeman Science `What Is CRISPR?` YouTube reminder slide in Lecture 03C so the
+  instructor remembers to play it during the Native CRISPR sequence.
+- Keep Djot sources ASCII-only. Use the supported escaped or entity form when a Unicode glyph is
+  needed in rendered output.
+- Give each Lecture 03C talking point a section page, the canonical student-question page, and one
+  to three short answer pages. Keep the talking points organized by chapter, and use the historical
+  `lect03c*` sources to make the deck classroom ready.
+- Use the same proper Biotechnology Lecture 03 title-slide structure for 03A, 03B, and 03C.
+- Manually validate every Biotechnology Lecture 03 slide with an LLM before calling the deck ready.
+- Use the published Fall 2026 Biotechnology schedule as the authority for current-year Lecture 03
+  dates and milestones.
+- Use the published Fall 2026 Biotechnology course and instructor pages for current links and
+  office-hour information; do not expose obsolete Zoom meeting credentials in slides.
 - My announcements workflow is `LECT(N) 2026 + LECT(N+1) 2025 -> LECT(N+1) 2026`: copy the
   current year's previous lecture announcements, then merge in the next lecture's announcements
   from the previous year.
@@ -126,6 +148,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   vector shapes for decorations such as the star.
 - Use the existing `multiple-choice` layout for question-and-answer slides. Reveal the answer in a
   rounded light-gray box with a dark-red outline and dark-red editable text.
+- Use a topic as the section-divider heading and its date or deadline as the subtitle. Do not let
+  legacy deadline text become a separate, unaligned section-slide object.
+- Format aligned project-timeline dates as fixed-width six-character `Mon DD` labels, including
+  leading zeroes for single-digit October dates.
+- Plan a reusable `two-panels-centered-left` layout for a full-height right image and a large,
+  vertically and horizontally centered unbulleted left text block. Keep `two-panels` for ordinary
+  top-aligned comparison content.
+- Make chapter transitions visibly distinct from numbered talking-point transitions. A chapter
+  heading such as `Chapter 4: DNA Synthesis and Sequencing` must have greater visual weight than a
+  topic heading such as `10. In Vitro DNA Synthesis`.
 - Use `big-image` when one image is the focus. Give the image the main page region and place a small
   editable caption across the bottom, including recording, YouTube, and Discord signup slides.
 - Use `big-image` to close more of the gap with the original slides. The next fidelity priorities are
