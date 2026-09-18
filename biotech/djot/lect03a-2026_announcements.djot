@@ -82,7 +82,7 @@ hidden: true
 
 @caption
 
-- Make Sure Dr. Voss Is Recording
+# Make Sure Dr. Voss Is Recording
 
 === layout: two-panels
 
@@ -93,8 +93,7 @@ hidden: true
 - 1. Mute yourself when you are not speaking.
 - 2. Plug in your headphones.
 - 3. Turn off video if you have a slow connection
-- Use the secure Zoom link in Blackboard.
-- [Remote participation](https://vosslab.github.io/syllabus/fall_2026/biotech/DISCUSSION_MARKS/)
+  - Use the secure Zoom link in Blackboard.
 
 @right
 
@@ -108,9 +107,9 @@ hidden: true
 
 @caption
 
-- Dr. Voss YouTube Channel
+# *Dr. Voss YouTube Channel*
 - [https\://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)
-- a few videos for hard problems
+- watch our weekly "Stump the Vibe Coder" podcast
 
 === layout: one-plus-two-panels
 
@@ -119,10 +118,10 @@ hidden: true
 @left
 
 - I created a Discord Server called Neil Voss Lab
-  - Participation in Discord is technically not required, but I give you are required to sign up
+  - you are required to sign up, but that is all
 - Sign-up link is available on Blackboard
   - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, you should not create your own server
+  - _Be sure to connect to my server, not create your own server_
 
 @top-right
 
@@ -138,18 +137,16 @@ hidden: true
 
 @left
 
-- Schaumburg campus: SCH 600E
-- Secure Zoom link: Blackboard
-- Thursday, 12:30-1:30 p.m.
-- Wednesday, 2:30-3:30 p.m.
-- Also available by appointment
+- Schaumburg office: SCH 600E
+- Secure Zoom link: see Blackboard
+  - Thursday, 12:30-1:30 p.m.
+  - Wednesday, 2:30-3:30 p.m.
+- _Also available by appointment_
 - [Instructor information](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
 
 @right
 
 ![Slide image 8](assets/lect03a-2026_announcements/image_008.png)
-
-![Slide image 9](assets/lect03a-2026_announcements/image_009.png)
 
 === layout: one-panel
 
@@ -157,15 +154,15 @@ hidden: true
 
 @body
 
-- 1. Attend Office Hours
-- 2. [Discord]{color=red}
+- [1. *Attend Office Hours*]{color=green}
+- [2. *Discord*]{color=red}
   - by far the quickest, check multiple times per day
   - you can send direct message (DM) to me or post to the whole class
   - response time\: 1-2 calendar days
-- [3. Email]{color=blue}
+- [3. *Email*]{color=blue}
   - I receive 20 emails per day and only check once per day for mental health reasons
   - response time\: 2 business days
-- 4. Anonymous Google Form
+- [4. *Anonymous Google Form*]{color=purple}
   - goes to my email, but I can only read on laptop
   - response time\: 2-4 business days
 
@@ -179,7 +176,7 @@ hidden: true
 
 @right
 
-- New Google Form to send me an anonymous message.
+- Google Form to send me an **anonymous** message.
 - I took great care to make sure it is completely anonymous
 - Form goes directly to my email.
 - [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
@@ -281,20 +278,18 @@ hidden: true
   - I will provide next week's talking points at the end of each class, including today.
 - Biotech news (1-4 talking marks)
 
-=== layout: two-panels
+=== layout: big-image
 
-# Talking Marks\: Week 3 (Sept 17)
 
-@left
-
-- Final Scores are dynamic
-- the more points rewarded, the less each point is worth
-- Most students get a 4 based on the seven talking point sessions
-- You can obtain partial credit for completing the slide if you miss class
-
-@right
+@image
 
 ![Slide image 16](assets/lect03a-2026_announcements/image_016.png)
+
+@caption
+
+# Talking Marks\: Week 3 (Sept 17)
+- Final Scores are dynamic; the more points rewarded, the less each point is worth
+- You can obtain partial credit for completing the slide if you miss class
 
 === layout: section
 
@@ -380,7 +375,7 @@ hidden: true
 
 # General Announcements
 
-=== layout: two-panel
+=== layout: two-panels
 hidden: true
 
 # Schaumburg Natural Science Club
@@ -498,15 +493,15 @@ hidden: true
 === layout: two-panels
 hidden: false
 
+# Veridian Dynamics
+
 @left
 
 ![Slide image 18](assets/lect03a-2026_announcements/image_018.png)
 
 @right
 
-- Veridian
-- Dynamics
-- #2
+- Video \#2
 - Food Yum
 
 === layout: section

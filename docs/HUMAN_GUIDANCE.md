@@ -28,6 +28,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   instructor remembers to play it during the Native CRISPR sequence.
 - Keep Djot sources ASCII-only. Use the supported escaped or entity form when a Unicode glyph is
   needed in rendered output.
+- Autodetect bare HTTP(S) URLs in Djot as native hyperlinks; an explicit Markdown link is only
+  needed when the displayed label should differ from the URL.
 - Give each Lecture 03C talking point a section page, the canonical student-question page, and one
   to three short answer pages. Keep the talking points organized by chapter, and use the historical
   `lect03c*` sources to make the deck classroom ready.

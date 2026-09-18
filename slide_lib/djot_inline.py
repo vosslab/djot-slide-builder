@@ -15,6 +15,7 @@ import slide_lib.native_model
 # to scanning: the resulting character is ordinary text, never a delimiter.
 ESCAPABLE_PUNCTUATION = frozenset(string.punctuation)
 _COLOR_SPAN = re.compile(r"\{color=(?P<color>[a-z][a-z0-9-]*)\}")
+_BARE_URL = re.compile(r"https?://[^\s<>()\[\]{}*]+")
 
 
 #============================================
@@ -54,6 +55,17 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 		if source.startswith("![", index):
 			raise _error(path, line, source, index,
 				"images must be standalone component-image blocks")
+		if source.startswith(("http://", "https://"), index):
+			match = _BARE_URL.match(source, index)
+			if match is not None:
+				url = match.group().rstrip(".,;:")
+				if url:
+					_append_text(runs, source[text_start:index])
+					runs.append(slide_lib.native_model.Link(
+						(slide_lib.native_model.Text(slide_lib.djot_grammar.project_text(url)),), url))
+					index += len(url)
+					text_start = index
+					continue
 		if character in ("_", "*") and _opens_delimiter(source, index, end):
 			if character == "_" and index + 1 < end and source[index + 1] == "_":
 				# Consecutive underscores are visible fill-in-the-blank prose in the

@@ -43,6 +43,8 @@
   Native CRISPR answer sequence.
 - Normalized the edited Lecture 03C Djot source to ASCII-only text, retaining project-supported
   escapes and entities for rendered Unicode where needed.
+- Added automatic native-link projection for bare HTTP(S) URLs in Djot source, so course URLs no
+  longer need redundant Markdown link wrappers.
 - Expanded Lecture 03C from three to four slides per talking point and added selected relevant
   legacy-ODP and Fall 2025-PPTX visual assets to answer pages. The old ODP is retained only as a
   partial historical source, while the Fall 2025 PPTX corroborates complete topic coverage.

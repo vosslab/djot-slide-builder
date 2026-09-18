@@ -125,6 +125,9 @@ images, or one table become ordinary editable native objects in source order.  T
 not an invented content placeholder, so use `one-panel` when its native outline placeholder is
 the useful semantic surface.
 
+Bare `http://` and `https://` URLs become editable native hyperlinks automatically. Use a labeled
+Markdown link only when the displayed text should differ from the destination URL.
+
 Use one exact closing heading to select the specialty closer while retaining the `section` layout:
 
 ```djot
