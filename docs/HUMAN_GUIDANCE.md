@@ -8,7 +8,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
-## Current presentation decision (2026-09-09)
+## Current presentation decision (2026-09-21)
 
 - ODP is the sole editable artifact. LibreOffice makes every classroom PDF and every generated
   review PDF from that ODP. Save legacy PPTX as ODP in LibreOffice before one-time import.
@@ -37,6 +37,12 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Manually validate every Biotechnology Lecture 03 slide with an LLM before calling the deck ready.
 - Use the published Fall 2026 Biotechnology schedule as the authority for current-year Lecture 03
   dates and milestones.
+- Use the polished Biotechnology announcement recording visual and informational-slide treatment
+  as the shared pattern for all Genetics announcement decks.
+- Treat Genetics Lecture 04B's "Character and Trait" slide as a quiz: place the paired character
+  and trait lists in two upper panels and the question with its answer choices in the lower panel.
+- In multiple-choice Djot, keep the complete question statement in a paragraph and reserve list
+  items for answer choices so the question receives the full-width prompt region.
 - Use the published Fall 2026 Biotechnology course and instructor pages for current links and
   office-hour information; do not expose obsolete Zoom meeting credentials in slides.
 - My announcements workflow is `LECT(N) 2026 + LECT(N+1) 2025 -> LECT(N+1) 2026`: copy the
@@ -99,6 +105,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Make `deck_tools.py` the sole user-facing application CLI and keep reusable application behavior
   in `slide_lib/`.
 - Let `./build_slides.sh genetics` recursively build only the Djot slide files below `genetics/`.
+- Organize course material by lecture: keep canonical Djot sources under `genetics/LECT##/djot/`
+  and original ODP/PDF/ODS evidence under that lecture's `old/` folder. I want
+  `./build_slides.sh genetics/LECT04/` to build only Lecture 04.
 - Delete the old `tools/*.py` wrappers because this pre-production repository has no external
   compatibility callers. Add `launchers/` only for a concrete independent launcher use case.
 - Keep permanent tests on meaningful application behavior. Treat rename sweeps and representative

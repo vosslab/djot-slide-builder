@@ -9,7 +9,7 @@ Write editable ODP for one source deck:
 
 ```bash
 source source_me.sh && python3 deck_tools.py build \
-	genetics/djot/lect01b-genetic_disorders.djot -f odp
+	genetics/LECT01/djot/lect01b-genetic_disorders.djot -f odp
 ```
 
 Select one output format for a deck or a recursively searched source folder:
@@ -22,6 +22,12 @@ Build every eligible source deck recursively below a folder as ODP and PDF:
 
 ```bash
 ./build_slides.sh genetics
+```
+
+Build only one lecture by targeting its lecture folder:
+
+```bash
+./build_slides.sh genetics/LECT04/
 ```
 
 `deck_tools.py build` accepts `--format all`, `odp`, or `pdf`; `all` is the default. It recognizes
@@ -42,7 +48,7 @@ of the build.
 Inspect one Djot deck or a recursively discovered folder without writing presentation artifacts:
 
 ```bash
-source source_me.sh && python3 deck_tools.py capacity genetics/djot
+source source_me.sh && python3 deck_tools.py capacity genetics/LECT04/
 ```
 
 The command parses and compiles each selected deck once. It does not create ODP or PDF
@@ -93,15 +99,14 @@ leaf and publishes no Djot source. Fix the reported failure, then rerun the comm
 
 This is a one-time migration aid. Choose and maintain one canonical source after review; the
 imported ODP does not become a second authoring source. See [PIPELINE.md](PIPELINE.md) for
-ownership and [genetics/djot/README.md](../genetics/djot/README.md) for the regenerable corpus
-boundary.
+ownership and [genetics/README.md](../genetics/README.md) for the regenerable corpus boundary.
 
 ## Validate Djot source
 
 Run the fast, source-only structural check while authoring:
 
 ```bash
-source source_me.sh && python3 deck_tools.py lint genetics/djot
+source source_me.sh && python3 deck_tools.py lint genetics/LECT04/
 ```
 
 Before a Djot source-acceptance decision, run the separate strict native-parser gate followed by
@@ -109,7 +114,7 @@ the same semantic lint:
 
 ```bash
 source source_me.sh && python3 deck_tools.py lint \
-  --require-native --native-executable "$(command -v jotdown)" genetics/djot
+  --require-native --native-executable "$(command -v jotdown)" genetics/LECT04/
 ```
 
 Fast lint is a permanent, offline behavior check. Strict Jotdown validation, real native export,

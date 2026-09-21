@@ -60,8 +60,8 @@ a new current source of truth. This page records language exploration where it i
 
 ## Experimental genetics corpus
 
-[`genetics/djot/`](../../../genetics/djot/README.md) holds a regenerable source import of the eight
-visible `lect0*` genetics presentations. It exercises real lecture material without replacing the
+[`genetics/`](../../../genetics/README.md) holds a regenerable source import of the lecture-organized
+genetics presentations. It exercises real lecture material without replacing the
 existing Marp source. Its dedicated ODP/PPTX importers preserve source order, component images, and
 source-hidden-slide state while deliberately omitting presenter notes and arbitrary styling or
 animation inference.

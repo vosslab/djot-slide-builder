@@ -38,7 +38,7 @@ color-theme: genetics
 
 @image
 
-![Slide image 1](assets/lect02a-2025_announcements/image_001.png)
+![Biotechnology recording visual](assets/lect02a-2025_announcements/recording_biotech.png)
 
 @caption
 
@@ -48,122 +48,30 @@ Make sure Dr. Voss is recording.
 
 # Informational Slides
 
-=== layout: one-panel
-
-# Lecture Format
-
-@body
-
-- All Lectures will be held LIVE using the Zoom video conference software
-- I do expect you to be present during the entire video conference, unless you provide a reason for your absence prior to class.
-  - If you cannot make it to the lecture, I want students to check in with me via email or Discord (preferred).
-- Lectures will be recorded and available for download a few hours after their completion.
-
 === layout: two-panels
 
-# Class Zoom Info
-
-@left
-
-- Mon, 2\:00pm–5\:00pm
-- Zoom Video Conference\:
-  - [https\://roosevelt.zoom.us/j/94016849339](https://roosevelt.zoom.us/j/94016849339?pwd=M25VNTl5bnNDWTFQS04zZ1JYOFd3Zz09)
-- Meeting ID\:
-  - 940 1684 9339
-- Password\: mendel
-- Add to Your Calendar\:
-  - [Click Here](https://roosevelt.zoom.us/meeting/tJAtdu-gqjIpGd2nk6P_LVPnN3ZbYhaJs5rT/ics) for Apple iCal link
-
-@right
-
-![Slide image 2](assets/lect02a-2025_announcements/image_002.png)
-
-=== layout: two-panels
-
-# How to Use ZoomLike a Pro
+# How to Use Zoom Like a Pro
 
 @left
 
 - 1. Mute yourself when you are not speaking.
 - 2. Plug in your headphones.
-- 3. Turn off video if you have a slow connection
-- Other resources
-  - [https\://www.owllabs.com/blog/voice-echoing](https://www.owllabs.com/blog/voice-echoing)
-  - [https\://www.nytimes.com/wirecutter/blog/use-zoom-like-a-pro/](https://www.nytimes.com/wirecutter/blog/use-zoom-like-a-pro/)
+- 3. Turn off video if you have a slow connection.
+  - Use the secure Zoom link in Blackboard.
 
 @right
 
-![Slide image 3](assets/lect02a-2025_announcements/image_003.png)
+![Biotechnology Zoom visual](assets/lect02a-2025_announcements/zoom_biotech.png)
 
 === layout: big-image
 
 @image
 
-![Slide image 4](assets/lect02a-2025_announcements/image_004.png)
+![Biotechnology YouTube visual](assets/lect02a-2025_announcements/youtube_biotech.png)
 
 @caption
 
-[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for hard problems.
-
-=== layout: one-panel
-
-# Ways to Contact Dr. Voss
-
-@body
-
-- 1. Attend Office Hours
-- 2. Discord
-  - by far the quickest, check multiple times per day
-  - you can send direct message (DM) to me or post to the whole class
-  - response time\: 1-2 calendar days
-- 4. Email
-  - I receive 20 emails per day and only check once per day for mental health reasons
-  - response time\: 2 business days
-- 5. Anonymous Google Form
-  - goes to my email, but I can only read on laptop
-  - response time\: 2-4 business days
-
-=== layout: four-panels
-
-# Office Hours
-
-@top-left
-
-- Via Zoom Video Conference\:
-- [https\://zoom.us/j/97638754024](https://roosevelt.zoom.us/j/97638754024?pwd=djdlTlFhNEQ0WFV5TTNUMW1xeldYZz09)
-- Meeting ID\:
-  - 976 3875 4024
-- Password\: voss
-
-@top-right
-
-![Slide image 5](assets/lect02a-2025_announcements/image_005.png)
-
-@bottom-left
-
-![Slide image 6](assets/lect02a-2025_announcements/image_006.png)
-
-@bottom-right
-
-- Wed, 12-1p on Schaumburg-campus
-- To be determined
-- also available by appointment
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-![Slide image 7](assets/lect02a-2025_announcements/image_007.png)
-
-
-@right
-
-- New Google Form to send me an anonymous message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for difficult problems.
 
 === layout: one-plus-two-panels
 
@@ -171,29 +79,65 @@ Make sure Dr. Voss is recording.
 
 @left
 
-- I created a Discord Server called Neil Voss Lab
-  - Participation in Discord is technically not required, but I give you are required to sign up
-- Sign-up link is available on Blackboard
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, you should not create your own server
+- I created a Discord Server called Neil Voss Lab.
+  - You earn credit for signing up, and Discord is the quickest way to reach me.
+- The sign-up link is available on Blackboard.
+  - It is available as a mobile app, a desktop app, and a website.
+  - Be sure to connect to my server rather than creating your own server.
 
 @top-right
 
-![Slide image 9](assets/lect02a-2025_announcements/image_009.png)
+![Biotechnology Discord QR visual](assets/lect02a-2025_announcements/discord_qr_biotech.png)
 
 @bottom-right
 
-![Slide image 8](assets/lect02a-2025_announcements/image_008.png)
+![Biotechnology Discord visual](assets/lect02a-2025_announcements/discord_biotech.png)
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# Office Hours
 
-![Slide image 10](assets/lect02a-2025_announcements/image_010.png)
+@left
 
-@caption
+- Office: SCH 600E, Schaumburg campus
+- Secure Zoom link: see Blackboard
+- Check Blackboard for the current office-hours schedule.
+- Also available by appointment.
 
-Sign up for the Neil Voss Lab Discord server through Blackboard.
+@right
+
+![Biotechnology office-hours visual](assets/lect02a-2025_announcements/office_hours_biotech.png)
+
+=== layout: one-panel
+
+# Ways to Contact Dr. Voss
+
+@body
+
+- 1. Attend office hours.
+- 2. Discord.
+  - Check several times per day; it is the quickest option.
+  - Send a direct message for private questions or post general questions to the class.
+  - Response time: 1-2 calendar days.
+- 3. Email.
+  - Response time: 2 business days.
+- 4. Anonymous Google Form.
+  - Response time: 2-4 business days.
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+- Use the anonymous Google Form for questions you would rather not ask publicly.
+- The form goes directly to my email and does not identify you to the class.
+
+@right
+
+- Send an anonymous Google Form message directly to my email.
+- The form is intended for questions you would rather not ask publicly.
+- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
 
 === layout: section
 

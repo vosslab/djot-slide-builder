@@ -16,11 +16,11 @@ color-theme: biotechnology
 
 - Ice Breaker
 - Announcements
-- Overview of Individual Project
-- Set #2 Talking Points
-- Select Set #3 Talking Points
+- Overview of the individual project
+- Set #2 talking points
+- Select Set #3 talking points
 - Closing Remarks
-- Three Ideas are Due Tonight
+- Assignments 0 and 1 plus three project ideas are due tonight
 
 === layout: one-panel
 hidden: true
@@ -56,12 +56,15 @@ hidden: true
 - State your name, major, and plans after graduation.
 - [What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?]{color=red}
 
-=== layout: one-panel
+=== layout: big-image
 
-
-@body
+@image
 
 ![Slide image 1](assets/lect03a-2026_announcements/image_001.png)
+
+@caption
+
+Make sure Dr. Voss is recording.
 
 === layout: one-panel
 hidden: true
@@ -75,6 +78,7 @@ hidden: true
   - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
 
 === layout: big-image
+hidden: true
 
 @image
 
@@ -82,7 +86,7 @@ hidden: true
 
 @caption
 
-# Make Sure Dr. Voss Is Recording
+Make sure Dr. Voss is recording.
 
 === layout: two-panels
 
@@ -97,19 +101,17 @@ hidden: true
 
 @right
 
-![Slide image 3](assets/lect03a-2026_announcements/image_003.png)
+![Slide image 4](assets/lect03a-2026_announcements/image_004.png)
 
 === layout: big-image
 
 @image
 
-![Slide image 4](assets/lect03a-2026_announcements/image_004.png)
+![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
 
 @caption
 
-# *Dr. Voss YouTube Channel*
-- [https\://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)
-- watch our weekly "Stump the Vibe Coder" podcast
+[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for difficult problems.
 
 === layout: one-plus-two-panels
 
@@ -118,10 +120,10 @@ hidden: true
 @left
 
 - I created a Discord Server called Neil Voss Lab
-  - you are required to sign up, but that is all
+  - You earn credit for signing up, and Discord is the quickest way to reach me.
 - Sign-up link is available on Blackboard
   - It is available as a mobile app, a desktop app, and a website
-  - _Be sure to connect to my server, not create your own server_
+  - Be sure to connect to my server rather than creating your own server.
 
 @top-right
 
@@ -129,7 +131,7 @@ hidden: true
 
 @bottom-right
 
-![Slide image 5](assets/lect03a-2026_announcements/image_005.png)
+![Slide image 7](assets/lect03a-2026_announcements/image_007.png)
 
 === layout: two-panels
 
@@ -137,16 +139,16 @@ hidden: true
 
 @left
 
-- Schaumburg office: SCH 600E
+- Office: SCH 600E, Schaumburg campus
 - Secure Zoom link: see Blackboard
   - Thursday, 12:30-1:30 p.m.
   - Wednesday, 2:30-3:30 p.m.
-- _Also available by appointment_
+- Also available by appointment
 - [Instructor information](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
 
 @right
 
-![Slide image 8](assets/lect03a-2026_announcements/image_008.png)
+![Slide image 3](assets/lect03a-2026_announcements/image_003.png)
 
 === layout: one-panel
 
@@ -154,17 +156,15 @@ hidden: true
 
 @body
 
-- [1. *Attend Office Hours*]{color=green}
-- [2. *Discord*]{color=red}
-  - by far the quickest, check multiple times per day
-  - you can send direct message (DM) to me or post to the whole class
-  - response time\: 1-2 calendar days
-- [3. *Email*]{color=blue}
-  - I receive 20 emails per day and only check once per day for mental health reasons
-  - response time\: 2 business days
-- [4. *Anonymous Google Form*]{color=purple}
-  - goes to my email, but I can only read on laptop
-  - response time\: 2-4 business days
+- 1. Attend office hours
+- 2. Discord
+  - Check several times per day; it is the quickest option.
+  - Send a direct message for private questions or post general questions to the class.
+  - Response time: 1-2 calendar days.
+- 3. Email
+  - Response time: 2 business days.
+- 4. Anonymous Google Form
+  - Response time: 2-4 business days.
 
 === layout: two-panels
 
@@ -172,7 +172,8 @@ hidden: true
 
 @left
 
-![Slide image 10](assets/lect03a-2026_announcements/image_010.png)
+- Use the anonymous Google Form for questions you would rather not ask publicly.
+- The form goes directly to my email and does not identify you to the class.
 
 @right
 
@@ -191,11 +192,9 @@ hidden: true
 
 @body
 
-![Slide image 12](assets/lect03a-2026_announcements/image_012.png)
-
 - Use your proper first name or a consistent nickname.
 - Discussion marks are assigned by sorting names alphabetically by first name.
-- Do not ??\:
+- Do not use:
   - Start with your last name (e.g., "Smith Jane").
   - Use something obscure (e.g., "iPhone User").
   - Use a different name each time (consistency is key).
@@ -206,13 +205,11 @@ hidden: true
   - Select "Rename."
   - Enter your new name and click "OK."
 
-![Slide image 13](assets/lect03a-2026_announcements/image_013.png)
-
-=== layout: two-panels
+=== layout: one-panel
 hidden: true
 # Change Name Before a Meeting
 
-@left
+@body
 
 - Open the Zoom desktop client or the mobile app.
 - Go to your profile by clicking on your profile picture or initials in the top-right corner.
@@ -220,17 +217,11 @@ hidden: true
 - Click "Edit" next to your name.
 - Enter your preferred name and then click "Save."
 
-@right
-
-![Slide image 14](assets/lect03a-2026_announcements/image_014.png)
-
 === layout: one-panel
 hidden: true
 # [Discussion Marks\: Week 2 (Sept 10)]{color=blue}
 
 @body
-
-![Slide image 15](assets/lect03a-2026_announcements/image_015.png)
 
 - Final Scores are dynamic
 - the more marks rewarded, the less each mark is worth
@@ -249,7 +240,7 @@ hidden: true
 - Share personal experiences that relate to the course content.
 - Post relevant news articles or resources that connect to the topics we discuss.
 - Be on time for the Zoom meeting to earn discussion marks for punctuality.
-- [New\: adding emoji tags ???? to other student comments, earns 0.1 points, ]{color=green}max 10
+- Adding emoji tags to another student's comment earns 0.1 points, up to 10 points.
 
 === layout: one-panel
 hidden: true
@@ -272,24 +263,20 @@ hidden: true
 
 @body
 
-- Talking Marks (1-6 talking marks)
-  - Before each lecture week, I will distribute a list of topics for students to read about in the textbook and with online and other resources.
-  - At the beginning of class, each student will be randomly assigned a topic and will talk about their topic from their seat.
-  - I will provide next week's talking points at the end of each class, including today.
-- Biotech news (1-4 talking marks)
+- Talking points earn 1-6 marks.
+  - Before each lecture week, I will distribute topics to research in the textbook and other resources.
+  - At the beginning of class, each student will be assigned a topic and explain it from their seat.
+  - I will provide the next set of talking points at the end of class.
+- Biotechnology news earns 1-4 marks.
 
-=== layout: big-image
-
-
-@image
-
-![Slide image 16](assets/lect03a-2026_announcements/image_016.png)
-
-@caption
+=== layout: one-panel
 
 # Talking Marks\: Week 3 (Sept 17)
-- Final Scores are dynamic; the more points rewarded, the less each point is worth
-- You can obtain partial credit for completing the slide if you miss class
+
+@body
+
+- Final scores are dynamic; the more points awarded, the less each point is worth.
+- You can earn partial credit for completing the slide if you miss class.
 
 === layout: section
 
@@ -302,17 +289,10 @@ hidden: true
 @body
 
 - Include a picture of your face
-- Answer the following questions about yourself\:
-  - what are your career goals?
-  - what is your favorite biology subject?
-  - what would you like to learn in this class?
-  - what are you nervous about in this class?
-  - what is your favorite local restaurant?
-  - what is one interesting thing that you did over the break?
-- Link Available on Blackboard
-  - Due Sept 21
-  - no points awarded after date.
-- See link on Blackboard
+- Answer questions about your goals, interests, and what you want to learn.
+- Link available on Blackboard.
+  - Due Sept 24.
+  - No points are awarded after the deadline.
 
 === layout: one-panel
 
@@ -375,12 +355,12 @@ hidden: true
 
 # General Announcements
 
-=== layout: two-panels
+=== layout: one-panel
 hidden: true
 
 # Schaumburg Natural Science Club
 
-@left
+@body
 
 - Upcoming Meetings\:
   - [TBD]{color=red}
@@ -390,19 +370,15 @@ hidden: true
 - Fun social activities
 - Professional development
 
-@right
-
-![Slide image 11](assets/lect03a-2026_announcements/image_011.png)
-
 === layout: one-panel
 hidden: true
 
-# Spring 2026 Registration
+# Spring 2027 Registration
 
 @body
 
-- Registration for Spring 2026 usually starts November 1
-- Meet with your advisor if you are unsure about what to take!
+- Spring registration usually starts November 1.
+- Meet with your advisor if you are unsure what to take.
 
 === layout: one-panel
 hidden: true
@@ -411,14 +387,7 @@ hidden: true
 
 @body
 
-- [BCHM 355/455]{color=blue}
-  - Biochemistry Lecture
-  - Thurs evenings 6pm to 9pm
-  - Remote over Zoom
-- BCHM 356/456
-  - Biochemistry Lab
-  - Tues mornings, 10am to 2pm
-  - Face-to-face Schaumburg
+- Spring course information will be posted when available.
 
 === layout: one-panel
 hidden: true
@@ -427,14 +396,7 @@ hidden: true
 
 @body
 
-- BIOL 383/483 Special Topics
-  - [Biology and Ethics in Film]{color=purple}
-  - Tue/Thurs night 6-9p (Zoom)
-  - July 1st through August 4th
-- Summer 2024\:
-  - Schedule\: [https\://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit](https://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit)
-  - Points\: [https\://docs.google.com/spreadsheets/d/1E2Lz0c\_DKwqCHkDKCnPD4BsEU-918uKr4oZvv\_dXgvA/edit](https://docs.google.com/spreadsheets/d/1E2Lz0c_DKwqCHkDKCnPD4BsEU-918uKr4oZvv_dXgvA/edit)
-- Most of grade is weekly writing prompt, just getting it done is key
+- Summer course information will be posted when available.
 
 === layout: section
 hidden: true
@@ -448,12 +410,9 @@ hidden: true
 
 @body
 
-- Hi Students,
-- You will be receiving an email to complete [course evaluations]{color=red} for your courses.
-- I want to encourage you to complete them, they are our [primary source for evaluating faculty performance]{color=red}.
-- Your opinion does matter, it can help determine who gets salary raises, and a string of negative evaluations can get a professor replaced.
-- Further, I appreciate getting [your feedback]{color=red} in an anonymous way. It helps me [improve the courses]{color=red} I teach.
-- Thanks, Dr. Voss
+- You will receive an email when course evaluations open.
+- Anonymous feedback helps improve the course.
+- Please complete the survey before its published deadline.
 
 === layout: one-panel
 hidden: true
@@ -462,9 +421,8 @@ hidden: true
 
 @body
 
-- IDEA Student Ratings of Instruction survey is now open and available for students to complete through [Sunday, December 8, 2024]{color=red}.
-- It can take up to 5-10 minutes to complete the Course Evaluation
-- Surveys are open and available for students to complete by accessing the following link\:
+- Course evaluations usually take 5-10 minutes to complete.
+- Access the survey here\:
   - [https\://roosevelt.campuslabs.com/eval-home/](https://roosevelt.campuslabs.com/eval-home/)
   - Students may log in with their RU Net ID and password.
 
@@ -485,21 +443,15 @@ hidden: true
 
 @body
 
-![Slide image 17](assets/lect03a-2026_announcements/image_017.png)
-
 - I cannot see individual students only total completion
 - percentage. [Ends Sun, Dec 8.]{color=red}
 
-=== layout: two-panels
+=== layout: one-panel
 hidden: false
 
 # Veridian Dynamics
 
-@left
-
-![Slide image 18](assets/lect03a-2026_announcements/image_018.png)
-
-@right
+@body
 
 - Video \#2
 - Food Yum

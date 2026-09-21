@@ -1,0 +1,260 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04D
+
+## Cross Experiments
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: one-panel
+
+# Terminology for Cross Experiments
+
+@body
+
+- P\: parental generation
+- F1\: offspring of P
+- F2\: offspring of F1
+- F3\: offspring of F2
+- F4\: ...
+
+=== layout: two-panels
+
+# True Breeding
+
+@left
+
+- Garden peas allow for self-pollination as well.
+  - Mendel was able to determine if a plant was true-breeding by self-pollinating the plant and looking at its offspring.
+- True-breeding plants always will produce offspring of the same phenotype.
+
+@right
+
+![Slide image 1](assets/lect04d-cross_experiments/image_001.png)
+
+=== layout: two-panels
+
+# Hybrid Plants
+
+@left
+
+- In order to study traits, Mendel conducted cross experiments.
+  - Garden peas allow for self-pollination as well.
+- Mendel produced hybrid plants using controlled cross-pollination of true-breeding parents
+  - Crossing true-breeding plants that differ in a  trait produces a hybrid.
+
+@right
+
+![Slide image 2](assets/lect04d-cross_experiments/image_002.png)
+
+=== layout: one-panel
+
+# Zygosity Vocabulary
+
+@body
+
+- An organism with two identical alleles for a character is homozygous for the gene controlling that character
+  - true-breeding organisms are homozygous
+- An organism that has two different alleles for a gene is heterozygous for the gene controlling that character
+  - heterozygotes are hybrids and not true-breeding
+
+=== layout: one-panel
+
+# The Monohybrid Cross
+
+@body
+
+- A monohybrid cross is a mating between individuals who have different alleles at one genetic locus of interest.
+- A cross between two individuals that are both heterozygous for one character is called a monohybrid cross
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect04d-cross_experiments/image_003.jpg)
+
+- Purple
+- flowers
+
+- White
+- flowers
+
+- P Generation
+- (true-breeding
+- parents)
+
+- Experiment
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04d-cross_experiments/image_004.jpg)
+
+- Self- or cross-pollination
+
+- All plants had purple flowers
+
+- Purple
+- flowers
+
+- White
+- flowers
+
+- P Generation
+- (true-breeding
+- parents)
+
+- F1 Generation
+- (hybrids)
+
+- Experiment
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect04d-cross_experiments/image_005.jpg)
+
+- 705 purple-flowered
+- plants
+
+- 224 white-flowered
+- plants
+
+- Self- or cross-pollination
+
+- All plants had purple flowers
+
+- Purple
+- flowers
+
+- White
+- flowers
+
+- P Generation
+- (true-breeding
+- parents)
+
+- F1 Generation
+- (hybrids)
+
+- F2 Generation
+
+- Experiment
+
+=== layout: two-panels
+
+# Hybrid Cross Terminology
+
+@left
+
+- P\: parental generation
+  - true-breeding, i.e., homozygous for all genes
+  - mates have different phenotype, e.g., purple and white flowers
+- F1\: offspring of P
+  - heterozygous for all genes
+  - all display dominant phenotype, purple
+- F2\: offspring of F1
+  - exhibit interesting ratios of phenotypes
+  - e.g., 3\:1 ratio in monohybrid cross
+- F3\: offspring of F2
+- F4\: ...
+
+@right
+
+![Slide image 6](assets/lect04d-cross_experiments/image_006.png)
+
+=== layout: one-panel
+
+# Hybrid Crosses
+
+@body
+
+- A cross between two individuals that are both heterozygous for [one character]{color=red} is called a [monohybrid]{color=red} cross
+  - [Aa × Aa]{color=red}
+- A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
+  - AaBb × AaBb
+- A cross between two individuals that are both heterozygous for [three characters]{color=green} is called a [trihybrid ]{color=green}cross
+  - [AaBbCc × AaBbCc]{color=green}
+
+=== layout: section
+
+# Reciprocal Crosses
+
+=== layout: one-panel
+
+# Reciprocal Crosses
+
+@body
+
+![Slide image 7](assets/lect04d-cross_experiments/image_007.png)
+
+- Pea plants are sexual organisms
+- A cross can be preformed in two ways\:
+  - Male purple x Female [white]{color=gray}
+  - Male [white]{color=gray} x Female purple
+- For Mendel, the outcome of reciprocal cross did not depend on which trait was in the male or the female\:
+- A reciprocal cross should show no difference, unless the gene is sex-linked (Chapter 5)
+
+=== layout: section
+
+# Testcross
+
+=== layout: two-panels
+
+# Testcross
+
+@left
+
+- A cross between a heterozygote (or unknown) and a [homozygous recessive]{color=red} is a testcross
+- In a testcross of a Ww heterozygous parent with a ww homozygous recessive, the progeny are Ww and ww in the ratio of 1 \: 1.
+
+@right
+
+![Slide image 8](assets/lect04d-cross_experiments/image_008.png)
+
+=== layout: two-panels
+
+# Testcross
+
+@left
+
+- The phenotypes of the progeny reveal the relative frequencies of the different gametes produced by the heterozygous parent
+- The recessive parent contributes only recessive alleles.
+
+@right
+
+![Slide image 9](assets/lect04d-cross_experiments/image_009.png)
+
+=== layout: one-panel
+
+# Mendel’s testcrosses
+
+@body
+
+![Slide image 10](assets/lect04d-cross_experiments/image_010.jpg)
+
+=== layout: one-panel
+
+# Types of Crosses
+
+@body
+
+- Testcross\: breeding the mystery individual with a homozygous recessive individual
+- Hybrid crosses\:
+  - A cross between two individuals that are both heterozygous for one character is called a monohybrid cross
+  - A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
+  - Three characters is a trihybrid cross, etc.
+- Backcross\: hybrid organisms (F1) are crossed with one of the parental (P) genotypes
+- Reciprocal cross\: swapping the traits of the male and female in a cross.
+
+=== layout: section
+
+# THE END

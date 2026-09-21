@@ -2,11 +2,12 @@ color-theme: genetics
 
 === layout: title-slide
 
-# Lecture 03A
+# Lecture 04A
 
 ## Genetics 351/451: Announcements
+## Chapter 4
 ## Dr. Neil Voss
-## Sept 15, 2026
+## Sept 22, 2026
 
 === layout: one-panel
 
@@ -15,31 +16,34 @@ color-theme: genetics
 @body
 
 - Ice breaker and announcements
-- Blood and HLA typing
-- DNA fingerprinting
-- SNP genotyping
-- Whole-genome analysis
-- Review challenges and closing remarks
+- Mendel and the origins of genetics
+- The first two principles of heredity
+- Cross experiments and segregation
+- Punnett squares
+- Independent assortment and practice problems
+- Assignment 3 is due tonight
+- Closing remarks
 
 === layout: one-panel
+hidden: true
 
-# Breakout Room Chat
+# [Breakout Room Chat]{color=red}
 
 @body
 
 - State your name, major, and post-grad plans
-- We had great weather this weekend. What is your favorite outdoor activity?
+- [We had great weather this weekend. What is your favorite outdoor activity?]{color=red}
   - Dr. Voss\: riding my bicycle, watching my kids play sports, go on a walk
 
 === layout: one-panel
 hidden: true
 
-# Breakout Room Chat
+# [Breakout Room Chat]{color=red}
 
 @body
 
 - State your name, major, and post-grad plans
-- What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?
+- [What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?]{color=red}
   - Dr. Voss\:
 
 === layout: section
@@ -54,9 +58,9 @@ hidden: true
 
 @body
 
-- Choose your own room
-  - max 6 students
-  - opt out room, don’t participate get 18 points automatically
+- [Choose your own room]{color=blue}
+  - [max 6 students]{color=blue}
+  - [opt out room, don’t participate get 18 points automatically]{color=blue}
 
 === layout: one-panel
 hidden: true
@@ -66,11 +70,11 @@ hidden: true
 @body
 
 - A. Best Group Yet!
-- B. Good Group, I am happy
+- [B. Good Group, I am happy]{color=green}
 - C. Decent Group, this will work
 - D. Okay, could have been better
 - E. Poor, group did not work well
-- F. Disaster!
+- [F. Disaster!]{color=red}
 
 === layout: one-panel
 hidden: true
@@ -81,7 +85,7 @@ hidden: true
 
 - This class is going primarily remote for time being.
 - The classrooms will still be available for students who prefer to be on campus.
-- BUT you have to let me know if you plan to be on campus
+- [BUT you have to let me know]{color=red} if you plan to be on campus
   - I need to coordinate with the AV technicians to get things working at least 30 minutes before the start of class
 - You can Slack DM me or send an email
 
@@ -89,7 +93,7 @@ hidden: true
 
 @image
 
-![Slide image 1](assets/lect03a-2026_announcements/image_001.png)
+![Biotechnology recording visual](assets/lect04a-2026_announcements/recording_biotech.png)
 
 @caption
 
@@ -99,74 +103,30 @@ Make sure Dr. Voss is recording.
 
 # Informational Slides
 
+=== layout: two-panels
+
+# How to Use Zoom Like a Pro
+
+@left
+
+- 1. Mute yourself when you are not speaking.
+- 2. Plug in your headphones.
+- 3. Turn off video if you have a slow connection.
+  - Use the secure Zoom link in Blackboard.
+
+@right
+
+![Biotechnology Zoom visual](assets/lect04a-2026_announcements/zoom_biotech.png)
+
 === layout: big-image
 
 @image
 
-![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
+![Biotechnology YouTube visual](assets/lect04a-2026_announcements/youtube_biotech.png)
 
 @caption
 
-[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for hard problems.
-
-=== layout: one-panel
-
-# Ways to Contact Dr. Voss
-
-@body
-
-- 1. Attend Office Hours
-- 2. Discord
-  - by far the quickest, check multiple times per day
-  - you can send direct message (DM) to me or post to the whole class
-  - response time\: 1-2 calendar days
-- 4. Email
-  - I receive 20 emails per day and only check once per day for mental health reasons
-  - response time\: 2 business days
-- 5. Anonymous Google Form
-  - goes to my email, but I can only read on laptop
-  - response time\: 2-4 business days
-
-=== layout: four-panels
-
-# Office Hours
-
-@top-left
-
-- Via Zoom Video Conference\:
-- [https\://zoom.us/j/97638754024](https://roosevelt.zoom.us/j/97638754024?pwd=djdlTlFhNEQ0WFV5TTNUMW1xeldYZz09)
-- Meeting ID\:
-  - 976 3875 4024
-- Password\: voss
-
-@top-right
-
-![Slide image 3](assets/lect03a-2026_announcements/image_003.png)
-
-@bottom-left
-
-![Slide image 4](assets/lect03a-2026_announcements/image_004.png)
-
-@bottom-right
-
-- Wed, 12-1p on Schaumburg-campus
-- To be determined
-- also available by appointment
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-![Slide image 5](assets/lect03a-2026_announcements/image_005.png)
-
-@right
-
-- New Google Form to send me an anonymous message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for difficult problems.
 
 === layout: one-plus-two-panels
 
@@ -174,29 +134,67 @@ Make sure Dr. Voss is recording.
 
 @left
 
-- I created a Discord Server called Neil Voss Lab
-  - Participation in Discord is technically not required, but I give you are required to sign up
-- Sign-up link is available on Blackboard
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, you should not create your own server
+- I created a Discord Server called Neil Voss Lab.
+  - You earn credit for signing up, and Discord is the quickest way to reach me.
+- The sign-up link is available on Blackboard.
+  - It is available as a mobile app, a desktop app, and a website.
+  - Be sure to connect to my server rather than creating your own server.
 
 @top-right
 
-![Slide image 7](assets/lect03a-2026_announcements/image_007.png)
+![Biotechnology Discord QR visual](assets/lect04a-2026_announcements/discord_qr_biotech.png)
 
 @bottom-right
 
-![Slide image 6](assets/lect03a-2026_announcements/image_006.png)
+![Biotechnology Discord visual](assets/lect04a-2026_announcements/discord_biotech.png)
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# Office Hours
 
-![Slide image 8](assets/lect03a-2026_announcements/image_008.png)
+@left
 
-@caption
+- Office: SCH 600E, Schaumburg campus
+- Secure Zoom link: see Blackboard
+- Thursday, 12:30-1:30 p.m.
+- Wednesday, 2:30-3:30 p.m.
+- Also available by appointment
+- [Instructor information](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
 
-Sign up for the Neil Voss Lab Discord server through Blackboard.
+@right
+
+![Biotechnology office-hours visual](assets/lect04a-2026_announcements/office_hours_biotech.png)
+
+=== layout: one-panel
+
+# Ways to Contact Dr. Voss
+
+@body
+
+- 1. Attend office hours.
+- 2. Discord.
+  - Check several times per day; it is the quickest option.
+  - Send a direct message for private questions or post general questions to the class.
+  - Response time: 1-2 calendar days.
+- 3. Email.
+  - Response time: 2 business days.
+- 4. Anonymous Google Form.
+  - Response time: 2-4 business days.
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+- Use the anonymous Google Form for questions you would rather not ask publicly.
+- The form goes directly to my email and does not identify you to the class.
+
+@right
+
+- Send an anonymous Google Form message directly to my email.
+- The form is intended for questions you would rather not ask publicly.
+- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
 
 === layout: section
 
@@ -207,7 +205,7 @@ Sign up for the Neil Voss Lab Discord server through Blackboard.
 
 @body
 
-![Slide image 9](assets/lect03a-2026_announcements/image_009.png)
+![Slide image 8](assets/lect04a-2026_announcements/image_008.png)
 
 - Textbooks for class
 
@@ -222,21 +220,21 @@ Sign up for the Neil Voss Lab Discord server through Blackboard.
 - Genetics\: Analysis of Genes and Genomes
 - 9th Edition
 
-![Slide image 10](assets/lect03a-2026_announcements/image_010.png)
+![Slide image 9](assets/lect04a-2026_announcements/image_009.png)
 
 === layout: two-panels
 
-# New, Free OER Textbook for 2025
+# New, Free OER Textbook
 
 @left
 
 - Advanced Genetics\: Mechanisms of Inheritance and Analysis
   - [https\://bio.libretexts.org/Courses/Roosevelt\_University/Advanced\_Genetics%3A\_Mechanisms\_of\_Inheritance\_and\_Analysis](https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis)
-- Dr. Voss is creating his own custom textbook but it will take some time.
+- Dr. Voss is creating a custom textbook, but it will take some time.
 
 @right
 
-![Slide image 11](assets/lect03a-2026_announcements/image_011.png)
+![Slide image 10](assets/lect04a-2026_announcements/image_010.png)
 
 === layout: two-panels
 
@@ -249,7 +247,7 @@ Sign up for the Neil Voss Lab Discord server through Blackboard.
 
 @right
 
-![Slide image 12](assets/lect03a-2026_announcements/image_012.png)
+![Slide image 11](assets/lect04a-2026_announcements/image_011.png)
 
 === layout: section
 
@@ -262,17 +260,13 @@ Sign up for the Neil Voss Lab Discord server through Blackboard.
 @body
 
 - Syllabus
-  - [https\://docs.google.com/document/d/1ircUaOjg9mUbYbaXYBHPc4R76qit50W1pPK8T8exdyg/edit](https://docs.google.com/document/d/1ircUaOjg9mUbYbaXYBHPc4R76qit50W1pPK8T8exdyg/edit)
-- Course Schedule
-  - [https\://docs.google.com/spreadsheets/d/1niHh8ECDTfMujpgiD3XtXgPhOXLPh2wLyGSC3v9XGvM/edit](https://docs.google.com/spreadsheets/d/1niHh8ECDTfMujpgiD3XtXgPhOXLPh2wLyGSC3v9XGvM/edit)
-- Assessment and Points Possible
-  - [https\://docs.google.com/spreadsheets/d/1jdQe1wHH6jQcl2hlY30pYFz7BT5uN7tAGer4Q7U8gUc/edit](https://docs.google.com/spreadsheets/d/1jdQe1wHH6jQcl2hlY30pYFz7BT5uN7tAGer4Q7U8gUc/edit)
-- Suggested Weekly Timetable
-  - [https\://docs.google.com/document/d/1KavB9A8XLwvisdU1nKV0d8ZvlAxZtgVKdsG8dObUbsI/edit](https://docs.google.com/document/d/1KavB9A8XLwvisdU1nKV0d8ZvlAxZtgVKdsG8dObUbsI/edit)
-- Policies and Student Resources
-  - [https\://docs.google.com/document/d/1E86Rh\_pVHYyNZOFLCzdLRn\_AIYyzQXdJPnAoAEPYwBM/edit](https://docs.google.com/document/d/1E86Rh_pVHYyNZOFLCzdLRn_AIYyzQXdJPnAoAEPYwBM/edit)
-- University Important Dates
-  - [https\://docs.google.com/spreadsheets/d/1YuK02ObBJgxFlQSLx0xtKdaLNBfuOgM466Hh6MRQczE/edit](https://docs.google.com/spreadsheets/d/1YuK02ObBJgxFlQSLx0xtKdaLNBfuOgM466Hh6MRQczE/edit)
+  - [https\://vosslab.github.io/syllabus/fall_2026/genetics/](https://vosslab.github.io/syllabus/fall_2026/genetics/)
+- Course schedule
+  - [https\://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/](https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/)
+- Coursework and grades
+  - [https\://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/](https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/)
+- Policies and student resources
+  - [https\://vosslab.github.io/syllabus/fall_2026/shared/policies/](https://vosslab.github.io/syllabus/fall_2026/shared/policies/)
 
 === layout: one-panel
 
@@ -280,9 +274,9 @@ Sign up for the Neil Voss Lab Discord server through Blackboard.
 
 @body
 
-- Limited versions of lecture slides will be available on blackboard BEFORE class, when available.
-  - They will be labeled with PREVIEW in the filename.
-- Full versions of lecture slides will be available on blackboard within 36 hours AFTER the lecture.
+- Limited versions of lecture slides may be available on Blackboard before class.
+  - They are labeled PREVIEW in the filename.
+- Full versions of lecture slides are available on Blackboard after class.
 
 === layout: section
 
@@ -330,14 +324,14 @@ Sign up for the Neil Voss Lab Discord server through Blackboard.
 
 === layout: one-panel
 
-# Don’t Panic
+# [Don’t Panic]{color=red}
 
 @body
 
 - If you experience internet troubles or non-academic distractions during a quiz/exam\:
   - 1. Don’t panic
   - 2. Stop and close the quiz/exam without looking at all the questions
-  - 3. Contact me immediately, preferably via Discord, but you do not need to rush
+  - 3. [Contact me immediately]{color=red}, preferably via Discord, but you do not need to rush
 - Note\: Once class begins, I no longer check my email.
 - If you haven't looked at all the questions, I can reset the quiz/exam
 - If you have looked at some questions, I can create a new custom quiz/exam with only the portion that you haven't seen yet.
@@ -380,7 +374,7 @@ hidden: true
 
 @body
 
-- Exam review session 2\:00pm!
+- Exam review session [2\:00pm]{color=red}!
 - Timing\:
   - Open 3\:00pm Wed, Feb 28th
   - Finish 10\:00pm Sun, March 3rd
@@ -396,7 +390,7 @@ hidden: true
 @body
 
 - Cumulative exam, all chapters from semester
-- Exam review session begins at 2\:00pm!
+- Exam review session begins at [2\:00pm]{color=red}!
 - Timing\:
   - Open 3pm Wed, May 1st
   - Finish 10pm Sun, May 5th
@@ -410,11 +404,11 @@ hidden: true
 
 @body
 
-- (+1 point) Complete either exam part by
+- ([+1 point]{color=green}) Complete either exam part by
   - Sat evening (5pm)
-- (+1 point) Complete both exam parts by
+- ([+1 point]{color=green}) Complete both exam parts by
   - Sun evening (5pm)
-- (–1 point) Completing the exam after the deadline
+- ([–1 point]{color=red}) Completing the exam after the deadline
   - additional penalties for even more late submissions
 - Justification, late students give me anxiety. Things come up (life interferes) and deadlines are missed.
 
@@ -428,12 +422,12 @@ hidden: true
 - After everyone has completed the quiz, it will be available to look at.
 - The fastest way to find your answers, is to go under the Grade Center and click on your score for the quiz.
   - Then click view attempt
-- Group Quizzes are only available from the student that submitted
-  - Contact Dr. Voss if they cannot be reached
+- [Group Quizzes are only available from the student that submitted]{color=red}
+  - [Contact Dr. Voss if they cannot be reached]{color=red}
 
 @right
 
-![Slide image 13](assets/lect03a-2026_announcements/image_013.png)
+![Slide image 12](assets/lect04a-2026_announcements/image_012.png)
 
 === layout: one-panel
 hidden: true
@@ -443,7 +437,7 @@ hidden: true
 @body
 
 - All Blackboard assignments have been reopened to help you prepare for the Mid-Term Exam.
-- All assignments are due Friday, Oct 25th, at midnight
+- All assignments are due[ Friday, Oct 25th, ]{color=red}at midnight
 - Retake the assignments as many times as needed to solidify your understanding. Only your highest score counts!
 
 === layout: one-panel
@@ -454,7 +448,7 @@ hidden: true
 @body
 
 - All Blackboard assignments have been reopened to help you prepare for the Final Exam.
-- All assignments are due Friday, Dec 13th, at midnight
+- All assignments are due[ Friday, Dec 13th, ]{color=red}at midnight
 - Retake the assignments as many times as needed to solidify your understanding. Only your highest score counts!
 
 === layout: section
@@ -474,7 +468,7 @@ hidden: true
   - Back-tracking is allowed
   - random order
   - Limited calculations, not testing calculator use
-  - 1½  min per question
+  - 1½ min per question
 - Final Score
   - Average of Individual and Group Scores\: (14 + 20)/2 = 17 points
 
@@ -555,12 +549,13 @@ hidden: true
 
 @body
 
-- Q1 – Due Sept 22
-- Q2 – Due Oct 7
-- MidTerm Exam – Due Oct 14
-- Q4 – Due Nov 4
-- Q5 – Due Dec 2
-- Final Exam – Due Dec 9
+- Quiz 1 – Due Sept 15
+- Quiz 2 – Due Sept 29
+- Quiz 3 – Due Oct 13
+- Mid-term exam – Oct 20, in class
+- Quiz 4 – Due Nov 17
+- Quiz 5 – Due Dec 8
+- Final exam – Dec 15, in class
 
 === layout: section
 
@@ -575,10 +570,8 @@ hidden: true
 - Include a picture of your face
 - Answer the following questions about yourself\:
   - what are your career goals? what is your favorite biology subject? what would you like to learn in this class? what are you nervous about in this class? what is your favorite local restaurant? what is one interesting thing that you did over the break?
-- Link Available on Blackboard
-  - Within First Two Weeks of Class, Due Sept 21.
-  - no points awarded after date.
-- See link on Blackboard
+- Link available on Blackboard.
+- Complete it within the first two weeks of class.
 
 === layout: one-panel
 
@@ -586,11 +579,9 @@ hidden: true
 
 @body
 
-- Discord Server\:
-  - Students will be awarded 2 points for simply signing up for the Discord Server.
-  - Please use this method to contact the instructor rather than email.
-- Due Within First Few Weeks of Class,
-  - Due Sept 21.
+- Discord signup is worth 2 points.
+- Please use Discord to contact the instructor rather than email when possible.
+- Complete it within the first few weeks of class.
 
 === layout: one-plus-two-panels
 
@@ -599,26 +590,18 @@ hidden: true
 @left
 
 - I created a Discord Server called Neil Voss Lab
-  - Participation in Discord is technically not required, but I give you are required to sign up
+  - You earn credit for signing up, and Discord is the quickest way to reach me.
 - Sign-up link is available on Blackboard
   - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, you should not create your own server
+  - Be sure to connect to my server rather than creating your own server.
 
 @top-right
 
-![Slide image 13](assets/lect03a-2026_announcements/image_007.png)
+![Slide image 6](assets/lect04a-2026_announcements/image_006.png)
 
 @bottom-right
 
-![Slide image 13](assets/lect03a-2026_announcements/image_006.png)
-
-=== layout: one-panel
-
-# Discord Signup
-
-@body
-
-![Slide image 13](assets/lect03a-2026_announcements/image_008.png)
+![Slide image 7](assets/lect04a-2026_announcements/image_007.png)
 
 === layout: two-panels
 
@@ -626,16 +609,13 @@ hidden: true
 
 @left
 
-- HW1 – Due Sept 16
-- HW2 – Due Sept 16
-- HW3 – Due
-- HW4 – Due
-- HW5 – Due
-- HW6 – Due
+- Assignment 1 – Due Sept 15
+- Assignment 2 – Due Sept 15
+- Assignment 3 – Due Sept 22
 
 @right
 
-- Due Wednesdays at Midnight
+- Due dates are listed in the course schedule.
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments, or post to Discord for help
 
@@ -650,16 +630,16 @@ hidden: true
   - Part 1, 2, and 3
 - HW09 – Due Nov 12
   - Part 1 and 2
-- HW10 – Due Dec 3
-- HW11 – Due Dec 3
-  - Part 1 and 2, ++
+- [HW10 – Due Dec 3]{color=red}
+- [HW11 – Due Dec 3]{color=red}
+  - [Part 1 and 2, ++]{color=red}
 - HW12 – Due Dec 10
   - Part 1 and 2, ++
 - HW13 – Due Dec 10
 
 @right
 
-- Due Tuesdays at Midnight
+- [Due Tuesdays at Midnight]{color=red}
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments
   - or post a screenshot to Discord for help
@@ -669,6 +649,7 @@ hidden: true
 # General Announcements
 
 === layout: two-over-one-panels
+hidden: true
 
 # Graduating Students
 
@@ -676,11 +657,11 @@ hidden: true
 
 - Last day to apply for graduation is\:
   - September 2, 2025
-- Late applications will cost you a \$100 late fee
+- Late applications will cost you a [\$100]{color=red} late fee
 
 @top-right
 
-![Slide image 14](assets/lect03a-2026_announcements/image_014.png)
+![Slide image 13](assets/lect04a-2026_announcements/image_013.png)
 
 @bottom
 
@@ -716,7 +697,7 @@ hidden: true
 
 @body
 
-- Due Tonight (Nov 28) at midnight
+- [Due Tonight (Nov 28) at midnight]{color=red}
 - [https\://forms.gle/uHxe6thZrpe7xg4U7](https://forms.gle/uHxe6thZrpe7xg4U7)
 - x
 
@@ -733,10 +714,10 @@ hidden: true
 @body
 
 - Hi Students,
-- You will be receiving an email to complete course evaluations for your courses.
-- I want to encourage you to complete them, they are our primary source for evaluating faculty performance.
+- You will be receiving an email to complete [course evaluations]{color=red} for your courses.
+- I want to encourage you to complete them, they are our [primary source for evaluating faculty performance]{color=red}.
 - Your opinion does matter; it can help determine who gets salary raises, and a string of negative evaluations can get a professor replaced.
-- Further, I appreciate getting your feedback in an anonymous way. It helps me improve the courses I teach.
+- Further, I appreciate getting [your feedback]{color=red} in an anonymous way. It helps me [improve the courses]{color=red} I teach.
 - Thanks, Dr. Voss
 
 === layout: one-panel
@@ -746,7 +727,7 @@ hidden: true
 
 @body
 
-- IDEA Student Ratings of Instruction survey is now open and available for students to complete through Sunday, May 4, 2025.
+- IDEA Student Ratings of Instruction survey is now open and available for students to complete through [Sunday, May 4, 2025]{color=red}.
 - It can take up to 5-10 minutes to complete the Course Evaluation
 - Surveys are open and available for students to complete by accessing the following link\:
   - [https\://roosevelt.campuslabs.com/eval-home/](https://roosevelt.campuslabs.com/eval-home/)
@@ -772,12 +753,12 @@ hidden: true
 @body
 
 - I cannot see individual students only total completion
-- percentage. Ends Sun, May 4.
+- percentage. [Ends Sun, May 4.]{color=red}
 
 === layout: section
 hidden: true
 
-# Spring Registration
+# [Spring]{color=red} [Registration]{color=red}
 
 === layout: one-panel
 hidden: true
@@ -797,16 +778,16 @@ hidden: true
 
 @body
 
-- BCHM 355/455
+- [BCHM 355/455]{color=blue}
   - Biochemistry Lecture
   - Thurs evenings 6pm to 9pm
   - Remote over Zoom
-  - WaitListed – but willing to take more students
+  - [WaitListed – but willing to take more students]{color=red}
 - BCHM 356/456
   - Biochemistry Lab
   - Tues mornings, 10am to 2pm
   - Face-to-face Schaumburg
-  - Only 3 students as of now \:(
+  - [Only 3 students as of now \:(]{color=red}
 
 === layout: one-panel
 hidden: true
@@ -816,7 +797,7 @@ hidden: true
 @body
 
 - BIOL 383/483 Special Topics
-  - Biology and Ethics in Film
+  - [Biology and Ethics in Film]{color=purple}
   - Tue/Thurs night 6-9p (Zoom)
   - July 1st through August 4th
 - Summer 2024\:
@@ -827,18 +808,18 @@ hidden: true
 === layout: one-panel
 hidden: true
 
-# Schaumburg Natural Science Club
+# [Schaumburg]{color=blue} Natural Science Club
 
 @body
 
 - Upcoming Meetings\:
-  - TBD
+  - [TBD]{color=red}
 
 - Outreach/volunteer opportunities
 - Fun social activities
 - Professional development
 
-![Slide image 15](assets/lect03a-2026_announcements/image_015.png)
+![Slide image 14](assets/lect04a-2026_announcements/image_014.png)
 
 === layout: section
 

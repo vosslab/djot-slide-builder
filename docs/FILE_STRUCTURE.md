@@ -26,8 +26,9 @@ Brewfile             declared macOS command-line and desktop dependencies
   planning, native normalization, Djot emission, and lossless migration reports.
   `image_annotations.py` owns the bounded image-overlay import projection, while `odf_styles.py`
   resolves inherited properties from already-admitted ODF XML.
-- [../genetics/djot/](../genetics/djot/) contains the repository's Djot lecture sources and its
-  local authoring README. A deck-local asset tree is created beside an imported deck when needed.
+- [../genetics/](../genetics/) contains lecture-organized Djot sources. Each `LECT##/` folder owns
+  `djot/` canonical sources and adjacent assets plus `old/` original ODP/PDF/ODS evidence. The
+  top-level [genetics README](../genetics/README.md) records the corpus inventory.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.
   `presentation_theme.py` validates and reads it; `odp_export.py` projects the compiled physical
   plan directly to editable ODP, and `odp_text.py` writes its editable text objects.
@@ -64,8 +65,9 @@ Brewfile             declared macOS command-line and desktop dependencies
 
 - Add reusable presentation behavior under [../slide_lib/](../slide_lib/), grouping import-specific
   code under [../slide_lib/importers/](../slide_lib/importers/).
-- Add lecture source and associated local assets under a topic directory such as
-  [../genetics/](../genetics/).
+- Add lecture source and associated local assets under the matching lecture folder, such as
+  [../genetics/LECT04/djot/](../genetics/LECT04/djot/). Keep original presentation evidence in
+  that lecture's `old/` folder.
 - Add durable behavior tests under [../tests/](../tests/) and whole-system acceptance runners under
   [../tests/e2e/](../tests/e2e/).
 - Add user and maintainer reference documentation under `docs/`, using the owning

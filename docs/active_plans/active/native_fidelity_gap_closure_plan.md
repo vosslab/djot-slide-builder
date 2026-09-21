@@ -412,8 +412,8 @@ files live under `/private/tmp` or an ignored `output_*` directory and stay out 
 ### Work package: WP-I2 migrate affected Genetics sources
 
 - Owner: corpus migration owner.
-- Touch points: affected files under [genetics/djot/](../../../genetics/djot) and their existing local
-  component images.
+- Touch points: affected files under the lecture-organized `genetics/LECT##/djot/` directories and
+  their existing local component images.
 - Depends on: WP-T1, the WP-T2 decision, WP-C2, and WP-I1.
 - Acceptance criteria:
   - Apply semantic colors only where the original use carries teaching meaning.
@@ -491,8 +491,8 @@ Run Python commands only through the repository environment:
 
 ```bash
 source source_me.sh && python3 -m pytest tests/
-source source_me.sh && python3 deck_tools.py lint genetics/djot
-source source_me.sh && python3 deck_tools.py capacity genetics/djot
+source source_me.sh && python3 deck_tools.py lint genetics
+source source_me.sh && python3 deck_tools.py capacity genetics
 ./build_slides.sh genetics
 git diff --check
 ```

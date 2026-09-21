@@ -1,3 +1,51 @@
+## 2026-09-21
+
+### Additions and New Features
+
+- Converted the nine Genetics Lecture 04 ODP decks to canonical Djot sources with adjacent native
+  image assets: announcements, Mendel history, the first two principles, cross experiments,
+  segregation, Punnett squares, independent assortment, independent-assortment problems, and the
+  multiple-cross problem.
+- Added `genetics/LECT04/djot/LECT04_REVIEW.md` and extended the Genetics Djot inventory with Lecture 04
+  provenance, source counts, hidden-slide counts, and delivery evidence.
+- Reorganized the Genetics corpus by lecture: canonical sources and assets now live under each
+  `genetics/LECT##/djot/`, while original ODP/PDF/ODS evidence lives under the matching `old/`
+  folder. The existing recursive builder can now target one lecture directly.
+- Replaced the Genetics announcement recording visuals and informational-slide blocks in Lectures
+  02A, 03A, and 04A with the polished Biotechnology pattern, using the shared recording, Zoom,
+  YouTube, Discord, and office-hours visuals while retaining each deck's course-specific content.
+- Reworked Genetics Lecture 04B's "Character and Trait" quiz into a two-over-one-panels layout,
+  keeping the character and trait columns above the question and answer choices.
+- Re-lettered the canonical Lecture 04 sequence from D--K to B--I and applied the same names to
+  the adjacent original evidence, asset directories, import reports, review inventory, and builds.
+- Repaired the six Lecture 04C terminology quiz stems so each complete question is a paragraph;
+  the answer-choice lists now contain only the A--G choices and receive the intended layout space.
+
+### Fixes and Maintenance
+
+- Reworked Genetics Lecture 04A as the 2026 announcement deck, combining current Lecture 03
+  guidance with recurring Lecture 04 material from the 2025 announcement source. Current Fall 2026
+  schedule dates, assignment and quiz information, course links, office hours, and non-obsolete
+  contact guidance now replace stale course details.
+- Polished Biotechnology Lecture 03A using the same announcement treatment: current assignment and
+  talking-point language, current course links and office hours, clearer contact guidance, corrected
+  image-number collisions that placed Genetics/biochemistry screenshots on Biotechnology slides,
+  and text-only fallbacks where no course-appropriate source image was available.
+- Retained source-hidden slides in the canonical Djot files and kept original ODP/PDF files as
+  visual evidence rather than making them alternate authoring sources.
+
+### Developer Tests and Notes
+
+- Strict native Jotdown validation accepted the nine Genetics Lecture 04 sources and the revised
+  Biotechnology Lecture 03A source. Native `--format all` builds produced matching editable ODP
+  and PDF page counts: 289 visible Lecture 04 pages and 17 Biotechnology Lecture 03A pages.
+- The native build required the repository's LibreOffice preflight to access `ps`; the successful
+  build was rerun with the required execution approval. The compiler still reports inherited dense
+  slide capacity warnings, so this evidence does not claim a full visual review or attended Impress
+  click-through.
+- Verified the reorganized command `./build_slides.sh genetics/LECT04/` against all nine Lecture 04
+  Djot decks; it selected no original files and produced matching ODP/PDF page counts.
+
 ## 2026-09-17
 
 ### Additions and New Features

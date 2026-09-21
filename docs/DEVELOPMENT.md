@@ -62,6 +62,8 @@ cross-deck coverage:
 ./build_slides.sh genetics
 ```
 
+The same folder wrapper can target one lecture, for example `./build_slides.sh genetics/LECT04/`.
+
 The folder wrapper delegates to `deck_tools.py build --format all`, producing editable ODP followed
 by an ODP-derived PDF. Inspect each artifact for the question at hand: semantic tests do not
 prove visual containment, and a rendered page does not prove editability. The [pipeline verification

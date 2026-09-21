@@ -1,0 +1,390 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04B
+
+## Mendel and the Origins of Genetics
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: two-panels
+
+# Gregor Mendel
+
+@left
+
+- Born in 1822 in a country now called the Czech Republic
+- Gregor grew up in a village with 71 houses, 479 people, 41 horses, and 98 cows. His father was a farmer.
+- Growing up his village learned the benefits of selective cross-breeding to create better apples and sheep with thicker wool.
+  - These initial ideas were said to have inspired Gregor.
+
+@right
+
+![Slide image 1](assets/lect04b-mendel_history/image_001.png)
+
+=== layout: one-panel
+
+# School Years
+
+@body
+
+- Gregor’s parents scraped together the funds to send to the local boarding school.
+  - But they did not have enough money to pay for all of his meals.
+- At age 16, Gregor’s father was injured and could no longer earn money for Gregor’s education.
+
+=== layout: two-panels
+
+# School Years
+
+@left
+
+- Gregor began working as a tutor and paid his own way through four more years of school.
+- The hardship of paying for his studies, caused Gregor to become a friar at the Abbey of St. Thomas.
+
+@right
+
+![Slide image 2](assets/lect04b-mendel_history/image_002.png)
+
+=== layout: one-plus-two-panels
+
+# Friar Mendel
+
+@left
+
+- Friars preached, cared for the sick, taught school, and were community leaders.
+  - They were also mathematicians, botanists, philosophers, and geologists
+
+@top-right
+
+- They had a library with 30,000 books and had several great thinkers to discuss ideas
+
+@bottom-right
+
+![Slide image 3](assets/lect04b-mendel_history/image_003.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04b-mendel_history/image_004.jpg)
+
+- Gregor Mendel (third from right, holding a sprig of fuchsia in the back) with his fellow monks.
+
+=== layout: two-panels
+
+# University of Vienna
+
+@left
+
+![Slide image 5](assets/lect04b-mendel_history/image_005.png)
+
+@right
+
+- The abbot of the Abbey, reward Gregor’s thirst for knowledge by sending him to the University of Vienna.
+- There Gregor learned about the laws of nature and how to study nature using carefully planned experiments.
+
+=== layout: two-panels
+
+# Mendel the Teacher
+
+@left
+
+- When Gregor returned to the abbey after finishing the university, he taught science at a nearby school.
+  - Though he liked teaching, Gregor wanted to make a great discovery himself.
+- He was fascinated by one of the hottest topics of the time\:
+  - “How do mothers and fathers – animals and plants – pass down traits to their children?”
+
+@right
+
+![Slide image 6](assets/lect04b-mendel_history/image_006.png)
+
+=== layout: two-panels
+
+# Mendel the Researcher
+
+@left
+
+![Slide image 7](assets/lect04b-mendel_history/image_007.png)
+
+@right
+
+- Gregor read how earlier scientists had paired different species of plants to see what their offspring would be like.
+  - The offspring were called hybrids.
+- Many hybrids (corn, wheat, flowers) were created by farmers, but only a few were ever studied.
+
+=== layout: two-panels
+
+# Gregor’s Plan
+
+@left
+
+- Mendel could control the process of fertilization,
+  - To understand  the processes of inheritance
+- Breed thousands of offspring from just a few pairings.
+- Count how often specific traits appeared.
+- See if the statistics would help him find a pattern.
+
+@right
+
+![Slide image 8](assets/lect04b-mendel_history/image_008.png)
+
+=== layout: two-panels
+
+# Choice of Plant
+
+@left
+
+- He studied 34 kinds of peas in his garden.
+  - Such a wide variety it was hard for Gregor to decide which traits to study.
+- He looked closely and first noticed the color of the seeds could be either green or yellow.
+- Further some were smooth and some were wrinkled.
+
+@right
+
+![Slide image 9](assets/lect04b-mendel_history/image_009.png)
+
+=== layout: two-panels
+
+# Mendel’s Experimental, Quantitative Approach
+
+@left
+
+- Mendel Identified seven characters of pea plants for his study.
+- A heritable feature that varies among individuals (such as flower color) is called a [character]{color=red}
+- Each variant for a character, such as purple or white color for flowers, is called a [trait]{color=red}
+
+@right
+
+![Slide image 10](assets/lect04b-mendel_history/image_010.png)
+
+=== layout: one-panel
+
+# Seven Characters of Mendel
+
+@body
+
+![Slide image 11](assets/lect04b-mendel_history/image_011.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 12](assets/lect04b-mendel_history/image_012.jpg)
+
+=== layout: two-over-one-panels
+
+# Character and Trait
+
+@top-left
+
+- [A. Left Column]{color=blue}
+- 1. Seed shape
+- 2. Seed color
+- 3. Flower color
+- 4. Pod shape
+- 5. Pod color
+- 6. Flower/pod position
+- 7. Stem length
+
+@top-right
+
+- [B. Right Column]{color=red}
+- 1. Wrinkled or Round
+- 2. Green or Yellow
+- 3. White or Purple
+- 4. Constricted or Inflated
+- 5. Yellow or Green
+- 6. Terminal or Axial
+- 7. Dwarf or Standard
+
+@bottom
+
+- Which column represents the [TRAITS]{color=green}?
+- [A. Left Column]{color=blue} or [B. Right Column]{color=red}
+
+=== layout: two-panels
+
+# Mendel’s Seven Characters and Their Traits
+
+@left
+
+- [CHARACTERS]{color=blue}
+- 1. Seed shape
+- 2. Seed color
+- 3. Flower color
+- 4. Pod shape
+- 5. Pod color
+- 6. Flower/pod position
+- 7. Stem length
+
+@right
+
+- [TRAITS]{color=red}
+- 1. Wrinkled or Round
+- 2. Green or Yellow
+- 3. White or Purple
+- 4. Constricted or Inflated
+- 5. Yellow or Green
+- 6. Terminal or Axial
+- 7. Dwarf or Standard
+
+=== layout: one-panel
+
+# Traits and Characters
+
+@body
+
+- Character – an observable feature of a particular group of organisms, such as [f]{color=red}[l]{color=orange}ower [c]{color=green}[o]{color=blue}[l]{color=purple}or
+- Trait – each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
+- Each character is associated with multiple traits.
+
+=== layout: two-panels
+
+
+@left
+
+- Other advantages of using pea plants
+  - Short generation time, about five weeks
+  - Large numbers of offspring, about 120 seeds per plant
+  - individual plants have both male and female reproductive organs
+- Mating is easily controlled
+  - plants could be allowed to self-pollinate or could be cross pollinated
+- Display binary traits
+  - Mendel chose to track only those characters that occurred in two distinct alternative forms
+
+@right
+
+![Slide image 12](assets/lect04b-mendel_history/image_008.png)
+
+=== layout: one-panel
+
+# Controlled Fertilization
+
+@body
+
+![Slide image 13](assets/lect04b-mendel_history/image_013.png)
+
+=== layout: two-panels
+
+# True-Breeding Plants
+
+@left
+
+- He also used varieties that were true-breeding
+  - plants that produce offspring of the same variety when they self-pollinate
+- Gregor wanted to be sure changes in traits were due to the experiment.
+- Gregor spent two years preparing a set of parental plants that were true-breeding!!!
+- Then he began his experiments to create hybrids...
+
+@right
+
+![Slide image 14](assets/lect04b-mendel_history/image_014.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 15](assets/lect04b-mendel_history/image_015.png)
+
+- When Gregor mated true-breeding yellow and true-breeding green plants – it produced all yellow.
+- For all seven characters, all of the hybrid children looked like just one of the parents.
+  - Were the traits lost forever?
+  - What will their grandchildren and great-grandchildren look like?
+- Gregor pondered these questions throughout a snowy winter.
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 16](assets/lect04b-mendel_history/image_016.png)
+
+@right
+
+- Come spring, Gregor planted the seeds of the hybrids.
+- At harvest time, he discovered green and yellow peas sitting side by side in the same pod.
+- The missing traits reappeared.
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 17](assets/lect04b-mendel_history/image_017.png)
+
+@right
+
+- Gregor concluded that every plant has two building blocks to create any one traits.
+  - One dominant and one recessive
+- The mother and father, each give one “block” to their child.
+- Today, we understand the molecular mechanisms that cause this.
+
+=== layout: two-panels
+
+# Mendel’s Discovery
+
+@left
+
+- In 1865, Gregor Mendel presented his findings and a year later published a scientific paper.
+- No one at the time understood his discovery.
+  - They thought it only applied to peas
+- Mendel went on to become abbot and no longer had time for experiments.
+- Mendel died in 1884.
+
+@right
+
+![Slide image 18](assets/lect04b-mendel_history/image_018.png)
+
+=== layout: two-panels
+
+# Mendel’s legacy
+
+@left
+
+![Slide image 19](assets/lect04b-mendel_history/image_019.png)
+
+@right
+
+- In 1900, 16 years after his death, three different scientists in three different countries re-discovered his 1866 paper.
+  - They were trying to repeat his discovery and were stunned by the brilliance and foresight of Mendel.
+- Mendel’s extraordinary experiments and insights brought us the terms “dominant” and “recessive”
+  - Mendel didn’t know about the existence of genes or chromosomes or the details of cell division
+- Gregor Mendel is known as the first geneticist and his discoveries are called Mendel’s laws.
+
+=== layout: two-panels
+
+# Mendel’s legacy
+
+@left
+
+- Mendel was not alone in his quest to understand inheritance
+- what set him apart was a combination of extensive research and studious note-taking
+  - precise field notes continued over a period of many years
+- His approach allowed him to deduce principles that had remained elusive to others
+
+@right
+
+![Slide image 19](assets/lect04b-mendel_history/image_019.png)
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Traits and Characters
+
+@body
+
+- Character – an observable feature of a particular group of organisms, such as [f]{color=red}[l]{color=orange}ower [c]{color=green}[o]{color=blue}[l]{color=purple}or
+- Trait – each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
+- Each character is associated with multiple traits.
+
+=== layout: section
+
+# THE END

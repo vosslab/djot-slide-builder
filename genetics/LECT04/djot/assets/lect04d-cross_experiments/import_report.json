@@ -1,0 +1,2115 @@
+{
+  "source": "lect04d-cross_experiments.odp",
+  "slide_count": 19,
+  "visible_slides": 19,
+  "hidden_slides": [],
+  "unique_media_assets": 10,
+  "slides": [
+    {
+      "source_slide": 1,
+      "hidden": false,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 19.729133858267716,
+          "width": 714.3023622047244,
+          "height": 55.21889763779527,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 68.88188976377953,
+          "width": 714.3023622047244,
+          "height": 369.60944881889765,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 2,
+      "hidden": false,
+      "visible_page": 2,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 3,
+      "hidden": false,
+      "visible_page": 3,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #780373 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 440.6173228346457,
+          "top": 116.02204724409448,
+          "width": 278.73070866141734,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 4,
+      "hidden": false,
+      "visible_page": 4,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 445.63464566929133,
+          "top": 116.02204724409448,
+          "width": 268.7244094488189,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 5,
+      "hidden": false,
+      "visible_page": 5,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 6,
+      "hidden": false,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 7,
+      "hidden": false,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 4,
+      "images": 1,
+      "presenter_notes": [
+        "Figure 14.3-1 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which traits appear in the F2 generation? (step 1)",
+        "<number>"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unrecognized source text color #ff5a08 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.14964285714285716,
+          "top": 0.017371428571428572,
+          "right": 0.8452857142857143,
+          "bottom": 0.9586857142857141
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.45542857142857146,
+              "top": 0.2229714285714286,
+              "right": 0.5733928571428571,
+              "bottom": 0.3244
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Purple",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5996785714285714,
+              "top": 0.22417142857142858,
+              "right": 0.7176428571428571,
+              "bottom": 0.3256
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "White",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.15792857142857142,
+              "top": 0.13342857142857142,
+              "right": 0.35475,
+              "bottom": 0.3026285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "P Generation",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(true-breeding",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "parents)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.14964285714285716,
+              "top": 0.017371428571428572,
+              "right": 0.34017857142857144,
+              "bottom": 0.07525714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Experiment",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect04d-cross_experiments/image_003.jpg",
+            "bounds": {
+              "left": 0.15464285714285717,
+              "top": 0.020057142857142857,
+              "right": 0.8452857142857143,
+              "bottom": 0.9586857142857141
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": "AL4T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 5
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 122.74015748031496,
+          "top": 9.949606299212597,
+          "width": 548.1637795275591,
+          "height": 465.6188976377952,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 361.4740157480315,
+          "top": 110.60787401574804,
+          "width": 93.62834645669291,
+          "height": 50.31496062992126,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 475.96535433070864,
+          "top": 111.2031496062992,
+          "width": 93.62834645669291,
+          "height": 50.31496062992126,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 125.34803149606299,
+          "top": 66.18897637795276,
+          "width": 156.21732283464567,
+          "height": 83.93385826771653,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 118.7716535433071,
+          "top": 8.61732283464567,
+          "width": 151.22834645669292,
+          "height": 28.714960629921258,
+          "z_order": [
+            5
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 8,
+      "hidden": false,
+      "visible_page": 8,
+      "layout": "one-panel",
+      "text_blocks": 7,
+      "images": 1,
+      "presenter_notes": [
+        "Figure 14.3-2 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which traits appear in the F2 generation? (step 2)",
+        "<number>"
+      ],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized distributed pictorial annotations into native source-order content",
+        "unrecognized source text color #ff5a08 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.14960714285714286,
+          "top": 0.017371428571428572,
+          "right": 0.8452857142857143,
+          "bottom": 0.9586857142857141
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2752857142857143,
+              "top": 0.5347999999999999,
+              "right": 0.5921785714285714,
+              "bottom": 0.5926857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Self- or cross-pollination",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.39985714285714286,
+              "top": 0.47982857142857144,
+              "right": 0.7857500000000001,
+              "bottom": 0.5377142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "All plants had purple flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.45542857142857146,
+              "top": 0.2229714285714286,
+              "right": 0.5733928571428571,
+              "bottom": 0.3244
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Purple",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5996785714285714,
+              "top": 0.22417142857142858,
+              "right": 0.7176428571428571,
+              "bottom": 0.3256
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "White",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.15792857142857142,
+              "top": 0.13342857142857142,
+              "right": 0.35475,
+              "bottom": 0.3026285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "P Generation",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(true-breeding",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "parents)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.16239285714285714,
+              "top": 0.4150857142857143,
+              "right": 0.3511785714285714,
+              "bottom": 0.5401142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " Generation",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(hybrids)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.14960714285714286,
+              "top": 0.017371428571428572,
+              "right": 0.34296428571428567,
+              "bottom": 0.07525714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Experiment",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect04d-cross_experiments/image_004.jpg",
+            "bounds": {
+              "left": 0.15464285714285717,
+              "top": 0.020057142857142857,
+              "right": 0.8452857142857143,
+              "bottom": 0.9586857142857141
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL4T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 8
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 122.74015748031496,
+          "top": 9.949606299212597,
+          "width": 548.1637795275591,
+          "height": 465.6188976377952,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 218.4944881889764,
+          "top": 265.29448818897635,
+          "width": 251.51811023622045,
+          "height": 28.714960629921258,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 317.36692913385826,
+          "top": 238.0251968503937,
+          "width": 306.2834645669291,
+          "height": 28.714960629921258,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 361.4740157480315,
+          "top": 110.60787401574804,
+          "width": 93.62834645669291,
+          "height": 50.31496062992126,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 475.96535433070864,
+          "top": 111.2031496062992,
+          "width": 93.62834645669291,
+          "height": 50.31496062992126,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 125.34803149606299,
+          "top": 66.18897637795276,
+          "width": 156.21732283464567,
+          "height": 83.93385826771653,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 128.89133858267715,
+          "top": 205.90866141732283,
+          "width": 149.83937007874013,
+          "height": 62.022047244094495,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 118.74330708661417,
+          "top": 8.61732283464567,
+          "width": 153.46771653543306,
+          "height": 28.714960629921258,
+          "z_order": [
+            8
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 9,
+      "hidden": false,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 10,
+      "images": 1,
+      "presenter_notes": [
+        "Figure 14.3-3 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which traits appear in the F2 generation? (step 3)",
+        "<number>"
+      ],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized distributed pictorial annotations into native source-order content",
+        "unrecognized source text color #ff5a08 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.14964285714285716,
+          "top": 0.017371428571428572,
+          "right": 0.8523571428571428,
+          "bottom": 0.9695428571428572
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3108571428571429,
+              "top": 0.8681142857142857,
+              "right": 0.5895357142857144,
+              "bottom": 0.9695428571428572
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "705 purple-flowered",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "plants",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5736785714285714,
+              "top": 0.8681142857142857,
+              "right": 0.8523571428571428,
+              "bottom": 0.9695428571428572
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "224 white-flowered",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "plants",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2752857142857143,
+              "top": 0.5347999999999999,
+              "right": 0.5921785714285714,
+              "bottom": 0.5926857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Self- or cross-pollination",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.39985714285714286,
+              "top": 0.47982857142857144,
+              "right": 0.7857500000000001,
+              "bottom": 0.5377142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "All plants had purple flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.45542857142857146,
+              "top": 0.2229714285714286,
+              "right": 0.5733928571428571,
+              "bottom": 0.3244
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Purple",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5996785714285714,
+              "top": 0.22417142857142858,
+              "right": 0.7176428571428571,
+              "bottom": 0.3256
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "White",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "flowers",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.15792857142857142,
+              "top": 0.13342857142857142,
+              "right": 0.35475,
+              "bottom": 0.3026285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "P Generation",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(true-breeding",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "parents)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.16239285714285714,
+              "top": 0.4150857142857143,
+              "right": 0.3511785714285714,
+              "bottom": 0.5401142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " Generation",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(hybrids)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.16239285714285714,
+              "top": 0.6942857142857144,
+              "right": 0.3511785714285714,
+              "bottom": 0.7636571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  },
+                  {
+                    "text": " Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.14964285714285716,
+              "top": 0.017371428571428572,
+              "right": 0.33742857142857147,
+              "bottom": 0.07525714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Experiment",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect04d-cross_experiments/image_005.jpg",
+            "bounds": {
+              "left": 0.15464285714285717,
+              "top": 0.020057142857142857,
+              "right": 0.8452857142857143,
+              "bottom": 0.9586857142857141
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": "AL4T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 11
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 122.74015748031496,
+          "top": 9.949606299212597,
+          "width": 548.1637795275591,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 246.72755905511812,
+          "top": 430.63937007874017,
+          "width": 221.18740157480315,
+          "height": 50.31496062992126,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 455.32913385826765,
+          "top": 430.63937007874017,
+          "width": 221.18740157480315,
+          "height": 50.31496062992126,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 218.4944881889764,
+          "top": 265.29448818897635,
+          "width": 251.51811023622045,
+          "height": 28.714960629921258,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 317.36692913385826,
+          "top": 238.0251968503937,
+          "width": 306.2834645669291,
+          "height": 28.714960629921258,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 361.4740157480315,
+          "top": 110.60787401574804,
+          "width": 93.62834645669291,
+          "height": 50.31496062992126,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 475.96535433070864,
+          "top": 111.2031496062992,
+          "width": 93.62834645669291,
+          "height": 50.31496062992126,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 125.34803149606299,
+          "top": 66.18897637795276,
+          "width": 156.21732283464567,
+          "height": 83.93385826771653,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 128.89133858267715,
+          "top": 205.90866141732283,
+          "width": 149.83937007874013,
+          "height": 62.022047244094495,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 128.89133858267715,
+          "top": 344.40944881889766,
+          "width": 149.83937007874013,
+          "height": 34.41259842519685,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 118.7716535433071,
+          "top": 8.61732283464567,
+          "width": 149.04566929133858,
+          "height": 28.714960629921258,
+          "z_order": [
+            10
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 10,
+      "hidden": false,
+      "visible_page": 10,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 14.4,
+          "top": 93.6,
+          "width": 391.2944881889764,
+          "height": 388.79999999999995,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 119.90551181102363,
+          "width": 348.57637795275593,
+          "height": 338.17322834645665,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 11,
+      "hidden": false,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #800080 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 12,
+      "hidden": false,
+      "visible_page": 12,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 13,
+      "hidden": false,
+      "visible_page": 13,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "unrecognized source text color #780373 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 139.26614173228347,
+          "top": 337.3228346456693,
+          "width": 527.4425196850393,
+          "height": 83.53700787401574,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 14,
+      "hidden": false,
+      "visible_page": 14,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 15,
+      "hidden": false,
+      "visible_page": 15,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 173.65039370078742,
+          "width": 348.57637795275593,
+          "height": 230.68346456692913,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 16,
+      "hidden": false,
+      "visible_page": 16,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 129.57165354330706,
+          "width": 348.57637795275593,
+          "height": 318.84094488188975,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 17,
+      "hidden": false,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 180.0,
+          "width": 714.3023622047244,
+          "height": 187.62519685039368,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 18,
+      "hidden": false,
+      "visible_page": 18,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 19,
+      "hidden": false,
+      "visible_page": 19,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 496.8,
+          "top": 258.4062992125984,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    }
+  ]
+}

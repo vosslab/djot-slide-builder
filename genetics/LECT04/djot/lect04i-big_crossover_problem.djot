@@ -1,0 +1,226 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04I
+
+## Multiple Crosses
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: one-panel
+
+
+@body
+
+- Assuming complete dominance and independent assortment.
+- George Aa Bb Cc dd Ee ff Gg and
+- Linda AA bb cc dd ee Ff Gg
+- are crossed answer the following questions.
+  - (a) How many different gametes does George produce?
+  - (b) How many different gametes does Linda produce?
+  - (c) How big would a Punnett square for this cross be?
+  - (d) How many possible genotypes are created in this cross?
+  - (e) How many possible phenotypes are possible from this cross?
+
+=== layout: one-panel
+
+# Method
+
+@body
+
+- 1. build a table
+- 2. do each gene one at a time.
+
+=== layout: blank
+
+=== layout: one-panel
+
+
+@body
+
+- George\: both gametes, A or a; = 2
+
+=== layout: one-panel
+
+
+@body
+
+- Linda\: only A gametes; = 1
+
+=== layout: one-panel
+
+
+@body
+
+- George\: A or a
+- Linda\: A
+- Cross\: AA or Aa; = 2
+
+=== layout: one-panel
+
+
+@body
+
+- Cross\: AA or Aa; = 2
+- Phenotype\: both dominant; = 1
+- [now you do gene B]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+- B or b → 2
+- b → 1
+- Bb or bb → 2
+- 2 phenotypes
+- [now finish the table]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+- 1 x 1 → 1
+- 2 x 1 → 2
+- 2 x 2 → 3!
+- [what about phenotypes?]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+- Note\: dominant or recessive homozygotes give different phenotype counts
+- [how do we merge the genes together?]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+- these genes are independent, so we multiply
+
+=== layout: one-panel
+
+
+@body
+
+- Punnett square is just the number of gametes multiplied\: 32 x 4
+
+=== layout: one-panel
+
+
+@body
+
+- Punnett square is just the number of gametes multiplied\: 32 x 4 = 128
+
+=== layout: one-panel
+
+
+@body
+
+- Assuming complete dominance and independent assortment. George Aa Bb Cc dd Ee ff Gg and Linda AA bb cc dd ee Ff Gg are crossed answer the following questions.
+  - (a) How many different gametes does George produce?
+    - [32 gametes]{color=red}
+  - (b) How many different gametes does Linda produce?
+    - [4 gametes]{color=red}
+  - (c) How big would a Punnett square for this cross be?
+    - [32 x 4]{color=red}
+  - (d) How many possible genotypes are created in this cross?
+    - [96 genotypes]{color=red}
+  - (e) How many possible phenotypes are possible from this cross?
+    - [32 phenotypes]{color=red}
+  - Note\: the number of phenotypes is always less than or equal to the number of genotypes
+    - [phenotypes <= genotypes]{color=red}
+
+=== layout: one-panel
+
+# Fall 2024 Group Work
+
+@body
+
+- Group 01\: https\://docs.google.com/presentation/d/1NvAY8i6m-VbBC-43IW\_Vywll5sEqwmyb4Z3PVKrzzcY/edit
+- Group 02\: https\://docs.google.com/presentation/d/1mar00emWvbppXVCoww1YCu5UYkrMVeXWvo5CjwCB-8A/edit
+- Group 03\: https\://docs.google.com/presentation/d/1gBoBq7lzsjy2zSZ4BigWrhPgrR74j72a7aFrlnjNnqM/edit
+- Group 04\: https\://docs.google.com/presentation/d/1amrF0vXBZVp6F0R\_aYbDzXmQ8x33eMd9iMmpAfEESGA/edit
+- Group 05\: https\://docs.google.com/presentation/d/1QgJwt5fz81AlHUC7c\_6c0zFo5nA05yUQIjUquMIt3jU/edit
+- Group 06\: https\://docs.google.com/presentation/d/1WCDXc9l-KrdCTjt3ANnH6SryIGO3TTy5GJ-GRsvZRd8/edit
+- Group 07\: https\://docs.google.com/presentation/d/1Fs\_iRYFAbwK1T1dAuzQ041yyuf0NWHR6X8aIONCVjX0/edit
+- Group 08\: https\://docs.google.com/presentation/d/1VdsbD0pLUH9Gf5MLnzzayT5aUv5Yro33B0hu-T7im1k/edit
+- Group 09\: https\://docs.google.com/presentation/d/1Gs2vUSZ542B1oLaDl11kdJji5mBW1MWBHa49cfjeKvU/edit
+- Group 10\: https\://docs.google.com/presentation/d/1mpymDfHy-EeK\_TkrEsSjwW1jft67QYeRPDRczm8fhx4/edit
+- Group 11\: https\://docs.google.com/presentation/d/1F8hImpBEDyCiIcDp6WCwvuXP5CUyexkewGFPGstODJ4/edit
+- Group 12\: https\://docs.google.com/presentation/d/1anSxOXn\_V1-uocV5lZ1onqYE97Sc1dLOM53gfdiY7Lo/edit
+- Group 13\: https\://docs.google.com/presentation/d/1OoRtEMRxLFiHwJzZUbWcL6rZ19GbBjaSr5USpztxHVw/edit
+- Group 14\: https\://docs.google.com/presentation/d/1vyo70\_cIcKHLY5D8Iuq6oIVPNqU6\_ktTgVbL5fToRbY/edit
+- Group 15\: https\://docs.google.com/presentation/d/18R4fragxhL2dD2IepD\_i639Nc0kgTbgdYj5Z3wiIqVc/edit
+- Group 16\: https\://docs.google.com/presentation/d/1Drcg\_LDXNkKH58Yaa2IMbvK9diBEJCuuZxulh0J-iWc/edit
+
+=== layout: one-panel
+
+# Fall 2023 Group Work
+
+@body
+
+- Group 01\: [https\://docs.google.com/presentation/d/12xzqul5QpwpfuqCN9zuUBrIlIDo4N6alP9MNPnWlFZ0/edit](https://docs.google.com/presentation/d/12xzqul5QpwpfuqCN9zuUBrIlIDo4N6alP9MNPnWlFZ0/edit)
+- Group 02\: [https\://docs.google.com/presentation/d/1fqd03HU8lDI4PqBVMg-JhArj7HFS8cJmsmuHex0PyJ8/edit](https://docs.google.com/presentation/d/1fqd03HU8lDI4PqBVMg-JhArj7HFS8cJmsmuHex0PyJ8/edit)
+- Group 03\: [https\://docs.google.com/presentation/d/1lyLG2bEZTnvvhlSW9suqLexAzShSY-TopRCTGeAIyOU/edit](https://docs.google.com/presentation/d/1lyLG2bEZTnvvhlSW9suqLexAzShSY-TopRCTGeAIyOU/edit)
+- Group 04\: [https\://docs.google.com/presentation/d/1JOhkv9jF1Fc\_-9Ogy4as7nEZc-3FyNi7wlurNq9oa4Y/edit](https://docs.google.com/presentation/d/1JOhkv9jF1Fc_-9Ogy4as7nEZc-3FyNi7wlurNq9oa4Y/edit)
+- Group 05\: [https\://docs.google.com/presentation/d/1PeA4LNzzqQQhgELbhyruDeaQVnLr-Dh-p1GeflQGlPQ/edit](https://docs.google.com/presentation/d/1PeA4LNzzqQQhgELbhyruDeaQVnLr-Dh-p1GeflQGlPQ/edit)
+- Group 06\: [https\://docs.google.com/presentation/d/15TL8M99mPNGgztYDevJ\_X3WW3lCXOs8szp564p2tGCc/edit](https://docs.google.com/presentation/d/15TL8M99mPNGgztYDevJ_X3WW3lCXOs8szp564p2tGCc/edit)
+- Group 07\: [https\://docs.google.com/presentation/d/1MFUmSjpX0wUUHCL7cL4a2Ljxu9hcGMou8dD2ULy-BNU/edit](https://docs.google.com/presentation/d/1MFUmSjpX0wUUHCL7cL4a2Ljxu9hcGMou8dD2ULy-BNU/edit)
+- Group 08\: [https\://docs.google.com/presentation/d/1wgtX5zD6DLjEOUtK58Ldhz7EiIm3oaqmL8Q4OJoUmL0/edit](https://docs.google.com/presentation/d/1wgtX5zD6DLjEOUtK58Ldhz7EiIm3oaqmL8Q4OJoUmL0/edit)
+- Group 09\: [https\://docs.google.com/presentation/d/1DgmEVe7gQixaR4a52nV9h1a6ky7TIJxgrQvyHiSMJXk/edit](https://docs.google.com/presentation/d/1DgmEVe7gQixaR4a52nV9h1a6ky7TIJxgrQvyHiSMJXk/edit)
+- Group 10\: [https\://docs.google.com/presentation/d/1deJbn-PwZnjka4uYFIj8plo5CP6yMuZaGOMhLM32peM/edit](https://docs.google.com/presentation/d/1deJbn-PwZnjka4uYFIj8plo5CP6yMuZaGOMhLM32peM/edit)
+- Group 11\: [https\://docs.google.com/presentation/d/10M8BjSafqSrwb-Jk-m3eOugB6Ix6V58wr3QC-k5Fkdg/edit](https://docs.google.com/presentation/d/10M8BjSafqSrwb-Jk-m3eOugB6Ix6V58wr3QC-k5Fkdg/edit)
+
+=== layout: one-panel
+
+# 2022 Group Work
+
+@body
+
+- Group 01\: [https\://docs.google.com/presentation/d/15EydFQMYiecXkbB3HDtP9pAfQn2nonI\_9PhAVogH7gw/edit?usp=sharing](https://docs.google.com/presentation/d/15EydFQMYiecXkbB3HDtP9pAfQn2nonI_9PhAVogH7gw/edit?usp=sharing)
+- Group 02\: [https\://docs.google.com/presentation/d/1H8RDLKl9XwOo6kJKmwOawNRafqPoA3MeOoYjfTVRmPE/edit?usp=sharing](https://docs.google.com/presentation/d/1H8RDLKl9XwOo6kJKmwOawNRafqPoA3MeOoYjfTVRmPE/edit?usp=sharing)
+- Group 03\: [https\://docs.google.com/presentation/d/1RDQFMi9S3uxFkv5w30fu1w5JU9IOPoXCrLTZPL4PXdE/edit?usp=sharing](https://docs.google.com/presentation/d/1RDQFMi9S3uxFkv5w30fu1w5JU9IOPoXCrLTZPL4PXdE/edit?usp=sharing)
+- Group 04\: [https\://docs.google.com/presentation/d/1bhXwltV40JsvPKSKRbVejv058SvGfq-VnHwevwbCcH8/edit?usp=sharing](https://docs.google.com/presentation/d/1bhXwltV40JsvPKSKRbVejv058SvGfq-VnHwevwbCcH8/edit?usp=sharing)
+- Group 05\: [https\://docs.google.com/presentation/d/1bumk3NI1GxDDBqXHoMQi04z-Fa-QeJ15\_cAd5\_qjiOc/edit?usp=sharing](https://docs.google.com/presentation/d/1bumk3NI1GxDDBqXHoMQi04z-Fa-QeJ15_cAd5_qjiOc/edit?usp=sharing)
+- Group 06\: [https\://docs.google.com/presentation/d/1ea\_iQhkTMrcldQ9UHzDY8fKM3789e0rJl8KUevcA93k/edit?usp=sharing](https://docs.google.com/presentation/d/1ea_iQhkTMrcldQ9UHzDY8fKM3789e0rJl8KUevcA93k/edit?usp=sharing)
+- Group 07\: [https\://docs.google.com/presentation/d/1lnGLXdgoZ5\_5L3yWQMZmqsJWMtdD8-3jFCXSHMtyfMk/edit?usp=sharing](https://docs.google.com/presentation/d/1lnGLXdgoZ5_5L3yWQMZmqsJWMtdD8-3jFCXSHMtyfMk/edit?usp=sharing)
+- Group 08\: [https\://docs.google.com/presentation/d/1y0dILSBkQj3v9xF1o6uEe6sx1PA8uqbH00y1K4W\_Mj4/edit?usp=sharing](https://docs.google.com/presentation/d/1y0dILSBkQj3v9xF1o6uEe6sx1PA8uqbH00y1K4W_Mj4/edit?usp=sharing)
+
+=== layout: one-panel
+
+# 2021 Group Work
+
+@body
+
+- Group 1
+- [https\://docs.google.com/presentation/d/1uOk1Qf93iyjCSWn42SoJqJ0MXEnHUR\_CNwMs2QmP4TA/edit?usp=sharing](https://docs.google.com/presentation/d/1uOk1Qf93iyjCSWn42SoJqJ0MXEnHUR_CNwMs2QmP4TA/edit?usp=sharing)
+- Group 2
+- [https\://docs.google.com/presentation/d/19\_UZmtE-HakBzdK9fWFKDx\_9EfUg6Sx5UI\_cfh7yG-0/edit?usp=sharing](https://docs.google.com/presentation/d/19_UZmtE-HakBzdK9fWFKDx_9EfUg6Sx5UI_cfh7yG-0/edit?usp=sharing)
+- Group 3
+- [https\://docs.google.com/presentation/d/1B3pSWsG\_DX3H\_fYkWs-u03IF24khCnaXzro4dpwBzKo/edit?usp=sharing](https://docs.google.com/presentation/d/1B3pSWsG_DX3H_fYkWs-u03IF24khCnaXzro4dpwBzKo/edit?usp=sharing)
+- Group 4
+- [https\://docs.google.com/presentation/d/1biKFcLQpzX8FOyrJ1zjbNVniT4DNF6Eqy8Nh\_8rtOoQ/edit?usp=sharing](https://docs.google.com/presentation/d/1biKFcLQpzX8FOyrJ1zjbNVniT4DNF6Eqy8Nh_8rtOoQ/edit?usp=sharing)
+- Group 5
+- [https\://docs.google.com/presentation/d/18JnJxa\_uFl4MOuxvELy588XyOY9kExlfJI3QaQTX0sM/edit?usp=sharing](https://docs.google.com/presentation/d/18JnJxa_uFl4MOuxvELy588XyOY9kExlfJI3QaQTX0sM/edit?usp=sharing)
+- Group 6
+- [https\://docs.google.com/presentation/d/1cVeSVyS\_D01ECFM\_bGYD-vF1u\_mO3aujy-YgXpPY8Lo/edit?usp=sharing](https://docs.google.com/presentation/d/1cVeSVyS_D01ECFM_bGYD-vF1u_mO3aujy-YgXpPY8Lo/edit?usp=sharing)
+- Group 7
+- [https\://docs.google.com/presentation/d/1WpChBPiyJbS17ofBohkxV2GvOMMJyQe-ri574-dH1n0/edit?usp=sharing](https://docs.google.com/presentation/d/1WpChBPiyJbS17ofBohkxV2GvOMMJyQe-ri574-dH1n0/edit?usp=sharing)
+- Group 8
+- [https\://docs.google.com/presentation/d/1\_ERoNm7qqWvmiQGhMqeYD8Y018EbevloxHiVnXwmnIE/edit?usp=sharing](https://docs.google.com/presentation/d/1_ERoNm7qqWvmiQGhMqeYD8Y018EbevloxHiVnXwmnIE/edit?usp=sharing)
+- Group 9
+- [https\://docs.google.com/presentation/d/1oaEXrfT5S9FVFrX6Fv1ZvYdyxouFIxUqZLk6pDfZCzI/edit?usp=sharing](https://docs.google.com/presentation/d/1oaEXrfT5S9FVFrX6Fv1ZvYdyxouFIxUqZLk6pDfZCzI/edit?usp=sharing)
+
+=== layout: blank
+
+=== layout: blank
+
+=== layout: section
+
+# THE END

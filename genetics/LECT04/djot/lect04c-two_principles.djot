@@ -1,0 +1,566 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04C
+
+## Mendelian Genetics: First Two Principles
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principle of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principle of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: section
+
+# Key concepts and terms
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following terms refers to the [genetic constitution (make up) of an organism]{color=red}?
+
+- A. Alleles
+- B. Genotype
+- C. Heterozygous
+- D. Homologous chromosomes
+- E. Homozygous
+- F. Locus
+- G. Phenotype
+
+@answer
+
+Answer\: B
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following terms refers to the [observable traits of an organism]{color=red}?
+
+- A. Alleles
+- B. Genotype
+- C. Heterozygous
+- D. Homologous chromosomes
+- E. Homozygous
+- F. Locus
+- G. Phenotype
+
+@answer
+
+Answer\: G
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following terms refers to the [location of a gene on a chromosome]{color=red}?
+
+- A. Alleles
+- B. Genotype
+- C. Heterozygous
+- D. Homologous chromosomes
+- E. Homozygous
+- F. Locus
+- G. Phenotype
+
+@answer
+
+Answer\: F
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following terms refers to [different versions of the same gene]{color=red}?
+
+- A. Alleles
+- B. Genotype
+- C. Heterozygous
+- D. Homologous chromosomes
+- E. Homozygous
+- F. Locus
+- G. Phenotype
+
+@answer
+
+Answer\: A
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following terms refers to [when two copies of a gene are identical]{color=red}?
+
+- A. Alleles
+- B. Genotype
+- C. Heterozygous
+- D. Homologous chromosomes
+- E. Homozygous
+- F. Locus
+- G. Phenotype
+
+@answer
+
+Answer\: E
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following terms refers to [when two copies of a gene are different]{color=red}?
+
+- A. Alleles
+- B. Genotype
+- C. Heterozygous
+- D. Homologous chromosomes
+- E. Homozygous
+- F. Locus
+- G. Phenotype
+
+@answer
+
+Answer\: C
+
+=== layout: one-panel
+hidden: true
+
+# Key concepts and terms
+
+@body
+
+- Genotype
+- Phenotype
+- Homologous chromosomes
+- Locus
+- Allele
+- Homozygous
+- Heterozygous
+
+=== layout: one-panel
+
+# Key concepts and terms
+
+@body
+
+- Genotype - the genetic constitution of an organism
+- Phenotype - the observable traits of an organism
+- Homologous chromosomes - in a diploid organism, the two copies of a chromosome inherited from the mother and the father
+- Locus - location of a gene on a chromosome
+- Allele - different versions of the same gene
+- Homozygous - the two copies of a gene are identical
+- Heterozygous - the two copies of a gene are different
+
+=== layout: section
+
+# Phenotype
+
+=== layout: one-panel
+
+# Phenotypes
+
+@body
+
+- Phenotype is the set of observable characteristics of an individual resulting from the interaction of its genotype with the environment.
+  - Results from BOTH the expression of genetic code AND the influence of environmental factors.
+- Phenotype is all the characteristics displayed by an organism
+  - which includes morphology, biochemistry, behavior, development, physiological, and molecular.
+- What are the different types of phenotypes?
+  - morphology, molecular, etc.
+
+=== layout: one-panel
+
+# Phenotypes
+
+@body
+
+- Morphological phenotype
+  - Morphology is shape and structure.
+- Molecular phenotyping involves determining phenotype at the molecular level.
+  - Useful to determine genotype 
+
+=== layout: stacked-panels
+
+# Molecular Phenotyping
+
+@top
+
+- The wildtype allele W is dominant to the mutant allele w, which contains an insertion of foreign DNA.
+
+@bottom
+
+![Slide image 1](assets/lect04c-two_principles/image_001.jpg)
+
+- Figure 3.2\: (A) W (round) is an allele of a gene that specifies the amino acid sequence of starch branching enzyme I (SBEI). (B) w (wrinkled) is an allele that encodes an inactive form of the enzyme because its DNA sequence is interrupted by the insertion of a transposable element. (C) At the level of the morphological phenotype, W is dominant to w\: Genotypes WW and Ww have round seeds, whereas genotype ww has wrinkled seeds.
+
+=== layout: one-panel
+
+# Determining genotype
+
+@body
+
+![Slide image 2](assets/lect04c-two_principles/image_002.png)
+
+=== layout: section
+
+# Alleles
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principle of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given character
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: one-panel
+
+# Key Features of Single Gene Inheritance
+
+@body
+
+- Genes come in pairs so each cell has two alleles of a gene
+- For each pair of genes, the alleles may be the same or different
+- Each gamete (sperm or egg) contains only one allele of each gene
+
+=== layout: one-panel
+
+# Alleles Come in Pairs
+
+@body
+
+- Each organism has two alleles that make up the genotype for a given trait
+- For the population on the right there are two alleles
+  - ([A]{color=red} and [a]{color=blue}).
+- Each circle has two of the alleles
+  - they can be both the same or one of each
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [AA]{color=red}
+
+- [AA]{color=red}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+=== layout: one-panel
+
+# Allele Concepts
+
+@body
+
+- Allele - different versions of the same gene
+  - [A]{color=red} and [a]{color=blue}
+- Homozygous - the two copies of a gene are identical
+  - [AA]{color=red} or [aa]{color=blue}
+- Heterozygous - the two copies of a gene are different
+  - [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [AA]{color=red}
+
+- [AA]{color=red}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+=== layout: one-panel
+
+# Allele Concepts
+
+@body
+
+- Allele - different versions of the same gene
+  - [A]{color=red} and [a]{color=blue}
+- Homozygous - the two copies of a gene are identical
+  - [AA]{color=red} or [aa]{color=blue}
+- [Heterozygous]{color=green} - the two copies of a gene are different
+  - [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [AA]{color=red}
+
+- [AA]{color=red}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+=== layout: section
+
+# What principles account for the passing of traits from parents to offspring?
+
+=== layout: one-panel
+
+# Drawing from the Deck of Genes
+
+@body
+
+- How do traits of parents combine to produce offspring?
+- What principles account for the passing of traits from parents to offspring?
+- Two hypotheses\:
+  - “blending” hypothesis
+  - “particulate” hypothesis
+
+=== layout: one-panel
+
+# Blending hypothesis
+
+@body
+
+![Slide image 3](assets/lect04c-two_principles/image_003.png)
+
+- The “blending” hypothesis is the idea that genetic material from the two parents blends together
+  - like blue and yellow paint blend to make green
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04c-two_principles/image_004.jpg)
+
+=== layout: one-panel
+
+# Blending hypothesis
+
+@body
+
+- The “blending” hypothesis is the idea that genetic material from the two parents blends together
+  - like blue and yellow paint blend to make green
+- [If this process were true, the variation in a population would be reduced]{color=red}
+  - a fact that caused Charles Darwin and many other early biologists to doubt the validity of the hypothesis.
+
+![Slide image 4](assets/lect04c-two_principles/image_003.png)
+
+=== layout: one-panel
+
+# Particulate Hypothesis
+
+@body
+
+![Slide image 5](assets/lect04c-two_principles/image_005.png)
+
+- The “particulate” hypothesis is the idea that parents pass on discrete heritable units (genes)
+- Mendel documented a particulate mechanism through his experiments with garden peas
+- Mendel came up with the idea of dominance
+
+=== layout: section
+
+# Dominance
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principle of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: two-panels
+
+# Dominance
+
+@left
+
+- In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- Since purple is more common than [white]{color=gray}, purple is likely dominant to [white]{color=gray}
+
+@right
+
+![Slide image 6](assets/lect04c-two_principles/image_006.png)
+
+=== layout: one-panel
+
+# Allele Concepts
+
+@body
+
+- [A]{color=red} is the dominant allele
+- [a]{color=blue} is the recessive allele
+- Homozygous Dominant - the two identical copies of the dominant allele
+  - [AA]{color=red}
+- Homozygous Recessive - the two identical copies of the recessive allele
+  - [aa]{color=blue}
+- Heterozygous – one of each allele, one dominant and one recessive
+  - [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [AA]{color=red}
+
+- [AA]{color=red}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+=== layout: one-panel
+
+# Allele Concepts
+
+@body
+
+- [A]{color=red} is the dominant allele
+- [a]{color=blue} is the recessive allele
+- Homozygous Dominant - the two identical copies of the dominant allele
+  - [AA ]{color=red}shows[ dominant phenotype]{color=red}
+- Homozygous Recessive - the two identical copies of the recessive allele
+  - [aa ]{color=blue}shows[ ]{color=red}[recessive phenotype]{color=blue}
+- Heterozygous – one of each allele, one dominant and one recessive
+  - [A]{color=red}[a ]{color=blue}shows[ dominant phenotype]{color=red}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [AA]{color=red}
+
+- [AA]{color=red}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+=== layout: one-panel
+
+# Allele Concepts
+
+@body
+
+- [A]{color=red} is the dominant allele
+- [a]{color=blue} is the recessive allele
+- Homozygous Dominant - the two identical copies of the dominant allele
+  - [AA ]{color=red}shows[ dominant phenotype]{color=red}
+- Homozygous Recessive - the two identical copies of the recessive allele
+  - [aa ]{color=blue}shows[ ]{color=red}[recessive phenotype]{color=blue}
+- Heterozygous – one of each allele, one dominant and one recessive
+  - [A]{color=red}[a ]{color=blue}shows[ dominant phenotype]{color=red}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [aa]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [A]{color=red}[a]{color=blue}
+
+- [AA]{color=red}
+
+- [AA]{color=red}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- [aa]{color=blue}
+
+- the dominant allele
+- completely masks
+- the recessive allele
+
+=== layout: section
+
+# THE END

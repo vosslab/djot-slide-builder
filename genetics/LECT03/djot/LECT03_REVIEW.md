@@ -27,7 +27,7 @@ visible announcement slide blocks were preserved exactly when the hidden slides 
 
 To include a hidden slide in the classroom deck, remove its `hidden: true` line or change it to
 `hidden: false`, then rebuild. See
-[DJOT_SLIDE_SYNTAX.md](../../docs/DJOT_SLIDE_SYNTAX.md#hidden-slides).
+[DJOT_SLIDE_SYNTAX.md](../../../docs/DJOT_SLIDE_SYNTAX.md#hidden-slides).
 
 - Covers use the existing title-slide layout and September 15, 2026 date. The announcement cover
   now says Lecture 3A, and its agenda lists the Lecture 03 topics.
@@ -45,6 +45,9 @@ To include a hidden slide in the classroom deck, remove its `hidden: true` line 
   the final answer, replacing drawing masks, arrows, and duplicated question-image placements.
 - Single-figure slides with explanatory text use the existing two-panel layout to keep the figure
   visible alongside its explanation.
+- The announcement recording and informational slides use the shared polished Biotechnology
+  treatment: the recording visual, Zoom guidance, YouTube reminder, Discord sign-up, office hours,
+  contact methods, and anonymous form are expressed with the same native layouts and captions.
 
 ## Review boundary
 
@@ -68,5 +71,5 @@ Rebuild one deck with the existing command:
 
 ```bash
 source source_me.sh && python3 deck_tools.py build \
-  genetics/djot/lect03b-blood_hla_typing.djot --format all
+  genetics/LECT03/djot/lect03b-blood_hla_typing.djot --format all
 ```

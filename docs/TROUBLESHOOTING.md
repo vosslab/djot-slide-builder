@@ -25,7 +25,7 @@ The strict gate requires both flags and a discoverable Jotdown executable:
 ```bash
 source source_me.sh && jotdown --version
 source source_me.sh && python3 deck_tools.py lint --require-native \
-  --native-executable "$(command -v jotdown)" genetics/djot
+  --native-executable "$(command -v jotdown)" genetics/LECT04/
 ```
 
 The required version is Jotdown 0.10.0. If the version command does not report it, resolve the
@@ -60,7 +60,7 @@ Use the compile-only inspection command to see every current capacity concern in
 folder:
 
 ```bash
-source source_me.sh && python3 deck_tools.py capacity genetics/djot
+source source_me.sh && python3 deck_tools.py capacity genetics/LECT04/
 ```
 
 Each line identifies the source location, layout slot, readable floor, and explicit compiler cause.

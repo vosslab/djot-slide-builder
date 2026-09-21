@@ -1,0 +1,586 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04G
+
+## Mendel's Law of Independent Assortment
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: one-panel
+hidden: true
+
+# [Notes to Neil]{color=red}
+
+@body
+
+- [Lecture is poorly organized]{color=red}
+- [reorder with a proper narrative]{color=red}
+- [what is the goal of the lecture slide deck]{color=red}
+- [provide a summary at the end]{color=red}
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principles of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: section
+
+# What are the five (5) criteria for the Law of Segregation?
+
+=== layout: one-panel
+
+# Law of Segregation
+
+@body
+
+- (1) Alleles come in pairs
+  - (2) For each pair of alleles, they can be same or different
+- (3) Gametes contain only one allele
+  - (4) Gametes are equally likely to contain each allele
+- (5) Union of gametes is a random process
+
+- AA
+
+- A
+
+- A
+
+- Aa
+
+- A
+
+- a
+
+- aa
+
+- a
+
+- a
+
+=== layout: section
+
+# Mendel’s Law of Segregation predicts how a [single characteristic]{color=red} associated with a [single gene]{color=red} is inherited. In some cases, though, we might want to predict the inheritance of two characteristics associated with two different genes. How can we do this?
+
+=== layout: section
+
+# Hypothesis of Dependent Assortment
+
+=== layout: two-panels
+
+# Prediction of Dependent Assortment
+
+@left
+
+- Dependent assortment predicts the alleles are always linked\:
+  - F and the S alleles are linked i.e. purple flower always goes with yellow seed, and
+  - f and the s alleles are linked i.e. white flower always goes with green seed.
+- [only certain combinations are possible]{color=red}\: FS and fs
+- When a dihybrid cross is conducted, dependent assortment predicts offspring with a phenotypic ratio of\:
+  - 3 purple-flower/yellow-seed\:
+  - 1 white-flower/green-seed.
+
+@right
+
+![Slide image 1](assets/lect04g-indep_assort/image_001.png)
+
+=== layout: two-panels
+
+# Prediction of Independent Assortment
+
+@left
+
+- Independent assortment predicts the alleles are not linked.
+- [All combinations are possible]{color=red}\: FS, Fs, fS, and fs.
+- When a dihybrid cross is conducted, independent assortment predicts a phenotypic ratio of\:
+  - 9 purple-flower/yellow-seed
+  - 3 purple-flower/green-seed
+  - 3 white-flower/yellow-seed
+  - 1 white-flower/green-seed
+
+@right
+
+![Slide image 2](assets/lect04g-indep_assort/image_002.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect04g-indep_assort/image_003.jpg)
+
+Native reconstruction needed: 83 positioned diagram labels.
+
+=== layout: section
+
+# Mendel's Law of Independent Assortment
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principles of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: one-panel
+
+# Mendel's 2nd Law
+
+@body
+
+- The Law of Independent Assortment
+  - Segregation of the members of any pair of alleles is independent of the segregation of other pairs in the formation of gametes (reproductive cells).
+
+=== layout: one-panel
+
+# Law of Independent Assortment
+
+@body
+
+- Alleles at one locus segregate into gametes independently of alleles at other loci.
+- [Not valid for single genes problems]{color=red}
+  - not valid for blood types
+  - not valid for AA x Aa
+- Requires at least two genes to apply, e.g. genes A and B.
+  - dihybrid (or higher) cross
+    - Wrinkled/round does not affect yellow/green
+
+=== layout: one-panel
+
+# Hybrid Crosses
+
+@body
+
+- Hybrid crosses\:
+  - A cross between two individuals that are both heterozygous for [one character]{color=red} is called a [monohybrid]{color=red} cross
+    - [Aa × Aa]{color=red}
+  - A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
+    - AaBb × AaBb
+  - A cross between two individuals that are both heterozygous for [three characters]{color=green} is called a [trihybrid ]{color=green}cross
+    - [AaBbCc × AaBbCc]{color=green}
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04g-indep_assort/image_004.jpg)
+
+=== layout: section
+
+# Dihybrid cross
+
+=== layout: one-panel
+
+
+@body
+
+- Using a dihybrid cross, Mendel developed the law of independent assortment
+  - It states that each pair of alleles segregates [independently]{color=red} of each other pair of alleles during gamete formation
+  - This law applies only to [multiple genes]{color=red} on different, non-homologous chromosomes or those far apart on the same chromosome
+    - Genes located near each other on the same chromosome tend to be inherited together
+
+=== layout: two-panels
+
+# Results of a dihybrid cross
+
+@left
+
+![Slide image 5](assets/lect04g-indep_assort/image_005.jpg)
+
+@right
+
+- The coat color gene and seed shape genes assort (segregate) independently.
+- 3 \: 1 ratio of round \: wrinkled
+- and
+- 3 \: 1 ratio of yellow \: green
+- produces
+- 9 \: 3 \: 3 \: 1 ratio observed in the F2 progeny of the dihybrid cross.
+
+=== layout: one-panel
+
+# Genotype and phenotype ratios in the F2 of a dihybrid cross
+
+@body
+
+![Slide image 6](assets/lect04g-indep_assort/image_006.jpg)
+
+- Genotypes and phenotypes of the F2 progeny of the dihybrid cross for seed shape and seed color.
+
+- Genotypes and phenotypes of the F2 progeny of the dihybrid cross for seed shape and seed color.
+
+=== layout: section
+
+# Formation of Gametes
+
+=== layout: section
+
+# One of the hardest things for many students when setting up a Punnett square is figuring out the gametes…
+
+=== layout: one-panel
+
+# Gamete Formation
+
+@body
+
+- What gametes are produced by individuals with the following genotype?
+- AaBb
+
+=== layout: one-panel
+
+# Gamete Formation
+
+@body
+
+- What gametes are produced by individuals with the following genotype?
+- AaBb
+  - Aa, AB, Bb, ab – is this correct?
+
+- [Aa]{color=red}Bb
+
+- [Aa]{color=red}
+
+- Bb
+
+- [A]{color=red}B
+
+- [a]{color=red}b
+
+=== layout: one-panel
+
+# Gamete Formation
+
+@body
+
+- What gametes are produced by individuals with the following genotype?
+- AaBb
+  - [Aa, AB, Bb, ab – is this correct? NO!]{color=red}
+- AB, Ab, aB, ab
+
+- [Aa]{color=red}Bb
+
+- [A]{color=red}b
+
+- [a]{color=red}B
+
+- [A]{color=red}B
+
+- [a]{color=red}b
+
+- Genes independently assort
+  - each gamete will have one allele for each gene
+  - one A and one B
+- Separation\: You CANNOT have two alleles from the same gene in a gamete!!
+
+=== layout: one-panel
+
+# Gamete Formation
+
+@body
+
+- What gametes are produced by individuals with the following genotype?
+- AaBb
+  - AB, Ab, aB, ab
+- AABb
+  - ??
+
+=== layout: one-panel
+
+# Gamete Formation
+
+@body
+
+- What gametes are produced by individuals with the following genotype?
+- AaBb
+  - AB, Ab, aB, ab
+- AABb
+  - Only two\: AB, Ab
+- Aabb
+  - Only two\: Ab, ab
+- AAbb
+  - Only one\: Ab
+
+=== layout: two-panels
+
+# Alleles of two genes segregate independently
+
+@left
+
+![Slide image 7](assets/lect04g-indep_assort/image_007.jpg)
+
+@right
+
+- Four kinds of gametes are produced in equal proportions
+- Independent segregation of the W, w and G, g allele pairs means that among each of the W and w gametic classes, the ratio of G \: g is 1 \: 1.
+
+- Independent segregation of the W, w and G, g allele pairs means that among each of the W and w gametic classes, the ratio of G \: g is 1 \: 1.
+
+=== layout: section
+
+# Setting up the Dihybrid Punnett Square
+
+=== layout: one-panel
+
+
+@body
+
+- AaBb × AaBb
+- Setup the gametes...
+
+=== layout: stacked-panels
+
+
+@top
+
+- AaBb × AaBb
+
+@bottom
+
+- AB		  Ab		aB		  ab
+
+=== layout: one-panel
+
+
+@body
+
+- AaBb × AaBb
+
+- AB		Ab		aB		  ab
+
+- AB
+- Ab
+- aB
+- ab
+
+- Female
+- ♀
+
+- Male
+- ♂
+
+=== layout: six-panels
+
+
+@top-left
+
+| AABB |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+@top-center
+
+- AaBb × AaBb
+
+@top-right
+
+- Female
+- ♀
+
+@bottom-left
+
+- Male
+- ♂
+
+@bottom-center
+
+- AB		Ab		aB		  ab
+
+@bottom-right
+
+- AB
+- Ab
+- aB
+- ab
+
+=== layout: six-panels
+
+
+@top-left
+
+| AABB | AABb |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+@top-center
+
+- AaBb × AaBb
+
+@top-right
+
+- AB		Ab		aB		  ab
+
+@bottom-left
+
+- Female
+- ♀
+
+@bottom-center
+
+- Male
+- ♂
+
+@bottom-right
+
+- AB
+- Ab
+- aB
+- ab
+
+=== layout: six-panels
+
+
+@top-left
+
+| AABB | AABb | AaBB | AaBb |
+| AABb | AAbb | AaBb | Aabb |
+| AaBB | AaBb | aaBB |  |
+|  |  |  |  |
+
+@top-center
+
+- AaBb × AaBb
+
+@top-right
+
+- Female
+- ♀
+
+@bottom-left
+
+- Male
+- ♂
+
+@bottom-center
+
+- AB		Ab		aB		  ab
+
+@bottom-right
+
+- AB
+- Ab
+- aB
+- ab
+
+=== layout: title-only
+
+# AaBb × AaBb
+
+=== layout: title-only
+
+# Double heterozygotes are on the lower-left diagonal
+
+=== layout: title-only
+
+# [Double homozygotes on the upper-left diagonal]{color=blue}
+
+=== layout: title-only
+
+# [Dominate A Phenotype]{color=red}
+
+=== layout: title-only
+
+# [Dominate B Phenotype]{color=blue}
+
+=== layout: title-only
+
+# Dominate for both characters
+
+=== layout: title-only
+
+# Dominate for one character and recessive for the other
+
+=== layout: title-only
+
+# Dominate for one character and recessive for the other
+
+=== layout: title-only
+
+# [Recessive for both characters]{color=orange}
+
+=== layout: blank
+
+=== layout: section
+
+# What is a test-cross?
+
+=== layout: one-panel
+
+# Types of Crosses
+
+@body
+
+- Testcross\: breeding the mystery individual with a homozygous recessive individual
+- Hybrid crosses\:
+  - A cross between two individuals that are both heterozygous for one character is called a monohybrid cross
+  - A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
+- Backcross\: hybrid organisms are crossed with one of the parental genotypes
+- Reciprocal cross\: swapping the traits of the male and female in a cross.
+  - Should display no change, unless the gene is sex-linked (Chapter 5)
+
+=== layout: section
+
+# How many different gametes does a homozygous recessive Individual for two genes Produce? e.g. aabb
+
+=== layout: two-panels
+
+# A testcross can be used to show two genes are unlinked
+
+@left
+
+![Slide image 8](assets/lect04g-indep_assort/image_008.jpg)
+
+@right
+
+- Genotypes and phenotypes resulting from a testcross of the Ww Gg double heterozygote.
+
+=== layout: one-panel
+
+# heterozygote test-crosses usually have 1\:1 phenotype ratio
+
+@body
+
+![Slide image 9](assets/lect04g-indep_assort/image_009.jpg)
+
+=== layout: section
+
+# Multiple Gene Crosses
+
+=== layout: two-panels
+
+# A trihybrid cross produces a 27\:9\:9\:9\:3\:3\:3\:1 ratio of phenotypes
+
+@left
+
+![Slide image 10](assets/lect04g-indep_assort/image_010.jpg)
+
+@right
+
+- With independent assortment, the expected ratio of phenotypes in a trihybrid cross is obtained by multiplying the three independent 3 \: 1 ratios of the dominant and recessive phenotypes.
+
+=== layout: section
+
+# THE END

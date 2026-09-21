@@ -1,0 +1,396 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04H
+
+## Independent Assortment Problems
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: section
+
+# A Problem of Two Genes
+
+=== layout: blank
+
+=== layout: section
+
+# A Problem of Three Genes
+
+=== layout: section
+
+# Given a genotype of Ss Yy Aa. What are the possible gametes? How many different gametes are produced?
+
+=== layout: two-panels
+
+# Trihybrid cross
+
+@left
+
+- Given a genotype of
+  - Ss Yy Aa.
+- What are the possible gametes?
+- 8 possibilities
+  - (2 alleles, 3 genes → 23 = 8)
+
+@right
+
+  - [S]{color=red}[Y]{color=blue}A
+  - [S]{color=red}[Y]{color=blue}a
+  - [S]{color=red}yA
+  - [S]{color=red}ya
+  - s[Y]{color=blue}A
+  - s[Y]{color=blue}a
+  - syA
+  - sya
+
+=== layout: one-panel
+
+# Trihybrid cross
+
+@body
+
+- Given a genotype of
+  - Ss Yy Aa.
+- What are the possible gametes?
+- 8 possibilities
+  - (2 alleles, 3 genes → 23 = 8)
+  - [S]{color=red}[Y]{color=blue}A, [S]{color=red}[y]{color=blue}a, [S]{color=red}yA, [S]{color=red}ya, s[Y]{color=blue}A, s[Y]{color=blue}a, syA, sya
+- How big is the Punnett Square for the trihybrid cross?
+  - Ss Yy Aa × Ss Yy Aa
+
+=== layout: one-panel
+
+# Trihybrid cross
+
+@body
+
+![Slide image 1](assets/lect04h-indep_assort_problems/image_001.png)
+
+=== layout: one-panel
+
+# Forked Line Method
+
+@body
+
+![Slide image 2](assets/lect04h-indep_assort_problems/image_002.png)
+
+=== layout: section
+
+# A Problem of Four Genes Hartl Question 3.1
+
+=== layout: one-panel
+
+# Hartl Question 3.1
+
+@body
+
+![Slide image 3](assets/lect04h-indep_assort_problems/image_003.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect04h-indep_assort_problems/image_003.png)
+
+- Take it one gene at a time.
+- What proportion are expected to be heterozygote of gene A?
+- Ignoring other genes, what proportion are expected to be heterozygote of gene B?
+
+=== layout: one-panel
+
+# Multiplication Rule
+
+@body
+
+- The multiplication rule states that the probability that two or more independent events will occur together is the product of their individual probabilities
+- Probability in an F1 monohybrid cross can be determined using the multiplication rule
+- Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a ½ chance of carrying the dominant allele and a ½ chance of carrying the recessive allele
+
+=== layout: one-panel
+
+# Answer
+
+@body
+
+![Slide image 3](assets/lect04h-indep_assort_problems/image_003.png)
+
+- Proportion for each gene is\:
+  - A\: ½ , B\: ½ , C\: ½ , D\: ½
+- A, B, C, and D are independent, so multiplication rule applies\:
+- ½ x ½ x ½ x ½ = [1/16]{color=red}
+
+=== layout: section
+
+# A Problem of Five Genes Hartl Question 3.4
+
+=== layout: one-panel
+
+# Hartl Question 3.4
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- this would 32 x 32 Punnett square
+  - with 1,024 boxes!
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 1\: For each gene, what are the gametes\:
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 1\: For each gene, what are the gametes\:
+  - A, a × A, a
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 1\: For each gene, what are the gametes\:
+  - A, a × A, a
+  - B × B, b
+  - C, c × c
+  - d × D
+  - E, e × E, e
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 2\: For each gene, what are the possible genotypes\:
+  - A, a × A, a [→ AA, Aa, aa]{color=red}
+  - B × B, b
+  - C, c × c
+  - d × D
+  - E, e × E, e
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 2\: For each gene, what are the possible genotypes\:
+  - A, a × A, a [→ AA, Aa, aa]{color=red}
+  - B × B, b [→ BB, Bb]{color=red}
+  - C, c × c [→ Cc, cc]{color=red}
+  - d × D [→ Dd]{color=red}
+  - E, e × E, e [→ EE, Ee, ee]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 3\: Count the number of genotypes produced for each gene?
+  - [3]{color=red}\: AA, Aa, aa
+  - [2]{color=red}\: BB, Bb
+  - [2]{color=red}\: Cc, cc
+  - [1]{color=red}\: Dd
+  - [3]{color=red}\: EE, Ee, ee
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect04h-indep_assort_problems/image_004.png)
+
+- Step 4\: Multiplication rule\:
+  - 3\: AA, Aa, aa
+  - 2\: BB, Bb
+  - 2\: Cc, cc
+  - 1\: Dd
+  - 3\: EE, Ee, ee
+- 3 × 2 × 2 × 1 × 3 = [36 genotypes]{color=red}
+
+=== layout: one-panel
+
+# Genotypes in F2 hybrid crosses
+
+@body
+
+- Only works with heterozygotes for all genes!
+- you use 3\^n to find the number of genotype and 2\^n to find the number of phenotypes
+- monohybrid
+  - 3\^1 = 3
+  - AA, Aa, aa
+- dihybrid
+  - 3\^2 = 9
+  - AABB, AABb, AAbb, AaBB, AaBb, Aabb, aaBB, aaBb, aabb
+- trihybrid
+  - 3\^3 = 27
+  - all the dihybrids times three with CC, Cc, cc swapped
+- tetrahybrid
+  - 3\^4 = 81
+  - DD, Dd, dd, etc.
+
+=== layout: section
+
+# Another Problem of Five Genes Hartl Question 3.5
+
+=== layout: one-panel
+
+# Hartl Question 3.5
+
+@body
+
+![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
+
+- Step 1\: what is a test-cross again?
+
+=== layout: one-panel
+
+# Types of Crosses
+
+@body
+
+- Testcross\: breeding the mystery individual with a homozygous recessive individual
+- Hybrid crosses\:
+  - A cross between two individuals that are both heterozygous for one character is called a monohybrid cross
+  - A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
+- Backcross\: hybrid organisms are crossed with one of the parental genotypes
+- Reciprocal cross\: swapping the traits of the male and female in a cross.
+  - Should display no change, unless the gene is sex-linked (Chapter 5)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
+
+- test-cross\:
+  - aa bb cc dd ee × AA Bb Cc DD Ee
+- Step 2\: what are the possible genotypes for each gene separately?
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
+
+- test-cross\:
+  - aa bb cc dd ee × AA Bb Cc DD Ee
+- Step 2\: what are the possible genotypes for each gene separately?
+  - 1\: all Aa
+  - 2\: Bb or bb
+  - 2\: Cc or cc
+  - 1\: all Dd
+  - 2\: Ee or ee
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
+
+- Step 2\: what are the gametes?
+  - 1\: Aa – 2\: Bb, bb – 2\: Cc, cc – 1\: Dd – 2\: Ee, ee
+- Step 3\: What are heterozygote probabilities of each gene’s genotype?
+  - Aa\: 100%
+  - Bb\: 50%
+  - Cc\: 50%
+  - Dd\: 100%
+  - Ee\: 50%
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
+
+- Step 3\: What are probabilities of each gene’s genotype?
+  - Aa\: 100%
+  - Bb\: 50%
+  - Cc\: 50%
+  - Dd\: 100%
+  - Ee\: 50%
+- Step 4\: Are they independent?
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
+
+- Step 3\: What are probabilities of each gene’s genotype?
+  - Aa\: 100% -- Bb\: 50% -- Cc\: 50% -- Dd\: 100% -- Ee\: 50%
+- Step 4\: Are they independent?
+  - Yes, states independent assortment above
+- Multiplication rule\:
+- 1 × ½ × ½ × 1 × ½ = [1/8]{color=red}
+
+=== layout: section
+
+# A Problem of Seven Genes
+
+=== layout: one-panel
+
+# Seven Gene Gamete Formation
+
+@body
+
+- How many possible gametes?
+- Look if there is only one allele
+- AA bb Cc DD Ee FF gg
+
+=== layout: one-panel
+
+# Seven Gene Gamete Formation
+
+@body
+
+- Genotype of all unlinked genes\:
+- Look if there is only one allele
+- AA    bb   Cc    DD    Ee   FF   gg
+- A     b             D            F    g
+- C or c            E or e
+
+=== layout: one-panel
+
+# Seven Gene Gamete Formation
+
+@body
+
+- Genotype of all unlinked genes\:
+- Look if there is only one allele
+- AA bb Cc DD Ee FF gg
+  - 1 × 1 × 2 × 1 × 2 × 1 × 1 = 4
+- Only Four Possible Gametes\:
+  - AbCDEFg
+  - AbCDeFg
+  - AbcDEFg
+  - AbcDeFg
+
+=== layout: section
+
+# THE END

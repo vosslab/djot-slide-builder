@@ -7,7 +7,25 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 `docs/active_plans/decisions/`. [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
-## Current operational boundary (2026-09-09)
+## Current operational boundary (2026-09-21)
+
+### Lecture-organized Genetics source tree
+
+**Decision.** Organize the Genetics corpus by lecture. Each `genetics/LECT##/` directory contains
+`djot/` for canonical Djot sources and adjacent imported assets, plus `old/` for original ODP/PDF/ODS
+evidence. The shared master theme remains at `genetics/xlect99-template_2023.otp`, and the existing
+recursive folder build command is the lecture selector.
+
+**Why.** The lecture is the useful unit for authoring, review, source comparison, and classroom
+delivery. Keeping original evidence beside its corresponding canonical source makes provenance
+clear without requiring the build command to know about two top-level corpora.
+
+**Consequence.** `./build_slides.sh genetics/LECT04/` builds only Lecture 04, while
+`./build_slides.sh genetics/` still builds the complete Genetics corpus. Folder discovery continues
+to select `.djot` files recursively and ignores the `old/` evidence because it contains no Djot
+sources.
+
+**Owner.** `genetics/`, `build_slides.sh`, and `slide_lib/native_export.py`.
 
 ### Biotechnology Lecture 03 source merge
 

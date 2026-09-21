@@ -14,14 +14,14 @@ Use this loop when you are changing wording, a question, or a figure in an exist
 
    ```bash
    source source_me.sh && python3 deck_tools.py lint \
-     genetics/djot/lect01b-genetic_disorders.djot
+     genetics/LECT01/djot/lect01b-genetic_disorders.djot
    ```
 
 3. Build the editable classroom file you need:
 
    ```bash
    source source_me.sh && python3 deck_tools.py build \
-     genetics/djot/lect01b-genetic_disorders.djot --format odp
+     genetics/LECT01/djot/lect01b-genetic_disorders.djot --format odp
    ```
 
 The result is `output/odp/lect01b-genetic_disorders.odp`. A successful lint proves source
@@ -34,9 +34,12 @@ Use this workflow when the full set of decks under a course area needs refreshed
 materials.
 
 ```bash
-source source_me.sh && python3 deck_tools.py lint genetics/djot
+source source_me.sh && python3 deck_tools.py lint genetics
 ./build_slides.sh genetics
 ```
+
+To prepare one lecture only, use its lecture folder, for example
+`./build_slides.sh genetics/LECT04/`.
 
 The first command checks all discovered Djot decks without rendering them. The second writes ODP
 and ODP-derived PDF files under `output/odp/` and `output/pdf/`. Check the
@@ -52,8 +55,8 @@ name; import refuses to replace an existing Djot file or asset directory.
 ```bash
 source source_me.sh && python3 deck_tools.py visibility genetics/lecture.odp
 source source_me.sh && python3 deck_tools.py import genetics/lecture.odp \
-  --output genetics/djot/lecture.djot
-source source_me.sh && python3 deck_tools.py lint genetics/djot/lecture.djot
+  --output genetics/LECT04/djot/lecture.djot
+source source_me.sh && python3 deck_tools.py lint genetics/LECT04/djot/lecture.djot
 ```
 
 For an ODP source, visibility reports the resolved visible and hidden slide state before migration.
@@ -69,7 +72,7 @@ Use the strict native-parser gate when deciding that authored Djot is ready for 
 
 ```bash
 source source_me.sh && python3 deck_tools.py lint \
-  --require-native --native-executable "$(command -v jotdown)" genetics/djot
+  --require-native --native-executable "$(command -v jotdown)" genetics
 ```
 
 This gate complements fast structural lint. Native export and a visual LibreOffice review remain

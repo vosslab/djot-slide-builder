@@ -1,0 +1,778 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04F
+
+## Punnett Squares
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: section
+
+# How to make a Punnett Square
+
+=== layout: section
+
+# Testcross Aa x aa
+
+=== layout: title-only
+
+# Punnett Squares are Useful!
+
+=== layout: two-panels
+
+# Punnett Squares are Useful!
+
+@left
+
+- aa
+
+- Aa
+
+@right
+
+- ♂
+
+- ♀
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- aa
+
+- Aa
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- aa
+
+- Aa
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- aa
+
+- Aa
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- aa
+
+- Aa
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- aa
+
+- Aa
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- aa
+
+- Aa
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+- a
+
+- a
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+- a
+
+- a
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+- a
+
+- a
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- aa
+
+- a
+
+- a
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- a
+
+- A
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- a
+
+- A
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- Aa
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- Aa
+
+- aa
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- a
+
+- Aa
+
+- aa
+
+- Aa
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- a
+
+- a
+
+- Aa
+
+- aa
+
+- Aa
+
+- aa
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- a
+
+- a
+
+- Aa
+
+- aa
+
+- Aa
+
+- aa
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- a
+
+- a
+
+- Aa
+
+- aa
+
+- Aa
+
+- aa
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+- a
+
+- a
+
+- Aa
+
+- aa
+
+- Aa
+
+- aa
+
+=== layout: section
+
+# The Monohybrid Cross Aa x Aa
+
+=== layout: two-panels
+
+# Hybrid Cross Terminology
+
+@left
+
+- P\: parental generation
+  - true-breeding, i.e., homozygous for all genes
+  - mates have different phenotype, e.g., purple and white flowers
+- F1\: offspring of P
+  - heterozygous for all genes
+  - all display dominant phenotype, purple
+- F2\: offspring of F1
+  - exhibit interesting ratios of phenotypes
+  - e.g., 3\:1 ratio in monohybrid cross
+- F3\: offspring of F2
+- F4\: ...
+
+@right
+
+![Slide image 1](assets/lect04f-punnett_squares/image_001.png)
+
+=== layout: one-panel
+
+# The Monohybrid Cross
+
+@body
+
+- A monohybrid cross is a mating between individuals who have different alleles at one genetic locus of interest.
+- A cross between two individuals that are both heterozygous for one character is called a monohybrid cross
+
+=== layout: two-panels
+
+# Punnett Squares are Useful!
+
+@left
+
+- Aa
+
+- Aa
+
+@right
+
+- ♂
+
+- ♀
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- Aa
+
+- Aa
+
+- A
+
+- a
+
+- ♀
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- Aa
+
+- a
+
+- A
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- A
+
+- A
+
+- A
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- A
+
+- AA
+
+- Aa
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- A
+
+- AA
+
+- Aa
+
+- Aa
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- A
+
+- AA
+
+- Aa
+
+- Aa
+
+- aa
+
+- ♂
+
+=== layout: one-panel
+
+# Punnett Squares are Useful!
+
+@body
+
+- A
+
+- a
+
+- ♀
+
+- a
+
+- A
+
+- AA
+
+- Aa
+
+- Aa
+
+- aa
+
+- ♂
+
+=== layout: one-panel
+
+# Verification of Segregation
+
+@body
+
+- How do we verify the previous result of the Punnett square
+- Monohybrid cross
+  - Genotypic ratio of 1 AA\: 2 Aa\: 1 aa
+  - Phenotypic ratio of 3 tall\: 1 short
+
+=== layout: one-panel
+
+# Phenotypic ratios of 3\:1 are observed in the F2
+
+@body
+
+![Slide image 2](assets/lect04f-punnett_squares/image_002.jpg)
+
+- Very consistent
+
+=== layout: section
+
+# Problems
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 3](assets/lect04f-punnett_squares/image_003.png)
+
+@bottom
+
+![Slide image 4](assets/lect04f-punnett_squares/image_004.png)
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 6](assets/lect04f-punnett_squares/image_006.png)
+
+@bottom
+
+![Slide image 5](assets/lect04f-punnett_squares/image_005.png)
+
+=== layout: blank
+
+=== layout: section
+
+# THE END

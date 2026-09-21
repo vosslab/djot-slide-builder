@@ -1,0 +1,141 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 04E
+
+## Mendel's Law of Segregation
+## Chapter 4
+## Dr. Neil Voss
+## Sept 22, 2026
+
+=== layout: one-panel
+
+# Mendel’s Four Principles of Heredity
+
+@body
+
+- (1) Principles of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+
+=== layout: section
+
+# Mendel’s Observation
+
+=== layout: one-panel
+
+# The Unexpected Phenotypes of the F2 Generation
+
+@body
+
+- When Mendel crossed contrasting, true-breeding [white]{color=gray}- and purple-flowered pea plants, all of the F1 hybrids were purple
+- When Mendel crossed the F1 hybrids, many of the F2 plants had purple flowers, but some had [white]{color=gray}
+- Mendel discovered a ratio of about three to one, purple to [white]{color=gray} flowers, in the F2 generation
+
+=== layout: two-panels
+
+# Observations from monohybrid crosses
+
+@left
+
+- F1 hybrids express the dominant phenotype
+- In the F2, plants with the recessive trait unexpectedly [reappeared]{color=red}
+  - In the F2, the ratio of the dominant phenotype to the recessive phenotype is 3\:1
+
+@right
+
+![Slide image 1](assets/lect04e-segregation/image_001.png)
+
+=== layout: one-panel
+
+# Mendel Tried This for Seven Different Characters
+
+@body
+
+![Slide image 2](assets/lect04e-segregation/image_002.jpg)
+
+- Very consistent
+
+=== layout: one-panel
+
+# Mendel’s Model
+
+@body
+
+- Mendel developed a hypothesis to explain the 3\:1 inheritance pattern he observed in F2 offspring
+- Four related concepts make up this model
+- These concepts can be related to what we now know about genes and chromosomes
+
+=== layout: section
+
+# Mendel's Law of Segregation
+
+=== layout: stacked-panels
+
+# Law of Segregation
+
+@top
+
+- The Law Most Relates to Gamete Formation
+- A Gamete is a mature haploid male or female germ cell which is able to unite with another of the opposite sex in sexual reproduction to form a zygote.
+
+@bottom
+
+![Slide image 3](assets/lect04e-segregation/image_003.png)
+
+- haploid gametes
+
+=== layout: one-panel
+
+# The Law of Segregation
+
+@body
+
+- In the formation of gametes, the paired hereditary determinants separate (segregate) in such a way that each gamete is equally likely to contain either member of the pair.
+
+- Aa
+
+- A
+
+- a
+
+=== layout: one-panel
+
+# Law of Segregation
+
+@body
+
+- (1) Genes come in pairs
+  - (2) For each pair of genes, alleles can be same or different
+- (3) Gametes contain only one allele
+  - (4) Gametes are equally likely to contain each allele
+- (5) Union of gametes is a random process
+
+- AA
+
+- A
+
+- A
+
+- Aa
+
+- A
+
+- a
+
+- aa
+
+- a
+
+- a
+
+=== layout: section
+
+# THE END

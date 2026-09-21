@@ -22,10 +22,10 @@ The 16:10 master-slide theme is `genetics/xlect99-template_2023.otp`. ODP is the
 artifact and LibreOffice derives its PDF. The theme is native presentation structure, not CSS or a
 browser-rendered slide.
 
-The included genetics corpus demonstrates the complete path: eight canonical source decks cover
-336 visible slides, with text, nested lists, links, images, and a source-derived table retained as
-native content. The corresponding [genetics/djot/README.md](genetics/djot/README.md) records the
-one-time corpus and all-format acceptance evidence.
+The included genetics corpus demonstrates the complete path: seventeen canonical source decks cover
+874 visible slides, with text, nested lists, links, images, and source-derived tables retained as
+native content. The corresponding [genetics/README.md](genetics/README.md) records the
+lecture-organized corpus and all-format acceptance evidence.
 
 ## Project status
 
@@ -54,7 +54,7 @@ for strict-Djot acceptance. Complete details are in
 brew bundle
 source source_me.sh && python3 -m pip install -r pip_requirements.txt
 source source_me.sh && python3 deck_tools.py build \
-  genetics/djot/lect01b-genetic_disorders.djot --format odp
+  genetics/LECT01/djot/lect01b-genetic_disorders.djot --format odp
 ```
 
 The command writes `output/odp/lect01b-genetic_disorders.odp`, which you can open and edit in
@@ -64,7 +64,7 @@ LibreOffice Impress. Use `--format pdf` or `--format all` when a PDF is needed.
 
 Layouts and slots make a slide's teaching structure visible in source. This small excerpt creates a
 titled panel with three flat definition bullets; the full 23-slide deck is
-[genetics/djot/lect01b-genetic_disorders.djot](genetics/djot/lect01b-genetic_disorders.djot).
+[genetics/LECT01/djot/lect01b-genetic_disorders.djot](genetics/LECT01/djot/lect01b-genetic_disorders.djot).
 See [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) for the complete authoring reference.
 
 ```djot
@@ -82,8 +82,11 @@ See [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) for the complete auth
 Run a fast structural check while authoring:
 
 ```bash
-source source_me.sh && python3 deck_tools.py lint genetics/djot
+source source_me.sh && python3 deck_tools.py lint genetics/LECT04/
 ```
+
+Build the complete Genetics corpus with `./build_slides.sh genetics`, or only Lecture 04 with
+`./build_slides.sh genetics/LECT04/`.
 
 For the pinned native-Djot acceptance lane, run Jotdown before the same semantic lint as described
 in [docs/USAGE.md](docs/USAGE.md). Fast lint checks source and referenced assets; it does not prove
@@ -102,7 +105,7 @@ Review the result once, then maintain the Djot deck as the sole canonical source
 
 ```bash
 source source_me.sh && python3 deck_tools.py import genetics/lecture.odp \
-  --output genetics/djot/lecture.djot
+  --output genetics/LECT04/djot/lecture.djot
 ```
 
 Close LibreOffice before an ODP import or an ODP/PDF build. Import only trusted files: archive and
@@ -118,7 +121,7 @@ Start here:
 - [docs/USAGE.md](docs/USAGE.md) - build, import, lint, and authoring commands.
 - [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) - layouts, slots, source blocks, and
   reveal behavior.
-- [genetics/djot/README.md](genetics/djot/README.md) - deck inventory and corpus evidence.
+- [genetics/README.md](genetics/README.md) - lecture-organized deck inventory and corpus evidence.
 - [docs/ROADMAP.md](docs/ROADMAP.md) - current milestones and open acceptance gates.
 
 Understand the implementation:
