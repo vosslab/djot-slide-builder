@@ -33,89 +33,115 @@ color-theme: genetics
 - 1. build a table
 - 2. do each gene one at a time.
 
-=== layout: blank
+=== layout: big-image
 
-=== layout: one-panel
+@image
 
+![Seven-gene work table, starting state](assets/lect04i-big_crossover_problem/crossover_01.png)
 
-@body
+@caption
 
-- George\: both gametes, A or a; = 2
+Build the table one gene at a time.
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![Seven-gene work table, George gametes](assets/lect04i-big_crossover_problem/crossover_02.png)
 
-- Linda\: only A gametes; = 1
+@caption
 
-=== layout: one-panel
+George has two gametes for gene A: A or a.
 
+=== layout: big-image
 
-@body
+@image
 
-- George\: A or a
-- Linda\: A
-- Cross\: AA or Aa; = 2
+![Seven-gene work table, Linda gametes](assets/lect04i-big_crossover_problem/crossover_03.png)
 
-=== layout: one-panel
+@caption
 
+Linda has one gamete for gene A: A.
 
-@body
+=== layout: big-image
 
-- Cross\: AA or Aa; = 2
-- Phenotype\: both dominant; = 1
-- [now you do gene B]{color=red}
+@image
 
-=== layout: one-panel
+![Seven-gene work table, cross genotypes](assets/lect04i-big_crossover_problem/crossover_04.png)
 
+@caption
 
-@body
+George: A or a. Linda: A. Cross genotypes: AA or Aa (2).
 
-- B or b → 2
-- b → 1
-- Bb or bb → 2
-- 2 phenotypes
-- [now finish the table]{color=red}
+=== layout: big-image
 
-=== layout: one-panel
+@image
 
+![Seven-gene work table, cross phenotypes](assets/lect04i-big_crossover_problem/crossover_05.png)
 
-@body
+@caption
 
-- 1 x 1 → 1
-- 2 x 1 → 2
-- 2 x 2 → 3!
-- [what about phenotypes?]{color=red}
+Two genotypes; one dominant phenotype. Now do gene B.
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![Seven-gene work table, gene B](assets/lect04i-big_crossover_problem/crossover_06.png)
 
-- Note\: dominant or recessive homozygotes give different phenotype counts
-- [how do we merge the genes together?]{color=red}
+@caption
 
-=== layout: one-panel
+B or b: 2 gametes; b: 1. Cross: 2 genotypes and 2 phenotypes.
 
+=== layout: big-image
 
-@body
+@image
 
-- these genes are independent, so we multiply
+![Seven-gene work table, per-gene counts](assets/lect04i-big_crossover_problem/crossover_07.png)
 
-=== layout: one-panel
+@caption
 
+1 x 1 -> 1; 2 x 1 -> 2; 2 x 2 -> 3 genotypes. What about phenotypes?
 
-@body
+=== layout: big-image
 
-- Punnett square is just the number of gametes multiplied\: 32 x 4
+@image
 
-=== layout: one-panel
+![Seven-gene work table, phenotype counts](assets/lect04i-big_crossover_problem/crossover_08.png)
 
+@caption
 
-@body
+Homozygotes change phenotype counts. How do we merge the genes?
 
-- Punnett square is just the number of gametes multiplied\: 32 x 4 = 128
+=== layout: big-image
+
+@image
+
+![Seven-gene work table, George total](assets/lect04i-big_crossover_problem/crossover_09.png)
+
+@caption
+
+Independent genes: multiply. George produces 32 gametes.
+
+=== layout: big-image
+
+@image
+
+![Seven-gene work table, genotype and phenotype totals](assets/lect04i-big_crossover_problem/crossover_10.png)
+
+@caption
+
+Linda: 4 gametes; cross: 96 genotypes and 32 phenotypes.
+
+=== layout: big-image
+
+@image
+
+![Seven-gene work table, Punnett square size](assets/lect04i-big_crossover_problem/crossover_11.png)
+
+@caption
+
+The Punnett square has 32 x 4 = 128 cells.
 
 === layout: one-panel
 
@@ -217,9 +243,25 @@ color-theme: genetics
 - Group 9
 - [https\://docs.google.com/presentation/d/1oaEXrfT5S9FVFrX6Fv1ZvYdyxouFIxUqZLk6pDfZCzI/edit?usp=sharing](https://docs.google.com/presentation/d/1oaEXrfT5S9FVFrX6Fv1ZvYdyxouFIxUqZLk6pDfZCzI/edit?usp=sharing)
 
-=== layout: blank
+=== layout: big-image
 
-=== layout: blank
+@image
+
+![2021 group-work table, Larry and Marge](assets/lect04i-big_crossover_problem/crossover_12.png)
+
+@caption
+
+Example seven-gene group-work table: Larry and Marge.
+
+=== layout: big-image
+
+@image
+
+![2021 group-work table, Jerry and Karla](assets/lect04i-big_crossover_problem/crossover_13.png)
+
+@caption
+
+Example seven-gene group-work table: Jerry and Karla.
 
 === layout: section
 

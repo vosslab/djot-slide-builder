@@ -284,12 +284,13 @@ color-theme: genetics
 
 ![Slide image 14](assets/lect04b-mendel_history/image_014.png)
 
-=== layout: one-panel
+=== layout: two-panels
 
-
-@body
+@left
 
 ![Slide image 15](assets/lect04b-mendel_history/image_015.png)
+
+@right
 
 - When Gregor mated true-breeding yellow and true-breeding green plants – it produced all yellow.
 - For all seven characters, all of the hybrid children looked like just one of the parents.

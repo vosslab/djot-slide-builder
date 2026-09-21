@@ -380,146 +380,101 @@ Native reconstruction needed: 83 positioned diagram labels.
 - Male
 - ♂
 
-=== layout: six-panels
+=== layout: one-panel
 
+# AaBb x AaBb
 
-@top-left
+@body
 
-| AABB |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+![Dihybrid Punnett square, first genotype](assets/lect04g-indep_assort/punnett_01.png)
 
-@top-center
+=== layout: one-panel
 
-- AaBb × AaBb
+# AaBb x AaBb
 
-@top-right
+@body
 
-- Female
-- ♀
+![Dihybrid Punnett square, first row](assets/lect04g-indep_assort/punnett_02.png)
 
-@bottom-left
+=== layout: one-panel
 
-- Male
-- ♂
+# AaBb x AaBb
 
-@bottom-center
+@body
 
-- AB		Ab		aB		  ab
+![Dihybrid Punnett square, progressive fill](assets/lect04g-indep_assort/punnett_03.png)
 
-@bottom-right
+=== layout: one-panel
 
-- AB
-- Ab
-- aB
-- ab
+# AaBb x AaBb
 
-=== layout: six-panels
+@body
 
+![Dihybrid Punnett square, completed table](assets/lect04g-indep_assort/punnett_04.png)
 
-@top-left
-
-| AABB | AABb |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-
-@top-center
-
-- AaBb × AaBb
-
-@top-right
-
-- AB		Ab		aB		  ab
-
-@bottom-left
-
-- Female
-- ♀
-
-@bottom-center
-
-- Male
-- ♂
-
-@bottom-right
-
-- AB
-- Ab
-- aB
-- ab
-
-=== layout: six-panels
-
-
-@top-left
-
-| AABB | AABb | AaBB | AaBb |
-| AABb | AAbb | AaBb | Aabb |
-| AaBB | AaBb | aaBB |  |
-|  |  |  |  |
-
-@top-center
-
-- AaBb × AaBb
-
-@top-right
-
-- Female
-- ♀
-
-@bottom-left
-
-- Male
-- ♂
-
-@bottom-center
-
-- AB		Ab		aB		  ab
-
-@bottom-right
-
-- AB
-- Ab
-- aB
-- ab
-
-=== layout: title-only
-
-# AaBb × AaBb
-
-=== layout: title-only
+=== layout: one-panel
 
 # Double heterozygotes are on the lower-left diagonal
 
-=== layout: title-only
+@body
 
-# [Double homozygotes on the upper-left diagonal]{color=blue}
+![Dihybrid Punnett square, double heterozygotes highlighted](assets/lect04g-indep_assort/punnett_05.png)
 
-=== layout: title-only
+=== layout: one-panel
 
-# [Dominate A Phenotype]{color=red}
+# Double homozygotes are on the upper-left diagonal
 
-=== layout: title-only
+@body
 
-# [Dominate B Phenotype]{color=blue}
+![Dihybrid Punnett square, double homozygotes highlighted](assets/lect04g-indep_assort/punnett_06.png)
 
-=== layout: title-only
+=== layout: one-panel
 
-# Dominate for both characters
+# [Dominant A phenotype]{color=red}
 
-=== layout: title-only
+@body
 
-# Dominate for one character and recessive for the other
+![Dihybrid Punnett square, dominant A phenotype highlighted](assets/lect04g-indep_assort/punnett_07.png)
 
-=== layout: title-only
+=== layout: one-panel
 
-# Dominate for one character and recessive for the other
+# [Dominant B phenotype]{color=blue}
 
-=== layout: title-only
+@body
+
+![Dihybrid Punnett square, dominant B phenotype highlighted](assets/lect04g-indep_assort/punnett_08.png)
+
+=== layout: one-panel
+
+# Dominant for both characters
+
+@body
+
+![Dihybrid Punnett square, both dominant phenotypes highlighted](assets/lect04g-indep_assort/punnett_09.png)
+
+=== layout: one-panel
+
+# Dominant A; recessive B
+
+@body
+
+![Dihybrid Punnett square, dominant A and recessive B highlighted](assets/lect04g-indep_assort/punnett_10.png)
+
+=== layout: one-panel
+
+# Recessive A; dominant B
+
+@body
+
+![Dihybrid Punnett square, recessive A and dominant B highlighted](assets/lect04g-indep_assort/punnett_11.png)
+
+=== layout: one-panel
 
 # [Recessive for both characters]{color=orange}
+
+@body
+
+![Dihybrid Punnett square, both recessive phenotypes highlighted](assets/lect04g-indep_assort/punnett_12.png)
 
 === layout: blank
 

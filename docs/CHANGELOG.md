@@ -2,6 +2,10 @@
 
 ### Additions and New Features
 
+- Added regenerated high-resolution HTML-table figures for the Lecture 04G Punnett-square
+  progression and Lecture 04I seven-gene worksheet sequence, with local HTML provenance and a
+  reusable rendering helper.
+
 - Converted the nine Genetics Lecture 04 ODP decks to canonical Djot sources with adjacent native
   image assets: announcements, Mendel history, the first two principles, cross experiments,
   segregation, Punnett squares, independent assortment, independent-assortment problems, and the
@@ -20,8 +24,44 @@
   the adjacent original evidence, asset directories, import reports, review inventory, and builds.
 - Repaired the six Lecture 04C terminology quiz stems so each complete question is a paragraph;
   the answer-choice lists now contain only the A--G choices and receive the intended layout space.
+- Restored the original Lecture 04C principle-emphasis sequence: paired factors is emphasized on
+  its lead-in lists, dominance is emphasized on its lead-in lists, and the other principles are gray.
+- Recast the Lecture 04C visible page 23 open-ended principles prompt as a `subsection` question
+  prompt instead of a chapter `section` divider.
+- Reworked the Lecture 04C visible page 27 blending-hypothesis slide as `stacked-panels`, giving
+  its flower diagram a dedicated lower panel instead of allowing mixed-flow text sizing to collapse
+  the image.
+- Reworked visible Lecture 04C pages 32--34 as `two-panels`, separating allele definitions on the
+  left from the genotype examples and dominance sequence on the right.
+- Drafted `docs/active_plans/active/djot_deck_includes_plan.md` for reusable Djot deck includes,
+  including source-local asset provenance, dependency-aware folder discovery, and a shared
+  announcement pilot.
 
 ### Fixes and Maintenance
+
+- Increased the Lecture 04G and 04I HTML-table rasterization from 144 DPI to 200 DPI while
+  retaining lossless PNG output; regenerated table figures are now about 3333 x 1667 pixels,
+  avoiding oversized source assets while preserving clear projected text.
+- Applied cumulative light-gray choice depletion to the six Lecture 04C terminology quizzes:
+  choices already used as answers are gray on later slides while the current and unused choices
+  remain dark.
+- Increased Lecture 04C's active-principle cue to high-contrast red for both the principle and its
+  definition, while retaining gray for the inactive principles across the repeated overview slides.
+- Reworked the Lecture 04B Mendel-history slide 21 as a side-by-side teaching slide so the
+  true-breeding hybrid figure receives a full image region instead of collapsing to an inline
+  postage-stamp image above the explanatory text.
+- Added authored line breaks to the Lecture 04A Blackboard Homework list so each assignment's
+  complete due-date phrase stays together instead of stranding the day on a third visual line.
+- Fixed the Genetics 04A Syllabus Links slide by using bare Djot URLs for same-text hyperlinks;
+  underscores in the long `ASSIGNMENTS_AND_GRADING` link had been interpreted as emphasis and
+  caused part of the URL to render in a different type style.
+- Replaced the Shutterstock-watermarked recording card in Genetics announcement decks 02A, 03A,
+  and 04A with a clean local recording visual. The Biotechnology reference asset contained the
+  same watermark, so the replacement is an original local card rather than another copied stock
+  image.
+- Manually reviewed the relettered 04G--04I decks: 04G now uses a readable progressive and
+  highlighted Punnett-square series, 04H uses a lower-weight question prompt, and 04I restores
+  the lost worksheet tables plus the two closing group-work tables.
 
 - Reworked Genetics Lecture 04A as the 2026 announcement deck, combining current Lecture 03
   guidance with recurring Lecture 04 material from the 2025 announcement source. Current Fall 2026

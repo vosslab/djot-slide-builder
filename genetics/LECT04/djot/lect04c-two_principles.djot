@@ -15,15 +15,15 @@ color-theme: genetics
 
 @body
 
-- (1) Principle of Paired Factors
-  - Each organism has two alleles that make up the genotype for a given trait
-- (2) Principle of Dominance
-  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
-- (3) Law of Segregation or Law of Purity of Gametes
-  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
-- (4) Law of Independent Assortment
-  - different pairs of alleles are passed onto the offspring independently of each other.
-  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+- [(1) Principle of Paired Factors]{color=red}
+  - [Each organism has two alleles that make up the genotype for a given trait]{color=red}
+- [(2) Principle of Dominance]{color=gray}
+  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=gray}
+- [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
+  - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
+- [(4) Law of Independent Assortment]{color=gray}
+  - [different pairs of alleles are passed onto the offspring independently of each other.]{color=gray}
+  - [inheritance of genes at one location does not influence the inheritance of genes at another location.]{color=gray}
 
 === layout: one-panel
 
@@ -31,15 +31,15 @@ color-theme: genetics
 
 @body
 
-- (1) Principle of Paired Factors
-  - Each organism has two alleles that make up the genotype for a given trait
-- (2) Principle of Dominance
-  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
-- (3) Law of Segregation or Law of Purity of Gametes
-  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
-- (4) Law of Independent Assortment
-  - different pairs of alleles are passed onto the offspring independently of each other.
-  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+- [(1) Principle of Paired Factors]{color=gray}
+  - [Each organism has two alleles that make up the genotype for a given trait]{color=gray}
+- [(2) Principle of Dominance]{color=red}
+  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=red}
+- [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
+  - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
+- [(4) Law of Independent Assortment]{color=gray}
+  - [different pairs of alleles are passed onto the offspring independently of each other.]{color=gray}
+  - [inheritance of genes at one location does not influence the inheritance of genes at another location.]{color=gray}
 
 === layout: section
 
@@ -70,7 +70,7 @@ Answer\: B
 Which one of the following terms refers to the [observable traits of an organism]{color=red}?
 
 - A. Alleles
-- B. Genotype
+- [B. Genotype]{color=gray}
 - C. Heterozygous
 - D. Homologous chromosomes
 - E. Homozygous
@@ -88,12 +88,12 @@ Answer\: G
 Which one of the following terms refers to the [location of a gene on a chromosome]{color=red}?
 
 - A. Alleles
-- B. Genotype
+- [B. Genotype]{color=gray}
 - C. Heterozygous
 - D. Homologous chromosomes
 - E. Homozygous
 - F. Locus
-- G. Phenotype
+- [G. Phenotype]{color=gray}
 
 @answer
 
@@ -106,12 +106,12 @@ Answer\: F
 Which one of the following terms refers to [different versions of the same gene]{color=red}?
 
 - A. Alleles
-- B. Genotype
+- [B. Genotype]{color=gray}
 - C. Heterozygous
 - D. Homologous chromosomes
 - E. Homozygous
-- F. Locus
-- G. Phenotype
+- [F. Locus]{color=gray}
+- [G. Phenotype]{color=gray}
 
 @answer
 
@@ -123,13 +123,13 @@ Answer\: A
 
 Which one of the following terms refers to [when two copies of a gene are identical]{color=red}?
 
-- A. Alleles
-- B. Genotype
+- [A. Alleles]{color=gray}
+- [B. Genotype]{color=gray}
 - C. Heterozygous
 - D. Homologous chromosomes
 - E. Homozygous
-- F. Locus
-- G. Phenotype
+- [F. Locus]{color=gray}
+- [G. Phenotype]{color=gray}
 
 @answer
 
@@ -141,13 +141,13 @@ Answer\: E
 
 Which one of the following terms refers to [when two copies of a gene are different]{color=red}?
 
-- A. Alleles
-- B. Genotype
+- [A. Alleles]{color=gray}
+- [B. Genotype]{color=gray}
 - C. Heterozygous
 - D. Homologous chromosomes
-- E. Homozygous
-- F. Locus
-- G. Phenotype
+- [E. Homozygous]{color=gray}
+- [F. Locus]{color=gray}
+- [G. Phenotype]{color=gray}
 
 @answer
 
@@ -242,15 +242,15 @@ hidden: true
 
 @body
 
-- (1) Principle of Paired Factors
-  - Each organism has two alleles that make up the genotype for a given character
-- (2) Principle of Dominance
-  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
-- (3) Law of Segregation or Law of Purity of Gametes
-  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
-- (4) Law of Independent Assortment
-  - different pairs of alleles are passed onto the offspring independently of each other.
-  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+- [(1) Principle of Paired Factors]{color=red}
+  - [Each organism has two alleles that make up the genotype for a given character]{color=red}
+- [(2) Principle of Dominance]{color=gray}
+  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=gray}
+- [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
+  - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
+- [(4) Law of Independent Assortment]{color=gray}
+  - [different pairs of alleles are passed onto the offspring independently of each other.]{color=gray}
+  - [inheritance of genes at one location does not influence the inheritance of genes at another location.]{color=gray}
 
 === layout: one-panel
 
@@ -360,7 +360,7 @@ hidden: true
 
 - [aa]{color=blue}
 
-=== layout: section
+=== layout: subsection
 
 # What principles account for the passing of traits from parents to offspring?
 
@@ -394,16 +394,18 @@ hidden: true
 
 ![Slide image 4](assets/lect04c-two_principles/image_004.jpg)
 
-=== layout: one-panel
+=== layout: stacked-panels
 
 # Blending hypothesis
 
-@body
+@top
 
 - The “blending” hypothesis is the idea that genetic material from the two parents blends together
   - like blue and yellow paint blend to make green
 - [If this process were true, the variation in a population would be reduced]{color=red}
   - a fact that caused Charles Darwin and many other early biologists to doubt the validity of the hypothesis.
+
+@bottom
 
 ![Slide image 4](assets/lect04c-two_principles/image_003.png)
 
@@ -429,15 +431,15 @@ hidden: true
 
 @body
 
-- (1) Principle of Paired Factors
-  - Each organism has two alleles that make up the genotype for a given trait
-- (2) Principle of Dominance
-  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
-- (3) Law of Segregation or Law of Purity of Gametes
-  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
-- (4) Law of Independent Assortment
-  - different pairs of alleles are passed onto the offspring independently of each other.
-  - inheritance of genes at one location does not influence the inheritance of genes at another location.
+- [(1) Principle of Paired Factors]{color=gray}
+  - [Each organism has two alleles that make up the genotype for a given trait]{color=gray}
+- [(2) Principle of Dominance]{color=red}
+  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=red}
+- [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
+  - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
+- [(4) Law of Independent Assortment]{color=gray}
+  - [different pairs of alleles are passed onto the offspring independently of each other.]{color=gray}
+  - [inheritance of genes at one location does not influence the inheritance of genes at another location.]{color=gray}
 
 === layout: two-panels
 
@@ -452,11 +454,11 @@ hidden: true
 
 ![Slide image 6](assets/lect04c-two_principles/image_006.png)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Allele Concepts
 
-@body
+@left
 
 - [A]{color=red} is the dominant allele
 - [a]{color=blue} is the recessive allele
@@ -467,6 +469,8 @@ hidden: true
 - Heterozygous – one of each allele, one dominant and one recessive
   - [A]{color=red}[a]{color=blue}
 
+@right
+
 - [aa]{color=blue}
 
 - [A]{color=red}[a]{color=blue}
@@ -487,11 +491,11 @@ hidden: true
 
 - [aa]{color=blue}
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Allele Concepts
 
-@body
+@left
 
 - [A]{color=red} is the dominant allele
 - [a]{color=blue} is the recessive allele
@@ -502,6 +506,8 @@ hidden: true
 - Heterozygous – one of each allele, one dominant and one recessive
   - [A]{color=red}[a ]{color=blue}shows[ dominant phenotype]{color=red}
 
+@right
+
 - [aa]{color=blue}
 
 - [A]{color=red}[a]{color=blue}
@@ -522,11 +528,11 @@ hidden: true
 
 - [aa]{color=blue}
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Allele Concepts
 
-@body
+@left
 
 - [A]{color=red} is the dominant allele
 - [a]{color=blue} is the recessive allele
@@ -536,6 +542,8 @@ hidden: true
   - [aa ]{color=blue}shows[ ]{color=red}[recessive phenotype]{color=blue}
 - Heterozygous – one of each allele, one dominant and one recessive
   - [A]{color=red}[a ]{color=blue}shows[ dominant phenotype]{color=red}
+
+@right
 
 - [aa]{color=blue}
 

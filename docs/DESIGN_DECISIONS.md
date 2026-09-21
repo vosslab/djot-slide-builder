@@ -9,6 +9,39 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 ## Current operational boundary (2026-09-21)
 
+### Wide legacy table teaching figures
+
+**Decision.** For imported legacy tables that need progressive highlighting or are too wide for a
+readable native table, author the states as local HTML tables and render them once as lossless
+200-DPI component PNGs. Use those figures in an explicit `one-panel` or `big-image` slide while
+keeping the ordinary presentation build independent of HTML, CSS, and browser tooling.
+
+**Why.** The Lecture 04G Punnett-square sequence and Lecture 04I seven-gene worksheet were
+instructional table figures, not ordinary prose tables. Compressing them into six-panel or mixed
+text flow layouts made the teaching sequence unreadable, while one large figure per step preserves
+the progressive construction and phenotype cues.
+
+**Consequence.** The generated HTML provenance and PNG figures live beside their canonical Djot
+sources under the lecture asset folders. `devel/render_genetics_lect04_tables.py` can regenerate
+the figures, but normal ODP/PDF builds consume only the checked-in PNG component images.
+
+**Owner.** `devel/render_genetics_lect04_tables.py` and the Lecture 04 Djot asset directories.
+
+### Recurring recording visual
+
+**Decision.** Use one clean, locally authored recording card for recurring Genetics announcement
+slides. Do not copy a stock-image watermark from a reference deck into a classroom asset.
+
+**Why.** The Biotechnology reference's recording image was itself the Shutterstock-watermarked
+asset that had been propagated into Genetics 02A, 03A, and 04A. A simple original card preserves
+the recording cue without reproducing an unlicensed or distracting mark.
+
+**Consequence.** The shared visual is rendered from `devel/recording-card.svg` into each lecture's
+local `recording_biotech.png`; each announcement deck remains self-contained for the ordinary
+Djot build.
+
+**Owner.** `devel/recording-card.svg` and the Genetics announcement asset directories.
+
 ### Lecture-organized Genetics source tree
 
 **Decision.** Organize the Genetics corpus by lecture. Each `genetics/LECT##/` directory contains

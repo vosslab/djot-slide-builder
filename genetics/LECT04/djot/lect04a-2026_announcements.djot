@@ -260,13 +260,13 @@ Make sure Dr. Voss is recording.
 @body
 
 - Syllabus
-  - [https\://vosslab.github.io/syllabus/fall_2026/genetics/](https://vosslab.github.io/syllabus/fall_2026/genetics/)
+  - https://vosslab.github.io/syllabus/fall_2026/genetics/
 - Course schedule
-  - [https\://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/](https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/)
+  - https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 - Coursework and grades
-  - [https\://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/](https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/)
+  - https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
 - Policies and student resources
-  - [https\://vosslab.github.io/syllabus/fall_2026/shared/policies/](https://vosslab.github.io/syllabus/fall_2026/shared/policies/)
+  - https://vosslab.github.io/syllabus/fall_2026/shared/policies/
 
 === layout: one-panel
 
@@ -609,9 +609,12 @@ hidden: true
 
 @left
 
-- Assignment 1 – Due Sept 15
-- Assignment 2 – Due Sept 15
-- Assignment 3 – Due Sept 22
+- Assignment 1 –\
+  Due Sept 15
+- Assignment 2 –\
+  Due Sept 15
+- Assignment 3 –\
+  Due Sept 22
 
 @right
 

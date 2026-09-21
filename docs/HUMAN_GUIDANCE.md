@@ -12,6 +12,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 - ODP is the sole editable artifact. LibreOffice makes every classroom PDF and every generated
   review PDF from that ODP. Save legacy PPTX as ODP in LibreOffice before one-time import.
+- Keep recurring announcement slides in reusable Djot source files that can be included by each
+  class and week, so I only have to edit the slides that change.
 
 ## Slide migration and presentation
 
@@ -39,12 +41,24 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   dates and milestones.
 - Use the polished Biotechnology announcement recording visual and informational-slide treatment
   as the shared pattern for all Genetics announcement decks.
+- Recording announcement visuals must be clean local artwork; never carry a stock-image watermark
+  into a classroom slide, even when the reference deck contains one.
 - Treat Genetics Lecture 04B's "Character and Trait" slide as a quiz: place the paired character
   and trait lists in two upper panels and the question with its answer choices in the lower panel.
 - In multiple-choice Djot, keep the complete question statement in a paragraph and reserve list
   items for answer choices so the question receives the full-width prompt region.
+- In the Lecture 04C principle overview, emphasize the principle being introduced next in high-
+  contrast red, gray the other principles, and preserve that cue on the repeated lead-in lists.
+- Treat the Lecture 04C open-ended prompt about principles passing traits as a question prompt,
+  using the lower-weight `subsection` treatment rather than a chapter `section` divider.
+- Never let a teaching image collapse to postage-stamp size. When text and a figure need the same
+  slide, give them explicit shared regions such as `stacked-panels` or `two-panels`.
+- In the Lecture 04C allele-concept sequence, keep the explanatory definitions on the left and
+  the genotype-example sequence on the right with `two-panels`.
 - Use the published Fall 2026 Biotechnology course and instructor pages for current links and
   office-hour information; do not expose obsolete Zoom meeting credentials in slides.
+- For very wide Punnett-square or worksheet sequences, give each table state a large teaching
+  figure and preserve the step-by-step progression instead of squeezing the table into tiny panels.
 - My announcements workflow is `LECT(N) 2026 + LECT(N+1) 2025 -> LECT(N+1) 2026`: copy the
   current year's previous lecture announcements, then merge in the next lecture's announcements
   from the previous year.

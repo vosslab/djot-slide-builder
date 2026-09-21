@@ -19,7 +19,7 @@ color-theme: genetics
 
 # A Problem of Three Genes
 
-=== layout: section
+=== layout: subsection
 
 # Given a genotype of Ss Yy Aa. What are the possible gametes? How many different gametes are produced?
 
