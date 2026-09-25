@@ -23,6 +23,8 @@ site/
 # ADD YOUR CUSTOM IGNORES BELOW
 # Propagation preserves this section.
 # ------------------ END LOCAL REPOSITORY RULES ------------------
+*.pptx
+*.gif
 *.png
 *.jpg
 *.jpeg
