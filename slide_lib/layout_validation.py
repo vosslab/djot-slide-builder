@@ -440,6 +440,15 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 			raise source_error(caption_cell.location,
 				"big-image caption slot requires one or two editable text paragraphs")
 		return
+	if spec.name == "theend":
+		if len(headings) != 1 or headings[0].level != 1 or \
+				inline_text(headings[0].inlines) != "THE END":
+			raise source_error(source, "theend slides require exactly one '# THE END' heading")
+		if len(source.blocks) not in (1, 2) or source.blocks[0] is not headings[0] or \
+				(len(source.blocks) == 2 and not isinstance(source.blocks[1],
+					slide_lib.native_model.Image)):
+			raise source_error(source, "theend slides accept only '# THE END' and one optional component image")
+		return
 	if spec.name in ("title-slide", "section", "gallery") and root_tables:
 		raise source_error(root_tables[0].location, f"{spec.name} slides do not have a native table destination")
 	if spec.cell_count and not spec.allows_root_body and spec.name != "gallery":

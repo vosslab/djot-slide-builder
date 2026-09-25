@@ -30,14 +30,21 @@ Build only one lecture by targeting its lecture folder:
 ./build_slides.sh genetics/LECT04/
 ```
 
+The same selector builds the Biotechnology lecture folder:
+
+```bash
+./build_slides.sh biotech/LECT04/
+```
+
 `deck_tools.py build` accepts `--format all`, `odp`, or `pdf`; `all` is the default. It recognizes
 `.djot` source only, and folder discovery recursively selects only `.djot` files. Every deck compiles
 once: `odp` writes the editable format, `pdf` writes native ODP plus its LibreOffice-derived PDF,
 and `all` writes both. Outputs are written below `output/odp/` and `output/pdf/`.
 
-A slide marked `hidden: true` stays in the Djot source but is omitted from ODP/PDF output and
-capacity inspection. Lint still checks it and its assets. Remove that line or use `hidden: false`
-to include it again. See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#hidden-slides).
+A slide marked `hidden: true` stays in the Djot source and is written with native hidden page-style
+metadata in ODP; LibreOffice PDF export and classroom playback omit it. Capacity inspection and lint
+include hidden slides and their assets. Remove that line or use `hidden: false` to show it. See
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#hidden-slides).
 
 The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
 native master and LibreOffice exports PDF from the themed ODP; no CSS or browser rendering is part

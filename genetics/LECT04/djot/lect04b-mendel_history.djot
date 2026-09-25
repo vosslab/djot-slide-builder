@@ -386,6 +386,6 @@ color-theme: genetics
 - Trait – each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
 - Each character is associated with multiple traits.
 
-=== layout: section
+=== layout: theend
 
 # THE END

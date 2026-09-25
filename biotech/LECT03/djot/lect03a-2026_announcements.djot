@@ -1,0 +1,461 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 03A
+
+## Biotechnology: Announcements
+## Dr. Neil Voss
+## Sept 17, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Ice Breaker
+- Announcements
+- Overview of the individual project
+- Set #2 talking points
+- Select Set #3 talking points
+- Closing Remarks
+- Assignments 0 and 1 plus three project ideas are due tonight
+
+=== layout: one-panel
+hidden: true
+
+# [Breakout Room Chat]{color=red}
+
+@body
+
+- If no one is talking, please be the first to speak and get things started.
+- State your name, major, and plans after graduation.
+- [Question]{color=red}
+  - Dr. Voss\: response
+
+=== layout: one-panel
+hidden: true
+
+# [Breakout Room Chat]{color=red}
+
+@body
+
+- If no one is talking, please be the first to speak and get things started.
+- State your name, major, and plans after graduation.
+- [We had great weather this weekend. What is your favorite outdoor activity?]{color=red}
+  - Dr. Voss\: riding my bicycle, watching my kids play sports, go on a walk
+
+=== layout: one-panel
+
+# [Breakout Room Chat]{color=red}
+
+@body
+
+- If no one is talking, please be the first to speak and get things started.
+- State your name, major, and plans after graduation.
+- [What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?]{color=red}
+
+=== layout: big-image
+
+@image
+
+![Slide image 1](assets/lect03a-2026_announcements/image_001.png)
+
+@caption
+
+Make sure Dr. Voss is recording.
+
+=== layout: one-panel
+hidden: true
+
+# [Breakout Room Chat]{color=red}
+
+@body
+
+- State your name, major, and post-grad plans
+- [What is the best dish you can cook?]{color=red}
+  - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
+
+@caption
+
+Make sure Dr. Voss is recording.
+
+=== layout: two-panels
+
+# How to Use Zoom Like a Pro
+
+@left
+
+- 1. Mute yourself when you are not speaking.
+- 2. Plug in your headphones.
+- 3. Turn off video if you have a slow connection
+  - Use the secure Zoom link in Blackboard.
+
+@right
+
+![Slide image 4](assets/lect03a-2026_announcements/image_004.png)
+
+=== layout: big-image
+
+@image
+
+![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
+
+@caption
+
+[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for difficult problems.
+
+=== layout: one-plus-two-panels
+
+# Discord Server
+
+@left
+
+- I created a Discord Server called Neil Voss Lab
+  - You earn credit for signing up, and Discord is the quickest way to reach me.
+- Sign-up link is available on Blackboard
+  - It is available as a mobile app, a desktop app, and a website
+  - Be sure to connect to my server rather than creating your own server.
+
+@top-right
+
+![Slide image 6](assets/lect03a-2026_announcements/image_006.png)
+
+@bottom-right
+
+![Slide image 7](assets/lect03a-2026_announcements/image_007.png)
+
+=== layout: two-panels
+
+# Office Hours
+
+@left
+
+- Office: SCH 600E, Schaumburg campus
+- Secure Zoom link: see Blackboard
+  - Thursday, 12:30-1:30 p.m.
+  - Wednesday, 2:30-3:30 p.m.
+- Also available by appointment
+- [Instructor information](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
+
+@right
+
+![Slide image 3](assets/lect03a-2026_announcements/image_003.png)
+
+=== layout: one-panel
+
+# Ways to Contact Dr. Voss
+
+@body
+
+- 1. Attend office hours
+- 2. Discord
+  - Check several times per day; it is the quickest option.
+  - Send a direct message for private questions or post general questions to the class.
+  - Response time: 1-2 calendar days.
+- 3. Email
+  - Response time: 2 business days.
+- 4. Anonymous Google Form
+  - Response time: 2-4 business days.
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+- Use the anonymous Google Form for questions you would rather not ask publicly.
+- The form goes directly to my email and does not identify you to the class.
+
+@right
+
+- Google Form to send me an **anonymous** message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+
+=== layout: section
+hidden: true
+# Discussion Points
+
+=== layout: one-panel
+hidden: true
+# Setting Your Name in Zoom
+
+@body
+
+- Use your proper first name or a consistent nickname.
+- Discussion marks are assigned by sorting names alphabetically by first name.
+- Do not use:
+  - Start with your last name (e.g., "Smith Jane").
+  - Use something obscure (e.g., "iPhone User").
+  - Use a different name each time (consistency is key).
+
+- How to Change Your Name\:
+  - Click on the "Participants" button at the bottom of the meeting window.
+  - Hover over your name in the participant list and click "More."
+  - Select "Rename."
+  - Enter your new name and click "OK."
+
+=== layout: one-panel
+hidden: true
+# Change Name Before a Meeting
+
+@body
+
+- Open the Zoom desktop client or the mobile app.
+- Go to your profile by clicking on your profile picture or initials in the top-right corner.
+- Select "Profile" from the dropdown menu.
+- Click "Edit" next to your name.
+- Enter your preferred name and then click "Save."
+
+=== layout: one-panel
+hidden: true
+# [Discussion Marks\: Week 2 (Sept 10)]{color=blue}
+
+@body
+
+- Final Scores are dynamic
+- the more marks rewarded, the less each mark is worth
+- Based on your contributions to the chat
+
+=== layout: one-panel
+hidden: true
+# [How to Earn Discussion Marks]{color=blue}
+
+@body
+
+- Participate in icebreaker activities at the start of class.
+- Engage in the class chat by responding to direct questions during the lecture.
+- Provide thoughtful answers to open-ended questions about the material.
+- Ask clarifying questions if something is unclear.
+- Share personal experiences that relate to the course content.
+- Post relevant news articles or resources that connect to the topics we discuss.
+- Be on time for the Zoom meeting to earn discussion marks for punctuality.
+- Adding emoji tags to another student's comment earns 0.1 points, up to 10 points.
+
+=== layout: one-panel
+hidden: true
+# [Discussion Marks FAQ]{color=blue}
+
+@body
+
+- 1. Discussion Marks are mostly [based on the chat]{color=red}
+  - Not all comments in the chat count, such as "hi", "thanks", or "yes"
+  - You can earn up to 6 discussion marks from the chat
+- 2. Answering Polls does NOT count
+  - It is not easy for me to obtain that data
+- 3. Being present in the Zoom meeting when class time starts
+  - You can earn up to 2 discussion marks for [being on-time to class]{color=red}
+- 4. Direct messages do not count
+
+=== layout: one-panel
+
+# Weekly Talking Marks
+
+@body
+
+- Talking points earn 1-6 marks.
+  - Before each lecture week, I will distribute topics to research in the textbook and other resources.
+  - At the beginning of class, each student will be assigned a topic and explain it from their seat.
+  - I will provide the next set of talking points at the end of class.
+- Biotechnology news earns 1-4 marks.
+
+=== layout: one-panel
+
+# Talking Marks\: Week 3 (Sept 17)
+
+@body
+
+- Final scores are dynamic; the more points awarded, the less each point is worth.
+- You can earn partial credit for completing the slide if you miss class.
+
+=== layout: section
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# Student Profile
+
+@body
+
+- Include a picture of your face
+- Answer questions about your goals, interests, and what you want to learn.
+- Link available on Blackboard.
+  - Due Sept 24.
+  - No points are awarded after the deadline.
+
+=== layout: one-panel
+
+# Syllabus Links
+
+@body
+
+- Syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/
+- Points and Assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+- Schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/
+- Suggested Weekly Timetable
+  - [Google Sheets Link](https://docs.google.com/document/d/1SyZILY9dM-RlDLfR6apSJzJg6vpXLXMjC7ypwR26qWg/edit)
+- Policies and Student Resources
+  - https://vosslab.github.io/syllabus/fall_2026/shared/policies/
+- University Important Dates
+  - [Google Sheets Link](https://docs.google.com/spreadsheets/d/1YuK02ObBJgxFlQSLx0xtKdaLNBfuOgM466Hh6MRQczE/edit)
+
+=== layout: one-panel
+hidden: true
+
+# BioTech News Article Guidelines
+
+@body
+
+- Article Selection Criteria\:
+  - Find a recent biotechnology news article published within the past two years.
+  - Focus on topics related to modern biotechnology that use molecular or cellular biology techniques.
+  - Avoid research studies that do not show potential for developing a profitable product in the short-term future
+  - Avoid articles about pharmaceuticals, traditional remedies, bio-engineering, medical devices, or general medicine. See the "Is your News Article squarely rooted in CATEGORY OF BIOTECH" slide for more details.
+- Presentation Requirements\:
+  - Present the article to the class for 1 full minute.
+  - Use the provided slide deck and your assigned slide that includes your name.
+  - Customize your slide as you wish.
+  - Include the link to your article in the speaker notes
+- Questions to Prepare\:
+  - What is the product or process being developed or modified? How is it related to modern biotechnology?
+  - How does the product or process involve biological systems, living organisms, or their derivatives at the genetic or cellular level?
+
+=== layout: two-panels
+hidden: true
+
+# Week 3 work due
+
+@left
+
+- Assignments 0 and 1
+- [Three project ideas]{color=red}
+
+@right
+
+- Due Sept 17
+- See Blackboard for assignment instructions and submission details.
+- The course schedule is the authority for later dates.
+
+=== layout: section
+hidden: true
+
+# General Announcements
+
+=== layout: one-panel
+hidden: true
+
+# Schaumburg Natural Science Club
+
+@body
+
+- Upcoming Meetings\:
+  - [TBD]{color=red}
+
+- All meetings at 5PM on Mon/Tues
+- Outreach/volunteer opportunities
+- Fun social activities
+- Professional development
+
+=== layout: one-panel
+hidden: true
+
+# Spring 2027 Registration
+
+@body
+
+- Spring registration usually starts November 1.
+- Meet with your advisor if you are unsure what to take.
+
+=== layout: one-panel
+hidden: true
+
+# Dr. Voss Spring Courses
+
+@body
+
+- Spring course information will be posted when available.
+
+=== layout: one-panel
+hidden: true
+
+# Dr. Voss Summer Course
+
+@body
+
+- Summer course information will be posted when available.
+
+=== layout: section
+hidden: true
+
+# Course Evaluations
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- You will receive an email when course evaluations open.
+- Anonymous feedback helps improve the course.
+- Please complete the survey before its published deadline.
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- Course evaluations usually take 5-10 minutes to complete.
+- Access the survey here\:
+  - [https\://roosevelt.campuslabs.com/eval-home/](https://roosevelt.campuslabs.com/eval-home/)
+  - Students may log in with their RU Net ID and password.
+
+=== layout: one-panel
+hidden: true
+
+# Extra Time to Submit Business Plan
+
+@body
+
+- I decided to link evaluation completions to extra time for business plan submission
+- Completion of student evaluations can add up to 5 more days for submitting the business plan
+
+=== layout: one-panel
+hidden: true
+
+# Business Plan Extra Time
+
+@body
+
+- I cannot see individual students only total completion
+- percentage. [Ends Sun, Dec 8.]{color=red}
+
+=== layout: one-panel
+hidden: false
+
+# Veridian Dynamics
+
+@body
+
+- Video \#2
+- Food Yum
+
+=== layout: theend
+
+# THE END

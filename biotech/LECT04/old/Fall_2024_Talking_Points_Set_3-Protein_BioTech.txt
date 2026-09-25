@@ -1,0 +1,827 @@
+Set #3: Protein BioTech
+Talking Points
+Sept 19, 2024
+
+DO NOT CHANGE
+THE THEME!!!
+We are using the “Tropic” theme and that is it.
+
+Talking Points Guide
+
+Slides will be
+locked immediately
+following announcements
+~6:15pm
+
+Talking Point #1: *-omics -- Yoana
+Talking Point #2: protein gels -- Zakira and Perla
+Talking Point #3: chromatography -- Dan and Sai
+Talking Point #4: mass spec. -- Tatiana and Nick
+Talking Point #5: phage display -- no one assigned
+Talking Point #6: ELISA -- Dipali and Foram
+Talking Point #7: quantification -- Bhargavi and Devarsh
+Talking Point #8: protein interactions -- Sreeksha and Karolina
+Talking Point #9: bacterial exp. -- Jeel and Yamini
+Talking Point #10: toxic effects -- Khushi and Leo
+Talking Point #11: yeast exp. -- Cynthia and Joslyn
+Talking Point #12: impossible burger -- Ewa and Hailey
+Talking Point #13: insect exp. -- Aysun and Vishal
+Talking Point #14: mammal exp. -- Keren and Jessica
+Talking Point #15: recomb. vaccines -- Umang and Bhakti
+Talking Point #16: protein stability -- Maria and Mary
+Talking Point #17: binding sites -- Diamond and Mudrika
+Talking Point #18: directed evolution -- Mounisha
+Talking Point #19: recomb. domains -- Bhavani
+Talking Point #20: cryoEM structure -- no one assigned
+Talking Point #21: de novo design -- Chenyu
+Talking Point #22: alphafold -- Uzair
+Talking Point #23: four base codons -- Hareem
+Primary Presenters
+
+Question Asker #1: *-omics -- Cynthia and Joslyn
+Question Asker #2: protein gels -- Ewa and Hailey
+Question Asker #3: chromatography -- Aysun and Vishal
+Question Asker #4: mass spec. -- Keren and Jessica
+Question Asker #5: phage display -- Umang and Bhakti
+Question Asker #6: ELISA -- Maria and Mary
+Question Asker #7: quantification -- Diamond and Mudrika
+Question Asker #8: protein interactions -- Mounisha
+Question Asker #9: bacterial exp. -- Bhavani
+Question Asker #10: toxic effects -- no one assigned
+Question Asker #11: yeast exp. -- Chenyu
+Question Asker #12: impossible burger -- Uzair
+Question Asker #13: insect exp. -- Hareem
+Question Asker #14: mammal exp. -- Yoana
+Question Asker #15: recomb. vaccines -- Zakira and Perla
+Question Asker #16: protein stability -- Dan and Sai
+Question Asker #17: binding sites -- Tatiana and Nick
+Question Asker #18: directed evolution -- no one assigned
+Question Asker #19: recomb. domains -- Dipali and Foram
+Question Asker #20: cryoEM structure -- Bhargavi and Devarsh
+Question Asker #21: de novo design -- Sreeksha and Karolina
+Question Asker #22: alphafold -- Jeel and Yamini
+Question Asker #23: four base codons -- Khushi and Leo
+Helper Question Askers
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to one talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+60 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide.
+Add several pictures and minimal text.
+Keep the words on your slide to a minimum – you should be doing the talking, not your slide.
+Be prepared to give a 60 second presentation on each of your assigned talking points.
+Define the talking point, explain its connection to biotechnology, or provide a recent example from biotechnology news.
+You won’t have time to cover the entire topic, so focus on the most interesting aspect.
+However, you should be familiar with the entire topic in case I ask questions.
+Aim to be unique.
+Don’t just copy from the book – use the internet for research
+Provide your own perspective
+Please put everything in your own words.
+It’s fine to read your notes, but make sure they’re in your own words.
+No direct quotes from articles, Wikipedia, or the textbook.
+Minimize jargon.
+
+Tips for a Good Presentation
+Remember you telling a story. Should have a beginning, a middle, and an end. 
+Respect the time allotted for the sake of your audience. 
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
+Explain at the level of the class. 
+Have a technical term, define it. If you don't quite understand it, no one will. 
+Because we are all novices, you will need to have a long intro. 
+But try to engage the audience. 
+Do not read from your slides; use notecards, if you must.
+No complete sentences on slides, use short phrases, break the content up. 
+Try to have a picture on every slide, helps maintain attention of the audience 
+If you have a movie, talk during the movie, do not use narrator
+Be prepared for questions. 
+Show ENTHUSIASM when you talk and make it exciting! 
+
+Best Advice
+Be Enthusiastic
+Use More Pictures and Diagrams on your Slides
+be a visual storyteller
+Use Less Words on your Slides
+put the words in your notes, not the slide
+Keep Things to the Point
+Be creative with your slide with look and content; go beyond the book
+
+When do I have to unmute?
+You unmute to present your talking point
+You are welcome to use the chat for the question asking
+Video is not required
+
+
+Chapter 9
+Proteomics
+
+Chapter 9: Proteomics TOC:
+Introduction
+Gel Electrophoresis of Proteins
+Western Blotting of Proteins
+High-Pressure Liquid Chromatography Separates Protein Mixtures Digestion of Proteins by Proteases
+Mass Spectrometry for Protein Identification
+Preparing Proteins for Mass Spectroscopy
+Protein Quantification Using Mass Spectrometry
+Protein Tagging Systems
+Phage Display Library Screening
+Protein Interactions: The Yeast Two-Hybrid System
+Protein Interactions by Co-immunoprecipitation
+Protein Arrays
+Metabolomics
+
+#1 Proteomics and Metabolomics  
+Proteomics studies the entire set of proteins produced by an organism, while metabolomics examines the small molecules involved in metabolism, both providing insights into cellular functions and processes.
+How does proteomics differ from genomics?
+What are the primary applications of proteomics in biotechnology?
+Define metabolomics and its key role in systems biology.
+How can metabolomics complement proteomics?
+How has computational biology impacted these fields?
+
+#1 Proteomics and Metabolomics - Yoana  
+Proteomics vs Genomics?
+-omics Types:
+Relation to Biotech?
+Most Informative
+Award
+
+#1 Proteomics and Metabolomics - available  
+
+#2 Protein Gels and Western Blotting 
+Protein gel electrophoresis separates proteins based on size, while Western blotting detects specific proteins using antibodies.
+Describe the concept of gel electrophoresis specifically in protein analysis.
+How does protein gel electrophoresis differ from nucleic acid gel electrophoresis from last week?
+Describe some types of custom-made gels, like stacking and gradient gels, and explain their purpose.
+Define Western blotting and its purpose. How does it compare to Southern blotting from last week?
+What are some applications where Western blotting is particularly useful?
+
+Protein Gels and Western Blotting- Zakira 
+Technique used in laboratories to separate biomolecules, including DNA, RNA, and proteins, based on size and molecular weight 
+ Western blot - SNoW DRoP
+Applications
+
+WESTERN BLOTTING 
+SOUTHERN BLOTTING 
+PERLA
+-Similar process -separating the sample 
+-Transferring to membrane
+-Detecting molecule  
+Define Western blotting and its purpose. How does it compare to Southern blotting from last week?
+What are some applications where Western blotting is particularly useful?
+
+#3 Chromatography and Protein Tagging
+Chromatography separates proteins based on their physical and chemical properties, while protein tagging helps in isolating and purifying specific proteins.
+Describe the process of column chromatography used to separate specific proteins from a mixture. Include the different phases involved.
+Describe the basic principles behind the four main types of chromatography: (1) gel-filtration or size-exclusion (SEC), (2) ion-exchange (IEC), (3) hydrophobic interaction (HIC) or reverse phase (RPC), and (4) affinity (AC). Explain which protein properties are used for each separation.
+What are the major differences between hydrophobic interaction (HIC) and reverse phase (RPC) columns?
+How does affinity chromatography use protein tags to help with purification? Explain common protein tags like His, FLAG, and Strep tags.
+How are these tags added to proteins, and what are the key steps in purifying a tagged protein using column chromatography? What types of ligands are attached to the beads for separating proteins? For example, His tags bind to nickel columns.
+
+#3 Chromatography and Protein Tagging - Dan
+Size exclusion (SEC) separates proteins and other compounds based on size
+Ion exchange (IEC) separates proteins based on charge
+Hydrophobic interaction (HIC) separates proteins based on how hydrophobic they are 
+Reverse phase uses a hydrophobic mobile phase moving through a hydrophilic stationary phase
+Afinity chromatography (AC) separates proteins based off of how well they bind to the stationary phase
+Slide Simplicity Award
+
+
+#4 Mass Spectrometry in Proteomics  
+Mass spectrometry identifies and quantifies proteins in complex samples by measuring their mass-to-charge ratio.
+Define the three main components of a mass spectrometer: (1) ionizer and ion extractor, (2) mass analyzer, and (3) detector, and explain the role of each.
+Why is ionization the critical first step in mass spectrometry? Explore the key techniques (e.g., MALDI, ESI) that give proteins a charge and set them on their path to detection.
+What is a magnetic sector mass spectrometer, and how does it use the circular motion of charged particles in a magnetic field to separate ions based on their mass-to-charge ratio? Hint: refer to concepts from classic physics.
+What are the modern methods used to separate proteins based on their mass-to-charge ratio (e.g., time-of-flight, quadrupole)?
+After separation, how are ionized proteins detected? Dive into the concept of a photomultiplier tube and explain how it can take the faint signal from a single ion and amplify it into a powerful, measurable output.
+What challenges occur in sample preparation, and how does protease digestion help prepare proteins for analysis?
+How are unknown proteins identified using mass spectrometry, and can mass spectrometry accurately quantify protein levels?
+
+#4 Mass Spectrometry in Proteomics - Tatiana 
+Main components 
+Ion source 
+Mass analyzer
+Detector
+Ionization Techniques: ESI and MALDI 
+
+#4 Mass Spectrometry in Proteomics - Nick 
+MALDI-TOF Instrument
+Photomultiplier Tube
+Ionization
+
+Mass Analyzer
+Detection
+Proteins or peptides are ionized
+Ionized proteins separated by mass-to-charge ratio
+Ionized proteins are detected, signals are amplified for measurement
+Clear Message Award
+
+#5 Phage Display 
+Phage display is a powerful technique that uses bacteriophages to display peptides or proteins on their surfaces, allowing for the study of protein interactions, binding affinity, and molecular recognition.
+Briefly, what are bacteriophages, and how do they interact with bacterial cells?
+What is the principle of phage display, and how does it utilize bacteriophages to study protein interactions?
+How is a phage display library constructed? Describe the steps involved in generating a diverse library of peptides or proteins displayed on phage surfaces.
+What is the process for screening a phage display library? Explain how the selection process identifies peptides or proteins with desired binding properties.
+Describe how binding selection is done in phage display, and explain how this iterative process enriches for high-affinity binders.
+List some common applications of phage display, including drug discovery, antibody development, and identifying molecular targets in biomedical research.
+
+Phage Display 
+Isabella
+Bacteriophages
+Viruses that only infect and replicate in bacteria
+Phage Display uses?
+Tumor Targeting Peptides
+Synthetic Receptors
+Bacterial Toxin Neutralization
+Cancer Immunotherapy
+Monoclonal Antibody Therapy
+
+#5 Phage Display - available  
+
+#6 ELISA 
+Enzyme-linked immunosorbent assay (ELISA) is a widely used technique for detecting and quantifying proteins or antibodies in a sample through specific antigen-antibody interactions, offering high sensitivity and precision in diagnostics.
+What is the ELISA technique, and how does it enable the detection and quantification of proteins or antibodies?
+Describe both the sandwich and indirect methods in ELISA. What are the key differences, and when might one method be preferred over the other?
+What protein markers can ELISA detect, such as those used to diagnose heart attacks (e.g., troponin) or pregnancy (e.g., hCG)? How do COVID antigen test kits work, and what proteins or viral markers are they detecting? 
+What are some other commercial applications of ELISA? Provide examples from fields like medical diagnostics, food safety, and environmental monitoring.
+How do you select the appropriate antibodies for an ELISA? How are ELISA antibodies obtained? Describe the process of generating both monoclonal and polyclonal antibodies, including how animals such as mice or rabbits are immunized to produce an immune response
+
+#6 ELISA - Dipali 
+ELISA(enzyme -linked immunosorbent assay) ia technique used to detect and quantify proteins , antigens or antibodies in sample.
+Sandwich ELISA:
+A capture antibody is coated on a plate.
+The sample is added, and the target antigen binds to
+ the capture antibody.
+Use: High specificity, ideal for complex samples, e.g., detecting 
+cytokines or viral proteins.
+Indirect ELISA:
+The antigens is coated on a plate.
+The substrate reacts with the enzyme,generating a signal.
+Use:common for detecting antibodies,such as in immune response studies or serological testing.
+
+Slide Simplicity Award
+
+#6 ELISA - Foram 
+ELISA Protein Markers
+Cardiac Diagnostics
+Troponin: Detected in blood tests to diagnose heart attacks. Troponin is a protein released when the heart muscle is damaged.
+
+Pregnancy Testing
+hCG (Human Chorionic Gonadotropin):Detected in urine or blood tests to confirm pregnancy. This hormone is produced during pregnancy.
+
+
+
+
+
+
+Other Commercial Applications of ELISA
+Selecting and Obtaining ELISA Antibodies
+COVID-19 Antigen Test Kits
+
+#7 Protein Quantification Methods
+Protein quantification methods are used to measure the concentration or amount of protein in a sample. This can refer to either the total protein present or the amount of a specific protein.
+Discuss traditional protein quantification methods like the Bradford and Lowry assays. How do these colorimetric assays work? Consider their simplicity and quick results but also their limitations in accuracy for complex samples.
+How can Western blotting be used to measure the amount of a specific protein? Why is it often chosen when scientists want to focus on just one protein from a mixture?
+How does ELISA work for detecting specific proteins, and why is it a faster alternative to Western blotting, especially when speed is important, but still requires time to develop a good assay?
+How does mass spectrometry measure protein levels, and what makes it useful when scientists need a list of many proteins and their quantities all at once? How can such a list provide valuable insight into protein expression profiles, cellular states, or disease biomarkers?
+
+#7 Protein Quantification Methods - Bradford method (Bhargavi)
+
+#7 Protein Quantification Methods - Western blotting (Bhargavi)
+
+Protein Quantification - Devarsh 
+ELISA 🐆?
+Simpler Process
+No Gel Electrophoresis
+Direct Detection
+Why  it's 
+useful
+
+• High Throughput
+
+• Sensitivity &      Specificity
+
+• Proteomic Profiles
+
+
+#8 Protein-Protein Interaction Networks
+Protein-protein interaction networks map out how proteins interact within a cell, offering insights into biological pathways, cellular functions, and the mechanisms behind diseases.
+How are protein-protein interaction networks created? Discuss the experimental and computational approaches used to identify and map interactions, such as yeast two-hybrid screening, co-immunoprecipitation, and bioinformatics databases.
+How do protein interaction networks deepen our understanding of complex diseases? Explore how network analysis can reveal dysregulated pathways or key proteins involved in conditions like cancer or neurodegenerative diseases.
+How are protein interaction networks valuable for identifying potential drug targets within signaling pathways? Discuss how these networks help pinpoint critical nodes or hubs that can be targeted to modulate cellular responses.
+How can mapping protein interaction networks contribute to personalized medicine? Consider how network-based approaches can identify patient-specific protein interactions, guiding the development of targeted therapies.
+Can the disruption of specific protein-protein interactions be a viable treatment strategy? Explore examples of FDA-approved drugs like Venetoclax (targets BCL-2 in leukemia) and Trastuzumab (targets HER2 in breast cancer).
+
+#8 Protein-Protein Interaction Networks - Sreeksha
+Experimental Approach
+Yeast two-hybrid screening
+Co-immunoprecipitation
+Computational approach
+predicting interactions using bioinformatics tools
+ By studying these networks, we can understand how diseases like cancer and Alzheimer's affect the way proteins work together.
+Protein-Protein Interaction Network 
+Slide Simplicity Award
+
+#8 Protein-Protein Interaction Networks - Karolina
+Better knowledge of infectious processes 
+Regulating selectivity in signaling pathway 
+Able to associate disease with certain protein groups
+Most Engaging Slide
+
+Chapter 10
+Recombinant Proteins
+
+Chapter 10: Recombinant Proteins TOC
+
+Proteins and Recombinant DNA Technology Expression of Eukaryotic Proteins in Bacteria Insulin and Diabetes
+Cloning and Genetic Engineering of Insulin Translation Expression Vectors
+Codon Usage Effects
+Avoiding Toxic Effects of Protein Overproduction Inclusion Bodies and Protein Refolding
+Increasing Protein Stability
+Improving Protein Secretion
+Protein Fusion Expression Vectors
+Protein Glycosylation
+Expression of Proteins by Eukaryotic Cells Expression of Proteins by Yeast
+Expression of Proteins by Insect Cells
+Expression of Proteins by Mammalian Cells Expression of Multiple Subunits in Mammalian Cells Comparing Expression Systems
+
+
+#9 Bacterial Expression of Eukaryotic Proteins
+Bacterial systems are commonly used to produce eukaryotic proteins by introducing eukaryotic genes, such as those for insulin, into bacteria like E. coli.
+What is cDNA, and why is it crucial for expressing human genes in bacteria? Explain how the insulin gene, originally part of the human genome, is cloned into a plasmid for bacterial expression.
+What are the key steps in producing insulin using bacterial systems, from inserting the gene into E. coli to purifying the final protein product?
+Why was the human insulin gene split into two for use in bacteria? What specific amino acid modification was made to prevent aggregation and increase yield?
+What are some additional strategies used to enhance the expression and processing of eukaryotic proteins in bacterial systems, such as signal peptides, fusion tags, and codon optimization? Why is codon optimization essential for improving gene expression in bacterial hosts like E. coli?
+How are bioreactors used to scale up protein production in E. coli for industrial purposes?
+
+#9 Bacterial Expression of Eukaryotic Proteins - Jeel
+
+#9 Bacterial Expression of Eukaryotic Proteins - Yamini
+
+
+Human Insulin Gene Splitting: Insulin gene split for easier bacterial expression; prevents aggregation by including specific solubility-enhancing modifications.
+Enhancement Strategies:
+Signal Peptides: Target proteins to the periplasm for proper folding.
+Fusion Tags: Aid in purification and solubility.
+Codon Optimization: Adjust codons for efficient bacterial translation.
+Bioreactors: Scale up protein production with controlled conditions for high yield
+
+#10 Toxic Effects and Inclusion Bodies
+Overproduction of proteins in bacteria can lead to toxic effects, resulting in protein misfolding and the formation of insoluble aggregates known as inclusion bodies.
+How does the overproduction of proteins in bacteria lead to toxic effects, and how does this affect cellular processes? How do factors such as the bacterial strain’s ability to handle high protein loads, its efficiency in protein folding, and its growth characteristics influence the choice of bacterial host strain for protein expression?
+What are inclusion bodies, and how can their formation be minimized? How do factors such as expression temperature and induction time affect the formation of inclusion bodies?
+How do techniques like dilution, dialysis, and chromatography assist in refolding proteins from inclusion bodies? What roles do these techniques play in restoring protein functionality?
+What role do chaperone proteins play in assisting protein folding? What are the mechanisms through which these chaperones facilitate proper protein folding? How does co-expressing chaperones with the target protein prevent aggregation and improve yield?
+
+#10 Toxic Effects and Inclusion Bodies - Khushi   
+The overproduction of proteins can lead us to:
+Resource depletion
+Protein misfolding
+Oxidative stress
+Reduced growth rate
+Factors that affects the choice of bacterial host strain:
+To handle high protein loads
+Protein folding capacity
+Growth characteristics
+Refolding protein techniques
+Delusion
+Dialysis
+Chromatography: 
+                                   ⟹   Size exclusion chromatography
+                                   ⟹   Hydrophobic interaction chromatography
+                                   ⟹   Ion-exchange chromatography
+                                   ⟹   Affinity chromatography
+                                      
+OVER
+
+Toxic Effects and Inclusion Bodies - Leo
+  Inclusion bodies: accumulated proteins that can be used to store nutrients for later use but also lead to toxic effects such as damaging membranes and taking resources away from other cell functions
+Factors affecting formation
+Time
+Temperature
+Chaperone proteins
+Techniques to refold proteins
+Size exclusion chromatography 
+Ion exchange chromatography 
+Dialysis 
+
+
+#11 Protein Expression in Yeast vs Bacteria
+Yeast and bacteria are both used for protein production, with yeast offering additional modifications not available in bacterial systems.
+How do eukaryotic and prokaryotic cells differ in their protein expression systems, particularly regarding the nucleus and post-translational modifications?
+How does yeast’s ability to perform glycosylation and other post-translational modifications compare to bacteria’s capabilities? How does this help in expressing eukaryotic proteins?
+Why is yeast a better choice than bacteria for producing proteins like human erythropoietin (EPO)?
+Which proteins benefit most from yeast’s glycosylation capabilities, and how do these modifications affect protein functionality?
+What challenges arise when expressing membrane-bound proteins in yeast, and how can these be addressed?
+
+#11 Protein Expression in Yeast vs Bacteria - Cynthia
+Bacteria are easy-to-use, inexpensive and are especially well-suited to prokaryotic protein expression. However, they are unable to add post-translational modifications (PTMs), meaning protein products do not fully represent the native state. (Left image)
+Yeasts are likewise simple and cost-effective; they also offer the advantage of secreting very few endogenous proteins, which facilitates the purification process. Yet, yeasts exhibit a slower growth rate than bacterial hosts and can be prone to causing protein   hyperglycosylation. (Right Image)
+
+
+#11 Protein Expression in Yeast vs Bacteria - Joslyn
+
+
+Eukaryotes
+Nucleus: Present; separates transcription and translation
+Post-Translational Modifications: Complex and varied (e.g., glycosylation, phosphorylation)
+
+
+
+Prokaryotes
+Nucleus: Absent; transcription and translation are coupled
+Post-Translational Modifications: Simpler and limited (e.g., phosphorylation)
+
+
+Receptors,
+Enzymes,Viral proteins
+
+
+
+Yeast:
+Genetically engineered strains mimic human glycosylation Performs complex modifications (e.g., phosphorylation, acetylation) 
+
+
+
+
+Bacteria:
+Cannot mimic human modifications
+Cannot perform glycosylation Limited modifications (e.g.,phosphorylation)
+
+Clear Message Award
+
+#12 Impossible Burger 
+(internet only, not in textbook) The Impossible Burger is a plant-based meat alternative, using soy leghemoglobin to mimic the taste and texture of beef.
+How does the Impossible Burger replicate the taste and texture of beef, and what role does soy leghemoglobin play in this process?
+The first version of the Impossible Burger used coconut and wheat but didn’t hold up well on a grill. How did switching to soy improve its structure?
+How do the Impossible Burger and competitors like Beyond Burger differ in their ingredients and approach to replicating meat?
+How does the nutritional value of the Impossible Burger compare to a beef burger, and if it’s not healthier, what other benefits does it provide?
+
+#12 Impossible Burger - Ewa 
+Gene for encoding Soybean Leghemoglobin 
+Protein via fermentation 
+Genetically modified 
+Beyond Burger
+Pea plant protein 
+Not genetically modified 
+
+Impossible Burger
+Impossible Vs Real beef
+Impossible burgers cholesterol is 0. 
+Real beef has approx. 90 mg cholesterol. 
+Impossible burger is more processed with food dyes. 
+Clear Message Award
+
+#12 Impossible Burger - Hailey
+Impossible Burger - Hailey
+Mission:
+
+Reduce environmental footprint through sustainable foods
+
+Less water
+Less GHG
+Less land
+Leghemoglobin
+Pichia pastoris
+Extracted from Roots
+Heme
+Yeast 
+Genetically Modified
+Clear Message Award
+
+#13 Protein Expression by Insect Cells
+Insect cells are used for producing complex proteins using the baculovirus system, allowing for proper folding and modifications.
+How did the development of insect cell systems address the limitations of bacterial and yeast systems for protein expression? For example, what specific issues with bacterial and yeast systems led to the adoption of insect cells?
+Why was the baculovirus expression system chosen for insect cell protein production? How does baculovirus infection lead to high-level protein expression, and what are the key advancements that make it effective?
+How do insect cells compare to yeast cells in terms of protein expression and post-translational modifications? How do the glycosylation patterns in insect cells, such as branching and sialylation, benefit proteins compared to yeast cells? What types of proteins benefit from the advanced modifications available in insect cells?
+How does the choice of insect cell line (e.g., SF9 vs. High Five) impact the efficiency and quality of protein expression? What specific characteristics of these cell lines make them suitable for different types of proteins?
+What limitations are associated with using insect cells for protein production? What are the most common methods for purifying proteins produced in insect cells? How do these methods compare to those used for proteins expressed in yeast or bacteria? How do factors like cost and yield compare to those of yeast cells? What are the challenges associated with scaling up insect cell cultures?
+How does the regulatory landscape for insect cell-produced proteins differ from that for yeast or bacterial systems? What are the implications for commercial production and approval of therapeutic proteins?
+
+#13 Protein Expression by Insect Cells - Aysun
+Limitations of Bacterial and Yeast Systems
+Bacterial Systems (e.g., E. coli)
+Lack of Post-Translational Modifications
+Protein Misfolding
+Yeast Systems (e.g., Saccharomyces cerevisiae)
+Limited Glycosylation (without sialic acid)
+Baculovirus Expression System (BEVS)
+Why Baculovirus?
+High-Level Expression
+Post-Translational Modifications: complex glycosylation, branching, sialylation
+
+Insect Cells
+Complex, branched N-glycans enhance protein stability and solubility
+Sialic acid provides longer half-life in circulation and reduces immunogenicity
+Yeast Cells
+Simpler, often linear N-glycans limit structural diversity
+Typically lack sialylation, affecting protein efficacy in therapeutic applications
+Best Layout Design
+
+#13 Protein Expression by Insect Cells - Vishal
+13.protien expression by insect cells:- Vishal 
+The choice between SF9 and High Five insect cell lines impacts protein expression efficiency and quality. SF9 cells are robust and well-suited for high-density cultures and producing glycoproteins, but may yield lower protein quantities. High Five cells often produce higher protein yields and are preferred for non-glycosylated proteins or when higher expression levels are needed. The specific characteristics include SF9's tolerance to a wide range of conditions and High Five's superior protein production capacity.
+Limitations of using insect cells for protein production:-
+Complexity and cost 
+Glycosylation patterns
+Yield 
+Time consuming 
+Scale up challenges 
+Common methods for purifying protein produced in insect cells
+Affinity chromatography 
+Ion exchange chromatography 
+Size exclusion chromatography 
+Hydrophobic interaction chromatography 
+The choice of production system for therapeutic proteins significantly influences the regulatory strategy and commercial viability. Insect cell systems present unique challenges and opportunities, particularly regarding regulatory scrutiny and manufacturing costs. Companies must weigh these factors carefully against the benefits of each platform in terms of product characteristics and market needs.
+
+#14 Protein Expression by Mammalian Cells
+Mammalian cells are used to express proteins with proper folding and modifications necessary for therapeutic uses.
+How is protein expression in mammalian cells achieved? What methods are used for transfection, and how do they compare to bacterial transformation? How do plasmids and viral vectors facilitate protein expression? What roles do transfection and infection play in gene introduction?
+Why are cell cultures preferred over whole organisms? How do controlled conditions in cell cultures enhance protein expression compared to whole organisms?
+What post-translational modifications are unique to mammalian cells compared to insects and yeast? Why is it crucial for proteins to have proper modifications to avoid degradation? How do these modifications impact the efficacy of therapeutic proteins?
+What is an Internal Ribosome Entry Site (IRES)? How does IRES enable cap-independent translation initiation? How can IRES elements enhance recombinant protein production?
+What bio-safety levels are associated with mammalian cell culture? What examples of cell lines or experiments might require higher bio-safety levels? How do these requirements help prevent contamination or exposure?
+
+#14 Protein Expression
+ by Mammalian Cells - Keren
+- Shuttle vectors are used to insert genes, which are then transfected into mammalian cells for protein expression. More sophisticated than bacterial transformation.
+- Genetic material is introduced using plasmids or viral vectors like lentiviruses. Genes can be introduced through non-viral transfection or viral infection techniques.
+- Why Cell Cultures?: Controlled conditions (e.g., pH, nutrients) improve protein quality compared to whole organisms.
+- Post-Translational Modifications: Mammalian cells perform critical modifications like glycosylation and proper protein folding, essential for therapeutic protein stability and efficacy.
+- IRES: Enables cap-independent translation, allowing multiple proteins to be produced from the same mRNA, enhancing production efficiency.
+Biosafety Levels: Typically BSL-1/2 for mammalian cell cultures BSL-3/4 for more hazardous materials to prevent contamination and ensure lab safety.
+
+
+Data Presentation Mastery
+
+#15 Recombinant Protein Vaccines
+protein vaccines use specific proteins from pathogens, rather than whole viruses, to stimulate an immuRecombinant ne response. Note: Focus only on recombinant protein vaccines. RNA vaccines were covered last week, and gene therapy vaccines will be discussed later.
+What are recombinant protein vaccines, and what are some examples (e.g., Hepatitis B, HPV, Meningococcal B)? What role do the recombinant proteins play in mimicking the pathogen’s antigens?
+What types of proteins, such as spike or surface proteins, are commonly used in recombinant protein vaccines? How are these proteins identified as suitable vaccine candidates?
+How do recombinant protein vaccines differ from traditional vaccines, including those based on dead viruses or live attenuated viruses? How does the safety of recombinant protein vaccines compare to that of traditional vaccines?
+What are the key steps in the large-scale production of recombinant protein vaccines? What regulatory hurdles must be cleared to bring them to market?
+
+ Recombinant Protein Vaccines : UMANG
+Recombinant proteins mimic pathogen antigens, triggering the immune system to recognize and respond to the actual pathogen upon exposure.  
+
+ proteins in these vaccines include:
+
+Spike proteins (e.g., SARS-CoV-2)
+Surface proteins (e.g., Hepatitis B surface antigen)
+
+Hepatitis B
+HPV
+Meningococcal B
+     Proteins are identified as suitable candidates through:
+Structural analysis of the pathogen.
+Immunogenicity studies to assess immune response.
+Bioinformatics tools for predicting antigenicity.
+
+
+ #15 Recombinant Protein Vaccines - Bhakti
+Clear Message Award
+
+Chapter 11
+Protein Engineering
+
+Chapter 11: Protein Engineering TOC
+
+Introduction
+Engineering Disulfide Bonds
+Improving Stability in Other Ways
+Changing Binding Site Specificity
+Structural Scaffolds
+Directed Evolution
+Recombining Domains
+DNA Shuffling
+Combinatorial Protein Libraries
+Creation of De Novo Proteins
+Expanding the Genetic Code
+Roles of Non-Natural Amino Acids
+Biomaterials Design Relies on Protein Engineering Engineered Binding Proteins
+
+#16 Protein Stability 
+Protein stability refers to how well a protein maintains its structure and function under various conditions.
+How can protein engineering be used to improve protein stability? Which amino acids are commonly targeted for modification to enhance stability? What roles do arginine and proline play in improving protein stability? How can introducing disulfide bonds increase a protein’s resistance to denaturation?
+The textbook outlines four additional approaches for enhancing protein stability via amino acid modifications:
+How and why do we reduce entropy to improve protein stability?
+How and why do we optimize the hydrophobic core of proteins?
+How can modifying amino acids stabilize alpha helices in proteins?
+Which amino acids are known to destabilize proteins, and how do they affect stability?
+Can you identify other protein stabilization methods beyond amino acid modifications that the textbook did not cover? How do stabilizing ligands and co-factors contribute to protein stability?
+
+#16 Protein Stability - Maria
+Protein Engineering
+Targeted Amino Acid  
+Roles of Arginine/Proline
+Introduction of disulfide bonds
+
+Most Concise
+Award
+
+#16 Protein Stability - Mary 
+    Entropy + Protein Stability
+Lower entropy = fewer possible unfolded conformations = higher protein stability 
+Done by replacing flexible AAs with less flexible AAs (e.g. Replacing Gly with Pro)
+    Optimizing Hydrophobic Core
+Enhances protein stability
+Done by filling cavities with larger hydrophobic residues e.g.      Ala → Val
+ Leu → Phe
+ Etc.
+
+     Destabilizing Amino Acids
+Asn and Gln because under extreme conditions… 
+Asn → Asp–
+Gln → Glu – 
+Prevented by replacing with uncharged, hydrophilic AAs (e.g. Thr, Ser, Cys)
+ 
+    Stabilizing 𝝰-helices with AAs
+𝜶-helices have natural dipoles (slightly positive NT and slightly negative CT)
+Introducing AAs with opposite charges near the helix ends helps to stabilize helices
+Best Visuals
+Award
+
+#17 Binding Sites and Scaffolds
+Altering protein binding sites and scaffolds is essential in designing proteins with new functions or improving their interactions with other molecules.
+What specific goals are achieved by modifying the active site, such as enhancing substrate specificity or catalytic activity? What are some challenges in maintaining enzyme stability after modifying the active site?
+How do molecular dynamics simulations predict the effects of changes in an enzyme’s active site? How reliable are these predictions? What limitations exist in using simulations to predict real-world enzyme behavior?
+How does reducing the size of a protein’s scaffold affect its enzymatic properties? Explain using the example of lactate dehydrogenase (LDH) in bacteria. How have adaptations in lactate dehydrogenase (LDH) allowed it to interact with different substrates?
+What could be the downsides of making a protein scaffold too small? Could this affect the protein’s stability, catalytic efficiency, or interaction with other molecules?
+Can you envision scenarios or applications where larger scaffolds might be advantageous? How can a larger scaffold support multi-functional activities in enzymes? Could a larger scaffold potentially improve enzyme stability under harsh conditions? 
+
+#17 Binding Sites and Scaffolds - Diamond
+Modification of active site/binding site 
+Substrate specificity
+Enhancement of catalytic activity  
+
+NAD/NADP
+Larger binding sites 
+Hydrophobic binding sites
+Risk of modifying sites 
+Insufficient molecular dynamics
+
+#17 Binding Sites and Scaffolds - Mudrika
+
+
+
+
+LDH adaptations: 
+
+Isoforms 
+Structural Flexibility 
+Binding mechanism 
+Thermodynamic adaptations 
+How small is too small? When protein scaffolds are too small could affect: 
+Structural instability 
+Functional site 
+Reduced interactions
+
+Protein Scaffold reduction can affect:
+ Active site accessibility 
+Stability 
+Flexibility 
+Protein-protein interactions 
+Catalytic Efficiency 
+Regulatory Mechanisms 
+
+#18 Protein Directed Evolution
+Protein directed evolution mimics natural selection in the lab to evolve proteins with new or improved functions through random mutations and selection.
+What are the key considerations and challenges at each stage of directed evolution, including library creation, mutation, screening, and optimization?
+How is protein directed evolution compare to ribozyme selection discussed last week? What principles of selection and mutation are shared between these methods? 
+How does random mutagenesis introduce variations into a protein’s gene? What are the mechanisms behind error-prone PCR, and how is it used to generate a diverse library of protein variants? 
+How can incomplete library diversity affect the outcomes of directed evolution? Considering a protein with 100 amino acid positions and 20 possible amino acids, calculate the number of possible single-point mutations if each position can be mutated to any of the other 19 amino acids.
+How is selection pressure applied to isolate desirable protein variants? What are examples of selection pressures used to enhance enzyme stability?
+Can you name some commercial applications that have been enabled by directed evolution? How has directed evolution been used to develop enzymes for biofuel production? See the work of companies like Carbios, Novozymes, and Codexis.
+
+#18 Protein Directed Evolution - Mounisha
+.
+
+#18 Protein Directed Evolution - available 
+
+#19 Recombinant Protein Domains
+Functional protein domains are distinct regions within a protein that are responsible for specific activities or functions, such as binding to other molecules, catalyzing reactions, or stabilizing the protein’s structure. Recombinant protein domains involve combining functional domains of different proteins to create new proteins with desired properties.
+Explain the basic concept of recombining functional protein domains to create new proteins with improved functions.
+What is DNA shuffling? How does this technique, which involves fragmenting and recombining DNA sequences, help create diverse protein variants? How does DNA shuffling differ from other methods like site-directed mutagenesis in generating protein diversity?
+How do combinatorial libraries contribute to protein engineering by providing diverse protein domains? What methods are used to create these libraries, and how do they ensure coverage of a wide range of possible domain combinations?
+Can you provide an example of a protein that had its functionality significantly enhanced through domain recombination? For instance, the fusion of a thermostable domain with a protease catalytic domain.
+What are some therapeutic applications of recombinant protein domains, such as Glucarpidase, Palifermin, and Romiplostim? What benefits do they provide in medicine, such as improving drug efficacy and reducing side effects?
+
+       RECOMBINANT 
+   PROTEIN DOMAINS
+#19
+Engineered protein segments combined for new functions
+DNA shuffling : creates diversity by fragmenting and recombining DNA
+Combinatorial libraries : collections of diverse                                   proteins for testing
+-Bhavani
+
+#19 Recombinant Protein Domains - available 
+
+#20 Protein Structure Determination
+Protein structure determination involves using experimental methods such as X-ray crystallography, NMR, and cryo-electron microscopy (cryo-EM) to reveal the three-dimensional shapes of proteins, which is essential for understanding their function and interactions.
+Explain why cryo-EM has become the preferred method for solving the structures of large and complex proteins.
+Discuss the advantages of cryo-EM over X-ray crystallography and NMR (e.g., no need for protein crystallization). How does cryo-EM compare to other methods in terms of resolution and throughput?
+How has cryo-EM revolutionized the study of membrane proteins and large macromolecular complexes?
+What recent technological advancements (e.g., direct electron detectors, image processing software) have made cryo-EM more accessible for determining novel protein structures?
+Provide examples of novel protein structures solved using cryo-EM, such as ion channels, ribosomes, or viral proteins.
+
+#20 Protein Structure Determination - available 
+
+#20 Protein Structure Determination - available 
+
+#21 De Novo Protein Design
+De novo protein design involves creating entirely new proteins from scratch, based on computational models to achieve specific structures and functions.
+What is the core concept of de novo protein design, and how does it differ from traditional protein engineering?
+Have scientists successfully created novel proteins through de novo design? 
+Check the Baker Lab website. http://bakerlab.org  How does the Baker Lab approach the design of new proteins, and what are some examples of their successes?  What methodologies are they employing to design novel proteins? explore their techniques, such as computational modeling, iterative design, and experimental validation.
+How are the functions of de novo designed proteins experimentally validated? What techniques and assays are used to test their structural integrity, activity, and interactions?
+What are some potential applications of de novo protein design in medicine? Consider areas like drug development, synthetic biology, and therapeutic protein creation. How might these applications benefit from custom-designed proteins?
+
+#21 De Novo Protein Design - Chenyu
+
+#21 De Novo Protein Design - available 
+
+#22 AlphaFold by DeepMind
+AlphaFold is an AI system developed by Google DeepMind that predicts a protein’s 3D structure from its amino acid sequence
+How does AlphaFold’s accuracy compare to that of traditional experimental methods like X-ray crystallography and cryo-electron microscopy? Can you provide specific examples from the Critical Assessment of Structure Prediction (CASP) or other relevant studies to illustrate its performance?
+What are some known limitations of AlphaFold’s predictions? Specifically, how well does AlphaFold handle dynamic regions of proteins or novel protein folds that have not been observed experimentally? Is AlphaFold capable of predicting entirely new or unique protein folds, or is it restricted to predicting structures based on known folds? What typically happens when AlphaFold produces unrealistic or nonsensical results?
+In what ways has AlphaFold been adapted to predict protein-protein interactions and multi-protein complexes? How does this capability enhance our understanding of these complex biological systems?
+How has the availability of predicted protein structures from AlphaFold impacted research in fields such as drug discovery and disease understanding, especially compared to the reliance on experimental data alone?
+
+#22 AlphaFold by DeepMind - Uzair
+AlphaFold
+Cryo-Electron Microscopy
+vs.
+X-Ray Crystallography
+CASP13
+Score:
+58.9
+(2018)
+CASP14
+Score:
+92.4
+(2020)
+AlphaFold
+0.1_
+Angstrom
+CAPABILITIES & ACCURACY
+LIMITATIONS
+⬥ Struggle with flexible loops
+⬥ Can form inaccurate models
+⬥ Bias towards known folds
+ADAPTATIONS
+⬥ Protein-protein interfaces
+⬥ Predict protein complexes and interactions
+⬥ Drug and active site
+IMPACT
+⬥ Fast
+⬥ Cheap
+⬥ Accessible
+⬥ SARS-CoV-2
+
+
+Best Use of Graphics Award
+
+#22 AlphaFold by DeepMind - available 
+
+#23 Four Base Codons
+Expanding the genetic code with four-base codons allows the incorporation of non-natural amino acids into proteins, enabling the creation of proteins with unique properties.
+What role do non-natural amino acids play in advancing protein engineering? Explore their unique properties, such as custom chemical reactivity (e.g., Formaldehyde-Responsive Amino Acid (FRAA) for formaldehyde reactivity), crosslinking capabilities (e.g., p-Azido-phenylalanine for click chemistry), labeling for imaging (e.g., fluorescent amino acids like Alexa Fluor for microscopy), and labeling for purification (e.g., biotinylated amino acids for streptavidin-based affinity purification).
+Can you provide specific examples of practical applications where non-natural amino acids have proven beneficial? Consider areas such as drug development, enzyme design, or synthetic biology.
+How does engineering tRNA to recognize a four-base codon fundamentally alter the genetic code? What are the implications for protein synthesis and how does this expand the range of amino acids that can be incorporated into proteins? What are the potential benefits of expanding the functional diversity of proteins and enabling the creation of proteins with entirely new properties?
+If you were to start a biotech company leveraging a four-base codon system, what types of innovative products would you consider creating?
+
+#23 Four Base Codons - Hareem
+
+#23 Four Base Codons - available 
+
+Best Slide Award
+GREAT
+SLIDE
+GREAT
+SLIDE
+GREAT
+SLIDE
+
+Best Slide Award
+Most Informative
+Award
+Best Visuals
+Award
+Data Presentation Mastery
+Clear Message Award
+Slide Simplicity Award
+Best Layout Design
+Most Engaging Slide
+Most Concise
+Award
+Best Use of Graphics Award
+
+The End

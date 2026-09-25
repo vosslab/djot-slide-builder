@@ -51,8 +51,9 @@ source source_me.sh && python3 deck_tools.py --help
 
 ## Conversion boundary
 
-Close the LibreOffice desktop application before a command that imports ODP or produces ODP/PDF.
-The repository invokes LibreOffice headlessly through its established user profile.
+The LibreOffice desktop application may remain open during a headless conversion. The repository
+uses direct sequential `soffice --headless --norestore --convert-to --outdir` commands and the
+Impress PDF export filter.
 
 Import only trusted instructor-owned ODP files. Save legacy PPTX as ODP in LibreOffice first.
 Archive and image validation bounds

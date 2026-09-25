@@ -7,6 +7,21 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 `docs/active_plans/decisions/`. [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+## Explicit THE END layout (2026-09-24)
+
+**Decision.** Author final closers with the dedicated `theend` layout and one exact `# THE END`
+heading. Keep ordinary section dividers governed by their declared `section` layout.
+
+**Why.** A layout's visual behavior should come from its named source contract. Inferring a special
+closer from heading text makes ordinary section syntax carry hidden layout behavior.
+
+**Consequence.** The `theend` layout validates the exact closer source and compiles to editable text,
+a native vector star, and the established framed theme surface. Its ODP page uses LibreOffice's
+Centered Text classifier.
+
+**Owner.** `slide_lib/layout_registry.py`, `slide_lib/layout_validation.py`,
+`slide_lib/layout_specialty_builders.py`, and `docs/DJOT_SLIDE_SYNTAX.md`.
+
 ## Current operational boundary (2026-09-21)
 
 ### Wide legacy table teaching figures
@@ -59,6 +74,45 @@ to select `.djot` files recursively and ignores the `old/` evidence because it c
 sources.
 
 **Owner.** `genetics/`, `build_slides.sh`, and `slide_lib/native_export.py`.
+
+### Lecture-organized Biotechnology source tree
+
+**Decision.** Organize Biotechnology by lecture using the Genetics directory pattern. Each
+`biotech/LECT##/` contains canonical Djot and its local assets in `djot/`, and original ODP, PDF,
+and teaching-source evidence in `old/`.
+
+**Why.** The lecture is the working unit for source review, authoring, and building. Keeping source
+material beside the corresponding lecture makes the Biotechnology corpus follow the established
+Genetics workflow.
+
+**Consequence.** `./build_slides.sh biotech/LECT04/` selects Lecture 04, and `./build_slides.sh
+biotech/` selects the complete Biotechnology corpus. Djot references remain local to each
+lecture's `djot/` directory.
+
+**Owner.** `biotech/` and `build_slides.sh`.
+
+### Biotechnology Lecture 04C source merge
+
+**Decision.** Keep all 146 pages from the instructor's Set #3 ODP as the 04C foundation, including
+its six hidden quiz answers. Convert the instructor's two on-click quiz sets and antibody-recognition
+reveal into sequential visible question-and-answer slides, while retaining the six source answer
+pages as hidden ODP slides.
+Add the complete 30-topic protein synthesis as expanded study notes. Give every slide at least one
+relevant local image and use several when they help explain the material. Keep student names and
+presenter identities out of canonical slides.
+
+**Why.** The instructor deck contains useful core content but does not cover the full current topic
+set. The student presentation files are incomplete and uneven, so their reviewed topics and figures
+extend the course material without replacing instructor content.
+
+**Consequence.** [lect04c-talking_points_set_3.djot](../biotech/LECT04/djot/lect04c-talking_points_set_3.djot)
+contains 386 slides: the 145 source teaching pages expanded by 20 quiz flipbook slides, followed by
+the full 220-slide topic synthesis and the instructor's original closer. All 146 source pages remain
+represented, including six hidden answer pages, which stay hidden in the editable ODP and are omitted
+from the classroom PDF. Instructor and student figures remain local to the deck with source-page
+provenance; original source files remain under `biotech/LECT04/old/`.
+
+**Owner.** `biotech/LECT04/djot/` and `biotech/LECT04/old/`.
 
 ### Biotechnology Lecture 03 source merge
 
@@ -226,8 +280,9 @@ without maintaining a second parser or compatibility vocabulary.
 
 **Consequence.** `native_export` admits only `.djot`; ODP import emits Djot. The
 runtime has no alternate source-language parser, suffix dispatch table, or target-selection flag.
-Import retains hidden slides and assets; lint validates them, while compilation skips them for
-ODP/PDF output. An all-hidden source can be imported and linted but cannot produce a classroom deck.
+Import retains hidden slides and assets; lint and capacity inspection validate them, compilation
+retains each as a native hidden ODP page style, and LibreOffice omits hidden pages from PDF and
+classroom playback. An all-hidden source can be imported and linted but cannot produce a classroom deck.
 This is one boolean on the semantic slide, not a generic metadata or export-mode framework.
 
 **Owner.** `slide_lib/native_export.py`, `slide_lib/djot_parser.py`, and [PIPELINE.md](PIPELINE.md).
@@ -974,7 +1029,8 @@ explicit residual layout work, not evidence to lower the ordinary teaching floor
 **Decision.** Title slides use the native master rectangles and select the largest readable title
 that preserves the 20 pt body floor; otherwise the body records its capacity diagnostic. Covers add
 a rounded metadata frame and accent rule. Sections use the deck's course accent and center white text
-in a rounded frame. An exact `THE END` becomes two giant lines with a native star in the D.
+in a rounded frame. The explicit `theend` layout renders its required `# THE END` heading as two
+giant lines with a native star in the D.
 `big-image` places one focal image above a short full-width bottom caption, and ordinary content
 reserves a visible bottom margin.
 

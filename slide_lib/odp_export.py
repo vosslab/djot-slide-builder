@@ -99,12 +99,13 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 	presentation = xml.etree.ElementTree.SubElement(body, _qname(OFFICE_NS, "presentation"))
 	for slide_index, slide in enumerate(deck.slides):
 		layout_key = slide.layout.topology.key_for_canvas(deck.canvas)
-		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), {
+		page_attributes = {
 			_qname(DRAW_NS, "name"): slide.identity.slide_id,
-			_qname(DRAW_NS, "style-name"): page_style_names[slide.surface],
+			_qname(DRAW_NS, "style-name"): page_style_names[(slide.surface, slide.hidden)],
 			_qname(DRAW_NS, "master-page-name"): theme.master_name,
 			_qname(PRESENTATION_NS, "presentation-page-layout-name"): layout_names[layout_key],
-		})
+		}
+		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), page_attributes)
 		target_ids = _target_ids(slide, slide_index)
 		for object_index, item in enumerate(sorted(slide.objects,
 				key=lambda value: (value.z_index, value.reading_order, value.object_id))):
@@ -117,22 +118,23 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 
 #============================================
 def _page_style_names(deck: slide_lib.layout_model.LayoutDeck) -> dict[
-		slide_lib.layout_primitives.SlideSurface, str]:
-	"""Assign deterministic document-local names to used page surfaces."""
-	result: dict[slide_lib.layout_primitives.SlideSurface, str] = {}
+		tuple[slide_lib.layout_primitives.SlideSurface, bool], str]:
+	"""Assign deterministic document-local names to used surface and visibility pairs."""
+	result: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool], str] = {}
 	for slide in deck.slides:
-		if slide.surface in result:
+		key = (slide.surface, slide.hidden)
+		if key in result:
 			continue
-		result[slide.surface] = "DjotPage" if not result else f"DjotPage{len(result) + 1}"
+		result[key] = "DjotPage" if not result else f"DjotPage{len(result) + 1}"
 	return result
 
 
 #============================================
 def _add_page_styles(automatic: xml.etree.ElementTree.Element,
-		style_names: dict[slide_lib.layout_primitives.SlideSurface, str],
+		style_names: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool], str],
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
-	"""Define each compiler-selected native page surface."""
-	for surface, style_name in style_names.items():
+	"""Define each native page surface and its slide-show visibility."""
+	for (surface, hidden), style_name in style_names.items():
 		style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
 			_qname(STYLE_NS, "name"): style_name,
 			_qname(STYLE_NS, "family"): "drawing-page",
@@ -145,6 +147,8 @@ def _add_page_styles(automatic: xml.etree.ElementTree.Element,
 			_qname(PRESENTATION_NS, "display-footer"): "false",
 			_qname(PRESENTATION_NS, "display-date-time"): "false",
 		}
+		if hidden:
+			properties[_qname(PRESENTATION_NS, "visibility")] = "hidden"
 		if surface.background_role is not None:
 			properties[_qname(DRAW_NS, "fill")] = "solid"
 			properties[_qname(DRAW_NS, "fill-color")] = \

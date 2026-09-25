@@ -41,8 +41,8 @@ def test_two_sources_produce_two_stable_source_slides(tmp_path: pathlib.Path) ->
 	assert tuple(slide.identity.slide_id for slide in result.plan.slides) == ("slide-1", "slide-2")
 
 
-def test_hidden_source_is_retained_but_not_compiled(tmp_path: pathlib.Path) -> None:
-	"""Hide/show changes physical output without discarding authored slide content."""
+def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Path) -> None:
+	"""Hidden pages keep their source order and native hidden metadata."""
 	source = ("=== layout: title-only\nhidden: true\n\n# Optional\n"
 		"=== layout: title-only\n\n# Teaching\n"
 		"=== layout: title-only\nhidden: false\n\n# Closing\n")
@@ -51,7 +51,8 @@ def test_hidden_source_is_retained_but_not_compiled(tmp_path: pathlib.Path) -> N
 		deck, slide_lib.presentation_theme.default_theme())
 	assert deck.title == "Teaching" and deck.slides[0].blocks[0].inlines[0].value == "Optional"
 	assert tuple(page.identity.source for page in result.plan.slides) == \
-		tuple(slide.location for slide in deck.slides[1:])
+		tuple(slide.location for slide in deck.slides)
+	assert tuple(page.hidden for page in result.plan.slides) == (True, False, False)
 
 
 def test_unhiding_source_restores_its_output_position(tmp_path: pathlib.Path) -> None:
@@ -268,9 +269,9 @@ def test_section_projection_preserves_plain_text_spacing(tmp_path: pathlib.Path)
 		if isinstance(run, slide_lib.layout_content.TextRun)) == ("Instructor Information",)
 
 
-def test_the_end_section_is_large_two_line_text_with_a_native_star(tmp_path: pathlib.Path) -> None:
+def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathlib.Path) -> None:
 	"""The recurring closer stays editable while its vector star supplies the flourish."""
-	slide = compile_source(tmp_path, "=== layout: section\n\n# THE END").plan.slides[0]
+	slide = compile_source(tmp_path, "=== layout: theend\n\n# THE END").plan.slides[0]
 	text = next(item.content for item in slide.objects
 		if isinstance(item.content, slide_lib.layout_content.TextContent))
 	lines = tuple("".join(run.text for run in paragraph.inlines

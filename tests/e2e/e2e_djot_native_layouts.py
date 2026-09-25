@@ -65,6 +65,8 @@ def write_image(image_path: pathlib.Path) -> None:
 #============================================
 def title_source(spec: slide_lib.layout_primitives.LayoutContract) -> list[str]:
 	"""Return the permitted global title region for one layout specification."""
+	if spec.name == "theend":
+		return ["# THE END"]
 	lines: list[str] = []
 	if spec.allows_title:
 		lines.append(f"# {spec.name} Djot acceptance")

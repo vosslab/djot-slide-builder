@@ -12,12 +12,12 @@ SOFFICE_CANDIDATES = (
 	pathlib.Path("/Applications/LibreOffice.app/Contents/MacOS/soffice"),
 	pathlib.Path("/Applications/LibreOffice-Still.app/Contents/MacOS/soffice"),
 )
-SOFFICE_PROCESS_MARKER = ".app/Contents/MacOS/soffice"
 IMPRESS_PDF_EXPORT = (
 	'pdf:impress_pdf_Export:{'
 	'"Quality":{"type":"long","value":"70"},'
 	'"ReduceImageResolution":{"type":"boolean","value":"true"},'
 	'"MaxImageResolution":{"type":"long","value":"100"},'
+	'"ExportHiddenSlides":{"type":"boolean","value":"false"},'
 	'"SelectPdfVersion":{"type":"long","value":"3"}'
 	'}'
 )
@@ -25,7 +25,7 @@ SETTLING_SECONDS = 2
 
 
 class LibreOfficeError(RuntimeError):
-	"""Report an expected LibreOffice preflight or conversion failure."""
+	"""Report an expected LibreOffice conversion failure."""
 
 
 #============================================
@@ -53,20 +53,6 @@ def require_soffice() -> pathlib.Path:
 
 
 #============================================
-def require_libreoffice_closed() -> None:
-	"""Require the desktop LibreOffice process to be closed before conversion."""
-	result = subprocess.run(
-		["ps", "-axo", "command="],
-		check=True,
-		capture_output=True,
-		text=True,
-	)
-	for command in result.stdout.splitlines():
-		if SOFFICE_PROCESS_MARKER in command:
-			raise LibreOfficeError("LibreOffice is running; close it before building presentations")
-
-
-#============================================
 def convert_files(input_paths: collections.abc.Sequence[pathlib.Path], output_dir: pathlib.Path,
 		output_format: str) -> tuple[pathlib.Path, ...]:
 	"""Convert ordered presentations one at a time after one desktop preflight."""
@@ -76,7 +62,6 @@ def convert_files(input_paths: collections.abc.Sequence[pathlib.Path], output_di
 	expected_paths = tuple(output_dir / f"{input_path.stem}.{output_format}" for input_path in inputs)
 	if len(set(expected_paths)) != len(expected_paths):
 		raise ValueError("LibreOffice conversion inputs must have distinct output filenames")
-	require_libreoffice_closed()
 	soffice_path = require_soffice()
 	conversion_target = IMPRESS_PDF_EXPORT if output_format == "pdf" else output_format
 	for input_path, expected_path in zip(inputs, expected_paths, strict=True):

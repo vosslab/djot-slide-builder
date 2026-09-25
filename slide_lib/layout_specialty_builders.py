@@ -60,9 +60,6 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
 	"""Build one centered transition card in LibreOffice's Centered Text member."""
-	if len(headings) == 1 and slide_lib.layout_measurement.visible_text(
-			headings[0].inlines) == "THE END":
-		return _end_components(headings[0], theme, contract, session)
 	rectangle = slide_lib.layout_primitives.LogicalRectangle(150, 235, 980, 330)
 	frame = dataclasses.replace(_frame_text(),
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
@@ -107,6 +104,19 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		slide_lib.layout_primitives.StyleRole.ANSWER if contract.name == "subsection" else
 		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
 	return SpecialtySlideComponents((slot,), (border, item), surface)
+
+
+def theend_components(deck: slide_lib.native_model.Deck,
+		source: slide_lib.native_model.Slide,
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		contract: slide_lib.layout_primitives.LayoutContract,
+		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
+	"""Build the explicitly selected native THE END closer."""
+	title = next(block for block in source.blocks
+		if isinstance(block, slide_lib.native_model.Heading))
+	image = next((block for block in source.blocks
+		if isinstance(block, slide_lib.native_model.Image)), None)
+	return _end_components(deck, title, image, theme, contract, session)
 
 
 def big_image_components(deck: slide_lib.native_model.Deck,
@@ -175,12 +185,15 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		(image_slot, caption_slot), (image_object, *overlay_objects, caption_object))
 
 
-def _end_components(title: slide_lib.native_model.Heading,
+def _end_components(deck: slide_lib.native_model.Deck,
+		title: slide_lib.native_model.Heading,
+		image: slide_lib.native_model.Image | None,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
 	"""Build the two-line THE END closer with editable type and a vector star inside the D."""
-	rectangle = slide_lib.layout_primitives.LogicalRectangle(190, 130, 900, 600)
+	rectangle = slide_lib.layout_primitives.LogicalRectangle(140, 145, 520, 520) if image else \
+		slide_lib.layout_primitives.LogicalRectangle(190, 130, 900, 600)
 	frame = dataclasses.replace(_frame_text(),
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
 	def fits(candidate: float) -> bool:
@@ -251,7 +264,16 @@ def _end_components(title: slide_lib.native_model.Heading,
 		slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 3, 3)
 	surface = slide_lib.layout_primitives.SlideSurface(
 		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
-	return SpecialtySlideComponents((slot,), (outer, inner, text, star), surface)
+	if image is None:
+		return SpecialtySlideComponents((slot,), (outer, inner, text, star), surface)
+	image_rectangle = slide_lib.layout_primitives.LogicalRectangle(720, 175, 370, 460)
+	image_slot = _slot("image", slide_lib.layout_primitives.PlaceholderKind.NONE,
+		slide_lib.layout_primitives.PresentationRole.COMPONENT, image_rectangle, 1, None,
+		slide_lib.layout_primitives.StyleRole.BODY)
+	image_object = slide_lib.layout_object_builders.picture_object(
+		"end-image", deck, image, image_rectangle, "image", 3)
+	return SpecialtySlideComponents((slot, image_slot),
+		(outer, inner, image_object, text, star), surface)
 
 
 def _master_rectangle(frame: slide_lib.presentation_theme.FrameGeometry,

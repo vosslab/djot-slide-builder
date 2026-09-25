@@ -6,6 +6,7 @@
 deck_tools.py        application CLI for build, capacity, import, lint, and visibility
 slide_lib/           reusable Djot, native-export, and importer package
 genetics/            example and lecture Djot corpus
+biotech/             lecture-organized Biotechnology Djot corpus
 tests/               fast tests and explicitly separate native E2E runners
 docs/                durable project documentation and working plans
 devel/               maintainer and repository-engineering helpers
@@ -29,6 +30,9 @@ Brewfile             declared macOS command-line and desktop dependencies
 - [../genetics/](../genetics/) contains lecture-organized Djot sources. Each `LECT##/` folder owns
   `djot/` canonical sources and adjacent assets plus `old/` original ODP/PDF/ODS evidence. The
   top-level [genetics README](../genetics/README.md) records the corpus inventory.
+- [../biotech/](../biotech/) follows the same lecture layout: each `LECT##/` folder owns `djot/`
+  sources and assets plus `old/` original decks, PDFs, and course source material. The
+  [Lecture 04 review](../biotech/LECT04/djot/LECT04_REVIEW.md) records its conversion scope.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.
   `presentation_theme.py` validates and reads it; `odp_export.py` projects the compiled physical
   plan directly to editable ODP, and `odp_text.py` writes its editable text objects.
@@ -66,8 +70,9 @@ Brewfile             declared macOS command-line and desktop dependencies
 - Add reusable presentation behavior under [../slide_lib/](../slide_lib/), grouping import-specific
   code under [../slide_lib/importers/](../slide_lib/importers/).
 - Add lecture source and associated local assets under the matching lecture folder, such as
-  [../genetics/LECT04/djot/](../genetics/LECT04/djot/). Keep original presentation evidence in
-  that lecture's `old/` folder.
+  [../genetics/LECT04/djot/](../genetics/LECT04/djot/) or
+  [../biotech/LECT04/djot/](../biotech/LECT04/djot/). Keep original presentation evidence in that
+  lecture's `old/` folder.
 - Add durable behavior tests under [../tests/](../tests/) and whole-system acceptance runners under
   [../tests/e2e/](../tests/e2e/).
 - Add user and maintainer reference documentation under `docs/`, using the owning

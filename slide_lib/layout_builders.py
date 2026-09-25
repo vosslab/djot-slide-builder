@@ -37,6 +37,11 @@ def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_mo
 			list(components.objects), components.surface)
 	if source.layout_class == "title-only":
 		return _title_only_slide(deck, source, theme, index, contract, session)
+	if source.layout_class == "theend":
+		components = slide_lib.layout_specialty_builders.theend_components(
+			deck, source, theme, contract, session)
+		return _slide(source, index, contract, list(components.slots),
+			list(components.objects), components.surface)
 	if not contract.slot_names:
 		return _heading_slide(source, theme, index, contract, session)
 	return _standard_slide(deck, source, theme, index, contract, session)
@@ -169,6 +174,11 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
 	"""Build title-only, title-slide, section, and blank slide physical frames."""
 	headings = tuple(block for block in source.blocks if isinstance(block, slide_lib.native_model.Heading))
+	if contract.name == "theend":
+		components = slide_lib.layout_specialty_builders.theend_components(
+			headings[0], theme, contract, session)
+		return _slide(source, index, contract, list(components.slots),
+			list(components.objects), components.surface)
 	if contract.name in ("section", "subsection"):
 		components = slide_lib.layout_specialty_builders.section_components(
 			headings, theme, contract, session)

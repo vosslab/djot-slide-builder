@@ -90,13 +90,27 @@ def template(path: pathlib.Path) -> pathlib.Path:
 def test_write_odp_replaces_content_and_preserves_reachable_template_resource(tmp_path: pathlib.Path) -> None:
 	template_path = template(tmp_path / "theme.otp")
 	theme = dataclasses.replace(slide_lib.presentation_theme.default_theme(), template_path=template_path)
-	destination = exporter.write_odp(deck(), theme, tmp_path / "deck.odp")
+	layout_deck = deck()
+	layout_deck = dataclasses.replace(layout_deck, slides=(dataclasses.replace(
+		layout_deck.slides[0], hidden=True),))
+	destination = exporter.write_odp(layout_deck, theme, tmp_path / "deck.odp")
 	package.validate_package(destination, ".odp", package.ODP_MIMETYPE, package.REQUIRED_ODP_MEMBERS)
 	with zipfile.ZipFile(destination) as archive:
 		members = archive.infolist()
 		assert members[0].filename == "mimetype" and members[0].compress_type == zipfile.ZIP_STORED
 		assert archive.read("Pictures/theme.png") == b"theme image"
 		assert b'draw:name="slide-1"' in archive.read("content.xml")
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
+		page = root.find(f".//{exporter._qname(exporter.DRAW_NS, 'page')}")
+		assert page is not None
+		page_style = page.get(exporter._qname(exporter.DRAW_NS, "style-name"))
+		styles = root.findall(f".//{exporter._qname(exporter.STYLE_NS, 'style')}")
+		hidden_style = next(style for style in styles
+			if style.get(exporter._qname(exporter.STYLE_NS, "name")) == page_style)
+		properties = hidden_style.find(exporter._qname(exporter.STYLE_NS,
+			"drawing-page-properties"))
+		assert properties is not None and properties.get(
+			exporter._qname(exporter.PRESENTATION_NS, "visibility")) == "hidden"
 		package.validate_odp_members({info.filename: archive.read(info.filename) for info in members})
 
 
@@ -242,7 +256,7 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
 	"""LibreOffice receives the dark transition as a page style and the flourish as a vector."""
 	source_path = tmp_path / "closer.djot"
-	source_path.write_text("=== layout: section\n\n# THE END\n", encoding="utf-8")
+	source_path.write_text("=== layout: theend\n\n# THE END\n", encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme()
 	plan = slide_lib.layout_engine.compile_layout_deck(
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan

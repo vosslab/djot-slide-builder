@@ -1,12 +1,12 @@
 # Djot slide syntax
 
-Djot is the one authored source for a lecture. Each visible source slide compiles to one editable
-native ODP slide. Use `deck_tools.py lint --require-native --native-executable <tool> <source>`
+Djot is the one authored source for a lecture. Each source slide compiles to one editable native
+ODP slide; hidden source pages remain native hidden ODP pages. Use `deck_tools.py lint --require-native --native-executable <tool> <source>`
 for the separate strict-native-Djot validation lane; compilation then applies the repository's
 presentation parser and reports source-located errors for constructs without a native destination.
 
 The catalog uses the twelve built-in Impress layouts, with author-facing names where that makes a
-teaching choice clearer, plus three explicit project layouts.  LibreOffice documents the built-ins in
+teaching choice clearer, plus four explicit project layouts.  LibreOffice documents the built-ins in
 its [Slide Layout help](https://help.libreoffice.org/latest/en-US/text/simpress/01/05080000.html).
 
 ## Deck color theme
@@ -80,23 +80,25 @@ Omission or `hidden: false` makes the slide visible. Change the value or remove 
 the slide at its existing source position. This setting belongs to one slide and never carries
 forward to the next slide.
 
-Hidden slides and their assets remain in Djot and receive the same structural and asset lint checks.
-Normal builds and capacity inspection skip them; they do not appear in either the generated ODP
-or PDF. An entirely hidden deck can be imported and linted, but a build reports no visible slides.
-ODP import preserves all source slides in order and emits `hidden: true` for hidden pages.
+Hidden slides and their assets remain in Djot, receive the same structural and asset lint checks,
+and compile to native hidden pages in ODP. Capacity inspection includes them. PDF export explicitly
+excludes hidden pages, and LibreOffice omits them from classroom slideshow playback. An entirely
+hidden deck can be imported and linted, but a build reports no visible slides. ODP import preserves
+all source slides in order and emits `hidden: true` for hidden pages.
 
 ## Heading placement
 
 `#` is the level-one slide title in title-bearing layouts.  In `section`, it is instead the centered
 text in that layout's only outline box on the dark transition surface.  `##` is a subtitle on
-`title-slide` and `section`; inside a named content slot, it is that slot's optional local heading.
-Other heading levels have no native slide destination.
+`title-slide` and `section`. The `theend` layout accepts exactly one level-one `THE END` heading.
+Inside a named content slot, `##` is that slot's optional local heading. Other heading levels have
+no native slide destination.
 
 ## Layout catalog
 
-The first twelve rows are LibreOffice-backed catalog layouts. `multiple-choice`, `gallery`, and
-`big-image` are intentional project layouts. "Root" means ordinary content may appear outside a named slot;
-required named slots still appear where listed.
+The first twelve rows are LibreOffice-backed catalog layouts. `multiple-choice`, `gallery`,
+`big-image`, and `theend` are intentional project layouts. "Root" means ordinary content may appear
+outside a named slot; required named slots still appear where listed.
 
 | Djot layout | Impress layout and AutoLayout | Slots | Root | Choose it when |
 | --- | --- | --- | --- | --- |
@@ -105,6 +107,7 @@ required named slots still appear where listed.
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
+| `theend` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | `# THE END` plus an optional root image | You are closing a lecture with the framed native closer. |
 | `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A lighter framed topic transition belongs within a chapter. |
 | `two-panels` | Title, 2 Content, `AUTOLAYOUT_TITLE_2CONTENT` | `left`, `right` | no | Two related ideas, figures, or comparisons belong side by side. |
 | `one-plus-two-panels` | Title, Content over 2 Content, `AUTOLAYOUT_TITLE_CONTENT_2CONTENT` | `left`, `top-right`, `bottom-right` | no | One broad idea pairs with two stacked supporting items. |
@@ -125,20 +128,35 @@ images, or one table become ordinary editable native objects in source order.  T
 not an invented content placeholder, so use `one-panel` when its native outline placeholder is
 the useful semantic surface.
 
+`theend` selects a dedicated closer through its layout name. It requires one exact `# THE END`
+heading. A single component image may follow the heading; the closer keeps its two large editable
+text lines and places the image on the right side of its framed surface.
+
 Bare `http://` and `https://` URLs become editable native hyperlinks automatically. Use a labeled
 Markdown link only when the displayed text should differ from the destination URL.
 
-Use one exact closing heading to select the specialty closer while retaining the `section` layout:
+Use the dedicated `theend` layout for a final closer:
 
 ```djot
-=== layout: section
+=== layout: theend
 
 # THE END
 ```
 
-The closer renders the words as two giant centered editable text lines. A native LibreOffice vector
-star sits inside the D; it is decoration rather than a font character. Every authored character in
-the ODP and derived PDF remains a font-backed glyph. The layout never rasterizes lettering.
+Add one component image after the heading when the closer needs a final teaching figure:
+
+```djot
+=== layout: theend
+
+# THE END
+
+![Designed protein folds](assets/protein-folds.png)
+```
+
+The layout requires exactly that one heading and renders the words as two giant centered editable
+text lines. A native LibreOffice vector star sits inside the D; it is decoration rather than a font
+character. Every authored character in the ODP and derived PDF remains a font-backed glyph. The
+layout never rasterizes lettering.
 
 Use `big-image` for a single focal image and a short editable caption:
 

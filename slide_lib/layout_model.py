@@ -186,12 +186,15 @@ class LayoutSlide:
 	objects: tuple[LayoutObject, ...]
 	notes: tuple[SpeakerNote, ...]
 	surface: slide_lib.layout_primitives.SlideSurface = slide_lib.layout_primitives.SlideSurface()
+	hidden: bool = False
 
 	def __post_init__(self) -> None:
 		for name in ("slots", "objects", "notes"):
 			slide_lib.layout_primitives.canonicalize_tuple(self, name)
 		if not isinstance(self.surface, slide_lib.layout_primitives.SlideSurface):
 			raise ValueError("layout slide surface must be a SlideSurface")
+		if not isinstance(self.hidden, bool):
+			raise ValueError("layout slide hidden state must be a boolean")
 		slide_lib.layout_primitives.validate_unique((slot.slot_id for slot in self.slots), "slide slot identities")
 		slide_lib.layout_primitives.validate_unique((item.object_id for item in self.objects), "slide object identities")
 		reveal_targets = tuple(target for item in self.objects for target in item.reveal_targets)

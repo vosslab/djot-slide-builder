@@ -1,0 +1,470 @@
+Set #3
+Talking Points
+Sept 22, 2022
+
+Talking Points Guide
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Tips for a Good Presentation
+Remember you telling a story. Should have a beginning, a middle, and an end. 
+Respect the time allotted for the sake of your audience. 
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
+Explain at the level of the class. 
+Have a technical term, define it. If you don't quite understand it, no one will. 
+Because we are all novices, you will need to have a long intro. 
+But try to engage the audience. 
+Do not read from your slides; use notecards, if you must.
+No complete sentences on slides, use short phrases, break the content up. 
+Try to have a picture on every slide, helps maintain attention of the audience 
+If you have a movie, talk during the movie, do not use narrator
+Be prepared for questions. 
+Show ENTHUSIASM when you talk and make it exciting! 
+
+Best Advice
+Be Enthusiastic
+Use More Pictures and Diagrams on your Slides
+be a visual storyteller
+Use Less Words on your Slides
+put the words in your notes, not the slide
+Keep Things to the Point
+Be creative with your slide with look and content; go beyond the book
+
+Chapter 9
+
+#1 - Laura  
+
+1. What is proteomics? What is metabolomics? What are they used for?
+
+
+-i
+
+
+-Proteomics is the large scale study of proteins
+-Metabolomics is the analysis of metabolites in a biological specimen
+-Important in disease diagnostics and in characterization and screening of organisms
+
+#1- Meaghan   
+What is proteomics? 
+The large-scale study of proteins 
+Various separation techniques 
+PAGE, SDS-PAGE, gel electrophoresis, HPLC 
+Uses 
+When and where proteins are expressed 
+Rate of protein production 
+What is metabolomics? 
+The large-scale study of small molecules 
+Major Approaches 
+Targeted analysis, metabolite profiling, metabolic fingerprinting 
+Various Separation Techniques 
+NMR, GC-MS, HPLC-MS 
+Uses 
+To view the relationship between physiology and external events/conditions 
+To measure responses 
+
+
+#2 Kimberly
+Protein gel: Polyacrylamide gel (PAGE)
+Smaller pores than agarose gel
+Samples are boiled with SDS
+Stained with Coomassie Blue or a silver stain
+
+#2-Meaghan  
+What are some different types of protein gels? 
+Tris Acetate- SDS-PAGE, Native PAGE- high MW 
+Tricine- SDS-PAGE- low MW
+IEF- IEF- isoelectric point  
+Zymogram- Protease Detection- proteolytic activity
+What is western blotting? 
+Used to detect a specific protein within a sample of blood or tissue 
+5 mains steps 
+Transfer, blocking, primary antibody incubation, secondary antibody incubation, protein detection, western blotting analysis 
+Compare them to nucleic acid gels from last week.
+Nucleic Acid Gels- separation of charged macromolecules 
+SDS-PAGE- separation by MW, all primarily negatively charged molecules 
+
+#3 Rawan 
+3. What is column chromatography? What is size-exclusion and ion-exchange chromatography? 
+
+
+#3 Chromatography - Ozzie 
+Liquid chromatography
+Mobile and stationary phase
+Size exclusion and ion exchange chromatography
+Common tags
+His or GST
+Used in liquid chromatography
+Separated liquid molecules from mobile phase by polar affinity to stationary phase (small non polar  compounds elute first)
+Mobile is solvents and sample mixture
+Solvents usually water, methanol, organic solvents.
+Stationary phase is polar solids, silica gel and alumina
+(polar stationary phase) with uniform shape and size 
+Size exclusion -seperates via size and molecular weight
+Ion exchange chromatography is used to seperate biological molecules (proteins, peptides, aa)
+A commonly used metaphor to illustrate affinity binding is the lock and key analogy. 
+A unique structure present on the surface of a protein is the key that will only bind to the corresponding lock, a specific ligand on a chromatographic support.
+In the first step, a recombinant protein mixture is passed over a chromatography support containing a ligand that selectively binds proteins that contain an affinity-tag sequence (typically His (histadine)  or GST (glutathione S- transferaseamino acid protein)). Contaminants are washed away, and the bound protein is then eluted in pure form.
+His binds with good selectivity to Ni2+ or other transition metals immobilized to the ligand; the tagged protein can be selectively eluted with imidazole
+proteins tagged with GST bind to glutathione as the ligand, and are eluted with solutions of glutathione
+
+
+#4 -Dlen
+4. How do we identify unknown proteins? How does a Mass Spectrometry work? What are the three main components of a mass spectrometer? How is protease digestion used in mass spec?
+Identifying unknown Proteins
+Amino acid composition
+Partial sequence data
+Mass Spectrometry for protein identification
+Atomic and molecular composition
+Mass Spectrometer components
+Ion source
+Mass Analyzer
+Detector
+Protease Digestion
+Cleave protein into peptides
+Figure 4. Protease Digestion for Mass Spectrometry
+Figure 3. Steps for Proteomic analysis
+Figure 1. Mass Spectrometry
+Figure 2. Mass Spectrometry 
+Components
+https://www.researchgate.net/figure/The-three-principle-components-of-the-mass-spectrometer-with-examples-of-each_fig1_6142959 
+https://www.researchgate.net/figure/Steps-of-proteomic-analysis-using-mass-spectrometry-after-separation-and-in-gel-digestion_fig4_258667303
+https://www.promega.com/resources/guides/protein-analysis/protease-digestion-for-mass-spec/
+https://www.mks.com/n/mass-spectrometry
+
+
+#4-Tania   
+4. How do we identify unknown proteins? How does a Mass Spectrometry work? What are the three main components of a mass spectrometer? How is protease digestion used in mass spec?
+Mass Spectrometry for Protein Identification
+Mass Spectrometry Basics
+ Protein Prep 
+Reducing agents 
+Protease digestion destroys unwanted characteristics 
+Ion Source 
+MALDI
+ESL
+Mass Analyser 
+Mass to charge ratio (m/z) separation 
+Detector 
+Time of flight 
+Quadrupole ion traps 
+https://sisu.ut.ee/heritage-analysis/52-mass-spectrometry
+4. How do we identify unknown proteins? How does a Mass Spectrometry work? What are the three main components of a mass spectrometer? How is protease digestion used in mass spec?
+
+#5 - Nathi 
+
+Phage display is a technique used to study protein interactions such as protein-protein, protein-peptide, and protein-DNA using bacteriophages. 
+
+#5 iqbal: Explain phage display? How does it work? include its applications, library construction, library screening, binding selection
+
+
+Phage display is a laboratory technique for the study of protein–protein, protein–peptide, and protein–DNA interactions that uses bacteriophages (viruses that infect bacteria) to connect proteins with the genetic information that encodes them.
+                                                                                                                 
+
+
+#5 iqbal: Explain phage display? How does it work? include its applications, library construction, library screening, binding selection
+
+Applications:                                     library construction
+                                                            
+
+Epitope mapping and mimicking
+Identification of new receptors and ligands
+Drug discovery
+Epitope discovery - new vaccines
+Creation of antibody libraries
+Organ targeting
+
+
+#6 ELISA - Kher
+6. How does ELISA work? Sandwich vs. Indirect method. What are some biotechnology products that use ELISA? What protein markers are detected for different diseases/pregnancy?
+Indirect ELISA
+2 binding processes of primary antibody and labeled secondary antibody
+
+Sandwich ELISA
+Antigen protein sandwiched between primary and secondary antibody
+2-5 times more sensitive
+
+#6   Rikita        ELISA
+6. How does ELISA work? Sandwich vs. Indirect method. What are some biotechnology products that use ELISA? What protein markers are detected for different diseases/pregnancy?
+ELISA (which stands for enzyme-linked immunosorbent assay) is a technique to detect the presence of antigens in biological samples. An ELISA, like other types of immunoassays, relies on antibodies to detect a target antigen using highly specific antibody-antigen interactions.
+Sandwich Vs. Indirect: the difference between indirect & sandwich ELISA is that indirect, the microtiter plate is coated with the sample with proteins to be detected whereas the plate is coated with primary antibody in sandwich ELISA. Sandwich ELISA is  2-5 times more sensitive. Both of these method are solid phase enzyme immunoassays. 
+Product of Biotechnology Use ELISA : Covid-19 & RSV vaccine, test of HIV, allergens in the food such as milk, egg, almonds.
+Protein markers for pregnancy: PAPP-A ( pregnancy-associated plasma protein-A) produced by placenta in early pregnancy, AFP ( alpha-fetoprotein) produced by the liver and yolk.
+
+
+
+
+#7 Rapid Tests - Deena
+PCR - Looks for genetic material from the virus. Are more expensive and require more specialized equipment. 
+Rapid Antigen test- Looks for molecules on the surface of the virus. Quicker (15 mins) and run in a lab or Dr’s office. Positive results are accurate, but there is a higher chance of false negatives.
+How it works: 
+Sterile swab is inserted into nose. 
+Swab is placed into a tube. Swab is stirred 5 times. 
+Tube is squeezed to extract the liquid 
+Three drops are added to a specimen well. 
+Test is read after 15 mins.
+PCR - Looks for genetic material from the virus. Are more expensive and require more specialized equipment. 
+Rapid Antigen test- Looks for molecules on the surface of the virus. Quicker (15 mins) and run in a lab or Dr’s office. There is a fine line between speed and accuracy. Positive results are accurate, but there is a higher chance of false negatives.
+
+#7 Brianna 
+Covid-19 Rapid Antigen Testing Vs Other Options
+Hi! I didn’t really mentioned other tests, if you want to talk more about the PCR test? I brought it up to say how its different but nothing more so you could have something to talk about. -Deena 
+7. How do COVID-19 rapid antigen tests work? How accurate are they? Are they more likely to have a false-negative or a false-positive? How do rapid antigen tests compare to other tests?
+
+Chapter 10
+
+#8 Sonia
+8. How do you obtain cDNA for the human genes? How is insulin mass produced? Why did they modify the insulin gene for mass production? What is the process? (Chapter 10 in 2nd edition, Chapter 15 in 1st Edition?)
+mRNA gene of interest is converted into cDNA
+cDNA is cloned → bacterial promoter and bacterial terminator
+Bacterial transcription and translation machinery→ coding sequence 
+cDNA is inserted into plasmid
+Expression  
+Mass Production of insulin:
+Recombinant DNA is a technology scientist developed
+Insert a human gene into the genetic material of a common bacteria 
+
+
+
+
+#8 Hammad
+cDNA for Human genes,
+cDNA can be generated by viruses and retrotransposons for integration of RNA into target genomic DNA.
+RNA will be purified from other cellular components.
+cDNA is then synthesized through in vitro reverse transcription.
+Mass production of Insulin
+
+Modification of  the insulin gene for mass production
+Not constrained by the killing of animals.
+Making large amounts is quick.
+No chance of infection transmission.
+
+
+#9 Shahd
+Surplus production → inclusion bodies (i.e. nonfunctional protein)
+Lower temp of bacterial cultures
+Lower concentration of IPTG
+Cold shock
+Protein misfolding
+Parkinson’s, Huntington’s, Alzheimer's, cystic fibrosi, degenerative & neurodegenerative diseases
+What are the toxic effects of protein overproduction? What can we do to prevent inclusion bodies?
+Parkinsons → tau , alzheimers → amyloid
+
+#9 Audrey
+Amyloidosis is a condition that causes to overproduce proteins in organs (amyloid)
+Recent study on overexpression of HER2 protein in tubo-ovarian high grade serous carcinomas (TO-HGSC)
+provide molecular chaperones that help fold the recombinant protein correctly
+Amyloidosis can affect the heart, kidneys, liver, spleen, nervous system, stomach or intestines. The condition is rare (affecting fewer than 4,000 people in the 
+United States each year), but it can be fatal.
+In summary, HER2 overexpression/amplification was found in 2% of TO-HGSC. explore HER2-targeted therapies in TO-HGSC 
+
+
+#10 Ethan
+10. Explain the differences of protein expression by yeast vs. bacteria. Why would one choose to produce protein with yeast?
+Yeast
+Bacteria
+Eukaryote
+Tech made mostly for S. cerevisiae
+Complicated organization
+Quality DNA repair mechanisms 
+Grows quickly
+Well adaptation
+Less expensive
+Genome is well mapped 
+Prokaryote
+Possible toxicity 
+Simple organization
+Fast DNA repair
+No post translational modification 
+Can not produce multidomain proteins
+Can be hard to extract
+Protein Expression Showdown
+Big takeaway: Yeast is like a simple human cell and is easy to manipulate
+
+#10 Sonia
+10. Explain the differences of protein expression by yeast vs. bacteria. Why would one choose to produce protein with yeast?
+Protein expression in yeast  makes a good model organism because it is single celled eukaryotic and can be purified easily
+Yeast can be grown in a big or small scale 
+Variety of yeast promoters are suitable for driving the expression of cloned genes
+
+
+#11 Audrey
+Fake Burgers Have More Fiber and Less Cholesterol Than Red-Meat Burgers. Beyond and Impossible contain roughly the same amount of saturated fat and more sodium,”
+
+#11 Kimberly
+Soy Leghemoglobin: leghemoglobin is a protein found in soy.
+Carries heme which is what  gives meat its tasty flavor
+
+Impossible Burger vs. Beyond Burger:
+Pea protein is the main ingredient for BB
+BB contains less saturated fat
+Both are high in sodium
+Impossible burger looks more like beef
+
+
+#12 iqbal:  How does protein expression by insect cells work? Why is a virus used rather than normal expression?
+
+Vectors derived from viruses                                                                                     
+Baculoviruses
+Only infect insects
+Most common - MNPV
+Two stages for protein expression
+1. Transfer vector from E. coli carries MNPV DNA
+2. Segment w/ cloned gene recombine into baculovirus
+
+
+
+
+#12 Insect- Ozzie
+Insect Baculovirus
+Why is a virus used rather than normal expression
+12. How does protein expression by insect cells work? Why is a virus used rather than normal expression?
+baculovirus worked as a vector of foreign genes, by infect insect cells or insect larvae to produce exogenous proteins. It is an important part of the eukaryotic expression system.
+Baculovirus is extensively utilized as an excellent tool for production of recombinant protein in insect cells. 
+Baculovirus infects insects in nature and is non-pathogenic to humans. In addition to insect cells, baculovirus is capable of transducing a broad range of animal cells.
+
+Advantages of insect baculovirus expression system
+1). Safe
+2). Large capacity of carrying foreign genes
+3). High expression level of exogenous protein
+4). The expressed eukaryotic gene products can be properly folded and modified, thus have good bioactivity.
+
+
+Insect cells present several comparative advantages to mammalian cells, such as ease of culture, higher tolerance to osmolality and by-product concentration and higher expression levels when infected with a recombinant baculovirus.
+
+
+
+#13 Mammals - Deena
+13. How does protein expression by mammalian cells work? What is the advantages of mammalian cells for protein expression? What is an IRES?
+Mammalian expression is the most preferred system for protein expression, or studying the function of a protein in the most physiologically relevant environment. 
+The BacMam system uses modified insect cell virus to deliver and express genes in mammalian cells with minimum effort and toxicity. 
+	It works by producing proteins in two ways, either transiently or through the use of stable cell lines. 
+
+IRES: Internal Ribosomal entry site ->
+
+
+
+#13 Hammad
+
+
+
+
+Protein expression by mammalian cells
+In mammalian cells, Protein expression can be achieved by viral-mediated transduction by technique  BacMam system.
+Recombinant baculoviruses are used in this method to easily transduce mammalian cells, producing milligram quantities of protein for structural research.
+Advantages of mammalian cells for protein expression
+The primary benefits of mammalian cell expression are that the signals 
+for eukaryotic protein synthesis, processing, and secretion are correctly 
+and effectively recognized by the mammalian cells.
+IRES( internal ribosome entry site,)
+
+
+Chapter 11
+
+#14-Dlen
+How can one use protein engineering to improve protein stability? What amino acids can be changed to to improve stability?
+Alter enzyme coding sequence
+Introduction of disulfide bond
+Change two amino acids
+Changes in protein folding
+Decreasing unfolded conformations
+Replace glycine with other amino acid
+Change N-terminal for improved stability
+https://bioresourcesbioprocessing.springeropen.com/articles/10.1186/s40643-019-0288-y
+http://what-when-how.com/molecular-biology/alpha-helix-310-helix-and-pi-helix-molecular-biology/
+
+
+#14 Protein Stability - Kher
+14. How can one use protein engineering to improve protein stability? What amino acids can be changed to improve stability?
+Changing asparagine/glutamine to other amino acids
+Undergo deamidation at high temperature
+Changes in protein folding and loss of biological activity
+Thermo-stable amino acids 
+triose phosphate isomerase
+
+To enhance recombinant protein stability
+N-terminal amino acid can be altered
+PEST sequences can be removed
+
+#15 - Nathi
+Directed evolution
+Directed evolution is a method to design proteins with desirable functions by introducing random mutations into a particular gene of interest.
+Mutagenesis
+Screening
+Gene amplification 
+
+
+#15 Brianna
+Methods of directed evolution and its comparison to ribozyme selection
+15. What are methods for directed evolution? compare to ribozyme selection from last week.
+
+#16 RIKITA          Shuffle
+16. Explain recombining domains, DNA shuffling, and combinatorial libraries
+Recombining protein domain: domain are distinct functional or structural units in a protein. Usually they are responsible for a particular function or interaction, contributing to the overall role of a protein. Domains may exist in variety of biological contexts.
+DNA shuffling: known as molecular breeding, is an in vitro random recombination method to generate mutant genes for directed evolution & to enable a rapid Increase in DNA library size.
+
+#17 Rawan
+Denovo protein design: What is it?
+Baker Lab using denovo technique; axle-rotor devices, paving the pathway for new nanoscale machinery 
+https://www.bakerlab.org/2022/04/21/de-novo-designed-rotary-proteins/
+17. Explain de novo protein design? Have scientists designed any novel proteins to date? Go to the Baker Lab website. How does the Baker lab (http://bakerlab.org  ) design proteins?
+
+#18- Tania 
+18. What is alpha-fold? How has it been used in protein structure determination? https://en.wikipedia.org/wiki/AlphaFold  
+ Artificial Intelligence system that is highly accurate at predicting the structure of proteins 
+Open access to millions of protein structures 
+Applications 
+Understudied proteins related to COVID-19
+https://assets-global.website-files.com/621e749a546b7592125f38ed/6228b4b73876ce2619d22060_fig%201.gif 
+https://alphafold.ebi.ac.uk/
+https://www.nature.com/scitable/topicpage/protein-structure-14122136/#:~:text=The%20most%20common%20method%20used,atoms%20within%20the%20protein%20crystal.
+https://www.deepmind.com/open-source/computational-predictions-of-protein-structures-associated-with-covid-19 
+
+#18 Shahd
+An AI program that predicts 3D protein structure
+Highly accurate (pinpoint accuracy)
+Application: 
+SARS-CoV-2 (COVID-19)
+18. What is alpha-fold? How has it been used in protein structure determination? https://en.wikipedia.org/wiki/AlphaFold  
+
+
+#19 Ethan
+19. Explain the role of non-natural amino acids? Are there any practical applications of non-natural amino acids? If we expand tRNA to recognize a codon of 4 bases, how does this change the genetic code?
+Can increase affinity and selective stability 
+Can help stabilize secondary structures 
+Used in protein production production
+It would cause a whole shift in dna reading causing our DNA to be useless
+If we were born this way our Chromosomes would be much larger to accommodate the extra nucleotide for every single codon
+
+#19 - Laura
+19. Explain the role of non-natural amino acids? Are there any practical applications of non-natural amino acids? If we expand tRNA to recognize a codon of 4 bases, how does this change the genetic code?
+-Non-natural AA are used in manipulation of a range of protein properties
+
+-Used for therapeutic approaches, controlling protein function, signal transduction, spectroscopic techniques
+
+-Change structure and function of a protein
+
+The End

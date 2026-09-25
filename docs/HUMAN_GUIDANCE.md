@@ -30,12 +30,30 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   instructor remembers to play it during the Native CRISPR sequence.
 - Keep Djot sources ASCII-only. Use the supported escaped or entity form when a Unicode glyph is
   needed in rendered output.
+- Keep optional and previously hidden slides in Djot and emit them into ODP with native hidden
+  status, so they remain editable without appearing in normal playback.
 - Autodetect bare HTTP(S) URLs in Djot as native hyperlinks; an explicit Markdown link is only
   needed when the displayed label should differ from the URL.
 - Give each Lecture 03C talking point a section page, the canonical student-question page, and one
   to three short answer pages. Keep the talking points organized by chapter, and use the historical
   `lect03c*` sources to make the deck classroom ready.
 - Use the same proper Biotechnology Lecture 03 title-slide structure for 03A, 03B, and 03C.
+- Organize the Biotechnology folders like Genetics: keep each lecture's Djot and assets under
+  `LECT##/djot/`, and put its original source files under `LECT##/old/`.
+- Preserve all slides from the individual-project archive in its ODP; include previously hidden
+  pages as editable native hidden slides.
+- For Biotechnology Set #3 on proteins, combine the useful knowledge in all of the historical decks
+  and the current incomplete student presentations into one current Djot deck.
+- Use the complete 146-slide instructor deck as the 04C content base, including its six hidden quiz
+  answers, and expand it with the full 30-topic protein synthesis. Convert on-click quizzes and
+  concept reveals into sequential question-and-answer slides, with each answer immediately following
+  its question; keep the six source answer slides hidden in the editable ODP. There is no fixed
+  slide-count target or ceiling.
+- Put at least one relevant image on every 04C slide, including hidden answers and the closer. Try
+  for several images where they support the topic and fit clearly; use reviewed student figures
+  alongside the instructor visuals.
+- Treat 04C as a study resource as well as a projected deck. Keep text concise and easy to scan, but
+  retain enough explanation for self-study; use full sentences when they make the idea clearer.
 - Manually validate every Biotechnology Lecture 03 slide with an LLM before calling the deck ready.
 - Use the published Fall 2026 Biotechnology schedule as the authority for current-year Lecture 03
   dates and milestones.
@@ -66,13 +84,18 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   course links, platforms, and the current exam and assignment schedule.
 - Use last year's matching lecture for recurring weekly material: topics, agenda, readings,
   homework reminders, activities, review questions, and which upcoming deadlines to highlight.
+- Use the numbered Veridian Dynamics movie filenames as the source of truth when incrementing the
+  announcement video number and episode title.
+- Keep the weekly talking marks as a big-image announcement slide, and leave its spreadsheet out
+  so I can paste it into the ODP.
 - Update details that depend on both year and week: lecture number, presentation date, due dates,
   exam countdowns, and phrases such as "next week." Last year's lecture supplies what to remind
   students about; this year's schedule supplies when it happens.
 - Include hidden source slides in Djot. Add slide-language metadata like `hidden: true` so they
   remain available for editing rather than being discarded during conversion.
-- This is a requirement 1 slide in original source is 1 slide in djot and 1 slide in output, no taking one
-  slide and making it three to get all of the content in.
+- For direct slide-by-slide migrations, keep one source slide as one Djot slide and one output slide.
+  This does not limit synthesized topic decks; follow the requested per-topic coverage and expand
+  source content when needed.
 - I want better formatting match to the original slides (not byte nor exact) but like title and section
   layouts should be centered; the outline layouts do appear better
 - images must always maintain their original aspect; never stretch images, it always looks wrong.
@@ -83,8 +106,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   clock instead of the presenter.
 - Compile canonical Djot through repository-owned Python into a shared format-neutral layout plan.
   Build native editable ODP directly and make PDF from that ODP through LibreOffice.
-- Keep LibreOffice closed, preflight that desktop state once, then convert each generated ODP in
-  source order with direct `soffice --headless --norestore --convert-to --outdir` commands.
+- Allow LibreOffice's desktop GUI and headless conversions to run concurrently. Convert each
+  generated ODP in source order with direct `soffice --headless --norestore --convert-to --outdir`
+  commands.
   Use the two-second settling interval from `~/nsh/junk-drawer/makePDFSlides.sh` between files.
 - Presentation PDFs use `pdf:impress_pdf_Export`; the command verifies its expected PDF before
   continuing. Do not add profiles, GUI/AppleScript control, process groups, or timeout cleanup.
@@ -167,8 +191,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   `Chapter <#>`, `Dr. Neil Voss`, and the lecture date. Put each item on its own line.
 - Give title slides restrained flair around that consistent metadata. Use a dark solid transition
   surface and a rounded frame for section dividers, with the text centered on the whole page.
-- Render the final `THE END` as two giant centered lines and place a native LibreOffice vector star
-  inside the D.
+- Author final closers with the explicit `theend` layout and one `# THE END` heading. Render the
+  words as two giant centered lines and place a native LibreOffice vector star inside the D.
 - Keep every font character as a real glyph in the final product. Never rasterize type; use native
   vector shapes for decorations such as the star.
 - Use the existing `multiple-choice` layout for question-and-answer slides. Reveal the answer in a

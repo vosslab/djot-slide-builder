@@ -1,3 +1,81 @@
+## 2026-09-25
+
+### Fixes and Maintenance
+
+- Corrected the 2026-09-24 heading so commit_changelog.py recognizes its entries.
+
+## 2026-09-24
+
+### Additions and New Features
+
+- Expanded Biotechnology 04C from the full instructor deck plus the complete 30-topic synthesis to
+  386 slides. Rebuilt both animated quiz sets as visible question-and-answer flipbooks, retained all
+  six hidden source answer slides and the instructor's original closer, and added at least one local
+  image to every slide. The expanded notes retain useful explanation while dense pages use shorter
+  phrases.
+- Extended the dedicated `theend` layout to accept one optional component image while preserving
+  its framed, editable two-line closer.
+- Added the explicit `theend` layout for final slides, with source validation for one exact
+  `# THE END` heading; migrated canonical deck closers to the named layout.
+- Preserved `hidden: true` slides as native hidden ODP pages; the PDF/classroom view continues to
+  omit them, while capacity inspection includes their authored content.
+- Stored hidden state in native ODF drawing-page styles and explicitly disabled hidden-slide PDF
+  export so LibreOffice keeps archived pages out of classroom PDFs.
+- Restored all 42 archived Lecture 04B project slides after the eight current Fall 2026 slides as
+  hidden, editable pages (50 physical pages total), removing a legacy screenshot that exposed a
+  student filename.
+- Organized Biotechnology by lecture: Djot sources and local assets now live under each
+  `biotech/LECT##/djot/`, while original decks, PDFs, and course source files live under the
+  corresponding `old/` folder.
+- Added Lecture 04A announcements, a current-schedule Lecture 04B project overview, and a synthesized
+  Lecture 04C protein deck combining the 2025 instructor ODP with 2022-2026 student-presentation
+  sources.
+- Added `biotech/LECT04/djot/LECT04_REVIEW.md` with migration counts and the visual-review boundary.
+
+### Fixes and Maintenance
+
+- Corrected Lecture 04A's copied Lecture 03 heading, date, agenda, set number, and weekly talking
+  marks reference for Sept 24, 2026.
+- Updated the file-structure and usage guides with the lecture-organized Biotechnology corpus and
+  its lecture-folder build command.
+- Normalized the moved Lecture 03B Djot typography and example icons to ASCII, following the
+  presentation-source authoring guidance.
+- Removed the imported Lecture 04A gradebook screenshot containing student IDs and scores from the
+  canonical Djot deck and its local assets.
+- Replaced Lecture 04B's stale 2024-25 project dates with the published Fall 2026 project sequence.
+- Expanded Lecture 04C to 220 slides covering all 30 Fall 2026 protein topics, with at least seven
+  slides per topic and expanded answer coverage; protein gels has an additional staining page.
+- Added 16 reviewed figures extracted from the Fall 2026 student PDF, recorded their page provenance,
+  and adapted the professor ODP's proteomics/metabolomics flipbook as two sequential
+  question-and-answer pairs.
+- Kept presenter names and identities out of the canonical deck; the incomplete student
+  presentations remain archived as source material.
+- Corrected the carried-over figure descriptions and replaced an unrelated image with a Western
+  blot example; removed a low-quality IRES figure.
+- Replaced two misassigned ELISA figures on the instructor's central-dogma slide with the relevant
+  omics-flow diagram, and replaced unreadable entity codes with DNA/RNA/protein process labels.
+- Replaced the Lecture 04C proteomics/metabolomics click-reveal list with two question-and-answer
+  flipbook pairs and rebuilt the 220-page editable ODP.
+- Converted the instructor's two seven-question click-reveal sequences into adjacent question and
+  answer slides, and the antibody-recognition reveal into an adjacent prompt and explanation. The six
+  original hidden answer pages remain hidden in ODP, while the visible sequences appear in the PDF.
+- Advanced the Lecture 04A Veridian Dynamics announcement to Video #4, "Diversity Good for Us,"
+  using the numbered movie filenames as the source of truth and keeping the original image unchanged.
+- Removed the outdated LibreOffice closed-desktop preflight. Headless conversions keep the tested
+  sequential command shape and can run while the desktop application is open.
+- Restored the original full-size talking marks page and its explanatory points, plus the separate
+  Grading and Assessment divider. The prior spreadsheet screenshot stays out for instructor paste-in.
+- Restored Lecture 04A's specialty `THE END` closer with two giant centered editable lines and its
+  native vector star.
+- Regenerated all three Lecture 04 ODP/PDF pairs through direct, source-ordered headless LibreOffice
+  conversion. The 04B PDF contains its eight Fall 2026 pages, while the editable ODP retains the 42
+  archived pages with native hidden status.
+- Strict native Djot validation passed all three sources and 454 physical slides (406 visible, 48
+  hidden). Capacity inspection reports no concerns for 04A or 04C; the seven below-floor paragraphs
+  belong to hidden archived 04B pages. Representative visible pages were rendered and visually
+  reviewed after the final edits; the six hidden 04C quiz answers were confirmed in the editable ODP
+  and omitted from the PDF.
+
 ## 2026-09-21
 
 ### Additions and New Features
