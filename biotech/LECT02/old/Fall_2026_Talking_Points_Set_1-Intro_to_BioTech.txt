@@ -1,0 +1,568 @@
+Set #1: Intro to BioTech
+Talking Points
+Sept 10, 2026
+
+DO NOT CHANGE
+THE THEME!!!
+We are using the “Tropic” theme and that is it.
+
+Talking Points Guide
+
+Slides will be
+locked immediately
+prior to class
+~5:45pm
+
+Overall Setup of Talking Points Assignment
+
+
+Talking Points Assigned
+Talking points were assigned during last week’s class.
+Each student was assigned to one or two talking points based on class size.
+Collaboration with Classmates Expectation
+Each talking point will have at least two students talking about it.
+If you share a talking point with another student: Listen to what they say and do not repeat or duplicate what they said.
+Engagement and Points
+Keep It Concise: 90 seconds per talking point is short;
+Stay on topic and be impactful.
+Earn Extra Discussion Marks:
+Contributing gets you more discussion points.
+If you have something interesting to say about someone else’s talking point, you can score some extra points.
+Asking questions of other students gets you discussion marks as well.
+Use the chat for the question asking and answering
+
+Formatting Your Talking Point Slide Before Class
+Edit and update your slide
+Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
+Add several pictures and some text.
+Movies and animated gifs are discouraged but not forbidden.
+No external audio is allowed. Movies will be muted.
+Limit Text: No complete sentences on slides; use short phrases and keywords only.
+Content Preparation
+Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
+Try to be unique and creative with your slide’s look and content.
+Don’t just copy the book; use the internet for research
+Provide your own perspective.
+Minimize jargon to make it accessible to all classmates.
+
+Presenting Your Talking Point Slide During Class
+Structure
+Explain at the level of the class. If you have a technical term, define it. If you do not quite understand it, no one will.
+You do not have enough time to cover the entire topic in 60 seconds
+so choose the most interesting part or provide outside perspective
+but you also need to know the entire topic if I ask questions
+Presentation Delivery
+Show ENTHUSIASM and make it exciting!
+You will unmute to present your talking point, Video is not required
+Keep Things to the Point
+Do not read directly from slides
+put the words you plan to speak in your notes, not the slide.
+Put Into Your Own Words
+It is okay if you read from notes, but put notes in your own words.
+No direct quoting of an article, wikipedia or the textbook
+Engagement Tips
+Be prepared for questions.
+Respect the time limit: If you go over, the audience stops focusing on the talk and starts watching the clock.
+
+
+Student Selection
+
+x
+Primary Presenters
+If you missed class, you must email me to select an available topic from the Topic Selection Google Sheet (linked on Blackboard) before you can present.
+
+x
+Helper Question Askers
+
+Chapter 1
+
+#1 Ancient Biotechnology  : Mehnoor ayesha 
+What were the earliest discoveries in biotechnology?
+Can you identify the civilizations that first harnessed biotechnology?
+How did early biotech contribute to the modern world?
+What are the key historical milestones in biotechnology?
+How did biotechnology evolve from being an art to a science?
+
+#1 Ancient Biotechnology  - Mehnoor ayesha 
+
+
+
+#2 Bacteriocins 
+Use the textbook, it has a section on this.
+What are bacteriocins? How are bacteriocins produced?
+How do bacteria use bacteriocins?
+What are the mechanisms of action for different bacteriocins? 
+How can bacteriocins be applied in medicine? How do bacteriocins relate to antibiotic resistance?
+Are there any commercial products that utilize bacteriocins?
+(Shivani Patel)
+
+#2 Bacteriocins 
+Bacteriocins are natural protein based toxins or peptides made by bacteria to kill or stop the growth of other usually related bacterial strains”
+How are bacteriocins produced
+Bacteriocins are produced inside bacterial cells through a highly coordinated, ribosomal biosynthetic pathway. Unlike traditional antibiotics, which are assembled piece-by-piece via complex enzymes, bacteriocins are coded directly by the bacteria's DNA and built using the cell's standard protein-making machinery.
+Production process breaks down in to phase 
+Environmental Activation 
+Transcription and Ribosomal Translation
+Post-Translational Modification
+Cleavage and Secretion
+Concurrent Self-Immunity
+One slide per student
+
+How do bacteria use bacteriocins
+Bacteria use bacteriocins as biological weapons to eliminate competing microbes and secure vital resources within their environment. Think of them as heat-seeking missiles designed to clear out rival strains while keeping the producer's immediate community safe.
+
+
+what are the mechanisms of action for different bacteriocins
+
+Bacteriocins are classified into different categories based on their structure and Chemical Modifications . While their end goal is always to neutralize competing bacteria, different classes employ distinct 
+
+Two primary mechanisms are 1.Membrane permeabilization
+                                                          2.Non-Membrane targeting 
+
+
+One slide per student
+
+How Can Bacteriocins Be applied in medicine?
+In medicine, bacteriocins are viewed as the next generation of precision therapeutics, offering a highly targeted way to fight diseases without the collateral damage caused by traditional pharmaceuticals.
+
+Bacteriocins are being applied and studied across several major medical areas
+
+1. Combating Antibiotic-Resistant "Superbugs "
+
+2. Advanced Wound Healing and Skincare
+
+3. Cancer Therapy (Oncolytic Peptides)
+
+4. Live Biotherapeutic Products (Smart Probiotics )
+One slide per student
+
+
+
+How do bacteriocins relate to antibiotic resistance
+they are one of medicine's most promising solutions to the superbug crisis, yet they are still biological entities, meaning bacteria can occasionally adapt to them
+
+1. How Bacteriocins Evade Existing Antibiotic Resistance
+2. The Danger of Cross-Resistance
+3. Synergistic "Combo Therapies" to Thwart Resistance
+
+Are there any commercial productss that utilize bacteriocins
+Yes, 1. Commercial Food Preservation (Biopreservatives)
+               Nisaplin® (Nisin)
+               ALTA® 2431 / Microgard™ (Pediocin):
+               Micocin
+         2. Cosmetic and Personal Care Products
+              ProBiocin V™:
+              Leucidal® Liquid:
+         3. Active Food Packaging
+One slide per student
+
+
+Model Organisms
+
+#3 Overview of Model Organisms 
+Why are model organisms crucial for biotechnology research?
+How are model organisms chosen? What makes a good model organism?
+What are the advantages and limitations of using model organisms?
+How do model organisms contribute to our understanding of biotechnology?
+How have model organisms been instrumental in the development of biotechnologies?
+What is the concept of "phenotypic plasticity" in model organisms? What is the concept of "orthologs" in the study of model organisms?
+
+#3 Overview of Model Organisms (Raad Hejazin) 
+Core Purpose: Decode complex biological pathways and perform controlled, reproducible research.
+Selection Criteria: Simple genetic structures, rapid life cycles, small size, and affordability.
+Advantages: High tractability, ethical viability, and accelerated discovery cycles.
+Limitations: Evolutionary divergence and translation gaps in human disease and therapeutic modeling.
+Industrial Applications: Living factories for mass-producing medicines, biofuels, and materials.
+Key Concepts: Phenotypic plasticity and conserved orthologs.
+
+
+#4 Model Organism: Lambda phage
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#4 Model Organism: Lambda phage
+
+#5 Model Organism: Tobacco mosaic virus  (Yashasvi Kambhampati)
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+
+#6 Model Organism: Escherichia coli (Bella Georgiev) 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+
+#7 Model Organism: Photosynthetic Cyanobacteria
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#7 Model Organism: Photosynthetic Cyanobacteria
+
+#8 Model Organism: Saccharomyces cerevisiae (Julia)
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+Saccharomyces cerevisiae 
+COMMON NAME:
+ BAKER’S YEAST!
+SUGARY FRUITS🍓, GRAINS, bREAD DOUGH🥐, BEER AND WINE🍺, SOIL AND PLANTS
+
+
+EASY TO MANIPULATE? ✅
+SIMILAR gENOME TO a HUMAN GENOME? ✅
+RAPID CELL DIVISION RATE = GROW LARGE POPULATIONS = 
+MORE CELLS FOR RESEARCH!
+THE BIG QUESTION
+One of the oldest (4000 bce) biotechs
+ through FERMENTATION (ETHANOL + CO2)
+FOOD PRODUCTION (BREAD!)
+GREEN CHEMISTRY!
+
+BIOTECHNOLOGY?
+GENETIC RESEARCH + DISEASE MODELING
+RENEWABLE ETHANOL (BIOFUEL PRODUCTION)
+MEDICINES/VACCINES (HEPATITIS B VACCINE ANTIGEN + insulin)
+
+
+#9 Model Organism: Tetrahymena thermophila-Kingston
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#9 Model Organism: Tetrahymena thermophila
+
+#10 Model Organism: Caenorhabditis elegans - Khadeeja
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#10 Model Organism: Caenorhabditis elegans
+C. elegans (roundworm)
+~ 1 mm, found in decaying vegetation
+Egg → adult in 3 days
+Lifespan 2-3 weeks
+BIOTECH IMPACT
+
+Sydney Brenner (60’s)
+Introduced as model
+organism
+
+1998
+1st multicellular animal with complete genome sequenced
+~1 mm
+Transparent body
+Apoptosis genes 
+(cancer)
+ALS, Alzheimer’s, 
+Parkinson’s models
+RNAi discovery 
+(Nobel Prize)
+LAB CULTURE
+Agar plates (NGM)
+Fed E.coli OP50
+~ 20 C
+Transfer to fresh plates
+Strains can be frozen (long-term storage)
+GENETIC TOOLS
+Easy to manipulate
+RNAi and CRISPR
+Economic Benefits:
+Low cost
+Fast results
+Space efficient
+
+Useful for:
+Drug research
+Disease modeling
+Toxicology testing
+Genetic research
+Ethical considerations:
+Fewer concerns than vertebrate models
+Helps reduce mammalian animal testing
+Human relevance:
+Many genes/pathways conserved
+Related for:
+Neurological diseases
+Aging
+Apoptosis
+Development
+
+#11 Model Organism: Arabidopsis thaliana 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#11 Model Organism: Arabidopsis thaliana 
+
+#12 Model Organism: Panicum virgatum
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#12 Model Organism: Panicum virgatum
+
+#13 Model Organism: Chlamydomonas reinhardtii
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#13 Model Organism: Chlamydomonas reinhardtii
+
+#14 Model Organism: Drosophila melanogaster 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#14 Model Organism: Drosophila melanogaster 
+
+#15 Model Organism: Danio rerio 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#15 Model Organism: Danio rerio 
+
+#16 Model Organism: Ambystoma mexicanum
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#16 Model Organism: Ambystoma mexicanum
+
+#17 Model Organism: Xenopus laevis 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#17 Model Organism: Xenopus laevis 
+
+#18 Model Organism: Mus musculus 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#18 Model Organism: Mus musculus 
+
+#19 Model Organism: Rattus norvegicus
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#19 Model Organism: Rattus norvegicus
+
+#20 Model Organism: Oryctolagus cuniculus domesticus 
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#20 Model Organism: Oryctolagus cuniculus domesticus 
+
+#21 Model Organism: Rhesus macaque
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#21 Model Organism: Rhesus macaque
+
+More Chapter 1
+
+#22 Heterochromia iridum (Janice Tagoe)
+What is heterochromia iridum due to genetic mosaicism?
+What is the underlying genetic mosaicism mechanism that causes heterochromia iridum? 
+What are the genetic and environmental factors that can cause heterochromia?
+Is heterochromia iridum observed in species other than humans?
+What are some other genetic mosaicism phenotypes in humans similar to heterochromia iridum?
+
+Hypomelanosis of Ito
+Poliosis
+Inherited
+Ocular Damage (Ocular Siderosis) 
+Melanoma
+Heterochromia Iridum
+Heterochromia in other species
+2 key genes
+Autosomal dominant gene
+
+
+#23 Bacteriophage. (Fiza Fatima)
+How are bacteriophages and viruses used in biotechnology? 
+Are there bacteriophages that can target antibiotic-resistant bacteria?
+How have phage therapies advanced over the years? 
+What are the limitations of using bacteriophage to treat infections?
+What are some challenges in scaling up phage therapies?
+
+
+#24 Animal Cell Culture.
+Discuss animal cell culture. 
+Name some model cell lines from humans, insects, and other animals. What are HeLa cells? 
+How are they used? 
+What are the risks of contamination in animal cell culture?
+What are the pros and cons of using animal cell culture?
+What is the role of stem cells in animal cell culture?
+
+#24 Animal Cell Culture
+
+#25 Subviral Infectious Agents
+How do gene creatures impact the evolutionary trajectory of their host organisms?
+Besides satellite viruses and plasmids, are there other types of genetic entities that qualify as gene creatures?
+How might gene creatures be harnessed for biotechnological applications?
+Transposons are often called "jumping genes." What are the evolutionary advantages and disadvantages of having these transposons within a genome?
+What are Polintons, and how do they differ from other types of mobile genetic elements?
+What are virophages such as Sputnik and Zamilon, and could they be engineered to combat human viral infections?
+
+#25 Subviral Infectious Agents
+
+Chapter 2
+
+#26 Prokaryotic transcription
+Discuss the role of sigma factors and operons in prokaryotic gene expression.
+How is prokaryotic gene expression impacted by environmental factors?
+How have bacteria like E. coli become central to biotechnological applications?
+What role do bacterial plasmids play in genetic engineering?
+
+
+#26 Prokaryotic transcription
+
+#27 Eukaryotic transcription
+What makes eukaryotic cells more complicated to work with in biotechnology compared to prokaryotic cells?
+How does transcription regulation in eukaryotes differ from that in prokaryotes? What role do transcription factors play in eukaryotic cells?
+What are the key steps in eukaryotic mRNA processing, and how do they differ from prokaryotes? What is the process of alternative splicing?
+How does epigenetic modification regulate gene expression in eukaryotic cells?
+
+#27 Eukaryotic transcription
+
+#28 Protein Translation
+Discuss protein translation, including the steps involved and the roles of various translation factors. 
+How does protein synthesis in eukaryotes differ from that in prokaryotes, and what are the implications for biotech?
+How does post-translational modification occur?
+What are some methods for studying translation in real-time?
+
+#28 Protein Translation
+
+#29 Symbiotic theory
+Discuss the symbiotic theory for chloroplasts and mitochondria. 
+Explain differences to the central dogma in these symbiotic organelles. 
+What is the evidence supporting the symbiotic theory? What are some arguments against the symbiotic theory?
+How have mitochondria and chloroplasts been utilized in biotechnological applications?
+
+#29 Symbiotic theory
+
+The End
+
+Best Slide Award
+GREAT
+SLIDE
+GREAT
+SLIDE
+GREAT
+SLIDE
+
+Best Slide Award
+Most Informative
+Award
+Best Visuals
+Award
+Data Presentation Mastery
+Clear Message Award
+Slide Simplicity Award
+Best Layout Design
+Most Engaging Slide
+Most Concise
+Award
+Best Use of Graphics Award

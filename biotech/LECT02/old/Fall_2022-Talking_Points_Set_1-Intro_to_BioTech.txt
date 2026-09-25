@@ -1,0 +1,573 @@
+Set #1
+Talking Points
+Sept 8, 2022
+
+Assigned Talking Points
+Talking Point #1: ancient biotech -- Kimberly, Brianna, Rawan
+Talking Point #2: bacteriocins -- Laura, Rikita, Eunice
+Talking Point #3: e. coli -- Rawan, Osbaldo, Eunice
+Talking Point #4: yeast -- Dlen, Sonia, Laura
+Talking Point #5: c. elegans -- Sonia, Tania, 
+Talking Point #6: drosophila -- Kher, Nathi, 
+Talking Point #7: arabidopsis -- Kher, , 
+Talking Point #8: zebrafish -- Hammad, Christine, Audrey
+Talking Point #9: mice -- Rikita, Meaghan, 
+Talking Point #10: frogs -- Nathi, Audrey, 
+Talking Point #11: heterochromia -- Ethan, Dlen, 
+Talking Point #12: viruses -- Brianna, Ethan, 
+Talking Point #13: cell culture -- Tania, Kimberly, 
+Talking Point #14: transcription -- Deena, Hammad, Shahd
+Talking Point #15: translation -- Osbaldo, Christine, 
+Talking Point #16: symbiotic theory -- Meaghan, Deena, Shahd
+
+Talking Points Guide
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Chapter 1
+
+#1 Kimberly  
+1. What are the first biotechnology discoveries? How did early biotech create the modern world?
+Selective breeding in plants
+Fermentation
+2. How did early biotech create the modern world?
+Allows us to have good food!
+Allowed us to have good food!
+
+#1 Brianna  
+The creation of the smallpox vaccination 
+
+
+
+The first ever centrifuge was created to be used to separate cream from milk
+The creation of vaccines has lead to a plethora of vaccinations that are given to children and adults
+For example: shingles, flu, MMR, and the new Covid-19 vaccine 
+Centrifuges play a huge role in the modern world today for example it can be used to separate components of blood and it is still used to separate cream from milk 
+1. What are the first biotechnology discoveries? How did early biotech create the modern world?
+
+#1  Rawan
+Paving the path for modern biotechnology
+1. What are the first biotechnology discoveries? How did early biotech create the modern world?
+
+#2 Laura
+
+ 
+2. What are Bacteriocins? How do bacteria use them? How can we use them in medicine?
+
+-Bacteriocins are produced by certain bacteria in order to kill other closely related strains of the same bacterial species 
+-Potential alternatives to traditional antibiotics. 
+https://www.sciencedirect.com/topics/immunology-and-microbiology/colicin-factor
+
+#2 Rikita 
+2. What are Bacteriocins? How do bacteria use them? How can we use them in medicine?
+~Bacteriocins are peptidic toxins produced by bacteria to inhibit the growth of similar bacteria strain. 
+~The purpose of using bacteriocins to kill bacteria and it develop antibiotics.
+Image: https://www.nature.com/articles/s41579-021-00569-w
+
+
+#2 Iqbal
+2. What are Bacteriocins? How do bacteria use them? How can we use them in medicine?
+
+Model Organisms
+
+Model Organism: Escherichia coli - Rawan
+Escherichia Coli, also known as E. Coli 
+Location: intestine of organisms or environment
+Size: 2 micrometers long and 0.25-1 micrometer diameter
+Generation time: 15- 20 mins in lab, 12-24hrs in organism
+Frequently used as a model organism; “flexible genome” 
+First used in biotechnology: 1973
+biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+
+Model Organism: Escherichia coli - Osbaldo
+Escherichia Coli
+Gram negative (stains pink)
+facultative anaerobe
+Rod- shaped
+
+
+
+Genetics
+Easy to manipulate
+Has been used to manufacture drugs
+25 times less genes than humans
+Has outer membrane with thin petidoglycan layer
+Does not retain crystal violet stain
+Can use oxygen (aerobic respiration)
+Can survive without (fermentation)
+insulin and antibiotics and some use for cancer drugs. 
+Genome 25 times less Bacteriophage used to “splice” genome to manipulate bacterium.
+
+Model Organism: Escherichia coli - Iqbal
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+Model Organism: Saccharomyces cerevisiae - Dlen
+Common name: yeast
+Location: unicellular fungus
+Size: genome contains about 6000 genes.
+Genetics: genomic DNA of 12068 kilobases arranged in 16 Chromosomes
+Biotech history: 1857 fermentation discovered by Louis Pasteur.
+Fermentation capacity, resilient to unfavorable conditions of low pH as well as osmolarity, and production of alcohol and CO2.  
+Parapouli, M., Vasileiadis, A., Afendra, A. S., & Hatziloukas, E. (2020). Saccharomyces cerevisiaeand its industrial applications. AIMS microbiology, 6(1), 1–31. 
+https://doi.org/10.3934/microbiol.2020001
+https://www.lesaffre.com/trends-mag/introducing-saccharomyces-cerevisiae/
+https://www.researchgate.net/figure/A-Budding-yeast-Saccharomyces-cerevisiae-13-and-B-cycle-of-sexual-and-vegetative_fig1_335548216
+https://www.exploreyeast.com/what-is-yeast/yeast-one-of-humankinds-oldest-ingredients/
+
+
+Model Organism: Saccharomyces cerevisiae - Sonia
+Common name: baker’s yeast
+Location: found in fruits and insects
+Size: 5-10 micrometer in diameter
+Biotech: brewing and bread making
+Unique genetic material and Protein expression.
+
+
+
+Model Organism: Saccharomyces cerevisiae - Laura
+-Easy to cultivate
+-Engineered cell factories
+-Ability to modify genome 
+-Human disease studies in yeast
+https://www.frontiersin.org/articles/10.3389/fpls.2021.719148/full
+https://www.synthego.com/blog/crispr-yeast
+
+Model Organism: Caenorhabditis elegans - Sonia
+Common name: Roundworm
+Location: soil environments more specifically rotting vegetation
+Size: 1 mm in length
+Life Span: 18-20 days
+In 1964 a scientist named Sydney Brenner used C. elegans as a model organism in order to study animal development and behavior.
+C. elegans have similar tissues that are very similar to humans.
+Current research aims to understand the molecular mechanism of neurodegenerative disorders (stroke, ischemia, and aging) and identify targets and drugs for therapeutic interventions. 
+
+Model Organism: Caenorhabditis elegans - Tania
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+Small roundworm (~ 1 mm)
+Soil of rotting vegetation
+3 day generation time, lifespan of about 2 weeks
+Hermaphrodite and male  
+Small genome
+Advantages
+Transparent 
+Life cycle
+Physiological characteristics 
+Nerve, digestive, & reproductive systems
+History
+First used in 1960s, for study of behavior and development
+Now: studies on aging, genetics, metabolism, etc. 
+Importance 
+https://www.wormatlas.org/hermaphrodite/introduction/mainframe.htm
+https://www.leica-microsystems.com/science-lab/work-efficiently-in-developmental-biology-with-stereo-and-confocal-microscopy-c-elegans/
+Zhang, Siwen et al. "Caenorhabditis Elegans As A Useful Model For Studying Aging Mutations". Frontiers In Endocrinology, vol 11, 2020. Frontiers Media SA, https://doi.org/10.3389/fendo.2020.554994. Accessed 6 Sept 2022. https://www.frontiersin.org/articles/10.3389/fendo.2020.554994/full#:~:text=Adult%20C.,C%20(4%E2%80%937).  
+
+Clark, David P, and Nanette J Pazdernik. Biotechnology. 2nd ed., Academic Cell, 2016, p. 16.
+Cite this Page
+Close
+Riddle DL, Blumenthal T, Meyer BJ, et al., editors. C. elegans II. 2nd edition. Cold Spring Harbor (NY): Cold Spring Harbor Laboratory Press; 1997. Section I, The Biological Model. Available from: https://www.ncbi.nlm.nih.gov/books/NBK20086/
+
+
+
+
+
+Model Organism: Drosophila melanogaster - Kher
+D. melanogaster
+Commonly known as the fruit fly
+2-3mm in size (females larger than males)
+Lifespan of ~50 days (egg to death)
+Life cycle of 10-12 days at 25°C
+Benefits as a model organism
+Well-characterized genome 
+4 chromosomes
+15,000 genes
+Rapid reproduction cycle
+Cost-effective 
+Close similarity between fruit fly and human genes 
+75% human disease-causing genes found in fruit flies
+Research used in 
+Genetics (first discovered)
+Neuroscience and neurodevelopment
+Microbial/immunological pathogenesis
+Thomas Hunt Morgan - "discovery of X-linked phenomenon in Drosophila" at Columbia University in 1910
+
+Model Organism: Drosophila melanogaster - Nathi
+Common name: Fruit Fly
+Location: Wide range of habitats, more species in the tropical regions
+Size: Females are about 2.5 mm long; males are slightly smaller
+Generation time: Varies with temperature, the shortest development time (egg to adult) is 7 days 
+Life span: 2-3 months (short life span)
+
+Genetics: 
+Has only 4 pairs of chromosomes compared to 23 in humans. Easy to study the mapped genes. 
+Similarity: 75 % of the genes that cause disease in the human population are homologous in fruit flies.
+Economic benefit: low cost, rapid generation and widely used in scientific research 
+
+Biotech history: 
+Father of Drosophila research - Thomas Hunt Morgan 
+1920s - Muller discovered that x-rays caused mutation in genes, and could actually break chromosomes.
+Used in a diverse range of biological processes: 
+Genetics and inheritance
+Embryonic development
+Learning and behavior
+
+Most studied organism in genetics research
+Thomas Hunt Morgan - define genes and establish that they were found within chromosomes. 
+
+
+https://www.newworldencyclopedia.org/entry/fruit_fly#Drosophilia_melanogaster
+https://animaldiversity.org/accounts/Drosophila_melanogaster/
+https://elifesciences.org/articles/06793
+
+
+Model Organism: Arabidopsis thaliana - Kher
+A. thaliana
+Commonly known as a the mouse-ear cress/thale cress
+Small flowering plant (20-25 cm)
+Short life cycle (6 weeks)
+Discovered by Johannes Thal in the Harz mountains in the 16th century
+
+Benefits as a model organism
+Well-studied (1st plant genome sequenced)
+Relative small diploid genome (recessive mutations)
+Fully sequenced genome
+5 chromosomes
+20,000 genes
+Cost-effective (1 plant yields thousands of seeds)
+
+Research used in 
+Plant development (light sensing, flowering)
+Genetics (genetic mapping and sequencing)
+Epigenetics
+1st mutant in A. thaliana documented in 1873 by Alexander Braun - 
+double flower phenotype
+
+Model Organism: Arabidopsis thaliana - ???
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+Model Organism: Danio rerio - Hammad
+Danio rerio (zebrafish).
+Ø  They are commonly seen  in South Asian countries such as India, Pakistan, Bangladesh, 
+and Bhutan.
+Ø  The size is 2.5cm to 4cm and they usually lives for 3yrs.
+ 
+Biotech History   (Genetic similarity)
+Ø  Zebrafish was first used as a biological model by George Streisinger,
+ in the year 1970 to study the nervous system.
+Ø  They share 70% of genes with humans.
+Zebrafish and humans are vertebrates and they share common features for instance- blood kidney, eyes and muscle which makes it an ideal organism for research in the Biotechnology.
+ 
+ Benefits of Zebrafish
+They are small & Robust
+They are cheaper to maintain than Mice
+
+Model Organism: Danio rerio - Christine 
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+Model Organism: Danio rerio - Audrey
+Requires a clean environment with properly controlled tank
+Fairly easy to handle
+Transparent embryo, and fast reproduction
+~ 2-4 month per generation 
+Up to 200 eggs per week
+Complete genome sequenced
+Can repair heart muscle
+
+Model Organism: Mus musculus - Rikita
+Common Name: House Mouse
+Location: Native central Asia but also spread to Europe.
+Size: Total length of mouse body is 160-200 mm. Tail measures 78-94 mm, foot 17-20 mm. The average adult weight is 15-24 g.
+Generation Time: Apx. 3 weeks. They mature at 6-8 weeks. Lab generation time 9-11 weeks.
+Live Span: less then year when they live in the wild, because of a high level of exposure to bad environments.
+How easy to manipulate: controlling Indoor mouse by using Traps. 
+Genetics: 16 chromosomes is associated with thyroid function in mouse. 
+How similar to human: protein regions of the mouse & human genomes are 85% identical. 
+Potential economic benefit: For clinical research and it is less costly because they grow in lab. 
+Biotech history: 
+        year first used: early 1900s 
+        what is it used for: use for clinical research. 
+        role in diseases: : house mouse Carrie’s many disease and transmission directly and indirectly.
+        why it is important: one of the first genetic model organisms 
+Image: https://www.brodybrotherspestcontrol.com/house-mice-vs-deer-mice-maryland-homes
+
+Model Organism: Mus musculus - Meaghan
+ 
+Common name: House mouse
+Location: Native to India but have spread to the Mediterranean and further to the rest of Europe, live in close proximity to humans 
+Size: L 7.5-10 cm, TL 5-10 cm, W 40-45 g
+Generation time: As early as 5 weeks (females 6 weeks, males 8 weeks)
+Life span: 2-3 years 
+How easy to manipulate: easy maintenance/handling, high rate of reproduction  
+Genetics: 20 chromosomes in haploid genome 
+Similarity to humans: High homology, share same gene functions   
+Potential economic benefit: Research and consumer benefits (cost effective testing), agricultural and structural loss (damage)
+Biotech history: 
+Year first used: 1902 (Lathrop) 
+What is it used for: Biomedical research and comparative medicine studies 
+Role in disease: Can spread disease through mechanical transmission (direct), chemical transmission (indirect)
+Why it is important: One of the most common model organisms, tumor biology 
+
+Model Organism: Xenopus laevis - Nathi
+Common name: African clawed Frog 
+Location: Found across Africa and in some parts of the US and Europe
+Size: males (45.6 to 97.5 mm) tend to be be smaller than females (57 to 147 mm)
+Generation time: 1-2 years (long)
+Lifespan: can live upto 20 years 
+
+Genetics:
+Most-studied species of frogs
+Very similar to humans and a good model organism for human diseases
+Large oocyte and embryo size
+Easy genetic manipulation - Xenopus embryos develop outside the body
+
+Biotech history: 
+The eggs and embryos of X. laevis can be produced in large numbers by using hormone injection.
+In the 1940s, female Xenopus laevis were commonly used in hospitals to detect pregnancy in females. 
+Xenopus laevis was the first vertebrate animal to be cloned. 
+Currently, used in developmental Biology, embryonic induction and biomedical research.
+
+
+
+
+Upon injection of urine from a human female, the frogs start to produce eggs if hCG is detected. 
+
+
+Model Organism: Xenopus laevis - Audrey
+Common name: African Clawed frog
+Found in Nigeria and Sudan to South Africa
+Males → 45.6 to 97.5mm
+Females → 57 to 147mm
+Embryos develop inside the body => extremely easy to manipulate genetically
+Generation time:~1-2 years
+Lifespan:15-16 years
+4 copies of each chromosome   
+Originally used in late 1950s for pregnancy development (cHG)
+High reproductive rate and intermediate host to fluke parasite
+Location: Nigeria and Sudan to South Africa 
+Size: Males =>45.6mm to 97.5mm   Females=>57mm to 147mm
+Generation time: ~1-2 years
+Lifespan:15-16 years
+Xenopus females injected into the dorsal lymph sac with human urine containing human chorionic gonadotrophin respond by laying eggs the next day.
+
+
+#11 Ethan 
+11. How does Heterochromia iridum occur?
+When you have different colored iris in the eyes
+The main way of acquiring this is through genetics.
+ 
+
+
+#11 Dlen
+11. How does Heterochromia iridum occur?
+Heterochromia an uncommon condition where the two eye would be different colors.
+Might be at birth or occur later on.
+Hereditary or Genetic abnormalities, trauma, and inflammation,
+The eye which is effected is either hyperpigmented or hypopigmented.
+concentration of melanin in the iris tissues.
+Melanocytes cells where melanin is made.
+Anything wrong with those cells in one eye leads less pigment made leading to heterochromia.
+https://www.medicinenet.com/heterochromia_iridis/article.htm
+Heterochromia.htm
+https://www.thetech.org/ask-a-geneticist/heterochromia
+https://eyelovecares.org/heterochromia/
+
+
+#11 Shahd 
+11. How does Heterochromia iridum occur?
+Heterochromia is when a person’s irises are 2 different colors. There are 3 types.
+Congenital heterochromia: an infant is born with/develops the condition after birth. Usually, no other health concerns related. 
+Causes of condition in infants include diseases, i.e: 
+Bourneville disease
+Parry-romberg syndrome
+There’s also acquired heterochromia. Causes include:
+Eye injuries
+Diseases (Glaucoma, diabetes, cancer)
+Eye surgery 
+Underlying causes are treated. Otherwise, no treatment is necessary.
+
+
+https://www.aao.org/eye-health/diseases/what-is-heterochromia
+
+#12 Brianna
+How are bacteriophages used in biotech?
+Can replace antibiotics when treating patients for antibiotic resistant bacteria infections 
+Can create a defense mechanism which allows for better performance of antibiotics 
+
+
+
+How are viruses used in biotech?
+By removing the pathogenic part of a virus it can be used a vector in gene therapy
+For example Luxturna delivers a functional copy of a gene using a virus as a vector to restore vision in patients (in the EU only)
+
+#12 Ethan
+12. How are bacteriophage and viruses used in biotech?
+Bacteriophage
+Using bacteriophages scientists have found that they can help underdeveloped areas to filter water
+They “eat” harmful bacteria and pollutants creating a physical film to scoop out
+Viruses
+New cancer research has shown that it might be possible to put viral tags on cancer cells and introduce it into 
+
+
+#13 Tania
+13. Animal Cell Culture. What are some model cell lines from humans, insects, and other animals? How are they used? What are HeLa cells?
+Model Cell lines
+Cells able to grow under correct laboratory conditions
+HvT1- tobacco budworm, TN368- Cabbage looper
+COS- monkey kidney
+HeLa cells
+Another way to study physiology 
+Genetic manipulation, studies on gene expression
+Immortal lines that are virtually the same
+HeLa Cells
+Henrietta Lacks cervical cancer 
+First immortal cell line 
+Still used to this day 
+Ethical issues surrounding medical research 
+https://www.hopkinsmedicine.org/henriettalacks/importance-of-hela-cell
+https://www.news-medical.net/life-sciences/Why-are-Reporter-Labelled-Cell-Lines-Useful.aspx
+"Guide To Research Techniques In Neuroscience.". 2010. Elsevier, https://doi.org/10.1016/c2009-0-01891-1. Accessed 6 Sept 2022.
+
+https://www.hopkinsmedicine.org/henriettalacks/importance-of-hela-cells.html 
+
+https://www.nature.com/articles/d41586-020-02494-z 
+
+
+#13 Kimberly
+13. Animal Cell Culture. What are some model cell lines from humans, insects, and other animals? How are they used? What are HeLa cells?
+PDX (patient-derived xenograft)
+Used to determine patient's’ plan of care
+HeLa cells - the “Immortal Cell Line”
+Taken without consent from Henrietta Lacks
+Cervical cancer cells that survived outside the human body and continued to multiply.
+Have been used to study various diseases such as HPV and Polio
+
+Chapter 2
+
+Transcription Deena
+14. How does transcription differ in eukaryotes? 
+Transcription in eukaryotes takes place in the nucleus, and then translated in the cytoplasm. In prokaryotes, it occurs in the cytoplasm. 
+ RNA polymerase II transcribes all the protein coding genes
+RNA polymerase I transcribes rRNA genes
+RNA polymerase III transcribes rRNA, tRNA and smaller nuclear RNA genes. 
+
+
+
+#14 Hammad
+
+
+Transcription in Eukaryotes
+
+
+
+mRNA Processing
+The RNAs which are produced are processed in the Nucleus, and are complex 10 to 15 polypeptides.
+During Transcription pre RNA/hnRNA is formed in the Nucleus
+Then Processing starts which involves, 
+ Capping at 5’ end & Poly A tail or  Polyadenylation at 3’end 
+and splicing to remove the introns.
+
+Process
+Eukaryotes
+Prokaryotes
+Transcription 
+Nucleus
+Cytoplasm
+Translation
+Cytoplasm
+Cytoplasm
+
+#14 Shahd
+Transcription is the copying of the DNA strand information into a new RNA strand. 
+pre-mRNA must be processed into mRNA
+A 5’ cap is added to the beginning of the RNA transcript
+A 3’ poly-A tail is added to the end
+Splicing occurs
+Introns removed, pre-mRNA exported to cytoplasm 
+Exons correspond to protein-coding sequences
+
+
+Eukaryotes
+Prokaryotes
+Transcription: in nucleus 
+In cytoplasm
+Transcriptional factors needed
+No proteins needed 
+14. How does transcription differ in eukaryotes? How is it regulated in eukaryotes? Describe mRNA processing: what happens at the beginning, middle, and end of the pre-mRNA?
+
+
+#15 Translation - Osbaldo
+Protein translation: 4 steps
+Activation, initiation, elongation, & termination
+
+translation factors and their roles
+Ribosomes, tRNA, mRNA
+Difference between prokaryotes and eukaryotes
+Different start and end  Codon’s
+Shine-dalgarno sequence (prokaryotes)
+
+Following central dogma. 5’->3’(Dna,rna, protein)
+Dna ->Mrna (transcription)->proteins (translation)
+Takes place on ribosomes in cell cytoplasm, Mrna read and translated into string of amino acid chains that make up synthesized protein
+Activation: correct amino acid covalently bonded to correct tRNA ( amino acid joined by its cxarboxyl group to the 3’ OH of the tRNA by an ester bond) tRNA considered charged
+Initiation: small subunit of ribosome binds 5’ end of mRNA
+Elongation: Additional amino acids are added to chain
+Termination: A site of ribosome faces stop codon
+Ribosomes serve as factories in cell where information is translated from a code into functional product
+mRNA is the template used by ribosomes to make proteins 
+Different AUG start codons
+Porkaryotes shine-dalgarno sequence start recognition
+Eukaryotes mRNA contain a special structure at its 5’ end as well as capping, POlyadenylation, splicing before exported to cytoplasm
+
+
+
+#15 Christine
+15. Protein translation: steps in the process, difference between prokaryotes and eukaryotes, translation factors and their roles.
+
+#16 Meaghan
+16. Explain symbiotic theory for chloroplast and mitochondria, central dogma in these organelles.
+The symbiotic theory states that some eukaryotic organelles were once prokaryotic microbes such as mitochondria and chloroplasts 
+Mitochondria and Chloroplasts
+Both the size of some prokaryotic microbes
+Divide by binary fission 
+DNA is circular not linear 
+Double membranes 
+The central dogma is the process by which genetic information is converted into a functional product
+Genetic information only flows in one direction (DNA -> RNA -> protein)
+Contain both DNA and RNA 
+
+Symbiotic Theory Deena
+16. Explain symbiotic theory for chloroplast and mitochondria, central dogma in these organelles.
+Symbiotic theory: Explains where the origin of chloroplasts and mitochondria were. 
+Evidence for Symbiotic theory: Both contain circular DNA, ribosomes, and a double membrane
+Central dogma: 
+The flow of genetic information. Goes from DNA -> RNA -> Protein.
+	DNA REPLICATION, TRANSCRIPTION, TRANSLATION
+DNA polymerase to RNA polymerase to Ribosome.
+
+#16 - Shahd
+16. symbiotic theory for chloroplast and mitochondria, central dogma in these organelles.
+https://docs.google.com/presentation/d/1KNT7DKj8ZX5Gw49aPI3UKvP60Y5uyzc7EcD_9kwm_0U/edit?usp=drive_web&ouid=104913709763368793432

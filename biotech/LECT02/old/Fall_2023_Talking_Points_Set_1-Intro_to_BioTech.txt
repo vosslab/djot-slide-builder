@@ -1,0 +1,810 @@
+Set #1
+Talking Points
+Sept 7, 2023
+
+Talking Points Guide
+
+Talking Point #1: ancient biotech -- Lakshmidhar and Qazi
+Talking Point #2: bacteriocins -- Misbah and Srilatha
+Talking Point #3: model organisms -- Kamalpreet and Rudra
+Talking Point #4: e. coli -- Kushil Hareshkumar and Justin
+Talking Point #5: yeast -- Jinal and Mitkumar ashokbhai
+Talking Point #6: c. elegans -- Sienna and Therese
+Talking Point #7: drosophila -- Freny Tusharkumar and Dhruvi Sanjaykumar
+Talking Point #8: arabidopsis -- Sundip and Naba
+Talking Point #9: zebrafish -- Alfredo and Jackie
+Talking Point #10: mice -- Rutvi and Erick
+Talking Point #11: frogs -- Mirajsinh and Hiba
+Talking Point #12: monkey -- Pegah and Uzma
+Talking Point #13: heterochromia -- Steve and Jannela
+Talking Point #14: phage -- Bhargavi and Nirali Bharatbhai
+Talking Point #15: cell culture -- Sonia and Bharat Kumar
+Talking Point #16: subviral agents -- Jocelyn and Sowmya Reddy
+Talking Point #17: prok transcript -- Het Bharatbhai and Serene
+Talking Point #18: euk transcript -- Harnish Dilipbhai and Disha
+Talking Point #19: protein translation -- Mansi and Anjali
+Talking Point #20: symbiotic theory -- Veronica and Shubham
+Primary Presenters
+
+Helper Student #1: ancient biotech -- Sonia and Sowmya Reddy
+Helper Student #2: bacteriocins -- Bhargavi and Jannela
+Helper Student #3: model organisms -- Kushil Hareshkumar and Therese
+Helper Student #4: e. coli -- Harnish Dilipbhai and Sienna
+Helper Student #5: yeast -- Rutvi and Justin
+Helper Student #6: c. elegans -- Misbah and Pegah
+Helper Student #7: drosophila -- Kamalpreet and Veronica Gore
+Helper Student #8: arabidopsis -- Rudra and Disha
+Helper Student #9: zebrafish -- Jinal and Qazi Mohammed Mustafa Sayeed
+Helper Student #10: mice -- Alfredo and Nirali Bharatbhai
+Helper Student #11: frogs -- Erick and Steve
+Helper Student #12: monkey -- Jocelyn and Veronica Leavy
+Helper Student #13: heterochromia -- Mansi
+Helper Student #14: phage -- Freny Tusharkumar and Shubham
+Helper Student #15: cell culture -- Mitkumar ashokbhai and Anjali
+Helper Student #16: subviral agents -- Jackie and Mirajsinh
+Helper Student #17: prok transcript -- Srilatha and Hiba
+Helper Student #18: euk transcript -- Uzma and Serene
+Helper Student #19: protein translation -- Lakshmidhar and Dhruvi Sanjaykumar
+Helper Student #20: symbiotic theory -- Bharat Kumar and Het Bharatbhai
+Helper Question Askers
+
+Talking Points Guide
+1. Talking points were assigned in last week's class.
+Each student has one assigned talking points and helper topic
+At least two students will discuss each talking point.
+2. If you share a talking point with a classmate:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds may seem short, but it's enough for meaningful content
+3. Contributing to someone else gets you more discussion marks
+Commenting on someone else's topic can also earn you extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide before presenting.
+You must add visuals and pictures to the slide
+Your slide should have minimal text; let your talk convey the message.
+Prepare for a 60-90 second talk on each of your assigned talking points.
+Clarify what the talking point is.
+Explain its relevance to biotechnology.
+Offer a recent example from the field of biotechnology.
+Be original in your approach.
+Use various online resources for your research, not just the textbook.
+Offer your unique perspective.
+Put into your own words
+summarize your notes in your own words
+reading is fine but avoid direct quotations.
+No direct quoting of an article, wikipedia or the textbook
+Keep jargon to a minimum for broader understanding.
+
+Chapter 1
+
+#1 Ancient Biotechnology  - Qazi
+Early biotech contributions, key historical milestones and evolution
+
+#1 Ancient Biotechnology - Lakshmidhar 
+Earliest discovery and identification of civilizations of biotechnology and early biotech contribute to the modern world.
+
+#2 Bacteriocins - Misbah
+Fun Facts:
+Unlike antibiotics, bacteriocins can be attached anywhere on the outer member due not having specific receptors. 
+First discovered in 1925. 
+Methods of killing include: pore-forming, nuclease activity, peptidoglycan production inhibition.
+GREAT
+SLIDE
+
+#2 Bacteriocins - Srilatha
+What are bacteriocins? How are bacteriocins produced?
+How do bacteria use bacteriocins?
+What are the mechanisms of action for different bacteriocins? 
+How can bacteriocins be applied in medicine? How do bacteriocins relate to antibiotic resistance?
+Are there any commercial products that utilize bacteriocins?
+
+Model Organisms
+
+#3 Overview of Model Organisms - Kamalpreet
+MICE
+
+Crucial - Model organisms provide valuable insights into biological systems at the cellular, tissue, organ, and systemic levels & used to examine possible causes and treatments for human and animal illnesses 
+Chosen - several traits like easy maintenance, their rapid breeding cycles, their Ability to Create genetic diversity, size, generation time, accessibility, Accessibility, manageability, genetic characteristics, and potential economic benefit are considered while choosing model organisms.
+Good Model Organism - A suitable model organism should be readily accessible in the ecosystem
+Advantages and Limitations 
+No ethical problems/no restrictions according to animal protection laws Whereas Brain anatomy, cardiovascular system and respiration systems differs substantially from humans
+Easy and cheap to maintain in large quantities, time, and cost-effective handling Whereas No easy measure of complex behaviour
+Short generation time (~10 days), short life span (2–3 month) - > easy to use for screens Whereas Maintenance as living cultures only, no permanent conservation (e.g., frozen stocks) possible
+
+
+YEAST 
+Why are model organisms crucial for biotechnology research?
+How are model organisms chosen? What makes a good model organism?
+What are the advantages and limitations of using model organisms?
+How do model organisms contribute to our understanding of biotechnology?
+How have model organisms been instrumental in the development of biotechnologies?
+What is the concept of "phenotypic plasticity" in model organisms? What is the concept of "orthologs" in the study of model organisms?
+
+#3 Overview of Model Organisms - Rudra
+Model organisms can be used to create highly detailed genetic maps: Genetic maps are a visual representation of the location of different genes on a chromosome.
+- A model organism is a non-human species that is studied to understand specific biological phenomena with the expectation that investigations made in the organism model will provide insight into the workings of other organisms.
+- An individual genetic makeup can yield diverse phenotypes in varying environments, and this fundamental characteristic of organisms is referred to as phenotypic plasticity.
+- non-human model organisms used for deeper understanding of human biology. But it is costly, time-consuming and increasingly raises ethical concerns
+developed Orthologous Matrix and Alternative Model Organism (OMAMO) - provides the user with the best non-complex organism for research. The outputs provided by OMAMO were supported by a systematic literature review.
+DROSOPHILA 
+
+#4 Model Organism: Escherichia coli - Kushil
+E. coli are bacteria found in the intestines of people and animals and in the environment and  They can also be found in food and untreated water.
+it’s size approximately 1.0-2.0 micrometers long as well as it’s general time is 12 to 24 hours or sometimes may be more
+E coli can survive outside the body from hours to months. It can live in soil for about 130 days.
+the first used of ecoli bacteria in 1885
+Escherichia coli is a rod-shaped (bacillus) Gram-negative bacterium that is frequently used as a model organism. Factors such as its ability to grow fast using cheap media and availability of molecular tools to perform genetic manipulations are favorable for using E. coli as a model organism in molecular genetics. 
+The human genome is thought to contain approximately 100,000 genes—only about 25 times more than E. coli has.
+E coli bacteria is important for digestive system and protect us to other microbials.
+
+#4 Model Organism: Escherichia coli - Justin
+
+
+
+
+In 1885 by Theordor Escherich
+In water, environment, intestines of humans or animals. Rod -shaped 1.5µm long,radius 0.5µm
+Can divide in lab every 20 min under aerobic, nutrient rich  conditions
+Can survive outside the body from hours to months; can live in the soil for about 130 days; can survive in river water for 27 days and in cattle
+Grow fast using cheap media and can be genetically modified 
+Human has 25 time more genome
+ Monitor water and food safety, produce cancer fighting drugs, manufacture insulin and antibiotics.
+the ethical issue here can be use of e. coli for potential ecological et environmental harm, interfering with nature or create bacteriological weapons .
+It’s keep in a cell lab, for a long-term storage, e. coli is diluted in 30% glycerol and frozen at −80°C they are grown in a rich liquid broth medium 
+
+
+
+#5 Model Organism: Saccharomyces cerevisiae - Jinal
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7099199/
+https://www.sciencedirect.com/science/article/abs/pii/S096399691930465X
+GREAT
+SLIDE
+
+#5 Model Organism: Saccharomyces cerevisiae - Mitkumar
+Used for wine making, baking and brewing since ancient time
+Use for produce CO2 and Alcohol
+
+Maintain in lab by cool temperature like as -20°C
+Use for experiment in petry dish
+GREAT
+SLIDE
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+Sydney Brenner founded in 1960s
+
+Low Cost!
+#6 Model Organism: Caenorhabditis elegans - Sienna
+Location: Soil
+Average Size: 1.5mm long adult
+Lifespan: 3 day life cycle - 12 to 18 days
+aka the Roundworm
+Easy to manipulate
+83% homologous to human genome
+self fertilizing
+1974: Identifications of mutations
+1983: Apoptosis development
+1998: RNAi
+GREAT
+SLIDE
+https://www.ncbi.nlm.nih.gov/books/NBK20086/
+https://www.google.com/url?q=https://cdn.the-scientist.com/assets/articleNo/68510/aImg/41453/c-elegans-article-l.jpg&sa=D&source=editors&ust=1694093858357466&usg=AOvVaw2SpV0nyym6V7rY_KVF3ahZ
+https://www.ncbi.nlm.nih.gov/books/NBK20213/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4719766/
+https://www.ncbi.nlm.nih.gov/books/NBK20086/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC310876/
+https://www.google.com/url?q=https://cdn.the-scientist.com/assets/articleNo/68510/aImg/41453/c-elegans-article-l.jpg&sa=D&source=editors&ust=1694093858357466&usg=AOvVaw2SpV0nyym6V7rY_KVF3ahZ
+https://cdn.the-scientist.com/assets/articleNo/68510/aImg/41453/c-elegans-article-l.jpg
+https://images.nature.com/original/magazine-assets/d41586-019-01192-9/d41586-019-01192-9_16649026.jpg
+https://www.ncbi.nlm.nih.gov/books/NBK20086/
+
+
+
+You must add visuals and pictures to the slide
+Your slide should have minimal text; let your talk convey the message.
+Prepare for a 60-90 second talk on each of your assigned talking points.
+Clarify what the talking point is.
+Explain its relevance to biotechnology.
+Offer a recent example from the field of biotechnology.
+Be original in your approach.
+Use various online resources for your research, not just the textbook.
+Offer your unique perspective.
+
+
+
+#6 Model Organism: Caenorhabditis elegans - Therese
+Common name: “the worm” or roundworm
+Size: ~1 mm
+Generation time: ~3 days
+Lifespan: ~2.5 weeks
+Location: E. coli food source (lab), terrestrial and aquatic ecosystems as nematodes
+1963 - Sydney Brenner
+Nobel Prizes - 2002, 2006, 2008
+**Model organism for genetic analysis
+Easily manipulated
+Maintained best at 37 degrees Celsius
+Genetically sequence the human genome
+Transparency leads to economic benefit in research
+Unknown ecological importance
+Investigation in human disease gene functions
+GREAT
+SLIDE
+
+#7 Model Organism: Drosophila melanogaster - Freny
+D.melanogaster
+Common name: Fruit fly
+Size: 2-3mm (female larger than male)
+Lifespan: median 80 days to maximum 100 days
+Life cycle: 10-12days
+Location: found in the oriental region of the world. In other words, India and southeast Asia.
+Genetics:
+allows the most sophisticated genetic manipulations of all higher eukaryotes.
+nearly 75 percent of genes that cause disease in humans are also found in fruit flies
+Low cost, rapid generation 
+Biotech history:
+since the early 20th century, with Thomas Hunt Morgan pioneering its use in genetics studies around 1910.
+Drosophila is primarily used as a model organism in genetics and developmental biology research.
+Drosophila has played a significant role in understanding genetic and molecular mechanisms underlying various diseases.
+Drosophila is crucial in advancing our understanding of fundamental biological processes, including genetics, development, and behavior.
+Landmark:
+Thomas Hunt Morgan's White Eye Mutation: In the early 20th century, Morgan used Drosophila to demonstrate that genes are located on chromosomes.
+Ethical Considerations:small size, short lifespan, and limited cognitive abilities
+
+
+
+
+
+
+
+
+#7 Model Organism: Drosophila melanogaster - Dhruvi 
+ D.melanogaster
+Common name: Fruit fly
+Size: 2-3mm (female larger than male)
+Lifespan: median 80 days to maximum 100 days
+Life cycle: 10-12days
+Location:near unripe & rotted fruits
+
+
+Genetics:
+Easy to manipulate
+Cost effective
+Rapid reproductive cycle
+Close between human and fruit fly genome
+
+Biotech history:
+Father of Drosophila research - Thomas Hunt Morgan 
+Model organism in genomics
+Diverse branches of research
+
+Landmark:
+Thomas Hunt Morgan's White Eye Mutation
+
+
+
+
+
+
+
+
+GREAT
+SLIDE
+
+#8 Model Organism: Arabidopsis thaliana - Veronica Gore
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#9 Model Organism: Danio rerio - Alfredo
+Common name: Zebrafish
+Location: Freshwater around Southern Asia
+Size: ~ 0.7 - 1.5 in. (1.7 -3.8 cm)
+Gen. Time: 2 - 4 months
+Lifespan: ~ 3 yrs avg. / 5 yrs max
+Genetic Manipulation:
+Externally laid / fertilized embryos
+Transgenic vs Knockout
+Potential Economic Benefit:
+More affordable husbandry
+Small size / cheaper
+Testing time 
+Testing material
+
+Biotech History:
+First used in 1972 by George Streisinger
+Impact:
+Drug Discovery
+Cardiology Research
+Cancer Research
+Toxicology and Environmental Health
+Landmarks:
+Zebrafish genome project (2001)
+Heart failure research (Present)
+Genetic, molecular, & cellular mechanisms of developmental processes (2002)
+GREAT
+SLIDE
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#9 Model Organism: Danio rerio - Jackie
+Common Name: Zebrafish
+Location: East India, Burma → Aquarium fish
+Size: About 1 inch
+Generation Time: 3 months 
+Lifespan: 5 years in aquariums
+History in Biotech Use:
+Publications about 100 years ago, but Straisinger began using  it in the 1970s - early 1980s
+Molecular genetics of embryonic development
+Tumor angiogenesis → Chemical discovery, gene targeting
+Apoptotic cell death
+Regenerative tissues
+Drug toxicity
+Genome & Manipulation:
+25 chromosomes
+70% of human genes have zebrafish orthologs
+Each cell can be colored with fluorescent genes
+Permeability of embryos
+Completely sequenced genome, easy for genetic tagging and manipulation
+
+Economic Benefits: Easy to keep and breed in captivity, prolific, yet cheap to buy and maintain, cheaper and faster than mice or frogs
+Landmark Studies
+(2001 - 2013) | Zebra Genome Project
+(2005) Keith Cheng | Clone of slc24a5
+(2011) Leonard Zon | Leflunomide & melanoma
+(2008) RPS19 | Diamond-Blackfin anemia
+ (2016) Skinbow | Skin Healing (Below)
+
+Maintenance & Culture in Lab: Small, social fish
+Eggs take 3 months to develop into adults, laid in clutches of 200, develop outside of mother’s body
+GREAT
+SLIDE
+
+#10 Model Organism: Mus musculus - Rutvi 
+Common name - House mouse or Laboratory mouse 
+Size - 160-200 mm
+Generation time - 9 to 11 weeks 
+Lifespan - 12 - 18 months 
+
+Potential economic benefit - 
+Development of genetically Modified Organisms (GMOs). 
+Biomedical research 
+Vaccine development 
+Study human diseases 
+Manipulating mice genetically - 
+Knockout mice
+Transgenic mice 
+CSISPR 
+
+GREAT
+SLIDE
+
+#10 Model Organism: Mus musculus - Erick 
+First used widely in early 1900s (used by Mendel)
+Animal ethics concerns
+Involved in aging, immunology, and neurological studies
+Kept in plastic cages where breeding happens
+Embryos studied for genetic manipulation
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+#11 Model Organism: Xenopus laevis - Hiba
+Common name: African Clawed Frog 
+Location: South Africa 
+Size: 45.6 mm to 97.5 mm (males), 57mm to 147 mm(females)
+Generation time: 1-2 years 
+Lifespan: upto 15 years!
+Fun Fact: Tetraploidy
+Easily Genetically manipulated…
+Knock- down/ knock-out
+TALENs
+Crispr/cas
+Economical benefits
+Advancement in human disease research 
+Cost efficient 
+High reproduction
+Small size 
+They share 79% of disease genes with humans:
+Model human disease
+Developmental biology   
+GREAT
+SLIDE
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+
+#11 Model Organism: Xenopus laevis - Mirajsinh
+Biotech history
+They first gained scientific attention in 20th century
+Uses
+Developmental Biology               
+Genetics
+Toxicology
+Cancer research
+Immunology 
+Drug discovery                                                                                    
+Role in disease
+Biomedicine
+Microbiome Research
+Disease Modeling
+Importance
+External Fertilization
+Swift Embryonic Development
+Genetic Similarities to Humans
+Genetic Research
+
+
+
+
+
+
+
+
+
+Landmark studies
+Nobel prize 1995- The discovery of cyclins 
+Nobel prize 2004- The discovery olfactory receptors
+
+Ethical consideration
+Treated
+Welfare 
+Conservation
+
+Maintenance 
+and culture
+
+
+GREAT
+SLIDE
+State common name, location, size, generation time, and lifespan
+How easy is it to manipulate genetically?
+How similar is its genome to the human genome?
+What is its potential economic benefit?
+Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
+What are some landmark studies using this organism?
+Are there ethical considerations in using this organism for research?
+How do researchers typically maintain and culture these organisms in a lab setting?
+
+
+
+#12 Model Organism: Rhesus macaque - Pegah
+State common name: Monkey 
+Location: They are ranged from Afghanistan to the Pacific coast of China
+Size:
+ Male : Average Height 1.7 ft (53 cm) and weigh, on average, 17 lb (7.70 kg)
+ Females:  Average height of 1.5 ft (47 cm) and an average weight of 11.8 lb (5.34 kg)
+Generation time: 6 to 8 Up to 11
+Lifespan: 25 years to 30 years in the wild , and in captivity 20-40 years old
+How easy is it to manipulate genetically? It's never easy to manipulate the genes and needs education 
+How similar is its genome to the human genome?
+One of the closest 
+93-95% similarity with the human genome. 
+What is its potential economic benefit?
+reducing healthcare costs
+prevent outbreaks 
+GREAT
+SLIDE
+
+#12 Model Organism: Rhesus macaque - Uzma
+First used in: Carnegie Science Institute in the 1920’s 
+IMPORTANT 
+ transplantation techniques, 
+the role of the Rhesus-factor in blood transfusions, 
+development of in-vitro fertilisation techniques, 
+And now it is most COMMONLY used for: 
+infection research and drug development
+landmark studies include research regarding COVID-19:
+All leading Covid-19 vaccine candidates (Moderna, Oxford/AstraZeneca, Pfizer/BioNTech, J&J) used rhesus macaques during preclinical testing.
+brain research
+landmark studies include potential treatment for parkinsons disease (2020)
+created an oxygen-free formulation of dopamine and infused it into the brain of monkeys, which showed an improvement in their motor symptoms.
+Ethical considerations:
+Monkey’s do not have autonomy or awareness BUT 
+can be trained to cooperate with being handled 
+ situations can become less stressful for them 
+
+
+
+Analogy of machine lasting long if it is maintained prop but not used however with animals it needs to use its functions to survive  
+because they are valuable 
+there has been increased amount of attention to the housing and care of monkeys in laboratories
+
+allowed for advances in transplantation techniques, the role of the Rhesus-factor in blood transfusions, development of in-vitro fertilisation techniques, and advances in stem cell development.
+
+
+
+
+#13 Heterochromia iridum - Steve
+What is heterochromia iridum?
+Definition: Varied iris coloration in an individual's eyes.
+What is the underlying mechanism that causes heterochromia iridum? 
+Mechanism: Determined by melanin concentration and distribution.
+What are the genetic and environmental factors that can cause heterochromia?
+Causes:
+Genetic: E.g., Waardenburg syndrome.
+Acquired: Injuries, diseases, medications, surgeries.
+Is heterochromia iridum observed in species other than humans?
+In Animals: Observed in cats (e.g., Turkish Van), dogs (e.g., Huskies), and horses.
+What are some other phenotypes or disorders in humans similar to heterochromia iridum?
+Types: Sectoral, Central.
+Related Conditions: Aniridia, Polycoria, Coloboma, Anisocoria.
+
+
+#13 Heterochromia iridum - Jannela
+Presence of different colored irises.
+Complete, Partial/ Sectoral, Central
+Complete eye exam to diagnose
+Causes 
+Hereditary, Trauma, Symptom to a disease
+Genetic Factors
+most cases it occurs sporadically
+Environmental Factors 
+Eye injury, Surgery, Use of Latisse
+Observed in other species
+Common in dogs and cats
+Similar Phenotypes & Disorders 
+Ocular Albinism, Iris Nevi, Waardenburg Syndrome
+Biotechnology Relevance 
+Precursor to investigate chronic diseases through gene sequencing identification 
+Source: 
+        https://dnatesting.com/dna-and-heterochromia-two-different-colored-eyes/
+         Turbert, D. (2021, April 19). Heterochromia. American Academy of Ophthalmology. https://www.aao.org/eye-health/diseases/what-is-heterochromia 
+F. Herbert Haessler, F. H. (1929, September 1). Heterochromia Irides. Archives of Ophthalmology.   https://jamanetwork.com/journals/jamaophthalmology/article-abstract/608115#:~:text=The%20first%20recorded%20observation%20was,in%201843%2C%20described%20two%20cases.
+Heterochromia. Mount Sinai Health System. (n.d.). https://www.mountsinai.org/health-library/symptoms/heterochromia#:~:text=A%20complete%20eye%20exam%20can,done%20to%20confirm%20the%20diagnosis. 
+
+
+#14 Bacteriophage - Bhargavi
+    Antibiotic :
+Kills bacterial infection.
+Kills good bacteria of host too.
+
+    Antibiotic resistance bacteria :
+Protect themselves by antibiotic resistance gene.              
+Overuse of Antibiotics - Increase replication of Antibiotic resistance bacteria.
+
+    Bacteriophage : 
+Bacterial virus available everywhere like other bacteria and virus.
+Alternative of Antibiotics.
+Can not harm human healthy bacteria.
+Recognise specific virus and kill them.
+
+    Staphylococcal Bacteriophage :
+Fight against staphylococcus aureus pathogen.
+S.aureus develop antibiotic resistance by overuse of antibiotic.
+How are bacteriophages and viruses used in biotechnology? 
+Are there bacteriophages that can target antibiotic-resistant bacteria?
+How have phage therapies advanced over the years? 
+What are the limitations of using bacteriophage to treat infections?
+What are some challenges in scaling up phage therapies?
+
+#14 Bacteriophage - Nirali
+
+
+                          
+How are bacteriophages and viruses used in biotechnology? 
+Are there bacteriophages that can target antibiotic-resistant bacteria?
+How have phage therapies advanced over the years? 
+What are the limitations of using bacteriophage to treat infections?
+What are some challenges in scaling up phage therapies?
+
+#15 Animal Cell Culture - Sonia
+Animal Cell Culture = cells are taken from a living organism (in vivo) and grown/preserved in artificial environments (in vitro).
+
+
+\
+
+
+
+
+How are stem cells used? 
+Regenerative Medicine, Bone Marrow Transplant, Tissue Engineering, Drug Testing and Development, Studying Diseases, Injury Treatment, Corneal Transplants, Neurological Conditions, Cosmetic Procedures
+Model cell lines from humans, insects, and other animals. 
+Human Cell lines: HeLa cells (1951), Hek 293 cells, Jurkat cells, MCF-7 cells
+Insect Cell lines: Sf9 cells, Drosophila S2 cells
+Other animals: CHO cells, NIH/3T3 cells, MDCK cells, Vero cells, COS-7 cells
+Biotech News
+Published in Developmental Cell, August 30, 2023: Researchers identified stem cells for the human thymus for the first time – will benefit immune diseases and cancer research!
+https://www.healthcare.nikon.com/en/ss/cell-image-lab/knowledge/process.html
+GREAT
+SLIDE
+
+#15 Animal Cell Culture - Bharat
+
+#16 Subviral Infectious Agents - Jocelyn
+Gene Creatures - genetic entities aka subviral infectious agents which include:
+
+Evolutionary Trajectory impact of host organisms
+
+
+
+
+
+Satellite Viruses
+Plasmids
+Transposons
+Biotechnological applications: 
+Generally allow for genome manipulation of model organisms 
+Viruses are used in gene therapy + foreign DNA injection into host cells
+Transposons used to deliver genes in host DNA
+
+Contain helpful genetic elements 
+Antibiotic resistance genes
+Antibacterial enzymes
+Virulence
+Provide new food sources for host 
+Transfer genetic material
+
+GREAT
+SLIDE
+
+#16 Subviral Infectious Agents - Sowmya
+Transposons are indeed often referred to as "jumping genes.Almost half of our DNA sequences are made up of jumping genes—also known as transposons. They jump around the genome in developing sperm and egg cells and are important to evolution. But their mobilization can also cause new mutations that lead to diseases, such as hemophilia and cancer.Advantages: 1. Genetic Diversity 2. Evolutionary innovation 3. Rapid evolution 4. Repair Mechanism Disadvantages: 1. Mutational load 2. Genomic 3 Instability 3. Genome size expansion 4.Regulatory Interference 5. Horizontal Gene Transfer
+*Polintons, also known as Mavericks, are a class of mobile genetic elements found in some archaea, bacteria, and eukaryotes. 1.Complex Structures 2.Complex Structure 3.Large Size 4.Endosymbiotic Origin 5.Variable Distribution 6. Role in evolution
+How do gene creatures impact the evolutionary trajectory of their host organisms?
+Besides satellite viruses and plasmids, are there other types of genetic entities that qualify as gene creatures?
+How might gene creatures be harnessed for biotechnological applications?
+Transposons are often called "jumping genes." What are the evolutionary advantages and disadvantages of having these transposons within a genome?
+What are Polintons, and how do they differ from other types of mobile genetic elements?
+What are virophages such as Sputnik and Zamilon, and could they be engineered to combat human viral infections?
+
+Chapter 2
+
+Prokaryotic transcription - Het
+Roles of Sigma Factors : Promoter,Formation,Initiation,Gene Expression Regulations & Switching
+Roles of Operons :
+Coordinate Genes
+Transcriptional Control
+Operator & Repressor Proteins
+Environmental Adaptation 
+Affected by Environmental Factors
+Temperature, Oxygen,
+PH,Osmotic Stress
+Toxins,Quorum Sensing
+Environmental Signals
+Stress Responses
+                                                                                                                                                                        Diagram of Plasmid>>>
+
+
+
+
+GREAT
+SLIDE
+
+#17 Prokaryotic transcription - Serene
+
+
+
+
+
+Bacterial plasmids transfer information from one cell to another
+
+Sigma factors in prokaryotes function in the initiation of transcription
+
+E. Coli is one of the most widely used bacterium for research 
+
+
+ Operons are complexes that regulate gene expression 
+
+Prokaryotes respond to environmental changes in food availability, pH, temperature, etc. by altering their gene expression pattern 
+
+Sigma factors, operons, environment, e coli, plasmids 
+
+#18 EUKARYOTIC TRANSCRIPTION - HARNISH
+Difference between Prokaryotic and Eukaryotic Gene expression:
+1–Compartmentalization
+2–Genome Complexity
+3–Regulatory Complexity & Post-Transcriptional Modifications  
+    Capping on 5’ end, Splicing of introns, Polyadenylation at 3’ end
+Alternative Splicing: a unique feature of eukaryotic mRNA processing that
+ enhances the diversity of protein isoforms produced from a single gene.
+Epigenetic modifications 
+DNA Methylation:
+Histone Modifications:
+Chromatin Remodeling:
+Non-Coding RNAs:
+
+
+                                                                                                                                                                                                                                 
+
+
+#18 Eukaryotic transcription - Disha
+I
+What makes eukaryotic cells more complicated to work with in biotechnology compared to prokaryotic cells?
+How does transcription regulation in eukaryotes differ from that in prokaryotes? What role do transcription factors play in eukaryotic cells?
+What are the key steps in eukaryotic mRNA processing, and how do they differ from prokaryotes? What is the process of alternative splicing?
+How does epigenetic modification regulate gene expression in eukaryotic cells?
+
+#19 Protein Translation - Mansi
+Protein Translation and the steps involved
+The Protein translation is the process in living cells in which proteins are produced 
+using RNA molecules as templates.
+The main steps in translation are :
+1.Initiation
+2.Elongation
+3.Termination
+Differ Protein synthesis in Eukaryotes and Prokaryotes
+Prokaryotes can translate mRNA into proteins while the DNA is being transcribed.Prokaryotic protein synthesis can be fairly fast because one gene can be transcribed and translated simultaneously
+Eukaryotes must end transcription of given segment, send it out of nucelus and only then translate it. Eukaryotic synthesis is slower, but more precious
+post-translational modification
+Post-translational modification can occur at any step in the "life cycle" of a protein
+
+
+Discuss protein translation, including the steps involved and the roles of various translation factors. 
+How does protein synthesis in eukaryotes differ from that in prokaryotes, and what are the implications for biotech?
+How does post-translational modification occur?
+What are some methods for studying translation in real-time?
+
+#19 Protein Translation - Anjali
+The process by which a protein is synthesized from the information contained in molecule of messenger RNA
+Peptidyl transferase is the main enzyme used in protein translation
+Step involved in protein translation
+1)Initiation:- by initiation factors IF1,IF2,IF3 including mRNA, ribosomes, tRNA 
+2)Elongation:-by three protein factors EF-TU,EF-TS,EF-G
+3)Termination:-triggered by three stop codons UAA,UAG & UGA
+*protein translation is done in eukaryotes involving 40s and 60s subunits
+                                                        Prokaryotes involves 70s ribosomes 
+Discuss protein translation, including the steps involved and the roles of various translation factors. 
+How does protein synthesis in eukaryotes differ from that in prokaryotes, and what are the implications for biotech?
+
+
+How does post-translational modification occur?
+What are some methods for studying translation in real-time?
+
+#20 Symbiotic theory - Veronica Leavy
+Discuss the symbiotic theory for chloroplasts and mitochondria. 
+Explain differences to the central dogma in these symbiotic organelles. 
+What is the evidence supporting the symbiotic theory? What are some arguments against the symbiotic theory?
+How have mitochondria and chloroplasts been utilized in biotechnological applications?
+
+#20 Symbiotic theory - Shubham
+What is the definition of the symbiotic theory?
+Eukaryotic cells may have evolved when multiple cells joined together into one. They began to live in what we call symbiotic relationships.The theory that explains how this could have happened is called endosymbiotic theory. An endosymbiont is one organism that lives inside of another one.   
+What is the evidence supporting the symbiotic theory ?
+Bacteria, a prokaryote has circular DNA as do mitochondria and chloroplasts. This provides support for the symbiotic theory, which states that the mitochondria and chloroplast in eukaryotic cells were once aerobic bacteria (prokaryote) that were ingested by a large anaerobic bacteria (prokaryote).                                                                                                                                          Both contain circular DNA, ribosomes, and a double membrane
+(1)Membranes & DNA (2) Reproduction (3) Use 
+
+
+
+
+
+
+
+Best Slide Award
+GREAT
+SLIDE
+GREAT
+SLIDE
+GREAT
+SLIDE
+
+The End

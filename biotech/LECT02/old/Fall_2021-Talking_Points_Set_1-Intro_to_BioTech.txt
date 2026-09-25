@@ -1,0 +1,470 @@
+Week 2
+Talking Points
+Sept 9, 2021
+
+Talking Points Guide
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Chapter 1
+
+#1 Omar
+
+  
+Wine was being produced as early as 6000 BC
+Bread and Cheese also use microorganisms for production
+Yield sweeter fruits and surplus food which spurred development of civilizations
+Easily accessible food lead to population growth
+From hunter gatherers to farmers/ranchers
+
+#1 Greg  
+1. What are the first biotechnology discoveries? How did early biotech create the modern world?
+Some of the first forms of Biotechnology are yeast to make bread, and fermentation used to create beer and cheese. 
+These discoveries took place between 4000-8000 B.C or B.C.E. 
+The Term “Biotechnology” wasn’t discovered until 1919 when the Hungarian engineer named Karl Ereky created the name and its meaning was created for products that came from raw materials with the help of living organisms. 
+Early Biotech created the modern world by leading us to genetic engineering and cell manipulation in the 1970s, when many scientist first discovered E. Coli. 
+Modern day Biotechnology is evolving very fast with the manipulation of Genomes and the natural ability of organisms that meet the basic requirements for the modern day world. 
+
+
+
+
+#2 Ethan
+
+ 
+Bacteriocins
+protein made by bacteria to fight against or inhibit the growth of a closely related strain of bacteria
+due to the stable nature of bacteriocins, bacteriocins act as weapons against microorganisms
+Antibiotic Resistant Bacteria
+Act as alternatives to traditional antibiotics
+Applications in Biotechnology
+Used as food preservatives
+Treat pathogenic diseases
+Cancer Therapy
+
+
+
+
+
+-They do this while being harmless to the human body and surrounding environment
+-This is an important point because as we know antibiotic resistant bacteria is a growing concern in public health especially in hospitals 
+
+#2 Shivam
+
+ 
+
+Bacteriocins - 
+a peptide that is produced by a bacteria unit in order to inhibit or slow down the growth of a competing bacteria strain that has a similar makeup. 
+They are Antibacterial protein toxins but do not harm the bacteria that produced them. 
+Bacteria produce bacteriocins through ribosomal synthesis. 
+When a bacteria colony comes in close contact with a closely related bacteria species, it must compete with that species for space. 
+In order to compete with the opposing strain, the bacteria will produce and release the bacteriocins. They act as antimicrobial peptides and inhibit the growth of the  opposing bacteria strain.
+Bacteriocins can potentially be a substitute for current antibiotics by acting as active agents to fight pathogens that have evolved a resistance to common antibiotics. 
+
+
+
+
+Model Organisms
+
+Model Organism: Escherichia coli; Dominique
+First discovered in 1885
+Most intensely studied and understood organism
+Mostly harmless
+Known to contribute to food poisoning, diarrhea and pneumonia
+Grows fast; can double every 20 minutes
+1 million copies in 7 hours
+Only 4,000 genes
+Biotechnology Uses: Molecular Cloning, 1973
+
+Model Organism: Escherichia coli; Brittany 
+Common name: E. coli
+Location: Environment, foods, animal and human intestines  
+Size: 1.0-2.0 micrometers long
+Lab Generation time: 15-20 minutes
+Intestinal tract Generation Time: 12-24 hours
+Biotech history: year first used: 1973 by Herbert Boyer and Stanley Cohen
+Use: Stores DNA sequences from other organisms, to produce proteins and to test protein function.
+Role in disease: Commercial preparation of riboflavin, vitamin K, produces D-amino acids:  D-p-hydroxyphenylglycine (intermediate for synthesis of the antibiotic amoxicillin)
+
+Model Organism: Saccharomyces cerevisiae; Brittany 
+Common name: Brewer’s or Baker’s yeast
+Location: skins of grapes and other fruits
+Size: 3 and 4 micrometers
+Lab Generation time: 80 minutes
+Biotech history: year first used: 1996
+Use: produce commercially proteins - insulin, human serum albumin, hepatitis vaccines
+Role in disease: prophylaxis of antibiotic-associated diarrhea, nutritional supplement
+
+
+Model Organism: Caenorhabditis elegans; Ashley
+Common Name: Roundworm
+Location: Temperate soil environments, such as rotting vegetation
+Size: approximately 1mm in length
+C. elegans is a nematoda with a life-span of about 2-3 weeks. It undergoes many of the same fundamental biological processes such as embryogenesis, morphogenesis, development, nerve function, as well as observed behavior and aging even while its only 1mm long. C. elegans provides a good specimen to study that shows complexity and tractability. There is no economic benefit from C. elegans.
+Biotch History: C. elegans was first studied in 1963 by Sydney Brenner on research of the nervous system, its has been used to map every single somatic cell, used to study aging and memory and other developmental biology. Multiple Nobel Prize winners research have used C. elegans in the study of genetics and developmental biology. C. elegans has been very important in the study of Alzheimer’s disease genes and identifying RNA-binding proteins.
+
+Model Organism: Caenorhabditis elegans; Clinton
+
+Common Name: C. elegans 
+Location:   in the soil—especially rotting vegetation
+Life Span: lifespan of approximately 18–20 days 
+Similarities to Humans:  100 million base pairs in length with approximately 20,500 similar to humans
+Importances/Uses: Detection of neurological dosorder, congenital heart diseases and kidney diseases.
+2. elegans is a non-hazardous, non-infectious, non-pathogenic, non-parasitic organism. It is small, growing to about 1 mm in length, and lives in the soil—especially rotting vegetation—in many parts of the world, where it survives by feeding on microbes such as bacteria.
+3. Adult C. elegans are 1 mm long self-fertilizing hermaphrodites with a 2.5–4 days reproductive cycle at room temperature, and a mean lifespan of approximately 18–20 days when cultured at 20°C (4–7).
+4. The complete genome? sequence of the C. elegans was published in 1998. The C. elegans genome is 100 million base pairs? in length and contains a similar number of genes as humans, about 20,500 genes (Ensembl)
+5. Uses/importance: Many of the genes in the C. elegans genome have functional counterparts in humans which makes it an extremely useful model for human diseases. C. elegans mutants provide models for many human diseases including neurological? disorders, congenital heart disease and kidney disease
+
+
+
+Model Organism: Drosophila melanogaster; Vincent 
+Known as the Common Fruit Fly
+Found around rotten fruit
+Lifespan on average is 2-3 months
+~10 day generation time
+Kept in glass bottles capped with cotton and anesthetized when studied.
+Easy and cheap to maintain.
+First used in 1910 at Columbia University
+Classically used to study hereditary patterns and mutagens.
+Genetics and Similarity to Humans
+The genomes of Drosophila are 60% homologs to humans, as well as being homologs to 75% of genes that cause human diseases
+Drosophila genome contains 12,000 genes and 165 mb of DNA.
+During growth of the fly from larvae, cells get bigger thus creating more protein and mRNA which do not divide, making thick polytene chromosomes
+These polytene chromosomes can be seen under light microscopy and look like banding patterns
+Mutations to the fly can be seen as alterations to the banding pattern, making them easily visualized
+
+Model Organism: Drosophila melanogaster; Giovanni 
+Commonly known as Fruit Fly (3mm)
+Originated in sub-Saharan Africa
+Have now been introduced to a wide range of habitats
+Generation time of about 10 days at room temp.
+Lifespan between 2 and 3 months
+Large quantities are easy and cheap to maintain 
+Genetic manipulation fast and inexpensive (4 chromosome pairs)
+
+1901 first documented use by William Castle
+Thomas H. Morgan “father of drosophila research”- 1910
+Studied its embryology
+Study the genetic makeup, transcription, and replication processes
+Effects of mutations
+Share about 60% of genes with humans 
+75% of genes that cause disease in humans can be found in Drosophila
+Better understand molecular mechanisms of human disease
+Cancer: Epithelial tumors 
+Signaling pathways that regulate human growth are conserved
+
+Model Organism: Arabidopsis thaliana; Omar 
+Arabidopsis Thaliana, or Mustard weed, smaller sized plant with a simple genome native to Central Asia. It, reaches maturity in around 8 weeks, it can be easily and quickly grown. 
+used as a model organism to understand plant biology sin. First used in 1907, it does not have agricultural benefit, though it scientists today use it to study genes found among other plants
+Pathogen defense genes found in Arabidopsis were used to develop those same genes in other plants
+
+
+Model Organism: Arabidopsis thaliana; Leila 
+Common names: Wild mustard weed or mouse-ear cress  
+Location: Africa and Eurasia
+Size: 20-25cm tall, leaves are 1.5-5 cm long and 2-10 mm broad 
+Can grow over a foot
+Grows to match its environment
+Generation time: 6-10 weeks
+Genetics: 5 chromosomes with a total of 125 megabase ( can be grown and maintain in a lab). It’s genome was completely sequenced in 2000; 25,000 genes were identified
+
+
+
+First used: The first mutant in A. thaliana was documented in 1873 by Alexander Braun 
+First proposed as a model organism in 1943 by Friedrich Laibach 
+What it’s used for: Due to its small size, generation time and self pollination, it is used to better understand the biology of plants
+Importance: Understanding biology of plants helps with growing crops 
+
+Model Organism: Arabidopsis thaliana: Ethel 
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+Model Organism: Danio rerio; Clinton 
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+Model Organism: Danio rerio; Riddhi 
+Known as the Zebrafish
+Native to South Asia specially: India, Pakistan, Bangladesh, Nepal and Bhutan
+Size: 1.6-2.0 in
+Generation time: 3 months
+Life span:  2-3 years
+Very easy to manipulate: it is predictive for human health/diseases
+75% genetic homologous to humans 
+First used in research in 1972 by george Streisinger 
+Used for drug development, toxicity testing, and clinical therapy 
+Genetic diseases and renal diseases
+It important because it is cost effective, a female can lay up to 200 eggs every 7 days so it is easy to study the offspring
+For the model organism above, state common name, location, size, generation time, live span, how easy to manipulate, genetics, how similar to human, potential economic benefit, biotech history: year first used, what is it used for, role in disease, why it is important, etc.
+
+
+Model Organism: Mus musculus; Jamie 
+Similarity with the human genome of 85% and genome size ~2.5 Gbp.
+Useful for studies of more complex disorders and modern diseases.
+Manipulating mouse genome via mutagenesis, gene trapping, and recombinant parental inbred lines to discover relationships between genotype, phenotype, and unveil disease mechanisms.
+Mouse genome sequence revealed >17000 mouse genes with human orthologs
+Cost effective for research and education
+Known as the house mouse 
+Originated from China, now living around human structures.
+Make their homes in farm fields, grassy and wooded areas (i.e, sheds, basements, attics, barns)
+Total body length 160-200 mm, tail length 78-94mm, hind foot 17-20mm
+Short-lived animals, life span of ~2 years, longer in captivity.
+Useful model organisms in studying human diseases.
+First used in research in 1902 By Abbie Lathrop
+(i.e., ageing, neurodegenerative disorders) and modern diseases (i.e., heart disease, obesity, high blood pressure, stress)
+
+Model Organism: Mus musculus; Greg 
+state common name - House Mouse (Mice)
+location- originated in China, but now all over the World. 
+size- The total length of the mouse body is 160-200 mm. The tail measures 78-94 mm and the hind foot measures 17-20 mm. The average weight of an adult is 15-24 g. The skull length is 20.4 to 22.5 mm with width of 10.4 to 11.5 mm
+generation time- Before the common era to modern day today
+life span- 1-2 years
+genetics- . The ears of Mus musculus are large and naked. The nose is pointed, and the fur is coarse. The color of fur is brownish yellow on the top and gray to buffed on the underside. 
+how similar to human-  It’s a mammal, it’s very similar. 
+potential economic benefit - Majority of the cost comes from education purposes.
+biotech history: year first used - First established in the early 1900s as one of the first genetic model organisms for humans. 
+what is it used for, role in disease - They serve as model phenotypes for human and disease. 
+why it is important - Mice are important because they are used as mammal guinea pigs to conduct projects and experiments to get results before these procedures are performed on humans. 
+
+
+Xenopus laevis; Shivam 
+
+Common Name: African Clawed Frog
+Location: Sub-Saharan-Africa
+Size: 2 - Range from 5 inches in body length
+Generation Time: Takes female 1 year to reach sexaul maturity, breed up to 4 times each year, and can live up to 15 years. 
+One of the most widely used species in laboratory research. Its ovaries are extremely rich in oocytes. One ovary is equal to 1000 mice ovaries in terms of oocytes present. 
+It is utilized in experiments to study embryonic development, cell cycle, secretion of hormones, regeneration, and the overall processes of reproduction. 
+In particular, it is widely used to study membrane proteins. This is do to the fact that the frog oocytes contain little to none origins membrane proteins. 
+It was first used in 1802 regarding a study in parasitological study that took place in Chile.
+Most well known study involves female pregnancy tests (1940 -1950’s)
+It was discovered that female A.C.F began laying eggs when injected with urine of pregnant women. 
+It was the first vertebrate to be genetically cloned. 
+D.N.A is anywhere from 85% to 90% similar to humans. Two lungs to breathe, small intestine and large intestine. 
+Use in Biotech - 
+Xenobots - genetically engineered robots. Robots made of tissue derived from A.C.F stem cells. Ca self heal wounds, and potentially be used to transport medicine inside human body.
+
+
+
+Model Organism: Xenopus laevis; Ethan 
+African clawed frog
+Location: Sub-Saharan Africa
+Size: Vary from 5 to 12 cm
+Generation time: 1 to 2 years
+Life Span: Up to 15 years
+As Xenopus laevis is commonly used to study embryonic development, cell cycle and membrane proteins; it makes it easy to study because they are easy to maintain, produce eggs year-round, and is genetically similar to humans
+Was first used in 1940’s and 1950’s for human pregnancy tests 
+Application for Disease research
+Xenopus has been estimated to share 79% of the identified human disease genes
+
+
+#11 Vincent: How does heterochromia iridum occur? 
+Heterochromia iridum occurs due to variation of melanin that controls pigmentation. This can either be acquired or genetic.
+Acquired
+Eye injuries
+Glaucoma
+Cancer
+Medication side effects
+Genetic
+Waardburg syndrome= melanocytes don’t reach intended destination, altering amount of melanin present in irises
+Sturge-Weber syndrome= alteration in GNAQ gene causes pressure buildup in eyes (glaucoma)
+Horner’s syndrome and Parry-Romberg syndrome= damage to facial tissues which can also alter iris coloration
+Types of heterochromia
+Sectoral- part of one iris is a different color from the rest
+Central- rings or spikes radiate from the pupil
+Complete- one iris is completely a different color from the other
+
+
+#12 Julia
+
+12. How are bacteriophage and viruses used in biotech?
+
+Phage display 						
+
+
+
+
+Vaccine delivery via protective antigen
+	
+
+Antibiotics for antibiotic resistant strains 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tumor targeting
+
+Gene therapy, targeting specific cells (vectors)
+
+Biocontrol for agriculture 
+
+#12 Segun
+Phage mechanism
+Applications 
+Viral mechanism
+
+#13 Animal Cell Line: Ashley
+Animal Cell Lines: Bovine, Canine, fish, monkey, murine, rabbit, 
+and rat cell lines
+Human Cells: HeLa, AK22 (brain), HTCEpi (eye), HEBC3-kt (immortalized bronchial epithelial cells) 
+Insects: Cell lines derived from moths such as B. mori (Silk Moth), M. brassicae (Cabbage Moth), S. frugiperda (Armyworm Moth), and flies such as D. melanogaster (Fruit Fly). 
+Cell lines, whether animal, human, or insect are used in various medical research for their ability to provide an indefinite source of biological material for experimental purposes in different disease state and functional research.
+HeLa cells are the first immortal human cell line found during the treatment of Henrietta Lacks cancer at John Hopkins in 1951 .
+
+#13 Animal Cell Culture; Jamie
+Insect Cell Line:
+Drosophila S2
+Sf9 (commonly used)
+Sf21
+Human Cell Lines: 
+MCF-7 (breast cancer)
+HL 60 (Leukemia)
+HeLa (Human cervical cancer cells)
+HeLa Cells- The first immortal human cell line obtained from the treatment Henrietta’s Cancer by John Hopkins researcher Dr. George Grey in 1951.
+Both are used to express proteins in research.
+Animal cell culture; cells taken out of the organ of an experimental animal either directly or mechanical or enzymatic action.
+Cells can also be obtained by pre-made cell line or cell strain.
+Cells are removed from an animal or plant an grown in favorable environment.
+
+
+Chapter 2
+
+#14 Segun
+Transcription begins from DNA to RNA
+Eukaryotes use 4 sequences: TATA, tf2b, initiator, downstream promoter 
+RNA polymerase bind to DNA to initiate transcription. Eukaryotes use basal transcription factors.
+For termination Rho terminators
+Post transcriptional modification
+mRNA capping starts at 5’ 
+Poly A tail is involved in polyadenylation of mRNA at 3’
+RNA splicing: exons and introns. Spliceosomes remove introns and keeps exons
+
+#14 Ethel
+14. How does transcription differ in eukaryotes? How is it regulated in eukaryotes? Describe mRNA processing: what happens at the beginning, middle, and end of the pre-mRNA?
+
+#14 Leila
+
+
+
+
+
+Cap is added to the 5’ end, Polyp-A tail is added to the 3’ end
+Introns are spliced
+Mature mRNA is formed 
+TFIID+TBP binds to TATA box
+TFIIB binds to promoter, triggering binding of RNA Poly II (associated w/ TFIIF) + TFIIA
+RNA Poly II moves down the template strand
+
+#15 Dominique
+Read as triplets/codons
+Occurs at the ribosome
+3 main steps:
+Initiation - ribosome, mRNA, initiator tRNA (Met)
+Elongation 
+Termination
+Key Difference between prokaryotes and eukaryotes
+Eukaryotes: translation and transcription is asynchronous
+Prokaryotes: synchronous
+
+#15 Julia -  Protein translation: steps in the process, difference between prokaryotes and eukaryotes, translation factors and their roles.
+Steps in the process
+Initiation 
+Ribosome assembly
+Ribosome binding to mRNA with the help of initiation and translation factors
+Elongation
+Adding successive amino acid
+APE sites
+Termination
+Release factors bind to stop codon
+Ribosome falls apart
+Polypeptide folds into protein
+
+
+Translation factors - proteins needed to help assemble the ribosome
+N-formyl-methionine (f-met) 
+Binds to tRNA to activate it
+tRNA + f-met bind to small ribosomal subunit
+Initiation factors (I1, I2, I3)
+Bind to small ribosomal unit
+I3 released
+Bigger ribosomal subunit assembles
+
+
+
+Eukaryotes
+Modification of mRNA
+Binding of ribosome is more simple
+Needs more initiation factors
+mRNA codes for 1 protein
+60S and 40S
+
+
+Differences:
+Prokaryotes
+No modification of mRNA
+mRNA codes for multiple proteins and has multiple binding sites
+Has multiple ribosomes 
+Simultaneously transcription and translation
+50S and 30S
+
+#16 Giovanni
+Symbiotic Theory 
+Aims to explain the origin of mitochondria and chloroplasts
+Mitochondria and Chloroplasts were once aerobic bacteria (prokaryotes) that were consumed by larger anaerobic bacteria but not digested
+Evidence for Symbiotic Theory
+Both mitochondria and chloroplasts contain their own circular DNA 
+Both contain their own ribosomes 70s (30s and 50s subunits)
+Both consist of a double membrane
+Both reproduce via binary fission
+Central Dogma
+Explains the flow of genetic information
+DNA → RNA→ Protein
+DNA Replication
+Transcription
+Translation
+
+#16 Riddhi
+Symbiotic Theory: 
+Origin of mitochondria and chloroplasts
+Prokaryotes consumed by anaerobic bacteria 
+Symbiotic Theory evidence:
+Circular DNA
+Reproduced by binary fission
+Double Membrane
+Central Dogma:
+The flow of genetic information
+DNA - RNA - Protein 
+DNA replication
+Transcription
+Translation

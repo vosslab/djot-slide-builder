@@ -1,0 +1,608 @@
+Set #2
+Talking Points
+Sept 15, 2022
+
+Talking Point Assignments
+Talking Point #1: DNA isolation -- Dlen, Rikita, 
+Talking Point #2: NA gels -- Kimberly, Audrey, 
+Talking Point #3: DNA detection -- Laura, Sonia, 
+Talking Point #4: FISH -- Nathi, Audrey, 
+Talking Point #5: DNA cloning -- Shahd, Sonia, Hammad
+Talking Point #6: gene library -- Nathi, Meaghan, 
+Talking Point #7: in vitro DNA -- Rawan, Deena, 
+Talking Point #8: chemical DNA -- Ozzie, Shahd, 
+Talking Point #9: Sanger DNA -- Kher, Rawan, Dlen
+Talking Point #10: Next Gen DNA -- Ethan, Deena, 
+Talking Point #11: What is PCR -- Tania, Meaghan, 
+Talking Point #12: RAPD -- Laura, Iqbal, 
+Talking Point #13: RT-PCR/qPCR -- Hammad, Ozzie, 
+Talking Point #14: RNA classes -- Brianna, Rikita, 
+Talking Point #15: siRNA -- Kher, Tania, 
+Talking Point #16: ribozymes -- Iqbal, Ethan, 
+Talking Point #17: RNA selection -- Brianna, Kimberly, 
+https://docs.google.com/spreadsheets/d/1z00qpakUYeJNYL_onsqeviyl7LigNMeGvuWSSSWQfJY/edit#gid=132086369 
+
+Talking Points Guide
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Chapter 3
+
+#1 Dlen  
+1. Explain DNA Isolation from Cells. How does the isolation of eukaryotic DNA differ from prokaryotes? Focus on how to break open the cells.
+DNA isolation is  extraction process of DNA from different sources.
+Three steps: lysis, precipitation and purification.
+Lysis- nucleus and cells broken releasing DNA.
+Precipitation- separates DNA from debris. 
+Purification- remove cellular debris and unwanted material.
+mtDNA in eukaryotes.
+8 methods for breaking the cell walls
+Mechanical 
+Blenders, presses, sonication,and grinding with Abrassive.
+Non-mechanical 
+Enzymatic digestion and chemical methods
+Prokaryotes bacterial cell treated with lysosomes.
+Eukaryotic cells have a membrane bound nucleus.
+Plant and fungi have cell walls.
+https://www.krackeler.com/catalog/sigma/ROCHE/11667327001
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/Dna-isolation-methods
+https://openoregon.pressbooks.pub/mhccmajorsbio/chapter/dna-isolation-gel-electrophoresis-and-pcr/
+https://sciencenotes.org/prokaryotic-vs-eukaryotic-similarities-and-differences/
+https://www.biosciencenotes.com/cell-disruption-technique/
+
+
+
+#1 Rikita  
+1. Explain DNA Isolation from Cells. How does the isolation of eukaryotic DNA differ from prokaryotes? Focus on how to break open the cells.
+There are three steps involved in DNA isolation such as:
+Lysis
+Precipitation
+purification. 
+Isolation eukaryotic DNA differ from prokaryotes because eukaryotes has mitochondrial DNA where prokaryotes does not have. 
+How to break open cell: 8 Methods to break the cell.
+Mortar & Pestle
+Beadbeating
+Sonication
+Homogenizer
+Freezing
+High temperature
+Enzymes
+chemicals.
+
+
+
+#2 Kimberly
+2. Explain Nucleotide Electrophoresis. Gel types, staining. Explain the process of Southern Blotting.
+Agarose is main ingredient for the gel
+Separates fragments based on size and then compared to a ladder
+Stain is added to sample and then looked at under a UV light.
+
+
+
+#2  Audrey
+Steps of southern blotting:
+DNA digestion
+Gel electrophoresis
+Blotting
+Probe labeling 
+Hybridization and washing
+Detection
+Used to identify a sample of DNA
+
+
+Digest the DNA with an appropriate restriction enzyme.
+Run the digest on an agarose gel.
+Denature the DNA (usually while it is still on the gel). ... 
+Transfer the denatured DNA to the membrane. ... 
+Probe the membrane with labeled ssDNA. ... 
+Visualize your radioactively labeled target sequence.
+
+
+
+#3 Laura 
+3. How does UV absorption for DNA work? What are three methods for detecting specific sequences of DNA? 
+-UV absorption, measure absorbance at 260nm
+-A second absorbance collected at 280nm is collected to determine purity ratio. Pure DNA ratio = 1.8
+-Ways to detect specific sequences:
+	-Radioactive labeling
+	-Fluorescence
+	-Chemical tagging
+
+#3 Sonia 
+3. How does UV absorption for DNA work? 
+Nucleic acids strongly absorb UV light with wavelengths of 260 nm due to the resonance structure of the purine and pyrimidine bases. 
+The intensity of this absorbance is proportional to the concentration of nucleic acid. 
+What are three methods for detecting specific sequences of DNA? 
+Polymerase Chain Reaction (PCR)
+Southern blot 
+Fluorescence In Situ Hybridization (FISH)
+
+
+#4 Nathi  
+Fluorescence in situ hybridization (FISH) is a technique used to look at genes or chromosomes in cells and tissues.
+Single strand of DNA that contain a fluorescent dye (probes) and added to a cell or tissue sample.
+Probes hybridize to onto the complementary sequences in certain genes or chromosomes in cells/tissues.
+Light up when viewed under a fluorescence microscope.
+Uses
+Gene mapping (Identify where a specific gene is located on a chromosome)
+Number of genes present
+Detect chromosomal abnormalities
+Diagnose genetic diseases
+
+In situ – In position/ in its original place 
+
+
+#4 Audrey  
+In situ → in natural or original position or place
+Recently has been used in malignant tumor studies
+provides researchers with a way to visualize and map the genetic material in an individual's cells, including specific genes or portions of genes. 
+
+#5 Shahd 
+DNA cloning is the process of making exact replicas of a piece of DNA*.
+Isolation 
+Insert is inserted into circular DNA piece
+Ligation 
+Transformation
+Plasmid vectors used to drive plasmids into host cell
+pBR322 Vector 
+→ used in E. coli & genetic engineering
+→ allows rapid &  simple preparation of plasmids 
+→ Contains 2 antibiotic resistance genes
+-often times genes*
+4 steps
+Isolation of the target DNA fragment (insert) to be copied
+Ligation of inserts into a cloning vector → recombinant molecules (plasmids)
+Transformation: Plasmids are transformed into bacteria or other suitable host
+
+
+
+
+
+
+#5 Sonia 
+5. Explain DNA Cloning with Plasmid Vectors (types, features, uses). Select a commercial plasmid (e.g., pJet 1.2) and describe its use?
+DNA cloning is a technique that makes many identical copies of a particular piece of DNA, such as a gene. 
+A specific (target) gene is inserted into a circular piece of DNA called a plasmid. 
+Then the plasmid is introduced into a bacteria. When the bacteria reproduce, they replicate the plasmid and pass it onto their offspring (making copies of the DNA it contains). 
+Commercial Plasmid
+Lentiviral Packaging Plasmid Mix → psPAX2/pMD2.G 
+
+#5 Hammad 
+
+
+
+      It is the process of making identical copies of particular piece of DNA.
+                   Steps involved in DNA Cloning
+
+Isolation of DNA(Gene of interest) & Insertion into the suitable vector.
+Introduction of recombinant DNA into suitable host
+Selection and screening methods of recombinant clones.
+
+                                             Plasmid pJet 1.2           
+Positive selection cloning vector.
+Lethal insert in a positive selection cloning vector enables effective recovery of blunt-ended PCR products.
+
+
+DNA CLONING
+
+#6 Nathi 
+A gene library is a large collection of DNA fragments cloned from an organism
+Uses 
+Genome mapping and genome sequencing
+Study genetic mutation
+Study genetic diseases
+
+
+#6 Meaghan 
+What is a gene library? 
+A gene library is a collection of genomic DNA from a single organism
+Typically stored as self replicating vectors of different inserts of DNA
+Genes of interest
+How do you construct one? 
+Isolate a sample of DNA from organism 
+Cut the DNA into pieces with restriction enzymes 
+Cut cloning plasmid with same restriction enzyme 
+Add cut plasmid, genomic DNA, and DNA ligase to same test tube 
+What is it used for?
+Used to collect and store genetic information 
+To study gene regulation 
+To study effects of a mutation 
+Used to find natural products 
+Antimicrobials 
+Uncover and optimize biochemical pathways 
+
+
+Chapter 4
+
+#7 Rawan
+In Vitro DNA synthesis 
+In a laboratory 
+DNA denatured by heat
+a short single-stranded oligonucleotide of DNA is used as a primer
+In Vivo DNA synthesis 
+
+Inside the body
+DNA denatured by enzymes
+Uses RNA primer  
+7. Explain the process of in vitro DNA synthesis (using enzymes). Compare it to the in vivo process. What do “in vitro” and “in vivo” mean?
+
+
+#7 Deena
+in vitro DNA synthesis (using enzymes): 
+In vitro DNA synthesis is when PCR copies DNA using a special type of DNA polymerase, known as Taq DNA polymerase.
+
+In Vitro: It is an outside living organism. The in vitro synthesis is done by temperature.
+In Vivo: In a living organism.
+
+
+So in vitro DNA synthesis is the replication of a DNA molecule within a laboratory mixture that has all the necessary enzymes and components.
+
+The polymerase chain reaction is an in vitro process 
+DNA replication is an in vivo process
+
+The Taq is utilized because it has the capacity to function at higher temperatures.
+
+
+
+#8 Chemical DNA - Ozzie
+Chemical synthesis of DNA (without enzymes)
+-Phosphoramidites synthesis: Standard for Oligonucleotide synthesis
+Why bother synthesizing DNA chemically?
+Allows for manipulation and research needed in genetic testing and therapeutic medicines.
+
+
+PHos four amid dites
+What are phosphramidites: modified nucleosides with protection groups that enhances synthesis that can be easily manipulated by scientist using basic reactions 
+Allows control over what bases are addedin cyclic reaction
+Liquid and solid phosphramidite synthesis
+What is oligonucleotide:  short single stranded  DNA or RNA—-------------
+Modified nucleosides allow for oligonucleotide synthesis,.  Gold Standard  since  1981
+ but theres some more efficient ways involving silicon chips now. 
+
+
+
+
+#8 Shahd
+Genetic engineering & enzyme chemistry
+→ Polymerase chain reaction (PCR)
+→ Small piece of double stranded DNA into solution containing DNA polymerase, nucleotides & primers
+→ Solution heated to separate DNA strands
+→ When cooled, polymerase creates copy of each strand
+→ Repeat every 5 minutes 
+Revolutionized science 
+Quicker
+Forensics, microbio, medical diagnostics
+Drug manufacturing, gene therapy
+No need to begin with pre-existing DNA sequences
+
+#9 Kher 
+Shotgun sequencing
+To sequence long DNA strands of whole genome
+Random broken up short DNA segment strands
+Fragmentation + sequencing 
+overlapping reads for target DNA
+Sanger sequencing
+To determine the sequence of nt bases in a short DNA strand (100-1,000 bp in length)
+99.99% base accuracy 
+Steps:
+DNA sequence of chain termination PCR
+Size separation of chain-terminated oligonucleotides by gel electrophoresis
+Gel analysis and determination of DNA sequence 
+
+
+
+At the end the fragments are labelled with dyes which denotes the final nucleotide. After the reaction is completed the fragments are let to run through the tube which contains a matrix of gel for performing gel electrophoresis.
+The short fragments are moved quickly and the long fragments are moved very slowly.
+However, when these fragments reach the end line laser is illuminated depending upon the coloured dyes. And from the coloured dyes the original piece of DNA can be detected. And the sequence of DNAs is being read in a chromatogram.
+
+
+#9 Rawan
+Shotgun Sequencing
+ Used for synthesizing longer sequences 
+DNA is shredded into smaller pieces (by restriction enzymes)
+Employs computational biological techniques to look for overlaps in DNA 
+
+
+9. (Not in book/use internet) How does the Sanger DNA Sequencing work? How did they go from using gel electrophoresis to fluorescence? Explain shotgun sequencing.
+https://en.wikipedia.org/wiki/Sanger_sequencing 
+https://en.wikipedia.org/wiki/Shotgun_sequencing 
+
+#9 Dlen
+ Sanger DNA Sequencing and shotgun sequencing
+Sanger is DNA sequencing involving electrophoresis, with random process of chain terminating dideoxynucleotides by DNA polymerase.
+Sequencing in form of extension products of different lengths terminated at ddNTP.
+DNA sequences with reads of >500 and 99.99% accurate.
+Short DNA strands of 100- 1000 base pairs.
+Shotgun sequencing technique determines DNA sequence of an organism's genome.
+
+
+Shotgun sequencing
+Sanger DNA sequencing
+https://www.researchgate.net/figure/The-Sanger-sequencing-method-in-7-steps-1-The-dsDNA-fragment-is-denatured-into-two_fig2_234248746
+https://en.wikipedia.org/wiki/Sanger_sequencing https://en.wikipedia.org/wiki/Shotgun_sequencing 
+https://www.genome.gov/genetics-glossary/Shotgun-Sequencing
+
+
+#10 Ethan
+10. (Not in book/use internet) Describe the three main Next Generation Sequencing techniques. Which one is the fastest? Which one is the cheapest? 
+Pyrosequencing (Roche 454) 
+	Using detection of light when DNA polymerase binds to a nucleotide letting off pyrophosphates
+Run time is about 4 hours   
+70 Cents per Run
+Sequencing by synthesis (Illumina) 
+	Fragments DNA makes multiple copies of reverse and forward strands then pieces them back together
+	Max 150$ No upfront price available
+	3 hours per run 
+Ion semiconductor (Ion Torrent) 
+Takes Single strand DNA dumps loose nucleotides and measures the H ion signaling to categorize the matches to make a complementary strand
+Run time 100-200 per hour
+Up Front 50k per run 1K
+
+
+#10 Deena
+Next Generation Sequencing techniques. 
+Pyrosequencing (Roche 454): 
+Reads the fastest
+Sequences multiple reads at once
+DNA & RNA are fragmented into shorter reads
+
+Sequencing by synthesis (Illumina) 
+Longer fragments are ligated
+PCR used 
+They are separated into single strands to be sequenced
+Ion semiconductor (Ion Torrent) 
+Most expensive. 
+The slide is flooded with a single species along with buffers and polymerase, one NTP at a time. 
+pH is detected in each well as the H+ ions are released, which decreases it.
+
+Next Generation Sequencing techniques are also known as high throughput sequencing. It is the term used to describe different modern sequencing technologies that allow for the sequencing of DNA and RNA quicker and cheaper. 
+
+Pyrosequencing:
+Reads the fastest
+similar to Illumina, it sequences multiple reads at once by reading optical signals as bases
+DNA and RNA are fragmented into shorter reads. The fragments are then amplified by PCR aka polymerase chain reaction using adaptor specific primers
+Light signals are released and they determine which beads the nucleotides are added to
+Illumina: 
+Longer fragments are ligated, or joined together to generic adaptors and heated to a slide. 
+The PCR is carried out to amplify each read. 
+They are separated into single strands to be sequenced
+The nucleotides are flouorescently labelled with the color corresponding to the base, and there is also a terminated so only one base is being added at  time. 
+The fluorescent signal indicates a base has been added. 
+
+NTP: NUCLEOSIDE TRIPHOSPHATE
+
+Ion semiconductor (Ion Torrent) 
+Most expensive. 
+The slide is flooded with a single species along with buffers and polymerase, one NTP at a time. 
+pH is detected in each well as the H+ ions are released, which decreases it. The changes in PH allows us to determine is the base was added to the sequence read
+dNTPs are washed away and the process is repeated cycling through different dNTP species
+pH change is used to determine how many based were added with each cycle 
+DNTP = deoxynucleotide triphosphates
+
+
+
+
+
+#11 Tania
+Polymerase Chain Reaction
+DNA copy machine 
+DNA polymerase = printer 
+Using steps of replication
+3 step process
+Then and Now
+HBB gene 
+Miniaturized and portable 
+Degenerate Primers
+Designed based on amino acid sequences 
+Different nucleotides at wobble position, that still code for same amino acid 
+11. Briefly explain Polymerase Chain Reaction. How has PCR changed since its original design? What are degenerate primers?
+
+#11 Meaghan
+Briefly explain Polymerase Chain Reaction. 
+Method used to rapidly make complete or partial copies of DNA 
+Denaturation to break protein structure into single strand DNA 
+Annealing of primers at a lower temperature 
+Extension of DNA by growing complementary strand 
+Product is 2 identical dsDNA  
+Makes millions to billions of copies 
+How has PCR changed since its original design? 
+Originally used to detect mutations in sickle cells
+Multiplexing of loci in one tube 
+Quantitative analysis possible due to reverse transcription 
+What are degenerate primers?
+A mix of oligonucleotide sequences with all possible bases at a certain position 
+Gives rise to possible primers for nucleotide variations of a given protein sequence
+
+#12 Laura
+12. What is Random Amplified Polymorphic DNA (RAPD). How is it used for bacterial identification from a handful of dirt? Compare to the 16S rDNA method for bacterial identification?
+-Purpose is to test the relatedness of two organisms 
+
+-Single primer to amplify fragments from a given template to produce a “fingerprint”
+
+-Gel electrophoresis
+
+-16s rRNA identifies species level and differentiates between close strains
+
+#12 Iqbal
+12. What is Random Amplified Polymorphic DNA (RAPD). How is it used for bacterial identification from a handful of dirt? Compare to the 16S rDNA method for bacterial identification?
+RAPD is Ploymerase Chain reaction based method. For RAPD several arbitrary short primers 8-12 nucleotides are used which can bind randomly in genomic location. 
+PRINCIPLE: Its is type of PCR but segments of DNA that are amplified are random. 
+No knowledge of DNA sequence of targeted genom is required to perform this. Technique.
+Application : Gene Mapping studies, crop variety identification and Microbial Strain identification
+Advantages:  can be done with low amount of DNA.
+
+GEL ELECTROPHOROSIS
+
+
+
+
+
+
+
+
+
+
+#13 Hammad
+
+
+Reverse Transcriptase
+The process of DNA synthesis using  RNA as a Template
+is known as Reverse Transcription.
+Reverse transcriptase is RNA dependent DNA polymerase enzyme
+That transcribes single stranded RNA into the DNA. (Hybrid DNA).
+Reverse transcriptase role in Retroviruses
+Retroviruses include an enzyme called reverse transcriptase,
+The enzyme  which turns the RNA genome contained within the 
+retrovirus particle into double-stranded DNA.
+To create an RNA:DNA hybrid, reverse transcriptase 
+            first transcribes a complementary strand of DNA.
+Quantitative PCR / Real time PCR:
+Nucleic acids are detected, described, and quantified using (qPCR).
+RNA transcripts are measured in RT-qPCR by first reverse transcribed into cDNA, as mentioned above, and then qPCR is performed. 
+Use in Biological Research:
+quantitative measurement of gene copy number (gene dosage) 
+in transformed cell lines or the presence of mutant genes.
+
+#13 RT-PCR/qPCR - Ozzie
+Reverse transcriptase and Retroviruses
+Viruses use RNA dependent RNA polymerase aka Reverse transcriptase to convert RNA -> DNA
+Retroviruses use RT to convert their RNA genome into double stranded DNA
+Reverse transcriptase used in Polymerase chain reaction
+Lab technique used to amplify specific DNA used to measure if specific RNA is present (Qualitative)
+
+Quantitative PCR
+Lab technique used to determine HOW MANY copies (Quantitative)
+
+qPCR  used for in biological research
+Used to measure changes in RNA levels do to either environment and or and drug being studied
+
+Rna-dna
+Retroviruses convert RNA to dsDNA
+Two types of PCR Qualitative and quantitative
+Yes its used to determine changes in RNA levels,,,, used because it sealed so less contamination and no need for electrophorisys 
+
+
+Chapter 5
+
+#14 Brianna
+Name and briefly define the big 3 classes of RNA?
+Ribosomal RNA (rRNA) - is a part of the structure of ribosomes 
+Messenger RNA (mRNA) - aids in translation by making proteins  
+Transfer RNA (tRNA) - transport amino acids to ribosome 
+
+What are some other types of RNA classes? Choose two other types of RNA and go in-depth.
+Non Coding small-interfering RNA (siRNA) - can identify specific mRNA and are able to tigger it to degrade 
+CRISPR RNA (crRNA) - can be used in eukaryotic cells to alter genes by deleting them or to add tags/markers
+
+
+#14 Rikita
+14. Name and briefly define the big 3 classes of RNA? What are some other types of RNA classes? Choose two other types of RNA and go in-depth. 
+Three classes of RNA
+mRNA- transcribes the genetic  code from DNA into form that can used to make proteins.
+rRNA- isolated in the cytoplasm of a cell, where ribosomes are found.
+tRNA- tRNA is located in the cellular cytoplasm and is involved in protein synthesis.
+Other types of RNA classes:
+snRNA- small nuclear RNA
+Regulatory RNAs
+tmRNA- transfer-messenger RNA
+Ribozymes (RNA enzymes)
+dsRNA - double-stranded RNA
+
+
+#15 Kher
+Antisense RNA
+Regulation of gene expression by targeting mRNA
+Inhibits translation 
+Dicer
+cleaves dsRNA into siRNA
+facilitates the activation of RISC
+RISC (RNA-induced silencing complex)
+Recognize complementary mRNA and cleaves it 
+Triggered by dsRNA
+Approved antisense therapies
+Milasen 
+Fomivirsen
+Side effects 
+Lower respiratory infection
+Fever
+Constipation
+Vomiting
+
+#15 Tania
+Antisense RNA 
+Regulatory RNA molecule 
+Controls protein translation 
+RNA interference pathway (RNAi)
+dsRNA short double stranded RNA 
+Dicer  endonuclease that cuts dsRNA into siRNA (small interfering RNA) 
+RISC- RNA induced silencing complex 
+Cleaves target mRNA 
+Antisense Therapies 
+Used for splicing defects 
+Beta-thalassemia 
+Nusinersen for spinal muscular dystrophy
+Side effects
+Fever, irritability, lethargy, muscle twitching 
+15. What does antisense RNA control in the cell? 
+	Antisense RNA is complementary to target mRNA, annealing of antisense and mRNA blocks either protein translation or splicing of introns 
+Describe the roles of Dicer, dsRNA, RISC, and siRNA. 
+Are there any antisense therapies currently in general use? 
+	Beta thalassemia- blood disorder caused by extra splice sites 
+	Nusinerson for spinal muscular dystrophy using antisense oligonucleotides, modulates splicing 
+What are the side effects of these therapies?
+
+#16 Iqbal
+16. What are Ribozymes? What do they do? What are Riboswitches? What is the  potential of riboswitches in medicine?
+An RNA molecule capable of acting as an enzyme
+They have the ability to catalyze a specific biochemical reaction , including RNA splicing in gene expression similar to the action of protein enzyme.
+
+#16 Ethan
+16. What are Ribozymes? What do they do? What are Riboswitches? What is the  potential of riboswitches in medicine?
+A ribozyme is an RNA molecule that acts like an enzyme
+They are catalyzers that help speed up reactions 
+Riboswitches are RNA elements that bind with ligands and can regulate mrna expression 
+Could be the new form of antibiotic and possible cancerous gene regulation
+
+#17 Brianna
+What are some application for synthetic ribozymes?  
+Suppress the expression of genes
+such as genes for cancer and pathogenic viruses
+
+How does in vitro Selection of Ribozymes work?
+In vitro selection allows for the creation of new ribozymes 
+Changing the ribozymes DNA through mutagenesis allows for it to become a better version of itself
+
+#17 Kimberly 
+17. Engineering Ribozymes. What are some application for synthetic ribozymes? How does in vitro Selection of Ribozymes work?
+In vitro Selection
+Allows new reactions to be seen from random RNA sequence
+
+Applications:
+Cancer treatments
+Blocking of certain gene expressions
+
+The End
