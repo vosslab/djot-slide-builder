@@ -1,0 +1,4473 @@
+color-theme: biotechnology
+
+=== layout: one-plus-two-panels
+
+
+# Lecture 04C: Proteomics
+
+
+@left
+
+
+- Set #3 talking points
+- Chapter 9: Proteomics
+- Fall 2026
+- Dr. Neil Voss
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: two-plus-one-panels
+
+
+# Chapter 9
+
+
+@top-left
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-left
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@right
+
+
+- Protein profiles
+- Metabolite signatures
+- Cell physiology
+=== layout: one-plus-two-panels
+
+
+# Proteomics And Metabolomics
+
+
+@left
+
+
+- 1. What is proteomics? What is metabolomics? What are they used for?
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Proteomics
+
+
+@left
+
+- Proteomics: large-scale protein analysis
+- Proteome: proteins produced or modified in one organism or system
+
+@top-right
+
+- mRNA levels as translation proxy
+- Post-translational modifications
+- Alternative splicing
+- Protein complexes
+- Degradation rates
+
+@bottom-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: two-panels
+
+
+# Metabolomics
+
+
+@left
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@right
+
+
+- Study of chemical processes involving metabolites.
+  - Look for unique chemical fingerprints that specific cellular processes leave behind
+- Differences\:
+  - Proteomics analyze the set of gene products being produced in the cell.
+  - Metabolomics gives an instantaneous snapshot of the physiology of that cell.
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@caption
+
+
+Proteomics And Metabolomics
+=== layout: two-plus-one-panels
+
+
+# Proteomics vs. Metabolomics
+
+
+@top-left
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@right
+
+
+- Proteome-scale analysis
+- Metabolite fingerprints
+- Biological state
+=== layout: two-plus-one-panels
+
+
+# Proteomics vs. Metabolomics For each of the upcoming slides,  decide whether it relates to (A) proteomics or (B) metabolomics.
+
+
+@top-left
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-left
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@right
+
+
+- Compare each clue
+- Identify the data type
+- Explain the readout
+=== layout: one-plus-two-panels
+
+# Question 1
+
+@left
+
+- Proteomics or metabolomics?
+- Which field studies chemical fingerprints left by cellular processes?
+
+@top-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+# Answer 1: Metabolomics
+
+@left
+
+- [Metabolomics]{color=red}
+- Metabolite signatures reflect cellular chemistry and physiology.
+
+@top-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+# Question 2
+
+@left
+
+- Proteomics or metabolomics?
+- Which field analyzes the gene products produced or modified in a cell?
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 2: Proteomics
+
+@left
+
+- [Proteomics]{color=red}
+- The proteome is the set of proteins in an organism or system.
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+# Question 3
+
+@left
+
+- Proteomics or metabolomics?
+- Which field can use mRNA levels to estimate protein production?
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+@bottom-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 3: Proteomics
+
+@left
+
+- [Proteomics]{color=red}
+- mRNA is one proxy for protein translation; protein abundance also depends on processing and turnover.
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+@bottom-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+# Question 4
+
+@left
+
+- Proteomics or metabolomics?
+- Which field gives a snapshot of a cell's physiological state?
+
+@top-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+# Answer 4: Metabolomics
+
+@left
+
+- [Metabolomics]{color=red}
+- Metabolite levels report the cell's current biochemical state.
+
+@top-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+# Question 5
+
+@left
+
+- Proteomics or metabolomics?
+- Which field tracks the relative abundance of chemical intermediates and products?
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 5: Metabolomics
+
+@left
+
+- [Metabolomics]{color=red}
+- Metabolite profiles reveal substrates, intermediates, and products.
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+# Question 6
+
+@left
+
+- Proteomics or metabolomics?
+- Which field can measure protein degradation rates?
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+@bottom-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 6: Proteomics
+
+@left
+
+- [Proteomics]{color=red}
+- Protein profiles include abundance and turnover over time.
+
+@top-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+@bottom-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+# Question 7
+
+@left
+
+- Proteomics or metabolomics?
+- Which field studies protein products affected by alternative pre-mRNA splicing?
+
+@top-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+# Answer 7: Proteomics
+
+@left
+
+- [Proteomics]{color=red}
+- Alternative splicing can produce distinct protein isoforms.
+
+@top-right
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+@bottom-right
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+hidden: true
+
+# Proteomics And Metabolomics
+
+
+@left
+
+
+- 5. studies the relative abundance of chemical intermediates and products of a cell
+
+- [Metabolomics]{color=red}
+
+
+@top-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+
+hidden: true
+
+# Proteomics And Metabolomics
+
+
+@left
+
+
+- 6. studies the protein degradation rate of a cell
+
+- [Proteomics]{color=red}
+
+
+@top-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+hidden: true
+
+# Proteomics And Metabolomics
+
+
+@left
+
+
+- 7. studies the alternative splicing of pre-mRNA transcripts
+
+- [Proteomics]{color=red}
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to proteomics and metabolomics](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Protein Gels And Western Blotting
+
+
+@left
+
+
+- 2. What are some different types of protein gels? What is western blotting? Compare them to nucleic acid gels from last week.
+
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_003.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_006.png)
+=== layout: one-plus-two-panels
+
+
+# Two Major Types
+
+
+@left
+
+- Agarose: physical gel setting; easy casting and handling
+- Polyacrylamide (PAGE): acrylamide + bis-acrylamide
+- Safety: uncured acrylamide is a potent neurotoxin
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_006.png)
+
+
+@bottom-right
+
+
+![Acrylamide and bis-acrylamide chemical structures](assets/lect04c-talking_points_set_3/image_008.png)
+=== layout: two-panels
+
+
+# Agarose Gel
+
+
+@left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_003.png)
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_004.png)
+
+
+@right
+
+
+- Agarose is added to buffer solution (TAE)
+- Place in microwave to boil
+- Then pour hot solution into gel cassette
+- Commonly used for nucleic acid NOT protein
+=== layout: two-panels
+
+
+# Agarose Polymer
+
+
+@left
+
+
+- Agar melts at 85  deg C (185  deg F) and solidifies around 32-40  deg C (90-104  deg F). This property lends a suitable balance between easy melting and good gel stability at relatively high temperatures.
+- Gel density is controlled by concentration of agarose
+
+
+@right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_006.png)
+=== layout: two-panels
+
+
+# Acrylamide
+
+
+@left
+
+
+![Acrylamide and bis-acrylamide chemical structures](assets/lect04c-talking_points_set_3/image_008.png)
+
+- Acrylamide
+
+
+@right
+
+
+![Acrylamide and bis-acrylamide chemical structures](assets/lect04c-talking_points_set_3/image_008.png)
+
+- Bis-acrylamide
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_009.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: two-panels
+
+
+# Considerations
+
+
+@left
+
+
+- Acrylamide is harder to make
+  - so when looking at nucleic acids, use agarose
+- You can purchase precast acrylamide gels with additional features
+  - stacking gels
+  - gradient gels
+
+
+@right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_010.png)
+=== layout: one-plus-two-panels
+
+
+# Electrophoresis
+
+
+@left
+
+
+- Electrophoresis is the motion of dispersed particles relative to a fluid (gel) under the influence of a uniform electric field.
+
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+=== layout: two-plus-one-panels
+
+
+# Not all proteins have a negative charge. How do we deal with that?
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+
+@right
+
+
+- Protein charge
+- pH effects
+- SDS-PAGE preparation
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_011.jpg)
+
+
+@caption
+
+
+SDS + protein
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_012.png)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: gallery
+
+
+# Protein Gels And Western Blotting
+
+
+@gallery
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_013.jpg)
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_014.png)
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_015.png)
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_016.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_017.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_018.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: two-plus-one-panels
+
+
+# Gel Staining
+
+
+@top-left
+
+
+![Student-created comparison of stacking and gradient gels.](assets/lect04c-talking_points_set_3/student_stacking-and-gradient-gels.jpg)
+
+
+@bottom-left
+
+
+![Student-created sequence for staining, destaining, and visualizing protein bands.](assets/lect04c-talking_points_set_3/student_coomassie-staining.jpg)
+
+
+@right
+
+
+- Coomassie blue
+- Silver stain
+- Band contrast
+=== layout: two-panels
+
+
+# Gel Staining
+
+
+@left
+
+
+- Proteins separated by SDS-PAGE are visualized by staining the gel with dyes such as Coomassie blue.
+
+
+@right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_019.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_021.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: one-plus-two-panels
+
+
+# Gel Staining
+
+
+@left
+
+
+- Proteins separated by SDS-PAGE are visualized by staining the gel with dyes such as Coomassie blue.
+- Silver staining is more sensitive technique commonly used
+
+
+@top-right
+
+
+![Acrylamide and bis-acrylamide chemical structures](assets/lect04c-talking_points_set_3/image_008.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_010.png)
+=== layout: two-plus-one-panels
+
+
+# Stain and Destain
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_022.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_023.png)
+
+
+@right
+
+
+- combination of methanol and acetic acid
+=== layout: two-plus-one-panels
+
+
+# Compare to Nucleic Acids
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_019.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+
+@right
+
+
+- DNA stains
+- Protein stains
+- UV detection
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_025.jpg)
+
+
+@caption
+
+
+Ethidium Bromide
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_026.jpg)
+
+
+@caption
+
+
+Nucleic Acid gels [usually]{color=red} require UV light, whereas protein gels do not
+=== layout: two-over-one-panels
+
+
+# InstaStain Blue
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_027.png)
+
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+
+
+@bottom
+
+
+- InstaStain Blue card contains a small amount of blue DNA stain that is used to visualize the DNA.
+- No UV required
+  - does add 10 min to protocol to apply staining.
+  - not as sensitive and EtBr
+=== layout: two-plus-one-panels
+
+
+# What if you want to find a particular protein in your gel?
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+
+@right
+
+
+- Antibody recognition
+- Target protein
+- Signal detection
+=== layout: two-panels
+
+
+# Western Blotting
+
+
+@left
+
+
+- In western blotting or immunoblotting, proteins are separated in an SDS-PAGE gel, transferred to a polymer, and then stained with a fluorescent antibody.
+
+
+@right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+- Quick check: What does an antibody recognize?
+=== layout: two-panels
+
+
+
+# Antibody Recognition
+
+
+@left
+
+
+- Antigen exposure prompts production of an antibody.
+- The antibody recognizes a specific antigenic determinant (epitope).
+
+
+@right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_032.png)
+
+
+@caption
+
+
+Protein Gels And Western Blotting
+=== layout: one-plus-two-panels
+
+
+# Who Blot?
+
+
+@left
+
+
+- Southern blotting - created by
+  - Edwin Southern - detection of a specific DNA sequence
+- Northern blotting - detection of a specific RNA sequence
+- Western blotting - detection of a specific protein sequence
+- and then it gets crazy
+
+
+@top-right
+
+
+![Student-created comparison of stacking and gradient gels.](assets/lect04c-talking_points_set_3/student_stacking-and-gradient-gels.jpg)
+
+
+@bottom-right
+
+
+![Student-created sequence for staining, destaining, and visualizing protein bands.](assets/lect04c-talking_points_set_3/student_coomassie-staining.jpg)
+=== layout: one-plus-two-panels
+
+
+# Who Blot?
+
+
+@left
+
+- Southern: DNA targets; Edwin Southern
+- Northern: RNA targets
+- Western: protein targets
+- Southwestern: DNA-binding proteins
+- Eastern: post-translational modifications
+- Far-Western: protein-protein interactions
+
+@top-right
+
+
+![Student-created sequence for staining, destaining, and visualizing protein bands.](assets/lect04c-talking_points_set_3/student_coomassie-staining.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_003.png)
+=== layout: two-plus-one-panels
+
+
+# So, what is the difference between nucleic acid and protein gels?
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_003.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_006.png)
+
+
+@right
+
+
+- Nucleic acid gels
+- Protein gels
+- Staining chemistry
+=== layout: two-plus-one-panels
+
+
+# [(A) Nucleic Acid]{color=red} versus [(B) Protein]{color=blue} gels
+
+
+@top-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_006.png)
+
+
+@bottom-left
+
+
+![Acrylamide and bis-acrylamide chemical structures](assets/lect04c-talking_points_set_3/image_008.png)
+
+
+@right
+
+
+- Agarose vs. acrylamide
+- Denaturation
+- Visualization
+=== layout: two-plus-one-panels
+
+
+# Nucleic Acid vs. Protein gels For each of the upcoming slides,  decide whether it relates to [Nucleic Acid]{color=red} or [Protein]{color=blue} gels
+
+
+@top-left
+
+
+![Acrylamide and bis-acrylamide chemical structures](assets/lect04c-talking_points_set_3/image_008.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_010.png)
+
+
+@right
+
+
+- Compare the methods
+- Classify each clue
+- Track shared features
+=== layout: one-plus-two-panels
+
+# Question 1
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which gel type uses ethidium bromide, SYBR Safe, or GelRed for staining?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_010.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_019.png)
+=== layout: one-plus-two-panels
+
+# Answer 1: Nucleic Acid
+
+@left
+
+- [Nucleic Acid]{color=red}
+- These stains visualize nucleic acids in the gel.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_010.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_019.png)
+=== layout: one-plus-two-panels
+
+# Question 2
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which analytes commonly separate well in agarose gels?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_019.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 2: Nucleic Acid
+
+@left
+
+- [Nucleic Acid]{color=red}
+- Agarose is commonly used to separate DNA and RNA fragments.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_019.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+=== layout: one-plus-two-panels
+
+# Question 3
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which gel type uses SDS to denature proteins?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_027.png)
+=== layout: one-plus-two-panels
+
+# Answer 3: Protein
+
+@left
+
+- [Protein]{color=blue}
+- SDS-PAGE separates denatured proteins by apparent size.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_027.png)
+=== layout: one-plus-two-panels
+
+# Question 4
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which biomolecule classes can be resolved in acrylamide gels?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_027.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+=== layout: one-plus-two-panels
+
+# Answer 4: BOTH
+
+@left
+
+- BOTH
+- Polyacrylamide gels can resolve proteins and selected nucleic-acid samples.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_027.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+=== layout: one-plus-two-panels
+
+# Question 5
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which samples use DTT or beta-mercaptoethanol to complete denaturation?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+=== layout: one-plus-two-panels
+
+# Answer 5: Protein
+
+@left
+
+- [Protein]{color=blue}
+- These reducing agents break disulfide bonds in proteins.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+=== layout: one-plus-two-panels
+
+# Question 6
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which gel type is commonly stained with Coomassie blue?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 6: Protein
+
+@left
+
+- [Protein]{color=blue}
+- Coomassie blue reveals protein bands after electrophoresis.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+=== layout: one-plus-two-panels
+
+# Question 7
+
+@left
+
+- Nucleic acid gel, protein gel, or both?
+- Which sample types can be visualized with silver staining?
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+=== layout: one-plus-two-panels
+
+# Answer 7: BOTH
+
+@left
+
+- BOTH
+- Silver staining can reveal both nucleic acids and proteins.
+
+@top-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+@bottom-right
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+=== layout: one-plus-two-panels
+
+
+hidden: true
+
+# Protein Gels And Western Blotting
+
+
+@left
+
+
+- 5. you need to add DTT or betaME to complete the denaturation process
+
+- [Protein]{color=blue}
+
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_028.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+=== layout: one-plus-two-panels
+
+
+hidden: true
+
+# Protein Gels And Western Blotting
+
+
+@left
+
+
+- 6. Uses Coomassie blue as a stain
+
+- [Protein]{color=blue}
+
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_029.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+=== layout: one-plus-two-panels
+
+
+hidden: true
+
+# Protein Gels And Western Blotting
+
+
+@left
+
+
+- 7. Uses Silver stain
+
+- BOTH
+
+
+@top-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+=== layout: four-panels
+
+
+# Nucleic acids vs. Protein
+
+
+@top-left
+
+
+- Agarose or Acrylamide
+- EtBr or GelRed for staining
+- Requires UV light
+
+
+@top-right
+
+
+- Acrylamide only
+- add SDS and DTT/BME to denature
+- Coomassie blue or silver stain
+
+
+@bottom-left
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_034.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_033.png)
+=== layout: one-plus-two-panels
+
+
+# Protein Purification Chromatography
+
+
+@left
+
+
+- 3. What is column chromatography? What is size-exclusion and ion-exchange chromatography? How can we purify proteins using affinity chromatography and protein tagging? What are some common protein tags (His, FLAG, Strep)?
+
+
+@top-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_038.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_039.jpg)
+=== layout: two-plus-one-panels
+
+
+# What if the gel separation is not good enough?
+
+
+@top-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@right
+
+
+- Mobile phase
+- Stationary phase
+- Separation
+=== layout: one-plus-two-panels
+
+
+# Chromatography
+
+
+@left
+
+- Mixture moves through a mobile phase
+- Stationary material retains components differently
+- Unequal travel speeds separate mixture components
+- Partitioning between phases drives separation
+
+@top-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@bottom-right
+
+
+![Student-created affinity-tag capture and purification workflow.](assets/lect04c-talking_points_set_3/student_affinity-tag-purification.jpg)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_035.jpg)
+
+
+@caption
+
+
+Protein Purification Chromatography
+=== layout: one-plus-two-panels
+
+
+# Protein liquid chromatography
+
+
+@left
+
+- Gravity: no pump; very slow
+- FPLC: larger volumes; medium pressure
+- HPLC: medium volumes; high pressure
+- UPLC: tiny volumes; very high pressure
+
+@top-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_036.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_037.gif)
+=== layout: two-plus-one-panels
+
+
+# Gel Filtration Chromatography
+
+
+@top-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_036.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_037.gif)
+
+
+@right
+
+
+- Pore size
+- Molecular mass
+- Elution order
+=== layout: one-plus-two-panels
+
+
+# Gel Filtration
+
+
+@left
+
+
+- Gel filtration chromatography allows the separation of proteins on the basis of size.
+- A glass column is filled with porous beads.
+- When a protein solution is passed over the beads, large proteins cannot enter the beads and exit the column first.
+- Small proteins can enter the beads and thus have a longer path and exit the column last.
+
+
+@top-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_037.gif)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_038.jpg)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_038.jpg)
+
+
+@caption
+
+
+Protein Purification Chromatography
+=== layout: two-plus-one-panels
+
+
+# Ion Exchange Chromatography
+
+
+@top-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@right
+
+
+- Protein charge
+- Resin binding
+- Salt elution
+=== layout: one-plus-two-panels
+
+
+# Ion Exchange
+
+
+@left
+
+- Separate proteins by charge
+- Charged resin beads bind opposite-charge proteins
+- Like-charged proteins pass through
+- Higher salt or altered pH releases bound proteins
+
+@top-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@bottom-right
+
+
+![Student-created affinity-tag capture and purification workflow.](assets/lect04c-talking_points_set_3/student_affinity-tag-purification.jpg)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@caption
+
+
+Protein Purification Chromatography
+=== layout: two-plus-one-panels
+
+
+# Affinity Chromatography
+
+
+@top-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_035.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_036.png)
+
+
+@right
+
+
+- Specific binding
+- Affinity tag
+- Purification
+=== layout: one-plus-two-panels
+
+
+# Affinity chromatography
+
+
+@left
+
+- Ligand-linked beads capture matching proteins
+- Sample mixture passes through the column
+- Unbound proteins wash away
+- Competing ligand releases the target
+
+@top-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_036.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_037.gif)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to protein purification chromatography](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@caption
+
+
+Protein Purification Chromatography
+=== layout: one-plus-two-panels
+
+
+# Mass Spectrometry And Protein Identification
+
+
+@left
+
+
+- 4. How do we identify unknown proteins? How does a Mass Spectrometry work? What are the three main components of a mass spectrometer? How is protease digestion used in mass spec?
+
+
+@top-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_042.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_043.png)
+=== layout: one-plus-two-panels
+
+
+# Mass Spectroscopy
+
+
+@left
+
+
+- Mass spec (MS) is the science of determining the masses of the molecules comprising a sample of material.
+- Mass spectrometers are used to measure masses of positive ions and thus measure atomic and molecular masses.
+
+
+@top-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_043.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_044.png)
+=== layout: two-panels
+
+
+# Instrument
+
+
+@left
+
+
+- A mass spec instrument contain 4 modules\:
+  - ionizer and ion extractor- convert sample to ions and remove ions from sample into air
+  - mass analyzer
+  - detector
+
+
+@right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_041.png)
+=== layout: one-plus-two-panels
+
+
+# The Ionizer
+
+
+@left
+
+
+- The ionizer's job into convert your sample into charged ions.
+  - Like in a gel, if the sample has no ions, it will not move in an electric field
+- The two most common ionizers are\:
+  - MALDI - matrix-assisted laser desorption/ionization
+  - ESI - electrospray ionization
+- Choice of ionizer depends on size of macromolecule you are looking at.
+
+
+@top-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_045.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_046.png)
+=== layout: two-panels
+
+
+# MALDI Mass Spec
+
+
+@left
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_042.png)
+
+
+@right
+
+
+- add a matrix material
+- shine UV laser on sample + matrix material
+- surface of sample vaporizes and also gains charge
+=== layout: two-panels
+
+
+# Electrospray Ionization
+
+
+@left
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_043.png)
+
+
+@right
+
+
+- Sample is squirted from a charged capillary
+- turns the macromolecule being ionized into small droplets
+- droplets will then be further broken down into even smaller droplets
+  - which creates molecules with attached protons
+=== layout: one-plus-two-panels
+
+
+# Mass Analyzer
+
+
+@left
+
+
+- A Mass Analyzer sorts the particles out by mass and charge
+- There are 3 major types of mass analyzers\:
+  - Magnetic sector or double focusing
+  - Quadrupole
+  - Time of flight
+
+
+@top-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_048.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_049.png)
+=== layout: one-plus-two-panels
+
+
+# Mass Detector
+
+
+@left
+
+
+- Particles with different masses strike the detector at different points; a particle detector makes a scan to determine the number of particles collected at a given radius R.
+
+
+@top-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_049.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_041.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_044.png)
+
+
+@caption
+
+
+Mass Spectrometry And Protein Identification
+=== layout: two-panels
+
+
+# Time of Flight Analyzer
+
+
+@left
+
+
+- Mass analysis in time-of-flight (TOF) spectrometry is achieved because ions of different mass-to-charge (m/z) values have different velocities and therefore reach the detector at different times.
+
+
+@right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_045.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_046.png)
+
+
+@caption
+
+
+Mass Spectrometry And Protein Identification
+=== layout: one-plus-two-panels
+
+
+# Chromatography + Mass Spec
+
+
+@left
+
+- LC + MS: separate first; identify by mass
+- GC-MS: volatile samples
+- LC-MS: liquid samples
+- Chromatography improves analysis of complex mixtures
+
+@top-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_044.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_045.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to mass spectrometry and protein identification](assets/lect04c-talking_points_set_3/image_047.jpg)
+
+
+@caption
+
+
+Mass Spectrometry And Protein Identification
+=== layout: one-plus-two-panels
+
+
+# Phage Display And Elisa
+
+
+@left
+
+
+- 5. Explain phage display? How does it work? include its applications, library construction, library screening, binding selection
+
+
+@top-right
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_050.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_051.png)
+=== layout: two-panels
+
+
+# The Central Dogma
+
+
+@left
+
+
+- Replication: DNA -> DNA
+- Transcription: DNA -> RNA
+- Reverse transcription: RNA -> DNA
+- Translation: RNA -> protein
+
+
+@right
+
+
+![Instructor diagram connecting genomes, transcripts, proteins, metabolites, and cellular function](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_048.png)
+
+
+@caption
+
+
+Phage Display And Elisa
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_049.png)
+
+
+@caption
+
+
+Phage Display And Elisa
+=== layout: one-plus-two-panels
+
+
+# Phage Display And Elisa
+
+
+@left
+
+
+- 6. How does ELISA work?
+- Sandwich vs. Indirect method.
+- What are some biotechnology products that use ELISA?
+- What protein markers are detected for different diseases/pregnancy?
+
+
+@top-right
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_054.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_055.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_050.jpg)
+
+
+@caption
+
+
+Phage Display And Elisa
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_051.png)
+
+
+@caption
+
+
+Phage Display And Elisa
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_052.png)
+
+
+@caption
+
+
+Phage Display And Elisa
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_053.png)
+
+
+@caption
+
+
+Phage Display And Elisa
+=== layout: one-plus-two-panels
+
+
+
+@left
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_054.png)
+
+
+@top-right
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_055.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_056.png)
+=== layout: two-panels
+
+
+# Quidel Triage System
+
+
+@left
+
+
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_057.png)
+
+
+@right
+
+- Heart-failure markers: BNP and NT-proBNP
+- Blood concentrations track disease severity
+- Rapid test measures both markers
+- Reported detection: over 80%
+=== layout: one-plus-two-panels
+
+
+# Expanded Protein Topic Notes
+
+
+@left
+
+
+- 30-topic reference
+- Chapters 9-11
+- Methods, data, and applications
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![A protein structure model held for inspection](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: two-plus-one-panels
+
+
+# Chapter 9: Proteomics
+
+
+@top-left
+
+
+![Instructor figure related to protein biotechnology](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-left
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@right
+
+
+- Methods
+- Molecular structure
+- Biotechnology applications
+=== layout: two-plus-one-panels
+
+
+# 1. Proteomics
+
+
+@top-left
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@right
+
+
+- Protein abundance
+- Protein identity
+- Biological state
+=== layout: one-plus-two-panels
+
+
+# Questions: Proteomics
+
+
+@left
+
+
+- How does a proteome differ from a genome, and why does it change across cells and conditions?
+- How do researchers separate, identify, and quantify proteins in a complex sample?
+- What can proteomics reveal about disease, cell function, or biotechnology products?
+
+
+@top-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Proteomics
+
+
+@left
+
+
+- A genome records DNA; a proteome is the set of proteins present in a cell or sample at a given time.
+- Protein abundance, isoforms, interactions, activity, and post-translational modifications all vary.
+- A common workflow extracts proteins, digests them into peptides, separates them, and analyzes them by mass spectrometry.
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Proteomics - Interpreting the data
+
+
+@left
+
+
+- Spectra are matched to protein databases; statistical controls help limit false identifications.
+- Proteomics can find candidate biomarkers, drug targets, pathway changes, or product-quality differences.
+- Results depend on the tissue, condition, sampling time, and measurement method; one sample is not a complete proteome.
+
+
+@top-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: two-panels
+
+
+# Answers: Proteomics - From sample to proteome
+
+
+@left
+
+
+- Collect matched biological replicates and record tissue, condition, treatment, and collection time.
+- Extract proteins, digest them into peptides, separate by liquid chromatography, then analyze peptides by tandem mass spectrometry.
+- Search peptide spectra against a sequence database and apply statistical thresholds to control false identifications.
+
+
+@right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Flipbook Question 1
+
+
+@left
+
+
+- A cell-specific set of expressed enzymes and their modifications describes what kind of analysis?
+- Think of your answer before advancing.
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Flipbook Answer 1
+
+
+@left
+
+
+- Proteomics studies the proteins and modified protein forms present in a sample.
+
+
+@top-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+
+# Flipbook Question 2
+
+
+@left
+
+
+- A chemical fingerprint of small molecules left by a cellular condition describes what kind of analysis?
+- Think of your answer before advancing.
+
+
+@top-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Flipbook Answer 2
+
+
+@left
+
+
+- Metabolomics studies small molecules and provides a snapshot of biochemical state.
+
+
+@top-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Proteomics - Applications
+
+
+@left
+
+
+- Proteomics supports biomarker discovery, drug-response studies, pathway analysis, and product quality checks.
+- Validate candidate findings with independent assays and samples.
+
+
+@top-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein abundance](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: two-plus-one-panels
+
+
+# 2. Metabolomics
+
+
+@top-left
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_041.png)
+
+
+@right
+
+
+- Metabolite profile
+- Chemical fingerprints
+- Cell physiology
+=== layout: one-plus-two-panels
+
+
+# Questions: Metabolomics
+
+
+@left
+
+
+- What does metabolomics measure, and how is it different from genomics and proteomics?
+- How do mass spectrometry and NMR reveal small molecules in a sample?
+- How can metabolomics complement protein measurements in biotechnology or systems biology?
+
+
+@top-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_041.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Metabolomics
+
+
+@left
+
+
+- Metabolomics measures small molecules associated with metabolism, such as sugars, amino acids, and lipids.
+- A metabolome is a condition-sensitive snapshot shaped by genes, proteins, environment, and recent activity.
+- Mass spectrometry and NMR detect different chemical properties; chromatography often separates mixtures before MS.
+
+
+@top-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_041.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Metabolomics - Use with other data
+
+
+@left
+
+
+- Proteomics measures proteins; metabolomics measures small molecules produced, consumed, or modified by cellular activity.
+- Combining molecular layers can connect a changed pathway to both its enzymes and its chemical products.
+- Sample handling and platform coverage matter: no single method measures every metabolite equally well.
+
+
+@top-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Metabolomics - What metabolomics measures
+
+
+@left
+
+
+- Metabolites include sugars, amino acids, organic acids, lipids, and other small molecules in a sample.
+- The metabolome changes with nutrient supply, temperature, stress, treatment, and recent cell activity.
+- Mass spectrometry and nuclear magnetic resonance measure different chemical properties and provide complementary coverage.
+
+
+@top-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_002.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_041.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Metabolomics - Measure a changing metabolome
+
+
+@left
+
+
+- Quench metabolism quickly at collection so the measured profile reflects the sampled condition.
+- Chromatography can separate compounds before mass spectrometry; NMR can identify compounds from their magnetic environments.
+- Use internal standards, pooled quality-control samples, blanks, and replicates to track analytical variation.
+
+
+@top-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_041.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_001.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Metabolomics - Connect metabolites to proteins
+
+
+@left
+
+
+- A metabolite change can suggest a pathway is more active, less active, or limited by a substrate.
+- Pairing metabolite profiles with protein abundance and enzyme activity helps distinguish pathway capacity from output.
+- Association suggests a relationship; perturbation experiments test whether a molecule causes the change.
+
+
+@top-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_001.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to metabolite profile](assets/lect04c-talking_points_set_3/image_002.jpg)
+=== layout: two-plus-one-panels
+
+
+# 3. Protein Gels
+
+
+@top-left
+
+
+![Instructor figure related to gel matrix](assets/lect04c-talking_points_set_3/image_027.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to gel matrix](assets/lect04c-talking_points_set_3/image_028.png)
+
+
+@right
+
+
+- Gel matrix
+- Protein charge
+- Band visualization
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Gels
+
+
+@left
+
+
+- How does polyacrylamide gel electrophoresis separate proteins, and how does it differ from DNA agarose gels?
+- What do SDS, reducing agents, stacking gels, and gradient gels contribute?
+- How are protein bands stained and interpreted?
+
+
+@top-right
+
+
+![Student-created diagram of SDS and disulfide-reducing sample preparation.](assets/lect04c-talking_points_set_3/student_sds-and-reducing-preparation.jpg)
+
+
+@bottom-right
+
+
+![Student-created comparison of stacking and gradient gels.](assets/lect04c-talking_points_set_3/student_stacking-and-gradient-gels.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Gels
+
+
+@left
+
+
+- In SDS-PAGE, SDS unfolds many proteins and gives them a similar charge-to-mass ratio; smaller polypeptides usually migrate farther.
+- DTT or beta-mercaptoethanol reduces disulfide bonds; a stacking gel concentrates samples before the resolving gel.
+- Polyacrylamide pore size suits protein separation; gel percentage or a gradient changes the size range resolved.
+
+
+@top-right
+
+
+![Student-created comparison of stacking and gradient gels.](assets/lect04c-talking_points_set_3/student_stacking-and-gradient-gels.jpg)
+
+
+@bottom-right
+
+
+![Student-created sequence for staining, destaining, and visualizing protein bands.](assets/lect04c-talking_points_set_3/student_coomassie-staining.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Gels - Visualizing bands
+
+
+@left
+
+
+- Coomassie dye binds proteins and produces visible bands after excess stain is washed away.
+- Silver stains and fluorescent stains can detect lower amounts, with different sensitivity and workflow tradeoffs.
+- Band position estimates apparent molecular mass; band intensity is only a rough abundance measure without calibration.
+
+
+@right
+
+
+![Protein gel electrophoresis apparatus from the instructor ODP](assets/lect04c-talking_points_set_3/image_003.png)
+=== layout: two-panels
+
+
+# Answers: Protein Gels - Build the protein gel
+
+
+@left
+
+
+- Polyacrylamide forms when acrylamide monomers cross-link with bis-acrylamide; their ratio tunes pore size.
+- Acrylamide monomer is hazardous before polymerization and requires appropriate protective procedures.
+- Polyacrylamide provides smaller, tunable pores for proteins than standard agarose gels.
+
+
+@right
+
+
+![Student-created illustration of adjustable polyacrylamide gel pores.](assets/lect04c-talking_points_set_3/student_polyacrylamide-pores.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Gels - Prepare proteins for SDS-PAGE
+
+
+@left
+
+
+- SDS unfolds proteins and coats them with a broadly similar negative charge per unit length.
+- DTT or beta-mercaptoethanol reduces disulfide bonds so linked chains can separate.
+- Heating helps denature many samples; adjust conditions for proteins that aggregate or remain unusually stable.
+
+
+@right
+
+
+![Student-created diagram of SDS and disulfide-reducing sample preparation.](assets/lect04c-talking_points_set_3/student_sds-and-reducing-preparation.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Gels - Choose and stain a gel
+
+
+@left
+
+
+- A stacking gel concentrates proteins into a narrow starting zone before they enter the resolving gel.
+- A gradient gel spans a wider mass range; a uniform gel gives resolution across a narrower range.
+- Coomassie reveals protein bands in visible light; silver and fluorescent stains can detect lower amounts.
+
+
+@right
+
+
+![Student-created comparison of stacking and gradient gels.](assets/lect04c-talking_points_set_3/student_stacking-and-gradient-gels.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Gels - Staining and reading bands
+
+
+@left
+
+
+- Coomassie dye binds proteins and reveals bands in visible light after excess stain is washed away.
+- Stain and destain conditions affect background, sensitivity, and compatibility with later analysis.
+- Compare band position with markers; use calibration and controls before interpreting intensity quantitatively.
+
+
+@right
+
+
+![Student-created sequence for staining, destaining, and visualizing protein bands.](assets/lect04c-talking_points_set_3/student_coomassie-staining.jpg)
+=== layout: two-plus-one-panels
+
+
+# 4. Western Blotting
+
+
+@top-left
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+
+
+@right
+
+
+- Antibody target
+- Protein transfer
+- Signal detection
+=== layout: one-plus-two-panels
+
+
+# Questions: Western Blotting
+
+
+@left
+
+
+- How does a Western blot detect one protein among the bands in a sample?
+- How does it compare with Southern blotting and with an ELISA?
+- Which controls help distinguish a real target signal from a failed or nonspecific result?
+
+
+@top-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Western Blotting
+
+
+@left
+
+
+- Proteins are separated by electrophoresis, transferred to a membrane, and probed with target-specific antibodies.
+- A labeled secondary antibody or directly labeled primary antibody generates a detectable signal at the target band.
+- A loading control, positive control, negative control, and appropriate size marker test different parts of the workflow.
+
+
+@top-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_020.jpg)
+=== layout: two-panels
+
+
+# Answers: Western Blotting - Reading the result
+
+
+@left
+
+
+- Southern blots detect DNA; Western blots detect proteins; both transfer separated molecules to a membrane for probe-based detection.
+- Western blots support target identity and approximate size, but signal intensity is not automatically an absolute protein concentration.
+- Common failure points include poor transfer, unsuitable antibodies, high background, and signal saturation.
+
+
+@right
+
+
+![Example Western blot with protein bands across sample lanes](assets/lect04c-talking_points_set_3/image_020.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Western Blotting - Western blot workflow
+
+
+@left
+
+
+- Separate proteins by electrophoresis, transfer them to a membrane, and block unoccupied binding sites.
+- An antibody recognizes the target; a labeled primary or secondary antibody produces a measurable signal.
+- Band position estimates apparent size, while band intensity requires careful controls for quantification.
+
+
+@top-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_029.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_030.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Western Blotting - Controls answer different questions
+
+
+@left
+
+
+- A molecular-mass marker checks migration; a loading control helps compare sample input.
+- A positive control tests target detection; a negative control helps reveal nonspecific signal.
+- Replicate samples and validated antibodies help separate biological variation from technical variation.
+
+
+@top-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_030.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Western Blotting - Troubleshoot the blot
+
+
+@left
+
+
+- Weak signal can follow poor transfer, low target abundance, unsuitable antibodies, or lost antigen recognition.
+- High background can follow insufficient blocking or washing, excess antibody, or nonspecific binding.
+- Saturated bands are outside the useful measurement range; change exposure or sample amount and repeat.
+
+
+@top-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+=== layout: two-plus-one-panels
+
+
+# 5. Isoelectric Points and Isoelectric Focusing
+
+
+@top-left
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_028.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_017.jpg)
+
+
+@right
+
+
+- Protein charge vs. pH
+- Isoelectric point
+- Focused separation
+=== layout: one-plus-two-panels
+
+
+# Questions: Isoelectric Focusing
+
+
+@left
+
+
+- What is a protein's isoelectric point, and how does pH affect its net charge?
+- How does isoelectric focusing separate proteins in a pH gradient?
+- How does two-dimensional electrophoresis combine focusing with SDS-PAGE?
+
+
+@top-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_018.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_027.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Isoelectric Focusing
+
+
+@left
+
+
+- A protein's pI is the pH at which its average net charge is zero; above or below it, the net charge changes.
+- In a stable pH gradient, a protein migrates until it reaches the position where the local pH equals its pI.
+- Protein solubility is often lowest near the pI, but the effect depends on the protein and solution conditions.
+
+
+@top-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_027.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_028.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Isoelectric Focusing - Two dimensions
+
+
+@left
+
+
+- Two-dimensional gels first separate proteins by pI, then by apparent molecular mass using SDS-PAGE.
+- The resulting spots can reveal mixtures, isoforms, or some modification-dependent shifts.
+- Theoretical pI estimates use sequence and ionizable groups; experimental values can differ because of modifications and conditions.
+
+
+@top-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_028.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_017.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Isoelectric Points and Isoelectric Focusing - Protein charge changes with pH
+
+
+@left
+
+
+- Below its pI a protein tends to be net positive; above its pI it tends to be net negative.
+- Near its pI, net charge is close to zero and some proteins become less soluble, depending on sequence and conditions.
+- A theoretical pI estimate uses ionizable residues; modifications, local structure, and processing affect experimental behavior.
+
+
+@top-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_017.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_018.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Isoelectric Points and Isoelectric Focusing - Separate by isoelectric point
+
+
+@left
+
+
+- Isoelectric focusing establishes a pH gradient in a gel or strip.
+- A protein migrates until it reaches the region where pH equals its pI and net charge approaches zero.
+- Charge-changing modifications can create multiple focused forms of the same protein.
+
+
+@top-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_018.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_027.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Isoelectric Points and Isoelectric Focusing - Read a two-dimensional gel
+
+
+@left
+
+
+- The first dimension separates proteins by pI using isoelectric focusing.
+- After equilibration with SDS, the second dimension separates focused proteins by apparent molecular mass.
+- A spot pattern can reveal isoforms or modified forms, but spot matching and low-abundance detection need controls.
+
+
+@top-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_027.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein charge vs. ph](assets/lect04c-talking_points_set_3/image_028.png)
+=== layout: two-plus-one-panels
+
+
+# 6. Liquid Column Chromatography
+
+
+@top-left
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_035.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_036.png)
+
+
+@right
+
+
+- Mobile phase
+- Stationary phase
+- Protein separation
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Chromatography
+
+
+@left
+
+
+- What are the mobile and stationary phases, and how do proteins interact with a column?
+- How do size exclusion, ion exchange, hydrophobic interaction, reverse phase, and affinity chromatography differ?
+- When are HPLC and FPLC useful for protein separation or purification?
+
+
+@top-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_036.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_037.gif)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Chromatography
+
+
+@left
+
+
+- The mobile phase carries the sample; the stationary phase selectively retains molecules according to a chosen property.
+- Size exclusion separates by hydrodynamic size; ion exchange by charge; hydrophobic methods by surface interactions; affinity by specific binding.
+- A sequence of orthogonal columns can remove different contaminants and improve purity.
+
+
+@top-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_037.gif)
+
+
+@bottom-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_038.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Chromatography - Choosing a method
+
+
+@left
+
+
+- Affinity columns capture a target through a specific ligand; salt, pH, or a competing ligand can release it.
+- HIC uses salt-promoted hydrophobic interactions under comparatively mild conditions; reverse-phase conditions are often more denaturing.
+- FPLC is commonly configured for biomolecule purification; HPLC covers a wider range of analytical and preparative separations.
+
+
+@right
+
+
+![Protein chromatography setup from the instructor ODP](assets/lect04c-talking_points_set_3/image_035.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Liquid Column Chromatography - Four useful separation modes
+
+
+@left
+
+- Size exclusion: hydrodynamic size; larger proteins elute first
+- Ion exchange: surface charge; salt or pH elution
+- Hydrophobic interaction: high-salt binding
+- Affinity: specific ligand capture
+
+@top-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_040.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Liquid Column Chromatography - Choose a protein-compatible system
+
+
+@left
+
+
+- Reverse-phase chromatography uses strongly hydrophobic phases and organic solvent that can disrupt protein structure.
+- FPLC commonly uses aqueous buffers and protein-compatible resins; HPLC uses higher pressure and can support finer particles.
+- Choice depends on protein stability, sample scale, purity target, buffer compatibility, and retained activity.
+
+
+@top-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_035.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Liquid Column Chromatography - Build a purification workflow
+
+
+@left
+
+
+- Clarify the lysate, capture the target selectively, then use a second method with a different separation property.
+- Track target and contaminants with an assay or gel at each step rather than relying on one final measurement.
+- Finish with buffer exchange or size exclusion as needed, then measure concentration, purity, and function.
+
+
+@top-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_035.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mobile phase](assets/lect04c-talking_points_set_3/image_036.png)
+=== layout: two-plus-one-panels
+
+
+# 7. Protein Tagging and Affinity Chromatography
+
+
+@top-left
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@right
+
+
+- Affinity tags
+- Selective binding
+- Protein purification
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Tags
+
+
+@left
+
+
+- How can an affinity tag make a recombinant protein easier to purify?
+- Which ligands capture His-tag, FLAG-tag, or Strep-tag proteins?
+- What should researchers check before deciding where to put or whether to remove a tag?
+
+
+@top-right
+
+
+![Student-created affinity-tag capture and purification workflow.](assets/lect04c-talking_points_set_3/student_affinity-tag-purification.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_039.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Tags
+
+
+@left
+
+
+- A DNA construct encodes the tag as part of the target protein, creating a fusion that can bind a matching ligand.
+- His-tags commonly bind immobilized metal ions; FLAG and Strep tags use their corresponding specific binding partners.
+- A typical column cycle loads the sample, washes away weakly bound material, then elutes the tagged protein.
+
+
+@top-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_040.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Tags - Tradeoffs
+
+
+@left
+
+
+- Tags can simplify purification and detection, but may change folding, activity, solubility, or localization.
+- N-terminal and C-terminal placement can have different effects; test the construct rather than assuming either is neutral.
+- A protease site can allow tag removal; verify cleavage and final protein purity before use.
+
+
+@top-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_040.jpg)
+
+
+@bottom-right
+
+
+![Student-created affinity-tag capture and purification workflow.](assets/lect04c-talking_points_set_3/student_affinity-tag-purification.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Tagging and Affinity Chromatography - Match a tag to its ligand
+
+
+@left
+
+
+- A His-tag binds metal-chelate resins such as nickel or cobalt; imidazole competes with the tag during elution.
+- FLAG-tag and Strep-tag bind their respective ligands or antibodies and can be eluted using tag-specific conditions.
+- A tag can improve capture, but it may change folding, localization, binding, or activity.
+
+
+@top-right
+
+
+![Student-created affinity-tag capture and purification workflow.](assets/lect04c-talking_points_set_3/student_affinity-tag-purification.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_039.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Tagging and Affinity Chromatography - Purify and release a tagged protein
+
+
+@left
+
+
+- Clone the tag in frame with the target coding sequence and express the fusion in the chosen host.
+- Load clarified sample, wash away unbound proteins, and elute by changing pH, salt, or competing ligand.
+- A protease site can allow tag removal; a second cleanup separates the released protein from tag and protease.
+
+
+@top-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_039.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to affinity tags](assets/lect04c-talking_points_set_3/image_040.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Tagging and Affinity Chromatography - Choose tag position and conditions
+
+
+@left
+
+
+- An N-terminal tag may disrupt a signal peptide; a C-terminal tag may interfere with a functional region.
+- Test more than one tag position when function matters, comparing yield, solubility, purity, and activity.
+- Specific capture can reduce steps, while tag removal and resin cost add time and expense.
+
+
+@right
+
+
+![Student-created affinity-tag capture and purification workflow.](assets/lect04c-talking_points_set_3/student_affinity-tag-purification.jpg)
+=== layout: two-plus-one-panels
+
+
+# 8. Mass Spectrometry
+
+
+@top-left
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_043.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_044.png)
+
+
+@right
+
+
+- Ionization
+- Mass-to-charge
+- Protein identification
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Mass Spectrometry
+
+
+@left
+
+
+- What do the ion source, mass analyzer, and detector do in a mass spectrometer?
+- How do MALDI and electrospray create ions, and how do analyzers separate them?
+- How does tandem MS help identify or quantify proteins in complex samples?
+
+
+@top-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_043.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_044.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Mass Spectrometry
+
+
+@left
+
+
+- The ion source creates charged molecules; the analyzer separates ions by mass-to-charge ratio; the detector records their signals.
+- MALDI and electrospray are soft-ionization approaches suited to biomolecules, with different sample and instrument workflows.
+- Protease digestion makes peptides that can be separated, measured, and matched to sequence databases.
+
+
+@top-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_044.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_045.png)
+=== layout: two-panels
+
+
+# Answers: Protein Mass Spectrometry - From spectra to proteins
+
+
+@left
+
+
+- Tandem MS fragments selected peptide ions; fragment patterns support sequence matching and protein identification.
+- Quantification can compare ion signals, labeled standards, or multiplexed tags, depending on the method.
+- Results depend on sample preparation, instrument coverage, database quality, and statistical filtering.
+
+
+@right
+
+
+![Mass spectrometer components from the instructor ODP](assets/lect04c-talking_points_set_3/image_041.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Mass Spectrometry - Prepare a protein sample for MS
+
+
+@left
+
+
+- Complex mixtures are often reduced, alkylated, and digested with a protease such as trypsin.
+- Peptide separation by liquid chromatography reduces simultaneous signals and helps resolve complex samples.
+- Contaminants, incomplete digestion, and sample loss can distort detection and estimated abundance.
+
+
+@top-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_046.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_047.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Mass Spectrometry - Ionize and separate peptides
+
+
+@left
+
+
+- Electrospray transfers peptides from solution into charged droplets and gas-phase ions.
+- MALDI uses a matrix and laser pulse to create ions from a prepared sample spot.
+- Time-of-flight, quadrupole, and Orbitrap analyzers use different principles to separate ions by mass-to-charge ratio.
+
+
+@top-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_047.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_048.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Mass Spectrometry - Use tandem MS for identification
+
+
+@left
+
+
+- An instrument selects a peptide ion, fragments it, and measures fragment masses to produce an MS/MS spectrum.
+- Fragment patterns are compared with theoretical peptides from sequence databases to infer peptide identity.
+- Label-free signal, isotope labels, or targeted transitions can support relative or targeted quantification.
+
+
+@top-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_048.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to ionization](assets/lect04c-talking_points_set_3/image_049.png)
+=== layout: two-plus-one-panels
+
+
+# 9. Protein Sequencing
+
+
+@top-left
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_041.png)
+
+
+@right
+
+
+- Peptide fragments
+- Sequence evidence
+- Protein identity
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Sequencing
+
+
+@left
+
+
+- How do protease digestion, Edman degradation, and tandem mass spectrometry contribute to sequence analysis?
+- Why can peptide sequencing be harder than reading a DNA sequence?
+- What can prevent complete sequence coverage or an unambiguous identification?
+
+
+@top-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_042.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_043.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Sequencing
+
+
+@left
+
+
+- Proteases cut proteins at characteristic residues, creating peptides that can be analyzed separately.
+- Edman chemistry identifies an N-terminal residue through repeated cycles, but works best on short peptides with an accessible N-terminus.
+- Tandem MS infers peptide sequence from fragment masses and compares the evidence with candidate sequences.
+
+
+@top-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_043.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_044.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Sequencing - Limits
+
+
+@left
+
+
+- Blocked termini, disulfide bonds, modifications, and incomplete digestion can complicate sequence coverage.
+- Leucine and isoleucine have the same nominal and exact mass, so mass alone does not distinguish them.
+- Proteins cannot be amplified by PCR; low abundance must be handled through enrichment, sensitive instruments, or targeted assays.
+
+
+@top-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_044.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_045.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Sequencing - Generate peptides for sequencing
+
+
+@left
+
+
+- Purify the protein or complex, then digest it into overlapping peptides with one or more proteases.
+- Trypsin commonly cleaves after lysine or arginine, with exceptions based on the next residue and local context.
+- Different cleavage specificities create overlapping evidence that helps assemble sequence coverage.
+
+
+@top-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_045.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_046.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Sequencing - Compare Edman and MS methods
+
+
+@left
+
+
+- Edman degradation labels and removes the N-terminal residue in repeated cycles.
+- Blocked N-termini, long sequences, or mixtures limit Edman analysis; disulfide bonds may need reduction first.
+- Tandem mass spectrometry reads peptide fragments in parallel and can identify sequences by database matching.
+
+
+@top-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_046.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_047.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Sequencing - Interpret sequence evidence
+
+
+@left
+
+
+- Protein is not amplified like DNA by PCR, so sensitivity depends on the amount and quality of sample.
+- Leucine and isoleucine have the same mass, so ordinary MS/MS mass differences do not distinguish them reliably.
+- Coverage gaps, chemical modifications, and unexpected cleavage require review or an independent method.
+
+
+@top-right
+
+
+![Instructor figure related to peptide fragments](assets/lect04c-talking_points_set_3/image_047.jpg)
+
+
+@bottom-right
+
+
+![Student-created workflow from sample collection to protein identification.](assets/lect04c-talking_points_set_3/student_proteomics-workflow.jpg)
+=== layout: two-plus-one-panels
+
+
+# 10. Phage Display
+
+
+@top-left
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_048.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_049.png)
+
+
+@right
+
+
+- Display library
+- Binding selection
+- Candidate enrichment
+=== layout: one-plus-two-panels
+
+
+# Questions: Phage Display
+
+
+@left
+
+
+- How does phage display connect a peptide or protein to the DNA that encodes it?
+- What are the main steps in library construction and selection for a binder?
+- How can repeated selection support antibody discovery or other biotechnology applications?
+
+
+@top-right
+
+
+![Student-created phage display library and selection cycle.](assets/lect04c-talking_points_set_3/student_phage-display-selection.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_048.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Phage Display
+
+
+@left
+
+
+- A library displays many peptide or protein variants on bacteriophage while retaining each variant's encoding DNA inside.
+- The library is exposed to a target; unbound phage are washed away and retained phage are recovered and amplified.
+- Repeating selection can enrich binders, but the result depends on library diversity, target presentation, and selection conditions.
+
+
+@top-right
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_048.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_049.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Phage Display - Applications
+
+
+@left
+
+
+- Selected binders can be sequenced, tested for specificity, and developed as research or therapeutic candidates.
+- Phage display has supported antibody discovery, epitope mapping, and studies of molecular recognition.
+- Binding in a selection assay is a starting point; follow-up tests must check affinity, selectivity, and function.
+
+
+@top-right
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_049.png)
+
+
+@bottom-right
+
+
+![Student-created phage display library and selection cycle.](assets/lect04c-talking_points_set_3/student_phage-display-selection.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Phage Display - Link genotype to displayed protein
+
+
+@left
+
+
+- A peptide or protein coding sequence is fused to a phage coat-protein gene so the product appears on the phage surface.
+- The phage carries the DNA encoding the displayed molecule, linking a binding phenotype to its genotype.
+- A diverse sequence library can represent many candidate binders, subject to library size and folding constraints.
+
+
+@top-right
+
+
+![Student-created phage display library and selection cycle.](assets/lect04c-talking_points_set_3/student_phage-display-selection.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_048.png)
+=== layout: two-panels
+
+
+# Answers: Phage Display - Select and enrich binders
+
+
+@left
+
+
+- Expose the library to an immobilized target, wash away weak or nonspecific binders, and recover retained phage.
+- Amplify recovered phage in bacteria and repeat selection with tuned target concentration and washing conditions.
+- Sequence enriched clones, then test purified candidates for binding strength, selectivity, and function.
+
+
+@right
+
+
+![Student-created phage display library and selection cycle.](assets/lect04c-talking_points_set_3/student_phage-display-selection.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Phage Display - Turn selection into a useful reagent
+
+
+@left
+
+
+- Counter-selection against related proteins can reduce cross-reactivity.
+- Strong phage binding does not guarantee that a soluble antibody fragment behaves the same way.
+- Follow-up tests assess affinity, specificity, stability, expression yield, and performance in the intended assay.
+
+
+@top-right
+
+
+![Instructor figure related to display library](assets/lect04c-talking_points_set_3/image_049.png)
+
+
+@bottom-right
+
+
+![Student-created phage display library and selection cycle.](assets/lect04c-talking_points_set_3/student_phage-display-selection.jpg)
+=== layout: two-plus-one-panels
+
+
+# 11. ELISA and Rapid Protein Tests
+
+
+@top-left
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_054.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_055.png)
+
+
+@right
+
+
+- Antigen capture
+- Enzyme-linked signal
+- Rapid testing
+=== layout: one-plus-two-panels
+
+
+# Questions: ELISA and Rapid Tests
+
+
+@left
+
+
+- How do antigen-antibody binding and an enzyme-linked signal make an ELISA measurable?
+- How do sandwich and indirect ELISA formats differ?
+- How are plate ELISAs related to rapid lateral-flow tests, and what do their results mean?
+
+
+@top-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_057.png)
+
+
+@bottom-right
+
+
+![Student-created diagram of indirect ELISA binding and signal generation.](assets/lect04c-talking_points_set_3/student_indirect-elisa.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: ELISA
+
+
+@left
+
+
+- In a sandwich ELISA, a capture antibody retains the target and a second antibody supplies a detectable signal.
+- In an indirect ELISA, sample antibodies bind an immobilized antigen and an enzyme-linked secondary antibody reveals binding.
+- Standards, positive and negative controls, and a suitable detection range are needed to interpret signal quantitatively.
+
+
+@top-right
+
+
+![Student-created diagram of indirect ELISA binding and signal generation.](assets/lect04c-talking_points_set_3/student_indirect-elisa.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_050.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: ELISA - Diagnostics and rapid tests
+
+
+@left
+
+
+- ELISA can detect antigens or antibodies in medical, food-safety, and environmental testing.
+- Rapid lateral-flow tests use labeled binding reagents moving along a strip; they are related immunoassays, not simply miniature plate ELISAs.
+- A positive or negative result depends on assay sensitivity, specificity, sample timing, and the tested population.
+
+
+@top-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_050.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_051.png)
+=== layout: two-panels
+
+
+# Answers: ELISA and Rapid Protein Tests - Choose an ELISA format
+
+
+@left
+
+
+- A sandwich ELISA captures antigen between two antibodies when compatible antibody pairs are available.
+- An indirect ELISA detects sample antibodies bound to an immobilized antigen using an enzyme-linked secondary antibody.
+- A competitive ELISA can suit small targets with limited antibody-binding sites.
+
+
+@right
+
+
+![Student-created diagram of indirect ELISA binding and signal generation.](assets/lect04c-talking_points_set_3/student_indirect-elisa.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: ELISA and Rapid Protein Tests - Build a controlled assay
+
+
+@left
+
+
+- Select antibodies for target specificity, compatible binding sites, and performance in the chosen sample type.
+- Include blanks, positive and negative controls, and a dilution series or standard curve when estimating concentration.
+- Antibody affinity, sample matrix, incubation time, washing, and substrate reaction affect the measured signal.
+
+
+@top-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_052.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_053.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: ELISA and Rapid Protein Tests - Interpret diagnostic signals
+
+
+@left
+
+
+- A lateral-flow test moves sample and labeled reagents along a membrane; a control line checks fluid and reagent function.
+- Results depend on sensitivity, specificity, cutoff, sample timing, and prevalence in the tested population.
+- Food and environmental tests can detect allergens, pathogens, toxins, or residues when validated for that sample matrix.
+
+
+@top-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_053.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_054.png)
+=== layout: two-plus-one-panels
+
+
+# 12. Protein Quantification Methods
+
+
+@top-left
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_019.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+
+@right
+
+
+- Protein amount
+- Calibration
+- Assay limits
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Quantification
+
+
+@left
+
+
+- How do Bradford, Lowry, and BCA assays estimate total protein in a sample?
+- How can Western blotting or ELISA estimate one selected protein?
+- When is mass spectrometry useful for measuring many proteins at once?
+
+
+@top-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_020.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_031.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Quantification
+
+
+@left
+
+
+- Colorimetric assays compare sample color with protein standards; reagent chemistry and protein composition affect the response.
+- A standard curve helps convert signal to an estimate, within the assay's validated range.
+- Western blotting and ELISA can quantify a target protein relative to standards or controls, but each is assay-dependent.
+
+
+@top-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_031.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_032.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Quantification - Choosing a method
+
+
+@left
+
+
+- Use a total-protein assay for an overall sample estimate; use a target-specific assay to measure one protein.
+- Mass spectrometry can profile many proteins in one experiment, but sample preparation and data analysis shape coverage.
+- Choose based on sample complexity, sensitivity, throughput, available standards, and whether the question is total or target-specific.
+
+
+@top-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_032.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_050.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Quantification Methods - Measure total protein
+
+
+@left
+
+
+- Bradford, Lowry, and BCA assays convert protein-dependent chemistry into a color signal measured against standards.
+- Proteins can produce different responses because dye binding and reagent chemistry depend on amino-acid composition.
+- Detergents, reducing agents, salts, and buffers can interfere, so standards and blanks should match sample conditions.
+
+
+@top-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_050.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_052.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Quantification Methods - Choose a target-specific assay
+
+
+@left
+
+
+- Western blotting provides band position and relative signal for one target, with substantial sample handling and antibody dependence.
+- ELISA measures a selected target in plate format and can support higher throughput after assay development.
+- Use a validated standard curve within its linear range; dilute samples that exceed the calibrated signal range.
+
+
+@top-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_052.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_019.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Quantification Methods - Quantify many proteins
+
+
+@left
+
+
+- Mass spectrometry can quantify many proteins in a mixture by measuring selected peptides or broader peptide signals.
+- Stable-isotope standards can improve comparison by controlling for peptide recovery and instrument response.
+- Report quantification strategy, normalization, missing-value handling, and uncertainty with the protein list.
+
+
+@top-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_019.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_020.jpg)
+=== layout: two-plus-one-panels
+
+
+# 13. Protein-Protein Interaction Networks
+
+
+@top-left
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_081.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_029.png)
+
+
+@right
+
+
+- Molecular contacts
+- Interaction evidence
+- Network models
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Interaction Networks
+
+
+@left
+
+
+- How do yeast two-hybrid, co-immunoprecipitation, and mass spectrometry find possible protein interactions?
+- How can interaction data be represented as a network and connected to pathways or disease?
+- What evidence is needed before a predicted interaction becomes a useful biological conclusion?
+
+
+@top-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_052.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_057.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Interaction Networks
+
+
+@left
+
+
+- Yeast two-hybrid tests whether paired proteins can bring reporter components together in a cell.
+- Co-immunoprecipitation isolates a protein complex; mass spectrometry can identify proteins recovered with it.
+- Databases combine published evidence, but detected associations can depend on conditions and experimental design.
+
+
+@top-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_057.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_081.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Interaction Networks - Interpretation
+
+
+@left
+
+
+- A network edge represents evidence for an association; it does not always prove direct binding.
+- Hubs and pathway neighborhoods can suggest follow-up experiments or candidate drug targets.
+- Validate key edges in relevant cells and conditions; false positives, missing data, and biased sampling affect network maps.
+
+
+@top-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_081.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_029.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein-Protein Interaction Networks - Measure protein interactions
+
+
+@left
+
+
+- Yeast two-hybrid tests whether two fused proteins bring transcriptional components together in a reporter system.
+- Co-immunoprecipitation enriches a bait protein and associated partners from a cell extract under chosen buffer conditions.
+- Protein arrays can test many binding events, but immobilization can change protein orientation or activity.
+
+
+@top-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_029.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_052.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein-Protein Interaction Networks - Build an interaction network
+
+
+@left
+
+
+- Combine experimental interactions with curated databases and label edges by method, confidence, and evidence source.
+- A network hub has many recorded partners, but high connectivity can reflect study attention as well as biology.
+- Replicate experiments and orthogonal methods help distinguish direct binding from indirect co-complex association.
+
+
+@top-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_052.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_057.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein-Protein Interaction Networks - Use networks to form hypotheses
+
+
+@left
+
+
+- Changed interaction partners can point to altered pathways or candidate disease mechanisms.
+- Network analysis can nominate proteins or interfaces for follow-up, but a predicted hub is not automatically a drug target.
+- Perturbation experiments test whether changing one interaction affects a cell behavior or disease-relevant phenotype.
+
+
+@top-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_057.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_081.jpg)
+=== layout: theend
+
+
+# THE END
+
+![A protein structure model held for a closing image](assets/lect04c-talking_points_set_3/image_084.png)

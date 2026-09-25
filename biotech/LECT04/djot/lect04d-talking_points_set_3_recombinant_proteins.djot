@@ -1,0 +1,1733 @@
+color-theme: biotechnology
+
+=== layout: one-plus-two-panels
+
+# Lecture 04D: Recombinant Proteins
+
+@left
+
+- Chapter 10: Recombinant Proteins
+- Set #3 talking points
+- Fall 2026
+- Dr. Neil Voss
+
+@top-right
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_065.jpg)
+
+@bottom-right
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_069.png)
+=== layout: two-plus-one-panels
+
+
+# Chapter 10
+
+
+@top-left
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_065.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_066.jpg)
+
+
+@right
+
+
+- Expression systems
+- Host cells
+- Biotechnology products
+=== layout: one-plus-two-panels
+
+
+# Recombinant Insulin Production
+
+
+@left
+
+
+- 7. How do you obtain cDNA for the human genes? How is insulin mass produced? Why did they modify the insulin gene for mass production? What is the process?
+
+
+@top-right
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_066.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_058.jpg)
+=== layout: two-plus-one-panels
+
+# Insulin Processing
+
+@top-left
+
+![Preproinsulin structure and processing](assets/lect04c-talking_points_set_3/image_058.jpg)
+
+@bottom-left
+
+![Human insulin cDNA cloning workflow](assets/lect04c-talking_points_set_3/image_059.jpg)
+
+@right
+
+- Preproinsulin: signal + A/B chains + C-peptide
+- Remove signal; cleave C-peptide
+- A/B chains: disulfide-linked
+- Carboxypeptidase-H trims Arg/Lys
+=== layout: two-panels
+
+
+# cDNA from Human Genes
+
+
+@left
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_059.jpg)
+
+
+@right
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_060.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_061.png)
+
+
+@caption
+
+
+insert the human insulin gene into the plasmid
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_062.png)
+
+
+@caption
+
+
+inject the plasmid in the bacteria
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_063.png)
+
+
+@caption
+
+
+recombinant bacteria use the gene to begin producing human insulin
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_064.png)
+
+
+@caption
+
+
+harvest the insulin from the bacteria and purify it
+=== layout: two-panels
+
+
+# Cloning of Insulin as Two Mini-Genes
+
+
+@left
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_065.jpg)
+
+
+@right
+
+- A- and B-chain genes cloned separately
+- Each chain fused to beta-galactosidase for purification
+- Separate plasmids expressed in bacteria
+- Fusion proteins purified; cyanogen bromide cleavage
+- A- and B-chains isolated
+- Chains refolded; disulfide bonds restored
+=== layout: two-panels
+
+
+
+@left
+
+
+![Instructor figure related to recombinant insulin production](assets/lect04c-talking_points_set_3/image_066.jpg)
+
+
+@right
+
+
+- Insulin is produced and stored in the body as a hexamer, while the active form is the monomer.
+- High concentrations of insulin cause the monomers to clump into hexamers.
+- Changing the proline to aspartic acid prevents recombinant insulin from clumping.
+=== layout: one-plus-two-panels
+
+
+# Bacterial Protein Expression And Folding
+
+
+@left
+
+
+- 8. What are the toxic effects of protein overproduction?
+- What can we do to prevent inclusion bodies?
+
+
+@top-right
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_069.png)
+
+
+@bottom-right
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+=== layout: one-plus-two-panels
+
+
+# Toxic Effects of Protein Over Production
+
+
+@left
+
+- Excess expression -> misfolding and inclusion bodies
+- Regulate induction: pET + IPTG; pBAD + arabinose
+- Slow production; support folding with chaperones
+- Lower temperature; improve solubility
+- Refold purified protein when needed
+- Improve sequence and cellular stability
+
+@top-right
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+
+
+@bottom-right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@caption
+
+
+Bacterial Protein Expression And Folding
+=== layout: two-panels
+
+
+# N-terminal amino acid
+
+
+@left
+
+
+- The identity of the N-terminal amino acid greatly affects the half-life of proteins.
+- Although all polypeptide chains are made with methionine as the initial amino acid, many proteins are processed later.
+- Therefore the N-terminal amino acid of mature proteins varies greatly.
+
+
+@right
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_068.png)
+=== layout: one-plus-two-panels
+
+
+# PEST sequences
+
+
+@left
+
+
+- The presence of certain internal sequences greatly destabilizes proteins.
+- PEST sequences are regions of 10 to 60 amino acids that are rich in
+  - P (proline), E (glutamate), S (serine), and T (threonine).
+- The PEST sequences create domains whose structures are recognized by proteolytic enzymes.
+
+
+@top-right
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_068.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_069.png)
+=== layout: two-panels
+
+
+# Molecular Chaperones Help Prevent Inclusion Body Formation
+
+
+@left
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_069.png)
+
+
+@right
+
+
+- If recombinant proteins fold aberrantly, they aggregate and form inclusion bodies.
+- If, during translation, molecular chaperone proteins hold the recombinant protein, the new polypeptide will fold properly and become fully functional.
+=== layout: one-plus-two-panels
+
+
+# Bacterial Protein Expression And Folding
+
+
+@left
+
+
+- 9. Explain the differences of protein expression by yeast vs. bacteria.
+- Why would one choose to produce protein with yeast?
+
+
+@top-right
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+
+
+@bottom-right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+=== layout: one-plus-two-panels
+
+
+# Yeast Expression
+
+
+@left
+
+- Scalable: lab culture to bioreactor
+- Established production host
+- Low native-protein secretion -> easier purification
+- Straightforward DNA transformation
+- Eukaryotic post-translational processing
+- Glycosylation differs from mammalian cells
+
+@top-right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to bacterial protein expression and folding](assets/lect04c-talking_points_set_3/image_067.jpg)
+=== layout: one-plus-two-panels
+
+
+# Impossible Burger And Leghemoglobin
+
+
+@left
+
+
+- 10. What is the impossible burger? How is it made? What is soy leghemoglobin?
+- How does the impossible burger compare to the beyond burger?
+- If the impossible burger is not healthier than a beef burger, why make it?
+
+
+@top-right
+
+
+![Instructor figure related to impossible burger and leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to impossible burger and leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: two-panels
+
+
+# Impossible Burger 1.0
+
+
+@left
+
+
+![Instructor figure related to impossible burger and leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@right
+
+
+- Impossible Burger 1.0 is a vegan burger that smells, sizzles, bleeds, and tastes like a real beef burger
+  - ingredients include wheat, coconut oil, and potatoes, but also soy hemoglobin from yeast
+=== layout: two-plus-one-panels
+
+
+# The Impossible Burger Video [http\://youtu.be/nIiLqNQOgPA](http://youtu.be/nIiLqNQOgPA)
+
+
+@top-left
+
+
+![Instructor figure related to impossible burger and leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to impossible burger and leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@right
+
+
+- Protein engineering
+- Soy leghemoglobin
+- Product comparison
+=== layout: one-plus-two-panels
+
+
+# Insect-Cell Protein Expression
+
+
+@left
+
+
+- 11. How does protein expression by insect cells work?
+- Why is a virus used rather than normal expression?
+
+
+@top-right
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_072.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_073.jpg)
+=== layout: one-plus-two-panels
+
+
+# Baculovirus
+
+
+@left
+
+- Mammalian culture: delicate; costly media
+- Insect cells: robust; simpler growth conditions
+- Baculovirus vector carries the target gene
+- Infection drives high protein expression
+- Eukaryotic processing; distinct glycosylation
+
+@top-right
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_073.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: two-panels
+
+
+# Complex Glycosylation
+
+
+@left
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@right
+
+
+- Mammals and insects share several steps in the pathway for post-translational glycosylation of asparagine residues in proteins.
+- However, the final modifications differ as shown.
+- In particular, mammals add sialic acid residues to the ends of the glycosyl chains, whereas insects do not.
+=== layout: two-panels
+
+
+# Baculovirus Expression Vector
+
+
+@left
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_072.jpg)
+
+
+@right
+
+- Transfer vector: target gene + polyhedrin promoter/terminator
+- Vector assembled in E. coli
+- Co-transfect insect cells with vector + viral genome
+- Homologous recombination inserts the target cassette
+- Select recombinant virus
+- Infect culture; express protein
+=== layout: two-panels
+
+
+# Bacmid Shuttle Vector
+
+
+@left
+
+
+- Bacmids are primarily baculovirus genomes with the addition of a bacterial origin of replication, a multiple cloning site, and an antibiotic resistance gene.
+  - These sequences allow the bacmid to survive in E. coli but still infect insect cells.
+
+
+@right
+
+
+![Instructor figure related to insect-cell protein expression](assets/lect04c-talking_points_set_3/image_073.jpg)
+=== layout: one-plus-two-panels
+
+
+# Mammalian Protein Expression
+
+
+@left
+
+
+- 12. How does protein expression by mammalian cells work?
+- What is the advantages of mammalian cells for protein expression?
+- What is an IRES?
+
+
+@top-right
+
+
+![Instructor figure related to mammalian protein expression](assets/lect04c-talking_points_set_3/image_074.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian protein expression](assets/lect04c-talking_points_set_3/image_075.jpg)
+=== layout: two-panels
+
+
+# IRES
+
+
+@left
+
+- IRES: cap-independent translation start
+- Common in viral 5-prime UTRs
+- Translation persists when host cap-dependent pathways shut down
+
+@right
+
+
+![Instructor figure related to mammalian protein expression](assets/lect04c-talking_points_set_3/image_074.png)
+=== layout: big-image
+
+
+
+@image
+
+
+![Instructor figure related to mammalian protein expression](assets/lect04c-talking_points_set_3/image_075.jpg)
+
+
+@caption
+
+
+Mammalian Protein Expression
+=== layout: two-plus-one-panels
+
+
+# Chapter 10: Recombinant Proteins
+
+
+@top-left
+
+
+![Recombinant insulin production workflow](assets/lect04c-talking_points_set_3/image_059.jpg)
+
+
+@bottom-left
+
+
+![Bacterial protein expression and recovery](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@right
+
+
+- Expression hosts
+- Protein recovery
+- Biotechnology products
+=== layout: two-plus-one-panels
+
+
+# 14. Bacterial Expression of Eukaryotic Proteins
+
+
+@top-left
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_058.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_060.png)
+
+
+@right
+
+
+- Gene insertion
+- Host expression
+- Protein recovery
+=== layout: one-plus-two-panels
+
+
+# Questions: Bacterial Protein Expression
+
+
+@left
+
+
+- Why is cDNA often used instead of human genomic DNA for expression in bacteria?
+- What are the steps from a recombinant plasmid to a purified protein product?
+- Why did recombinant insulin production require careful expression and processing strategies?
+
+
+@top-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_060.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_061.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Bacterial Protein Expression
+
+
+@left
+
+- Bacteria require intron-free cDNA from processed mRNA
+- Expression vector -> host -> harvest -> purification
+- Limits: folding, disulfides, toxicity, missing eukaryotic modifications
+
+@top-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_061.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_062.png)
+=== layout: two-panels
+
+
+# Answers: Bacterial Protein Expression - Insulin
+
+
+@left
+
+
+- Early recombinant insulin strategies expressed A and B chain precursors separately as fusion proteins.
+- The chains were purified, released from their fusions, and joined through the disulfide bonds needed for active insulin.
+- Modern designs can express precursor forms; the product still requires correct processing, folding, and quality control.
+
+
+@right
+
+
+![Recombinant insulin workflow from the instructor ODP](assets/lect04c-talking_points_set_3/image_059.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Bacterial Expression of Eukaryotic Proteins - Why use cDNA in bacteria?
+
+
+@left
+
+
+- Mature human mRNA is reverse-transcribed into cDNA, which lacks introns bacteria cannot splice from a genomic gene.
+- The coding sequence is inserted downstream of bacterial regulatory elements in an expression plasmid.
+- The plasmid enters bacteria, and selected cells are grown to produce the encoded protein.
+
+
+@top-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_068.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Bacterial Expression of Eukaryotic Proteins - Engineer an insulin expression design
+
+
+@left
+
+
+- Early bacterial insulin production used separate A- and B-chain sequences that could be purified and joined by disulfide bonds.
+- Other designs expressed proinsulin or related precursors that could be folded and enzymatically processed to mature insulin.
+- Codon optimization can improve translation by matching host preferences while preserving the amino-acid sequence.
+
+
+@top-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_068.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_059.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Bacterial Expression of Eukaryotic Proteins - Improve recombinant protein yield
+
+
+@left
+
+
+- Promoter strength, plasmid copy number, induction timing, and growth temperature affect protein production.
+- Fusion tags can improve solubility or purification; signal peptides can direct export in hosts that support the pathway.
+- Measure soluble product and biological activity, not just total expressed protein, when comparing designs.
+
+
+@top-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_059.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to gene insertion](assets/lect04c-talking_points_set_3/image_058.jpg)
+=== layout: two-plus-one-panels
+
+
+# 15. Toxic Effects and Inclusion Bodies
+
+
+@top-left
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+
+
+@bottom-left
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+
+
+@right
+
+
+- Misfolding
+- Inclusion bodies
+- Refolding
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Overproduction
+
+
+@left
+
+
+- Why can high-level recombinant protein expression harm a host cell or lower product yield?
+- What are inclusion bodies, and how do expression conditions affect their formation?
+- How can chaperones or refolding workflows recover functional protein?
+
+
+@top-right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to misfolding](assets/lect04c-talking_points_set_3/image_069.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Overproduction
+
+
+@left
+
+
+- Heavy expression can burden cell resources, disrupt normal physiology, or produce toxic activity.
+- Rapid production can outpace folding and quality-control systems, causing insoluble protein aggregates called inclusion bodies.
+- Lower temperature, slower induction, or a different host may improve folding, though each can reduce production rate.
+
+
+@top-right
+
+
+![Instructor figure related to misfolding](assets/lect04c-talking_points_set_3/image_069.png)
+
+
+@bottom-right
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+=== layout: two-panels
+
+
+# Answers: Protein Overproduction - Recovery
+
+
+@left
+
+
+- Chaperones help newly made proteins fold and can reduce aggregation when co-expressed.
+- Inclusion bodies may be solubilized and protein refolded by controlled dilution or dialysis; recovery is protein-dependent.
+- Check solubility, structure, activity, and purity rather than treating a large yield as a successful product.
+
+
+@right
+
+
+![Chaperone-assisted protein folding from the instructor ODP](assets/lect04c-talking_points_set_3/image_069.png)
+=== layout: two-panels
+
+
+# Answers: Toxic Effects and Inclusion Bodies - Why overproduction harms cells
+
+
+@left
+
+
+- High expression consumes ribosomes, amino acids, ATP, and folding capacity that the host also needs for growth.
+- Unfolded proteins can aggregate into inclusion bodies and trigger stress responses or slow cell division.
+- Soluble expression does not guarantee correct folding or activity; test the recovered protein directly.
+
+
+@right
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Toxic Effects and Inclusion Bodies - Reduce aggregation during expression
+
+
+@left
+
+
+- Lower temperature, weaker induction, or shorter expression time can give proteins more time to fold.
+- Host strains differ in proteases, redox environment, codon supply, and tolerance of metabolic burden.
+- Co-expressed chaperones can help some proteins fold, but cannot rescue every unstable or poorly designed construct.
+
+
+@top-right
+
+
+![Instructor figure related to misfolding](assets/lect04c-talking_points_set_3/image_069.png)
+
+
+@bottom-right
+
+
+![Student-created diagram contrasting normal and overloaded protein expression.](assets/lect04c-talking_points_set_3/student_overproduction-and-inclusion-bodies.jpg)
+=== layout: two-panels
+
+
+# Answers: Toxic Effects and Inclusion Bodies - Recover protein from inclusion bodies
+
+
+@left
+
+
+- Lyse cells and separate insoluble aggregates from soluble material by centrifugation.
+- Chaotropic agents can dissolve aggregates; controlled dilution or dialysis removes denaturant as the protein refolds.
+- Check yield, aggregation, purity, and biological activity because solubility alone does not prove a native structure.
+
+
+@right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+=== layout: two-plus-one-panels
+
+
+# 16. Protein Expression in Yeast vs. Bacteria
+
+
+@top-left
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_069.png)
+
+
+@bottom-left
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+
+
+@right
+
+
+- Host comparison
+- Protein processing
+- Production scale
+=== layout: one-plus-two-panels
+
+
+# Questions: Yeast and Bacterial Expression
+
+
+@left
+
+
+- How do bacteria and yeast differ in cell organization and protein-processing machinery?
+- When can yeast secretion or post-translational modification help produce a eukaryotic protein?
+- What tradeoffs matter when choosing a host for a therapeutic protein?
+
+
+@top-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_067.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Yeast and Bacterial Expression
+
+
+@left
+
+
+- Bacteria grow quickly and are often economical, but lack many eukaryotic processing steps.
+- Yeast can fold and secrete some eukaryotic proteins and add glycans, but its glycosylation pattern is not identical to a human cell's.
+- Host choice depends on protein folding, modifications, yield, secretion, process cost, and required product quality.
+
+
+@top-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_068.png)
+=== layout: two-panels
+
+
+# Answers: Yeast and Bacterial Expression - Matching the host
+
+
+@left
+
+
+- A protein that needs complex human-like modifications may require a mammalian expression system.
+- Yeast can bridge some capabilities of bacteria and mammalian cells, but the product must be tested for its intended use.
+- Membrane proteins and disulfide-rich proteins can pose folding and recovery challenges in either host.
+
+
+@right
+
+
+![Protein glycosylation comparison from the instructor ODP](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression in Yeast vs. Bacteria - Compare host-cell processing
+
+
+@left
+
+
+- Bacteria grow quickly and economically but lack many eukaryotic processing pathways and human-like N-linked glycans.
+- Yeast can secrete proteins and perform eukaryotic folding and glycosylation, but its glycans can differ from human patterns.
+- Mammalian cells support many human-like modifications but often require slower and more controlled culture.
+
+
+@top-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_069.png)
+
+
+@bottom-right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression in Yeast vs. Bacteria - Match the host to the protein
+
+
+@left
+
+
+- A small stable enzyme without required eukaryotic modifications may suit bacterial expression.
+- A secreted glycoprotein may require yeast or mammalian processing, depending on glycan structure and function.
+- Membrane proteins can be difficult in any host; detergents, fusion partners, and specialized strains may improve recovery.
+
+
+@top-right
+
+
+![Student-created overview of overproduction, inclusion bodies, and refolding.](assets/lect04c-talking_points_set_3/student_bacterial-protein-refolding.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression in Yeast vs. Bacteria - Evaluate cost and product quality
+
+
+@left
+
+
+- Compare yield, folding, modification pattern, purification difficulty, growth time, and contamination risk.
+- A high-yield host is unsuitable if the product has the wrong activity or is rapidly cleared in its intended use.
+- Characterize final identity, purity, aggregation, activity, and relevant post-translational modifications.
+
+
+@top-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to host comparison](assets/lect04c-talking_points_set_3/image_067.jpg)
+=== layout: two-plus-one-panels
+
+
+# 17. Impossible Burger
+
+
+@top-left
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-left
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@right
+
+
+- Soy leghemoglobin
+- Heme protein
+- Food biotechnology
+=== layout: one-plus-two-panels
+
+
+# Questions: Recombinant Leghemoglobin
+
+
+@left
+
+
+- How does soy leghemoglobin contribute to the sensory properties of a plant-based burger?
+- Why use engineered yeast to produce a plant protein ingredient at scale?
+- Which parts of a food product's taste and texture come from ingredients beyond leghemoglobin?
+
+
+@top-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Recombinant Leghemoglobin
+
+
+@left
+
+
+- Leghemoglobin is a heme-containing plant protein; heme chemistry contributes to meat-like flavor and color changes during cooking.
+- Engineered yeast can produce the soy protein through fermentation without growing soy roots as the production source.
+- The whole product also depends on plant proteins, fats, water, flavor compounds, and cooking conditions.
+
+
+@top-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: two-panels
+
+
+# Answers: Recombinant Leghemoglobin - Product design
+
+
+@left
+
+
+- This example connects protein expression, fermentation, food formulation, and consumer testing.
+- A successful ingredient must work consistently in the final recipe and meet food-safety and manufacturing requirements.
+- Product comparisons should separate sensory, nutritional, cost, and environmental questions; one does not answer the others.
+
+
+@right
+
+
+![Plant-based protein example from the instructor ODP](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Impossible Burger - Why add soy leghemoglobin?
+
+
+@left
+
+
+- Leghemoglobin is a heme-containing protein from legume root nodules that binds oxygen in a plant-bacteria symbiosis.
+- Its heme group contributes color and flavor chemistry during cooking in some plant-based meat products.
+- Texture, fat, salt, and cooking behavior also shape the final product.
+
+
+@top-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: two-panels
+
+
+# Answers: Impossible Burger - Produce the food ingredient
+
+
+@left
+
+
+- A selected leghemoglobin gene can be expressed in a production host such as engineered yeast, then recovered as an ingredient.
+- Food production uses controlled fermentation, purification or formulation, and specifications for identity and consistency.
+- Ingredient safety and product performance must be evaluated for the intended food use.
+
+
+@right
+
+
+![Impossible Burger product example from the professor ODP](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Impossible Burger - Compare products carefully
+
+
+@left
+
+
+- Plant-based meat products use different protein sources, fats, binders, and flavor systems; compare ingredient lists.
+- Nutrition varies by recipe and serving size, so a meat analogue is not automatically healthier than beef.
+- Environmental comparisons depend on production system, functional unit, and the rest of a person's diet.
+
+
+@top-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to soy leghemoglobin](assets/lect04c-talking_points_set_3/image_070.png)
+=== layout: two-plus-one-panels
+
+
+# 18. Protein Expression by Insect Cells
+
+
+@top-left
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_073.jpg)
+
+
+@right
+
+
+- Baculovirus vector
+- Insect cells
+- Protein processing
+=== layout: one-plus-two-panels
+
+
+# Questions: Insect Cell Expression
+
+
+@left
+
+
+- How does a baculovirus expression vector deliver a protein gene to insect cells?
+- What can insect cells do that bacteria cannot, and how do their capabilities differ from mammalian cells?
+- What practical limits affect yield, scale, and product quality?
+
+
+@top-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_073.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_072.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Insect Cell Expression
+
+
+@left
+
+
+- A recombinant baculovirus infects cultured insect cells and drives expression of the inserted protein gene.
+- Insect cells support eukaryotic folding and some processing that bacteria lack.
+- Their glycosylation is not fully human-like; compare the product's modifications and function with the intended use.
+
+
+@top-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_072.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: two-panels
+
+
+# Answers: Insect Cell Expression - Choosing a system
+
+
+@left
+
+
+- Insect systems can produce complex proteins and virus-like particles, but expression level depends on the cell line and construct.
+- Mammalian cells often provide closer human-like processing; bacteria may be faster and less costly for simpler proteins.
+- Scale-up, infection timing, purification, and batch consistency all affect manufacturing decisions.
+
+
+@right
+
+
+![Baculovirus expression-vector workflow from the instructor ODP](assets/lect04c-talking_points_set_3/image_072.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression by Insect Cells - Use baculovirus to express a protein
+
+
+@left
+
+
+- A recombinant gene is placed in a baculovirus vector and introduced into insect cells.
+- Infected cells produce the encoded protein while viral promoters drive strong late-stage expression.
+- Recover the product from cells or culture medium according to its localization and secretion signal.
+
+
+@top-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_073.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_072.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression by Insect Cells - Build and test a bacmid
+
+
+@left
+
+
+- A bacmid is a baculovirus genome maintained in bacteria so a recombinant construct can be assembled and screened.
+- Verified recombinant bacmid DNA is delivered to insect cells to produce virus used for expression runs.
+- Small-scale tests help choose infection conditions, harvest timing, and culture density before scale-up.
+
+
+@top-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_072.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression by Insect Cells - Weigh insect-cell tradeoffs
+
+
+@left
+
+
+- Insect cells can make complex eukaryotic proteins and assemble many multimeric structures.
+- Their glycosylation patterns differ from mammalian cells, so product quality must be checked for the application.
+- Culture cost, scale-up, virus handling, yield, and purification influence whether the system fits.
+
+
+@top-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to baculovirus vector](assets/lect04c-talking_points_set_3/image_073.jpg)
+=== layout: two-plus-one-panels
+
+
+# 19. Protein Expression by Mammalian Cells
+
+
+@top-left
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_074.png)
+
+
+@right
+
+
+- Mammalian cells
+- Protein processing
+- Product quality
+=== layout: one-plus-two-panels
+
+
+# Questions: Mammalian Protein Expression
+
+
+@left
+
+
+- Why are mammalian cells often chosen to make complex therapeutic proteins?
+- How do transfection, expression vectors, and cell culture support production?
+- What roles can an internal ribosome entry site play in a multi-gene construct?
+
+
+@top-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_075.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Mammalian Protein Expression
+
+
+@left
+
+
+- Mammalian cells can provide folding, assembly, and post-translational processing suited to many human proteins.
+- A vector is delivered by transfection or related methods; selected cells are grown under controlled conditions and the product is recovered.
+- The process can be slower and costlier than microbial expression and requires careful control of cell health and contamination.
+
+
+@top-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_074.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Mammalian Protein Expression - Cell and vector design
+
+
+@left
+
+
+- IRES elements can support translation initiation at an internal site, allowing expression of a downstream coding sequence from one RNA.
+- IRES performance and relative expression can vary; measure both products in the chosen cell line.
+- Biosafety practice follows the cell line, vector, and insert risk assessment; expression in cultured cells does not remove those requirements.
+
+
+@top-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_074.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_075.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression by Mammalian Cells - Express proteins in cultured mammalian cells
+
+
+@left
+
+
+- A plasmid or viral vector delivers the gene to a chosen cell line by transfection or infection.
+- Expression can be transient or selected for stable production in controlled cell culture.
+- Harvest from the cell fraction or culture medium according to product localization and secretion.
+
+
+@top-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_075.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_071.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression by Mammalian Cells - Use IRES for linked expression
+
+
+@left
+
+
+- An internal ribosome entry site can initiate translation at an internal position on an RNA molecule.
+- An IRES can support a second coding sequence from one transcript, but products may not be made at equal levels.
+- Measure both products in the intended cell line and construct.
+
+
+@top-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_071.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_074.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Expression by Mammalian Cells - Choose a mammalian production process
+
+
+@left
+
+
+- Mammalian cells support folding, assembly, and modifications used by many therapeutic proteins.
+- Cell line, transfection method, media, culture scale, and harvest time affect yield and product quality.
+- Apply biosafety, sterility, and contamination controls appropriate to the cells, vectors, inserts, and facility.
+
+
+@top-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_074.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to mammalian cells](assets/lect04c-talking_points_set_3/image_075.jpg)
+=== layout: two-plus-one-panels
+
+
+# 20. Recombinant Protein Vaccines
+
+
+@top-left
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@bottom-left
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+
+
+@right
+
+
+- Recombinant antigen
+- Immune response
+- Vaccine production
+=== layout: one-plus-two-panels
+
+
+# Questions: Recombinant Protein Vaccines
+
+
+@left
+
+
+- How does a recombinant protein vaccine use a pathogen-derived antigen to train an immune response?
+- How do protein subunit vaccines differ from live or inactivated whole-pathogen vaccines?
+- Why can adjuvants, dose schedules, and manufacturing quality matter?
+
+
+@top-right
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+
+
+@bottom-right
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Recombinant Protein Vaccines
+
+
+@left
+
+
+- A selected pathogen protein is produced in a host system, purified, and formulated as an antigen.
+- The antigen presents recognizable features without requiring a whole replicating pathogen; examples include hepatitis B and HPV vaccines.
+- Adjuvants and repeat doses can strengthen or extend responses, depending on the vaccine and population.
+
+
+@top-right
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@bottom-right
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Recombinant Protein Vaccines - Product pathway
+
+
+@left
+
+
+- Candidate antigens are chosen for immune recognition and then tested for safety, effectiveness, dose, and stability.
+- Production cells and purification must yield a consistent antigen with controlled impurities and potency.
+- A vaccine's benefits and limits are product-specific; recombinant production alone does not guarantee effectiveness.
+
+
+@top-right
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+
+
+@bottom-right
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Recombinant Protein Vaccines - Select a vaccine antigen
+
+
+@left
+
+
+- Candidate antigens are pathogen proteins expected to be accessible to the immune system and shared by relevant strains.
+- Antigen structure and folding matter because immunity recognizes three-dimensional as well as sequence features.
+- Hepatitis B surface antigen and human papillomavirus L1 virus-like particles are recombinant protein vaccine examples.
+
+
+@top-right
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@bottom-right
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+=== layout: two-panels
+
+
+# Answers: Recombinant Protein Vaccines - Make a consistent vaccine antigen
+
+
+@left
+
+
+- Design the gene, express it in a suitable host, purify antigen, and formulate with needed stabilizers or adjuvant.
+- Test identity, purity, potency, stability, and batch consistency throughout development.
+- The host and purification process must yield the required structure and remove process-related impurities.
+
+
+@right
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Recombinant Protein Vaccines - Compare vaccine approaches
+
+
+@left
+
+
+- A protein subunit vaccine presents selected antigens; inactivated and live attenuated vaccines use broader pathogen material.
+- Subunit vaccines cannot replicate, but may need adjuvants or repeated doses to produce a strong response.
+- Clinical testing and regulatory review evaluate safety, effectiveness, manufacturing consistency, and quality.
+
+
+@top-right
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@bottom-right
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+=== layout: theend
+
+
+# THE END
+
+![A protein structure model held for a closing image](assets/lect04c-talking_points_set_3/image_084.png)

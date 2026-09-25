@@ -1,0 +1,703 @@
+color-theme: biotechnology
+
+=== layout: one-plus-two-panels
+
+# Lecture 04E: Structural Biology
+
+@left
+
+- Added chapter beyond the textbook
+- Protein structure determination
+- Set #3: Fall 2026
+- Dr. Neil Voss
+
+@top-right
+
+![A protein structure model held for inspection](assets/lect04c-talking_points_set_3/image_084.png)
+
+@bottom-right
+
+![Student-created workflow from protein preparation to structure determination](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: two-plus-one-panels
+
+
+# Protein Structure Determination
+
+
+@top-left
+
+
+![Student-created recombinant vaccine antigen-to-fill-finish workflow.](assets/lect04c-talking_points_set_3/student_recombinant-vaccine-process.jpg)
+
+
+@bottom-left
+
+
+![Recombinant protein expression-vector workflow](assets/lect04c-talking_points_set_3/image_067.jpg)
+
+
+@right
+
+
+- Recombinant antigen
+- Immune response
+- Vaccine production
+=== layout: two-plus-one-panels
+
+
+# 21. The Protein Data Bank
+
+
+@top-left
+
+
+![Instructor figure related to structure records](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-left
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+
+
+@right
+
+
+- Structure records
+- Coordinate files
+- Protein database
+=== layout: one-plus-two-panels
+
+
+# Questions: The Protein Data Bank
+
+
+@left
+
+
+- What information does a Protein Data Bank entry preserve?
+- How do structure coordinates, experimental method, and resolution help researchers interpret a model?
+- What can a deposited structure show, and what must still be checked?
+
+
+@top-right
+
+
+![Instructor figure related to structure records](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: The Protein Data Bank
+
+
+@left
+
+
+- The PDB is an archive of macromolecular structures with coordinates and associated experimental and biological metadata.
+- Entries include structures determined by methods such as X-ray crystallography, NMR, and cryo-electron microscopy.
+- Researchers use structures to examine folds, binding sites, complexes, and possible mechanisms.
+
+
+@top-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to structure records](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: The Protein Data Bank - Reading an entry
+
+
+@left
+
+
+- Check the experimental method, resolution or confidence information, biological assembly, and validation notes.
+- A coordinate model is an interpretation of evidence; unresolved or flexible regions may be absent or uncertain.
+- Structure supports a hypothesis about function but does not by itself prove activity in a living system.
+
+
+@top-right
+
+
+![Instructor figure related to structure records](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: The Protein Data Bank - What a PDB entry contains
+
+
+@left
+
+
+- A structure entry can include atomic coordinates, sequence, experimental method, sample details, and validation information.
+- The archive includes proteins, nucleic acids, ligands, and large molecular assemblies.
+- Entry metadata links a model to its experimental evidence and related publications.
+
+
+@top-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to structure records](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: The Protein Data Bank - Read resolution and validation
+
+
+@left
+
+
+- For X-ray and cryo-EM structures, resolution describes the level of detail supported by data and model.
+- Inspect local quality, model fit, missing regions, stereochemistry, and ligand placement rather than relying on one number.
+- Flexible or disordered regions may be absent or poorly resolved.
+
+
+@top-right
+
+
+![Instructor figure related to structure records](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: two-panels
+
+
+# Answers: The Protein Data Bank - Use structures with context
+
+
+@left
+
+
+- Compare sequences and structures to locate conserved sites, possible interfaces, and functional residues.
+- A bound ligand or partner suggests an interaction but does not establish biological importance by itself.
+- Check species, construct, conditions, and method when using a structure to guide experiments.
+
+
+@right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: two-plus-one-panels
+
+
+# 22. X-ray Diffraction and Protein Crystallography
+
+
+@top-left
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+
+
+@bottom-left
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@right
+
+
+- Crystals
+- Diffraction pattern
+- Atomic structure
+=== layout: one-plus-two-panels
+
+
+# Questions: X-ray Crystallography
+
+
+@left
+
+
+- Why must many protein structures be crystallized before X-ray diffraction?
+- How are diffraction measurements used to build an electron-density map?
+- How do crystal quality and resolution affect the final structural model?
+
+
+@top-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_076.jpg)
+
+
+@bottom-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: X-ray Crystallography
+
+
+@left
+
+
+- A crystal arranges many copies of a molecule in an ordered lattice that scatters X-rays into measurable diffraction spots.
+- Diffraction intensities and phase information are used to calculate electron density, which guides a structural model.
+- Smaller resolution values indicate finer detail, but model quality also depends on data and refinement.
+
+
+@top-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: X-ray Crystallography - Limits
+
+
+@left
+
+
+- Hanging-drop vapor diffusion is one method for screening conditions that encourage protein crystals to form.
+- Flexible or heterogeneous proteins may crystallize poorly; crystal packing can also favor one conformation.
+- The method provides powerful structural evidence, but crystal quality and model validation remain essential.
+
+
+@top-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_076.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: X-ray Diffraction and Protein Crystallography - Grow a protein crystal
+
+
+@left
+
+
+- Purify and concentrate a stable protein, then screen buffer, salt, pH, and precipitant conditions.
+- In hanging-drop vapor diffusion, a protein drop equilibrates with a larger reservoir and becomes more concentrated over time.
+- Flexible, heterogeneous, or unstable samples can be difficult to crystallize.
+
+
+@top-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_076.jpg)
+
+
+@bottom-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: X-ray Diffraction and Protein Crystallography - Turn diffraction into a model
+
+
+@left
+
+
+- A crystal diffracts X-rays into spots whose positions and intensities contain structural information.
+- Computational methods combine diffraction measurements with phase information to calculate an electron-density map.
+- A fitted atomic model is refined against the data and checked for geometry and agreement with density.
+
+
+@top-right
+
+
+![Student-created workflow from protein preparation to structure determination.](assets/lect04c-talking_points_set_3/student_structure-determination-workflow.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: X-ray Diffraction and Protein Crystallography - Read the limits of crystallography
+
+
+@left
+
+
+- Higher-resolution data support finer detail, but resolution alone does not guarantee a correct model.
+- Radiation damage, crystal disorder, missing density, and flexible domains can limit interpretation.
+- The crystal environment may favor one conformation and does not show every state adopted in solution.
+
+
+@top-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to crystals](assets/lect04c-talking_points_set_3/image_076.jpg)
+=== layout: two-plus-one-panels
+
+
+# 23. Cryo-Electron Microscopy
+
+
+@top-left
+
+
+![Student-created cryo-EM workflow from particle images to a three-dimensional model.](assets/lect04c-talking_points_set_3/student_cryo-em-image-processing.jpg)
+
+
+@bottom-left
+
+
+![Student-created schematic of the electron path in a cryo-electron microscope.](assets/lect04c-talking_points_set_3/student_cryo-em-instrument.jpg)
+
+
+@right
+
+
+- Frozen particles
+- Electron images
+- 3D reconstruction
+=== layout: one-plus-two-panels
+
+
+# Questions: Cryo-EM
+
+
+@left
+
+
+- How does rapid freezing preserve a hydrated protein sample for electron microscopy?
+- How are many particle images combined into a three-dimensional reconstruction?
+- When might cryo-EM suit a sample better than crystallography, and what limits either method?
+
+
+@top-right
+
+
+![Student-created cryo-EM workflow from particle images to a three-dimensional model.](assets/lect04c-talking_points_set_3/student_cryo-em-image-processing.jpg)
+
+
+@bottom-right
+
+
+![Student-created schematic of the electron path in a cryo-electron microscope.](assets/lect04c-talking_points_set_3/student_cryo-em-instrument.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Cryo-EM
+
+
+@left
+
+
+- Samples are rapidly frozen into vitreous ice so particles can be imaged in a near-native hydrated state.
+- A detector records many particle views; software aligns, classifies, and combines them into a three-dimensional map.
+- Cryo-EM can study large assemblies without growing a crystal, but sample quality, particle behavior, and image processing matter.
+
+
+@top-right
+
+
+![Student-created schematic of the electron path in a cryo-electron microscope.](assets/lect04c-talking_points_set_3/student_cryo-em-instrument.jpg)
+
+
+@bottom-right
+
+
+![Student-created cryo-EM workflow from particle images to a three-dimensional model.](assets/lect04c-talking_points_set_3/student_cryo-em-image-processing.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Cryo-EM - Interpreting a map
+
+
+@left
+
+
+- Preferred orientation or structural flexibility can leave parts of the map poorly resolved.
+- Resolution estimates summarize detail at a stated threshold; they do not guarantee equal quality everywhere.
+- Cryo-EM and crystallography are complementary tools, not a universal ranking of better and worse.
+
+
+@top-right
+
+
+![Student-created cryo-EM workflow from particle images to a three-dimensional model.](assets/lect04c-talking_points_set_3/student_cryo-em-image-processing.jpg)
+
+
+@bottom-right
+
+
+![Student-created schematic of the electron path in a cryo-electron microscope.](assets/lect04c-talking_points_set_3/student_cryo-em-instrument.jpg)
+=== layout: two-panels
+
+
+# Answers: Cryo-Electron Microscopy - Prepare a cryo-EM specimen
+
+
+@left
+
+
+- Apply a small sample drop to a grid and blot away excess liquid to leave a thin film.
+- Plunge-freeze the grid rapidly in liquid ethane so water forms vitreous ice rather than damaging crystals.
+- The protein should remain dispersed and structurally intact across the grid.
+
+
+@right
+
+
+![Student-created schematic of the electron path in a cryo-electron microscope.](assets/lect04c-talking_points_set_3/student_cryo-em-instrument.jpg)
+=== layout: two-panels
+
+
+# Answers: Cryo-Electron Microscopy - Reconstruct a 3D structure
+
+
+@left
+
+
+- Record many low-dose particle images from different orientations in vitrified ice.
+- Software identifies particles, aligns images, groups similar views, and reconstructs a three-dimensional density map.
+- Model fitting and validation compare the proposed atomic structure with the reconstructed map.
+
+
+@right
+
+
+![Student-created cryo-EM workflow from particle images to a three-dimensional model.](assets/lect04c-talking_points_set_3/student_cryo-em-image-processing.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Cryo-Electron Microscopy - Compare cryo-EM and X-ray methods
+
+
+@left
+
+
+- Cryo-EM avoids crystal growth and can suit large assemblies or membrane proteins that are difficult to crystallize.
+- Preferred orientation, flexibility, ice thickness, particle quality, and image processing affect the reconstruction.
+- Resolution estimates use map comparisons such as Fourier shell correlation and should be read with model validation.
+
+
+@top-right
+
+
+![Student-created schematic of the electron path in a cryo-electron microscope.](assets/lect04c-talking_points_set_3/student_cryo-em-instrument.jpg)
+
+
+@bottom-right
+
+
+![Student-created cryo-EM workflow from particle images to a three-dimensional model.](assets/lect04c-talking_points_set_3/student_cryo-em-image-processing.jpg)
+=== layout: two-plus-one-panels
+
+
+# 24. AlphaFold and Protein Structure Prediction
+
+
+@top-left
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_086.jpg)
+
+
+@bottom-left
+
+
+![Student-created examples of designed protein folds.](assets/lect04c-talking_points_set_3/student_de-novo-protein-folds.jpg)
+
+
+@right
+
+
+- Sequence to structure
+- Model confidence
+- Experimental checks
+=== layout: one-plus-two-panels
+
+
+# Questions: Protein Structure Prediction
+
+
+@left
+
+
+- How can a structure-prediction system use sequence and learned patterns to propose a protein model?
+- What do confidence measures say about local structure and the placement of domains?
+- Which biological questions still require experiments after a structure is predicted?
+
+
+@top-right
+
+
+![Student-created examples of designed protein folds.](assets/lect04c-talking_points_set_3/student_de-novo-protein-folds.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Structure Prediction
+
+
+@left
+
+
+- AlphaFold predicts a plausible three-dimensional structure from sequence using learned relationships in protein data.
+- Confidence measures help flag uncertain regions or domain arrangements; they are not experimental resolution values.
+- Predictions can accelerate hypotheses about folds and interactions, but do not directly measure activity or cellular context.
+
+
+@top-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_086.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: Protein Structure Prediction - Limits
+
+
+@left
+
+
+- Flexible, disordered, modified, or ligand-dependent states may be difficult to represent with one predicted structure.
+- A model can be useful even when some regions are uncertain; interpret each region according to its confidence.
+- Compare predictions with experiment and biological evidence before using them to design a drug or engineered protein.
+
+
+@top-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_086.jpg)
+
+
+@bottom-right
+
+
+![Student-created examples of designed protein folds.](assets/lect04c-talking_points_set_3/student_de-novo-protein-folds.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: AlphaFold and Protein Structure Prediction - What structure prediction provides
+
+
+@left
+
+
+- Prediction systems use an amino-acid sequence and learned patterns from structural data to propose a model.
+- Predicted coordinates and confidence measures help prioritize regions and hypotheses for experimental study.
+- Uncertainty should be reported and respected even when a prediction is useful.
+
+
+@top-right
+
+
+![Student-created examples of designed protein folds.](assets/lect04c-talking_points_set_3/student_de-novo-protein-folds.jpg)
+
+
+@bottom-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_084.png)
+=== layout: one-plus-two-panels
+
+
+# Answers: AlphaFold and Protein Structure Prediction - Read confidence and uncertainty
+
+
+@left
+
+- pLDDT: local structure confidence
+- PAE: uncertainty in relative residue or domain placement
+- High local confidence does not prove one fixed conformation
+- Low confidence can reflect disorder or missing partners
+
+@top-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_084.png)
+
+
+@bottom-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_086.jpg)
+=== layout: one-plus-two-panels
+
+
+# Answers: AlphaFold and Protein Structure Prediction - Combine predictions with experiments
+
+
+@left
+
+
+- Use predicted structures to plan mutagenesis, identify candidate interfaces, and interpret biochemical results.
+- Compare models with sequence conservation, known domains, and structures of related proteins.
+- Binding assays, cross-linking, cryo-EM, or crystallography can test important model claims.
+
+
+@top-right
+
+
+![Instructor figure related to sequence to structure](assets/lect04c-talking_points_set_3/image_086.jpg)
+
+
+@bottom-right
+
+
+![Student-created examples of designed protein folds.](assets/lect04c-talking_points_set_3/student_de-novo-protein-folds.jpg)
+=== layout: theend
+
+
+# THE END
+
+![A protein structure model held for a closing image](assets/lect04c-talking_points_set_3/image_084.png)

@@ -1,8 +1,18 @@
 ## 2026-09-25
 
+### Additions and New Features
+
+- Split the 386-slide Biotechnology Set #3 protein deck into chapter decks 04C-04F, with individual
+  covers and THE END closers; all instructor material, all 30 topics, and six hidden quiz answers
+  remain included.
+
 ### Fixes and Maintenance
 
+- Renamed the 04D-04F Djot sources and exports to retain the `talking_points_set_3` hierarchy and
+  updated their review links.
 - Corrected the 2026-09-24 heading so commit_changelog.py recognizes its entries.
+- Curated Human Guidance to direct slide advice, consolidated settled choices in Design Decisions,
+  and updated the LibreOffice GUI and headless conversion decision.
 
 ## 2026-09-24
 

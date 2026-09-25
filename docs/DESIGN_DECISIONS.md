@@ -22,7 +22,7 @@ Centered Text classifier.
 **Owner.** `slide_lib/layout_registry.py`, `slide_lib/layout_validation.py`,
 `slide_lib/layout_specialty_builders.py`, and `docs/DJOT_SLIDE_SYNTAX.md`.
 
-## Current operational boundary (2026-09-21)
+## Current operational boundary
 
 ### Wide legacy table teaching figures
 
@@ -91,28 +91,93 @@ lecture's `djot/` directory.
 
 **Owner.** `biotech/` and `build_slides.sh`.
 
-### Biotechnology Lecture 04C source merge
+### Biotechnology protein Set #3 chapter decks
 
-**Decision.** Keep all 146 pages from the instructor's Set #3 ODP as the 04C foundation, including
+**Decision.** Keep all 146 pages from the instructor's Set #3 ODP across the chapter decks, including
 its six hidden quiz answers. Convert the instructor's two on-click quiz sets and antibody-recognition
 reveal into sequential visible question-and-answer slides, while retaining the six source answer
 pages as hidden ODP slides.
-Add the complete 30-topic protein synthesis as expanded study notes. Give every slide at least one
-relevant local image and use several when they help explain the material. Keep student names and
-presenter identities out of canonical slides.
+Add all 30 protein topics as expanded study notes, with at least four slides per topic. Treat 04C
+as a study resource, so presentation guidance about the instructor doing the talking does not fully
+apply. Keep the text scannable while retaining explanations that help students study. Give every
+slide at least one relevant local image and use several when they help explain the material. Let
+source coverage and content determine the slide count; set no target or ceiling. Keep student names
+and presenter identities out of canonical slides. Split the material into 04C Chapter 9: Proteomics,
+04D Chapter 10: Recombinant Proteins, 04E Structural Biology (the added chapter outside the book),
+and 04F Chapter 11: Protein Engineering. Keep each instructor chapter with its corresponding study
+topics and retain the six hidden quiz answers in 04C. Give each standalone deck a relevant cover and
+the dedicated `theend` closer.
 
-**Why.** The instructor deck contains useful core content but does not cover the full current topic
-set. The student presentation files are incomplete and uneven, so their reviewed topics and figures
-extend the course material without replacing instructor content.
+**Why.** The instructor deck has good content but is incomplete, and the current student
+presentations are incomplete too. Combining them preserves the instructor material while extending
+coverage to all 30 protein topics; student figures add relevant visuals.
 
-**Consequence.** [lect04c-talking_points_set_3.djot](../biotech/LECT04/djot/lect04c-talking_points_set_3.djot)
-contains 386 slides: the 145 source teaching pages expanded by 20 quiz flipbook slides, followed by
-the full 220-slide topic synthesis and the instructor's original closer. All 146 source pages remain
-represented, including six hidden answer pages, which stay hidden in the editable ODP and are omitted
-from the classroom PDF. Instructor and student figures remain local to the deck with source-page
+**Consequence.** The 30 topics are assigned by chapter: 1-13 in 04C, 14-20 in 04D, 21-24 in the
+added 04E structural-biology deck, and 25-30 in 04F. The decks contain 214, 81, 31, and 66 slides,
+respectively (392 total, including six hidden quiz-answer pages in 04C). All 146 instructor source
+pages remain represented across 04C, 04D, and 04F. The hidden answer pages stay in the editable ODP
+and are omitted from the classroom PDF. Instructor and student figures remain local with source-page
 provenance; original source files remain under `biotech/LECT04/old/`.
 
 **Owner.** `biotech/LECT04/djot/` and `biotech/LECT04/old/`.
+
+### Biotechnology announcement workflow
+
+**Decision.** Build a new lecture's announcements from the current-year preceding lecture and the
+matching next lecture from the previous year. Use current course, instructor, and schedule sources
+for policies, dates, links, contact information, office hours, and assignment or exam timing. Use
+the prior-year matching lecture for recurring topics, agendas, readings, homework, activities, and
+review questions. Use the numbered Veridian Dynamics filenames for the episode number and title,
+while keeping its announcement image unchanged. Show talking marks as a big-image slide and leave
+their spreadsheet out for instructor paste-in.
+
+**Why.** The merge keeps current details accurate while carrying forward useful weekly material.
+The instructor supplies the talking-marks spreadsheet directly in the editable ODP.
+
+**Consequence.** The 2026 Biotechnology Lecture 04A deck uses Video #4, "Diversity Good for Us," and
+retains the original Veridian image. Its talking-marks page is a large image, with no spreadsheet
+embedded in the canonical Djot.
+
+**Owner.** `biotech/LECT04/djot/lect04a-2026_announcements.djot` and the course sources in
+`biotech/LECT04/old/`.
+
+### Biotechnology Lecture 04B project archive
+
+**Decision.** Keep all 42 archived individual-project slides after the eight current Fall 2026
+slides in the Djot source and emit the archived pages as native hidden ODP slides.
+
+**Why.** The complete project archive remains editable while only the current assignment appears in
+classroom playback.
+
+**Consequence.** The ODP contains 50 physical slides, 42 hidden; the classroom PDF contains the
+eight visible Fall 2026 slides.
+
+**Owner.** `biotech/LECT04/djot/lect04b-individual_project.djot` and its source material in
+`biotech/LECT04/old/`.
+
+### Genetics Lecture 04B character and trait quiz
+
+**Decision.** Put the character and trait lists in two upper panels, then place the question and
+answer choices together in a lower panel.
+
+**Why.** Students need to compare the paired terms while reading the quiz prompt and choices.
+
+**Consequence.** The slide uses a two-over-one panel composition rather than a text-only quiz layout.
+
+**Owner.** `genetics/LECT04/djot/lect04b-mendel_history.djot`.
+
+### Genetics Lecture 04C principle sequence
+
+**Decision.** Highlight the principle being introduced next and gray the other principles on the
+repeated overview slides. Use a lower-weight `subsection` slide for the open-ended principle prompt,
+and keep allele definitions and genotype examples in left and right panels.
+
+**Why.** The repeated highlights show the lesson's progression, while the prompt and paired
+definitions/examples need distinct hierarchy and regions.
+
+**Consequence.** The source sequence uses the existing `subsection` and `two-panels` layouts.
+
+**Owner.** `genetics/LECT04/djot/lect04c-two_principles.djot`.
 
 ### Biotechnology Lecture 03 source merge
 
@@ -130,7 +195,7 @@ coverage but do not certify factual claims.
 content. The old ODP supplies relevant historical figures only; the Fall 2025 PPTX corroborates
 complete topic coverage and supplies selected newer visuals.
 
-**Owner.** `biotech/djot/lect03c-talking_points_set_2.djot`.
+**Owner.** `biotech/LECT03/djot/lect03c-talking_points_set_2.djot`.
 
 ### Lecture 03B section-divider hierarchy
 
@@ -143,7 +208,7 @@ which produced visibly awkward spacing after conversion.
 **Consequence.** Each generated divider has an intentional centered heading/subtitle hierarchy,
 with no red-on-red dates or legacy midnight cutoff fragments.
 
-**Owner.** `biotech/djot/lect03b-individual_project.djot`.
+**Owner.** `biotech/LECT03/djot/lect03b-individual_project.djot`.
 
 ### Chapter and topic divider hierarchy
 
@@ -156,30 +221,32 @@ individual talking points.
 **Consequence.** Both remain native editable Centered Text layouts, but their color contrast makes
 the chapter/topic relationship immediately visible.
 
-**Owner.** `slide_lib.layout_registry` and `biotech/djot/lect03c-talking_points_set_2.djot`.
+**Owner.** `slide_lib.layout_registry.py` and
+`biotech/LECT03/djot/lect03c-talking_points_set_2.djot`.
 
 The native-ODP decision below supersedes earlier decisions that describe a maintained PPTX reader,
 writer, animation adapter, temporary conversion, or sibling artifact. Current operation builds one
 editable ODP from Djot and asks LibreOffice to make every classroom and review PDF from that ODP.
-Import reads bounded ODP; a legacy PPTX is first saved as ODP in LibreOffice. The active catalog has
-twelve LibreOffice layouts plus the project-owned `multiple-choice`, `gallery`, and `big-image`
-layouts, and native reveals use ODF/SMIL. Earlier references remain dated design history.
+The desktop GUI may remain open during headless conversion. Import reads bounded ODP; a legacy PPTX
+is first saved as ODP in LibreOffice. The active catalog has twelve LibreOffice layouts plus the
+project-owned `multiple-choice`, `gallery`, and `big-image` layouts, and native reveals use ODF/SMIL.
+Earlier references remain dated design history.
 
 ### Sequential LibreOffice PDF conversion
 
-**Decision.** After one desktop-process preflight, resolve `soffice` and invoke it once per
-generated ODP in source order with direct `subprocess.run` arguments: `--headless`, `--norestore`,
-`--convert-to`, the Impress PDF filter, `--outdir`, and the ODP path. Wait two seconds between
-successful conversions and require each expected PDF before continuing. `native_export` stages the
-complete PDF set and publishes only after every conversion succeeds.
+**Decision.** Resolve `soffice` and invoke it once per generated ODP in source order with direct
+`subprocess.run` arguments: `--headless`, `--norestore`, `--convert-to`, the Impress PDF filter,
+`--outdir`, and the ODP path. The desktop GUI may remain open during conversion. Wait two seconds
+between successful conversions and require each expected PDF before continuing. `native_export`
+stages the complete PDF set and publishes only after every conversion succeeds.
 
 **Why.** This is the established author workflow in `~/nsh/junk-drawer/makePDFSlides.sh`. The
 private-profile, one-process batch, process-group, and timeout-cleanup experiment added failure
 states and triggered a LibreOffice recovery prompt without solving a demonstrated classroom need.
 
-**Consequence.** Numeric quality and DPI are export defaults, not gates. No AppleScript, GUI
-orchestration, private `UserInstallation`, `Popen`, process killing, or conversion timeout policy
-belongs in the build path.
+**Consequence.** Numeric quality and DPI are export defaults, not gates. The build does not control
+the desktop GUI and does not require it to close. No AppleScript, private `UserInstallation`,
+`Popen`, process killing, or conversion timeout policy belongs in the build path.
 
 **Owner.** `slide_lib/libreoffice.py` and `slide_lib/native_export.py`.
 
