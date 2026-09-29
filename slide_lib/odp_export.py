@@ -420,6 +420,7 @@ def _write_notes(page: xml.etree.ElementTree.Element,
 		_qname(SVG_NS, "height"): "10cm",
 	})
 	text_box = xml.etree.ElementTree.SubElement(frame, _qname(DRAW_NS, "text-box"))
+	# ASVS 1.1.2: let the XML serializer escape note text at the output boundary.
 	for value in note_values:
 		xml.etree.ElementTree.SubElement(text_box, _qname(TEXT_NS, "p")).text = value
 

@@ -57,6 +57,24 @@ def test_native_odp_renderer_writes_editable_objects(tmp_path: pathlib.Path) -> 
 	assert f"#{theme.gradient_start_color}".encode() in styles_xml
 
 
+def test_authored_notes_export_only_to_native_note_objects(tmp_path: pathlib.Path) -> None:
+	"""Plain note text stays editable and cannot inject visible ODP XML."""
+	source_path = write_deck(tmp_path, "=== layout: one-panel\n@notes\n"
+		"Ask <why> & wait.\n\n- Instructor reminder.\n@body\nStudent content.\n"
+		"=== layout: blank\nhidden: true\n@notes\nHidden reminder.\n")
+	deck = slide_lib.native_export.parse_deck(source_path)
+	odp_path = slide_lib.native_export.render_native_odp(deck, tmp_path / "deck.odp")
+	with zipfile.ZipFile(odp_path) as archive:
+		root = slide_lib.odf_package.parse_xml(archive.read("content.xml"), "content.xml")
+	pages = root.findall(".//draw:page", ODF_NAMESPACES)
+	note_text = [tuple("".join(node.itertext()) for node in page.findall(
+		"presentation:notes/draw:frame/draw:text-box/text:p", ODF_NAMESPACES)) for page in pages]
+	visible_text = "".join("".join(node.itertext()) for page in pages for node in page
+		if node.tag != f"{{{ODF_NAMESPACES['presentation']}}}notes")
+	assert note_text == [("Ask <why> & wait.", "", "- Instructor reminder."), ("Hidden reminder.",)]
+	assert "Student content." in visible_text and "reminder" not in visible_text and "<why>" not in visible_text
+
+
 def test_representable_capacity_recovery_exports_one_native_page_per_source_slide(
 		tmp_path: pathlib.Path) -> None:
 	"""A reported compromise remains editable at serializer-safe sizes."""

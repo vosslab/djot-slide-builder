@@ -285,9 +285,8 @@ def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathl
 
 
 def test_nonempty_notes_reveals_and_authored_content_remain_on_the_source_slide(tmp_path: pathlib.Path) -> None:
-	parsed = parsed_source(tmp_path, "=== layout: one-panel\n\n@body\n\n=> appear\nVisible later.")
-	slide = dataclasses.replace(parsed.slides[0], notes=("First note", "Second note"))
-	deck = dataclasses.replace(parsed, slides=(slide,))
+	deck = parsed_source(tmp_path, "=== layout: one-panel\n\n@body\n\n=> appear\nVisible later."
+		"\n\n@notes\nFirst note\nSecond note\n")
 	result = slide_lib.layout_engine.compile_layout_deck(deck, slide_lib.presentation_theme.default_theme())
 	compiled = result.plan.slides[0]
 	targets = tuple(target for item in compiled.objects for target in item.reveal_targets)

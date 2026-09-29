@@ -24,6 +24,23 @@ Centered Text classifier.
 
 ## Current operational boundary
 
+### Authored instructor notes
+
+**Decision.** Every layout accepts one optional `@notes` region. It ends at the next named slot,
+slide directive, or EOF. Store each plain-text line in the existing native speaker-note model,
+preserve internal blank lines, and decode complete character references once.
+
+**Why.** Instructor reminders belong to the slide but have no visible layout destination. The
+existing ODP writer already owns native notes, so the language needs no new layout or model.
+
+**Consequence.** Required visible slots remain required. Notes survive in the editable ODP and
+are excluded from ordinary PDF export through explicit LibreOffice filter settings. Formatting
+and action-like text stay literal. Existing import reports continue to retain imported notes;
+automatic note emission during ODP import is outside this authoring change.
+
+**Owner.** `slide_lib/djot_parser.py`, `slide_lib/odp_export.py`, `slide_lib/libreoffice.py`, and
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes).
+
 ### Wide legacy table teaching figures
 
 **Decision.** For imported legacy tables that need progressive highlighting or are too wide for a

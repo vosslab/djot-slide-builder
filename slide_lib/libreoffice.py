@@ -18,6 +18,9 @@ IMPRESS_PDF_EXPORT = (
 	'"ReduceImageResolution":{"type":"boolean","value":"true"},'
 	'"MaxImageResolution":{"type":"long","value":"100"},'
 	'"ExportHiddenSlides":{"type":"boolean","value":"false"},'
+	'"ExportNotes":{"type":"boolean","value":"false"},'
+	'"ExportNotesPages":{"type":"boolean","value":"false"},'
+	'"ExportOnlyNotesPages":{"type":"boolean","value":"false"},'
 	'"SelectPdfVersion":{"type":"long","value":"3"}'
 	'}'
 )

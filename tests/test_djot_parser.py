@@ -46,6 +46,26 @@ def parse_error(tmp_path: pathlib.Path, source: str) -> str:
 
 
 #============================================
+def test_notes_end_at_next_slot_and_stay_off_visible_content(tmp_path: pathlib.Path) -> None:
+	"""Notes between question and answer leave both visible regions intact."""
+	deck = parse_source(tmp_path, "=== layout: multiple-choice\n@question\n- A\n- B\n"
+		"@notes\nAsk why B fits.\n\n- Wait for discussion.\n@answer\nB\n")
+	assert deck.slides[0].notes == ("Ask why B fits.", "", "- Wait for discussion.")
+	assert slide_lib.djot_parser.visible_text(deck.slides[0].cells[1].blocks[0].inlines) == "B"
+
+
+#============================================
+def test_notes_keep_directive_like_text_and_end_at_next_slide(tmp_path: pathlib.Path) -> None:
+	"""Literal notes cannot alter visibility, deck metadata, or fence the next slide."""
+	deck = parse_source(tmp_path, "=== layout: blank\n@notes\n"
+		"hidden: true\ncolor-theme: chemistry\n=> appear\n```\n"
+		"<tag> &amp; &#945; &amp;lt;\n=== layout: blank\n")
+	assert deck.slides[0].notes == (
+		"hidden: true", "color-theme: chemistry", "=> appear", "```", "<tag> & \u03b1 &lt;")
+	assert not deck.slides[0].hidden and deck.slides[1].notes == ()
+
+
+#============================================
 @pytest.mark.parametrize("layout_name", (
 	"vertical-panel",
 	"vertical-title-two-panels",

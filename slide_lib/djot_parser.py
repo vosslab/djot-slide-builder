@@ -73,7 +73,15 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[str, tuple[_SlideSour
 	layout_line = 0
 	content: list[_SourceLine] = []
 	fence: tuple[str, int] | None = None
+	in_notes = False
 	for number, value in enumerate(lines, start=1):
+		# Notes are literal text up to the next region or slide boundary.
+		if in_notes:
+			if (slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(value) is None and
+					not value.startswith("=== layout:")):
+				content.append(_SourceLine(number, value))
+				continue
+			in_notes = False
 		if fence is not None:
 			content.append(_SourceLine(number, value))
 			if re.fullmatch(rf"{re.escape(fence[0])}{{{fence[1]},}}[ \t]*", value) is not None:
@@ -110,6 +118,7 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[str, tuple[_SlideSour
 			layout_name = match.group("layout")
 			layout_line = number
 			content = []
+			in_notes = False
 			continue
 		if value.startswith("=== layout:"):
 			fail(path, number, "layout directives must be exact whole lines: === layout: <name>")
@@ -118,6 +127,8 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[str, tuple[_SlideSour
 				fail(path, number, "Djot decks must begin with an exact layout directive")
 			continue
 		content.append(_SourceLine(number, value))
+		if value == "@notes":
+			in_notes = True
 	if layout_name is None:
 		fail(path, 1, "Djot decks require at least one layout directive")
 	slides.append(_SlideSource(location(path, layout_line), layout_name, tuple(content)))
@@ -330,7 +341,12 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	hidden = False
 	hidden_seen = False
 	content_started = False
+	note_lines: list[str] | None = None
 	for source_line in source.lines:
+		if (note_lines is not None and active_slot == "notes" and
+				slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(source_line.value) is None):
+			note_lines.append(source_line.value)
+			continue
 		if fence is not None:
 			if active_slot is None:
 				global_lines.append(source_line)
@@ -339,6 +355,16 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 			if re.fullmatch(rf"{re.escape(fence[0])}{{{fence[1]},}}[ \t]*", source_line.value) is not None:
 				fence = None
 			continue
+		if source_line.value == "@notes":
+			# ASVS 2.2.1: one optional note region, independent of layout slots.
+			if note_lines is not None:
+				fail(path, source_line.line, "duplicate @notes section")
+			note_lines = []
+			active_slot = "notes"
+			content_started = True
+			continue
+		if re.fullmatch(r"\s*@notes(?:\s+.*)?", source_line.value):
+			fail(path, source_line.line, "notes directive must be exactly @notes on its own line")
 		if source_line.value.strip().startswith("hidden:"):
 			# ASVS 2.2.1: accept only an explicit boolean at the slide metadata boundary.
 			match = slide_lib.djot_grammar.HIDDEN_DIRECTIVE_PATTERN.fullmatch(source_line.value)
@@ -397,7 +423,10 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	if source.layout_name == "multiple-choice":
 		answer_index = layout.slot_names.index("answer")
 		cells[answer_index] = implicit_multiple_choice_answer(path, cells[answer_index])
-	slide = slide_lib.native_model.Slide(source.location, source.layout_name, (), global_blocks,
+	note_text = "\n".join(note_lines or []).strip("\n")
+	notes = tuple(slide_lib.djot_grammar.project_text(line) for line in note_text.split("\n")) \
+		if note_text.strip() else ()
+	slide = slide_lib.native_model.Slide(source.location, source.layout_name, notes, global_blocks,
 		tuple(cells), hidden=hidden)
 	return slide
 

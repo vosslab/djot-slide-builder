@@ -46,6 +46,10 @@ metadata in ODP; LibreOffice PDF export and classroom playback omit it. Capacity
 include hidden slides and their assets. Remove that line or use `hidden: false` to show it. See
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#hidden-slides).
 
+Use `@notes` for instructor reminders. Notes end at the next named slot or slide directive and
+become editable ODP speaker notes; the normal PDF export omits them. See
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes) for an example.
+
 The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
 native master and LibreOffice exports PDF from the themed ODP; no CSS or browser rendering is part
 of the build.

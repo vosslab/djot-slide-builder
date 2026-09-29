@@ -14,7 +14,7 @@ if _repo_root not in sys.path:
 # holds browser-driven tests (Playwright), and tests/e2e/ holds heavier
 # shell/Python whole-system runners. Both run outside pytest -- see
 # docs/PLAYWRIGHT_USAGE.md and docs/E2E_TESTS.md.
-collect_ignore = ["e2e", "playwright"]
+collect_ignore = ["e2e", "playwright", "_temp"]
 
 
 # REPO_HYGIENE_FILTERS is the repo-local hygiene-exclusion registry (Layer 2).

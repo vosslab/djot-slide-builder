@@ -8,8 +8,18 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+## Test maintenance
+
+- Treat permanent tests as liabilities as well as assets. Protect intentionally stable, important
+  behavior that could regress; prefer contracts over implementation details. When in doubt, remove.
+- Keep one-time tests outside the permanent suite and out of Git in `tests/_temp/`. Promote them
+  only when the behavior deserves lasting protection.
+- Ground gates in actual needs; avoid arbitrary thresholds, exhaustive matrices, and byte or pixel
+  equivalence unless the product depends on them.
+
 ## Slide-writing advice
 
+- Add instructor notes to the custom Djot slide format; `@notes` works as the section marker.
 - "Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide."
 - "Images Are Required: Try to have several pictures on your slide to maintain audience
   attention. You should have some text though."

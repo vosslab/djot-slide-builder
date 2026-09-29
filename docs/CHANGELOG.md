@@ -1,3 +1,31 @@
+## 2026-09-29
+
+### Additions and New Features
+
+- Add optional `@notes` regions to every Djot slide layout. Plain instructor text ends at the next
+  named slot or slide directive and exports through the existing native ODP speaker-note model.
+
+### Behavior or Interface Changes
+
+- Preserve note line breaks and blank lines, decode character references once, and keep notes out
+  of visible slide content. Explicitly exclude notes and notes pages from normal PDF export.
+- Document notes syntax, examples, instructor guidance, and the native-notes design decision.
+
+### Fixes and Maintenance
+
+- Exclude `tests/_temp/` from Git and normal pytest collection. Retain only note-boundary and
+  native-export behavior tests; use temporary checks for broader implementation evidence.
+
+### Developer Tests and Notes
+
+- Focused parser, layout, native-export, and LibreOffice tests pass. Strict Djot lint accepts the
+  17-layout notes sample. A one-time LibreOffice ODP round trip preserves its authored notes;
+  extracted PDF text includes visible content and excludes instructor notes.
+- Broader checks found existing indentation errors in `devel/render_genetics_lect04_tables.py`,
+  missing return annotations in `tests/test_odp_reader.py`, and a stale Lecture 04 review link.
+  The existing full-layout E2E stops at its distinct AutoLayout identity assertion; the focused
+  note round-trip check completes independently.
+
 ## 2026-09-28
 
 ### Additions and New Features

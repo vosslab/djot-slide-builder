@@ -56,6 +56,41 @@ before a slot is global content; it supplies titles, subtitles, or root content 
 chosen layout accepts it.  Keep ordinary prose and lists in normal Djot form; a layout directive
 and a slot directive are short, whole lines.
 
+## Instructor notes
+
+Use one optional `@notes` section on any slide. It continues until the next exact named-slot
+directive, such as `@body` or `@answer`, the next `=== layout:` line, or the end of the file.
+The next slot must belong to the chosen layout; `@section` is not a slot name.
+
+```djot
+=== layout: one-panel
+
+# DNA replication
+
+@notes
+
+Ask students which strand serves as the template.
+- Pause for discussion before explaining the answer.
+
+@body
+
+- Each daughter duplex has one original strand.
+```
+
+Place notes after the title and any `hidden` metadata, before or between named slots, or at the
+end of the slide. Notes do not replace required slots. Use an exact, unindented `@notes` line;
+duplicates are errors. An empty notes section is allowed as an authoring placeholder.
+
+Notes are plain text: line breaks and internal blank lines remain, and leading/trailing blank
+lines are omitted. Complete character references such as `&alpha;` decode once. Bullet markers,
+inline markup, links, images, and action-like lines remain literal text. Code fences are also
+literal in notes; they do not protect a following slot or slide directive from ending the section.
+A `@notes` line inside a visible fenced code block remains part of that code example.
+
+Notes become editable speaker notes in the ODP, including on hidden slides. They do not occupy
+slide space or affect capacity checks. The normal PDF export excludes notes and notes pages.
+The editable ODP retains them; distribute the PDF when students should receive only slide content.
+
 ## Hidden slides
 
 Keep optional or previously hidden material in source with `hidden: true` after the layout line:
