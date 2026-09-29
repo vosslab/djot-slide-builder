@@ -1,0 +1,3130 @@
+{
+  "source": "lect05d-probability_concepts.odp",
+  "slide_count": 31,
+  "visible_slides": 31,
+  "hidden_slides": [],
+  "unique_media_assets": 9,
+  "slides": [
+    {
+      "source_slide": 1,
+      "hidden": false,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 2,
+      "hidden": false,
+      "visible_page": 2,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #cc00cc requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 36.45354330708661,
+          "top": 18.708661417322833,
+          "width": 726.9448818897638,
+          "height": 225.9779527559055,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 257.9527559055118,
+          "width": 666.7086614173228,
+          "height": 174.3023622047244,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 3,
+      "hidden": false,
+      "visible_page": 3,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 4,
+      "hidden": false,
+      "visible_page": 4,
+      "layout": "one-plus-two-panels",
+      "text_blocks": 1,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL3T12",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "object",
+          "object"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 436.53543307086613,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 485.29133858267716,
+          "top": 106.38425196850393,
+          "width": 292.50708661417326,
+          "height": 165.0047244094488,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 488.1259842519685,
+          "top": 295.99370078740156,
+          "width": 285.73228346456693,
+          "height": 147.11811023622047,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 5,
+      "hidden": false,
+      "visible_page": 5,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL4T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 6,
+      "hidden": false,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #009933 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 7,
+      "hidden": false,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #00599d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 8,
+      "hidden": false,
+      "visible_page": 8,
+      "layout": "stacked-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 259.2,
+          "top": 101.8771653543307,
+          "width": 288.0,
+          "height": 194.39999999999998,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 259.2,
+          "top": 296.73070866141734,
+          "width": 288.0,
+          "height": 177.84566929133857,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 9,
+      "hidden": false,
+      "visible_page": 9,
+      "layout": "one-plus-two-panels",
+      "text_blocks": 1,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 457.62519685039365,
+          "top": 96.20787401574803,
+          "width": 288.0,
+          "height": 194.39999999999998,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 457.62519685039365,
+          "top": 291.06141732283464,
+          "width": 288.0,
+          "height": 177.84566929133857,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 10,
+      "hidden": false,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 38.55118110236221,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 11,
+      "hidden": false,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 8,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.04996428571428572, top=0.08245714285714285, right=0.9499285714285715, bottom=0.572), NormalizedBounds(left=0.8436428571428572, top=0.3074857142857143, right=0.9887857142857144, bottom=0.5805714285714286), NormalizedBounds(left=0.26032142857142854, top=0.32759999999999995, right=0.30996428571428575, bottom=0.5696), NormalizedBounds(left=0.7603214285714286, top=0.32759999999999995, right=0.8099642857142858, bottom=0.5696), NormalizedBounds(left=0.06096428571428572, top=0.3878857142857143, right=0.14910714285714285, bottom=0.5054857142857143), NormalizedBounds(left=0.5609642857142857, top=0.3878857142857143, right=0.6491071428571429, bottom=0.5054857142857143)] into one native source-order panel",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 9
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 40.90393700787401,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 48.38740157480315,
+          "top": 192.41574803149607,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            2,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            2,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 206.61732283464565,
+          "top": 162.51023622047242,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            2,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 206.64566929133858,
+          "top": 249.73228346456693,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            2,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 445.23779527559054,
+          "top": 192.41574803149607,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            3,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            3,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 603.467716535433,
+          "top": 162.51023622047242,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            3,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 603.496062992126,
+          "top": 249.73228346456693,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            3,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "frame",
+          "left": 280.8,
+          "top": 148.2803149606299,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "frame",
+          "left": 669.6,
+          "top": 152.53228346456694,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            5
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 12,
+      "hidden": false,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 11,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized source components require manual layout review before Djot emission into one native source-order panel",
+        "regular text lattice requires border and span reconstruction",
+        "unrecognized source text color #bcaed5 requires review",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 12
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 40.90393700787401,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 44.957480314960634,
+          "top": 287.09291338582676,
+          "width": 698.4,
+          "height": 195.30708661417322,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 36.0,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 430.01574803149606,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 48.04724409448819,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            5,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            5,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 206.27716535433072,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            5,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 206.3055118110236,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            5,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 444.8976377952756,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            6,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            6,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 603.1275590551181,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            6,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 603.1559055118109,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            6,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "frame",
+          "left": 280.459842519685,
+          "top": 148.30866141732284,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "frame",
+          "left": 669.259842519685,
+          "top": 152.56062992125982,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            8
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 13,
+      "hidden": false,
+      "visible_page": 13,
+      "layout": "stacked-panels",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source image requires review: unsupported ODP image type: .svm"
+      ],
+      "native_table_count": 1,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "table"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "table"
+        ],
+        "populated_table_placeholder_roles": [
+          "table"
+        ],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 88.15748031496062,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 53.744881889763775,
+          "top": 199.33228346456693,
+          "width": 511.1716535433071,
+          "height": 280.7716535433071,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 14,
+      "hidden": false,
+      "visible_page": 14,
+      "layout": "stacked-panels",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source image requires review: unsupported ODP image type: .svm"
+      ],
+      "native_table_count": 1,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "table"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "table"
+        ],
+        "populated_table_placeholder_roles": [
+          "table"
+        ],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 88.15748031496062,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.571653543307086,
+          "top": 202.16692913385825,
+          "width": 511.1716535433071,
+          "height": 280.7716535433071,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 15,
+      "hidden": false,
+      "visible_page": 15,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.04996428571428572, top=0.1777142857142857, right=0.9499285714285715, bottom=0.9869714285714285), NormalizedBounds(left=0.04985714285714286, top=0.4018285714285714, right=0.6715357142857142, bottom=0.9678285714285715)] into a table-safe native source-order grid",
+        "source image requires review: unsupported ODP image type: .svm"
+      ],
+      "native_table_count": 1,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "table"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "table"
+        ],
+        "populated_table_placeholder_roles": [
+          "table"
+        ],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 88.15748031496062,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.571653543307086,
+          "top": 199.33228346456693,
+          "width": 493.4267716535433,
+          "height": 280.7716535433071,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 576.0,
+          "top": 187.2,
+          "width": 165.6,
+          "height": 302.4,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 16,
+      "hidden": false,
+      "visible_page": 16,
+      "layout": "one-panel",
+      "text_blocks": 11,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized source components require manual layout review before Djot emission into one native source-order panel",
+        "regular text lattice requires border and span reconstruction",
+        "unrecognized source text color #bcaed5 requires review",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 12
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 40.90393700787401,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 44.957480314960634,
+          "top": 287.09291338582676,
+          "width": 698.4,
+          "height": 195.30708661417322,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 36.0,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 430.01574803149606,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 48.04724409448819,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            5,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            5,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 206.27716535433072,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            5,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 206.3055118110236,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            5,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 444.8976377952756,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            6,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            6,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 603.1275590551181,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            6,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 603.1559055118109,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            6,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "frame",
+          "left": 280.459842519685,
+          "top": 148.30866141732284,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "frame",
+          "left": 669.259842519685,
+          "top": 152.56062992125982,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            8
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 17,
+      "hidden": false,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 11,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized source components require manual layout review before Djot emission into one native source-order panel",
+        "regular text lattice requires border and span reconstruction",
+        "unrecognized source text color #bcaed5 requires review",
+        "unrecognized source text color #ed1c24 requires review",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 12
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 40.90393700787401,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 44.957480314960634,
+          "top": 287.09291338582676,
+          "width": 698.4,
+          "height": 195.30708661417322,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 36.0,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 430.01574803149606,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 48.04724409448819,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            5,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            5,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 206.27716535433072,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            5,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 206.3055118110236,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            5,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 444.8976377952756,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            6,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            6,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 603.1275590551181,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            6,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 603.1559055118109,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            6,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "frame",
+          "left": 280.459842519685,
+          "top": 148.30866141732284,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "frame",
+          "left": 669.259842519685,
+          "top": 152.56062992125982,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            8
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 18,
+      "hidden": false,
+      "visible_page": 18,
+      "layout": "one-panel",
+      "text_blocks": 11,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "source object crosses physical page bounds",
+        "unrecognized source text color #bcaed5 requires review",
+        "unrecognized source text color #ed1c24 requires review",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.04535714285714286,
+          "top": 0.08245714285714285,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.056642857142857155,
+              "top": 0.5787428571428571,
+              "right": 0.9365714285714286,
+              "bottom": 0.9724571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Are these events \u201cmutually exclusive\u201d? ",
+                    "link": ""
+                  },
+                  {
+                    "text": "NO NO",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Let\u2019s try the ",
+                    "link": ""
+                  },
+                  {
+                    "text": "general",
+                    "link": ""
+                  },
+                  {
+                    "text": " addition rule:",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "P(",
+                    "link": ""
+                  },
+                  {
+                    "text": "B",
+                    "link": ""
+                  },
+                  {
+                    "text": " or ",
+                    "link": ""
+                  },
+                  {
+                    "text": "C",
+                    "link": ""
+                  },
+                  {
+                    "text": ") = P(",
+                    "link": ""
+                  },
+                  {
+                    "text": "B",
+                    "link": ""
+                  },
+                  {
+                    "text": ") + P(",
+                    "link": ""
+                  },
+                  {
+                    "text": "C",
+                    "link": ""
+                  },
+                  {
+                    "text": ") ",
+                    "link": ""
+                  },
+                  {
+                    "text": "\u2013 P(",
+                    "link": ""
+                  },
+                  {
+                    "text": "B",
+                    "link": ""
+                  },
+                  {
+                    "text": " and ",
+                    "link": ""
+                  },
+                  {
+                    "text": "C",
+                    "link": ""
+                  },
+                  {
+                    "text": ")",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "= \u00bd+\u00bd",
+                    "link": ""
+                  },
+                  {
+                    "text": "\u2013\u00bc",
+                    "link": ""
+                  },
+                  {
+                    "text": " = 75%",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Ah, that is better...",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.04535714285714286,
+              "top": 0.3024,
+              "right": 0.0997857142857143,
+              "bottom": 0.37497142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5417857142857143,
+              "top": 0.3024,
+              "right": 0.5962142857142857,
+              "bottom": 0.37497142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              6,
+              0
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.0605357142857143,
+              "top": 0.38794285714285714,
+              "right": 0.14867857142857144,
+              "bottom": 0.5055428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              6,
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.25989285714285715,
+              "top": 0.32765714285714287,
+              "right": 0.30950000000000005,
+              "bottom": 0.3937714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              6,
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2599285714285714,
+              "top": 0.5034857142857143,
+              "right": 0.30953571428571425,
+              "bottom": 0.5696571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              7,
+              0
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5605357142857144,
+              "top": 0.38794285714285714,
+              "right": 0.6486785714285714,
+              "bottom": 0.5055428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "3",
+                    "link": ""
+                  },
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "4",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              7,
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7598928571428573,
+              "top": 0.32765714285714287,
+              "right": 0.8095000000000001,
+              "bottom": 0.3937714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "3",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 13,
+            "source_order": [
+              7,
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7599285714285714,
+              "top": 0.5034857142857143,
+              "right": 0.8095357142857142,
+              "bottom": 0.5696571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A",
+                    "link": ""
+                  },
+                  {
+                    "text": "4",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 14,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.35335714285714287,
+              "top": 0.2989714285714286,
+              "right": 0.4985,
+              "bottom": 0.5720571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "50% chance of A",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 15,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.8432142857142857,
+              "top": 0.3075428571428571,
+              "right": 0.9883571428571429,
+              "bottom": 0.5806285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "50% chance of A",
+                    "link": ""
+                  },
+                  {
+                    "text": "3",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05d-probability_concepts/image_004.png",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.08245714285714285,
+              "right": 0.9499285714285715,
+              "bottom": 0.2989142857142857
+            }
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              5
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05d-probability_concepts/image_005.png",
+            "bounds": {
+              "left": 0.8255000000000001,
+              "top": 0.7860571428571428,
+              "right": 1.0,
+              "bottom": 1.0
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 13
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 40.90393700787401,
+          "width": 714.3023622047244,
+          "height": 107.3763779527559,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 44.957480314960634,
+          "top": 287.09291338582676,
+          "width": 698.4,
+          "height": 195.30708661417322,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 36.0,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 430.01574803149606,
+          "top": 150.00944881889762,
+          "width": 43.2,
+          "height": 36.0,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "frame",
+          "left": 655.2,
+          "top": 389.9338582677165,
+          "width": 138.5007874015748,
+          "height": 107.97165354330708,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 48.04724409448819,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            6,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            6,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 206.27716535433072,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            6,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 206.3055118110236,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            6,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 444.8976377952756,
+          "top": 192.44409448818897,
+          "width": 69.95905511811023,
+          "height": 58.33700787401574,
+          "z_order": [
+            7,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 57.45826771653544,
+          "height": 78.74645669291338,
+          "z_order": [
+            7,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 603.1275590551181,
+          "top": 162.53858267716535,
+          "width": 39.37322834645669,
+          "height": 32.79685039370079,
+          "z_order": [
+            7,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 603.1559055118109,
+          "top": 249.76062992125983,
+          "width": 39.37322834645669,
+          "height": 32.825196850393695,
+          "z_order": [
+            7,
+            3
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "frame",
+          "left": 280.459842519685,
+          "top": 148.30866141732284,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "frame",
+          "left": 669.259842519685,
+          "top": 152.56062992125982,
+          "width": 115.2,
+          "height": 135.46771653543306,
+          "z_order": [
+            9
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 19,
+      "hidden": false,
+      "visible_page": 19,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL4T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 20,
+      "hidden": false,
+      "visible_page": 20,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #009933 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 20,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 21,
+      "hidden": false,
+      "visible_page": 21,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source object crosses physical page bounds",
+        "unrecognized source text color #00599d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 21,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": -12.330708661417322,
+          "width": 761.9527559055118,
+          "height": 147.06141732283464,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 22,
+      "hidden": false,
+      "visible_page": 22,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source object crosses physical page bounds"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 22,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": -12.330708661417322,
+          "width": 761.9527559055118,
+          "height": 147.06141732283464,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 377.91496062992127,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.66614173228345,
+          "top": 143.1496062992126,
+          "width": 348.57637795275593,
+          "height": 291.6566929133858,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 23,
+      "hidden": false,
+      "visible_page": 23,
+      "layout": "stacked-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source object crosses physical page bounds",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 23,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.62834645669291,
+          "top": 140.88188976377953,
+          "width": 714.3023622047244,
+          "height": 115.31338582677164,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 71.46141732283463,
+          "top": 296.73070866141734,
+          "width": 650.6929133858267,
+          "height": 165.0047244094488,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 556.5259842519685,
+          "height": 547.4267716535434,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 24,
+      "hidden": false,
+      "visible_page": 24,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 24,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 31.5496062992126,
+          "top": 72.70866141732283,
+          "width": 736.7244094488188,
+          "height": 280.09133858267717,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 25,
+      "hidden": false,
+      "visible_page": 25,
+      "layout": "four-panels",
+      "text_blocks": 4,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 25,
+        "layout_identity": "AL7T16",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 5
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 408.18897637795277,
+          "top": 45.184251968503936,
+          "width": 348.57637795275593,
+          "height": 165.0047244094488,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 28.8,
+          "top": 47.99055118110236,
+          "width": 348.57637795275593,
+          "height": 160.80944881889764,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 208.79999999999998,
+          "top": 281.8488188976378,
+          "width": 111.88346456692913,
+          "height": 93.28818897637795,
+          "z_order": [
+            3,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 91.87086614173228,
+          "height": 125.94330708661415,
+          "z_order": [
+            3,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 461.8771653543307,
+          "top": 234.00000000000003,
+          "width": 62.957480314960634,
+          "height": 52.46929133858268,
+          "z_order": [
+            3,
+            2
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 461.90551181102364,
+          "top": 373.4929133858268,
+          "width": 62.98582677165354,
+          "height": 52.497637795275594,
+          "z_order": [
+            3,
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 26,
+      "hidden": false,
+      "visible_page": 26,
+      "layout": "two-over-one-panels",
+      "text_blocks": 2,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 26,
+        "layout_identity": "AL7T16",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 408.18897637795277,
+          "top": 45.184251968503936,
+          "width": 348.57637795275593,
+          "height": 165.0047244094488,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 209.99055118110238,
+          "width": 714.3023622047244,
+          "height": 251.77322834645668,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 28.82834645669291,
+          "top": 39.514960629921255,
+          "width": 348.57637795275593,
+          "height": 160.80944881889764,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 27,
+      "hidden": false,
+      "visible_page": 27,
+      "layout": "one-panel",
+      "text_blocks": 3,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 27,
+        "layout_identity": "AL7T16",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 408.18897637795277,
+          "top": 45.184251968503936,
+          "width": 348.57637795275593,
+          "height": 165.0047244094488,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 209.99055118110238,
+          "width": 714.3023622047244,
+          "height": 251.77322834645668,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 28.82834645669291,
+          "top": 39.514960629921255,
+          "width": 348.57637795275593,
+          "height": 160.80944881889764,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 446.4,
+          "top": 259.2,
+          "width": 347.07401574803146,
+          "height": 212.88188976377953,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 28,
+      "hidden": false,
+      "visible_page": 28,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 28,
+        "layout_identity": "AL4T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 29,
+      "hidden": false,
+      "visible_page": 29,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #00599d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 29,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 30,
+      "hidden": false,
+      "visible_page": 30,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #00599d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 30,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 112.39370078740157,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 31,
+      "hidden": false,
+      "visible_page": 31,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 31,
+        "layout_identity": "AL4T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 451.44566929133856,
+          "top": 258.4062992125984,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    }
+  ]
+}

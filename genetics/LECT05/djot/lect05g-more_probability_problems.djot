@@ -1,0 +1,204 @@
+=== layout: title-slide
+
+# Lecture 05G
+
+## Probability Problems
+
+## Chapter 3
+
+## Dr. Neil Voss
+
+## Sept 29, 2026
+
+=== layout: section
+
+# Summary From Previous Slides
+
+=== layout: one-panel
+
+# Multiplication Rules
+
+@body
+
+- Specific Multiplication Rule, if two events, A and B, are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) × P(B)]{color=red}
+- General Multiplication Rule, if two events, A and B, are NOT independent then\:
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+
+=== layout: one-panel
+
+# Addition Rules
+
+@body
+
+- Specific Addition Rule\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
+  - [P(A or B) = P(A) + P(B)]{color=red}
+- General Addition Rule\: if two events, A and B, are NOT mutually exclusive, then\:
+  - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
+
+=== layout: section
+
+# Question 3.28
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect05g-more_probability_problems/image_001.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 1](assets/lect05g-more_probability_problems/image_001.png)
+
+@right
+
+- Monohybrid cross: Aa x Aa
+- Eggs: 1/2 A; 1/2 a
+- Pollen: A survives half as often as a
+- Compare surviving A and a pollen
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 1](assets/lect05g-more_probability_problems/image_001.png)
+
+@right
+
+- Monohybrid cross: Aa x Aa
+- Eggs: 1/2 A; 1/2 a
+- Pollen: A survives half as often as a
+- Surviving pollen: A:a = 1:2
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 1](assets/lect05g-more_probability_problems/image_001.png)
+
+@right
+
+- Monohybrid cross: Aa x Aa
+- Eggs: 1/2 A; 1/2 a
+- Pollen: A survives half as often as a
+- Pollen probabilities: 1/3 A; 2/3 a
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 2](assets/lect05g-more_probability_problems/image_002.png)
+
+@right
+
+![Slide image 2](assets/lect05g-more_probability_problems/image_001.png)
+
+=== layout: four-panels
+
+
+@top-left
+
+- Use multiplication rule for each offspring.
+- The expected ratio\:
+- 1/6 AA; 3/6 Aa; 2/6 aa
+- 1/6 AA; 1/2 Aa; 1/3 aa
+
+@top-right
+
+![Slide image 2](assets/lect05g-more_probability_problems/image_001.png)
+
+@bottom-left
+
+![Slide image 2](assets/lect05g-more_probability_problems/image_002.png)
+
+@bottom-right
+
+| gametes | &#8531; A | &#8532; a |
+| ½ A | 1/6 AA | 2/6 Aa |
+| ½ a | 1/6 Aa | 2/6 aa |
+
+=== layout: section
+
+# Question 3.18
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect05g-more_probability_problems/image_003.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect05g-more_probability_problems/image_003.png)
+
+@right
+
+- only round seeds from F2 generation were selected
+- how many F3 wrinkled seeds come from only round seeds...
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect05g-more_probability_problems/image_003.png)
+
+@right
+
+- P: true-breeding RR x rr
+- F1: all Rr; round
+- F2: 3/4 round; 1/4 wrinkled
+- Selected F2 round: 2/3 Rr; 1/3 RR
+- Testcross RR x rr: no wrinkled offspring
+- Testcross Rr x rr: 1/2 wrinkled offspring
+- P(F3 wrinkled) = P(wrinkled | Rr) x P(Rr)
+- = 1/2 x 2/3 = 1/3
+
+=== layout: section
+
+# BONUS Question 3.16
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect05g-more_probability_problems/image_004.png)
+
+=== layout: one-plus-two-panels
+
+
+@left
+
+- A\: individual tests positive
+- B\: individual has disease
+- P(A) = P(A and B) + P(A and not B)
+- P(A and B)
+  - = P(A|B) × P(B) = 1 × 0.002
+- P(A and not B)
+  - = P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)
+- 1×0.002 + 0.002×(1&ndash;0.002)
+  - = [0.003996]{color=red}
+
+@top-right
+
+![Slide image 5](assets/lect05g-more_probability_problems/image_005.png)
+
+@bottom-right
+
+![Slide image 5](assets/lect05g-more_probability_problems/image_004.png)
+
+=== layout: theend
+
+# THE END

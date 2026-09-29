@@ -1,0 +1,641 @@
+=== layout: title-slide
+
+# Lecture 05F
+
+## Degrees of Dominance
+
+## Chapter 3
+
+## Dr. Neil Voss
+
+## Sept 29, 2026
+
+=== layout: one-panel
+
+# Extending Mendelian Genetics for a Single Gene
+
+@body
+
+- Inheritance of characters by a single gene may deviate from simple Mendelian patterns in the following situations\:
+  - When alleles are not completely dominant or recessive
+  - When a gene has more than two alleles
+  - When a gene produces multiple phenotypes
+
+=== layout: one-panel
+
+# Degrees of Dominance
+
+@body
+
+- Complete dominance: heterozygote matches dominant homozygote
+- Incomplete dominance: heterozygote intermediate between homozygotes
+- Codominance: both alleles expressed distinctly
+- Polygenic inheritance: multiple genes; cumulative, continuous traits
+- Epistasis: one gene masks or modifies another gene
+
+=== layout: section
+
+# Incomplete Dominance
+
+## The phenotype of the heterozygote is a blend between the two parental phenotypes, showing a mix rather than one being dominant.
+
+=== layout: one-panel
+
+# Incomplete Dominance
+
+@body
+
+- The phenotype of the heterozygote is a blend or intermediate between the two parental phenotypes.
+- Neither allele is completely dominant, resulting in a mixed or blended trait.
+- Example\: In a specific variety of flower known as the four o&rsquo;clock plant, crossing red-flowered (RR) and white-flowered (WW) plants results in offspring with a light pink flower color (RW), illustrating blending rather than dominance.
+
+=== layout: two-panels
+
+# Incomplete dominance: F1 and F2
+
+@left
+
+![Four-o-clock flowers](assets/lect05f-degrees_of_dominance/image_001.jpg)
+
+- P: red CRCR x white CWCW
+- F1: all pink CRCW
+- F1 gametes: 1/2 CR; 1/2 CW
+
+@right
+
+| Egg / sperm | CR | CW |
+| --- | --- | --- |
+| CR | CRCR: red | CRCW: pink |
+| CW | CRCW: pink | CWCW: white |
+
+=== layout: two-panels
+
+# Incomplete Dominance
+
+@left
+
+![Slide image 2](assets/lect05f-degrees_of_dominance/image_002.jpg)
+
+@right
+
+- Incomplete dominance governs the human voice pitch, eye color, and hair curliness
+  - the trait produced is an intermediate one\: instead of straight or curly hair, incomplete dominance leads to something in the middle&mdash;wavy hair
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect05f-degrees_of_dominance/image_003.jpg)
+
+@right
+
+- [Red versus white flower color in snapdragons shows incomplete dominance]{color=red}
+
+- Incomplete dominance yields a 1\:2\:1 phenotypic ratio in the F2
+- The normal phenotype ratio observed in the F2 is 3\:1 for a simple dominant/recessive allele pair.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect05f-degrees_of_dominance/image_004.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 5](assets/lect05f-degrees_of_dominance/image_005.png)
+
+@right
+
+- (a) count the phenotype for each independent gene and multiply
+  - M&ndash;, mm = 2
+  - S&ndash;, ss =2
+  - TT, Tt, tt = 3
+- 2 × 2 × 3 = 12
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 5](assets/lect05f-degrees_of_dominance/image_005.png)
+
+@right
+
+- Each gene is independent, multiplication rule
+- Incompleteness does not matter, since we are discussing genotype.
+- (b) MM is ¼, SS is ¼, and tt is ¼
+- ¼ × ¼ × ¼ = 1/64
+- (c) MM or mm is ½, SS or ss is ½, TT or tt is ½
+- ½ × ½ × ½ = 1/8
+
+=== layout: section
+
+# Codominance
+
+## The phenotype of the heterozygote displays both alleles independently, without blending,  allowing both traits to be seen separately.
+
+=== layout: one-panel
+
+# Codominance
+
+@body
+
+- The heterozygote&rsquo;s phenotype expresses both alleles independently and distinctly.
+- Neither allele is masked; both traits appear side by side without blending.
+- Example\: In certain species of chickens, the allele for black feathers (B) is codominant with the allele for white feathers (W), resulting in offspring with checkered or speckled feathers (BW).
+
+=== layout: section
+
+# ABO Blood Groups
+
+=== layout: two-panels
+
+# ABO alleles and blood groups
+
+@left
+
+![ABO carbohydrates](assets/lect05f-degrees_of_dominance/image_006.jpg)
+
+- IA: carbohydrate A
+- IB: carbohydrate B
+- i: neither carbohydrate
+
+@right
+
+| Blood group | Genotypes |
+| --- | --- |
+| A | IAIA or IAi |
+| B | IBIB or IBi |
+| AB | IAIB |
+| O | ii |
+
+=== layout: one-panel
+
+# Blood Genotypes
+
+@body
+
+![Slide image 7](assets/lect05f-degrees_of_dominance/image_007.jpg)
+
+=== layout: one-panel
+
+# Human ABO blood groups
+
+@body
+
+![Slide image 8](assets/lect05f-degrees_of_dominance/image_008.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+- What are the possible offspring for a female with type A blood and male with type B blood?
+
+=== layout: one-panel
+
+
+@body
+
+- What are the possible offspring for a female with type A blood and male with type B blood?
+  - female can be either AA or AO
+  - male can be either BB or BO
+  - Punnett squares show that all four blood types are possible\:
+
+=== layout: one-panel
+
+
+@body
+
+- What are the possible offspring for a female with type AB blood and male with type AB blood?
+
+=== layout: one-panel
+
+# AB x AB: possible offspring
+
+@body
+
+| Egg / sperm | IA | IB |
+| --- | --- | --- |
+| IA | IAIA: type A | IAIB: type AB |
+| IB | IAIB: type AB | IBIB: type B |
+
+
+=== layout: one-panel
+
+
+@body
+
+- A child has a blood type B and the father has blood type A. What are the possible blood types for the mother?
+
+- A. A
+- B. B
+- C. AB
+- D. O
+
+=== layout: one-panel
+
+
+@body
+
+- A child has a blood type B and the father has blood type A. What are the possible blood types for the mother?
+- child\: BO or BB
+- father\: AO or AA
+
+- A. A
+- B. B
+- C. AB
+- D. O
+
+=== layout: one-panel
+
+
+@body
+
+- A child has a blood type B and the father has blood type A. What are the possible blood types for the mother?
+- child\: [BO]{color=red} or BB
+- father\: [AO]{color=red} or AA
+- only possible scenario, is that the child received the O allele from the father.
+- implies that the child is BO and the father is AO
+
+- A. A
+- B. B
+- C. AB
+- D. O
+
+=== layout: one-panel
+
+
+@body
+
+- A child has a blood type B and the father has blood type A. What are the possible blood types for the mother?
+- child\: [BO]{color=red} or BB
+- father\: [AO]{color=red} or AA
+- only possible scenario, is that the child received the O allele from the father.
+- implies that the child is BO and the father is AO
+- child has to receive the B allele from the mother.
+
+- A. A
+- B. B
+- C. AB
+- D. O
+
+=== layout: one-panel
+
+# Child type B; father type A
+
+@body
+
+- Possible genotypes: child [BO]{color=red} or BB; father [AO]{color=red} or AA
+- Child receives O from father: child BO; father AO
+- Mother supplies B: AB, BB, or BO
+- Mother blood type: B or AB
+
+- A. A
+- B. B
+- C. AB
+- D. O
+
+=== layout: section
+
+# Codominant Challenge Problem 3
+
+=== layout: gallery
+
+
+@gallery
+
+![Slide image 9](assets/lect05f-degrees_of_dominance/image_009.png)
+
+![Slide image 10](assets/lect05f-degrees_of_dominance/image_010.png)
+
+=== layout: gallery
+
+# Challenge Problem #3
+
+@gallery
+
+![Slide image 11](assets/lect05f-degrees_of_dominance/image_011.png)
+
+![Slide image 12](assets/lect05f-degrees_of_dominance/image_012.png)
+
+![Slide image 12](assets/lect05f-degrees_of_dominance/image_010.png)
+
+=== layout: two-panels
+
+# Codominance: donor and recipient
+
+@left
+
+![Slide image 12](assets/lect05f-degrees_of_dominance/image_012.png)
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
+
+@right
+
+- P1: AA
+- P2: aa
+- F1: Aa
+- F2: 1 AA : 2 Aa : 1 aa
+- Step 2: What are the donor percentages?
+
+=== layout: two-panels
+
+# Codominance: donor and recipient
+
+@left
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
+
+@right
+
+- P1: [AA]{color=red}; P2: [aa]{color=red}; F1: [Aa]{color=red}
+
+- P1 to P2 and P2 to P1: 0%
+- Either parent to F1: 100%
+- F1 to either parent: 0%
+- F2: [1 AA : 2 Aa : 1 aa]{color=red}
+
+=== layout: two-panels
+
+# Codominance: donor and recipient
+
+@left
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
+
+@right
+
+- P1: [AA]{color=red}; P2: [aa]{color=red}; F1: [Aa]{color=red}
+
+- P1 to P2 and P2 to P1: 0%
+- Either parent to F1: 100%
+- F1 to either parent: 0%
+- F2: [1 AA : 2 Aa : 1 aa]{color=red}
+
+=== layout: two-panels
+
+# Codominance: donor and recipient
+
+@left
+
+- P1: [AA]{color=red}; P2: [aa]{color=red}; F1: [Aa]{color=red}
+- F2: [1 AA : 2 Aa : 1 aa]{color=red}
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
+
+![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
+
+@right
+
+| Donor -> recipient | Accepted |
+| --- | --- |
+| P1 <-> P2 | 0% |
+| P1 or P2 -> F1 | 100% |
+| F1 -> P1 or P2 | 0% |
+| F1 -> F2 | 50% |
+| F2 -> F1 | 100% |
+| P1 or P2 -> F2 | 75% |
+| F2 -> P1 or P2 | 25% |
+
+=== layout: section
+
+# Polygenic Inheritance
+
+## The phenotype is influenced by multiple genes, resulting in a continuous range of traits rather than distinct categories, demonstrating a cumulative effect on expression.
+
+=== layout: one-panel
+
+# Polygenic Inheritance
+
+@body
+
+- [Monogenic inheritance]{color=red} refers to genetic control of a phenotype or trait by a single gene.
+- [Digenic inheritance]{color=red} refers to the interaction of only two genes that affect the phenotypic expression of a single trait.
+- Many traits are not determined so simply, and either involve the interaction of many genes
+  - [Multifactorial inheritance]{color=red} results from the interaction of many genes and with environmental effects.
+  - [Polygenic inheritance]{color=red} results from the interaction of many genes, but has no environmental effects.
+
+=== layout: one-panel
+
+# Polygenic Inheritance
+
+@body
+
+- Polygenic inheritance refers to a single inherited phenotypic trait that is controlled by two or more different genes.
+  - polygenic traits may display a range of possible phenotypes, determined by a number of different genes and the interactions between them.
+- Examples of Polygenic Inheritance
+  - Skin Color
+  - Human Height
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 14](assets/lect05f-degrees_of_dominance/image_014.png)
+
+=== layout: one-panel
+
+# Digenic Inheritance
+
+@body
+
+![Slide image 15](assets/lect05f-degrees_of_dominance/image_015.png)
+
+=== layout: one-panel
+
+# Digenic Inheritance
+
+@body
+
+![Slide image 16](assets/lect05f-degrees_of_dominance/image_016.png)
+
+=== layout: section
+
+# Degree of Dominance Game
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+![Slide image 17](assets/lect05f-degrees_of_dominance/image_017.png)
+
+@right
+
+- [A. complete]{color=green}
+- [B. co-dominance]{color=blue}
+- [C. incomplete]{color=red}
+
+- incomplete dominance
+
+- CRCR = red flowers
+- CRCw = pink flowers
+- CwCw = white flowers
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+![Slide image 18](assets/lect05f-degrees_of_dominance/image_018.png)
+
+@right
+
+- CRCR = red flowers
+- CRCw = red and white flowers
+- CwCw = white flowers
+
+- [A. complete]{color=green}
+- [B. co-dominance]{color=blue}
+- [C. incomplete]{color=red}
+
+- co- dominance
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect05f-degrees_of_dominance/image_019.png)
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+![Slide image 20](assets/lect05f-degrees_of_dominance/image_020.png)
+
+@right
+
+- CBCB = purple flowers
+- CBCw = purple flowers
+- CwCw = white flowers
+
+- [A. complete]{color=green}
+- [B. co-dominance]{color=blue}
+- [C. incomplete]{color=red}
+
+- complete dominance
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+![Slide image 21](assets/lect05f-degrees_of_dominance/image_021.png)
+
+![Slide image 22](assets/lect05f-degrees_of_dominance/image_022.png)
+
+@right
+
+- co- dominance
+
+- [A. complete]{color=green}
+- [B. co-dominance]{color=blue}
+- [C. incomplete]{color=red}
+
+- CRCR = red cow
+- CRCw = roan cow
+  - (red and white)
+- CwCw = white cow
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+![Slide image 22](assets/lect05f-degrees_of_dominance/image_022.png)
+
+@right
+
+- complete dominance
+
+- CHCH = horned cow
+- CHCp = horned cow
+- CpCp = hornless (polled) cow
+
+- [A. complete]{color=green}
+- [B. co-dominance]{color=blue}
+- [C. incomplete]{color=red}
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+| Genotype | Blood group |
+| --- | --- |
+| IAIA | A |
+| IAIB | AB |
+| IBIB | B |
+
+@right
+
+- [A. Complete dominance]{color=green}
+- [B. Codominance]{color=blue}
+- [C. Incomplete dominance]{color=red}
+
+=== layout: two-panels
+
+# What type of dominance?
+
+@left
+
+![Slide image 22](assets/lect05f-degrees_of_dominance/image_002.jpg)
+
+@right
+
+- HH = curly hair
+- HH&rsquo; = wavy hair
+- H&rsquo;H&rsquo; = straight hair
+
+- [A. complete]{color=green}
+- [B. co-dominance]{color=blue}
+- [C. incomplete]{color=red}
+
+- incomplete dominance
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Degrees of Dominance
+
+@body
+
+- Complete dominance: heterozygote matches dominant homozygote
+- Incomplete dominance: heterozygote intermediate between homozygotes
+- Codominance: both alleles expressed distinctly
+- Polygenic inheritance: multiple genes; cumulative, continuous traits
+- Epistasis: one gene masks or modifies another gene
+
+=== layout: one-panel
+
+# Degree of Dominances
+
+@body
+
+![Slide image 23](assets/lect05f-degrees_of_dominance/image_023.png)
+
+=== layout: theend
+
+# THE END

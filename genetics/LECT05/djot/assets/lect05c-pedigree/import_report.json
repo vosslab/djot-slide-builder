@@ -1,0 +1,4162 @@
+{
+  "source": "lect05c-pedigree.odp",
+  "slide_count": 49,
+  "visible_slides": 49,
+  "hidden_slides": [],
+  "unique_media_assets": 29,
+  "slides": [
+    {
+      "source_slide": 1,
+      "hidden": false,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 2,
+      "hidden": false,
+      "visible_page": 2,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 3,
+      "hidden": false,
+      "visible_page": 3,
+      "layout": "two-over-one-panels",
+      "text_blocks": 0,
+      "images": 3,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL3T16",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "graphic",
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 116.41889763779528,
+          "width": 348.57637795275593,
+          "height": 164.21102362204724,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 116.41889763779528,
+          "width": 348.57637795275593,
+          "height": 164.21102362204724,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 198.2551181102362,
+          "top": 288.0,
+          "width": 397.1338582677165,
+          "height": 194.39999999999998,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 4,
+      "hidden": false,
+      "visible_page": 4,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 161.3763779527559,
+          "width": 714.3023622047244,
+          "height": 255.2314960629921,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 5,
+      "hidden": false,
+      "visible_page": 5,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.05442857142857144, top=0.17062857142857143, right=0.39007142857142857, bottom=0.33057142857142857), NormalizedBounds(left=0.04996428571428572, top=0.34605714285714284, right=0.9499285714285715, bottom=0.8533142857142857)] into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 171.66614173228345,
+          "width": 714.3023622047244,
+          "height": 251.63149606299214,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 43.2,
+          "top": 84.64251968503937,
+          "width": 266.4,
+          "height": 79.34173228346457,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 6,
+      "hidden": false,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 64.71496062992125,
+          "top": 116.02204724409448,
+          "width": 664.2141732283465,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 7,
+      "hidden": false,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 35.46141732283464,
+          "top": 45.184251968503936,
+          "width": 722.7212598425197,
+          "height": 428.8251968503937,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 8,
+      "hidden": false,
+      "visible_page": 8,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 9,
+      "hidden": false,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "source object crosses physical page bounds"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": -20.60787401574803,
+          "width": 761.9527559055118,
+          "height": 163.55905511811022,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 44.0503937007874,
+          "top": 102.55748031496063,
+          "width": 705.5433070866142,
+          "height": 251.4330708661417,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 360.0,
+          "width": 714.3023622047244,
+          "height": 101.76377952755905,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 10,
+      "hidden": false,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 11,
+      "hidden": false,
+      "visible_page": 11,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 12,
+      "hidden": false,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "source object crosses physical page bounds"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 144.14173228346456,
+          "top": 95.98110236220472,
+          "width": 505.33228346456696,
+          "height": 263.9905511811024,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": -20.60787401574803,
+          "width": 761.9527559055118,
+          "height": 163.55905511811022,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 360.0,
+          "width": 714.3023622047244,
+          "height": 101.76377952755905,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 13,
+      "hidden": false,
+      "visible_page": 13,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #800080 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 14,
+      "hidden": false,
+      "visible_page": 14,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "source object crosses physical page bounds",
+        "unrecognized source text color #800080 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": -20.60787401574803,
+          "width": 761.9527559055118,
+          "height": 163.55905511811022,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.7228346456693,
+          "top": 116.02204724409448,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 15,
+      "hidden": false,
+      "visible_page": 15,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "source object crosses physical page bounds"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.015214285714285715,
+          "top": 0.1777142857142857,
+          "right": 0.9861071428571428,
+          "bottom": 0.8812571428571429
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.024999999999999998,
+              "top": 0.1777142857142857,
+              "right": 0.9750000000000001,
+              "bottom": 0.42217142857142853
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "There is no masking of one allele by another allele for DNA markers (",
+                    "link": ""
+                  },
+                  {
+                    "text": "codominance",
+                    "link": ""
+                  },
+                  {
+                    "text": " of alleles is seen)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_010.jpg",
+            "bounds": {
+              "left": 0.015214285714285715,
+              "top": 0.3876,
+              "right": 0.9861071428571428,
+              "bottom": 0.8812571428571429
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL7T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 12.075590551181103,
+          "top": 192.2740157480315,
+          "width": 770.5984251968504,
+          "height": 244.88503937007872,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 19.842519685039367,
+          "top": 88.15748031496062,
+          "width": 754.0157480314961,
+          "height": 121.26614173228344,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": -20.60787401574803,
+          "width": 761.9527559055118,
+          "height": 163.55905511811022,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 16,
+      "hidden": false,
+      "visible_page": 16,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 17,
+      "hidden": false,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "unrecognized source text color #729fcf requires review",
+        "unrecognized source text color #ff6d6d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 183.1464566929134,
+          "top": 252.0,
+          "width": 427.3228346456693,
+          "height": 209.70708661417322,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 164.9763779527559,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 18,
+      "hidden": false,
+      "visible_page": 18,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #729fcf requires review",
+        "unrecognized source text color #ff6d6d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 96.51968503937007,
+          "width": 471.5433070866142,
+          "height": 384.9448818897638,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 504.0,
+          "top": 116.05039370078741,
+          "width": 250.29921259842519,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 19,
+      "hidden": false,
+      "visible_page": 19,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #729fcf requires review",
+        "unrecognized source text color #ff6d6d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 98.2771653543307,
+          "width": 442.74330708661415,
+          "height": 381.4299212598425,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 475.2,
+          "top": 116.05039370078741,
+          "width": 279.0992125984252,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 20,
+      "hidden": false,
+      "visible_page": 20,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #729fcf requires review",
+        "unrecognized source text color #ff6d6d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 20,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 89.91496062992127,
+          "width": 406.74330708661415,
+          "height": 398.1543307086614,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 482.40000000000003,
+          "top": 116.05039370078741,
+          "width": 271.8992125984252,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 21,
+      "hidden": false,
+      "visible_page": 21,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #729fcf requires review",
+        "unrecognized source text color #ff6d6d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 21,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 99.29763779527559,
+          "width": 457.14330708661413,
+          "height": 379.38897637795276,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 475.2,
+          "top": 116.05039370078741,
+          "width": 279.0992125984252,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 22,
+      "hidden": false,
+      "visible_page": 22,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #729fcf requires review",
+        "unrecognized source text color #ff6d6d requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 22,
+        "layout_identity": "AL6T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 107.94330708661417,
+          "width": 435.54330708661416,
+          "height": 362.0692913385827,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 468.00000000000006,
+          "top": 116.05039370078741,
+          "width": 286.2992125984252,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 23,
+      "hidden": false,
+      "visible_page": 23,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 23,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 24,
+      "hidden": false,
+      "visible_page": 24,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 24,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "vector",
+          "left": 468.00000000000006,
+          "top": 244.79999999999998,
+          "width": 280.8,
+          "height": 187.2,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.5307086614173229,
+          "top": 201.6,
+          "width": 416.4094488188976,
+          "height": 260.1070866141732,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 58.05354330708661,
+          "width": 714.3023622047244,
+          "height": 156.95433070866142,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 25,
+      "hidden": false,
+      "visible_page": 25,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.0019285714285714288,
+          "top": 0.11702857142857143,
+          "right": 0.9615714285714285,
+          "bottom": 0.9434285714285714
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5115714285714286,
+              "top": 0.3918857142857142,
+              "right": 0.9615714285714285,
+              "bottom": 0.9434285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Observations:",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Approximately equal male and female",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Affected individual have a parent that is affected",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Affected individual produce 4/9 affected offspring",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_017.png",
+            "bounds": {
+              "left": 0.0019285714285714288,
+              "top": 0.4064,
+              "right": 0.5265714285714286,
+              "bottom": 0.9307428571428572
+            }
+          },
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_018.png",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.11702857142857143,
+              "right": 0.9499285714285715,
+              "bottom": 0.43342857142857144
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 25,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 1.5307086614173229,
+          "top": 201.6,
+          "width": 416.4094488188976,
+          "height": 260.1070866141732,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 58.05354330708661,
+          "width": 714.3023622047244,
+          "height": 156.95433070866142,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 406.0346456692913,
+          "top": 194.39999999999998,
+          "width": 357.1653543307086,
+          "height": 273.59999999999997,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 26,
+      "hidden": false,
+      "visible_page": 26,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.0019285714285714288,
+          "top": 0.11702857142857143,
+          "right": 0.9761428571428571,
+          "bottom": 0.9434285714285715
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5170714285714286,
+              "top": 0.3773714285714286,
+              "right": 0.9761428571428571,
+              "bottom": 0.9434285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Observations:",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Approximately equal male and female",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Affected individual have a parent that is affected",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Affected individual produce 4/9 affected offspring",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "= DISEASED ALLELE IS DOMINANT",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_017.png",
+            "bounds": {
+              "left": 0.0019285714285714288,
+              "top": 0.4064,
+              "right": 0.5265714285714286,
+              "bottom": 0.9307428571428572
+            }
+          },
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_018.png",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.11702857142857143,
+              "right": 0.9499285714285715,
+              "bottom": 0.43342857142857144
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 26,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 1.5307086614173229,
+          "top": 201.6,
+          "width": 416.4094488188976,
+          "height": 260.1070866141732,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 58.05354330708661,
+          "width": 714.3023622047244,
+          "height": 156.95433070866142,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 410.4,
+          "top": 187.2,
+          "width": 364.3653543307086,
+          "height": 280.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 27,
+      "hidden": false,
+      "visible_page": 27,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.0019285714285714288,
+          "top": 0.11702857142857143,
+          "right": 0.9761428571428571,
+          "bottom": 0.9434285714285715
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5261428571428571,
+              "top": 0.3773714285714286,
+              "right": 0.9761428571428571,
+              "bottom": 0.9434285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "DISEASED ALLELE IS DOMINANT",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Since disease is rare and dominant:",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Affected individuals would have genotype\u00a0\u201cAa\u201d",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Unaffected ",
+                    "link": ""
+                  },
+                  {
+                    "text": "individuals ",
+                    "link": ""
+                  },
+                  {
+                    "text": "would have genotype\u00a0\u201caa\u201d",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_017.png",
+            "bounds": {
+              "left": 0.0019285714285714288,
+              "top": 0.4064,
+              "right": 0.5265714285714286,
+              "bottom": 0.9307428571428572
+            }
+          },
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              2
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_018.png",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.11702857142857143,
+              "right": 0.9499285714285715,
+              "bottom": 0.43342857142857144
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 27,
+        "layout_identity": "AL5T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 1.5307086614173229,
+          "top": 201.6,
+          "width": 416.4094488188976,
+          "height": 260.1070866141732,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 58.05354330708661,
+          "width": 714.3023622047244,
+          "height": 156.95433070866142,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 417.59999999999997,
+          "top": 187.2,
+          "width": 357.1653543307086,
+          "height": 280.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 28,
+      "hidden": false,
+      "visible_page": 28,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "source object crosses physical page bounds",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.20971428571428571,
+          "top": 0.23388571428571428,
+          "right": 1.0,
+          "bottom": 0.9724571428571429
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7438571428571429,
+              "top": 0.6241142857142857,
+              "right": 1.0,
+              "bottom": 0.9724571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_019.png",
+            "bounds": {
+              "left": 0.20971428571428571,
+              "top": 0.23388571428571428,
+              "right": 0.7902142857142859,
+              "bottom": 0.9312
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 28,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 166.4503937007874,
+          "top": 116.02204724409448,
+          "width": 460.7433070866142,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 590.4,
+          "top": 309.6,
+          "width": 280.8,
+          "height": 172.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 29,
+      "hidden": false,
+      "visible_page": 29,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #780373 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 29,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 166.4503937007874,
+          "top": 116.02204724409448,
+          "width": 460.7433070866142,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 30,
+      "hidden": false,
+      "visible_page": 30,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "source object crosses physical page bounds",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.20971428571428571,
+          "top": 0.23388571428571428,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6531428571428571,
+              "top": 0.6516571428571428,
+              "right": 1.0,
+              "bottom": 1.0
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_020.png",
+            "bounds": {
+              "left": 0.20971428571428571,
+              "top": 0.23388571428571428,
+              "right": 0.7902142857142859,
+              "bottom": 0.9312
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 30,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 166.4503937007874,
+          "top": 116.02204724409448,
+          "width": 460.7433070866142,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 518.4,
+          "top": 323.2629921259842,
+          "width": 280.8,
+          "height": 172.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 31,
+      "hidden": false,
+      "visible_page": 31,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #ea7500 requires review",
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 31,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 166.4503937007874,
+          "top": 116.02204724409448,
+          "width": 460.7433070866142,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 338.40000000000003,
+          "top": 403.93700787401576,
+          "width": 64.8,
+          "height": 71.26299212598424,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 32,
+      "hidden": false,
+      "visible_page": 32,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "source object crosses physical page bounds",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.23132142857142857,
+          "top": 0.23388571428571428,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6985,
+              "top": 0.6676571428571428,
+              "right": 1.0,
+              "bottom": 1.0
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_021.png",
+            "bounds": {
+              "left": 0.23132142857142857,
+              "top": 0.23388571428571428,
+              "right": 0.7685714285714286,
+              "bottom": 0.9312
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 32,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 183.6,
+          "top": 116.02204724409448,
+          "width": 426.41574803149604,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 554.4,
+          "top": 331.2,
+          "width": 280.8,
+          "height": 172.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 33,
+      "hidden": false,
+      "visible_page": 33,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #ea7500 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 33,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 183.6,
+          "top": 116.02204724409448,
+          "width": 426.41574803149604,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 34,
+      "hidden": false,
+      "visible_page": 34,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "source object crosses physical page bounds",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.0076071428571428575,
+          "top": 0.14514285714285716,
+          "right": 1.0,
+          "bottom": 0.9312
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.762,
+              "top": 0.14514285714285716,
+              "right": 1.0,
+              "bottom": 0.4934857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_022.png",
+            "bounds": {
+              "left": 0.0076071428571428575,
+              "top": 0.23388571428571428,
+              "right": 0.8708571428571428,
+              "bottom": 0.9312
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 34,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 6.037795275590551,
+          "top": 116.02204724409448,
+          "width": 685.1622047244094,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 604.8,
+          "top": 72.0,
+          "width": 280.8,
+          "height": 172.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 35,
+      "hidden": false,
+      "visible_page": 35,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #780373 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 35,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 54.22677165354331,
+          "top": 116.02204724409448,
+          "width": 685.1622047244094,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 36,
+      "hidden": false,
+      "visible_page": 36,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source object crosses physical page bounds",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 36,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 58.507086614173225,
+          "top": 116.02204724409448,
+          "width": 506.52283464566926,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 576.0,
+          "top": 115.2,
+          "width": 280.8,
+          "height": 172.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 37,
+      "hidden": false,
+      "visible_page": 37,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unrecognized source text color #ea7500 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 37,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 143.54645669291338,
+          "top": 116.02204724409448,
+          "width": 506.52283464566926,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 38,
+      "hidden": false,
+      "visible_page": 38,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 38,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 39,
+      "hidden": false,
+      "visible_page": 39,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.04996428571428572,
+          "top": 0.1741714285714286,
+          "right": 0.9800000000000001,
+          "bottom": 0.9521142857142857
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6806428571428572,
+              "top": 0.1741714285714286,
+              "right": 0.9800000000000001,
+              "bottom": 0.40640000000000004
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_024.png",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.32725714285714286,
+              "right": 0.9499285714285715,
+              "bottom": 0.9521142857142857
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 39,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 162.34015748031496,
+          "width": 714.3023622047244,
+          "height": 309.9685039370079,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 540.2267716535433,
+          "top": 86.4,
+          "width": 237.6,
+          "height": 115.2,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 40,
+      "hidden": false,
+      "visible_page": 40,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 40,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 148.16692913385828,
+          "width": 714.3023622047244,
+          "height": 309.9685039370079,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 41,
+      "hidden": false,
+      "visible_page": 41,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.04996428571428572,
+          "top": 0.1741714285714286,
+          "right": 0.9800000000000001,
+          "bottom": 0.892457142857143
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6806428571428572,
+              "top": 0.1741714285714286,
+              "right": 0.9800000000000001,
+              "bottom": 0.40640000000000004
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_025.png",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.2726857142857143,
+              "right": 0.9499285714285715,
+              "bottom": 0.892457142857143
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 41,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 135.2692913385827,
+          "width": 714.3023622047244,
+          "height": 307.44566929133856,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 540.2267716535433,
+          "top": 86.4,
+          "width": 237.6,
+          "height": 115.2,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 42,
+      "hidden": false,
+      "visible_page": 42,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 42,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 135.2692913385827,
+          "width": 714.3023622047244,
+          "height": 307.44566929133856,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 43,
+      "hidden": false,
+      "visible_page": 43,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph into native source-order content",
+        "unrecognized source text color #780373 requires review",
+        "unrecognized source text color #ea7500 requires review",
+        "unrecognized source text color #f10d0c requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph",
+        "bounds": {
+          "left": 0.15089285714285713,
+          "top": 0.1741714285714286,
+          "right": 0.9800000000000001,
+          "bottom": 0.9312
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6806428571428572,
+              "top": 0.1741714285714286,
+              "right": 0.9800000000000001,
+              "bottom": 0.40640000000000004
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "A. Auto Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "B. Auto Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "C. X-linked Dominant",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "D. X-linked Recessive",
+                    "link": ""
+                  }
+                ]
+              },
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "E. Y-linked",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect05c-pedigree/image_026.png",
+            "bounds": {
+              "left": 0.15089285714285713,
+              "top": 0.23388571428571428,
+              "right": 0.849,
+              "bottom": 0.9312
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 43,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 119.76377952755904,
+          "top": 116.02204724409448,
+          "width": 554.088188976378,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 540.2267716535433,
+          "top": 86.4,
+          "width": 237.6,
+          "height": 115.2,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 44,
+      "hidden": false,
+      "visible_page": 44,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 44,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 119.76377952755904,
+          "top": 116.02204724409448,
+          "width": 554.088188976378,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 45,
+      "hidden": false,
+      "visible_page": 45,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 45,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 46,
+      "hidden": false,
+      "visible_page": 46,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 46,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 146.1259842519685,
+          "top": 36.0,
+          "width": 501.39212598425195,
+          "height": 446.4,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 21.6,
+          "top": 11.990551181102362,
+          "width": 93.6,
+          "height": 65.99055118110236,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 21.628346456692913,
+          "top": 414.0,
+          "width": 93.6,
+          "height": 65.99055118110236,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 676.771653543307,
+          "top": 12.018897637795275,
+          "width": 93.6,
+          "height": 65.99055118110236,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 676.8000000000001,
+          "top": 414.0283464566929,
+          "width": 93.6,
+          "height": 65.99055118110236,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 21.628346456692913,
+          "top": 204.00944881889762,
+          "width": 93.6,
+          "height": 65.99055118110236,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 676.8000000000001,
+          "top": 204.00944881889762,
+          "width": 93.6,
+          "height": 65.99055118110236,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 352.8283464566929,
+          "top": 204.00944881889762,
+          "width": 93.6,
+          "height": 91.19055118110236,
+          "z_order": [
+            8
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 47,
+      "hidden": false,
+      "visible_page": 47,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 47,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 55.16220472440945,
+          "top": 116.02204724409448,
+          "width": 683.3196850393701,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 48,
+      "hidden": false,
+      "visible_page": 48,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 48,
+        "layout_identity": "AL4T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 55.16220472440945,
+          "top": 116.02204724409448,
+          "width": 683.3196850393701,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 49,
+      "hidden": false,
+      "visible_page": 49,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 49,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 446.4,
+          "top": 264.0755905511811,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    }
+  ]
+}

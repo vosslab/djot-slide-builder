@@ -1,6 +1,7 @@
 """Shared extended-Djot directive grammar and layout-derived vocabulary."""
 
 # Standard Library
+import html
 import re
 
 # Local Modules
@@ -36,7 +37,7 @@ ACTION_REVEALS: dict[str, slide_lib.native_model.Reveal] = {
 	),
 }
 DEFERRED_ACTIONS = frozenset({"blue overlay"})
-TEXT_PROJECTIONS = {"&prime;": "\u2032"}
+TEXT_ENTITY_PATTERN = re.compile(r"&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#x[0-9A-Fa-f]+);")
 
 
 #============================================
@@ -55,7 +56,13 @@ def legal_slot_names(layout_name: str) -> tuple[str, ...]:
 
 #============================================
 def project_text(value: str) -> str:
-	"""Project the small normal-text vocabulary after strict-Djot validation."""
-	for source, projection in TEXT_PROJECTIONS.items():
-		value = value.replace(source, projection)
-	return value
+	"""Decode complete character references after inline markup has been parsed."""
+	# ASVS 1.2.1: decoded punctuation is native text, never reparsed as markup.
+	result = TEXT_ENTITY_PATTERN.sub(decode_text_entity, value)
+	return result
+
+
+#============================================
+def decode_text_entity(match: re.Match[str]) -> str:
+	"""Decode one semicolon-terminated reference exactly once."""
+	return html.unescape(match.group())

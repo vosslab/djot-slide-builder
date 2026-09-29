@@ -65,6 +65,16 @@ still record their omitted hidden slides in their reports; they have not been re
 [LECT04_REVIEW.md](LECT04/djot/LECT04_REVIEW.md) for the conversion, repairs, and verification
 boundaries.
 
+## Lecture 05 conversion
+
+Lecture 05 adds eight canonical decks under `LECT05/djot/`, converted from `LECT05/old/`:
+325 authored and visible slides, with no source-hidden pages. The 2026 announcements are the
+current source. See [LECT05_REVIEW.md](LECT05/djot/LECT05_REVIEW.md) for teaching-layout repairs,
+Lecture 04 comparison findings, and the validation boundary. The earlier inventory above covers
+Lectures 01--04 and remains their historical import inventory.
+
+Build Lecture 05 with `./build_slides.sh genetics/LECT05/`.
+
 ## Lecture 04 acceptance evidence
 
 The 2026-09-21 conversion covered nine authoritative Lecture 04 ODP decks: 319 authored slides,

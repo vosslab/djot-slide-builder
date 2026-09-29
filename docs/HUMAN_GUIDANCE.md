@@ -21,3 +21,17 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Keep `set_3` in the filenames; it is the major hierarchy for my content-based slide decks in
   Biotechnology.
 - I don't want slide numbers; they make students watch the clock instead of the presenter.
+
+## Conversion review
+
+- Preserve source colors and bold key labels in announcements. Anonymous-message instructions
+  need the source image; use readable clickable labels instead of broken long URL fragments.
+- Check static versus weekly announcement ownership, and use the instructor's schedule spreadsheet
+  to update assessment dates.
+- Use the edited 2026 Lecture 04 slides as examples of the changes I needed after Djot conversion.
+- "When I see libreoffice/soffice crashes, I know you are using it wrong."
+- Automatically convert embedded LibreOffice GDI content into an image, as with the
+  Biotechnology talking points.
+- Lecture 05C needs its source text colors preserved in Djot, including inheritance labels and
+  sex-specific emphasis.
+- Double-check the other Lecture 05 files for missing source text colors as well as Lecture 05C.

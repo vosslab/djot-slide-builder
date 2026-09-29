@@ -9,9 +9,22 @@ import pytest
 # Local Modules
 import slide_lib.djot_blocks
 import slide_lib.djot_errors
+import slide_lib.djot_inline
 import slide_lib.djot_parser
 import slide_lib.layout_validation
 import slide_lib.native_model
+
+
+#============================================
+def test_character_entities_decode_in_styled_text_but_not_verbatim(tmp_path: pathlib.Path) -> None:
+	"""Entities become visible characters without becoming inline syntax or decoding twice."""
+	runs = slide_lib.djot_inline.parse_inlines(tmp_path / "deck.djot", 1,
+		"[Don&rsquo;t Panic]{color=red} &ndash; &#42;Quiz&#42; &amp;rsquo; `&ndash;`")
+	assert slide_lib.djot_parser.visible_text(runs) == \
+		"Don\u2019t Panic \u2013 *Quiz* &rsquo; &ndash;"
+	assert isinstance(runs[0], slide_lib.native_model.StyledSpan)
+	assert runs[0].color == slide_lib.native_model.TextColor.RED
+	assert not any(isinstance(run, slide_lib.native_model.Strong) for run in runs)
 
 
 #============================================

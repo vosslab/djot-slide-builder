@@ -1,0 +1,416 @@
+=== layout: title-slide
+
+# Lecture 05D
+
+## Probability Concepts
+
+## Chapter 3
+
+## Dr. Neil Voss
+
+## Sept 29, 2026
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 1](assets/lect05d-probability_concepts/image_001.png)
+
+@right
+
+- [How do we do questions like this???]{color=purple}
+
+=== layout: one-panel
+
+# Probability speak...
+
+@body
+
+- union/or
+- intersection/and
+- mutually exclusive/disjoint
+- independent
+
+=== layout: one-plus-two-panels
+
+# Probability speak...
+
+@left
+
+- Union\: probability that either of two events will occur
+  - P(A or B)
+- Intersection\: probability that two events occur at the same time
+  - P(A and B)
+- Mutually Exclusive\: Two events are mutually exclusive if they cannot occur at the same time. Another word that means mutually exclusive is disjoint.
+  - intersection\: P(A and B) = 0
+
+@top-right
+
+![Slide image 2](assets/lect05d-probability_concepts/image_002.png)
+
+@bottom-right
+
+![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
+
+=== layout: section
+
+# Addition Rules
+
+=== layout: one-panel
+
+# Addition Rule
+
+@body
+
+- The addition rule states that the probability that [any]{color=green} one of two or more [exclusive]{color=red} events will occur is calculated by adding together their individual probabilities
+- The rule of addition can be used to figure out the probability that an F2 plant from a monohybrid cross will be heterozygous rather than homozygous
+
+=== layout: one-panel
+
+# Probability speak...
+
+@body
+
+- Specific Addition Rule\: If two events are [mutually exclusive]{color=red}, then the probability of either occurring is the sum of the probabilities of each occurring.
+  - [P(A or B) = P(A) + P(B)]{color=red}
+- General Addition Rule\: In events which aren't mutually exclusive, there is some overlap.
+  - When P(A) and P(B) are added, the probability of the intersection (and) is added twice.
+  - To compensate for that double addition, the intersection needs to be subtracted.
+  - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
+
+=== layout: stacked-panels
+
+# Probability speak...
+
+@top
+
+![Slide image 3](assets/lect05d-probability_concepts/image_002.png)
+
+@bottom
+
+![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
+
+=== layout: one-plus-two-panels
+
+# Probability speak...
+
+@left
+
+- In the OR case the overlap is counted twice so we must subtract it.
+- P(A or B) =
+- P(A) + P(B)
+- &ndash; P(A and B)
+
+@top-right
+
+![Slide image 3](assets/lect05d-probability_concepts/image_002.png)
+
+@bottom-right
+
+![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+@right
+
+- [50% chance of A1]{color=red}
+
+- A1A2
+
+- A1
+
+- A2
+
+- A3A4
+
+- A3
+
+- A4
+
+- [50% chance of A3]{color=red}
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+@right
+
+- Cross: A1A2 x A3A4
+- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- Are B and C mutually exclusive?
+- [Specific]{color=red} addition rule gives 1/2 + 1/2 = 100%
+- Does every offspring have A1 or A3?
+- Check with a Punnett square
+
+=== layout: stacked-panels
+
+# Answer!
+
+@top
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+@bottom
+
+|  | A3 | A4 |
+| A1 |  |  |
+| A2 |  |  |
+
+=== layout: stacked-panels
+
+# Answer!
+
+@top
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+@bottom
+
+|  | A3 | A4 |
+| A1 | A1A3 | A1A4 |
+| A2 | A2A3 | A2A4 |
+
+=== layout: two-panels
+
+# Answer!
+
+@left
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+- 3 out of 4.
+- probability = 75%
+- [where did we go wrong???]{color=red}
+
+@right
+
+|  | A3 | A4 |
+| A1 | A1A3 | A1A4 |
+| A2 | A2A3 | A2A4 |
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+@right
+
+- Cross: A1A2 x A3A4
+- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- Are B and C mutually exclusive?
+- [Specific]{color=red} addition rule gives 1/2 + 1/2 = 100%
+- Does every offspring have A1 or A3?
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+@right
+
+- Cross: A1A2 x A3A4
+- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- [Mutually exclusive?]{color=green} [NO]{color=red}
+- [Specific]{color=red} addition rule gives 100%
+- Not every offspring has A1 or A3
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05d-probability_concepts/image_004.png)
+
+![Slide image 5](assets/lect05d-probability_concepts/image_005.png)
+
+@right
+
+- Cross: A1A2 x A3A4
+- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- B and C overlap: P(B and C) = 1/4
+- [General]{color=red} addition rule
+- P(B or C) = 1/2 + 1/2 [- 1/4]{color=red} = 75%
+
+=== layout: section
+
+# Multiplication Rules
+
+=== layout: one-panel
+
+# Special Multiplication Rule
+
+@body
+
+- The multiplication rule states that the probability that two or more [independent]{color=red} events will occur [together]{color=green} is the product of their individual probabilities
+  - [P(A and B) = P(A) × P(B)]{color=red}
+- Probability in an F1 monohybrid cross can be determined using the multiplication rule
+- Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a ½ chance of carrying the dominant allele and a ½ chance of carrying the recessive allele
+
+=== layout: one-panel
+
+# General Multiplication Rule
+
+@body
+
+- The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred, P(B|A).
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+    - P(A|B) = The probability that Event A occurs, given that Event B has occurred, is called a conditional probability.
+- If A and B are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) × P(B)]{color=red}
+
+=== layout: two-panels
+
+# Conditional Probability
+
+@left
+
+- The conditional probability of Event B, given Event A has happened, is denoted by the symbol P(B|A).
+  - If A and B are independent then P(B|A) = P(B)
+- Conversion\:
+  - P(B|A) = P(A and B)/P(A)
+  - P(A|B) = P(A and B)/P(B)
+
+@right
+
+![Slide image 6](assets/lect05d-probability_concepts/image_006.png)
+
+=== layout: stacked-panels
+
+# Bayes' Theorem
+
+@top
+
+![Slide image 7](assets/lect05d-probability_concepts/image_007.png)
+
+@bottom
+
+![Slide image 8](assets/lect05d-probability_concepts/image_008.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 9](assets/lect05d-probability_concepts/image_009.png)
+
+=== layout: four-panels
+
+
+@top-left
+
+![Slide image 9](assets/lect05d-probability_concepts/image_009.png)
+
+@top-right
+
+- Part (A)
+  - Because the disease is [rare]{color=red}, assume father heterozygous
+  - 50% chance young man received bad allele
+
+@bottom-left
+
+- HDhd
+
+@bottom-right
+
+- HD
+
+- hd
+
+=== layout: two-over-one-panels
+
+
+@top-left
+
+![Slide image 9](assets/lect05d-probability_concepts/image_009.png)
+
+@top-right
+
+- Part (A)
+  - Because it is rare, assume father heterozygous
+  - 50% chance young man received bad allele
+
+@bottom
+
+- A: young man has HD allele; P(A) = 1/2
+- B: child receives HD allele; P(B|A) = 1/2
+- P(A and B) = P(B|A) x P(A) = 1/4
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 9](assets/lect05d-probability_concepts/image_009.png)
+
+@right
+
+- Part (A)
+  - Because it is rare, assume father heterozygous
+  - 50% chance young man received bad allele
+
+- P(B|A) = child has HD given that the young man has HD allele = 50%
+- P(A|B) = young man has HD given that his son has HD allele = 50%
+
+- Part (B)
+  - A\: chance that young man had bad allele
+  - B\: chance that child will get bad allele
+  - P(A and B) = P(B|A) × P(A)
+  - P(B|A) = 50%
+  - P(A) = 50%
+  - P(A and B) = 25%
+  - P(A and B) = P(A|B) × P(B)
+  - 25% = 100% × P(B); P(B) = 100%
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Multiplication Rules
+
+@body
+
+- Specific Multiplication Rule, if two events, A and B, are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) × P(B)]{color=red}
+- General Multiplication Rule, if two events, A and B, are NOT independent then\:
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+
+=== layout: one-panel
+
+# Addition Rules
+
+@body
+
+- Specific Addition Rule\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
+  - [P(A or B) = P(A) + P(B)]{color=red}
+- General Addition Rule\: if two events, A and B, are NOT mutually exclusive, then\:
+  - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
+
+=== layout: theend
+
+# THE END

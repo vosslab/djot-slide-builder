@@ -4,6 +4,7 @@
 import io
 import pathlib
 import zipfile
+import xml.etree.ElementTree
 
 # PIP3 modules
 import lxml.etree
@@ -12,7 +13,29 @@ import pytest
 
 # Local modules
 import slide_lib.importers.odp_reader as odp_reader
+import slide_lib.importers.odp_metafile as odp_metafile
 import slide_lib.odf_package
+
+
+def test_flat_unsupported_polyline_remains_reviewable():
+	"""A vertical legacy polyline has no rectangle geometry to import."""
+	element = xml.etree.ElementTree.fromstring(
+		'<draw:polyline xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" '
+		'xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" '
+		'svg:width="0cm" svg:height="4cm"/>'
+	)
+	assert odp_reader.vector_geometry(element, 1) is None
+
+
+def test_polyline_rejects_negative_dimensions():
+	"""Admitting a flat polyline does not admit invalid signed extents."""
+	element = xml.etree.ElementTree.fromstring(
+		'<draw:polyline xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" '
+		'xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" '
+		'svg:width="0cm" svg:height="-4cm"/>'
+	)
+	with pytest.raises(ValueError, match="nonnegative"):
+		odp_reader.vector_geometry(element, 1)
 
 
 CONTENT_PREFIX = """<?xml version="1.0" encoding="UTF-8"?>
@@ -339,6 +362,63 @@ def test_reader_reports_unvalidated_vector_media_and_extension_mismatch(
 	assert any("bytes do not match" in reason
 		for reason in presentation.slides[1].data.review_reasons)
 	assert not any(assets_dir.iterdir())
+
+
+#============================================
+def test_reader_uses_embedded_metafile_preview(tmp_path: pathlib.Path) -> None:
+	"""An ODF raster alternative preserves the figure exactly once at its frame geometry."""
+	content = CONTENT_PREFIX + page("figure", frame(
+		'<draw:image xlink:href="Pictures/legacy.svm"/>'
+		'<draw:image xlink:href="Pictures/preview.png"/>',
+	)) + CONTENT_SUFFIX
+	input_path = write_odp(tmp_path, content, media={
+		"Pictures/legacy.svm": b"VCLMTF\x01\x00unused-preview-source",
+		"Pictures/preview.png": png_bytes(),
+	})
+	assets_dir = tmp_path / "assets"
+	assets_dir.mkdir()
+	presentation = odp_reader.read_presentation(input_path, assets_dir,
+		pathlib.PurePosixPath("assets/deck"))
+	slide = presentation.slides[0]
+	assert len(slide.data.images) == 1
+	asset = slide.data.images[0]
+	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes() == png_bytes()
+	source_frame = xml.etree.ElementTree.fromstring(content).find(".//draw:frame", odp_reader.NS)
+	assert (asset.left, asset.top, asset.width, asset.height) == \
+		odp_reader.frame_geometry(source_frame, 1)
+	assert not any("source image requires review" in reason for reason in slide.data.review_reasons)
+
+
+#============================================
+def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
+		monkeypatch: pytest.MonkeyPatch) -> None:
+	"""Preview-less GDI content reaches the shared converter and publishes validated PNG."""
+	def convert(input_path: pathlib.Path, output_dir: pathlib.Path,
+			output_format: str) -> pathlib.Path:
+		with zipfile.ZipFile(input_path) as archive:
+			assert archive.read("Pictures/figure.svm").startswith(b"VCLMTF")
+			root = xml.etree.ElementTree.fromstring(archive.read("content.xml"))
+			image = root.find(".//draw:image", odp_reader.NS)
+			assert image.get(odp_reader.qname("xlink", "href")) == "Pictures/figure.svm"
+		assert output_format == "png"
+		output_path = output_dir / "figure.png"
+		output_path.write_bytes(png_bytes())
+		return output_path
+
+	monkeypatch.setattr(odp_metafile.slide_lib.libreoffice, "convert_file", convert)
+	content = CONTENT_PREFIX + page("figure", frame(
+		'<draw:image xlink:href="Pictures/legacy.svm"/>',
+	)) + CONTENT_SUFFIX
+	input_path = write_odp(tmp_path, content, media={
+		"Pictures/legacy.svm": b"VCLMTF\x01\x00conversion-source",
+	})
+	assets_dir = tmp_path / "assets"
+	assets_dir.mkdir()
+	presentation = odp_reader.read_presentation(input_path, assets_dir,
+		pathlib.PurePosixPath("assets/deck"))
+	asset = presentation.slides[0].data.images[0]
+	assert asset.asset_path.endswith(".png")
+	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes() == png_bytes()
 
 
 #============================================

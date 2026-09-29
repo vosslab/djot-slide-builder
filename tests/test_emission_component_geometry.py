@@ -3,6 +3,7 @@
 # local repo modules
 import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.geometry as geometry
+import slide_lib.importers.native_normalization as native_normalization
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
 
@@ -11,6 +12,24 @@ import slide_lib.importers.source_model as source_model
 def bounds(values: tuple[float, float, float, float]) -> geometry.NormalizedBounds:
 	"""Build concise normalized geometry for component behavior checks."""
 	return geometry.NormalizedBounds(*values)
+
+
+#============================================
+def test_restored_figure_retains_five_component_table_content() -> None:
+	"""A restored figure beside a table preserves each image and the editable explanation."""
+	box = bounds((0.1, 0.2, 0.9, 0.8))
+	components = [
+		djot_emitter.EmissionComponent(box, ("![Parent](parent.png)",), "image"),
+		djot_emitter.EmissionComponent(box, ("![Offspring](offspring.png)",), "image"),
+		djot_emitter.EmissionComponent(box, ("![Cross](figure.png)",), "image"),
+		djot_emitter.EmissionComponent(box, ("| Allele | Result |", "| --- | --- |", "| A | round |"), "table"),
+		djot_emitter.EmissionComponent(box, ("- conclusion",), "text"),
+	]
+	lines, _layout = native_normalization.table_grid_lines([], components)
+	for component in components:
+		for line in component.lines:
+			assert lines.count(line) == 1
+	assert lines.index("![Parent](parent.png)") < lines.index("![Offspring](offspring.png)")
 
 
 #============================================

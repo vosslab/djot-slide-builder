@@ -669,8 +669,9 @@ ownership.
 **Consequence.** Source features without an explicit native mapping remain visibly incomplete or
 fail with an actionable source diagnostic. Existing layouts should retain the same instructional
 text and genuine content images even when their arrangement changes; diagnostics accompany content
-rather than replace it. Import never substitutes a full-slide or composite render. Temporary visual
-renders may support QA but never enter canonical Djot or output.
+rather than replace it. Embedded GDI figures use their package-local raster preview, or convert
+individually through LibreOffice to PNG. Import never substitutes a full-slide render; temporary
+full-slide renders support QA only. Surrounding text remains native and editable.
 
 **Owner.** `slide_lib/importers/djot_emitter.py`, `slide_lib/layout_engine.py`,
 `slide_lib/odp_export.py`, and their tests.

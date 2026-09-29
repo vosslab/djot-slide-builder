@@ -17,6 +17,7 @@ from PIL import Image
 # local repo modules
 import slide_lib.odf_package
 import slide_lib.importers.odf_styles as odf_styles
+import slide_lib.importers.odp_metafile as odp_metafile
 import slide_lib.importers.odp_reveals as odp_reveals
 import slide_lib.importers.odp_visibility as odp_visibility
 import slide_lib.importers.source_model as source_model
@@ -122,12 +123,10 @@ class _MediaBudget:
 	frame_count: int = 0
 	pixel_count: int = 0
 
-
 #============================================
 def qname(prefix: str, local_name: str) -> str:
 	"""Build one namespace-qualified XML name."""
 	return f"{{{NS[prefix]}}}{local_name}"
-
 
 #============================================
 def validate_odp(input_path: pathlib.Path) -> list[zipfile.ZipInfo]:
@@ -456,6 +455,14 @@ def frame_geometry(element: xml.etree.ElementTree.Element,
 def vector_geometry(element: xml.etree.ElementTree.Element,
 		source_index: int) -> tuple[float, float, float, float] | None:
 	"""Read a finite vector rectangle or line endpoints when ODF supplies them."""
+	if element.tag == qname("draw", "polyline"):
+		# ASVS 2.2.1: validate bounded lengths even for unsupported flat polylines.
+		dimensions = tuple(parse_length(element.get(qname("svg", name)),
+			field_name=f"polyline {name}", allow_negative=True) for name in ("width", "height"))
+		if min(dimensions) < 0.0:
+			raise ValueError("ODF polyline dimensions must be nonnegative")
+		if min(dimensions) == 0.0:
+			return None
 	if element.get(qname("svg", "width")) is not None and \
 			element.get(qname("svg", "height")) is not None:
 		return frame_geometry(element, source_index)
@@ -685,6 +692,7 @@ def add_picture(
 	blob = archive.read(target)
 	suffix = image_suffix(target)
 	try:
+		blob, suffix = odp_metafile.raster_image(blob, suffix, geometry)
 		validate_image_blob(blob, suffix, media_budget)
 	except (OSError, ValueError) as error:
 		accumulator.review_reasons.append(f"source image requires review: {error}")
@@ -782,7 +790,7 @@ def read_frame(
 	"""Read one ODP frame into supported facts or an explicit review lane."""
 	text_box = frame.find("./draw:text-box", NS)
 	table = frame.find(".//table:table", NS)
-	image = frame.find("./draw:image", NS)
+	image = odp_metafile.frame_image(frame)
 	ordinal = source_ordinal
 	geometry = frame_geometry(frame, source_index)
 	if visible_geometry(geometry, page_width, page_height, source_index):

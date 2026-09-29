@@ -1,5 +1,8 @@
 """Canonical native fallbacks for legacy spatial presentation structures."""
 
+# Standard Library
+import dataclasses
+
 # local repo modules
 import slide_lib.layout_registry
 
@@ -83,11 +86,21 @@ def table_grid_lines(heading: list[str], components: list[object]) -> tuple[list
 		Generated Djot lines and the selected native layout name.
 
 	Raises:
-		ValueError: The components cannot occupy an exact supported native grid.
+		ValueError: The components cannot occupy a supported native grid.
 	"""
 	ordered = source_order_components(components)
 	if not any(getattr(component, "kind", None) == "table" for component in ordered):
 		raise ValueError("table fallback requires a table component")
+	# Restored GDI pictures can expose a fifth component. Group consecutive
+	# same-kind images or text flows, retaining source order and separate tables.
+	if len(ordered) == 5:
+		for index in range(len(ordered) - 1):
+			pair = ordered[index:index + 2]
+			kinds = {getattr(component, "kind", None) for component in pair}
+			if kinds <= {"text", "flow"} or kinds == {"image"}:
+				combined = dataclasses.replace(pair[0], lines=tuple(flow_lines(pair)))
+				ordered[index:index + 2] = [combined]
+				break
 	layout = TABLE_GRID_LAYOUTS.get(len(ordered))
 	if layout is None:
 		raise ValueError(

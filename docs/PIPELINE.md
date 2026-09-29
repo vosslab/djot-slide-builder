@@ -14,7 +14,9 @@ trusted ODP -> bounded ODF archive/XML/manifest facts
   -> staged Djot validation and reachable local assets -> non-overwriting publication
 
 The imported presentation supplies structured text, list, table, image, and geometry facts only.
-Ordinary source images remain assets. Difficult spatial compositions normalize into standard native
+Ordinary source images remain assets. Embedded SVM/EMF/WMF figures use their package-local raster
+alternative, or automatically convert through LibreOffice to a validated PNG component when no
+preview is supplied. Difficult spatial compositions normalize into standard native
 source-order layouts with review reasons; no source slide or composite region is rendered and
 inserted as substitute content.
 

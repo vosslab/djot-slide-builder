@@ -1,0 +1,528 @@
+=== layout: title-slide
+
+# Lecture 05C
+
+## Pedigrees
+
+## Chapter 3
+
+## Dr. Neil Voss
+
+## Sept 29, 2026
+
+=== layout: section
+
+# Pedigree Charts
+
+=== layout: two-over-one-panels
+
+# Symbols
+
+@top-left
+
+![Slide image 1](assets/lect05c-pedigree/image_001.png)
+
+@top-right
+
+![Slide image 2](assets/lect05c-pedigree/image_002.png)
+
+@bottom
+
+![Slide image 3](assets/lect05c-pedigree/image_003.png)
+
+=== layout: one-panel
+
+# Mating Lines
+
+@body
+
+![Slide image 4](assets/lect05c-pedigree/image_004.png)
+
+=== layout: gallery
+
+# Pedigree
+
+@gallery
+
+![Slide image 5](assets/lect05c-pedigree/image_005.png)
+
+![Slide image 5](assets/lect05c-pedigree/image_004.png)
+
+=== layout: one-panel
+
+# Symbols used in a pedigree diagram
+
+@body
+
+![Slide image 6](assets/lect05c-pedigree/image_006.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 7](assets/lect05c-pedigree/image_007.png)
+
+=== layout: section
+
+# Rare Dominant Diseases
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 8](assets/lect05c-pedigree/image_008.jpg)
+
+@right
+
+- Pedigree showing the inheritance of a dominant disease gene
+
+
+- The diseased individuals are present in every generation (indicates a dominant disease).
+- Males and females are both about equally affected (indicates autosomal inheritance)
+
+=== layout: one-panel
+
+# [Characteristics of rare dominant alleles]{color=orange}
+
+@body
+
+- 1. Females and males are equally likely to be affected.
+- 2. Affected offspring have one affected parent and the affected parent is equally likely to be the mother or father.
+- 3. On average, half of the individuals in sibships with an affected parent are affected.
+
+=== layout: section
+
+# Rare Recessive Disorders
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 9](assets/lect05c-pedigree/image_009.jpg)
+
+@right
+
+- Inheritance of an autosomal recessive disease gene
+
+- The heterozygous individuals are phenotypically wild type.
+- Mating of two heterozygotes is required to produce an affected (homozygous recessive) child.
+
+=== layout: one-panel
+
+# [Characteristics of rare recessive alleles]{color=purple}
+
+@body
+
+- 1. Females and males are equally likely to be affected.
+- 2. Affected individuals, if they reproduce, usually have unaffected progeny.
+- 3. Most affected individuals have unaffected parents.
+- 4. The parents of affected individuals are often relatives.
+- 5. Among siblings of affected individuals, the proportion affected is approximately 25%.
+
+=== layout: one-panel
+
+
+@body
+
+- [Comparison of Dominant vs. Recessive (ignore sex-linked)]{color=red}
+
+- [Dominant\:]{color=orange}
+- 2. Affected offspring have one affected parent
+- 3. On average, half (50%) of the individuals in sibships with an affected parent are affected.
+
+- [Recessive\:]{color=purple}
+- 2. Affected individuals have unaffected progeny.
+- 3. Most affected individuals have unaffected parents.
+- 4. The parents of affected individuals are often relatives.
+- 5. Among siblings of affected individuals, the proportion affected is approximately 25%.
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 10](assets/lect05c-pedigree/image_010.jpg)
+
+@right
+
+- There is no masking of one allele by another allele for DNA markers (codominance of alleles is seen)
+
+- A human pedigree showing segregation of SSRP alleles
+
+=== layout: section
+
+# X-linked Disorder Pedigree (Chapter 4 Preview)
+
+=== layout: two-panels
+
+# X-Linked Recessive
+
+@left
+
+![Slide image 11](assets/lect05c-pedigree/image_011.png)
+
+@right
+
+- We&rsquo;ll cover X-linked disorders in Chapter 4.
+- in recessive [males]{color=blue} (squares) are more likely to be affected than [females]{color=red} (circles).
+
+=== layout: two-panels
+
+# X-linked Recessive
+
+@left
+
+![Slide image 12](assets/lect05c-pedigree/image_012.png)
+
+@right
+
+- in X-linked recessive [males]{color=blue} (squares) are more likely to be affected than [females]{color=red} (circles).
+
+=== layout: two-panels
+
+# X-linked Recessive
+
+@left
+
+![Slide image 13](assets/lect05c-pedigree/image_013.png)
+
+@right
+
+- in X-linked recessive [males]{color=blue} (squares) are more likely to be affected than [females]{color=red} (circles).
+
+=== layout: two-panels
+
+# X-linked Dominant
+
+@left
+
+![Slide image 14](assets/lect05c-pedigree/image_014.png)
+
+@right
+
+- in X-linked dominant [females]{color=red} (circles) are more likely to be affected than [males]{color=blue} (squares).
+
+=== layout: two-panels
+
+# X-linked Dominant
+
+@left
+
+![Slide image 15](assets/lect05c-pedigree/image_015.png)
+
+@right
+
+- in X-linked dominant [females]{color=red} (circles)  are more likely to be affected than [males]{color=blue} (squares).
+
+=== layout: two-panels
+
+# Y-linked
+
+@left
+
+![Slide image 16](assets/lect05c-pedigree/image_016.png)
+
+@right
+
+- in Y-linked [males]{color=blue} (squares) are the only ones that can be affected.
+- [Females]{color=red} (circles) have no Y chromosome.
+
+=== layout: section
+
+# Sample Problems
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 17](assets/lect05c-pedigree/image_017.png)
+
+![Slide image 18](assets/lect05c-pedigree/image_018.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 18](assets/lect05c-pedigree/image_017.png)
+
+![Slide image 18](assets/lect05c-pedigree/image_018.png)
+
+@right
+
+- Observations\:
+- Approximately equal male and female
+- Affected individual have a parent that is affected
+- Affected individual produce 4/9 affected offspring
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 18](assets/lect05c-pedigree/image_017.png)
+
+![Slide image 18](assets/lect05c-pedigree/image_018.png)
+
+@right
+
+- Observations\:
+- Approximately equal male and female
+- Affected individual have a parent that is affected
+- Affected individual produce 4/9 affected offspring
+- [= DISEASED ALLELE IS DOMINANT]{color=red}
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 18](assets/lect05c-pedigree/image_017.png)
+
+![Slide image 18](assets/lect05c-pedigree/image_018.png)
+
+@right
+
+- [DISEASED ALLELE IS DOMINANT]{color=red}
+- Since disease is rare and dominant\:
+- Affected individuals would have genotype &ldquo;Aa&rdquo;
+- Unaffected individuals would have genotype &ldquo;aa&rdquo;
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 19](assets/lect05c-pedigree/image_019.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [Autosomal Recessive]{color=purple}
+
+@body
+
+![Slide image 19](assets/lect05c-pedigree/image_019.png)
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 20](assets/lect05c-pedigree/image_020.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [Autosomal Dominant]{color=orange}
+
+@body
+
+![Slide image 20](assets/lect05c-pedigree/image_020.png)
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 21](assets/lect05c-pedigree/image_021.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [Autosomal Dominant]{color=orange}
+
+@body
+
+![Slide image 21](assets/lect05c-pedigree/image_021.png)
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 22](assets/lect05c-pedigree/image_022.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [Autosomal Recessive]{color=purple}
+
+@body
+
+![Slide image 22](assets/lect05c-pedigree/image_022.png)
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 23](assets/lect05c-pedigree/image_023.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [Autosomal Dominant]{color=orange}
+
+@body
+
+![Slide image 23](assets/lect05c-pedigree/image_023.png)
+
+=== layout: section
+
+# Sex Linked Pedigrees
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 24](assets/lect05c-pedigree/image_024.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [Y-linked - Only Males]{color=green}
+
+@body
+
+![Slide image 24](assets/lect05c-pedigree/image_024.png)
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 25](assets/lect05c-pedigree/image_025.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [X-linked Recessive &ndash; Mostly Males]{color=blue}
+
+@body
+
+![Slide image 25](assets/lect05c-pedigree/image_025.png)
+
+=== layout: two-panels
+
+# What type of inheritance?
+
+@left
+
+![Slide image 26](assets/lect05c-pedigree/image_026.png)
+
+@right
+
+- [A. Auto Dominant]{color=orange}
+- [B. Auto Recessive]{color=purple}
+- [C. X-linked Dominant]{color=red}
+- [D. X-linked Recessive]{color=blue}
+- [E. Y-linked]{color=green}
+
+=== layout: one-panel
+
+# [X-linked Recessive &ndash; Mostly Males]{color=blue}
+
+@body
+
+![Slide image 26](assets/lect05c-pedigree/image_026.png)
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 27](assets/lect05c-pedigree/image_027.png)
+
+=== layout: one-panel
+
+# Autosomal
+
+@body
+
+![Slide image 28](assets/lect05c-pedigree/image_028.png)
+
+=== layout: one-panel
+
+# X-linked
+
+@body
+
+![Slide image 29](assets/lect05c-pedigree/image_029.png)
+
+=== layout: theend
+
+# THE END

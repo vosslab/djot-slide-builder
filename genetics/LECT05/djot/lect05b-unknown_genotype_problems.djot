@@ -1,0 +1,188 @@
+=== layout: title-slide
+
+# Lecture 05B
+
+## Unknown Genotype / Sample Problems
+
+## Chapter 3
+
+## Dr. Neil Voss
+
+## Sept 29, 2026
+
+=== layout: section
+
+# [Unknown Alleles]{color=red} Hartl Question 3.11 Part a
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect05b-unknown_genotype_problems/image_001.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 2](assets/lect05b-unknown_genotype_problems/image_002.png)
+
+@right
+
+- [Hints\:]{color=red}
+- each individual must have an allele for each gene.
+- double homozygotes, will only have two bands, because they have two copies of the same allele
+- look at the double homozygotes
+  - columns\: C, E, G, and I
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 2](assets/lect05b-unknown_genotype_problems/image_002.png)
+
+@right
+
+- look at the double homozygotes (only 2 bands)
+  - columns\: C, E, G, and I
+- the two bands from double homozygotes must come from different genes
+  - 3 and 4 are different genes
+  - 2 and 3 are different genes
+  - 1 and 2 are different genes
+  - 1 and 4 are different genes
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 2](assets/lect05b-unknown_genotype_problems/image_002.png)
+
+@right
+
+- the two bands from double homozygotes must come from different genes
+  - [diagonals are excluded]{color=red}
+  - [3 and 4 are different genes]{color=purple}
+  - [2 and 3 are different genes]{color=green}
+  - [1 and 2 are different genes]{color=orange}
+  - [1 and 4 are different genes]{color=blue}
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 2](assets/lect05b-unknown_genotype_problems/image_002.png)
+
+@right
+
+- the two bands from double homozygotes must come from different genes
+  - look at remaining ones\:
+  - [Bands 1 and 3 are the same gene]{color=red}
+  - [Bands 2 and 4 are the same gene]{color=blue}
+
+=== layout: section
+
+# [Unknown Alleles]{color=red} Hartl Question 3.11 Part b
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect05b-unknown_genotype_problems/image_003.png)
+
+@right
+
+- (a) 1,3 = gene; 2,4 = gene
+- (b)
+  - Both P1 and P2 are heterozygotes
+  - Lane D has 1,2,3, but not 4
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect05b-unknown_genotype_problems/image_003.png)
+
+@right
+
+- (a) 1,3 = gene; 2,4 = gene
+- (b) Lane D has 1,2,3, but not 4
+  - D is heterozygote for gene 1,3
+    - probability of ½ for heteroz. from heteroz. parents
+  - D is homozygote for gene 2,4
+    - probability of ¼ for homoz. from heteroz. parents
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/lect05b-unknown_genotype_problems/image_003.png)
+
+@right
+
+- (a) 1,3 = gene; 2,4 = gene
+- (b) genes are independent
+  - hetero ½ × homo ¼ = [1/8]{color=red}
+
+=== layout: section
+
+# [Unknown Alleles]{color=red} Hartl Question 3.23
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05b-unknown_genotype_problems/image_004.png)
+
+@right
+
+- Based on their coat colors of the parent alone, we can predict that genotypes of\:
+- Female = solid tan = aa S&ndash;
+- Male = solid black = A&ndash; S&ndash;
+
+- [dashes are used to say that we don&rsquo;t know the second allele]{color=red}
+- [&lsquo;A&ndash;&lsquo; means &lsquo;AA&rsquo; or &lsquo;Aa&rsquo;]{color=red}
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05b-unknown_genotype_problems/image_004.png)
+
+@right
+
+- Look at genotypes of offspring\:
+  - 2 solid tan\: S&ndash;aa
+  - 2 solid black\: S&ndash;A&ndash;
+  - 1 spotted tan\: ssaa
+  - 1 spotted black\: ssA&ndash;
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect05b-unknown_genotype_problems/image_004.png)
+
+@right
+
+- Female = solid tan = aa S&ndash;
+- Male = solid black = A&ndash; S&ndash;
+- Because of tan offspring (aa) is produced, the male must also have one recessive allele for gene A.
+- Female = aa S&ndash;
+- Male = Aa S&ndash;
+- Since there are recessive spotted offspring (ss), both parents must have one recessive allele for gene S.
+- [Female = aa Ss]{color=red}
+- [Male = Aa Ss]{color=red}
+
+=== layout: theend
+
+# THE END
