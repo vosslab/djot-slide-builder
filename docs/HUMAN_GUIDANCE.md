@@ -31,6 +31,21 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Keep `set_3` in the filenames; it is the major hierarchy for my content-based slide decks in
   Biotechnology.
 - I don't want slide numbers; they make students watch the clock instead of the presenter.
+- For Lecture 05D v2, preserve the hard-question opening, the context-dependent addition-rule
+  trap, and callbacks to rule slides. Rewrite textbook question screenshots as editable text.
+- Put learning objectives on slide 2, a summary at the end, and flow cues in `@notes`.
+  Aim for 30-40 slides; up to 50 is fine when the extra slides teach without adding bloat.
+- More multiple-choice and question-answer slides are welcome in Lecture 05D v2.
+- Use Unicode fraction glyphs in Lecture 05D v2 instead of literal slash fractions.
+- Fix awkward wrapping through sensible wording and layout; manually added nonbreaking spaces
+  have been a workaround, not the preferred solution.
+- Keep font roles: Atkinson Hyperlegible Next for ordinary text, Atkinson Hyperlegible Mono for
+  monospace, and IBM Plex Sans Condensed for narrow text. Remove ad hoc font-family overrides.
+- Let the backend select fonts for missing glyphs and mathematics (a math font such as STIX is
+  fine); keep font substitutions out of Djot files. Preserve student-facing prose about fonts.
+- Djot specifies semantic font families or roles, not concrete font names. The backend owns the
+  mapping from ordinary, monospace, and condensed text to installed or bundled font faces.
+- Prefer pollen/ovule labels for plant examples and sperm/egg labels for animal examples.
 
 ## Conversion review
 

@@ -261,8 +261,10 @@ def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: boo
 	result: list[tuple[str, str, bool, bool]] = []
 	for inline in inlines:
 		if isinstance(inline, (slide_lib.native_model.Text, slide_lib.native_model.InlineCode)):
-			result.append((inline.value, slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
-				bold, italic))
+			family = slide_lib.presentation_theme.MONOSPACE_FONT_FAMILY \
+				if isinstance(inline, slide_lib.native_model.InlineCode) \
+				else slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
+			result.append((inline.value, family, bold, italic))
 		elif isinstance(inline, slide_lib.native_model.Break):
 			result.append(("\n", "", False, False))
 		elif isinstance(inline, slide_lib.native_model.Strong):
@@ -271,10 +273,10 @@ def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: boo
 			result.extend(_styled_tokens(inline.children, bold, True, link_url))
 		elif isinstance(inline, slide_lib.native_model.Link):
 			literal = visible_text(inline.children) == inline.url
-			family = "PT Sans Narrow" if literal else \
-				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
-			for text, _family, child_bold, child_italic in _styled_tokens(inline.children, bold, italic, inline.url):
-				result.append((text, "" if text == "\n" else family, child_bold, child_italic))
+			for text, family, child_bold, child_italic in _styled_tokens(inline.children, bold, italic, inline.url):
+				if literal and family == slide_lib.presentation_theme.ORDINARY_FONT_FAMILY:
+					family = slide_lib.presentation_theme.NARROW_FONT_FAMILY
+				result.append((text, family, child_bold, child_italic))
 		elif isinstance(inline, slide_lib.native_model.StyledSpan):
 			result.extend(_styled_tokens(inline.children, bold, italic, link_url))
 	return tuple(result)

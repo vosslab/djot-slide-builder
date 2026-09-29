@@ -117,7 +117,7 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 			runs.append(slide_lib.layout_content.TextRun(inline.value, style))
 		elif isinstance(inline, slide_lib.native_model.InlineCode):
 			style = slide_lib.layout_content.RunStyle(
-				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+				slide_lib.presentation_theme.MONOSPACE_FONT_FAMILY,
 				color, bold=bold, italic=italic, code=True, link_url=link)
 			runs.append(slide_lib.layout_content.TextRun(inline.value, style))
 		elif isinstance(inline, slide_lib.native_model.Break):
@@ -132,7 +132,8 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 					bold, italic, inline.url):
 				if isinstance(run, slide_lib.layout_content.TextRun):
 					style = slide_lib.layout_content.RunStyle(
-						"PT Sans Narrow" if literal else run.style.font_family,
+						slide_lib.presentation_theme.NARROW_FONT_FAMILY
+						if literal and not run.style.code else run.style.font_family,
 						run.style.foreground, True, run.style.bold, run.style.italic,
 						run.style.code, run.style.link_url, literal)
 					runs.append(slide_lib.layout_content.TextRun(run.text, style))

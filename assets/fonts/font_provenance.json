@@ -79,41 +79,155 @@
       }
     },
     {
-      "path": "assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Regular.ttf",
-      "family": "PT Sans Narrow",
+      "path": "assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-Regular.ttf",
+      "family": "Atkinson Hyperlegible Mono",
       "bold": false,
       "italic": false,
-      "version": "Version 2.003W OFL",
-      "odp_derivative_sha256": "62a3917efec07dfaac3925d4e0e938f86f9bec5c9ab3f1760b49485cce99b736",
-      "sha256": "4102edda03059163771869d258df54ac8563c408fa6e9ef75b2ddc85eabea6f4",
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "376091cda22ae3ce83616e3d9cdf81537ac85bff00e0a8e629109b87ce907b47",
+      "sha256": "2c9a7b9fabebd5c746a808d8a1ef2f52e618850caad6ec4fd9f5c48f56e1c1af",
       "face_index": 0,
       "upstream": {
-        "url": "https://raw.githubusercontent.com/google/fonts/baa2e5561af8a4873b058859dcfe158bdd033942/ofl/ptsansnarrow/PT_Sans-Narrow-Web-Regular.ttf",
-        "revision": "baa2e5561af8a4873b058859dcfe158bdd033942"
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next-mono/154d50362016cc3e873eb21d242cd0772384c8f9/fonts/ttf/AtkinsonHyperlegibleMono-Regular.ttf",
+        "revision": "154d50362016cc3e873eb21d242cd0772384c8f9"
       },
       "license": {
         "spdx": "OFL-1.1",
-        "path": "assets/fonts/licenses/PT-Sans-Narrow-OFL-1.1.txt",
-        "sha256": "fc209b64de0bfc41ce3fd323afee1f6f3bd3dade9f7d2a6e7d6e5035bebdcc08"
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Mono-OFL-1.1.txt",
+        "sha256": "1ebb31cf7393164f20d10c1d48406cddb5314feff8465531cf1e4ba37e9dd740"
       }
     },
     {
-      "path": "assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Bold.ttf",
-      "family": "PT Sans Narrow",
+      "path": "assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-Bold.ttf",
+      "family": "Atkinson Hyperlegible Mono",
       "bold": true,
       "italic": false,
-      "version": "Version 2.003W OFL",
-      "odp_derivative_sha256": "330a05f8815103d839af82b9c92a210af2dea4ac82a6c52fd39c9d2b8145104b",
-      "sha256": "e69d83bcf5bd647892b4e2b22f5098dabd55c989413513197722fc156fb9f00e",
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "ffaa3f907c4c5ba15ee3cc27b8356148430e3075f56f85d46881ce75569f2cce",
+      "sha256": "51ad68fafd7ec68051f64983c9c23182a7084268b5cdb0a154dbd53ade079da6",
       "face_index": 0,
       "upstream": {
-        "url": "https://raw.githubusercontent.com/google/fonts/baa2e5561af8a4873b058859dcfe158bdd033942/ofl/ptsansnarrow/PT_Sans-Narrow-Web-Bold.ttf",
-        "revision": "baa2e5561af8a4873b058859dcfe158bdd033942"
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next-mono/154d50362016cc3e873eb21d242cd0772384c8f9/fonts/ttf/AtkinsonHyperlegibleMono-Bold.ttf",
+        "revision": "154d50362016cc3e873eb21d242cd0772384c8f9"
       },
       "license": {
         "spdx": "OFL-1.1",
-        "path": "assets/fonts/licenses/PT-Sans-Narrow-OFL-1.1.txt",
-        "sha256": "fc209b64de0bfc41ce3fd323afee1f6f3bd3dade9f7d2a6e7d6e5035bebdcc08"
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Mono-OFL-1.1.txt",
+        "sha256": "1ebb31cf7393164f20d10c1d48406cddb5314feff8465531cf1e4ba37e9dd740"
+      }
+    },
+    {
+      "path": "assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-Italic.ttf",
+      "family": "Atkinson Hyperlegible Mono",
+      "bold": false,
+      "italic": true,
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "4467fb7aeebf848c483cbf7186f555fc62aa367966d1c9ce93ca7368b98f1baf",
+      "sha256": "356060ab70ae62e4460dd824ec1b734af24e5c3355a8302700151d35d1382dd4",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next-mono/154d50362016cc3e873eb21d242cd0772384c8f9/fonts/ttf/AtkinsonHyperlegibleMono-Italic.ttf",
+        "revision": "154d50362016cc3e873eb21d242cd0772384c8f9"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Mono-OFL-1.1.txt",
+        "sha256": "1ebb31cf7393164f20d10c1d48406cddb5314feff8465531cf1e4ba37e9dd740"
+      }
+    },
+    {
+      "path": "assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-BoldItalic.ttf",
+      "family": "Atkinson Hyperlegible Mono",
+      "bold": true,
+      "italic": true,
+      "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
+      "odp_derivative_sha256": "77e13204801c2f14e0e9d9f1a3d931691e10cddc0d170f4c22ae839759997577",
+      "sha256": "1286feda7848b1078576f2293201dff9428dad309c63220ed0825b771994a9a6",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/googlefonts/atkinson-hyperlegible-next-mono/154d50362016cc3e873eb21d242cd0772384c8f9/fonts/ttf/AtkinsonHyperlegibleMono-BoldItalic.ttf",
+        "revision": "154d50362016cc3e873eb21d242cd0772384c8f9"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/Atkinson-Hyperlegible-Mono-OFL-1.1.txt",
+        "sha256": "1ebb31cf7393164f20d10c1d48406cddb5314feff8465531cf1e4ba37e9dd740"
+      }
+    },
+    {
+      "path": "assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-Regular.ttf",
+      "family": "IBM Plex Sans Condensed",
+      "bold": false,
+      "italic": false,
+      "version": "Version 1.3",
+      "odp_derivative_sha256": "4bd068c06a0e9a250a0bc992906d5b4c1fc45d9fe75a2a0837d55ce3d8309ddb",
+      "sha256": "e7437c072eef2ef592ae6f2beb0000446287385907abb57ac1cf07bcbaa2aa33",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/google/fonts/9a7e4a0cbf313f8a1774725977c00274fcb7815b/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Regular.ttf",
+        "revision": "9a7e4a0cbf313f8a1774725977c00274fcb7815b"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/IBM-Plex-Sans-Condensed-OFL-1.1.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      }
+    },
+    {
+      "path": "assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-Bold.ttf",
+      "family": "IBM Plex Sans Condensed",
+      "bold": true,
+      "italic": false,
+      "version": "Version 1.3",
+      "odp_derivative_sha256": "72637c62db442a9075aad3067e4e4ca9eefe980e25f8ec7e035783fb081a4392",
+      "sha256": "b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/google/fonts/9a7e4a0cbf313f8a1774725977c00274fcb7815b/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf",
+        "revision": "9a7e4a0cbf313f8a1774725977c00274fcb7815b"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/IBM-Plex-Sans-Condensed-OFL-1.1.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      }
+    },
+    {
+      "path": "assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-Italic.ttf",
+      "family": "IBM Plex Sans Condensed",
+      "bold": false,
+      "italic": true,
+      "version": "Version 1.3",
+      "odp_derivative_sha256": "ca0fd7c4d8f8d67887702a98940d038039215457ccd8477bdcfd7e3c8d1ea047",
+      "sha256": "a0320e60c17926c4e210dfdb3b1a346991f35f83b471daf55537ee79cbcb7c7f",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/google/fonts/9a7e4a0cbf313f8a1774725977c00274fcb7815b/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Italic.ttf",
+        "revision": "9a7e4a0cbf313f8a1774725977c00274fcb7815b"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/IBM-Plex-Sans-Condensed-OFL-1.1.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      }
+    },
+    {
+      "path": "assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-BoldItalic.ttf",
+      "family": "IBM Plex Sans Condensed",
+      "bold": true,
+      "italic": true,
+      "version": "Version 1.3",
+      "odp_derivative_sha256": "c266ef186f700c4fb655187ffa74ad1301711b6387653175257270646bed2144",
+      "sha256": "fe1983c07a086fbee939e5f0f826e5428f7d02666c8e3bbb7295fb3504597a07",
+      "face_index": 0,
+      "upstream": {
+        "url": "https://raw.githubusercontent.com/google/fonts/9a7e4a0cbf313f8a1774725977c00274fcb7815b/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-BoldItalic.ttf",
+        "revision": "9a7e4a0cbf313f8a1774725977c00274fcb7815b"
+      },
+      "license": {
+        "spdx": "OFL-1.1",
+        "path": "assets/fonts/licenses/IBM-Plex-Sans-Condensed-OFL-1.1.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
       }
     }
   ]

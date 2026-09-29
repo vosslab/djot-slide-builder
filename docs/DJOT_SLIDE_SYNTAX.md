@@ -279,7 +279,10 @@ For raised allele letters, use numeric references to modifier letters, such as
 `I&#x1D2C;` (I with superscript A), `I&#x1D2E;` (I with superscript B),
 and `C&#x1D3F;` (C with superscript R). Preserve the source allele letter case.
 
-Use backticks for a short fixed-width sequence.  Fenced code preserves aligned multiline Djot
+Use backticks for a short fixed-width sequence in Atkinson Hyperlegible Mono. Ordinary text uses
+Atkinson Hyperlegible Next; literal URLs use IBM Plex Sans Condensed. Font-family choices and
+missing-glyph substitutions belong to the backend, not Djot attributes.
+Fenced code preserves aligned multiline Djot
 source and currently receives a native-destination diagnostic before rendering.
 
 ~~~~djot

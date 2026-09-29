@@ -24,11 +24,13 @@ site/
 # ADD YOUR CUSTOM IGNORES BELOW
 # Propagation preserves this section.
 # ------------------ END LOCAL REPOSITORY RULES ------------------
+*.pdf
 *.pptx
 *.gif
 *.png
 *.jpg
 *.jpeg
+*textbooks*
 slide_*source.png
 *.ot?
 *.od?
@@ -38,4 +40,3 @@ slide_*source.png
 # Licensed layout-measurement assets are source inputs, not generated OpenType output.
 !assets/fonts/**/*.otf
 !assets/fonts/**/*.ttf
-*.pdf

@@ -2,22 +2,52 @@
 
 ### Additions and New Features
 
+- Add a separate 41-slide Lecture 05D v2 with objectives, a final summary, and instructor notes.
+  Preserve the opening challenge and addition-rule trap; replace textbook screenshots with
+  editable questions, crosses, weighted Punnett squares, rule callbacks, and four MC checkpoints.
+- Resolve the opening unequal-pollen problem as AA:Aa:aa = 1:3:2 and correct the family example's
+  reversed conditional probability under explicit inheritance assumptions.
+
 - Add optional `@notes` regions to every Djot slide layout. Plain instructor text ends at the next
   named slot or slide directive and exports through the existing native ODP speaker-note model.
 
 ### Behavior or Interface Changes
 
+- Preserve semantic font roles in the backend: Atkinson Hyperlegible Next for ordinary text,
+  Atkinson Hyperlegible Mono for inline code, and IBM Plex Sans Condensed for literal URLs.
+  Replace PT Sans Narrow with IBM; bundle and hash-pin four real styles for each new family.
+  Keep missing-glyph substitutions backend-owned and student-facing font advice unchanged.
 - Preserve note line breaks and blank lines, decode character references once, and keep notes out
   of visible slide content. Explicitly exclude notes and notes pages from normal PDF export.
 - Document notes syntax, examples, instructor guidance, and the native-notes design decision.
 
 ### Fixes and Maintenance
 
+- Remove the recording-card SVG's Arial/Helvetica declarations in favor of the ordinary font.
+- Label the Lecture 05D plant example with ovules/pollen, clarifying the egg/sperm alleles inside
+  those structures. Keep animal egg/sperm labels in the family example.
+- Clean Lecture 05D v2 wrapping with shorter labels and wider, shallower family cross tables.
+  Keep the 41-slide sequence, readable font sizes, and Unicode fractions; add no nonbreaking spaces.
+- Render Lecture 05D v2 fractions as Unicode glyphs using numeric character references in Djot,
+  including halves, quarters, thirds, and sixths in slide content and speaker notes.
 - Exclude `tests/_temp/` from Git and normal pytest collection. Retain only note-boundary and
   native-export behavior tests; use temporary checks for broader implementation evidence.
 - Synchronized shared style guides, tests, and repository support files from the starter template.
 
 ### Developer Tests and Notes
+
+- Reviewed every changed `slide_lib` line. All 196 functional tests pass, including theme,
+  layout, parser, import/export, capacity, and LibreOffice boundary tests. A temporary check
+  confirms matching measurement/export font selection across 16 nested styling combinations.
+- Built a four-page typography specimen through LibreOffice; its PDF embeds all 12 intended
+  faces and preserves linked monospace text. Rebuilt Lecture 05D v2, passed strict native lint
+  and capacity checks, and reviewed all 41 rendered pages. Missing Unicode glyphs still use
+  backend substitutions; the deck does not specify fallback fonts.
+- Broader hygiene checks: 460 pass; two existing failures remain (the oversized
+  `docs/DESIGN_DECISIONS.md` and undeclared `weasyprint` in the Lecture 04 table helper).
+- Lecture 05D v2 passes strict native lint and capacity inspection. Built and visually reviewed
+  all 41 PDF pages; ODP contains 41 slides and 41 nonempty speaker-note sections. Confirmed the
+  original source is unchanged. Recorded the sequence and checked calculations in LECT05D_V2_REVIEW.md.
 
 - Focused parser, layout, native-export, and LibreOffice tests pass. Strict Djot lint accepts the
   17-layout notes sample. A one-time LibreOffice ODP round trip preserves its authored notes;

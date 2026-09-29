@@ -24,6 +24,20 @@ Centered Text classifier.
 
 ## Current operational boundary
 
+### Lecture 05D teaching revision
+
+**Decision.** Keep Lecture 05D v2 as a separate Djot deck. Use native text and tables for its
+textbook-derived questions, manual question-answer slide sequences, and notes on every slide.
+
+**Why.** The instructor requested a reviewable alternative preserving the hard opener,
+addition-rule misconception, and callbacks while improving readability and participation.
+
+**Consequence.** The original remains available; folder builds include both versions. V2 ends on
+its requested summary and resolves the opening problem before introducing conditional inheritance.
+
+**Owner.** [LECT05D_V2_REVIEW.md](../genetics/LECT05/djot/LECT05D_V2_REVIEW.md) and
+[lect05d-v2-probability_concepts.djot](../genetics/LECT05/djot/lect05d-v2-probability_concepts.djot).
+
 ### Authored instructor notes
 
 **Decision.** Every layout accepts one optional `@notes` region. It ends at the next named slot,
@@ -291,25 +305,24 @@ leaving normal compiler output unchanged.
 
 **Decision.** Every font face the presentation pipeline emits is a versioned repository asset with
 an immutable family/style key, repository-relative path, SHA-256 digest, and face index. Theme
-loading verifies each asset and its intrinsic metrics before layout work begins; it never accepts an
-operating-system font substitution.
+loading verifies each asset and its intrinsic metrics before layout work begins. Missing glyphs
+within a valid face may use rendering-backend substitution; Djot never names fallback fonts.
 
 **Why.** A readable-floor calculation is only meaningful when its glyph metrics are reproducible.
 Host fonts and silent LibreOffice substitution turn the same Djot deck into different geometry on
 different machines. Atkinson Hyperlegible Next replaces OpenDyslexic because the OpenDyslexic
 metrics produced distracting line spacing in ordinary lecture text.
 
-**Consequence.** Atkinson Hyperlegible Next regular, bold, italic, and bold italic and PT Sans
-Narrow regular and bold are bundled under their SIL OFL licenses. PT Sans Narrow has no upstream
-italic face, so an italic URL run fails at face selection rather than becoming synthesized or
-substituted. Inline code continues to use Atkinson Hyperlegible Next; a future code family requires
-its own licensed profile before it can be emitted or measured.
+**Consequence.** Atkinson Hyperlegible Next, Atkinson Hyperlegible Mono, and IBM Plex Sans
+Condensed each have bundled regular, bold, italic, and bold italic faces under SIL OFL licenses.
+Ordinary text, inline code, and literal URLs select these roles in the backend. Supporting math
+fonts and missing-glyph substitutions also belong to the backend, not to authored Djot overrides.
 
 **Owner.** `slide_lib/presentation_theme.py` and `assets/fonts/PROVENANCE.md`.
 
 ### Generated ODPs embed the measured bundled faces
 
-**Decision.** Every generated ODP contains package-only, OFL-compliant renamed copies of the six
+**Decision.** Every generated ODP contains package-only, OFL-compliant renamed copies of the
 validated repository font files as `Fonts/` members. Each family, weight, and style has a stable ODF
 face name and `svg:font-face-uri`; emitted semantic styles map to the unique embedded family.
 
@@ -723,10 +736,10 @@ small font-metric differences. CSS and browser rendering are not part of the bui
 **Decision.** Treat every face used for layout capacity as a committed, hash-verified OFL asset with
 recorded provenance. `PresentationTheme` exposes immutable profiles for exact family, weight, and
 italic states; all measurement resolves styled runs against those profiles. Atkinson Hyperlegible
-Next is the ordinary-text family. PT Sans Narrow is permitted only for displayed literal URLs and
-only in the face states actually committed to the repository; it has no fabricated italic fallback.
+Next is the ordinary-text family, Atkinson Hyperlegible Mono supplies inline code, and IBM Plex
+Sans Condensed supplies displayed literal URLs. All three include real regular/bold/italic faces.
 
-**Why.** A system-installed font, a silent substitution, or an average-glyph estimate makes line
+**Why.** A system-installed base font or an average-glyph estimate makes line
 wrapping machine-dependent. That would allow the same deck to pass capacity on one host and shrink
 or overflow on another, undermining the point-size and frame contracts.
 

@@ -394,9 +394,12 @@ Use a quick test before class: step back from the screen or view the slide in so
 
 ### Preferred fonts
 
-Use **OpenDyslexic** as the preferred slide font. It works well for short text on slides, especially titles, prompts, labels, and keywords.
+Use **Atkinson Hyperlegible Next** for ordinary slide text, including titles, prompts, labels,
+and keywords. Use **Atkinson Hyperlegible Mono** when fixed-width text helps students read a sequence.
 
-Use **PT Sans Narrow** for long URLs, citation-like text, or compact technical strings that need to fit without becoming unreadable.
+Use **IBM Plex Sans Condensed** for the narrow-text role. The backend selects it for literal URLs.
+Keep font-family selection in the backend; Djot specifies content and semantic formatting.
+Missing glyphs and mathematics may use backend-selected supporting fonts.
 
 Keep font choices simple and consistent. Do not mix many fonts on one slide. Use font size, spacing, and placement to create hierarchy instead of adding extra styles.
 
@@ -823,8 +826,8 @@ Use this as the starting recipe when creating new slides:
 - short title or question
 - 0 to 3 bullets for most slides
 - large readable text
-- OpenDyslexic for short slide text
-- PT Sans Narrow for long URLs
+- Atkinson Hyperlegible Next for ordinary text; Mono for fixed-width text
+- IBM Plex Sans Condensed for the narrow-text role
 - direct labels on figures
 - speaker notes for full explanation
 - one main idea per slide

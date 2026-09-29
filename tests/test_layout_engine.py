@@ -41,6 +41,21 @@ def test_two_sources_produce_two_stable_source_slides(tmp_path: pathlib.Path) ->
 	assert tuple(slide.identity.slide_id for slide in result.plan.slides) == ("slide-1", "slide-2")
 
 
+def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.Path) -> None:
+	"""Code stays monospace while literal URLs receive the approved narrow face."""
+	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
+		"Words `ATGC` [https://example.test](https://example.test) "
+		"[`ATGC`](https://example.test)\n")
+	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
+	runs = [run for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun) and run.text.strip()]
+	assert [(run.text.strip(), run.style.font_family) for run in runs] == [
+		("Words", "Atkinson Hyperlegible Next"), ("ATGC", "Atkinson Hyperlegible Mono"),
+		("https://example.test", "IBM Plex Sans Condensed"),
+		("ATGC", "Atkinson Hyperlegible Mono")]
+	assert all(run.style.underline for run in runs if run.style.link_url)
+
+
 def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Path) -> None:
 	"""Hidden pages keep their source order and native hidden metadata."""
 	source = ("=== layout: title-only\nhidden: true\n\n# Optional\n"

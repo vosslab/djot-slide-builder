@@ -32,6 +32,8 @@ DEFAULT_TEMPLATE_PATH = pathlib.Path(__file__).resolve().parent.parent / \
 REPOSITORY_ROOT = DEFAULT_TEMPLATE_PATH.parent.parent
 FONT_MANIFEST_PATH = pathlib.PurePosixPath("assets/fonts/font_provenance.json")
 ORDINARY_FONT_FAMILY = "Atkinson Hyperlegible Next"
+MONOSPACE_FONT_FAMILY = "Atkinson Hyperlegible Mono"
+NARROW_FONT_FAMILY = "IBM Plex Sans Condensed"
 DEFAULT_COLOR_THEME = "genetics"
 NS = {
 	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
@@ -169,12 +171,30 @@ FONT_FACE_PROFILES = (
 	FontFaceProfile(ORDINARY_FONT_FAMILY, True, True,
 		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-BoldItalic.ttf"),
 		"c2d3c596b54d1565ca20d383cdfb127b50b18b500b85a774fd07d4d976cd018b", 0),
-	FontFaceProfile("PT Sans Narrow", False, False,
-		pathlib.PurePosixPath("assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Regular.ttf"),
-		"4102edda03059163771869d258df54ac8563c408fa6e9ef75b2ddc85eabea6f4", 0),
-	FontFaceProfile("PT Sans Narrow", True, False,
-		pathlib.PurePosixPath("assets/fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Bold.ttf"),
-		"e69d83bcf5bd647892b4e2b22f5098dabd55c989413513197722fc156fb9f00e", 0),
+	FontFaceProfile(MONOSPACE_FONT_FAMILY, False, False,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-Regular.ttf"),
+		"2c9a7b9fabebd5c746a808d8a1ef2f52e618850caad6ec4fd9f5c48f56e1c1af", 0),
+	FontFaceProfile(MONOSPACE_FONT_FAMILY, True, False,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-Bold.ttf"),
+		"51ad68fafd7ec68051f64983c9c23182a7084268b5cdb0a154dbd53ade079da6", 0),
+	FontFaceProfile(MONOSPACE_FONT_FAMILY, False, True,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-Italic.ttf"),
+		"356060ab70ae62e4460dd824ec1b734af24e5c3355a8302700151d35d1382dd4", 0),
+	FontFaceProfile(MONOSPACE_FONT_FAMILY, True, True,
+		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_mono/AtkinsonHyperlegibleMono-BoldItalic.ttf"),
+		"1286feda7848b1078576f2293201dff9428dad309c63220ed0825b771994a9a6", 0),
+	FontFaceProfile(NARROW_FONT_FAMILY, False, False,
+		pathlib.PurePosixPath("assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-Regular.ttf"),
+		"e7437c072eef2ef592ae6f2beb0000446287385907abb57ac1cf07bcbaa2aa33", 0),
+	FontFaceProfile(NARROW_FONT_FAMILY, True, False,
+		pathlib.PurePosixPath("assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-Bold.ttf"),
+		"b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849", 0),
+	FontFaceProfile(NARROW_FONT_FAMILY, False, True,
+		pathlib.PurePosixPath("assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-Italic.ttf"),
+		"a0320e60c17926c4e210dfdb3b1a346991f35f83b471daf55537ee79cbcb7c7f", 0),
+	FontFaceProfile(NARROW_FONT_FAMILY, True, True,
+		pathlib.PurePosixPath("assets/fonts/ibm_plex_sans_condensed/IBMPlexSansCondensed-BoldItalic.ttf"),
+		"fe1983c07a086fbee939e5f0f826e5428f7d02666c8e3bbb7295fb3504597a07", 0),
 )
 
 _ODF_FONT_NAMES = (
@@ -182,13 +202,20 @@ _ODF_FONT_NAMES = (
 	"DjotAtkinsonHyperlegibleNextBold",
 	"DjotAtkinsonHyperlegibleNextItalic",
 	"DjotAtkinsonHyperlegibleNextBoldItalic",
-	"DjotPTSansNarrowRegular",
-	"DjotPTSansNarrowBold",
+	"DjotAtkinsonHyperlegibleMonoRegular",
+	"DjotAtkinsonHyperlegibleMonoBold",
+	"DjotAtkinsonHyperlegibleMonoItalic",
+	"DjotAtkinsonHyperlegibleMonoBoldItalic",
+	"DjotIBMPlexSansCondensedRegular",
+	"DjotIBMPlexSansCondensedBold",
+	"DjotIBMPlexSansCondensedItalic",
+	"DjotIBMPlexSansCondensedBoldItalic",
 )
 
 _EMBEDDED_FONT_FAMILIES = {
 	"Atkinson Hyperlegible Next": "DjotAtkinsonHyperlegibleNext",
-	"PT Sans Narrow": "DjotPTSansNarrow",
+	"Atkinson Hyperlegible Mono": "DjotAtkinsonHyperlegibleMono",
+	"IBM Plex Sans Condensed": "DjotIBMPlexSansCondensed",
 }
 
 

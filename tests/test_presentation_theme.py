@@ -130,8 +130,8 @@ def test_font_selection_is_exact_and_never_synthesizes_an_unbundled_style() -> N
 	"""The run-style boundary accepts only real bundled faces."""
 	bold_italic = slide_lib.presentation_theme.select_font_face("Atkinson Hyperlegible Next", True, True)
 	assert bold_italic.bold and bold_italic.italic
-	with pytest.raises(slide_lib.presentation_theme.ThemeError, match="PT Sans Narrow"):
-		slide_lib.presentation_theme.select_font_face("PT Sans Narrow", italic=True)
+	mono = slide_lib.presentation_theme.select_font_face("Atkinson Hyperlegible Mono", True, True)
+	assert mono.bold and mono.italic
 	with pytest.raises(slide_lib.presentation_theme.ThemeError, match="Unknown Family"):
 		slide_lib.presentation_theme.select_font_face("Unknown Family")
 

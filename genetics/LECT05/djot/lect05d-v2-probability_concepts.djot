@@ -1,0 +1,989 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 05D
+
+## Probability Concepts
+
+## Choose the rule. Check the context.
+
+## Dr. Neil Voss
+
+@notes
+
+Flow: open with the hard pollen problem; expose the addition-rule trap; build the tools;
+return to the pollen problem; finish with conditional inheritance. Aim for about 25 minutes,
+including two short discussion pauses. These notes are cues, not a script.
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Distinguish overlap from independence
+- Choose addition or multiplication
+- Predict offspring probabilities from gamete frequencies
+- Interpret a conditional probability
+
+@notes
+
+Students should be able to justify a rule, not just recall its equation. The same three
+examples will carry the whole lecture. Preview that the biology determines the probabilities.
+
+=== layout: two-panels
+
+# How do we solve this???
+
+@left
+
+## Plants: Aa &times; Aa
+
+- Equal A and a production
+- Pollen success: A:a = 1:2
+- Ovules: unaffected
+
+@right
+
+## Predict
+
+F&#x2082; ratio: AA : Aa : aa = ?
+
+Still 1 : 2 : 1?
+
+Which probabilities would you need?
+
+@notes
+
+Opening challenge, adapted from the original pollen screenshot. Success means surviving
+and participating in fertilization. Assume random union of the successful pollen with eggs
+and equal survival of the resulting offspring. Take guesses without solving it yet.
+Promise to return once we have tools for both a route to an offspring and alternative routes.
+
+=== layout: two-panels
+
+# What exactly are we counting?
+
+@left
+
+## [OR = at least one]{color=blue}
+
+P(B or C)
+
+Either or both events
+
+Union
+
+@right
+
+## [AND = both]{color=purple}
+
+P(B and C)
+
+Both events
+
+Intersection
+
+@notes
+
+Use B and C for events so they are not confused with the A allele. An event is an outcome
+or set of outcomes we care about. Ask what ordinary-language "or" might leave ambiguous;
+our probability OR includes both. Neither keyword alone licenses a shortcut.
+
+=== layout: section
+
+# Addition
+
+## Can the events overlap?
+
+@notes
+
+Start where adding really works. Then change the biological context while keeping the
+individual probabilities the same. That is the trap worth remembering.
+
+=== layout: two-panels
+
+# One gamete: A&#x2081; OR A&#x2082;?
+
+@left
+
+## Parent: A&#x2081;A&#x2082;
+
+| Gamete | Probability |
+| --- | --- |
+| A&#x2081; | &#x00BD; |
+| A&#x2082; | &#x00BD; |
+
+@right
+
+One allele at this locus
+
+P(A&#x2081; or A&#x2082;) = &#x00BD; + &#x00BD; = 1
+
+[Mutually exclusive = cannot both occur]{color=red}
+
+@notes
+
+Ask whether this ONE normal haploid gamete can carry both alleles at this locus. No.
+Assume ordinary equal segregation. The two alternatives exhaust the possibilities here.
+Mutually exclusive is also called disjoint. Keep "one gamete" explicit.
+
+=== layout: one-panel
+
+# Rule card: addition
+
+@body
+
+## OR &rarr; add alternatives
+
+[P(B or C) = P(B) + P(C)]{color=blue}
+
+Condition: [mutually exclusive]{color=red}
+
+Overlap: P(B and C) = 0
+
+@notes
+
+Point back to the single-gamete example. This is the special addition rule, and its
+condition is part of the rule. Keep this card in mind for the next problem.
+
+=== layout: two-panels
+
+# One offspring: A&#x2081; OR A&#x2083;?
+
+@left
+
+## A&#x2081;A&#x2082; &times; A&#x2083;A&#x2084;
+
+One gene, four alleles
+
+Equal segregation
+
+Random fertilization
+
+@right
+
+B = inherits A&#x2081;
+
+C = inherits A&#x2083;
+
+[P(B or C) = ?]{color=purple}
+
+Either allele, including both
+
+@notes
+
+This is the original four-allele screenshot rewritten as native text, with no textbook
+exercise number. We now ask about one diploid offspring, not one haploid gamete.
+Let students identify the two events before choosing an equation.
+
+=== layout: two-panels
+
+# So... every offspring qualifies?
+
+@left
+
+P(B) = &#x00BD;
+
+P(C) = &#x00BD;
+
+&#x00BD; + &#x00BD; = [100% ???]{color=red}
+
+@right
+
+## Vote: P(A&#x2081; or A&#x2083;)?
+
+- A. 100%
+- B. 75%
+- C. 50%
+- D. 25%
+
+@notes
+
+Present the tempting answer as a claim to test, not an answer to memorize. Vote before
+the square: B is correct. The arithmetic is fine; the untested condition is the problem.
+Ask whether one offspring could inherit both. Do not repair the claim yet.
+
+=== layout: two-panels
+
+# Test the 100% claim
+
+@left
+
+|  | A&#x2083; | A&#x2084; |
+| --- | --- | --- |
+| A&#x2081; | ? | ? |
+| A&#x2082; | ? | ? |
+
+@right
+
+## Discuss
+
+- Fill the four offspring
+- Mark A&#x2081; OR A&#x2083;
+- Find a counterexample
+
+Think: 30 sec; pair: 1 min
+
+@notes
+
+Pairs or Zoom chat: fill the square, then decide which cells qualify. Expected counterexample:
+A2A4. Each cell has probability &#x00BC; under the stated assumptions. Ask for a reason before
+advancing; this is the main addition-rule misconception checkpoint.
+
+=== layout: two-panels
+
+# Three outcomes qualify
+
+@left
+
+|  | A&#x2083; | A&#x2084; |
+| --- | --- | --- |
+| A&#x2081; | [A&#x2081;A&#x2083;: BOTH]{color=purple} | A&#x2081;A&#x2084;: YES |
+| A&#x2082; | A&#x2082;A&#x2083;: YES | [A&#x2082;A&#x2084;: NO]{color=red} |
+
+@right
+
+P(A&#x2081; or A&#x2083;) = [&#x00BE;]{color=blue}
+
+Not 100%
+
+Where did we count twice?
+
+@notes
+
+Keep the same square orientation throughout this sequence. Read the YES/NO/BOTH labels,
+not just the colors. The shared A1A3 cell is the clue for repairing the rule.
+
+=== layout: two-panels
+
+# One offspring, counted twice
+
+@left
+
+|  | A&#x2083; | A&#x2084; |
+| --- | --- | --- |
+| A&#x2081; | [B and C]{color=purple} | B only |
+| A&#x2082; | C only | Neither |
+
+@right
+
+B: top row &rarr; &#x00BD;
+
+C: left column &rarr; &#x00BD;
+
+[Shared cell: subtract one &#x00BC;]{color=red}
+
+@notes
+
+Trace the top row and then the left column. The shared cell is visited twice.
+We subtract one copy, not the whole outcome: inclusive OR must still include it once.
+
+=== layout: one-panel
+
+# Rule card: addition, with overlap
+
+@body
+
+## OR &rarr; add, then remove the duplicate
+
+[P(B or C) = P(B) + P(C) &minus; P(B and C)]{color=blue}
+
+Mutually exclusive? The last term is zero.
+
+@notes
+
+This general rule works whether events overlap or not. The earlier special rule is
+the zero-overlap case. The square gives the equation a meaning before we name it.
+
+=== layout: two-panels
+
+# Callback: fix the 100% claim
+
+@left
+
+|  | A&#x2083; | A&#x2084; |
+| --- | --- | --- |
+| A&#x2081; | [Both: &#x00BC;]{color=purple} | B only: &#x00BC; |
+| A&#x2082; | C only: &#x00BC; | Neither: &#x00BC; |
+
+@right
+
+## General addition rule
+
+P(B or C) = &#x00BD; + &#x00BD; &minus; &#x00BC;
+
+= [&#x00BE; = 75%]{color=blue}
+
+Count each cell once
+
+@notes
+
+Connect the formula to the same square. An alternative check is 1 minus the probability
+of the neither cell. Keep the focus on why the subtraction is necessary.
+
+=== layout: two-panels
+
+# Same probabilities, different context
+
+@left
+
+## ONE gamete
+
+A&#x2081; OR A&#x2082;
+
+Cannot carry both
+
+&#x00BD; + &#x00BD; = [1]{color=blue}
+
+@right
+
+## ONE offspring
+
+A&#x2081; OR A&#x2083;
+
+Can inherit both
+
+&#x00BD; + &#x00BD; &minus; &#x00BC; = [&#x00BE;]{color=blue}
+
+@notes
+
+Addition takeaway: name the event, identify the unit being sampled, and check overlap.
+Same numbers do not guarantee the same answer. Now ask how to calculate an AND probability
+when drawing every outcome becomes inconvenient.
+
+=== layout: section
+
+# Multiplication
+
+## Does one event change the other probability?
+
+@notes
+
+Use the familiar square first. Then return to the hard pollen problem with the same
+method but unequal gamete probabilities. Independence is a condition, not a synonym for 50/50.
+
+=== layout: two-panels
+
+# One offspring: A&#x2081; AND A&#x2083;
+
+@left
+
+|  | A&#x2083;: &#x00BD; | A&#x2084;: &#x00BD; |
+| --- | --- | --- |
+| A&#x2081;: &#x00BD; | [BOTH: &#x00BC;]{color=purple} | &#x00BC; |
+| A&#x2082;: &#x00BD; | &#x00BC; | &#x00BC; |
+
+@right
+
+&#x00BD; of the offspring inherit A&#x2081;
+
+Of those, &#x00BD; also inherit A&#x2083;
+
+[&#x00BD; &times; &#x00BD; = &#x00BC;]{color=purple}
+
+@notes
+
+Ask students to point to the AND cell before reading the calculation. Random union
+means the allele from one parent does not change the allele probabilities from the other.
+Multiplication is taking a fraction of a fraction.
+
+=== layout: one-panel
+
+# Rule card: multiplication
+
+@body
+
+## AND &rarr; multiply along a route
+
+[P(B and C) = P(B) &times; P(C)]{color=purple}
+
+Condition: [independent events]{color=red}
+
+Independent = learning one does not change P(other)
+
+@notes
+
+This is the special multiplication rule. Independent events may occur together;
+our A1 and A3 events do. We will revisit the distinction from mutually exclusive.
+
+=== layout: two-panels
+
+# Back to our hard question
+
+@left
+
+## Plants: Aa &times; Aa
+
+Pollen success: A:a = 1:2
+
+Ovules: unaffected
+
+F&#x2082; ratio: AA : Aa : aa = ?
+
+@right
+
+## Successful pollen
+
+Vote: P(A) = ?
+
+- A. &#x00BC;
+- B. &#x2153;
+- C. &#x00BD;
+- D. &#x2154;
+
+@notes
+
+Repeat the opening problem before solving it. Vote: B is correct. Equal production does
+not imply equal contribution to offspring. We need frequencies among successful pollen,
+not all pollen produced. A is an unnormalized weight; C ignores selection; D is the a
+frequency. Explain these distractors after the next slide, not before the vote.
+
+=== layout: one-panel
+
+# Successful pollen: first find the weights
+
+@body
+
+| Pollen allele | Produced | Relative success | Weight |
+| --- | --- | --- | --- |
+| A | &#x00BD; | &#x00BD; | [&#x00BC;]{color=purple} |
+| a | &#x00BD; | 1 | [&#x00BD;]{color=purple} |
+
+@notes
+
+Read one row at a time. The success column is relative, not a measured absolute survival
+rate. Multiply production by relative success. Ask why these weights do not sum to 1.
+
+=== layout: two-panels
+
+# Turn weights into probabilities
+
+@left
+
+## Total weight
+
+&#x00BC; + &#x00BD; = &#x00BE;
+
+A share = (&#x00BC;) / (&#x00BE;) = [&#x2153;]{color=purple}
+
+a share = (&#x00BD;) / (&#x00BE;) = [&#x2154;]{color=purple}
+
+@right
+
+## Among successful pollen
+
+A : a = 1 : 2
+
+Shares sum to 1
+
+@notes
+
+Normalize by the total weight. The denominator is the successful-pollen pool. This answers
+the vote: B, &#x2153;. A relative success of &#x00BD; does not mean a final allele frequency of &#x00BC;.
+
+=== layout: two-panels
+
+# One genotype, two gamete pools
+
+@left
+
+## Ovule: egg allele
+
+| Allele | Probability |
+| --- | --- |
+| A | &#x00BD; |
+| a | &#x00BD; |
+
+@right
+
+## Pollen: sperm allele
+
+| Allele | Probability |
+| --- | --- |
+| A | [&#x2153;]{color=purple} |
+| a | [&#x2154;]{color=purple} |
+
+@notes
+
+Flowering plants have egg cells inside ovules. Pollen produces and delivers sperm cells.
+Egg frequencies stay equal; sperm frequencies reflect the successful pollen pool.
+Assume random union of these gametes: independence does not require equal frequencies.
+
+=== layout: two-panels
+
+# Your turn: weight the square
+
+@left
+
+## Pollen: sperm allele
+
+| Ovule | A: &#x2153; | a: &#x2154; |
+| --- | --- | --- |
+| A: &#x00BD; | AA: &#x2159; | Aa: ? |
+| a: &#x00BD; | Aa: ? | aa: ? |
+
+@right
+
+## Predict
+
+AA: (&#x00BD;) &times; (&#x2153;) = &#x2159;
+
+Fill the other three cells
+
+30 sec; compare answers
+
+@notes
+
+Callback to the multiplication card: multiply along a route. Give the AA cell as a
+worked example, then pause. Expected remaining values: top right &#x2153;, bottom left &#x2159;,
+bottom right &#x2153;. Ask whether four cells still means four equally likely outcomes.
+
+=== layout: two-panels
+
+# Four cells, unequal probabilities
+
+@left
+
+## Pollen: sperm allele
+
+| Ovule | A: &#x2153; | a: &#x2154; |
+| --- | --- | --- |
+| A: &#x00BD; | AA: &#x2159; | [Aa: &#x2153;]{color=blue} |
+| a: &#x00BD; | [Aa: &#x2159;]{color=blue} | aa: &#x2153; |
+
+@right
+
+## Check
+
+&#x2159; + &#x2153; + &#x2159; + &#x2153; = 1
+
+Two routes to Aa
+
+Can ONE offspring take BOTH routes?
+
+@notes
+
+The cells total 1. The Aa cells differ in which parent supplied A. For one offspring,
+those routes are mutually exclusive. This is the place where the special addition rule
+really does apply, even though the resulting genotype is the same.
+
+=== layout: two-panels
+
+# Aa: multiply within, add between
+
+@left
+
+## Ovule A AND pollen a
+
+(&#x00BD;) &times; (&#x2154;) = &#x2153;
+
+OR
+
+Ovule a AND pollen A
+
+(&#x00BD;) &times; (&#x2153;) = &#x2159;
+
+@right
+
+## Mutually exclusive routes
+
+P(Aa) = &#x2153; + &#x2159;
+
+= [&#x00BD;]{color=blue}
+
+@notes
+
+Physically trace across a route for multiplication and then between routes for addition.
+Same genotype, different parental origins. The condition for adding is about the events,
+not about whether their genotype labels look alike.
+
+=== layout: two-panels
+
+# Our opening problem, solved
+
+@left
+
+| Type | P | Ratio |
+| --- | --- | --- |
+| AA | &#x2159; | 1 |
+| Aa | &#x00BD; | 3 |
+| aa | &#x2153; | 2 |
+
+@right
+
+## [AA : Aa : aa = 1 : 3 : 2]{color=purple}
+
+A pollen contributes less
+
+Two routes produce Aa
+
+@notes
+
+Return explicitly to the guesses on the opening slide. We did not need a new probability
+rule: we needed the right gamete pool and the old rules in the right places. Ratios are
+expected proportions, not a guarantee that every six offspring fit the ratio exactly.
+
+=== layout: two-panels
+
+# Callback: two rules, two jobs
+
+@left
+
+## [AND: within a route]{color=purple}
+
+Ovule A AND pollen a
+
+&#x00BD; &times; &#x2154; = &#x2153;
+
+Condition: random union
+
+@right
+
+## [OR: between routes]{color=blue}
+
+Two exclusive routes to Aa
+
+&#x2153; + &#x2159; = &#x00BD;
+
+Condition: no overlap
+
+@notes
+
+Section takeaway: multiply within a route, add distinct routes, and state the conditions.
+What if learning one event happened changes the other probability? That leads to the
+general multiplication rule, using a conditional probability.
+
+=== layout: section
+
+# Conditional probability
+
+## What changes when we know more?
+
+@notes
+
+Shift from changing the successful gamete pool to changing the information available.
+Use the original Huntington inheritance example as a simplified classroom model.
+
+=== layout: two-panels
+
+# A family inheritance question
+
+@left
+
+## Huntington disease model
+
+H = dominant disease allele
+
+Affected father: Hh
+
+Mother: hh
+
+@right
+
+## Their young adult son
+
+Genotype unknown; no symptoms yet
+
+Child's other parent: hh
+
+Who could inherit H?
+
+@notes
+
+Adapt the third textbook screenshot without its exercise number. In this simplified
+late-onset model, an H carrier will eventually develop disease; absence of symptoms at
+this young age does not distinguish Hh from hh. Stipulate Hh for the affected father,
+hh for both unrelated parents, and no new mutation. These assumptions define the exercise.
+The next two questions preserve its original parts: the son's risk, then his child's.
+
+=== layout: stacked-panels
+
+# First: the son's probability?
+
+@top
+
+P(son inherits H) = ?
+
+No symptoms yet: useful evidence?
+
+@bottom
+
+| Mother's egg | Father's sperm: H | Father's sperm: h |
+| --- | --- | --- |
+| h | ? | ? |
+
+@notes
+
+Pause for an answer before filling the two possible outcomes. The hh mother contributes
+h to every child. Under our stated age assumption, lack of current symptoms does not
+change the inheritance probability. Avoid treating symptom absence as a genotype test.
+
+=== layout: stacked-panels
+
+# The son: two possible genotypes
+
+@top
+
+P(son inherits H) = [&#x00BD;]{color=purple}
+
+Same eventual disease risk, under our model
+
+@bottom
+
+| Mother's egg | Father's sperm: H | Father's sperm: h |
+| --- | --- | --- |
+| h: 1 | [Hh: &#x00BD;]{color=purple} | hh: &#x00BD; |
+
+@notes
+
+This answers the first part of the source question. Hh and hh are the only possibilities.
+Keep inheritance and eventual symptoms distinct concepts, even though our simplified
+model gives them the same probability. Now follow the allele for another generation.
+
+=== layout: two-panels
+
+# Next: his child's probability?
+
+@left
+
+## Son's genotype: unknown
+
+Hh with probability &#x00BD;
+
+hh with probability &#x00BD;
+
+Child's other parent: hh
+
+@right
+
+## Vote: P(child inherits H)?
+
+- A. 0
+- B. &#x00BC;
+- C. &#x00BD;
+- D. 1
+
+@notes
+
+Vote: B is correct. The child has a &#x00BD; transmission probability only IF the son has H.
+An hh son cannot transmit H in this model. Ask whether &#x00BD; applies on both branches.
+Distinguish not knowing the son's genotype from knowing he is Hh.
+
+=== layout: one-panel
+
+# Follow both possible routes
+
+@body
+
+| Son's genotype | Probability | P(child H given genotype) | Route probability |
+| --- | --- | --- | --- |
+| Hh | &#x00BD; | &#x00BD; | [&#x00BC;]{color=purple} |
+| hh | &#x00BD; | 0 | 0 |
+| Either | 1 |  | [Total: &#x00BC;]{color=purple} |
+
+@notes
+
+Define S as the son has H and C as his child has H. Multiply within each route:
+P(S and C) = (&#x00BD;)(&#x00BD;) = &#x00BC;. Add the mutually exclusive routes: P(C) = &#x00BC; + 0 = &#x00BC;.
+This answers the second part. P(C given S) is &#x00BD;, whereas P(C) is &#x00BC;.
+The table uses native editable text; there is no screenshot to decode.
+
+=== layout: one-panel
+
+# Rule card: general multiplication
+
+@body
+
+S = son has H; C = child has H
+
+[P(S and C) = P(S) &times; P(C given S)]{color=purple}
+
+P(C given S) = P(C | S)
+
+Conditional = restricted to a known event
+
+Independent? P(C given S) = P(C)
+
+@notes
+
+The vertical bar means "given," not OR or division. Here S is the son has H and C is
+the child has H. These events are dependent: knowing S changes C from &#x00BC; to &#x00BD;.
+The general rule works for independent events too, reducing to the earlier rule card.
+
+=== layout: two-panels
+
+# Can we reverse "given"?
+
+@left
+
+## Parent &rarr; child
+
+P(child H given son H) = &#x00BD;
+
+Known: the son has H
+
+@right
+
+## Vote: child &rarr; parent
+
+P(son H given child H) = ?
+
+- A. 0
+- B. &#x00BC;
+- C. &#x00BD;
+- D. 1
+
+@notes
+
+Vote: D is correct. Restate that the child's other parent is hh and we assume no new mutation.
+Where could the child's H have come from? This is a reversal of information, not a
+reversal of biological inheritance. Expected answer: 1, not &#x00BD;.
+
+=== layout: two-panels
+
+# The evidence identifies the route
+
+@left
+
+| Possible source of H | Fits the model? |
+| --- | --- |
+| The son | YES |
+| The other parent: hh | NO |
+| New mutation | Excluded |
+
+@right
+
+P(son H given child H) = [1]{color=purple}
+
+P(child H given son H) = &#x00BD;
+
+[Direction matters]{color=red}
+
+@notes
+
+Correct the reversed conditional in the old deck: with these assumptions, a child who
+has inherited H establishes that the son has H. This does not make the unconditional
+probability for the child 100%; that remains &#x00BC; before observing the child's genotype.
+
+=== layout: two-panels
+
+# Bayes: keep only the known group
+
+@left
+
+## We know: the child has H
+
+P(son H and child H) = &#x00BC;
+
+P(child H) = &#x00BC;
+
+P(son H given child H) = [1]{color=purple}
+
+@right
+
+## Divide by P(C)
+
+P(S | C) = P(S and C) / P(C)
+
+= [P(C | S) &times; P(S) / P(C)]{color=purple}
+
+Here: (&#x00BD; &times; &#x00BD;) / (&#x00BC;)
+
+@notes
+
+S means the son has H; C means the child has H. The denominator must be nonzero.
+All of the probability mass in the child-H group belongs to the son-H route, so the
+conditional fraction is 1. Name Bayes' rule after this reasoning. No extra formula image
+or memorization exercise is needed. The expanded denominator was already built in the route table.
+
+=== layout: two-panels
+
+# Independent is not mutually exclusive
+
+@left
+
+## One gamete: A&#x2081; / A&#x2082;
+
+Cannot carry both
+
+Mutually exclusive: YES
+
+Independent: NO
+
+Knowing A&#x2081; rules out A&#x2082;
+
+@right
+
+## One offspring: A&#x2081; / A&#x2083;
+
+Can inherit both
+
+Mutually exclusive: NO
+
+Independent: YES
+
+Knowing A&#x2081; leaves P(A&#x2083;) = &#x00BD;
+
+@notes
+
+Return to the four-allele cross and its random-fertilization assumption. Compare the
+same two questions: can both happen, and does knowing one change the other probability?
+For the gamete, P(A2) changes from &#x00BD; to zero after learning A1. For the offspring,
+P(A3) stays &#x00BD; after learning A1. Ask students to explain one side in their own words.
+
+=== layout: one-panel
+
+# Exit check: name the condition
+
+@body
+
+| Familiar problem | Which rule, and why? |
+| --- | --- |
+| A&#x2081; OR A&#x2083; in one offspring | ? |
+| Two gamete routes to Aa | ? |
+| Child H, given son H | ? |
+
+@notes
+
+Give 30 seconds to name a rule and its condition, not just a number. Ask students to
+choose one row to explain aloud or in chat. This checks transfer between our examples
+without introducing another story at the end of the lecture.
+
+=== layout: one-panel
+
+# The condition chooses the rule
+
+@body
+
+| Problem | Reasoning | Result |
+| --- | --- | --- |
+| A&#x2081; OR A&#x2083; | Add; subtract overlap | &#x00BE; |
+| Two routes to Aa | Multiply within; add between | &#x00BD; |
+| Child inherits H | Given an Hh parent | &#x00BD; |
+
+@notes
+
+For row two, we mean the unequal-pollen example: &#x2153; plus &#x2159;. For row three, compare
+the conditional &#x00BD; with the unconditional child probability of &#x00BC;. If students give
+only an operator, ask what makes that operator valid here.
+
+=== layout: one-panel
+
+# Summary: context before calculation
+
+@body
+
+- Define the event and the population
+- OR: add; subtract shared outcomes
+- AND: multiply; check independence
+- Given: restrict to the known group
+- Check totals against the biology
+
+@notes
+
+Close the loop: the opening pollen puzzle needed successful-pollen frequencies, multiplication
+within routes, and addition between routes. The four-allele trap exposed overlap; the family
+example exposed direction in conditional probabilities. Ask: which condition will you check
+before using each rule? Leave this summary visible as the deck ends.
