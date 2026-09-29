@@ -7,6 +7,15 @@
 
 ### Fixes and Maintenance
 
+- Deep-review Genetics Lecture 05H and improve 60 of its 87 slides. Restore missing pea, squash,
+  and Labrador squares; replace tiny summary images with native grouping tables; clarify pathway
+  blocks, F2 versus testcross weights, and the cat example's gene labels.
+- Preserve the staged questions and answers, shorten prose and resource links, correct the
+  normalized flower-count ratio, and replace an unsupported discovery-date claim with the model.
+
+- Render Lecture 05D allele indices as subscripts using numeric character references in
+  text labels, crosses, and Punnett tables, preserving the existing color emphasis.
+
 - Audit the remaining Lecture 05 sources for missing text colors. Restore band clues in B,
   probability-rule and worked-example colors in D/E/G, genotype labels and choices in F,
   and experiment/answer emphasis in H using supported readable palette colors.
@@ -31,6 +40,15 @@
 - Rotated older changelog day blocks into CHANGELOG-2026-09b.md, retaining the two newest dates.
 
 ### Developer Tests and Notes
+
+- Lecture 05H passes strict native validation and has no capacity warnings. All 87 source and
+  generated pages received contact-sheet review, with larger checks of restored teaching objects.
+  Independently verified ten Punnett squares, three phenotype totals, eight paired F2/testcross
+  groupings, and both nine-pattern overview tables. Rebuilt the 87-page ODP/PDF and recorded
+  per-slide advisory scores and remaining compact textbook labels in LECT05H_REVIEW.md.
+
+- Lecture 05D subscript correction passes strict native validation (31 slides); rebuilt ODP/PDF
+  and visually verified colored allele labels and Punnett-table genotypes.
 
 - Remaining Lecture 05 color audit passes strict native validation across all eight decks /
   325 slides. Rebuilt eight ODP/PDF pairs and reviewed all 35 changed pages; capacity inspection

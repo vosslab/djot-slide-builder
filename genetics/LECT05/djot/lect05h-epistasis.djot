@@ -53,34 +53,49 @@
 - F2: 705 purple; 224 white
 - Approximate 3:1 ratio (3.15:1)
 
-=== layout: one-panel
-# Bateson and Punnett
-@body
-
-- In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was true-breeding for [white flower]{color=gray}
-
 === layout: two-panels
+
+# Bateson and Punnett: white x white
+
 @left
 
-![Slide image 4](assets/lect05h-epistasis/image_004.png)
+![Two white-flowered parental lines](assets/lect05h-epistasis/image_004.png)
+
 @right
 
-- White
-- flowers
-- White
-- flowers
-- P Generation
-- (true-breeding
-- parents)
-- [Experiment]{color=orange}
-- [Bateson & Punnett 1909]{color=blue}
+- [Bateson and Punnett, 1909]{color=blue}
+- Two true-breeding parental lines
+- Both have [white flowers]{color=gray}
+- Cross the two lines: predict the F1
 
-=== layout: one-panel
-# Bateson and Punnett
-@body
+=== layout: two-panels
 
-- In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was pure-breeding for [white flower]{color=gray}
-- This cross yielded an F1 generation in which all progeny had [purple flowers]{color=purple}.
+# Two white-flowered parents
+
+@left
+
+![Two true-breeding white-flowered parents](assets/lect05h-epistasis/image_004.png)
+
+@right
+
+- [Bateson and Punnett, 1909]{color=blue}
+- P: white flowers x white flowers
+- Both parents true-breeding
+- Predict the F1 flower color
+
+=== layout: two-panels
+
+# The F1 restores purple flower color
+
+@left
+
+![White parents producing purple-flowered F1 hybrids](assets/lect05h-epistasis/image_005.png)
+
+@right
+
+- Parents: [white x white]{color=gray}
+- F1: [all purple flowers]{color=purple}
+- Each parent supplies something the other lacks
 
 === layout: two-panels
 @left
@@ -95,26 +110,38 @@
 - Wait! What?
 
 === layout: two-panels
+
+# Why does a one-locus model fail?
+
 @left
 
-![Slide image 5](assets/lect05h-epistasis/image_005.png)
+![Two white-flowered parents producing purple F1 flowers](assets/lect05h-epistasis/image_005.png)
+
 @right
 
-- [Experiment:]{color=orange} [Bateson and Punnett, 1909]{color=blue}
+## Predictions with purple dominant
+
+| Parental cross | Expected F1 |
+| --- | --- |
+| rr x rr | All rr: white |
+| RR x rr | All Rr: purple; one parent purple |
+| Observed white x white | [All purple: a second locus is needed]{color=purple} |
+
+=== layout: two-panels
+
+# The F2 reveals a 9:7 ratio
+
+@left
+
+![White parents, purple F1, and purple and white F2 offspring](assets/lect05h-epistasis/image_006.png)
+
+@right
+
 - P: true-breeding white x white
-- F1: all purple flowers
-- Self- or cross-pollination of F1
-- Compare expected Punnett square with result
-
-=== layout: one-panel
-# Bateson and Punnett
-@body
-
-- In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was pure-breeding for [white flower]{color=gray}
-- This cross yielded an F1 generation in which all progeny had [purple flowers]{color=purple}.
-  - Next, two F1 plants were crossed to create the F2 generation.
-- In this generation, Bateson and Punnett counted a total of 382 [purple-flowered]{color=purple} plants and 269 [white-flowered]{color=gray} plants.
-  - The ratio of [purple flowers]{color=purple} to [white flowers]{color=gray} was thus 9.4\:6.6, or approximately 9\:7.
+- F1: all purple; cross F1 plants
+- F2: [382 purple]{color=purple}; [269 white]{color=gray}
+- Normalized to 16: 9.4:6.6
+- Approximately [9 purple : 7 white]{color=purple}
 
 === layout: two-panels
 @left
@@ -127,203 +154,245 @@
 - F1: all purple flowers
 - Self- or cross-pollination of F1
 - F2: 382 purple; 269 white
-- Approximate 9:7 ratio (9.2:6.5)
-
-=== layout: one-panel
-# Bateson and Punnett
-@body
-
-- In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was pure-breeding for [white flower]{color=gray}
-  - For the F1 generation, all progeny had [purple flowers]{color=purple}.
-  - For the F2 generation, they found a ratio of [purple flowers]{color=purple} to [white flowers]{color=gray} of approximately 9\:7.
-- Bateson proposed an ability of an "allelomorphic pair" (pair of gene alleles) to mask the affects of the alleles for another gene.
-  - It seemed that two recessive alleles at one flower locus could mask the effects of the alleles at the other flower locus.
-
-=== layout: one-panel
-# Bateson and Punnett
-@body
-
-- Let's designate the first locus as the C locus, and the second as the P locus.
-  - If Bateson's theory held true, it meant that any flower with the cc genotype would be white, no matter what alleles were present at its P locus.
-  - Similarly, any flower with the pp genotype would also be white, no matter what alleles were present at its C locus.
-- Bateson later used the word "epistasis," which translates as "standing upon," to define the masking action of one gene by another.
+- Approximate 9:7 ratio (9.4:6.6)
 
 === layout: one-panel
 
-# Bateson and Punnett: biochemical explanation
+# One locus can mask another
 
 @body
 
-- Genes identified much later: Dooner et al., 1991
-- Two-step anthocyanin synthesis produces purple pigment
-- Gene C: first reaction; gene P: second reaction
-- Dominant C and P: functional steps
-- Recessive c and p: nonfunctional steps
-- cc or pp blocks pigment synthesis: white flowers
+- Bateson and Punnett: white parents &rarr; purple F1
+- F2: [9 purple : 7 white]{color=purple}
+- A recessive homozygote at either locus masks the other locus
+- Both gene products are required
+- This is [gene-gene interaction]{color=red}
 
 === layout: one-panel
-# What are the Phenotypes?
+
+# Use C and P for the two loci
+
 @body
 
-- The dominant C and P alleles code for functional steps in anthocyanin production, whereas the recessive c and p alleles code for nonfunctional steps.
-  - Thus, if two recessive alleles occur for either gene, white flowers will result.
+- C and P: functional alleles
+- c and p: nonfunctional alleles
+- cc: white, regardless of the P genotype
+- pp: white, regardless of the C genotype
+- [Epistasis]{color=red}: masking between loci
+- The word means "standing upon"
 
 === layout: one-panel
-# What are the Phenotypes?
+
+# Two-step anthocyanin model
+
 @body
 
-- The dominant C and P alleles code for functional steps in anthocyanin production, whereas the recessive c and p alleles code for nonfunctional steps.
-  - Thus, if two recessive alleles occur for either gene, white flowers will result.
+- C: precursor &rarr; intermediate
+- P: intermediate &rarr; [purple anthocyanin]{color=purple}
+- Both steps required for purple flowers
+- cc or pp blocks pigment production
+- Anthocyanin biochemistry: Dooner et al., 1991
 
 === layout: one-panel
-# What are the Phenotypes?
+
+# CcPp x CcPp: predict phenotypes
+
 @body
 
-- The dominant C and P alleles code for functional steps in anthocyanin production, whereas the recessive c and p alleles code for nonfunctional steps.
-  - Thus, if two recessive alleles occur for either gene, white flowers will result.
-- 9\:7 ratio
+## Predict the flower color for each genotype. Both steps must work.
+
+| Egg / pollen | CP | Cp | cP | cp |
+| --- | --- | --- | --- | --- |
+| CP | CCPP | CCPp | CcPP | CcPp |
+| Cp | CCPp | CCpp | CcPp | Ccpp |
+| cP | CcPP | CcPp | ccPP | ccPp |
+| cp | CcPp | Ccpp | ccPp | ccpp |
+
+=== layout: one-panel
+
+# CcPp x CcPp: find blocked steps
+
+@body
+
+## Purple: both steps work. Gray: cc blocks C. Red: pp blocks P.
+
+| Egg / pollen | CP | Cp | cP | cp |
+| --- | --- | --- | --- | --- |
+| CP | [CCPP]{color=purple} | [CCPp]{color=purple} | [CcPP]{color=purple} | [CcPp]{color=purple} |
+| Cp | [CCPp]{color=purple} | [CCpp]{color=red} | [CcPp]{color=purple} | [Ccpp]{color=red} |
+| cP | [CcPP]{color=purple} | [CcPp]{color=purple} | [ccPP]{color=gray} | [ccPp]{color=gray} |
+| cp | [CcPp]{color=purple} | [Ccpp]{color=red} | [ccPp]{color=gray} | [ccpp]{color=gray} |
+
+=== layout: one-panel
+
+# CcPp x CcPp: 9 purple : 7 white
+
+@body
+
+## Nine [purple]{color=purple} : seven [white]{color=gray}; genotype segregation is unchanged.
+
+| Egg / pollen | CP | Cp | cP | cp |
+| --- | --- | --- | --- | --- |
+| CP | [CCPP]{color=purple} | [CCPp]{color=purple} | [CcPP]{color=purple} | [CcPp]{color=purple} |
+| Cp | [CCPp]{color=purple} | [CCpp]{color=gray} | [CcPp]{color=purple} | [Ccpp]{color=gray} |
+| cP | [CcPP]{color=purple} | [CcPp]{color=purple} | [ccPP]{color=gray} | [ccPp]{color=gray} |
+| cp | [CcPp]{color=purple} | [Ccpp]{color=gray} | [ccPp]{color=gray} | [ccpp]{color=gray} |
 
 === layout: section
-# Underlying Gene Mechanism (discovered 82 years later)
 
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
+# Underlying gene mechanism
 
-- Gene C
-- Functional C\_: first pigment step
-- Precursor -> intermediate
-@right
-
-- Next: the second pigment step
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C
-- Functional C\_: first pigment step
-- Precursor -> intermediate
-@right
-
-- Gene P
-- Functional P\_: second pigment step
-- Intermediate -> purple pigment
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C
-- Functional C\_: first pigment step
-- Precursor -> intermediate
-@right
-
-- Gene P
-- Functional P\_: second pigment step
-- Intermediate -> purple pigment
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C: cc
-- Recessive homozygote
-- First pigment step blocked
-@right
-
-- Gene P
-- Functional P\_: second pigment step
-- Intermediate -> purple pigment
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C: cc
-- Recessive homozygote
-- First pigment step blocked
-@right
-
-- Gene P
-- Functional P\_: second pigment step
-- Intermediate -> purple pigment
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C: cc
-- Recessive homozygote
-- First pigment step blocked
-@right
-
-- Gene P
-- Functional P\_: second pigment step
-- Intermediate -> purple pigment
-- White flowers: no purple pigment
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C
-- Functional C\_: first pigment step
-- Precursor -> intermediate
-@right
-
-- Gene P: pp
-- Recessive homozygote
-- Second pigment step blocked
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C
-- Functional C\_: first pigment step
-- Precursor -> intermediate
-@right
-
-- Gene P: pp
-- Recessive homozygote
-- Second pigment step blocked
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C
-- Functional C\_: first pigment step
-- Precursor -> intermediate
-@right
-
-- Gene P: pp
-- Recessive homozygote
-- Second pigment step blocked
-- White flowers: no purple pigment
-
-=== layout: two-panels
-# Two genes that produce plant pigment
-@left
-
-- Gene C: cc
-- Recessive homozygote
-- First pigment step blocked
-@right
-
-- Gene P: pp
-- Recessive homozygote
-- Second pigment step blocked
-- White flowers: no purple pigment
+## A two-step model for pigment production
 
 === layout: one-panel
-# What are the Phenotypes?
+
+# Pigment pathway: two steps
+
 @body
 
-- The dominant C and P alleles code for functional steps in anthocyanin production, whereas the recessive c and p alleles code for nonfunctional steps.
-  - Thus, if two recessive alleles occur for either gene, white flowers will result.
-- 9\:7 ratio
+## Precursor &rarr; intermediate
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| C\_ | [Functional]{color=green} | First reaction |
+
+=== layout: one-panel
+
+# Pigment pathway: two steps
+
+@body
+
+## Precursor &rarr; intermediate &rarr; final product
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| C\_ | [Functional]{color=green} | First reaction |
+| P\_ | [Functional]{color=green} | Second reaction |
+
+=== layout: one-panel
+
+# Pigment pathway: two steps
+
+@body
+
+## Precursor &rarr; intermediate &rarr; [purple pigment]{color=purple}
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| C\_ | [Functional]{color=green} | Intermediate made |
+| P\_ | [Functional]{color=green} | Purple pigment made |
+| Result | Pigment made | Purple flowers |
+
+=== layout: one-panel
+
+# Pigment pathway: locate the recessive block
+
+@body
+
+## cc: predict the effect on the first reaction
+
+| Genotype | Reaction | Prediction |
+| --- | --- | --- |
+| cc | [Recessive homozygote]{color=red} | Does C work? |
+| P\_ | [Functional]{color=green} | Can P receive its substrate? |
+
+=== layout: one-panel
+
+# Pigment pathway: C step blocked
+
+@body
+
+## Precursor [&nrightarrow;]{color=red} intermediate &rarr; pigment
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| cc | [BLOCKED]{color=red} | No intermediate |
+| P\_ | [Functional]{color=green} | No substrate supplied |
+| Predict | Flower color? | Explain which step fails |
+
+=== layout: one-panel
+
+# Pigment pathway: C step blocked
+
+@body
+
+## Precursor [&nrightarrow;]{color=red} intermediate &rarr; pigment
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| cc | [BLOCKED]{color=red} | No intermediate |
+| P\_ | [Functional]{color=green} | No substrate supplied |
+| Result | No pigment | White flowers |
+
+=== layout: one-panel
+
+# Pigment pathway: locate the recessive block
+
+@body
+
+## pp: predict the effect on the second reaction
+
+| Genotype | Reaction | Prediction |
+| --- | --- | --- |
+| C\_ | [Functional]{color=green} | Intermediate made |
+| pp | [Recessive homozygote]{color=red} | Can pigment be made? |
+
+=== layout: one-panel
+
+# Pigment pathway: P step blocked
+
+@body
+
+## Precursor &rarr; intermediate [&nrightarrow;]{color=red} pigment
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| C\_ | [Functional]{color=green} | Intermediate made |
+| pp | [BLOCKED]{color=red} | No pigment |
+| Predict | Flower color? | Explain which step fails |
+
+=== layout: one-panel
+
+# Pigment pathway: P step blocked
+
+@body
+
+## Precursor &rarr; intermediate [&nrightarrow;]{color=red} pigment
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| C\_ | [Functional]{color=green} | Intermediate made |
+| pp | [BLOCKED]{color=red} | No pigment |
+| Result | No pigment | White flowers |
+
+=== layout: one-panel
+
+# Pigment pathway: both steps blocked
+
+@body
+
+## Precursor [&nrightarrow;]{color=red} intermediate [&nrightarrow;]{color=red} pigment
+
+| Genotype | Reaction | Consequence |
+| --- | --- | --- |
+| cc | [BLOCKED]{color=red} | No intermediate |
+| pp | [BLOCKED]{color=red} | No pigment |
+| Result | No pigment | White flowers |
+
+=== layout: one-panel
+
+# Both genes are required for purple flowers
+
+@body
+
+## 9 purple : (3 + 3 + 1) white = [9:7]{color=purple}
+
+| F2 genotype class | Count / 16 | Flower color |
+| --- | --- | --- |
+| C\_P\_ | 9 | [Purple]{color=purple} |
+| C\_pp | 3 | [White: P step blocked]{color=gray} |
+| ccP\_ | 3 | [White: C step blocked]{color=gray} |
+| ccpp | 1 | [White: both blocked]{color=gray} |
 
 === layout: two-panels
 # Unexpected Dihybrid Cross
@@ -338,12 +407,29 @@
 === layout: section
 # Genotypes Explained
 
-=== layout: one-panel
-@body
+=== layout: two-panels
 
-- Mendel only looked at one gene, because other gene was homozygous dominant
-- 3\:1 ratio
-- 9\:7 ratio
+# One segregating locus versus two
+
+@left
+
+## One locus: Mendel model
+
+- Hold P fixed as PP
+- CCPP x ccPP &rarr; CcPP
+- Self CcPP
+- 3 C\_PP : 1 ccPP
+- [3 purple : 1 white]{color=purple}
+
+@right
+
+## Two loci: complementary genes
+
+- CCpp x ccPP &rarr; CcPp
+- Both white parents supply a missing step
+- Self CcPp
+- 9 C\_P\_ : 7 with cc or pp
+- [9 purple : 7 white]{color=purple}
 
 === layout: section
 # General Epistasis
@@ -372,20 +458,25 @@
 
 ![Slide image 11](assets/lect05h-epistasis/image_011.png)
 
-=== layout: one-plus-two-panels
-# Epistasis
+=== layout: two-panels
+
+# Epistasis: a blocked step masks another gene
+
 @left
 
-- Epistasis is the suppression of the effect of one gene by another gene
-- break down of a metabolic pathway
+## Upstream step blocked
 
-@top-right
+![No starting material supplied to the color and drawing steps](assets/lect05h-epistasis/image_010.png)
 
-![Slide image 11](assets/lect05h-epistasis/image_010.png)
+No starting material: the color allele cannot affect the output.
 
-@bottom-right
+@right
 
-![Slide image 11](assets/lect05h-epistasis/image_011.png)
+## Downstream step blocked
+
+![Color made but the final drawing step fails](assets/lect05h-epistasis/image_011.png)
+
+Color is made, but the final step cannot display it.
 
 === layout: section
 # The Color of Summer Squash (Dominant Epistasis)
@@ -397,51 +488,78 @@
 ![Slide image 12](assets/lect05h-epistasis/image_012.png)
 
 === layout: one-panel
-# Squash dihybrid cross: before epistasis
+
+# WwYy x WwYy: four genotype classes
+
 @body
 
-| Genotype class | F2 count / 16 | Phenotype |
-| --- | --- | --- |
-| W\_Y\_ | 9 | Dominant W; dominant Y |
-| W\_yy | 3 | Dominant W; recessive y |
-| wwY\_ | 3 | Recessive w; dominant Y |
-| wwyy | 1 | Recessive for both |
+## Four genotype classes: 9 W\_Y\_ : 3 W\_yy : 3 wwY\_ : 1 wwyy
 
-=== layout: two-panels
-# Squash Epistasis
-@left
+| Egg / pollen | WY | Wy | wY | wy |
+| --- | --- | --- | --- | --- |
+| WY | [WWYY]{color=blue} | [WWYy]{color=blue} | [WwYY]{color=blue} | [WwYy]{color=blue} |
+| Wy | [WWYy]{color=blue} | [WWyy]{color=red} | [WwYy]{color=blue} | [Wwyy]{color=red} |
+| wY | [WwYY]{color=blue} | [WwYy]{color=blue} | [wwYY]{color=orange} | [wwYy]{color=orange} |
+| wy | [WwYy]{color=blue} | [Wwyy]{color=red} | [wwYy]{color=orange} | [wwyy]{color=purple} |
 
-- Which genotypes are [white]{color=gray}, [green]{color=green}, and [yellow]{color=orange}?
-- What is the phenotypic ratio?
-- Figure it out with your neighbors...
-@right
+=== layout: two-over-one-panels
 
-- 1. Plants with genotype ww produce enzyme-1, which converts [white]{color=gray} into [green]{color=green}
-  - Dominant allele W inhibits conversion to [green]{color=green}
-- 2. Plants with genotype Y- produce enzyme-2, which converts [green]{color=green} into [yellow]{color=orange}
-  - genotype yy do not encode a functional enzyme-2
+# Squash: assign the phenotypes
+
+@top-left
+
+## First reaction
+
+- ww: first enzyme works
+- W\_: first reaction inhibited
+- Blocked first reaction: white
+
+@top-right
+
+## Second reaction
+
+- Y\_: green &rarr; yellow
+- yy: second reaction blocked
+- Work it out with your neighbors
+
+@bottom
+
+| Egg / pollen | WY | Wy | wY | wy |
+| --- | --- | --- | --- | --- |
+| WY | WWYY | WWYy | WwYY | WwYy |
+| Wy | WWYy | WWyy | WwYy | Wwyy |
+| wY | WwYY | WwYy | wwYY | wwYy |
+| wy | WwYy | Wwyy | wwYy | wwyy |
 
 === layout: one-panel
-# Squash dihybrid cross: before epistasis
+
+# WwYy x WwYy: four genotype classes
+
 @body
 
-| Genotype class | F2 count / 16 | Phenotype |
-| --- | --- | --- |
-| W\_Y\_ | 9 | Dominant W; dominant Y |
-| W\_yy | 3 | Dominant W; recessive y |
-| wwY\_ | 3 | Recessive w; dominant Y |
-| wwyy | 1 | Recessive for both |
+## Four genotype classes: 9 W\_Y\_ : 3 W\_yy : 3 wwY\_ : 1 wwyy
+
+| Egg / pollen | WY | Wy | wY | wy |
+| --- | --- | --- | --- | --- |
+| WY | [WWYY]{color=blue} | [WWYy]{color=blue} | [WwYY]{color=blue} | [WwYy]{color=blue} |
+| Wy | [WWYy]{color=blue} | [WWyy]{color=red} | [WwYy]{color=blue} | [Wwyy]{color=red} |
+| wY | [WwYY]{color=blue} | [WwYy]{color=blue} | [wwYY]{color=orange} | [wwYy]{color=orange} |
+| wy | [WwYy]{color=blue} | [Wwyy]{color=red} | [wwYy]{color=orange} | [wwyy]{color=purple} |
 
 === layout: one-panel
-# Squash: dominant epistasis
+
+# WwYy x WwYy: group the squash phenotypes
+
 @body
 
-| Genotype class | F2 count / 16 | Phenotype |
-| --- | --- | --- |
-| W\_Y\_ | 9 | white |
-| W\_yy | 3 | white |
-| wwY\_ | 3 | yellow |
-| wwyy | 1 | green |
+## [12 white]{color=gray} : [3 yellow]{color=orange} : [1 green]{color=green}; W\_ masks the Y locus
+
+| Egg / pollen | WY | Wy | wY | wy |
+| --- | --- | --- | --- | --- |
+| WY | [WWYY]{color=gray} | [WWYy]{color=gray} | [WwYY]{color=gray} | [WwYy]{color=gray} |
+| Wy | [WWYy]{color=gray} | [WWyy]{color=gray} | [WwYy]{color=gray} | [Wwyy]{color=gray} |
+| wY | [WwYY]{color=gray} | [WwYy]{color=gray} | [wwYY]{color=orange} | [wwYy]{color=orange} |
+| wy | [WwYy]{color=gray} | [Wwyy]{color=gray} | [wwYy]{color=orange} | [wwyy]{color=green} |
 
 === layout: one-panel
 @body
@@ -451,88 +569,125 @@
 === layout: section
 # Epistasis produces a modified F2 phenotype ratio
 
-=== layout: two-panels
-# Modified F2 dihybrid ratios
-@left
+=== layout: one-panel
 
-![Slide image 14](assets/lect05h-epistasis/image_014.jpg)
-@right
+# Same color = same phenotype
 
-- In each row, different colors indicate different phenotypes.
+@body
+
+| A\_B\_ | A\_bb | aaB\_ | aabb | F2 ratio |
+| --- | --- | --- | --- | --- |
+| [9]{color=blue} | [3]{color=blue} | [3]{color=green} | [1]{color=orange} | 12:3:1 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=green} | [1]{color=blue} | 10:3:3 |
+| [9]{color=blue} | [3]{color=green} | [3]{color=green} | [1]{color=orange} | 9:6:1 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=green} | [1]{color=red} | 9:4:3 |
+| [9]{color=blue} | [3]{color=blue} | [3]{color=blue} | [1]{color=orange} | 15:1 |
+| [9]{color=blue} | [3]{color=green} | [3]{color=blue} | [1]{color=blue} | 13:3 |
+| [9]{color=blue} | [3]{color=blue} | [3]{color=green} | [1]{color=green} | 12:4 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=red} | [1]{color=blue} | 10:6 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=red} | [1]{color=red} | 9:7 |
 
 === layout: section
 # Coat Color of Labrador Retrievers (Recessive Epistasis)
 
 === layout: two-panels
-# Recessive Epistasis
+
+# Labrador coat: ee masks the B locus
+
 @left
 
-![Slide image 15](assets/lect05h-epistasis/image_015.png)
+![Black, brown, and yellow Labrador retrievers](assets/lect05h-epistasis/image_015.png)
+
+- B\_: black pigment; bb: brown pigment
+- E\_: pigment deposited in hair
+- ee: yellow, regardless of the B genotype
+
 @right
 
-- Labrador coat: two genes
-- B\_: black; bb: brown
-- E\_: pigment expressed; ee: yellow
-- ee masks the B-gene phenotype
-- Yellow genotype?
-- A. BbEe; B. Bbee
-- C. bbEe; D. bbee
+## Which genotypes give yellow?
+
+- A. BbEe
+- B. Bbee
+- C. bbEe
+- D. bbee
 - [Answer: B and D]{color=red}
 
 === layout: one-panel
 
-# Recessive Epistasis
+# BbEe x BbEe: find the ee offspring
 
 @body
 
-- Labrador coat: two genes
-- B\_: black; bb: brown
-- E\_: pigment expressed; ee: yellow
-- ee masks the B-gene phenotype
-- Adjust the usual 9:3:3:1 ratio
-
-=== layout: one-panel
-
-# Recessive Epistasis
-
-@body
-
-- Labrador coat: two genes
-- B\_: black; bb: [brown]{color=orange}
-- E\_: pigment expressed; ee: yellow
-- ee masks the B-gene phenotype
-- Merge both ee classes: 9:3:4
-
-=== layout: two-panels
-# Recessive epistasis: BbEe x BbEe
-@left
-
-- Gametes: BE, Be, bE, be
-- Each gamete: probability 1/4
-- B\_E\_: black (9/16)
-- bbE\_: brown (3/16)
-- \_\_ee: yellow (4/16)
-- Phenotypic ratio: 9 : 3 : 4
-@right
+## ee masks B: mark every ee genotype before assigning coat colors.
 
 | Egg / sperm | BE | Be | bE | be |
 | --- | --- | --- | --- | --- |
 | BE | BBEE | BBEe | BbEE | BbEe |
-| Be | BBEe | BBee | BbEe | Bbee |
+| Be | BBEe | [BBee]{color=red} | BbEe | [Bbee]{color=red} |
 | bE | BbEE | BbEe | bbEE | bbEe |
-| be | BbEe | Bbee | bbEe | bbee |
+| be | BbEe | [Bbee]{color=red} | bbEe | [bbee]{color=red} |
 
 === layout: one-panel
-# Modified F2 dihybrid ratios
+
+# BbEe x BbEe: 9 black : 3 brown : 4 yellow
+
 @body
 
-![Slide image 17](assets/lect05h-epistasis/image_017.png)
+## [Black: B\_E\_ (9)]{color=blue}; [brown: bbE\_ (3)]{color=purple}; [yellow: \_\_ee (4)]{color=gray}.
+
+| Egg / sperm | BE | Be | bE | be |
+| --- | --- | --- | --- | --- |
+| BE | [BBEE]{color=blue} | [BBEe]{color=blue} | [BbEE]{color=blue} | [BbEe]{color=blue} |
+| Be | [BBEe]{color=blue} | [BBee]{color=gray} | [BbEe]{color=blue} | [Bbee]{color=gray} |
+| bE | [BbEE]{color=blue} | [BbEe]{color=blue} | [bbEE]{color=purple} | [bbEe]{color=purple} |
+| be | [BbEe]{color=blue} | [Bbee]{color=gray} | [bbEe]{color=purple} | [bbee]{color=gray} |
 
 === layout: one-panel
-# Modified F2 dihybrid ratios
+
+# BbEe x BbEe: 9 black : 3 brown : 4 yellow
+
 @body
 
-![Slide image 18](assets/lect05h-epistasis/image_018.png)
+## [Black: B\_E\_ (9)]{color=blue}; [brown: bbE\_ (3)]{color=purple}; [yellow: \_\_ee (4)]{color=gray}. Each gamete has probability 1/4.
+
+| Egg / sperm | BE | Be | bE | be |
+| --- | --- | --- | --- | --- |
+| BE | [BBEE]{color=blue} | [BBEe]{color=blue} | [BbEE]{color=blue} | [BbEe]{color=blue} |
+| Be | [BBEe]{color=blue} | [BBee]{color=gray} | [BbEe]{color=blue} | [Bbee]{color=gray} |
+| bE | [BbEE]{color=blue} | [BbEe]{color=blue} | [bbEE]{color=purple} | [bbEe]{color=purple} |
+| be | [BbEe]{color=blue} | [Bbee]{color=gray} | [bbEe]{color=purple} | [bbee]{color=gray} |
+
+=== layout: one-panel
+
+# Common gene-interaction ratios
+
+@body
+
+| Interaction | F2 ratio | Example or model |
+| --- | --- | --- |
+| No epistasis | 9:3:3:1 | Pea seed shape/color |
+| Recessive epistasis | 9:3:4 | Labrador coat color |
+| Dominant epistasis | 12:3:1 | Summer squash |
+| Duplicate recessive | 9:7 | Two required steps |
+| Duplicate interaction | 9:6:1 | Two single-dominant classes merge |
+| Duplicate dominant | 15:1 | Either dominant allele suffices |
+| Dominant/recessive | 13:3 | Dominant suppression |
+
+=== layout: one-panel
+
+# Combine F2 classes with the same phenotype
+
+@body
+
+| Interaction | Group the 9, 3, 3, 1 classes | F2 ratio |
+| --- | --- | --- |
+| None | 9 : 3 : 3 : 1 | [9:3:3:1]{color=purple} |
+| Recessive | 9 : 3 : (3+1) | [9:3:4]{color=purple} |
+| Dominant | (9+3) : 3 : 1 | [12:3:1]{color=purple} |
+| Duplicate recessive | 9 : (3+3+1) | [9:7]{color=purple} |
+| Duplicate interaction | 9 : (3+3) : 1 | [9:6:1]{color=purple} |
+| Duplicate dominant | (9+3+3) : 1 | [15:1]{color=purple} |
+| Dominant/recessive | (9+3+1) : 3 | [13:3]{color=purple} |
 
 === layout: two-panels
 @left
@@ -549,47 +704,76 @@
 - e. aabb
 
 === layout: one-panel
-# Modified F2 dihybrid ratios
-@body
 
-![Slide image 20](assets/lect05h-epistasis/image_020.png)
-
-=== layout: one-panel
-@body
-
-- A number of all-white cats are crossed and they produce the following types of progeny\:
-  - 12/16 all-white
-  - [3/16 black]{color=red}
-  - 1/16 gray
-- What is the genotype of the [black]{color=red} progeny?
-  - a. Aa
-  - b. Aa Bb
-  - c. A\_ B\_
-  - d. A\_ bb
-  - e. aa bb
-
-=== layout: one-panel
-# Modified F2 dihybrid ratios
-@body
-
-![Slide image 20](assets/lect05h-epistasis/image_020.png)
-
-=== layout: one-panel
-
-# White-cat cross
+# White-cat cross: group the 9:3:3:1 classes
 
 @body
 
-- White parents: offspring 12/16 white; 3/16 black; 1/16 gray
-- What is the genotype of black progeny?
+## Observed: 12 white : 3 black : 1 gray. Which classes merge?
+
+| Genotype class | F2 count / 16 | Phenotype |
+| --- | --- | --- |
+| A\_B\_ | 9 | ? |
+| A\_bb | 3 | ? |
+| aaB\_ | 3 | ? |
+| aabb | 1 | ? |
+
+=== layout: two-panels
+
+# White-cat cross: choose the black genotype
+
+@left
+
+| Offspring phenotype | Count / 16 |
+| --- | --- |
+| White | 12 |
+| [Black]{color=red} | 3 |
+| Gray | 1 |
+
+@right
+
+## Which genotype gives black?
+
 - a. Aa
 - b. AaBb
 - c. A\_B\_
 - d. A\_bb
 - e. aabb
-- One gene homozygous recessive; other has a dominant allele
-- Gene labels interchangeable
-- [Answer: d]{color=red}
+
+=== layout: one-panel
+
+# White-cat cross: locate the black class
+
+@body
+
+## [A\_bb produces the three black offspring]{color=red}
+
+| Genotype class | F2 count / 16 | Phenotype |
+| --- | --- | --- |
+| A\_B\_ | 9 | [White]{color=gray} |
+| A\_bb | 3 | [Black]{color=red} |
+| aaB\_ | 3 | [White]{color=gray} |
+| aabb | 1 | [Gray]{color=gray} |
+
+=== layout: two-panels
+
+# White-cat cross: why answer d works
+
+@left
+
+| Offspring phenotype | Count / 16 |
+| --- | --- |
+| White | 12 |
+| [Black]{color=red} | 3 |
+| Gray | 1 |
+
+@right
+
+- Black: one locus recessive; the other has a dominant allele
+- Under this labeling: [A\_bb]{color=red}
+- [Answer d]{color=red}
+- Gene names can be exchanged
+- The ratio alone does not identify the biological locus
 
 === layout: section
 # Test Cross
@@ -624,15 +808,26 @@
 ![Slide image 21](assets/lect05h-epistasis/image_021.png)
 
 === layout: two-panels
+
+# Predict the testcross phenotype ratio
+
 @left
 
-![Slide image 21](assets/lect05h-epistasis/image_021.png)
+## Given: F2 phenotypes are 9:7
 
-![Slide image 21](assets/lect05h-epistasis/image_020.png)
+| Genotype class | F2 count / 16 |
+| --- | --- |
+| [A\_B\_]{color=purple} | 9 |
+| [A\_bb]{color=gray} | 3 |
+| [aaB\_]{color=gray} | 3 |
+| [aabb]{color=gray} | 1 |
+
 @right
 
-- In 9\:7 epistasis, the A\_ bb, aa B\_ and aa bb genotypes all have the same phenotype.
-- [What are the genotype ratios in a test-cross?]{color=red}
+- A\_bb, aaB\_, aabb have the same phenotype
+- Testcross: AaBb x aabb
+- Four offspring genotypes, each equally likely
+- [What is the phenotype ratio?]{color=red}
 
 === layout: two-panels
 # Test Crosses
@@ -650,291 +845,386 @@
 ![Slide image 22](assets/lect05h-epistasis/image_022.png)
 
 === layout: two-panels
-# Epistasis: F2 and testcross
+
+# No epistasis: F2 and testcross
+
 @left
 
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 3 |
-| aabb | 1 | 4 |
+## F2 phenotypes: [9:3:3:1]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [A\_B\_]{color=blue} | 9 |
+| [A\_bb]{color=red} | 3 |
+| [aaB\_]{color=orange} | 3 |
+| [aabb]{color=purple} | 1 |
+
 @right
 
-- F2 phenotype ratio: 9:3:3:1
+## Testcross phenotypes: [1:1:1:1]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [AaBb]{color=blue} | 1 |
+| [Aabb]{color=red} | 1 |
+| [aaBb]{color=orange} | 1 |
+| [aabb]{color=purple} | 1 |
+
+=== layout: two-panels
+
+# Predict the testcross phenotype ratio
+
+@left
+
+## Given: F2 phenotypes are 9:7
+
+| Genotype class | F2 count / 16 |
+| --- | --- |
+| [A\_B\_]{color=purple} | 9 |
+| [A\_bb]{color=gray} | 3 |
+| [aaB\_]{color=gray} | 3 |
+| [aabb]{color=gray} | 1 |
+
+@right
+
+- A\_bb, aaB\_, aabb have the same phenotype
+- Testcross: AaBb x aabb
+- Four offspring genotypes, each equally likely
+- [What is the phenotype ratio?]{color=red}
+
+=== layout: two-panels
+
+# Complementary genes: F2 and testcross
+
+@left
+
+## F2 phenotypes: [9:7]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [C\_P\_]{color=purple} | 9 |
+| [C\_pp]{color=gray} | 3 |
+| [ccP\_]{color=gray} | 3 |
+| [ccpp]{color=gray} | 1 |
+
+@right
+
+## Testcross phenotypes: [?]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [CcPp]{color=purple} | 1 |
+| [Ccpp]{color=gray} | 1 |
+| [ccPp]{color=gray} | 1 |
+| [ccpp]{color=gray} | 1 |
+
+=== layout: two-panels
+
+# Complementary genes: F2 and testcross
+
+@left
+
+## F2 phenotypes: [9:7]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [C\_P\_]{color=purple} | 9 |
+| [C\_pp]{color=gray} | 3 |
+| [ccP\_]{color=gray} | 3 |
+| [ccpp]{color=gray} | 1 |
+
+@right
+
+## Testcross phenotypes: [1:3]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [CcPp]{color=purple} | 1 |
+| [Ccpp]{color=gray} | 1 |
+| [ccPp]{color=gray} | 1 |
+| [ccpp]{color=gray} | 1 |
+
+=== layout: two-panels
+
+# Keep phenotype groups; change the class weights
+
+@left
+
+## F2: 9 purple : 7 white
+
+| Genotype class | F2 count / 16 |
+| --- | --- |
+| [A\_B\_]{color=purple} | 9 |
+| [A\_bb]{color=gray} | 3 |
+| [aaB\_]{color=gray} | 3 |
+| [aabb]{color=gray} | 1 |
+
+@right
+
+- F2: 9:3:3:1 &rarr; 9:(3+3+1) &rarr; 9:7
 - Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 1:1:1:1
+- Same three classes share a phenotype
+- 1:(1+1+1) &rarr; [1:3]{color=green}
+- Genotype probabilities stay unchanged
 
 === layout: two-panels
+
+# No epistasis: F2 and testcross
+
 @left
 
-![Slide image 22](assets/lect05h-epistasis/image_021.png)
+## F2 phenotypes: [9:3:3:1]{color=purple}
 
-![Slide image 22](assets/lect05h-epistasis/image_020.png)
+| Genotype class | Count / 16 |
+| --- | --- |
+| [A\_B\_]{color=blue} | 9 |
+| [A\_bb]{color=red} | 3 |
+| [aaB\_]{color=orange} | 3 |
+| [aabb]{color=purple} | 1 |
+
 @right
 
-- In 9\:7 epistasis, the A\_ bb, aa B\_ and aa bb genotypes all have the same phenotype.
-- [What are the genotype ratios in a test-cross?]{color=red}
+## Testcross phenotypes: [1:1:1:1]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [AaBb]{color=blue} | 1 |
+| [Aabb]{color=red} | 1 |
+| [aaBb]{color=orange} | 1 |
+| [aabb]{color=purple} | 1 |
 
 === layout: two-panels
-# Epistasis: F2 and testcross
+
+# Complementary genes: F2 and testcross
+
 @left
 
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 2 |
-| aabb | 1 | 2 |
+## F2 phenotypes: [9:7]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [C\_P\_]{color=purple} | 9 |
+| [C\_pp]{color=gray} | 3 |
+| [ccP\_]{color=gray} | 3 |
+| [ccpp]{color=gray} | 1 |
+
 @right
 
-- F2 phenotype ratio: 9:7
-- Testcross genotypes: 1:1:1:1
-- What is the testcross phenotype ratio?
+## Testcross phenotypes: [1:3]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [CcPp]{color=purple} | 1 |
+| [Ccpp]{color=gray} | 1 |
+| [ccPp]{color=gray} | 1 |
+| [ccpp]{color=gray} | 1 |
 
 === layout: two-panels
-# Epistasis: F2 and testcross
+
+# Recessive epistasis: F2 and testcross
+
 @left
 
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 2 |
-| aabb | 1 | 2 |
+## F2 phenotypes: [9:3:4]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [B\_E\_]{color=blue} | 9 |
+| [B\_ee]{color=gray} | 3 |
+| [bbE\_]{color=purple} | 3 |
+| [bbee]{color=gray} | 1 |
+
 @right
 
-- F2 phenotype ratio: 9:7
-- Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 1:3
+## Testcross phenotypes: [1:1:2]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [BbEe]{color=blue} | 1 |
+| [Bbee]{color=gray} | 1 |
+| [bbEe]{color=purple} | 1 |
+| [bbee]{color=gray} | 1 |
 
 === layout: two-panels
+
+# Duplicate dominant genes: F2 and testcross
+
 @left
 
-![Slide image 22](assets/lect05h-epistasis/image_021.png)
+## F2 phenotypes: [15:1]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [O\_R\_]{color=orange} | 9 |
+| [O\_rr]{color=orange} | 3 |
+| [ooR\_]{color=orange} | 3 |
+| [oorr]{color=blue} | 1 |
+
 @right
 
-- A\_bb, aaB\_, aabb: same phenotype
-- F2 classes: 9:3:3:1 -> 9:(3+3+1) -> 9:7
-- Double-heterozygote testcross genotypes: 1:1:1:1
-- Same phenotype grouping: 1:(1+1+1) -> 1:3
-- Testcross phenotype ratio: [1:3]{color=red}
+## Testcross phenotypes: [3:1]{color=green}
+
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [OoRr]{color=orange} | 1 |
+| [Oorr]{color=orange} | 1 |
+| [ooRr]{color=orange} | 1 |
+| [oorr]{color=blue} | 1 |
 
 === layout: two-panels
-# Epistasis: F2 and testcross
+
+# Duplicate interaction: F2 and testcross
+
 @left
 
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 3 |
-| aabb | 1 | 4 |
+## F2 phenotypes: [9:6:1]{color=purple}
+
+| Genotype class | Count / 16 |
+| --- | --- |
+| [A\_B\_]{color=red} | 9 |
+| [A\_bb]{color=purple} | 3 |
+| [aaB\_]{color=purple} | 3 |
+| [aabb]{color=blue} | 1 |
+
 @right
 
-- F2 phenotype ratio: 9:3:3:1
-- Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 1:1:1:1
+## Testcross phenotypes: [1:2:1]{color=green}
 
-=== layout: two-panels
-# Epistasis: F2 and testcross
-@left
-
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 2 |
-| aabb | 1 | 2 |
-@right
-
-- F2 phenotype ratio: 9:7
-- Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 1:3
-
-=== layout: two-panels
-# Epistasis: F2 and testcross
-@left
-
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 3 |
-| aabb | 1 | 3 |
-@right
-
-- F2 phenotype ratio: 9:3:4
-- Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 1:1:2
-
-=== layout: two-panels
-# Epistasis: F2 and testcross
-@left
-
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 1 |
-| aaB\_ | 3 | 1 |
-| aabb | 1 | 2 |
-@right
-
-- F2 phenotype ratio: 15:1
-- Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 3:1
-
-=== layout: two-panels
-# Epistasis: F2 and testcross
-@left
-
-| Class | F2 count | Group |
-| --- | --- | --- |
-| A\_B\_ | 9 | 1 |
-| A\_bb | 3 | 2 |
-| aaB\_ | 3 | 2 |
-| aabb | 1 | 3 |
-@right
-
-- F2 phenotype ratio: 9:6:1
-- Testcross genotypes: 1:1:1:1
-- Combine classes with the same phenotype
-- Testcross phenotype ratio: 1:2:1
-
-=== layout: two-panels
-# Transform btw test-cross ratios and dihybrid cross ratios
-@left
-
-- [Duplicate Recessive Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+3+1) &rarr; 9\:7
-- 1\:1\:1\:1 &rarr; 1\:(1+1+1) &rarr; 1\:3
-- [Dominant Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; (9+3)\:3\:1 &rarr; 12\:3\:1
-- 1\:1\:1\:1 &rarr; (1+1)\:1\:1 &rarr; 2\:1\:1
-- [Duplicate Interaction]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+3)\:1 &rarr; 9\:6\:1
-- 1\:1\:1\:1 &rarr; 1\:(1+1)\:1 &rarr; 1\:2\:1
-@right
-
-- [Recessive Epistasis v1]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:3\:(3+1) &rarr; 9\:3\:4
-- 1\:1\:1\:1 &rarr; 1\:1\:(1+1) &rarr; 1\:1\:2
-- [Recessive Epistasis v2]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+1)\:3 &rarr; 9\:4\:3
-- 1\:1\:1\:1 &rarr; 1\:(1+1)\:1 &rarr; 1\:2\:1
-- [Duplicate Dominant Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; (9+3+3)\:1 &rarr; 15\:1
-- 1\:1\:1\:1 &rarr; (1+1+1)\:1 &rarr; 3\:1
-
-=== layout: two-panels
-# dihybrid cross ratios always add to 16
-@left
-
-- [Duplicate Recessive Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+3+1) &rarr; [9\:7]{color=purple}
-- 1\:1\:1\:1 &rarr; 1\:(1+1+1) &rarr; 1\:3
-- [Dominant Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; (9+3)\:3\:1 &rarr; [12\:3\:1]{color=purple}
-- 1\:1\:1\:1 &rarr; (1+1)\:1\:1 &rarr; 2\:1\:1
-- [Duplicate Interaction]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+3)\:1 &rarr; [9\:6\:1]{color=purple}
-- 1\:1\:1\:1 &rarr; 1\:(1+1)\:1 &rarr; 1\:2\:1
-@right
-
-- [Recessive Epistasis v1]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:3\:(3+1) &rarr; [9\:3\:4]{color=purple}
-- 1\:1\:1\:1 &rarr; 1\:1\:(1+1) &rarr; 1\:1\:2
-- [Recessive Epistasis v2]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+1)\:3 &rarr; [9\:4\:3]{color=purple}
-- 1\:1\:1\:1 &rarr; 1\:(1+1)\:1 &rarr; 1\:2\:1
-- [Duplicate Dominant Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; (9+3+3)\:1 &rarr; [15\:1]{color=purple}
-- 1\:1\:1\:1 &rarr; (1+1+1)\:1 &rarr; 3\:1
-
-=== layout: two-panels
-# test-cross ratios always add to 4
-@left
-
-- [Duplicate Recessive Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+3+1) &rarr; 9\:7
-- 1\:1\:1\:1 &rarr; 1\:(1+1+1) &rarr; [1\:3]{color=green}
-- [Dominant Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; (9+3)\:3\:1 &rarr; 12\:3\:1
-- 1\:1\:1\:1 &rarr; (1+1)\:1\:1 &rarr; [2\:1\:1]{color=green}
-- [Duplicate Interaction]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+3)\:1 &rarr; 9\:6\:1
-- 1\:1\:1\:1 &rarr; 1\:(1+1)\:1 &rarr; [1\:2\:1]{color=green}
-@right
-
-- [Recessive Epistasis v1]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:3\:(3+1) &rarr; 9\:3\:4
-- 1\:1\:1\:1 &rarr; 1\:1\:(1+1) &rarr; [1\:1\:2]{color=green}
-- [Recessive Epistasis v2]{color=red}
-- 9\:3\:3\:1 &rarr; 9\:(3+1)\:3 &rarr; 9\:4\:3
-- 1\:1\:1\:1 &rarr; 1\:(1+1)\:1 &rarr; [1\:2\:1]{color=green}
-- [Duplicate Dominant Epistasis]{color=red}
-- 9\:3\:3\:1 &rarr; (9+3+3)\:1 &rarr; 15\:1
-- 1\:1\:1\:1 &rarr; (1+1+1)\:1 &rarr; [3\:1]{color=green}
+| Offspring genotype | Count / 4 |
+| --- | --- |
+| [AaBb]{color=red} | 1 |
+| [Aabb]{color=purple} | 1 |
+| [aaBb]{color=purple} | 1 |
+| [aabb]{color=blue} | 1 |
 
 === layout: one-panel
-# Test-Cross with Epistasis
+
+# Same phenotype grouping; different cross
+
 @body
 
-- Normal test-cross produces [1\:1\:1\:1]{color=red} phenotype ratio formerly 9\:3\:3\:1
-- Summer squash test-cross produces [2\:1\:1]{color=red} phenotype ratio formerly 12\:3\:1
-- Labrador retriever test-cross produces [1\:1\:2]{color=red} phenotype ratio formerly 9\:3\:4
-- Pea flower test-cross produces [1\:3]{color=red} phenotype ratio formerly 9\:7
+## F2 class weights: 9, 3, 3, 1. Testcross class weights: 1, 1, 1, 1.
+
+| Interaction | F2 phenotype ratio | Testcross phenotype ratio |
+| --- | --- | --- |
+| Duplicate recessive | [9:7]{color=purple} | [1:3]{color=green} |
+| Dominant epistasis | [12:3:1]{color=purple} | [2:1:1]{color=green} |
+| Duplicate interaction | [9:6:1]{color=purple} | [1:2:1]{color=green} |
+| Recessive epistasis v1 | [9:3:4]{color=purple} | [1:1:2]{color=green} |
+| Recessive epistasis v2 | [9:4:3]{color=purple} | [1:2:1]{color=green} |
+| Duplicate dominant | [15:1]{color=purple} | [3:1]{color=green} |
+
+=== layout: one-panel
+
+# F2: combine classes totaling 16
+
+@body
+
+| Interaction | Group 9:3:3:1 | F2 ratio |
+| --- | --- | --- |
+| Duplicate recessive | 9:(3+3+1) | [9:7]{color=purple} |
+| Dominant epistasis | (9+3):3:1 | [12:3:1]{color=purple} |
+| Duplicate interaction | 9:(3+3):1 | [9:6:1]{color=purple} |
+| Recessive epistasis v1 | 9:3:(3+1) | [9:3:4]{color=purple} |
+| Recessive epistasis v2 | 9:(3+1):3 | [9:4:3]{color=purple} |
+| Duplicate dominant | (9+3+3):1 | [15:1]{color=purple} |
+
+=== layout: one-panel
+
+# Testcross: combine classes totaling 4
+
+@body
+
+| Interaction | Group 1:1:1:1 | Testcross ratio |
+| --- | --- | --- |
+| Duplicate recessive | 1:(1+1+1) | [1:3]{color=green} |
+| Dominant epistasis | (1+1):1:1 | [2:1:1]{color=green} |
+| Duplicate interaction | 1:(1+1):1 | [1:2:1]{color=green} |
+| Recessive epistasis v1 | 1:1:(1+1) | [1:1:2]{color=green} |
+| Recessive epistasis v2 | 1:(1+1):1 | [1:2:1]{color=green} |
+| Duplicate dominant | (1+1+1):1 | [3:1]{color=green} |
+
+=== layout: one-panel
+
+# Epistasis changes phenotypes, not segregation
+
+@body
+
+## Assume independently assorting loci and complete dominance within each locus.
+
+| Example | F2 phenotype ratio | Testcross phenotype ratio |
+| --- | --- | --- |
+| No epistasis | 9:3:3:1 | [1:1:1:1]{color=green} |
+| Summer squash | 12:3:1 | [2:1:1]{color=green} |
+| Labrador retriever | 9:3:4 | [1:1:2]{color=green} |
+| Pea flower color | 9:7 | [1:3]{color=green} |
 
 === layout: section
 # Summary
 
-=== layout: one-plus-two-panels
-# Epistasis
-@left
-
-- Epistasis is the suppression of the effect of one gene by another gene
-- break down of a metabolic pathway
-
-@top-right
-
-![Slide image 22](assets/lect05h-epistasis/image_010.png)
-
-@bottom-right
-
-![Slide image 22](assets/lect05h-epistasis/image_011.png)
-
-=== layout: one-panel
-# Modified F2 dihybrid ratios
-@body
-
-![Slide image 22](assets/lect05h-epistasis/image_018.png)
-
 === layout: two-panels
-# Modified F2 dihybrid ratios
+
+# Epistasis: a blocked step masks another gene
+
 @left
 
-![Slide image 22](assets/lect05h-epistasis/image_014.jpg)
+## Upstream step blocked
+
+![No starting material supplied to the color and drawing steps](assets/lect05h-epistasis/image_010.png)
+
+No starting material: the color allele cannot affect the output.
+
 @right
 
-- In each row, different colors indicate different phenotypes.
+## Downstream step blocked
+
+![Color made but the final drawing step fails](assets/lect05h-epistasis/image_011.png)
+
+Color is made, but the final step cannot display it.
 
 === layout: one-panel
-# Additional Resources
+
+# Combine F2 classes with the same phenotype
+
 @body
 
-- Epistasis\: Gene Interaction and Phenotype Effects
-  - [https\://www.nature.com/scitable/topicpage/epistasis-gene-interaction-and-phenotype-effects-460/](https://www.nature.com/scitable/topicpage/epistasis-gene-interaction-and-phenotype-effects-460/)
-- Epistasis Definition
-  - [https\://biologydictionary.net/epistasis/](https://biologydictionary.net/epistasis/)
-- 6 Most Important Kinds of Epistasis
-  - [https\://www.yourarticlelibrary.com/biology/6-most-important-kinds-of-epistasis-biology/6436](https://www.yourarticlelibrary.com/biology/6-most-important-kinds-of-epistasis-biology/6436)
-- x
+| Interaction | Group the 9, 3, 3, 1 classes | F2 ratio |
+| --- | --- | --- |
+| None | 9 : 3 : 3 : 1 | [9:3:3:1]{color=purple} |
+| Recessive | 9 : 3 : (3+1) | [9:3:4]{color=purple} |
+| Dominant | (9+3) : 3 : 1 | [12:3:1]{color=purple} |
+| Duplicate recessive | 9 : (3+3+1) | [9:7]{color=purple} |
+| Duplicate interaction | 9 : (3+3) : 1 | [9:6:1]{color=purple} |
+| Duplicate dominant | (9+3+3) : 1 | [15:1]{color=purple} |
+| Dominant/recessive | (9+3+1) : 3 | [13:3]{color=purple} |
+
+=== layout: one-panel
+
+# Same color = same phenotype
+
+@body
+
+| A\_B\_ | A\_bb | aaB\_ | aabb | F2 ratio |
+| --- | --- | --- | --- | --- |
+| [9]{color=blue} | [3]{color=blue} | [3]{color=green} | [1]{color=orange} | 12:3:1 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=green} | [1]{color=blue} | 10:3:3 |
+| [9]{color=blue} | [3]{color=green} | [3]{color=green} | [1]{color=orange} | 9:6:1 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=green} | [1]{color=red} | 9:4:3 |
+| [9]{color=blue} | [3]{color=blue} | [3]{color=blue} | [1]{color=orange} | 15:1 |
+| [9]{color=blue} | [3]{color=green} | [3]{color=blue} | [1]{color=blue} | 13:3 |
+| [9]{color=blue} | [3]{color=blue} | [3]{color=green} | [1]{color=green} | 12:4 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=red} | [1]{color=blue} | 10:6 |
+| [9]{color=blue} | [3]{color=red} | [3]{color=red} | [1]{color=red} | 9:7 |
+
+=== layout: one-panel
+
+# Additional resources
+
+@body
+
+- [Epistasis: gene interaction and phenotype effects](https://www.nature.com/scitable/topicpage/epistasis-gene-interaction-and-phenotype-effects-460/)
+- [Epistasis definition](https://biologydictionary.net/epistasis/)
+- [Six kinds of epistasis](https://www.yourarticlelibrary.com/biology/6-most-important-kinds-of-epistasis-biology/6436)
 
 === layout: theend
 # THE END

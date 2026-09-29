@@ -155,3 +155,20 @@ and is not implemented by these corrections.
 - Strict native validation passes 325 slides. Rebuilt all eight ODP/PDF pairs and reviewed all
   35 changed pages. No new capacity concerns; D slide 27 remains the documented dense example
   with source mathematical contradictions requiring instructor review.
+
+## Probability allele subscripts
+
+- Converted all 68 editable A1-A4 occurrences in D to numeric references for subscript digits,
+  including colored labels, crosses, and Punnett-table headers/cells.
+- Strict native validation passes 31 slides. Rebuilt ODP/PDF and visually checked slides 11
+  and 14 for subscript glyphs and retained colors.
+
+## Epistasis deep revision
+
+A [dedicated Lecture 05H review](LECT05H_REVIEW.md) supersedes the earlier selected 05H score.
+Sixty slides were improved while preserving all 87 source positions. Missing pea, squash, and
+Labrador Punnett squares are restored as native tables; pathway stages now show blocked reactions
+and their consequences. Native phenotype-group tables distinguish F2 counts from testcross counts.
+Cat gene labels, the flower-count normalization, and genotype-versus-phenotype prompts were corrected.
+Strict native validation passes; capacity inspection has no 05H concerns. The rebuilt ODP/PDF
+received a full contact-sheet sweep and larger checks of the repaired teaching objects.

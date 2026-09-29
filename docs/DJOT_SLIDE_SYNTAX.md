@@ -236,6 +236,10 @@ The closed names are `accent`, `black`, `red`, `orange`, `green`, `blue`, `purpl
 than arbitrary hexadecimal values. Duplicate colors, unknown names, and unsupported attribute
 scopes are source errors.
 
+For numbered allele subscripts, use numeric character references: `A&#x2082;` renders as
+A with subscript 2, and `A&#x2081;A&#x2082;` renders both allele indices below the baseline.
+These remain editable text and work inside colored spans and table cells.
+
 Use backticks for a short fixed-width sequence.  Fenced code preserves aligned multiline Djot
 source and currently receives a native-destination diagnostic before rendering.
 

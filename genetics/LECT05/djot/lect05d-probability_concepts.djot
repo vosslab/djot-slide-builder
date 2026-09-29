@@ -126,21 +126,21 @@
 
 @right
 
-- [50% chance of A1]{color=red}
+- [50% chance of A&#x2081;]{color=red}
 
-- A1A2
+- A&#x2081;A&#x2082;
 
-- A1
+- A&#x2081;
 
-- A2
+- A&#x2082;
 
-- A3A4
+- A&#x2083;A&#x2084;
 
-- A3
+- A&#x2083;
 
-- A4
+- A&#x2084;
 
-- [50% chance of A3]{color=red}
+- [50% chance of A&#x2083;]{color=red}
 
 === layout: two-panels
 
@@ -151,12 +151,12 @@
 
 @right
 
-- Cross: A1A2 x A3A4
-- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
+- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - Are B and C mutually exclusive?
 - [Specific]{color=red} addition rule gives 1/2 + 1/2 = 100%
-- Does every offspring have A1 or A3?
+- Does every offspring have A&#x2081; or A&#x2083;?
 - Check with a Punnett square
 
 === layout: stacked-panels
@@ -169,9 +169,9 @@
 
 @bottom
 
-|  | A3 | A4 |
-| A1 |  |  |
-| A2 |  |  |
+|  | A&#x2083; | A&#x2084; |
+| A&#x2081; |  |  |
+| A&#x2082; |  |  |
 
 === layout: stacked-panels
 
@@ -183,9 +183,9 @@
 
 @bottom
 
-|  | A3 | A4 |
-| A1 | A1A3 | A1A4 |
-| A2 | A2A3 | A2A4 |
+|  | A&#x2083; | A&#x2084; |
+| A&#x2081; | A&#x2081;A&#x2083; | A&#x2081;A&#x2084; |
+| A&#x2082; | A&#x2082;A&#x2083; | A&#x2082;A&#x2084; |
 
 === layout: two-panels
 
@@ -201,9 +201,9 @@
 
 @right
 
-|  | A3 | A4 |
-| A1 | A1A3 | A1A4 |
-| A2 | A2A3 | A2A4 |
+|  | A&#x2083; | A&#x2084; |
+| A&#x2081; | A&#x2081;A&#x2083; | A&#x2081;A&#x2084; |
+| A&#x2082; | A&#x2082;A&#x2083; | A&#x2082;A&#x2084; |
 
 === layout: two-panels
 
@@ -214,12 +214,12 @@
 
 @right
 
-- Cross: A1A2 x A3A4
-- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
+- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - Are B and C mutually exclusive?
 - [Specific]{color=red} addition rule gives 1/2 + 1/2 = 100%
-- Does every offspring have A1 or A3?
+- Does every offspring have A&#x2081; or A&#x2083;?
 
 === layout: two-panels
 
@@ -230,12 +230,12 @@
 
 @right
 
-- Cross: A1A2 x A3A4
-- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
+- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - [Mutually exclusive?]{color=green} [NO]{color=red}
 - [Specific]{color=red} addition rule gives 100%
-- Not every offspring has A1 or A3
+- Not every offspring has A&#x2081; or A&#x2083;
 
 === layout: two-panels
 
@@ -248,9 +248,9 @@
 
 @right
 
-- Cross: A1A2 x A3A4
-- [B]{color=purple}: offspring receives A1; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A3; [P(C) = 1/2]{color=red}
+- Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
+- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - B and C overlap: P(B and C) = 1/4
 - [General]{color=red} addition rule
 - P(B or C) = 1/2 + 1/2 [- 1/4]{color=red} = 75%

@@ -35,3 +35,5 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Lecture 05C needs its source text colors preserved in Djot, including inheritance labels and
   sex-specific emphasis.
 - Double-check the other Lecture 05 files for missing source text colors as well as Lecture 05C.
+- Use subscripts for the numbered alleles in Lecture 05D, such as A with subscript 2.
+- Give Lecture 05H a deep review; we can do better than the initial conversion.
