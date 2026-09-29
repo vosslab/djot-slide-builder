@@ -4,11 +4,26 @@
 
 ## Pedigrees
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Read pedigree symbols and relationships
+- Compare dominant and recessive inheritance
+- Distinguish autosomal, X-linked, and Y-linked patterns
+- Use family evidence to infer genotypes
+
+@notes
+
+Students should explain which family relationships support or exclude a model, rather than classify by appearance alone.
 
 === layout: section
 
@@ -523,6 +538,25 @@
 
 ![Slide image 29](assets/lect05c-pedigree/image_029.png)
 
+=== layout: one-panel
+
+# Summary: test inheritance models
+
+@body
+
+- Trace transmission across generations
+- Check affected relatives and unaffected parents
+- Compare transmission through males and females
+- Use several clues to test an inheritance model
+
+@notes
+
+Treat patterns as evidence under the stated rare-allele assumptions. Small families can fit more than one model; generation skipping or sex counts alone are not proof. Ask for one decisive transmission clue.
+
 === layout: theend
 
 # THE END
+
+@notes
+
+Pause for final questions before closing this deck.

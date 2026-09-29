@@ -4,11 +4,35 @@
 
 ## Probability Concepts
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Distinguish overlap from independence
+- Choose [addition]{color=blue} or [multiplication]{color=orange}
+- Predict offspring probabilities from gamete frequencies
+- Interpret a conditional probability
+
+@notes
+
+Use the opening cross to motivate the rules. Ask students to explain the condition that
+makes each calculation valid.
+
+=== layout: section
+
+# Probability in crosses
+
+@notes
+
+Introduce the opening challenge before defining the rules used to solve it.
 
 === layout: two-panels
 
@@ -19,7 +43,7 @@
 
 @right
 
-- [How do we do questions like this???]{color=purple}
+- [How do we do questions like this???]{color=green}
 
 === layout: one-panel
 
@@ -53,17 +77,21 @@
 
 ![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
 
-=== layout: section
-
-# Addition Rules
-
 === layout: one-panel
 
-# Addition Rule
+# [Addition Rules]{color=blue}
 
 @body
 
-- The addition rule states that the probability that [any]{color=green} one of two or more [exclusive]{color=red} events will occur is calculated by adding together their individual probabilities
+## [OR: add alternatives]{color=blue}
+
+=== layout: one-panel
+
+# [Addition Rule]{color=blue}
+
+@body
+
+- The [addition rule]{color=blue} states that the probability that [any]{color=green} one of two or more [exclusive]{color=red} events will occur is calculated by adding together their individual probabilities
 - The rule of addition can be used to figure out the probability that an F2 plant from a monohybrid cross will be heterozygous rather than homozygous
 
 === layout: one-panel
@@ -72,9 +100,9 @@
 
 @body
 
-- Specific Addition Rule\: If two events are [mutually exclusive]{color=red}, then the probability of either occurring is the sum of the probabilities of each occurring.
-  - [P(A or B) = P(A) + P(B)]{color=red}
-- General Addition Rule\: In events which aren't mutually exclusive, there is some overlap.
+- [Specific Addition Rule]{color=blue}\: If two events are [mutually exclusive]{color=red}, then the probability of either occurring is the sum of the probabilities of each occurring.
+  - [P(A or B) = P(A) + P(B)]{color=blue}
+- [General Addition Rule]{color=blue}\: In events which aren't mutually exclusive, there is some overlap.
   - When P(A) and P(B) are added, the probability of the intersection (and) is added twice.
   - To compensate for that double addition, the intersection needs to be subtracted.
   - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
@@ -152,10 +180,10 @@
 @right
 
 - Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
-- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
+- B: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- C: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - Are B and C mutually exclusive?
-- [Specific]{color=red} addition rule gives 1/2 + 1/2 = 100%
+- [Specific]{color=red} [addition rule]{color=blue} gives 1/2 + 1/2 = 100%
 - Does every offspring have A&#x2081; or A&#x2083;?
 - Check with a Punnett square
 
@@ -215,10 +243,10 @@
 @right
 
 - Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
-- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
+- B: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- C: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - Are B and C mutually exclusive?
-- [Specific]{color=red} addition rule gives 1/2 + 1/2 = 100%
+- [Specific]{color=red} [addition rule]{color=blue} gives 1/2 + 1/2 = 100%
 - Does every offspring have A&#x2081; or A&#x2083;?
 
 === layout: two-panels
@@ -231,10 +259,10 @@
 @right
 
 - Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
-- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
+- B: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- C: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - [Mutually exclusive?]{color=green} [NO]{color=red}
-- [Specific]{color=red} addition rule gives 100%
+- [Specific]{color=red} [addition rule]{color=blue} gives 100%
 - Not every offspring has A&#x2081; or A&#x2083;
 
 === layout: two-panels
@@ -249,38 +277,42 @@
 @right
 
 - Cross: A&#x2081;A&#x2082; x A&#x2083;A&#x2084;
-- [B]{color=purple}: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
-- [C]{color=purple}: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
+- B: offspring receives A&#x2081;; [P(B) = 1/2]{color=red}
+- C: offspring receives A&#x2083;; [P(C) = 1/2]{color=red}
 - B and C overlap: P(B and C) = 1/4
-- [General]{color=red} addition rule
+- [General]{color=red} [addition rule]{color=blue}
 - P(B or C) = 1/2 + 1/2 [- 1/4]{color=red} = 75%
-
-=== layout: section
-
-# Multiplication Rules
 
 === layout: one-panel
 
-# Special Multiplication Rule
+# [Multiplication Rules]{color=orange}
 
 @body
 
-- The multiplication rule states that the probability that two or more [independent]{color=red} events will occur [together]{color=green} is the product of their individual probabilities
-  - [P(A and B) = P(A) × P(B)]{color=red}
-- Probability in an F1 monohybrid cross can be determined using the multiplication rule
+## [AND: multiply along a route]{color=orange}
+
+=== layout: one-panel
+
+# [Special Multiplication Rule]{color=orange}
+
+@body
+
+- The [multiplication rule]{color=orange} states that the probability that two or more [independent]{color=red} events will occur [together]{color=green} is the product of their individual probabilities
+  - [P(A and B) = P(A) × P(B)]{color=orange}
+- Probability in an F1 monohybrid cross can be determined using the [multiplication rule]{color=orange}
 - Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a ½ chance of carrying the dominant allele and a ½ chance of carrying the recessive allele
 
 === layout: one-panel
 
-# General Multiplication Rule
+# [General Multiplication Rule]{color=orange}
 
 @body
 
 - The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred, P(B|A).
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
     - P(A|B) = The probability that Event A occurs, given that Event B has occurred, is called a conditional probability.
 - If A and B are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=red}
+  - [P(A and B) = P(A) × P(B)]{color=orange}
 
 === layout: two-panels
 
@@ -357,7 +389,7 @@
 
 - A: young man has HD allele; P(A) = 1/2
 - B: child receives HD allele; P(B|A) = 1/2
-- P(A and B) = P(B|A) x P(A) = 1/4
+- [P(A and B) = P(B|A) x P(A) = 1/4]{color=orange}
 
 === layout: two-panels
 
@@ -378,11 +410,11 @@
 - Part (B)
   - A\: chance that young man had bad allele
   - B\: chance that child will get bad allele
-  - P(A and B) = P(B|A) × P(A)
+  - [P(A and B) = P(B|A) × P(A)]{color=orange}
   - P(B|A) = 50%
   - P(A) = 50%
-  - P(A and B) = 25%
-  - P(A and B) = P(A|B) × P(B)
+  - [P(A and B) = 25%]{color=orange}
+  - [P(A and B) = P(A|B) × P(B)]{color=orange}
   - 25% = 100% × P(B); P(B) = 100%
 
 === layout: section
@@ -391,25 +423,41 @@
 
 === layout: one-panel
 
-# Multiplication Rules
+# [Multiplication Rules]{color=orange}
 
 @body
 
-- Specific Multiplication Rule, if two events, A and B, are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=red}
-- General Multiplication Rule, if two events, A and B, are NOT independent then\:
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+- [Specific Multiplication Rule]{color=orange}, if two events, A and B, are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) × P(B)]{color=orange}
+- [General Multiplication Rule]{color=orange}, if two events, A and B, are NOT independent then\:
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
 
 === layout: one-panel
 
-# Addition Rules
+# [Addition Rules]{color=blue}
 
 @body
 
-- Specific Addition Rule\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
-  - [P(A or B) = P(A) + P(B)]{color=red}
-- General Addition Rule\: if two events, A and B, are NOT mutually exclusive, then\:
+- [Specific Addition Rule]{color=blue}\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
+  - [P(A or B) = P(A) + P(B)]{color=blue}
+- [General Addition Rule]{color=blue}\: if two events, A and B, are NOT mutually exclusive, then\:
   - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
+
+=== layout: one-panel
+
+# Summary: check the rule's condition
+
+@body
+
+- [OR: add probabilities; subtract any overlap]{color=blue}
+- [AND: multiply; account for dependence]{color=orange}
+- Use frequencies among successful gametes
+- Read "given" as a restriction on possible outcomes
+
+@notes
+
+Connect each rule to its condition. Return to the opening pollen cross and distinguish
+the gametes produced from those that contribute to offspring.
 
 === layout: theend
 

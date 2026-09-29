@@ -19,11 +19,39 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide-writing advice
 
+- Repeat key slides in a Summary section at the end. This emphasizes their importance and
+  makes them easy to find during homework. The original 05D's Addition Rules and Multiplication
+  Rules slides are useful offline single-slide references; retain that function in v2.
+- Retain the original 05D's visual explanations, especially Venn diagrams. Reuse them or
+  make simple SVGs that show the same concepts in v2.
+- Switching between percentages and fractions in 05D v2 may confuse biology students who
+  are less comfortable with mathematics. Keep the probability notation consistent.
+- Concise slides do not mean only four words per line. I want students to listen during class,
+  but complete text-heavy slides that I skip can help them study afterward. Include those
+  explanations in the slides students receive, not only in speaker notes.
+- Every content deck (B-H) should ideally use: title, learning objectives, optional new jargon
+  definitions, opening section heading, teaching content, summary, and a separate THE END.
+  Without a vocabulary slide, put the opening section heading on slide 3.
+- Use dedicated colors for addition and multiplication throughout Lecture 05 so students can
+  associate a color with each rule as a subtle mnemonic.
+- Blue and purple are too close in hue. Prefer Chicago Bears blue/orange or Cubs blue/red
+  pairings for concepts that students should distinguish.
+- Title slide 1 is for orientation: lecture number and letter, title, chapter, Dr. Neil Voss,
+  and date. I do not want taglines. Genetics chapters follow the Biology Problems sequence;
+  Lecture 05 is Chapter 5.
+- Give the title slide's rounded rectangle no fill and place it below the text boxes so I can
+  select and copy the text.
+- Apply the supplied plain-language advice to science teaching: use simpler words when they
+  preserve the meaning, and keep technical terms when they add precision.
+- Define jargon new to the lecture sequence in the first few slides of the deck. Check prior
+  decks for earlier definitions, as in Lecture 04, before deciding which terms are new.
 - Add instructor notes to the custom Djot slide format; `@notes` works as the section marker.
 - "Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide."
 - "Images Are Required: Try to have several pictures on your slide to maintain audience
   attention. You should have some text though."
 - "Limit Text: No complete sentences on slides; use short phrases and keywords only."
+- Clarification: "I think the opening question should be a full question, which allows it to
+  have complete sentences. There are exceptions to most rules."
 - "These slides are not for presentation, so the 'instructor does the talking, not the slides' is
   not fully true."
 - "Split the 04C protein material into 04C, 04D, 04E, and 04F by chapter; structural biology is a
@@ -33,7 +61,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - I don't want slide numbers; they make students watch the clock instead of the presenter.
 - For Lecture 05D v2, preserve the hard-question opening, the context-dependent addition-rule
   trap, and callbacks to rule slides. Rewrite textbook question screenshots as editable text.
-- Put learning objectives on slide 2, a summary at the end, and flow cues in `@notes`.
+- Put learning objectives on slide 2, a summary immediately before THE END, and flow cues in `@notes`.
   Aim for 30-40 slides; up to 50 is fine when the extra slides teach without adding bloat.
 - More multiple-choice and question-answer slides are welcome in Lecture 05D v2.
 - Use Unicode fraction glyphs in Lecture 05D v2 instead of literal slash fractions.
@@ -46,6 +74,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Djot specifies semantic font families or roles, not concrete font names. The backend owns the
   mapping from ordinary, monospace, and condensed text to installed or bundled font faces.
 - Prefer pollen/ovule labels for plant examples and sperm/egg labels for animal examples.
+- Compare terminology with my local genetics textbooks; anatomical precision should fit the
+  teaching context rather than adding an unnecessary distinction to a probability lesson.
+- Add useful lessons from those textbooks to Lecture 05D v2 to improve clarity and engagement.
+- Add learning objectives and a closing summary to each relevant Lecture 05 deck: B, C, E, F,
+  G, and H, following the pedagogical slide style guide.
 
 ## Conversion review
 

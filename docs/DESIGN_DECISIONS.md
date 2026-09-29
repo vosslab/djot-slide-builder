@@ -1126,7 +1126,8 @@ explicit residual layout work, not evidence to lower the ordinary teaching floor
 
 **Decision.** Title slides use the native master rectangles and select the largest readable title
 that preserves the 20 pt body floor; otherwise the body records its capacity diagnostic. Covers add
-a rounded metadata frame and accent rule. Sections use the deck's course accent and center white text
+a rounded metadata frame with no fill, behind the editable text, and an accent rule.
+Sections use the deck's course accent and center white text
 in a rounded frame. The explicit `theend` layout renders its required `# THE END` heading as two
 giant lines with a native star in the D.
 `big-image` places one focal image above a short full-width bottom caption, and ordinary content
@@ -1137,8 +1138,10 @@ constraint, and the master section outline appeared 42 logical pixels below the 
 Recurring cover, transition, closer, and image-focus roles need a clear identity without rasterized
 lettering.
 
-**Consequence.** Covers use `Lecture ##<letter>` and separate subject, optional chapter, instructor,
-and date paragraphs. `LayoutSlide.surface` controls the native page style and master visibility.
+**Consequence.** Course covers use `Lecture ##<letter>` and separate subject, chapter, instructor,
+and teaching-date paragraphs, following [PEDAGOGICAL_SLIDE_STYLE_GUIDE.md](PEDAGOGICAL_SLIDE_STYLE_GUIDE.md).
+The unfilled metadata frame precedes both text boxes in the exported stacking order so the
+decoration does not obstruct text selection. `LayoutSlide.surface` controls the native page style and master visibility.
 Deck-level `color-theme` metadata selects the band and readable accent for native decorations,
 links, tables, and transitions; every letter stays an editable font glyph. Existing layouts stay unchanged.
 

@@ -4,11 +4,35 @@
 
 ## Degrees of Dominance
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Compare complete, incomplete, and codominance
+- Predict phenotypes from monohybrid crosses
+- Infer possible ABO genotypes
+- Distinguish one-gene and multigene traits
+
+@notes
+
+Use the heterozygote as the comparison point. ABO and the donor-recipient examples make distinct allele effects visible; later examples contrast one-locus and multigene traits.
+
+=== layout: section
+
+# Patterns of dominance
+
+@notes
+
+Begin by comparing how the heterozygote looks under different patterns of dominance.
+The next slides introduce the terms used for those patterns.
 
 === layout: one-panel
 
@@ -111,11 +135,11 @@
 
 @right
 
-- (a) count the phenotype for each independent gene and multiply
+- (a) count the phenotype for each independent gene and [multiply]{color=orange}
   - M&ndash;, mm = 2
   - S&ndash;, ss =2
   - TT, Tt, tt = 3
-- 2 × 2 × 3 = 12
+- [2 × 2 × 3 = 12]{color=orange}
 
 === layout: two-panels
 
@@ -126,12 +150,12 @@
 
 @right
 
-- Each gene is independent, multiplication rule
+- Each gene is independent, [multiplication rule]{color=orange}
 - Incompleteness does not matter, since we are discussing genotype.
 - (b) MM is ¼, SS is ¼, and tt is ¼
-- ¼ × ¼ × ¼ = 1/64
-- (c) MM or mm is ½, SS or ss is ½, TT or tt is ½
-- ½ × ½ × ½ = 1/8
+- [¼ × ¼ × ¼ = 1/64]{color=orange}
+- (c) MM [or]{color=blue} mm is ½, SS [or]{color=blue} ss is ½, TT [or]{color=blue} tt is ½
+- [½ × ½ × ½ = 1/8]{color=orange}
 
 === layout: section
 
@@ -636,6 +660,25 @@
 
 ![Slide image 23](assets/lect05f-degrees_of_dominance/image_023.png)
 
+=== layout: one-panel
+
+# Summary: start with the heterozygote
+
+@body
+
+- Complete: heterozygote matches one homozygote
+- Incomplete: intermediate heterozygote
+- Codominant: both allele effects distinguishable
+- Dominance changes phenotypes, not allele segregation
+
+@notes
+
+Ask students to classify a heterozygote before naming a dominance pattern. Alleles remain discrete even when the phenotype is intermediate. Under the usual Aa by Aa assumptions, genotypes remain 1:2:1.
+
 === layout: theend
 
 # THE END
+
+@notes
+
+Pause for final questions before closing this deck.

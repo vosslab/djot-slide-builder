@@ -6,11 +6,13 @@ Make students **think, look, and listen**. If the slide asks students to read to
 
 Practical defaults:
 
-- start every deck with learning objectives (each deck, not just the first deck of a lecture)
-- end every deck with summary slides (each deck, not just the last deck of a lecture)
+- start each content deck with a title, learning objectives, optional new terms, and a section heading
+- close each content deck with a summary followed by a separate THE END slide
+- repeat essential reference slides in a closing Summary section for homework lookup
 - use images, diagrams, graphs, structures, or comparisons as the main teaching tool
 - keep slide text short enough to read at a glance
-- put the spoken explanation in speaker notes, not on the slide
+- prefer familiar words; define essential new terms in the first few slides
+- put live teaching cues in notes; include fuller study-reference slides when useful
 - use one main idea per slide
 - use section dividers to reset the room
 - use flip books and alternate views when a concept benefits from stepwise reveal
@@ -37,8 +39,8 @@ AI should:
 - never invent figures, citations, statistics, quotes, or source claims
 - default to placeholders when a figure, structure, or image is needed
 - if asked to recreate a figure, leave a labeled placeholder rather than drawing an unsupported figure
-- keep slide text minimal
-- put full explanations in notes
+- keep live teaching slides concise without reducing meaning to fragments
+- put teaching cues in notes and student-facing review explanations on study-reference slides
 - suggest active-learning prompts when the material invites student interpretation
 - avoid inventing examples, sources, or claims without checking
 
@@ -50,7 +52,9 @@ Be a visual storyteller. The slide should support the story, not replace the ins
 
 The instructor does the teaching. The slide provides the visual anchor.
 
-It should not make students read paragraphs during class.
+Most slides should not make students read paragraphs during class. The same deck also serves
+students studying afterward. Clearly labeled study-reference slides can provide complete
+explanations that the instructor skips during the live lecture.
 
 ## Slide Design Principles
 
@@ -71,7 +75,10 @@ Images are expected, not optional. A slide with only text should be rare and sho
 
 ### 2. Keep text short
 
-Slides should not contain complete sentences unless absolutely necessary.
+Prefer short phrases for labels and explanations. This is a default, not an absolute rule.
+Question slides, especially an opening challenge, should state a complete, self-contained
+problem. Use full sentences and short paragraphs when students need the setup, assumptions,
+and question to reason about it. Do not compress a problem into ambiguous fragments.
 
 Use:
 
@@ -82,11 +89,18 @@ Use:
 - simple definitions
 - brief comparisons
 
-Avoid paragraphs. Avoid long bullet points. Avoid putting the full spoken explanation on the slide. If the slide reads like a handout, it has too much prose. Split the idea or move the prose to notes.
+On live teaching slides, prefer concise text, but do not force a four-word line or sentence
+fragment when a complete sentence communicates the idea more clearly. Complete problem
+statements and study-reference slides can use paragraphs. Match the amount of text to the job.
+Keep question text readable; place hints, the solution, and instructor commentary in notes
+or later slides.
 
 ### 3. Put the explanation in the speaker notes
 
 The slide should not contain everything the instructor plans to say.
+
+Notes support delivery; they are not the only place for explanations students need afterward.
+Do not assume students can access speaker notes in their exported slides.
 
 Use speaker notes for:
 
@@ -118,6 +132,43 @@ If a slide has too many ideas, split it into multiple slides.
 A single lecture intentionally spans multiple slide decks. Presentation software (Keynote, PowerPoint) stores each deck as a zip archive, and every save rezips the entire archive. Large decks produce long save lags that interrupt authoring.
 
 Keep individual decks small so saves stay fast. Do not merge decks back together for tidiness; the split is a practical file-format choice, not a pedagogical one.
+
+### Use title slides for orientation
+
+Slide 1 identifies where the deck fits in the course. Include these five items, each on its
+own line: lecture number and letter, subject title, chapter, instructor, and teaching date.
+For example:
+
+- Lecture 05D
+- Probability Concepts
+- Chapter 5
+- Dr. Neil Voss
+- Sept 29, 2026
+
+Use the course's current chapter sequence. For Genetics, follow the
+[Biology Problems Genetics index](https://biologyproblems.org/genetics/), where Lecture 05
+corresponds to Chapter 5. Preserve the intended teaching date when revising a deck.
+Keep taglines and motivational slogans off the title slide; use the opening problem to
+motivate the lesson. Learning objectives follow on slide 2.
+
+Keep title text editable and selectable. Decorative frames use no fill and sit behind the
+text boxes so they do not obstruct selecting text for copying.
+
+### Use consistent deck bookends
+
+For every content deck in a lecture sequence (such as Lecture 05B-H), use this default order:
+
+1. Title slide for course orientation.
+2. Learning objectives.
+3. Optional definitions of essential new technical terms or jargon.
+4. Opening section heading, then teaching content.
+5. Summary section with selected key references when useful, ending with penultimate takeaways.
+6. A separate THE END slide as the final slide.
+
+Without a separate vocabulary slide, the opening section heading is slide 3. Keep definitions
+early and before students need them, but do not add a glossary slide when brief definitions
+in the opening teaching slides work better. Preserve a complete opening question after the
+section heading. The summary teaches the takeaways; THE END provides a clear closing cue.
 
 ### Start with learning objectives
 
@@ -182,17 +233,32 @@ A useful concept-building sequence is:
 
 Add section bookends separately: an active-learning beat when students should process the idea, and a takeaway slide when the section needs closure.
 
+### Use plain, concrete language
+
+Treat vocabulary and jargon as liabilities as well as assets. Every specialized or uncommon
+term adds something students must learn and should earn its place. Use technical language when
+it adds precision or names an established concept more clearly. Prefer familiar words and
+direct sentences when they communicate the same meaning accurately. When in doubt, use the
+simpler word.
+
 ### Define technical terms briefly
 
-Explain at the level of the class. If a technical term appears on a slide, define the term clearly.
+Check earlier decks in teaching order before deciding which terms students already know.
+A term is established when it has been explained, not merely mentioned. Define essential terms
+that are new to the lecture sequence in the first few slides of the deck, before students need
+them to interpret a figure, follow an explanation, or answer a question.
 
-Use this format on the slide:
+Use a visible definition in familiar words, with enough detail to make the term useful:
 
-**technical term** = **3 to 5 word definition**
+**mutually exclusive** = **cannot both occur**
 
-Put the longer explanation in the notes. This resolves the tension between defining terms and keeping slides visual.
+Pair the definition with an example or visual. Use the opening teaching slides to introduce
+the terms in context; keep each slide focused rather than making a dense glossary. Put longer
+explanations in the notes, while keeping the definition itself visible to students.
 
-If the instructor cannot explain a term simply, students will not understand it either.
+Reuse terms consistently. Briefly recall an earlier definition when it helps, and define any
+new meaning of a familiar term explicitly. Keep definitions plain enough that students do not
+need another unexplained term to understand them.
 
 ### Use question-answer pairs for core vocabulary
 
@@ -270,7 +336,29 @@ Use transitions to help students see why the next topic follows from the previou
 
 ### End with summary and takeaway slides
 
-Every slide deck should end with a summary slide, including each deck within a multi-deck lecture, not only the last deck. End each major section with a short takeaway slide, and end the lecture with a final summary slide.
+Every content deck should have a summary immediately before its separate THE END slide,
+including each deck within a multi-deck lecture, not only the last deck. End each major
+section with a short takeaway when it needs closure. Retain review figures and worked
+examples before the final summary.
+
+### Repeat key slides for homework
+
+When a deck has a few essential rules, diagrams, or procedures, repeat those key slides in
+a clearly labeled Summary section near the end. Repetition signals their importance and
+gives students a predictable place to look while doing homework. Do not assume that a short
+takeaway slide can replace a usable reference.
+
+Keep each reference self-contained: include the rule, its conditions, notation definitions,
+and the figure or explanation needed to use it offline. Preserve familiar titles, symbols,
+and colors so students recognize the material. Related teaching slides may be consolidated
+into one reference when that makes the information easier to find without crowding it.
+For example, an Addition Rules slide and a Multiplication Rules slide can each collect
+the special and general forms taught earlier in Lecture 05D.
+
+Select the few slides students will use repeatedly; do not duplicate the whole lecture.
+Place fuller study explanations in the same section when helpful. The instructor may
+briefly point out these resources and skip them in class. Keep the final takeaway summary
+immediately before THE END.
 
 A takeaway slide should name the **3 to 5 ideas** students should remember.
 
@@ -433,6 +521,17 @@ Examples:
 
 Do not communicate information by color alone. Pair color with labels, shapes, arrows, position, or text.
 
+Keep recurring concepts the same color across all decks in a lecture. In Genetics Lecture 05,
+use blue for the addition rule (OR, plus, combining alternatives) and orange for the
+multiplication rule (AND, times, combining events within a route). Carry the colors through
+rule names, equations, worked steps, callbacks, and summaries, including both general and
+special forms. Keep the rule names and operators visible.
+
+Use distinct hues, such as Chicago Bears-inspired blue/orange or Cubs-inspired blue/red;
+blue/purple are too similar for this purpose. Use readable text shades from the slide palette.
+In mixed calculations, color each operation separately. Preserve meaningful biological colors
+in figures, such as purple flowers, and use other emphasis colors for unrelated highlights.
+
 ### Visual accessibility
 
 Avoid overcrowding. White space helps students find the important object quickly.
@@ -456,7 +555,29 @@ Avoid:
 - "The hydrophobic core prevents polar molecules from crossing the membrane."
 - "This pathway amplifies the signal by activating many downstream molecules."
 
-Put full sentences in the notes, not the slide.
+Put delivery cues in notes. Students should be able to read complete question statements
+and fuller explanations on clearly labeled study-reference slides.
+
+### Include study-reference slides
+
+A deck can serve both live teaching and later study. Label fuller explanations
+`Study reference: ...` so the instructor can skip them in class and students can find them
+afterward. Use complete sentences and coherent paragraphs to explain reasoning, assumptions,
+and worked examples. These slides may be text-heavy; readable text and a useful explanation
+matter more than a fixed word limit. Keep them with the relevant material or in a short
+review block before the penultimate summary and final THE END slide.
+
+Do not expand every slide into prose. Keep questions, visuals, and rule callbacks useful
+during class, while providing enough visible explanation for independent review.
+
+### Keep number formats consistent
+
+Avoid switching between fractions, percentages, and decimals while teaching another concept.
+Choose one probability format for a deck and retain it in questions, choices, equations,
+and answers. In Lecture 05D v2, use Unicode fractions, with 0 for impossible and 1 for certain.
+Explain fractions as shares of outcomes when helpful. Counts and genotype ratios may remain
+in their usual form; explain how they relate to the probabilities. Teach conversions explicitly
+only when conversion itself serves a learning objective.
 
 ### Prefer non-bullet alternatives
 
@@ -466,7 +587,7 @@ When bullets are useful, keep them short:
 
 - 0 to 3 bullets for most slides
 - 3 to 5 bullets only when the list is the point
-- 3 to 7 words per bullet when possible
+- enough words per bullet to express the idea clearly; no fixed word quota
 - one level of indentation when possible
 
 Avoid nested bullet lists unless the hierarchy is essential.
@@ -808,15 +929,17 @@ Use this as a pre-flight gate before class:
 - Does the slide teach one main idea?
 - Is there a clear visual anchor?
 - Is the text short and readable?
-- Are complete sentences avoided?
-- Are technical terms defined briefly?
-- Is the full explanation in the notes?
+- Does the wording communicate clearly without unnecessary compression?
+- Does each technical or uncommon term add useful precision?
+- Are terms new to the lecture sequence defined visibly in the first few slides?
+- Are teaching cues in notes and needed study explanations available in the slides?
 - Is the slide accessible from the back of the room?
 - Is color supported by labels, shape, or position?
 - Would a non-bullet layout teach this better?
 - Does this slide invite attention, thought, or participation?
-- Will the instructor talk through the slide rather than read it?
-- Does this slide avoid reading like a handout?
+- Is a fuller study-reference slide clearly labeled so it can be skipped during class?
+- Does the text density suit the slide's live teaching or later study purpose?
+- Are key rules or reference slides easy to find again in the closing Summary section?
 
 ## Practical Defaults
 
@@ -839,7 +962,7 @@ Use this as the starting recipe when creating new slides:
 - flip books for sequences and alternate views
 - section dividers for major transitions
 - objectives at the start
-- summary slide at the end
+- summary on the penultimate slide, followed by THE END
 - lab methods ordered as purpose, principle, apparatus, readout, interpretation
 - takeaway slide after each major section
 - consistent visual grammar across a lecture series

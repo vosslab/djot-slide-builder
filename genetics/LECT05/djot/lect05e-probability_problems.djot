@@ -4,11 +4,26 @@
 
 ## Probability Problems
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Combine alternative genotype routes
+- Calculate probabilities given a phenotype
+- Adjust gamete frequencies for unequal success
+- Predict offspring from selected parents
+
+@notes
+
+Connect the objectives to mixed parental genotypes, selected round seeds, and unequal pollen success. Keep the diagnostic-test problem as an optional extension.
 
 === layout: section
 
@@ -16,24 +31,24 @@
 
 === layout: one-panel
 
-# Multiplication Rules
+# [Multiplication Rules]{color=orange}
 
 @body
 
-- Specific Multiplication Rule, if two events, A and B, are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=red}
-- General Multiplication Rule, if two events, A and B, are NOT independent then\:
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+- [Specific Multiplication Rule]{color=orange}, if two events, A and B, are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) × P(B)]{color=orange}
+- [General Multiplication Rule]{color=orange}, if two events, A and B, are NOT independent then\:
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
 
 === layout: one-panel
 
-# Addition Rules
+# [Addition Rules]{color=blue}
 
 @body
 
-- Specific Addition Rule\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
-  - [P(A or B) = P(A) + P(B)]{color=red}
-- General Addition Rule\: if two events, A and B, are NOT mutually exclusive, then\:
+- [Specific Addition Rule]{color=blue}\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
+  - [P(A or B) = P(A) + P(B)]{color=blue}
+- [General Addition Rule]{color=blue}\: if two events, A and B, are NOT mutually exclusive, then\:
   - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
 
 === layout: section
@@ -63,11 +78,11 @@
 - [Ab gamete]{color=red}
 - 50% AABB &rarr; 0% chance of Ab
 - 50% AABb &rarr; 50% chance of Ab
-- Multiplication rule\:
-- 50% x 0% = 0%
-- 50% x 50% = 25%
-- Addition rule\:
-- 25% + 0% = 25% chance of Ab gamete
+- [Multiplication rule]{color=orange}\:
+- [50% x 0% = 0%]{color=orange}
+- [50% x 50% = 25%]{color=orange}
+- [Addition rule]{color=blue}\:
+- [25% + 0% = 25% chance of Ab gamete]{color=blue}
 
 === layout: two-panels
 
@@ -78,14 +93,14 @@
 
 @right
 
-- [AB gamete]{color=blue}
+- [AB gamete]{color=green}
 - 50% AABB &rarr; 100% chance of AB
 - 50% AABb &rarr; 50% chance of AB
-- Multiplication rule\:
-- 50% x 100% = 50%
-- 50% x 50% = 25%
-- Addition rule\:
-- 25% + 50% = 75% chance of AB gamete
+- [Multiplication rule]{color=orange}\:
+- [50% x 100% = 50%]{color=orange}
+- [50% x 50% = 25%]{color=orange}
+- [Addition rule]{color=blue}\:
+- [25% + 50% = 75% chance of AB gamete]{color=blue}
 
 === layout: two-panels
 
@@ -100,7 +115,7 @@
 - 75% chance of AB gamete
 - Can they produce other gametes?
 - [No]{color=red}
-- Good, because 25% + 75% = 100%!
+- [Good, because 25% + 75% = 100%!]{color=blue}
 
 === layout: section
 
@@ -170,9 +185,9 @@
 
 - We want the [probability the genotype is heterozygous given the seed is round]{color=red}.
 - [P(hetero | round)]{color=red}
-  - [This]{color=red} is equal to the [probability that the seed is both heterozygous and round]{color=purple} divided by the [probability the seed is round (with any genotype)]{color=orange}
+  - [This]{color=red} is equal to the [probability that the seed is both heterozygous and round]{color=orange} divided by the [probability the seed is round (with any genotype)]{color=gray}
 - [P(hetero | round)]{color=red}
-  - = [P(hetero and round)]{color=purple} ÷ [P(round)]{color=orange}
+  - = [P(hetero and round)]{color=orange} ÷ [P(round)]{color=gray}
 
 === layout: two-plus-one-panels
 
@@ -190,13 +205,13 @@
 - [Goal\:]{color=red}
   - [P(hetero | round)]{color=red}
 - [P(hetero | round)]{color=red}
-  - = [P(hetero and round)]{color=purple} ÷ [P(round)]{color=orange}
-- [P(round) = ¾]{color=orange}
+  - = [P(hetero and round)]{color=orange} ÷ [P(round)]{color=gray}
+- [P(round) = ¾]{color=gray}
 - [P(hetero) = 2 out of 4 = ½]{color=green}
-- [P(round|hetero) = 1]{color=blue}
-- [P(round and hetero)]{color=purple}
-  - [= P(hetero)]{color=green} × [P(round|hetero)]{color=blue}
-  - = [½]{color=green} × [1]{color=blue} = [½]{color=purple}
+- [P(round|hetero) = 1]{color=green}
+- [P(round and hetero)]{color=orange}
+  - [= P(hetero)]{color=green} [&times;]{color=orange} [P(round|hetero)]{color=green}
+  - = [½]{color=green} [&times;]{color=orange} [1]{color=green} = [½]{color=orange}
 
 === layout: two-plus-one-panels
 
@@ -213,10 +228,10 @@
 
 - [Goal\:]{color=red}
   - [P(hetero | round)]{color=red}
-- [P(round) = ¾]{color=orange}
-- [P(round and hetero) = ½]{color=purple}
+- [P(round) = ¾]{color=gray}
+- [P(round and hetero) = ½]{color=orange}
 - [P(hetero | round)]{color=red}
-  - [= ]{color=red}[P(hetero and round)]{color=purple} ÷ [P(round)]{color=orange}
+  - [= ]{color=red}[P(hetero and round)]{color=orange} ÷ [P(round)]{color=gray}
   - [= ½ ÷ ¾]{color=red}
   - [= 4/6 = 2/3]{color=red}
 
@@ -327,7 +342,7 @@
 
 @top-left
 
-- Use multiplication rule for each offspring.
+- [Multiply within cells]{color=orange}; [add matching cells]{color=blue}.
 - The expected ratio\:
 - 1/6 AA; 3/6 Aa; 2/6 aa
 - 1/6 AA; 1/2 Aa; 1/3 aa
@@ -384,8 +399,8 @@
 - Selected F2 round: 2/3 Rr; 1/3 RR
 - Testcross RR x rr: no wrinkled offspring
 - Testcross Rr x rr: 1/2 wrinkled offspring
-- P(F3 wrinkled) = P(wrinkled | Rr) x P(Rr)
-- = 1/2 x 2/3 = 1/3
+- [P(F3 wrinkled) = P(wrinkled | Rr) x P(Rr)]{color=orange}
+- [= 1/2 x 2/3 = 1/3]{color=orange}
 
 === layout: section
 
@@ -405,13 +420,13 @@
 
 - A\: individual tests positive
 - B\: individual has disease
-- P(A) = P(A and B) + P(A and not B)
+- [P(A) = P(A and B) + P(A and not B)]{color=blue}
 - P(A and B)
-  - = P(A|B) × P(B) = 1 × 0.002
+  - [= P(A|B) × P(B) = 1 × 0.002]{color=orange}
 - P(A and not B)
-  - = P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)
-- 1×0.002 + 0.002×(1&ndash;0.002)
-  - = [0.003996]{color=red}
+  - [= P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)]{color=orange}
+- [1×0.002]{color=orange} [+]{color=blue} [0.002×(1&ndash;0.002)]{color=orange}
+  - = [0.003996]{color=blue}
 
 @top-right
 
@@ -421,6 +436,25 @@
 
 ![Slide image 9](assets/lect05e-probability_problems/image_008.png)
 
+=== layout: one-panel
+
+# Summary: choose the reference group
+
+@body
+
+- [Multiply within a route]{color=orange}; [add exclusive routes]{color=blue}
+- Given a phenotype: restrict the reference group
+- Use successful-pollen frequencies
+- Weight each parental genotype by its probability
+
+@notes
+
+Ask students to name the denominator before calculating. The selected round-seed group contains both RR and Rr, and each genotype contributes differently in the next cross.
+
 === layout: theend
 
 # THE END
+
+@notes
+
+Pause for final questions before closing this deck.

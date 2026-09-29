@@ -253,6 +253,32 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 		"true", "true", "false", "false", "false")
 
 
+def test_title_frame_is_unfilled_and_behind_editable_text(tmp_path: pathlib.Path) -> None:
+	"""The cover decoration leaves title and metadata text available for selection."""
+	source_path = tmp_path / "title.djot"
+	source_path.write_text("=== layout: title-slide\n\n# Lecture 05D\n\n"
+		"## Probability Concepts\n\n## Chapter 5\n\n## Dr. Neil Voss\n\n## Sept 29, 2026\n",
+		encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
+	root = package.parse_xml(exporter._content_xml(
+		plan, theme, exporter._layout_names(plan), {}), "content.xml")
+	page = root.find(f".//{{{exporter.DRAW_NS}}}page")
+	children = list(page)
+	border = next(item for item in children
+		if item.attrib.get(f"{{{exporter.DRAW_NS}}}name") == "title-metadata-frame")
+	text_frames = tuple(item for item in children
+		if item.find(f"{{{exporter.DRAW_NS}}}text-box") is not None)
+	assert text_frames and all(children.index(border) < children.index(item)
+		for item in text_frames)
+	style_name = border.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
+	style = next(item for item in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
+	properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
+	assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == "none"
+
+
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
 	"""LibreOffice receives the dark transition as a page style and the flourish as a vector."""
 	source_path = tmp_path / "closer.djot"

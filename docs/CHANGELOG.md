@@ -2,6 +2,14 @@
 
 ### Additions and New Features
 
+- Add a textbook-inspired independence vote and Punnett-square answer to Lecture 05D v2:
+  three aa offspring do not change the next offspring's probability for known Aa x Aa parents.
+  Connect this to the conditioning warmup; the deck now has 45 slides and six MC checkpoints.
+- Add deck-specific slide-2 objectives and final takeaways to Lectures 05B, C, E, F, G, and H,
+  with instructor notes. Retain their existing review figures and replace THE END with a summary.
+- Improve Lecture 05D v2 with illustrative pollen counts before normalization and a conditional
+  probability vote plus answer: exclude aa, then count two Aa routes among three remaining.
+  The revised deck has 43 slides and five multiple-choice checkpoints.
 - Add a separate 41-slide Lecture 05D v2 with objectives, a final summary, and instructor notes.
   Preserve the opening challenge and addition-rule trap; replace textbook screenshots with
   editable questions, crosses, weighted Punnett squares, rule callbacks, and four MC checkpoints.
@@ -23,6 +31,39 @@
 
 ### Fixes and Maintenance
 
+- Add a closing Summary section to 05D v2 with standalone Addition Rules and Multiplication
+  Rules references, each collecting the earlier special and general forms with conditions.
+  Keep the three study explanations and final takeaways before THE END. Document selective
+  repetition of key slides for emphasis and easy homework lookup; the deck now has 53 slides.
+- Restore visual event-set explanations in 05D v2 using four original SVG Venn diagrams:
+  union, intersection, disjoint events, and double-counted overlap. Use them on the OR/AND
+  comparison and three rule cards; retain the Punnett-square examples and 50-slide sequence.
+  Embed 2400-pixel PNG exports because the current image measurement path cannot read SVG.
+  Keep editable SVG sources beside those exports; no backend changes.
+- Keep 05D v2 probabilities in fractions, removing percentage choices and callbacks. Expand
+  compressed wording and add three labeled study-reference slides covering rule choice, the
+  pollen calculation, and conditioning. The deck now has 50 slides, with summary and THE END
+  still last. Document separate live-teaching and later-study needs in the pedagogy guide.
+- Restore a separate THE END after each Lecture 05B-H summary. Add opening section headings
+  to 05D v2 and 05F; give the original 05D objectives, an opening section heading, and a
+  penultimate summary. Document the preferred content-deck sequence, including optional early
+  vocabulary definitions. The revised 05D v2 now has 47 slides.
+- Rewrite Lecture 05D v2's opening challenge as a complete, self-contained question with its
+  assumptions visible. Clarify that full problem statements are an exception to the guide's
+  preference for short slide phrases; keep hints and teaching commentary in notes.
+- Use blue for addition/OR and orange for multiplication/AND across Lecture 05's authored
+  rule labels, equations, worked steps, and summaries. Keep both general and special forms
+  consistent, separate unrelated highlights, and retain biological figure colors.
+- Make course title slides serve orientation: lecture identifier, subject, chapter, instructor,
+  and teaching date. Replace the Lecture 05D v2 tagline with Chapter 5 and its teaching date;
+  correct the other Lecture 05 covers' old chapter labels to Chapter 5.
+- Give the shared title metadata frame no fill and preserve its stacking order below both
+  editable text boxes, including after a LibreOffice save.
+- Extend the pedagogical guide with plain-language guidance and an early-definition rule:
+  check prior decks, define essential new jargon visibly in the first few slides, and retain
+  technical terms when they improve precision. Add vocabulary checks to the slide checklist.
+- Check plant-cross terminology against the local 2001 and 2012 genetics textbooks. Simplify
+  Lecture 05D v2 slides 22-24 to Ovules/Successful pollen and remove the anatomy sidebar.
 - Remove the recording-card SVG's Arial/Helvetica declarations in favor of the ordinary font.
 - Label the Lecture 05D plant example with ovules/pollen, clarifying the egg/sperm alleles inside
   those structures. Keep animal egg/sperm labels in the family example.
@@ -36,6 +77,37 @@
 
 ### Developer Tests and Notes
 
+- Summary-reference pass: 05D v2 passes strict native lint and capacity checks at 53 slides.
+  Rebuilt ODP/PDF and visually reviewed the new Summary heading and both rule references;
+  shortened the independence sentence to remove a one-word wrap.
+- Venn follow-up: all four SVGs parse with unique IDs and resolved clip references. Rebuilt
+  05D v2 and visually checked slides 5, 8, 14, and 19 in the PDF. Native lint and capacity
+  checks pass: 50 slides, five image placements. Retain the existing 100-dpi PDF export setting.
+- Study-reference pass: 05D v2 passes strict native lint and capacity checks. Rebuilt ODP/PDF,
+  reviewed all nine changed or added teaching/reference pages, and checked equation wrapping.
+  The source has 50 slides, 50 note sections, and no percentage symbols; ODP has 50 pages.
+- Deck-sequence follow-up: rebuilt all Lecture 05 ODP/PDF decks; verified title, objectives,
+  opening section, penultimate summary, final THE END, and matching exported page counts in
+  all eight B-H sources (including both versions of D). Reviewed 32 rendered bookend slides.
+  Strict native lint passes for 388 slides. The original D capacity warning remains at line 403;
+  no new capacity warnings were introduced.
+- Opening-question follow-up: strict native lint and capacity inspection pass for 05D v2.
+  Rebuilt its ODP/PDF and visually checked slide 3; the complete question fits cleanly in a
+  single panel, with no added slides.
+- Rule-color pass: rebuilt all nine Lecture 05 ODP/PDF decks and visually reviewed 73 changed
+  slides across seven sources. Strict native lint passes; no new capacity concerns. Existing
+  palette text shades have white-background contrast ratios of 7.41:1 (blue) and 5.14:1 (orange).
+  The original 05D crowding warning remains, now at line 379; 05D v2 still has 45 slides.
+- Title-frame follow-up: 42 layout/export tests pass. Rebuilt all nine Lecture 05 ODP/PDF
+  decks and visually reviewed their covers; verified no fill and frame-before-text order in
+  every ODP and after a LibreOffice save of 05D v2. Strict native lint passes for all 376 slides.
+  Capacity inspection retains one existing warning in the original 05D source at line 371;
+  the other eight decks, including 05D v2, have none.
+- Lecture 05D v2's 45-slide follow-up passes strict native lint and capacity inspection.
+  Rebuilt ODP/PDF, verified 45 nonempty note sections, and visually checked both added slides.
+- All seven revised Lecture 05 sources pass strict native Djot lint and capacity inspection
+  (308 slides total). Rebuilt their ODP/PDF files and verified objective/summary positions and
+  speaker notes; reviewed the 12 new opening/closing slides and four revised 05D teaching slides.
 - Reviewed every changed `slide_lib` line. All 196 functional tests pass, including theme,
   layout, parser, import/export, capacity, and LibreOffice boundary tests. A temporary check
   confirms matching measurement/export font selection across 16 nested styling combinations.

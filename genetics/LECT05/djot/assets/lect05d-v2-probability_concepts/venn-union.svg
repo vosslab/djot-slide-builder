@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450"
+  viewBox="0 0 800 450" role="img" aria-labelledby="venn-title venn-description">
+  <title id="venn-title">B or C: shade either circle, including their overlap</title>
+  <desc id="venn-description">Schematic event sets B and C. Circle areas do not
+  represent probabilities. Labels identify the selected regions.</desc>
+  <defs>
+    <clipPath id="shared-region"><circle cx="290" cy="215" r="165"/></clipPath>
+  </defs>
+  <rect id="background" width="800" height="450" fill="#FFFFFF"/>
+  <g id="event-fills" fill="#D9E8F5">
+    <circle cx="290" cy="215" r="165"/>
+    <circle cx="510" cy="215" r="165"/>
+  </g>
+  <g id="event-outlines" fill="none" stroke="#172238" stroke-width="5">
+    <circle cx="290" cy="215" r="165"/>
+    <circle cx="510" cy="215" r="165"/>
+  </g>
+  <g id="labels" font-family="Atkinson Hyperlegible Next" fill="#172238" text-anchor="middle">
+    <text x="290" y="120" font-size="42" font-weight="700">B</text>
+    <text x="510" y="120" font-size="42" font-weight="700">C</text>
+    <text x="235" y="225" font-size="34">B only</text>
+    <text x="400" y="225" font-size="34" font-weight="700">Both</text>
+    <text x="565" y="225" font-size="34">C only</text>
+    <text x="400" y="415" font-size="30">All three regions qualify</text>
+  </g>
+</svg>

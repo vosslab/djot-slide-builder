@@ -3,11 +3,26 @@
 
 ## Epistasis
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Distinguish epistasis from dominance
+- Trace how pathway blocks alter phenotypes
+- Group genotypes to predict phenotype ratios
+- Compare F2 and testcross outcomes
+
+@notes
+
+Use the flower, squash, and Labrador examples to explain phenotype grouping. The aim is to reconstruct ratios from the model, not memorize a catalog.
 
 === layout: section
 # Epistasis
@@ -385,7 +400,7 @@
 
 @body
 
-## 9 purple : (3 + 3 + 1) white = [9:7]{color=purple}
+## 9 purple : [(3 + 3 + 1)]{color=blue} white = [9:7]{color=purple}
 
 | F2 genotype class | Count / 16 | Flower color |
 | --- | --- | --- |
@@ -682,12 +697,12 @@ Color is made, but the final step cannot display it.
 | Interaction | Group the 9, 3, 3, 1 classes | F2 ratio |
 | --- | --- | --- |
 | None | 9 : 3 : 3 : 1 | [9:3:3:1]{color=purple} |
-| Recessive | 9 : 3 : (3+1) | [9:3:4]{color=purple} |
-| Dominant | (9+3) : 3 : 1 | [12:3:1]{color=purple} |
-| Duplicate recessive | 9 : (3+3+1) | [9:7]{color=purple} |
-| Duplicate interaction | 9 : (3+3) : 1 | [9:6:1]{color=purple} |
-| Duplicate dominant | (9+3+3) : 1 | [15:1]{color=purple} |
-| Dominant/recessive | (9+3+1) : 3 | [13:3]{color=purple} |
+| Recessive | 9 : 3 : [(3+1)]{color=blue} | [9:3:4]{color=purple} |
+| Dominant | [(9+3)]{color=blue} : 3 : 1 | [12:3:1]{color=purple} |
+| Duplicate recessive | 9 : [(3+3+1)]{color=blue} | [9:7]{color=purple} |
+| Duplicate interaction | 9 : [(3+3)]{color=blue} : 1 | [9:6:1]{color=purple} |
+| Duplicate dominant | [(9+3+3)]{color=blue} : 1 | [15:1]{color=purple} |
+| Dominant/recessive | [(9+3+1)]{color=blue} : 3 | [13:3]{color=purple} |
 
 === layout: two-panels
 @left
@@ -961,10 +976,10 @@ Color is made, but the final step cannot display it.
 
 @right
 
-- F2: 9:3:3:1 &rarr; 9:(3+3+1) &rarr; 9:7
+- F2: 9:3:3:1 &rarr; 9:[(3+3+1)]{color=blue} &rarr; 9:7
 - Testcross genotypes: 1:1:1:1
 - Same three classes share a phenotype
-- 1:(1+1+1) &rarr; [1:3]{color=green}
+- 1:[(1+1+1)]{color=blue} &rarr; [1:3]{color=green}
 - Genotype probabilities stay unchanged
 
 === layout: two-panels
@@ -1122,12 +1137,12 @@ Color is made, but the final step cannot display it.
 
 | Interaction | Group 9:3:3:1 | F2 ratio |
 | --- | --- | --- |
-| Duplicate recessive | 9:(3+3+1) | [9:7]{color=purple} |
-| Dominant epistasis | (9+3):3:1 | [12:3:1]{color=purple} |
-| Duplicate interaction | 9:(3+3):1 | [9:6:1]{color=purple} |
-| Recessive epistasis v1 | 9:3:(3+1) | [9:3:4]{color=purple} |
-| Recessive epistasis v2 | 9:(3+1):3 | [9:4:3]{color=purple} |
-| Duplicate dominant | (9+3+3):1 | [15:1]{color=purple} |
+| Duplicate recessive | 9:[(3+3+1)]{color=blue} | [9:7]{color=purple} |
+| Dominant epistasis | [(9+3)]{color=blue}:3:1 | [12:3:1]{color=purple} |
+| Duplicate interaction | 9:[(3+3)]{color=blue}:1 | [9:6:1]{color=purple} |
+| Recessive epistasis v1 | 9:3:[(3+1)]{color=blue} | [9:3:4]{color=purple} |
+| Recessive epistasis v2 | 9:[(3+1)]{color=blue}:3 | [9:4:3]{color=purple} |
+| Duplicate dominant | [(9+3+3)]{color=blue}:1 | [15:1]{color=purple} |
 
 === layout: one-panel
 
@@ -1137,12 +1152,12 @@ Color is made, but the final step cannot display it.
 
 | Interaction | Group 1:1:1:1 | Testcross ratio |
 | --- | --- | --- |
-| Duplicate recessive | 1:(1+1+1) | [1:3]{color=green} |
-| Dominant epistasis | (1+1):1:1 | [2:1:1]{color=green} |
-| Duplicate interaction | 1:(1+1):1 | [1:2:1]{color=green} |
-| Recessive epistasis v1 | 1:1:(1+1) | [1:1:2]{color=green} |
-| Recessive epistasis v2 | 1:(1+1):1 | [1:2:1]{color=green} |
-| Duplicate dominant | (1+1+1):1 | [3:1]{color=green} |
+| Duplicate recessive | 1:[(1+1+1)]{color=blue} | [1:3]{color=green} |
+| Dominant epistasis | [(1+1)]{color=blue}:1:1 | [2:1:1]{color=green} |
+| Duplicate interaction | 1:[(1+1)]{color=blue}:1 | [1:2:1]{color=green} |
+| Recessive epistasis v1 | 1:1:[(1+1)]{color=blue} | [1:1:2]{color=green} |
+| Recessive epistasis v2 | 1:[(1+1)]{color=blue}:1 | [1:2:1]{color=green} |
+| Duplicate dominant | [(1+1+1)]{color=blue}:1 | [3:1]{color=green} |
 
 === layout: one-panel
 
@@ -1191,12 +1206,12 @@ Color is made, but the final step cannot display it.
 | Interaction | Group the 9, 3, 3, 1 classes | F2 ratio |
 | --- | --- | --- |
 | None | 9 : 3 : 3 : 1 | [9:3:3:1]{color=purple} |
-| Recessive | 9 : 3 : (3+1) | [9:3:4]{color=purple} |
-| Dominant | (9+3) : 3 : 1 | [12:3:1]{color=purple} |
-| Duplicate recessive | 9 : (3+3+1) | [9:7]{color=purple} |
-| Duplicate interaction | 9 : (3+3) : 1 | [9:6:1]{color=purple} |
-| Duplicate dominant | (9+3+3) : 1 | [15:1]{color=purple} |
-| Dominant/recessive | (9+3+1) : 3 | [13:3]{color=purple} |
+| Recessive | 9 : 3 : [(3+1)]{color=blue} | [9:3:4]{color=purple} |
+| Dominant | [(9+3)]{color=blue} : 3 : 1 | [12:3:1]{color=purple} |
+| Duplicate recessive | 9 : [(3+3+1)]{color=blue} | [9:7]{color=purple} |
+| Duplicate interaction | 9 : [(3+3)]{color=blue} : 1 | [9:6:1]{color=purple} |
+| Duplicate dominant | [(9+3+3)]{color=blue} : 1 | [15:1]{color=purple} |
+| Dominant/recessive | [(9+3+1)]{color=blue} : 3 | [13:3]{color=purple} |
 
 === layout: one-panel
 
@@ -1226,5 +1241,25 @@ Color is made, but the final step cannot display it.
 - [Epistasis definition](https://biologydictionary.net/epistasis/)
 - [Six kinds of epistasis](https://www.yourarticlelibrary.com/biology/6-most-important-kinds-of-epistasis-biology/6436)
 
+=== layout: one-panel
+
+# Summary: explain the phenotype ratio
+
+@body
+
+- Dominance: within a locus; epistasis: between loci
+- Follow the pathway to predict each phenotype
+- [Add probabilities]{color=blue} for the same phenotype
+- Choose class weights for the actual cross
+
+@notes
+
+For independent loci, an AaBb by AaBb cross supplies class weights 9,3,3,1; an AaBb by aabb testcross supplies 1,1,1,1. The pathway determines which classes share a phenotype. Ask students to explain one grouping.
+
 === layout: theend
+
 # THE END
+
+@notes
+
+Pause for final questions before closing this deck.

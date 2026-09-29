@@ -4,11 +4,26 @@
 
 ## Unknown Genotype / Sample Problems
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Assign gel bands to genes and alleles
+- Infer genotypes from band patterns
+- Use offspring to resolve parental genotypes
+- Combine probabilities across independent genes
+
+@notes
+
+Tie the objectives to the gel lanes and coat-color families. Ask students to justify each inferred allele.
 
 === layout: section
 
@@ -183,6 +198,25 @@
 - [Female = aa Ss]{color=red}
 - [Male = Aa Ss]{color=red}
 
+=== layout: one-panel
+
+# Summary: infer unknown genotypes
+
+@body
+
+- Two bands can represent two homozygous genes
+- Band combinations identify alleles of a gene
+- Recessive offspring reveal hidden parental alleles
+- Independent genes: [multiply their probabilities]{color=orange}
+
+@notes
+
+Recall the double-homozygote lanes and the spotted offspring. Ask which observation ruled out a competing parental genotype. The two-band clue applies to this deck's two-gene assay.
+
 === layout: theend
 
 # THE END
+
+@notes
+
+Pause for final questions before closing this deck.

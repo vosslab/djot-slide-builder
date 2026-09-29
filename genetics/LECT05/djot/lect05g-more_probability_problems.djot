@@ -4,11 +4,26 @@
 
 ## Probability Problems
 
-## Chapter 3
+## Chapter 5
 
 ## Dr. Neil Voss
 
 ## Sept 29, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Normalize unequal pollen contributions
+- Build a weighted Punnett square
+- Infer genotypes among selected offspring
+- Predict outcomes of their testcrosses
+
+@notes
+
+This practice deck revisits weighted pollen and selection of round seeds. The bonus test problem extends the same route-weighting method to positive tests.
 
 === layout: section
 
@@ -16,24 +31,24 @@
 
 === layout: one-panel
 
-# Multiplication Rules
+# [Multiplication Rules]{color=orange}
 
 @body
 
-- Specific Multiplication Rule, if two events, A and B, are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=red}
-- General Multiplication Rule, if two events, A and B, are NOT independent then\:
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=blue}
+- [Specific Multiplication Rule]{color=orange}, if two events, A and B, are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) × P(B)]{color=orange}
+- [General Multiplication Rule]{color=orange}, if two events, A and B, are NOT independent then\:
+  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
 
 === layout: one-panel
 
-# Addition Rules
+# [Addition Rules]{color=blue}
 
 @body
 
-- Specific Addition Rule\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
-  - [P(A or B) = P(A) + P(B)]{color=red}
-- General Addition Rule\: if two events, A and B, are NOT mutually exclusive, then\:
+- [Specific Addition Rule]{color=blue}\: if two events, A and B, are [mutually exclusive]{color=red}, then\:
+  - [P(A or B) = P(A) + P(B)]{color=blue}
+- [General Addition Rule]{color=blue}\: if two events, A and B, are NOT mutually exclusive, then\:
   - [P(A or B) = P(A) + P(B) &ndash; P(A and B)]{color=blue}
 
 === layout: section
@@ -105,7 +120,7 @@
 
 @top-left
 
-- Use multiplication rule for each offspring.
+- [Multiply within cells]{color=orange}; [add matching cells]{color=blue}.
 - The expected ratio\:
 - 1/6 AA; 3/6 Aa; 2/6 aa
 - 1/6 AA; 1/2 Aa; 1/3 aa
@@ -162,8 +177,8 @@
 - Selected F2 round: 2/3 Rr; 1/3 RR
 - Testcross RR x rr: no wrinkled offspring
 - Testcross Rr x rr: 1/2 wrinkled offspring
-- P(F3 wrinkled) = P(wrinkled | Rr) x P(Rr)
-- = 1/2 x 2/3 = 1/3
+- [P(F3 wrinkled) = P(wrinkled | Rr) x P(Rr)]{color=orange}
+- [= 1/2 x 2/3 = 1/3]{color=orange}
 
 === layout: section
 
@@ -183,13 +198,13 @@
 
 - A\: individual tests positive
 - B\: individual has disease
-- P(A) = P(A and B) + P(A and not B)
+- [P(A) = P(A and B) + P(A and not B)]{color=blue}
 - P(A and B)
-  - = P(A|B) × P(B) = 1 × 0.002
+  - [= P(A|B) × P(B) = 1 × 0.002]{color=orange}
 - P(A and not B)
-  - = P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)
-- 1×0.002 + 0.002×(1&ndash;0.002)
-  - = [0.003996]{color=red}
+  - [= P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)]{color=orange}
+- [1×0.002]{color=orange} [+]{color=blue} [0.002×(1&ndash;0.002)]{color=orange}
+  - = [0.003996]{color=blue}
 
 @top-right
 
@@ -199,6 +214,25 @@
 
 ![Slide image 5](assets/lect05g-more_probability_problems/image_004.png)
 
+=== layout: one-panel
+
+# Summary: use the relevant group
+
+@body
+
+- Unequal pollen success changes gamete frequencies
+- [Multiply cell probabilities]{color=orange}; [add matching outcomes]{color=blue}
+- Selected round offspring: &#x2153; RR, &#x2154; Rr
+- Testcross predictions depend on the selected mix
+
+@notes
+
+For round offspring selected from Rr by Rr, the genotype mix is one-third RR and two-thirds Rr. Only the Rr testcross produces wrinkled offspring: two-thirds times one-half gives one-third. Ask why one-half alone is insufficient.
+
 === layout: theend
 
 # THE END
+
+@notes
+
+Pause for final questions before closing this deck.
