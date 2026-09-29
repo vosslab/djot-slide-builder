@@ -15,6 +15,7 @@
 
 - Exclude `tests/_temp/` from Git and normal pytest collection. Retain only note-boundary and
   native-export behavior tests; use temporary checks for broader implementation evidence.
+- Synchronized shared style guides, tests, and repository support files from the starter template.
 
 ### Developer Tests and Notes
 
