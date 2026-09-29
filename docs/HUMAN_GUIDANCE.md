@@ -37,3 +37,5 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Double-check the other Lecture 05 files for missing source text colors as well as Lecture 05C.
 - Use subscripts for the numbered alleles in Lecture 05D, such as A with subscript 2.
 - Give Lecture 05H a deep review; we can do better than the initial conversion.
+- Lecture 05F needs its missing allele superscripts and generation subscripts restored,
+  including I with superscript A and F/P generation indices.

@@ -7,6 +7,9 @@
 
 ### Fixes and Maintenance
 
+- Restore Lecture 05F superscript allele letters in ABO and C-locus genotypes, plus
+  F1/F2 and P1/P2 generation subscripts in headings, prose, and native tables.
+
 - Deep-review Genetics Lecture 05H and improve 60 of its 87 slides. Restore missing pea, squash,
   and Labrador squares; replace tiny summary images with native grouping tables; clarify pathway
   blocks, F2 versus testcross weights, and the cat example's gene labels.
@@ -40,6 +43,9 @@
 - Rotated older changelog day blocks into CHANGELOG-2026-09b.md, retaining the two newest dates.
 
 ### Developer Tests and Notes
+
+- Lecture 05F passes strict native validation and capacity checks with 52 slides. Rebuilt ODP/PDF
+  and visually checked all 14 changed pages for raised allele letters and lowered generation indices.
 
 - Lecture 05H passes strict native validation and has no capacity warnings. All 87 source and
   generated pages received contact-sheet review, with larger checks of restored teaching objects.

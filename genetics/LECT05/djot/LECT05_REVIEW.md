@@ -172,3 +172,12 @@ and their consequences. Native phenotype-group tables distinguish F2 counts from
 Cat gene labels, the flower-count normalization, and genotype-versus-phenotype prompts were corrected.
 Strict native validation passes; capacity inspection has no 05H concerns. The rebuilt ODP/PDF
 received a full contact-sheet sweep and larger checks of the repaired teaching objects.
+
+## Lecture 05F notation repair
+
+Restored 28 ABO allele superscripts, 50 C-locus allele superscripts (preserving uppercase
+and lowercase source letters), and 52 F/P generation subscripts across 14 slides.
+Numeric character references keep the Djot sources ASCII and the native text editable.
+Strict native validation and capacity checks pass for all 52 slides. Rebuilt both ODP
+and PDF and visually reviewed every changed page, including the ABO Punnett square,
+flower crosses, donor/recipient table, and dominance-game genotypes.

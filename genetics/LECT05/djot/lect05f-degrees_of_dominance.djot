@@ -51,22 +51,22 @@
 
 === layout: two-panels
 
-# Incomplete dominance: F1 and F2
+# Incomplete dominance: F&#x2081; and F&#x2082;
 
 @left
 
 ![Four-o-clock flowers](assets/lect05f-degrees_of_dominance/image_001.jpg)
 
-- P: red CRCR x white CWCW
-- F1: all pink CRCW
-- F1 gametes: 1/2 CR; 1/2 CW
+- P: red C&#x1D3F;C&#x1D3F; x white C&#x1D42;C&#x1D42;
+- F&#x2081;: all pink C&#x1D3F;C&#x1D42;
+- F&#x2081; gametes: 1/2 C&#x1D3F;; 1/2 C&#x1D42;
 
 @right
 
-| Egg / sperm | CR | CW |
+| Egg / sperm | C&#x1D3F; | C&#x1D42; |
 | --- | --- | --- |
-| CR | CRCR: red | CRCW: pink |
-| CW | CRCW: pink | CWCW: white |
+| C&#x1D3F; | C&#x1D3F;C&#x1D3F;: red | C&#x1D3F;C&#x1D42;: pink |
+| C&#x1D42; | C&#x1D3F;C&#x1D42;: pink | C&#x1D42;C&#x1D42;: white |
 
 === layout: two-panels
 
@@ -92,8 +92,8 @@
 
 - [Red versus white flower color in snapdragons shows incomplete dominance]{color=red}
 
-- Incomplete dominance yields a 1\:2\:1 phenotypic ratio in the F2
-- The normal phenotype ratio observed in the F2 is 3\:1 for a simple dominant/recessive allele pair.
+- Incomplete dominance yields a 1\:2\:1 phenotypic ratio in the F&#x2082;
+- The normal phenotype ratio observed in the F&#x2082; is 3\:1 for a simple dominant/recessive allele pair.
 
 === layout: one-panel
 
@@ -161,17 +161,17 @@
 
 ![ABO carbohydrates](assets/lect05f-degrees_of_dominance/image_006.jpg)
 
-- IA: carbohydrate A
-- IB: carbohydrate B
+- I&#x1D2C;: carbohydrate A
+- I&#x1D2E;: carbohydrate B
 - i: neither carbohydrate
 
 @right
 
 | Blood group | Genotypes |
 | --- | --- |
-| A | IAIA or IAi |
-| B | IBIB or IBi |
-| AB | IAIB |
+| A | I&#x1D2C;I&#x1D2C; or I&#x1D2C;i |
+| B | I&#x1D2E;I&#x1D2E; or I&#x1D2E;i |
+| AB | I&#x1D2C;I&#x1D2E; |
 | O | ii |
 
 === layout: one-panel
@@ -220,10 +220,10 @@
 
 @body
 
-| Egg / sperm | IA | IB |
+| Egg / sperm | I&#x1D2C; | I&#x1D2E; |
 | --- | --- | --- |
-| IA | IAIA: type A | IAIB: type AB |
-| IB | IAIB: type AB | IBIB: type B |
+| I&#x1D2C; | I&#x1D2C;I&#x1D2C;: type A | I&#x1D2C;I&#x1D2E;: type AB |
+| I&#x1D2E; | I&#x1D2C;I&#x1D2E;: type AB | I&#x1D2E;I&#x1D2E;: type B |
 
 
 === layout: one-panel
@@ -338,10 +338,10 @@
 
 @right
 
-- P1: AA
-- P2: aa
-- F1: Aa
-- F2: 1 AA : 2 Aa : 1 aa
+- P&#x2081;: AA
+- P&#x2082;: aa
+- F&#x2081;: Aa
+- F&#x2082;: 1 AA : 2 Aa : 1 aa
 - Step 2: What are the donor percentages?
 
 === layout: two-panels
@@ -356,12 +356,12 @@
 
 @right
 
-- P1: [AA]{color=red}; P2: [aa]{color=red}; F1: [Aa]{color=red}
+- P&#x2081;: [AA]{color=red}; P&#x2082;: [aa]{color=red}; F&#x2081;: [Aa]{color=red}
 
-- P1 to P2 and P2 to P1: 0%
-- Either parent to F1: 100%
-- F1 to either parent: 0%
-- F2: [1 AA : 2 Aa : 1 aa]{color=red}
+- P&#x2081; to P&#x2082; and P&#x2082; to P&#x2081;: 0%
+- Either parent to F&#x2081;: 100%
+- F&#x2081; to either parent: 0%
+- F&#x2082;: [1 AA : 2 Aa : 1 aa]{color=red}
 
 === layout: two-panels
 
@@ -375,12 +375,12 @@
 
 @right
 
-- P1: [AA]{color=red}; P2: [aa]{color=red}; F1: [Aa]{color=red}
+- P&#x2081;: [AA]{color=red}; P&#x2082;: [aa]{color=red}; F&#x2081;: [Aa]{color=red}
 
-- P1 to P2 and P2 to P1: 0%
-- Either parent to F1: 100%
-- F1 to either parent: 0%
-- F2: [1 AA : 2 Aa : 1 aa]{color=red}
+- P&#x2081; to P&#x2082; and P&#x2082; to P&#x2081;: 0%
+- Either parent to F&#x2081;: 100%
+- F&#x2081; to either parent: 0%
+- F&#x2082;: [1 AA : 2 Aa : 1 aa]{color=red}
 
 === layout: two-panels
 
@@ -388,8 +388,8 @@
 
 @left
 
-- P1: [AA]{color=red}; P2: [aa]{color=red}; F1: [Aa]{color=red}
-- F2: [1 AA : 2 Aa : 1 aa]{color=red}
+- P&#x2081;: [AA]{color=red}; P&#x2082;: [aa]{color=red}; F&#x2081;: [Aa]{color=red}
+- F&#x2082;: [1 AA : 2 Aa : 1 aa]{color=red}
 
 ![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
 
@@ -399,13 +399,13 @@
 
 | Donor -> recipient | Accepted |
 | --- | --- |
-| P1 <-> P2 | 0% |
-| P1 or P2 -> F1 | 100% |
-| F1 -> P1 or P2 | 0% |
-| F1 -> F2 | 50% |
-| F2 -> F1 | 100% |
-| P1 or P2 -> F2 | 75% |
-| F2 -> P1 or P2 | 25% |
+| P&#x2081; <-> P&#x2082; | 0% |
+| P&#x2081; or P&#x2082; -> F&#x2081; | 100% |
+| F&#x2081; -> P&#x2081; or P&#x2082; | 0% |
+| F&#x2081; -> F&#x2082; | 50% |
+| F&#x2082; -> F&#x2081; | 100% |
+| P&#x2081; or P&#x2082; -> F&#x2082; | 75% |
+| F&#x2082; -> P&#x2081; or P&#x2082; | 25% |
 
 === layout: section
 
@@ -480,9 +480,9 @@
 
 - incomplete dominance
 
-- CRCR = red flowers
-- CRCw = pink flowers
-- CwCw = white flowers
+- C&#x1D3F;C&#x1D3F; = red flowers
+- C&#x1D3F;C&#x02B7; = pink flowers
+- C&#x02B7;C&#x02B7; = white flowers
 
 === layout: two-panels
 
@@ -494,9 +494,9 @@
 
 @right
 
-- CRCR = red flowers
-- CRCw = red and white flowers
-- CwCw = white flowers
+- C&#x1D3F;C&#x1D3F; = red flowers
+- C&#x1D3F;C&#x02B7; = red and white flowers
+- C&#x02B7;C&#x02B7; = white flowers
 
 - [A. complete]{color=green}
 - [B. co-dominance]{color=blue}
@@ -521,9 +521,9 @@
 
 @right
 
-- CBCB = purple flowers
-- CBCw = purple flowers
-- CwCw = white flowers
+- C&#x1D2E;C&#x1D2E; = purple flowers
+- C&#x1D2E;C&#x02B7; = purple flowers
+- C&#x02B7;C&#x02B7; = white flowers
 
 - [A. complete]{color=green}
 - [B. co-dominance]{color=blue}
@@ -549,10 +549,10 @@
 - [B. co-dominance]{color=blue}
 - [C. incomplete]{color=red}
 
-- CRCR = red cow
-- CRCw = roan cow
+- C&#x1D3F;C&#x1D3F; = red cow
+- C&#x1D3F;C&#x02B7; = roan cow
   - (red and white)
-- CwCw = white cow
+- C&#x02B7;C&#x02B7; = white cow
 
 === layout: two-panels
 
@@ -566,9 +566,9 @@
 
 - complete dominance
 
-- CHCH = horned cow
-- CHCp = horned cow
-- CpCp = hornless (polled) cow
+- C&#x1D34;C&#x1D34; = horned cow
+- C&#x1D34;C&#x1D56; = horned cow
+- C&#x1D56;C&#x1D56; = hornless (polled) cow
 
 - [A. complete]{color=green}
 - [B. co-dominance]{color=blue}
@@ -582,9 +582,9 @@
 
 | Genotype | Blood group |
 | --- | --- |
-| IAIA | A |
-| IAIB | AB |
-| IBIB | B |
+| I&#x1D2C;I&#x1D2C; | A |
+| I&#x1D2C;I&#x1D2E; | AB |
+| I&#x1D2E;I&#x1D2E; | B |
 
 @right
 

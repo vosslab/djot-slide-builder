@@ -239,6 +239,10 @@ scopes are source errors.
 For numbered allele subscripts, use numeric character references: `A&#x2082;` renders as
 A with subscript 2, and `A&#x2081;A&#x2082;` renders both allele indices below the baseline.
 These remain editable text and work inside colored spans and table cells.
+Generation labels use the same convention: `F&#x2081;` and `P&#x2082;`.
+For raised allele letters, use numeric references to modifier letters, such as
+`I&#x1D2C;` (I with superscript A), `I&#x1D2E;` (I with superscript B),
+and `C&#x1D3F;` (C with superscript R). Preserve the source allele letter case.
 
 Use backticks for a short fixed-width sequence.  Fenced code preserves aligned multiline Djot
 source and currently receives a native-destination diagnostic before rendering.
