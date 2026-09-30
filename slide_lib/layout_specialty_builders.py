@@ -55,6 +55,27 @@ def title_slide_decorations(theme: slide_lib.presentation_theme.PresentationThem
 	)
 
 
+def reference_decorations(source: slide_lib.native_model.Slide,
+		theme: slide_lib.presentation_theme.PresentationTheme, order: int,
+		session: slide_lib.layout_measurement.MeasurementSession
+		) -> tuple[slide_lib.layout_model.LayoutObject, ...]:
+	"""Mark later-study slides without consuming the standard body allocation."""
+	border = _decorative_shape("reference-border",
+		slide_lib.layout_primitives.LogicalRectangle(20, 20, 1240, 760),
+		slide_lib.layout_primitives.ShapeKind.RECTANGLE, None,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.LinePattern.SOLID, 2.0, 0, 0, order + 1)
+	border = dataclasses.replace(border, content=dataclasses.replace(border.content,
+		style=dataclasses.replace(border.content.style, line_color="C8CDD2")))
+	paragraph = slide_lib.native_model.Paragraph(source.location,
+		(slide_lib.native_model.Text("For reference - not covered in class."),))
+	label = slide_lib.layout_object_builders.text_object("reference-label", paragraph,
+		slide_lib.layout_primitives.LogicalRectangle(60, 728, 1160, 40),
+		22.0, 22.0, slide_lib.layout_primitives.StyleRole.BODY, _frame_text(), None,
+		order, slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session)
+	return border, label
+
+
 def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		contract: slide_lib.layout_primitives.LayoutContract,

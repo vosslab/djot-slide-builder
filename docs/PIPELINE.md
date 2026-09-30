@@ -65,10 +65,9 @@ measurement inputs participate in the cache key, so host substitution or a stale
 silently alter capacity. The obsolete `0.25em` heuristic and generic 10-percent width cap are not
 part of this pipeline.
 
-ODP export derives package-only OFL-compliant renamed copies of those six validated font bytes as
-face-specific `Fonts/` resources and maps each editable run to its stable ODF face declaration.
-The renamed family avoids a host same-name collision while the document remains ordinary editable
-ODF text; ODP remains the sole input to LibreOffice PDF conversion.
+ODP export embeds the original validated font bytes as face-specific `Fonts/` resources and maps
+each editable run to its stable ODF face declaration using the public font family name.
+Font files and licenses remain unchanged; ODP remains the sole input to LibreOffice PDF conversion.
 
 The theme's ordinary outline policy is 1.30em line spacing, serialized in the OTP as
 `fo:line-height="130%"`. `ParagraphProperties` holds the resolved list text-start and hanging

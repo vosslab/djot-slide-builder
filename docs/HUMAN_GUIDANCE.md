@@ -73,7 +73,37 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   fine); keep font substitutions out of Djot files. Preserve student-facing prose about fonts.
 - Djot specifies semantic font families or roles, not concrete font names. The backend owns the
   mapping from ordinary, monospace, and condensed text to installed or bundled font faces.
+- LibreOffice must display the real font family names, not renamed Djot-prefixed families.
+- Show the URLs being clicked so their destinations can be inspected for spam or security
+  concerns. Render visible URLs in the backend's narrow/condensed font; retain helpful context
+  beside the address rather than hiding it behind a descriptive link label.
+- URLs may be 2 pt smaller than surrounding text as well as condensed. Check rendered slides
+  for awkward URL splits, especially Lecture 05A; do not leave isolated letters or large gaps.
 - Prefer pollen/ovule labels for plant examples and sperm/egg labels for animal examples.
+- Add colorful plant emoji to Lecture 05D v2 to make the plant examples more visually interesting.
+- Explicitly label longer slides intended for future student reference with a short phrase
+  saying they are not covered in lecture.
+- Use a dedicated one-panel layout for reference-only slides, with a light gray slide outline.
+- Make allele symbols stand out from surrounding prose, using italics or another clear distinction.
+- Present probability rules directly: name the Specific or General Rule, state its condition,
+  then give the formula. Keep both multiplication orders in the summary reference.
+- Give Lecture 05D v2 clearer section and subsection breaks. Addition Rule should be a section;
+  distinguish major concepts from the worked applications within them.
+- Lecture 05D v2 became confusing: the purpose of individual slides was unclear and transitions
+  felt jarring. Rebuild a connected narrative around the original sequence and visual explanations;
+  more prompts, fragments, or section dividers do not by themselves make the lecture clearer.
+- Apply the early-jargon guidance to probability notation too: explain P and event labels near
+  the front of the deck, before students encounter them in worked problems.
+- Preserve the opening pollen problem's mutant-allele context and callback to last week's
+  F1-to-F2 monohybrid cross. Explicitly ask students to complete the Punnett square and predict
+  the F2 genotype ratio; do not replace that structure with a generic offspring question.
+- The original textbook question looked different from the surrounding slides, which made
+  it feel special and recognizable as a problem statement. Preserve that visual distinction
+  using editable text, not the original image; the durable layout approach is still undecided.
+- Keep column widths stable across the repeated left-hand Punnett tables starting with
+  "Does every offspring qualify?" so students can follow the same cells between slides.
+- Prefer an elegant, durable compiler solution for consistency over manual per-slide tuning,
+  even if expressing the intended relationship adds a little Djot markup.
 - Compare terminology with my local genetics textbooks; anatomical precision should fit the
   teaching context rather than adding an unnecessary distinction to a probability lesson.
 - Add useful lessons from those textbooks to Lecture 05D v2 to improve clarity and engagement.
@@ -83,7 +113,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 ## Conversion review
 
 - Preserve source colors and bold key labels in announcements. Anonymous-message instructions
-  need the source image; use readable clickable labels instead of broken long URL fragments.
+  need the source image; keep clickable URLs visible and intact, using the condensed font role.
 - Check static versus weekly announcement ownership, and use the instructor's schedule spreadsheet
   to update assessment dates.
 - Use the edited 2026 Lecture 04 slides as examples of the changes I needed after Djot conversion.

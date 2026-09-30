@@ -2,6 +2,19 @@
 
 ### Additions and New Features
 
+- Add deck-scoped `table-group` sizing: the compiler pools column needs across explicitly
+  related tables before laying out slides, so later answer text informs earlier question widths.
+  Replace 05D v2's four manual width lists with the `overlap-cross` group. Preserve independent
+  automatic tables and optional manual proportions; reject conflicting modes or column counts.
+  Verify adaptation to later edits, isolation across tables/builds, 126 focused tests, lint,
+  capacity, and all four rendered PDF pages.
+- Add optional table `column-widths` proportions with source validation and native measurement.
+  Apply 1:3:3 widths to the 05D v2 overlap question, answer, double-count explanation, and callback.
+  Verify all four PDF pages, lint/capacity, and 121 focused parser/layout/export tests.
+- Add the `reference` one-panel layout with an unfilled light gray border behind editable
+  text and an automatic "For reference - not covered in class." footer outside the body area.
+  Apply it to the three 05D v2 study slides. Validate with 65 focused parser/layout/export tests,
+  deck lint and capacity checks, and visual review of all three exported PDF pages.
 - Add a textbook-inspired independence vote and Punnett-square answer to Lecture 05D v2:
   three aa offspring do not change the next offspring's probability for known Aa x Aa parents.
   Connect this to the conditioning warmup; the deck now has 45 slides and six MC checkpoints.
@@ -31,6 +44,54 @@
 
 ### Fixes and Maintenance
 
+- Record the teaching value of visually distinct textbook problem statements. Preserve that
+  cue when converting screenshots to editable text; leave the reusable layout design open.
+
+- Rebuild Lecture 05D v2 as a 44-slide connected narrative, down from 58. Keep the four-allele
+  cross through addition and multiplication, restore parent-to-gamete branching graphics, enlarge
+  repeated Punnett squares, and explicitly return to solve the opening F2 pollen problem.
+  Shorten conditional probability to one family story with a branching diagram; retain reverse
+  conditioning and Bayes as study references. Add purpose/transition notes on the revised flow
+  and preserve the prior source, ODP, and PDF under output/lect05d_before_narrative/.
+
+- Add an Addition Rule section and convert the existing multiplication opener to a Multiplication
+  Rule section in Lecture 05D v2. Add lighter subsection dividers for the pollen application,
+  family example, and condition checks, with instructor notes. The deck now has 58 slides.
+
+- Share URL fragmentation between measurement and export, preferring address separators over
+  arbitrary letter splits. Measure and emit literal URLs 2 pt smaller in the condensed role.
+  Put Lecture 05 destinations on separate lines and verify the rendered announcement/resource pages.
+
+- Restore visible destination URLs beside link descriptions in Lecture 05 announcements and
+  epistasis resources. Document visible URLs as the slide-authoring preference for destination
+  inspection; use the existing backend-owned IBM Plex Sans Condensed role without font overrides.
+
+- Embed original, hash-verified font bytes and public font families in generated ODPs instead
+  of renamed Djot-prefixed derivatives. Preserve editable text, all styles, and bundled licenses;
+  remove obsolete derivative hashes and test exact payload and public-name preservation.
+
+- Restore direct condition-then-formula wording and Specific/General labels on Lecture 05D v2
+  probability rule cards and summary references. Retain both multiplication orders and clarify
+  that general rules also cover the special cases.
+
+- Restore the 05D v2 opening problem's mutant-pollen context, prior-week F1-to-F2 connection,
+  and explicit tasks to complete the Punnett square and predict the F2 genotype ratio.
+  Carry generation labels into the callback, solved prediction, and study reference.
+- Expand 05D v2's bare Addition opener with the blue union Venn diagram and a concrete
+  counting prompt about outcomes shared by both events. Preserve the later overlap discovery;
+  rebuild and visually check the revised slide, with passing lint and capacity checks.
+- Add slide 3, "Probability speak," to 05D v2 before the opening section and challenge.
+  Define event, P notation, general event labels, OR, AND, given, mutually exclusive, and
+  independent. Use allele-based descriptions instead of B/C aliases in the worked cross.
+  The deck now has 54 slides; lint/capacity and visual checks of five changed pages pass.
+- Italicize visible allele and genotype symbols throughout 05D v2, including numbered alleles,
+  Punnett squares, inheritance probabilities, and study references. Preserve rule colors and
+  upright answer labels; check representative exported slides and deck lint/capacity.
+- Visibly label the three longer 05D v2 study slides as for reference and not covered in class.
+  Record this convention in the pedagogy guide; rebuild and visually check all three pages.
+- Add colorful seedling and blossom emoji to five plant-example slides in Lecture 05D v2.
+  Keep font selection backend-owned. Rebuild ODP/PDF and visually check all five changed pages;
+  emoji render in color without clipping or new wrapping issues.
 - Add a closing Summary section to 05D v2 with standalone Addition Rules and Multiplication
   Rules references, each collecting the earlier special and general forms with conditions.
   Keep the three study explanations and final takeaways before THE END. Document selective

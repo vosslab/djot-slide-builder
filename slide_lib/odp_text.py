@@ -245,7 +245,8 @@ def _write_inlines(parent: xml.etree.ElementTree.Element,
 		style_name = (f"DjotText{slide_index + 1}_{object_index + 1}_"
 			f"{paragraph_index + 1}_{inline_index + 1}")
 		_add_text_style(automatic, style_name, inline.style,
-			paragraph.typography.selected_size_pt)
+			slide_lib.presentation_theme.inline_size_pt(
+				paragraph.typography.selected_size_pt, inline.style.literal_url))
 		span = xml.etree.ElementTree.SubElement(parent, _qname(TEXT_NS, "span"), {
 			_qname(TEXT_NS, "style-name"): style_name,
 		})

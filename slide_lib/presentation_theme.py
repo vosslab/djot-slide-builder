@@ -5,7 +5,6 @@ import dataclasses
 import enum
 import functools
 import hashlib
-import io
 import json
 import pathlib
 
@@ -143,7 +142,6 @@ class OdfFontFace:
 	package_member: str
 	media_type: str
 	format_name: str
-	derivative_sha256: str
 
 
 @dataclasses.dataclass(frozen=True)
@@ -155,7 +153,6 @@ class FontProvenance:
 	upstream_revision: str
 	license_path: pathlib.PurePosixPath
 	license_sha256: str
-	odp_derivative_sha256: str
 
 
 FONT_FACE_PROFILES = (
@@ -212,11 +209,7 @@ _ODF_FONT_NAMES = (
 	"DjotIBMPlexSansCondensedBoldItalic",
 )
 
-_EMBEDDED_FONT_FAMILIES = {
-	"Atkinson Hyperlegible Next": "DjotAtkinsonHyperlegibleNext",
-	"Atkinson Hyperlegible Mono": "DjotAtkinsonHyperlegibleMono",
-	"IBM Plex Sans Condensed": "DjotIBMPlexSansCondensed",
-}
+
 
 
 @dataclasses.dataclass(frozen=True)
@@ -383,9 +376,6 @@ def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> t
 		manifest = json.load(manifest_file)
 	if manifest["manifest_version"] != 1:
 		raise ThemeError("unsupported bundled font provenance manifest version")
-	if manifest.get("odp_derivative_recipe") != \
-		"TTFont(recalcTimestamp=False); rename name IDs 1, 4, 6, and 16 only":
-		raise ThemeError("unsupported ODP font derivative recipe")
 	entries = manifest["fonts"]
 	if not isinstance(entries, list):
 		raise ThemeError("bundled font provenance manifest fonts must be a list")
@@ -402,10 +392,6 @@ def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> t
 			raise ThemeError(f"font provenance disagrees with registered face: {profile.relative_path}")
 		if not isinstance(entry.get("version"), str) or not entry["version"]:
 			raise ThemeError(f"font provenance is missing its face version: {profile.relative_path}")
-		derivative_sha256 = entry.get("odp_derivative_sha256")
-		if not isinstance(derivative_sha256, str) or len(derivative_sha256) != 64:
-			raise ThemeError(f"font provenance is missing its ODP derivative hash: "
-				f"{profile.relative_path}")
 		license = entry["license"]
 		license_path = pathlib.PurePosixPath(license["path"])
 		if license["spdx"] != "OFL-1.1" or license_path.is_absolute() or ".." in license_path.parts:
@@ -421,7 +407,7 @@ def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> t
 		if not upstream["url"].startswith("https://") or not upstream["revision"]:
 			raise ThemeError(f"font provenance has invalid upstream source: {profile.relative_path}")
 		provenance.append(FontProvenance(profile, upstream["url"], upstream["revision"],
-			license_path, license["sha256"], derivative_sha256))
+			license_path, license["sha256"]))
 	if len(entries) != len(provenance):
 		raise ThemeError("bundled font provenance has unregistered font records")
 	return tuple(provenance)
@@ -476,17 +462,16 @@ def odf_font_faces(
 		repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[OdfFontFace, ...]:
 	"""Return every verified bundled face with its deterministic ODF resource identity."""
 	faces = []
-	provenance_by_profile = {item.profile: item for item in validate_font_manifest(repository_root)}
+	validate_font_manifest(repository_root)
 	for profile, odf_name in zip(FONT_FACE_PROFILES, _ODF_FONT_NAMES, strict=True):
 		validate_font_face(profile, repository_root)
 		path = font_asset_path(profile, repository_root)
-		embedded_family = _EMBEDDED_FONT_FAMILIES[profile.family]
+		embedded_family = profile.family
 		is_otf = path.suffix.lower() == ".otf"
 		faces.append(OdfFontFace(profile, odf_name, embedded_family,
 			f"Fonts/{embedded_family}-{_font_style_name(profile)}{path.suffix.lower()}",
 			"application/vnd.ms-opentype" if is_otf else "application/x-font-ttf",
-			"opentype" if is_otf else "truetype",
-			provenance_by_profile[profile].odp_derivative_sha256))
+			"opentype" if is_otf else "truetype"))
 	return tuple(faces)
 
 
@@ -501,15 +486,24 @@ def odf_font_face_name(family: str, bold: bool = False, italic: bool = False) ->
 
 
 #============================================
+def inline_size_pt(paragraph_size_pt: float, literal_url: bool) -> float:
+	"""Apply the backend-owned two-point reduction for visible URL text."""
+	size = paragraph_size_pt - 2.0 if literal_url else paragraph_size_pt
+	if size <= 0:
+		raise ThemeError("inline font size must remain positive")
+	return size
+
+
+#============================================
 def odf_font_family(family: str, bold: bool = False, italic: bool = False) -> str:
-	"""Return the unique embedded family for one already-resolved semantic run style."""
+	"""Return the public family for one already-resolved semantic run style."""
 	select_font_face(family, bold, italic)
-	return _EMBEDDED_FONT_FAMILIES[family]
+	return family
 
 
 #============================================
 def _font_style_name(profile: FontFaceProfile) -> str:
-	"""Return the stable face suffix used by ODF resources and renamed font records."""
+	"""Return the stable face suffix used by ODF package resources."""
 	if profile.bold and profile.italic:
 		return "BoldItalic"
 	if profile.bold:
@@ -522,40 +516,19 @@ def _font_style_name(profile: FontFaceProfile) -> str:
 #============================================
 def embedded_font_payload(face: OdfFontFace,
 		repository_root: pathlib.Path = REPOSITORY_ROOT) -> bytes:
-	"""Derive one OFL-compliant uniquely named package font from a pinned source face."""
+	"""Embed the verified original font bytes without changing their public identity."""
 	validate_font_face(face.profile, repository_root)
 	path = font_asset_path(face.profile, repository_root)
-	style_name = _font_style_name(face.profile)
-	try:
-		with fontTools.ttLib.TTFont(path, fontNumber=face.profile.face_index,
-				recalcTimestamp=False) as font:
-			name_table = font["name"]
-			for record in tuple(name_table.names):
-				if record.nameID in (1, 16):
-					value = face.embedded_family
-				elif record.nameID == 4:
-					value = f"{face.embedded_family} {style_name}"
-				elif record.nameID == 6:
-					value = f"{face.embedded_family}-{style_name}"
-				else:
-					continue
-				name_table.setName(value, record.nameID, record.platformID,
-					record.platEncID, record.langID)
-			output = io.BytesIO()
-			font.save(output)
-	except (OSError, fontTools.ttLib.TTLibError) as error:
-		raise ThemeError(f"bundled font cannot be renamed for ODP embedding: "
-			f"{face.profile.relative_path}") from error
-	payload = output.getvalue()
-	if hashlib.sha256(payload).hexdigest() != face.derivative_sha256:
-		raise ThemeError(f"ODP font derivative hash differs: {face.profile.relative_path}")
+	payload = path.read_bytes()
+	if hashlib.sha256(payload).hexdigest() != face.profile.sha256:
+		raise ThemeError(f"ODP font payload hash differs: {face.profile.relative_path}")
 	return payload
 
 
 #============================================
 def odf_font_license_payloads(
 		repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[dict[str, bytes], dict[str, str]]:
-	"""Return the deduplicated OFL notices required beside generated font derivatives."""
+	"""Return the deduplicated OFL notices required beside embedded font files."""
 	payloads = {}
 	media_types = {}
 	for provenance in validate_font_manifest(repository_root):

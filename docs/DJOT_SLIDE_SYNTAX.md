@@ -141,6 +141,7 @@ outside a named slot; required named slots still appear where listed.
 | `title-only` | Title Only, `AUTOLAYOUT_TITLE_ONLY` | none | H1 plus ordinary root body | A title introduces flexible editable text, lists, component images, or one table below when no panel layout fits. |
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
+| `reference` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One-panel study material with an unfilled light gray border and automatic reference-only footer. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
 | `theend` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | `# THE END` plus an optional root image | You are closing a lecture with the framed native closer. |
 | `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A lighter framed topic transition belongs within a chapter. |
@@ -255,6 +256,40 @@ its region, so place mixed prose or images in another slot or another slide.
 | Ligase | Seals a nick |
 ```
 
+For tables repeated across question/answer slides, give each table the same semantic group:
+
+```djot
+{table-group="overlap-cross"}
+| | A3 | A4 |
+| --- | --- | --- |
+| A1 | ? | ? |
+| A2 | ? | ? |
+```
+
+The compiler measures all tables in that group before laying out any slide, including later
+answers and hidden slides. It pools column needs at the theme's normal body size, then uses
+those shared needs when fitting each table. Tables with the same available width receive the
+same column widths even if their text sizes differ. Editing an answer updates the whole group.
+Groups are scoped to one deck and require the same number of columns; row heights still follow
+each table's content. Group names start with a letter and contain letters, digits, `_`, or `-`.
+Unrelated tables remain independent. Do not combine `table-group` with `column-widths`.
+
+For deliberate manual proportions, set `column-widths` immediately before a table instead.
+Weights apply to the full column widths, including padding:
+
+```djot
+{column-widths="1,3,3"}
+| | A3 | A4 |
+| --- | --- | --- |
+| A1 | ? | ? |
+| A2 | ? | ? |
+```
+
+Supply one positive finite numeric weight per column. Here the label column receives one
+seventh of the width and each outcome column receives three sevenths. Omit the attribute for
+automatic content-based widths. The table remains editable; wrapping and row heights still
+respond to its content. Invalid, duplicate, or non-table uses are rejected.
+
 Use `{color=<name>}` immediately before a paragraph, list, list item, arrow, or outline to color the
 whole object. Use a Djot attributed span for a shorter colored run:
 
@@ -333,6 +368,7 @@ without alignment metadata.
 Raw HTML and XML tokens remain literal editable text under the current subset parser. Generic divs,
 footnotes, raw blocks, definition lists, thematic breaks, Djot symbols, paired tilde or caret inline
 forms, and inline images have no presentation surface. One-line attributes have native meaning only
-for the color scopes documented above. Fenced code, display math, block quotes, and inline math are
+for the color scopes, table groups, and column proportions documented above. Fenced code, display math,
+block quotes, and inline math are
 recognized source forms that currently receive a native-destination diagnostic. Source-located
 diagnostics make the available editable forms clear.

@@ -16,6 +16,30 @@ import slide_lib.native_model
 
 
 #============================================
+@pytest.mark.parametrize("attribute", (
+	'{column-widths="1,2"}', '{column-widths="1,0,2"}',
+	'{column-widths="1,-1,2"}', '{column-widths="1,nan,2"}',
+	'{column-widths="1,2,2" column-widths="1,3,3"}',
+))
+def test_invalid_table_column_proportions_fail_at_source(tmp_path: pathlib.Path,
+		attribute: str) -> None:
+	"""Malformed geometry must be rejected before reaching table measurement or export."""
+	message = parse_error(tmp_path, "=== layout: one-panel\n\n@body\n\n" + attribute +
+		"\n| X | Y | Z |\n| --- | --- | --- |\n| a | b | c |\n")
+	assert "column-widths" in message
+
+
+@pytest.mark.parametrize("attribute", (
+	'{table-group=""}', '{table-group="cross" table-group="other"}',
+	'{table-group="cross" column-widths="1,3,3"}',
+))
+def test_invalid_table_groups_fail_at_source(tmp_path: pathlib.Path, attribute: str) -> None:
+	"""Only unambiguous named groups enter the compiler prepass."""
+	message = parse_error(tmp_path, "=== layout: one-panel\n\n@body\n\n" + attribute +
+		"\n| X | Y | Z |\n| --- | --- | --- |\n| a | b | c |\n")
+	assert "table-group" in message
+
+
 def test_character_entities_decode_in_styled_text_but_not_verbatim(tmp_path: pathlib.Path) -> None:
 	"""Entities become visible characters without becoming inline syntax or decoding twice."""
 	runs = slide_lib.djot_inline.parse_inlines(tmp_path / "deck.djot", 1,

@@ -22,7 +22,7 @@ OVERLAY_ARROW_WIDTH_PT = 12.0
 def text_object(object_id: str, block: object,
 		rectangle: slide_lib.layout_primitives.LogicalRectangle,
 		size: float, floor: float, role: slide_lib.layout_primitives.StyleRole,
-		frame: slide_lib.layout_primitives.FrameTextProperties, slot: str, order: int,
+		frame: slide_lib.layout_primitives.FrameTextProperties, slot: str | None, order: int,
 		placeholder: slide_lib.layout_primitives.PlaceholderKind,
 		theme: slide_lib.presentation_theme.PresentationTheme, bold: bool = False,
 		session: slide_lib.layout_measurement.MeasurementSession | None = None,
@@ -158,9 +158,10 @@ def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], 
 			result.append(inline)
 			continue
 		style = inline.style
+		run_size = slide_lib.presentation_theme.inline_size_pt(size, style.literal_url)
 		for token in re.findall(r"\s+|\S+", inline.text):
 			fragments = slide_lib.layout_measurement.fragment_text(token, style.font_family,
-				style.bold, style.italic, size, width, theme, session)
+				style.bold, style.italic, run_size, width, theme, session)
 			for index, fragment in enumerate(fragments):
 				if index:
 					result.append(slide_lib.layout_content.LineBreak())

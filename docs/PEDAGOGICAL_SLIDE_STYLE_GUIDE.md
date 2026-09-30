@@ -95,6 +95,12 @@ statements and study-reference slides can use paragraphs. Match the amount of te
 Keep question text readable; place hints, the solution, and instructor commentary in notes
 or later slides.
 
+Give substantial problem statements a recognizable visual treatment. The original textbook
+screenshots made these questions stand apart from the instructor's explanations; preserve
+that teaching cue with editable text, not the original screenshot. A consistent problem panel or label
+could serve this purpose. The specific layout remains to be decided; retain backend-owned
+font selection and distinguish problem statements from reference-only slides.
+
 ### 3. Put the explanation in the speaker notes
 
 The slide should not contain everything the instructor plans to say.
@@ -334,6 +340,21 @@ Good divider slides include:
 
 Use transitions to help students see why the next topic follows from the previous one. Put the spoken transition in the notes.
 
+### Make the lecture tell a connected story
+
+Each slide should have a clear teaching purpose and a reason to follow the preceding slide.
+Keep a useful example visible through the question, attempted solution, explanation, and rule.
+Introduce a new context after the current example has reached a clear conclusion.
+
+When an opening problem motivates the tools, explain the plan before leaving it and return
+explicitly to answer it. Show students why a rule is needed before adding another formula.
+Section headings help navigation, but cannot repair missing reasoning between slides.
+
+Do not split every sentence into a new slide or add a vote at every step. Preserve the visual
+and verbal structure that lets the instructor tell the story. In notes, state the slide's purpose
+and a natural transition; include enough of the connection visibly for students studying later.
+Move optional extensions to clearly marked reference slides when they interrupt the main story.
+
 ### End with summary and takeaway slides
 
 Every content deck should have a summary immediately before its separate THE END slide,
@@ -489,6 +510,15 @@ Use **IBM Plex Sans Condensed** for the narrow-text role. The backend selects it
 Keep font-family selection in the backend; Djot specifies content and semantic formatting.
 Missing glyphs and mathematics may use backend-selected supporting fonts.
 
+Show clickable web destinations as visible URLs so the instructor and students can inspect
+where a link leads before opening it. Keep a short description alongside the URL when it helps
+explain the resource; do not replace the destination with a label such as "Read online."
+Use the exact destination as the link text so the backend selects the condensed URL role.
+Render URLs 2 pt smaller than surrounding text. Prefer their own line for long destinations.
+The backend should wrap addresses at meaningful separators rather than leaving isolated letters.
+Keep the full address intact in source, allow normal wrapping, and avoid manual spaces or
+shortening that obscures the destination. Djot must not specify a font name.
+
 Keep font choices simple and consistent. Do not mix many fonts on one slide. Use font size, spacing, and placement to create hierarchy instead of adding extra styles.
 
 Avoid shrinking text to make content fit. When text does not fit, reduce the words, move the explanation to notes, or split the idea across slides.
@@ -567,10 +597,30 @@ and worked examples. These slides may be text-heavy; readable text and a useful 
 matter more than a fixed word limit. Keep them with the relevant material or in a short
 review block before the penultimate summary and final THE END slide.
 
+When a slide is intended only for later study, use `=== layout: reference` with the usual
+title and `@body`. This one-panel layout adds an unfilled light gray outline behind the text
+and the visible footer "For reference - not covered in class." The backend supplies the label;
+do not repeat it in the body. The standard content area remains available for the explanation.
+
 Do not expand every slide into prose. Keep questions, visuals, and rule callbacks useful
 during class, while providing enough visible explanation for independent review.
 
+### Explain notation and distinguish allele symbols
+
+Treat unfamiliar notation as vocabulary: define `P(...)` and the meaning of event labels
+on the early terminology slide before using them in probability examples. Prefer descriptive
+events in worked problems; explain letter placeholders used in general rule statements.
+
+In genetics examples, italicize allele and genotype symbols in prose, headings, tables,
+and equations (Djot `_A_`, `_a_`, `_Aa_`). This distinguishes the allele `a` from the article
+"a." Preserve subscripts and existing explanatory colors. Answer-choice letters and ordinary
+words remain upright; do not infer allele formatting merely from a matching letter.
+
 ### Keep number formats consistent
+
+Keep columns stable when a table reappears across question, answer, and explanation slides.
+Use the same `table-group` name so the compiler sizes the whole sequence together, including
+later answers. Prefer this semantic relationship over repeating hand-tuned column proportions.
 
 Avoid switching between fractions, percentages, and decimals while teaching another concept.
 Choose one probability format for a deck and retain it in questions, choices, equations,

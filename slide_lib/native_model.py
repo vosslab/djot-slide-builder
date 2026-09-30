@@ -226,6 +226,19 @@ class Table:
 	headers: tuple[tuple[Inline, ...], ...]
 	rows: tuple[tuple[tuple[Inline, ...], ...], ...]
 	attributes: tuple[Attribute, ...] = ()
+	column_weights: tuple[float, ...] = ()
+	table_group: str | None = None
+
+	def __post_init__(self) -> None:
+		"""Keep explicit column proportions positive and aligned with the table schema."""
+		if self.table_group is not None and self.column_weights:
+			raise ValueError("table-group and column-widths are alternative sizing modes")
+		if self.column_weights:
+			columns = len(self.headers) if self.headers else len(self.rows[0])
+			if len(self.column_weights) != columns or any(
+				not math.isfinite(value) or value <= 0 for value in self.column_weights) or \
+				not math.isfinite(sum(self.column_weights)):
+				raise ValueError("table column widths require one positive finite weight per column")
 
 
 @dataclass(frozen=True)

@@ -35,19 +35,16 @@ pinned revision, asset hash, face index, and local license hash.
 
 ## Generated ODP resources
 
-Generated ODPs derive package-only copies with the unique families
-`DjotAtkinsonHyperlegibleNext`, `DjotAtkinsonHyperlegibleMono`, and `DjotIBMPlexSansCondensed`.
-The derivation changes only name-table
-identity; it retains each pinned asset's outlines and metrics. This prevents a same-name
-operating-system font from replacing the measured font while keeping the repository asset and its
-provenance immutable.
+Generated ODPs embed the original bundled font bytes unchanged. Editable text uses the public
+families Atkinson Hyperlegible Next, Atkinson Hyperlegible Mono, and IBM Plex Sans Condensed,
+so LibreOffice shows the same names users know from their installed fonts. Internal ODF resource
+identifiers are not font family names.
 
-The machine-readable provenance records the exact recipe
-`TTFont(recalcTimestamp=False); rename name IDs 1, 4, 6, and 16 only` and the
-SHA-256 of every resulting package derivative. Export validates those hashes before publication.
+The machine-readable provenance records each original file's SHA-256. Export validates that
+hash before embedding; there are no renamed derivatives or separate derivative hashes.
 
 Every generated ODP also carries the applicable OFL notice texts under `Fonts/licenses/` with
-their manifest entries. This keeps the notices beside the distributed derivatives as required by
+their manifest entries. This keeps the notices beside the distributed fonts as required by
 OFL condition 2.
 
 ## Code runs

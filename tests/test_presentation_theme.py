@@ -149,12 +149,16 @@ def test_font_embedding_requires_an_editable_os2_permission() -> None:
 
 
 #============================================
-def test_embedded_font_derivation_is_stable_and_uses_its_unique_family() -> None:
-	"""Package-only font derivatives retain the selected outlines under an unambiguous family."""
+def test_embedded_fonts_preserve_original_bytes_and_public_families() -> None:
+	"""Editable documents retain real family names and the exact measured font files."""
 	for face in slide_lib.presentation_theme.odf_font_faces():
 		first = slide_lib.presentation_theme.embedded_font_payload(face)
 		assert first == slide_lib.presentation_theme.embedded_font_payload(face)
-		assert hashlib.sha256(first).hexdigest() == face.derivative_sha256
+		assert hashlib.sha256(first).hexdigest() == face.profile.sha256
+		assert first == slide_lib.presentation_theme.font_asset_path(face.profile).read_bytes()
+		assert face.embedded_family == face.profile.family
+		assert slide_lib.presentation_theme.odf_font_family(
+			face.profile.family, face.profile.bold, face.profile.italic) == face.profile.family
 		with fontTools.ttLib.TTFont(io.BytesIO(first)) as font:
 			assert slide_lib.presentation_theme.font_name(font, 16, 1) == face.embedded_family
 

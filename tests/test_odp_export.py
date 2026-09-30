@@ -147,6 +147,9 @@ def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib
 			for element in root.findall(f".//{{{exporter.STYLE_NS}}}font-face")}
 		assert set(declarations) == {face.odf_name for face in faces}
 		for face in faces:
+			assert face.embedded_family == face.profile.family
+			assert archive.read(face.package_member) == \
+				slide_lib.presentation_theme.font_asset_path(face.profile).read_bytes()
 			uri = declarations[face.odf_name].find(
 				f"{{{exporter.SVG_NS}}}font-face-src/{{{exporter.SVG_NS}}}font-face-uri")
 			assert uri is not None and uri.attrib[f"{{{exporter.XLINK_NS}}}href"] == face.package_member
@@ -179,12 +182,15 @@ def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib
 				properties[f"{{{exporter.FO_NS}}}font-family"] == face.embedded_family
 
 
-def test_linked_text_nests_destination_inside_its_styled_span() -> None:
+@pytest.mark.parametrize("literal", [False, True])
+def test_linked_text_nests_destination_inside_its_styled_span(literal: bool) -> None:
 	"""LibreOffice receives a visible linked label within its resolved text style."""
 	layout_deck = deck()
 	item = layout_deck.slides[0].objects[0]
-	linked_run = content.TextRun("Course website", content.RunStyle("Atkinson Hyperlegible Next", "24578F",
-		underline=True, link_url="https://example.test/course"))
+	label = "https://example.test/course" if literal else "Course website"
+	family = "IBM Plex Sans Condensed" if literal else "Atkinson Hyperlegible Next"
+	linked_run = content.TextRun(label, content.RunStyle(family, "24578F",
+		underline=True, link_url="https://example.test/course", literal_url=literal))
 	paragraph = dataclasses.replace(item.content.paragraphs[0], inlines=(linked_run,))
 	updated_item = dataclasses.replace(item, content=content.TextContent((paragraph,)))
 	updated_deck = dataclasses.replace(layout_deck, slides=(dataclasses.replace(
@@ -194,9 +200,16 @@ def test_linked_text_nests_destination_inside_its_styled_span() -> None:
 		"content.xml")
 	span = root.find(f".//{{{exporter.TEXT_NS}}}span")
 	link = span.find(f"{{{exporter.TEXT_NS}}}a")
-	assert link is not None and link.text == "Course website"
+	assert link is not None and link.text == label
 	assert link.attrib[f"{{{exporter.XLINK_NS}}}href"] == "https://example.test/course" and \
 		span.attrib[f"{{{exporter.TEXT_NS}}}style-name"].startswith("DjotText")
+	name = span.attrib[f"{{{exporter.TEXT_NS}}}style-name"]
+	style = next(element for element in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if element.attrib[f"{{{exporter.STYLE_NS}}}name"] == name)
+	properties = style.find(f"{{{exporter.STYLE_NS}}}text-properties")
+	expected_size = paragraph.typography.selected_size_pt - (2 if literal else 0)
+	assert float(properties.attrib[f"{{{exporter.FO_NS}}}font-size"].removesuffix("pt")) == expected_size
+	assert properties.attrib[f"{{{exporter.FO_NS}}}font-family"] == family
 
 
 def test_text_frames_preserve_the_compiler_selected_size() -> None:

@@ -17,6 +17,7 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 	if not any(not source.hidden for source in deck.slides):
 		raise ValueError(f"{deck.path}:1: deck has no visible slides")
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
+	session.prepare_table_groups(deck)
 	slides: list[slide_lib.layout_model.LayoutSlide] = []
 	for index, source in enumerate(deck.slides):
 		slide_lib.layout_model.reject_unsupported_source_facts(

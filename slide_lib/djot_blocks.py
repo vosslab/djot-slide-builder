@@ -2,6 +2,7 @@
 
 # Standard Library
 import dataclasses
+import math
 import pathlib
 import re
 from collections.abc import Callable
@@ -141,6 +142,41 @@ def add_attributes(block: slide_lib.native_model.Block,
 		attributes: tuple[slide_lib.native_model.Attribute, ...]) -> slide_lib.native_model.Block:
 	"""Attach pending metadata to the next parsed block."""
 	combined = block.attributes + attributes
+	width_attributes = tuple(item for item in combined if item.name == "column-widths")
+	if width_attributes:
+		# ASVS 2.2.1: validate table shape, numeric syntax, and positive finite proportions.
+		if not isinstance(block, slide_lib.native_model.Table) or len(width_attributes) != 1:
+			fail(block.location.path, block.location.line,
+				"column-widths requires one attribute on a table")
+		value = width_attributes[0].value
+		parts = value.split(",") if value is not None else []
+		columns = len(block.headers) if block.headers else len(block.rows[0])
+		if len(parts) != columns or any(
+			re.fullmatch(r"[0-9]+(?:\.[0-9]+)?", part.strip()) is None for part in parts):
+			fail(block.location.path, block.location.line,
+				"column-widths requires one positive numeric weight per column")
+		weights = tuple(float(part) for part in parts)
+		if any(not math.isfinite(weight) or weight <= 0 for weight in weights) or \
+				not math.isfinite(sum(weights)):
+			fail(block.location.path, block.location.line,
+				"column-widths requires positive finite weights")
+		combined = tuple(item for item in combined if item.name != "column-widths")
+		block = dataclasses.replace(block, column_weights=weights)
+	group_attributes = tuple(item for item in combined if item.name == "table-group")
+	if group_attributes:
+		# ASVS 2.2.1: group names are identifiers, not expressions or external references.
+		if not isinstance(block, slide_lib.native_model.Table) or len(group_attributes) != 1:
+			fail(block.location.path, block.location.line,
+				"table-group requires one attribute on a table")
+		name = group_attributes[0].value
+		if name is None or re.fullmatch(r"[A-Za-z][A-Za-z0-9_-]*", name) is None:
+			fail(block.location.path, block.location.line,
+				"table-group requires a name starting with a letter, using letters, digits, _ or -")
+		if block.column_weights:
+			fail(block.location.path, block.location.line,
+				"table-group and column-widths are alternative sizing modes")
+		combined = tuple(item for item in combined if item.name != "table-group")
+		block = dataclasses.replace(block, table_group=name)
 	result = dataclasses.replace(block, attributes=combined)
 	return result
 

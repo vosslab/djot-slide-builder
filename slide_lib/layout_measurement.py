@@ -126,6 +126,25 @@ class MeasurementSession:
 		self._paragraphs: dict[tuple[object, ...], tuple[float, float, int]] = {}
 		self._fragments: dict[tuple[object, ...], tuple[str, ...]] = {}
 		self.capacity_diagnostics: list[slide_lib.capacity_report.CapacityDiagnostic] = []
+		self.table_group_bounds: dict[str, tuple[tuple[float, ...], tuple[float, ...]]] = {}
+
+	def prepare_table_groups(self, deck: slide_lib.native_model.Deck) -> None:
+		"""Measure all explicitly related tables before any slide chooses its text size."""
+		groups: dict[str, list[slide_lib.native_model.Table]] = {}
+		for source in deck.slides:
+			blocks = source.blocks + tuple(block for cell in source.cells for block in cell.blocks)
+			for block in _descendant_blocks(blocks):
+				if isinstance(block, slide_lib.native_model.Table) and block.table_group is not None:
+					groups.setdefault(block.table_group, []).append(block)
+		for name, tables in groups.items():
+			columns = len(tables[0].headers) if tables[0].headers else len(tables[0].rows[0])
+			for table in tables:
+				count = len(table.headers) if table.headers else len(table.rows[0])
+				if count != columns:
+					raise ValueError(f"{table.location.path}:{table.location.line}: table-group "
+						f"{name!r} requires {columns} columns, found {count}")
+			self.table_group_bounds[name] = _table_column_bounds(
+				tuple(tables), self.theme.ordinary_body_size_pt, self)
 
 	def record_capacity(self, location: slide_lib.native_model.SourceLocation,
 			layout: str, slot: str, required: float, floor: float,
@@ -197,20 +216,7 @@ class MeasurementSession:
 		key = (text, family, bold, italic, size_pt, width)
 		if key in self._fragments:
 			return self._fragments[key]
-		clusters = grapheme_clusters(text)
-		if not clusters or self.advance(family, bold, italic, size_pt, text) <= width:
-			result = (text,)
-		else:
-			parts: list[str] = []; start = 0
-			while start < len(clusters):
-				end = start + 1
-				if self.advance(family, bold, italic, size_pt, clusters[start]) > width:
-					raise ValueError("an atomic Unicode grapheme cannot fit in the available text width")
-				while end < len(clusters) and self.advance(family, bold, italic, size_pt,
-						"".join(clusters[start:end + 1])) <= width:
-					end += 1
-				parts.append("".join(clusters[start:end])); start = end
-			result = tuple(parts)
+		result = self._fragment_token(text, family, bold, italic, size_pt, width)
 		self._fragments[key] = result
 		return result
 
@@ -222,18 +228,28 @@ class MeasurementSession:
 		if key in self._paragraphs:
 			return self._paragraphs[key]
 		available = max(width - (self.theme.list_levels[level].text_position if list_item else 0.0), 1.0)
-		lines: list[list[tuple[str, str, bool, bool]]] = [[]]; line_widths = [0.0]
-		for text, family, token_bold, token_italic in _styled_tokens(inlines, bold, italic):
+		lines: list[list[tuple[str, str, bool, bool, bool]]] = [[]]; line_widths = [0.0]
+		for text, family, token_bold, token_italic, literal in _styled_tokens(inlines, bold, italic):
 			if text == "\n": lines.append([]); line_widths.append(0.0); continue
+			token_size = slide_lib.presentation_theme.inline_size_pt(size_pt, literal)
 			for token in _split_wrap_tokens(text):
-				for fragment in self._fragment_token(token, family, token_bold, token_italic, size_pt, available):
-					advance = self.advance(family, token_bold, token_italic, size_pt, fragment)
-					if lines[-1] and line_widths[-1] + advance > available and not fragment.isspace():
+				for fragment_index, fragment in enumerate(self._fragment_token(
+						token, family, token_bold, token_italic, token_size, available)):
+					advance = self.advance(family, token_bold, token_italic, token_size, fragment)
+					if fragment_index or (lines[-1] and line_widths[-1] + advance > available
+							and not fragment.isspace()):
 						lines.append([]); line_widths.append(0.0)
 					if not lines[-1] and fragment.isspace(): continue
-					lines[-1].append((fragment, family, token_bold, token_italic)); line_widths[-1] += advance
+					lines[-1].append((fragment, family, token_bold, token_italic, literal)); line_widths[-1] += advance
 		ordinary = point_height(size_pt * self.theme.ordinary_line_spacing_em, self.theme)
-		advances = [ordinary if not line else max(ordinary, max(self.line_metrics(f, b, i, size_pt)[0] for _t, f, b, i in line) + max(self.line_metrics(f, b, i, size_pt)[1] for _t, f, b, i in line)) for line in lines]
+		advances = []
+		for line in lines:
+			metrics = [self.line_metrics(f, b, i,
+				slide_lib.presentation_theme.inline_size_pt(size_pt, literal))
+				for _text, f, b, i, literal in line]
+			advance = max(ordinary, max(item[0] for item in metrics) +
+				max(item[1] for item in metrics)) if metrics else ordinary
+			advances.append(advance)
 		line_advance = max(advances)
 		result = (line_advance * len(lines), logical_points(line_advance, self.theme), len(lines))
 		self._paragraphs[key] = result
@@ -244,10 +260,18 @@ class MeasurementSession:
 		if token.isspace() or self.advance(family, bold, italic, size_pt, token) <= available:
 			return (token,)
 		parts: list[str] = []; part = ""
+		is_url = token.startswith(("https://", "http://"))
 		for cluster in grapheme_clusters(token):
 			candidate = part + cluster
 			if part and self.advance(family, bold, italic, size_pt, candidate) > available:
-				parts.append(part); part = cluster
+				# Prefer address structure to arbitrary character splits; retain every byte.
+				boundary = max((index + 1 for index, character in enumerate(part)
+					if character in "/-_?&=" and (parts or index >= len("https://"))), default=0) \
+					if is_url else 0
+				if boundary:
+					parts.append(part[:boundary]); part = part[boundary:] + cluster
+				else:
+					parts.append(part); part = cluster
 			else: part = candidate
 		if part: parts.append(part)
 		if any(self.advance(family, bold, italic, size_pt, item) > available for item in parts):
@@ -256,27 +280,27 @@ class MeasurementSession:
 
 
 def _styled_tokens(inlines: tuple[slide_lib.native_model.Inline, ...], bold: bool = False,
-		italic: bool = False, link_url: str | None = None) -> tuple[tuple[str, str, bool, bool], ...]:
+		italic: bool = False, link_url: str | None = None) -> tuple[tuple[str, str, bool, bool, bool], ...]:
 	"""Flatten editable inlines into exact-face wrapping tokens and hard breaks."""
-	result: list[tuple[str, str, bool, bool]] = []
+	result: list[tuple[str, str, bool, bool, bool]] = []
 	for inline in inlines:
 		if isinstance(inline, (slide_lib.native_model.Text, slide_lib.native_model.InlineCode)):
 			family = slide_lib.presentation_theme.MONOSPACE_FONT_FAMILY \
 				if isinstance(inline, slide_lib.native_model.InlineCode) \
 				else slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
-			result.append((inline.value, family, bold, italic))
+			result.append((inline.value, family, bold, italic, False))
 		elif isinstance(inline, slide_lib.native_model.Break):
-			result.append(("\n", "", False, False))
+			result.append(("\n", "", False, False, False))
 		elif isinstance(inline, slide_lib.native_model.Strong):
 			result.extend(_styled_tokens(inline.children, True, italic, link_url))
 		elif isinstance(inline, slide_lib.native_model.Emphasis):
 			result.extend(_styled_tokens(inline.children, bold, True, link_url))
 		elif isinstance(inline, slide_lib.native_model.Link):
 			literal = visible_text(inline.children) == inline.url
-			for text, family, child_bold, child_italic in _styled_tokens(inline.children, bold, italic, inline.url):
+			for text, family, child_bold, child_italic, _literal in _styled_tokens(inline.children, bold, italic, inline.url):
 				if literal and family == slide_lib.presentation_theme.ORDINARY_FONT_FAMILY:
 					family = slide_lib.presentation_theme.NARROW_FONT_FAMILY
-				result.append((text, family, child_bold, child_italic))
+				result.append((text, family, child_bold, child_italic, literal))
 		elif isinstance(inline, slide_lib.native_model.StyledSpan):
 			result.extend(_styled_tokens(inline.children, bold, italic, link_url))
 	return tuple(result)
@@ -546,21 +570,38 @@ def table_measurements(table: slide_lib.native_model.Table, size_pt: float, widt
 	padding = TABLE_HORIZONTAL_PADDING * 2
 	clearance = point_height((TABLE_BORDER_WIDTH_PT + TEXT_FRAME_CLEARANCE_PT) * 2, theme)
 	content_width = width - (padding + clearance) * columns
-	minimums: list[float] = []
-	preferred: list[float] = []
-	for column in range(columns):
-		bounds = tuple(_table_cell_widths(row[column], size_pt, active,
-			row_index == 0 and bool(table.headers)) for row_index, row in enumerate(rows))
-		minimums.append(max(1.0, *(minimum for minimum, _preferred in bounds)))
-		preferred.append(max(1.0, *(_preferred for _minimum, _preferred in bounds)))
-	column_widths = tuple(value + padding + clearance for value in
-		_distribute_table_widths(tuple(minimums), tuple(preferred), content_width))
+	if table.column_weights:
+		total = sum(table.column_weights)
+		column_widths = tuple(width * (weight / total) for weight in table.column_weights)
+	else:
+		minimums, preferred = active.table_group_bounds[table.table_group] \
+			if table.table_group is not None else _table_column_bounds((table,), size_pt, active)
+		column_widths = tuple(value + padding + clearance for value in
+			_distribute_table_widths(minimums, preferred, content_width))
 	row_heights = tuple(max(paragraph_height(cell, size_pt,
 		table_cell_text_width(column_widths[column], theme), theme,
 		bold=row_index == 0 and bool(table.headers), session=active) +
 		TABLE_VERTICAL_PADDING * 2 for column, cell in enumerate(row))
 		for row_index, row in enumerate(rows))
 	return TableMeasurements(column_widths, row_heights)
+
+
+def _table_column_bounds(tables: tuple[slide_lib.native_model.Table, ...], size_pt: float,
+		session: MeasurementSession) -> tuple[tuple[float, ...], tuple[float, ...]]:
+	"""Pool widest-token and full-line needs without inventing synthetic header rows."""
+	rows = []
+	for table in tables:
+		if table.headers:
+			rows.append((table.headers, True))
+		rows.extend((row, False) for row in table.rows)
+	minimums: list[float] = []
+	preferred: list[float] = []
+	for column in range(len(rows[0][0])):
+		bounds = tuple(_table_cell_widths(row[column], size_pt, session, header)
+			for row, header in rows)
+		minimums.append(max(1.0, *(minimum for minimum, _preferred in bounds)))
+		preferred.append(max(1.0, *(_preferred for _minimum, _preferred in bounds)))
+	return tuple(minimums), tuple(preferred)
 
 
 def table_cell_text_width(column_width: float,
@@ -578,13 +619,14 @@ def _table_cell_widths(inlines: tuple[slide_lib.native_model.Inline, ...], size_
 	minimum = 0.0
 	line_width = 0.0
 	preferred = 0.0
-	for text, family, token_bold, token_italic in _styled_tokens(inlines, bold):
+	for text, family, token_bold, token_italic, literal in _styled_tokens(inlines, bold):
 		if text == "\n":
 			preferred = max(preferred, line_width)
 			line_width = 0.0
 			continue
 		for token in _split_wrap_tokens(text):
-			advance = session.advance(family, token_bold, token_italic, size_pt, token)
+			advance = session.advance(family, token_bold, token_italic,
+			slide_lib.presentation_theme.inline_size_pt(size_pt, literal), token)
 			line_width += advance
 			if not token.isspace():
 				minimum = max(minimum, advance)
@@ -649,7 +691,7 @@ def grid(left: float, top: float, width: float, height: float, columns: int, row
 def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRectangle) -> tuple[slide_lib.layout_primitives.LogicalRectangle, ...]:
 	"""Return all standard named-cell allocations from a contract name."""
 	left, top, width, height = content.x, content.y, content.width, content.height
-	if name == "one-panel":
+	if name in ("one-panel", "reference"):
 		return (content,)
 	if name == "two-panels":
 		return grid(left, top, width, height, 2, 1)

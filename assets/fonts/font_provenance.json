@@ -1,6 +1,5 @@
 {
   "manifest_version": 1,
-  "odp_derivative_recipe": "TTFont(recalcTimestamp=False); rename name IDs 1, 4, 6, and 16 only",
   "fonts": [
     {
       "path": "assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Regular.ttf",
@@ -8,7 +7,6 @@
       "bold": false,
       "italic": false,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "6b483e32f32e8f9e13634a53072ac2fb5944d5de6519f6cb53af1722f420974e",
       "sha256": "88ed5c31a71584c7772963b02d04bef1eb7e3d2e9c8b9cb204339b1f82cf432c",
       "face_index": 0,
       "upstream": {
@@ -27,7 +25,6 @@
       "bold": true,
       "italic": false,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "afb7de78fca1e9b8418a1f11551ea7b23e87db7a346fcc754547a0ee38a2be50",
       "sha256": "994414047df66bb4998d01c1cb1eeb4a2ddc4622d1aa56bbb8adbeca7645b041",
       "face_index": 0,
       "upstream": {
@@ -46,7 +43,6 @@
       "bold": false,
       "italic": true,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "c3cb0768d5c2278ea7351a8e917a6bb5edb05b37baa81d22630d6d172f69fc26",
       "sha256": "b7f8f03ceb28ebadb2de2332b2e869a00e8dbfb5c8e00fdbb06385770c8227e7",
       "face_index": 0,
       "upstream": {
@@ -65,7 +61,6 @@
       "bold": true,
       "italic": true,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "4e8e759317204b02bea0f6e4065912e1ef52ae804e1e81cd4cb4077673264379",
       "sha256": "c2d3c596b54d1565ca20d383cdfb127b50b18b500b85a774fd07d4d976cd018b",
       "face_index": 0,
       "upstream": {
@@ -84,7 +79,6 @@
       "bold": false,
       "italic": false,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "376091cda22ae3ce83616e3d9cdf81537ac85bff00e0a8e629109b87ce907b47",
       "sha256": "2c9a7b9fabebd5c746a808d8a1ef2f52e618850caad6ec4fd9f5c48f56e1c1af",
       "face_index": 0,
       "upstream": {
@@ -103,7 +97,6 @@
       "bold": true,
       "italic": false,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "ffaa3f907c4c5ba15ee3cc27b8356148430e3075f56f85d46881ce75569f2cce",
       "sha256": "51ad68fafd7ec68051f64983c9c23182a7084268b5cdb0a154dbd53ade079da6",
       "face_index": 0,
       "upstream": {
@@ -122,7 +115,6 @@
       "bold": false,
       "italic": true,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "4467fb7aeebf848c483cbf7186f555fc62aa367966d1c9ce93ca7368b98f1baf",
       "sha256": "356060ab70ae62e4460dd824ec1b734af24e5c3355a8302700151d35d1382dd4",
       "face_index": 0,
       "upstream": {
@@ -141,7 +133,6 @@
       "bold": true,
       "italic": true,
       "version": "Version 2.001; ttfautohint (v1.8.4.7-5d5b)",
-      "odp_derivative_sha256": "77e13204801c2f14e0e9d9f1a3d931691e10cddc0d170f4c22ae839759997577",
       "sha256": "1286feda7848b1078576f2293201dff9428dad309c63220ed0825b771994a9a6",
       "face_index": 0,
       "upstream": {
@@ -160,7 +151,6 @@
       "bold": false,
       "italic": false,
       "version": "Version 1.3",
-      "odp_derivative_sha256": "4bd068c06a0e9a250a0bc992906d5b4c1fc45d9fe75a2a0837d55ce3d8309ddb",
       "sha256": "e7437c072eef2ef592ae6f2beb0000446287385907abb57ac1cf07bcbaa2aa33",
       "face_index": 0,
       "upstream": {
@@ -179,7 +169,6 @@
       "bold": true,
       "italic": false,
       "version": "Version 1.3",
-      "odp_derivative_sha256": "72637c62db442a9075aad3067e4e4ca9eefe980e25f8ec7e035783fb081a4392",
       "sha256": "b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849",
       "face_index": 0,
       "upstream": {
@@ -198,7 +187,6 @@
       "bold": false,
       "italic": true,
       "version": "Version 1.3",
-      "odp_derivative_sha256": "ca0fd7c4d8f8d67887702a98940d038039215457ccd8477bdcfd7e3c8d1ea047",
       "sha256": "a0320e60c17926c4e210dfdb3b1a346991f35f83b471daf55537ee79cbcb7c7f",
       "face_index": 0,
       "upstream": {
@@ -217,7 +205,6 @@
       "bold": true,
       "italic": true,
       "version": "Version 1.3",
-      "odp_derivative_sha256": "c266ef186f700c4fb655187ffa74ad1301711b6387653175257270646bed2144",
       "sha256": "fe1983c07a086fbee939e5f0f826e5428f7d02666c8e3bbb7295fb3504597a07",
       "face_index": 0,
       "upstream": {

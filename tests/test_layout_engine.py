@@ -41,6 +41,69 @@ def test_two_sources_produce_two_stable_source_slides(tmp_path: pathlib.Path) ->
 	assert tuple(slide.identity.slide_id for slide in result.plan.slides) == ("slide-1", "slide-2")
 
 
+def test_authored_table_proportions_stay_fixed_when_cell_text_changes(tmp_path: pathlib.Path) -> None:
+	"""Question and answer tables keep the same column boundaries during a reveal sequence."""
+	slides = []
+	for text in ("?", "A1A3: BOTH"):
+		slides.append("=== layout: one-panel\n\n@body\n\n"
+			'{column-widths="1,3,3"}\n| | A3 | A4 |\n| --- | --- | --- |\n'
+			f"| A1 | {text} | Neither |\n")
+	result = compile_source(tmp_path, "\n".join(slides))
+	tables = [next(item.content for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+		for slide in result.plan.slides]
+	assert tables[0].column_widths == tables[1].column_widths
+	first, second, third = tables[0].column_widths
+	assert second == pytest.approx(3 * first) and third == second
+
+
+def test_table_group_uses_later_content_without_affecting_other_tables(tmp_path: pathlib.Path) -> None:
+	"""A group measures the whole sequence, adapts to edits, and stays scoped to one compile."""
+	prefix = '=== layout: one-panel\n\n@body\n\n{table-group="cross"}\n'
+	header = "| | A3 | A4 |\n| --- | --- | --- |\n"
+	question = prefix + header + "| A1 | ? | ? |\n"
+	widths = []
+	for answer in ("Both", "A much longer explanation of the shared outcome"):
+		later = prefix + header + f"| A1 | {answer} | Neither |\n"
+		ordinary = question.replace('{table-group="cross"}\n', "")
+		result = compile_source(tmp_path, "\n".join((question, later, ordinary)))
+		tables = [next(item.content for item in slide.objects
+			if isinstance(item.content, slide_lib.layout_content.TableContent))
+			for slide in result.plan.slides]
+		assert tables[0].column_widths == tables[1].column_widths
+		widths.append((tables[0].column_widths, tables[2].column_widths))
+	assert widths[1][0][1] > widths[0][0][1]
+	assert widths[0][1] == widths[1][1]
+	# Recompiling the short version must not retain the previous deck's wider group.
+	short = compile_source(tmp_path, question + "\n" + prefix + header + "| A1 | Both | Neither |\n")
+	assert short.plan.slides[0].objects[0].content.column_widths == widths[0][0]
+
+
+def test_table_group_rejects_incompatible_column_counts(tmp_path: pathlib.Path) -> None:
+	"""Grouping unrelated table shapes produces an actionable source error."""
+	source = '=== layout: one-panel\n\n@body\n\n{table-group="cross"}\n'
+	with pytest.raises(ValueError, match="table-group 'cross' requires 2 columns, found 3"):
+		compile_source(tmp_path, source + "| A | B |\n\n" + source + "| A | B | C |\n")
+
+
+def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pathlib.Path) -> None:
+	"""Reference decoration is behind editable content and its label is outside the body."""
+	text = "\n\n# Explanation\n\n@body\n\nStudy this example.\n"
+	ordinary = compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
+	reference = compile_source(tmp_path, "=== layout: reference" + text).plan.slides[0]
+	body = next(slot for slot in reference.slots if slot.slot_id == "body")
+	assert body.rectangle == next(slot.rectangle for slot in ordinary.slots
+		if slot.slot_id == "body")
+	border = next(item for item in reference.objects if item.object_id == "reference-border")
+	label = next(item for item in reference.objects if item.object_id == "reference-label")
+	assert border.content.style.fill_role is None
+	assert border.content.style.line_color == "C8CDD2"
+	assert all(border.z_index < item.z_index for item in reference.objects if item != border)
+	assert label.rectangle.y >= body.rectangle.y + body.rectangle.height
+	assert label.slot_id is None and label.presentation_member_id is None
+	assert label.content.paragraphs[0].inlines[0].text == "For reference - not covered in class."
+
+
 def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.Path) -> None:
 	"""Code stays monospace while literal URLs receive the approved narrow face."""
 	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
@@ -54,6 +117,20 @@ def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.
 		("https://example.test", "IBM Plex Sans Condensed"),
 		("ATGC", "Atkinson Hyperlegible Mono")]
 	assert all(run.style.underline for run in runs if run.style.link_url)
+
+
+def test_visible_url_wraps_at_address_boundaries(tmp_path: pathlib.Path) -> None:
+	"""Long addresses retain exact destinations and split at readable path boundaries."""
+	url = "https://crossidiomas.com/build-the-plane-while-flying-it/"
+	result = compile_source(tmp_path, "=== layout: two-panels\n\n@left\n\n"
+		f"[{url}]({url})\n\n@right\n\nImage placeholder\n")
+	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
+	runs = [run for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun)]
+	assert len(runs) > 1
+	assert "".join(run.text for run in runs) == url
+	assert all(run.text[-1] in "/-_?&=" for run in runs[:-1])
+	assert all(run.style.link_url == url for run in runs)
 
 
 def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Path) -> None:

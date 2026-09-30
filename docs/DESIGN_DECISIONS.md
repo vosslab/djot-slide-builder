@@ -301,6 +301,20 @@ leaving normal compiler output unchanged.
 **Owner.** `slide_lib/layout_model.py`, `slide_lib/layout_content.py`, and
 `slide_lib/layout_measurement.py`.
 
+### Visible URL typography and wrapping belong to the backend
+
+**Decision.** Literal URL links use the condensed font at the paragraph size minus 2 pt.
+Measurement and native export use the same lossless fragmentation routine, preferring address
+separators when an address exceeds the available width. Every linked fragment retains the full
+destination. Long separator-free components still use grapheme-safe splitting when necessary.
+
+**Why.** Users want to inspect destinations before clicking. Separate measurement and emission
+algorithms produced inconsistent breaks; replacing URLs with descriptive labels hid the problem.
+Source authors should supply intact addresses and layout context, not font names or manual breaks.
+
+**Owner.** `slide_lib/layout_measurement.py`, `slide_lib/layout_object_builders.py`,
+`slide_lib/presentation_theme.py`, and `slide_lib/odp_text.py`.
+
 ### Bundled font profiles are the measurement authority
 
 **Decision.** Every font face the presentation pipeline emits is a versioned repository asset with
@@ -322,18 +336,19 @@ fonts and missing-glyph substitutions also belong to the backend, not to authore
 
 ### Generated ODPs embed the measured bundled faces
 
-**Decision.** Every generated ODP contains package-only, OFL-compliant renamed copies of the
-validated repository font files as `Fonts/` members. Each family, weight, and style has a stable ODF
-face name and `svg:font-face-uri`; emitted semantic styles map to the unique embedded family.
+**Decision.** Every generated ODP contains unchanged copies of the validated repository font
+files as `Fonts/` members. Each family, weight, and style has a stable ODF face name and
+`svg:font-face-uri`; emitted semantic styles use the original public family.
 
-**Why.** The compiler's committed metrics must match LibreOffice rendering on a machine whose
-installed same-named font can differ. ODF embedding supplies that portable dependency without
-changing native text objects or the LibreOffice ODP-to-PDF path.
+**Why.** Embedding supplies the measured fonts as portable dependencies. Renamed families were
+visible in LibreOffice's font selector and prevented ordinary editing with familiar installed
+families. Original bytes preserve the public identity, outlines, and metrics together. This
+supersedes the earlier collision-avoidance policy; host handling of same-named fonts remains
+LibreOffice's responsibility and rendered export still requires validation.
 
 **Consequence.** Theme validation reads every face's OS/2 embedding permission and reports a
-restrictive face before export. Source assets remain hash-verified and unchanged; output resources
-change only their font-name records, as required by the OFL reserved names and to avoid host-family
-collisions. The package also contains the applicable OFL notice files. The small package-size cost
+restrictive face before export. Source assets and embedded bytes remain hash-verified and unchanged.
+The package also contains the applicable OFL notice files. The small package-size cost
 is accepted for deterministic editable decks.
 
 **Owner.** `slide_lib/presentation_theme.py`, `slide_lib/odp_export.py`, and `slide_lib/odp_text.py`.
@@ -1233,6 +1248,53 @@ workflows, licenses, or renderer assumptions.
 specific evidence and limitations for each clone.
 
 **Owner.** `docs/OTHER_REPOS/` and `docs/USAGE.md`.
+
+### Explicit table groups share compiler-measured column needs
+
+**Decision.** Authors name related tables with `table-group`. A compile-scoped prepass pools
+widest-token and full-line column needs at the theme's ordinary body size across all group
+members. Each member uses those same bounds to allocate its available width before fitting text.
+
+**Why.** A later answer must inform an earlier question's column layout. Explicit membership
+records teaching intent without guessing from coincidental table shapes or hand-tuning ratios.
+
+**Consequence.** Equal-width members have identical columns even when their selected text sizes
+differ. Groups include hidden slides, are local to one deck, and require matching column counts.
+Different available widths remain responsive; row heights remain content-dependent. Manual
+`column-widths` is an alternative and cannot be combined with a group. Ordinary tables are unchanged.
+
+**Owner.** `slide_lib/layout_engine.py`, `slide_lib/layout_measurement.py`,
+`slide_lib/native_model.py`, and `slide_lib/djot_blocks.py`.
+
+### Authored table proportions preserve repeated column boundaries
+
+**Decision.** Tables optionally carry positive finite `column-widths` weights, one per column.
+Parse these into typed column weights and resolve them in shared table measurement as proportions
+of full table width. Keep automatic content-based widths as the default.
+
+**Why.** Question/answer sequences need stable columns even when cell text changes; invisible
+padding text would mix layout instructions with student content.
+
+**Consequence.** Repeated tables can share `column-widths="1,3,3"` while remaining editable.
+Row heights and text fitting remain content-dependent. Invalid source fails before export.
+
+**Owner.** `slide_lib/djot_blocks.py`, `slide_lib/native_model.py`, and
+`slide_lib/layout_measurement.py`.
+
+### Reference slides reuse the one-panel body geometry
+
+**Decision.** Register `reference` as an explicit author-selected layout with the ordinary
+title/body placeholders, a backend-owned reference footer, and an unfilled light gray border.
+Keep the border behind editable text and the footer below the standard body allocation.
+
+**Why.** Students can distinguish later-study material without repeated source labels or reduced
+space for explanations. Ordinary one-panel slides retain their existing appearance and geometry.
+
+**Consequence.** Djot authors select `=== layout: reference` and supply a title and `@body`.
+The importer does not infer this teaching intent from geometry alone.
+
+**Owner.** `slide_lib/layout_registry.py`, `slide_lib/layout_measurement.py`,
+`slide_lib/layout_builders.py`, and `slide_lib/layout_specialty_builders.py`.
 
 ### Native ODP is the sole editable build artifact
 

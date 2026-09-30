@@ -167,6 +167,11 @@ def _standard_slide_at_theme(deck: slide_lib.native_model.Deck, source: slide_li
 			session, occupy_placeholder=False)
 		slots.append(_occupy_primary_slot(name, rectangle, order, cell_objects))
 		objects.extend(cell_objects)
+	if contract.name == "reference":
+		border, label = slide_lib.layout_specialty_builders.reference_decorations(
+			source, theme, len(objects), session)
+		objects = [border, *(dataclasses.replace(item, z_index=item.z_index + 1)
+			for item in objects), dataclasses.replace(label, z_index=label.z_index + 1)]
 	return _slide(source, index, contract, slots, objects)
 def _heading_slide(source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
