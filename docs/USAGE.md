@@ -50,6 +50,11 @@ Use `@notes` for instructor reminders. Notes end at the next named slot or slide
 become editable ODP speaker notes; the normal PDF export omits them. See
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes) for an example.
 
+Use `@replaceme` before slide content to mark material needing human review. It adds a large red
+**REPLACE ME** watermark in ODP and PDF while retaining the editable slide underneath. New imports
+add it wherever the import report records review reasons. Remove the line after fixing the slide.
+See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#slides-needing-replacement).
+
 The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
 native master and LibreOffice exports PDF from the themed ODP; no CSS or browser rendering is part
 of the build.

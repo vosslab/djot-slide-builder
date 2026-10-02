@@ -7,7 +7,7 @@ live in `djot/`; original ODP, PDF, and student-presentation sources from 2022-2
 | --- | --- | ---: | --- |
 | 2026 announcements ODP | [lect04a-2026_announcements.djot](lect04a-2026_announcements.djot) | 18 | Corrected to Sept 24, 2026; removed the gradebook screenshot with student IDs and scores. |
 | Project schedule | [lect04b-individual_project.djot](lect04b-individual_project.djot) | 50 (8 visible, 42 hidden) | Authored from the published Fall 2026 schedule and project guidance; all archived slides remain editable in ODP. |
-| Chapter 9: Proteomics | [lect04c-talking_points_set_3.djot](lect04c-talking_points_set_3.djot) | 214 (208 visible, 6 hidden) | Topics 1-13; retains Chapter 9 instructor material and all six hidden quiz answers. |
+| Chapter 9: Proteomics | [lect04c-talking_points_set_3-proteomics.djot](lect04c-talking_points_set_3-proteomics.djot) | 214 (208 visible, 6 hidden) | Topics 1-13; retains Chapter 9 instructor material and all six hidden quiz answers. |
 | Chapter 10: Recombinant Proteins | [lect04d-talking_points_set_3_recombinant_proteins.djot](lect04d-talking_points_set_3_recombinant_proteins.djot) | 81 | Topics 14-20, with the corresponding instructor material. |
 | Added chapter: Structural Biology | [lect04e-talking_points_set_3_structural_biology.djot](lect04e-talking_points_set_3_structural_biology.djot) | 31 | New chapter outside the textbook; topics 21-24. |
 | Chapter 11: Protein Engineering | [lect04f-talking_points_set_3_protein_engineering.djot](lect04f-talking_points_set_3_protein_engineering.djot) | 66 | Topics 25-30, with the corresponding instructor material. |

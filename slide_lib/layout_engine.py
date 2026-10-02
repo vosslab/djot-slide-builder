@@ -7,6 +7,7 @@ import slide_lib.layout_builders
 import slide_lib.layout_measurement
 import slide_lib.layout_model
 import slide_lib.layout_primitives
+import slide_lib.layout_specialty_builders
 import slide_lib.native_model
 import slide_lib.presentation_theme
 
@@ -23,6 +24,12 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		slide_lib.layout_model.reject_unsupported_source_facts(
 			slide_lib.layout_measurement.unsupported_facts(source))
 		page = slide_lib.layout_builders.compile_slide(deck, source, theme, index, session)
+		if source.replaceme:
+			order = max((item.reading_order for item in page.objects), default=-1) + 1
+			z_index = max((item.z_index for item in page.objects), default=-1) + 1
+			watermark = slide_lib.layout_specialty_builders.replaceme_watermark(
+				source, theme, order, z_index, session)
+			page = dataclasses.replace(page, objects=(*page.objects, watermark))
 		identity = slide_lib.layout_model.SlideIdentity(f"slide-{index + 1}", index, source.location)
 		notes = tuple(slide_lib.layout_model.SpeakerNote(
 			f"slide-{index + 1}-note-{note_index}", note_index and note.text or note.text)

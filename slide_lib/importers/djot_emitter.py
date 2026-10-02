@@ -978,6 +978,8 @@ def render_planned_djot(
 		)
 		if planned.data.hidden:
 			slide_lines.insert(1, "hidden: true")
+		if reasons:
+			slide_lines.insert(1, "@replaceme")
 		lines.extend(slide_lines)
 		records.append(import_report.slide_record(
 			planned.data, planned.plan, planned.visible_page_index, layout, reasons,

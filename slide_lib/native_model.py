@@ -279,6 +279,7 @@ class Slide:
 	blocks: tuple[Block, ...]
 	cells: tuple[Cell, ...]
 	hidden: bool = False
+	replaceme: bool = False
 
 
 @dataclass(frozen=True)

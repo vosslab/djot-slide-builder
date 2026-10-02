@@ -90,6 +90,30 @@ def test_notes_keep_directive_like_text_and_end_at_next_slide(tmp_path: pathlib.
 
 
 #============================================
+def test_replaceme_is_slide_metadata_and_stays_literal_in_code_and_notes(
+		tmp_path: pathlib.Path) -> None:
+	"""Review status cannot leak to the next slide or be enabled by an example or note."""
+	deck = parse_source(tmp_path, "=== layout: blank\n@replaceme\nhidden: true\n"
+		"=== layout: one-panel\n@body\n```\n@replaceme\n```\n"
+		"@notes\n@replaceme\nExplain this marker.\n=== layout: blank\n")
+	assert tuple(slide.replaceme for slide in deck.slides) == (True, False, False)
+	assert deck.slides[0].hidden and deck.slides[0].blocks == ()
+	assert deck.slides[1].cells[0].blocks[0].value == "@replaceme"
+	assert deck.slides[1].notes == ("@replaceme", "Explain this marker.")
+
+
+#============================================
+@pytest.mark.parametrize("marker", (
+	" @replaceme", "@replaceme reason", "@replaceme\n@replaceme",
+	"# Heading\n@replaceme", "@body\n@replaceme",
+))
+def test_invalid_replaceme_marker_reports_its_source(tmp_path: pathlib.Path, marker: str) -> None:
+	"""A malformed or misplaced review flag gets an actionable authoring error."""
+	message = parse_error(tmp_path, f"=== layout: one-panel\n{marker}\n@body\nContent.\n")
+	assert str(tmp_path / "deck.djot") in message and "@replaceme" in message
+
+
+#============================================
 @pytest.mark.parametrize("layout_name", (
 	"vertical-panel",
 	"vertical-title-two-panels",

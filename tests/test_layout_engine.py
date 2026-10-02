@@ -104,6 +104,27 @@ def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pa
 	assert label.content.paragraphs[0].inlines[0].text == "For reference - not covered in class."
 
 
+@pytest.mark.parametrize("source", (
+	"=== layout: one-panel\n# Content\n@body\n=> appear\nKeep this editable.\n",
+	"=== layout: section\n# Red surface\n",
+	"=== layout: blank\n",
+))
+def test_replaceme_adds_visible_editable_warning_without_changing_content(
+		tmp_path: pathlib.Path, source: str) -> None:
+	"""Review overlays preserve layout geometry and stay above images, text, and reveals."""
+	ordinary = compile_source(tmp_path, source).plan.slides[0]
+	marked = compile_source(tmp_path, source.replace("\n", "\n@replaceme\n", 1)).plan.slides[0]
+	watermark = marked.objects[-1]
+	assert marked.slots == ordinary.slots
+	assert tuple((item.rectangle, item.content, item.reveal_targets) for item in marked.objects[:-1]) == \
+		tuple((item.rectangle, item.content, item.reveal_targets) for item in ordinary.objects)
+	assert all(watermark.z_index > item.z_index for item in ordinary.objects)
+	assert watermark.content.text.paragraphs[0].inlines[0].text == "REPLACE ME"
+	assert watermark.content.text.paragraphs[0].inlines[0].style.foreground == \
+		slide_lib.presentation_theme.resolve_text_color("red", "24578F")
+	assert watermark.content.style.fill_role is not None and not watermark.reveal_targets
+
+
 def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.Path) -> None:
 	"""Code stays monospace while literal URLs receive the approved narrow face."""
 	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"

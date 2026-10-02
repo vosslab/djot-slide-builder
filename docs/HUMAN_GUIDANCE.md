@@ -19,6 +19,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide-writing advice
 
+- For slides that do not translate and need human review, add an obvious `@replaceme` option
+  in Djot that makes a large red "REPLACE ME" watermark on the slide.
 - Repeat key slides in a Summary section at the end. This emphasizes their importance and
   makes them easy to find during homework. The original 05D's Addition Rules and Multiplication
   Rules slides are useful offline single-slide references; retain that function in v2.
@@ -112,6 +114,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Conversion review
 
+- Add variety to two-panel image/text slides: sometimes image left/text right, other times
+  text left/image right. Alternate when they are back-to-back.
+- Biotechnology Lecture 05 builds on Lecture 04, with different slides shown or hidden.
+  After Sept 21, Discord signup and Student Profile are no longer active assignments.
 - Preserve source colors and bold key labels in announcements. Anonymous-message instructions
   need the source image; keep clickable URLs visible and intact, using the condensed font role.
 - Check static versus weekly announcement ownership, and use the instructor's schedule spreadsheet

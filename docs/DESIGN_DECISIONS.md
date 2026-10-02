@@ -24,6 +24,23 @@ Centered Text classifier.
 
 ## Current operational boundary
 
+### Explicit slide replacement marker
+
+**Decision.** Accept one exact `@replaceme` line as slide metadata before content. Compile it
+as an editable foreground warning with large red text and white backing for every layout.
+New ODP imports emit the marker whenever the slide has review reasons.
+
+**Why.** Import compromises and unfinished slides need an obvious human-review cue in the
+source and rendered artifacts. A foreground object works across images and red section surfaces.
+
+**Consequence.** Existing content, notes, visibility, and reveals remain intact. Removing the
+marker clears the watermark on rebuild. Validation and capacity still inspect the marked slide.
+Code examples and note text cannot enable it; detailed import reasons stay in the import report.
+
+**Owner.** [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#slides-needing-replacement),
+`slide_lib/djot_parser.py`, `slide_lib/layout_engine.py`, `slide_lib/layout_specialty_builders.py`,
+and `slide_lib/importers/djot_emitter.py`.
+
 ### Lecture 05D teaching revision
 
 **Decision.** Keep Lecture 05D v2 as a separate Djot deck. Use native text and tables for its
@@ -588,6 +605,9 @@ source must remain legible in a GitHub Markdown view without routine HTML or com
 
 **Consequence.** Do not add or migrate `_cell` parsing, imports, decks, preview behavior, or tests.
 The layout registry supplies the allowed visible layout and slot vocabulary.
+Author image/text variation with the existing `two-panels` slots, alternating the image side on
+consecutive slides. Explicit `@left` and `@right` placement makes that choice reviewable in Djot
+and preserves it when slides are reordered or hidden.
 
 **Owner.** [presentation_language_choices.md](active_plans/decisions/presentation_language_choices.md).
 
@@ -1248,6 +1268,25 @@ workflows, licenses, or renderer assumptions.
 specific evidence and limitations for each clone.
 
 **Owner.** `docs/OTHER_REPOS/` and `docs/USAGE.md`.
+
+### Biotechnology Lecture 05 adapts canonical Lecture 04 source
+
+**Decision.** Keep three current Djot decks under `biotech/LECT05/djot/`: announcements,
+individual project, and Theranos. Reuse the Lecture 04 Djot content for stable announcements
+and project guidance; use legacy Lecture 05 visibility as teaching evidence. Original ODP/PDF
+and copied Set #3 files remain reference inputs in the lecture root.
+
+**Why.** Lecture 05 changes the teaching selection and calendar without requiring a second
+conversion of already editable content. Completed early-semester assignments belong in the
+hidden archive, while current project steps need the published Fall 2026 dates.
+
+**Consequence.** Native hidden slides remain in Djot and ODP; classroom PDFs omit them.
+The announcement source includes `biotech` in its filename to avoid overwriting the Genetics
+Lecture 05 output. Imported Theranos evidence remains in its original import report, and the
+lecture review records subsequent authoring and visibility changes.
+
+**Owner.** `biotech/LECT05/djot/`, [USAGE.md](USAGE.md), and
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
 ### Explicit table groups share compiler-measured column needs
 

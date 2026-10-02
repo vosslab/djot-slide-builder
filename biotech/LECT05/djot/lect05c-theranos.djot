@@ -1,0 +1,514 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 05C
+
+## Biotechnology: Theranos
+## Dr. Neil Voss
+## Oct 1, 2026
+
+=== layout: one-panel
+
+# Learning Objectives
+
+@body
+
+- Compare product claims with the scientific evidence needed to support them.
+- Explain the roles of independent testing, oversight, and whistleblowers.
+- Recognize warning signs in the Theranos story.
+- Apply these lessons to your own biotechnology proposal.
+
+=== layout: one-panel
+
+# Opening Poll
+
+@body
+
+- Have you heard of Theranos or Elizabeth Holmes before today?
+
+- [A. Yes, I have been following the story closely]{color=red}
+- [B. Yes, I know the basic story]{color=orange}
+- [C. Yes, I had heard of it, but did not know many details]{color=orange}
+- [D. Not really, I maybe heard something in passing]{color=green}
+- [E. No, never heard of them]{color=blue}
+
+=== layout: two-plus-one-panels
+
+# Theranos Form
+
+@top-left
+
+- Complete after the documentary; see Blackboard for the current deadline.
+- [https\://forms.gle/bHCKrzCVEpSyomej9](https://forms.gle/bHCKrzCVEpSyomej9)
+- Documentary: 80 minutes
+
+@bottom-left
+
+![Slide image 2](assets/lect05c-theranos/image_002.png)
+
+@right
+
+![Slide image 1](assets/lect05c-theranos/image_001.png)
+
+=== layout: section
+
+# Timeline of Theranos
+
+=== layout: one-panel
+
+# Timeline of Theranos (1 of 3) - Part 1
+
+@body
+
+- Summer 2002\: Holmes and Balwani meet on a trip to Beijing
+- September 2002\: Holmes starts at Stanford
+- 2003\: Holmes founds Theranos at age 19
+- March 2004\: Holmes drops out of Stanford
+- 2004-2008\: Theranos thrives with early funding
+- 2009\: Ramesh “Sunny” Balwani joins the company as the number-two executive.
+  - Ms. Holmes doesn’t widely disclose that the two, who met the summer before she started college, are also romantically involved.
+
+=== layout: one-panel
+
+# Timeline of Theranos (1 of 3) - Part 2
+
+@body
+
+- 2011\: Former U.S. Secretary of State George Shultz joins Theranos’s board
+- September 2013\: Theranos launches its Walgreens partnership
+- December 2014\: Elizabeth Holmes delivers a Ted Talk
+- September 2014\: Holmes named one of the richest women in America by Forbes
+- December 2014\: Theranos has raised \$400 million, Holmes gets article in the New Yorker that tips off John Carreyrou
+
+=== layout: one-panel
+
+# Timeline of Theranos (2 of 3) - Part 1
+
+@body
+
+- February 2015\: Criticism from the medical community for not publishing any of its research
+- July 2015\: FDA clears the Theranos HSV-1 antibody test
+- October 15, 2015\: Carreyrou’s first damning report
+- October 27, 2015\: FDA releases reports and stating that the company had used uncleared and unsuitable medical devices to run its blood tests.
+- November 2015\: Safeway deal folds
+- December 2015\: Carreyrou strikes again
+
+@notes
+
+FDA clearance source: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K143236
+Clearance of this one assay did not establish the performance of all Theranos tests.
+
+=== layout: one-panel
+
+# Timeline of Theranos (2 of 3) - Part 2
+
+@body
+
+- January 2016\: lab inspection uncovered deficient practices that pose immediate jeopardy to patient health and safety
+- May 2016\: Balwani steps down; Theranos voids two years of blood tests
+- June 2016\: Holmes net worth revised to \$0; Theranos loses Walgreens
+- July 2016\: Holmes is banned from running labs for two years
+- October 2016\: Theranos closes its medical lab operations amid regulatory scrutiny
+
+@notes
+
+FDA clearance source: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K143236
+Clearance of this one assay did not establish the performance of all Theranos tests.
+
+=== layout: one-panel
+
+# Timeline of Theranos (3 of 3) - Part 1
+
+@body
+
+- October 2016\: Theranos investor sues the company; Theranos downsizes
+- November 2016\: Walgreens sues Theranos
+- January 2017\: More layoffs, followed by a failed lab inspection
+- March 2018\: Theranos is charged with massive fraud
+- May 2018\: “Bad Blood” book is released
+- June 2018\: Holmes and Balwani indicted
+- September 2018\: Theranos is forced to close
+
+=== layout: one-panel
+
+# Timeline of Theranos (3 of 3) - Part 2
+
+@body
+
+- March 2019\: Theranos gets documentary
+- June 2019\: Trial scheduled for July 2020
+- August 2020\: The Holmes and Balwani trials have been severed–legalspeak for separated
+- December 2020\: Due to COVID Holmes’ criminal trial delayed til 2021
+- March 12, 2021\: Ms. Holmes tells the court she is pregnant, delaying her criminal trial once again
+- July 2021\: Ms. Holmes gives birth to a baby boy
+- August 31, 2021\: Trial finally begins after delays
+
+=== layout: section
+
+# The Characters
+
+=== layout: two-panels
+
+# Elizabeth Holmes
+
+@left
+
+- Founder and CEO of Theranos
+  - Forbes had named Holmes the youngest and wealthiest self-made female billionaire in America on the basis of a \$9-billion valuation of her company
+- Jan 3, 2022: convicted of four investor-fraud counts.
+- Nov 18, 2022: sentenced to 135 months (11 years, 3 months).
+
+@right
+
+![Slide image 3](assets/lect05c-theranos/image_003.png)
+
+@notes
+
+Historical sentencing, not a claim about a current release date.
+https://www.justice.gov/usao-ndca/us-v-elizabeth-holmes-et-al
+
+=== layout: two-panels
+
+# Ramesh "Sunny" Balwani
+
+@left
+
+![Slide image 4](assets/lect05c-theranos/image_004.png)
+
+@right
+
+- President and chief operating officer; joined in 2009.
+- Managed day-to-day operations without a biological sciences background.
+- Holmes's romantic partner during his tenure.
+- Convicted of fraud involving investors and patients.
+- Dec 7, 2022: sentenced to 155 months (12 years, 11 months).
+
+@notes
+
+Historical sentencing source:
+https://www.justice.gov/usao-ndca/us-v-elizabeth-holmes-et-al
+
+=== layout: two-panels
+
+# George Shultz
+
+@left
+
+- former secretary of state and chairman of the Theranos board
+
+@right
+
+![Slide image 5](assets/lect05c-theranos/image_005.png)
+
+=== layout: two-panels
+
+# Tyler Shultz
+
+@left
+
+![Slide image 6](assets/lect05c-theranos/image_006.png)
+
+![Slide image 7](assets/lect05c-theranos/image_007.png)
+
+@right
+
+- Grandson of George Shultz
+- whistleblower on Theranos problems
+  - served as a confidential source for a 2015 Wall Street Journal report that showed the company's device was based on lies
+- Grandfather George tried to force Tyler to sign NDA and give up the story
+
+=== layout: two-panels
+
+# Erika Cheung
+
+@left
+
+- lab associate at Theranos
+  - chemist and biologist degrees from Berkeley
+- Main whistleblower on Theranos problems
+  - Holmes and Sunny hired private investigators to follow her around
+- After leaving created an organization called Ethics in Entrepreneurship
+
+@right
+
+![Slide image 8](assets/lect05c-theranos/image_008.png)
+
+=== layout: two-panels
+
+# David Boies
+
+@left
+
+![Slide image 9](assets/lect05c-theranos/image_009.png)
+
+@right
+
+- “pitbull” lawyer
+- represented Al Gore during vote recount in 2000
+- lead prosecution of U.S. v Microsoft
+- helped overturn California Prop 8 that had banned gay marriage
+- represented Harvey Weinstein for his sexual allegations 
+
+=== layout: two-panels
+
+# Channing Robertson
+
+@left
+
+- Stanford professor who first encouraged Holmes
+  - connected Holmes with other rich white men to fund Theranos
+
+@right
+
+![Slide image 10](assets/lect05c-theranos/image_010.png)
+
+=== layout: two-panels
+
+# Phyllis Gardner
+
+@left
+
+![Slide image 11](assets/lect05c-theranos/image_011.png)
+
+@right
+
+- Professor of Medicine at the Stanford University School of Medicine
+- skeptical of the Theranos founder Elizabeth Holmes early on
+  - knew from the moment the 19-year-old student started talking about her “brilliant” idea that it wouldn't work
+- rips Theranos board of 'old men' whose 'brains go to their groin' ·
+
+=== layout: two-panels
+
+# Rupert Murdoch
+
+@left
+
+- Owner of the Wall Street Journal newspaper as well as Fox News
+- Major investor in Theranos
+- Theranos repeatedly asked Murdoch to stop the WSJ story but he declined
+
+@right
+
+![Slide image 12](assets/lect05c-theranos/image_012.png)
+
+=== layout: two-panels
+
+# Dr. Richard Fuisz, MD
+
+@left
+
+![Slide image 13](assets/lect05c-theranos/image_013.png)
+
+@right
+
+- Childhood neighbor of Elizabeth Holmes parents
+- Held a grudge against the Holmes family
+- Theranos sued him, alleging that Fuisz had misappropriated a Theranos patent and used that information to file his own medical analyzer patent
+  - the lawsuit eventually uncovered some problems at Theranos
+
+=== layout: two-panels
+
+# Avie Tevanian
+
+@left
+
+- the investor from Apple who stepped down
+- was on the Theranos board, but asked to many questions
+  - thus he was forced to resign
+
+@right
+
+![Slide image 14](assets/lect05c-theranos/image_014.png)
+
+=== layout: two-panels
+
+# John Carreyrou
+
+@left
+
+![Slide image 15](assets/lect05c-theranos/image_015.png)
+
+![Slide image 16](assets/lect05c-theranos/image_016.png)
+
+@right
+
+- Journalist that was first to expose Theranos scandal to the world
+  - in a series of Wall Street Journal articles
+- Author of Bad Blood book
+- Holmes and Sunny tracked his movements to avoid him getting secrets
+- Hosted the trial-reporting podcast Bad Blood\: The Final Chapter
+
+=== layout: section
+
+# Resources
+
+=== layout: two-panels
+
+# The Original Book
+
+@left
+
+- “Bad Blood\: Secrets and Lies in a Silicon Valley Startup”
+  - published
+  - May 21, 2018
+- by John Carreyrou
+  - He was the first to break the scandal of the blood-testing company Theranos in 2015, in the Wall Street Journal.
+
+@right
+
+![Slide image 17](assets/lect05c-theranos/image_017.png)
+
+=== layout: one-panel
+
+# The ABC Podcast
+
+@body
+
+- ABC News “The Drop Out”
+  - Jan 15–Feb 26, 2019
+- [https\://abcaudio.com/podcasts/the-dropout/](https://abcaudio.com/podcasts/the-dropout/)
+
+![Slide image 18](assets/lect05c-theranos/image_018.png)
+
+=== layout: one-panel
+
+# The ABC TV Broadcast
+
+@body
+
+- ABC News 20/20 S41E28 The Dropout
+  - Air date\: March 16, 2019
+- [https\://abc.com/shows/2020/episode-guide/2019-03/15-the-dropout](https://abc.com/shows/2020/episode-guide/2019-03/15-the-dropout)
+- [https\://www.youtube.com/playlist?list=PLQOa26lW-uI84JAhO1qY4Fal9IE16wBvK](https://www.youtube.com/playlist?list=PLQOa26lW-uI84JAhO1qY4Fal9IE16wBvK)
+
+![Slide image 19](assets/lect05c-theranos/image_019.png)
+
+=== layout: two-panels
+
+# HBO Documentary
+
+@left
+
+![Slide image 20](assets/lect05c-theranos/image_020.png)
+
+@right
+
+- The Inventor\: Out for Blood in Silicon Valley
+  - Premiere date\:
+  - March 18, 2019
+- [https\://www.hbo.com/documentaries/the-inventor-out-for-blood-in-silicon-valley](https://www.hbo.com/documentaries/the-inventor-out-for-blood-in-silicon-valley)
+
+=== layout: two-plus-one-panels
+
+# The TV Mini Series
+
+@top-left
+
+- Hulu limited series The Dropout (2022), starring Amanda Seyfried as Elizabeth Holmes.
+- [https\://www.imdb.com/title/tt10166622/](https://www.imdb.com/title/tt10166622/)
+
+@bottom-left
+
+![Slide image 22](assets/lect05c-theranos/image_022.png)
+
+@right
+
+![Slide image 21](assets/lect05c-theranos/image_021.png)
+
+@notes
+
+Hulu source: https://press.hulu.com/shows/the-dropout/
+
+=== layout: two-panels
+hidden: true
+
+# The Film Adaptation
+
+@left
+
+- Archived film-development announcement (2020-2021).
+- Planned cast: Jennifer Lawrence as Holmes.
+- Planned writer: Vanessa Taylor.
+- Planned director: Adam McKay.
+- [https\://www.imdb.com/title/tt5795144/](https://www.imdb.com/title/tt5795144/)
+- The source described it as still in development in April 2021.
+
+@right
+
+![Slide image 23](assets/lect05c-theranos/image_023.png)
+
+@notes
+
+Archived development announcement from the legacy source.
+Do not present its planned 2020 release as a current resource.
+
+=== layout: section
+
+# Trial Coverage
+
+=== layout: two-panels
+
+# The ABC Podcast Continues...
+
+@left
+
+- ABC News “The Drop Out”
+  - Trial coverage began Aug 31, 2021
+  - ABC News chief business, technology and economics correspondent Rebecca Jarvis,
+- [https\://abcaudio.com/podcasts/the-dropout/](https://abcaudio.com/podcasts/the-dropout/)
+
+@right
+
+![Slide image 24](assets/lect05c-theranos/image_024.png)
+
+=== layout: two-over-one-panels
+
+# Bad Blood\: The Final Chapter
+
+@top-left
+
+![Slide image 25](assets/lect05c-theranos/image_025.png)
+
+@top-right
+
+- Hosted by John Carreyrou, who exposed the Theranos scandal.
+- Courtroom reporting on the case against Holmes.
+- Examines Silicon Valley's "fake it till you make it" culture.
+
+@bottom
+
+- [https\://www.threeuncannyfour.com/show/bad-blood/](https://www.threeuncannyfour.com/show/bad-blood/)
+
+=== layout: one-panel
+
+# Theranos Discussion: Claims and Evidence
+
+@body
+
+- Which product claim needed independent testing?
+- What evidence was missing, hidden, or dismissed?
+- Why did employees and outside experts struggle to be heard?
+- When should a company stop selling a product?
+- What will you do differently in your own biotechnology proposal?
+
+@notes
+
+Return to the opening whistleblowing question.
+Ask students to give concrete scenes or examples from the documentary.
+
+=== layout: one-panel
+
+# Theranos: Takeaways
+
+@body
+
+- Scientific claims need reproducible evidence.
+- A narrow regulatory clearance does not validate every product claim.
+- Independent expertise matters more than reputation or enthusiasm.
+- Negative results and employee concerns need a path to be heard.
+- Your proposal should state its limits and the tests still needed.
+
+=== layout: theend
+
+# THE END

@@ -13,8 +13,11 @@ import pytest
 
 # Local modules
 import slide_lib.djot_parser
+import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.odp_reader as odp_reader
 import slide_lib.importers.odp_to_djot as odp_to_djot
+import slide_lib.importers.slide_plan as slide_plan
+import slide_lib.importers.source_model as source_model
 import slide_lib.layout_engine
 import slide_lib.odp_export
 import slide_lib.presentation_theme
@@ -95,6 +98,25 @@ def test_direct_conversion_publishes_valid_djot_reachable_media_and_source_evide
 	assert report["slides"][0]["presenter_notes"] == ["Start with the central question."]
 	assert report["slides"][0]["source_page_evidence"]["layout_identity"] == "section"
 	assert report["slides"][2]["hidden"] and report["slides"][2]["visible_page"] is None
+
+
+#============================================
+def test_import_review_reasons_become_explicit_replaceme_markers(tmp_path: pathlib.Path) -> None:
+	"""Visible and hidden import compromises cannot lose their human-review signal."""
+	planned = []
+	for index, (hidden, reasons) in enumerate(((False, ()),
+			(False, ("positioned diagram needs reconstruction",)),
+			(True, ("unsupported source object",))), start=1):
+		data = source_model.SlideData(index, hidden, (), (), (), (), reasons)
+		planned.append(djot_emitter.PlannedSlide(data, slide_plan.plan_slide((), ()),
+			visible_page_index=None if hidden else index))
+	source, records = djot_emitter.render_planned_djot(planned)
+	path = tmp_path / "imported.djot"
+	path.write_text(source, encoding="utf-8")
+	deck = slide_lib.djot_parser.parse_deck(path)
+	assert tuple(slide.replaceme for slide in deck.slides) == (False, True, True)
+	assert deck.slides[2].hidden
+	assert records[1]["review_reasons"] == ["positioned diagram needs reconstruction"]
 
 
 #============================================

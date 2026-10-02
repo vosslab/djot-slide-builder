@@ -76,6 +76,40 @@ def reference_decorations(source: slide_lib.native_model.Slide,
 	return border, label
 
 
+def replaceme_watermark(source: slide_lib.native_model.Slide,
+		theme: slide_lib.presentation_theme.PresentationTheme, order: int, z_index: int,
+		session: slide_lib.layout_measurement.MeasurementSession
+		) -> slide_lib.layout_model.LayoutObject:
+	"""Keep a slide's review status unmistakable above any editable content or surface."""
+	rectangle = slide_lib.layout_primitives.LogicalRectangle(60, 285, 1160, 230)
+	paragraph = slide_lib.native_model.Paragraph(source.location,
+		(slide_lib.native_model.Text("REPLACE ME"),))
+	red = slide_lib.presentation_theme.resolve_text_color("red", theme.accent_color)
+	content = slide_lib.layout_object_builders.text_content((paragraph,), 100.0, 100.0,
+		slide_lib.layout_primitives.StyleRole.BODY, red, rectangle.width, theme,
+		bold=True, session=session)
+	content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(item,
+		properties=dataclasses.replace(item.properties,
+			horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER))
+		for item in content.paragraphs))
+	# A white backing keeps the red warning visible on dark and red section slides.
+	shape = slide_lib.layout_content.ShapeContent(
+		slide_lib.layout_primitives.ShapeKind.RECTANGLE,
+		slide_lib.layout_content.ShapeStyle(slide_lib.layout_primitives.StyleRole.DECORATION,
+			slide_lib.layout_primitives.StyleRole.DECORATION, 3.0,
+			slide_lib.layout_primitives.LinePattern.SOLID, line_color=red),
+		slide_lib.layout_primitives.ObjectAccessibility("REPLACE ME",
+			"This slide requires human review and replacement."), content)
+	frame = dataclasses.replace(_frame_text(),
+		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
+	watermark = slide_lib.layout_model.LayoutObject("replaceme-watermark",
+		slide_lib.layout_primitives.PresentationRole.CONTENT,
+		slide_lib.layout_primitives.StyleRole.BODY, rectangle,
+		slide_lib.layout_primitives.ObjectLayer.FOREGROUND, z_index, order, shape, frame,
+		source=source.location)
+	return watermark
+
+
 def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		contract: slide_lib.layout_primitives.LayoutContract,

@@ -77,7 +77,8 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[str, tuple[_SlideSour
 	for number, value in enumerate(lines, start=1):
 		# Notes are literal text up to the next region or slide boundary.
 		if in_notes:
-			if (slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(value) is None and
+			if ((value == "@replaceme" or
+					slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(value) is None) and
 					not value.startswith("=== layout:")):
 				content.append(_SourceLine(number, value))
 				continue
@@ -340,11 +341,13 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	fence: tuple[str, int] | None = None
 	hidden = False
 	hidden_seen = False
+	replaceme = False
 	content_started = False
 	note_lines: list[str] | None = None
 	for source_line in source.lines:
 		if (note_lines is not None and active_slot == "notes" and
-				slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(source_line.value) is None):
+				(source_line.value == "@replaceme" or
+					slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(source_line.value) is None)):
 			note_lines.append(source_line.value)
 			continue
 		if fence is not None:
@@ -354,6 +357,16 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 				regions[active_slot].append(source_line)
 			if re.fullmatch(rf"{re.escape(fence[0])}{{{fence[1]},}}[ \t]*", source_line.value) is not None:
 				fence = None
+			continue
+		if re.fullmatch(r"\s*@replaceme(?:\s+.*)?", source_line.value):
+			# ASVS 2.2.1: the review marker is exact, unique, and slide-scoped metadata.
+			if source_line.value != "@replaceme":
+				fail(path, source_line.line, "review marker must be exactly @replaceme on its own line")
+			if content_started:
+				fail(path, source_line.line, "@replaceme must precede slide content and slots")
+			if replaceme:
+				fail(path, source_line.line, "duplicate @replaceme marker")
+			replaceme = True
 			continue
 		if source_line.value == "@notes":
 			# ASVS 2.2.1: one optional note region, independent of layout slots.
@@ -427,7 +440,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	notes = tuple(slide_lib.djot_grammar.project_text(line) for line in note_text.split("\n")) \
 		if note_text.strip() else ()
 	slide = slide_lib.native_model.Slide(source.location, source.layout_name, notes, global_blocks,
-		tuple(cells), hidden=hidden)
+		tuple(cells), hidden=hidden, replaceme=replaceme)
 	return slide
 
 

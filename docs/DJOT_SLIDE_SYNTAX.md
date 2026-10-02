@@ -56,6 +56,38 @@ before a slot is global content; it supplies titles, subtitles, or root content 
 chosen layout accepts it.  Keep ordinary prose and lists in normal Djot form; a layout directive
 and a slot directive are short, whole lines.
 
+## Slides needing replacement
+
+Put an exact, unindented `@replaceme` line after the layout directive, before headings, notes,
+or named slots, when a slide needs human review or replacement. It works with every layout.
+
+```djot
+=== layout: one-panel
+@replaceme
+
+# Diagram needs reconstruction
+
+@body
+
+The editable source content remains here.
+
+@notes
+
+Rebuild the diagram from the original slide before showing it.
+```
+
+The marker adds a large red **REPLACE ME** watermark above the slide content in ODP and PDF.
+Its white backing keeps it obvious on dark surfaces. Content, layout, notes, and reveals remain
+editable underneath. Remove the marker after review and rebuild to clear the watermark.
+
+The marker applies only to its slide. It can precede or follow `hidden: true`; a hidden marked
+slide retains the warning in ODP and stays out of the PDF. Duplicates, indentation, trailing prose,
+and placement after content are errors. Inside fenced code or `@notes`, it remains literal text.
+The marker does not fill required slots or bypass source validation, image checks, or capacity.
+
+New ODP imports add `@replaceme` to slides with nonempty `review_reasons`. The adjacent
+`import_report.json` retains the reasons and original source evidence for human review.
+
 ## Instructor notes
 
 Use one optional `@notes` section on any slide. It continues until the next exact named-slot
@@ -155,6 +187,10 @@ outside a named slot; required named slots still appear where listed.
 | `multiple-choice` | project custom | `question`, `answer` | no | You are asking a closed question with visible choices and a revealed answer. |
 | `gallery` | project custom | `gallery` | title only | Two through six component images are the teaching focus. |
 | `big-image` | project custom | `image`, `caption` | no | One focal image needs the main page area with a short bottom caption. |
+
+For `two-panels` with an image and text, place either kind in `@left` and the other in `@right`.
+Vary the image side through the deck, alternating on consecutive image/text slides. Express the
+placement in these existing slots; the compiler renders the sides exactly as authored.
 
 `section` and `title-only` are deliberately different.  `section` is `ONLY_TEXT`: one centered,
 Subtitle-style outline box, no title placeholder, and a `#` heading becomes that centered text.
