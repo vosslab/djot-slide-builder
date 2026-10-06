@@ -34,6 +34,7 @@ class TextColor(enum.Enum):
 	"""Closed authored text-color vocabulary with native editable output."""
 
 	ACCENT = "accent"
+	BLACK = "black"
 	RED = "red"
 	ORANGE = "orange"
 	GREEN = "green"
@@ -90,10 +91,11 @@ class Link:
 
 @dataclass(frozen=True)
 class StyledSpan:
-	"""Editable inline content carrying one supported semantic text color."""
+	"""Editable inline content with optional semantic color and underline."""
 
 	children: tuple["Inline", ...]
-	color: TextColor
+	color: TextColor | str | None = None
+	underline: bool = False
 
 
 @dataclass(frozen=True)

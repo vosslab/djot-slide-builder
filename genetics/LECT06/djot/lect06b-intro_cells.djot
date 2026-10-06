@@ -1,0 +1,391 @@
+=== layout: title-slide
+
+# Lecture 06B
+
+## Cells
+
+## Chapter 6
+
+## Dr. Neil Voss
+
+## Oct 6, 2026
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 1.
+
+=== layout: section
+
+# Chapter 6
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 2.
+
+=== layout: one-panel
+
+# Chromosome Complements
+
+@body
+
+- Somatic cells have a fixed number of chromosomes
+- Chromosomes exist in pairs for diploid organisms
+- Gametes have one copy and are haploid
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 3.
+
+=== layout: one-panel
+
+# Diploid chromosome numbers for some plants and animals
+
+@body
+
+![Slide image 1](assets/lect06b-intro_cells/image_001.jpg)
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 4.
+
+=== layout: section
+
+# The Cell Cycle
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 5.
+
+=== layout: one-panel
+
+# Phases of the Cell Cycle
+
+@body
+
+- The cell cycle consists of
+- Mitotic (M) phase (mitosis and cytokinesis)
+- Interphase (cell growth and copying of chromosomes in preparation for cell division)
+  - Interphase is about 90% of the cell cycle
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 6.
+
+=== layout: big-image
+
+@image
+
+![The cell cycle: interphase and the mitotic phase.](assets/lect06b-intro_cells/cell_cycle_phases.svg)
+
+@caption
+
+The cell cycle: interphase and the mitotic phase.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 7. Replacement reason: normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.6 | Original slot: body | ![Slide image 2](assets/lect06b-intro_cells/image_002.jpg) | - G1 | - G2 | - (DNA synthesis) | - S | - Cytokinesis | - Mitosis | - MITOTIC | - (M) PHASE | ![Slide image 3](assets/lect06b-intro_cells/image_003.png)
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: two-panels
+
+# Four Stages of the Cell Cycle
+
+@left
+
+- Interphase has three stages\: G1, S, and G2
+- Mitosis occurs after G2
+- Checkpoints control transitions for G1 into S and G2 into M
+
+@right
+
+![Slide image 4](assets/lect06b-intro_cells/image_004.jpg)
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 8.
+
+=== layout: one-panel
+
+# Cell-cycle checkpoints
+
+@body
+
+![Cell cycle with G1, G2, and M checkpoints](assets/lect06b-intro_cells/cell_cycle_checkpoints.svg)
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 9. Replacement reason: normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.15 | Original slot: body | ![Slide image 5](assets/lect06b-intro_cells/image_005.jpg) | - G1 checkpoint | - G2 checkpoint | - M checkpoint | - G1 | - G2 | - M | - S | - Control system
+
+SVG repair: Restored phase and checkpoint labels as live SVG text; original component artwork embedded.
+
+=== layout: image-comparison
+
+# G₁ checkpoint
+
+@top-left
+
+![G₁ checkpoint: stop state](assets/lect06b-intro_cells/g1_checkpoint_stop.svg)
+
+@top-right
+
+![G₁ checkpoint: go-ahead state](assets/lect06b-intro_cells/g1_checkpoint_go.svg)
+
+@bottom-left
+
+Without a go-ahead signal, the cell enters G₀.
+
+@bottom-right
+
+With a go-ahead signal, the cell continues the cell cycle.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 10. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.17a | Original slot: body | ![Slide image 6](assets/lect06b-intro_cells/image_006.jpg) | - G1 checkpoint | - G0 | - G1 | - Without go-ahead signal, cell enters G0. | - (a) G1 checkpoint | - G1 | - With go-ahead signal, cell continues cell cycle.
+
+SVG repair: Split diagram states into two SVG assets; explanations remain native text.
+
+=== layout: image-comparison
+
+# M checkpoint
+
+@top-left
+
+![M checkpoint: stop state](assets/lect06b-intro_cells/m_checkpoint_stop.svg)
+
+@top-right
+
+![M checkpoint: go-ahead state](assets/lect06b-intro_cells/m_checkpoint_go.svg)
+
+@bottom-left
+
+Without full chromosome attachment, stop signal is received.
+
+@bottom-right
+
+With full chromosome attachment, go-ahead signal is received.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 11. Replacement reason: 14 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.17b | Original slot: body | ![Slide image 7](assets/lect06b-intro_cells/image_007.jpg) | Native reconstruction needed: 14 positioned diagram labels.
+
+SVG repair: Split diagram states into two SVG assets; phase/checkpoint labels and leaders restored; explanations remain native text.
+
+=== layout: section
+
+# Cell Division\: Mitosis
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 12.
+
+=== layout: big-image
+
+@image
+
+![Chromosome structure before duplication.](assets/lect06b-intro_cells/chromosome_before_replication.svg)
+
+@caption
+
+Chromosome structure before duplication.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 13. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.5-1 | Original slot: body | ![Slide image 8](assets/lect06b-intro_cells/image_008.jpg) | - Chromosomes | - Centromere | - Chromosome arm | - Chromosomal DNA molecules | - 1
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: big-image
+
+@image
+
+![DNA duplication produces sister chromatids.](assets/lect06b-intro_cells/chromosome_replication.svg)
+
+@caption
+
+DNA duplication produces sister chromatids.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 14. Replacement reason: normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.5-2 | Original slot: body | ![Slide image 9](assets/lect06b-intro_cells/image_009.jpg) | - Chromosomes | - Centromere | - Chromosome arm | - Chromosomal DNA molecules | - 1 | - Chromosome duplication | - Sister chromatids | - 2
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: big-image
+
+@image
+
+![Sister chromatids separate during cell division.](assets/lect06b-intro_cells/chromatid_separation.svg)
+
+@caption
+
+Sister chromatids separate during cell division.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 15. Replacement reason: normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.5-3 | Original slot: body | ![Slide image 10](assets/lect06b-intro_cells/image_010.jpg) | - Chromosomes | - Centromere | - Chromosome arm | - Chromosomal DNA molecules | - 1 | - Chromosome duplication | - Sister chromatids | - 2 | - 3 | - Separation of sister chromatids
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: multiple-choice
+
+@question
+
+Which of the following statements about mitosis is [FALSE]{color=red}?
+
+- A) Mitosis is cell division that produces two daughter cells.
+- B) Each daughter cell formed by mitosis has the half the number of chromosomes as the parent cell.
+- C) Each daughter cell formed by mitosis has the same kinds of chromosomes as the parent cell.
+- D) The parent cell and the daughter cells are genetically identical.
+
+@answer
+
+[Answer\: B]{color=red}
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 16.
+
+=== layout: two-panels
+
+# Mitosis has four stages
+
+@left
+
+![Slide image 11](assets/lect06b-intro_cells/image_011.jpg)
+
+@right
+
+- Chromosome number does not change
+- Two daughter cells are produced in the end
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 17.
+
+=== layout: multiple-choice
+
+@question
+
+Which of the following is the correct sequence of mitotic phases?
+
+- A)	metaphase, anaphase, telophase, prophase
+- B)	anaphase, prophase, metaphase, telophase
+- C)	prophase, anaphase, metaphase, telophase
+- D)	prophase, metaphase, anaphase, telophase
+- E)	prophase, metaphase, telophase, anaphase
+
+@answer
+
+[Answer\: D, PMAT]{color=red}
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 18. Replacement reason: normalized overlapping legacy components into one native source-order panel
+
+=== layout: one-panel
+
+# Stages in Cell Division
+
+@body
+
+- G2 of Interphase
+- 5 Stages of Mitosis\:
+  - Prophase
+  - Prometaphase/late prophase
+  - Metaphase
+  - Anaphase
+  - Telophase
+- Cytokinesis
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 19.
+
+=== layout: big-image
+
+@image
+
+![G₂ of interphase and prophase.](assets/lect06b-intro_cells/mitosis_interphase_prophase.svg)
+
+@caption
+
+G₂ of interphase and prophase.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 20. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | Original slot: body | ![Slide image 12](assets/lect06b-intro_cells/image_012.jpg) | - Prophase | - Nucleolus | - G2 of Interphase | - Nuclear envelope | - Plasma membrane | - Two sister chromatids of one chromosome | - Centrosomes (with centriole pairs) | - Chromosomes (duplicated, uncondensed) | - Early mitotic spindle | - Aster | - Centromere
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: big-image
+
+@image
+
+![Prometaphase and metaphase.](assets/lect06b-intro_cells/mitosis_prometaphase_metaphase.svg)
+
+@caption
+
+Prometaphase and metaphase.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 21. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.7d | Original slot: body | ![Slide image 13](assets/lect06b-intro_cells/image_013.jpg) | - Metaphase | - Metaphase plate | - Prometaphase | - Nonkinetochore microtubules | - Fragments of nuclear envelope | - Kinetochore | - Kinetochore microtubule | - Spindle | - Centrosome at one spindle pole
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: big-image
+
+@image
+
+![Anaphase, telophase, and cytokinesis.](assets/lect06b-intro_cells/mitosis_anaphase_telophase.svg)
+
+@caption
+
+Anaphase, telophase, and cytokinesis.
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 22. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 12.7e | Original slot: body | ![Slide image 14](assets/lect06b-intro_cells/image_014.jpg) | - Anaphase | - Cleavage furrow | - Telophase and Cytokinesis | - Nuclear envelope forming | - Nucleolus forming | - Daughter chromosomes
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: multiple-choice
+
+@question
+
+When does DNA replication occur in the cell cycle?
+
+- A)	interphase
+- B)	prophase
+- C)	metaphase
+- D)	anaphase
+- E)	telophase
+
+@answer
+
+[Answer\: A]{color=red}
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 23. Replacement reason: normalized overlapping legacy components into one native source-order panel
+
+=== layout: theend
+
+# THE END
+
+
+@notes
+
+Source: lect06b-intro_cells.odp, slide 24.
+

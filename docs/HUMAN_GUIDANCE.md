@@ -1,5 +1,8 @@
 # Human guidance
 
+- Source slide animations should flag conversions that lose a question/answer reveal. Make the
+  importer fix durable rather than repairing only Lecture 06D slide 36.
+
 <!-- VENDORED HEADER: START -->
 Record the durable guidance Neil Voss states, or approves for preservation here, in his own words:
 first person or close paraphrase, one to three lines per bullet. Material he supplies as a source
@@ -19,6 +22,31 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide-writing advice
 
+- Preserve deliberate text color, ALL CAPS, underline, bold, and italics during conversion and
+  LLM rewriting. These can carry teaching meaning; review formatting as well as the words.
+
+- `@replaceme` is an acceptable conversion result. Preserve it when a faithful conversion needs
+  human judgment; eliminating every marker is not a completion requirement.
+
+- Deterministic ODP-to-Djot conversion alone is not good enough. Keep LLM evaluation in the
+  middle of the conversion workflow to judge whether the teaching intent survives.
+
+- Track significant image shrinkage during conversion by comparing displayed image area as a
+  percentage of the slide and eventually flagging excessive changes. Consider automatic trimming.
+  Audit code is welcome now; do not create new special layouts to solve shrinkage today.
+- Keep text as glyphs rather than pixels when converting GDI/metafile figures. Prefer a
+  vector-preserving route such as SVG over a low-resolution raster preview.
+
+- For labeled diagrams, build SVG files containing embedded images and editable labels.
+- Put the two M-checkpoint diagrams in separate SVG files, with their explanatory sentences in
+  regular text boxes beneath them in a 2 by 2 layout. Give the diagrams the larger row.
+- Make defined words stand out with bold and underline; some selective color is welcome.
+- Embed SVG directly in ODP. Apply suitable diagram repairs throughout Lecture 06 and retain
+  `@replaceme` wherever conversion cannot preserve the pedagogical intent.
+
+- For Lecture 06, use local tools to convert to custom Djot; use `@replaceme` where conversion
+  cannot preserve pedagogical intent. Update this week's announcements and show the exam slides
+  because the exam is next week. (October 6, 2026.)
 - For slides that do not translate and need human review, add an obvious `@replaceme` option
   in Djot that makes a large red "REPLACE ME" watermark on the slide.
 - Repeat key slides in a Summary section at the end. This emphasizes their importance and

@@ -13,6 +13,7 @@ import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.native_model
 import slide_lib.presentation_theme
+import slide_lib.svg_images
 
 
 LEFT = 60.0
@@ -726,6 +727,8 @@ def image_size(deck: slide_lib.native_model.Deck,
 	path = (deck.asset_root / image.source).resolve()
 	if not path.is_relative_to(deck.repo_root) or not path.is_file():
 		raise ValueError(f"{image.location.path}:{image.location.line}: component image is missing or outside the repository: {image.source}")
+	if path.suffix.lower() == ".svg":
+		return slide_lib.svg_images.dimensions(path)
 	with PIL.Image.open(path) as opened:
 		result = opened.size
 	return result

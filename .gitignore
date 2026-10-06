@@ -24,6 +24,7 @@ site/
 # ADD YOUR CUSTOM IGNORES BELOW
 # Propagation preserves this section.
 # ------------------ END LOCAL REPOSITORY RULES ------------------
+*.svg
 *.pdf
 *.pptx
 *.gif

@@ -15,6 +15,52 @@ import pytest
 import slide_lib.importers.odp_reader as odp_reader
 import slide_lib.importers.odp_metafile as odp_metafile
 import slide_lib.odf_package
+import slide_lib.importers.odp_to_djot as odp_to_djot
+import slide_lib.djot_parser
+import slide_lib.layout_engine
+import slide_lib.odp_export
+import slide_lib.presentation_theme
+
+
+@pytest.mark.parametrize("effect,target,answer,expected", [
+	("set", "answer", "Answer: No.", "multiple-choice"),
+	("animate", "answer", "Answer: No.", "@replaceme"),
+	("set", "missing", "Answer: No.", "@replaceme"),
+	("set", "answer", "A revealed teaching point.", "@replaceme"),
+])
+def test_answer_animation_survives_or_requires_review(tmp_path: pathlib.Path,
+		effect: str, target: str, answer: str, expected: str) -> None:
+	"""Never silently flatten source animation during actual ODP import."""
+	question = frame('<draw:text-box><text:p>Can this happen?</text:p></draw:text-box>',
+		role="outline", width="24cm")
+	response = frame(f'<draw:text-box><text:p>{answer}</text:p></draw:text-box>', y="9cm")
+	response = response.replace('<draw:frame ', '<draw:frame xml:id="answer" ')
+	animation = (
+		'<anim:par xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" '
+		'xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" '
+		'smil:begin="next">'
+		f'<anim:{effect} smil:targetElement="{target}" smil:attributeName="visibility" '
+		'smil:to="visible"/></anim:par>'
+	)
+	content = CONTENT_PREFIX + page("Question", question + response + animation) + CONTENT_SUFFIX
+	source = write_odp(tmp_path, content)
+	output = tmp_path / "result.djot"
+	summary = odp_to_djot.convert_odp(source, output)
+	converted = output.read_text()
+	assert expected in converted
+	if expected == "multiple-choice":
+		assert "@answer" in converted
+		assert "@replaceme" not in converted
+		theme = slide_lib.presentation_theme.default_theme()
+		compiled = slide_lib.layout_engine.compile_layout_deck(
+			slide_lib.djot_parser.parse_deck(output), theme)
+		exported = slide_lib.odp_export.write_odp(compiled.plan, theme, tmp_path / "export.odp")
+		with zipfile.ZipFile(exported) as archive:
+			xml = archive.read("content.xml")
+		assert b'attributeName="visibility"' in xml
+		assert b'to="visible"' in xml
+	else:
+		assert "animation" in summary.report_path.read_text()
 
 
 def test_flat_unsupported_polyline_remains_reviewable():
@@ -365,8 +411,17 @@ def test_reader_reports_unvalidated_vector_media_and_extension_mismatch(
 
 
 #============================================
-def test_reader_uses_embedded_metafile_preview(tmp_path: pathlib.Path) -> None:
-	"""An ODF raster alternative preserves the figure exactly once at its frame geometry."""
+def test_reader_prefers_metafile_over_preview(tmp_path: pathlib.Path,
+		monkeypatch: pytest.MonkeyPatch) -> None:
+	"""The original metafile wins over a low-resolution preview at unchanged geometry."""
+	svg = b'<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100"><text x="5" y="30">Gene</text></svg>'
+	def convert(input_path: pathlib.Path, output_dir: pathlib.Path,
+			output_format: str) -> pathlib.Path:
+		assert output_format == "svg"
+		output = output_dir / "figure.svg"
+		output.write_bytes(svg)
+		return output
+	monkeypatch.setattr(odp_metafile.slide_lib.libreoffice, "convert_file", convert)
 	content = CONTENT_PREFIX + page("figure", frame(
 		'<draw:image xlink:href="Pictures/legacy.svm"/>'
 		'<draw:image xlink:href="Pictures/preview.png"/>',
@@ -382,7 +437,8 @@ def test_reader_uses_embedded_metafile_preview(tmp_path: pathlib.Path) -> None:
 	slide = presentation.slides[0]
 	assert len(slide.data.images) == 1
 	asset = slide.data.images[0]
-	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes() == png_bytes()
+	assert asset.asset_path.endswith(".svg")
+	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes().endswith(svg)
 	source_frame = xml.etree.ElementTree.fromstring(content).find(".//draw:frame", odp_reader.NS)
 	assert (asset.left, asset.top, asset.width, asset.height) == \
 		odp_reader.frame_geometry(source_frame, 1)
@@ -392,7 +448,8 @@ def test_reader_uses_embedded_metafile_preview(tmp_path: pathlib.Path) -> None:
 #============================================
 def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
 		monkeypatch: pytest.MonkeyPatch) -> None:
-	"""Preview-less GDI content reaches the shared converter and publishes validated PNG."""
+	"""Preview-less GDI content publishes validated SVG with live text."""
+	svg = b'<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100"><text x="5" y="30">Gene</text></svg>'
 	def convert(input_path: pathlib.Path, output_dir: pathlib.Path,
 			output_format: str) -> pathlib.Path:
 		with zipfile.ZipFile(input_path) as archive:
@@ -400,9 +457,9 @@ def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
 			root = xml.etree.ElementTree.fromstring(archive.read("content.xml"))
 			image = root.find(".//draw:image", odp_reader.NS)
 			assert image.get(odp_reader.qname("xlink", "href")) == "Pictures/figure.svm"
-		assert output_format == "png"
-		output_path = output_dir / "figure.png"
-		output_path.write_bytes(png_bytes())
+		assert output_format == "svg"
+		output_path = output_dir / "figure.svg"
+		output_path.write_bytes(svg)
 		return output_path
 
 	monkeypatch.setattr(odp_metafile.slide_lib.libreoffice, "convert_file", convert)
@@ -417,8 +474,33 @@ def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
 	presentation = odp_reader.read_presentation(input_path, assets_dir,
 		pathlib.PurePosixPath("assets/deck"))
 	asset = presentation.slides[0].data.images[0]
-	assert asset.asset_path.endswith(".png")
-	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes() == png_bytes()
+	assert asset.asset_path.endswith(".svg")
+	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes().endswith(svg)
+
+
+#============================================
+def test_metafile_failure_requires_review_instead_of_raster_fallback(tmp_path: pathlib.Path,
+		monkeypatch: pytest.MonkeyPatch) -> None:
+	"""A failed vector conversion cannot silently publish the low-resolution preview."""
+	def fail(input_path: pathlib.Path, output_dir: pathlib.Path,
+			output_format: str) -> pathlib.Path:
+		raise odp_metafile.slide_lib.libreoffice.LibreOfficeError("conversion unavailable")
+	monkeypatch.setattr(odp_metafile.slide_lib.libreoffice, "convert_file", fail)
+	content = CONTENT_PREFIX + page("figure", frame(
+		'<draw:image xlink:href="Pictures/legacy.svm"/>'
+		'<draw:image xlink:href="Pictures/preview.png"/>',
+	)) + CONTENT_SUFFIX
+	input_path = write_odp(tmp_path, content, media={
+		"Pictures/legacy.svm": b"VCLMTF\x01\x00conversion-source",
+		"Pictures/preview.png": png_bytes(),
+	})
+	assets_dir = tmp_path / "assets"
+	assets_dir.mkdir()
+	slide = odp_reader.read_presentation(input_path, assets_dir,
+		pathlib.PurePosixPath("assets/deck")).slides[0]
+	assert not slide.data.images
+	assert any("metafile SVG conversion failed" in reason for reason in slide.data.review_reasons)
+	assert not list(assets_dir.iterdir())
 
 
 #============================================

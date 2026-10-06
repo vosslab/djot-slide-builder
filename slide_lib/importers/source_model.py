@@ -11,6 +11,9 @@ class TextRun:
 	text: str
 	link: str = ""
 	color: str = ""
+	bold: bool = False
+	underline: bool = False
+	italic: bool = False
 
 
 @dataclasses.dataclass(frozen=True)
@@ -49,6 +52,7 @@ class PositionedText:
 	has_positive_line: bool = False
 	placeholder_role: str | None = None
 	z_order: tuple[int, ...] = ()
+	reveal: bool = False
 
 
 @dataclasses.dataclass(frozen=True)

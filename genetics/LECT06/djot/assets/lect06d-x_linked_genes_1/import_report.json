@@ -1,0 +1,6448 @@
+{
+  "source": "lect06d_import_staging.odp",
+  "slide_count": 62,
+  "visible_slides": 62,
+  "hidden_slides": [],
+  "unique_media_assets": 35,
+  "slides": [
+    {
+      "source_slide": 1,
+      "hidden": false,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 2,
+      "hidden": false,
+      "visible_page": 2,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.05511811023622,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 40.62047244094488,
+          "top": 113.66929133858267,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 3,
+      "hidden": false,
+      "visible_page": 3,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 89.14960629921259,
+          "top": 116.02204724409448,
+          "width": 249.59055118110234,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.7228346456693,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 4,
+      "hidden": false,
+      "visible_page": 4,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "unrecognized source text color #cc00cc requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 6.037795275590551,
+          "width": 761.9527559055118,
+          "height": 110.26771653543307,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 5,
+      "hidden": false,
+      "visible_page": 5,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 464.711811023622,
+          "top": 116.02204724409448,
+          "width": 230.5700787401575,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 17.34803149606299,
+          "width": 761.9527559055118,
+          "height": 87.44881889763779,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 6,
+      "hidden": false,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 211.1811023622047,
+          "top": 116.05039370078741,
+          "width": 371.2535433070866,
+          "height": 164.9763779527559,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 6.633070866141733,
+          "width": 761.9527559055118,
+          "height": 109.04881889763779,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 296.73070866141734,
+          "width": 714.3023622047244,
+          "height": 164.9763779527559,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 7,
+      "hidden": false,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 122.88188976377953,
+          "width": 714.3023622047244,
+          "height": 332.19212598425196,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 8,
+      "hidden": false,
+      "visible_page": 8,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 9,
+      "hidden": false,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.3 Morgan\u2019s first mutant"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 108.17007874015748,
+          "top": 10.431496062992126,
+          "width": 577.2472440944882,
+          "height": 321.84566929133854,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 35.971653543307085,
+          "top": 329.9527559055118,
+          "width": 720.0,
+          "height": 145.24724409448817,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 10,
+      "hidden": false,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 7.823622047244095,
+          "width": 761.9527559055118,
+          "height": 106.66771653543307,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 11,
+      "hidden": false,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 6,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.4a Inquiry: In a cross between a wild-type female fruit fly and a mutant white-eyed male, what color eyes will the F1 and F2 offspring have? (part 1: experiment and results)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unrecognized source text color #ff6600 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.17396428571428574,
+          "top": 0.22222857142857141,
+          "right": 0.8259285714285715,
+          "bottom": 0.7510285714285716
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.17867857142857144,
+              "top": 0.22222857142857141,
+              "right": 0.35903571428571424,
+              "bottom": 0.26834285714285716
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Experiment",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.17928571428571427,
+              "top": 0.5622857142857144,
+              "right": 0.2840714285714286,
+              "bottom": 0.6134857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Results",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.18642857142857142,
+              "top": 0.2880571428571429,
+              "right": 0.35210714285714284,
+              "bottom": 0.3913142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "P",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.18721428571428572,
+              "top": 0.4148,
+              "right": 0.35010714285714284,
+              "bottom": 0.5038285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.18107142857142858,
+              "top": 0.6341142857142856,
+              "right": 0.35903571428571424,
+              "bottom": 0.726
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6163214285714286,
+              "top": 0.4145714285714286,
+              "right": 0.8193571428571429,
+              "bottom": 0.5144000000000001
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "All offspring",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "had red eyes.",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_006.jpg",
+            "bounds": {
+              "left": 0.17396428571428574,
+              "top": 0.22657142857142856,
+              "right": 0.8259285714285715,
+              "bottom": 0.7510285714285716
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 8
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 138.0755905511811,
+          "top": 112.39370078740157,
+          "width": 517.4645669291339,
+          "height": 260.1637795275591,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 141.81732283464567,
+          "top": 110.23937007874015,
+          "width": 143.1496062992126,
+          "height": 22.875590551181105,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 142.29921259842519,
+          "top": 278.92913385826773,
+          "width": 83.16850393700787,
+          "height": 25.398425196850393,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 147.96850393700785,
+          "top": 142.8944881889764,
+          "width": 131.4992125984252,
+          "height": 51.22204724409448,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 148.59212598425196,
+          "top": 205.76692913385827,
+          "width": 129.28818897637794,
+          "height": 44.16377952755906,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 143.71653543307087,
+          "top": 314.5606299212598,
+          "width": 141.25039370078738,
+          "height": 45.581102362204724,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 489.1748031496063,
+          "top": 205.6535433070866,
+          "width": 161.1496062992126,
+          "height": 49.52125984251969,
+          "z_order": [
+            7
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 12,
+      "hidden": false,
+      "visible_page": 12,
+      "layout": "one-panel",
+      "text_blocks": 29,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.4b Inquiry: In a cross between a wild-type female fruit fly and a mutant white-eyed male, what color eyes will the F1 and F2 offspring have? (part 2: conclusion)"
+      ],
+      "review_reasons": [
+        "29 positioned labels require native redesign",
+        "dense text requires post-conversion polish",
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unrecognized source text color #ff6600 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.17896428571428574,
+          "top": 0.012971428571428571,
+          "right": 0.8209285714285715,
+          "bottom": 0.9581142857142856
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.19039285714285714,
+              "top": 0.09897142857142857,
+              "right": 0.35607142857142854,
+              "bottom": 0.20222857142857142
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "P",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.19217857142857145,
+              "top": 0.3909714285714285,
+              "right": 0.35507142857142854,
+              "bottom": 0.48
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.1850357142857143,
+              "top": 0.724,
+              "right": 0.36299999999999993,
+              "bottom": 0.8158857142857142
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "F",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Generation",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.18542857142857144,
+              "top": 0.012971428571428571,
+              "right": 0.3617142857142857,
+              "bottom": 0.05942857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Conclusion",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3125714285714286,
+              "top": 0.35874285714285714,
+              "right": 0.39185714285714296,
+              "bottom": 0.4008571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Eggs",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3103928571428572,
+              "top": 0.6573142857142857,
+              "right": 0.3896785714285715,
+              "bottom": 0.6994285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Eggs",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7091785714285714,
+              "top": 0.3042285714285714,
+              "right": 0.8076428571428571,
+              "bottom": 0.34931428571428574
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Sperm",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7050357142857143,
+              "top": 0.6081714285714286,
+              "right": 0.8035000000000001,
+              "bottom": 0.653257142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Sperm",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3638214285714286,
+              "top": 0.12028571428571429,
+              "right": 0.3951071428571429,
+              "bottom": 0.14537142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              11
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3636071428571428,
+              "top": 0.15571428571428572,
+              "right": 0.39671428571428563,
+              "bottom": 0.19160000000000002
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 13,
+            "source_order": [
+              12
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6651785714285715,
+              "top": 0.12262857142857142,
+              "right": 0.6964642857142856,
+              "bottom": 0.14771428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 14,
+            "source_order": [
+              13
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6659999999999999,
+              "top": 0.1568,
+              "right": 0.6972857142857142,
+              "bottom": 0.19165714285714283
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Y",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 15,
+            "source_order": [
+              14
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7324642857142858,
+              "top": 0.1012,
+              "right": 0.76375,
+              "bottom": 0.12628571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 16,
+            "source_order": [
+              15
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4108571428571428,
+              "top": 0.8443428571428572,
+              "right": 0.4421428571428571,
+              "bottom": 0.8694285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 17,
+            "source_order": [
+              16
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6775,
+              "top": 0.8162857142857144,
+              "right": 0.7087857142857142,
+              "bottom": 0.8413714285714287
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 18,
+            "source_order": [
+              17
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.513,
+              "top": 0.5997714285714286,
+              "right": 0.5588214285714286,
+              "bottom": 0.6361714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 19,
+            "source_order": [
+              18
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5416071428571428,
+              "top": 0.3996571428571428,
+              "right": 0.5874285714285714,
+              "bottom": 0.4360571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 20,
+            "source_order": [
+              19
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4015714285714286,
+              "top": 0.42182857142857144,
+              "right": 0.44739285714285715,
+              "bottom": 0.45822857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 21,
+            "source_order": [
+              20
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.42014285714285715,
+              "top": 0.18359999999999999,
+              "right": 0.4659642857142857,
+              "bottom": 0.22
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 22,
+            "source_order": [
+              21
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.42096428571428574,
+              "top": 0.1012,
+              "right": 0.4667857142857143,
+              "bottom": 0.1376
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 23,
+            "source_order": [
+              22
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6683571428571429,
+              "top": 0.3980571428571429,
+              "right": 0.7141785714285714,
+              "bottom": 0.4344571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 24,
+            "source_order": [
+              23
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5425714285714286,
+              "top": 0.6959428571428571,
+              "right": 0.5883928571428572,
+              "bottom": 0.7323428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 25,
+            "source_order": [
+              24
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4005,
+              "top": 0.7208000000000001,
+              "right": 0.4463214285714286,
+              "bottom": 0.7572
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 26,
+            "source_order": [
+              25
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5421785714285714,
+              "top": 0.7721142857142858,
+              "right": 0.588,
+              "bottom": 0.8085142857142856
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 27,
+            "source_order": [
+              26
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6689642857142858,
+              "top": 0.6949142857142857,
+              "right": 0.7147857142857144,
+              "bottom": 0.7313142857142856
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 28,
+            "source_order": [
+              27
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5388571428571428,
+              "top": 0.8946285714285714,
+              "right": 0.5846785714285714,
+              "bottom": 0.9310285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 29,
+            "source_order": [
+              28
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5525,
+              "top": 0.8176571428571427,
+              "right": 0.5837857142857144,
+              "bottom": 0.842742857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 30,
+            "source_order": [
+              29
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5485357142857143,
+              "top": 0.47239999999999993,
+              "right": 0.5798214285714286,
+              "bottom": 0.4974857142857142
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 31,
+            "source_order": [
+              30
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5256785714285714,
+              "top": 0.2912571428571429,
+              "right": 0.5569642857142857,
+              "bottom": 0.31634285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "w",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_007.jpg",
+            "bounds": {
+              "left": 0.17896428571428574,
+              "top": 0.019485714285714287,
+              "right": 0.8209285714285715,
+              "bottom": 0.9581142857142856
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 31
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 142.044094488189,
+          "top": 9.666141732283466,
+          "width": 509.52755905511816,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 151.11496062992126,
+          "top": 49.09606299212598,
+          "width": 131.4992125984252,
+          "height": 51.22204724409448,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 152.53228346456694,
+          "top": 193.94645669291336,
+          "width": 129.28818897637794,
+          "height": 44.16377952755906,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 146.86299212598425,
+          "top": 359.14960629921256,
+          "width": 141.25039370078738,
+          "height": 45.581102362204724,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 147.1748031496063,
+          "top": 6.4346456692913385,
+          "width": 139.91811023622046,
+          "height": 23.04566929133858,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 248.08818897637798,
+          "top": 177.95905511811023,
+          "width": 62.92913385826772,
+          "height": 20.891338582677164,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 246.35905511811026,
+          "top": 326.0692913385827,
+          "width": 62.92913385826772,
+          "height": 20.891338582677164,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 562.8755905511811,
+          "top": 150.91653543307086,
+          "width": 78.1511811023622,
+          "height": 22.365354330708662,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 559.5874015748032,
+          "top": 301.6913385826772,
+          "width": 78.1511811023622,
+          "height": 22.365354330708662,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 288.76535433070865,
+          "top": 59.669291338582674,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 288.5952755905511,
+          "top": 77.24409448818898,
+          "width": 26.27716535433071,
+          "height": 17.801574803149606,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 527.9527559055118,
+          "top": 60.83149606299212,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 528.6047244094487,
+          "top": 77.78267716535433,
+          "width": 24.831496062992127,
+          "height": 17.291338582677163,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 581.3574803149606,
+          "top": 50.201574803149605,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 326.09763779527555,
+          "top": 418.8472440944882,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 537.7322834645669,
+          "top": 404.92913385826773,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 407.16850393700787,
+          "top": 297.5244094488189,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 429.87401574803147,
+          "top": 198.2551181102362,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 318.7275590551181,
+          "top": 209.2535433070866,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 333.46771653543306,
+          "top": 91.0771653543307,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 334.1196850393701,
+          "top": 50.201574803149605,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 530.4755905511811,
+          "top": 197.46141732283465,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 430.63937007874017,
+          "top": 345.2314960629921,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 317.8771653543307,
+          "top": 357.56220472440947,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 430.32755905511806,
+          "top": 383.01732283464565,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 530.9574803149607,
+          "top": 344.72125984251966,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 427.69133858267713,
+          "top": 443.792125984252,
+          "width": 36.36850393700787,
+          "height": 18.056692913385827,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 438.5196850393701,
+          "top": 405.6094488188976,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 435.3732283464567,
+          "top": 234.34015748031493,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 31,
+          "source_kind": "vector",
+          "left": 417.2314960629921,
+          "top": 144.48188976377955,
+          "width": 24.831496062992127,
+          "height": 12.444094488188977,
+          "z_order": [
+            30
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 13,
+      "hidden": false,
+      "visible_page": 13,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 57.6,
+          "top": 21.6,
+          "width": 653.0173228346456,
+          "height": 446.4,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 14,
+      "hidden": false,
+      "visible_page": 14,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 15,
+      "hidden": false,
+      "visible_page": 15,
+      "layout": "stacked-panels",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 375.0236220472441,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 305.12125984251963,
+          "top": 403.8236220472441,
+          "width": 359.97165354330707,
+          "height": 82.43149606299212,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 16,
+      "hidden": false,
+      "visible_page": 16,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 17,
+      "hidden": false,
+      "visible_page": 17,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.5 Human sex chromosomes"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.2646428571428571,
+          "top": 0.23388571428571428,
+          "right": 0.73525,
+          "bottom": 0.9312
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4574642857142857,
+              "top": 0.3385714285714285,
+              "right": 0.4820714285714285,
+              "bottom": 0.3821142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.602107142857143,
+              "top": 0.4785714285714286,
+              "right": 0.6267142857142859,
+              "bottom": 0.5221142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Y",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_009.jpg",
+            "bounds": {
+              "left": 0.2646428571428571,
+              "top": 0.23388571428571428,
+              "right": 0.73525,
+              "bottom": 0.9312
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 210.04724409448818,
+          "top": 116.02204724409448,
+          "width": 373.52125984251967,
+          "height": 345.911811023622,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 363.0897637795275,
+          "top": 167.9527559055118,
+          "width": 19.53070866141732,
+          "height": 21.6,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 378.8787401574803,
+          "top": 179.1496062992126,
+          "width": 35.23464566929135,
+          "height": 9.127559055118127,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 479.42362204724407,
+          "top": 257.7259842519685,
+          "width": 7.908661417322833,
+          "height": 19.785826771653547,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 477.89291338582683,
+          "top": 237.4015748031496,
+          "width": 19.53070866141732,
+          "height": 21.6,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            5
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 18,
+      "hidden": false,
+      "visible_page": 18,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 210.5291338582677,
+          "top": 86.4,
+          "width": 372.58582677165356,
+          "height": 302.4,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 388.79999999999995,
+          "width": 714.3023622047244,
+          "height": 72.90708661417322,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 19,
+      "hidden": false,
+      "visible_page": 19,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 141.73228346456693,
+          "top": 259.2,
+          "width": 510.17952755905515,
+          "height": 230.4,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 164.9763779527559,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 20,
+      "hidden": false,
+      "visible_page": 20,
+      "layout": "two-plus-one-panels",
+      "text_blocks": 14,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.6a Some chromosomal systems of sex determination (part 1: X-Y and X-0 systems)"
+      ],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.004357142857142857,
+          "top": 0.20131428571428572,
+          "right": 0.6224285714285714,
+          "bottom": 0.7408571428571429
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.35175,
+              "top": 0.2390857142857143,
+              "right": 0.4497857142857143,
+              "bottom": 0.27994285714285716
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Parents",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3932142857142857,
+              "top": 0.5893142857142857,
+              "right": 0.4358571428571429,
+              "bottom": 0.6251428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "or",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.26171428571428573,
+              "top": 0.6763428571428572,
+              "right": 0.5728214285714287,
+              "bottom": 0.7336
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Zygotes (offspring)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2275357142857143,
+              "top": 0.4134285714285715,
+              "right": 0.32971428571428574,
+              "bottom": 0.5378857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "or",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "Sperm",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5180357142857144,
+              "top": 0.4845714285714286,
+              "right": 0.5837142857142857,
+              "bottom": 0.5286285714285713
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Egg",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.24639285714285714,
+              "top": 0.2348571428571429,
+              "right": 0.30096428571428574,
+              "bottom": 0.2998285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "44 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "XY",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5009642857142858,
+              "top": 0.5798285714285715,
+              "right": 0.5577142857142857,
+              "bottom": 0.6582285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "44 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "XY",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.521,
+              "top": 0.23325714285714286,
+              "right": 0.5777499999999999,
+              "bottom": 0.3116571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "44 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "XX",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.25696428571428576,
+              "top": 0.5809142857142857,
+              "right": 0.3137142857142857,
+              "bottom": 0.6593142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "44 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "XX",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2005357142857143,
+              "top": 0.4198857142857143,
+              "right": 0.24528571428571427,
+              "bottom": 0.4989142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "22 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              11
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5245714285714286,
+              "top": 0.40994285714285716,
+              "right": 0.5693214285714286,
+              "bottom": 0.4889714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "22 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 13,
+            "source_order": [
+              12
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.31328571428571433,
+              "top": 0.41377142857142857,
+              "right": 0.35803571428571435,
+              "bottom": 0.49279999999999996
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "22 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": " Y",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_012.png",
+            "bounds": {
+              "left": 0.004357142857142857,
+              "top": 0.20131428571428572,
+              "right": 0.6224285714285714,
+              "bottom": 0.7408571428571429
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 20,
+        "layout_identity": "AL6T19",
+        "declared_placeholder_roles": [
+          "title"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 16
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 3.458267716535433,
+          "top": 99.86456692913386,
+          "width": 490.56377952755906,
+          "height": 267.6472440944882,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 279.18425196850393,
+          "top": 118.6015748031496,
+          "width": 77.81102362204724,
+          "height": 20.26771653543307,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 312.09448818897636,
+          "top": 292.33700787401574,
+          "width": 33.84566929133858,
+          "height": 17.773228346456694,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 207.7228346456693,
+          "top": 335.50866141732286,
+          "width": 246.92598425196852,
+          "height": 28.403149606299213,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 180.59527559055118,
+          "top": 205.08661417322836,
+          "width": 81.0992125984252,
+          "height": 61.738582677165354,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 411.1653543307087,
+          "top": 240.3779527559055,
+          "width": 52.129133858267714,
+          "height": 21.85511811023622,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 195.56220472440944,
+          "top": 116.50393700787403,
+          "width": 43.31338582677165,
+          "height": 32.22992125984252,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 397.615748031496,
+          "top": 287.63149606299214,
+          "width": 45.042519685039366,
+          "height": 38.891338582677164,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 413.5181102362204,
+          "top": 115.71023622047244,
+          "width": 45.042519685039366,
+          "height": 38.891338582677164,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 203.95275590551182,
+          "top": 288.17007874015746,
+          "width": 45.042519685039366,
+          "height": 38.891338582677164,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 159.16535433070865,
+          "top": 208.28976377952756,
+          "width": 35.518110236220465,
+          "height": 39.20314960629921,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 416.3527559055118,
+          "top": 203.35748031496064,
+          "width": 35.518110236220465,
+          "height": 39.20314960629921,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 248.65511811023623,
+          "top": 205.25669291338582,
+          "width": 35.518110236220465,
+          "height": 39.20314960629921,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "frame",
+          "left": 507.96850393700794,
+          "top": 93.6,
+          "width": 266.0031496062992,
+          "height": 345.6,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "frame",
+          "left": 21.6,
+          "top": 383.3574803149606,
+          "width": 482.40000000000003,
+          "height": 70.24251968503937,
+          "z_order": [
+            15
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 21,
+      "hidden": false,
+      "visible_page": 21,
+      "layout": "one-panel",
+      "text_blocks": 4,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.6a Some chromosomal systems of sex determination (part 1: X-Y and X-0 systems)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.05253571428571429,
+          "top": 0.5805714285714286,
+          "right": 0.807357142857143,
+          "bottom": 0.9483428571428573
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.05253571428571429,
+              "top": 0.8769142857142856,
+              "right": 0.3721071428571429,
+              "bottom": 0.9304
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(b) The X-0 system",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7341071428571428,
+              "top": 0.7189714285714286,
+              "right": 0.7788571428571428,
+              "bottom": 0.798
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "22 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "X",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5225714285714286,
+              "top": 0.7186857142857143,
+              "right": 0.5673214285714286,
+              "bottom": 0.7977142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "22 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "XX",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_013.png",
+            "bounds": {
+              "left": 0.2462857142857143,
+              "top": 0.5805714285714286,
+              "right": 0.807357142857143,
+              "bottom": 0.9483428571428573
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 21,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 195.4771653543307,
+          "top": 288.0,
+          "width": 445.32283464566933,
+          "height": 182.43779527559056,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 41.69763779527559,
+          "top": 435.0047244094488,
+          "width": 253.64409448818898,
+          "height": 26.53228346456693,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 582.6614173228346,
+          "top": 356.65511811023623,
+          "width": 35.518110236220465,
+          "height": 39.20314960629921,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.76535433070865,
+          "top": 356.51338582677164,
+          "width": 35.518110236220465,
+          "height": 39.20314960629921,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 93.6,
+          "width": 714.3023622047244,
+          "height": 230.4,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            5
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 22,
+      "hidden": false,
+      "visible_page": 22,
+      "layout": "stacked-panels",
+      "text_blocks": 4,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.6b Some chromosomal systems of sex determination (part 2: Z-W and haplo-diploid systems)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.016642857142857143,
+          "top": 0.5753142857142857,
+          "right": 0.7817500000000001,
+          "bottom": 0.9654285714285715
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.016642857142857143,
+              "top": 0.9041714285714286,
+              "right": 0.3174285714285715,
+              "bottom": 0.9654285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(c) The Z-W system",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.52575,
+              "top": 0.6678857142857143,
+              "right": 0.5813571428571429,
+              "bottom": 0.7434285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "76 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "ZW",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6970000000000001,
+              "top": 0.6689142857142858,
+              "right": 0.7526071428571429,
+              "bottom": 0.7444571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "76 ",
+                    "link": ""
+                  },
+                  {
+                    "text": "+",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "ZZ",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_014.png",
+            "bounds": {
+              "left": 0.21814285714285714,
+              "top": 0.5753142857142857,
+              "right": 0.7817500000000001,
+              "bottom": 0.9078857142857143
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 22,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 173.14015748031494,
+          "top": 285.39212598425195,
+          "width": 447.33543307086615,
+          "height": 164.9763779527559,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 13.209448818897638,
+          "top": 448.5259842519685,
+          "width": 238.73385826771656,
+          "height": 30.38740157480315,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 417.28818897637797,
+          "top": 331.31338582677165,
+          "width": 44.13543307086614,
+          "height": 37.4740157480315,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 553.2094488188976,
+          "top": 331.8236220472441,
+          "width": 44.13543307086614,
+          "height": 37.4740157480315,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 164.9763779527559,
+          "z_order": [
+            5
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 23,
+      "hidden": false,
+      "visible_page": 23,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 23,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 191.76377952755905,
+          "top": 10.431496062992126,
+          "width": 588.6708661417323,
+          "height": 100.26141732283465,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 211.60629921259843,
+          "top": 112.42204724409449,
+          "width": 575.4330708661417,
+          "height": 341.1779527559055,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 21.826771653543307,
+          "top": 38.55118110236221,
+          "width": 175.63464566929133,
+          "height": 417.4866141732283,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 24,
+      "hidden": false,
+      "visible_page": 24,
+      "layout": "stacked-panels",
+      "text_blocks": 4,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.6b Some chromosomal systems of sex determination (part 2: Z-W and haplo-diploid systems)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.049928571428571426,
+          "top": 0.6352571428571429,
+          "right": 0.7461428571428572,
+          "bottom": 0.9370857142857143
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.049928571428571426,
+              "top": 0.8830857142857144,
+              "right": 0.48792857142857143,
+              "bottom": 0.9370857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(d) The haplo-diploid system",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.49542857142857144,
+              "top": 0.7120000000000001,
+              "right": 0.5898928571428572,
+              "bottom": 0.7944000000000001
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "32",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "(Diploid)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6390714285714285,
+              "top": 0.7117714285714286,
+              "right": 0.7335357142857143,
+              "bottom": 0.7941714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "16",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "(Haploid)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_016.png",
+            "bounds": {
+              "left": 0.23810714285714285,
+              "top": 0.6352571428571429,
+              "right": 0.7461428571428572,
+              "bottom": 0.8888
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 24,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 6
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 188.98582677165354,
+          "top": 315.1275590551181,
+          "width": 403.2283464566929,
+          "height": 125.7732283464567,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 39.62834645669291,
+          "top": 438.0661417322835,
+          "width": 347.64094488188977,
+          "height": 26.787401574803148,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 393.2220472440945,
+          "top": 353.1968503937008,
+          "width": 74.97637795275591,
+          "height": 40.8755905511811,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 507.23149606299205,
+          "top": 353.08346456692914,
+          "width": 74.97637795275591,
+          "height": 40.8755905511811,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.02204724409448,
+          "width": 714.3023622047244,
+          "height": 165.0047244094488,
+          "z_order": [
+            5
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 25,
+      "hidden": false,
+      "visible_page": 25,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 25,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 374.99527559055116,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 360.02834645669293,
+          "top": 372.50078740157477,
+          "width": 359.97165354330707,
+          "height": 74.15433070866142,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 26,
+      "hidden": false,
+      "visible_page": 26,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 26,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 27,
+      "hidden": false,
+      "visible_page": 27,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 27,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 28,
+      "hidden": false,
+      "visible_page": 28,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 28,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 29,
+      "hidden": false,
+      "visible_page": 29,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [
+        "<number>"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 29,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 30,
+      "hidden": false,
+      "visible_page": 30,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 30,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 31,
+      "hidden": false,
+      "visible_page": 31,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 31,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 111.85511811023622,
+          "top": 27.38267716535433,
+          "width": 569.9055118110236,
+          "height": 441.07086614173227,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 32,
+      "hidden": false,
+      "visible_page": 32,
+      "layout": "two-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 32,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 40.98897637795275,
+          "top": 116.02204724409448,
+          "width": 345.911811023622,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 407.0267716535433,
+          "top": 116.02204724409448,
+          "width": 345.911811023622,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 33,
+      "hidden": false,
+      "visible_page": 33,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "source object crosses physical page bounds",
+        "unrecognized source text color #008000 requires review",
+        "unrecognized source text color #808000 requires review"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 33,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 26.418897637795276,
+          "top": 48.64251968503937,
+          "width": 740.5228346456693,
+          "height": 266.2866141732284,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 35.971653543307085,
+          "top": 323.8015748031496,
+          "width": 720.0,
+          "height": 187.54015748031495,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 34,
+      "hidden": false,
+      "visible_page": 34,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 34,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 16.412598425196848,
+          "top": 29.962204724409446,
+          "width": 760.7622047244095,
+          "height": 420.0094488188976,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 35,
+      "hidden": false,
+      "visible_page": 35,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 35,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 122.79685039370078,
+          "top": 16.525984251968502,
+          "width": 550.0913385826772,
+          "height": 462.9826771653543,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 36,
+      "hidden": false,
+      "visible_page": 36,
+      "layout": "stacked-panels",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 36,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 194.88188976377953,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 132.1228346456693,
+          "top": 238.11023622047244,
+          "width": 431.4047244094488,
+          "height": 172.28976377952756,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 37,
+      "hidden": false,
+      "visible_page": 37,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 37,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 38,
+      "hidden": false,
+      "visible_page": 38,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized single connected materially coupled visual graph; enclosed coarse text into native source-order content"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "mixed-visual-1",
+        "kind": "mixed-visual",
+        "classification_reason": "single connected materially coupled visual graph; enclosed coarse text",
+        "bounds": {
+          "left": 0.04996428571428572,
+          "top": 0.23394285714285717,
+          "right": 0.9503571428571428,
+          "bottom": 0.9378857142857143
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.07496428571428572,
+              "top": 0.8332571428571429,
+              "right": 0.9499642857142857,
+              "bottom": 0.9378857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "each son gets his X chromosome from his mother and his Y chromosome from his father.",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text",
+            "bounds": {
+              "left": 0.635,
+              "top": 0.23394285714285717,
+              "right": 0.9503571428571428,
+              "bottom": 0.9312571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "each son gets his X chromosome from his mother and his Y chromosome from his father.",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 2,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06d-x_linked_genes_1/image_023.jpg",
+            "bounds": {
+              "left": 0.04996428571428572,
+              "top": 0.2531428571428571,
+              "right": 0.6259285714285714,
+              "bottom": 0.911942857142857
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 38,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 125.57480314960628,
+          "width": 457.14330708661413,
+          "height": 326.8062992125984,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 59.4992125984252,
+          "top": 413.348031496063,
+          "width": 694.488188976378,
+          "height": 51.902362204724405,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 504.0,
+          "top": 116.05039370078741,
+          "width": 250.29921259842519,
+          "height": 345.911811023622,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 39,
+      "hidden": false,
+      "visible_page": 39,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 39,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 117.38267716535432,
+          "width": 348.57637795275593,
+          "height": 343.1905511811023,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 40,
+      "hidden": false,
+      "visible_page": 40,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 40,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 429.81732283464567,
+          "top": 116.02204724409448,
+          "width": 300.35905511811023,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 41,
+      "hidden": false,
+      "visible_page": 41,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 41,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 232.49763779527558,
+          "top": 116.02204724409448,
+          "width": 328.62047244094487,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 42,
+      "hidden": false,
+      "visible_page": 42,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.7 The transmission of X-linked recessive traits"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 42,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 320.31496062992125,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 411.81732283464567,
+          "top": 116.02204724409448,
+          "width": 336.35905511811023,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 43,
+      "hidden": false,
+      "visible_page": 43,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 43,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 44,
+      "hidden": false,
+      "visible_page": 44,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.7 The transmission of X-linked recessive traits"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 44,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "graphic",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.883464566929135,
+          "top": 116.02204724409448,
+          "width": 348.1511811023622,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.7228346456693,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 45,
+      "hidden": false,
+      "visible_page": 45,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 15.7 The transmission of X-linked recessive traits"
+      ],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 45,
+        "layout_identity": "AL3T3",
+        "declared_placeholder_roles": [
+          "title",
+          "outline",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 11.026771653543307,
+          "width": 761.9527559055118,
+          "height": 100.26141732283465,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 348.57637795275593,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 405.6944881889764,
+          "top": 120.44409448818897,
+          "width": 348.57637795275593,
+          "height": 337.0677165354331,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 46,
+      "hidden": false,
+      "visible_page": 46,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 46,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 47,
+      "hidden": false,
+      "visible_page": 47,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 47,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 374.99527559055116,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 403.2,
+          "top": 335.3952755905512,
+          "width": 359.97165354330707,
+          "height": 60.604724409448814,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 48,
+      "hidden": false,
+      "visible_page": 48,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 48,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 60.00944881889764,
+          "width": 714.3023622047244,
+          "height": 344.5511811023622,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 49,
+      "hidden": false,
+      "visible_page": 49,
+      "layout": "stacked-panels",
+      "text_blocks": 0,
+      "images": 2,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 49,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 109.95590551181103,
+          "top": 50.4,
+          "width": 573.7322834645669,
+          "height": 230.62677165354327,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 109.02047244094489,
+          "top": 288.0,
+          "width": 575.6031496062992,
+          "height": 173.73543307086612,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 50,
+      "hidden": false,
+      "visible_page": 50,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 3,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized ambiguous topology bounds [NormalizedBounds(left=0.24139285714285716, top=0.06662857142857143, right=0.7584642857142858, bottom=0.3992571428571428), NormalizedBounds(left=0.049928571428571426, top=0.44, right=0.9498928571428573, bottom=0.6881142857142857), NormalizedBounds(left=0.11792857142857142, top=0.6990857142857142, right=0.9499285714285715, bottom=0.8299428571428571)] into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 50,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [
+          "graphic",
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.62834645669291,
+          "top": 218.26771653543307,
+          "width": 714.3023622047244,
+          "height": 123.0803149606299,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 93.6,
+          "top": 346.79055118110233,
+          "width": 660.3590551181102,
+          "height": 64.91338582677166,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 191.5937007874016,
+          "top": 33.051968503937005,
+          "width": 410.4,
+          "height": 165.0047244094488,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 51,
+      "hidden": false,
+      "visible_page": 51,
+      "layout": "stacked-panels",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 51,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 358.83779527559057,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 305.12125984251963,
+          "top": 403.8236220472441,
+          "width": 359.97165354330707,
+          "height": 60.604724409448814,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 52,
+      "hidden": false,
+      "visible_page": 52,
+      "layout": "multiple-choice",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure",
+        "question": {
+          "source_ordinal": 1,
+          "source_order": [
+            0
+          ],
+          "source_kind": "text",
+          "bounds": {
+            "left": 0.049999999999999996,
+            "top": 0.060399999999999995,
+            "right": 0.9499642857142857,
+            "bottom": 0.9144000000000001
+          },
+          "paragraphs": [
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "A man who is an ",
+                  "link": ""
+                },
+                {
+                  "text": "achondroplastic dwarf with normal vision",
+                  "link": ""
+                },
+                {
+                  "text": " marries a ",
+                  "link": ""
+                },
+                {
+                  "text": "color-blind woman of normal height.",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "The man's father was six feet tall, and both the woman's parents were of average height.",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X- linked recessive.",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "How many of their daughters might be expected to be color-blind dwarfs?",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "A) none",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "B) ",
+                  "link": ""
+                },
+                {
+                  "text": "one out of four",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "C) ",
+                  "link": ""
+                },
+                {
+                  "text": "half",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "D) three out of four",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "E) all",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+        },
+        "answer": {
+          "source_ordinal": 2,
+          "source_order": [
+            1
+          ],
+          "source_kind": "text-box",
+          "bounds": {
+            "left": 0.47175,
+            "top": 0.6108571428571429,
+            "right": 0.9252857142857143,
+            "bottom": 0.7547428571428572
+          },
+          "paragraphs": [
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "Answer: A",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+        },
+        "image": null,
+        "question_visual_region": null
+      },
+      "source_page_evidence": {
+        "source_index": 52,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 423.6377952755906,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 374.4283464566929,
+          "top": 303.0236220472441,
+          "width": 359.97165354330707,
+          "height": 71.3763779527559,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 53,
+      "hidden": false,
+      "visible_page": 53,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 53,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 416.4377952755906,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 403.2283464566929,
+          "top": 288.0,
+          "width": 359.97165354330707,
+          "height": 68.25826771653543,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 54,
+      "hidden": false,
+      "visible_page": 54,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 54,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 416.4377952755906,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 403.2283464566929,
+          "top": 288.0,
+          "width": 359.97165354330707,
+          "height": 68.25826771653543,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 55,
+      "hidden": false,
+      "visible_page": 55,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 55,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 430.83779527559057,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 56,
+      "hidden": false,
+      "visible_page": 56,
+      "layout": "four-panels",
+      "text_blocks": 3,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into a table-safe native grid"
+      ],
+      "native_table_count": 1,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 56,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 194.88188976377953,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 180.0,
+          "top": 252.0,
+          "width": 440.50393700787396,
+          "height": 187.39842519685038,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 147.4015748031496,
+          "top": 352.4314960629921,
+          "width": 39.685039370078734,
+          "height": 49.09606299212598,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 454.30866141732287,
+          "top": 221.18740157480315,
+          "width": 37.78582677165354,
+          "height": 49.1244094488189,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 57,
+      "hidden": false,
+      "visible_page": 57,
+      "layout": "four-panels",
+      "text_blocks": 3,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into a table-safe native grid"
+      ],
+      "native_table_count": 1,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 57,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 4
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 194.88188976377953,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 180.0,
+          "top": 252.0,
+          "width": 440.50393700787396,
+          "height": 187.39842519685038,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 144.02834645669293,
+          "top": 353.16850393700787,
+          "width": 39.685039370078734,
+          "height": 49.09606299212598,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "frame",
+          "left": 454.3370078740157,
+          "top": 224.84409448818897,
+          "width": 37.78582677165354,
+          "height": 49.1244094488189,
+          "z_order": [
+            4
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 58,
+      "hidden": false,
+      "visible_page": 58,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 58,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 194.88188976377953,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 59,
+      "hidden": false,
+      "visible_page": 59,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 59,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 194.88188976377953,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 60,
+      "hidden": false,
+      "visible_page": 60,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 60,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 194.88188976377953,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 61,
+      "hidden": false,
+      "visible_page": 61,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 61,
+        "layout_identity": "AL2T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 430.83779527559057,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 396.0,
+          "top": 363.74173228346456,
+          "width": 359.97165354330707,
+          "height": 68.25826771653543,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 62,
+      "hidden": false,
+      "visible_page": 62,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 62,
+        "layout_identity": "AL5T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 447.9307086614173,
+          "top": 262.0346456692913,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    }
+  ]
+}

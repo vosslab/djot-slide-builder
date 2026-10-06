@@ -7,6 +7,7 @@ import functools
 import hashlib
 import json
 import pathlib
+import re
 
 # PIP3 modules
 import fontTools.ttLib
@@ -281,7 +282,9 @@ def text_color_names() -> tuple[str, ...]:
 
 
 def resolve_text_color(name: str, accent_color: str) -> str:
-	"""Resolve one semantic text color without accepting arbitrary color values."""
+	"""Resolve a semantic color or a validated six-digit source RGB color."""
+	if re.fullmatch(r"#[0-9a-fA-F]{6}", name):
+		return name[1:].upper()
 	if name == "accent":
 		return accent_color
 	if name not in _TEXT_COLORS:

@@ -423,6 +423,14 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 	if spec.name == "multiple-choice":
 		validate_multiple_choice(source)
 		return
+	if spec.name == "image-comparison":
+		for cell in cells:
+			if cell.name.startswith("top-"):
+				if len(cell.blocks) != 1 or not isinstance(cell.blocks[0], slide_lib.native_model.Image):
+					raise source_error(cell.location, "image-comparison top slots require one image")
+			elif not 1 <= len(cell.blocks) <= 2 or any(not isinstance(block,
+					slide_lib.native_model.Paragraph) for block in cell.blocks):
+				raise source_error(cell.location, "image-comparison bottom slots require one or two paragraphs")
 	if spec.name == "big-image":
 		if source.blocks:
 			raise source_error(source.blocks[0].location,

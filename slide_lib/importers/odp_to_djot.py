@@ -13,10 +13,12 @@ import tempfile
 # local repo modules
 import slide_lib.djot_lint as djot_lint
 import slide_lib.djot_parser
+import slide_lib.image_area_audit
 import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.image_annotations as image_annotations
 import slide_lib.importers.odp_reader as odp_reader
+import slide_lib.importers.odp_reveals as odp_reveals
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
 
@@ -89,8 +91,12 @@ def plan_slides(presentation: odp_reader.ImportedPresentation) -> list[djot_emit
 			text_regions, visual_regions, source_slide.data.images,
 			source_slide.page_width, source_slide.page_height,
 		)
+		plan, animation_reasons = odp_reveals.plan_text_reveals(
+			plan, source_slide.positioned_text, text_regions, visual_regions)
+		data = dataclasses.replace(source_slide.data,
+			review_reasons=(*source_slide.data.review_reasons, *animation_reasons))
 		planned_slides.append(djot_emitter.PlannedSlide(
-			source_slide.data, plan, text_regions, visual_regions,
+			data, plan, text_regions, visual_regions,
 			None if source_slide.data.hidden else visible_page_index, overlays,
 		))
 	return planned_slides
@@ -224,6 +230,10 @@ def convert_odp(input_path: pathlib.Path, output_path: pathlib.Path) -> Conversi
 			"slides": records,
 		}
 		report_path = staging_assets / "import_report.json"
+		try:
+			report["image_area_audit"] = slide_lib.image_area_audit.audit(input_path, staging_djot)
+		except ValueError as error:
+			report["image_area_audit_error"] = str(error)
 		report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 		validate_staged_djot(staging_djot)
 		publish_conversion(staging_djot, staging_assets, output_path)
@@ -246,3 +256,11 @@ def run_import(input_file: pathlib.Path, output_file: pathlib.Path | None = None
 	)
 	print(f"Djot: {summary.output_path}")
 	print(f"Import report: {summary.report_path}")
+	report = json.loads(summary.report_path.read_text(encoding="utf-8"))
+	for item in report.get("image_area_audit", []):
+		if item.get("warning"):
+			print(f"WARNING slide {item['slide']}: image area "
+				f"{item['source_slide_percent']}% -> {item['target_slide_percent']}% of slide "
+				f"({item['relative_loss_percent']}% loss); review image/text allocation")
+	if "image_area_audit_error" in report:
+		print(f"WARNING: image-area audit unavailable: {report['image_area_audit_error']}")

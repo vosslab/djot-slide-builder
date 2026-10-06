@@ -97,7 +97,8 @@ def question_parts(question: slide_lib.native_model.Cell) -> QuestionParts:
 				context_labels.append(item_block)
 			else:
 				choices.append(item_block)
-	if len(choices) < 2:
+	# A single standalone list item is an open question with a revealed answer.
+	if len(choices) < 2 and not (len(choices) == 1 and not stem and not nested_choices):
 		location = question.blocks[0].location
 		raise ValueError(
 			f"{location.path}:{location.line}: adaptive multiple-choice layout requires at least two choices")
@@ -171,11 +172,11 @@ def answer_trial(items: tuple[
 	size = slide_lib.layout_measurement.largest_fitting_size(theme.ordinary_body_size_pt,
 		slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT,
 		lambda value: slide_lib.layout_measurement.text_height(items, value,
-			measurement.wrapping_extent, theme, session) <= measurement.available_extent)
+			measurement.wrapping_extent, theme, session, bold=True) <= measurement.available_extent)
 	if size is None:
 		return None
 	height = max(90.0, slide_lib.layout_measurement.text_height(
-		items, size, inner_width, theme, session) + 20)
+		items, size, inner_width, theme, session, bold=True) + 20)
 	return AnswerTrial(size, height)
 
 

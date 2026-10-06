@@ -3,6 +3,23 @@
 Use repository-owned `.djot` source to produce editable ODP and ODP-derived PDF output.
 Existing-presentation import is a one-time source migration workflow.
 
+## Audit image shrinkage
+
+Compare original ODP image coverage with the actual displayed area in a converted Djot deck:
+
+```bash
+source source_me.sh && python3 deck_tools.py image-audit \
+    genetics/LECT06/lect06d-x_linked_genes_1.odp \
+    genetics/LECT06/djot/lect06d-x_linked_genes_1.djot --loss-threshold 30
+```
+
+The JSON report includes original/converted percentages of slide area, percentage-point change,
+relative area loss, and exact-white/transparent margin estimates. The default warning threshold is
+30% relative loss. New imports also record this audit and print shrinkage warnings. Slide order
+must match; replaced artwork and transformed frames are marked for manual review. The audit does
+not trim images, modify slides, or select layouts. See
+[image_area_regression_followup.md](active_plans/image_area_regression_followup.md) for limitations.
+
 ## Build native decks
 
 Write editable ODP for one source deck:

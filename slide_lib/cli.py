@@ -4,6 +4,7 @@
 import sys
 import pathlib
 import argparse
+import json
 import collections.abc
 
 # Local Modules
@@ -11,6 +12,7 @@ import slide_lib.djot_lint
 import slide_lib.terminal_output
 import slide_lib.importers.odp_to_djot
 import slide_lib.importers.odp_visibility
+import slide_lib.image_area_audit
 
 
 ImportOperation = collections.abc.Callable[[pathlib.Path, pathlib.Path | None], None]
@@ -44,6 +46,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 	capacity_parser = subparsers.add_parser("capacity",
 		help="inspect capacity concerns without writing presentation artifacts")
 	capacity_parser.add_argument("input_path", help="source deck or folder tree")
+	audit_parser = subparsers.add_parser("image-audit",
+		help="compare source ODP image area with compiled Djot display area")
+	audit_parser.add_argument("source", type=pathlib.Path)
+	audit_parser.add_argument("converted", type=pathlib.Path)
+	audit_parser.add_argument("--loss-threshold", type=float, default=30,
+		help="relative area loss percentage that triggers a warning (default: 30)")
 
 	import_parser = subparsers.add_parser("import", help="import one trusted ODP deck")
 	import_parser.add_argument("input_file", type=pathlib.Path, help="trusted ODP")
@@ -71,6 +79,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
 	"""Dispatch one parsed command to its reusable application operation."""
 	args = parse_args(argv)
+	if args.command == "image-audit":
+		print(json.dumps(slide_lib.image_area_audit.audit(args.source, args.converted,
+			args.loss_threshold), indent=2))
+		return 0
 	if args.command == "build":
 		return slide_lib.terminal_output.run_build(args.input_path, args.output_format)
 	if args.command == "capacity":

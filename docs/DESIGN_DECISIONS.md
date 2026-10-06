@@ -1,11 +1,32 @@
-# Design decisions
-
 <!-- VENDORED HEADER: START -->
 Record each durable decision about how this code and repository are shaped, once it is settled, with
 the reasoning a later reader needs. Guidance Neil Voss states belongs in
 [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), dated history in `docs/CHANGELOG.md`, open discussion in
 `docs/active_plans/decisions/`. [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
+
+# Design decisions
+
+- Resolve imported text formatting through frame, paragraph, and span context, retaining explicit
+  normal/none resets. Preserve italic runs and source uppercase/lowercase transformations without
+  changing the case of unrelated scientific symbols. Inline Djot colors may use validated six-digit
+  RGB values when a source color has no semantic alias; retain the source-color review warning so
+  LLM evaluation can assess contrast and diagram relationships instead of silently guessing a hue.
+
+- A reviewed `@replaceme` is a valid conversion outcome. Acceptance does not require zero markers;
+  it requires faithful converted slides or explicit replacement markers with source provenance and
+  a clear reason. Do not force a weak reconstruction merely to reduce the marker count.
+
+- Deterministic ODP import produces a draft, not an accepted teaching deck. Require LLM evaluation
+  of source evidence and rendered draft slides before accepting the Djot conversion; repair and
+  render again, or retain `@replaceme` where teaching intent cannot be preserved. Keep subsequent
+  builds from the reviewed canonical Djot deterministic. This is a workflow requirement, not an
+  implemented automatic LLM gate in the import CLI.
+
+- Carry text appearance evidence from source ODP into import planning. Reuse the existing answer
+  popup for a two-text question with one on-click answer labeled "Answer"; keep other unmatched
+  reveals and unsupported animation actions reviewable. This is bounded recognition, not a
+  general animation engine. A single standalone question uses the existing full-width layout.
 
 ## Explicit THE END layout (2026-09-24)
 
@@ -23,6 +44,58 @@ Centered Text classifier.
 `slide_lib/layout_specialty_builders.py`, and `docs/DJOT_SLIDE_SYNTAX.md`.
 
 ## Current operational boundary
+
+### Preserve metafile vectors during import
+
+**Decision.** Export original metafiles through the existing component ODG wrapper to SVG instead
+of selecting raster previews. Reuse static SVG validation and native SVG packaging. Report failed
+conversion or missing live text for review.
+
+**Evidence.** The genotype table retains 56 text elements and 34 paths with no bitmap images.
+Actual PDF review exposed spurious RTL flags on Latin runs; a narrow correction restores positions
+while preserving genuine RTL text. Details:
+[metafile_vector_followup.md](active_plans/metafile_vector_followup.md).
+
+### Image-area review without layout changes
+
+**Decision.** Compare original image-frame area with compiled displayed area, both normalized to
+slide size. Store non-blocking import warnings and provide an explicit audit command. Match exact
+artwork bytes per slide; flag uncertain correspondence for manual review.
+
+**Why.** Readable text can still displace a teaching image. Capacity checks alone miss that loss.
+
+**Consequence.** The initial adjustable warning threshold is 30% relative area loss. Margin analysis
+is advisory, and the audit neither trims artwork nor introduces layouts. Details and limitations:
+[image_area_regression_followup.md](active_plans/image_area_regression_followup.md).
+
+### SVG figures and definition emphasis
+
+**Decision.** Package labeled diagrams as self-contained SVG components, with native Djot prose
+outside the figure. A measured `image-comparison` layout reserves one shared caption row beneath
+two diagrams. Preserve bold and underline through ODF import, Djot spans, and native text export.
+
+**Why.** Labels must remain positioned with their artwork while explanations retain native text
+editing and readable sizing. Definition terms need the visual hierarchy of the original slides.
+
+**Consequence.** SVG labels are editable in the SVG source; the figure is one Impress object.
+Keep replacement markers for unresolved relationships. Existing four-panel layouts are unchanged.
+
+**Owner.** [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md), `slide_lib/svg_images.py`,
+`slide_lib/comparison_layout.py`, and `slide_lib/importers/odf_text.py`.
+
+### Lecture 06 conversion boundary
+
+**Decision.** Keep the four science decks in original slide order with source-slide notes.
+Mark unsupported teaching relationships with `@replaceme`; restore the exam announcements
+from legacy material and update calendar/policy details from the current local syllabus.
+
+**Why.** A source-order list cannot preserve a positioned diagram or staged Punnett-square
+explanation. A visible replacement marker makes that loss explicit for instructor repair.
+
+**Consequence.** The original ODP remains the reconstruction reference. Three unsupported
+06D table compositions use an import-only staging copy; their final sources retain warnings.
+
+**Owner.** [LECT06_REVIEW.md](../genetics/LECT06/djot/LECT06_REVIEW.md).
 
 ### Explicit slide replacement marker
 

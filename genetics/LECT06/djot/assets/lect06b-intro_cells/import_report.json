@@ -1,0 +1,5860 @@
+{
+  "source": "lect06b-intro_cells.odp",
+  "slide_count": 24,
+  "visible_slides": 24,
+  "hidden_slides": [],
+  "unique_media_assets": 14,
+  "slides": [
+    {
+      "source_slide": 1,
+      "hidden": false,
+      "visible_page": 1,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 1,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 19.729133858267716,
+          "width": 714.3023622047244,
+          "height": 55.21889763779527,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 89.97165354330708,
+          "width": 714.3023622047244,
+          "height": 327.40157480314963,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 2,
+      "hidden": false,
+      "visible_page": 2,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 2,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 3,
+      "hidden": false,
+      "visible_page": 3,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 3,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 82.82834645669291,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 4,
+      "hidden": false,
+      "visible_page": 4,
+      "layout": "one-panel",
+      "text_blocks": 0,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 4,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "graphic",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.656692913385825,
+          "top": 154.45984251968503,
+          "width": 714.3023622047244,
+          "height": 269.0362204724409,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 17.376377952755906,
+          "width": 761.9527559055118,
+          "height": 87.44881889763779,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 5,
+      "hidden": false,
+      "visible_page": 5,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 5,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.729133858267716,
+          "width": 761.9527559055118,
+          "height": 383.9811023622047,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 6,
+      "hidden": false,
+      "visible_page": 6,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 6,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline",
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 7,
+      "hidden": false,
+      "visible_page": 7,
+      "layout": "one-panel",
+      "text_blocks": 8,
+      "images": 2,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.6 The cell cycle"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.96725,
+          "bottom": 0.9117714285714287
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.32825000000000004,
+              "top": 0.3024,
+              "right": 0.44946428571428576,
+              "bottom": 0.3439428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5675,
+              "top": 0.5420571428571429,
+              "right": 0.6887142857142858,
+              "bottom": 0.5836
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5555714285714286,
+              "top": 0.32891428571428577,
+              "right": 0.67675,
+              "bottom": 0.3704571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(DNA synthesis)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6706428571428572,
+              "top": 0.2812571428571428,
+              "right": 0.7918571428571429,
+              "bottom": 0.3228
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "S",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.11367857142857142,
+              "bottom": 0.04428571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Cytokinesis",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.10935714285714285,
+              "bottom": 0.04611428571428572
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Mitosis",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.11910714285714286,
+              "bottom": 0.04228571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "MITOTIC",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.11907142857142858,
+              "bottom": 0.04234285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(M) PHASE",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_002.jpg",
+            "bounds": {
+              "left": 0.032607142857142855,
+              "top": 0.06645714285714285,
+              "right": 0.96725,
+              "bottom": 0.9117714285714287
+            }
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              11
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_003.png",
+            "bounds": {
+              "left": 0.40439285714285716,
+              "top": 0.08057142857142857,
+              "right": 0.6340357142857144,
+              "bottom": 0.14011428571428572
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 7,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 11
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 25.88031496062992,
+          "top": 32.966929133858265,
+          "width": 741.8267716535433,
+          "height": 419.3291338582677,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 260.53228346456694,
+          "top": 150.00944881889762,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 450.4251968503937,
+          "top": 268.89448818897637,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 440.9574803149606,
+          "top": 163.16220472440946,
+          "width": 96.17952755905512,
+          "height": 20.60787401574803,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 532.2897637795276,
+          "top": 139.52125984251967,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 90.2267716535433,
+          "height": 21.968503937007874,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 86.79685039370078,
+          "height": 22.875590551181105,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 94.53543307086613,
+          "height": 20.976377952755904,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 94.50708661417323,
+          "height": 21.00472440944882,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "frame",
+          "left": 320.9669291338583,
+          "top": 39.968503937007874,
+          "width": 182.26771653543307,
+          "height": 29.53700787401575,
+          "z_order": [
+            11
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 8,
+      "hidden": false,
+      "visible_page": 8,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 8,
+        "layout_identity": "AL4T14",
+        "declared_placeholder_roles": [
+          "title",
+          "object",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline",
+          "graphic"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [
+          "graphic"
+        ],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 164.9763779527559,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 262.7149606299213,
+          "top": 296.73070866141734,
+          "width": 268.1858267716535,
+          "height": 164.9763779527559,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 9,
+      "hidden": false,
+      "visible_page": 9,
+      "layout": "one-panel",
+      "text_blocks": 8,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.15 Mechanical analogy for the cell cycle control system"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.07928571428571429,
+          "top": 0.01702857142857143,
+          "right": 0.9205714285714286,
+          "bottom": 0.9583999999999999
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4061071428571429,
+              "top": 0.01702857142857143,
+              "right": 0.5273571428571429,
+              "bottom": 0.05857142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.35860714285714285,
+              "top": 0.8942285714285714,
+              "right": 0.47985714285714287,
+              "bottom": 0.9357714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  },
+                  {
+                    "text": " checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.08175,
+              "top": 0.8357714285714286,
+              "right": 0.2029642857142857,
+              "bottom": 0.8773142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "M checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3156428571428571,
+              "top": 0.3946857142857143,
+              "right": 0.4368571428571429,
+              "bottom": 0.43622857142857147
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5380357142857143,
+              "top": 0.5616571428571429,
+              "right": 0.5956785714285715,
+              "bottom": 0.6261714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.39332142857142854,
+              "top": 0.5750285714285714,
+              "right": 0.5145357142857142,
+              "bottom": 0.6165714285714287
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "M",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6601428571428571,
+              "top": 0.3630857142857143,
+              "right": 0.781357142857143,
+              "bottom": 0.40462857142857145
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "S",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.45089285714285715,
+              "top": 0.32525714285714286,
+              "right": 0.5721071428571428,
+              "bottom": 0.36679999999999996
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Control",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "system",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_005.jpg",
+            "bounds": {
+              "left": 0.07928571428571429,
+              "top": 0.01977142857142857,
+              "right": 0.9205714285714286,
+              "bottom": 0.9583999999999999
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 9,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 10
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 62.92913385826772,
+          "top": 9.80787401574803,
+          "width": 667.7291338582677,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 322.3275590551181,
+          "top": 8.44724409448819,
+          "width": 96.23622047244095,
+          "height": 20.60787401574803,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 284.6267716535433,
+          "top": 443.59370078740153,
+          "width": 96.23622047244095,
+          "height": 20.60787401574803,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 64.88503937007874,
+          "top": 414.5952755905512,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 250.52598425196848,
+          "top": 195.78897637795276,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 427.03937007874015,
+          "top": 278.6173228346457,
+          "width": 45.75118110236221,
+          "height": 32.00314960629921,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 312.1795275590551,
+          "top": 285.2503937007874,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 523.955905511811,
+          "top": 180.11338582677166,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 357.87401574803147,
+          "top": 161.348031496063,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            9
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 10,
+      "hidden": false,
+      "visible_page": 10,
+      "layout": "one-panel",
+      "text_blocks": 7,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.17a Two important checkpoints (part 1: G1 checkpoint)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.06996428571428571,
+          "top": 0.19354285714285716,
+          "right": 0.9299285714285714,
+          "bottom": 0.7829142857142857
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.07642857142857143,
+              "top": 0.19354285714285716,
+              "right": 0.19764285714285718,
+              "bottom": 0.2254857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.15449999999999997,
+              "top": 0.28874285714285713,
+              "right": 0.1855,
+              "bottom": 0.31885714285714284
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "0",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.27825,
+              "top": 0.5597142857142856,
+              "right": 0.30925,
+              "bottom": 0.5898285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.18175000000000002,
+              "top": 0.6290857142857144,
+              "right": 0.30296428571428574,
+              "bottom": 0.6610285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Without go-ahead signal,",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "cell enters G",
+                    "link": ""
+                  },
+                  {
+                    "text": "0",
+                    "link": ""
+                  },
+                  {
+                    "text": ".",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.18032142857142858,
+              "top": 0.7309714285714285,
+              "right": 0.3015714285714286,
+              "bottom": 0.7629142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(a) G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  },
+                  {
+                    "text": " checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7400357142857142,
+              "top": 0.5586285714285715,
+              "right": 0.7710357142857143,
+              "bottom": 0.5887428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6507142857142858,
+              "top": 0.6292571428571428,
+              "right": 0.7719285714285715,
+              "bottom": 0.6612000000000001
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "With go-ahead signal,",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "cell continues cell cycle.",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_006.jpg",
+            "bounds": {
+              "left": 0.06996428571428571,
+              "top": 0.19537142857142856,
+              "right": 0.9299285714285714,
+              "bottom": 0.7829142857142857
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 10,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 9
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 55.53070866141732,
+          "top": 96.91653543307086,
+          "width": 682.5543307086614,
+          "height": 291.45826771653543,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 60.661417322834644,
+          "top": 96.00944881889764,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 122.62677165354329,
+          "top": 143.23464566929133,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 220.8472440944882,
+          "top": 277.6535433070866,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 144.25511811023622,
+          "top": 312.0661417322835,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 143.1212598425197,
+          "top": 362.607874015748,
+          "width": 96.23622047244095,
+          "height": 15.845669291338584,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 587.3669291338582,
+          "top": 277.11496062992126,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 516.4724409448819,
+          "top": 312.1511811023622,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 199.50236220472442,
+          "top": 118.71496062992125,
+          "width": 32.96692913385826,
+          "height": 39.628346456692924,
+          "z_order": [
+            9
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 11,
+      "hidden": false,
+      "visible_page": 11,
+      "layout": "one-panel",
+      "text_blocks": 14,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.17b Two important checkpoints (part 2: M checkpoint)"
+      ],
+      "review_reasons": [
+        "14 positioned labels require native redesign",
+        "dense text requires post-conversion polish",
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.06792857142857142,
+          "top": 0.12022857142857143,
+          "right": 0.9318928571428571,
+          "bottom": 0.858
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.29164285714285715,
+              "top": 0.12942857142857142,
+              "right": 0.3226428571428572,
+              "bottom": 0.15954285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3646785714285714,
+              "top": 0.2769142857142857,
+              "right": 0.39567857142857144,
+              "bottom": 0.30702857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "M",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.42146428571428574,
+              "top": 0.2806285714285714,
+              "right": 0.45246428571428576,
+              "bottom": 0.3107428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 6,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7478214285714285,
+              "top": 0.12834285714285715,
+              "right": 0.7788214285714287,
+              "bottom": 0.15845714285714285
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.8137500000000001,
+              "top": 0.28005714285714284,
+              "right": 0.8447500000000001,
+              "bottom": 0.31017142857142854
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "M",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.8858928571428571,
+              "top": 0.29285714285714287,
+              "right": 0.9168928571428572,
+              "bottom": 0.3229714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.08703571428571429,
+              "top": 0.3934285714285714,
+              "right": 0.20825000000000002,
+              "bottom": 0.42537142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "M ",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              9
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.15146428571428572,
+              "top": 0.6614857142857142,
+              "right": 0.2726428571428572,
+              "bottom": 0.6934285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Without full chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "attachment, stop signal is",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "received.",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.23217857142857146,
+              "top": 0.5894857142857144,
+              "right": 0.35335714285714287,
+              "bottom": 0.6214285714285716
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Prometaphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              11
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5001071428571429,
+              "top": 0.5568571428571427,
+              "right": 0.6213214285714286,
+              "bottom": 0.5887999999999999
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Anaphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 13,
+            "source_order": [
+              12
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7891428571428571,
+              "top": 0.5049714285714285,
+              "right": 0.9103571428571429,
+              "bottom": 0.5369142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 14,
+            "source_order": [
+              13
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7772142857142857,
+              "top": 0.5995428571428572,
+              "right": 0.8984285714285715,
+              "bottom": 0.6314857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Metaphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 15,
+            "source_order": [
+              14
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6181785714285715,
+              "top": 0.6622285714285715,
+              "right": 0.7393571428571428,
+              "bottom": 0.6941714285714287
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "With full chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "attachment, go-ahead signal",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "is received.",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 16,
+            "source_order": [
+              15
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.14707142857142858,
+              "top": 0.8081142857142857,
+              "right": 0.2682857142857143,
+              "bottom": 0.8400571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "(b) M checkpoint",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_007.jpg",
+            "bounds": {
+              "left": 0.06792857142857142,
+              "top": 0.12022857142857143,
+              "right": 0.9318928571428571,
+              "bottom": 0.858
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 11,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 16
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 53.914960629921254,
+          "top": 59.640944881889766,
+          "width": 685.7291338582677,
+          "height": 365.9811023622047,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 231.4771653543307,
+          "top": 64.20472440944881,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 289.44566929133856,
+          "top": 137.36692913385826,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 334.5165354330709,
+          "top": 139.2094488188976,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 593.5464566929134,
+          "top": 63.666141732283464,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 645.8740157480315,
+          "top": 138.9259842519685,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 703.1338582677165,
+          "top": 145.2755905511811,
+          "width": 24.604724409448817,
+          "height": 14.938582677165355,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 69.08031496062992,
+          "top": 195.16535433070865,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 120.21732283464566,
+          "top": 328.13858267716535,
+          "width": 96.17952755905512,
+          "height": 15.845669291338584,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 184.28031496062994,
+          "top": 292.42204724409453,
+          "width": 96.17952755905512,
+          "height": 15.845669291338584,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 396.9354330708661,
+          "top": 276.2362204724409,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 626.3433070866141,
+          "top": 250.49763779527558,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 616.8755905511811,
+          "top": 297.41102362204725,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 490.6488188976378,
+          "top": 328.50708661417326,
+          "width": 96.17952755905512,
+          "height": 15.845669291338584,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 116.73070866141732,
+          "top": 400.87559055118106,
+          "width": 96.20787401574803,
+          "height": 15.845669291338584,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 127.92755905511811,
+          "top": 198.45354330708662,
+          "width": 66.52913385826773,
+          "height": 7.370078740157481,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 620.7874015748031,
+          "top": 251.20629921259842,
+          "width": 36.11338582677172,
+          "height": 9.496062992125928,
+          "z_order": [
+            17
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 12,
+      "hidden": false,
+      "visible_page": 12,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 12,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 13,
+      "hidden": false,
+      "visible_page": 13,
+      "layout": "one-panel",
+      "text_blocks": 5,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.5-1 Chromosome duplication and distribution during cell division (step 1)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.19860714285714287,
+          "top": 0.0188,
+          "right": 0.80125,
+          "bottom": 0.9583999999999999
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3409642857142858,
+              "top": 0.04382857142857143,
+              "right": 0.46217857142857144,
+              "bottom": 0.08537142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomes",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.48742857142857143,
+              "top": 0.10874285714285715,
+              "right": 0.6086428571428572,
+              "bottom": 0.1502857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Centromere",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.49814285714285716,
+              "top": 0.2373142857142857,
+              "right": 0.6193928571428572,
+              "bottom": 0.2788571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "arm",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6445714285714286,
+              "top": 0.0188,
+              "right": 0.7658571428571428,
+              "bottom": 0.06034285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomal",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "DNA molecules",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              9,
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2045357142857143,
+              "top": 0.10405714285714285,
+              "right": 0.23003571428571432,
+              "bottom": 0.13799999999999998
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_008.jpg",
+            "bounds": {
+              "left": 0.19860714285714287,
+              "top": 0.01977142857142857,
+              "right": 0.80125,
+              "bottom": 0.9583999999999999
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 13,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 7
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 157.63464566929133,
+          "top": 9.80787401574803,
+          "width": 478.31811023622043,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 270.6236220472441,
+          "top": 21.741732283464568,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 342.34015748031493,
+          "top": 66.41574803149607,
+          "width": 41.81102362204723,
+          "height": 23.924409448818892,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 361.8425196850394,
+          "top": 111.54330708661418,
+          "width": 30.132283464566854,
+          "height": 15.36377952755906,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 348.3779527559055,
+          "top": 92.40944881889763,
+          "width": 15.56220472440945,
+          "height": 39.25984251968504,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 386.8724409448819,
+          "top": 53.943307086614176,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 395.3763779527559,
+          "top": 117.72283464566928,
+          "width": 96.23622047244095,
+          "height": 20.60787401574803,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 511.5968503937007,
+          "top": 9.325984251968505,
+          "width": 96.26456692913385,
+          "height": 20.60787401574803,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 162.28346456692913,
+          "top": 52.129133858267714,
+          "width": 21.203149606299213,
+          "height": 18.056692913385827,
+          "z_order": [
+            9,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 162.34015748031496,
+          "top": 51.61889763779527,
+          "width": 20.239370078740155,
+          "height": 16.83779527559055,
+          "z_order": [
+            9,
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 14,
+      "hidden": false,
+      "visible_page": 14,
+      "layout": "one-panel",
+      "text_blocks": 8,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.5-2 Chromosome duplication and distribution during cell division (step 2)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.19860714285714287,
+          "top": 0.0188,
+          "right": 0.80125,
+          "bottom": 0.9583999999999999
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3409642857142858,
+              "top": 0.04382857142857143,
+              "right": 0.46217857142857144,
+              "bottom": 0.08537142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomes",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.48742857142857143,
+              "top": 0.10874285714285715,
+              "right": 0.6086428571428572,
+              "bottom": 0.1502857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Centromere",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.49814285714285716,
+              "top": 0.2373142857142857,
+              "right": 0.6193928571428572,
+              "bottom": 0.2788571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "arm",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6445714285714286,
+              "top": 0.0188,
+              "right": 0.7658571428571428,
+              "bottom": 0.06034285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomal",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "DNA molecules",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              9,
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2045357142857143,
+              "top": 0.10405714285714285,
+              "right": 0.23003571428571432,
+              "bottom": 0.13799999999999998
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4448571428571429,
+              "top": 0.3280571428571429,
+              "right": 0.5660714285714286,
+              "bottom": 0.3696
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "duplication",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 14,
+            "source_order": [
+              12
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5021071428571429,
+              "top": 0.5593142857142858,
+              "right": 0.6233214285714286,
+              "bottom": 0.600857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Sister",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "chromatids",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 16,
+            "source_order": [
+              13,
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2050357142857143,
+              "top": 0.4290857142857143,
+              "right": 0.23057142857142857,
+              "bottom": 0.4630285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_009.jpg",
+            "bounds": {
+              "left": 0.19860714285714287,
+              "top": 0.01977142857142857,
+              "right": 0.80125,
+              "bottom": 0.9583999999999999
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 14,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 10
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 157.63464566929133,
+          "top": 9.80787401574803,
+          "width": 478.31811023622043,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 270.6236220472441,
+          "top": 21.741732283464568,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 336.5007874015748,
+          "top": 286.80944881889764,
+          "width": 58.932283464566865,
+          "height": 1.0771653543307025,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 361.8425196850394,
+          "top": 111.54330708661418,
+          "width": 30.132283464566854,
+          "height": 15.36377952755906,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 348.3779527559055,
+          "top": 92.40944881889763,
+          "width": 15.56220472440945,
+          "height": 39.25984251968504,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 386.8724409448819,
+          "top": 53.943307086614176,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 395.3763779527559,
+          "top": 117.72283464566928,
+          "width": 96.23622047244095,
+          "height": 20.60787401574803,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 511.5968503937007,
+          "top": 9.325984251968505,
+          "width": 96.26456692913385,
+          "height": 20.60787401574803,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 162.28346456692913,
+          "top": 52.129133858267714,
+          "width": 21.203149606299213,
+          "height": 18.056692913385827,
+          "z_order": [
+            9,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 162.34015748031496,
+          "top": 51.61889763779527,
+          "width": 20.239370078740155,
+          "height": 16.83779527559055,
+          "z_order": [
+            9,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 353.08346456692914,
+          "top": 162.73700787401575,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 346.3937007874016,
+          "top": 280.7716535433071,
+          "width": 48.5858267716535,
+          "height": 7.143307086614186,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 398.52283464566926,
+          "top": 277.45511811023624,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 162.70866141732284,
+          "top": 213.36377952755905,
+          "width": 21.203149606299213,
+          "height": 18.056692913385827,
+          "z_order": [
+            13,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 162.73700787401575,
+          "top": 212.85354330708662,
+          "width": 20.26771653543307,
+          "height": 16.83779527559055,
+          "z_order": [
+            13,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 342.34015748031493,
+          "top": 66.41574803149607,
+          "width": 41.81102362204723,
+          "height": 23.924409448818892,
+          "z_order": [
+            14
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 15,
+      "hidden": false,
+      "visible_page": 15,
+      "layout": "one-panel",
+      "text_blocks": 10,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.5-3 Chromosome duplication and distribution during cell division (step 3)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.19860714285714287,
+          "top": 0.0188,
+          "right": 0.80125,
+          "bottom": 0.9583999999999999
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              2
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3409642857142858,
+              "top": 0.04382857142857143,
+              "right": 0.46217857142857144,
+              "bottom": 0.08537142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomes",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 7,
+            "source_order": [
+              6
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.48742857142857143,
+              "top": 0.10874285714285715,
+              "right": 0.6086428571428572,
+              "bottom": 0.1502857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Centromere",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 8,
+            "source_order": [
+              7
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.49814285714285716,
+              "top": 0.2373142857142857,
+              "right": 0.6193928571428572,
+              "bottom": 0.2788571428571428
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "arm",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 9,
+            "source_order": [
+              8
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6445714285714286,
+              "top": 0.0188,
+              "right": 0.7658571428571428,
+              "bottom": 0.06034285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomal",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "DNA molecules",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              9,
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2045357142857143,
+              "top": 0.10405714285714285,
+              "right": 0.23003571428571432,
+              "bottom": 0.13799999999999998
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "1",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.4448571428571429,
+              "top": 0.3280571428571429,
+              "right": 0.5660714285714286,
+              "bottom": 0.3696
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosome",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "duplication",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 14,
+            "source_order": [
+              12
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5021071428571429,
+              "top": 0.5593142857142858,
+              "right": 0.6233214285714286,
+              "bottom": 0.600857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Sister",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "chromatids",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 16,
+            "source_order": [
+              13,
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2050357142857143,
+              "top": 0.4290857142857143,
+              "right": 0.23057142857142857,
+              "bottom": 0.4630285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "2",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 19,
+            "source_order": [
+              15,
+              1
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.2050357142857143,
+              "top": 0.7703428571428571,
+              "right": 0.23057142857142857,
+              "bottom": 0.8042857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "3",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 20,
+            "source_order": [
+              16
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5263571428571429,
+              "top": 0.6633714285714286,
+              "right": 0.6475714285714286,
+              "bottom": 0.7049142857142858
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Separation of",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "sister chromatids",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              0
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_010.jpg",
+            "bounds": {
+              "left": 0.19860714285714287,
+              "top": 0.01977142857142857,
+              "right": 0.80125,
+              "bottom": 0.9583999999999999
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 15,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 12
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 157.63464566929133,
+          "top": 9.80787401574803,
+          "width": 478.31811023622043,
+          "height": 465.6188976377952,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 270.6236220472441,
+          "top": 21.741732283464568,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 336.5007874015748,
+          "top": 286.80944881889764,
+          "width": 58.932283464566865,
+          "height": 1.0771653543307025,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 361.8425196850394,
+          "top": 111.54330708661418,
+          "width": 30.132283464566854,
+          "height": 15.36377952755906,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 348.3779527559055,
+          "top": 92.40944881889763,
+          "width": 15.56220472440945,
+          "height": 39.25984251968504,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 386.8724409448819,
+          "top": 53.943307086614176,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 395.3763779527559,
+          "top": 117.72283464566928,
+          "width": 96.23622047244095,
+          "height": 20.60787401574803,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 511.5968503937007,
+          "top": 9.325984251968505,
+          "width": 96.26456692913385,
+          "height": 20.60787401574803,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 162.28346456692913,
+          "top": 52.129133858267714,
+          "width": 21.203149606299213,
+          "height": 18.056692913385827,
+          "z_order": [
+            9,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 162.34015748031496,
+          "top": 51.61889763779527,
+          "width": 20.239370078740155,
+          "height": 16.83779527559055,
+          "z_order": [
+            9,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 353.08346456692914,
+          "top": 162.73700787401575,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 346.3937007874016,
+          "top": 280.7716535433071,
+          "width": 48.5858267716535,
+          "height": 7.143307086614186,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 398.52283464566926,
+          "top": 277.45511811023624,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 162.70866141732284,
+          "top": 213.36377952755905,
+          "width": 21.203149606299213,
+          "height": 18.056692913385827,
+          "z_order": [
+            13,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 162.73700787401575,
+          "top": 212.85354330708662,
+          "width": 20.26771653543307,
+          "height": 16.83779527559055,
+          "z_order": [
+            13,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 342.34015748031493,
+          "top": 66.41574803149607,
+          "width": 41.81102362204723,
+          "height": 23.924409448818892,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 162.70866141732284,
+          "top": 382.6488188976378,
+          "width": 21.203149606299213,
+          "height": 18.056692913385827,
+          "z_order": [
+            15,
+            0
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 162.73700787401575,
+          "top": 382.13858267716535,
+          "width": 20.26771653543307,
+          "height": 16.83779527559055,
+          "z_order": [
+            15,
+            1
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 417.77007874015743,
+          "top": 329.0740157480315,
+          "width": 96.20787401574803,
+          "height": 20.60787401574803,
+          "z_order": [
+            16
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 16,
+      "hidden": false,
+      "visible_page": 16,
+      "layout": "multiple-choice",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": {
+        "reason": "complete question-list-answer structure",
+        "question": {
+          "source_ordinal": 1,
+          "source_order": [
+            1
+          ],
+          "source_kind": "text",
+          "bounds": {
+            "left": 0.049999999999999996,
+            "top": 0.060457142857142855,
+            "right": 0.9499642857142857,
+            "bottom": 0.769257142857143
+          },
+          "paragraphs": [
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "Which of the following statements about mitosis is ",
+                  "link": ""
+                },
+                {
+                  "text": "FALSE",
+                  "link": ""
+                },
+                {
+                  "text": "?",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "A) Mitosis is cell division that produces two daughter cells.",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "B) Each daughter cell formed by mitosis has the half the number of chromosomes as the parent cell.",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "C) Each daughter cell formed by mitosis has the same kinds of chromosomes as the parent cell.",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "runs": [
+                {
+                  "text": "D) The parent cell and the daughter cells are genetically identical.",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+        },
+        "answer": {
+          "source_ordinal": 2,
+          "source_order": [
+            2
+          ],
+          "source_kind": "text-box",
+          "bounds": {
+            "left": 0.5261428571428571,
+            "top": 0.7837714285714285,
+            "right": 0.9796785714285715,
+            "bottom": 0.9276571428571427
+          },
+          "paragraphs": [
+            {
+              "level": 0,
+              "runs": [
+                {
+                  "text": "Answer: B",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+        },
+        "image": null,
+        "question_visual_region": null
+      },
+      "source_page_evidence": {
+        "source_index": 16,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.99055118110236,
+          "width": 714.3023622047244,
+          "height": 351.60944881889765,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 417.59999999999997,
+          "top": 388.79999999999995,
+          "width": 359.97165354330707,
+          "height": 71.3763779527559,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 17,
+      "hidden": false,
+      "visible_page": 17,
+      "layout": "two-panels",
+      "text_blocks": 1,
+      "images": 1,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 17,
+        "layout_identity": null,
+        "declared_placeholder_roles": [],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 3
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 30.755905511811022,
+          "top": 10.998425196850393,
+          "width": 447.4771653543307,
+          "height": 471.4015748031496,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 457.2850393700788,
+          "top": 8.503937007874015,
+          "width": 330.68976377952754,
+          "height": 88.21417322834645,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "frame",
+          "left": 469.5874015748031,
+          "top": 133.05826771653543,
+          "width": 300.8125984251968,
+          "height": 262.94173228346455,
+          "z_order": [
+            3
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 18,
+      "hidden": false,
+      "visible_page": 18,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 18,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.99055118110236,
+          "width": 714.3023622047244,
+          "height": 374.99527559055116,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 57.6,
+          "top": 381.59999999999997,
+          "width": 661.3795275590551,
+          "height": 72.0,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 19,
+      "hidden": false,
+      "visible_page": 19,
+      "layout": "one-panel",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 19,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 82.8,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 116.05039370078741,
+          "width": 714.3023622047244,
+          "height": 345.911811023622,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 20,
+      "hidden": false,
+      "visible_page": 20,
+      "layout": "one-panel",
+      "text_blocks": 11,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.7c Exploring mitosis in an animal cell (part 3: G2 of interphase and prophase)"
+      ],
+      "review_reasons": [
+        "dense text requires post-conversion polish",
+        "normalized distributed pictorial annotations into native source-order content",
+        "regular text lattice requires border and span reconstruction",
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.04928571428571428,
+          "top": 0.05137142857142857,
+          "right": 0.9505714285714286,
+          "bottom": 0.9268571428571427
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 20,
+            "source_order": [
+              20
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6565357142857142,
+              "top": 0.06548571428571429,
+              "right": 0.7818571428571428,
+              "bottom": 0.10702857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Prophase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 21,
+            "source_order": [
+              21
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.05021428571428572,
+              "top": 0.8043428571428572,
+              "right": 0.2010357142857143,
+              "bottom": 0.844857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Nucleolus",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 22,
+            "source_order": [
+              22
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.14325000000000002,
+              "top": 0.06548571428571429,
+              "right": 0.2685714285714286,
+              "bottom": 0.10702857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "G",
+                    "link": ""
+                  },
+                  {
+                    "text": "2",
+                    "link": ""
+                  },
+                  {
+                    "text": " of Interphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 23,
+            "source_order": [
+              23
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.20510714285714288,
+              "top": 0.8330857142857143,
+              "right": 0.3559285714285715,
+              "bottom": 0.8736000000000002
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Nuclear",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "envelope",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 24,
+            "source_order": [
+              24
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.36153571428571424,
+              "top": 0.7809142857142857,
+              "right": 0.5123571428571428,
+              "bottom": 0.8214285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Plasma",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "membrane",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 25,
+            "source_order": [
+              25
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.57225,
+              "top": 0.8032571428571429,
+              "right": 0.7230714285714285,
+              "bottom": 0.8437714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Two sister chromatids",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "of one chromosome",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 26,
+            "source_order": [
+              26
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.054678571428571424,
+              "top": 0.14880000000000002,
+              "right": 0.2054642857142857,
+              "bottom": 0.1893142857142857
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Centrosomes",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "(with centriole",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "pairs)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 27,
+            "source_order": [
+              27
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3140357142857143,
+              "top": 0.14668571428571428,
+              "right": 0.46489285714285716,
+              "bottom": 0.1872
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Chromosomes",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "(duplicated,",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "uncondensed)",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 28,
+            "source_order": [
+              28
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5495357142857143,
+              "top": 0.16371428571428573,
+              "right": 0.7003571428571429,
+              "bottom": 0.20422857142857145
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Early mitotic",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "spindle",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 29,
+            "source_order": [
+              29
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.76625,
+              "top": 0.18171428571428572,
+              "right": 0.8444285714285714,
+              "bottom": 0.22645714285714286
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Aster",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 30,
+            "source_order": [
+              30
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.8437142857142856,
+              "top": 0.2328,
+              "right": 0.9218928571428571,
+              "bottom": 0.27754285714285715
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Centromere",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_012.jpg",
+            "bounds": {
+              "left": 0.04928571428571428,
+              "top": 0.05137142857142857,
+              "right": 0.9505714285714286,
+              "bottom": 0.9268571428571427
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 20,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [],
+        "populated_text_placeholder_roles": [],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 12
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.11811023622047,
+          "top": 25.483464566929133,
+          "width": 715.3511811023623,
+          "height": 434.29606299212594,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 251.17795275590552,
+          "top": 141.56220472440944,
+          "width": 52.270866141732284,
+          "height": 96.7464566929134,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 619.7952755905511,
+          "top": 136.31811023622046,
+          "width": 43.908661417322946,
+          "height": 110.57952755905515,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 543.1181102362204,
+          "top": 292.36535433070867,
+          "width": 14.371653543307161,
+          "height": 105.25039370078736,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 530.6456692913385,
+          "top": 294.6614173228346,
+          "width": 26.787401574803198,
+          "height": 103.01102362204728,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 116.90078740157479,
+          "top": 259.2283464566929,
+          "width": 63.41102362204724,
+          "height": 141.10866141732282,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 164.01259842519684,
+          "top": 117.21259842519684,
+          "width": 20.749606299212587,
+          "height": 58.337007874015725,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 163.98425196850394,
+          "top": 117.38267716535432,
+          "width": 52.15748031496062,
+          "height": 53.37637795275592,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 250.83779527559057,
+          "top": 142.46929133858268,
+          "width": 52.299212598425186,
+          "height": 96.74645669291337,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 472.251968503937,
+          "top": 126.17007874015746,
+          "width": 0.0,
+          "height": 82.26141732283466,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 619.511811023622,
+          "top": 137.19685039370077,
+          "width": 43.90866141732283,
+          "height": 110.57952755905512,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 579.1748031496062,
+          "top": 103.60629921259842,
+          "width": 24.1228346456694,
+          "height": 17.80157480314962,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 579.5149606299212,
+          "top": 120.95433070866143,
+          "width": 0.0,
+          "height": 18.6803149606299,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 10.828346456692913,
+          "height": 59.32913385826772,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 543.0897637795275,
+          "top": 293.244094488189,
+          "width": 14.371653543307161,
+          "height": 105.27874015748029,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 530.6456692913385,
+          "top": 295.51181102362204,
+          "width": 26.787401574803198,
+          "height": 103.03937007874015,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 266.059842519685,
+          "top": 370.68661417322835,
+          "width": 14.938582677165414,
+          "height": 26.24881889763776,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 199.50236220472442,
+          "top": 345.40157480314963,
+          "width": 1.190551181102336,
+          "height": 69.25039370078736,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 116.61732283464566,
+          "top": 260.1070866141732,
+          "width": 63.38267716535434,
+          "height": 141.05196850393696,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 521.0929133858267,
+          "top": 32.48503937007874,
+          "width": 99.46771653543307,
+          "height": 20.60787401574803,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 39.85511811023622,
+          "top": 399.00472440944884,
+          "width": 119.70708661417322,
+          "height": 20.09763779527559,
+          "z_order": [
+            21
+          ]
+        },
+        {
+          "source_ordinal": 22,
+          "source_kind": "vector",
+          "left": 113.6976377952756,
+          "top": 32.48503937007874,
+          "width": 99.46771653543307,
+          "height": 20.60787401574803,
+          "z_order": [
+            22
+          ]
+        },
+        {
+          "source_ordinal": 23,
+          "source_kind": "vector",
+          "left": 162.79370078740158,
+          "top": 413.2629921259843,
+          "width": 119.70708661417322,
+          "height": 20.09763779527559,
+          "z_order": [
+            23
+          ]
+        },
+        {
+          "source_ordinal": 24,
+          "source_kind": "vector",
+          "left": 286.95118110236217,
+          "top": 387.3826771653543,
+          "width": 119.70708661417322,
+          "height": 20.09763779527559,
+          "z_order": [
+            24
+          ]
+        },
+        {
+          "source_ordinal": 25,
+          "source_kind": "vector",
+          "left": 454.19527559055115,
+          "top": 398.46614173228346,
+          "width": 119.70708661417322,
+          "height": 20.09763779527559,
+          "z_order": [
+            25
+          ]
+        },
+        {
+          "source_ordinal": 26,
+          "source_kind": "vector",
+          "left": 43.39842519685039,
+          "top": 73.81417322834646,
+          "width": 119.67874015748032,
+          "height": 20.09763779527559,
+          "z_order": [
+            26
+          ]
+        },
+        {
+          "source_ordinal": 27,
+          "source_kind": "vector",
+          "left": 249.25039370078738,
+          "top": 72.76535433070866,
+          "width": 119.73543307086615,
+          "height": 20.09763779527559,
+          "z_order": [
+            27
+          ]
+        },
+        {
+          "source_ordinal": 28,
+          "source_kind": "vector",
+          "left": 436.1669291338583,
+          "top": 81.21259842519686,
+          "width": 119.70708661417322,
+          "height": 20.09763779527559,
+          "z_order": [
+            28
+          ]
+        },
+        {
+          "source_ordinal": 29,
+          "source_kind": "vector",
+          "left": 608.1732283464567,
+          "top": 90.14173228346456,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            29
+          ]
+        },
+        {
+          "source_ordinal": 30,
+          "source_kind": "vector",
+          "left": 669.6566929133858,
+          "top": 115.48346456692913,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            30
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 21,
+      "hidden": false,
+      "visible_page": 21,
+      "layout": "one-panel",
+      "text_blocks": 9,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.7d Exploring mitosis in an animal cell (part 4: prometaphase and metaphase)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unsupported source object draw:custom-shape requires reconstruction",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.032607142857142855,
+          "top": 0.06685714285714285,
+          "right": 0.96725,
+          "bottom": 0.9113142857142857
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.6545357142857143,
+              "top": 0.08017142857142857,
+              "right": 0.7798571428571429,
+              "bottom": 0.12171428571428572
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Metaphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.8402142857142857,
+              "top": 0.1644,
+              "right": 0.9183928571428571,
+              "bottom": 0.20914285714285713
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Metaphase",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "plate",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.14192857142857143,
+              "top": 0.07885714285714285,
+              "right": 0.26721428571428574,
+              "bottom": 0.1204
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Prometaphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 15,
+            "source_order": [
+              15
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.3975,
+              "top": 0.1674857142857143,
+              "right": 0.4757142857142857,
+              "bottom": 0.21222857142857143
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Nonkinetochore",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "microtubules",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 16,
+            "source_order": [
+              16
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.03753571428571428,
+              "top": 0.1544,
+              "right": 0.11567857142857144,
+              "bottom": 0.19914285714285712
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Fragments",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "of nuclear",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "envelope",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 17,
+            "source_order": [
+              17
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.08039285714285714,
+              "top": 0.8086857142857142,
+              "right": 0.15857142857142859,
+              "bottom": 0.8534285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Kinetochore",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 18,
+            "source_order": [
+              18
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.30432142857142863,
+              "top": 0.8025142857142857,
+              "right": 0.38250000000000006,
+              "bottom": 0.8472571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Kinetochore",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "microtubule",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 19,
+            "source_order": [
+              19
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5201785714285714,
+              "top": 0.797142857142857,
+              "right": 0.5983571428571429,
+              "bottom": 0.8418857142857142
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Spindle",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 20,
+            "source_order": [
+              20
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.7348571428571429,
+              "top": 0.8156571428571427,
+              "right": 0.8130357142857142,
+              "bottom": 0.8603999999999999
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Centrosome at",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "one spindle pole",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_013.jpg",
+            "bounds": {
+              "left": 0.032607142857142855,
+              "top": 0.06685714285714285,
+              "right": 0.96725,
+              "bottom": 0.9113142857142857
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 21,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 11
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 25.88031496062992,
+          "top": 33.16535433070866,
+          "width": 741.8267716535433,
+          "height": 418.903937007874,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 519.5055118110237,
+          "top": 39.77007874015748,
+          "width": 99.46771653543307,
+          "height": 20.60787401574803,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 666.8787401574803,
+          "top": 81.5527559055118,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 112.6488188976378,
+          "top": 39.11811023622047,
+          "width": 99.43937007874015,
+          "height": 20.60787401574803,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 702.7086614173228,
+          "top": 123.73228346456693,
+          "width": 40.251968503937064,
+          "height": 117.35433070866142,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 614.0409448818897,
+          "top": 354.755905511811,
+          "width": 22.05354330708667,
+          "height": 52.809448818897636,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 424.8,
+          "top": 280.48818897637796,
+          "width": 5.0740157480314565,
+          "height": 116.73070866141728,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 286.55433070866144,
+          "top": 125.85826771653544,
+          "width": 20.182677165354278,
+          "height": 79.62519685039368,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 306.76535433070865,
+          "top": 125.48976377952755,
+          "width": 6.009448818897681,
+          "height": 115.5968503937008,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 228.18897637795277,
+          "top": 298.88503937007874,
+          "width": 53.291338582677156,
+          "height": 104.11653543307085,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 103.74803149606299,
+          "top": 268.2708661417323,
+          "width": 28.970078740157476,
+          "height": 136.26141732283463,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 76.6488188976378,
+          "top": 141.95905511811023,
+          "width": 37.6724409448819,
+          "height": 81.89291338582677,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 76.16692913385826,
+          "top": 141.95905511811023,
+          "width": 50.96692913385829,
+          "height": 66.98267716535435,
+          "z_order": [
+            14
+          ]
+        },
+        {
+          "source_ordinal": 15,
+          "source_kind": "vector",
+          "left": 315.496062992126,
+          "top": 83.08346456692914,
+          "width": 62.07874015748031,
+          "height": 22.19527559055118,
+          "z_order": [
+            15
+          ]
+        },
+        {
+          "source_ordinal": 16,
+          "source_kind": "vector",
+          "left": 29.792125984251967,
+          "top": 76.59212598425196,
+          "width": 62.022047244094495,
+          "height": 22.19527559055118,
+          "z_order": [
+            16
+          ]
+        },
+        {
+          "source_ordinal": 17,
+          "source_kind": "vector",
+          "left": 63.80787401574803,
+          "top": 401.1590551181102,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            17
+          ]
+        },
+        {
+          "source_ordinal": 18,
+          "source_kind": "vector",
+          "left": 241.54015748031497,
+          "top": 398.0976377952756,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            18
+          ]
+        },
+        {
+          "source_ordinal": 19,
+          "source_kind": "vector",
+          "left": 412.86614173228344,
+          "top": 395.4330708661417,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            19
+          ]
+        },
+        {
+          "source_ordinal": 20,
+          "source_kind": "vector",
+          "left": 583.2566929133858,
+          "top": 404.6173228346456,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            20
+          ]
+        },
+        {
+          "source_ordinal": 21,
+          "source_kind": "vector",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 19.190551181102364,
+          "height": 238.13858267716535,
+          "z_order": [
+            21
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 22,
+      "hidden": false,
+      "visible_page": 22,
+      "layout": "one-panel",
+      "text_blocks": 6,
+      "images": 1,
+      "presenter_notes": [
+        "<number>",
+        "Figure 12.7e Exploring mitosis in an animal cell (part 5: anaphase, telophase and cytokinesis)"
+      ],
+      "review_reasons": [
+        "normalized distributed pictorial annotations into native source-order content",
+        "unsupported source object draw:line requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": {
+        "region_key": "content-region-1",
+        "kind": "diagram",
+        "classification_reason": "distributed pictorial annotations",
+        "bounds": {
+          "left": 0.032607142857142855,
+          "top": 0.06737142857142858,
+          "right": 0.96725,
+          "bottom": 0.9109142857142857
+        },
+        "local_heading": null,
+        "text_regions": [
+          {
+            "source_ordinal": 3,
+            "source_order": [
+              3
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.19764285714285712,
+              "top": 0.07897142857142857,
+              "right": 0.3229642857142857,
+              "bottom": 0.12051428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Anaphase",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 4,
+            "source_order": [
+              4
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.522,
+              "top": 0.16725714285714285,
+              "right": 0.6001785714285715,
+              "bottom": 0.212
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Cleavage",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "furrow",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 5,
+            "source_order": [
+              5
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5365,
+              "top": 0.07897142857142857,
+              "right": 0.6618214285714286,
+              "bottom": 0.12051428571428571
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Telophase and Cytokinesis",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 10,
+            "source_order": [
+              10
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.5248571428571429,
+              "top": 0.779942857142857,
+              "right": 0.6030000000000001,
+              "bottom": 0.8246857142857142
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Nuclear",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "envelope",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "forming",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 11,
+            "source_order": [
+              11
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.8054642857142857,
+              "top": 0.15508571428571427,
+              "right": 0.8836428571428572,
+              "bottom": 0.1998285714285714
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Nucleolus",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "forming",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source_ordinal": 12,
+            "source_order": [
+              12
+            ],
+            "source_kind": "text-box",
+            "bounds": {
+              "left": 0.06307142857142858,
+              "top": 0.7173142857142857,
+              "right": 0.1412857142857143,
+              "bottom": 0.7620571428571429
+            },
+            "paragraphs": [
+              {
+                "level": 0,
+                "runs": [
+                  {
+                    "text": "Daughter",
+                    "link": ""
+                  },
+                  {
+                    "text": " ",
+                    "link": ""
+                  },
+                  {
+                    "text": "chromosomes",
+                    "link": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "image_regions": [
+          {
+            "source_ordinal": 1,
+            "source_order": [
+              1
+            ],
+            "source_kind": "picture",
+            "asset_reference": "assets/lect06b-intro_cells/image_014.jpg",
+            "bounds": {
+              "left": 0.032607142857142855,
+              "top": 0.06737142857142858,
+              "right": 0.96725,
+              "bottom": 0.9109142857142857
+            }
+          }
+        ]
+      },
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 22,
+        "layout_identity": "AL1T0",
+        "declared_placeholder_roles": [
+          "title",
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "title"
+        ],
+        "populated_text_placeholder_roles": [
+          "title"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 8
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 25.88031496062992,
+          "top": 33.420472440944884,
+          "width": 741.8267716535433,
+          "height": 418.4503937007874,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 1.7291338582677165,
+          "top": 0.0,
+          "width": 490.25196850393706,
+          "height": 22.053543307086613,
+          "z_order": [
+            2
+          ]
+        },
+        {
+          "source_ordinal": 3,
+          "source_kind": "vector",
+          "left": 156.86929133858266,
+          "top": 39.1748031496063,
+          "width": 99.46771653543307,
+          "height": 20.60787401574803,
+          "z_order": [
+            3
+          ]
+        },
+        {
+          "source_ordinal": 4,
+          "source_kind": "vector",
+          "left": 414.31181102362206,
+          "top": 82.97007874015748,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            4
+          ]
+        },
+        {
+          "source_ordinal": 5,
+          "source_kind": "vector",
+          "left": 425.82047244094485,
+          "top": 39.1748031496063,
+          "width": 99.46771653543307,
+          "height": 20.60787401574803,
+          "z_order": [
+            5
+          ]
+        },
+        {
+          "source_ordinal": 6,
+          "source_kind": "vector",
+          "left": 464.68346456692916,
+          "top": 126.28346456692913,
+          "width": 38.18267716535422,
+          "height": 139.97480314960632,
+          "z_order": [
+            6
+          ]
+        },
+        {
+          "source_ordinal": 7,
+          "source_kind": "vector",
+          "left": 606.8976377952756,
+          "top": 118.97007874015748,
+          "width": 55.78582677165355,
+          "height": 70.38425196850392,
+          "z_order": [
+            7
+          ]
+        },
+        {
+          "source_ordinal": 8,
+          "source_kind": "vector",
+          "left": 481.63464566929133,
+          "top": 335.33858267716533,
+          "width": 36.22677165354321,
+          "height": 53.51811023622048,
+          "z_order": [
+            8
+          ]
+        },
+        {
+          "source_ordinal": 9,
+          "source_kind": "vector",
+          "left": 481.3228346456693,
+          "top": 358.696062992126,
+          "width": 68.45669291338578,
+          "height": 30.18897637795277,
+          "z_order": [
+            9
+          ]
+        },
+        {
+          "source_ordinal": 10,
+          "source_kind": "vector",
+          "left": 416.5795275590551,
+          "top": 386.90078740157475,
+          "width": 62.022047244094495,
+          "height": 22.19527559055118,
+          "z_order": [
+            10
+          ]
+        },
+        {
+          "source_ordinal": 11,
+          "source_kind": "vector",
+          "left": 639.2976377952756,
+          "top": 76.93228346456692,
+          "width": 62.0503937007874,
+          "height": 22.19527559055118,
+          "z_order": [
+            11
+          ]
+        },
+        {
+          "source_ordinal": 12,
+          "source_kind": "vector",
+          "left": 50.05984251968504,
+          "top": 355.8330708661417,
+          "width": 62.07874015748031,
+          "height": 22.19527559055118,
+          "z_order": [
+            12
+          ]
+        },
+        {
+          "source_ordinal": 13,
+          "source_kind": "vector",
+          "left": 66.41574803149607,
+          "top": 210.64251968503936,
+          "width": 42.85984251968503,
+          "height": 146.296062992126,
+          "z_order": [
+            13
+          ]
+        },
+        {
+          "source_ordinal": 14,
+          "source_kind": "vector",
+          "left": 66.10393700787401,
+          "top": 276.0094488188976,
+          "width": 54.85039370078742,
+          "height": 80.92913385826773,
+          "z_order": [
+            14
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 23,
+      "hidden": false,
+      "visible_page": 23,
+      "layout": "one-panel",
+      "text_blocks": 2,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "normalized overlapping legacy components into one native source-order panel"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 23,
+        "layout_identity": "AL3T1",
+        "declared_placeholder_roles": [
+          "title",
+          "outline"
+        ],
+        "populated_placeholder_roles": [
+          "outline"
+        ],
+        "populated_text_placeholder_roles": [
+          "outline"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 2
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 39.685039370078734,
+          "top": 29.962204724409446,
+          "width": 714.3023622047244,
+          "height": 374.99527559055116,
+          "z_order": [
+            1
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "frame",
+          "left": 321.0236220472441,
+          "top": 322.4976377952756,
+          "width": 359.97165354330707,
+          "height": 68.25826771653543,
+          "z_order": [
+            2
+          ]
+        }
+      ],
+      "source_overlays": []
+    },
+    {
+      "source_slide": 24,
+      "hidden": false,
+      "visible_page": 24,
+      "layout": "section",
+      "text_blocks": 1,
+      "images": 0,
+      "presenter_notes": [],
+      "review_reasons": [
+        "unsupported source object draw:custom-shape requires reconstruction"
+      ],
+      "native_table_count": 0,
+      "content_region": null,
+      "multiple_choice": null,
+      "source_page_evidence": {
+        "source_index": 24,
+        "layout_identity": "AL2T32",
+        "declared_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_text_placeholder_roles": [
+          "subtitle"
+        ],
+        "populated_image_placeholder_roles": [],
+        "populated_table_placeholder_roles": [],
+        "meaningful_content_count": 1
+      },
+      "source_geometry": [
+        {
+          "source_ordinal": 1,
+          "source_kind": "frame",
+          "left": 15.874015748031498,
+          "top": 19.757480314960628,
+          "width": 761.9527559055118,
+          "height": 383.9244094488189,
+          "z_order": [
+            0
+          ]
+        },
+        {
+          "source_ordinal": 2,
+          "source_kind": "vector",
+          "left": 496.8,
+          "top": 258.4062992125984,
+          "width": 57.6,
+          "height": 74.3244094488189,
+          "z_order": [
+            1
+          ]
+        }
+      ],
+      "source_overlays": []
+    }
+  ]
+}

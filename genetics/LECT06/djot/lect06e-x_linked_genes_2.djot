@@ -1,0 +1,524 @@
+=== layout: title-slide
+
+# Lecture 06E
+
+## X-Linked Genes Part 2
+
+## Chapter 6
+
+## Dr. Neil Voss
+
+## Oct 6, 2026
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 1.
+
+=== layout: section
+
+# Reciprocal Crosses
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 2.
+
+=== layout: one-panel
+
+# Reciprocal Crosses
+
+@body
+
+- Pea plants are sexual organisms
+- A cross can be preformed in two ways\:
+  - Male round x Female wrinkled
+  - Male wrinkled x Female round
+- Outcome of cross did not depend on which trait was in the male vs. the female\:
+
+![Slide image 1](assets/lect06e-x_linked_genes_2/image_001.png)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 3.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 2](assets/lect06e-x_linked_genes_2/image_002.jpg)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 4. Replacement reason: unsupported source object draw:custom-shape requires reconstruction
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 2](assets/lect06e-x_linked_genes_2/image_002.jpg)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 5. Replacement reason: unsupported source object draw:custom-shape requires reconstruction
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 2](assets/lect06e-x_linked_genes_2/image_002.jpg)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 6.
+
+=== layout: section
+
+# Sex Determination in Drosophila
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 7.
+
+=== layout: one-panel
+
+# Drosophila Sex determination
+
+@body
+
+- XX = wildtype fertile female
+- XY = wildtype fertile male
+- Same as humans...
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 8.
+
+=== layout: two-panels
+@replaceme
+
+# Drosophila Sex determination
+
+@left
+
+- Drosophila
+- [XX =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [XY =]{color=blue}
+  - [wildtype fertile male]{color=blue}
+- XXY =
+
+@right
+
+- Humans
+- [XX =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [XY =]{color=blue}
+  - [wildtype fertile male]{color=blue}
+- XXY =
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 9. Replacement reason: dense text requires post-conversion polish
+
+=== layout: two-panels
+@replaceme
+
+# Drosophila Sex determination
+
+@left
+
+- Drosophila
+- [XX =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [XY =]{color=blue}
+  - [wildtype fertile male]{color=blue}
+- [XXY =]{color=red}
+  - [wildtype fertile female]{color=red}
+- X0 =
+
+@right
+
+- Humans
+- [XX =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [XY =]{color=blue}
+  - [wildtype fertile male]{color=blue}
+- [XXY =]{color=blue}
+  - [sterile male]{color=blue}
+- X0 =
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 10. Replacement reason: dense text requires post-conversion polish
+
+=== layout: two-panels
+@replaceme
+
+# Drosophila Sex determination
+
+@left
+
+- Drosophila
+- [XX =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [XY =]{color=blue}
+  - [wildtype fertile male]{color=blue}
+- [XXY =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [X0 =]{color=blue}
+  - [wildtype sterile male]{color=blue}
+
+- So Y does not
+- factor into maleness.
+
+@right
+
+- Humans
+- [XX =]{color=red}
+  - [wildtype fertile female]{color=red}
+- [XY =]{color=blue}
+  - [wildtype fertile male]{color=blue}
+- [XXY =]{color=blue}
+  - [male with female features]{color=blue}
+- [X0 =]{color=red}
+  - [sterile female]{color=red}
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 11. Replacement reason: dense text requires post-conversion polish
+
+=== layout: two-panels
+
+# Genetic Control of Sex in Drosophila
+
+@left
+
+- X chromosomes relative to autosome sets control _sex-lethal_ (_Sxl_).
+- This master control gene switches the sex-determination pathway on or off.
+
+@right
+
+![Slide image 3](assets/lect06e-x_linked_genes_2/image_003.jpg)
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 12.
+
+=== layout: two-panels
+
+# Fly sex determination: X-to-autosome ratio
+
+@left
+
+- [*X*]{underline=true}: X chromosome.
+- [*A*]{underline=true}: one autosome set.
+- Ratio 1: female.
+- Ratio 0.5: male.
+- Between 0.5 and 1: [*intersex*]{color=purple underline=true}.
+
+@right
+
+| Formula | X:A | Outcome |
+| --- | --- | --- |
+| X:AA | 0.5 | Male |
+| XX:AAA | 0.67 | Intersex |
+| XX:AA | 1 | Female |
+| X:A | 1 | Initially female; dies |
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 13. Replacement reason: dense text requires post-conversion polish; unrecognized source text color #800080 requires review | Imported reference content: | Original layout: two-panels | Original slot: replaceme | # Fly Sex Determination | Original slot: left | - Nomenclature\: | - X = female sex chromosome | - A = autosomes | - Hypothesis\: | - ratio of 1 is female | - ratio of ½ is male | - ratio in between is intersex | Original slot: right | - X\:AA ratio of 0.5 | - Diploid with 1 X | - [wildtype male]{color=blue} | - XX\:AAA ratio of 0.67 | - Triploid with 2 X | - intersex | - XX\:AA ratio of 1.0 | - Diploid with 2 X | - [wildtype female]{color=red} | - X\:A ratio of 1 | - Haploid with 1 X | - [initially female then dies]{color=red}
+
+SVG repair: Native definitions and comparison table restore the original chromosome-set examples and viability caveat.
+
+=== layout: two-panels
+
+# Fly sex determination: extended ratios
+
+@left
+
+- [*X*]{underline=true}: X chromosome.
+- [*A*]{underline=true}: one autosome set.
+- 0.5: male; 1: female.
+- 0.5 < X:A < 1: [*intersex*]{color=purple underline=true}.
+- X:A > 1: [*metafemale*]{color=orange underline=true}.
+- X:A < 0.5: [*metamale*]{color=green underline=true}.
+
+@right
+
+| Formula | Ratio | Outcome |
+| --- | --- | --- |
+| X:AAA | 0.33 | Metamale; low viability |
+| X:AA | 0.5 | Male |
+| XX:AAA | 0.67 | Intersex |
+| X:A | 1 | Initially female; dies |
+| XX:AA | 1 | Female |
+| XXX:AA | 1.5 | Metafemale; low viability |
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 14. Replacement reason: dense text requires post-conversion polish; normalized ambiguous topology bounds [NormalizedBounds(left=0.0, top=0.0, right=0.3414642857142858, bottom=0.1996), NormalizedBounds(left=0.049999999999999996, top=0.23394285714285717, right=0.4891785714285715, bottom=0.9312571428571429), NormalizedBounds(left=0.5111785714285715, top=0.23394285714285717, right=0.950357142857143, bottom=0.9312571428571429)] into one native source-order panel; unrecognized source text color #800080 requires review; unsupported source object draw:custom-shape requires reconstruction | Imported reference content: | Original layout: one-panel | Original slot: replaceme | # Fly Sex Determination | Original slot: body | - Nomenclature\: | - X = female sex chromosome | - A = autosomes | - Hypothesis\: | - ratio of 1 is female | - ratio of ½ is male | - ratio in between is intersex | - ratio > 1 is [metafemale]{color=orange} or super female | - ratio < 0.5 is [metamale]{color=green} or super male | - X\:AAA, ratio of 0.33 | - Triploid with 1 X | - [metamale]{color=green}, low viability | - X\:AA, ratio of 0.5 | - Diploid with 1 X | - [wildtype male]{color=blue} | - XX\:AAA, ratio of 0.67 | - Triploid with 2 X | - intersex | - X\:A, ratio of 1.0 | - Haploid with 1 X | - [initially female then dies]{color=red} | - XX\:AA, ratio of 1.0 | - Diploid with 2 X | - [wildtype female]{color=red} | - XXX\:AA, ratio of 1.5 | - Diploid with 3 X | - [metafemale]{color=orange}, low viability | - [more female]{color=red} | - [higher X/A ratio]{color=red}
+
+SVG repair: Replaced overlapping source columns with native definitions and ratio table; retained all six examples.
+
+=== layout: two-panels
+@replaceme
+
+# Summary of Sex Determination in Fruit Flies
+
+@left
+
+![Slide image 4](assets/lect06e-x_linked_genes_2/image_004.png)
+
+@right
+
+- [*metafemale*]{color=red underline=true} (or superfemale) is a low viability Drosophila with a female phenotype [(X\:A ratio > 1)]{color=red}
+- [*metamale*]{color=blue underline=true} (or supermale) is a low viability Drosophila with a male phenotype [(X\:A ratio < ½)]{color=blue}
+- [*intersex*]{color=purple underline=true}: intermediate sexual development in this fruit-fly X:A model (½ < X\:A ratio < 1)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 15. Replacement reason: source object crosses physical page bounds; unrecognized source text color #800080 requires review
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- 0.25
+
+- 0.5
+
+- 1.0
+
+- 0.75
+
+- 1.5
+
+- [Autosomal to Sex Chromosome Ratio]{color=red}
+
+- metamale
+
+- wildtype male
+
+- intersex
+
+- wildtype female
+
+- metafemale
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 16. Replacement reason: dense text requires post-conversion polish; normalized overlapping legacy components into one native source-order panel; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction
+
+=== layout: two-panels
+
+# Chromosome nomenclature
+
+@left
+
+- [*A*]{underline=true}: one set of autosomes.
+- [*AA, AAA, AAAA*]{underline=true}: two, three, or four autosome sets.
+- A typical XX fruit fly has 8 chromosomes: 2, 2, 3, 3, 4, 4, X, X.
+- XX:AAA has 11 chromosomes: three copies each of chromosomes 2, 3, and 4, plus two X chromosomes.
+
+@right
+
+![Chromosome nomenclature](assets/lect06e-x_linked_genes_2/autosome_set_nomenclature.svg)
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 17. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content | Imported content for reconstruction: | Original layout: two-panels | # Note on Nomenclature | Original slot: left | - wildtype drosophila females are 8,XX | - 8 chromosomes total and 2 X chromosomes | - 2,2,3,3,4,4,X,X | - XX\:AAA | - this drosophila would be 11,XX | - 11 chromosomes total and 2 X chromosomes | - 2,2,2,3,3,3,4,4,4,X,X | - AAA means that the organism is triploid, 3n, three copies of every chromosome | - so in drosophila\: | - 3 copies of chromosome 2 | - 3 copies of chromosome 3 | - 3 copies of chromosome 4 | - but they would only have two X chromosomes | Original slot: right | ![Slide image 5](assets/lect06e-x_linked_genes_2/image_005.png) | - A | - AA | - AAA | - `AAAA` | Imported reference content: | Original layout: big-image | Original slot: replaceme | # Note on Nomenclature | Original slot: image | ![Slide image 5](assets/lect06e-x_linked_genes_2/image_005.png) | Original slot: caption | Restore positioned labels and relationships from source slide 17.
+
+SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
+
+=== layout: one-panel
+
+# Summary of Sex Determination in Fruit Flies and Humans
+
+@body
+
+![Slide image 6](assets/lect06e-x_linked_genes_2/image_006.png)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 18.
+
+=== layout: one-panel
+
+# Larger Summary with ZW
+
+@body
+
+![Slide image 7](assets/lect06e-x_linked_genes_2/image_007.png)
+
+- [https\://www.karger.com/Article/PDF/351998](https://www.karger.com/Article/PDF/351998)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 19.
+
+=== layout: section
+
+# Questions
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 20.
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 8](assets/lect06e-x_linked_genes_2/image_008.png)
+
+@bottom
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 21. Replacement reason: unsupported source object draw:frame requires reconstruction
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_008.png)
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
+
+- (a1) Xy/Y × Xy+/Xy+ ; homozygote female
+  - ½ Xy+/Y wt males and ½ Xy/Xy+ wt females
+- (a2) Xy/Y × Xy+/Xy ; heterozygote female
+  - ¼ Xy+/Y wt males, ¼ Xy/Y yellow males
+  - ¼ Xy+/Xy wt females, and ¼ Xy/Xy yellow females
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 22. Replacement reason: unrecognized source text color #cc9900 requires review
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_008.png)
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
+
+- (b) y/y × y+/Y\:
+  - ½ y/Y yellow males and
+  - ½ y/y+ wt females
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 23. Replacement reason: unrecognized source text color #cc9900 requires review
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_008.png)
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
+
+- (a1) y/Y male × y+/y+ female\:
+  - ½ y+/Y wt males and ½ y/y+ wt females
+- (c) y/y+ female × y+/Y male\:
+  - males\: ½ y+/Y wt, ½ y/Y yellow
+  - all wt females
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 24. Replacement reason: unrecognized source text color #cc9900 requires review
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_008.png)
+
+![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
+
+- (a1) y/Y male × y+/y+ female\:
+  - ½ y+/Y wt males and ½ y/y+ wt females
+- (d) y/y+ female × y/Y male\:
+  - males\: ½ y+/Y wt, ½ y/Y yellow
+  - females\: ½ y+/y wt, ½ y/y yellow
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 25. Replacement reason: unrecognized source text color #cc9900 requires review
+
+=== layout: section
+
+# Summary
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 26.
+
+=== layout: one-panel
+
+# Mendel's Four Principles of Heredity
+
+@body
+
+- [*Paired factors*]{underline=true}: diploid organisms have two alleles at a locus.
+- [*Dominance*]{underline=true}: in complete dominance, the dominant allele determines the heterozygote phenotype.
+- [*Segregation*]{underline=true}: each gamete receives one allele of each pair.
+- [*Independent assortment*]{underline=true}: unlinked genes assort independently.
+
+- Exceptions: [NOT ALL ORGANISMS ARE DIPLOID]{color=#CC00CC}; dominance can be [INCOMPLETE or CODOMINANT]{color=#CC00CC}; genes can interact ([EPISTASIS]{color=#CC00CC}).
+- Males are hemizygous for most X-linked genes: one copy, rather than a pair.
+- A mammalian father passes his X chromosome to daughters and his Y to sons.
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 27. Replacement reason: dense text requires post-conversion polish; unrecognized source text color #cc00cc requires review
+
+=== layout: theend
+
+# THE END
+
+
+@notes
+
+Source: lect06e-x_linked_genes_2.odp, slide 28.

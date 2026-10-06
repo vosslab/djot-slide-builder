@@ -6,8 +6,11 @@ for the separate strict-native-Djot validation lane; compilation then applies th
 presentation parser and reports source-located errors for constructs without a native destination.
 
 The catalog uses the twelve built-in Impress layouts, with author-facing names where that makes a
-teaching choice clearer, plus four explicit project layouts.  LibreOffice documents the built-ins in
+teaching choice clearer, plus explicit project layouts. LibreOffice documents the built-ins in
 its [Slide Layout help](https://help.libreoffice.org/latest/en-US/text/simpress/01/05080000.html).
+The additional `image-comparison` layout and self-contained SVG components are documented in
+[SVG_DIAGRAMS.md](SVG_DIAGRAMS.md). Bold, underlined definition terms use
+`[*Term*]{underline=true}`; optional semantic color uses `[*Term*]{color=blue underline=true}`.
 
 ## Deck color theme
 
@@ -183,6 +186,7 @@ outside a named slot; required named slots still appear where listed.
 | `stacked-panels` | Title, Content over Content, `AUTOLAYOUT_TITLE_CONTENT_OVER_CONTENT` | `top`, `bottom` | no | The reading sequence is top to bottom. |
 | `two-over-one-panels` | Title, 2 Content over Content, `AUTOLAYOUT_TITLE_2CONTENT_OVER_CONTENT` | `top-left`, `top-right`, `bottom` | no | Two related upper items lead to one shared conclusion or figure. |
 | `four-panels` | Title, 4 Content, `AUTOLAYOUT_TITLE_4CONTENT` | `top-left`, `top-right`, `bottom-left`, `bottom-right` | no | Four comparable items form a compact 2 by 2 teaching grid. |
+| `image-comparison` | project custom | `top-left`, `top-right`, `bottom-left`, `bottom-right` | title only | Two diagrams above two independently editable captions; captions determine the shared lower row height. |
 | `six-panels` | Title, 6 Content, `AUTOLAYOUT_TITLE_6CONTENT` | `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` | no | Six short, comparable items need a 3 by 2 grid. |
 | `multiple-choice` | project custom | `question`, `answer` | no | You are asking a closed question with visible choices and a revealed answer. |
 | `gallery` | project custom | `gallery` | title only | Two through six component images are the teaching focus. |
@@ -339,8 +343,14 @@ Each child inherits one [red haplotype]{color=red} and one
 
 The closed names are `accent`, `black`, `red`, `orange`, `green`, `blue`, `purple`, and `gray`.
 `accent` follows the deck's course theme. The remaining names resolve to repository colors rather
-than arbitrary hexadecimal values. Duplicate colors, unknown names, and unsupported attribute
-scopes are source errors.
+than arbitrary hexadecimal values. Inline spans additionally accept six-digit RGB values, such as
+`[source emphasis]{color=#CC00CC}`, to retain imported colors that have no semantic alias. These
+colors still need visual review for contrast and meaning. Duplicate colors, malformed RGB values,
+unknown names, and unsupported attribute scopes are source errors.
+
+Preserve emphasis with `*bold*`, `_italic_`, `*_bold italic_*`, and
+`[*underlined bold*]{underline=true}`. Color and underline can coexist on the same span. Literal
+ALL CAPS remains unchanged; import also applies explicit source uppercase/lowercase transformations.
 
 For numbered allele subscripts, use numeric character references: `A&#x2082;` renders as
 A with subscript 2, and `A&#x2081;A&#x2082;` renders both allele indices below the baseline.

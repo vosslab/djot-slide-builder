@@ -140,10 +140,15 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 				else:
 					runs.append(run)
 		elif isinstance(inline, slide_lib.native_model.StyledSpan):
+			color_name = inline.color.value if isinstance(inline.color,
+				slide_lib.native_model.TextColor) else inline.color
 			span_color = slide_lib.presentation_theme.resolve_text_color(
-				inline.color.value, accent_color)
-			runs.extend(resolved_runs(inline.children, span_color, accent_color,
-				bold, italic, link))
+				color_name, accent_color) if color_name is not None else color
+			for run in resolved_runs(inline.children, span_color, accent_color,
+					bold, italic, link):
+				if inline.underline and isinstance(run, slide_lib.layout_content.TextRun):
+					run = dataclasses.replace(run, style=dataclasses.replace(run.style, underline=True))
+				runs.append(run)
 	return tuple(runs)
 
 

@@ -14,6 +14,7 @@ import slide_lib.layout_specialty_builders
 import slide_lib.multiple_choice_layout
 import slide_lib.native_model
 import slide_lib.presentation_theme
+import slide_lib.comparison_layout
 
 
 ANSWER = "7B1E2B"
@@ -106,6 +107,8 @@ def _body_fits_floor(deck: slide_lib.native_model.Deck, source: slide_lib.native
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		session: slide_lib.layout_measurement.MeasurementSession) -> bool:
 	cells = {cell.name: cell for cell in source.cells}
+	if contract.name == "image-comparison":
+		return slide_lib.comparison_layout.rectangles(source, content, theme, session) is not None
 	return all(_cell_fits_floor(deck, cells[name], rectangle, theme, session)
 		for name, rectangle in zip(contract.slot_names,
 			slide_lib.layout_measurement.slot_rectangles(contract.name, content)))
@@ -152,7 +155,12 @@ def _standard_slide_at_theme(deck: slide_lib.native_model.Deck, source: slide_li
 	"""Build title, named cells, local headings, text, tables, and component images."""
 	title = _root_title(source)
 	content, title_object = _content_area(source, title, theme, contract, index, session)
-	rectangles = slide_lib.layout_measurement.slot_rectangles(contract.name, content)
+	if contract.name == "image-comparison":
+		rectangles = slide_lib.comparison_layout.rectangles(source, content, theme, session)
+		if rectangles is None:
+			raise ValueError(f"{source.location}: image-comparison captions leave no diagram space")
+	else:
+		rectangles = slide_lib.layout_measurement.slot_rectangles(contract.name, content)
 	slots: list[slide_lib.layout_model.LayoutSlot] = []
 	objects: list[slide_lib.layout_model.LayoutObject] = []
 	if title_object is not None:

@@ -14,7 +14,7 @@ import slide_lib.native_model
 # Djot lets a backslash quote ASCII punctuation.  Keep this grammar fact local
 # to scanning: the resulting character is ordinary text, never a delimiter.
 ESCAPABLE_PUNCTUATION = frozenset(string.punctuation)
-_COLOR_SPAN = re.compile(r"\{color=(?P<color>[a-z][a-z0-9-]*)\}")
+_STYLE_SPAN = re.compile(r"\{(?P<attributes>[^{}]+)\}")
 _BARE_URL = re.compile(r"https?://[^\s<>()\[\]{}*]+")
 
 
@@ -105,23 +105,36 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 			if label_end is None or label_end + 1 >= end:
 				raise _error(path, line, source, index, "unsupported or unterminated link syntax")
 			if source[label_end + 1] == "{":
-				attribute = _COLOR_SPAN.match(source, label_end + 1, end)
+				attribute = _STYLE_SPAN.match(source, label_end + 1, end)
 				if attribute is None:
 					raise _error(path, line, source, label_end + 1,
-						"inline spans support only {color=<name>}")
-				color_name = attribute.group("color")
+						"inline spans support color and underline attributes")
+				attributes: dict[str, str] = {}
+				for value in attribute.group("attributes").split():
+					key, separator, setting = value.partition("=")
+					if not separator or key not in {"color", "underline"} or key in attributes:
+						raise _error(path, line, source, label_end + 1,
+							"inline spans support unique color and underline attributes")
+					attributes[key] = setting
+				color_name = attributes.get("color")
 				color_names = tuple(color.value for color in slide_lib.native_model.TextColor)
-				if color_name not in color_names:
+				exact_color = color_name is not None and re.fullmatch(r"#[0-9a-fA-F]{6}", color_name)
+				if color_name is not None and color_name not in color_names and not exact_color:
 					expected = ", ".join(color_names)
 					raise _error(path, line, source, label_end + 1,
 						f"unknown text color: {color_name}; expected one of: {expected}")
+				if "underline" in attributes and attributes["underline"] != "true":
+					raise _error(path, line, source, label_end + 1,
+						"underline must be underline=true")
 				_append_text(runs, source[text_start:index])
 				children = _parse_runs(path, line, source, index + 1, label_end)
 				if not children:
 					raise _error(path, line, source, index,
-						"colored spans require visible text")
+						"styled spans require visible text")
 				runs.append(slide_lib.native_model.StyledSpan(children,
-					slide_lib.native_model.TextColor(color_name)))
+					color_name.upper() if exact_color else
+					slide_lib.native_model.TextColor(color_name) if color_name is not None else None,
+					"underline" in attributes))
 				index = attribute.end()
 				text_start = index
 				continue

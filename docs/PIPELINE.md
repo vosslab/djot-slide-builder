@@ -11,12 +11,14 @@ ONE-TIME EXISTING-PRESENTATION IMPORT
 
 trusted ODP -> bounded ODF archive/XML/manifest facts
   -> odp_reader raw facts -> SlidePlan geometry -> djot_emitter
-  -> staged Djot validation and reachable local assets -> non-overwriting publication
+  -> staged Djot validation and reachable local assets -> non-overwriting draft publication
+  -> render draft -> LLM source/draft evaluation -> repair and re-render
+  -> accepted canonical Djot, with unresolved @replaceme markers retained
 
 The imported presentation supplies structured text, list, table, image, and geometry facts only.
-Ordinary source images remain assets. Embedded SVM/EMF/WMF figures use their package-local raster
-alternative, or automatically convert through LibreOffice to a validated PNG component when no
-preview is supplied. Difficult spatial compositions normalize into standard native
+Ordinary source images remain assets. Embedded SVM/EMF/WMF figures convert through LibreOffice
+to validated SVG components; conversion failures or absent live text require review.
+Difficult spatial compositions normalize into standard native
 source-order layouts with review reasons; no source slide or composite region is rendered and
 inserted as substitute content.
 
@@ -222,7 +224,28 @@ does publication replace final PDFs.
 | LibreOffice ODP round trip and PDF | Native layout retention, editable ODP objects, and final PDF state |
 | Attended Impress check | Click-by-click reveal playback |
 
-### Advisory visual review
+### Required LLM review of imported decks
+
+Deterministic import is draft preparation, not pedagogical acceptance. Before accepting a converted
+deck, an LLM compares every source slide with its rendered draft, using extracted text, geometry,
+animation targets and timing, notes, and importer diagnostics as supporting evidence. Static PDF
+pages alone cannot establish the original reveal sequence. A slide with no automated warning
+still needs evaluation.
+
+Review checks teaching sequence, question/answer separation, diagram-label relationships, definition
+emphasis, image prominence, and scientific meaning. Compare deliberate color, capitalization,
+underline, bold, and italics explicitly; LLM rewriting must not silently flatten them. Repair the Djot or component assets using
+existing layouts, then render and check the changed slides again. Retain `@replaceme` where the
+teaching intent remains unresolved and record concise slide-specific findings in the deck review.
+
+A reviewed `@replaceme` is an acceptable result, not a failed conversion or a requirement to keep
+retrying. A deck may complete conversion review with these markers when each has source provenance
+and a clear reason. Zero replacement markers is not an acceptance criterion.
+
+This is a required conversion workflow; the current import CLI does not automatically invoke or
+enforce an LLM review. Repeatable builds from reviewed canonical Djot remain deterministic.
+
+### Visual review evidence
 
 LibreOffice converts the generated editable ODP to the PDF used for every generated-slide visual
 review. Standalone review supplies that generated PDF page and the
@@ -230,7 +253,8 @@ review. Standalone review supplies that generated PDF page and the
 qualitative concern with its visible teaching reason. Migration review supplies the corresponding
 original PDF page alongside the LibreOffice-generated PDF page and records `improved`, `roughly
 equivalent`, or `materially worse` with the most important functional visual-equivalence reason.
-This on-demand evidence directs presentation improvements and remains separate from build gating.
+Standalone review directs presentation improvements and remains separate from build gating.
+For imported decks, this comparison supports the required LLM review above.
 
 No one lane proves the complete product. Fast tests cannot prove LibreOffice conversion, and a
 rendered page cannot prove editability. The E2E build verifies native ODP output, an ODP open/save

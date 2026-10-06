@@ -3,9 +3,9 @@
 # Standard Library
 import dataclasses
 import itertools
-import re
 
 # local repo modules
+import slide_lib.importers.djot_text as djot_text
 import slide_lib.layout_registry
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.image_annotations as image_annotations
@@ -37,17 +37,6 @@ ASYMMETRIC_EXPLANATORY_PAIR_MAX_SCORE = 0.33
 ASYMMETRIC_EXPLANATORY_COMPACT_AREA_RATIO = 0.75
 SHALLOW_FLOW_MAX_VERTICAL_OVERLAP = 0.03
 SHALLOW_FLOW_MAX_SMALLER_HEIGHT_RATIO = 0.25
-# LibreOffice normalization may place the trailing prime before the strand number.
-PRIMED_SEQUENCE = re.compile(
-	r"([35])[\u2032\u2019'']-([ACGTU][ACGTU|/,.]{2,}[ACGTU])-[\u2032\u2019'']([35])"
-)
-# Imported source text commonly retains the conventional number-then-prime order.
-CONVENTIONAL_PRIMED_SEQUENCE = re.compile(
-	r"([35])[\u2032\u2019'']-([ACGTU][ACGTU|/,.]{2,}[ACGTU])-([35])[\u2032\u2019'']"
-)
-PRIME_MARK = re.compile(r"([35])[\u2032\u2019'']")
-DNA_SEQUENCE = re.compile(r"(?<![A-Za-z0-9`])([ACGTU][ACGTU|/,.]{2,}[ACGTU])(?![A-Za-z0-9`])")
-DJOT_PUNCTUATION = frozenset("\\`*_[]$~^{}:")
 @dataclasses.dataclass(frozen=True)
 class PlannedSlide:
 	"""Imported-slide facts and their geometry-first projection."""
@@ -85,49 +74,9 @@ class OverlapPermission:
 	layout: str
 	order: tuple[int, ...]
 #============================================
-def djot_text(text: str) -> str:
-	"""Escape raw source characters once and project settled DNA notation."""
-	# ASVS 1.2.1: output escaping occurs only at the Djot rendering boundary.
-	escaped = "".join(f"\\{character}" if character in DJOT_PUNCTUATION else character for character in text)
-	escaped = PRIMED_SEQUENCE.sub(r"\1&prime;-`\2`-\3&prime;", escaped)
-	escaped = CONVENTIONAL_PRIMED_SEQUENCE.sub(r"\1&prime;-`\2`-\3&prime;", escaped)
-	escaped = PRIME_MARK.sub(r"\1&prime;", escaped)
-	return DNA_SEQUENCE.sub(r"`\1`", escaped)
-
-
-#============================================
-def djot_link_target(target: str) -> str:
-	"""Encode delimiter and whitespace characters in one allowed link target."""
-	# ASVS 1.2.2: encode an already allow-listed URL at its output context.
-	return target.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
-
-
-#============================================
-def render_runs(runs: tuple[source_model.TextRun, ...]) -> str:
-	"""Render raw source runs into Djot inline syntax exactly once."""
-	# Join equal-style neighbors so formatting-only splits cannot break DNA recognition.
-	coalesced: list[source_model.TextRun] = []
-	for run in runs:
-		if coalesced and (coalesced[-1].link, coalesced[-1].color) == (run.link, run.color):
-			previous = coalesced[-1]
-			coalesced[-1] = dataclasses.replace(previous, text=previous.text + run.text)
-		else:
-			coalesced.append(run)
-	segments: list[str] = []
-	for run in coalesced:
-		text = djot_text(run.text)
-		if run.link:
-			text = f"[{text}]({djot_link_target(run.link)})"
-		if run.color:
-			text = f"[{text}]{{color={run.color}}}"
-		segments.append(text)
-	return "".join(segments)
-
-
-#============================================
 def image_djot(image: source_model.ImageAsset) -> str:
 	"""Render one imported-deck image as a Djot component image."""
-	return f"![{djot_text(image.alt_text)}]({image.asset_path})"
+	return f"![{djot_text.djot_text(image.alt_text)}]({image.asset_path})"
 
 
 #============================================
@@ -136,7 +85,7 @@ def region_lines(regions: tuple[slide_plan.SourceTextRegion, ...]) -> list[str]:
 	lines: list[str] = []
 	for region in regions:
 		for level, runs in region.paragraphs:
-			text = render_runs(runs)
+			text = djot_text.render_runs(runs)
 			if region.is_subtitle:
 				lines.append(f"## {text}")
 			else:
@@ -150,10 +99,10 @@ def multiple_choice_question_lines(region: slide_plan.SourceTextRegion) -> list[
 	paragraphs = region.paragraphs
 	first_level = paragraphs[0][0]
 	choice_start = 1 if any(level > first_level for level, _text in paragraphs[1:]) else 0
-	lines = [] if choice_start == 0 else [render_runs(paragraphs[0][1]), ""]
+	lines = [] if choice_start == 0 else [djot_text.render_runs(paragraphs[0][1]), ""]
 	choice_level = min(level for level, _text in paragraphs[choice_start:])
 	for level, runs in paragraphs[choice_start:]:
-		lines.append(f"{'  ' * (level - choice_level)}- {render_runs(runs)}")
+		lines.append(f"{'  ' * (level - choice_level)}- {djot_text.render_runs(runs)}")
 	return lines
 
 
@@ -182,7 +131,7 @@ def render_multiple_choice(planned: PlannedSlide) -> tuple[list[str], str, list[
 			raise ValueError("multiple-choice figure requires a native raster asset")
 		lines.extend((*image_lines, ""))
 	lines.extend(multiple_choice_question_lines(choice.question))
-	answer_lines = tuple(render_runs(runs) for _level, runs in choice.answer.paragraphs)
+	answer_lines = tuple(djot_text.render_runs(runs) for _level, runs in choice.answer.paragraphs)
 	lines.extend(("", "@answer", ""))
 	for index, text in enumerate(answer_lines):
 		if index:
@@ -201,11 +150,11 @@ def table_lines(tables: tuple[source_model.TableBlock, ...]) -> list[str]:
 		if lines:
 			lines.append("")
 		if table.headers:
-			header_values = tuple(render_runs(cell).replace("|", "\\|") for cell in table.headers)
+			header_values = tuple(djot_text.render_runs(cell).replace("|", "\\|") for cell in table.headers)
 			lines.append(f"| {' | '.join(header_values)} |")
 			lines.append(f"| {' | '.join('---' for _cell in table.headers)} |")
 		for row in table.rows:
-			values = tuple(render_runs(cell).replace("|", "\\|") for cell in row)
+			values = tuple(djot_text.render_runs(cell).replace("|", "\\|") for cell in row)
 			lines.append(f"| {' | '.join(values)} |")
 	return lines
 
@@ -355,7 +304,7 @@ def emit_components(
 			flow_items.append((region.bounds, region.source_ordinal, "image", region))
 		flow_items.sort(key=lambda item: (item[1], item[0].top, item[0].left))
 		lines: list[str] = ([] if local_heading is None else
-			[f"## {' '.join(render_runs(runs) for _level, runs in local_heading.paragraphs)}"])
+			[f"## {' '.join(djot_text.render_runs(runs) for _level, runs in local_heading.paragraphs)}"])
 		image_references: list[str] = []
 		source_image_ids: list[tuple[int, str]] = []
 		for _bounds, _ordinal, kind, item in flow_items:
@@ -861,7 +810,7 @@ def render_big_image_with_overlays(planned: PlannedSlide) \
 		return None
 	caption_lines = []
 	for region in (() if title_region is None else (title_region,)) + caption_regions:
-		caption_lines.extend(render_runs(runs) for _level, runs in region.paragraphs)
+		caption_lines.extend(djot_text.render_runs(runs) for _level, runs in region.paragraphs)
 	if not caption_lines:
 		caption_lines.append(data.images[0].alt_text)
 	return image_annotations.render_big_image(planned.overlays, image,
@@ -883,10 +832,10 @@ def _render_planned_slide(
 	reasons = list(data.review_reasons)
 	heading = []
 	if plan.title.region is not None:
-		heading = [f"# {' '.join(render_runs(runs) for _level, runs in plan.title.region.paragraphs)}"]
+		heading = [f"# {' '.join(djot_text.render_runs(runs) for _level, runs in plan.title.region.paragraphs)}"]
 	if data.page_evidence is not None and data.page_evidence.is_section_page():
 		section_lines = [
-			render_runs(runs) for block in data.text_blocks
+			djot_text.render_runs(runs) for block in data.text_blocks
 			for _level, runs in block.lines
 		]
 		if section_lines:

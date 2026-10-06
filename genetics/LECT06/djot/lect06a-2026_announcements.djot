@@ -1,0 +1,453 @@
+=== layout: title-slide
+
+# Lecture 06A
+
+## Genetics 351/451\: Announcements
+
+## Chapter 6
+
+## Dr. Neil Voss
+
+## Oct 6, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Ice breaker and announcements
+- Quiz 2 and midterm preparation
+- Cells and the cell cycle
+- Meiosis
+- X-linked genes
+- Closing remarks
+
+=== layout: section
+
+# Informational Slides
+
+=== layout: big-image
+
+@image
+
+![Slide image 2](assets/lect06a-2026_announcements/canonical_image_002.png)
+
+@caption
+
+Dr. Voss's YouTube channel has videos for difficult problems.
+
+=== layout: one-plus-two-panels
+
+# Discord Server
+
+@left
+
+- I created a Discord Server called Neil Voss Lab.
+  - Discord is the quickest way to reach me.
+- The sign-up link is available on Blackboard.
+  - It is available as a mobile app, a desktop app, and a website.
+  - Be sure to connect to my server rather than creating your own server.
+
+@top-right
+
+![Slide image 3](assets/lect06a-2026_announcements/canonical_image_003.png)
+
+@bottom-right
+
+![Slide image 4](assets/lect06a-2026_announcements/canonical_image_004.png)
+
+=== layout: two-panels
+
+# Office Hours
+
+@left
+
+- Office\: SCH 600E, Schaumburg campus
+- Secure Zoom link\: see Blackboard
+- Thursday, 12\:30-1\:30 p.m.
+- Wednesday, 2\:30-3\:30 p.m.
+- Also available by appointment
+
+Instructor information
+
+[https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
+
+
+@right
+
+![Slide image 5](assets/lect06a-2026_announcements/canonical_image_005.png)
+
+=== layout: one-panel
+
+# Ways to Contact Dr. Voss
+
+@body
+
+- [Office hours]{color=green}: Ask questions in person or over Zoom.
+- [Discord]{color=red}: The quickest way to reach me.
+  - I check several times per day.
+  - Send a direct message for private questions or post general questions to the class.
+  - Response time\: 1-2 calendar days.
+- [Email]{color=blue}.
+  - Response time\: 2 business days.
+- [Anonymous Google Form]{color=purple}.
+  - Response time\: 2-4 business days.
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+![Anonymous message form](assets/lect06a-2026_announcements/anonymous_message_form.png)
+
+@right
+
+- Send me an *anonymous* message through the Google Form.
+- Use it for questions you would rather not ask publicly.
+- The form goes directly to my email.
+
+Open message form
+
+[https://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+
+
+=== layout: section
+
+# Textbooks
+
+=== layout: two-panels
+
+# New, Free OER Textbook
+
+@left
+
+- Advanced Genetics\: Mechanisms of Inheritance and Analysis
+
+Read online
+
+[https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis](https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis)
+
+- Dr. Voss is creating a custom textbook, but it will take some time.
+
+@right
+
+![Slide image 6](assets/lect06a-2026_announcements/image_006.png)
+
+=== layout: two-panels
+
+# Idiom\: &ldquo;build the plane while flying it&rdquo;
+
+@left
+
+- This idiom can also be applied in education when teachers try out new teaching methods or curriculums during actual classes with students. They may experiment with different approaches until they find what works best for their students.
+
+About this idiom
+
+[https://crossidiomas.com/build-the-plane-while-flying-it/](https://crossidiomas.com/build-the-plane-while-flying-it/)
+
+
+@right
+
+![Slide image 7](assets/lect06a-2026_announcements/image_007.png)
+
+=== layout: section
+
+# Course Content
+
+=== layout: one-panel
+
+# Syllabus Links
+
+@body
+
+
+Syllabus
+
+[https://vosslab.github.io/syllabus/fall_2026/genetics/](https://vosslab.github.io/syllabus/fall_2026/genetics/)
+
+
+Course schedule
+
+[https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/](https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/)
+
+
+Coursework and grades
+
+[https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/](https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/)
+
+
+Policies and student resources
+
+[https://vosslab.github.io/syllabus/fall_2026/shared/policies/](https://vosslab.github.io/syllabus/fall_2026/shared/policies/)
+
+
+=== layout: one-panel
+
+# PREVIEW Slides
+
+@body
+
+- Limited versions of lecture slides may be available on Blackboard before class.
+  - They are labeled PREVIEW in the filename.
+- Full versions of lecture slides are available on Blackboard after class.
+
+=== layout: section
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# Assignments, Quizzes, and Exams
+
+@body
+
+- [*Assignments*]{color=red}: reinforce learning; explore new topics
+  - Weekly; 5-15 points; unlimited retakes
+  - Collaboration and help encouraged
+- [*Quizzes*]{color=red}: recent material
+  - Individual: 20 points; 30 minutes
+  - Group quiz during class
+- [*Exams*]{color=red}: cumulative midterm and final
+  - Individual; 100 points total
+  - Each part: 50 points; 75 minutes
+
+=== layout: two-panels
+
+# Graded vs Total Percentage
+
+@left
+
+- *Graded percentage* includes only items with a recorded grade.
+- Excludes items that have not been graded, including unfinished assignments.
+- More useful when *Dr. Voss* still has submitted work to grade.
+
+@right
+
+- *Total percentage* includes all items counted toward your Blackboard grade.
+- Counts items without a recorded grade as zero.
+  - This includes submitted work waiting to be graded.
+- More useful for seeing the effect of assignments you have not attempted.
+
+=== layout: section
+
+# Quiz/Exam
+
+=== layout: one-panel
+
+# [Don&rsquo;t Panic]{color=red}
+
+@body
+
+- If you experience internet troubles or non-academic distractions during a quiz/exam\:
+  - 1. Don&rsquo;t panic
+  - 2. Stop and close the quiz/exam without looking at all the questions
+  - 3. [Contact me immediately]{color=red}, preferably via Discord, but you do not need to rush
+- Note\: Once class begins, I no longer check my email.
+- If you haven't looked at all the questions, I can reset the quiz/exam
+- If you have looked at some questions, I can create a new custom quiz/exam with only the portion that you haven't seen yet.
+
+=== layout: one-panel
+
+# Illness Policy
+
+@body
+
+- Since COVID, I am trying to be more considerate of student illnesses.
+- If you are sick, let me know. I will provide an extension.
+- If a major event interferes (car accident, etc.), again contact me.
+- Communication is always helpful.
+
+=== layout: section
+
+# Exam
+
+=== layout: one-panel
+
+# Midterm Next Week: October 13
+
+@body
+
+- Tuesday, Oct 13, 2026: in-person written exam during class
+- Chapters 1-4
+- Class meeting: 1:30-4:25 p.m.
+- Worth 100 points; completed individually
+- See the old exam on Blackboard for the format
+
+=== layout: two-panels
+
+# In-Person Exam Rules
+
+@left
+
+- Part 1: multiple choice and matching
+- ZipGrade bubble answer form
+- Variations on assignment and quiz questions
+- Questions sorted by lecture
+- Fill one bubble completely for each answer
+
+@right
+
+- Part 2: short answers
+- Four questions: answer any three; skip one
+- Each part: 50 points, 75 minutes
+
+=== layout: one-panel
+
+# What to Bring to the Exam
+
+@body
+
+- Bring a notecard or full sheet of paper as a help sheet
+- Dr. Voss provides the Punnett square help sheet
+- No electronics or calculators
+
+=== layout: one-panel
+
+# Reviewing Old Quiz Questions
+
+@body
+
+- Review a quiz after everyone has completed it
+- In Blackboard, open your quiz score in the gradebook
+- Select the attempt to review your answers
+
+=== layout: one-panel
+
+# BB Assignments for Mid-Term Exam
+
+@body
+
+- Prepare for the Oct 13 midterm: Chapters 1-4
+- Retake available assignments until you understand the questions
+- Unlimited homework attempts; only the highest score counts
+- Assignments 4-5 are due today, Oct 6
+- Assignment 6 is due Oct 13
+- Check Blackboard for assignment availability and submission times
+
+@notes
+
+Restored from the hidden 2025 midterm-preparation slide. The old blanket reopening and | Oct 15 deadline are not verified for 2026; use current published dates and Blackboard availability.
+
+=== layout: section
+
+# Quiz
+
+=== layout: two-panels
+
+# Quiz System Information
+
+@left
+
+- 20 points; 18-24 questions
+- MC: 1 point; matching: 1/2 per choice
+- 30 minutes; about 1.5 min/question
+- Backtracking allowed; random order
+- Limited calculations
+- Score: (individual + group)/2
+- Example: (14 + 20)/2 = 17
+
+@right
+
+- Individual: Blackboard
+- Opens >20 hours before class
+- Due BEFORE class
+- Group: Zoom and Blackboard
+- 3-4 students; breakout setup takes time
+- Hard group quizzes receive a curve
+
+=== layout: one-panel
+
+# Missing Group Quizzes
+
+@body
+
+- Make-up quizzes will be allowed for full credit only if the student notifies the instructor BEFORE the quiz/exam
+- Students missing group quizzes cannot later work in a group
+  - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
+  - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
+
+=== layout: one-panel
+
+# Please Volunteer Only If Plan to Work in Group
+
+@body
+
+- You get Group Quiz points no matter what.
+  - your individual score will be averaged with the standard 18 points (sometimes higher) instead of a group quiz score
+- Group Quiz is not required.
+- Do not join if you do not want to actively participate.
+- Let me know if you want to work with someone in particular.
+
+=== layout: one-panel
+
+# Group Quiz Setup
+
+@body
+
+- Complete your individual quiz FIRST
+- Before: join your assigned breakout group
+  - Select a Recorder to share their screen
+  - ONLY the Recorder starts the unique Blackboard quiz
+- During: 30 minutes; enter your first names
+  - Discuss verbally or in chat
+  - Use Ask for Help for instructor assistance
+- After: review correct and submitted answers
+  - Report problems by email or Discord DM
+  - Return to main room or stay and chat
+
+=== layout: one-panel
+
+# Low Quiz Grades
+
+@body
+
+- How can I do better in this class?
+- Did you complete the relevant assignments before taking the quiz?
+  - The assignments and quizzes mostly have the same questions.
+- Did you retake the relevant assignments and make sure you understood the questions? Did you retake them until you had a grade you were happy with?
+  - The assignments and quizzes mostly have the same questions.
+
+=== layout: one-panel
+
+# Exam and Quiz Schedule
+
+@body
+
+- *Quiz 1* &ndash; completed Sept 22
+- *Quiz 2* &ndash; today, Oct 6
+- *Midterm exam* &ndash; next Tuesday, Oct 13, in person; Chapters 1-4
+- *Quiz 3* &ndash; Nov 3
+- *Quiz 4* &ndash; Nov 17
+- *Quiz 5* &ndash; Dec 8
+- *Final exam* &ndash; Dec 15, in person; cumulative
+
+Course schedule
+
+[https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit](https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit)
+
+
+=== layout: section
+
+# Weekly Assignments
+
+=== layout: two-panels
+
+# Blackboard Homework (Part 1)
+
+@left
+
+- Assignments 1-3 &ndash; previously due Sept 22
+- Assignments 4-5 &ndash; due today, Oct 6
+- Assignment 6 &ndash; due next Tuesday, Oct 13
+
+@right
+
+- Due dates are listed in the course schedule.
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+=== layout: theend
+
+# THE END

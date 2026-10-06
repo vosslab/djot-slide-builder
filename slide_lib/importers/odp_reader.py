@@ -7,7 +7,6 @@ import io
 import math
 import pathlib
 import re
-import urllib.parse
 import xml.etree.ElementTree
 import zipfile
 
@@ -17,11 +16,13 @@ from PIL import Image
 # local repo modules
 import slide_lib.odf_package
 import slide_lib.importers.odf_styles as odf_styles
+import slide_lib.importers.odf_text as odf_text
 import slide_lib.importers.odp_metafile as odp_metafile
 import slide_lib.importers.odp_reveals as odp_reveals
 import slide_lib.importers.odp_visibility as odp_visibility
 import slide_lib.importers.source_model as source_model
 import slide_lib.presentation_theme
+import slide_lib.svg_images
 
 
 NS = {
@@ -36,8 +37,7 @@ NS = {
 	"xlink": "http://www.w3.org/1999/xlink",
 }
 ODP_MIMETYPE = "application/vnd.oasis.opendocument.presentation"
-SAFE_LINK_SCHEMES = frozenset({"http", "https", "mailto"})
-SUPPORTED_IMAGE_SUFFIXES = frozenset({".gif", ".jpg", ".png"})
+SUPPORTED_IMAGE_SUFFIXES = frozenset({".gif", ".jpg", ".png", ".svg"})
 MAX_IMAGE_PIXELS = 100_000_000
 MAX_IMAGE_FRAMES = 100
 MAX_IMAGE_AGGREGATE_PIXELS = 500_000_000
@@ -302,110 +302,6 @@ def read_declared_placeholder_roles(
 
 
 #============================================
-def safe_hyperlink(address: str | None) -> str:
-	"""Return a direct http, https, or mailto source link when safe."""
-	if not address:
-		return ""
-	parsed = urllib.parse.urlsplit(address)
-	if parsed.scheme.lower() not in SAFE_LINK_SCHEMES:
-		return ""
-	return address
-
-
-#============================================
-def trim_runs(runs: list[source_model.TextRun]) -> tuple[source_model.TextRun, ...]:
-	"""Strip paragraph-edge whitespace while retaining source run boundaries."""
-	while runs and not runs[0].text:
-		runs.pop(0)
-	while runs and not runs[-1].text:
-		runs.pop()
-	if not runs:
-		return ()
-	runs[0] = dataclasses.replace(runs[0], text=runs[0].text.lstrip())
-	runs[-1] = dataclasses.replace(runs[-1], text=runs[-1].text.rstrip())
-	return tuple(run for run in runs if run.text)
-
-
-#============================================
-def append_run(runs: list[source_model.TextRun], text: str, link: str,
-		color: str) -> None:
-	"""Retain one visible source character sequence when it is nonempty."""
-	if text:
-		runs.append(source_model.TextRun(text, link, color))
-
-
-#============================================
-def inline_runs(element: xml.etree.ElementTree.Element,
-		definitions: dict[str, odf_styles.StyleDefinition], link: str = "",
-		color: str = "") -> tuple[source_model.TextRun, ...]:
-	"""Extract styled ODF inline text and allow-listed link targets."""
-	runs: list[source_model.TextRun] = []
-
-	def visit(node: xml.etree.ElementTree.Element, inherited_link: str,
-			inherited_color: str) -> None:
-		source_color = odf_styles.attribute(node, definitions, qname("fo", "color"))
-		resolved_color = slide_lib.presentation_theme.source_text_color_name(source_color) \
-			or inherited_color
-		append_run(runs, node.text or "", inherited_link, resolved_color)
-		for child in node:
-			if child.tag == qname("text", "s"):
-				count_raw = child.get(qname("text", "c"), "1")
-				if not count_raw.isdigit() or int(count_raw) > MAX_TABLE_CELLS:
-					raise ValueError("ODF text space count exceeds the supported range")
-				append_run(runs, " " * int(count_raw), inherited_link, resolved_color)
-			elif child.tag == qname("text", "tab"):
-				append_run(runs, "\t", inherited_link, resolved_color)
-			elif child.tag == qname("text", "line-break"):
-				append_run(runs, " ", inherited_link, resolved_color)
-			else:
-				child_link = inherited_link
-				if child.tag == qname("text", "a"):
-					child_link = safe_hyperlink(child.get(qname("xlink", "href")))
-				visit(child, child_link, resolved_color)
-			append_run(runs, child.tail or "", inherited_link, resolved_color)
-
-	visit(element, link, color)
-	return trim_runs(runs)
-
-
-#============================================
-def text_paragraphs(container: xml.etree.ElementTree.Element,
-		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[
-	tuple[int, tuple[source_model.TextRun, ...]], ...,
-]:
-	"""Extract paragraphs and explicit ODF nested-list levels in source order."""
-	lines: list[tuple[int, tuple[source_model.TextRun, ...]]] = []
-
-	def visit_children(parent: xml.etree.ElementTree.Element, level: int) -> None:
-		for child in parent:
-			if child.tag in {qname("text", "p"), qname("text", "h")}:
-				runs = inline_runs(child, definitions)
-				if runs:
-					lines.append((level, runs))
-			elif child.tag == qname("text", "list"):
-				visit_list(child, level)
-			else:
-				visit_children(child, level)
-
-	def visit_list(list_element: xml.etree.ElementTree.Element, level: int) -> None:
-		for item in list_element:
-			if item.tag not in {qname("text", "list-header"), qname("text", "list-item")}:
-				continue
-			for child in item:
-				if child.tag in {qname("text", "p"), qname("text", "h")}:
-					runs = inline_runs(child, definitions)
-					if runs:
-						lines.append((level, runs))
-				elif child.tag == qname("text", "list"):
-					visit_list(child, level + 1)
-				else:
-					visit_children(child, level)
-
-	visit_children(container, 0)
-	return tuple(lines)
-
-
-#============================================
 def plain_text(runs: tuple[source_model.TextRun, ...]) -> str:
 	"""Return visible source characters for density and identity checks."""
 	return "".join(run.text for run in runs)
@@ -417,7 +313,7 @@ def page_notes(page: xml.etree.ElementTree.Element,
 	"""Read presenter-note paragraphs from one ODP page."""
 	notes: list[str] = []
 	for notes_element in page.findall("./presentation:notes", NS):
-		for _level, runs in text_paragraphs(notes_element, definitions):
+		for _level, runs in odf_text.text_paragraphs(notes_element, definitions):
 			text = plain_text(runs).strip()
 			if text:
 				notes.append(text)
@@ -428,6 +324,7 @@ def unrecognized_text_colors(page: xml.etree.ElementTree.Element,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
 	"""Return explicit nonneutral source colors outside the semantic palette."""
 	text_tags = {qname("text", name) for name in ("a", "h", "p", "span")}
+	text_tags.update(qname("draw", name) for name in ("frame", "rect", "custom-shape"))
 	colors = {
 		color for element in page.iter() if element.tag in text_tags
 		if (color := odf_styles.attribute(element, definitions, qname("fo", "color")))
@@ -533,12 +430,15 @@ def rotation_degrees(element: xml.etree.ElementTree.Element) -> float:
 
 #============================================
 def validate_image_blob(blob: bytes, suffix: str, media_budget: _MediaBudget) -> None:
-	"""Decode every raster frame before publishing a canonical asset extension."""
+	"""Validate SVG or decode every raster frame before publishing an asset."""
+	if len(blob) > slide_lib.odf_package.MAX_MEMBER_BYTES:
+		raise ValueError("ODP image exceeds the per-image size limit")
+	if suffix == ".svg":
+		slide_lib.svg_images.dimensions_blob(blob, "imported SVG")
+		return
 	# ASVS 5.2.2 and 5.2.6: decode all admitted media before it reaches staging.
 	if suffix not in SUPPORTED_IMAGE_SUFFIXES:
 		raise ValueError(f"unsupported ODP image type: {suffix}")
-	if len(blob) > slide_lib.odf_package.MAX_MEMBER_BYTES:
-		raise ValueError("ODP image exceeds the per-image size limit")
 	expected_format = {".gif": "GIF", ".jpg": "JPEG", ".png": "PNG"}[suffix]
 	with Image.open(io.BytesIO(blob)) as image:
 		if image.format != expected_format:
@@ -577,7 +477,7 @@ def table_cell_runs(cell: xml.etree.ElementTree.Element,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TextRun, ...]:
 	"""Read one ODF table cell into the native inline table vocabulary."""
 	result: list[source_model.TextRun] = []
-	for _level, runs in text_paragraphs(cell, definitions):
+	for _level, runs in odf_text.text_paragraphs(cell, definitions):
 		if result:
 			result.append(source_model.TextRun(" "))
 		result.extend(runs)
@@ -691,12 +591,19 @@ def add_picture(
 		raise ValueError("ODF image reference misses its manifest target")
 	blob = archive.read(target)
 	suffix = image_suffix(target)
+	is_metafile = suffix in odp_metafile.METAFILE_SUFFIXES
 	try:
-		blob, suffix = odp_metafile.raster_image(blob, suffix, geometry)
+		blob, suffix = odp_metafile.component_image(blob, suffix, geometry)
 		validate_image_blob(blob, suffix, media_budget)
 	except (OSError, ValueError) as error:
 		accumulator.review_reasons.append(f"source image requires review: {error}")
 		return True
+	if is_metafile:
+		root = slide_lib.odf_package.parse_xml(blob, "converted metafile")
+		if not any("".join(node.itertext()).strip()
+				for node in root.iter("{http://www.w3.org/2000/svg}text")):
+			accumulator.review_reasons.append(
+				"metafile SVG has no live text; review bitmap content or glyph outlines")
 	digest = hashlib.sha256(blob).hexdigest()
 	asset_name = known_images.get(digest)
 	if asset_name is None:
@@ -725,7 +632,8 @@ def add_text(
 		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> bool:
 	"""Add text runs and positioned facts from one visible ODP text object."""
-	paragraphs = text_paragraphs(text_box, definitions)
+	context = odf_text.text_style(element, definitions, odf_text.TextStyle())
+	paragraphs = odf_text.text_paragraphs(text_box, definitions, context)
 	if not paragraphs:
 		return False
 	left, top, width, height = geometry
@@ -966,6 +874,9 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 				admitted.manifest_targets, assets_dir, djot_root, known_images, media_budget,
 				definitions, odp_reveals.appear_target_ids(page),
 			)
+			accumulator.positioned_text, animation_reasons = odp_reveals.read_text_reveals(
+				page, accumulator.positioned_text, accumulator.positioned_overlays)
+			accumulator.review_reasons.extend(animation_reasons)
 			for color in unrecognized_text_colors(page, definitions):
 				accumulator.review_reasons.append(
 					f"unrecognized source text color {color} requires review")
