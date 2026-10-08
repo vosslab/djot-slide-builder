@@ -22,6 +22,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide-writing advice
 
+- Convert Biotechnology `LECT06/` to Djot, including the business-plan guidance deck. Modernize
+  that guidance using the submissions in `biol_480-biotech/01-Sample_Executive_Summaries/`.
+
 - Preserve deliberate text color, ALL CAPS, underline, bold, and italics during conversion and
   LLM rewriting. These can carry teaching meaning; review formatting as well as the words.
 

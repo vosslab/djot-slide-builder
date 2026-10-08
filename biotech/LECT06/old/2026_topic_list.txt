@@ -1,0 +1,33 @@
+1	gene mining
+2	microbe profiling
+3	culture enrichment
+4	hydrocarbon rem.
+5	chemical spill rem.
+6	pesticide rem.
+7	nuclear rem.
+8	heavy metal rem.
+9	forever chem. rem.
+10	fuel cells
+11	greenhouse gas rem.
+12	plastic enzymes
+13	rare earth mining
+14	starch fuel
+15	cellulose fuel
+16	biodiesel
+17	algae diesel
+18	xDNA/XNA
+19	artificial cells
+20	synth. chloroplasts
+21	minimal genome
+22	glucose meters
+23	other biosensors
+24	Agrobacterium
+25	gene guns
+26	plant transgenes
+27	monocultures
+28	GMO plants + nature
+29	glyphosate
+30	brainbow
+31	GMO mosquito
+32	trendy mice
+33	GMO animals

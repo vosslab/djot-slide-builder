@@ -7,6 +7,11 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+- Biotechnology Lecture 06 uses four canonical Djot decks. Keep the science deck as C and
+  name business-plan guidance D to distinguish the two legacy C filenames. Use historical
+  executive summaries as writing case studies, with current syllabus/Blackboard requirements
+  authoritative for assignments. Sample claims are not validated scientific results.
+
 - Resolve imported text formatting through frame, paragraph, and span context, retaining explicit
   normal/none resets. Preserve italic runs and source uppercase/lowercase transformations without
   changing the case of unrelated scientific symbols. Inline Djot colors may use validated six-digit
