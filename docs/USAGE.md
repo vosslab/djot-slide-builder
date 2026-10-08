@@ -58,6 +58,11 @@ The same selector builds the Biotechnology lecture folder:
 once: `odp` writes the editable format, `pdf` writes native ODP plus its LibreOffice-derived PDF,
 and `all` writes both. Outputs are written below `output/odp/` and `output/pdf/`.
 
+Large decks can use a master `.djot` containing ordered `include: chapter.djot` lines.
+Edit each chapter separately and build the master for one combined ODP/PDF. Folder builds and lint
+select that master once, and errors retain the chapter filename and line. See
+[chapter includes](DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes) for paths and theme inheritance.
+
 A slide marked `hidden: true` stays in the Djot source and is written with native hidden page-style
 metadata in ODP; LibreOffice PDF export and classroom playback omit it. Capacity inspection and lint
 include hidden slides and their assets. Remove that line or use `hidden: false` to show it. See

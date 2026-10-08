@@ -121,6 +121,7 @@ or invoking LibreOffice, then reports the same source-located capacity diagnosti
 | `slide_lib/importers/djot_emitter.py` | Escaping and atomic component-to-Djot projection | Source-located Djot components |
 | `slide_lib/importers/import_report.py` | Lossless normalized-region and note diagnostics | JSON-ready migration evidence |
 | `slide_lib/djot_parser.py` | Extended-Djot framing, slots, actions, and block assembly | Typed slide model |
+| `slide_lib/djot_sources.py` | Ordered chapter includes, local paths, shared theme, and master discovery | Physical source files with provenance |
 | `slide_lib/djot_grammar.py` | Exact directive and action spellings derived from the layout registry | Shared Djot contract |
 | `slide_lib/djot_lint.py` | Strict-tool invocation and source-only Djot semantics | Source diagnostics |
 | `slide_lib/layout_registry.py` | Names, slots, topology, and LibreOffice classifier policies | `LayoutContract` |

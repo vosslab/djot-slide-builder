@@ -1,0 +1,1315 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Chapter 15: Plants and cell labeling
+
+=== layout: one-panel
+
+# Topic 24: Agrobacterium
+
+@body
+
+- Agrobacterium transfers DNA into plants. Molecular biologists borrowed the delivery system.
+- Plant wound signals can activate bacterial virulence functions that help transfer *T-DNA*.
+- Engineered vectors keep the transfer machinery while replacing tumor-causing functions with useful cargo.
+- Transferring DNA, integrating it, and regenerating a plant are separate steps.
+
+@notes
+
+2026 topic 24; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 67.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.aphis.usda.gov/biotechnology
+https://www.aphis.usda.gov/vacatur-2020-regulations
+
+=== layout: section
+
+# 24. Transgenic Plants
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 64.
+2026 topic 24: Agrobacterium. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 24. Transgenic Plants
+
+@body
+
+![Slide image 61](assets/lect06c-set_4_tp_chapter_12_16_material/image_061.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 65.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 24: Agrobacterium. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 24. Introducing genes into plants
+
+@left
+
+## Agrobacterium
+
+- Transfer engineered T-DNA into plant cells.
+- Ti-plasmid-based systems in culture
+- Floral dip in suitable species
+
+@right
+
+## Particle bombardment
+
+- Deliver DNA on small particles.
+- Often uses gold particles
+- Accelerated into plant tissue
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 66.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 24: Agrobacterium. Original content retained and regrouped.
+
+=== layout: four-panels
+
+# 24. Deliver, select, regenerate, check
+
+@top-left
+
+## Deliver
+
+T-DNA border sequences define the transferred region. Vir proteins support the transfer.
+
+@top-right
+
+## Select
+
+A selectable marker helps recover transformed cells. Selection does not prove every detail of the insertion.
+
+@bottom-left
+
+## Regenerate
+
+Grow a plant from suitable tissue, or use a method such as floral dip in a suitable species.
+
+@bottom-right
+
+## Check
+
+Confirm the insertion, expression, inheritance, and intended trait.
+
+@notes
+
+2026 topic 24; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 67.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.aphis.usda.gov/biotechnology
+https://www.aphis.usda.gov/vacatur-2020-regulations
+
+=== layout: one-panel
+
+# 24. What did we put in the T-DNA?
+
+@body
+
+- Draw the border sequences, gene of interest, promoter, and selectable marker. Where are the vir genes?
+- Compare a constitutive promoter with an inducible promoter. When would you want each?
+- How does floral dip simplify transformation in Arabidopsis? Why does it not solve transformation for every crop?
+- What tests distinguish transformed cells from escapes? For approval questions, specify the country, organism, trait, and current regulatory process.
+
+@notes
+
+2026 topic 24; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 67.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.aphis.usda.gov/biotechnology
+https://www.aphis.usda.gov/vacatur-2020-regulations
+
+=== layout: one-panel
+
+# Topic 25: Gene guns
+
+@body
+
+- Another way past a plant cell wall: shoot DNA-coated particles into the tissue.
+- *Particle bombardment* commonly uses microscopic gold or tungsten particles carrying DNA.
+- Some delivered DNA is expressed transiently. Some may integrate; many treated cells never become transformed plants.
+- The particle delivers the DNA. It does not choose a precise insertion site.
+
+@notes
+
+2026 topic 25; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 69.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.aphis.usda.gov/vacatur-2020-regulations
+https://www.aphis.usda.gov/am-i-regulated
+
+=== layout: one-panel
+
+# 25. Methods for introducing genes into plant cells
+
+@body
+
+- Two lesser known methods\:
+  - #3 Protoplast system – remove the cell wall, add DNA, regenerate plant cells
+  - #4 Electroporation – an electrical field is applied to increase membrane permeability and allow DNA to be introduced into the cell.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 67.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 25: gene guns. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 25. Two delivery methods
+
+@left
+
+## Agrobacterium
+
+- Uses biological DNA transfer.
+- Depends on compatible tissue and transformation conditions.
+- Still requires selection and verification.
+
+@right
+
+## Particle bombardment
+
+- Delivers material physically.
+- Can target different tissues or organelles.
+- Tissue damage and insertion complexity can matter.
+
+@notes
+
+2026 topic 25; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 69.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.aphis.usda.gov/vacatur-2020-regulations
+https://www.aphis.usda.gov/am-i-regulated
+
+=== layout: one-panel
+
+# 25. Delivery is not the whole experiment
+
+@body
+
+- How is the plant tissue prepared, and how are DNA-coated particles made? What happens after delivery?
+- Compare equipment cost, labor, efficiency, copy number, and unintended insertions with Agrobacterium.
+- Which other organisms have been transformed this way? What is different when targeting a chloroplast?
+- A gene gun is not a universal pass around regulation. APHIS returned to earlier processes after the 2024 court decision; check the particular organism and current rules.
+
+@notes
+
+2026 topic 25; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 69.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.aphis.usda.gov/vacatur-2020-regulations
+https://www.aphis.usda.gov/am-i-regulated
+
+=== layout: one-panel
+
+# Topic 26: Plant transgenes
+
+@body
+
+- What problem are we trying to solve for the plant, the farmer, or the person eating it?
+- A transgene can change resistance, metabolism, nutrition, or a regulatory pathway.
+- One promising result in a growth chamber does not establish field performance.
+- Follow the chain: gene, protein, cellular effect, plant trait, and useful outcome.
+
+@notes
+
+2026 topic 26; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 71.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
+
+=== layout: section
+
+# 26. Vaccines
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 61.
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 26. Vaccines
+
+@body
+
+- How are vaccines traditionally made?
+- Can foods be used as an edible vaccine?
+  - If so, how can this be done?
+  - What are the challenges?
+- What are the major vaccines available today?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 62.
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 26. Food-delivered vaccines: questions to test
+
+@body
+
+- Could a food deliver a consistent antigen dose?
+- Would the antigen remain active through storage and digestion?
+- What immune response would be needed?
+- How would safety and effectiveness be evaluated?
+- Which practical advantages are targets rather than demonstrated results?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 63.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 26. Applications of Genetic Engineering
+
+@body
+
+- Describe some specific applications of genetic engineering in plant agriculture.
+- Explain Bt, glyphosate, and DroughtGard.
+- You are presenting a biotechnology lecture to the public. How would you answer a challenge question about genetic modification?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 69.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 26. Transgenic Plant Genes
+
+@body
+
+- Cry1Ab (Insect resistance - lepidopteran)/PAT (phosphinothricin-N-acetyltransferase) (herbicide tolerance - glufosinate)
+- dmEPSPS (5-enolpyruvylshikimate-3-phosphate (EPSP) synthase) (herbicide tolerance – glyphosate)
+- Vip3A (Insect resistance – lepidopteran)
+- mCry3A (Insect resistance – root worm)
+- eCry3.1Ab (Insect resistance – root worm)
+- alpha amylase (dry grind ethanol production)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 70.
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: one-plus-two-panels
+
+# 26. Vitamin A deficiency
+
+@left
+
+- Vitamin A supports vision, growth, and immune function.
+- Deficiency can cause serious eye damage.
+- Young children and pregnant women are vulnerable.
+- A staple food alone may not provide a balanced diet.
+
+@top-right
+
+![Slide image 71](assets/lect06c-set_4_tp_chapter_12_16_material/image_071.png)
+
+@bottom-right
+
+![Slide image 72](assets/lect06c-set_4_tp_chapter_12_16_material/image_072.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 99.
+The original undated population estimate is omitted. This slide introduces the nutritional
+problem; it does not claim that Golden Rice alone solves deficiency.
+https://ods.od.nih.gov/factsheets/VitaminA-Consumer/
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 26. Golden Rice
+
+@left
+
+![Golden and white rice](assets/lect06c-set_4_tp_chapter_12_16_material/image_073.png)
+
+@right
+
+- Engineered enzymes enable beta-carotene production in the grain.
+- Beta-carotene is a precursor of vitamin A.
+- The goal is to help address vitamin A deficiency.
+- Evaluate nutritional evidence separately from market availability.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 100.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+https://www.fda.gov/media/113374/download
+2026 topic 26: plant transgenes. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 26. A gene name is a starting point
+
+@body
+
+| Example | Proposed biological effect |
+| --- | --- |
+| Bt Cry proteins | Insect control through susceptible insect gut biology |
+| DREB1A | Regulation of stress-response genes |
+| AVP1 | Vacuolar proton-pumping pyrophosphatase function |
+| HSPs and HsfA1 | Protein protection and heat-response regulation |
+
+@notes
+
+2026 topic 26; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 71.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
+
+=== layout: one-panel
+
+# 26. Will the trait work in a field?
+
+@body
+
+- How are Bt Cry proteins processed and activated in susceptible insects? Which crop, protein, and pest are involved?
+- For DREB1A, AVP1, or heat-response genes, compare tested crops, expression patterns, and stress conditions.
+- Does increased tolerance cost growth or yield when the stress is absent?
+- Compare laboratory, greenhouse, and multi-season field results. What happens when drought, heat, and pests occur together?
+
+@notes
+
+2026 topic 26; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 71.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
+
+=== layout: one-panel
+
+# 26. Could corn fix its own nitrogen?
+
+@body
+
+- What would a cereal need besides a nitrogenase gene?
+- Consider the nitrogenase components, metal cofactors, electron supply, ATP demand, and oxygen sensitivity.
+- Compare moving microbial nif genes into plant cells with improving the plant's partnership with nitrogen-fixing microbes.
+- How many genes are required in the particular strategy? Explain the system instead of quoting one universal number.
+
+@notes
+
+2026 topic 26; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 71.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
+
+=== layout: one-panel
+
+# Topic 27: Monocultures
+
+@body
+
+- A field can be genetically uniform whether or not its crop was genetically engineered.
+- Uniformity makes production predictable. It can also give a pathogen a lot of similar hosts.
+- *Monoculture* describes a cropping system; *clonal propagation* describes reproduction.
+- What matters is the diversity of resistance in the crop and the pathogen population around it.
+
+@notes
+
+2026 topic 27; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 73.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41467-017-01670-6
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12392930/
+
+=== layout: section
+
+# 27. Changing inherited traits
+
+## Breeding and genetic engineering
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 88.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 27: monocultures. Original content retained and regrouped.
+
+=== layout: section
+
+# 27. Traditional breeding
+
+## Selecting inherited variation
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 89.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 27: monocultures. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 66](assets/lect06c-set_4_tp_chapter_12_16_material/image_066.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 90.
+2026 topic 27: monocultures. Original content retained and regrouped.
+
+=== layout: section
+
+# 27. Mutation breeding
+
+## Creating variation, then selecting
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 91.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 27: monocultures. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 27. Mutation breeding
+
+@left
+
+- X-rays, gamma rays, or chemicals can create mutations.
+- Breeders screen many plants for useful traits.
+- The source example is a low-seeded mandarin.
+- Mutations change DNA; this is not change "without genetics."
+
+@right
+
+![Mandarin breeding comparison](assets/lect06c-set_4_tp_chapter_12_16_material/image_067.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 92.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 27: monocultures. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 27. Papaya and bananas
+
+@left
+
+## Hawaiian papaya
+
+- Ringspot virus threatened production.
+- Rainbow papaya carries virus-derived resistance.
+- Who developed it, and how was resistance tested?
+
+@right
+
+## Export bananas
+
+- Panama disease devastated Gros Michel production.
+- Cavendish replaced it in much of the export trade.
+- TR4 exposes a new vulnerability.
+
+@notes
+
+2026 topic 27; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 73.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41467-017-01670-6
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12392930/
+
+=== layout: one-panel
+
+# 27. Will we still have bananas in 50 years?
+
+@body
+
+- What made Gros Michel and Cavendish useful export cultivars? How does clonal propagation affect their diversity?
+- Compare the original Panama-disease problem with Tropical Race 4. Which varieties are susceptible?
+- Transgenic Cavendish field trials provide one approach to resistance. How would you compare it with breeding and crop diversity?
+- Will one resistant variety solve the problem forever? What should growers monitor next?
+
+@notes
+
+2026 topic 27; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 73.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41467-017-01670-6
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12392930/
+
+=== layout: one-panel
+
+# 27. Heirloom, hybrid, or transgenic?
+
+@body
+
+- Compare yield, flavor, disease resistance, and stability in a specific environment.
+- When might an heirloom outperform a modern hybrid or a transgenic line?
+- How could rotation, intercropping, cultivar mixtures, or resistant varieties reduce risk in corn, wheat, rice, or bananas?
+- Keep the breeding method, the genotype, and the farming practice separate when explaining the outcome.
+
+@notes
+
+2026 topic 27; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 73.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41467-017-01670-6
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12392930/
+
+=== layout: one-panel
+
+# Topic 28: GMO plants + nature
+
+@body
+
+- Nature keeps evolving after a crop is released.
+- An engineered trait can move through reproduction with a compatible plant.
+- Weeds and insects can also evolve resistance under repeated selection without acquiring a crop transgene.
+- Gene flow and resistance evolution are related management problems, but they are different mechanisms.
+
+@notes
+
+2026 topic 28; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 75.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+
+=== layout: section
+
+# 28. GMO Controversy
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 68.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: section
+
+# 28. GMO Survey
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 78.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: multiple-choice
+
+@question
+
+What is the reason farmers cultivate GMO crops?
+
+- A. Increase yields
+- B. Decrease pesticide input costs
+- C. Save management time
+- D. All of the above
+
+@answer
+
+[Answer\: D]{color=red}
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 79.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 28. Which examples involve genetic engineering?
+
+@body
+
+| Consider the product | Explain your reasoning |
+| --- | --- |
+| Beef, pork, chicken, dairy milk | Animal genotype or animal feed? |
+| Veggie burgers, soy milk, tofu, corn | Which ingredients and varieties? |
+| Papaya, zucchini, tomato, salmon | Which product, country, and date? |
+| Watermelon, blueberries, oranges | Breeding method or engineered trait? |
+| Insulin | Food product or manufactured medicine? |
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 80.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 28. Check product, variety, country, and date
+
+@body
+
+| Example | Check the method |
+| --- | --- |
+| Milk from a cow fed GM corn | GM feed does not genetically engineer the cow. |
+| Tofu or a veggie burger | Identify the soybean variety and other ingredients. |
+| Papaya, squash, or apples | Engineered varieties exist; the food name alone is insufficient. |
+| A new trait from selective breeding | A changed trait does not by itself establish genetic engineering. |
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 81.
+2026 topic 28: GMO plants + nature. Replaces the legacy category-wide color answer key with worked method checks; the preceding slide retains the original food-category questions.
+FDA plant-variety and food/feed explanations checked October 8, 2026.
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-animal-food-and-beyond
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+
+=== layout: multiple-choice
+
+@question
+
+- Are evaluated GM plant foods more likely to cause allergies?
+
+@answer
+
+No greater allergy risk was found in evaluated foods.
+
+Each new product still needs assessment.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 82.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+https://www.fda.gov/media/135280/download
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: multiple-choice
+
+@question
+
+- Does eating marketed GM food inherently increase cancer risk?
+
+@answer
+
+No general increase in cancer risk is supported.
+
+Assess the specific food and evidence.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 83.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+https://www.fda.gov/media/135280/download
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: multiple-choice
+
+@question
+
+- Can an engineered trait spread by crossing with a compatible plant?
+
+@answer
+
+Yes, when plants are reproductively compatible.
+
+The setting affects gene flow through pollen.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 84.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: multiple-choice
+
+@question
+
+- Does eating a GM plant normally insert its engineered gene into an animal genome?
+
+@answer
+
+No, under normal conditions.
+
+Eating DNA differs from genetic engineering.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 85.
+https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: multiple-choice
+
+@question
+
+- Does engineering a trait by itself determine crop biodiversity?
+
+@answer
+
+No. Crop varieties and farming practices also matter.
+
+Evaluate the specific trait and farming system.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 86.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 28. Evaluate the trait and its use
+
+@body
+
+- Food safety: evaluate the specific product and new proteins.
+- Gene flow: consider compatible relatives and exposure.
+- Biodiversity: examine crop varieties and management.
+- Water and herbicides: compare the actual farming systems.
+- A single yes/no label cannot answer every question.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 87.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+@replaceme
+
+# 28. Dr. Voss on GMO’s
+
+@body
+
+- It is [corporate greed]{color=red}, not the underlying genetic engineering technology, that is [negatively impacting]{color=red} the food industry.
+  - Whole Foods and Jewel are battling for your \$\$\$
+- I appreciate organic food contribution to agriculture, but if you seriously look at it, organic farming is just unable to meet the production needs of a [growing world population]{color=red}.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 93.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+REVIEW: historical scientific, numerical, opinion, or market-status claims need instructor review before use. See LECT06_REVIEW.md.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 28. Questions about agricultural consequences
+
+@body
+
+- Can the trait move into compatible crops or wild relatives?
+- Does management rely heavily on one herbicide?
+- How much genetic diversity is grown?
+- What are the consequences for pests, disease, and resistance?
+- Compare specific farming systems rather than all GM crops together.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 94.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: stacked-panels
+
+# 28. Herbicide tolerance: same trait, same method?
+
+@top
+
+| Named example | Herbicide tolerance | How it was obtained |
+| --- | --- | --- |
+| LibertyLink canola | Glufosinate | Genetic engineering; a transgenic crop |
+| Clearfield sunflower X81359 | Imidazolinones | Wild-sunflower tolerance introduced by conventional breeding |
+
+@bottom
+
+- Herbicide tolerance alone does not tell you how a plant was made.
+- Would selection for resistant weeds depend on that label?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 95.
+2026 topic 28: GMO plants + nature. Preserves the source's question about herbicide tolerance across breeding methods and its weed-resistance discussion.
+Corrects the Reddit-derived claim: LibertyLink is genetically engineered. The cited Clearfield sunflower is imidazolinone tolerant, not glyphosate tolerant; its tolerance came from wild Helianthus annuus through conventional breeding.
+BASF and Canadian Food Inspection Agency sources checked October 8, 2026.
+https://www.basf.com/au/en/media/news-releases/anz/2021/10/new-libertylink-gives-australian-canola-growers-added-in-crop-fl
+https://inspection.canada.ca/en/plant-varieties/plants-novel-traits/approved-under-review/decision-documents/dd2005-50
+Original discussion lead: https://www.reddit.com/r/askscience/comments/62e54o/
+
+=== layout: section
+
+# 28. Can you name a few good things about GMOs?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 96.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 28. GMO Insulin Saves Lives
+
+@body
+
+![Slide image 68](assets/lect06c-set_4_tp_chapter_12_16_material/image_068.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 97.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: image-comparison
+
+# 28. Mass-produced insulin
+
+@top-left
+
+![Insulin production by recombinant bacteria](assets/lect06c-set_4_tp_chapter_12_16_material/image_069.png)
+
+@top-right
+
+![Manufactured insulin package](assets/lect06c-set_4_tp_chapter_12_16_material/image_070.png)
+
+@bottom-left
+
+Engineered cells produce the protein.
+
+@bottom-right
+
+Purification and formulation produce the medicine.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 98.
+<number>
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 28: GMO plants + nature. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 28. What changed, and how?
+
+@body
+
+| Observation | Possible mechanism | What would you test? |
+| --- | --- | --- |
+| Trait in a compatible relative | Pollen-mediated gene flow | Parentage and the transgene |
+| Resistant weed | Selection on inherited variation | Target, transport, or other mechanism |
+| Bt-resistant insect | Selection in the pest population | Susceptibility and resistance genetics |
+
+@notes
+
+2026 topic 28; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 75.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+
+=== layout: one-panel
+
+# 28. Can we keep the trait where we want it?
+
+@body
+
+- What reduces crossing with compatible relatives: distance, flowering time, barriers, or reproductive controls?
+- What were proposed "terminator" systems intended to do? Distinguish seed sterility, pollen containment, and intellectual-property protection.
+- For ryegrass or horseweed, identify the resistance mechanism. Does herbicide resistance mean a new species has appeared?
+- What does the resistance cost when the herbicide is absent? How could management slow its spread?
+
+@notes
+
+2026 topic 28; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 75.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+
+=== layout: one-panel
+
+# 28. What about the insects we want?
+
+@body
+
+- How do Bt Cry proteins interact with susceptible insect guts, and why does the target species matter?
+- What evidence shows resistance in target pests? How do refuges and other management practices help?
+- Revisit monarch larvae, milkweed, and Bt corn pollen. Compare laboratory hazard with pollen exposure in an actual field.
+- Read Box 15.2. Pick one claim and explain the trait, exposure, comparison group, and evidence behind your conclusion.
+
+@notes
+
+2026 topic 28; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 75.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
+https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+
+=== layout: one-panel
+
+# Topic 29: Glyphosate
+
+@body
+
+- Glyphosate inhibits *EPSPS*, an enzyme in the shikimate pathway used to make aromatic amino acids.
+- A resistant crop can tolerate a treatment that damages susceptible weeds.
+- The herbicide, the resistant crop, and the whole farming system are three things to evaluate.
+- What did you think about glyphosate before reading? What evidence would change your mind?
+
+@notes
+
+2026 topic 29; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 77.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/
+https://www.efsa.europa.eu/en/news/glyphosate-no-critical-areas-concern-data-gaps-identified
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6187125/
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 62](assets/lect06c-set_4_tp_chapter_12_16_material/image_062.png)
+
+@bottom
+
+![Slide image 63](assets/lect06c-set_4_tp_chapter_12_16_material/image_063.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 71.
+REVIEW: historical scientific, numerical, opinion, or market-status claims need instructor review before use. See LECT06_REVIEW.md.
+2026 topic 29: glyphosate. Original content retained and regrouped.
+
+=== layout: two-plus-one-panels
+
+# 29. Glyphosate (Round Up)
+
+@top-left
+
+![Slide image 64](assets/lect06c-set_4_tp_chapter_12_16_material/image_064.png)
+
+@bottom-left
+
+- Herbicide used to kill weeds,
+  - especially those that compete with commercial crops
+  - Discovered by Monsanto chemist John E. Franz in 1970.
+
+@right
+
+![Slide image 65](assets/lect06c-set_4_tp_chapter_12_16_material/image_065.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 72.
+2026 topic 29: glyphosate. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 29. Glyphosate: what does the evidence answer?
+
+@left
+
+![Glyphosate structure](assets/lect06c-set_4_tp_chapter_12_16_material/image_064.png)
+
+@right
+
+- Are we testing glyphosate or a formulated product?
+- What dose, route, organism, and outcome?
+- Is the question about a hazard or risk at a stated exposure?
+- How broad a conclusion does that evidence support?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 73.
+2026 topic 29: glyphosate. Converts the source's broad risk assertions into explicit evidence questions. The later IARC/EFSA comparison supplies dated assessment examples; this slide does not claim a new risk verdict.
+IARC assessment scope checked October 8, 2026.
+https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/
+
+=== layout: two-panels
+
+# 29. Bees: headline versus experiment
+
+@left
+
+## The 2018 headline
+
+"Scientists Warn Common Weed Killer Glyphosate Is Killing Honey Bees"
+
+What result would justify that headline?
+
+@right
+
+## The paper's measurements
+
+- Gut bacteria after glyphosate exposure.
+- Survival after a bacterial challenge in a separate experiment.
+
+Does that establish colony collapse?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 74.
+2026 topic 29: glyphosate. Reconstructed from Motta, Raymann, and Moran (2018), including the supplementary methods, checked October 8, 2026.
+https://doi.org/10.1073/pnas.1803880115
+https://people.tamu.edu/~erick.motta/papers/motta2018pnas.pdf
+
+Retains the headline quoted in the original instructor slide. Headline wording is the discussion object, not the paper's conclusion.
+
+=== layout: one-panel
+
+# 29. Match the dose to the experiment
+
+@body
+
+| Bees / experiment | Glyphosate treatment | Endpoint |
+| --- | --- | --- |
+| Adult hive workers | 5 or 10 mg/L in food for 5 days | Gut microbiota before return and 3 days later |
+| Newly emerged; colonization | Two 5-microliter feeds of 1 mM, 2 days apart | Gut microbiota |
+| Newly emerged; pathogen challenge | 0.1 mM for 5 days | Survival after Serratia challenge |
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 75.
+2026 topic 29: glyphosate. Reconstructed from Motta, Raymann, and Moran (2018), including the supplementary methods, checked October 8, 2026.
+https://doi.org/10.1073/pnas.1803880115
+https://people.tamu.edu/~erick.motta/papers/motta2018pnas.pdf
+
+The original slide mixed the adult-worker protocol with the 1 mM hand-feeding experiment. See main Figure 1, main Figure 3, and SI Materials and Methods. Controls and microbiota conditions differ among these experiments.
+
+=== layout: two-panels
+
+# 29. Count the bees. Then make the claim.
+
+@left
+
+## Adult hive experiment
+
+- 600 bees per group returned to the hive.
+- Fewer than 20% recaptured in each group.
+- 15 per group assayed at each time point.
+
+The paper does not report "9 survivors out of 45."
+
+@right
+
+## What can we conclude?
+
+- Missing bees are not automatically dead bees.
+- How could recapture bias the sample?
+- Does mortality after Serratia challenge predict colony loss in the field?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 76.
+2026 topic 29: glyphosate. Reconstructed from Motta, Raymann, and Moran (2018), including the supplementary methods, checked October 8, 2026.
+https://doi.org/10.1073/pnas.1803880115
+https://people.tamu.edu/~erick.motta/papers/motta2018pnas.pdf
+
+Corrects the source's denominator: 45 is the assay sample across three groups at a time point, not the returned cohort. Recapture and survival are different endpoints.
+
+=== layout: one-panel
+@replaceme
+
+# 29. Dr. Voss on Glyphosate
+
+@body
+
+- I feel like I am a minority voice. But every year, there are dozens of studies that attempt to prove that Round-Up (glyphosate) is the devil.
+- So far there haven't been any major findings that it is as bad as the media portrays. At this point, I'm cynical, but I definitely support further research.
+- Generally, for industrial crops glyphosate is preferable to other more dangerous herbicides.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 77.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+REVIEW: historical scientific, numerical, opinion, or market-status claims need instructor review before use. See LECT06_REVIEW.md.
+2026 topic 29: glyphosate. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 29. Read what each assessment asks
+
+@left
+
+## IARC, 2015
+
+Classified glyphosate as probably carcinogenic to humans (Group 2A). This is a cancer-hazard evaluation.
+
+@right
+
+## EFSA, 2023
+
+Reported no critical areas of concern in its risk-assessment peer review, while identifying data gaps and unresolved issues.
+
+@notes
+
+2026 topic 29; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 77.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/
+https://www.efsa.europa.eu/en/news/glyphosate-no-critical-areas-concern-data-gaps-identified
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6187125/
+
+=== layout: one-panel
+
+# 29. Dose, exposure, and comparison
+
+@body
+
+- Compare the evidence each assessment uses and its scope. Hazard identification and risk under particular uses are not identical questions.
+- Which endpoint, dose, exposure route, and duration are being tested? There is no single number that means "toxic" for every situation.
+- Compare the active ingredient with a formulated product. What else is in the mixture?
+- For human and environmental findings, report the measured effect and uncertainty. A conclusion should be no broader than the study.
+
+@notes
+
+2026 topic 29; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 77.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/
+https://www.efsa.europa.eu/en/news/glyphosate-no-critical-areas-concern-data-gaps-identified
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6187125/
+
+=== layout: one-panel
+
+# 29. What would replace it?
+
+@body
+
+- Compare dicamba, 2,4-D, glufosinate, and imazamox. Include weed control, drift, resistance, worker exposure, and ecological effects.
+- Which crops carry glyphosate-resistance traits, and how does the particular trait work?
+- How do microbial glyphosate oxidoreductase and C-P lyase pathways transform glyphosate? What products remain?
+- Examine claims from manufacturers, campaigners, organic-food businesses, and news outlets by the same standard. Funding is relevant; it does not replace reading the data.
+
+@notes
+
+2026 topic 29; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 77.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/
+https://www.efsa.europa.eu/en/news/glyphosate-no-critical-areas-concern-data-gaps-identified
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6187125/
+
+=== layout: one-panel
+
+# Topic 30: Brainbow
+
+@body
+
+- How do you trace one neuron when it is tangled up with thousands of others?
+- Brainbow gives neighboring cells different combinations of fluorescent proteins.
+- *Cre recombinase* acts at compatible *lox* sites; the construct determines the possible DNA rearrangements.
+- The resulting color helps follow a cell and its processes. It is a label, not a direct reading of what the neuron is thinking.
+
+@notes
+
+2026 topic 30; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 79.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/nature06293
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3713494/
+
+=== layout: one-panel
+
+# 30. Cre/loxP and Brainbow
+
+@body
+
+- What is the purpose of the Cre/loxP system?
+- How does it work? (not in the book)
+- What is Brainbow?
+- How does Brainbow system use Cre/loxP?
+- What is Brainbow used for?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 108.
+2026 topic 30: brainbow. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 30. Brainbow 1.0
+
+@left
+
+![Slide image 77](assets/lect06c-set_4_tp_chapter_12_16_material/image_077.png)
+
+@right
+
+![Slide image 78](assets/lect06c-set_4_tp_chapter_12_16_material/image_078.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 109.
+2026 topic 30: brainbow. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 30. Brainbow 2.1
+
+@left
+
+![Slide image 79](assets/lect06c-set_4_tp_chapter_12_16_material/image_079.png)
+
+@right
+
+![Slide image 80](assets/lect06c-set_4_tp_chapter_12_16_material/image_080.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 110.
+2026 topic 30: brainbow. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 30. Rearrange DNA, change the color
+
+@left
+
+## Cre/loxP
+
+- Originates from bacteriophage P1.
+- Site orientation affects excision or inversion.
+- Engineered site combinations control which rearrangements occur.
+
+@right
+
+## Brainbow
+
+- Recombination changes fluorescent-protein expression.
+- Multiple copies produce color combinations.
+- Trace labeled structures through image stacks.
+
+@notes
+
+2026 topic 30; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 79.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/nature06293
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3713494/
+
+=== layout: one-panel
+
+# 30. Pretty pictures, useful experiments
+
+@body
+
+- What is the natural role of Cre/loxP? Draw how changing site orientation changes the outcome.
+- Compare Brainbow versions: labeling density, color balance, expression, and image analysis.
+- How do researchers segment cells, follow processes, and distinguish similar colors? What errors could create a false connection?
+- Find an example in neural-circuit mapping or developmental lineage tracing. What did the colors let researchers learn?
+
+@notes
+
+2026 topic 30; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 79.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/nature06293
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3713494/

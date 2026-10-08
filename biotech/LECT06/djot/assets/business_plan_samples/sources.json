@@ -1,0 +1,489 @@
+{
+  "source_directory": "/Users/vosslab/Documents/teaching/CLASS/biol_480-biotech/01-Sample_Executive_Summaries",
+  "method": "Direct PDF clipping and rasterization. No generated or retouched source imagery.",
+  "assets": [
+    {
+      "asset": "3dor_logo.png",
+      "source_pdf": "2015-3DOR_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.13,
+        0.075,
+        0.88,
+        0.485
+      ],
+      "crop_points": [
+        79.56,
+        59.4,
+        538.5600000000001,
+        384.12
+      ],
+      "dpi": 220,
+      "purpose": "Cover logo and product tagline",
+      "source_sha256": "26d3cf75c982bdae6285afcb1852dcb0e226da608dd1dc04b42b2704073325da",
+      "asset_sha256": "4fa63fea00f1201d1597e8808d19ea8fdcdc0e6528145503d79b9797a6583c4d"
+    },
+    {
+      "asset": "enterodetect_logo.png",
+      "source_pdf": "2016-EnteroDetect_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.31,
+        0.17,
+        0.72,
+        0.385
+      ],
+      "crop_points": [
+        189.72,
+        134.64000000000001,
+        440.64,
+        304.92
+      ],
+      "dpi": 220,
+      "purpose": "Cover logo",
+      "source_sha256": "1c8d294e41a8e3edc105b49611f947c3afb7178652557f211433e4b0fb6b10b1",
+      "asset_sha256": "6901ad3998c84be543e99021a6957b26b1f4b78abaf4aea01f32fa7db30b8bd5"
+    },
+    {
+      "asset": "biolights_logo.png",
+      "source_pdf": "2016-BioLights_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.28,
+        0.07,
+        0.67,
+        0.405
+      ],
+      "crop_points": [
+        171.36,
+        55.440000000000005,
+        410.04,
+        320.76000000000005
+      ],
+      "dpi": 220,
+      "purpose": "Cover bulb artwork and name",
+      "source_sha256": "a4c783907642878d62c42d5139630b18eb569c6bfacbadbbbfa082af1326cb00",
+      "asset_sha256": "acaf165d93b285d0717d125a7e5469817b23db26b16a184a313e294def30abb4"
+    },
+    {
+      "asset": "linkaments_logo.png",
+      "source_pdf": "2017-Linkaments_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.14,
+        0.3,
+        0.92,
+        0.515
+      ],
+      "crop_points": [
+        85.68,
+        237.6,
+        563.0400000000001,
+        407.88
+      ],
+      "dpi": 220,
+      "purpose": "Cover logo and tagline",
+      "source_sha256": "d73988ed2a97a5940e71d859b626220487e5cc0e7e3ab8d86a2be6a104944c73",
+      "asset_sha256": "e3df434951415e1b021eea99628ebd22d935127027f2ae8b660c484c381d4454"
+    },
+    {
+      "asset": "virona_logo.png",
+      "source_pdf": "2018-Virona_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.21,
+        0.1,
+        0.79,
+        0.229
+      ],
+      "crop_points": [
+        128.51999999999998,
+        79.2,
+        483.48,
+        181.368
+      ],
+      "dpi": 220,
+      "purpose": "Cover logo and Gene Therapies label",
+      "source_sha256": "7de2aef6fb0f419bed779d62db2c15afe741a8791f75f9d1e7b7be8812644e5a",
+      "asset_sha256": "87dd4eb431499ea4e24d634baa109489292a9c47b5e5ce23e562240f28e682cf"
+    },
+    {
+      "asset": "nifty_genes_logo.png",
+      "source_pdf": "2021-Nifty_Genes_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.2,
+        0.285,
+        0.82,
+        0.6
+      ],
+      "crop_points": [
+        122.4,
+        225.71999999999997,
+        501.84,
+        475.2
+      ],
+      "dpi": 220,
+      "purpose": "Cover DNA and crop branding",
+      "source_sha256": "aa3788fe902dccb531d597fa293319e7154b6a68d2f1f3318abcc1fc937d5003",
+      "asset_sha256": "cb791ba23c6edac382f62d56ef782e650c8c8cecdedb4a52565592269b558028"
+    },
+    {
+      "asset": "aquazyme_logo.png",
+      "source_pdf": "2020-Aquazyme_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.19,
+        0.13,
+        0.85,
+        0.405
+      ],
+      "crop_points": [
+        116.28,
+        102.96000000000001,
+        520.1999999999999,
+        320.76000000000005
+      ],
+      "dpi": 220,
+      "purpose": "Cover logo and tagline",
+      "source_sha256": "0d56b41ef63d22632c8cab9cab83ad9c7147c4f525709594a272007e4dbe843d",
+      "asset_sha256": "1c23241a35aefb255d4a693b40842dbf372f51acf6e92cc0bcdba86b323ddde8"
+    },
+    {
+      "asset": "minute_meat_cover.png",
+      "source_pdf": "2020-Minute_Meat_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0,
+        0,
+        1,
+        0.575
+      ],
+      "crop_points": [
+        0.0,
+        0.0,
+        612.0,
+        455.4
+      ],
+      "dpi": 220,
+      "purpose": "Upper cover: block geometry, color, company logo",
+      "source_sha256": "9a23cd92667f49adebf0087ea7ab51bb19ccb73e92d45c1ddfaa06a888a538b2",
+      "asset_sha256": "f574cbd7a244fa295d761c4e6dd766472ff91f91049d03c969423280a2ddb12a"
+    },
+    {
+      "asset": "hygienic_cover.png",
+      "source_pdf": "2015-HYGIENIC_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0,
+        0.08,
+        1,
+        0.91
+      ],
+      "crop_points": [
+        0.0,
+        63.36,
+        612.0,
+        720.72
+      ],
+      "dpi": 220,
+      "purpose": "Cover design: alignment, whitespace, material image",
+      "source_sha256": "825380472541df56beffa8f7b50ea9131c9f58eade4ca956e524a9cff8b5a3d9",
+      "asset_sha256": "5a869ec0fe647212246858cdcdbd2ae3126601cbb57b99af54171c58a3ff2402"
+    },
+    {
+      "asset": "minute_meat_contents.png",
+      "source_pdf": "2020-Minute_Meat_Executive_Summary.pdf",
+      "pdf_page": 1,
+      "crop_fraction": [
+        0.19,
+        0.705,
+        0.91,
+        0.92
+      ],
+      "crop_points": [
+        116.28,
+        558.36,
+        556.9200000000001,
+        728.64
+      ],
+      "dpi": 220,
+      "purpose": "Table of contents, excluding contact details",
+      "source_sha256": "9a23cd92667f49adebf0087ea7ab51bb19ccb73e92d45c1ddfaa06a888a538b2",
+      "asset_sha256": "9821989b3d4725b615fa8d5b1459288727bcec978f36ed025a14ccb294c1dcab"
+    },
+    {
+      "asset": "aquazyme_summary.png",
+      "source_pdf": "2020-Aquazyme_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.09,
+        0.09,
+        0.92,
+        0.91
+      ],
+      "crop_points": [
+        55.08,
+        71.28,
+        563.0400000000001,
+        720.72
+      ],
+      "dpi": 220,
+      "purpose": "Summary layout with four named sections",
+      "source_sha256": "0d56b41ef63d22632c8cab9cab83ad9c7147c4f525709594a272007e4dbe843d",
+      "asset_sha256": "ab208367eab40310ba83b7a45f69e8ca68e577283c76c6406b19dc0b9eb56dab"
+    },
+    {
+      "asset": "virona_summary.png",
+      "source_pdf": "2018-Virona_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.08,
+        0.065,
+        0.92,
+        0.925
+      ],
+      "crop_points": [
+        48.96,
+        51.480000000000004,
+        563.0400000000001,
+        732.6
+      ],
+      "dpi": 220,
+      "purpose": "Summary layout with two columns and numbered goals",
+      "source_sha256": "7de2aef6fb0f419bed779d62db2c15afe741a8791f75f9d1e7b7be8812644e5a",
+      "asset_sha256": "17c696c527474712ae4f995ab7d4844a24f3a976180a4da6ba7b615efb97419b"
+    },
+    {
+      "asset": "lac_locks_summary.png",
+      "source_pdf": "2021-Lac_Locks_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.075,
+        0.035,
+        0.965,
+        0.955
+      ],
+      "crop_points": [
+        45.9,
+        27.720000000000002,
+        590.5799999999999,
+        756.36
+      ],
+      "dpi": 220,
+      "purpose": "Dark summary page for contrast discussion",
+      "source_sha256": "0ea78ca976f9c40687f257d52ee22adce4bb3f4f35fb24c9bdd4acf843edc8dc",
+      "asset_sha256": "f2da5925ed9d64209a247f0c532ebfd416cdcf437adf7429422ac740d056285b"
+    },
+    {
+      "asset": "aquazyme_headings.png",
+      "source_pdf": "2020-Aquazyme_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.11,
+        0.105,
+        0.9,
+        0.318
+      ],
+      "crop_points": [
+        67.32000000000001,
+        83.16,
+        550.8000000000001,
+        251.856
+      ],
+      "dpi": 220,
+      "purpose": "Executive Summary, Problem, and Background headings",
+      "source_sha256": "0d56b41ef63d22632c8cab9cab83ad9c7147c4f525709594a272007e4dbe843d",
+      "asset_sha256": "421c36008251a2647c4143cfda5da6ed6932d508395a7d97f95a161d83583074"
+    },
+    {
+      "asset": "enterodetect_bottleneck.png",
+      "source_pdf": "2016-EnteroDetect_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.09,
+        0.318,
+        0.92,
+        0.535
+      ],
+      "crop_points": [
+        55.08,
+        251.856,
+        563.0400000000001,
+        423.72
+      ],
+      "dpi": 220,
+      "purpose": "Paragraph identifying cost, labor, and off-site testing delay",
+      "source_sha256": "1c8d294e41a8e3edc105b49611f947c3afb7178652557f211433e4b0fb6b10b1",
+      "asset_sha256": "0c5eec82ba02895e93b9e1d9680c5cc3b4fbdc586681f8e8abd96d9be414a6d1"
+    },
+    {
+      "asset": "enterodetect_food.png",
+      "source_pdf": "2016-EnteroDetect_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.52,
+        0.595,
+        0.995,
+        0.819
+      ],
+      "crop_points": [
+        318.24,
+        471.23999999999995,
+        608.9399999999999,
+        648.6479999999999
+      ],
+      "dpi": 220,
+      "purpose": "Food-service photograph used in the summary",
+      "source_sha256": "1c8d294e41a8e3edc105b49611f947c3afb7178652557f211433e4b0fb6b10b1",
+      "asset_sha256": "b709b10c6a0784d9aa0c8d1efa99cfb353abd7aa7d02430ddd02627ace7d9e49"
+    },
+    {
+      "asset": "alcaid_pathway.png",
+      "source_pdf": "2016-alcAID_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.525,
+        0.368,
+        0.925,
+        0.518
+      ],
+      "crop_points": [
+        321.3,
+        291.456,
+        566.1,
+        410.25600000000003
+      ],
+      "dpi": 220,
+      "purpose": "Original ethanol metabolism diagram",
+      "source_sha256": "5855213d39589e1d350330c620aed0e995b2b4e6443899996ab6c951887bcc3e",
+      "asset_sha256": "53dceaa63ababe153cf5e907bfbad8b695056771e0faa21c7ca2cfb2a1702fc3"
+    },
+    {
+      "asset": "biolights_products.png",
+      "source_pdf": "2016-BioLights_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.11,
+        0.594,
+        0.91,
+        0.693
+      ],
+      "crop_points": [
+        67.32000000000001,
+        470.448,
+        556.9200000000001,
+        548.856
+      ],
+      "dpi": 220,
+      "purpose": "Excerpt listing possible lighting products",
+      "source_sha256": "a4c783907642878d62c42d5139630b18eb569c6bfacbadbbbfa082af1326cb00",
+      "asset_sha256": "15a7967ea638fadd103a3c01681f47ad5792fbf542d09ebb955469d60ac9268b"
+    },
+    {
+      "asset": "chronic_competition.png",
+      "source_pdf": "2015-Chronic_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.077,
+        0.772,
+        0.932,
+        0.934
+      ],
+      "crop_points": [
+        47.124,
+        611.424,
+        570.384,
+        739.7280000000001
+      ],
+      "dpi": 220,
+      "purpose": "Final paragraph claiming no direct competitors and listing alternatives",
+      "source_sha256": "2073c9c60596767dd2a5a2bf9745d6acf852b7f4357ddb32e78e4a49fae4cd23",
+      "asset_sha256": "2618980d8c29fabb1b2026f36ef1423ee4e5bfd42c9e270470556018eeefac71"
+    },
+    {
+      "asset": "aquazyme_market.png",
+      "source_pdf": "2020-Aquazyme_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.11,
+        0.75,
+        0.9,
+        0.911
+      ],
+      "crop_points": [
+        67.32000000000001,
+        594.0,
+        550.8000000000001,
+        721.5120000000001
+      ],
+      "dpi": 220,
+      "purpose": "Market paragraph for cost-boundary critique",
+      "source_sha256": "0d56b41ef63d22632c8cab9cab83ad9c7147c4f525709594a272007e4dbe843d",
+      "asset_sha256": "5b559ef3ce8b70bb6ae913b1c726d74108031146bf8444fa5dd333952ad581af"
+    },
+    {
+      "asset": "stem_send_finances.png",
+      "source_pdf": "2015-Stem_Send_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.11,
+        0.65,
+        0.895,
+        0.768
+      ],
+      "crop_points": [
+        67.32000000000001,
+        514.8000000000001,
+        547.74,
+        608.256
+      ],
+      "dpi": 220,
+      "purpose": "Financial paragraph; management names above are excluded",
+      "source_sha256": "31579155890e8db0b9ddaee1fea384c630681fd715690b09a13e618e9617c5b3",
+      "asset_sha256": "adf44773e4cfd1a6cc1429a880df7a72a477c3f95f97621628ca7a207df34183"
+    },
+    {
+      "asset": "virona_milestones.png",
+      "source_pdf": "2018-Virona_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.51,
+        0.353,
+        0.915,
+        0.558
+      ],
+      "crop_points": [
+        312.12,
+        279.57599999999996,
+        559.98,
+        441.93600000000004
+      ],
+      "dpi": 220,
+      "purpose": "Four numbered project goals",
+      "source_sha256": "7de2aef6fb0f419bed779d62db2c15afe741a8791f75f9d1e7b7be8812644e5a",
+      "asset_sha256": "c3501b0a5138b769da09a895e32b299743ab647f657cd37fe7954c9eb0ae39d9"
+    },
+    {
+      "asset": "enterodetect_citation.png",
+      "source_pdf": "2016-EnteroDetect_Executive_Summary.pdf",
+      "pdf_page": 2,
+      "crop_fraction": [
+        0.09,
+        0.397,
+        0.92,
+        0.535
+      ],
+      "crop_points": [
+        55.08,
+        314.42400000000004,
+        563.0400000000001,
+        423.72
+      ],
+      "dpi": 220,
+      "purpose": "Claim excerpt including reference marker 13",
+      "source_sha256": "1c8d294e41a8e3edc105b49611f947c3afb7178652557f211433e4b0fb6b10b1",
+      "asset_sha256": "2e7ffe0eb5b710537a8e8042b0241e62ef7fa347ac9ce7ece09a7ffd795f5d57"
+    }
+  ]
+}

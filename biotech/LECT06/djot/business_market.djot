@@ -1,0 +1,253 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Who buys it, and why?
+
+@notes
+Prior Lecture 06D teaching sequence, slide 18: Who buys it, and why?.
+
+=== layout: two-panels
+
+# The user and the customer may differ
+
+@left
+
+## User or beneficiary
+
+- Patient receiving a treatment
+- Technician running a test
+- Community benefiting from cleaner water
+
+@right
+
+## Possible customer
+
+- Hospital or payer
+- Testing laboratory or food producer
+- Water utility or site owner
+
+@notes
+
+These are possibilities to investigate, not validated customers for a particular proposal.
+Ask who approves a purchase and which budget would pay for it.
+Prior Lecture 06D teaching sequence, slide 19: The user and the customer may differ.
+
+=== layout: two-panels
+
+# Who pays to find the contamination?
+
+@left
+
+![Food-service photograph used in the summary](assets/business_plan_samples/enterodetect_food.png)
+
+@right
+
+## EnteroDetect sample
+
+- The diner benefits.
+- A technician might run the test.
+- Who approves the purchase?
+- Which budget pays for it?
+
+@notes
+
+Use the actual food-service photograph from the supplied summary as the setting.
+Distinguish beneficiary, user, and payer; these are roles to investigate, not validated customers.
+The preceding slide retains the patient/hospital, technician/laboratory, and community/utility examples.
+Source screenshot: 2016-EnteroDetect_Executive_Summary.pdf, PDF page 2; asset enterodetect_food.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# Pick one place to start
+
+@right
+
+![Cover bulb artwork and name](assets/business_plan_samples/biolights_logo.png)
+
+@left
+
+## Your first market
+
+- One product. One customer.
+- Where does it fit?
+- Why would they switch?
+- What supports your estimates?
+- What comes later?
+
+@notes
+
+Preserves the initial-market, workflow, switching, evidence, and later-expansion guidance.
+BioLights lists several future lighting products; HYGIENIC lists many surfaces. A focused first product is easier to evaluate.
+Source screenshot: 2016-BioLights_Executive_Summary.pdf, PDF page 1; asset biolights_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+Prior Lecture 06D teaching sequence, slide 20: Choose one starting market.
+
+=== layout: big-image
+
+@image
+
+![Excerpt listing possible lighting products](assets/business_plan_samples/biolights_products.png)
+
+@caption
+
+Pick ONE first product. *BioLights excerpt.*
+
+@notes
+
+Ask students to choose between a billboard, porch light, nightlight, or another listed product.
+Compare customer, brightness, maintenance, lifetime, and cost. A list of uses is not a commercialization strategy.
+Source screenshot: 2016-BioLights_Executive_Summary.pdf, PDF page 2; asset biolights_products.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# Competition includes the current solution
+
+@left
+
+## Direct alternative
+
+Another product using a similar approach for the same customer.
+
+@right
+
+## Indirect alternative
+
+A different way to meet the need, including the customer's current practice.
+
+@notes
+
+BioLights discusses other biotechnology lighting companies but discounts conventional
+lighting. Ask which alternatives the customer would actually compare at purchase time.
+A different technology or country does not automatically remove competition.
+Prior Lecture 06D teaching sequence, slide 21: Competition includes the current solution.
+
+=== layout: big-image
+
+@image
+
+![Final paragraph claiming no direct competitors and listing alternatives](assets/business_plan_samples/chronic_competition.png)
+
+@caption
+
+No competitors? Read the list. *Chronic excerpt.*
+
+@notes
+
+Ask: what can the customer already do? A different mechanism can still compete for the same purchase.
+The filename is dated 2015, while the cover says October 2020; do not infer assignment year from the filename.
+Focus on the competition argument, not medical evaluation of the listed treatments.
+Source screenshot: 2015-Chronic_Executive_Summary.pdf, PDF page 2; asset chronic_competition.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: one-panel
+
+# Compare on the customer's terms
+
+@body
+
+| Option | Performance | Total cost | Practical limit |
+| --- | --- | --- | --- |
+| Current practice | Cite a result | State the unit | Identify the burden |
+| Named competitor | Cite a result | Use the same unit | Explain the tradeoff |
+| Your proposal | State a target | Label the estimate | Name the untested step |
+
+@notes
+
+Fill this table with researched information. Empty template cells are prompts, not facts.
+Use comparable conditions, dates, units, and customer groups.
+Avoid calling a proposed target a measured advantage.
+Prior Lecture 06D teaching sequence, slide 22: Compare on the customer's terms.
+
+=== layout: big-image
+
+@image
+
+![Market paragraph for cost-boundary critique](assets/business_plan_samples/aquazyme_market.png)
+
+@caption
+
+Which cost are we counting? *Aquazyme excerpt.*
+
+@notes
+
+The sample compares ocean-cleanup spending with the cost of genetically modifying a microbe.
+Keep the original paragraph visible. Ask what is missing from the cost of delivering and operating a complete service.
+The numbers are historical student estimates, not current prices or verified cleanup costs.
+Source screenshot: 2020-Aquazyme_Executive_Summary.pdf, PDF page 2; asset aquazyme_market.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# Big problem. Big sales?
+
+@left
+
+![Cover logo and tagline](assets/business_plan_samples/aquazyme_logo.png)
+
+@right
+
+## Follow the money
+
+- Who pays for the service?
+- What does delivery and operation cost?
+- What supports performance at that scale?
+- Which costs grow with the amount treated?
+
+@notes
+
+Preserves the distinction between a one-time laboratory input and the complete service cost.
+The preceding original paragraph makes the mismatch visible.
+Source screenshot: 2020-Aquazyme_Executive_Summary.pdf, PDF page 1; asset aquazyme_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+Prior Lecture 06D teaching sequence, slide 23: Large problem does not equal large sales.
+
+=== layout: big-image
+
+@image
+
+![Financial paragraph; management names above are excluded](assets/business_plan_samples/stem_send_finances.png)
+
+@caption
+
+Sales = profit? Find the costs. *Stem Send excerpt.*
+
+@notes
+
+The sample forecasts one million dollars in sales and also one million dollars in profit while listing costs.
+Ask whether timing or categories reconcile these statements. Demand an explicit model rather than assuming a correction.
+The next table is a separate, invented classroom scenario; its values do not repair or validate this proposal.
+Source screenshot: 2015-Stem_Send_Executive_Summary.pdf, PDF page 2; asset stem_send_finances.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: one-panel
+
+# Show the arithmetic and assumptions
+
+@body
+
+| Illustrative monthly scenario (USD) | Calculation | Result |
+| --- | --- | --- |
+| Revenue | 10 customers x 20 units x 50 | 10,000 |
+| Variable production costs | 200 units x 30 | 6,000 |
+| Remaining before other costs | 10,000 - 6,000 | 4,000 |
+| Other operating costs | Assumed for this exercise | 7,000 |
+| Operating result | 4,000 - 7,000 | -3,000 |
+
+@notes
+
+All numbers are invented for classroom arithmetic, not a forecast or investment advice.
+Revenue is not profit. This simplified example excludes tax, financing, and capital costs.
+The Stem Send sample motivates checking consistency among revenue, expenses, and profit.
+Ask what changes if only five customers buy the same quantity.
+Prior Lecture 06D teaching sequence, slide 24: Show the arithmetic and assumptions.
+

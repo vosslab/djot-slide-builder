@@ -3,9 +3,56 @@
 The revised [business-plan deck](lect06d-business_plan.djot) uses recurring writing patterns
 in 31 PDFs from `~/Documents/teaching/CLASS/biol_480-biotech/01-Sample_Executive_Summaries/`.
 All summaries were read using extracted text and page-two OCR where embedded fonts produced
-damaged text. Selected Aquazyme, Nifty Genes, and Virona pages were also inspected as images.
+damaged text. The visual revision also inspects the first two pages of all 31 PDFs as images,
+then enlarges selected pages and crops from 13 submissions.
 This is an instructional review of the provided excerpts, not a grade or a scientific
 validation of those proposals. Company names identify examples; student names are omitted.
+
+## Visual teaching revision
+
+D now has 57 slides: 16 additional visual examples, six visual revisions of existing teaching
+slides, and 35 retained slides. All eight native tables remain. The questions use the instructor's
+direct style: "What would make you believe it?", "Name the hard step", and "Big problem. Big sales?"
+Images provide evidence to discuss; they do not replace the editable teaching guidance.
+
+| D pages | Source examples | Teaching purpose |
+| --- | --- | --- |
+| 2, 6 | Six company logos; 3DOR cover art | Recognize the company, then ask what its product must demonstrate. |
+| 10, 45 | Minute Meat contents and cover; HYGIENIC cover | Find the full-plan sections; compare hierarchy, alignment, and whitespace. |
+| 13-16 | Aquazyme headings/page/logo; Virona page; EnteroDetect paragraph | Give paragraphs a job and narrow a broad problem to a specific product. |
+| 18 | alcAID pathway diagram | Connect the biological mechanism to the proposed product's delivery problem. |
+| 19-20 | Nifty Genes logo and editable original quotation | Identify the missing evidence between having genes and a working crop. |
+| 26-28 | EnteroDetect photograph; BioLights logo and product list | Distinguish user and payer; choose one first product. |
+| 30 | Chronic competition paragraph | Compare "no competitors" with the alternatives listed in the same paragraph. |
+| 32-34 | Aquazyme market paragraph; Stem Send financial paragraph | Examine cost boundaries and the relationship between sales, costs, and profit. |
+| 37 | Virona numbered goals | Turn an activity or promise into a measurable milestone. |
+| 46, 48 | Linkaments logo; EnteroDetect reference marker 13 | Make identity readable and check the source beside a claim. |
+| 50 | Aquazyme and Lac Locks summary pages | Compare page design at screen and print scale. |
+
+The 23 source PNGs have 30 placements in the deck. Each comes directly from a supplied PDF;
+the [asset manifest](assets/business_plan_samples/sources.json) records its filename, page,
+crop bounds, resolution, purpose, and source/asset hashes. Cover crops exclude student names
+and contact details. Speaker notes identify each sample and the question it supports.
+The Nifty Genes paragraph is transcribed as editable text, with its PDF page recorded in notes.
+
+Full-page views demonstrate document structure; enlarged excerpts provide the reading examples.
+Source wording and artwork remain intact, including weaknesses being discussed. Native text,
+tables, and two outline annotations remain editable. These are historical student proposals;
+the screenshots do not establish scientific outcomes, current prices, or assignment requirements.
+
+## Editing the sections
+
+Build [the master](lect06d-business_plan.djot) to produce one combined deck. Edit these included
+files directly; there is no second monolithic copy to synchronize.
+
+| Included file | D pages |
+| --- | --- |
+| [Opening](business_opening.djot) | 1-10 |
+| [Executive-summary writing](business_summary_writing.djot) | 11-23 |
+| [Market and customer](business_market.djot) | 24-35 |
+| [Milestones and funding](business_milestones.djot) | 36-43 |
+| [Document design and revision](business_document_design.djot) | 44-54 |
+| [Closing](business_closing.djot) | 55-57 |
 
 ## Patterns that changed the guidance
 
@@ -50,8 +97,9 @@ can see why revenue differs from profit.
 
 ## Reviewed corpus
 
-Names below are the filename company labels, grouped by year. The originals remain in the
-user's sample folder; complete sample pages are not republished in the lecture deck.
+Names below are company labels grouped by the year in each filename. These are not necessarily
+submission dates: the Chronic filename says 2015, but its cover says October 2020. Originals
+remain in the user's sample folder; selected page views and crops are included in the deck.
 
 - 2015 (5): 3DOR; Chronic; HYGIENIC; NonDK; Stem Send.
 - 2016 (5): alcAID; BioLights; EnteroDetect; FluCream; iC.
@@ -65,3 +113,13 @@ The common cover/summary/reference structure is useful evidence of historical pr
 Some excerpts have an extra page or a table of contents pointing to a longer group plan.
 Those differences do not override the current individual submission instructions in B or the
 current group requirements. Recheck old facts and citations before reusing any sample claim.
+
+## Validation
+
+Strict native Djot lint, capacity checking, and the ODP/PDF build pass. The final output has
+57 ODP slides and 57 PDF pages, 57 notes pages, and eight native tables. All 41 prior teaching
+positions remain represented, and all 31 source PDFs retain their original hashes. The visual
+review covers all slides, with enlarged checks for excerpts, annotations, and revised layouts.
+Captions were shortened after rendered inspection caught overflow; cropped text and logos were
+checked for fragments of adjacent content. Local evidence, the prior-to-current slide map,
+and the artifact receipt are in `output/biotech_lect06_review/business_visuals/`.

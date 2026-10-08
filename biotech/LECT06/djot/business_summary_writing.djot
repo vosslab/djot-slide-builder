@@ -1,0 +1,302 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Write the one-page argument
+
+@notes
+Prior Lecture 06D teaching sequence, slide 9: Write the one-page argument.
+
+=== layout: one-panel
+
+# Give each paragraph a job
+
+@body
+
+| Paragraph | Main job |
+| --- | --- |
+| Problem | Identify who needs help and why |
+| Science and product | Explain what you will make and how it works |
+| Market and competition | Name the customer and a reason to switch |
+| Next step | State the key milestone and remaining uncertainty |
+
+@notes
+
+This is a writing scaffold, not a new required paragraph count or rubric.
+The summary must stand alone even when the full plan contains much more detail.
+Write the full argument first, then compress it without removing the mechanism.
+Prior Lecture 06D teaching sequence, slide 10: Give each paragraph a job.
+
+=== layout: big-image
+
+@image
+
+![Executive Summary, Problem, and Background headings](assets/business_plan_samples/aquazyme_headings.png)
+
+{color=red}
+outline: 0 15 21 12
+
+{color=red}
+outline: 0 85 28 13
+
+@caption
+
+Find the problem quickly. *Aquazyme sample.*
+
+@notes
+
+Look at the heading hierarchy, left alignment, and space between sections. Borrow those design choices.
+The environmental numbers and scientific claims still require checking; this is a formatting example.
+Source screenshot: 2020-Aquazyme_Executive_Summary.pdf, PDF page 2; asset aquazyme_headings.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: image-comparison
+
+# Two student pages. Where would you start?
+
+@top-left
+
+![Summary layout with four named sections](assets/business_plan_samples/aquazyme_summary.png)
+
+@top-right
+
+![Summary layout with two columns and numbered goals](assets/business_plan_samples/virona_summary.png)
+
+@bottom-left
+
+*Aquazyme*: named sections.
+
+@bottom-right
+
+*Virona*: columns and numbered goals.
+
+@notes
+
+These page views are for comparing structure, not reading every word on Zoom.
+Keep the useful moves from the earlier guidance: EnteroDetect starts from a testing problem; Aquazyme has clear headings; Virona exposes successive tests.
+Ask where the mechanism, customer, and next step belong. The following crops enlarge actual wording.
+Source screenshot: 2020-Aquazyme_Executive_Summary.pdf, PDF page 2; asset aquazyme_summary.png.
+Source screenshot: 2018-Virona_Executive_Summary.pdf, PDF page 2; asset virona_summary.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+Prior Lecture 06D teaching sequence, slide 11: Keep the useful parts of past samples.
+
+=== layout: big-image
+
+@image
+
+![Paragraph identifying cost, labor, and off-site testing delay](assets/business_plan_samples/enterodetect_bottleneck.png)
+
+@caption
+
+What slows the test? *EnteroDetect excerpt.*
+
+@notes
+
+The paragraph gives the reader costs, labor, and delay to investigate. Ask which one matters to a specific customer.
+Its list of methods and performance claims are historical proposal text, not a verified comparison of current food tests.
+Source screenshot: 2016-EnteroDetect_Executive_Summary.pdf, PDF page 2; asset enterodetect_bottleneck.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# A big problem. What is your first product?
+
+@left
+
+![Cover logo and tagline](assets/business_plan_samples/aquazyme_logo.png)
+
+@right
+
+## Narrow the question
+
+- Which plastic?
+- In which waste stream?
+- Who has the problem?
+- Who would pay to solve it?
+
+@notes
+
+Preserves the broad-versus-specific problem revision. "Plastic pollution harms the entire planet" is too broad to identify a first product.
+Choose a material, setting, and purchase decision; do not invent a validated customer.
+Source screenshot: 2020-Aquazyme_Executive_Summary.pdf, PDF page 1; asset aquazyme_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+Prior Lecture 06D teaching sequence, slide 12: Start with the problem you can address.
+
+=== layout: four-panels
+
+# Make the biological mechanism visible
+
+@top-left
+
+## 1. Biological component
+
+Which organism, cell, gene, protein, or pathway?
+
+@top-right
+
+## 2. Intervention
+
+What will you change, produce, deliver, or measure?
+
+@bottom-left
+
+## 3. Product action
+
+How does that change address the stated problem?
+
+@bottom-right
+
+## 4. Evidence
+
+Which result supports this step? What remains unknown?
+
+@notes
+
+Have students sketch arrows linking the four boxes for their own proposal.
+This replaces lists of impressive techniques with a causal explanation.
+Prior Lecture 06D teaching sequence, slide 13: Make the biological mechanism visible.
+
+=== layout: two-panels
+
+# A pathway picture helps. What is still missing?
+
+@right
+
+![Original ethanol metabolism diagram](assets/business_plan_samples/alcaid_pathway.png)
+
+Ethanol -> acetaldehyde -> acetate.
+
+@left
+
+## alcAID sample
+
+- Which enzymes are doing the work?
+- Where must they function?
+- How would the proposed product get them there?
+
+@notes
+
+The sample includes a real pathway diagram, a useful visual move.
+A diagram of metabolism does not establish that the proposed swallowed-enzyme product works.
+Keep the causal chain from the preceding four-panel slide: biological component, intervention, product action, evidence.
+Source screenshot: 2016-alcAID_Executive_Summary.pdf, PDF page 2; asset alcaid_pathway.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# Name the hard step
+
+@left
+
+![Cover DNA and crop branding](assets/business_plan_samples/nifty_genes_logo.png)
+
+@right
+
+## nif genes and nitrogenase
+
+- Where must the enzyme function?
+- What evidence supports activity in the intended crop?
+- Which result would justify the next step?
+
+@notes
+
+The original Nifty Genes example names nif genes and nitrogenase. That specificity gives the reader something to investigate.
+Preserve that strength while testing the jump from adding genes to eliminating fertilizer use.
+Source screenshot: 2021-Nifty_Genes_Executive_Summary.pdf, PDF page 1; asset nifty_genes_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+Prior Lecture 06D teaching sequence, slide 14: Name the hard step.
+
+=== layout: two-panels
+
+# Where does this paragraph make a leap?
+
+@left
+
+## Nifty Genes: original wording
+
+"The crop now has the genes necessary to produce nitrogenases and will be able to fix nitrogen from the atmosphere where it is abundantly available and therefore eliminate the need for synthetic nitrogen obtained through fertilizer."
+
+@right
+
+![Cover DNA and crop branding](assets/business_plan_samples/nifty_genes_logo.png)
+
+Having the genes -> a working crop?
+
+*What evidence belongs between those steps?*
+
+@notes
+
+Quotation transcribed visually from 2021-Nifty_Genes_Executive_Summary.pdf, PDF page 2, third paragraph.
+The original wording remains editable Djot text. Ask students to identify the missing evidence; do not endorse the proposed result.
+Source screenshot: 2021-Nifty_Genes_Executive_Summary.pdf, PDF page 1; asset nifty_genes_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: one-panel
+
+# Separate three kinds of statements
+
+@body
+
+| Status | Useful wording |
+| --- | --- |
+| Published finding | A cited study demonstrated X in this model. |
+| Company proposal | We propose to use X for this specific product. |
+| Development target | Our next test would measure Y against this comparator. |
+
+@notes
+
+Several organ-printing samples describe a fully functional transplantable organ and
+the elimination of rejection as accomplished facts. These are proposal claims.
+The distinction also applies to claimed funding, contracts, patents, and approvals.
+Prior Lecture 06D teaching sequence, slide 15: Separate three kinds of statements.
+
+=== layout: two-panels
+
+# Turn confidence into a testable claim
+
+@left
+
+## Weak claim
+
+Our product is completely safe and has no competitors.
+
+@right
+
+## Useful revision
+
+We aim to improve a defined outcome compared with a named alternative.
+
+The plan identifies the evidence still needed to assess performance and risk.
+
+@notes
+
+Synthetic example, not a quotation from one student. Motivated by recurrent claims in
+the Chronic, FluCream, PurePod, organ-printing, and Lac Locks samples.
+Enthusiasm should come from specificity and a plausible next step.
+Prior Lecture 06D teaching sequence, slide 16: Turn confidence into a testable claim.
+
+=== layout: one-panel
+
+# Keep the biology central
+
+@body
+
+- Explain what the biological component actually does.
+- A device, app, natural extract, or familiar drug needs a clear course-fit argument.
+- Name the molecular or cellular biotechnology that makes your product possible.
+- Use feedback to refine the proposal before polishing its branding.
+
+@notes
+
+Compare the An Eye on Health and ChildBirth Pain Receptor samples with current course
+requirements. A historical sample is not automatic evidence that a new topic fits.
+Assess the proposed mechanism, not merely the category or product name.
+Prior Lecture 06D teaching sequence, slide 17: Keep the biology central.
+

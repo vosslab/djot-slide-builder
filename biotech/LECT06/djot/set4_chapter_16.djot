@@ -1,0 +1,592 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Chapter 16: Transgenic animals
+
+=== layout: one-panel
+
+# Topic 31: GMO mosquito
+
+@body
+
+- If we change mosquitoes, can we reduce the diseases they transmit?
+- Anopheles transmit malaria parasites; Aedes species transmit several important arboviruses.
+- Some approaches suppress the mosquito population. Others reduce pathogen transmission.
+- Self-limiting transgenes, Wolbachia, and gene drives work differently. Keep them separate.
+
+@notes
+
+2026 topic 31; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 83.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1056/NEJMoa2030243
+https://www.nature.com/articles/nbt.4245
+
+=== layout: one-panel
+
+# 31. GM Mosquitos
+
+@body
+
+- Talk about GM mosquitos and their role with malaria and Zika virus.
+- How do we prevent the GM mosquitos from spreading?
+- What types of GM mosquitos have been released in the world to date?
+- What is the future of GM mosquitos hold?
+- Do mosquitos have any ecological importances?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 101.
+2026 topic 31: GMO mosquito. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 31. Gene drive: a 2018 cage experiment
+
+@left
+
+- A gene drive targeted the doublesex gene.
+- Females with two disrupted copies had altered development and were sterile.
+- This was a contained laboratory study.
+
+[Kyrou et al., 2018](https://www.nature.com/articles/nbt.4245)
+
+@right
+
+![Male and female mosquito phenotypes](assets/lect06c-set_4_tp_chapter_12_16_material/image_074.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 102.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 31: GMO mosquito. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 31. Gene drive spread and cage suppression
+
+@left
+
+![Drive frequency and egg production by generation](assets/lect06c-set_4_tp_chapter_12_16_material/image_075.png)
+
+@right
+
+- Each cage began with 300 wild-type females, 150 wild-type males, and 150 GM males.
+- Drive prevalence reached 100% in generations 7 and 11.
+- Egg production collapsed in generations 8 and 12.
+- Compare the two trajectories; the next slide enlarges them.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 103.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 31: GMO mosquito. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 31. Dead mosquitos...
+
+@body
+
+![Slide image 76](assets/lect06c-set_4_tp_chapter_12_16_material/image_076.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 104.
+2026 topic 31: GMO mosquito. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 31. What would justify leaving the cage?
+
+@left
+
+## Ghana: learn the ecology
+
+- University of Ghana researchers study mosquito behavior and ecological relationships.
+- Which organisms interact with the target mosquito?
+- What should we measure before changing its population?
+
+@right
+
+## Uganda: contained research
+
+- The January 2026 report describes studies of a male-bias strain without gene drive.
+- Its import/contained-use authorization excludes environmental release.
+- What additional evidence would a field study need?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 105.
+2026 topic 31: GMO mosquito. Retains the original Oxford-led ecology discussion and distinguishes ecological baseline work from genetic-control experiments.
+Target Malaria Ghana page and January 2026 Uganda factsheet checked October 8, 2026. The original 2029 deployment prediction is retained as historical context only; no replacement deployment deadline is asserted.
+https://targetmalaria.org/about-us/where-we-operate/ghana/
+https://targetmalaria.org/media/fact-sheets/target-malaria-uganda/
+
+=== layout: one-panel
+
+# 31. What happens when a vector population falls?
+
+@body
+
+- Which predators and competitors use the species?
+- Could another vector fill the same niche?
+- How would effects on disease transmission be measured?
+- What monitoring would detect unintended consequences?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 106.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 31: GMO mosquito. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 31. Gene drive and malaria
+
+@body
+
+- Vox Observatory: "The bold plan to end malaria with gene drive"
+- [Watch the original video](https://youtu.be/P0HPHUzsHbI)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 107.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 31: GMO mosquito. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 31. Three different strategies
+
+@body
+
+| Strategy | What happens? | Key distinction |
+| --- | --- | --- |
+| Self-limiting transgene | Released males pass a harmful trait | Usually requires continued releases |
+| Wolbachia | A bacterial symbiont changes reproduction or transmission | Not insertion of a mosquito transgene |
+| Gene drive | Biased inheritance can spread an alteration | Potential persistence and spread |
+
+@notes
+
+2026 topic 31; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 83.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1056/NEJMoa2030243
+https://www.nature.com/articles/nbt.4245
+
+=== layout: one-panel
+
+# 31. Which mosquito, which construct?
+
+@body
+
+- Compare OX513A with OX5034: tetracycline-repressible systems and the offspring affected are not identical.
+- Find the exact construct, release dates, controls, and outcomes for Grand Cayman, Brazil, and Florida. Do not transfer results between trials.
+- How does Wolbachia block dengue transmission or produce incompatible matings? Compare population replacement with suppression.
+- A 2021 dengue trial measured human disease outcomes. Why is that a different endpoint from counting fewer mosquitoes?
+
+@notes
+
+2026 topic 31; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 83.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1056/NEJMoa2030243
+https://www.nature.com/articles/nbt.4245
+
+=== layout: one-panel
+
+# 31. A gene drive still has to face evolution
+
+@body
+
+- How does a CRISPR homing drive bias inheritance? When can resistant alleles prevent further cutting?
+- Compare split drives, threshold-dependent approaches, and proposed reversal drives. What would limit spread, and what still needs testing?
+- The 2018 cage study in the original slides is not a field-release result. What changes in a wild population?
+- How do national regulation, community participation, and monitoring differ among Wolbachia, self-limiting transgenes, and gene drives?
+
+@notes
+
+2026 topic 31; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 83.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1056/NEJMoa2030243
+https://www.nature.com/articles/nbt.4245
+
+=== layout: one-panel
+
+# 31. What if the mosquitoes disappear?
+
+@body
+
+- What did the DDT campaigns accomplish initially, and how did resistance change the outcome?
+- Which animals eat the target mosquito species? Which plants use it as a pollinator?
+- Can predators switch prey? Could another vector fill the same habitat? Look for quantitative field evidence.
+- How would you distinguish fewer vectors, less pathogen transmission, and fewer human cases?
+
+@notes
+
+2026 topic 31; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 83.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1056/NEJMoa2030243
+https://www.nature.com/articles/nbt.4245
+
+=== layout: one-panel
+
+# Topic 32: Trendy mice
+
+@body
+
+- Marathon mouse. Mighty mouse. Fierce mouse. Smart mouse. Which one is your favorite?
+- Each nickname points to an experiment involving a particular gene and a particular set of measurements.
+- An impressive trait may come with other changes we did not ask for.
+- Before applying the result to people, ask what the experiment actually showed in mice.
+
+@notes
+
+2026 topic 32; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 85.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1371/journal.pbio.0020294
+https://doi.org/10.1038/387083a0
+https://doi.org/10.1038/45432
+
+=== layout: one-panel
+
+# 32. Trendy Transgenic Mice
+
+@body
+
+![Slide image 81](assets/lect06c-set_4_tp_chapter_12_16_material/image_081.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 111.
+2026 topic 32: trendy mice. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 32. Trendy transgenic mice
+
+@left
+
+- *Marathon Mouse* – can run about 1800 meters, has enhanced PPAR-delta gene
+- *Mighty Mouse* – was engineered to lack myostatin, a protein that slows muscle growth.
+- *Fierce Mouse* – has both copies of the NR2E1 gene deleted and shows abnormal aggression
+- *Smart Mouse* – improved learning and memory, extra copies of the NR2B gene
+
+@right
+
+![Slide image 82](assets/lect06c-set_4_tp_chapter_12_16_material/image_082.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 112.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 32: trendy mice. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 32. Transgenic mice as research models
+
+@body
+
+- Alter genes to investigate their biological functions.
+- Compare the resulting traits with appropriate controls.
+- One classical method injects DNA into a fertilized egg nucleus.
+- The original "52 disease genes" count is a historical example, not a current inventory.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 113.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 32: trendy mice. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 32. From a nickname to a mechanism
+
+@body
+
+| Mouse | What to investigate |
+| --- | --- |
+| Marathon | PPAR-delta and muscle metabolism |
+| Mighty | Myostatin and regulation of muscle growth |
+| Fierce | NR2E1 loss and altered development/behavior |
+| Smart | NR2B and NMDA-receptor-dependent learning assays |
+
+@notes
+
+2026 topic 32; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 85.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1371/journal.pbio.0020294
+https://doi.org/10.1038/387083a0
+https://doi.org/10.1038/45432
+
+=== layout: one-panel
+
+# 32. Would it work in a person?
+
+@body
+
+- Which modification would you choose, if any? Explain its mechanism and possible costs.
+- Does more muscle mean better endurance? Does success on a learning test mean greater intelligence in every situation?
+- What would change when the alteration is made in an adult rather than during development?
+- When should sports organizations test or regulate genetic enhancement? Use the biology to explain the practical and ethical problems.
+
+@notes
+
+2026 topic 32; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 85.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1371/journal.pbio.0020294
+https://doi.org/10.1038/387083a0
+https://doi.org/10.1038/45432
+
+=== layout: one-panel
+
+# 32. Gattaca is a discussion, not a prediction
+
+@body
+
+- What would you modify about yourself? What evidence would you need before making that choice?
+- Compare editing one disease-causing variant with trying to improve a complex trait.
+- How could pleiotropy, genetic background, and environment change the outcome?
+- What distinguishes a somatic treatment from a heritable change? Who else could be affected by the decision?
+
+@notes
+
+2026 topic 32; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 85.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1371/journal.pbio.0020294
+https://doi.org/10.1038/387083a0
+https://doi.org/10.1038/45432
+
+=== layout: one-panel
+
+# Topic 33: GMO animals
+
+@body
+
+- What would make an engineered animal useful: faster growth, disease resistance, a product, or a research tool?
+- An animal can carry a transgene or a targeted edit. Selective breeding is another way to change inherited traits.
+- Food animals, ornamental animals, and animals producing medicines have different intended uses.
+- An approval announcement does not tell you what is for sale at your grocery store.
+
+@notes
+
+2026 topic 33; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 87.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/animal-veterinary/biotechnology-products-cvm-animals-and-animal-food/intentional-genomic-alterations-igas-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/qa-consumers-intentional-genomic-alterations-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas
+
+=== layout: one-panel
+
+# 33. Applications of GM animals
+
+@body
+
+- Describe some specific applications of genetic engineering in animals.
+- Are there any transgenic animal products available in the grocery store for purchase today?
+- Are there any transgenic animal products coming soon? (use internet)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 114.
+2026 topic 33: GMO animals. Original content retained and regrouped.
+
+=== layout: one-plus-two-panels
+
+# 33. Green fluorescent protein (GFP)
+
+@left
+
+![GFP absorbs excitation light and emits green light](assets/lect06c-set_4_tp_chapter_12_16_material/image_083.png)
+
+@top-right
+
+- Jellyfish protein used as a reporter
+- Emits [green fluorescence]{color=green}
+- 2008 Nobel Prize in Chemistry
+
+@bottom-right
+
+![Jellyfish source of GFP](assets/lect06c-set_4_tp_chapter_12_16_material/image_084.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 115.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 33: GMO animals. Original content retained and regrouped.
+
+=== layout: image-comparison
+
+# 33. Expression of genes from other species
+
+@top-left
+
+![Tobacco expressing a firefly gene](assets/lect06c-set_4_tp_chapter_12_16_material/image_085.png)
+
+@top-right
+
+![Pig expressing a jellyfish gene](assets/lect06c-set_4_tp_chapter_12_16_material/image_086.jpg)
+
+@bottom-left
+
+Tobacco expressing a firefly gene: bioluminescence.
+
+@bottom-right
+
+Pig expressing a jellyfish gene: fluorescence.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 116.
+Figure 17.6 Expression of genes from different species
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 33: GMO animals. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 87](assets/lect06c-set_4_tp_chapter_12_16_material/image_087.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 117.
+2026 topic 33: GMO animals. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 33. GloFish
+
+@left
+
+![Slide image 88](assets/lect06c-set_4_tp_chapter_12_16_material/image_088.png)
+
+@right
+
+![Slide image 89](assets/lect06c-set_4_tp_chapter_12_16_material/image_089.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 118.
+2026 topic 33: GMO animals. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 33. GMO salmon: approval and a business
+
+@left
+
+![AquAdvantage salmon comparison from the original lecture](assets/lect06c-set_4_tp_chapter_12_16_material/image_090.png)
+
+@right
+
+- 2015: FDA approved AquAdvantage salmon.
+- AquaBounty's 2025 annual report records the sale of its Canadian farms and salmon IP in March 2025.
+- That report lists no operating salmon farms for AquaBounty.
+- Does regulatory approval tell you who is producing or selling the fish today?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 119.
+2026 topic 33: GMO animals. FDA's approval record and AquaBounty's 2025 Form 10-K (filed 2026) checked October 8, 2026. The company-specific report does not establish current production by purchasers of its assets.
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/aquadvantage-salmon
+https://www.sec.gov/Archives/edgar/data/1603978/000160397826000029/aqb-20251231x10k.htm
+Original historical claims retained for provenance: AquaBounty had sold 4.5 tons in Canada after a 25-year wait; AgGenetics was a Nashville cattle-engineering startup described as nowhere near product release. These undated statements are not used as current market status. The later cattle comparison uses named FDA records instead.
+
+=== layout: one-plus-two-panels
+
+# 33. Modern Turkeys
+
+@left
+
+- Modern commercial turkey is a triumph of [*selective breeding*]{underline=true} over the limitations imposed by physiology
+- Desire for gigantic turkey breasts leads to impotence
+  - The giant breasts we enjoy are too large to allow a male to effectively mount a hen.
+
+@top-right
+
+![Slide image 91](assets/lect06c-set_4_tp_chapter_12_16_material/image_091.png)
+
+@bottom-right
+
+![Slide image 92](assets/lect06c-set_4_tp_chapter_12_16_material/image_092.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 120.
+2026 topic 33: GMO animals. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 33. Match the animal to the job
+
+@body
+
+| Example | Trait or intended use |
+| --- | --- |
+| AquAdvantage salmon | Engineered growth regulation |
+| GloFish | Fluorescent ornamental fish |
+| Enviropig | Phytase expression to improve phosphorus use |
+| Hornless cattle | An inherited hornless trait introduced by editing |
+| Spider-silk goats | Production of a recombinant material in milk |
+
+@notes
+
+2026 topic 33; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 87.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/animal-veterinary/biotechnology-products-cvm-animals-and-animal-food/intentional-genomic-alterations-igas-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/qa-consumers-intentional-genomic-alterations-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas
+
+=== layout: one-panel
+
+# 33. Can you actually buy it?
+
+@body
+
+- Tell the story of GM salmon: development, regulatory review, production, and sales. Put dates on each step.
+- For a current availability claim, name the product, country, seller, and date checked.
+- FDA lists GalSafe pigs as an approved alteration; PRLR-SLICK cattle underwent risk review in 2022, with a 2025 supplement. These are different review pathways.
+- For each non-food example, distinguish a research demonstration from an ongoing commercial product.
+
+@notes
+
+2026 topic 33; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 87.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/animal-veterinary/biotechnology-products-cvm-animals-and-animal-food/intentional-genomic-alterations-igas-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/qa-consumers-intentional-genomic-alterations-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas
+
+=== layout: one-panel
+
+# 33. Which animal would you redesign?
+
+@body
+
+- Choose one specific problem and explain the proposed genetic change.
+- What result would show benefit to the animal, farmer, consumer, or environment?
+- What could go wrong with health, welfare, inheritance, or escape?
+- Could conventional breeding or a change in husbandry solve the same problem? Compare the alternatives fairly.
+
+@notes
+
+2026 topic 33; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 87.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/animal-veterinary/biotechnology-products-cvm-animals-and-animal-food/intentional-genomic-alterations-igas-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/qa-consumers-intentional-genomic-alterations-animals
+https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas
+

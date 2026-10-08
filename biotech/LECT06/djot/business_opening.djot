@@ -1,0 +1,211 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 06D
+
+## Biotechnology: Business Plans
+## Dr. Neil Voss
+## Oct 8, 2026
+
+@notes
+
+Adapted from lect06c-business_plan.odp, including its original credit to Elaine Allen.
+Modernized using the 2015-2021 sample executive summaries and Fall 2026 project requirements.
+Sample company claims are historical student proposals, not validated scientific results.
+Prior Lecture 06D teaching sequence, slide 1: Lecture 06D.
+
+=== layout: six-panels
+
+# Nice logo. What does the company do?
+
+@top-left
+
+![Cover logo and product tagline](assets/business_plan_samples/3dor_logo.png)
+
+@top-center
+
+![Cover logo](assets/business_plan_samples/enterodetect_logo.png)
+
+@top-right
+
+![Cover bulb artwork and name](assets/business_plan_samples/biolights_logo.png)
+
+@bottom-left
+
+![Cover logo and tagline](assets/business_plan_samples/linkaments_logo.png)
+
+@bottom-center
+
+![Cover logo and Gene Therapies label](assets/business_plan_samples/virona_logo.png)
+
+@bottom-right
+
+![Cover DNA and crop branding](assets/business_plan_samples/nifty_genes_logo.png)
+
+@notes
+
+Opening prompt: pick one logo. What product do you expect? What biology would have to work?
+These are logos from the supplied student plans. Use the company names throughout the lecture; omit student identities.
+Source screenshot: 2015-3DOR_Executive_Summary.pdf, PDF page 1; asset 3dor_logo.png.
+Source screenshot: 2016-EnteroDetect_Executive_Summary.pdf, PDF page 1; asset enterodetect_logo.png.
+Source screenshot: 2016-BioLights_Executive_Summary.pdf, PDF page 1; asset biolights_logo.png.
+Source screenshot: 2017-Linkaments_Executive_Summary.pdf, PDF page 1; asset linkaments_logo.png.
+Source screenshot: 2018-Virona_Executive_Summary.pdf, PDF page 1; asset virona_logo.png.
+Source screenshot: 2021-Nifty_Genes_Executive_Summary.pdf, PDF page 1; asset nifty_genes_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Connect a specific problem, biological mechanism, and product.
+- Distinguish published evidence from a proposed result.
+- Identify the customer, alternatives, and next milestone.
+- Build a readable executive summary and a complete business plan.
+
+@notes
+Prior Lecture 06D teaching sequence, slide 2: Learning objectives.
+
+=== layout: two-panels
+
+# Four terms for your plan
+
+@left
+
+## Customer and value
+
+- [*Customer*]{underline=true}: the person or organization that pays.
+- [*Value proposition*]{underline=true}: why that customer would choose your product.
+
+@right
+
+## Evidence and progress
+
+- [*Milestone*]{underline=true}: a measurable result that supports the next decision.
+- [*Assumption*]{underline=true}: something your plan relies on that still needs support.
+
+@notes
+Prior Lecture 06D teaching sequence, slide 3: Four terms for your plan.
+
+=== layout: section
+
+# From an idea to a credible plan
+
+@notes
+Prior Lecture 06D teaching sequence, slide 4: From an idea to a credible plan.
+
+=== layout: two-panels
+
+# What would make you believe it?
+
+@left
+
+![Cover logo and product tagline](assets/business_plan_samples/3dor_logo.png)
+
+@right
+
+## A replacement-organ proposal
+
+- Which tissue and which cells?
+- What has actually been demonstrated?
+- What must work before a patient could benefit?
+
+@notes
+
+Preserves the original organ-printing opening question. The cover promises a useful product; the reader still needs evidence.
+Source screenshot: 2015-3DOR_Executive_Summary.pdf, PDF page 1; asset 3dor_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+Prior Lecture 06D teaching sequence, slide 5: What would make you believe it?.
+
+=== layout: one-panel
+
+# A plan connects claims to evidence
+
+@body
+
+| Reader's question | Your answer needs |
+| --- | --- |
+| Why this problem? | A specific need and supporting evidence |
+| Why this product? | A plausible biological mechanism |
+| Why this company? | An advantage over existing alternatives |
+| What happens next? | Milestones, people, costs, and decisions |
+
+@notes
+
+Replaces the legacy definition and blanket three-to-five-year investment-return claim.
+The development timeline must follow the proposed technology and its uncertainties.
+Prior Lecture 06D teaching sequence, slide 6: A plan connects claims to evidence.
+
+=== layout: two-panels
+
+# Two assignments, different scope
+
+@left
+
+## Individual executive summary
+
+- One-page company argument
+- Cover and references on separate pages
+- Problem, science, product, market, competition, milestones
+- Supports your four-minute pitch
+
+@right
+
+## Group business plan
+
+- A deeper, integrated company case
+- Executive summary plus full sections
+- Management, development, and investment logic
+- Figures, tables, and supporting references
+
+@notes
+
+The three-page individual submission format comes from the submission section in LECT06B.
+The full group plan is not restricted to three pages. Follow Blackboard for the
+announced group formatting rules. Current scope: Fall 2026 PROJECTS.md.
+Prior Lecture 06D teaching sequence, slide 7: Two assignments, different scope.
+
+=== layout: reference
+
+# Structure of the full business plan
+
+@body
+
+1. Cover: company, product, team, logo, and table of contents
+2. Executive summary: one page that stands on its own
+3. Business and technology background: need, mechanism, evidence, IP
+4. Market opportunity: customers, competition, strategy, milestones
+5. Management team: skills and responsibility for the work
+6. Investment summary: funding needs and financial table
+7. References; optional appendix for supporting detail
+
+@notes
+
+Preserves the section sequence in legacy business-plan slides 4 and 28.
+IP means intellectual property. Describe the evidence behind any protection claim.
+An optional appendix does not replace citations in the main document.
+Prior Lecture 06D teaching sequence, slide 8: Structure of the full business plan.
+
+=== layout: big-image
+
+@image
+
+![Table of contents, excluding contact details](assets/business_plan_samples/minute_meat_contents.png)
+
+@caption
+
+Room for the details. *Minute Meat sample.*
+
+@notes
+
+Ask where the reader would look for the biology, competitors, and money.
+The sampled table of contents belongs to a historical longer plan; its page numbers are not current assignment requirements.
+Source screenshot: 2020-Minute_Meat_Executive_Summary.pdf, PDF page 1; asset minute_meat_contents.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+

@@ -1,0 +1,31 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Summary
+
+@notes
+Prior Lecture 06D teaching sequence, slide 39: Summary.
+
+=== layout: one-panel
+
+# A credible plan answers five questions
+
+@body
+
+1. What specific problem matters to your customer?
+2. How does the biological mechanism create the product?
+3. What is demonstrated, and what is still proposed?
+4. Why choose it over existing alternatives?
+5. What evidence, people, and resources are needed next?
+
+@notes
+Prior Lecture 06D teaching sequence, slide 40: A credible plan answers five questions.
+
+=== layout: theend
+
+# THE END
+
+@notes
+Prior Lecture 06D teaching sequence, slide 41: THE END.
+

@@ -2,6 +2,19 @@
 
 ### Additions and New Features
 
+- Expand the business-plan lecture from 41 to 57 slides with 23 PDF crops from 13 submissions:
+  logos, paragraphs, a pathway, milestones, and document-design comparisons. Retain all eight
+  native tables and the instructor's question-led voice. Split D into six included section files.
+  Record source pages, crop coordinates, and hashes in the asset manifest and sample review.
+- Add ordered Djot chapter includes with theme inheritance, source-local diagnostics, local path
+  validation, circular-include detection, and master-only folder discovery. Native lint validates
+  each included file. Document the [include contract](DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes).
+- Expand Biotechnology Talking Points Set 4 from 125 to 248 slides using the annual 2021-2026
+  material and exact 2026 numbering. Split the lecture into Chapters 12-16 plus opening and summary
+  files, controlled by the existing master filename. Add a topic/source guide for all 33 topics.
+  Retain all 121 original source-slide records, all 90 image references, and the instructor's
+  question-led style. Complete Set 4 before the requested business-plan visual revision.
+
 - Convert Biotechnology Lecture 06 to four native Djot decks with local assets, editable ODP,
   and PDF output: announcements, individual project, Talking Points Set 4, and business plans.
 - Modernize the 41-slide business-plan deck using all 31 sample executive summaries from
@@ -10,6 +23,16 @@
   [Lecture 06 review](../biotech/LECT06/djot/LECT06_REVIEW.md).
 
 ### Fixes and Maintenance
+
+- Resolve nine factual Set 4 review markers using primary sources. Correct LibertyLink/Clearfield
+  examples and the bee study's experimental doses and sample denominators; date the mosquito
+  research, salmon business history, and cattle review records. Replace factual placeholders with
+  worked comparisons and native tables. Retain all 248 slides, 121 source IDs, and 90 image references.
+- Correct the Set 4 guide's stale business-plan status and record the final source checks and
+  remaining instructor judgments in the Lecture 06 review.
+- Place the 16S profiling figures under topic 2, distinguish OTUs from ASVs, and place minimal
+  genomes and synthetic chloroplasts under their 2026 topics. Keep Brainbow in Chapter 15 as
+  the 2026 deck does. Repair a narrow fermentation-table label found in rendered review.
 
 - Refresh October 8 announcements and project guidance against the local Fall 2026 syllabus.
   Retain archived slides, the submission format, and the original rubric.
@@ -20,10 +43,26 @@
 
 ### Decisions and Failures
 
-- Keep 12 science review markers and the hidden talking-marks placeholder for instructor review.
-  Separate historical examples and sample proposals from verified current facts.
+- After factual follow-through, keep three science review markers (two instructor opinions and
+  one source graphic) and the hidden talking-marks placeholder for instructor review. Separate
+  historical examples and sample proposals from verified current facts.
 
 ### Developer Tests and Notes
+
+- Business-plan visual revision: strict folder lint passes for four masters, 395 slides, and
+  141 image references. D capacity and ODP/PDF builds pass; rendered review checks all 57 pages
+  and corrects caption overflow and crop boundaries. Verify 57 notes pages, eight native tables,
+  preserved prior teaching coverage, and unchanged A/B/C sources and source PDFs.
+  Markdown-link checks pass all 89 cases; `git diff --check` passes.
+- Chapter assembly has 101 passing focused parser/lint/export/terminal tests. A semantic
+  before/after comparison confirms that splitting preserves content, notes, order, and assets.
+- Expanded Lecture 06 folder lint passes: four master decks, 379 slides, 111 image references.
+  Set 4 capacity and ODP/PDF build pass. Inspect the expanded sequence and final changed pages;
+  verify 248 ODP/PDF pages, 235 notes pages, seven answer reveals, 16 native tables, and two SVGs.
+- A fresh full suite reports 2,554 passed and 18 pre-existing failures in source-text encoding,
+  older test hygiene, developer-script hygiene, and documentation format/size. Reproduce and undo
+  only the suite's 22 unrelated automatic formatting changes; retain a local evidence copy.
+  No full-suite pass is claimed. The earlier conversion-only results below remain historical.
 
 - Strict native Djot lint passes for 256 slides and 111 image references; capacity reports no
   concerns. Build four ODP/PDF pairs and inspect all 218 visible pages plus enlarged repair checks.

@@ -9,6 +9,7 @@ import re
 import slide_lib.djot_blocks
 import slide_lib.djot_errors
 import slide_lib.djot_grammar
+import slide_lib.djot_sources
 import slide_lib.layout_registry
 import slide_lib.layout_primitives
 import slide_lib.native_model
@@ -448,17 +449,16 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 	"""Parse one source-only Djot deck into the native presentation-neutral IR."""
 	path = input_path.resolve()
-	try:
-		source = path.read_text(encoding="utf-8")
-	except UnicodeDecodeError:
-		fail(path, 1, "Djot source must use UTF-8 text")
-		source = ""  # Satisfy static analyzers after fail's intentional exception.
-	color_theme, slide_sources = split_slides(path, source)
-	slides = tuple(assemble_slide(path, slide_source) for slide_source in slide_sources)
+	bundle = slide_lib.djot_sources.load_sources(path)
+	assembled: list[slide_lib.native_model.Slide] = []
+	for source in bundle.files:
+		_color_theme, slide_sources = split_slides(source.path, source.text)
+		assembled.extend(assemble_slide(source.path, slide_source) for slide_source in slide_sources)
+	slides = tuple(assembled)
 	repo_root = next((candidate for candidate in (path.parent, *path.parents)
 		if (candidate / ".git").exists()), path.parent).resolve()
 	first_title = next((block for slide in slides if not slide.hidden for block in slide.blocks
 		if isinstance(block, slide_lib.native_model.Heading) and block.level == 1), None)
 	title = visible_text(first_title.inlines) if first_title is not None else ""
-	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, slides, color_theme)
+	deck = slide_lib.native_model.Deck(path, path.parent, repo_root, title, slides, bundle.color_theme)
 	return deck

@@ -7,6 +7,22 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+- **Decision.** Lecture 06D uses source PDF crops as writing/design examples, with native prompts,
+  tables, quotations, and annotations. Six included section files produce one combined deck.
+  **Why.** Actual student examples make the guidance concrete while keeping instruction editable;
+  page/crop/hash provenance distinguishes historical proposal claims from verified results.
+
+- **Decision.** Large lectures may use ordered, include-only Djot masters with separately edited
+  chapter files, one shared image base, and physical chapter diagnostics.
+  **Why.** Authors can edit a chapter without maintaining duplicate slide content or changing
+  the combined build command. [The include contract](DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes)
+  defines ordering, theme inheritance, local paths, and folder discovery.
+
+- **Decision.** Set 4 retains all 121 original source-slide records and 90 image references,
+  regrouped under the 33 topics in `biotech/LECT06/old/2026_topic_list.txt`.
+  **Why.** The 2026 topic list controls numbering; the annual decks expand explanations and
+  discussion without silently replacing the instructor's original examples or opinions.
+
 - Biotechnology Lecture 06 uses four canonical Djot decks. Keep the science deck as C and
   name business-plan guidance D to distinguish the two legacy C filenames. Use historical
   executive summaries as writing case studies, with current syllabus/Blackboard requirements

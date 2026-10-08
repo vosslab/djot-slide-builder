@@ -1,0 +1,37 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Set #4: key ideas
+
+@body
+
+- Biological systems can transform matter, produce fuels, and report signals.
+- A useful product needs a specific mechanism and a workable setting.
+- Genetic engineering connects a gene change with a measurable trait.
+- Evaluate benefits, risks, and uncertainty for each application.
+
+=== layout: one-panel
+
+# What should you be able to explain?
+
+@body
+
+- How do we find microbes and test what their genes do?
+- When does cleanup destroy a molecule, and when does it move or immobilize it?
+- How do fuels, synthetic cells, and biosensors turn biology into a useful process?
+- How do engineered traits change plants, animals, and the systems around them?
+- What result would change your mind?
+
+=== layout: theend
+
+# THE END
+
+@notes
+
+Source: lect06c-set_4_TP-chapter_12-16_material.odp, slide 121.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.

@@ -22,6 +22,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide-writing advice
 
+- Expand and improve Biotechnology Talking Points Set 4 using the added annual decks; do not
+  reduce its content. Match the numbers and topics in `old/2026_topic_list.txt`.
+- Keep these slides in my voice, style, and tone. The Lecture 06 source material is now in `old/`.
+- Finish the talking points first, then improve the business-plan lecture.
+- The business-plan slides need visual pop alongside the tables I like. Use screenshots,
+  paragraphs, formatting choices, and logos from the sample submissions; keep my voice and tone.
+- I want large Djot decks to support separate chapter files so they are easier to edit.
+
 - Convert Biotechnology `LECT06/` to Djot, including the business-plan guidance deck. Modernize
   that guidance using the submissions in `biol_480-biotech/01-Sample_Executive_Summaries/`.
 

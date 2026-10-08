@@ -1,0 +1,243 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Make the document easy to trust
+
+@notes
+Prior Lecture 06D teaching sequence, slide 32: Make the document easy to trust.
+
+=== layout: image-comparison
+
+# Borrow the design decision
+
+@top-left
+
+![Upper cover: block geometry, color, company logo](assets/business_plan_samples/minute_meat_cover.png)
+
+@top-right
+
+![Cover design: alignment, whitespace, material image](assets/business_plan_samples/hygienic_cover.png)
+
+@bottom-left
+
+*Minute Meat*: one strong accent and clear blocks.
+
+@bottom-right
+
+*HYGIENIC*: alignment, whitespace, and one material image.
+
+@notes
+
+Only cover-design regions are shown; student names and contact details are excluded.
+Ask which element the eye sees first. Keep company, product, team, and contents easy to find; a cool logo is not a replacement for the biology.
+No new logo bonus or formatting requirement is implied.
+Source screenshot: 2020-Minute_Meat_Executive_Summary.pdf, PDF page 1; asset minute_meat_cover.png.
+Source screenshot: 2015-HYGIENIC_Executive_Summary.pdf, PDF page 1; asset hygienic_cover.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# A logo should help me find your company
+
+@right
+
+![Cover logo and tagline](assets/business_plan_samples/linkaments_logo.png)
+
+@left
+
+## A few useful choices
+
+- Readable name at a small size.
+- One consistent color and type style.
+- Enough contrast on screen and on paper.
+- Reuse the identity; give the explanation room.
+
+@notes
+
+The interlocking graphic connects the name to the product idea. Use it as a visual-identity example, not proof of a working implant.
+Current rubric and Blackboard determine requirements; do not promise the old unconfirmed logo bonus.
+Source screenshot: 2017-Linkaments_Executive_Summary.pdf, PDF page 1; asset linkaments_logo.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: one-panel
+
+# Put sources beside the claims they support
+
+@body
+
+- Cite important scientific, market, and quantitative claims.
+- Read the underlying study before describing its result.
+- Keep the species, model, conditions, date, and units clear.
+- Check that each citation supports the sentence using it.
+- Use a consistent reference list with working links or DOIs.
+
+@notes
+
+The original deck asks for citations in its appendix slide. Make citation use explicit
+throughout the document. A news headline or company claim may identify a lead to investigate;
+it does not replace the underlying evidence for a scientific result.
+Prior Lecture 06D teaching sequence, slide 33: Put sources beside the claims they support.
+
+=== layout: big-image
+
+@image
+
+![Claim excerpt including reference marker 13](assets/business_plan_samples/enterodetect_citation.png)
+
+@caption
+
+Check reference 13. *EnteroDetect excerpt.*
+
+@notes
+
+The citation marker is visible after the claim about off-site testing delay.
+Ask students to find the corresponding reference, read it, and check the particular claim, model, conditions, and date.
+This slide demonstrates claim-level citation checking; it does not certify that the sample reference is adequate.
+Source screenshot: 2016-EnteroDetect_Executive_Summary.pdf, PDF page 2; asset enterodetect_citation.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# Revise for specificity
+
+@left
+
+## Words that need support
+
+- Revolutionary
+- Completely safe
+- No competition
+- Guaranteed profit
+- Works for everyone
+
+@right
+
+## Replace with useful information
+
+- Biological component and action
+- Conditions tested and limitations
+- Named alternatives and tradeoffs
+- Assumptions and arithmetic
+- Initial customer and use case
+
+@notes
+
+AI-assisted text needs the same scrutiny. Verify citations, preserve your own reasoning,
+and follow the course academic-integrity policy. Do not present invented data as evidence.
+Prior Lecture 06D teaching sequence, slide 34: Revise for specificity.
+
+=== layout: image-comparison
+
+# Can you read it on Zoom? On paper?
+
+@top-left
+
+![Summary layout with four named sections](assets/business_plan_samples/aquazyme_summary.png)
+
+@top-right
+
+![Dark summary page for contrast discussion](assets/business_plan_samples/lac_locks_summary.png)
+
+@bottom-left
+
+*Aquazyme*: dark text and visible section breaks.
+
+@bottom-right
+
+*Lac Locks*: light text over a dark page. Check size and contrast.
+
+@notes
+
+Compare original page design, not the students or the merit of their topics. These overview images are not assigned paragraph reading.
+Ask what happens at laptop scale or in grayscale. Avoid backgrounds and watermarks that compete with the argument.
+No measured contrast ratio is claimed for these raster excerpts.
+Source screenshot: 2020-Aquazyme_Executive_Summary.pdf, PDF page 2; asset aquazyme_summary.png.
+Source screenshot: 2021-Lac_Locks_Executive_Summary.pdf, PDF page 2; asset lac_locks_summary.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: one-panel
+
+# Make one company voice
+
+@body
+
+- Agree on the product, customer, and scientific strategy.
+- Use the same names, units, assumptions, and timeline throughout.
+- Have at least two people review each major section.
+- Check that the summary matches the complete plan.
+- Inspect the uploaded file for page breaks, figures, and references.
+
+@notes
+
+Drawn from the current group-project teamwork requirements and legacy formatting guidance.
+The summary should not promise a result that the scientific section still treats as unknown.
+Prior Lecture 06D teaching sequence, slide 35: Make one company voice.
+
+=== layout: two-panels
+
+# Your turn: test your opening
+
+@left
+
+## Write three sentences
+
+1. This customer has this specific problem.
+2. Our product uses this biological mechanism.
+3. The next evidence we need is this result.
+
+@right
+
+## Exchange with a classmate
+
+- Underline the biological mechanism.
+- Circle the customer.
+- Mark one unsupported claim.
+- Ask one question that would improve the plan.
+
+@notes
+
+Allow a short writing pause, then discuss one volunteer example.
+Students can use their One Great Idea proposal. This exercise is practice, not a new submission.
+Prior Lecture 06D teaching sequence, slide 36: Your turn: test your opening.
+
+=== layout: reference
+
+# Check before submitting
+
+@body
+
+- *Problem*: specific need, affected group, and evidence
+- *Science*: biological mechanism and its limitations
+- *Product*: what the customer receives and how it helps
+- *Market*: customer, competition, niche, and business model
+- *Next step*: measurable milestones and justified assumptions
+- *Full plan*: management, investment table, and supporting sections
+- *Document*: readable format, checked citations, and correct uploaded file
+
+@notes
+Prior Lecture 06D teaching sequence, slide 37: Check before submitting.
+
+=== layout: one-panel
+
+# Resources and assignment details
+
+@body
+
+- [Fall 2026 project requirements](https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/)
+- [Fall 2026 course schedule](https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/)
+- Blackboard: current forms, submission links, and detailed rubric
+- Sample executive summaries: historical writing examples
+- [SBA: Write your business plan](https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan)
+
+@notes
+
+The local Fall 2026 syllabus sources were checked on Oct 8, 2026.
+See LECT06_REVIEW.md for the sample corpus and modernization evidence.
+Sample proposals are not authorities for current science, costs, or regulatory status.
+Prior Lecture 06D teaching sequence, slide 38: Resources and assignment details.
+

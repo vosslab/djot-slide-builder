@@ -1,0 +1,101 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 06C
+
+## Environmental and Synthetic Biotechnology
+## Talking Points Set #4: Chapters 12-16
+## Dr. Neil Voss
+## Oct 8, 2026
+
+@notes
+
+Source: lect06c-set_4_TP-chapter_12-16_material.odp, slide 1.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Connect microbial metabolism with environmental applications.
+- Compare fuel production, biosensing, and synthetic biology.
+- Explain genetic engineering in plants and animals.
+- Evaluate the evidence behind biotechnology claims.
+
+=== layout: one-panel
+
+# A few useful words
+
+@body
+
+- [*Community*]{underline=true}: the organisms sharing a habitat.
+- [*Consortium*]{underline=true}: organisms working together in a process.
+- [*Remediation*]{underline=true}: reducing contamination or its harmful effects.
+- [*Synthetic biology*]{underline=true}: designing and testing biological parts or systems.
+
+=== layout: two-panels
+
+# Set 4: topics 1-13
+
+@left
+
+- *1.* gene mining
+- *2.* microbe profiling
+- *3.* culture enrichment
+- *4.* hydrocarbon rem.
+- *5.* chemical spill rem.
+- *6.* pesticide rem.
+- *7.* nuclear rem.
+
+@right
+
+- *8.* heavy metal rem.
+- *9.* forever chem. rem.
+- *10.* fuel cells
+- *11.* greenhouse gas rem.
+- *12.* plastic enzymes
+- *13.* rare earth mining
+
+=== layout: two-panels
+
+# Set 4: topics 14-23
+
+@left
+
+- *14.* starch fuel
+- *15.* cellulose fuel
+- *16.* biodiesel
+- *17.* algae diesel
+- *18.* xDNA/XNA
+
+@right
+
+- *19.* artificial cells
+- *20.* synth. chloroplasts
+- *21.* minimal genome
+- *22.* glucose meters
+- *23.* other biosensors
+
+=== layout: two-panels
+
+# Set 4: topics 24-33
+
+@left
+
+- *24.* Agrobacterium
+- *25.* gene guns
+- *26.* plant transgenes
+- *27.* monocultures
+- *28.* GMO plants + nature
+
+@right
+
+- *29.* glyphosate
+- *30.* brainbow
+- *31.* GMO mosquito
+- *32.* trendy mice
+- *33.* GMO animals
+

@@ -1,0 +1,174 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Fund a result you can evaluate
+
+@notes
+Prior Lecture 06D teaching sequence, slide 25: Fund a result you can evaluate.
+
+=== layout: big-image
+
+@image
+
+![Four numbered project goals](assets/business_plan_samples/virona_milestones.png)
+
+@caption
+
+Which result can you measure? *Virona excerpt.*
+
+@notes
+
+Original instructor emphasis: "Again I will look for feasible milestones."
+Borrow the numbered progression. Then ask how success would be measured, what the control is, and what would stop the project.
+The source words "safe," "non-toxic," and the proposed clinical transition require evidence; the screenshot is not a validated development sequence.
+Source screenshot: 2018-Virona_Executive_Summary.pdf, PDF page 2; asset virona_milestones.png.
+Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
+Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
+
+=== layout: two-panels
+
+# A milestone ends with evidence
+
+@left
+
+## Activity
+
+Research the product.
+
+Raise money.
+
+Start selling.
+
+@right
+
+## Milestone
+
+Compare performance with a defined control under stated conditions.
+
+Use that result to decide whether to proceed, revise, or stop.
+
+@notes
+
+This is a library-research project. Students propose justified development tests and
+criteria; they are not required to conduct laboratory experiments for this assignment.
+Retains the legacy business-plan emphasis on feasible milestones and risk reduction.
+Prior Lecture 06D teaching sequence, slide 26: A milestone ends with evidence.
+
+=== layout: one-panel
+
+# Build a sequence of decisions
+
+@body
+
+| Stage | Evidence needed | Decision |
+| --- | --- | --- |
+| Mechanism | A result in the relevant model | Does the proposed action occur? |
+| Prototype | Repeatable performance against a comparator | Is the product useful? |
+| Practical use | Delivery, production, and user constraints | Can it work in the intended setting? |
+| Expansion | Evidence from the initial use case | Is wider use justified? |
+
+@notes
+
+Adapt the stages to the technology. Virona's sample makes successive development steps
+visible, but its proposed outcomes and timelines still need independent support.
+Do not assume that success in one model guarantees success in the next setting.
+Prior Lecture 06D teaching sequence, slide 27: Build a sequence of decisions.
+
+=== layout: one-panel
+
+# Put the largest uncertainty on the page
+
+@body
+
+| Uncertainty | What the plan should explain |
+| --- | --- |
+| Scientific | The result needed to support the mechanism |
+| Practical | Manufacturing, stability, delivery, and scale |
+| Commercial | Who buys and what makes them switch |
+| Responsible use | Risks, containment, and required oversight |
+
+@notes
+
+Aquazyme motivates the distinction between a controlled process and environmental release.
+Therapeutic proposals motivate checking safety, delivery, and relevant regulatory sources.
+Research the requirements for the actual product and jurisdiction; do not assume approval.
+Prior Lecture 06D teaching sequence, slide 28: Put the largest uncertainty on the page.
+
+=== layout: two-panels
+
+# Management means responsibility
+
+@left
+
+## Connect a person to a task
+
+- Scientific mechanism and evidence
+- Market and competition research
+- Cost model and milestones
+- Writing, figures, and final review
+
+@right
+
+## Identify missing expertise
+
+- Which milestone needs outside help?
+- What skill would an adviser provide?
+- Which proposed partners still need agreement?
+
+@notes
+
+Preserves the legacy team-skills and adviser guidance. Describe actual team experience.
+Do not invent degrees, partnerships, employees, or a commitment from a real organization.
+For the course project, at least two members review each major section.
+Prior Lecture 06D teaching sequence, slide 29: Management means responsibility.
+
+=== layout: one-panel
+
+# Tie the funding request to milestones
+
+@body
+
+| Milestone | Cost categories | Funding buys |
+| --- | --- | --- |
+| Mechanism test | Staff time, materials, analysis | Evidence for the core claim |
+| Prototype | Development, quality checks, iteration | A reproducible product candidate |
+| Practical-use study | Production, delivery, evaluation | Evidence for the intended setting |
+
+@notes
+
+Add justified estimates and timing in the full plan. Include projected revenue and
+expenses over the funded period, their assumptions, and a contingency for delays.
+Distinguish funding already received from funding proposed or being sought.
+Avoid treating a hoped-for grant, partner, sale, or exit as an accomplished fact.
+Prior Lecture 06D teaching sequence, slide 30: Tie the funding request to milestones.
+
+=== layout: two-panels
+
+# Describe an advantage you can support
+
+@left
+
+## Possible sources of advantage
+
+- Better performance on a defined measure
+- Easier fit with a customer's workflow
+- Lower total cost under stated assumptions
+- A defensible method or capability
+
+@right
+
+## Evidence to provide
+
+- A fair comparison
+- Sources for existing technology
+- A realistic development plan
+- Clear status of intellectual-property claims
+
+@notes
+
+Retains the legacy core-competency and intellectual-property guidance.
+Do not label the company patent-pending or protected merely because the idea is new to you.
+Patentability and permission to commercialize are research questions, not promises here.
+Prior Lecture 06D teaching sequence, slide 31: Describe an advantage you can support.
+

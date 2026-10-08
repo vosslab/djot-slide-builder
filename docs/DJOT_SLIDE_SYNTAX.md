@@ -38,6 +38,47 @@ The selected theme controls the top band, links, table headers, cover accents, s
 and the closer. Keep the line exact and unindented. A duplicate, an unknown value, or placement
 after the first layout is an error.
 
+## Chapter files and includes
+
+A large lecture can use a small master `.djot` file containing ordered chapter includes:
+
+```djot
+color-theme: biotechnology
+
+include: set4_opening.djot
+include: set4_chapter_12.djot
+include: set4_chapter_13.djot
+include: set4_summary.djot
+```
+
+Each chapter contains complete slides with the ordinary `=== layout:` and `@slot` syntax.
+Build, lint, and inspect capacity using the master filename. Its filename also names the combined
+ODP/PDF. Folder commands select the master once and omit its included files as separate decks.
+Strict native lint visits the master and every included file. Diagnostics retain chapter filenames
+and physical line numbers.
+
+The include contract is deliberately small:
+
+- A manifest contains optional leading `color-theme` metadata, blank lines, and exact unindented
+  `include: <relative.djot>` lines. Put opening and closing slides in their own files; do not mix
+  layout directives with include lines in a manifest.
+- Include paths are relative to the file containing the directive. Only UTF-8 `.djot` files are
+  accepted. Absolute paths, `..`, backslashes, missing files, and symlinks outside the master
+  directory are rejected. Includes use no shell, network lookup, glob expansion, or executable code.
+- Nested manifests are supported up to 32 levels. Circular includes fail at the offending
+  directive. Repeating a chapter deliberately repeats its slides in the combined deck.
+- The master controls the course theme. Chapters inherit it when omitted; an explicitly different
+  chapter theme is an error. Keeping a matching theme on a chapter also supports standalone builds.
+- Image paths throughout the lecture remain relative to the master file's directory. Keep sibling
+  chapter files beside the master when they share its `assets/` directory. Moving slides between
+  those files does not require changing image paths. A chapter in a subdirectory still uses the
+  master image base when included.
+- `include:` inside a slide's notes or prose is ordinary text, not a file-loading instruction.
+
+These local input rules implement ASVS 2.1.1, 2.2.1, and 5.3.2. This is a trusted local authoring
+workflow, not a public upload service. If include validation fails, correct the reported path,
+theme, or cycle before rebuilding; a partial lecture is not accepted.
+
 ## Slide framing
 
 Begin every slide with one exact, unindented layout directive. After optional deck color metadata,

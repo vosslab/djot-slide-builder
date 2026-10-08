@@ -1,0 +1,269 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Chapter 14: Biosensors
+
+=== layout: one-panel
+
+# Topic 22: Glucose meters
+
+@body
+
+- Can we measure glucose without another finger stick?
+- A blood-glucose meter tests a blood sample. Many continuous glucose monitors (CGMs) sense *interstitial fluid* under the skin.
+- Fewer finger sticks does not necessarily mean nothing pierces the skin.
+- A watch displaying a glucose reading may be receiving it from a separate sensor.
+
+@notes
+
+2026 topic 22; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 61.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication
+
+=== layout: one-panel
+
+# 22. Glucose monitoring
+
+@body
+
+![Slide image 56](assets/lect06c-set_4_tp_chapter_12_16_material/image_056.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 55.
+2026 topic 22: glucose meters. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 22. glucose monitoring
+
+@body
+
+- A finger-stick meter measures glucose in a blood sample.
+- Continuous glucose monitors can measure glucose in interstitial fluid.
+- A sensor beneath the skin is different from a fully noninvasive measurement.
+- Ask what is measured, where, and how accuracy is validated.
+
+[FDA: glucose-measurement devices](https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 56.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 22: glucose meters. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 22. Compare measurement approaches
+
+@body
+
+| Approach | Key distinction |
+| --- | --- |
+| Blood sample | Direct sample of blood |
+| Sensor beneath skin | Interstitial-fluid measurement |
+| Proposed tears or optical method | Needs evidence for the intended measurement |
+| Watch displaying CGM data | Display is separate from the sensor |
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 57.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 22: glucose meters. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 22. What are you actually measuring?
+
+@body
+
+- Compare glucose in blood, interstitial fluid, tears, and saliva. Does a change in one track a change in blood quickly enough?
+- Breath measurements may detect a related metabolite. How reliable is that indirect relationship?
+- For infrared, absorption, refraction, or microwave methods, what else in tissue changes the signal?
+- How do calibration, lag, motion, and skin differences affect accuracy? Compare with an appropriate reference measurement.
+
+@notes
+
+2026 topic 22; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 61.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication
+
+=== layout: one-panel
+
+# 22. A useful device has to work every day
+
+@body
+
+- How many people need frequent monitoring? Use a dated source and distinguish diagnosed diabetes from a particular testing regimen.
+- What do CGM trends and alerts add to occasional finger-stick readings? Compare cost, replacement sensors, and access.
+- Why is glucose harder to measure with a watch than pulse? Check the actual device and authorization instead of a rumor.
+- What improvement would matter most: accuracy, wear time, comfort, price, or reliable alerts? Explain your choice.
+
+@notes
+
+2026 topic 22; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 61.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication
+
+=== layout: one-panel
+
+# Topic 23: Other biosensors
+
+@body
+
+- Your watch collects signals. Turning a signal into useful biological information takes more work.
+- A classical *biosensor* combines biological recognition with a measurable signal.
+- Wearables also use physical sensors: light, electrical potential, motion, and temperature.
+- A nice graph is not the same thing as a useful medical measurement.
+
+@notes
+
+2026 topic 23; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 63.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/digital-health-center-excellence/medical-devices-incorporate-sensor-based-digital-health-technology
+
+=== layout: two-panels
+
+# 23. biosensors
+
+@left
+
+- What biological target is detected?
+- What recognition step produces a signal?
+- How specific and sensitive is the test?
+- Which sample, controls, and setting are used?
+
+@right
+
+![Speculative wearable biosensor illustration](assets/lect06c-set_4_tp_chapter_12_16_material/image_057.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 58.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 23: other biosensors. Original content retained and regrouped.
+
+=== layout: two-plus-one-panels
+
+# 23. Vein Viewers
+
+@top-left
+
+![Slide image 58](assets/lect06c-set_4_tp_chapter_12_16_material/image_058.png)
+
+@bottom-left
+
+![Slide image 60](assets/lect06c-set_4_tp_chapter_12_16_material/image_060.png)
+
+@right
+
+![Slide image 59](assets/lect06c-set_4_tp_chapter_12_16_material/image_059.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 59.
+2026 topic 23: other biosensors. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 23. Who are you? Biometric identity
+
+@left
+
+## India's Aadhaar system
+
+- Enrollment captures a photograph, fingerprints, and iris scans.
+- Authentication can compare a biometric measurement with the stored identity record.
+
+@right
+
+## What is being measured?
+
+- How does identifying a person differ from detecting a molecule?
+- What happens when the match is wrong?
+- Who controls consent, access, and correction of the record?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 60.
+2026 topic 23: other biosensors. Retains the source's Aadhaar discussion case and its privacy/access questions.
+UIDAI enrollment and authentication documentation checked October 8, 2026. The slide describes measurement and asks discussion questions; it does not assert legal rights or system-wide error rates.
+https://uidai.gov.in/en/298-faqs/enrolment-update/enrolment-partners-ecosystem-partners/2016-what-are-the-uidai-guidelines-for-biometric-data-capture.html
+https://uidai.gov.in/en/contact-support/have-any-question/304-faqs/authentication/for-residents.html
+
+=== layout: four-panels
+
+# 23. From biology to a number
+
+@top-left
+
+## Recognize
+
+An enzyme, antibody, receptor, or nucleic acid interacts with a target.
+
+@top-right
+
+## Transduce
+
+Convert that interaction into light, current, voltage, or another measurable signal.
+
+@bottom-left
+
+## Calibrate
+
+Relate signal to the target. Test interference and drift.
+
+@bottom-right
+
+## Interpret
+
+Decide what the number means for this person, specimen, and use.
+
+@notes
+
+2026 topic 23; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 63.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/digital-health-center-excellence/medical-devices-incorporate-sensor-based-digital-health-technology
+
+=== layout: one-panel
+
+# 23. What would you trust?
+
+@body
+
+- Which sensors are on the actual smartwatch model you are discussing? Which functions come from an external clinical monitor?
+- For sweat, saliva, or tears, how do sampling, contamination, and concentration changes affect interpretation?
+- Explain a quantum-dot bacterial sensor: what recognizes the bacterium, and what makes the light signal change?
+- When do daily baselines help? When could false alarms, missing data, or an unvalidated signal make remote monitoring less useful?
+
+@notes
+
+2026 topic 23; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 63.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/digital-health-center-excellence/medical-devices-incorporate-sensor-based-digital-health-technology
+
+=== layout: one-panel
+
+# 23. What would you like your watch to know?
+
+@body
+
+- Pick a biological measurement that is difficult to make continuously today.
+- What molecule or physical property would the sensor detect? How would it distinguish the target from interference?
+- How would clinicians validate the reading and decide what action to take?
+- In five to ten years, what might become possible? Separate your proposed technology from a product already available.
+
+@notes
+
+2026 topic 23; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 63.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.fda.gov/medical-devices/digital-health-center-excellence/medical-devices-incorporate-sensor-based-digital-health-technology
+

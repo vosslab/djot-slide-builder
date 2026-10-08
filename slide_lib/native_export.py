@@ -10,6 +10,8 @@ import tempfile
 
 # Local Modules
 import slide_lib.djot_parser
+import slide_lib.djot_sources
+import slide_lib.djot_errors
 import slide_lib.compilation_result
 import slide_lib.layout_engine
 import slide_lib.libreoffice
@@ -76,6 +78,10 @@ def discover_decks(input_value: str, repo_root: pathlib.Path,
 		raise PresentationInputError("input must be inside this repository")
 	decks = [path for path in input_path.rglob(f"*{SUPPORTED_SUFFIX}") if path.is_file()]
 	decks.sort(key=lambda path: path.relative_to(input_path).as_posix())
+	try:
+		decks = slide_lib.djot_sources.root_sources(decks)
+	except slide_lib.djot_errors.DjotParseError as error:
+		raise PresentationInputError(str(error)) from error
 	if not decks:
 		raise PresentationInputError(f"no presentation source decks found in: {input_value}")
 	return decks

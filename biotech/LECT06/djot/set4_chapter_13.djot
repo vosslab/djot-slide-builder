@@ -1,0 +1,1222 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Chapter 13: Synthetic biology and fuels
+
+=== layout: one-panel
+
+# Topic 14: Starch fuel
+
+@body
+
+- The basic idea is familiar: turn starch into sugar, then let yeast make alcohol.
+- Amylases help break down starch. Glucoamylase releases glucose for fermentation.
+- Yeast converts sugar into ethanol and carbon dioxide. Distillation and drying concentrate the fuel.
+- The biological reaction works. Is growing food to feed a fuel tank a good use of land?
+
+@notes
+
+2026 topic 14; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 42.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://afdc.energy.gov/fuels/ethanol-fuel-basics
+https://afdc.energy.gov/fuels/ethanol-e85
+
+=== layout: one-panel
+
+# 14. Ethanol fuel production
+
+@body
+
+![Slide image 14](assets/lect06c-set_4_tp_chapter_12_16_material/image_014.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 14.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: section
+
+# 14. Why alcohols and not hydrocarbons?
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 15.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 14. Why Alcohol?
+
+@body
+
+- Good\:
+  - Can be synthesized biologically or chemically
+  - High octane can support efficient engine designs
+- Bad\:
+  - lower energy density = less energy per gallon
+    - ethanol is oxidized form of ethane
+- Typically produced from biomass (sugars) through fermentation
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 16.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: big-image
+
+@image
+
+![Sources of cellular energy](assets/lect06c-set_4_tp_chapter_12_16_material/image_015.jpg)
+
+@caption
+
+More reduced carbon (left) releases more energy on oxidation to CO&#x2082; (right).
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 17.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 14. E85: a variable ethanol blend
+
+@left
+
+![Flex-fuel vehicle badge](assets/lect06c-set_4_tp_chapter_12_16_material/image_016.png)
+
+@right
+
+- U.S. E85 contains 51-83% ethanol, depending on season and location.
+- Ethanol can be produced by fermenting sugars from corn starch.
+- It contains less energy per gallon than gasoline.
+
+[DOE: ethanol blends](https://afdc.energy.gov/fuels/ethanol-e85)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 18.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: section
+
+# 14. Breakdown of starch
+
+## Many accessible nonreducing ends
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 19.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+Corrects reducing to nonreducing ends. https://pubchem.ncbi.nlm.nih.gov/protein/EC%3A2.4.1.1
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 18](assets/lect06c-set_4_tp_chapter_12_16_material/image_018.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 20.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+@body
+
+![Pyruvate as a branch point in catabolism](assets/lect06c-set_4_tp_chapter_12_16_material/figure_021_labeled.svg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 21.
+Figure 9.19 Pyruvate as a key juncture in catabolism
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 14: starch fuel. Original content retained and regrouped.
+
+=== layout: four-panels
+
+# 14. From corn to the gas tank
+
+@top-left
+
+## Starch
+
+Corn and other starch crops supply stored carbohydrate.
+
+@top-right
+
+## Sugar
+
+Enzymes hydrolyze starch into fermentable sugars.
+
+@bottom-left
+
+## Ethanol
+
+Fermentation converts sugar into ethanol and CO2.
+
+@bottom-right
+
+## Fuel
+
+Recover ethanol, remove water, and blend it for the intended engine.
+
+@notes
+
+2026 topic 14; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 42.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://afdc.energy.gov/fuels/ethanol-fuel-basics
+https://afdc.energy.gov/fuels/ethanol-e85
+
+=== layout: one-panel
+
+# 14. Food, fuel, and the whole calculation
+
+@body
+
+- Which starch crops are used? What enzymes and process improvements reduce costs or increase yield?
+- Compare energy per gallon with gasoline, then include farming, fertilizer, processing, and transport.
+- What else comes out of an ethanol plant? How do coproducts affect the food-versus-fuel calculation?
+- Can you find ethanol-free gasoline in Illinois? Check an actual station, its fuel grade, and the date instead of assuming every pump is the same.
+
+@notes
+
+2026 topic 14; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 42.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://afdc.energy.gov/fuels/ethanol-fuel-basics
+https://afdc.energy.gov/fuels/ethanol-e85
+
+=== layout: one-panel
+
+# Topic 15: Cellulose fuel
+
+@body
+
+- Why use the corn kernel if we could use the stalk?
+- Cellulose packs glucose into strong fibers. Hemicellulose and lignin add more obstacles in plant cell walls.
+- Pretreatment exposes the material; cellulases and beta-glucosidases help release sugars.
+- Getting sugar out cheaply is a different problem from fermenting sugar into ethanol.
+
+@notes
+
+2026 topic 15; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 44.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/20829451/
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: section
+
+# 15. Cellulosic fuels
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 22.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: big-image
+
+@image
+
+![Starch and cellulose](assets/lect06c-set_4_tp_chapter_12_16_material/image_020.jpg)
+
+@caption
+
+Starch: &#x03B1;(1-4) linkages. Cellulose: &#x03B2;(1-4) linkages.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 23.
+Figure 5.7 Starch and cellulose structures
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 21](assets/lect06c-set_4_tp_chapter_12_16_material/image_021.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 24.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect06c-set_4_tp_chapter_12_16_material/image_022.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 25.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 15. Cellulosic Ethanol
+
+@left
+
+- biofuel produced from wood, grasses, or the non-edible parts of plants
+- Lignocellulose – composed of cellulose, hemicellulose, and lignin
+
+@right
+
+- cellulose – crystalline, strong, and resistant to hydrolysis
+- hemicellulose –  random, amorphous structure with [little]{underline=true} strength
+- ligin – (_next slide_)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 26.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 15. Lignin
+
+@left
+
+- part of the secondary cell walls of plants
+- 2nd most abundant polymer (cellulose is 1st)
+- lacks a defined primary structure
+- provides additional strength to trees
+
+@right
+
+![Slide image 23](assets/lect06c-set_4_tp_chapter_12_16_material/image_023.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 27.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 15. Cellulosic Methods
+
+@left
+
+- Cellulolysis processes
+  - use enzymes to break down cellulose into glucose
+  - fermentation into alcohols – _same as before_
+
+@right
+
+- Gasification
+  - Reacting materials at high temperatures (>700 °C), without combustion
+    - with a controlled amount of oxygen and steam.
+  - The resulting gas mixture is a fuel
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 28.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 24](assets/lect06c-set_4_tp_chapter_12_16_material/image_024.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 29.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 25](assets/lect06c-set_4_tp_chapter_12_16_material/image_025.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 30.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 15. Switchgrass
+
+@left
+
+![Slide image 26](assets/lect06c-set_4_tp_chapter_12_16_material/image_026.png)
+
+@right
+
+- dominant species of the central N.A. tallgrass prairie
+- versatile and adaptable plant – thrives in many weather conditions, seasons lengths, soil types, and land conditions
+- used primarily for soil conservation – deep root system leave a rich layer of organic matter in the Midwest U.S. soil
+- ability to produce moderate to high yields on marginal farmlands
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 31.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-plus-two-panels
+
+# 15. Cellulosome
+
+@left
+
+- Cellulosome complexes are multi-enzyme machines produced by some bacteria
+
+@top-right
+
+![Slide image 27](assets/lect06c-set_4_tp_chapter_12_16_material/image_027.jpg)
+
+@bottom-right
+
+![Slide image 28](assets/lect06c-set_4_tp_chapter_12_16_material/image_028.gif)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 32.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 15. Eating Cellulose
+
+@body
+
+![Slide image 29](assets/lect06c-set_4_tp_chapter_12_16_material/image_029.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 33.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 15. Engineered yeast: a 2010 example
+
+@left
+
+- Researchers introduced a fungal cellodextrin transport system into yeast.
+- Engineered yeast grew on cellodextrins.
+- With cellulose breakdown and fermentation combined, ethanol production improved.
+
+[Galazka et al., 2010](https://pubmed.ncbi.nlm.nih.gov/20829451/)
+
+@right
+
+![Yeast cells](assets/lect06c-set_4_tp_chapter_12_16_material/image_030.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 34.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 31](assets/lect06c-set_4_tp_chapter_12_16_material/image_031.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 35.
+2026 topic 15: cellulose fuel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 15. What has to work?
+
+@body
+
+{column-widths="1,3"}
+| Step | The problem to solve |
+| --- | --- |
+| Feedstock | Collect bulky material without excessive cost |
+| Pretreatment | Expose fibers without making too many inhibitors |
+| Hydrolysis | Make enough accessible sugar with affordable enzymes |
+| Fermentation | Use mixed sugars and tolerate the process conditions |
+
+@notes
+
+2026 topic 15; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 44.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/20829451/
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: one-panel
+
+# 15. Waste does not mean free
+
+@body
+
+- Compare corn stover, straw, bagasse, wood residues, paper waste, and dedicated energy crops such as switchgrass.
+- What else could this material be used for? How much residue should stay in a field to protect soil?
+- How could pathway engineering help microbes use both five-carbon and six-carbon sugars?
+- What breakthrough would matter most: pretreatment, enzyme cost, inhibitor tolerance, fermentation, or transport? Explain your choice.
+
+@notes
+
+2026 topic 15; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 44.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/20829451/
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: one-panel
+
+# Topic 16: Biodiesel
+
+@body
+
+- Used cooking oil contains useful energy. It is not automatically ready for a diesel engine.
+- [*Transesterification*]{underline=true} exchanges the alcohol component of an ester.
+- Triglyceride plus methanol produces *fatty acid methyl esters (FAME)* and glycerol.
+- FAME biodiesel contains ester groups. Petroleum diesel is mostly hydrocarbons.
+
+@notes
+
+2026 topic 16; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 46.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://afdc.energy.gov/fuels/biodiesel-production
+https://afdc.energy.gov/fuels/biodiesel-blends
+
+=== layout: one-panel
+
+# 16. Biodiesel
+
+@body
+
+![Slide image 32](assets/lect06c-set_4_tp_chapter_12_16_material/image_032.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 36.
+2026 topic 16: biodiesel. Original content retained and regrouped.
+
+=== layout: big-image
+
+@image
+
+![Glucose and fatty acids](assets/lect06c-set_4_tp_chapter_12_16_material/image_033.jpg)
+
+@caption
+
+Fatty acids yield more energy per gram than glucose.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 37.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 16: biodiesel. Original content retained and regrouped.
+
+=== layout: big-image
+
+@image
+
+![Sources of cellular energy](assets/lect06c-set_4_tp_chapter_12_16_material/image_015.jpg)
+
+@caption
+
+More reduced carbon (left) releases more energy on oxidation to CO&#x2082; (right).
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 38.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 16: biodiesel. Original content retained and regrouped.
+
+=== layout: two-over-one-panels
+
+# 16. Biodiesel from waste oil
+
+@top-left
+
+![Waste cooking oil](assets/lect06c-set_4_tp_chapter_12_16_material/image_034.jpg)
+
+@top-right
+
+![Biodiesel example](assets/lect06c-set_4_tp_chapter_12_16_material/image_037.jpg)
+
+@bottom
+
+- Waste vegetable oil can be a feedstock.
+- Reaction with methanol produces fatty-acid esters and glycerol.
+- Fuel quality and engine compatibility matter.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 39.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 16: biodiesel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 16. Biodiesel: a historical campus example
+
+@left
+
+![Yale biodiesel bus](assets/lect06c-set_4_tp_chapter_12_16_material/image_039.jpg)
+
+@right
+
+- The source describes using Yale dining-hall waste oil for shuttle fuel.
+- Its estimates: 1,500 gallons available versus 80,000 gallons used each year.
+- B20 means 20% biodiesel and 80% petroleum diesel.
+- Compatibility depends on fuel standards and the vehicle.
+
+[Original campus report](https://www.newhavenindependent.org/article/get_on_the_bus_--_the_biodiesel_bus)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 40.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 16: biodiesel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 16. The reaction is only the beginning
+
+@body
+
+| Part of the process | What can go wrong? |
+| --- | --- |
+| Oil or fat | Water and free fatty acids complicate processing |
+| Catalyst and methanol | Side reactions and incomplete conversion |
+| Separation and purification | Residual alcohol, catalyst, soap, or glycerol |
+| Finished fuel | Cold-flow, storage, and engine compatibility |
+
+@notes
+
+2026 topic 16; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 46.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://afdc.energy.gov/fuels/biodiesel-production
+https://afdc.energy.gov/fuels/biodiesel-blends
+
+=== layout: one-panel
+
+# 16. Would you put it in your engine?
+
+@body
+
+- Compare base, acid, and enzyme catalysts. Which feedstocks make each approach attractive?
+- How do you separate glycerol and purify the FAME? What fuel-quality measurements matter?
+- Compare B20 with B100. Check the engine manufacturer and fuel standard before assuming compatibility.
+- Which emissions change, under which operating conditions? What can industry do with the glycerol byproduct?
+
+@notes
+
+2026 topic 16; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 46.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://afdc.energy.gov/fuels/biodiesel-production
+https://afdc.energy.gov/fuels/biodiesel-blends
+
+=== layout: one-panel
+
+# Topic 17: Algae diesel
+
+@body
+
+- Pond scum fuel. It sounds great: sunlight, carbon dioxide, and a lot of little oil-producing cells.
+- Algae can store carbon in lipids, but rapid growth and high oil content do not always peak together.
+- Harvesting cells from lots of water can consume a lot of energy.
+- Follow the process all the way to usable fuel before calling it cheap or sustainable.
+
+@notes
+
+2026 topic 17; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 48.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/cmei/fuels/algal-logistics
+https://www.energy.gov/cmei/fuels/articles/updated-algae-report-analyzes-national-scale-prospects-converting-microalgae
+
+=== layout: section
+
+# 17. Algae fuels
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 41.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: one-plus-two-panels
+
+# 17. Algae
+
+@left
+
+- Eukaryotic organisms with many forms
+- Unicellular and multicellular examples
+- Many use photosynthesis
+- Lack the true roots, stems, and leaves of land plants
+
+@top-right
+
+![Microscopic alga](assets/lect06c-set_4_tp_chapter_12_16_material/image_040.png)
+
+@bottom-right
+
+![Multicellular algae](assets/lect06c-set_4_tp_chapter_12_16_material/image_041.jpg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 42.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: big-image
+
+@image
+
+![Historical energy-use data: 2001. Source: nsl.caltech.edu/energy.](assets/lect06c-set_4_tp_chapter_12_16_material/image_043.png)
+
+@caption
+
+Historical energy-use data: 2001. Source: nsl.caltech.edu/energy.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 45.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 17. Available Energy
+
+@body
+
+![Slide image 44](assets/lect06c-set_4_tp_chapter_12_16_material/image_044.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 46.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: big-image
+
+@image
+
+![Historical illustration of photovoltaic land area; assumptions belong to the original source.](assets/lect06c-set_4_tp_chapter_12_16_material/image_045.jpg)
+
+@caption
+
+Historical estimate of photovoltaic land area.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 47.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 17. Mol. Biol. of Algae
+
+@left
+
+![Slide image 46](assets/lect06c-set_4_tp_chapter_12_16_material/image_046.png)
+
+@right
+
+![Slide image 47](assets/lect06c-set_4_tp_chapter_12_16_material/image_047.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 48.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: two-plus-one-panels
+
+# 17. Sapphire Energy: historical case
+
+@top-left
+
+![Slide image 48](assets/lect06c-set_4_tp_chapter_12_16_material/image_048.jpg)
+
+@bottom-left
+
+- Molecular biology was done in San Diego
+- Mutated algae to produce hydrocarbons rather than sugar
+
+@right
+
+![Slide image 49](assets/lect06c-set_4_tp_chapter_12_16_material/image_049.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 49.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 17. Pond scum fuel
+
+@body
+
+![Slide image 50](assets/lect06c-set_4_tp_chapter_12_16_material/image_050.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 50.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: four-panels
+
+# 17. Sapphire Energy: historical case
+
+@top-left
+
+![Slide image 51](assets/lect06c-set_4_tp_chapter_12_16_material/image_051.jpg)
+
+@top-right
+
+![Slide image 52](assets/lect06c-set_4_tp_chapter_12_16_material/image_052.jpg)
+
+@bottom-left
+
+- Historical pilot cultivation in New Mexico
+- Lots of sun and cheap land
+- Water???
+
+@bottom-right
+
+![Slide image 53](assets/lect06c-set_4_tp_chapter_12_16_material/image_053.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 51.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 17. Types of Biofuels
+
+@body
+
+- *Bio-alcohols* – biologically produced alcohols, most commonly ethanol
+- *Bio-diesel* – produced from oils or fats – similar in composition to fossil diesel.
+- *Algae fuel* – CO2 and sunlight to produce either ethanol or hydrocarbons.
+- *Cellulosic fuels* – cellulose-based fuel – stalks of wheat, corn, and wood converted to ethanol
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 52.
+2026 topic 17: algae diesel. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 17. Two routes from algae to fuel
+
+@left
+
+## Extract the oil
+
+- Harvest cells and recover lipids.
+- Convert suitable oils to FAME.
+- Compare cell disruption and purification costs.
+
+@right
+
+## Process the wet biomass
+
+- Hydrothermal liquefaction makes biocrude.
+- Further upgrading makes usable fuels.
+- Biocrude and FAME are chemically different products.
+
+@notes
+
+2026 topic 17; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 48.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/cmei/fuels/algal-logistics
+https://www.energy.gov/cmei/fuels/articles/updated-algae-report-analyzes-national-scale-prospects-converting-microalgae
+
+=== layout: one-panel
+
+# 17. Why are we not all driving on algae?
+
+@body
+
+- Compare open ponds and photobioreactors: light, contamination, evaporation, mixing, and construction costs.
+- How could engineering increase lipid production? Does the modification also slow growth?
+- What did Sapphire Energy demonstrate? Separate a historical demonstration from current commercial availability.
+- Why did enthusiasm after 2010 run into economic problems? If you find biodiesel for sale today, determine its feedstock rather than assuming it came from algae.
+
+@notes
+
+2026 topic 17; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 48.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/cmei/fuels/algal-logistics
+https://www.energy.gov/cmei/fuels/articles/updated-algae-report-analyzes-national-scale-prospects-converting-microalgae
+
+=== layout: one-panel
+
+# Topic 18: xDNA/XNA
+
+@body
+
+- Is DNA the only chemistry that can store genetic information?
+- *xDNA* uses enlarged, benzo-homologated bases. The extra ring expands the base-pair geometry.
+- *XNA* covers alternative nucleic-acid chemistries, often with a different sugar or backbone.
+- Changing a base and changing the backbone are different experiments.
+
+@notes
+
+2026 topic 18; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 50.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1126/science.1088334
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3362463/
+
+=== layout: one-panel
+
+# 18. xDNA and XNA
+
+@body
+
+![Slide image 54](assets/lect06c-set_4_tp_chapter_12_16_material/image_054.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 53.
+2026 topic 18: xDNA/XNA. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 18. xDNA and XNA
+
+@left
+
+![Slide image 55](assets/lect06c-set_4_tp_chapter_12_16_material/image_055.png)
+
+@right
+
+- Scientists have been investigating properties of so-called xenonucleic acids or XNAs.
+- They have demonstrated for the first time that six of these unnatural nucleic acid polymers are capable of sharing information with DNA.
+- One of these XNAs, a molecule referred to as anhydrohexitol nucleic acid or HNA, was capable of undergoing directed evolution and folding into biologically useful forms.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 54.
+2026 topic 18: xDNA/XNA. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 18. What did we change?
+
+@body
+
+| Material | Chemical change | Question to test |
+| --- | --- | --- |
+| xDNA | Expanded nucleobases | How does a wider pair fit a helix? |
+| HNA | Anhydrohexitol sugar unit | Can an engineered enzyme copy it? |
+| Other XNAs | Other sugar/backbone choices | Which partners and enzymes work? |
+
+@notes
+
+2026 topic 18; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 50.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1126/science.1088334
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3362463/
+
+=== layout: one-panel
+
+# 18. A helix is not yet a genetic system
+
+@body
+
+- Draw a natural base pair next to an xDNA pair. Where is the added benzene ring?
+- For a particular XNA, can it pair with itself, DNA, or RNA? Do not assume every chemistry behaves the same way.
+- How can engineered polymerases move information between DNA and XNA? What would demonstrate heredity and evolution?
+- Compare proposed uses in aptamers, stable probes, and data storage. What do we know about toxicity, delivery, copying accuracy, and cost?
+
+@notes
+
+2026 topic 18; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 50.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1126/science.1088334
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3362463/
+
+=== layout: one-panel
+
+# Topic 19: Artificial cells
+
+@body
+
+- How much of a cell can we build from parts?
+- [*Bottom-up*]{underline=true}: assemble molecules into a cell-like system. *Top-down*: simplify an existing living cell.
+- A membrane bag can hold reactions. That alone does not make it alive.
+- Which jobs must the system carry out for itself, and which jobs are we doing for it?
+
+@notes
+
+2026 topic 19; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 52.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.maxsynbio.mpg.de
+https://www.syntheticcell.eu
+
+=== layout: four-panels
+
+# 19. What does your cell need?
+
+@top-left
+
+## A boundary
+
+Lipid vesicle, polymer compartment, or other enclosure. Materials must still enter and leave.
+
+@top-right
+
+## Energy and chemistry
+
+Supply energy, make needed molecules, and handle waste.
+
+@bottom-left
+
+## Information
+
+Store, copy, and use instructions. Can the system make its own working parts?
+
+@bottom-right
+
+## Growth and division
+
+Grow the boundary and contents, then distribute them to daughter compartments.
+
+@notes
+
+2026 topic 19; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 52.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.maxsynbio.mpg.de
+https://www.syntheticcell.eu
+
+=== layout: one-panel
+
+# 19. When would you call it alive?
+
+@body
+
+- Compare lipid vesicles, coacervates, and polymer compartments. What function does each construction actually demonstrate?
+- Can the system reproduce repeatedly, maintain itself, and evolve? Which of those criteria are missing?
+- Why build an artificial organelle inside a cell rather than build an entire cell?
+- What can these experiments teach us about the origin of life? Would you recognize life elsewhere if its chemistry differed from ours?
+
+@notes
+
+2026 topic 19; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 52.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.maxsynbio.mpg.de
+https://www.syntheticcell.eu
+
+=== layout: one-panel
+
+# Topic 20: Synthetic chloroplasts
+
+@body
+
+- Plants already do photosynthesis. Why try to rebuild part of it?
+- One goal is to combine light-powered energy production with a redesigned carbon-fixation pathway.
+- A 2020 chloroplast mimic coupled thylakoid membranes to a synthetic CO2-fixation cycle in droplets.
+- That is a working biochemical system. It is not a complete, self-reproducing chloroplast.
+
+@notes
+
+2026 topic 20; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 54.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7610767/
+
+=== layout: one-panel
+
+# 20. Photosynthesis
+
+@body
+
+- *Photosynthesis* is the process that converts solar energy into chemical energy
+- using the energy of sunlight to make organic molecules from H2O and CO2
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 43.
+2026 topic 20: synth. chloroplasts. Original content retained and regrouped.
+
+=== layout: one-panel
+
+@body
+
+![Light reactions and the Calvin cycle](assets/lect06c-set_4_tp_chapter_12_16_material/figure_044_labeled.svg)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 44.
+Figure 10.5 An overview of photosynthesis: cooperation of the light reactions and the Calvin cycle
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 20: synth. chloroplasts. Original content retained and regrouped.
+
+=== layout: four-panels
+
+# 20. Connect the two halves
+
+@top-left
+
+## Light
+
+Thylakoid membranes capture light energy.
+
+@top-right
+
+## Energy carriers
+
+ATP and NADPH connect light reactions to downstream chemistry.
+
+@bottom-left
+
+## Carbon fixation
+
+A designed enzyme cycle incorporates CO2 into organic molecules.
+
+@bottom-right
+
+## Keep it running
+
+Balance rates, replace damaged parts, supply inputs, and recover products.
+
+@notes
+
+2026 topic 20; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 54.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7610767/
+
+=== layout: one-panel
+
+# 20. Could we do better than RuBisCO?
+
+@body
+
+- What limits natural photosynthesis? Distinguish light capture, enzyme speed, oxygen reactions, and the rest of the cell.
+- The *CETCH cycle* is a designed alternative carbon-fixation route. How does combining enzymes from different organisms help?
+- Compare cell-free droplets, engineered organelles, and engineering a living non-photosynthetic cell.
+- What would count as an improvement: carbon fixed per enzyme, per photon, per hour, or per dollar? Test the advantage rather than assume it.
+
+@notes
+
+2026 topic 20; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 54.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7610767/
+
+=== layout: one-panel
+
+# Topic 21: Minimal genome
+
+@body
+
+- How many genes does a cell need? First ask: living where, on what food?
+- A minimal genome is minimal under specified conditions. A rich laboratory medium supplies things the cell no longer makes.
+- JCVI-syn1.0 used a chemically synthesized genome transplanted into a recipient cell.
+- The genome was synthetic; the starting cellular machinery was inherited from a living cell.
+
+@notes
+
+2026 topic 21; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 57.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.jcvi.org/publications/design-and-synthesis-minimal-bacterial-genome
+https://www.nist.gov/news-events/news/2021/03/scientists-develop-cell-synthetic-genome-grows-and-divides-normally
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10396959/
+
+=== layout: two-panels
+
+# 21. The 2016 minimal cell
+
+@left
+
+- Historical example: JCVI-syn3.0, reported in 2016.
+- A synthetic cell with 473 genes.
+- 149 genes had unknown functions in that report.
+- What can a minimal genome tell us about essential functions?
+
+@right
+
+![JCVI synthetic cells](assets/lect06c-set_4_tp_chapter_12_16_material/image_001.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 2.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+https://www.jcvi.org/publications/design-and-synthesis-minimal-bacterial-genome
+2026 topic 21: minimal genome. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 21. Related cells, different questions
+
+@body
+
+| Cell | Why study it? |
+| --- | --- |
+| syn1.0 | Can a synthesized genome control a cell? |
+| syn3.0 | How far can genome reduction go in rich medium? |
+| syn3A | Which restored functions improve growth and division? |
+| syn3B | A related minimal strain for further experiments, including evolution |
+
+@notes
+
+2026 topic 21; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 57.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.jcvi.org/publications/design-and-synthesis-minimal-bacterial-genome
+https://www.nist.gov/news-events/news/2021/03/scientists-develop-cell-synthetic-genome-grows-and-divides-normally
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10396959/
+
+=== layout: one-panel
+
+# 21. Essential, but we do not know why
+
+@body
+
+- The 2016 syn3.0 report had 473 genes, including 149 with unknown functions. Those are *dated annotation counts*.
+- Compare transposon insertions, knockouts, restoring genes, and expression measurements. What would each experiment tell you?
+- If restoring a gene changes cell shape, division, growth, or attachment, have you identified its molecular job?
+- Use comparative genomics and predicted protein structures to make a hypothesis. What experiment would test it? Check the exact strain and annotation date.
+
+@notes
+
+2026 topic 21; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 57.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.jcvi.org/publications/design-and-synthesis-minimal-bacterial-genome
+https://www.nist.gov/news-events/news/2021/03/scientists-develop-cell-synthetic-genome-grows-and-divides-normally
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10396959/
+

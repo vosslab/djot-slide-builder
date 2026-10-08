@@ -3,12 +3,14 @@
 # Standard Library
 import dataclasses
 import pathlib
+import re
 import shutil
 import subprocess
 import sys
 
 # Local Modules
 import slide_lib.djot_parser
+import slide_lib.djot_sources
 import slide_lib.layout_registry
 import slide_lib.layout_validation
 import slide_lib.native_model
@@ -36,6 +38,7 @@ class LintSummary:
 def image_problem(path: pathlib.Path, deck: slide_lib.native_model.Deck,
 		image: slide_lib.native_model.Image) -> LintProblem | None:
 	"""Return one safe-local-image failure for a parsed component image."""
+	path = image.location.path
 	candidate = pathlib.PurePosixPath(image.source)
 	if candidate.is_absolute() or ".." in candidate.parts:
 		return LintProblem(path, image.location.line,
@@ -79,12 +82,10 @@ def images_in_items(items: tuple[slide_lib.native_model.ListItem, ...]) -> tuple
 #============================================
 def source_problem(path: pathlib.Path, error: ValueError) -> LintProblem:
 	"""Project parser and layout errors into the linter's stable report shape."""
-	prefix = f"{path.resolve()}:"
 	text = str(error)
-	if text.startswith(prefix):
-		line_text, separator, message = text[len(prefix):].partition(": ")
-		if separator and line_text.isdigit():
-			return LintProblem(path, int(line_text), message)
+	match = re.fullmatch(r"(.+):(\d+): (.*)", text, re.DOTALL)
+	if match is not None:
+		return LintProblem(pathlib.Path(match[1]), int(match[2]), match[3])
 	return LintProblem(path, 1, text)
 
 
@@ -122,6 +123,7 @@ def djot_sources(paths: list[pathlib.Path]) -> list[pathlib.Path]:
 			continue
 		raise ValueError(f"source path does not exist: {path}")
 	result = sorted(set(sources))
+	result = slide_lib.djot_sources.root_sources(result)
 	return result
 
 
@@ -154,9 +156,10 @@ def lint_paths(paths: list[pathlib.Path], *, native_executable: str | None = Non
 	sources = djot_sources(paths)
 	for source in sources:
 		if native_executable is not None:
-			native_problem = native_validator(source, native_executable, native_arguments or [])
-			if native_problem is not None:
-				problems.append(native_problem)
+			for included in slide_lib.djot_sources.load_sources(source).paths:
+				native_problem = native_validator(included, native_executable, native_arguments or [])
+				if native_problem is not None:
+					problems.append(native_problem)
 		source_problems, source_slides, source_images = lint_source(source)
 		problems.extend(source_problems)
 		slide_count += source_slides

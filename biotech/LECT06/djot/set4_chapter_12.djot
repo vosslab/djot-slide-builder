@@ -1,0 +1,1134 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Chapter 12: Environmental biotechnology
+
+=== layout: one-panel
+
+# Topic 1: Gene mining
+
+@body
+
+- What useful genes are hiding in a handful of soil?
+- [*Metagenomics*]{underline=true}: sequence DNA from a whole community, including organisms we have not grown.
+- Find a promising sequence. Predict its job. Then test whether the gene actually does that job.
+- A gene sequence gives us a candidate. An enzyme assay gives us evidence.
+
+@notes
+
+2026 topic 1; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 14.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.genome.gov/news/news-release/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human-gene
+https://www.nature.com/articles/nmicrobiol201657
+
+=== layout: four-panels
+
+# 1. From mixed DNA to a useful gene
+
+@top-left
+
+## 1. Sample
+
+Collect the community and extract its DNA. Include controls for contamination.
+
+@top-right
+
+## 2. Assemble
+
+Join overlapping reads into longer sequences. Mixed organisms make this harder.
+
+@bottom-left
+
+## 3. Sort
+
+Group likely genome fragments into bins: metagenome-assembled genomes (MAGs).
+
+@bottom-right
+
+## 4. Test
+
+Express a candidate gene and measure its activity. Is the predicted function correct?
+
+@notes
+
+2026 topic 1; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 14.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.genome.gov/news/news-release/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human-gene
+https://www.nature.com/articles/nmicrobiol201657
+
+=== layout: one-panel
+
+# 1. We found it. What does it do?
+
+@body
+
+- How does sequencing a mixed community differ from sequencing one cultured organism?
+- What makes a MAG incomplete or contaminated? Can closely related strains get mixed together?
+- Find one useful enzyme or human-gut discovery from metagenomics. What experiment supports the result?
+- The NIH [MorPhiC program](https://www.genome.gov/news/news-release/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human-gene) knocks out human genes and measures what changes. How is that different from environmental gene mining?
+
+@notes
+
+2026 topic 1; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 14.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.genome.gov/news/news-release/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human-gene
+https://www.nature.com/articles/nmicrobiol201657
+
+=== layout: one-panel
+
+# Topic 2: Microbe profiling
+
+@body
+
+- Who is in this sample, and how does the community change?
+- The *16S rRNA gene* has conserved regions for primer binding and variable regions for identification.
+- We usually sequence the gene in DNA. Finding it does not prove the organism is alive or active.
+- Compare the sequences with a reference database. The database helps determine the answer.
+
+@notes
+
+2026 topic 2; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 16.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://academic.oup.com/nar/article/35/21/7188/2376260
+https://www.arb-silva.de/documentation/silva-taxonomy
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4927377/
+
+=== layout: one-panel
+
+# 2. Collect the community
+
+@body
+
+![Slide image 4](assets/lect06c-set_4_tp_chapter_12_16_material/image_004.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 5.
+2026 topic 2: microbe profiling. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 2. Extract community DNA
+
+@body
+
+![Slide image 5](assets/lect06c-set_4_tp_chapter_12_16_material/image_005.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 6.
+2026 topic 2: microbe profiling. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 2. Amplify the 16S gene
+
+@body
+
+![Slide image 6](assets/lect06c-set_4_tp_chapter_12_16_material/image_006.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 7.
+2026 topic 2: microbe profiling. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 2. Compare the sequences
+
+@body
+
+![Slide image 7](assets/lect06c-set_4_tp_chapter_12_16_material/image_007.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 8.
+2026 topic 2: microbe profiling. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 2. Compare the communities
+
+@body
+
+![Slide image 8](assets/lect06c-set_4_tp_chapter_12_16_material/image_008.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 9.
+2026 topic 2: microbe profiling. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 2. What counts as a different microbe?
+
+@left
+
+## The older figures
+
+*OTUs* group similar sequences using a chosen cutoff, often 97%. That cutoff is a convention, not a universal species boundary.
+
+@right
+
+## Another approach
+
+*ASVs* are inferred exact amplicon sequence variants after error correction. DADA2 can distinguish single-base differences. An ASV is still not automatically a species.
+
+@notes
+
+2026 topic 2; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 16.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://academic.oup.com/nar/article/35/21/7188/2376260
+https://www.arb-silva.de/documentation/silva-taxonomy
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4927377/
+
+=== layout: one-panel
+
+# 2. A microbial name tag has limits
+
+@body
+
+| Method | What you get | What is missing? |
+| --- | --- | --- |
+| 16S amplicons | Bacterial/archaeal profile | Often limited strain resolution |
+| Shotgun metagenomics | Genes across sampled genomes | Activity is still inferred |
+| RNA measurements | Transcripts under these conditions | Protein activity needs testing |
+
+@notes
+
+2026 topic 2; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 16.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://academic.oup.com/nar/article/35/21/7188/2376260
+https://www.arb-silva.de/documentation/silva-taxonomy
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4927377/
+
+=== layout: one-panel
+
+# 2. Same richness, different communities
+
+@body
+
+| Invented sample | Taxon A | Taxon B | Taxon C |
+| --- | --- | --- | --- |
+| Pond 1 | 80% | 10% | 10% |
+| Pond 2 | 34% | 33% | 33% |
+| Pond 3 | 10% | 80% | 10% |
+
+@notes
+
+2026 topic 2; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 16.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://academic.oup.com/nar/article/35/21/7188/2376260
+https://www.arb-silva.de/documentation/silva-taxonomy
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4927377/
+
+=== layout: one-panel
+
+# 2. What would you conclude?
+
+@body
+
+- [*Alpha diversity*]{underline=true} describes diversity within one sample. Which pond is more even?
+- [*Beta diversity*]{underline=true} compares communities. Ponds 1 and 3 have the same richness and evenness. Are they the same community?
+- Compare SILVA, RDP, Greengenes/Greengenes2, and EzBioCloud: which release, reference sequences, and taxonomy are used?
+- For a gut-microbiome study, what do primer bias, gene-copy number, and relative abundance keep you from concluding?
+
+@notes
+
+2026 topic 2; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 16.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://academic.oup.com/nar/article/35/21/7188/2376260
+https://www.arb-silva.de/documentation/silva-taxonomy
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4927377/
+
+=== layout: one-panel
+
+# Topic 3: Culture enrichment
+
+@body
+
+- Give microbes conditions that favor the activity you want. Who grows?
+- [*Enrichment culture*]{underline=true} selects organisms through nutrients, temperature, oxygen, and other growth conditions.
+- The textbook groups several discovery tools here. They do different jobs; they are not all ways to grow a culture.
+- A fast-growing winner in a flask may have been rare in the original sample.
+
+@notes
+
+2026 topic 3; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 18.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/35001054
+
+=== layout: one-panel
+
+# 3. Tools for studying environmental microbes
+
+@body
+
+- Stable isotope probing (SIP)
+- 5-bromo-2-deoxyuridine (BrdU)
+- Small subunit ribosomal RNA (SSU rRNA)
+- Suppressive subtraction hybridization (SSH)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 3.
+2026 topic 3: culture enrichment. Original content retained and regrouped.
+
+=== layout: image-comparison
+
+# 3. Enrichment and gene discovery
+
+@top-left
+
+![Stable isotope probing and BrdU enrichment](assets/lect06c-set_4_tp_chapter_12_16_material/image_002.jpg)
+
+@top-right
+
+![Suppressive subtraction hybridization](assets/lect06c-set_4_tp_chapter_12_16_material/image_003.jpg)
+
+@bottom-left
+
+SIP and BrdU identify active populations.
+
+@bottom-right
+
+SSH compares DNA from different samples.
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 4.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 3: culture enrichment. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 3. Four tools, four different questions
+
+@body
+
+| Tool | What does it help identify? |
+| --- | --- |
+| SIP | Who incorporates a labeled substrate? |
+| BrdU labeling | Who incorporates a DNA precursor? |
+| SSU rRNA analysis | Which organisms are represented? |
+| Subtractive hybridization | Which sequences differ between samples? |
+
+@notes
+
+2026 topic 3; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 18.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/35001054
+
+=== layout: one-panel
+
+# 3. Who actually used the food?
+
+@body
+
+- In *stable isotope probing*, follow labeled carbon into biomolecules. What does heavy DNA tell you?
+- Could another organism eat the first organism's waste and pick up the label? How would timing help?
+- BrdU uptake differs among organisms. SSU RNA abundance alone is not a direct metabolic-rate measurement.
+- Compare advantages and biases of all four tools. How could single-cell genomics, microfluidics, or metagenomics help design a better enrichment?
+
+@notes
+
+2026 topic 3; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 18.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/35001054
+
+=== layout: one-panel
+
+# Topic 4: Hydrocarbon remediation
+
+@body
+
+- For us, an oil spill is a disaster. For some microbes, it is a carbon source.
+- Oxygenases can begin aerobic hydrocarbon breakdown; later reactions feed carbon into metabolism.
+- [*Biostimulation*]{underline=true}: help microbes already there. [*Bioaugmentation*]{underline=true}: add organisms.
+- Oil is a mixture. One microbe rarely handles every component.
+
+@notes
+
+2026 topic 4; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 20.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/nmicrobiol201657
+https://www.nature.com/articles/ismej201259
+
+=== layout: one-panel
+
+# 4. Bioremediation
+
+@body
+
+![Slide image 9](assets/lect06c-set_4_tp_chapter_12_16_material/image_009.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 10.
+2026 topic 4: hydrocarbon rem.. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 4. Rhodococcus
+
+@left
+
+- Strains of Rhodococcus are important owing to their ability to catabolize a wide range of compounds and produce bioactive steroids, acrylamide, and acrylic acid, and their involvement in fossil fuel biodesulfurization
+
+@right
+
+![Slide image 10](assets/lect06c-set_4_tp_chapter_12_16_material/image_010.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 11.
+2026 topic 4: hydrocarbon rem.. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 4. Two oil spills, different habitats
+
+@left
+
+## Exxon Valdez
+
+- Cold Alaskan shoreline
+- Nutrient addition to stimulate native microbes
+- Ask what limited breakdown and how it was measured.
+
+@right
+
+## Deepwater Horizon
+
+- Deep-water plumes and surface oil
+- Changing hydrocarbon-degrading communities
+- Ask which organisms and pathways were supported by the data.
+
+@notes
+
+2026 topic 4; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 20.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/nmicrobiol201657
+https://www.nature.com/articles/ismej201259
+
+=== layout: one-panel
+
+# 4. Why does some oil stick around?
+
+@body
+
+- How do Rhodococcus, Pseudomonas, and other degraders differ? Name the substrate and enzyme, not just the genus.
+- Can biosurfactants help microbes reach oil? What happens in cold water, low oxygen, or low nitrogen and phosphorus?
+- Does adding nutrients always help? What else in the ecosystem might respond?
+- Look for toxic intermediates and persistent fractions. Use chemical measurements alongside qPCR, sequencing, or SIP to follow cleanup.
+
+@notes
+
+2026 topic 4; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 20.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/nmicrobiol201657
+https://www.nature.com/articles/ismej201259
+
+=== layout: one-panel
+
+# Topic 5: Chemical spill remediation
+
+@body
+
+- Industrial chemicals can be microbial electron acceptors as well as contaminants.
+- Some *Dehalococcoides* strains use reductive dehalogenases to remove chlorine from chlorinated solvents.
+- Anaerobic and aerobic partners may be needed for different parts of a mixture.
+- Getting rid of the starting chemical is only part of the job. What did it turn into?
+
+@notes
+
+2026 topic 5; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 22.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/10388710/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC1065153/
+
+=== layout: four-panels
+
+# 5. Follow the chlorine
+
+@top-left
+
+## TCE
+
+Trichloroethene: three chlorine atoms. Reduction removes chlorine step by step.
+
+@top-right
+
+## DCE
+
+Dichloroethene: two chlorine atoms. Which isomer and which organism matter.
+
+@bottom-left
+
+## Vinyl chloride
+
+One chlorine atom. A toxic intermediate can accumulate if the pathway stalls.
+
+@bottom-right
+
+## Ethene
+
+No chlorine. Measure the end product before calling the treatment complete.
+
+@notes
+
+2026 topic 5; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 22.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/10388710/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC1065153/
+
+=== layout: one-panel
+
+# 5. Three contaminated places
+
+@body
+
+- *Savannah River*: examine solvent treatment. Which microbes, electron donors, and dehalogenase genes are involved?
+- *Hudson River*: compare anaerobic PCB dechlorination with aerobic breakdown of less-chlorinated products.
+- *Love Canal*: distinguish proposed biological treatments for mixtures from treatments actually used at the site.
+- How would qPCR or metagenomics help follow a consortium? What chemical data would show detoxification rather than just gene presence?
+
+@notes
+
+2026 topic 5; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 22.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/10388710/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC1065153/
+
+=== layout: one-panel
+
+# Topic 6: Pesticide remediation
+
+@body
+
+- A pesticide is designed to affect biology. Can biology also break it down?
+- The route depends on the compound: atrazine, organophosphates, carbamates, and endosulfan have different chemistry.
+- In Pseudomonas strain ADP, *AtzA, AtzB, and AtzC* convert atrazine toward cyanuric acid.
+- *AtzD, AtzE, and AtzF* help break down the ring to carbon dioxide and ammonia. Follow the entire pathway.
+
+@notes
+
+2026 topic 6; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 24.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2737934/
+
+=== layout: one-panel
+
+# 6. The chemical name matters
+
+@body
+
+- *Midwestern groundwater*: follow atrazine, its intermediates, and the atz genes. Which step limits removal?
+- *Bhopal*: methyl isocyanate was released in the disaster. Do not treat a MIC release and residual carbamate-pesticide cleanup as the same problem.
+- *Kerala*: examine endosulfan-degrading organisms and enzymes. Are the results from a flask, soil microcosm, or field?
+- How do pH, oxygen, organic matter, and added nutrients change the result? Could an engineered strain or consortium improve it?
+
+@notes
+
+2026 topic 6; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 24.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2737934/
+
+=== layout: one-panel
+
+# 6. Design a cleanup experiment
+
+@body
+
+- Compare untreated soil, treatment alone, and treatment with the proposed organism or enzyme.
+- Measure the parent compound, breakdown products, and toxicity over time.
+- What if the pesticide sticks to soil instead of being degraded? What if a breakdown product is still toxic?
+- What result would convince you that the treatment works outside a laboratory?
+
+@notes
+
+2026 topic 6; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 24.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2737934/
+
+=== layout: one-panel
+
+# Topic 7: Nuclear remediation
+
+@body
+
+- Can a microbe make radioactive waste stop being radioactive?
+- Microbes can change chemical form, bind radionuclides, or help immobilize them. They do not stop radioactive decay.
+- At uranium sites, reducing soluble *U(VI)* to less-soluble *U(IV)* can limit movement in groundwater.
+- The uranium is still there. What happens if oxygen returns?
+
+@notes
+
+2026 topic 7; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 26.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3165427/
+
+=== layout: two-panels
+
+# 7. Surviving radiation vs. cleaning it up
+
+@left
+
+## Oak Ridge and Hanford
+
+- Follow uranium and other radionuclides.
+- Compare redox changes, sorption, and precipitation.
+- Which results are field measurements?
+
+@right
+
+## Chernobyl and Fukushima
+
+- What helps melanin-containing fungi or extremophiles survive?
+- Survival alone does not prove cleanup.
+- How could organisms capture cesium or strontium?
+
+@notes
+
+2026 topic 7; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 26.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3165427/
+
+=== layout: one-panel
+
+# 7. Where does the radioactivity end up?
+
+@body
+
+- Compare Geobacter and Shewanella: what metabolic conditions can support uranium reduction?
+- For mine tailings, compare biosorption, bioaccumulation, and redox chemistry. Which isotope is being treated?
+- If a plant accumulates radionuclides, what must happen to the harvested plant?
+- Would engineering radiation resistance improve removal? What still limits cleanup compared with ordinary heavy metals?
+
+@notes
+
+2026 topic 7; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 26.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3165427/
+
+=== layout: one-panel
+
+# Topic 8: Heavy metal remediation
+
+@body
+
+- Microbes cannot digest a metal atom into something that is no longer a metal.
+- They can change oxidation state, bind metals, take them up, or precipitate them.
+- Chromium illustrates the point: reduction of *Cr(VI)* to *Cr(III)* often lowers mobility and toxicity under suitable conditions.
+- Always ask where the metal went and whether it can move again.
+
+@notes
+
+2026 topic 8; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 28.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubs.usgs.gov/publication/pp1885I
+
+=== layout: four-panels
+
+# 8. Four ways to deal with a metal
+
+@top-left
+
+## Biosorption
+
+Binding to a surface. Living growth is not always required.
+
+@top-right
+
+## Bioaccumulation
+
+Uptake into cells. The contaminated biomass still needs handling.
+
+@bottom-left
+
+## Redox chemistry
+
+Change oxidation state. The effect depends on the metal and conditions.
+
+@bottom-right
+
+## Precipitation
+
+Form a less-soluble solid. Test whether changing conditions release it.
+
+@notes
+
+2026 topic 8; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 28.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubs.usgs.gov/publication/pp1885I
+
+=== layout: one-panel
+
+# 8. Metal resistance is not metal removal
+
+@body
+
+- *Berkeley Pit* and *Clark Fork*: how do acidity, mine drainage, and sediment chemistry affect treatment?
+- *Hinkley*: which reactions and microbes reduce Cr(VI)? What happens to the resulting Cr(III)?
+- Cupriavidus metallidurans (formerly Ralstonia): how do efflux pumps and metal-binding proteins protect cells?
+- Mercury needs care: MerA can produce volatile Hg(0). Moving mercury into air is not destroying it. Compare binding, precipitation, and methylation risks.
+
+@notes
+
+2026 topic 8; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 28.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubs.usgs.gov/publication/pp1885I
+
+=== layout: one-panel
+
+# 8. How much metal can cells handle?
+
+@body
+
+- Would you use living cells, dead biomass, or an isolated binding protein? Why?
+- How would you distinguish surface binding from uptake?
+- What happens when the binding sites fill up, the pH changes, or several metals compete?
+- At very high metal concentrations or in mixed waste, can the treatment organism still grow?
+
+@notes
+
+2026 topic 8; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 28.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubs.usgs.gov/publication/pp1885I
+
+=== layout: one-panel
+
+# Topic 9: Forever chemical remediation
+
+@body
+
+- PFAS is a large family of chemicals, not one molecule with one cleanup method.
+- Many carbon-fluorine bonds resist biological breakdown. The exact PFAS structure matters.
+- A lab organism that transforms one PFAS has not solved every contaminated aquifer.
+- [*Defluorination*]{underline=true} means breaking carbon-fluorine bonds. Where is the fluoride, and what organic products remain?
+
+@notes
+
+2026 topic 9; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 30.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/39018407/
+
+=== layout: one-panel
+
+# 9. Removed from water... then what?
+
+@body
+
+| Process | Where did the PFAS go? | What should we measure? |
+| --- | --- | --- |
+| Sorption | Onto carbon, resin, or biomass | Spent material and breakthrough |
+| Membrane separation | Into a concentrated waste stream | Concentrate and treated water |
+| Biotransformation | Into other molecules | Products and fluoride release |
+| Destruction claim | Bonds broken toward final products | A convincing fluorine balance |
+
+@notes
+
+2026 topic 9; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 30.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/39018407/
+
+=== layout: one-panel
+
+# 9. From Dark Waters to a treatment plant
+
+@body
+
+- Compare Parkersburg, the East Metro Twin Cities, and military-base firefighting-foam contamination. Which PFAS are present?
+- What do local soil and groundwater flow do to treatment time and exposure?
+- A 2024 Acetobacterium study tested *unsaturated* fluorinated carboxylic acids. Why does that qualification matter?
+- Compare microbes and engineered enzymes with physical or chemical treatment. What evidence would EPA or DoD need before a field application?
+
+@notes
+
+2026 topic 9; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 30.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://pubmed.ncbi.nlm.nih.gov/39018407/
+
+=== layout: multiple-choice
+
+@question
+
+- PFAS disappears from the water. Has it been destroyed?
+
+@answer
+
+Not necessarily. It may have moved onto a surface.
+
+Measure products and follow the fluorine.
+
+@notes
+
+2026 topic 9. Instructor-authored concept check.
+
+=== layout: one-panel
+
+# Topic 10: Fuel cells
+
+@body
+
+- Can we collect some of the electrons released when microbes eat?
+- At the *anode*, fuel is oxidized. Electrons travel through the external circuit to the *cathode*.
+- In a microbial fuel cell, microbes oxidize organic material and transfer electrons toward the anode.
+- A fuel cell needs a continuing fuel supply. A battery stores energy in its materials.
+
+@notes
+
+2026 topic 10; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 32.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/cmei/fuels/fuel-cells
+
+=== layout: one-panel
+
+# 10. Hydrogen Fuel Cell
+
+@body
+
+![Slide image 11](assets/lect06c-set_4_tp_chapter_12_16_material/image_011.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 12.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 10: fuel cells. Original content retained and regrouped.
+
+=== layout: two-panels
+
+# 10. Microbial fuel cell
+
+@left
+
+![Slide image 12](assets/lect06c-set_4_tp_chapter_12_16_material/image_012.png)
+
+@right
+
+![Slide image 13](assets/lect06c-set_4_tp_chapter_12_16_material/image_013.png)
+
+@notes
+
+Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 13.
+Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
+2026 topic 10: fuel cells. Original content retained and regrouped.
+
+=== layout: one-panel
+
+# 10. Hydrogen or wastewater?
+
+@body
+
+| Question | Hydrogen fuel cell | Microbial fuel cell |
+| --- | --- | --- |
+| Fuel | Hydrogen | Biodegradable organic matter |
+| Catalyst | Electrode catalyst | Living microbes and electrodes |
+| Main challenge | Hydrogen supply and storage | Low power and biological limits |
+| Possible use | Vehicle or stationary power | Waste treatment, sensors, small loads |
+
+@notes
+
+2026 topic 10; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 32.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/cmei/fuels/fuel-cells
+
+=== layout: one-panel
+
+# 10. Would you power a car with this?
+
+@body
+
+- Trace sugar oxidation, electron transfer, the external wire, and the cathode reaction in an MFC.
+- What limits output: substrate supply, electrode area, internal resistance, electron transfer, or microbial growth?
+- Compare a hydrogen car, a battery car, and a gasoline car. Where did the energy originate?
+- Could better electrodes or reactor design make MFCs useful? A wastewater sensor and a car do not need the same power.
+
+@notes
+
+2026 topic 10; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 32.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/cmei/fuels/fuel-cells
+
+=== layout: one-panel
+
+# Topic 11: Greenhouse gas remediation
+
+@body
+
+- Microbes make greenhouse gases. Other microbes consume them. Can we change the balance?
+- [*Methanotrophs*]{underline=true} use methane; methane monooxygenase starts oxidation to methanol.
+- Carbon can become biomass or continue toward carbon dioxide. Follow both routes.
+- Converting methane to carbon dioxide can reduce warming impact, but it is not the same as permanently removing carbon.
+
+@notes
+
+2026 topic 11; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 34.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: four-panels
+
+# 11. Where does the carbon go?
+
+@top-left
+
+## Methane oxidation
+
+CH4 to methanol and downstream products. Compare pMMO and sMMO in methanotrophs.
+
+@top-right
+
+## Carbon fixation
+
+CO2 into organic molecules. Compare the Calvin cycle with reverse TCA and other pathways.
+
+@bottom-left
+
+## Storage
+
+Carbon in soils, biomass, or minerals. How long does it stay there?
+
+@bottom-right
+
+## Fuel or chemical
+
+Capture carbon into a product. Burning that fuel releases the carbon again.
+
+@notes
+
+2026 topic 11; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 34.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: one-panel
+
+# 11. Does the whole system help?
+
+@body
+
+- Algae and cyanobacteria can release oxygen during photosynthesis. CO2 fixation by a chemoautotroph does not automatically make oxygen.
+- Could a methanotroph and a photosynthetic partner share gas streams? Include mixing, light, and energy costs.
+- Compare biofilters, microbial fuel cells, carbonate precipitation, and soil-carbon stabilization.
+- Biochar is made by heating biomass with limited oxygen. Microbes affect its later behavior; they do not make biochar by ordinary growth.
+
+@notes
+
+2026 topic 11; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 34.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: one-panel
+
+# 11. What would you engineer?
+
+@body
+
+- Faster methane uptake? More carbon fixation? Better conversion into a useful chemical?
+- Name the enzyme or pathway, then explain why changing it should improve the whole process.
+- Count incoming carbon, outgoing carbon, and the energy used to run the system.
+- How long must stored carbon stay out of the atmosphere for your proposed benefit?
+
+@notes
+
+2026 topic 11; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 34.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: one-panel
+
+# Topic 12: Plastic enzymes
+
+@body
+
+- Plastic is not one chemical. An enzyme that attacks PET does not automatically attack polyethylene.
+- Ideonella sakaiensis helped make *PETase* and *MHETase* famous.
+- PETase cuts ester bonds in PET; MHETase processes the soluble MHET product.
+- The useful question is how much polymer becomes recoverable molecules, under what conditions.
+
+@notes
+
+2026 topic 12; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 36.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1073/pnas.2006753117
+https://doi.org/10.1073/pnas.1718804115
+
+=== layout: four-panels
+
+# 12. Two enzymes share the work
+
+@top-left
+
+## PET
+
+A polyester. Crystallinity and accessible surface affect enzyme access.
+
+@top-right
+
+## PETase
+
+Cuts polymer ester bonds, producing MHET and other soluble products.
+
+@bottom-left
+
+## MHETase
+
+Hydrolyzes MHET to terephthalate and ethylene glycol.
+
+@bottom-right
+
+## Reuse
+
+Separate and recover the products. Can they become new material?
+
+@notes
+
+2026 topic 12; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 36.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1073/pnas.2006753117
+https://doi.org/10.1073/pnas.1718804115
+
+=== layout: one-panel
+
+# 12. Can we make the enzymes better?
+
+@body
+
+- Find the amino-acid changes in the 2018 PETase study. What did the experiments actually compare?
+- Compare a linked MHETase-PETase chimera with the same amount of separate enzymes. Why might linking help?
+- Which production organism would you use? Compare enzyme yield, stability, and the cost of purification.
+- Why might a controlled recycling reactor work better than releasing an engineered microbe into the ocean?
+
+@notes
+
+2026 topic 12; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 36.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1073/pnas.2006753117
+https://doi.org/10.1073/pnas.1718804115
+
+=== layout: one-panel
+
+# 12. The worm ate the plastic. Now what?
+
+@body
+
+- Compare mealworms with Galleria mellonella caterpillars. Which polymer did each study test?
+- Was plastic merely fragmented, chemically changed, or converted into carbon dioxide and biomass?
+- How would you measure the role of the animal, its enzymes, and its gut microbes?
+- Compare rates, products, and scale with isolated enzymes. Do not count smaller plastic pieces as complete cleanup.
+
+@notes
+
+2026 topic 12; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 36.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://doi.org/10.1073/pnas.2006753117
+https://doi.org/10.1073/pnas.1718804115
+
+=== layout: one-panel
+
+# Topic 13: Rare earth mining
+
+@body
+
+- Can we persuade biology to separate metals that chemists struggle to separate?
+- [*Bioleaching*]{underline=true} helps release metals from a solid. *Biosorption* captures dissolved ions on a surface.
+- Binding a lot of metal and selectively binding the metal you want are different achievements.
+- Lanmodulin proteins provide a useful example of selective rare-earth binding.
+
+@notes
+
+2026 topic 13; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 38.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41586-023-05945-5
+https://www.nature.com/articles/s41589-026-02176-3
+
+=== layout: two-panels
+
+# 13. Get it out. Then separate it.
+
+@left
+
+## Release the metal
+
+- Microbial acids and ligands can help mobilize it.
+- The ore or waste chemistry matters.
+- What acid, water, and energy inputs remain?
+
+@right
+
+## Recover the metal
+
+- Bind ions to biomass or a protein.
+- Separate competing metals.
+- Release the product and reuse the binding material.
+
+@notes
+
+2026 topic 13; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 38.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41586-023-05945-5
+https://www.nature.com/articles/s41589-026-02176-3
+
+=== layout: one-panel
+
+# 13. How picky is the binding site?
+
+@body
+
+- Compare bacteria, fungi, and algae. What do their surfaces, secreted acids, and growth conditions contribute?
+- Which metals compete with the rare earths? Test iron and manganese as well as light versus heavy rare earths.
+- A 2023 lanmodulin study separated neodymium and dysprosium; a 2026 study screened hundreds of variants. How can sequence changes alter selectivity?
+- Can microbes help mine gold? Distinguish exposing gold in a mineral from creating gold atoms.
+
+@notes
+
+2026 topic 13; numbering authority: ../old/2026_topic_list.txt.
+Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 38.
+Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
+https://www.nature.com/articles/s41586-023-05945-5
+https://www.nature.com/articles/s41589-026-02176-3
+
