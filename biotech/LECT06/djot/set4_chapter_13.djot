@@ -4,6 +4,10 @@ color-theme: biotechnology
 
 # Chapter 13: Synthetic biology and fuels
 
+=== layout: subsection
+
+# Topic 14: Starch fuel
+
 === layout: one-panel
 
 # Topic 14: Starch fuel
@@ -37,7 +41,7 @@ Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 14.
 Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
 2026 topic 14: starch fuel. Original content retained and regrouped.
 
-=== layout: section
+=== layout: title-only
 
 # 14. Why alcohols and not hydrocarbons?
 
@@ -103,11 +107,11 @@ Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 18.
 Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
 2026 topic 14: starch fuel. Original content retained and regrouped.
 
-=== layout: section
+=== layout: title-only
 
 # 14. Breakdown of starch
 
-## Many accessible nonreducing ends
+Many accessible nonreducing ends
 
 @notes
 
@@ -196,6 +200,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://afdc.energy.gov/fuels/ethanol-fuel-basics
 https://afdc.energy.gov/fuels/ethanol-e85
 
+=== layout: subsection
+
+# Topic 15: Cellulose fuel
+
 === layout: one-panel
 
 # Topic 15: Cellulose fuel
@@ -215,7 +223,7 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://pubmed.ncbi.nlm.nih.gov/20829451/
 https://www.energy.gov/science/doe-explainsbiofuels
 
-=== layout: section
+=== layout: title-only
 
 # 15. Cellulosic fuels
 
@@ -481,6 +489,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://pubmed.ncbi.nlm.nih.gov/20829451/
 https://www.energy.gov/science/doe-explainsbiofuels
 
+=== layout: subsection
+
+# Topic 16: Biodiesel
+
 === layout: one-panel
 
 # Topic 16: Biodiesel
@@ -632,6 +644,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://afdc.energy.gov/fuels/biodiesel-production
 https://afdc.energy.gov/fuels/biodiesel-blends
 
+=== layout: subsection
+
+# Topic 17: Algae diesel
+
 === layout: one-panel
 
 # Topic 17: Algae diesel
@@ -651,7 +667,7 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.energy.gov/cmei/fuels/algal-logistics
 https://www.energy.gov/cmei/fuels/articles/updated-algae-report-analyzes-national-scale-prospects-converting-microalgae
 
-=== layout: section
+=== layout: title-only
 
 # 17. Algae fuels
 
@@ -874,6 +890,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.energy.gov/cmei/fuels/algal-logistics
 https://www.energy.gov/cmei/fuels/articles/updated-algae-report-analyzes-national-scale-prospects-converting-microalgae
 
+=== layout: subsection
+
+# Topic 18: xDNA/XNA
+
 === layout: one-panel
 
 # Topic 18: xDNA/XNA
@@ -964,6 +984,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://doi.org/10.1126/science.1088334
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3362463/
 
+=== layout: subsection
+
+# Topic 19: Artificial cells
+
 === layout: one-panel
 
 # Topic 19: Artificial cells
@@ -1037,6 +1061,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.maxsynbio.mpg.de
 https://www.syntheticcell.eu
+
+=== layout: subsection
+
+# Topic 20: Synthetic chloroplasts
 
 === layout: one-panel
 
@@ -1135,6 +1163,10 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC7610767/
 Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 54.
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://pmc.ncbi.nlm.nih.gov/articles/PMC7610767/
+
+=== layout: subsection
+
+# Topic 21: Minimal genome
 
 === layout: one-panel
 

@@ -22,6 +22,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide-writing advice
 
+- Style the Lecture 05C Theranos timeline dates like genetics definition terms so the dates
+  stand out visually.
+
+- Compile Biotechnology Lecture 04 talking points into a single ODP.
+
+- In Biotechnology Lecture 06C, give every talking point a subsection slide and each chapter
+  a major section slide. Use the decks under `old/` to check chapter boundaries.
+
 - Expand and improve Biotechnology Talking Points Set 4 using the added annual decks; do not
   reduce its content. Match the numbers and topics in `old/2026_topic_list.txt`.
 - Keep these slides in my voice, style, and tone. The Lecture 06 source material is now in `old/`.

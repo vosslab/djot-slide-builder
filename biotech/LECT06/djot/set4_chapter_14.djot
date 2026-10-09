@@ -4,6 +4,10 @@ color-theme: biotechnology
 
 # Chapter 14: Biosensors
 
+=== layout: subsection
+
+# Topic 22: Glucose meters
+
 === layout: one-panel
 
 # Topic 22: Glucose meters
@@ -108,6 +112,10 @@ https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatche
 Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 61.
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication
+
+=== layout: subsection
+
+# Topic 23: Other biosensors
 
 === layout: one-panel
 

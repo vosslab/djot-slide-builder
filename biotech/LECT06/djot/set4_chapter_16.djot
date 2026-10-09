@@ -4,6 +4,10 @@ color-theme: biotechnology
 
 # Chapter 16: Transgenic animals
 
+=== layout: subsection
+
+# Topic 31: GMO mosquito
+
 === layout: one-panel
 
 # Topic 31: GMO mosquito
@@ -233,6 +237,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://doi.org/10.1056/NEJMoa2030243
 https://www.nature.com/articles/nbt.4245
 
+=== layout: subsection
+
+# Topic 32: Trendy mice
+
 === layout: one-panel
 
 # Topic 32: Trendy mice
@@ -365,6 +373,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://doi.org/10.1371/journal.pbio.0020294
 https://doi.org/10.1038/387083a0
 https://doi.org/10.1038/45432
+
+=== layout: subsection
+
+# Topic 33: GMO animals
 
 === layout: one-panel
 

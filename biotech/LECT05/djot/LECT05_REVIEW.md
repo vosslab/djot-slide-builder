@@ -53,6 +53,11 @@ the past tense. The legacy film-development announcement remains hidden.
 
 ## Validation and visual review
 
+The timeline emphasis pass styles all 36 dates on the six Theranos timeline slides with the
+same bold, underlined markup as genetics definition terms. Strict native lint and ODP/PDF builds
+pass. Poppler renders of all six changed slides confirm readable date emphasis without clipping;
+the contact sheet is in `output/biotech_lect05_review/timeline_emphasis/`.
+
 Strict native Jotdown validation and repository semantic lint pass for all three sources, 127
 slides, and 46 image references. Capacity inspection reports no concerns, including hidden slides.
 The public folder build writes three editable ODPs and three ODP-derived PDFs.

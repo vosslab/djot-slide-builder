@@ -4,6 +4,10 @@ color-theme: biotechnology
 
 # Chapter 12: Environmental biotechnology
 
+=== layout: subsection
+
+# Topic 1: Gene mining
+
 === layout: one-panel
 
 # Topic 1: Gene mining
@@ -77,6 +81,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.genome.gov/news/news-release/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human-gene
 https://www.nature.com/articles/nmicrobiol201657
+
+=== layout: subsection
+
+# Topic 2: Microbe profiling
 
 === layout: one-panel
 
@@ -250,6 +258,10 @@ https://academic.oup.com/nar/article/35/21/7188/2376260
 https://www.arb-silva.de/documentation/silva-taxonomy
 https://pmc.ncbi.nlm.nih.gov/articles/PMC4927377/
 
+=== layout: subsection
+
+# Topic 3: Culture enrichment
+
 === layout: one-panel
 
 # Topic 3: Culture enrichment
@@ -348,6 +360,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.nature.com/articles/35001054
 
+=== layout: subsection
+
+# Topic 4: Hydrocarbon remediation
+
 === layout: one-panel
 
 # Topic 4: Hydrocarbon remediation
@@ -444,6 +460,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.nature.com/articles/nmicrobiol201657
 https://www.nature.com/articles/ismej201259
 
+=== layout: subsection
+
+# Topic 5: Chemical spill remediation
+
 === layout: one-panel
 
 # Topic 5: Chemical spill remediation
@@ -518,6 +538,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://pubmed.ncbi.nlm.nih.gov/10388710/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC1065153/
 
+=== layout: subsection
+
+# Topic 6: Pesticide remediation
+
 === layout: one-panel
 
 # Topic 6: Pesticide remediation
@@ -571,6 +595,10 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC2737934/
 Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 24.
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://pmc.ncbi.nlm.nih.gov/articles/PMC2737934/
+
+=== layout: subsection
+
+# Topic 7: Nuclear remediation
 
 === layout: one-panel
 
@@ -634,6 +662,10 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC3165427/
 Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 26.
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3165427/
+
+=== layout: subsection
+
+# Topic 8: Heavy metal remediation
 
 === layout: one-panel
 
@@ -724,6 +756,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://pubs.usgs.gov/publication/pp1885I
 
+=== layout: subsection
+
+# Topic 9: Forever chemical remediation
+
 === layout: one-panel
 
 # Topic 9: Forever chemical remediation
@@ -795,6 +831,10 @@ Measure products and follow the fluorine.
 @notes
 
 2026 topic 9. Instructor-authored concept check.
+
+=== layout: subsection
+
+# Topic 10: Fuel cells
 
 === layout: one-panel
 
@@ -884,6 +924,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.energy.gov/cmei/fuels/fuel-cells
 
+=== layout: subsection
+
+# Topic 11: Greenhouse gas remediation
+
 === layout: one-panel
 
 # Topic 11: Greenhouse gas remediation
@@ -972,6 +1016,10 @@ https://www.energy.gov/science/doe-explainsbiofuels
 Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic.pptx, slide 34.
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.energy.gov/science/doe-explainsbiofuels
+
+=== layout: subsection
+
+# Topic 12: Plastic enzymes
 
 === layout: one-panel
 
@@ -1065,6 +1113,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://doi.org/10.1073/pnas.2006753117
 https://doi.org/10.1073/pnas.1718804115
+
+=== layout: subsection
+
+# Topic 13: Rare earth mining
 
 === layout: one-panel
 

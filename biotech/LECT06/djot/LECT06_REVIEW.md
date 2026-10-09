@@ -10,9 +10,9 @@ source screenshots, logos, and paragraph examples while retaining the tables and
 | --- | --- | ---: | ---: | ---: |
 | Announcements | [06A](lect06a-2026_biotech_announcements.djot) | 38 | 16 | 22 |
 | Individual project | [06B](lect06b-individual_project.djot) | 52 | 22 | 30 |
-| Talking Points Set 4 | [06C master](lect06c-set_4_tp_chapter_12_16_material.djot) | 248 | 0 | 248 |
+| Talking Points Set 4 | [06C master](lect06c-set_4_tp_chapter_12_16_material.djot) | 281 | 0 | 281 |
 | Business plans | [06D master](lect06d-business_plan.djot) | 57 | 0 | 57 |
-| **Total** | | **395** | **38** | **357** |
+| **Total** | | **428** | **38** | **390** |
 
 ## Sources and scope
 
@@ -24,7 +24,7 @@ source screenshots, logos, and paragraph examples while retaining the tables and
   Completed Discord signup and Student Profile assignments remain hidden. Discord remains
   a contact channel. October 1 feedback slides are archived; BioTech News guidance is visible.
 - C represents all 121 original source-slide records, regrouped under topics 1-33 in
-  [the 2026 list](../old/2026_topic_list.txt). Its 248 slides retain all 90 component-image
+  [the 2026 list](../old/2026_topic_list.txt). Its 281 slides retain all 90 component-image
   references from the 125-slide converted draft. The annual 2021-2026 decks supply additional
   questions and examples; primary sources support scientific updates. Notes identify source
   slides. Representation does not mean verbatim preservation: substantive revisions are below.
@@ -113,15 +113,15 @@ rewriting the instructor's personal positions still requires instructor judgment
 
 | C page | Original slide | Completed check and primary evidence |
 | ---: | ---: | --- |
-| 141 | 60 | Aadhaar becomes a measurement/identity comparison with consent, access, and error questions. [UIDAI biometric capture](https://uidai.gov.in/en/298-faqs/enrolment-update/enrolment-partners-ecosystem-partners/2016-what-are-the-uidai-guidelines-for-biometric-data-capture.html) and [authentication](https://uidai.gov.in/en/contact-support/have-any-question/304-faqs/authentication/for-residents.html) support the bounded description. |
-| 181 | 81 | Worked examples replace the food-category answer key. [FDA food and feed](https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals) and [plant varieties](https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties) distinguish the organism, ingredient, and production method. |
-| 190 | 95 | Correct LibertyLink to transgenic glufosinate tolerance; identify the conventionally bred, imidazolinone-tolerant Clearfield sunflower X81359. [BASF](https://www.basf.com/au/en/media/news-releases/anz/2021/10/new-libertylink-gives-australian-canola-growers-added-in-crop-fl) and [CFIA decision DD2005-50](https://inspection.canada.ca/en/plant-varieties/plants-novel-traits/approved-under-review/decision-documents/dd2005-50) replace Reddit as factual authority. |
-| 200 | 73 | Ask explicitly about formulation, exposure, endpoint, and inference. [IARC's assessment](https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/) supplies a concrete example of assessment scope, without inventing a new instructor verdict. |
-| 201-203 | 74-76 | Separate the bee paper's adult-worker, colonization, and pathogen-challenge experiments; correct the dose and recapture/sample denominators. The headline and critical questions remain. Use [Motta et al. (2018)](https://doi.org/10.1073/pnas.1803880115), including the [author-hosted paper and supplement](https://people.tamu.edu/~erick.motta/papers/motta2018pnas.pdf). |
-| 220 | 105 | Compare [Ghana ecology research](https://targetmalaria.org/about-us/where-we-operate/ghana/) with the dated [January 2026 Uganda contained-use report](https://targetmalaria.org/media/fact-sheets/target-malaria-uganda/). Keep the old deployment forecast in historical notes rather than presenting it as a deadline. |
-| 240 | 119 | Distinguish [FDA's salmon approval](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/aquadvantage-salmon) from the company's subsequent operations using [AquaBounty's 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1603978/000160397826000029/aqb-20251231x10k.htm). Legacy salmon sales and AgGenetics claims remain in historical notes. |
+| 164 | 60 | Aadhaar becomes a measurement/identity comparison with consent, access, and error questions. [UIDAI biometric capture](https://uidai.gov.in/en/298-faqs/enrolment-update/enrolment-partners-ecosystem-partners/2016-what-are-the-uidai-guidelines-for-biometric-data-capture.html) and [authentication](https://uidai.gov.in/en/contact-support/have-any-question/304-faqs/authentication/for-residents.html) support the bounded description. |
+| 209 | 81 | Worked examples replace the food-category answer key. [FDA food and feed](https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals) and [plant varieties](https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties) distinguish the organism, ingredient, and production method. |
+| 218 | 95 | Correct LibertyLink to transgenic glufosinate tolerance; identify the conventionally bred, imidazolinone-tolerant Clearfield sunflower X81359. [BASF](https://www.basf.com/au/en/media/news-releases/anz/2021/10/new-libertylink-gives-australian-canola-growers-added-in-crop-fl) and [CFIA decision DD2005-50](https://inspection.canada.ca/en/plant-varieties/plants-novel-traits/approved-under-review/decision-documents/dd2005-50) replace Reddit as factual authority. |
+| 229 | 73 | Ask explicitly about formulation, exposure, endpoint, and inference. [IARC's assessment](https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/) supplies a concrete example of assessment scope, without inventing a new instructor verdict. |
+| 230-232 | 74-76 | Separate the bee paper's adult-worker, colonization, and pathogen-challenge experiments; correct the dose and recapture/sample denominators. The headline and critical questions remain. Use [Motta et al. (2018)](https://doi.org/10.1073/pnas.1803880115), including the [author-hosted paper and supplement](https://people.tamu.edu/~erick.motta/papers/motta2018pnas.pdf). |
+| 251 | 105 | Compare [Ghana ecology research](https://targetmalaria.org/about-us/where-we-operate/ghana/) with the dated [January 2026 Uganda contained-use report](https://targetmalaria.org/media/fact-sheets/target-malaria-uganda/). Keep the old deployment forecast in historical notes rather than presenting it as a deadline. |
+| 273 | 119 | Distinguish [FDA's salmon approval](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/aquadvantage-salmon) from the company's subsequent operations using [AquaBounty's 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1603978/000160397826000029/aqb-20251231x10k.htm). Legacy salmon sales and AgGenetics claims remain in historical notes. |
 
-The existing page 243 comparison also dates the PRLR-SLICK cattle risk review and supplement,
+The existing page 276 comparison also dates the PRLR-SLICK cattle risk review and supplement,
 using [FDA's risk-reviewed list](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas).
 It distinguishes that pathway from GalSafe approval; neither record proves current retail supply.
 All checks above used primary sources accessed October 8, 2026. They are bounded corrections to
@@ -135,9 +135,28 @@ underlying slides are ready to teach without inspection.
 
 | C page | Original slide | Review needed |
 | ---: | ---: | --- |
-| 188 | 93 | Review the instructor's original GMO opinion wording. |
-| 198 | 71 | Compare the Roundup Ready graphic with the unsupported source frame and decide its current teaching purpose. |
-| 204 | 77 | Review the instructor's original glyphosate opinion wording. |
+| 216 | 93 | Review the instructor's original GMO opinion wording. |
+| 227 | 71 | Compare the Roundup Ready graphic with the unsupported source frame and decide its current teaching purpose. |
+| 233 | 77 | Review the instructor's original glyphosate opinion wording. |
+
+## Divider hierarchy cleanup
+
+The subsequent cleanup adds 33 numbered `subsection` slides, one before each topic overview.
+Five chapter `section` slides retain the boundaries confirmed in the 2026 deck under `old/`;
+Brainbow remains in Chapter 15. Twelve internal legacy `section` slides become ordinary
+`title-only` content slides, preserving their wording and source notes. The Summary divider
+remains a major closing transition. C now has 281 slides; current page references above and
+in the topic guide include the new dividers. Earlier validation counts and receipts below
+describe the previous 248-slide version.
+
+Strict native lint passes with 281 slides and 90 image references. The rebuilt ODP and PDF
+each contain 281 slides; all 33 topic divider headings are present in the PDF. Source comparison
+confirms all 248 prior slides remain in order with only the 12 intended layout conversions.
+Poppler renders of all 33 topic dividers, five chapter dividers, and 12 converted content slides
+confirm readable text and the distinct chapter/topic treatments. The 89 Markdown-link checks
+pass. Snapshots, page mapping, and rendered evidence are in
+`output/biotech_lect06_review/divider_cleanup/`. The initial sandboxed PDF export exited with
+status -6; the permitted build outside the sandbox completed successfully.
 
 ## Validation and visual review
 

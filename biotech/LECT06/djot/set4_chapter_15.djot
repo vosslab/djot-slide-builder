@@ -4,6 +4,10 @@ color-theme: biotechnology
 
 # Chapter 15: Plants and cell labeling
 
+=== layout: subsection
+
+# Topic 24: Agrobacterium
+
 === layout: one-panel
 
 # Topic 24: Agrobacterium
@@ -23,7 +27,7 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.aphis.usda.gov/biotechnology
 https://www.aphis.usda.gov/vacatur-2020-regulations
 
-=== layout: section
+=== layout: title-only
 
 # 24. Transgenic Plants
 
@@ -127,6 +131,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.aphis.usda.gov/biotechnology
 https://www.aphis.usda.gov/vacatur-2020-regulations
 
+=== layout: subsection
+
+# Topic 25: Gene guns
+
 === layout: one-panel
 
 # Topic 25: Gene guns
@@ -209,6 +217,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.aphis.usda.gov/vacatur-2020-regulations
 https://www.aphis.usda.gov/am-i-regulated
 
+=== layout: subsection
+
+# Topic 26: Plant transgenes
+
 === layout: one-panel
 
 # Topic 26: Plant transgenes
@@ -227,7 +239,7 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
 
-=== layout: section
+=== layout: title-only
 
 # 26. Vaccines
 
@@ -410,6 +422,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-and-food-animals
 
+=== layout: subsection
+
+# Topic 27: Monocultures
+
 === layout: one-panel
 
 # Topic 27: Monocultures
@@ -429,11 +445,11 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.nature.com/articles/s41467-017-01670-6
 https://pmc.ncbi.nlm.nih.gov/articles/PMC12392930/
 
-=== layout: section
+=== layout: title-only
 
 # 27. Changing inherited traits
 
-## Breeding and genetic engineering
+Breeding and genetic engineering
 
 @notes
 
@@ -441,11 +457,11 @@ Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 88.
 Converted layout or wording reviewed against the original slide. Original text and import diagnostics are retained in the review evidence.
 2026 topic 27: monocultures. Original content retained and regrouped.
 
-=== layout: section
+=== layout: title-only
 
 # 27. Traditional breeding
 
-## Selecting inherited variation
+Selecting inherited variation
 
 @notes
 
@@ -465,11 +481,11 @@ Converted layout or wording reviewed against the original slide. Original text a
 Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 90.
 2026 topic 27: monocultures. Original content retained and regrouped.
 
-=== layout: section
+=== layout: title-only
 
 # 27. Mutation breeding
 
-## Creating variation, then selecting
+Creating variation, then selecting
 
 @notes
 
@@ -564,6 +580,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.nature.com/articles/s41467-017-01670-6
 https://pmc.ncbi.nlm.nih.gov/articles/PMC12392930/
 
+=== layout: subsection
+
+# Topic 28: GMO plants + nature
+
 === layout: one-panel
 
 # Topic 28: GMO plants + nature
@@ -583,7 +603,7 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
 https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
 
-=== layout: section
+=== layout: title-only
 
 # 28. GMO Controversy
 
@@ -592,7 +612,7 @@ https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-variet
 Source: ../old/lect06c-set_4_TP-chapter_12-16_material.odp, slide 68.
 2026 topic 28: GMO plants + nature. Original content retained and regrouped.
 
-=== layout: section
+=== layout: title-only
 
 # 28. GMO Survey
 
@@ -842,7 +862,7 @@ https://www.basf.com/au/en/media/news-releases/anz/2021/10/new-libertylink-gives
 https://inspection.canada.ca/en/plant-varieties/plants-novel-traits/approved-under-review/decision-documents/dd2005-50
 Original discussion lead: https://www.reddit.com/r/askscience/comments/62e54o/
 
-=== layout: section
+=== layout: title-only
 
 # 28. Can you name a few good things about GMOs?
 
@@ -948,6 +968,10 @@ Prompt source: ../old/Fall_2026_Talking_Points_Set_4-Environmental_and_Synthetic
 Expanded instructor explanation and discussion, retaining the source questions. Historical student contributions are teaching leads, not scientific authority.
 https://www.who.int/news-room/questions-and-answers/item/FAQ-genetically-modified-foods
 https://www.fda.gov/food/food-new-plant-varieties/understanding-new-plant-varieties
+
+=== layout: subsection
+
+# Topic 29: Glyphosate
 
 === layout: one-panel
 
@@ -1196,6 +1220,10 @@ Expanded instructor explanation and discussion, retaining the source questions. 
 https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/
 https://www.efsa.europa.eu/en/news/glyphosate-no-critical-areas-concern-data-gaps-identified
 https://pmc.ncbi.nlm.nih.gov/articles/PMC6187125/
+
+=== layout: subsection
+
+# Topic 30: Brainbow
 
 === layout: one-panel
 

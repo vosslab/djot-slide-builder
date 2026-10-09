@@ -61,12 +61,12 @@ color-theme: biotechnology
 
 @body
 
-- Summer 2002\: Holmes and Balwani meet on a trip to Beijing
-- September 2002\: Holmes starts at Stanford
-- 2003\: Holmes founds Theranos at age 19
-- March 2004\: Holmes drops out of Stanford
-- 2004-2008\: Theranos thrives with early funding
-- 2009\: Ramesh “Sunny” Balwani joins the company as the number-two executive.
+- [*Summer 2002*]{underline=true}: Holmes and Balwani meet on a trip to Beijing
+- [*September 2002*]{underline=true}: Holmes starts at Stanford
+- [*2003*]{underline=true}: Holmes founds Theranos at age 19
+- [*March 2004*]{underline=true}: Holmes drops out of Stanford
+- [*2004-2008*]{underline=true}: Theranos thrives with early funding
+- [*2009*]{underline=true}: Ramesh “Sunny” Balwani joins the company as the number-two executive.
   - Ms. Holmes doesn’t widely disclose that the two, who met the summer before she started college, are also romantically involved.
 
 === layout: one-panel
@@ -75,11 +75,11 @@ color-theme: biotechnology
 
 @body
 
-- 2011\: Former U.S. Secretary of State George Shultz joins Theranos’s board
-- September 2013\: Theranos launches its Walgreens partnership
-- December 2014\: Elizabeth Holmes delivers a Ted Talk
-- September 2014\: Holmes named one of the richest women in America by Forbes
-- December 2014\: Theranos has raised \$400 million, Holmes gets article in the New Yorker that tips off John Carreyrou
+- [*2011*]{underline=true}: Former U.S. Secretary of State George Shultz joins Theranos’s board
+- [*September 2013*]{underline=true}: Theranos launches its Walgreens partnership
+- [*December 2014*]{underline=true}: Elizabeth Holmes delivers a Ted Talk
+- [*September 2014*]{underline=true}: Holmes named one of the richest women in America by Forbes
+- [*December 2014*]{underline=true}: Theranos has raised \$400 million, Holmes gets article in the New Yorker that tips off John Carreyrou
 
 === layout: one-panel
 
@@ -87,12 +87,12 @@ color-theme: biotechnology
 
 @body
 
-- February 2015\: Criticism from the medical community for not publishing any of its research
-- July 2015\: FDA clears the Theranos HSV-1 antibody test
-- October 15, 2015\: Carreyrou’s first damning report
-- October 27, 2015\: FDA releases reports and stating that the company had used uncleared and unsuitable medical devices to run its blood tests.
-- November 2015\: Safeway deal folds
-- December 2015\: Carreyrou strikes again
+- [*February 2015*]{underline=true}: Criticism from the medical community for not publishing any of its research
+- [*July 2015*]{underline=true}: FDA clears the Theranos HSV-1 antibody test
+- [*October 15, 2015*]{underline=true}: Carreyrou’s first damning report
+- [*October 27, 2015*]{underline=true}: FDA releases reports and stating that the company had used uncleared and unsuitable medical devices to run its blood tests.
+- [*November 2015*]{underline=true}: Safeway deal folds
+- [*December 2015*]{underline=true}: Carreyrou strikes again
 
 @notes
 
@@ -105,11 +105,11 @@ Clearance of this one assay did not establish the performance of all Theranos te
 
 @body
 
-- January 2016\: lab inspection uncovered deficient practices that pose immediate jeopardy to patient health and safety
-- May 2016\: Balwani steps down; Theranos voids two years of blood tests
-- June 2016\: Holmes net worth revised to \$0; Theranos loses Walgreens
-- July 2016\: Holmes is banned from running labs for two years
-- October 2016\: Theranos closes its medical lab operations amid regulatory scrutiny
+- [*January 2016*]{underline=true}: lab inspection uncovered deficient practices that pose immediate jeopardy to patient health and safety
+- [*May 2016*]{underline=true}: Balwani steps down; Theranos voids two years of blood tests
+- [*June 2016*]{underline=true}: Holmes net worth revised to \$0; Theranos loses Walgreens
+- [*July 2016*]{underline=true}: Holmes is banned from running labs for two years
+- [*October 2016*]{underline=true}: Theranos closes its medical lab operations amid regulatory scrutiny
 
 @notes
 
@@ -122,13 +122,13 @@ Clearance of this one assay did not establish the performance of all Theranos te
 
 @body
 
-- October 2016\: Theranos investor sues the company; Theranos downsizes
-- November 2016\: Walgreens sues Theranos
-- January 2017\: More layoffs, followed by a failed lab inspection
-- March 2018\: Theranos is charged with massive fraud
-- May 2018\: “Bad Blood” book is released
-- June 2018\: Holmes and Balwani indicted
-- September 2018\: Theranos is forced to close
+- [*October 2016*]{underline=true}: Theranos investor sues the company; Theranos downsizes
+- [*November 2016*]{underline=true}: Walgreens sues Theranos
+- [*January 2017*]{underline=true}: More layoffs, followed by a failed lab inspection
+- [*March 2018*]{underline=true}: Theranos is charged with massive fraud
+- [*May 2018*]{underline=true}: “Bad Blood” book is released
+- [*June 2018*]{underline=true}: Holmes and Balwani indicted
+- [*September 2018*]{underline=true}: Theranos is forced to close
 
 === layout: one-panel
 
@@ -136,13 +136,13 @@ Clearance of this one assay did not establish the performance of all Theranos te
 
 @body
 
-- March 2019\: Theranos gets documentary
-- June 2019\: Trial scheduled for July 2020
-- August 2020\: The Holmes and Balwani trials have been severed–legalspeak for separated
-- December 2020\: Due to COVID Holmes’ criminal trial delayed til 2021
-- March 12, 2021\: Ms. Holmes tells the court she is pregnant, delaying her criminal trial once again
-- July 2021\: Ms. Holmes gives birth to a baby boy
-- August 31, 2021\: Trial finally begins after delays
+- [*March 2019*]{underline=true}: Theranos gets documentary
+- [*June 2019*]{underline=true}: Trial scheduled for July 2020
+- [*August 2020*]{underline=true}: The Holmes and Balwani trials have been severed–legalspeak for separated
+- [*December 2020*]{underline=true}: Due to COVID Holmes’ criminal trial delayed til 2021
+- [*March 12, 2021*]{underline=true}: Ms. Holmes tells the court she is pregnant, delaying her criminal trial once again
+- [*July 2021*]{underline=true}: Ms. Holmes gives birth to a baby boy
+- [*August 31, 2021*]{underline=true}: Trial finally begins after delays
 
 === layout: section
 

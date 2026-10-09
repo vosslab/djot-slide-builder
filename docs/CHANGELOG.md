@@ -24,6 +24,18 @@
 
 ### Fixes and Maintenance
 
+- Emphasize all 36 dates on the six Lecture 05C Theranos timeline slides with bold, underlined
+  text, matching genetics definition terms while retaining event wording and slide order.
+
+- Combine Biotechnology Lecture 04 Talking Points Set 3 through one include master in chapter
+  order. Remove three intermediate closers, keeping one final THE END and six hidden answers.
+  Folder builds now select one combined talking-points deck plus announcements and project decks.
+
+- Give all 33 Biotechnology Lecture 06C topics numbered subsection dividers. Retain five major
+  chapter dividers at boundaries verified in the 2026 source deck under `old/`; convert 12 internal
+  legacy sections to ordinary content slides. Preserve source notes and figures, and update the
+  topic guide and review page references for the 281-slide deck.
+
 - Resolve nine factual Set 4 review markers using primary sources. Correct LibertyLink/Clearfield
   examples and the bee study's experimental doses and sample denominators; date the mosquito
   research, salmon business history, and cattle review records. Replace factual placeholders with
@@ -48,6 +60,19 @@
   historical examples and sample proposals from verified current facts.
 
 ### Developer Tests and Notes
+
+- Theranos timeline emphasis: strict native lint passes (37 slides, 25 images); ODP/PDF builds
+  succeed. Inspect Poppler renders of all six timeline slides for emphasis, wrapping, and clipping.
+
+- Lecture 04 combined Set 3: native folder lint selects three masters (457 slides, 709 images).
+  The single talking-points ODP builds with 389 slides; verify exact chapter concatenation, six
+  hidden answers, one final closer, and unchanged content apart from three removed closers.
+  All 89 Markdown-link checks and `git diff --check` pass.
+
+- Lecture 06C divider cleanup: strict native lint passes (281 slides, 90 images); ODP/PDF builds
+  and artifact counts pass. Source comparison retains all 248 prior slides in order. Visually
+  check all 50 added or affected divider/content pages; all 89 Markdown-link tests pass.
+  LibreOffice's sandboxed PDF export exits -6; the permitted build outside the sandbox succeeds.
 
 - Business-plan visual revision: strict folder lint passes for four masters, 395 slides, and
   141 image references. D capacity and ODP/PDF builds pass; rendered review checks all 57 pages

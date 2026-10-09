@@ -7,6 +7,42 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+### Theranos timeline date emphasis
+
+**Decision.** Timeline date labels use the existing bold, underlined definition-term markup.
+
+**Why.** Matching the genetics definition slides makes dates easy to locate within each event.
+
+**Consequence.** All 36 dates across six timeline slides gain native editable emphasis.
+Event wording and slide order stay intact.
+
+**Owner.** [lect05c-theranos.djot](../biotech/LECT05/djot/lect05c-theranos.djot).
+
+### Lecture 04 combined talking points
+
+**Decision.** One Set 3 master includes the four existing chapter files in C/D/E/F order,
+with a single final closer. Folder discovery builds the master as one deck.
+
+**Why.** The instructor wants one ODP while retaining separately editable chapter sources.
+
+**Consequence.** The combined deck retains six hidden answer slides and all teaching content;
+only three intermediate closers are removed. Announcements and project slides stay separate.
+
+**Owner.** [lect04c-talking_points_set_3.djot](../biotech/LECT04/djot/lect04c-talking_points_set_3.djot).
+
+### Lecture 06C divider hierarchy
+
+**Decision.** Each of the 33 Set 4 topics begins with a `subsection` divider; chapter starts
+use `section`. Internal legacy section slides become `title-only` content slides.
+
+**Why.** Consistent layout semantics distinguish chapter changes from numbered talking points.
+The 2026 deck under `old/` confirms chapter starts before topics 1, 14, 22, 24, and 31.
+
+**Consequence.** The combined deck has 281 slides, retaining existing teaching content and notes.
+Brainbow stays in Chapter 15; the Summary remains a major closing transition.
+
+**Owner.** [SET4_TOPIC_GUIDE.md](../biotech/LECT06/djot/SET4_TOPIC_GUIDE.md).
+
 - **Decision.** Lecture 06D uses source PDF crops as writing/design examples, with native prompts,
   tables, quotations, and annotations. Six included section files produce one combined deck.
   **Why.** Actual student examples make the guidance concrete while keeping instruction editable;
