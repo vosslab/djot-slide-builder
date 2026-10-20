@@ -4,7 +4,7 @@ Sept 11, 2025
 
 DO NOT CHANGE
 THE THEME!!!
-We are using the “Tropic” theme and that is it.
+We are using the "Tropic" theme and that is it.
 
 Talking Points Guide
 
@@ -17,7 +17,7 @@ Overall Setup of Talking Points Assignment
 
 
 Talking Points Assigned
-Talking points were assigned during last week’s class.
+Talking points were assigned during last week's class.
 Each student was assigned to one or two talking points based on class size.
 Collaboration with Classmates Expectation
 Each talking point will have at least two students talking about it.
@@ -27,13 +27,13 @@ Keep It Concise: 60 seconds per talking point is short;
 Stay on topic and be impactful.
 Earn Extra Discussion Marks:
 Contributing gets you more discussion points.
-If you have something interesting to say about someone else’s talking point, you can score some extra points.
+If you have something interesting to say about someone else's talking point, you can score some extra points.
 Asking questions of other students gets you discussion marks as well.
 Use the chat for the question asking and answering
 
 Formatting Your Talking Point Slide Before Class
 Edit and update your slide
-Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide.
 Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
 Add several pictures and some text.
 Movies and animated gifs are discouraged but not forbidden.
@@ -41,8 +41,8 @@ No external audio is allowed. Movies will be muted.
 Limit Text: No complete sentences on slides; use short phrases and keywords only.
 Content Preparation
 Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
-Try to be unique and creative with your slide’s look and content.
-Don’t just copy the book; use the internet for research
+Try to be unique and creative with your slide's look and content.
+Don't just copy the book; use the internet for research
 Provide your own perspective.
 Minimize jargon to make it accessible to all classmates.
 
@@ -71,7 +71,7 @@ Student Selection
 Talking Point #1: DNA isolation -- Shreya and Tania
 Talking Point #2: DNA gels -- Owais and Griffin
 Talking Point #3: DNA detection -- Rocelle
-Talking Point #4: FISH 🐠 -- Sadia and Karen
+Talking Point #4: FISH &#x1F420; -- Sadia and Karen
 Talking Point #5: SNP arrays -- Binay
 Talking Point #6: D2C gene tests -- Ananya and Jacky
 Talking Point #7: mitochondria DNA -- Isabella and Ashia
@@ -99,7 +99,7 @@ If you missed class, you must email me to select an available topic from the Top
 Question Asker #1: DNA isolation -- Erika
 Question Asker #2: DNA gels -- Gourav and Hrithik
 Question Asker #3: DNA detection -- Wanqian
-Question Asker #4: FISH 🐠 -- Ayesha
+Question Asker #4: FISH &#x1F420; -- Ayesha
 Question Asker #5: SNP arrays -- Dhavalsinh and Raj
 Question Asker #6: D2C gene tests -- Mansi V. and Pal
 Question Asker #7: mitochondria DNA -- Olivia
@@ -126,7 +126,7 @@ Helper Question Askers
 Chapter 3
 Recombinant DNA Technology
 
-#1 DNA Isolation  
+#1 DNA Isolation
 What are the principal methodologies for isolating DNA from cells?
 How do the isolation processes differ between eukaryotic and prokaryotic cells, particularly focusing on cell lysis mechanisms?
 How do mechanical methods of cell lysis differ from chemical methods?
@@ -149,7 +149,7 @@ Detergents, enzymes
 Ex: SDS, Triton X-100, lysozyme
 Advantages: gentle, minimal equipment
 Disadvantages: chemical residues interference
-#1 DNA Isolation - Tania  
+#1 DNA Isolation - Tania
 Lysozyme: Break bacterial cells walls, target peptidoglycan
 Proteinase K: digests proteins & nucleases, protects integrity
 Mechanical:
@@ -191,7 +191,7 @@ Explain the Southern Blotting process, particularly focusing on how DNA is trans
 (Note: do not talk about protein gels, we will discuss them next week)
 
 #2 Nucleotide      Gels - Griffin
-I’m Dirty Dan
+I'm Dirty Dan
 Dangers of EtBr
 Carcinogenic Controversy
 Slide Simplicity Award
@@ -202,8 +202,8 @@ Explain the Southern Blotting process, particularly focusing on how DNA is trans
 
 #3 Detecting DNA
 What aspects of the chemical structure of DNA nucleotides are responsible for its ability to absorb UV light?
-Describe the quantitative methods in UV spectroscopy for DNA concentration measurement. Cover topics such as A260, the A260/A280 ratio. 
-What are the molar absorptivity coefficients (ε) for ssDNA, dsDNA, and ssRNA? How do these differ among these nucleic acid types, and how does this relate to DNA melting curves?
+Describe the quantitative methods in UV spectroscopy for DNA concentration measurement. Cover topics such as A260, the A260/A280 ratio.
+What are the molar absorptivity coefficients (&epsilon;) for ssDNA, dsDNA, and ssRNA? How do these differ among these nucleic acid types, and how does this relate to DNA melting curves?
 Describe the three DNA labeling techniques: radioactive labeling, fluorescence detection, and chemical tagging, that are used to detect specific DNA sequences from a larger DNA sample (see page 70 in the textbook).
 Which DNA labeling technique is most suitable for applications requiring real-time monitoring, and why?
 How does the intrinsic nature of DNA make it suitable for UV spectroscopy?
@@ -217,19 +217,19 @@ Fluorescence
 uses fluorescent molecules to visualize or quantify DNA by measuring the light they emit after being excited by a specific wavelength of light
 EX: FISH, SNP DNA microarray
 a technique that attaches a radioactive isotope to a molecule, to track its movement and fate within a system
-EX: Southern Blotting (DNA), Northern Blotting (RNA)	
+EX: Southern Blotting (DNA), Northern Blotting (RNA)
 
-attaching chemical tags to specific molecules, allowing for their detection and identification 
+attaching chemical tags to specific molecules, allowing for their detection and identification
 EX: Mass spectrometry, PET scanners, forensic analysis
 
-RT-qPCR best for real time monitoring 
+RT-qPCR best for real time monitoring
 Clear Message Award
 What aspects of the chemical structure of DNA nucleotides are responsible for its ability to absorb UV light?
 presence of conjugated systems within their nitrogenous bases
-Describe the quantitative methods in UV spectroscopy for DNA concentration measurement. Cover topics such as A260, the A260/A280 ratio. 
+Describe the quantitative methods in UV spectroscopy for DNA concentration measurement. Cover topics such as A260, the A260/A280 ratio.
 based on the Beer-Lambert law, which establishes a direct relationship between the absorbance of UV light and the concentration of the absorbing substance. The DNA's nitrogenous bases absorb UV light most strongly at a wavelength of 260 nm. The A260/A280 ratio is a spectrophotometric measurement used to assess the purity of nucleic acid samples (DNA or RNA). Pure DNA typically has an A260/A280
-What are the molar absorptivity coefficients (ε) for ssDNA, dsDNA, and ssRNA?
-for double-stranded DNA (dsDNA), it's approximately 0.020 (µg/mL)⁻¹cm⁻¹, while for single-stranded DNA (ssDNA) and RNA (ssRNA), it is 0.027 (µg/mL)⁻¹cm⁻¹ and 0.025 (µg/mL)⁻¹cm⁻¹
+What are the molar absorptivity coefficients (&epsilon;) for ssDNA, dsDNA, and ssRNA?
+for double-stranded DNA (dsDNA), it's approximately 0.020 (&#xB5;g/mL)-&#xB9;cm-&#xB9;, while for single-stranded DNA (ssDNA) and RNA (ssRNA), it is 0.027 (&#xB5;g/mL)-&#xB9;cm-&#xB9; and 0.025 (&#xB5;g/mL)-&#xB9;cm-&#xB9;
 How do these differ among these nucleic acid types, and how does this relate to DNA melting curves?
 Describe the three DNA labeling techniques: radioactive labeling, fluorescence detection, and chemical tagging, that are used to detect specific DNA sequences from a larger DNA sample (see page 70 in the textbook).
 Which DNA labeling technique is most suitable for applications requiring real-time monitoring, and why?
@@ -239,15 +239,15 @@ What are three techniques (from the textbook) to detect specific DNA sequences u
 
 
 #4 FISH
-Explain Fluorescence in situ hybridization (FISH). 
-What does the latin phrase "in situ" mean? What does “in situ” mean in this context?
+Explain Fluorescence in situ hybridization (FISH).
+What does the latin phrase "in situ" mean? What does "in situ" mean in this context?
 Discuss the molecular design strategies for fluorescent probes used in FISH.
 What are some specialized applications of FISH in the field of genetic research and diagnostics?
 Explain Fluorescence in situ hybridization (FISH). What does "in situ" mean in general and in this context?
 Discuss the molecular design strategies for fluorescent probes used in FISH.
 What are some specialized applications of FISH in the field of genetic research and diagnostics?
 
-1990’s - Present 
+1990's - Present
 This is O-FISH-IALLY the Best!
 #4 SADIA
 Best Visuals
@@ -269,19 +269,19 @@ What are some specialized applications of FISH in the field of genetic research 
 
 #5 SNP DNA Microarrays
 What is a SNP or "snip", and why do scientists care about tiny one-letter DNA changes?
-How long is a typical DNA probe on a SNP microarray, and does it include the SNP site itself? How does a microarray “spot” the difference between two DNA bases? How are probes designed so they catch one SNP version (A, G, C, or T) but not the others?
+How long is a typical DNA probe on a SNP microarray, and does it include the SNP site itself? How does a microarray "spot" the difference between two DNA bases? How are probes designed so they catch one SNP version (A, G, C, or T) but not the others?
 How do fluorescent signals tell you which SNP version is present? How many SNPs can a modern microarray measure on a single chip? How many samples can a microarray lab process in a day?
 What is SNPedia, and what kind of information does it contain? Choose an interesting an SNP example and read about it.
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #5 SNP DNA Microarrays - Binay
 SNP - Single Nucleotide polymorphism
 How long DNA probe SNP - 20-25 bases long . site in the middle
-How microarray spot different two DNA bases - complementary base-pairing. One mismatch weakens the binding 
+How microarray spot different two DNA bases - complementary base-pairing. One mismatch weakens the binding
 How probes are designed to catch one SNP version - multiple probes, same sequences except SNP sit. Places near center.
 How fluorescent signals show which SNP version is present - signals AA genotype
 
@@ -289,7 +289,7 @@ How fluorescent signals show which SNP version is present - signals AA genotype
 Clear Message Award
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
@@ -310,7 +310,7 @@ Can these tests produce clinically actionable results? What are the limitations?
 Examples of Companies
 23andME
 Ancestry DNA
-Gene by Gene 
+Gene by Gene
 Kailos Genetics
 
 
@@ -319,23 +319,23 @@ Ethical Dilemmas
 Genetic Discrimination
 Informed Consent
 Misuse of Information
-Psychological Impact  
-Types of DNA Analyses 
-SNP Genotyping 
+Psychological Impact
+Types of DNA Analyses
+SNP Genotyping
 Whole Exome Sequencing (WES)
 Whole Genome Sequencing (WGS)
 Data Reliability
-Poor Health Literacy 
+Poor Health Literacy
 Poor Genetic Literacy
 Clinical: Interpretation, accuracy, quality standards
 DTC: False positive/negative, less accuracy
- 
+
 
 Limitations
 Misinterpretation of data, lack of scientific knowledge, counseling,
-Regulation 
+Regulation
 FDA, FTC,CMS
-#6 Direct-to-Consumer Genetic Testing 
+#6 Direct-to-Consumer Genetic Testing
 Most Informative
 Award
 What types of DNA analyses, like SNP genotyping or whole-exome sequencing, are commonly offered in direct-to-consumer genetic tests?
@@ -349,8 +349,8 @@ First testing was marketed directly to consumers
 1996
 First D2C Companies were founded
 2005
-The Food and Drug Administration (FDA) initiated regulatory proceedings against DTC-GT companies. 
-The FDA approved DTC-GT carrier screens. 
+The Food and Drug Administration (FDA) initiated regulatory proceedings against DTC-GT companies.
+The FDA approved DTC-GT carrier screens.
 
 2010-2015
 The US Government Accountability Office (GAO) investigated DTC-GT companies.
@@ -396,12 +396,12 @@ LHON: (Leber's Hereditary Optic Neuropathy)
 Vision loss
 Tremors
 Ataxia - coordination issues
-Heteroplasmy 
-– having more than one mitochondrial DNA (mtDNA) in a cell or individual
+Heteroplasmy
+- having more than one mitochondrial DNA (mtDNA) in a cell or individual
 Heteroplasmy in relation to mitochondrial disease:
-Mitochondrial disease is related to the proportion of mutant mtDNA 
+Mitochondrial disease is related to the proportion of mutant mtDNA
 Patient can carry a mutation and be asymptomatic if mtDNA proportions are low
-“Healthy humans” have low levels (<1%) of mtDNA mutations
+"Healthy humans" have low levels (<1%) of mtDNA mutations
 Slide Simplicity Award
 What types of DNA analyses, like SNP genotyping or whole-exome sequencing, are commonly offered in direct-to-consumer genetic tests?
 How do these consumer-oriented tests measure up in terms of data reliability compared to clinical genetic tests?
@@ -447,31 +447,31 @@ Compare and contrast low-copy-number plasmids and high-copy-number plasmids in t
 Take an example of a commercial plasmid other than pJet 1.2 and discuss its specific utilities and advantages in a laboratory setting.
 
 #8 Plasmid Vectors - Niyati
-1 ORIGIN 
+1 ORIGIN
 
 
 
-Low copy number plasmids 
+Low copy number plasmids
 ~ make 5-20 copies per cell
-Advantage: stable, low stress on cell, good for toxic genes 
-Challenges: hard to get large amounts of dna 
+Advantage: stable, low stress on cell, good for toxic genes
+Challenges: hard to get large amounts of dna
 
 
 
 
 High copy number plasmids
 ~ make 100-500 copies per cell
-Advantage: lots of DNA/ protein, easy purification 
+Advantage: lots of DNA/ protein, easy purification
 Challenges: can stress the cell, unstable with large/toxic inserts
 
 1 ORIGIN OF REPLICATION: Controls how many copies of plasma are maintained inside the bacterial cell.
-2 SELECTABLE MARKER: Commonly and antibiotic resistance gene that lets only plasma carrying bacteria or survive. 
+2 SELECTABLE MARKER: Commonly and antibiotic resistance gene that lets only plasma carrying bacteria or survive.
 3 MULTIPLE CLONING SITE: A short DNA region with several unique enzyme sites where foreign DNA can be inserted.
 4 PROMOTER: Starts transcription so the inserted gene can be expressed as RNA or protein.
 5 REPORTER GENE: Provides a visible or measurable signal like color or fluorescent to confirm the present of the insert.
 
 
-pUC19 
+pUC19
 ~Blue or white screening: easy way to tell which bacteria have the new DNA white colonies
 ~Multiple cloning site: many options for cutting DNA and inserting a gene
 ~High copy number: get a high-yield of DNA from experiments
@@ -489,28 +489,28 @@ How do plasmid vectors ensure that the DNA fragment has been inserted, e.g., the
 Compare and contrast low-copy-number plasmids and high-copy-number plasmids in terms of their applications and challenges.
 Take an example of a commercial plasmid other than pJet 1.2 and discuss its specific utilities and advantages in a laboratory setting.
 
-#9 Gene Libraries 
+#9 Gene Libraries
 What is a genomic library? Why are DNA fragments used for these libraries? Why are they stored in an organism rather than on a computer?
 What is the minimal number of genes required for an organism to survive?
 List and describe the six basic steps (see page 83 in the textbook) involved in constructing a genomic library.
 What is a cDNA library? Why must reverse transcriptase be used to create a cDNA library for eukaryotic expression studies? What information is missing in a cDNA library compared to a genomic library?
-What is “reverse genetics”? How can a cDNA library help in understanding gene function?
+What is "reverse genetics"? How can a cDNA library help in understanding gene function?
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
 Key Points to Remember:
 Stored in host cells
-need ~500–1000 genes
-cDNA = from mRNA 
+need ~500-1000 genes
+cDNA = from mRNA
 (no introns, needs reverse transcriptase)
 Genomic vs cDNA library
 Forward vs reverse genetics
 -Bansari
 Data Presentation Mastery
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
@@ -535,7 +535,7 @@ List commercially available enzymes used for in vitro DNA synthesis and describe
 
 
 In vitro - in the glass
-In vivo - within the living 
+In vivo - within the living
 Taq polymerase - thermostable DNA polymerase
 PCR
 Slide Simplicity Award
@@ -600,12 +600,12 @@ Discuss the temperature cycles in PCR and their impact on DNA replication.
 How has the development of thermally stable polymerases revolutionized PCR?
 
 #12 Invention of PCR - Marylyn
-Polymerase Chain Reaction (PCR) 
-Amplifies a specific DNA segment 
+Polymerase Chain Reaction (PCR)
+Amplifies a specific DNA segment
 Invented by Kary Mullis in 1983
 Discovery of Taq polymerase
 In 1988 the first automated thermal cyclers were introduce
- 
+
 Most Concise
 Award
 Provide a general explanation of Polymerase Chain Reaction (PCR) and its applications.
@@ -621,10 +621,10 @@ Thermally Stable Polymerases- Before Taq, PCR was manual labor. Now, it's automa
 Most Informative
 Award
 Hello everyone!
-Degenerate primers may seem confusing at first but let’s try to understand together.Normally, you need to know a DNA sequence to make a perfect primer. But, what if you don’t? Degenerate primers are the answer. If we know the amino acid sequence of a protein, we can create a set of slightly different primers that cover all of the possible DNA codes for those amino acids. This mixture ensures at least one primer will be a perfect fit, allowing us to find and amplify the gene.
+Degenerate primers may seem confusing at first but let's try to understand together.Normally, you need to know a DNA sequence to make a perfect primer. But, what if you don't? Degenerate primers are the answer. If we know the amino acid sequence of a protein, we can create a set of slightly different primers that cover all of the possible DNA codes for those amino acids. This mixture ensures at least one primer will be a perfect fit, allowing us to find and amplify the gene.
 
-Think of PCR as a molecular copy machine that runs in a simple, repeating loop. First, you “unzip” the original document with high heat. (201-208f) Then, you place the “start and end” markers (primers) on the document by cooling it down. (122-149f) Finally, you let the “copying arm” (polymerase) run along, creating a new copy. (162f) Each loop makes twice as many copies as you started with. If you do this 20 times you already have over a million copies.
-The reaction is heated to a high temperature to break the hydrogen bonds between the two strands of the DNA double helix. This separates the DNA into single strands, making them accessible to the primers and polymerase. 
+Think of PCR as a molecular copy machine that runs in a simple, repeating loop. First, you "unzip" the original document with high heat. (201-208f) Then, you place the "start and end" markers (primers) on the document by cooling it down. (122-149f) Finally, you let the "copying arm" (polymerase) run along, creating a new copy. (162f) Each loop makes twice as many copies as you started with. If you do this 20 times you already have over a million copies.
+The reaction is heated to a high temperature to break the hydrogen bonds between the two strands of the DNA double helix. This separates the DNA into single strands, making them accessible to the primers and polymerase.
 The temperature is lowered to allow the primers to bind (anneal) to their complementary sequences on the single-stranded DNA template.
 The temperature is raised to the optimal temperature for the DNA polymerase to synthesize new DNA strands, starting from the primers.
 
@@ -646,7 +646,7 @@ Elaborate on shotgun sequencing and how it fits into DNA sequencing.
 
 #13 Sanger Sequencing - Diana
 DNA polymerase + dNTPs
-Chain termination by ddNTP (no 3’ OH)
+Chain termination by ddNTP (no 3' OH)
 Gel electrophoresis: manual readout
 Fluorescence based: automated, higher throughput.
 Shotgun sequencing: scalable assembly from fragments
@@ -724,7 +724,7 @@ Is one technique more suitable for specific applications over the others?
 Explain the approaches used by PacBio, Oxford Nanopore, Quantapore, and Stratos for sequencing.
 Differentiate between SMRT sequencing and nanopore methods. What is a zero-mode waveguide?
 Describe MinION's nanopore technology in layman's terms.
-What are the challenges associated with long read lengths, particularly concerning error rates?	
+What are the challenges associated with long read lengths, particularly concerning error rates?
 Discuss the implications of portability in third-gen sequencing technologies for field research and diagnostics.
 (Not in book/use internet)
 Explain the approaches used by PacBio, Oxford Nanopore, Quantapore, and Stratos for sequencing.
@@ -734,24 +734,24 @@ What are the challenges associated with long read lengths, particularly concerni
 Discuss the implications of portability in third-gen sequencing technologies for field research and diagnostics.
 
 #15 Third Gen Sequencing - Erika
-What is 3rd Gen Sequencing? —>a DNA sequencing method that sequences single DNA molecules without prior amplification. 
-SMRT Sequencing 
+What is 3rd Gen Sequencing? ->a DNA sequencing method that sequences single DNA molecules without prior amplification.
+SMRT Sequencing
 (PacBio)
-VS. 
-Nanopore Sequencing 
+VS.
+Nanopore Sequencing
 Zero-Mode Waveguide(ZMW)
 Electrical detection
-Protein or synthetic nanopores embedded in a membrane. 
-The passage of a DNA/RNA molecule through the nanopore causes characteristic changes in an ionic current. 
-Electrical signals are recorded and then converted into a sequence using algorithms. 
+Protein or synthetic nanopores embedded in a membrane.
+The passage of a DNA/RNA molecule through the nanopore causes characteristic changes in an ionic current.
+Electrical signals are recorded and then converted into a sequence using algorithms.
 Optical detection.
 DNA polymerase immobilized at the bottom of each ZMW.
 The polymerase incorporates fluorescently labeled nucleotides into a growing DNA strand.
 Real-time optical signals from fluorescently tagged nucleotides are recorded.
 
 
-A sub-wavelength aperture (nanopore) in a thin metal film that acts as an optical waveguide. 
-Its function is to confine light to a tiny volume within the waveguide, creating an evanescent field that is too small for light to propagate through.   
+A sub-wavelength aperture (nanopore) in a thin metal film that acts as an optical waveguide.
+Its function is to confine light to a tiny volume within the waveguide, creating an evanescent field that is too small for light to propagate through.
 Slide Simplicity Award
 (Not in book/use internet)
 Explain the approaches used by PacBio, Oxford Nanopore, Quantapore, and Stratos for sequencing.
@@ -772,26 +772,26 @@ Discuss the implications of portability in third-gen sequencing technologies for
 #16 RT-qPCR
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #16 RT-qPCR - Gourav
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 Best Layout Design
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
@@ -802,7 +802,7 @@ How do fluorescent colors show which genes are more active or less active? How d
 What are some control spots that are used to check that the experiment worked? What is clustering analysis of expression data, and what patterns can it reveal?
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
@@ -810,78 +810,78 @@ Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 Slide Simplicity Award
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #18 CRISPR Native Bacteria Function
 How was CRISPR discovered? What does the CRISPR acronym stand for?
-What did Francisco Mojica at the University of Alicante in Spain find? How was CRISPR first identified in bacteria? What is the purpose of the repeated sequences? What organisms have been found to naturally possess CRISPR systems? 
+What did Francisco Mojica at the University of Alicante in Spain find? How was CRISPR first identified in bacteria? What is the purpose of the repeated sequences? What organisms have been found to naturally possess CRISPR systems?
 How does CRISPR function as a bacterial immune system? How did Philippe Horvath at Danisco improve their yogurt shelf life in 2005 using CRISPR?
 What does the native Cas9 nuclease protein do in bacteria?
-Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline 
+Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline
 
 #18 VIDEO: Bozeman Science: What is CRISPR?
 Published on Feb 18, 2016
 
 #18 CRISPR Native Bacteria Function - Ayesha
 CRISPR = Clustered Regularly Interspaced Short Palindromic Repeats
-(A fancy name for tiny bacterial “mugshots” of viruses!)
+(A fancy name for tiny bacterial "mugshots" of viruses!)
 Timeline Highlights:
-1993–2005: Francisco Mojica finds weird repeats → realizes bacteria store viral DNA “wanted posters.”
-2005: Alexander Bolotin discovers Cas9 = the DNA “scissors” + PAM = DNA “address label.”
-2007: Philippe Horvath uses CRISPR to save yogurt from phages → longer shelf life.
-2008–2011: Scientists find guide RNAs = CRISPR’s “GPS” for the scissors.
-2012–2013: Jennifer Doudna, Charpentier & Feng Zhang turn it into a gene-editing supertool for humans.
+1993-2005: Francisco Mojica finds weird repeats -> realizes bacteria store viral DNA "wanted posters."
+2005: Alexander Bolotin discovers Cas9 = the DNA "scissors" + PAM = DNA "address label."
+2007: Philippe Horvath uses CRISPR to save yogurt from phages -> longer shelf life.
+2008-2011: Scientists find guide RNAs = CRISPR's "GPS" for the scissors.
+2012-2013: Jennifer Doudna, Charpentier & Feng Zhang turn it into a gene-editing supertool for humans.
 How it works in bacteria:
-Virus attacks → Bacteria saves DNA snippet → Next time Cas9 cuts it up = bacterial immunity!
+Virus attacks -> Bacteria saves DNA snippet -> Next time Cas9 cuts it up = bacterial immunity!
 Most Engaging Slide
 
 #19 CRISPR/Cas9 Invention and Design
 Emmanuelle Charpentier and Jennifer Doudna are considered the pioneers of CRISPR/Cas9 technology. What did they do to create the gene editing technology from the native Cas9 protein?
 What are CRISPR RNA (crRNA) and trans-activating CRISPR RNA (tracrRNA)? How do they form the guide RNA (gRNA)? Explain how the CRISPR/Cas9 system can be programmed to target specific DNA sequences.
 What is the protospacer adjacent motif (PAM)? How does PAM restrict the effectiveness of CRISPR/Cas9? Are there any limitations to the kinds of DNA sequences that CRISPR/Cas9 can target?
-CRISPR/Cas9 is often referred to as  “molecular scissors”. Why? Can CRISPR/Cas9 edit DNA on its own, or does it just cut?
-Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline, https://www.nobelprize.org/prizes/chemistry/2020/popular-information/ 
+CRISPR/Cas9 is often referred to as  "molecular scissors". Why? Can CRISPR/Cas9 edit DNA on its own, or does it just cut?
+Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline, https://www.nobelprize.org/prizes/chemistry/2020/popular-information/
 
 #19 CRISPR/Cas9 Invention and Design - Dhavalsinh
- What Charpentier & Doudna did ? 
-At  a first stage : Cas9 is a protein bacteria normally use as scissors to cut virus DNA.But on its own, Cas9 doesn’t know where to cut — it’s like scissors without instructions.
-secondly :crRNA = the GPS that shows the target DNA. tracrRNA = the assistant that holds the scissors properly. 
-Thirdly: Made it more programmable , They combined crRNA + tracrRNA into one guide RNA (gRNA).Now Cas9 can be told: “Cut this exact spot in the DNA!
+ What Charpentier & Doudna did ?
+At  a first stage : Cas9 is a protein bacteria normally use as scissors to cut virus DNA.But on its own, Cas9 doesn't know where to cut - it's like scissors without instructions.
+secondly :crRNA = the GPS that shows the target DNA. tracrRNA = the assistant that holds the scissors properly.
+Thirdly: Made it more programmable , They combined crRNA + tracrRNA into one guide RNA (gRNA).Now Cas9 can be told: "Cut this exact spot in the DNA!
 Result : -  a gene editing tool Cas9 + gRNA = programmable DNA scissors . Can cut, disable, or edit any gene we want
 
 
 How It Works
-gRNA = GPS → tells Cas9 where to cut.
-Cas9 = scissors → snip the DNA.
-Cell = repair shop → fixes it with new edits.
+gRNA = GPS -> tells Cas9 where to cut.
+Cas9 = scissors -> snip the DNA.
+Cell = repair shop -> fixes it with new edits.
 
-                                                        
 
-                                                        crRNA + tracrRNA → guide RNA (gRNA)
-crRNA: Carries the target sequence—complementary to the DNA you want to edit
+
+                                                        crRNA + tracrRNA -> guide RNA (gRNA)
+crRNA: Carries the target sequence-complementary to the DNA you want to edit
 tracrRNA: Binds crRNA and activates Cas9 by forming a stable complex
 Together, they form gRNA, which directs Cas9 to the exact DNA site
-🎯 Programming CRISPR/Cas9
+&#x1F3AF; Programming CRISPR/Cas9
 Scientists design the crRNA portion of gRNA to match any DNA sequence of interest
 Cas9 scans the genome for a matching site next to a PAM (e.g., NGG)
 Once matched, Cas9 cuts the DNA at that location
 This programmable system makes CRISPR/Cas9 a powerful tool for gene editing, diagnostics, and synthetic biology. Want me to generate a visual diagram to go with this?
-crRNA + tracrRNA → guide RNA (gRNA)
-crRNA: Carries the target sequence—complementary to the DNA you want to edit
+crRNA + tracrRNA -> guide RNA (gRNA)
+crRNA: Carries the target sequence-complementary to the DNA you want to edit
 tracrRNA: Binds crRNA and activates Cas9 by forming a stable complex
 Together, they form gRNA, which directs Cas9 to the exact DNA site
-🎯 Programming CRISPR/Cas9
+&#x1F3AF; Programming CRISPR/Cas9
 Scientists design the crRNA portion of gRNA to match any DNA sequence of interest
 Cas9 scans the genome for a matching site next to a PAM (e.g., NGG)
 Once matched, Cas9 cuts the DNA at that location
 This programmable system makes CRISPR/Cas9 a powerful tool for gene editing, diagnostics, and synthetic biology. Want me to generate a visual diagram to go with this?
-crRNA + tracrRNA → guide RNA (gRNA)
-crRNA: Carries the target sequence—complementary to the DNA you want to edit
+crRNA + tracrRNA -> guide RNA (gRNA)
+crRNA: Carries the target sequence-complementary to the DNA you want to edit
 tracrRNA: Binds crRNA and activates Cas9 by forming a stable complex
 Together, they form gRNA, which directs Cas9 to the exact DNA site
-🎯 Programming CRISPR/Cas9
+&#x1F3AF; Programming CRISPR/Cas9
 Scientists design the crRNA portion of gRNA to match any DNA sequence of interest
 Cas9 scans the genome for a matching site next to a PAM (e.g., NGG)
 Once matched, Cas9 cuts the DNA at that location
@@ -890,7 +890,7 @@ This programmable system makes CRISPR/Cas9 a powerful tool for gene editing, dia
 
 
 
-                                                     
+
 #19 CRISPR/Cas9 Invention and Design - Raj
 crRNA + tracrRNA = Guide RNA(gRNA)
 Most Concise
@@ -925,7 +925,7 @@ What are some emerging research areas focusing on specialized RNA types?
 #20 Cellular RNA - Pal
 Found mainly in germline cells
 Forms complexes with PIWI proteins
-Silences transposable elements → protects genome stability
+Silences transposable elements -> protects genome stability
 Essential for fertility and germ cell development
 Emerging links to cancer and epigenetic regulation
 Long RNAs (>200 nucleotides), do not code proteins
@@ -938,7 +938,7 @@ snoRNAs beyond rRNA modification
 Regulate secretion & membrane protein pathwaysPotential therapeutic and biomarker roles
 piRNAs in health & disease                                                                     Found in somatic tissues, not just germlineLinked to cancers, aging, neurodegenerative diseases
 Epitranscriptomics of lncRNAs                                                                  Chemical modifications (m6A, pseudouridine, etc.)Affect stability, localization, and gene regulation
-Bioinformatics & AI tools                                                                          Predict RNA–disease associationsAccelerate discovery of biomarkers & drug targets
+Bioinformatics & AI tools                                                                          Predict RNA-disease associationsAccelerate discovery of biomarkers & drug targets
 Synthetic & therapeutic RNAs                                                                             Engineered RNAs for protein secretion, gene regulationUsed in vaccines, diagnostics, RNA-based drugs
 
 Identify and briefly describe the three major classes of RNA in cells.
@@ -997,18 +997,18 @@ What are the potential applications of riboswitches in medical therapeutics?
 Explain the engineering of synthetic ribozymes for specialized functions.
 How does in vitro selection work to isolate ribozymes with desired characteristics?
 
-#22  Ribozymes - Debbie 
-Ribozymes are RNA molecules that cleave mRNA via suppression of genes. 
- 
+#22  Ribozymes - Debbie
+Ribozymes are RNA molecules that cleave mRNA via suppression of genes.
+
 Catalytic Function:
 
-Splicing → Removes the non coding regions and bonds two coding regions together. 
-Ligation → Joins two fragments of RNA together, which is very important in metabolic reactions. 
-In cells ribozymes acts as an switch. It controls gene expression by binding specific molecules. 
+Splicing -> Removes the non coding regions and bonds two coding regions together.
+Ligation -> Joins two fragments of RNA together, which is very important in metabolic reactions.
+In cells ribozymes acts as an switch. It controls gene expression by binding specific molecules.
 Medical therapeutics of riboswitches
 
 When a compound binds to it, it inhibits gene expression.
-Necessary for overcoming the resistance to antibiotic resistance. 
+Necessary for overcoming the resistance to antibiotic resistance.
 
 
                                Ribozymes - Sobia
@@ -1016,19 +1016,19 @@ Natural ribozymes are limited to certain reactions (like self-cleavage or splici
 Targeted cleavage of viral RNA
 Regulation of gene expression
 In Vitro selection:
-Start with a Random RNA Library ➡️
-Selection Step ➡️ 
-Reverse Transcription ➡️
-PCR Amplification ➡️
-In Vitro Transcription ➡️ 
-Iteration ➡️
-Sequencing and Characterization ➡️
+Start with a Random RNA Library ->
+Selection Step ->
+Reverse Transcription ->
+PCR Amplification ->
+In Vitro Transcription ->
+Iteration ->
+Sequencing and Characterization ->
 
 Applications in biotech-
 -Antiviral Agents
 -synthetic biology circuits
 -Biosensors
--Biocatalysts 
+-Biocatalysts
 -Environmental monitoring
 
 What are Ribozymes, and what catalytic functions do they perform?

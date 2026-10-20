@@ -56,7 +56,7 @@ semantic Deck + PresentationTheme.template_path
 ```
 
 Before `compile_layout_deck` accepts capacity, the approved WP-T2 font-metric contract resolves
-every styled run to a committed, hash-verified OFL face profile. It measures Pillow `getlength()`
+every styled run to a bundled, readable font face profile. It measures Pillow `getlength()`
 token-aware line breaks with OTP list text-start/hanging indents and mixed-face ascent/descent line
 boxes. Atkinson Hyperlegible Next serves ordinary text, Atkinson Hyperlegible Mono serves inline
 code, and IBM Plex Sans Condensed serves displayed literal URLs. Each includes four real styles.

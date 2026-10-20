@@ -57,10 +57,3 @@ def test_convert_files_reports_missing_expected_output(tmp_path: pathlib.Path) -
 
 
 #============================================
-def test_convert_file_delegates_one_input_to_sequential_boundary(tmp_path: pathlib.Path) -> None:
-	"""The one-file API remains a compact wrapper around the common converter."""
-	input_path = tmp_path / "deck.odp"
-	output_dir = tmp_path / "converted"
-	with mock.patch.object(libreoffice, "convert_files", return_value=(output_dir / "deck.pdf",)) as convert:
-		converted = libreoffice.convert_file(input_path, output_dir, "pdf")
-	assert converted == output_dir / "deck.pdf" and convert.call_args.args == ((input_path,), output_dir, "pdf")

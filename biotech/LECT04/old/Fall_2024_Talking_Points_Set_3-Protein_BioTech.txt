@@ -4,7 +4,7 @@ Sept 19, 2024
 
 DO NOT CHANGE
 THE THEME!!!
-We are using the “Tropic” theme and that is it.
+We are using the "Tropic" theme and that is it.
 
 Talking Points Guide
 
@@ -64,7 +64,7 @@ Question Asker #23: four base codons -- Khushi and Leo
 Helper Question Askers
 
 Talking Points Guide
-Talking points were assigned during last week’s class
+Talking points were assigned during last week's class
 Each student was assigned to one talking points.
 Each talking point will have at least two students talking about it
 If you share a talking point with another student:
@@ -78,33 +78,33 @@ Asking questions of other students gets you discussion marks as well
 Talking Points Guide
 Edit and update your slide.
 Add several pictures and minimal text.
-Keep the words on your slide to a minimum – you should be doing the talking, not your slide.
+Keep the words on your slide to a minimum - you should be doing the talking, not your slide.
 Be prepared to give a 60 second presentation on each of your assigned talking points.
 Define the talking point, explain its connection to biotechnology, or provide a recent example from biotechnology news.
-You won’t have time to cover the entire topic, so focus on the most interesting aspect.
+You won't have time to cover the entire topic, so focus on the most interesting aspect.
 However, you should be familiar with the entire topic in case I ask questions.
 Aim to be unique.
-Don’t just copy from the book – use the internet for research
+Don't just copy from the book - use the internet for research
 Provide your own perspective
 Please put everything in your own words.
-It’s fine to read your notes, but make sure they’re in your own words.
+It's fine to read your notes, but make sure they're in your own words.
 No direct quotes from articles, Wikipedia, or the textbook.
 Minimize jargon.
 
 Tips for a Good Presentation
-Remember you telling a story. Should have a beginning, a middle, and an end. 
-Respect the time allotted for the sake of your audience. 
-If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
-Explain at the level of the class. 
-Have a technical term, define it. If you don't quite understand it, no one will. 
-Because we are all novices, you will need to have a long intro. 
-But try to engage the audience. 
+Remember you telling a story. Should have a beginning, a middle, and an end.
+Respect the time allotted for the sake of your audience.
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop.
+Explain at the level of the class.
+Have a technical term, define it. If you don't quite understand it, no one will.
+Because we are all novices, you will need to have a long intro.
+But try to engage the audience.
 Do not read from your slides; use notecards, if you must.
-No complete sentences on slides, use short phrases, break the content up. 
-Try to have a picture on every slide, helps maintain attention of the audience 
+No complete sentences on slides, use short phrases, break the content up.
+Try to have a picture on every slide, helps maintain attention of the audience
 If you have a movie, talk during the movie, do not use narrator
-Be prepared for questions. 
-Show ENTHUSIASM when you talk and make it exciting! 
+Be prepared for questions.
+Show ENTHUSIASM when you talk and make it exciting!
 
 Best Advice
 Be Enthusiastic
@@ -139,7 +139,7 @@ Protein Interactions by Co-immunoprecipitation
 Protein Arrays
 Metabolomics
 
-#1 Proteomics and Metabolomics  
+#1 Proteomics and Metabolomics
 Proteomics studies the entire set of proteins produced by an organism, while metabolomics examines the small molecules involved in metabolism, both providing insights into cellular functions and processes.
 How does proteomics differ from genomics?
 What are the primary applications of proteomics in biotechnology?
@@ -147,16 +147,16 @@ Define metabolomics and its key role in systems biology.
 How can metabolomics complement proteomics?
 How has computational biology impacted these fields?
 
-#1 Proteomics and Metabolomics - Yoana  
+#1 Proteomics and Metabolomics - Yoana
 Proteomics vs Genomics?
 -omics Types:
 Relation to Biotech?
 Most Informative
 Award
 
-#1 Proteomics and Metabolomics - available  
+#1 Proteomics and Metabolomics - available
 
-#2 Protein Gels and Western Blotting 
+#2 Protein Gels and Western Blotting
 Protein gel electrophoresis separates proteins based on size, while Western blotting detects specific proteins using antibodies.
 Describe the concept of gel electrophoresis specifically in protein analysis.
 How does protein gel electrophoresis differ from nucleic acid gel electrophoresis from last week?
@@ -164,17 +164,17 @@ Describe some types of custom-made gels, like stacking and gradient gels, and ex
 Define Western blotting and its purpose. How does it compare to Southern blotting from last week?
 What are some applications where Western blotting is particularly useful?
 
-Protein Gels and Western Blotting- Zakira 
-Technique used in laboratories to separate biomolecules, including DNA, RNA, and proteins, based on size and molecular weight 
+Protein Gels and Western Blotting- Zakira
+Technique used in laboratories to separate biomolecules, including DNA, RNA, and proteins, based on size and molecular weight
  Western blot - SNoW DRoP
 Applications
 
-WESTERN BLOTTING 
-SOUTHERN BLOTTING 
+WESTERN BLOTTING
+SOUTHERN BLOTTING
 PERLA
--Similar process -separating the sample 
+-Similar process -separating the sample
 -Transferring to membrane
--Detecting molecule  
+-Detecting molecule
 Define Western blotting and its purpose. How does it compare to Southern blotting from last week?
 What are some applications where Western blotting is particularly useful?
 
@@ -189,13 +189,13 @@ How are these tags added to proteins, and what are the key steps in purifying a 
 #3 Chromatography and Protein Tagging - Dan
 Size exclusion (SEC) separates proteins and other compounds based on size
 Ion exchange (IEC) separates proteins based on charge
-Hydrophobic interaction (HIC) separates proteins based on how hydrophobic they are 
+Hydrophobic interaction (HIC) separates proteins based on how hydrophobic they are
 Reverse phase uses a hydrophobic mobile phase moving through a hydrophilic stationary phase
 Afinity chromatography (AC) separates proteins based off of how well they bind to the stationary phase
 Slide Simplicity Award
 
 
-#4 Mass Spectrometry in Proteomics  
+#4 Mass Spectrometry in Proteomics
 Mass spectrometry identifies and quantifies proteins in complex samples by measuring their mass-to-charge ratio.
 Define the three main components of a mass spectrometer: (1) ionizer and ion extractor, (2) mass analyzer, and (3) detector, and explain the role of each.
 Why is ionization the critical first step in mass spectrometry? Explore the key techniques (e.g., MALDI, ESI) that give proteins a charge and set them on their path to detection.
@@ -205,14 +205,14 @@ After separation, how are ionized proteins detected? Dive into the concept of a 
 What challenges occur in sample preparation, and how does protease digestion help prepare proteins for analysis?
 How are unknown proteins identified using mass spectrometry, and can mass spectrometry accurately quantify protein levels?
 
-#4 Mass Spectrometry in Proteomics - Tatiana 
-Main components 
-Ion source 
+#4 Mass Spectrometry in Proteomics - Tatiana
+Main components
+Ion source
 Mass analyzer
 Detector
-Ionization Techniques: ESI and MALDI 
+Ionization Techniques: ESI and MALDI
 
-#4 Mass Spectrometry in Proteomics - Nick 
+#4 Mass Spectrometry in Proteomics - Nick
 MALDI-TOF Instrument
 Photomultiplier Tube
 Ionization
@@ -224,7 +224,7 @@ Ionized proteins separated by mass-to-charge ratio
 Ionized proteins are detected, signals are amplified for measurement
 Clear Message Award
 
-#5 Phage Display 
+#5 Phage Display
 Phage display is a powerful technique that uses bacteriophages to display peptides or proteins on their surfaces, allowing for the study of protein interactions, binding affinity, and molecular recognition.
 Briefly, what are bacteriophages, and how do they interact with bacterial cells?
 What is the principle of phage display, and how does it utilize bacteriophages to study protein interactions?
@@ -233,7 +233,7 @@ What is the process for screening a phage display library? Explain how the selec
 Describe how binding selection is done in phage display, and explain how this iterative process enriches for high-affinity binders.
 List some common applications of phage display, including drug discovery, antibody development, and identifying molecular targets in biomedical research.
 
-Phage Display 
+Phage Display
 Isabella
 Bacteriophages
 Viruses that only infect and replicate in bacteria
@@ -244,23 +244,23 @@ Bacterial Toxin Neutralization
 Cancer Immunotherapy
 Monoclonal Antibody Therapy
 
-#5 Phage Display - available  
+#5 Phage Display - available
 
-#6 ELISA 
+#6 ELISA
 Enzyme-linked immunosorbent assay (ELISA) is a widely used technique for detecting and quantifying proteins or antibodies in a sample through specific antigen-antibody interactions, offering high sensitivity and precision in diagnostics.
 What is the ELISA technique, and how does it enable the detection and quantification of proteins or antibodies?
 Describe both the sandwich and indirect methods in ELISA. What are the key differences, and when might one method be preferred over the other?
-What protein markers can ELISA detect, such as those used to diagnose heart attacks (e.g., troponin) or pregnancy (e.g., hCG)? How do COVID antigen test kits work, and what proteins or viral markers are they detecting? 
+What protein markers can ELISA detect, such as those used to diagnose heart attacks (e.g., troponin) or pregnancy (e.g., hCG)? How do COVID antigen test kits work, and what proteins or viral markers are they detecting?
 What are some other commercial applications of ELISA? Provide examples from fields like medical diagnostics, food safety, and environmental monitoring.
 How do you select the appropriate antibodies for an ELISA? How are ELISA antibodies obtained? Describe the process of generating both monoclonal and polyclonal antibodies, including how animals such as mice or rabbits are immunized to produce an immune response
 
-#6 ELISA - Dipali 
+#6 ELISA - Dipali
 ELISA(enzyme -linked immunosorbent assay) ia technique used to detect and quantify proteins , antigens or antibodies in sample.
 Sandwich ELISA:
 A capture antibody is coated on a plate.
 The sample is added, and the target antigen binds to
  the capture antibody.
-Use: High specificity, ideal for complex samples, e.g., detecting 
+Use: High specificity, ideal for complex samples, e.g., detecting
 cytokines or viral proteins.
 Indirect ELISA:
 The antigens is coated on a plate.
@@ -269,7 +269,7 @@ Use:common for detecting antibodies,such as in immune response studies or serolo
 
 Slide Simplicity Award
 
-#6 ELISA - Foram 
+#6 ELISA - Foram
 ELISA Protein Markers
 Cardiac Diagnostics
 Troponin: Detected in blood tests to diagnose heart attacks. Troponin is a protein released when the heart muscle is damaged.
@@ -297,19 +297,19 @@ How does mass spectrometry measure protein levels, and what makes it useful when
 
 #7 Protein Quantification Methods - Western blotting (Bhargavi)
 
-Protein Quantification - Devarsh 
-ELISA 🐆?
+Protein Quantification - Devarsh
+ELISA &#x1F406;?
 Simpler Process
 No Gel Electrophoresis
 Direct Detection
-Why  it's 
+Why  it's
 useful
 
-• High Throughput
+* High Throughput
 
-• Sensitivity &      Specificity
+* Sensitivity &      Specificity
 
-• Proteomic Profiles
+* Proteomic Profiles
 
 
 #8 Protein-Protein Interaction Networks
@@ -327,12 +327,12 @@ Co-immunoprecipitation
 Computational approach
 predicting interactions using bioinformatics tools
  By studying these networks, we can understand how diseases like cancer and Alzheimer's affect the way proteins work together.
-Protein-Protein Interaction Network 
+Protein-Protein Interaction Network
 Slide Simplicity Award
 
 #8 Protein-Protein Interaction Networks - Karolina
-Better knowledge of infectious processes 
-Regulating selectivity in signaling pathway 
+Better knowledge of infectious processes
+Regulating selectivity in signaling pathway
 Able to associate disease with certain protein groups
 Most Engaging Slide
 
@@ -376,12 +376,12 @@ Bioreactors: Scale up protein production with controlled conditions for high yie
 
 #10 Toxic Effects and Inclusion Bodies
 Overproduction of proteins in bacteria can lead to toxic effects, resulting in protein misfolding and the formation of insoluble aggregates known as inclusion bodies.
-How does the overproduction of proteins in bacteria lead to toxic effects, and how does this affect cellular processes? How do factors such as the bacterial strain’s ability to handle high protein loads, its efficiency in protein folding, and its growth characteristics influence the choice of bacterial host strain for protein expression?
+How does the overproduction of proteins in bacteria lead to toxic effects, and how does this affect cellular processes? How do factors such as the bacterial strain's ability to handle high protein loads, its efficiency in protein folding, and its growth characteristics influence the choice of bacterial host strain for protein expression?
 What are inclusion bodies, and how can their formation be minimized? How do factors such as expression temperature and induction time affect the formation of inclusion bodies?
 How do techniques like dilution, dialysis, and chromatography assist in refolding proteins from inclusion bodies? What roles do these techniques play in restoring protein functionality?
 What role do chaperone proteins play in assisting protein folding? What are the mechanisms through which these chaperones facilitate proper protein folding? How does co-expressing chaperones with the target protein prevent aggregation and improve yield?
 
-#10 Toxic Effects and Inclusion Bodies - Khushi   
+#10 Toxic Effects and Inclusion Bodies - Khushi
 The overproduction of proteins can lead us to:
 Resource depletion
 Protein misfolding
@@ -394,12 +394,12 @@ Growth characteristics
 Refolding protein techniques
 Delusion
 Dialysis
-Chromatography: 
-                                   ⟹   Size exclusion chromatography
-                                   ⟹   Hydrophobic interaction chromatography
-                                   ⟹   Ion-exchange chromatography
-                                   ⟹   Affinity chromatography
-                                      
+Chromatography:
+                                   =>   Size exclusion chromatography
+                                   =>   Hydrophobic interaction chromatography
+                                   =>   Ion-exchange chromatography
+                                   =>   Affinity chromatography
+
 OVER
 
 Toxic Effects and Inclusion Bodies - Leo
@@ -409,17 +409,17 @@ Time
 Temperature
 Chaperone proteins
 Techniques to refold proteins
-Size exclusion chromatography 
-Ion exchange chromatography 
-Dialysis 
+Size exclusion chromatography
+Ion exchange chromatography
+Dialysis
 
 
 #11 Protein Expression in Yeast vs Bacteria
 Yeast and bacteria are both used for protein production, with yeast offering additional modifications not available in bacterial systems.
 How do eukaryotic and prokaryotic cells differ in their protein expression systems, particularly regarding the nucleus and post-translational modifications?
-How does yeast’s ability to perform glycosylation and other post-translational modifications compare to bacteria’s capabilities? How does this help in expressing eukaryotic proteins?
+How does yeast's ability to perform glycosylation and other post-translational modifications compare to bacteria's capabilities? How does this help in expressing eukaryotic proteins?
 Why is yeast a better choice than bacteria for producing proteins like human erythropoietin (EPO)?
-Which proteins benefit most from yeast’s glycosylation capabilities, and how do these modifications affect protein functionality?
+Which proteins benefit most from yeast's glycosylation capabilities, and how do these modifications affect protein functionality?
 What challenges arise when expressing membrane-bound proteins in yeast, and how can these be addressed?
 
 #11 Protein Expression in Yeast vs Bacteria - Cynthia
@@ -447,7 +447,7 @@ Enzymes,Viral proteins
 
 
 Yeast:
-Genetically engineered strains mimic human glycosylation Performs complex modifications (e.g., phosphorylation, acetylation) 
+Genetically engineered strains mimic human glycosylation Performs complex modifications (e.g., phosphorylation, acetylation)
 
 
 
@@ -458,26 +458,26 @@ Cannot perform glycosylation Limited modifications (e.g.,phosphorylation)
 
 Clear Message Award
 
-#12 Impossible Burger 
+#12 Impossible Burger
 (internet only, not in textbook) The Impossible Burger is a plant-based meat alternative, using soy leghemoglobin to mimic the taste and texture of beef.
 How does the Impossible Burger replicate the taste and texture of beef, and what role does soy leghemoglobin play in this process?
-The first version of the Impossible Burger used coconut and wheat but didn’t hold up well on a grill. How did switching to soy improve its structure?
+The first version of the Impossible Burger used coconut and wheat but didn't hold up well on a grill. How did switching to soy improve its structure?
 How do the Impossible Burger and competitors like Beyond Burger differ in their ingredients and approach to replicating meat?
-How does the nutritional value of the Impossible Burger compare to a beef burger, and if it’s not healthier, what other benefits does it provide?
+How does the nutritional value of the Impossible Burger compare to a beef burger, and if it's not healthier, what other benefits does it provide?
 
-#12 Impossible Burger - Ewa 
-Gene for encoding Soybean Leghemoglobin 
-Protein via fermentation 
-Genetically modified 
+#12 Impossible Burger - Ewa
+Gene for encoding Soybean Leghemoglobin
+Protein via fermentation
+Genetically modified
 Beyond Burger
-Pea plant protein 
-Not genetically modified 
+Pea plant protein
+Not genetically modified
 
 Impossible Burger
 Impossible Vs Real beef
-Impossible burgers cholesterol is 0. 
-Real beef has approx. 90 mg cholesterol. 
-Impossible burger is more processed with food dyes. 
+Impossible burgers cholesterol is 0.
+Real beef has approx. 90 mg cholesterol.
+Impossible burger is more processed with food dyes.
 Clear Message Award
 
 #12 Impossible Burger - Hailey
@@ -493,7 +493,7 @@ Leghemoglobin
 Pichia pastoris
 Extracted from Roots
 Heme
-Yeast 
+Yeast
 Genetically Modified
 Clear Message Award
 
@@ -527,19 +527,19 @@ Typically lack sialylation, affecting protein efficacy in therapeutic applicatio
 Best Layout Design
 
 #13 Protein Expression by Insect Cells - Vishal
-13.protien expression by insect cells:- Vishal 
+13.protien expression by insect cells:- Vishal
 The choice between SF9 and High Five insect cell lines impacts protein expression efficiency and quality. SF9 cells are robust and well-suited for high-density cultures and producing glycoproteins, but may yield lower protein quantities. High Five cells often produce higher protein yields and are preferred for non-glycosylated proteins or when higher expression levels are needed. The specific characteristics include SF9's tolerance to a wide range of conditions and High Five's superior protein production capacity.
 Limitations of using insect cells for protein production:-
-Complexity and cost 
+Complexity and cost
 Glycosylation patterns
-Yield 
-Time consuming 
-Scale up challenges 
+Yield
+Time consuming
+Scale up challenges
 Common methods for purifying protein produced in insect cells
-Affinity chromatography 
-Ion exchange chromatography 
-Size exclusion chromatography 
-Hydrophobic interaction chromatography 
+Affinity chromatography
+Ion exchange chromatography
+Size exclusion chromatography
+Hydrophobic interaction chromatography
 The choice of production system for therapeutic proteins significantly influences the regulatory strategy and commercial viability. Insect cell systems present unique challenges and opportunities, particularly regarding regulatory scrutiny and manufacturing costs. Companies must weigh these factors carefully against the benefits of each platform in terms of product characteristics and market needs.
 
 #14 Protein Expression by Mammalian Cells
@@ -564,13 +564,13 @@ Data Presentation Mastery
 
 #15 Recombinant Protein Vaccines
 protein vaccines use specific proteins from pathogens, rather than whole viruses, to stimulate an immuRecombinant ne response. Note: Focus only on recombinant protein vaccines. RNA vaccines were covered last week, and gene therapy vaccines will be discussed later.
-What are recombinant protein vaccines, and what are some examples (e.g., Hepatitis B, HPV, Meningococcal B)? What role do the recombinant proteins play in mimicking the pathogen’s antigens?
+What are recombinant protein vaccines, and what are some examples (e.g., Hepatitis B, HPV, Meningococcal B)? What role do the recombinant proteins play in mimicking the pathogen's antigens?
 What types of proteins, such as spike or surface proteins, are commonly used in recombinant protein vaccines? How are these proteins identified as suitable vaccine candidates?
 How do recombinant protein vaccines differ from traditional vaccines, including those based on dead viruses or live attenuated viruses? How does the safety of recombinant protein vaccines compare to that of traditional vaccines?
 What are the key steps in the large-scale production of recombinant protein vaccines? What regulatory hurdles must be cleared to bring them to market?
 
  Recombinant Protein Vaccines : UMANG
-Recombinant proteins mimic pathogen antigens, triggering the immune system to recognize and respond to the actual pathogen upon exposure.  
+Recombinant proteins mimic pathogen antigens, triggering the immune system to recognize and respond to the actual pathogen upon exposure.
 
  proteins in these vaccines include:
 
@@ -608,9 +608,9 @@ Expanding the Genetic Code
 Roles of Non-Natural Amino Acids
 Biomaterials Design Relies on Protein Engineering Engineered Binding Proteins
 
-#16 Protein Stability 
+#16 Protein Stability
 Protein stability refers to how well a protein maintains its structure and function under various conditions.
-How can protein engineering be used to improve protein stability? Which amino acids are commonly targeted for modification to enhance stability? What roles do arginine and proline play in improving protein stability? How can introducing disulfide bonds increase a protein’s resistance to denaturation?
+How can protein engineering be used to improve protein stability? Which amino acids are commonly targeted for modification to enhance stability? What roles do arginine and proline play in improving protein stability? How can introducing disulfide bonds increase a protein's resistance to denaturation?
 The textbook outlines four additional approaches for enhancing protein stability via amino acid modifications:
 How and why do we reduce entropy to improve protein stability?
 How and why do we optimize the hydrophobic core of proteins?
@@ -620,31 +620,31 @@ Can you identify other protein stabilization methods beyond amino acid modificat
 
 #16 Protein Stability - Maria
 Protein Engineering
-Targeted Amino Acid  
+Targeted Amino Acid
 Roles of Arginine/Proline
 Introduction of disulfide bonds
 
 Most Concise
 Award
 
-#16 Protein Stability - Mary 
+#16 Protein Stability - Mary
     Entropy + Protein Stability
-Lower entropy = fewer possible unfolded conformations = higher protein stability 
+Lower entropy = fewer possible unfolded conformations = higher protein stability
 Done by replacing flexible AAs with less flexible AAs (e.g. Replacing Gly with Pro)
     Optimizing Hydrophobic Core
 Enhances protein stability
-Done by filling cavities with larger hydrophobic residues e.g.      Ala → Val
- Leu → Phe
+Done by filling cavities with larger hydrophobic residues e.g.      Ala -> Val
+ Leu -> Phe
  Etc.
 
      Destabilizing Amino Acids
-Asn and Gln because under extreme conditions… 
-Asn → Asp–
-Gln → Glu – 
+Asn and Gln because under extreme conditions...
+Asn -> Asp-
+Gln -> Glu -
 Prevented by replacing with uncharged, hydrophilic AAs (e.g. Thr, Ser, Cys)
- 
-    Stabilizing 𝝰-helices with AAs
-𝜶-helices have natural dipoles (slightly positive NT and slightly negative CT)
+
+    Stabilizing &alpha;-helices with AAs
+&alpha;-helices have natural dipoles (slightly positive NT and slightly negative CT)
 Introducing AAs with opposite charges near the helix ends helps to stabilize helices
 Best Visuals
 Award
@@ -652,20 +652,20 @@ Award
 #17 Binding Sites and Scaffolds
 Altering protein binding sites and scaffolds is essential in designing proteins with new functions or improving their interactions with other molecules.
 What specific goals are achieved by modifying the active site, such as enhancing substrate specificity or catalytic activity? What are some challenges in maintaining enzyme stability after modifying the active site?
-How do molecular dynamics simulations predict the effects of changes in an enzyme’s active site? How reliable are these predictions? What limitations exist in using simulations to predict real-world enzyme behavior?
-How does reducing the size of a protein’s scaffold affect its enzymatic properties? Explain using the example of lactate dehydrogenase (LDH) in bacteria. How have adaptations in lactate dehydrogenase (LDH) allowed it to interact with different substrates?
-What could be the downsides of making a protein scaffold too small? Could this affect the protein’s stability, catalytic efficiency, or interaction with other molecules?
-Can you envision scenarios or applications where larger scaffolds might be advantageous? How can a larger scaffold support multi-functional activities in enzymes? Could a larger scaffold potentially improve enzyme stability under harsh conditions? 
+How do molecular dynamics simulations predict the effects of changes in an enzyme's active site? How reliable are these predictions? What limitations exist in using simulations to predict real-world enzyme behavior?
+How does reducing the size of a protein's scaffold affect its enzymatic properties? Explain using the example of lactate dehydrogenase (LDH) in bacteria. How have adaptations in lactate dehydrogenase (LDH) allowed it to interact with different substrates?
+What could be the downsides of making a protein scaffold too small? Could this affect the protein's stability, catalytic efficiency, or interaction with other molecules?
+Can you envision scenarios or applications where larger scaffolds might be advantageous? How can a larger scaffold support multi-functional activities in enzymes? Could a larger scaffold potentially improve enzyme stability under harsh conditions?
 
 #17 Binding Sites and Scaffolds - Diamond
-Modification of active site/binding site 
+Modification of active site/binding site
 Substrate specificity
-Enhancement of catalytic activity  
+Enhancement of catalytic activity
 
 NAD/NADP
-Larger binding sites 
+Larger binding sites
 Hydrophobic binding sites
-Risk of modifying sites 
+Risk of modifying sites
 Insufficient molecular dynamics
 
 #17 Binding Sites and Scaffolds - Mudrika
@@ -673,30 +673,30 @@ Insufficient molecular dynamics
 
 
 
-LDH adaptations: 
+LDH adaptations:
 
-Isoforms 
-Structural Flexibility 
-Binding mechanism 
-Thermodynamic adaptations 
-How small is too small? When protein scaffolds are too small could affect: 
-Structural instability 
-Functional site 
+Isoforms
+Structural Flexibility
+Binding mechanism
+Thermodynamic adaptations
+How small is too small? When protein scaffolds are too small could affect:
+Structural instability
+Functional site
 Reduced interactions
 
 Protein Scaffold reduction can affect:
- Active site accessibility 
-Stability 
-Flexibility 
-Protein-protein interactions 
-Catalytic Efficiency 
-Regulatory Mechanisms 
+ Active site accessibility
+Stability
+Flexibility
+Protein-protein interactions
+Catalytic Efficiency
+Regulatory Mechanisms
 
 #18 Protein Directed Evolution
 Protein directed evolution mimics natural selection in the lab to evolve proteins with new or improved functions through random mutations and selection.
 What are the key considerations and challenges at each stage of directed evolution, including library creation, mutation, screening, and optimization?
-How is protein directed evolution compare to ribozyme selection discussed last week? What principles of selection and mutation are shared between these methods? 
-How does random mutagenesis introduce variations into a protein’s gene? What are the mechanisms behind error-prone PCR, and how is it used to generate a diverse library of protein variants? 
+How is protein directed evolution compare to ribozyme selection discussed last week? What principles of selection and mutation are shared between these methods?
+How does random mutagenesis introduce variations into a protein's gene? What are the mechanisms behind error-prone PCR, and how is it used to generate a diverse library of protein variants?
 How can incomplete library diversity affect the outcomes of directed evolution? Considering a protein with 100 amino acid positions and 20 possible amino acids, calculate the number of possible single-point mutations if each position can be mutated to any of the other 19 amino acids.
 How is selection pressure applied to isolate desirable protein variants? What are examples of selection pressures used to enhance enzyme stability?
 Can you name some commercial applications that have been enabled by directed evolution? How has directed evolution been used to develop enzymes for biofuel production? See the work of companies like Carbios, Novozymes, and Codexis.
@@ -704,17 +704,17 @@ Can you name some commercial applications that have been enabled by directed evo
 #18 Protein Directed Evolution - Mounisha
 .
 
-#18 Protein Directed Evolution - available 
+#18 Protein Directed Evolution - available
 
 #19 Recombinant Protein Domains
-Functional protein domains are distinct regions within a protein that are responsible for specific activities or functions, such as binding to other molecules, catalyzing reactions, or stabilizing the protein’s structure. Recombinant protein domains involve combining functional domains of different proteins to create new proteins with desired properties.
+Functional protein domains are distinct regions within a protein that are responsible for specific activities or functions, such as binding to other molecules, catalyzing reactions, or stabilizing the protein's structure. Recombinant protein domains involve combining functional domains of different proteins to create new proteins with desired properties.
 Explain the basic concept of recombining functional protein domains to create new proteins with improved functions.
 What is DNA shuffling? How does this technique, which involves fragmenting and recombining DNA sequences, help create diverse protein variants? How does DNA shuffling differ from other methods like site-directed mutagenesis in generating protein diversity?
 How do combinatorial libraries contribute to protein engineering by providing diverse protein domains? What methods are used to create these libraries, and how do they ensure coverage of a wide range of possible domain combinations?
 Can you provide an example of a protein that had its functionality significantly enhanced through domain recombination? For instance, the fusion of a thermostable domain with a protease catalytic domain.
 What are some therapeutic applications of recombinant protein domains, such as Glucarpidase, Palifermin, and Romiplostim? What benefits do they provide in medicine, such as improving drug efficacy and reducing side effects?
 
-       RECOMBINANT 
+       RECOMBINANT
    PROTEIN DOMAINS
 #19
 Engineered protein segments combined for new functions
@@ -722,7 +722,7 @@ DNA shuffling : creates diversity by fragmenting and recombining DNA
 Combinatorial libraries : collections of diverse                                   proteins for testing
 -Bhavani
 
-#19 Recombinant Protein Domains - available 
+#19 Recombinant Protein Domains - available
 
 #20 Protein Structure Determination
 Protein structure determination involves using experimental methods such as X-ray crystallography, NMR, and cryo-electron microscopy (cryo-EM) to reveal the three-dimensional shapes of proteins, which is essential for understanding their function and interactions.
@@ -732,26 +732,26 @@ How has cryo-EM revolutionized the study of membrane proteins and large macromol
 What recent technological advancements (e.g., direct electron detectors, image processing software) have made cryo-EM more accessible for determining novel protein structures?
 Provide examples of novel protein structures solved using cryo-EM, such as ion channels, ribosomes, or viral proteins.
 
-#20 Protein Structure Determination - available 
+#20 Protein Structure Determination - available
 
-#20 Protein Structure Determination - available 
+#20 Protein Structure Determination - available
 
 #21 De Novo Protein Design
 De novo protein design involves creating entirely new proteins from scratch, based on computational models to achieve specific structures and functions.
 What is the core concept of de novo protein design, and how does it differ from traditional protein engineering?
-Have scientists successfully created novel proteins through de novo design? 
+Have scientists successfully created novel proteins through de novo design?
 Check the Baker Lab website. http://bakerlab.org  How does the Baker Lab approach the design of new proteins, and what are some examples of their successes?  What methodologies are they employing to design novel proteins? explore their techniques, such as computational modeling, iterative design, and experimental validation.
 How are the functions of de novo designed proteins experimentally validated? What techniques and assays are used to test their structural integrity, activity, and interactions?
 What are some potential applications of de novo protein design in medicine? Consider areas like drug development, synthetic biology, and therapeutic protein creation. How might these applications benefit from custom-designed proteins?
 
 #21 De Novo Protein Design - Chenyu
 
-#21 De Novo Protein Design - available 
+#21 De Novo Protein Design - available
 
 #22 AlphaFold by DeepMind
-AlphaFold is an AI system developed by Google DeepMind that predicts a protein’s 3D structure from its amino acid sequence
-How does AlphaFold’s accuracy compare to that of traditional experimental methods like X-ray crystallography and cryo-electron microscopy? Can you provide specific examples from the Critical Assessment of Structure Prediction (CASP) or other relevant studies to illustrate its performance?
-What are some known limitations of AlphaFold’s predictions? Specifically, how well does AlphaFold handle dynamic regions of proteins or novel protein folds that have not been observed experimentally? Is AlphaFold capable of predicting entirely new or unique protein folds, or is it restricted to predicting structures based on known folds? What typically happens when AlphaFold produces unrealistic or nonsensical results?
+AlphaFold is an AI system developed by Google DeepMind that predicts a protein's 3D structure from its amino acid sequence
+How does AlphaFold's accuracy compare to that of traditional experimental methods like X-ray crystallography and cryo-electron microscopy? Can you provide specific examples from the Critical Assessment of Structure Prediction (CASP) or other relevant studies to illustrate its performance?
+What are some known limitations of AlphaFold's predictions? Specifically, how well does AlphaFold handle dynamic regions of proteins or novel protein folds that have not been observed experimentally? Is AlphaFold capable of predicting entirely new or unique protein folds, or is it restricted to predicting structures based on known folds? What typically happens when AlphaFold produces unrealistic or nonsensical results?
 In what ways has AlphaFold been adapted to predict protein-protein interactions and multi-protein complexes? How does this capability enhance our understanding of these complex biological systems?
 How has the availability of predicted protein structures from AlphaFold impacted research in fields such as drug discovery and disease understanding, especially compared to the reliance on experimental data alone?
 
@@ -773,23 +773,23 @@ AlphaFold
 Angstrom
 CAPABILITIES & ACCURACY
 LIMITATIONS
-⬥ Struggle with flexible loops
-⬥ Can form inaccurate models
-⬥ Bias towards known folds
+- Struggle with flexible loops
+- Can form inaccurate models
+- Bias towards known folds
 ADAPTATIONS
-⬥ Protein-protein interfaces
-⬥ Predict protein complexes and interactions
-⬥ Drug and active site
+- Protein-protein interfaces
+- Predict protein complexes and interactions
+- Drug and active site
 IMPACT
-⬥ Fast
-⬥ Cheap
-⬥ Accessible
-⬥ SARS-CoV-2
+- Fast
+- Cheap
+- Accessible
+- SARS-CoV-2
 
 
 Best Use of Graphics Award
 
-#22 AlphaFold by DeepMind - available 
+#22 AlphaFold by DeepMind - available
 
 #23 Four Base Codons
 Expanding the genetic code with four-base codons allows the incorporation of non-natural amino acids into proteins, enabling the creation of proteins with unique properties.
@@ -800,7 +800,7 @@ If you were to start a biotech company leveraging a four-base codon system, what
 
 #23 Four Base Codons - Hareem
 
-#23 Four Base Codons - available 
+#23 Four Base Codons - available
 
 Best Slide Award
 GREAT

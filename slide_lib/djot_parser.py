@@ -453,7 +453,9 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 	assembled: list[slide_lib.native_model.Slide] = []
 	for source in bundle.files:
 		_color_theme, slide_sources = split_slides(source.path, source.text)
-		assembled.extend(assemble_slide(source.path, slide_source) for slide_source in slide_sources)
+		for slide_source in slide_sources:
+			slide = assemble_slide(source.path, slide_source)
+			assembled.append(dataclasses.replace(slide, hidden=True) if source.hidden else slide)
 	slides = tuple(assembled)
 	repo_root = next((candidate for candidate in (path.parent, *path.parents)
 		if (candidate / ".git").exists()), path.parent).resolve()

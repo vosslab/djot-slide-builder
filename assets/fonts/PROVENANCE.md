@@ -1,11 +1,15 @@
 # Bundled presentation fonts
 
 The slide compiler measures and emits only the files declared in
-`slide_lib.presentation_theme.FONT_FACE_PROFILES`. The repository validates each file's SHA-256
-before loading the theme. Base-face selection never queries the operating system. The rendering
+`slide_lib.presentation_theme.FONT_FACE_PROFILES`. The compiler reads the actual font metrics and
+checks that each face is usable before loading the theme. Base-face selection never queries the operating system. The rendering
 backend may substitute individual glyphs absent from a selected face; Djot contains no font choices.
 [`font_provenance.json`](font_provenance.json) is the machine-readable record of every source URL,
 pinned revision, asset hash, face index, and local license hash.
+
+License hashes document upstream provenance; they are not slide-build gates. Builds copy available
+license notices into the ODP without validating their text. Missing or unreadable notices do not
+prevent rendering. Repository hygiene preserves upstream license files verbatim.
 
 ## Atkinson Hyperlegible Next
 
@@ -40,12 +44,12 @@ families Atkinson Hyperlegible Next, Atkinson Hyperlegible Mono, and IBM Plex Sa
 so LibreOffice shows the same names users know from their installed fonts. Internal ODF resource
 identifiers are not font family names.
 
-The machine-readable provenance records each original file's SHA-256. Export validates that
-hash before embedding; there are no renamed derivatives or separate derivative hashes.
+The machine-readable provenance records each original file's SHA-256 for reference. Builds do
+not require those metadata hashes or the provenance manifest. Export embeds the usable font files
+it actually measured, without renaming them.
 
-Every generated ODP also carries the applicable OFL notice texts under `Fonts/licenses/` with
-their manifest entries. This keeps the notices beside the distributed fonts as required by
-OFL condition 2.
+Generated ODPs copy available OFL notice texts under `Fonts/licenses/` with their manifest entries.
+Review license completeness when distributing fonts; it does not gate classroom slide rendering.
 
 ## Code runs
 

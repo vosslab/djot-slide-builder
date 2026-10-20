@@ -15,7 +15,7 @@ import slide_lib.native_model
 # to scanning: the resulting character is ordinary text, never a delimiter.
 ESCAPABLE_PUNCTUATION = frozenset(string.punctuation)
 _STYLE_SPAN = re.compile(r"\{(?P<attributes>[^{}]+)\}")
-_BARE_URL = re.compile(r"https?://[^\s<>()\[\]{}*]+")
+_BARE_URL = re.compile(r"https?\\?://[^\s<>()\[\]{}*]+")
 
 
 #============================================
@@ -55,15 +55,33 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 		if source.startswith("![", index):
 			raise _error(path, line, source, index,
 				"images must be standalone component-image blocks")
-		if source.startswith(("http://", "https://"), index):
-			match = _BARE_URL.match(source, index)
+		braced = character == "{" and index + 1 < end and source[index + 1] in "_*~=^+-"
+		if braced or character in "~^":
+			marker = source[index + 1] if braced else character
+			content_start = index + (2 if braced else 1)
+			closing = marker + "}" if braced else marker
+			close = _find_format_close(source, closing, content_start, end)
+			if close is None or close == content_start:
+				# Unpaired delimiters remain ordinary text, including approximation tildes.
+				index = content_start
+				continue
+			_append_text(runs, source[text_start:index])
+			children = _parse_runs(path, line, source, content_start, close)
+			runs.append(_formatted_span(marker, children))
+			index = close + len(closing)
+			text_start = index
+			continue
+		if source.startswith(("http://", "https://", "http\\://", "https\\://"), index):
+			match = _BARE_URL.match(source, index, end)
 			if match is not None:
-				url = match.group().rstrip(".,;:")
+				url_source = match.group().rstrip(".,;:")
+				# Imported Djot may quote the scheme colon; the target must not.
+				url = url_source.replace("\\:", ":", 1)
 				if url:
 					_append_text(runs, source[text_start:index])
 					runs.append(slide_lib.native_model.Link(
 						(slide_lib.native_model.Text(slide_lib.djot_grammar.project_text(url)),), url))
-					index += len(url)
+					index += len(url_source)
 					text_start = index
 					continue
 		if character in ("_", "*") and _opens_delimiter(source, index, end):
@@ -173,20 +191,51 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 			index = close + 1
 			text_start = index
 			continue
-		if character == "~":
-			if _find_unescaped_character(source, "~", index + 1, end) is None:
-				# A bare tilde is ordinary approximation prose such as ``~640``.
-				# Only an actual paired form reaches the unsupported-subset boundary.
-				index += 1
-				continue
-			raise _error(path, line, source, index, "unsupported Djot inline syntax")
-		if character in ("^", "{"):
+		if character == "{":
 			raise _error(path, line, source, index, "unsupported Djot inline syntax")
 		if character == ":" and _is_symbol(source, index, end):
 			raise _error(path, line, source, index, "Djot symbols are not supported")
 		index += 1
 	_append_text(runs, source[text_start:end])
 	return tuple(runs)
+
+
+#============================================
+def _formatted_span(marker: str, children: tuple[slide_lib.native_model.Inline, ...]
+		) -> slide_lib.native_model.Inline:
+	"""Map standard Djot formatting to editable presentation styles."""
+	if marker == "_":
+		return slide_lib.native_model.Emphasis(children)
+	if marker == "*":
+		return slide_lib.native_model.Strong(children)
+	position = {"~": "sub", "^": "super"}.get(marker)
+	span = slide_lib.native_model.StyledSpan(children, underline=marker == "+",
+		highlight=marker == "=", strikethrough=marker == "-", position=position)
+	return span
+
+
+#============================================
+def _find_format_close(source: str, closing: str, start: int, end: int) -> int | None:
+	"""Find a formatting boundary, skipping escapes, code, and nested braced spans."""
+	index = start
+	while index < end:
+		if source[index] == "\\" and index + 1 < end:
+			index += 2
+			continue
+		if source.startswith(closing, index):
+			return index
+		if source[index] == "`":
+			close = _find_unescaped_character(source, "`", index + 1, end)
+			if close is not None:
+				index = close + 1
+				continue
+		if source[index] == "{" and index + 1 < end and source[index + 1] in "_*~=^+-":
+			nested = _find_format_close(source, source[index + 1] + "}", index + 2, end)
+			if nested is not None:
+				index = nested + 2
+				continue
+		index += 1
+	return None
 
 
 #============================================

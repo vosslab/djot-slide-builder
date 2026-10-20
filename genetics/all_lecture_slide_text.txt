@@ -42,7 +42,7 @@ What are the symptoms of the disorder?
 Can it be inherited? Is it dominant or recessive?
 At what age can the disorder be diagnosed? Pre-natal, at birth, childhood, adulthood
 Are certain populations more likely to have the disorder?
-What is the prognosis? How long do the affected patients live? 
+What is the prognosis? How long do the affected patients live?
 Is there a treatment for the disorder?
 Genetic Disorders
 Primarily monogenic disorders
@@ -195,7 +195,7 @@ Biochemists focus heavily on the role, function, and structure of biomolecules. 
 Genetics is the study of the effect of genetic differences on organisms.
 Often this can be inferred by the absence of a normal component (e.g., one gene). It is the study of mutants with respect to the normal phenotype. Genetic interactions can often confound simple interpretations of such "knock-out" studies.
 Molecular biology is the study of molecular underpinnings of the processes of replication, transcription, translation, and cell function.
-The central dogma of molecular biology where genetic material is transcribed into RNA and then translated into protein. 
+The central dogma of molecular biology where genetic material is transcribed into RNA and then translated into protein.
 Cell biology is the study of cells, organelles, cell cycle, and cell division
 their physiological properties, their structure, the organelles they contain, interactions with their environment, their life cycle, division and death. This is done both on a microscopic and molecular level.
 Fundamental concepts
@@ -229,7 +229,7 @@ Figure 14.3-3 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which
 <number>
 Evidence for Chromosomes
 Nuclei of male and female reproductive cells undergo fusion during fertilization
-Chromosomes split and each daughter cell receives an identical set 
+Chromosomes split and each daughter cell receives an identical set
 Chromosome number may differ between species but is the same within a particular species
 Figure 15.2b
 F1 Generation
@@ -269,12 +269,12 @@ Nutritional Mutants in Neurospora
 Minimal medium
 No growth:Mutant cellscannot growand divide
 Growth:Wild-typecells growingand dividing
-EXPERIMENT 
+EXPERIMENT
 X-rays
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-RESULTS 
-Classes of Neurospora crassa 
+RESULTS
+Classes of Neurospora crassa
 Wild type
 Class I mutants
 Class II mutants
@@ -294,8 +294,8 @@ Growth
 Nogrowth
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-RESULTS 
-Classes of Neurospora crassa 
+RESULTS
+Classes of Neurospora crassa
 Wild type
 Class I mutants
 Class II mutants
@@ -315,8 +315,8 @@ Growth
 Nogrowth
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-RESULTS 
-Classes of Neurospora crassa 
+RESULTS
+Classes of Neurospora crassa
 Wild type
 Class I mutants
 Class II mutants
@@ -336,8 +336,8 @@ Growth
 Nogrowth
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-RESULTS 
-Classes of Neurospora crassa 
+RESULTS
+Classes of Neurospora crassa
 Wild type
 Class I mutants
 Class II mutants
@@ -357,8 +357,8 @@ Growth
 Nogrowth
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-RESULTS 
-Classes of Neurospora crassa 
+RESULTS
+Classes of Neurospora crassa
 Wild type
 Class I mutants
 Class II mutants
@@ -378,7 +378,7 @@ Growth
 Nogrowth
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-CONCLUSION 
+CONCLUSION
 Wild type
 Class I mutants(mutation ingene A)
 Class II mutants(mutation ingene B)
@@ -396,7 +396,7 @@ Citrulline
 Arginine
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-CONCLUSION 
+CONCLUSION
 Wild type
 Class I mutants(mutation ingene A)
 Class II mutants(mutation ingene B)
@@ -414,7 +414,7 @@ Citrulline
 Arginine
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-CONCLUSION 
+CONCLUSION
 Wild type
 Class I mutants(mutation ingene A)
 Class II mutants(mutation ingene B)
@@ -432,7 +432,7 @@ Citrulline
 Arginine
 <number>
 Figure 17.2 Inquiry: Do individual genes specify the enzymes that function in a biochemical pathway?
-CONCLUSION 
+CONCLUSION
 Wild type
 Class I mutants(mutation ingene A)
 Class II mutants(mutation ingene B)
@@ -487,7 +487,7 @@ Enzyme A
 Enzyme B
 Enzyme C
 Gene = Polypeptide
-Many proteins are composed of several polypeptides, each of which has its own gene. Beadle and Tatums hypothesis is now: 
+Many proteins are composed of several polypeptides, each of which has its own gene. Beadle and Tatums hypothesis is now:
 one geneone polypeptide
 Note that it is common to refer to gene products as proteins rather than polypeptides
 Which of the following contradicts the one-gene, one-enzyme hypothesis?
@@ -624,7 +624,7 @@ Gorilla  have
 The proposed mechanism for the creation of the long human chromosome 2 by fusion of two shorter chromosomes
 Neanderthal Karyotype(46 Chromosomes)
 Jack jumper ant
-A species of bull ant that is native to Australia. 
+A species of bull ant that is native to Australia.
 Fewest known chromosomes
 Females have two chromosomes (diploid)
 Male have only one (haploid)
@@ -796,7 +796,7 @@ Summary
 Genomes and proteomes differ in size and complexity
 
 Lecture 2D
-DNA Structure Review 
+DNA Structure Review
 Chapter 2
 Dr. Neil Voss
 Sept 11, 2023
@@ -809,7 +809,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -846,8 +846,8 @@ Standard base pairs
 <number>
 Nucleotide Base Pairing
 A-T base pairs have two H-bonds.
-G-C base pairs have three 
-H-bonds 
+G-C base pairs have three
+H-bonds
 A-T base pairing.
 G-C base pairing
 Structure of A-T and G-C base pairs in DNA
@@ -940,7 +940,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -1307,7 +1307,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -1321,7 +1321,7 @@ Two Major Types
 Agarose
 gels are easily cast and handled compared to other matrices, because the gel setting is a physical rather than chemical change
 Poly-acrylamide (PAGE)
-Mixture of acrylamide and bis-acrylamide powder used to create a gel. 
+Mixture of acrylamide and bis-acrylamide powder used to create a gel.
 Care must be used when creating this type of gel, as acrylamide is a potent neurotoxin in its liquid and powdered form.
 Agarose Polymer
 Agar melts at 85 C (185 F) and solidifies around 32-40 C (90-104 F). This property lends a suitable balance between easy melting and good gel stability at relatively high temperatures. Gel density is controlled by concentration of agarose
@@ -1385,7 +1385,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -1465,14 +1465,14 @@ Human leukocyte antigen (HLA) typing
 HLA Genes
 Cell-surface proteins are responsible for the regulation of the immune system in humans.
 HLA genes are highly polymorphic, which means that they have many different alleles.
-They are the major cause of organ transplant rejections. 
+They are the major cause of organ transplant rejections.
 HLA genes areclose together
 cross-overis unlikely
 Inheritance of HLA Haplotypes
 In this example Child 2 and Child 4 have matching HLA genes and antigens.
 Each parent passes one of their two haplotypes with a total of four possible combinations
-Siblings have a 1 in 4 (25%) chance of being HLA identical 
-Identical twins almost always have matching haplotypes, except in rare event where there is crossover between the HLA genes. 
+Siblings have a 1 in 4 (25%) chance of being HLA identical
+Identical twins almost always have matching haplotypes, except in rare event where there is crossover between the HLA genes.
 fathers
 cell
 mothers
@@ -1510,24 +1510,24 @@ cell
 4 possible offspring
 HLA Alleles
 HLA offspring
-A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other. 
-The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other. 
+A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
 Which one of the following is a possible HLA genotype of their offspring?
 A. A6/A8, B2/B7, C3/C8
 B. A5/A6, B4/B7, C1/C8
 C. A3/A6, B4/B5, C3/C8
 D. A6/A8, B5/B7, C4/C8
 HLA offspring
-A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other. 
-The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other. 
+A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
 Which one of the following is a possible HLA genotype of their offspring?
 A. A6/A8, B2/B7, C3/C8
 B. A5/A6, B4/B7, C1/C8
 C. A3/A6, B4/B5, C3/C8
 D. A6/A8, B5/B7, C4/C8
 HLA offspring
-A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other. 
-The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other. 
+A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
 Which one of the following is a possible HLA genotype of their offspring?
 A. A6, B7, C8/A8, B2, C3
 B. A6, B4, C8/A5, B7, C1
@@ -1537,8 +1537,8 @@ Cross-over unlikely
 for adjacent genes
 eliminate A and D
 HLA offspring
-A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other. 
-The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other. 
+A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
 Which one of the following is a possible HLA genotype of their offspring?
 A. A6, B7, C8/A8, B2, C3
 B. A6, B4, C8/A5, B7, C1
@@ -1548,8 +1548,8 @@ One from
 each parent
 eliminate B
 HLA offspring
-A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other. 
-The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other. 
+A father has a HLA genotype of A6,B4,C8 on one chromosome and A5,B7,C1 on the other.
+The mother has an HLA genotype of A8,B2,C4 on one chromosome and A3,B5,C3 on the other.
 Which one of the following is a possible HLA genotype of their offspring?
 A. A6, B7, C8/A8, B2, C3
 B. A6, B4, C8/A5, B7, C1
@@ -1573,7 +1573,7 @@ Answer: B
 Comparing Haplotypes
 Summary
 Baby 81
-The 2 month old baby was found on the beach on 26 December 2004 the day of the earthquake 
+The 2 month old baby was found on the beach on 26 December 2004 the day of the earthquake
 On 14 February 2005, the results of the DNA tests confirmed the couple's claim
 The family were permitted to take the child home on 16 February 2005, almost 2 months after the earthquake
 It was later reported that only one couple had claimed the baby at the hospital, and that the press circus surrounding the baby was blamed for delaying his return to his family.
@@ -1593,7 +1593,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -1618,12 +1618,12 @@ RFLPs, VNTRs, and STRs
 A difference in the DNA sequence of two molecules can be detected if the difference eliminates a restriction site.
 RFLPs are due to SNPs in restriction sites
 RFLPs are codominant
-RFLPs create DNA fragments of different sizes. 
+RFLPs create DNA fragments of different sizes.
 The fragments are the same size in a homozygote.
 The fragments are different sizes in a heterozygote.
 In a restriction fragment length polymorphism (RFLP), alleles may differ in the presence or absence of a cleavage site in the DNA.
 Tandem repeat polymorphism
-A genetic polymorphism in which the alleles in a population differ in the number of copies of a DNA sequence 
+A genetic polymorphism in which the alleles in a population differ in the number of copies of a DNA sequence
 (typically 260 bp) that is repeated in tandem along the chromosome.
 Tandem repeat polymorphisms
 Also called microsatellites
@@ -1635,7 +1635,7 @@ Variable number of tandem repeats
 ~ 10-60 nt
 DNA Fingerprinting:
 Short Tandem Repeats (STR)
-An individuals unique DNA sequence, or genetic profile, can be obtained by analysis of tissue or body fluids 
+An individuals unique DNA sequence, or genetic profile, can be obtained by analysis of tissue or body fluids
 DNA testing can identify individuals with a high degree of certainty
 Genetic profiles are currently analyzed using genetic markers called short tandem repeats (STRs)
 Forensic Evidence and Genetic Profiles
@@ -1747,7 +1747,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -1776,7 +1776,7 @@ The service checks certain letters in your DNA that are associated with diseases
 Differences in Human DNA
 Oligonucleotides attached to a glass slide in a SNP chip can be used to identify duplex DNA molecules containing alternative base pairs for a SNP, in this example a TA base pair versus a CG base pair.
 SNP chips are used to identify SNPs
-The SNP genotype of an individual can be determined by hybridization because DNA from genotypes that are homozygous TA/TA, homozygous CG/CG, or heterozygous TA/CG each gives a different pattern of fluorescence. 
+The SNP genotype of an individual can be determined by hybridization because DNA from genotypes that are homozygous TA/TA, homozygous CG/CG, or heterozygous TA/CG each gives a different pattern of fluorescence.
 SNP chips are used to identify SNPs
 Video
 Lab Video:
@@ -1854,7 +1854,7 @@ B. Somewhat True
 C. Somewhat False
 D. Mostly False
 Answers on Race
-As human populations spread around the globe, with people living in relative isolation for millenniums, some differences emerged. 
+As human populations spread around the globe, with people living in relative isolation for millenniums, some differences emerged.
 Belief in genetic causes of racial inequality remains widespread in the United States
 Health disparities between black and white Americans are more readily explained by environmental effects such as racism than the DNA they inherited from ancestors
 However, variation between members of the same race is often greater than variation between races.
@@ -1863,14 +1863,14 @@ there is more genetic variation within human sexes than there is between them
 it is hard to categorize a person as male or female based just on their brain
 females/girls and males/boys are much more similar to each other than students, and perhaps teachers, realize
 Most Textbooks are Wrong
-The Humane Genetics project explores the role biology education can play in tackling this problem. 
+The Humane Genetics project explores the role biology education can play in tackling this problem.
 When biology education causes students to perceive too much genetic variation between racial groups, it can increase racial prejudice.
-Will this curricular intervention help students and teachers believe that males/boys are not innately better at STEM than females/girls? 
-Could interventions like this play a role in reducing sex/gender disparities in STEM? 
+Will this curricular intervention help students and teachers believe that males/boys are not innately better at STEM than females/girls?
+Could interventions like this play a role in reducing sex/gender disparities in STEM?
 Genetics and Race Education
 In this webinar, Dr. Brian Donovan shares why Genetics education needs to move beyond Mendel to combat white supremacy.
 Eugenics
-Our day-to-day conversations tend to overestimate the differences between humans, whether they pertain to skin pigmentation, culture, linguistics, personality, etc. 
+Our day-to-day conversations tend to overestimate the differences between humans, whether they pertain to skin pigmentation, culture, linguistics, personality, etc.
 While such differences can be enriching, misinterpretation of their importance can be outright dangerous and clearly not based in any sort of mathematical logic.
 However, variation between members of the same race is often greater than variation between races.
 First Three Genomes
@@ -1883,9 +1883,9 @@ Yoruban man from Nigeria
 a female clinical geneticist (Marjolein Kriek) from the Netherlands
 a female leukemia patient in her mid-50s
 Steve Jobs was among the first 20 people to have their whole genome sequenced, reportedly for the cost of $100,000
-The Eugenics Crusade (2017) 
+The Eugenics Crusade (2017)
 The Eugenics Crusade tells the story of the eugenics movement and its long history in the United States, from its beginnings in the study of heredity, to its rise as a popular movement promising to uplift the human race through state sponsored sterilization, to its influence on immigration laws designed to close our borders to groups deemed genetically inferior.
-IMDB rating 7.8, 77 votes 
+IMDB rating 7.8, 77 votes
 Director: Michelle Ferrari
 Run time: 115 min
 
@@ -1904,7 +1904,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -1935,7 +1935,7 @@ Warren Releases DNA Results, Challenges Trump Over Native American Ancestry
 Oct 2018, Sen. Elizabeth Warren has released the results of a DNA test that says there is "strong evidence" of Native American ancestry dating back six to 10 generations
 less than 1/64th percent
 The Golden State Killer
-Golden State Killer DNA 
+Golden State Killer DNA
 1. used DNA taken from an old crime scene
 2. upload DNA to public genealogy database [GEDmatch]
 3. find distant relatives with matching genetic profiles
@@ -1946,9 +1946,9 @@ site provides family trees, able to look for relatives who did not upload geneti
 6. prove that his DNA matched that from the crime scenes
 7. lifted trace of DNA from suspect car door while at Hobby Lobby
 8. arrest and convict
-Golden State Killer DNA 
-In short, the investigators tracked down DeAngelo based on genetic information provided not by him but by one of his relatives. 
-60 Minutes: 
+Golden State Killer DNA
+In short, the investigators tracked down DeAngelo based on genetic information provided not by him but by one of his relatives.
+60 Minutes:
 Genetic Genealogy
 s51e04
 Original Air Date Oct 21, 2018
@@ -1959,19 +1959,19 @@ via SNP Genotype
 We classified haplotypes into blood groups on the basis of genotypes at three SNPs:
 rs8176747, rs41302905, and rs8176719.
 A deletion at rs8176719 confers a type O haplotype
-as does a T allele at rs41302905. 
-If neither rs8176719 nor rs41302905 confers type O, 
+as does a T allele at rs41302905.
+If neither rs8176719 nor rs41302905 confers type O,
 then rs8176747 distinguishes between types A and B.
 The blood group assignment methodology described is incomplete
 there are other rare variants that can influence blood group.
-compared to self-reported blood groups from over 1.47 million research participants, 
+compared to self-reported blood groups from over 1.47 million research participants,
 the genetic assignments achieved 90-94% precision and 72-96% recall depending on blood group.
 Trans-ethnic analysis reveals genetic and non-genetic associations with COVID-19 susceptibility and severity.
 SNPedia rs8176719
 rs8176719 represents a site in the ABO gene, often referred to as either c.261delG or, less commonly, c.260_262insG, and it is a key SNP in determining blood group type O status. [PMID 2333095]
-An allele that encodes either a blood group type A or type B will have a (G) at this SNP site, i.e. such an allele will be rs8176719(G). 
-If a one-base deletion has occurred at this site, removing this nucleotide all together, the corresponding allele is considered to be rs8176719(-) and encodes the most common blood group type O allele. 
-However, an individual will typically only be blood group type O if they are carry two copies of (are homozygous) for this deletion, in other words, if their genotype is rs8176719(-;-). 
+An allele that encodes either a blood group type A or type B will have a (G) at this SNP site, i.e. such an allele will be rs8176719(G).
+If a one-base deletion has occurred at this site, removing this nucleotide all together, the corresponding allele is considered to be rs8176719(-) and encodes the most common blood group type O allele.
+However, an individual will typically only be blood group type O if they are carry two copies of (are homozygous) for this deletion, in other words, if their genotype is rs8176719(-;-).
 If they carry one copy, they could be blood type A, or blood type B (but are unlikely to be type O).
 A person who is rs8176719(G;G) is likely to be of blood type A, B, or AB,
 but due to the existence of (rare) nonfunctional O alleles brought about by (nondeletional) mutations at other positions than rs8176719, they could at least theoretically still be phenotyped as type O.
@@ -1994,7 +1994,7 @@ Restriction Enzymes
 Gel electrophoresis analysis
 DNA Profiling
 Blood typing
-HLA typing 
+HLA typing
 STR fingerprint
 Single Nucleotide Polymorphisms
 Whole Genome Analysis
@@ -2006,7 +2006,7 @@ A major thrust of the project was development of technology for faster sequencin
 J. Craig Venter
 Two approaches complemented each other in obtaining the complete sequence
 The initial approach built on an earlier storehouse of human genetic information
-Then J. Craig Venter set up a company to sequence the entire genome using an alternative whole-genome shotgun approach 
+Then J. Craig Venter set up a company to sequence the entire genome using an alternative whole-genome shotgun approach
 This used cloning and sequencing of fragments of randomly cut DNA followed by assembly into a single continuous sequence
 <number>
 Cut the DNA into
@@ -2037,7 +2037,7 @@ CGCCATCAGTCCGCTATACGATACTGGT
 Order the sequencesinto one overallsequence withcomputer software.
 <number>
 Figure 21.2-3 Whole-genome shotgun approach to sequencing (step 3)
-Using available DNA sequences, geneticists can study genes directly 
+Using available DNA sequences, geneticists can study genes directly
 The identification of protein coding genes within DNA sequences in a database is called gene annotation
 Identifying Protein-Coding Genes
 <number>
@@ -2075,7 +2075,7 @@ Comparing Genomes Within a Species
 Whole Genome Sequencing
 The cost to generate a high-quality 'draft' whole human genome sequence in mid-2015 was just above $4,000;
 by late in 2015, that figure had fallen below $1,500.
-The cost to generate a whole-exome sequence was generally below $1,000. 
+The cost to generate a whole-exome sequence was generally below $1,000.
 Commercial prices for whole-genome and whole-exome sequences have often (but not always) been slightly below these numbers.
 What is the difference between exome and genome?
 Human Genome Information
@@ -2135,13 +2135,13 @@ Mendel the Teacher
 When Gregor returned to the abbey after finishing the university, he taught science at a nearby school.
 Though he liked teaching, Gregor wanted to make a great discovery himself.
 He was fascinated by one of the hottest topics of the time:
-How do mothers and fathers  animals and plants  pass down traits to their children? 
+How do mothers and fathers  animals and plants  pass down traits to their children?
 Mendel the Researcher
 Gregor read how earlier scientists had paired different species of plants to see what their offspring would be like.
 The offspring were called hybrids.
 Many hybrids (corn, wheat, flowers) were created by farmers, but only a few were ever studied.
 Gregors Plan
-Mendel could control the process of fertilization, 
+Mendel could control the process of fertilization,
 To understand the processes of inheritance
 Breed thousands of offspring from just a few pairings.
 Count how often specific traits appeared.
@@ -2150,7 +2150,7 @@ Choice of Plant
 He studied 34 kinds of peas in his garden.
 Such a wide variety it was hard for Gregor to decide which traits to study.
 He looked closely and first noticed the color of the seeds could be either green or yellow.
-Further some were smooth and some were wrinkled. 
+Further some were smooth and some were wrinkled.
 Mendel Identified seven characters of pea plants for his study.
 A heritable feature that varies among individuals (such as flower color) is called a character
 Each variant for a character, such as purple or white color for flowers, is called a trait
@@ -2237,7 +2237,7 @@ Mendels Discovery
 Mendels legacy
 In 1900, 16 years after his death, three different scientists in three different countries re-discovered his 1866 paper.
 They were trying to repeat his discovery and were stunned by the brilliance and foresight of Mendel.
-Mendels extraordinary experiments and insights brought us the terms dominant and recessive 
+Mendels extraordinary experiments and insights brought us the terms dominant and recessive
 Mendel didnt know about the existence of genes or chromosomes or the details of cell division
 Gregor Mendel is known as the first geneticist and his discoveries are called Mendels laws.
 Mendel was not alone in his quest to understand inheritance
@@ -2280,7 +2280,7 @@ inheritance of genes at one location does not influence the inheritance of genes
 Key concepts and terms
 Which one of the following terms refers to
 the genetic constitution of an organism
-A. Alleles 
+A. Alleles
 B. Genotype
 C. Heterozygous
 D. Homologous chromosomes
@@ -2290,7 +2290,7 @@ G. Phenotype
 Answer: B
 Which one of the following terms refers to
 the observable traits of an organism
-A. Alleles 
+A. Alleles
 B. Genotype
 C. Heterozygous
 D. Homologous chromosomes
@@ -2300,7 +2300,7 @@ G. Phenotype
 Answer: G
 Which one of the following terms refers to
 location of a gene on a chromosome
-A. Alleles 
+A. Alleles
 B. Genotype
 C. Heterozygous
 D. Homologous chromosomes
@@ -2310,7 +2310,7 @@ G. Phenotype
 Answer: F
 Which one of the following terms refers to
 different versions of the same gene
-A. Alleles 
+A. Alleles
 B. Genotype
 C. Heterozygous
 D. Homologous chromosomes
@@ -2320,7 +2320,7 @@ G. Phenotype
 Answer: A
 Which one of the following terms refers to
 when two copies of a gene are identical
-A. Alleles 
+A. Alleles
 B. Genotype
 C. Heterozygous
 D. Homologous chromosomes
@@ -2330,7 +2330,7 @@ G. Phenotype
 Answer: E
 Which one of the following terms refers to
 when two copies of a gene are different
-A. Alleles 
+A. Alleles
 B. Genotype
 C. Heterozygous
 D. Homologous chromosomes
@@ -2366,7 +2366,7 @@ Phenotypes
 Morphological phenotype
 Morphology is shape and structure.
 Molecular phenotyping involves determining phenotype at the molecular level.
-Useful to determine genotype 
+Useful to determine genotype
 Molecular Phenotyping
 The wildtype allele W is dominant to the mutant allele w, which contains an insertion of foreign DNA.
 Figure 3.2: (A) W (round) is an allele of a gene that specifies the amino acid sequence of starch branching enzyme I (SBEI). (B) w (wrinkled) is an allele that encodes an inactive form of the enzyme because its DNA sequence is interrupted by the insertion of a transposable element. (C) At the level of the morphological phenotype, W is dominant to w: Genotypes WW and Ww have round seeds, whereas genotype ww has wrinkled seeds.
@@ -2423,7 +2423,7 @@ Blending hypothesis
 The blending hypothesis is the idea that genetic material from the two parents blends together
 like blue and yellow paint blend to make green
 If this process were true, the variation in a population would be reduced
-a fact that caused Charles Darwin and many other early biologists to doubt the validity of the hypothesis. 
+a fact that caused Charles Darwin and many other early biologists to doubt the validity of the hypothesis.
 <number>
 Particulate Hypothesis
 The particulate hypothesis is the idea that parents pass on discrete heritable units (genes)
@@ -2603,7 +2603,7 @@ In sexual reproduction, each parent contributes just one of their alleles to its
 different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location does not influence the inheritance of genes at another location.
 Mendels Observation
-The Unexpected Phenotypes of the F2 Generation 
+The Unexpected Phenotypes of the F2 Generation
 When Mendel crossed contrasting, true-breeding white- and purple-flowered pea plants, all of the F1 hybrids were purple
 When Mendel crossed the F1 hybrids, many of the F2 plants had purple flowers, but some had white
 Mendel discovered a ratio of about three to one, purple to white flowers, in the F2 generation
@@ -2615,7 +2615,7 @@ Very consistent
 Mendel Tried This for Seven Different Characters
 Mendel developed a hypothesis to explain the 3:1 inheritance pattern he observed in F2 offspring
 Four related concepts make up this model
-These concepts can be related to what we now know about genes and chromosomes 
+These concepts can be related to what we now know about genes and chromosomes
 Mendels Model
 Mendel's Law
 of Segregation
@@ -2691,7 +2691,7 @@ In sexual reproduction, each parent contributes just one of their alleles to its
 different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location does not influence the inheritance of genes at another location.
 What are the
-five (5) criteria for the 
+five (5) criteria for the
 Law of Segregation?
 Law of Segregation
 (1) Alleles come in pairs
@@ -2705,7 +2705,7 @@ How can we do this?
 Hypothesis of Dependent Assortment
 Prediction ofDependent Assortment
 Dependent assortment predicts the alleles are always linked:
-F and the S alleles are linked i.e. purple flower always goes with yellow seed, and 
+F and the S alleles are linked i.e. purple flower always goes with yellow seed, and
 f and the s alleles are linked i.e. white flower always goes with green seed.
 only certain combinations are possible: FS and fs
 When a dihybrid cross is conducted, dependent assortment predicts offspring with a phenotypic ratio of:
@@ -2713,8 +2713,8 @@ When a dihybrid cross is conducted, dependent assortment predicts offspring with
 1 white-flower/green-seed.
 Prediction of
 Independent Assortment
-Independent assortment predicts the alleles are not linked. 
-All combinations are possible: FS, Fs, fS, and fs. 
+Independent assortment predicts the alleles are not linked.
+All combinations are possible: FS, Fs, fS, and fs.
 When a dihybrid cross is conducted, independent assortment predicts a phenotypic ratio of:
 9 purple-flower/yellow-seed
 3 purple-flower/green-seed
@@ -2941,12 +2941,12 @@ Take it one gene at a time.
 What proportion are expected to be heterozygote of gene A?
 Ignoring other genes, what proportion are expected to be heterozygote of gene B?
 The multiplication rule states that the probability that two or more independent events will occur together is the product of their individual probabilities
-Probability in an F1 monohybrid cross can be determined using the multiplication rule 
+Probability in an F1 monohybrid cross can be determined using the multiplication rule
 Segregation in a heterozygous plant is like flipping a coin: Each gamete has a  chance of carrying the dominant allele and a  chance of carrying the recessive allele
 Multiplication Rule
 Answer
 Proportion for each gene is:
-A:  , B:  , C:  , D:  
+A:  , B:  , C:  , D:
 A, B, C, and D are independent, so multiplication rule applies:
  x  x  x  = 1/16
 A Problem of Five Genes
@@ -3063,7 +3063,7 @@ Seven Gene Gamete Formation
 Genotype of all unlinked genes:
 Look if there is only one allele
 AA bb Cc DD Ee FF gg
-1  1  2  1  2  1  1 = 4 
+1  1  2  1  2  1  1 = 4
 Only Four Possible Gametes:
 AbCDEFg
 AbCDeFg
@@ -3076,7 +3076,7 @@ Chapter 3
 Dr. Neil Voss
 Sept 25, 2023
 Assuming complete dominance and independent assortment.
-George Aa Bb Cc dd Ee ff Gg and 
+George Aa Bb Cc dd Ee ff Gg and
 Linda AA bb cc dd ee Ff Gg
 are crossed answer the following questions.
 (a) How many different gametes does George produce?
@@ -3109,15 +3109,15 @@ these genes are independent, so we multiply
 Punnett square is just the number of gametes multiplied: 32 x 4
 Punnett square is just the number of gametes multiplied: 32 x 4 = 128
 Assuming complete dominance and independent assortment. George Aa Bb Cc dd Ee ff Gg and Linda AA bb cc dd ee Ff Gg are crossed answer the following questions.
-(a) How many different gametes does George produce? 
+(a) How many different gametes does George produce?
 32gametes
 (b) How many different gametes does Linda produce?
 4gametes
 (c) How big would a Punnett square for this cross be?
 32x4
-(d) How many possible genotypes are created in this cross? 
+(d) How many possible genotypes are created in this cross?
 96genotypes
-(e) How many possible phenotypes are possible from this cross? 
+(e) How many possible phenotypes are possible from this cross?
 32phenotypes
 Note: the number of phenotypes is always less than or equal to the number of genotypes
 phenotypes <= genotypes
@@ -3143,7 +3143,7 @@ Oct 2, 2023
 Unknown Alleles
 Hartl Question 3.11
 Part a
-Hints: 
+Hints:
 each individual must have an allele for each gene.
 double homozygotes, will only have two bands, because they have two copies of the same allele
 look at the double homozygotes
@@ -3169,7 +3169,7 @@ Unknown Alleles
 Hartl Question 3.11
 Part b
 (a) 1,3 = gene; 2,4 = gene
-Both P1 and P2 are heterozygotes 
+Both P1 and P2 are heterozygotes
 Lane D has 1,2,3, but not 4
 (a) 1,3 = gene; 2,4 = gene
 (b) Lane D has 1,2,3, but not 4
@@ -3221,7 +3221,7 @@ Characteristics of rare dominant alleles
 3. On average, half of the individuals in sibships with an affected parent are affected.
 Rare Recessive Disorders
 Inheritance of an autosomal recessive disease gene
-The heterozygous individuals are phenotypically wild type. 
+The heterozygous individuals are phenotypically wild type.
 Mating of two heterozygotes is required to produce an affected (homozygous recessive) child.
 Characteristics of rare recessive alleles
 1. Females and males are equally likely to be affected.
@@ -3255,7 +3255,7 @@ in X-linked dominant females (circles) are more likely to be affected than males
 X-linked Dominant
 in X-linked dominant females (circles) are more likely to be affected than males (squares).
 Y-linked
-in Y-linked males (squares) are the only ones that can be affected. 
+in Y-linked males (squares) are the only ones that can be affected.
 Females (circles) have no Y chromosome.
 Sample Problems
 A. Auto Dominant
@@ -3347,7 +3347,7 @@ Union: probability that either of two events will occur
 P(A or B)
 Intersection: probability that two events occur at the same time
 P(A and B)
-Mutually Exclusive: Two events are mutually exclusive if they cannot occur at the same time. Another word that means mutually exclusive is disjoint. 
+Mutually Exclusive: Two events are mutually exclusive if they cannot occur at the same time. Another word that means mutually exclusive is disjoint.
 intersection: P(A and B) = 0
 Addition Rules
 Addition Rule
@@ -3358,12 +3358,12 @@ Specific Addition Rule: If two events are mutually exclusive, then the probabili
 P(A or B) = P(A) + P(B)
 General Addition Rule: In events which aren't mutually exclusive, there is some overlap.
 When P(A) and P(B) are added, the probability of the intersection (and) is added twice.
-To compensate for that double addition, the intersection needs to be subtracted. 
+To compensate for that double addition, the intersection needs to be subtracted.
 P(A or B) = P(A) + P(B)  P(A and B)
 Probability speak...
 In the OR case the overlap is counted twice so we must subtract it.
 P(A or B) =
-P(A) + P(B) 
+P(A) + P(B)
  P(A and B)
 A1A2
 A3A4
@@ -3419,12 +3419,12 @@ A3A4
 Multiplication Rules
 The multiplication rule states that the probability that two or more independent events will occur together is the product of their individual probabilities
 P(A and B) = P(A)  P(B)
-Probability in an F1 monohybrid cross can be determined using the multiplication rule 
+Probability in an F1 monohybrid cross can be determined using the multiplication rule
 Segregation in a heterozygous plant is like flipping a coin: Each gamete has a  chance of carrying the dominant allele and a  chance of carrying the recessive allele
 Special Multiplication Rule
 General Multiplication Rule
 The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred, P(B|A).
-P(A and B) = P(A)  P(B|A) = P(B)  P(A|B) 
+P(A and B) = P(A)  P(B|A) = P(B)  P(A|B)
 P(A|B) = The probability that Event A occurs, given that Event B has occurred, is called a conditional probability.
 If A and B are independent, then:
 P(A and B) = P(A)  P(B)
@@ -3470,7 +3470,7 @@ Notes to Neil
 look over problems towards the end of the slide deck
 perhaps add some simple non-genetics examples
 add more Venn diagrams
-Summary From 
+Summary From
 Previous Slides
 Multiplication Rules
 Specific Multiplication Rule, if two events, A and B, are independent, then:
@@ -3512,31 +3512,31 @@ P(hetero | round)
 We want the probability the genotype is heterozygous given the seed is round.
 P(hetero | round)
 This is equal to the probability that the seed is both heterozygous and round divided by the probability the seed is round (with any genotype)
-P(hetero | round) 
+P(hetero | round)
 = P(hetero and round)  P(round)
 Goal:
 P(hetero | round)
-P(hetero | round) 
+P(hetero | round)
 = P(hetero and round)  P(round)
-P(round) = 
-P(hetero) = 
+P(round) =
+P(hetero) =
 P(round|hetero) = 1
 P(round and hetero)
 = P(hetero)  P(round|hetero)
-=   1 = 
+=   1 =
 Goal:
 P(hetero | round)
-P(round) = 
-P(round and hetero) = 
-P(hetero | round) 
-= P(hetero and round)  P(round) 
-=    
+P(round) =
+P(round and hetero) =
+P(hetero | round)
+= P(hetero and round)  P(round)
+=
 = 4/6 = 2/3
 We want the probability the genotype is heterozygous given the seed is round.
-P(hetero | round) 
+P(hetero | round)
 = 2/3
 We want the probability the genotype is heterozygous given the seed is round.
-P(hetero | round) 
+P(hetero | round)
 = 2/3
 Visually it is also 2 out of 3
 Question 3.28
@@ -3622,9 +3622,9 @@ TT, Tt, tt = 3
 2  2  3 = 12
 Each gene is independent, multiplication rule
 Incompleteness does not matter, since we are discussing genotype.
-(b) MM is , SS is , and tt is 
+(b) MM is , SS is , and tt is
      = 1/64
-(c) MM or mm is , SS or ss is , TT or tt is 
+(c) MM or mm is , SS or ss is , TT or tt is
      = 1/8
 Codominance
 two dominant alleles affect the phenotype
@@ -3712,11 +3712,11 @@ What are the donor percentages?
 Polygenic Inheritance
 two or more genes affect the phenotypic expression of a single trait
 Polygenic Inheritance
-Monogenic inheritance refers to genetic control of a phenotype or trait by a single gene. 
+Monogenic inheritance refers to genetic control of a phenotype or trait by a single gene.
 Digenic inheritance refers to the interaction of only two genes that affect the phenotypic expression of a single trait.
 Many traits are not determined so simply, and either involve the interaction of many genes
 Multifactorial inheritance results from the interaction of many genes and with environmental effects.
-Polygenic inheritance results from the interaction of many genes, but has no environmental effects. 
+Polygenic inheritance results from the interaction of many genes, but has no environmental effects.
 Polygenic Inheritance
 Polygenic inheritance refers to a single inherited phenotypic trait that is controlled by two or more different genes.
 polygenic traits may display a range of possible phenotypes, determined by a number of different genes and the interactions between them.
@@ -3857,7 +3857,7 @@ Figure 14.3-1 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which
 <number>
 Bateson and Punnett
 In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was pure-breeding for white flower
-This cross yielded an F1 generation in which all progeny had purple flowers. 
+This cross yielded an F1 generation in which all progeny had purple flowers.
 Self- or cross-pollination
 All plants had purple flowers
 White
@@ -3894,7 +3894,7 @@ Figure 14.3-2 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which
 <number>
 Bateson and Punnett
 In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was pure-breeding for white flower
-This cross yielded an F1 generation in which all progeny had purple flowers. 
+This cross yielded an F1 generation in which all progeny had purple flowers.
 Next, two F1 plants were crossed to create the F2 generation.
 In this generation, Bateson and Punnett counted a total of 382 purple-flowered plants and 269 white-flowered plants.
 The ratio of purple flowers to white flowers was thus 9.4:6.6, or approximately 9:7.
@@ -3922,7 +3922,7 @@ Figure 14.3-3 Inquiry: When F1 hybrid pea plants self- or cross-pollinate, which
 <number>
 Bateson and Punnett
 In 1909, Bateson and Punnett decided two cross two varieties of pea, each of which was pure-breeding for white flower
-For the F1 generation, all progeny had purple flowers. 
+For the F1 generation, all progeny had purple flowers.
 For the F2 generation, they found a ratio of purple flowers to white flowers of approximately 9:7.
 Bateson proposed an ability of an "allelomorphic pair" (pair of gene alleles) to mask the affects of the alleles for another gene.
 It seemed that two recessive alleles at one flower locus could mask the effects of the alleles at the other flower locus.
@@ -3948,7 +3948,7 @@ The dominant C and P alleles code for functional steps in anthocyanin production
 Thus, if two recessive alleles occur for either gene, white flowers will result.
 9:7 ratio
 Underlying Gene Mechanism
-(discovered 82 years later) 
+(discovered 82 years later)
 Two genes that produce plant pigment
 C gene
 Two genes that produce plant pigment
@@ -4029,7 +4029,7 @@ Squash Epistasis
 Dominant allele W inhibits conversion to green
 2. Plants with genotype Y- produce enzyme-2, which converts green into yellow
 genotype yy do not encode a functional enzyme-2
-Which genotypes are white, green, and yellow? 
+Which genotypes are white, green, and yellow?
 What is the phenotypic ratio?
 Figure it out with your neighbors...
 Squash Dihybrid Cross(ignoring epistasis)
@@ -4311,7 +4311,7 @@ Centromere
 Chromosomearm
 ChromosomalDNA molecules
 <number>
-Figure 12.5-1 Chromosome duplication and distribution during cell division (step 1) 
+Figure 12.5-1 Chromosome duplication and distribution during cell division (step 1)
 Figure 12.5-2
 Chromosomes
 Centromere
@@ -4410,7 +4410,7 @@ Sexual Life cycle
 Meiosis produces haploid daughter cells
 In meiosis, there are two successive nuclear divisions but only one round of DNA replication
 First nuclear division:
-homologous chromosomes are separated from each other 
+homologous chromosomes are separated from each other
 each daughter chromosome consists of two identical chromatids
 Second nuclear division:
 resembles mitotic division
@@ -4432,7 +4432,7 @@ duplicated
 chromosomes
 Sister
 chromatids
-Figure 13.7a Overview of meiosis: how meiosis reduces chromosome number (part 1: interphase) 
+Figure 13.7a Overview of meiosis: how meiosis reduces chromosome number (part 1: interphase)
 <number>
 First Division:
 Meiosis 1
@@ -4473,7 +4473,7 @@ Chiasmata  the point of contact (or physical link) between two homologous chromo
 Prophase I isincredibly complex(more than Prophase II)and is divided intosix (6) sub-stages
 Stages of Prophase I
 1. Leptotene
-chromosomes start to condense 
+chromosomes start to condense
 chromosomes first become visible
 thread-like chromomeres are seen
 2. Zygotene
@@ -4481,7 +4481,7 @@ synapsis begins
 the pairing of homologous chromosomes begins
 the synapsis process forms numerous points of contact
 Stages of Prophase I
-Pachytene 
+Pachytene
 Crossing over of genetic material occurs between homologous chromosomes
 3. Early Pachytene
 synapsis (pairing) is complete
@@ -4495,7 +4495,7 @@ Figure 13.9b
 Crossover
 Chiasmata
 Holliday junction
-Figure 13.9b Crossing over and synapsis in prophase I: a closer look (part 2) 
+Figure 13.9b Crossing over and synapsis in prophase I: a closer look (part 2)
 <number>
 Stages of Prophase I
 5. Diplotene
@@ -4504,7 +4504,7 @@ homologous chromosomes begin to migrate apart
 held together only by the chiasmata
 6. Diakinesis
 chromosomes are at their most condensed form
-homologous chromosomes reach maximum repulsion 
+homologous chromosomes reach maximum repulsion
 before separation in anaphase I
 WARNING!
 Diplotene and
@@ -4568,7 +4568,7 @@ proteins holding
 sister chromatid
 arms together
 Recombinant chromosomes
-Figure 13.12-5 The results of crossing over during meiosis (step 5) 
+Figure 13.12-5 The results of crossing over during meiosis (step 5)
 <number>
 Second Division:
 Meiosis 2
@@ -4596,7 +4596,7 @@ Figure 13.8 The meiotic division of an animal cell
 Overview
 The stages of meiosis
 Two successive cell divisions occur resulting in four daughter cells.
-The chromosome number is halved in the first division. 
+The chromosome number is halved in the first division.
 Figure 13.8
 MEIOSIS I: Separates
 homologous chromosomes
@@ -4654,7 +4654,7 @@ cells
 forming
 MEIOSIS II: Separates
 sister chromatids
-Figure 13.8 Exploring meiosis in an animal cell 
+Figure 13.8 Exploring meiosis in an animal cell
 <number>
 *** After telophase I of meiosis, after the first cell division, the chromosomal makeup of each daughter cell is _____.
 A) diploid, and the chromosomes are each composed of a single chromatid
@@ -4694,7 +4694,7 @@ proteins holding
 sister chromatid
 arms together
 Recombinant chromosomes
-Figure 13.12-5 The results of crossing over during meiosis (step 5) 
+Figure 13.12-5 The results of crossing over during meiosis (step 5)
 <number>
 Molecular Basis for Principle of Independent Assortment
 Possibility 1
@@ -4713,7 +4713,7 @@ Combination 4
 Both possibilities are equally likely.
 2/8 gametes =  are AB;2/8 gametes =  are Ab
 2/8 gametes =  are ab;2/8 gametes =  are aB
-Figure 13.11-3 The independent assortment of homologous chromosomes in meiosis (step 3) 
+Figure 13.11-3 The independent assortment of homologous chromosomes in meiosis (step 3)
 <number>
 Non-homologous chromosome assort independently during meiosis I
 Alignment of chromosomes random
@@ -4761,7 +4761,7 @@ Mitosis and
 development
 Multicellular diploid
 adults (2n = 46)
-Figure 13.5 The human life cycle 
+Figure 13.5 The human life cycle
 <number>
 Egg vs. Sperm
 In male meiosis, four gametes (sperm) are produced.
@@ -4802,7 +4802,7 @@ some protists
 MEIOSIS
 FERTILIZATION
 Zygote
-Figure 13.6 Three types of sexual life cycles 
+Figure 13.6 Three types of sexual life cycles
 <number>
 Comparison of Mitosis and Meiosis
 Mitosis conserves the number of chromosome sets, producing cells that are genetically identical to the parent cell
@@ -4853,9 +4853,9 @@ tids
 separate.
 Daughter cells of meiosis II
 Daughter
-cells of 
+cells of
 meiosis I
-Figure 13.10a A comparison of mitosis and meiosis (part 1: mitosis vs. meiosis art) 
+Figure 13.10a A comparison of mitosis and meiosis (part 1: mitosis vs. meiosis art)
 <number>
 Figure 13.10b
 SUMMARY
@@ -4887,8 +4887,8 @@ identical to the parent
 cell, with the same number
 of chromosomes
 Enables multicellular animal
-or plant (gametophyte or 
-sporophyte) to arise from a 
+or plant (gametophyte or
+sporophyte) to arise from a
 single cell; produces cells
 for growth, repair, and, in
 some species, asexual
@@ -4911,7 +4911,7 @@ Produces gametes (in animals) or spores
 of chromosomes sets by half and introduces
 genetic variability among the gametes or
 spores
-Figure 13.10b A comparison of mitosis and meiosis (part 2: mitosis vs. meiosis table) 
+Figure 13.10b A comparison of mitosis and meiosis (part 2: mitosis vs. meiosis table)
 <number>
 Meiosis I is Unique
 Three events are unique to meiosis, and all three occur in meiosis l
@@ -4955,11 +4955,11 @@ In each genotype there is a dominant allele, the phenotype is determined by domi
 (3) Law of Segregation or Law of Purity of Gametes
 In sexual reproduction, each parent contributes just one of their alleles to its offspring
 (4) Law of Independent Assortment
-different pairs of alleles are passed onto the offspring independently of each other. 
+different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
 Mendels Principleswere Imperfect
 In Chapters 4 and5, we will be discussing the contributions of Thomas Hunt Morgan.
-Morgan brought Mendels ideas to molecular biology 
+Morgan brought Mendels ideas to molecular biology
 in doing so Morgan expanded on and falsified Mendel original ideas.
 Mendels Four Principlesof Heredity
 (1) Principles of Paired Factors
@@ -4971,7 +4971,7 @@ CODOMINANCE, INCOMPLETE DOMINANCE and EPISTATIS
 (3) Law of Segregation or Law of Purity of Gametes
 In sexual reproduction, each parent contributes just one of their alleles to its offspring
 (4) Law of Independent Assortment
-different pairs of alleles are passed onto the offspring independently of each other. 
+different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
 The first solid evidence associating a specific gene with a specific chromosome came in the early 20th century from the work of Thomas Hunt Morgan
 These early experiments provided convincing evidence that the chromosomes are the location of Mendels heritable factors
@@ -4986,10 +4986,10 @@ They have only four pairs of chromosomes
 Drosophila chromosomes
 Wild Type
 Morgan noted wild type, or normal, phenotypes that were common in the fly populations
-wild type literally means the most common phenotype 
+wild type literally means the most common phenotype
 Traits alternative to the wild type are called mutant phenotypes
 <number>
-Wild-type Drosophila flies have red eyes (left). 
+Wild-type Drosophila flies have red eyes (left).
 Among his flies, Morgan discovered a mutant male with white eyes (right).
 This variation made it possible for Morgan to trace a gene for eye color to a specific chromosome (LMs).
 <number>
@@ -5013,7 +5013,7 @@ Figure 15.4b
 PGeneration
 F1Generation
 F2Generation
-Conclusion 
+Conclusion
 Eggs
 Sperm
 <number>
@@ -5049,16 +5049,16 @@ orSperm
 22 + Y
 In mammals, the sex of an offspring depends the sperm cell and whether it contains an X chromosome or a Y.
 X-Y System
-Males  are heterogametic (XY) 
+Males  are heterogametic (XY)
 Females  are homogametic (XX)
 <number>
 Figure 15.6a Some chromosomal systems of sex determination (part 1: X-Y and X-0 systems)
 (b) The X-0 system
 22 +X
 22 +XX
-In grasshoppers, cockroaches, and some other insects, there is only one type of sex chromosome, the X. 
+In grasshoppers, cockroaches, and some other insects, there is only one type of sex chromosome, the X.
 Females are XX;
-males have only one sex chromosome (X0). 
+males have only one sex chromosome (X0).
 Sex of the offspring is determined by the sperm cell and whether it contains an X chromosome or no sex chromosome.
 X-O System
 <number>
@@ -5067,26 +5067,26 @@ Figure 15.6a Some chromosomal systems of sex determination (part 1: X-Y and X-0 
 76 +ZW
 76 +ZZ
 Z-W System
-In birds, some fishes, and some insects, the sex chromosomes present in the egg (not the sperm) determine the sex of offspring. 
+In birds, some fishes, and some insects, the sex chromosomes present in the egg (not the sperm) determine the sex of offspring.
 The sex chromosomes are designated Z and W. Females are ZW and males are ZZ.
 <number>
 Figure 15.6b Some chromosomal systems of sex determination (part 2: Z-W and haplo-diploid systems)
 Z-linked inheritance in chickens
-Females are heterogametic (WZ) 
+Females are heterogametic (WZ)
 Males are homogametic (ZZ)
 Barred feathers in chickens, a classic example showing that chromosomal sex determination in birds is the reverse of that in mammals.
 (d) The haplo-diploid system
 32(Diploid)
 16(Haploid)
 Haplo-Diploid System
-There are no sex chromosomes in most species of bees and ants. 
-Females develop from fertilized eggs and are thus diploid. 
+There are no sex chromosomes in most species of bees and ants.
+Females develop from fertilized eggs and are thus diploid.
 Males develop from unfertilized eggs and are haploid; they have no fathers.
 <number>
 Figure 15.6b Some chromosomal systems of sex determination (part 2: Z-W and haplo-diploid systems)
 How is sex determined in humans?
 A) a gene present on the X chromosome that triggers female development
-B) an autosomal gene that is required for the expression of genes on the Y chromosome 
+B) an autosomal gene that is required for the expression of genes on the Y chromosome
 C) a gene region present on the Y chromosome that triggers male development
 D) an autosomal gene that is required for the expression of genes on the X chromosome
 Answer: C
@@ -5117,7 +5117,7 @@ the gene for color discrimination is on the X chromosome but not the Y
 If a female XX carries the gene for color blindness on only one of her two X chromosomes
 she will not express the defect, but half of her eggs will carry the defective gene
 however, her sons have a 50-50 chance of being color-blind
-Because the fertilizing sperm carries a Y chromosome, it cannot provide a second copy of that allele to correct the defect with a wildtype copy of the gene, resulting in a colorblind male child 
+Because the fertilizing sperm carries a Y chromosome, it cannot provide a second copy of that allele to correct the defect with a wildtype copy of the gene, resulting in a colorblind male child
 Color Blind Tests
 Individuals lacking a light-absorbing photoreceptor for the color green will see a colorful fruit stand (left) as mostly yellows (right).
 Can a color-blind male (XbY) and non-carrier wild-type vision female (XNXN) have a color-blind son?
@@ -5137,7 +5137,7 @@ Female on top: 20
 Our text seems to prefer male/sperm on top, female/egg on the side.
 The Punnett Square
 Color-Blind Maleand Wild-Type Female
-A color-blind father will transmit the mutant allele to all daughters 
+A color-blind father will transmit the mutant allele to all daughters
 but not to sons
 <number>
 Figure 15.7 The transmission of X-linked recessive traits
@@ -5149,15 +5149,15 @@ and a 50% chance that each son will have the disorder
 <number>
 Figure 15.7 The transmission of X-linked recessive traits
 Carrier Femaleand Color-Blind Male
-If a carrier mates with a color-blind male, 
+If a carrier mates with a color-blind male,
 regardless of sex,
-there is a 50% chance that each child born to them will have the disorder, 
+there is a 50% chance that each child born to them will have the disorder,
 <number>
 Figure 15.7 The transmission of X-linked recessive traits
 Sample
 Problems
-Red-green color blindness is a X-linked recessive trait in humans. 
-Two people with wild-type color vision (N) have a color-blind son (b). 
+Red-green color blindness is a X-linked recessive trait in humans.
+Two people with wild-type color vision (N) have a color-blind son (b).
 What are the genotypes of the parents?
 A) XNXN and XNY
 B) XNXb and XNY
@@ -5170,12 +5170,12 @@ They rarely live past their twenties.
 How likely is it for a woman to have this condition?
 A) Women can NEVER have this condition.
 B) One-fourth (25%) of the daughters of an affected man would have this condition.
-C) One-half (50%) of the daughters of an affected father and a carrier mother could have this condition. 
+C) One-half (50%) of the daughters of an affected father and a carrier mother could have this condition.
 D) Only if a woman is XXX (three X chromosomes) could she have this condition.
 Answer: C
-A man who is an achondroplastic dwarf with normal vision marries a color-blind woman of normal height. 
-The man's father was six feet tall, and both the woman's parents were of average height. 
-Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X- linked recessive. 
+A man who is an achondroplastic dwarf with normal vision marries a color-blind woman of normal height.
+The man's father was six feet tall, and both the woman's parents were of average height.
+Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X- linked recessive.
 How many of their daughters might be expected to be color-blind dwarfs?
 A) none
 B) one out of four
@@ -5183,9 +5183,9 @@ C) half
 D) three out of four
 E) all
 Answer: A
-A man who is an achondroplastic dwarf with normal vision marries a color-blind woman of normal height. 
-The man's father was six feet tall, and both the woman's parents were of average height. 
-Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X- linked recessive. 
+A man who is an achondroplastic dwarf with normal vision marries a color-blind woman of normal height.
+The man's father was six feet tall, and both the woman's parents were of average height.
+Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X- linked recessive.
 What proportion of their sons would be color-blind and of normal height?
 A) none
 B) one out of four
@@ -5193,9 +5193,9 @@ C) half
 D) three out of four
 E) all
 Answer: C
-A man who is an achondroplastic dwarf with color-blind vision marries a woman of average height and wild-type vision. 
+A man who is an achondroplastic dwarf with color-blind vision marries a woman of average height and wild-type vision.
 The man's father was six feet tall, and both the woman's parents were of average height. The womans father was also color-blind.
-Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X-linked recessive. 
+Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X-linked recessive.
 What proportion of their daughters would be color-blind and of average height?
 A) none
 B) one out of four
@@ -5203,35 +5203,35 @@ C) half
 D) three out of four
 E) all
 Answer: B
-In birds, sex is determined by a ZW chromosome scheme. 
-Males are ZZ and females are ZW. 
-A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. 
+In birds, sex is determined by a ZW chromosome scheme.
+Males are ZZ and females are ZW.
+A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 A) 2:1 male to female
 B) 1:2 male to female
 C) 1:1 male to female
 D) 3:1 male to female
 Answer: A
-In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. 
-A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. 
+In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
+A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
-In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. 
-A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. 
-What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
-ZNZN
-ZNZl
-In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. 
-A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. 
+In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
+A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 ZNZN
 ZNZl
-In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. 
-A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. 
+In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
+A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 ZNZN
 ZNZl
-In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. 
-A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. 
+In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
+A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
+What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
+ZNZN
+ZNZl
+In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
+A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 ZNZN
 ZNZl
@@ -5255,52 +5255,52 @@ XY = wildtype fertile male
 Same as humans...
 Drosophila Sex determination
 Drosophila
-XX = 
+XX =
 wildtype fertile female
-XY = 
+XY =
 wildtype fertile male
-XXY = 
+XXY =
 Humans
-XX = 
+XX =
 wildtype fertile female
-XY = 
+XY =
 wildtype fertile male
-XXY = 
+XXY =
 Drosophila Sex determination
 Drosophila
-XX = 
+XX =
 wildtype fertile female
-XY = 
+XY =
 wildtype fertile male
-XXY = 
+XXY =
 wildtype fertile female
-X0 = 
+X0 =
 Humans
-XX = 
+XX =
 wildtype fertile female
-XY = 
+XY =
 wildtype fertile male
-XXY = 
+XXY =
 sterile male
-X0 = 
+X0 =
 Drosophila Sex determination
 Drosophila
-XX = 
+XX =
 wildtype fertile female
-XY = 
+XY =
 wildtype fertile male
-XXY = 
+XXY =
 wildtype fertile female
-X0 = 
+X0 =
 wildtype sterile male
 Humans
-XX = 
+XX =
 wildtype fertile female
-XY = 
+XY =
 wildtype fertile male
-XXY = 
+XXY =
 male with female features
-X0 = 
+X0 =
 sterile female
 So Y does not
 factor into maleness.
@@ -5313,7 +5313,7 @@ X = female sex chromosome
 A = autosomes
 Hypothesis:
 ratio of 1 is female
-ratio of  is male 
+ratio of  is male
 ratio in between is intersex
 X:AA ratio of 0.5
 Diploid with 1 X
@@ -5333,7 +5333,7 @@ X = female sex chromosome
 A = autosomes
 Hypothesis:
 ratio of 1 is female
-ratio of  is male 
+ratio of  is male
 ratio in between is intersex
 ratio > 1 is metafemale or super female
 ratio < 0.5 is metamale or super male
@@ -5380,7 +5380,7 @@ this drosophila would be 11,XX
 AAA means that the organism is triploid, 3n, three copies of every chromosome
 so in drosophila:
 3 copies of chromosome 2
-3 copies of chromosome 3 
+3 copies of chromosome 3
 3 copies of chromosome 4
 but they would only have two X chromosomes
 AAAA
@@ -5393,7 +5393,7 @@ Questions
  Xy+/Y wt males,  Xy/Y yellow males
  Xy+/Xy wt females, and  Xy/Xy yellow females
 (b) y/y  y+/Y:
- y/Y yellow males and 
+ y/Y yellow males and
  y/y+ wt females
 (a1) y/Y male  y+/y+ female:
  y+/Y wt males and  y/y+ wt females
@@ -5403,8 +5403,8 @@ all wt females
 (a1) y/Y male  y+/y+ female:
  y+/Y wt males and  y/y+ wt females
 (d) y/y+ female  y/Y male:
-males:  y+/Y wt,  y/Y yellow 
-females:  y+/y wt,  y/y yellow 
+males:  y+/Y wt,  y/Y yellow
+females:  y+/y wt,  y/y yellow
 Summary
 Mendels Four Principlesof Heredity
 (1) Principles of Paired Factors
@@ -5418,7 +5418,7 @@ CODOMINANCE, INCOMPLETE DOMINANCE and EPISTASIS
 In sexual reproduction, each parent contributes just one of their alleles to its offspring
 MALES CONTRIBUTE EITHER ONE OR NO ALLELE IN MAMMALS
 (4) Law of Independent Assortment
-different pairs of alleles are passed onto the offspring independently of each other. 
+different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
 
 Lecture 7C
@@ -5429,7 +5429,7 @@ Oct 16, 2023
 Probability in predictions of progeny distribution
 Genetic ratios result from:
 chance assortment of genes into gametes
-chance combination of gametes into zygotes 
+chance combination of gametes into zygotes
 Probability calculations in genetics frequently use the addition and multiplication rules of probability together
 Equally Likely
 Combinations
@@ -5441,8 +5441,8 @@ C. , 50% chance
 D. , 75% chance
 E. 1, 100% chance
 F. slightly higher than 50%, like 53%
-The answer to both questions is 1/2. 
-The probability argument is that each birth is independent of all the previous ones, so the number of boys or girls already born has no influence on the sexes of future children. 
+The answer to both questions is 1/2.
+The probability argument is that each birth is independent of all the previous ones, so the number of boys or girls already born has no influence on the sexes of future children.
 How do we do this?
 Probability that it is a boy = 0.5
 Probability that it is a girl = 0.5
@@ -5473,7 +5473,7 @@ Why does 0! = 1
 Binomial Distribution
 In statistics, the binomial distribution give the probability of the number of successes in a sequence of n independent yes/no experiments, each of which yields success with probability p.
 Binomial coefficient
-is often read aloud as "n choose k", because there are ways to choose k elements, disregarding their order, from a set of n elements. 
+is often read aloud as "n choose k", because there are ways to choose k elements, disregarding their order, from a set of n elements.
 Evaluating Binomial Coefficients
 How many different ways can we get 4 boys and 3 girls?
 Re-write how many different ways can we have 4 boys in 7 children
@@ -5520,7 +5520,7 @@ So, your job will mainly to take the numbers from the question and properly plug
 I will provide Pascals triangle, if is necessary, but usually I just give you the answer like on the right.
 Mendel's Pea Pod Color
 Yellow is dominant to green.
-In a monohybrid cross, if six plants are produced, what are the probability for each distribution of color F2 
+In a monohybrid cross, if six plants are produced, what are the probability for each distribution of color F2
 Divide up into your quiz groups and determine each of the following.
 What is the probability of:
 6 yellow
@@ -5560,8 +5560,8 @@ Alternative Hypothesis (Ha): Aim to support indirectly through the test.
 Significance Level (): A preset threshold for statistical significance, usually set at 0.05.
 The p-value: The probability of getting the observed data if the null hypothesis is true.
 Chi-Squared statistic: The calculated measure that quantifies the difference between observed and expected data.
-Critical Value: A threshold for comparison with the Chi-Squared statistic. 
-The Critical Value depends BOTH on the Degrees of Freedom and Significance Level (). 
+Critical Value: A threshold for comparison with the Chi-Squared statistic.
+The Critical Value depends BOTH on the Degrees of Freedom and Significance Level ().
 The Critical Value is obtained by looking at the Chi-Square (2) Distribution Table.
 Degrees of Freedom: The number of independent variables that can vary in an analysis.
 Null hypothesis: Reject or Accept?
@@ -5581,11 +5581,11 @@ Example: p-value of 0.02 < fixed significance level () of 0.05  Reject H0.
 Seven Steps of theChi-Square (2) Test
 1. State Hypothesis
 choose one that is easy to predict progeny
-2. Predict expected progeny from hypothesis 
+2. Predict expected progeny from hypothesis
 3. Subtract expected from observed (o-e)
 square the value and then divide by expected
 4. Sum each row to get the Chi Square statistic (2) value
-5. Determine degrees of freedom (DF) 
+5. Determine degrees of freedom (DF)
 6. Look up p-value using #4 and #5
 7. Determine if hypothesis is rejected.
 CrossOffspring
@@ -5733,11 +5733,11 @@ reject
 Seven Steps of theChi-Square (2) Test
 1. State Hypothesis
 choose one that is easy to predict progeny
-2. Predict expected progeny from hypothesis 
+2. Predict expected progeny from hypothesis
 3. Subtract expected from observed (o-e)
 square the value and then divide by expected
 4. Sum the result to get the 2 value
-5. Determine degrees of freedom (DF) 
+5. Determine degrees of freedom (DF)
 6. Look up p-value using #4 and #5
 7. Determine if hypothesis is rejected.
 df = 3
@@ -5748,11 +5748,11 @@ Chi-Square (2) Test of Mendels Data Group Exercise
 Seven Steps of theChi-Square (2) Test
 1. State Hypothesis
 choose one that is easy to predict progeny
-2. Predict expected progeny from hypothesis 
+2. Predict expected progeny from hypothesis
 3. Subtract expected from observed (o-e)
 square the value and then divide by expected
 4. Sum the result to get the 2 value
-5. Determine degrees of freedom (DF) 
+5. Determine degrees of freedom (DF)
 6. Look up p-value using #4 and #5
 7. Determine if hypothesis is rejected.
 Mendel 2-Test Exercise
@@ -5797,8 +5797,8 @@ Alternative Hypothesis (Ha): Aim to support indirectly through the test.
 Significance Level (): A preset threshold for statistical significance, usually set at 0.05.
 The p-value: The probability of getting the observed data if the null hypothesis is true.
 Chi-Squared statistic: The calculated measure that quantifies the difference between observed and expected data.
-Critical Value: A threshold for comparison with the Chi-Squared statistic. 
-The Critical Value depends BOTH on the Degrees of Freedom and Significance Level (). 
+Critical Value: A threshold for comparison with the Chi-Squared statistic.
+The Critical Value depends BOTH on the Degrees of Freedom and Significance Level ().
 The Critical Value is obtained by looking at the Chi-Square (2) Distribution Table.
 Degrees of Freedom: The number of independent variables that can vary in an analysis.
 Null hypothesis: Reject or Accept?
@@ -5818,11 +5818,11 @@ Example: p-value of 0.02 < fixed significance level () of 0.05  Reject H0.
 Seven Steps of theChi-Square (2) Test
 1. State Hypothesis
 choose one that is easy to predict progeny
-2. Predict expected progeny from hypothesis 
+2. Predict expected progeny from hypothesis
 3. Subtract expected from observed (o-e)
 square the value and then divide by expected
 4. Sum each row to get the Chi Square statistic (2) value
-5. Determine degrees of freedom (DF) 
+5. Determine degrees of freedom (DF)
 6. Look up p-value using #4 and #5
 7. Determine if hypothesis is rejected.
 accept
@@ -5864,7 +5864,7 @@ CODOMINANCE, INCOMPLETE DOMINANCE and EPISTASIS
 In sexual reproduction, each parent contributes just one of their alleles to its offspring
 MALES CONTRIBUTE EITHER ONE OR NO ALLELE IN MAMMALS
 (4) Law of Independent Assortment
-different pairs of alleles are passed onto the offspring independently of each other. 
+different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
 Mendel's Law of
 Independent Assortment
@@ -5884,7 +5884,7 @@ LAW OF INDEPENDENTASSORTMENT Alleles of genes on non-homologouschromosomes assor
 Figure 15.2b The chromosomal basis of Mendels laws (part 2: F1 generation)
 Four kinds of gametes are produced in equal proportions
 Alleles of two genes segregate independently
-double homozygous individuals only produce one type of gamete 
+double homozygous individuals only produce one type of gamete
 A testcross can be used to show two genes are unlinked
 Linked Genes
 Genes on different chromosomes assort independently
@@ -5939,7 +5939,7 @@ He then mated wild-type F1 dihybrid females with homozygous recessive males.
 This testcross will reveal the genotype of the eggs made by the dihybrid female.
 <number>
 Figure 15.9a Inquiry: How does linkage between two genes affect inheritance of characters? (part 1: experiment)
-Morgan found that body color and wing size are usually inherited together in specific combinations (parental phenotypes) 
+Morgan found that body color and wing size are usually inherited together in specific combinations (parental phenotypes)
 He noted that these genes do not assort independently, and reasoned that they were on the same chromosome
 <number>
 Figure 15.UN01
@@ -5987,7 +5987,7 @@ Genes on the samechromosome:
 965 : 944 : 206 : 185
 Both predictions are wrong...
 Conclusion
-Since most offspring had a parental (P generation) phenotype, Morgan concluded that the genes for body color and wing size are genetically linked on the same chromosome. 
+Since most offspring had a parental (P generation) phenotype, Morgan concluded that the genes for body color and wing size are genetically linked on the same chromosome.
 However, the production of a relatively small number of offspring with non-parental phenotypes indicated that some mechanism occasionally breaks the linkage between specific alleles of genes on the same chromosome.
 Recombination of Linked Genes: Crossing Over
 Morgan discovered that genes can be linked, but the linkage was incomplete, because some recombinant phenotypes were observed
@@ -6002,7 +6002,7 @@ Figure 13.9b
 Crossover
 Chiasmata
 Holliday junction
-Figure 13.9b Crossing over and synapsis in prophase I: a closer look (part 2) 
+Figure 13.9b Crossing over and synapsis in prophase I: a closer look (part 2)
 <number>
 Figure 13.12-5
 Prophase I
@@ -6028,7 +6028,7 @@ proteins holding
 sister chromatid
 arms together
 Recombinant chromosomes
-Figure 13.12-5 The results of crossing over during meiosis (step 5) 
+Figure 13.12-5 The results of crossing over during meiosis (step 5)
 <number>
 (A) Alleles in the same chromosome remain together when there is no crossing over between them.
 (B) When there is crossing over, the result is two recombinant and two non-recombinant products, because the exchange is between only two of the four chromatids.
@@ -6068,7 +6068,7 @@ b vg
 Figure 15.10b Chromosomal basis for recombination of linked genes (part 2: testcross)
 recombinant type
 parental type
-Figure 13.12-5 The results of crossing over during meiosis (step 5) 
+Figure 13.12-5 The results of crossing over during meiosis (step 5)
 <number>
 Figure 15.UN02
 Gametes from yellow-rounddihybrid parent (YyRr)
@@ -6094,7 +6094,7 @@ CODOMINANCE, INCOMPLETE DOMINANCE and EPISTASIS
 In sexual reproduction, each parent contributes just one of their alleles to its offspring
 MALES CONTRIBUTE EITHER ONE OR NO ALLELE IN MAMMALS
 (4) Law of Independent Assortment
-different pairs of alleles are passed onto the offspring independently of each other. 
+different pairs of alleles are passed onto the offspring independently of each other.
 inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
 EXCEPT WHEN GENES ARE ON THE SAME CHROMOSOME
 
@@ -6171,7 +6171,7 @@ b vg+
 <number>
 Figure 15.10b Chromosomal basis for recombination of linked genes (part 3: testcross offspring)
 Map distance
-map distance = 
+map distance =
 1/2 x the average crossovers between two genes per meiotic cell x 100
 A genetic map of chromosome 10 of corn
 A linkage group is a set of syntenic genes
@@ -6186,7 +6186,7 @@ Recombination Frequencies do NOT add!?!
 The bvg recombination frequency (17%) is slightly less than the sum of the bcn and cnvg frequencies (9 + 9.5 = 18.5%).
 This is because of the few times that crossover occurs between both bcn and cnvg.
 A second crossover would cancel out the first, reducing the observed bvg recombination frequency.
-The value of 18.5% (18.5 map units) is closer to the actual distance between the genes. 
+The value of 18.5% (18.5 map units) is closer to the actual distance between the genes.
 In practice, a geneticist would add the smaller distances in constructing a map.
 The alleles of unlinkedgenes are either onseparate chromosomes(such as d and e)or so far apart on the same chromosome(c and f ) that theyassort independently.
 Genes on the same chromo-some whose alleles are soclose together that they donot assort independently(such as a, b, and c) are saidto be genetically linked.
@@ -6284,7 +6284,7 @@ Chi-Square Test
 for Linked Genes
 Linked or Unlinked?
 If genes are unlinked and assorting independently, the phenotypic ratio of offspring from an F1 testcross is expected to be 1:1:1:1.
-If the two genes are linked, however, the observed phenotypic ratio of the offspring will not match that ratio. 
+If the two genes are linked, however, the observed phenotypic ratio of the offspring will not match that ratio.
 Given that random fluctuations in the data do occur, how much can the number deviate from the expected numbers for us to conclude that they are different?
 Chi-Square (2) Test
 Compares an observed data set to an expected data set predicted by a hypothesis and measures the discrepancy between the two.
@@ -6293,8 +6293,8 @@ If the discrepancy between the observed and expected data sets is so large that 
 or, more specifically, evidence for the genes being linked.
 Chi-square analysis can be used to test for linkage
 Cosmos Plant
-In cosmos plants, purple stem (A) is dominant to green stem (a), and short petals (B) is dominant to long petals (b). 
-In a simulated cross, AABB plants were crossed with aabb plants to generate F1 dihybrids (AaBb), 
+In cosmos plants, purple stem (A) is dominant to green stem (a), and short petals (B) is dominant to long petals (b).
+In a simulated cross, AABB plants were crossed with aabb plants to generate F1 dihybrids (AaBb),
 which were then test-crossed (AaBb * aabb) total of 900 offspring plants were scored for stem color and flower petal length.
 Figure 15.UN03a
 Offspringfrom test-cross ofAaBb (F1) aabb
@@ -6508,7 +6508,7 @@ Chapter 5
 Dr. Neil Voss
 Oct 30, 2023
 Gene Mapping
-A heterozygote fruit fly for all three genes, was crossed with a homozygous recessive for all three genes, making the following results a valid test-cross. 
+A heterozygote fruit fly for all three genes, was crossed with a homozygous recessive for all three genes, making the following results a valid test-cross.
 Progeny are sorted by phenotype name.
 Steps in Three-PointTest-Cross Gene Map
 1. Determine parental genotype
@@ -6762,7 +6762,7 @@ Two genotypes with most progeny
 Step 2: Determine double crossover (DCO) genotypes
 Two genotypes with fewest progeny
 Step 3. Compare parental genotypes with double crossover genotypes to see which single gene flipped in the DCO
-Step 4: Determine the gene order given that the flipped gene is the middle gene. 
+Step 4: Determine the gene order given that the flipped gene is the middle gene.
 Step 1: Determine Parental types
 Step 2: Locate double crossovers
 Step 3: Determine gene order
@@ -6938,7 +6938,7 @@ Your Turn
 (b)F G H and f g h
 (c)F G H is correct order
 (H G F is also valid)
-(d)F/G = 41+33+4+2 ; 
+(d)F/G = 41+33+4+2 ;
 G/H = 50+64+4+2
 (e)F to G: 80/1000 = 8 m.u.
 G to H: 120/1000 = 12 m.u.
@@ -7011,7 +7011,7 @@ Interference patterns help identify boundaries of heterochromatin regions where 
 Sample Problems
 Chromosome
 Recombinationfrequencies
-From the table on the right the total offspring was 3000 and there were 54 double crossovers. The gene distances are reported above. 
+From the table on the right the total offspring was 3000 and there were 54 double crossovers. The gene distances are reported above.
 What is the interference?
 Chromosome
 Recombinationfrequencies
@@ -7033,7 +7033,7 @@ Your Turn
 (b)F G H and f g h
 (c)F G H is correct order
 (H G F is also valid)
-(d)F/G = 41+33 ; 
+(d)F/G = 41+33 ;
 G/H = 50+64
 (e)F to G: 80/1000 = 8 m.u.
 G to H: 120/1000 = 12 m.u.
@@ -7042,7 +7042,7 @@ What is the interference ratio for this problem?
 (b)F G H and f g h
 (c)F G H is correct order
 (H G F is also valid)
-(d)F/G = 41+33 ; 
+(d)F/G = 41+33 ;
 G/H = 50+64
 (e)F to G: 80/1000 = 8 m.u.
 G to H: 120/1000 = 12 m.u.
@@ -7078,9 +7078,9 @@ Nonetheless, the growth of a yeast colony or a multicellular organism involves s
 Mitotic recombination can lead to twin spots
 Tetrads
 Products of Meiosis
-With Drosophila, mice, peas, people, and other diploid organisms, each individual represents only  potential gametes generated from meiosis. 
-Thus, until now, linkage mapping has been from examining the phenotypes of diploid progeny. 
-For such diploid organisms, we do not know the connection between individuals and parental gametes. 
+With Drosophila, mice, peas, people, and other diploid organisms, each individual represents only  potential gametes generated from meiosis.
+Thus, until now, linkage mapping has been from examining the phenotypes of diploid progeny.
+For such diploid organisms, we do not know the connection between individuals and parental gametes.
 In contrast, some fungi provide maintain all four haploid products of meiosis in a single sac called an ascus.
 These haploid cells survive as viable individuals that grow and perpetuate themselves by mitosis.
 The phenotype of such haploid fungi is a direct representation of their genotype, without complications of dominance.
@@ -7099,7 +7099,7 @@ Exchangeof matingfactors
 Receptor
  factor
 a factor
-Yeast cell,mating type 
+Yeast cell,mating type
 <number>
 Figure 11.2-1 Communication between mating yeast cells (step 1)
 Figure 11.2-2
@@ -7107,7 +7107,7 @@ Yeast cell,mating type a
 Exchangeof matingfactors
 Receptor
 a factor
-Yeast cell,mating type 
+Yeast cell,mating type
 Mating
  factor
 <number>
@@ -7117,10 +7117,10 @@ Yeast cell,mating type a
 Exchangeof matingfactors
 Receptor
 a factor
-Yeast cell,mating type 
+Yeast cell,mating type
 Mating
 New a/ cell
-a/ 
+a/
  factor
 <number>
 Figure 11.2-3 Communication between mating yeast cells (step 3)
@@ -7213,10 +7213,10 @@ NCO, non-crossover meioses; SCO, single-crossover meioses; DCO, double-crossover
 classified according to whether they contain two genotypes (ditypes) or four genotypes (tetratypes, represented by TT).
 NCO, non-crossover meioses; SCO, single-crossover meioses; DCO, double-crossover meioses
 Four common situations:
-No cross-overs or 2-strand double cross-overs result in parental ditype (PD) asci. 
+No cross-overs or 2-strand double cross-overs result in parental ditype (PD) asci.
 One recombination between the genes results in tetratype (TT) asci.
-Three-strand double cross-overs give the same result as a single crossover, tetratype (TT) asci. 
-Four-strand double cross-overs give non-parental ditype (NPD) asci. 
+Three-strand double cross-overs give the same result as a single crossover, tetratype (TT) asci.
+Four-strand double cross-overs give non-parental ditype (NPD) asci.
 As a result, for linked genes,
 PD >> NPD.
 Tetrad analysis for linked genes in unordered tetrads
@@ -7224,14 +7224,14 @@ Triples and higher numbers of crossovers might occur, but we may assume that suc
 NCO, noncrossover meioses; SCO, single-crossover meioses; DCO, double-crossover meioses
 The key to the analysis is the NPD class
 arises only from a double crossover between all four chromatids.
-Because we are assuming that double crossovers occur randomly between the chromatids, we can also assume that the frequencies of the four DCO classes are equal. 
+Because we are assuming that double crossovers occur randomly between the chromatids, we can also assume that the frequencies of the four DCO classes are equal.
 This assumption means that the NPD class should contain  of the DCOs, and therefore we can estimate that
 The single-crossover class also can be calculated by a similar kind of reasoning.
 Notice that tetratype (TT) asci can result from either single-crossover or double-crossover meioses.
 But we can estimate the component of the TT class that comes from DCO meioses to be 2NPD.
 Hence, the size of the SCO class can be stated as
 Now that we have estimated the sizes of the SCO and DCO classes, the non-crossover class can be estimated as
-Thus, we have estimates of the sizes of the NCO, SCO, and DCO classes in this marked region. 
+Thus, we have estimates of the sizes of the NCO, SCO, and DCO classes in this marked region.
 We can use these values to derive a value for m, the mean number of crossovers per meiosis in this region.
 We can calculate the value of m simply by taking the sum of the SCO class plus twice the DCO class (because this class contains two crossovers). Hence:
 To convert an m value into map units, m must be multiplied by 50 because each crossover on average produces 50 percent recombinants.
@@ -7327,7 +7327,7 @@ Q1: Are genes b and c linked?
 Ignore gene a  PD: bc / ++
 censored
 Q1: Are genes b and c linked?
-Ignore gene a  PD: b c / + + 
+Ignore gene a  PD: b c / + +
 PD=135+1=136
 NPD = 124 + 1 = 125
 TT=59+70=129
@@ -7467,7 +7467,7 @@ In general animals are much less tolerant of chromosomal changes than are plants
 Duplication of entire sets of chromosomes is not necessarily harmful in plants.
 Sets of Chromosomesin Human Cells
 Human somatic cells have 23 pairs of chromosomes
-A karyotype is an ordered display of the pairs of chromosomes from a cell 
+A karyotype is an ordered display of the pairs of chromosomes from a cell
 APPLICATION
 Figure 13.3 Preparing a karyotype
 Technique
@@ -7480,9 +7480,9 @@ chromosome
 Sister
 chromatids
 5 m
-A karyotype is a display of condensed chromosomes arranged in pairs. 
+A karyotype is a display of condensed chromosomes arranged in pairs.
 Karyotyping can be used to screen for defective chromosomes
-Figure 13.3 Research method: preparing a karyotype 
+Figure 13.3 Research method: preparing a karyotype
 <number>
 Fig. 13-3b
 TECHNIQUE
@@ -7502,10 +7502,10 @@ C. metaphase
 D. prometaphase
 E. telophase
 Answer: C
-A karyotype is a photograph of an individual's chromosomes arranged in pairs and arranged according to their lengths. 
+A karyotype is a photograph of an individual's chromosomes arranged in pairs and arranged according to their lengths.
 The photograph is taken during mitosis when all of the chromosomes have been duplicated and condensed.
 Prophase they are in a bunch and usually not defined enough.
-The toxin colchicine is added to the cells preventing the spindles from binding to the centromeres, so cell division is stuck in metaphase. 
+The toxin colchicine is added to the cells preventing the spindles from binding to the centromeres, so cell division is stuck in metaphase.
 Two different ways to label the chromosomes:
 1. Traditional staining
 2. Chromosome painting
@@ -7521,18 +7521,18 @@ Conversely, R-bands are less condensed chromatin, which tends to be rich with gu
 Heterochromatin and euchromatin
 Heterochromatin refers to regions of the chromosome that have a dense, compact structure in interphase.
 Euchromatin is visible only after chromosome condensation in mitosis or meiosis.
-G-bands are relatively gene poor 
+G-bands are relatively gene poor
 R-bands are gene-rich
 1. Traditional staining
 In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
 More than one maybe correct.
-A. length 
+A. length
 B. position of the centromere
 C. staining pattern
 D. character coded for by their genes
 E. X-shaped
 In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
-length 
+length
 position of the centromere
 staining pattern
 character coded for by their genes
@@ -7550,10 +7550,10 @@ Fluorescence in situ hybridization (FISH)
 Multicolor FISH (mFISH) and Spectral karyotype (SKY technique)
 How does SKY work?
 Large collection of probes. Each probe is complementary to a unique region of one chromosome  together the "library" is complementary to all of the chromosomes within the human genome.
-Each probe is labeled with a fluorescent color that is designated for a specific chromosome. 
+Each probe is labeled with a fluorescent color that is designated for a specific chromosome.
 For example, probes that are complementary to chromosome 1 are labeled with yellow molecules, while those that are complementary to chromosome 2 are labeled with red molecules, and so on.
 Comparison
-There are two slightly different imaging systems that utilize the polarized fluorescence filters to distinguish a mixture of chromosomal paints in a karyotype. 
+There are two slightly different imaging systems that utilize the polarized fluorescence filters to distinguish a mixture of chromosomal paints in a karyotype.
 multicolor FISH (mFISH; Speicher et al., 1996).
 spectral karyotyping (SKY; Schrock et al., 1996)
 Main difference:
@@ -7622,7 +7622,7 @@ The proposed mechanism for the creation of the long human chromosome 2 by fusion
 Neanderthal Karyotype
 The Story of
 HeLa cells
-a cell type in an immortal cell line used in scientific research. 
+a cell type in an immortal cell line used in scientific research.
 the oldest and most commonly used human cell lines.
 derived from cervical cancer cells taken from HenriettaLacks
 a patient who eventually died of her cancer on October 4, 1951.
@@ -7640,7 +7640,7 @@ Scientists have grown some 50 million metric tons of her cells.
 this would fill all the skyscrapers in Chicago
 HenriettaLacks
 an poor AfricanAmerican woman without health insurance who was the unwitting donor of cells from her cancerous tumor in 1951.
-In the early 1970s, the family started getting calls from researchers who wanted blood samples from them to learn the family's genetics. 
+In the early 1970s, the family started getting calls from researchers who wanted blood samples from them to learn the family's genetics.
 Family wondered why and this is when they learned about the removal of Henrietta's cells.
 Family members are still confused about how Henrietta's cells could have been taken without her consent and how they could still be alive 50 years after her death.
 HeLa Karyotype is crazy!!!
@@ -7654,7 +7654,7 @@ Tan = Genes
 Gene density is not highly correlated with chromosome size!!!
 Chromosomes 19 and 22 have the highest gene densities
 Chromosomes 4 and 5 have the lowest gene densities
-The short arm of a chromosome is called p and the long arm q. 
+The short arm of a chromosome is called p and the long arm q.
 p = petite
 q = not p
 Karyotype Definitions
@@ -7690,7 +7690,7 @@ It can also be written as a range of bands, if less is known about the exact loc
 17q12-q21
 Gene Chromosomal Address
 1. The first number or letter used to describe a gene's location represents the chromosome.
-Chromosomes 1 through 22 (the autosomes) are designated by their chromosome number. 
+Chromosomes 1 through 22 (the autosomes) are designated by their chromosome number.
 The sex chromosomes are designated by X or Y.
 7q31.2
 Gene Chromosomal Address
@@ -7702,7 +7702,7 @@ Gene Chromosomal Address
 3. The position of a gene is based on the pattern of light and dark bands on the stained chromosome.
 The position is usually designated by two digits (representing a region and a band)
 sometimes it is followed by a decimal point and one or more additional digits.
-The number indicating the gene position increases with distance from the centromere. 
+The number indicating the gene position increases with distance from the centromere.
 For example: 14q21 represents position 21 on the long arm of chromosome 14. 14q21 is closer to the centromere than 14q22.
 7q31.2
 7  chromosome 7
@@ -7729,9 +7729,9 @@ unbalanced translocation  some or part of the genome is missing.
 Polyploid  organisms containing more than two paired (homologous) sets of chromosomes.
 Chromosome Errors
 Polyploid
-Polyploid cells and organisms are those containing more than two paired sets of chromosomes. 
+Polyploid cells and organisms are those containing more than two paired sets of chromosomes.
 Polyploidy is found in some organisms and is especially common in plants.
-Most Eukaryotes are diploid 
+Most Eukaryotes are diploid
 one set inherited from each parent.
 Estimated that 3080% of living plant species are polyploid.
 Human breeding and cultivation methods have tended to produce these variants.
@@ -7761,7 +7761,7 @@ Down Syndrome
 caused by the presence of an extra chromosome 21. In this case, instead of having two of chromosome 21, your baby will have three.
 characterized by delayed physical and mental development.
 Down syndrome is an aneuploid condition that results from three copies of chromosome 21
-There are three types of Down syndrome: 
+There are three types of Down syndrome:
 95% trisomy 21 (nondisjunction)
 4% translocation accounts
 1% mosaicism accounts
@@ -7774,15 +7774,15 @@ Trisomy 21 is the only autosomal trisomy where the people survive to adulthood.
 Down Syndrome Stats
 <number>
 Down syndrome occurs in people of all races and economic levels
-Most people with Down syndrome lead healthy lives, but they have an increased risk for certain medical conditions 
+Most people with Down syndrome lead healthy lives, but they have an increased risk for certain medical conditions
 such as congenital heart defects, respiratory and hearing problems, Alzheimers disease, childhood leukemia and thyroid conditions.
 Down Syndrome Stats
 <number>
 Down Syndrome Incidence
 Risk for having a baby with Downs Syndrome increases with maternal age.
 Women who are 35 have a 1 in 350 chance of having a child with the syndrome
-Women who are 45 have a 1 in 30 chance. 
-Woman less than 30, have 1 in 1000. 
+Women who are 45 have a 1 in 30 chance.
+Woman less than 30, have 1 in 1000.
 Affect of Mothers Age
 The incidence of births of children with Down syndrome increases with the age of the mother.
 The frequency of Down syndrome increases with the age of the mother, a correlation that has not been well explained
@@ -7793,14 +7793,14 @@ There are proteins (cohesin and securin) present that help keep chromosomes toge
 Lower levels of these proteins cause the sister strands to be more loosely connected and further apart.
 Researchers found that older female mice had lower amounts of these proteins in their eggs.
 Less of these proteins leads to instability in the chromosome pairs and a higher likelihood of nondisjunction.
-^^ literally the only source I can find on the internet 
+^^ literally the only source I can find on the internet
 <number>
 Figure 15.15 Down syndrome
 chromosomes underwent replication with no cell division, resulting in a tetraploid.
 Prenatal Testing
 Prenatal Triple Screen Test
 The triple screen test is a maternal blood screening test that looks for three specific substances: AFP, hCG, and Estriol.
-Low levels of AFP and abnormal levels of hCG and estriol may indicate that the developing baby has a chromosome abnormality. 
+Low levels of AFP and abnormal levels of hCG and estriol may indicate that the developing baby has a chromosome abnormality.
 Nuchal translucency(NT) scan
 prenatal ultrasound screening scan to detect chromosomal abnormalities
 Performed between 11 and 14 weeks of gestation
@@ -7875,7 +7875,7 @@ tyrosinemia
 citrullinema
 medium chain acyl CoA dehydrogenase (MCAD) deficiency
 Hemoglobin problems
-sickle cell disease 
+sickle cell disease
 hemoglobin SC disease
 beta thalassemia
 Hormone problems.
@@ -7928,7 +7928,7 @@ A trisomic zygote has three copies of a particular chromosome (n + 1)
 If cell X enters meiosis, and nondisjunction of one chromosome occurs in one of its daughter cells during meiosis II, what will be the result at the completion of meiosis?
 A) All the gametes descended from cell X will be diploid.
 B) Half of the gametes descended from cell X will be n + 1, and half will be n - 1.
-C) 1/4 of the gametes descended from cell X will be n + 1, 1/4 will be n - 1, and 1/2 will be n. 
+C) 1/4 of the gametes descended from cell X will be n + 1, 1/4 will be n - 1, and 1/2 will be n.
 D) Two of the four gametes descended from cell X will be haploid, and two will be diploid.
 Answer: C
 A. Mother
@@ -7942,9 +7942,9 @@ Men with Down syndrome are commonly believed to be sterile.
 As of 2005, there are scientific reports of four pregnancies that were fathered by three male Down syndrome patients.
 Infertility in males has been attributed to defective spermatogenesis, but ignorance of the sexual act may be one of the contributing factors. (Pubmed: 17094988)
 With Down syndrome individuals living longer into adulthood, we could see more men having offspring.
-Women with Down syndrome can and do have children. 
+Women with Down syndrome can and do have children.
 What is the likelihood that their offspring will have Down syndrome?
-Women with Down syndrome can and do have children. 
+Women with Down syndrome can and do have children.
 What is the likelihood that their offspring will have Down syndrome?
 A. None, 0%
 B. , 25%
@@ -8120,7 +8120,7 @@ They estimate the posterior probability of trees using statistical models.
 Highly flexible and can incorporate various types of evolutionary models.
 Provides a probabilistic framework for tree estimation and hypothesis testing.
 Simple Example of
-Gene Tree by 
+Gene Tree by
 Distance Method
 UPGMA Simple Example
 Part 1: Create
@@ -8323,7 +8323,7 @@ Blk.R
 N.Wh.
 S.Wh.
 Blk.R
-average of 
+average of
 12 and 8 is 10
 Step 2: Merge N.Wh. and S.Wh.
 (N.Wh., S.Wh.)
@@ -8333,7 +8333,7 @@ Blk.R
 N.Wh.
 S.Wh.
 Blk.R
-average of 
+average of
 12 and 8 is 10
 Step 3: Find Next Smallest
 (N.Wh., S.Wh.)
@@ -8520,7 +8520,7 @@ Create the gene tree
 Gene trees may not coincide with species trees
 A gene tree may not coincide with a species tree because of the sorting of polymorphic alleles in the different lineages.
 Textbook Example of
-Gene Tree by 
+Gene Tree by
 Distance Method
 Gene Treesby Distance Method
 Differences can be a measure of evolutionary separation.
@@ -8548,7 +8548,7 @@ distance of 4:
 2.5 + 1.5 = 4
 Neighbor Joining
 connect c with d
-distance is average of 
+distance is average of
 (8+9+7+10+11+12+12+9)/8 = 9.75
 branch length = 9.75/2 = 4.875
 Mo/Ha to Ch is (16+14)/2 = 15
@@ -8610,8 +8610,8 @@ Substitution resultingin translation ofdifferent amino acid
 2,000
 2,500
 data from a study comparing the DNA sequence of the alcohol dehydrogenase (Adh) gene in several fruit flies
-There are 43 nucleotide sites with variable base pairs, as well as several sites where insertions or deletions have occurred. 
-Although 18 variable sites occur within the 4 exons of the Adh gene, only 1 of these variations (at site 1,490) results in an amino acid change. 
+There are 43 nucleotide sites with variable base pairs, as well as several sites where insertions or deletions have occurred.
+Although 18 variable sites occur within the 4 exons of the Adh gene, only 1 of these variations (at site 1,490) results in an amino acid change.
 <number>
 Figure 23.4 Extensive genetic variation at the molecular level
 Rapid Reproduction
@@ -8667,7 +8667,7 @@ Tetraploidy (4n) is four sets of chromosomes
 Polyploidy is common in plants, but not in animals
 Polyploids are more normal in appearance than aneuploids
 Polyploid
-Polyploid cells and organisms are those containing more than two paired sets of chromosomes. 
+Polyploid cells and organisms are those containing more than two paired sets of chromosomes.
 Most Eukaryotes are diploid one set inherited from each parent.
 Polyploidy is found in some organisms and is especially common in plants.
 Estimates suggest that 3080% of living plant species are polyploid.
@@ -8816,8 +8816,8 @@ T. pratensis
 (12)
 T. porrifolius
 (12)
-Allopolyploid speciation in Tragopogon. 
-The gray boxes indicate the three parent species. 
+Allopolyploid speciation in Tragopogon.
+The gray boxes indicate the three parent species.
 The diploid chromosome number of each species is shown in parentheses.
 Figure 24.10 Allopolyploid speciation in Tragopogon
 <number>
@@ -8827,7 +8827,7 @@ Production of a diploid from a monoploid by treatment with colchicine.
 Polyploidy
 in Animals
 Polyploidy is Not Tolerated in Animals
-Rare in Animals: Studies of fossils show that polyploidy is very rare in animals, meaning it hasn't been a successful way for animals to evolve. Unlike in plants where it's common and often helpful. 
+Rare in Animals: Studies of fossils show that polyploidy is very rare in animals, meaning it hasn't been a successful way for animals to evolve. Unlike in plants where it's common and often helpful.
 More Complex in Animals: Animals have complex organ systems and developmental processes. Polyploidy can cause serious problems in these systems, leading to major health issues.
 Larger Cell Size: Polyploid cells are bigger. Animal cells become too large with polyploidy. This can interfere with how cells and tissues work in animals, causing health problems.
 Gene Control: Animals need a careful balance of genes. Extra genes in animals lead to problems in controlling how genes work. In plants, this is less of an issue.
@@ -8883,7 +8883,7 @@ A = autosomes
 XXAA ratio of 1
 Diploid with 2 X
 normal female
-XAA ratio of 
+XAA ratio of
 Diploid with 1 X and 1 Y
 normal male
 XXAAA ratio of 2/3
@@ -8894,7 +8894,7 @@ Haploid with 1 X
 initially female then dies
 Hypothesis:
 ratio of 1 is female
-ratio of  is male 
+ratio of  is male
 ratio in between is intersex
 Generalization of Sex Determination
 Dosage Compensation
@@ -8907,7 +8907,7 @@ Both X's have the same activity levels
 In males, a protein complex on the Y, increases transcriptional activity of the X.
 The single male X does twice the work to equal the XX of the female.
 Drosophila = fruit fly
-In mammalian females, one of the two X chromosomes in each cell is randomly inactivated during embryonic development 
+In mammalian females, one of the two X chromosomes in each cell is randomly inactivated during embryonic development
 The inactive X condenses into a Barr body
 Normally, the inactivated X is random.
 A single organism will have different inactive X's throughout their body.
@@ -8923,7 +8923,7 @@ Mosaicism
 Mosaicism can be observed directly in women who are heterozygous for an X-linked recessive mutation that results in the absence of sweat glands
 These women exhibit patches of skin in which sweat glands are present and other patches of skin in which sweat glands are absent.
 Calico Cat
-Males have only one X chromosome, a normal male has either the orange or the black allele. 
+Males have only one X chromosome, a normal male has either the orange or the black allele.
 A female can be heterozygous for orange and black will be calico
 a mosaic of orange and black patches mixed with patches of white.
 X chromosomes
@@ -8937,15 +8937,15 @@ InactiveX
 Black fur
 Orange fur
 Active X
-X inactivation and the tortoiseshell cat. 
-Two different alleles, one for orange fur and one for black fur. 
+X inactivation and the tortoiseshell cat.
+Two different alleles, one for orange fur and one for black fur.
 If a female cat is heterozygous for the tortoiseshell gene, she is tortoiseshell.
 Orange patches are formed by populations of cells in which the X chromosome with the orange allele is active; black patches have cells in which the X chromosome with the black allele is active.
 <number>
 Figure 15.8 X inactivation and the tortoiseshell cat
 Calico Cat
 The white patches are due to an autosomal gene S for white spotting
-which prevents pigment formation in the cell lineages in which it is expressed. 
+which prevents pigment formation in the cell lineages in which it is expressed.
 Why the S gene is expressed in some cell lineages and not others is not known.
 Homozygous SS cats have more white than heterozygous Ss cats.
 Summary of Dosage Compensation
@@ -8957,7 +8957,7 @@ Humans use the XY chromosomal system to determine sex.
 if a Y chromosome is present during development (XY), the fetus will become a male
 if there is no Y present (XX), the fetus becomes female
 Pseudoautosomal Region
-In humans, the tip of the short arm of the Y is homologous with a region at the tip of the short arm of the X chromosome. 
+In humans, the tip of the short arm of the Y is homologous with a region at the tip of the short arm of the X chromosome.
 The shared XY homology defines the pseudoautosomal region
 8.1 Hold the chromosome together for proper orientation in metaphase I.
 8.2 alleles on the X can be interchanged with homologous alleles on the Y. Similar to autosomal inheritance.
@@ -9014,7 +9014,7 @@ Answer: A
 Nondisjunction of sex chromosomes produces a variety of aneuploid conditions
 XXX females are healthy, with no unusual physical features
 Klinefelter syndrome is the result of an extra chromosome in a male, producing XXY individuals
-Monosomy X, called Turner syndrome, produces X0 females, who are sterile; it is the only known viable monosomy in humans 
+Monosomy X, called Turner syndrome, produces X0 females, who are sterile; it is the only known viable monosomy in humans
 Aneuploidy of Sex Chromosomes
 <number>
 Female Sex Abnormalities  45,X0
@@ -9022,7 +9022,7 @@ Turner's syndrome  occurs when females inherit only one X chromosome  their geno
 short in stature, adult average 4' 7
 often have distinctive webbed necks (i.e., extra folds of skin), small jaws, and high arched palates.
 lack prominent female secondary sexual characteristics.
-exceptionally small, widely spaced breasts, broad shield-shaped chests, and turned-out elbows. 
+exceptionally small, widely spaced breasts, broad shield-shaped chests, and turned-out elbows.
 ovaries do not develop normally and are sterile.
 between 1 in 2,000 to 1 in 5,000 female births
 Female Sex Abnormalities  47,XXX
@@ -9038,7 +9038,7 @@ high-pitched voices
 asexual to feminine body contours
 as well as breast enlargement, and comparatively little facial and body hair.
 sterile or nearly so
-testes and prostate gland are small. 
+testes and prostate gland are small.
 Slightly above average height and likely to be overweight.
 between 1 in 500 and 1 in 1000 male births
 Male Sex Abnormalities  47,XYY
@@ -9046,7 +9046,7 @@ XYY syndrome  males inherit an extra Y chromosome  their genotype is XYY.
 As adults, these "super-males" are usually tall (above 6 feet) and generally appear and act normal.
 However, they produce high levels of testosterone.
 During adolescence, they often are slender, have severe facial acne, and are poorly coordinated.
-They are usually fertile and lead ordinary lives as adults. 
+They are usually fertile and lead ordinary lives as adults.
 Many, if not most, are unaware that they have a chromosomal abnormality.
 Between 1 in 900 and 1 in 2,000 male births
 Richard Speck
@@ -9055,7 +9055,7 @@ a Swiss endocrinologist suggested, based on Jacobs' unsubstantiated theory and S
 It was really taken up by the popular press
 XYY and Violent Crimes
 In 1965 and 1966, British cytogeneticist Patricia Jacobs' hypothesis, that men with XYY syndrome are more prone to aggressive and violent behavior than males with the normal XY karyotype
-Speculation even ran that Richard Speck had natural propensity to violence to because he had an extra Y chromosome. 
+Speculation even ran that Richard Speck had natural propensity to violence to because he had an extra Y chromosome.
 a Swiss endocrinologist suggested, based on Jacobs' unsubstantiated theory and Speck's height that Speck might have XYY syndrome
 analysis revealed that Speck had a normal XY karyotype
 fake news
@@ -9063,7 +9063,7 @@ In the mid-1970s, a Danish study showed that XYY men were not more likely to com
 bias problems with original data were because they looked only a criminals and not the general population
 Male Sex Abnormalities  48, XXYY
 XXYY syndrome  sex chromosome anomaly in which males have an extra X and Y chromosome.
-The appearance of at least one Y chromosome with a properly functioning SRY gene makes a male. Therefore, humans with XXYY are normally males. 
+The appearance of at least one Y chromosome with a properly functioning SRY gene makes a male. Therefore, humans with XXYY are normally males.
 Mostly similar to 47, XYY super males.
 additional learning disabilities and medical problems
 one in every 18,00040,000 male births
@@ -9084,7 +9084,7 @@ X = female sex chromosome
 A = autosomes
 Hypothesis:
 ratio of 1 is female
-ratio of  is male 
+ratio of  is male
 ratio in between is intersex
 X:AA ratio of 0.5
 Diploid with 1 X
@@ -9104,7 +9104,7 @@ X = female sex chromosome
 A = autosomes
 Hypothesis:
 ratio of 1 is female
-ratio of  is male 
+ratio of  is male
 ratio in between is intersex
 ratio > 1 is metafemale or super female
 ratio < 0.5 is metamale or super male
@@ -9139,7 +9139,7 @@ this drosophila would be 11,XX
 AAA means that the organism is triploid, 3n, three copies of every chromosome
 so in drosophila:
 3 copies of chromosome 2
-3 copies of chromosome 3 
+3 copies of chromosome 3
 3 copies of chromosome 4
 but they would only have two X chromosomes
 AAAA
@@ -9400,8 +9400,8 @@ Once a deletion is found, its size can be estimated by determining which genes w
 Using Polytene Chromosomes to Find Deleted Regions
 Drosophila chromosomes
 Polytene Chromosomes
-Polytene chromosomes are giant chromosomes 
-They begin as normal chromosomes, but through repeated rounds of DNA replication without any cell division, they become large, banded chromosomes 
+Polytene chromosomes are giant chromosomes
+They begin as normal chromosomes, but through repeated rounds of DNA replication without any cell division, they become large, banded chromosomes
 It is possible to study deletions by physically looking at chromosomes
 Polytene Chromosomes
 Deletion Mapping
@@ -9482,379 +9482,379 @@ I will go through a couple of examples, then you can try it yourself.
 Deletion Quiz Question #1
 four genes
 Deletion Quiz Question
-A total of four genes A, B, C, and D are closely linked in a single chromosome, but their order is unknown. 
-A total of three deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the 2 genes C and D; 
-Deletion #2 uncovers the 3 genes A, C, and D; 
-Deletion #3 uncovers the 3 genes A, B, and C; 
-What the correct order for the four genes? 
+A total of four genes A, B, C, and D are closely linked in a single chromosome, but their order is unknown.
+A total of three deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the 2 genes C and D;
+Deletion #2 uncovers the 3 genes A, C, and D;
+Deletion #3 uncovers the 3 genes A, B, and C;
+What the correct order for the four genes?
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 1: Simplify the Information
-A total of four genes A, B, C, and D are closely linked in a single chromosome, but their order is unknown. 
-A total of three deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the 2 genes C and D; 
-Deletion #2 uncovers the 3 genes A, C, and D; 
-Deletion #3 uncovers the 3 genes A, B, and C; 
-What the correct order for the four genes? 
+A total of four genes A, B, C, and D are closely linked in a single chromosome, but their order is unknown.
+A total of three deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the 2 genes C and D;
+Deletion #2 uncovers the 3 genes A, C, and D;
+Deletion #3 uncovers the 3 genes A, B, and C;
+What the correct order for the four genes?
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 1: Simplify the Information
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 2: Create a template
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 2: Create a template
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 Four genes starts with B
 B _ _ _
 Deletion Quiz Question
 Step 3: Note the deletions that contain the first gene
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 B _ _ _
 Deletion Quiz Question
 Step 3: Note the deletions that contain the first gene
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
-For Deletion #3, we can have either of the following BAC or BCA, so I just write B (AC), 
+For Deletion #3, we can have either of the following BAC or BCA, so I just write B (AC),
 because the order of A and C is unknown
 B _ _ _
 Deletion Quiz Question
 Step 3: Note the deletions that contain the first gene
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
-For Deletion #3, we can have either of the following BAC or BCA, so I just write B (AC), 
+For Deletion #3, we can have either of the following BAC or BCA, so I just write B (AC),
 because the order of A and C is unknown
 B (AC) _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain only one of the two unordered genes (AC)
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 B (AC) _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain only one of the two unordered genes (AC)
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 Del#1 tells us that C is next to a unassigned gene, and must be on the end away from B
 B (AC) _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain only one of the two unordered genes (AC)
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 Del#1 tells us that C is next to a unassigned gene, and must be on the end away from B
 B A C _
 Deletion Quiz Question
 Step 5: only one gene left
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 It should have been obvious that we have one blank and one unassigned gene, so the last blank has to be D
 B A C _
 Deletion Quiz Question
 Step 5: only one gene left
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 It should have been obvious that we have one blank and one unassigned gene, so the last blank has to be D
 B A C D
 Deletion Quiz Question
 Step 5: only one gene left
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Hint: the first gene on the end is gene B.
 It should have been obvious that we have one blank and one unassigned gene, so the last blank has to be D
 B A C D
 Check Your Answer
 Deletion question can be hard to find the answer.
-But once you have an answer, it is really easy to check if it is correct! 
+But once you have an answer, it is really easy to check if it is correct!
 Deletion Quiz Question
 Step 6: Double check the deletions
-Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Answer:
 B A C D
 Deletion Quiz Question
 Step 6: Double check the deletions
- Del#1 C, D; 
-Del#2 A, C, D; 
-Del#3 A, B, C; 
+ Del#1 C, D;
+Del#2 A, C, D;
+Del#3 A, B, C;
 Answer:
 B A C D
 Deletion Quiz Question
 Step 6: Double check the deletions
- Del#1 C, D; 
- Del#2 A, C, D; 
-Del#3 A, B, C; 
+ Del#1 C, D;
+ Del#2 A, C, D;
+Del#3 A, B, C;
 Answer:
 B A C D
 Deletion Quiz Question
 Step 6: Double check the deletions
- Del#1 C, D; 
- Del#2 A, C, D; 
- Del#3 A, B, C; 
+ Del#1 C, D;
+ Del#2 A, C, D;
+ Del#3 A, B, C;
 Answer:
 B A C D
 Deletion Quiz Question #2
 six genes
 Deletion Quiz Question
-A total of six genes A, B, C, D, E, and F are closely linked in a single chromosome, but their order is unknown. 
-A total of five deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the five genes A, C, D, E, and F; 
-Deletion #2 uncovers the five genes A, B, C, D, and E; 
-Deletion #3 uncovers the three genes A, D, and F; 
-Deletion #4 uncovers the four genes A, C, D, and F; 
-Deletion #5 uncovers the four genes A, B, C, and E; 
+A total of six genes A, B, C, D, E, and F are closely linked in a single chromosome, but their order is unknown.
+A total of five deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the five genes A, C, D, E, and F;
+Deletion #2 uncovers the five genes A, B, C, D, and E;
+Deletion #3 uncovers the three genes A, D, and F;
+Deletion #4 uncovers the four genes A, C, D, and F;
+Deletion #5 uncovers the four genes A, B, C, and E;
 What the correct order for the six genes?
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 1: Simplify the Information
-A total of six genes A, B, C, D, E, and F are closely linked in a single chromosome, but their order is unknown. 
-A total of five deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the five genes A, C, D, E, and F; 
-Deletion #2 uncovers the five genes A, B, C, D, and E; 
-Deletion #3 uncovers the three genes A, D, and F; 
-Deletion #4 uncovers the four genes A, C, D, and F; 
-Deletion #5 uncovers the four genes A, B, C, and E; 
+A total of six genes A, B, C, D, E, and F are closely linked in a single chromosome, but their order is unknown.
+A total of five deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the five genes A, C, D, E, and F;
+Deletion #2 uncovers the five genes A, B, C, D, and E;
+Deletion #3 uncovers the three genes A, D, and F;
+Deletion #4 uncovers the four genes A, C, D, and F;
+Deletion #5 uncovers the four genes A, B, C, and E;
 What the correct order for the six genes?
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 1: Simplify the Information
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 2: Create a template
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Deletion Quiz Question
 Step 2: Create a template
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Six genes, starts with B
 B _ _ _ _ _
 Deletion Quiz Question
 Step 3: Note the deletions that contain the first gene
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 B _ _ _ _ _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain the first gene
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Well B is next to (ACE) with #5 and (ACDE) with #2  B (ACE) D is the start
 B _ _ _ _ _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain the first gene
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 For Deletion #5, we can have any of the following BACE, BAEC, BEAC, BECA, BCAE, BCEA, so I just write B (ACE)
 B _ _ _ _ _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain the first gene
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 For Deletion #5, we can have any of the following BACE, BAEC, BEAC, BECA, BCAE, BCEA, so I just write B (ACE)
 B (ACE) _ _
 Deletion Quiz Question
 Step 4: Analyze the deletions that contain the first gene
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Del#2 is Del#5 with extra gene D. Therefore the D has to come after the B(ACE) part and we know gene 5.
 B (ACE) D _
 Deletion Quiz Question
 Step 5: Analyze the deletions that contain only two of the three unordered genes (ACE)
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 B (ACE) D _
 Deletion Quiz Question
 Step 5: Analyze the deletions that contain only two of the three unordered genes (ACE)
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Del#4 tells us the A,C are next to D (and F). If A,C are next to D, then
  E is next to B
 B (ACE) D _
 Deletion Quiz Question
 Step 5: Analyze the deletions that contain only two of the three unordered genes (ACE)
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Del#4 tells us the A,C are next to D (and F). If A,C are next to D, then
  E is next to B
 B E (AC) D _
 Deletion Quiz Question
 Step 6: Note the only unassigned gene is F and there is only one blank
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 F is the only gene unassigned and we only have one open blank, so fill it in
 B E (AC) D _
 Deletion Quiz Question
 Step 6: Note the only unassigned gene is F and there is only one blank
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 F is the only gene unassigned and we only have one open blank, so fill it in
 B E (AC) D F
 Deletion Quiz Question
 Step 7: Analyze the deletions that contain only one of the two unordered genes (AC)
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Del#3 tells us that D is next to A not C
 B E (AC) D F
 Deletion Quiz Question
 Step 7: Analyze the deletions that contain only one of the two unordered genes (AC)
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Hint: the first gene on the end is gene B.
 Del#3 tells us that D is next to A not C
 B E C A D F
 Check Your Answer
 Deletion question can be hard to find the answer.
-But once you have an answer, it is really easy to check if it is correct! 
+But once you have an answer, it is really easy to check if it is correct!
 Deletion Quiz Question
 Step 8: Double check the deletions
-Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Answer:
 B E C A D F
 Deletion Quiz Question
 Step 8: Double check the deletions
- Del#1: A, C, D, E, F; 
-Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+ Del#1: A, C, D, E, F;
+Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Answer:
 B E C A D F
 Deletion Quiz Question
 Step 8: Double check the deletions
- Del#1: A, C, D, E, F; 
- Del#2: A, B, C, D, E; 
-Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+ Del#1: A, C, D, E, F;
+ Del#2: A, B, C, D, E;
+Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Answer:
 B E C A D F
 Deletion Quiz Question
 Step 8: Double check the deletions
- Del#1: A, C, D, E, F; 
- Del#2: A, B, C, D, E; 
- Del#3: A, D, F; 
-Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+ Del#1: A, C, D, E, F;
+ Del#2: A, B, C, D, E;
+ Del#3: A, D, F;
+Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Answer:
 B E C A D F
 Deletion Quiz Question
 Step 8: Double check the deletions
- Del#1: A, C, D, E, F; 
- Del#2: A, B, C, D, E; 
- Del#3: A, D, F; 
- Del#4: A, C, D, F; 
-Del#5: A, B, C, E; 
+ Del#1: A, C, D, E, F;
+ Del#2: A, B, C, D, E;
+ Del#3: A, D, F;
+ Del#4: A, C, D, F;
+Del#5: A, B, C, E;
 Answer:
 B E C A D F
 Deletion Quiz Question
 Step 8: Double check the deletions
- Del#1: A, C, D, E, F; 
- Del#2: A, B, C, D, E; 
- Del#3: A, D, F; 
- Del#4: A, C, D, F; 
- Del#5: A, B, C, E; 
-Answer:
-B E C A D F
-Deletion Quiz Question
-Step 8: Double check the deletions
- Del#1: A, C, D, E, F; 
- Del#2: A, B, C, D, E; 
- Del#3: A, D, F; 
- Del#4: A, C, D, F; 
+ Del#1: A, C, D, E, F;
+ Del#2: A, B, C, D, E;
+ Del#3: A, D, F;
+ Del#4: A, C, D, F;
  Del#5: A, B, C, E;
-all of them work! 
+Answer:
+B E C A D F
+Deletion Quiz Question
+Step 8: Double check the deletions
+ Del#1: A, C, D, E, F;
+ Del#2: A, B, C, D, E;
+ Del#3: A, D, F;
+ Del#4: A, C, D, F;
+ Del#5: A, B, C, E;
+all of them work!
 Answer:
 B E C A D F
 Blackboard Assignment
@@ -9862,70 +9862,70 @@ This weeks lecture assignment includes two deletion questions
 and a translocation meiosis question, if we get that far today.
 Challenge Yourself
 A total of nine genes A, B, C, D, E, F, G, H, and J are closely linked in a single chromosome, but their order is unknown.
-A total of six deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the five genes A, D, E, F, and H; 
-Deletion #2 uncovers the four genes B, D, G, and J; 
-Deletion #3 uncovers the five genes B, D, E, F, and H; 
-Deletion #4 uncovers the four genes A, C, E, and H; 
-Deletion #5 uncovers the two genes B and G; 
-Deletion #6 uncovers the five genes B, D, E, F, and G; 
-What the correct order for the nine genes? 
+A total of six deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the five genes A, D, E, F, and H;
+Deletion #2 uncovers the four genes B, D, G, and J;
+Deletion #3 uncovers the five genes B, D, E, F, and H;
+Deletion #4 uncovers the four genes A, C, E, and H;
+Deletion #5 uncovers the two genes B and G;
+Deletion #6 uncovers the five genes B, D, E, F, and G;
+What the correct order for the nine genes?
 Hint: the first gene on the end is gene C.
 Really Challenge Yourself
-A total of twenty genes A, B, C, D, E, F, G, H, J, K, M, P, Q, R, S, T, W, X, Y, and Z are closely linked in a single chromosome, but their order is unknown. 
-A total of seventeen deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the five genes A, D, F, M, and Z; 
-Deletion #2 uncovers the three genes B, J, and S; 
-Deletion #3 uncovers the five genes E, F, H, M, and Y; 
-Deletion #4 uncovers the five genes B, C, J, P, and S; 
-Deletion #5 uncovers the two genes K and R; 
-Deletion #6 uncovers the four genes C, J, P, and S; 
-Deletion #7 uncovers the four genes A, D, R, and W; 
-Deletion #8 uncovers the four genes E, F, M, and Z; 
-Deletion #9 uncovers the five genes A, K, Q, R, and W; 
-Deletion #10 uncovers the five genes C, G, P, S, and T; 
-Deletion #11 uncovers the five genes E, F, M, Y, and Z; 
-Deletion #12 uncovers the four genes C, G, P, and S; 
-Deletion #13 uncovers the four genes C, G, P, and T; 
-Deletion #14 uncovers the four genes B, J, P, and S; 
-Deletion #15 uncovers the four genes E, H, M, and Y; 
-Deletion #16 uncovers the four genes B, J, Q, and S; 
-Deletion #17 uncovers the five genes C, G, P, T, and X; 
-What the correct order for the twenty genes? 
+A total of twenty genes A, B, C, D, E, F, G, H, J, K, M, P, Q, R, S, T, W, X, Y, and Z are closely linked in a single chromosome, but their order is unknown.
+A total of seventeen deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the five genes A, D, F, M, and Z;
+Deletion #2 uncovers the three genes B, J, and S;
+Deletion #3 uncovers the five genes E, F, H, M, and Y;
+Deletion #4 uncovers the five genes B, C, J, P, and S;
+Deletion #5 uncovers the two genes K and R;
+Deletion #6 uncovers the four genes C, J, P, and S;
+Deletion #7 uncovers the four genes A, D, R, and W;
+Deletion #8 uncovers the four genes E, F, M, and Z;
+Deletion #9 uncovers the five genes A, K, Q, R, and W;
+Deletion #10 uncovers the five genes C, G, P, S, and T;
+Deletion #11 uncovers the five genes E, F, M, Y, and Z;
+Deletion #12 uncovers the four genes C, G, P, and S;
+Deletion #13 uncovers the four genes C, G, P, and T;
+Deletion #14 uncovers the four genes B, J, P, and S;
+Deletion #15 uncovers the four genes E, H, M, and Y;
+Deletion #16 uncovers the four genes B, J, Q, and S;
+Deletion #17 uncovers the five genes C, G, P, T, and X;
+What the correct order for the twenty genes?
 Hint: the first gene on the end is gene H.
 Answer toChallenge Yourself
 A total of nine genes A, B, C, D, E, F, G, H, and J are closely linked in a single chromosome, but their order is unknown.
-A total of six deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the five genes A, D, E, F, and H; 
-Deletion #2 uncovers the four genes B, D, G, and J; 
-Deletion #3 uncovers the five genes B, D, E, F, and H; 
-Deletion #4 uncovers the four genes A, C, E, and H; 
-Deletion #5 uncovers the two genes B and G; 
-Deletion #6 uncovers the five genes B, D, E, F, and G; 
-What the correct order for the nine genes? 
+A total of six deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the five genes A, D, E, F, and H;
+Deletion #2 uncovers the four genes B, D, G, and J;
+Deletion #3 uncovers the five genes B, D, E, F, and H;
+Deletion #4 uncovers the four genes A, C, E, and H;
+Deletion #5 uncovers the two genes B and G;
+Deletion #6 uncovers the five genes B, D, E, F, and G;
+What the correct order for the nine genes?
 Hint: the first gene on the end is gene C.
 Answer: CAHEFDBGJ
 Answer toReally Challenge Yourself
-A total of twenty genes A, B, C, D, E, F, G, H, J, K, M, P, Q, R, S, T, W, X, Y, and Z are closely linked in a single chromosome, but their order is unknown. 
-A total of seventeen deletions in the region are found to uncover recessive alleles of the genes as follows: 
-Deletion #1 uncovers the five genes A, D, F, M, and Z; 
-Deletion #2 uncovers the three genes B, J, and S; 
-Deletion #3 uncovers the five genes E, F, H, M, and Y; 
-Deletion #4 uncovers the five genes B, C, J, P, and S; 
-Deletion #5 uncovers the two genes K and R; 
-Deletion #6 uncovers the four genes C, J, P, and S; 
-Deletion #7 uncovers the four genes A, D, R, and W; 
-Deletion #8 uncovers the four genes E, F, M, and Z; 
-Deletion #9 uncovers the five genes A, K, Q, R, and W; 
-Deletion #10 uncovers the five genes C, G, P, S, and T; 
-Deletion #11 uncovers the five genes E, F, M, Y, and Z; 
-Deletion #12 uncovers the four genes C, G, P, and S; 
-Deletion #13 uncovers the four genes C, G, P, and T; 
-Deletion #14 uncovers the four genes B, J, P, and S; 
-Deletion #15 uncovers the four genes E, H, M, and Y; 
-Deletion #16 uncovers the four genes B, J, Q, and S; 
-Deletion #17 uncovers the five genes C, G, P, T, and X; 
-What the correct order for the twenty genes? 
+A total of twenty genes A, B, C, D, E, F, G, H, J, K, M, P, Q, R, S, T, W, X, Y, and Z are closely linked in a single chromosome, but their order is unknown.
+A total of seventeen deletions in the region are found to uncover recessive alleles of the genes as follows:
+Deletion #1 uncovers the five genes A, D, F, M, and Z;
+Deletion #2 uncovers the three genes B, J, and S;
+Deletion #3 uncovers the five genes E, F, H, M, and Y;
+Deletion #4 uncovers the five genes B, C, J, P, and S;
+Deletion #5 uncovers the two genes K and R;
+Deletion #6 uncovers the four genes C, J, P, and S;
+Deletion #7 uncovers the four genes A, D, R, and W;
+Deletion #8 uncovers the four genes E, F, M, and Z;
+Deletion #9 uncovers the five genes A, K, Q, R, and W;
+Deletion #10 uncovers the five genes C, G, P, S, and T;
+Deletion #11 uncovers the five genes E, F, M, Y, and Z;
+Deletion #12 uncovers the four genes C, G, P, and S;
+Deletion #13 uncovers the four genes C, G, P, and T;
+Deletion #14 uncovers the four genes B, J, P, and S;
+Deletion #15 uncovers the four genes E, H, M, and Y;
+Deletion #16 uncovers the four genes B, J, Q, and S;
+Deletion #17 uncovers the five genes C, G, P, T, and X;
+What the correct order for the twenty genes?
 Hint: the first gene on the end is gene H.
 Answer: HYEMFZDAWRKQBJSPCGTX
 Extra Book
@@ -9983,9 +9983,9 @@ Unequal crossing over can occur
 resulting in both deletion and duplication of the genes.
 Green and Red Opsins
 Comparison of the Amino Acid Sequences of the Green and Red Photoreceptors
-Open circles correspond to identical residues, whereas colored circles mark residues that are different. 
+Open circles correspond to identical residues, whereas colored circles mark residues that are different.
 The differences in the three black positions are responsible for most of the difference in their absorption spectra.
-Rearrangements in the course of DNA replication may lead to (A) the loss of visual pigment genes or (B) the formation of hybrid pigment genes that encode photoreceptors with anomalous absorption spectra. 
+Rearrangements in the course of DNA replication may lead to (A) the loss of visual pigment genes or (B) the formation of hybrid pigment genes that encode photoreceptors with anomalous absorption spectra.
 Because the amino acids most important for determining absorption spectra are in the carboxyl-terminal half of each photoreceptor protein, the part of the gene that encodes this region most strongly affects the absorption characteristics of hybrid receptors.
 Tetrachromats
 Most birds and some insects are tetrachromats and can see some forms of Ultraviolet (UV)
@@ -9997,9 +9997,9 @@ Possibly born as tetrachromats with four different kinds of cone cells
 Tetrachromats
 One study suggested that 23% of the world's women have a 4th cone between red and green cones, giving, an increase in color differentiation.
 Another study suggests that as many as 50% of women and 8% of men may have four photopigments
-Neuroscientist Gabriele Jordan has only been able to confirm the condition in one person in 20 years of research 
-Unfortunately, computer screens do not provide enough color information to be able to 'tap into' the extra dimension that tetrachromats may possess. 
-It is therefore impossible for an online test to investigate tetrachromacy. 
+Neuroscientist Gabriele Jordan has only been able to confirm the condition in one person in 20 years of research
+Unfortunately, computer screens do not provide enough color information to be able to 'tap into' the extra dimension that tetrachromats may possess.
+It is therefore impossible for an online test to investigate tetrachromacy.
 Sharp Quattron TVs
 No longer sold in the US, only available in Asia
 Evolutionary Relationships among Visual Pigments
@@ -10014,7 +10014,7 @@ Copy NumberVariation (CNV)
 CNV refers to the number of copies of a particular gene varies from one individual to the next.
 CNVs can be generally categorized into two main groups: short repeats and long repeats
 Gene Dosage
-Although people generally think of mutations as a lack of function in a particular gene, CNVs that are duplications show that varying the gene dosage can also lead to disease. 
+Although people generally think of mutations as a lack of function in a particular gene, CNVs that are duplications show that varying the gene dosage can also lead to disease.
 Genes are generally present in two copies, one on each chromosome, or 2n.
 A deletion on a single chromosome leads to 1n, whereas duplication leads to 3n or more.
 Huntingtons disease
@@ -10025,7 +10025,7 @@ Autism and
 Schizophrenia
 Gene Dosage
 Duplications and deletions of the same region can often lead to different patterns of symptoms.
-For example, deletion of 16p11.2 leads to autism and enlarged head size macrocephaly whereas duplication leads to symptoms that resemble schizophrenia and smaller head size (microcephaly). 
+For example, deletion of 16p11.2 leads to autism and enlarged head size macrocephaly whereas duplication leads to symptoms that resemble schizophrenia and smaller head size (microcephaly).
 By contrast, duplication of another genetic region, 1q21.1, seems to favor autism and macrocephaly whereas deletion of the region causes schizophrenia and microcephaly.
 Dup15q Alliance
 Dup15q syndrome is a neurodevelopmental disorder characterized by having an extra copy of a portion of chromosome 15 in the 11.2  13.1 region in combination with a number of symptoms that may include hypotonia and motor delays, intellectual disability, autism spectrum disorder (ASD), and epilepsy, including infantile spasms.
@@ -10053,7 +10053,7 @@ Ectopic Recombination resulting in inversion
 Blue and pink are inverted repeats
 They couple in reverse orientation
 Resulting in an inverted gene sequence
-A B  Y Z 
+A B  Y Z
  Z Y  B A
 Homologous chromosome pairing with an inversion
 In an organism that carries a normal chromo some and a inverted chromosome
@@ -10136,12 +10136,12 @@ Translocations
 Translocation
 Translocations
 (A) Two pairs of non-homologous chromosomes in a diploid organism.
-(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments. 
+(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
 (C) Homozygous reciprocal translocation.
 Semi-sterility
 half the gametes will be incapable of contributing to the next generation, a condition known as semisterility or half sterility.
 In plants, the 50 percent unbalanced meiotic products from segregation generally abort at the gametic stage.
-In animals, however, the duplicationdeletion products are viable as gametes but lethal to the zygote. 
+In animals, however, the duplicationdeletion products are viable as gametes but lethal to the zygote.
 Certain cancers, including chronic myelogenous leukemia (CML), are caused by translocations of chromosomes
 Disorders Caused by Translocations
 <number>
@@ -10151,42 +10151,42 @@ Reciprocal translocation
 Translocated chromosome 9
 Translocated chromosome 22(Philadelphia chromosome)
 The cancerous cells in nearly all Chronic myelogenous leukemia (CML) patients contain:
-an abnormally short chromosome 22, the so-called Philadelphia chromosome, and 
-an abnormally long chromosome 9. 
-These altered chromosomes result from the reciprocal translocation shown here, 
+an abnormally short chromosome 22, the so-called Philadelphia chromosome, and
+an abnormally long chromosome 9.
+These altered chromosomes result from the reciprocal translocation shown here,
 which presumably occurred in a single white blood cell precursor undergoing mitosis and was then passed along to all descendant cells.
 <number>
 Figure 15.16 Translocation associated with chronic myelogenous leukemia (CML)
 Really five questions:
 (a) C-E inversion: A B E D C F G
 (b) C-E deletion: A B F G
-Reciprocal translocation of two chromosomes. 
+Reciprocal translocation of two chromosomes.
 My technique is add telomeres (**) to the ends of the chromosomes, because telomeres (**) cannot link up to the center of another chromosome.
-**ABCDE|FG** and 
+**ABCDE|FG** and
 **MNOPQRS|TUV**
 Reciprocal translocation of two chromosomes.
 There are two possible ways for the translocation to happen
-**ABCDE   FG** 
+**ABCDE   FG**
 **MNOPQRS   TUV**
 Reciprocal translocation of two chromosomes.
 There are two possible ways for the translocation to happen
-**ABCDE   FG** 
+**ABCDE   FG**
 **MNOPQRS   TUV**
 Reciprocal translocation of two chromosomes.
 There are two possible ways for the translocation to happen
-**ABCDE   FG** 
+**ABCDE   FG**
 **MNOPQRS   TUV**
-**ABCDE-SRQPONM** 
+**ABCDE-SRQPONM**
 **GF-TUV**
 Reciprocal translocation of two chromosomes.
 There are two possible ways for the translocation to happen
-**ABCDE   FG** 
+**ABCDE   FG**
 **MNOPQRS   TUV**
 Reciprocal translocation of two chromosomes.
 There are two possible ways for the translocation to happen
-**ABCDE   FG** 
+**ABCDE   FG**
 **MNOPQRS   TUV**
-**ABCDE-TUV** 
+**ABCDE-TUV**
 **MNOPQRS-FG**
 For the reciprocal translocation of two chromosomes.
 One product solution is...
@@ -10195,7 +10195,7 @@ Another product solution is...
 **ABCDE-SRQPONM** and **GF-TUV**
 The telomeres are always attached to A, G, M, and V.
 Reciprocal translocation of two chromosomes.
-**ABCDE   FG** 
+**ABCDE   FG**
 **MNOPQRS   TUV**
 TUV**  FG**
 Cannot happen because the telomeres would be in the center of the chromosome.
@@ -10214,7 +10214,7 @@ Pair 2 has one dicentric and one acentric, this is genetically unstable
 Another one so lets pretend the centromeres are between C#D and T#U
 Pair 1: **ABC#DE-T#UV** and **MNOPQRS-FG**
 Pair 2: **ABC#DE-SRQPONM** and **GF-T#UV**
-Pair 1 has one dicentric and one acentric, this is genetically unstable 
+Pair 1 has one dicentric and one acentric, this is genetically unstable
 Pair 2 has both monocentric chromosomes, this is good.
 It switched!
 Summary
@@ -10225,7 +10225,7 @@ or A B C D E / S R Q P O M N and V U T / F G
 (d) two monocentric -OR- dicentric and acentric pair
 (e) only monocentric chromosomes are stable
 Typical Quiz Question
-Q1. Two chromosomes with the gene sequences ABCDEFGHJ and MPQRSTWXYZ undergo a reciprocal translocation after breaks between B|C and T|W. 
+Q1. Two chromosomes with the gene sequences ABCDEFGHJ and MPQRSTWXYZ undergo a reciprocal translocation after breaks between B|C and T|W.
 Which one of the following is NOT a possible product of this translocation?
 A. MPQRSTBA
 B. MPQRSTCDEFGHJ
@@ -10234,7 +10234,7 @@ D. BAZYXW
 E. ABWXYZ
 Typical Quiz Question
 Q1. Two chromosomes with the gene sequences
-*ABCDEFGHJ* and *MPQRSTWXYZ* undergo a reciprocal translocation after breaks between B|C and T|W. 
+*ABCDEFGHJ* and *MPQRSTWXYZ* undergo a reciprocal translocation after breaks between B|C and T|W.
 Which one of the following is NOT a possible product of this translocation?
 A. *MPQRSTBA*
 B. *MPQRSTCDEFGHJ*
@@ -10243,7 +10243,7 @@ D. BA**ZYXW
 E. *ABWXYZ*
 Answer: D
 Typical Quiz Question
-Q2. Two chromosomes with the gene sequences ABCDEFGHJK and QRSTWXY undergo a reciprocal translocation after breaks between G|H and W|X. 
+Q2. Two chromosomes with the gene sequences ABCDEFGHJK and QRSTWXY undergo a reciprocal translocation after breaks between G|H and W|X.
 Which one of the following is NOT a possible product of this translocation?
 A. YXGFEDCBA
 B. ABCDEFGWTSRQ
@@ -10251,7 +10251,7 @@ C. YXHJK
 D. KJHWTSRQ
 E. HJKYX
 Typical Quiz Question
-Q2. Two chromosomes with the gene sequences *ABCDEFGHJK* and *QRSTWXY* undergo a reciprocal translocation after breaks between G|H and W|X. 
+Q2. Two chromosomes with the gene sequences *ABCDEFGHJK* and *QRSTWXY* undergo a reciprocal translocation after breaks between G|H and W|X.
 Which one of the following is NOT a possible product of this translocation?
 A. *YXGFEDCBA*
 B. *ABCDEFGWTSRQ*
@@ -10270,11 +10270,11 @@ Dec 4, 2023
 Translocation
 Translocations
 (A) Two pairs of non-homologous chromosomes in a diploid organism.
-(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments. 
+(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
 (C) Homozygous reciprocal translocation.
 Translocations
 (A) Two pairs of non-homologous chromosomes in a diploid organism.
-(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments. 
+(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
 (C) Homozygous reciprocal translocation.
 Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
 Translocations
@@ -10365,7 +10365,7 @@ New Setup:
 2: 2 with blue centromere
 3: Y with red centromere
 4: 2-X with blue centromere
-Double check pairing system 
+Double check pairing system
 Rules of the Three Forms
 Non-pairing:
 1 does not share DNA with 4
@@ -10421,7 +10421,7 @@ Setup:
 2: normal with blue centromere
 3: normal with red centromere
 4: transl. with blue centromere
-Double check pairing system 
+Double check pairing system
 Rules of the Three Forms
 Non-pairing:
 1 does not share DNA with 4
@@ -10436,7 +10436,7 @@ Setup:
 2: normal 4 with blue centromere
 3: normal 12 with red centromere
 4: 12-4 with blue centromere
-Double check pairing system 
+Double check pairing system
 Rules of the Three Forms
 Non-pairing:
 1 does not share DNA with 4
@@ -10485,8 +10485,8 @@ Although his translocation is balanced, he and his wife want to know the probabi
 Assume that all gametes produce viable sperm, even if genetic material is missing
 What is your prognosis regarding his sperm?
 A. None will carry the translocation.
-B. 1/4 will be normal, 
-1/4 will have translocated chromosomes, and 
+B. 1/4 will be normal,
+1/4 will have translocated chromosomes, and
 1/2 will have both normal and translocated chromosomes
 C. 1/2 will be normal and 1/2 will have the translocation.
 D. All will carry the same translocation as the father.
@@ -10529,7 +10529,7 @@ Evolution  rate of change in frequency of alleles in a population
 Natural Selection  differential success in the reproduction of different phenotypes resulting from the interaction of organisms with their environment.
 Evolution occurs when natural selection (or other factors) causes changes in relative frequencies of alleles in the gene pool.
 The frequency of an allele in a population can be calculated
-For diploid organisms, the total number of alleles at a locus is the total number of individuals times 2 
+For diploid organisms, the total number of alleles at a locus is the total number of individuals times 2
 The total number of dominant alleles at a locus is two alleles for each homozygous dominant individual plus one allele for each heterozygous individual; the same logic applies for recessive alleles
 Allele Frequency
 <number>
@@ -10548,16 +10548,16 @@ it is necessary for HIV infection to progress.
 nonfunctional receptor
 AIDS-resistance phenotype
 Individuals homozygous (32/32) do not have functional CCR5 receptors and are resistant to HIV-1 infection
-Heterozygotes have 2-3-year-slower progression to AIDS relative to wild types 
+Heterozygotes have 2-3-year-slower progression to AIDS relative to wild types
 Partial CCR5 receptor gene sequence showing the 32 mutation
 Chinese scientists are creating CRISPR babies
 planned to eliminate a gene called CCR5 in hopes of rendering the offspring resistant to HIV, smallpox, and cholera.
 CRISPR is employed to modify human embryos before they are transferred into womens uteruses
 According to lead scientist He Jiankui, one couple in the trial gave birth to twin girls in November 2018
 December 2019, the Shenzhen Nanshan District People's Court sentenced He to three years' imprisonment and a three-million-yuan fine.[18] He Jiankui was released from prison in April 2022
-The birth of the first genetically tailored humans would be a stunning medical achievement, for both He and China. 
+The birth of the first genetically tailored humans would be a stunning medical achievement, for both He and China.
 But it will prove controversial, too.
-Where some see a new form of medicine that eliminates genetic disease, 
+Where some see a new form of medicine that eliminates genetic disease,
 others see a slippery slope to enhancements, designer babies, and a new form of eugenics.
 How many of each
 allele do we have?
@@ -10591,8 +10591,8 @@ MN Blood Groups
 ABO vs. MN blood group
 All refer to different antigens on the surface of red blood cells.
 System:
-The ABO system refers to one set of antigens on red blood cells coded by the ABO gene. 
-The corresponding antibodies are anti-A and anti-B antibodies. 
+The ABO system refers to one set of antigens on red blood cells coded by the ABO gene.
+The corresponding antibodies are anti-A and anti-B antibodies.
 The MN blood group also refers to a different antigen controlled by co-dominant alleles.
 Discovery:
 The ABO blood groups system was discovered in 1900.
@@ -10688,7 +10688,7 @@ p2 = homozygote dominant
 2pq = heterozygotes
 q2 = homozygote recessive
 <number>
-If p and q represent the relative frequencies of the only two possible alleles in a population at a particular locus, then 
+If p and q represent the relative frequencies of the only two possible alleles in a population at a particular locus, then
 p2  2pq  q2  1
 where p2 and q2 represent the frequencies of the homozygous genotypes and 2pq represents the frequency of the heterozygous genotype
 allele
@@ -10712,28 +10712,28 @@ Given all genotype frequencies,
 Determine whether or not population is evolving
 uses Chi-Square
 Wildflower Example
-For example, imagine a population of 500 wildflower plants with two alleles, CR and CW, for a locus that codes for flower pigment. 
-These alleles show incomplete dominance; thus, each genotype has a distinct phenotype. 
+For example, imagine a population of 500 wildflower plants with two alleles, CR and CW, for a locus that codes for flower pigment.
+These alleles show incomplete dominance; thus, each genotype has a distinct phenotype.
 Incomplete dominance:
-Plants homozygous for the CR allele (CRCR) produce red pigment and have red flowers; 
-plants homozygous for the CW allele (CWCW) produce no red pigment and have white flowers; 
+Plants homozygous for the CR allele (CRCR) produce red pigment and have red flowers;
+plants homozygous for the CW allele (CWCW) produce no red pigment and have white flowers;
 and heterozygotes (CRCW) produce some red pigment and have pink flowers.
 Wildflower Example
 <number>
 Figure 23.UN01 In-text figure, incomplete dominance, p 484
-Each allele has a frequency (proportion) in the population. 
+Each allele has a frequency (proportion) in the population.
 For example, suppose our population has:
 320 plants with red flowers
 160 with pink flowers
 20 with white flowers
-Because these are diploid organisms, these 500 individuals have a total of 1,000 copies of the gene for flower color. 
+Because these are diploid organisms, these 500 individuals have a total of 1,000 copies of the gene for flower color.
 Allele Frequency
 <number>
 Figure 23.UN01 In-text figure, incomplete dominance, p 484
 For example, consider a population of wildflowers that is incompletely dominant for color
 320 red flowers (CRCR)
 160 pink flowers (CRCW)
-20 white flowers (CWCW) 
+20 white flowers (CWCW)
 Calculate the number of copies of each allele
 CR = (320  2) + 160 = 800
 CW = (20  2) + 160 = 200
@@ -10757,7 +10757,7 @@ Each of these events occurs with probability pq, so the total probability of for
 p (0.8)
 q (0.2)
 p (0.8)
-= 0.8  0.8 
+= 0.8  0.8
 = 0.64
 = 0.8  0.2
 = 0.16
@@ -10798,12 +10798,12 @@ Figure 23.8b
 16% CW (from CRCW plants)
 = 80% CR = 0.8 = p
 = 20% CW = 0.2 = q
-64% CRCR, 32% CRCW, and 4% CWCW plants 
+64% CRCR, 32% CRCW, and 4% CWCW plants
 Gametes of this generation:
 With random mating, these gametes will result in the samemix of genotypes in the next generation:
 <number>
 Figure 23.8b The Hardy-Weinberg principle (part 2: equations)
-The frequency of the heterozygote Aa (2pq) is highest where A (p) or 
+The frequency of the heterozygote Aa (2pq) is highest where A (p) or
 a (q) are in the range 0.33 to 0.67
 A plot of p2, 2pq and q2 as a function of the allele frequencies (p and q)
 Applications
@@ -10812,11 +10812,11 @@ Tay-Sachs Disease
 Assuming H-W, what frequency of the population would you expect to suffer from Tay-Sachs disease?
 Using Allele Frequencies in Genetic Counseling
 <number>
-Cystic fibrosis is a genetic disorder in homozygous recessives that causes death during the teenage years. 
+Cystic fibrosis is a genetic disorder in homozygous recessives that causes death during the teenage years.
 If 9 in 10,000 newborn babies have the disease, what are the expected frequencies of the dominant (A1) and recessive (A2) alleles according to the Hardy-Weinberg model?
 A) f(A1) = 0.9997, f(A2) = 0.0003
-B) f(A1) = 0.9800, f(A2) = 0.0200 
-C) f(A1) = 0.9700, f(A2) = 0.0300 
+B) f(A1) = 0.9800, f(A2) = 0.0200
+C) f(A1) = 0.9700, f(A2) = 0.0300
 D) f(A1) = 0.9604, f(A2) = 0.0392
 Answer: C
 Solution
@@ -10832,7 +10832,7 @@ Frequency of Heterozygote Carriers
 Cystic Fibrosis New Estimate
 New Estimate: 1 in 1700 newborns have cystic fibrosis
 disorder of pancreas and lungs  recessive genes
-q2 = 1/1700 = 0.00059 
+q2 = 1/1700 = 0.00059
 q = 0.024
 p = 1-0.024 = 0.976
 Frequency of heterozygote carriers:
@@ -10859,7 +10859,7 @@ Frequencies:
 Important implication of Hardy-Weinberg principle is that
 for a rare allele, the frequency of heterozygotes far exceeds the frequency of the rare homozygote.
 Why is this the case? What does this mean?
-Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and must, therefore, have at least one copy of the dominant PTC taster allele. 
+Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and must, therefore, have at least one copy of the dominant PTC taster allele.
 If this population conforms to Hardy-Weinberg expectations for this gene, what percentage of the population must be heterozygous for this trait?
 A) 16%
 B) 32%
@@ -10867,7 +10867,7 @@ C) 40%
 D) 48%
 Answer: D
 Solution
-1-0.64 = q2 
+1-0.64 = q2
 q = sqrt(0.36) = 0.6
 p = 1-q = 0.4
 2pq = 0.4*0.6*2 = 0.48
@@ -10935,7 +10935,7 @@ ABIAIB2pq
 Oiir2
 <number>
 3977 Swiss people
- 0.27 A, 0.06 B, and 0.67 O 
+ 0.27 A, 0.06 B, and 0.67 O
 H-W for human blood groups
 Blood Type
 Genotype
@@ -10973,9 +10973,9 @@ q affected
 X-linked color blindness
 So for an X-linked trait, the frequency of affected males provides an estimate of the frequency of the recessive allele.
 It affects 1 in 20 males among Caucasians
-So q= 1/20 = 0.05 
+So q= 1/20 = 0.05
 So frequency of color blind females
-q2 = (0.05)2 = 0.0025 = 0.25% = 1 in 400 
+q2 = (0.05)2 = 0.0025 = 0.25% = 1 in 400
 SexGenotypeFrequencyPhenotype
 MalesCp = 0.95Normal vision
 cq = 0.05Color blind
@@ -11045,7 +11045,7 @@ However, if the merged population mates randomly for one generation, Hardy-Weinb
 Migration rates essentially work like Mutation rates, so we can treat them as one.
 So, lets learn about mutations...
 Mutation
-Ultimate source of genetic variation  however the rate of mutation is low and harmful mutations are eliminated by natural selection. 
+Ultimate source of genetic variation  however the rate of mutation is low and harmful mutations are eliminated by natural selection.
 Low mutation rates are thought to be evolved as a compromise.
 What do we mean by this?
 Irreversible Mutation
@@ -11060,7 +11060,7 @@ Irreversible Mutation
 A undergoes mutation to a (Aa) at a rate  per generation
 p0 is the frequency of A in the original generation
 Allele frequency of A in the n-th generation represents:
-pn = p0 (1-)n 
+pn = p0 (1-)n
 Eventually, the generations increase p goes to zero.
 p = p0 (1-)  0
 At equilibrium, the population is then 100% allele a.
@@ -11070,10 +11070,10 @@ and Equilibrium
 Aa and aA
 Reversible Mutation
 Forward mutation of A  a is offset by reverse mutation of a  A.
-Rate of forward mutation (Aa) is 
+Rate of forward mutation (Aa) is
 Rate of reverse mutation (aA) is  (greek nu)
 At equilibrium (allele frequency becomes constant) no changes in the allele frequency
-Equilibrium value of p is denoted with a circumflex (carrot hat): p. 
+Equilibrium value of p is denoted with a circumflex (carrot hat): p.
 Allele frequency is changed very slowly by mutation. In the case of reversible mutation, an equilibrium state is reached where the allele frequency becomes constant.
 Effect of mutationon allele frequency
 
@@ -11090,9 +11090,9 @@ In real populations, allele and genotype frequencies do change over time
 If alleles frequencies are close the Hardy-Weinberg values, we can hypothesize that the population is not evolving for that allele.
 <number>
 The five conditions for non-evolving populations are rarely met in nature
-No mutations 
-Random mating 
-No natural selection 
+No mutations
+Random mating
+No natural selection
 Extremely large population size
 No gene flow
 When these conditions are NOT met then it implies the population is evolving.
@@ -11106,7 +11106,7 @@ No gene flow
 The Five Hardy-Weinberg Conditions for Not Evolving
 Positive conditions
 Alleles remain same
-Random mating 
+Random mating
 All individuals equally likely to survive
 Large population size
 Isolated community
@@ -11126,11 +11126,11 @@ Assessing whether
 the population is in
 Hardy-Weinberg
 equilibrium
-Researchers studying a small milkweed population note that some plants produce a toxin and other plants do not. 
-They identify the gene responsible for toxin production. 
+Researchers studying a small milkweed population note that some plants produce a toxin and other plants do not.
+They identify the gene responsible for toxin production.
 dominant allele (T) codes for an enzyme that makes the toxin
 recessive allele (t) codes for a nonfunctional enzyme that cannot produce the toxin.
-Heterozygotes produce an intermediate amount of toxin. 
+Heterozygotes produce an intermediate amount of toxin.
 The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
 Refer to the figure above. Is this population in Hardy-Weinberg equilibrium?
 A) Yes.
@@ -11224,7 +11224,7 @@ A2A2
 54.1
 A sample of 200 adults yielded the data in the table.
 The expected numbers were obtained by estimating the allele frequencies and applying the Hardy-Weinberg principle.
-An excess of heterozygotes and a shortage of homozygotes is observed. 
+An excess of heterozygotes and a shortage of homozygotes is observed.
 The discrepancy is probably due to differential survival.
 Randomly matingDrosophila population
 <number>
@@ -11245,7 +11245,7 @@ No gene flow
 The Five Hardy-Weinberg Conditions for Not Evolving
 Positive conditions
 Alleles remain same
-Random mating 
+Random mating
 All individuals equally likely to survive
 Large population size
 Isolated community
@@ -11422,9 +11422,9 @@ p2 + 2pq + q2 = 1
 additional restrictions on the data, remove degrees of freedom
 Why 1 degree of freedom?
 How many degrees of freedom does the test have?
-You have to think about how many quantities are really free to vary 
-remember that we used the population to estimate p and q, then we used p and q to get p2, 2pq, and q2. 
-So really, once we decided on a value for p, everything else was decided for us. Whatever p was, q had to be 1-p, and p2, 2pq, and q2 were set as well. 
+You have to think about how many quantities are really free to vary
+remember that we used the population to estimate p and q, then we used p and q to get p2, 2pq, and q2.
+So really, once we decided on a value for p, everything else was decided for us. Whatever p was, q had to be 1-p, and p2, 2pq, and q2 were set as well.
 SO, the moral of the story is, since only p is able to vary, there is ONLY ONE degree of freedom in this chi-square test.
 df = 1
 H-W 2 Conclusion
@@ -11527,7 +11527,7 @@ Find the allele frequencies
 p1 = 219/2000 = 0.1095
 p2 = 608/2000 = 0.3040
 p3 = 1173/2000 = 0.5865
-now the expected genotype frequencies 
+now the expected genotype frequencies
 how many genotypes do we have?
 Allele frequencies
 p1 = 0.1095; p2 = 0.3040; p3 = 0.5865
@@ -11661,23 +11661,23 @@ Selection in a
 Laboratory Experiment
 Selection in a Lab Experiment
 Bacteria are great for studying selection, because they grow fast.
-A study on the competition between two genotypes A and B, under conditions in which A is the superior competitor. 
+A study on the competition between two genotypes A and B, under conditions in which A is the superior competitor.
 We can measure relative fitness, W as the competitive ability of of B when competing against A.
-W  is called a relative fitness 
+W  is called a relative fitness
 Individuals relative ability to survive and transmit genes to next generation
 A = 0.6 to .995
 B = 0.4 to 0.005
 W = 0.96 for B
 Effect of selection for a favored allele (A) in a haploid (E. coli)
 Individual Fitness, w,
-Relative Fitness, W, and 
+Relative Fitness, W, and
 Selection Coefficient
 Individual Fitness, w, is the ability to survive and reproduce.
 Each member of the population has its own fitness value (w):
 0 if it dies or fails to reproduce,
 1 if it survives and produces 1 offspring,
 2 if it survives and produces 2 offspring, etc.
-The average fitness of the population is calculated by averaging the fitness of individuals. 
+The average fitness of the population is calculated by averaging the fitness of individuals.
 Individual Fitness
 <number>
  John Wiley & Sons, Inc.
@@ -11695,7 +11695,7 @@ Selection Coefficient
 Relative Fitness values:
 Strain A has the standard fitness of 1.0
 Strain B produces only 0.96 offspring for a each offspring of a strain A
-Selection coefficient (s): The selective disadvantage of a disfavored genotype. 
+Selection coefficient (s): The selective disadvantage of a disfavored genotype.
 s = 1.0  0.96 = 0.04 = 4%
 The selective disadvantage of strain B is 4% per generation
 The selection coefficient measures the intensity of natural selection acting on the genotypes in the population
@@ -11709,7 +11709,7 @@ Dominance and recessiveness create additional complications.
 Frequency of favored dominant allele changes very slowly when the allele is common.
 Frequency of favored recessive allele changes very slowly when the allele is rare.
 Reason: recessive alleles are found in heterozygotes, that are not exposed to selection.
-remember Hardy-Weinberg and rare diseases 
+remember Hardy-Weinberg and rare diseases
 Selection for a favored allele in a diploid depends upon whether the allele is dominant or recessive
 Favored recessive alleles take longer to take over
 True or False:
@@ -11812,7 +11812,7 @@ Natural Selectionin the Field Habitat
 <number>
 Natural Selection Comparison
 Natural selection may act for or against a recessive allele.
-Selection for a recessive allele and against a dominant allele is more efficient 
+Selection for a recessive allele and against a dominant allele is more efficient
 than selection against a recessive allele.
 <number>
 Directionality of
@@ -11822,7 +11822,7 @@ but is more often influenced by many genes that affect quantitative traits such 
 fecundity  the ability to produce an abundance of offspring
 Natural selection can affect the distribution of a quantitative trait through
 directional selection,
-disruptive selection, or 
+disruptive selection, or
 stabilizing selection.
 Natural Selection for Quantitative Traits
 <number>
@@ -11907,7 +11907,7 @@ Suppose that AA homozygotes are lethal s=1, and that the aa homozygotes are 50% 
 A dynamic equilbrium will be reached when
 p = 0.5/(0.5 + 1) = 1/3 and
 q = 1/(0.5 + 1) = 2/3
-In this case, both alleles will be maintained at appreciable frequencies through selection in favor of the heterozygotes. 
+In this case, both alleles will be maintained at appreciable frequencies through selection in favor of the heterozygotes.
 <number>
 Distribution of the diseases sickle cell anemia and falciparum malaria
 The heterozygote is favored over the homozygous dominant genotype (over-dominance) in areas where malaria is prevalent.
@@ -11934,7 +11934,7 @@ p = t/(s + t)
 0.1 = (1.0  0.1)t = 0.9t
 t = (0.1)/(0.9) = 0.111
 <number>
-(a) Step 1: figure out s and t 
+(a) Step 1: figure out s and t
 Genotype
 Relative Fitness
 1  s
@@ -11959,22 +11959,22 @@ fAa = 2pq = 25/61/6 = 5/18 = 0.278
 faa = q2 = 21/61/6 = 1/36 = 0.028
 fAA + fAa + faa = 31/36 = 0.861
 fAa = 0.278/0.861 = 0.323
-(c) Step 1: figure out s and t 
+(c) Step 1: figure out s and t
 s = 0.1
 t = 1
 q = 0.1/(0.1 + 1) = 1/11 = 0.091
 p = 1/(0.1+1) = 10/11 = 0.909
 q = 0.1/(0.1+1) = 1/11 = 0.091
-2pq = 
+2pq =
 (d) p = 1/(0.1+1) = 10/11 = 0.909;
 q = 0.1/(0.1+1) = 1/11 = 0.091
 fAA = p2 = 10/1110/11 = 0.826
-fAa = 2pq = 210/111/11 = 0.165 
+fAa = 2pq = 210/111/11 = 0.165
 faa = q2 = 1/111/11 = 0.008  but really they all die
 fAA + fAa + faa = 120/121 = 0.992
 fAa = 0.165/0.992 = 0.167
 (b) fAa = 0.323
-(d) fAa = 0.167 
+(d) fAa = 0.167
 
 Lecture 13G
 Genetic Drift
@@ -12034,7 +12034,7 @@ The founder effect occurs when a few individuals become isolated from a larger p
 Allele frequencies in the small founder population can be different from those in the larger parent population
 <number>
 The Bottleneck Effect
-The bottleneck effect is a sudden reduction in population size due to a change in the environment 
+The bottleneck effect is a sudden reduction in population size due to a change in the environment
 The resulting gene pool may no longer be reflective of the original populations gene pool
 If the population remains small, it may be further affected by genetic drift
 The Bottleneck Effect
@@ -12053,7 +12053,7 @@ Understanding the bottleneck effect can increase understanding of how human acti
 <number>
 Figure 23.10-3 The bottleneck effect (step 3)
 Case Study: the Greater Prairie Chicken
-Loss of prairie habitat caused a severe reduction in the population of greater prairie chickens in Illinois 
+Loss of prairie habitat caused a severe reduction in the population of greater prairie chickens in Illinois
 The surviving birds had low levels of genetic variation, and only 50% of their eggs hatched
 <number>
 Greater prairiechicken
@@ -12089,7 +12089,7 @@ The population size is given by N.
 Change in Heterozygosity
 <number>
 In one generation, random genetic drift causes the heterozygosity to decline by a factor of 1/2N.
-In t generations, the heterozygosity, H, will decline according to the equation below until it eventually reaches 0 and all genetic variability is lost. 
+In t generations, the heterozygosity, H, will decline according to the equation below until it eventually reaches 0 and all genetic variability is lost.
 <number>
 Larger Populationsare Less Susceptible
 <number>
@@ -12111,7 +12111,7 @@ allele frequency is about constant when all populations are looked at together
 Spreading out of allele frequencies means that the allele frequencies among the populations become progressively more different.
 So, random genetic drift causes differences in allele frequency among subpopulations:
 It is the major cause of genetic differentiation among subpopulations.
-Each population consisted of 8 males and 8 females. 
+Each population consisted of 8 males and 8 females.
 The predicted and experimental results are similar except that the actual results show quite a bit more scatter.
 Actual results of genetic drift in 107 experimental populations of Drosophila
 bw  brown eye
@@ -12119,7 +12119,7 @@ bw75 - wild type
 So, if random genetic drift were the only one force at work, then all alleles would be eventually become either fixed or lost
 there would be no polymorphism.
 But this wont happen? Why?
-Summary of Genetic Drift 
+Summary of Genetic Drift
 Genetic drift is significant in small populations
 Genetic drift can cause allele frequencies to change at random
 Genetic drift can lead to a loss of genetic variation within populations
@@ -12149,7 +12149,7 @@ INBREEDING
 Mating between relatives such as first cousins  frequency of heterozygotes gets smaller than it is with random mating.
 Start with self fertilization of Aa plant:
 After first generation   AA,  Aa,  aa
-it reduces proportion of heterozygous: 
+it reduces proportion of heterozygous:
 After second generation:    = 1/4
 After third generation:      = 1/8
 So on
@@ -12172,21 +12172,21 @@ For a completely inbred population, F=1.
 The frequency of genotype AA will be p, the frequency of Aa will be 0, and the frequency of genotype aa will be q.
 <number>
 The frequency of heterozygotes is reduced as inbreeding increases
-Heterozygosity (H1) Graph is given by 
+Heterozygosity (H1) Graph is given by
 H1 = 2pq (1-F)
 F = 0 random mating
 F = 1 no heterozygous remaining in the population
 Inbreeding reduces the frequency of heterozygous genotypes, relative to random mating, and increases the frequency of homozygous genotypes.
 Inbreeding Coefficient
-Inbreeding coefficient: It is a measure of genetic effects of inbreeding, symbolized by letter F 
-Proportionate reduction in heterozygosity (H1) in an inbred organism compared with the heterozygosity expected with random mating. 
+Inbreeding coefficient: It is a measure of genetic effects of inbreeding, symbolized by letter F
+Proportionate reduction in heterozygosity (H1) in an inbred organism compared with the heterozygosity expected with random mating.
 F = (2pq  H1)/2pq
 F = 0 (no inbreeding)
 F = 1 (complete inbreeding) ??
 H1 = 2pq (1-F)
 So genotypic frequencies in inbred population:
-AA: p2 (1-F) + pF 
-Aa: 2pq (1-F) 
+AA: p2 (1-F) + pF
+Aa: 2pq (1-F)
 aa: q2 (1-F) + qF
 Inbreeding Coefficient
 The effects of consanguineous mating can be quantified using the inbreeding coefficient, F.
@@ -12196,7 +12196,7 @@ Aa: 2pq  2pqF
 aa: q2 + pqF
 <number>
 The inbreeding coefficient of individual is the probability that the individual carries alleles that are identical by descent.
-Proportionate reduction in heterozygosity (H1) in an inbred organism compared with the heterozygosity expected with random mating. 
+Proportionate reduction in heterozygosity (H1) in an inbred organism compared with the heterozygosity expected with random mating.
 F = (2pq  H1)/2pq
 F = 0 (no inbreeding)
 F = 1 (complete inbreeding)
@@ -12224,9 +12224,9 @@ Expected frequency with F=0.66
 0.167
 0.487
 Normal H-W
-0.432 
+0.432
 = 0.185
-2(0.43)0.57 
+2(0.43)0.57
 = 0.490
 0.572
 = 0.324
@@ -12246,9 +12246,9 @@ Expected frequency with F=0.66
 0.167
 0.487
 Normal H-W
-0.432 
+0.432
 = 0.185
-2(0.43)0.57 
+2(0.43)0.57
 = 0.490
 0.572
 = 0.324
@@ -12320,7 +12320,7 @@ ECD: ()3
 ECABD: ()5
 EBACD: ()5
 FI = ()3 + ()3 + ()5 + ()5 = 5/16
-Individual I is 5/16 less likely to be heterozygous than a non-inbred individual 
+Individual I is 5/16 less likely to be heterozygous than a non-inbred individual
 what are the values of p and q?
 q2 = 8.5e-6
 q = sqrt(8.5e-6) = 0.002915 = 2.9e-3
@@ -12341,11 +12341,11 @@ JIFBEHK
 JHEBFIK
 JIFBEHK
 (b) common paths:
-JHEBFIK = ()7 
-JIFBEHK = ()7 
-JHK = ()3 
+JHEBFIK = ()7
+JIFBEHK = ()7
+JHK = ()3
 JIK = ()3
-(d) FL = ()7 + ()7 + ()3 + ()3 
+(d) FL = ()7 + ()7 + ()3 + ()3
 = (1+1+16+16)/128
 = 17/64
 = 26.6%

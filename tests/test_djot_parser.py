@@ -11,8 +11,25 @@ import slide_lib.djot_blocks
 import slide_lib.djot_errors
 import slide_lib.djot_inline
 import slide_lib.djot_parser
+import slide_lib.djot_sources
 import slide_lib.layout_validation
 import slide_lib.native_model
+
+
+#============================================
+@pytest.mark.parametrize("newline", (b"\n", b"\r\n", b"\r"))
+def test_encoding_error_reports_editor_location(tmp_path: pathlib.Path, newline: bytes) -> None:
+	"""Bad bytes after multibyte text must point to the actual editor line and column."""
+	path = tmp_path / "broken.djot"
+	path.write_bytes((b"long preceding text " * 500) + newline +
+		"caf\u00e9 ".encode("utf-8") + b"\x80 broken" + newline)
+	with pytest.raises(slide_lib.djot_errors.DjotParseError) as raised:
+		slide_lib.djot_sources.read_source(path)
+	message = str(raised.value)
+	assert f"{path}:2:" in message
+	assert "line 2, column 6" in message
+	assert "caf\u00e9 [INVALID 0x80] broken" in message
+	assert "save the file as UTF-8" in message
 
 
 #============================================
@@ -138,13 +155,18 @@ def test_parse_deck_binds_global_headings_and_named_cells(tmp_path: pathlib.Path
 
 
 #============================================
-def test_bare_https_url_becomes_an_editable_hyperlink(tmp_path: pathlib.Path) -> None:
+@pytest.mark.parametrize("scheme", ("https://", "https\\://", "http://", "http\\://"))
+def test_bare_https_url_becomes_an_editable_hyperlink(
+		tmp_path: pathlib.Path, scheme: str) -> None:
 	"""A bare course URL projects as a linked native text run without Markdown wrapper noise."""
-	url = "https://vosslab.github.io/syllabus/fall_2026/biotech/"
-	deck = parse_source(tmp_path, f"=== layout: one-panel\n@body\n{url}\n")
+	url_source = scheme + "forms.gle/gZ8nx28q9YDwSy8g7"
+	url = url_source.replace("\\:", ":")
+	deck = parse_source(tmp_path, f"=== layout: one-panel\n@body\n{url_source}.\n")
 	inline = deck.slides[0].cells[0].blocks[0].inlines[0]
 	assert isinstance(inline, slide_lib.native_model.Link)
 	assert inline.url == url
+	assert inline.children == (slide_lib.native_model.Text(url),)
+	assert deck.slides[0].cells[0].blocks[0].inlines[1] == slide_lib.native_model.Text(".")
 
 
 #============================================

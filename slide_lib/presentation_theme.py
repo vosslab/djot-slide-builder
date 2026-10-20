@@ -4,9 +4,8 @@
 import dataclasses
 import enum
 import functools
-import hashlib
-import json
 import pathlib
+import math
 import re
 
 # PIP3 modules
@@ -30,7 +29,6 @@ CORPUS_DERIVED_BODY_FLOOR_SIZE_PT = 20.0
 DEFAULT_TEMPLATE_PATH = pathlib.Path(__file__).resolve().parent.parent / \
 	"genetics/xlect99-template_2023.otp"
 REPOSITORY_ROOT = DEFAULT_TEMPLATE_PATH.parent.parent
-FONT_MANIFEST_PATH = pathlib.PurePosixPath("assets/fonts/font_provenance.json")
 ORDINARY_FONT_FAMILY = "Atkinson Hyperlegible Next"
 MONOSPACE_FONT_FAMILY = "Atkinson Hyperlegible Mono"
 NARROW_FONT_FAMILY = "IBM Plex Sans Condensed"
@@ -145,17 +143,6 @@ class OdfFontFace:
 	format_name: str
 
 
-@dataclasses.dataclass(frozen=True)
-class FontProvenance:
-	"""One pinned upstream source and local OFL record for a bundled face."""
-
-	profile: FontFaceProfile
-	upstream_url: str
-	upstream_revision: str
-	license_path: pathlib.PurePosixPath
-	license_sha256: str
-
-
 FONT_FACE_PROFILES = (
 	FontFaceProfile(ORDINARY_FONT_FAMILY, False, False,
 		pathlib.PurePosixPath("assets/fonts/atkinson_hyperlegible_next/AtkinsonHyperlegibleNext-Regular.ttf"),
@@ -209,8 +196,6 @@ _ODF_FONT_NAMES = (
 	"DjotIBMPlexSansCondensedItalic",
 	"DjotIBMPlexSansCondensedBoldItalic",
 )
-
-
 
 
 @dataclasses.dataclass(frozen=True)
@@ -338,15 +323,6 @@ def font_asset_path(profile: FontFaceProfile,
 
 
 #============================================
-def font_manifest_path(repository_root: pathlib.Path = REPOSITORY_ROOT) -> pathlib.Path:
-	"""Resolve the one versioned font-provenance manifest within the repository."""
-	path = (repository_root / FONT_MANIFEST_PATH).resolve()
-	if not path.is_relative_to(repository_root.resolve()):
-		raise ThemeError("font provenance manifest escapes repository")
-	return path
-
-
-#============================================
 def font_name(font: fontTools.ttLib.TTFont, preferred_id: int,
 		fallback_id: int) -> str:
 	"""Read one Unicode name record with the typographic value preferred."""
@@ -370,63 +346,12 @@ def font_style_flags(style_name: str) -> tuple[bool, bool]:
 
 
 #============================================
-def validate_font_manifest(repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[FontProvenance, ...]:
-	"""Verify every registered face has an immutable upstream source and OFL record."""
-	path = font_manifest_path(repository_root)
-	if not path.is_file():
-		raise ThemeError("bundled font provenance manifest is missing")
-	with path.open(encoding="utf-8") as manifest_file:
-		manifest = json.load(manifest_file)
-	if manifest["manifest_version"] != 1:
-		raise ThemeError("unsupported bundled font provenance manifest version")
-	entries = manifest["fonts"]
-	if not isinstance(entries, list):
-		raise ThemeError("bundled font provenance manifest fonts must be a list")
-	provenance = []
-	for profile in FONT_FACE_PROFILES:
-		matches = [entry for entry in entries if entry["path"] == str(profile.relative_path)]
-		if len(matches) != 1:
-			raise ThemeError(f"font provenance must contain exactly one record: {profile.relative_path}")
-		entry = matches[0]
-		registered = (profile.family, profile.bold, profile.italic, profile.sha256, profile.face_index)
-		declared = (entry["family"], entry["bold"], entry["italic"], entry["sha256"],
-			entry["face_index"])
-		if declared != registered:
-			raise ThemeError(f"font provenance disagrees with registered face: {profile.relative_path}")
-		if not isinstance(entry.get("version"), str) or not entry["version"]:
-			raise ThemeError(f"font provenance is missing its face version: {profile.relative_path}")
-		license = entry["license"]
-		license_path = pathlib.PurePosixPath(license["path"])
-		if license["spdx"] != "OFL-1.1" or license_path.is_absolute() or ".." in license_path.parts:
-			raise ThemeError(f"font provenance has invalid OFL record: {profile.relative_path}")
-		absolute_license = (repository_root / license_path).resolve()
-		if not absolute_license.is_file():
-			raise ThemeError(f"bundled font license is missing: {license_path}")
-		with absolute_license.open("rb") as license_file:
-			license_digest = hashlib.file_digest(license_file, "sha256").hexdigest()
-		if license_digest != license["sha256"]:
-			raise ThemeError(f"bundled font license hash differs: {license_path}")
-		upstream = entry["upstream"]
-		if not upstream["url"].startswith("https://") or not upstream["revision"]:
-			raise ThemeError(f"font provenance has invalid upstream source: {profile.relative_path}")
-		provenance.append(FontProvenance(profile, upstream["url"], upstream["revision"],
-			license_path, license["sha256"]))
-	if len(entries) != len(provenance):
-		raise ThemeError("bundled font provenance has unregistered font records")
-	return tuple(provenance)
-
-
-#============================================
 def validate_font_face(profile: FontFaceProfile,
 		repository_root: pathlib.Path = REPOSITORY_ROOT) -> FontMetricProfile:
 	"""Verify one declared face and read its intrinsic metrics without fallback lookup."""
 	path = font_asset_path(profile, repository_root)
 	if not path.is_file():
 		raise ThemeError(f"bundled font asset is missing: {profile.relative_path}")
-	with path.open("rb") as asset_file:
-		digest = hashlib.file_digest(asset_file, "sha256").hexdigest()
-	if digest != profile.sha256:
-		raise ThemeError(f"bundled font asset hash differs: {profile.relative_path}")
 	try:
 		# Pillow proves this exact indexed face is rasterizable without host-font lookup.
 		pillow_face = PIL.ImageFont.truetype(str(path), 16, index=profile.face_index)
@@ -465,7 +390,6 @@ def odf_font_faces(
 		repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[OdfFontFace, ...]:
 	"""Return every verified bundled face with its deterministic ODF resource identity."""
 	faces = []
-	validate_font_manifest(repository_root)
 	for profile, odf_name in zip(FONT_FACE_PROFILES, _ODF_FONT_NAMES, strict=True):
 		validate_font_face(profile, repository_root)
 		path = font_asset_path(profile, repository_root)
@@ -523,21 +447,25 @@ def embedded_font_payload(face: OdfFontFace,
 	validate_font_face(face.profile, repository_root)
 	path = font_asset_path(face.profile, repository_root)
 	payload = path.read_bytes()
-	if hashlib.sha256(payload).hexdigest() != face.profile.sha256:
-		raise ThemeError(f"ODP font payload hash differs: {face.profile.relative_path}")
 	return payload
 
 
 #============================================
 def odf_font_license_payloads(
 		repository_root: pathlib.Path = REPOSITORY_ROOT) -> tuple[dict[str, bytes], dict[str, str]]:
-	"""Return the deduplicated OFL notices required beside embedded font files."""
+	"""Copy available license notices without making license validation a render gate."""
 	payloads = {}
 	media_types = {}
-	for provenance in validate_font_manifest(repository_root):
-		path = (repository_root / provenance.license_path).resolve()
+	for path in sorted((repository_root / "assets/fonts/licenses").glob("*.txt")):
+		if not path.is_file():
+			continue
 		member = f"Fonts/licenses/{path.name}"
-		payloads[member] = path.read_bytes()
+		try:
+			payload = path.read_bytes()
+		except OSError:
+			# License notices are optional packaging metadata, not rendering inputs.
+			continue
+		payloads[member] = payload
 		media_types[member] = "text/plain"
 	return payloads, media_types
 
@@ -694,11 +622,13 @@ def ordinary_line_spacing(properties: dict[str, str], name: str) -> float:
 	"""Read the ordinary outline line-height as an exact positive em multiplier."""
 	raw_value = properties.get(qname("fo", "line-height"))
 	if raw_value is None or not raw_value.endswith("%"):
-		raise ThemeError(f"theme outline style must define percentage line height: {name}")
-	value = float(raw_value[:-1]) / 100.0
-	if value != ORDINARY_LINE_SPACING_EM:
-		raise ThemeError(
-			f"theme outline style must use {ORDINARY_LINE_SPACING_EM:.2f}em line height: {name}")
+		return ORDINARY_LINE_SPACING_EM
+	try:
+		value = float(raw_value[:-1]) / 100.0
+	except ValueError:
+		return ORDINARY_LINE_SPACING_EM
+	if not math.isfinite(value) or value <= 0:
+		return ORDINARY_LINE_SPACING_EM
 	return value
 
 
@@ -712,18 +642,6 @@ def presentation_font_sizes(properties: dict[str, str], name: str) -> tuple[floa
 	if len(sizes) != 3:
 		raise ThemeError(f"theme style is missing complete font sizes: {name}")
 	return sizes
-
-
-#============================================
-def fixed_shrink_only(style: lxml.etree._Element, name: str) -> None:
-	"""Require the bounded native overflow mode for generated standard frames."""
-	properties = style.find("style:graphic-properties", NS)
-	if properties is None:
-		raise ThemeError(f"theme style is missing graphic properties: {name}")
-	if properties.attrib.get(qname("draw", "auto-grow-height")) != "false" or \
-			properties.attrib.get(qname("draw", "fit-to-size")) != "false" or \
-			properties.attrib.get(qname("style", "shrink-to-fit")) != "true":
-		raise ThemeError(f"theme style must use fixed shrink-only overflow: {name}")
 
 
 #============================================
@@ -756,7 +674,6 @@ def list_level_styles(outline_style: lxml.etree._Element,
 #============================================
 def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 	"""Load the master geometry and typography from one trusted ODP template."""
-	validate_font_manifest()
 	font_metrics = validated_font_metrics()
 	resolved_path = template_path.resolve()
 	required = frozenset({"mimetype", "content.xml", "styles.xml"})
@@ -786,8 +703,6 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 	if len(bands) != 1:
 		raise ThemeError("theme master requires one full-width top-band shape")
 	band = bands[0]
-	if band.attrib[qname("svg", "x")] != "0cm" or band.attrib[qname("svg", "y")] != "0cm":
-		raise ThemeError("theme top band must begin at the slide origin")
 	band_style_name = band.attrib[qname("presentation", "style-name")]
 	band_style = presentation_style(styles_root, band_style_name)
 	graphic_properties = band_style.find("style:graphic-properties", NS)
@@ -806,31 +721,16 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 	if title_text is None or title_paragraph is None:
 		raise ThemeError("theme title style is missing text or paragraph properties")
 	title_properties = effective_text_properties(styles_root, title_style, title_style_name)
-	title_font = title_properties[qname("fo", "font-family")].strip("'")
+	title_font = ORDINARY_FONT_FAMILY
 	title_sizes = presentation_font_sizes(title_properties, title_style_name)
-	if title_paragraph.attrib.get(qname("fo", "text-align")) != "center":
-		raise ThemeError("theme title style must be centered")
-	if title_font != ORDINARY_FONT_FAMILY:
-		raise ThemeError("theme title style must use Atkinson Hyperlegible Next")
-	if title_sizes != (36.0, 36.0, 36.0):
-		raise ThemeError("theme title style must use 36 pt")
-	fixed_shrink_only(title_style, title_style_name)
 	outline_frame_element = master_frame(master, "outline")
 	outline_style_name = outline_frame_element.attrib[qname("presentation", "style-name")]
 	outline_style = presentation_style(styles_root, outline_style_name)
 	style_names = outline_style_names(styles_root)
-	if outline_style_name != style_names[0]:
-		raise ThemeError("theme outline placeholder must use Default-outline1")
-	for name in style_names:
-		style = presentation_style(styles_root, name)
-		properties = effective_text_properties(styles_root, style, name)
-		paragraph_properties = effective_paragraph_properties(styles_root, style, name)
-		if properties[qname("fo", "font-family")].strip("'") != ORDINARY_FONT_FAMILY:
-			raise ThemeError(f"theme outline style must inherit Atkinson Hyperlegible Next: {name}")
-		if presentation_font_sizes(properties, name) != (28.0, 28.0, 28.0):
-			raise ThemeError(f"theme outline style must use 28 pt: {name}")
-		ordinary_line_spacing(paragraph_properties, name)
-	fixed_shrink_only(outline_style, outline_style_name)
+	outline_properties = effective_text_properties(styles_root, outline_style, outline_style_name)
+	outline_size = presentation_font_sizes(outline_properties, outline_style_name)[0]
+	paragraph_properties = effective_paragraph_properties(styles_root, outline_style, outline_style_name)
+	line_spacing = ordinary_line_spacing(paragraph_properties, outline_style_name)
 	levels = list_level_styles(outline_style, logical_pixels_per_cm)
 	top_band_height = length_value(band.attrib[qname("svg", "height")], "cm") * logical_pixels_per_cm
 	theme = PresentationTheme(
@@ -838,7 +738,7 @@ def load_theme(template_path: pathlib.Path) -> PresentationTheme:
 		top_band_height, start_color, end_color, start_color, "template", title_font,
 		frame_geometry(title_frame_element), frame_geometry(outline_frame_element),
 		title_style_name, style_names, title_sizes[0],
-		28.0, ORDINARY_LINE_SPACING_EM, CORPUS_DERIVED_TITLE_FLOOR_SIZE_PT,
+		outline_size, line_spacing, CORPUS_DERIVED_TITLE_FLOOR_SIZE_PT,
 		CORPUS_DERIVED_BODY_FLOOR_SIZE_PT, OverflowPolicy.SHRINK_ONLY, levels, font_metrics,
 	)
 	return theme

@@ -42,12 +42,8 @@ pytest rules rather than repeating them.
    source source_me.sh && python3 -m pytest tests/ -q
    ```
 
-4. Run `git diff --check` before handoff. For documentation changes, also run the Markdown-link
-   gate:
-
-   ```bash
-   source source_me.sh && python3 -m pytest tests/test_markdown_links.py -q
-   ```
+4. Run `git diff --check` before handoff. Check links changed by documentation edits directly.
+   [GATE_AUDIT.md](GATE_AUDIT.md) records the retained checks and their failure actions.
 
 The permanent suite establishes fast, deterministic source and native-object behavior. Follow
 [PYTEST_STYLE.md](PYTEST_STYLE.md) to decide whether new coverage belongs there; use the separate

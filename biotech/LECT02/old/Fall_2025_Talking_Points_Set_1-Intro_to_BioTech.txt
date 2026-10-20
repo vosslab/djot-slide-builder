@@ -4,7 +4,7 @@ Sept 4, 2025
 
 DO NOT CHANGE
 THE THEME!!!
-We are using the “Tropic” theme and that is it.
+We are using the "Tropic" theme and that is it.
 
 Talking Points Guide
 
@@ -17,7 +17,7 @@ Overall Setup of Talking Points Assignment
 
 
 Talking Points Assigned
-Talking points were assigned during last week’s class.
+Talking points were assigned during last week's class.
 Each student was assigned to one or two talking points based on class size.
 Collaboration with Classmates Expectation
 Each talking point will have at least two students talking about it.
@@ -27,13 +27,13 @@ Keep It Concise: 60 seconds per talking point is short;
 Stay on topic and be impactful.
 Earn Extra Discussion Marks:
 Contributing gets you more discussion points.
-If you have something interesting to say about someone else’s talking point, you can score some extra points.
+If you have something interesting to say about someone else's talking point, you can score some extra points.
 Asking questions of other students gets you discussion marks as well.
 Use the chat for the question asking and answering
 
 Formatting Your Talking Point Slide Before Class
 Edit and update your slide
-Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide.
 Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
 Add several pictures and some text.
 Movies and animated gifs are discouraged but not forbidden.
@@ -41,8 +41,8 @@ No external audio is allowed. Movies will be muted.
 Limit Text: No complete sentences on slides; use short phrases and keywords only.
 Content Preparation
 Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
-Try to be unique and creative with your slide’s look and content.
-Don’t just copy the book; use the internet for research
+Try to be unique and creative with your slide's look and content.
+Don't just copy the book; use the internet for research
 Provide your own perspective.
 Minimize jargon to make it accessible to all classmates.
 
@@ -135,14 +135,14 @@ Question Asker #29: symbiotic theory -- Tania
 
 Chapter 1
 
-#1 Ancient Biotechnology  
+#1 Ancient Biotechnology
 What were the earliest discoveries in biotechnology?
 Can you identify the civilizations that first harnessed biotechnology?
 How did early biotech contribute to the modern world?
 What are the key historical milestones in biotechnology?
 How did biotechnology evolve from being an art to a science?
 
-Ancient Biotechnology  - Raj“Let’s rewind history and see where biotechnology began… ⏳
+Ancient Biotechnology  - Raj"Let's rewind history and see where biotechnology began... &#x23F3;
 1st Biotech snacks- Bread & Beer
 
 
@@ -151,26 +151,26 @@ Ancient Biotechnology  - Raj“Let’s rewind history and see where biotechnolog
 
 
 
-(Ayurveda) 
+(Ayurveda)
 
-(10,000 BCE – selective breeding) → 🍺 (6000 BCE – beer) → 🧪 (1800s – Pasteur) → 🧬 (1953 – DNA)
+(10,000 BCE - selective breeding) -> &#x1F37A; (6000 BCE - beer) -> &#x1F9EA; (1800s - Pasteur) -> &#x1F9EC; (1953 - DNA)
 10,000BCA - Selective breeding, 6000 BCA - Beer1800s - Pasteur, 1953 - DNA
 
 
-#2 Bacteriocins 
+#2 Bacteriocins
 textbook has a section on this.
 What are bacteriocins? How are bacteriocins produced?
 How do bacteria use bacteriocins?
-What are the mechanisms of action for different bacteriocins? 
+What are the mechanisms of action for different bacteriocins?
 How can bacteriocins be applied in medicine? How do bacteriocins relate to antibiotic resistance?
 Are there any commercial products that utilize bacteriocins?
 
 
-#2 Bacteriocins 
+#2 Bacteriocins
 Treat Bacterial Infection
 Vaccine Development
 Enhance Antibiotic Effectiveness
-Food Preservation 
+Food Preservation
 01
 02
 03
@@ -178,7 +178,7 @@ Food Preservation
 
 Model Organisms
 
-#3 Overview of Model Organisms 
+#3 Overview of Model Organisms
 Why are model organisms crucial for biotechnology research?
 How are model organisms chosen? What makes a good model organism?
 What are the advantages and limitations of using model organisms?
@@ -191,13 +191,13 @@ Importance
 Ideal model
 .Use to understand biological processes
 
-.Easier to keep in a 
+.Easier to keep in a
 lab setting
 
-.Platform use to test 
+.Platform use to test
 hypothesis
 
-.Replicates complexity of a 
+.Replicates complexity of a
 living organism
 
 .Small size
@@ -219,7 +219,7 @@ Overview of Model Organisms - Niyati
  - Model organisms share genetic similarities with humans
 -Helps us study complex biology in simpler organisms
 - Offers a reliable space to test new methods
-- Speed up the development of new biotechnologies 
+- Speed up the development of new biotechnologies
 
 foundational tools and environment of biotechnology research and development
 
@@ -231,12 +231,12 @@ Background Info
 Common Name: Rana Temporaria
 Location: Europe, can be found in Ireland and Japan
 Size: Adult Frogs 2.8 to 3.9 inches/ weigh 0.80 ounces
-Generation Time: 3 to 4 years depending on geography and climate 
-Lifespan: 5-10 years 
+Generation Time: 3 to 4 years depending on geography and climate
+Lifespan: 5-10 years
 Genetics & Economic Benefit
 Genetic Manipulation: can be challenging due to their biology
 
-Genome: Not a typical model organism 
+Genome: Not a typical model organism
 
 Economic Benefit: Antimicrobial peptides & effectively treating diseases
 
@@ -249,10 +249,10 @@ Nobel Prize in 1936 to Otto Loewi and Sir Henry Dale
 Nobel Prize in 1967 to Ragnar Granit, Haldan Keffer Hartline and George Wald
 
 Ethical Considerations
-Appropriate housing conditions humidity and temperature 
-Minimize harm, control breeding 
+Appropriate housing conditions humidity and temperature
+Minimize harm, control breeding
 In Lab Setting
-Water quality, temperature, lighting, population density, life stage management, controlled diet 
+Water quality, temperature, lighting, population density, life stage management, controlled diet
 
 #5 Model Organism: Tobacco mosaic virus
 State common name, location, size, generation time, and lifespan
@@ -266,12 +266,12 @@ How do researchers typically maintain and culture these organisms in a lab setti
 
 #5 Model Organism: Tobacco mosaic virus - Gourav
 
- 
+
 
 
 #5 Model Organism: Tobacco mosaic virus - Hrithik
 
-#6 Model Organism: Escherichia coli 
+#6 Model Organism: Escherichia coli
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -281,11 +281,11 @@ What are some landmark studies using this organism?
 Are there ethical considerations in using this organism for research?
 How do researchers typically maintain and culture these organisms in a lab setting?
 
-E-coli: shyamani 
+E-coli: shyamani
 Location:
 found in the lower intestinal tracts of humans and many other warm-blooded animals
 Rod-shaped bacterium
-Under nutrient-rich, aerobic conditions at 37°C, E. coli can divide as quickly as once every 20 minutes.
+Under nutrient-rich, aerobic conditions at 37&#xB0;C, E. coli can divide as quickly as once every 20 minutes.
 Why E-coli is easy to manipulate?
 > Simple genetic
 >Fast growth and culture
@@ -306,7 +306,7 @@ How do researchers typically maintain and culture these organisms in a lab setti
 
 #7 Model Organism: Photosynthetic Cyanobacteria - Matthew
 
-#8 Model Organism: Saccharomyces cerevisiae 
+#8 Model Organism: Saccharomyces cerevisiae
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -333,7 +333,7 @@ How do researchers typically maintain and culture these organisms in a lab setti
 -1mm in length as adults
 -Lifespan: 2-3 wks
 -Generation time: 3-4 days
-I’ve won 4 Nobel Prizes!
+I've won 4 Nobel Prizes!
 2002 - Brenner, Sulston, Horvitz
 2006 - Mello, Fire
 2008 - Tsien, Chalfie, Shimomura
@@ -355,7 +355,7 @@ X
 6 - The Worm That Won the World: How C. elegans got Four Nobel Prizes in Science | by Vyamasani Shravani | Jul, 2025 | Medium
 C. Elegans image from SFU
 
-#11 Model Organism: Arabidopsis thaliana 
+#11 Model Organism: Arabidopsis thaliana
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -367,8 +367,8 @@ How do researchers typically maintain and culture these organisms in a lab setti
 
 #11 Model Organism: Arabidopsis thaliana - Rocelle
 Common name: Thale Cress/ Mouse-ear cress
-Most widely studied plant “Humble weed”
-Plant breeding, crop improvement, 
+Most widely studied plant "Humble weed"
+Plant breeding, crop improvement,
 Floral dip method
 Ethical considerations?
 
@@ -381,13 +381,13 @@ How similar is its genome to the human genome?
 Not very similar. 19% they share a significant number of conserved, or orthologous, genes essential for basic cellular functions, with some studies indicating orthologs exist for a substantial portion of both genomes.
 What is its potential economic benefit?
 rice , wheat, maize
-Faster breeding and gene editing. “Humble weed” allows researchers to quickly validate gene functions and apply those findings to crops with more complex or longer lifecycles. This allows for improved yields and plant resilience
+Faster breeding and gene editing. "Humble weed" allows researchers to quickly validate gene functions and apply those findings to crops with more complex or longer lifecycles. This allows for improved yields and plant resilience
 Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
-Arabidopsis thaliana began to be widely used for biotech in the 1980s, gaining significant traction after the 1986 breakthrough in T-DNA-mediated transformation and the cloning of the first A. thaliana gene.Its widespread adoption culminated with the publication of the first complete plant genome sequence in 2000, solidifying A. thaliana's role as a foundational model for plant genomics and molecular biology 
+Arabidopsis thaliana began to be widely used for biotech in the 1980s, gaining significant traction after the 1986 breakthrough in T-DNA-mediated transformation and the cloning of the first A. thaliana gene.Its widespread adoption culminated with the publication of the first complete plant genome sequence in 2000, solidifying A. thaliana's role as a foundational model for plant genomics and molecular biology
 What are some landmark studies using this organism?
 The ABC model of flowers explains how three classes of genes (A, B, and C) interact to determine the type of floral organ (sepal, petal, stamen, or carpel) produced at different positions in the flower's whorls. This genetic framework allows biotechnologists to modify gene expression, which can lead to changes in flower structure, form, and color. Ultimately leading to biotech applications of plant breeding, crop improvement, and other evolutionary studies.
 Are there ethical considerations in using this organism for research?
-Genetically modified plants affecting natural biodiversity of plants, “naturalness”, slippery slope - will these findings ultimately transfer to human genome?
+Genetically modified plants affecting natural biodiversity of plants, "naturalness", slippery slope - will these findings ultimately transfer to human genome?
 
 
 
@@ -405,12 +405,12 @@ How do researchers typically maintain and culture these organisms in a lab setti
 #12 Model Organism: Panicum virgatum - Binay
 Cool facts
 Common name - switchgrass
-Location - North America 
+Location - North America
 Size 1-3 meters!!
-Generation time - 1 year 
+Generation time - 1 year
 Landmark - biofuel / cell wall regeneration 2013,2019,2000s
 Life = 20 Year!!!
-Manipulation - hard 
+Manipulation - hard
 Humans - distant
 Benefit - bioenergy/ soil
 History - 1990-2000s genome sequencing
@@ -426,10 +426,10 @@ Photosynthesis
 Intraflagellar transport
 Recent News
 Green alga
-• Habitat: soil & freshwater
-• Size: ~10 µm
-• Generation: 6–8 hrs
-• Lifespan: indefinite 
+* Habitat: soil & freshwater
+* Size: ~10 &#xB5;m
+* Generation: 6-8 hrs
+* Lifespan: indefinite
 1833 - Discovered
 1888 - Named after botanist Johannes Theodor Reinhardt
 Two core proteins of photosystem II
@@ -450,10 +450,10 @@ Present - Bio Fuels
 
 State common name, location, size, generation time, and lifespan
 Green alga (model organism)
-• Habitat: soil & freshwater worldwide
-• Size: ~10 µm
-• Generation time: 6–8 hrs
-• Lifespan: indefinite (in culture)
+* Habitat: soil & freshwater worldwide
+* Size: ~10 &#xB5;m
+* Generation time: 6-8 hrs
+* Lifespan: indefinite (in culture)
 
 How easy is it to manipulate genetically?
 Ease: C. reinhardtii is relatively easy to manipulate. It has a well-developed genetic toolkit: nuclear, chloroplast, and mitochondrial genomes can all be transformed.
@@ -462,7 +462,7 @@ This flexibility makes it a top choice for studying photosynthesis, flagella/cil
 
 How similar is its genome to the human genome?
 Genome size: ~120 Mb, about 15x smaller than the human genome (~3,200 Mb).
-Number of genes: ~15,000, compared to ~20,000–25,000 in humans.
+Number of genes: ~15,000, compared to ~20,000-25,000 in humans.
 Similarities: Although distant, it shares conserved eukaryotic genes (e.g., those for flagellar structure, ciliary proteins, introns, spliceosomes).
 Important overlap: Studies in C. reinhardtii have helped understand ciliopathies, human diseases caused by defective cilia.
 
@@ -470,7 +470,7 @@ What is its potential economic benefit?
 Biofuels: Engineering strains for hydrogen production, biodiesel, and renewable energy.
 Biopharmaceuticals: Used to produce recombinant proteins, vaccines, and therapeutic enzymes.
 Agriculture: Potential for biofertilizers and as a model to engineer photosynthetic efficiency.
-Carbon capture: Research on algae for reducing CO₂ emissions.
+Carbon capture: Research on algae for reducing CO&#x2082; emissions.
 Biotech history: Year first used, what is it used for, its role in diseases, why it is important, etc.
 
 What are some landmark studies using this organism?
@@ -482,14 +482,14 @@ Are there ethical considerations in using this organism for research?
 Generally considered low ethical concern, similar to yeast or bacteria.
 How do researchers typically maintain and culture these organisms in a lab setting?
 Growth medium: TAP
-Light: autotrophically (light + CO₂) or mixotrophically (acetate + light).
-Conditions: 20–25 °C
+Light: autotrophically (light + CO&#x2082;) or mixotrophically (acetate + light).
+Conditions: 20-25 &#xB0;C
 Cryopreservation: Long-term storage is possible using cryoprotectants.
 
 
 #13 Model Organism: Chlamydomonas reinhardtii - Ananya
 
-#14 Model Organism: Drosophila melanogaster 
+#14 Model Organism: Drosophila melanogaster
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -499,16 +499,16 @@ What are some landmark studies using this organism?
 Are there ethical considerations in using this organism for research?
 How do researchers typically maintain and culture these organisms in a lab setting?
 
-#14 Model Organism: Drosophila melanogaster - Tania 
+#14 Model Organism: Drosophila melanogaster - Tania
 (Fruit Fly)
 Common name: Fruit Fly
 Size: ~3 mm
 Generation time: ~10 days
-Genome similarity: ~60% 
+Genome similarity: ~60%
 Research: 1901
 Key uses: Genetics, disease models, developmental biology
 
-#15 Model Organism: Danio rerio 
+#15 Model Organism: Danio rerio
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -521,7 +521,7 @@ How do researchers typically maintain and culture these organisms in a lab setti
 #15 Model Organism: Danio rerio - Daniela N.
 Common name: Zebrafish
 Location: Asia/India
-Size: 1”
+Size: 1"
 GT: 3 months
 Lifespan: 5 yrs
 Genetic Manipulation
@@ -554,15 +554,15 @@ Toxicity Assays
 Ambystoma mexicanum -Debbie
 Common Name: Axolotl
 Location: Lake Xochimilco
-Size: 6-18 inches and weigh about 2-8 ounces  
+Size: 6-18 inches and weigh about 2-8 ounces
 Lifespan: 6 years (wild) and 15 years (captivity)
-Axolotl’s can be genetically manipulated, but it can be very difficult. 
-Axolotl’s and humans genomes are about 86% similar. 
+Axolotl's can be genetically manipulated, but it can be very difficult.
+Axolotl's and humans genomes are about 86% similar.
 
 Economic benefit
 Insight into disease resistance
-regeneration 
-Providing more knowledge in wound healing and organ repair, which will in return help advance technology. 
+regeneration
+Providing more knowledge in wound healing and organ repair, which will in return help advance technology.
 
 
 
@@ -571,26 +571,26 @@ Ambystoma mexicanum
 History 		Used in research since 1930s discovered 1864
 Why Important 	   Regenerates limbs, spinal cord, heart, even brain
 Landmark Studies 	           Show scar-free regeneration insights for wound healing & stem cell research
-https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2022.786533/full 
+https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2022.786533/full
 Diseases/Uses: Models tissue repair, heart and neural development, regenerative medicine
 Ethics: Critically endangered 		    need for conservation in research
 Lab Care: Kept in clean, cool aquarium, fed bloodworms/pellets; bred in captivity
 ?
 These little guys are simply a feat of nature. They can regenerate lost limbs, their spinal cord, and even parts of their brain!!!
- 
-We discovered them in Mexico in 1864 and have been studying their regenerative properties since the 30’s.
- 
+
+We discovered them in Mexico in 1864 and have been studying their regenerative properties since the 30's.
+
 I attached a link to a paper explaining how they can regenerate without scaring and how their cells can transform from mature cells back into a stem cell like state.
- 
+
 In 2018 we sequenced their genome and now have a better understanding about which genes are activated to cause regeneration.
- 
+
 If we are able to better understand which genes or growth factors are activating, we could try to implement them into human studies. We could apply this to any wounds are hopefully have scar free healing in the future, especially in our hearts! Our tissue scars in our hearts when something goes wrong, but if we can figure out a way to cause scar free healing in our hearts the number of heart disease deaths should go down.
- 
-Unfortunately they are critically endangered in Mexico. They are only in fresh water, specifically lakes around Mexico city. Lakes have been drained to prevent flooding and heavily polluted causing them to only be found in one lake’s canal system.
- 
+
+Unfortunately they are critically endangered in Mexico. They are only in fresh water, specifically lakes around Mexico city. Lakes have been drained to prevent flooding and heavily polluted causing them to only be found in one lake's canal system.
+
 But on the bright side, they do very well in captivity, kept in clean cool water, and are able to breed easily. So well in fact you can buy one at Petco for about $70. They may become extinct in the wild eventually but I doubt we will ever stop breeding them for research purposes.
 
-#17 Model Organism: Xenopus laevis 
+#17 Model Organism: Xenopus laevis
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -602,7 +602,7 @@ How do researchers typically maintain and culture these organisms in a lab setti
 
 #17 Model Organism: Xenopus laevis - Jacky
 
-#18 Model Organism: Mus musculus 
+#18 Model Organism: Mus musculus
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -612,20 +612,20 @@ What are some landmark studies using this organism?
 Are there ethical considerations in using this organism for research?
 How do researchers typically maintain and culture these organisms in a lab setting?
 
-Mus musculus - Dhavalsinh 
-Mice: Tiny Scientists’ Best Friends! 
+Mus musculus - Dhavalsinh
+Mice: Tiny Scientists' Best Friends!
 Common Name: House Mouse
 Also called Mus musculus, the most widely used animal model in labs worldwide.
 Location: Found Worldwide
-Originated in Asia but now lives everywhere humans do—homes, cities, and research labs.
-Morphology: Small (7–10 cm & something like 20 gm). Short lifespan of 1-3  years with fast reproduction every 10 weeks. 
+Originated in Asia but now lives everywhere humans do-homes, cities, and research labs.
+Morphology: Small (7-10 cm & something like 20 gm). Short lifespan of 1-3  years with fast reproduction every 10 weeks.
 Genetics : Very easy to breed and modify genetically. About 85% of mouse genes are similar to human genes, making them excellent models for studying human diseases.
 
 
-Mice: Tiny Scientists’ Best Friends! 
-Economic Benefits : Mice are crucial for drug development, vaccine testing, and biotech innovations—saving time, money, and lives in research and medicine as well. 
+Mice: Tiny Scientists' Best Friends!
+Economic Benefits : Mice are crucial for drug development, vaccine testing, and biotech innovations-saving time, money, and lives in research and medicine as well.
 Landmark Studies :  Cancer trials, Diabetes research , Stem cell therapy , CRISPR breakthroughs
-Ethics & Lab Care : Raising concerns about animal welfare—researchers must minimize pain and follow the 3Rs: Replacement, Reduction, Refinement. Kept in pathogen-free cages with controlled light, temperature, and special diets to keep them healthy for experiments. 
+Ethics & Lab Care : Raising concerns about animal welfare-researchers must minimize pain and follow the 3Rs: Replacement, Reduction, Refinement. Kept in pathogen-free cages with controlled light, temperature, and special diets to keep them healthy for experiments.
 
 #19 Model Organism: Rattus norvegicus
 State common name, location, size, generation time, and lifespan
@@ -637,18 +637,18 @@ What are some landmark studies using this organism?
 Are there ethical considerations in using this organism for research?
 How do researchers typically maintain and culture these organisms in a lab setting?
 
-#19 Model Organism: Norway Rat-Rattus norvegicus - Pal 
-Common name: Norway rat 
+#19 Model Organism: Norway Rat-Rattus norvegicus - Pal
+Common name: Norway rat
 Location: native to China and urban area
-Size:  200–500 g, body length 20–25 cm, tail length 18–25 cm
+Size:  200-500 g, body length 20-25 cm, tail length 18-25 cm
 Generation Time: 3 months
-Lifespan: ~2–3 years in laboratory conditions
-Lab maintenance: Housed in temperature-controlled rooms (20–26 °C), with 12:12 light-dark cycles.                                                   Maintained as specific-pathogen-free (SPF) colonies to prevent infections.                              Fed standardized pellet diet and water ad libitum.
-Research Application :                                                        Neuroscience & Behavior – Learning, memory, addiction, and stress studies.Pharmacology & Drug Testing – Preclinical safety and efficacy evaluation.Cardiovascular & Metabolic Research – Models for hypertension, diabetes, and obesity.Cancer & Toxicology – Tumor biology and chemical/drug safety testing.Genetics & Immunology – CRISPR models, vaccine development, and immune studies.
+Lifespan: ~2-3 years in laboratory conditions
+Lab maintenance: Housed in temperature-controlled rooms (20-26 &#xB0;C), with 12:12 light-dark cycles.                                                   Maintained as specific-pathogen-free (SPF) colonies to prevent infections.                              Fed standardized pellet diet and water ad libitum.
+Research Application :                                                        Neuroscience & Behavior - Learning, memory, addiction, and stress studies.Pharmacology & Drug Testing - Preclinical safety and efficacy evaluation.Cardiovascular & Metabolic Research - Models for hypertension, diabetes, and obesity.Cancer & Toxicology - Tumor biology and chemical/drug safety testing.Genetics & Immunology - CRISPR models, vaccine development, and immune studies.
 
 
 
-#20 Model Organism: Oryctolagus cuniculus domesticus 
+#20 Model Organism: Oryctolagus cuniculus domesticus
 State common name, location, size, generation time, and lifespan
 How easy is it to manipulate genetically?
 How similar is its genome to the human genome?
@@ -658,11 +658,11 @@ What are some landmark studies using this organism?
 Are there ethical considerations in using this organism for research?
 How do researchers typically maintain and culture these organisms in a lab setting?
 
-#20 Model Organism: Oryctolagus cuniculus domesticus - Wanqian 
+#20 Model Organism: Oryctolagus cuniculus domesticus - Wanqian
 Rabbit Characteristic
 Common name:Domestic Rabbit
 Location:Widely distributed globally, originally from Europe
-Size:40cm~50cm in length 
+Size:40cm~50cm in length
         2~5 kg in weight
 Generation time: 3-4 mon
 Lifespan: 5~10 year
@@ -678,9 +678,9 @@ Landmark Studies
 Lab maintenance
 Benefits in biotech
 Ethical considerations
-Disease Study:Similar physiology to humans (heart, metabolism) → study cardiovascular, metabolic diseases
-Antibody Production:Produce polyclonal antibodies → commercial/medical use
-Agriculture Value:Meat, fur production → economic benefit
+Disease Study:Similar physiology to humans (heart, metabolism) -> study cardiovascular, metabolic diseases
+Antibody Production:Produce polyclonal antibodies -> commercial/medical use
+Agriculture Value:Meat, fur production -> economic benefit
 Humane treatment: Proper housing, minimize pain/discomfort
 Follow guidelines: Use fewest rabbits needed for experiments
 
@@ -708,7 +708,7 @@ Manipulation:-Costly, Slow and limited but possible for specific studies.
 Genome Similarity:-93% Similar to Human genome.
 Economic Benefit:-Biomedical Research backbone,vaccine development, Genetic Research.
 Biotech History:-
-First use:- Early 20th  Century 
+First use:- Early 20th  Century
 1930s - 40s Polio development
 1980s HIV/AIDS.
 
@@ -736,28 +736,28 @@ More Chapter 1
 
 #22 Heterochromia iridum
 What is heterochromia iridum due to genetic mosaicism?
-What is the underlying genetic mosaicism mechanism that causes heterochromia iridum? 
+What is the underlying genetic mosaicism mechanism that causes heterochromia iridum?
 What are the genetic and environmental factors that can cause heterochromia?
 Is heterochromia iridum observed in species other than humans?
 What are some other genetic mosaicism phenotypes in humans similar to heterochromia iridum?
 
 Heterochromia Iridum - Daniela Taylor
-OCA2 - production of melanin 
+OCA2 - production of melanin
 Mutations in OCA2 gene can affect the amount of distribution of melanin in the iris
 HERC2 - regulates expression of OCA2
 Mutations in regulatory region of HERC2 can affect expression of OCA2
 Eye Color: Polygenic Phenotypic trait
 How does this happen?
-Genetic Mosaicism 
+Genetic Mosaicism
 Biotechnology Applications
-Change eye color (cosmetic) 
-Treatment of conditions where heterochromia is a symptom 
+Change eye color (cosmetic)
+Treatment of conditions where heterochromia is a symptom
 
                    Heterochromia Iridum- Sobia
-                                                                       A condition where irises are different colors. 
+                                                                       A condition where irises are different colors.
 
-                                                                      
-                                                                                                                                   
+
+
 
                  Heterochromia Across Species: Humans vs. Animals
 It is actually more prevalent in certain animal species due to genetic factors
@@ -772,13 +772,13 @@ Human Mosaicism Phenotypes:
 -Congenital Horner's Syndrome
 
 Actors with heterochromia
- –Robert downey jr
+ -Robert downey jr
                -Idina menzel
 
 #23 Bacteriophage
-How are bacteriophages and viruses used in biotechnology? 
+How are bacteriophages and viruses used in biotechnology?
 Are there bacteriophages that can target antibiotic-resistant bacteria?
-How have phage therapies advanced over the years? 
+How have phage therapies advanced over the years?
 What are the limitations of using bacteriophage to treat infections?
 What are some challenges in scaling up phage therapies?
 
@@ -786,7 +786,7 @@ What are some challenges in scaling up phage therapies?
 Bacteriophage - a virus that infects and replicates in bacteria
 Anatomy of a bacteriophage:
 How they infect:
-Inserting/removing genes 
+Inserting/removing genes
 in phage DNA
 CRISPR-Cas antimicrobials
 Target antibiotic resistant genes
@@ -795,15 +795,15 @@ Phage enzymes used for DNA editing
 Engineered phages used to help detect contaminants
 
 #23 Bacteriophage - Diana
-Selectively target and kill bacteria. 
+Selectively target and kill bacteria.
 Used as a tool to fight against AMR
 Improved through synthetic biology.
 Challenges: scalability, regulation, resistance.
 
 #24 Animal Cell Culture
-Discuss animal cell culture. 
-Name some model cell lines from humans, insects, and other animals. What are HeLa cells? 
-How are they used? 
+Discuss animal cell culture.
+Name some model cell lines from humans, insects, and other animals. What are HeLa cells?
+How are they used?
 What are the risks of contamination in animal cell culture?
 What are the pros and cons of using animal cell culture?
 What is the role of stem cells in animal cell culture?
@@ -814,16 +814,16 @@ Uses, benefits, & contamination
 
 #24 Animal Cell Culture - Marylyn
 Kidney epithelial cells from African green monkey  (Vero cells)
-Virology research 
-Vaccine production 
-HELA Cells 
+Virology research
+Vaccine production
+HELA Cells
 Henrietta Lacks
-Immortal cancer cell line 
-Toxican & radiation 
+Immortal cancer cell line
+Toxican & radiation
 Cancer research
 
 Insect cell line derived from the fall armyworm (Sf9)
-Used for protein production 
+Used for protein production
 
 #25 Subviral Infectious Agents
 How do gene creatures impact the evolutionary trajectory of their host organisms?
@@ -841,9 +841,9 @@ What are virophages such as Sputnik and Zamilon, and could they be engineered to
 1
 Genome rearrangement
 Horizontal gene transfer
-New traits 
+New traits
 Increased variability
-Adaptation 
+Adaptation
 Regulatory innovation
 Transposons, Polintons, retrotransposons, virophages, integrons, endogenous viruses
 
@@ -869,7 +869,7 @@ VIROPHAGES
 APPLICATIONS
 DNA segment
 Self replicating/cutting
-“Jumping gene”
+"Jumping gene"
 Jaren Orbeck
 
 Gene creatures are mobile genetic elements, including plasmids, transposons, virophages, and endogenous viruses. They shape evolution by moving genes around, creating new traits, and sometimes causing mutations that can be harmful or, in some cases, surprisingly beneficial.
@@ -896,7 +896,7 @@ What role do bacterial plasmids play in genetic engineering?
 #26 Prokaryotic transcription - Bansari
 
 #28 Protein Translation
-Discuss protein translation, including the steps involved and the roles of various translation factors. 
+Discuss protein translation, including the steps involved and the roles of various translation factors.
 How does protein synthesis in eukaryotes differ from that in prokaryotes, and what are the implications for biotech?
 How does post-translational modification occur?
 What are some methods for studying translation in real-time?
@@ -920,8 +920,8 @@ dCas, HiBiT
 Translational Factors
 
 #29 Symbiotic theory
-Discuss the symbiotic theory for chloroplasts and mitochondria. 
-Explain differences to the central dogma in these symbiotic organelles. 
+Discuss the symbiotic theory for chloroplasts and mitochondria.
+Explain differences to the central dogma in these symbiotic organelles.
 What is the evidence supporting the symbiotic theory? What are some arguments against the symbiotic theory?
 How have mitochondria and chloroplasts been utilized in biotechnological applications?
 
@@ -940,8 +940,8 @@ Strengthened host cell in unique ways
 Mitochondria - aerobic metabolism
 Cyanobacteria - photosynthesis
 Central Dogma: flow of genetic data
-DNA to…
-RNA to…
+DNA to...
+RNA to...
 Proteins!
 
 Mitochondria and Chloroplasts both have their OWN DNA
@@ -957,8 +957,8 @@ Mitochondrial replacement therapy
 mRNA Vaccine in Lettuce Chloroplasts
 Agreement with Theory
 Arguments with Theory
-Own Dna & Cell membrane 
-Cell Division 
+Own Dna & Cell membrane
+Cell Division
 Biotech Advancements
 
 The End

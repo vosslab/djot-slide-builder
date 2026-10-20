@@ -91,11 +91,14 @@ class Link:
 
 @dataclass(frozen=True)
 class StyledSpan:
-	"""Editable inline content with optional semantic color and underline."""
+	"""Editable inline content with color, decoration, and script positioning."""
 
 	children: tuple["Inline", ...]
 	color: TextColor | str | None = None
 	underline: bool = False
+	highlight: bool = False
+	strikethrough: bool = False
+	position: str | None = None
 
 
 @dataclass(frozen=True)

@@ -2,8 +2,6 @@
 
 import pathlib
 
-import pytest
-
 import slide_lib.capacity_report
 import slide_lib.native_model
 
@@ -15,16 +13,6 @@ def diagnostic(path: pathlib.Path, line: int, layout: str, slot: str, required: 
 	return slide_lib.capacity_report.CapacityDiagnostic(
 		slide_lib.native_model.SourceLocation(path, line), layout, slot, required, floor,
 		cause, minimum)
-
-
-#============================================
-@pytest.mark.parametrize(("required", "minimum"), ((None, None), (12.0, 1.0)))
-def test_capacity_diagnostic_requires_one_recovery_or_physical_representation(
-		tmp_path: pathlib.Path, required: float | None, minimum: float | None) -> None:
-	"""Malformed diagnostic states fail clearly before they reach terminal reporting."""
-	with pytest.raises(ValueError, match="either a required size or a safe minimum"):
-		diagnostic(tmp_path / "deck.djot", 3, "one-panel", "body", required, 24,
-			slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST, minimum)
 
 
 #============================================

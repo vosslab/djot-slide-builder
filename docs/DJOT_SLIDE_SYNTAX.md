@@ -59,6 +59,22 @@ and physical line numbers.
 
 The include contract is deliberately small:
 
+Keep introductory and closing slides in the main file by inserting an include block between
+slides. Unlike a bare manifest line, `=== include:` is an explicit slide boundary:
+
+```djot
+=== include: lect07b2-one_great_idea.djot
+hidden: true
+
+=== layout: one-panel
+# Back to the main deck
+```
+
+The optional `hidden: true` hides every slide in that include, including nested chapters.
+Set it to `hidden: false` or remove it to restore the chapter's own slide visibility.
+Individually hidden slides remain hidden. Included slides stay editable in ODP and are omitted
+from PDF when hidden. Include blocks contain only the path and optional visibility metadata.
+
 - A manifest contains optional leading `color-theme` metadata, blank lines, and exact unindented
   `include: <relative.djot>` lines. Put opening and closing slides in their own files; do not mix
   layout directives with include lines in a manifest.
@@ -251,6 +267,8 @@ text lines and places the image on the right side of its framed surface.
 
 Bare `http://` and `https://` URLs become editable native hyperlinks automatically. Use a labeled
 Markdown link only when the displayed text should differ from the destination URL.
+The scheme colon does not need escaping. Imported spellings such as `https\://example.com`
+also become hyperlinks, with the backslash removed from the destination.
 
 Use the dedicated `theend` layout for a final closer:
 
@@ -388,6 +406,25 @@ than arbitrary hexadecimal values. Inline spans additionally accept six-digit RG
 `[source emphasis]{color=#CC00CC}`, to retain imported colors that have no semantic alias. These
 colors still need visual review for contrast and meaning. Duplicate colors, malformed RGB values,
 unknown names, and unsupported attribute scopes are source errors.
+
+The standard inline formatting forms are supported as editable slide text:
+
+| Markup | Appearance |
+| --- | --- |
+| `_italic_` or `{_italic_}` | Italic |
+| `*bold*` or `{*bold*}` | Bold |
+| `` `code` `` | Monospace verbatim text |
+| `H~2~O` | Subscript 2 |
+| `20^th^` | Superscript th |
+| `{=highlighted=}` | Pale yellow highlight |
+| `{+insert+}` | Underline |
+| `{-delete-}` | Strikethrough |
+
+For example, `- Next week: {=Shark Talk presentations=}` highlights only the presentation name.
+Formatting can nest, such as `{=*bold highlight*=}`. Subscript and superscript also accept
+braced delimiters (`{~2~}`, `{^th^}`); they retain ordinary editable characters rather than
+substituting Unicode glyphs. Insert/delete render as visual formatting, not tracked revisions.
+See the [Djot syntax reference](https://github.com/jgm/djot/blob/main/doc/syntax.md).
 
 Preserve emphasis with `*bold*`, `_italic_`, `*_bold italic_*`, and
 `[*underlined bold*]{underline=true}`. Color and underline can coexist on the same span. Literal

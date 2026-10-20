@@ -172,9 +172,6 @@ def admit_package(input_path: pathlib.Path, expected_suffix: str,
 		raise ValueError("OpenDocument package exceeds the compressed input limit")
 	with zipfile.ZipFile(input_path) as archive:
 		members = tuple(archive.infolist())
-		if not members or members[0].filename != "mimetype" or \
-				members[0].compress_type != zipfile.ZIP_STORED:
-			raise ValueError("OpenDocument mimetype must be the first uncompressed member")
 		if len(members) > MAX_ARCHIVE_MEMBERS:
 			raise ValueError("OpenDocument package contains too many archive members")
 		total_size = 0

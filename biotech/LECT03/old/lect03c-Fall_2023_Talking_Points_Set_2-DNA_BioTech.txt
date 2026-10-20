@@ -85,7 +85,7 @@ Keep jargon to a minimum for broader understanding.
 Chapter 3
 Recombinant DNA Technology
 
-#1 DNA Isolation  
+#1 DNA Isolation
 What are the principal methodologies for isolating DNA from cells?
 How do the isolation processes differ between eukaryotic and prokaryotic cells, particularly focusing on cell lysis mechanisms?
 How do mechanical methods of cell lysis differ from chemical methods?
@@ -99,12 +99,12 @@ Difference in Eukaryote and Prokaryote DNA extraction:
 Differences in location of DNA
 Difference in DNA structure (circular vs. linear)
 Prokaryote far easier to get DNA
-#1 DNA Isolation – Erick  
+#1 DNA Isolation - Erick
 Basic steps to DNA isolation:
 1) disruption of the cellular structure to create a lysate
 2) separation of the soluble DNA from cell debris and other insoluble material
 3) binding the DNA of interest to a purification matrix
-4) washing proteins and other contaminants away from the matrix 
+4) washing proteins and other contaminants away from the matrix
 5) elution of the DNA
 
 
@@ -113,18 +113,18 @@ How do the isolation processes differ between eukaryotic and prokaryotic cells, 
 How do mechanical methods of cell lysis differ from chemical methods?
 Explain the enzymatic roles of Lysozyme and Proteinase K in breaking down cellular and protein components during DNA isolation.
 
-DNA Isolation – Rutvi
+DNA Isolation - Rutvi
 Mechanical methods of cell lysis-
-- rely on physical force to break open cell and release DNA 
-- used for wide range of sample including plant and animal tissue ,bacteria , yeast 
-Chemical methods of cell lysis- 
-- use chemical agents such as detergents, proteases, organic solvents to disrupt cell membrane  
-- used for delicate samples such as mammalian cells 
+- rely on physical force to break open cell and release DNA
+- used for wide range of sample including plant and animal tissue ,bacteria , yeast
+Chemical methods of cell lysis-
+- use chemical agents such as detergents, proteases, organic solvents to disrupt cell membrane
+- used for delicate samples such as mammalian cells
 
 
-Lysozyme 
+Lysozyme
 degrades peptidoglycan in Gram-positive bacteria during    DNA isolation.
-Proteinase K 
+Proteinase K
 is used to digest and degrade proteins present in the sample, allowing for the separation of DNA from cellular proteins.
 
 
@@ -154,7 +154,7 @@ Explain the Southern Blotting process, particularly focusing on how DNA is trans
 Types of Gel Electrophoresis
 Agarose Gel (nucleic acids like DNA and RNA)
 Pros/Cons
-Polyacrylamide Gel (PAGE) → separate DNA or protein molecules by size
+Polyacrylamide Gel (PAGE) -> separate DNA or protein molecules by size
 Pros/Cons
 **WILL BE DISCUSSED NEXT WEEK
 Molecular Interactions in Staining Techniques
@@ -166,7 +166,7 @@ SYBR Green
 Minor groove of dsDNA
 Southern Blotting
 **Upward capillary transfer + high-salt buffer
-DNA on agarose gel → nitrocellulose membrane
+DNA on agarose gel -> nitrocellulose membrane
 GREAT
 SLIDE
 What are the various types of gels used in nucleotide electrophoresis, and what are the pros and cons of each?
@@ -174,8 +174,8 @@ Describe the molecular interactions involved in staining techniques such as EtBr
 Explain the Southern Blotting process, particularly focusing on how DNA is transferred from a gel to a membrane?
 (Note: do not talk about protein gels, we will discuss them next week)
 
-#2 Nucleotide Gels – Jackie
-Types of Gel 
+#2 Nucleotide Gels - Jackie
+Types of Gel
 Agarose: Large pore size, good for separating nucleic acids and large protein complexes
 Non-toxic
 Easier prep
@@ -192,11 +192,11 @@ Gel Red Binds by intercalation like EtBr
 Bright orange under UV
 SYBR Green Binds to minor groove in dsDNA
 Intensity of fluorescence increases
-Southern Blotting (E.M. Southern) 
+Southern Blotting (E.M. Southern)
 Uses:  Analysis of specific DNA sequences, diagnosis of HIV-1, infectious diseases, DNA fingerprinting, cancer prognosis, prenatal diagnosis of genetic diseases
 Fragmentation of large DNA molecules by restriction digestion
 Separation using gel electrophoresis
-Denature with alkali to make dsDNA → ssDNA
+Denature with alkali to make dsDNA -> ssDNA
 Transfer of DNA from gel to membrane by upward capillary transfer
 Hybridization with sequence-specific probe and wash buffer
 Detection of labeled DNA bands
@@ -219,24 +219,24 @@ How does the intrinsic nature of DNA make it suitable for UV spectroscopy?
 Describe the quantitative methods in UV spectroscopy for DNA concentration measurement.
 What are three techniques (from the textbook) to detect specific DNA sequences using UV spectroscopy?
 
-#3 Detecting DNA – Mitkumar
+#3 Detecting DNA - Mitkumar
 DNA chain size 2.2 - 2.6 nm
 Standard of human DNA is 2.5 nm
 UV spectroscopy is based on the interaction between light and matter
-DNA consentration absorbance at 260 nm in UV spectroscopy 
+DNA consentration absorbance at 260 nm in UV spectroscopy
 How does the intrinsic nature of DNA make it suitable for UV spectroscopy?
 Describe the quantitative methods in UV spectroscopy for DNA concentration measurement.
 What are three techniques (from the textbook) to detect specific DNA sequences using UV spectroscopy?
 
-#3 Detecting DNA – Misbah
+#3 Detecting DNA - Misbah
 DNA detection has helped revolutionise the investigation of disease pathways, assess an individual's genetic susceptibility to specific diseases, diagnose genetic disorders, and formulate new drugs.
-DNA tests can predict your risk for certain types of diseases, such as diabetes, eye disease, celiac disease, late-onset Alzheimer's disease, or some types of cancer. 
+DNA tests can predict your risk for certain types of diseases, such as diabetes, eye disease, celiac disease, late-onset Alzheimer's disease, or some types of cancer.
 How does the intrinsic nature of DNA make it suitable for UV spectroscopy?
 Describe the quantitative methods in UV spectroscopy for DNA concentration measurement.
 What are three techniques (from the textbook) to detect specific DNA sequences using UV spectroscopy?
 
-#4 FISH – Uzma
-GOAL: to detect abnormalities 
+#4 FISH - Uzma
+GOAL: to detect abnormalities
 Used to detect/locate a specific DNA sequence on a chromosome
 Heat allows for denaturation of DNA
 Probes with fluorescent label will hybridize with complementary sequence
@@ -249,7 +249,7 @@ Explain Fluorescence in situ hybridization (FISH). What does "in situ" mean in g
 Discuss the molecular design strategies for fluorescent probes used in FISH.
 What are some specialized applications of FISH in the field of genetic research and diagnostics?
 
-#4 FISH – Alfredo
+#4 FISH - Alfredo
 Often used for finding specific features in DNA, and to detect and localize specific RNA targets
 Diagnosing developmental diseases
 Evaluate prognosis or remission of cancer
@@ -263,11 +263,11 @@ Sources of Target Cells
 Cultured mammalian/insect cells
 Thin sections of tissue
 Isolation of white blood cells
-APPLICATIONS 
+APPLICATIONS
 Explain Fluorescence in situ hybridization (FISH). What does "in situ" mean in general and in this context?
 Discuss the molecular design strategies for fluorescent probes used in FISH.
-Fluorescence in Situ Hybridization Evaluation of Chromosome Deletion Patterns in Prostate Cancer- this was a recent study done using FISH if you would like to mention it 
-also to note that  FISH is a cheap and easy technique for preliminary rapid diagnosis 
+Fluorescence in Situ Hybridization Evaluation of Chromosome Deletion Patterns in Prostate Cancer- this was a recent study done using FISH if you would like to mention it
+also to note that  FISH is a cheap and easy technique for preliminary rapid diagnosis
 
 
 
@@ -286,9 +286,9 @@ Discuss the regulatory landscape that governs direct-to-consumer genetic tests.
 What are some of the ethical dilemmas concerning data privacy and potential misuse of genetic information?
 Can these tests produce clinically actionable results? What are the limitations?
 
-#5 Genetic Testing – Bharat
+#5 Genetic Testing - Bharat
 
- Number of consumer oriented tests increased over the year              SNP geno typing  
+ Number of consumer oriented tests increased over the year              SNP geno typing
 GREAT
 SLIDE
 What types of DNA analyses, like SNP genotyping or whole-exome sequencing, are commonly offered in direct-to-consumer genetic tests?
@@ -297,9 +297,9 @@ Discuss the regulatory landscape that governs direct-to-consumer genetic tests.
 What are some of the ethical dilemmas concerning data privacy and potential misuse of genetic information?
 Can these tests produce clinically actionable results? What are the limitations?
 
-#5 Genetic Testing – Lakshmidhar
+#5 Genetic Testing - Lakshmidhar
 
-*DTC tests may produce false positive or negative 
+*DTC tests may produce false positive or negative
 Result
 *Often do not test for all pathogenic or disease
 Causing variants for particular condition
@@ -307,9 +307,9 @@ Causing variants for particular condition
 There some laboratory errors can happen
 *Taking insufficient sample
 *Mislabeling or mishandling the sample
-Due to this the result may not be correct 
-These samples can also be misused because 
-    
+Due to this the result may not be correct
+These samples can also be misused because
+
 
 
 What types of DNA analyses, like SNP genotyping or whole-exome sequencing, are commonly offered in direct-to-consumer genetic tests?
@@ -328,7 +328,7 @@ How do plasmid vectors ensure that the DNA fragment has been inserted, e.g., the
 Compare and contrast low-copy-number plasmids and high-copy-number plasmids in terms of their applications and challenges.
 Take an example of a commercial plasmid other than pJet 1.2 and discuss its specific utilities and advantages in a laboratory setting.
 
-#6 Plasmid Vectors – Het
+#6 Plasmid Vectors - Het
 Key Factors of Plasmid Vector  for cloning:
 Plasmid Size and Copy Number
 Selectable Marker
@@ -356,7 +356,7 @@ High Copy Number Plasmids:                                                      
 
 
 
-                                                                                                 
+
 
 GREAT
 SLIDE
@@ -365,10 +365,10 @@ How do plasmid vectors ensure that the DNA fragment has been inserted, e.g., the
 Compare and contrast low-copy-number plasmids and high-copy-number plasmids in terms of their applications and challenges.
 Take an example of a commercial plasmid other than pJet 1.2 and discuss its specific utilities and advantages in a laboratory setting.
 
-#6 Plasmid Vectors – Sowmya Reddy
+#6 Plasmid Vectors - Sowmya Reddy
 1.Plasmid vectors ensure that a DNA fragment has been successfully inserted through the use of selectable markers, such as antibiotic resistance genes. Here's how this works:
 Selectable Markers: Plasmid vectors often contain genes that provide resistance to antibiotics
-Insertion of DNA Fragment: When a researcher inserts a DNA fragment into the plasmid vector, it disrupts or replaces a part of the plasmid DNA sequence. 
+Insertion of DNA Fragment: When a researcher inserts a DNA fragment into the plasmid vector, it disrupts or replaces a part of the plasmid DNA sequence.
 Transforming Host Cells: The plasmid vector, with the inserted DNA fragment, is then introduced into host cells.
 Selection: After transformation, the host cells are grown on a medium containing the antibiotic corresponding to the resistance gene present in the plasmid
 Identification: Colonies of antibiotic-resistant cells will grow on the selection medium. Each of these colonies is expected to contain cells with the plasmid vector carrying the DNA fragment of interest.
@@ -380,60 +380,60 @@ How do plasmid vectors ensure that the DNA fragment has been inserted, e.g., the
 Compare and contrast low-copy-number plasmids and high-copy-number plasmids in terms of their applications and challenges.
 Take an example of a commercial plasmid other than pJet 1.2 and discuss its specific utilities and advantages in a laboratory setting.
 
-#7 Gene Libraries 
+#7 Gene Libraries
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
-#7 Gene Libraries – Pegah 
-Use Gene Libraries to: 
+#7 Gene Libraries - Pegah
+Use Gene Libraries to:
 
 Find new genes (gene discovery)
 Sequencing and mapping the  entire genomes
-Compare genes from different organisms 
-Gene expression analysis and and the production of recombinant proteins  
+Compare genes from different organisms
+Gene expression analysis and and the production of recombinant proteins
 What is Gene Library:
-A large collection of DNA fragments that are cloned. 
-It lets scientists Identify and isolate the DNA fragment that they are interested in.  
+A large collection of DNA fragments that are cloned.
+It lets scientists Identify and isolate the DNA fragment that they are interested in.
 
 Constructing a gene library:
 GREAT
 SLIDE
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
-#7 Gene Libraries – Hiba
+#7 Gene Libraries - Hiba
 cDNA:
 
 mRNA
 Exon
 Genes expressed @ a given point in time
 Size= small
-Reverse transcriptase 
+Reverse transcriptase
 Recombinant screening= less
 Vectors:
-Plasmid, Phagemids, lambda phage 
-*Essential for…:
+Plasmid, Phagemids, lambda phage
+*Essential for...:
 
 Sequencing
 Gene function and detection
 Antimicrobials
 Biochemical pathways
-Mutant proteins 
+Mutant proteins
 Genomic:
 
-DNA 
+DNA
 Intron and Exon
-Represents all genes! 
+Represents all genes!
 Size= large
-Ligases and endonucleases 
+Ligases and endonucleases
 Vectors:
 Bacteriophage, Plasmid, cosmid, lambda phage, BAC & YAC
 
@@ -441,7 +441,7 @@ Types of Gene Libraries:
 
 Vs.
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene 
+List and describe the key steps (from the textbook) involved in constructing a gene
 
 library. GREAT progress
 
@@ -465,7 +465,7 @@ Discuss the benefits and limitations of in vitro DNA synthesis techniques compar
 How do DNA polymerases function differently under in vitro and in vivo conditions?
 List commercially available enzymes used for in vitro DNA synthesis and describe their specific roles.
 
-#8 in vitro DNA synthesis – Jinal
+#8 in vitro DNA synthesis - Jinal
 In Vitro:
 Parts of living organisms combined together in test tubes (In laboratory environment).
 In this DNA polymerase helps in the replication of double-stranded DNA into two identical DNA molecules.
@@ -480,13 +480,13 @@ Discuss the benefits and limitations of in vitro DNA synthesis techniques compar
 How do DNA polymerases function differently under in vitro and in vivo conditions?
 List commercially available enzymes used for in vitro DNA synthesis and describe their specific roles.
 
-#8 in vitro DNA synthesis – Freny
-In vitro: 
+#8 in vitro DNA synthesis - Freny
+In vitro:
 conducted outside of a living organism, typically in a controlled laboratory environment.
 In in vitro DNA synthesis, enzymes like DNA polymerase are used to replicate DNA outside of a living cell.
 
-In vivo: 
-conducted within a living organism, whether it's a whole organism (e.g., a mouse or a human) or within specific tissues or organs of the organism. 
+In vivo:
+conducted within a living organism, whether it's a whole organism (e.g., a mouse or a human) or within specific tissues or organs of the organism.
 In in vivo DNA replication occurs within living cells, where a complex set of enzymes, including DNA helicase, primase, and DNA polymerase.
 
 Benefits of in vitro DNA synthesis:
@@ -519,8 +519,8 @@ Describe the types of research where chemical DNA synthesis is particularly adva
 Are there any scalability issues associated with chemical DNA synthesis?
 How has chemical DNA synthesis evolved over time?
 
-#9 chemical DNA synthesis – Rudra
-ADVANTAGES: 
+#9 chemical DNA synthesis - Rudra
+ADVANTAGES:
 Design flexibility
 No need for a physical template
 Ability to enhance protein expression by optimizing your sequence
@@ -528,7 +528,7 @@ Quick access to your genetic information
 Cost-effective
  Vaccine development Gene therapy
 Scalability Challenges:
-Cost: 
+Cost:
 Error Rates
 Purification
 Reproducibility
@@ -555,15 +555,15 @@ Explain the concept of degenerate primers and their application in PCR.
 Discuss the temperature cycles in PCR and their impact on DNA replication.
 How has the development of thermally stable polymerases revolutionized PCR?
 
-#10 PCR – Kamalpreet
+#10 PCR - Kamalpreet
 Hot-Start PCR
 -          Developed by KARY MULLIS in 1983
 
 
 APPLICATIONS:
-Forensic analysis of samples 
+Forensic analysis of samples
  Detection of pathogens
-Diagnosis of genetic diseases 
+Diagnosis of genetic diseases
 
 GREAT
 SLIDE
@@ -573,10 +573,10 @@ Explain the concept of degenerate primers and their application in PCR.
 Discuss the temperature cycles in PCR and their impact on DNA replication.
 How has the development of thermally stable polymerases revolutionized PCR?
 
-#10 PCR – Anjali 
-Polymerase chain reaction-PCR 
+#10 PCR - Anjali
+Polymerase chain reaction-PCR
 Pcr was developed by kary mullis in the year 1983.
-DNA polymerase is used in pcr called as “taq polymerase”,after heat tolerant bacterium from which it was isolated [thermus aquaticus] 
+DNA polymerase is used in pcr called as "taq polymerase",after heat tolerant bacterium from which it was isolated [thermus aquaticus]
 PCR is carried out in vitro.
 In PCR,deoxyribonucleotide triphosphates serve as building blocks of new DNA strands.
 Procedure of PCR:
@@ -590,7 +590,7 @@ Applications of  PCR:1.PCR is used to amplify a specific gene present in differe
 
 
 
- 
+
 
 
 
@@ -614,9 +614,9 @@ What is the chemical basis for chain termination in Sanger sequencing?
 Discuss how the shift from gel electrophoresis to fluorescence-based methods improved the efficiency and output of sequencing.
 Elaborate on shotgun sequencing and how it fits into DNA sequencing.
 
-#11 Sanger Sequencing – Justin
-Shotgun sequencing randomly break DNA strand into small pieces 
-Then sequenced to determine the order of the DNA bases 
+#11 Sanger Sequencing - Justin
+Shotgun sequencing randomly break DNA strand into small pieces
+Then sequenced to determine the order of the DNA bases
 Also known as Chain Termination Method. Developed in 1977 by the two-time Chemistry Nobel Prize winner Frederick Sanger
 Use of fluorophore-labeled dideoxynucleotides (ddNTPs) with regular deoxynucleotides (dNTPs)
 Before product were separate in four separate lines and scored according to their molecular masses and the radiolabeled  ddNTPs, the bases are identified.
@@ -633,11 +633,11 @@ Sanger sequencing, also known as dideoxy sequencing significant
  advancements over the years, transitioning from gel electrophoresis
 based methods.
 
-Sanger sequencing, also known as dideoxy sequencing, has undergone 
-significant advancements over the years, transitioning from gel 
-electrophoresis-based methods to fluorescence-based techniques. 
-In summary, Sanger sequencing evolved from gel electrophoresis-based 
-techniques to fluorescence-based methods, with the introduction of 
+Sanger sequencing, also known as dideoxy sequencing, has undergone
+significant advancements over the years, transitioning from gel
+electrophoresis-based methods to fluorescence-based techniques.
+In summary, Sanger sequencing evolved from gel electrophoresis-based
+techniques to fluorescence-based methods, with the introduction of
 automation and capillary electrophoresis enhancing speed and accuracy.
  However, NGS technologies have since surpassed Sanger sequencing for
  many applications, enabling large-scale genomic studies.
@@ -646,7 +646,7 @@ The shift from gel electrophoresis to fluorescence-based methods                
 1-Speed and Throughput:
 2-Accuracy and Resolution:
 3-Sensitivity and Detection:
-4-Automation and Reduced 
+4-Automation and Reduced
 Human Intervention:
 5-Elimination of Radioactive Materials:
 6-Cost Efficiency:
@@ -675,11 +675,11 @@ How do these techniques differ in read length and accuracy?
 Discuss whether specific applications favor one Next Gen technique over others.
 Is one technique more suitable for specific applications over the others?
 
-#12 Next Gen Sequencing – Shubham
+#12 Next Gen Sequencing - Shubham
 Pyrosequencing technique : Its method is called pyrosequencing or sequencing by synthesis. It works like this.
-·        The DNA to be sequenced is broken up into fragments of ~100 base pairs and denatured to form single-stranded DNA (ssDNA).
-·        Single ssDNA fragments are attached to microscopic beads, which are separated from each other.
-·        Pyrosequencing has  heretofore been used for generating short sequence reads (1-100 nucleotides).
+*        The DNA to be sequenced is broken up into fragments of ~100 base pairs and denatured to form single-stranded DNA (ssDNA).
+*        Single ssDNA fragments are attached to microscopic beads, which are separated from each other.
+*        Pyrosequencing has  heretofore been used for generating short sequence reads (1-100 nucleotides).
 Application : Pyrosequencing can be used to detect DNA and RNA from almost any source, and has applications in bacteria resistance screening, drug development, epigenetics, and many other fields.
 Sequencing by synthesis :Sequencing by synthesis is a DNA sequencing method in which DNA polymerases and dNTPs are used to replicate (synthesize) the strand to be sequenced
 Ion Semiconductor Sequencing :Ion semiconductor sequencing is a method of DNA sequencing based on the detection of hydrogen ions that are released during the polymerization of DNA.
@@ -705,22 +705,22 @@ Describe MinION's nanopore technology in layman's terms.
 What are the challenges associated with long read lengths, particularly concerning error rates?
 Discuss the implications of portability in third-gen sequencing technologies for field research and diagnostics.
 
-#13 Third Generation Sequencing – Sonia
+#13 Third Generation Sequencing - Sonia
 https://www.genengnews.com/insights/first-nanopore-sequencing-of-human-genome/
 https://www.yourgenome.org/facts/what-is-oxford-nanopore-technology-ont-sequencing/
 https://kids.frontiersin.org/articles/10.3389/frym.2022.746502
 Biotech Companies
-PacBio = Single-Molecule Real-Time (SMRT) Sequencing 
-Oxford Nanopore = Nanopore Technology and MiniION 
+PacBio = Single-Molecule Real-Time (SMRT) Sequencing
+Oxford Nanopore = Nanopore Technology and MiniION
 Quantapore = True Single-Molecule Sequencing (tSMS)
 Stratos = Sequencing by Expansion (SBX)
 Terminology
-Sequencing = order of base pairs (ATGC) 
-Read Length = avg # bp from one DNA fragment 
-Short reads → Next Gen Sequencing
-Long reads → 3rd Gen Sequencing
+Sequencing = order of base pairs (ATGC)
+Read Length = avg # bp from one DNA fragment
+Short reads -> Next Gen Sequencing
+Long reads -> 3rd Gen Sequencing
 
-Epidemiology & Medicine 
+Epidemiology & Medicine
 Map out genetic variations
 Detect viruses
 Rare genetic diseases
@@ -743,7 +743,7 @@ Describe MinION's nanopore technology in layman's terms.
 What are the challenges associated with long read lengths, particularly concerning error rates?
 Discuss the implications of portability in third-gen sequencing technologies for field research and diagnostics.
 
-#13 Third Gen Sequencing – Steve
+#13 Third Gen Sequencing - Steve
 Third-generation tech sequences single molecules,
  bypassing amplification for longer reads than second-gen.
 Key Players:
@@ -758,11 +758,11 @@ MinION:
 Like reading a bead necklace's (DNA) sequence by pulling it through a small hole.
 
 Challenges:
-• Benefits: Spans complex regions and gives a complete genomic picture.
-• Downside: High error rates (10-15% for PacBio, 5-15% for Oxford).
+* Benefits: Spans complex regions and gives a complete genomic picture.
+* Downside: High error rates (10-15% for PacBio, 5-15% for Oxford).
 Portability & Implications:
-• Enables real-time sequencing for field research & diagnostics.
-• Devices like MinION make sequencing more mobile and versatile.
+* Enables real-time sequencing for field research & diagnostics.
+* Devices like MinION make sequencing more mobile and versatile.
 
 (Not in book/use internet)
 Explain the approaches used by PacBio, Oxford Nanopore, Quantapore, and Stratos for sequencing.
@@ -774,27 +774,27 @@ Discuss the implications of portability in third-gen sequencing technologies for
 #14 RT-qPCR
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
-#14 RT-qPCR – Miraj
-Reverse transcriptase 
+#14 RT-qPCR - Miraj
+Reverse transcriptase
 Reverse transcriptase, also known as RNA-directed DNA polymerase
 Reverse Transcription:
-Integration into the Host Genome: 
+Integration into the Host Genome:
 Replication and Transcription
 Production of New Virus Particles
 Also, reverse transcriptase is crucial for developing antiretroviral drugs, like NRTIs and NNRTIs, used in combination therapy to treat HIV and other retroviral infections.
 
 Real-time Quantitative PCR (qPCR)
 Real-time Quantitative Polymerase Chain Reaction (qPCR) is a molecular biology technique used to measure and analyze the amount of a specific DNA or RNA molecule in a biological sample.
-Denaturation             Annealing 
+Denaturation             Annealing
 Extension                   Fluorescence Detection
 Utility in biological research
 Gene Expression Analysis      Disease Diagnosis
@@ -806,33 +806,33 @@ Food Safety
 
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
-#14 RT-qPCR – Bhargavi
+#14 RT-qPCR - Bhargavi
 Gene need to transcribed at high level
 Small cell - Loss of RNA
   Methods Use are -
 Nucleic acid precipitation
 Column purification
-Addition of Carrier molecule of tRNA 
- 
+Addition of Carrier molecule of tRNA
+
 Recovery
       Alternative method - Direct Lysis
 Lyse cell for 5 min to release RNA into solution
 Add Lysate to Reverse transcription reaction
-cDNA results (No RNA Loss)  —> Goes into real-time PCR
+cDNA results (No RNA Loss)  -> Goes into real-time PCR
 May not result in good signal
-   Pre-Amplification 
+   Pre-Amplification
     Sensitivity
     Difference of RT-PCR/qPCR/RT-qPCR
-RT-PCR – Endpoint Reaction which is used to amplify DNA from small DNA templates.
-qPCR / RT-qPCR – Rate of Product and used to quantify the sample.
+RT-PCR - Endpoint Reaction which is used to amplify DNA from small DNA templates.
+qPCR / RT-qPCR - Rate of Product and used to quantify the sample.
 
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
@@ -849,28 +849,28 @@ What other specialized types of RNA classes exist, such as snoRNA?
 Pick two lesser-known RNA types and elaborate on their functions and significance.
 What are some emerging research areas focusing on specialized RNA types?
 
-#15 Cellular RNA – Dhruvi
+#15 Cellular RNA - Dhruvi
 
 
 
 
 
 
-Three Major classes of RNA                                                                    
-1.Messenger RNA, or mRNA 
+Three Major classes of RNA
+1.Messenger RNA, or mRNA
 mRNA transports genetic data from a cell's nucleus to its cytoplasm.
 2.Ribosomal RNA, or rRNA
 The translation of mRNA into proteins is controlled by rRNA.
 3.Transfer RNA, or tRNA
 TRNA participates in the synthesis of proteins and, like rRNA, is found in the cytoplasm of cells.
 
-Two lesser known RNA 
+Two lesser known RNA
 1.Long Non-coding RNA (lncRNA)
 Some of its known functions in gene regulation mechanisms include:splicing,translation,imprinting,transcription
 They are the largest mammalian non-coding transcriptome.
 2.MicroRNAs (miRNAs)
 It is present in all animals, including humans, and some viruses. Its main functions include post-transcriptional gene expression regulation and RNA silencing.
-Research area of specialized RNA 
+Research area of specialized RNA
  lncRNA Research is ongoing to uncover their functions in development, disease, and epigenetic regulation.
  circRNAs are including Researchers are investigating their roles in cancer, neurodegenerative diseases, and more.
 Identify and briefly describe the three major classes of RNA in cells.
@@ -878,7 +878,7 @@ What other specialized types of RNA classes exist, such as snoRNA?
 Pick two lesser-known RNA types and elaborate on their functions and significance.
 What are some emerging research areas focusing on specialized RNA types?
 
-#15 Cellular RNA – Kushil
+#15 Cellular RNA - Kushil
 Small nuclear RNAs
 Small nucleolar RNAs
 Piwi-interacting RNAs
@@ -895,7 +895,7 @@ What are some emerging research areas focusing on specialized RNA types?
 
  #16 RNA Interference - Sienna
 What does antisense RNA do?
-TLDR, it inhibits protein synthesis 
+TLDR, it inhibits protein synthesis
 Therapeutic Applications
 fomivirsen - Cytomegalovirus (CMV) retinitis
 mipomersen - Homozygous familial hypercholesterolemia
@@ -907,7 +907,7 @@ milasen - spinal muscular dystrophy
 Common Side Effects
 Malaise
 Injection site reactions
-Abdominal pain 
+Abdominal pain
 
 RNA Interference Pathway
 Initiation Phase dsRNA > Dicer > siRNAs
@@ -936,18 +936,18 @@ What are the potential applications of riboswitches in medical therapeutics?
 Explain the engineering of synthetic ribozymes for specialized functions.
 How does in vitro selection work to isolate ribozymes with desired characteristics?
 
-#17 Ribozymes – Serene
+#17 Ribozymes - Serene
 A ribozyme is an RNA enzyme that catalyzes a chemical reaction
 2.) Riboswitches are regulatory segments of mRNA molecules that bind a small molecule
-4.) Ribozymes can be designed to inhibit the expression of specific genes, including those associated with the development of cancer 
+4.) Ribozymes can be designed to inhibit the expression of specific genes, including those associated with the development of cancer
 One of the ways in vitro selections are used as a method to generate ribozymes not found in nature and isolate specific ones by identifying RNAs that bind to a specific target molecule
 3. Riboswitches in medical therapeutics
 
 How does in vitro selection work to isolate ribozymes with desired characteristics?
 
-#17 Ribozymes – Qazi
-Ribozymes: Ribozymes are RNA molecules with enzymatic activity. 
-Function: Ribozymes catalyze enzymatic reactions, and some ribozymes work like allosteric enzymes. 
+#17 Ribozymes - Qazi
+Ribozymes: Ribozymes are RNA molecules with enzymatic activity.
+Function: Ribozymes catalyze enzymatic reactions, and some ribozymes work like allosteric enzymes.
 
 
 
@@ -971,7 +971,7 @@ Engineering of Synthetic Ribozymes: Ribozymes can be engineered to suppress the 
 
 
 
-Invitro Selection To Isolate Ribozymes with Desired Characteristics: By adding a mutagenesis step to the in vitro selection procedure.. 
+Invitro Selection To Isolate Ribozymes with Desired Characteristics: By adding a mutagenesis step to the in vitro selection procedure..
 
 
 
@@ -991,9 +991,9 @@ When looking at thousands of genes, how do scientists control for false positive
 How can machine learning aid in sorting out the roles of numerous genes in complex traits? Think of machine learning as an 'automated sorting hat'.
 Once GWAS identifies genes associated with a trait or disease, what are the next steps in functional genomics or drug discovery?
 
-#18 Genome-wide Association Studies (GWAS) – Srilatha
-GWA’S statistical models help to identify the genetic variations specifically SNP’s that are associated with particular traits or diseases.
-When scientists are examining thousands of genes in GWAs they need to control the false positives.the challenge of managing these issues is “multiple testing problem “.
+#18 Genome-wide Association Studies (GWAS) - Srilatha
+GWA'S statistical models help to identify the genetic variations specifically SNP's that are associated with particular traits or diseases.
+When scientists are examining thousands of genes in GWAs they need to control the false positives.the challenge of managing these issues is "multiple testing problem ".
 Machine learning helps in sorting out the roles of numerous genes in complex traits,much like automated sorting hat in the world of genetics.
 Once a GWAs has identified the genes associated with a trait or disease,the next steps in functional genomics and drug discovery typically involves a series of investigations and experiments to understand the biological mechanisms and potentially develop targeted therapies.
 Can you explain in simple terms what statistical models help to achieve in Genome-wide Association Studies?
@@ -1011,7 +1011,7 @@ Transcriptomic data can be overwhelming due to the sheer number of variables (ge
 If decision trees sort genes like a flow chart and neural networks work like interconnected nodes, which model do you think would be more useful for analyzing transcriptomic data?
 Can machine learning give us an educated guess about a cell's behavior or a patient's disease risk based on their gene expression profiles?
 
-#19 ML Transcriptomics – Nirali
+#19 ML Transcriptomics - Nirali
 1. There are many ways that can help it to be accurate such as supervised machine learning  models.ex:an algorithm would be trained with pictures of dog and other things ,all labeled by humans and the machine would learn ways to identify pictures of dogs on its own.
 
 2.( A)supervised algorithms : Random Forests (RF):,Support vector machine(SVM), k-nearest neighbors(KNN).
@@ -1036,32 +1036,32 @@ Discuss the challenges in scaling up DNA circuits for broader applications.
 What are some potential real-world applications for DNA circuits, like biosensing or therapeutics?
 In what ways are DNA circuits limited by current technology and what are the prospects for overcoming these limitations?
 
-#20 Synthetic Biology – Jannela
+#20 Synthetic Biology - Jannela
 Redesigning organisms by engineering them to have new abilities.
 
 
 Core Principle Attributes
-DNA Base Pairing 
-Strand Hybridization 
-Encoding + Logic gating implementation 
-Biocompatibility 
+DNA Base Pairing
+Strand Hybridization
+Encoding + Logic gating implementation
+Biocompatibility
 
 Feedback Control
-Regulatory mechanism 
-Responds to changes 
+Regulatory mechanism
+Responds to changes
 Monitors physiological variables
 Maintain order and adapt
 
-Explain the core design principles of DNA-based logic gates. 
-DNA-based logic gates leverage the unique properties of DNA to perform logical operations in a biological context. 
+Explain the core design principles of DNA-based logic gates.
+DNA-based logic gates leverage the unique properties of DNA to perform logical operations in a biological context.
 Core Principles: Using DNA properties as inputs to encode information.Thus giving us the opportunity to use in biotech to amplify signals, methods of detection and more.
- 
+
 How do DNA circuits interact with existing cellular machinery?
-DNA Circuits can interact with existing cellular machinery depending on the intent of function. Circuits are often use to control cellular processes. 
-An example of this is using DNA circuits for Feedback control like controlling the body temperature or pH of your stomach acid. 
+DNA Circuits can interact with existing cellular machinery depending on the intent of function. Circuits are often use to control cellular processes.
+An example of this is using DNA circuits for Feedback control like controlling the body temperature or pH of your stomach acid.
 
 Discuss the challenges in scaling up DNA circuits for broader applications.
-Integrating DNA circuits with biological systems can be a tortuous because we would not want to disrupt any essential cellular functions. 
+Integrating DNA circuits with biological systems can be a tortuous because we would not want to disrupt any essential cellular functions.
 
 What are some potential real-world applications for DNA circuits, like biosensing or therapeutics? Joce
 In what ways are DNA circuits limited by current technology and what are the prospects for overcoming these limitations? Joce
@@ -1070,17 +1070,17 @@ In what ways are DNA circuits limited by current technology and what are the pro
 
 GREAT
 SLIDE
-Explain the core design principles of DNA-based logic gates. - what are DNA-based logic gates and how do they work? 
+Explain the core design principles of DNA-based logic gates. - what are DNA-based logic gates and how do they work?
 How do DNA circuits interact with existing cellular machinery?
 Discuss the challenges in scaling up DNA circuits for broader applications. (talk about 1 challenge) - covered below
 What are some potential real-world applications for DNA circuits, like biosensing or therapeutics?
-First and foremost as a reminder - DNA signaling circuits - DNA signaling circuits control the transcription activities of specific genes (https://pubmed.ncbi.nlm.nih.gov/34835719/#:~:text=Deoxyribonucleic%20acid%20(DNA)%2C%20a,transcription%20activities%20of%20specific%20genes.) 
-Real World Applications of DNA circuits include: 
+First and foremost as a reminder - DNA signaling circuits - DNA signaling circuits control the transcription activities of specific genes (https://pubmed.ncbi.nlm.nih.gov/34835719/#:~:text=Deoxyribonucleic%20acid%20(DNA)%2C%20a,transcription%20activities%20of%20specific%20genes.)
+Real World Applications of DNA circuits include:
 Drug Delivery - control release of drugs in the presence of specific molecular signals, precisely target site of infection/disease which can decrease side effects while increasing treatment efficacy
-Biotechnology - it wouldn’t be a biotechnology class if we didn’t talk about biotechnology. DNA circuits can be used in biotechnology to control genes and to program cells to perform specific functions such as specific protein production or responding to signals in the environment
+Biotechnology - it wouldn't be a biotechnology class if we didn't talk about biotechnology. DNA circuits can be used in biotechnology to control genes and to program cells to perform specific functions such as specific protein production or responding to signals in the environment
 Other interesting applications include: environmental monitoring, nanotechnology, DNA Data Storage, Diagnostics and Biosecurity
 In what ways are DNA circuits limited by current technology and what are the prospects for overcoming these limitations?
-Cost - The one thing I’m sure we’re all struggling with as graduate students - money or in this case costs. Cost is both a limiting factor and challenge when we’re talking about large-scale applications. Currently there are lower-cost synthesis methods available in addition to increased competition in the healthcare field within the providers that aid to decrease costs.
+Cost - The one thing I'm sure we're all struggling with as graduate students - money or in this case costs. Cost is both a limiting factor and challenge when we're talking about large-scale applications. Currently there are lower-cost synthesis methods available in addition to increased competition in the healthcare field within the providers that aid to decrease costs.
 Stability - DNA is unfortunately not indestructible and can be affected by factors such as temperature, pH and molecules like nucleases. There are ongoing research projects that focus on adding a protective layer to DNA circuits to prevent them from breaking down
 Speed -  Good things take time as do DNA reactions and strand displacement processes. For this we have our fallen soldiers in the the physics and engineering field looking for ways to defy or enhance reaction kinetics with the help of special enzymes, temperature control and optimized DNA sequences
 

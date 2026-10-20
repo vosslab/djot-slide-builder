@@ -1,3 +1,64 @@
+## 2026-10-15
+
+### Additions and New Features
+
+- Split Lecture 07B's four major project sections into included chapter files, retaining intro,
+  AI policy, milestones, and peer evaluation in the main source. Add between-slide include blocks
+  with a single section-wide hidden flag; preserve existing visibility and physical diagnostics.
+  Name chapters `lect07b1-three_ideas.djot` through `lect07b4-executive_summary.djot` in order.
+
+- Support standard Djot highlighting, insert/delete, subscript, superscript, and braced bold/italic
+  as editable ODP text styles retained in PDF. Keep standalone highlighted paragraphs as content.
+- Rebuild Lecture 07A with the agenda's Shark Talk presentation highlight.
+
+### Fixes and Maintenance
+
+- Audit runtime, pytest, E2E, and release gates against robustness/KISS guidance. Remove font
+  hash/provenance build requirements, fixed template typography/overflow checks, quarter-point
+  cache restrictions, and input ZIP ordering restrictions. Measure actual usable fonts and read
+  template sizes/spacing. Keep structural/content safety and atomic output publication checks.
+- Remove 20 policy/redundant pytest modules plus the historical E2E page-count gate and obsolete
+  helper/snapshot tests. Document retained gates and actionable failure responses in
+  [GATE_AUDIT.md](GATE_AUDIT.md); use temporary checks for the audit's compatibility evidence.
+- Record human guidance on graceful recovery, aggressive KISS, demonstrated compatibility needs,
+  actionable gate failures, and the permanent-test checklist in the repository guidance.
+- Resolve the 19 reported hygiene failures: normalize remaining symbols in nine archived lecture
+  text files; use the bounded XML reader in tests; correct test annotations, a path literal, and
+  the genetics rendering helper's indentation, executable mode, and development dependency.
+- Split oversized design decisions into native-presentation and source-pipeline references, and
+  move quantitative teaching and delivery guidance into a linked companion. Preserve all sections.
+- Remove license-text validation from slide-build gates. Copy available notices into output;
+  preserve upstream license bytes by excluding them from automatic text cleanup.
+- Repair five corrupted punctuation sequences in Lecture 07B using ASCII hyphens, straight
+  quotes around "pretend", and the apostrophe in "don't". Verify the entire source is ASCII.
+- Report invalid UTF-8 at its actual source line and character column, with a marked excerpt
+  and save-as-UTF-8 guidance, instead of a misleading line 1 and raw byte offset.
+- Detect bare HTTP(S) URLs with Djot-escaped scheme colons as editable hyperlinks, matching
+  plain URL behavior. Preserve trailing punctuation and document that escaping is optional.
+- Rebuild Lecture 07A announcements with the anonymous-message URL linked and styled.
+
+### Developer Tests and Notes
+
+- Gate audit validation: 1,078 remaining checks pass with no warnings (previously 2,622).
+  Lecture 07A builds to ODP/PDF using external LibreOffice; rendered agenda retains its layout,
+  italics, and highlight. Temporary compatibility checks pass for changed font metadata, template
+  spacing/overflow metadata, non-quarter sizes, and repacked ZIP ordering/compression.
+- Full test suite after hygiene and license-gate repairs: 2,622 passed, with three existing
+  source-size advisories. Lecture 07A editable ODP builds successfully. Regression coverage verifies
+  that absent and changed license notices do not block font metadata or license packaging.
+- Encoding diagnostics: 75 parser/lint checks pass, including multibyte text, long input, and
+  LF/CRLF/CR line endings. The actual Lecture 07B file now reports line 122, column 19.
+- Formatting validation: 119 parser/layout/ODP tests pass; strict native lint and external
+  LibreOffice exports pass for Lecture 07A and a one-slide formatting review. Visually checked
+  the agenda highlight and every requested inline format in rendered PDFs.
+- Expanded checks: 579 pass, with three existing failures (two oversized documentation files
+  and missing return annotations in `tests/test_odp_reader.py`), confirmed against HEAD.
+- A sandboxed LibreOffice attempt crashed with status -6. External export succeeded; use that
+  path directly for subsequent macOS PDF builds.
+
+- Parser, layout, and ODP export checks: 118 passed, including plain and escaped URL schemes.
+- Sandboxed LibreOffice export exited with status -6; the build outside the sandbox succeeded.
+
 ## 2026-10-08
 
 ### Additions and New Features

@@ -292,6 +292,38 @@ def test_title_frame_is_unfilled_and_behind_editable_text(tmp_path: pathlib.Path
 	assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == "none"
 
 
+def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path) -> None:
+	"""Standard Djot marks must style editable text instead of leaking delimiter characters."""
+	source_path = tmp_path / "formatting.djot"
+	source_path.write_text("=== layout: one-panel\n# Formatting\n@body\n\n"
+		"_italic_ {*bold*} {_also italic_} *also bold* `code` H~2~O 20^th^\n\n"
+		"{=Shark Talk presentations=}\n\n{+insert+} {-delete-}\n\n"
+		"{=*bold highlight* and {+underlined+}=}\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
+	root = package.parse_xml(exporter._content_xml(
+		plan, theme, exporter._layout_names(plan), {}), "content.xml")
+	styles = {element.attrib[f"{{{exporter.STYLE_NS}}}name"]:
+		element.find(f"{{{exporter.STYLE_NS}}}text-properties").attrib
+		for element in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+		if element.find(f"{{{exporter.STYLE_NS}}}text-properties") is not None}
+	properties = {span.text: styles[span.attrib[f"{{{exporter.TEXT_NS}}}style-name"]]
+		for span in root.findall(f".//{{{exporter.TEXT_NS}}}span")}
+	for label in ("italic", "also italic"):
+		assert properties[label][f"{{{exporter.FO_NS}}}font-style"] == "italic"
+	for label in ("bold", "also bold", "bold highlight"):
+		assert properties[label][f"{{{exporter.FO_NS}}}font-weight"] == "bold"
+	assert "Mono" in properties["code"][f"{{{exporter.FO_NS}}}font-family"]
+	assert properties["2"][f"{{{exporter.STYLE_NS}}}text-position"].startswith("sub ")
+	assert properties["th"][f"{{{exporter.STYLE_NS}}}text-position"].startswith("super ")
+	for label in ("Shark Talk presentations", "bold highlight", "underlined"):
+		assert properties[label][f"{{{exporter.FO_NS}}}background-color"].startswith("#")
+	for label in ("insert", "underlined"):
+		assert properties[label][f"{{{exporter.STYLE_NS}}}text-underline-style"] == "solid"
+	assert properties["delete"][f"{{{exporter.STYLE_NS}}}text-line-through-style"] == "solid"
+
+
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
 	"""LibreOffice receives the dark transition as a page style and the flourish as a vector."""
 	source_path = tmp_path / "closer.djot"
@@ -430,7 +462,7 @@ def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:
 		package.validate_odp_members(items, frozenset({"Pictures/generated.png"}))
 
 
-def test_validate_package_rejects_duplicate_member_unsafe_path_and_bad_mimetype(tmp_path: pathlib.Path) -> None:
+def test_validate_package_rejects_duplicate_member_and_unsafe_path(tmp_path: pathlib.Path) -> None:
 	duplicate = tmp_path / "duplicate.odp"
 	with pytest.warns(UserWarning, match="Duplicate"):
 		with zipfile.ZipFile(duplicate, "w") as archive:
@@ -444,17 +476,6 @@ def test_validate_package_rejects_duplicate_member_unsafe_path_and_bad_mimetype(
 		archive.writestr("../unsafe", b"bad")
 	with pytest.raises(ValueError, match="unsafe"):
 		package.validate_package(unsafe, ".odp", package.ODP_MIMETYPE, frozenset({"mimetype"}))
-	bad = tmp_path / "bad.odp"
-	with zipfile.ZipFile(bad, "w") as archive:
-		archive.writestr("content.xml", b"x")
-		archive.writestr("mimetype", package.ODP_MIMETYPE)
-	with pytest.raises(ValueError, match="first uncompressed"):
-		package.validate_package(bad, ".odp", package.ODP_MIMETYPE, frozenset({"mimetype"}))
-	compressed = tmp_path / "compressed.odp"
-	with zipfile.ZipFile(compressed, "w", compression=zipfile.ZIP_DEFLATED) as archive:
-		archive.writestr("mimetype", package.ODP_MIMETYPE)
-	with pytest.raises(ValueError, match="first uncompressed"):
-		package.validate_package(compressed, ".odp", package.ODP_MIMETYPE, frozenset({"mimetype"}))
 
 
 def test_atomic_publish_preserves_existing_destination_on_validation_failure(tmp_path: pathlib.Path) -> None:

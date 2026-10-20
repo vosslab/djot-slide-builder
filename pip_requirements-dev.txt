@@ -11,3 +11,4 @@ tree-sitter-rust  # Rust grammar for the Graphify cfg(test) prune step
 # === LOCAL DEVELOPMENT DEPENDENCIES === [ADD REPOSITORY-SPECIFIC DEPENDENCIES HERE]
 
 # Development dependencies
+weasyprint  # Render recovered genetics table assets with the developer helper

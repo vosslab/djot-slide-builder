@@ -1,5 +1,10 @@
 # Human guidance
 
+- Keep Lecture 07B's intro and miscellaneous material, including peer evaluation, in the main
+  file. Split Three Ideas, One Great Idea, Shark Tank, and Executive Summary into chapter files;
+  allow one hidden flag to hide the entire One Great Idea section.
+  Number these chapter files `lect07b1-`, `lect07b2-`, `lect07b3-`, and `lect07b4-`.
+
 - Source slide animations should flag conversions that lose a question/answer reveal. Make the
   importer fix durable rather than repairing only Lecture 06D slide 36.
 
@@ -11,7 +16,19 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+## Robustness and simplicity
+
+- Robust software continues to function despite imperfect inputs, data, state, or behavior.
+  Handle imperfections according to context and impact; recover gracefully to preserve useful
+  operation whenever possible.
+- Apply KISS aggressively: prefer the smallest coherent design that satisfies actual requirements
+  and known failure modes. Mechanisms, abstractions, policies, state, and tests must solve a
+  demonstrated need. Complexity must earn its place.
+
 ## Test maintenance
+
+- Audit all gates and remove those without a demonstrated need. When in doubt, remove the test
+  or gate; this overrides older repository policies requiring the removed checks.
 
 - Treat permanent tests as liabilities as well as assets. Protect intentionally stable, important
   behavior that could regress; prefer contracts over implementation details. When in doubt, remove.
@@ -19,8 +36,28 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   only when the behavior deserves lasting protection.
 - Ground gates in actual needs; avoid arbitrary thresholds, exhaustive matrices, and byte or pixel
   equivalence unless the product depends on them.
+- New gates need a failure plan: failure must lead to a decision or concrete recovery action.
+  If it would not change the implementation or identify a real correctness problem, remove the gate.
+- A different tool version alone must not stop working software. Require version gates only for
+  demonstrated compatibility needs.
+- Apply the permanent-test checklist in [PYTEST_STYLE.md](PYTEST_STYLE.md). Separate one-time rebuild
+  checks from permanent tests; temporary checks must not become permanent without earning their place.
 
 ## Slide-writing advice
+
+- A bad font license file must not block slide rendering; license validation is not a build gate.
+
+- Djot source must be ASCII with character references for non-ASCII text; replace corrupted
+  dash sequences with plain hyphens.
+
+- Encoding errors should identify the editor line; a byte position is not useful for locating
+  corrupted text in a long Djot source.
+
+- Support all standard inline formatting shown in the Djot reference, including highlighting
+  `{=Shark Talk presentations=}` in the agenda slide.
+- Use the established external LibreOffice export path on macOS; sandboxed launches crash soffice.
+
+- I do not want redundant `[URL](URL)` markup to be required when a bare URL suffices.
 
 - Style the Lecture 05C Theranos timeline dates like genetics definition terms so the dates
   stand out visually.

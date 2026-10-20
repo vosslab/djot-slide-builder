@@ -131,11 +131,10 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 			for run in resolved_runs(inline.children, accent_color, accent_color,
 					bold, italic, inline.url):
 				if isinstance(run, slide_lib.layout_content.TextRun):
-					style = slide_lib.layout_content.RunStyle(
+					style = dataclasses.replace(run.style, font_family=
 						slide_lib.presentation_theme.NARROW_FONT_FAMILY
 						if literal and not run.style.code else run.style.font_family,
-						run.style.foreground, True, run.style.bold, run.style.italic,
-						run.style.code, run.style.link_url, literal)
+						underline=True, literal_url=literal)
 					runs.append(slide_lib.layout_content.TextRun(run.text, style))
 				else:
 					runs.append(run)
@@ -146,8 +145,13 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 				color_name, accent_color) if color_name is not None else color
 			for run in resolved_runs(inline.children, span_color, accent_color,
 					bold, italic, link):
-				if inline.underline and isinstance(run, slide_lib.layout_content.TextRun):
-					run = dataclasses.replace(run, style=dataclasses.replace(run.style, underline=True))
+				if isinstance(run, slide_lib.layout_content.TextRun):
+					style = dataclasses.replace(run.style,
+						underline=inline.underline or run.style.underline,
+						strikethrough=inline.strikethrough or run.style.strikethrough,
+						background="FFF2A8" if inline.highlight else run.style.background,
+						position=run.style.position or inline.position)
+					run = dataclasses.replace(run, style=style)
 				runs.append(run)
 	return tuple(runs)
 

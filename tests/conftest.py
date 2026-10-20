@@ -47,7 +47,10 @@ collect_ignore = ["e2e", "playwright", "_temp"]
 #       "ascii_compliance": ["human_readable-*.html"],
 #       "pyflakes_code_lint": ["devel/scratch_*.py"],
 #   }
-REPO_HYGIENE_FILTERS = {}
+REPO_HYGIENE_FILTERS = {
+	"ascii_compliance": ["assets/fonts/licenses/**"],
+	"whitespace": ["assets/fonts/licenses/**"],
+}
 
 
 # === OPTIONAL_HELPERS_MENU ===

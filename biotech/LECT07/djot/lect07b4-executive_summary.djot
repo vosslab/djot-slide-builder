@@ -1,0 +1,184 @@
+=== layout: section
+
+# Executive Summary
+
+## Due Oct 25, 2026
+
+=== layout: one-panel
+
+# Executive Summary
+
+@body
+
+- A [one-page proposal]{color=red} that can stand on its own.
+- Connect the problem, biological mechanism, and product.
+- Identify customers, competition, and development milestones.
+- Support important claims with sources.
+- Write the summary after planning the full argument.
+
+=== layout: one-panel
+
+# Executive Summary: Submission
+
+@body
+
+- Submit through Blackboard.
+- [Three-page limit]{color=red}: cover, one-page summary, references.
+- The summary itself must fit on one page.
+- Check the uploaded format after Turnitin processes the file.
+- [Similarity scores above 10% lose points.]{color=red}
+- Select your topic and address the feedback; approval is not required.
+
+=== layout: one-panel
+
+# Three-Page Executive Summary
+
+@body
+
+| Page | Contents |
+| --- | --- |
+| 1: Cover | Company name, logo, optional table of contents |
+| 2: Summary | One page after upload; similarity above 10% loses points |
+| 3: References | Sources for the facts and claims |
+
+=== layout: one-panel
+
+# Use the samples as writing case studies
+
+@body
+
+- Notice how the writer connects problem, product, science, and market.
+- Check what the cited research actually demonstrates.
+- Look for the customer, alternatives, and next measurable milestone.
+- Old sample claims and dates need fresh evidence.
+- Lecture 06D works through examples from the sample collection.
+
+=== layout: one-panel
+
+# Executive Summary Rubric
+
+@body
+
+| Criterion | Weight | Look for |
+| --- | --- | --- |
+| Cover | 10% | Effective company name; clean cover |
+| Problem | 15% | Clear statement of the problem |
+| Background | 15% | Context and scientific basis |
+| Solution | 15% | Product and how it solves the problem |
+| Business model | 15% | Market need and product niche |
+| Enthusiasm | 15% | Belief in the product; engaging writing |
+| Style | 15% | Readable fonts, spacing, and justified text |
+
+=== layout: one-panel
+
+# Most Common Errors
+
+@body
+
+- Similarity scores above 10% will lose points
+- Executive summary does not hit all major areas\:
+  - Background, Problem, Solution, Scientific Basis, Business Model, Competition
+    - I am not concerned about the order, but it needs to make sense
+- Background portion does not provide any background information
+
+@notes
+
+Archived source slide retained from Lecture 04.
+Historical dates or examples on this hidden slide are not current instructions.
+
+=== layout: one-panel
+
+# Most Common Errors
+
+@body
+
+![Slide image 2](assets/lect05b-individual_project/image_002.png)
+
+![Slide image 3](assets/lect05b-individual_project/image_003.png)
+
+![Slide image 4](assets/lect05b-individual_project/image_004.png)
+
+- Font\:
+  - [GOOD\:]{color=green} NIH-style SansSerif font (Arial, Calibri, Helvetica, Tahoma, Trebuchet MS, Verdana)
+  - [GOOD\: ]{color=green}Business world Serif font (Baskerville, Book Antiqua, Bookman, Cambria, Garamond, Geneva, Georgia, Goudy, Times)
+  - [BAD\:]{color=red} Monospace fonts (Courier, Menlo, Monaco, Roboto)
+  - [BAD\:]{color=red}[ ]{color=green}Do not use Comic Sans, Papyrus, Impact, Dyslexic, or other casual script fonts - they are unprofessional
+- Full justification of text
+
+@notes
+
+Archived source slide retained from Lecture 04.
+Historical dates or examples on this hidden slide are not current instructions.
+
+=== layout: one-panel
+
+# Flexible Options
+
+@body
+
+- Reference format does not matter
+  - Biology uses Medline format as long as I can connect to your source, webpage such as doi links or https\:// are best
+- Line spacing
+  - 1.15 of 1.5 look best to me, but I don't care what you use as long as it look nice
+  - It is nice to have some extra space after paragraphs to help set them apart.
+
+@notes
+
+Archived source slide retained from Lecture 04.
+Historical dates or examples on this hidden slide are not current instructions.
+
+=== layout: one-panel
+
+@body
+
+![Slide image 5](assets/lect05b-individual_project/image_005.png)
+
+- YES
+
+@notes
+
+Archived source slide retained from Lecture 04.
+Historical dates or examples on this hidden slide are not current instructions.
+
+=== layout: one-panel
+
+# Justify Text (only 1 student)
+
+@body
+
+![Slide image 6](assets/lect05b-individual_project/image_006.png)
+
+![Slide image 7](assets/lect05b-individual_project/image_007.png)
+
+- YES
+
+@notes
+
+Archived source slide retained from Lecture 04.
+Historical dates or examples on this hidden slide are not current instructions.
+
+=== layout: one-panel
+
+# Full Justify Your Text
+
+@body
+
+![Slide image 8](assets/lect05b-individual_project/image_008.png)
+
+@notes
+
+Archived source slide retained from Lecture 04.
+Historical dates or examples on this hidden slide are not current instructions.
+
+=== layout: stacked-panels
+
+# AI Policy
+
+@top
+
+![AI Forklift in the Gym](assets/ai_forklift.png)
+
+@bottom
+
+- FYI\: If you rely on AI without including your own ideas, it will make for a very dull read.
+- The lack of specifics and original thoughts will be painfully obvious, and if you do this, do not expect a passing grade.

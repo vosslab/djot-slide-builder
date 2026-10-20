@@ -2,9 +2,9 @@
 
 import pathlib
 import zipfile
-import xml.etree.ElementTree
 
 import pytest
+import lxml.etree
 
 import slide_lib.djot_parser
 import slide_lib.importers.djot_text
@@ -14,6 +14,7 @@ import slide_lib.importers.odp_reader
 import slide_lib.layout_content
 import slide_lib.layout_engine
 import slide_lib.odp_export
+import slide_lib.odf_package
 import slide_lib.presentation_theme
 import slide_lib.svg_images
 
@@ -55,7 +56,7 @@ def test_definition_emphasis_survives_import_and_export_without_leaking(
 	"""An inherited bold/underlined term keeps its color and a normal definition stays normal."""
 	ns = slide_lib.importers.odp_reader.NS
 	declarations = ' '.join(f'xmlns:{key}="{value}"' for key, value in ns.items())
-	root = xml.etree.ElementTree.fromstring(f'<root {declarations}>'
+	root = parse_test_xml(f'<root {declarations}>'
 		'<style:style style:name="base"><style:text-properties fo:font-weight="bold" '
 		'style:text-underline-style="solid" fo:color="#ff0000"/></style:style>'
 		'<style:style style:name="term" style:parent-style-name="base"/>'
@@ -78,7 +79,7 @@ def test_definition_emphasis_survives_import_and_export_without_leaking(
 		slide_lib.djot_parser.parse_deck(source), theme).plan
 	output = slide_lib.odp_export.write_odp(plan, theme, tmp_path / "definition.odp")
 	with zipfile.ZipFile(output) as archive:
-		written = xml.etree.ElementTree.fromstring(archive.read('content.xml'))
+		written = parse_test_xml(archive.read('content.xml'))
 	written_styles = slide_lib.importers.odf_styles.definitions((written,))
 	spans = written.findall('.//text:span', ns)
 	term = next(span for span in spans if span.text == 'Homologous')
@@ -91,7 +92,7 @@ def test_frame_formatting_resets_and_exact_color_survive_export(tmp_path: pathli
 	"""Keep inherited emphasis, capitalization, unknown RGB, and explicit normal resets."""
 	ns = slide_lib.importers.odp_reader.NS
 	declarations = ' '.join(f'xmlns:{key}="{value}"' for key, value in ns.items())
-	root = xml.etree.ElementTree.fromstring(f'<root {declarations}>'
+	root = parse_test_xml(f'<root {declarations}>'
 		'<style:style style:name="graphic"><style:graphic-properties draw:fill="none"/></style:style>'
 		'<style:style style:name="base"><style:text-properties fo:font-weight="bold" '
 		'fo:font-style="italic" fo:color="#CC00CC" fo:text-transform="uppercase" '
@@ -121,7 +122,7 @@ def test_frame_formatting_resets_and_exact_color_survive_export(tmp_path: pathli
 		slide_lib.djot_parser.parse_deck(source), theme).plan
 	output = slide_lib.odp_export.write_odp(plan, theme, tmp_path / 'formatting.odp')
 	with zipfile.ZipFile(output) as archive:
-		written = xml.etree.ElementTree.fromstring(archive.read('content.xml'))
+		written = parse_test_xml(archive.read('content.xml'))
 	written_styles = slide_lib.importers.odf_styles.definitions((written,))
 	spans = written.findall('.//text:span', ns)
 	important = next(span for span in spans if span.text and 'IMPORTANT' in span.text)
@@ -143,3 +144,10 @@ def test_svg_dimensions_require_local_static_positive_viewport(tmp_path: pathlib
 		'<image href="https://example.com/figure.png"/></svg>')
 	with pytest.raises(ValueError, match='embedded'):
 		slide_lib.svg_images.dimensions(path)
+
+
+#============================================
+def parse_test_xml(source: str | bytes) -> lxml.etree._Element:
+	"""Parse test XML through the bounded production XML reader."""
+	data = source.encode("utf-8") if isinstance(source, str) else source
+	return slide_lib.odf_package.parse_xml(data, "test.xml")

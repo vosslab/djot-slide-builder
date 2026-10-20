@@ -15,6 +15,26 @@ import slide_lib.native_export
 
 
 #============================================
+def test_mixed_includes_hide_whole_chapter_and_preserve_locations(tmp_path: pathlib.Path) -> None:
+	"""A single include flag hides a chapter without hiding surrounding main-file slides."""
+	master = tmp_path / "lecture.djot"
+	chapter = tmp_path / "chapter.djot"
+	chapter.write_text("=== layout: blank\n=== layout: blank\nhidden: true\n")
+	text = ("=== layout: blank\n=== include: chapter.djot\nhidden: true\n"
+		"=== layout: blank\n@notes\nStill in the main file.\n")
+	master.write_text(text)
+	deck = slide_lib.djot_parser.parse_deck(master)
+	assert [slide.hidden for slide in deck.slides] == [False, True, True, False]
+	assert deck.slides[1].location.path == chapter
+	assert deck.slides[-1].location.line == 4
+	assert deck.slides[-1].notes == ("Still in the main file.",)
+	assert slide_lib.native_export.discover_decks(str(tmp_path), tmp_path) == [master]
+	master.write_text(text.replace("hidden: true", "hidden: false"))
+	assert [slide.hidden for slide in slide_lib.djot_parser.parse_deck(master).slides] == [
+		False, False, True, False]
+
+
+#============================================
 def test_chapters_preserve_order_notes_theme_and_image_base(tmp_path: pathlib.Path) -> None:
 	"""Splitting a deck must preserve native slide semantics and its shared asset directory."""
 	master = tmp_path / "lecture.djot"
@@ -61,7 +81,7 @@ def test_included_errors_point_to_chapter_lines(tmp_path: pathlib.Path) -> None:
 
 
 #============================================
-@pytest.mark.parametrize("target", ("../outside.djot", "/tmp/outside.djot", "chapter.txt"))
+@pytest.mark.parametrize("target", ("../outside.djot", "/outside.djot", "chapter.txt"))
 def test_includes_reject_nonlocal_or_wrong_format_paths(tmp_path: pathlib.Path, target: str) -> None:
 	"""A manifest cannot read arbitrary paths or reinterpret another file type as a chapter."""
 	master = tmp_path / "lecture.djot"

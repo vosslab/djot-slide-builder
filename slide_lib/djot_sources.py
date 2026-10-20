@@ -3,6 +3,7 @@
 # Standard Library
 import dataclasses
 import pathlib
+import re
 
 # Local Modules
 import slide_lib.djot_errors
@@ -16,6 +17,7 @@ class SourceFile:
 	"""One physical file containing complete slides."""
 	path: pathlib.Path
 	text: str
+	hidden: bool = False
 
 
 @dataclasses.dataclass(frozen=True)
@@ -37,10 +39,31 @@ def fail(path: pathlib.Path, line: int, message: str) -> None:
 def read_source(path: pathlib.Path) -> str:
 	"""Read UTF-8 source with an actionable diagnostic for unreadable input."""
 	try:
-		text = path.read_text(encoding="utf-8")
-	except (OSError, UnicodeDecodeError) as error:
+		data = path.read_bytes()
+	except OSError as error:
 		fail(path, 1, f"cannot read UTF-8 Djot source: {error}")
+	try:
+		text = data.decode("utf-8")
+	except UnicodeDecodeError as error:
+		report_encoding_error(path, error)
+	text = text.replace("\r\n", "\n").replace("\r", "\n")
 	return text
+
+
+#============================================
+def report_encoding_error(path: pathlib.Path, error: UnicodeDecodeError) -> None:
+	"""Locate invalid bytes using editor line and character-column coordinates."""
+	prefix = error.object[:error.start].decode("utf-8")
+	prefix = prefix.replace("\r\n", "\n").replace("\r", "\n")
+	line = prefix.count("\n") + 1
+	before = prefix.rsplit("\n", 1)[-1]
+	column = len(before) + 1
+	suffix = error.object[error.end:].decode("utf-8", errors="backslashreplace")
+	after = suffix.replace("\r\n", "\n").replace("\r", "\n").split("\n", 1)[0]
+	invalid = " ".join(f"0x{byte:02X}" for byte in error.object[error.start:error.end])
+	excerpt = before[-45:] + f"[INVALID {invalid}]" + after[:45]
+	fail(path, line, f"invalid UTF-8 at line {line}, column {column}; "
+		f"near {excerpt!r}. Replace the marked text and save the file as UTF-8.")
 
 
 #============================================
@@ -92,9 +115,32 @@ def load_sources(input_path: pathlib.Path) -> SourceBundle:
 
 
 #============================================
+def source_parts(text: str) -> list[tuple[int, str, bool]]:
+	"""Separate explicit include blocks from slides, preserving physical line offsets."""
+	lines = text.splitlines(keepends=True)
+	boundaries = [0]
+	fence = None
+	for index, value in enumerate(lines):
+		line = value.rstrip("\r\n")
+		if fence is not None:
+			if re.fullmatch(rf"{re.escape(fence[0])}{{{len(fence)},}}[ \t]*", line):
+				fence = None
+			continue
+		match = re.fullmatch(r"(`{3,}|~{3,}).*", line)
+		if match:
+			fence = match.group(1)
+		elif line.startswith(("=== include:", "=== layout:")) and index:
+			boundaries.append(index)
+	boundaries.append(len(lines))
+	return [(start + 1, "".join(lines[start:end]),
+		lines[start].startswith("=== include:"))
+		for start, end in zip(boundaries, boundaries[1:]) if start < end]
+
+
+#============================================
 def walk_sources(path: pathlib.Path, root: pathlib.Path, inherited_theme: str | None,
 		ancestors: tuple[pathlib.Path, ...], files: list[SourceFile],
-		paths: list[pathlib.Path]) -> str:
+		paths: list[pathlib.Path], hidden: bool = False) -> str:
 	"""Visit chapter files in authored order, rejecting recursion and theme conflicts."""
 	text = read_source(path)
 	declared_theme, lines = source_header(path, text)
@@ -105,16 +151,33 @@ def walk_sources(path: pathlib.Path, root: pathlib.Path, inherited_theme: str | 
 			f"chapter color-theme conflicts with master theme: {inherited_theme}")
 	theme = declared_theme or inherited_theme or slide_lib.presentation_theme.DEFAULT_COLOR_THEME
 	paths.append(path)
-	if not lines or not lines[0][1].strip().startswith("include:"):
-		files.append(SourceFile(path, text))
+	manifest = bool(lines and lines[0][1].strip().startswith("include:"))
+	parts = [(number, value, True) for number, value in lines] if manifest else source_parts(text)
+	if not manifest and not any(is_include for _number, _part, is_include in parts):
+		files.append(SourceFile(path, text, hidden))
 		return theme
-	for number, value in lines:
+	for number, part, is_include in parts:
+		if not is_include:
+			if "=== layout:" in part:
+				files.append(SourceFile(path, "\n" * (number - 1) + part, hidden))
+			elif part.strip() and not part.strip().startswith("color-theme:"):
+				fail(path, number, "expected a layout or include directive")
+			continue
+		block = part.splitlines()
+		value = block[0].removeprefix("=== ")
+		include_hidden = hidden
+		for offset, metadata in enumerate(block[1:], 1):
+			if not metadata.strip():
+				continue
+			if metadata not in ("hidden: true", "hidden: false"):
+				fail(path, number + offset, "include blocks accept only hidden: true or hidden: false")
+			include_hidden = hidden or metadata == "hidden: true"
 		target = include_target(path, number, value, root)
 		if target in (*ancestors, path):
 			fail(path, number, f"circular include: {target.name}")
 		if len(ancestors) >= 31:
 			fail(path, number, "includes exceed 32 nested manifests; flatten the chapter list")
-		walk_sources(target, root, theme, (*ancestors, path), files, paths)
+		walk_sources(target, root, theme, (*ancestors, path), files, paths, include_hidden)
 	return theme
 
 
@@ -128,11 +191,15 @@ def root_sources(candidates: list[pathlib.Path]) -> list[pathlib.Path]:
 			if value.strip()]
 		if lines and lines[0][1].strip().startswith("color-theme:"):
 			lines.pop(0)
-		if not lines or not lines[0][1].strip().startswith("include:"):
-			continue
-		manifests.append(path)
-		included.update(include_target(path, number, value, path.parent.resolve())
-			for number, value in lines)
+		if lines and lines[0][1].strip().startswith("include:"):
+			directives = lines
+		else:
+			directives = [(number, part.splitlines()[0].removeprefix("=== "))
+				for number, part, is_include in source_parts(read_source(path)) if is_include]
+		if directives:
+			manifests.append(path)
+			included.update(include_target(path, number, value, path.parent.resolve())
+				for number, value in directives)
 	result = [path for path in candidates if path.resolve() not in included]
 	visited: set[pathlib.Path] = set()
 	for path in result:

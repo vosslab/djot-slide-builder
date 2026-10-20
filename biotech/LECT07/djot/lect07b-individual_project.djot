@@ -1,0 +1,116 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 06B
+
+## Biotechnology: Individual Project
+## Dr. Neil Voss
+## Oct 15, 2026
+
+=== layout: one-panel
+
+# Learning Objectives
+
+@body
+
+- Use feedback to choose a specific, plausible biotechnology product.
+- Explain the problem, biological mechanism, market, and competition.
+- Plan a concise executive summary and a four-minute company pitch.
+- Find the current deadlines and submission links.
+
+=== layout: one-panel
+
+# Upcoming Project Due Dates (Fall 2026)
+
+@body
+
+- {-*Sep 17* - Submit three ideas to Google Forms for review-}
+- {-*Oct 1* - deadline for Dr. Voss to give back comments-}
+- {-*Oct 8* - One Great Idea form; three more ideas due Monday before class-}
+- *{+{=Oct 22=}+}* - *Shark Tank presentations*; slides due before class
+- *{+{=Oct 25=}+}* - write and submit *executive summary* to Blackboard
+- *{+{=Oct 29=}+}* - complete *Milestones and competition* Google Form on
+- *{+{=Oct 29=}+}* - complete *SharkTank Peer Evaluation* Google Form
+
+
+=== include: lect07b1-three_ideas.djot
+hidden: true
+
+=== layout: one-panel
+hidden: true
+
+# Oct 01: feedback on your three ideas
+
+@body
+
+- Review the instructor's feedback on your three project ideas.
+- Use it to sharpen the problem, biotechnology, feasibility, and audience.
+
+@notes
+
+Completed milestone; retained as an editable reference.
+
+=== include: lect07b2-one_great_idea.djot
+hidden: true
+
+=== include: lect07b3-shark_tank.djot
+
+=== include: lect07b4-executive_summary.djot
+
+=== layout: section
+
+# Milestones and Competition
+
+## Form due Oct 29, 2026
+
+=== layout: two-panels
+
+# Milestones and Competition Form
+
+@left
+
+## Company and product
+
+- What is your company's name?
+- What does the logo mean?
+- What is the first marketable product?
+- What problem does the product solve?
+- Use short answers; the form link is in Blackboard.
+
+@right
+
+## Competition and milestones
+
+- How will your company do better than competitors?
+- What will you achieve by year 1?
+- What will you achieve by year 3?
+- What will you achieve by year 5?
+
+=== layout: one-panel
+
+# Individual Project: 88 Points
+
+@body
+
+| Component | Points |
+| --- | --- |
+| Three ideas submitted on time | 2 |
+| Instructor evaluation of ideas | 10 |
+| Selected-idea form | 2 |
+| Executive summary | 25 |
+| Milestones and competition form | 2 |
+| Company pitch: instructor score | 20 |
+| Peer-evaluation forms | 2 |
+| Company pitch: peer score | 25 |
+| *Total* | *88* |
+
+@notes
+
+Authority: published Fall 2026 PROJECTS.md.
+https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/
+
+=== layout: theend
+
+# THE END
+

@@ -19,6 +19,9 @@ class RunStyle:
 	code: bool = False
 	link_url: str | None = None
 	literal_url: bool = False
+	background: str | None = None
+	strikethrough: bool = False
+	position: str | None = None
 
 	def __post_init__(self) -> None:
 		require_nonempty(self.font_family, "run font family")
@@ -27,6 +30,9 @@ class RunStyle:
 				("run italic", self.italic), ("run code", self.code),
 				("run literal_url", self.literal_url)):
 			require_boolean(value, label)
+		require_boolean(self.strikethrough, "run strikethrough")
+		if self.position not in (None, "sub", "super"):
+			raise ValueError("run position must be sub or super")
 		if self.literal_url and self.link_url is None:
 			raise ValueError("literal URL runs require a link URL")
 

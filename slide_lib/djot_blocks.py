@@ -24,7 +24,6 @@ _IMAGE = re.compile(r'^!\[(?P<alt>[^\]]+)\]\((?P<source>[^\s)]+)(?:\s+"(?P<title
 _KNOWN_UNSUPPORTED = (
 	(":::", "generic divs are not supported"),
 	("[^", "footnotes are not supported"),
-	("{=", "raw blocks are not supported"),
 )
 
 
@@ -130,6 +129,8 @@ def parse_attribute_tokens(path: pathlib.Path, line: int, body: str) -> tuple[sl
 #============================================
 def parse_attributes(path: pathlib.Path, line: int, source: str) -> tuple[slide_lib.native_model.Attribute, ...] | None:
 	"""Return attributes only when this complete line is a Djot attribute line."""
+	if source.strip().startswith(("{_", "{*", "{=", "{+", "{-", "{~", "{^")):
+		return None
 	match = _ATTRIBUTE_LINE.fullmatch(source.strip())
 	if match is None:
 		return None

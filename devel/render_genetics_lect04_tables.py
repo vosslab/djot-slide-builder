@@ -43,12 +43,12 @@ def page_style(width: int, height: int) -> str:
 * {{ box-sizing: border-box; }}
 html, body {{ margin: 0; padding: 0; background: white; }}
 .page {{ width: {width}px; height: {height}px; padding: 55px 80px; display: flex;
-  align-items: center; justify-content: center; page-break-after: always; }}
+	align-items: center; justify-content: center; page-break-after: always; }}
 .page:last-child {{ page-break-after: auto; }}
 table {{ border-collapse: collapse; table-layout: fixed; font-family: sans-serif;
-  color: #172033; background: white; }}
+	color: #172033; background: white; }}
 th, td {{ border: 3px solid #496b8f; text-align: center; vertical-align: middle;
-  padding: 12px 10px; font-size: 27px; line-height: 1.05; }}
+	padding: 12px 10px; font-size: 27px; line-height: 1.05; }}
 th {{ background: #e7eef6; font-weight: 700; }}
 .corner {{ background: #d6e2ef; }}
 .row-label {{ width: 150px; }}
@@ -83,7 +83,7 @@ th {{ background: #e7eef6; font-weight: 700; }}
 
 
 def punnett_table(values: tuple[tuple[str, ...], ...], highlight: str | None = None,
-				  ratios: bool = False) -> str:
+				ratios: bool = False) -> str:
 	"""Build one accessible four-by-four Punnett-square table."""
 	highlights: dict[str, set[tuple[int, int]]] = {
 		"diag": {(0, 3), (1, 2), (2, 1), (3, 0)},
@@ -167,7 +167,7 @@ def render_punnett_series() -> None:
 	step_one = (("AABB", "", "", ""), ("", "", "", ""), ("", "", "", ""), ("", "", "", ""))
 	step_two = (("AABB", "AABb", "", ""), ("", "", "", ""), ("", "", "", ""), ("", "", "", ""))
 	step_three = (("AABB", "AABb", "AaBB", "AaBb"), ("AABb", "AAbb", "AaBb", "Aabb"),
-				  ("AaBB", "AaBb", "aaBB", ""), ("", "", "", ""))
+				("AaBB", "AaBb", "aaBB", ""), ("", "", "", ""))
 	pages = (
 		punnett_table(step_one), punnett_table(step_two),
 		punnett_table(step_three), punnett_table(tuple(row for _label, row in PUNNETT_ROWS), ratios=True),
@@ -199,60 +199,60 @@ def render_crossover_series() -> None:
 	)
 	progress = (
 		(("(a) George gametes", ("", "", "", "", "", "", ""), "row-a"),
-		 ("(b) Linda gametes", ("", "", "", "", "", "", ""), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("", "", "", "", "", "", ""), "row-d"),
-		 ("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
+		("(b) Linda gametes", ("", "", "", "", "", "", ""), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("", "", "", "", "", "", ""), "row-d"),
+		("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
 		(("(a) George gametes", ("2", "", "", "", "", "", ""), "row-a"),
-		 ("(b) Linda gametes", ("", "", "", "", "", "", ""), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("", "", "", "", "", "", ""), "row-d"),
-		 ("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
+		("(b) Linda gametes", ("", "", "", "", "", "", ""), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("", "", "", "", "", "", ""), "row-d"),
+		("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
 		(("(a) George gametes", ("2", "", "", "", "", "", ""), "row-a"),
-		 ("(b) Linda gametes", ("1", "", "", "", "", "", ""), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("", "", "", "", "", "", ""), "row-d"),
-		 ("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
+		("(b) Linda gametes", ("1", "", "", "", "", "", ""), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("", "", "", "", "", "", ""), "row-d"),
+		("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
 		(("(a) George gametes", ("2", "", "", "", "", "", ""), "row-a"),
-		 ("(b) Linda gametes", ("1", "", "", "", "", "", ""), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "", "", "", "", "", ""), "row-d"),
-		 ("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
+		("(b) Linda gametes", ("1", "", "", "", "", "", ""), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "", "", "", "", "", ""), "row-d"),
+		("(e) cross phenotypes", ("", "", "", "", "", "", ""), "row-e")),
 		(("(a) George gametes", ("2", "", "", "", "", "", ""), "row-a"),
-		 ("(b) Linda gametes", ("1", "", "", "", "", "", ""), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "", "", "", "", "", ""), "row-d"),
-		 ("(e) cross phenotypes", ("1", "", "", "", "", "", ""), "row-e")),
+		("(b) Linda gametes", ("1", "", "", "", "", "", ""), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "", "", "", "", "", ""), "row-d"),
+		("(e) cross phenotypes", ("1", "", "", "", "", "", ""), "row-e")),
 		(("(a) George gametes", ("2", "2", "", "", "", "", ""), "row-a"),
-		 ("(b) Linda gametes", ("1", "1", "", "", "", "", ""), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "2", "", "", "", "", ""), "row-d"),
-		 ("(e) cross phenotypes", ("1", "2", "", "", "", "", ""), "row-e")),
+		("(b) Linda gametes", ("1", "1", "", "", "", "", ""), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "2", "", "", "", "", ""), "row-d"),
+		("(e) cross phenotypes", ("1", "2", "", "", "", "", ""), "row-e")),
 		(("(a) George gametes", ("2", "2", "2", "1", "2", "1", "2"), "row-a"),
-		 ("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3"), "row-d"),
-		 ("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2"), "row-e")),
+		("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3"), "row-d"),
+		("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2"), "row-e")),
 		(("(a) George gametes", ("2", "2", "2", "1", "2", "1", "2", "32"), "row-a"),
-		 ("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2", "4"), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3", "96"), "row-d"),
-		 ("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2", "32"), "row-e")),
+		("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2", "4"), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3", "96"), "row-d"),
+		("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2", "32"), "row-e")),
 		(("(a) George gametes", ("2", "2", "2", "1", "2", "1", "2", "32"), "row-a"),
-		 ("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3"), "row-d"),
-		 ("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2"), "row-e")),
+		("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3"), "row-d"),
+		("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2"), "row-e")),
 		(("(a) George gametes", ("2", "2", "2", "1", "2", "1", "2"), "row-a"),
-		 ("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
-		 ("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3"), "row-d"),
-		 ("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2"), "row-e")),
+		("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", ""), "row-c"),
+		("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3"), "row-d"),
+		("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2"), "row-e")),
 		(("(a) George gametes", ("2", "2", "2", "1", "2", "1", "2"), "row-a"),
-		 ("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
-		 ("(c) Punnett sq. size", ("", "", "", "", "", "", "", "128"), "row-c"),
-		 ("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3", "96"), "row-d"),
-		 ("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2", "32"), "row-e")),
+		("(b) Linda gametes", ("1", "1", "1", "1", "1", "2", "2"), "row-b"),
+		("(c) Punnett sq. size", ("", "", "", "", "", "", "", "128"), "row-c"),
+		("(d) cross genotypes", ("2", "2", "2", "1", "2", "2", "3", "96"), "row-d"),
+		("(e) cross phenotypes", ("1", "2", "2", "1", "2", "2", "2", "32"), "row-e")),
 	)
 	progress = (progress[0], progress[1], progress[2], progress[3], progress[4], progress[5],
 		progress[6], progress[9], progress[8], progress[7], progress[10])

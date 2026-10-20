@@ -4,7 +4,7 @@ Sept 12, 2022
 
 DO NOT CHANGE
 THE THEME!!!
-We are using the “Tropic” theme and that is it.
+We are using the "Tropic" theme and that is it.
 
 Talking Points Guide
 
@@ -17,7 +17,7 @@ Overall Setup of Talking Points Assignment
 
 
 Talking Points Assigned
-Talking points were assigned during last week’s class.
+Talking points were assigned during last week's class.
 Each student was assigned to one or two talking points based on class size.
 Collaboration with Classmates Expectation
 Each talking point will have at least two students talking about it.
@@ -27,13 +27,13 @@ Keep It Concise: 60 seconds per talking point is short;
 Stay on topic and be impactful.
 Earn Extra Discussion Marks:
 Contributing gets you more discussion points.
-If you have something interesting to say about someone else’s talking point, you can score some extra points.
+If you have something interesting to say about someone else's talking point, you can score some extra points.
 Asking questions of other students gets you discussion marks as well.
 Use the chat for the question asking and answering
 
 Formatting Your Talking Point Slide Before Class
 Edit and update your slide
-Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide.
 Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
 Add several pictures and some text.
 Movies and animated gifs are discouraged but not forbidden.
@@ -41,8 +41,8 @@ No external audio is allowed. Movies will be muted.
 Limit Text: No complete sentences on slides; use short phrases and keywords only.
 Content Preparation
 Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
-Try to be unique and creative with your slide’s look and content.
-Don’t just copy the book; use the internet for research
+Try to be unique and creative with your slide's look and content.
+Don't just copy the book; use the internet for research
 Provide your own perspective.
 Minimize jargon to make it accessible to all classmates.
 
@@ -78,7 +78,7 @@ Helper Question Askers
 Chapter 3
 Recombinant DNA Technology
 
-#1 DNA Isolation  
+#1 DNA Isolation
 Use the textbook, it has a section on this.
 What are the principal methodologies for isolating DNA from cells?
 How do the isolation processes differ between eukaryotic and prokaryotic cells, particularly focusing on cell lysis mechanisms?
@@ -89,13 +89,13 @@ How do the isolation processes differ between eukaryotic and prokaryotic cells, 
 How do mechanical methods of cell lysis differ from chemical methods?
 Explain the enzymatic roles of Lysozyme and Proteinase K in breaking down cellular and protein components during DNA isolation.
 
-#1 DNA Isolation  
+#1 DNA Isolation
 What are the principal methodologies for isolating DNA from cells?
 How do the isolation processes differ between eukaryotic and prokaryotic cells, particularly focusing on cell lysis mechanisms?
 How do mechanical methods of cell lysis differ from chemical methods?
 Explain the enzymatic roles of Lysozyme and Proteinase K in breaking down cellular and protein components during DNA isolation.
 
-#1 DNA Isolation  
+#1 DNA Isolation
 What are the principal methodologies for isolating DNA from cells?
 How do the isolation processes differ between eukaryotic and prokaryotic cells, particularly focusing on cell lysis mechanisms?
 How do mechanical methods of cell lysis differ from chemical methods?
@@ -134,8 +134,8 @@ Explain the Southern Blotting process, particularly focusing on how DNA is trans
 
 #4 Detecting DNA concentration using ultraviolet light
 What aspects of the chemical structure of DNA nucleotides are responsible for its ability to absorb UV light?
-Describe the quantitative methods in UV spectroscopy for DNA concentration measurement. Cover topics such as A260, the A260/A280 ratio. 
-What are the molar absorptivity coefficients (ε) for ssDNA, dsDNA, and ssRNA? How do these differ among these nucleic acid types, and how does this relate to DNA melting curves?
+Describe the quantitative methods in UV spectroscopy for DNA concentration measurement. Cover topics such as A260, the A260/A280 ratio.
+What are the molar absorptivity coefficients (&epsilon;) for ssDNA, dsDNA, and ssRNA? How do these differ among these nucleic acid types, and how does this relate to DNA melting curves?
 How does the intrinsic nature of DNA make it suitable for UV spectroscopy?
 Describe the quantitative methods in UV spectroscopy for DNA concentration measurement.
 What are three techniques (from the textbook) to detect specific DNA sequences using UV spectroscopy?
@@ -158,8 +158,8 @@ Describe the quantitative methods in UV spectroscopy for DNA concentration measu
 What are three techniques (from the textbook) to detect specific DNA sequences using UV spectroscopy?
 
 #6 Fluorescence in situ hybridization (FISH)
-Explain Fluorescence in situ hybridization (FISH). 
-What does the latin phrase "in situ" mean? What does “in situ” mean in this context?
+Explain Fluorescence in situ hybridization (FISH).
+What does the latin phrase "in situ" mean? What does "in situ" mean in this context?
 Discuss the molecular design strategies for fluorescent probes used in FISH.
 What are some specialized applications of FISH in the field of genetic research and diagnostics?
 Explain Fluorescence in situ hybridization (FISH). What does "in situ" mean in general and in this context?
@@ -185,27 +185,27 @@ What are some specialized applications of FISH in the field of genetic research 
 
 #5 SNP DNA Microarrays
 What is a SNP or "snip", and why do scientists care about tiny one-letter DNA changes?
-How long is a typical DNA probe on a SNP microarray, and does it include the SNP site itself? How does a microarray “spot” the difference between two DNA bases? How are probes designed so they catch one SNP version (A, G, C, or T) but not the others?
+How long is a typical DNA probe on a SNP microarray, and does it include the SNP site itself? How does a microarray "spot" the difference between two DNA bases? How are probes designed so they catch one SNP version (A, G, C, or T) but not the others?
 How do fluorescent signals tell you which SNP version is present? How many SNPs can a modern microarray measure on a single chip? How many samples can a microarray lab process in a day?
 What is SNPedia, and what kind of information does it contain? Choose an interesting an SNP example and read about it.
 What is the Illumia Infinium Bead Chip? How about the Omni Bead Chip?
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #5 DNA Microarrays
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #5 DNA Microarrays
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
@@ -240,7 +240,7 @@ Can these tests produce clinically actionable results? What are the limitations?
 
 What are some common mitochondrial diseases in humans? What is heteroplasmy, and when does it matter for the diagnosis of mitochondrial diseases?
 What makes mitochondrial DNA (mtDNA) different from nuclear DNA? How does mitochondrial DNA differ structurally from nuclear DNA in terms of size and organization? What is the process for isolating mtDNA from a cell that contains much more nuclear DNA?
-What is the inheritance pattern of mtDNA? Do you inherit your mtDNA from your mother or your father? Can fathers pass on mtDNA in rare cases, and what evidence is available? https://www.sciencealert.com/radical-findings-shows-mitochondrial-dna-can-be-inherited-from-dads-after-all 
+What is the inheritance pattern of mtDNA? Do you inherit your mtDNA from your mother or your father? Can fathers pass on mtDNA in rare cases, and what evidence is available? https://www.sciencealert.com/radical-findings-shows-mitochondrial-dna-can-be-inherited-from-dads-after-all
 Mitochondrial Eve is the woman from whom all living humans descend through their mothers, and through the mothers of those mothers, back until it converges on one woman. What is the significance of Mitochondrial Eve? What do we know about Mitochondrial Eve?
 What are NUMTs (nuclear mitochondrial DNA segments), and how does mtDNA get copied into the nuclear genome? Why can NUMTs cause problems in mtDNA studies?
 What types of DNA analyses, like SNP genotyping or whole-exome sequencing, are commonly offered in direct-to-consumer genetic tests?
@@ -289,26 +289,26 @@ How do plasmid vectors ensure that the DNA fragment has been inserted, e.g., the
 Compare and contrast low-copy-number plasmids and high-copy-number plasmids in terms of their applications and challenges.
 Take an example of a commercial plasmid other than pJet 1.2 and discuss its specific utilities and advantages in a laboratory setting.
 
-#9 Gene Libraries 
+#9 Gene Libraries
 What is a genomic library? Why are DNA fragments used for these libraries? Why are they stored in an organism rather than on a computer?
 What is the minimal number of genes required for an organism to survive?
 List and describe the six basic steps (see page 83 in the textbook) involved in constructing a genomic library.
 What is a cDNA library? Why must reverse transcriptase be used to create a cDNA library for eukaryotic expression studies? What information is missing in a cDNA library compared to a genomic library?
-What is “reverse genetics”? How can a cDNA library help in understanding gene function?
+What is "reverse genetics"? How can a cDNA library help in understanding gene function?
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
-#9 Gene Libraries 
+#9 Gene Libraries
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
-#9 Gene Libraries 
+#9 Gene Libraries
 Define a gene library and its role in genomics.
-List and describe the key steps (from the textbook) involved in constructing a gene library. 
+List and describe the key steps (from the textbook) involved in constructing a gene library.
 What are the different types of gene libraries, such as genomic and cDNA libraries? Contrast their uses.
 In what research applications are gene libraries considered essential?
 
@@ -343,7 +343,7 @@ List commercially available enzymes used for in vitro DNA synthesis and describe
 
 #11 chemical DNA synthesis
 Outline the fundamental steps involved in the chemical synthesis of DNA. What is the phosphotriester method from the 1950s? What is the phosphoramidite method from the 1980s?
-What are the advantages of chemically synthesizing DNA instead of using enzymatic methods? 
+What are the advantages of chemically synthesizing DNA instead of using enzymatic methods?
 Describe the types of research where chemical DNA synthesis is particularly advantageous.
 Are there any scalability issues associated with chemical DNA synthesis?
 How has chemical DNA synthesis evolved over time?
@@ -492,25 +492,25 @@ Discuss the implications of portability in third-gen sequencing technologies for
 #16 RT-PCR, qPCR, and RT-qPCR
 1. What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 2. Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-3. Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+3. Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples. Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #16 RT-PCR, qPCR, and RT-qPCR
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #16 RT-PCR, qPCR, and RT-qPCR
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
@@ -521,37 +521,37 @@ How do fluorescent colors show which genes are more active or less active? How d
 What are some control spots that are used to check that the experiment worked? What is clustering analysis of expression data, and what patterns can it reveal?
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #17 Gene Expression Microarrays
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
 #17 Gene Expression Microarrays
 What is Reverse Transcriptase (RT) and what role does it play in retroviruses?
 Explain the technique of Real-time Quantitative PCR (qPCR) and its utility in biological research.
-Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR. 
+Define RT-qPCR and elucidate how it combines aspects of both RT and qPCR.
 Discuss the sensitivity and specificity of RT-qPCR for detecting RNA levels in samples.
 Differentiate each technique (RT-PCR, qPCR, and RT-qPCR) and its uses.
 
-#18 TALENs and ZFNs 
+#18 TALENs and ZFNs
 Add questions
 
 #18 CRISPR Native Bacteria Function
 How was CRISPR discovered? What does the CRISPR acronym stand for?
-What did Francisco Mojica at the University of Alicante in Spain find? How was CRISPR first identified in bacteria? What is the purpose of the repeated sequences? What organisms have been found to naturally possess CRISPR systems? 
+What did Francisco Mojica at the University of Alicante in Spain find? How was CRISPR first identified in bacteria? What is the purpose of the repeated sequences? What organisms have been found to naturally possess CRISPR systems?
 How does CRISPR function as a bacterial immune system? How did Philippe Horvath at Danisco improve their yogurt shelf life in 2005 using CRISPR?
 What does the native Cas9 nuclease protein do in bacteria?
-Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline 
+Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline
 
 #18 VIDEO: Bozeman Science: What is CRISPR?
 Published on Feb 18, 2016
-https://www.youtube.com/watch?v=MnYppmstxIs 
+https://www.youtube.com/watch?v=MnYppmstxIs
 
 #18 CRISPR Native Bacteria Function
 
@@ -561,8 +561,8 @@ https://www.youtube.com/watch?v=MnYppmstxIs
 Emmanuelle Charpentier and Jennifer Doudna are considered the pioneers of CRISPR/Cas9 technology. What did they do to create the gene editing technology from the native Cas9 protein?
 What are CRISPR RNA (crRNA) and trans-activating CRISPR RNA (tracrRNA)? How do they form the guide RNA (gRNA)? Explain how the CRISPR/Cas9 system can be programmed to target specific DNA sequences.
 What is the protospacer adjacent motif (PAM)? How does PAM restrict the effectiveness of CRISPR/Cas9? Are there any limitations to the kinds of DNA sequences that CRISPR/Cas9 can target?
-CRISPR/Cas9 is often referred to as  “molecular scissors”. Why? Can CRISPR/Cas9 edit DNA on its own, or does it just cut?
-Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline, https://www.nobelprize.org/prizes/chemistry/2020/popular-information/ 
+CRISPR/Cas9 is often referred to as  "molecular scissors". Why? Can CRISPR/Cas9 edit DNA on its own, or does it just cut?
+Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline, https://www.nobelprize.org/prizes/chemistry/2020/popular-information/
 
 #19 CRISPR/Cas9 Invention and Design
 

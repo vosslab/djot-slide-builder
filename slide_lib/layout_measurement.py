@@ -2,6 +2,7 @@
 
 import collections.abc
 import dataclasses
+import math
 
 import PIL.Image
 import PIL.ImageFont
@@ -121,9 +122,9 @@ class MeasurementSession:
 			if key in self._profiles:
 				raise ValueError(f"theme has duplicate validated font face: {profile.family}")
 			self._profiles[key] = (profile, metric, str(slide_lib.presentation_theme.font_asset_path(profile)))
-		self._faces: dict[tuple[tuple[object, ...], int], PIL.ImageFont.FreeTypeFont] = {}
-		self._advances: dict[tuple[tuple[object, ...], int, str], float] = {}
-		self._line_metrics: dict[tuple[tuple[object, ...], int], tuple[float, float]] = {}
+		self._faces: dict[tuple[tuple[object, ...], float], PIL.ImageFont.FreeTypeFont] = {}
+		self._advances: dict[tuple[tuple[object, ...], float, str], float] = {}
+		self._line_metrics: dict[tuple[tuple[object, ...], float], tuple[float, float]] = {}
 		self._paragraphs: dict[tuple[object, ...], tuple[float, float, int]] = {}
 		self._fragments: dict[tuple[object, ...], tuple[str, ...]] = {}
 		self.capacity_diagnostics: list[slide_lib.capacity_report.CapacityDiagnostic] = []
@@ -162,14 +163,12 @@ class MeasurementSession:
 		except KeyError as error:
 			raise ValueError(f"theme has not validated the selected font face: {family}") from error
 
-	def _size_quarters(self, size_pt: float) -> int:
-		"""Return an exact quarter-point cache identity, rejecting ambiguous sizes."""
-		if not isinstance(size_pt, (int, float)) or isinstance(size_pt, bool) or size_pt <= 0:
+	def _size_key(self, size_pt: float) -> float:
+		"""Cache the actual positive size without requiring a quarter-point grid."""
+		if not isinstance(size_pt, (int, float)) or isinstance(size_pt, bool) or \
+				not math.isfinite(size_pt) or size_pt <= 0:
 			raise ValueError("font measurement size must be a positive point value")
-		quarters = round(size_pt * 4)
-		if abs(size_pt * 4 - quarters) > 1e-9:
-			raise ValueError("font measurement size must be an exact quarter-point value")
-		return quarters
+		return size_pt
 
 	def _face_identity(self, profile: object) -> tuple[object, ...]:
 		"""Return the complete immutable bundled-face identity for cache ownership."""
@@ -182,9 +181,9 @@ class MeasurementSession:
 		profile, _metric, path = self._entry(family, bold, italic)
 		if not isinstance(profile, slide_lib.presentation_theme.FontFaceProfile):
 			raise ValueError("theme measurement profile must be a FontFaceProfile")
-		quarters = self._size_quarters(size_pt)
+		size_key = self._size_key(size_pt)
 		size_px = max(1, round(point_height(size_pt, self.theme)))
-		key = (self._face_identity(profile), quarters)
+		key = (self._face_identity(profile), size_key)
 		if key not in self._faces:
 			self._faces[key] = PIL.ImageFont.truetype(path, size_px, index=profile.face_index)
 		return self._faces[key]
@@ -194,7 +193,7 @@ class MeasurementSession:
 		profile, _metric, _path = self._entry(family, bold, italic)
 		if not isinstance(profile, slide_lib.presentation_theme.FontFaceProfile):
 			raise ValueError("theme measurement profile must be a FontFaceProfile")
-		key = (self._face_identity(profile), self._size_quarters(size_pt), text)
+		key = (self._face_identity(profile), self._size_key(size_pt), text)
 		if key not in self._advances:
 			self._advances[key] = self._face(family, bold, italic, size_pt).getlength(text)
 		return self._advances[key]
@@ -205,7 +204,7 @@ class MeasurementSession:
 		if not isinstance(profile, slide_lib.presentation_theme.FontFaceProfile) or \
 				not isinstance(metric, slide_lib.presentation_theme.FontMetricProfile):
 			raise ValueError("theme measurement profile must be a validated font metric")
-		key = (self._face_identity(profile), self._size_quarters(size_pt))
+		key = (self._face_identity(profile), self._size_key(size_pt))
 		if key not in self._line_metrics:
 			scale = point_height(size_pt, self.theme) / metric.units_per_em
 			self._line_metrics[key] = (metric.ascender * scale, -metric.descender * scale)

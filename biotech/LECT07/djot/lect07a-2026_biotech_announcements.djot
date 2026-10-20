@@ -1,0 +1,498 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 07A
+
+## Biotechnology: Announcements
+## Dr. Neil Voss
+## Oct 15, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- _Announcements_
+- Individual Project Overview
+- Choose Presentation Order
+- BioTech News
+- More Discussion of Individual Project
+- Next week: {=Shark Talk presentations=}
+
+=== layout: big-image
+
+@image
+
+![Slide image 2](assets/lect05a-2026_biotech_announcements/image_002.png)
+
+@caption
+Make Sure Dr. Voss Is Recording
+
+=== layout: two-panels
+
+# How to Use Zoom Like a Pro
+
+@left
+
+- 1. Mute yourself when you are not speaking.
+- 2. Plug in your headphones.
+- 3. Turn off video if you have a slow connection
+  - Use the secure Zoom link in Blackboard.
+
+@right
+
+![Slide image 3](assets/lect05a-2026_biotech_announcements/image_003.png)
+
+=== layout: stacked-panels
+
+# Dr. Voss YouTube Channel
+
+@top
+
+![Slide image 4](assets/lect05a-2026_biotech_announcements/image_004.png)
+
+@bottom
+
+[https://www.youtube.com/c/NeilVossLab/videos]{color=red}
+
+watch our weekly "[_Stump the Vibe Coder_](https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48)" podcast
+
+=== layout: one-plus-two-panels
+
+# Discord Server
+
+@left
+
+- I created a Discord Server called Neil Voss Lab
+  - It is available as a mobile app, a desktop app, and a website
+  - Be sure to connect to my server, not create your own server
+- Sign-up link here: https://discord.gg/xXQWc67C8M
+
+@top-right
+
+![Slide image 5](assets/lect05a-2026_biotech_announcements/image_005.png)
+
+@bottom-right
+
+![Slide image 6](assets/lect05a-2026_biotech_announcements/image_006.png)
+
+@notes
+
+This is a general announcement for the course contact channel
+not an assignment slide. Discord remains a course contact channel.
+
+=== layout: two-panels
+
+# Office Hours
+
+@left
+
+![Slide image 7](assets/lect05a-2026_biotech_announcements/image_007.png)
+
+@right
+
+- Schaumburg office\: SCH 600E
+- Zoom link\:
+  - https://zoom.us/j/97638754024
+  - Meeting ID: 976 3875 4024
+  - Password: voss
+- Available\:
+  - Wednesdays, 2\:30-3\:30 p.m.
+  - Thursdays, 12\:30-1\:30 p.m.
+  - Also available by appointment
+
+=== layout: one-panel
+
+# Ways to Contact Dr. Voss
+
+@body
+
+- [Office hours]{color=green}: Attend to ask in person.
+- [Discord]{color=red}: Fastest; DM me or post to class. I check several times daily; replies take 1-2 calendar days.
+- [Email]{color=blue}: About 20 emails daily; I check once daily for mental health. Replies take 2 business days.
+- [Anonymous Google Form]{color=purple}: Sent to my email and read on laptop; replies take 2-4 business days.
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+- Google Form to send me an *_anonymous_* message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- https://forms.gle/gZ8nx28q9YDwSy8g7
+
+@right
+
+![Anonymous Form](assets/anonymous_form.png)
+
+=== layout: section
+# Discussion Points
+
+=== layout: one-panel
+hidden: true
+
+# Setting Your Name in Zoom
+
+@body
+
+- Use your proper first name or a consistent nickname.
+- Discussion marks are assigned by sorting names alphabetically by first name.
+- Do not use:
+  - Start with your last name (e.g., "Smith Jane").
+  - Use something obscure (e.g., "iPhone User").
+  - Use a different name each time (consistency is key).
+
+- How to Change Your Name\:
+  - Click on the "Participants" button at the bottom of the meeting window.
+  - Hover over your name in the participant list and click "More."
+  - Select "Rename."
+  - Enter your new name and click "OK."
+
+=== layout: one-panel
+hidden: true
+
+# Change Name Before a Meeting
+
+@body
+
+- Open the Zoom desktop client or the mobile app.
+- Go to your profile by clicking on your profile picture or initials in the top-right corner.
+- Select "Profile" from the dropdown menu.
+- Click "Edit" next to your name.
+- Enter your preferred name and then click "Save."
+
+=== layout: one-panel
+hidden: true
+
+# [How to Earn Discussion Marks]{color=blue}
+
+@body
+
+- Participate in icebreaker activities at the start of class.
+- Engage in the class chat by responding to direct questions during the lecture.
+- Provide thoughtful answers to open-ended questions about the material.
+- Ask clarifying questions if something is unclear.
+- Share personal experiences that relate to the course content.
+- Post relevant news articles or resources that connect to the topics we discuss.
+- Be on time for the Zoom meeting to earn discussion marks for punctuality.
+- Adding emoji tags to another student's comment earns 0.1 points, up to 10 points.
+
+=== layout: one-panel
+hidden: true
+
+# [Discussion Marks FAQ]{color=blue}
+
+@body
+
+- 1. Discussion Marks are mostly [based on the chat]{color=red}
+  - Not all comments in the chat count, such as "hi", "thanks", or "yes"
+  - You can earn up to 6 discussion marks from the chat
+- 2. Answering Polls does NOT count
+  - It is not easy for me to obtain that data
+- 3. Being present in the Zoom meeting when class time starts
+  - You can earn up to 2 discussion marks for [being on-time to class]{color=red}
+- 4. Direct messages do not count
+
+=== layout: one-panel
+
+# Weekly Talking Marks
+
+@body
+
+- Talking Marks (1-6 talking marks)
+  - Before each lecture week, I will distribute a list of topics for students to read about in the textbook and with online and other resources.
+  - At the beginning of class, each student will be randomly assigned a topic and will talk about their topic from their seat.
+  - I will provide next week's talking points at the end of each class, including today.
+- Biotech news (1-4 talking marks)
+
+=== layout: big-image
+
+@image
+
+![talking marks spreadsheet](assets/week06-tp_scores.png)
+
+@caption
+
+Talking Marks: Through Week 6 (Oct 14)
+
+More marks lower mark value. Missed work may earn partial credit.
+
+@notes
+
+Instructor placeholder only.
+Replace with a reviewed weekly image before showing; only include student IDs and scores, no names
+
+=== layout: section
+
+# Grading and Assessment
+
+=== layout: one-panel
+hidden: true
+
+# Student Profile - Completed Assignment
+
+@body
+
+- Include a picture of your face
+- Answer the following questions about yourself\:
+  - what are your career goals?
+  - what is your favorite biology subject?
+  - what would you like to learn in this class?
+  - what are you nervous about in this class?
+  - what is your favorite local restaurant?
+  - what is one interesting thing that you did over the break?
+- Link Available on Blackboard
+  - Was due Sept 21, 2026; no longer an active assignment
+- See link on Blackboard
+
+@notes
+
+Archived assignment. Keep this slide hidden after Sept 21.
+
+=== layout: one-panel
+
+# Important Course Links
+
+@body
+- Overall Biotechnology syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/
+- Course weekly schedule
+  - https://docs.google.com/document/d/1SyZILY9dM-RlDLfR6apSJzJg6vpXLXMjC7ypwR26qWg/edit
+- Points and assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+
+=== layout: one-panel
+
+# Student Resources
+
+@body
+
+- Instructor information and office hours
+  - https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
+- Policies and student resources
+  - https://vosslab.github.io/syllabus/fall_2026/shared/policies/
+- University important dates
+  - https://docs.google.com/spreadsheets/d/1YuK02ObBJgxFlQSLx0xtKdaLNBfuOgM466Hh6MRQczE/edit
+
+=== layout: one-panel
+
+# Due This Week
+
+@body
+
+- [*Oct 22:*]{underline=true} Sharktank presentations!!
+- [*Oct 25:*]{underline=true} Executive Summary
+- [*Oct 29:*]{underline=true} Milestones and Competition Form
+- Check Blackboard for [*Homework 4*]{underline=true} and the [*Theranos form*]{underline=true}.
+
+@notes
+
+Dates follow the Fall 2026 schedule. No new homework deadline is inferred.
+
+=== layout: one-panel
+
+# BioTech News: Article Selection
+
+@body
+
+- Find a biotechnology news article from the past two years.
+- Focus on molecular or cellular biology techniques.
+- Look for a product with potential for near-term development.
+- Check that the article fits modern biotechnology rather than a generic device, drug, or remedy.
+
+@notes
+
+BioTech News Discussion #1 is scheduled for Oct 15, 2026.
+Original LECT06 announcement uses a one-minute presentation and the past two years.
+
+=== layout: one-panel
+
+# BioTech News: One-Minute Presentation
+
+@body
+
+- Use your assigned slide in the provided deck; customize it as you wish.
+- Include the article link in the speaker notes.
+- Present for one full minute.
+- What product or process is being developed, and how does it fit modern biotechnology?
+- Which organism, cell, gene, protein, or other biological component makes it work?
+
+@notes
+
+BioTech News Discussion #1 is scheduled for Oct 15, 2026.
+Original LECT06 announcement uses a one-minute presentation and the past two years.
+
+=== layout: section
+hidden: true
+
+# General Announcements
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+Hide General Announcements if there are no unhidden slides that follow
+
+=== layout: one-panel
+hidden: true
+
+# Schaumburg Natural Science Club
+
+@body
+
+- Upcoming Meetings\:
+  - [TBD]{color=red}
+
+- All meetings at 5PM on Mon/Tues
+- Outreach/volunteer opportunities
+- Fun social activities
+- Professional development
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Spring 2027 Registration
+
+@body
+
+- Spring registration usually starts November 1.
+- Meet with your advisor if you are unsure what to take.
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Dr. Voss Spring Courses
+
+@body
+
+- Spring course information will be posted when available.
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Dr. Voss Summer Course
+
+@body
+
+- Summer course information will be posted when available.
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: section
+hidden: true
+
+# Course Evaluations
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- You will receive an email when course evaluations open.
+- Anonymous feedback helps improve the course.
+- Please complete the survey before its published deadline.
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- Course evaluations usually take 5-10 minutes to complete.
+- Access the survey here\:
+  - https://roosevelt.campuslabs.com/eval-home/
+  - Students may log in with their RU Net ID and password.
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Extra Time to Submit Business Plan
+
+@body
+
+- I decided to link evaluation completions to extra time for business plan submission
+- Completion of student evaluations can add up to 5 more days for submitting the business plan
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: one-panel
+hidden: true
+
+# Group Business Plan Extra Time
+
+@body
+
+- I cannot see individual students only total completion
+- percentage. [Ends Sun, Dec 8.]{color=red}
+
+@notes
+
+Archived announcement carried forward for later reuse.
+Review dates and instructions before unhiding.
+
+=== layout: two-panels
+
+# Veridian Dynamics
+
+@left
+
+![Slide image 10](assets/lect05a-2026_biotech_announcements/image_010.png)
+
+@right
+
+- Video #8
+- Bosses.
+- Necessary.
+
+@notes
+
+always last fun slide of this deck for BIOL 480
+never hide, increment up one each week
+see /Volumes/WorkExternal/SynDocuments/teaching/MOVIES/biotech_movies/Veridian_Dynamics/ for movie list
+
+=== layout: theend
+
+# THE END

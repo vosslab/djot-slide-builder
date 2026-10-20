@@ -282,6 +282,13 @@ def _add_text_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 	if style_value.underline:
 		attributes[_qname(STYLE_NS, "text-underline-style")] = "solid"
 		attributes[_qname(STYLE_NS, "text-underline-width")] = "auto"
+	if style_value.background is not None:
+		attributes[_qname(FO_NS, "background-color")] = f"#{style_value.background}"
+	if style_value.strikethrough:
+		attributes[_qname(STYLE_NS, "text-line-through-style")] = "solid"
+		attributes[_qname(STYLE_NS, "text-line-through-type")] = "single"
+	if style_value.position is not None:
+		attributes[_qname(STYLE_NS, "text-position")] = f"{style_value.position} 70%"
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "text-properties"), attributes)
 
 
