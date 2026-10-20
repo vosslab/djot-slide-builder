@@ -255,6 +255,10 @@ For `two-panels` with an image and text, place either kind in `@left` and the ot
 Vary the image side through the deck, alternating on consecutive image/text slides. Express the
 placement in these existing slots; the compiler renders the sides exactly as authored.
 
+A body or panel may contain paragraphs, lists, component images, and one table together.
+The compiler lays out mixed table content vertically in source order. An optional local heading
+comes first; use separate slots for multiple tables.
+
 `section` and `title-only` are deliberately different.  `section` is `ONLY_TEXT`: one centered,
 Subtitle-style outline box, no title placeholder, and a `#` heading becomes that centered text.
 Use it for a divider.  `title-only` is `TITLE_ONLY`: it has a top title placeholder and a native

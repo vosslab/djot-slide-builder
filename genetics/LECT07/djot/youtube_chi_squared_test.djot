@@ -1,0 +1,16 @@
+=== layout: big-image
+
+@image
+
+![Chi&#45;squared Test](assets/youtube/WXPBoFDqNVk.png)
+
+@caption
+
+Chi&#45;squared Test
+
+[https://www.youtube.com/watch?v=WXPBoFDqNVk](https://www.youtube.com/watch?v=WXPBoFDqNVk)
+
+@notes
+
+YouTube source: https://www.youtube.com/watch?v=WXPBoFDqNVk
+Generated with tools/make_youtube_slide.py; ordinary builds use local assets.

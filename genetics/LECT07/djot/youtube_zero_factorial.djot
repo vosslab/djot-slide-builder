@@ -1,0 +1,22 @@
+=== layout: big-image
+
+@image
+
+![Zero Factorial &#45; Numberphile](assets/youtube/Mfk_L4Nx2ZI.png)
+
+@caption
+
+Zero Factorial &#45; Numberphile
+
+[https://www.youtube.com/watch?v=Mfk_L4Nx2ZI](https://www.youtube.com/watch?v=Mfk_L4Nx2ZI)
+
+@notes
+
+YouTube source: https://www.youtube.com/watch?v=Mfk_L4Nx2ZI
+Generated with tools/make_youtube_slide.py; ordinary builds use local assets.
+
+Source: lect07b-prob_of_progeny.odp, slide 14.
+Original slide title: Numberphile 0!
+Original prompts:
+- Why is 0 factorial equal to 1?
+  - Why does 0! = 1

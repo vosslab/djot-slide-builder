@@ -240,19 +240,7 @@ Source: lect07b-prob_of_progeny.odp, slide 12.
 Source: lect07b-prob_of_progeny.odp, slide 13.
 
 
-=== layout: one-panel
-
-# *Numberphile 0!*
-
-@body
-
-- Why is 0 factorial equal to 1?
-  - Why does 0! = 1
-- Video Link\: [https\://youtu.be/Mfk\_L4Nx2ZI](https://youtu.be/Mfk_L4Nx2ZI)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 14.
+=== include: youtube_zero_factorial.djot
 
 === layout: section
 

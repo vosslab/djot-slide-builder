@@ -3,3 +3,4 @@ Pillow  # Validate extracted raster image dimensions and content
 fonttools  # Read metrics from bundled, hash-verified layout fonts
 rich  # Concise presentation-build progress, summaries, and error panels
 PyYAML  # Safe loading of untracked course URL configuration
+yt-dlp  # Fetch YouTube titles and thumbnails for explicitly generated slides

@@ -1,5 +1,23 @@
 ## 2026-10-20
 
+### Fixes and Maintenance
+
+- Align strict lint with the existing ordered prose/list/image/table renderer. Accept supported
+  content around a single table while preserving table shape and layout-specific restrictions.
+  Fix LECT07D's line-132 lint rejection without changing lecture content or rendering geometry.
+  Verify strict native lint for all 62 slides and 120 focused parser, lint, and layout tests.
+
+### Additions and New Features
+
+- Add an explicit YouTube slide generator using yt-dlp titles and thumbnails, ordinary
+  `big-image` fragments, local PNG assets, and full visible clickable watch URLs.
+- Restyle LECT07B's Numberphile video using its thumbnail and add Chi-squared Test before
+  LECT07D's closing slide. Keep the Numberphile prompts and source provenance in notes.
+- Verify generator/layout/include tests, both ODP/PDF builds, rendered video slides, and
+  full-URL PDF hyperlinks. LECT07B retains 51 authored slides; LECT07D grows from 61 to 62.
+  Initial strict lint passed for LECT07B and the new video fragment but exposed LECT07D's
+  pre-existing prose/table rejection at line 132; the validation fix above resolves it.
+
 - Complete six independent equation-pipeline audit passes. Reconcile stale math contracts
   in decision records, document module ownership, clarify the mixed-math diagnostic, and
   apply local comment/separator style. Leave proposed test changes for human review.

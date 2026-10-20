@@ -271,7 +271,7 @@ def validate_table(table: slide_lib.native_model.Table) -> None:
 #============================================
 def validate_table_region(blocks: tuple[slide_lib.native_model.Block, ...],
 		location: slide_lib.native_model.SourceLocation, context: str) -> slide_lib.native_model.Table | None:
-	"""Return a sole table, or explain why the region has no table destination."""
+	"""Validate one table alongside the compiler's supported ordered-flow blocks."""
 	tables = [block for block in blocks if isinstance(block, slide_lib.native_model.Table)]
 	if not tables:
 		return None
@@ -280,7 +280,9 @@ def validate_table_region(blocks: tuple[slide_lib.native_model.Block, ...],
 			f"{context} supports one table; place the second table in a separate slot or use a one-table slide")
 	table = tables[0]
 	for block in blocks:
-		if block is table or isinstance(block, slide_lib.native_model.Heading):
+		if block is table or isinstance(block, (slide_lib.native_model.Heading,
+				slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock,
+				slide_lib.native_model.Image)):
 			continue
 		raise source_error(block.location,
 			f"{context} table cannot mix with {type(block).__name__}; place it in a separate slot or use a one-table slide")
@@ -291,7 +293,7 @@ def validate_table_region(blocks: tuple[slide_lib.native_model.Block, ...],
 #============================================
 def validate_flow_region(blocks: tuple[slide_lib.native_model.Block, ...],
 		location: slide_lib.native_model.SourceLocation, context: str) -> None:
-	"""Allow ordered text/list and image flow while retaining table's sole-mode rule."""
+	"""Allow ordered text/list, image, and single-table flow with a leading heading."""
 	headings = tuple(block for block in blocks if isinstance(block, slide_lib.native_model.Heading))
 	if headings and blocks[0] is not headings[0]:
 		raise source_error(headings[0].location,

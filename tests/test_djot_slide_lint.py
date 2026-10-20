@@ -3,8 +3,15 @@
 # Standard Library
 import pathlib
 
+# Third-party modules
+import pytest
+
 # Local modules
 import slide_lib.djot_lint
+import slide_lib.djot_parser
+import slide_lib.layout_content
+import slide_lib.layout_engine
+import slide_lib.presentation_theme
 
 
 #============================================
@@ -26,6 +33,32 @@ def test_hidden_slide_still_checks_its_assets(tmp_path: pathlib.Path) -> None:
 		"=== layout: one-panel\nhidden: true\n@body\n![Figure](assets/missing.png)\n")
 	problems, _summary = slide_lib.djot_lint.lint_paths([path])
 	assert problems[0].message == "component image is missing: assets/missing.png"
+
+
+#============================================
+@pytest.mark.parametrize("prefix, suffix, slot", (
+	("=== layout: one-panel\n\n@body\n\n", "", "body"),
+	("=== layout: two-panels\n\n@left\n\n", "\n\n@right\n\nExplanation.\n", "left"),
+	("=== layout: title-only\n\n# Results\n\n", "", "body"),
+))
+def test_lint_accepts_renderable_prose_table_flow(tmp_path: pathlib.Path,
+		prefix: str, suffix: str, slot: str) -> None:
+	"""Lint must accept the prose/table sequence used by editable chi-square slides."""
+	body = "Hypothesis: a 9:3:3:1 ratio.\n\n"
+	body += "| Class | Observed |\n| --- | --- |\n| A-B- | 91 |\n\n"
+	body += "- Total offspring: 160\n"
+	path = write_source(tmp_path, prefix + body + suffix)
+	problems, _summary = slide_lib.djot_lint.lint_paths([path])
+	assert problems == []
+	deck = slide_lib.djot_parser.parse_deck(path)
+	result = slide_lib.layout_engine.compile_layout_deck(
+		deck, slide_lib.presentation_theme.default_theme())
+	objects = [item for item in result.plan.slides[0].objects if item.slot_id == slot]
+	assert [type(item.content) for item in objects] == [
+		slide_lib.layout_content.TextContent, slide_lib.layout_content.TableContent,
+		slide_lib.layout_content.TextContent]
+	assert all(first.rectangle.y + first.rectangle.height <= second.rectangle.y
+		for first, second in zip(objects, objects[1:]))
 
 
 #============================================

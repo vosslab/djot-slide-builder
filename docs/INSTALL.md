@@ -11,6 +11,8 @@ presentations. It imports trusted existing ODP into extended-Djot source.
   the repository OTP master, and ODP-derived PDF output.
 - Poppler, including `pdfinfo`, for native end-to-end PDF verification.
 - The packages in `pip_requirements.txt`.
+- yt-dlp (included in the Python requirements) for explicit YouTube slide generation.
+  Ordinary builds use saved thumbnails and do not access YouTube.
 - Node.js and the locked npm dependencies for local MathJax equation rendering.
 - Jotdown 0.10.0 on `PATH` for strict-Djot source acceptance. `source_me.sh` adds the conventional
   Cargo bin directory when it exists.

@@ -7,6 +7,34 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+### Prose and table validation
+
+**Decision.** Accept paragraphs, lists, and component images alongside one table in an ordinary
+body or panel, matching the existing ordered-flow renderer. Keep rectangular-table validation,
+one table per region, and layout-specific content restrictions.
+
+**Why.** The old table-only lint restriction rejected successfully rendered LECT07D slides.
+
+**Consequence.** Strict lint accepts supported mixed content without changing slide sources or
+rendering geometry. Unsupported block combinations still produce source-located errors.
+
+**Owner.** [layout_validation.py](../slide_lib/layout_validation.py) and
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+
+### Explicit YouTube slide generation
+
+**Decision.** Generate ordinary `big-image` Djot fragments with yt-dlp metadata and a locally
+validated PNG thumbnail. Include sibling fragments from lecture sources using existing syntax.
+Show the full canonical watch URL as both the editable label and clickable destination.
+
+**Why.** The StVC layout already provides the requested composition. Explicit generation keeps
+network access outside ordinary builds and leaves the existing renderer unchanged.
+
+**Consequence.** Regenerating replaces the selected fragment and thumbnail. Keep fragments beside
+their master decks because included images resolve relative to the master directory.
+
+**Owner.** [make_youtube_slide.py](../tools/make_youtube_slide.py) and [USAGE.md](USAGE.md).
+
 ### MathJax equations occupy complete blocks
 
 **Decision.** Render LaTeX equations with local MathJax 4, STIX2 font data, and the mhchem

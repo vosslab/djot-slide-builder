@@ -20,6 +20,32 @@ must match; replaced artwork and transformed frames are marked for manual review
 not trim images, modify slides, or select layouts. See
 [image_area_regression_followup.md](active_plans/image_area_regression_followup.md) for limitations.
 
+## Generate a YouTube slide
+
+Generate a thumbnail, editable title, and full clickable YouTube watch URL:
+
+```bash
+source source_me.sh && python3 tools/make_youtube_slide.py \
+    -v WXPBoFDqNVk -o genetics/LECT07/djot/youtube_chi_squared_test.djot
+```
+
+`-v` also accepts a YouTube watch URL or `youtu.be` URL. Place the output fragment beside
+the master deck, then insert it at the desired slide boundary:
+
+```djot
+=== include: youtube_chi_squared_test.djot
+```
+
+The generator uses yt-dlp to fetch metadata and one thumbnail, never video or audio.
+It validates the downloaded image and saves a PNG in `assets/youtube/` beside the fragment.
+Downloads are staged under root `_temp/` and removed when the command finishes. Failed downloads
+or image validation leave existing outputs intact. The generated slide uses the ordinary
+`big-image` layout; titles are literal text and URLs omit tracking and playlist parameters.
+
+Regeneration explicitly replaces the output fragment and its thumbnail, including any manual
+edits to that fragment. Normal builds use saved files offline. Included fragments inherit the
+master deck's theme and are omitted as standalone decks by folder builds.
+
 ## Refresh the podcast announcement
 
 Preview the latest published Stump the Vibe Coder episode in a lecture's announcement deck:

@@ -57,6 +57,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Course links and evergreen announcements
 
+- Use a YouTube slide generator with the existing StVC-style `big-image` layout: thumbnail,
+  title, and visible clickable full `https://www.youtube.com/watch?v=...` URL.
+  A separate layout type is unnecessary; there is room for the full URL.
+
 - Course Zoom and Discord URLs are not on the syllabus; include the actual course URLs in the
   student slides. Only Biotechnology has a Zoom meeting this semester (Fall 2026).
 - Any URL for the course should be in the slides. The slides are generally available only to
