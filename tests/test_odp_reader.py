@@ -472,8 +472,9 @@ def test_reader_prefers_metafile_over_preview(tmp_path: pathlib.Path,
 
 
 #============================================
+@pytest.mark.parametrize("member", ["Pictures/legacy.svm", "ObjectReplacements/Object 1"])
 def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
-		monkeypatch: pytest.MonkeyPatch) -> None:
+		monkeypatch: pytest.MonkeyPatch, member: str) -> None:
 	"""Preview-less GDI content publishes validated SVG with live text."""
 	svg = b'<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100"><text x="5" y="30">Gene</text></svg>'
 	def convert(input_path: pathlib.Path, output_dir: pathlib.Path,
@@ -490,10 +491,10 @@ def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
 
 	monkeypatch.setattr(odp_metafile.slide_lib.libreoffice, "convert_file", convert)
 	content = CONTENT_PREFIX + page("figure", frame(
-		'<draw:image xlink:href="Pictures/legacy.svm"/>',
+		f'<draw:image xlink:href="{member}"/>',
 	)) + CONTENT_SUFFIX
 	input_path = write_odp(tmp_path, content, media={
-		"Pictures/legacy.svm": b"VCLMTF\x01\x00conversion-source",
+		member: b"VCLMTF\x01\x00conversion-source",
 	})
 	assets_dir = tmp_path / "assets"
 	assets_dir.mkdir()

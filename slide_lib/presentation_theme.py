@@ -776,3 +776,11 @@ def default_theme(color_theme: str = DEFAULT_COLOR_THEME) -> PresentationTheme:
 	return dataclasses.replace(load_theme(DEFAULT_TEMPLATE_PATH),
 		gradient_start_color=colors.band_color, accent_color=colors.accent_color,
 		color_theme_name=colors.name)
+
+
+#============================================
+def is_visible_url(text: str) -> bool:
+	"""Identify URL labels independently of their hyperlink destinations."""
+	value = text.strip().lower()
+	return value.startswith(("https://", "http://", "www.")) and not any(
+		character.isspace() for character in value)

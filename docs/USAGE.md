@@ -25,13 +25,13 @@ not trim images, modify slides, or select layouts. See
 Preview the latest published Stump the Vibe Coder episode in a lecture's announcement deck:
 
 ```bash
-source source_me.sh && python3 refresh_podcast.py genetics/LECT07
+source source_me.sh && python3 tools/refresh_podcast.py genetics/LECT07
 ```
 
 Save it after reviewing the diff:
 
 ```bash
-source source_me.sh && python3 refresh_podcast.py genetics/LECT07 --write
+source source_me.sh && python3 tools/refresh_podcast.py genetics/LECT07 --write
 ```
 
 Supply multiple lecture folders or specific `lect##a-*.djot` files to refresh several decks
@@ -49,10 +49,43 @@ identifies it for replacement on future runs; retain that marker when editing. M
 ambiguous insertion points stop the command before source writes. A refresh replaces the
 previous podcast slide rather than adding another. Old thumbnail files are retained.
 
+For historical announcements, select by each cover's lecture date:
+
+```bash
+source source_me.sh && python3 tools/refresh_podcast.py genetics biotech --by-lecture-date --write
+```
+
+This selects the newest episode published on or before the lecture date in America/Chicago,
+including same-day publications. It never substitutes a later episode. If the recent RSS feed
+has no eligible entry, the command stops before changing decks; an older archive is needed.
+Folder discovery includes announcement filenames, not other `lect##a` course-introduction decks.
+All required thumbnails are fetched and validated before source writes.
+
 Build the selected decks normally afterward. Builds use saved local assets and never refresh
 the episode automatically, so a past lecture retains the episode selected for it.
 
 ## Build native decks
+
+Check every tracked standalone deck's slide 1 against the universal title format:
+
+```bash
+source source_me.sh && python3 -m pytest tests/test_slide_one.py
+```
+
+The check resolves includes, allows an unknown chapter to be omitted, and requires announcement
+topics to be exactly "Announcements" with no chapter. Failures identify the source location and
+write `report_slide_one.txt`: correct that cover using
+[HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md#slide-1-title-slide), then rerun the check.
+Canonical chapter assignments still require editorial verification against BPW.
+
+The separate native export acceptance runner checks that cover text survives into the PDF:
+
+```bash
+source source_me.sh && python3 -m pytest tests/e2e/test_slide_one_pdf.py
+```
+
+On macOS agents must run LibreOffice conversions outside the sandbox. Extractable PDF text does
+not replace checking selection and copying in the intended PDF viewer.
 
 Write editable ODP for one source deck:
 
@@ -206,3 +239,29 @@ report source-located unsupported-content and fitting concerns.
 
 - [ ] Record attended LibreOffice Impress click playback before claiming native animation playback
   support.
+
+## Local course links
+
+Keep private Discord and Zoom URLs in ignored root `course_links.local.yaml`. Keys are course theme
+names, matching `color-theme` in Djot:
+
+```yaml
+genetics:
+  discord: https://example.org/genetics-invite
+  office_hours: https://example.org/office-hours
+  zoom_short: https://example.org/meeting
+biotechnology:
+  discord: https://example.org/biotech-invite
+  office_hours: https://example.org/office-hours
+  zoom_short: https://example.org/meeting
+  zoom: https://example.org/biotech-meeting
+```
+
+Write `{{course_url:discord}}` wherever the visible, clickable URL belongs. Any key can be
+used for additional private links. Public links, including all YouTube URLs, stay directly
+in tracked Djot sources. Existing QR images remain alongside links; update their targets
+when changing a URL. Included chapters use the deck's course theme. Missing configuration,
+missing referenced keys, and invalid HTTPS URLs stop the build with a diagnostic. Decks
+without references do not need this file. Copy the local YAML separately to a new checkout.
+Generated ODP/PDF files contain the URLs and remain student distribution artifacts. Ignoring
+the configuration does not erase URLs already committed in source or Git history.

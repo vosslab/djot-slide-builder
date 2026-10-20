@@ -22,6 +22,7 @@ site/
 
 # -------------------- LOCAL REPOSITORY RULES --------------------
 # ADD YOUR CUSTOM IGNORES BELOW
+/course_links.local.yaml
 # Propagation preserves this section.
 # ------------------ END LOCAL REPOSITORY RULES ------------------
 *.svg
@@ -42,3 +43,5 @@ slide_*source.png
 !assets/fonts/**/*.otf
 !assets/fonts/**/*.ttf
 import_report.json
+
+/_temp/

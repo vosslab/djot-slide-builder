@@ -266,32 +266,39 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 		"true", "true", "false", "false", "false")
 
 
-def test_title_frame_is_unfilled_and_behind_editable_text(tmp_path: pathlib.Path) -> None:
-	"""The cover decoration leaves title and metadata text available for selection."""
+@pytest.mark.parametrize("color_theme", ("genetics", "biotechnology"))
+def test_title_decoration_is_master_owned_and_text_remains_on_slide(
+		tmp_path: pathlib.Path, color_theme: str) -> None:
+	"""Cover furniture cannot intercept normal-slide selection of editable metadata."""
 	source_path = tmp_path / "title.djot"
 	source_path.write_text("=== layout: title-slide\n\n# Lecture 05D\n\n"
-		"## Probability Concepts\n\n## Chapter 5\n\n## Dr. Neil Voss\n\n## Sept 29, 2026\n",
-		encoding="utf-8")
-	theme = slide_lib.presentation_theme.default_theme()
+		"## Probability Concepts\n\n## Chapter 5\n\n## Dr. Neil Voss\n\n## Sept 29, 2026\n"
+		"=== layout: one-panel\n# Teaching\n@body\nText\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme(color_theme)
 	plan = slide_lib.layout_engine.compile_layout_deck(
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
-	root = package.parse_xml(exporter._content_xml(
-		plan, theme, exporter._layout_names(plan), {}), "content.xml")
-	page = root.find(f".//{{{exporter.DRAW_NS}}}page")
-	children = list(page)
-	border = next(item for item in children
+	names = exporter._layout_names(plan)
+	root = package.parse_xml(exporter._content_xml(plan, theme, names, {}), "content.xml")
+	with zipfile.ZipFile(theme.template_path) as archive:
+		styles = package.parse_xml(exporter._styles_xml(
+			archive.read("styles.xml"), plan, theme, names), "styles.xml")
+	pages = root.findall(f".//{{{exporter.DRAW_NS}}}page")
+	master_name = pages[0].attrib[f"{{{exporter.DRAW_NS}}}master-page-name"]
+	assert master_name != pages[1].attrib[f"{{{exporter.DRAW_NS}}}master-page-name"]
+	master = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}master-page")
+		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == master_name)
+	border = next(item for item in master
 		if item.attrib.get(f"{{{exporter.DRAW_NS}}}name") == "title-metadata-frame")
-	text_frames = tuple(item for item in children
-		if item.find(f"{{{exporter.DRAW_NS}}}text-box") is not None)
-	assert text_frames and all(children.index(border) < children.index(item)
-		for item in text_frames)
-	assert all(int(border.attrib[f"{{{exporter.DRAW_NS}}}z-index"]) <
-		int(item.attrib[f"{{{exporter.DRAW_NS}}}z-index"]) for item in text_frames)
+	assert border.attrib[f"{{{exporter.DRAW_NS}}}layer"] == "backgroundobjects"
+	assert not pages[0].findall(f"{{{exporter.DRAW_NS}}}rect")
+	paragraphs = pages[0].findall(f".//{{{exporter.TEXT_NS}}}p")
+	assert ["".join(item.itertext()) for item in paragraphs] == [
+		"Lecture 05D", "Probability Concepts", "Chapter 5", "Dr. Neil Voss", "Sept 29, 2026"]
 	style_name = border.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
-	style = next(item for item in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+	style = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}style")
 		if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
 	properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
-	assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == "none"
+	assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == "solid"
 
 
 def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path) -> None:

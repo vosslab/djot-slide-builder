@@ -4,7 +4,7 @@ color-theme: genetics
 
 # Lecture 03A
 
-## Genetics 351/451: Announcements
+## Announcements
 ## Dr. Neil Voss
 ## Sept 15, 2026
 
@@ -14,7 +14,7 @@ color-theme: genetics
 
 @body
 
-- Ice breaker and announcements
+- Announcements
 - Blood and HLA typing
 - DNA fingerprinting
 - SNP genotyping
@@ -108,7 +108,7 @@ Make sure Dr. Voss is recording.
 - 1. Mute yourself when you are not speaking.
 - 2. Plug in your headphones.
 - 3. Turn off video if you have a slow connection.
-  - Use the secure Zoom link in Blackboard.
+  - Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
 
 @right
 
@@ -122,7 +122,28 @@ Make sure Dr. Voss is recording.
 
 @caption
 
-[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for difficult problems.
+Watch Dr. Voss's videos for help with difficult problems.
+
+https://www.youtube.com/c/NeilVossLab/videos
+
+=== layout: big-image
+
+@image
+
+![StVC 32&#58; Ms Taq Man &#8212; Trapped in the PCR Maze &#124; Stump the Vibe Coder Episode 32](assets/stump_the_vibe_coder/h1qDheNahLs.jpg)
+
+@caption
+
+StVC 32&#58; Ms Taq Man &#8212; Trapped in the PCR Maze &#124; Stump the Vibe Coder Episode 32
+
+https://www.youtube.com/watch?v=h1qDheNahLs
+
+@notes
+
+podcast-slide: stump-the-vibe-coder
+Published: 2026-09-10T15:12:57+00:00
+Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 === layout: one-plus-two-panels
 
@@ -132,7 +153,7 @@ Make sure Dr. Voss is recording.
 
 - I created a Discord Server called Neil Voss Lab.
   - You earn credit for signing up, and Discord is the quickest way to reach me.
-- The sign-up link is available on Blackboard.
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website.
   - Be sure to connect to my server rather than creating your own server.
 
@@ -151,7 +172,7 @@ Make sure Dr. Voss is recording.
 @left
 
 - Office: SCH 600E, Schaumburg campus
-- Secure Zoom link: see Blackboard
+- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
   - Thursday, 12:30-1:30 p.m.
   - Wednesday, 2:30-3:30 p.m.
 - Also available by appointment
@@ -183,14 +204,16 @@ Make sure Dr. Voss is recording.
 
 @left
 
-- Use the anonymous Google Form for questions you would rather not ask publicly.
-- The form goes directly to my email and does not identify you to the class.
+- Google Form to send me an *_anonymous_* message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- https://forms.gle/gZ8nx28q9YDwSy8g7
 
 @right
 
-- Send an anonymous Google Form message directly to my email.
-- The form is intended for questions you would rather not ask publicly.
-- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+![Anonymous Form](assets/anonymous_form.png)
+
+
 
 === layout: section
 
@@ -303,17 +326,17 @@ Make sure Dr. Voss is recording.
 
 === layout: two-panels
 
-# Graded vs Total Percentage
+# [*Graded*]{color=#003FFF} vs [*Total*]{color=#C80085} Percentage
 
 @left
 
-- Graded percentage only includes items that have a grade
+- [*Graded percentage*]{color=#003FFF} only includes items that have a grade
 - Ignores all uncompleted assignments
 - More accurate when Dr. Voss has ungraded entries in the grade book
 
 @right
 
-- Total percentage is all gradable items in blackboard.
+- [*Total percentage*]{color=#C80085} is all gradable items in blackboard.
 - Gives you a zero score on all uncompleted assignments.
   - including assignments waiting for a grade from the professor.
 - More accurate when you have unattempted blackboard assignments
@@ -549,12 +572,18 @@ hidden: true
 
 @body
 
-- Q1 – Due Sept 22
-- Q2 – Due Oct 7
-- MidTerm Exam – Due Oct 14
-- Q4 – Due Nov 4
-- Q5 – Due Dec 2
-- Final Exam – Due Dec 9
+- [Quiz 1: Sept 22]{color=#990000}
+- [Quiz 2: Oct 06]{color=#000000}
+- [Midterm: Oct 13]{color=#000000}
+- [Quiz 3: Nov 03]{color=#000000}
+- [Quiz 4: Nov 17]{color=#000000}
+- [Quiz 5: Dec 08]{color=#000000}
+- [Final exam: Dec 15]{color=#000000}
+
+@notes
+
+
+Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: section
 
@@ -594,7 +623,7 @@ hidden: true
 
 - I created a Discord Server called Neil Voss Lab
   - Participation in Discord is technically not required, but I give you are required to sign up
-- Sign-up link is available on Blackboard
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server, you should not create your own server
 
@@ -616,47 +645,61 @@ hidden: true
 
 === layout: two-panels
 
-# Blackboard Homework (Part 1)
+# Homework Due Dates (Part 1)
 
 @left
 
-- HW1 – Due Sept 16
-- HW2 – Due Sept 16
-- HW3 – Due
-- HW4 – Due
-- HW5 – Due
-- HW6 – Due
-
-@right
-
-- Due Wednesdays at Midnight
-- Homework has unlimited attempts and only keeps your highest score
-- I encourage students to work together on assignments, or post to Discord for help
-
-=== layout: two-panels
-hidden: true
-
-# Blackboard Homework
-
-@left
-
-- HW08 – Due Nov 12
-  - Part 1, 2, and 3
-- HW09 – Due Nov 12
-  - Part 1 and 2
-- HW10 – Due Dec 3
-- HW11 – Due Dec 3
-  - Part 1 and 2, ++
-- HW12 – Due Dec 10
-  - Part 1 and 2, ++
-- HW13 – Due Dec 10
+| Assignment | Due date |
+| --- | --- |
+| [Week 01]{color=#990000} | [Sept 22]{color=#990000} |
+| [Week 02]{color=#990000} | [Sept 22]{color=#990000} |
+| [Week 03]{color=#990000} | [Sept 22]{color=#990000} |
+| [Week 04]{color=#000000} | [Oct 06]{color=#000000} |
+| [Week 05]{color=#000000} | [Oct 06]{color=#000000} |
+| [Week 06]{color=#000000} | [Oct 13]{color=#000000} |
 
 @right
 
 - Due Tuesdays at Midnight
 - Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+@notes
+
+Dates verified against the published Fall 2026 Genetics syllabus schedule.
+
+=== layout: two-panels
+hidden: true
+
+# Homework Due Dates (Part 2)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 07]{color=#000000} | [Nov 03]{color=#000000} |
+| [Week 08]{color=#000000} | [Nov 03]{color=#000000} |
+| [Week 09]{color=#000000} | [Nov 17]{color=#000000} |
+| [Week 10]{color=#000000} | [Nov 17]{color=#000000} |
+| [Week 11]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 12]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
+
+@right
+
+- Week 08: Part 1, 2, and 3
+- Week 09: Part 1 and 2
+- Week 11: Part 1 and 2, ++
+- Week 12: Part 1 and 2, ++
+
+- Due Tuesdays at Midnight
+- Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments
   - or post a screenshot to Discord for help
+
+@notes
+
+Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: section
 
@@ -683,25 +726,32 @@ hidden: true
 === layout: two-panels
 hidden: true
 
-# Blackboard Homework
+# Homework Due Dates (Part 2)
 
 @left
 
-- HW09 – Due Nov 15
-- HW10 – Due Nov 29
-  - Challenge, 1 point extra credit
-- HW11 – Due Dec 6
-  - undergrad version
-  - Grad version
-  - Challenge, 1 point extra credit
-- HW12 – Due Dec 13
-- HW13 – Due Dec 13
+| Assignment | Due date |
+| --- | --- |
+| [Week 07]{color=#000000} | [Nov 03]{color=#000000} |
+| [Week 08]{color=#000000} | [Nov 03]{color=#000000} |
+| [Week 09]{color=#000000} | [Nov 17]{color=#000000} |
+| [Week 10]{color=#000000} | [Nov 17]{color=#000000} |
+| [Week 11]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 12]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
 
 @right
+
+- Week 10: Challenge, 1 point extra credit
+- Week 11: undergrad version; Grad version; Challenge, 1 point extra credit
 
 - Due Tuesdays at Midnight
 - Homework is usually 3 questions with unlimited attempts and takes your highest score
 - I encourage students to work together on assignments, or post to Slack
+
+@notes
+
+Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: one-panel
 hidden: true

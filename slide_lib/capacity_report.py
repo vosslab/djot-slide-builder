@@ -30,6 +30,8 @@ class CapacityDiagnostic:
 	floor_size_pt: float
 	cause: CapacityCause
 	minimum_size_pt: float | None = None
+	slide_number: int | None = None
+	slide_title: str = ""
 
 	def __post_init__(self) -> None:
 		"""Require exactly one concrete recovery or physical-boundary representation."""
@@ -39,13 +41,18 @@ class CapacityDiagnostic:
 	def message(self) -> str:
 		"""Return a concise safe build-summary description."""
 		where = f"{self.layout}/{self.slot}"
+		source = f"{self.location.path}:{self.location.line}"
+		if self.slide_number is not None:
+			source = f"{self.location.path}: slide {self.slide_number}"
+			if self.slide_title:
+				source += f' "{self.slide_title}"'
 		if self.required_size_pt is None:
 			if self.minimum_size_pt is None:
 				raise ValueError("physical capacity diagnostic has no safe minimum")
-			return (f"{self.location.path}:{self.location.line}: {where} requires less than "
+			return (f"{source}: {where} requires less than "
 				f"{self.minimum_size_pt:g} pt (floor {self.floor_size_pt:g} pt; "
 				f"{self.cause.value})")
-		return (f"{self.location.path}:{self.location.line}: {where} required "
+		return (f"{source}: {where} required "
 			f"{self.required_size_pt:g} pt below the {self.floor_size_pt:g} pt floor "
 			f"({self.cause.value})")
 

@@ -114,11 +114,19 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 			style = slide_lib.layout_content.RunStyle(
 				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
 				color, bold=bold, italic=italic, link_url=link)
+			if slide_lib.presentation_theme.is_visible_url(inline.value):
+				style = dataclasses.replace(style,
+					font_family=slide_lib.presentation_theme.NARROW_FONT_FAMILY,
+					literal_url=True, link_url=link or inline.value, underline=True)
 			runs.append(slide_lib.layout_content.TextRun(inline.value, style))
 		elif isinstance(inline, slide_lib.native_model.InlineCode):
 			style = slide_lib.layout_content.RunStyle(
 				slide_lib.presentation_theme.MONOSPACE_FONT_FAMILY,
 				color, bold=bold, italic=italic, code=True, link_url=link)
+			if slide_lib.presentation_theme.is_visible_url(inline.value):
+				style = dataclasses.replace(style,
+					font_family=slide_lib.presentation_theme.NARROW_FONT_FAMILY,
+					literal_url=True, link_url=link or inline.value, underline=True)
 			runs.append(slide_lib.layout_content.TextRun(inline.value, style))
 		elif isinstance(inline, slide_lib.native_model.Break):
 			runs.append(slide_lib.layout_content.LineBreak())
@@ -127,13 +135,14 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 		elif isinstance(inline, slide_lib.native_model.Emphasis):
 			runs.extend(resolved_runs(inline.children, color, accent_color, bold, True, link))
 		elif isinstance(inline, slide_lib.native_model.Link):
-			literal = slide_lib.layout_measurement.visible_text(inline.children) == inline.url
+			literal = slide_lib.presentation_theme.is_visible_url(
+				slide_lib.layout_measurement.visible_text(inline.children))
 			for run in resolved_runs(inline.children, accent_color, accent_color,
 					bold, italic, inline.url):
 				if isinstance(run, slide_lib.layout_content.TextRun):
 					style = dataclasses.replace(run.style, font_family=
 						slide_lib.presentation_theme.NARROW_FONT_FAMILY
-						if literal and not run.style.code else run.style.font_family,
+						if literal else run.style.font_family,
 						underline=True, literal_url=literal)
 					runs.append(slide_lib.layout_content.TextRun(run.text, style))
 				else:
@@ -205,24 +214,32 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 	def row_content(cells: tuple[tuple[slide_lib.native_model.Inline, ...], ...],
 			header: bool) -> slide_lib.layout_content.TableRow:
 		"""Project one semantic table row."""
-		return slide_lib.layout_content.TableRow(tuple(slide_lib.layout_content.TableCell(
-			(slide_lib.layout_content.TextParagraph(_fragment_runs(
+		projected = []
+		labels = ["".join(run.text for run in resolved_runs(cell, FOREGROUND,
+			theme.accent_color, False) if isinstance(run, slide_lib.layout_content.TextRun))
+			for cell in cells]
+		total = not header and labels[0].strip().casefold() in ("total", "totals", "grand total")
+		for column, cell in enumerate(cells):
+			width = slide_lib.layout_measurement.table_cell_text_width(
+				measurements.column_widths[column], theme)
+			properties = slide_lib.layout_measurement.paragraph_properties(
+				cell, size, width, theme, terminal=True, bold=header or total, session=session)
+			if not header and re.fullmatch(r"[+-]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?", labels[column].strip()):
+				properties = dataclasses.replace(properties,
+					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.END)
+			paragraph = slide_lib.layout_content.TextParagraph(_fragment_runs(
 				resolved_runs(cell, WHITE if header else FOREGROUND,
-					theme.accent_color, header), size,
-				slide_lib.layout_measurement.table_cell_text_width(
-					measurements.column_widths[column], theme),
-				theme, session), typography,
-				slide_lib.layout_measurement.paragraph_properties(
-					cell, size, slide_lib.layout_measurement.table_cell_text_width(
-						measurements.column_widths[column], theme),
-					theme, terminal=True, bold=header, session=session)),),
-			slide_lib.layout_primitives.Insets(
-				slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
-				slide_lib.layout_measurement.TABLE_VERTICAL_PADDING,
-				slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
-				slide_lib.layout_measurement.TABLE_VERTICAL_PADDING),
-			slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
-			for column, cell in enumerate(cells)))
+					theme.accent_color, header or total), size, width, theme, session),
+				typography, properties)
+			projected.append(slide_lib.layout_content.TableCell((paragraph,),
+				slide_lib.layout_primitives.Insets(
+					slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
+					slide_lib.layout_measurement.TABLE_VERTICAL_PADDING,
+					slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
+					slide_lib.layout_measurement.TABLE_VERTICAL_PADDING),
+				slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
+				fill_role=slide_lib.layout_primitives.StyleRole.ACCENT_TINT if total else None))
+		return slide_lib.layout_content.TableRow(tuple(projected))
 	headers = (row_content(table.headers, True),) if table.headers else ()
 	body = tuple(row_content(row, False) for row in table.rows)
 	content = slide_lib.layout_content.TableContent(headers, body,

@@ -1,0 +1,199 @@
+{
+  "source_pdf": "genetics/LECT07/lect07c-prob_of_progeny_2.pdf",
+  "extraction": "PyMuPDF page.set_cropbox(Rect(*crop_points)); page.get_svg_image(text_as_path=True). Crop coordinates are PDF points.",
+  "formulas": [
+    {
+      "asset": "formula_18_1.svg",
+      "source_slide": 19,
+      "crop_points": [
+        103.18110236220473,
+        335.08346456692914,
+        190.8566929133858,
+        390.21732283464564
+      ],
+      "note": "Identical equation on slide 19 avoids adjacent text on slide 18."
+    },
+    {
+      "asset": "formula_19_1.svg",
+      "source_slide": 19,
+      "crop_points": [
+        103.18110236220473,
+        335.08346456692914,
+        190.8566929133858,
+        390.21732283464564
+      ]
+    },
+    {
+      "asset": "formula_19_2.svg",
+      "source_slide": 19,
+      "crop_points": [
+        222.23622047244095,
+        335.08346456692914,
+        298.26141732283463,
+        390.21732283464564
+      ]
+    },
+    {
+      "asset": "formula_20_1.svg",
+      "source_slide": 20,
+      "crop_points": [
+        103.1527559055118,
+        335.111811023622,
+        190.8566929133858,
+        390.2456692913386
+      ]
+    },
+    {
+      "asset": "formula_20_2.svg",
+      "source_slide": 20,
+      "crop_points": [
+        222.20787401574805,
+        335.111811023622,
+        298.23307086614176,
+        390.2456692913386
+      ]
+    },
+    {
+      "asset": "formula_20_3.svg",
+      "source_slide": 20,
+      "crop_points": [
+        341.2629921259842,
+        335.111811023622,
+        414.9354330708661,
+        390.2456692913386
+      ]
+    },
+    {
+      "asset": "formula_21_1.svg",
+      "source_slide": 21,
+      "crop_points": [
+        79.37007874015747,
+        314.64566929133855,
+        407.111811023622,
+        369.77952755905505
+      ]
+    },
+    {
+      "asset": "formula_22_1.svg",
+      "source_slide": 22,
+      "crop_points": [
+        79.37007874015747,
+        283.46456692913387,
+        407.111811023622,
+        338.59842519685037
+      ]
+    },
+    {
+      "asset": "formula_22_2.svg",
+      "source_slide": 22,
+      "crop_points": [
+        77.04566929133858,
+        365.6692913385827,
+        405.8929133858268,
+        420.888188976378
+      ]
+    },
+    {
+      "asset": "formula_23_1.svg",
+      "source_slide": 23,
+      "crop_points": [
+        79.37007874015747,
+        283.46456692913387,
+        407.48031496062987,
+        394.89448818897637
+      ]
+    },
+    {
+      "asset": "formula_23_2.svg",
+      "source_slide": 23,
+      "crop_points": [
+        107.65984251968504,
+        409.63464566929133,
+        436.5070866141732,
+        464.8535433070866
+      ]
+    },
+    {
+      "asset": "formula_24_1.svg",
+      "source_slide": 24,
+      "crop_points": [
+        87.30708661417323,
+        253.21889763779527,
+        441.4393700787401,
+        308.3527559055118
+      ]
+    },
+    {
+      "asset": "formula_24_2.svg",
+      "source_slide": 24,
+      "crop_points": [
+        86.79685039370078,
+        321.95905511811026,
+        452.4094488188976,
+        377.0929133858268
+      ]
+    },
+    {
+      "asset": "formula_24_3.svg",
+      "source_slide": 24,
+      "crop_points": [
+        87.30708661417323,
+        388.48818897637796,
+        453.2881889763779,
+        443.62204724409446
+      ]
+    },
+    {
+      "asset": "formula_27_1.svg",
+      "source_slide": 27,
+      "crop_points": [
+        198.76535433070865,
+        223.93700787401576,
+        634.9606299212599,
+        423.60944881889765
+      ]
+    },
+    {
+      "asset": "formula_28_1.svg",
+      "source_slide": 28,
+      "crop_points": [
+        507.96850393700794,
+        317.48031496062987,
+        718.9511811023623,
+        381.82677165354323
+      ]
+    },
+    {
+      "asset": "formula_32_1.svg",
+      "source_slide": 32,
+      "crop_points": [
+        281.08346456692914,
+        403.73858267716537,
+        492.0661417322834,
+        468.08503937007873
+      ]
+    },
+    {
+      "asset": "formula_33_1.svg",
+      "source_slide": 33,
+      "crop_points": [
+        106.80944881889764,
+        340.89448818897637,
+        706.3653543307087,
+        480.8692913385827
+      ],
+      "clip_polygon": "M0 0H599.5559V139.97481H80V90H0Z",
+      "note": "Exclude separate YUCK callout; it remains native text on the slide."
+    },
+    {
+      "asset": "formula_34_1.svg",
+      "source_slide": 34,
+      "crop_points": [
+        97.93700787401575,
+        184.13858267716537,
+        709.6535433070866,
+        374.14488188976384
+      ]
+    }
+  ]
+}

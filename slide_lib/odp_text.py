@@ -403,7 +403,7 @@ def _add_cell_style(automatic: xml.etree.ElementTree.Element, name: str,
 		_qname(STYLE_NS, "name"): name,
 		_qname(STYLE_NS, "family"): "table-cell",
 	})
-	role = content.style.header_role if header else content.style.body_role
+	role = cell.fill_role or (content.style.header_role if header else content.style.body_role)
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "table-cell-properties"), {
 		_qname(FO_NS, "background-color"): f"#{_color_for(role, theme)}",
 		_qname(FO_NS, "border"): f"{_points(content.style.border_width_pt)} solid "

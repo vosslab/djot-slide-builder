@@ -26,7 +26,7 @@ def parse_inlines(path: pathlib.Path, line: int, source: str) -> tuple[slide_lib
 
 #============================================
 def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
-		end: int) -> tuple[slide_lib.native_model.Inline, ...]:
+		end: int, autolink: bool = True) -> tuple[slide_lib.native_model.Inline, ...]:
 	"""Parse a bounded span, retaining its original offsets for diagnostics."""
 	runs: list[slide_lib.native_model.Inline] = []
 	text_start = start
@@ -66,12 +66,12 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 				index = content_start
 				continue
 			_append_text(runs, source[text_start:index])
-			children = _parse_runs(path, line, source, content_start, close)
+			children = _parse_runs(path, line, source, content_start, close, autolink)
 			runs.append(_formatted_span(marker, children))
 			index = close + len(closing)
 			text_start = index
 			continue
-		if source.startswith(("http://", "https://", "http\\://", "https\\://"), index):
+		if autolink and source.startswith(("http://", "https://", "http\\://", "https\\://"), index):
 			match = _BARE_URL.match(source, index, end)
 			if match is not None:
 				url_source = match.group().rstrip(".,;:")
@@ -96,7 +96,7 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 				index += 1
 				continue
 			_append_text(runs, source[text_start:index])
-			children = _parse_runs(path, line, source, index + 1, close)
+			children = _parse_runs(path, line, source, index + 1, close, autolink)
 			if not children:
 				raise _error(path, line, source, index, "empty inline content is not supported")
 			if character == "_":
@@ -145,7 +145,7 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 					raise _error(path, line, source, label_end + 1,
 						"underline must be underline=true")
 				_append_text(runs, source[text_start:index])
-				children = _parse_runs(path, line, source, index + 1, label_end)
+				children = _parse_runs(path, line, source, index + 1, label_end, autolink)
 				if not children:
 					raise _error(path, line, source, index,
 						"styled spans require visible text")
@@ -165,7 +165,7 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 			if not url or any(character.isspace() for character in url):
 				raise _error(path, line, source, label_end + 2, "link destinations must be non-empty and unbroken")
 			_append_text(runs, source[text_start:index])
-			children = _parse_runs(path, line, source, index + 1, label_end)
+			children = _parse_runs(path, line, source, index + 1, label_end, False)
 			if not children:
 				raise _error(path, line, source, index, "links require visible label text")
 			runs.append(slide_lib.native_model.Link(children, url))

@@ -77,6 +77,7 @@ class StyleRole(enum.Enum):
 	TABLE_HEADER = "table-header"
 	TABLE_BODY = "table-body"
 	ACCENT = "accent"
+	ACCENT_TINT = "accent-tint"
 	MUTED = "muted"
 	DECORATION = "decoration"
 	TRANSITION = "transition"

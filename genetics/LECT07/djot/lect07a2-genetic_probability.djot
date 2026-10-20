@@ -13,76 +13,86 @@ color-theme: genetics
 ## October 20, 2026
 
 === layout: one-panel
-
-# Learning objectives
-
-@body
-
-- Choose the addition or multiplication rule.
-- Distinguish genotype probability from phenotype probability.
-- Combine independent single-gene probabilities.
-
-=== layout: one-panel
 @replaceme
 
 
 @body
 
-![Slide image 1](assets/lect07a2-genetic_probability/image_001.png)
-
-
-@notes
-
-The source animation on this video still cannot be faithfully represented by the current Djot conversion. The imported image is static.
-
-=== layout: one-panel
-
-# Multiplication rules
-
-@body
-
-- *Independent events*: P(A and B) = P(A) &times; P(B)
-- *General rule*: P(A and B) = P(A) &times; P(B|A)
-- Equivalently: P(B) &times; P(A|B)
-- Hear "and"? Think multiplication - then check independence.
-
-=== layout: one-panel
-
-# Addition rules
-
-@body
-
-- *Mutually exclusive events*: P(A or B) = P(A) + P(B)
-- *General rule*: P(A or B) = P(A) + P(B) - P(A and B)
-- Hear "or"? Think addition - then check overlap.
-
-=== layout: one-panel
-
-# Practice: a puppy's genotype
-
-@body
-
-Two *BbCc* dogs are crossed.
-
-- B: black coat; b: yellow coat
-- C: straight fur; c: curly fur
-- The genes assort independently and are not sex linked.
-
-*What fraction of puppies will be BbCc?*
-
-- First find P(Bb).
-- Then find P(Cc).
+![Slide image 1](assets/source_fidelity/lect07a2/image_001.png)
 
 @notes
 
-P(Bb) = 1/2 and P(Cc) = 1/2, so P(BbCc) = 1/4.
+Source: lect07a2-genetic_probability.odp, slide 1.
+Review: source animation for id1 requires review; source animation for unknown target requires review.
+
+Original presenter notes:
+Run through the practice questions in the video
+
+=== layout: one-panel
+
+# *Multiplication Rules*
+
+@body
+
+- [*Specific Multiplication Rule*]{underline=true}, if two events, A and B, are [independent]{color=red}, then\:
+  - [P(A and B) = P(A) &#215; P(B)]{color=red}
+- [*General Multiplication Rule*]{underline=true}, if two events, A and B, are NOT independent then\:
+  - [P(A and B) = P(A) &#215; P(B|A) = P(B) &#215; P(A|B)]{color=#00599D}
+
+- [*When you hear &#8220;and&#8221; think MULTIPLICATION*]{color=green}
+
+@notes
+
+Source: lect07a2-genetic_probability.odp, slide 2.
+Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
+
+=== layout: one-panel
+
+# *Addition Rules*
+
+@body
+
+- [*Specific Addition Rule\:*]{underline=true} if two events, A and B, are [mutually exclusive]{color=red}, then\:
+  - [P(A or B) = P(A) + P(B)]{color=red}
+- [*General Addition Rule\:*]{underline=true} if two events, A and B, are NOT mutually exclusive, then\:
+  - [P(A or B) = P(A) + P(B) &#8211; P(A and B)]{color=#00599D}
+
+- [*When you hear &#8220;or&#8221; think ADDITION*]{color=green}
+
+@notes
+
+Source: lect07a2-genetic_probability.odp, slide 3.
+Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
+
+=== layout: one-panel
+@replaceme
+
+# Practice Question!
+
+@body
+
+- Imagine that we breed two dogs with the genotype&#160;_BbCc_, where dominant allele&#160;_B_&#160;specifies black coat color (versus&#160;_b_, yellow coat color) and dominant allele&#160;_C_&#160;specifies straight fur (versus&#160;_c_, curly fur). Assuming that the two genes assort independently and are not sex-linked, how can we predict the number of&#160;_BbCc_&#160;puppies among the offspring?
+- What&#8217;s the probability of getting a&#160;_Bb_&#160;genotype?
+- What&#8217;s the probability of getting an&#160;_Cc_&#160;genotype?
+
+@notes
+
+Source: lect07a2-genetic_probability.odp, slide 4.
+Review: source animation for id2 requires review; source animation for id3 requires review; source object crosses physical page bounds.
+
+Original presenter notes:
+In order for a puppy to have a&#160;BbCc&#160;genotype, both of these events must take place: the puppy must receive&#160;Bb&#160;alleles,&#160;and&#160;it must receive&#160;Cc&#160;alleles. The two events are independent because the genes assort independently (don't affect one another's inheritance). So, once we calculate the probability of each genetic event, we can multiply these probabilities using the product rule to get the probability of the genotype of interest (BbCc).
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 2](assets/lect07a2-genetic_probability/image_002.png)
+![Slide image 2](assets/source_fidelity/lect07a2/image_002.png)
+
+@notes
+
+Source: lect07a2-genetic_probability.odp, slide 5.
 
 === layout: one-panel
 
@@ -91,32 +101,26 @@ P(Bb) = 1/2 and P(Cc) = 1/2, so P(BbCc) = 1/4.
 @body
 
 - In dogs, black coat color (_B_) is dominant to yellow coat color (_b_), and straight fur (_C_) is dominant to curly fur (_c_). The coat color gene and the fur texture gene are on different chromosomes, so they assort independently, and are not sex linked.
-- *In a cross between two* *_BbCc_* *parents, predict the fraction of offspring with black coat color and straight fur.*
+- *In a cross between two*&#160;*_BbCc_*&#160;*parents, predict the fraction of offspring with black coat color and straight fur.*
+
+@notes
+
+Source: lect07a2-genetic_probability.odp, slide 6.
 
 === layout: one-panel
+@replaceme
 
-# Black coat and straight fur
 
 @body
 
-- P(black) = P(BB or Bb) = 3/4
-- P(straight) = P(CC or Cc) = 3/4
-- Independent loci: multiply the phenotype probabilities.
+- We can break the question down into two smaller questions\:
+- What fraction of offspring will have black coat color?
+- What fraction of offspring will have straight fur?
+- Since black coat color and straight fur are dominant traits, all&#160;_BB_&#160;and&#160;_Bb_&#160;puppies will have black coats, and all&#160;_CC_&#160;and&#160;_Cc_&#160;puppies will have straight fur, corresponding to&#160;\[3/4\\\]&#160;of puppies in each case. (You can draw out the individual Punnett squares for the color and texture genes to confirm these frequencies.)
+- To get the probability of a puppy having both black coat color and straight fur, you can multiply the probabilities of these two independent events\:&#160;\[(3/4) \* (3/4) = 9/16\].
+- *\[9/16\]&#160;of the puppies will have black coats and straight fur.*
 
-*P(black and straight) = (3/4) &times; (3/4) = 9/16*
+@notes
 
-Expected fraction does not guarantee an exact count in a small litter.
-
-=== layout: one-panel
-
-# Key ideas to keep
-
-@body
-
-- AND: multiply; check independence.
-- OR: add; subtract overlap when needed.
-- A genotype and its dominant phenotype have different probabilities.
-
-=== layout: theend
-
-# THE END
+Source: lect07a2-genetic_probability.odp, slide 7.
+Review: source animation for id4 requires review; source animation for id5 requires review; source animation for id6 requires review; source animation for id7 requires review; source animation for id8 requires review; source animation for id9 requires review.

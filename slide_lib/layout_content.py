@@ -90,6 +90,7 @@ class TableCell:
 	vertical_alignment: VerticalAlignment
 	column_span: int = 1
 	row_span: int = 1
+	fill_role: StyleRole | None = None
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "paragraphs")

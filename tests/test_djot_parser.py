@@ -356,3 +356,10 @@ def test_adjacent_nested_list_items_retain_their_semantic_tree(tmp_path: pathlib
 		slide_lib.layout_validation.inline_text(child.items[0].inlines),
 		slide_lib.layout_validation.inline_text(grandchild.items[0].inlines)) == (
 		"Parent", "Child", "Grandchild")
+
+
+def test_explicit_link_target_wins_over_url_label(tmp_path):
+	deck = parse_source(tmp_path, '=== layout: one-panel\n@body\n[https://example.org/short](https://example.org/full?key=value)\n')
+	inline = deck.slides[0].cells[0].blocks[0].inlines[0]
+	assert inline.url == 'https://example.org/full?key=value'
+	assert inline.children == (slide_lib.native_model.Text('https://example.org/short'),)

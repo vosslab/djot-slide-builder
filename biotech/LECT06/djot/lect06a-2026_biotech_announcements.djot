@@ -4,7 +4,7 @@ color-theme: biotechnology
 
 # Lecture 06A
 
-## Biotechnology: Announcements
+## Announcements
 ## Dr. Neil Voss
 ## Oct 8, 2026
 
@@ -79,22 +79,44 @@ hidden: true
 - 1. Mute yourself when you are not speaking.
 - 2. Plug in your headphones.
 - 3. Turn off video if you have a slow connection
-  - Use the secure Zoom link in Blackboard.
+  - Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
 
 @right
 
 ![Slide image 3](assets/lect05a-2026_biotech_announcements/image_003.png)
 
-=== layout: one-panel
+=== layout: stacked-panels
 
 
-@body
+# Dr. Voss YouTube Channel
+
+@top
 
 ![Slide image 4](assets/lect05a-2026_biotech_announcements/image_004.png)
 
-- Dr. Voss YouTube Channel
-- [[https\://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)]{color=red}
-- watch our weekly "Stump the Vibe Coder" podcast
+@bottom
+https://www.youtube.com/c/NeilVossLab/videos
+
+watch our weekly "Stump the Vibe Coder" podcast
+
+=== layout: big-image
+
+@image
+
+![StVC 35&#58; Steroid Quest &#8212; Can a Steroid Reach the DNA&#63; &#124; Stump the Vibe Coder Episode 35](assets/stump_the_vibe_coder/vcB4skacFNw.jpg)
+
+@caption
+
+StVC 35&#58; Steroid Quest &#8212; Can a Steroid Reach the DNA&#63; &#124; Stump the Vibe Coder Episode 35
+
+https://www.youtube.com/watch?v=vcB4skacFNw
+
+@notes
+
+podcast-slide: stump-the-vibe-coder
+Published: 2026-10-08T15:46:22+00:00
+Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 === layout: one-plus-two-panels
 hidden: true
@@ -105,7 +127,7 @@ hidden: true
 
 - I created a Discord Server called Neil Voss Lab
   - signup was due Sept 21, 2026; this assignment is complete
-- Sign-up link is available on Blackboard
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server, not create your own server
 
@@ -133,7 +155,7 @@ Keep this slide hidden after Sept 21.
 @right
 
 - Schaumburg office\: SCH 600E
-- Secure Zoom link\: see Blackboard
+- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
   - Thursday, 12\:30-1\:30 p.m.
   - Wednesday, 2\:30-3\:30 p.m.
 - Also available by appointment
@@ -155,14 +177,16 @@ Keep this slide hidden after Sept 21.
 
 @left
 
-- Google Form to send me an \*anonymous\* message.
+- Google Form to send me an *_anonymous_* message.
 - I took great care to make sure it is completely anonymous
 - Form goes directly to my email.
-- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+- https://forms.gle/gZ8nx28q9YDwSy8g7
 
 @right
 
-![Slide image 8](assets/lect05a-2026_biotech_announcements/image_008.png)
+![Anonymous Form](assets/anonymous_form.png)
+
+
 
 === layout: section
 # Discussion Points

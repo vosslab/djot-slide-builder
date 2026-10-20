@@ -498,3 +498,19 @@ for the color scopes, table groups, and column proportions documented above. Fen
 block quotes, and inline math are
 recognized source forms that currently receive a native-destination diagnostic. Source-located
 diagnostics make the available editable forms clear.
+
+### One-panel without a title
+
+Omit the root `# Heading` when a one-panel slide has no title. Its body starts at the
+normal top content margin and expands upward into the title area; no empty title
+placeholder is created. Ordinary paragraph/list content is vertically centered at
+the standard body size, retaining its horizontal alignment. Mixed media retains its
+source-order layout. This uses the existing layout, not a separate titleless layout.
+
+```djot
+=== layout: one-panel
+
+@body
+
+Content using the full available height.
+```

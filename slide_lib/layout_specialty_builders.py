@@ -41,12 +41,15 @@ def title_slide_decorations(theme: slide_lib.presentation_theme.PresentationThem
 	title = _master_rectangle(theme.title_frame, theme)
 	accent = slide_lib.layout_primitives.LogicalRectangle(
 		title.x + (title.width - 140) / 2, title.y + title.height + 24, 140, 7)
+	border = _decorative_shape("title-metadata-frame", card,
+		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_primitives.StyleRole.ACCENT_TINT,
+		slide_lib.layout_primitives.StyleRole.TRANSITION,
+		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 22, 0, 2)
+	border = dataclasses.replace(border, content=dataclasses.replace(border.content,
+		style=dataclasses.replace(border.content.style, line_color="C8CDD2")))
 	return (
-		_decorative_shape("title-metadata-frame", card,
-			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-			None,
-			slide_lib.layout_primitives.StyleRole.TRANSITION,
-			slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 22, 0, 2),
+		border,
 		_decorative_shape("title-accent", accent,
 			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
 			slide_lib.layout_primitives.StyleRole.ACCENT,

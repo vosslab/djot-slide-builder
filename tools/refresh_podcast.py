@@ -12,6 +12,7 @@ import re
 import time
 import urllib.error
 import urllib.request
+import zoneinfo
 
 # Third-Party Modules
 import lxml.etree
@@ -37,15 +38,20 @@ def download(url: str, limit: int) -> bytes:
 
 
 #============================================
-def latest_episode(data: bytes) -> dict[str, str]:
+def latest_episode(data: bytes, on_date: datetime.date | None = None) -> dict[str, str]:
 	"""Select the most recently published entry in YouTube's recent playlist feed."""
 	parser = lxml.etree.XMLParser(resolve_entities=False, load_dtd=False, no_network=True)
 	root = lxml.etree.fromstring(data, parser=parser)
 	if root.getroottree().docinfo.doctype:
 		raise ValueError("Playlist feed must not contain a DTD")
 	entries = root.findall("atom:entry", NAMESPACES)
+	if on_date is not None:
+		entries = [entry for entry in entries if datetime.datetime.fromisoformat(
+			entry.findtext("atom:published", namespaces=NAMESPACES)).astimezone(
+				zoneinfo.ZoneInfo("America/Chicago")).date() <= on_date]
 	if not entries:
-		raise ValueError("No public episodes in the playlist feed; decks were not changed")
+		raise ValueError("No eligible public episodes in the recent playlist feed; "
+			"historical coverage may be insufficient. Decks were not changed")
 	entry = max(entries, key=lambda item: datetime.datetime.fromisoformat(
 		item.findtext("atom:published", namespaces=NAMESPACES)))
 	video_id = entry.findtext("yt:videoId", namespaces=NAMESPACES)
@@ -58,6 +64,19 @@ def latest_episode(data: bytes) -> dict[str, str]:
 	episode = {"id": video_id, "title": " ".join(title.split()),
 		"published": entry.findtext("atom:published", namespaces=NAMESPACES)}
 	return episode
+
+
+def lecture_date(source: str) -> datetime.date:
+	"""Read the lecture date from the cover, not deadlines in later slides."""
+	parts = re.split(r"(?m)(?=^===\s+layout:)", source)
+	cover = next(part for part in parts if part.startswith("=== layout:"))
+	dates = re.findall(r"(?m)^##\s+([A-Za-z]+ \d{1,2}, \d{4})\s*$", cover)
+	if len(dates) != 1:
+		raise ValueError("Expected exactly one lecture date on the cover")
+	month, day, year = dates[0].replace(",", "").split()
+	months = ("jan", "feb", "mar", "apr", "may", "jun",
+		"jul", "aug", "sep", "oct", "nov", "dec")
+	return datetime.date(int(year), months.index(month[:3].lower()) + 1, int(day))
 
 
 #============================================
@@ -112,7 +131,8 @@ def announcement_paths(selectors: list[str]) -> list[pathlib.Path]:
 			raise ValueError(f"Path does not exist: {path}")
 		candidates = path.rglob("*.djot") if path.is_dir() else [path]
 		matches = [item for item in candidates
-			if re.match(r"lect\d+a[-_]", item.name) and item.suffix == ".djot"]
+			if re.match(r"lect\d+a[-_]", item.name) and "announcements" in item.stem
+			and item.suffix == ".djot"]
 		if not matches:
 			raise ValueError(f"No lect##a announcement decks found: {path}")
 		paths.update(item.resolve() for item in matches)
@@ -142,26 +162,32 @@ def main() -> None:
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument("decks", nargs="+", help="lect##a Djot files or lecture folders")
 	parser.add_argument("--write", action="store_true", help="save changes (default: show diff)")
+	parser.add_argument("--by-lecture-date", action="store_true",
+		help="select the latest episode published by each cover date (America/Chicago)")
 	args = parser.parse_args()
 	paths = announcement_paths(args.decks)
-	episode = latest_episode(download(FEED_URL, 2_000_000))
-	print(f"Latest published episode: {episode['title']} ({episode['published']})")
+	data = download(FEED_URL, 2_000_000)
 	updates = []
 	# Validate every anchor before writing any files.
 	for path in paths:
 		source = path.read_text(encoding="utf-8")
+		on_date = lecture_date(source) if args.by_lecture_date else None
+		episode = latest_episode(data, on_date)
+		print(f"{path.name}: {on_date or 'latest'}: {episode['title']} ({episode['published']})")
 		updated = update_source(source, episode)
-		updates.append((path, updated))
+		updates.append((path, updated, episode))
 		print("".join(difflib.unified_diff(source.splitlines(keepends=True),
 			updated.splitlines(keepends=True), fromfile=str(path), tofile=str(path))), end="")
 	if not args.write:
 		print("Preview only. Run again with --write to save the episode and thumbnail.")
 		return
-	data = thumbnail(episode["id"])
-	for path, updated in updates:
+	# Fetch every required image before mutating any deck; reuse shared episodes.
+	thumbnails = {episode["id"]: thumbnail(episode["id"])
+		for episode in {item[2]["id"]: item[2] for item in updates}.values()}
+	for path, updated, episode in updates:
 		image_path = path.parent / "assets" / "stump_the_vibe_coder" / f"{episode['id']}.jpg"
 		image_path.parent.mkdir(parents=True, exist_ok=True)
-		image_path.write_bytes(data)
+		image_path.write_bytes(thumbnails[episode["id"]])
 		path.write_text(updated, encoding="utf-8")
 		print(f"Updated {path}")
 

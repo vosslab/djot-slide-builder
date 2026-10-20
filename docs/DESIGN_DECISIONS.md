@@ -7,11 +7,16 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
-### Explicit native stacking order
+### Cover decoration belongs to the master
 
-Export each object's compiled stacking order as `draw:z-index` as well as ordering XML siblings.
-LibreOffice presentation placeholders must retain their intended position above cover decorations;
-sibling order alone does not explicitly encode that relationship for the consumer.
+Put the cover border and accent on a dedicated title-slide master derived from the course master.
+Use a pale tint of the course accent for the card fill on that background master.
+Keep the actual lecture identifier and
+metadata as native text on the slide. Ordinary slides retain
+the original course master. This keeps decorative furniture outside normal slide selection and
+paints it as background in PDF, without rasterizing text. Explicit stacking order alone did not
+resolve the reported selection problem. PDF text extraction and viewer copy interaction are separate
+acceptance checks.
 
 ### Embedded ODF document references
 
@@ -541,3 +546,35 @@ thumbnails only when YouTube returns HTTP 404.
   typography, layout, and export decisions.
 - [SOURCE_PIPELINE_DECISIONS.md](SOURCE_PIPELINE_DECISIONS.md) records import, source,
   table, and capacity decisions.
+
+## Local course URL resolution
+
+Resolve explicit `{{course_url:key}}` references at the parser boundary using the resolved
+course theme and ignored root YAML for private Discord and Zoom URLs. Public URLs, including
+YouTube, remain in tracked sources. Preserve line numbers and native hyperlink parsing.
+Load only when a reference exists; fail on missing keys rather than silently displaying a
+Blackboard placeholder. Shared office hours and Biotechnology course Zoom are separate keys,
+initially populated from the same meeting URL in the original Biotechnology ODPs. Existing
+QR artwork is preserved. No source rewriting or network lookup occurs during builds.
+
+## Mandatory URL typography
+
+Recognize visible URL text independently of its destination. Use the condensed face and
+two-point size reduction in both measurement and resolved output runs, including URL labels
+inside explicit links and code spans. Human-readable link labels keep their ordinary typography.
+
+### Recovered LECT07C formula outlines
+
+**Decision.** Use outlined SVG crops from the original PDF for recovered LECT07C formulas
+with font-dependent spacing errors. Keep source slide and crop coordinates in
+`genetics/LECT07/djot/assets/source_fidelity/lect07c/formula_sources.json`.
+
+**Why.** The metafile-derived SVG text used substituted font metrics during PDF export,
+shifting binomial entries and overlapping multiplication dots with parentheses.
+
+**Consequence.** Figures remain sharp vectors with original spacing. Formula glyphs are
+paths, not editable or copyable equation text; this does not implement LaTeX rendering.
+Slide 18 uses the identical clean equation on source slide 19; slide 33 clips the separate
+YUCK callout from the figure because the slide already contains that native text.
+
+**Owner.** The LECT07C source-fidelity SVG assets and their `formula_sources.json` manifest.

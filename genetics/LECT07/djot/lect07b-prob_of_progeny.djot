@@ -12,15 +12,9 @@ color-theme: genetics
 
 ## October 20, 2026
 
-=== layout: one-panel
+@notes
 
-# Learning objectives
-
-@body
-
-- Distinguish one birth order from all orders with the same counts.
-- Use factorials and binomial coefficients to count arrangements.
-- Calculate progeny probabilities for equal and unequal outcomes.
+Source: lect07b-prob_of_progeny.odp, slide 1.
 
 === layout: one-panel
 
@@ -33,123 +27,218 @@ color-theme: genetics
   - chance combination of gametes into zygotes
 - Probability calculations in genetics frequently use the addition and multiplication rules of probability together
 
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 2.
+
 === layout: section
 
 # Equally Likely Combinations
 
-=== layout: one-panel
+@notes
 
+Source: lect07b-prob_of_progeny.odp, slide 3.
+
+=== layout: multiple-choice
+
+
+@question
+
+Assuming equal numbers of boys and girls.
+
+If a mating has already produced a girl, what is the probability that the next child will be a boy?
+
+- A. 0, no chance
+- B. &#188;, 25% chance
+- C. &#189;, 50% chance
+- D. &#190;, 75% chance
+- E. 1, 100% chance
+- F. slightly higher than 50%, like 53%
+
+@answer
+
+[Answer: C. &#189;]{color=red}
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 4.
+
+=== layout: multiple-choice
+
+
+@question
+
+Assuming equal numbers of boys and girls.
+
+If a mating has already produced {=*three girls*=}, what is the probability that the next child will be a boy?
+
+- A. 0, no chance
+- B. &#188;, 25% chance
+- C. &#189;, 50% chance
+- D. &#190;, 75% chance
+- E. 1, 100% chance
+- F. slightly higher than 50%, like 53%
+
+@answer
+
+[Answer: C. &#189;]{color=red}
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 5.
+
+=== layout: one-panel
 
 @body
 
-- Assuming equal numbers of boys and girls.
+Assuming equal numbers of boys and girls:
+
 - If a mating has already produced a girl, what is the probability that the next child will be a boy?
-- A. 0, no chance
-- B. &#188;, 25% chance
-- C. &#189;, 50% chance
-- D. &#190;, 75% chance
-- E. 1, 100% chance
-- F. slightly higher than 50%, like 53%
+- If a mating has already produced two girls, what is the probability that the next child will be a boy?
+
+On what type of probability argument do you base your answers?
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 6.
 
 === layout: one-panel
 
+# The answer to both questions is &#189;
 
 @body
 
-- Assuming equal numbers of boys and girls.
-- If a mating has already produced [*three girls*]{color=#A7074B underline=true}, what is the probability that the next child will be a boy?
-- A. 0, no chance
-- B. &#188;, 25% chance
-- C. &#189;, 50% chance
-- D. &#190;, 75% chance
-- E. 1, 100% chance
-- F. slightly higher than 50%, like 53%
+The probability argument is that each birth is independent of all the previous ones, so the number of boys or girls already born has no influence on the sexes of future children.
 
-=== layout: one-panel
+@notes
 
-# Does the family history matter?
+Source: lect07b-prob_of_progeny.odp, slide 7.
 
-@body
-
-Assume each birth is independent, with P(boy) = P(girl) = 1/2.
-
-- A family already has one girl. What is P(boy next)?
-- A family already has two girls. What is P(boy next)?
-
-*Explain your reasoning before calculating.*
-
-=== layout: one-panel
-
-# Each birth is a new trial
-
-@body
-
-- P(boy next) = 1/2 in both cases.
-- Earlier births do not change the probability of the next birth.
-- This follows from the model's independence assumption.
-
-*A run of girls does not make a boy "due".*
-
-=== layout: one-panel
+=== layout: two-panels
 
 # Problem: seven children
 
-@body
+@left
 
-Assume seven independent births, each with P(boy) = P(girl) = 1/2.
+In a sibship with seven children, what is the probability that it includes:
 
-*What is the probability of four boys and three girls OR three boys and four girls?*
+- [*four boys and three girls*]{color=blue}
 
-The birth order is not specified.
+*OR*
+
+- [*three boys and four girls*]{color=red}
+
+@right
+
+Assume that each child has an equal likelihood of being a boy or a girl.
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 8.
 
 === layout: one-panel
+@replaceme
 
-# One order is not every order
 
 @body
 
-Seven births; each has equal probability of a boy or girl.
+![Slide image 2](assets/source_fidelity/lect07b/image_002.png)
 
-- P(one specified order) = (1/2)^7^ = 1/128
-- All boys: one order; all girls: one order
-- Four boys and three girls: many different orders
-- Count the orders before adding their probabilities.
+- How do we do this?
+- Probability that it is a boy = 0.5
+- Probability that it is a girl = 0.5
+- Probability of 7 boys = 0.5^7^ = 0.0078125
+- Probability of 7 girls = 0.5^7^ = 0.0078125
+- [{-Probability of 4 boys and 3 girls = 0.5^7^ = 0.0078125-}]{color=red}
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 9.
+Review: source animation for id1 requires review; source animation for id10 requires review; source animation for id2 requires review; source animation for id3 requires review; source animation for id4 requires review; source animation for id5 requires review; source animation for id6 requires review; source animation for id7 requires review; source animation for id8 requires review; source animation for id9 requires review; unsupported source object draw:custom-shape requires reconstruction.
 
 === layout: section
 
 # Before we can do this problem we need to learn some math...
 
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 10.
+
 === layout: section
 
 # Factorials
 
-=== layout: one-panel
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 11.
+
+=== layout: two-panels
 
 # *Factorial*
 
-@body
+@left
 
-- For a positive integer n, n! multiplies the integers from 1 through n
+- The factorial is the product of an integer and all the integers before it
   - factorial four, written as 4! is equal to\:
-  - 4! = 1&#215;2&#215;3&#215;4 = 24.
+  - 4! = 1 &#215; 2 &#215; 3 &#215; 4 = 24.
 - The number gets really big, really fast
 - Short hand sometimes be used in the form\:
   - n! = n &#215; (n-1)!
   - 4! = 4 &#215; 3! = 4 &#215; 6 = 24
 
-=== layout: one-panel
+@right
+
+| n | n! | ln(n!) |
+| --- | --- | --- |
+| 0 | 1 | 0.0 |
+| 1 | 1 | 0.0 |
+| 2 | 2 | 0.7 |
+| 3 | 6 | 1.8 |
+| 4 | 24 | 3.2 |
+| 5 | 120 | 4.8 |
+| 6 | 720 | 6.6 |
+| 7 | 5,040 | 8.5 |
+| 8 | 40,320 | 10.6 |
+| 9 | 362,880 | 12.8 |
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 12.
+
+=== layout: two-panels
 
 # *Factorial*
 
-@body
+@left
 
-- For a positive integer n, n! multiplies the integers from 1 through n
+- The factorial is the product of an integer and all the integers before it
   - factorial four, written as 4! is equal to\:
-  - 4! = 1&#215;2&#215;3&#215;4 = 24.
+  - 4! = 1 &#215; 2 &#215; 3 &#215; 4 = 24.
 - [The number gets really big, really fast]{color=red}
 - Short hand sometimes be used in the form\:
   - n! = n &#215; (n-1)!
   - 4! = 4 &#215; 3! = 4 &#215; 6 = 24
+
+@right
+
+| n | n! | ln(n!) |
+| --- | --- | --- |
+| 3 | 6 | 1.8 |
+| 4 | 24 | 3.2 |
+| 5 | 120 | 4.8 |
+| 6 | 720 | 6.6 |
+| 7 | 5,040 | 8.5 |
+| 8 | 40,320 | 10.6 |
+| 9 | 362,880 | 12.8 |
+| 10 | 3,628,800 | 15.1 |
+| 11 | 39,916,800 | 17.5 |
+| 12 | 479,001,600 | 20.0 |
+| 13 | 6,227,020,800 | 22.6 |
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 13.
+
 
 === layout: one-panel
 
@@ -161,9 +250,17 @@ Seven births; each has equal probability of a boy or girl.
   - Why does 0! = 1
 - Video Link\: [https\://youtu.be/Mfk\_L4Nx2ZI](https://youtu.be/Mfk_L4Nx2ZI)
 
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 14.
+
 === layout: section
 
 # Binomial Distribution
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 15.
 
 === layout: one-panel
 
@@ -173,21 +270,27 @@ Seven births; each has equal probability of a boy or girl.
 
 - In statistics, the binomial distribution give the probability of the number of successes in a sequence of [*n*]{underline=true} independent [*yes/no experiments*]{underline=true}, each of which yields success with probability [*p*]{underline=true}.
 
-=== layout: one-panel
+@notes
 
-# Binomial coefficient
+Source: lect07b-prob_of_progeny.odp, slide 16.
+
+=== layout: one-panel
+@replaceme
+
+# *Binomial coefficient*
 
 @body
 
-*C(n,k) = n! / (k! &times; (n-k)!)*
+- is often read aloud as "[n choose k]{underline=true}", because there are    ways to choose k elements, disregarding their order, from a set of n elements.
 
-- Read C(n,k) as "n choose k".
-- Number of ways to choose k positions among n trials
-- Order within the chosen group does not matter.
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 17.
+Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 
-# Factorials: a reference
+# Factorials
 
 @body
 
@@ -202,445 +305,480 @@ Seven births; each has equal probability of a boy or girl.
 | 6 | 720 | 14 | 87,178,291,200 |
 | 7 | 5,040 | 15 | 1,307,674,368,000 |
 
-=== layout: one-panel
+@notes
 
-# Evaluating binomial coefficients
+Source: lect07b-prob_of_progeny.odp, slide 18.
 
-@body
+=== layout: title-only
+@replaceme
 
-*C(n,k) = n! / (k! &times; (n-k)!)*
-
-- C(8,6) = ?
-- C(8,2) = ?
-- C(7,0) = ?
-
-Remember: 0! = 1.
-
-=== layout: one-panel
-
-# Evaluating binomial coefficients
-
-@body
-
-| Choose | Factorials | Cancel | Result |
-| --- | --- | --- | --- |
-| C(8,6) | 8! / (6! &times; 2!) | (8 &times; 7) / 2 | 28 |
-| C(8,2) | 8! / (2! &times; 6!) | (8 &times; 7) / 2 | 28 |
-| C(7,0) | 7! / (0! &times; 7!) | 1 / 1 | 1 |
-
-=== layout: one-panel
-
-# Pascal's triangle: n = 0 through 5
-
-@body
-
-| n | Coefficients from k = 0 through n |
-| --- | --- |
-| 0 | 1 |
-| 1 | 1  1 |
-| 2 | 1  2  1 |
-| 3 | 1  3  3  1 |
-| 4 | 1  4  6  4  1 |
-| 5 | 1  5  10  10  5  1 |
+# *Evaluating Binomial Coefficients*
 
 @notes
 
-Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+Source: lect07b-prob_of_progeny.odp, slide 19.
+Review: source image requires review: unsupported ODP image type: .
 
-=== layout: one-panel
+=== layout: title-only
+@replaceme
 
-# Pascal's triangle: n = 6 through 10
-
-@body
-
-| n | Coefficients from k = 0 through n |
-| --- | --- |
-| 6 | 1  6  15  20  15  6  1 |
-| 7 | 1  7  21  35  35  21  7  1 |
-| 8 | 1  8  28  56  70  56  28  8  1 |
-| 9 | 1  9  36  84  126  126  84  36  9  1 |
-| 10 | 1  10  45  120  210  252  210  120  45  10  1 |
+# *Evaluating Binomial Coefficients*
 
 @notes
 
-Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+Source: lect07b-prob_of_progeny.odp, slide 20.
+Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 
-# How many orders?
 
 @body
 
-Seven children, with four boys and three girls.
-
-*How many ways can the four boy positions be chosen?*
-
-- Choose k = 4 positions from n = 7.
-- Write C(7,4) before calculating.
-
-=== layout: one-panel
-
-# Four boys among seven children
-
-@body
-
-- Choose four of the seven birth positions.
-
-*C(7,4) = 7! / (4! &times; 3!)*
-
-= (7 &times; 6 &times; 5) / (3 &times; 2 &times; 1) = *35 orders*
-
-Each specified order has probability (1/2)^7^.
-
-=== layout: one-panel
-
-# Four boys among seven children
-
-@body
-
-- Choose four of the seven birth positions.
-
-*C(7,4) = 7! / (4! &times; 3!)*
-
-= (7 &times; 6 &times; 5) / (3 &times; 2 &times; 1) = *35 orders*
-
-Each specified order has probability (1/2)^7^.
-
-=== layout: one-panel
-
-# Either four boys or four girls
-
-@body
-
-- Exactly four boys: 35/128
-- Exactly four girls: 35/128
-- These outcomes are mutually exclusive.
-
-*P(either) = 70/128 = 35/64 &asymp; 54.7%*
-
-=== layout: one-panel
-
-# Pascal's triangle counts birth orders
-
-@body
-
-| Boys k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C(7,k) | 1 | 7 | 21 | 35 | 35 | 21 | 7 | 1 |
+![Slide image 6](assets/source_fidelity/lect07b/image_006.png)
 
 @notes
 
-There are 128 equally likely orders in total. Four boys corresponds to 35.
+Source: lect07b-prob_of_progeny.odp, slide 21.
 
 === layout: one-panel
 
-# Seven children: worked answer
 
 @body
 
-- Four boys and three girls: C(7,4) = 35 orders
-- Probability of each order: (1/2)^7^ = 1/128
-- P(4 boys, 3 girls) = 35/128
-- P(3 boys, 4 girls) = 35/128
+![Slide image 6](assets/source_fidelity/lect07b/image_002.png)
 
-*Either composition: 70/128 = 35/64 &asymp; 54.7%*
+- How many different ways can we get 4 boys and 3 girls?
 
-=== layout: one-panel
+![Slide image 7](assets/source_fidelity/lect07b/image_007.svg)
 
-# Problem: six children
-
-@body
-
-Assume independent births and P(boy) = P(girl) = 1/2.
-
-What fraction of six-child families have:
-
-- No girls?
-- Exactly one girl?
-- Exactly two girls?
-- Exactly three girls?
-- Three or more boys?
-
-=== layout: one-panel
-
-# Pascal's triangle: n = 0 through 5
-
-@body
-
-| n | Coefficients from k = 0 through n |
-| --- | --- |
-| 0 | 1 |
-| 1 | 1  1 |
-| 2 | 1  2  1 |
-| 3 | 1  3  3  1 |
-| 4 | 1  4  6  4  1 |
-| 5 | 1  5  10  10  5  1 |
+...
 
 @notes
 
-Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+Source: lect07b-prob_of_progeny.odp, slide 22.
+Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
 
 === layout: one-panel
+@replaceme
 
-# Pascal's triangle: n = 6 through 10
 
 @body
 
-| n | Coefficients from k = 0 through n |
-| --- | --- |
-| 6 | 1  6  15  20  15  6  1 |
-| 7 | 1  7  21  35  35  21  7  1 |
-| 8 | 1  8  28  56  70  56  28  8  1 |
-| 9 | 1  9  36  84  126  126  84  36  9  1 |
-| 10 | 1  10  45  120  210  252  210  120  45  10  1 |
+![Slide image 7](assets/source_fidelity/lect07b/image_002.png)
+
+- How many different ways can we get 4 boys and 3 girls?
+- Re-write how many different ways can we have 4 boys in 7 children
 
 @notes
 
-Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+Source: lect07b-prob_of_progeny.odp, slide 23.
+Review: source image requires review: unsupported ODP image type: .
 
-=== layout: one-panel
+=== layout: stacked-panels
 
-# Six children: count the orders
 
-@body
+@top
 
-| k | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| C(n,k) | 1 | 6 | 15 | 20 | 15 | 6 | 1 |
+![Slide image 7](assets/source_fidelity/lect07b/image_002.png)
 
-@notes
+- How many different ways can we get 4 boys and 3 girls? 35 ways!!!
 
-For no, one, two, or three girls use columns k = 0, 1, 2, 3. For at least three boys, add those columns.
+@bottom
 
-=== layout: one-panel
-
-# Six children: answers
-
-@body
-
-| Question | Orders | Probability |
-| --- | --- | --- |
-| No girls | C(6,0) = 1 | 1/64 |
-| Exactly one girl | C(6,1) = 6 | 6/64 |
-| Exactly two girls | C(6,2) = 15 | 15/64 |
-| Exactly three girls | C(6,3) = 20 | 20/64 |
-| Three or more boys | 20 + 15 + 6 + 1 | 42/64 |
-
-=== layout: one-panel
-
-# Problem: eight kittens
-
-@body
-
-Assume independent sexes, with P(male) = P(female) = 1/2.
-
-*What is the probability of even numbers of both males and females in a litter of eight?*
-
-Count zero as even. Which possible numbers of females belong in the sum?
-
-=== layout: one-panel
-
-# Eight kittens: count the orders
-
-@body
-
-| k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C(n,k) | 1 | 8 | 28 | 56 | 70 | 56 | 28 | 8 | 1 |
+![Slide image 8](assets/source_fidelity/lect07b/image_008.svg)
 
 @notes
 
-Choose the even columns: k = 0, 2, 4, 6, 8.
+Source: lect07b-prob_of_progeny.odp, slide 24.
 
 === layout: one-panel
 
-# Eight kittens: the answer
 
 @body
 
-- Even female counts: 0, 2, 4, 6, 8
-- Corresponding orders: 1, 28, 70, 28, 1
+![Slide image 8](assets/source_fidelity/lect07b/image_002.png)
 
-*P(even counts) = (1 + 28 + 70 + 28 + 1) / 2^8^*
+- How many different ways can we get 4 boys and 3 girls?
+- 35 ways out of 128 (2^7^) possible
+- &#8594; 35/128 = 0.2734375 &#8776; 27.3%
+- 4 girls and 3 boys the same 27.34%, these are mutually exclusive so&#8230;
+- 4 boys and 3 girls or 4 girls and 3 boys is
+- 27.3% + 27.3% &#8776; 54.7%
 
-= 128/256 = *1/2*
+@notes
 
-With eight total, an even female count also gives an even male count.
+Source: lect07b-prob_of_progeny.odp, slide 25.
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 8](assets/source_fidelity/lect07b/image_002.png)
+
+- How many different ways can we get 4 boys and 3 girls?
+- Re-write how many different ways can we have 4 boys in 7 children
+
+@bottom
+
+![Slide image 9](assets/source_fidelity/lect07b/image_009.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 26.
+Review: source image requires review: unsupported ODP image type: .
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 9](assets/source_fidelity/lect07b/image_002.png)
+
+@bottom
+
+![Slide image 10](assets/source_fidelity/lect07b/image_010.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 27.
+Review: .
 
 === layout: one-panel
 
-# Problem: six alleles
 
 @body
 
-A diploid species has six alleles of a gene.
+![Slide image 11](assets/source_fidelity/lect07b/image_011.png)
 
-- How many distinct genotypes are possible for an autosomal gene?
-- How many sex-specific genotypes are possible for an X-linked gene?
+@notes
 
-Use the choose function. Separate homozygotes, heterozygotes, and hemizygotes.
+Source: lect07b-prob_of_progeny.odp, slide 28.
 
 === layout: one-panel
 
-# Six alleles: autosomal genotypes
 
 @body
 
-- Homozygotes: choose one allele, C(6,1) = 6
-- Heterozygotes: choose two different alleles, C(6,2) = 15
-- *Total: 6 + 15 = 21 genotypes*
+![Slide image 11](assets/source_fidelity/lect07b/image_006.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 29.
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 11](assets/source_fidelity/lect07b/image_011.png)
+
+@bottom
+
+![Slide image 12](assets/source_fidelity/lect07b/image_012.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 30.
+Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/source_fidelity/lect07b/image_011.png)
+
+- (a) 1/2^6^ = 1/64 = 1.6%
+- (b) 6/64 = 9.4%
+- (c) 15/64 = 23.4%
+- (d) 20/64 = 31.3%
+- (e) (20+15+6+1)/64 = 42/64 = 65.6%
+
+![Slide image 12](assets/source_fidelity/lect07b/image_012.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 31.
+Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 
-# Six alleles: X-linked genotypes
 
 @body
 
-- Homozygotes: choose one allele, C(6,1) = 6
-- Heterozygotes: choose two different alleles, C(6,2) = 15
-- Females: 6 + 15 = 21 genotypes
-- Males: 6 hemizygous genotypes
-- *Total: 27 sex-specific genotypes*
+![Slide image 13](assets/source_fidelity/lect07b/image_013.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 32.
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 13](assets/source_fidelity/lect07b/image_013.png)
+
+@bottom
+
+![Slide image 14](assets/source_fidelity/lect07b/image_014.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 33.
+Review: .
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 14](assets/source_fidelity/lect07b/image_013.png)
+
+@bottom
+
+![Slide image 14](assets/source_fidelity/lect07b/image_014.png)
+
+- even numbers\:
+- (1+28+70+28+1)/2^8^ = 128/256 = 50%
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 34.
 
 === layout: one-panel
 
-# Six alleles: compare the totals
 
 @body
 
-| Gene location | Two-copy genotypes | One-copy genotypes | Total |
-| --- | --- | --- | --- |
-| Autosomal | 6 homozygous + 15 heterozygous | Not applicable | 21 |
-| X-linked | Females: 6 homozygous + 15 heterozygous | Males: 6 hemizygous | 27 |
+![Slide image 15](assets/source_fidelity/lect07b/image_015.png)
+
+- use the &#8220;choose&#8221; function
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 35.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 15](assets/source_fidelity/lect07b/image_015.png)
+
+- a1. homozygotes\:
+- there are 6 alleles and we choose 1 = 6&#160;possibilities
+- a2. heterozygotes
+- there are 6 alleles and we choose 2 different ones = 15 possibilities
+- (a) 15 + 6 = 21 possibilities for autosomal alleles
+
+![Slide image 16](assets/source_fidelity/lect07b/image_016.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 36.
+Review: source image requires review: unsupported ODP image type: .
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 16](assets/source_fidelity/lect07b/image_015.png)
+
+- b1. female homozygotes\:
+- there are 6 alleles and we choose 1 = 6&#160;possibilities
+- b2. female heterozygotes
+- there are 6 alleles and we choose 2 different ones = 15 possibilities
+- b3. male hemizygotes
+- there are 6 alleles and we choose 1 = 6&#160;possibilities
+
+![Slide image 16](assets/source_fidelity/lect07b/image_016.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 37.
+Review: source image requires review: unsupported ODP image type: .
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 16](assets/source_fidelity/lect07b/image_015.png)
+
+- There are 21 possible genotypes for an autosomal gene\:
+  - 6 homozygous and 15 heterozygous.
+- For an X-linked gene there are 27 possible genotypes.
+  - 6 homozygous and 15 heterozygous in females
+  - 6 hemizygous genotypes in males
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 38.
 
 === layout: section
 
 # Unequally Likely Combinations
 
-=== layout: one-panel
+@notes
 
-# Problem: unequal probabilities
-
-@body
-
-Cross Aa &times; Aa and consider four independent offspring.
-
-*What is the probability of exactly three dominant-phenotype offspring (A-) and one aa offspring?*
+Source: lect07b-prob_of_progeny.odp, slide 39.
 
 === layout: one-panel
 
-# Not all phenotype orders have equal weight
 
 @body
 
-- In Aa &times; Aa: P(A-) = 3/4 and P(aa) = 1/4
-- Probability of one specified order with 3 A- and 1 aa:
-
-*(3/4)^3^ &times; (1/4)*
-
-Now count the positions where the aa offspring could occur.
-
-=== layout: one-panel
-
-# Binomial distribution: textbook notation
-
-@body
-
-*P = n! / (s! t!) &times; p^s^ &times; q^t^*
-
-- s successes and t failures; n = s+t
-- Success probability p; failure probability q = 1-p
-- n! / (s! t!) counts arrangements.
-- p^s^ q^t^ is the probability of each arrangement.
-- Trials are independent, with the same p on every trial.
-
-=== layout: one-panel
-
-# Dr. Voss version: fewer letters
-
-@body
-
-*P(k of n) = C(n,k) &times; p^k^ &times; (1-p)^(n-k)^*
-
-- n: total offspring
-- k: offspring in the category of interest
-- p: probability of that category
-- Independent trials; same p on every trial
-
-=== layout: one-panel
-
-# Exactly three dominant offspring
-
-@body
-
-Aa &times; Aa; four offspring
-
-- P(A-) = 3/4; P(aa) = 1/4
-- C(4,3) = 4 birth orders
-
-*P(3 A- and 1 aa) = 4 &times; (3/4)^3^ &times; (1/4)*
-
-= 27/64 &asymp; 42.2%
-
-=== layout: one-panel
-
-# Quiz and exam setup
-
-@body
-
-*P(k of n) = C(n,k) &times; p^k^ &times; (1-p)^(n-k)^*
-
-- No calculators on quizzes
-- Identify n, k, and p from the question.
-- Substitute correctly before calculating.
-- Use Pascal's triangle or the supplied coefficient.
-
-Example: C(4,3) &times; (3/4)^3^ &times; (1/4)^1^.
-
-=== layout: one-panel
-
-# Mendel's pea seed color
-
-@body
-
-- Yellow *seed* color is dominant to green.
-- Cross two heterozygotes; consider six offspring.
-- n = 6; k = number with yellow seeds; p = 3/4
-
-*Find P(k) for k = 0, 1, 2, 3, 4, 5, and 6.*
-
-*P(k of n) = C(n,k) &times; p^k^ &times; (1-p)^(n-k)^*
+![Slide image 17](assets/source_fidelity/lect07b/image_017.png)
 
 @notes
 
-The legacy title said pod color. Yellow dominance applies to seed color; green pod color is dominant.
+Source: lect07b-prob_of_progeny.odp, slide 40.
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 15](assets/lect07b-prob_of_progeny/image_015.png)
+![Slide image 17](assets/source_fidelity/lect07b/image_017.png)
+
+- Problem\: there is a 75% chance of A&#8211; and only 25% chance of aa.
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 41.
 
 === layout: one-panel
 
-# Challenge: five surviving mice
 
 @body
 
-- Tt mice have short tails; TT is lethal.
-- tt mice have normal long tails.
-- Cross two short-tailed mice.
+![Slide image 18](assets/source_fidelity/lect07b/image_018.png)
 
-*For a litter of five surviving pups, find the probabilities of every short-tail/long-tail count.*
+@notes
 
-Why are the two most likely outcomes equally probable?
+Source: lect07b-prob_of_progeny.odp, slide 42.
 
-The worked answer is in Lecture 07C.
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+- Dr. Voss version with less letters\:
+
+@right
+
+![Slide image 18](assets/source_fidelity/lect07b/image_018.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 43.
+Review: source image requires review: unsupported ODP image type: .
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 18](assets/source_fidelity/lect07b/image_017.png)
+
+- Problem\: there is a 75% chance of A&#8211; and only 25% chance of aa.
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 44.
+Review: source image requires review: unsupported ODP image type: .
+
+=== layout: one-panel
+@replaceme
+
+# *Quiz/Exam Questions*
+
+@body
+
+![Slide image 18](assets/source_fidelity/lect07b/image_017.png)
+
+- Remember there are no calculators on quizzes
+- So, your job will mainly to take the numbers from the question and properly plug them into the binomial equation.
+- I will provide Pascal&#8217;s triangle, if is necessary, but usually I just give you the answer like on the right.
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 45.
+Review: source image requires review: unsupported ODP image type: .
+
+=== layout: two-panels
+@replaceme
+
+# *Mendel's Pea Pod Color*
+
+@left
+
+- Yellow is dominant to green.
+- In a monohybrid cross, if six plants are produced, what are the probability for each distribution of color F2
+- [Divide up into your quiz groups and determine each of the following.]{color=#CC00CC}
+![Slide image 18](assets/source_fidelity/lect07b/image_016.png)
+
+- n = total seeds produced
+- k = # of yellow seeds
+- p = probability of getting a yellow seed
+
+
+@right
+
+- What is the probability of\:
+  - 6 yellow
+  - 5 yellow and 1 green
+  - 4 yellow and 2 green
+  - 3 yellow and 3 green
+  - 2 yellow and 4 green
+  - 1 yellow and 5 green
+  - 6 green
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 46.
+Review: dense text requires post-conversion polish; normalized overlapping legacy components into one native source-order panel; source image requires review: unsupported ODP image type: .
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/source_fidelity/lect07b/image_019.png)
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 47.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 20](assets/source_fidelity/lect07b/image_020.png)
+
+- Next week, I will present the answer...
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 48.
 
 === layout: section
 
 # Summary
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 49.
 
 === layout: one-panel
 
@@ -656,17 +794,14 @@ The worked answer is in Lecture 07C.
   - Probability\:
     - [https\://youtu.be/xSc4oLA9e8o](https://youtu.be/xSc4oLA9e8o)
 
-=== layout: one-panel
+@notes
 
-# Key ideas to keep
-
-@body
-
-- One specified order: multiply probabilities.
-- Any order with k successes: multiply by C(n,k).
-- Binomial model: independent trials with constant p.
-- Expected proportions do not force exact offspring counts.
+Source: lect07b-prob_of_progeny.odp, slide 50.
 
 === layout: theend
 
 # THE END
+
+@notes
+
+Source: lect07b-prob_of_progeny.odp, slide 51.

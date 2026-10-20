@@ -18,19 +18,52 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Slide 1: title slide
 
-- Across every course and lecture, slide 1 uses the same orientation format: lecture number
-  and letter above title metadata, with no taglines. The metadata has either three lines
-  ("Chapter N: Title", "Dr. Neil Voss", lecture date) or four lines ("Title", "Chapter N",
-  "Dr. Neil Voss", lecture date). Vertical bars are never acceptable.
-- Across every course and lecture, give slide 1's light gray rounded rectangle no fill and place
-  it behind all text boxes so I can select and copy the text.
-- Verify chapter numbers against the relevant BPW course index, rather than deriving them from
-  lecture numbers. For genetics, use the [BPW Genetics index](https://biologyproblems.org/genetics/).
+- Across every course and lecture, keep the lecture number and letter above the title metadata.
+  Use the same universal format, with no taglines. Vertical bars are never acceptable.
+- Unknown chapter: three metadata lines, "Slide Deck Topic", "Dr. Neil Voss", lecture date.
+  Do not invent a chapter number to fill the field.
+- Known, canonical chapter: either three lines, "Chapter ##: Slide Deck Topic", "Dr. Neil Voss",
+  lecture date; or four lines, "Slide Deck Topic", "Chapter ##", "Dr. Neil Voss", lecture date.
+- Announcements slides NEVER have chapters. The topic is exactly "Announcements"; follow it
+  with "Dr. Neil Voss" and the lecture date.
+- Verify known chapter numbers against the relevant BPW course index, rather than deriving them
+  from lecture numbers. For genetics, use the [BPW Genetics index](https://biologyproblems.org/genetics/).
+- I must be able to select and copy the slide 1 text in the PDF. Keep title metadata as real text.
+  Use a pale, desaturated course-color fill behind the text. If filling it prevents copying,
+  use an unfilled rectangle with a thicker, course-colored outline instead.
 - Include parenthesized chi-squared in the chi-square title, authored as `(&chi;^2^)` for editable
   native superscript text.
+- Enforce the universal Djot slide 1 format with pytest across courses and lectures.
+
+## Exam and quiz schedule
+
+- On the quiz/exam dates slide, show past assessments in light gray, future assessments in
+  black, and next week's assessments in dark red.
+- Exam and quiz schedule text is fixed: one "item: date" per line, using abbreviated month and
+  day, such as "Quiz 1: Sept 22". Change only status colors; do not add "completed", descriptions,
+  combined assessments, or mixed bolding. Keep the long schedule URL and extra details in notes.
+- Think of the exam and quizzes page as a progress bar: keep the list and positions stable,
+  with colors showing completed, next-week, and future assessments.
+
+## Course links and evergreen announcements
+
+- Course Zoom and Discord URLs are not on the syllabus; include the actual course URLs in the
+  student slides. Only Biotechnology has a Zoom meeting this semester (Fall 2026).
+- Any URL for the course should be in the slides. The slides are generally available only to
+  students, and we already give them QR codes. Keep the URLs visible and clickable alongside
+  the QR codes; do not substitute "The sign-up link is available on Blackboard."
+- Store private Discord and Zoom URLs in ignored root `course_links.local.yaml` and import
+  them into slides with `{{course_url:key}}` references, keeping the configuration out of GitHub.
+- The YouTube channel slide must include a visible, clickable link to Dr. Voss's channel.
+- YouTube URLs, including Dr. Voss's channel, and other public course links remain directly in
+  tracked Djot sources; they do not need private configuration.
+- The opening "Discord Server" slide is evergreen and stays in the deck. After the signup
+  deadline, remove only the Discord item in assignments, not the opening server information.
 
 ## Robustness and simplicity
 
+- Focus on important issues, not bikeshedding. Address the highest-impact risks first.
+  Spend review time on correctness, maintainability, validation, and delivery.
 - Robust software continues to function despite imperfect inputs, data, state, or behavior.
   Handle imperfections according to context and impact; recover gracefully to preserve useful
   operation whenever possible.
@@ -172,7 +205,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Show the URLs being clicked so their destinations can be inspected for spam or security
   concerns. Render visible URLs in the backend's narrow/condensed font; retain helpful context
   beside the address rather than hiding it behind a descriptive link label.
-- URLs may be 2 pt smaller than surrounding text as well as condensed. Check rendered slides
+- ALL visible URLs must use the condensed font and be 2 pt smaller than surrounding text.
+  No font overrides, including code styling or explicit links with a different target. Check rendered slides
   for awkward URL splits, especially Lecture 05A; do not leave isolated letters or large gaps.
 - Prefer pollen/ovule labels for plant examples and sperm/egg labels for animal examples.
 - Add colorful plant emoji to Lecture 05D v2 to make the plant examples more visually interesting.
@@ -207,18 +241,21 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Conversion review
 
-- On the quiz/exam dates slide, show past assessments in light gray, future assessments in
-  black, and next week's assessments in darkish red. Lecture 07 has no quiz next week.
+
 - Include the latest Stump the Vibe Coder podcast episode after the `lect##a-` YouTube slide.
   Make this a semi-automated process reusable across lectures, with the episode thumbnail,
   title, and visible link in a `big-image` layout.
 - Use the 2026 announcements as canonical and update them for the current lecture week.
+- Use properly typeset, stacked fractions (`\frac{a}{b}`) in equations rather than slash
+  fractions. Use the standard binomial coefficient (`\binom{n}{k}`), not `C(n,k)`.
+  Parsing dollar-delimited math is not sufficient: verify the rendered equations in the PDF.
 - Lecture 07 probability of progeny needs careful math formatting. Chi-square is mainly
   step-by-step table completion. The first conversion contained more images than expected.
 - Add variety to two-panel image/text slides: sometimes image left/text right, other times
   text left/image right. Alternate when they are back-to-back.
 - Biotechnology Lecture 05 builds on Lecture 04, with different slides shown or hidden.
   After Sept 21, Discord signup and Student Profile are no longer active assignments.
+  This does not remove the evergreen opening "Discord Server" slide.
 - Preserve source colors and bold key labels in announcements. Anonymous-message instructions
   need the source image; keep clickable URLs visible and intact, using the condensed font role.
 - Check static versus weekly announcement ownership, and use the instructor's schedule spreadsheet
@@ -234,3 +271,130 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Give Lecture 05H a deep review; we can do better than the initial conversion.
 - Lecture 05F needs its missing allele superscripts and generation subscripts restored,
   including I with superscript A and F/P generation indices.
+
+## Preserve teaching voice
+
+- The goal is to standardize existing slides so they look uniform. Agents may standardize
+  layout, typography, spacing, colors, and reusable slide formats. Content decisions belong
+  to the instructor: wording, examples, explanations, sequence, and additions or removals
+  require an explicit request. Report suspected content errors for the instructor to decide;
+  do not silently correct or rewrite them.
+
+- Do not add content to the instructor's slides. Added material usually makes them worse.
+  Conversion preserves authored content; changes to wording or content require an explicit
+  request. Do not invent learning objectives, summaries, questions, explanations, or slogans.
+
+- Preserve the instructor's original question wording and explanations during conversion.
+  Do not add prompts such as "Explain your reasoning before calculating" or the expression
+  "A run of girls does not make a boy due."
+- Use the question-and-answer layout for multiple-choice questions. Emphasize changed
+  conditions with more than color alone, and separate alternatives visually in word problems.
+
+- Put visible spacing on both sides of multiplication signs in equations and factorial examples.
+
+- Preserve source tables, graphs, and their slide sequence. If content cannot be rendered,
+  mark it `@replaceme`; never silently omit it or substitute a later reference slide.
+
+- Never run LibreOffice inside the sandbox on this Mac. This also applies to indirect
+  launches from ODP imports and tests, not just PDF exports. Use the repository scripts
+  outside the sandbox. Keep this warning near the top of AGENTS.md.
+
+- Right-align numbers in tables. Distinguish total rows visually from ordinary data rows.
+
+- Consult the instructor-cleaned latest biotech announcements for shared presentation
+  patterns, preserving each course's own content. For the YouTube channel slide, compare
+  big-image with the cleaned stacked-panels layout; the instructor has not settled on one.
+- Clear @replaceme only after comparison with the original confirms complete content and
+  sound rendering; attractive appearance alone does not establish completeness.
+
+- A one-panel slide without an authored title should have a taller body text box that
+  uses the title area. Prefer this automatic behavior over another layout type.
+
+- The canonical repository temporary folder is `_temp/`, not `tmp/`.
+
+- Render the null hypothesis consistently as H with a subscript zero (`H~0~` in Djot),
+  including colored definitions and worked examples; never baseline H0.
+
+- Use the instructor's standard saturated text colors from
+  `~/nsh/PROBLEMS/biology-problems/problems/matching_sets/TEMPLATE.yml` for step emphasis.
+  The palette is encoded in HTML span styles under replacement entries. Match colored
+  step-number references to the corresponding step color.
+
+- For the approved LECT07D terminology/decision split, apply scientific corrections
+  while preserving the instructor's voice as much as possible. This is explicit
+  permission for that revision, not general permission to rewrite slide content.
+  Replace the old "accept hypothesis" wording with "do not reject" for the null
+  hypothesis and "support" for the alternative, including repeated editable examples.
+
+### Preferred color palette
+
+- Significance-level labels should use preferred purple `#A719DB`; the imported dark
+  purples were too dark.
+
+- For colored sequences, use larger jumps around the palette between consecutive items;
+  nearby hues do not provide enough separation. Keep cross-references matched to their items.
+
+- Slide colors are no longer constrained to LibreOffice's named palette. Use the
+  instructor's preferred explicit hex colors documented in [COLOR_PALETTE.md](COLOR_PALETTE.md).
+- For additional palettes, use the instructor-developed
+  `~/nsh/PROBLEMS/qti-package-maker/qti_package_maker/common/color_wheel.py` tool.
+  The local palette reference documents its CAM16 API and dark, light, and extra-light wheels.
+- Preserve the source's meaningful emphasis and color relationships when standardizing
+  slides. Color changes do not authorize wording or content changes.
+
+### Titleless text slides
+
+- Balance short text vertically on titleless one-panel slides instead of placing it
+  in the top gradient with excessive empty space below. Prefer vertical centering
+  at the standard body size.
+
+### Readable capacity reports
+
+- Body sizes above 17 pt are usually acceptable; below 17 pt warrants layout review.
+- Build capacity warnings should identify authored slide numbers, not source line numbers.
+- Keep factorial-table rows consecutive; start at 3 when trimming. A 17 pt table is
+  acceptable. Do not shrink short slide titles to preserve a 20 pt body.
+
+### Homework due-date slides
+
+- Label table rows "Week 08" (zero-padded week numbers), retaining "Assignment"
+  as the column heading.
+
+- Title these pages "Homework Due Dates (Part 1/2)" without a platform name. Include
+  future assignment deadlines from the syllabus for the current part.
+
+- Color both assignment and due date relative to the lecture date: past due light gray
+  (`#AAAAAA`), due next week red (`#990000`), and later dates black (`#000000`),
+  matching exam schedule status colors.
+
+- Use a scannable two-column assignment/due-date table with abbreviated months and
+  two-digit days (Nov 03).
+- Keep separate Part 1 and Part 2 pages; hide Part 1 during Part 2.
+- Omit redundant statements that earlier deadlines passed or dates are in the course schedule.
+
+### Exam review visibility
+
+- Keep "Reviewing Old Quiz Questions" in the Exam section. During Part 2, keep
+  that section and its review slides hidden until the final exam is closer.
+
+### Retrospective announcement standardization
+
+- Apply shared slide guidance to past Genetics and biotech announcements while preserving
+  the existing slide inventory, order, and hidden status. Do not apply newer visibility
+  or slide-addition rules retrospectively when this preservation is requested.
+- Graded vs Total Percentage uses preferred blue for Graded and magenta for Total,
+  matching heading and body emphasis.
+- Use the cleaned biotech LECT07 anonymous-message slide with text left, image right,
+  and a visible intact form URL.
+
+### Reusable icebreakers
+
+- Build a reusable collection from old announcement slides, preserving their Breakout Room Chat
+  format and wording. Keep subject-specific prompts and general fallbacks.
+- For Genetics on October 20, 2026, ask about pets: dog, cat, none, other.
+- The collection is in `icebreakers.yaml`; select prompts explicitly for each class.
+
+### LECT07D title wording
+
+- Omit redundant "(continued)" from LECT07D titles; it causes unnecessary wrapping.
+  Retitling these slides for clarity is authorized.

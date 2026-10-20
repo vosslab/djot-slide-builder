@@ -2,9 +2,8 @@
 
 # Lecture 05A
 
-## Genetics 351/451\: Announcements
+## Announcements
 
-## Chapter 5
 
 ## Dr. Neil Voss
 
@@ -16,7 +15,7 @@
 
 @body
 
-- Ice breaker and announcements
+- Announcements
 - Unknown genotypes and pedigrees
 - Probability concepts and practice problems
 - Degrees of dominance
@@ -45,7 +44,28 @@ Make sure Dr. Voss is recording.
 
 @caption
 
-Dr. Voss's YouTube channel has videos for difficult problems.
+Watch Dr. Voss's videos for help with difficult problems.
+
+https://www.youtube.com/c/NeilVossLab/videos
+
+=== layout: big-image
+
+@image
+
+![StVC 34&#58; Nobel Combat &#8212; Great Song&#44; Questionable Fighting &#124; Stump the Vibe Coder Episode 34](assets/stump_the_vibe_coder/_9HjPmVv_MU.jpg)
+
+@caption
+
+StVC 34&#58; Nobel Combat &#8212; Great Song&#44; Questionable Fighting &#124; Stump the Vibe Coder Episode 34
+
+https://www.youtube.com/watch?v=_9HjPmVv_MU
+
+@notes
+
+podcast-slide: stump-the-vibe-coder
+Published: 2026-09-24T15:14:07+00:00
+Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 === layout: one-plus-two-panels
 
@@ -55,7 +75,7 @@ Dr. Voss's YouTube channel has videos for difficult problems.
 
 - I created a Discord Server called Neil Voss Lab.
   - You earn credit for signing up, and Discord is the quickest way to reach me.
-- The sign-up link is available on Blackboard.
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website.
   - Be sure to connect to my server rather than creating your own server.
 
@@ -74,7 +94,7 @@ Dr. Voss's YouTube channel has videos for difficult problems.
 @left
 
 - Office\: SCH 600E, Schaumburg campus
-- Secure Zoom link\: see Blackboard
+- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
 - Thursday, 12\:30-1\:30 p.m.
 - Wednesday, 2\:30-3\:30 p.m.
 - Also available by appointment
@@ -110,17 +130,15 @@ Instructor information
 
 @left
 
-![Anonymous message form](assets/lect05a-2026_announcements/anonymous_message_form.png)
+- Google Form to send me an *_anonymous_* message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- https://forms.gle/gZ8nx28q9YDwSy8g7
 
 @right
 
-- Send me an *anonymous* message through the Google Form.
-- Use it for questions you would rather not ask publicly.
-- The form goes directly to my email.
+![Anonymous Form](assets/anonymous_form.png)
 
-Open message form
-
-[https://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
 
 
 === layout: section
@@ -225,17 +243,17 @@ Policies and student resources
 
 === layout: two-panels
 
-# Graded vs Total Percentage
+# [*Graded*]{color=#003FFF} vs [*Total*]{color=#C80085} Percentage
 
 @left
 
-- *Graded percentage* includes only items with a recorded grade.
+- [*Graded percentage*]{color=#003FFF} includes only items with a recorded grade.
 - Excludes items that have not been graded, including unfinished assignments.
 - More useful when *Dr. Voss* still has submitted work to grade.
 
 @right
 
-- *Total percentage* includes all items counted toward your Blackboard grade.
+- [*Total percentage*]{color=#C80085} includes all items counted toward your Blackboard grade.
 - Counts items without a recorded grade as zero.
   - This includes submitted work waiting to be graded.
 - More useful for seeing the effect of assignments you have not attempted.
@@ -354,18 +372,21 @@ Policies and student resources
 
 @body
 
-- *Quiz 1* &ndash; Sept 22
-- *Quiz 2* &ndash; Oct 6
-- *Midterm exam* &ndash; Oct 13, in person; Chapters 1-4
-- *Quiz 3* &ndash; Nov 3
-- *Quiz 4* &ndash; Nov 17
-- *Quiz 5* &ndash; Dec 8
-- *Final exam* &ndash; Dec 15, in person; cumulative
+- [Quiz 1: Sept 22]{color=#AAAAAA}
+- [Quiz 2: Oct 06]{color=#990000}
+- [Midterm: Oct 13]{color=#000000}
+- [Quiz 3: Nov 03]{color=#000000}
+- [Quiz 4: Nov 17]{color=#000000}
+- [Quiz 5: Dec 08]{color=#000000}
+- [Final exam: Dec 15]{color=#000000}
 
-Course schedule
+@notes
 
-[https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit](https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit)
+Schedule references:
+https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit
 
+
+Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: section
 
@@ -401,7 +422,7 @@ Course schedule
 
 - I created a Discord Server called Neil Voss Lab
   - You earn credit for signing up, and Discord is the quickest way to reach me.
-- Sign-up link is available on Blackboard
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server rather than creating your own server.
 
@@ -415,19 +436,27 @@ Course schedule
 
 === layout: two-panels
 
-# Blackboard Homework (Part 1)
+# Homework Due Dates (Part 1)
 
 @left
 
-- Assignments 1-3 &ndash; Sept 22
-- Assignments 4-5 &ndash; Oct 6
-- Assignment 6 &ndash; Oct 13
+| Assignment | Due date |
+| --- | --- |
+| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 04]{color=#990000} | [Oct 06]{color=#990000} |
+| [Week 05]{color=#990000} | [Oct 06]{color=#990000} |
+| [Week 06]{color=#000000} | [Oct 13]{color=#000000} |
 
 @right
 
-- Due dates are listed in the course schedule.
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments, or post to Discord for help
+
+@notes
+
+Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: section
 

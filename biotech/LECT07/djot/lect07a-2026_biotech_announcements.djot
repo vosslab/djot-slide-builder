@@ -4,7 +4,7 @@ color-theme: biotechnology
 
 # Lecture 07A
 
-## Biotechnology: Announcements
+## Announcements
 ## Dr. Neil Voss
 ## Oct 15, 2026
 
@@ -39,7 +39,7 @@ Make Sure Dr. Voss Is Recording
 - 1. Mute yourself when you are not speaking.
 - 2. Plug in your headphones.
 - 3. Turn off video if you have a slow connection
-  - Use the secure Zoom link in Blackboard.
+  - Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
 
 @right
 
@@ -59,6 +59,25 @@ Make Sure Dr. Voss Is Recording
 
 watch our weekly "[_Stump the Vibe Coder_](https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48)" podcast
 
+=== layout: big-image
+
+@image
+
+![StVC 36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard &#124; Stump the Vibe Coder Episode 36](assets/stump_the_vibe_coder/0zhh6g-DJFs.jpg)
+
+@caption
+
+StVC 36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard &#124; Stump the Vibe Coder Episode 36
+
+https://www.youtube.com/watch?v=0zhh6g-DJFs
+
+@notes
+
+podcast-slide: stump-the-vibe-coder
+Published: 2026-10-15T14:34:09+00:00
+Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
+
 === layout: one-plus-two-panels
 
 # Discord Server
@@ -68,7 +87,7 @@ watch our weekly "[_Stump the Vibe Coder_](https://www.youtube.com/playlist?list
 - I created a Discord Server called Neil Voss Lab
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server, not create your own server
-- Sign-up link here: https://discord.gg/xXQWc67C8M
+- Join the server: {{course_url:discord}}
 
 @top-right
 
@@ -95,7 +114,7 @@ not an assignment slide. Discord remains a course contact channel.
 
 - Schaumburg office\: SCH 600E
 - Zoom link\:
-  - https://zoom.us/j/97638754024
+  - [{{course_url:zoom_short}}]({{course_url:office_hours}})
   - Meeting ID: 976 3875 4024
   - Password: voss
 - Available\:
@@ -128,6 +147,8 @@ not an assignment slide. Discord remains a course contact channel.
 @right
 
 ![Anonymous Form](assets/anonymous_form.png)
+
+
 
 === layout: section
 # Discussion Points

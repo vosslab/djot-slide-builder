@@ -1,6 +1,16 @@
 color-theme: biotechnology
 
-include: lect04c-talking_points_set_3-proteomics.djot
-include: lect04d-talking_points_set_3_recombinant_proteins.djot
-include: lect04e-talking_points_set_3_structural_biology.djot
-include: lect04f-talking_points_set_3_protein_engineering.djot
+=== layout: title-slide
+
+# Lecture 04C
+
+## Talking Points Set #3
+
+## Dr. Neil Voss
+
+## Sept 24, 2026
+
+=== include: lect04c-talking_points_set_3-proteomics.djot
+=== include: lect04d-talking_points_set_3_recombinant_proteins.djot
+=== include: lect04e-talking_points_set_3_structural_biology.djot
+=== include: lect04f-talking_points_set_3_protein_engineering.djot

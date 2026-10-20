@@ -28,7 +28,7 @@ color-theme: genetics
   - [nvoss@roosevelt.edu](mailto:nvoss@roosevelt.edu)
 - Office\:
   - Via Zoom Video Conference\:
-  - [https\://zoom.us/j/97638754024](https://roosevelt.zoom.us/j/97638754024?pwd=djdlTlFhNEQ0WFV5TTNUMW1xeldYZz09)
+  - [{{course_url:zoom_short}}]({{course_url:office_hours}})
   - Meeting ID\: 976 3875 4024
   - Password\: voss
 - Favorite Biology Subjects\: Biophysics, Structural Biology and Electron Microscopy
@@ -70,7 +70,7 @@ color-theme: genetics
 
 - I created a Discord Server called Neil Voss Lab
   - Participation in Discord is technically not required, but I give you are required to sign up
-- Sign-up link is available on Blackboard
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server, you should not create your own server
 
@@ -115,7 +115,7 @@ color-theme: genetics
 @top-left
 
 - Via Zoom Video Conference\:
-- [https\://zoom.us/j/97638754024](https://roosevelt.zoom.us/j/97638754024?pwd=djdlTlFhNEQ0WFV5TTNUMW1xeldYZz09)
+- [{{course_url:zoom_short}}]({{course_url:office_hours}})
 - Meeting ID\:
   - 976 3875 4024
 - Password\: voss
@@ -259,7 +259,7 @@ color-theme: genetics
 
 - I created a Discord Server called Neil Voss Lab
   - Participation in Discord is technically not required, but I give you are required to sign up
-- Sign-up link is available on Blackboard
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server, you should not create your own server
 

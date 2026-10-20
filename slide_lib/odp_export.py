@@ -1,6 +1,7 @@
 """Native ODP package skeleton projected from the immutable physical deck."""
 
 # Standard Library
+import copy
 import hashlib
 import mimetypes
 import pathlib
@@ -98,22 +99,37 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 	body = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "body"))
 	presentation = xml.etree.ElementTree.SubElement(body, _qname(OFFICE_NS, "presentation"))
 	for slide_index, slide in enumerate(deck.slides):
+		cover_decorations = _cover_decorations(slide)
 		layout_key = slide.layout.topology.key_for_canvas(deck.canvas)
 		page_attributes = {
 			_qname(DRAW_NS, "name"): slide.identity.slide_id,
 			_qname(DRAW_NS, "style-name"): page_style_names[(slide.surface, slide.hidden)],
-			_qname(DRAW_NS, "master-page-name"): theme.master_name,
+			_qname(DRAW_NS, "master-page-name"):
+				"DjotTitle" if cover_decorations else theme.master_name,
 			_qname(PRESENTATION_NS, "presentation-page-layout-name"): layout_names[layout_key],
 		}
 		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), page_attributes)
 		target_ids = _target_ids(slide, slide_index)
 		for object_index, item in enumerate(sorted(slide.objects,
 				key=lambda value: (value.z_index, value.reading_order, value.object_id))):
+			if item in cover_decorations:
+				continue
 			_write_object(page, automatic, item, deck, theme, slide.identity.slide_id,
 				slide_index, object_index, target_ids, picture_members)
 		slide_lib.odp_animation.write_reveals(page, slide, target_ids)
 		_write_notes(page, slide, deck, theme)
 	return _xml_bytes(root)
+
+
+def _cover_decorations(slide: slide_lib.layout_model.LayoutSlide
+		) -> tuple[slide_lib.layout_model.LayoutObject, ...]:
+	"""Keep cover furniture on its master, outside normal slide selection."""
+	if slide.layout.layout_name != "title-slide":
+		return ()
+	decorations = tuple(item for item in slide.objects
+		if item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
+		and item.object_id in ("title-metadata-frame", "title-accent"))
+	return decorations
 
 
 #============================================
@@ -445,6 +461,11 @@ def _clip_value(item: slide_lib.layout_model.LayoutObject,
 def _color_for(role: slide_lib.layout_primitives.StyleRole,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the shared resolved palette color for a semantic role."""
+	if role is slide_lib.layout_primitives.StyleRole.ACCENT_TINT:
+		# A pale course-derived surface keeps the hue without competing with dark text.
+		channels = [int(theme.accent_color[index:index + 2], 16) for index in (0, 2, 4)]
+		tint = "".join(f"{round(channel * 0.14 + 255 * 0.86):02X}" for channel in channels)
+		return tint
 	if role in (slide_lib.layout_primitives.StyleRole.ACCENT,
 			slide_lib.layout_primitives.StyleRole.TABLE_HEADER,
 			slide_lib.layout_primitives.StyleRole.TRANSITION):
@@ -519,7 +540,40 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 					_qname(SVG_NS, "width"): _cm_x(rectangle.width, deck, theme),
 					_qname(SVG_NS, "height"): _cm_y(rectangle.height, deck, theme),
 				})
+	_add_cover_master(root, deck, theme)
 	return _XML_DECLARATION + lxml.etree.tostring(root, encoding="utf-8")
+
+
+def _add_cover_master(root: lxml.etree._Element, deck: slide_lib.layout_model.LayoutDeck,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
+	"""Reuse the course master with cover-only, non-interactive background furniture."""
+	decorations = next((_cover_decorations(slide) for slide in deck.slides
+		if _cover_decorations(slide)), ())
+	if not decorations:
+		return
+	masters = root.find(_qname(OFFICE_NS, "master-styles"))
+	automatic = root.find(_qname(OFFICE_NS, "automatic-styles"))
+	if masters is None or automatic is None:
+		raise ValueError("template styles.xml is missing master or automatic styles")
+	base = next(master for master in masters
+		if master.attrib.get(_qname(STYLE_NS, "name")) == theme.master_name)
+	master = copy.deepcopy(base)
+	master.set(_qname(STYLE_NS, "name"), "DjotTitle")
+	master.set(_qname(STYLE_NS, "display-name"), "Title slide")
+	# Use the same native shape writer and compiled geometry as ordinary slide objects.
+	shapes = xml.etree.ElementTree.Element("shapes")
+	styles = xml.etree.ElementTree.Element("styles")
+	for index, item in enumerate(decorations):
+		style_name = f"DjotCover{index}"
+		_add_frame_style(styles, style_name, item, deck, theme)
+		element = _write_shape(shapes, styles, item, item.content, deck, theme,
+			style_name, 0, index, {})
+		element.set(_qname(DRAW_NS, "layer"), "backgroundobjects")
+	for element in styles:
+		automatic.append(lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
+	for element in shapes:
+		master.insert(0, lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
+	masters.append(master)
 
 
 #============================================

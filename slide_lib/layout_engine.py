@@ -21,9 +21,16 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 	session.prepare_table_groups(deck)
 	slides: list[slide_lib.layout_model.LayoutSlide] = []
 	for index, source in enumerate(deck.slides):
+		diagnostic_start = len(session.capacity_diagnostics)
 		slide_lib.layout_model.reject_unsupported_source_facts(
 			slide_lib.layout_measurement.unsupported_facts(source))
 		page = slide_lib.layout_builders.compile_slide(deck, source, theme, index, session)
+		title = next((slide_lib.layout_measurement.visible_text(block.inlines)
+			for block in source.blocks if isinstance(block, slide_lib.native_model.Heading)), "")
+		for diagnostic_index in range(diagnostic_start, len(session.capacity_diagnostics)):
+			session.capacity_diagnostics[diagnostic_index] = dataclasses.replace(
+				session.capacity_diagnostics[diagnostic_index], slide_number=index + 1,
+				slide_title=title)
 		if source.replaceme:
 			order = max((item.reading_order for item in page.objects), default=-1) + 1
 			z_index = max((item.z_index for item in page.objects), default=-1) + 1

@@ -591,6 +591,10 @@ def add_picture(
 		raise ValueError("ODF image reference misses its manifest target")
 	blob = archive.read(target)
 	suffix = image_suffix(target)
+	# Embedded formula previews use extensionless ObjectReplacements members.
+	# Route their recognizable SVM header through the existing bounded validator.
+	if not suffix and blob.startswith(b"VCLMTF"):
+		suffix = ".svm"
 	is_metafile = suffix in odp_metafile.METAFILE_SUFFIXES
 	try:
 		blob, suffix = odp_metafile.component_image(blob, suffix, geometry)

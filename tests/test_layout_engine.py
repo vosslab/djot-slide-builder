@@ -461,3 +461,56 @@ Short editable caption.
 	assert picture.rectangle.y + picture.rectangle.height < caption.rectangle.y
 	assert caption.rectangle.y + caption.rectangle.height < \
 		slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT
+
+
+@pytest.mark.parametrize("label", ["https://example.test/short",
+	"*https://example.test/short*", "`https://example.test/short`",
+	"[https://example.test/short]{color=red}"])
+def test_visible_url_style_cannot_be_overridden(tmp_path, label):
+	result = compile_source(tmp_path, "=== layout: one-panel\n@body\n"
+		f"[{label}](https://example.test/full?key=value)\n")
+	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
+	runs = [run for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun)]
+	assert runs
+	assert all(run.style.font_family == slide_lib.presentation_theme.NARROW_FONT_FAMILY
+		and run.style.literal_url for run in runs)
+	assert all(slide_lib.presentation_theme.inline_size_pt(24, run.style.literal_url) == 22
+		for run in runs)
+
+
+def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> None:
+	"""Keep numeric columns readable and totals distinct without changing cell text."""
+	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
+		"| Class | O-E | Value |\n| --- | --- | --- |\n"
+		"| A-B- | -1 | 0.033 |\n| Total | 0 | 0.178 |\n")
+	table = next(item.content for item in result.plan.slides[0].objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+	for row in table.body_rows:
+		for cell in row.cells[1:]:
+			assert cell.paragraphs[0].properties.horizontal_alignment is \
+				slide_lib.layout_primitives.HorizontalAlignment.END
+	assert table.body_rows[0].cells[0].fill_role is None
+	for cell in table.body_rows[1].cells:
+		assert cell.fill_role is slide_lib.layout_primitives.StyleRole.ACCENT_TINT
+		assert all(run.style.bold for run in cell.paragraphs[0].inlines
+			if isinstance(run, slide_lib.layout_content.TextRun))
+
+
+def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> None:
+	"""Omitting a title expands the body while retaining the ordinary page margins."""
+	result = compile_source(tmp_path,
+		"=== layout: one-panel\n\n# Heading\n\n@body\n\nContent.\n\n"
+		"=== layout: one-panel\n\n@body\n\nContent.\n")
+	titled, untitled = result.plan.slides
+	title = next(slot for slot in titled.slots if slot.slot_id == "title")
+	body = next(slot for slot in titled.slots if slot.slot_id == "body")
+	full = next(slot for slot in untitled.slots if slot.slot_id == "body")
+	assert all(slot.slot_id != "title" for slot in untitled.slots)
+	assert full.rectangle.y == title.rectangle.y
+	assert full.rectangle.height > body.rectangle.height
+	assert full.rectangle.y + full.rectangle.height == body.rectangle.y + body.rectangle.height
+	text = next(item for item in untitled.objects if item.object_id == "body")
+	assert text.frame_text.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE
+	assert text.content.paragraphs[0].properties.horizontal_alignment is \
+		slide_lib.layout_primitives.HorizontalAlignment.START

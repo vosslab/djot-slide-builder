@@ -4,7 +4,7 @@ color-theme: biotechnology
 
 # Lecture 03A
 
-## Biotechnology: Announcements
+## Announcements
 ## Dr. Neil Voss
 ## Sept 17, 2026
 
@@ -14,7 +14,6 @@ color-theme: biotechnology
 
 @body
 
-- Ice Breaker
 - Announcements
 - Overview of the individual project
 - Set #2 talking points
@@ -97,7 +96,7 @@ Make sure Dr. Voss is recording.
 - 1. Mute yourself when you are not speaking.
 - 2. Plug in your headphones.
 - 3. Turn off video if you have a slow connection
-  - Use the secure Zoom link in Blackboard.
+  - Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
 
 @right
 
@@ -111,7 +110,28 @@ Make sure Dr. Voss is recording.
 
 @caption
 
-[Dr. Voss's YouTube channel](https://www.youtube.com/c/NeilVossLab/videos) has videos for difficult problems.
+Watch Dr. Voss's videos for help with difficult problems.
+
+https://www.youtube.com/c/NeilVossLab/videos
+
+=== layout: big-image
+
+@image
+
+![StVC 33&#58; Fold Spacer &#8212; Racing Through Proteins &#124; Stump the Vibe Coder Episode 33](assets/stump_the_vibe_coder/gNA7VV_AGp0.jpg)
+
+@caption
+
+StVC 33&#58; Fold Spacer &#8212; Racing Through Proteins &#124; Stump the Vibe Coder Episode 33
+
+https://www.youtube.com/watch?v=gNA7VV_AGp0
+
+@notes
+
+podcast-slide: stump-the-vibe-coder
+Published: 2026-09-17T15:34:20+00:00
+Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 === layout: one-plus-two-panels
 
@@ -121,7 +141,7 @@ Make sure Dr. Voss is recording.
 
 - I created a Discord Server called Neil Voss Lab
   - You earn credit for signing up, and Discord is the quickest way to reach me.
-- Sign-up link is available on Blackboard
+- Join the server: {{course_url:discord}}
   - It is available as a mobile app, a desktop app, and a website
   - Be sure to connect to my server rather than creating your own server.
 
@@ -140,7 +160,7 @@ Make sure Dr. Voss is recording.
 @left
 
 - Office: SCH 600E, Schaumburg campus
-- Secure Zoom link: see Blackboard
+- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
   - Thursday, 12:30-1:30 p.m.
   - Wednesday, 2:30-3:30 p.m.
 - Also available by appointment
@@ -172,15 +192,16 @@ Make sure Dr. Voss is recording.
 
 @left
 
-- Use the anonymous Google Form for questions you would rather not ask publicly.
-- The form goes directly to my email and does not identify you to the class.
+- Google Form to send me an *_anonymous_* message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- https://forms.gle/gZ8nx28q9YDwSy8g7
 
 @right
 
-- Google Form to send me an **anonymous** message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
+![Anonymous Form](assets/anonymous_form.png)
+
+
 
 === layout: section
 hidden: true

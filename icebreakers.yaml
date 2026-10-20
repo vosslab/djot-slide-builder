@@ -1,0 +1,81 @@
+usage: Reusable one-panel Djot slide bodies. Copy title and body into an announcement deck after its agenda;
+  choose explicitly, not automatically. Historical wording is preserved. Source references identify provenance;
+  they are not runtime dependencies.
+icebreakers:
+- id: outdoor-activities
+  tags:
+  - general
+  - fallback
+  source: genetics/LECT03/djot/lect03a-2026_announcements.djot, authored slide 3
+  title: Breakout Room Chat
+  body: |-
+    - State your name, major, and post-grad plans
+    - We had great weather this weekend. What is your favorite outdoor activity?
+      - Dr. Voss\: riding my bicycle, watching my kids play sports, go on a walk
+- id: popular-culture
+  tags:
+  - general
+  - fallback
+  source: genetics/LECT03/djot/lect03a-2026_announcements.djot, authored slide 4
+  title: Breakout Room Chat
+  body: |-
+    - State your name, major, and post-grad plans
+    - What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?
+      - Dr. Voss\:
+- id: soft-drink-names
+  tags:
+  - general
+  - fallback
+  source: biotech/LECT03/djot/lect03a-2026_announcements.djot, authored slide 5
+  title: '[Breakout Room Chat]{color=red}'
+  body: |-
+    - If no one is talking, please be the first to speak and get things started.
+    - State your name, major, and plans after graduation.
+    - [What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?]{color=red}
+- id: cooking
+  tags:
+  - general
+  - fallback
+  source: biotech/LECT03/djot/lect03a-2026_announcements.djot, authored slide 7
+  title: '[Breakout Room Chat]{color=red}'
+  body: |-
+    - State your name, major, and post-grad plans
+    - [What is the best dish you can cook?]{color=red}
+      - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
+- id: scientific-misconduct
+  tags:
+  - biotechnology
+  - ethics
+  - Theranos
+  source: biotech/LECT05/djot/lect05a-2026_biotech_announcements.djot, authored slide 3
+  title: '[Week 5 Breakout Room Chat]{color=red}'
+  body: |-
+    - State your name, major, and plans after graduation.
+    - [You discover scientific misconduct at your company. What would you do?]{color=red}
+    - Consider falsified data, hidden negative results, or false product claims.
+    - Gather evidence, confront leadership, consult an expert, or report outside the company?
+    - If no one is talking, please be the first to speak.
+- id: modify-an-animal
+  tags:
+  - biotechnology
+  - genetics
+  - genetic-engineering
+  source: biotech/LECT06/djot/lect06a-2026_biotech_announcements.djot, authored slide 3
+  title: '[Week 6 Breakout Room Chat]{color=red}'
+  body: |-
+    - State your name, major, and plans after graduation.
+    - [You can genetically modify one animal. What would you change?]{color=red}
+    - Choose a farm animal, pet, or wild species.
+    - Explain the useful trait and one possible tradeoff.
+    - If no one is talking, please be the first to speak.
+- id: pets
+  tags:
+  - general
+  - fallback
+  source: Instructor request, October 20, 2026; Genetics LECT07A
+  title: '[Breakout Room Chat]{color=red}'
+  body: |-
+    - If no one is talking, please be the first to speak and get things started.
+    - State your name, major, and plans after graduation.
+    - [What pets do you have?]{color=red}
+      - Dog, cat, none, other.

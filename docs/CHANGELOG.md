@@ -1,6 +1,122 @@
 ## 2026-10-20
 
+- Remove redundant `(continued)` from the two LECT07D slide titles to reduce wrapping.
+
+- Repair LECT07C recovered equation spacing using font-independent vector outlines from
+  the original PDF: 19 formula assets and two composite figures. Preserve original equation
+  content; record source crops in `formula_sources.json` beside the assets.
+
+- Start `icebreakers.yaml` with six prompts recovered from past announcements and the requested
+  pets question. Add the pets Breakout Room Chat after the Genetics LECT07A agenda.
+
+- Add lecture-date selection to the StVC refresher, excluding future publications and
+  non-announcement course-introduction decks. Validate all thumbnails before source writes.
+- Populate past Genetics/biotech announcements with their date-appropriate StVC episodes
+  and remove unused agenda icebreaker entries.
+
+- Audit 12 Genetics/biotech announcement sources against recent shared-slide guidance:
+  anonymous-message layout, YouTube links/captions, grade colors, homework tables,
+  and assessment date formatting/status colors. Preserve slide counts, order, hidden
+  status. Reconcile 2026 Genetics assessment dates with the syllabus as authorized.
+- Remove obsolete 2025 announcement source decks and generated outputs as requested;
+  retain assets. Preserve course-specific output copies to avoid same-name export collisions.
+
+- Restore preferred-palette blue/magenta emphasis to LECT07A Graded vs Total
+  Percentage, matching the title, labels, and key distinction without rewriting text.
+
+- Hide Reviewing Old Quiz Questions with the LECT07A Exam section until final-exam
+  preparation is timely; retain it in the editable deck.
+
+- Label homework table rows with zero-padded Week numbers while retaining the
+  Assignment column heading.
+
+- Rename LECT07A homework pages to Homework Due Dates and complete Part 2 deadlines
+  through Assignment 13 using the published Fall 2026 Genetics syllabus.
+
+- Match homework date-status colors to exam schedules: gray past due, red next week,
+  black later. Apply to both cells of LECT07A homework rows.
+
+- Reformat LECT07A homework as assignment/date tables with padded dates; retain hidden
+  Part 1 and visible Part 2 slides and remove redundant deadline/schedule prose.
+
+- Use the instructor-cleaned biotech LECT07 anonymous-message slide in Genetics LECT07A,
+  preserving its text-left/image-right layout, wording, form URL, and image.
+
+- Restore consecutive factorial rows 3–13 on LECT07B slide 13 (17.5 pt).
+- Size standard slide titles independently of body density, preserving full-size short titles.
+
+- Label build capacity warnings with authored slide numbers and titles.
+- Improve LECT07B readability with a shorter representative factorial table and separate
+  pea-pod setup/outcome panels. Split the later LECT07D hypothesis summary into critical-value
+  and p-value slides with instructor approval, retaining its wording.
+
+- Correct the numeric-table sign character class to remove the regular-expression
+  FutureWarning while preserving signed-number alignment.
+
+- Vertically center ordinary text on titleless one-panel slides while preserving
+  horizontal alignment and standard body size. Leave mixed media layouts intact.
+
+- Promote LECT07B slide 7's answer to the title, leaving the original explanation
+  in the body to improve the use of space.
+
+- Use preferred purple `#A719DB` consistently for LECT07D significance-level labels,
+  replacing the overly dark imported purples.
+
+- Reorder colors across all four LECT07D seven-step slides to increase hue separation
+  between consecutive steps; retain matching colors for the step 4 and 5 references.
+
+- Rework Genetics LECT07C against all 38 original pages: remove duplicated Punnett
+  squares, restore lethal-TT crosses and missing equations, and give calculation groups
+  dedicated panel space. Preserve source wording and sequence.
+- Recognize extensionless SVM formula previews by their validated header in the existing
+  ODP importer. Extend its conversion regression test to cover ObjectReplacements members.
+
+- Split Genetics LECT07D original slides 3 and 4 into four slides: hypotheses and
+  probability, calculation terms, critical-value decisions, and p-value decisions.
+  Preserve the instructor's voice while applying approved scientific corrections to
+  the p-value definition, non-rejection language, and decision comparisons.
+  Apply the same approved terminology corrections to editable worked examples and
+  repeated summaries throughout LECT07D.
+
+- Convert the scanned Mendel quotation on Genetics LECT07D slide 50 to editable,
+  condensed bullet points at the instructor's request; retain the original image and
+  transcription in source assets and presenter notes.
+
+- Document the instructor's full preferred hex palette locally and link it from human
+  guidance, including the instructor-developed QTI color-wheel API for additional palettes
+  and independence from LibreOffice's named colors.
+
+- Apply the instructor's matching-set template palette to all four seven-step chi-square
+  slides, with step references matching their action colors and wording preserved.
+
+- Clear instructor-approved chi-square terminology and decision-slide flags, including
+  repeated copies, and standardize all six null-hypothesis labels to editable H subscript 0.
+
+- Record root `_temp/` as the canonical temporary directory and ignore its artifacts.
+
+- Let titleless one-panel slides use the normal top content margin and a taller body;
+  document omission of the root heading instead of adding another layout type.
+
+- Review all 61 LECT07 replacement flags against original and rebuilt PDF pages; clear
+  eight confirmed-complete slides. Restore the homework two-panel layout and missing
+  original schedule sentence; restore crossed-out treatment of the incorrect B9 calculation.
+
+- Switch Genetics LECT07A YouTube channel slide to big-image, preserving caption and URL.
+
+- Right-align numeric table cells and distinguish total rows with bold text and a pale
+  course-color fill in the shared native table renderer.
+
 ### Additions and New Features
+
+- Keep public YouTube and other public course links in tracked sources; only private
+  Discord and Zoom URLs use local configuration.
+- Implement ignored local YAML course URLs with explicit Djot references, safe loading,
+  validation, and focused tests. Populate existing Discord and Zoom URLs from slide sources;
+  replace Blackboard link placeholders while retaining evergreen Discord slides and QR images.
+
+- Add a universal Djot slide 1 pytest check across standalone decks and resolved includes.
+  Accept omitted chapters, combined chapter/topic lines, and separate chapter lines.
+  Require announcement topic exactly "Announcements" with no chapter.
 
 - Add `refresh_podcast.py`: preview or explicitly refresh the latest published Stump the Vibe
   Coder episode across selected announcement decks. Save its thumbnail locally and insert or
@@ -12,6 +128,61 @@
   Record Quiz 3 and Assignments 7-8 on November 3; hide completed midterm-preparation slides.
 
 ### Fixes and Maintenance
+
+- Clarify the standardization boundary in HG: visual consistency is authorized; content
+  decisions remain with the instructor, including corrections and teaching sequence.
+
+- Revise all five Genetics LECT07 decks against their original sources using the existing
+  importer. Remove unrequested teaching additions and rewrites; restore source sequence,
+  images, and notes while retaining approved announcement and formatting changes. Record
+  remaining representation gaps with @replaceme and supersede the old LECT07 review report.
+
+- Put the mandatory outside-sandbox LibreOffice rule first in AGENTS.md, explicitly covering
+  indirect metafile conversion during ODP imports and conversion tests.
+
+- Restore the missing n, n!, ln(n!) tables beside both LECT07B factorial explanations,
+  preserving the original 0-9 then 0-16 progression and original definition wording.
+
+- Add spaces around multiplication signs in both LECT07B factorial expansions.
+
+- Record the instructor's prohibition on adding slide content during conversion, including
+  invented learning objectives, summaries, prompts, explanations, and slogans.
+
+- Correct LECT07B birth-probability questions to the multiple-choice answer-reveal layout;
+  highlight the changed condition, restore source wording in the independence explanation,
+  and separate the seven-child alternatives from the assumption.
+
+- Record the required stacked fractions and binomial coefficients; withdraw the earlier
+  LECT07 review instruction to use slash fractions and C(n,k). Native math rendering remains
+  unimplemented, despite parser support for dollar-delimited expressions.
+
+- Restore the visible public YouTube channel URL on Genetics LECT05-07 channel slides;
+  retain automatic condensed URL formatting and clickable destinations. Shorten the
+  explanatory sentence to fit on one line.
+
+- Apply mandatory condensed, smaller URL typography to visible URL labels even when their
+  clickable destinations differ; prevent code styling from overriding the URL font. Keep
+  layout measurement and exported text styling consistent.
+
+- Preserve explicit hyperlink destinations when the visible label is itself a URL; prevent
+  nested automatic links from overriding password-bearing meeting targets.
+  Validate local course links with 154 focused tests and PDF hyperlink inspection.
+
+- Record course-link and evergreen Discord guidance: include actual URLs in student slides,
+  retain the opening server slide after signup deadlines, and distinguish assignment reminders.
+  Record untracked root YAML imports as a proposed storage approach.
+
+- Restore the title-card fill as a pale, desaturated course-color tint on the master-owned background,
+  preserving separate
+  native cover text. Record the instructor's preference for filled cards over an outline-only design.
+
+- Simplify Genetics LECT07's assessment schedule to fixed item/date lines with abbreviated months.
+  Preserve dates and status colors; move the long link and explanatory material to notes.
+
+- Move cover decoration to a dedicated course-derived master; leave metadata as native slide text.
+  Explicit stacking indices did not resolve the reported PDF text-selection problem.
+- Normalize announcement covers across courses, add a title slide before Biotechnology Set 3's
+  teaching content, and separate Set 4's chapter metadata from its talking-points note.
 
 - Restore separate title, chapter, instructor, and date lines on all five Genetics LECT07 covers.
   Export explicit native stacking indices so the unfilled gray title border stays behind text.
@@ -41,6 +212,13 @@
 
 ### Developer Tests and Notes
 
+- Cover/source regression checks: 132 passed, including all 61 standalone Djot decks.
+  Two focused external LibreOffice tests pass for PDF cover text extraction and master ownership
+  after resaving, one per course theme. Rebuild all five LECT07 ODP/PDF pairs and visually review
+  the announcement cover, chi-square cover, and simplified assessment schedule.
+- The broader native-layout E2E runner exposes unrelated stale layout-uniqueness and big-image
+  occupancy assumptions. Leave that runner unchanged; focused cover acceptance is reported
+  separately. The instructor confirms PDF text selection works.
 - Podcast refresh: four focused tests pass; repeated refresh produces no source diff. Preview
   accepts both Genetics and Biotechnology lecture folders. Lecture 07A passes strict lint and
   capacity checks; rebuilt ODP/PDF and the podcast slide's layout and hyperlink were verified.

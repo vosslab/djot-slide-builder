@@ -89,7 +89,7 @@ def test_summary_prints_source_located_capacity_from_the_export_result(tmp_path:
 		status = slide_lib.terminal_output.run_build(str(deck_path), "odp", allow_folder=False,
 			output_console=stdout, error_console=stderr)
 	text = stdout_stream.getvalue()
-	assert status == 0 and "Capacity: capacity.djot:" in text and "one-panel/body" in text
+	assert status == 0 and "Capacity: capacity.djot: slide 1" in text and "one-panel/body" in text
 	assert str(tmp_path) not in text and stderr_stream.getvalue() == ""
 
 

@@ -6,6 +6,7 @@ import pathlib
 import re
 
 # Local Modules
+import slide_lib.course_links
 import slide_lib.djot_blocks
 import slide_lib.djot_errors
 import slide_lib.djot_grammar
@@ -452,7 +453,8 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 	bundle = slide_lib.djot_sources.load_sources(path)
 	assembled: list[slide_lib.native_model.Slide] = []
 	for source in bundle.files:
-		_color_theme, slide_sources = split_slides(source.path, source.text)
+		_color_theme, slide_sources = split_slides(source.path,
+			slide_lib.course_links.expand(source.text, bundle.color_theme))
 		for slide_source in slide_sources:
 			slide = assemble_slide(source.path, slide_source)
 			assembled.append(dataclasses.replace(slide, hidden=True) if source.hidden else slide)

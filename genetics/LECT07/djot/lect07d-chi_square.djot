@@ -12,15 +12,9 @@ color-theme: genetics
 
 ## October 20, 2026
 
-=== layout: one-panel
+@notes
 
-# Learning objectives
-
-@body
-
-- Calculate expected counts and a chi-square statistic.
-- Use degrees of freedom and a critical value or p-value.
-- Explain reject versus fail to reject in a genetics example.
+Source: lect07d-chi_square.odp, slide 1.
 
 === layout: one-panel
 
@@ -34,52 +28,110 @@ color-theme: genetics
 - Evaluates the "_goodness of fit_" between observed and expected.
 - If the difference is too large to be random, there's statistically significant evidence [*_against_*]{color=red} [the hypothesis]{color=red}.
 
-=== layout: one-panel
+@notes
 
-# Chi-square terminology
-
-@body
-
-- [*Null hypothesis (H~0~)*]{underline=true}: the model that supplies expected counts
-- [*Alternative hypothesis*]{underline=true}: the counts do not fit that model
-- [*Significance level (&alpha;)*]{underline=true}: decision threshold chosen in advance
-- [*p-value*]{underline=true}: under H~0~, probability of a chi-square statistic at least as large as observed
-- [*Degrees of freedom*]{underline=true}: categories minus one when no parameters are estimated
-- [*Critical value*]{underline=true}: cutoff determined by df and &alpha;
+Source: lect07d-chi_square.odp, slide 2.
 
 === layout: one-panel
 
-# Reject or fail to reject?
+# *Chi-Square (&chi;^2^) Terminology*
 
 @body
 
-- Choose &alpha; before testing, usually 0.05.
-- *p &le; &alpha;*: reject H~0~.
-- *p > &alpha;*: fail to reject H~0~.
-- Equivalently, reject when &chi;^2^ is at or above the critical value.
-- Failure to reject does not prove H~0~ is true.
+- [Null Hypothesis (H~0~)]{color=red}\:
+  - What we aim to find evidence against ([want to reject]{color=red}).
+  - Always simpler to calculate the expected numbers.
+- [Alternative Hypothesis (H~a~)]{color=green}\: Aim to support indirectly through the test.
+- [Significance Level (&#945;)]{color=#A719DB}\: A preset threshold for statistical significance, usually set at 0.05.
+- The [p-value]{color=#BE480A}\: The probability of getting results at least as extreme as those observed if the null hypothesis is true.
 
-Example: 21.4 > 7.82 at df = 3 and &alpha; = 0.05: reject H~0~.
+@notes
+
+Source: lect07d-chi_square.odp, slide 3.
+Instructor-approved four-slide split of original slides 3 and 4.
 
 === layout: one-panel
 
-# Seven steps of the chi-square test
+# *Chi-Square (&chi;^2^) Terminology*
 
 @body
 
-1. State H~0~ and the expected ratio.
-2. Calculate expected counts.
-3. For each category, calculate (O-E)^2^ / E.
-4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
-5. Determine degrees of freedom.
-6. Find the p-value or critical value.
-7. Compare with &alpha; and state the conclusion.
+- [Chi-Squared statistic]{color=#861141}\: The calculated measure that quantifies the difference between observed and expected data.
+- Critical Value\: A threshold for comparison with the [Chi-Squared statistic]{color=#861141}.
+  - The [Critical Value]{color=blue} depends BOTH on the [Degrees of Freedom]{color=#B47804} and [Significance Level (&#945;)]{color=#A719DB}.
+  - The [Critical Value]{color=blue} is obtained by looking at the *Chi-Square (&chi;^2^) Distribution Table*.
+- [Degrees of Freedom]{color=#B47804}\: The number of independent values that can vary in an analysis.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 3.
+Instructor-approved four-slide split of original slides 3 and 4.
 
 === layout: one-panel
 
-# H~0~: 9:3:3:1; total = 160
+# [Null hypothesis\:]{color=red} Reject or Do Not Reject?
 
 @body
+
+- If the [null hypothesis is rejected]{color=red}, then we [support the alternative hypothesis]{color=#00A933}.
+  - Example\: [Null hypothesis\: &#8220;our situation is unbiased&#8221;]{color=red} [Alternative hypothesis &#8220;our situation is biased&#8221;]{color=#00A933}
+- [Chi-squared statistic]{color=#650953} vs. [Critical value]{color=blue}\:
+  - Larger [Chi-squared statistic]{color=#650953} values provide stronger evidence [against the null hypothesis]{color=red}.
+    - [Do not reject null hypothesis]{color=green} if [Chi-squared statistic]{color=#650953} is less than or equal to [Critical value]{color=blue}.
+    - [Reject null hypothesis]{color=red} if [Chi-squared statistic]{color=#650953} is greater than [Critical value]{color=blue}.
+  - Example\: [Chi-squared statistic]{color=#650953} of 21.4 > [Critical value]{color=blue} of 7.82 &#8658; [Reject H~0~]{color=red}.
+- [Critical value]{color=blue} depends BOTH on the [Degrees of Freedom]{color=#B47804} and [Significance Level (&#945;)]{color=#A719DB}.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 4.
+Instructor-approved four-slide split of original slides 3 and 4.
+
+=== layout: one-panel
+
+# [Null hypothesis\:]{color=red} Reject or Do Not Reject?
+
+@body
+
+- [p-value]{color=#BE480A} vs. [significance level (&#945;)]{color=#A719DB}\:
+  - A larger [Chi-squared statistic]{color=#650953} correlates with a smaller [p-value]{color=#BE480A} for fixed degrees of freedom.
+    - [Reject null hypothesis]{color=red} if [p-value]{color=#BE480A} is less than [significance level (&#945;)]{color=#A719DB}.
+    - [Do not reject null hypothesis]{color=green} if [p-value]{color=#BE480A} is greater than or equal to [significance level (&#945;)]{color=#A719DB} (fail to reject).
+  - Example\: [p-value]{color=#BE480A} of 0.02 < fixed [significance level (&#945;)]{color=#A719DB} of 0.05 &#8658; [Reject H~0~]{color=red}.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 4.
+Instructor-approved four-slide split of original slides 3 and 4.
+
+=== layout: one-panel
+
+# *Seven Steps of the Chi-Square (&chi;^2^) Test*
+
+@body
+
+- 1. [State]{color=#D40000} Hypothesis
+  - _choose one that is easy to predict progeny_
+- 2. [Predict]{color=#003FFF} expected progeny from hypothesis
+- 3. [Subtract]{color=#007A00} expected from observed (o-e)
+  - _square the value and then divide by expected_
+- 4. [Sum]{color=#C80085} each row to get the Chi Square statistic (&chi;^2^) value
+- 5. [Determine]{color=#935D00} degrees of freedom (DF)
+- 6. [Look]{color=#00775F} up p-value using [#4]{color=#C80085} and [#5]{color=#935D00}
+- 7. [Determine]{color=#A719DB} if hypothesis is rejected.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 5.
+
+=== layout: one-panel
+
+
+@body
+
+Hypothesis: Progeny exhibit Dihybrid Cross Ratio of 9:3:3:1
+
+total offspring = 160
 
 {table-group="dihybrid-chi"}
 | Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
@@ -92,13 +144,19 @@ Example: 21.4 > 7.82 at df = 3 and &alpha; = 0.05: reject H~0~.
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 6.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# H~0~: 9:3:3:1; total = 160
 
 @body
+
+Hypothesis: Progeny exhibit Dihybrid Cross Ratio of 9:3:3:1
+
+total offspring = 160
 
 {table-group="dihybrid-chi"}
 | Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
@@ -111,11 +169,13 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 7.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# H~0~: 9:3:3:1; total = 160
 
 @body
 
@@ -130,11 +190,13 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 8.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# H~0~: 9:3:3:1; total = 160
 
 @body
 
@@ -149,11 +211,13 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 9.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# H~0~: 9:3:3:1; total = 160
 
 @body
 
@@ -168,11 +232,13 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 10.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# H~0~: 9:3:3:1; total = 160
 
 @body
 
@@ -187,11 +253,13 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 11.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# Sum the contributions: &chi;^2^ = 0.178
 
 @body
 
@@ -206,11 +274,13 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 12.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# Four categories: df = 4 - 1 = 3
 
 @body
 
@@ -223,106 +293,94 @@ Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
 | aabb | 10 | 9 | -1 | 1 | 0.100 |
 | Total | 160 | 160 | 0 | | *0.178* |
 
-@notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Number of observations: 4 rows
 
-=== layout: one-panel
-
-# Interpret the p-value
-
-@body
-
-- A chi-square statistic needs its degrees of freedom.
-- The p-value is a right-tail probability under H~0~.
-- Small p: this much disagreement, or more, is unusual under H~0~.
-- Large p: insufficient evidence to reject H~0~.
-- p is not the probability that H~0~ is true.
-
-Here: &chi;^2^ &asymp; 0.178, df = 3, p &asymp; 0.981.
-
-=== layout: one-panel
-
-# df = 3: locate the critical value
-
-@body
-
-| Right-tail p | 0.10 | 0.05 | 0.01 |
-| --- | --- | --- | --- |
-| Critical chi-square | 6.251 | 7.815 | 11.345 |
+Degree of Freedom: 4 - 1 = 3
 
 @notes
 
-At alpha = 0.05, the critical value is 7.815 (about 7.82).
+Source: lect07d-chi_square.odp, slide 13.
+
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: one-panel
 
-# Compare with the critical value
+# *Chi-Square (&chi;^2^) Test*
 
 @body
 
-- df = 3; &alpha; = 0.05
-- Critical value &asymp; 7.82
+- The &chi;^2^ value means nothing on its own.
+- It is used to find the probability that the observed data set could have resulted from random fluctuations.
+  - A low probability suggests that the observed data are not consistent with the hypothesis and the thus the hypothesis should be rejected.
+- A standard cutoff point used by biologists is a probability of 0.05 (5%). If the probability corresponding to the &chi;^2^ value is 0.05 or less, the differences between observed and expected values are considered statistically significant and the hypothesis should be rejected.
+  - Likewise if the probability is above 0.05, the results are not statistically significant; the observed data are consistent with the hypothesis.
 
-*&chi;^2^ = 0.178 < 7.82: fail to reject H~0~.*
+@notes
 
-The counts do not provide sufficient evidence against the proposed ratio.
+Source: lect07d-chi_square.odp, slide 14.
+
+=== layout: one-panel
+
+# *df = 3*
+
+@body
+
+![Slide image 2](assets/source_fidelity/lect07d/image_002.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 15.
 
 === layout: one-panel
 @replaceme
 
-# Why use a table?
+# *df = 3*
 
 @body
 
-- The exact p-value comes from a tail area, not simple arithmetic.
-- For statistic x and df = k, integrate t^(k/2 - 1)^ e^(-t)^:
-  - numerator: from x/2 to infinity
-  - denominator: from 0 to infinity
-- Divide numerator by denominator.
+![Slide image 2](assets/source_fidelity/lect07d/image_002.png)
 
-Use the chi-square table or software for the calculation.
+- As the chi-squared statistic of 0.178 is [less]{color=#FF00CC} than critical value of 7.82, we [do not reject]{color=#FF00CC} the null hypothesis.
+
+- *&#61539;2 = Sum*
+
+- *0.178*
 
 @notes
 
-The source stacked integral equation cannot be faithfully represented by the native Djot math subset. The explanatory draft remains editable underneath. Original StarMath:
-F( %chi^2 , k ) ~=~
-{`int from{%chi^2 / 2} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
-over
-{`int from{0} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
-
+Source: lect07d-chi_square.odp, slide 16.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.04532142857142857, top=0.08617142857142857, right=0.9417857142857143, bottom=0.9144), NormalizedBounds(left=0.6803214285714286, top=0.6978857142857142, right=0.8220714285714286, bottom=0.7490857142857142), NormalizedBounds(left=0.8315357142857144, top=0.7001714285714286, right=0.9470000000000002, bottom=0.7513714285714286)] into one native source-order panel; unsupported source object draw:custom-shape requires reconstruction.
 
 === layout: one-panel
 @replaceme
 
-# The exact tail probability
+# *Why we use a table?*
 
 @body
 
-- x = 0.178; k = 3
-- Lower limit in numerator: x/2 = 0.089
-- Numerator &asymp; 0.869442
-- Denominator &asymp; 0.886227
-
-*p &asymp; 0.98106 > 0.05: fail to reject H~0~.*
-
+- It is quite a difficult function to calculate the exact p-value from the chi-square number, &chi;^2^, and the degrees of freedom, k.
 
 @notes
 
-The source stacked integral equation cannot be faithfully represented by the native Djot math subset. The explanatory draft remains editable underneath. Original StarMath:
-F( %chi^2 , k ) ~=~
-{`int from{%chi^2 / 2} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
-over
-{`int from{0} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
-~=~
-{`int from{0.178 / 2} to{infinity} x^{ {3 over 2}`-1 } e^-x dx`}
-over
-{`int from{0} to{infinity} x^{ {3 over 2}`-1 } e^-x dx`}
+Source: lect07d-chi_square.odp, slide 17.
+Review: source image requires review: unsupported ODP image type: .
 
-newline
+=== layout: one-panel
+@replaceme
 
-~=~
-{`0.869442`} over {`0.886227`} ~=~ 0.98106 ~>~ 0.05
+# *Why we use a table?*
+
+@body
+
+- It is quite a difficult function to calculate the exact p-value from the chi-square number, &chi;^2^, and the degrees of freedom, k.
+- Using &chi;^2^=0.178 and k=3\:
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 18.
+Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 
@@ -330,191 +388,264 @@ newline
 
 @body
 
-![Slide image 2](assets/lect07d-chi_square/image_002.png)
-
-=== layout: one-panel
-
-# Chi-square critical values
-
-@body
-
-| df | p = 0.10 | p = 0.05 | p = 0.01 |
-| --- | --- | --- | --- |
-| 1 | 2.706 | 3.841 | 6.635 |
-| 2 | 4.605 | 5.991 | 9.210 |
-| 3 | 6.251 | 7.815 | 11.345 |
-| 4 | 7.779 | 9.488 | 13.277 |
+![Slide image 2](assets/source_fidelity/lect07d/image_002.png)
 
 @notes
 
-Read across the df row. A statistic at or above the alpha = 0.05 column rejects H0 at that level.
+Source: lect07d-chi_square.odp, slide 19.
 
 === layout: one-panel
+@replaceme
 
-# Seven steps of the chi-square test
 
 @body
 
-1. State H~0~ and the expected ratio.
-2. Calculate expected counts.
-3. For each category, calculate (O-E)^2^ / E.
-4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
-5. Determine degrees of freedom.
-6. Find the p-value or critical value.
-7. Compare with &alpha; and state the conclusion.
+![Slide image 2](assets/source_fidelity/lect07d/image_002.png)
+
+- [do not reject]{color=#00A933}
+
+- [reject]{color=red}
+- [\*\*\*]{color=red}
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 20.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.05164285714285714, top=0.05965714285714286, right=0.9561785714285715, bottom=0.9565714285714286), NormalizedBounds(left=0.8269285714285715, top=0.8514285714285714, right=0.9969285714285715, bottom=1.0)] into one native source-order panel; source object crosses physical page bounds; unsupported source object draw:line requires reconstruction.
 
 === layout: one-panel
 
-# Fruit fly problem
+# *Seven Steps of the Chi-Square (&chi;^2^) Test*
 
 @body
 
-- Cross flies heterozygous at st and bw.
-- Both recessive alleles affect eye color; the double recessive is white.
-- Among 240 offspring: 150 wild type, 36 scarlet, 46 brown, 8 white.
+- 1. [State]{color=#D40000} Hypothesis
+  - _choose one that is easy to predict progeny_
+- 2. [Predict]{color=#003FFF} expected progeny from hypothesis
+- 3. [Subtract]{color=#007A00} expected from observed (o-e)
+  - _square the value and then divide by expected_
+- 4. [Sum]{color=#C80085} the result to get the &chi;^2^ value
+- 5. [Determine]{color=#935D00} degrees of freedom (DF)
+- 6. [Look]{color=#00775F} up p-value using [#4]{color=#C80085} and [#5]{color=#935D00}
+- 7. [Determine]{color=#A719DB} if hypothesis is rejected.
 
-*Do these counts fit independent assortment (9:3:3:1)?*
+@notes
+
+Source: lect07d-chi_square.odp, slide 21.
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 3](assets/source_fidelity/lect07d/image_003.png)
+
+@right
+
+![Slide image 4](assets/source_fidelity/lect07d/image_004.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 22.
+Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
 
 === layout: one-panel
+@replaceme
 
-# Predict the expected counts
 
 @body
 
-| Phenotype | Observed | Expected |
-| --- | --- | --- |
-| Wild type | 150 | 135 |
-| Scarlet | 36 | 45 |
-| Brown | 46 | 45 |
-| White | 8 | 15 |
+![Slide image 4](assets/source_fidelity/lect07d/image_003.png)
+
+![Slide image 5](assets/source_fidelity/lect07d/image_005.png)
+
+![Slide image 6](assets/source_fidelity/lect07d/image_006.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 23.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.04000000000000001, top=0.09331428571428572, right=0.4791785714285715, bottom=0.22005714285714287), NormalizedBounds(left=0.049999999999999996, top=0.22, right=0.4891785714285715, bottom=0.2990857142857143), NormalizedBounds(left=0.12000000000000001, top=0.35400000000000004, right=0.8699999999999999, bottom=0.8666285714285714)] into one native source-order panel.
 
 === layout: one-panel
+@replaceme
 
-# Calculate the contributions
 
 @body
 
-| Phenotype | O | E | (O-E)^2^/E |
-| --- | --- | --- | --- |
-| Wild type | 150 | 135 | 1.667 |
-| Scarlet | 36 | 45 | 1.800 |
-| Brown | 46 | 45 | 0.022 |
-| White | 8 | 15 | 3.267 |
+![Slide image 6](assets/source_fidelity/lect07d/image_003.png)
+
+![Slide image 7](assets/source_fidelity/lect07d/image_007.png)
+
+![Slide image 8](assets/source_fidelity/lect07d/image_008.png)
+
+![Slide image 9](assets/source_fidelity/lect07d/image_009.png)
+
+![Slide image 10](assets/source_fidelity/lect07d/image_010.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 24.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.5, top=0.06742857142857142, right=0.9800000000000001, bottom=0.26657142857142857), NormalizedBounds(left=0.04000000000000001, top=0.09331428571428572, right=0.4791785714285715, bottom=0.22005714285714287), NormalizedBounds(left=0.04000000000000001, top=0.2294285714285714, right=0.47546428571428573, bottom=0.33908571428571427), NormalizedBounds(left=0.19000000000000003, top=0.3504, right=0.8158928571428572, bottom=0.5466285714285715), NormalizedBounds(left=0.11000000000000001, top=0.5454285714285714, right=0.88775, bottom=0.8133142857142857)] into one native source-order panel.
 
 === layout: one-panel
+@replaceme
 
-# Sum and determine df
 
 @body
 
-- &chi;^2^ = 225/135 + 81/45 + 1/45 + 49/15
-- &chi;^2^ &asymp; 6.76
-- Four categories; no parameters estimated
+![Slide image 10](assets/source_fidelity/lect07d/image_003.png)
 
-*df = 4 - 1 = 3*
+![Slide image 10](assets/source_fidelity/lect07d/image_010.png)
+
+![Slide image 11](assets/source_fidelity/lect07d/image_011.png)
+
+![Slide image 12](assets/source_fidelity/lect07d/image_012.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 25.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.49000000000000005, top=0.08885714285714286, right=0.9600000000000001, bottom=0.25074285714285716), NormalizedBounds(left=0.04000000000000001, top=0.09331428571428572, right=0.4791785714285715, bottom=0.22005714285714287), NormalizedBounds(left=0.049999999999999996, top=0.27628571428571425, right=0.52, bottom=0.33468571428571425), NormalizedBounds(left=0.11000000000000001, top=0.4266285714285714, right=0.8868214285714286, bottom=0.5734857142857143)] into one native source-order panel.
 
 === layout: one-panel
+@replaceme
 
-# What does the fly result mean?
 
 @body
 
-- &chi;^2^ = 6.76; df = 3
-- Use the right-tail probability table.
+![Slide image 12](assets/source_fidelity/lect07d/image_003.png)
 
-*Is p above or below 0.05?*
+![Slide image 12](assets/source_fidelity/lect07d/image_010.png)
 
-Does this provide evidence against independent assortment?
+![Slide image 12](assets/source_fidelity/lect07d/image_012.png)
+
+![Slide image 13](assets/source_fidelity/lect07d/image_013.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 26.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.49000000000000005, top=0.08885714285714286, right=0.9600000000000001, bottom=0.25074285714285716), NormalizedBounds(left=0.04000000000000001, top=0.09331428571428572, right=0.4791785714285715, bottom=0.22005714285714287), NormalizedBounds(left=0.49000000000000005, top=0.25971428571428573, right=0.9500000000000001, bottom=0.34668571428571426), NormalizedBounds(left=0.18000000000000002, top=0.38662857142857143, right=0.7500000000000001, bottom=0.5234857142857142)] into one native source-order panel.
 
 === layout: one-panel
+@replaceme
 
-# Compare with the critical value
+# *df = 3*
 
 @body
 
-- df = 3; &alpha; = 0.05
-- Critical value &asymp; 7.82
+![Slide image 13](assets/source_fidelity/lect07d/image_002.png)
 
-*&chi;^2^ = 6.76 < 7.82: fail to reject H~0~.*
+- As the chi-squared statistic of 6.76 is [less]{color=#FF00CC} than critical value of 7.82, we [do not reject]{color=#FF00CC} the null hypothesis.
 
-The counts do not provide sufficient evidence against the proposed ratio.
+- *&#61539;2 = Sum*
+
+- *6.76*
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 27.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.04532142857142857, top=0.08617142857142857, right=0.9417857142857143, bottom=1.0), NormalizedBounds(left=0.6803214285714286, top=0.6978857142857142, right=0.8220714285714286, bottom=0.7490857142857142), NormalizedBounds(left=0.8315357142857144, top=0.7001714285714286, right=0.9470000000000002, bottom=0.7513714285714286)] into one native source-order panel; source object crosses physical page bounds; unsupported source object draw:custom-shape requires reconstruction.
 
 === layout: one-panel
+@replaceme
 
-# Fruit fly conclusion
 
 @body
 
-- &chi;^2^ &asymp; 6.76; df = 3; p &asymp; 0.08
-- p > 0.05: fail to reject independent assortment.
+![Slide image 13](assets/source_fidelity/lect07d/image_003.png)
 
-The data are compatible with 9:3:3:1, but do not prove the model.
+![Slide image 13](assets/source_fidelity/lect07d/image_010.png)
+
+![Slide image 13](assets/source_fidelity/lect07d/image_012.png)
+
+![Slide image 13](assets/source_fidelity/lect07d/image_013.png)
+
+![Slide image 14](assets/source_fidelity/lect07d/image_014.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 28.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.49000000000000005, top=0.08885714285714286, right=0.9600000000000001, bottom=0.25074285714285716), NormalizedBounds(left=0.04000000000000001, top=0.09331428571428572, right=0.4791785714285715, bottom=0.22005714285714287), NormalizedBounds(left=0.49000000000000005, top=0.25971428571428573, right=0.9500000000000001, bottom=0.34668571428571426), NormalizedBounds(left=0.18000000000000002, top=0.38662857142857143, right=0.7500000000000001, bottom=0.5234857142857142), NormalizedBounds(left=0.13, top=0.5733142857142857, right=0.8975714285714286, bottom=0.7609142857142857)] into one native source-order panel.
 
 === layout: one-panel
+@replaceme
 
-# Which way does p move?
 
 @body
 
-*With df fixed, would a larger &chi;^2^ increase or decrease p?*
+![Slide image 14](assets/source_fidelity/lect07d/image_003.png)
 
-=> appear
-A larger statistic leaves less area to its right, so *p decreases*.
+![Slide image 14](assets/source_fidelity/lect07d/image_010.png)
+
+![Slide image 14](assets/source_fidelity/lect07d/image_014.png)
+
+![Slide image 15](assets/source_fidelity/lect07d/image_015.png)
+
+![Slide image 16](assets/source_fidelity/lect07d/image_016.png)
+
+![Slide image 17](assets/source_fidelity/lect07d/image_017.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 29.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.49000000000000005, top=0.08885714285714286, right=0.9600000000000001, bottom=0.25074285714285716), NormalizedBounds(left=0.04000000000000001, top=0.09331428571428572, right=0.4791785714285715, bottom=0.22005714285714287), NormalizedBounds(left=0.49000000000000005, top=0.24822857142857144, right=0.9600000000000001, bottom=0.3632), NormalizedBounds(left=0.12082142857142857, top=0.38022857142857147, right=0.8828214285714285, bottom=0.47891428571428574), NormalizedBounds(left=0.049999999999999996, top=0.48400000000000004, right=0.9258928571428571, bottom=0.6419428571428571), NormalizedBounds(left=0.12000000000000001, top=0.6666285714285715, right=0.8893928571428572, bottom=0.7764571428571428)] into one native source-order panel.
 
 === layout: section
 
-# Chi-Square (&chi;^2^) Test of Mendel's Data Group Exercise
-
-=== layout: one-panel
-
-# Seven steps of the chi-square test
-
-@body
-
-1. State H~0~ and the expected ratio.
-2. Calculate expected counts.
-3. For each category, calculate (O-E)^2^ / E.
-4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
-5. Determine degrees of freedom.
-6. Find the p-value or critical value.
-7. Compare with &alpha; and state the conclusion.
-
-=== layout: one-panel
-
-# Mendel exercise: choose a trait
-
-@body
-
-| Trait | Dominant | Recessive |
-| --- | --- | --- |
-| Flower color | 705 | 224 |
-| Seed color | 6022 | 2001 |
-| Seed shape | 5474 | 1850 |
-| Pod shape | 882 | 299 |
-| Pod color | 428 | 152 |
-| Flower position | 651 | 207 |
-| Stem length | 787 | 277 |
+# Chi-Square (&chi;^2^) Test of Mendel&#8217;s Data Group Exercise
 
 @notes
 
-Work in quiz groups. Test H0: 3:1 at alpha = 0.05; use the worksheet and chi-square table.
+Source: lect07d-chi_square.odp, slide 30.
 
 === layout: one-panel
 
-# Mendel group activity
+# *Seven Steps of the Chi-Square (&chi;^2^) Test*
 
 @body
 
-- Work in your quiz group.
-- Choose one trait from the Mendel data table.
-- Complete the worksheet on the next slide.
-- Test the 3:1 hypothesis at alpha = 0.05.
-- Compare your result with the worked answers.
+- 1. [State]{color=#D40000} Hypothesis
+  - _choose one that is easy to predict progeny_
+- 2. [Predict]{color=#003FFF} expected progeny from hypothesis
+- 3. [Subtract]{color=#007A00} expected from observed (o-e)
+  - _square the value and then divide by expected_
+- 4. [Sum]{color=#C80085} the result to get the &chi;^2^ value
+- 5. [Determine]{color=#935D00} degrees of freedom (DF)
+- 6. [Look]{color=#00775F} up p-value using [#4]{color=#C80085} and [#5]{color=#935D00}
+- 7. [Determine]{color=#A719DB} if hypothesis is rejected.
 
 @notes
 
-Historical Fall 2024 online activity: https://docs.google.com/presentation/d/1ojhLbKVIjVycAqpLN4n0yw6u2pvR4E5zWZmSxyg8lJU/edit
-The included worksheet provides the current self-contained activity.
+Source: lect07d-chi_square.odp, slide 31.
+
+=== layout: one-panel
+
+# *Mendel &chi;^2^-Test Exercise*
+
+@body
+
+- Get into your quiz groups
+- Select a Pea Plant character
+- Perform &chi;^2^-Test
+
+![Slide image 18](assets/source_fidelity/lect07d/image_018.jpg)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 32.
+Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
+
+=== layout: one-panel
+
+# *Google Slides Activity*
+
+@body
+
+- Get into Break Out Room and process your set
+- [https\://docs.google.com/presentation/d/1ojhLbKVIjVycAqpLN4n0yw6u2pvR4E5zWZmSxyg8lJU/edit](https://docs.google.com/presentation/d/1ojhLbKVIjVycAqpLN4n0yw6u2pvR4E5zWZmSxyg8lJU/edit)
+- Fall 2024
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 33.
 
 === layout: one-panel
 hidden: true
@@ -527,6 +658,10 @@ hidden: true
 - [https\://docs.google.com/presentation/d/1Pj53N-RnC87bfHwocD2H-Py8keWcFShHkSCj-5CZ-yQ/edit](https://docs.google.com/presentation/d/1Pj53N-RnC87bfHwocD2H-Py8keWcFShHkSCj-5CZ-yQ/edit)
 - Fall 2023, Take 2
 
+@notes
+
+Source: lect07d-chi_square.odp, slide 34.
+
 === layout: one-panel
 hidden: true
 
@@ -537,6 +672,10 @@ hidden: true
 - Get into Break Out Room and process your set
 - [https\://docs.google.com/presentation/d/1fBh\_3w7iiGMrAMcxhT98G23TTJmScYSQausAOO1dkpw/edit](https://docs.google.com/presentation/d/1fBh_3w7iiGMrAMcxhT98G23TTJmScYSQausAOO1dkpw/edit)
 - Fall 2023
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 35.
 
 === layout: one-panel
 hidden: true
@@ -549,200 +688,201 @@ hidden: true
 - [https\://docs.google.com/presentation/d/1MAk7iS6ghYjOk4e4IbwudS7sMmzl7e7yFuzSRfrP5Go/edit](https://docs.google.com/presentation/d/1MAk7iS6ghYjOk4e4IbwudS7sMmzl7e7yFuzSRfrP5Go/edit)
 - Fall 2022
 
-=== layout: one-panel
-
-# Chi-square worksheet
-
-@body
-
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant |  |  |  |  |
-| Recessive |  |  |  |  |
-
 @notes
 
-Choose one Mendel trait. H0: 3:1. Compute df, sum contributions, and state a conclusion.
+Source: lect07d-chi_square.odp, slide 36.
 
 === layout: one-panel
 
-# Chi-square critical values
 
 @body
 
-| df | p = 0.10 | p = 0.05 | p = 0.01 |
-| --- | --- | --- | --- |
-| 1 | 2.706 | 3.841 | 6.635 |
-| 2 | 4.605 | 5.991 | 9.210 |
-| 3 | 6.251 | 7.815 | 11.345 |
-| 4 | 7.779 | 9.488 | 13.277 |
+![Slide image 19](assets/source_fidelity/lect07d/image_019.svg)
 
 @notes
 
-Read across the df row. A statistic at or above the alpha = 0.05 column rejects H0 at that level.
+Source: lect07d-chi_square.odp, slide 37.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/source_fidelity/lect07d/image_002.png)
+
+- [do not reject]{color=#00A933}
+
+- [reject]{color=red}
+- [\*\*\*]{color=red}
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 38.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.05164285714285714, top=0.05965714285714286, right=0.9561785714285715, bottom=0.9565714285714286), NormalizedBounds(left=0.8269285714285715, top=0.8514285714285714, right=0.9969285714285715, bottom=1.0)] into one native source-order panel; source object crosses physical page bounds; unsupported source object draw:line requires reconstruction.
 
 === layout: section
 
 # Mendel Chi-Square Test Answers
 
-=== layout: one-panel
-
-# Flower color: &chi;^2^ = 0.391; p = 0.532
-
-@body
-
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 705 | 696.75 | 8.25 | 0.0977 |
-| Recessive | 224 | 232.25 | -8.25 | 0.2931 |
-
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 39.
 
 === layout: one-panel
 
-# Seed color: &chi;^2^ = 0.015; p = 0.903
+# *Flower Color*
 
 @body
 
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 6022 | 6017.25 | 4.75 | 0.0037 |
-| Recessive | 2001 | 2005.75 | -4.75 | 0.0112 |
+![Slide image 20](assets/source_fidelity/lect07d/image_020.svg)
 
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 40.
 
 === layout: one-panel
 
-# Seed shape: &chi;^2^ = 0.263; p = 0.608
+# *Seed Color*
 
 @body
 
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 5474 | 5493 | -19 | 0.0657 |
-| Recessive | 1850 | 1831 | 19 | 0.1972 |
+![Slide image 21](assets/source_fidelity/lect07d/image_021.svg)
 
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 41.
 
 === layout: one-panel
 
-# Pod shape: &chi;^2^ = 0.064; p = 0.801
+# *Seed Shape*
 
 @body
 
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 882 | 885.75 | -3.75 | 0.0159 |
-| Recessive | 299 | 295.25 | 3.75 | 0.0476 |
+![Slide image 22](assets/source_fidelity/lect07d/image_022.svg)
 
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 42.
 
 === layout: one-panel
 
-# Pod color: &chi;^2^ = 0.451; p = 0.502
+# *Pod Shape*
 
 @body
 
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 428 | 435 | -7 | 0.1126 |
-| Recessive | 152 | 145 | 7 | 0.3379 |
+![Slide image 23](assets/source_fidelity/lect07d/image_023.svg)
 
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 43.
 
 === layout: one-panel
 
-# Flower position: &chi;^2^ = 0.350; p = 0.554
+# *Pod Color*
 
 @body
 
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 651 | 643.5 | 7.5 | 0.0874 |
-| Recessive | 207 | 214.5 | -7.5 | 0.2622 |
+![Slide image 24](assets/source_fidelity/lect07d/image_024.svg)
 
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 44.
 
 === layout: one-panel
 
-# Stem length: &chi;^2^ = 0.607; p = 0.436
+# *Flower Position*
 
 @body
 
-| Phenotype | O | E | O-E | (O-E)^2^/E |
-| --- | --- | --- | --- | --- |
-| Dominant | 787 | 798 | -11 | 0.1516 |
-| Recessive | 277 | 266 | 11 | 0.4549 |
+![Slide image 25](assets/source_fidelity/lect07d/image_025.svg)
 
 @notes
 
-H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+Source: lect07d-chi_square.odp, slide 45.
+
+=== layout: one-panel
+
+# *Stem Length*
+
+@body
+
+![Slide image 26](assets/source_fidelity/lect07d/image_026.svg)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 46.
 
 === layout: section
 
 # Are Mendel's numbers too good to be true? Did Mendel cheat?
 
-=== layout: one-panel
-
-# Are Mendel's results unusually close?
-
-@body
-
-- Many observed ratios are very close to 3:1.
-- Our chi-square statistics range from about 0.015 to 0.607.
-- A large p-value for one experiment is not suspicious by itself.
-
-*Across many experiments, are there fewer large deviations than expected?*
-
 @notes
 
-Paraphrases the source textbook discussion. The next graph compares 69 experiments.
-
-=== layout: big-image
-
-@image
-
-![Observed and expected deviations in Mendel's experiments](assets/lect07d-chi_square/image_020.png)
-
-@caption
-
-69 experiments: fewer large deviations than expected.
-
-@notes
-
-Source caption suggests that some experiments with large deviations may have been discarded or repeated. This is a historical interpretation, not proof of deliberate falsification.
+Source: lect07d-chi_square.odp, slide 47.
 
 === layout: one-panel
 
-# Bias does not require deliberate fraud
 
 @body
 
-- Mendel was an early pioneer of counting segregating traits.
-- Rechecking only surprising results can systematically improve apparent agreement.
-- Selective repetition or exclusion can affect the distribution of deviations.
-
-*A statistical pattern alone does not establish deliberate falsification.*
+![Slide image 27](assets/source_fidelity/lect07d/image_027.png)
 
 @notes
 
-Paraphrases the source's historical commentary; the original passage remains in the legacy ODP/PDF.
+Source: lect07d-chi_square.odp, slide 48.
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 29](assets/source_fidelity/lect07d/image_029.png)
+
+@bottom
+
+![Slide image 28](assets/source_fidelity/lect07d/image_028.png)
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 49.
+Review: .
+
+=== layout: one-panel
+
+
+@body
+
+- Mendel was the first to count segregants.
+- He could not be expected to know all the precautions now needed for completely objective data.
+- Rechecking only counts one dislikes can introduce [*systematic bias toward agreement*]{color=#D40000}.
+- Even extensive data from other geneticists might not stand up wholly satisfactorily under the &chi;^2^ test.
+- The author concludes there was [*no deliberate effort at falsification*]{color=#003FFF}.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 50.
+Instructor requested conversion of the scanned quotation to editable bullet points.
+Bullets paraphrase the quotation; the final judgment belongs to its author.
+Original image retained at assets/source_fidelity/lect07d/image_030.png.
+
+Original transcription:
+Mendel was the first to count segregants at all.
+It is rather too much to expect that he would be aware of the precautions now known to be
+necessary for completely objective data. . . .
+Checking of counts that one does not like, but not of others, can lead to systematic bias
+toward agreement. I doubt whether there are many geneticists even now whose data, if
+extensive, would stand up wholly satisfactorily under the chi-square test. . . .
+Taking everything into account, I am confident that there was no deliberate effort at
+falsification.
 
 === layout: section
 
 # Summary
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 51.
 
 === layout: one-panel
 
@@ -756,67 +896,108 @@ Paraphrases the source's historical commentary; the original passage remains in 
 - Evaluates the "_goodness of fit_" between observed and expected.
 - If the difference is too large to be random, there's statistically significant evidence [*_against_*]{color=red} [the hypothesis]{color=red}.
 
-=== layout: one-panel
+@notes
 
-# Chi-square terminology
-
-@body
-
-- [*Null hypothesis (H~0~)*]{underline=true}: the model that supplies expected counts
-- [*Alternative hypothesis*]{underline=true}: the counts do not fit that model
-- [*Significance level (&alpha;)*]{underline=true}: decision threshold chosen in advance
-- [*p-value*]{underline=true}: under H~0~, probability of a chi-square statistic at least as large as observed
-- [*Degrees of freedom*]{underline=true}: categories minus one when no parameters are estimated
-- [*Critical value*]{underline=true}: cutoff determined by df and &alpha;
+Source: lect07d-chi_square.odp, slide 52.
 
 === layout: one-panel
 
-# Reject or fail to reject?
+# *Chi-Square (&chi;^2^) Terminology*
 
 @body
 
-- Choose &alpha; before testing, usually 0.05.
-- *p &le; &alpha;*: reject H~0~.
-- *p > &alpha;*: fail to reject H~0~.
-- Equivalently, reject when &chi;^2^ is at or above the critical value.
-- Failure to reject does not prove H~0~ is true.
-
-Example: 21.4 > 7.82 at df = 3 and &alpha; = 0.05: reject H~0~.
-
-=== layout: one-panel
-
-# Seven steps of the chi-square test
-
-@body
-
-1. State H~0~ and the expected ratio.
-2. Calculate expected counts.
-3. For each category, calculate (O-E)^2^ / E.
-4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
-5. Determine degrees of freedom.
-6. Find the p-value or critical value.
-7. Compare with &alpha; and state the conclusion.
-
-=== layout: one-panel
-
-# Chi-square critical values
-
-@body
-
-| df | p = 0.10 | p = 0.05 | p = 0.01 |
-| --- | --- | --- | --- |
-| 1 | 2.706 | 3.841 | 6.635 |
-| 2 | 4.605 | 5.991 | 9.210 |
-| 3 | 6.251 | 7.815 | 11.345 |
-| 4 | 7.779 | 9.488 | 13.277 |
+- [Null Hypothesis (H~0~)]{color=red}\:
+  - What we aim to find evidence against ([want to reject]{color=red}).
+  - Always simpler to calculate the expected numbers.
+- [Alternative Hypothesis (H~a~)]{color=green}\: Aim to support indirectly through the test.
+- [Significance Level (&#945;)]{color=#A719DB}\: A preset threshold for statistical significance, usually set at 0.05.
+- The [p-value]{color=#BE480A}\: The probability of getting results at least as extreme as those observed if the null hypothesis is true.
+- [Chi-Squared statistic]{color=#861141}\: The calculated measure that quantifies the difference between observed and expected data.
+- Critical Value\: A threshold for comparison with the [Chi-Squared statistic]{color=#861141}.
+  - The [Critical Value]{color=blue} depends BOTH on the [Degrees of Freedom]{color=#B47804} and [Significance Level (&#945;)]{color=#A719DB}.
+  - The [Critical Value]{color=blue} is obtained by looking at the *Chi-Square (&chi;^2^) Distribution Table*.
+- [Degrees of Freedom]{color=#B47804}\: The number of independent values that can vary in an analysis.
 
 @notes
 
-Read across the df row. A statistic at or above the alpha = 0.05 column rejects H0 at that level.
+Source: lect07d-chi_square.odp, slide 53.
+Instructor accepted this layout; null-hypothesis notation uses an editable subscript zero.
 
 === layout: one-panel
 
-# Four categories: df = 4 - 1 = 3
+# [Null hypothesis\:]{color=red} Reject or Do Not Reject?
+
+@body
+
+- If the [null hypothesis is rejected]{color=red}, then we [support the alternative hypothesis]{color=#00A933}.
+  - Example\: [Null hypothesis\: &#8220;our situation is unbiased&#8221;]{color=red} [Alternative hypothesis &#8220;our situation is biased&#8221;]{color=#00A933}
+- [Chi-squared statistic]{color=#650953} vs. [Critical value]{color=blue}\:
+  - Larger [Chi-squared statistic]{color=#650953} values provide stronger evidence [against the null hypothesis]{color=red}.
+    - [Do not reject null hypothesis]{color=green} if [Chi-squared statistic]{color=#650953} is less than or equal to [Critical value]{color=blue}.
+    - [Reject null hypothesis]{color=red} if [Chi-squared statistic]{color=#650953} is greater than [Critical value]{color=blue}.
+  - Example\: [Chi-squared statistic]{color=#650953} of 21.4 > [Critical value]{color=blue} of 7.82 &#8658; [Reject H~0~]{color=red}.
+  - [Critical value]{color=blue} depends BOTH on the [Degrees of Freedom]{color=#B47804} and [Significance Level (&#945;)]{color=#A719DB}.
+@notes
+
+Source: lect07d-chi_square.odp, slide 54 (critical-value method).
+
+=== layout: one-panel
+
+# [Null hypothesis\:]{color=red} Reject or Do Not Reject?
+
+@body
+
+- [p-value]{color=#BE480A} vs. [significance level (&#945;)]{color=#A719DB}\:
+  - A larger [Chi-squared statistic]{color=#650953} correlates with a smaller [p-value]{color=#BE480A} for fixed degrees of freedom.
+    - [Reject null hypothesis]{color=red} if [p-value]{color=#BE480A} is less than [significance level (&#945;)]{color=#A719DB}.
+    - [Do not reject null hypothesis]{color=green} if [p-value]{color=#BE480A} is greater than or equal to [significance level (&#945;)]{color=#A719DB} (fail to reject).
+  - Example\: [p-value]{color=#BE480A} of 0.02 < fixed [significance level (&#945;)]{color=#A719DB} of 0.05 &#8658; [Reject H~0~]{color=red}.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 54.
+Instructor accepted this layout; null-hypothesis notation uses an editable subscript zero.
+
+=== layout: one-panel
+
+# *Seven Steps of the Chi-Square (&chi;^2^) Test*
+
+@body
+
+- 1. [State]{color=#D40000} Hypothesis
+  - _choose one that is easy to predict progeny_
+- 2. [Predict]{color=#003FFF} expected progeny from hypothesis
+- 3. [Subtract]{color=#007A00} expected from observed (o-e)
+  - _square the value and then divide by expected_
+- 4. [Sum]{color=#C80085} each row to get the Chi Square statistic (&chi;^2^) value
+- 5. [Determine]{color=#935D00} degrees of freedom (DF)
+- 6. [Look]{color=#00775F} up p-value using [#4]{color=#C80085} and [#5]{color=#935D00}
+- 7. [Determine]{color=#A719DB} if hypothesis is rejected.
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 55.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 30](assets/source_fidelity/lect07d/image_002.png)
+
+- [do not reject]{color=#00A933}
+
+- [reject]{color=red}
+- [\*\*\*]{color=red}
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 56.
+Review: normalized ambiguous topology bounds [NormalizedBounds(left=0.05164285714285714, top=0.05965714285714286, right=0.9561785714285715, bottom=0.9565714285714286), NormalizedBounds(left=0.8269285714285715, top=0.8514285714285714, right=0.9969285714285715, bottom=1.0)] into one native source-order panel; source object crosses physical page bounds; unsupported source object draw:line requires reconstruction.
+
+=== layout: one-panel
+
 
 @body
 
@@ -829,21 +1010,22 @@ Read across the df row. A statistic at or above the alpha = 0.05 column rejects 
 | aabb | 10 | 9 | -1 | 1 | 0.100 |
 | Total | 160 | 160 | 0 | | *0.178* |
 
+
+Number of observations: 4 rows
+
+Degree of Freedom: 4 - 1 = 3
+
 @notes
 
-Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+Source: lect07d-chi_square.odp, slide 57.
 
-=== layout: one-panel
-
-# Key ideas to keep
-
-@body
-
-- H~0~ supplies expected counts; keep them unrounded.
-- &chi;^2^ = &Sigma; (O-E)^2^ / E
-- df = categories - 1 when no parameters are fitted
-- Small p supports rejection; large p does not prove H~0~.
+Original presenter notes:
+Figure 15.UN03b Skills exercise: using the chi-square test (part 2)
 
 === layout: theend
 
 # THE END
+
+@notes
+
+Source: lect07d-chi_square.odp, slide 58.

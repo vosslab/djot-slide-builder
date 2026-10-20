@@ -69,12 +69,6 @@ def _title_size_for_source(deck: slide_lib.native_model.Deck, source: slide_lib.
 		return geometry[1] if geometry is not None else None
 	size = slide_lib.layout_measurement.largest_fitting_size(
 		theme.standard_title_size_pt, theme.title_floor_size_pt,
-		lambda candidate: (content := content_geometry(candidate)) is not None and
-		_body_fits_floor(deck, source, contract, content, theme, session))
-	if size is not None:
-		return size
-	size = slide_lib.layout_measurement.largest_fitting_size(
-		theme.standard_title_size_pt, theme.title_floor_size_pt,
 		lambda candidate: content_geometry(candidate) is not None)
 	if size is not None:
 		return size
@@ -173,6 +167,13 @@ def _standard_slide_at_theme(deck: slide_lib.native_model.Deck, source: slide_li
 		cell = next(cell for cell in source.cells if cell.name == name)
 		cell_objects = _cell_objects(deck, cell, rectangle, theme, contract, name, len(objects), frame,
 			session, occupy_placeholder=False)
+		if contract.name == "one-panel" and title is None and len(cell_objects) == 1 \
+				and all(isinstance(block, (slide_lib.native_model.Paragraph,
+					slide_lib.native_model.ListBlock)) for block in cell.blocks):
+			# Center the text vertically without changing its authored horizontal alignment.
+			item = cell_objects[0]
+			cell_objects[0] = dataclasses.replace(item, frame_text=dataclasses.replace(
+				item.frame_text, vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE))
 		slots.append(_occupy_primary_slot(name, rectangle, order, cell_objects))
 		objects.extend(cell_objects)
 	if contract.name == "reference":
@@ -275,8 +276,9 @@ def _content_area(source: slide_lib.native_model.Slide, title: slide_lib.native_
 		index: int, session: slide_lib.layout_measurement.MeasurementSession) -> tuple[slide_lib.layout_primitives.LogicalRectangle, slide_lib.layout_model.LayoutObject | None]:
 	"""Reserve a title at a bounded point size and return remaining body area."""
 	if title is None:
-		return slide_lib.layout_primitives.LogicalRectangle(60, 82, 1160,
-			slide_lib.layout_measurement.CONTENT_BOTTOM - 82), None
+		top = 52 if contract.name == "one-panel" else 82
+		return slide_lib.layout_primitives.LogicalRectangle(60, top, 1160,
+			slide_lib.layout_measurement.CONTENT_BOTTOM - top), None
 	geometry = _title_geometry(title, theme.standard_title_size_pt, theme, contract, session)
 	size = theme.standard_title_size_pt
 	if geometry is None:
