@@ -16,6 +16,7 @@ import slide_lib.layout_content
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.odp_animation
+import slide_lib.odp_math
 import slide_lib.odp_text
 import slide_lib.odf_package
 import slide_lib.presentation_theme
@@ -110,12 +111,14 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 		}
 		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), page_attributes)
 		target_ids = _target_ids(slide, slide_index)
-		for object_index, item in enumerate(sorted(slide.objects,
-				key=lambda value: (value.z_index, value.reading_order, value.object_id))):
+		object_index = 0
+		for item in sorted(slide.objects,
+				key=lambda value: (value.z_index, value.reading_order, value.object_id)):
 			if item in cover_decorations:
 				continue
 			_write_object(page, automatic, item, deck, theme, slide.identity.slide_id,
 				slide_index, object_index, target_ids, picture_members)
+			object_index += 1 + len(slide_lib.odp_math.positioned_runs(item.content))
 		slide_lib.odp_animation.write_reveals(page, slide, target_ids)
 		_write_notes(page, slide, deck, theme)
 	return _xml_bytes(root)
@@ -196,6 +199,33 @@ def _write_object(page: xml.etree.ElementTree.Element,
 		slide_index: int, object_index: int, target_ids: dict[str, str],
 		picture_members: dict[tuple[str, str], str]) -> None:
 	"""Write one plan object without recomputing its physical placement."""
+	positioned = slide_lib.odp_math.positioned_runs(item.content)
+	if positioned:
+		group = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "g"), {
+			_qname(DRAW_NS, "name"): item.object_id,
+		})
+		paragraph_groups = {}
+		for target in item.reveal_targets:
+			if not target.paragraph_indexes:
+				group.set(_qname(XML_NS, "id"), target_ids[target.target_id])
+				group.set(_qname(DRAW_NS, "id"), target_ids[target.target_id])
+			else:
+				subgroup = xml.etree.ElementTree.SubElement(group, _qname(DRAW_NS, "g"), {
+					_qname(XML_NS, "id"): target_ids[target.target_id],
+					_qname(DRAW_NS, "id"): target_ids[target.target_id],
+				})
+				for index in target.paragraph_indexes:
+					paragraph_groups[index] = subgroup
+		background = slide_lib.odp_math.background_object(item)
+		if background is not None:
+			_write_object(group, automatic, background, deck, theme, slide_id,
+				slide_index, object_index, {}, picture_members)
+		for index, placed in enumerate(positioned):
+			fragment = slide_lib.odp_math.block_object(item, placed, index)
+			parent = paragraph_groups.get(placed.paragraph_index, group)
+			_write_object(parent, automatic, fragment, deck, theme, slide_id,
+				slide_index, object_index + index + 1, {}, picture_members)
+		return
 	content = item.content
 	style_name = f"DjotFrame{slide_index + 1}_{object_index + 1}"
 	_add_frame_style(automatic, style_name, item, deck, theme)
@@ -303,6 +333,7 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 		properties[_qname(DRAW_NS, "fit-to-size")] = "false"
 		properties[_qname(STYLE_NS, "shrink-to-fit")] = "false"
 		properties[_qname(DRAW_NS, "textarea-vertical-align")] = frame.vertical_alignment.value
+		properties[_qname(FO_NS, "wrap-option")] = frame.wrap.value
 		properties[_qname(FO_NS, "padding-left")] = _cm_x(frame.padding.left, deck, theme)
 		properties[_qname(FO_NS, "padding-right")] = _cm_x(frame.padding.right, deck, theme)
 		properties[_qname(FO_NS, "padding-top")] = _cm_y(frame.padding.top, deck, theme)
@@ -584,25 +615,37 @@ def _picture_payloads(deck: slide_lib.layout_model.LayoutDeck) -> tuple[dict[str
 	members: dict[tuple[str, str], str] = {}
 	for slide in deck.slides:
 		for item in slide.objects:
-			if not isinstance(item.content, slide_lib.layout_content.PictureContent):
-				continue
-			path = pathlib.Path(item.content.source_path)
-			if not path.is_absolute():
-				path = deck.identity.source_path.parent / path
-			path = path.resolve()
-			if not path.is_file():
-				raise ValueError(f"planned picture source is missing: {item.content.source_path}")
-			if path.stat().st_size > slide_lib.odf_package.MAX_MEMBER_BYTES:
-				raise ValueError(f"planned picture exceeds package member limit: {item.content.source_path}")
-			content = path.read_bytes()
-			digest = hashlib.sha256(content).hexdigest()
-			suffix = path.suffix.lower()
-			if not suffix or mimetypes.guess_type(path.name)[0] is None:
-				raise ValueError(f"planned picture has an unsupported file type: {item.content.source_path}")
-			member_name = f"Pictures/{digest[:24]}{suffix}"
-			payloads[member_name] = content
-			members[(slide.identity.slide_id, item.object_id)] = member_name
+			sources = [(item.object_id, item.content.source_path)] if isinstance(
+				item.content, slide_lib.layout_content.PictureContent) else []
+			sources.extend((f"{item.object_id}-math-{index}", placed.image_path)
+				for index, placed in enumerate(slide_lib.odp_math.positioned_runs(item.content))
+				if placed.image_path is not None)
+			for object_id, source_path in sources:
+				_package_picture(deck, slide.identity.slide_id, object_id, source_path,
+					payloads, members)
 	return payloads, members
+
+
+def _package_picture(deck: slide_lib.layout_model.LayoutDeck, slide_id: str,
+		object_id: str, source_path: str, payloads: dict[str, bytes],
+		members: dict[tuple[str, str], str]) -> None:
+	"""Package ordinary component images and generated equations identically."""
+	path = pathlib.Path(source_path)
+	if not path.is_absolute():
+		path = deck.identity.source_path.parent / path
+	path = path.resolve()
+	if not path.is_file():
+		raise ValueError(f"planned picture source is missing: {source_path}")
+	if path.stat().st_size > slide_lib.odf_package.MAX_MEMBER_BYTES:
+		raise ValueError(f"planned picture exceeds package member limit: {source_path}")
+	content = path.read_bytes()
+	digest = hashlib.sha256(content).hexdigest()
+	suffix = path.suffix.lower()
+	if not suffix or mimetypes.guess_type(path.name)[0] is None:
+		raise ValueError(f"planned picture has an unsupported file type: {source_path}")
+	member_name = f"Pictures/{digest[:24]}{suffix}"
+	payloads[member_name] = content
+	members[(slide_id, object_id)] = member_name
 
 
 #============================================

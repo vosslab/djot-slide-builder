@@ -16,6 +16,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+## Equation pipeline
+
+- Editability inside ODP/PPTX is not a repository requirement; keep equations editable in Djot.
+- Use rich LaTeX math syntax with MathJax-to-SVG rendering. Genetics LECT07C, with its many
+  binomial expressions, should be the target example.
+- Remove mixed inline SVG support. Keep standalone equations and equation-only bullets;
+  use native Djot formatting for ordinary text.
+- Treat permanent tests as liabilities as well as assets. Use the checklist in
+  `PYTEST_STYLE.md`; keep one-time implementation checks separate, and remove tests when in doubt.
+
 ## Slide 1: title slide
 
 - Across every course and lecture, keep the lecture number and letter above the title metadata.

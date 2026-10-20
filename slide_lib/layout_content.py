@@ -48,7 +48,25 @@ class LineBreak:
 	pass
 
 
-InlineContent = TextRun | LineBreak
+@dataclass(frozen=True)
+class MathRun:
+	"""A styled equation whose geometry is resolved by the compiler."""
+	text: str
+	display: bool
+	style: RunStyle
+
+
+InlineContent = TextRun | LineBreak | MathRun
+
+
+@dataclass(frozen=True)
+class PositionedRun:
+	"""One whole equation or native paragraph relative to its containing object."""
+	run: "MathRun | TextParagraph"
+	rectangle: LogicalRectangle
+	size_pt: float
+	paragraph_index: int
+	image_path: str | None = None
 
 
 @dataclass(frozen=True)
@@ -69,6 +87,7 @@ class TextParagraph:
 	properties: ParagraphProperties
 	display: bool = True
 	list_metadata: ListMetadata | None = None
+	measured_height: float = 0.0
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "inlines")
@@ -78,9 +97,11 @@ class TextParagraph:
 @dataclass(frozen=True)
 class TextContent:
 	paragraphs: tuple[TextParagraph, ...]
+	positioned_runs: tuple[PositionedRun, ...] = ()
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "paragraphs")
+		canonicalize_tuple(self, "positioned_runs")
 
 
 @dataclass(frozen=True)
@@ -125,9 +146,10 @@ class TableContent:
 	column_widths: tuple[float, ...]
 	row_heights: tuple[float, ...]
 	style: TableStyle
+	positioned_runs: tuple[PositionedRun, ...] = ()
 
 	def __post_init__(self) -> None:
-		for name in ("header_rows", "body_rows", "column_widths", "row_heights"):
+		for name in ("header_rows", "body_rows", "column_widths", "row_heights", "positioned_runs"):
 			canonicalize_tuple(self, name)
 		for value in self.column_widths + self.row_heights:
 			require_positive_finite(value, "table dimension")

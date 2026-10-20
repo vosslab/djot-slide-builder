@@ -1,0 +1,10 @@
+{
+  "name": "djot-slide-math",
+  "private": true,
+  "description": "Local equation rendering for the Python slide compiler",
+  "dependencies": {
+    "@mathjax/mathjax-mhchem-font-extension": "^4.1.3",
+    "@mathjax/mathjax-stix2-font": "^4.0.0",
+    "@mathjax/src": "^4.0.0"
+  }
+}

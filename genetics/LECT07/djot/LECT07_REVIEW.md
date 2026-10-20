@@ -3,7 +3,34 @@
 This review supersedes the earlier conversion report. The revision uses the repository
 `deck_tools.py import` and `deck_tools.py build` commands. Original ODP/PDF files remain
 unchanged one directory above. The source import reports are retained under
-`assets/source_fidelity/`. No new converter or math renderer was added.
+`assets/source_fidelity/`. The subsequent equation migration is recorded below.
+
+## LECT07C LaTeX equation migration, 2026-10-20
+
+Standalone equations on source slides 7, 21-24, 27-28, and 32-34 now use authored LaTeX.
+Equation-only calculations on 13 and 14 use the same MathJax-to-SVG pipeline. Simple
+fractions in slide 6 prose and the power in slide 13 prose remain native Djot text. Multi-line
+derivations retain their source mathematics. Original SVG assets, composite diagrams,
+Pascal rows, Punnett squares, notes, slide order, and the slide 8 review marker remain.
+
+Strict Jotdown parsing and semantic lint pass for the 38-slide deck. The focused parser,
+layout, lint, and ODP export suite passes 149 tests. The repository build produced ODP
+and a 38-page LibreOffice PDF; all migrated pages were visually checked. A separate
+three-slide check covered inline baselines, table rows, aligned equations, matrices,
+cases, chemistry, local macros, and explicit colors. These are one-time review
+artifacts under `_temp/`, not additional permanent acceptance infrastructure.
+The subsequent simplification removes mixed inline SVG flow. Equations now occupy whole
+blocks or list items, with intact native prose paragraphs between them. The earlier inline
+baseline check documents the superseded implementation, not a supported authoring contract.
+After simplification, the focused suite passes 150 tests. Permanent equation coverage uses
+two test functions for supported ODP output and source-located rejection of mixed prose/math.
+Fragment coordinates and table row-sizing assertions were removed under `PYTEST_STYLE.md`.
+The revised LECT07C and binomial-bullet example were rebuilt through LibreOffice;
+one-time checks cover intact wrapping prose, native list markers, and equation-only cells.
+
+The three capacity warnings match a build of the pre-migration Djot source: slide 28's
+left prose panel selects 18.5 pt, slide 32's left prose panel selects 17.75 pt, and
+slide 33's top prose panel selects 19 pt, each below the preferred 20 pt floor.
 
 ## Scope and sequence
 

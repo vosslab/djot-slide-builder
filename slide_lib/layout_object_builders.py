@@ -87,7 +87,9 @@ def text_content(blocks: tuple[slide_lib.native_model.Block, ...], size: float, 
 		paragraphs.append(slide_lib.layout_content.TextParagraph(
 			_fragment_runs(resolved_runs(inlines, paragraph_color, theme.accent_color, bold),
 				size, available, theme, session),
-			typography, properties, True, metadata))
+			typography, properties, True, metadata,
+			slide_lib.layout_measurement.paragraph_height(
+				inlines, size, width, theme, level, listed, bold, session=session)))
 	return slide_lib.layout_content.TextContent(tuple(paragraphs))
 
 
@@ -110,7 +112,12 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 	"""Resolve recursive strong/emphasis/link styling before adapters receive runs."""
 	runs: list[slide_lib.layout_content.InlineContent] = []
 	for inline in inlines:
-		if isinstance(inline, slide_lib.native_model.Text):
+		if isinstance(inline, slide_lib.native_model.InlineMath):
+			style = slide_lib.layout_content.RunStyle(
+				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
+				color, bold=bold, italic=italic, link_url=link)
+			runs.append(slide_lib.layout_content.MathRun(inline.value, inline.display, style))
+		elif isinstance(inline, slide_lib.native_model.Text):
 			style = slide_lib.layout_content.RunStyle(
 				slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,
 				color, bold=bold, italic=italic, link_url=link)
@@ -139,12 +146,12 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 				slide_lib.layout_measurement.visible_text(inline.children))
 			for run in resolved_runs(inline.children, accent_color, accent_color,
 					bold, italic, inline.url):
-				if isinstance(run, slide_lib.layout_content.TextRun):
+				if isinstance(run, (slide_lib.layout_content.TextRun, slide_lib.layout_content.MathRun)):
 					style = dataclasses.replace(run.style, font_family=
 						slide_lib.presentation_theme.NARROW_FONT_FAMILY
 						if literal else run.style.font_family,
 						underline=True, literal_url=literal)
-					runs.append(slide_lib.layout_content.TextRun(run.text, style))
+					runs.append(dataclasses.replace(run, style=style))
 				else:
 					runs.append(run)
 		elif isinstance(inline, slide_lib.native_model.StyledSpan):
@@ -154,7 +161,7 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 				color_name, accent_color) if color_name is not None else color
 			for run in resolved_runs(inline.children, span_color, accent_color,
 					bold, italic, link):
-				if isinstance(run, slide_lib.layout_content.TextRun):
+				if isinstance(run, (slide_lib.layout_content.TextRun, slide_lib.layout_content.MathRun)):
 					style = dataclasses.replace(run.style,
 						underline=inline.underline or run.style.underline,
 						strikethrough=inline.strikethrough or run.style.strikethrough,

@@ -7,6 +7,31 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+### MathJax equations occupy complete blocks
+
+**Decision.** Render LaTeX equations with local MathJax 4, STIX2 font data, and the mhchem
+font extension. Batch distinct expressions per compilation. Use self-contained SVG paths
+and measure complete equation boxes before selecting slide geometry.
+
+**Why.** Djot is the editable source, and the existing SVG/ODP pipeline already preserves
+vector equations. Native equation editing and a DOCX/OMML intermediate are unnecessary.
+Positioning SVG between independently positioned prose fragments requires matching
+LibreOffice's text layout and adds unnecessary fragility.
+
+**Consequence.** Support standalone equations and equation-only list items or table cells.
+Reject mixed prose/math with a source location. Keep native Djot formatting for simple
+notation; do not classify LaTeX automatically. Prose stays in intact native paragraphs,
+and the compiler stacks paragraph and equation boxes. Math table frames use the measured row sum so
+Impress row expansion cannot move text away from equations. Generated SVGs live under
+`_temp/math/`; original TeX is retained in equation descriptions. Definitions are
+expression-local, and invalid TeX fails with a source location. Rendering uses no network.
+This supersedes both the mixed inline fragment implementation and older documentation
+requiring editable native equation objects. Representative rendering checks are one-time
+evidence; permanent tests protect supported authoring and export contracts.
+
+**Owner.** `slide_lib/math_render.py`, `slide_lib/math_layout.py`, and
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+
 ### Cover decoration belongs to the master
 
 Put the cover border and accent on a dedicated title-slide master derived from the course master.

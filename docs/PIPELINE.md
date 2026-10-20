@@ -83,6 +83,10 @@ LibreOffice-backed layouts plus the project-owned `multiple-choice`, `gallery`, 
 `odp_export.py` owns ODF document/frame/package projection and `odp_text.py` owns ODF editable
 text, lists, links, and tables. `PresentationTheme.template_path` is the sole template authority.
 
+`math_render.py` validates equation-only authoring and invokes local MathJax for measured SVG.
+`math_layout.py` allocates whole equation and native paragraph blocks; `odp_math.py` projects
+them through the existing ODP writers. Mixed prose/SVG within a paragraph is unsupported.
+
 The PDF path is intentionally downstream of editable ODP. Rendering a final ODP-derived PDF for
 visual QA is separate from the production object-conversion chain and never supplies slide content.
 

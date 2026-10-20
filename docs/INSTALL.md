@@ -11,6 +11,7 @@ presentations. It imports trusted existing ODP into extended-Djot source.
   the repository OTP master, and ODP-derived PDF output.
 - Poppler, including `pdfinfo`, for native end-to-end PDF verification.
 - The packages in `pip_requirements.txt`.
+- Node.js and the locked npm dependencies for local MathJax equation rendering.
 - Jotdown 0.10.0 on `PATH` for strict-Djot source acceptance. `source_me.sh` adds the conventional
   Cargo bin directory when it exists.
 
@@ -21,9 +22,14 @@ From the repository root, install the declared macOS tools and Python packages:
 ```bash
 brew bundle
 source source_me.sh && python3 -m pip install -r pip_requirements.txt
+npm ci
 ```
 
-The Brewfile installs Python 3.12, Poppler, and LibreOffice. Jotdown is a separate strict-Djot
+The Brewfile installs Python 3.12, Node.js, Poppler, and LibreOffice. MathJax, STIX2 math
+font data, and chemistry symbols are installed locally by `npm ci`; equation builds then
+work offline. Generated equation SVGs are reusable build artifacts under `_temp/math/`.
+
+Jotdown is a separate strict-Djot
 validator. Confirm the required installed version before running the source-acceptance command in
 [USAGE.md](USAGE.md):
 

@@ -110,6 +110,7 @@ class Break:
 class InlineMath:
 	"""One source-neutral inline mathematics expression."""
 	value: str
+	display: bool = False
 
 
 Inline = Text | Strong | Emphasis | InlineCode | Link | StyledSpan | Break | InlineMath

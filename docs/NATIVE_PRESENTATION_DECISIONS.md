@@ -125,7 +125,7 @@ authorable: title; title and subtitle; ordinary body; nested bulleted and number
 unequal panels; image/text on either side; three or four regions; image with caption; gallery;
 quote or callout; and reusable named teaching layouts. The layout vocabulary must include every
 default LibreOffice layout plus the custom `multiple-choice` layout. It must also support simple
-Markdown images with predictable named-region placement and both inline and display equations through
+Markdown images with predictable named-region placement and standalone equations through
 LaTeX-compatible or similarly capable hand-writable syntax. It must support simple on-advance
 teaching reveals: make an authored item appear or present an outline one bullet at a time.
 
@@ -136,11 +136,11 @@ native-output capabilities that still need an explicit owner.
 **Consequence.** The language survey uses those structures and equation support as literal source
 examples. The Djot extension grammar preserves ordinary nested Djot content, avoids routine
 HTML-comment or container scaffolding when possible, and map text, lists, practical equations, and
-images to typed editable native slide objects. Reveal semantics remain bounded to authored
+images to typed native slide objects. Equations use measured SVG artwork. Reveal semantics remain bounded to authored
 appearance order; motion paths, timing tracks, and complex choreography are outside this
 requirement. Equation support must not require a scientific-publishing workflow. The 2026-09-05
 exploration status is superseded by the 2026-09-06 implemented Djot parser, grammar, linter, and
-native export path; native math and M5 timing still require their own acceptance evidence.
+native export path. The 2026-10-20 MathJax-to-SVG implementation supplies equation rendering; see [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md).
 
 **Owner.** `slide_lib/djot_grammar.py`, `slide_lib/djot_parser.py`,
 [PIPELINE.md](PIPELINE.md), and [LECTURE_LAYOUT_SURVEY.md](LECTURE_LAYOUT_SURVEY.md).
@@ -148,7 +148,8 @@ native export path; native math and M5 timing still require their own acceptance
 ### Component images and dollar-delimited mathematics have fixed surfaces
 
 **Decision.** The implemented language's component-image form is `![alt](path)`. Its official
-mathematics forms are `$inline$` and `$$display$$`. These surfaces are unavailable for future slide,
+mathematics forms are `$equation$` for equation-only paragraphs, list items, or table cells and
+`$$display$$` for display blocks. Mixed prose/math is unsupported. These surfaces are unavailable for future slide,
 layout, region, gallery, reveal, or styling syntax.
 
 **Why.** The image form already has native Djot meaning.
@@ -158,10 +159,11 @@ colliding with ordinary teaching content.
 
 **Consequence.** This reserves ordinary component images only, not extra image modifiers for
 backgrounds, sizing, position, or filters. The implemented grammar owns slide starts and named slots;
-`%%`, generic overlay geometry outside `multiple-choice`, and native math rendering remain open.
+`%%` and generic overlay geometry outside `multiple-choice` remain open. MathJax renders whole
+equation SVGs under the constraints in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#equations).
 
 **Owner.** [djot_slide_extension_exploration.md](active_plans/decisions/djot_slide_extension_exploration.md)
-and the future approved language guide.
+and [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
 ### Multiple-choice is an implemented bounded layout
 

@@ -42,6 +42,10 @@ enters only through the one-time import workflow.
   presentation frames, while [../slide_lib/odp_text.py](../slide_lib/odp_text.py) owns editable
   paragraphs, styled spans, links, lists, and tables. Standard-layout inference tokens remain
   separate from occupied editable frame roles.
+- [../slide_lib/math_render.py](../slide_lib/math_render.py) validates equation-only content
+  and invokes local MathJax to produce measured SVG. [../slide_lib/math_layout.py](../slide_lib/math_layout.py)
+  places whole equations beside intact native paragraph blocks; [../slide_lib/odp_math.py](../slide_lib/odp_math.py)
+  projects those blocks through the existing ODP writers.
 - [../slide_lib/layout_validation.py](../slide_lib/layout_validation.py) is the semantic gate
   between typed authored blocks and a layout: it rejects unsupported or unplaceable source with
   its canonical source location before native objects are constructed.

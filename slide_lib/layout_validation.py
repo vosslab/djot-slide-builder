@@ -2,6 +2,7 @@
 
 # Local Modules
 import slide_lib.native_model
+import slide_lib.math_render
 
 
 Component = slide_lib.native_model.Image
@@ -27,7 +28,7 @@ def inline_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 		if isinstance(inline, (slide_lib.native_model.Text, slide_lib.native_model.InlineCode)):
 			parts.append(inline.value)
 		elif isinstance(inline, slide_lib.native_model.InlineMath):
-			raise LayoutError("InlineMath requires source validation before native rendering")
+			parts.append(inline.value)
 		elif isinstance(inline, slide_lib.native_model.Break):
 			parts.append(" ")
 		else:
@@ -119,57 +120,6 @@ def validate_source_attributes(source: slide_lib.native_model.Slide, layout_name
 	for cell in source.cells:
 		for block in cell.blocks:
 			validate_text_attributes(block, layout_name)
-
-
-#============================================
-def inline_math_location(inlines: tuple[slide_lib.native_model.Inline, ...],
-		location: slide_lib.native_model.SourceLocation) -> slide_lib.native_model.SourceLocation | None:
-	"""Return the containing source location for unsupported inline math."""
-	for inline in inlines:
-		if isinstance(inline, slide_lib.native_model.InlineMath):
-			return location
-		if isinstance(inline, (slide_lib.native_model.Strong, slide_lib.native_model.Emphasis,
-				slide_lib.native_model.Link, slide_lib.native_model.StyledSpan)):
-			math_location = inline_math_location(inline.children, location)
-			if math_location is not None:
-				return math_location
-	return None
-
-
-#============================================
-def list_item_inline_math_location(item: slide_lib.native_model.ListItem) -> slide_lib.native_model.SourceLocation | None:
-	"""Return the first inline-math location in one list item or nested list."""
-	math_location = inline_math_location(item.inlines, item.location)
-	if math_location is not None:
-		return math_location
-	for child in item.children:
-		math_location = block_inline_math_location(child)
-		if math_location is not None:
-			return math_location
-	return None
-
-
-#============================================
-def block_inline_math_location(block: slide_lib.native_model.Block) -> slide_lib.native_model.SourceLocation | None:
-	"""Return the first inline-math location in a renderable semantic block."""
-	if isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph)):
-		return inline_math_location(block.inlines, block.location)
-	if isinstance(block, slide_lib.native_model.ListBlock):
-		for item in block.items:
-			math_location = list_item_inline_math_location(item)
-			if math_location is not None:
-				return math_location
-	return None
-
-
-#============================================
-def source_inline_math_location(blocks: tuple[slide_lib.native_model.Block, ...]) -> slide_lib.native_model.SourceLocation | None:
-	"""Return the first source location requiring an inline-math adapter."""
-	for block in blocks:
-		math_location = block_inline_math_location(block)
-		if math_location is not None:
-			return math_location
-	return None
 
 
 #============================================
@@ -355,6 +305,9 @@ def validate_flow_region(blocks: tuple[slide_lib.native_model.Block, ...],
 #============================================
 def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -> None:
 	"""Prove every supported source block has a native destination in ``spec``."""
+	source = slide_lib.math_render.lower_display_math(source)
+	slide_lib.math_render.validate_equation_blocks(
+		source.blocks + tuple(block for cell in source.cells for block in cell.blocks))
 	if spec.name != "multiple-choice":
 		for blocks in (source.blocks,) + tuple(cell.blocks for cell in source.cells):
 			cascade = invalid_cascade(blocks)
@@ -381,15 +334,6 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 	if overlay is not None and spec.name != "big-image":
 		raise source_error(overlay.location,
 			"image overlays are supported only in the big-image image slot")
-	math_location = source_inline_math_location(source.blocks)
-	if math_location is None:
-		for cell in source.cells:
-			math_location = source_inline_math_location(cell.blocks)
-			if math_location is not None:
-				break
-	if math_location is not None:
-		raise source_error(math_location,
-			f"{spec.name} slides cannot yet place InlineMath until a native math adapter exists")
 	headings, items, images, root_tables = body_parts(source.blocks)
 	cells = source.cells
 	if spec.cell_count != len(spec.slot_names):

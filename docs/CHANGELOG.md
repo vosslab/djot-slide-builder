@@ -1,5 +1,26 @@
 ## 2026-10-20
 
+- Complete six independent equation-pipeline audit passes. Reconcile stale math contracts
+  in decision records, document module ownership, clarify the mixed-math diagnostic, and
+  apply local comment/separator style. Leave proposed test changes for human review.
+
+- Remove mixed prose/SVG equation flow and its token positioning, baseline, and wrapping
+  code. Keep whole equation blocks, equation-only bullets/cells, and intact native prose
+  paragraphs. Reject mixed authoring with a source location; revise LECT07C accordingly.
+- Apply the permanent-test checklist to equation coverage: retain authoring/export
+  contracts and remove fragment geometry and table-sizing assertions. Keep real-render
+  verification as one-time evidence.
+
+- Document equation-only list items with `\displaystyle` and the explicit distinction
+  between native Djot scripts and LaTeX math. Remove a stale unsupported-math statement.
+
+- Render standalone LaTeX equations with local MathJax and STIX2 outlined SVG.
+  Share block sizing, table placement, and reveals with the slide compiler.
+  Add locked Node dependencies and two offline layout/export tests.
+- Migrate selected LECT07C binomial formulas and inline calculations to Djot math, retaining
+  all 38 slides, original assets, and the existing slide 8 review marker. Verify native
+  Djot parsing, 149 focused tests, and LibreOffice ODP/PDF rendering.
+
 - Remove redundant `(continued)` from the two LECT07D slide titles to reduce wrapping.
 
 - Repair LECT07C recovered equation spacing using font-independent vector outlines from
@@ -42,7 +63,7 @@
 - Use the instructor-cleaned biotech LECT07 anonymous-message slide in Genetics LECT07A,
   preserving its text-left/image-right layout, wording, form URL, and image.
 
-- Restore consecutive factorial rows 3–13 on LECT07B slide 13 (17.5 pt).
+- Restore consecutive factorial rows 3-13 on LECT07B slide 13 (17.5 pt).
 - Size standard slide titles independently of body density, preserving full-size short titles.
 
 - Label build capacity warnings with authored slide numbers and titles.

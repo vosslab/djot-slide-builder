@@ -456,9 +456,61 @@ The template is `ATGC`.
 ~~~~
 
 The inner fence in the example represents source; choose a longer outer fence when copying it into
-a Djot document.  Djot recognizes `$inline$` and `$$display$$` mathematics, but native math output
-does not yet have an adapter, so the layout validator reports it before rendering.  This preserves
-the authored surface without pretending that a noneditable substitute is usable.
+a Djot document.
+
+## Equations
+
+Use `$...$` for an equation-only paragraph or list item and `$$...$$` for a centered
+display equation. Mixed prose and equations in one paragraph, list item, or table cell
+are unsupported and produce a source-located error. Display delimiters may enclose one
+line or appear on separate lines around a multiline expression:
+
+```djot
+The probability is:
+
+$$\frac{2}{3}$$
+
+$$\binom{7}{3}=35$$
+
+$$
+\begin{aligned}
+p &= \frac{210}{3^7}\\
+  &= \frac{210}{2187}\approx9.6\%
+\end{aligned}
+$$
+```
+
+The compiler uses local MathJax with STIX2 math fonts to generate self-contained SVG.
+Equations remain editable in Djot; generated ODP/PDF equation glyphs are vector outlines.
+Application-level equation editing is not required. Ordinary surrounding text remains text.
+
+For a list of worked equations, author one equation per ordinary list item. Use
+`\displaystyle` inside `$...$` for large fractions and binomial coefficients:
+
+```djot
+- $\displaystyle\binom{8}{6}=\frac{8!}{2!\cdot6!}=28$
+- $\displaystyle\binom{8}{2}=\frac{8!}{6!\cdot2!}=28$
+```
+
+These items share the text block's spacing and list behavior. Native Djot forms such as
+`H~0~` and `x^2^` continue to use native text; dollar-delimited math always uses MathJax.
+The compiler does not guess which LaTeX expressions could be replaced with ordinary text.
+
+Fractions, binomials, roots, integrals, sums, matrices, cases, aligned equations,
+`\text{...}`, `\boldsymbol{...}`, and `\color{...}` are supported. Chemistry uses
+`\ce{2H2 + O2 -> 2H2O}`. Define macros with `\newcommand` inside the expression that uses
+them; definitions do not leak into other equations. This is MathJax's rich LaTeX math
+syntax, not a general LaTeX document or arbitrary package runner.
+
+Each equation occupies one measured SVG box. The compiler stacks whole equations and
+intact native prose paragraphs; LibreOffice lays out the text inside each prose paragraph.
+An equation-only table cell is also supported. Equations inherit authored text color.
+Use `aligned` for intentional breaks in a long equation. Existing capacity reporting
+applies when content needs smaller type. Paragraph/list reveals include their equations.
+
+Inside math, write normal TeX commands, braces, underscores, and escaped percent signs (`\%`).
+For a literal dollar in ordinary prose, use `\$`. Malformed equations report their source
+location during compilation. See [INSTALL.md](INSTALL.md) for the local renderer dependencies.
 
 Write ASCII source where practical.  In ordinary text, `&prime;` projects to the Unicode prime
 character (U+2032).  Verbatim and raw content retain their literal characters.
@@ -494,8 +546,7 @@ without alignment metadata.
 Raw HTML and XML tokens remain literal editable text under the current subset parser. Generic divs,
 footnotes, raw blocks, definition lists, thematic breaks, Djot symbols, paired tilde or caret inline
 forms, and inline images have no presentation surface. One-line attributes have native meaning only
-for the color scopes, table groups, and column proportions documented above. Fenced code, display math,
-block quotes, and inline math are
+for the color scopes, table groups, and column proportions documented above. Fenced code and block quotes are
 recognized source forms that currently receive a native-destination diagnostic. Source-located
 diagnostics make the available editable forms clear.
 

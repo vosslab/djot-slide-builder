@@ -68,12 +68,14 @@ input. It may be unnecessary and must not alter the selected Djot foundation.
 
 - Write ordinary nested bulleted and numbered lists inside a named region.
 - Use ordinary Markdown image source where an image belongs.
-- Use hand-writable, LaTeX-compatible inline and display math.
+- Use hand-writable LaTeX math in standalone blocks or equation-only list items and table cells.
+  Mixed prose/math is unsupported; see [the syntax guide](../../DJOT_SLIDE_SYNTAX.md#equations).
 - Name a recurring teaching layout instead of repeating geometry or CSS.
 - Name the region where content belongs instead of relying on its ordinal position.
 - Keep routine structure shorter than HTML tags, HTML comments, or deeply nested containers.
 - Reveal an authored item or outline one item at a time without a general animation language.
-- Preserve text, lists, practical equations, and images as editable native PPTX and ODP objects.
+- Keep equations editable in Djot and render them as SVG. Native equation editability is not required.
+  Ordinary text and lists retain their native ODP representation.
 
 Raw HTML tags and `<!-- ... -->` comments are technically precise but spend too many characters on
 routine structure. They are poor default authoring syntax even when they pass through a Markdown

@@ -2,4 +2,5 @@
 # Python 3.12 is the pinned interpreter for this repo's tooling.
 brew "python@3.12"
 brew "poppler"
+brew "node"
 cask "libreoffice-still"

@@ -42,13 +42,14 @@ clone, continuation, or step-by-step problem language feature.
 ## Settled content surface
 
 These are settled parts of the Djot-compatible content surface, not syntax gaps or requests for new
-extension punctuation. The future implementation must render them as native editable content.
+extension punctuation. Ordinary text and tables retain native editable representations;
+equations use SVG and remain editable in Djot.
 
 | Need | Lecture 02 evidence | Required behavior |
 | --- | --- | --- |
 | Tables | Experimental-result grids, genome comparisons, recognition-site reference | Use Djot tables and render them as native readable tables. Table cells may remain static across a slide series. |
 | Fixed-width sequence text | Complementary-DNA and restriction-site exercises | Use Djot inline verbatim for short sequences and fenced code blocks for aligned multi-line sequences. |
-| Inline and display mathematics | Base composition, genome-size values, and chemistry notation | Use reserved `$inline$` and `$$display$$` forms through MathJax or a similar plugin. |
+| Standalone mathematics | Base composition, genome-size values, and chemistry notation | Use MathJax SVG for whole equation blocks or equation-only list items/cells; use native Djot notation within prose. See [the syntax guide](../../DJOT_SLIDE_SYNTAX.md#equations). |
 ## Slides outside the proposed surface
 
 None. The four non-multiple-choice click builds are covered by slot-scoped `blue overlay` behavior:

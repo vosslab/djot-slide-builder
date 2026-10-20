@@ -12,6 +12,8 @@ import slide_lib.layout_content
 import slide_lib.capacity_report
 import slide_lib.layout_model
 import slide_lib.layout_primitives
+import slide_lib.math_layout
+import slide_lib.math_render
 import slide_lib.native_model
 import slide_lib.presentation_theme
 import slide_lib.svg_images
@@ -96,10 +98,11 @@ def logical_points(value: float,
 
 
 def visible_text(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
-	"""Collect visible inline text without projecting unsupported inline math."""
+	"""Collect source text, including equation TeX, for labels and diagnostics."""
 	parts: list[str] = []
 	for inline in inlines:
-		if isinstance(inline, (slide_lib.native_model.Text, slide_lib.native_model.InlineCode)):
+		if isinstance(inline, (slide_lib.native_model.Text, slide_lib.native_model.InlineCode,
+				slide_lib.native_model.InlineMath)):
 			parts.append(inline.value)
 		elif isinstance(inline, slide_lib.native_model.Break):
 			parts.append(" ")
@@ -129,6 +132,20 @@ class MeasurementSession:
 		self._fragments: dict[tuple[object, ...], tuple[str, ...]] = {}
 		self.capacity_diagnostics: list[slide_lib.capacity_report.CapacityDiagnostic] = []
 		self.table_group_bounds: dict[str, tuple[tuple[float, ...], tuple[float, ...]]] = {}
+		self.equations: dict[tuple[str, bool], slide_lib.math_render.RenderedMath] = {}
+
+	def prepare_equations(self, deck: slide_lib.native_model.Deck) -> None:
+		"""Render every distinct expression before fitting any candidate sizes."""
+		requests = {}
+		for source in deck.slides:
+			blocks = source.blocks + tuple(block for cell in source.cells for block in cell.blocks)
+			slide_lib.math_render.validate_equation_blocks(blocks)
+			for block in _descendant_blocks(blocks):
+				for inline in _block_inlines(block):
+					if isinstance(inline, slide_lib.native_model.InlineMath):
+						requests.setdefault((inline.value, inline.display), block.location)
+		self.equations = slide_lib.math_render.render_equations(requests)
+		self.math_directory = deck.repo_root / "_temp" / "math"
 
 	def prepare_table_groups(self, deck: slide_lib.native_model.Deck) -> None:
 		"""Measure all explicitly related tables before any slide chooses its text size."""
@@ -227,6 +244,11 @@ class MeasurementSession:
 		key = (inlines, size_pt, width, level, list_item, bold, italic)
 		if key in self._paragraphs:
 			return self._paragraphs[key]
+		if slide_lib.math_layout.has_math(inlines):
+			result = slide_lib.math_layout.paragraph_metrics(inlines, size_pt, width,
+				level, list_item, bold, italic, self)
+			self._paragraphs[key] = result
+			return result
 		available = max(width - (self.theme.list_levels[level].text_position if list_item else 0.0), 1.0)
 		lines: list[list[tuple[str, str, bool, bool, bool]]] = [[]]; line_widths = [0.0]
 		for text, family, token_bold, token_italic, literal in _styled_tokens(inlines, bold, italic):
@@ -351,6 +373,10 @@ def paragraph_properties(inlines: tuple[slide_lib.native_model.Inline, ...], siz
 	result = slide_lib.layout_primitives.ParagraphProperties(
 		slide_lib.layout_primitives.HorizontalAlignment.START, 0, space_after,
 		line_spacing_pt, indent_start, 0, first_line, ())
+	if len(inlines) == 1 and isinstance(inlines[0], slide_lib.native_model.InlineMath) \
+			and inlines[0].display:
+		result = dataclasses.replace(result,
+			horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER)
 	return result
 
 
@@ -619,6 +645,11 @@ def table_cell_text_width(column_width: float,
 def _table_cell_widths(inlines: tuple[slide_lib.native_model.Inline, ...], size_pt: float,
 		session: MeasurementSession, bold: bool) -> tuple[float, float]:
 	"""Return widest-token and widest-line advances for one native table cell."""
+	if slide_lib.math_layout.has_math(inlines):
+		run = slide_lib.math_layout.equation_run(
+			slide_lib.math_layout.semantic_runs(inlines, bold))
+		width = session.equations[(run.text, run.display)].width * point_height(size_pt, session.theme)
+		return width, width
 	minimum = 0.0
 	line_width = 0.0
 	preferred = 0.0
@@ -776,14 +807,11 @@ def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.la
 	facts: list[slide_lib.layout_model.UnsupportedSourceFact] = []
 	for block in _descendant_blocks(slide.blocks + tuple(block for cell in slide.cells for block in cell.blocks)):
 		attributes = _unsupported_attributes(block)
-		if isinstance(block, (slide_lib.native_model.CodeBlock, slide_lib.native_model.DisplayMath,
+		if isinstance(block, (slide_lib.native_model.CodeBlock,
 			slide_lib.native_model.QuoteBlock)):
 			facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, type(block).__name__, attributes))
 		elif attributes:
 			facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, type(block).__name__, attributes))
-		for inline in _block_inlines(block):
-			if isinstance(inline, slide_lib.native_model.InlineMath):
-				facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, "InlineMath"))
 		if isinstance(block, slide_lib.native_model.ListBlock):
 			for item in _descendant_list_items(block):
 				attributes = _unsupported_attributes(item)

@@ -8,6 +8,8 @@ import slide_lib.layout_measurement
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.layout_specialty_builders
+import slide_lib.math_layout
+import slide_lib.math_render
 import slide_lib.native_model
 import slide_lib.presentation_theme
 
@@ -17,7 +19,10 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 	"""Compile every authored slide once and retain each page's hidden state."""
 	if not any(not source.hidden for source in deck.slides):
 		raise ValueError(f"{deck.path}:1: deck has no visible slides")
+	deck = dataclasses.replace(deck, slides=tuple(
+		slide_lib.math_render.lower_display_math(source) for source in deck.slides))
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
+	session.prepare_equations(deck)
 	session.prepare_table_groups(deck)
 	slides: list[slide_lib.layout_model.LayoutSlide] = []
 	for index, source in enumerate(deck.slides):
@@ -25,6 +30,8 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		slide_lib.layout_model.reject_unsupported_source_facts(
 			slide_lib.layout_measurement.unsupported_facts(source))
 		page = slide_lib.layout_builders.compile_slide(deck, source, theme, index, session)
+		page = dataclasses.replace(page, objects=tuple(
+			slide_lib.math_layout.finalize_object(item, session) for item in page.objects))
 		title = next((slide_lib.layout_measurement.visible_text(block.inlines)
 			for block in source.blocks if isinstance(block, slide_lib.native_model.Heading)), "")
 		for diagnostic_index in range(diagnostic_start, len(session.capacity_diagnostics)):

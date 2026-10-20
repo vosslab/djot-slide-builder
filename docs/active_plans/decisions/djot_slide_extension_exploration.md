@@ -107,10 +107,12 @@ without title placement rejects headings rather than silently drawing them somew
 ## Djot content boundary
 
 The front end recognizes headings, ordinary lists, links, quotes, inline verbatim, fenced code
-blocks, tables, component-image syntax, and the reserved `$inline$` and `$$display$$` mathematics
+blocks, tables, component-image syntax, and the reserved `$equation$` and `$$display$$` mathematics
 forms. Inline verbatim renders as editable fixed-width text. A validated table renders only in a
-layout with a native table destination. Fenced code, display math, quote blocks, and inline math
-remain source-located native-export rejections until their native owners exist. `=== layout:`
+layout with a native table destination. MathJax renders whole equation blocks and equation-only
+paragraphs, list items, or table cells as SVG; mixed prose/math is rejected. Equations remain
+editable in Djot. See [the current syntax guide](../../DJOT_SLIDE_SYNTAX.md#equations).
+Fenced code and quote blocks remain source-located native-export rejections. `=== layout:`
 replaces Marp's `---` slide separator, and Marp-specific image modifiers are not adopted.
 
 ## Linter boundary
