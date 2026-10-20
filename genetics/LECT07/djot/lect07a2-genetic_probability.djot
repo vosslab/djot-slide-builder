@@ -1,0 +1,122 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 07A2
+
+## Genetic probability review
+
+## Chapter 4
+
+## Dr. Neil Voss
+
+## October 20, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Choose the addition or multiplication rule.
+- Distinguish genotype probability from phenotype probability.
+- Combine independent single-gene probabilities.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 1](assets/lect07a2-genetic_probability/image_001.png)
+
+
+@notes
+
+The source animation on this video still cannot be faithfully represented by the current Djot conversion. The imported image is static.
+
+=== layout: one-panel
+
+# Multiplication rules
+
+@body
+
+- *Independent events*: P(A and B) = P(A) &times; P(B)
+- *General rule*: P(A and B) = P(A) &times; P(B|A)
+- Equivalently: P(B) &times; P(A|B)
+- Hear "and"? Think multiplication - then check independence.
+
+=== layout: one-panel
+
+# Addition rules
+
+@body
+
+- *Mutually exclusive events*: P(A or B) = P(A) + P(B)
+- *General rule*: P(A or B) = P(A) + P(B) - P(A and B)
+- Hear "or"? Think addition - then check overlap.
+
+=== layout: one-panel
+
+# Practice: a puppy's genotype
+
+@body
+
+Two *BbCc* dogs are crossed.
+
+- B: black coat; b: yellow coat
+- C: straight fur; c: curly fur
+- The genes assort independently and are not sex linked.
+
+*What fraction of puppies will be BbCc?*
+
+- First find P(Bb).
+- Then find P(Cc).
+
+@notes
+
+P(Bb) = 1/2 and P(Cc) = 1/2, so P(BbCc) = 1/4.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 2](assets/lect07a2-genetic_probability/image_002.png)
+
+=== layout: one-panel
+
+# More Practice
+
+@body
+
+- In dogs, black coat color (_B_) is dominant to yellow coat color (_b_), and straight fur (_C_) is dominant to curly fur (_c_). The coat color gene and the fur texture gene are on different chromosomes, so they assort independently, and are not sex linked.
+- *In a cross between two* *_BbCc_* *parents, predict the fraction of offspring with black coat color and straight fur.*
+
+=== layout: one-panel
+
+# Black coat and straight fur
+
+@body
+
+- P(black) = P(BB or Bb) = 3/4
+- P(straight) = P(CC or Cc) = 3/4
+- Independent loci: multiply the phenotype probabilities.
+
+*P(black and straight) = (3/4) &times; (3/4) = 9/16*
+
+Expected fraction does not guarantee an exact count in a small litter.
+
+=== layout: one-panel
+
+# Key ideas to keep
+
+@body
+
+- AND: multiply; check independence.
+- OR: add; subtract overlap when needed.
+- A genotype and its dominant phenotype have different probabilities.
+
+=== layout: theend
+
+# THE END

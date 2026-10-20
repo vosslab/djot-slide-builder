@@ -1,3 +1,57 @@
+## 2026-10-20
+
+### Additions and New Features
+
+- Add `refresh_podcast.py`: preview or explicitly refresh the latest published Stump the Vibe
+  Coder episode across selected announcement decks. Save its thumbnail locally and insert or
+  replace a `big-image` slide after the YouTube channel slide. Apply Episode 36 to Genetics 07A.
+- Convert Genetics Lecture 07 into five canonical Djot decks: current announcements, probability
+  review, two progeny-probability decks, and chi-square. Preserve original source evidence and
+  hidden slides; add learning objectives and closing summaries.
+- Update canonical 2026 announcements for October 20 using the instructor's schedule spreadsheet.
+  Record Quiz 3 and Assignments 7-8 on November 3; hide completed midterm-preparation slides.
+
+### Fixes and Maintenance
+
+- Restore separate title, chapter, instructor, and date lines on all five Genetics LECT07 covers.
+  Export explicit native stacking indices so the unfilled gray title border stays behind text.
+  Consolidate the global cover requirements in a dedicated Human Guidance slide 1 section.
+  Verify BPW chapter mapping: probability review/progeny decks use Chapter 4, chi-square uses
+  Chapter 7, and announcements span both. Add editable parenthesized chi-squared to the title.
+
+- Apply assessment-date colors to Genetics 07A: completed quizzes and midterm in light gray,
+  future assessments in black. Record dark red for next-week assessments; none apply this week.
+- Restore editable math, factorial and Pascal tables, the surviving-mice distribution, multinomial
+  examples, and chi-square calculations. Reduce image placements from 48 to 13 after review.
+- Rebuild step-by-step chi-square completion with stable native tables. Correct legacy rounding
+  of expected counts, p-value interpretation, seed/pod terminology, and flattened exponents.
+- Accept valid embedded ODF document-directory references with manifest-declared, present
+  `content.xml` members. Preserve rejection of missing content and unsafe paths.
+
+### Decisions and Failures
+
+- Initial import encountered formula-directory references incorrectly treated as missing files;
+  repair the package reader. Sandboxed metafile extraction also failed; manually rebuild the
+  affected teaching mathematics as editable Djot rather than relying on missing previews.
+- Keep explicit replacement markers for the source animation and stacked integral equations that
+  cannot be faithfully represented in Djot. Treat the old activity URL as an editorial update,
+  not a replacement-marker condition; retain it in notes and use the included worksheet.
+  Preserve detailed provenance and review boundaries in
+  [LECT07_REVIEW.md](../genetics/LECT07/djot/LECT07_REVIEW.md).
+
+### Developer Tests and Notes
+
+- Podcast refresh: four focused tests pass; repeated refresh produces no source diff. Preview
+  accepts both Genetics and Biotechnology lecture folders. Lecture 07A passes strict lint and
+  capacity checks; rebuilt ODP/PDF and the podcast slide's layout and hyperlink were verified.
+  The addition brings Lecture 07 to 203 authored slides, 189 visible pages, and 14 images.
+- Strict native/semantic lint passes for five sources, 202 slides, and 13 image placements.
+  Capacity inspection reports no concerns. External LibreOffice builds all five ODP/PDF pairs.
+- Reader/export regression checks: 43 passed, including the embedded-document reference repair.
+  Parser checks: 70 passed. Final package inspection confirms matching page/visibility counts and
+  identical native table geometry across chi-square steps. Rendered decks and revised math/table
+  pages reviewed; no attended click-playback claim.
+
 ## 2026-10-15
 
 ### Additions and New Features

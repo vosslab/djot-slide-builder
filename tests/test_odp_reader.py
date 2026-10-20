@@ -324,6 +324,33 @@ def test_reader_reports_external_image_and_partial_geometry_without_losing_page(
 
 
 #============================================
+@pytest.mark.parametrize("has_content", [True, False])
+def test_embedded_document_directory_reference(tmp_path: pathlib.Path, has_content: bool) -> None:
+	"""Embedded formulas use a manifest directory, with no ZIP directory entry."""
+	content = CONTENT_PREFIX + page("formula", frame(
+		'<draw:object xlink:href="./Object 1"/>')) + CONTENT_SUFFIX
+	manifest = manifest_xml(("Object 1/content.xml",) if has_content else ())
+	manifest = manifest.replace("</manifest:manifest>",
+		'<manifest:file-entry manifest:full-path="Object 1/" '
+		'manifest:media-type="application/vnd.oasis.opendocument.formula"/>'
+		'</manifest:manifest>')
+	path = tmp_path / "formula.odp"
+	with zipfile.ZipFile(path, "w") as archive:
+		archive.writestr("mimetype", odp_reader.ODP_MIMETYPE)
+		archive.writestr("content.xml", content)
+		archive.writestr("styles.xml", STYLES_XML)
+		archive.writestr("META-INF/manifest.xml", manifest)
+		if has_content:
+			archive.writestr("Object 1/content.xml",
+				'<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>')
+	if has_content:
+		odp_reader.validate_odp(path)
+	else:
+		with pytest.raises(ValueError, match="XML reference points to a missing member"):
+			odp_reader.validate_odp(path)
+
+
+#============================================
 def test_reader_rejects_missing_reference_and_unsafe_archive_member(tmp_path: pathlib.Path) -> None:
 	"""The archive boundary validates manifest, XML references, and member paths."""
 	missing = write_odp(tmp_path, CONTENT_PREFIX + page("bad", frame(

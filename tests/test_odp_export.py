@@ -285,6 +285,8 @@ def test_title_frame_is_unfilled_and_behind_editable_text(tmp_path: pathlib.Path
 		if item.find(f"{{{exporter.DRAW_NS}}}text-box") is not None)
 	assert text_frames and all(children.index(border) < children.index(item)
 		for item in text_frames)
+	assert all(int(border.attrib[f"{{{exporter.DRAW_NS}}}z-index"]) <
+		int(item.attrib[f"{{{exporter.DRAW_NS}}}z-index"]) for item in text_frames)
 	style_name = border.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
 	style = next(item for item in root.findall(f".//{{{exporter.STYLE_NS}}}style")
 		if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)

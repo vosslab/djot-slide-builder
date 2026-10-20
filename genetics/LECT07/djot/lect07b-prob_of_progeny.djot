@@ -1,0 +1,672 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 07B
+
+## Probability of progeny
+
+## Chapter 4
+
+## Dr. Neil Voss
+
+## October 20, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Distinguish one birth order from all orders with the same counts.
+- Use factorials and binomial coefficients to count arrangements.
+- Calculate progeny probabilities for equal and unequal outcomes.
+
+=== layout: one-panel
+
+# *Probability in predictions of progeny distribution*
+
+@body
+
+- Genetic ratios result from\:
+  - chance assortment of genes into gametes
+  - chance combination of gametes into zygotes
+- Probability calculations in genetics frequently use the addition and multiplication rules of probability together
+
+=== layout: section
+
+# Equally Likely Combinations
+
+=== layout: one-panel
+
+
+@body
+
+- Assuming equal numbers of boys and girls.
+- If a mating has already produced a girl, what is the probability that the next child will be a boy?
+- A. 0, no chance
+- B. &#188;, 25% chance
+- C. &#189;, 50% chance
+- D. &#190;, 75% chance
+- E. 1, 100% chance
+- F. slightly higher than 50%, like 53%
+
+=== layout: one-panel
+
+
+@body
+
+- Assuming equal numbers of boys and girls.
+- If a mating has already produced [*three girls*]{color=#A7074B underline=true}, what is the probability that the next child will be a boy?
+- A. 0, no chance
+- B. &#188;, 25% chance
+- C. &#189;, 50% chance
+- D. &#190;, 75% chance
+- E. 1, 100% chance
+- F. slightly higher than 50%, like 53%
+
+=== layout: one-panel
+
+# Does the family history matter?
+
+@body
+
+Assume each birth is independent, with P(boy) = P(girl) = 1/2.
+
+- A family already has one girl. What is P(boy next)?
+- A family already has two girls. What is P(boy next)?
+
+*Explain your reasoning before calculating.*
+
+=== layout: one-panel
+
+# Each birth is a new trial
+
+@body
+
+- P(boy next) = 1/2 in both cases.
+- Earlier births do not change the probability of the next birth.
+- This follows from the model's independence assumption.
+
+*A run of girls does not make a boy "due".*
+
+=== layout: one-panel
+
+# Problem: seven children
+
+@body
+
+Assume seven independent births, each with P(boy) = P(girl) = 1/2.
+
+*What is the probability of four boys and three girls OR three boys and four girls?*
+
+The birth order is not specified.
+
+=== layout: one-panel
+
+# One order is not every order
+
+@body
+
+Seven births; each has equal probability of a boy or girl.
+
+- P(one specified order) = (1/2)^7^ = 1/128
+- All boys: one order; all girls: one order
+- Four boys and three girls: many different orders
+- Count the orders before adding their probabilities.
+
+=== layout: section
+
+# Before we can do this problem we need to learn some math...
+
+=== layout: section
+
+# Factorials
+
+=== layout: one-panel
+
+# *Factorial*
+
+@body
+
+- For a positive integer n, n! multiplies the integers from 1 through n
+  - factorial four, written as 4! is equal to\:
+  - 4! = 1&#215;2&#215;3&#215;4 = 24.
+- The number gets really big, really fast
+- Short hand sometimes be used in the form\:
+  - n! = n &#215; (n-1)!
+  - 4! = 4 &#215; 3! = 4 &#215; 6 = 24
+
+=== layout: one-panel
+
+# *Factorial*
+
+@body
+
+- For a positive integer n, n! multiplies the integers from 1 through n
+  - factorial four, written as 4! is equal to\:
+  - 4! = 1&#215;2&#215;3&#215;4 = 24.
+- [The number gets really big, really fast]{color=red}
+- Short hand sometimes be used in the form\:
+  - n! = n &#215; (n-1)!
+  - 4! = 4 &#215; 3! = 4 &#215; 6 = 24
+
+=== layout: one-panel
+
+# *Numberphile 0!*
+
+@body
+
+- Why is 0 factorial equal to 1?
+  - Why does 0! = 1
+- Video Link\: [https\://youtu.be/Mfk\_L4Nx2ZI](https://youtu.be/Mfk_L4Nx2ZI)
+
+=== layout: section
+
+# Binomial Distribution
+
+=== layout: one-panel
+
+# *Binomial Distribution*
+
+@body
+
+- In statistics, the binomial distribution give the probability of the number of successes in a sequence of [*n*]{underline=true} independent [*yes/no experiments*]{underline=true}, each of which yields success with probability [*p*]{underline=true}.
+
+=== layout: one-panel
+
+# Binomial coefficient
+
+@body
+
+*C(n,k) = n! / (k! &times; (n-k)!)*
+
+- Read C(n,k) as "n choose k".
+- Number of ways to choose k positions among n trials
+- Order within the chosen group does not matter.
+
+=== layout: one-panel
+
+# Factorials: a reference
+
+@body
+
+| n | n! | n | n! |
+| --- | --- | --- | --- |
+| 0 | 1 | 8 | 40,320 |
+| 1 | 1 | 9 | 362,880 |
+| 2 | 2 | 10 | 3,628,800 |
+| 3 | 6 | 11 | 39,916,800 |
+| 4 | 24 | 12 | 479,001,600 |
+| 5 | 120 | 13 | 6,227,020,800 |
+| 6 | 720 | 14 | 87,178,291,200 |
+| 7 | 5,040 | 15 | 1,307,674,368,000 |
+
+=== layout: one-panel
+
+# Evaluating binomial coefficients
+
+@body
+
+*C(n,k) = n! / (k! &times; (n-k)!)*
+
+- C(8,6) = ?
+- C(8,2) = ?
+- C(7,0) = ?
+
+Remember: 0! = 1.
+
+=== layout: one-panel
+
+# Evaluating binomial coefficients
+
+@body
+
+| Choose | Factorials | Cancel | Result |
+| --- | --- | --- | --- |
+| C(8,6) | 8! / (6! &times; 2!) | (8 &times; 7) / 2 | 28 |
+| C(8,2) | 8! / (2! &times; 6!) | (8 &times; 7) / 2 | 28 |
+| C(7,0) | 7! / (0! &times; 7!) | 1 / 1 | 1 |
+
+=== layout: one-panel
+
+# Pascal's triangle: n = 0 through 5
+
+@body
+
+| n | Coefficients from k = 0 through n |
+| --- | --- |
+| 0 | 1 |
+| 1 | 1  1 |
+| 2 | 1  2  1 |
+| 3 | 1  3  3  1 |
+| 4 | 1  4  6  4  1 |
+| 5 | 1  5  10  10  5  1 |
+
+@notes
+
+Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+
+=== layout: one-panel
+
+# Pascal's triangle: n = 6 through 10
+
+@body
+
+| n | Coefficients from k = 0 through n |
+| --- | --- |
+| 6 | 1  6  15  20  15  6  1 |
+| 7 | 1  7  21  35  35  21  7  1 |
+| 8 | 1  8  28  56  70  56  28  8  1 |
+| 9 | 1  9  36  84  126  126  84  36  9  1 |
+| 10 | 1  10  45  120  210  252  210  120  45  10  1 |
+
+@notes
+
+Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+
+=== layout: one-panel
+
+# How many orders?
+
+@body
+
+Seven children, with four boys and three girls.
+
+*How many ways can the four boy positions be chosen?*
+
+- Choose k = 4 positions from n = 7.
+- Write C(7,4) before calculating.
+
+=== layout: one-panel
+
+# Four boys among seven children
+
+@body
+
+- Choose four of the seven birth positions.
+
+*C(7,4) = 7! / (4! &times; 3!)*
+
+= (7 &times; 6 &times; 5) / (3 &times; 2 &times; 1) = *35 orders*
+
+Each specified order has probability (1/2)^7^.
+
+=== layout: one-panel
+
+# Four boys among seven children
+
+@body
+
+- Choose four of the seven birth positions.
+
+*C(7,4) = 7! / (4! &times; 3!)*
+
+= (7 &times; 6 &times; 5) / (3 &times; 2 &times; 1) = *35 orders*
+
+Each specified order has probability (1/2)^7^.
+
+=== layout: one-panel
+
+# Either four boys or four girls
+
+@body
+
+- Exactly four boys: 35/128
+- Exactly four girls: 35/128
+- These outcomes are mutually exclusive.
+
+*P(either) = 70/128 = 35/64 &asymp; 54.7%*
+
+=== layout: one-panel
+
+# Pascal's triangle counts birth orders
+
+@body
+
+| Boys k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| C(7,k) | 1 | 7 | 21 | 35 | 35 | 21 | 7 | 1 |
+
+@notes
+
+There are 128 equally likely orders in total. Four boys corresponds to 35.
+
+=== layout: one-panel
+
+# Seven children: worked answer
+
+@body
+
+- Four boys and three girls: C(7,4) = 35 orders
+- Probability of each order: (1/2)^7^ = 1/128
+- P(4 boys, 3 girls) = 35/128
+- P(3 boys, 4 girls) = 35/128
+
+*Either composition: 70/128 = 35/64 &asymp; 54.7%*
+
+=== layout: one-panel
+
+# Problem: six children
+
+@body
+
+Assume independent births and P(boy) = P(girl) = 1/2.
+
+What fraction of six-child families have:
+
+- No girls?
+- Exactly one girl?
+- Exactly two girls?
+- Exactly three girls?
+- Three or more boys?
+
+=== layout: one-panel
+
+# Pascal's triangle: n = 0 through 5
+
+@body
+
+| n | Coefficients from k = 0 through n |
+| --- | --- |
+| 0 | 1 |
+| 1 | 1  1 |
+| 2 | 1  2  1 |
+| 3 | 1  3  3  1 |
+| 4 | 1  4  6  4  1 |
+| 5 | 1  5  10  10  5  1 |
+
+@notes
+
+Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+
+=== layout: one-panel
+
+# Pascal's triangle: n = 6 through 10
+
+@body
+
+| n | Coefficients from k = 0 through n |
+| --- | --- |
+| 6 | 1  6  15  20  15  6  1 |
+| 7 | 1  7  21  35  35  21  7  1 |
+| 8 | 1  8  28  56  70  56  28  8  1 |
+| 9 | 1  9  36  84  126  126  84  36  9  1 |
+| 10 | 1  10  45  120  210  252  210  120  45  10  1 |
+
+@notes
+
+Read across row n. The first entry is k = 0. Entries count arrangements, not probabilities.
+
+=== layout: one-panel
+
+# Six children: count the orders
+
+@body
+
+| k | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| C(n,k) | 1 | 6 | 15 | 20 | 15 | 6 | 1 |
+
+@notes
+
+For no, one, two, or three girls use columns k = 0, 1, 2, 3. For at least three boys, add those columns.
+
+=== layout: one-panel
+
+# Six children: answers
+
+@body
+
+| Question | Orders | Probability |
+| --- | --- | --- |
+| No girls | C(6,0) = 1 | 1/64 |
+| Exactly one girl | C(6,1) = 6 | 6/64 |
+| Exactly two girls | C(6,2) = 15 | 15/64 |
+| Exactly three girls | C(6,3) = 20 | 20/64 |
+| Three or more boys | 20 + 15 + 6 + 1 | 42/64 |
+
+=== layout: one-panel
+
+# Problem: eight kittens
+
+@body
+
+Assume independent sexes, with P(male) = P(female) = 1/2.
+
+*What is the probability of even numbers of both males and females in a litter of eight?*
+
+Count zero as even. Which possible numbers of females belong in the sum?
+
+=== layout: one-panel
+
+# Eight kittens: count the orders
+
+@body
+
+| k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| C(n,k) | 1 | 8 | 28 | 56 | 70 | 56 | 28 | 8 | 1 |
+
+@notes
+
+Choose the even columns: k = 0, 2, 4, 6, 8.
+
+=== layout: one-panel
+
+# Eight kittens: the answer
+
+@body
+
+- Even female counts: 0, 2, 4, 6, 8
+- Corresponding orders: 1, 28, 70, 28, 1
+
+*P(even counts) = (1 + 28 + 70 + 28 + 1) / 2^8^*
+
+= 128/256 = *1/2*
+
+With eight total, an even female count also gives an even male count.
+
+=== layout: one-panel
+
+# Problem: six alleles
+
+@body
+
+A diploid species has six alleles of a gene.
+
+- How many distinct genotypes are possible for an autosomal gene?
+- How many sex-specific genotypes are possible for an X-linked gene?
+
+Use the choose function. Separate homozygotes, heterozygotes, and hemizygotes.
+
+=== layout: one-panel
+
+# Six alleles: autosomal genotypes
+
+@body
+
+- Homozygotes: choose one allele, C(6,1) = 6
+- Heterozygotes: choose two different alleles, C(6,2) = 15
+- *Total: 6 + 15 = 21 genotypes*
+
+=== layout: one-panel
+
+# Six alleles: X-linked genotypes
+
+@body
+
+- Homozygotes: choose one allele, C(6,1) = 6
+- Heterozygotes: choose two different alleles, C(6,2) = 15
+- Females: 6 + 15 = 21 genotypes
+- Males: 6 hemizygous genotypes
+- *Total: 27 sex-specific genotypes*
+
+=== layout: one-panel
+
+# Six alleles: compare the totals
+
+@body
+
+| Gene location | Two-copy genotypes | One-copy genotypes | Total |
+| --- | --- | --- | --- |
+| Autosomal | 6 homozygous + 15 heterozygous | Not applicable | 21 |
+| X-linked | Females: 6 homozygous + 15 heterozygous | Males: 6 hemizygous | 27 |
+
+=== layout: section
+
+# Unequally Likely Combinations
+
+=== layout: one-panel
+
+# Problem: unequal probabilities
+
+@body
+
+Cross Aa &times; Aa and consider four independent offspring.
+
+*What is the probability of exactly three dominant-phenotype offspring (A-) and one aa offspring?*
+
+=== layout: one-panel
+
+# Not all phenotype orders have equal weight
+
+@body
+
+- In Aa &times; Aa: P(A-) = 3/4 and P(aa) = 1/4
+- Probability of one specified order with 3 A- and 1 aa:
+
+*(3/4)^3^ &times; (1/4)*
+
+Now count the positions where the aa offspring could occur.
+
+=== layout: one-panel
+
+# Binomial distribution: textbook notation
+
+@body
+
+*P = n! / (s! t!) &times; p^s^ &times; q^t^*
+
+- s successes and t failures; n = s+t
+- Success probability p; failure probability q = 1-p
+- n! / (s! t!) counts arrangements.
+- p^s^ q^t^ is the probability of each arrangement.
+- Trials are independent, with the same p on every trial.
+
+=== layout: one-panel
+
+# Dr. Voss version: fewer letters
+
+@body
+
+*P(k of n) = C(n,k) &times; p^k^ &times; (1-p)^(n-k)^*
+
+- n: total offspring
+- k: offspring in the category of interest
+- p: probability of that category
+- Independent trials; same p on every trial
+
+=== layout: one-panel
+
+# Exactly three dominant offspring
+
+@body
+
+Aa &times; Aa; four offspring
+
+- P(A-) = 3/4; P(aa) = 1/4
+- C(4,3) = 4 birth orders
+
+*P(3 A- and 1 aa) = 4 &times; (3/4)^3^ &times; (1/4)*
+
+= 27/64 &asymp; 42.2%
+
+=== layout: one-panel
+
+# Quiz and exam setup
+
+@body
+
+*P(k of n) = C(n,k) &times; p^k^ &times; (1-p)^(n-k)^*
+
+- No calculators on quizzes
+- Identify n, k, and p from the question.
+- Substitute correctly before calculating.
+- Use Pascal's triangle or the supplied coefficient.
+
+Example: C(4,3) &times; (3/4)^3^ &times; (1/4)^1^.
+
+=== layout: one-panel
+
+# Mendel's pea seed color
+
+@body
+
+- Yellow *seed* color is dominant to green.
+- Cross two heterozygotes; consider six offspring.
+- n = 6; k = number with yellow seeds; p = 3/4
+
+*Find P(k) for k = 0, 1, 2, 3, 4, 5, and 6.*
+
+*P(k of n) = C(n,k) &times; p^k^ &times; (1-p)^(n-k)^*
+
+@notes
+
+The legacy title said pod color. Yellow dominance applies to seed color; green pod color is dominant.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 15](assets/lect07b-prob_of_progeny/image_015.png)
+
+=== layout: one-panel
+
+# Challenge: five surviving mice
+
+@body
+
+- Tt mice have short tails; TT is lethal.
+- tt mice have normal long tails.
+- Cross two short-tailed mice.
+
+*For a litter of five surviving pups, find the probabilities of every short-tail/long-tail count.*
+
+Why are the two most likely outcomes equally probable?
+
+The worked answer is in Lecture 07C.
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# *More content\:*
+
+@body
+
+- Khan Academy\:
+  - Binomial Theorem\:
+    - [https\://youtu.be/iPwrDWQ7hPc](https://youtu.be/iPwrDWQ7hPc)
+  - Pascal's triangle\:
+    - [https\://youtu.be/v9Evg2tBdRk](https://youtu.be/v9Evg2tBdRk)
+  - Probability\:
+    - [https\://youtu.be/xSc4oLA9e8o](https://youtu.be/xSc4oLA9e8o)
+
+=== layout: one-panel
+
+# Key ideas to keep
+
+@body
+
+- One specified order: multiply probabilities.
+- Any order with k successes: multiply by C(n,k).
+- Binomial model: independent trials with constant p.
+- Expected proportions do not force exact offspring counts.
+
+=== layout: theend
+
+# THE END

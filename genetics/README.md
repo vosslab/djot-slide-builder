@@ -75,6 +75,14 @@ Lectures 01--04 and remains their historical import inventory.
 
 Build Lecture 05 with `./build_slides.sh genetics/LECT05/`.
 
+## Lecture 07 conversion
+
+Lecture 07 contains five canonical decks in `LECT07/djot/`: 203 authored slides, 189 visible,
+and 14 hidden. The 2026 announcements are updated for October 20. Probability equations and
+chi-square table-completion steps use editable text and tables. See
+[LECT07_REVIEW.md](LECT07/djot/LECT07_REVIEW.md) for provenance, repairs, and three explicit
+representation-limit markers. Build with `./build_slides.sh genetics/LECT07/`.
+
 ## Lecture 04 acceptance evidence
 
 The 2026-09-21 conversion covered nine authoritative Lecture 04 ODP decks: 319 authored slides,

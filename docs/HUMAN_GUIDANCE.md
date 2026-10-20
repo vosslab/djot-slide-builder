@@ -16,6 +16,19 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+## Slide 1: title slide
+
+- Across every course and lecture, slide 1 uses the same orientation format: lecture number
+  and letter above title metadata, with no taglines. The metadata has either three lines
+  ("Chapter N: Title", "Dr. Neil Voss", lecture date) or four lines ("Title", "Chapter N",
+  "Dr. Neil Voss", lecture date). Vertical bars are never acceptable.
+- Across every course and lecture, give slide 1's light gray rounded rectangle no fill and place
+  it behind all text boxes so I can select and copy the text.
+- Verify chapter numbers against the relevant BPW course index, rather than deriving them from
+  lecture numbers. For genetics, use the [BPW Genetics index](https://biologyproblems.org/genetics/).
+- Include parenthesized chi-squared in the chi-square title, authored as `(&chi;^2^)` for editable
+  native superscript text.
+
 ## Robustness and simplicity
 
 - Robust software continues to function despite imperfect inputs, data, state, or behavior.
@@ -81,8 +94,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Preserve deliberate text color, ALL CAPS, underline, bold, and italics during conversion and
   LLM rewriting. These can carry teaching meaning; review formatting as well as the words.
 
-- `@replaceme` is an acceptable conversion result. Preserve it when a faithful conversion needs
-  human judgment; eliminating every marker is not a completion requirement.
+- `@replaceme` is an acceptable conversion result. Use it when the agent decides the existing
+  slide cannot be faithfully represented as Djot, not as a request for human judgment.
+  Eliminating every marker is not a completion requirement.
 
 - Deterministic ODP-to-Djot conversion alone is not good enough. Keep LLM evaluation in the
   middle of the conversion workflow to judge whether the teaching intent survives.
@@ -122,11 +136,6 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   associate a color with each rule as a subtle mnemonic.
 - Blue and purple are too close in hue. Prefer Chicago Bears blue/orange or Cubs blue/red
   pairings for concepts that students should distinguish.
-- Title slide 1 is for orientation: lecture number and letter, title, chapter, Dr. Neil Voss,
-  and date. I do not want taglines. Genetics chapters follow the Biology Problems sequence;
-  Lecture 05 is Chapter 5.
-- Give the title slide's rounded rectangle no fill and place it below the text boxes so I can
-  select and copy the text.
 - Apply the supplied plain-language advice to science teaching: use simpler words when they
   preserve the meaning, and keep technical terms when they add precision.
 - Define jargon new to the lecture sequence in the first few slides of the deck. Check prior
@@ -198,6 +207,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Conversion review
 
+- On the quiz/exam dates slide, show past assessments in light gray, future assessments in
+  black, and next week's assessments in darkish red. Lecture 07 has no quiz next week.
+- Include the latest Stump the Vibe Coder podcast episode after the `lect##a-` YouTube slide.
+  Make this a semi-automated process reusable across lectures, with the episode thumbnail,
+  title, and visible link in a `big-image` layout.
+- Use the 2026 announcements as canonical and update them for the current lecture week.
+- Lecture 07 probability of progeny needs careful math formatting. Chi-square is mainly
+  step-by-step table completion. The first conversion contained more images than expected.
 - Add variety to two-panel image/text slides: sometimes image left/text right, other times
   text left/image right. Alternate when they are back-to-back.
 - Biotechnology Lecture 05 builds on Lecture 04, with different slides shown or hidden.

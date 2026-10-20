@@ -119,7 +119,9 @@ and a slot directive are short, whole lines.
 ## Slides needing replacement
 
 Put an exact, unindented `@replaceme` line after the layout directive, before headings, notes,
-or named slots, when a slide needs human review or replacement. It works with every layout.
+or named slots, when the existing slide cannot be faithfully represented in Djot. It works with
+every layout. The converting agent makes this decision; the marker is not a request for human
+judgment or a flag for routine content updates.
 
 ```djot
 === layout: one-panel

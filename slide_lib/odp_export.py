@@ -234,6 +234,7 @@ def _frame_attributes(item: slide_lib.layout_model.LayoutObject,
 	attributes = {
 		_qname(DRAW_NS, "name"): item.object_id,
 		_qname(DRAW_NS, "layer"): item.layer.value,
+		_qname(DRAW_NS, "z-index"): str(item.z_index),
 		_qname(SVG_NS, "x"): _cm_x(rectangle.x, deck, theme),
 		_qname(SVG_NS, "y"): _cm_y(rectangle.y, deck, theme),
 		_qname(SVG_NS, "width"): _cm_x(rectangle.width, deck, theme),

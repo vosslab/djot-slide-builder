@@ -1,0 +1,849 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 07D
+
+## Chi-Square Method (&chi;^2^)
+
+## Chapter 7
+
+## Dr. Neil Voss
+
+## October 20, 2026
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Calculate expected counts and a chi-square statistic.
+- Use degrees of freedom and a critical value or p-value.
+- Explain reject versus fail to reject in a genetics example.
+
+=== layout: one-panel
+
+# *Chi-Square (&chi;^2^) Test*
+
+@body
+
+- Compares observed and expected data sets.
+  - Expected data set was predicted by the null hypothesis
+  - Measures the difference between observed and expected data.
+- Evaluates the "_goodness of fit_" between observed and expected.
+- If the difference is too large to be random, there's statistically significant evidence [*_against_*]{color=red} [the hypothesis]{color=red}.
+
+=== layout: one-panel
+
+# Chi-square terminology
+
+@body
+
+- [*Null hypothesis (H~0~)*]{underline=true}: the model that supplies expected counts
+- [*Alternative hypothesis*]{underline=true}: the counts do not fit that model
+- [*Significance level (&alpha;)*]{underline=true}: decision threshold chosen in advance
+- [*p-value*]{underline=true}: under H~0~, probability of a chi-square statistic at least as large as observed
+- [*Degrees of freedom*]{underline=true}: categories minus one when no parameters are estimated
+- [*Critical value*]{underline=true}: cutoff determined by df and &alpha;
+
+=== layout: one-panel
+
+# Reject or fail to reject?
+
+@body
+
+- Choose &alpha; before testing, usually 0.05.
+- *p &le; &alpha;*: reject H~0~.
+- *p > &alpha;*: fail to reject H~0~.
+- Equivalently, reject when &chi;^2^ is at or above the critical value.
+- Failure to reject does not prove H~0~ is true.
+
+Example: 21.4 > 7.82 at df = 3 and &alpha; = 0.05: reject H~0~.
+
+=== layout: one-panel
+
+# Seven steps of the chi-square test
+
+@body
+
+1. State H~0~ and the expected ratio.
+2. Calculate expected counts.
+3. For each category, calculate (O-E)^2^ / E.
+4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
+5. Determine degrees of freedom.
+6. Find the p-value or critical value.
+7. Compare with &alpha; and state the conclusion.
+
+=== layout: one-panel
+
+# H~0~: 9:3:3:1; total = 160
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | ? | 91 |  |  |  |
+| aaB- | ? | 29 |  |  |  |
+| A-bb | ? | 31 |  |  |  |
+| aabb | ? | 9 |  |  |  |
+| Total |  | 160 | | | |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# H~0~: 9:3:3:1; total = 160
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 |  |  |  |
+| aaB- | 30 | 29 |  |  |  |
+| A-bb | 30 | 31 |  |  |  |
+| aabb | 10 | 9 |  |  |  |
+| Total | 160 | 160 | | | |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# H~0~: 9:3:3:1; total = 160
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 |  |  |
+| aaB- | 30 | 29 | -1 |  |  |
+| A-bb | 30 | 31 | 1 |  |  |
+| aabb | 10 | 9 | -1 |  |  |
+| Total | 160 | 160 | | | |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# H~0~: 9:3:3:1; total = 160
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 | 1 |  |
+| aaB- | 30 | 29 | -1 | 1 |  |
+| A-bb | 30 | 31 | 1 | 1 |  |
+| aabb | 10 | 9 | -1 | 1 |  |
+| Total | 160 | 160 | | | |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# H~0~: 9:3:3:1; total = 160
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 | 1 | 1/90 |
+| aaB- | 30 | 29 | -1 | 1 | 1/30 |
+| A-bb | 30 | 31 | 1 | 1 | 1/30 |
+| aabb | 10 | 9 | -1 | 1 | 1/10 |
+| Total | 160 | 160 | | | |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# H~0~: 9:3:3:1; total = 160
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 | 1 | 0.011 |
+| aaB- | 30 | 29 | -1 | 1 | 0.033 |
+| A-bb | 30 | 31 | 1 | 1 | 0.033 |
+| aabb | 10 | 9 | -1 | 1 | 0.100 |
+| Total | 160 | 160 | | | |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# Sum the contributions: &chi;^2^ = 0.178
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 | 1 | 0.011 |
+| aaB- | 30 | 29 | -1 | 1 | 0.033 |
+| A-bb | 30 | 31 | 1 | 1 | 0.033 |
+| aabb | 10 | 9 | -1 | 1 | 0.100 |
+| Total | 160 | 160 | 0 | | *0.178* |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# Four categories: df = 4 - 1 = 3
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 | 1 | 0.011 |
+| aaB- | 30 | 29 | -1 | 1 | 0.033 |
+| A-bb | 30 | 31 | 1 | 1 | 0.033 |
+| aabb | 10 | 9 | -1 | 1 | 0.100 |
+| Total | 160 | 160 | 0 | | *0.178* |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# Interpret the p-value
+
+@body
+
+- A chi-square statistic needs its degrees of freedom.
+- The p-value is a right-tail probability under H~0~.
+- Small p: this much disagreement, or more, is unusual under H~0~.
+- Large p: insufficient evidence to reject H~0~.
+- p is not the probability that H~0~ is true.
+
+Here: &chi;^2^ &asymp; 0.178, df = 3, p &asymp; 0.981.
+
+=== layout: one-panel
+
+# df = 3: locate the critical value
+
+@body
+
+| Right-tail p | 0.10 | 0.05 | 0.01 |
+| --- | --- | --- | --- |
+| Critical chi-square | 6.251 | 7.815 | 11.345 |
+
+@notes
+
+At alpha = 0.05, the critical value is 7.815 (about 7.82).
+
+=== layout: one-panel
+
+# Compare with the critical value
+
+@body
+
+- df = 3; &alpha; = 0.05
+- Critical value &asymp; 7.82
+
+*&chi;^2^ = 0.178 < 7.82: fail to reject H~0~.*
+
+The counts do not provide sufficient evidence against the proposed ratio.
+
+=== layout: one-panel
+@replaceme
+
+# Why use a table?
+
+@body
+
+- The exact p-value comes from a tail area, not simple arithmetic.
+- For statistic x and df = k, integrate t^(k/2 - 1)^ e^(-t)^:
+  - numerator: from x/2 to infinity
+  - denominator: from 0 to infinity
+- Divide numerator by denominator.
+
+Use the chi-square table or software for the calculation.
+
+@notes
+
+The source stacked integral equation cannot be faithfully represented by the native Djot math subset. The explanatory draft remains editable underneath. Original StarMath:
+F( %chi^2 , k ) ~=~
+{`int from{%chi^2 / 2} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
+over
+{`int from{0} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
+
+
+=== layout: one-panel
+@replaceme
+
+# The exact tail probability
+
+@body
+
+- x = 0.178; k = 3
+- Lower limit in numerator: x/2 = 0.089
+- Numerator &asymp; 0.869442
+- Denominator &asymp; 0.886227
+
+*p &asymp; 0.98106 > 0.05: fail to reject H~0~.*
+
+
+@notes
+
+The source stacked integral equation cannot be faithfully represented by the native Djot math subset. The explanatory draft remains editable underneath. Original StarMath:
+F( %chi^2 , k ) ~=~
+{`int from{%chi^2 / 2} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
+over
+{`int from{0} to{infinity} x^{ {k over 2}`-1 } e^-x dx`}
+~=~
+{`int from{0.178 / 2} to{infinity} x^{ {3 over 2}`-1 } e^-x dx`}
+over
+{`int from{0} to{infinity} x^{ {3 over 2}`-1 } e^-x dx`}
+
+newline
+
+~=~
+{`0.869442`} over {`0.886227`} ~=~ 0.98106 ~>~ 0.05
+
+=== layout: one-panel
+
+# *Tables are not so bad.*
+
+@body
+
+![Slide image 2](assets/lect07d-chi_square/image_002.png)
+
+=== layout: one-panel
+
+# Chi-square critical values
+
+@body
+
+| df | p = 0.10 | p = 0.05 | p = 0.01 |
+| --- | --- | --- | --- |
+| 1 | 2.706 | 3.841 | 6.635 |
+| 2 | 4.605 | 5.991 | 9.210 |
+| 3 | 6.251 | 7.815 | 11.345 |
+| 4 | 7.779 | 9.488 | 13.277 |
+
+@notes
+
+Read across the df row. A statistic at or above the alpha = 0.05 column rejects H0 at that level.
+
+=== layout: one-panel
+
+# Seven steps of the chi-square test
+
+@body
+
+1. State H~0~ and the expected ratio.
+2. Calculate expected counts.
+3. For each category, calculate (O-E)^2^ / E.
+4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
+5. Determine degrees of freedom.
+6. Find the p-value or critical value.
+7. Compare with &alpha; and state the conclusion.
+
+=== layout: one-panel
+
+# Fruit fly problem
+
+@body
+
+- Cross flies heterozygous at st and bw.
+- Both recessive alleles affect eye color; the double recessive is white.
+- Among 240 offspring: 150 wild type, 36 scarlet, 46 brown, 8 white.
+
+*Do these counts fit independent assortment (9:3:3:1)?*
+
+=== layout: one-panel
+
+# Predict the expected counts
+
+@body
+
+| Phenotype | Observed | Expected |
+| --- | --- | --- |
+| Wild type | 150 | 135 |
+| Scarlet | 36 | 45 |
+| Brown | 46 | 45 |
+| White | 8 | 15 |
+
+=== layout: one-panel
+
+# Calculate the contributions
+
+@body
+
+| Phenotype | O | E | (O-E)^2^/E |
+| --- | --- | --- | --- |
+| Wild type | 150 | 135 | 1.667 |
+| Scarlet | 36 | 45 | 1.800 |
+| Brown | 46 | 45 | 0.022 |
+| White | 8 | 15 | 3.267 |
+
+=== layout: one-panel
+
+# Sum and determine df
+
+@body
+
+- &chi;^2^ = 225/135 + 81/45 + 1/45 + 49/15
+- &chi;^2^ &asymp; 6.76
+- Four categories; no parameters estimated
+
+*df = 4 - 1 = 3*
+
+=== layout: one-panel
+
+# What does the fly result mean?
+
+@body
+
+- &chi;^2^ = 6.76; df = 3
+- Use the right-tail probability table.
+
+*Is p above or below 0.05?*
+
+Does this provide evidence against independent assortment?
+
+=== layout: one-panel
+
+# Compare with the critical value
+
+@body
+
+- df = 3; &alpha; = 0.05
+- Critical value &asymp; 7.82
+
+*&chi;^2^ = 6.76 < 7.82: fail to reject H~0~.*
+
+The counts do not provide sufficient evidence against the proposed ratio.
+
+=== layout: one-panel
+
+# Fruit fly conclusion
+
+@body
+
+- &chi;^2^ &asymp; 6.76; df = 3; p &asymp; 0.08
+- p > 0.05: fail to reject independent assortment.
+
+The data are compatible with 9:3:3:1, but do not prove the model.
+
+=== layout: one-panel
+
+# Which way does p move?
+
+@body
+
+*With df fixed, would a larger &chi;^2^ increase or decrease p?*
+
+=> appear
+A larger statistic leaves less area to its right, so *p decreases*.
+
+=== layout: section
+
+# Chi-Square (&chi;^2^) Test of Mendel's Data Group Exercise
+
+=== layout: one-panel
+
+# Seven steps of the chi-square test
+
+@body
+
+1. State H~0~ and the expected ratio.
+2. Calculate expected counts.
+3. For each category, calculate (O-E)^2^ / E.
+4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
+5. Determine degrees of freedom.
+6. Find the p-value or critical value.
+7. Compare with &alpha; and state the conclusion.
+
+=== layout: one-panel
+
+# Mendel exercise: choose a trait
+
+@body
+
+| Trait | Dominant | Recessive |
+| --- | --- | --- |
+| Flower color | 705 | 224 |
+| Seed color | 6022 | 2001 |
+| Seed shape | 5474 | 1850 |
+| Pod shape | 882 | 299 |
+| Pod color | 428 | 152 |
+| Flower position | 651 | 207 |
+| Stem length | 787 | 277 |
+
+@notes
+
+Work in quiz groups. Test H0: 3:1 at alpha = 0.05; use the worksheet and chi-square table.
+
+=== layout: one-panel
+
+# Mendel group activity
+
+@body
+
+- Work in your quiz group.
+- Choose one trait from the Mendel data table.
+- Complete the worksheet on the next slide.
+- Test the 3:1 hypothesis at alpha = 0.05.
+- Compare your result with the worked answers.
+
+@notes
+
+Historical Fall 2024 online activity: https://docs.google.com/presentation/d/1ojhLbKVIjVycAqpLN4n0yw6u2pvR4E5zWZmSxyg8lJU/edit
+The included worksheet provides the current self-contained activity.
+
+=== layout: one-panel
+hidden: true
+
+# *Google Slides Activity*
+
+@body
+
+- Get into Break Out Room and process your set
+- [https\://docs.google.com/presentation/d/1Pj53N-RnC87bfHwocD2H-Py8keWcFShHkSCj-5CZ-yQ/edit](https://docs.google.com/presentation/d/1Pj53N-RnC87bfHwocD2H-Py8keWcFShHkSCj-5CZ-yQ/edit)
+- Fall 2023, Take 2
+
+=== layout: one-panel
+hidden: true
+
+# *Google Slides Activity*
+
+@body
+
+- Get into Break Out Room and process your set
+- [https\://docs.google.com/presentation/d/1fBh\_3w7iiGMrAMcxhT98G23TTJmScYSQausAOO1dkpw/edit](https://docs.google.com/presentation/d/1fBh_3w7iiGMrAMcxhT98G23TTJmScYSQausAOO1dkpw/edit)
+- Fall 2023
+
+=== layout: one-panel
+hidden: true
+
+# *Google Slides Activity*
+
+@body
+
+- Get into Break Out Room and process your set
+- [https\://docs.google.com/presentation/d/1MAk7iS6ghYjOk4e4IbwudS7sMmzl7e7yFuzSRfrP5Go/edit](https://docs.google.com/presentation/d/1MAk7iS6ghYjOk4e4IbwudS7sMmzl7e7yFuzSRfrP5Go/edit)
+- Fall 2022
+
+=== layout: one-panel
+
+# Chi-square worksheet
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant |  |  |  |  |
+| Recessive |  |  |  |  |
+
+@notes
+
+Choose one Mendel trait. H0: 3:1. Compute df, sum contributions, and state a conclusion.
+
+=== layout: one-panel
+
+# Chi-square critical values
+
+@body
+
+| df | p = 0.10 | p = 0.05 | p = 0.01 |
+| --- | --- | --- | --- |
+| 1 | 2.706 | 3.841 | 6.635 |
+| 2 | 4.605 | 5.991 | 9.210 |
+| 3 | 6.251 | 7.815 | 11.345 |
+| 4 | 7.779 | 9.488 | 13.277 |
+
+@notes
+
+Read across the df row. A statistic at or above the alpha = 0.05 column rejects H0 at that level.
+
+=== layout: section
+
+# Mendel Chi-Square Test Answers
+
+=== layout: one-panel
+
+# Flower color: &chi;^2^ = 0.391; p = 0.532
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 705 | 696.75 | 8.25 | 0.0977 |
+| Recessive | 224 | 232.25 | -8.25 | 0.2931 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: one-panel
+
+# Seed color: &chi;^2^ = 0.015; p = 0.903
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 6022 | 6017.25 | 4.75 | 0.0037 |
+| Recessive | 2001 | 2005.75 | -4.75 | 0.0112 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: one-panel
+
+# Seed shape: &chi;^2^ = 0.263; p = 0.608
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 5474 | 5493 | -19 | 0.0657 |
+| Recessive | 1850 | 1831 | 19 | 0.1972 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: one-panel
+
+# Pod shape: &chi;^2^ = 0.064; p = 0.801
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 882 | 885.75 | -3.75 | 0.0159 |
+| Recessive | 299 | 295.25 | 3.75 | 0.0476 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: one-panel
+
+# Pod color: &chi;^2^ = 0.451; p = 0.502
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 428 | 435 | -7 | 0.1126 |
+| Recessive | 152 | 145 | 7 | 0.3379 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: one-panel
+
+# Flower position: &chi;^2^ = 0.350; p = 0.554
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 651 | 643.5 | 7.5 | 0.0874 |
+| Recessive | 207 | 214.5 | -7.5 | 0.2622 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: one-panel
+
+# Stem length: &chi;^2^ = 0.607; p = 0.436
+
+@body
+
+| Phenotype | O | E | O-E | (O-E)^2^/E |
+| --- | --- | --- | --- | --- |
+| Dominant | 787 | 798 | -11 | 0.1516 |
+| Recessive | 277 | 266 | 11 | 0.4549 |
+
+@notes
+
+H0: 3:1. df = 1. Fail to reject at alpha = 0.05. Expected counts are not rounded before calculating; this repairs the legacy worksheet rounding.
+
+=== layout: section
+
+# Are Mendel's numbers too good to be true? Did Mendel cheat?
+
+=== layout: one-panel
+
+# Are Mendel's results unusually close?
+
+@body
+
+- Many observed ratios are very close to 3:1.
+- Our chi-square statistics range from about 0.015 to 0.607.
+- A large p-value for one experiment is not suspicious by itself.
+
+*Across many experiments, are there fewer large deviations than expected?*
+
+@notes
+
+Paraphrases the source textbook discussion. The next graph compares 69 experiments.
+
+=== layout: big-image
+
+@image
+
+![Observed and expected deviations in Mendel's experiments](assets/lect07d-chi_square/image_020.png)
+
+@caption
+
+69 experiments: fewer large deviations than expected.
+
+@notes
+
+Source caption suggests that some experiments with large deviations may have been discarded or repeated. This is a historical interpretation, not proof of deliberate falsification.
+
+=== layout: one-panel
+
+# Bias does not require deliberate fraud
+
+@body
+
+- Mendel was an early pioneer of counting segregating traits.
+- Rechecking only surprising results can systematically improve apparent agreement.
+- Selective repetition or exclusion can affect the distribution of deviations.
+
+*A statistical pattern alone does not establish deliberate falsification.*
+
+@notes
+
+Paraphrases the source's historical commentary; the original passage remains in the legacy ODP/PDF.
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# *Chi-Square (&chi;^2^) Test*
+
+@body
+
+- Compares observed and expected data sets.
+  - Expected data set was predicted by the null hypothesis
+  - Measures the difference between observed and expected data.
+- Evaluates the "_goodness of fit_" between observed and expected.
+- If the difference is too large to be random, there's statistically significant evidence [*_against_*]{color=red} [the hypothesis]{color=red}.
+
+=== layout: one-panel
+
+# Chi-square terminology
+
+@body
+
+- [*Null hypothesis (H~0~)*]{underline=true}: the model that supplies expected counts
+- [*Alternative hypothesis*]{underline=true}: the counts do not fit that model
+- [*Significance level (&alpha;)*]{underline=true}: decision threshold chosen in advance
+- [*p-value*]{underline=true}: under H~0~, probability of a chi-square statistic at least as large as observed
+- [*Degrees of freedom*]{underline=true}: categories minus one when no parameters are estimated
+- [*Critical value*]{underline=true}: cutoff determined by df and &alpha;
+
+=== layout: one-panel
+
+# Reject or fail to reject?
+
+@body
+
+- Choose &alpha; before testing, usually 0.05.
+- *p &le; &alpha;*: reject H~0~.
+- *p > &alpha;*: fail to reject H~0~.
+- Equivalently, reject when &chi;^2^ is at or above the critical value.
+- Failure to reject does not prove H~0~ is true.
+
+Example: 21.4 > 7.82 at df = 3 and &alpha; = 0.05: reject H~0~.
+
+=== layout: one-panel
+
+# Seven steps of the chi-square test
+
+@body
+
+1. State H~0~ and the expected ratio.
+2. Calculate expected counts.
+3. For each category, calculate (O-E)^2^ / E.
+4. Sum: &chi;^2^ = &Sigma; (O-E)^2^ / E.
+5. Determine degrees of freedom.
+6. Find the p-value or critical value.
+7. Compare with &alpha; and state the conclusion.
+
+=== layout: one-panel
+
+# Chi-square critical values
+
+@body
+
+| df | p = 0.10 | p = 0.05 | p = 0.01 |
+| --- | --- | --- | --- |
+| 1 | 2.706 | 3.841 | 6.635 |
+| 2 | 4.605 | 5.991 | 9.210 |
+| 3 | 6.251 | 7.815 | 11.345 |
+| 4 | 7.779 | 9.488 | 13.277 |
+
+@notes
+
+Read across the df row. A statistic at or above the alpha = 0.05 column rejects H0 at that level.
+
+=== layout: one-panel
+
+# Four categories: df = 4 - 1 = 3
+
+@body
+
+{table-group="dihybrid-chi"}
+| Class | E | O | O-E | (O-E)^2^ | (O-E)^2^/E |
+| --- | --- | --- | --- | --- | --- |
+| A-B- | 90 | 91 | 1 | 1 | 0.011 |
+| aaB- | 30 | 29 | -1 | 1 | 0.033 |
+| A-bb | 30 | 31 | 1 | 1 | 0.033 |
+| aabb | 10 | 9 | -1 | 1 | 0.100 |
+| Total | 160 | 160 | 0 | | *0.178* |
+
+@notes
+
+Use unrounded contributions: 1/90 + 1/30 + 1/30 + 1/10 = 0.177777...
+
+=== layout: one-panel
+
+# Key ideas to keep
+
+@body
+
+- H~0~ supplies expected counts; keep them unrounded.
+- &chi;^2^ = &Sigma; (O-E)^2^ / E
+- df = categories - 1 when no parameters are fitted
+- Small p supports rejection; large p does not prove H~0~.
+
+=== layout: theend
+
+# THE END

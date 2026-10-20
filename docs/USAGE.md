@@ -20,6 +20,38 @@ must match; replaced artwork and transformed frames are marked for manual review
 not trim images, modify slides, or select layouts. See
 [image_area_regression_followup.md](active_plans/image_area_regression_followup.md) for limitations.
 
+## Refresh the podcast announcement
+
+Preview the latest published Stump the Vibe Coder episode in a lecture's announcement deck:
+
+```bash
+source source_me.sh && python3 refresh_podcast.py genetics/LECT07
+```
+
+Save it after reviewing the diff:
+
+```bash
+source source_me.sh && python3 refresh_podcast.py genetics/LECT07 --write
+```
+
+Supply multiple lecture folders or specific `lect##a-*.djot` files to refresh several decks
+in one run. Folder selection includes all matching announcement files beneath that folder;
+use explicit filenames when it contains historical variants.
+
+The helper reads the playlist's public YouTube Atom feed and chooses the newest publication
+date among its recent entries. YouTube limits this feed to recent entries; it is not a complete
+playlist archive. No API key or video download is needed. It downloads the full-size episode
+thumbnail when available, otherwise the standard thumbnail, to `assets/stump_the_vibe_coder/`
+beside each source. The `big-image` slide has the full episode title and visible clickable URL.
+
+The slide goes immediately after the unique slide mentioning YouTube. Its `@notes` marker
+identifies it for replacement on future runs; retain that marker when editing. Missing or
+ambiguous insertion points stop the command before source writes. A refresh replaces the
+previous podcast slide rather than adding another. Old thumbnail files are retained.
+
+Build the selected decks normally afterward. Builds use saved local assets and never refresh
+the episode automatically, so a past lecture retains the episode selected for it.
+
 ## Build native decks
 
 Write editable ODP for one source deck:
@@ -72,9 +104,11 @@ Use `@notes` for instructor reminders. Notes end at the next named slot or slide
 become editable ODP speaker notes; the normal PDF export omits them. See
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes) for an example.
 
-Use `@replaceme` before slide content to mark material needing human review. It adds a large red
+Use `@replaceme` when an existing slide cannot be faithfully represented in Djot. It adds a large red
 **REPLACE ME** watermark in ODP and PDF while retaining the editable slide underneath. New imports
-add it wherever the import report records review reasons. Remove the line after fixing the slide.
+add it wherever the import report records review reasons. Evaluate those findings during conversion:
+keep it for representation failures and remove it after a faithful repair. It is not a general
+editorial-review flag.
 See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#slides-needing-replacement).
 
 The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that

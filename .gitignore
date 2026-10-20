@@ -41,3 +41,4 @@ slide_*source.png
 # Licensed layout-measurement assets are source inputs, not generated OpenType output.
 !assets/fonts/**/*.otf
 !assets/fonts/**/*.ttf
+import_report.json

@@ -208,12 +208,20 @@ def admit_package(input_path: pathlib.Path, expected_suffix: str,
 		missing_manifest_targets = manifest_targets - member_names
 		if missing_manifest_targets:
 			raise ValueError("OpenDocument manifest references missing members")
+		# ASVS 2.2.1, 5.3.2: embedded documents name manifest-declared directories,
+		# not ZIP file entries. Require their actual, validated content member.
+		document_targets = {
+			entry.get(MANIFEST_FULL_PATH)[:-1]
+			for entry in manifest_root.findall(f".//{MANIFEST_FILE_ENTRY}")
+			if entry.get(MANIFEST_FULL_PATH, "").endswith("/")
+			and entry.get(MANIFEST_FULL_PATH) + "content.xml" in manifest_targets
+		}
 		for xml_name, root in (("content.xml", content_root), ("styles.xml", styles_root)):
 			references = xml_reference_targets_from_root(xml_name, root)
-			missing_references = references - member_names
+			missing_references = references - member_names - document_targets
 			if missing_references:
 				raise ValueError("OpenDocument XML reference points to a missing member")
-			missing_manifest_references = references - manifest_targets
+			missing_manifest_references = references - manifest_targets - document_targets
 			if missing_manifest_references:
 				raise ValueError("OpenDocument XML reference misses a manifest target")
 	return AdmittedOdfPackage(

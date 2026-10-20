@@ -7,6 +7,25 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+### Explicit native stacking order
+
+Export each object's compiled stacking order as `draw:z-index` as well as ordering XML siblings.
+LibreOffice presentation placeholders must retain their intended position above cover decorations;
+sibling order alone does not explicitly encode that relationship for the consumer.
+
+### Embedded ODF document references
+
+**Decision.** Accept a reference to an embedded-document directory when the manifest declares
+that directory and its `content.xml`, and the content member exists in the validated archive.
+
+**Why.** Native LibreOffice formula objects use directory references without an explicit ZIP
+directory entry. Treating them as ordinary file references prevented Lecture 07 import.
+
+**Consequence.** Existing path, XML, archive, and missing-file checks remain in force.
+Formula interpretation remains an importer or authoring responsibility.
+
+**Owner.** [odf_package.py](../slide_lib/odf_package.py).
+
 ### Includes between slides
 
 **Decision.** Support `=== include: chapter.djot` blocks with optional `hidden: true`.
@@ -498,6 +517,23 @@ the desktop GUI and does not require it to close. No AppleScript, private `UserI
 `Popen`, process killing, or conversion timeout policy belongs in the build path.
 
 **Owner.** `slide_lib/libreoffice.py` and `slide_lib/native_export.py`.
+
+### Explicit podcast announcement refresh
+
+**Decision.** `refresh_podcast.py` reads the public playlist Atom feed on demand, selects the
+newest publication date in its recent entries, and inserts or replaces one marked `big-image`
+slide after the selected deck's unique YouTube channel slide. Preview is the default; `--write`
+saves the editable caption and local thumbnail.
+
+**Why.** One reusable command supports multiple lectures while keeping ordinary builds
+reproducible and old lectures tied to the episode originally selected.
+
+**Consequence.** No API credentials or build-time network lookup are needed. The feed is a
+recent-entry view, not a complete playlist history. Preserve the managed marker in speaker notes;
+missing or ambiguous anchors require a source edit. Full-size thumbnails fall back to standard
+thumbnails only when YouTube returns HTTP 404.
+
+**Owner.** `refresh_podcast.py` and `docs/USAGE.md`.
 
 ## Related decision records
 
