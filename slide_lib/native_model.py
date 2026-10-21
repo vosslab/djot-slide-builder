@@ -286,6 +286,7 @@ class Slide:
 	cells: tuple[Cell, ...]
 	hidden: bool = False
 	replaceme: bool = False
+	citation: tuple[Paragraph, ...] = ()
 
 
 @dataclass(frozen=True)

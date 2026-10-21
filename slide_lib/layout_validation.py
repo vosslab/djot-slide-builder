@@ -307,6 +307,7 @@ def validate_flow_region(blocks: tuple[slide_lib.native_model.Block, ...],
 #============================================
 def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -> None:
 	"""Prove every supported source block has a native destination in ``spec``."""
+	validate_citation(source)
 	source = slide_lib.math_render.lower_display_math(source)
 	slide_lib.math_render.validate_equation_blocks(
 		source.blocks + tuple(block for cell in source.cells for block in cell.blocks))
@@ -470,3 +471,23 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 	if len(body_images) > 6:
 		raise source_error(body_images[6].location,
 			f"{spec.name} slides support at most six contained component images")
+
+
+def citation_has_math(inlines: tuple[slide_lib.native_model.Inline, ...]) -> bool:
+	"""Keep footer citations native text rather than equation images."""
+	for inline in inlines:
+		if isinstance(inline, slide_lib.native_model.InlineMath):
+			return True
+		if hasattr(inline, "children") and citation_has_math(inline.children):
+			return True
+	return False
+
+
+def validate_citation(source: slide_lib.native_model.Slide) -> None:
+	"""Share the citation text contract between lint and native compilation."""
+	for block in source.citation:
+		if not isinstance(block, slide_lib.native_model.Paragraph) or block.reveal is not None:
+			raise source_error(block.location, "@citation supports plain or formatted text paragraphs and links, without reveals")
+		validate_text_attributes(block, source.layout_class)
+		if citation_has_math(block.inlines):
+			raise source_error(block.location, "@citation uses native text; write mathematical names with native sub/superscripts")

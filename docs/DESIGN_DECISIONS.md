@@ -642,3 +642,24 @@ assignment dates, and graduate/group milestones. Keep tutorial cutoff times unsp
 **Why.** The generated syllabus site still has the earlier generic schedule. The new source
 provides the actual alternating in-person/asynchronous plan. Biostats has no exams.
 Shared Discord and office-hours URLs remain in ignored course-link configuration.
+
+### Tutorial art and citation footer
+
+**Decision.** Use original schematic SVGs with flat fills, consistent outlines, and live labels
+for the eight biostats tutorial reminders. Hospitals identify Fried Foods; soil-sample containers
+identify Microbes. Comparison marks communicate means or variability without plotting results.
+SVG assets remain canonical beside the Djot deck and are embedded as vector images in ODP.
+
+**Layout.** The layout-independent `@citation` region uses the bottom margin without
+resizing normal content slots. Citation text starts at 14 pt in the condensed font, with
+the standard 2 pt reduction for visible URLs. Citations remain editable and clickable in
+ODP/PDF. Dark surfaces receive a white footer backing; the reference-only label moves
+slightly upward when a citation is present. The tutorial sources use ordinary `two-panels`.
+
+**Drawing references.** The SVG creator skill's local-only corpus supplied Robertson,
+*How to Draw*, "Drawing boxes in perspective" (construction and line hierarchy), and
+*Mastering SVG*, "viewBox and viewport in SVG" (stable coordinate system and scaling).
+Source paths under the skill's `references/local-only/` are
+`object_construction/How_to_Draw_Drawing_and_Sketching_Objects_and_Environments_from_Your_Imagination-2013.md`
+and `svg_authoring/Mastering_SVG-2018.md`. Front elevations and simplified containers serve
+as illustrative memory cues, not drawings of actual buildings or measured specimens.

@@ -406,7 +406,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 		match = slide_lib.djot_grammar.SLOT_DIRECTIVE_PATTERN.fullmatch(source_line.value)
 		if match is not None:
 			slot_name = match.group("slot")
-			if slot_name not in slide_lib.djot_grammar.legal_slot_names(source.layout_name):
+			if slot_name != "citation" and slot_name not in slide_lib.djot_grammar.legal_slot_names(source.layout_name):
 				fail(path, source_line.line, f"{source.layout_name} slides do not declare slot: {slot_name}")
 			if slot_name in regions:
 				fail(path, source_line.line, f"{source.layout_name} slides contain duplicate slot: {slot_name}")
@@ -414,13 +414,19 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 			active_slot = slot_name
 			continue
 		near_slot = re.fullmatch(r"@(?P<slot>[a-z][a-z0-9-]*)(?P<suffix>.*)", source_line.value)
-		if (near_slot is not None and near_slot.group("slot") in layout.slot_names and
+		if (near_slot is not None and near_slot.group("slot") in (*layout.slot_names, "citation") and
 				near_slot.group("suffix")):
 			fail(path, source_line.line, "slot directives must be exact whole lines")
 		if active_slot is None:
 			global_lines.append(source_line)
 		else:
 			regions[active_slot].append(source_line)
+	citation_lines = regions.pop("citation", None)
+	citation = ()
+	if citation_lines is not None:
+		citation = parse_region(path, tuple(citation_lines), source.layout_name, "citation")
+		if not citation:
+			fail(path, source.location.line, "@citation requires citation text or a URL")
 	global_blocks = parse_region(path, tuple(global_lines), source.layout_name, None)
 	validate_global_titles(path, layout, global_blocks)
 	cells: list[slide_lib.native_model.Cell] = []
@@ -442,7 +448,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 	notes = tuple(slide_lib.djot_grammar.project_text(line) for line in note_text.split("\n")) \
 		if note_text.strip() else ()
 	slide = slide_lib.native_model.Slide(source.location, source.layout_name, notes, global_blocks,
-		tuple(cells), hidden=hidden, replaceme=replaceme)
+		tuple(cells), hidden=hidden, replaceme=replaceme, citation=citation)
 	return slide
 
 

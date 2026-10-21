@@ -150,6 +150,38 @@ The marker does not fill required slots or bypass source validation, image check
 New ODP imports add `@replaceme` to slides with nonempty `review_reasons`. The adjacent
 `import_report.json` retains the reasons and original source evidence for human review.
 
+## Slide citations
+
+Use one optional `@citation` region on any slide layout. It accepts ordinary text paragraphs,
+inline emphasis, and clickable URLs or links. Keep citations short enough to read at footer size.
+The region ends at the next slot, `@notes`, or slide boundary. It does not replace a layout slot.
+
+```djot
+=== layout: two-panels
+
+# Tutorial overview
+
+@left
+
+- A short memory cue.
+
+@right
+
+A comparison or illustration.
+
+@citation
+
+Author (2026). _Article title._ https://example.org/article
+```
+
+Citations appear as editable condensed text in the bottom margin. Ordinary text starts at 14 pt;
+visible URLs use the normal 2 pt reduction. Normal layout slots retain their full space.
+Longer citations fit the margin by reducing type; capacity reports flag sizes below 12 pt.
+On dark section/closing slides, a white footer strip keeps the citation readable. Reference-only
+slides move their existing reference label slightly upward to keep it separate from the citation.
+Empty or duplicate citations fail validation. Images, tables, lists, equations, and reveals belong
+in the main slide content, not in `@citation`. Citation paragraphs may use native sub/superscripts.
+
 ## Instructor notes
 
 Use one optional `@notes` section on any slide. It continues until the next exact named-slot

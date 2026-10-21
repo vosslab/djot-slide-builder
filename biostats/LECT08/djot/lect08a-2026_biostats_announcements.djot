@@ -250,16 +250,22 @@ Keep assessment positions stable and update status colors relative to each lectu
 
 # Tutorial Overviews
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Fried Foods #1: Z-test
 
-@body
+@left
 
 - Joe's Hospital of Fried Foods and its newborn babies.
 - Joe's claim: babies at his hospital are heavier.
 - The Baby Butter Ball Award is at stake.
 - *The comparison:* Joe's average baby weight vs. the national average.
+
+@right
+
+![Fried Foods 1: schematic test comparison](assets/tutorial_overviews/fried_foods_1.svg)
+
+@citation
 
 https://docs.google.com/document/d/1ZOLIw-JlNA6Mry1w0t5I5Ffgi7RMiBCSr7VtyNgsdt0/edit
 
@@ -269,16 +275,24 @@ Source: https://docs.google.com/document/d/1ZOLIw-JlNA6Mry1w0t5I5Ffgi7RMiBCSr7Vt
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Fried Foods #2: One-Sample t-test
 
-@body
+@right
 
 - Joe wants to keep his shot at the Baby Butter Ball Award.
 - The awards committee questions his original analysis.
 - The same newborn-weight data, revisited with a t-test.
 - *The comparison:* Joe's average baby weight vs. the national average.
+
+@left
+
+![Fried Foods 2: schematic test comparison](assets/tutorial_overviews/fried_foods_2.svg)
+
+@citation
 
 https://docs.google.com/document/d/1lh3EWl4gnyT0dq0rgYzjzC6J1No4zKP2gi5eY3N5uv0/edit
 
@@ -288,16 +302,24 @@ Source: https://docs.google.com/document/d/1lh3EWl4gnyT0dq0rgYzjzC6J1No4zKP2gi5e
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Fried Foods #3: Two-Sample t-test
 
-@body
+@left
 
 - Joe's Hospital of Fried Foods gets a rival.
 - Alex's Green Veggies Health Center enters the competition.
 - Fried-food babies vs. green-veggie babies.
 - *The comparison:* Average newborn weight at the two hospitals.
+
+@right
+
+![Fried Foods 3: schematic test comparison](assets/tutorial_overviews/fried_foods_3.svg)
+
+@citation
 
 https://docs.google.com/document/d/1k5UzUlpu-5wCMyWpop0bFlXBgAWivwTwd020Jgo1EIk/edit
 
@@ -307,16 +329,24 @@ Source: https://docs.google.com/document/d/1k5UzUlpu-5wCMyWpop0bFlXBgAWivwTwd020
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Microbes #1: Z-test
 
-@body
+@right
 
 - Soil microbes in nearby Busse Woods.
 - Concerns about urbanization and biodiversity.
 - Shannon Index values describe microbial diversity.
 - *The comparison:* Average diversity vs. a benchmark for similar ecosystems.
+
+@left
+
+![Microbes 1: schematic test comparison](assets/tutorial_overviews/microbes_1.svg)
+
+@citation
 
 https://docs.google.com/document/d/1mWpCqMxqU0O2G7r1P0JdpMOgKyJie8Qcy4vwvXuBVuk/edit
 
@@ -326,16 +356,24 @@ Source: https://docs.google.com/document/d/1mWpCqMxqU0O2G7r1P0JdpMOgKyJie8Qcy4vw
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Microbes #2: One-Sample t-test
 
-@body
+@left
 
 - Back to the Busse Woods soil samples.
 - An advisor questions the assumptions behind the Z-test.
 - The same diversity data, revisited with a t-test.
 - *The comparison:* Average diversity vs. the ecosystem benchmark.
+
+@right
+
+![Microbes 2: schematic test comparison](assets/tutorial_overviews/microbes_2.svg)
+
+@citation
 
 https://docs.google.com/document/d/1V0dAHscKvN8H_X4AlbDEIaukAsHoKHEKjwz7jdbsR0w/edit
 
@@ -345,16 +383,24 @@ Source: https://docs.google.com/document/d/1V0dAHscKvN8H_X4AlbDEIaukAsHoKHEKjwz7
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Microbes #3: Two-Sample t-test
 
-@body
+@right
 
 - The Busse Woods investigation looks back in time.
 - Older microbial diversity data become available.
 - Two sets of soil samples from different years.
 - *The comparison:* Average diversity in the earlier year vs. the later year.
+
+@left
+
+![Microbes 3: schematic test comparison](assets/tutorial_overviews/microbes_3.svg)
+
+@citation
 
 https://docs.google.com/document/d/1DiSYMwPhs8tmWQMLqQwLGHBssy12o-pYzyUT1qIoXcU/edit
 
@@ -364,16 +410,24 @@ Source: https://docs.google.com/document/d/1DiSYMwPhs8tmWQMLqQwLGHBssy12o-pYzyUT
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Microbes #4: F-test
 
-@body
+@left
 
 - The same two years of Busse Woods data.
 - The newer diversity values appear more alike.
 - Attention shifts to variation across sampling locations.
 - *The comparison:* The spread of diversity values in one year vs. the other.
+
+@right
+
+![Microbes 4: schematic test comparison](assets/tutorial_overviews/microbes_4.svg)
+
+@citation
 
 https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa6c9Mi9o/edit
 
@@ -383,16 +437,24 @@ Source: https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
-=== layout: one-panel
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
 
 # Microbes #5: ANOVA
 
-@body
+@right
 
-- The Busse Woods story expands to several decades.
-- Older student theses provide more diversity data.
-- Several years of samples brought together.
-- *The comparison:* Average diversity across all the years.
+- Busse Woods across several decades.
+- Older student theses add diversity data.
+- Samples from several years brought together.
+- *The comparison:* Average diversity across years.
+
+@left
+
+![Microbes 5: schematic test comparison](assets/tutorial_overviews/microbes_5.svg)
+
+@citation
 
 https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
 
@@ -401,6 +463,8 @@ https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/
 Source: https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
 Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
+
+Illustration: original editable SVG; schematic comparison, not tutorial data or results.
 
 === layout: section
 

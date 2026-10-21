@@ -2,6 +2,7 @@
 
 import dataclasses
 
+import slide_lib.citation_layout
 import slide_lib.compilation_result
 import slide_lib.layout_builders
 import slide_lib.layout_measurement
@@ -30,6 +31,7 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		slide_lib.layout_model.reject_unsupported_source_facts(
 			slide_lib.layout_measurement.unsupported_facts(source))
 		page = slide_lib.layout_builders.compile_slide(deck, source, theme, index, session)
+		page = slide_lib.citation_layout.add_citation(page, source, theme, session)
 		page = dataclasses.replace(page, objects=tuple(
 			slide_lib.math_layout.finalize_object(item, session) for item in page.objects))
 		title = next((slide_lib.layout_measurement.visible_text(block.inlines)

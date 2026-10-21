@@ -363,3 +363,18 @@ def test_explicit_link_target_wins_over_url_label(tmp_path):
 	inline = deck.slides[0].cells[0].blocks[0].inlines[0]
 	assert inline.url == 'https://example.org/full?key=value'
 	assert inline.children == (slide_lib.native_model.Text('https://example.org/short'),)
+
+
+def test_citation_and_notes_are_independent_of_layout_slots(tmp_path: pathlib.Path) -> None:
+	deck = parse_source(tmp_path, "=== layout: section\n\n# Topic\n\n"
+		"@notes\n\nInstructor notes.\n\n@citation\n\nAuthor. _Article._ 2026.\n")
+	slide = deck.slides[0]
+	assert slide.notes == ("Instructor notes.",)
+	assert not slide.cells
+	assert slide_lib.djot_parser.visible_text(slide.citation[0].inlines) == "Author. Article. 2026."
+
+
+@pytest.mark.parametrize("citation", ("@citation\n", "@citation\n\nSource\n\n@citation\n\nAgain", "@citation bad\n\nSource"))
+def test_invalid_citation_directives_fail_with_source_location(tmp_path: pathlib.Path, citation: str) -> None:
+	with pytest.raises(ValueError, match="deck.djot:.*citation|deck.djot:.*slot directives"):
+		parse_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n" + citation)

@@ -45,3 +45,6 @@ slide_*source.png
 import_report.json
 
 /_temp/
+
+# Editable original tutorial illustrations are source assets.
+!biostats/LECT08/djot/assets/tutorial_overviews/*.svg

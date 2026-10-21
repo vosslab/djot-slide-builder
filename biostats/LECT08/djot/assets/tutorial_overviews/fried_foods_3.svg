@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" role="img" aria-labelledby="art-title art-description">
+<title id="art-title">Two hospital sample means</title>
+<desc id="art-description">Schematic tutorial memory aid. Objects and comparison marks are illustrative, not measured data or test results.</desc>
+<g id="joe's-hospital" transform="translate(25 70)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M10 150 V48 H42 V20 H98 V48 H130 V150 Z" fill="#F5F4ED"/>
+<path d="M42 48 H98 M10 150 H130" fill="none"/>
+<path d="M61 28 H79 V38 H89 V56 H79 V66 H61 V56 H51 V38 H61 Z" fill="#AE5927" stroke="none"/>
+<g fill="#AE5927" stroke="none"><rect x="25" y="76" width="20" height="23"/><rect x="95" y="76" width="20" height="23"/><rect x="25" y="111" width="20" height="23"/><rect x="95" y="111" width="20" height="23"/></g>
+<path d="M56 150 V105 H84 V150 M70 105 V150" fill="#DBE7DE"/>
+</g><text x="95" y="250" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">Joe&#x27;s</text><g id="green-veggies-hospital" transform="translate(315 70)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M10 150 V48 H42 V20 H98 V48 H130 V150 Z" fill="#F5F4ED"/>
+<path d="M42 48 H98 M10 150 H130" fill="none"/>
+<path d="M61 28 H79 V38 H89 V56 H79 V66 H61 V56 H51 V38 H61 Z" fill="#28744B" stroke="none"/>
+<g fill="#28744B" stroke="none"><rect x="25" y="76" width="20" height="23"/><rect x="95" y="76" width="20" height="23"/><rect x="25" y="111" width="20" height="23"/><rect x="95" y="111" width="20" height="23"/></g>
+<path d="M56 150 V105 H84 V150 M70 105 V150" fill="#DBE7DE"/>
+</g><text x="385" y="250" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">Green Veggies</text><circle cx="240" cy="178" r="29" fill="#EDF3EB" stroke="#28744B" stroke-width="2"/><text x="240" y="187" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" fill="#28744B">t</text><path d="M52 290 H138" stroke="#AE5927" stroke-width="3"/><circle cx="95" cy="290" r="6" fill="#AE5927"/><path d="M342 290 H428" stroke="#28744B" stroke-width="3"/><circle cx="385" cy="290" r="6" fill="#28744B"/><text x="95" y="329" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="21" fill="#AE5927">Mean</text><text x="385" y="329" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="21" fill="#28744B">Mean</text><text x="240" y="373" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#263D39">Two hospitals</text>
+<text x="240" y="405" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="15" fill="#62716A">Schematic comparison</text>
+</svg>

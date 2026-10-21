@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" role="img" aria-labelledby="art-title art-description">
+<title id="art-title">ANOVA across five sample years</title>
+<desc id="art-description">Schematic tutorial memory aid. Objects and comparison marks are illustrative, not measured data or test results.</desc>
+<text x="240" y="66" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="36" fill="#28744B">ANOVA</text><g id="soil-1994" transform="translate(15 110) scale(0.72)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><text x="51" y="253" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">1994</text><path d="M8 282 H94" stroke="#28744B" stroke-width="3"/><circle cx="51" cy="282" r="6" fill="#28744B"/><g id="soil-2004" transform="translate(109 110) scale(0.72)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><text x="145" y="253" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">2004</text><path d="M102 282 H188" stroke="#28744B" stroke-width="3"/><circle cx="145" cy="282" r="6" fill="#28744B"/><g id="soil-2009" transform="translate(203 110) scale(0.72)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><text x="239" y="253" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">2009</text><path d="M196 282 H282" stroke="#28744B" stroke-width="3"/><circle cx="239" cy="282" r="6" fill="#28744B"/><g id="soil-2014" transform="translate(297 110) scale(0.72)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><text x="333" y="253" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">2014</text><path d="M290 282 H376" stroke="#28744B" stroke-width="3"/><circle cx="333" cy="282" r="6" fill="#28744B"/><g id="soil-2024" transform="translate(391 110) scale(0.72)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><text x="427" y="253" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" fill="#263D39">2024</text><path d="M384 282 H470" stroke="#28744B" stroke-width="3"/><circle cx="427" cy="282" r="6" fill="#28744B"/><path d="M51 303 V321 H427 V303 M239 321 V340" stroke="#7D9085" stroke-width="2" fill="none"/><text x="240" y="374" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="24" fill="#263D39">Compare several means</text>
+<text x="240" y="405" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="15" fill="#62716A">Schematic comparison</text>
+</svg>

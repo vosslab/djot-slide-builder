@@ -514,3 +514,40 @@ def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> Non
 	assert text.frame_text.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE
 	assert text.content.paragraphs[0].properties.horizontal_alignment is \
 		slide_lib.layout_primitives.HorizontalAlignment.START
+
+
+
+def test_citation_preserves_layout_and_keeps_condensed_clickable_text(tmp_path: pathlib.Path) -> None:
+	"""Citation text uses the bottom margin without consuming the existing panel space."""
+	base = "=== layout: two-panels\n\n# Tutorial\n\n@left\n\nStory cue.\n\n@right\n\nComparison.\n"
+	url = "https://example.test/tutorial"
+	plain = compile_source(tmp_path, base).plan.slides[0]
+	cited = compile_source(tmp_path, base + "\n@citation\n\nSmith. _Study title._ 2026. " + url).plan.slides[0]
+	assert cited.slots == plain.slots
+	assert cited.objects[:-1] == plain.objects
+	citation = cited.objects[-1]
+	assert citation.rectangle.y >= max(slot.rectangle.y + slot.rectangle.height for slot in plain.slots)
+	runs = [run for paragraph in citation.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun)]
+	assert all(run.style.font_family == "IBM Plex Sans Condensed" for run in runs)
+	assert any(run.style.italic for run in runs)
+	assert any(run.style.link_url == url for run in runs)
+
+
+@pytest.mark.parametrize("layout", ("section", "subsection", "theend"))
+def test_dark_slide_citation_retains_readable_editable_text(tmp_path: pathlib.Path, layout: str) -> None:
+	title = "THE END" if layout == "theend" else "Topic"
+	result = compile_source(tmp_path, f"=== layout: {layout}\n\n# {title}\n\n"
+		"@citation\n\nAuthor. _Study._ https://example.test/study")
+	objects = result.plan.slides[0].objects
+	assert any(item.object_id == "citation-backing" for item in objects)
+	citation = next(item for item in objects if item.object_id == "citation")
+	assert any(run.style.link_url == "https://example.test/study"
+		for paragraph in citation.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun))
+
+
+@pytest.mark.parametrize("content", ("- A list", "![Image](missing.png)", "$x$"))
+def test_citation_rejects_nonprose_before_export(tmp_path: pathlib.Path, content: str) -> None:
+	with pytest.raises(ValueError, match="@citation"):
+		compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n@citation\n\n" + content)

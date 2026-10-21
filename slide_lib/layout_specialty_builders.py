@@ -73,8 +73,8 @@ def reference_decorations(source: slide_lib.native_model.Slide,
 	paragraph = slide_lib.native_model.Paragraph(source.location,
 		(slide_lib.native_model.Text("For reference - not covered in class."),))
 	label = slide_lib.layout_object_builders.text_object("reference-label", paragraph,
-		slide_lib.layout_primitives.LogicalRectangle(60, 728, 1160, 40),
-		22.0, 22.0, slide_lib.layout_primitives.StyleRole.BODY, _frame_text(), None,
+		slide_lib.layout_primitives.LogicalRectangle(60, 710 if source.citation else 728, 1160, 40),
+		16.0 if source.citation else 22.0, 16.0 if source.citation else 22.0, slide_lib.layout_primitives.StyleRole.BODY, _frame_text(), None,
 		order, slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session)
 	return border, label
 

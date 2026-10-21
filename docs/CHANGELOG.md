@@ -28,6 +28,13 @@
 
 ### Additions and New Features
 
+- Add eight editable schematic SVG illustrations for the Fried Foods and Microbes tutorials,
+  pairing the story imagery with each test comparison. Alternate image/text sides.
+- Add layout-independent `@citation` for small condensed article references and clickable URLs
+  in the bottom margin. Preserve normal layout space; use ordinary two-panel tutorial slides.
+- Verify citation rendering and clickable links across all 19 layouts in ODP/PDF, plus
+  parser/layout regression checks and visual review of the eight illustrated tutorial slides.
+
 - Add a Tutorial Overviews section with eight source-based slides for Fried Foods 1-3
   and Microbes 1-5, including visible clickable Google Docs links. Read current guide exports;
   distinguish benchmark means, two-sample means, variances, and five-group ANOVA.

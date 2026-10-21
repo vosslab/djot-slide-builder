@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" role="img" aria-labelledby="art-title art-description">
+<title id="art-title">Microbes 3: compare means</title>
+<desc id="art-description">Schematic tutorial memory aid. Objects and comparison marks are illustrative, not measured data or test results.</desc>
+<g id="earlier-soil" transform="translate(55 70) scale(1.1)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><g id="later-soil" transform="translate(315 70) scale(1.1)" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M12 20 H88 V133 Q88 153 68 153 H32 Q12 153 12 133 Z" fill="#F4F8F4"/>
+<path d="M15 97 Q35 89 52 97 T85 96 V132 Q85 150 67 150 H33 Q15 150 15 132 Z" fill="#CAB795" stroke="none"/>
+<rect x="6" y="8" width="88" height="21" rx="4" fill="#D7E7DC"/>
+<path d="M19 12 V24 M34 12 V24 M49 12 V24 M64 12 V24 M79 12 V24" stroke="#28744B" stroke-width="2"/>
+<rect x="21" y="45" width="58" height="35" fill="white" stroke="none"/>
+<path d="M33 64 Q45 47 64 56 Q53 73 33 64 M34 65 L59 58" fill="#A5C799" stroke="#28744B" stroke-width="2"/>
+<path d="M28 113 l8 4 M61 105 l7 3 M50 135 l7 -3 M71 125 l-3 4 M28 137 l4 -4" stroke="#7F6849" stroke-width="2"/>
+</g><circle cx="240" cy="178" r="29" fill="#EDF3EB" stroke="#28744B" stroke-width="2"/><text x="240" y="187" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" fill="#28744B">t</text><text x="110" y="275" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="21" fill="#316887">Earlier year</text><text x="370" y="275" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="21" fill="#28744B">Later year</text><path d="M67 315 H153" stroke="#316887" stroke-width="3"/><circle cx="110" cy="315" r="6" fill="#316887"/><path d="M327 315 H413" stroke="#28744B" stroke-width="3"/><circle cx="370" cy="315" r="6" fill="#28744B"/><text x="240" y="367" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="24" fill="#263D39">Compare means</text>
+<text x="240" y="405" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="15" fill="#62716A">Schematic comparison</text>
+</svg>

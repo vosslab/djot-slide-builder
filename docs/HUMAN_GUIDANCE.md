@@ -57,6 +57,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Course links and evergreen announcements
 
+- Support `@citation` on all slide layouts for URLs or article citations in smaller condensed
+  text at the bottom. Normal layouts keep their full space; citations use the bottom margin.
+
 - Use a YouTube slide generator with the existing StVC-style `big-image` layout: thumbnail,
   title, and visible clickable full `https://www.youtube.com/watch?v=...` URL.
   A separate layout type is unnecessary; there is room for the full URL.
