@@ -1,3 +1,57 @@
+## 2026-10-21
+
+### Fixes and Maintenance
+
+- Expand each tutorial recall slide to four short story and comparison cues, retaining
+  guide links without adding discussion questions or calculation instructions.
+
+- Simplify all eight tutorial overview slides to brief scenario and testing summaries with
+  guide links; remove authored questions, numeric details, procedures, and result guidance.
+
+- Tone down the outdoor icebreaker's colors to emphasize prompts; replace the instructor
+  answer with cross country, hiking with his spouse, and looking at Fall leaves.
+
+- Add preferred-palette color to the biostats outdoor icebreaker prompts and examples;
+  record the general preference for more colorful icebreaker slides.
+
+- Replace the four remaining stacked-panel YouTube channel slides in Biotechnology
+  LECT04-LECT07 with the shared big-image format; resolve the outdated HG layout guidance.
+
+- Color both current-week and next-week homework rows dark red, including their dates;
+  update the durable homework color guidance accordingly.
+
+- Update the biostats YouTube channel slide to `big-image` with a visible channel URL;
+  remove the hidden playlist link and ad hoc URL color from the copied older layout.
+
+- Remove the one-time biostatistics announcement request from human guidance; keep its
+  implementation history in this changelog.
+
+### Additions and New Features
+
+- Add a Tutorial Overviews section with eight source-based slides for Fried Foods 1-3
+  and Microbes 1-5, including visible clickable Google Docs links. Read current guide exports;
+  distinguish benchmark means, two-sample means, variances, and five-group ANOVA.
+
+- Add Course Information and Group Project section-heading slides to Biostatistics Lecture 08A.
+
+- Add an outdoor-activity icebreaker after the biostats agenda, with example answers,
+  instructor examples, and Busse Woods as a local connection to the ANOVA discussion.
+- Record the durable preference for concrete examples that help students start sharing.
+
+- Add an undergraduate group-project introduction to Biostatistics Lecture 08A: tutorial
+  purpose, team composition, shared contributions, proposal, peer testing, and final deadline.
+  Use the course project scaffold for workflow and the current syllabus for dates.
+
+- Add "In Two Weeks: Nov 4" to Biostatistics Lecture 08A after the next-week slide,
+  covering the in-person meeting, Quiz 2, topics, assignments, and group formation.
+
+- Create green-themed Biostatistics Lecture 08A announcements for October 21: shared HG
+  contact slides, current podcast, syllabus links, variance comparisons/ANOVA agenda,
+  tutorial deadlines, quiz dates, and graduate/group milestones.
+- Use the instructor-updated biostats schedule source instead of the stale generated site;
+  retain asynchronous weeks, target-release wording, and tutorial-specific cutoff instructions.
+- Validate all 17 slides with strict native Djot lint and build editable ODP and classroom PDF.
+
 ## 2026-10-20
 
 ### Fixes and Maintenance

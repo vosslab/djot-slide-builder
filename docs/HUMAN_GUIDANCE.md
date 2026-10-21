@@ -316,8 +316,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Right-align numbers in tables. Distinguish total rows visually from ordinary data rows.
 
 - Consult the instructor-cleaned latest biotech announcements for shared presentation
-  patterns, preserving each course's own content. For the YouTube channel slide, compare
-  big-image with the cleaned stacked-panels layout; the instructor has not settled on one.
+  patterns, preserving each course's own content. Use `big-image` for the YouTube channel
+  slide, with a visible clickable channel URL; replace the older stacked-panel versions.
 - Clear @replaceme only after comparison with the original confirms complete content and
   sound rendering; attractive appearance alone does not establish completeness.
 
@@ -378,7 +378,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   future assignment deadlines from the syllabus for the current part.
 
 - Color both assignment and due date relative to the lecture date: past due light gray
-  (`#AAAAAA`), due next week red (`#990000`), and later dates black (`#000000`),
+  (`#AAAAAA`), due this week or next week red (`#990000`), and later dates black (`#000000`),
   matching exam schedule status colors.
 
 - Use a scannable two-column assignment/due-date table with abbreviated months and
@@ -402,6 +402,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   and a visible intact form URL.
 
 ### Reusable icebreakers
+
+- Use restrained color on icebreaker slides: emphasize the main prompts with the preferred
+  palette, keeping example answers mostly in ordinary text.
+
+- Give students concrete examples with icebreaker questions to help them get talking and share.
 
 - Build a reusable collection from old announcement slides, preserving their Breakout Room Chat
   format and wording. Keep subject-specific prompts and general fallbacks.

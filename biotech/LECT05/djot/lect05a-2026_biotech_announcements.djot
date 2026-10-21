@@ -84,19 +84,18 @@ hidden: true
 
 ![Slide image 3](assets/lect05a-2026_biotech_announcements/image_003.png)
 
-=== layout: stacked-panels
+=== layout: big-image
 
-
-# Dr. Voss YouTube Channel
-
-@top
+@image
 
 ![Slide image 4](assets/lect05a-2026_biotech_announcements/image_004.png)
 
-@bottom
-https://www.youtube.com/c/NeilVossLab/videos
+@caption
 
+Dr. Voss YouTube Channel
 watch our weekly "Stump the Vibe Coder" podcast
+
+https://www.youtube.com/c/NeilVossLab/videos
 
 === layout: big-image
 

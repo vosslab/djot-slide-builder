@@ -45,19 +45,18 @@ Make Sure Dr. Voss Is Recording
 
 ![Slide image 3](assets/lect05a-2026_biotech_announcements/image_003.png)
 
-=== layout: stacked-panels
+=== layout: big-image
 
-# Dr. Voss YouTube Channel
-
-@top
+@image
 
 ![Slide image 4](assets/lect05a-2026_biotech_announcements/image_004.png)
 
-@bottom
+@caption
 
-[https://www.youtube.com/c/NeilVossLab/videos]{color=red}
+Dr. Voss YouTube Channel
+watch our weekly "Stump the Vibe Coder" podcast
 
-watch our weekly "[_Stump the Vibe Coder_](https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48)" podcast
+https://www.youtube.com/c/NeilVossLab/videos
 
 === layout: big-image
 

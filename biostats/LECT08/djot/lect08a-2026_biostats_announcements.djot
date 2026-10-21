@@ -1,0 +1,477 @@
+color-theme: biostatistics
+
+=== layout: title-slide
+
+# Lecture 08A
+
+## Announcements
+## Dr. Neil Voss
+## Oct 21, 2026
+
+@notes
+
+BIOL 318/418, Fall 2026. Schedule authority: ~/nsh/syllabus/site_docs/fall_2026/biostats/SCHEDULE.md, updated October 21.
+Shared announcement setup follows docs/HUMAN_GUIDANCE.md and cleaned biotech LECT07A.
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- _Announcements_
+- Variance comparisons; ANOVA
+- Microbes 4-5 tutorials released
+- Today: *in-person meeting*, SCH 612
+
+=== layout: one-panel
+
+# [Icebreaker: Getting Outdoors]{color=#007A00}
+
+@body
+
+- Share your name and [*favorite outdoor activity*]{color=#C80085}.
+  - Walking, biking, hiking, fishing, birdwatching, playing sports, gardening, or having a picnic.
+  - Sitting outside with a book or spending time with friends counts, too!
+- [*Where do you like to go?*]{color=#007A00} Busse Woods, a neighborhood park, your backyard, or somewhere else?
+- *Dr. Voss:* watching my son run cross country, hiking trails with my spouse, looking at the Fall leaves.
+
+@notes
+
+Today's ANOVA discussion uses microbes from nearby Busse Woods.
+Examples help students get started and share. Instructor examples supplied directly
+for this slide: watching my son run cross country, hiking trails with my spouse,
+looking at the Fall leaves.
+
+=== layout: section
+
+# Course Information
+
+=== layout: big-image
+
+@image
+
+![Slide image 4](assets/lect05a-2026_biotech_announcements/image_004.png)
+
+@caption
+
+Dr. Voss YouTube Channel
+watch our weekly "Stump the Vibe Coder" podcast
+
+https://www.youtube.com/c/NeilVossLab/videos
+
+=== layout: big-image
+
+@image
+
+![StVC 36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard &#124; Stump the Vibe Coder Episode 36](assets/stump_the_vibe_coder/0zhh6g-DJFs.jpg)
+
+@caption
+
+StVC 36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard &#124; Stump the Vibe Coder Episode 36
+
+https://www.youtube.com/watch?v=0zhh6g-DJFs
+
+@notes
+
+podcast-slide: stump-the-vibe-coder
+Published: 2026-10-15T14:34:09+00:00
+Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
+
+=== layout: one-plus-two-panels
+
+# Discord Server
+
+@left
+
+- I created a Discord Server called Neil Voss Lab
+  - It is available as a mobile app, a desktop app, and a website
+  - Be sure to connect to my server, not create your own server
+Join the server:
+
+{{course_url:discord}}
+
+@top-right
+
+![Slide image 5](assets/lect05a-2026_biotech_announcements/image_005.png)
+
+@bottom-right
+
+![Slide image 6](assets/lect05a-2026_biotech_announcements/image_006.png)
+
+@notes
+
+This is a general announcement for the course contact channel
+not an assignment slide. Discord remains a course contact channel.
+
+=== layout: two-panels
+
+# Office Hours
+
+@left
+
+![Slide image 7](assets/lect05a-2026_biotech_announcements/image_007.png)
+
+@right
+
+- Schaumburg office\: SCH 600E
+- Zoom link\:
+  - [{{course_url:zoom_short}}]({{course_url:office_hours}})
+  - Meeting ID: 976 3875 4024
+  - Password: voss
+- Available\:
+  - Wednesdays, 2\:30-3\:30 p.m.
+  - Thursdays, 12\:30-1\:30 p.m.
+  - Also available by appointment
+
+=== layout: two-panels
+
+# Send an Anonymous Message to Instructor
+
+@left
+
+- Google Form to send me an *_anonymous_* message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+
+https://forms.gle/gZ8nx28q9YDwSy8g7
+
+@right
+
+![Anonymous Form](assets/anonymous_form.png)
+
+=== layout: one-panel
+
+# Important Course Links
+
+@body
+
+- Biostatistics syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/
+- Weekly schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
+- Points and assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/ASSIGNMENTS_AND_GRADING/
+- Practice problems
+  - https://biologyproblems.org/biostatistics/
+
+=== layout: section
+
+# This Week and Next
+
+=== layout: one-panel
+
+# This Week: Oct 21
+
+@body
+
+- [*In person: Wednesday, 5:00-5:55 p.m.*]{color=#127622}
+  - SCH 612
+- *Topic:* Variance comparisons; ANOVA
+- *Tutorials released:* Microbes 4-5
+- *Due:* Joe's 1-3 assessment
+- *Graduate students:* Revised regression draft
+
+@notes
+
+Week 08 schedule. Each tutorial's directions provide its due date; no submission time is inferred.
+
+=== layout: one-panel
+
+# Next Week: Oct 28
+
+@body
+
+- [*Asynchronous week*]{color=#990000}
+- *Topic:* Linear to quadratic regression
+- *Due:* Microbes 1-3
+- *Graduate students:* Release-ready tutorial
+- *Target release:* Graduate regression tutorial
+
+@notes
+
+The schedule marks the graduate regression release as a target, not a guaranteed release date.
+
+=== layout: one-panel
+
+# In Two Weeks: Nov 4
+
+@body
+
+- [*In person: Wednesday, 5:00-5:55 p.m.*]{color=#127622}
+  - SCH 612
+- *Quiz 2*
+- *Topic:* Test selection; regression feedback
+- *Due:* Microbes 4-5; regression feedback
+- *Form groups:* 1 graduate student + 3 undergraduates
+
+@notes
+
+Week 10 details follow the updated Fall 2026 biostats SCHEDULE.md.
+
+=== layout: one-panel
+
+# Homework Due Dates (Part 2)
+
+@body
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 08: Joe's 1-3 assessment]{color=#990000} | [Oct 21]{color=#990000} |
+| [Week 09: Microbes 1-3]{color=#990000} | [Oct 28]{color=#990000} |
+| Week 10: Microbes 4-5; regression feedback | Nov 04 |
+| Week 11: Regression assignment | Nov 11 |
+| Week 14: Peer-trial video + feedback | Dec 09 |
+| Week 15: Final project | Dec 16 |
+
+@notes
+
+Schedule dates from the updated SCHEDULE.md. Each tutorial's directions provide its due date.
+Current and next week's work is dark red; later work is black. No precise cutoff time is supplied.
+
+=== layout: one-panel
+
+# Quiz Dates
+
+@body
+
+- [Quiz 1: Oct 7]{color=#AAAAAA}
+- [Quiz 2: Nov 4]{color=#000000}
+- [Quiz 3: Dec 9]{color=#000000}
+
+@notes
+
+https://docs.google.com/spreadsheets/d/1i_Whr_y3r43MynI-5QL3inDpBG8N1N8-M2nDtOB8ypg/edit
+Quiz dates follow the updated schedule. This course has no midterm or final exams.
+Keep assessment positions stable and update status colors relative to each lecture date.
+
+=== layout: section
+
+# Tutorial Overviews
+
+=== layout: one-panel
+
+# Fried Foods #1: Z-test
+
+@body
+
+- Joe's Hospital of Fried Foods and its newborn babies.
+- Joe's claim: babies at his hospital are heavier.
+- The Baby Butter Ball Award is at stake.
+- *The comparison:* Joe's average baby weight vs. the national average.
+
+https://docs.google.com/document/d/1ZOLIw-JlNA6Mry1w0t5I5Ffgi7RMiBCSr7VtyNgsdt0/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1ZOLIw-JlNA6Mry1w0t5I5Ffgi7RMiBCSr7VtyNgsdt0/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Fried Foods #2: One-Sample t-test
+
+@body
+
+- Joe wants to keep his shot at the Baby Butter Ball Award.
+- The awards committee questions his original analysis.
+- The same newborn-weight data, revisited with a t-test.
+- *The comparison:* Joe's average baby weight vs. the national average.
+
+https://docs.google.com/document/d/1lh3EWl4gnyT0dq0rgYzjzC6J1No4zKP2gi5eY3N5uv0/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1lh3EWl4gnyT0dq0rgYzjzC6J1No4zKP2gi5eY3N5uv0/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Fried Foods #3: Two-Sample t-test
+
+@body
+
+- Joe's Hospital of Fried Foods gets a rival.
+- Alex's Green Veggies Health Center enters the competition.
+- Fried-food babies vs. green-veggie babies.
+- *The comparison:* Average newborn weight at the two hospitals.
+
+https://docs.google.com/document/d/1k5UzUlpu-5wCMyWpop0bFlXBgAWivwTwd020Jgo1EIk/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1k5UzUlpu-5wCMyWpop0bFlXBgAWivwTwd020Jgo1EIk/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Microbes #1: Z-test
+
+@body
+
+- Soil microbes in nearby Busse Woods.
+- Concerns about urbanization and biodiversity.
+- Shannon Index values describe microbial diversity.
+- *The comparison:* Average diversity vs. a benchmark for similar ecosystems.
+
+https://docs.google.com/document/d/1mWpCqMxqU0O2G7r1P0JdpMOgKyJie8Qcy4vwvXuBVuk/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1mWpCqMxqU0O2G7r1P0JdpMOgKyJie8Qcy4vwvXuBVuk/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Microbes #2: One-Sample t-test
+
+@body
+
+- Back to the Busse Woods soil samples.
+- An advisor questions the assumptions behind the Z-test.
+- The same diversity data, revisited with a t-test.
+- *The comparison:* Average diversity vs. the ecosystem benchmark.
+
+https://docs.google.com/document/d/1V0dAHscKvN8H_X4AlbDEIaukAsHoKHEKjwz7jdbsR0w/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1V0dAHscKvN8H_X4AlbDEIaukAsHoKHEKjwz7jdbsR0w/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Microbes #3: Two-Sample t-test
+
+@body
+
+- The Busse Woods investigation looks back in time.
+- Older microbial diversity data become available.
+- Two sets of soil samples from different years.
+- *The comparison:* Average diversity in the earlier year vs. the later year.
+
+https://docs.google.com/document/d/1DiSYMwPhs8tmWQMLqQwLGHBssy12o-pYzyUT1qIoXcU/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1DiSYMwPhs8tmWQMLqQwLGHBssy12o-pYzyUT1qIoXcU/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Microbes #4: F-test
+
+@body
+
+- The same two years of Busse Woods data.
+- The newer diversity values appear more alike.
+- Attention shifts to variation across sampling locations.
+- *The comparison:* The spread of diversity values in one year vs. the other.
+
+https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa6c9Mi9o/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa6c9Mi9o/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: one-panel
+
+# Microbes #5: ANOVA
+
+@body
+
+- The Busse Woods story expands to several decades.
+- Older student theses provide more diversity data.
+- Several years of samples brought together.
+- *The comparison:* Average diversity across all the years.
+
+https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
+
+@notes
+
+Source: https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
+Read from the current Google Docs text export on October 21, 2026.
+Overview of the tutorial scenario; no computed result is supplied.
+
+=== layout: section
+
+# Group Project
+
+=== layout: one-panel
+
+# Joining the Group Project
+
+@body
+
+- *Goal:* Build a statistics tutorial that classmates can follow.
+- *Your team:* 1 graduate student + 3 undergraduates; groups form Nov 4.
+- *Your contribution:* Help choose a topic, develop example data, and write and check the tutorial steps.
+- *Start together:* Use existing course tutorials as models; prepare your group proposal for Nov 11.
+- *Test and improve:* Classmates try the tutorial; your group revises it using their feedback.
+- *Final tutorial package:* Due Dec 16.
+
+@notes
+
+Project purpose and workflow: biol_318-biostatistics/CURE_summer_course/capstone_scaffold.txt.
+Dates and team composition: current Fall 2026 biostats SCHEDULE.md.
+Undergraduate contributions summarize the shared project work, not separately graded roles.
+Do not infer project point values or a grading rubric from the planning scaffold.
+
+=== layout: one-panel
+
+# Graduate and Group Milestones
+
+@body
+
+| Date | Milestone |
+| --- | --- |
+| Oct 21 | Grads: revised regression draft |
+| [Oct 28]{color=#990000} | [Grads: release-ready tutorial]{color=#990000} |
+| Nov 04 | Form groups: 1 grad + 3 undergrads |
+| Nov 11 | Grads: corrections; groups: proposals |
+| Nov 18 | Groups: data + analysis + outline |
+| Dec 02 | Groups: runnable tutorial draft |
+| Dec 09 | Groups: review feedback; revise |
+| Dec 16 | Groups: final tutorial package |
+
+=== layout: one-panel
+
+# Working Through Tutorials
+
+@body
+
+- Self-paced Google Sheets tutorials outside class
+- Follow each assignment's directions for submission
+- Timed assignment attempts; unlimited retries
+- Work with classmates and ask questions
+- Blackboard is the authoritative record for scores
+
+@notes
+
+Source: Fall 2026 biostats COURSE_DETAILS and ASSIGNMENTS_AND_GRADING.
+Retry policy applies to assignments, not limited-attempt quizzes.
+
+=== layout: one-panel
+
+# Dates to Keep in Mind
+
+@body
+
+- [*Oct 30:*]{underline=true} Last day to drop for a "W" grade
+- [*Nov 25:*]{underline=true} Thanksgiving break
+  - No class or deadlines
+- [*Dec 16:*]{underline=true} Final project and final tutorial package
+  - Asynchronous week; no class meeting
+
+=== layout: theend
+
+# THE END

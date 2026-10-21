@@ -631,3 +631,14 @@ Slide 18 uses the identical clean equation on source slide 19; slide 33 clips th
 YUCK callout from the figure because the slide already contains that native text.
 
 **Owner.** The LECT07C source-fidelity SVG assets and their `formula_sources.json` manifest.
+
+### Biostatistics announcement source
+
+**Decision.** Start the biostats announcement series at `biostats/LECT08/djot/` for
+October 21, 2026, using the existing `biostatistics` green theme and shared HG layouts.
+Use the freshly updated syllabus schedule source for topics, meeting format, quiz dates,
+assignment dates, and graduate/group milestones. Keep tutorial cutoff times unspecified.
+
+**Why.** The generated syllabus site still has the earlier generic schedule. The new source
+provides the actual alternating in-person/asynchronous plan. Biostats has no exams.
+Shared Discord and office-hours URLs remain in ignored course-link configuration.
