@@ -17,6 +17,25 @@ Source: lect08b-chap8-linked_genes.odp, slide 1.
 
 === layout: one-panel
 
+# Learning objectives
+
+@body
+
+- Explain when genes follow Mendel's law of independent assortment.
+- Distinguish linked genes from independently assorting genes.
+- Identify parental and recombinant allele combinations in a testcross.
+- Explain how crossing over produces recombinant gametes.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
+
+=== layout: section
+
+# Linked Genes
+
+=== layout: one-panel
+
 # *Mendel&#8217;s Four Principles of Heredity*
 
 @body
@@ -576,6 +595,21 @@ Native reconstruction needed: 13 positioned diagram labels.
   - different pairs of alleles are passed onto the offspring independently of each other.
   - inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
   - [EXCEPT WHEN GENES ARE ON THE SAME CHROMOSOME]{color=#CC00CC}
+
+=== layout: one-panel
+
+# Key takeaways
+
+@body
+
+- Genes on different chromosomes assort independently; genes on the same chromosome can be linked.
+- Linked alleles can be in cis or trans configuration.
+- Crossing over produces recombinant gametes with new allele combinations.
+- Testcross offspring distinguish parental from recombinant types.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

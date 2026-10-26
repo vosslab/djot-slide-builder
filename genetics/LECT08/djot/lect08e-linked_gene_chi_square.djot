@@ -4,7 +4,7 @@ color-theme: genetics
 
 # Lecture 08E
 
-## Chi Square for Linked Genes
+## Chi Square (&chi;^2^) for Linked Genes
 
 ## Chapter 8
 
@@ -14,6 +14,21 @@ color-theme: genetics
 
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 1.
+
+=== layout: one-panel
+
+# Learning objectives
+
+@body
+
+- State the expected testcross ratio for two unlinked genes.
+- Calculate expected counts and the chi-square statistic from offspring data.
+- Use degrees of freedom and a critical value to evaluate the null hypothesis.
+- Compare the linkage evidence when the same proportions are observed in a larger sample.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: section
 
@@ -67,83 +82,64 @@ Source: lect08e-linked_gene_chi_square.odp, slide 1.
 - which were then test-crossed (AaBb \* aabb) total of 900 offspring plants were scored for stem color and flower petal length.
 
 === layout: one-panel
-@replaceme
-
-# Figure 15.UN03a
 
 @body
 
-![Slide image 3](assets/lect08e-linked_gene_chi_square/image_003.jpg)
+Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
-- *Offspring from test- cross of* *_AaBb_* *(F~1~) &#215;* *_aabb_*
+{column-widths="3,2,2,2"}
+| | Expected ratio if the genes are unlinked | Expected number of offspring (of 900) | Observed number of offspring (of 900) |
+| --- | --- | --- | --- |
+| Purple stem/short petals (_A_&#8211;_B_&#8211;) | 1 | ??? | 220 |
+| Green stem/short petals (_aaB_&#8211;) | 1 | ??? | 210 |
+| Purple stem/long petals (_A_&#8211;_bb_) | 1 | ??? | 231 |
+| Green stem/long petals (_aabb_) | 1 | ??? | 239 |
 
-- *Expected ratio if the genes are unlinked*
+@citation
 
-- *Expected number of offspring (of 900)*
+Figure 15.UN03a
 
-- *Observed number of offspring (of 900)*
+@notes
 
-- *Purple stem/short petals (**_A_**&#8211;**_B_**&#8211;)*
-
-- *Green stem/short petals (**_aaB_**&#8211;)*
-
-- *Purple stem/long petals (**_A_**&#8211;**_bb_**)*
-
-- *Green stem/long petals (**_aabb_**)*
-
-- *1                      1                     1                      1*
-
-- *220                  210                 231                  239*
-
-- *???                  ???                 ???                  ???*
+Source: lect08e-linked_gene_chi_square.odp, slide 8.
+Native table transposed for readable phenotype rows; original labels, counts, and question marks retained.
 
 === layout: one-panel
-@replaceme
 
+# PREDICTED RATIOS
 
 @body
 
-- *PREDICTED RATIOS*
+- Genes on different chromosomes:
+  - 1 : 1 : 1 : 1
+- Genes on the same chromosome:
+  - 1 : 1 : 0 : 0
 
-- *Genes on the same chromosome\:*
+@notes
 
-- *Genes on different chromosomes\:*
-
-- *1       \:      1      \:      1      \:       1*
-
-- *1       \:      1      \:      0      \:        0*
+Source: lect08e-linked_gene_chi_square.odp, slide 9.
+Reconstructed from the original slide during the October 26 second pass.
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
-![Slide image 3](assets/lect08e-linked_gene_chi_square/image_003.jpg)
+Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
-- *Offspring from test- cross of* *_AaBb_* *(F~1~) &#215;* *_aabb_*
+{column-widths="3,2,2,2"}
+| | Expected ratio if the genes are unlinked | Expected number of offspring (of 900) | Observed number of offspring (of 900) |
+| --- | --- | --- | --- |
+| Purple stem/short petals (_A_&#8211;_B_&#8211;) | 1 | 225 | 220 |
+| Green stem/short petals (_aaB_&#8211;) | 1 | 225 | 210 |
+| Purple stem/long petals (_A_&#8211;_bb_) | 1 | 225 | 231 |
+| Green stem/long petals (_aabb_) | 1 | 225 | 239 |
 
-- *Expected ratio if the genes are unlinked*
+*Genes Unlinked*
 
-- *Expected number of offspring (of 900)*
+@notes
 
-- *Observed number of offspring (of 900)*
-
-- *Purple stem/short petals (**_A_**&#8211;**_B_**&#8211;)*
-
-- *Green stem/short petals (**_aaB_**&#8211;)*
-
-- *Purple stem/long petals (**_A_**&#8211;**_bb_**)*
-
-- *Green stem/long petals (**_aabb_**)*
-
-- *1                      1                     1                      1*
-
-- *220                  210                 231                  239*
-
-- *225                  225                 225                   225*
-
-- Genes Unlinked
+Source: lect08e-linked_gene_chi_square.odp, slide 10.
+Native table transposed for readable phenotype rows; original labels, counts, and question marks retained.
 
 === layout: one-panel
 
@@ -315,20 +311,27 @@ Source: lect08e-linked_gene_chi_square.odp, slide 16.
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 21.
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
 # *Pretend we got the exact same ratios with 10 times the data*
 
-@top
+@body
 
-![Slide image 5](assets/lect08e-linked_gene_chi_square/image_004.jpg)
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 2250 | 2200 | | | |
+| (aaB&#8722;) | 2250 | 2100 | | | |
+| (A&#8722;bb) | 2250 | 2310 | | | |
+| (aabb) | 2250 | 2390 | | | |
+| | | | | *&chi;^2^ = Sum* | |
 
-Native reconstruction needed: 19 positioned diagram labels.
+Under unlinked conditions we would expect the numbers to come closer to the 2250 number
 
-@bottom
+@notes
 
-- Under unlinked conditions we would expect the numbers to come closer to the 2250 number
+Source: lect08e-linked_gene_chi_square.odp, slide 22.
+Reconstructed from the original slide during the October 26 second pass.
 
 === layout: one-panel
 
@@ -360,6 +363,25 @@ Source: lect08e-linked_gene_chi_square.odp, slide 23.
 - *&#61539;2 = Sum*
 
 - *21.42*
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Key takeaways
+
+@body
+
+- For two unlinked genes, a dihybrid testcross has an expected offspring ratio of 1:1:1:1.
+- Chi-square compares observed and expected counts across the four offspring classes.
+- Four classes give three degrees of freedom; compare the statistic with the critical value.
+- The same proportional differences can provide stronger evidence against the null hypothesis with more offspring.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

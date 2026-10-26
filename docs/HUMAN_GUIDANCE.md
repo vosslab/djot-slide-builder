@@ -1,5 +1,8 @@
 # Human guidance
 
+- Managers must follow the [slide conversion checklist](SLIDE_CONVERSION_CHECKLIST.md).
+  Keep its items concrete actions with verifiable results; keep broader content policies here.
+
 - Keep Lecture 07B's intro and miscellaneous material, including peer evaluation, in the main
   file. Split Three Ideas, One Great Idea, Shark Tank, and Executive Summary into chapter files;
   allow one hidden flag to hide the entire One Great Idea section.
@@ -198,8 +201,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   pairings for concepts that students should distinguish.
 - Apply the supplied plain-language advice to science teaching: use simpler words when they
   preserve the meaning, and keep technical terms when they add precision.
-- Define jargon new to the lecture sequence in the first few slides of the deck. Check prior
-  decks for earlier definitions, as in Lecture 04, before deciding which terms are new.
+- When authoring or revising lectures, define jargon new to the lecture sequence in the first
+  few slides. During conversion, check prior decks for earlier definitions. Managers may add
+  a definitions slide near the beginning for important terms new to the lecture sequence,
+  using concise definitions limited to terms already used in the lecture.
 - Add instructor notes to the custom Djot slide format; `@notes` works as the section marker.
 - "Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide."
 - "Images Are Required: Try to have several pictures on your slide to maintain audience
@@ -305,6 +310,12 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   including I with superscript A and F/P generation indices.
 
 ## Preserve teaching voice
+
+- Conversion preserves existing teaching content and sequence; it does not authorize pedagogical
+  redesign. Missing learning objectives, a closing summary, and an optional definitions slide
+  for terms used in the lecture are authorized additions. Other substantive instructional changes
+  require separate authorization; section dividers may label existing topic boundaries without
+  reorganizing the lecture.
 
 - When converting ODP slides to Djot, preserve approximately 98% of the original slide prose,
   allowing minor grammatical corrections and clarity improvements. Maintain the original

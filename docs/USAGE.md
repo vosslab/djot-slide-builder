@@ -3,6 +3,8 @@
 Use repository-owned `.djot` source to produce editable ODP and ODP-derived PDF output.
 Existing-presentation import is a one-time source migration workflow.
 
+For lecture conversions, complete the [manager checklist](SLIDE_CONVERSION_CHECKLIST.md).
+
 ## Mixed text and images
 
 A panel can contain text and multiple images in source order. The compiler tries half-point

@@ -17,6 +17,25 @@ Source: lect08f-3_point_testcross_textbook.odp, slide 1.
 
 === layout: one-panel
 
+# Learning objectives
+
+@body
+
+- Identify parental and double-crossover classes in a three-point testcross.
+- Determine the middle gene by comparing parental and double-crossover types.
+- Summarize the offspring classes for each chromosome interval.
+- Calculate map distances while counting double crossovers in both intervals.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
+
+=== layout: section
+
+# Three-Point Test Cross
+
+=== layout: one-panel
+
 # *Confusing Allele/Genotype Nomenclature*
 
 @body
@@ -735,6 +754,25 @@ Source: lect08f-3_point_testcross_textbook.odp, slide 1.
 - G/H = 50+64+4+2
 - (e)	F to G\: 80/1000 = 8 m.u.
 - G to H\: 120/1000 = 12 m.u.
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Key takeaways
+
+@body
+
+- Identify the parental types and the double-crossover types first.
+- Compare parental and double-crossover combinations to find the middle gene.
+- Summarize recombinant offspring separately for each interval.
+- Include double crossovers in both interval distances when constructing the map.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

@@ -2,6 +2,9 @@
 
 ### Additions and New Features
 
+- Add a required slide conversion checklist with verifiable inventory, weekly announcement,
+  repair, validation, and handoff tasks; link it from Human Guidance, pipeline, and usage docs.
+
 - Document mixed text/image sequences as one-panel compositions, using LECT07B slide 24 as
   the reference. Prefer the existing vertical-flow import path before caption-based panel
   grouping; preserve comparative and spatial layouts plus unrelated replacement reasons.
@@ -15,6 +18,21 @@
 
 ### Fixes and Maintenance
 
+- Bound the conversion checklist to existing content and sequence, with missing objectives,
+  summaries, and optional definitions slides as authorized additions. Limit definitions to terms
+  used in the lecture and dividers to existing topic boundaries; align Human Guidance accordingly.
+
+- Refine the conversion checklist: distinguish initial conversion from recurring updates,
+  verify BPW chapter numbers and introductory terminology, default to the latest StVC episode
+  with documented selection discretion, and limit extra review evidence to actionable findings
+  and significant decisions rather than routine successes or mandatory per-slide scores.
+
+- Review Genetics LECT08 again under the updated preservation policy: add objectives and
+  penultimate takeaways to B-F; refresh the weekly agenda, catalog icebreaker, and StVC 37
+  video/thumbnail/game links. Episode 38 is a special episode; retain 37 as a one-week choice
+  without changing the refresh script. Restore four chi-square source slides with native
+  tables/lists, reducing replacement markers from 109 to 105; preserve original slide order
+  and hidden flags. Rebuild all six ODP/PDF decks and update LECT08_REVIEW.md.
 - Update HUMAN_GUIDANCE conversion policy to preserve approximately 98% of existing prose,
   permit minor grammar/clarity improvements, and require managers to add missing objectives
   and summaries from lecture content using the pedagogical slide style guide. Replace the

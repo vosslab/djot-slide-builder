@@ -241,6 +241,9 @@ does publication replace final PDFs.
 
 ### Required LLM review of imported decks
 
+Managers must complete the [slide conversion checklist](SLIDE_CONVERSION_CHECKLIST.md) and
+record its results in the lecture review report, including weekly announcement updates.
+
 Deterministic import is draft preparation, not pedagogical acceptance. Before accepting a converted
 deck, an LLM compares every source slide with its rendered draft, using extracted text, geometry,
 animation targets and timing, notes, and importer diagnostics as supporting evidence. Static PDF

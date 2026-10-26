@@ -17,6 +17,25 @@ Source: lect08d-3_point_testcross_voss.odp, slide 1.
 
 === layout: one-panel
 
+# Learning objectives
+
+@body
+
+- Identify parental types in three-point testcross offspring.
+- Classify offspring as parental or recombinant for each pair of genes.
+- Calculate pairwise map distances from the non-parental progeny.
+- Use pairwise distances to determine gene order.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
+
+=== layout: section
+
+# Three-Point Test Cross
+
+=== layout: one-panel
+
 # *Gene Mapping*
 
 @body
@@ -706,6 +725,21 @@ Source: lect08d-3_point_testcross_voss.odp, slide 1.
 - Bozeman Science\:
   - [https\://youtu.be/-\_UcDhzjOio](https://youtu.be/-_UcDhzjOio)
   - [https\://youtu.be/TU44tR0hJ8A](https://youtu.be/TU44tR0hJ8A)
+
+=== layout: one-panel
+
+# Key takeaways
+
+@body
+
+- Start with the parental genotype and examine one pair of genes at a time.
+- Cover the third gene while classifying parental and non-parental combinations.
+- Sum non-parental progeny, divide by total progeny, and multiply by 100% for map distance.
+- Compare the pairwise distances to place the genes in order.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

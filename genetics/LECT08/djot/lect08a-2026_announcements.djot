@@ -21,10 +21,11 @@ Source: lect06a-2026_announcements 2.odp, slide 1.
 @body
 
 - Ice breaker and announcements
-- Probability rules and progeny distributions
-- Binomial and multinomial examples
-- Chi-square analysis
-- Mendel chi-square group activity
+- Linked genes and recombination
+- Genetic mapping
+- Three-point testcross examples
+- Chi-square tests for linkage
+- Gene distances group activity
 - Closing remarks
 
 @notes
@@ -36,15 +37,15 @@ Source: lect06a-2026_announcements 2.odp, slide 2.
 
 @body
 
-- If no one is talking, please be the first to speak and get things started.
 - State your name, major, and plans after graduation.
-- [What pets do you have?]{color=red}
-  - Dog, cat, none, other.
+- [You can genetically modify one animal. What would you change?]{color=red}
+- Choose a farm animal, pet, or wild species.
+- Explain the useful trait and one possible tradeoff.
+- If no one is talking, please be the first to speak.
 
 @notes
 
-Icebreaker collection: pets (icebreakers.yaml).
-Instructor-selected question for October 20, 2026.
+October 27, 2026: selected modify-an-animal from icebreakers.yaml for the genetics lecture.
 
 === layout: section
 
@@ -72,19 +73,20 @@ Source: lect06a-2026_announcements 2.odp, slide 4.
 
 @image
 
-![StVC 36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard &#124; Stump the Vibe Coder Episode 36](assets/stump_the_vibe_coder/0zhh6g-DJFs.jpg)
+![Stump the Vibe Coder&#44; Episode 37](assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
 
 @caption
 
-Stump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard\
-Watch the Video: [https://www.youtube.com/watch?v=0zhh6g-DJFs](https://www.youtube.com/watch?v=0zhh6g-DJFs)\
+Stump the Vibe Coder &#35;37\
+Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
 Play the Game: https://vosslab.github.io/bad-cell-day/
 
 @notes
 
 podcast-slide: stump-the-vibe-coder
-Published: 2026-10-15T14:34:09+00:00
+Published: 2026-10-22T14:05:48+00:00
 Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+Episode 37 selected explicitly for this week; episode 38 is labeled as a special episode.
 Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 === layout: one-plus-two-panels
@@ -303,7 +305,7 @@ Source: lect06a-2026_announcements 2.odp, slide 17.
 @notes
 
 Assessment colors relative to this lecture date: past light gray (#AAAAAA), future black
-(#000000), next week dark red (#990000). No quizzes or exams fall next week, October 27.
+(#000000), next week dark red (#990000). Quiz 3 is next week, November 3, 2026.
 Quiz 3 covers Lecture 7 and Lecture 8 material. The final is in person and cumulative.
 Schedule: https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 Source: lect06a-2026_announcements 2.odp, slide 18.

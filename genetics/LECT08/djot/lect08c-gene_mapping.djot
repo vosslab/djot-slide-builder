@@ -16,6 +16,25 @@ color-theme: genetics
 Source: lect08c-gene_mapping.odp, slide 1.
 
 === layout: one-panel
+
+# Learning objectives
+
+@body
+
+- Distinguish genetic maps from physical maps.
+- Identify parental and recombinant offspring in linkage data.
+- Calculate recombination frequency and express distance in map units or centimorgans.
+- Explain why recombination frequencies between distant genes may not add.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
+
+=== layout: section
+
+# Gene Mapping
+
+=== layout: one-panel
 hidden: true
 
 
@@ -559,6 +578,21 @@ Native reconstruction needed: 23 positioned diagram labels.
 @bottom
 
 - Wait 9%+9.5% = 18.5% &#8800; 17%
+
+=== layout: one-panel
+
+# Key takeaways
+
+@body
+
+- Genetic maps use recombination in offspring; physical maps use sequence distances in base pairs.
+- Parental types are the most frequent classes in the linkage examples.
+- A recombination frequency of 1% corresponds to one map unit, or one centimorgan.
+- Multiple crossovers can cause recombination frequencies between distant genes to underestimate the map distance.
+
+@notes
+
+Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 
