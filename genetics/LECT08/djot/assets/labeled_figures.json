@@ -1,0 +1,257 @@
+[
+  {
+    "deck": "b",
+    "source": 4,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b4_labeled.svg",
+    "image_count": 1,
+    "live_spans": 95,
+    "bounds": [
+      25.8799991607666,
+      17.88800048828125,
+      767.70703125,
+      483.5069885253906
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 21,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b21_labeled.svg",
+    "image_count": 1,
+    "live_spans": 55,
+    "bounds": [
+      25.8799991607666,
+      102.50198364257812,
+      767.70703125,
+      382.50799560546875
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 23,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b23_labeled.svg",
+    "image_count": 1,
+    "live_spans": 36,
+    "bounds": [
+      25.8799991607666,
+      82.43197631835938,
+      767.70703125,
+      402.5489807128906
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 24,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b24_labeled.svg",
+    "image_count": 1,
+    "live_spans": 73,
+    "bounds": [
+      10.970000267028809,
+      17.489990234375,
+      770.3999633789062,
+      467.3769836425781
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 31,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b31_labeled.svg",
+    "image_count": 1,
+    "live_spans": 31,
+    "bounds": [
+      150.49099731445312,
+      14.948984146118164,
+      643.0960083007812,
+      482.82598876953125
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 34,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b34_labeled.svg",
+    "image_count": 1,
+    "live_spans": 34,
+    "bounds": [
+      99.69400024414062,
+      53.773956298828125,
+      693.8919677734375,
+      431.20697021484375
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 35,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b35_labeled.svg",
+    "image_count": 1,
+    "live_spans": 101,
+    "bounds": [
+      25.8799991607666,
+      17.631988525390625,
+      767.70703125,
+      483.2509765625
+    ],
+    "webp_quality": 90,
+    "review": "static repaired; interaction review pending",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "b",
+    "source": 37,
+    "asset": "genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b37_labeled.svg",
+    "image_count": 1,
+    "live_spans": 25,
+    "bounds": [
+      37.7859992980957,
+      65.22598266601562,
+      755.802001953125,
+      425.869873046875
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08b-chap8-linked_genes.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "c",
+    "source": 17,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c17_labeled.svg",
+    "image_count": 1,
+    "live_spans": 70,
+    "bounds": [
+      94.677001953125,
+      21.23199462890625,
+      698.9099731445312,
+      320.0
+    ],
+    "webp_quality": 90,
+    "review": "static repaired; interaction review pending",
+    "source_pdf": "genetics/LECT08/lect08c-gene_mapping.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "c",
+    "source": 20,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c20_labeled.svg",
+    "image_count": 1,
+    "live_spans": 9,
+    "bounds": [
+      25.8799991607666,
+      6.208984375,
+      767.70703125,
+      270.7659912109375
+    ],
+    "webp_quality": 90,
+    "review": "static repaired; interaction review pending",
+    "source_pdf": "genetics/LECT08/lect08c-gene_mapping.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "c",
+    "source": 22,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c22_labeled.svg",
+    "image_count": 1,
+    "live_spans": 76,
+    "bounds": [
+      25.8799991607666,
+      32.145965576171875,
+      767.70703125,
+      459.2129821777344
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08c-gene_mapping.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "c",
+    "source": 24,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c24_labeled.svg",
+    "image_count": 1,
+    "live_spans": 40,
+    "bounds": [
+      25.8799991607666,
+      9.639007568359375,
+      767.70703125,
+      477.69866943359375
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08c-gene_mapping.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "c",
+    "source": 45,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c45_labeled.svg",
+    "image_count": 1,
+    "live_spans": 9,
+    "bounds": [
+      25.8799991607666,
+      6.208984375,
+      767.70703125,
+      270.7659912109375
+    ],
+    "webp_quality": 90,
+    "review": "static repaired; interaction review pending",
+    "source_pdf": "genetics/LECT08/lect08c-gene_mapping.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "f",
+    "source": 52,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f52_labeled.svg",
+    "image_count": 1,
+    "live_spans": 6,
+    "bounds": [
+      47.59400177001953,
+      70.30099487304688,
+      745.9660034179688,
+      489.1050109863281
+    ],
+    "webp_quality": 90,
+    "review": "static repaired and visually reviewed",
+    "source_pdf": "genetics/LECT08/lect08f-3_point_testcross_textbook.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  },
+  {
+    "deck": "f",
+    "source": 53,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f53_labeled.svg",
+    "image_count": 1,
+    "live_spans": 13,
+    "bounds": [
+      47.59400177001953,
+      85.91998291015625,
+      745.9660034179688,
+      478.6304931640625
+    ],
+    "webp_quality": 90,
+    "review": "static repaired; interaction review pending",
+    "source_pdf": "genetics/LECT08/lect08f-3_point_testcross_textbook.pdf",
+    "scope": "one source artwork image, overlapping labels, and reviewed diagram marks; native titles/captions excluded"
+  }
+]

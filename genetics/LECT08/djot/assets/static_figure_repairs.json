@@ -1,0 +1,678 @@
+[
+  {
+    "deck": "c",
+    "source": 27,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c27_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 28,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c28_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 29,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c29_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 30,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c30_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 31,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c31_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 32,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c32_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 33,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c33_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 34,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c34_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 35,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c35_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 36,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c36_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 37,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c37_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 38,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c38_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "c",
+    "source": 39,
+    "asset": "genetics/LECT08/djot/assets/lect08c-gene_mapping/c39_labeled.svg",
+    "bounds": [
+      26.673999786376953,
+      112.73399353027344,
+      769.1530151367188,
+      362.4949951171875
+    ],
+    "live_spans": 3,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "d",
+    "source": 5,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d5_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      92.57952880859375,
+      754.0157470703125,
+      393.5338439941406
+    ],
+    "live_spans": 49,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 6,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d6_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      92.57952880859375,
+      754.0157470703125,
+      393.5338439941406
+    ],
+    "live_spans": 49,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 7,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d7_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 8,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d8_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 9,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d9_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 10,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d10_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 11,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d11_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 49,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 12,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d12_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 13,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d13_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 14,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d14_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 15,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d15_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 16,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d16_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 17,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d17_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 49,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 18,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d18_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 19,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d19_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 20,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d20_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 21,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d21_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "d",
+    "source": 22,
+    "asset": "genetics/LECT08/djot/assets/lect08d-3_point_testcross_voss/d22_labeled.svg",
+    "bounds": [
+      39.68503952026367,
+      99.2409439086914,
+      754.0157470703125,
+      400.1952819824219
+    ],
+    "live_spans": 43,
+    "kind": "source vector table with overlays"
+  },
+  {
+    "deck": "f",
+    "source": 13,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f13_labeled.svg",
+    "bounds": [
+      66.13200378417969,
+      178.5269775390625,
+      715.0110473632812,
+      454.1109924316406
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 14,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f14_labeled.svg",
+    "bounds": [
+      66.13200378417969,
+      178.5269775390625,
+      715.0110473632812,
+      454.1109924316406
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 15,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f15_labeled.svg",
+    "bounds": [
+      66.13200378417969,
+      178.5269775390625,
+      715.0110473632812,
+      454.1109924316406
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 16,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f16_labeled.svg",
+    "bounds": [
+      66.13200378417969,
+      181.333984375,
+      715.0110473632812,
+      456.9179992675781
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 31,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f31_labeled.svg",
+    "bounds": [
+      66.13200378417969,
+      105.84695434570312,
+      715.0110473632812,
+      381.43096923828125
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 33,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f33_labeled.svg",
+    "bounds": [
+      79.19999694824219,
+      92.52398681640625,
+      712.7999877929688,
+      435.572998046875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 34,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f34_labeled.svg",
+    "bounds": [
+      64.80000305175781,
+      92.52398681640625,
+      734.4000244140625,
+      435.572998046875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 35,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f35_labeled.svg",
+    "bounds": [
+      103.01100158691406,
+      92.52398681640625,
+      695.8770141601562,
+      435.572998046875
+    ],
+    "live_spans": 0,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 37,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f37_labeled.svg",
+    "bounds": [
+      66.64299774169922,
+      99.80899047851562,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 38,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f38_labeled.svg",
+    "bounds": [
+      60.94499969482422,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 39,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f39_labeled.svg",
+    "bounds": [
+      60.94499969482422,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 40,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f40_labeled.svg",
+    "bounds": [
+      60.94499969482422,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 41,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f41_labeled.svg",
+    "bounds": [
+      60.94499969482422,
+      99.83697509765625,
+      741.5999755859375,
+      476.135986328125
+    ],
+    "live_spans": 4,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 42,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f42_labeled.svg",
+    "bounds": [
+      60.94499969482422,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 43,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f43_labeled.svg",
+    "bounds": [
+      59.698001861572266,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 44,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f44_labeled.svg",
+    "bounds": [
+      59.698001861572266,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 45,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f45_labeled.svg",
+    "bounds": [
+      59.698001861572266,
+      99.83697509765625,
+      741.5999755859375,
+      476.135986328125
+    ],
+    "live_spans": 4,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 46,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f46_labeled.svg",
+    "bounds": [
+      60.775001525878906,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 47,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f47_labeled.svg",
+    "bounds": [
+      60.775001525878906,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 48,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f48_labeled.svg",
+    "bounds": [
+      59.698001861572266,
+      99.83697509765625,
+      712.5170288085938,
+      476.135986328125
+    ],
+    "live_spans": 1,
+    "kind": "one source image with static overlays"
+  },
+  {
+    "deck": "f",
+    "source": 49,
+    "asset": "genetics/LECT08/djot/assets/lect08f-3_point_testcross_textbook/f49_labeled.svg",
+    "bounds": [
+      59.698001861572266,
+      99.83697509765625,
+      741.5999755859375,
+      476.135986328125
+    ],
+    "live_spans": 4,
+    "kind": "one source image with static overlays"
+  }
+]
