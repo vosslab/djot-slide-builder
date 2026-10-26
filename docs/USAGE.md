@@ -5,6 +5,41 @@ Existing-presentation import is a one-time source migration workflow.
 
 For lecture conversions, complete the [manager checklist](SLIDE_CONVERSION_CHECKLIST.md).
 
+## Audit title wrapping and runts
+
+```bash
+source source_me.sh && python3 deck_tools.py audit genetics/LECT08/djot
+```
+
+Pass one Djot file or a folder tree. The JSON report lists wrapping content titles and
+paragraphs/bullets with a single-word final line or a final line narrower than one-third of
+the preceding line. A final displayed paragraph at the theme's maximum body font size is
+exempt from runt warnings; the report counts these exemptions separately. Earlier paragraphs,
+smaller text, wrapping titles, and oversized URLs still receive warnings. Each finding includes the authored slide number, source frame's starting
+line, paragraph number within that frame, chosen font size, and predicted text lines.
+Redirect stdout to save the report. Warnings return exit status 0; invalid input or compilation
+failure returns nonzero. Source text and presentation artifacts are unchanged.
+
+The audit shares the compiler's font metrics and wrapping calculation at final layout sizes;
+it does not invoke LibreOffice. Review the final rendered slide before editing wording.
+Hidden slides and cover/section/subsection/end titles are excluded. The report counts skipped
+paragraphs containing math or explicit line breaks (including compiler-inserted breaks for long
+tokens). Checks cover native text frames, including local headings; table cells and text inside
+images/SVGs need separate visual review. This audit supplements source lint and capacity checks.
+
+Visible URLs use condensed text and shrink independently, down to 12 pt, to stay on one line.
+If the space after a label is insufficient at 12 pt, the URL moves intact to the next line.
+The audit reports `url-too-wide` when an address still exceeds the full region at that floor;
+provide more layout width or review the displayed address. The compiler preserves its text and
+clickable destination. Paragraphs with an inserted URL line break are included in skipped counts.
+
+Calibration before independent URL fitting, against LECT08 A-F diagnostic PDFs: all 53 wrapping content
+titles were detected without extra title warnings. All 63 runt warnings met the runt rule
+in the PDFs, with exact line breaks matching in 61 cases. The two differences are URLs;
+native URL breaking is not modeled exactly. Fractional font sizing and ordinary hyphen/en-dash
+breaks corrected seven of the nine line-break differences in the original calibration.
+This measures warning precision on this corpus; missed runts and other decks remain unmeasured.
+
 ## Mixed text and images
 
 A panel can contain text and multiple images in source order. The compiler tries half-point

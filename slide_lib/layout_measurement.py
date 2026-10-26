@@ -30,6 +30,7 @@ ITEM_SPACE = .25
 TABLE_HORIZONTAL_PADDING = 6.0
 TABLE_VERTICAL_PADDING = 4.0
 TEXT_FRAME_CLEARANCE_PT = 1.0
+MeasuredToken = tuple[str, str, bool, bool, bool, float, int]
 TABLE_BORDER_WIDTH_PT = 1.0
 
 
@@ -67,22 +68,6 @@ def text_frame_fits(required_extent: float, measurement: TextFrameMeasurement,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> bool:
 	"""Keep one rendered point clear at the bottom of every bounded text frame."""
 	return required_extent + point_height(TEXT_FRAME_CLEARANCE_PT, theme) <= measurement.available_extent
-
-
-#============================================
-def heading_rectangle(rectangle: slide_lib.layout_primitives.LogicalRectangle,
-		extent: float) -> slide_lib.layout_primitives.LogicalRectangle:
-	"""Allocate a local heading above the horizontal body flow."""
-	return slide_lib.layout_primitives.LogicalRectangle(rectangle.x, rectangle.y, rectangle.width, extent)
-
-
-#============================================
-def remaining_after_heading(rectangle: slide_lib.layout_primitives.LogicalRectangle,
-		extent: float) -> slide_lib.layout_primitives.LogicalRectangle:
-	"""Reserve a local-heading gap above the horizontal body flow."""
-	gap = 10.0
-	return slide_lib.layout_primitives.LogicalRectangle(rectangle.x, rectangle.y + extent + gap,
-		rectangle.width, rectangle.height - extent - gap)
 
 
 def point_height(size_pt: float, theme: slide_lib.presentation_theme.PresentationTheme) -> float:
@@ -200,7 +185,8 @@ class MeasurementSession:
 		if not isinstance(profile, slide_lib.presentation_theme.FontFaceProfile):
 			raise ValueError("theme measurement profile must be a FontFaceProfile")
 		size_key = self._size_key(size_pt)
-		size_px = max(1, round(point_height(size_pt, self.theme)))
+		# Whole-pixel rounding can move an entire word across a line boundary.
+		size_px = max(1.0, point_height(size_pt, self.theme))
 		key = (self._face_identity(profile), size_key)
 		if key not in self._faces:
 			self._faces[key] = PIL.ImageFont.truetype(path, size_px, index=profile.face_index)
@@ -251,25 +237,12 @@ class MeasurementSession:
 			self._paragraphs[key] = result
 			return result
 		available = max(width - (self.theme.list_levels[level].text_position if list_item else 0.0), 1.0)
-		lines: list[list[tuple[str, str, bool, bool, bool]]] = [[]]; line_widths = [0.0]
-		for text, family, token_bold, token_italic, literal in _styled_tokens(inlines, bold, italic):
-			if text == "\n": lines.append([]); line_widths.append(0.0); continue
-			token_size = slide_lib.presentation_theme.inline_size_pt(size_pt, literal)
-			for token in _split_wrap_tokens(text):
-				for fragment_index, fragment in enumerate(self._fragment_token(
-						token, family, token_bold, token_italic, token_size, available)):
-					advance = self.advance(family, token_bold, token_italic, token_size, fragment)
-					if fragment_index or (lines[-1] and line_widths[-1] + advance > available
-							and not fragment.isspace()):
-						lines.append([]); line_widths.append(0.0)
-					if not lines[-1] and fragment.isspace(): continue
-					lines[-1].append((fragment, family, token_bold, token_italic, literal)); line_widths[-1] += advance
+		lines, _widths = self.wrap_tokens(_styled_tokens(inlines, bold, italic), size_pt, available)
 		ordinary = point_height(size_pt * self.theme.ordinary_line_spacing_em, self.theme)
 		advances = []
 		for line in lines:
-			metrics = [self.line_metrics(f, b, i,
-				slide_lib.presentation_theme.inline_size_pt(size_pt, literal))
-				for _text, f, b, i, literal in line]
+			metrics = [self.line_metrics(f, b, i, selected_size)
+				for _text, f, b, i, _literal, selected_size, _index in line]
 			advance = max(ordinary, max(item[0] for item in metrics) +
 				max(item[1] for item in metrics)) if metrics else ordinary
 			advances.append(advance)
@@ -277,6 +250,45 @@ class MeasurementSession:
 		result = (line_advance * len(lines), logical_points(line_advance, self.theme), len(lines))
 		self._paragraphs[key] = result
 		return result
+
+	def wrap_tokens(self, tokens: tuple[tuple[str, str, bool, bool, bool], ...],
+			size_pt: float, available: float) -> tuple[list[list[MeasuredToken]], list[float]]:
+		"""Share exact styled line wrapping between sizing and advisory audits."""
+		lines: list[list[MeasuredToken]] = [[]]; line_widths = [0.0]
+		for index, (text, family, token_bold, token_italic, literal) in enumerate(tokens):
+			if text == "\n": lines.append([]); line_widths.append(0.0); continue
+			token_size = slide_lib.presentation_theme.inline_size_pt(size_pt, literal)
+			if literal:
+				clearance = point_height(TEXT_FRAME_CLEARANCE_PT, self.theme)
+				minimum_width = self.advance(family, token_bold, token_italic,
+					slide_lib.presentation_theme.URL_FLOOR_SIZE_PT, text)
+				if lines[-1] and minimum_width + clearance > available - line_widths[-1]:
+					lines.append([]); line_widths.append(0.0)
+				token_size = self.fit_url_size(text, family, token_bold, token_italic,
+					token_size, available - line_widths[-1] - clearance)
+			for token in ((text,) if literal else _split_wrap_tokens(text)):
+				for fragment_index, fragment in enumerate(self._fragment_token(
+						token, family, token_bold, token_italic, token_size, available)):
+					advance = self.advance(family, token_bold, token_italic, token_size, fragment)
+					if fragment_index or (lines[-1] and line_widths[-1] + advance > available
+							and not fragment.isspace()):
+						lines.append([]); line_widths.append(0.0)
+					if not lines[-1] and fragment.isspace(): continue
+					lines[-1].append((fragment, family, token_bold, token_italic, literal,
+						token_size, index)); line_widths[-1] += advance
+		return lines, line_widths
+
+	def fit_url_size(self, text: str, family: str, bold: bool, italic: bool,
+			start: float, width: float) -> float:
+		"""Fit a visible URL independently, retaining the instructor's 12 pt floor."""
+		floor = slide_lib.presentation_theme.URL_FLOOR_SIZE_PT
+		advance = self.advance(family, bold, italic, start, text)
+		if advance <= width:
+			return start
+		size = max(floor, math.floor(start * max(width, 0) / advance * 4) / 4)
+		while size > floor and self.advance(family, bold, italic, size, text) > width:
+			size = max(floor, size - .25)
+		return size
 
 	def _fragment_token(self, token: str, family: str, bold: bool, italic: bool, size_pt: float,
 			available: float) -> tuple[str, ...]:
@@ -391,7 +403,7 @@ def paragraph_height(inlines: tuple[slide_lib.native_model.Inline, ...], size_pt
 
 
 def _split_wrap_tokens(text: str) -> tuple[str, ...]:
-	"""Keep whitespace and oversized lexical tokens deterministic during wrapping."""
+	"""Retain whitespace and allow native breaks after ordinary hyphens and en dashes."""
 	result: list[str] = []
 	current = ""
 	for character in text:
@@ -402,6 +414,9 @@ def _split_wrap_tokens(text: str) -> tuple[str, ...]:
 			result.append(character)
 		else:
 			current += character
+			if character in "-\u2010\u2013":
+				result.append(current)
+				current = ""
 	if current:
 		result.append(current)
 	return tuple(result)
@@ -775,12 +790,12 @@ class MixedFlowAllocation:
 	size_pt: float
 	blocks: tuple[slide_lib.native_model.Block, ...]
 	heights: tuple[float, ...]
-	occupied_area: float
+	score: float
 
 
-def _image_area_heights(natural: tuple[float, ...], maximum: tuple[float, ...],
+def _image_width_heights(natural: tuple[float, ...], maximum: tuple[float, ...],
 		available: float, floor_ratio: float) -> tuple[float, ...] | None:
-	"""Maximize displayed image area at vertices of the bounded height constraint."""
+	"""Maximize summed displayed widths at vertices of the bounded height constraint."""
 	minimum = tuple(height * floor_ratio for height in maximum)
 	if available < sum(minimum) - 1e-9:
 		return None
@@ -788,7 +803,7 @@ def _image_area_heights(natural: tuple[float, ...], maximum: tuple[float, ...],
 		return maximum
 	best: tuple[float, ...] | None = None
 	best_score = -1.0
-	# A convex maximum has at most one image between bounds; the slide contract caps images at six.
+	# A linear maximum has a vertex solution; the slide contract caps images at six.
 	for free in range(len(natural)):
 		others = tuple(index for index in range(len(natural)) if index != free)
 		for bounds in itertools.product((False, True), repeat=len(others)):
@@ -800,7 +815,7 @@ def _image_area_heights(natural: tuple[float, ...], maximum: tuple[float, ...],
 				continue
 			heights[free] = max(minimum[free], min(maximum[free], remaining))
 			candidate = tuple(heights)
-			score = sum(height * height / full for height, full in zip(candidate, natural))
+			score = sum(height / full for height, full in zip(candidate, natural))
 			if (score, candidate) > (best_score, best or ()):
 				best, best_score = candidate, score
 	return best
@@ -813,12 +828,21 @@ def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		rectangle: slide_lib.layout_primitives.LogicalRectangle, size_pt: float,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		session: MeasurementSession, *, review: bool = False) -> MixedFlowAllocation | None:
-	"""Optimize independent image areas, relaxing reduction bounds only for a marked preview."""
+	"""Allocate the whole region with a linear size score; retain bounds for review recovery."""
 	if not review and size_pt < theme.body_floor_size_pt:
 		return None
 	blocks = tuple(sorted(text_blocks + images, key=lambda block: block.location.line))
-	text_heights = {id(block): text_height(items_for((block,)), size_pt, rectangle.width, theme, session)
-		for block in text_blocks}
+	text_heights = {}
+	for block in text_blocks:
+		if isinstance(block, slide_lib.native_model.Heading):
+			height = paragraph_height(block.inlines, size_pt, rectangle.width, theme, bold=True, session=session)
+		elif isinstance(block, slide_lib.native_model.Table):
+			height = table_height(block, size_pt, rectangle.width, theme, session)
+		elif isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
+			height = text_height(items_for((block,)), size_pt, rectangle.width, theme, session)
+		else:
+			raise ValueError(f"{block.location}: unsupported flow content")
+		text_heights[id(block)] = height
 	natural_image_heights = {id(image): rectangle.width * image_size(deck, image)[1] /
 		image_size(deck, image)[0] for image in images}
 	available = rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme) - \
@@ -829,7 +853,7 @@ def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 	maximum = tuple(min(height, rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme))
 		for height in natural)
 	floor = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT if review else theme.body_floor_size_pt
-	image_heights = _image_area_heights(natural, maximum, available,
+	image_heights = _image_width_heights(natural, maximum, available,
 		floor / theme.ordinary_body_size_pt)
 	if image_heights is None:
 		return None
@@ -839,9 +863,10 @@ def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 	if sum(heights) + 12 * (len(blocks) - 1) + point_height(TEXT_FRAME_CLEARANCE_PT, theme) > \
 			rectangle.height + 1e-9:
 		return None
-	area = rectangle.width * (sum(text_heights.values()) + sum(
-		height * height / full for height, full in zip(image_heights, natural)))
-	return MixedFlowAllocation(size_pt, blocks, heights, area)
+	# Font size represents fixed-width text; image widths use the same logical-pixel units.
+	score = len(text_blocks) * point_height(size_pt, theme) + rectangle.width * sum(
+		height / full for height, full in zip(image_heights, natural))
+	return MixedFlowAllocation(size_pt, blocks, heights, score)
 
 
 def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.layout_model.UnsupportedSourceFact, ...]:

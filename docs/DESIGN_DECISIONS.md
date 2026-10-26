@@ -7,6 +7,82 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+### Advisory typography audit
+
+`deck_tools.py audit` checks final compiled text-frame geometry using the same styled-token
+wrapping routine as sizing. It reports source locations and predicted lines as JSON without
+changing prose or failing on typography warnings. Pytest protects detection and shared
+measurement behavior, not lecture-specific counts. Math, explicit breaks, and embedded figure
+text require separate review; compiler predictions do not establish LibreOffice rendering.
+Font advances retain fractional pixel sizes: integer rounding creates discontinuous widths
+and incorrect wrapping near a line boundary. Ordinary hyphens and en dashes are break
+opportunities; nonbreaking hyphens remain intact. Exact native line breaking for URLs that
+still exceed the region at their 12 pt floor is not modeled.
+
+### Labeled image assets
+
+Static diagram masks and highlights are retained inside the bounded source figure. Existing
+vector table images stay vector with live visible labels; do not expose text originally hidden
+under an opaque mask. Associated marks may extend the figure viewport, but slide titles and
+surrounding prose stay native. Source ODP animation targets distinguish static masks from reveals.
+Marker removal depends on restored content/behavior and sound rendering; attended playback is
+reported separately when native target/order and static evidence already verify the conversion.
+
+LECT08's reviewed labeled figures use one embedded quality-90 WebP and live SVG text at
+source-derived coordinates. The WebP includes the selected artwork and reviewed diagram marks;
+marks are rasterized, labels remain editable in the SVG. Titles/captions and surrounding prose
+remain native. Crop to the image group, not the slide, and inspect actual LibreOffice output.
+This is an explicit asset repair, not automatic importer grouping. Multi-image overlaps,
+native tables, and unresolved masks retain their own repair paths. Static fidelity does not
+clear an interaction warning. Inventory: `genetics/LECT08/djot/assets/labeled_figures.json`.
+
+### Image-owned click-to-remove covers
+
+**Decision.** A `cover` immediately follows one initially visible image in the same region,
+using normalized image-relative bounds and an explicit `disappear` action. Covers are opaque
+white native rectangles; they are projected after image layout and take no flow space.
+
+**Why.** LECT08B source 6 needs to hide the Punnett-square answers until a click. Slide-coordinate
+rectangles lose alignment when layouts move or scale their image. This source copy retains the
+rectangle but lacks animation; the instructor supplies the click intent explicitly.
+
+**Consequence.** Shared cover extraction validates ownership and actions for lint and compilation.
+Native export uses LibreOffice's `ooo-exit-disappear` visibility-to-hidden effect, confirmed against
+its [effect definitions](https://github.com/LibreOffice/core/blob/master/sd/xml/effects.xml).
+The importer does not infer animation from static rectangles. PDFs retain the initial cover;
+state-render checks and native save roundtrips remain separate from attended click playback.
+
+**Owner.** `slide_lib/image_covers.py`, `slide_lib/layout_object_builders.py`, and
+`slide_lib/odp_animation.py`; syntax in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+
+### One allocator per content region
+
+**Decision.** Jointly measure local headings, paragraphs, lists, tables, and images in their
+source order. Use the shared selector for competing content, scoring each text block by font
+size and each image by displayed width, in logical-pixel units. Preserve the existing text
+floor and image-reduction checks; optimize readable text candidates during marked recovery too.
+
+**Why.** Reserving the largest fitting local heading before sizing its image bypassed the
+shared optimizer on LECT08B source 13. Individual text-box areas also rewarded extra height.
+
+**Consequence.** Native text styling and object projection remain type-specific. Their space
+allocation is shared; separate eager-heading and paragraph/table-flow sizing paths are removed.
+
+**Owner.** `slide_lib/layout_builders.py` and `slide_lib/layout_measurement.py`.
+
+### Subsections inherit the course palette
+
+**Decision.** Use a dedicated subsection role for transition-card backgrounds and frames.
+Resolve it as a darker shade of the course accent used by section cards.
+
+**Why.** Subsections previously reused the fixed burgundy answer role, separating them from
+their course palette. A darker shade distinguishes hierarchy and retains readable white text.
+
+**Consequence.** All courses inherit this behavior through the shared exporter. Answer colors
+retain their existing role; no per-deck color configuration is needed.
+
+**Owner.** `slide_lib/layout_specialty_builders.py` and `slide_lib/odp_export.py`.
+
 ### Mixed vertical import sequences precede caption topology
 
 **Decision.** Recognize an ordinary, vertically separated, horizontally aligned sequence of
@@ -662,8 +738,13 @@ QR artwork is preserved. No source rewriting or network lookup occurs during bui
 ## Mandatory URL typography
 
 Recognize visible URL text independently of its destination. Use the condensed face and
-two-point size reduction in both measurement and resolved output runs, including URL labels
-inside explicit links and code spans. Human-readable link labels keep their ordinary typography.
+start two points below surrounding text, with an independent 12 pt floor. Shared measurement
+first fits the remaining line width; if that cannot fit at the floor, move the intact URL to
+a new line and fit the full text width. Store the chosen size on the resolved run so ODP output
+uses exactly the measured size. Keep complete display text and link destinations, including
+URL labels inside explicit links and code spans. Human-readable link labels keep their ordinary
+typography. The audit reports addresses still wider than the region at 12 pt; LibreOffice may
+wrap these exceptional addresses. Ordinary paragraph sizing retains its own readability floor.
 
 ### Recovered LECT07C formula outlines
 
@@ -725,3 +806,11 @@ Robertson's `object_construction/How_to_Draw_Drawing_and_Sketching_Objects_and_E
 "Drawing boxes in perspective" (outline hierarchy), and
 `svg_authoring/Mastering_SVG-2018.md`, "viewBox and viewport in SVG" (stable coordinates).
 The additions use simple silhouettes and matching strokes within the existing viewBox.
+
+## Final-paragraph runt exemption
+
+The Djot audit suppresses runt findings for the last displayed paragraph of a native text
+frame when its selected size reaches the theme's ordinary body-size ceiling. Use the theme
+ceiling, not compiled typography `start_size_pt`, which currently equals the selected size.
+Count suppressed runts separately; retain title-wrap and URL-width warnings. This changes
+advisory reporting only, not text, font selection, or rendering.

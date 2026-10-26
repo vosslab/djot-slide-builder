@@ -22,10 +22,13 @@ class RunStyle:
 	background: str | None = None
 	strikethrough: bool = False
 	position: str | None = None
+	size_pt: float | None = None
 
 	def __post_init__(self) -> None:
 		require_nonempty(self.font_family, "run font family")
 		require_nonempty(self.foreground, "run foreground")
+		if self.size_pt is not None:
+			require_positive_finite(self.size_pt, "resolved run font size")
 		for label, value in (("run underline", self.underline), ("run bold", self.bold),
 				("run italic", self.italic), ("run code", self.code),
 				("run literal_url", self.literal_url)):

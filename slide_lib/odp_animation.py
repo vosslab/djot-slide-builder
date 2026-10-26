@@ -46,19 +46,23 @@ def write_reveals(page: xml.etree.ElementTree.Element,
 		_qname(SMIL_NS, "dur"): "indefinite",
 	})
 	for target in targets:
-		click = xml.etree.ElementTree.SubElement(sequence, _qname(ANIMATION_NS, "par"), {
+		click_attributes = {
 			_qname(PRESENTATION_NS, "node-type"): "on-click",
 			_qname(SMIL_NS, "begin"): "next",
 			_qname(SMIL_NS, "fill"): "hold",
-		})
+		}
+		if target.reveal.effect.value == "disappear":
+			click_attributes.update({_qname(PRESENTATION_NS, "preset-class"): "exit",
+				_qname(PRESENTATION_NS, "preset-id"): "ooo-exit-disappear"})
+		click = xml.etree.ElementTree.SubElement(sequence, _qname(ANIMATION_NS, "par"), click_attributes)
 		attributes = {
 			_qname(SMIL_NS, "targetElement"): target_ids[target.target_id],
-			_qname(SMIL_NS, "dur"): "0.001s" if target.reveal.effect.value == "appear" else "1s",
+			_qname(SMIL_NS, "dur"): "0.001s" if target.reveal.effect.value in ("appear", "disappear") else "1s",
 			_qname(SMIL_NS, "fill"): "hold",
 		}
-		if target.reveal.effect.value == "appear":
+		if target.reveal.effect.value in ("appear", "disappear"):
 			attributes.update({_qname(SMIL_NS, "attributeName"): "visibility",
-				_qname(SMIL_NS, "to"): "visible"})
+				_qname(SMIL_NS, "to"): "hidden" if target.reveal.effect.value == "disappear" else "visible"})
 			xml.etree.ElementTree.SubElement(click, _qname(ANIMATION_NS, "set"), attributes)
 		elif target.reveal.effect.value == "fade":
 			attributes.update({_qname(SMIL_NS, "type"): "fade",

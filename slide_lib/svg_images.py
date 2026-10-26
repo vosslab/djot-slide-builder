@@ -27,7 +27,8 @@ def dimensions_blob(blob: bytes, source: str) -> tuple[float, float]:
 			if name.rsplit("}", 1)[-1].lower().startswith("on"):
 				raise ValueError(f"{path}: SVG components must be static")
 			if name.rsplit("}", 1)[-1] == "href" and not value.startswith((
-					"#", "data:image/png;base64,", "data:image/jpeg;base64,")):
+					"#", "data:image/png;base64,", "data:image/jpeg;base64,",
+					"data:image/webp;base64,")):
 				raise ValueError(f"{path}: SVG resources must be embedded")
 			_check_css_resources(value, path)
 		if element.tag == "{http://www.w3.org/2000/svg}style":

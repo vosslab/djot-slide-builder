@@ -24,9 +24,16 @@ ARROW_OVERLAY_PATTERN = re.compile(
 OUTLINE_OVERLAY_PATTERN = re.compile(
 	rf"\Aoutline: (?P<x>{_OVERLAY_NUMBER}) (?P<y>{_OVERLAY_NUMBER}) "
 	rf"(?P<width>{_OVERLAY_NUMBER}) (?P<height>{_OVERLAY_NUMBER})\Z")
+COVER_OVERLAY_PATTERN = re.compile(
+	rf"\Acover: (?P<x>{_OVERLAY_NUMBER}) (?P<y>{_OVERLAY_NUMBER}) "
+	rf"(?P<width>{_OVERLAY_NUMBER}) (?P<height>{_OVERLAY_NUMBER})\Z")
 
 
 ACTION_REVEALS: dict[str, slide_lib.native_model.Reveal] = {
+	"disappear": slide_lib.native_model.Reveal(
+		slide_lib.native_model.RevealEffect.DISAPPEAR,
+		slide_lib.native_model.RevealSequence.OBJECT,
+	),
 	"appear": slide_lib.native_model.Reveal(
 		slide_lib.native_model.RevealEffect.APPEAR,
 		slide_lib.native_model.RevealSequence.OBJECT,

@@ -21,14 +21,13 @@ Source: lect08e-linked_gene_chi_square.odp, slide 1.
 
 @body
 
-- State the expected testcross ratio for two unlinked genes.
-- Calculate expected counts and the chi-square statistic from offspring data.
-- Use degrees of freedom and a critical value to evaluate the null hypothesis.
-- Compare the linkage evidence when the same proportions are observed in a larger sample.
+- Predict the testcross ratio for two unlinked genes.
+- Calculate expected counts and chi-square statistics.
+- Use df and a critical value to test the null.
+- Compare linkage evidence across sample sizes.
 
 @notes
-
-Added during the October 26, 2026 review from the existing lecture content.
+Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -61,7 +60,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: one-panel
 
-# *Chi-square analysis can be used to test for linkage*
+# *Testing Linkage with Chi-Square*
 
 @body
 
@@ -143,7 +142,6 @@ Native table transposed for readable phenotype rows; original labels, counts, an
 
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -156,12 +154,14 @@ Native table transposed for readable phenotype rows; original labels, counts, an
 | (aabb) |  | 239 |  | |  |
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 11.
 
+
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -174,12 +174,14 @@ Source: lect08e-linked_gene_chi_square.odp, slide 11.
 | (aabb) | 225 | 239 |  | |  |
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 12.
 
+
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -192,12 +194,14 @@ Source: lect08e-linked_gene_chi_square.odp, slide 12.
 | (aabb) | 225 | 239 | 14 | |  |
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 13.
 
+
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -210,12 +214,14 @@ Source: lect08e-linked_gene_chi_square.odp, slide 13.
 | (aabb) | 225 | 239 | 14 | 196 |  |
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 14.
 
+
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -228,12 +234,14 @@ Source: lect08e-linked_gene_chi_square.odp, slide 14.
 | (aabb) | 225 | 239 | 14 | 196 | 0.871 |
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 15.
 
+
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -246,8 +254,11 @@ Source: lect08e-linked_gene_chi_square.odp, slide 15.
 | (aabb) | 225 | 239 | 14 | 196 | 0.871 |
 |  |  |  |  | *&chi;^2^ = Sum* | 2.142 |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 16.
+
 
 === layout: one-panel
 
@@ -295,7 +306,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 16.
 
 === layout: one-panel
 
-# Figure 15.UN03b
 
 @body
 
@@ -308,12 +318,15 @@ Source: lect08e-linked_gene_chi_square.odp, slide 16.
 | (aabb) | 225 | 239 |  | |  |
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
+Figure 15.UN03b
+
 @notes
 Source: lect08e-linked_gene_chi_square.odp, slide 21.
 
+
 === layout: one-panel
 
-# *Pretend we got the exact same ratios with 10 times the data*
+# *Same Ratios, Ten Times the Data*
 
 @body
 

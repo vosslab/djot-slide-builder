@@ -178,11 +178,28 @@ def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], 
 		) -> tuple[slide_lib.layout_content.InlineContent, ...]:
 	"""Emit exact-width, grapheme-safe break markers retained by native adapters."""
 	result: list[slide_lib.layout_content.InlineContent] = []
-	for inline in inlines:
+	url_sizes = {}
+	if any(isinstance(run, slide_lib.layout_content.TextRun) and run.style.literal_url for run in inlines):
+		measure = session or slide_lib.layout_measurement.MeasurementSession(theme)
+		tokens = tuple((run.text, run.style.font_family, run.style.bold, run.style.italic,
+			run.style.literal_url) if isinstance(run, slide_lib.layout_content.TextRun)
+			else ("\n", "", False, False, False) for run in inlines)
+		lines, _widths = measure.wrap_tokens(tokens, size, max(width, 1.0))
+		for line_index, line in enumerate(lines):
+			for position, token in enumerate(line):
+				if token[4] and token[6] not in url_sizes:
+					url_sizes[token[6]] = (token[5], line_index > 0 and position == 0)
+	for index, inline in enumerate(inlines):
 		if not isinstance(inline, slide_lib.layout_content.TextRun):
 			result.append(inline)
 			continue
 		style = inline.style
+		if style.literal_url:
+			url_size, new_line = url_sizes[index]
+			if new_line and result and not isinstance(result[-1], slide_lib.layout_content.LineBreak):
+				result.append(slide_lib.layout_content.LineBreak())
+			result.append(dataclasses.replace(inline, style=dataclasses.replace(style, size_pt=url_size)))
+			continue
 		run_size = slide_lib.presentation_theme.inline_size_pt(size, style.literal_url)
 		for token in re.findall(r"\s+|\S+", inline.text):
 			fragments = slide_lib.layout_measurement.fragment_text(token, style.font_family,
@@ -315,6 +332,7 @@ def image_overlay_object(object_id: str,
 				OVERLAY_ARROW_WIDTH_PT, line_color), accessibility)
 		rectangle = displayed_image
 	else:
+		is_cover = isinstance(overlay, slide_lib.native_model.ImageCover)
 		rectangle = slide_lib.layout_primitives.LogicalRectangle(
 			displayed_image.x + overlay.x * displayed_image.width,
 			displayed_image.y + overlay.y * displayed_image.height,
@@ -322,9 +340,11 @@ def image_overlay_object(object_id: str,
 			overlay.height * displayed_image.height)
 		content = slide_lib.layout_content.ShapeContent(
 			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
-			slide_lib.layout_content.ShapeStyle(None,
+			slide_lib.layout_content.ShapeStyle(
+				slide_lib.layout_primitives.StyleRole.DECORATION if is_cover else None,
 				slide_lib.layout_primitives.StyleRole.ACCENT,
-				OVERLAY_LINE_WIDTH_PT, slide_lib.layout_primitives.LinePattern.SOLID,
+				OVERLAY_LINE_WIDTH_PT, slide_lib.layout_primitives.LinePattern.NONE if is_cover
+				else slide_lib.layout_primitives.LinePattern.SOLID,
 				line_color=line_color), accessibility)
 	return slide_lib.layout_model.LayoutObject(object_id,
 		slide_lib.layout_primitives.PresentationRole.GRAPHIC,

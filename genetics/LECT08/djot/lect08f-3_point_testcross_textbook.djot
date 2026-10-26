@@ -21,14 +21,13 @@ Source: lect08f-3_point_testcross_textbook.odp, slide 1.
 
 @body
 
-- Identify parental and double-crossover classes in a three-point testcross.
-- Determine the middle gene by comparing parental and double-crossover types.
-- Summarize the offspring classes for each chromosome interval.
-- Calculate map distances while counting double crossovers in both intervals.
+- Identify parental and double-crossover offspring.
+- Find the middle gene from double crossovers.
+- Summarize offspring by chromosome interval.
+- Include double crossovers in both map distances.
 
 @notes
-
-Added during the October 26, 2026 review from the existing lecture content.
+Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -54,7 +53,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: one-panel
 
-# *Missed Recombination #2\: Double crossover*
+# *Missed Double Crossovers (#2)*
 
 @body
 
@@ -65,7 +64,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 === layout: two-panels
 @replaceme
 
-# *Results of multiple cross-overs depend on the number of strands involved*
+# *Multiple Crossovers\: Strands Matter*
 
 @left
 
@@ -77,7 +76,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: two-panels
 
-# *Three-point crosses to detect two-strand double cross-overs*
+# *Detecting Two-Strand Double Crossovers*
 
 @left
 
@@ -97,7 +96,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: one-panel
 
-# *Can we determine the gene order without distance calculations?*
+# *Gene Order Without Map Distances?*
 
 @body
 
@@ -129,7 +128,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: one-panel
 
-# [*Quick Gene Order Method for Three-Point Test-Cross*]{color=#55215B}
+# [*Quick Gene Order in Three-Point Crosses*]{color=#55215B}
 
 @body
 
@@ -148,53 +147,63 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 ![Slide image 6](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
 # *Step 1\: Determine Parental types*
 
-@top
+@body
 
-![Slide image 7](assets/lect08f-3_point_testcross_textbook/image_007.png)
+$\frac{\text{Lz Gl Su}}{\text{lz gl su}}$
 
-@bottom
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f13_labeled.svg)
 
-![Slide image 6](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 13.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 2\: Locate double crossovers*
 
 @body
 
-![Slide image 7](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f14_labeled.svg)
 
-=== layout: stacked-panels
-@replaceme
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 14.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
 
 # *Step 2\: Locate double crossovers*
 
-@top
+@body
 
-![Slide image 8](assets/lect08f-3_point_testcross_textbook/image_008.png)
+the double-crossover chromosomes are
 
-@bottom
+*Lz Gl su* and *lz gl Su*
 
-![Slide image 7](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f15_labeled.svg)
 
-=== layout: stacked-panels
-@replaceme
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 15.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
 
 # *Step 3\: Determine gene order*
 
-@top
+@body
 
-![Slide image 8](assets/lect08f-3_point_testcross_textbook/image_008.png)
+the double-crossover chromosomes are
 
-@bottom
+*Lz Gl su* and *lz gl Su*
 
-![Slide image 8](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f16_labeled.svg)
+
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 16.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: section
 
@@ -203,7 +212,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 === layout: one-panel
 @replaceme
 
-# *How many different ways to write order of A B C*
+# *How Many Orders for A B C?*
 
 @body
 
@@ -256,7 +265,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 === layout: one-panel
 @replaceme
 
-# *How many different ways to write order of A B C D*
+# *How Many Orders for A B C D?*
 
 @body
 
@@ -482,13 +491,16 @@ Added during the October 26, 2026 review from the existing lecture content.
 # Now let&#8217;s find the distances...
 
 === layout: one-panel
-@replaceme
 
 # *Step 4\: Summarize all genotypes*
 
 @body
 
-![Slide image 10](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f31_labeled.svg)
+
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 31.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -499,31 +511,40 @@ Added during the October 26, 2026 review from the existing lecture content.
 ![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
 
 === layout: one-panel
-@replaceme
 
 # *Step 4\: Summarize Crosses*
 
 @body
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f33_labeled.svg)
+
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 33.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 4\: Summarize Crosses*
 
 @body
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f34_labeled.svg)
+
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 34.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 4\: Summarize Crosses*
 
 @body
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f35_labeled.svg)
+
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 35.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -534,159 +555,160 @@ Added during the October 26, 2026 review from the existing lecture content.
 ![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f37_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 37.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f38_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 38.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f39_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 39.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f40_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 40.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f41_labeled.svg)
 
-- Lz-Su Distance
-- (40+33+4+2)/740 x100%
-- = 10.6 cM
-
-- censored
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 41.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f42_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 42.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f43_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 43.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f44_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 44.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f45_labeled.svg)
 
-- Lz-Gl Distance
-- (40+33+59+44)/740 x100%
-- = 23.7 cM
-
-- censored
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 45.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f46_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 46.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f47_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 47.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-- censored
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f48_labeled.svg)
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 48.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
-@replaceme
 
 # *Step 5\: Find distance between genes*
 
 @body
 
-![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f49_labeled.svg)
 
-- Su-Gl Distance
-- (59+44+4+2)/740 x100%
-- = 14.7 cM
-
-- censored
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 49.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
@@ -722,21 +744,16 @@ Added during the October 26, 2026 review from the existing lecture content.
 - Lz Gl Su *-OR-* Gl Lz Su *-OR-* Lz Su Gl
 
 === layout: one-panel
-@replaceme
 
 # *Your Turn*
 
 @body
 
-![Slide image 15](assets/lect08f-3_point_testcross_textbook/image_015.png)
+![Labeled diagram from source slide 52](assets/lect08f-3_point_testcross_textbook/f52_labeled.svg)
 
-- (a) parental genotype
-- (b) double crossovers
-- (c) correct gene order
-- (d) summarize genotypes
-- (e) gene distances
-
-- 1000
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 52.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
 @replaceme
@@ -745,16 +762,12 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 @body
 
-![Slide image 15](assets/lect08f-3_point_testcross_textbook/image_015.png)
+![Labeled diagram from source slide 53](assets/lect08f-3_point_testcross_textbook/f53_labeled.svg)
 
-- (a)	F g H / f G h
-- (b)	F G H and f g h
-- (c)	F G H is correct order
-- (H G F is also valid)
-- (d)	F/G = 41+33+4+2 ;
-- G/H = 50+64+4+2
-- (e)	F to G\: 80/1000 = 8 m.u.
-- G to H\: 120/1000 = 12 m.u.
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 53.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
+Source reveal/mask behavior remains unresolved; retain review marker.
 
 === layout: section
 
@@ -766,9 +779,9 @@ Added during the October 26, 2026 review from the existing lecture content.
 
 @body
 
-- Identify the parental types and the double-crossover types first.
+- Identify parental and double-crossover types first.
 - Compare parental and double-crossover combinations to find the middle gene.
-- Summarize recombinant offspring separately for each interval.
+- Count recombinant offspring for each interval.
 - Include double crossovers in both interval distances when constructing the map.
 
 @notes

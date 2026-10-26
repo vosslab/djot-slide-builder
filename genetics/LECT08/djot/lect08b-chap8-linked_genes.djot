@@ -21,14 +21,13 @@ Source: lect08b-chap8-linked_genes.odp, slide 1.
 
 @body
 
-- Explain when genes follow Mendel's law of independent assortment.
-- Distinguish linked genes from independently assorting genes.
-- Identify parental and recombinant allele combinations in a testcross.
-- Explain how crossing over produces recombinant gametes.
+- Explain when genes assort independently.
+- Distinguish linkage from independent assortment.
+- Identify parental and recombinant progeny.
+- Explain how crossing over recombines alleles.
 
 @notes
-
-Added during the October 26, 2026 review from the existing lecture content.
+Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -67,18 +66,18 @@ Added during the October 26, 2026 review from the existing lecture content.
   - Wrinkled/round does not affect yellow/green
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
-![Slide image 1](assets/lect08b-chap8-linked_genes/image_001.jpg)
+![Labeled diagram from source slide 4](assets/lect08b-chap8-linked_genes/b4_labeled.svg)
 
-Native reconstruction needed: 68 positioned diagram labels.
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 4.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: two-panels
 
-# *Alleles of two genes segregate independently*
+# *Independent Segregation of Two Genes*
 
 @left
 
@@ -89,9 +88,8 @@ Native reconstruction needed: 68 positioned diagram labels.
 - Four kinds of gametes are produced in equal proportions
 
 === layout: two-panels
-@replaceme
 
-# *Alleles of two genes segregate independently*
+# *Independent Segregation of Two Genes*
 
 @left
 
@@ -101,10 +99,19 @@ Native reconstruction needed: 68 positioned diagram labels.
 
 ![Slide image 3](assets/lect08b-chap8-linked_genes/image_003.png)
 
+=> disappear
+cover: 32.431 23.192 64.848 74.156
+
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 6.
+The instructor confirms the Punnett-square cover disappears on click; this source copy retains
+the rectangle but lacks its animation. Cover bounds are percentages of the right image.
+
+
 === layout: two-panels
 @replaceme
 
-# *A testcross can be used to show two genes are unlinked*
+# *Testcross Evidence for Unlinked Genes*
 
 @left
 
@@ -121,7 +128,7 @@ Native reconstruction needed: 68 positioned diagram labels.
 === layout: one-panel
 @replaceme
 
-# *Genes on different chromosomes assort independently*
+# *Assortment Across Chromosomes*
 
 @body
 
@@ -144,24 +151,30 @@ Native reconstruction needed: 68 positioned diagram labels.
 
 === layout: one-panel
 
-# *Alleles of linked genes can be in* *_cis_* *or* *_trans_* *configuration*
+# *_Cis_ and _Trans_ Configurations*
 
 @body
 
 ![Slide image 6](assets/lect08b-chap8-linked_genes/image_006.jpg)
 
-=== layout: one-panel
+=== layout: two-over-one-panels
 @replaceme
 
 # *Cis-Trans Isomers*
 
-@body
+@top-left
 
-![Slide image 7](assets/lect08b-chap8-linked_genes/image_007.png)
+## [*_cis_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on the same side.*
 
-- [*_cis_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on the same side.*
+![Cis isomer](assets/lect08b-chap8-linked_genes/cis_isomer.svg)
 
-- [*_trans_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on opposite sides.*
+@top-right
+
+## [*_trans_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on opposite sides.*
+
+![Trans isomer](assets/lect08b-chap8-linked_genes/trans_isomer.svg)
+
+@bottom
 
 - Geometric isomers are compounds with the same covalent partnerships that differ in their spatial arrangement around a carbon-carbon double bond.
 - The double bond does not allow atoms to rotate freely around the bond axis.
@@ -293,42 +306,19 @@ Native reconstruction needed: 68 positioned diagram labels.
 - Morgan did other experiments with fruit flies to see how linkage affects inheritance of two characters
 - Morgan crossed flies that differed in traits of body color and wing size
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
+@body
 
-@top
-
-![Slide image 10](assets/lect08b-chap8-linked_genes/image_010.jpg)
-
-- [*Experiment*]{color=#FF6600}
-
-- *P Generation (homozygous)*
-
-- *Wild type (gray body, normal  wings)*
-
-- *Double mutant (black body, vestigial  wings)*
-
-- *F1 dihybrid testcross*
-
-- *Wild-type F1 dihybrid (gray body, normal  wings)*
-
-- *Homozygous recessive (black body, vestigial  wings)*
-
-- *_b_**+* *_b_**+* *_vg_**+* *_vg_**+*
-
-- *_b_**+* *_b_* *_vg_**+* *_vg_*
-
-- *_b_* *_b_* *_vg_* *_vg_*
-
-- *_b_* *_b_* *_vg_* *_vg_*
+![Labeled diagram from source slide 21](assets/lect08b-chap8-linked_genes/b21_labeled.svg)
 
 - Morgan mated true-breeding P (parental) generation flies to produce heterozygous F1 dihybrids all of which are wild-type in appearance.
-
-@bottom
-
 - He then mated wild-type F1 dihybrid females with homozygous recessive males.
 - This testcross will reveal the genotype of the eggs made by the dihybrid female.
+
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 21.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
 
@@ -339,68 +329,42 @@ Native reconstruction needed: 68 positioned diagram labels.
 - He noted that these [*genes do not assort independently*]{underline=true}, and reasoned that they were on the same chromosome
 
 === layout: one-panel
-@replaceme
-
-# Figure 15.UN01
 
 @body
 
-![Slide image 11](assets/lect08b-chap8-linked_genes/image_011.jpg)
+![Labeled diagram from source slide 23](assets/lect08b-chap8-linked_genes/b23_labeled.svg)
 
-- *Most offspring*
+Figure 15.UN01
 
-- *F1 dihybrid female and homozygous*
-- *recessive male in testcross*
-
-- *or*
-
-- *_b_**+* *_vg_**+*
-
-- *_b_**+* *_vg_**+*
-
-- *_b_*  *_vg_*
-
-- *_b_*  *_vg_*
-
-- *_b_*  *_vg_*
-
-- *_b_*  *_vg_*
-
-- *_b_*  *_vg_*
-
-- *_b_*  *_vg_*
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 23.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
-![Slide image 12](assets/lect08b-chap8-linked_genes/image_012.jpg)
+![Labeled diagram from source slide 24](assets/lect08b-chap8-linked_genes/b24_labeled.svg)
 
-Native reconstruction needed: 24 positioned diagram labels.
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 24.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
-- [*Results*]{color=#FF6600}
+| PREDICTED RATIOS |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| Genes on different chromosomes: | 1 | 1 | 1 | 1 |
+| Genes on the same chromosome: | 1 | 1 | 0 | 0 |
+| [Results]{color=#FF6600} | 965 | 944 | 206 | 185 |
 
-- *PREDICTED RATIOS*
+Both predictions are wrong...
 
-- *Genes on the same chromosome\:*
-
-- *Genes on different chromosomes\:*
-
-- *1       \:      1      \:      1      \:       1*
-
-- *1       \:      1      \:      0      \:        0*
-
-- *965     \:    944    \:    206    \:     185*
-
-- Both predictions are wrong...
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 25.
+Native table restores prediction/result row relationships with unchanged source values.
 
 === layout: one-panel
 
@@ -413,7 +377,7 @@ Native reconstruction needed: 24 positioned diagram labels.
 
 === layout: one-panel
 
-# *Recombination of Linked Genes\: Crossing Over*
+# *Linked Genes and Crossing Over*
 
 @body
 
@@ -433,7 +397,7 @@ Native reconstruction needed: 24 positioned diagram labels.
 
 === layout: one-panel
 
-# *Homologous chromosomes can undergo extensive crossing over*
+# *Extensive Crossing Over in Homologs*
 
 @body
 
@@ -442,7 +406,6 @@ Native reconstruction needed: 24 positioned diagram labels.
 === layout: one-panel
 @replaceme
 
-# Figure 13.9b
 
 @body
 
@@ -462,20 +425,25 @@ Native reconstruction needed: 24 positioned diagram labels.
 
 - Holliday junction
 
-=== layout: one-panel
-@replaceme
+Figure 13.9b
 
-# Figure 13.12-5
+
+
+=== layout: one-panel
 
 @body
 
-![Slide image 16](assets/lect08b-chap8-linked_genes/image_016.jpg)
+![Labeled diagram from source slide 31](assets/lect08b-chap8-linked_genes/b31_labeled.svg)
 
-Native reconstruction needed: 16 positioned diagram labels.
+Figure 13.12-5
+
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 31.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: two-panels
 
-# *Crossing-over produces recombinant gametes*
+# *Crossing Over and Recombinant Gametes*
 
 @left
 
@@ -499,71 +467,60 @@ Native reconstruction needed: 16 positioned diagram labels.
 - *Syntenic* - refers to genes in the same chromosome regardless of whether they show independent assortment or linkage
 
 === layout: one-panel
-@replaceme
-
-# Figure 15.10a
 
 @body
 
-![Slide image 18](assets/lect08b-chap8-linked_genes/image_018.jpg)
+![Labeled diagram from source slide 34](assets/lect08b-chap8-linked_genes/b34_labeled.svg)
 
-- *P generation (homozygous)*
+Figure 15.10a
 
-- *Wild type (gray body,  normal wings)*
-
-- *_b_**+*  *_vg_**+*
-
-- *Double mutant (black body, vestigial wings)*
-
-- *Wild-type F1  dihybrid (gray body, normal wings)*
-
-- *_b_**+*  *_vg_**+*
-
-- *_b_**+*  *_vg_**+*
-
-- *_b_*   *_vg_*
-
-- *_b_*   *_vg_*
-
-- *_b_*  *_vg_*
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 34.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
 @replaceme
 
-# Figure 15.10b
-
 @body
 
-![Slide image 19](assets/lect08b-chap8-linked_genes/image_019.jpg)
+![Labeled diagram from source slide 35](assets/lect08b-chap8-linked_genes/b35_labeled.svg)
 
-Native reconstruction needed: 30 positioned diagram labels.
+Figure 15.10b
 
-=== layout: one-panel
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 35.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
+Source reveal/mask behavior remains unresolved; retain review marker.
+
+=== layout: two-panels
 @replaceme
 
+@left
 
-@body
+![Source slide 36 meiosis diagram](assets/lect08b-chap8-linked_genes/b36_artwork.svg)
 
-![Slide image 20](assets/lect08b-chap8-linked_genes/image_020.png)
-
-- recombinant type
-
-- recombinant type
+@right
 
 - parental type
-
+- recombinant type
+- recombinant type
 - parental type
 
-=== layout: one-panel
-@replaceme
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 36.
+The earlier conversion used a different meiosis illustration. The source artwork is restored; native labels retain top-to-bottom source order. Review marker remains pending closer spatial association of each label with its product.
 
-# Figure 15.UN02
+=== layout: one-panel
 
 @body
 
-![Slide image 21](assets/lect08b-chap8-linked_genes/image_021.jpg)
+![Labeled diagram from source slide 37](assets/lect08b-chap8-linked_genes/b37_labeled.svg)
 
-Native reconstruction needed: 13 positioned diagram labels.
+Figure 15.UN02
+
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 37.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: section
 

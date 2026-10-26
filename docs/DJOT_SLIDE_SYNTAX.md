@@ -209,7 +209,8 @@ Author (2026). _Article title._ https://example.org/article
 ```
 
 Citations appear as editable condensed text in the bottom margin. Ordinary text starts at 14 pt;
-visible URLs use the normal 2 pt reduction. Normal layout slots retain their full space.
+visible URLs start 2 pt smaller and fit independently with a 12 pt floor.
+Normal layout slots retain their full space.
 Longer citations fit the margin by reducing type; capacity reports flag sizes below 12 pt.
 On dark section/closing slides, a white footer strip keeps the citation readable. Reference-only
 slides move their existing reference label slightly upward to keep it separate from the citation.
@@ -406,6 +407,28 @@ The arrow identifies migration; advance once to reveal the sample region.
 The shapes remain editable LibreOffice vector objects. Omit `color` to use the deck accent. This
 first version accepts only one-ended `arrow` and no-fill `outline` records owned by the single image
 in `big-image`; it does not expose page coordinates or a general drawing language.
+
+### Click-to-remove image covers
+
+Place one opaque white cover immediately after its image in the same region:
+
+```djot
+![Punnett square](assets/punnett_square.png)
+
+=> disappear
+cover: 32.431 23.192 64.848 74.156
+```
+
+The four values are left, top, width, and height, as percentages of the displayed image.
+The cover follows the image's final position and scale, including contain-fit margins within
+its layout slot. It consumes no layout space. Cropping or replacing the image content requires
+checking its relative cover bounds again.
+
+This bounded feature accepts one cover per initially visible image, with `disappear` and no
+attributes. It works in ordinary content regions as well as the `big-image` image region.
+The ODP contains a native editable rectangle and an on-click exit effect. Static PDFs retain
+the cover; use separate before/after state renders when reviewing its placement. An exported
+animation tree and state renders do not establish actual slideshow click playback.
 
 ## Teaching content
 

@@ -251,12 +251,15 @@ def parse_image(path: pathlib.Path, line: int, source: str) -> slide_lib.native_
 
 def parse_image_overlay(path: pathlib.Path, line: int,
 		source: str) -> slide_lib.native_model.ImageArrow | slide_lib.native_model.ImageOutline | None:
-	"""Parse one normalized image-relative arrow or outline directive."""
+	"""Parse one normalized image-relative annotation directive."""
 	arrow = slide_lib.djot_grammar.ARROW_OVERLAY_PATTERN.fullmatch(source)
 	outline = slide_lib.djot_grammar.OUTLINE_OVERLAY_PATTERN.fullmatch(source)
-	if arrow is None and outline is None:
+	cover = slide_lib.djot_grammar.COVER_OVERLAY_PATTERN.fullmatch(source)
+	if cover is None and source.startswith('cover:'):
+		fail(path, line, 'cover requires four percentages between 0 and 100')
+	if arrow is None and outline is None and cover is None:
 		return None
-	match = arrow if arrow is not None else outline
+	match = arrow or outline or cover
 	values = tuple(float(value) / 100.0 for value in match.groups())
 	if any(value < 0 or value > 1 for value in values):
 		fail(path, line, "image overlay coordinates must be between 0 and 100")
@@ -268,7 +271,8 @@ def parse_image_overlay(path: pathlib.Path, line: int,
 		fail(path, line, "image outline width and height must be positive")
 	if values[0] + values[2] > 1 or values[1] + values[3] > 1:
 		fail(path, line, "image outlines must remain inside the displayed image")
-	return slide_lib.native_model.ImageOutline(location(path, line), *values)
+	rectangle_type = slide_lib.native_model.ImageCover if cover is not None else slide_lib.native_model.ImageOutline
+	return rectangle_type(location(path, line), *values)
 
 
 #============================================

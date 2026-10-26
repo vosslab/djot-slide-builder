@@ -81,6 +81,7 @@ class StyleRole(enum.Enum):
 	MUTED = "muted"
 	DECORATION = "decoration"
 	TRANSITION = "transition"
+	SUBSECTION = "subsection"
 	ANSWER = "answer"
 	PANEL = "panel"
 

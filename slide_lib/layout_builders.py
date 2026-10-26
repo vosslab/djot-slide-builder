@@ -112,31 +112,19 @@ def _cell_fits_floor(deck: slide_lib.native_model.Deck, cell: slide_lib.native_m
 		rectangle: slide_lib.layout_primitives.LogicalRectangle,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		session: slide_lib.layout_measurement.MeasurementSession) -> bool:
-	headings = tuple(block for block in cell.blocks if isinstance(block, slide_lib.native_model.Heading))
-	if headings:
-		heading = headings[0]
-		measure = slide_lib.layout_measurement.text_frame_measurement(rectangle)
-		height = slide_lib.layout_measurement.paragraph_height(
-			heading.inlines, theme.body_floor_size_pt, measure.wrapping_extent, theme,
-			bold=True, session=session)
-		if not slide_lib.layout_measurement.text_frame_fits(height + 10, measure, theme):
-			return False
-		rectangle = slide_lib.layout_measurement.remaining_after_heading(rectangle, height)
-	blocks = tuple(block for block in cell.blocks if not isinstance(block, slide_lib.native_model.Heading))
+	blocks = cell.blocks
 	images = tuple(block for block in blocks if isinstance(block, slide_lib.native_model.Image))
 	tables = tuple(block for block in blocks if isinstance(block, slide_lib.native_model.Table))
 	text = tuple(block for block in blocks if isinstance(block,
-		(slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
+		(slide_lib.native_model.Heading, slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
 	if tables and len(blocks) == 1:
 		return slide_lib.layout_measurement.text_frame_fits(slide_lib.layout_measurement.table_height(
 			tables[0], theme.body_floor_size_pt, rectangle.width, theme, session),
 			slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
-	if tables or images and text or len(text) > 1 and any(
-			slide_lib.editable_text.has_reveal(block) for block in text):
-		if images and text:
-			return _mixed_flow_allocation_at_size(deck, text, images, rectangle,
-				theme.body_floor_size_pt, theme, session) is not None
-		return _flow_fits_at_size(deck, blocks, rectangle, theme.body_floor_size_pt, theme, session)
+	if tables or images and text or any(isinstance(block, slide_lib.native_model.Heading) for block in text) or (
+		len(text) > 1 and any(slide_lib.editable_text.has_reveal(block) for block in text)):
+		return slide_lib.layout_measurement.mixed_flow_allocation(deck, text + tables, images, rectangle,
+			theme.body_floor_size_pt, theme, session) is not None
 	if text:
 		measure = slide_lib.layout_measurement.text_frame_measurement(rectangle)
 		return slide_lib.layout_measurement.text_frame_fits(slide_lib.layout_measurement.text_height(
@@ -315,48 +303,19 @@ def _cell_objects(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mode
 	"""Build source-ordered content inside one named layout slot."""
 	objects: list[slide_lib.layout_model.LayoutObject] = []
 	blocks = cell.blocks
-	headings = tuple(block for block in blocks if isinstance(block, slide_lib.native_model.Heading))
-	if headings:
-		heading = headings[0]
-		measure = slide_lib.layout_measurement.text_frame_measurement(rectangle)
-		size = slide_lib.layout_measurement.largest_fitting_size(
-			theme.ordinary_body_size_pt, slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT,
-		lambda candidate: slide_lib.layout_measurement.text_frame_fits(
-			slide_lib.layout_measurement.paragraph_height(heading.inlines, candidate,
-				measure.wrapping_extent, theme, bold=True, session=session) + 10, measure, theme))
-		if size is None:
-			raise slide_lib.capacity_report.PhysicalCapacityError(heading.location, contract.name,
-				slot_name, theme.body_floor_size_pt,
-				slide_lib.capacity_report.CapacityCause.LOCAL_HEADING,
-				slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT)
-		if size < theme.body_floor_size_pt:
-			session.record_capacity(heading.location, contract.name, slot_name, size,
-				theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.LOCAL_HEADING)
-		height = slide_lib.layout_measurement.paragraph_height(
-			heading.inlines, size, measure.wrapping_extent, theme, bold=True, session=session)
-		heading_rect = slide_lib.layout_measurement.heading_rectangle(rectangle, height)
-		objects.append(slide_lib.layout_object_builders.text_object(
-			f"{slot_name}-heading", heading, heading_rect, size,
-			theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.LOCAL_HEADING, frame,
-			slot_name, order, slide_lib.layout_primitives.PlaceholderKind.NONE, theme, bold=True, session=session))
-		rectangle = slide_lib.layout_measurement.remaining_after_heading(rectangle, height)
-	content_blocks = tuple(block for block in blocks if not isinstance(block, slide_lib.native_model.Heading))
+	content_blocks = blocks
 	images = tuple(block for block in content_blocks if isinstance(block,
 		slide_lib.native_model.Image))
 	tables = tuple(block for block in content_blocks if isinstance(block, slide_lib.native_model.Table))
 	text_blocks = tuple(block for block in content_blocks if isinstance(block,
-		(slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
+		(slide_lib.native_model.Heading, slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
 	if tables and len(content_blocks) == 1:
 		objects.append(slide_lib.layout_object_builders.table_object(
 			f"{slot_name}-table", tables[0], rectangle, theme, contract.name,
-			slot_name, order + len(objects), frame, session=session))
+			slot_name, order, frame, session=session))
 		return objects
-	if tables:
-		return objects + _ordered_flow(deck, content_blocks, rectangle, theme, contract.name, slot_name,
-			order + len(objects), frame, session)
-	if images and text_blocks:
-		return objects + _mixed_flow(deck, text_blocks, images, rectangle, theme, contract.name, slot_name,
-			order + len(objects), frame, session)
+	if tables or images and text_blocks or any(isinstance(block, slide_lib.native_model.Heading) for block in text_blocks):
+		return _ordered_flow(deck, content_blocks, rectangle, theme, contract.name, slot_name, order, frame, session)
 	if images:
 		width = (rectangle.width - 12 * (len(images) - 1)) / len(images)
 		for image_index, image in enumerate(images):
@@ -393,17 +352,23 @@ def _ordered_flow(deck: slide_lib.native_model.Deck, blocks: tuple[slide_lib.nat
 		frame: slide_lib.layout_primitives.FrameTextProperties,
 		session: slide_lib.layout_measurement.MeasurementSession) -> list[slide_lib.layout_model.LayoutObject]:
 	"""Plan mixed paragraph/list/table/image source in its authored vertical order."""
-	size, heights = _flow_size_and_heights(deck, blocks, rectangle, theme, layout, slot, session)
+	images = tuple(block for block in blocks if isinstance(block, slide_lib.native_model.Image))
+	text = tuple(block for block in blocks if not isinstance(block, slide_lib.native_model.Image))
+	selected = _select_mixed_flow_allocation(deck, text, images, rectangle, theme, layout, slot, session)
+	size, heights = selected.size_pt, selected.heights
 	objects: list[slide_lib.layout_model.LayoutObject] = []
 	y = rectangle.y
-	for block, height in zip(blocks, heights):
+	for block, height in zip(selected.blocks, heights):
 		allocation = slide_lib.layout_primitives.LogicalRectangle(rectangle.x, y, rectangle.width, height)
 		object_id = f"{slot}-{len(objects)}"
-		if isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
+		if isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
+			is_heading = isinstance(block, slide_lib.native_model.Heading)
+			role = (slide_lib.layout_primitives.StyleRole.LOCAL_HEADING if is_heading
+				else slide_lib.layout_primitives.StyleRole.OUTLINE)
 			objects.append(slide_lib.layout_object_builders.text_object(
 				object_id, block, allocation, size, theme.body_floor_size_pt,
-				slide_lib.layout_primitives.StyleRole.OUTLINE, frame, slot, order + len(objects),
-				slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
+				role, frame, slot, order + len(objects),
+				slide_lib.layout_primitives.PlaceholderKind.NONE, theme, bold=is_heading, session=session))
 		elif isinstance(block, slide_lib.native_model.Table):
 			objects.append(slide_lib.layout_object_builders.table_object(
 				object_id, block, allocation, theme, layout, slot, order + len(objects), frame,
@@ -416,44 +381,28 @@ def _ordered_flow(deck: slide_lib.native_model.Deck, blocks: tuple[slide_lib.nat
 		y += height + 12
 	return objects
 
-def _mixed_flow(deck: slide_lib.native_model.Deck, text_blocks: tuple[slide_lib.native_model.Block, ...],
-		images: tuple[slide_lib.native_model.Image, ...], rectangle: slide_lib.layout_primitives.LogicalRectangle,
-			theme: slide_lib.presentation_theme.PresentationTheme, layout: str, slot: str, order: int,
-			frame: slide_lib.layout_primitives.FrameTextProperties,
-			session: slide_lib.layout_measurement.MeasurementSession) -> list[slide_lib.layout_model.LayoutObject]:
-	"""Allocate mixed text/image flow in source order at a common body floor-safe size."""
-	allocation = _select_mixed_flow_allocation(deck, text_blocks, images, rectangle, theme, layout, slot, session)
-	y = rectangle.y
-	objects: list[slide_lib.layout_model.LayoutObject] = []
-	for item, height in zip(allocation.blocks, allocation.heights):
-		item_rect = slide_lib.layout_primitives.LogicalRectangle(rectangle.x, y, rectangle.width, height)
-		if isinstance(item, slide_lib.native_model.Image):
-			objects.append(slide_lib.layout_object_builders.picture_object(
-				f"{slot}-image-{len(objects)}", deck, item, item_rect, slot, order + len(objects)))
-		else:
-			objects.append(slide_lib.layout_object_builders.text_object(
-				f"{slot}-text-{len(objects)}", item, item_rect, allocation.size_pt,
-				theme.body_floor_size_pt, slide_lib.layout_primitives.StyleRole.OUTLINE, frame, slot,
-				order + len(objects), slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session))
-		y += height + 12
-	return objects
-
 def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		text_blocks: tuple[slide_lib.native_model.Block, ...], images: tuple[slide_lib.native_model.Image, ...],
 		rectangle: slide_lib.layout_primitives.LogicalRectangle,
 		theme: slide_lib.presentation_theme.PresentationTheme, layout: str, slot: str,
 		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_measurement.MixedFlowAllocation:
-	"""Maximize readable occupied area; failed readability produces a replacement preview."""
-	best = None
-	for half_point in range(math.floor(theme.ordinary_body_size_pt * 2),
-			math.ceil(theme.body_floor_size_pt * 2) - 1, -1):
-		allocation = _mixed_flow_allocation_at_size(deck, text_blocks, images, rectangle,
-			half_point / 2, theme, session)
-		if allocation is not None and (best is None or
-				(allocation.occupied_area, allocation.size_pt) > (best.occupied_area, best.size_pt)):
-			best = allocation
-	if best is not None:
-		return best
+	"""Maximize font sizes plus displayed image widths, preserving readability before review fallback."""
+	cause = (slide_lib.capacity_report.CapacityCause.MIXED_READABILITY if images
+		else slide_lib.capacity_report.CapacityCause.MIXED_FLOW)
+	for review in (False, True):
+		best = None
+		for half_point in range(math.floor(theme.ordinary_body_size_pt * 2),
+				math.ceil(theme.body_floor_size_pt * 2) - 1, -1):
+			allocation = slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks,
+				images, rectangle, half_point / 2, theme, session, review=review)
+			if allocation is not None and (best is None or
+					(allocation.score, allocation.size_pt) > (best.score, best.size_pt)):
+				best = allocation
+		if best is not None:
+			if review:
+				session.record_capacity(text_blocks[0].location, layout, slot, best.size_pt,
+					theme.body_floor_size_pt, cause)
+			return best
 	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
 	def fits(value: float) -> bool:
 		"""Find physical geometry only for the explicitly marked review artifact."""
@@ -464,76 +413,14 @@ def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		if fits(half_point / 2)), None)
 	if size is None:
 		raise slide_lib.capacity_report.PhysicalCapacityError(text_blocks[0].location, layout, slot,
-			theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_READABILITY, minimum)
+			theme.body_floor_size_pt, cause, minimum)
 	allocation = slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks, images,
 		rectangle, size, theme, session, review=True)
 	if allocation is None:
 		raise ValueError("mixed-flow selection lost its exact final allocation")
 	session.record_capacity(text_blocks[0].location, layout, slot, size,
-		theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_READABILITY)
+		theme.body_floor_size_pt, cause)
 	return allocation
-
-def _mixed_flow_allocation_at_size(deck: slide_lib.native_model.Deck,
-		text_blocks: tuple[slide_lib.native_model.Block, ...], images: tuple[slide_lib.native_model.Image, ...],
-		rectangle: slide_lib.layout_primitives.LogicalRectangle, size: float,
-		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib.layout_measurement.MeasurementSession
-		) -> slide_lib.layout_measurement.MixedFlowAllocation | None:
-	"""Return the exact result consumed by both title preflight and final construction."""
-	return slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks, images, rectangle,
-		size, theme, session)
-
-def _flow_size_and_heights(deck: slide_lib.native_model.Deck,
-		blocks: tuple[slide_lib.native_model.Block, ...],
-		rectangle: slide_lib.layout_primitives.LogicalRectangle,
-		theme: slide_lib.presentation_theme.PresentationTheme,
-		layout: str,
-		slot: str,
-		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[float, list[float]]:
-	"""Select one body size only after measuring the whole ordered flow."""
-	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
-	size = slide_lib.layout_measurement.largest_fitting_size(
-		theme.ordinary_body_size_pt, minimum,
-		lambda value: _flow_fits_at_size(deck, blocks, rectangle, value, theme, session))
-	if size is None:
-		raise slide_lib.capacity_report.PhysicalCapacityError(blocks[0].location, layout, slot,
-			theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_FLOW, minimum)
-	heights = _flow_heights_at_size(deck, blocks, rectangle, size, theme, session)
-	if size < theme.body_floor_size_pt:
-		session.record_capacity(blocks[0].location, layout, slot, size,
-			theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_FLOW)
-	return size, heights
-
-def _flow_fits_at_size(deck: slide_lib.native_model.Deck,
-		blocks: tuple[slide_lib.native_model.Block, ...],
-		rectangle: slide_lib.layout_primitives.LogicalRectangle, size: float,
-		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib.layout_measurement.MeasurementSession) -> bool:
-	"""Apply the final ordered-flow geometry predicate at one selected type size."""
-	heights = _flow_heights_at_size(deck, blocks, rectangle, size, theme, session)
-	return slide_lib.layout_measurement.text_frame_fits(
-		sum(heights) + 12 * (len(blocks) - 1),
-		slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
-
-def _flow_heights_at_size(deck: slide_lib.native_model.Deck,
-		blocks: tuple[slide_lib.native_model.Block, ...],
-		rectangle: slide_lib.layout_primitives.LogicalRectangle, size: float,
-		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: slide_lib.layout_measurement.MeasurementSession) -> list[float]:
-	"""Measure every final ordered-flow allocation at one exact type size."""
-	heights: list[float] = []
-	for block in blocks:
-		if isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
-			heights.append(slide_lib.layout_measurement.text_height(
-				slide_lib.layout_measurement.items_for((block,)), size, rectangle.width, theme, session))
-		elif isinstance(block, slide_lib.native_model.Table):
-			heights.append(slide_lib.layout_measurement.table_height(block, size, rectangle.width, theme, session))
-		elif isinstance(block, slide_lib.native_model.Image):
-			width, height = slide_lib.layout_measurement.image_size(deck, block)
-			heights.append(min(rectangle.width * height / width, rectangle.height / len(blocks)))
-		else:
-			raise ValueError(f"{block.location.path}:{block.location.line}: unsupported mixed content")
-	return heights
 
 def _gallery(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,

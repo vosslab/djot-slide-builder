@@ -22,6 +22,7 @@ LOGICAL_SLIDE_HEIGHT = 800.0
 EMU_PER_CM = 360000.0
 OTP_MIMETYPE = "application/vnd.oasis.opendocument.presentation-template"
 ORDINARY_LINE_SPACING_EM = 1.30
+URL_FLOOR_SIZE_PT = 12.0
 # The original-deck measurement found readable ordinary body at 20 pt and exceptional titles at
 # 22 pt.
 CORPUS_DERIVED_TITLE_FLOOR_SIZE_PT = 22.0
@@ -414,8 +415,8 @@ def odf_font_face_name(family: str, bold: bool = False, italic: bool = False) ->
 
 #============================================
 def inline_size_pt(paragraph_size_pt: float, literal_url: bool) -> float:
-	"""Apply the backend-owned two-point reduction for visible URL text."""
-	size = paragraph_size_pt - 2.0 if literal_url else paragraph_size_pt
+	"""Start visible URLs two points smaller without crossing their separate floor."""
+	size = max(URL_FLOOR_SIZE_PT, paragraph_size_pt - 2.0) if literal_url else paragraph_size_pt
 	if size <= 0:
 		raise ThemeError("inline font size must remain positive")
 	return size

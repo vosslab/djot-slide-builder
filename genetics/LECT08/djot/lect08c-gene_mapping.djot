@@ -22,13 +22,12 @@ Source: lect08c-gene_mapping.odp, slide 1.
 @body
 
 - Distinguish genetic maps from physical maps.
-- Identify parental and recombinant offspring in linkage data.
-- Calculate recombination frequency and express distance in map units or centimorgans.
-- Explain why recombination frequencies between distant genes may not add.
+- Identify parental and recombinant offspring.
+- Calculate recombination rates and distances.
+- Explain why recombination frequencies may not add.
 
 @notes
-
-Added during the October 26, 2026 review from the existing lecture content.
+Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -67,7 +66,7 @@ hidden: true
 
 === layout: one-panel
 
-# *Alleles of linked genes can be in cis or trans configuration*
+# *Cis and Trans Configurations*
 
 @body
 
@@ -142,7 +141,7 @@ hidden: true
 
 === layout: one-panel
 
-# *Genetic distance between two genes can be represented four ways*
+# *Four Ways to Express Genetic Distance*
 
 @body
 
@@ -157,7 +156,7 @@ hidden: true
 
 === layout: one-panel
 
-# *Mapping the Distance Between Genes Using Recombination Data*
+# *Mapping Genes Using Recombination*
 
 @body
 
@@ -166,7 +165,7 @@ hidden: true
 
 === layout: one-panel
 
-# *One map unit represents 2% cross-over frequency*
+# *One Map Unit = 2% Crossing Over*
 
 @body
 
@@ -187,15 +186,20 @@ hidden: true
 === layout: one-panel
 @replaceme
 
-
 @body
 
-![Slide image 8](assets/lect08c-gene_mapping/image_008.jpg)
+![Labeled diagram from source slide 17](assets/lect08c-gene_mapping/c17_labeled.svg)
 
-Native reconstruction needed: 28 positioned diagram labels.
+Recombination frequency
+
+$\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%$
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 17.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
+Source reveal/mask behavior remains unresolved; retain review marker.
 
 === layout: one-panel
-@replaceme
 
 # *Map distance*
 
@@ -220,37 +224,23 @@ Native reconstruction needed: 28 positioned diagram labels.
 
 ![Slide image 10](assets/lect08c-gene_mapping/image_010.jpg)
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
+@body
 
-@top
+![Chromosome recombination frequencies](assets/lect08c-gene_mapping/c20_labeled.svg)
 
-![Slide image 11](assets/lect08c-gene_mapping/image_011.jpg)
-
-- *Chromosome*
-
-- *Recombination frequencies*
-
-- *9%*
-
-- *9.5%*
-
-- *17%*
-
-- *_b_*
-
-- *_cn_*
-
-- *_vg_*
-
-@bottom
-
+=> appear
 - Wait 9%+9.5% = 18.5% &#8800; 17%
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 20.
+One-image labeled SVG restores the chromosome map. The source on-click appearance of the comparison sentence is restored natively; target/order and static rendering verified; attended playback remains untested.
+
 
 === layout: one-panel
 
-# *Recombination Frequencies do NOT add!?!*
+# *Recombination Frequencies Do NOT Add!*
 
 @body
 
@@ -261,14 +251,14 @@ Native reconstruction needed: 28 positioned diagram labels.
   - In practice, a geneticist would add the smaller distances in constructing a map.
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
-![Slide image 12](assets/lect08c-gene_mapping/image_012.jpg)
+![Labeled diagram from source slide 22](assets/lect08c-gene_mapping/c22_labeled.svg)
 
-Native reconstruction needed: 31 positioned diagram labels.
+@notes
+Source: lect08c-gene_mapping.odp, slide 22.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
 
@@ -280,15 +270,16 @@ Native reconstruction needed: 31 positioned diagram labels.
 - Such genes are physically linked, but genetically unlinked, and behave as if found on different chromosomes
 
 === layout: one-panel
-@replaceme
-
-# Figure 15.12
 
 @body
 
-![Slide image 13](assets/lect08c-gene_mapping/image_013.jpg)
+![Labeled diagram from source slide 24](assets/lect08c-gene_mapping/c24_labeled.svg)
 
-Native reconstruction needed: 23 positioned diagram labels.
+Figure 15.12
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 24.
+One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: two-over-one-panels
 
@@ -318,190 +309,187 @@ Native reconstruction needed: 23 positioned diagram labels.
 ![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
 
 === layout: one-panel
-@replaceme
 
 # *ones with the most progeny*
 
 @body
 
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c27_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 27.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to B Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c28_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 28.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to B Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c29_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 29.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Sum Non-Parental Types for A and B?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c30_labeled.svg)
+
+[parental type]{color=#276B28} / [non-parental type]{color=#733A80}
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 30.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
 
-# *Which numbers to add for the A to B distance?*
+# *Sum Non-Parental Types for A and B?*
 
 @body
 
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c31_labeled.svg)
+
+[parental type]{color=#276B28} / [non-parental type]{color=#733A80}
+
+d = (14+0+0+16)/1000
+
+d = 3 map units
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 31.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c32_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 32.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c33_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 33.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Sum Non-Parental Types for A and C?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c34_labeled.svg)
+
+[parental type]{color=#276B28} / [non-parental type]{color=#733A80}
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 34.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
 
-# *Which numbers to add for the A to B distance?*
+# *Sum Non-Parental Types for A and C?*
 
 @body
 
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c35_labeled.svg)
 
-- ignore
-- this
-- gene
+[parental type]{color=#276B28} / [non-parental type]{color=#733A80}
+
+d = (14+32+16+28)/1000
+
+d = 9 map units
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 35.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *B to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c36_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 36.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *B to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c37_labeled.svg)
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 37.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Sum Non-Parental Types for B and C?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c38_labeled.svg)
+
+[parental type]{color=#276B28} / [non-parental type]{color=#733A80}
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 38.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
 
-# *Sum the non-parental types for genes A and B?*
+# *Sum Non-Parental Types for B and C?*
 
 @body
 
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
+![Source diagram with static highlights and masks](assets/lect08c-gene_mapping/c39_labeled.svg)
 
-- parental type
+[parental type]{color=#276B28} / [non-parental type]{color=#733A80}
 
-- non-parental type
+d = (0+32+0+28)/1000
 
-- ignore
-- this
-- gene
+d = 6 map units
 
-=== layout: one-panel
-@replaceme
-
-# *Sum the non-parental types for genes A and B?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- parental type
-
-- non-parental type
-
-- ignore
-- this
-- gene
-
-- d = (14+0+0+16)/1000
-- d = 3 map units
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the A to C distance?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the A to C distance?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- ignore
-- this
-- gene
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the non-parental types for genes A and C?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- parental type
-
-- non-parental type
-
-- ignore
-- this
-- gene
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the non-parental types for genes A and C?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- parental type
-
-- non-parental type
-
-- d = (14+32+16+28)/1000
-- d = 9 map units
-
-- ignore
-- this
-- gene
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the B to C distance?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the B to C distance?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- ignore
-- this
-- gene
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the non-parental types for genes B and C?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- parental type
-
-- non-parental type
-
-- ignore
-- this
-- gene
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the non-parental types for genes B and C?*
-
-@body
-
-![Slide image 15](assets/lect08c-gene_mapping/image_015.png)
-
-- parental type
-
-- non-parental type
-
-- d = (0+32+0+28)/1000
-- d = 6 map units
-
-- ignore
-- this
-- gene
+@notes
+Source: lect08c-gene_mapping.odp, slide 39.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: section
 
@@ -539,7 +527,7 @@ Native reconstruction needed: 23 positioned diagram labels.
 
 === layout: one-panel
 
-# *Genetic distance between two genes can be represented four ways*
+# *Four Ways to Express Genetic Distance*
 
 @body
 
@@ -552,33 +540,19 @@ Native reconstruction needed: 23 positioned diagram labels.
 - Map distance in centimorgans (cM)
   - 2 cM
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
+@body
 
-@top
+![Chromosome recombination frequencies](assets/lect08c-gene_mapping/c45_labeled.svg)
 
-![Slide image 15](assets/lect08c-gene_mapping/image_011.jpg)
-
-- *Chromosome*
-
-- *Recombination frequencies*
-
-- *9%*
-
-- *9.5%*
-
-- *17%*
-
-- *_b_*
-
-- *_cn_*
-
-- *_vg_*
-
-@bottom
-
+=> appear
 - Wait 9%+9.5% = 18.5% &#8800; 17%
+
+@notes
+Source: lect08c-gene_mapping.odp, slide 45.
+One-image labeled SVG restores the chromosome map. The source on-click appearance of the comparison sentence is restored natively; target/order and static rendering verified; attended playback remains untested.
+
 
 === layout: one-panel
 
@@ -589,7 +563,7 @@ Native reconstruction needed: 23 positioned diagram labels.
 - Genetic maps use recombination in offspring; physical maps use sequence distances in base pairs.
 - Parental types are the most frequent classes in the linkage examples.
 - A recombination frequency of 1% corresponds to one map unit, or one centimorgan.
-- Multiple crossovers can cause recombination frequencies between distant genes to underestimate the map distance.
+- Multiple crossovers can make recombination frequencies underestimate map distances.
 
 @notes
 

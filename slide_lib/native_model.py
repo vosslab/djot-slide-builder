@@ -17,6 +17,7 @@ class RevealEffect(enum.Enum):
 	"""The small set of supported visual reveal effects."""
 	APPEAR = "appear"
 	FADE = "fade"
+	DISAPPEAR = "disappear"
 
 
 class RevealSequence(enum.Enum):
@@ -193,6 +194,11 @@ class ImageOutline:
 			raise ValueError("image outlines require positive width and height")
 		if self.x + self.width > 1 or self.y + self.height > 1:
 			raise ValueError("image outlines must remain inside the displayed image")
+
+
+@dataclass(frozen=True)
+class ImageCover(ImageOutline):
+	"""One opaque white image-relative rectangle removed on click."""
 
 
 @dataclass(frozen=True)

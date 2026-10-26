@@ -9,6 +9,11 @@ import collections.abc
 
 # Local Modules
 import slide_lib.djot_lint
+import slide_lib.djot_audit
+import slide_lib.capacity_report
+import slide_lib.djot_errors
+import slide_lib.layout_validation
+import slide_lib.native_export
 import slide_lib.terminal_output
 import slide_lib.importers.odp_to_djot
 import slide_lib.importers.odp_visibility
@@ -46,6 +51,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 	capacity_parser = subparsers.add_parser("capacity",
 		help="inspect capacity concerns without writing presentation artifacts")
 	capacity_parser.add_argument("input_path", help="source deck or folder tree")
+	typography_parser = subparsers.add_parser("audit", help="report title wrapping and runts as JSON")
+	typography_parser.add_argument("input_path", help="Djot source deck or folder tree")
 	audit_parser = subparsers.add_parser("image-audit",
 		help="compare source ODP image area with compiled Djot display area")
 	audit_parser.add_argument("source", type=pathlib.Path)
@@ -79,6 +86,15 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
 	"""Dispatch one parsed command to its reusable application operation."""
 	args = parse_args(argv)
+	if args.command == "audit":
+		try:
+			report = slide_lib.djot_audit.audit(args.input_path)
+		except (slide_lib.native_export.PresentationInputError, slide_lib.djot_errors.DjotParseError,
+				slide_lib.layout_validation.LayoutError, slide_lib.capacity_report.PhysicalCapacityError) as error:
+			print(f"Audit failed: {error}", file=sys.stderr)
+			return 1
+		print(json.dumps(report, indent=2))
+		return 0
 	if args.command == "image-audit":
 		print(json.dumps(slide_lib.image_area_audit.audit(args.source, args.converted,
 			args.loss_threshold), indent=2))

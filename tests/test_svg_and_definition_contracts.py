@@ -22,6 +22,7 @@ import slide_lib.svg_images
 def test_svg_payload_and_aspect_survive_comparison_export(tmp_path: pathlib.Path) -> None:
 	"""A figure stays SVG while unequal captions share a aligned native text row."""
 	svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">'
+		'<image width="200" height="100" href="data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoBAAEAAMASJaQAA3AA/v7deAAAAA=="/>'
 		'<text x="10" y="50">Editable label</text></svg>')
 	(tmp_path / "figure.svg").write_text(svg)
 	source = tmp_path / "comparison.djot"

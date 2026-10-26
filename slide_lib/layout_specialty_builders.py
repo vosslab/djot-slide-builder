@@ -151,16 +151,16 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		"title", "title", slide_lib.layout_primitives.PlaceholderKind.OUTLINE,
 		headings[0].location,
 		slide_lib.layout_object_builders.reveal_targets(contract.name, headings, 0))
+	background_role = (slide_lib.layout_primitives.StyleRole.SUBSECTION
+		if contract.name == "subsection" else slide_lib.layout_primitives.StyleRole.TRANSITION)
 	border = _decorative_shape(f"{contract.name}-frame",
 		slide_lib.layout_primitives.LogicalRectangle(105, 190, 1070, 420),
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.ANSWER if contract.name == "subsection" else
-		slide_lib.layout_primitives.StyleRole.TRANSITION,
+		background_role,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
 	surface = slide_lib.layout_primitives.SlideSurface(
-		slide_lib.layout_primitives.StyleRole.ANSWER if contract.name == "subsection" else
-		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
+		background_role, False)
 	return SpecialtySlideComponents((slot,), (border, item), surface)
 
 

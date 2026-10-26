@@ -26,6 +26,10 @@ site/
 # Propagation preserves this section.
 # ------------------ END LOCAL REPOSITORY RULES ------------------
 *.svg
+!genetics/LECT08/djot/assets/*/*_labeled.svg
+!genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b36_artwork.svg
+!genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/cis_isomer.svg
+!genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/trans_isomer.svg
 *.pdf
 *.pptx
 *.gif

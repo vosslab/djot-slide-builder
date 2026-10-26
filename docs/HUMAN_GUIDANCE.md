@@ -1,5 +1,20 @@
 # Human guidance
 
+- Ignore runts when the font is at its maximum size and the paragraph is the final displayed
+  paragraph of its text block. Keep title-wrap and URL-width checks active.
+- Run the Djot audit on Genetics LECT08 and reduce warnings with simple changes.
+
+- Build a Python Djot auditing script, prioritizing title line wrapping and runt checks.
+  Keep lecture-quality checks in the audit rather than making lecture wording a pytest gate.
+
+- Avoid single-word final lines in generated learning objectives; aim for final lines at least
+  one-third of the text width. Generated objective wording may be shortened or lengthened for
+  this purpose. Preserve instructor-authored wording unless changes are separately authorized.
+
+- Go through LECT08 and use a labeled image with a quality-90 WebP embedded in SVG where
+  it makes sense. Limit each figure to one image and its overlapping text boxes; keep slide
+  titles and surrounding text native. This does not authorize whole-slide image conversion.
+
 - Managers must follow the [slide conversion checklist](SLIDE_CONVERSION_CHECKLIST.md).
   Keep its items concrete actions with verifiable results; keep broader content policies here.
 
@@ -18,6 +33,23 @@ may inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an
 origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
+
+## Content titles
+
+- I prefer slide titles to fit on one line, leaving more room for the content.
+- "Figure 15.UN01", "Figure 13.9b", and "Figure 13.12-5" are figure captions, not slide titles.
+  Their promotion to headings during conversion is an error to investigate in the converter.
+
+- Subsection backgrounds should be a variation of the course-dependent section color.
+
+## Labeled diagram reconstruction
+
+- Use the artwork-plus-labels SVG pipeline only for labeled images, not whole-slide conversion.
+  A figure contains one image and its overlapping text boxes. Keep slide titles, ordinary prose,
+  and layout outside that figure in native Djot.
+
+- Implement the LECT08B source-6 Punnett-square cover relative to its image content, so the
+  box follows the image and disappears on click.
 
 ## Equation pipeline
 
@@ -155,11 +187,17 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   middle of the conversion workflow to judge whether the teaching intent survives.
 
 - Track significant image shrinkage during conversion by comparing displayed image area as a
-  percentage of the slide and eventually flagging excessive changes. Consider automatic trimming.
+  percentage of the slide and eventually flagging excessive changes.
   Audit code is welcome now; do not create new special layouts to solve shrinkage today.
+- Conversion managers may cut, split, and crop images to fit the teaching layout. I favor
+  automatic border trimming, like `mogrify -trim`, across images where it preserves meaningful
+  content. This image-editing permission is separate from approval to split slides.
 - For mixed text/image scaling, evaluate font candidates at half-point precision and allow
-  each image an independent scale. Compare actual occupied panel area; the instructor prefers
-  the larger-area scale-sum result for LECT07B slide 24 over the max-min result.
+  each image an independent scale. Score text by font size and images by displayed width,
+  using consistent physical units rather than summing individual areas.
+- Everything in a layout region, including local headings, goes through the same size
+  optimization. Keep it simple; avoid special-case allocation rules that reserve heading space
+  before the rest of the content is considered.
 - If mixed-content readability constraints cannot be met, retain the source slide with
   `@replaceme`. Prefer this designation over splitting; do not recommend splitting as the
   default repair. Any slide split requires human approval.
@@ -238,9 +276,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Show the URLs being clicked so their destinations can be inspected for spam or security
   concerns. Render visible URLs in the backend's narrow/condensed font; retain helpful context
   beside the address rather than hiding it behind a descriptive link label.
-- ALL visible URLs must use the condensed font and be 2 pt smaller than surrounding text.
-  No font overrides, including code styling or explicit links with a different target. Check rendered slides
-  for awkward URL splits, especially Lecture 05A; do not leave isolated letters or large gaps.
+- ALL visible URLs use the condensed font. Start 2 pt below surrounding text, then allow
+  independent shrinking down to 12 pt to avoid wrapping. Keep ordinary text at its own size;
+  preserve the complete visible URL and clickable destination, including explicit links with a
+  different target. Move an intact URL to the next line when necessary; flag addresses still
+  too wide at 12 pt. Check rendered slides for awkward URL splits.
 - Prefer pollen/ovule labels for plant examples and sperm/egg labels for animal examples.
 - Add colorful plant emoji to Lecture 05D v2 to make the plant examples more visually interesting.
 - Explicitly label longer slides intended for future student reference with a short phrase

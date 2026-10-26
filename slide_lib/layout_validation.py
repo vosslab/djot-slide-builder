@@ -3,6 +3,7 @@
 # Local Modules
 import slide_lib.native_model
 import slide_lib.math_render
+import slide_lib.image_covers
 
 
 Component = slide_lib.native_model.Image
@@ -307,6 +308,7 @@ def validate_flow_region(blocks: tuple[slide_lib.native_model.Block, ...],
 #============================================
 def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -> None:
 	"""Prove every supported source block has a native destination in ``spec``."""
+	source, _covers = slide_lib.image_covers.extract(source)
 	validate_citation(source)
 	source = slide_lib.math_render.lower_display_math(source)
 	slide_lib.math_render.validate_equation_blocks(

@@ -182,15 +182,15 @@ def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib
 				properties[f"{{{exporter.FO_NS}}}font-family"] == face.embedded_family
 
 
-@pytest.mark.parametrize("literal", [False, True])
-def test_linked_text_nests_destination_inside_its_styled_span(literal: bool) -> None:
+@pytest.mark.parametrize("literal,resolved_size", [(False, None), (True, None), (True, 12.0)])
+def test_linked_text_nests_destination_inside_its_styled_span(literal: bool, resolved_size: float | None) -> None:
 	"""LibreOffice receives a visible linked label within its resolved text style."""
 	layout_deck = deck()
 	item = layout_deck.slides[0].objects[0]
 	label = "https://example.test/course" if literal else "Course website"
 	family = "IBM Plex Sans Condensed" if literal else "Atkinson Hyperlegible Next"
 	linked_run = content.TextRun(label, content.RunStyle(family, "24578F",
-		underline=True, link_url="https://example.test/course", literal_url=literal))
+		underline=True, link_url="https://example.test/course", literal_url=literal, size_pt=resolved_size))
 	paragraph = dataclasses.replace(item.content.paragraphs[0], inlines=(linked_run,))
 	updated_item = dataclasses.replace(item, content=content.TextContent((paragraph,)))
 	updated_deck = dataclasses.replace(layout_deck, slides=(dataclasses.replace(
@@ -207,7 +207,7 @@ def test_linked_text_nests_destination_inside_its_styled_span(literal: bool) -> 
 	style = next(element for element in root.findall(f".//{{{exporter.STYLE_NS}}}style")
 		if element.attrib[f"{{{exporter.STYLE_NS}}}name"] == name)
 	properties = style.find(f"{{{exporter.STYLE_NS}}}text-properties")
-	expected_size = paragraph.typography.selected_size_pt - (2 if literal else 0)
+	expected_size = resolved_size if resolved_size is not None else paragraph.typography.selected_size_pt - (2 if literal else 0)
 	assert float(properties.attrib[f"{{{exporter.FO_NS}}}font-size"].removesuffix("pt")) == expected_size
 	assert properties.attrib[f"{{{exporter.FO_NS}}}font-family"] == family
 
@@ -331,6 +331,32 @@ def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path)
 	for label in ("insert", "underlined"):
 		assert properties[label][f"{{{exporter.STYLE_NS}}}text-underline-style"] == "solid"
 	assert properties["delete"][f"{{{exporter.STYLE_NS}}}text-line-through-style"] == "solid"
+
+
+@pytest.mark.parametrize("course", slide_lib.presentation_theme.color_theme_names())
+def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, course: str) -> None:
+	source_path = tmp_path / "transitions.djot"
+	source_path.write_text(f"color-theme: {course}\n\n=== layout: section\n\n# Topic\n\n"
+		"=== layout: subsection\n\n# Subtopic\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme(course)
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(source_path), theme).plan
+	root = package.parse_xml(exporter._content_xml(
+		plan, theme, exporter._layout_names(plan), {}), "content.xml")
+	colors = []
+	for slide in plan.slides:
+		frame = next(item for item in slide.objects if isinstance(item.content, content.ShapeContent))
+		assert frame.content.style.fill_role == slide.surface.background_role
+	for page in root.findall(f".//{{{exporter.DRAW_NS}}}page"):
+		style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+			if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page.attrib[f"{{{exporter.DRAW_NS}}}style-name"])
+		colors.append(style.find(f"{{{exporter.STYLE_NS}}}drawing-page-properties").attrib[
+			f"{{{exporter.DRAW_NS}}}fill-color"])
+	assert colors[0] == f"#{theme.accent_color}"
+	assert colors[1] != colors[0]
+	assert all(int(colors[1][index:index + 2], 16) <= int(colors[0][index:index + 2], 16)
+		for index in (1, 3, 5))
+	assert plan.slides[1].surface.background_role is primitives.StyleRole.SUBSECTION
 
 
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:

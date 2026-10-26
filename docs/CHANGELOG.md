@@ -2,6 +2,26 @@
 
 ### Additions and New Features
 
+- Reduce LECT08 audit warnings from 118 to 57 through 53 concise title edits and four shorter
+  generated takeaway bullets. Fresh LibreOffice PDFs confirm all 170 content titles on one line.
+  Apply the requested final-paragraph/maximum-font runt exemption, counted separately, bringing
+  warnings to 42 (39 runts, three oversized URLs). Retain body prose, complete URLs, and all
+  replacement markers. Strict native Djot lint passes; diagnostic renders and a preview are
+  available without replacing canonical lecture outputs.
+
+- Fit visible condensed URLs independently down to the instructor-approved 12 pt floor.
+  Fit beside their labels where possible, otherwise move intact to the next line; retain native
+  clickable destinations and ordinary text sizes. Share chosen run sizes between measurement
+  and ODP export, and report addresses still too wide at the floor in the Djot audit.
+  Verify intact Discord/Zoom addresses and link destinations in a fresh LECT08A PDF, provide
+  a two-slide preview, and flag three remaining oversized URLs. All 232 focused tests pass.
+
+- Add `deck_tools.py audit` for advisory title wrapping and runt checks using final compiled
+  geometry and shared font measurements. Emit source-located JSON with predicted lines and
+  skipped coverage; add detector/CLI tests and document the conversion checklist step.
+  Check all six LECT08 decks: 53 title-wrap and 65 runt warnings. PDF calibration matches
+  all 52 known B-F wrapping titles and confirms 62 of the 65 runt warnings; 177 focused tests pass.
+
 - Add a required slide conversion checklist with verifiable inventory, weekly announcement,
   repair, validation, and handoff tasks; link it from Human Guidance, pipeline, and usage docs.
 
@@ -17,6 +37,71 @@
   Preserve announcement prose, including the previous agenda and podcast selection.
 
 ### Fixes and Maintenance
+
+- Correct shared font measurements to retain fractional pixel sizes and recognize breaks after
+  ordinary hyphens/en dashes. These small fixes resolve seven of nine line-break differences
+  and all three false runt warnings in the original 65-paragraph LECT08 calibration sample.
+  Keep URL wrapping advisory; require Pillow 10 or newer for fractional font sizes.
+  Fresh diagnostic PDFs confirm all 53 title-wrap and 63 runt warnings; exact runt-paragraph
+  lines match in 61 cases, with only two URL differences. All 229 focused tests pass.
+
+- Repeat the complete Genetics LECT08 checklist and inspect all 250 visible pages. Restore
+  52 static diagram groups, including masked gene columns, row highlights, and crossover marks;
+  preserve vector tables as vectors and retain six repaired slides with sizing failures.
+  Restore B25's native prediction/result table, correct B36's mismatched artwork, demote figure
+  captions, and shorten generated objectives after checking actual line endings. Clear verified
+  native cover/reveal markers; reduce explicit replacements from 99 to 48 without weakening
+  sizing safeguards. Update the checklist, complete review, source map, asset provenance, all six
+  ODP/PDF decks, and full comparison PDF. Strict native lint and 184 focused tests pass.
+  Attended slideshow playback and fresh external announcement/link checks remain unperformed.
+
+- Repair 15 Genetics LECT08 labeled-image slides with a single quality-90 WebP background
+  and live SVG text. Preserve native titles, figure captions, surrounding prose, and tables.
+  Clear 10 resolved replacement markers; retain five for interaction review. Fit B4's overflowing
+  teal-box text and enlarge F52/F53 annotations. Accept embedded WebP in static SVG validation
+  and verify payload preservation plus actual LibreOffice rendering. Rebuild B/C/F and provide
+  source/repaired comparison pages; 94 focused tests and strict native lint pass.
+
+- Implement image-relative click-to-remove covers and apply one to Genetics LECT08B source 6.
+  Reuse normalized rectangle validation and native image-overlay placement; preserve layout space,
+  image geometry, and reveal order. Add bounds/ownership/action and native-ODF regression checks.
+  Build an interactive one-slide ODP, inspect static before/after states, and verify LibreOffice
+  retains the exit effect on save. Actual click playback remains untested: macOS Accessibility
+  permission is unavailable to this process.
+
+- Consolidate mixed-region allocation across local headings, paragraphs, lists, tables, and
+  images; remove eager heading reservation and the separate table-flow sizing path. Replace
+  summed individual areas with font-size plus displayed-image-width scoring in consistent units.
+  Trim LECT08B source-13 diagram viewports and cover joint sizing plus native heading styling.
+
+- Authorize conversion managers to cut, split, and crop images, with a preference for automatic
+  empty-border trimming. Add source-preserving image-edit checks to the conversion checklist,
+  including diagram-label coordinate adjustments; keep slide-splitting approval separate.
+
+- Repair Genetics LECT08B source slide 13 with the existing two-over-one layout: pair each
+  cis/trans definition with a cropped view of the original wide image in the upper panels,
+  preserving both explanatory bullets below. Inspect the rebuilt PDF and clear its replacement
+  marker after the slide passes native lint and capacity checks.
+
+- Derive subsection backgrounds and frames from a darker shade of each course's section
+  accent instead of reusing the fixed burgundy answer color. Cover all four course palettes
+  with native-export tests and render section/subsection comparison cards.
+
+- Build a bounded LECT08B source-slide-4 labeled-SVG prototype: embed one original artwork
+  image, retain diagram vector marks, and reconstruct 95 live text runs from source-PDF positions.
+  Exclude slide chrome; add separate ODP/PDF and source-comparison previews. Keep the general
+  importer and canonical deck unchanged; restrict this approach to labeled-image components.
+
+- Render separate Genetics LECT08 A-F title/caption preview decks and a 17-pair comparison PDF.
+  Verify 40 proposed shorter titles fit one line, restore 14 figure references as body captions,
+  and list 13 unchanged wrapping titles for review. Preserve canonical decks, teaching body
+  content, slide inventory, visibility, and replacement markers; record results in LECT08_REVIEW.
+
+- Record LECT08B instructor feedback: incremental checklist intent, single-line title preference,
+  open labeled-image/title-rewording options, and figure captions incorrectly promoted to titles.
+  Keep B2's unusual incremental structure in its slide-specific review. Add conversion checks
+  for single-line title fit, title identity, and positioned diagram labels;
+  identify caption promotion as a converter defect needing reproduction, not only a checklist issue.
 
 - Prefer retained `@replaceme` source slides over splitting when conversion/readability fails.
   Remove default split recommendations from the checklist and LECT08 review/map; retain the

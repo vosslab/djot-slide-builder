@@ -51,6 +51,15 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
   announcements have no chapter.
 - [ ] Locate the learning objectives in each content deck. If absent, add content-derived
   objectives on slide 2; record the resulting slide number.
+- [ ] Inspect generated objectives for runts. Shorten generated wording to one line where practical;
+  otherwise avoid a single-word final line and aim for a final line at least one-third of the text
+  width. Recheck the render. Preserve instructor-authored wording unless edits are authorized.
+- [ ] Run `python3 deck_tools.py audit <djot-file-or-folder>` using the repository Python
+  environment. The audit exempts final-paragraph runts at maximum body size.
+  Review title-wrap and runt findings against the rendered slides; record skipped
+  coverage and unresolved warnings. Findings are advisory, not automatic wording changes.
+- [ ] Verify condensed URLs remain intact after independent sizing down to 12 pt. Review
+  `url-too-wide` audit warnings; preserve complete displayed addresses and clickable destinations.
 - [ ] Compare important terminology with previous lectures and locate existing definitions.
   If useful, add a definitions slide near the beginning for important terms new to the lecture
   sequence. Keep definitions concise and limited to terms used in the lecture; list the added
@@ -89,9 +98,39 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 
 - [ ] Compare every source slide with its rendered conversion, including slides without importer
   warnings. Record missing text, labels, objects, emphasis, and changed reading order by slide.
+- [ ] Inspect the content underneath existing replacement watermarks using separate diagnostic
+  copies. Reassess the actual failure rather than inheriting an old import warning. Keep diagnostic
+  copies clearly labeled; removing a watermark for inspection does not clear the canonical marker.
+- [ ] Check that slide titles are actual headings, not promoted figure-number captions. Keep
+  figure references with their diagrams.
+- [ ] Inspect every rendered title for single-line fit, following the preference in
+  [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md). Flag wrapping titles and record proposed shorter
+  wording for review; permission to rewrite titles remains separate from checking their length.
+- [ ] For textbook diagrams assembled from artwork and positioned labels, compare label placement,
+  arrows, and diagram relationships with the source. Record whether a labeled image reconstruction
+  is a suitable repair; retain the replacement marker until the rendered result is verified.
+- [ ] Where suitable, use one quality-90 WebP inside SVG with live overlapping labels. Keep titles,
+  captions, surrounding prose, and native tables outside the asset. Verify the LibreOffice render
+  and review any source reveals separately; a static figure does not certify animation fidelity.
+- [ ] Preserve source vector figures as vectors with live labels. Restore static diagram highlights
+  and masks within their figure, and preserve paint order so hidden answers do not reappear above
+  opaque masks. Verify both masked and unmasked regions against the source.
+- [ ] Check each figure's identity against the source render, including orientation and cropping;
+  a plausible diagram or matching subject is insufficient evidence that it is the right asset.
+- [ ] Distinguish static masks from actual reveal targets using the source ODP. Use an image-relative
+  native cover for an explicitly intended click-to-remove image mask; check bounds against the final
+  displayed image. Test native targets/order and record unperformed click playback separately.
+- [ ] Confirm local headings and all other content share region sizing, and subsection backgrounds
+  follow the course accent. Do not compensate for allocation defects by rewriting source prose.
 - [ ] For sequential text/image content split across panels, try the existing one-panel mixed
   flow and compare the render. Keep the grouping with readable labels and correct reading order;
   record unresolved fit failures rather than adding a special layout.
+- [ ] Inspect images for excess borders and composite panels. Trim empty margins and cut,
+  split, or crop images where this improves their fit and associations with nearby text.
+  Use derived assets or cropped views so the original remains recoverable. Compare against
+  the source to preserve labels, arrows, scale bars, legends, and meaningful spacing; update
+  overlapping label coordinates when cropping labeled images. Image splitting is authorized;
+  splitting slides still requires human approval.
 - [ ] Run the [image-area audit](USAGE.md#audit-image-shrinkage) for matching source/conversion
   slides. Inspect flagged shrinkage and record the chosen repair or retained review reason;
   after slide insertions, use the source map rather than assuming page numbers still align.

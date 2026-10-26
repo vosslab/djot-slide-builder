@@ -154,6 +154,9 @@ def action_for(path: pathlib.Path, line: int, action: str) -> slide_lib.native_m
 def reveal_block(path: pathlib.Path, line: int, block: slide_lib.native_model.Block,
 		reveal: slide_lib.native_model.Reveal) -> slide_lib.native_model.Block:
 	"""Attach one action to a block that owns reveal intent."""
+	if reveal.effect is slide_lib.native_model.RevealEffect.DISAPPEAR and not isinstance(block,
+			slide_lib.native_model.ImageCover):
+		fail(path, line, "disappear requires an image cover")
 	if not isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
 			slide_lib.native_model.Image, slide_lib.native_model.ImageArrow,
 			slide_lib.native_model.ImageOutline, slide_lib.native_model.ListBlock,
@@ -172,6 +175,8 @@ def reveal_block(path: pathlib.Path, line: int, block: slide_lib.native_model.Bl
 def reveal_item(path: pathlib.Path, line: int, item: slide_lib.native_model.ListItem,
 		reveal: slide_lib.native_model.Reveal) -> slide_lib.native_model.ListItem:
 	"""Attach one terminal action to the final logical list item."""
+	if reveal.effect is slide_lib.native_model.RevealEffect.DISAPPEAR:
+		fail(path, line, "disappear requires an image cover")
 	if item.reveal is not None:
 		fail(path, line, "Djot actions cannot attach more than one reveal to the same list item")
 	if reveal.sequence is slide_lib.native_model.RevealSequence.PARAGRAPHS:

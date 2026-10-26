@@ -21,14 +21,13 @@ Source: lect08d-3_point_testcross_voss.odp, slide 1.
 
 @body
 
-- Identify parental types in three-point testcross offspring.
-- Classify offspring as parental or recombinant for each pair of genes.
-- Calculate pairwise map distances from the non-parental progeny.
-- Use pairwise distances to determine gene order.
+- Identify parental offspring in a three-point testcross.
+- Classify parental and recombinant progeny.
+- Calculate distances from non-parental progeny.
+- Determine gene order from pairwise distances.
 
 @notes
-
-Added during the October 26, 2026 review from the existing lecture content.
+Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -74,289 +73,271 @@ Added during the October 26, 2026 review from the existing lecture content.
 - Parental Types
 
 === layout: one-panel
-@replaceme
 
 # *ones with the most progeny*
 
 @body
 
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d5_labeled.svg)
 
-- Parental Types
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 5.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to B Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d6_labeled.svg)
+
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 6.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to B Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d7_labeled.svg)
+
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 7.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Parental +b/a+; Recombinant ++/ab*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d8_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 8.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Sum* [*Non-Parental Types*]{color=#800080} *for A and B?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d9_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 9.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
 
-# *Which numbers to add for the A to B distance?*
+# *Sum* [*Non-Parental Types*]{color=#800080} *for A and B?*
 
 @body
 
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d10_labeled.svg)
 
-- Parental Types
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+d = (183+60+95+161)/2100
+
+d = 23.7 map units
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 10.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d11_labeled.svg)
+
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 11.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *A to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d12_labeled.svg)
+
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 12.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Parental ++/ac; Recombinant +c/a+*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d13_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 13.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Parental ++/ac; Recombinant +c/a+*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d14_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 14.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Sum* [*Non-Parental Types*]{color=#800080} *for A and C?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d15_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 15.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
 
-# *Which numbers to add for the A to B distance?*
+# *Sum* [*Non-Parental Types*]{color=#800080} *for A and C?*
 
 @body
 
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d16_labeled.svg)
 
-- ignore
-- this
-- gene
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
 
-- Parental Types
+d = (60+17+17+95)/2100
+
+d = 9.0 map units
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 16.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *B to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d17_labeled.svg)
+
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 17.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *B to C Distance\: Which Numbers to Add?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d18_labeled.svg)
+
+[Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 18.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Parental b+/+c; Recombinant ++/bc*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d19_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 19.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Parental b+/+c; Recombinant ++/bc*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d20_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 20.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
+
+=== layout: one-panel
+
+# *Sum* [*Non-Parental Types*]{color=#800080} *for B and C?*
+
+@body
+
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d21_labeled.svg)
+
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 21.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
 
-# *Parental Types +b/a+ Recombinant Types\: ++/ab*
+# *Sum* [*Non-Parental Types*]{color=#800080} *for B and C?*
 
 @body
 
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d22_labeled.svg)
 
-- ignore
-- this
-- gene
+[Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
 
-- Recombinant Types
+d = (183+17+17+161)/2100
 
-- Parental Types
+d = 18.0 map units
 
-=== layout: one-panel
-@replaceme
-
-# *Sum the* [*non-parental types*]{color=#800080} *for genes A and B?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- ignore
-- this
-- gene
-
-- Recombinant Types
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the* [*non-parental types*]{color=#800080} *for genes A and B?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-- d = (183+60+95+161)/2100
-- d = 23.7 map units
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the A to C distance?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the A to C distance?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Parental Types ++/ac Recombinant Types\: +c/a+*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- ignore
-- this
-- gene
-
-- Recombinant Types
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Parental Types ++/ac Recombinant Types\: +c/a+*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- ignore
-- this
-- gene
-
-- Recombinant Types
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the* [*non-parental types*]{color=#800080} *for genes A and C?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the* [*non-parental types*]{color=#800080} *for genes A and C?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-- d = (60+17+17+95)/2100
-- d = 9.0 map units
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the B to C distance?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Which numbers to add for the B to C distance?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Parental Types b+/+c Recombinant Types\: ++/bc*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Parental Types b+/+c Recombinant Types\: ++/bc*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the* [*non-parental types*]{color=#800080} *for genes B and C?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-=== layout: one-panel
-@replaceme
-
-# *Sum the* [*non-parental types*]{color=#800080} *for genes B and C?*
-
-@body
-
-![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
-
-- Recombinant Types
-
-- ignore
-- this
-- gene
-
-- Parental Types
-
-- d = (183+17+17+161)/2100
-- d = 18.0 map units
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 22.
+Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: section
 
@@ -735,7 +716,7 @@ Added during the October 26, 2026 review from the existing lecture content.
 - Start with the parental genotype and examine one pair of genes at a time.
 - Cover the third gene while classifying parental and non-parental combinations.
 - Sum non-parental progeny, divide by total progeny, and multiply by 100% for map distance.
-- Compare the pairwise distances to place the genes in order.
+- Use pairwise distances to determine gene order.
 
 @notes
 

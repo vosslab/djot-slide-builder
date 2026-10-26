@@ -12,6 +12,7 @@ import slide_lib.djot_parser
 import slide_lib.layout_content
 import slide_lib.layout_engine
 import slide_lib.layout_measurement
+import slide_lib.layout_object_builders
 import slide_lib.layout_primitives
 import slide_lib.layout_registry
 import slide_lib.native_model
@@ -140,18 +141,45 @@ def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.
 	assert all(run.style.underline for run in runs if run.style.link_url)
 
 
-def test_visible_url_wraps_at_address_boundaries(tmp_path: pathlib.Path) -> None:
-	"""Long addresses retain exact destinations and split at readable path boundaries."""
+def test_visible_url_shrinks_independently_without_splitting(tmp_path: pathlib.Path) -> None:
+	"""Long addresses keep their destination and use their own readable size."""
 	url = "https://crossidiomas.com/build-the-plane-while-flying-it/"
 	result = compile_source(tmp_path, "=== layout: two-panels\n\n@left\n\n"
 		f"[{url}]({url})\n\n@right\n\nImage placeholder\n")
 	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
 	runs = [run for run in paragraph.inlines
 		if isinstance(run, slide_lib.layout_content.TextRun)]
-	assert len(runs) > 1
+	assert len(runs) == 1
 	assert "".join(run.text for run in runs) == url
-	assert all(run.text[-1] in "/-_?&=" for run in runs[:-1])
 	assert all(run.style.link_url == url for run in runs)
+	assert 12 <= runs[0].style.size_pt < paragraph.typography.selected_size_pt
+	session = slide_lib.layout_measurement.MeasurementSession(slide_lib.presentation_theme.default_theme())
+	assert session.advance(runs[0].style.font_family, False, False, runs[0].style.size_pt,
+		url) < result.plan.slides[0].objects[0].rectangle.width
+
+
+def test_url_fits_remaining_space_or_moves_intact_to_next_line(tmp_path: pathlib.Path) -> None:
+	"""URL sizing and placement leave the surrounding paragraph's size alone."""
+	theme = slide_lib.presentation_theme.default_theme()
+	session = slide_lib.layout_measurement.MeasurementSession(theme)
+	url = "https://example.test/course"
+	destination = url + "?section=genetics"
+	prefix = "Join the course: "
+	block = slide_lib.native_model.Paragraph(slide_lib.native_model.SourceLocation(tmp_path / "deck.djot", 1),
+		(slide_lib.native_model.Text(prefix), slide_lib.native_model.Link(
+			(slide_lib.native_model.Text(url),), destination)))
+	minimum = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, False, False, 28, prefix)
+	minimum += session.advance(slide_lib.presentation_theme.NARROW_FONT_FAMILY, False, False, 12, url)
+	clearance = slide_lib.layout_measurement.point_height(1, theme)
+	for width, expect_break in ((minimum + clearance + 1, False), (minimum - 10, True)):
+		content = slide_lib.layout_object_builders.text_content((block,), 28, 20,
+			slide_lib.layout_primitives.StyleRole.BODY, "172033", width, theme, session=session)
+		paragraph = content.paragraphs[0]
+		run = next(r for r in paragraph.inlines if isinstance(r, slide_lib.layout_content.TextRun) and r.style.literal_url)
+		assert paragraph.typography.selected_size_pt == 28
+		assert any(isinstance(r, slide_lib.layout_content.LineBreak) for r in paragraph.inlines) == expect_break
+		assert run.text == url and run.style.link_url == destination
+		assert 12 <= run.style.size_pt < 28
 
 
 def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Path) -> None:
@@ -554,8 +582,50 @@ def test_citation_rejects_nonprose_before_export(tmp_path: pathlib.Path, content
 		compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n@citation\n\n" + content)
 
 
+@pytest.mark.parametrize("label", (
+	"## Cis isomer: The two Xs are on the same side.",
+	"Cis isomer: The two Xs are on the same side.",
+	"- Cis isomer: The two Xs are on the same side.",
+))
+def test_region_text_and_images_share_size_selection(tmp_path: pathlib.Path, label: str) -> None:
+	"""Local headings compete with images rather than reserving their preferred size first."""
+	PIL.Image.new("RGB", (225, 155), "blue").save(tmp_path / "diagram.png")
+	result = compile_source(tmp_path, "=== layout: two-over-one-panels\n\n# Topic\n\n"
+		f"@top-left\n\n{label}\n\n![Diagram](diagram.png)\n\n"
+		"@top-right\n\nOther comparison\n\n@bottom\n\nExplanation\n")
+	page = result.plan.slides[0]
+	text = next(item for item in page.objects if item.slot_id == "top-left"
+		and isinstance(item.content, slide_lib.layout_content.TextContent))
+	picture = next(item for item in page.objects if item.slot_id == "top-left"
+		and isinstance(item.content, slide_lib.layout_content.PictureContent))
+	theme = slide_lib.presentation_theme.default_theme()
+	font = text.content.paragraphs[0].typography.selected_size_pt
+	assert theme.body_floor_size_pt <= font < theme.ordinary_body_size_pt
+	assert text.rectangle.y + text.rectangle.height <= picture.rectangle.y
+	assert picture.content.placement.displayed_rectangle.width > picture.rectangle.width / 3
+	if label.startswith("##"):
+		assert text.style_role is slide_lib.layout_primitives.StyleRole.LOCAL_HEADING
+		assert all(run.style.bold for run in text.content.paragraphs[0].inlines
+			if isinstance(run, slide_lib.layout_content.TextRun))
+
+
+def test_region_heading_table_and_image_share_one_allocation(tmp_path: pathlib.Path) -> None:
+	PIL.Image.new("RGB", (300, 120), "blue").save(tmp_path / "diagram.png")
+	result = compile_source(tmp_path, "=== layout: one-panel\n\n# Topic\n\n@body\n\n"
+		"## Local heading\n\n| Sample | Value |\n| --- | --- |\n| A | 1 |\n\n![Diagram](diagram.png)\n")
+	objects = [item for item in result.plan.slides[0].objects if item.slot_id == "body"]
+	assert [type(item.content) for item in objects] == [
+		slide_lib.layout_content.TextContent, slide_lib.layout_content.TableContent,
+		slide_lib.layout_content.PictureContent]
+	heading, table, image = objects
+	assert heading.content.paragraphs[0].typography.selected_size_pt == \
+		table.content.header_rows[0].cells[0].paragraphs[0].typography.selected_size_pt
+	assert heading.rectangle.y + heading.rectangle.height <= table.rectangle.y
+	assert table.rectangle.y + table.rectangle.height <= image.rectangle.y
+
+
 def test_mixed_images_scale_independently_and_preserve_geometry(tmp_path: pathlib.Path) -> None:
-	"""Area selection preserves source order/aspects while allowing different image widths."""
+	"""Width scoring preserves source order/aspects while allowing different image widths."""
 	PIL.Image.new("RGB", (1000, 200), "blue").save(tmp_path / "wide.png")
 	PIL.Image.new("RGB", (1000, 350), "green").save(tmp_path / "diagram.png")
 	source = ("=== layout: one-panel\n@body\n![Question](wide.png)\n\n"
