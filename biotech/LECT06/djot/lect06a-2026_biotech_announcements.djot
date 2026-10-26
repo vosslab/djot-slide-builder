@@ -35,7 +35,6 @@ color-theme: biotechnology
 
 @notes
 
-Adapted from lect06a-2025_announcements.odp, source slide 3.
 Ask students to connect the trait to a biological mechanism and who benefits.
 
 === layout: one-panel
@@ -48,10 +47,6 @@ hidden: true
 - If no one is talking, please be the first to speak and get things started.
 - State your name, major, and plans after graduation.
 - [What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?]{color=red}
-
-@notes
-
-Lecture 04 icebreaker retained for later reuse.
 
 === layout: one-panel
 hidden: true
@@ -110,13 +105,6 @@ Stump the Vibe Coder &#35;35&#58; Steroid Quest &#8212; Can a Steroid Reach the 
 Watch the Video: [https://www.youtube.com/watch?v=vcB4skacFNw](https://www.youtube.com/watch?v=vcB4skacFNw)\
 Play the Game: https://vosslab.github.io/steroid-quest-into-the-nucleus/
 
-@notes
-
-podcast-slide: stump-the-vibe-coder
-Published: 2026-10-08T15:46:22+00:00
-Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
-Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
-
 === layout: one-plus-two-panels
 hidden: true
 
@@ -137,11 +125,6 @@ hidden: true
 @bottom-right
 
 ![Slide image 6](assets/lect05a-2026_biotech_announcements/image_006.png)
-
-@notes
-
-Archived assignment. Discord remains a course contact channel.
-Keep this slide hidden after Sept 21.
 
 === layout: two-panels
 
@@ -273,11 +256,6 @@ Talking Marks: Week 5 (Oct 1)
 
 More marks lower mark value. Missed work may earn partial credit.
 
-@notes
-
-Instructor placeholder only.
-Replace with a reviewed Week 5 image before showing; never include student IDs or scores.
-
 === layout: section
 
 # Grading and Assessment
@@ -300,10 +278,6 @@ hidden: true
 - Link Available on Blackboard
   - Was due Sept 21, 2026; no longer an active assignment
 - See link on Blackboard
-
-@notes
-
-Archived assignment. Keep this slide hidden after Sept 21.
 
 === layout: one-panel
 
@@ -345,10 +319,6 @@ Archived assignment. Keep this slide hidden after Sept 21.
 - Check Blackboard for Homework 3 and the Theranos form.
 - Next week, Oct 15: project discussion, BioTech News, and Homework 4.
 
-@notes
-
-Dates follow the Fall 2026 schedule. No new homework deadline is inferred.
-
 === layout: two-panels
 hidden: true
 
@@ -363,10 +333,6 @@ hidden: true
 - Video #4
 - Diversity Good for Us
 
-@notes
-
-Lecture 04 video retained for reuse; hidden for the Theranos class.
-
 === layout: one-panel
 
 # BioTech News: Article Selection
@@ -377,11 +343,6 @@ Lecture 04 video retained for reuse; hidden for the Theranos class.
 - Focus on molecular or cellular biology techniques.
 - Look for a product with potential for near-term development.
 - Check that the article fits modern biotechnology rather than a generic device, drug, or remedy.
-
-@notes
-
-BioTech News Discussion #1 is scheduled for Oct 15, 2026.
-Original LECT06 announcement uses a one-minute presentation and the past two years.
 
 === layout: one-panel
 
@@ -395,20 +356,10 @@ Original LECT06 announcement uses a one-minute presentation and the past two yea
 - What product or process is being developed, and how does it fit modern biotechnology?
 - Which organism, cell, gene, protein, or other biological component makes it work?
 
-@notes
-
-BioTech News Discussion #1 is scheduled for Oct 15, 2026.
-Original LECT06 announcement uses a one-minute presentation and the past two years.
-
 === layout: section
 hidden: true
 
 # General Announcements
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -425,11 +376,6 @@ hidden: true
 - Fun social activities
 - Professional development
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -440,11 +386,6 @@ hidden: true
 - Spring registration usually starts November 1.
 - Meet with your advisor if you are unsure what to take.
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -453,11 +394,6 @@ hidden: true
 @body
 
 - Spring course information will be posted when available.
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -468,20 +404,10 @@ hidden: true
 
 - Summer course information will be posted when available.
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: section
 hidden: true
 
 # Course Evaluations
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -493,11 +419,6 @@ hidden: true
 - You will receive an email when course evaluations open.
 - Anonymous feedback helps improve the course.
 - Please complete the survey before its published deadline.
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -511,11 +432,6 @@ hidden: true
   - [https\://roosevelt.campuslabs.com/eval-home/](https://roosevelt.campuslabs.com/eval-home/)
   - Students may log in with their RU Net ID and password.
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -526,11 +442,6 @@ hidden: true
 - I decided to link evaluation completions to extra time for business plan submission
 - Completion of student evaluations can add up to 5 more days for submitting the business plan
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -540,11 +451,6 @@ hidden: true
 
 - I cannot see individual students only total completion
 - percentage. [Ends Sun, Dec 8.]{color=red}
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: theend
 

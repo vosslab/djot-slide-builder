@@ -9,10 +9,6 @@
 
 ## Oct 6, 2026
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 1.
-
 === layout: one-panel
 # Mendel's Four Principles of Heredity
 
@@ -22,10 +18,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 1.
 - [*Dominance*]{underline=true}: in complete dominance, the dominant allele determines the heterozygote phenotype.
 - [*Segregation*]{underline=true}: each gamete receives one allele of each pair.
 - [*Independent assortment*]{underline=true}: unlinked genes assort independently.
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 2.
 
 === layout: two-panels
 # Mendel’s Principles were Imperfect
@@ -40,10 +32,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 2.
 - Morgan brought Mendel’s ideas to molecular biology
 - in doing so Morgan expanded on and falsified Mendel original ideas.
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 3.
-
 === layout: one-panel
 # Mendel's Four Principles of Heredity
 
@@ -56,10 +44,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 3.
 
 - Exceptions: [NOT ALL ORGANISMS ARE DIPLOID]{color=#CC00CC}; dominance can be [INCOMPLETE or CODOMINANT]{color=#CC00CC}; genes can interact ([EPISTASIS]{color=#CC00CC}).
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 4. Replacement reason: dense text requires post-conversion polish; unrecognized source text color #cc00cc requires review
-
 === layout: two-panels
 # Morgan showed that inheritance has a physical basis
 
@@ -71,10 +55,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 4. Replacement reason: dense text re
 @right
 
 ![Slide image 2](assets/lect06d-x_linked_genes_1/image_002.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 5.
 
 === layout: two-panels
 
@@ -91,20 +71,12 @@ Source: lect06d-x_linked_genes_1.odp, slide 5.
 
 ![Slide image 3](assets/lect06d-x_linked_genes_1/image_003.png)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 6.
-
 === layout: one-panel
 # Drosophila chromosomes
 
 @body
 
 ![Slide image 4](assets/lect06d-x_linked_genes_1/image_004.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 7.
 
 === layout: one-panel
 # Wild Type
@@ -115,10 +87,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 7.
   - [*wild type*]{color=red underline=true} literally means the most common phenotype
 - Traits alternative to the [*wild type*]{color=red underline=true} are called [*mutant*]{color=blue underline=true} phenotypes
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 8.
-
 === layout: one-panel
 
 @body
@@ -128,10 +96,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 8.
 - Wild-type Drosophila flies have red eyes (left).
 - Among his flies, Morgan discovered a mutant male with white eyes (right).
 - This variation made it possible for Morgan to trace a gene for eye color to a specific chromosome (LMs).
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 9.
 
 === layout: one-panel
 # Correlating Behavior of a Gene’s Alleles with Behavior of a Chromosome Pair
@@ -144,10 +108,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 9.
 - Morgan determined that the white-eyed mutant allele must be located on the X chromosome
 - Morgan’s finding supported the chromosome theory of inheritance
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 10.
-
 === layout: big-image
 
 @image
@@ -157,12 +117,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 10.
 @caption
 
 Morgan crossed red-eyed females with white-eyed males.
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 11. Replacement reason: normalized distributed pictorial annotations into native source-order content; unrecognized source text color #ff6600 requires review | Imported content for reconstruction: | Original layout: one-panel | # Figure 15.4a | Original slot: body | ![Slide image 6](assets/lect06d-x_linked_genes_1/image_006.jpg) | - Experiment | - Results | - P Generation | - F1 Generation | - F2 Generation | - All offspring had red eyes.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: big-image
 
@@ -174,30 +128,14 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 An X-linked allele explains the eye-color inheritance pattern.
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 12. Replacement reason: 29 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unrecognized source text color #ff6600 requires review | Imported content for reconstruction: | Original layout: one-panel | # Figure 15.4b | Original slot: body | ![Slide image 7](assets/lect06d-x_linked_genes_1/image_007.jpg) | Native reconstruction needed: 29 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: one-panel
 
 @body
 
 ![Slide image 8](assets/lect06d-x_linked_genes_1/genotype_notation.svg)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 13.
-
-Metafile repair: original Pictures/200005160000222E0000175E93D5D765.svm exported to SVG; text and table lines remain vector content.
-
 === layout: section
 # Chromosomal Basis of Sex
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 14.
 
 === layout: multiple-choice
 @question
@@ -213,10 +151,6 @@ Males are more often affected by X-linked traits than females because \_\_\_\_\_
 
 [Answer\: D]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 15.
-
 === layout: one-panel
 # The Chromosomal Basis of Sex
 
@@ -226,10 +160,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 15.
   - A person with two X chromosomes develops as a female
   - while a male develops from a zygote with one X and one Y
 - Only the ends of the Y chromosome have regions that are homologous with corresponding regions of the X chromosome
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 16.
 
 === layout: big-image
 
@@ -241,12 +171,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 16.
 
 Human X and Y chromosomes.
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 17. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Human Sex Chromosomes | Original slot: body | ![Slide image 9](assets/lect06d-x_linked_genes_1/image_009.jpg) | - X | - Y
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: one-panel
 # X-Y sex determination
 
@@ -255,10 +179,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 ![Slide image 10](assets/lect06d-x_linked_genes_1/image_010.jpg)
 
 - Females are homogametic (two X) while males are heterogametic (X and Y)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 18.
 
 === layout: two-panels
 
@@ -272,12 +192,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 18.
 @right
 
 ![Human chromosomes](assets/lect06d-x_linked_genes_1/human_karyotype.svg)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 19. Replacement reason: normalized overlapping legacy components into one native source-order panel
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: two-panels
 
@@ -293,12 +207,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - Males are [*heterogametic*]{color=blue underline=true} (XY).
 - Females are [*homogametic*]{color=red underline=true} (XX).
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 20. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction | Imported content for reconstruction: | Original layout: two-plus-one-panels | # X-Y System | Original slot: top-left | ![Slide image 12](assets/lect06d-x_linked_genes_1/image_012.png) | - Parents | - or | - Zygotes (offspring) | - or Sperm | - Egg | - 44 + XY | - 44 + XY | - 44 + XX | - 44 + XX | - 22 + X | - 22 + X | - 22 +  Y | Original slot: bottom-left | - Males ♂ are [heterogametic]{color=blue} (XY) | - Females ♀ are [homogametic]{color=red} (XX) | Original slot: right | - In mammals, the sex of an offspring [depends the sperm cell]{color=red} and whether it contains an X chromosome or a Y.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: two-panels
 
 # X-0 system
@@ -312,12 +220,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 @right
 
 ![X-0 system](assets/lect06d-x_linked_genes_1/xo_system.svg)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 21. Replacement reason: normalized distributed pictorial annotations into native source-order content; normalized overlapping legacy components into one native source-order panel | Imported content for reconstruction: | Original layout: one-panel | # X-O System | Original slot: body | ![Slide image 13](assets/lect06d-x_linked_genes_1/image_013.png) | - (b) The X-0 system | - 22 + X | - 22 + XX | - In grasshoppers, cockroaches, and some other insects, there is only one type of sex chromosome, the X. | - Females are XX; | - males have only one sex chromosome (X0). | - Sex of the offspring is [determined by the sperm cell]{color=red} and whether it contains an X chromosome or no sex chromosome.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: two-panels
 
@@ -333,12 +235,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - Females are [*heterogametic*]{underline=true} (ZW).
 - Males are [*homogametic*]{underline=true} (ZZ).
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 22. Replacement reason: normalized distributed pictorial annotations into native source-order content | Imported content for reconstruction: | Original layout: stacked-panels | # Z-W System | Original slot: top | - In birds, some fishes, and some insects, the sex chromosomes present in [the egg (not the sperm) determine the sex]{color=red} of offspring. | - The sex chromosomes are designated Z and W. Females are ZW and males are ZZ. | Original slot: bottom | ![Slide image 14](assets/lect06d-x_linked_genes_1/image_014.png) | - (c) The Z-W system | - 76 + ZW | - 76 + ZZ
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: two-panels
 # Z-linked inheritance in chickens
 
@@ -351,10 +247,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - Females are heterogametic (WZ)
 - Males are homogametic (ZZ)
 - Barred feathers in chickens, a classic example showing that chromosomal sex determination in birds is the reverse of that in mammals.
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 23.
 
 === layout: two-panels
 
@@ -370,12 +262,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 23.
 
 ![Haplo-diploid system](assets/lect06d-x_linked_genes_1/haplodiploid_system.svg)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 24. Replacement reason: normalized distributed pictorial annotations into native source-order content | Imported content for reconstruction: | Original layout: stacked-panels | # Haplo-Diploid System | Original slot: top | - There are no sex chromosomes in most species of bees and ants. | - Females develop from fertilized eggs and are thus diploid. | - Males develop from unfertilized eggs and are haploid; they have no fathers. | Original slot: bottom | ![Slide image 16](assets/lect06d-x_linked_genes_1/image_016.png) | - (d) The haplo-diploid system | - 32 (Diploid) | - 16 (Haploid)
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: multiple-choice
 @question
 
@@ -390,16 +276,8 @@ How is sex determined in humans?
 
 [Answer\: C]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 25. Replacement reason: normalized overlapping legacy components into one native source-order panel
-
 === layout: section
 # X-linked Genes
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 26.
 
 === layout: one-panel
 # X genes and Y genes
@@ -412,10 +290,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 26.
 - X chromosomes have genes for many characters unrelated to sex
   - Whereas most Y-linked genes are related to sex determination
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 27.
-
 === layout: one-panel
 # X-linked Recessive
 
@@ -427,10 +301,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 27.
   - A [male needs only one copy]{color=blue} of the allele ([hemizygous]{color=red})
 - X-linked recessive disorders are much more common in males than in females
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 28.
-
 === layout: one-panel
 # X-linked Recessive Disorders
 
@@ -440,10 +310,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 28.
   - Color blindness (mostly X-linked)
   - Duchenne muscular dystrophy
   - Hemophilia
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 29.
 
 === layout: one-panel
 # Color Blindness
@@ -457,19 +323,11 @@ Source: lect06d-x_linked_genes_1.odp, slide 29.
   - however, her sons have a 50-50 chance of being color-blind
 - Because the fertilizing sperm carries a Y chromosome, it cannot provide a second copy of that allele to correct the defect with a wildtype copy of the gene, resulting in a colorblind male child
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 30.
-
 === layout: one-panel
 
 @body
 
 ![Slide image 17](assets/lect06d-x_linked_genes_1/image_017.jpg)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 31.
 
 === layout: two-panels
 # Color Blind Tests
@@ -481,10 +339,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 31.
 @right
 
 ![Slide image 19](assets/lect06d-x_linked_genes_1/image_019.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 32.
 
 === layout: image-comparison
 
@@ -506,31 +360,17 @@ A colorful fruit stand.
 
 Without the green-sensitive photoreceptor, the scene appears mostly yellow.
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 33. Replacement reason: source object crosses physical page bounds; unrecognized source text color #008000 requires review; unrecognized source text color #808000 requires review
-
-SVG repair: Original comparison photographs embedded in separate SVGs; explanatory text is native.
-
 === layout: one-panel
 
 @body
 
 ![Slide image 21](assets/lect06d-x_linked_genes_1/image_021.png)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 34.
-
 === layout: one-panel
 
 @body
 
 ![Slide image 22](assets/lect06d-x_linked_genes_1/image_022.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 35.
 
 === layout: multiple-choice
 
@@ -544,16 +384,8 @@ Source: lect06d-x_linked_genes_1.odp, slide 35.
 
 [the father always passes the Y chromosome]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 36.
-
 === layout: section
 # Sex-linked Punnett Square
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 37.
 
 === layout: two-panels
 
@@ -572,12 +404,6 @@ Each son receives his X chromosome from his mother and his Y chromosome from his
 
 Expected female : male ratio = 1 : 1.
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 38. Replacement reason: normalized single connected materially coupled visual graph; enclosed coarse text into native source-order content
-
-SVG repair: Reconstructed as an editable native Punnett table and explanation; removed duplicated overlapping prose.
-
 === layout: two-panels
 # Sex-linked Punnett Square
 
@@ -591,10 +417,6 @@ SVG repair: Reconstructed as an editable native Punnett table and explanation; r
 @right
 
 ![Slide image 24](assets/lect06d-x_linked_genes_1/image_024.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 39.
 
 === layout: two-panels
 # Sex-linked Punnett Square
@@ -610,20 +432,12 @@ Source: lect06d-x_linked_genes_1.odp, slide 39.
 
 ![Slide image 25](assets/lect06d-x_linked_genes_1/image_025.png)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 40.
-
 === layout: one-panel
 # The Punnett Square
 
 @body
 
 ![Slide image 26](assets/lect06d-x_linked_genes_1/image_026.jpg)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 41.
 
 === layout: two-panels
 # Color-Blind Male and Wild-Type Female
@@ -637,16 +451,8 @@ Source: lect06d-x_linked_genes_1.odp, slide 41.
 
 ![Slide image 27](assets/lect06d-x_linked_genes_1/image_027.png)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 42.
-
 === layout: section
 # What are the parental phenotypes and genotypes for a color-blind female?
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 43.
 
 === layout: two-panels
 # Wild-type Male and Carrier Female
@@ -661,10 +467,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 43.
 - there is a 50% chance that each daughter will be a carrier like her mother
 - and a 50% chance that each son will have the disorder
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 44.
-
 === layout: two-panels
 # Carrier Female and Color-Blind Male
 
@@ -678,16 +480,8 @@ Source: lect06d-x_linked_genes_1.odp, slide 44.
 
 ![Slide image 29](assets/lect06d-x_linked_genes_1/image_029.png)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 45.
-
 === layout: section
 # Sample Problems
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 46.
 
 === layout: multiple-choice
 @question
@@ -705,19 +499,11 @@ What are the genotypes of the parents?
 
 [Answer\: B]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 47. Replacement reason: normalized overlapping legacy components into one native source-order panel
-
 === layout: one-panel
 
 @body
 
 ![Slide image 30](assets/lect06d-x_linked_genes_1/image_030.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 48.
 
 === layout: stacked-panels
 
@@ -729,10 +515,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 48.
 
 ![Slide image 31](assets/lect06d-x_linked_genes_1/image_031.png)
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 49.
-
 === layout: one-panel
 @replaceme
 
@@ -743,10 +525,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 49.
 ![Slide image 33](assets/lect06d-x_linked_genes_1/image_033.png)
 
 ![Slide image 33](assets/lect06d-x_linked_genes_1/image_030.png)
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 50. Replacement reason: normalized ambiguous topology bounds [NormalizedBounds(left=0.24139285714285716, top=0.06662857142857143, right=0.7584642857142858, bottom=0.3992571428571428), NormalizedBounds(left=0.049928571428571426, top=0.44, right=0.9498928571428573, bottom=0.6881142857142857), NormalizedBounds(left=0.11792857142857142, top=0.6990857142857142, right=0.9499285714285715, bottom=0.8299428571428571)] into one native source-order panel
 
 === layout: multiple-choice
 
@@ -763,10 +541,6 @@ Duchenne muscular dystrophy is caused by an X-linked recessive allele. How likel
 
 Answer: C
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 51. | Original prompt: multiple-choice @question  Duchenne muscular dystrophy is a serious condition caused by a recessive allele of a gene on the human X chromosome. The patients have muscles that weaken over time because they have absent or decreased dystrophin, a muscle protein. They rarely live past their twenties. How likely is it for a woman to have this condition?  - A) Women can NEVER have this condition. - B) One-fourth (25%) of the daughters of an affected man would have this condition. - C) One-half (50%) of the daughters of an affected father and a carrier mother could have this condition. - D) Only if a woman is XXX (three X chromosomes) could she have this condition.  @answer  [Answer\: C]{color=red} 
-
 === layout: multiple-choice
 
 @question
@@ -782,10 +556,6 @@ A man with _achondroplasia and normal vision_ marries a _color-blind woman of no
 @answer
 
 Answer: A
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 52.
 
 === layout: multiple-choice
 @question
@@ -805,10 +575,6 @@ What proportion of their sons would be color-blind and of normal height?
 
 [Answer\: C]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 53. Replacement reason: normalized overlapping legacy components into one native source-order panel
-
 === layout: multiple-choice
 @question
 
@@ -827,10 +593,6 @@ What proportion of their daughters would be color-blind and of average height?
 
 [Answer\: B]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 54. Replacement reason: normalized overlapping legacy components into one native source-order panel
-
 === layout: one-panel
 
 @body
@@ -843,10 +605,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 54. Replacement reason: normalized o
   - B) 1\:2 male to female
   - C) 1\:1 male to female
   - D) 3\:1 male to female
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 55.
 
 === layout: four-panels
 @replaceme
@@ -874,12 +632,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 55.
 
 - ♂
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 56. Replacement reason: normalized overlapping legacy components into a table-safe native grid
-
-Metafile repair: original Pictures/TablePreview1.svm exported to SVG; text and table lines remain vector content.
-
 === layout: four-panels
 @replaceme
 
@@ -906,12 +658,6 @@ Metafile repair: original Pictures/TablePreview1.svm exported to SVG; text and t
 
 - ♂
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 57. Replacement reason: normalized overlapping legacy components into a table-safe native grid
-
-Metafile repair: original Pictures/TablePreview2.svm exported to SVG; text and table lines remain vector content.
-
 === layout: one-panel
 @replaceme
 
@@ -924,10 +670,6 @@ Metafile repair: original Pictures/TablePreview2.svm exported to SVG; text and t
 - What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 
 Rebuild the Punnett-square stage from source slide 58.
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 58. Replacement reason: Unsupported table composition with nine components; staged import retains question only. Rebuild table, genotype labels, and elimination/reveal relationships from original ODP. | Original source text (spatial order requires reconstruction): | In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. | A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. | What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female? | ZN | Zl | ZN | ZNZN | ZNZl | W | ZNW | ZlW | ♀ | ♂ | ♀ | ♀ | ♂ | ♂
 
 === layout: one-panel
 @replaceme
@@ -942,10 +684,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 58. Replacement reason: Unsupported 
 
 Rebuild the Punnett-square stage from source slide 59.
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 59. Replacement reason: Unsupported table composition with nine components; staged import retains question only. Rebuild table, genotype labels, and elimination/reveal relationships from original ODP. | Original source text (spatial order requires reconstruction): | In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. | A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. | What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female? | ZN | Zl | ZN | ZNZN | ZNZl | W | ZNW | ZlW | ♀ | ♂ | ♀ | ♀ | ♂ | ♂
-
 === layout: one-panel
 @replaceme
 
@@ -958,10 +696,6 @@ Source: lect06d-x_linked_genes_1.odp, slide 59. Replacement reason: Unsupported 
 - What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 
 Rebuild the Punnett-square stage from source slide 60.
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 60. Replacement reason: Unsupported table composition with nine components; staged import retains question only. Rebuild table, genotype labels, and elimination/reveal relationships from original ODP. | Original source text (spatial order requires reconstruction): | In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW. | A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons. | What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female? | ZN | Zl | ZN | ZNZN | ZNZl | W | ZNW | ZlW | ♀ | ♂ | ♀ | ♀ | ♂ | ♂ | 2 males for every 1 female
 
 === layout: multiple-choice
 @question
@@ -980,13 +714,5 @@ What would be the sex ratio in the offspring of a cross between a male that is h
 
 [Answer\: A]{color=red}
 
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 61. Replacement reason: normalized overlapping legacy components into one native source-order panel
-
 === layout: theend
 # THE END
-
-@notes
-
-Source: lect06d-x_linked_genes_1.odp, slide 62.

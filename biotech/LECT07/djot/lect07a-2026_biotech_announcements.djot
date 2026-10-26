@@ -70,13 +70,6 @@ Stump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboa
 Watch the Video: [https://www.youtube.com/watch?v=0zhh6g-DJFs](https://www.youtube.com/watch?v=0zhh6g-DJFs)\
 Play the Game: https://vosslab.github.io/bad-cell-day/
 
-@notes
-
-podcast-slide: stump-the-vibe-coder
-Published: 2026-10-15T14:34:09+00:00
-Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
-Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
-
 === layout: one-plus-two-panels
 
 # Discord Server
@@ -95,11 +88,6 @@ Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 @bottom-right
 
 ![Slide image 6](assets/lect05a-2026_biotech_announcements/image_006.png)
-
-@notes
-
-This is a general announcement for the course contact channel
-not an assignment slide. Discord remains a course contact channel.
 
 === layout: two-panels
 
@@ -241,11 +229,6 @@ Talking Marks: Through Week 6 (Oct 14)
 
 More marks lower mark value. Missed work may earn partial credit.
 
-@notes
-
-Instructor placeholder only.
-Replace with a reviewed weekly image before showing; only include student IDs and scores, no names
-
 === layout: section
 
 # Grading and Assessment
@@ -268,10 +251,6 @@ hidden: true
 - Link Available on Blackboard
   - Was due Sept 21, 2026; no longer an active assignment
 - See link on Blackboard
-
-@notes
-
-Archived assignment. Keep this slide hidden after Sept 21.
 
 === layout: one-panel
 
@@ -309,10 +288,6 @@ Archived assignment. Keep this slide hidden after Sept 21.
 - [*Oct 29:*]{underline=true} Milestones and Competition Form
 - Check Blackboard for [*Homework 4*]{underline=true} and the [*Theranos form*]{underline=true}.
 
-@notes
-
-Dates follow the Fall 2026 schedule. No new homework deadline is inferred.
-
 === layout: one-panel
 
 # BioTech News: Article Selection
@@ -323,11 +298,6 @@ Dates follow the Fall 2026 schedule. No new homework deadline is inferred.
 - Focus on molecular or cellular biology techniques.
 - Look for a product with potential for near-term development.
 - Check that the article fits modern biotechnology rather than a generic device, drug, or remedy.
-
-@notes
-
-BioTech News Discussion #1 is scheduled for Oct 15, 2026.
-Original LECT06 announcement uses a one-minute presentation and the past two years.
 
 === layout: one-panel
 
@@ -341,21 +311,10 @@ Original LECT06 announcement uses a one-minute presentation and the past two yea
 - What product or process is being developed, and how does it fit modern biotechnology?
 - Which organism, cell, gene, protein, or other biological component makes it work?
 
-@notes
-
-BioTech News Discussion #1 is scheduled for Oct 15, 2026.
-Original LECT06 announcement uses a one-minute presentation and the past two years.
-
 === layout: section
 hidden: true
 
 # General Announcements
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-Hide General Announcements if there are no unhidden slides that follow
 
 === layout: one-panel
 hidden: true
@@ -372,11 +331,6 @@ hidden: true
 - Fun social activities
 - Professional development
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -387,11 +341,6 @@ hidden: true
 - Spring registration usually starts November 1.
 - Meet with your advisor if you are unsure what to take.
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -400,11 +349,6 @@ hidden: true
 @body
 
 - Spring course information will be posted when available.
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -415,20 +359,10 @@ hidden: true
 
 - Summer course information will be posted when available.
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: section
 hidden: true
 
 # Course Evaluations
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -440,11 +374,6 @@ hidden: true
 - You will receive an email when course evaluations open.
 - Anonymous feedback helps improve the course.
 - Please complete the survey before its published deadline.
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: one-panel
 hidden: true
@@ -458,11 +387,6 @@ hidden: true
   - https://roosevelt.campuslabs.com/eval-home/
   - Students may log in with their RU Net ID and password.
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -473,11 +397,6 @@ hidden: true
 - I decided to link evaluation completions to extra time for business plan submission
 - Completion of student evaluations can add up to 5 more days for submitting the business plan
 
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
-
 === layout: one-panel
 hidden: true
 
@@ -487,11 +406,6 @@ hidden: true
 
 - I cannot see individual students only total completion
 - percentage. [Ends Sun, Dec 8.]{color=red}
-
-@notes
-
-Archived announcement carried forward for later reuse.
-Review dates and instructions before unhiding.
 
 === layout: two-panels
 
@@ -506,12 +420,6 @@ Review dates and instructions before unhiding.
 - Video #8
 - Bosses.
 - Necessary.
-
-@notes
-
-always last fun slide of this deck for BIOL 480
-never hide, increment up one each week
-see /Volumes/WorkExternal/SynDocuments/teaching/MOVIES/biotech_movies/Veridian_Dynamics/ for movie list
 
 === layout: theend
 

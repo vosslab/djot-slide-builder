@@ -11,9 +11,6 @@ color-theme: genetics
 
 ## October 20, 2026
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 1.
-
 === layout: one-panel
 
 # Today's agenda
@@ -27,9 +24,6 @@ Source: lect06a-2026_announcements 2.odp, slide 1.
 - Mendel chi-square group activity
 - Closing remarks
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 2.
-
 === layout: one-panel
 
 # [Breakout Room Chat]{color=red}
@@ -41,17 +35,9 @@ Source: lect06a-2026_announcements 2.odp, slide 2.
 - [What pets do you have?]{color=red}
   - Dog, cat, none, other.
 
-@notes
-
-Icebreaker collection: pets (icebreakers.yaml).
-Instructor-selected question for October 20, 2026.
-
 === layout: section
 
 # Informational Slides
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 3.
 
 === layout: big-image
 
@@ -65,9 +51,6 @@ Watch Dr. Voss's videos for help with difficult problems.
 
 https://www.youtube.com/c/NeilVossLab/videos
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 4.
-
 === layout: big-image
 
 @image
@@ -79,13 +62,6 @@ Source: lect06a-2026_announcements 2.odp, slide 4.
 Stump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard\
 Watch the Video: [https://www.youtube.com/watch?v=0zhh6g-DJFs](https://www.youtube.com/watch?v=0zhh6g-DJFs)\
 Play the Game: https://vosslab.github.io/bad-cell-day/
-
-@notes
-
-podcast-slide: stump-the-vibe-coder
-Published: 2026-10-15T14:34:09+00:00
-Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
-Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 === layout: one-plus-two-panels
 
@@ -107,9 +83,6 @@ Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
 
 ![Slide image 3](assets/lect07a-2026_announcements/image_003.png)
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 5.
-
 === layout: two-panels
 
 # *Office Hours*
@@ -128,9 +101,6 @@ Source: lect06a-2026_announcements 2.odp, slide 5.
 
 ![Slide image 4](assets/lect07a-2026_announcements/image_004.png)
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 6.
-
 === layout: one-panel
 
 # *Ways to Contact Dr. Voss*
@@ -147,9 +117,6 @@ Source: lect06a-2026_announcements 2.odp, slide 6.
 - [Anonymous Google Form]{color=purple}.
   - Response time\: 2-4 business days.
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 7.
-
 === layout: two-panels
 
 # Send an Anonymous Message to Instructor
@@ -165,17 +132,9 @@ Source: lect06a-2026_announcements 2.odp, slide 7.
 
 ![Anonymous Form](assets/anonymous_form.png)
 
-@notes
-Adapted from biotech LECT07 announcements: instructor-approved anonymous-message slide.
-
-
-
 === layout: section
 
 # Textbooks
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 9.
 
 === layout: two-panels
 
@@ -192,15 +151,9 @@ Source: lect06a-2026_announcements 2.odp, slide 9.
 
 ![Slide image 6](assets/lect07a-2026_announcements/image_006.png)
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 10.
-
 === layout: section
 
 # Course Content
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 11.
 
 === layout: one-panel
 
@@ -217,9 +170,6 @@ Source: lect06a-2026_announcements 2.odp, slide 11.
 - Policies and student resources
 - https://vosslab.github.io/syllabus/fall_2026/shared/policies/
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 12.
-
 === layout: one-panel
 
 # *PREVIEW Slides*
@@ -230,15 +180,9 @@ Source: lect06a-2026_announcements 2.odp, slide 12.
   - They are labeled PREVIEW in the filename.
 - Full versions of lecture slides are available on Blackboard after class.
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 13.
-
 === layout: section
 
 # Grading and Assessment
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 14.
 
 === layout: one-panel
 
@@ -255,9 +199,6 @@ Source: lect06a-2026_announcements 2.odp, slide 14.
 - [*Exams*]{color=red}\: cumulative midterm and final
   - Individual; 100 points total
   - Each part\: 50 points; 75 minutes
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 15.
 
 === layout: two-panels
 
@@ -276,15 +217,9 @@ Source: lect06a-2026_announcements 2.odp, slide 15.
   - This includes submitted work waiting to be graded.
 - More useful for seeing the effect of assignments you have not attempted.
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 16.
-
 === layout: section
 
 # Quiz/Exam
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 17.
 
 === layout: one-panel
 
@@ -300,17 +235,6 @@ Source: lect06a-2026_announcements 2.odp, slide 17.
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
 
-@notes
-
-Assessment colors relative to this lecture date: past light gray (#AAAAAA), future black
-(#000000), next week dark red (#990000). No quizzes or exams fall next week, October 27.
-Quiz 3 covers Lecture 7 and Lecture 8 material. The final is in person and cumulative.
-Schedule: https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
-Source: lect06a-2026_announcements 2.odp, slide 18.
-
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
-
 === layout: one-panel
 
 # [*Don't Panic*]{color=red}
@@ -325,9 +249,6 @@ Dates verified against the published Fall 2026 Genetics syllabus schedule.
 - If you haven't looked at all the questions, I can reset the quiz/exam
 - If you have looked at some questions, I can create a new custom quiz/exam with only the portion that you haven't seen yet.
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 19.
-
 === layout: one-panel
 
 # *Illness Policy*
@@ -339,16 +260,10 @@ Source: lect06a-2026_announcements 2.odp, slide 19.
 - If a major event interferes (car accident, etc.), again contact me.
 - Communication is always helpful.
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 20.
-
 === layout: section
 hidden: true
 
 # Exam
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 21.
 
 === layout: one-panel
 hidden: true
@@ -361,9 +276,6 @@ hidden: true
 - Chapters 1-4
 - Class meeting\: 1\:30-4\:25 p.m.
 - Worth 100 points; completed individually
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 22.
 
 === layout: one-panel
 hidden: true
@@ -378,9 +290,6 @@ hidden: true
 - Questions sorted by lecture
 - Fill one bubble completely for each answer
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 23.
-
 === layout: one-panel
 hidden: true
 
@@ -392,9 +301,6 @@ hidden: true
 - Dr. Voss provides the Punnett square help sheet
 - No electronics or calculators
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 24.
-
 === layout: one-panel
 hidden: true
 
@@ -405,9 +311,6 @@ hidden: true
 - Review a quiz after everyone has completed it
 - In Blackboard, open your quiz score in the gradebook
 - Select the attempt to review your answers
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 25.
 
 === layout: one-panel
 hidden: true
@@ -423,16 +326,10 @@ hidden: true
 - Assignment 6 is due Oct 13
 - Check Blackboard for assignment availability and submission times
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 26.
-
 === layout: section
 hidden: true
 
 # Quiz
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 27.
 
 === layout: two-panels
 hidden: true
@@ -458,9 +355,6 @@ hidden: true
 - 3-4 students; breakout setup takes time
 - Hard group quizzes receive a curve
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 28.
-
 === layout: one-panel
 hidden: true
 
@@ -472,9 +366,6 @@ hidden: true
 - Students missing group quizzes cannot later work in a group
   - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
   - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 29.
 
 === layout: one-panel
 hidden: true
@@ -488,9 +379,6 @@ hidden: true
 - Group Quiz is not required.
 - Do not join if you do not want to actively participate.
 - Let me know if you want to work with someone in particular.
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 30.
 
 === layout: one-panel
 hidden: true
@@ -510,9 +398,6 @@ hidden: true
   - Report problems by email or Discord DM
   - Return to main room or stay and chat
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 31.
-
 === layout: one-panel
 hidden: true
 
@@ -526,15 +411,9 @@ hidden: true
 - Did you retake the relevant assignments and make sure you understood the questions? Did you retake them until you had a grade you were happy with?
   - The assignments and quizzes mostly have the same questions.
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 32.
-
 === layout: section
 
 # Weekly Assignments
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 33.
 
 === layout: two-panels
 hidden: true
@@ -559,13 +438,6 @@ hidden: true
 
 - https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
-@notes
-Dates retained from Genetics LECT06 Part 1 homework slide. Hidden during Part 2.
-
-
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
-
 === layout: two-panels
 
 # Homework Due Dates (Part 2)
@@ -589,16 +461,6 @@ Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 - https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 34.
-
-
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
-
 === layout: theend
 
 # THE END
-
-@notes
-Source: lect06a-2026_announcements 2.odp, slide 35.

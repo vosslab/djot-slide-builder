@@ -22,10 +22,6 @@ color-theme: genetics
 
 @notes
 
-Source: lect07a2-genetic_probability.odp, slide 1.
-Review: source animation for id1 requires review; source animation for unknown target requires review.
-
-Original presenter notes:
 Run through the practice questions in the video
 
 === layout: one-panel
@@ -41,11 +37,6 @@ Run through the practice questions in the video
 
 - [*When you hear &#8220;and&#8221; think MULTIPLICATION*]{color=green}
 
-@notes
-
-Source: lect07a2-genetic_probability.odp, slide 2.
-Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
-
 === layout: one-panel
 
 # *Addition Rules*
@@ -58,11 +49,6 @@ Verified against original ODP/PDF and rebuilt PDF: source content complete; layo
   - [P(A or B) = P(A) + P(B) &#8211; P(A and B)]{color=#00599D}
 
 - [*When you hear &#8220;or&#8221; think ADDITION*]{color=green}
-
-@notes
-
-Source: lect07a2-genetic_probability.odp, slide 3.
-Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
 
 === layout: one-panel
 @replaceme
@@ -77,10 +63,6 @@ Verified against original ODP/PDF and rebuilt PDF: source content complete; layo
 
 @notes
 
-Source: lect07a2-genetic_probability.odp, slide 4.
-Review: source animation for id2 requires review; source animation for id3 requires review; source object crosses physical page bounds.
-
-Original presenter notes:
 In order for a puppy to have a&#160;BbCc&#160;genotype, both of these events must take place: the puppy must receive&#160;Bb&#160;alleles,&#160;and&#160;it must receive&#160;Cc&#160;alleles. The two events are independent because the genes assort independently (don't affect one another's inheritance). So, once we calculate the probability of each genetic event, we can multiply these probabilities using the product rule to get the probability of the genotype of interest (BbCc).
 
 === layout: one-panel
@@ -90,10 +72,6 @@ In order for a puppy to have a&#160;BbCc&#160;genotype, both of these events mus
 
 ![Slide image 2](assets/source_fidelity/lect07a2/image_002.png)
 
-@notes
-
-Source: lect07a2-genetic_probability.odp, slide 5.
-
 === layout: one-panel
 
 # More Practice
@@ -102,10 +80,6 @@ Source: lect07a2-genetic_probability.odp, slide 5.
 
 - In dogs, black coat color (_B_) is dominant to yellow coat color (_b_), and straight fur (_C_) is dominant to curly fur (_c_). The coat color gene and the fur texture gene are on different chromosomes, so they assort independently, and are not sex linked.
 - *In a cross between two*&#160;*_BbCc_*&#160;*parents, predict the fraction of offspring with black coat color and straight fur.*
-
-@notes
-
-Source: lect07a2-genetic_probability.odp, slide 6.
 
 === layout: one-panel
 @replaceme
@@ -119,8 +93,3 @@ Source: lect07a2-genetic_probability.odp, slide 6.
 - Since black coat color and straight fur are dominant traits, all&#160;_BB_&#160;and&#160;_Bb_&#160;puppies will have black coats, and all&#160;_CC_&#160;and&#160;_Cc_&#160;puppies will have straight fur, corresponding to&#160;\[3/4\\\]&#160;of puppies in each case. (You can draw out the individual Punnett squares for the color and texture genes to confirm these frequencies.)
 - To get the probability of a puppy having both black coat color and straight fur, you can multiply the probabilities of these two independent events\:&#160;\[(3/4) \* (3/4) = 9/16\].
 - *\[9/16\]&#160;of the puppies will have black coats and straight fur.*
-
-@notes
-
-Source: lect07a2-genetic_probability.odp, slide 7.
-Review: source animation for id4 requires review; source animation for id5 requires review; source animation for id6 requires review; source animation for id7 requires review; source animation for id8 requires review; source animation for id9 requires review.

@@ -8,11 +8,6 @@ color-theme: biostatistics
 ## Dr. Neil Voss
 ## Oct 21, 2026
 
-@notes
-
-BIOL 318/418, Fall 2026. Schedule authority: ~/nsh/syllabus/site_docs/fall_2026/biostats/SCHEDULE.md, updated October 21.
-Shared announcement setup follows docs/HUMAN_GUIDANCE.md and cleaned biotech LECT07A.
-
 === layout: one-panel
 
 # Today's Agenda
@@ -39,8 +34,7 @@ Shared announcement setup follows docs/HUMAN_GUIDANCE.md and cleaned biotech LEC
 @notes
 
 Today's ANOVA discussion uses microbes from nearby Busse Woods.
-Examples help students get started and share. Instructor examples supplied directly
-for this slide: watching my son run cross country, hiking trails with my spouse,
+Examples to share: watching my son run cross country, hiking trails with my spouse,
 looking at the Fall leaves.
 
 === layout: section
@@ -72,13 +66,6 @@ Stump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboa
 Watch the Video: [https://www.youtube.com/watch?v=0zhh6g-DJFs](https://www.youtube.com/watch?v=0zhh6g-DJFs)\
 Play the Game: https://vosslab.github.io/bad-cell-day/
 
-@notes
-
-podcast-slide: stump-the-vibe-coder
-Published: 2026-10-15T14:34:09+00:00
-Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
-Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
-
 === layout: one-plus-two-panels
 
 # Discord Server
@@ -99,11 +86,6 @@ Join the server:
 @bottom-right
 
 ![Slide image 6](assets/lect05a-2026_biotech_announcements/image_006.png)
-
-@notes
-
-This is a general announcement for the course contact channel
-not an assignment slide. Discord remains a course contact channel.
 
 === layout: two-panels
 
@@ -173,10 +155,6 @@ https://forms.gle/gZ8nx28q9YDwSy8g7
 - *Due:* Joe's 1-3 assessment
 - *Graduate students:* Revised regression draft
 
-@notes
-
-Week 08 schedule. Each tutorial's directions provide its due date; no submission time is inferred.
-
 === layout: one-panel
 
 # Next Week: Oct 28
@@ -206,10 +184,6 @@ The schedule marks the graduate regression release as a target, not a guaranteed
 - *Due:* Microbes 4-5; regression feedback
 - *Form groups:* 1 graduate student + 3 undergraduates
 
-@notes
-
-Week 10 details follow the updated Fall 2026 biostats SCHEDULE.md.
-
 === layout: one-panel
 
 # Homework Due Dates (Part 2)
@@ -225,11 +199,6 @@ Week 10 details follow the updated Fall 2026 biostats SCHEDULE.md.
 | Week 14: Peer-trial video + feedback | Dec 09 |
 | Week 15: Final project | Dec 16 |
 
-@notes
-
-Schedule dates from the updated SCHEDULE.md. Each tutorial's directions provide its due date.
-Current and next week's work is dark red; later work is black. No precise cutoff time is supplied.
-
 === layout: one-panel
 
 # Quiz Dates
@@ -239,12 +208,6 @@ Current and next week's work is dark red; later work is black. No precise cutoff
 - [Quiz 1: Oct 7]{color=#AAAAAA}
 - [Quiz 2: Nov 4]{color=#000000}
 - [Quiz 3: Dec 9]{color=#000000}
-
-@notes
-
-https://docs.google.com/spreadsheets/d/1i_Whr_y3r43MynI-5QL3inDpBG8N1N8-M2nDtOB8ypg/edit
-Quiz dates follow the updated schedule. This course has no midterm or final exams.
-Keep assessment positions stable and update status colors relative to each lecture date.
 
 === layout: section
 
@@ -269,14 +232,6 @@ Keep assessment positions stable and update status colors relative to each lectu
 
 https://docs.google.com/document/d/1ZOLIw-JlNA6Mry1w0t5I5Ffgi7RMiBCSr7VtyNgsdt0/edit
 
-@notes
-
-Source: https://docs.google.com/document/d/1ZOLIw-JlNA6Mry1w0t5I5Ffgi7RMiBCSr7VtyNgsdt0/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
-
 === layout: two-panels
 
 # Fried Foods #2: One-Sample t-test
@@ -295,14 +250,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 @citation
 
 https://docs.google.com/document/d/1lh3EWl4gnyT0dq0rgYzjzC6J1No4zKP2gi5eY3N5uv0/edit
-
-@notes
-
-Source: https://docs.google.com/document/d/1lh3EWl4gnyT0dq0rgYzjzC6J1No4zKP2gi5eY3N5uv0/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
 
 === layout: two-panels
 
@@ -323,14 +270,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 
 https://docs.google.com/document/d/1k5UzUlpu-5wCMyWpop0bFlXBgAWivwTwd020Jgo1EIk/edit
 
-@notes
-
-Source: https://docs.google.com/document/d/1k5UzUlpu-5wCMyWpop0bFlXBgAWivwTwd020Jgo1EIk/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
-
 === layout: two-panels
 
 # Microbes #1: Z-test
@@ -349,14 +288,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 @citation
 
 https://docs.google.com/document/d/1mWpCqMxqU0O2G7r1P0JdpMOgKyJie8Qcy4vwvXuBVuk/edit
-
-@notes
-
-Source: https://docs.google.com/document/d/1mWpCqMxqU0O2G7r1P0JdpMOgKyJie8Qcy4vwvXuBVuk/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
 
 === layout: two-panels
 
@@ -377,14 +308,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 
 https://docs.google.com/document/d/1V0dAHscKvN8H_X4AlbDEIaukAsHoKHEKjwz7jdbsR0w/edit
 
-@notes
-
-Source: https://docs.google.com/document/d/1V0dAHscKvN8H_X4AlbDEIaukAsHoKHEKjwz7jdbsR0w/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
-
 === layout: two-panels
 
 # Microbes #3: Two-Sample t-test
@@ -403,14 +326,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 @citation
 
 https://docs.google.com/document/d/1DiSYMwPhs8tmWQMLqQwLGHBssy12o-pYzyUT1qIoXcU/edit
-
-@notes
-
-Source: https://docs.google.com/document/d/1DiSYMwPhs8tmWQMLqQwLGHBssy12o-pYzyUT1qIoXcU/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
 
 === layout: two-panels
 
@@ -431,14 +346,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 
 https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa6c9Mi9o/edit
 
-@notes
-
-Source: https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa6c9Mi9o/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
-
 === layout: two-panels
 
 # Microbes #5: ANOVA
@@ -457,14 +364,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 @citation
 
 https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
-
-@notes
-
-Source: https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
-Read from the current Google Docs text export on October 21, 2026.
-Overview of the tutorial scenario; no computed result is supplied.
-
-Illustration: original editable SVG; schematic comparison, not tutorial data or results.
 
 === layout: two-panels
 
@@ -485,13 +384,6 @@ Illustration: original editable SVG; schematic comparison, not tutorial data or 
 
 https://docs.google.com/spreadsheets/d/1mhOQhC_1hqnbvYItPT3y-V-_9l9q3pN7MtZDcOevaA0/edit
 
-@notes
-
-Sources: Tutorial_Outline.md and Tutorial_Outline.pdf supplied at the repository root.
-The citation links to the tutorial spreadsheet supplied in the outline.
-Scenario overview only; no computed results or causal conclusions are supplied.
-Illustration: original editable SVG showing story objects, not regression data.
-
 === layout: section
 
 # Group Project
@@ -511,10 +403,7 @@ Illustration: original editable SVG showing story objects, not regression data.
 
 @notes
 
-Project purpose and workflow: biol_318-biostatistics/CURE_summer_course/capstone_scaffold.txt.
-Dates and team composition: current Fall 2026 biostats SCHEDULE.md.
 Undergraduate contributions summarize the shared project work, not separately graded roles.
-Do not infer project point values or a grading rubric from the planning scaffold.
 
 === layout: one-panel
 
@@ -547,7 +436,6 @@ Do not infer project point values or a grading rubric from the planning scaffold
 
 @notes
 
-Source: Fall 2026 biostats COURSE_DETAILS and ASSIGNMENTS_AND_GRADING.
 Retry policy applies to assignments, not limited-attempt quizzes.
 
 === layout: one-panel

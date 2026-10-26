@@ -219,6 +219,11 @@ in the main slide content, not in `@citation`. Citation paragraphs may use nativ
 
 ## Instructor notes
 
+Use `@notes` as presentation note cards for lecturing: speaking prompts, explanations, and
+reminders. Keep source attributions, selection history, publication metadata, refresh commands,
+conversion details, and verification logs out of Djot files. See
+[HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) for the content policy.
+
 Use one optional `@notes` section on any slide. It continues until the next exact named-slot
 directive, such as `@body` or `@answer`, the next `=== layout:` line, or the end of the file.
 The next slot must belong to the chosen layout; `@section` is not a slot name.

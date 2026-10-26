@@ -12,9 +12,6 @@ color-theme: genetics
 
 ## October 27, 2026
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 1.
-
 === layout: one-panel
 
 # Learning objectives
@@ -25,9 +22,6 @@ Source: lect08d-3_point_testcross_voss.odp, slide 1.
 - Classify parental and recombinant progeny.
 - Calculate distances from non-parental progeny.
 - Determine gene order from pairwise distances.
-
-@notes
-Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -82,10 +76,6 @@ Generated objectives shortened for rendered line balance during the October 26 c
 
 [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 5.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *A to B Distance\: Which Numbers to Add?*
@@ -95,10 +85,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d6_labeled.svg)
 
 [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 6.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -110,10 +96,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 
 [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 7.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *Parental +b/a+; Recombinant ++/ab*
@@ -124,10 +106,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 8.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *Sum* [*Non-Parental Types*]{color=#800080} *for A and B?*
@@ -137,10 +115,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d9_labeled.svg)
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 9.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
@@ -157,10 +131,6 @@ d = (183+60+95+161)/2100
 
 d = 23.7 map units
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 10.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *A to C Distance\: Which Numbers to Add?*
@@ -170,10 +140,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d11_labeled.svg)
 
 [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 11.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -185,10 +151,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 
 [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 12.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *Parental ++/ac; Recombinant +c/a+*
@@ -198,10 +160,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d13_labeled.svg)
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 13.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -213,10 +171,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 14.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *Sum* [*Non-Parental Types*]{color=#800080} *for A and C?*
@@ -226,10 +180,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d15_labeled.svg)
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 15.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
@@ -246,10 +196,6 @@ d = (60+17+17+95)/2100
 
 d = 9.0 map units
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 16.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *B to C Distance\: Which Numbers to Add?*
@@ -259,10 +205,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d17_labeled.svg)
 
 [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 17.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -274,10 +216,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 
 [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 18.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *Parental b+/+c; Recombinant ++/bc*
@@ -287,10 +225,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d19_labeled.svg)
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 19.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 
@@ -302,10 +236,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
 
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 20.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
-
 === layout: one-panel
 
 # *Sum* [*Non-Parental Types*]{color=#800080} *for B and C?*
@@ -315,10 +245,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 ![Source diagram with static highlights and masks](assets/lect08d-3_point_testcross_voss/d21_labeled.svg)
 
 [Recombinant Types]{color=#733A80} / [Parental Types]{color=#276B28}
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 21.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: one-panel
 @replaceme
@@ -334,10 +260,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 d = (183+17+17+161)/2100
 
 d = 18.0 map units
-
-@notes
-Source: lect08d-3_point_testcross_voss.odp, slide 22.
-Source-scoped diagram repair preserves static highlights, masks, and positioned labels. Titles and surrounding explanations remain native. No source animation is present on this slide.
 
 === layout: section
 
@@ -717,10 +639,6 @@ Source-scoped diagram repair preserves static highlights, masks, and positioned 
 - Cover the third gene while classifying parental and non-parental combinations.
 - Sum non-parental progeny, divide by total progeny, and multiply by 100% for map distance.
 - Use pairwise distances to determine gene order.
-
-@notes
-
-Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

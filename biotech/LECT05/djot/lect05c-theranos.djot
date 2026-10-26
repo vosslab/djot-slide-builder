@@ -96,7 +96,6 @@ color-theme: biotechnology
 
 @notes
 
-FDA clearance source: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K143236
 Clearance of this one assay did not establish the performance of all Theranos tests.
 
 === layout: one-panel
@@ -113,7 +112,6 @@ Clearance of this one assay did not establish the performance of all Theranos te
 
 @notes
 
-FDA clearance source: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K143236
 Clearance of this one assay did not establish the performance of all Theranos tests.
 
 === layout: one-panel
@@ -166,7 +164,6 @@ Clearance of this one assay did not establish the performance of all Theranos te
 @notes
 
 Historical sentencing, not a claim about a current release date.
-https://www.justice.gov/usao-ndca/us-v-elizabeth-holmes-et-al
 
 === layout: two-panels
 
@@ -183,11 +180,6 @@ https://www.justice.gov/usao-ndca/us-v-elizabeth-holmes-et-al
 - Holmes's romantic partner during his tenure.
 - Convicted of fraud involving investors and patients.
 - Dec 7, 2022: sentenced to 155 months (12 years, 11 months).
-
-@notes
-
-Historical sentencing source:
-https://www.justice.gov/usao-ndca/us-v-elizabeth-holmes-et-al
 
 === layout: two-panels
 
@@ -416,10 +408,6 @@ https://www.justice.gov/usao-ndca/us-v-elizabeth-holmes-et-al
 
 ![Slide image 21](assets/lect05c-theranos/image_021.png)
 
-@notes
-
-Hulu source: https://press.hulu.com/shows/the-dropout/
-
 === layout: two-panels
 hidden: true
 
@@ -437,11 +425,6 @@ hidden: true
 @right
 
 ![Slide image 23](assets/lect05c-theranos/image_023.png)
-
-@notes
-
-Archived development announcement from the legacy source.
-Do not present its planned 2020 release as a current resource.
 
 === layout: section
 

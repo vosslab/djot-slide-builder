@@ -261,7 +261,9 @@ teaching intent remains unresolved and record concise slide-specific findings in
 
 A reviewed `@replaceme` is an acceptable result, not a failed conversion or a requirement to keep
 retrying. A deck may complete conversion review with these markers when each has source provenance
-and a clear reason. Zero replacement markers is not an acceptance criterion.
+and a clear reason recorded in a separate import report, slide map, or review file. Keep source
+filenames, source slide numbers, and conversion provenance out of Djot files, including notes and
+comments; reserve `@notes` for instructor notes. Zero replacement markers is not an acceptance criterion.
 
 This is a required conversion workflow; the current import CLI does not automatically invoke or
 enforce an LLM review. Repeatable builds from reviewed canonical Djot remain deterministic.

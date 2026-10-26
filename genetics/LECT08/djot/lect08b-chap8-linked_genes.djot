@@ -12,9 +12,6 @@ color-theme: genetics
 
 ## October 27, 2026
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 1.
-
 === layout: one-panel
 
 # Learning objectives
@@ -25,9 +22,6 @@ Source: lect08b-chap8-linked_genes.odp, slide 1.
 - Distinguish linkage from independent assortment.
 - Identify parental and recombinant progeny.
 - Explain how crossing over recombines alleles.
-
-@notes
-Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -71,10 +65,6 @@ Generated objectives shortened for rendered line balance during the October 26 c
 
 ![Labeled diagram from source slide 4](assets/lect08b-chap8-linked_genes/b4_labeled.svg)
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 4.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
-
 === layout: two-panels
 
 # *Independent Segregation of Two Genes*
@@ -101,12 +91,6 @@ One source artwork image and overlapping labels reconstructed as a quality-90 We
 
 => disappear
 cover: 32.431 23.192 64.848 74.156
-
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 6.
-The instructor confirms the Punnett-square cover disappears on click; this source copy retains
-the rectangle but lacks its animation. Cover bounds are percentages of the right image.
-
 
 === layout: two-panels
 @replaceme
@@ -316,10 +300,6 @@ the rectangle but lacks its animation. Cover bounds are percentages of the right
 - He then mated wild-type F1 dihybrid females with homozygous recessive males.
 - This testcross will reveal the genotype of the eggs made by the dihybrid female.
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 21.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
-
 === layout: one-panel
 
 
@@ -336,19 +316,11 @@ One source artwork image and overlapping labels reconstructed as a quality-90 We
 
 Figure 15.UN01
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 23.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
-
 === layout: one-panel
 
 @body
 
 ![Labeled diagram from source slide 24](assets/lect08b-chap8-linked_genes/b24_labeled.svg)
-
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 24.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: one-panel
 
@@ -361,10 +333,6 @@ One source artwork image and overlapping labels reconstructed as a quality-90 We
 | [Results]{color=#FF6600} | 965 | 944 | 206 | 185 |
 
 Both predictions are wrong...
-
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 25.
-Native table restores prediction/result row relationships with unchanged source values.
 
 === layout: one-panel
 
@@ -437,10 +405,6 @@ Figure 13.9b
 
 Figure 13.12-5
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 31.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
-
 === layout: two-panels
 
 # *Crossing Over and Recombinant Gametes*
@@ -474,10 +438,6 @@ One source artwork image and overlapping labels reconstructed as a quality-90 We
 
 Figure 15.10a
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 34.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
-
 === layout: one-panel
 @replaceme
 
@@ -486,11 +446,6 @@ One source artwork image and overlapping labels reconstructed as a quality-90 We
 ![Labeled diagram from source slide 35](assets/lect08b-chap8-linked_genes/b35_labeled.svg)
 
 Figure 15.10b
-
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 35.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
-Source reveal/mask behavior remains unresolved; retain review marker.
 
 === layout: two-panels
 @replaceme
@@ -506,10 +461,6 @@ Source reveal/mask behavior remains unresolved; retain review marker.
 - recombinant type
 - parental type
 
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 36.
-The earlier conversion used a different meiosis illustration. The source artwork is restored; native labels retain top-to-bottom source order. Review marker remains pending closer spatial association of each label with its product.
-
 === layout: one-panel
 
 @body
@@ -517,10 +468,6 @@ The earlier conversion used a different meiosis illustration. The source artwork
 ![Labeled diagram from source slide 37](assets/lect08b-chap8-linked_genes/b37_labeled.svg)
 
 Figure 15.UN02
-
-@notes
-Source: lect08b-chap8-linked_genes.odp, slide 37.
-One source artwork image and overlapping labels reconstructed as a quality-90 WebP embedded in SVG with live text. Titles and captions remain native.
 
 === layout: section
 
@@ -565,10 +512,6 @@ One source artwork image and overlapping labels reconstructed as a quality-90 We
 - Linked alleles can be in cis or trans configuration.
 - Crossing over produces recombinant gametes with new allele combinations.
 - Testcross offspring distinguish parental from recombinant types.
-
-@notes
-
-Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

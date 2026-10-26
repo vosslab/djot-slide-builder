@@ -4,9 +4,6 @@ color-theme: biotechnology
 
 # Fund a result you can evaluate
 
-@notes
-Prior Lecture 06D teaching sequence, slide 25: Fund a result you can evaluate.
-
 === layout: big-image
 
 @image
@@ -22,8 +19,6 @@ Which result can you measure? *Virona excerpt.*
 Original instructor emphasis: "Again I will look for feasible milestones."
 Borrow the numbered progression. Then ask how success would be measured, what the control is, and what would stop the project.
 The source words "safe," "non-toxic," and the proposed clinical transition require evidence; the screenshot is not a validated development sequence.
-Source screenshot: 2018-Virona_Executive_Summary.pdf, PDF page 2; asset virona_milestones.png.
-Original source pixels are preserved. Full crop coordinates and hashes: assets/business_plan_samples/sources.json.
 Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
 
 === layout: two-panels
@@ -52,8 +47,6 @@ Use that result to decide whether to proceed, revise, or stop.
 
 This is a library-research project. Students propose justified development tests and
 criteria; they are not required to conduct laboratory experiments for this assignment.
-Retains the legacy business-plan emphasis on feasible milestones and risk reduction.
-Prior Lecture 06D teaching sequence, slide 26: A milestone ends with evidence.
 
 === layout: one-panel
 
@@ -73,7 +66,6 @@ Prior Lecture 06D teaching sequence, slide 26: A milestone ends with evidence.
 Adapt the stages to the technology. Virona's sample makes successive development steps
 visible, but its proposed outcomes and timelines still need independent support.
 Do not assume that success in one model guarantees success in the next setting.
-Prior Lecture 06D teaching sequence, slide 27: Build a sequence of decisions.
 
 === layout: one-panel
 
@@ -93,7 +85,6 @@ Prior Lecture 06D teaching sequence, slide 27: Build a sequence of decisions.
 Aquazyme motivates the distinction between a controlled process and environmental release.
 Therapeutic proposals motivate checking safety, delivery, and relevant regulatory sources.
 Research the requirements for the actual product and jurisdiction; do not assume approval.
-Prior Lecture 06D teaching sequence, slide 28: Put the largest uncertainty on the page.
 
 === layout: two-panels
 
@@ -118,10 +109,9 @@ Prior Lecture 06D teaching sequence, slide 28: Put the largest uncertainty on th
 
 @notes
 
-Preserves the legacy team-skills and adviser guidance. Describe actual team experience.
+Describe actual team experience.
 Do not invent degrees, partnerships, employees, or a commitment from a real organization.
 For the course project, at least two members review each major section.
-Prior Lecture 06D teaching sequence, slide 29: Management means responsibility.
 
 === layout: one-panel
 
@@ -141,7 +131,6 @@ Add justified estimates and timing in the full plan. Include projected revenue a
 expenses over the funded period, their assumptions, and a contingency for delays.
 Distinguish funding already received from funding proposed or being sought.
 Avoid treating a hoped-for grant, partner, sale, or exit as an accomplished fact.
-Prior Lecture 06D teaching sequence, slide 30: Tie the funding request to milestones.
 
 === layout: two-panels
 
@@ -167,8 +156,5 @@ Prior Lecture 06D teaching sequence, slide 30: Tie the funding request to milest
 
 @notes
 
-Retains the legacy core-competency and intellectual-property guidance.
 Do not label the company patent-pending or protected merely because the idea is new to you.
 Patentability and permission to commercialize are research questions, not promises here.
-Prior Lecture 06D teaching sequence, slide 31: Describe an advantage you can support.
-

@@ -2,6 +2,23 @@
 
 ### Additions and New Features
 
+- Clean administrative notes across genetics, biotech, and biostats while retaining lecture
+  prompts and explanations. Stop YouTube and podcast generators from adding metadata notes;
+  identify podcast slides by their thumbnail path so refresh remains repeatable. Update syntax
+  and refresh guidance, and cover metadata-free output in the focused generator tests.
+
+- Remove administrative notes throughout Genetics LECT08, including icebreaker selection,
+  podcast metadata, conversion/repair logs, and the unneeded quiz/final reminders.
+  Clarify that `@notes` contains presentation note cards for lecturing only.
+
+- Align conversion guidance, the checklist, SVG repair instructions, usage, and the Lecture 06
+  decision with the instructor-notes policy: keep source metadata out of Djot files and place
+  any needed traceability in separate reports or slide maps. Supersedes earlier source-note guidance.
+
+- Remove source-file and source-slide attribution lines from all six Genetics LECT08 Djot
+  decks, remove resulting empty notes blocks, and preserve other notes and slide content.
+  Record the instructor-notes policy in [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md).
+
 - Reduce LECT08 audit warnings from 118 to 57 through 53 concise title edits and four shorter
   generated takeaway bullets. Fresh LibreOffice PDFs confirm all 170 content titles on one line.
   Apply the requested final-paragraph/maximum-font runt exemption, counted separately, bringing

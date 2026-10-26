@@ -12,10 +12,6 @@ color-theme: genetics
 
 ## October 20, 2026
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 1.
-
 === layout: one-panel
 
 # *Probability in predictions of progeny distribution*
@@ -27,17 +23,9 @@ Source: lect07b-prob_of_progeny.odp, slide 1.
   - chance combination of gametes into zygotes
 - Probability calculations in genetics frequently use the addition and multiplication rules of probability together
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 2.
-
 === layout: section
 
 # Equally Likely Combinations
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 3.
 
 === layout: multiple-choice
 
@@ -59,10 +47,6 @@ If a mating has already produced a girl, what is the probability that the next c
 
 [Answer: C. &#189;]{color=red}
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 4.
-
 === layout: multiple-choice
 
 
@@ -83,10 +67,6 @@ If a mating has already produced {=*three girls*=}, what is the probability that
 
 [Answer: C. &#189;]{color=red}
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 5.
-
 === layout: one-panel
 
 @body
@@ -98,10 +78,6 @@ Assuming equal numbers of boys and girls:
 
 On what type of probability argument do you base your answers?
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 6.
-
 === layout: one-panel
 
 # The answer to both questions is &#189;
@@ -109,10 +85,6 @@ Source: lect07b-prob_of_progeny.odp, slide 6.
 @body
 
 The probability argument is that each birth is independent of all the previous ones, so the number of boys or girls already born has no influence on the sexes of future children.
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 7.
 
 === layout: two-panels
 
@@ -132,10 +104,6 @@ In a sibship with seven children, what is the probability that it includes:
 
 Assume that each child has an equal likelihood of being a boy or a girl.
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 8.
-
 === layout: one-panel
 @replaceme
 
@@ -151,26 +119,13 @@ Source: lect07b-prob_of_progeny.odp, slide 8.
 - Probability of 7 girls = 0.5^7^ = 0.0078125
 - [{-Probability of 4 boys and 3 girls = 0.5^7^ = 0.0078125-}]{color=red}
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 9.
-Review: source animation for id1 requires review; source animation for id10 requires review; source animation for id2 requires review; source animation for id3 requires review; source animation for id4 requires review; source animation for id5 requires review; source animation for id6 requires review; source animation for id7 requires review; source animation for id8 requires review; source animation for id9 requires review; unsupported source object draw:custom-shape requires reconstruction.
-
 === layout: section
 
 # Before we can do this problem we need to learn some math...
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 10.
-
 === layout: section
 
 # Factorials
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 11.
 
 === layout: two-panels
 
@@ -200,10 +155,6 @@ Source: lect07b-prob_of_progeny.odp, slide 11.
 | 7 | 5,040 | 8.5 |
 | 8 | 40,320 | 10.6 |
 | 9 | 362,880 | 12.8 |
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 12.
 
 === layout: two-panels
 
@@ -235,20 +186,11 @@ Source: lect07b-prob_of_progeny.odp, slide 12.
 | 12 | 479,001,600 | 20.0 |
 | 13 | 6,227,020,800 | 22.6 |
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 13.
-
-
 === include: youtube_zero_factorial.djot
 
 === layout: section
 
 # Binomial Distribution
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 15.
 
 === layout: one-panel
 
@@ -258,10 +200,6 @@ Source: lect07b-prob_of_progeny.odp, slide 15.
 
 - In statistics, the binomial distribution give the probability of the number of successes in a sequence of [*n*]{underline=true} independent [*yes/no experiments*]{underline=true}, each of which yields success with probability [*p*]{underline=true}.
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 16.
-
 === layout: one-panel
 @replaceme
 
@@ -270,11 +208,6 @@ Source: lect07b-prob_of_progeny.odp, slide 16.
 @body
 
 - is often read aloud as "[n choose k]{underline=true}", because there are    ways to choose k elements, disregarding their order, from a set of n elements.
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 17.
-Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 
@@ -293,29 +226,15 @@ Review: source image requires review: unsupported ODP image type: .
 | 6 | 720 | 14 | 87,178,291,200 |
 | 7 | 5,040 | 15 | 1,307,674,368,000 |
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 18.
-
 === layout: title-only
 @replaceme
 
 # *Evaluating Binomial Coefficients*
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 19.
-Review: source image requires review: unsupported ODP image type: .
-
 === layout: title-only
 @replaceme
 
 # *Evaluating Binomial Coefficients*
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 20.
-Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 
@@ -323,10 +242,6 @@ Review: source image requires review: unsupported ODP image type: .
 @body
 
 ![Slide image 6](assets/source_fidelity/lect07b/image_006.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 21.
 
 === layout: one-panel
 
@@ -341,11 +256,6 @@ Source: lect07b-prob_of_progeny.odp, slide 21.
 
 ...
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 22.
-Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
-
 === layout: one-panel
 @replaceme
 
@@ -356,11 +266,6 @@ Verified against original ODP/PDF and rebuilt PDF: source content complete; layo
 
 - How many different ways can we get 4 boys and 3 girls?
 - Re-write how many different ways can we have 4 boys in 7 children
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 23.
-Review: source image requires review: unsupported ODP image type: .
 
 === layout: stacked-panels
 
@@ -375,10 +280,6 @@ Review: source image requires review: unsupported ODP image type: .
 
 ![Slide image 8](assets/source_fidelity/lect07b/image_008.svg)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 24.
-
 === layout: one-panel
 
 
@@ -392,10 +293,6 @@ Source: lect07b-prob_of_progeny.odp, slide 24.
 - 4 girls and 3 boys the same 27.34%, these are mutually exclusive so&#8230;
 - 4 boys and 3 girls or 4 girls and 3 boys is
 - 27.3% + 27.3% &#8776; 54.7%
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 25.
 
 === layout: stacked-panels
 @replaceme
@@ -412,11 +309,6 @@ Source: lect07b-prob_of_progeny.odp, slide 25.
 
 ![Slide image 9](assets/source_fidelity/lect07b/image_009.png)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 26.
-Review: source image requires review: unsupported ODP image type: .
-
 === layout: stacked-panels
 
 
@@ -428,11 +320,6 @@ Review: source image requires review: unsupported ODP image type: .
 
 ![Slide image 10](assets/source_fidelity/lect07b/image_010.png)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 27.
-Review: .
-
 === layout: one-panel
 
 
@@ -440,20 +327,12 @@ Review: .
 
 ![Slide image 11](assets/source_fidelity/lect07b/image_011.png)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 28.
-
 === layout: one-panel
 
 
 @body
 
 ![Slide image 11](assets/source_fidelity/lect07b/image_006.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 29.
 
 === layout: stacked-panels
 
@@ -465,11 +344,6 @@ Source: lect07b-prob_of_progeny.odp, slide 29.
 @bottom
 
 ![Slide image 12](assets/source_fidelity/lect07b/image_012.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 30.
-Verified against original ODP/PDF and rebuilt PDF: source content complete; layout readable.
 
 === layout: one-panel
 @replaceme
@@ -487,21 +361,12 @@ Verified against original ODP/PDF and rebuilt PDF: source content complete; layo
 
 ![Slide image 12](assets/source_fidelity/lect07b/image_012.png)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 31.
-Review: source image requires review: unsupported ODP image type: .
-
 === layout: one-panel
 
 
 @body
 
 ![Slide image 13](assets/source_fidelity/lect07b/image_013.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 32.
 
 === layout: stacked-panels
 
@@ -513,11 +378,6 @@ Source: lect07b-prob_of_progeny.odp, slide 32.
 @bottom
 
 ![Slide image 14](assets/source_fidelity/lect07b/image_014.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 33.
-Review: .
 
 === layout: stacked-panels
 
@@ -533,10 +393,6 @@ Review: .
 - even numbers\:
 - (1+28+70+28+1)/2^8^ = 128/256 = 50%
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 34.
-
 === layout: one-panel
 
 
@@ -545,10 +401,6 @@ Source: lect07b-prob_of_progeny.odp, slide 34.
 ![Slide image 15](assets/source_fidelity/lect07b/image_015.png)
 
 - use the &#8220;choose&#8221; function
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 35.
 
 === layout: one-panel
 @replaceme
@@ -565,11 +417,6 @@ Source: lect07b-prob_of_progeny.odp, slide 35.
 - (a) 15 + 6 = 21 possibilities for autosomal alleles
 
 ![Slide image 16](assets/source_fidelity/lect07b/image_016.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 36.
-Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 @replaceme
@@ -588,11 +435,6 @@ Review: source image requires review: unsupported ODP image type: .
 
 ![Slide image 16](assets/source_fidelity/lect07b/image_016.png)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 37.
-Review: source image requires review: unsupported ODP image type: .
-
 === layout: one-panel
 
 
@@ -606,17 +448,9 @@ Review: source image requires review: unsupported ODP image type: .
   - 6 homozygous and 15 heterozygous in females
   - 6 hemizygous genotypes in males
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 38.
-
 === layout: section
 
 # Unequally Likely Combinations
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 39.
 
 === layout: one-panel
 
@@ -624,10 +458,6 @@ Source: lect07b-prob_of_progeny.odp, slide 39.
 @body
 
 ![Slide image 17](assets/source_fidelity/lect07b/image_017.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 40.
 
 === layout: one-panel
 
@@ -638,20 +468,12 @@ Source: lect07b-prob_of_progeny.odp, slide 40.
 
 - Problem\: there is a 75% chance of A&#8211; and only 25% chance of aa.
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 41.
-
 === layout: one-panel
 
 
 @body
 
 ![Slide image 18](assets/source_fidelity/lect07b/image_018.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 42.
 
 === layout: two-panels
 @replaceme
@@ -665,11 +487,6 @@ Source: lect07b-prob_of_progeny.odp, slide 42.
 
 ![Slide image 18](assets/source_fidelity/lect07b/image_018.png)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 43.
-Review: source image requires review: unsupported ODP image type: .
-
 === layout: one-panel
 @replaceme
 
@@ -679,11 +496,6 @@ Review: source image requires review: unsupported ODP image type: .
 ![Slide image 18](assets/source_fidelity/lect07b/image_017.png)
 
 - Problem\: there is a 75% chance of A&#8211; and only 25% chance of aa.
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 44.
-Review: source image requires review: unsupported ODP image type: .
 
 === layout: one-panel
 @replaceme
@@ -697,11 +509,6 @@ Review: source image requires review: unsupported ODP image type: .
 - Remember there are no calculators on quizzes
 - So, your job will mainly to take the numbers from the question and properly plug them into the binomial equation.
 - I will provide Pascal&#8217;s triangle, if is necessary, but usually I just give you the answer like on the right.
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 45.
-Review: source image requires review: unsupported ODP image type: .
 
 === layout: two-panels
 @replaceme
@@ -731,21 +538,12 @@ Review: source image requires review: unsupported ODP image type: .
   - 1 yellow and 5 green
   - 6 green
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 46.
-Review: dense text requires post-conversion polish; normalized overlapping legacy components into one native source-order panel; source image requires review: unsupported ODP image type: .
-
 === layout: one-panel
 
 
 @body
 
 ![Slide image 19](assets/source_fidelity/lect07b/image_019.png)
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 47.
 
 === layout: one-panel
 
@@ -756,17 +554,9 @@ Source: lect07b-prob_of_progeny.odp, slide 47.
 
 - Next week, I will present the answer...
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 48.
-
 === layout: section
 
 # Summary
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 49.
 
 === layout: one-panel
 
@@ -782,14 +572,6 @@ Source: lect07b-prob_of_progeny.odp, slide 49.
   - Probability\:
     - [https\://youtu.be/xSc4oLA9e8o](https://youtu.be/xSc4oLA9e8o)
 
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 50.
-
 === layout: theend
 
 # THE END
-
-@notes
-
-Source: lect07b-prob_of_progeny.odp, slide 51.

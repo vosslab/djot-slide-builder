@@ -20,7 +20,7 @@ import PIL.Image
 
 PLAYLIST_ID = "PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48"
 FEED_URL = f"https://www.youtube.com/feeds/videos.xml?playlist_id={PLAYLIST_ID}"
-MARKER = "podcast-slide: stump-the-vibe-coder"
+PODCAST_ASSET_PATH = "assets/stump_the_vibe_coder/"
 NAMESPACES = {"atom": "http://www.w3.org/2005/Atom",
 	"yt": "http://www.youtube.com/xml/schemas/2015",
 	"media": "http://search.yahoo.com/mrss/"}
@@ -115,10 +115,6 @@ def podcast_slide(episode: dict[str, str]) -> str:
 	slide += f"@caption\n\n{caption}\\\n"
 	slide += f"Watch the Video: [{video_label}](https://www.youtube.com/watch?v={video_id})\\\n"
 	slide += f"Play the Game: {episode['project_url']}\n\n"
-	slide += f"@notes\n\n{MARKER}\n"
-	slide += f"Published: {episode['published']}\n"
-	slide += f"Playlist: https://www.youtube.com/playlist?list={PLAYLIST_ID}\n"
-	slide += "Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.\n\n"
 	return slide
 
 
@@ -126,10 +122,10 @@ def podcast_slide(episode: dict[str, str]) -> str:
 def update_source(source: str, episode: dict[str, str]) -> str:
 	"""Replace the managed slide and insert it directly after the YouTube channel slide."""
 	parts = re.split(r"(?m)(?=^===\s+layout:)", source)
-	managed = [part for part in parts if MARKER in part]
+	managed = [part for part in parts if PODCAST_ASSET_PATH in part]
 	if len(managed) > 1:
 		raise ValueError("Multiple managed podcast slides; resolve duplicates before refreshing")
-	parts = [part for part in parts if MARKER not in part]
+	parts = [part for part in parts if PODCAST_ASSET_PATH not in part]
 	anchors = [index for index, part in enumerate(parts)
 		if re.search(r"youtube", part.split("@notes")[0], re.IGNORECASE)]
 	if len(anchors) != 1:

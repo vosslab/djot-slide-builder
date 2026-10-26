@@ -55,8 +55,6 @@ def slide_source(identifier: str, title: str) -> str:
 	source = "=== layout: big-image\n\n@image\n\n"
 	source += f"![{escaped}](assets/youtube/{identifier}.png)\n\n"
 	source += f"@caption\n\n{escaped}\n\n[{url}]({url})\n\n"
-	source += f"@notes\n\nYouTube source: {url}\n"
-	source += "Generated with tools/make_youtube_slide.py; ordinary builds use local assets.\n"
 	return source
 
 

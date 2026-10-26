@@ -1,5 +1,10 @@
 # Human guidance
 
+- Treat `@notes` as presentation note cards for lecturing: speaking prompts, explanations,
+  and reminders useful while teaching. 
+- Keep this administrative material out of Djot files, including comments; use separate
+  reports or slide maps only when traceability is needed.
+
 - Ignore runts when the font is at its maximum size and the paragraph is the final displayed
   paragraph of its text block. Keep title-wrap and URL-width checks active.
 - Run the Djot audit on Genetics LECT08 and reduce warnings with simple changes.

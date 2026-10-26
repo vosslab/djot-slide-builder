@@ -38,6 +38,11 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 
 ## Initial conversion and assembly
 
+- [ ] Keep source filenames, source slide numbers, and conversion provenance out of Djot files,
+  including `@notes` and comments. Use separate import reports, slide maps, or review files for
+  traceability; reserve `@notes` for presentation note cards used while lecturing. Exclude selection history,
+  publication metadata, refresh commands, repair details, and verification logs from Djot files.
+
 - [ ] Import each source with the repository importer documented in [USAGE.md](USAGE.md).
   Save the generated Djot, component assets, and import report; list their paths in the review.
   For an existing conversion, locate these artifacts instead of overwriting reviewed source.

@@ -11,10 +11,6 @@
 ## Oct 6, 2026
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 1.
-
 === layout: two-panels
 
 # Meiosis
@@ -29,10 +25,6 @@ Source: lect06c-meiosis.odp, slide 1.
 
 ![Slide image 1](assets/lect06c-meiosis/image_001.png)
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 2.
 
 === layout: one-panel
 
@@ -49,10 +41,6 @@ Source: lect06c-meiosis.odp, slide 2.
   - the sister chromatids separate and four haploid daughter cells are produced.
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 3.
-
 === layout: big-image
 
 @image
@@ -63,20 +51,10 @@ Source: lect06c-meiosis.odp, slide 3.
 
 Chromosome duplication before meiosis.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 4. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.7a | Original slot: body | ![Slide image 2](assets/lect06c-meiosis/image_002.jpg) | - Interphase | - Pair of | - homologous | - chromosomes | - in diploid | - parent cell | - Pair of duplicated | - homologous | - chromosomes | - Chromosomes | - duplicate | - Diploid cell with | - duplicated | - chromosomes | - Sister | - chromatids
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: section
 
 # First Division\: Meiosis 1
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 5.
 
 === layout: one-panel
 
@@ -91,10 +69,6 @@ Source: lect06c-meiosis.odp, slide 5.
   - Telophase I and cytokinesis
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 6.
-
 === layout: big-image
 
 @image
@@ -104,12 +78,6 @@ Source: lect06c-meiosis.odp, slide 6.
 @caption
 
 Prophase I and metaphase I.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 7. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | Original slot: body | ![Slide image 3](assets/lect06c-meiosis/image_003.jpg) | - Prophase I | - Metaphase I | - Centrosome | - (with centriole pair) | - Sister | - chromatids | - Chiasmata | - Spindle | - Centromere | - (with kinetochore) | - Metaphase | - plate | - Homologous | - chromosomes | - Fragments | - of nuclear | - envelope | - Microtubule | - attached to | - kinetochore
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: one-panel
 
@@ -125,18 +93,10 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - [*Chiasmata*]{underline=true} – the physical links between homologous chromosomes at crossover sites, holding them together until they separate
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 8.
-
 === layout: section
 
 # Prophase I is incredibly complex (more than Prophase II) and is divided into six (6) sub-stages
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 9.
 
 === layout: two-panels
 
@@ -156,10 +116,6 @@ Source: lect06c-meiosis.odp, slide 9.
   - Many points of contact form
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 10.
-
 === layout: two-panels
 
 # Stages of Prophase I
@@ -178,10 +134,6 @@ Source: lect06c-meiosis.odp, slide 10.
 ![Slide image 5](assets/lect06c-meiosis/image_005.png)
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 11.
-
 === layout: one-panel
 
 # Homologous chromosomes can undergo extensive crossing over
@@ -193,10 +145,6 @@ Source: lect06c-meiosis.odp, slide 11.
 - Interpretive drawing of a bivalent consisting of a pair of homologous chromosomes.
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 12.
-
 === layout: big-image
 
 @image
@@ -206,12 +154,6 @@ Source: lect06c-meiosis.odp, slide 12.
 @caption
 
 Crossovers, chiasmata, and the Holliday junction.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 13. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.9b | Original slot: body | ![Slide image 7](assets/lect06c-meiosis/image_007.jpg) | - Crossover | - 3 | - 4 | - Crossover | - Chiasmata | ![Slide image 8](assets/lect06c-meiosis/image_008.png) | - [Holliday junction]{color=red}
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: two-panels
 @replaceme
@@ -234,10 +176,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - Warning: definitions of diplotene and diakinesis may overlap.
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 14. Replacement reason: dense text requires post-conversion polish; normalized overlapping legacy components into one native source-order panel
-
 === layout: one-panel
 
 # Sub-Stages of Prophase I
@@ -253,10 +191,6 @@ Source: lect06c-meiosis.odp, slide 14. Replacement reason: dense text requires p
   - 6. Diakinesis – homologous chromosomes repel; they are held together by chiasmata
 - Metaphase I
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 15.
 
 === layout: image-comparison
 
@@ -278,12 +212,6 @@ Arrangement A produces AB and ab gametes.
 
 Arrangement B produces Ab and aB gametes.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 16. Replacement reason: source object crosses physical page bounds
-
-SVG repair: Two SVG chromosome arrangements and native outcomes. The following slides retain the combined 1:1:1:1 result.
-
 === layout: two-panels
 
 # Independent assortment
@@ -298,12 +226,6 @@ SVG repair: Two SVG chromosome arrangements and native outcomes. The following s
 - This arrangement produces AB and ab.
 - [Green]{color=green} + [orange]{color=orange}; [blue]{color=blue} + [red]{color=red}.
 - Across both equally likely arrangements: AB : Ab : aB : ab = 1 : 1 : 1 : 1.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 17. Replacement reason: normalized overlapping legacy components into one native source-order panel; unrecognized source text color #00a933 requires review; unrecognized source text color #ea7500 requires review; unrecognized source text color #f10d0c requires review
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: two-panels
 
@@ -320,12 +242,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - [Green]{color=green} + [red]{color=red}; [blue]{color=blue} + [orange]{color=orange}.
 - Across both equally likely arrangements: AB : Ab : aB : ab = 1 : 1 : 1 : 1.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 18. Replacement reason: normalized overlapping legacy components into one native source-order panel; unrecognized source text color #00a933 requires review; unrecognized source text color #ea7500 requires review; unrecognized source text color #f10d0c requires review
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: big-image
 
 @image
@@ -335,12 +251,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 @caption
 
 Anaphase I, telophase I, and cytokinesis.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 19. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | Original slot: body | ![Slide image 14](assets/lect06c-meiosis/image_014.jpg) | - Fig. 13-8c | - Anaphase I | - Telophase I and | - Cytokinesis | - Sister chromatids | - remain attached | - Homologous | - chromosomes | - separate | - Cleavage | - furrow
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: big-image
 
@@ -352,20 +262,10 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 Crossing over and the formation of recombinant chromosomes.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 20. Replacement reason: 16 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.12-5 | Original slot: body | ![Slide image 15](assets/lect06c-meiosis/image_015.jpg) | Native reconstruction needed: 16 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: section
 
 # Second Division\: Meiosis 2
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 21.
 
 === layout: one-panel
 
@@ -382,10 +282,6 @@ Source: lect06c-meiosis.odp, slide 21.
   - it is more straight-forward and there is no cross-over
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 22.
-
 === layout: big-image
 
 @image
@@ -395,12 +291,6 @@ Source: lect06c-meiosis.odp, slide 22.
 @caption
 
 Prophase II and metaphase II.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 23. Replacement reason: normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | Original slot: body | ![Slide image 16](assets/lect06c-meiosis/image_016.jpg) | - Fig. 13-8e | - Prophase II | - Metaphase II
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: big-image
 
@@ -412,20 +302,10 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 Anaphase II, telophase II, and cytokinesis.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 24. Replacement reason: normalized ambiguous topology bounds [NormalizedBounds(left=0.01660714285714286, top=0.0, right=0.23328571428571426, bottom=0.044457142857142855), NormalizedBounds(left=0.23653571428571432, top=0.025371428571428573, right=0.7633214285714286, bottom=0.9855999999999999)] into one native source-order panel; normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | Original slot: body | ![Slide image 17](assets/lect06c-meiosis/image_017.jpg) | - Anaphase II | - Telephase II and | - Cytokinesis | - Sister chromatids | - separate | - Haploid daughter cells | - forming | - Fig. 13-8f
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: section
 
 # Overview
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 25.
 
 === layout: two-panels
 
@@ -441,10 +321,6 @@ Source: lect06c-meiosis.odp, slide 25.
   - The chromosome number is halved in the first division.
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 26.
-
 === layout: big-image
 
 @image
@@ -455,12 +331,6 @@ Source: lect06c-meiosis.odp, slide 26.
 
 Meiosis I separates homologs; meiosis II separates sister chromatids.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 27. Replacement reason: 24 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.8 | Original slot: body | ![Slide image 19](assets/lect06c-meiosis/image_019.jpg) | Native reconstruction needed: 24 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: one-panel
 
 
@@ -468,10 +338,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 ![Slide image 20](assets/lect06c-meiosis/image_020.jpg)
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 28.
 
 === layout: multiple-choice
 
@@ -488,10 +354,6 @@ Source: lect06c-meiosis.odp, slide 28.
 
 [Answer\: D]{color=red}
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 29.
-
 === layout: one-panel
 
 # Matter of Clarification
@@ -507,10 +369,6 @@ Source: lect06c-meiosis.odp, slide 29.
   - monoploid = haploid
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 30.
-
 === layout: big-image
 
 @image
@@ -521,20 +379,10 @@ Source: lect06c-meiosis.odp, slide 30.
 
 Crossing over and the formation of recombinant chromosomes.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 31. Replacement reason: 16 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.12-5 | Original slot: body | ![Slide image 20](assets/lect06c-meiosis/image_015.jpg) | Native reconstruction needed: 16 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: section
 
 # Molecular Basis for Principle of Independent Assortment
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 32.
 
 === layout: big-image
 
@@ -545,12 +393,6 @@ Source: lect06c-meiosis.odp, slide 32.
 @caption
 
 AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 33. Replacement reason: dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction | Imported content for reconstruction: | Original layout: stacked-panels | Original slot: top | ![Slide image 21](assets/lect06c-meiosis/image_021.jpg) | - Possibility 1 | - Possibility 2 | - Two equally probable | - arrangements of | - chromosomes at | - metaphase I | - Metaphase II | - Daughter | - cells | - Combination 1 | - Combination 2 | - Combination 3 | - Combination 4 | Original slot: bottom | - Both possibilities are equally likely. | - 2/8 gametes = ¼ are AB;			2/8 gametes = ¼ are Ab | - 2/8 gametes = ¼ are ab;			2/8 gametes = ¼ are aB
-
-SVG repair: Preserve both arrangements and their shared stage labels in one SVG; probability explanation is native text.
 
 === layout: two-panels
 
@@ -567,12 +409,6 @@ SVG repair: Preserve both arrangements and their shared stage labels in one SVG;
 - [Green]{color=green} + [orange]{color=orange}; [blue]{color=blue} + [red]{color=red}.
 - Across both equally likely arrangements: AB : Ab : aB : ab = 1 : 1 : 1 : 1.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 34. Replacement reason: normalized overlapping legacy components into one native source-order panel; unrecognized source text color #00a933 requires review; unrecognized source text color #ea7500 requires review; unrecognized source text color #f10d0c requires review
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: two-panels
 
 # Independent assortment
@@ -587,12 +423,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 - This arrangement produces Ab and aB.
 - [Green]{color=green} + [red]{color=red}; [blue]{color=blue} + [orange]{color=orange}.
 - Across both equally likely arrangements: AB : Ab : aB : ab = 1 : 1 : 1 : 1.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 35. Replacement reason: normalized overlapping legacy components into one native source-order panel; unrecognized source text color #00a933 requires review; unrecognized source text color #ea7500 requires review; unrecognized source text color #f10d0c requires review
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: one-plus-two-panels
 
@@ -615,10 +445,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 ![Slide image 23](assets/lect06c-meiosis/image_023.png)
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 36.
 
 === layout: one-panel
 @replaceme
@@ -643,18 +469,10 @@ Source: lect06c-meiosis.odp, slide 36.
   - 6&#x2077; = 279,936 combinations
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 37. Replacement reason: normalized overlapping legacy components into one native source-order panel; normalized single connected materially coupled visual graph into native source-order content
-
 === layout: section
 
 # Sexual Life Cycle
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 38.
 
 === layout: one-panel
 
@@ -665,10 +483,6 @@ Source: lect06c-meiosis.odp, slide 38.
 ![Slide image 27](assets/lect06c-meiosis/image_027.jpg)
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 39.
-
 === layout: big-image
 
 @image
@@ -678,12 +492,6 @@ Source: lect06c-meiosis.odp, slide 39.
 @caption
 
 The life cycle of a diploid animal.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 40. Replacement reason: 13 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.5 | Original slot: body | ![Slide image 28](assets/lect06c-meiosis/image_028.jpg) | Native reconstruction needed: 13 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: two-panels
 
@@ -699,12 +507,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 ![Egg vs. sperm](assets/lect06c-meiosis/oogenesis.svg)
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 41. Replacement reason: source object crosses physical page bounds
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: one-panel
 
 
@@ -712,10 +514,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 ![Slide image 30](assets/lect06c-meiosis/image_030.png)
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 42.
 
 === layout: one-panel
 
@@ -725,10 +523,6 @@ Source: lect06c-meiosis.odp, slide 42.
 
 ![Slide image 31](assets/lect06c-meiosis/image_031.jpg)
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 43.
 
 === layout: big-image
 
@@ -740,20 +534,10 @@ Source: lect06c-meiosis.odp, slide 43.
 
 Sexual life cycles in animals, plants and algae, and fungi and protists.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 44. Replacement reason: 50 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.6 | Original slot: body | ![Slide image 32](assets/lect06c-meiosis/image_032.jpg) | Native reconstruction needed: 50 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
-
 === layout: section
 
 # Comparison of Mitosis and Meiosis
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 45.
 
 === layout: one-panel
 
@@ -765,10 +549,6 @@ Source: lect06c-meiosis.odp, slide 45.
 - Meiosis reduces the number of chromosomes sets from two (diploid) to one (haploid), producing cells that differ genetically from each other and from the parent cell
 
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 46.
-
 === layout: big-image
 
 @image
@@ -778,12 +558,6 @@ Source: lect06c-meiosis.odp, slide 46.
 @caption
 
 Compare chromosome behavior in mitosis and meiosis.
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 47. Replacement reason: 32 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.10a | Original slot: body | ![Slide image 33](assets/lect06c-meiosis/image_033.jpg) | Native reconstruction needed: 32 positioned diagram labels.
-
-SVG repair: Original artwork and positioned labels reconstructed in SVG; explanatory prose remains native.
 
 === layout: big-image
 @replaceme
@@ -798,10 +572,6 @@ SVG repair: Original artwork and positioned labels reconstructed in SVG; explana
 
 Source slide 48: restore diagram labels and relationships.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 48. Replacement reason: 19 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; regular text lattice requires border and span reconstruction; unrecognized source text color #ff33ff requires review | Imported content for reconstruction: | Original layout: one-panel | # Figure 13.10b | Original slot: body | ![Slide image 34](assets/lect06c-meiosis/image_034.jpg) | Native reconstruction needed: 19 positioned diagram labels.
-
 === layout: one-panel
 
 # Meiosis I is Unique
@@ -813,10 +583,6 @@ Source: lect06c-meiosis.odp, slide 48. Replacement reason: 19 positioned labels 
   - Homologous pairs at the metaphase plate
   - Separation of homologs during anaphase I
 
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 49.
 
 === layout: multiple-choice
 
@@ -833,10 +599,6 @@ The diploid number of a roundworm species is 4. Assuming there is no crossover, 
 
 [Answer\: C]{color=red}
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 50. Replacement reason: normalized overlapping legacy components into one native source-order panel; unrecognized source text color #ff00cc requires review
-
 === layout: multiple-choice
 
 @question
@@ -852,10 +614,6 @@ The diploid number of a roundworm species is 4. Assuming there is no crossover, 
 
 [Answer\: C]{color=red}
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 51. Replacement reason: normalized overlapping legacy components into one native source-order panel; unrecognized source text color #ff33ff requires review
-
 === layout: big-image
 @replaceme
 
@@ -869,15 +627,6 @@ Source: lect06c-meiosis.odp, slide 51. Replacement reason: normalized overlappin
 
 Source slide 52: restore diagram labels and relationships.
 
-@notes
-
-Source: lect06c-meiosis.odp, slide 52. Replacement reason: 68 positioned labels require native redesign; dense text requires post-conversion polish; normalized distributed pictorial annotations into native source-order content; unsupported source object draw:custom-shape requires reconstruction; unsupported source object draw:line requires reconstruction | Imported content for reconstruction: | Original layout: one-panel | # Figure 15.2b | Original slot: body | ![Slide image 35](assets/lect06c-meiosis/image_035.jpg) | Native reconstruction needed: 68 positioned diagram labels.
-
 === layout: theend
 
 # THE END
-
-
-@notes
-
-Source: lect06c-meiosis.odp, slide 53.

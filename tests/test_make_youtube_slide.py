@@ -36,6 +36,7 @@ def test_generated_slide_preserves_literal_title_and_full_link(tmp_path: pathlib
 	deck = slide_lib.djot_parser.parse_deck(path)
 	slide = deck.slides[0]
 	caption = next(cell for cell in slide.cells if cell.name == "caption")
+	assert not slide.notes
 	assert slide.layout_class == "big-image"
 	assert slide_lib.layout_validation.inline_text(caption.blocks[0].inlines) == title
 	link = caption.blocks[1].inlines[0]

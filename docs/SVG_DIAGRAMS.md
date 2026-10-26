@@ -70,7 +70,8 @@ formatting from leaking into the rest of a paragraph. Unknown span attributes ar
 
 Compare each repaired slide with its original source and the actual exported PDF. Check labels,
 leaders, subscripts, transparency, crop boundaries, and readable captions. Confirm direct SVG
-packaging in ODP and preserve source provenance in notes. Retain `@replaceme` where the original
+packaging in ODP. Keep source provenance in separate import reports, slide maps, or review files,
+not in Djot notes or comments. Reserve `@notes` for instructor notes. Retain `@replaceme` where the original
 teaching relationships or reveal sequence still need reconstruction.
 
 Lecture 06 results and remaining work are recorded in

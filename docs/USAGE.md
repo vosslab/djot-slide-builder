@@ -131,8 +131,9 @@ GitHub Pages project URL. The project link comes from the
 episode description; repository links are excluded. Missing or ambiguous GitHub Pages links
 stop the refresh before any deck is written.
 
-The slide goes immediately after the unique slide mentioning YouTube. Its `@notes` marker
-identifies it for replacement on future runs; retain that marker when editing. Missing or
+The slide goes immediately after the unique slide mentioning YouTube. Its thumbnail path under
+`assets/stump_the_vibe_coder/` identifies it for replacement on future runs, without metadata
+in Djot notes or comments. Missing or
 ambiguous insertion points stop the command before source writes. A refresh replaces the
 previous podcast slide rather than adding another. Old thumbnail files are retained.
 
@@ -220,7 +221,10 @@ metadata in ODP; LibreOffice PDF export and classroom playback omit it. Capacity
 include hidden slides and their assets. Remove that line or use `hidden: false` to show it. See
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#hidden-slides).
 
-Use `@notes` for instructor reminders. Notes end at the next named slot or slide directive and
+Keep source filenames, source slide numbers, and conversion provenance in separate import reports,
+slide maps, or review files, outside Djot notes and comments. Use `@notes` as presentation note cards for lecturing: speaking prompts, explanations, and
+reminders. Exclude selection history, publication metadata, refresh commands, repair details,
+and verification logs from Djot files. Notes end at the next named slot or slide directive and
 become editable ODP speaker notes; the normal PDF export omits them. See
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes) for an example.
 

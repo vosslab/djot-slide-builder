@@ -12,9 +12,6 @@ color-theme: genetics
 
 ## October 27, 2026
 
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 1.
-
 === layout: one-panel
 
 # Learning objectives
@@ -25,9 +22,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 1.
 - Calculate expected counts and chi-square statistics.
 - Use df and a critical value to test the null.
 - Compare linkage evidence across sample sizes.
-
-@notes
-Generated objectives shortened for rendered line balance during the October 26 checklist review.
 
 === layout: section
 
@@ -98,11 +92,6 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 Figure 15.UN03a
 
-@notes
-
-Source: lect08e-linked_gene_chi_square.odp, slide 8.
-Native table transposed for readable phenotype rows; original labels, counts, and question marks retained.
-
 === layout: one-panel
 
 # PREDICTED RATIOS
@@ -113,11 +102,6 @@ Native table transposed for readable phenotype rows; original labels, counts, an
   - 1 : 1 : 1 : 1
 - Genes on the same chromosome:
   - 1 : 1 : 0 : 0
-
-@notes
-
-Source: lect08e-linked_gene_chi_square.odp, slide 9.
-Reconstructed from the original slide during the October 26 second pass.
 
 === layout: one-panel
 
@@ -135,11 +119,6 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 *Genes Unlinked*
 
-@notes
-
-Source: lect08e-linked_gene_chi_square.odp, slide 10.
-Native table transposed for readable phenotype rows; original labels, counts, and question marks retained.
-
 === layout: one-panel
 
 
@@ -155,10 +134,6 @@ Native table transposed for readable phenotype rows; original labels, counts, an
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
 Figure 15.UN03b
-
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 11.
-
 
 === layout: one-panel
 
@@ -176,10 +151,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 11.
 
 Figure 15.UN03b
 
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 12.
-
-
 === layout: one-panel
 
 
@@ -195,10 +166,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 12.
 |  |  |  |  | *&chi;^2^ = Sum* |  |
 
 Figure 15.UN03b
-
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 13.
-
 
 === layout: one-panel
 
@@ -216,10 +183,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 13.
 
 Figure 15.UN03b
 
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 14.
-
-
 === layout: one-panel
 
 
@@ -236,10 +199,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 14.
 
 Figure 15.UN03b
 
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 15.
-
-
 === layout: one-panel
 
 
@@ -255,10 +214,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 15.
 |  |  |  |  | *&chi;^2^ = Sum* | 2.142 |
 
 Figure 15.UN03b
-
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 16.
-
 
 === layout: one-panel
 
@@ -320,10 +275,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 16.
 
 Figure 15.UN03b
 
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 21.
-
-
 === layout: one-panel
 
 # *Same Ratios, Ten Times the Data*
@@ -341,11 +292,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 21.
 
 Under unlinked conditions we would expect the numbers to come closer to the 2250 number
 
-@notes
-
-Source: lect08e-linked_gene_chi_square.odp, slide 22.
-Reconstructed from the original slide during the October 26 second pass.
-
 === layout: one-panel
 
 @body
@@ -358,9 +304,6 @@ Reconstructed from the original slide during the October 26 second pass.
 | (A&#8722;bb) | 2250 | 2310 | 60 | 3,600 | 1.60 |
 | (aabb) | 2250 | 2390 | 140 | 19,600 | 8.71 |
 |  |  |  |  | *&chi;^2^ = Sum* | 21.42 |
-
-@notes
-Source: lect08e-linked_gene_chi_square.odp, slide 23.
 
 === layout: one-panel
 @replaceme
@@ -391,10 +334,6 @@ Source: lect08e-linked_gene_chi_square.odp, slide 23.
 - Chi-square compares observed and expected counts across the four offspring classes.
 - Four classes give three degrees of freedom; compare the statistic with the critical value.
 - The same proportional differences can provide stronger evidence against the null hypothesis with more offspring.
-
-@notes
-
-Added during the October 26, 2026 review from the existing lecture content.
 
 === layout: theend
 

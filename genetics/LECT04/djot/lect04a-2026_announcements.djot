@@ -141,13 +141,6 @@ Stump the Vibe Coder &#35;33&#58; Fold Spacer &#8212; Racing Through Proteins\
 Watch the Video: [https://www.youtube.com/watch?v=gNA7VV&#95;AGp0](https://www.youtube.com/watch?v=gNA7VV_AGp0)\
 Play the Game: https://vosslab.github.io/Fold-Spacer/
 
-@notes
-
-podcast-slide: stump-the-vibe-coder
-Published: 2026-09-17T15:34:20+00:00
-Playlist: https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
-Refresh explicitly with refresh_podcast.py; ordinary builds retain this episode.
-
 === layout: one-plus-two-panels
 
 # Discord Server
@@ -579,11 +572,6 @@ hidden: true
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
 
-@notes
-
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
-
 === layout: section
 
 # Weekly Assignments
@@ -650,10 +638,6 @@ Dates verified against the published Fall 2026 Genetics syllabus schedule.
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments, or post to Discord for help
 
-@notes
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
-
 === layout: two-panels
 hidden: true
 
@@ -682,10 +666,6 @@ hidden: true
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments
   - or post a screenshot to Discord for help
-
-@notes
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: section
 
@@ -735,10 +715,6 @@ hidden: true
 - Due Tuesdays at Midnight
 - Homework is usually 3 questions with unlimited attempts and takes your highest score
 - I encourage students to work together on assignments, or post to Slack
-
-@notes
-
-Dates verified against the published Fall 2026 Genetics syllabus schedule.
 
 === layout: one-panel
 hidden: true

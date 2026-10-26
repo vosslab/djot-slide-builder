@@ -37,7 +37,14 @@ def test_refresh_is_repeatable_and_keeps_other_slides(tmp_path: pathlib.Path) ->
 	updated = tools.refresh_podcast.update_source(source, episode)
 	assert tools.refresh_podcast.lecture_date(source) == datetime.date(2026, 9, 15)
 	assert tools.refresh_podcast.update_source(updated, episode) == updated
-	assert updated.count(tools.refresh_podcast.MARKER) == 1
+	assert updated.count(tools.refresh_podcast.PODCAST_ASSET_PATH) == 1
+	next_episode = dict(episode, id="bbbbbbbbbbb")
+	refreshed = tools.refresh_podcast.update_source(updated, next_episode)
+	assert refreshed.count(tools.refresh_podcast.PODCAST_ASSET_PATH) == 1
+	assert episode["id"] not in refreshed
+	assert next_episode["id"] in refreshed
+	assert "@notes" not in updated
+	assert episode["published"] not in updated
 	assert "@citation" not in updated
 	assert "Watch the Video: [https://www.youtube.com/watch" in updated
 	assert "@caption\n\nStump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212;" in updated

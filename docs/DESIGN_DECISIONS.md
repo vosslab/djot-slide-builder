@@ -415,7 +415,9 @@ Keep replacement markers for unresolved relationships. Existing four-panel layou
 
 ### Lecture 06 conversion boundary
 
-**Decision.** Keep the four science decks in original slide order with source-slide notes.
+**Decision.** Keep the four science decks in original slide order. Keep source-slide traceability
+in separate slide maps or review files; reserve Djot `@notes` for instructor notes, following
+[HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md).
 Mark unsupported teaching relationships with `@replaceme`; restore the exam announcements
 from legacy material and update calendar/policy details from the current local syllabus.
 
@@ -814,3 +816,15 @@ frame when its selected size reaches the theme's ordinary body-size ceiling. Use
 ceiling, not compiled typography `start_size_pt`, which currently equals the selected size.
 Count suppressed runts separately; retain title-wrap and URL-width warnings. This changes
 advisory reporting only, not text, font selection, or rendering.
+
+### Podcast slide identification
+
+**Decision.** Identify managed podcast slides by their existing thumbnail path under
+`assets/stump_the_vibe_coder/`; emit no administrative notes or comments in Djot.
+
+**Why.** The instructor reserves `@notes` for presentation note cards used while lecturing.
+
+**Consequence.** Refresh replaces the previous episode using its asset path, including decks
+whose old metadata notes have been removed. Duplicate managed slides still stop refresh.
+
+**Owner.** `tools/refresh_podcast.py` and [USAGE.md](USAGE.md).
