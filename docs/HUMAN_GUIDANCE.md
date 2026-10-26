@@ -160,8 +160,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - For mixed text/image scaling, evaluate font candidates at half-point precision and allow
   each image an independent scale. Compare actual occupied panel area; the instructor prefers
   the larger-area scale-sum result for LECT07B slide 24 over the max-min result.
-- If mixed-content readability constraints cannot be met, require `@replaceme` and recommend
-  splitting the slide rather than accepting an unreadable arrangement.
+- If mixed-content readability constraints cannot be met, retain the source slide with
+  `@replaceme`. Prefer this designation over splitting; do not recommend splitting as the
+  default repair. Any slide split requires human approval.
 - Treat mixed text/image flow within one panel as a powerful conversion strategy: several
   objects can share a region, rather than receiving one panel each. LECT07B slide 24's PNG,
   sentence, and SVG work better together in one panel than split across stacked panels.
@@ -310,6 +311,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   including I with superscript A and F/P generation indices.
 
 ## Preserve teaching voice
+
+- Any slide splitting requires human approval. Keep existing content slides one-to-one with
+  their source slides through the middle of the lecture. Added opening and closing slides may
+  shift numbering; record those additions in the slide map without treating them as permission
+  to split source slides.
 
 - Conversion preserves existing teaching content and sequence; it does not authorize pedagogical
   redesign. Missing learning objectives, a closing summary, and an optional definitions slide

@@ -18,6 +18,20 @@
 
 ### Fixes and Maintenance
 
+- Prefer retained `@replaceme` source slides over splitting when conversion/readability fails.
+  Remove default split recommendations from the checklist and LECT08 review/map; retain the
+  human-approval requirement for any split.
+
+- Clarify that any slide splitting requires human approval. Require one-to-one source/content
+  mapping despite numbering shifts from added opening/closing slides; label LECT08 split
+  recommendations as proposals awaiting approval. No LECT08 source slides were split.
+
+- Complete the LECT08 conversion checklist with a durable source/output slide map, aligned
+  image-area audits, link checks, and fresh six-deck ODP/PDF builds. Mark dense B2/B40 and
+  unreadable C6/F5 source slides for replacement after layout trials fail; retain their content
+  and document split/reconstruction actions. Record 109 replacement drafts, remaining capacity
+  findings, and untested attended playback in the lecture review; strict lint and 75 cover checks pass.
+
 - Bound the conversion checklist to existing content and sequence, with missing objectives,
   summaries, and optional definitions slides as authorized additions. Limit definitions to terms
   used in the lecture and dividers to existing topic boundaries; align Human Guidance accordingly.

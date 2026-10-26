@@ -6,6 +6,9 @@ Adding missing learning objectives, a closing summary, and an optional definitio
 terms used in the lecture is explicitly authorized. Other substantive instructional changes
 require separate authorization.
 
+Any slide splitting requires human approval. Keep existing content slides one-to-one with their
+source slides; authorized opening and closing additions may shift numbering.
+
 Managers must complete this checklist for each conversion and subsequent conversion review.
 Copy it into the lecture's review report. Check successful routine items without extra evidence.
 Record findings and evidence for failures, repairs, unresolved conversions, and significant
@@ -39,7 +42,8 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
   Save the generated Djot, component assets, and import report; list their paths in the review.
   For an existing conversion, locate these artifacts instead of overwriting reviewed source.
 - [ ] Build a source-to-Djot slide map. Account for every source slide, its relative order,
-  and hidden status; list added slides separately so counts reconcile.
+  and hidden status; verify one-to-one correspondence through existing content and list added
+  slides separately so counts reconcile. Record human approval for any source-slide splitting.
 - [ ] Update each cover's course, lecture number, date, and topic. Check the rendered cover
   against the cover requirements in the pedagogical guide.
 - [ ] Verify each cover's chapter number against the relevant BPW course index linked from
@@ -98,7 +102,9 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 - [ ] Compare source animation targets/order with the converted reveals. Inspect final PDF states
   and test click playback in Impress for affected slides, or explicitly record playback as untested.
 - [ ] For each unresolved slide, add or retain `@replaceme` and record its source number, specific
-  missing feature, and next action. When readable sizing cannot fit, recommend splitting the slide.
+  missing feature, and next action. When readable sizing cannot fit, retain the source slide with
+  `@replaceme`, the preferred outcome over splitting. Do not make splitting the default repair;
+  any split requires human approval.
 - [ ] Before clearing any replacement marker, compare the repaired render with the original and
   verify the previously missing content or behavior; record the evidence in the review report.
 
