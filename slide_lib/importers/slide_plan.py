@@ -871,6 +871,15 @@ def slot_plans(
 	ordinary = tuple(region for region in text_regions if region not in excluded)
 	content_images = () if content is None else content.image_regions
 	ordinary_images = tuple(image for image in image_regions if image not in content_images)
+	direct = tuple(("text", region) for region in ordinary) + tuple(("image", image) for image in ordinary_images)
+	flow_items = tuple(sorted(direct, key=lambda item: (item[1].bounds.top, item[1].bounds.left, item[1].source_ordinal)))
+	if not tables and ordinary and ordinary_images and len(flow_items) > 1 and all(
+		first[1].bounds.bottom <= second[1].bounds.top + FLOW_TEXT_BOUNDARY_EPSILON_RATIO and
+		topology.material(first[1].bounds.left, first[1].bounds.width, second[1].bounds.left, second[1].bounds.width)
+		for first, second in zip(flow_items, flow_items[1:])
+	):
+		return (SlotPlan("body", tuple(item for kind, item in flow_items if kind == "text"),
+			tuple(item for kind, item in flow_items if kind == "image"), True),)
 	pairs = visual_relations.caption_pairings(ordinary, ordinary_images)
 	if pairs:
 		paired_text = set(pairs.values())
@@ -884,15 +893,6 @@ def slot_plans(
 			return tuple(SlotPlan(slide_lib.layout_registry.contract_for(name).slot_names[index], units[item][0], units[item][1])
 				for index, item in enumerate(order))
 		return (SlotPlan("body", ordinary, ordinary_images),)
-	direct = tuple(("text", region) for region in ordinary) + tuple(("image", image) for image in ordinary_images)
-	flow_items = tuple(sorted(direct, key=lambda item: (item[1].bounds.top, item[1].bounds.left, item[1].source_ordinal)))
-	if not pairs and ordinary and ordinary_images and len(flow_items) > 1 and all(
-		first[1].bounds.bottom <= second[1].bounds.top + FLOW_TEXT_BOUNDARY_EPSILON_RATIO and
-		topology.material(first[1].bounds.left, first[1].bounds.width, second[1].bounds.left, second[1].bounds.width)
-		for first, second in zip(flow_items, flow_items[1:])
-	):
-		return (SlotPlan("body", tuple(item for kind, item in flow_items if kind == "text"),
-			tuple(item for kind, item in flow_items if kind == "image"), True),)
 	match = topology.ordinary_layout_match(tuple(item.bounds for _kind, item in direct))
 	if match is not None:
 		name, order = match

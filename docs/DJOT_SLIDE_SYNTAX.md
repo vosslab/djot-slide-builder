@@ -116,6 +116,40 @@ before a slot is global content; it supplies titles, subtitles, or root content 
 chosen layout accepts it.  Keep ordinary prose and lists in normal Djot form; a layout directive
 and a slot directive are short, whole lines.
 
+## Mixed content in one panel
+
+A panel is a region for a sequence of blocks, not a single-object container. Put a question
+image, ordinary text, and a diagram together in `@body` when they form one top-to-bottom
+explanation. The compiler places all three automatically; no manual text-box positioning or
+new layout is needed.
+
+```djot
+=== layout: one-panel
+
+@body
+
+![Question](assets/question.png)
+
+- How many different ways can we get 4 boys and 3 girls? 35 ways!!!
+
+![Arrangements](assets/arrangements.svg)
+```
+
+Blocks retain their authored order. Text stays editable native text; PNG and SVG remain separate
+component assets. An image containing the question or heading can be the first body block without
+an additional title. The same grouping works inside a named region of another supported layout.
+
+**Choose regions for teaching relationships, not object counts.** A sequential question, sentence,
+and figure often work better in one panel than in equal-height stacked panels. Shared flow lets
+the measured content use the available height, with independent image scaling and half-point
+font selection. LECT07B slide 24 is the reference example: its PNG, sentence, and SVG are more
+prominent together in one panel than divided across stacked panels.
+
+Keep separate regions when side-by-side comparison, independent groups, or a spatial relationship
+carries meaning. One panel is a strong candidate, not a universal replacement for multiple panels.
+Review embedded figure labels as well as the overall fit. If readability bounds cannot be met,
+use `@replaceme` and recommend splitting; preserve the original prose and unresolved source facts.
+
 ## Slides needing replacement
 
 Put an exact, unindented `@replaceme` line after the layout directive, before headings, notes,

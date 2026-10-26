@@ -160,15 +160,25 @@ exceptions.
 Ordinary source prose and pictures project to editable Djot blocks. Direct source style, placeholder
 role, actual top/group z-path, signed rotation, and normalized geometry provide the evidence for
 bounded coupled relations. A visible degenerate connector retains a narrow normalized footprint
-rather than being silently lost. Ordinary layout selection runs through the shared registry-topology
-matcher first; special relations are positive, bounded classifications rather than exceptions.
+rather than being silently lost. Ordinary layout selection recognizes a clear mixed vertical
+reading sequence before caption pairing and registry-topology matching; special relations remain
+positive, bounded classifications.
 
 A narrow coarse-body and picture-inset pair remains two direct editable objects in `two-panels`,
 using exact source provenance and one explicit permission. Caption pairing is a single shared
 positive relation grouped before topology and reuses the existing `two-plus-one` and footer
-permission. Adaptive vertical image flow starts ordinary text at 28 pt and records a fit below the
-20 pt body floor before uniformly scaling every image. These routes do not use slide-specific
-geometry exceptions.
+permission. A clear top-to-bottom sequence of pictures and prose shares one ordinary panel,
+including image/text/image sequences where caption pairing would otherwise reserve separate
+equal-height panels. Side-by-side relationships retain their existing comparison/grouping paths.
+Mixed flow searches half-point font candidates and independently scales images to maximize
+occupied area within the shared readability bounds. These routes use no slide-specific geometry
+exceptions. See [mixed-content authoring](DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel).
+
+Before publication, mixed-flow import drafts are checked by the shared compiler. A readable
+one-panel sequence does not need a review reason merely because it mixes object types.
+An unreadable arrangement receives `@replaceme` in the generated source and a split recommendation
+in the import report. Existing source-object, animation, overlap, and diagram-reconstruction
+reasons remain; a better allocation cannot resolve missing content or lost spatial meaning.
 
 A tightly coupled diagram and its distributed labels project as native text and genuine source
 images in one standard source-order flow. Dense fields use a visible redesign diagnostic while the
@@ -240,7 +250,10 @@ still needs evaluation.
 Review checks teaching sequence, question/answer separation, diagram-label relationships, definition
 emphasis, image prominence, and scientific meaning. Compare deliberate color, capitalization,
 underline, bold, and italics explicitly; LLM rewriting must not silently flatten them. Repair the Djot or component assets using
-existing layouts, then render and check the changed slides again. Retain `@replaceme` where the
+existing layouts, then render and check the changed slides again. Try mixed text/image flow in one
+panel for sequential content before dividing objects among panels or marking a layout-only
+problem for replacement. Compare figure prominence, label readability, and preserved reading
+order; do not clear unrelated review reasons. Retain `@replaceme` where the
 teaching intent remains unresolved and record concise slide-specific findings in the deck review.
 
 A reviewed `@replaceme` is an acceptable result, not a failed conversion or a requirement to keep

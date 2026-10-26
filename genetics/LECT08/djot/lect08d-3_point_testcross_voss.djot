@@ -1,0 +1,712 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 08D
+
+## Three Point Test Cross
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## October 27, 2026
+
+@notes
+Source: lect08d-3_point_testcross_voss.odp, slide 1.
+
+=== layout: one-panel
+
+# *Gene Mapping*
+
+@body
+
+![Slide image 1](assets/lect08d-3_point_testcross_voss/image_001.svg)
+
+- A heterozygote fruit fly for all three genes, was crossed with a homozygous recessive for all three genes, making the following results a [valid test-cross]{color=red}.
+- Progeny are sorted by phenotype name.
+
+=== layout: one-panel
+
+# *Steps in Three-Point Test-Cross Gene Map*
+
+@body
+
+- 1. Determine parental genotype
+- 2\: Pick any two genes
+  - completely cover up the third so it does not confuse you!!!
+- 3. Determine which of the progeny are parental and non-parental genotypes
+- 4. Determine the map distance between the two genes
+  - 4a Sum the progeny from the non-parental genotypes
+  - 4b. Divide the NP by the total progeny
+  - 4c. Multiply the result by 100% to get the distance between the genes
+- 5. Go to Step 2 and pick a new pair of genes until all pairs are complete
+- 6. Use all the gene distances to determine the order of the genes.
+  - largest distance are furthest away and on the ends
+
+=== layout: one-panel
+
+# *Which are the parental types?*
+
+@body
+
+![Slide image 2](assets/lect08d-3_point_testcross_voss/image_002.svg)
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *ones with the most progeny*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Which numbers to add for the A to B distance?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Which numbers to add for the A to B distance?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Parental Types +b/a+ Recombinant Types\: ++/ab*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Recombinant Types
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Sum the* [*non-parental types*]{color=#800080} *for genes A and B?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Recombinant Types
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Sum the* [*non-parental types*]{color=#800080} *for genes A and B?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+- d = (183+60+95+161)/2100
+- d = 23.7 map units
+
+=== layout: one-panel
+@replaceme
+
+# *Which numbers to add for the A to C distance?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Which numbers to add for the A to C distance?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Parental Types ++/ac Recombinant Types\: +c/a+*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Recombinant Types
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Parental Types ++/ac Recombinant Types\: +c/a+*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Recombinant Types
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Sum the* [*non-parental types*]{color=#800080} *for genes A and C?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Sum the* [*non-parental types*]{color=#800080} *for genes A and C?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+- d = (60+17+17+95)/2100
+- d = 9.0 map units
+
+=== layout: one-panel
+@replaceme
+
+# *Which numbers to add for the B to C distance?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Which numbers to add for the B to C distance?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Parental Types b+/+c Recombinant Types\: ++/bc*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Parental Types b+/+c Recombinant Types\: ++/bc*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Sum the* [*non-parental types*]{color=#800080} *for genes B and C?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+=== layout: one-panel
+@replaceme
+
+# *Sum the* [*non-parental types*]{color=#800080} *for genes B and C?*
+
+@body
+
+![Slide image 3](assets/lect08d-3_point_testcross_voss/image_003.svg)
+
+- Recombinant Types
+
+- ignore
+- this
+- gene
+
+- Parental Types
+
+- d = (183+17+17+161)/2100
+- d = 18.0 map units
+
+=== layout: section
+
+# Gene Chromosome Placement
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Where are the locations of these genes on a chromosome?
+  - A and B\: 23.7 map units
+  - A and C\: 9.0 map units
+  - B and C\: 18.0 map units
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Where are the locations of these genes on a chromosome?
+  - A and B\: 23.7 map units
+  - A and C\: 9.0 map units
+  - B and C\: 18.0 map units
+
+- A
+
+- B
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Where are the locations of these genes on a chromosome?
+  - A and B\: 23.7 map units
+  - A and C\: 9.0 map units
+  - B and C\: 18.0 map units
+
+- Technically [gene C]{color=#5983B0} can be on either side of the [gene A]{color=red}
+
+- A
+
+- B
+
+- C
+
+- C
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Where are the locations of these genes on a chromosome?
+  - A and B\: 23.7 map units
+  - A and C\: 9.0 map units
+  - B and C\: 18.0 map units
+
+- only gene C in between the A and B genes makes sense.
+
+- A
+
+- B
+
+- C
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Where are the locations of these genes on a chromosome?
+  - A and B\: 23.7 map units
+  - A and C\: 9.0 map units
+  - B and C\: 18.0 map units
+
+- Show the distances
+
+- A
+
+- B
+
+- C
+
+- 9cM
+
+- 18cM
+
+- 23.7cM
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Where are the locations of these genes on a chromosome?
+  - A and B\: 23.7 map units
+  - A and C\: 9.0 map units
+  - B and C\: 18.0 map units
+
+- Only use the shorter distances.
+
+- A
+
+- B
+
+- C
+
+- 9cM
+
+- 18cM
+
+- [23.7cM]{color=#B2B2B2}
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25 cM
+- A and C\: 15 cM
+- A and D\: 5 cM
+- B and C\: 10 cM
+- C and D\: 20 cM
+
+- [1. ABCD]{color=red}
+- [2. ABDC]{color=red}
+- [3. ACBD]{color=red}
+- [4. ACDB]{color=red}
+- [5. BDAC]{color=red}
+
+- [6. BDCA]{color=red}
+- [7. BACD]{color=red}
+- [8. BADC]{color=red}
+- [9. BCAD]{color=red}
+- [10. BCDA]{color=red}
+
+=== layout: four-panels
+@replaceme
+
+# *Your Turn*
+
+@top-left
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+@top-right
+
+- Tip\: make a grid line, to help with the distances...
+
+@bottom-left
+
+![Slide image 4](assets/lect08d-3_point_testcross_voss/image_004.svg)
+
+@bottom-right
+
+|  | *A* | *B* | *C* | *D* |
+| *A* | &#8212; | 25% | 15% | 5% |
+| *B* |  | &#8212; | 10% | [??]{color=red} |
+| *C* |  |  | &#8212; | 20% |
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+- position the furthest away ones first...
+
+- A
+
+- B
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+- A
+
+- C
+
+- gene C can be on either side of the gene A
+
+- B
+
+- C
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+- A
+
+- C
+
+- only gene C in between the A and B genes makes sense.
+
+- B
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+- A
+
+- C
+
+- gene D can be on either side of the gene A
+
+- B
+
+- D
+
+- D
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+- A
+
+- C
+
+- gene D outside of gene A fits the C-D distance
+
+- B
+
+- D
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+- A and B\: 25%
+- A and C\: 15%
+- A and D\: 5%
+- B and C\: 10%
+- C and D\: 20%
+
+- A
+
+- C
+
+- B
+
+- D
+
+- [1. ABCD]{color=#CCCCCC}
+- [2. ABDC]{color=#CCCCCC}
+- [3. ACBD]{color=#CCCCCC}
+- [4. ACDB]{color=#CCCCCC}
+- [5. BDAC]{color=#CCCCCC}
+
+- [6. BDCA]{color=#CCCCCC}
+- [7. BACD]{color=#CCCCCC}
+- [8. BADC]{color=#CCCCCC}
+- [9. BCAD]{color=green}
+- [10. BCDA]{color=#CCCCCC}
+
+=== layout: section
+
+# In Class Activity\: Gene Distance
+
+=== layout: one-panel
+
+# *Group Work*
+
+@body
+
+- Three-Point Test-Cross Gene Distances Group Activity
+- Fall 2024 Link\:
+  - [https\://docs.google.com/presentation/d/1Y-Fjh2PU3nKrOg0lqvD8NjjwH2EWauOorEAeZHkwjfg/edit](https://docs.google.com/presentation/d/1Y-Fjh2PU3nKrOg0lqvD8NjjwH2EWauOorEAeZHkwjfg/edit)
+- x
+
+=== layout: one-panel
+
+# *Group Work*
+
+@body
+
+- Three-Point Test-Cross Gene Distances Group Activity
+- Fall 2023 Link\:
+  - [https\://docs.google.com/presentation/d/1J0Kv6KfFUiG7jz8OpxYZgACWENVE0QFAkYvBAO2S0s4/edit?usp=sharing](https://docs.google.com/presentation/d/1J0Kv6KfFUiG7jz8OpxYZgACWENVE0QFAkYvBAO2S0s4/edit?usp=sharing)
+- x
+
+=== layout: one-panel
+
+# *Group Work*
+
+@body
+
+- Three-Point Test-Cross Gene Distances Group Activity
+- Fall 2022 Link\:
+  - [https\://docs.google.com/presentation/d/19HatQpFZCaeOe-dbw\_nN6QPX-Qukv\_t\_13PcvBd2-Q8/edit?usp=sharing](https://docs.google.com/presentation/d/19HatQpFZCaeOe-dbw_nN6QPX-Qukv_t_13PcvBd2-Q8/edit?usp=sharing)
+- x
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# *More content\:*
+
+@body
+
+- Bozeman Science\:
+  - [https\://youtu.be/-\_UcDhzjOio](https://youtu.be/-_UcDhzjOio)
+  - [https\://youtu.be/TU44tR0hJ8A](https://youtu.be/TU44tR0hJ8A)
+
+=== layout: theend
+
+# THE END

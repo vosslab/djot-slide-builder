@@ -3,6 +3,26 @@
 Use repository-owned `.djot` source to produce editable ODP and ODP-derived PDF output.
 Existing-presentation import is a one-time source migration workflow.
 
+## Mixed text and images
+
+A panel can contain text and multiple images in source order. The compiler tries half-point
+font sizes down to the theme's readable body floor and maximizes occupied bounding-box area.
+Images keep their aspect ratios and scale independently. Each image retains at least the
+body-floor/ordinary-font fraction of its size when fitted alone in the panel (currently 20/28).
+Review embedded diagram labels separately; geometric bounds cannot establish their readability.
+
+For a question image followed by text and a diagram, try all three in `@body` before dividing
+them among stacked panels. They share the available height automatically. See the
+[mixed-content example and layout guidance](DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel).
+The ODP converter now prefers this grouping for a clear vertical sequence, while retaining
+separate columns for side-by-side material and existing warnings for unresolved source facts.
+
+When those bounds cannot fit, the exported review slide receives a REPLACE ME watermark and
+a recommendation to split in its speaker notes and build/capacity diagnostics. Add `@replaceme`
+immediately below the slide's `=== layout:` line during source review, then split content into
+separate slides or panels as appropriate. Builds never silently rewrite authored Djot or split
+slides automatically. Already marked slides receive a single watermark.
+
 ## Audit image shrinkage
 
 Compare original ODP image coverage with the actual displayed area in a converted Djot deck:
@@ -68,7 +88,11 @@ The helper reads the playlist's public YouTube Atom feed and chooses the newest 
 date among its recent entries. YouTube limits this feed to recent entries; it is not a complete
 playlist archive. No API key or video download is needed. It downloads the full-size episode
 thumbnail when available, otherwise the standard thumbnail, to `assets/stump_the_vibe_coder/`
-beside each source. The `big-image` slide has the full episode title and visible clickable URL.
+beside each source. The `big-image` slide has three lines in its caption box: a shortened episode title,
+`Watch the Video:` with its clickable URL, and `Play the Game:` with the clickable
+GitHub Pages project URL. The project link comes from the
+episode description; repository links are excluded. Missing or ambiguous GitHub Pages links
+stop the refresh before any deck is written.
 
 The slide goes immediately after the unique slide mentioning YouTube. Its `@notes` marker
 identifies it for replacement on future runs; retain that marker when editing. Missing or

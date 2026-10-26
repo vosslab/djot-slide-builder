@@ -22,7 +22,8 @@ PLAYLIST_ID = "PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48"
 FEED_URL = f"https://www.youtube.com/feeds/videos.xml?playlist_id={PLAYLIST_ID}"
 MARKER = "podcast-slide: stump-the-vibe-coder"
 NAMESPACES = {"atom": "http://www.w3.org/2005/Atom",
-	"yt": "http://www.youtube.com/xml/schemas/2015"}
+	"yt": "http://www.youtube.com/xml/schemas/2015",
+	"media": "http://search.yahoo.com/mrss/"}
 
 
 #============================================
@@ -62,8 +63,20 @@ def latest_episode(data: bytes, on_date: datetime.date | None = None) -> dict[st
 	if not title or not title.strip():
 		raise ValueError("Episode has no title")
 	episode = {"id": video_id, "title": " ".join(title.split()),
-		"published": entry.findtext("atom:published", namespaces=NAMESPACES)}
+		"published": entry.findtext("atom:published", namespaces=NAMESPACES),
+		"project_url": project_url(entry.findtext(
+			"media:group/media:description", namespaces=NAMESPACES) or "")}
 	return episode
+
+
+def project_url(description: str) -> str:
+	"""Require one published GitHub Pages destination, never a repository URL."""
+	urls = set(re.findall(
+		r"https://[A-Za-z0-9-]+\.github\.io(?:/[^\s<>\"\)]*)?", description))
+	if len(urls) != 1:
+		raise ValueError("Expected one GitHub Pages project URL in the episode description; "
+			"decks were not changed")
+	return urls.pop()
 
 
 def lecture_date(source: str) -> datetime.date:
@@ -92,10 +105,16 @@ def djot_text(text: str) -> str:
 def podcast_slide(episode: dict[str, str]) -> str:
 	"""Keep the episode title and visible clickable URL editable beneath its thumbnail."""
 	title = djot_text(episode["title"])
+	caption = re.sub(r"^StVC\s+(\d+):", r"Stump the Vibe Coder #\1:",
+		episode["title"].split(" | Stump the Vibe Coder")[0])
+	caption = djot_text(caption)
 	video_id = episode["id"]
+	video_label = f"https://www.youtube.com/watch?v={video_id}".replace("_", "&#95;")
 	slide = "=== layout: big-image\n\n@image\n\n"
 	slide += f"![{title}](assets/stump_the_vibe_coder/{video_id}.jpg)\n\n"
-	slide += f"@caption\n\n{title}\n\nhttps://www.youtube.com/watch?v={video_id}\n\n"
+	slide += f"@caption\n\n{caption}\\\n"
+	slide += f"Watch the Video: [{video_label}](https://www.youtube.com/watch?v={video_id})\\\n"
+	slide += f"Play the Game: {episode['project_url']}\n\n"
 	slide += f"@notes\n\n{MARKER}\n"
 	slide += f"Published: {episode['published']}\n"
 	slide += f"Playlist: https://www.youtube.com/playlist?list={PLAYLIST_ID}\n"

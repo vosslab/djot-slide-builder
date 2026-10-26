@@ -1,0 +1,741 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 08F
+
+## Three Point Test Cross
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## October 27, 2026
+
+@notes
+Source: lect08f-3_point_testcross_textbook.odp, slide 1.
+
+=== layout: one-panel
+
+# *Confusing Allele/Genotype Nomenclature*
+
+@body
+
+![Slide image 1](assets/lect08f-3_point_testcross_textbook/image_001.svg)
+
+=== layout: one-panel
+
+# *Missed Recombination #1\: End crossover*
+
+@body
+
+- Here the crossing-over [did not occur between]{color=red} the two genes. As a result, all four gametes are non-recombinant.
+
+![Slide image 2](assets/lect08f-3_point_testcross_textbook/image_002.jpg)
+
+=== layout: one-panel
+
+# *Missed Recombination #2\: Double crossover*
+
+@body
+
+- Four non-recombinant gametes are produced
+
+![Slide image 3](assets/lect08f-3_point_testcross_textbook/image_003.jpg)
+
+=== layout: two-panels
+
+# *Results of multiple cross-overs depend on the number of strands involved*
+
+@left
+
+![Slide image 4](assets/lect08f-3_point_testcross_textbook/image_004.jpg)
+
+@right
+
+- The result of two crossovers in the interval between two genes is indistinguishable from independent assortment of the genes, provided that the chromatids participate at random in the exchanges.
+
+=== layout: two-panels
+
+# *Three-point crosses to detect two-strand double cross-overs*
+
+@left
+
+![Slide image 5](assets/lect08f-3_point_testcross_textbook/image_005.jpg)
+
+@right
+
+- A two-strand double crossover that spans the middle pair of alleles in a triple heterozygote results in a reciprocal exchange of the middle pair of alleles between the two participating chromatids.
+
+=== layout: one-panel
+
+# *Three-point Test-cross*
+
+@body
+
+![Slide image 6](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: one-panel
+
+# *Can we determine the gene order without distance calculations?*
+
+@body
+
+![Slide image 6](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+- Lz Gl Su *-OR-* Gl Lz Su *-OR-* Lz Su Gl
+
+=== layout: one-panel
+
+# [*Steps in Three-Point Test-Cross Gene Map*]{color=red}
+
+@body
+
+- 1. Determine parental genotype
+- Step 2\: Pick any two genes
+  - completely cover up the third so it does not confuse you!!!
+- 3. Determine which of the progeny are parental and non-parental genotypes
+- 4. Determine the map distance between the two genes
+  - 4a Sum the progeny from the non-parental genotypes
+  - 4b. Divide the NP by the total progeny
+  - 4c. Multiply the result by 100% to get the distance between the genes
+- 5. Go to Step 2 and pick a new pair of genes until all pairs are complete
+- 6. Use all the gene distances to determine the order of the genes.
+  - largest distance are furthest away and on the ends
+
+=== layout: section
+
+# Quick Method to Determine Gene Order
+
+=== layout: one-panel
+
+# [*Quick Gene Order Method for Three-Point Test-Cross*]{color=#55215B}
+
+@body
+
+- Step 1. Determine parental genotypes
+  - Two genotypes with most progeny
+- Step 2\: Determine double crossover (DCO) genotypes
+  - Two genotypes with fewest progeny
+- Step 3. Compare parental genotypes with double crossover genotypes to see which single gene flipped in the DCO
+- Step 4\: Determine the gene order given that the flipped gene is the middle gene.
+
+=== layout: one-panel
+
+# *Step 1\: Determine Parental types*
+
+@body
+
+![Slide image 6](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Step 1\: Determine Parental types*
+
+@top
+
+![Slide image 7](assets/lect08f-3_point_testcross_textbook/image_007.png)
+
+@bottom
+
+![Slide image 6](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 2\: Locate double crossovers*
+
+@body
+
+![Slide image 7](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Step 2\: Locate double crossovers*
+
+@top
+
+![Slide image 8](assets/lect08f-3_point_testcross_textbook/image_008.png)
+
+@bottom
+
+![Slide image 7](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Step 3\: Determine gene order*
+
+@top
+
+![Slide image 8](assets/lect08f-3_point_testcross_textbook/image_008.png)
+
+@bottom
+
+![Slide image 8](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: section
+
+# How many different ways to write order of three genes A B C?
+
+=== layout: one-panel
+@replaceme
+
+# *How many different ways to write order of A B C*
+
+@body
+
+- A B C &#8596; C B A
+- A C B &#8596; B C A
+- B A C &#8596; C A B
+  - only three, if flips are the same gene order
+
+- A B C
+
+- B A C
+
+- C B A
+
+- C A B
+
+- A B C
+
+- B A C
+
+- The answer is
+- 3
+
+=== layout: one-panel
+@replaceme
+
+# *Possible Gene Orders*
+
+@body
+
+- With three genes there are always three options for gene order\:
+- ABC, ACB, or BAC
+- Note\:
+  - It only depends on which gene is in the middle
+  - ABC &#8596; CBA || ACB &#8596; BCA || BAC &#8596; CAB
+- Since these are chromosomes, the reverse order of the gene is the same/does not matter
+
+- A B C
+
+- B A C
+
+- C B A
+
+- C A B
+
+- A B C
+
+- B A C
+
+=== layout: one-panel
+@replaceme
+
+# *How many different ways to write order of A B C D*
+
+@body
+
+- A B C D &#8596; D C B A
+- A B D C &#8596; C D B A
+- A C B D &#8596; D B C A
+- A C D B &#8596; B D C A
+- A D B C &#8596; C B D A
+- A D C B &#8596; B C D A
+
+- B A C D &#8596; D C A B
+- B A D C &#8596; C D A B
+- B C A D &#8596; D A C B
+- B D A C &#8596; C A D B
+- C A B D &#8596; D B A C
+- C B A D &#8596; D A B C
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_009.svg)
+
+- [12; This is just too many for a quiz or exam!]{color=#009999}
+
+=== layout: one-panel
+@replaceme
+
+# *Step 3\: Determine gene order*
+
+@body
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_008.png)
+
+- Lz Gl Su
+- lz gl su
+
+- Gl Lz Su
+- gl lz su
+
+- Lz Su Gl
+- lz su gl
+
+- With three genes there are always three options for gene order\:
+
+- Since these are chromosomes, the reverse order is the same/does not matter
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_007.png)
+
+- Parental genotypes\:
+
+- Lz Gl Su
+
+- Su Gl Lz
+
+- Lz Gl Su
+
+=== layout: one-panel
+@replaceme
+
+# *Step 3\: Determine gene order*
+
+@body
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_008.png)
+
+- Lz  Gl  Su
+- lz  gl  su
+
+- Gl  Lz  Su
+- gl  lz  su
+
+- Lz  Su  Gl
+- lz  su  gl
+
+- Three options for gene order\:
+
+- Apply the double crossover check to see if it makes sense.
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_007.png)
+
+- Parental genotypes\:
+
+=== layout: one-panel
+@replaceme
+
+# *Step 3\: Determine gene order*
+
+@body
+
+- Lz  Gl  Su
+- lz  gl  su
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_008.png)
+
+- Gl  Lz  Su
+- gl  lz  su
+
+- Lz  Su  Gl
+- lz  su  gl
+
+- Three options for gene order\:
+
+- Apply the double crossover check to see if it makes sense.
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_007.png)
+
+- Parental genotypes\:
+
+=== layout: one-panel
+@replaceme
+
+# *Step 3\: Determine gene order*
+
+@body
+
+- Lz  Gl  Su
+- lz  gl  su
+
+- Lz  gl  Su
+- lz  Gl  su
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_008.png)
+
+- Gl  Lz  Su
+- gl  lz  su
+
+- Lz  Su  Gl
+- lz  su  gl
+
+- Lz  su  Gl
+- lz  Su  gl
+
+- Gl  lz  Su
+- gl  Lz  su
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_007.png)
+
+- Parental genotypes\:
+
+=== layout: stacked-panels
+@replaceme
+
+# *Step 3\: Determine gene order*
+
+@top
+
+![Slide image 10](assets/lect08f-3_point_testcross_textbook/image_010.png)
+
+@bottom
+
+![Slide image 9](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: one-panel
+
+# *Confusing Allele/Genotype Nomenclature*
+
+@body
+
+![Slide image 10](assets/lect08f-3_point_testcross_textbook/image_001.svg)
+
+=== layout: two-over-one-panels
+
+# *What is the proper gene order?*
+
+@top-left
+
+- Parental types\:
+- b + +
+- + n s
+
+@top-right
+
+- Double crossovers
+- + + +
+- b n s
+
+@bottom
+
+=> appear
+- N B S or S B N
+
+=== layout: two-over-one-panels
+
+# *What is the proper gene order?*
+
+@top-left
+
+- Parental types\:
+- a b c^+^
+- a^+^ b^+^ c
+
+@top-right
+
+- Double crossovers
+- a^+^ b c^+^
+- a b^+^ c
+
+@bottom
+
+=> appear
+- B A C or C A B
+
+=== layout: two-over-one-panels
+
+# *What is the proper gene order?*
+
+@top-left
+
+- Parental types\:
+- N e J
+- n E j
+
+@top-right
+
+- Double crossovers
+- N E j
+- n e J
+
+@bottom
+
+=> appear
+- E N J or J N E
+
+=== layout: section
+
+# Now let&#8217;s find the distances...
+
+=== layout: one-panel
+@replaceme
+
+# *Step 4\: Summarize all genotypes*
+
+@body
+
+![Slide image 10](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+=== layout: one-panel
+
+# *Step 4\: Summarize Crosses*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 4\: Summarize Crosses*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 4\: Summarize Crosses*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 4\: Summarize Crosses*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+- Lz-Su Distance
+- (40+33+4+2)/740 x100%
+- = 10.6 cM
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+- Lz-Gl Distance
+- (40+33+59+44)/740 x100%
+- = 23.7 cM
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+- censored
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+![Slide image 11](assets/lect08f-3_point_testcross_textbook/image_011.png)
+
+- Su-Gl Distance
+- (59+44+4+2)/740 x100%
+- = 14.7 cM
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+# *Step 5\: Find distance between genes*
+
+@body
+
+![Slide image 12](assets/lect08f-3_point_testcross_textbook/image_012.png)
+
+- *distance between lz and su genes*
+
+![Slide image 13](assets/lect08f-3_point_testcross_textbook/image_013.png)
+
+- 79 of 740 have crossovers between lz and su.
+- 79/740 = 10.7 m.u.
+
+- *distance between su and gl genes*
+
+- 109 of 740 have crossovers between su and gl.
+- 109/740 = 14.7 m.u.
+
+![Slide image 14](assets/lect08f-3_point_testcross_textbook/image_014.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 14](assets/lect08f-3_point_testcross_textbook/image_006.jpg)
+
+- Lz Gl Su *-OR-* Gl Lz Su *-OR-* Lz Su Gl
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+![Slide image 15](assets/lect08f-3_point_testcross_textbook/image_015.png)
+
+- (a) parental genotype
+- (b) double crossovers
+- (c) correct gene order
+- (d) summarize genotypes
+- (e) gene distances
+
+- 1000
+
+=== layout: one-panel
+@replaceme
+
+# *Your Turn*
+
+@body
+
+![Slide image 15](assets/lect08f-3_point_testcross_textbook/image_015.png)
+
+- (a)	F g H / f G h
+- (b)	F G H and f g h
+- (c)	F G H is correct order
+- (H G F is also valid)
+- (d)	F/G = 41+33+4+2 ;
+- G/H = 50+64+4+2
+- (e)	F to G\: 80/1000 = 8 m.u.
+- G to H\: 120/1000 = 12 m.u.
+
+=== layout: theend
+
+# THE END

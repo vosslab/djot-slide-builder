@@ -7,6 +7,55 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+### Mixed vertical import sequences precede caption topology
+
+**Decision.** Recognize an ordinary, vertically separated, horizontally aligned sequence of
+text and pictures before caption pairing assigns multi-panel topology. Reuse the existing
+source-flow slot and emitter: an image, its following sentence, and a second image can all
+occupy one `@body`. The converter checks mixed-flow readability through the shared compiler
+before publication and adds a source `@replaceme` plus report split recommendation when needed.
+
+**Why.** Caption pairing previously preempted the existing vertical-flow recognition in
+LECT07B slide 24. It grouped the PNG and sentence into one component and assigned the SVG a
+second equal-height panel. The apparent object count dictated panel count, reducing prominence.
+The shared area optimizer can allocate those objects together without manual geometry.
+
+**Boundary.** Keep side-by-side comparisons, image-owned annotations, tables, and spatial
+diagram reconstruction on their existing paths. Improved flow does not clear animation,
+unsupported-media, missing-object, or spatial-reconstruction review reasons. Rendered review
+is still required; no lecture-specific rule, new layout, or source prose rewrite is introduced.
+
+### Mixed text and image area optimization
+
+**Decision.** For a panel containing ordinary text and images, measure font candidates at
+half-point intervals from the theme's ordinary size to its body floor. Maximize the sum of
+measured full-width text-box area and actual displayed image areas. Scale images independently,
+preserve their aspect ratios and source order, and favor larger fonts on exact area ties.
+At each font, enumerate bounded allocation vertices: a convex image-area objective needs at
+most one image between its bounds. The supported six-image limit bounds the search to at most
+192 vertices per font candidate; surveyed lecture panels currently contain at most four images.
+
+**Bounds.** Each image may occupy up to its full-panel contain size. Its minimum linear size is
+that size multiplied by the theme's body-floor/ordinary-font ratio (currently 20/28). This
+reuses the existing reduction budget rather than adding an unrelated percentage. Comparing
+with contain size, rather than panel width alone, accommodates tall figures. This is a
+geometric guardrail, not evidence that embedded labels are readable; original artwork still
+requires visual review. Bounding-box area also includes whitespace within images and text.
+
+**Failure.** If no bounded allocation fits, retain a serializer-safe half-point review preview,
+add the existing REPLACE ME watermark, and report that the source requires `@replaceme` with
+a recommendation to split into separate slides or panels. Include the recommendation in
+speaker notes. Do not rewrite Djot during compilation or automatically split teaching content.
+If even review geometry is impossible, fail with a source-located replacement/split diagnostic.
+
+**Evidence.** LECT07B slide 24's one-panel trial selects 20 pt and approximately full-width
+images; slide 25 selects 23.5 pt and a full-width question image. The doubled-text starvation
+case is now marked for replacement. A tall-image specimen remains accepted; crowded three-
+and four-image examples require splitting. Focused regression tests cover independent scaling,
+aspect/order/fit preservation, determinism, and replacement reporting without changing source.
+Temporary exhaustive comparisons verified 400 bounded allocation cases. On the local host,
+warm slide-25 compilation measured about 13 ms versus 2 ms for the previous selection rule.
+
 ### Prose and table validation
 
 **Decision.** Accept paragraphs, lists, and component images alongside one table in an ordinary
@@ -663,3 +712,16 @@ Source paths under the skill's `references/local-only/` are
 `object_construction/How_to_Draw_Drawing_and_Sketching_Objects_and_Environments_from_Your_Imagination-2013.md`
 and `svg_authoring/Mastering_SVG-2018.md`. Front elevations and simplified containers serve
 as illustrative memory cues, not drawings of actual buildings or measured specimens.
+### Tutorial illustration identity refinements
+
+The hospital food signs, two small trophies, and repeated bacterial jar emblem are
+story reminders. The microbial emblem is identical across years and does not encode
+community composition. Existing mean dots, spread brackets, labels, and geometry remain
+unchanged. Editable SVGs in `biostats/LECT08/djot/assets/tutorial_overviews/` remain the
+source images embedded in the Djot two-panel slides and exported through ODP/PDF.
+
+Construction references revisited in the SVG skill's `references/local-only/` corpus:
+Robertson's `object_construction/How_to_Draw_Drawing_and_Sketching_Objects_and_Environments_from_Your_Imagination-2013.md`,
+"Drawing boxes in perspective" (outline hierarchy), and
+`svg_authoring/Mastering_SVG-2018.md`, "viewBox and viewport in SVG" (stable coordinates).
+The additions use simple silhouettes and matching strokes within the existing viewBox.

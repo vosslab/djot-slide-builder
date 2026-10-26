@@ -68,9 +68,9 @@ https://www.youtube.com/c/NeilVossLab/videos
 
 @caption
 
-StVC 36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard &#124; Stump the Vibe Coder Episode 36
-
-https://www.youtube.com/watch?v=0zhh6g-DJFs
+Stump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212; Two Drugs&#44; One Keyboard\
+Watch the Video: [https://www.youtube.com/watch?v=0zhh6g-DJFs](https://www.youtube.com/watch?v=0zhh6g-DJFs)\
+Play the Game: https://vosslab.github.io/bad-cell-day/
 
 @notes
 
@@ -465,6 +465,32 @@ Read from the current Google Docs text export on October 21, 2026.
 Overview of the tutorial scenario; no computed result is supplied.
 
 Illustration: original editable SVG; schematic comparison, not tutorial data or results.
+
+=== layout: two-panels
+
+# Grad Student Tutorial: Regression
+
+@left
+
+- Dr. Caffeine's All-Nighter Academy.
+- Students' hours of sleep and final exam scores.
+- Google Sheets explores the relationship between sleep and scores.
+- *The comparison:* A straight-line model versus a curved, quadratic model.
+
+@right
+
+![Coffee and an exam paper recall the All-Nighter Academy tutorial](assets/tutorial_overviews/grad_regression.svg)
+
+@citation
+
+https://docs.google.com/spreadsheets/d/1mhOQhC_1hqnbvYItPT3y-V-_9l9q3pN7MtZDcOevaA0/edit
+
+@notes
+
+Sources: Tutorial_Outline.md and Tutorial_Outline.pdf supplied at the repository root.
+The citation links to the tutorial spreadsheet supplied in the outline.
+Scenario overview only; no computed results or causal conclusions are supplied.
+Illustration: original editable SVG showing story objects, not regression data.
 
 === layout: section
 

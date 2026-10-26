@@ -1,0 +1,582 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 08B
+
+## Linked Genes
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## October 27, 2026
+
+@notes
+Source: lect08b-chap8-linked_genes.odp, slide 1.
+
+=== layout: one-panel
+
+# *Mendel&#8217;s Four Principles of Heredity*
+
+@body
+
+- (1) Principles of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+  - [NOT ALL ORGANISMS ARE DIPLOID]{color=#CC00CC}
+  - [SEX-LINKED GENES ARE HAPLOID for MALES]{color=#CC00CC}
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+  - [CODOMINANCE, INCOMPLETE DOMINANCE and EPISTASIS]{color=#CC00CC}
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+  - [MALES CONTRIBUTE EITHER ONE OR NO ALLELE IN MAMMALS]{color=#CC00CC}
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
+
+=== layout: one-panel
+
+# *Mendel's Law of* *Independent Assortment*
+
+@body
+
+- Segregation of the members of any pair of alleles is independent of the segregation of other pairs in the formation of reproductive cells.
+- Alleles at one locus segregate into gametes independently of alleles at other loci.
+- Requires a dihybrid (or higher) cross
+  - Wrinkled/round does not affect yellow/green
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 1](assets/lect08b-chap8-linked_genes/image_001.jpg)
+
+Native reconstruction needed: 68 positioned diagram labels.
+
+=== layout: two-panels
+
+# *Alleles of two genes segregate independently*
+
+@left
+
+![Slide image 2](assets/lect08b-chap8-linked_genes/image_002.jpg)
+
+@right
+
+- Four kinds of gametes are produced in equal proportions
+
+=== layout: two-panels
+@replaceme
+
+# *Alleles of two genes segregate independently*
+
+@left
+
+![Slide image 2](assets/lect08b-chap8-linked_genes/image_002.jpg)
+
+@right
+
+![Slide image 3](assets/lect08b-chap8-linked_genes/image_003.png)
+
+=== layout: two-panels
+@replaceme
+
+# *A testcross can be used to show two genes are unlinked*
+
+@left
+
+![Slide image 4](assets/lect08b-chap8-linked_genes/image_004.jpg)
+
+@right
+
+- [double homozygous individuals only produce one type of gamete]{color=#CC00CC}
+
+=== layout: section
+
+# Linked Genes
+
+=== layout: one-panel
+@replaceme
+
+# *Genes on different chromosomes assort independently*
+
+@body
+
+![Slide image 5](assets/lect08b-chap8-linked_genes/image_005.jpg)
+
+- A double heterozygote produces four possible types of gametes in equal proportions
+
+=== layout: subsection
+
+# But what if genes are on the [same chromosome]{color=red}?
+
+=== layout: one-panel
+
+# *Linked Genes*
+
+@body
+
+- Each chromosome has hundreds or thousands of genes (except the Y chromosome)
+- Genes located on the same chromosome that tend to be inherited together are called [*linked genes*]{underline=true}
+
+=== layout: one-panel
+
+# *Alleles of linked genes can be in* *_cis_* *or* *_trans_* *configuration*
+
+@body
+
+![Slide image 6](assets/lect08b-chap8-linked_genes/image_006.jpg)
+
+=== layout: one-panel
+@replaceme
+
+# *Cis-Trans Isomers*
+
+@body
+
+![Slide image 7](assets/lect08b-chap8-linked_genes/image_007.png)
+
+- [*_cis_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on the same side.*
+
+- [*_trans_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on opposite sides.*
+
+- Geometric isomers are compounds with the same covalent partnerships that differ in their spatial arrangement around a carbon-carbon double bond.
+- The double bond does not allow atoms to rotate freely around the bond axis.
+
+=== layout: two-over-one-panels
+
+# *Nomenclature*
+
+@top-left
+
+![Slide image 8](assets/lect08b-chap8-linked_genes/image_008.png)
+
+@top-right
+
+![Slide image 9](assets/lect08b-chap8-linked_genes/image_009.png)
+
+@bottom
+
+- When you have two different alleles for two genes on the same chromosome, we need more specific nomenclature
+  - You could have the recessive alleles for both genes on the same chromosome, or they could be split
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *What gametes are produced?*
+
+@top-left
+
+- Trans
+
+@top-right
+
+- Cis
+
+@bottom
+
+![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
+
+=== layout: four-panels
+@replaceme
+
+# *What gametes are produced?*
+
+@top-left
+
+- Trans
+
+@top-right
+
+- Cis
+
+@bottom-left
+
+- unlinked\:
+- ++
+- w+
+- +m
+- wm
+
+@bottom-right
+
+![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
+
+=== layout: four-panels
+@replaceme
+
+# *What gametes are produced?*
+
+@top-left
+
+- Trans
+  - w+
+  - +m
+
+@top-right
+
+- Cis
+  - wm
+  - ++
+
+@bottom-left
+
+- unlinked\:
+- ++
+- w+
+- +m
+- wm
+
+@bottom-right
+
+![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
+
+=== layout: one-panel
+@replaceme
+
+# *What gametes are produced?*
+
+@body
+
+- Trans
+  - w+
+  - +m
+
+- Cis
+  - wm
+  - ++
+
+![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
+
+- In either case, only half of the
+- normal gametes are produced
+
+- unlinked\:
+- ++
+- w+
+- +m
+- wm
+
+=== layout: section
+
+# Recombination
+
+=== layout: one-panel
+
+# *How Linkage Affects Inheritance*
+
+@body
+
+- Morgan did other experiments with fruit flies to see how linkage affects inheritance of two characters
+- Morgan crossed flies that differed in traits of body color and wing size
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 10](assets/lect08b-chap8-linked_genes/image_010.jpg)
+
+- [*Experiment*]{color=#FF6600}
+
+- *P Generation (homozygous)*
+
+- *Wild type (gray body, normal  wings)*
+
+- *Double mutant (black body, vestigial  wings)*
+
+- *F1 dihybrid testcross*
+
+- *Wild-type F1 dihybrid (gray body, normal  wings)*
+
+- *Homozygous recessive (black body, vestigial  wings)*
+
+- *_b_**+* *_b_**+* *_vg_**+* *_vg_**+*
+
+- *_b_**+* *_b_* *_vg_**+* *_vg_*
+
+- *_b_* *_b_* *_vg_* *_vg_*
+
+- *_b_* *_b_* *_vg_* *_vg_*
+
+- Morgan mated true-breeding P (parental) generation flies to produce heterozygous F1 dihybrids all of which are wild-type in appearance.
+
+@bottom
+
+- He then mated wild-type F1 dihybrid females with homozygous recessive males.
+- This testcross will reveal the genotype of the eggs made by the dihybrid female.
+
+=== layout: one-panel
+
+
+@body
+
+- Morgan found that body color and wing size are usually inherited together in specific combinations (parental phenotypes)
+- He noted that these [*genes do not assort independently*]{underline=true}, and reasoned that they were on the same chromosome
+
+=== layout: one-panel
+@replaceme
+
+# Figure 15.UN01
+
+@body
+
+![Slide image 11](assets/lect08b-chap8-linked_genes/image_011.jpg)
+
+- *Most offspring*
+
+- *F1 dihybrid female and homozygous*
+- *recessive male in testcross*
+
+- *or*
+
+- *_b_**+* *_vg_**+*
+
+- *_b_**+* *_vg_**+*
+
+- *_b_*  *_vg_*
+
+- *_b_*  *_vg_*
+
+- *_b_*  *_vg_*
+
+- *_b_*  *_vg_*
+
+- *_b_*  *_vg_*
+
+- *_b_*  *_vg_*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/lect08b-chap8-linked_genes/image_012.jpg)
+
+Native reconstruction needed: 24 positioned diagram labels.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- [*Results*]{color=#FF6600}
+
+- *PREDICTED RATIOS*
+
+- *Genes on the same chromosome\:*
+
+- *Genes on different chromosomes\:*
+
+- *1       \:      1      \:      1      \:       1*
+
+- *1       \:      1      \:      0      \:        0*
+
+- *965     \:    944    \:    206    \:     185*
+
+- Both predictions are wrong...
+
+=== layout: one-panel
+
+# *Conclusion*
+
+@body
+
+- Since most offspring had a parental (P generation) phenotype, Morgan concluded that the genes for body color and wing size are genetically linked on the same chromosome.
+- However, the production of a relatively small number of offspring with non-parental phenotypes indicated that some mechanism occasionally breaks the linkage between specific alleles of genes on the same chromosome.
+
+=== layout: one-panel
+
+# *Recombination of Linked Genes\: Crossing Over*
+
+@body
+
+- Morgan discovered that genes can be linked, but the linkage was incomplete, because some recombinant phenotypes were observed
+- He proposed that some process must occasionally break the physical connection between genes on the same chromosome
+- That mechanism was the [*crossing over*]{underline=true} of homologous chromosomes
+
+=== layout: one-panel
+
+# *Crossing over*
+
+@body
+
+- Takes place in prophase in meiosis I after chromosomes have duplicated
+- Results in reciprocal exchange of equal and corresponding segments of homologous chromosomes
+- Sites of crossing over are random along the length of chromosome pairs
+
+=== layout: one-panel
+
+# *Homologous chromosomes can undergo extensive crossing over*
+
+@body
+
+![Slide image 13](assets/lect08b-chap8-linked_genes/image_013.jpg)
+
+=== layout: one-panel
+@replaceme
+
+# Figure 13.9b
+
+@body
+
+![Slide image 14](assets/lect08b-chap8-linked_genes/image_014.jpg)
+
+- *Crossover*
+
+- *3*
+
+- *4*
+
+- *Crossover*
+
+- *Chiasmata*
+
+![Slide image 15](assets/lect08b-chap8-linked_genes/image_015.png)
+
+- Holliday junction
+
+=== layout: one-panel
+@replaceme
+
+# Figure 13.12-5
+
+@body
+
+![Slide image 16](assets/lect08b-chap8-linked_genes/image_016.jpg)
+
+Native reconstruction needed: 16 positioned diagram labels.
+
+=== layout: two-panels
+
+# *Crossing-over produces recombinant gametes*
+
+@left
+
+![Slide image 17](assets/lect08b-chap8-linked_genes/image_017.jpg)
+
+@right
+
+- (A) Alleles in the same chromosome remain together when there is no crossing over between them.
+- (B) When there is crossing over, the result is two recombinant and two non-recombinant products, because the exchange is between only two of the four chromatids.
+
+=== layout: one-panel
+
+# *Concepts in Genetic Linkage*
+
+@body
+
+- *Parental type* - allele configuration is the same as the parents in a cross
+  - Cis combination in parents is observed in offspring
+- *Recombinant type* &#8211; *non-parental type* - allele combinations different from those in the parental chromosomes
+  - Cis combination in parents, but we observe in trans offspring
+- *Syntenic* - refers to genes in the same chromosome regardless of whether they show independent assortment or linkage
+
+=== layout: one-panel
+@replaceme
+
+# Figure 15.10a
+
+@body
+
+![Slide image 18](assets/lect08b-chap8-linked_genes/image_018.jpg)
+
+- *P generation (homozygous)*
+
+- *Wild type (gray body,  normal wings)*
+
+- *_b_**+*  *_vg_**+*
+
+- *Double mutant (black body, vestigial wings)*
+
+- *Wild-type F1  dihybrid (gray body, normal wings)*
+
+- *_b_**+*  *_vg_**+*
+
+- *_b_**+*  *_vg_**+*
+
+- *_b_*   *_vg_*
+
+- *_b_*   *_vg_*
+
+- *_b_*  *_vg_*
+
+=== layout: one-panel
+@replaceme
+
+# Figure 15.10b
+
+@body
+
+![Slide image 19](assets/lect08b-chap8-linked_genes/image_019.jpg)
+
+Native reconstruction needed: 30 positioned diagram labels.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect08b-chap8-linked_genes/image_020.png)
+
+- recombinant type
+
+- recombinant type
+
+- parental type
+
+- parental type
+
+=== layout: one-panel
+@replaceme
+
+# Figure 15.UN02
+
+@body
+
+![Slide image 21](assets/lect08b-chap8-linked_genes/image_021.jpg)
+
+Native reconstruction needed: 13 positioned diagram labels.
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect08b-chap8-linked_genes/image_022.jpg)
+
+=== layout: one-panel
+
+# *Mendel&#8217;s Four Principles of Heredity*
+
+@body
+
+- (1) Principles of Paired Factors
+  - Each organism has two alleles that make up the genotype for a given trait
+  - [NOT ALL ORGANISMS ARE DIPLOID]{color=#CC00CC}
+  - [SEX-LINKED GENES ARE HAPLOID for MALES]{color=#CC00CC}
+- (2) Principle of Dominance
+  - In each genotype there is a dominant allele, the phenotype is determined by dominant allele
+  - [CODOMINANCE, INCOMPLETE DOMINANCE and EPISTASIS]{color=#CC00CC}
+- (3) Law of Segregation or Law of Purity of Gametes
+  - In sexual reproduction, each parent contributes just one of their alleles to its offspring
+  - [MALES CONTRIBUTE EITHER ONE OR NO ALLELE IN MAMMALS]{color=#CC00CC}
+- (4) Law of Independent Assortment
+  - different pairs of alleles are passed onto the offspring independently of each other.
+  - inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
+  - [EXCEPT WHEN GENES ARE ON THE SAME CHROMOSOME]{color=#CC00CC}
+
+=== layout: theend
+
+# THE END

@@ -212,7 +212,7 @@ def shared_footer_sources(
 def emit_components(
 	planned: PlannedSlide,
 ) -> tuple[list[EmissionComponent], list[str]]:
-	"""Project each planned component without combining text, tables, and images."""
+	"""Project planned components, retaining proven mixed vertical flows in one cell."""
 	if planned.plan is None:
 		raise ValueError("component emission requires a visible slide plan")
 	components: list[EmissionComponent] = []
@@ -822,7 +822,7 @@ def _render_planned_slide(
 	planned: PlannedSlide,
 	is_first: bool,
 ) -> tuple[list[str], str, list[str]]:
-	"""Emit one geometry plan, never combining text and imagery in one cell."""
+	"""Emit one geometry plan with mixed flows or separate cells as the relations require."""
 	if planned.plan is None:
 		raise ValueError("slide has no import plan")
 	data = planned.data

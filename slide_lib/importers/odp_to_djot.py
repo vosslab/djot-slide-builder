@@ -13,7 +13,11 @@ import tempfile
 # local repo modules
 import slide_lib.djot_lint as djot_lint
 import slide_lib.djot_parser
+import slide_lib.capacity_report
 import slide_lib.image_area_audit
+import slide_lib.layout_engine
+import slide_lib.native_model
+import slide_lib.presentation_theme
 import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.image_annotations as image_annotations
@@ -168,6 +172,42 @@ def validate_staged_djot(staging_djot: pathlib.Path) -> None:
 
 
 #============================================
+def mark_mixed_flow_replacements(staging_djot: pathlib.Path,
+		records: list[dict[str, object]]) -> None:
+	"""Keep unreadable mixed flows explicitly marked in both imported source and report."""
+	deck = slide_lib.djot_parser.parse_deck(staging_djot)
+	theme = slide_lib.presentation_theme.default_theme(deck.color_theme)
+	lines = staging_djot.read_text(encoding="utf-8").splitlines()
+	insertions = []
+	for index, source in enumerate(deck.slides):
+		if not any(any(isinstance(block, slide_lib.native_model.Image) for block in cell.blocks)
+				and any(isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock))
+					for block in cell.blocks)
+				and not any(isinstance(block, slide_lib.native_model.Table) for block in cell.blocks)
+				for cell in source.cells):
+			continue
+		try:
+			result = slide_lib.layout_engine.compile_layout_deck(dataclasses.replace(deck,
+				slides=(dataclasses.replace(source, hidden=False),)), theme)
+			diagnostics = result.capacity_diagnostics
+		except slide_lib.capacity_report.PhysicalCapacityError as error:
+			diagnostics = (error.diagnostic,)
+		failed = sorted({diagnostic.slot for diagnostic in diagnostics
+			if diagnostic.cause is slide_lib.capacity_report.CapacityCause.MIXED_READABILITY})
+		if not failed:
+			continue
+		reason = (f"mixed text/images cannot fit readability bounds in {', '.join(failed)}; "
+			"split this slide into separate slides or panels")
+		records[index]["review_reasons"] = sorted(set((*records[index]["review_reasons"], reason)))
+		if not source.replaceme:
+			insertions.append(source.location.line)
+	for line in reversed(insertions):
+		lines.insert(line, "@replaceme")
+	if insertions:
+		staging_djot.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+#============================================
 def publish_conversion(staging_djot: pathlib.Path, staging_assets: pathlib.Path,
 		output_path: pathlib.Path) -> None:
 	"""Publish assets first, then use the Djot file as the commit marker."""
@@ -220,6 +260,7 @@ def convert_odp(input_path: pathlib.Path, output_path: pathlib.Path) -> Conversi
 			direct_record(record, source_slide)
 		staging_djot = staging_root / output_path.name
 		staging_djot.write_text(djot, encoding="utf-8")
+		mark_mixed_flow_replacements(staging_djot, records)
 		published_media_count = prune_staged_media(staging_djot, staging_assets, output_path.stem)
 		report = {
 			"source": input_path.name,

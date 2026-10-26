@@ -210,13 +210,14 @@ def test_title_only_body_uses_ordinary_source_ordered_objects(tmp_path: pathlib.
 	assert tuple(slot.placeholder_kind for slot in slide.slots) == \
 		(slide_lib.layout_primitives.PlaceholderKind.TITLE, slide_lib.layout_primitives.PlaceholderKind.NONE)
 	assert slide.objects[0].placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.TITLE
-	assert tuple(type(item.content) for item in slide.objects[1:]) == \
+	body_objects = tuple(item for item in slide.objects[1:] if item.object_id != "replaceme-watermark")
+	assert tuple(type(item.content) for item in body_objects) == \
 		(slide_lib.layout_content.TextContent, slide_lib.layout_content.TextContent,
 			slide_lib.layout_content.PictureContent)
 	assert all(item.placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.NONE
-		for item in slide.objects[1:])
+		for item in body_objects)
 	title = slide.objects[0]
-	assert all(item.rectangle.y > title.rectangle.y + title.rectangle.height for item in slide.objects[1:])
+	assert all(item.rectangle.y > title.rectangle.y + title.rectangle.height for item in body_objects)
 
 
 def test_title_only_body_reports_source_located_capacity(tmp_path: pathlib.Path) -> None:
@@ -551,3 +552,47 @@ def test_dark_slide_citation_retains_readable_editable_text(tmp_path: pathlib.Pa
 def test_citation_rejects_nonprose_before_export(tmp_path: pathlib.Path, content: str) -> None:
 	with pytest.raises(ValueError, match="@citation"):
 		compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n@citation\n\n" + content)
+
+
+def test_mixed_images_scale_independently_and_preserve_geometry(tmp_path: pathlib.Path) -> None:
+	"""Area selection preserves source order/aspects while allowing different image widths."""
+	PIL.Image.new("RGB", (1000, 200), "blue").save(tmp_path / "wide.png")
+	PIL.Image.new("RGB", (1000, 350), "green").save(tmp_path / "diagram.png")
+	source = ("=== layout: one-panel\n@body\n![Question](wide.png)\n\n"
+		"- How many different ways can we arrange the offspring?\n\n![Diagram](diagram.png)\n")
+	result = compile_source(tmp_path, source)
+	page = result.plan.slides[0]
+	assert not result.capacity_diagnostics
+	assert [type(item.content) for item in page.objects] == [
+		slide_lib.layout_content.PictureContent, slide_lib.layout_content.TextContent,
+		slide_lib.layout_content.PictureContent]
+	pictures = [item.content.placement.displayed_rectangle for item in page.objects
+		if isinstance(item.content, slide_lib.layout_content.PictureContent)]
+	assert pictures[0].width != pytest.approx(pictures[1].width)
+	assert pictures[0].width / pictures[0].height == pytest.approx(5)
+	assert pictures[1].width / pictures[1].height == pytest.approx(1000 / 350)
+	font = page.objects[1].content.paragraphs[0].typography.selected_size_pt
+	assert font * 2 == int(font * 2)
+	body = page.slots[0].rectangle
+	assert all(item.rectangle.y >= body.y and
+		item.rectangle.y + item.rectangle.height <= body.y + body.height + 1e-8
+		for item in page.objects)
+	assert compile_source(tmp_path, source) == result
+
+
+def test_mixed_content_starvation_requires_replacement_and_split(tmp_path: pathlib.Path) -> None:
+	"""An image cannot silently collapse to accommodate an otherwise representable text block."""
+	PIL.Image.new("RGB", (1000, 250), "blue").save(tmp_path / "question.png")
+	source = ("=== layout: one-panel\n@body\n![Question](question.png)\n\n" +
+		"\n".join("- " + "offspring probability " * 7 for _ in range(16)) + "\n")
+	result = compile_source(tmp_path, source)
+	diagnostic = next(item for item in result.capacity_diagnostics
+		if item.cause is slide_lib.capacity_report.CapacityCause.MIXED_READABILITY)
+	assert "@replaceme" in diagnostic.message() and "Split" in diagnostic.message()
+	assert "split" in slide_lib.capacity_report.format_diagnostic(diagnostic, tmp_path)
+	page = result.plan.slides[0]
+	assert page.objects[-1].object_id == "replaceme-watermark"
+	assert any("Split" in note.text for note in page.notes)
+	assert (tmp_path / "specimen.djot").read_text() == source
+	marked = compile_source(tmp_path, source.replace("\n", "\n@replaceme\n", 1))
+	assert sum(item.object_id == "replaceme-watermark" for item in marked.plan.slides[0].objects) == 1

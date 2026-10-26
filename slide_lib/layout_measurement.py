@@ -2,6 +2,7 @@
 
 import collections.abc
 import dataclasses
+import itertools
 import math
 
 import PIL.Image
@@ -774,6 +775,35 @@ class MixedFlowAllocation:
 	size_pt: float
 	blocks: tuple[slide_lib.native_model.Block, ...]
 	heights: tuple[float, ...]
+	occupied_area: float
+
+
+def _image_area_heights(natural: tuple[float, ...], maximum: tuple[float, ...],
+		available: float, floor_ratio: float) -> tuple[float, ...] | None:
+	"""Maximize displayed image area at vertices of the bounded height constraint."""
+	minimum = tuple(height * floor_ratio for height in maximum)
+	if available < sum(minimum) - 1e-9:
+		return None
+	if available >= sum(maximum):
+		return maximum
+	best: tuple[float, ...] | None = None
+	best_score = -1.0
+	# A convex maximum has at most one image between bounds; the slide contract caps images at six.
+	for free in range(len(natural)):
+		others = tuple(index for index in range(len(natural)) if index != free)
+		for bounds in itertools.product((False, True), repeat=len(others)):
+			heights = list(minimum)
+			for index, upper in zip(others, bounds):
+				heights[index] = maximum[index] if upper else minimum[index]
+			remaining = available - sum(heights[index] for index in others)
+			if remaining < minimum[free] - 1e-9 or remaining > maximum[free] + 1e-9:
+				continue
+			heights[free] = max(minimum[free], min(maximum[free], remaining))
+			candidate = tuple(heights)
+			score = sum(height * height / full for height, full in zip(candidate, natural))
+			if (score, candidate) > (best_score, best or ()):
+				best, best_score = candidate, score
+	return best
 
 
 #============================================
@@ -782,8 +812,10 @@ def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		images: tuple[slide_lib.native_model.Image, ...],
 		rectangle: slide_lib.layout_primitives.LogicalRectangle, size_pt: float,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: MeasurementSession) -> MixedFlowAllocation | None:
-	"""Allocate floor-safe text then proportionally scale images into every remaining pixel."""
+		session: MeasurementSession, *, review: bool = False) -> MixedFlowAllocation | None:
+	"""Optimize independent image areas, relaxing reduction bounds only for a marked preview."""
+	if not review and size_pt < theme.body_floor_size_pt:
+		return None
 	blocks = tuple(sorted(text_blocks + images, key=lambda block: block.location.line))
 	text_heights = {id(block): text_height(items_for((block,)), size_pt, rectangle.width, theme, session)
 		for block in text_blocks}
@@ -793,13 +825,23 @@ def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		12 * (len(blocks) - 1) - sum(text_heights.values())
 	if available <= 0:
 		return None
-	scale = min(1.0, available / sum(natural_image_heights.values()))
-	heights = tuple(natural_image_heights[id(block)] * scale if isinstance(block,
-		slide_lib.native_model.Image) else text_heights[id(block)] for block in blocks)
-	if not text_frame_fits(sum(heights) + 12 * (len(blocks) - 1),
-			text_frame_measurement(rectangle), theme):
+	natural = tuple(natural_image_heights[id(image)] for image in images)
+	maximum = tuple(min(height, rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme))
+		for height in natural)
+	floor = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT if review else theme.body_floor_size_pt
+	image_heights = _image_area_heights(natural, maximum, available,
+		floor / theme.ordinary_body_size_pt)
+	if image_heights is None:
 		return None
-	return MixedFlowAllocation(size_pt, blocks, heights)
+	allocated = {id(image): height for image, height in zip(images, image_heights)}
+	heights = tuple(allocated[id(block)] if isinstance(block,
+		slide_lib.native_model.Image) else text_heights[id(block)] for block in blocks)
+	if sum(heights) + 12 * (len(blocks) - 1) + point_height(TEXT_FRAME_CLEARANCE_PT, theme) > \
+			rectangle.height + 1e-9:
+		return None
+	area = rectangle.width * (sum(text_heights.values()) + sum(
+		height * height / full for height, full in zip(image_heights, natural)))
+	return MixedFlowAllocation(size_pt, blocks, heights, area)
 
 
 def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.layout_model.UnsupportedSourceFact, ...]:

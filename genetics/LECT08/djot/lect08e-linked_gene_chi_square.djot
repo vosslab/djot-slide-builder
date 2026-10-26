@@ -1,0 +1,366 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 08E
+
+## Chi Square for Linked Genes
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## October 27, 2026
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 1.
+
+=== layout: section
+
+# Are Two Genes Linked or Unlinked?
+
+=== layout: section
+
+# Chi-Square Test for Linked Genes
+
+=== layout: one-panel
+
+# *Linked or Unlinked?*
+
+@body
+
+- If genes are unlinked and assorting independently, the phenotypic ratio of offspring from an F~1~ testcross is expected to be 1\:1\:1\:1.
+- If the two genes are linked, however, the observed phenotypic ratio of the offspring will not match that ratio.
+- Given that random fluctuations in the data do occur, how much can the number deviate from the expected numbers for us to conclude that they are different?
+
+=== layout: one-panel
+
+# *Chi-Square (&chi;^2^) Test*
+
+@body
+
+- Compares an observed data set to an expected data set predicted by a hypothesis and measures the discrepancy between the two.
+  - Thus, determining a &#8220;goodness of fit&#8221;
+- If the discrepancy between the observed and expected data sets is so large that it is unlikely to have occurred by random fluctuation, we say there is statistically significant evidence against the hypothesis.
+  - or, more specifically, evidence for the genes being linked.
+
+=== layout: one-panel
+
+# *Chi-square analysis can be used to test for linkage*
+
+@body
+
+![Slide image 1](assets/lect08e-linked_gene_chi_square/image_001.jpg)
+
+=== layout: two-panels
+
+# *Cosmos Plant*
+
+@left
+
+![Slide image 2](assets/lect08e-linked_gene_chi_square/image_002.jpg)
+
+@right
+
+- In cosmos plants, purple stem (A) is dominant to green stem (a), and short petals (B) is dominant to long petals (b).
+- In a simulated cross, AABB plants were crossed with aabb plants to generate F~1~ dihybrids (AaBb),
+- which were then test-crossed (AaBb \* aabb) total of 900 offspring plants were scored for stem color and flower petal length.
+
+=== layout: one-panel
+@replaceme
+
+# Figure 15.UN03a
+
+@body
+
+![Slide image 3](assets/lect08e-linked_gene_chi_square/image_003.jpg)
+
+- *Offspring from test- cross of* *_AaBb_* *(F~1~) &#215;* *_aabb_*
+
+- *Expected ratio if the genes are unlinked*
+
+- *Expected number of offspring (of 900)*
+
+- *Observed number of offspring (of 900)*
+
+- *Purple stem/short petals (**_A_**&#8211;**_B_**&#8211;)*
+
+- *Green stem/short petals (**_aaB_**&#8211;)*
+
+- *Purple stem/long petals (**_A_**&#8211;**_bb_**)*
+
+- *Green stem/long petals (**_aabb_**)*
+
+- *1                      1                     1                      1*
+
+- *220                  210                 231                  239*
+
+- *???                  ???                 ???                  ???*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- *PREDICTED RATIOS*
+
+- *Genes on the same chromosome\:*
+
+- *Genes on different chromosomes\:*
+
+- *1       \:      1      \:      1      \:       1*
+
+- *1       \:      1      \:      0      \:        0*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 3](assets/lect08e-linked_gene_chi_square/image_003.jpg)
+
+- *Offspring from test- cross of* *_AaBb_* *(F~1~) &#215;* *_aabb_*
+
+- *Expected ratio if the genes are unlinked*
+
+- *Expected number of offspring (of 900)*
+
+- *Observed number of offspring (of 900)*
+
+- *Purple stem/short petals (**_A_**&#8211;**_B_**&#8211;)*
+
+- *Green stem/short petals (**_aaB_**&#8211;)*
+
+- *Purple stem/long petals (**_A_**&#8211;**_bb_**)*
+
+- *Green stem/long petals (**_aabb_**)*
+
+- *1                      1                     1                      1*
+
+- *220                  210                 231                  239*
+
+- *225                  225                 225                   225*
+
+- Genes Unlinked
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) |  | 220 |  |  |  |
+| (aaB&#8722;) |  | 210 |  |  |  |
+| (A&#8722;bb) |  | 231 |  |  |  |
+| (aabb) |  | 239 |  | |  |
+|  |  |  |  | *&chi;^2^ = Sum* |  |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 11.
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 225 | 220 |  |  |  |
+| (aaB&#8722;) | 225 | 210 |  |  |  |
+| (A&#8722;bb) | 225 | 231 |  |  |  |
+| (aabb) | 225 | 239 |  | |  |
+|  |  |  |  | *&chi;^2^ = Sum* |  |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 12.
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 225 | 220 | &#8211;5 |  |  |
+| (aaB&#8722;) | 225 | 210 | &#8211;15 |  |  |
+| (A&#8722;bb) | 225 | 231 | 6 |  |  |
+| (aabb) | 225 | 239 | 14 | |  |
+|  |  |  |  | *&chi;^2^ = Sum* |  |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 13.
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 225 | 220 | &#8211;5 | 25 |  |
+| (aaB&#8722;) | 225 | 210 | &#8211;15 | 225 |  |
+| (A&#8722;bb) | 225 | 231 | 6 | 36 |  |
+| (aabb) | 225 | 239 | 14 | 196 |  |
+|  |  |  |  | *&chi;^2^ = Sum* |  |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 14.
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 225 | 220 | &#8211;5 | 25 | 0.111 |
+| (aaB&#8722;) | 225 | 210 | &#8211;15 | 225 | 1.000 |
+| (A&#8722;bb) | 225 | 231 | 6 | 36 | 0.160 |
+| (aabb) | 225 | 239 | 14 | 196 | 0.871 |
+|  |  |  |  | *&chi;^2^ = Sum* |  |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 15.
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 225 | 220 | &#8211;5 | 25 | 0.111 |
+| (aaB&#8722;) | 225 | 210 | &#8211;15 | 225 | 1.000 |
+| (A&#8722;bb) | 225 | 231 | 6 | 36 | 0.160 |
+| (aabb) | 225 | 239 | 14 | 196 | 0.871 |
+|  |  |  |  | *&chi;^2^ = Sum* | 2.142 |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 16.
+
+=== layout: one-panel
+
+# *Chi-Square (&chi;^2^) Test*
+
+@body
+
+- The &chi;^2^ value means nothing on its own.
+- It is used to find the probability that the observed data set could have resulted from random fluctuations.
+  - A low probability suggests that the observed data are not consistent with the hypothesis and the thus the hypothesis should be rejected.
+- A standard cutoff point used by biologists is a probability of 0.05 (5%). If the probability corresponding to the &chi;^2^ value is 0.05 or less, the differences between observed and expected values are considered statistically significant and the hypothesis ([that the genes are unlinked]{color=red}) should be rejected.
+  - Likewise if the probability is above 0.05, the results are not statistically significant; the observed data are consistent with the hypothesis.
+
+=== layout: one-panel
+
+# *df = 3*
+
+@body
+
+![Slide image 5](assets/lect08e-linked_gene_chi_square/image_005.png)
+
+=== layout: one-panel
+@replaceme
+
+# *df = 3*
+
+@body
+
+![Slide image 5](assets/lect08e-linked_gene_chi_square/image_005.png)
+
+- As the chi-squared statistic of 2.14 is [less]{color=#FF00CC} than critical value of 7.82, we [fail to reject]{color=#FF00CC} the null hypothesis and conclude that the genes are [unlinked]{color=#FF00CC}.
+
+- *&#61539;2 = Sum*
+
+- *2.142*
+
+=== layout: one-panel
+
+
+@body
+
+- What if you believe them to be linked despite the results?
+- What do you do?
+- Collect more data
+
+=== layout: one-panel
+
+# Figure 15.UN03b
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 225 | 220 |  |  |  |
+| (aaB&#8722;) | 225 | 210 |  |  |  |
+| (A&#8722;bb) | 225 | 231 |  |  |  |
+| (aabb) | 225 | 239 |  | |  |
+|  |  |  |  | *&chi;^2^ = Sum* |  |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 21.
+
+=== layout: stacked-panels
+@replaceme
+
+# *Pretend we got the exact same ratios with 10 times the data*
+
+@top
+
+![Slide image 5](assets/lect08e-linked_gene_chi_square/image_004.jpg)
+
+Native reconstruction needed: 19 positioned diagram labels.
+
+@bottom
+
+- Under unlinked conditions we would expect the numbers to come closer to the 2250 number
+
+=== layout: one-panel
+
+@body
+
+{table-group="cosmos-chi-square"}
+| Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
+| --- | --- | --- | --- | --- | --- |
+| (A&#8722;B&#8722;) | 2250 | 2200 | &#8211;50 | 2,500 | 1.11 |
+| (aaB&#8722;) | 2250 | 2100 | &#8211;150 | 22,500 | 10.00 |
+| (A&#8722;bb) | 2250 | 2310 | 60 | 3,600 | 1.60 |
+| (aabb) | 2250 | 2390 | 140 | 19,600 | 8.71 |
+|  |  |  |  | *&chi;^2^ = Sum* | 21.42 |
+
+@notes
+Source: lect08e-linked_gene_chi_square.odp, slide 23.
+
+=== layout: one-panel
+@replaceme
+
+# *df = 3*
+
+@body
+
+![Slide image 5](assets/lect08e-linked_gene_chi_square/image_005.png)
+
+- As the chi-squared statistic of 21.4 is [greater]{color=#FF00CC} than critical value of 7.82, we [reject]{color=#FF00CC} the null hypothesis and conclude that the genes are [linked]{color=#FF00CC}.
+
+- *&#61539;2 = Sum*
+
+- *21.42*
+
+=== layout: theend
+
+# THE END

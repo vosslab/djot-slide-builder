@@ -212,3 +212,28 @@ def test_direct_conversion_rolls_back_private_staging_after_validation_failure(
 	assert not (tmp_path / "lecture.djot").exists()
 	assert not (tmp_path / "assets").exists()
 	assert not any(path.name.startswith(".odp_to_djot_") for path in tmp_path.iterdir())
+
+
+def test_import_marks_unreadable_mixed_flows_without_losing_existing_reasons(tmp_path: pathlib.Path) -> None:
+	"""Readable sequences stay unmarked; crowded visible/hidden sequences recommend splitting."""
+	Image.new("RGB", (1000, 200), "blue").save(tmp_path / "question.png")
+	readable = "=== layout: one-panel\n@body\n![Question](question.png)\n\nShort caption.\n"
+	crowded = ("=== layout: one-panel\n@body\n![Question](question.png)\n\n" +
+		"\n".join("- " + "offspring probability " * 7 for _ in range(16)) + "\n")
+	path = tmp_path / "imported.djot"
+	original = readable + "\n" + crowded + "\n" + crowded.replace("\n", "\nhidden: true\n", 1)
+	path.write_text(original, encoding="utf-8")
+	records = [{"review_reasons": []}, {"review_reasons": []},
+		{"review_reasons": ["source animation requires review"]}]
+	odp_to_djot.mark_mixed_flow_replacements(path, records)
+	deck = slide_lib.djot_parser.parse_deck(path)
+	assert tuple(slide.replaceme for slide in deck.slides) == (False, True, True)
+	assert deck.slides[2].hidden
+	assert not records[0]["review_reasons"]
+	assert any("split this slide" in reason for reason in records[1]["review_reasons"])
+	assert "source animation requires review" in records[2]["review_reasons"]
+	marked = path.read_text()
+	assert marked.replace("@replaceme\n", "") == original
+	odp_to_djot.mark_mixed_flow_replacements(path, records)
+	assert path.read_text() == marked
+	assert len(records[2]["review_reasons"]) == 2

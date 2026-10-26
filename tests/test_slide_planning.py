@@ -1,6 +1,7 @@
 """Fast format-neutral planning coverage for the direct ODP import path."""
 
 # local repo modules
+import slide_lib.importers.djot_emitter as emitter
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.odp_to_djot as odp_to_djot
 import slide_lib.importers.slide_plan as slide_plan
@@ -68,3 +69,29 @@ def test_planner_preserves_a_unique_interior_label_with_its_image() -> None:
 
 	assert plan.content_region is not None
 	assert plan.content_region.kind == "single-interior-overlay-label"
+
+
+def test_vertical_mixed_sequence_shares_one_panel_before_caption_pairing() -> None:
+	"""An image, caption-like text, and next image form one sequence rather than equal panels."""
+	text = slide_plan.SourceTextRegion(
+		((0, (source_model.TextRun("How many arrangements?"),)),),
+		geometry.NormalizedBounds(.10, .32, .90, .40), False, 0,
+		source_kind="text-box", source_ordinal=2,
+	)
+	images = (
+		slide_plan.SourceImageRegion("question.png", geometry.NormalizedBounds(.05, .10, .95, .30),
+			"picture", 1),
+		slide_plan.SourceImageRegion("diagram.svg", geometry.NormalizedBounds(.10, .45, .90, .85),
+			"picture", 3),
+	)
+	plan = slide_plan.plan_slide((text,), images)
+	assert len(plan.slots) == 1 and plan.slots[0].flows_in_source_order
+	assets = tuple(source_model.ImageAsset(0, 0, 10, 10, image.asset_reference, image.asset_reference)
+		for image in images)
+	for reasons in ((), ("source animation requires review",)):
+		data = source_model.SlideData(1, False, (), (), assets, (), reasons)
+		source, records = emitter.render_planned_djot([emitter.PlannedSlide(data, plan)])
+		assert records[0]["layout"] == "one-panel"
+		assert source.index("question.png)") < source.index("How many arrangements?") < source.index("diagram.svg)")
+		assert ("@replaceme" in source) == bool(reasons)
+		assert records[0]["review_reasons"] == list(reasons)

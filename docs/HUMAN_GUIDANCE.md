@@ -154,6 +154,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Track significant image shrinkage during conversion by comparing displayed image area as a
   percentage of the slide and eventually flagging excessive changes. Consider automatic trimming.
   Audit code is welcome now; do not create new special layouts to solve shrinkage today.
+- For mixed text/image scaling, evaluate font candidates at half-point precision and allow
+  each image an independent scale. Compare actual occupied panel area; the instructor prefers
+  the larger-area scale-sum result for LECT07B slide 24 over the max-min result.
+- If mixed-content readability constraints cannot be met, require `@replaceme` and recommend
+  splitting the slide rather than accepting an unreadable arrangement.
+- Treat mixed text/image flow within one panel as a powerful conversion strategy: several
+  objects can share a region, rather than receiving one panel each. LECT07B slide 24's PNG,
+  sentence, and SVG work better together in one panel than split across stacked panels.
+  Document this strategy and teach it to the converter; consider it before marking a
+  sequential-content layout for replacement, while preserving meaningful spatial relationships.
 - Keep text as glyphs rather than pixels when converting GDI/metafile figures. Prefer a
   vector-preserving route such as SVG over a low-resolution raster preview.
 
@@ -179,7 +189,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Concise slides do not mean only four words per line. I want students to listen during class,
   but complete text-heavy slides that I skip can help them study afterward. Include those
   explanations in the slides students receive, not only in speaker notes.
-- Every content deck (B-H) should ideally use: title, learning objectives, optional new jargon
+- Every content deck (B-H) should use: title, required learning objectives, optional new jargon
   definitions, opening section heading, teaching content, summary, and a separate THE END.
   Without a vocabulary slide, put the opening section heading on slide 3.
 - Use dedicated colors for addition and multiplication throughout Lecture 05 so students can
@@ -262,6 +272,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Include the latest Stump the Vibe Coder podcast episode after the `lect##a-` YouTube slide.
   Make this a semi-automated process reusable across lectures, with the episode thumbnail,
   title, and visible link in a `big-image` layout.
+- Every StVC slide must link to both the episode video and the GitHub Pages game or tool
+  so students can try it. Use `big-image` with three lines in the caption box: shorter title,
+  `Watch the Video: <URL>`, and `Play the Game: <URL>`. Format titles as `Stump the Vibe Coder #36: Bad Cell Day
+  -- Two Drugs, One Keyboard` (with an em dash); retain the episode subtitle and omit the
+  repeated YouTube SEO series suffix. Do not link GitHub repositories. Citations are for a single line.
 - Use the 2026 announcements as canonical and update them for the current lecture week.
 - Use properly typeset, stacked fractions (`\frac{a}{b}`) in equations rather than slash
   fractions. Use the standard binomial coefficient (`\binom{n}{k}`), not `C(n,k)`.
@@ -291,19 +306,30 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Preserve teaching voice
 
-- The goal is to standardize existing slides so they look uniform. Agents may standardize
-  layout, typography, spacing, colors, and reusable slide formats. Content decisions belong
-  to the instructor: wording, examples, explanations, sequence, and additions or removals
-  require an explicit request. Report suspected content errors for the instructor to decide;
-  do not silently correct or rewrite them.
+- When converting ODP slides to Djot, preserve approximately 98% of the original slide prose,
+  allowing minor grammatical corrections and clarity improvements. Maintain the original
+  author's voice, wording, and instructional content. Treat this as an approximate preservation
+  target for existing prose, with required instructional additions considered separately.
 
-- Do not add content to the instructor's slides. Added material usually makes them worse.
-  Conversion preserves authored content; changes to wording or content require an explicit
-  request. Do not invent learning objectives, summaries, questions, explanations, or slogans.
+- Managers must ensure that each converted lecture deck includes learning objectives and
+  summary slides. Preserve existing objectives and summaries where present; create missing
+  ones from the lecture's existing instructional content, following
+  [the pedagogical slide style guide](PEDAGOGICAL_SLIDE_STYLE_GUIDE.md). Use specific,
+  student-centered objectives on slide 2 and a closing summary immediately before the separate
+  THE END slide. These source-grounded additions are part of conversion and are authorized
+  without a separate request.
 
-- Preserve the instructor's original question wording and explanations during conversion.
-  Do not add prompts such as "Explain your reasoning before calculating" or the expression
-  "A run of girls does not make a boy due."
+- Standardize layout, typography, spacing, colors, and reusable slide formats while retaining
+  the original teaching substance. Preserve the lecture's examples, questions, explanations,
+  scientific meaning, and relative sequence of existing content. Ground missing instructional
+  components in that content and express them in the author's voice. Refer substantive content
+  changes and suspected scientific errors to the instructor for a decision.
+
+- Keep question wording and explanations substantially intact, making minor grammar or clarity
+  improvements where helpful while preserving the original task and instructional intent.
+
+- For Genetics Lecture 08 conversion, apply this prose-preservation policy and try the existing
+  built-in layouts; use `@replaceme` when they cannot faithfully represent difficult source material.
 - Use the question-and-answer layout for multiple-choice questions. Emphasize changed
   conditions with more than color alone, and separate alternatives visually in word problems.
 

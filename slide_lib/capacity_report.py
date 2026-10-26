@@ -15,6 +15,7 @@ class CapacityCause(str, enum.Enum):
 	PARAGRAPH_LIST = "paragraph/list"
 	TABLE = "table"
 	MIXED_FLOW = "mixed-flow"
+	MIXED_READABILITY = "mixed-readability"
 	LOCAL_HEADING = "local-heading"
 	GEOMETRY_SLOT_CONSTRAINT = "geometry/slot-constraint"
 
@@ -46,6 +47,9 @@ class CapacityDiagnostic:
 			source = f"{self.location.path}: slide {self.slide_number}"
 			if self.slide_title:
 				source += f' "{self.slide_title}"'
+		if self.cause is CapacityCause.MIXED_READABILITY:
+			return (f"{source}: {where} cannot fit mixed text/images within readability bounds; "
+				"requires @replaceme. Split this slide into separate slides or panels.")
 		if self.required_size_pt is None:
 			if self.minimum_size_pt is None:
 				raise ValueError("physical capacity diagnostic has no safe minimum")
@@ -67,7 +71,9 @@ class PhysicalCapacityError(ValueError):
 			cause, minimum_size_pt)
 		where = f"{layout}/{slot}"
 		super().__init__(f"{location.path}:{location.line}: {where} cannot fit at the "
-			f"{minimum_size_pt:g} pt serializer-safe minimum")
+			f"{minimum_size_pt:g} pt serializer-safe minimum" +
+			("; requires @replaceme. Split this slide into separate slides or panels."
+			if cause is CapacityCause.MIXED_READABILITY else ""))
 
 
 #============================================
@@ -110,6 +116,9 @@ def format_diagnostic(diagnostic: CapacityDiagnostic, repo_root: pathlib.Path) -
 	else:
 		required = f"required={diagnostic.required_size_pt:g}pt"
 		minimum = ""
+	if diagnostic.cause is CapacityCause.MIXED_READABILITY:
+		return (f"{where}:{diagnostic.location.line} layout={diagnostic.layout} slot={diagnostic.slot} "
+			"cause=mixed-readability requires @replaceme; split this slide into separate slides or panels")
 	return (f"{where}:{diagnostic.location.line} layout={diagnostic.layout} slot={diagnostic.slot} "
 		f"{required} floor={diagnostic.floor_size_pt:g}pt{minimum} "
 		f"cause={diagnostic.cause.value}")

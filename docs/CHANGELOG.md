@@ -1,6 +1,79 @@
+## 2026-10-26
+
+### Additions and New Features
+
+- Document mixed text/image sequences as one-panel compositions, using LECT07B slide 24 as
+  the reference. Prefer the existing vertical-flow import path before caption-based panel
+  grouping; preserve comparative and spatial layouts plus unrelated replacement reasons.
+- Check mixed-flow import readability before publishing and add `@replaceme` with a split
+  recommendation to generated source/import reports when bounds cannot be met.
+- Convert Genetics LECT08B-F to native Djot with source assets and import provenance;
+  retain all 210 content slides, their sequence, and the hidden LECT08C slide.
+- Reuse the canonical 2026 announcements for LECT08A, updating lecture metadata and
+  date-relative assessment/homework colors from the instructor's schedule spreadsheet.
+  Preserve announcement prose, including the previous agenda and podcast selection.
+
+### Fixes and Maintenance
+
+- Update HUMAN_GUIDANCE conversion policy to preserve approximately 98% of existing prose,
+  permit minor grammar/clarity improvements, and require managers to add missing objectives
+  and summaries from lecture content using the pedagogical slide style guide. Replace the
+  conflicting prohibition on instructional additions with source-grounded positive guidance.
+- Optimize shared mixed text/image panels by occupied bounding-box area at half-point font
+  precision, with independent aspect-preserving image sizes and theme-derived reduction bounds.
+  Mark unreadable arrangements as replacement previews and recommend splitting through build
+  diagnostics and speaker notes; preserve authored sources and existing layouts.
+- Use existing title, panel, section, and closing layouts without rewriting teaching prose.
+  Reconstruct eight incremental chi-square tables as editable native tables, preserve their
+  source values and blanks, and restore three source answer reveals and allele superscripts.
+- Compare original and generated content-deck PDF pages; retain explicit replacement markers
+  for unresolved diagram geometry, table overlays, source masks, and animations. Record
+  slide-specific findings in genetics/LECT08/djot/LECT08_REVIEW.md.
+
+### Developer Tests and Notes
+
+- Pass 1,299 repository tests after the mixed-flow converter change. Re-plan original LECT07B-D
+  evidence and render five import examples: B24/B34/C12/C27 now use one panel without clearing
+  unrelated review reasons. Check a six-image mixed panel (192 candidate vertices per font).
+- Pass all 1,273 repository tests and 400 temporary exhaustive allocation comparisons; render
+  seven ODP/PDF specimens including LECT07B slides 24/25, starvation, tall, and multi-image cases.
+  Warm slide-25 compilation measures about 13 ms versus 2 ms for the previous rule. Test scope
+  is `pytest tests`; unrestricted discovery also enters unrelated OTHER_REPOS projects.
+- Plan shared mixed-content scaling with independent image sizes, half-point font
+  candidates, measured area comparisons, and an explicit readability-policy investigation
+  in docs/active_plans/active/mixed_content_scaling.md; no compiler behavior changed.
+- Specify replacement marking with a recommendation to split when mixed-content readability
+  constraints cannot be met, following instructor guidance.
+- Run strict native Djot lint and the six HG cover checks; export editable ODP and
+  LibreOffice-derived PDF outside the sandbox. Preserve original ODP/PDF inputs.
+- Restore missing local MathJax dependencies with the existing lockfile; use a writable npm
+  cache after the default cache rejects writes. No dependency manifest or compiler change.
+
 ## 2026-10-21
 
 ### Fixes and Maintenance
+
+- Add one graduate-student regression tutorial reminder slide from the supplied
+  Tutorial_Outline Markdown/PDF: four scenario/model-comparison bullets, an editable
+  coffee-and-exam SVG, and the outline's spreadsheet URL as a single-line citation.
+
+- Refine the eight tutorial SVGs with fried-chicken and broccoli hospital signs, small
+  Baby Butter Ball trophies on Fried Foods 1-2, and a shared bacterial jar emblem.
+  Preserve all statistical marks and labels. Validate SVG XML/IDs, native slide lint,
+  and the rebuilt ODP/PDF; visually inspect all eight illustrations at slide size.
+
+- Label the StVC caption links `Watch the Video:` and `Play the Game:` across existing
+  slides and the refresher, retaining the title and two links on three separate lines.
+
+- Revise all StVC slides and the refresher to put a shorter title, video URL, and playable
+  project URL on three lines inside the big-image caption box; reserve citations for one line.
+  Use the full series name and episode number, retaining the episode subtitle but dropping
+  the repeated YouTube SEO series suffix.
+
+- Update all 12 StVC announcement slides with video and playable GitHub Pages links in
+  `@citation`. Update the refresher to extract the project URL from the episode description
+  and reject missing or ambiguous destinations instead of linking a repository. Trim the
+  repeated series suffix from captions so episode titles fit above both links.
 
 - Expand each tutorial recall slide to four short story and comparison cues, retaining
   guide links without adding discussion questions or calculation instructions.

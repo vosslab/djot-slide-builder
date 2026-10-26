@@ -2,6 +2,7 @@
 
 import dataclasses
 
+import slide_lib.capacity_report
 import slide_lib.citation_layout
 import slide_lib.compilation_result
 import slide_lib.layout_builders
@@ -40,12 +41,19 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 			session.capacity_diagnostics[diagnostic_index] = dataclasses.replace(
 				session.capacity_diagnostics[diagnostic_index], slide_number=index + 1,
 				slide_title=title)
-		if source.replaceme:
+		replacement_diagnostics = tuple(diagnostic for diagnostic in
+			session.capacity_diagnostics[diagnostic_start:]
+			if diagnostic.cause is slide_lib.capacity_report.CapacityCause.MIXED_READABILITY)
+		if source.replaceme or replacement_diagnostics:
 			order = max((item.reading_order for item in page.objects), default=-1) + 1
 			z_index = max((item.z_index for item in page.objects), default=-1) + 1
 			watermark = slide_lib.layout_specialty_builders.replaceme_watermark(
 				source, theme, order, z_index, session)
 			page = dataclasses.replace(page, objects=(*page.objects, watermark))
+		if replacement_diagnostics:
+			page = dataclasses.replace(page, notes=(*page.notes, *(
+				slide_lib.layout_model.SpeakerNote(f"replacement-{number}", diagnostic.message())
+				for number, diagnostic in enumerate(replacement_diagnostics))))
 		identity = slide_lib.layout_model.SlideIdentity(f"slide-{index + 1}", index, source.location)
 		notes = tuple(slide_lib.layout_model.SpeakerNote(
 			f"slide-{index + 1}-note-{note_index}", note_index and note.text or note.text)

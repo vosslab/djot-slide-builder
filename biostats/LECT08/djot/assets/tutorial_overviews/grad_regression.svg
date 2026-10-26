@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" role="img" aria-labelledby="art-title art-description">
+<title id="art-title">Dr. Caffeine's All-Nighter Academy</title>
+<desc id="art-description">A coffee mug beside an ungraded exam paper recalls the sleep and exam-score tutorial. No measured data or regression results are depicted.</desc>
+<g id="coffee-mug" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M151 155 H171 Q196 155 196 181 Q196 207 166 207 H154" fill="none"/>
+<path d="M56 145 H157 V216 Q157 238 133 238 H80 Q56 238 56 216 Z" fill="#D7E7DC"/>
+<ellipse cx="106" cy="145" rx="50" ry="12" fill="#7F6849"/>
+<path d="M80 117 C66 100 91 92 80 75 M109 116 C95 99 120 91 109 74 M137 117 C123 100 148 92 137 75" fill="none" stroke="#62716A" stroke-width="2"/>
+<path d="M66 250 H163" fill="none"/>
+</g>
+<g id="exam-paper" stroke="#263D39" stroke-width="3" stroke-linejoin="round">
+<path d="M278 81 H384 L418 115 V254 H278 Z" fill="#F4F8F4"/>
+<path d="M384 81 V115 H418" fill="#D7E7DC"/>
+<path d="M299 153 H397 M299 181 H397 M299 209 H378" stroke="#BCD0DA"/>
+</g>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" text-anchor="middle" fill="#263D39">
+<text x="347" y="138" font-size="23">EXAM</text>
+<text x="106" y="286" font-size="21" fill="#28744B">All-nighters</text>
+<text x="348" y="286" font-size="21" fill="#316887">Exam scores</text>
+<text x="240" y="349" font-size="23">Linear and quadratic</text>
+<text x="240" y="378" font-size="23">regression</text>
+</g>
+</svg>

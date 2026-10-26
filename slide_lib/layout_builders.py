@@ -1,6 +1,7 @@
 """Build immutable physical objects from resolved layout contracts and measurements."""
 
 import dataclasses
+import math
 
 import slide_lib.capacity_report
 import slide_lib.layout_measurement
@@ -442,23 +443,34 @@ def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		rectangle: slide_lib.layout_primitives.LogicalRectangle,
 		theme: slide_lib.presentation_theme.PresentationTheme, layout: str, slot: str,
 		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_measurement.MixedFlowAllocation:
-	"""Select the largest serializer-safe size using the final proportional allocation predicate."""
+	"""Maximize readable occupied area; failed readability produces a replacement preview."""
+	best = None
+	for half_point in range(math.floor(theme.ordinary_body_size_pt * 2),
+			math.ceil(theme.body_floor_size_pt * 2) - 1, -1):
+		allocation = _mixed_flow_allocation_at_size(deck, text_blocks, images, rectangle,
+			half_point / 2, theme, session)
+		if allocation is not None and (best is None or
+				(allocation.occupied_area, allocation.size_pt) > (best.occupied_area, best.size_pt)):
+			best = allocation
+	if best is not None:
+		return best
 	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
 	def fits(value: float) -> bool:
-		"""Use the final allocation as the size-search predicate."""
-		return _mixed_flow_allocation_at_size(deck, text_blocks, images, rectangle, value,
-			theme, session) is not None
-	size = slide_lib.layout_measurement.largest_fitting_size(theme.ordinary_body_size_pt, minimum,
-		fits)
+		"""Find physical geometry only for the explicitly marked review artifact."""
+		return slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks, images,
+			rectangle, value, theme, session, review=True) is not None
+	size = next((half_point / 2 for half_point in range(
+		math.floor(theme.ordinary_body_size_pt * 2), math.ceil(minimum * 2) - 1, -1)
+		if fits(half_point / 2)), None)
 	if size is None:
 		raise slide_lib.capacity_report.PhysicalCapacityError(text_blocks[0].location, layout, slot,
-			theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_FLOW, minimum)
-	allocation = _mixed_flow_allocation_at_size(deck, text_blocks, images, rectangle, size, theme, session)
+			theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_READABILITY, minimum)
+	allocation = slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks, images,
+		rectangle, size, theme, session, review=True)
 	if allocation is None:
 		raise ValueError("mixed-flow selection lost its exact final allocation")
-	if size < theme.body_floor_size_pt:
-		session.record_capacity(text_blocks[0].location, layout, slot, size,
-			theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_FLOW)
+	session.record_capacity(text_blocks[0].location, layout, slot, size,
+		theme.body_floor_size_pt, slide_lib.capacity_report.CapacityCause.MIXED_READABILITY)
 	return allocation
 
 def _mixed_flow_allocation_at_size(deck: slide_lib.native_model.Deck,
