@@ -1,5 +1,7 @@
 # Human guidance
 
+- Use black table-header text on light course-colored backgrounds.
+
 - Use comfortable default table-cell padding, center all table headings, and vertically
   align table-cell content in the middle.
 

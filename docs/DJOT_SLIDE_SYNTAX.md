@@ -556,7 +556,7 @@ with readable text and retain explicit labels alongside color. The ODP contains 
 cell backgrounds, not overlay shapes or rasterized tables.
 
 Use CSS-named `text-align=left`, `center`, or `right` in the same whole-cell wrapper.
-Table headers default to centered text; all cells default to middle vertical alignment.
+Table headers default to centered black text on a light course-colored fill; all cells default to middle vertical alignment.
 Cells have 12 logical units of left/right padding and 4 of top/bottom padding.
 
 Explicit alignment overrides header centering and numeric auto-alignment; it does not change column widths.

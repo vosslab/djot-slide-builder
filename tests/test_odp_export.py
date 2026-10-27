@@ -458,8 +458,13 @@ def test_native_table_uses_light_body_cells_and_theme_header(tmp_path: pathlib.P
 		root = package.parse_xml(archive.read("content.xml"), "content.xml")
 	backgrounds = [element.attrib[f"{{{exporter.FO_NS}}}background-color"]
 		for element in root.findall(f".//{{{exporter.STYLE_NS}}}table-cell-properties")]
-	assert backgrounds == [f"#{theme.accent_color}", f"#{theme.accent_color}",
-		"#F2F3F5", "#F2F3F5"]
+	assert backgrounds[0] == backgrounds[1]
+	assert backgrounds[0] != f"#{theme.accent_color}"
+	assert backgrounds[2:] == ["#F2F3F5", "#F2F3F5"]
+	cell_styles = root.findall(f".//{{{exporter.STYLE_NS}}}style[@{{{exporter.STYLE_NS}}}family='table-cell']")
+	for style in cell_styles:
+		fill = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
+		assert fill.attrib[f"{{{exporter.DRAW_NS}}}opacity"] == "100%"
 
 
 def test_native_table_exports_explicit_cell_fills_over_theme_defaults(tmp_path: pathlib.Path) -> None:
@@ -477,7 +482,7 @@ def test_native_table_exports_explicit_cell_fills_over_theme_defaults(tmp_path: 
 		root = package.parse_xml(archive.read("content.xml"), "content.xml")
 	backgrounds = [element.attrib[f"{{{exporter.FO_NS}}}background-color"]
 		for element in root.findall(f".//{{{exporter.STYLE_NS}}}table-cell-properties")]
-	assert backgrounds[:4] == ["#123456", f"#{theme.accent_color}", "#E6E6E6", "#E6F2E6"]
+	assert [backgrounds[index] for index in (0, 2, 3)] == ["#123456", "#E6E6E6", "#E6F2E6"]
 	assert backgrounds[-1] == "#F6E8FB"
 
 

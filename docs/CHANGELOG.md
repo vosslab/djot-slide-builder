@@ -2,6 +2,9 @@
 
 ### Improvements
 
+- Use black table-header text with a light course-hue fill. Set native cell fills
+  explicitly opaque so template transparency cannot wash out authored colors.
+
 - Increase default horizontal table-cell padding from 6 to 12 logical units and center
   table headers. Retain middle vertical alignment and explicit cell alignment overrides;
   measurement and ODP export use the same padding.

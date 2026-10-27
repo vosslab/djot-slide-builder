@@ -1,6 +1,7 @@
 """Project resolved text, lists, links, and tables into editable ODF content."""
 
 # Standard Library
+import colorsys
 import xml.etree.ElementTree
 
 # Local Modules
@@ -10,6 +11,7 @@ import slide_lib.layout_primitives
 import slide_lib.presentation_theme
 
 
+DRAW_NS = "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
 OFFICE_NS = "urn:oasis:names:tc:opendocument:xmlns:office:1.0"
 STYLE_NS = "urn:oasis:names:tc:opendocument:xmlns:style:1.0"
 TEXT_NS = "urn:oasis:names:tc:opendocument:xmlns:text:1.0"
@@ -41,9 +43,14 @@ def _qname(namespace: str, local_name: str) -> str:
 def _color_for(role: slide_lib.layout_primitives.StyleRole,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the resolved ODP palette color for a semantic role."""
-	if role in (slide_lib.layout_primitives.StyleRole.ACCENT,
-			slide_lib.layout_primitives.StyleRole.TABLE_HEADER):
+	if role is slide_lib.layout_primitives.StyleRole.ACCENT:
 		return theme.accent_color
+	if role is slide_lib.layout_primitives.StyleRole.TABLE_HEADER:
+		rgb = tuple(int(theme.accent_color[index:index + 2], 16) / 255 for index in (0, 2, 4))
+		hue, lightness, saturation = colorsys.rgb_to_hls(*rgb)
+		tint = colorsys.hls_to_rgb(hue, max(lightness, 0.8), saturation)
+		result = "".join(f"{round(channel * 255):02X}" for channel in tint)
+		return result
 	result = _ROLE_COLORS.get(role, _FOREGROUND)
 	return result
 
@@ -404,6 +411,12 @@ def _add_cell_style(automatic: xml.etree.ElementTree.Element, name: str,
 		_qname(STYLE_NS, "family"): "table-cell",
 	})
 	role = cell.fill_role or (content.style.header_role if header else content.style.body_role)
+	# Impress cell fills inherit drawing properties independently of FO backgrounds.
+	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), {
+		_qname(DRAW_NS, "fill"): "solid",
+		_qname(DRAW_NS, "fill-color"): f"#{cell.fill_color or _color_for(role, theme)}",
+		_qname(DRAW_NS, "opacity"): "100%",
+	})
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "table-cell-properties"), {
 		_qname(FO_NS, "background-color"): f"#{cell.fill_color or _color_for(role, theme)}",
 		_qname(FO_NS, "border"): f"{_points(content.style.border_width_pt)} solid "

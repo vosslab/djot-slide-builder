@@ -7,6 +7,10 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+- Table headers use black text and a course-accent tint with HSL lightness at least
+  80%, preserving hue and saturation. Explicit native cell drawing fills prevent
+  inherited template opacity from altering the palette.
+
 - Native tables use 12 logical units of horizontal padding and 4 vertically. Header
   paragraphs default to centered; all cells use middle vertical alignment. Explicit
   text-align remains authoritative. Shared measurement includes the full cell padding.

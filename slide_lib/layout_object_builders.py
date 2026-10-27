@@ -276,7 +276,7 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 					"right": slide_lib.layout_primitives.HorizontalAlignment.END}[cell.text_alignment]
 				properties = dataclasses.replace(properties, horizontal_alignment=alignment)
 			paragraph = slide_lib.layout_content.TextParagraph(_fragment_runs(
-				resolved_runs(cell.inlines, WHITE if header else FOREGROUND,
+				resolved_runs(cell.inlines, "000000" if header else FOREGROUND,
 					theme.accent_color, header or total), size, width, theme, session),
 				typography, properties)
 			projected.append(slide_lib.layout_content.TableCell((paragraph,),
