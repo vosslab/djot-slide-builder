@@ -1,0 +1,16 @@
+=== layout: section
+
+# Informational Slides
+
+=== layout: big-image
+
+@image
+
+![Slide image 1](repo:genetics/evergreen/assets/image_001.png)
+
+@caption
+
+Watch Dr. Voss's videos for help with difficult problems.
+
+https://www.youtube.com/c/NeilVossLab/videos
+

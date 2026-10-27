@@ -1,0 +1,157 @@
+=== layout: two-panels
+
+# *Discord Server*
+
+@left
+
+- I created a Discord Server called Neil Voss Lab.
+  - Discord is the quickest way to reach me.
+- Join the server: {{course_url:discord}}
+  - It is available as a mobile app, a desktop app, and a website.
+  - Be sure to connect to my server rather than creating your own server.
+
+@right
+
+![Slide image 2](repo:genetics/evergreen/assets/image_002.png)
+
+![Slide image 3](repo:genetics/evergreen/assets/image_003.png)
+
+=== layout: two-panels
+
+# *Office Hours*
+
+@left
+
+- Office\: SCH 600E, Schaumburg campus
+- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
+- Thursday, 12\:30-1\:30 p.m.
+- Wednesday, 2\:30-3\:30 p.m.
+- _Also available by appointment_
+
+@right
+
+![Slide image 4](repo:genetics/evergreen/assets/image_004.png)
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
+
+=== layout: one-panel
+
+# *Ways to Contact Dr. Voss*
+
+@body
+
+- [Office hours]{color=green}\: Ask questions in person or over Zoom.
+- [Discord]{color=red}\: The quickest way to reach me.
+  - I check several times per day.
+  - Send a direct message for private questions or post general questions to the class.
+  - Response time\: 1-2 calendar days.
+- [Email]{color=blue}.
+  - Response time\: 2 business days.
+- [Anonymous Google Form]{color=purple}.
+  - Response time\: 2-4 business days.
+
+=== layout: two-panels
+
+# Message the Instructor Anonymously
+
+@left
+
+- Google Form to send me an *_anonymous_* message.
+- I took great care to make sure it is completely anonymous
+- Form goes directly to my email.
+- https://forms.gle/gZ8nx28q9YDwSy8g7
+
+@right
+
+![Anonymous Form](repo:genetics/evergreen/assets/anonymous_form.png)
+
+=== layout: section
+
+# Textbooks
+
+=== layout: two-panels
+
+# *New, Free OER Textbook*
+
+@left
+
+- Advanced Genetics\: Mechanisms of Inheritance and Analysis
+- Read online
+- Dr. Voss is creating a custom textbook, but it will take some time.
+
+@right
+
+![Slide image 6](repo:genetics/evergreen/assets/image_006.png)
+
+@citation
+
+https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis
+
+=== layout: section
+
+# Course Content
+
+=== layout: one-panel
+
+# *Syllabus Links*
+
+@body
+
+- Syllabus
+- https://vosslab.github.io/syllabus/fall_2026/genetics/
+- Course schedule
+- https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+- Coursework and grades
+- https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
+- Policies and student resources
+- https://vosslab.github.io/syllabus/fall_2026/shared/policies/
+
+=== layout: one-panel
+
+# *PREVIEW Slides*
+
+@body
+
+- Limited versions of lecture slides may be available on Blackboard before class.
+  - They are labeled PREVIEW in the filename.
+- Full versions of lecture slides are available on Blackboard after class.
+
+=== layout: section
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# *Assignments, Quizzes, and Exams*
+
+@body
+
+- [*Assignments*]{color=red}\: reinforce learning; explore new topics
+  - Weekly; 5-15 points; unlimited retakes
+  - Collaboration and help encouraged
+- [*Quizzes*]{color=red}\: recent material
+  - Individual\: 20 points; 30 minutes
+  - Group quiz during class
+- [*Exams*]{color=red}\: cumulative midterm and final
+  - Individual; 100 points total
+  - Each part\: 50 points; 75 minutes
+
+=== layout: two-panels
+
+# [*Graded*]{color=#003FFF} vs [*Total*]{color=#C80085} Percentage
+
+@left
+
+- [*Graded percentage*]{color=#003FFF} includes [only items with a recorded grade]{color=#003FFF}.
+- Excludes items that have not been graded, including unfinished assignments.
+- More useful when *Dr. Voss* still has submitted work to grade.
+
+@right
+
+- [*Total percentage*]{color=#C80085} includes all items counted toward your Blackboard grade.
+- [Counts items without a recorded grade as zero.]{color=#C80085}
+  - This includes submitted work waiting to be graded.
+- More useful for seeing the effect of assignments you have not attempted.
+

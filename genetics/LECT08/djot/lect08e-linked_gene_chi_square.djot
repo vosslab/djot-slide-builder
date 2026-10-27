@@ -48,7 +48,7 @@ color-theme: genetics
 @body
 
 - Compares an observed data set to an expected data set predicted by a hypothesis and measures the discrepancy between the two.
-  - Thus, determining a &#8220;goodness of fit&#8221;
+  - Thus, determining a "goodness of fit"
 - If the discrepancy between the observed and expected data sets is so large that it is unlikely to have occurred by random fluctuation, we say there is statistically significant evidence against the hypothesis.
   - or, more specifically, evidence for the genes being linked.
 

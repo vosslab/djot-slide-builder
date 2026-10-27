@@ -66,8 +66,8 @@ color-theme: biotechnology
 - [*2003*]{underline=true}: Holmes founds Theranos at age 19
 - [*March 2004*]{underline=true}: Holmes drops out of Stanford
 - [*2004-2008*]{underline=true}: Theranos thrives with early funding
-- [*2009*]{underline=true}: Ramesh “Sunny” Balwani joins the company as the number-two executive.
-  - Ms. Holmes doesn’t widely disclose that the two, who met the summer before she started college, are also romantically involved.
+- [*2009*]{underline=true}: Ramesh "Sunny" Balwani joins the company as the number-two executive.
+  - Ms. Holmes doesn't widely disclose that the two, who met the summer before she started college, are also romantically involved.
 
 === layout: one-panel
 
@@ -75,7 +75,7 @@ color-theme: biotechnology
 
 @body
 
-- [*2011*]{underline=true}: Former U.S. Secretary of State George Shultz joins Theranos’s board
+- [*2011*]{underline=true}: Former U.S. Secretary of State George Shultz joins Theranos's board
 - [*September 2013*]{underline=true}: Theranos launches its Walgreens partnership
 - [*December 2014*]{underline=true}: Elizabeth Holmes delivers a Ted Talk
 - [*September 2014*]{underline=true}: Holmes named one of the richest women in America by Forbes
@@ -89,7 +89,7 @@ color-theme: biotechnology
 
 - [*February 2015*]{underline=true}: Criticism from the medical community for not publishing any of its research
 - [*July 2015*]{underline=true}: FDA clears the Theranos HSV-1 antibody test
-- [*October 15, 2015*]{underline=true}: Carreyrou’s first damning report
+- [*October 15, 2015*]{underline=true}: Carreyrou's first damning report
 - [*October 27, 2015*]{underline=true}: FDA releases reports and stating that the company had used uncleared and unsuitable medical devices to run its blood tests.
 - [*November 2015*]{underline=true}: Safeway deal folds
 - [*December 2015*]{underline=true}: Carreyrou strikes again
@@ -124,7 +124,7 @@ Clearance of this one assay did not establish the performance of all Theranos te
 - [*November 2016*]{underline=true}: Walgreens sues Theranos
 - [*January 2017*]{underline=true}: More layoffs, followed by a failed lab inspection
 - [*March 2018*]{underline=true}: Theranos is charged with massive fraud
-- [*May 2018*]{underline=true}: “Bad Blood” book is released
+- [*May 2018*]{underline=true}: "Bad Blood" book is released
 - [*June 2018*]{underline=true}: Holmes and Balwani indicted
 - [*September 2018*]{underline=true}: Theranos is forced to close
 
@@ -137,7 +137,7 @@ Clearance of this one assay did not establish the performance of all Theranos te
 - [*March 2019*]{underline=true}: Theranos gets documentary
 - [*June 2019*]{underline=true}: Trial scheduled for July 2020
 - [*August 2020*]{underline=true}: The Holmes and Balwani trials have been severed–legalspeak for separated
-- [*December 2020*]{underline=true}: Due to COVID Holmes’ criminal trial delayed til 2021
+- [*December 2020*]{underline=true}: Due to COVID Holmes' criminal trial delayed til 2021
 - [*March 12, 2021*]{underline=true}: Ms. Holmes tells the court she is pregnant, delaying her criminal trial once again
 - [*July 2021*]{underline=true}: Ms. Holmes gives birth to a baby boy
 - [*August 31, 2021*]{underline=true}: Trial finally begins after delays
@@ -236,7 +236,7 @@ Historical sentencing, not a claim about a current release date.
 
 @right
 
-- “pitbull” lawyer
+- "pitbull" lawyer
 - represented Al Gore during vote recount in 2000
 - lead prosecution of U.S. v Microsoft
 - helped overturn California Prop 8 that had banned gay marriage
@@ -267,7 +267,7 @@ Historical sentencing, not a claim about a current release date.
 
 - Professor of Medicine at the Stanford University School of Medicine
 - skeptical of the Theranos founder Elizabeth Holmes early on
-  - knew from the moment the 19-year-old student started talking about her “brilliant” idea that it wouldn't work
+  - knew from the moment the 19-year-old student started talking about her "brilliant" idea that it wouldn't work
 - rips Theranos board of 'old men' whose 'brains go to their groin' ·
 
 === layout: two-panels
@@ -341,7 +341,7 @@ Historical sentencing, not a claim about a current release date.
 
 @left
 
-- “Bad Blood\: Secrets and Lies in a Silicon Valley Startup”
+- "Bad Blood\: Secrets and Lies in a Silicon Valley Startup"
   - published
   - May 21, 2018
 - by John Carreyrou
@@ -357,7 +357,7 @@ Historical sentencing, not a claim about a current release date.
 
 @body
 
-- ABC News “The Drop Out”
+- ABC News "The Drop Out"
   - Jan 15–Feb 26, 2019
 - [https\://abcaudio.com/podcasts/the-dropout/](https://abcaudio.com/podcasts/the-dropout/)
 
@@ -436,7 +436,7 @@ hidden: true
 
 @left
 
-- ABC News “The Drop Out”
+- ABC News "The Drop Out"
   - Trial coverage began Aug 31, 2021
   - ABC News chief business, technology and economics correspondent Rebecca Jarvis,
 - [https\://abcaudio.com/podcasts/the-dropout/](https://abcaudio.com/podcasts/the-dropout/)

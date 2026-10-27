@@ -1,0 +1,49 @@
+=== layout: section
+
+# Course Evaluations
+
+=== layout: one-panel
+
+# Course Evaluations
+
+@body
+
+- Hi Students,
+- You will be receiving an email to complete [course evaluations]{color=red} for your courses.
+- I want to encourage you to complete them, they are our [primary source for evaluating faculty performance]{color=red}.
+- Your opinion does matter; it can help determine who gets salary raises, and a string of negative evaluations can get a professor replaced.
+- Further, I appreciate getting [your feedback]{color=red} in an anonymous way. It helps me [improve the courses]{color=red} I teach.
+- Thanks, Dr. Voss
+
+=== layout: one-panel
+
+# Course Evaluations
+
+@body
+
+- When the IDEA Student Ratings of Instruction survey opens, complete it by the published deadline.
+- It can take up to 5-10 minutes to complete the Course Evaluation
+- Surveys are open and available for students to complete by accessing the following link\:
+  - [https\://roosevelt.campuslabs.com/eval-home/](https://roosevelt.campuslabs.com/eval-home/)
+  - Students may log in with their RU Net ID and password.
+
+=== layout: one-panel
+
+# Final Exam Extra Time
+
+@body
+
+- I have decided to link student evaluation completions to extra time on the final exam.
+  - Normally\: 50 questions = 75 minutes
+- Completing the student evaluation adds up to an extra 20 minutes for each exam part.
+  - If all students complete their evaluations, the total time could reach up to 95 minutes for the 50 questions.
+
+=== layout: one-panel
+
+# Final Exam Extra Time
+
+@body
+
+- I cannot see individual students only total completion
+- percentage.
+

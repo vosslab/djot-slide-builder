@@ -121,7 +121,7 @@ def podcast_slide(episode: dict[str, str]) -> str:
 #============================================
 def update_source(source: str, episode: dict[str, str]) -> str:
 	"""Replace the managed slide and insert it directly after the YouTube channel slide."""
-	parts = re.split(r"(?m)(?=^===\s+layout:)", source)
+	parts = re.split(r"(?m)(?=^===\s+(?:layout|include):)", source)
 	managed = [part for part in parts if PODCAST_ASSET_PATH in part]
 	if len(managed) > 1:
 		raise ValueError("Multiple managed podcast slides; resolve duplicates before refreshing")

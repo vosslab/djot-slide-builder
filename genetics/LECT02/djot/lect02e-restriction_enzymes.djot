@@ -57,7 +57,7 @@ color-theme: genetics
 - Madam
 - Race car
 - Never odd or Even
-- Go Hang a Salami I’m a lasagna hog
+- Go Hang a Salami I'm a lasagna hog
 
 @right
 
@@ -72,7 +72,7 @@ color-theme: genetics
 
 === layout: two-over-one-panels
 
-# “Weird Al” Yankovic – “Bob”
+# "Weird Al" Yankovic – "Bob"
 
 @top-left
 
@@ -97,7 +97,7 @@ color-theme: genetics
 
 === layout: two-panels
 
-# “Weird Al” Yankovic – “Bob”
+# "Weird Al" Yankovic – "Bob"
 
 @left
 
@@ -119,7 +119,7 @@ color-theme: genetics
 
 === layout: two-over-one-panels
 
-# “Weird Al” Yankovic – “Bob”
+# "Weird Al" Yankovic – "Bob"
 
 @top-left
 
@@ -144,7 +144,7 @@ color-theme: genetics
 
 === layout: two-over-one-panels
 
-# “Weird Al” Yankovic – “Bob”
+# "Weird Al" Yankovic – "Bob"
 
 @top-left
 
@@ -379,7 +379,7 @@ color-theme: genetics
 
 - A-T pair
 
-- YES, it’s a
+- YES, it's a
 - palindrome
 
 - 5&prime;-`AGTACT`-3&prime;
@@ -425,7 +425,7 @@ color-theme: genetics
 
 
 
-- NO, it’s not a
+- NO, it's not a
 - palindrome
 
 
@@ -475,7 +475,7 @@ color-theme: genetics
 - nucleotides in a
 - genetic palindrome
 
-- NO, it’s not a
+- NO, it's not a
 - palindrome
 
 === layout: section

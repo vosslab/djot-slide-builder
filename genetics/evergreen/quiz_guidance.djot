@@ -1,0 +1,50 @@
+=== layout: section
+
+# Quiz
+
+=== layout: two-panels
+
+# *Quiz System Information*
+
+@left
+
+- 20 points; 18-24 questions
+- MC\: 1 point; matching\: 1/2 per choice
+- 30 minutes; about 1.5 min/question
+- Backtracking allowed; random order
+- Limited calculations
+- Score\: (individual + group)/2
+- Example\: (14 + 20)/2 = 17
+
+@right
+
+- Individual\: Blackboard
+- Opens >20 hours before class
+- Due BEFORE class
+- Group\: Zoom and Blackboard
+- 3-4 students; breakout setup takes time
+- Hard group quizzes receive a curve
+
+=== layout: one-panel
+
+# *Missing Group Quizzes*
+
+@body
+
+- Make-up quizzes will be allowed for full credit only if the student notifies the instructor BEFORE the quiz/exam
+- Students missing group quizzes cannot later work in a group
+  - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
+  - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
+
+=== layout: one-panel
+
+# *Low Quiz Grades*
+
+@body
+
+- How can I do better in this class?
+- Did you complete the relevant assignments before taking the quiz?
+  - The assignments and quizzes mostly have the same questions.
+- Did you retake the relevant assignments and make sure you understood the questions? Did you retake them until you had a grade you were happy with?
+  - The assignments and quizzes mostly have the same questions.
+

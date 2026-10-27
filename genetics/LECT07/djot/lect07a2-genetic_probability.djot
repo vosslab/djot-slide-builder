@@ -35,7 +35,7 @@ Run through the practice questions in the video
 - [*General Multiplication Rule*]{underline=true}, if two events, A and B, are NOT independent then\:
   - [P(A and B) = P(A) &#215; P(B|A) = P(B) &#215; P(A|B)]{color=#00599D}
 
-- [*When you hear &#8220;and&#8221; think MULTIPLICATION*]{color=green}
+- [*When you hear "and" think MULTIPLICATION*]{color=green}
 
 === layout: one-panel
 
@@ -48,7 +48,7 @@ Run through the practice questions in the video
 - [*General Addition Rule\:*]{underline=true} if two events, A and B, are NOT mutually exclusive, then\:
   - [P(A or B) = P(A) + P(B) &#8211; P(A and B)]{color=#00599D}
 
-- [*When you hear &#8220;or&#8221; think ADDITION*]{color=green}
+- [*When you hear "or" think ADDITION*]{color=green}
 
 === layout: one-panel
 @replaceme
@@ -58,8 +58,8 @@ Run through the practice questions in the video
 @body
 
 - Imagine that we breed two dogs with the genotype&#160;_BbCc_, where dominant allele&#160;_B_&#160;specifies black coat color (versus&#160;_b_, yellow coat color) and dominant allele&#160;_C_&#160;specifies straight fur (versus&#160;_c_, curly fur). Assuming that the two genes assort independently and are not sex-linked, how can we predict the number of&#160;_BbCc_&#160;puppies among the offspring?
-- What&#8217;s the probability of getting a&#160;_Bb_&#160;genotype?
-- What&#8217;s the probability of getting an&#160;_Cc_&#160;genotype?
+- What's the probability of getting a&#160;_Bb_&#160;genotype?
+- What's the probability of getting an&#160;_Cc_&#160;genotype?
 
 @notes
 

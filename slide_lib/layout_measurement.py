@@ -9,6 +9,7 @@ import PIL.Image
 import PIL.ImageFont
 
 import slide_lib.editable_text
+import slide_lib.djot_sources
 import slide_lib.layout_content
 import slide_lib.capacity_report
 import slide_lib.layout_model
@@ -773,7 +774,7 @@ def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRecta
 def image_size(deck: slide_lib.native_model.Deck,
 		image: slide_lib.native_model.Image) -> tuple[float, float]:
 	"""Return the intrinsic dimensions of one ordinary image."""
-	path = (deck.asset_root / image.source).resolve()
+	path = slide_lib.djot_sources.image_path(deck, image)
 	if not path.is_relative_to(deck.repo_root) or not path.is_file():
 		raise ValueError(f"{image.location.path}:{image.location.line}: component image is missing or outside the repository: {image.source}")
 	if path.suffix.lower() == ".svg":

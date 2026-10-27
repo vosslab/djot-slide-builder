@@ -11,7 +11,7 @@ color-theme: genetics
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 
@@ -27,7 +27,7 @@ color-theme: genetics
 
 === layout: section
 
-# Mendel’s Observation
+# Mendel's Observation
 
 === layout: one-panel
 
@@ -65,7 +65,7 @@ color-theme: genetics
 
 === layout: one-panel
 
-# Mendel’s Model
+# Mendel's Model
 
 @body
 

@@ -38,6 +38,15 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 
 ## Initial conversion and assembly
 
+- [ ] Follow the instructor-edited announcement formatting: put very long URLs in `@citation`,
+  keeping their complete clickable destinations.
+- [ ] Show the quiz-guidance group if a quiz is this week or next week; hide it otherwise.
+  Control the included group's visibility with one `hidden` setting.
+- [ ] Reference course-wide evergreen groups for recurring opening slides and quiz/exam guidance.
+  Keep the agenda, selected icebreaker/podcast, assessment colors, and dated deadlines weekly.
+- [ ] Retain first-week assignments and future course-evaluation slides as hidden reusable
+  groups. Verify their inventory survives the weekly update; refresh dates before showing them.
+
 - [ ] Keep source filenames, source slide numbers, and conversion provenance out of Djot files,
   including `@notes` and comments. Use separate import reports, slide maps, or review files for
   traceability; reserve `@notes` for presentation note cards used while lecturing. Exclude selection history,

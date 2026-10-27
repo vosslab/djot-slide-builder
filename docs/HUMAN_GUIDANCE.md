@@ -1,5 +1,8 @@
 # Human guidance
 
+- Use straight ASCII quotation marks and apostrophes in Djot text. Write a plain apostrophe
+  instead of `&#8217;`; normalize literal curly quotes and their numeric or named entities.
+
 - Treat `@notes` as presentation note cards for lecturing: speaking prompts, explanations,
   and reminders useful while teaching. 
 - Keep this administrative material out of Djot files, including comments; use separate
@@ -91,14 +94,27 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   black, and next week's assessments in dark red.
 - Exam and quiz schedule text is fixed: one "item: date" per line, using abbreviated month and
   day, such as "Quiz 1: Sept 22". Change only status colors; do not add "completed", descriptions,
-  combined assessments, or mixed bolding. Keep the long schedule URL and extra details in notes.
+  combined assessments, or mixed bolding. Put a long schedule URL in `@citation`; reserve
+  `@notes` for presentation note cards used while lecturing.
 - Think of the exam and quizzes page as a progress bar: keep the list and positions stable,
   with colors showing completed, next-week, and future assessments.
+
+- Show the quiz-guidance slides when a quiz falls in the current lecture week or the following
+  week; hide the group otherwise. Use the current lecture date and course schedule to decide.
+- Keep quiz and exam guidance in course-wide evergreen Djot groups so one `hidden: true`
+  or `hidden: false` setting in each weekly master controls the entire group. Use
+  `genetics/evergreen/` for Genetics and explicit `repo:` includes, rather than copies under LECT08.
+- After the weekly agenda and chosen icebreaker, share the constant opening material, including
+  the YouTube channel, contact information, textbooks, course links, grading explanations, and
+  assessment policies. Keep weekly agenda content, icebreaker selection, podcast episode,
+  assessment status colors, and dated deadlines in the weekly master.
 
 ## Course links and evergreen announcements
 
 - Support `@citation` on all slide layouts for URLs or article citations in smaller condensed
   text at the bottom. Normal layouts keep their full space; citations use the bottom margin.
+- Put very long URLs in `@citation` when they crowd slide content. Keep the complete URL
+  visible and clickable, following the instructor-edited Genetics LECT08 announcements.
 
 - Use a YouTube slide generator with the existing StVC-style `big-image` layout: thumbnail,
   title, and visible clickable full `https://www.youtube.com/watch?v=...` URL.
@@ -115,7 +131,12 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - YouTube URLs, including Dr. Voss's channel, and other public course links remain directly in
   tracked Djot sources; they do not need private configuration.
 - The opening "Discord Server" slide is evergreen and stays in the deck. After the signup
-  deadline, remove only the Discord item in assignments, not the opening server information.
+  deadline, hide the Discord signup assignment; retain it for reuse rather than deleting it.
+- Carry the first weeks' assignments, including Student Profile and Discord signup credit,
+  forward as hidden slides after their deadlines. Retain eventual course-evaluation slides
+  hidden until they are needed. Preserve this reusable inventory when preparing each new week;
+  use separate included groups for convenient visibility control. Refresh evaluation deadlines
+  before displaying them; never copy an obsolete date forward as a current deadline.
 
 ## Robustness and simplicity
 

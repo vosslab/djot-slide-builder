@@ -5,6 +5,7 @@ import math
 import re
 
 import slide_lib.editable_text
+import slide_lib.djot_sources
 import slide_lib.layout_content
 import slide_lib.layout_measurement
 import slide_lib.layout_model
@@ -298,7 +299,10 @@ def picture_object(object_id: str, deck: slide_lib.native_model.Deck,
 		slide_lib.layout_primitives.CropInsets(0, 0, 0, 0))
 	accessibility = slide_lib.layout_primitives.ObjectAccessibility(
 		image.title or "Component image", image.alt_text)
-	content = slide_lib.layout_content.PictureContent(image.source, placement, accessibility)
+	source_path = image.source
+	if image.source.startswith("repo:"):
+		source_path = str(slide_lib.djot_sources.image_path(deck, image))
+	content = slide_lib.layout_content.PictureContent(source_path, placement, accessibility)
 	return slide_lib.layout_model.LayoutObject(object_id,
 		slide_lib.layout_primitives.PresentationRole.COMPONENT,
 		slide_lib.layout_primitives.StyleRole.BODY, allocation,

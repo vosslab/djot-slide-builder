@@ -64,7 +64,7 @@ color-theme: genetics
 @body
 
 - DNA profiling is a method used to identify an individual from a sample of DNA by looking at unique patterns in their DNA.
-  - It is essentially a DNA “fingerprint”
+  - It is essentially a DNA "fingerprint"
 - Many different methods have been developed for DNA profiling individuals using DNA fragments and restriction enzymes.
 - Different aspects of our genome lead to the ability to fingerprint individuals
   - RFLPs, VNTRs, and STRs
@@ -130,7 +130,7 @@ color-theme: genetics
 
 @body
 
-- An individual’s unique DNA sequence, or genetic profile, can be obtained by analysis of tissue or body fluids
+- An individual's unique DNA sequence, or genetic profile, can be obtained by analysis of tissue or body fluids
 - DNA testing can identify individuals with a high degree of certainty
 - Genetic profiles are currently analyzed using genetic markers called short tandem repeats (STRs)
 
@@ -183,11 +183,11 @@ color-theme: genetics
 
 === layout: section
 
-# Who’s the Daddy?
+# Who's the Daddy?
 
 === layout: one-panel
 
-# Who’s the father?
+# Who's the father?
 
 @body
 
@@ -207,7 +207,7 @@ color-theme: genetics
 
 === layout: two-panels
 
-# Who’s the father?
+# Who's the father?
 
 @left
 
@@ -221,7 +221,7 @@ color-theme: genetics
 
 === layout: two-panels
 
-# Who’s the father?
+# Who's the father?
 
 @left
 

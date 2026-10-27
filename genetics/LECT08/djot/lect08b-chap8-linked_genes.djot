@@ -30,7 +30,7 @@ color-theme: genetics
 === layout: one-panel
 @replaceme
 
-# *Mendel&#8217;s Four Principles of Heredity*
+# *Mendel's Four Principles of Heredity*
 
 @body
 
@@ -110,14 +110,12 @@ cover: 32.431 23.192 64.848 74.156
 # Linked Genes
 
 === layout: one-panel
-@replaceme
-
-# *Assortment Across Chromosomes*
 
 @body
 
 ![Slide image 5](assets/lect08b-chap8-linked_genes/image_005.jpg)
 
+- *Assortment Across Chromosomes*
 - A double heterozygote produces four possible types of gametes in equal proportions
 
 === layout: subsection
@@ -142,7 +140,6 @@ cover: 32.431 23.192 64.848 74.156
 ![Slide image 6](assets/lect08b-chap8-linked_genes/image_006.jpg)
 
 === layout: two-over-one-panels
-@replaceme
 
 # *Cis-Trans Isomers*
 
@@ -160,12 +157,10 @@ cover: 32.431 23.192 64.848 74.156
 
 @bottom
 
-- Geometric isomers are compounds with the same covalent partnerships that differ in their spatial arrangement around a carbon-carbon double bond.
-- The double bond does not allow atoms to rotate freely around the bond axis.
+- Geometric isomers are compounds with the same covalent bonds that differ in their arrangement about a carbon-carbon double bond.
+- The double bond prevents atoms from rotating freely around the bond axis.
 
 === layout: two-over-one-panels
-
-# *Nomenclature*
 
 @top-left
 
@@ -314,8 +309,6 @@ cover: 32.431 23.192 64.848 74.156
 
 ![Labeled diagram from source slide 23](assets/lect08b-chap8-linked_genes/b23_labeled.svg)
 
-Figure 15.UN01
-
 === layout: one-panel
 
 @body
@@ -393,17 +386,11 @@ Both predictions are wrong...
 
 - Holliday junction
 
-Figure 13.9b
-
-
-
 === layout: one-panel
 
 @body
 
 ![Labeled diagram from source slide 31](assets/lect08b-chap8-linked_genes/b31_labeled.svg)
-
-Figure 13.12-5
 
 === layout: two-panels
 
@@ -436,16 +423,12 @@ Figure 13.12-5
 
 ![Labeled diagram from source slide 34](assets/lect08b-chap8-linked_genes/b34_labeled.svg)
 
-Figure 15.10a
-
 === layout: one-panel
 @replaceme
 
 @body
 
 ![Labeled diagram from source slide 35](assets/lect08b-chap8-linked_genes/b35_labeled.svg)
-
-Figure 15.10b
 
 === layout: two-panels
 @replaceme
@@ -467,8 +450,6 @@ Figure 15.10b
 
 ![Labeled diagram from source slide 37](assets/lect08b-chap8-linked_genes/b37_labeled.svg)
 
-Figure 15.UN02
-
 === layout: section
 
 # Summary
@@ -483,7 +464,7 @@ Figure 15.UN02
 === layout: one-panel
 @replaceme
 
-# *Mendel&#8217;s Four Principles of Heredity*
+# *Mendel's Four Principles of Heredity*
 
 @body
 

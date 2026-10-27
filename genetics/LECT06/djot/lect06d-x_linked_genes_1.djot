@@ -20,7 +20,7 @@
 - [*Independent assortment*]{underline=true}: unlinked genes assort independently.
 
 === layout: two-panels
-# Mendel’s Principles were Imperfect
+# Mendel's Principles were Imperfect
 
 @left
 
@@ -29,7 +29,7 @@
 @right
 
 - In Chapters 4 and 5, we will be discussing the contributions of Thomas Hunt Morgan.
-- Morgan brought Mendel’s ideas to molecular biology
+- Morgan brought Mendel's ideas to molecular biology
 - in doing so Morgan expanded on and falsified Mendel original ideas.
 
 === layout: one-panel
@@ -50,7 +50,7 @@
 @left
 
 - The first solid evidence associating a specific gene with a specific chromosome came in the early 20th century from the work of [Thomas Hunt Morgan]{color=blue}
-- These early experiments provided convincing evidence that the chromosomes are the location of Mendel’s heritable factors
+- These early experiments provided convincing evidence that the chromosomes are the location of Mendel's heritable factors
 
 @right
 
@@ -58,7 +58,7 @@
 
 === layout: two-panels
 
-# Morgan’s Choice of Organism
+# Morgan's Choice of Organism
 
 @left
 
@@ -98,7 +98,7 @@
 - This variation made it possible for Morgan to trace a gene for eye color to a specific chromosome (LMs).
 
 === layout: one-panel
-# Correlating Behavior of a Gene’s Alleles with Behavior of a Chromosome Pair
+# Correlating Behavior of a Gene's Alleles with Behavior of a Chromosome Pair
 
 @body
 
@@ -106,7 +106,7 @@
   - The F1 generation all had red eyes
   - The F2 generation showed a 3\:1 red to white eye ratio, but [only males had white eyes]{color=blue}
 - Morgan determined that the white-eyed mutant allele must be located on the X chromosome
-- Morgan’s finding supported the chromosome theory of inheritance
+- Morgan's finding supported the chromosome theory of inheritance
 
 === layout: big-image
 
@@ -579,7 +579,7 @@ What proportion of their sons would be color-blind and of normal height?
 @question
 
 A man who is an achondroplastic dwarf with color-blind vision marries a woman of average height and wild-type vision.
-The man's father was six feet tall, and both the woman's parents were of average height. The woman’s father was also color-blind.
+The man's father was six feet tall, and both the woman's parents were of average height. The woman's father was also color-blind.
 Achondroplastic dwarfism is autosomal dominant, and red-green color blindness is X-linked recessive.
 What proportion of their daughters would be color-blind and of average height?
 

@@ -70,6 +70,18 @@ hidden: true
 # Back to the main deck
 ```
 
+Genetics announcements share reusable content from `genetics/evergreen/` using an explicit
+repository-relative include:
+
+```djot
+=== include: repo:genetics/evergreen/exam_guidance.djot
+hidden: true
+```
+
+The same form is used for quiz guidance, first-week assignments, evaluations, and constant
+course information. Set the quiz include's `hidden: false` when a quiz is this week or next
+week. Each weekly master controls its own groups without changing the shared source.
+
 The optional `hidden: true` hides every slide in that include, including nested chapters.
 Set it to `hidden: false` or remove it to restore the chapter's own slide visibility.
 Individually hidden slides remain hidden. Included slides stay editable in ODP and are omitted
@@ -78,14 +90,18 @@ from PDF when hidden. Include blocks contain only the path and optional visibili
 - A manifest contains optional leading `color-theme` metadata, blank lines, and exact unindented
   `include: <relative.djot>` lines. Put opening and closing slides in their own files; do not mix
   layout directives with include lines in a manifest.
-- Include paths are relative to the file containing the directive. Only UTF-8 `.djot` files are
-  accepted. Absolute paths, `..`, backslashes, missing files, and symlinks outside the master
-  directory are rejected. Includes use no shell, network lookup, glob expansion, or executable code.
+- Ordinary include paths are relative to the containing file and stay inside the master directory.
+  A `repo:` prefix resolves from the containing Git checkout root, enabling course-wide evergreen
+  sources. Only UTF-8 `.djot` files are accepted. Absolute paths, `..`, backslashes, missing files,
+  and symlinks escaping the allowed tree are rejected. Includes use no network lookup, glob
+  expansion, or executable source code. Repository-root discovery uses `git rev-parse`.
 - Nested manifests are supported up to 32 levels. Circular includes fail at the offending
   directive. Repeating a chapter deliberately repeats its slides in the combined deck.
 - The master controls the course theme. Chapters inherit it when omitted; an explicitly different
   chapter theme is an error. Keeping a matching theme on a chapter also supports standalone builds.
-- Image paths throughout the lecture remain relative to the master file's directory. Keep sibling
+- Shared images use `repo:genetics/evergreen/assets/<filename>` to resolve inside the repository.
+  Lint, measurement, and ODP packaging use the same resolver. Ordinary image paths remain relative
+  to the master file's directory. Keep sibling
   chapter files beside the master when they share its `assets/` directory. Moving slides between
   those files does not require changing image paths. A chapter in a subdirectory still uses the
   master image base when included.

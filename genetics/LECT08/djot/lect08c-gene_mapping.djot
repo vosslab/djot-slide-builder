@@ -154,7 +154,7 @@ hidden: true
 
 @body
 
-- Alfred Sturtevant, one of Morgan&#8217;s students, constructed a genetic map, an ordered list of the genetic loci along a particular chromosome
+- Alfred Sturtevant, one of Morgan's students, constructed a genetic map, an ordered list of the genetic loci along a particular chromosome
 - Sturtevant predicted that the [*farther apart two genes are, the higher the probability that a crossover will occur between them*]{color=green} and therefore the higher the recombination frequency
 
 === layout: one-panel
@@ -230,7 +230,7 @@ $\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%
 
 - The b&#8211;vg recombination frequency (17%) is slightly less than the sum of the b&#8211;cn and cn&#8211;vg frequencies (9 + 9.5 = 18.5%).
   - This is because of the few times that crossover occurs between both b&#8211;cn and cn&#8211;vg.
-  - A second crossover would &#8220;cancel out&#8221; the first, reducing the observed b&#8211;vg recombination frequency.
+  - A second crossover would "cancel out" the first, reducing the observed b&#8211;vg recombination frequency.
 - The value of 18.5% (18.5 map units) is closer to the [*actual distance*]{underline=true} between the genes.
   - In practice, a geneticist would add the smaller distances in constructing a map.
 

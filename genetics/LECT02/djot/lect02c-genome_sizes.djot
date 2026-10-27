@@ -372,7 +372,7 @@ Answer\: D
 @left
 
 - There are service that looks at only the highly variable parts of Human DNA
-  - Based on single nucleotide polymorphisms (SNPs or “snips”)
+  - Based on single nucleotide polymorphisms (SNPs or "snips")
   - The nucleotide diversity between humans is about 0.1%
   - But only 1% of these are expected to have any meaningful difference
     - so only about 30,000 letters are important
@@ -603,7 +603,7 @@ Answer\: A
 
 @body
 
-- 98.5% “junk” DNA
+- 98.5% "junk" DNA
 - 1.5% protein-coding genes
 
 === layout: one-panel

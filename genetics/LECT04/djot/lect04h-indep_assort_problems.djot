@@ -313,7 +313,7 @@ color-theme: genetics
 
 - Step 2\: what are the gametes?
   - 1\: Aa – 2\: Bb, bb – 2\: Cc, cc – 1\: Dd – 2\: Ee, ee
-- Step 3\: What are heterozygote probabilities of each gene’s genotype?
+- Step 3\: What are heterozygote probabilities of each gene's genotype?
   - Aa\: 100%
   - Bb\: 50%
   - Cc\: 50%
@@ -327,7 +327,7 @@ color-theme: genetics
 
 ![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
 
-- Step 3\: What are probabilities of each gene’s genotype?
+- Step 3\: What are probabilities of each gene's genotype?
   - Aa\: 100%
   - Bb\: 50%
   - Cc\: 50%
@@ -342,7 +342,7 @@ color-theme: genetics
 
 ![Slide image 5](assets/lect04h-indep_assort_problems/image_005.png)
 
-- Step 3\: What are probabilities of each gene’s genotype?
+- Step 3\: What are probabilities of each gene's genotype?
   - Aa\: 100% -- Bb\: 50% -- Cc\: 50% -- Dd\: 100% -- Ee\: 50%
 - Step 4\: Are they independent?
   - Yes, states independent assortment above

@@ -2,6 +2,22 @@
 
 ### Additions and New Features
 
+- Move Genetics reusable quiz/exam guidance, first-week assignments, evaluations, and constant
+  opening course information to `genetics/evergreen/`. Preserve LECT08's weekly content,
+  instructor wording, order, and visibility; keep dated midterm details in the weekly master.
+  Add explicit repository-relative includes and shared images with checkout containment;
+  preserve ordinary local include boundaries. Keep podcast refresh safe around include blocks.
+
+- Record the preference for straight ASCII quotes and apostrophes. Normalize curly quotation
+  marks and apostrophes, including encoded forms such as `&#8217;`, in genetics, biotech, and
+  biostats Djot sources; verify changed files still parse.
+
+- Align announcement guidance with the instructor's long-URL citations and quiz visibility
+  for the current or following week. Remove conflicting advice to put schedule URLs in notes.
+  Group Genetics LECT08 quiz guidance with the existing include mechanism; preserve its edited
+  text and visible status. Restore two first-week assignments and five course-evaluation slides
+  as hidden groups, replacing obsolete evaluation deadlines with a published-deadline reminder.
+
 - Clean administrative notes across genetics, biotech, and biostats while retaining lecture
   prompts and explanations. Stop YouTube and podcast generators from adding metadata notes;
   identify podcast slides by their thumbnail path so refresh remains repeatable. Update syntax

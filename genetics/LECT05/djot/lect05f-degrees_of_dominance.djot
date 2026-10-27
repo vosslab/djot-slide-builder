@@ -71,7 +71,7 @@ The next slides introduce the terms used for those patterns.
 
 - The phenotype of the heterozygote is a blend or intermediate between the two parental phenotypes.
 - Neither allele is completely dominant, resulting in a mixed or blended trait.
-- Example\: In a specific variety of flower known as the four o&rsquo;clock plant, crossing red-flowered (RR) and white-flowered (WW) plants results in offspring with a light pink flower color (RW), illustrating blending rather than dominance.
+- Example\: In a specific variety of flower known as the four o'clock plant, crossing red-flowered (RR) and white-flowered (WW) plants results in offspring with a light pink flower color (RW), illustrating blending rather than dominance.
 
 === layout: two-panels
 
@@ -169,7 +169,7 @@ The next slides introduce the terms used for those patterns.
 
 @body
 
-- The heterozygote&rsquo;s phenotype expresses both alleles independently and distinctly.
+- The heterozygote's phenotype expresses both alleles independently and distinctly.
 - Neither allele is masked; both traits appear side by side without blending.
 - Example\: In certain species of chickens, the allele for black feathers (B) is codominant with the allele for white feathers (W), resulting in offspring with checkered or speckled feathers (BW).
 
@@ -627,8 +627,8 @@ The next slides introduce the terms used for those patterns.
 @right
 
 - HH = curly hair
-- HH&rsquo; = wavy hair
-- H&rsquo;H&rsquo; = straight hair
+- HH' = wavy hair
+- H'H' = straight hair
 
 - [A. complete]{color=green}
 - [B. co-dominance]{color=blue}

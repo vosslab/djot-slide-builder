@@ -23,7 +23,7 @@ hidden: true
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 
@@ -73,7 +73,7 @@ hidden: true
 
 === layout: section
 
-# Mendel’s Law of Segregation predicts how a [single characteristic]{color=red} associated with a [single gene]{color=red} is inherited. In some cases, though, we might want to predict the inheritance of two characteristics associated with two different genes. How can we do this?
+# Mendel's Law of Segregation predicts how a [single characteristic]{color=red} associated with a [single gene]{color=red} is inherited. In some cases, though, we might want to predict the inheritance of two characteristics associated with two different genes. How can we do this?
 
 === layout: section
 
@@ -130,7 +130,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 

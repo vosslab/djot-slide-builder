@@ -11,7 +11,7 @@ color-theme: genetics
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 
@@ -27,7 +27,7 @@ color-theme: genetics
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 
@@ -238,7 +238,7 @@ hidden: true
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 
@@ -373,8 +373,8 @@ hidden: true
 - How do traits of parents combine to produce offspring?
 - What principles account for the passing of traits from parents to offspring?
 - Two hypotheses\:
-  - “blending” hypothesis
-  - “particulate” hypothesis
+  - "blending" hypothesis
+  - "particulate" hypothesis
 
 === layout: one-panel
 
@@ -384,7 +384,7 @@ hidden: true
 
 ![Slide image 3](assets/lect04c-two_principles/image_003.png)
 
-- The “blending” hypothesis is the idea that genetic material from the two parents blends together
+- The "blending" hypothesis is the idea that genetic material from the two parents blends together
   - like blue and yellow paint blend to make green
 
 === layout: one-panel
@@ -400,7 +400,7 @@ hidden: true
 
 @top
 
-- The “blending” hypothesis is the idea that genetic material from the two parents blends together
+- The "blending" hypothesis is the idea that genetic material from the two parents blends together
   - like blue and yellow paint blend to make green
 - [If this process were true, the variation in a population would be reduced]{color=red}
   - a fact that caused Charles Darwin and many other early biologists to doubt the validity of the hypothesis.
@@ -417,7 +417,7 @@ hidden: true
 
 ![Slide image 5](assets/lect04c-two_principles/image_005.png)
 
-- The “particulate” hypothesis is the idea that parents pass on discrete heritable units (genes)
+- The "particulate" hypothesis is the idea that parents pass on discrete heritable units (genes)
 - Mendel documented a particulate mechanism through his experiments with garden peas
 - Mendel came up with the idea of dominance
 
@@ -427,7 +427,7 @@ hidden: true
 
 === layout: one-panel
 
-# Mendel’s Four Principles of Heredity
+# Mendel's Four Principles of Heredity
 
 @body
 

@@ -64,3 +64,18 @@ def test_project_link_uses_pages_and_never_substitutes_a_repository() -> None:
 		description + "\nhttps://vosslab.github.io/another/"):
 		with pytest.raises(ValueError, match="GitHub Pages"):
 			tools.refresh_podcast.project_url(invalid)
+
+
+def test_refresh_preserves_evergreen_includes() -> None:
+	"""Updating a weekly episode must retain the shared channel and following course slides."""
+	source = ("=== layout: title-slide\n# Announcements\n"
+		"=== include: repo:genetics/evergreen/youtube_channel.djot\n\n"
+		"=== include: repo:genetics/evergreen/course_information.djot\n\n"
+		"=== include: repo:genetics/evergreen/exam_guidance.djot\nhidden: true\n")
+	episode = {"id": "aaaaaaaaaaa", "title": "Example", "published": "2026-10-22T00:00:00Z",
+		"project_url": "https://vosslab.github.io/game/"}
+	updated = tools.refresh_podcast.update_source(source, episode)
+	assert tools.refresh_podcast.update_source(updated, episode) == updated
+	assert updated.index("youtube_channel.djot") < updated.index(episode["id"])
+	assert updated.index(episode["id"]) < updated.index("course_information.djot")
+	assert updated.endswith("exam_guidance.djot\nhidden: true\n")

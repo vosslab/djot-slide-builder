@@ -39,11 +39,10 @@ def image_problem(path: pathlib.Path, deck: slide_lib.native_model.Deck,
 		image: slide_lib.native_model.Image) -> LintProblem | None:
 	"""Return one safe-local-image failure for a parsed component image."""
 	path = image.location.path
-	candidate = pathlib.PurePosixPath(image.source)
-	if candidate.is_absolute() or ".." in candidate.parts:
-		return LintProblem(path, image.location.line,
-			"image path must be a local relative path without traversal")
-	image_path = (deck.asset_root / image.source).resolve()
+	try:
+		image_path = slide_lib.djot_sources.image_path(deck, image)
+	except ValueError as error:
+		return LintProblem(path, image.location.line, str(error))
 	if not image_path.is_relative_to(deck.repo_root):
 		return LintProblem(path, image.location.line,
 			f"component image must be inside the repository: {image.source}")

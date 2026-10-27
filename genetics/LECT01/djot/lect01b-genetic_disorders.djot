@@ -135,7 +135,7 @@ color-theme: genetics
   - Cri du chat
   - DiGeorge syndrome
   - Down syndrome
-  - Edward’s syndrome
+  - Edward's syndrome
   - Jacobsen Syndrome
   - Klinefelter syndrome
   - Miller-Dieker Syndrome
@@ -219,7 +219,7 @@ color-theme: genetics
 
 @body
 
-- Group 1\: Huntington’s Disease
+- Group 1\: Huntington's Disease
 - Group 3\: DiGeorge syndrome
 - Group 4\: Cri Du  Chat syndrome
 - Group 5\: Maple  Syrup Urine Disease

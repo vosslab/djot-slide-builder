@@ -59,7 +59,7 @@ hidden: true
 
 - [Choose your own room]{color=blue}
   - [max 6 students]{color=blue}
-  - [opt out room, don’t participate get 18 points automatically]{color=blue}
+  - [opt out room, don't participate get 18 points automatically]{color=blue}
 
 === layout: one-panel
 hidden: true
@@ -253,7 +253,7 @@ Play the Game: https://vosslab.github.io/Fold-Spacer/
 
 === layout: two-panels
 
-# Idiom\: “build the plane while flying it”
+# Idiom\: "build the plane while flying it"
 
 @left
 
@@ -339,12 +339,12 @@ Play the Game: https://vosslab.github.io/Fold-Spacer/
 
 === layout: one-panel
 
-# [Don’t Panic]{color=red}
+# [Don't Panic]{color=red}
 
 @body
 
 - If you experience internet troubles or non-academic distractions during a quiz/exam\:
-  - 1. Don’t panic
+  - 1. Don't panic
   - 2. Stop and close the quiz/exam without looking at all the questions
   - 3. [Contact me immediately]{color=red}, preferably via Discord, but you do not need to rush
 - Note\: Once class begins, I no longer check my email.
@@ -795,7 +795,7 @@ hidden: true
 
 - Registration for Spring 2025 usually starts November 1
 - Meet with your advisor to get your registration code.
-  - If they don’t know who your advisor is, you should look in DegreeWorks, EAB, or contact the department office.
+  - If they don't know who your advisor is, you should look in DegreeWorks, EAB, or contact the department office.
 
 === layout: one-panel
 hidden: true

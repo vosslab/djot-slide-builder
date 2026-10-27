@@ -6,12 +6,14 @@ import unittest.mock
 
 # Third-Party Modules
 import pytest
+import PIL.Image
 
 # Local Modules
 import slide_lib.djot_errors
 import slide_lib.djot_lint
 import slide_lib.djot_parser
 import slide_lib.native_export
+import slide_lib.layout_measurement
 
 
 #============================================
@@ -130,3 +132,64 @@ def test_include_text_in_notes_is_literal_and_manifests_do_not_mix_slides(tmp_pa
 	path.write_text("include: chapter.djot\n=== layout: blank\n")
 	with pytest.raises(slide_lib.djot_errors.DjotParseError, match="manifest lines"):
 		slide_lib.djot_parser.parse_deck(path)
+
+
+#============================================
+def test_repository_includes_share_guidance_and_enforce_checkout_boundary(
+		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
+	"""Lectures share one evergreen copy while traversal and escaping symlinks fail."""
+	root = tmp_path / "repo"
+	lecture = root / "genetics" / "LECT08" / "djot"
+	shared = root / "genetics" / "evergreen"
+	lecture.mkdir(parents=True)
+	shared.mkdir(parents=True)
+	chapter = shared / "exam.djot"
+	chapter.write_text("=== layout: blank\n=== layout: blank\n")
+	monkeypatch.setattr("slide_lib.djot_sources.repository_root", lambda path: root)
+	master = lecture / "announcements.djot"
+	text = "=== include: repo:genetics/evergreen/exam.djot\nhidden: true\n"
+	master.write_text(text)
+	deck = slide_lib.djot_parser.parse_deck(master)
+	assert all(slide.hidden for slide in deck.slides)
+	assert all(slide.location.path == chapter for slide in deck.slides)
+	master.write_text(text.replace("hidden: true", "hidden: false"))
+	assert not any(slide.hidden for slide in slide_lib.djot_parser.parse_deck(master).slides)
+	assert slide_lib.native_export.discover_decks(str(root), root) == [master]
+	master.write_text("=== include: repo:../outside.djot\n")
+	with pytest.raises(slide_lib.djot_errors.DjotParseError, match="without traversal"):
+		slide_lib.djot_parser.parse_deck(master)
+	outside = tmp_path / "outside.djot"
+	outside.write_text("=== layout: blank\n")
+	(shared / "escape.djot").symlink_to(outside)
+	master.write_text("=== include: repo:genetics/evergreen/escape.djot\n")
+	with pytest.raises(slide_lib.djot_errors.DjotParseError, match="inside the repository"):
+		slide_lib.djot_parser.parse_deck(master)
+
+
+#============================================
+def test_repository_images_lint_measure_and_package_from_shared_assets(
+		tmp_path: pathlib.Path) -> None:
+	"""Shared figures must work beyond parsing and cannot escape the checkout via symlinks."""
+	root = tmp_path / "repo"
+	lecture = root / "genetics" / "LECT08"
+	assets = root / "genetics" / "evergreen" / "assets"
+	lecture.mkdir(parents=True)
+	assets.mkdir(parents=True)
+	(root / ".git").mkdir()
+	image = assets / "figure.png"
+	PIL.Image.new("RGB", (32, 18)).save(image)
+	master = lecture / "announcements.djot"
+	master.write_text("=== layout: one-panel\n@body\n"
+		"![Figure](repo:genetics/evergreen/assets/figure.png)\n")
+	problems, _summary = slide_lib.djot_lint.lint_paths([master])
+	assert not problems
+	deck = slide_lib.djot_parser.parse_deck(master)
+	picture = deck.slides[0].cells[0].blocks[0]
+	assert slide_lib.layout_measurement.image_size(deck, picture) == (32, 18)
+	output = slide_lib.native_export.render_native_odp(deck, tmp_path / "shared.odp")
+	assert output.is_file()
+	outside = tmp_path / "outside.png"
+	image.rename(outside)
+	image.symlink_to(outside)
+	problems, _summary = slide_lib.djot_lint.lint_paths([master])
+	assert "inside the repository" in problems[0].message

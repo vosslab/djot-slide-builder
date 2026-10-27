@@ -67,9 +67,9 @@ color-theme: genetics
 
 @left
 
-- Each organism has its own “Genetic Blueprint” that makes it different from others.
+- Each organism has its own "Genetic Blueprint" that makes it different from others.
 - The genetic information is stored in the chromosomes located in the nucleus.
-- The genetic information is stored as discrete instructions called “genes”.
+- The genetic information is stored as discrete instructions called "genes".
 
 @right
 
@@ -167,7 +167,7 @@ Native reconstruction needed: 68 positioned diagram labels.
 
 @left
 
-- Mendel’s experiments with pea plants led him to postulate on the existence of “heritable factors”
+- Mendel's experiments with pea plants led him to postulate on the existence of "heritable factors"
 - In 1909, Archibald Gerrod suggested that genotype dictates phenotype through enzymes that catalyze specific chemical reactions
 
 @right
@@ -449,7 +449,7 @@ Answer\: D
 
 @body
 
-- Many proteins are composed of several polypeptides, each of which has its own gene. Beadle and Tatum’s hypothesis is now\:
+- Many proteins are composed of several polypeptides, each of which has its own gene. Beadle and Tatum's hypothesis is now\:
   - one gene–one polypeptide
 - Note that it is common to refer to gene products as proteins rather than polypeptides
 

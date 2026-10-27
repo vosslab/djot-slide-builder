@@ -400,7 +400,7 @@ Assume that each child has an equal likelihood of being a boy or a girl.
 
 ![Slide image 15](assets/source_fidelity/lect07b/image_015.png)
 
-- use the &#8220;choose&#8221; function
+- use the "choose" function
 
 === layout: one-panel
 @replaceme
@@ -508,7 +508,7 @@ Assume that each child has an equal likelihood of being a boy or a girl.
 
 - Remember there are no calculators on quizzes
 - So, your job will mainly to take the numbers from the question and properly plug them into the binomial equation.
-- I will provide Pascal&#8217;s triangle, if is necessary, but usually I just give you the answer like on the right.
+- I will provide Pascal's triangle, if is necessary, but usually I just give you the answer like on the right.
 
 === layout: two-panels
 @replaceme

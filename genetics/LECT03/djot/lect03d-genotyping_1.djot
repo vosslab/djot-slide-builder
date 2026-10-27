@@ -40,7 +40,7 @@ color-theme: genetics
 
 - SNP genotyping is the measurement of genetic variations of single nucleotide polymorphisms (SNPs).
   - It is a form of genotyping, which is the measurement of more general genetic variation.
-- A single-nucleotide polymorphism (pronounced “snips” ✂︎✂✂)
+- A single-nucleotide polymorphism (pronounced "snips" ✂︎✂✂)
   - is a substitution of a single nucleotide at a specific position in the genome, that is present in a sufficiently large fraction of the population (e.g. 1% or more)
 
 === layout: two-panels
@@ -94,7 +94,7 @@ color-theme: genetics
 @right
 
 - There are service that looks at only the highly variable parts of Human DNA
-- Based on single nucleotide polymorphisms (SNPs or “snips”)
+- Based on single nucleotide polymorphisms (SNPs or "snips")
   - The nucleotide diversity between humans is about 0.1%
   - But only 1% of these are expected to have any meaningful difference
   - so only about 30,000 letters are important
@@ -245,7 +245,7 @@ color-theme: genetics
 
 === layout: two-panels
 
-# I’m Korean, Just Korean
+# I'm Korean, Just Korean
 
 @left
 

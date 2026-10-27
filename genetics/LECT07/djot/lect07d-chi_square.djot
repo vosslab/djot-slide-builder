@@ -56,7 +56,7 @@ color-theme: genetics
 @body
 
 - If the [null hypothesis is rejected]{color=red}, then we [support the alternative hypothesis]{color=#00A933}.
-  - Example\: [Null hypothesis\: &#8220;our situation is unbiased&#8221;]{color=red} [Alternative hypothesis &#8220;our situation is biased&#8221;]{color=#00A933}
+  - Example\: [Null hypothesis\: "our situation is unbiased"]{color=red} [Alternative hypothesis "our situation is biased"]{color=#00A933}
 - [Chi-squared statistic]{color=#650953} vs. [Critical value]{color=blue}\:
   - Larger [Chi-squared statistic]{color=#650953} values provide stronger evidence [against the null hypothesis]{color=red}.
     - [Do not reject null hypothesis]{color=green} if [Chi-squared statistic]{color=#650953} is less than or equal to [Critical value]{color=blue}.
@@ -426,7 +426,7 @@ Degree of Freedom: 4 - 1 = 3
 
 === layout: section
 
-# Chi-Square (&chi;^2^) Test of Mendel&#8217;s Data Group Exercise
+# Chi-Square (&chi;^2^) Test of Mendel's Data Group Exercise
 
 === layout: one-panel
 
@@ -657,7 +657,7 @@ Bullets paraphrase the quotation; the final judgment belongs to its author.
 @body
 
 - If the [null hypothesis is rejected]{color=red}, then we [support the alternative hypothesis]{color=#00A933}.
-  - Example\: [Null hypothesis\: &#8220;our situation is unbiased&#8221;]{color=red} [Alternative hypothesis &#8220;our situation is biased&#8221;]{color=#00A933}
+  - Example\: [Null hypothesis\: "our situation is unbiased"]{color=red} [Alternative hypothesis "our situation is biased"]{color=#00A933}
 - [Chi-squared statistic]{color=#650953} vs. [Critical value]{color=blue}\:
   - Larger [Chi-squared statistic]{color=#650953} values provide stronger evidence [against the null hypothesis]{color=red}.
     - [Do not reject null hypothesis]{color=green} if [Chi-squared statistic]{color=#650953} is less than or equal to [Critical value]{color=blue}.

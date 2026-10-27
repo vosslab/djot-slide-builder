@@ -1,9 +1,10 @@
 """Load ordered chapter manifests without flattening physical source locations."""
 
 # Standard Library
-import dataclasses
-import pathlib
 import re
+import pathlib
+import dataclasses
+import subprocess
 
 # Local Modules
 import slide_lib.djot_errors
@@ -84,20 +85,35 @@ def source_header(path: pathlib.Path, text: str) -> tuple[str | None, list[tuple
 
 
 #============================================
+def repository_root(path: pathlib.Path) -> pathlib.Path:
+	"""Resolve a shared include against its containing Git checkout."""
+	result = subprocess.run(["git", "-C", str(path.parent), "rev-parse", "--show-toplevel"],
+		check=True, capture_output=True, text=True)
+	root = pathlib.Path(result.stdout.strip()).resolve()
+	return root
+
+
+#============================================
 def include_target(path: pathlib.Path, line: int, value: str,
 		root: pathlib.Path) -> pathlib.Path:
-	"""Resolve an exact include inside the master file's directory tree."""
+	"""Resolve a local chapter or explicit repository include within its allowed tree."""
 	if not value.startswith("include: ") or value != value.strip():
 		fail(path, line, "manifest lines must be exactly include: <relative.djot>")
 	name = value.removeprefix("include: ")
+	shared = name.startswith("repo:")
+	if shared:
+		name = name.removeprefix("repo:")
 	candidate = pathlib.PurePosixPath(name)
 	# ASVS 2.2.1, 5.3.2: only local Djot paths; resolve symlinks before containment checks.
 	if (not name or name != name.strip() or candidate.is_absolute() or
 			".." in candidate.parts or "\\" in name or candidate.suffix != ".djot"):
 		fail(path, line, "include needs a relative .djot path without traversal")
-	target = (path.parent / name).resolve()
-	if not target.is_relative_to(root):
-		fail(path, line, "included source must stay inside the master deck directory")
+	allowed_root = repository_root(path) if shared else root
+	base = allowed_root if shared else path.parent
+	target = (base / name).resolve()
+	if not target.is_relative_to(allowed_root):
+		boundary = "repository" if shared else "master deck directory"
+		fail(path, line, f"included source must stay inside the {boundary}")
 	if not target.is_file():
 		fail(path, line, f"included source is missing: {name}")
 	return target
@@ -177,7 +193,8 @@ def walk_sources(path: pathlib.Path, root: pathlib.Path, inherited_theme: str | 
 			fail(path, number, f"circular include: {target.name}")
 		if len(ancestors) >= 31:
 			fail(path, number, "includes exceed 32 nested manifests; flatten the chapter list")
-		walk_sources(target, root, theme, (*ancestors, path), files, paths, include_hidden)
+		target_root = repository_root(path) if value.startswith("include: repo:") else root
+		walk_sources(target, target_root, theme, (*ancestors, path), files, paths, include_hidden)
 	return theme
 
 
@@ -210,3 +227,17 @@ def root_sources(candidates: list[pathlib.Path]) -> list[pathlib.Path]:
 		if path.resolve() not in visited:
 			visited.update(load_sources(path).paths)
 	return result
+
+
+#============================================
+def image_path(deck: slide_lib.native_model.Deck,
+		image: slide_lib.native_model.Image) -> pathlib.Path:
+	"""Resolve explicit repository assets or ordinary master-relative component images."""
+	shared = image.source.startswith("repo:")
+	name = image.source.removeprefix("repo:") if shared else image.source
+	candidate = pathlib.PurePosixPath(name)
+	if candidate.is_absolute() or ".." in candidate.parts or "\\" in name:
+		raise ValueError("image path must be a local relative path without traversal")
+	base = deck.repo_root if shared else deck.asset_root
+	path = (base / name).resolve()
+	return path

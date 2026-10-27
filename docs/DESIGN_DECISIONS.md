@@ -828,3 +828,23 @@ advisory reporting only, not text, font selection, or rendering.
 whose old metadata notes have been removed. Duplicate managed slides still stop refresh.
 
 **Owner.** `tools/refresh_podcast.py` and [USAGE.md](USAGE.md).
+
+### Announcement groups and visibility
+
+**Decision.** Keep Genetics quiz and exam guidance, first-week assignments, course evaluations,
+and constant course-information slides in `genetics/evergreen/`. Weekly masters use explicit
+`repo:` includes and one visibility flag per group. Shared assets use the same `repo:` prefix.
+
+**Why.** The instructor wants quiz guidance shown this week or next week when a quiz is due,
+and early assignments and future evaluation slides preserved for reuse. Existing mixed
+includes already support the required visibility behavior.
+
+**Consequence.** Preserve the edited quiz wording and surrounding announcement slides.
+Retain early assignments and evaluations hidden, and replace obsolete evaluation deadlines
+with a published-deadline reminder. Future weekly decks reference these groups. Keep weekly
+content and dated exam details in the master. Ordinary local includes retain their existing
+containment boundary; explicit repository includes and images stay inside the Git checkout.
+Podcast refresh recognizes include boundaries, preserving the shared channel and course slides.
+
+**Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
+and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.
