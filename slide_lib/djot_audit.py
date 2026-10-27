@@ -7,17 +7,19 @@ import slide_lib.layout_measurement
 import slide_lib.layout_primitives
 import slide_lib.native_export
 import slide_lib.presentation_theme
+import slide_lib.typography
 
 
 def paragraph_lines(paragraph: slide_lib.layout_content.TextParagraph, width: float,
 		session: slide_lib.layout_measurement.MeasurementSession) -> list[tuple[str, float]]:
 	"""Return measured text and ink widths, excluding trailing whitespace."""
 	tokens = tuple((run.text, run.style.font_family, run.style.bold, run.style.italic,
-		run.style.literal_url) for run in paragraph.inlines)
+		run.style.literal_url) if isinstance(run, slide_lib.layout_content.TextRun)
+		else ("\n", "", False, False, False) for run in paragraph.inlines)
 	if paragraph.list_metadata is not None:
 		width -= session.theme.list_levels[paragraph.list_metadata.level].text_position
 	size = paragraph.typography.selected_size_pt
-	wrapped, _widths = session.wrap_tokens(tokens, size, max(width, 1.0))
+	wrapped, _widths = session.wrap_tokens(tokens, size, max(width, 1.0), balance=False)
 	lines = []
 	for line in wrapped:
 		text = "".join(token[0] for token in line).rstrip()
@@ -37,9 +39,7 @@ def typography_issue(lines: list[tuple[str, float]], title: bool = False) -> str
 		return None
 	if title:
 		return "title-wrap"
-	last_text, last_width = lines[-1]
-	previous_width = lines[-2][1]
-	if last_text and (len(last_text.split()) == 1 or last_width < previous_width / 3):
+	if slide_lib.typography.has_runt(lines):
 		return "runt"
 	return None
 
@@ -87,6 +87,7 @@ def audit(input_value: str) -> dict[str, object]:
 							"font_size_pt": run.style.size_pt,
 							"message": "URL still exceeds its text region at the 12 pt floor"})
 					if any(not isinstance(run, slide_lib.layout_content.TextRun)
+							and not (isinstance(run, slide_lib.layout_content.LineBreak) and run.automatic)
 							for run in paragraph.inlines):
 						skipped["math-or-explicit-break-paragraphs"] += 1
 						continue

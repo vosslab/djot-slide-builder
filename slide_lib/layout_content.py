@@ -48,7 +48,7 @@ class TextRun:
 
 @dataclass(frozen=True)
 class LineBreak:
-	pass
+	automatic: bool = False
 
 
 @dataclass(frozen=True)
@@ -115,11 +115,16 @@ class TableCell:
 	column_span: int = 1
 	row_span: int = 1
 	fill_role: StyleRole | None = None
+	fill_color: str | None = None
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "paragraphs")
 		require_positive_integer(self.column_span, "table column span")
 		require_positive_integer(self.row_span, "table row span")
+		if self.fill_color is not None and (
+				len(self.fill_color) != 6 or any(character not in "0123456789ABCDEFabcdef"
+				for character in self.fill_color)):
+			raise ValueError("resolved table fill colors require six hexadecimal digits")
 
 
 @dataclass(frozen=True)
@@ -285,8 +290,13 @@ class ShapeContent:
 	accessibility: ObjectAccessibility
 	text: TextContent | None = None
 	link_url: str | None = None
+	points: tuple[LogicalPoint, ...] = ()
 
 	def __post_init__(self) -> None:
+		if self.kind is ShapeKind.POLYGON and len(self.points) < 3:
+			raise ValueError("polygons require at least three vertices")
+		if self.kind is not ShapeKind.POLYGON and self.points:
+			raise ValueError("only polygons accept vertices")
 		if self.accessibility.decorative and (self.text is not None or self.link_url is not None):
 			raise ValueError("decorative shapes cannot carry semantic text or links")
 		if self.kind is ShapeKind.ROUNDED_RECTANGLE and self.style.corner_radius_pt <= 0:

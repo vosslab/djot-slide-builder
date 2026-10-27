@@ -12,9 +12,9 @@ color-theme: genetics
 
 ## October 27, 2026
 
-=== layout: one-panel
+=== layout: bookend
 
-# Learning objectives
+# Learning Objectives
 
 @body
 
@@ -405,7 +405,7 @@ Both predictions are wrong...
 - (A) Alleles in the same chromosome remain together when there is no crossing over between them.
 - (B) When there is crossing over, the result is two recombinant and two non-recombinant products, because the exchange is between only two of the four chromatids.
 
-=== layout: one-panel
+=== layout: definitions
 
 # *Concepts in Genetic Linkage*
 
@@ -483,9 +483,9 @@ Both predictions are wrong...
   - inheritance of genes at one location in a genome does not influence the inheritance of genes at another location.
   - [EXCEPT WHEN GENES ARE ON THE SAME CHROMOSOME]{color=#CC00CC}
 
-=== layout: one-panel
+=== layout: bookend
 
-# Key takeaways
+# Key Takeaways
 
 @body
 

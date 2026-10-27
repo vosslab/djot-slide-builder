@@ -830,7 +830,6 @@ color-theme: genetics
 
 === layout: one-panel
 
-# Figure 20.6a
 
 @body
 
@@ -844,7 +843,6 @@ Native reconstruction needed: 24 positioned diagram labels.
 
 === layout: one-panel
 
-# Figure 20.UN04
 
 @body
 
@@ -856,7 +854,6 @@ Native reconstruction needed: 13 positioned diagram labels.
 
 === layout: one-panel
 
-# Figure 20.6b
 
 @body
 
@@ -869,7 +866,6 @@ Native reconstruction needed: 49 positioned diagram labels.
 
 === layout: one-panel
 
-# Figure 20.6c
 
 @body
 

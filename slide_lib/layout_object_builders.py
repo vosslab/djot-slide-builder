@@ -178,6 +178,21 @@ def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], 
 		session: slide_lib.layout_measurement.MeasurementSession | None = None,
 		) -> tuple[slide_lib.layout_content.InlineContent, ...]:
 	"""Emit exact-width, grapheme-safe break markers retained by native adapters."""
+	if inlines and all(isinstance(run, slide_lib.layout_content.TextRun)
+			and not run.style.literal_url for run in inlines):
+		measure = session or slide_lib.layout_measurement.MeasurementSession(theme)
+		tokens = tuple((run.text, run.style.font_family, run.style.bold, run.style.italic, False)
+			for run in inlines)
+		lines, _widths = measure.wrap_tokens(tokens, size, max(width, 1.0))
+		ordinary, _widths = measure.wrap_tokens(tokens, size, max(width, 1.0), balance=False)
+		if lines != ordinary:
+			balanced = []
+			for number, line in enumerate(lines):
+				if number:
+					balanced.append(slide_lib.layout_content.LineBreak(automatic=True))
+				for text, _family, _bold, _italic, _literal, _size, source_index in line:
+					balanced.append(dataclasses.replace(inlines[source_index], text=text))
+			return tuple(balanced)
 	result: list[slide_lib.layout_content.InlineContent] = []
 	url_sizes = {}
 	if any(isinstance(run, slide_lib.layout_content.TextRun) and run.style.literal_url for run in inlines):
@@ -236,24 +251,32 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 		min(theme.body_floor_size_pt, size))
 	measurements = slide_lib.layout_measurement.table_measurements(
 		table, size, rectangle.width, theme, session)
-	def row_content(cells: tuple[tuple[slide_lib.native_model.Inline, ...], ...],
+	def row_content(cells: tuple[slide_lib.native_model.TableCell, ...],
 			header: bool) -> slide_lib.layout_content.TableRow:
 		"""Project one semantic table row."""
 		projected = []
-		labels = ["".join(run.text for run in resolved_runs(cell, FOREGROUND,
+		labels = ["".join(run.text for run in resolved_runs(cell.inlines, FOREGROUND,
 			theme.accent_color, False) if isinstance(run, slide_lib.layout_content.TextRun))
 			for cell in cells]
 		total = not header and labels[0].strip().casefold() in ("total", "totals", "grand total")
-		for column, cell in enumerate(cells):
+		for index, (column, cell) in enumerate(slide_lib.native_model.table_cell_positions(cells)):
 			width = slide_lib.layout_measurement.table_cell_text_width(
-				measurements.column_widths[column], theme)
+				sum(measurements.column_widths[column:column + cell.column_span]), theme)
 			properties = slide_lib.layout_measurement.paragraph_properties(
-				cell, size, width, theme, terminal=True, bold=header or total, session=session)
-			if not header and re.fullmatch(r"[+-]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?", labels[column].strip()):
+				cell.inlines, size, width, theme, terminal=True, bold=header or total, session=session)
+			if header:
+				properties = dataclasses.replace(properties,
+					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER)
+			if not header and re.fullmatch(r"[+−–-]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?", labels[index].strip()):
 				properties = dataclasses.replace(properties,
 					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.END)
+			if cell.text_alignment is not None:
+				alignment = {"left": slide_lib.layout_primitives.HorizontalAlignment.START,
+					"center": slide_lib.layout_primitives.HorizontalAlignment.CENTER,
+					"right": slide_lib.layout_primitives.HorizontalAlignment.END}[cell.text_alignment]
+				properties = dataclasses.replace(properties, horizontal_alignment=alignment)
 			paragraph = slide_lib.layout_content.TextParagraph(_fragment_runs(
-				resolved_runs(cell, WHITE if header else FOREGROUND,
+				resolved_runs(cell.inlines, WHITE if header else FOREGROUND,
 					theme.accent_color, header or total), size, width, theme, session),
 				typography, properties)
 			projected.append(slide_lib.layout_content.TableCell((paragraph,),
@@ -263,7 +286,9 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 					slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
 					slide_lib.layout_measurement.TABLE_VERTICAL_PADDING),
 				slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
-				fill_role=slide_lib.layout_primitives.StyleRole.ACCENT_TINT if total else None))
+				fill_role=slide_lib.layout_primitives.StyleRole.ACCENT_TINT if total else None,
+				fill_color=cell.background_color[1:] if cell.background_color else None,
+				column_span=cell.column_span))
 		return slide_lib.layout_content.TableRow(tuple(projected))
 	headers = (row_content(table.headers, True),) if table.headers else ()
 	body = tuple(row_content(row, False) for row in table.rows)

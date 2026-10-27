@@ -119,7 +119,7 @@ def _parse_runs(path: pathlib.Path, line: int, source: str, start: int,
 			text_start = index
 			continue
 		if character == "[":
-			label_end = _find_closing_bracket(source, index, end)
+			label_end = find_closing_bracket(source, index, end)
 			if label_end is None or label_end + 1 >= end:
 				raise _error(path, line, source, index, "unsupported or unterminated link syntax")
 			if source[label_end + 1] == "{":
@@ -291,8 +291,8 @@ def _find_unescaped_character(source: str, character: str, start: int, end: int)
 
 
 #============================================
-def _find_closing_bracket(source: str, start: int, end: int) -> int | None:
-	"""Find the closing bracket for a link label, permitting nested brackets."""
+def find_closing_bracket(source: str, start: int, end: int) -> int | None:
+	"""Find the closing bracket for a link or attributed span, permitting nested brackets."""
 	depth = 1
 	index = start + 1
 	while index < end:

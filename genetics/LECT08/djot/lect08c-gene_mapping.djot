@@ -12,9 +12,9 @@ color-theme: genetics
 
 ## October 27, 2026
 
-=== layout: one-panel
+=== layout: bookend
 
-# Learning objectives
+# Learning Objectives
 
 @body
 
@@ -255,7 +255,8 @@ $\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%
 
 ![Labeled diagram from source slide 24](assets/lect08c-gene_mapping/c24_labeled.svg)
 
-Figure 15.12
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
 
 === layout: two-over-one-panels
 
@@ -473,9 +474,9 @@ d = 6 map units
 => appear
 - Wait 9%+9.5% = 18.5% &#8800; 17%
 
-=== layout: one-panel
+=== layout: bookend
 
-# Key takeaways
+# Key Takeaways
 
 @body
 

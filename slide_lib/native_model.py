@@ -4,6 +4,7 @@
 import enum
 import math
 import pathlib
+import re
 from dataclasses import dataclass
 
 @dataclass(frozen=True)
@@ -232,11 +233,39 @@ class CodeBlock:
 
 
 @dataclass(frozen=True)
+class TableCell:
+	"""Editable cell text with whole-cell fill, horizontal span, and alignment."""
+	inlines: tuple[Inline, ...]
+	background_color: str | None = None
+	column_span: int = 1
+	text_alignment: str | None = None
+
+	def __post_init__(self) -> None:
+		if self.text_alignment not in (None, "left", "center", "right"):
+			raise ValueError("table cell text-align requires left, center, or right")
+		if type(self.column_span) is not int or self.column_span < 1:
+			raise ValueError("table cell colspan requires a positive integer")
+		if self.background_color is not None and re.fullmatch(
+				r"#[0-9A-Fa-f]{6}", self.background_color) is None:
+			raise ValueError("table cell background-color requires a six-digit hex color")
+
+
+def table_cell_positions(row: tuple[TableCell, ...]) -> tuple[tuple[int, TableCell], ...]:
+	"""Place source cells on the logical column grid, accounting for horizontal spans."""
+	placed = []
+	column = 0
+	for cell in row:
+		placed.append((column, cell))
+		column += cell.column_span
+	return tuple(placed)
+
+
+@dataclass(frozen=True)
 class Table:
 	"""One semantic table with editable inline header and body cells."""
 	location: SourceLocation
-	headers: tuple[tuple[Inline, ...], ...]
-	rows: tuple[tuple[tuple[Inline, ...], ...], ...]
+	headers: tuple[TableCell, ...]
+	rows: tuple[tuple[TableCell, ...], ...]
 	attributes: tuple[Attribute, ...] = ()
 	column_weights: tuple[float, ...] = ()
 	table_group: str | None = None
@@ -246,11 +275,18 @@ class Table:
 		if self.table_group is not None and self.column_weights:
 			raise ValueError("table-group and column-widths are alternative sizing modes")
 		if self.column_weights:
-			columns = len(self.headers) if self.headers else len(self.rows[0])
+			columns = self.column_count
 			if len(self.column_weights) != columns or any(
 				not math.isfinite(value) or value <= 0 for value in self.column_weights) or \
 				not math.isfinite(sum(self.column_weights)):
 				raise ValueError("table column widths require one positive finite weight per column")
+
+
+	@property
+	def column_count(self) -> int:
+		"""Count grid columns rather than source cells in a merged row."""
+		row = self.headers if self.headers else (self.rows[0] if self.rows else ())
+		return sum(cell.column_span for cell in row)
 
 
 @dataclass(frozen=True)

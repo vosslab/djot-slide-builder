@@ -125,6 +125,7 @@ class PictureFit(enum.Enum):
 
 
 class ShapeKind(enum.Enum):
+	POLYGON = "polygon"
 	RECTANGLE = "rectangle"
 	ROUNDED_RECTANGLE = "rounded-rectangle"
 	STAR = "star"

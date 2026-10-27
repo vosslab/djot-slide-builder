@@ -79,6 +79,41 @@ def reference_decorations(source: slide_lib.native_model.Slide,
 	return border, label
 
 
+def teaching_decorations(theme: slide_lib.presentation_theme.PresentationTheme,
+		order: int) -> tuple[slide_lib.layout_model.LayoutObject, ...]:
+	"""Pair thin angular bands and opposite corners with exact half-turn symmetry."""
+	main = ((20, 20), (1096, 20), (1088, 28), (28, 28), (28, 608), (20, 616))
+	corner = ((1124, 20), (1260, 20), (1260, 156), (1252, 148), (1252, 28), (1116, 28))
+	objects = []
+	for name, vertices, role in (
+			("band", main, slide_lib.layout_primitives.StyleRole.ACCENT),
+			("corner", corner, slide_lib.layout_primitives.StyleRole.ACCENT_TINT)):
+		for opposite in (False, True):
+			points = tuple(slide_lib.layout_primitives.LogicalPoint(
+				1280 - x if opposite else x, 800 - y if opposite else y) for x, y in vertices)
+			left = min(point.x for point in points)
+			top = min(point.y for point in points)
+			width = max(point.x for point in points) - left
+			height = max(point.y for point in points) - top
+			points = tuple(slide_lib.layout_primitives.LogicalPoint(point.x - left, point.y - top)
+				for point in points)
+			style = slide_lib.layout_content.ShapeStyle(role, role, 1.0,
+				slide_lib.layout_primitives.LinePattern.NONE)
+			content = slide_lib.layout_content.ShapeContent(
+				slide_lib.layout_primitives.ShapeKind.POLYGON, style,
+				slide_lib.layout_primitives.ObjectAccessibility(decorative=True), points=points)
+			item = slide_lib.layout_model.LayoutObject(
+				f"teaching-{name}-{int(opposite)}",
+				slide_lib.layout_primitives.PresentationRole.GRAPHIC,
+				slide_lib.layout_primitives.StyleRole.DECORATION,
+				slide_lib.layout_primitives.LogicalRectangle(left, top, width, height),
+				slide_lib.layout_primitives.ObjectLayer.DECORATION,
+				len(objects), order + len(objects), content,
+				origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
+			objects.append(item)
+	return tuple(objects)
+
+
 def replaceme_watermark(source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, order: int, z_index: int,
 		session: slide_lib.layout_measurement.MeasurementSession

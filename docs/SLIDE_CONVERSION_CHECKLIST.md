@@ -115,8 +115,15 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 - [ ] Inspect the content underneath existing replacement watermarks using separate diagnostic
   copies. Reassess the actual failure rather than inheriting an old import warning. Keep diagnostic
   copies clearly labeled; removing a watermark for inspection does not clear the canonical marker.
-- [ ] Check that slide titles are actual headings, not promoted figure-number captions. Keep
-  figure references with their diagrams.
+- [ ] Copy colored text and emphasis faithfully from the source: match colors, colored spans,
+  bold, underline, and cross-references in the Djot and rendered PDF. Do not flatten colored text
+  during conversion. Check repeated procedure slides against the same canonical colored version.
+- [ ] Before a new three-point testcross problem, repeat the matching colored roadmap: the
+  pairwise-distance checklist for full mapping, or the DCO checklist for quick gene-order exercises.
+  Keep the two methods' step numbering distinct. Use the fixed [COLOR_PALETTE.md](COLOR_PALETTE.md)
+  colors in rainbow order, with matching colored step cross-references.
+- [ ] Remove textbook figure-number artifacts from titles, captions, citations, and editable
+  diagram labels. Keep meaningful explanatory captions and all diagram content.
 - [ ] Inspect every rendered title for single-line fit, following the preference in
   [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md). Flag wrapping titles and record proposed shorter
   wording for review; permission to rewrite titles remains separate from checking their length.

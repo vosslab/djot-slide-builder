@@ -165,6 +165,11 @@ def _standard_slide_at_theme(deck: slide_lib.native_model.Deck, source: slide_li
 				item.frame_text, vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE))
 		slots.append(_occupy_primary_slot(name, rectangle, order, cell_objects))
 		objects.extend(cell_objects)
+	if contract.name in ("bookend", "definitions"):
+		decorations = slide_lib.layout_specialty_builders.teaching_decorations(
+			theme, len(objects))
+		objects = [*decorations, *(dataclasses.replace(item, z_index=item.z_index + len(decorations))
+			for item in objects)]
 	if contract.name == "reference":
 		border, label = slide_lib.layout_specialty_builders.reference_decorations(
 			source, theme, len(objects), session)

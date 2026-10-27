@@ -15,6 +15,7 @@ import slide_lib.layout_registry
 import slide_lib.layout_primitives
 import slide_lib.native_model
 import slide_lib.presentation_theme
+import slide_lib.teaching_layouts
 
 
 _FENCE_OPEN = re.compile(r"^(?P<mark>`{3,}|~{3,}).*$")
@@ -454,6 +455,7 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 		if note_text.strip() else ()
 	slide = slide_lib.native_model.Slide(source.location, source.layout_name, notes, global_blocks,
 		tuple(cells), hidden=hidden, replaceme=replaceme, citation=citation)
+	slide = slide_lib.teaching_layouts.format_definitions(slide)
 	return slide
 
 

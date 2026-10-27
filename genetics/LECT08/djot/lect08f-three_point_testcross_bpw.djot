@@ -1,0 +1,1121 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 08F
+
+## Three-Point Test-Cross Worked Example
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## October 27, 2026
+
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Identify parental genotypes from offspring counts.
+- Classify recombinants one gene pair at a time.
+- Calculate all three pairwise recombination frequencies.
+- Determine gene order and place map intervals.
+
+
+=== layout: two-panels
+
+# &#x1FAB0; Fruit Fly Inheritance
+
+@left
+
+- *C: chummy* - stays close to other flies.
+- *D: dewy* - has moisture droplets on its body.
+- *H: horsey* - is unusually large and strong-looking.
+- Lowercase letters identify recessive alleles; + means wild type.
+
+@right
+
+![A triple heterozygote crossed with a recessive tester, with each locus listed separately.](assets/lect08f-three_point_testcross_bpw/testcross.svg)
+
+Offspring phenotypes reveal the heterozygote's gametes.
+
+@citation
+
+Fictional fruit-fly traits; gene order is not yet known.
+
+
+=== layout: section
+
+# Three-Point Test Cross
+
+
+=== layout: one-plus-two-panels
+
+# Three-Point Test-Cross Data
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
+| [c]{text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 120 | [?]{text-align=center} |
+| [c]{text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 75 | [?]{text-align=center} |
+| [c]{text-align=center} | [+]{text-align=center} | [+]{text-align=center} | 260 | [?]{text-align=center} |
+| [+]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 290 | [?]{text-align=center} |
+| [+]{text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 75 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 130 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | [+]{text-align=center} | 21 | [?]{text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+Determine the order of C, D, and H and the recombination frequency for each pair.
+
+*r* is the recombinant fraction; multiply by 100 for percent.
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
+
+=== layout: subsection
+
+# Identify the Parents
+
+
+=== layout: one-plus-two-panels
+
+# Which Are the Parental Types?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
+| [c]{text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 120 | [?]{text-align=center} |
+| [c]{text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 75 | [?]{text-align=center} |
+| [c]{text-align=center} | [+]{text-align=center} | [+]{text-align=center} | 260 | [?]{text-align=center} |
+| [+]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 290 | [?]{text-align=center} |
+| [+]{text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 75 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 130 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | [+]{text-align=center} | 21 | [?]{text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 1: Parental Genotypes*]{color=#D40000}
+
+Which two offspring classes are most frequent?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+
+=== layout: one-plus-two-panels
+
+# The Most Frequent Types Are Parental
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
+| [c]{text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 120 | [?]{text-align=center} |
+| [c]{text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 75 | [?]{text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 75 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 130 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | [+]{text-align=center} | 21 | [?]{text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 1: Parental Genotypes*]{color=#D40000}
+
+*c++* (260) and *+dh* (290).
+
+Parent phase: c++ / +dh.
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: subsection
+
+# Compare C and D
+
+
+=== layout: one-plus-two-panels
+
+# C to D Distance: Which Numbers to Add?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{text-align=center} | [d]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 29 | [?]{text-align=center} |
+| [c]{text-align=center} | [d]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 120 | [?]{text-align=center} |
+| [c]{text-align=center} | [+]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 75 | [?]{text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{text-align=center} | [d]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 75 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 130 | [?]{text-align=center} |
+| [+]{text-align=center} | [+]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 21 | [?]{text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 2: Pick C and D*]{color=#B74300}
+
+Gene H is covered.
+
+Which combinations are parental?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-panel
+
+# Does the Pair Match Either Parent?
+
+@body
+
+![Two green parental references, c+ and +d, above offspring cd+ (120) and c+h (75); H is covered and P/R answers are withheld.](assets/lect08f-three_point_testcross_bpw/classify_cd_question.svg)
+
+
+=== layout: one-panel
+
+# Match the Pair, Not the Count
+
+@body
+
+![cd matches neither parent and is recombinant; c+ matches the first parent and is parental for C-D despite its different H allele.](assets/lect08f-three_point_testcross_bpw/classify_cd_answer.svg)
+
+@citation
+
+Counts identify the original parents. Allele combinations classify the other rows.
+
+
+=== layout: one-plus-two-panels
+
+# Parental and Recombinant C-D Types
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*120*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | [d]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*130*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*21*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 3: Classify the Offspring*]{color=#6C6C00}
+
+- Original parents: *c++ / +dh*.
+- With H covered: *c+ / +d*.
+- Recombinant pairs: ++ and cd.
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# Sum Non-Parental Types for C and D?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*120*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | [d]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*130*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*21*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4a: Sum Recombinant Counts*]{color=#007A00}
+
+Add the four bold R counts.
+
+29 + 120 + 130 + 21 = ?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# C to D Distance: Sum Recombinant Counts
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*120*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | [d]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*130*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*21*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4a: Sum Recombinant Counts*]{color=#007A00}
+
+29 + 120 + 130 + 21 = 300
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | ? | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# C to D Distance: Divide by Total
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*120*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | [d]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*130*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*21*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4b: Divide by Total Offspring*]{color=#007A00}
+
+300 / 1,000 = 0.30
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | ? |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# C to D Distance: Convert to Percent
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*120*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | [d]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | [d]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [75]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*130*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [+]{background-color=#FF8F8F text-align=center} | [+]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*21*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4c: Multiply by 100*]{color=#007A00}
+
+0.30 × 100 = [*30%*]{color=#D40000}
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: subsection
+
+# Compare C and H
+
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
+
+=== layout: one-plus-two-panels
+
+# C to H Distance: Which Numbers to Add?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
+| [c]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{text-align=center} | 120 | [?]{text-align=center} |
+| [c]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{text-align=center} | 75 | [?]{text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{text-align=center} | 75 | [?]{text-align=center} |
+| [+]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{text-align=center} | 130 | [?]{text-align=center} |
+| [+]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{text-align=center} | 21 | [?]{text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 5: Repeat With a New Pair*]{color=#003FFF}
+
+[*Step 2: Pick C and H*]{color=#B74300}
+
+Gene D is covered.
+
+Which combinations are parental?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-panel
+
+# Match the Pair, Not the Count
+
+@body
+
+![Compare the C-H offspring combinations to both original parents, with D covered.](assets/lect08f-three_point_testcross_bpw/classify_ch_answer.svg)
+
+@citation
+
+Counts identify the original parents. Allele combinations classify the other rows.
+
+
+=== layout: one-plus-two-panels
+
+# Parental and Recombinant C-H Types
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [120]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [130]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*21*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 3: Classify the Offspring*]{color=#6C6C00}
+
+- Original parents: *c++ / +dh*.
+- With D covered: *c+ / +h*.
+- Recombinant pairs: ++ and ch.
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# Sum Non-Parental Types for C and H?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [120]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [130]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*21*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4a: Sum Recombinant Counts*]{color=#007A00}
+
+Add the four bold R counts.
+
+29 + 75 + 75 + 21 = ?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | ? | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# C to H Distance: Sum Recombinant Counts
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [120]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [130]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*21*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4a: Sum Recombinant Counts*]{color=#007A00}
+
+29 + 75 + 75 + 21 = 200
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | ? | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# C to H Distance: Divide by Total
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [120]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [130]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*21*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4b: Divide by Total Offspring*]{color=#007A00}
+
+200 / 1,000 = 0.20
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | ? |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# C to H Distance: Convert to Percent
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [120]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [c]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FFF8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*75*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [+]{background-color=#D6FFAD text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [130]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [+]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FABFF text-align=center} | [*21*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4c: Multiply by 100*]{color=#007A00}
+
+0.20 × 100 = [*20%*]{color=#003FFF}
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: subsection
+
+# Compare D and H
+
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
+
+=== layout: one-plus-two-panels
+
+# D to H Distance: Which Numbers to Add?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| []{background-color=#AAB2BC text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 120 | [?]{text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 75 | [?]{text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{text-align=center} | [+]{text-align=center} | 75 | [?]{text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{text-align=center} | [h]{text-align=center} | 130 | [?]{text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{text-align=center} | [+]{text-align=center} | 21 | [?]{text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 5: Repeat With a New Pair*]{color=#003FFF}
+
+[*Step 2: Pick D and H*]{color=#B74300}
+
+Gene C is covered.
+
+Which combinations are parental?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-panel
+
+# Match the Pair, Not the Count
+
+@body
+
+![Compare the D-H offspring combinations to both original parents, with C covered.](assets/lect08f-three_point_testcross_bpw/classify_dh_answer.svg)
+
+@citation
+
+Counts identify the original parents. Allele combinations classify the other rows.
+
+
+=== layout: one-plus-two-panels
+
+# Parental and Recombinant D-H Types
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*120*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*130*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [21]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 3: Classify the Offspring*]{color=#6C6C00}
+
+- Original parents: *c++ / +dh*.
+- With C covered: *++ / dh*.
+- Recombinant pairs: +h and d+.
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# Sum Non-Parental Types for D and H?
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*120*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*130*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [21]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4a: Sum Recombinant Counts*]{color=#007A00}
+
+Add the four bold R counts.
+
+120 + 75 + 75 + 130 = ?
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | ? | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# D to H Distance: Sum Recombinant Counts
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*120*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*130*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [21]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4a: Sum Recombinant Counts*]{color=#007A00}
+
+120 + 75 + 75 + 130 = 400
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | [400]{background-color=#DC9AF4} | ? | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# D to H Distance: Divide by Total
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*120*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*130*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [21]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4b: Divide by Total Offspring*]{color=#007A00}
+
+400 / 1,000 = 0.40
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | [400]{background-color=#DC9AF4} | [0.40]{background-color=#DC9AF4} | ? |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: one-plus-two-panels
+
+# D to H Distance: Convert to Percent
+
+@left
+
+{column-widths="1,1,1,2,1.5"}
+| [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*120*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [+]{background-color=#8FFF8F text-align=center} | [*260*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#8FFF8F text-align=center} | [h]{background-color=#8FFF8F text-align=center} | [*290*]{background-color=#8FFF8F} | [*P*]{background-color=#8FFF8F text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [d]{background-color=#DC9AF4 text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [*75*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#DC9AF4 text-align=center} | [h]{background-color=#DC9AF4 text-align=center} | [*130*]{background-color=#DC9AF4} | [*R*]{background-color=#DC9AF4 text-align=center} |
+| []{background-color=#AAB2BC text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [+]{background-color=#D6FFAD text-align=center} | [21]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
+| [Total]{colspan=3 background-color=#BDD0E4} | [1,000]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@top-right
+
+[*Step 4c: Multiply by 100*]{color=#007A00}
+
+0.40 × 100 = [*40%*]{color=#A719DB}
+
+@bottom-right
+
+{table-group="bpw-progress"}
+| Pair | Sum | r | % |
+| --- | --- | --- | --- |
+| [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [*CH*]{color=#003FFF background-color=#8FABFF} | [200]{background-color=#8FABFF} | [0.20]{background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [*DH*]{color=#A719DB background-color=#DC9AF4} | [400]{background-color=#DC9AF4} | [0.40]{background-color=#DC9AF4} | [40]{background-color=#DC9AF4} |
+
+@citation
+
+[Green = original parents]{color=#007A00}; [lime = other P]{color=#3B7600}; P/R = parental/recombinant; pair colors: [CD]{color=#D40000}, [CH]{color=#003FFF}, [DH]{color=#A719DB}.
+
+
+=== layout: section
+
+# Gene Order and Map Distances
+
+
+=== layout: one-panel
+
+# What Is the Gene Order?
+
+@body
+
+![Observed recombination: CD 30%, CH 20%, DH 40%, shown on the same percentage scale.](assets/lect08f-three_point_testcross_bpw/pairwise_results.svg)
+
+Which pair has the largest recombination frequency?
+
+
+=== layout: one-panel
+
+# Three Choices, One Middle Gene
+
+@body
+
+| Middle Gene | Gene Order | Same Map Reversed |
+| --- | --- | --- |
+| C | D - *C* - H | H - *C* - D |
+| D | C - *D* - H | H - *D* - C |
+| H | C - *H* - D | D - *H* - C |
+
+Reversing a map gives the same order: only *three choices*.
+
+D-H has the largest recombination frequency. If D and H are the ends,
+*which gene is in the middle?*
+
+
+=== layout: one-panel
+
+# Place the Middle Gene
+
+@body
+
+![D-C-H is the gene order; H-C-D is equivalent.](assets/lect08f-three_point_testcross_bpw/gene_order_middle.svg)
+
+
+=== layout: one-panel
+
+# Why Don't the Results Add?
+
+@body
+
+![A proportional map: D to C is 30 cM, C to H is 20 cM; the sum is 50 cM while D-H observed recombination is 40%.](assets/lect08f-three_point_testcross_bpw/gene_map.svg)
+
+Which offspring count for both adjacent intervals, but not for D-H?
+
+
+=== layout: subsection
+
+# Account for Double Crossovers
+
+
+=== layout: one-panel
+
+# Two Exchanges Can Hide Recombination
+
+@body
+
+![Trace a double-recombinant chromatid across two exchanges, one in CD and one in CH. It inherits + at D and H from the same parental chromatid, with + at C from the other.](assets/lect08f-three_point_testcross_bpw/two_exchanges.svg)
+
+@citation
+
+Two participating nonsister chromatids are shown schematically in D-C-H order.
+
+
+=== layout: one-panel
+
+# The Outer Genes Still Look Parental
+
+@body
+
+![Parental and double-recombinant combinations in D-C-H map order: +c+ versus +++, and d+h versus dch. Only the middle C allele differs.](assets/lect08f-three_point_testcross_bpw/double_recombinants.svg)
+
+With C covered, each double recombinant matches a parental D-H pair.
+
+@citation
+
+Alleles are now displayed in chromosome order: D-C-H.
+
+
+=== layout: one-panel
+
+# Count Both Adjacent Intervals
+
+@body
+
+{column-widths="2.5,1,1,1,1"}
+| Original Label | Count | [CD]{color=#182033 background-color=#FF8F8F text-align=center} | [CH]{color=#182033 background-color=#8FABFF text-align=center} | [DH]{color=#182033 background-color=#DC9AF4 text-align=center} |
+| --- | --- | --- | --- | --- |
+| cdh | 29 | [R]{background-color=#FF8F8F text-align=center} | [R]{background-color=#8FABFF text-align=center} | [P]{background-color=#D6FFAD text-align=center} |
+| +++ | 21 | [R]{background-color=#FF8F8F text-align=center} | [R]{background-color=#8FABFF text-align=center} | [P]{background-color=#D6FFAD text-align=center} |
+
+50 / 1,000 &times; 100 = *5%* double recombinants.
+
+These 50 offspring are *already counted in both intervals*: 100 interval counts.
+
+[30]{color=#D40000} + [20]{color=#003FFF} = *50 cM*
+
+[40]{color=#A719DB} + 2 &times; 5 = *50 cM*
+
+@citation
+
+R = recombinant; P = parental for the indicated pair. Original labels use C-D-H order.
+
+
+=== layout: two-panels
+
+# Complete the Answer Fields
+
+@left
+
+| Gene Pair | Answer |
+| --- | --- |
+| [CD]{color=#D40000 background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
+| [CH]{color=#003FFF background-color=#8FABFF} | [20]{background-color=#8FABFF} |
+| [DH]{color=#A719DB background-color=#DC9AF4} | [40]{background-color=#DC9AF4} |
+| Gene order | dch or hcd |
+
+@right
+
+![D-C-H chromosome map: 30 cM plus 20 cM gives 50 cM. D-H observed recombination is 40%.](assets/lect08f-three_point_testcross_bpw/gene_map_summary.svg)
+
+@citation
+
+Pairwise answer fields use recombinant percentages. The 50 cM map length is not 50% recombination.
+
+
+=== layout: section
+
+# Summary
+
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Start with the two most frequent offspring classes.
+- Cover one gene and classify each remaining pair separately.
+- Sum recombinants, divide by total offspring, and multiply by 100.
+- Use all three results to place the genes.
+- Double crossovers can make outer-pair recombination smaller than the mapped interval sum.
+
+
+=== layout: theend
+
+# THE END

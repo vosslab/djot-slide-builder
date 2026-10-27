@@ -17,3 +17,7 @@ Shared figures live in `assets/` and use explicit repository-relative image path
 
 See [HUMAN_GUIDANCE.md](../../docs/HUMAN_GUIDANCE.md) and
 [DJOT_SLIDE_SYNTAX.md](../../docs/DJOT_SLIDE_SYNTAX.md) for the content and include contracts.
+
+- `three_point_testcross_steps.djot`: the six-step pairwise mapping roadmap, repeated before full problems.
+- `three_point_gene_order_steps.djot`: the shorter DCO roadmap, retained for future quick gene-order exercises.
+  Active LECT08F now follows the six-step pairwise method; its textbook predecessor is retired.

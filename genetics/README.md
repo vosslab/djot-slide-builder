@@ -134,3 +134,13 @@ Native acceptance is one-time evidence, not a permanent test. The permanent suit
 offline, fast, and deterministic. M5 structural tests are permanent; its headless LibreOffice
 bridge/PDF evidence passed once, while attended Impress click playback remains open in
 [wp_a1_animation_fidelity.md](../docs/active_plans/reports/wp_a1_animation_fidelity.md).
+
+## Lecture 08F replacement
+
+`LECT08/djot/lect08f-three_point_testcross_bpw.djot` is the active 49-slide BPW worked example.
+It includes parental/recombinant matching reminders for all three pairs and 11 SVG components
+for the setup, allele comparisons, chromosome map, and two-exchange mechanism. The generated
+example has 30%, 20%, and 40% pairwise recombination with a 50 cM interval sum.
+The textbook predecessor is preserved as `.djot.retired` beside its assets, so folder builds omit it.
+Original ODP/PDF evidence remains available. Source selection and calculation verification are
+recorded in the LECT08 review and slide map.

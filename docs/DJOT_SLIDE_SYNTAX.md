@@ -12,6 +12,64 @@ The additional `image-comparison` layout and self-contained SVG components are d
 [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md). Bold, underlined definition terms use
 `[*Term*]{underline=true}`; optional semantic color uses `[*Term*]{color=blue underline=true}`.
 
+Use Title Case for all slide titles. Preserve standard spelling of acronyms, proper names,
+gene symbols, and scientific notation.
+
+## Automatic runt handling
+
+The renderer automatically rebalances a short final line by moving words from the preceding line.
+It preserves wording, inline styles, font size, paragraph/list structure, and line count. It emits
+editable soft line breaks in the ODP only when a correction is possible. This needs no Djot markup.
+
+The correction uses the audit's existing runt rule: a single-word final line or a final line less
+than one-third the preceding line's width. Explicit author line breaks, URLs, and mathematics keep
+their existing handling. Unfixable runts remain advisory audit findings, subject to the existing
+final-paragraph exemption. The original Djot remains unchanged.
+
+## Teaching layouts
+
+Use the same `bookend` layout for opening learning objectives and closing key takeaways.
+The author supplies the appropriate title; both use the same outline and content geometry.
+These are live teaching slides. They do not receive the reference-only footer.
+
+```djot
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish parental and recombinant progeny.
+
+=== layout: definitions
+
+# Concepts in genetic linkage
+
+@body
+
+- Parental type: allele configuration is the same as the parents in a cross.
+  - A nested example remains ordinary text.
+- Recombinant type: allele combinations differ from the parental chromosomes.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Crossing over produces recombinant gametes.
+```
+
+In `definitions`, top-level list entries use `Term: explanation`. The parser applies bold and
+underline to the term before text measurement and ODP export. Existing entries that start with
+`*Term*` or a styled bold term also receive underline automatically. Nested examples retain their
+authored formatting. An entry without a term boundary is a source-located error. Keep longer
+explanations on ordinary teaching slides or in lecturing notes.
+
+The layouts inherit the deck's course theme and preserve standard title/body geometry. Their
+thin, editable angular frames remain behind the text, with paired diagonal breaks at opposite
+corners. Long bands use the course accent; matching corner accents use its pale tint. Both `bookend` and `definitions` use the selected course theme's accent color. The neutral gray `reference` layout retains its later-study footer.
+
 ## Deck color theme
 
 Put one optional `color-theme` line before the first layout directive. The value applies to the
@@ -203,7 +261,8 @@ New ODP imports add `@replaceme` to slides with nonempty `review_reasons`. The a
 ## Slide citations
 
 Use one optional `@citation` region on any slide layout. It accepts ordinary text paragraphs,
-inline emphasis, and clickable URLs or links. Keep citations short enough to read at footer size.
+inline emphasis, and clickable URLs or links. Keep citations short enough to read at footer size. Compact instructional keys/legends may
+also use this footer to leave the main panels available for the current comparison or calculation.
 The region ends at the next slot, `@notes`, or slide boundary. It does not replace a layout slot.
 
 ```djot
@@ -323,6 +382,8 @@ outside a named slot; required named slots still appear where listed.
 | `title-only` | Title Only, `AUTOLAYOUT_TITLE_ONLY` | none | H1 plus ordinary root body | A title introduces flexible editable text, lists, component images, or one table below when no panel layout fits. |
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
+| `bookend` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Learning objectives and key takeaways share a thin, symmetric course-colored frame, with ordinary one-panel content space. |
+| `definitions` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Definition entries receive automatic bold, underlined terms inside a course-colored frame. |
 | `reference` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One-panel study material with an unfilled light gray border and automatic reference-only footer. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
 | `theend` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | `# THE END` plus an optional root image | You are closing a lecture with the framed native closer. |
@@ -470,6 +531,52 @@ its region, so place mixed prose or images in another slot or another slide.
 | Helicase | Opens the duplex |
 | Ligase | Seals a nick |
 ```
+
+### Cell formatting and spans
+
+Use the CSS property name `background-color` in Djot attribute syntax to fill one entire
+native table cell. Wrap all of the cell's content, including nested formatting:
+
+```djot
+| Gene | Count | Class |
+| --- | --- | --- |
+| [c]{background-color=#F6E8FB} | [*167*]{background-color=#F6E8FB} | [R]{background-color=#F6E8FB} |
+| []{background-color=#E6E6E6} | 469 | P |
+```
+
+An empty attributed span produces an empty shaded cell, useful for covering a gene column.
+The value must be a six-digit `#RRGGBB` color. This is a cell attribute, not a text highlight;
+partial-cell spans and uses outside tables are rejected. It may share the outer wrapper with
+`color` or `underline=true`; ordinary formatting, links, and math remain inside the cell.
+This uses CSS property naming, not an arbitrary CSS `style` declaration.
+
+The explicit fill overrides normal header, body, and total fills. It does not change text color,
+padding, alignment, or measurement. Omit it to retain the existing theme fill. Use pale surfaces
+with readable text and retain explicit labels alongside color. The ODP contains real editable
+cell backgrounds, not overlay shapes or rasterized tables.
+
+Use CSS-named `text-align=left`, `center`, or `right` in the same whole-cell wrapper.
+Table headers default to centered text; all cells default to middle vertical alignment.
+Cells have 12 logical units of left/right padding and 4 of top/bottom padding.
+
+Explicit alignment overrides header centering and numeric auto-alignment; it does not change column widths.
+For example, `[R]{background-color=#D38CED text-align=center}` centers a classification label.
+
+Use HTML-named `colspan` to merge adjacent columns. Supply one positive integer and omit the
+source cells covered by the merge; each row must still occupy the same logical column count.
+The native ODP stores the merge and its covered grid positions:
+
+```djot
+{column-widths="1,1,1,2,1.5"}
+| C | D | H | Count | Class |
+| --- | --- | --- | --- | --- |
+| [c]{text-align=center} | d | h | 1 | R |
+| [Total]{colspan=3 background-color=#BDD0E4} | 1,400 | |
+```
+
+The first three equal weights keep gene columns equal; the total spans their combined width.
+Spans work with automatic widths, `table-group`, or explicit proportions. Row spans are not an
+authored feature. Backgrounds and alignment may be combined with `colspan` and inline styles.
 
 For tables repeated across question/answer slides, give each table the same semantic group:
 
@@ -660,7 +767,9 @@ without alignment metadata.
 Raw HTML and XML tokens remain literal editable text under the current subset parser. Generic divs,
 footnotes, raw blocks, definition lists, thematic breaks, Djot symbols, paired tilde or caret inline
 forms, and inline images have no presentation surface. One-line attributes have native meaning only
-for the color scopes, table groups, and column proportions documented above. Fenced code and block quotes are
+for the color scopes, table groups, and column proportions documented above. Whole-cell
+cell wrappers additionally provide native `background-color`, `text-align`, and `colspan`
+surfaces described above. Fenced code and block quotes are
 recognized source forms that currently receive a native-destination diagnostic. Source-located
 diagnostics make the available editable forms clear.
 

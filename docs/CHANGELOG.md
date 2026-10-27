@@ -1,6 +1,103 @@
+## 2026-10-27
+
+### Improvements
+
+- Increase default horizontal table-cell padding from 6 to 12 logical units and center
+  table headers. Retain middle vertical alignment and explicit cell alignment overrides;
+  measurement and ODP export use the same padding.
+
+- Reframe LECT08F slide 39 around the three possible middle genes. Show each order beside
+  its equivalent reverse, then ask students to choose using the D-H result.
+
+- Repeat the parental/recombinant matching answer for all three gene pairs in LECT08F. Replace
+  its dataset with a locally generated 1,000-offspring example: CD 30%, CH 20%, DH 40%, with
+  50 double recombinants explaining the 50 cM interval sum. Set up the mismatch before tracing
+  two exchanges and checking the allele/count consequences. Keep hue and saturation stable
+  while varying fill lightness; carry pair colors into the number lines and summary labels.
+  The active deck has 49 slides and 12 SVG components. BPW generator code remains unchanged.
+
+- Rework BPW LECT08F around the reasoning: retain pairwise tables through the calculations,
+  then use a percentage comparison, large developing gene map, and explicit 33% versus 34 cM
+  explanation. Add two parental/recombinant question-and-answer side steps and split the
+  double-recombinant explanation into allele and counting views. Add the fly emoji/testcross
+  setup and nine editable SVG components; preserve the data, palette, and BPW answers.
+  The deck now contains 46 visible slides and three shared procedure recaps.
+
+- Color all classified BPW offspring rows: stable green original parents, lime other pairwise
+  parents, and red/blue/purple recombinants for CD/CH/DH respectively. Match summary labels,
+  revealed results, final percentages, and map intervals to the same fixed gene-pair colors.
+  Record the exact base colors and lighter fills in the palette and human guidance.
+
+- Keep the two original BPW parental rows green and labeled P throughout pairwise work,
+  including covered-gene prompts. Leave other pairwise P rows unshaded and recombinants purple.
+  Move the P/R legend to a compact instructional footer; use the freed work-panel space to show
+  original genotypes and their two-gene projections side by side in a short bullet sequence.
+
+- Strengthen BPW LECT08F parental/recombinant fills, equalize its three gene-column widths,
+  center gene/class labels, and merge Total across all three genes. Add eight course-themed
+  section/subsection dividers; the replacement now contains 43 slides.
+- Expose native table `colspan` and CSS-named `text-align` in whole-cell wrappers. Validate
+  logical row widths, measure merged cells across their combined columns, and export native
+  ODP merges/covered cells. Preserve existing cell background and numeric-alignment behavior.
+
 ## 2026-10-26
 
 ### Additions and New Features
+
+- Add CSS-named `background-color` attributes for whole Djot table cells, including empty
+  covered cells. Preserve typed text/math, geometry, numeric alignment, and default theme fills;
+  export explicit backgrounds as native editable ODP cell styles.
+- Replace textbook LECT08F with a 35-slide authored BPW example using question `ae3b_1ad2`.
+  Show pairwise classification and every sum/divide/multiply reveal in stable native tables,
+  accumulating results beside the current calculation. Preserve the old source as `.djot.retired`
+  and retain original ODP/PDF/assets; move obsolete generated outputs outside active folders.
+
+
+- Introduce the shared six-step roadmap before LECT08C Pandora Plant Inheritance
+  (formerly PDF slide 26), and update its slide map and human guidance.
+
+- Fix numeric table alignment for Unicode minus signs and legacy en-dash negatives;
+  normalize LECT08E negative deviations to minus signs and replace chi-square entities
+  and broken Symbol-font characters with native Greek chi notation and math-rendered sum labels.
+
+- Compare the original F six-step roadmap with D: the wording is essentially identical;
+  F has a red title and black step text. Keep the shared rainbow steps with black titles,
+  and add two six-step recaps in D and five in F at meaningful problem/phase transitions.
+
+- Explicitly require LECT08D/F to reference the same canonical colored six-step testcross
+  roadmap; verify all occurrences resolve to that identical shared slide.
+
+- Confirm the original LECT08D procedure is black text; color its six-step roadmap using the
+  fixed palette in rainbow order. Share it between LECT08D/F and repeat it before full mapping work.
+  Color the separate DCO roadmap and repeat it before each quick gene-order exercise in F.
+  Add explicit colored-text preservation and procedure-recap checks to the conversion checklist.
+
+- Remove 19 textbook figure identifiers from six Djot files and four editable SVG labels,
+  preserving diagrams, explanatory text, and slide order. Remove the empty citation block and
+  update guidance/checklist to discard figure-number artifacts during conversion.
+
+- Automatically rebalance detected runts by moving words to the final line at the chosen font
+  size, preserving source wording, styling, and line count. Share the detector criterion between
+  measurement and audit; export generated soft breaks while retaining authored breaks and
+  existing URL/math behavior. Verify LECT08C linkage-map wording at 28 pt in a before/after render.
+
+- Trial a thin angular frame for bookend and definitions slides, using paired diagonal breaks
+  and matching opposite-corner accents in one course hue. Preserve half-turn symmetry and
+  standard content space. Export the frame as native editable polygons.
+
+- Remove the decorative thick corner segment from bookend and definitions layouts; retain
+  the simple course-colored outline.
+
+- Establish Title Case as the general rule for all slide titles, rather than treating
+  Learning Objectives and Key Takeaways as special cases.
+
+- Capitalize recurring slide titles as `Learning Objectives`, `Learning Goals`, and
+  `Key Takeaways`; align existing course decks, syntax examples, and teaching guidance.
+
+- Add shared `bookend` styling for learning objectives and key takeaways, plus a dedicated
+  `definitions` layout with automatic bold/underlined terms. Use the selected course accent color for editable
+  frames while retaining standard body space; keep the gray reference-only layout distinct.
+  Apply to LECT08B-F objectives/takeaways and LECT08B linkage definitions without changing wording.
 
 - Move Genetics reusable quiz/exam guidance, first-week assignments, evaluations, and constant
   opening course information to `genetics/evergreen/`. Preserve LECT08's weekly content,

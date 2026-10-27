@@ -178,6 +178,10 @@ section heading. The summary teaches the takeaways; THE END provides a clear clo
 
 ### Start with learning objectives
 
+Use Title Case for all slide titles, including `Learning Objectives` (or `Learning Goals`) and
+`Key Takeaways`. Preserve standard spelling of acronyms, proper names, gene symbols, and scientific
+notation. This slide-title convention is separate from Markdown documentation headings.
+
 Every slide deck should start with learning objectives, including each deck within a multi-deck lecture, not only the first deck. Learning objectives should be specific and student-centered.
 
 Good objectives use action verbs such as:

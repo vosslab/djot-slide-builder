@@ -462,6 +462,43 @@ def test_native_table_uses_light_body_cells_and_theme_header(tmp_path: pathlib.P
 		"#F2F3F5", "#F2F3F5"]
 
 
+def test_native_table_exports_explicit_cell_fills_over_theme_defaults(tmp_path: pathlib.Path) -> None:
+	"""Explicit fills reach editable ODP cell styles, including empty and total cells."""
+	path = tmp_path / "fills.djot"
+	path.write_text("=== layout: one-panel\n\n@body\n\n"
+		"| [Gene]{background-color=#123456} | Count |\n| --- | --- |\n"
+		"| []{background-color=#E6E6E6} | [350]{background-color=#E6F2E6} |\n"
+		"| Total | [350]{background-color=#F6E8FB} |\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(
+		slide_lib.djot_parser.parse_deck(path), theme).plan
+	output = exporter.write_odp(plan, theme, tmp_path / "fills.odp")
+	with zipfile.ZipFile(output) as archive:
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
+	backgrounds = [element.attrib[f"{{{exporter.FO_NS}}}background-color"]
+		for element in root.findall(f".//{{{exporter.STYLE_NS}}}table-cell-properties")]
+	assert backgrounds[:4] == ["#123456", f"#{theme.accent_color}", "#E6E6E6", "#E6F2E6"]
+	assert backgrounds[-1] == "#F6E8FB"
+
+
+def test_authored_colspan_exports_native_merge_and_covered_cells(tmp_path: pathlib.Path) -> None:
+	"""A source colspan becomes one native merged cell and real covered grid positions."""
+	path = tmp_path / "merge.djot"
+	path.write_text("=== layout: one-panel\n\n@body\n\n"
+		"| C | D | H | Count |\n| --- | --- | --- | --- |\n"
+		"| [Total]{colspan=3 background-color=#80BD80} | 1,400 |\n", encoding="utf-8")
+	theme = slide_lib.presentation_theme.default_theme()
+	plan = slide_lib.layout_engine.compile_layout_deck(slide_lib.djot_parser.parse_deck(path), theme).plan
+	output = exporter.write_odp(plan, theme, tmp_path / "merge.odp")
+	with zipfile.ZipFile(output) as archive:
+		root = package.parse_xml(archive.read("content.xml"), "content.xml")
+	ns = {"table": "urn:oasis:names:tc:opendocument:xmlns:table:1.0"}
+	row = root.findall(".//table:table-row", ns)[-1]
+	assert row[0].get(f"{{{ns['table']}}}number-columns-spanned") == "3"
+	assert len(row.findall("table:covered-table-cell", ns)) == 2
+	assert len(row.findall("table:table-cell", ns)) == 2
+
+
 def test_scoped_xml_parser_rejects_dtds() -> None:
 	"""ODF XML cannot declare entities even when lxml would leave them unresolved."""
 	with pytest.raises(ValueError, match="DTD is not allowed"):

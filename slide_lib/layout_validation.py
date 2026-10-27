@@ -261,11 +261,11 @@ def validate_multiple_choice(source: slide_lib.native_model.Slide) -> None:
 #============================================
 def validate_table(table: slide_lib.native_model.Table) -> None:
 	"""Require a rectangular, non-empty native table surface (ASVS 2.2.1)."""
-	column_count = len(table.headers) if table.headers else (len(table.rows[0]) if table.rows else 0)
+	column_count = table.column_count
 	if column_count == 0:
 		raise source_error(table.location, "tables require at least one column and one row")
 	for row in table.rows:
-		if len(row) != column_count:
+		if sum(cell.column_span for cell in row) != column_count:
 			raise source_error(table.location, "table rows must have the same number of columns")
 
 

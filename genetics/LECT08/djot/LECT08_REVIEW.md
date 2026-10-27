@@ -1,5 +1,119 @@
 # Lecture 08 conversion review
 
+## Active LECT08F: BPW worked example
+
+The active deck is `lect08f-three_point_testcross_bpw.djot`: 49 visible slides, 12 static SVG
+components, and three shared six-step recaps. The textbook predecessor remains preserved
+byte-for-byte as `.djot.retired` beside its assets. Original ODP/PDF evidence remains unchanged.
+
+### Generated classroom example
+
+The original bank question `ae3b_1ad2` (25%, 9%, 33%; 1,400 offspring) has been superseded by
+this larger-gap classroom example. The new instance is generated locally with the same BPW
+`gene_map_class_lib.GeneMappingClass(3)` implementation, not fetched from the published bank.
+Neither BPW checkout was changed. The exact counts are fixed in the Djot/SVG source, so ordinary
+builds do not require BPW or regenerate the data.
+
+Generator directory:
+`~/nsh/PROBLEMS/biology-problems/problems/inheritance-problems/gene_mapping/`.
+Configure gene letters `cdh`, order `dch`, parental classes `c++` / `+dh`, total 1,000,
+and pairwise values 30, 20, 40 in map-index order. Derive interference (1,6) with
+`calculate_interference_from_three_distances(20,30,40)`, then call the existing group-count,
+genotype-pair, and genotype-count methods. Reciprocal counts were split by the generator.
+The separate `gene_map_solver_lib.gene_map_solver` confirms [20,30,40], (1,6), and hcd.
+
+| Original C-D-H label | Count |
+| --- | --- |
+| cdh | 29 |
+| cd+ | 120 |
+| c+h | 75 |
+| c++ | 260 |
+| +dh | 290 |
+| +d+ | 75 |
+| ++h | 130 |
+| +++ | 21 |
+| Total | 1,000 |
+
+| Pair | Recombinant counts | Sum | Fraction | Percent |
+| --- | --- | --- | --- | --- |
+| CD | 29 + 120 + 130 + 21 | 300 | 0.30 | 30 |
+| CH | 29 + 75 + 75 + 21 | 200 | 0.20 | 20 |
+| DH | 120 + 75 + 75 + 130 | 400 | 0.40 | 40 |
+
+Adjacent intervals are 30 cM and 20 cM. Double-recombinant classes cdh (29) and +++ (21)
+total 50, or 5%. Thus 40 + 2*5 = 50 cM. The 50 cM interval sum does not mean 50%
+recombination: observed D-H recombination is 40%. This is the instructor-accepted example
+following the discussion of that distinction. The brief 25/15/34 candidate was not adopted.
+Answer fields use 30, 20, 40, and dch/hcd, matching the generator's pairwise convention.
+
+### Visual sequence
+
+- Keep all 21 full progeny tables through the final calculation, with equal gene columns,
+  merged Total, fixed row order, original green parental references, lime other P rows,
+  and a gray covered column. All sums/divisions/percentages use the new data.
+- Slide 3: fly emoji and testcross context without revealing phase or gene order.
+- Slides 12-13: initial matching question/answer. With H covered, cd+ projects to recombinant
+  cd, while c+h projects to parental c+.
+- Slide 22: repeat the matching answer for C-H. c+h projects to recombinant ch; cd+ matches
+  parental c+. Slide 31 repeats it for D-H: cd+ projects to recombinant d+, while cdh matches
+  parental dh. The latter is the same class revisited in the double-recombinant explanation.
+- Slides 38-41: remove the full progeny table. Compare 30/20/40% bars, reveal the endpoints
+  and middle gene, then ask why the map intervals sum to 50 cM while D-H gives 40%.
+  CD and CH segments use red and blue; the endpoint D-H line uses purple.
+- Slide 43: trace one double-recombinant chromatid across two exchanges, showing how its
+  outer +/+ combination is restored. Only the two participating nonsister chromatids are
+  shown; the reciprocal path is faint. The path is schematic, not a distance scale.
+- Slide 44: compare original and double-recombinant allele combinations in D-C-H order.
+  The middle allele differs while outer combinations match.
+- Slide 45: the 29 and 21 offspring are R for CD and CH, P for DH. Show that 50 offspring
+  contribute 100 adjacent-interval counts, are already included in those interval counts,
+  and account for the 10-point correction. Keep 5% and the correction in the main content.
+- Slide 46: answer fields alongside the 30:20 proportional map, explicitly distinguishing
+  the 50 cM map length from 50% recombination.
+
+Keep base hues and HSL saturation stable while varying lightness. The canonical fill values
+are in `docs/COLOR_PALETTE.md`; repeat them in tables and SVG allele tiles. Colored pair labels
+connect the pale fills to map lines without relying on background color alone.
+
+### Sources informing the diagrams
+
+These are conceptual references, not imported textbook figures. Source history stays here,
+not in Djot notes or comments.
+
+- `~/nsh/MARKDOWN_BOOKS/inheritance_genetics/Essential_Genetics_and_Genomics-2020.md`, chapter 4,
+  the comparison of observed recombination with map distance (lines 3778-3802), and double
+  recombinants contributing to both adjacent intervals (lines 3886-3944).
+- `~/nsh/MARKDOWN_BOOKS/genetics/Genetics_Analysis_of_Genes_and_Genomes-2019.md`, section 5.3
+  (lines 2166-2173): arbitrary table order versus solved chromosome order, parental comparison,
+  and inclusion of double recombinants in both interval counts.
+- `~/nsh/MARKDOWN_BOOKS/inheritance_genetics/Genetics_A_Conceptual_Approach-Pierce-2012.md`,
+  section 7.3: paired allele comparisons clarify the effect of double recombination.
+- `~/nsh/MARKDOWN_BOOKS/genetics_history/The_Gene_An_Intimate_History-2017.md`, Sturtevant account
+  (lines 978-984), considered for the evidence-to-linear-map narrative; no history detour added.
+- SVG skill local references: `A_Handbook_of_Biological_Illustration-1988.md`, "Clarity" and
+  "Emphasis and Comparison"; `Mastering_SVG-2018.md`, "viewBox and viewport in SVG". Apply
+  simple comparison geometry, minimal detail, and fixed coordinate systems.
+
+### Validation
+
+Strict native Jotdown/structural lint passes: 49 slides, 12 images. The typography audit has
+no findings. The only capacity advisories remain the unchanged shared roadmaps at 19.75 pt
+versus the 20 pt advisory floor (slides 6, 20, 29). This revision changes content and assets,
+not renderer code or source syntax.
+
+The generator's independent solver and a separate pair-projection calculation confirm every
+recombinant set and percentage. One-time checks cover counts in all progeny tables, progress
+reveal timing, original-parent and P/R colors, covered columns, three matching answers, and the
+absence of the full progeny table after calculations. Both solved map assets use the 30:20
+ratio. All SVGs validate and are embedded verbatim in the ODP; source fills preserve each base
+color's hue and saturation within RGB rounding. Reviewed the actual exported PDF, including
+all matching reminders, pair calculations, and the ending's mechanism and count explanation.
+
+Evidence: `_temp/bpw_larger_gap_example.json`, `_temp/bpw_example_source_evidence.txt`,
+`_temp/bpw_example_authored_map.txt`, `_temp/bpw_gap_audit.json`, `_temp/bpw_gap_review/`,
+and canonical output ODP/PDF. Temporary helpers are authoring aids only. Djot and SVG files
+remain the canonical inputs. Earlier review findings below are historical.
+
 ## Typography audit follow-up
 
 October 26 follow-up to the conversion review below:
@@ -507,3 +621,41 @@ N/A for this pass: previously reviewed selections and dates were retained.
 | 52 | repaired; marker cleared | Single-image WebP/SVG restores positioned labels and diagram relationships. Static source comparison and native capacity/build pass; replacement marker removed. |
 | 53 | static repaired; interaction pending | Single-image WebP/SVG restores positioned labels and diagram relationships. Retain @replaceme for interaction verification. |
 | 54 | roughly equivalent | Existing theend layout preserves the authored closer and native star. |
+
+
+## Colored procedure recaps
+
+The original LECT08D ODP slide 3 and original PDF page 3 show black procedure text.
+The new canonical six-step roadmap uses the fixed palette in rainbow order:
+red, dark orange, dark yellow, green, blue, purple. Step 2 references match dark orange.
+The separate DCO roadmap uses red, green, blue, purple to keep its four phases distinct.
+
+The original F ODP slide 9 has essentially the same six-step wording as D, with a red
+heading and black steps; its quick DCO procedure is a separate four-step method.
+Both shared roadmap titles are now black to emphasize the colored steps.
+
+LECT08D uses four six-step recaps: before the worked problem, at the A-C and B-C
+pair transitions, and before the group activity. LECT08F uses six: before the main
+example, before each of three quick gene-order exercises, before genotype summaries,
+and before map-distance calculations. The separate quick DCO recaps remain available.
+All occurrences use shared includes, and the source maps reflect the added positions.
+The six-step body fits at 19.75 pt; existing unrelated reconstruction and capacity
+warnings remain in the source decks.
+
+## Negative deviations and chi-square notation
+
+Negative deviations now use mathematical minus signs and align at the right edge with
+positive values. Numeric alignment also recognizes legacy en-dash negatives. Replace
+legacy Symbol-font chi characters, and use math-rendered chi-square sum labels to keep
+them visibly distinct from Latin X. Rebuilt LECT08E and inspected PDF page 16; all 67
+layout-engine tests pass, including ASCII, Unicode minus, and entity-encoded negatives.
+
+The first shared six-step roadmap now appears in LECT08C immediately before Pandora
+Plant Inheritance: roadmap PDF page 26, Pandora page 27. Subsequent D/F recaps use
+the same canonical source and colors.
+
+### Middle-gene framing
+
+Slide 39 now presents all three possible middle genes and their equivalent reversed orders.
+The D-H result prompts the choice before slide 40 reveals C. The deck remains 49 slides;
+11 SVGs are referenced, with the earlier endpoint SVG retained as an unused source asset.

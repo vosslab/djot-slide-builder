@@ -28,6 +28,39 @@ Names below preserve that source's labels.
 | Magenta | `#C80085` |
 | Pink | `#CC0066` |
 
+## Procedure sequences
+
+Use well-separated colors from the fixed palette in rainbow order for new colored step sequences.
+For six steps, use Red, Dark orange, Dark yellow, Green, Blue, Purple. For four steps, use Red,
+Green, Blue, Purple. Keep each repeated roadmap identical and match step cross-references to its
+own method's colors. Preserve meaningful source colors when converting existing material unless
+recoloring is requested.
+
+## Three-point testcross pairs
+
+Reserve green for the two original parental rows and lime green for other offspring with a
+parental combination for the selected gene pair. Color each pair's recombinant rows, summary
+label/results, and final percentage consistently. The fixed base colors identify the pair;
+lighter fills keep dark table text readable. Keep each role's hue and HSL saturation stable;
+vary lightness between text/line colors and fills. Pair labels also use the base text color
+so a pale background and a saturated map line have a direct visual connection.
+
+| Meaning | Fixed palette base | Table fill |
+| --- | --- | --- |
+| Original parental rows | Green `#007A00` | `#8FFF8F` |
+| Other pairwise parental rows | Lime green `#3B7600` | `#D6FFAD` |
+| CD recombinants/results | Red `#D40000` | `#FF8F8F` |
+| CH recombinants/results | Blue `#003FFF` | `#8FABFF` |
+| DH recombinants/results | Purple `#A719DB` | `#DC9AF4` |
+
+These fills use 78% HSL lightness, except lime at 84% to distinguish it from the original
+parents. Saturation matches the base (100% except purple at approximately 79.5%), within
+8-bit RGB rounding. Repeat these same fills in the allele-comparison diagrams and tables.
+
+Retain gray on the covered gene column, including its intersection with colored rows.
+Unknown classifications/results stay unrevealed. The six-step roadmap retains its own established
+step colors; pair colors track the data through the calculation and summary tables.
+
 ## Instructor's color-wheel tool
 
 For additional color sets, use the instructor-developed tool at

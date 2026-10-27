@@ -16,6 +16,65 @@ import slide_lib.layout_validation
 import slide_lib.native_model
 
 
+def test_table_colspan_uses_logical_columns_and_keeps_cell_attributes(tmp_path: pathlib.Path) -> None:
+	"""Merged source rows occupy the header grid without fake placeholder cells."""
+	table = slide_lib.djot_blocks.parse_blocks(tmp_path / "span.djot",
+		"| C | D | Count |\n| --- | --- | --- |\n"
+		"| [Total]{colspan=2 background-color=#80BD80 text-align=center} | 1,400 |\n").blocks[0]
+	assert table.column_count == 3
+	assert len(table.rows[0]) == 2
+	assert table.rows[0][0].column_span == 2
+	assert table.rows[0][0].text_alignment == "center"
+	assert table.rows[0][0].background_color == "#80BD80"
+	assert [column for column, cell in slide_lib.native_model.table_cell_positions(table.rows[0])] == [0, 2]
+
+
+@pytest.mark.parametrize("cell", (
+	"[Total]{colspan=0}", "[Total]{colspan=-1}", "[Total]{colspan=1.5}",
+	"[Total]{colspan=two}", "[Total]{colspan=2 colspan=2}",
+	"[Total]{colspan=3}", "prefix [Total]{colspan=2}", "[Total]{text-align=diagonal}",
+))
+def test_invalid_table_spans_and_alignment_are_source_errors(tmp_path: pathlib.Path, cell: str) -> None:
+	"""Reject malformed spans and rows that overflow or leave holes in the logical grid."""
+	with pytest.raises(slide_lib.djot_errors.DjotParseError):
+		slide_lib.djot_blocks.parse_blocks(tmp_path / "bad-span.djot",
+			f"| Gene | Count |\n| --- | --- |\n| {cell} | 1,400 |\n")
+
+
+#============================================
+def test_cell_background_preserves_nested_text_and_empty_cells(tmp_path: pathlib.Path) -> None:
+	"""CSS-named cell fills are independent of editable text formatting."""
+	table = slide_lib.djot_blocks.parse_blocks(tmp_path / "cells.djot",
+		"| Gene | Count |\n| --- | --- |\n"
+		"| [*c*]{background-color=#e6f2e6 color=#007A00} | []{background-color=#E6E6E6} |\n"
+		"| [[link](https://example.org)]{background-color=#F6E8FB} | 350 |\n").blocks[0]
+	assert table.rows[0][0].background_color == "#E6F2E6"
+	assert isinstance(table.rows[0][0].inlines[0], slide_lib.native_model.StyledSpan)
+	assert isinstance(table.rows[0][0].inlines[0].children[0], slide_lib.native_model.Strong)
+	assert table.rows[0][1] == slide_lib.native_model.TableCell((), "#E6E6E6")
+	assert isinstance(table.rows[1][0].inlines[0], slide_lib.native_model.Link)
+	assert table.rows[1][1].background_color is None
+	assert table.headers[0].background_color is None
+
+
+#============================================
+@pytest.mark.parametrize("cell", (
+	"[c]{background-color=red}", "[c]{background-color=#abc}",
+	"[c]{background-color=#GG0000}", "[c]{background-color}",
+	"[c]{background-color=#E6F2E6 background-color=#FFFFFF}",
+	"prefix [c]{background-color=#E6F2E6}",
+	"[c]{background-color=#E6F2E6} suffix",
+	"[[c]{background-color=#E6F2E6}]{color=red}",
+))
+def test_cell_background_rejects_invalid_color_or_scope(tmp_path: pathlib.Path, cell: str) -> None:
+	"""A cell background has one bounded color and covers exactly one complete cell."""
+	with pytest.raises(slide_lib.djot_errors.DjotParseError, match="background-color"):
+		slide_lib.djot_blocks.parse_blocks(tmp_path / "bad.djot", f"| {cell} |\n")
+	with pytest.raises(slide_lib.djot_errors.DjotParseError):
+		slide_lib.djot_inline.parse_inlines(tmp_path / "bad.djot", 1,
+			"[ordinary prose]{background-color=#FFFFFF}")
+
+
 #============================================
 @pytest.mark.parametrize("newline", (b"\n", b"\r\n", b"\r"))
 def test_encoding_error_reports_editor_location(tmp_path: pathlib.Path, newline: bytes) -> None:

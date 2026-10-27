@@ -1,0 +1,13 @@
+=== layout: one-panel
+
+# [*Quick Gene Order in Three-Point Crosses*]{color=#000000}
+
+@body
+
+- Step 1. [Determine parental genotypes]{color=#D40000}
+  - Two genotypes with most progeny
+- Step 2\: [Determine double crossover (DCO) genotypes]{color=#007A00}
+  - Two genotypes with fewest progeny
+- Step 3. [Compare]{color=#003FFF} parental genotypes with double crossover genotypes to see [which single gene flipped]{color=#003FFF} in the DCO
+- Step 4\: [Determine the gene order]{color=#A719DB} given that the flipped gene is the [middle gene]{color=#A719DB}.
+

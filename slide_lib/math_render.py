@@ -39,7 +39,7 @@ def validate_equation_blocks(blocks: tuple[slide_lib.native_model.Block, ...]) -
 		elif isinstance(block, slide_lib.native_model.Table):
 			for row in (block.headers,) + block.rows:
 				for cell in row:
-					check(cell, block.location)
+					check(cell.inlines, block.location)
 
 
 @dataclasses.dataclass(frozen=True)

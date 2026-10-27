@@ -1,0 +1,18 @@
+=== layout: one-panel
+
+# [*Steps in Three-Point Test-Cross Gene Map*]{color=#000000}
+
+@body
+
+- 1. [Determine parental genotype]{color=#D40000}
+- 2\: [Pick any two genes]{color=#B74300}
+  - completely cover up the third so it does not confuse you!!!
+- 3. [Determine]{color=#6C6C00} which of the progeny are [parental and non-parental genotypes]{color=#6C6C00}
+- 4. [Determine the map distance]{color=#007A00} between the two genes
+  - 4a [Sum]{color=#007A00} the progeny from the non-parental genotypes
+  - 4b. [Divide]{color=#007A00} the NP by the total progeny
+  - 4c. [Multiply]{color=#007A00} the result by 100% to get the distance between the genes
+- 5. [Go to]{color=#003FFF} [Step 2]{color=#B74300} and [pick a new pair of genes]{color=#003FFF} until all pairs are complete
+- 6. Use all the gene distances to [determine the order of the genes]{color=#A719DB}.
+  - largest distance are furthest away and on the ends
+

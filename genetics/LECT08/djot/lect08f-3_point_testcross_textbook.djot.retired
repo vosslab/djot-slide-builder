@@ -12,9 +12,9 @@ color-theme: genetics
 
 ## October 27, 2026
 
-=== layout: one-panel
+=== layout: bookend
 
-# Learning objectives
+# Learning Objectives
 
 @body
 
@@ -80,6 +80,8 @@ color-theme: genetics
 
 - A two-strand double crossover that spans the middle pair of alleles in a triple heterozygote results in a reciprocal exchange of the middle pair of alleles between the two participating chromatids.
 
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
 === layout: one-panel
 
 # *Three-point Test-cross*
@@ -98,40 +100,11 @@ color-theme: genetics
 
 - Lz Gl Su *-OR-* Gl Lz Su *-OR-* Lz Su Gl
 
-=== layout: one-panel
-
-# [*Steps in Three-Point Test-Cross Gene Map*]{color=red}
-
-@body
-
-- 1. Determine parental genotype
-- Step 2\: Pick any two genes
-  - completely cover up the third so it does not confuse you!!!
-- 3. Determine which of the progeny are parental and non-parental genotypes
-- 4. Determine the map distance between the two genes
-  - 4a Sum the progeny from the non-parental genotypes
-  - 4b. Divide the NP by the total progeny
-  - 4c. Multiply the result by 100% to get the distance between the genes
-- 5. Go to Step 2 and pick a new pair of genes until all pairs are complete
-- 6. Use all the gene distances to determine the order of the genes.
-  - largest distance are furthest away and on the ends
-
 === layout: section
 
 # Quick Method to Determine Gene Order
 
-=== layout: one-panel
-
-# [*Quick Gene Order in Three-Point Crosses*]{color=#55215B}
-
-@body
-
-- Step 1. Determine parental genotypes
-  - Two genotypes with most progeny
-- Step 2\: Determine double crossover (DCO) genotypes
-  - Two genotypes with fewest progeny
-- Step 3. Compare parental genotypes with double crossover genotypes to see which single gene flipped in the DCO
-- Step 4\: Determine the gene order given that the flipped gene is the middle gene.
+=== include: repo:genetics/evergreen/three_point_gene_order_steps.djot
 
 === layout: one-panel
 
@@ -401,6 +374,10 @@ the double-crossover chromosomes are
 
 ![Slide image 10](assets/lect08f-3_point_testcross_textbook/image_001.svg)
 
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
+=== include: repo:genetics/evergreen/three_point_gene_order_steps.djot
+
 === layout: two-over-one-panels
 
 # *What is the proper gene order?*
@@ -422,6 +399,10 @@ the double-crossover chromosomes are
 => appear
 - N B S or S B N
 
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
+=== include: repo:genetics/evergreen/three_point_gene_order_steps.djot
+
 === layout: two-over-one-panels
 
 # *What is the proper gene order?*
@@ -442,6 +423,10 @@ the double-crossover chromosomes are
 
 => appear
 - B A C or C A B
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
+=== include: repo:genetics/evergreen/three_point_gene_order_steps.djot
 
 === layout: two-over-one-panels
 
@@ -467,6 +452,8 @@ the double-crossover chromosomes are
 === layout: section
 
 # Now let's find the distances...
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
 
 === layout: one-panel
 
@@ -507,6 +494,8 @@ the double-crossover chromosomes are
 @body
 
 ![Source diagram with static highlights and masks](assets/lect08f-3_point_testcross_textbook/f35_labeled.svg)
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
 
 === layout: one-panel
 
@@ -674,9 +663,9 @@ the double-crossover chromosomes are
 
 # Summary
 
-=== layout: one-panel
+=== layout: bookend
 
-# Key takeaways
+# Key Takeaways
 
 @body
 

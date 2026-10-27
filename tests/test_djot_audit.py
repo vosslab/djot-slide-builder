@@ -105,7 +105,9 @@ def test_final_runt_exemption_requires_maximum_body_size(tmp_path):
 	text = "You can genetically modify one animal. What would you change?"
 	path.write_text(f"=== layout: one-panel\n\n# Genes\n\n@body\n\n- {text}\n- {text}\n")
 	deck = slide_lib.native_export.parse_deck(path)
-	compilation, theme = slide_lib.native_export.compile_deck(deck)
+	# Keep this detector test focused on uncorrected output.
+	with mock.patch.object(slide_lib.layout_measurement.MeasurementSession, "balance_tail"):
+		compilation, theme = slide_lib.native_export.compile_deck(deck)
 	for ceiling, expected in ((theme.ordinary_body_size_pt, [1]),
 			(theme.ordinary_body_size_pt + 1, [1, 2])):
 		with mock.patch.object(slide_lib.native_export, "find_repo_root", return_value=tmp_path), \

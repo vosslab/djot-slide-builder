@@ -151,7 +151,7 @@ def add_attributes(block: slide_lib.native_model.Block,
 				"column-widths requires one attribute on a table")
 		value = width_attributes[0].value
 		parts = value.split(",") if value is not None else []
-		columns = len(block.headers) if block.headers else len(block.rows[0])
+		columns = block.column_count
 		if len(parts) != columns or any(
 			re.fullmatch(r"[0-9]+(?:\.[0-9]+)?", part.strip()) is None for part in parts):
 			fail(block.location.path, block.location.line,
@@ -450,22 +450,58 @@ def parse_list(path: pathlib.Path, lines: list[str], index: int, base_line: int,
 
 
 #============================================
+def parse_table_cell(path: pathlib.Path, line: int, source: str) -> slide_lib.native_model.TableCell:
+	"""Read whole-cell attributes separately from inline text styles."""
+	if re.search(r"\{[^{}]*\b(?:background-color|colspan|text-align)(?:=|\s|\})", source) is None:
+		return slide_lib.native_model.TableCell(
+			slide_lib.djot_inline.parse_inlines(path, line, source))
+	end = slide_lib.djot_inline.find_closing_bracket(source, 0, len(source)) \
+		if source.startswith("[") else None
+	match = _ATTRIBUTE_LINE.fullmatch(source[end + 1:]) if end is not None else None
+	if match is None:
+		fail(path, line, "background-color, colspan, and text-align require one whole-cell [content]{attributes} wrapper")
+	attributes = parse_attribute_tokens(path, line, match.group("body"))
+	backgrounds = tuple(item for item in attributes if item.name == "background-color")
+	spans = tuple(item for item in attributes if item.name == "colspan")
+	aligns = tuple(item for item in attributes if item.name == "text-align")
+	if len(backgrounds) > 1 or len(spans) > 1 or len(aligns) > 1 or not (backgrounds or spans or aligns):
+		fail(path, line, "background-color, colspan, and text-align require unique whole-cell attributes")
+	color = backgrounds[0].value if backgrounds else None
+	if backgrounds and (color is None or re.fullmatch(r"#[0-9A-Fa-f]{6}", color) is None):
+		fail(path, line, "background-color requires a six-digit hex color (#RRGGBB)")
+	span = spans[0].value if spans else "1"
+	if span is None or re.fullmatch(r"[1-9][0-9]*", span) is None:
+		fail(path, line, "colspan requires a positive integer")
+	alignment = aligns[0].value if aligns else None
+	if aligns and alignment not in {"left", "center", "right"}:
+		fail(path, line, "text-align requires left, center, or right")
+	content = source[1:end]
+	remaining = tuple(item for item in attributes if item.name not in {"background-color", "colspan", "text-align"})
+	if remaining:
+		content = "[" + content + "]{" + " ".join(
+			f"{item.name}={item.value}" for item in remaining) + "}"
+	return slide_lib.native_model.TableCell(
+		slide_lib.djot_inline.parse_inlines(path, line, content), color.upper() if color else None,
+		int(span), alignment)
+
+
+#============================================
 def parse_table(path: pathlib.Path, lines: list[str], index: int,
 		base_line: int) -> tuple[slide_lib.native_model.Table, int]:
 	"""Parse a Djot table, preserving only metadata expressible in the IR."""
 	first_line = base_line + index
-	rows: list[tuple[tuple[slide_lib.native_model.Inline, ...], ...]] = []
+	rows: list[tuple[slide_lib.native_model.TableCell, ...]] = []
 	width: int | None = None
 	separator_index: int | None = None
 	while index < len(lines) and lines[index].lstrip(" ").startswith("|"):
 		line = base_line + index
 		cells = split_table_row(path, line, lines[index])
-		if width is None:
-			width = len(cells)
-		elif len(cells) != width:
-			fail(path, line, "pipe table rows must have the same number of cells")
 		alignment = table_separator_alignment(cells)
 		if alignment is not None:
+			if width is None:
+				width = len(cells)
+			if len(cells) != width:
+				fail(path, line, "header separator must match the table's logical column count")
 			if separator_index is not None:
 				fail(path, line, "pipe tables support exactly one header-separator row")
 			if len(rows) > 1:
@@ -476,13 +512,18 @@ def parse_table(path: pathlib.Path, lines: list[str], index: int,
 			index += 1
 			continue
 		parsed_cells = tuple(
-			slide_lib.djot_inline.parse_inlines(path, base_line + index, cell)
+			parse_table_cell(path, base_line + index, cell)
 			for cell in cells
 		)
+		columns = sum(cell.column_span for cell in parsed_cells)
+		if width is None:
+			width = columns
+		elif columns != width:
+			fail(path, line, "pipe table rows must have the same number of cells on the logical column grid (including colspan)")
 		rows.append(parsed_cells)
 		index += 1
 	if separator_index in (None, 0):
-		headers: tuple[tuple[slide_lib.native_model.Inline, ...], ...] = ()
+		headers: tuple[slide_lib.native_model.TableCell, ...] = ()
 		body_rows = tuple(rows)
 	else:
 		headers = rows[0]

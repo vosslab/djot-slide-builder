@@ -9,6 +9,7 @@ import pytest
 import slide_lib.capacity_report
 import slide_lib.compilation_result
 import slide_lib.djot_parser
+import slide_lib.djot_audit
 import slide_lib.layout_content
 import slide_lib.layout_engine
 import slide_lib.layout_measurement
@@ -512,18 +513,77 @@ def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> N
 	"""Keep numeric columns readable and totals distinct without changing cell text."""
 	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
 		"| Class | O-E | Value |\n| --- | --- | --- |\n"
-		"| A-B- | -1 | 0.033 |\n| Total | 0 | 0.178 |\n")
+		"| A-B- | -1 | 0.033 |\n| C | −5 | 0.111 |\n| D | &#8211;15 | 1.000 |\n"
+		"| E | −150 | 10.00 |\n| Total | 0 | 0.178 |\n")
 	table = next(item.content for item in result.plan.slides[0].objects
 		if isinstance(item.content, slide_lib.layout_content.TableContent))
+	for row in table.header_rows:
+		for cell in row.cells:
+			assert cell.paragraphs[0].properties.horizontal_alignment is \
+				slide_lib.layout_primitives.HorizontalAlignment.CENTER
+	for row in table.header_rows + table.body_rows:
+		for cell in row.cells:
+			assert cell.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE
+			assert cell.padding.left == cell.padding.right > 0
 	for row in table.body_rows:
 		for cell in row.cells[1:]:
 			assert cell.paragraphs[0].properties.horizontal_alignment is \
 				slide_lib.layout_primitives.HorizontalAlignment.END
 	assert table.body_rows[0].cells[0].fill_role is None
-	for cell in table.body_rows[1].cells:
+	for cell in table.body_rows[-1].cells:
 		assert cell.fill_role is slide_lib.layout_primitives.StyleRole.ACCENT_TINT
 		assert all(run.style.bold for run in cell.paragraphs[0].inlines
 			if isinstance(run, slide_lib.layout_content.TextRun))
+
+
+def test_cell_background_does_not_change_table_geometry_or_alignment(tmp_path: pathlib.Path) -> None:
+	"""A shaded reveal is a style change, retaining the exact measured numeric table."""
+	header = "=== layout: one-panel\n\n@body\n\n{table-group=shading}\n"
+	plain = "| Class | Count |\n| --- | --- |\n| R | −15 |\n| Total | 350 |\n"
+	shaded = plain.replace("| R | −15 |",
+		"| [R]{background-color=#F6E8FB} | [−15]{background-color=#F6E8FB} |")
+	result = compile_source(tmp_path, header + plain + "\n" + header + shaded)
+	tables = [next(item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+		for slide in result.plan.slides]
+	assert tables[0].rectangle == tables[1].rectangle
+	assert tables[0].content.column_widths == tables[1].content.column_widths
+	assert tables[0].content.row_heights == tables[1].content.row_heights
+	cell = tables[1].content.body_rows[0].cells[1]
+	assert cell.fill_color == "F6E8FB"
+	assert cell.paragraphs[0].properties.horizontal_alignment is \
+		slide_lib.layout_primitives.HorizontalAlignment.END
+	assert tables[0].content.body_rows[0].cells[1].fill_color is None
+
+
+def test_merged_total_uses_combined_width_and_explicit_cell_alignment(tmp_path: pathlib.Path) -> None:
+	"""Equal gene columns remain equal while the merged total occupies all three."""
+	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
+		'{column-widths="1,1,1,2"}\n| C | D | H | Count |\n| --- | --- | --- | --- |\n'
+		'| [c]{text-align=center} | d | h | 1 |\n'
+		'| [Total]{colspan=3 background-color=#80BD80} | 1,400 |\n')
+	table = next(item.content for item in result.plan.slides[0].objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+	assert table.column_widths[0] == table.column_widths[1] == table.column_widths[2]
+	assert len(table.body_rows[1].cells) == 2
+	assert table.body_rows[1].cells[0].column_span == 3
+	assert table.body_rows[0].cells[0].paragraphs[0].properties.horizontal_alignment is \
+		slide_lib.layout_primitives.HorizontalAlignment.CENTER
+	assert table.body_rows[1].cells[1].paragraphs[0].properties.horizontal_alignment is \
+		slide_lib.layout_primitives.HorizontalAlignment.END
+
+
+def test_grouped_tables_allow_merged_rows_on_the_same_column_grid(tmp_path: pathlib.Path) -> None:
+	"""A reveal may merge cells without changing the group's logical column schema."""
+	header = '=== layout: one-panel\n\n@body\n\n{table-group="merged"}\n'
+	columns = '| C | D | Count |\n| --- | --- | --- |\n'
+	result = compile_source(tmp_path, header + columns + '| c | d | ? |\n\n' +
+		header + columns + '| [Total]{colspan=2} | 350 |\n')
+	tables = [next(item.content for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent))
+		for slide in result.plan.slides]
+	assert tables[0].column_widths == tables[1].column_widths
+	assert tables[1].body_rows[0].cells[0].column_span == 2
 
 
 def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> None:
@@ -666,3 +726,99 @@ def test_mixed_content_starvation_requires_replacement_and_split(tmp_path: pathl
 	assert (tmp_path / "specimen.djot").read_text() == source
 	marked = compile_source(tmp_path, source.replace("\n", "\n@replaceme\n", 1))
 	assert sum(item.object_id == "replaceme-watermark" for item in marked.plan.slides[0].objects) == 1
+
+
+@pytest.mark.parametrize("course", slide_lib.presentation_theme.color_theme_names())
+@pytest.mark.parametrize("layout", ("bookend", "definitions"))
+def test_teaching_layouts_preserve_body_space_and_add_editable_frames(
+		tmp_path: pathlib.Path, layout: str, course: str) -> None:
+	"""Teaching frames keep content space and never label live content as reference-only."""
+	text = "\n# Learning focus\n@body\n- Term: explanation\n"
+	ordinary = compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
+	theme = slide_lib.presentation_theme.default_theme(course)
+	page = slide_lib.layout_engine.compile_layout_deck(
+		parsed_source(tmp_path, f"=== layout: {layout}" + text), theme).plan.slides[0]
+	assert next(slot.rectangle for slot in page.slots if slot.slot_id == "body") == next(
+		slot.rectangle for slot in ordinary.slots if slot.slot_id == "body")
+	frame = [item for item in page.objects if item.object_id.startswith("teaching-")]
+	assert all(item.content.style.line_pattern is slide_lib.layout_primitives.LinePattern.NONE
+		for item in frame)
+	for name in ("band", "corner"):
+		first = next(item for item in frame if item.object_id == f"teaching-{name}-0")
+		opposite = next(item for item in frame if item.object_id == f"teaching-{name}-1")
+		assert [(1280 - first.rectangle.x - point.x,
+			800 - first.rectangle.y - point.y) for point in first.content.points] == [
+			(opposite.rectangle.x + point.x, opposite.rectangle.y + point.y)
+			for point in opposite.content.points]
+		assert first.content.style.fill_role == opposite.content.style.fill_role
+		for shape in (first, opposite):
+			assert min(point.x for point in shape.content.points) == 0
+			assert min(point.y for point in shape.content.points) == 0
+			assert max(point.x for point in shape.content.points) == shape.rectangle.width
+			assert max(point.y for point in shape.content.points) == shape.rectangle.height
+	assert not any(item.object_id.startswith("reference-") for item in page.objects)
+	assert max(item.z_index for item in frame) < min(item.z_index for item in page.objects
+		if item not in frame)
+
+
+
+def test_definitions_style_terms_without_styling_explanations_or_examples(tmp_path: pathlib.Path) -> None:
+	"""Plain term syntax and existing bold terms receive automatic bold and underline."""
+	page = compile_source(tmp_path, "=== layout: definitions\n# Definitions\n@body\n"
+		"- Parental type: same allele combination.\n  - An example.\n"
+		"- *Recombinant type* - different allele combination.\n").plan.slides[0]
+	paragraphs = [paragraph for item in page.objects
+		if isinstance(item.content, slide_lib.layout_content.TextContent)
+		and item.slot_id == "body" for paragraph in item.content.paragraphs]
+	runs = [run for paragraph in paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun)]
+	terms = [run for run in runs if run.text in ("Parental type", "Recombinant type")]
+	assert len(terms) == 2 and all(run.style.bold and run.style.underline for run in terms)
+	assert all(not run.style.bold and not run.style.underline for run in runs if run not in terms)
+
+
+def test_definitions_reject_missing_term_boundaries(tmp_path: pathlib.Path) -> None:
+	"""Malformed entries must identify how to supply a term rather than silently look ordinary."""
+	with pytest.raises(ValueError, match="Term: explanation"):
+		compile_source(tmp_path, "=== layout: definitions\n@body\n- No term separator\n")
+
+
+
+def test_automatic_runt_balancing_moves_words_and_preserves_styling(tmp_path: pathlib.Path) -> None:
+	"""A short last line is rebalanced at the selected size, with identical words and run styles."""
+	theme = slide_lib.presentation_theme.default_theme()
+	session = slide_lib.layout_measurement.MeasurementSession(theme)
+	family = slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
+	width = session.advance(family, False, False, 28, "Distances between genes can be expressed as ")
+	width += session.advance(family, True, False, 28, "map ")
+	deck = parsed_source(tmp_path, "=== layout: one-panel\n@body\n"
+		"Distances between genes can be expressed as [*map units*]{underline=true};\n")
+	blocks = deck.slides[0].cells[0].blocks
+	content = slide_lib.layout_object_builders.text_content(blocks, 28, 17,
+		slide_lib.layout_primitives.StyleRole.BODY, "172033", width, theme, session=session)
+	paragraph = content.paragraphs[0]
+	assert paragraph.typography.selected_size_pt == 28
+	assert sum(isinstance(run, slide_lib.layout_content.LineBreak) and run.automatic
+		for run in paragraph.inlines) == 1
+	runs = [run for run in paragraph.inlines if isinstance(run, slide_lib.layout_content.TextRun)]
+	text = "".join(run.text if isinstance(run, slide_lib.layout_content.TextRun) else " "
+		for run in paragraph.inlines)
+	assert " ".join(text.split()) == (
+		"Distances between genes can be expressed as map units;")
+	assert all(run.style.bold and run.style.underline for run in runs if run.text in ("map", "units"))
+	lines = slide_lib.djot_audit.paragraph_lines(paragraph, width, session)
+	assert len(lines) == 2 and slide_lib.djot_audit.typography_issue(lines) is None
+	assert all(ink_width <= width for _text, ink_width in lines)
+
+
+def test_runt_balancing_preserves_authored_breaks_and_does_not_add_lines() -> None:
+	"""Hard breaks and an unfixable narrow tail stay unchanged rather than adding a line."""
+	theme = slide_lib.presentation_theme.default_theme()
+	session = slide_lib.layout_measurement.MeasurementSession(theme)
+	family = slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
+	for tokens, width in (
+		((("Long preceding line", family, False, False, False), ("\n", "", False, False, False),
+			("word", family, False, False, False)), 900),
+		((("Longword tail", family, False, False, False),),
+			session.advance(family, False, False, 28, "Longword "))):
+		assert session.wrap_tokens(tokens, 28, width) == session.wrap_tokens(tokens, 28, width, balance=False)

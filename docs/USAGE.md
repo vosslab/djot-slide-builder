@@ -206,6 +206,10 @@ The same selector builds the Biotechnology lecture folder:
 ./build_slides.sh biotech/LECT04/
 ```
 
+Retired lecture sources may retain a `.djot.retired` suffix beside their assets. Folder builds
+and lint do not select them. For LECT08F, use `lect08f-three_point_testcross_bpw.djot`; the
+textbook predecessor and original presentation evidence are retained for reference.
+
 `deck_tools.py build` accepts `--format all`, `odp`, or `pdf`; `all` is the default. It recognizes
 `.djot` source only, and folder discovery recursively selects only `.djot` files. Every deck compiles
 once: `odp` writes the editable format, `pdf` writes native ODP plus its LibreOffice-derived PDF,

@@ -7,6 +7,10 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 
 # Design decisions
 
+- Native tables use 12 logical units of horizontal padding and 4 vertically. Header
+  paragraphs default to centered; all cells use middle vertical alignment. Explicit
+  text-align remains authoritative. Shared measurement includes the full cell padding.
+
 ### Advisory typography audit
 
 `deck_tools.py audit` checks final compiled text-frame geometry using the same styled-token
@@ -848,3 +852,179 @@ Podcast refresh recognizes include boundaries, preserving the shared channel and
 
 **Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
 and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.
+
+### Bookend and definitions layouts
+
+**Decision.** Share one `bookend` layout for learning objectives and key takeaways. Use its
+ordinary one-panel geometry with an editable, thin angular course-colored frame. Give
+`definitions` the same frame geometry and course accent color with automatic bold/underline on
+leading terms. Keep `reference` gray with its later-study footer. Use the existing course accent for the long bands and its pale tint for the opposite corner
+accents. Pair shapes with exact half-turn symmetry and diagonal gaps. Native editable polygons
+keep the 8-pixel bands outside the standard content area.
+
+**Why.** Objectives and takeaways bookend the lecture with equal prominence. Definitions need
+consistent term emphasis; live teaching anchors need a distinct identity from later-study material.
+
+**Consequence.** Authors select the semantic layout instead of repeating visual formatting.
+Plain `Term: explanation` entries and existing leading bold terms are normalized before measurement.
+Nested examples keep their authored formatting. Initial adoption covers LECT08B-F objectives and
+takeaways plus LECT08B's linkage definitions, preserving their wording and sequence.
+
+**Owner.** `slide_lib/teaching_layouts.py`, `slide_lib/layout_specialty_builders.py`, and
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+
+### Automatic runt balancing
+
+**Decision.** Use the same runt criterion for advisory detection and automatic text balancing.
+For a wrapped paragraph with a short final line, move whole words from the preceding line until
+the tail is acceptable, without changing font size or adding a line. Retain run styles and links.
+
+**Why.** The instructor prefers automatic layout handling and accepts more words on the next line.
+Manual wording edits should not be required for a renderer-controlled line break.
+
+**Consequence.** Sizing and final text projection share measured balanced lines. The ODP receives
+soft line breaks only when balancing changes a paragraph. The audit measures those emitted breaks
+and still reports unresolved runts. Explicit author breaks, URLs, and math keep their existing
+handling. Leave an unfixable tail unchanged rather than overflowing or creating a new short line.
+Source Djot wording remains unchanged. The final-paragraph audit exemption still applies.
+
+**Owner.** `slide_lib/typography.py`, `slide_lib/layout_measurement.py`,
+`slide_lib/layout_object_builders.py`, and `slide_lib/djot_audit.py`.
+
+### Three-point procedure recaps
+
+**Decision.** Store the pairwise-distance and quick DCO procedure slides as separate canonical
+Djot files under `genetics/evergreen/`. Repeat the appropriate include before a new problem.
+Use the fixed [COLOR_PALETTE.md](COLOR_PALETTE.md) colors in rainbow order, including matching
+colors on internal step references. The six-step procedure uses red/orange/yellow/green/blue/purple;
+the four-step procedure uses red/green/blue/purple.
+
+**Why.** The instructor wants a recurring colored roadmap. Full mapping and quick middle-gene
+inference use different numbered methods; separate sources keep their instructions consistent.
+
+**Consequence.** LECT08D includes the six-step procedure before its worked problem and activity.
+The replacement BPW LECT08F includes it before its worked problem and at gene-pair transitions.
+The original textbook F deck is retired; its separate DCO roadmap remains available for future use.
+
+**Owner.** `genetics/evergreen/three_point_testcross_steps.djot`,
+`genetics/evergreen/three_point_gene_order_steps.djot`, and
+[SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md).
+
+Procedure recap titles use explicit black text, leaving the fixed rainbow colors on
+the steps. Six-step recaps also mark gene-pair changes and returns to summary/distance
+work, alongside repeats before new practice problems.
+
+### Native cell backgrounds
+
+**Decision.** Use a whole-cell `[content]{background-color=#RRGGBB}` wrapper with the CSS
+property name. Authored `TableCell` records retain inlines and an optional hex background;
+physical cells carry the explicit fill into ODP `fo:background-color` cell styles.
+
+**Why.** Worked examples need editable parental/recombinant shading and blank covered columns.
+This extends the existing native table pipeline instead of adding picture overlays or CSS parsing.
+
+**Consequence.** Explicit fills override theme/total defaults without changing text color or
+geometry. Measurement and math/text traversal use the typed cell's inlines. Unattributed cells
+keep their previous behavior. Partial-cell and non-table backgrounds are source errors.
+
+**Owner.** `slide_lib/native_model.py`, `slide_lib/djot_blocks.py`,
+`slide_lib/layout_object_builders.py`, `slide_lib/odp_text.py`, and `docs/DJOT_SLIDE_SYNTAX.md`.
+
+### BPW replacement for LECT08F
+
+**Decision.** Replace the active textbook deck with a fixed, authored example (now 43 slides with phase dividers) from
+BPW question `ae3b_1ad2`. Keep the original Djot as `.djot.retired` beside its assets and retain
+original ODP/PDF evidence. Folder discovery selects only the replacement `.djot`.
+
+**Why.** The instructor teaches the pairwise method used by BPW and LECT08C/D.
+
+**Consequence.** Each gene pair has six states: select/cover, classify, sum prompt, sum reveal,
+divide, and multiply. A native results table accumulates completed calculations. Original BPW
+answers remain 25, 9, 33 and dch/hcd; the map separately shows adjacent intervals totaling 34 cM.
+No BPW repository changes or permanent conversion generator are required.
+
+**Owner.** `genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot` and its lecture review/map.
+
+### Merged and aligned table cells
+
+**Decision.** Extend whole-cell wrappers with HTML-named `colspan` and CSS-named `text-align`.
+The semantic cell retains a positive horizontal span and optional left/center/right alignment.
+Grid validation counts logical columns, measurement uses the combined spanned width, and the
+existing ODP writer emits merged cells plus native covered positions. Explicit text alignment
+wins over numeric auto-alignment. Existing unspanned cells keep their original behavior.
+
+**Why.** The BPW example needs equal gene columns, a Total label spanning all three genes,
+and centered class labels separated from right-aligned counts.
+
+**Consequence.** Spanned rows omit covered source cells. Automatic/grouped sizing accounts for
+spanned text without allocating the full label width to the first gene column. The BPW tables
+use repeated explicit `1,1,1,2,1.5` proportions; backgrounds are stronger green/purple tints with
+a gray covered column. Eight section/subsection dividers separate the lesson's teaching phases.
+
+**Owner.** `slide_lib/native_model.py`, `slide_lib/djot_blocks.py`,
+`slide_lib/layout_measurement.py`, `slide_lib/layout_object_builders.py`, and table syntax docs.
+
+### Persistent parental references
+
+**Decision.** In the BPW worked example, only the two original parental progeny rows retain green
+backgrounds throughout all pairwise states. Other pairwise P rows use lime; recombinant rows use the fixed color assigned to their
+gene pair (CD red, CH blue, DH purple). The unused gene column stays gray even where it intersects a reference row.
+
+**Why.** Covering a gene changes the displayed projection, not the identity of the original parents.
+Students need stable reference rows when deciding how to classify the remaining offspring.
+
+**Consequence.** Known parental P labels and counts persist through pair-selection prompts.
+Classification slides compare c++ / +dh to their two-gene projections in the same order, using
+three short bullets in the main work panel. A compact slide-wide citation-footer legend explains
+row colors, P/R labels, and pair colors without taking comparison space or causing the former awkward wrap.
+
+**Owner.** `genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot`.
+
+### Gene-pair color continuity
+
+**Decision.** Use CD red, CH blue, and DH purple from the fixed palette, with hue-matched lighter
+fills in progeny and summary tables. Reserve green for original parental rows and lime for other
+pairwise parental rows. The exact base/fill values are recorded in `docs/COLOR_PALETTE.md`.
+
+**Why.** The instructor wants all classified rows colored and each recombinant sum visibly linked
+to its own pair's results, while preserving stable parental reference rows.
+
+**Consequence.** Summary pair labels establish the mapping; result cells reveal in the same color
+as their source recombinant rows. Final percentages and the corresponding adjacent map intervals
+use the pair's base color. Step colors and the gray covered-column mask keep their existing roles.
+
+**Owner.** `genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot` and the color palette doc.
+
+### BPW visuals follow the reasoning
+
+**Decision.** Keep the full progeny table and each arithmetic reveal through the three pairwise
+calculations. Add two matched question/answer slides at the first C-D classification: cd+ (120)
+projects to recombinant cd; c+h (75) projects to parental c+. Use stable green original-parent
+references and the same covered-H geometry in both states.
+
+After all three results are known, replace the progeny table with a shared-scale recombination
+bar chart and large endpoint, middle-gene, and proportional interval-map views. Separate the
+50 cM interval sum from the 40% observed D-H recombination. Compare parental and double-recombinant
+alleles in solved D-C-H order, then use a small native table to show that the same fifty offspring
+are R for CD and CH but P for DH. State that these offspring are already included in both interval
+counts. Preserve the original C-D-H genotype labels in the count table and identify both orders.
+
+**Why.** The working table provides continuity during classification; afterward it competes with
+the spatial reasoning. The two side-step examples explain the classification rule, while the
+double-recombinant comparison connects the count correction to allele combinations.
+
+**Implementation.** Twelve static SVG components use explicit labels and the fixed pair palette;
+titles, explanatory text, and tables remain native Djot. The setup uses a native fly emoji and
+lists heterozygous loci separately without revealing phase or gene order. Existing layouts and
+export behavior suffice. The active deck has 49 visible slides, including three shared roadmaps.
+
+**Owner.** `genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot`, its local SVG assets,
+and its review/slide map. Book references and validation evidence stay in the review document.
+
+**Follow-up.** Repeat the matching answer for CH and DH, keeping the covered-gene geometry and
+original-parent references. Replace the small-gap bank instance with a locally generated example:
+CD 30%, CH 20%, DH 40%, 1,000 offspring, and 50 double recombinants. Set up the 50 cM / 40%
+mismatch before tracing two exchanges and comparing/counting the resulting offspring. A 50 cM
+interval sum is not a claim of 50% recombination. Preserve semantic hue and saturation across
+line/text colors and pale fills, adjusting lightness only. The generator and independent solver
+are used during authoring; normal builds consume fixed Djot and SVG sources.

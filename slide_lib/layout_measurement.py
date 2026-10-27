@@ -19,6 +19,7 @@ import slide_lib.math_render
 import slide_lib.native_model
 import slide_lib.presentation_theme
 import slide_lib.svg_images
+import slide_lib.typography
 
 
 LEFT = 60.0
@@ -28,7 +29,7 @@ CONTENT_BOTTOM = 700.0
 CELL_GUTTER = 42.0
 GRID_GUTTER = 24.0
 ITEM_SPACE = .25
-TABLE_HORIZONTAL_PADDING = 6.0
+TABLE_HORIZONTAL_PADDING = 12.0
 TABLE_VERTICAL_PADDING = 4.0
 TEXT_FRAME_CLEARANCE_PT = 1.0
 MeasuredToken = tuple[str, str, bool, bool, bool, float, int]
@@ -143,9 +144,9 @@ class MeasurementSession:
 				if isinstance(block, slide_lib.native_model.Table) and block.table_group is not None:
 					groups.setdefault(block.table_group, []).append(block)
 		for name, tables in groups.items():
-			columns = len(tables[0].headers) if tables[0].headers else len(tables[0].rows[0])
+			columns = tables[0].column_count
 			for table in tables:
-				count = len(table.headers) if table.headers else len(table.rows[0])
+				count = table.column_count
 				if count != columns:
 					raise ValueError(f"{table.location.path}:{table.location.line}: table-group "
 						f"{name!r} requires {columns} columns, found {count}")
@@ -253,7 +254,7 @@ class MeasurementSession:
 		return result
 
 	def wrap_tokens(self, tokens: tuple[tuple[str, str, bool, bool, bool], ...],
-			size_pt: float, available: float) -> tuple[list[list[MeasuredToken]], list[float]]:
+			size_pt: float, available: float, balance: bool = True) -> tuple[list[list[MeasuredToken]], list[float]]:
 		"""Share exact styled line wrapping between sizing and advisory audits."""
 		lines: list[list[MeasuredToken]] = [[]]; line_widths = [0.0]
 		for index, (text, family, token_bold, token_italic, literal) in enumerate(tokens):
@@ -277,7 +278,44 @@ class MeasurementSession:
 					if not lines[-1] and fragment.isspace(): continue
 					lines[-1].append((fragment, family, token_bold, token_italic, literal,
 						token_size, index)); line_widths[-1] += advance
+		if balance and not any(text == "\n" or literal for text, _family, _bold, _italic, literal in tokens):
+			self.balance_tail(lines, line_widths, available)
 		return lines, line_widths
+
+	def balance_tail(self, lines: list[list[MeasuredToken]], widths: list[float], available: float) -> None:
+		"""Move whole words into a runt without changing line count, text size, or styling."""
+		if len(lines) < 2 or not lines[-2] or not lines[-2][-1][0].isspace():
+			return
+		original_lines = [list(line) for line in lines[-2:]]
+		original_widths = widths[-2:]
+		def ink(line: list[MeasuredToken]) -> float:
+			trimmed = list(line)
+			while trimmed and trimmed[-1][0].isspace():
+				trimmed.pop()
+			return sum(self.advance(family, bold, italic, size, text)
+				for text, family, bold, italic, _literal, size, _index in trimmed)
+		while slide_lib.typography.has_runt([
+				("".join(token[0] for token in line).strip(), ink(line)) for line in lines[-2:]]):
+			previous = list(lines[-2])
+			while previous and previous[-1][0].isspace():
+				previous.pop()
+			boundary = next((index for index in range(len(previous) - 1, -1, -1)
+				if previous[index][0].isspace()), None)
+			if boundary is None:
+				break
+			prefix = previous[:boundary]
+			if len("".join(token[0] for token in prefix).split()) < 2:
+				break
+			tail = previous[boundary + 1:] + [previous[boundary]] + lines[-1]
+			if ink(tail) > available or ink(prefix) < ink(tail) / 3:
+				break
+			lines[-2], lines[-1] = prefix, tail
+			widths[-2], widths[-1] = ink(prefix), ink(tail)
+		if slide_lib.typography.has_runt([
+				("".join(token[0] for token in line).strip(), ink(line)) for line in lines[-2:]]):
+			lines[-2:] = original_lines
+			widths[-2:] = original_widths
+
 
 	def fit_url_size(self, text: str, family: str, bold: bool, italic: bool,
 			start: float, width: float) -> float:
@@ -612,7 +650,7 @@ def table_measurements(table: slide_lib.native_model.Table, size_pt: float, widt
 	active = session or MeasurementSession(theme)
 	rows = (table.headers,) if table.headers else ()
 	rows += table.rows
-	columns = len(rows[0])
+	columns = table.column_count
 	padding = TABLE_HORIZONTAL_PADDING * 2
 	clearance = point_height((TABLE_BORDER_WIDTH_PT + TEXT_FRAME_CLEARANCE_PT) * 2, theme)
 	content_width = width - (padding + clearance) * columns
@@ -624,10 +662,10 @@ def table_measurements(table: slide_lib.native_model.Table, size_pt: float, widt
 			if table.table_group is not None else _table_column_bounds((table,), size_pt, active)
 		column_widths = tuple(value + padding + clearance for value in
 			_distribute_table_widths(minimums, preferred, content_width))
-	row_heights = tuple(max(paragraph_height(cell, size_pt,
-		table_cell_text_width(column_widths[column], theme), theme,
+	row_heights = tuple(max(paragraph_height(cell.inlines, size_pt,
+		table_cell_text_width(sum(column_widths[column:column + cell.column_span]), theme), theme,
 		bold=row_index == 0 and bool(table.headers), session=active) +
-		TABLE_VERTICAL_PADDING * 2 for column, cell in enumerate(row))
+		TABLE_VERTICAL_PADDING * 2 for column, cell in slide_lib.native_model.table_cell_positions(row))
 		for row_index, row in enumerate(rows))
 	return TableMeasurements(column_widths, row_heights)
 
@@ -640,13 +678,24 @@ def _table_column_bounds(tables: tuple[slide_lib.native_model.Table, ...], size_
 		if table.headers:
 			rows.append((table.headers, True))
 		rows.extend((row, False) for row in table.rows)
-	minimums: list[float] = []
-	preferred: list[float] = []
-	for column in range(len(rows[0][0])):
-		bounds = tuple(_table_cell_widths(row[column], size_pt, session, header)
-			for row, header in rows)
-		minimums.append(max(1.0, *(minimum for minimum, _preferred in bounds)))
-		preferred.append(max(1.0, *(_preferred for _minimum, _preferred in bounds)))
+	minimums = [1.0] * tables[0].column_count
+	preferred = [1.0] * tables[0].column_count
+	spanning = []
+	for row, header in rows:
+		for column, cell in slide_lib.native_model.table_cell_positions(row):
+			low, high = _table_cell_widths(cell.inlines, size_pt, session, header)
+			if cell.column_span == 1:
+				minimums[column] = max(minimums[column], low)
+				preferred[column] = max(preferred[column], high)
+			else:
+				spanning.append((column, cell.column_span, low, high))
+	for column, span, low, high in spanning:
+		for bounds, required in ((minimums, low), (preferred, high)):
+			extra = max(0.0, required - sum(bounds[column:column + span])) / span
+			for index in range(column, column + span):
+				bounds[index] += extra
+
+	preferred = [max(low, high) for low, high in zip(minimums, preferred)]
 	return tuple(minimums), tuple(preferred)
 
 
@@ -742,7 +791,7 @@ def grid(left: float, top: float, width: float, height: float, columns: int, row
 def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRectangle) -> tuple[slide_lib.layout_primitives.LogicalRectangle, ...]:
 	"""Return all standard named-cell allocations from a contract name."""
 	left, top, width, height = content.x, content.y, content.width, content.height
-	if name in ("one-panel", "reference"):
+	if name in ("one-panel", "reference", "bookend", "definitions"):
 		return (content,)
 	if name == "two-panels":
 		return grid(left, top, width, height, 2, 1)
@@ -908,7 +957,7 @@ def _block_inlines(block: slide_lib.native_model.Block) -> tuple[slide_lib.nativ
 		return tuple(inline for item in block.items for inline in _descendant_inlines(item.inlines))
 	if isinstance(block, slide_lib.native_model.Table):
 		return tuple(inline for row in (block.headers,) + block.rows for cell in row
-			for inline in _descendant_inlines(cell))
+			for inline in _descendant_inlines(cell.inlines))
 	return ()
 
 

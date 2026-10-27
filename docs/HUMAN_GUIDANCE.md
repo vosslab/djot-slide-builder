@@ -1,5 +1,39 @@
 # Human guidance
 
+- Use comfortable default table-cell padding, center all table headings, and vertically
+  align table-cell content in the middle.
+
+- Frame three-gene order as three choices: choose the middle gene. Show that reversed
+  orders represent the same map.
+
+- Color the three-point testcross procedure like the LECT07 chi-square steps, and repeat the
+  matching colored roadmap before starting a new problem. Preserve colored text during conversion
+  and explicitly check that preservation in the conversion checklist.
+- LECT08D and LECT08F must use the same canonical six-step three-point testcross slide and
+  identical colors throughout. Reference the shared slide rather than maintaining separate copies.
+- Use black procedure-roadmap titles so attention stays on the colored steps. Repeat the shared
+  six-step slide at gene-pair transitions, before new practice problems, and when returning to
+  genotype summaries or distance calculations; do not limit it to the initial introduction.
+
+- Handle detected runts automatically by pushing more words onto the final line when useful.
+  Preserve wording, styling, and font size; prefer balancing line breaks over manual rewriting.
+
+- Use a thin, angular frame with matching diagonal breaks at opposite corners for bookend
+  and definitions slides. Preserve the reference image's symmetry, use one course hue with
+  light/dark variations, and keep the frame out of the content area. Accents are welcome;
+  omit the earlier arbitrary thick corner segment.
+
+- Use Title Case for all slide titles. This is the general slide-title rule, not a special
+  treatment for Learning Objectives or Key Takeaways. Preserve standard spelling of acronyms,
+  proper names, gene symbols, and scientific notation.
+
+- Keep bookend and definitions frames and accents in the selected course hue. Saturation
+  and lightness may vary for visual emphasis and contrast; avoid unrelated accent hues.
+
+- Use one dedicated `bookend` layout for both Learning Objectives and Key Takeaways.
+  Give these lecture bookends similar visual attention. Use a dedicated `definitions` layout
+  that enforces term formatting and gives definitions a recognizable frame.
+
 - Use straight ASCII quotation marks and apostrophes in Djot text. Write a plain apostrophe
   instead of `&#8217;`; normalize literal curly quotes and their numeric or named entities.
 
@@ -45,8 +79,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 ## Content titles
 
 - I prefer slide titles to fit on one line, leaving more room for the content.
-- "Figure 15.UN01", "Figure 13.9b", and "Figure 13.12-5" are figure captions, not slide titles.
-  Their promotion to headings during conversion is an error to investigate in the converter.
+- Remove textbook figure identifiers such as `Figure 15.12`, `Figure 15.UN01`, and `Fig. 17-4`
+  from converted slides, including headings, captions, citations, and editable diagram labels.
+  They are textbook-slide artifacts. Preserve the useful explanatory caption and diagram content.
 
 - Subsection backgrounds should be a variation of the course-dependent section color.
 
@@ -457,8 +492,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Significance-level labels should use preferred purple `#A719DB`; the imported dark
   purples were too dark.
 
-- For colored sequences, use larger jumps around the palette between consecutive items;
-  nearby hues do not provide enough separation. Keep cross-references matched to their items.
+- For new colored step sequences, choose well-separated colors from the fixed
+  [COLOR_PALETTE.md](COLOR_PALETTE.md) palette in rainbow order. Keep cross-references matched
+  to their items and reuse the identical colors when repeating a procedure slide.
 
 - Slide colors are no longer constrained to LibreOffice's named palette. Use the
   instructor's preferred explicit hex colors documented in [COLOR_PALETTE.md](COLOR_PALETTE.md).
@@ -529,3 +565,46 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 - Omit redundant "(continued)" from LECT07D titles; it causes unnecessary wrapping.
   Retitling these slides for clarity is authorized.
+
+- Use prominent mathematical minus signs (−) for negative values and right-align them
+  with positive numbers. Render chi-square with the Greek
+  lowercase chi and superscript two, never a Latin X or a legacy Symbol-font character.
+
+- Introduce the shared six-step testcross roadmap in LECT08C immediately before Pandora
+  Plant Inheritance (formerly PDF slide 26); this is its first use, before the D/F recaps.
+
+- Retire the textbook-based LECT08F deck and replace it with one worked BPW three-point
+  testcross example. Follow 08C/08D's teaching style and show every shared-roadmap intermediate step.
+- Add cell-background attributes so editable Djot tables can show instructional progress.
+  Align property naming with CSS: use `background-color` in the Djot attribute syntax.
+
+- In the BPW testcross slides, make the three gene columns equal widths, use visibly stronger
+  colors, and add section/subsection dividers between the major teaching phases.
+- Merge the Total label across the three gene columns with `colspan` rather than widening
+  the first gene column. Center gene symbols and classification labels for readable separation.
+
+- Use slide space deliberately: compact instructional legends such as P/R keys may use the
+  `@citation` footer or short bullets instead of wrapping through the main working panel.
+- Keep the two original parental rows in a fixed color throughout testcross solutions, including
+  after a gene is covered. They remain the reference for classifying the other rows. Distinguish
+  these original rows from other offspring that share a parental combination for the selected pair.
+
+- Keep original parental rows permanently green, and color the other pairwise parental rows
+  lime green so every classified row is colored. Give each gene pair a distinct fixed-palette
+  color and use it for that pair's recombinants and summary-table results.
+
+- Improve the BPW example to enhance understanding, rather than adding complexity. Change the
+  visual focus as the task changes: after all pairwise results are known, replace the full
+  progeny table with the evidence needed to build and explain the map.
+- Use restrained scientific diagrams and the fly emoji for context. Avoid decorative filler;
+  let each visual explain the current reasoning step.
+- Add a short question/answer side step for choosing parental versus recombinant types, where
+  students often struggle. Explain whole-pair matching against either original parent, including
+  why an offspring can be parental for a selected pair despite a difference at the covered gene.
+- Repeat the "Match the Pair, Not the Count" answer slide for every gene pair as a reminder.
+- Set up the discrepancy between outer-pair recombination and the map sum before explaining it.
+  Use a generated example with a clearly visible gap and show why double recombinants escape
+  the outer-pair count. Retain a simple teaching sequence rather than adding complexity.
+- Keep semantic color hues and saturation stable across tables, diagrams, and number lines;
+  vary lightness for readable fills. The instructor clarified that saturation changes, rather
+  than inconsistent hues, made the earlier color relationship difficult to follow.

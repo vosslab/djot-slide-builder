@@ -12,9 +12,9 @@ color-theme: genetics
 
 ## October 27, 2026
 
-=== layout: one-panel
+=== layout: bookend
 
-# Learning objectives
+# Learning Objectives
 
 @body
 
@@ -27,6 +27,8 @@ color-theme: genetics
 
 # Three-Point Test Cross
 
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
 === layout: one-panel
 
 # *Gene Mapping*
@@ -37,24 +39,6 @@ color-theme: genetics
 
 - A heterozygote fruit fly for all three genes, was crossed with a homozygous recessive for all three genes, making the following results a [valid test-cross]{color=red}.
 - Progeny are sorted by phenotype name.
-
-=== layout: one-panel
-
-# *Steps in Three-Point Test-Cross Gene Map*
-
-@body
-
-- 1. Determine parental genotype
-- 2\: Pick any two genes
-  - completely cover up the third so it does not confuse you!!!
-- 3. Determine which of the progeny are parental and non-parental genotypes
-- 4. Determine the map distance between the two genes
-  - 4a Sum the progeny from the non-parental genotypes
-  - 4b. Divide the NP by the total progeny
-  - 4c. Multiply the result by 100% to get the distance between the genes
-- 5. Go to Step 2 and pick a new pair of genes until all pairs are complete
-- 6. Use all the gene distances to determine the order of the genes.
-  - largest distance are furthest away and on the ends
 
 === layout: one-panel
 
@@ -131,6 +115,8 @@ d = (183+60+95+161)/2100
 
 d = 23.7 map units
 
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
 === layout: one-panel
 
 # *A to C Distance\: Which Numbers to Add?*
@@ -195,6 +181,8 @@ d = 23.7 map units
 d = (60+17+17+95)/2100
 
 d = 9.0 map units
+
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
 
 === layout: one-panel
 
@@ -582,6 +570,8 @@ d = 18.0 map units
 
 # In Class Activity\: Gene Distance
 
+=== include: repo:genetics/evergreen/three_point_testcross_steps.djot
+
 === layout: one-panel
 
 # *Group Work*
@@ -629,9 +619,9 @@ d = 18.0 map units
   - [https\://youtu.be/-\_UcDhzjOio](https://youtu.be/-_UcDhzjOio)
   - [https\://youtu.be/TU44tR0hJ8A](https://youtu.be/TU44tR0hJ8A)
 
-=== layout: one-panel
+=== layout: bookend
 
-# Key takeaways
+# Key Takeaways
 
 @body
 

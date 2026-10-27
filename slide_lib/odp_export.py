@@ -384,7 +384,7 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
 		slide_index: int, object_index: int,
 		target_ids: dict[str, str]) -> xml.etree.ElementTree.Element:
-	"""Write one editable rectangle, rounded rectangle, or star."""
+	"""Write one editable rectangle, rounded rectangle, polygon, or star."""
 	attributes = _frame_attributes(item, deck, theme, style_name, target_ids)
 	if content.kind in (slide_lib.layout_primitives.ShapeKind.RECTANGLE,
 			slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE):
@@ -395,6 +395,12 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 		if content.text is not None:
 			slide_lib.odp_text.write_text(element, automatic, content.text, slide_index,
 				object_index, target_ids, item.reveal_targets)
+	elif content.kind is slide_lib.layout_primitives.ShapeKind.POLYGON:
+		attributes[_qname(SVG_NS, "viewBox")] = (
+			f"0 0 {item.rectangle.width:g} {item.rectangle.height:g}")
+		attributes[_qname(DRAW_NS, "points")] = " ".join(
+			f"{point.x:g},{point.y:g}" for point in content.points)
+		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "polygon"), attributes)
 	else:
 		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "custom-shape"),
 			attributes)

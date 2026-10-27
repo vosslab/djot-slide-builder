@@ -15,7 +15,9 @@ enters only through the one-time import workflow.
 - [../slide_lib/djot_parser.py](../slide_lib/djot_parser.py),
   [../slide_lib/djot_blocks.py](../slide_lib/djot_blocks.py), and
   [../slide_lib/djot_inline.py](../slide_lib/djot_inline.py) parse extended-Djot into the typed
-  records in [../slide_lib/native_model.py](../slide_lib/native_model.py).
+  records in [../slide_lib/native_model.py](../slide_lib/native_model.py). Native table cells own
+  editable inlines, an optional `background-color`, `colspan`, and `text-align`. Measurement
+  uses the logical column grid and combined span width; ODP retains native fills and merges.
 - [../slide_lib/djot_grammar.py](../slide_lib/djot_grammar.py) derives directive and action
   spellings from the layout registry. [../slide_lib/djot_lint.py](../slide_lib/djot_lint.py)
   performs source-only validation and can invoke a pinned strict-Djot tool.
