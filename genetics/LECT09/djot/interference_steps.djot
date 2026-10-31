@@ -1,0 +1,13 @@
+=== layout: one-panel
+
+# [*Steps in Interference*]{color=#000000}
+
+@body
+
+- 1. [Count the observed double crossovers.]{color=#D40000}
+- 2. [Multiply the two adjacent interval probabilities.]{color=#B74300}
+  - This predicts the double-crossover fraction if the intervals are independent.
+- 3. [Multiply by the total offspring to get the expected count.]{color=#007A00}
+- 4. [Divide observed by expected: coefficient of coincidence.]{color=#003FFF}
+- 5. [Subtract coincidence from one: interference.]{color=#A719DB}
+

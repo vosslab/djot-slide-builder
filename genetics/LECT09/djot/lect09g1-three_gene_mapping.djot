@@ -1,0 +1,723 @@
+=== layout: section
+
+# Now Expand to Three Genes
+
+=== layout: one-panel
+
+# A New Three-Gene Cross
+
+@body
+
+- *New cross:* a++ / +bc.
+- Each ascus contains all four haploid products of one meiosis.
+- Find all three pairwise distances and determine gene order.
+- Lowercase letters mark mutant alleles; + means wild type.
+
+=== layout: one-panel
+
+# The Six Tetrad Sets
+
+@body
+
+![three gene asci](assets/lect09c-tetrad_worked_examples_bpw/three_gene_asci.svg)
+
+@citation
+
+Given cross: a++ / +bc. Counts describe complete tetrads. Spore positions carry no meiotic-order information.
+
+=== layout: one-panel
+
+# One Pair at a Time
+
+@body
+
+- The cross is a++ / +bc; this gives the parental combinations.
+- Each set still contains four spores from one meiosis.
+- Keep all three genes visible; compare one pair at a time.
+- The same set can change class when the selected pair changes.
+- Keep the set order and all tetrad counts unchanged.
+
+=== include: unordered_tetrad_steps.djot
+
+=== layout: subsection
+
+# Compare A and B
+
+=== layout: one-panel
+
+# A to B: Classify Each Set
+
+@body
+
+![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_0.svg)
+
+For A-B, what class is Set 4?
+
+@citation
+
+Given parents: a++ / +bc. Read A and B only; all three genes remain visible. Count whole tetrads.
+
+@notes
+
+[*Step 2: Pick A and B*]{color=#B74300}
+
+- Read A and B; keep all three genes visible.
+- Parental combinations for this pair: a+ / +b.
+- Classify every set using all four spores.
+- What class is Set 4?
+
+=== layout: one-panel
+
+# Match the Pair, Not the Count
+
+@body
+
+![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_1.svg)
+
+Set 4 is PD for A-B: +b and a+ match the parents. Match the pair, not the count.
+
+@citation
+
+Given parents: a++ / +bc. Read A and B only; all three genes remain visible. Count whole tetrads.
+
+@notes
+
+- Set 4: +b and a+ match the parents. It is PD for A-B; read only A and B.
+- Classify allele combinations, not counts.
+
+=== layout: two-panels
+
+# A to B: Add the Class Counts
+
+@left
+
+| Set | Tetrads | AB Class |
+| --- | --- | --- |
+| 1 | 2 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 2 | 5 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 3 | 198 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
+| 4 | 11 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| 5 | 282 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| 6 | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+Read the A-B classifications from the homework table.
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- Add all PD counts.
+- Add all NPD counts.
+- Add all TT counts.
+- Are the genes linked?
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A and B Are Linked
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 7 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 198 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-B classifications from the homework table.
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- PD = 11 + 282 + 702 = 995.
+- NPD = 2 + 5 = 7.
+- TT = 198 = 198.
+- PD is much greater than NPD: *linked*.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to B: Substitute the Counts
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 7 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 198 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-B classifications from the homework table.
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{\frac{1}{2}(198) + 3(7)}{1200} \times 100 \;\mathrm{cM}
+$$
+
+Use class counts, not the number of sets.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to B: Simplify the Fraction
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 7 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 198 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-B classifications from the homework table.
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{99 + 21}{1200} \times 100
+$$
+
+$$
+D = \frac{120}{1200} \times 100
+$$
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to B: 10 cM
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 7 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 198 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-B classifications from the homework table.
+
+@right
+
+[*Step 4: Record the Result*]{color=#007A00}
+
+$$
+D = 0.1 \times 100 = 10 \;\mathrm{cM}
+$$
+
+[*AB: 10 cM*]{color=#D40000}
+
+Pick the next pair and classify again.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== include: unordered_tetrad_steps.djot
+
+=== layout: subsection
+
+# Compare A and C
+
+=== layout: one-panel
+
+# A to C: Classify Each Set
+
+@body
+
+![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_1.svg)
+
+For A-C, what class is Set 3?
+
+@citation
+
+Given parents: a++ / +bc. Read A and C only; all three genes remain visible. Count whole tetrads.
+
+@notes
+
+[*Step 2: Pick A and C*]{color=#B74300}
+
+- Read A and C; keep all three genes visible.
+- Parental combinations for this pair: a+ / +c.
+- Classify every set using all four spores.
+- What class is Set 3?
+
+=== layout: one-panel
+
+# Match the Pair, Not the Count
+
+@body
+
+![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_2.svg)
+
+Set 3 is PD for A-C: +c and a+ match the parents. Match the pair, not the count.
+
+@citation
+
+Given parents: a++ / +bc. Read A and C only; all three genes remain visible. Count whole tetrads.
+
+@notes
+
+- Set 3: +c and a+ match the parents. It is PD for A-C; read only A and C.
+- Classify allele combinations, not counts.
+
+=== layout: two-panels
+
+# A to C: Add the Class Counts
+
+@left
+
+| Set | Tetrads | AC Class |
+| --- | --- | --- |
+| 1 | 2 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 2 | 5 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| 3 | 198 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| 4 | 11 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 5 | 282 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
+| 6 | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+Read the A-C classifications from the homework table.
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- Add all PD counts.
+- Add all NPD counts.
+- Add all TT counts.
+- Are the genes linked?
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A and C Are Linked
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 13 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 282 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-C classifications from the homework table.
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- PD = 5 + 198 + 702 = 905.
+- NPD = 2 + 11 = 13.
+- TT = 282 = 282.
+- PD is much greater than NPD: *linked*.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to C: Substitute the Counts
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 13 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 282 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-C classifications from the homework table.
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{\frac{1}{2}(282) + 3(13)}{1200} \times 100 \;\mathrm{cM}
+$$
+
+Use class counts, not the number of sets.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to C: Simplify the Fraction
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 13 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 282 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-C classifications from the homework table.
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{141 + 39}{1200} \times 100
+$$
+
+$$
+D = \frac{180}{1200} \times 100
+$$
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*?*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to C: 15 cM
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 13 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 282 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the A-C classifications from the homework table.
+
+@right
+
+[*Step 4: Record the Result*]{color=#007A00}
+
+$$
+D = 0.15 \times 100 = 15 \;\mathrm{cM}
+$$
+
+[*AC: 15 cM*]{color=#003FFF}
+
+Pick the next pair and classify again.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== include: unordered_tetrad_steps.djot
+
+=== layout: subsection
+
+# Compare B and C
+
+=== layout: one-panel
+
+# B to C: Classify Each Set
+
+@body
+
+![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_2.svg)
+
+For B-C, what class is Set 1?
+
+@citation
+
+Given parents: a++ / +bc. Read B and C only; all three genes remain visible. Count whole tetrads.
+
+@notes
+
+[*Step 2: Pick B and C*]{color=#B74300}
+
+- Read B and C; keep all three genes visible.
+- Parental combinations for this pair: ++ / bc.
+- Classify every set using all four spores.
+- What class is Set 1?
+
+=== layout: one-panel
+
+# Match the Pair, Not the Count
+
+@body
+
+![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_3.svg)
+
+Set 1 is PD for B-C: ++ and bc match the parents. Match the pair, not the count.
+
+@citation
+
+Given parents: a++ / +bc. Read B and C only; all three genes remain visible. Count whole tetrads.
+
+@notes
+
+- Set 1: ++ and bc match the parents. It is PD for B-C, despite its small count.
+- Classify allele combinations, not counts.
+
+=== layout: two-panels
+
+# B to C: Add the Class Counts
+
+@left
+
+| Set | Tetrads | BC Class |
+| --- | --- | --- |
+| 1 | 2 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| 2 | 5 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 3 | 198 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
+| 4 | 11 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 5 | 282 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
+| 6 | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+Read the B-C classifications from the homework table.
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- Add all PD counts.
+- Add all NPD counts.
+- Add all TT counts.
+- Are the genes linked?
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# B and C Are Linked
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 16 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 480 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the B-C classifications from the homework table.
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- PD = 2 + 702 = 704.
+- NPD = 5 + 11 = 16.
+- TT = 198 + 282 = 480.
+- PD is much greater than NPD: *linked*.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# B to C: Substitute the Counts
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 16 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 480 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the B-C classifications from the homework table.
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{\frac{1}{2}(480) + 3(16)}{1200} \times 100 \;\mathrm{cM}
+$$
+
+Use class counts, not the number of sets.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# B to C: Simplify the Fraction
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 16 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 480 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the B-C classifications from the homework table.
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{240 + 48}{1200} \times 100
+$$
+
+$$
+D = \frac{288}{1200} \times 100
+$$
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*?*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# B to C: 24 cM
+
+@left
+
+| Class | Tetrads |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 16 |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 480 |
+| [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} |
+
+Read the B-C classifications from the homework table.
+
+@right
+
+[*Step 4: Record the Result*]{color=#007A00}
+
+$$
+D = 0.24 \times 100 = 24 \;\mathrm{cM}
+$$
+
+[*BC: 24 cM*]{color=#A719DB}
+
+All three pairwise estimates are now known.
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*24*]{color=#A719DB} |
+
+@citation
+
+The table summarizes the classifications just completed. Count tetrads, not individual spores.
+

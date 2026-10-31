@@ -1,5 +1,58 @@
 # Design decisions
 
+### Homework-matched 09B interference
+
+**Decision.** Use one frozen numeric-bank F/P/W item as 09B's main worked example, with
+native homework-shaped tables and a locally included five-step roadmap.
+
+**Why.** Students need to recognize their homework and understand each equation's quantities,
+including the difference between a fractional expectation, observed count, coincidence, and interference.
+
+**Consequence.** Save the bank item/HTML/data/hashes; build offline from authored Djot. Keep
+all three older datasets as verified reference problems. Distinguish 34% outside recombination
+from the 40 cM adjacent-interval sum, and correct source arithmetic/chromatin errors explicitly.
+Lecture-only chapter/roadmap files belong beside the master; no new dependency folder or
+problem-to-slide framework is required.
+
+**Owner.** `genetics/LECT09/djot/lect09b-crossover_interference.djot`, its worked chapter,
+`interference_steps.djot`, saved data, and the Lecture 09 source map/review.
+
+
+### Genetics 09 Tetrad Topic Sequence
+
+**Decision.** Keep 09B interference and use six independent C-H masters: mitotic crossover,
+yeast/asci, crossover classes and map distance, two-gene mapping, three-gene mapping, and
+ordered tetrads/centromeres. Retire both mixed masters as pre-split source records.
+
+**Why.** The introduction and worked master repeated classifications, unordered derivation,
+and ordered-tetrad explanations. One home for each explanation keeps the small teaching
+steps while making each topic easier to teach and locate for homework.
+
+**Consequence.** 09E owns the count-based bridge from recombinant spores to DCO = 4NPD,
+SCO = TT - 2NPD, and the corrected numerator. Preserve NCO and the mean-crossover identity
+as normalized references. 09F and 09G apply the method without repeating its full derivation.
+Keep all fixed datasets and results; the 10/15/24 cM estimates retain their pairwise meaning
+while adjacent intervals sum to 25 cM. Ordered tetrads use a distinct four-step roadmap and
+the 150 SDS/500 asci example, last in the sequence.
+
+Reuse the actual homework table in 09G: all three genes stay visible in four spore boxes,
+with A-B/A-C/B-C columns filled cumulatively. Four fixed SVG states share a quality-90,
+3x capture of the original generated table and live class labels. Show it large during
+classification; use native classified-count summaries for arithmetic. Two-gene and ordered
+asci retain their approved art. Save the generator HTML and provenance; ordinary builds are
+offline and do not import BPW or invoke Chromium. The existing two-gene utility is unchanged.
+
+Recover nine figure regions from the original lecture PDF, keeping positioned labels and
+leaders as SVG text/paths around source bitmap artwork. Use whitespace-free xlink data URIs,
+quality-90 WebP, and a simple figure clip for LibreOffice. Keep asset directories stable,
+original presentations unchanged, and all previous-slide actions in the source map.
+
+Keep the ordered/unordered roadmaps in `genetics/LECT09/djot/` and use local includes.
+Their repetition within one lecture does not make them evergreen content.
+
+**Owner.** The C-H masters under `genetics/LECT09/djot/`, their included chapters,
+the lecture-local ordered/unordered roadmaps, and `LECT09_SOURCE_MAP.md`.
+
 ## Genetics 09/10 conversion (2026-10-31)
 
 - Keep both existing Lecture 09 B filenames and identities distinct. Use the maintained 2026

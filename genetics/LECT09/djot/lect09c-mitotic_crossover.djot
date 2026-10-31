@@ -1,0 +1,70 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09C
+
+## Mitotic Crossover
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain how mitotic recombination differs from meiotic crossing over.
+- Connect mitotic recombination to twin spots.
+
+=== layout: one-panel
+
+# Mitotic Cross-Over
+
+@body
+
+- Recombination can also occur during mitosis.
+- Unlike what happens in meiosis, mitotic crossovers are initiated by mistakes in chromosome replication or DNA damage.
+- As a result, mitotic recombination is a rare event
+  - occurring no more frequently than once in a million somatic cell divisions.
+  - Nonetheless, the growth of a yeast colony or a multicellular organism involves so many cell divisions, they can be detected.
+
+=== layout: one-panel
+
+# Mitotic Recombination and Twin Spots
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_001.jpg)
+
+=== layout: one-panel
+
+
+# Twin Spots After Mitotic Recombination
+
+@body
+
+In a y sn^+^ / y^+^ sn _Drosophila_ female, most of the body is wild type.
+
+Patches sometimes show yellow color or singed bristles. Adjacent yellow and singed patches form *twin spots*.
+
+![Single yellow spot, twin spot, and single singed spot](assets/lect09_tetrad_concepts/twin_spots.svg)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Crossing over can occur during mitosis after DNA damage or replication errors.
+- Rare events become detectable after many cell divisions.
+- Mitotic recombination can produce adjacent patches with different phenotypes.
+
+=== layout: theend
+
+# THE END
+

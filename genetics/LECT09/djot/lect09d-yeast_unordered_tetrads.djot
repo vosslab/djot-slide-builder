@@ -1,0 +1,146 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09D
+
+## Yeast and Unordered Tetrads
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Follow haploid and diploid stages in the yeast life cycle.
+- Explain what an ascus contains.
+- Explain why retaining all four meiotic products helps genetic analysis.
+
+=== layout: definitions
+
+# What Is a Tetrad?
+
+@body
+
+- Ascus: the sac containing the products of meiosis.
+- Tetrad: the four haploid products of one meiosis.
+- Ascospore: one haploid spore inside an ascus.
+
+=== layout: one-panel
+
+# Products of Meiosis
+
+@body
+
+- With Drosophila, mice, peas, people, and other diploid organisms, each offspring represents only one of the four potential gametes generated from a meiosis.
+- Thus, until now, linkage mapping has been from examining the phenotypes of diploid progeny.
+  - For such diploid organisms, we do not know the connection between individuals and parental gametes.
+- In contrast, some fungi [*maintain all four haploid products of meiosis in a single sac called an ascus*]{color=#FF33FF}.
+- These haploid cells survive as viable individuals that grow and perpetuate themselves by mitosis.
+  - The phenotype of such haploid fungi is a direct representation of their genotype, without complications of dominance.
+
+=== layout: one-panel
+
+# Life Cycle of S. cerevisiae
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_003.png)
+
+=== layout: two-panels
+
+# S. cerevisiae Mating
+
+@left
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_004.png)
+
+@right
+
+- The yeast _Saccharomyces cerevisiae_ is a simple single celled eukaryote with both a diploid and haploid mode of existence.
+- The mating of yeast only occurs between haploids, which can be either the a or &#945; (_alpha_) mating type
+- haploid yeast can switch mating type as often as every cell cycle.
+
+=== layout: one-panel
+
+# Exchange of Mating Factors
+
+@body
+
+![Exchange of Mating Factors](assets/lect09_tetrad_concepts/yeast_signals.svg)
+
+=== layout: one-panel
+
+# Haploid Yeast Cells Mate
+
+@body
+
+![Haploid Yeast Cells Mate](assets/lect09_tetrad_concepts/yeast_mating.svg)
+
+=== layout: one-panel
+
+# Mating Produces a Diploid Cell
+
+@body
+
+![Mating Produces a Diploid Cell](assets/lect09_tetrad_concepts/yeast_diploid.svg)
+
+=== layout: two-panels
+
+
+# One Meiosis, One Ascus
+
+@left
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_009.jpg)
+
+@right
+
+- *Ascomycete fungi form an* [*ascus*]{color=red} *with four haploid cells from meiosis*
+
+- Formation of an ascus containing all of the four products of a single meiosis.
+
+=== layout: one-panel
+
+# Why Keep the Four Products Together?
+
+@body
+
+- Each ascus keeps the four products of a single meiosis together.
+- Each haploid spore can grow by mitosis.
+- Its phenotype directly reveals its genotype; dominance does not hide the alleles.
+- In unordered tetrads, the positions of the four spores do not preserve meiotic order.
+
+@notes
+
+The yeast mating types a and alpha describe mating compatibility. They are separate from the mutant allele symbols used in the mapping problems.
+
+=== layout: reference
+
+# Yeast Life Cycle Reference
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_005.jpg)
+
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Compatible haploid yeast cells mate to form a diploid cell.
+- Meiosis produces four haploid spores inside one ascus.
+- An unordered tetrad retains all four products without preserving their meiotic order.
+
+=== layout: theend
+
+# THE END
+

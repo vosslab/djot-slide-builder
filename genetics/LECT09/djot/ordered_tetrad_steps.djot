@@ -1,0 +1,12 @@
+=== layout: one-panel
+
+# [*Steps in Ordered Tetrad Mapping*]{color=#000000}
+
+@body
+
+- 1. [Keep the order of the eight spores.]{color=#D40000}
+- 2. [Classify each ascus as FDS or SDS.]{color=#007A00}
+  - FDS: 4:4. SDS: 2:2:2:2 or 2:4:2.
+- 3. [Add the SDS counts and the total asci.]{color=#003FFF}
+- 4. [Calculate the gene-to-centromere distance.]{color=#A719DB}
+  - Take half the SDS count; divide by total asci; multiply by 100 for cM.

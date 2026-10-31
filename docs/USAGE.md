@@ -243,6 +243,42 @@ The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. OD
 native master and LibreOffice exports PDF from the themed ODP; no CSS or browser rendering is part
 of the build.
 
+## Tetrad working figures
+
+Rebuild the three-row two-gene working tables from the saved problem data and adjacent
+ascus drawings:
+
+```bash
+source source_me.sh && python3 tools/render_tetrad_tables.py \
+    genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/problem_data.json
+```
+
+This writes four self-contained SVGs beside the input: question/classified states for the
+linked and unlinked examples. It checks counts, parental classifications, and each drawing's
+genotype multiset before writing outputs. It changes neither the problem data nor Djot text.
+Normal deck builds use the saved figures and do not run this utility.
+
+Lecture 09G uses the actual BPW homework calculation table from
+`tetradlib.make_progeny_html_table`, saved as `three_gene_homework.html` beside the fixed data.
+Four saved SVG states keep all three genes in four separate spore boxes and progressively
+fill the A-B, A-C, and B-C columns. They embed one quality-90, 3x-resolution table capture
+with live SVG classification labels. Classification slides show the table large; sums and
+calculations use native class-count summaries. `three_gene_homework_sources.json` records
+the generator source hash, capture geometry, row data, and state meanings. The two-gene
+utility above does not rebuild these authoring snapshots.
+
+The ordered-tetrad figures reuse the BPW ordered-centromere generator's original HTML/CSS
+drawings, saved as `ordered_generator_art.html` beside `ordered_problem_data.json`. Their
+self-contained SVGs embed quality-90 artwork captures at three times CSS resolution, with
+live counts, classification labels, and mitotic-pair brackets. Two full ordered classification
+tables use these figures; the compact summation/substitution tables remain native. The utility
+above only rebuilds the unordered two-gene tables.
+
+SVG cell images are not supported by the native table exporter. These bounded figure tables
+keep images, borders, and live SVG labels together. Their titles, prompts, and calculations
+stay native Djot. Native Impress table-cell editing does not apply to the figure; edit its
+source data/artwork and rebuild. For python-docx output, raw SVG still needs a raster fallback.
+
 ## Inspect capacity before a build
 
 Inspect one Djot deck or a recursively discovered folder without writing presentation artifacts:

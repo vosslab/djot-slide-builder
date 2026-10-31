@@ -1,0 +1,16 @@
+=== layout: one-panel
+
+# [*Steps in Unordered Tetrad Mapping*]{color=#000000}
+
+@body
+
+- 1. [Read the parental genotypes from the cross.]{color=#D40000}
+- 2. [Pick two genes; classify each tetrad as PD, NPD, or TT.]{color=#B74300}
+  - With three genes, keep all loci visible.
+- 3. [Compare PD and NPD to test linkage.]{color=#6C6C00}
+- 4. [Calculate map distance for linked genes.]{color=#007A00}
+  - Add half the TT count and three times the NPD count.
+  - Divide by the total tetrads; multiply by 100 for cM.
+- 5. [Repeat for every pair in a three-gene problem.]{color=#003FFF}
+- 6. [Choose the middle gene and draw the map.]{color=#A719DB}
+

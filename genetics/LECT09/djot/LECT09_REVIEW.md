@@ -1,23 +1,469 @@
-# Lecture 09 conversion review
+# Lecture 09 Review
+
+## 09B homework interference
+
+The approved [plan](../../../docs/archive/lect09b_homework_interference.md) is implemented
+as 44 visible slides in [lect09b-crossover_interference.djot](lect09b-crossover_interference.djot).
+The local worked chapter has 23 slides including three roadmap uses. The closing nine
+reference pages preserve all three older datasets; all 23 preceding Djot slides have explicit
+dispositions in [LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md).
+
+### Homework and equation bridges
+
+- Freeze numeric-bank item 1 from the named interference generator's existing website bank.
+  [interference_problem_data.json](assets/lect09b-crossover_interference/interference_problem_data.json)
+  records its eight rows, traits, map, answer, hashes, and generator checkout revision at capture.
+  [interference_problem.html](assets/lect09b-crossover_interference/interference_problem.html) and
+  [interference_bank_item.txt](assets/lect09b-crossover_interference/interference_bank_item.txt)
+  preserve the original question and numeric answer. No historical seed is inferred.
+- Keep the phenotype column, three separate colored allele cells, original row order, and total
+  in five native table uses. Mutant fills and colored wild-type symbols match the saved homework;
+  headers use the course tint and black text. Grouped sizing preserves the table's column geometry.
+- Preserve all loci while identifying f++/+pw parents and f+w/+p+ doubles. The separate comparison
+  table explicitly changes from alphabetical F/P/W columns to physical F-W-P order, showing why
+  only W differs from a matching parent. Observed doubles are 23 + 31 = 54.
+- Explain each equation visibly: 25%/15% to 0.25/0.15; multiplication under independence;
+  0.0375 times all 1,800 offspring; fractional expectation 67.5; coincidence 54/67.5 = 0.8;
+  interference 1 - 0.8 = 0.2. Compare the 3%, 80%, and 20% denominators explicitly.
+- Finish with 1/5 = 0.20 = 20% and numeric entry 20. Correct the bank's distance/cM answer tips
+  in the teaching text while preserving the original HTML. Label its 34 outside-pair value as
+  observed recombination, distinct from the 40 cM map interval sum and the adjacent probabilities.
+
+### Preserved examples and corrections
+
+- Lz/Su/Gl: preserve all 740 counts; 176 outside recombinants become 188 interval contributions
+  after counting six doubles twice. Correct 23.7% truncation to 23.8%. Use 79/740 and 109/740
+  to obtain 8611/740 expected doubles, coincidence 4440/8611, and about 48.4% interference.
+  This replaces the malformed 11.648.5 and contradictory rounded 48.3/48.5%/"no interference" text.
+- A-C-B: preserve all eight counts and phenotype names. Observed and expected doubles are 54,
+  coincidence is one, and interference is zero. Native data gives 23.4% outer-pair recombination;
+  the old chromosome drawing rounded this to 23%. Adjacent intervals still sum to 27 cM.
+- F-G-H: preserve all eight counts, parental phase, reciprocal doubles, both map orientations,
+  8/12 cM intervals, the question, expected 9.6, coincidence 62.5%, and interference 37.5%.
+- Retain the mapping-function, chromatin-packing, and physical/genetic-map artwork. Show the
+  graph and physical map large, with native captions. Correct the euchromatin definition and
+  the unsupported inference that crossover suppression proves stronger interference or gene activity.
+
+The biology check used the local Hartl/Cochrane *Genetics: Analysis of Genes and Genomes*
+Markdown book (chromosome interference, mapping functions, physical/genetic distance) and
+the local Genetics textbook section 6.1 on chromatin packaging. These agree with observed/expected
+coincidence, the 2.8%/25% example, and the loose/dense packing distinction.
+
+### Verification and limits
+
+- [x] Independently derive all four datasets' class identities, interval frequencies, expected
+  counts, and interference using exact rational arithmetic; compare the new answer to the bank.
+- [x] Verify every phenotype/genotype/count/fill in all five native homework tables, the original
+  frozen item hash, three local roadmap uses, eight-master discovery, and unchanged other sources.
+- [x] Pass strict native lint and 13 focused include/09B-cover tests (87 deselected).
+  Run the advisory typography audit: zero findings.
+- [x] Export only 09B using the repository CLI with LibreOffice outside the sandbox.
+  Source, ODP, and PDF all have 44 visible pages; no authored or rendered replacement markers remain.
+- [x] Inspect all 44 PDF pages in eight quality-90 contact sheets and full-size checks of data
+  tables, gene-order comparisons, formulas, repaired context figures, and reference answers.
+- [x] Accept the eight readable table sizing advisories: five main tables at 19 pt and three
+  reference tables at 19.5 pt. All exceed the instructor's 17 pt review threshold. No figure
+  readability or citation-capacity finding remains.
+- [x] Preserve native selectable cover text, unchanged date/Chapter 8, local lecture ownership,
+  original ODP/PDF inputs, and all other active Lecture 09 sources.
+
+Review artifacts and one-time authoring/check scripts are in `_temp/interference_bpw/`.
+No renderer changes, new dependencies, permanent tests, or generator/website edits are needed.
+Answers advance through separate slides; physical projection/pacing and Impress click playback
+were not tested. Announcement/schedule/import checklist sections are unchanged and not applicable.
+
+The tetrad review below describes the earlier reorganization, when 09B was untouched.
+Its earlier 09B hash statements and initial-conversion findings are historical; this section
+records their current resolution. Lecture 09A and C-H remain unchanged in this update.
+
+
+## Six Topic Decks
+
+The approved reorganization replaces the overlapping 62-slide introduction and 90-slide worked
+deck with six independently buildable C-H decks. Lecture 09B remains crossover interference.
+The six new decks contain 143 visible slides; each has its own cover, objectives, takeaways,
+and ending. The two mixed masters are preserved with a pre_split.djot.retired suffix.
+Earlier full introduction/activity retirements and all original ODP/PDF inputs remain intact.
+
+The ordered and unordered roadmaps live beside the Lecture 09 masters and use local includes.
+Their reuse within this lecture does not qualify them as evergreen content. The preserved
+pre-split master retains its historical include path.
+
+| Deck | Topic | Slides | Source |
+| --- | --- | --- | --- |
+| 09C | Mitotic Crossover | 7 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
+| 09D | Yeast and Unordered Tetrads | 14 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
+| 09E | Crossovers and Tetrad Mapping | 29 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
+| 09F | Two-Gene Tetrad Mapping | 24 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |
+| 09G | Three-Gene Tetrad Mapping | 42 | [lect09g-three_gene_tetrad_mapping.djot](lect09g-three_gene_tetrad_mapping.djot) |
+| 09H | Ordered Tetrads and Centromeres | 27 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
+
+### Teaching Ownership and Coverage
+
+- 09C keeps the short mitotic-recombination topic and twin-spot illustrations.
+- 09D owns yeast mating, haploid/diploid stages, the ascus, and four meiotic products.
+- 09E owns observed PD/NPD/TT versus NCO/SCO/DCO histories, independent assortment,
+  linkage expectations, recombinant-spore counting, and the unordered distance derivation.
+  Keep the newer small count-based steps. The original NCO estimate and mean-crossover
+  identity are retained as reference using counts, including the normalization by N.
+- 09F applies the method to the existing linked and unlinked two-gene datasets. It uses
+  a short formula reminder rather than repeating the derivation.
+- 09G retains each pair's classification, linkage decision, arithmetic, distance, and the
+  middle-gene reasoning. Handout instructions, all prior-year links, and both videos remain.
+- 09H comes last. It connects Neurospora meiosis/mitosis and centromere segregation to the
+  existing FDS/SDS problem and half-weight. The distinct probability tree and ws/ws+ example
+  remain as labeled reference material. The random-ordering assumption is stated explicitly.
+
+Every one of the previous 152 visible slides has an action and a destination in
+[LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md). Repeated section headings and mixed-deck
+bookends are superseded; duplicate derivations/diagram builds are merged, with unique
+content retained. Repeated roadmaps and applying the same method to three pairs are
+intentional teaching practice. Earlier prose, meaningful emphasis, and all worked answers
+are preserved while captions and transitions reflect their new context.
+
+### Homework Table Presentation
+
+The former 09C pages 37-43 and their A-C/B-C counterparts no longer show stripped-down
+genotype strings. Classification uses the actual table generated by
+`tetradlib.make_progeny_html_table`: four separate spore boxes, all A/B/C loci visible,
+three pair-classification columns, and the original counts. The exact generator HTML,
+source hash, row data, capture geometry, and state meanings are recorded in
+[three_gene_homework_sources.json](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_sources.json).
+
+Four SVG figures share one high-resolution, quality-90 table capture. Class labels remain
+live SVG text. States show no answers, A-B completed, A-B/A-C completed, and all pairs completed.
+Six question/answer slide uses preserve the original Set 4, Set 3, and Set 1 matching questions.
+The completed table also serves as the closing reference. Count order and table geometry
+stay fixed; neither alleles nor earlier classifications disappear when the selected pair changes.
+
+The full table needs space. Classification slides show it large; the following 15 native
+working tables summarize classified sets or class totals for sums, linkage, and equations.
+This prevents the homework table from shrinking into unreadable print beside calculations.
+The cumulative native distance table still updates at each pair result. All figures are
+saved inputs; normal slide builds invoke neither BPW nor Chromium. The existing two-gene
+SVG utility retains its original scope and CLI.
+
+### Diagram Repairs
+
+Nine original figure regions restore the three yeast-mating states, independent-assortment
+labels, the six crossover cases, a labeled centromere, and the ordered segregation mechanism.
+Their source pages, crop coordinates, and live text counts are in
+[figure_sources.json](assets/lect09_tetrad_concepts/figure_sources.json).
+Native labels, leaders, and arrows remain SVG text/paths around original bitmap artwork.
+The image data is encoded as quality-90 WebP with explicit xlink references and one simple
+figure clip for LibreOffice. This repairs the initial export's missing embedded images;
+whole-slide rasterization is not used. One clipped source heading is reconstructed as live text.
+The twin-spot comparison keeps its three phenotype panels and labels, moves the biological
+caption to native Djot, and removes the baked textbook figure identifier.
+
+Retained marker-bearing source slides are repaired or superseded by the corresponding
+clean figure/definition/explanation; all six new decks have zero replacement markers.
+The unused original source assets and all source presentations remain recoverable.
+Construction references are the SVG skill corpus's biological illustration Clarity section
+and Mastering SVG's viewBox section; source biology comes from the original lecture figures
+and the previously verified problem records.
+
+### Verification
+
+- [x] Reconcile all 152 previous slides and all 143 current visible slides with the source map.
+  Both retired mixed masters are byte-identical to their pre-split snapshots; announcements
+  and interference sources are byte-identical to the starting versions.
+- [x] Run strict native lint: eight master decks, 209 authored slides including the unchanged
+  announcement inventory, and 78 image uses. Included chapters are not standalone decks.
+- [x] Pass 21 focused renderer/include/cover tests. Check all six new covers directly;
+  retain native, extractable title metadata and the existing Chapter 8/date values.
+- [x] Independently classify each dataset using the supplied parents and exact rational
+  arithmetic. Preserve 20 cM and 18% RF for the linked example, 49.8% RF for the unlinked
+  example, the 10/15/24 cM estimates and reversible B-A-C order, and the 15 cM centromere result.
+- [x] Verify the complete homework table, all 72 classification cells across four SVG states,
+  six large question/answer uses, and 15 native three-gene count summaries. Check all 31
+  saved SVGs for static embedded resources, valid dimensions, and unique IDs.
+- [x] Inspect every visible PDF page in 26 quality-90 contact sheets, with full-size checks
+  of dense tables, fractions, and repaired figures. Recheck corrected image embedding,
+  the native twin-spot caption, the complete segregation headings, and visible-gene prompts.
+  Each new ODP/PDF pair agrees with its source count; no new deck has a replacement marker.
+- [x] Preserve gene/class colors and the shared rainbow roadmaps: five unordered and two
+  ordered uses. Check progressive classifications and cumulative pair distances.
+- [x] Finish with no typography findings in C-H. The only new-deck capacity advisory is
+  09D page 4 at 19.25 pt, above the instructor's 17 pt review threshold and visually readable.
+  The former three-gene small-table advisories are eliminated. Existing A/B typography and
+  replacement findings remain outside this reorganization.
+- [x] Update documentation, current page ownership, historical source links, and the changelog.
+  Preserve original presentations, the handout, and all prior-year/video URLs.
+
+Evidence is in `_temp/tetrad_topics/`: `source_checks.json`, `output_inventory.json`, strict
+lint/audit/test/build logs, original-diagram comparisons, and final WebP review images.
+C-H use slide advances for question/answer states. Live classroom projection and pacing,
+and the unchanged interference deck's click playback, remain untested. No build-engine or
+problem-generator changes, new dependencies, or additional permanent tests are introduced.
+
+## Pre-Split Records (Historical)
+
+### Current Tetrad Replacement
+
+The active 09C is [lect09c-tetrad_worked_examples_bpw.pre_split.djot.retired](lect09c-tetrad_worked_examples_bpw.pre_split.djot.retired):
+90 visible slides, five included teaching chapters, six uses of the shared unordered roadmap,
+two uses of the ordered roadmap, seventeen SVG assets, and no authored or automatically added
+replacement watermarks. The instructor
+approved fixed examples and then requested an additional unlinked two-gene problem and
+small conceptual bridges into the equations in his teaching voice. He then requested an ordered
+gene-centromere problem and confirmed that the unordered centromere extension is unnecessary.
+
+| Active Deck | Authored / Visible | Replacement Markers |
+| --- | --- | --- |
+| Announcements | 43 / 29 | 0 |
+| Crossover interference | 23 / 23 | 9 |
+| Tetrad introduction (09B) | 62 / 62 | 17 |
+| BPW tetrad worked examples (09C) | 90 / 90 | 0 |
+
+The former activity Djot is preserved as
+[lect09c-tetrads_2_activity_format.djot.retired](lect09c-tetrads_2_activity_format.djot.retired).
+The complete introduction conversion is also preserved as
+[lect09b-tetrads_1_introduction.djot.retired](lect09b-tetrads_1_introduction.djot.retired).
+Original ODP/PDF inputs and old assets remain untouched. Folder discovery selects four master
+decks, excludes the retired files, and folds the five teaching chapter files into 09C.
+
+#### Fixed Examples and Answers
+
+Exact unordered counts, generator calls, seeds, genotype multisets, class labels, and the source
+revision are recorded in [problem_data.json](assets/lect09c-tetrad_worked_examples_bpw/problem_data.json).
+The ordered example is recorded separately in
+[ordered_problem_data.json](assets/lect09c-tetrad_worked_examples_bpw/ordered_problem_data.json).
+The BPW generator checkout is read only. Ordinary slide builds use the saved Djot/SVG source.
+
+| Problem / Pair | Total Tetrads | PD | NPD | TT | Result |
+| --- | --- | --- | --- | --- | --- |
+| Two genes A-B; parents ++ / ab | 1,000 | 650 | 10 | 340 | Linked; 20 cM; observed RF 18% |
+| Two genes D-E; parents ++ / de | 1,000 | 402 | 398 | 200 | Unlinked; observed RF 49.8% |
+| Three genes A-B; parents a++ / +bc | 1,200 | 995 | 7 | 198 | 10 cM |
+| Three genes A-C; same cross | 1,200 | 905 | 13 | 282 | 15 cM |
+| Three genes B-C; same cross | 1,200 | 704 | 16 | 480 | 24 cM |
+
+The three-gene answer is B-A-C or C-A-B. Its adjacent map intervals are 10 and 15 cM, summing
+to 25 cM. The separate B-C estimate remains 24 cM; the deck explicitly distinguishes these
+values. The unlinked example stops at the linkage conclusion, without applying the linked-gene
+map correction. The given cross defines parental combinations, including for rare tetrad sets.
+
+#### Teaching and Visual Review
+
+- Start with definitions and a linked two-gene problem; then contrast an unlinked cross before
+  introducing three genes. Repeat one canonical six-step rainbow roadmap six times with black
+  titles and matching colored step references. Preserve gene-color and class-color meanings.
+- Present large labeled asci, then use SVG two-gene/ordered classification tables and native
+  three-gene tables. Keep the compact ordered summation/substitution tables native.
+  During each three-gene pair,
+  display only the selected pair and keep all set numbers/counts stable. Add a matching reminder
+  for every pair. Reveal classifications, sums, substitutions, fractions, and results in successive
+  slides; update the native results table after each completed pair.
+- Close with middle-gene reasoning, a proportional interval map, a full-genotype classification
+  reference, the formula reference, handout instructions, and takeaways. Retain all three old
+  Google Slides links as visible references with year labels. The existing handout is unchanged.
+- Reuse the approved `genemap_art.asci` artwork. Preserve geometry and genotype multiplicities;
+  enlarge labels and draw their white halos behind separate live foreground text because
+  LibreOffice does not reliably honor `paint-order`. Review actual exported SVG labels and colors.
+- Use compact SVG two-gene tables with larger allele labels and one-line totals. Use separate
+  fixed panels for three-gene explanations and results so they do not
+  overlap. The initial 67-page sequence was visually reviewed, including equation states and links.
+- In 09B remove the old analysis divider and five numeric-example states (source 28-32 and 51).
+  Retain the conceptual and ordered-tetrad sequence. Correct the RF/map distinction, complete
+  count normalization, identify class proportions in the derivation, and express its final
+  proportion-to-cM conversion explicitly. Review all seven revised mathematical slides.
+
+#### Conceptual Equation Bridges
+
+Pages 11-18 add eight small steps before the first map calculation; page 19 revises the
+formula introduction, and page 22 reinforces the observed-RF versus map-distance distinction.
+The added sequence asks students to count recombinant spores in the existing asci, shows
+why the RF denominator starts at 4N, and explains how crossovers can be hidden in PD and TT.
+
+The double-crossover table shows the expected PD:TT:NPD shares of 1:2:1. It explicitly applies
+only to double-crossover tetrads. The model assumes random chromatid participation and rare
+triple or higher crossovers. From DCO = 4NPD and SCO = TT - 2NPD, students see how half the
+singles plus the doubles yields half TT plus 3NPD. The next slide explains dividing by N
+and multiplying by 100. All class quantities remain counts throughout this bridge.
+
+The three is explicitly identified as a correction weight; an NPD tetrad still has four
+recombinant spores. Visible explanations support student review; speaker notes provide
+short prompts and teaching connections. Existing genotype drawings, datasets, calculated
+answers, the handout, and the introduction are unchanged by this revision.
+
+The derivation was checked against the instructor's existing 09B derivation and
+[MIT 7.03 Lecture 9](https://web.mit.edu/7.03/documents/Lecture_9.pdf), pages 2-3.
+Review evidence for this addition is in `_temp/tetrad_bridge/`.
+
+#### Ordered Tetrads and Centromeres
+
+09B retains its ordered-tetrad section on pages 47-59: four meiotic products, eight spores
+after mitosis, first- and second-division segregation, and gene-centromere mapping. Its five
+existing marked diagram conversions on pages 51-55 remain documented draft material.
+
+The new fifth chapter, [lect09h1-ordered_centromere.djot](lect09h1-ordered_centromere.djot),
+adds a worked ordered problem on 09C pages 65-78, with a closing formula reference on page 83.
+It uses `get_asci_counts(15)` from the instructor's ordered-centromere generator, random seed
+309 and `PYTHONHASHSEED=0`. The extra hash seed records the source's set-iteration assignment
+of SDS count bins. Ordinary builds use saved Djot/SVG assets and require no generator run.
+
+| Set | Eight-Spores Pattern | Asci | Class |
+| --- | --- | --- | --- |
+| 1 | ++++aaaa | 188 | FDS |
+| 2 | ++aa++aa | 39 | SDS |
+| 3 | ++aaaa++ | 44 | SDS |
+| 4 | aa++++aa | 30 | SDS |
+| 5 | aa++aa++ | 37 | SDS |
+| 6 | aaaa++++ | 162 | FDS |
+
+FDS totals 350; SDS totals 150; all asci total 500. The SDS frequency is 30%, and the
+single-crossover estimate is half of that, 15 cM from gene A to its centromere. The new
+sequence explains why eight spores represent four mitotic pairs, classifies ordered allele
+blocks before revealing the answer, sums the SDS rows, and traces centromere origin through
+the four meiotic products. Two of those products have recombinant gene-centromere combinations.
+This visibly explains the half-weight; no additional factor of eight is used in the denominator.
+
+Use the separate four-step ordered roadmap twice; keep the six-step unordered roadmap and
+all previous problems. FDS/SDS remain separate from PD/NPD/TT. The ordered figures preserve
+all eight spore positions, distinguish allele symbols from observed pigment, and show an
+explicitly schematic genetic map. The asci now reuse the source generator's original artwork,
+as described below. The single-crossover model is stated in the visible formula
+slides. Pattern rules and the half-weight were checked against
+[Furman's ordered-ascus lab guide](https://facweb.furman.edu/~lthompson/bgy30/30sorda.htm).
+Construction references: the biological illustration handbook's Clarity section and
+Mastering SVG's viewBox section, via the local SVG skill corpus.
+
+The unordered zero-tetratype/centromere extension remains retired by instructor direction;
+it is not an outstanding coverage requirement. Existing handout and generator code are unchanged.
+
+#### SVG Two-Gene Working Tables
+
+The three-row linked and unlinked tables now contain complete tetrad drawings in their spore
+column. Four reusable SVGs supply question/classified states on pages 7, 9, 10, 20, 21, 26,
+28, and 29. Counts, set order, parental combinations, and genotype multisets are unchanged.
+The figures retain live SVG text and consistent geometry; slide headings, prompts, and
+equations remain native Djot. Allele labels are enlarged to remain readable within each ascus.
+The 21 three-gene working tables and two compact ordered working tables remain native.
+
+Rebuild these figures with [render_tetrad_tables.py](../../../tools/render_tetrad_tables.py)
+and the saved unordered problem data. The utility checks counts and given-parent
+classification, verifies each reused drawing's genotypes, and renders all states before
+writing outputs. It uses no BPW import or new dependency. Normal deck builds use the saved SVGs.
+
+Compatibility check: installed python-docx 1.2.0 accepts PNG in a table-cell run, but raw SVG
+raises `UnrecognizedImageError`. LibreOffice Writer supports inline graphics and SVG import;
+this differs from the Impress exporter used here. In the local Impress probe, a control with
+a standalone SVG exported; adding an inline SVG frame to a native table-cell paragraph made
+the modified ODP fail to load. This is evidence about that export route, not a claim that all
+LibreOffice applications lack SVG support. The whole-table SVG route exports successfully.
+DOCX still requires a raster fallback; these figure tables do not have native Impress cells.
+See [python-docx's SVG issue](https://github.com/python-openxml/python-docx/issues/659),
+[Writer anchoring](https://help.libreoffice.org/latest/en-US/text/swriter/guide/anchor_object.html),
+and [LibreOffice's SVG importer](https://docs.libreoffice.org/svgio.html).
+
+#### Verification and Limits
+
+- Strict native lint passes for the final Lecture 09 source tree. It resolves four master decks;
+  the included chapters are not standalone covers.
+- Independently classify each set against the given parents and sum with rational arithmetic.
+  The separate BPW three-gene solver confirms all three distances and the reversible gene order.
+  Check all 29 working tables, all six shared-roadmap uses, and the closing classification matrix.
+- Twelve include tests and three tracked Lecture 09 cover tests pass. Direct cover-contract
+  checks also pass for the new 09C master and revised 09B. Content checks are one-time evidence;
+  no permanent tests or reusable generator utility are added.
+- The new deck's typography audit has no findings. Its 27 capacity advisories concern 21 working
+  tables at 18-18.5 pt and six short prompts at 18.25-19 pt; final PDF review confirms readable
+  values, intact genotypes, and no overlapping objects. These are advisory sizes, not lost content.
+- The preceding conceptual revision passed strict native lint and the same 15 focused tests. All 29
+  working tables and four linked-pair calculations retained their verified answers. Its 75-page
+  ODP/PDF counts agree; new pages 11-18 and revised pages 19 and 22 were visually inspected,
+  including full-size checks of the double-crossover shares and coefficient derivation.
+  The other 65 pages retain identical extracted text. All new bridge slides fit without
+  capacity advisories, and its typography audit had no findings. Those checks,
+  renders, and arithmetic evidence are saved in `_temp/tetrad_bridge/`.
+- 09B retains its earlier conversion issues: 17 authored replacement markers, with three long
+  title warnings and two runt warnings in retained content. The source map gives their current
+  positions. This introduction remains a reviewed conversion draft.
+- Both current decks have matching ODP and PDF page counts (62 and 90), with selectable cover
+  metadata. The new worked sequence uses slide advances rather than click-dependent reveals.
+  Existing 09B animation playback and physical classroom projection remain untested.
+- The ordered addition passes strict native lint and all 15 focused include/cover tests.
+  Independently check run-length classification, the four identical mitotic pairs, all four
+  new working tables, and the 150/500 half-weight calculation; compare the generator's answer
+  formatter. The 29 earlier unordered tables retain their verified values. Both ordered
+  roadmaps are identical; five new SVGs parse and preserve the saved pattern order and
+  centromere-origin combinations. All 19 added or revised pages were visually reviewed,
+  including full-size checks of the data, pattern-table footer, and half-weight diagram.
+  The final typography audit has no findings and the 27 capacity advisories are unchanged;
+  none concerns the ordered addition. Seventy-one previous pages retain identical extracted
+  text; the four changed previous pages expand objectives/takeaways or clarify unordered
+  headings. Checks and quality-90 WebP review images are in `_temp/tetrad_ordered/`.
+
+Outputs: `output/odp/lect09c-tetrad_worked_examples_bpw.odp`,
+`output/pdf/lect09c-tetrad_worked_examples_bpw.pdf`, and the matching 09B outputs.
+
+The preceding two-gene SVG-table revision passed strict native lint and 17 focused tests, including the renderer's
+given-parent/reveal/data-fidelity checks. All four SVG states (12 distinct drawn rows, eight
+slide uses) match the saved counts and genotype multisets. The remaining 21 native unordered
+tables and four native ordered tables retain their verified data: 33 working-table instances
+in total. All eight changed PDF pages were visually reviewed, with page 7 inspected at full
+size; the other 82 pages retain identical extracted text. Both output formats retain 90 pages.
+The typography audit has no findings and the 27 earlier three-gene capacity advisories remain;
+the new figure tables add no recovery markers. Evidence is in `_temp/tetrad_table_svg/`.
+Initial review evidence: `_temp/tetrad_bpw/final_review/`, `source_checks.json`, `artifact_checks.json`,
+`capacity_detail.json`, native-lint/audit/build logs, and the focused pytest logs.
+
+#### Original Ordered-Ascus Artwork
+
+Pages 66-68 and 70-71 now reuse the exact `generate_html_for_pattern` output from the current
+ordered-centromere generator, using `bptools.default_color_wheel(2)`: brown + spores and blue
+a spores inside shaded green asci. The source generator already has local artwork edits;
+the provenance record includes its source hash as well as the repository revision.
+[ordered_generator_art.html](assets/lect09c-tetrad_worked_examples_bpw/ordered_generator_art.html)
+preserves the exact six generated HTML/CSS fragments. Capture each at three times CSS size,
+check all eight DOM allele labels against the saved pattern, and embed quality-90 WebP
+captures in self-contained SVGs. These are artwork captures rather than vector redrawings.
+
+SVG set numbers, counts, class reveals, run-length labels, and mitotic-pair brackets remain
+live text/geometry around the original art. The question and classified tables share the
+same drawings, counts, dimensions, and set order. The two compact ordered tables, all equations,
+roadmaps, and teaching steps remain native and unchanged. Ordinary builds require neither
+Chromium nor the BPW checkout. The existing two-gene table utility has its original scope.
+
+The final 90-page ODP/PDF exports agree. All five revised pages were visually inspected,
+including the classified table at full size; the other 85 pages retain identical extracted
+text. Check all six original DOM patterns and all 18 overview/question/classified figure
+rows against the saved sequences and counts, including embedded-image identity. Source
+equations and chapter headings are unchanged. All 17 SVGs pass the static component checks.
+Strict native lint and 17 focused tests pass; the typography audit has no findings. The 27
+existing three-gene capacity advisories are unchanged. Evidence and quality-90 WebP review
+images are in `_temp/tetrad_generator_art/`. Classroom projection remains untested.
+
+Checklist actions from the initial conversion remain recorded below. The authorized replacement
+supersedes its original one-to-one requirement for worked examples. Equations, tables, colors,
+row stability, all visible pages, chapter discovery, retired-source preservation, and outputs
+were checked for this revision. Attended playback and classroom projection are unperformed.
+
+### Initial Conversion Record (Historical)
+
+The following inventory, page numbers, replacement findings, and test results describe the
+initial conversion before the BPW replacement. Use the current source map for active page numbers.
+
 
 Reviewed conversion draft, October 31, 2026. Replacement markers are intentional unresolved
 conversion or source-content findings; these decks are not yet classroom-ready replacements.
 Original ODP/PDF files remain unchanged in the lecture directory.
 
-## Canonical decks
+### Canonical decks
 
 | Djot | Authored | Visible PDF | Hidden | Replacement markers |
 | --- | --- | --- | --- | --- |
 | [lect09a-2026_announcements.djot](lect09a-2026_announcements.djot) | 43 | 29 | 14 | 0 |
 | [lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) | 23 | 23 | 0 | 9 |
-| [lect09b-tetrads_1_introduction.djot](lect09b-tetrads_1_introduction.djot) | 68 | 68 | 0 | 22 |
-| [lect09c-tetrads_2_activity_format.djot](lect09c-tetrads_2_activity_format.djot) | 53 | 53 | 0 | 24 |
+| [lect09b-tetrads_1_introduction.djot.retired](lect09b-tetrads_1_introduction.djot.retired) | 68 | 68 | 0 | 22 |
+| [lect09c-tetrads_2_activity_format.djot](lect09c-tetrads_2_activity_format.djot.retired) | 53 | 53 | 0 | 24 |
 
 The [LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md) accounts for every source content slide,
 all additions, the PDF page correspondence, and announcement include ownership.
 Import evidence and extracted components are in `assets/<content-deck>/import_report.json`.
 
-## Input inventory
+### Input inventory
 
 | Original ODP | Authored | Source-hidden slides | Source animation slides | Source PDF pages |
 | --- | --- | --- | --- | --- |
@@ -38,7 +484,7 @@ The source outline/order is retained in the source map and import reports. Divid
 existing topic boundaries; only an opening divider is added where absent. Both Lecture 09 B
 filenames and their original B identities remain distinct; neither is overwritten or renumbered.
 
-## Weekly announcements
+### Weekly announcements
 
 Lecture dates: November 3 (09) and November 10 (10), 2026. Dates and assignments were checked
 against `/Users/vosslab/nsh/syllabus/site_docs/fall_2026/genetics/SCHEDULE.md`, generated from
@@ -56,7 +502,7 @@ feed publication with a confirmed playable project, with a descriptive Bad Cell 
 Both video and game responded HTTP 200. This selection is current as of conversion, not a
 prediction of publications before these future lecture dates. The saved thumbnail was inspected.
 
-## Repairs and review findings
+### Repairs and review findings
 
 - Covers use native selectable text, current dates, and the canonical course chapters:
   Chapter 8 for mapping/tetrads and Chapter 9 for chromosome disorders, verified against the
@@ -100,7 +546,7 @@ Source-content decisions still needed: interference source 6 contains `11.648.5`
 interpretation of suppressed recombination also need instructor review. Those slides remain marked.
 The source's map-distance rounding and older activity examples are preserved.
 
-## Unresolved source slides
+### Unresolved source slides
 
 For each row, compare the source and diagnostic render; restore the missing geometry, labels,
 mask, or instructional emphasis in native Djot or a bounded figure. Keep the marker until that
@@ -165,7 +611,7 @@ the instructor's decision before rewriting. No slide split is proposed or perfor
 | `lect09c-tetrads_2_activity_format` | 41 | 42 | mixed text/images cannot fit readability bounds in body; split this slide into separate slides or panels; normalized single connected materially coupled visual graph into native source-order content; unrecognized source text color #00a933 requires review; unrecognized source text color #a1467e requires review; unrecognized source text color #b47804 requires review; unsupported source object draw:custom-shape requires reconstruction |
 | `lect09c-tetrads_2_activity_format` | 42 | 43 | dense text requires post-conversion polish; mixed text/images cannot fit readability bounds in body; split this slide into separate slides or panels; normalized single connected materially coupled visual graph into native source-order content; unrecognized source text color #00a933 requires review; unrecognized source text color #a1467e requires review; unrecognized source text color #b47804 requires review; unsupported source object draw:custom-shape requires reconstruction |
 
-## Validation and artifacts
+### Validation and artifacts
 
 - Strict native lint: all eight sources pass, 362 authored slides across the eight decks (see per-deck counts above; 28 announcement slides are hidden in total).
 - Focused renderer tests: 40 passed in `test_math_layout.py`, `test_odp_export.py`, and
@@ -189,7 +635,7 @@ the instructor's decision before rewriting. No slide split is proposed or perfor
   Google Slides access requiring a student account. A full clinical/scientific fact check is outside
   conversion scope. Replacement markers distinguish the reviewed draft from classroom readiness.
 
-## Final check results
+### Final check results
 
 Typography audit: {'runt': 3, 'title-wrap': 7}. No `url-too-wide` warnings remain.
 
@@ -203,7 +649,7 @@ Final outputs reconcile to the authored/visible/hidden counts in the deck table.
 contain selectable PDF text. Review preview: `_temp/lect09_10/final_preview.pdf` and
 `final_preview_map.json`; the final quiz wording is rechecked in the rebuilt announcement PDFs.
 
-## Conversion checklist
+### Conversion checklist
 
 Checked items include documented unresolved findings; they do not certify marker-free output.
 N/A: new three-point-testcross roadmaps (these are tetrad/interference and chromosome decks),
@@ -211,7 +657,7 @@ Zoom (Genetics has no course Zoom meeting), extra glossary additions, new reveal
 and clearing every marker. The source's five-step unordered-tetrad procedure is preserved twice;
 it is distinct from the LECT08 six-step three-point-testcross roadmap. No new roadmap colors are invented.
 
-## Inventory the inputs
+### Inventory the inputs
 
 - [x] List every source ODP and existing Djot deck in the review report; identify the version
   being converted and the canonical announcement deck before copying or importing anything.
@@ -222,7 +668,7 @@ it is distinct from the LECT08 six-step three-point-testcross roadmap. No new ro
 - [x] Record the lecture date and the schedule/spreadsheet used for weekly updates, including
   its path or URL. Identify the instructor-cleaned announcement deck used as a format example.
 
-## Initial conversion and assembly
+### Initial conversion and assembly
 
 - [x] Follow the instructor-edited announcement formatting: put very long URLs in `@citation`,
   keeping their complete clickable destinations.
@@ -270,7 +716,7 @@ it is distinct from the LECT08 six-step three-point-testcross roadmap. No new ro
   only to label existing topic boundaries, without reorganizing the teaching sequence;
   list any inserted dividers in the slide map.
 
-## Recurring lecture announcement updates
+### Recurring lecture announcement updates
 
 - [x] Replace the copied agenda with this lecture's topics and activities; compare each agenda
   item with the content decks and current course schedule.
@@ -294,7 +740,7 @@ it is distinct from the LECT08 six-step three-point-testcross roadmap. No new ro
   Verify their images/QR codes and visible clickable URLs; keep private course URLs in
   `course_links.local.yaml` through `{{course_url:key}}` references.
 
-## Repair individual slides
+### Repair individual slides
 
 - [x] Compare every source slide with its rendered conversion, including slides without importer
   warnings. Record missing text, labels, objects, emphasis, and changed reading order by slide.
@@ -354,7 +800,7 @@ it is distinct from the LECT08 six-step three-point-testcross roadmap. No new ro
 - [x] Before clearing any replacement marker, compare the repaired render with the original and
   verify the previously missing content or behavior; record the evidence in the review report.
 
-## Build and hand off
+### Build and hand off
 
 - [x] Run `source source_me.sh && python3 deck_tools.py lint --require-native
   --native-executable "$(command -v jotdown)" LECTURE_DIR` as one command.

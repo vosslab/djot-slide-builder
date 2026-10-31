@@ -1,0 +1,196 @@
+=== layout: section
+
+# Two Genes: Linked or Unlinked?
+
+=== layout: stacked-panels
+
+# A Two-Gene Cross
+
+@top
+
+- *New cross:* ++ / ab.
+- Each sac contains all four haploid products of one meiosis.
+- Are A and B linked? If so, find their map distance.
+
+@bottom
+
+![two gene asci](assets/lect09c-tetrad_worked_examples_bpw/two_gene_asci.svg)
+
+@citation
+
+Schematic unordered asci. Lowercase = mutant allele; + = wild type. Spore positions are not meiotic order.
+
+=== include: unordered_tetrad_steps.djot
+
+=== layout: two-panels
+
+# Which Sets Are PD, NPD, and TT?
+
+@left
+
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_question.svg)
+
+@right
+
+[*Step 2: Classify the Tetrads*]{color=#B74300}
+
+- Parents are ab / ++.
+- Compare all four spores in each set.
+- Which set contains all four allele combinations?
+
+- Given parents: ++ / ab.
+- Total: 1,000 tetrads.
+
+@citation
+
+Spores shown for A-B. Count tetrads, not individual spores.
+
+=== layout: stacked-panels
+
+# Three Tetrad Classes
+
+@top
+
+![two gene classes](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+
+@bottom
+
+- *PD*: only parental combinations, ab and ++.
+- *NPD*: only nonparental combinations, a+ and +b.
+- *TT*: all four combinations, one of each.
+
+=== layout: two-panels
+
+# Add the Tetrads in Each Class
+
+@left
+
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+Add the counts of all PD, NPD, and TT sets.
+
+Are PD and NPD approximately equal?
+
+- Given parents: ++ / ab.
+- Total: 1,000 tetrads.
+
+@citation
+
+Spores shown for A-B. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A and B Are Linked
+
+@left
+
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+
+@right
+
+[*Step 3: Test Linkage*]{color=#6C6C00}
+
+- PD = 650.
+- NPD = 10.
+- TT = 340.
+- PD is much greater than NPD: *linked*.
+- Check: 650 + 10 + 340 = 1,000.
+
+- Given parents: ++ / ab.
+- Total: 1,000 tetrads.
+
+@citation
+
+Spores shown for A-B. Count tetrads, not individual spores.
+
+=== layout: one-panel
+
+# Use the Linked-Gene Formula
+
+@body
+
+- TT, NPD, and N are tetrad counts.
+- N includes all tetrads, including PD.
+
+$$
+D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+$$
+
+- We already tested linkage. Now substitute the counts.
+
+=== layout: two-panels
+
+# Substitute the Two-Gene Counts
+
+@left
+
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{\frac{1}{2}(340) + 3(10)}{1000} \times 100 \;\mathrm{cM}
+$$
+
+Calculate the numerator first.
+
+- Given parents: ++ / ab.
+- Total: 1,000 tetrads.
+
+@citation
+
+Spores shown for A-B. Count tetrads, not individual spores.
+
+=== layout: two-panels
+
+# A to B: 20 cM
+
+@left
+
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+
+@right
+
+[*Step 4: Calculate Distance*]{color=#007A00}
+
+$$
+D = \frac{170 + 30}{1000} \times 100 = 20 \;\mathrm{cM}
+$$
+
+The weighted count is 200; the total is 1,000 tetrads.
+
+- Given parents: ++ / ab.
+- Total: 1,000 tetrads.
+
+@citation
+
+Spores shown for A-B. Count tetrads, not individual spores.
+
+=== layout: one-panel
+
+# Recombination Is Not Map Distance
+
+@body
+
+- Observed recombination counts recombinant spores.
+- The corrected map estimate accounts for additional crossovers.
+- The same tetrads give two answers because we are measuring different things.
+
+$$
+RF = \frac{\frac{1}{2}(340) + 10}{1000} \times 100 = 18\%
+$$
+
+$$
+D = \frac{\frac{1}{2}(340) + 3(10)}{1000} \times 100 = 20 \;\mathrm{cM}
+$$
+
+@notes
+
+Ask what changed between the formulas: the NPD weight changes from one to three. The correction adds 2 cM here. We still observed 18% recombinant spores; estimating hidden exchanges does not change those observed genotypes.
+

@@ -1,0 +1,58 @@
+=== layout: two-panels
+
+# Which Gene Is in the Middle?
+
+@left
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*24*]{color=#A719DB} |
+
+@right
+
+[*Step 6: Choose the Middle Gene*]{color=#A719DB}
+
+- There are three choices: A, B, or C.
+- Which pair is farthest apart?
+- Those two genes are the endpoints.
+- Place the remaining gene between them.
+
+=== layout: stacked-panels
+
+# A Is the Middle Gene
+
+@top
+
+![A is between B and C, with 10 and 15 cM adjacent intervals.](assets/lect09c-tetrad_worked_examples_bpw/gene_map.svg)
+
+@bottom
+
+- B-C is the largest pairwise estimate, so B and C are the endpoints.
+- B-A-C and C-A-B describe the same order.
+- The adjacent intervals come from A-B and A-C.
+
+=== layout: two-panels
+
+# Keep Pairwise Estimates Separate
+
+@left
+
+| Pair | Distance (cM) |
+| --- | --- |
+| [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
+| [*AC*]{color=#003FFF} | [*15*]{color=#003FFF} |
+| [*BC*]{color=#A719DB} | [*24*]{color=#A719DB} |
+
+@right
+
+- Adjacent interval sum: 10 + 15 = *25 cM*.
+- Direct B-C tetrad estimate: *24 cM*.
+- These are estimates from different pairwise counts.
+- Draw the map using its adjacent intervals; retain 24 cM as the calculated B-C answer.
+
+@notes
+
+Connect this small discrepancy to the distinction between pairwise estimates and interval sums from the testcross lecture. The tetrad correction assumes a crossover model; separate pairwise estimates need not add exactly. Do not change the source counts to force equality.
+

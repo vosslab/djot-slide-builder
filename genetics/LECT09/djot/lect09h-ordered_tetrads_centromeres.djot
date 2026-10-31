@@ -1,0 +1,178 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09H
+
+## Ordered Tetrads and Centromeres
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Follow meiosis and mitosis to form eight ordered spores.
+- Classify first- and second-division segregation.
+- Explain the half-weight and calculate gene-to-centromere distance.
+
+=== layout: one-panel
+
+# Life Cycle of Neurospora crassa
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_035.png)
+
+=== layout: one-panel
+
+# Meiosis Followed by Mitosis
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_036.png)
+
+=== layout: two-panels
+
+# A Gene and Its Centromere
+
+@left
+
+![Centromere joining sister chromatids](assets/lect09_tetrad_concepts/centromere.svg)
+
+@right
+
+- The centromere is the reference point.
+- Crossing over between the gene and centromere can change when its alleles separate.
+- Find the distance from gene A to its centromere.
+
+=== layout: definitions
+
+# Read the Segregation Patterns
+
+@body
+
+![First- and second-division pattern shapes](assets/lect09c-tetrad_worked_examples_bpw/ordered_classes.svg)
+
+- First-Division Segregation (FDS): alleles separate at meiosis I; 4:4.
+- Second-Division Segregation (SDS): alleles separate at meiosis II; 2:2:2:2 or 2:4:2.
+
+@notes
+
+Read each ascus from one end to the other. The numbers describe consecutive blocks of the same allele, not the total number of plus and a spores. Turning an ascus around preserves its class. These patterns assume regular 4:4 allele segregation. The distance calculation uses the single-crossover model for the gene-centromere interval.
+
+=== layout: one-panel
+
+# No Crossover or One Crossover?
+
+@body
+
+![No Crossover or One Crossover?](assets/lect09_tetrad_concepts/ordered_before_meiosis.svg)
+
+@citation
+
+A in these chromosome diagrams is the wild-type allele, written + in the homework.
+
+=== layout: one-panel
+
+# At Meiosis I and II
+
+@body
+
+![At Meiosis I and II](assets/lect09_tetrad_concepts/ordered_meiosis_ii.svg)
+
+@citation
+
+A in these chromosome diagrams is the wild-type allele, written + in the homework.
+
+=== layout: one-panel
+
+# After Mitosis: Eight Spores
+
+@body
+
+![After Mitosis: Eight Spores](assets/lect09_tetrad_concepts/ordered_mitosis.svg)
+
+@citation
+
+A in these chromosome diagrams is the wild-type allele, written + in the homework.
+
+=== include: lect09h1-ordered_centromere.djot
+
+=== layout: reference
+
+# Ordered Tetrad Mapping Reference
+
+@body
+
+| Segregation | Ordered Eight-Spore Pattern | Use in the Numerator? |
+| --- | --- | --- |
+| First division (FDS) | 4:4 | No |
+| Second division (SDS) | 2:2:2:2 or 2:4:2 | Yes, with half weight |
+
+- SDS is a count of whole asci; N includes both FDS and SDS.
+- One crossover involves two of four chromatids, so take half the SDS count.
+
+$$
+D = \frac{\frac{1}{2}\mathrm{SDS}}{N} \times 100 \;\mathrm{cM}
+$$
+
+@citation
+
+Gene-to-centromere estimate using the single-crossover model; multiple crossovers are neglected.
+
+=== layout: reference
+
+
+# Neurospora Life Cycle Reference
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_037.jpg)
+
+
+=== layout: reference
+
+# Random Ordering Reference
+
+@body
+
+![Random Ordering Reference](assets/lect09b-tetrads_1_introduction/image_043.png)
+
+@citation
+
+Randomly order two A and two a products: six equally likely orders. Observed counts can differ.
+
+=== layout: reference
+
+# A Spore-Color Example
+
+@body
+
+![A Spore-Color Example](assets/lect09b-tetrads_1_introduction/image_044.png)
+
+@citation
+
+Reference, not covered in lecture: ws and ws+ illustrate first- and second-division segregation in a spore-color phenotype.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Eight ordered spores represent four meiotic products, each copied once.
+- FDS gives 4:4; SDS gives 2:2:2:2 or 2:4:2.
+- Take half the SDS count, divide by total asci, and multiply by 100.
+- In this example, 150 SDS asci out of 500 give 15 cM.
+
+=== layout: theend
+
+# THE END
+

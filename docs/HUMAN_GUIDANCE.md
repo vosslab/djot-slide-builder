@@ -89,6 +89,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Labeled diagram reconstruction
 
+- Use the ordered-centromere problem generator's existing ordered-tetrad artwork in the slides.
+
+- When the export path cannot put SVG tetrads in table cells, use a whole-table SVG builder.
+
 - Use the artwork-plus-labels SVG pipeline only for labeled images, not whole-slide conversion.
   A figure contains one image and its overlapping text boxes. Keep slide titles, ordinary prose,
   and layout outside that figure in native Djot.
@@ -97,6 +101,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   box follows the image and disappears on click.
 
 ## Equation pipeline
+
+- Build better conceptual bridges into the tetrad equations. Keep my voice and break the
+  concepts into small pieces.
+- The centromere connection for unordered tetrads is not needed. Cover ordered tetrads and
+  their centromere connection, with a worked problem from the ordered-centromere generator.
 
 - Editability inside ODP/PPTX is not a repository requirement; keep equations editable in Djot.
 - Use rich LaTeX math syntax with MathJax-to-SVG rendering. Genetics LECT07C, with its many
@@ -147,6 +156,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   assessment status colors, and dated deadlines in the weekly master.
 
 ## Course links and evergreen announcements
+
+- Evergreen content is used across courses or across more than a single week. Tetrad content
+  is for a single lecture; keep it with Lecture 09, including the repeated procedure slides.
 
 - Support `@citation` on all slide layouts for URLs or article citations in smaller condensed
   text at the bottom. Normal layouts keep their full space; citations use the bottom margin.
@@ -376,6 +388,20 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   G, and H, following the pedagogical slide style guide.
 
 ## Conversion review
+
+- Use the three-point interference problem generator for Lecture 09B so the slides match
+  the homework more closely.
+
+- Keep Lecture 09B as interference and split the tetrad material into six smaller topic decks:
+  mitotic crossover; yeast/asci; crossover classes and distance formula; two genes; three genes;
+  then ordered tetrads and centromeres. Repair the draft figures we retain.
+- The slides teach students how to do the homework. Keep the homework's table appearance,
+  with all three genes visible in separate spore boxes and the pairwise classification columns.
+  The stripped-down genotype tables on the former 09C pages 37-43 do not look good.
+
+- Replace the old tetrad worked examples with fixed BPW examples: a linked two-gene problem,
+  an unlinked two-gene problem, and then a distinct three-gene problem. Keep my updated handout
+  for in-class practice; one authored version of each example is sufficient.
 
 - Starting in 2025, my Genetics class meets face to face and uses handouts for group
   activities. Use handout instructions for the current class activity; prior-year Google Slides

@@ -1,0 +1,189 @@
+=== layout: stacked-panels
+
+# A New Ordered-Tetrad Problem
+
+@top
+
+- *Neurospora crassa* cross: + and a.
+- You count 500 asci, each with eight spores in four pairs.
+- Find the distance between gene A and its centromere.
+
+@bottom
+
+![Four meiotic products, each forming a mitotic pair](assets/lect09c-tetrad_worked_examples_bpw/ordered_pairs.svg)
+
+@notes
+
+Recall the ordered-tetrad introduction. Meiosis produces four haploid products; one mitosis produces eight spores. The numbered pairs are four products of one meiosis, not eight independent meioses. Here we map one gene relative to its centromere. The symbol + means wild type and a is the mutant allele of gene A.
+
+=== layout: one-panel
+
+# The Six Ordered Patterns
+
+@body
+
+![Six ordered asci and their counts](assets/lect09c-tetrad_worked_examples_bpw/ordered_asci.svg)
+
+@citation
+
+Read each ascus left to right. + = wild type; a = mutant allele. Symbols and colors identify alleles, not observed pigment.
+
+=== include: ordered_tetrad_steps.djot
+
+=== layout: one-panel
+
+# Which Sets Are SDS?
+
+@body
+
+![Six ordered tetrad sets with counts and division labels](assets/lect09c-tetrad_worked_examples_bpw/ordered_table_question.svg)
+
+@citation
+
+Adjacent identical spores form mitotic pairs. Read consecutive allele blocks: FDS = 4:4; SDS = 2:2:2:2 or 2:4:2.
+
+@notes
+
+Ask students to classify all six sets before advancing. Sets 1 and 6 are reversals. Sets 2 and 5 are reversals. Sets 3 and 4 are reversals. All six sets have four plus and four a spores, so allele totals alone cannot answer the question.
+
+=== layout: one-panel
+
+# First or Second Division?
+
+@body
+
+![Six ordered tetrad sets with counts and division labels](assets/lect09c-tetrad_worked_examples_bpw/ordered_table_classified.svg)
+
+@citation
+
+Sets 1 and 6: FDS. Sets 2, 3, 4, and 5: SDS. Reversing an ascus preserves its class.
+
+=== layout: two-panels
+
+# Add the Second-Division Asci
+
+@left
+
+| Set | n | Division |
+| --- | --- | --- |
+| 1 | 188 | [*FDS*]{color=#076DAD background-color=#DCECF8 text-align=center} |
+| 2 | 39 | [*SDS*]{color=#B74300 background-color=#FFE3D5 text-align=center} |
+| 3 | 44 | [*SDS*]{color=#B74300 background-color=#FFE3D5 text-align=center} |
+| 4 | 30 | [*SDS*]{color=#B74300 background-color=#FFE3D5 text-align=center} |
+| 5 | 37 | [*SDS*]{color=#B74300 background-color=#FFE3D5 text-align=center} |
+| 6 | 162 | [*FDS*]{color=#076DAD background-color=#DCECF8 text-align=center} |
+| [Total]{background-color=#BDD0E4} | [500]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@right
+
+[*Step 3: Add the SDS Counts*]{color=#003FFF}
+
+$$
+\mathrm{SDS} = 39 + 44 + 30 + 37
+$$
+
+$$
+\mathrm{SDS} = 150
+$$
+
+- FDS: 188 + 162 = 350.
+- Check: 350 + 150 = 500 asci.
+
+=== include: ordered_tetrad_steps.djot
+
+=== layout: one-panel
+
+# Why Take Half?
+
+@body
+
+![Two of four meiotic products have recombinant gene-centromere combinations](assets/lect09c-tetrad_worked_examples_bpw/ordered_half.svg)
+
+- One crossover changes the gene-centromere combination on two of four chromatids.
+- Mitosis doubles each product: four of eight spores are recombinant. Still half.
+
+@notes
+
+The original combinations are + with the + parent's centromere and a with the a parent's centromere. Follow the centromere origin to the allele: the two shaded rows have exchanged combinations. The figure represents four products of one single-crossover meiosis. The four products make four identical mitotic pairs. Half the chromatids, and therefore half the spores, are recombinant relative to the centromere. The formula estimates this recombination fraction while neglecting multiple crossovers in the interval.
+
+=== layout: one-panel
+
+# Use the Ordered-Tetrad Formula
+
+@body
+
+- SDS is the number of second-division asci.
+- N is the total number of asci, including FDS and SDS.
+- Take half the SDS count, divide by N, then multiply by 100 for cM.
+
+$$
+D = \frac{\frac{1}{2}\mathrm{SDS}}{N} \times 100 \;\mathrm{cM}
+$$
+
+@citation
+
+Gene-to-centromere estimate using the single-crossover model; multiple crossovers are neglected.
+
+@notes
+
+Keep the counting unit as asci throughout. We did not count individual spores in the data table. The half-weight already accounts for the two of four chromatids involved in a crossover; no extra factor of eight belongs in the denominator.
+
+=== layout: two-panels
+
+# Substitute the Counts
+
+@left
+
+| Quantity | Asci |
+| --- | --- |
+| FDS | 350 |
+| SDS | 150 |
+| Total, N | 500 |
+
+@right
+
+[*Step 4: Calculate the Distance*]{color=#A719DB}
+
+$$
+D = \frac{\frac{1}{2}(150)}{500} \times 100 \;\mathrm{cM}
+$$
+
+Calculate half of 150 first.
+
+=== layout: one-panel
+
+# Finish the Calculation
+
+@body
+
+We observed 150 SDS asci. Use half that count in the formula.
+
+$$
+D = \frac{75}{500} \times 100
+$$
+
+$$
+D = 0.15 \times 100 = 15 \;\mathrm{cM}
+$$
+
+@notes
+
+Ask students what 75 represents. It is a weighted contribution, not a claim that only 75 asci had second-division patterns. We observed 150 SDS asci and apply the half-weight to estimate recombinant chromatids.
+
+=== layout: stacked-panels
+
+# Gene A to Centromere: 15 cM
+
+@top
+
+![Gene A lies an estimated 15 cM from its centromere](assets/lect09c-tetrad_worked_examples_bpw/ordered_map.svg)
+
+@bottom
+
+- SDS asci: 150 of 500, or *30%*.
+- Gene-to-centromere distance: half of 30%, or *15 cM*.
+- We mapped one gene relative to its centromere.
+
+@notes
+
+Ask why 30 cM would be the wrong answer. Thirty percent describes the asci showing SDS; the map estimate accounts for the half of chromatids involved. The symbols + and a are two alleles of one gene. They are not the two endpoints of a two-gene map.

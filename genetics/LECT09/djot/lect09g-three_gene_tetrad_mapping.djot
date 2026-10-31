@@ -1,0 +1,101 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09G
+
+## Three-Gene Tetrad Mapping
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Classify every pair using the complete three-gene homework table.
+- Calculate a map distance for each pair.
+- Choose the middle gene and distinguish interval sums from pairwise estimates.
+
+=== include: lect09g1-three_gene_mapping.djot
+
+=== include: lect09g2-gene_order.djot
+
+=== layout: reference
+
+# Three-Gene Classification Reference
+
+@body
+
+![Three-Gene Classification Reference](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_3.svg)
+
+@citation
+
+Given parents: a++ / +bc. Each row is one set of complete tetrads; classifications depend on the selected pair.
+
+=== layout: one-panel
+
+# Your Turn: Tetrad Analysis Handout
+
+@body
+
+- Use the updated unordered tetrad handout provided in class.
+- First classify each set and decide whether the genes are linked.
+- Calculate distances for linked pairs, one pair at a time.
+- For the three-gene mapping problem, choose the middle gene and draw the map.
+
+=== layout: reference
+
+# Practice Outside Class
+
+@body
+
+Use the updated handout in class. These prior-year Google Slides activities remain available for extra practice.
+
+Fall 2024:
+
+https://docs.google.com/presentation/d/1hVxs5Qz7LSH8484HJMrAR7WwZ6KfQFz4Lo7gmOCJI10/edit
+
+Fall 2023:
+
+https://docs.google.com/presentation/d/1SOhsJAvdCR2QvH8c5kVvtpH46KzVRh646gOjdyDZt9E/edit
+
+Fall 2022:
+
+https://docs.google.com/presentation/d/1_DlBOqPbVyHJpIcmknIXKrQegnYpEjN0Fm5qd5xz604/edit?usp=sharing
+
+=== layout: reference
+
+# Tetrad Video References
+
+@body
+
+Dr. Voss: Solving the Unordered Tetrad Problems
+
+https://www.youtube.com/watch?v=szlcnLn5mc8
+
+Bozeman Science: More Tetrad Content
+
+https://youtu.be/gXUxH1aFRp0
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- All three genes stay visible; classify the pair named in the question.
+- Keep earlier pair classifications when you move to the next pair.
+- A-B is 10 cM; A-C is 15 cM; B-C is 24 cM.
+- A is the middle gene. B-A-C and C-A-B describe the same map.
+- The adjacent intervals sum to 25 cM; retain the direct B-C estimate as 24 cM.
+
+=== layout: theend
+
+# THE END
+

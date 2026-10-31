@@ -1,0 +1,114 @@
+[
+  {
+    "asset": "yeast_signals.svg",
+    "source_page": 12,
+    "crop": [
+      150.80315307617187,
+      4.9606298828125,
+      674.6456848144531,
+      208.346455078125
+    ],
+    "live_text_nodes": 24
+  },
+  {
+    "asset": "yeast_mating.svg",
+    "source_page": 13,
+    "crop": [
+      150.80315307617187,
+      4.9606298828125,
+      674.6456848144531,
+      327.401572265625
+    ],
+    "live_text_nodes": 30
+  },
+  {
+    "asset": "yeast_diploid.svg",
+    "source_page": 14,
+    "crop": [
+      150.80315307617187,
+      4.9606298828125,
+      674.6456848144531,
+      491.1023583984375
+    ],
+    "live_text_nodes": 43
+  },
+  {
+    "asset": "unlinked_segregation.svg",
+    "source_page": 20,
+    "crop": [
+      23.811024169921875,
+      4.9606298828125,
+      777.8267895507812,
+      486.141728515625
+    ],
+    "live_text_nodes": 19
+  },
+  {
+    "asset": "crossover_histories.svg",
+    "source_page": 40,
+    "crop": [
+      55.55905639648438,
+      124.0157470703125,
+      781.7952935791016,
+      491.1023583984375
+    ],
+    "live_text_nodes": 11
+  },
+  {
+    "asset": "centromere.svg",
+    "source_page": 56,
+    "crop": [
+      55.55905639648438,
+      218.26771484375,
+      317.48032226562503,
+      466.29920898437496
+    ],
+    "live_text_nodes": 2
+  },
+  {
+    "asset": "ordered_before_meiosis.svg",
+    "source_page": 57,
+    "crop": [
+      27.77952819824219,
+      133.9370068359375,
+      781.7952935791016,
+      396.85039062500005
+    ],
+    "live_text_nodes": 2
+  },
+  {
+    "asset": "ordered_meiosis_ii.svg",
+    "source_page": 59,
+    "crop": [
+      11.905512084960938,
+      4.9606298828125,
+      781.7952935791016,
+      488.6220434570312
+    ],
+    "live_text_nodes": 0
+  },
+  {
+    "asset": "ordered_mitosis.svg",
+    "source_page": 60,
+    "crop": [
+      11.905512084960938,
+      4.9606298828125,
+      781.7952935791016,
+      488.6220434570312
+    ],
+    "live_text_nodes": 0
+  },
+  {
+    "asset": "twin_spots.svg",
+    "source_page": 5,
+    "source_image": "genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/image_002.png",
+    "crop_pixels": [
+      0,
+      520,
+      2088,
+      1476
+    ],
+    "live_text_nodes": 0,
+    "repair": "Preserve original phenotype panels/labels; move caption to native Djot and remove figure number."
+  }
+]

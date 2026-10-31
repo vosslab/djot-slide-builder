@@ -1,0 +1,420 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09E
+
+## Crossovers and Tetrad Mapping
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish crossover histories from observed tetrad classes.
+- Use PD and NPD counts to recognize linkage.
+- Explain the different weights in recombination frequency and map distance.
+
+=== layout: definitions
+
+# Unordered Tetrad Classes
+
+@body
+
+- Parental Ditype (PD): four spores with only the two parental allele combinations.
+- Nonparental Ditype (NPD): four spores with only the two nonparental allele combinations.
+- Tetratype (TT): one spore of each of the four allele combinations.
+
+=== layout: definitions
+
+# Crossover Histories
+
+@body
+
+- NCO: a non-crossover meiosis in the interval being studied.
+- SCO: a single-crossover meiosis in that interval.
+- DCO: a double-crossover meiosis in that interval.
+
+=== layout: one-panel
+
+# Two Different Kinds of Labels
+
+@body
+
+| Labels | What Do They Describe? |
+| --- | --- |
+| NCO, SCO, DCO | How many crossovers occurred in a meiosis |
+| PD, NPD, TT | The allele combinations observed in its four spores |
+
+A tetrad class does not always tell us its crossover history.
+
+=== layout: one-panel
+
+# Classify All Four Spores
+
+@body
+
+![Classify All Four Spores](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+
+@citation
+
+Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use A and B for the wild-type alleles.
+
+=== layout: one-panel
+
+# Unlinked Genes Can Give PD or NPD
+
+@body
+
+![Unlinked Genes Can Give PD or NPD](assets/lect09b-tetrads_1_introduction/image_013.png)
+
+=== layout: one-panel
+
+# Two Equally Likely Arrangements
+
+@body
+
+![Two Equally Likely Arrangements](assets/lect09_tetrad_concepts/unlinked_segregation.svg)
+
+=== layout: one-panel
+
+# Linkage Changes the Class Counts
+
+@body
+
+- Genes on different chromosomes: PD and NPD are approximately equal.
+- Linked genes: PD is much greater than NPD.
+- TT alone does not establish whether the genes are linked.
+
+=== layout: one-panel
+
+# NCO Gives PD
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_016.png)
+
+=== layout: one-panel
+
+# SCO Gives TT
+
+@body
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_017.png)
+
+=== layout: one-panel
+
+
+# How Can We Obtain NPD?
+
+@body
+
+- How can we obtain the [non-parental ditype (NPD)]{color=#00A933} using crossover events?
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_018.png)
+
+=== layout: one-panel
+
+
+# Two Crossovers, Four Chromatids
+
+@body
+
+- Obtain the [non-parental ditype (NPD)]{color=#00A933} using crossover events.
+
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_019.png)
+
+=== layout: one-panel
+
+# Which Tetrad Class?
+
+@body
+
+| Crossovers Between Linked Genes | PD, NPD, or TT? |
+| --- | --- |
+| None | ? |
+| One | ? |
+| Two, involving two chromatids | ? |
+| Two, involving three chromatids | ? |
+| Two, involving four chromatids | ? |
+
+@notes
+
+Ask students to distinguish the number of exchanges from the number of chromatids involved. A DCO can involve two, three, or four chromatids.
+
+=== layout: one-panel
+
+# Crossovers and Their Tetrad Outcomes
+
+@body
+
+![Crossovers and Their Tetrad Outcomes](assets/lect09_tetrad_concepts/crossover_histories.svg)
+
+@citation
+
+Two-strand DCO gives PD; three-strand DCO gives TT; four-strand DCO gives NPD. Three or more crossovers are assumed rare.
+
+=== layout: one-panel
+
+# How Many Spores Are Recombinant?
+
+@body
+
+![two gene classes](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+
+- The parents are ++ / ab.
+- In each class, how many of the four spores have a nonparental combination?
+
+@notes
+
+Pause before showing the counts. Ask students to point to the a+ and +b spores. The class name describes the whole tetrad; the question asks about individual spores inside it.
+
+=== layout: stacked-panels
+
+# Count the Recombinant Spores
+
+@top
+
+![two gene classes](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+
+@bottom
+
+| Tetrad Class | Recombinant Spores | Fraction |
+| --- | --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | 0 of 4 | None |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | 2 of 4 | Half |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | 4 of 4 | All |
+
+@notes
+
+The two parental combinations are ++ and ab. The two nonparental combinations are a+ and +b. This explains the half-weight for TT when counting recombinant spores. NPD has full weight in this count; the map correction comes later.
+
+=== layout: one-panel
+
+# From Spores to Recombination Frequency
+
+@body
+
+- Each TT tetrad contributes two recombinant spores; each NPD contributes four.
+- N tetrads contain 4N spores in total.
+
+$$
+RF = \frac{2TT + 4NPD}{4N} \times 100\%
+$$
+
+Divide the top and bottom by four.
+
+$$
+RF = \frac{\frac{1}{2}TT + NPD}{N} \times 100\%
+$$
+
+@notes
+
+Ask where the four went. It cancels; we have not changed what the fraction measures. TT, NPD, and N are tetrad counts throughout. This formula measures the fraction of spores with nonparental combinations.
+
+=== layout: one-panel
+
+# Can Crossovers Hide?
+
+@body
+
+- Does a parental combination prove that no crossover occurred?
+- Two exchanges can restore a parental combination.
+
+| Tetrad Class | Possible Crossovers Between the Genes |
+| --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | None, or two |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | One, or two |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | Two |
+
+@citation
+
+For linked genes, considering zero, one, or two crossovers. Three or more are assumed rare.
+
+@notes
+
+Ask the question before reading the answer. Recall the double-crossover diagrams we just followed. PD and TT do not tell us the crossover history by themselves. NPD gives us a way to estimate the hidden doubles.
+
+=== layout: one-panel
+
+# Use NPD to Estimate the Doubles
+
+@body
+
+For double crossovers, four equally likely second exchanges give:
+
+| Outcome | Expected Share | Estimated Count |
+| --- | --- | --- |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | One of four | NPD |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | Two of four | 2NPD |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | One of four | NPD |
+
+NPD is one quarter of the double-crossover count (DCO).
+
+$$
+DCO = NPD + 2NPD + NPD = 4NPD
+$$
+
+@citation
+
+Model: random chromatid participation in the second exchange; three or more crossovers are rare.
+
+@notes
+
+These are estimates of the double-crossover part of each class, not the total PD and TT counts. With random chromatid participation, the four possible second exchanges give one PD outcome, two TT outcomes, and one NPD outcome. NPD therefore estimates one quarter of the double-crossover tetrads.
+
+=== layout: one-panel
+
+# Which TT Tetrads Came From Singles?
+
+@body
+
+- The TT count includes single and double crossovers.
+- We just estimated that 2NPD of the TT tetrads came from doubles.
+- Subtract those to estimate the single-crossover count (SCO).
+
+$$
+SCO = TT - 2NPD
+$$
+
+@notes
+
+Ask why we subtract. The double-crossover tetrads will be counted in DCO, so we must remove them from TT before calling the remaining tetrads singles. Keep the observed classes separate from the estimated crossover histories.
+
+=== layout: one-panel
+
+# Count the Exchanges Per Chromatid
+
+@body
+
+- One crossover involves two of the four chromatids: half.
+- Two crossovers contribute twice as much: one.
+- Add half the singles and all the doubles.
+
+$$
+\text{Weighted count} = \frac{1}{2}SCO + DCO
+$$
+
+@notes
+
+The map tracks exchanges per chromatid. Each exchange involves two chromatids, so divide the number of exchanges by two when averaging over all four chromatids. Two exchanges still count twice even when they restore a parental allele combination. This weighted count is not a count of recombinant spores.
+
+=== layout: one-panel
+
+# Where Does the Three Come From?
+
+@body
+
+Substitute our estimates for singles and doubles.
+
+$$
+\text{Weighted count} = \frac{1}{2}(TT - 2NPD) + 4NPD
+$$
+
+$$
+= \frac{1}{2}TT - NPD + 4NPD
+$$
+
+$$
+= \frac{1}{2}TT + 3NPD
+$$
+
+Minus one plus four gives three.
+
+NPD still has four recombinant spores; three is a correction weight.
+
+@notes
+
+Walk through the middle line before advancing. The three does not mean that an NPD tetrad has three recombinant spores. It comes from estimating the double crossovers hidden in all three tetrad classes. Ask students to explain the minus one and plus four in words.
+
+=== layout: one-panel
+
+# From the Weighted Count to cM
+
+@body
+
+- Divide the weighted count by *N*, the total tetrads.
+- This gives the estimated number of exchanges per chromatid.
+- Multiply by 100 to express that map distance in cM.
+
+$$
+D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+$$
+
+@notes
+
+TT, NPD, and N are counts, just as in the spore-frequency calculation. Dividing by N averages over the sampled meioses. The chromatid weighting is already included in the numerator. Ask students to identify the weighted count, the averaging step, and the conversion to cM before using the numbers.
+
+=== layout: reference
+
+# Unordered Tetrad Mapping Reference
+
+@body
+
+- PD and NPD are defined by the given parental combinations.
+- Linked genes: PD is much greater than NPD.
+- Unlinked genes: PD and NPD are approximately equal.
+- TT and NPD below are counts; N is the total number of tetrads.
+
+$$
+D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+$$
+
+=== layout: reference
+
+# Other Crossover Estimates
+
+@body
+
+- Reference: NCO, SCO, and DCO below are estimated counts; N is the total tetrads.
+
+$$
+NCO = N - (SCO + DCO)
+$$
+
+- Mean crossovers per meiosis:
+
+$$
+m = \frac{SCO + 2DCO}{N}
+$$
+
+- Each exchange involves two of four chromatids. Express the map distance in cM:
+
+$$
+D = 50m
+$$
+
+=== layout: reference
+
+# Unlinked Tetrads Reference
+
+@body
+
+![Unlinked Tetrads Reference](assets/lect09b-tetrads_1_introduction/image_015.png)
+
+@citation
+
+Reference, not covered in lecture: unlinked genes can also give TT. The linkage test compares PD with NPD.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- PD, NPD, and TT describe the four observed spores; NCO, SCO, and DCO describe exchanges.
+- Double crossovers can give PD, TT, or NPD.
+- Observed RF counts recombinant spores; corrected map distance estimates exchanges.
+- Use counts throughout: half TT plus three NPD, divided by total tetrads, times 100.
+
+=== layout: theend
+
+# THE END
+

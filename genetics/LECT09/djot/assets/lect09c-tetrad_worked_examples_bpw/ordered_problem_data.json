@@ -1,0 +1,83 @@
+{
+  "generator": "problems/inheritance-problems/gene_mapping/tetrad_ordered-centromere_distance.py",
+  "generator_repository": "biology-problems",
+  "generator_revision": "6039b8ad72565b284c9a073060429df8f175545d",
+  "call": "get_asci_counts(15)",
+  "random_seed": 309,
+  "PYTHONHASHSEED": "0",
+  "reproducibility_note": "The generator assigns the four SDS count bins by set iteration; fix PYTHONHASHSEED as well as the random seed.",
+  "cross": [
+    "+",
+    "a"
+  ],
+  "gene": "A",
+  "organism": "Neurospora crassa",
+  "rows": [
+    {
+      "set": 1,
+      "pattern": "++++aaaa",
+      "count": 188,
+      "blocks": "4:4",
+      "division": "FDS"
+    },
+    {
+      "set": 2,
+      "pattern": "++aa++aa",
+      "count": 39,
+      "blocks": "2:2:2:2",
+      "division": "SDS"
+    },
+    {
+      "set": 3,
+      "pattern": "++aaaa++",
+      "count": 44,
+      "blocks": "2:4:2",
+      "division": "SDS"
+    },
+    {
+      "set": 4,
+      "pattern": "aa++++aa",
+      "count": 30,
+      "blocks": "2:4:2",
+      "division": "SDS"
+    },
+    {
+      "set": 5,
+      "pattern": "aa++aa++",
+      "count": 37,
+      "blocks": "2:2:2:2",
+      "division": "SDS"
+    },
+    {
+      "set": 6,
+      "pattern": "aaaa++++",
+      "count": 162,
+      "blocks": "4:4",
+      "division": "FDS"
+    }
+  ],
+  "total_asci": 500,
+  "FDS": 350,
+  "SDS": 150,
+  "SDS_percent": 30,
+  "weighted_SDS": 75,
+  "distance_cM": 15,
+  "verification": "Independently classify each eight-spore sequence by run lengths, validate four identical mitotic pairs, sum counts with exact Fraction arithmetic, and compare the generator answer formatter.",
+  "model": "Use second-division segregation as a single-crossover estimate of gene-centromere distance; multiple crossovers are neglected.",
+  "subject_reference": "https://facweb.furman.edu/~lthompson/bgy30/30sorda.htm",
+  "artwork": {
+    "ordered_asci": "Exact generate_html_for_pattern(pattern, *bptools.default_color_wheel(2)) output, captured at 3x CSS size and embedded as quality-90 WebP. Six original patterns preserve all eight spores. SVG set numbers, counts, class reveals, block labels, and mitotic-pair brackets are added around the original art. Colors identify alleles and do not represent observed pigmentation.",
+    "half_weight": "One single-crossover meiosis. Track centromere origin from the + and a parents; two of four meiotic products have recombinant gene-centromere combinations. Each product forms an identical mitotic pair.",
+    "map": "Schematic gene-centromere genetic interval, not physical scale.",
+    "construction_references": [
+      "A_Handbook_of_Biological_Illustration-1988.md: CLARITY",
+      "Mastering_SVG-2018.md: viewBox and viewport in SVG"
+    ],
+    "ordered_generator_html": "ordered_generator_art.html",
+    "ordered_generator_colors": {
+      "+": "#845103",
+      "a": "#0e6399"
+    },
+    "ordered_generator_source_sha256": "59e06f880bd3af518d38fe9dce42d676d78e8343168ceb0a7d58736bc0657385"
+  }
+}

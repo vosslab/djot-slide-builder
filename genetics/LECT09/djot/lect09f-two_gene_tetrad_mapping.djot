@@ -1,0 +1,58 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09F
+
+## Two-Gene Tetrad Mapping
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Classify tetrads using the given parental cross.
+- Test linkage before calculating map distance.
+- Work through linked and unlinked examples.
+
+=== include: lect09f1-two_gene_linked.djot
+
+=== include: lect09f2-two_gene_unlinked.djot
+
+=== layout: reference
+
+# Unordered Tetrad Mapping Reference
+
+@body
+
+- PD and NPD are defined by the given parental combinations.
+- Linked genes: PD is much greater than NPD.
+- Unlinked genes: PD and NPD are approximately equal.
+- TT and NPD below are counts; N is the total number of tetrads.
+
+$$
+D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+$$
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Use parental allele combinations to classify tetrads, not the size of a set.
+- The linked A-B example gives 20 cM; its observed RF is 18%.
+- The D-E example is unlinked: PD and NPD are approximately equal.
+- Do not apply the linked-gene map correction to the unlinked example.
+
+=== layout: theend
+
+# THE END
+

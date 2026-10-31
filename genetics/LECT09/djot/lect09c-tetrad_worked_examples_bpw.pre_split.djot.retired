@@ -1,0 +1,185 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09C
+
+## Tetrad Mapping Worked Examples
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Classify unordered tetrads using the given parental cross.
+- Distinguish linked and unlinked gene pairs.
+- Calculate map distances from tetrad counts.
+- Solve each pair and determine three-gene order.
+- Map a gene relative to its centromere using ordered asci.
+
+=== layout: definitions
+
+# Unordered Tetrad Classes
+
+@body
+
+- Parental Ditype (PD): four spores with only the two parental allele combinations.
+- Nonparental Ditype (NPD): four spores with only the two nonparental allele combinations.
+- Tetratype (TT): one spore of each of the four allele combinations.
+
+=== include: lect09c1-two_gene_linked.djot
+
+=== include: lect09c2-two_gene_unlinked.djot
+
+=== include: lect09c3-three_gene_mapping.djot
+
+=== include: lect09c4-gene_order.djot
+
+=== include: lect09c5-ordered_centromere.djot
+
+=== layout: section
+
+# Summary and Practice
+
+=== include: repo:genetics/evergreen/unordered_tetrad_steps.djot
+
+=== layout: reference
+
+# Unordered Tetrad Mapping Reference
+
+@body
+
+- PD and NPD are defined by the given parental combinations.
+- Linked genes: PD is much greater than NPD.
+- Unlinked genes: PD and NPD are approximately equal.
+- TT and NPD below are counts; N is the total number of tetrads.
+
+$$
+D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+$$
+
+=== layout: reference
+
+# Three-Gene Classification Reference
+
+@body
+
+| Set | Four Spores (A-B-C) | Tetrads | A-B | A-C | B-C |
+| --- | --- | --- | --- | --- | --- |
+| 1 | [+]{color=#4A4A4A}[+]{color=#4A4A4A}[+]{color=#4A4A4A}  [+]{color=#4A4A4A}[+]{color=#4A4A4A}[+]{color=#4A4A4A}  [a]{color=#D40000}[b]{color=#007A00}[c]{color=#003FFF}  [a]{color=#D40000}[b]{color=#007A00}[c]{color=#003FFF} | 2 | [*NPD*]{color=#007A00 background-color=#BFE6C0} | [*NPD*]{color=#007A00 background-color=#BFE6C0} | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| 2 | [+]{color=#4A4A4A}[+]{color=#4A4A4A}[c]{color=#003FFF}  [+]{color=#4A4A4A}[+]{color=#4A4A4A}[c]{color=#003FFF}  [a]{color=#D40000}[b]{color=#007A00}[+]{color=#4A4A4A}  [a]{color=#D40000}[b]{color=#007A00}[+]{color=#4A4A4A} | 5 | [*NPD*]{color=#007A00 background-color=#BFE6C0} | [*PD*]{color=#935D00 background-color=#FFE3A3} | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 3 | [+]{color=#4A4A4A}[+]{color=#4A4A4A}[c]{color=#003FFF}  [+]{color=#4A4A4A}[b]{color=#007A00}[c]{color=#003FFF}  [a]{color=#D40000}[+]{color=#4A4A4A}[+]{color=#4A4A4A}  [a]{color=#D40000}[b]{color=#007A00}[+]{color=#4A4A4A} | 198 | [*TT*]{color=#A719DB background-color=#E8CCE6} | [*PD*]{color=#935D00 background-color=#FFE3A3} | [*TT*]{color=#A719DB background-color=#E8CCE6} |
+| 4 | [+]{color=#4A4A4A}[b]{color=#007A00}[+]{color=#4A4A4A}  [+]{color=#4A4A4A}[b]{color=#007A00}[+]{color=#4A4A4A}  [a]{color=#D40000}[+]{color=#4A4A4A}[c]{color=#003FFF}  [a]{color=#D40000}[+]{color=#4A4A4A}[c]{color=#003FFF} | 11 | [*PD*]{color=#935D00 background-color=#FFE3A3} | [*NPD*]{color=#007A00 background-color=#BFE6C0} | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
+| 5 | [+]{color=#4A4A4A}[b]{color=#007A00}[+]{color=#4A4A4A}  [+]{color=#4A4A4A}[b]{color=#007A00}[c]{color=#003FFF}  [a]{color=#D40000}[+]{color=#4A4A4A}[+]{color=#4A4A4A}  [a]{color=#D40000}[+]{color=#4A4A4A}[c]{color=#003FFF} | 282 | [*PD*]{color=#935D00 background-color=#FFE3A3} | [*TT*]{color=#A719DB background-color=#E8CCE6} | [*TT*]{color=#A719DB background-color=#E8CCE6} |
+| 6 | [+]{color=#4A4A4A}[b]{color=#007A00}[c]{color=#003FFF}  [+]{color=#4A4A4A}[b]{color=#007A00}[c]{color=#003FFF}  [a]{color=#D40000}[+]{color=#4A4A4A}[+]{color=#4A4A4A}  [a]{color=#D40000}[+]{color=#4A4A4A}[+]{color=#4A4A4A} | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} | [*PD*]{color=#935D00 background-color=#FFE3A3} | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [Total]{colspan=2 background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} | []{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
+
+@citation
+
+Given parents: a++ / +bc. Each row is one set of complete tetrads; the class changes with the selected pair.
+
+=== layout: reference
+
+# Ordered Tetrad Mapping Reference
+
+@body
+
+| Segregation | Ordered Eight-Spore Pattern | Use in the Numerator? |
+| --- | --- | --- |
+| First division (FDS) | 4:4 | No |
+| Second division (SDS) | 2:2:2:2 or 2:4:2 | Yes, with half weight |
+
+- SDS is a count of whole asci; N includes both FDS and SDS.
+- One crossover involves two of four chromatids, so take half the SDS count.
+
+$$
+D = \frac{\frac{1}{2}\mathrm{SDS}}{N} \times 100 \;\mathrm{cM}
+$$
+
+@citation
+
+Gene-to-centromere estimate using the single-crossover model; multiple crossovers are neglected.
+
+=== layout: one-panel
+
+# Your Turn: Tetrad Analysis Handout
+
+@body
+
+- Use the updated unordered tetrad handout provided in class.
+- First classify each set and decide whether the genes are linked.
+- Calculate distances for linked pairs, one pair at a time.
+- For the three-gene mapping problem, choose the middle gene and draw the map.
+
+=== layout: one-panel
+
+# *Your Turn*
+
+@body
+
+- Past-year reference for practice outside class; use the handout in class.
+
+- Unordered Tetrad Three Gene Distances Group Activity
+- Fall 2024 Link\:
+  - [https\://docs.google.com/presentation/d/1hVxs5Qz7LSH8484HJMrAR7WwZ6KfQFz4Lo7gmOCJI10/edit](https://docs.google.com/presentation/d/1hVxs5Qz7LSH8484HJMrAR7WwZ6KfQFz4Lo7gmOCJI10/edit)
+- via Google Slides
+
+=== layout: one-panel
+
+# *Your Turn*
+
+@body
+
+- Past-year reference for practice outside class; use the handout in class.
+
+- Unordered Tetrad Three Gene Distances Group Activity
+- Fall 2023 Link\:
+  - [https\://docs.google.com/presentation/d/1SOhsJAvdCR2QvH8c5kVvtpH46KzVRh646gOjdyDZt9E/edit](https://docs.google.com/presentation/d/1SOhsJAvdCR2QvH8c5kVvtpH46KzVRh646gOjdyDZt9E/edit)
+- via Google Slides
+
+=== layout: one-panel
+
+# *Your Turn*
+
+@body
+
+- Past-year reference for practice outside class; use the handout in class.
+
+- Unordered Tetrad Three Gene Distances Group Activity
+- Fall 2022 Link\:
+  - [https\://docs.google.com/presentation/d/1\_DlBOqPbVyHJpIcmknIXKrQegnYpEjN0Fm5qd5xz604/edit?usp=sharing](https://docs.google.com/presentation/d/1_DlBOqPbVyHJpIcmknIXKrQegnYpEjN0Fm5qd5xz604/edit?usp=sharing)
+- via Google Slides
+
+=== layout: one-panel
+
+# *Dr. Voss YouTube Video*
+
+@body
+
+- Solving the Unordered Tetrad Problems
+- [https\://www.youtube.com/watch?v=szlcnLn5mc8](https://www.youtube.com/watch?v=szlcnLn5mc8)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Use the cross to identify parental combinations.
+- Classify all four spores for the selected pair.
+- Test linkage before calculating a map distance.
+- Reclassify the tetrads when you change gene pairs.
+- Reversed gene orders describe the same map.
+- Ordered asci let you estimate a gene's distance from its centromere.
+
+=== layout: theend
+
+# THE END
+

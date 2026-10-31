@@ -1,0 +1,357 @@
+=== layout: section
+
+# Homework Problem
+
+=== layout: one-panel
+
+# Fruit Fly Test Cross
+
+@body
+
+- *F: fuzzy* - a dense covering of hairs.
+- *P: prickly* - sharp bristles.
+- *W: waxy* - a thick, water-resistant coating.
+- Lowercase letters mark recessive alleles; + means wild type.
+
+A triple heterozygote is crossed with a homozygous fpw tester.
+Offspring phenotypes reveal the heterozygote's gametes.
+
+=== layout: one-panel
+
+# The Gene Order Is Given
+
+@body
+
+*F -- 25 cM -- W -- 15 cM -- P*
+
+| Pair | Supplied Value |
+| --- | --- |
+| F-W | 25 cM |
+| W-P | 15 cM |
+| F-P | 34% outer-pair recombination |
+
+- The homework supplies the order and pairwise values.
+- The table lists alleles alphabetically: F, P, W.
+- For interference, use the two *adjacent* intervals: F-W and W-P.
+
+=== layout: one-panel
+
+# Calculate the Interference
+
+@body
+
+Based on the offspring, calculate the percentage of interference between F and P.
+
+{table-group="interference-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
+| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
+| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive mutant.
+
+=== include: interference_steps.djot
+
+=== layout: one-panel
+
+# Which Are the Parental Types?
+
+@body
+
+Which two reciprocal types have the largest counts?
+
+{table-group="interference-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
+| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
+| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive mutant.
+
+=== layout: one-panel
+
+# The Two Parental Types
+
+@body
+
+The parents are f++ and +pw: 569 + 565 = 1,134 offspring.
+
+{table-group="interference-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
+| *fuzzy* | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [*569*]{text-align=right color=#A719DB} |
+| *prickly, waxy* | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [*565*]{text-align=right color=#A719DB} |
+| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive mutant.
+
+=== layout: one-panel
+
+# Which Are the Double Crossovers?
+
+@body
+
+Which types differ from a parent only at the middle gene, W?
+
+{table-group="interference-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
+| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
+| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive mutant.
+
+=== layout: one-panel
+
+# Only the Middle Gene Changes
+
+@body
+
+Here the alleles are arranged in *map order: F-W-P*.
+
+| Type | F | W | P | Count |
+| --- | --- | --- | --- | --- |
+| Parent | f | + | + | 569 |
+| DCO | f | [*w*]{background-color=#8FABFF} | + | 23 |
+| Parent | + | w | p | 565 |
+| DCO | + | [*+*]{background-color=#8FABFF} | p | 31 |
+
+The outside alleles stay together; the middle allele changes.
+In the homework's F/P/W columns, the DCO types are *f+w* and *+p+*.
+
+=== layout: one-panel
+
+# Count the Observed Doubles
+
+@body
+
+*Observed DCO = 23 + 31 = 54 offspring.*
+
+{table-group="interference-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| *fuzzy, waxy* | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [*23*]{text-align=right color=#A719DB} |
+| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
+| *prickly* | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [*31*]{text-align=right color=#A719DB} |
+| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive mutant.
+
+=== include: interference_steps.djot
+
+=== layout: one-panel
+
+# Convert Percent to Probability
+
+@body
+
+[*Step 2: Use the Adjacent Intervals*]{color=#B74300}
+
+| Interval | Recombinant Fraction | Probability |
+| --- | --- | --- |
+| F-W | 25 out of 100 | 0.25 |
+| W-P | 15 out of 100 | 0.15 |
+
+Percent means "out of 100." Divide each percent by 100 before multiplying.
+
+=== layout: one-panel
+
+# Why Multiply the Probabilities?
+
+@body
+
+[*Step 2: Predict Both Events*]{color=#B74300}
+
+$$
+P(\mathrm{DCO})_{\mathrm{independent}} = 0.25 \times 0.15 = 0.0375
+$$
+
+- Start with the 25% recombinant in F-W.
+- If the intervals are independent, 15% of that group is also recombinant in W-P.
+- The predicted DCO fraction is 0.0375, or *3.75%*.
+
+=== layout: one-panel
+
+# From a Fraction to a Count
+
+@body
+
+[*Step 3: Scale to All 1,800 Offspring*]{color=#007A00}
+
+$$
+E_{\mathrm{DCO}} = 0.0375 \times 1800 = 67.5
+$$
+
+| Quantity | Meaning |
+| --- | --- |
+| 0.0375 | Predicted fraction of offspring that are DCO |
+| 1,800 | Total offspring, including parental types |
+| 67.5 | Expected number of DCO offspring |
+
+Multiply a fraction by the total to get a count.
+
+=== layout: one-panel
+
+# Why Is the Expected Count 67.5?
+
+@body
+
+- An observed count is a whole number: we counted *54* DCO offspring.
+- An expected count is an average predicted by a model.
+- An average can fall between whole numbers.
+
+Keep *67.5* in the calculation. Rounding it to 68 would change the answer.
+
+=== layout: one-panel
+
+# Observed Versus Expected
+
+@body
+
+| DCO Count | Offspring |
+| --- | --- |
+| Observed in the table | 54 |
+| Expected under independence | 67.5 |
+
+Did we observe more doubles or fewer doubles than independence predicts?
+How much of the prediction did we observe?
+
+=== include: interference_steps.djot
+
+=== layout: one-panel
+
+# Calculate Coincidence
+
+@body
+
+[*Step 4: Divide Observed by Expected*]{color=#003FFF}
+
+$$
+\mathrm{CoC} = \frac{O_{\mathrm{DCO}}}{E_{\mathrm{DCO}}} = \frac{54}{67.5} = 0.80
+$$
+
+- We observed *80% of the expected doubles*.
+- Both numbers are offspring counts, so the units cancel.
+- A coincidence of 1 would mean observed = expected.
+
+=== layout: one-panel
+
+# Calculate Interference
+
+@body
+
+[*Step 5: Subtract from One*]{color=#A719DB}
+
+$$
+I = 1 - \mathrm{CoC} = 1 - 0.80 = 0.20
+$$
+
+- Coincidence tells us the fraction of expected doubles that occurred.
+- Interference tells us the fraction missing relative to that expectation.
+- We observed *20% fewer doubles* than independence predicts.
+
+=== layout: one-panel
+
+# What Does the 20% Refer To?
+
+@body
+
+| Question | Calculation | Result |
+| --- | --- | --- |
+| What fraction of all offspring were DCO? | 54 / 1,800 | 3% |
+| What fraction of expected doubles occurred? | 54 / 67.5 | 80% |
+| What fraction of expected doubles is missing? | (67.5 - 54) / 67.5 | 20% |
+
+The denominator changes with the question. *20% interference* compares doubles with their
+independent expectation; it is not the DCO percentage of all offspring.
+
+=== layout: one-panel
+
+# Enter the Homework Answer
+
+@body
+
+$$
+I = \frac{1}{5} = 0.20 = 20\%
+$$
+
+- For a numeric question asking for percentage interference, enter *20*.
+- For a fraction question, the equivalent answer is *1/5*.
+- Interference has no cM units; it compares two counts.
+
+=== layout: one-panel
+
+# Why Is the Outer Pair 34%?
+
+@body
+
+- The adjacent intervals add to *25 + 15 = 40 cM*.
+- A double crossover can restore the parental combination of the outside genes.
+- Comparing only F and P misses those doubles twice in the interval sum.
+
+$$
+\frac{2 \times 54}{1800} \times 100 = 6\%
+$$
+
+40 - 6 = *34% outer-pair recombination*. The additive map length is still *40 cM*.
+
+=== layout: one-panel
+
+# Check the Outer-Pair Count
+
+@body
+
+| F/P Combination | Genotypes in F/P/W Order | Count |
+| --- | --- | --- |
+| f / p | fpw and fp+ | 194 + 110 |
+| + / + | ++w and +++ | 106 + 202 |
+
+$$
+r_{FP} = \frac{194 + 110 + 106 + 202}{1800} = \frac{612}{1800} = 0.34
+$$
+
+This outer-pair fraction differs from the sum of the two adjacent intervals.
+Use *0.25 and 0.15* to predict independent doubles.
+

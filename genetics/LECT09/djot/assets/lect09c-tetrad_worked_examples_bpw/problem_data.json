@@ -1,0 +1,266 @@
+{
+  "generator_repository": "biology-problems",
+  "generator_revision": "6039b8ad72565b284c9a073060429df8f175545d",
+  "generator_directory": "problems/inheritance-problems/gene_mapping",
+  "recipes": [
+    {
+      "example": "linked two-gene",
+      "seed": 109,
+      "module": "tetrad_unordered_two_gene-find_distance.py",
+      "calls": [
+        "construct_progeny_counts(20, 1000)",
+        "assign_tetrads(classes, \"ab\")"
+      ]
+    },
+    {
+      "example": "three-gene",
+      "module": "tetradlib.py",
+      "call": "generate_progeny_counts(\"a++\", \"bac\", (10, 15, 24), 1200, \"abc\")",
+      "gene_order_answers": [
+        "bac",
+        "cab"
+      ]
+    },
+    {
+      "example": "unlinked two-gene",
+      "seed": 209,
+      "module": "tetrad_unordered_two_gene-test_linkage.py",
+      "calls": [
+        "construct_progeny_counts(\"unlinked\", 10, 1000)",
+        "assign_tetrads(classes, \"de\")"
+      ],
+      "parameter_note": "10 is an internal gene-to-centromere scenario parameter, not a D-E distance."
+    }
+  ],
+  "verification": "Classify each four-spore multiset relative to the supplied parents. Sum counts with exact rational arithmetic; compare three-gene answers with tetrad_solver_lib.",
+  "examples": [
+    {
+      "genes": "ab",
+      "parents": [
+        "++",
+        "ab"
+      ],
+      "total": 1000,
+      "rows": [
+        {
+          "spores": [
+            "++",
+            "++",
+            "ab",
+            "ab"
+          ],
+          "count": 650
+        },
+        {
+          "spores": [
+            "++",
+            "+b",
+            "a+",
+            "ab"
+          ],
+          "count": 340
+        },
+        {
+          "spores": [
+            "+b",
+            "+b",
+            "a+",
+            "a+"
+          ],
+          "count": 10
+        }
+      ],
+      "pairs": {
+        "AB": {
+          "labels": [
+            "PD",
+            "TT",
+            "NPD"
+          ],
+          "totals": {
+            "PD": 650,
+            "NPD": 10,
+            "TT": 340
+          },
+          "distance": 20
+        }
+      }
+    },
+    {
+      "genes": "abc",
+      "parents": [
+        "a++",
+        "+bc"
+      ],
+      "total": 1200,
+      "rows": [
+        {
+          "spores": [
+            "+++",
+            "+++",
+            "abc",
+            "abc"
+          ],
+          "count": 2
+        },
+        {
+          "spores": [
+            "++c",
+            "++c",
+            "ab+",
+            "ab+"
+          ],
+          "count": 5
+        },
+        {
+          "spores": [
+            "++c",
+            "+bc",
+            "a++",
+            "ab+"
+          ],
+          "count": 198
+        },
+        {
+          "spores": [
+            "+b+",
+            "+b+",
+            "a+c",
+            "a+c"
+          ],
+          "count": 11
+        },
+        {
+          "spores": [
+            "+b+",
+            "+bc",
+            "a++",
+            "a+c"
+          ],
+          "count": 282
+        },
+        {
+          "spores": [
+            "+bc",
+            "+bc",
+            "a++",
+            "a++"
+          ],
+          "count": 702
+        }
+      ],
+      "pairs": {
+        "AB": {
+          "labels": [
+            "NPD",
+            "NPD",
+            "TT",
+            "PD",
+            "PD",
+            "PD"
+          ],
+          "totals": {
+            "PD": 995,
+            "NPD": 7,
+            "TT": 198
+          },
+          "distance": 10
+        },
+        "AC": {
+          "labels": [
+            "NPD",
+            "PD",
+            "PD",
+            "NPD",
+            "TT",
+            "PD"
+          ],
+          "totals": {
+            "PD": 905,
+            "NPD": 13,
+            "TT": 282
+          },
+          "distance": 15
+        },
+        "BC": {
+          "labels": [
+            "PD",
+            "NPD",
+            "TT",
+            "NPD",
+            "TT",
+            "PD"
+          ],
+          "totals": {
+            "PD": 704,
+            "NPD": 16,
+            "TT": 480
+          },
+          "distance": 24
+        }
+      }
+    },
+    {
+      "genes": "de",
+      "parents": [
+        "++",
+        "de"
+      ],
+      "total": 1000,
+      "rows": [
+        {
+          "spores": [
+            "++",
+            "++",
+            "de",
+            "de"
+          ],
+          "count": 402
+        },
+        {
+          "spores": [
+            "++",
+            "+e",
+            "d+",
+            "de"
+          ],
+          "count": 200
+        },
+        {
+          "spores": [
+            "+e",
+            "+e",
+            "d+",
+            "d+"
+          ],
+          "count": 398
+        }
+      ],
+      "pairs": {
+        "DE": {
+          "labels": [
+            "PD",
+            "TT",
+            "NPD"
+          ],
+          "totals": {
+            "PD": 402,
+            "NPD": 398,
+            "TT": 200
+          },
+          "rf": 49.8
+        }
+      }
+    }
+  ],
+  "artwork": {
+    "renderer": "genemap_art/asci.py:ascus_svg",
+    "colors": [
+      "#D40000",
+      "#007A00",
+      "#003FFF"
+    ],
+    "derivative_changes": "Compose labeled sets in a 3-column grid. Increase spore label font to 14.5. Separate white text halos from foreground live text for LibreOffice; preserve spore multisets and geometry.",
+    "reference": "genemap_art/README.md and visual_sampler/README.md; public-domain Ascus.gif inspiration retained in SVG metadata."
+  }
+}

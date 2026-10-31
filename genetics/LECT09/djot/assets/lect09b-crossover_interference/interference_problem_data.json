@@ -1,0 +1,200 @@
+{
+  "source_bank": "/Users/vosslab/nsh/PROBLEMS/biology-problems-website/site_docs/genetics/topic08/bbq-three-point_test_cross-find_interence-NUM-questions.txt",
+  "item": 1,
+  "bank_sha256": "a3db050a64692b06eada47cf89f9308e99a30e73885a170ec2fb9e3c8e7c35b9",
+  "item_sha256": "f7d0ab00d2e31a5d6750b05b7d70c227eaa5c583b12b06f68dc524aeb71e785a",
+  "generator": "/Users/vosslab/nsh/PROBLEMS/biology-problems/problems/inheritance-problems/gene_mapping/three-point_test_cross-find_interence.py",
+  "generator_revision_at_capture": "6039b8ad72565b284c9a073060429df8f175545d",
+  "generator_sha256": "ace4cca5fb23cf91a37ba74de1f11552dbcbe1716a8249d92f050027ab8d82a6",
+  "provenance_note": "Existing published-bank item; revision records the generator checkout at capture, not an inferred historical generation seed.",
+  "column_order": "FPW",
+  "gene_order": "FWP",
+  "traits": {
+    "F": "fuzzy",
+    "P": "prickly",
+    "W": "waxy"
+  },
+  "trait_descriptions": [
+    "Gene F is linked with the 'fuzzy' phenotype. A fruit fly that is homozygous recessive for Gene F is covered in a dense layer of hairs, giving it a soft appearance.",
+    "Gene P is correlated with the 'prickly' phenotype. A fruit fly that is homozygous recessive for Gene P is covered with sharp bristles, giving it a spiky texture.",
+    "Gene W is affiliated with the 'waxy' phenotype. A fruit fly that is homozygous recessive for Gene W has a thick protective layer that is water resistant and opague."
+  ],
+  "rows": [
+    {
+      "phenotype": "fuzzy, prickly, waxy",
+      "genotype": "fpw",
+      "count": 194,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe3df; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #d0f5dc; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ece6ff; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "fuzzy, prickly",
+      "genotype": "fp+",
+      "count": 110,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe3df; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #d0f5dc; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #4f50b1;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "fuzzy, waxy",
+      "genotype": "f+w",
+      "count": 23,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe3df; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #097131;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ece6ff; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "fuzzy",
+      "genotype": "f++",
+      "count": 569,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe3df; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #097131;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #4f50b1;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "prickly, waxy",
+      "genotype": "+pw",
+      "count": 565,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #9c3541;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #d0f5dc; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ece6ff; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "prickly",
+      "genotype": "+p+",
+      "count": 31,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #9c3541;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #d0f5dc; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #4f50b1;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "waxy",
+      "genotype": "++w",
+      "count": 106,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #9c3541;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #097131;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ece6ff; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "wildtype",
+      "genotype": "+++",
+      "count": 202,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #9c3541;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #097131;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #4f50b1;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    }
+  ],
+  "total": 1800,
+  "parents": [
+    "f++",
+    "+pw"
+  ],
+  "double_crossovers": [
+    "f+w",
+    "+p+"
+  ],
+  "given_distances_cM": {
+    "FW": 25,
+    "WP": 15,
+    "FP": 34
+  },
+  "outer_pair_note": "The bank labels FP as 34 cM. Its table gives 34 percent outer-pair recombination; the adjacent-interval sum is 40 cM.",
+  "answer": {
+    "observed_dco": 54,
+    "expected_dco": "135/2",
+    "coincidence": "4/5",
+    "interference": "1/5",
+    "percent": 20
+  },
+  "numeric_answer_tolerance": 0.1,
+  "wording_adjustment": "Replace the original distance/cM numeric-answer tips with interference percentage; preserve the original HTML separately."
+}

@@ -1,0 +1,223 @@
+{
+  "source": "tetradlib.make_progeny_html_table",
+  "source_sha256": "1d80c1749bc74b93a9d296d74168419543c7bc31c413476c5cb8173bd3f56d99",
+  "counts": [
+    {
+      "spores": [
+        "+++",
+        "+++",
+        "abc",
+        "abc"
+      ],
+      "count": 2
+    },
+    {
+      "spores": [
+        "++c",
+        "++c",
+        "ab+",
+        "ab+"
+      ],
+      "count": 5
+    },
+    {
+      "spores": [
+        "++c",
+        "+bc",
+        "a++",
+        "ab+"
+      ],
+      "count": 198
+    },
+    {
+      "spores": [
+        "+b+",
+        "+b+",
+        "a+c",
+        "a+c"
+      ],
+      "count": 11
+    },
+    {
+      "spores": [
+        "+b+",
+        "+bc",
+        "a++",
+        "a+c"
+      ],
+      "count": 282
+    },
+    {
+      "spores": [
+        "+bc",
+        "+bc",
+        "a++",
+        "a++"
+      ],
+      "count": 702
+    }
+  ],
+  "width": 593.359375,
+  "height": 313,
+  "capture_pixels": [
+    1782,
+    939
+  ],
+  "states": [
+    {
+      "asset": "three_gene_homework_0.svg",
+      "completed_pairs": []
+    },
+    {
+      "asset": "three_gene_homework_1.svg",
+      "completed_pairs": [
+        "AB"
+      ]
+    },
+    {
+      "asset": "three_gene_homework_2.svg",
+      "completed_pairs": [
+        "AB",
+        "AC"
+      ]
+    },
+    {
+      "asset": "three_gene_homework_3.svg",
+      "completed_pairs": [
+        "AB",
+        "AC",
+        "BC"
+      ]
+    }
+  ],
+  "cell_bounds": [
+    {
+      "pair": "ab",
+      "x": 315.875,
+      "y": 64.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ac",
+      "x": 378.875,
+      "y": 64.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "bc",
+      "x": 441.875,
+      "y": 64.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ab",
+      "x": 315.875,
+      "y": 100.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ac",
+      "x": 378.875,
+      "y": 100.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "bc",
+      "x": 441.875,
+      "y": 100.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ab",
+      "x": 315.875,
+      "y": 136.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ac",
+      "x": 378.875,
+      "y": 136.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "bc",
+      "x": 441.875,
+      "y": 136.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ab",
+      "x": 315.875,
+      "y": 172.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ac",
+      "x": 378.875,
+      "y": 172.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "bc",
+      "x": 441.875,
+      "y": 172.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ab",
+      "x": 315.875,
+      "y": 208.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ac",
+      "x": 378.875,
+      "y": 208.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "bc",
+      "x": 441.875,
+      "y": 208.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ab",
+      "x": 315.875,
+      "y": 244.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "ac",
+      "x": 378.875,
+      "y": 244.5,
+      "width": 63,
+      "height": 36
+    },
+    {
+      "pair": "bc",
+      "x": 441.875,
+      "y": 244.5,
+      "width": 63,
+      "height": 36
+    }
+  ],
+  "source_html": "three_gene_homework.html",
+  "capture": "3x CSS resolution, quality-90 WebP; live SVG classification labels"
+}

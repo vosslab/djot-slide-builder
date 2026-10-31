@@ -1,5 +1,8 @@
 # Genetics evergreen slides
 
+Evergreen content is used across courses or across more than one week. Content for a single
+lecture belongs with that lecture, including its repeated procedure slides.
+
 Weekly announcements reference these canonical sources with `=== include: repo:genetics/evergreen/<name>.djot`.
 Each weekly master controls visibility with its include's `hidden: true` or `hidden: false`.
 

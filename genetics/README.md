@@ -147,9 +147,40 @@ recorded in the LECT08 review and slide map.
 
 ## Lectures 09 and 10
 
-Eight canonical decks now live in `LECT09/djot/` and `LECT10/djot/`, with current 2026
+Lecture 09B teaches crossover interference with one fixed homework problem and verified older
+reference examples. Six smaller C-H decks give the tetrad topics
+separate homes, with one unordered derivation and ordered tetrads taught last:
+
+| Deck | Topic | Slides |
+| --- | --- | --- |
+| [09B](LECT09/djot/lect09b-crossover_interference.djot) | Crossover Interference | 44 |
+| [09C](LECT09/djot/lect09c-mitotic_crossover.djot) | Mitotic Crossover | 7 |
+| [09D](LECT09/djot/lect09d-yeast_unordered_tetrads.djot) | Yeast and Unordered Tetrads | 14 |
+| [09E](LECT09/djot/lect09e-tetrad_classes_map_distance.djot) | Crossovers and Tetrad Mapping | 29 |
+| [09F](LECT09/djot/lect09f-two_gene_tetrad_mapping.djot) | Two-Gene Tetrad Mapping | 24 |
+| [09G](LECT09/djot/lect09g-three_gene_tetrad_mapping.djot) | Three-Gene Tetrad Mapping | 42 |
+| [09H](LECT09/djot/lect09h-ordered_tetrads_centromeres.djot) | Ordered Tetrads and Centromeres | 27 |
+
+09B preserves the homework's phenotype/allele/count table and teaches 54 observed versus
+67.5 expected doubles, giving 20% interference. Its equation bridges distinguish probabilities,
+counts, coincidence, and interference; the three older datasets remain reference problems.
+The worked chapter, repeated roadmap, and frozen data are local to Lecture 09.
+
+The tetrad examples retain 20 cM for the linked two-gene cross, an unlinked D-E cross, 10/15/24 cM
+and B-A-C/C-A-B for three genes, and 15 cM to the centromere from 150 SDS asci out of 500.
+The three-gene classification slides use the actual homework table with all genes visible
+and cumulative class answers. Calculation slides use readable native count summaries.
+Ordered asci use the generator's original shaded artwork; retained draft diagrams are repaired.
+
+The two mixed masters and earlier conversion/activity sources remain as .djot.retired records.
+Existing asset directories and original ODP/PDF inputs are unchanged. Ordinary builds use saved
+Djot/SVG inputs without BPW or Chromium. The updated in-class handout remains separate.
+The two-gene working-table SVGs can still be rebuilt with `tools/render_tetrad_tables.py`
+and the adjacent saved problem data; the utility retains its original two-gene scope.
+
+Twelve canonical decks now live in `LECT09/djot/` and `LECT10/djot/`, with current 2026
 announcements, source-grounded objectives/takeaways, and unchanged original ODP/PDF inputs.
-These are reviewed conversion drafts with explicit unresolved replacement slides. See
+The updated 09B and C-H decks have no replacement markers; other conversion drafts retain their documented findings. See
 [LECT09_REVIEW.md](LECT09/djot/LECT09_REVIEW.md) and
 [LECT10_REVIEW.md](LECT10/djot/LECT10_REVIEW.md) for findings and validation, and their adjacent
 source maps for source-to-PDF page correspondence. Build with `./build_slides.sh genetics/LECT09/`
