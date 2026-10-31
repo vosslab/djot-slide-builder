@@ -1,3 +1,28 @@
+## 2026-10-28
+
+### Additions
+
+- Create a standalone US Letter Stump the Vibe Coder office-door flyer in `output/pdf/`.
+  The final composition gives the evergreen podcast about 53% of usable page height,
+  led by the title, a host episode thumbnail, AI LLM description, Wednesday evening
+  livestream invitation, and 2.22-inch YouTube QR. Use Atkinson Hyperlegible Next.
+- Recompose the four games as compact white advertisements with vector action scenes,
+  solid-filled light-mode wordmarks, readable promotional hooks, and clean colored
+  1.06-inch QR codes. Remove center logos from game codes. Compare independent cover
+  and two-thumbnail concepts, then select a refined single-thumbnail composition after
+  independent visual review. All five QR destinations decode at 200 and 300 dpi;
+  physical print scanning remains untested. Final review artifacts are in `_temp/stvc-next/`.
+- Restore Dr. Voss' portrait and personal invitation in the podcast section, using the
+  human's wording to emphasize people experimenting together and inviting viewers to join
+  live. Retain the dominant podcast headline and existing podcast/game proportions.
+- Replace the cartoonish episode thumbnail with the more photographic StVC 36 Bad Cell
+  Day hosts and enlarge the main QR to use available space beside the portrait.
+- Regroup the podcast into title/invitation, description, and livestream sections after
+  comparing two upper-page compositions. Independent review prefers the horizontal
+  grouping; reduce the thumbnail to 160 by 90 points and move the 2.22-inch QR alongside
+  the livestream invitation. Preserve the game section pixel-for-pixel; all five QR
+  destinations decode at 200 and 300 dpi after recomposition.
+
 ## 2026-10-27
 
 ### Improvements

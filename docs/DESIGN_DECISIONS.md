@@ -1032,3 +1032,63 @@ mismatch before tracing two exchanges and comparing/counting the resulting offsp
 interval sum is not a claim of 50% recombination. Preserve semantic hue and saturation across
 line/text colors and pale fills, adjusting lightness only. The generator and independent solver
 are used during authoring; normal builds consume fixed Djot and SVG sources.
+
+## StVC print showcase (2026-10-28)
+
+**Decision.** Give the evergreen podcast approximately 53% of usable Letter-page height
+and the four games 47%. Lead with the title, a 2.22-inch YouTube QR, the existing
+StVC 36 "Bad Cell Day" host thumbnail, a personal invitation, and the Wednesday
+livestream invitation. The thumbnail shows the hosts together; restore Dr. Voss' small
+portrait beside the dominant headline to reinforce his personal invitation. Use the
+human's "Check out Dr. Voss' podcast!" and "Watch us build them and see what happens!"
+copy, framing the show as people experimenting together. Preserve Atkinson Hyperlegible
+Next and mixed-case surrounding text.
+
+**Podcast grouping.** Arrange the invitation and title with a secondary portrait at right,
+then a full-width description. A thin teal rule introduces the livestream invitation,
+schedule, and scan instructions at left, with the 160-point QR at right. Reduce the
+episode thumbnail to 160 by 90 points beneath that invitation. Independent review of
+two new upper-page layouts prefers these horizontal groups over a text column beside
+a separate image rail. Keep the section boundary and lower game artwork unchanged;
+render comparison confirms the entire game section is pixel-identical to the approved
+version. These alternatives and QR checks are in `_temp/stvc-grouping/`.
+
+**Games.** Use a compact two-by-two showcase with thin colored rules and white backgrounds.
+Each advertisement has a solid-filled light-mode vector wordmark above a source-derived
+action scene, a clean game QR beside the scene, and 10.5-point promotional copy beneath.
+The scenes show a maze pursuit, plaque blasting, a cooperative climb, and a steroid moving
+toward a porous nucleus. Recolor wordmark text for white paper and remove text outlines
+and duplicate shadow layers; retain recognizable typography, helix, bow, and brand hues.
+
+**Why.** The user superseded the initial game-heavy design with an evergreen podcast focus.
+Independent designers explored a magazine-cover composition and a two-thumbnail editorial
+composition. Both initially compressed game artwork too far. Independent visual reviewers
+selected the refined single-thumbnail composition with larger scenes and clearer game
+copy. One thumbnail limits image coverage while visibly representing the show. The page
+remains predominantly white, with no filled game-card backgrounds. Actual printer ink
+consumption was not measured.
+
+**QR contract.** Use 160 points (2.22 inches) for the main YouTube code and 76 points
+(about 1.06 inches) for each game. Preserve high error correction and four-module quiet
+zones from `qrcode2.py`. Retain the central YouTube icon only; game codes have no embedded
+logos or cleared center patches. Steroid Quest retains QR mask 0.
+All five destinations decode in 200- and 300-dpi renders, including an independent check;
+physical printer/phone scanning has not been performed.
+
+**Colors.** Teal `#00775F` identifies Ms Taq Man; Light orange `#935D00`, Plaque Attack;
+Sky blue `#076DAD`, Bad Cell Day; and Magenta `#C80085`, Steroid Quest. These fixed palette
+colors keep QR modules dark on white while retaining game branding in the illustrations.
+
+**Destinations.** The main QR opens `https://www.youtube.com/@VossLab/streams` for the
+live invitation. Past episodes retain a clickable StVC playlist link in the PDF. The
+channel handle was verified against the playlist owner's channel. The local recording
+schedule is labeled Central based on the Chicago teaching context.
+
+**Artifacts.** `output/pdf/build_stvc_flyer.py` builds the PDF and WebP from saved assets.
+`output/pdf/stvc-flyer-assets/scenes/` contains editable SVGs and vector PDF derivatives;
+`output/pdf/render_stvc_scenes.py` regenerates those derivatives using Chromium outside
+the macOS sandbox. `output/pdf/render_stvc_wordmarks.py` renders the editable wordmarks
+the same way. The saved host thumbnail is `output/pdf/stvc-flyer-assets/episode-hosts.jpg`,
+copied from the existing `0zhh6g-DJFs` episode image. This supersedes the more cartoonish
+`_9HjPmVv_MU` thumbnail at the human's request. Final alternatives and print-review
+evidence are in `_temp/stvc-next/`; earlier explorations remain in `_temp/stvc-concepts/`.

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="39.68503952026367 92.57952880859375 714.3307075500488 300.9543151855469" width="714.3307075500488" height="300.9543151855469" role="img" aria-labelledby="title description"><title id="title">LECT08D source 5 diagram</title><desc id="description">Source diagram, static highlights and masks, with original positioned labels. Amber Bald Conehead wildtype + + + 183 conehead + + c 60 bald + b + 924 bald, conehead + b c 17 amber a + + 17 amber, conehead a + c 643 amber, bald a b + 95 amber, bald, conehead a b c 161 TOTAL 2100 Progeny Phenotypes Progeny Number</desc><defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M0 .028H793.672V496.062H0Z" clip-rule="evenodd" />
+</clipPath>
+<mask id="mask_2">
+<g transform="matrix(.7202622,0,0,.71999999,0,-.027008057)">
+</g>
+</mask>
+<clipPath id="clip_5">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M39.685 102.529H754.015V403.483H39.685Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M0 .028H793.672V496.062H0Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 271.19H761.981V300.983H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 188.134H761.981V215.943H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M23.811 23.13H222.265V52.923H23.811Z" clip-rule="evenodd" />
+</clipPath>
+</defs>
+<g>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M0 496.062H793.672V.027H0V496.062Z" fill="#ffffff" fill-rule="evenodd" />
+<g mask="url(#mask_2)">
+<g transform="matrix(.7202622,0,0,.71999999,0,-.027008057)">
+</g>
+</g>
+</g>
+<g clip-path="url(#clip_5)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M39.742 404.248H750.954V356.938H39.742V404.248Z" fill="#dddddd" fill-rule="evenodd" />
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M232.271 133.001H621.298V105.023H232.271V133.001Z" fill="#dddddd" fill-rule="evenodd" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 403.482H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.685 403.908V131.753" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M233.121 403.908V103.974" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M362.75 403.908V131.753" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M492.435 403.908V131.753" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M622.035 403.908V103.974" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M751.663 403.908V103.974" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M751.663 403.908V103.974" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 356.087H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 328.279H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 300.528H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 271.927H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 244.119H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 216.368H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 188.56H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 159.986H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 132.207H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M232.611 104.399H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M232.611 104.399H752.173" />
+</g>
+<g clip-path="url(#clip_6)">
+<g opacity=".2">
+<g clip-path="url(#clip_7)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 271.218H31.748V300.982H761.953V271.218H396.85Z" fill="#99ff66" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 271.218H31.748V300.982H761.953V271.218H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_8)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 188.163H31.748V215.942H761.953V188.163H396.85Z" fill="#99ff66" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 188.163H31.748V215.942H761.953V188.163H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_9)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M123.024 23.158H23.811V52.922H222.236V23.158H123.024Z" fill="#99ff66" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M123.024 23.158H23.811V52.922H222.236V23.158H123.024Z" />
+</g>
+</g>
+<g id="editable_labels"><text id="label_1" x="267.58599853515625" y="122.41497802734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Amber</text><text id="label_2" x="406.5920104980469" y="122.41497802734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Bald</text><text id="label_3" x="508.7879943847656" y="122.41497802734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Conehead</text><text id="label_4" x="45.79800033569336" y="158.458984375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve" font-style="italic">wildtype</text><text id="label_5" x="292.12701416015625" y="159.27297973632812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_6" x="421.8009948730469" y="159.27297973632812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_7" x="551.4749755859375" y="159.27297973632812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_8" x="710.4710083007812" y="159.27297973632812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">183</text><text id="label_9" x="45.79800033569336" y="186.44998168945312" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">conehead</text><text id="label_10" x="292.12701416015625" y="187.26498413085938" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_11" x="421.8009948730469" y="187.26498413085938" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_12" x="551.4749755859375" y="187.26498413085938" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_13" x="722.281005859375" y="187.26498413085938" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">60</text><text id="label_14" x="45.79800033569336" y="214.44097900390625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">bald</text><text id="label_15" x="292.12701416015625" y="215.2559814453125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_16" x="421.8009948730469" y="215.2559814453125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_17" x="551.4749755859375" y="215.2559814453125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_18" x="710.4710083007812" y="215.2559814453125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">924</text><text id="label_19" x="45.79800033569336" y="242.43199157714844" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">bald, conehead</text><text id="label_20" x="292.12701416015625" y="243.2469940185547" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_21" x="421.8009948730469" y="243.2469940185547" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_22" x="551.4749755859375" y="243.2469940185547" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_23" x="722.281005859375" y="243.2469940185547" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">17</text><text id="label_24" x="45.79800033569336" y="270.4239807128906" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber</text><text id="label_25" x="292.12701416015625" y="271.23797607421875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">a</text><text id="label_26" x="421.8009948730469" y="271.23797607421875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_27" x="551.4749755859375" y="271.23797607421875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_28" x="722.281005859375" y="271.23797607421875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">17</text><text id="label_29" x="45.79800033569336" y="298.41497802734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber, conehead</text><text id="label_30" x="292.12701416015625" y="299.22998046875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">a</text><text id="label_31" x="421.8009948730469" y="299.22998046875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_32" x="551.4749755859375" y="299.22998046875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_33" x="710.4710083007812" y="299.22998046875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">643</text><text id="label_34" x="45.79800033569336" y="326.406005859375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber, bald</text><text id="label_35" x="292.12701416015625" y="327.22100830078125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">a</text><text id="label_36" x="421.8009948730469" y="327.22100830078125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_37" x="551.4749755859375" y="327.22100830078125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_38" x="722.281005859375" y="327.22100830078125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">95</text><text id="label_39" x="45.79800033569336" y="354.39801025390625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber, bald, conehead</text><text id="label_40" x="292.12701416015625" y="355.21197509765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">a</text><text id="label_41" x="421.8009948730469" y="355.21197509765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_42" x="551.4749755859375" y="355.21197509765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_43" x="710.4710083007812" y="355.21197509765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">161</text><text id="label_44" x="398.239013671875" y="383.2039794921875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">TOTAL</text><text id="label_45" x="698.718994140625" y="383.2039794921875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">2100</text><text id="label_46" x="97.1259994506836" y="113.06900024414062" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Progeny</text><text id="label_47" x="80.47699737548828" y="131.85699462890625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Phenotypes</text><text id="label_48" x="647.7940063476562" y="113.06900024414062" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Progeny</text><text id="label_49" x="650.2139892578125" y="131.85699462890625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Number</text></g></svg>

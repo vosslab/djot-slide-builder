@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="39.68503952026367 99.2409439086914 714.3307075500488 300.95433807373047" width="714.3307075500488" height="300.95433807373047" role="img" aria-labelledby="title description"><title id="title">LECT08D source 20 diagram</title><desc id="description">Source diagram, static highlights and masks, with original positioned labels. Bald Conehead wildtype + + 183 conehead + c 60 bald b + 924 bald, conehead b c 17 amber + + 17 amber, conehead + c 643 amber, bald b + 95 amber, bald, conehead b c 161 TOTAL 2100 Progeny Phenotypes Progeny Number ignore this gene</desc><defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M0 .028H793.672V496.062H0Z" clip-rule="evenodd" />
+</clipPath>
+<mask id="mask_2">
+<g transform="matrix(.7202622,0,0,.71999999,0,-.027008057)">
+</g>
+</mask>
+<clipPath id="clip_5">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M39.685 95.867H754.015V396.821H39.685Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M0 .028H793.672V496.062H0Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 264.528H761.981V294.321H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 181.473H761.981V209.282H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M23.811 22.79H222.265V52.583H23.811Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_10">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 237.202H761.981V265.011H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_11">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 322.242H761.981V350.051H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_12">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 124.355H761.981V152.164H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_13">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M31.748 209.281H761.981V237.09H31.748Z" clip-rule="evenodd" />
+</clipPath>
+<clipPath id="clip_14">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M23.783 59.243H257.471V89.036H23.783Z" clip-rule="evenodd" />
+</clipPath>
+</defs>
+<g>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M0 496.062H793.672V.027H0V496.062Z" fill="#ffffff" fill-rule="evenodd" />
+<g mask="url(#mask_2)">
+<g transform="matrix(.7202622,0,0,.71999999,0,-.027008057)">
+</g>
+</g>
+</g>
+<g clip-path="url(#clip_5)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M39.742 397.586H750.954V350.276H39.742V397.586Z" fill="#dddddd" fill-rule="evenodd" />
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M232.271 126.339H621.298V98.361H232.271V126.339Z" fill="#dddddd" fill-rule="evenodd" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 396.821H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.685 397.246V125.092" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M233.121 397.246V97.312" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M362.75 397.246V125.092" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M492.435 397.246V125.092" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M622.035 397.246V97.312" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M751.663 397.246V97.312" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M751.663 397.246V97.312" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 349.426H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 321.618H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 293.867H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 265.265H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 237.457H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 209.706H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 181.898H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 153.325H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M39.175 125.545H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M232.611 97.738H752.173" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width=".9793" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M232.611 97.738H752.173" />
+</g>
+<g clip-path="url(#clip_6)">
+<g opacity=".2">
+<g clip-path="url(#clip_7)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 264.556H31.748V294.32H761.953V264.556H396.85Z" fill="#99ff66" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 264.556H31.748V294.32H761.953V264.556H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_8)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 181.501H31.748V209.281H761.953V181.501H396.85Z" fill="#99ff66" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 181.501H31.748V209.281H761.953V181.501H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_9)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M123.024 22.818H23.811V52.582H222.236V22.818H123.024Z" fill="#99ff66" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M123.024 22.818H23.811V52.582H222.236V22.818H123.024Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_10)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 237.231H31.748V265.01H761.953V237.231H396.85Z" fill="#800080" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 237.231H31.748V265.01H761.953V237.231H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_11)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 322.27H31.748V350.049H761.953V322.27H396.85Z" fill="#800080" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 322.27H31.748V350.049H761.953V322.27H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_12)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 124.383H31.748V152.163H761.953V124.383H396.85Z" fill="#800080" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 124.383H31.748V152.163H761.953V124.383H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_13)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M396.85 209.309H31.748V237.089H761.953V209.309H396.85Z" fill="#800080" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M396.85 209.309H31.748V237.089H761.953V209.309H396.85Z" />
+<g opacity=".2">
+<g clip-path="url(#clip_14)">
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M140.627 59.271H23.783V89.035H257.443V59.271H140.627Z" fill="#800080" fill-rule="evenodd" />
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M140.627 59.271H23.783V89.035H257.443V59.271H140.627Z" />
+<path transform="matrix(1,0,0,-1,0,496.063)" d="M297.383 125.432H232.696V403.454H362.041V125.432H297.383Z" fill="#330000" fill-rule="evenodd" />
+<path transform="matrix(1,0,0,-1,0,496.063)" stroke-width="1.44564" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#333333" d="M297.383 125.432H232.696V403.454H362.041V125.432H297.383Z" />
+</g>
+</g>
+<g id="editable_labels"><text id="label_1" x="406.5920104980469" y="129.07699584960938" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Bald</text><text id="label_2" x="508.7879943847656" y="129.07699584960938" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Conehead</text><text id="label_3" x="45.79800033569336" y="165.12100219726562" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve" font-style="italic">wildtype</text><text id="label_4" x="421.8009948730469" y="165.93597412109375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_5" x="551.4749755859375" y="165.93597412109375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_6" x="710.4710083007812" y="165.93597412109375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">183</text><text id="label_7" x="45.79800033569336" y="193.11199951171875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">conehead</text><text id="label_8" x="421.8009948730469" y="193.927001953125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_9" x="551.4749755859375" y="193.927001953125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_10" x="722.281005859375" y="193.927001953125" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">60</text><text id="label_11" x="45.79800033569336" y="221.10299682617188" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">bald</text><text id="label_12" x="421.8009948730469" y="221.91799926757812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_13" x="551.4749755859375" y="221.91799926757812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_14" x="710.4710083007812" y="221.91799926757812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">924</text><text id="label_15" x="45.79800033569336" y="249.09498596191406" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">bald, conehead</text><text id="label_16" x="421.8009948730469" y="249.9099884033203" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_17" x="551.4749755859375" y="249.9099884033203" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_18" x="722.281005859375" y="249.9099884033203" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">17</text><text id="label_19" x="45.79800033569336" y="277.08599853515625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber</text><text id="label_20" x="421.8009948730469" y="277.9010009765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_21" x="551.4749755859375" y="277.9010009765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_22" x="722.281005859375" y="277.9010009765625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">17</text><text id="label_23" x="45.79800033569336" y="305.0769958496094" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber, conehead</text><text id="label_24" x="421.8009948730469" y="305.8919677734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_25" x="551.4749755859375" y="305.8919677734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_26" x="710.4710083007812" y="305.8919677734375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">643</text><text id="label_27" x="45.79800033569336" y="333.0689697265625" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber, bald</text><text id="label_28" x="421.8009948730469" y="333.88299560546875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_29" x="551.4749755859375" y="333.88299560546875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">+</text><text id="label_30" x="722.281005859375" y="333.88299560546875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">95</text><text id="label_31" x="45.79800033569336" y="361.05999755859375" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">amber, bald, conehead</text><text id="label_32" x="421.8009948730469" y="361.875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">b</text><text id="label_33" x="551.4749755859375" y="361.875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">c</text><text id="label_34" x="710.4710083007812" y="361.875" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">161</text><text id="label_35" x="398.239013671875" y="389.8659973144531" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">TOTAL</text><text id="label_36" x="698.718994140625" y="389.8659973144531" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">2100</text><text id="label_37" x="97.1259994506836" y="119.73098754882812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Progeny</text><text id="label_38" x="80.47699737548828" y="138.51998901367188" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Phenotypes</text><text id="label_39" x="647.7940063476562" y="119.73098754882812" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Progeny</text><text id="label_40" x="650.2139892578125" y="138.51998901367188" font-family="Arial" font-size="18.548486709594727" fill="#000000" xml:space="preserve">Number</text><text id="label_41" x="267.052001953125" y="215.51898193359375" font-family="Arial" font-size="18.0" fill="#ffffff" xml:space="preserve">ignore</text><text id="label_42" x="277.1719970703125" y="238.84799194335938" font-family="Arial" font-size="18.0" fill="#ffffff" xml:space="preserve">this</text><text id="label_43" x="277.1719970703125" y="262.177001953125" font-family="Arial" font-size="18.0" fill="#ffffff" xml:space="preserve">gene</text></g></svg>

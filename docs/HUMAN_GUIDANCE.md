@@ -610,3 +610,44 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Keep semantic color hues and saturation stable across tables, diagrams, and number lines;
   vary lightness for readable fills. The instructor clarified that saturation changes, rather
   than inconsistent hues, made the earlier color relationship difficult to follow.
+
+## StVC office-door flyer (2026-10-28)
+
+- Make a standalone printable PDF for an office door. Lead with Dr. Voss' Stump the
+  Vibe Coder podcast. Use existing episode thumbnails featuring the hosts to show
+  the show itself and their collaboration. Restore the portrait from `~/nsh/syllabus/`
+  to reinforce the personal invitation, keeping "Stump the Vibe Coder" dominant.
+- Use the human's invitation: "Check out Dr. Voss' podcast!" and "We use AI LLM agents
+  to make science and biology games you can play. Watch us build them and see what happens!"
+  The podcast is about people experimenting with AI together.
+- Invite participation: "Join us live on YouTube!" followed by "Wednesdays, typically
+  around 8 p.m. Central." and "Scan to watch us live, or catch up on past episodes."
+- Enlarge the main QR when space permits. Prefer more photographic host thumbnails;
+  the "Science Throws Hands" thumbnail is more cartoonish than the human likes.
+- Preserve the approved podcast/game balance and two-by-two game section. Recompose
+  the podcast through alignment, grouping, spacing, and natural text wrapping: invitation
+  and dominant title lead into the description, livestream information, and QR. Keep the
+  episode thumbnail relatively small and the portrait recognizable but secondary.
+- Use mixed-case Atkinson Hyperlegible Next for surrounding text and stylized SVG
+  wordmarks for game identities. Preserve original logo proportions.
+- Include Ms Taq Man, Plaque Attack, Isp & Pac: Bad Cell Day, and Steroid Quest from
+  `/Users/vosslab/nsh/TYPESCRIPT`. Plaque Attack replaces the early Fold Spacer choice.
+- Put the YouTube logo inside the prominent main QR. Smaller game QR codes may be
+  1 to 1.2 inches square, with colors from [COLOR_PALETTE.md](COLOR_PALETTE.md).
+  Remove logos from the game QR codes: the tiny images add noise.
+- Treat the games as miniature advertisements, with compelling artwork and short hooks
+  explaining the experience. The evergreen podcast receives at least half the page;
+  the four recent games together receive at most half. This supersedes the earlier
+  request for roughly 60% games. Recompose the page rather than simply resizing rows.
+- Explore genuinely different visual concepts through independent designers and reviews;
+  the previous flyer is a content reference, not a layout template.
+- Design primarily for physical printing: predominantly white, generous negative space,
+  no large solid-color fields or filled card backgrounds. Use typography, borders, small
+  accents, and illustrations to distinguish games.
+- Adapt source SVG fills and strokes for light backgrounds, preserving recognizable game
+  identities. Prefer intentionally composed action scenes over copied dark landing pages.
+- Make game wordmarks intentionally light-mode: strong filled lettering, without the
+  pale outlined lettering inherited from dark-mode logos. Improve the games' personality
+  and appeal while reducing their footprint.
+- Judge by whether a passerby would stop, look, and try a game; layout organization alone
+  does not meet the brief. Inspect Letter-size rendering and verify QR functionality.
