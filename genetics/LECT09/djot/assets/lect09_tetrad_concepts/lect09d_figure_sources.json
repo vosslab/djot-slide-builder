@@ -1,0 +1,93 @@
+{
+  "purpose": "Lecture 09D: undistorted mating figures and homework-matched ascus anatomy.",
+  "figures": [
+    {
+      "asset": "yeast_signals.svg",
+      "image_sha256": "d74d5e762e6250e941ecd547b62841a86ff7ed89019f0a18a512e1aad91bb666",
+      "pixel_dimensions": [
+        563,
+        647
+      ],
+      "display_dimensions": [
+        563,
+        647
+      ],
+      "viewport": [
+        650,
+        295
+      ],
+      "stage": 1,
+      "image_position": [
+        55,
+        40
+      ],
+      "sequence": "One stage per slide; earlier states are retained on preceding slides.",
+      "repair": "Replace inherited 1.20 horizontal stretch with equal x/y scales; reposition live labels."
+    },
+    {
+      "asset": "yeast_mating.svg",
+      "image_sha256": "e64adea5330b75b54d2dbd3ad161d1049c4db9f2fd34892e6f8309f542899e24",
+      "pixel_dimensions": [
+        563,
+        647
+      ],
+      "display_dimensions": [
+        563,
+        647
+      ],
+      "viewport": [
+        650,
+        240
+      ],
+      "stage": 2,
+      "image_position": [
+        0,
+        -240
+      ],
+      "sequence": "One stage per slide; earlier states are retained on preceding slides.",
+      "repair": "Replace inherited 1.20 horizontal stretch with equal x/y scales; reposition live labels."
+    },
+    {
+      "asset": "yeast_diploid.svg",
+      "image_sha256": "252566f01a2d13ad41d8a06bb58da3c4933325f7877150275c8e8a4e7c2ac907",
+      "pixel_dimensions": [
+        563,
+        647
+      ],
+      "display_dimensions": [
+        563,
+        647
+      ],
+      "viewport": [
+        650,
+        240
+      ],
+      "stage": 3,
+      "image_position": [
+        0,
+        -420
+      ],
+      "sequence": "One stage per slide; earlier states are retained on preceding slides.",
+      "repair": "Replace inherited 1.20 horizontal stretch with equal x/y scales; reposition live labels."
+    },
+    {
+      "asset": "homework_ascus.svg",
+      "source": "genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_asci.svg",
+      "source_sha256": "f04fb7f2b8d0f4faca08cfead37a04e7845aa86fc63d20b910b7057f6263ca56",
+      "set": 3,
+      "genotypes": [
+        "++c",
+        "+bc",
+        "a++",
+        "ab+"
+      ],
+      "generator": "genemap_art/asci.py:ascus_svg",
+      "simplification": "Schematic allele colors; positions are not meiotic order; no physical scale."
+    }
+  ],
+  "construction_references": [
+    "A_Handbook_of_Biological_Illustration-1988.md: CLARITY; emphasize without distortion.",
+    "Mastering_SVG-2018.md: viewBox and viewport in SVG."
+  ],
+  "delivery": "Self-contained SVG image blocks in native Djot; surrounding prose and section headings stay native."
+}

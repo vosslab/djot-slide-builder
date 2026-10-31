@@ -75,9 +75,106 @@
     ],
     "ordered_generator_html": "ordered_generator_art.html",
     "ordered_generator_colors": {
-      "+": "#845103",
-      "a": "#0e6399"
+      "+": "#894c1b",
+      "a": "#1a6e4e"
     },
-    "ordered_generator_source_sha256": "59e06f880bd3af518d38fe9dce42d676d78e8343168ceb0a7d58736bc0657385"
+    "ordered_generator_source_sha256": "e5a07882fc10d2ad049534e4f6087368efce9786e07009b9cb34e318655aa822",
+    "ordered_generator_function_sha256": "8fdbb5e5e65ff73f9f0ea587d14d3f0ab8d392540a0b3cc4904e24bf6b3fd7cc",
+    "ordered_generator_artwork_revision": "6039b8ad72565b284c9a073060429df8f175545d",
+    "ordered_generator_artwork_note": "Capture the instructor-updated working-tree drawing, including ascus outline, spore shapes, shading, and current allele colors. The numeric problem selection above remains from its original revision. Use the saved HTML and source/function hashes to identify this artwork even when the working-tree changes are uncommitted.",
+    "ordered_generator_capture": {
+      "css_size": [
+        423,
+        62
+      ],
+      "capture_pixels": [
+        1269,
+        186
+      ],
+      "scale": 3,
+      "webp_quality": 90,
+      "allele_cells": [
+        {
+          "x": 43,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 88,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 133,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 178,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 223,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 268,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 313,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        },
+        {
+          "x": 358,
+          "y": 9,
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "files": [
+        {
+          "pattern": "++++aaaa",
+          "set": 1,
+          "sha256": "fbac2226073465993ec3f0cf68fcd0fa6af5805535556505cbd37972723e7db4"
+        },
+        {
+          "pattern": "++aa++aa",
+          "set": 2,
+          "sha256": "1028e2433000b6bcc4c7d2b68c29bc983d6490b14dc154499bfe9b4b44277d43"
+        },
+        {
+          "pattern": "++aaaa++",
+          "set": 3,
+          "sha256": "4f1c8f6dd1a207e838c6522dc1bbf3f7be9581ad2ddf5cbb533cb30f1dcde078"
+        },
+        {
+          "pattern": "aa++++aa",
+          "set": 4,
+          "sha256": "665a881d0cde38207392719b81b8a787e9be0cdfaebdf316b500dfa4c24d8ffe"
+        },
+        {
+          "pattern": "aa++aa++",
+          "set": 5,
+          "sha256": "eed4a9708a8474b3d53091be999c2d69bca615127f6054966d26a089d2789f6e"
+        },
+        {
+          "pattern": "aaaa++++",
+          "set": 6,
+          "sha256": "db78c1de31bcc2b240505177c59b707495fbed29ea0ac83e580ee6119b9430b6"
+        }
+      ]
+    }
   }
 }

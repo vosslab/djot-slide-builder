@@ -78,3 +78,15 @@ deck does not depend on a sibling checkout or silently change its colors.
 Choose text and background colors for their actual role and check the rendered result.
 Perceptual separation does not by itself guarantee readable text contrast.
 See [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) for the instructor's presentation requirements.
+
+## Tetrad classes
+
+| Observed Class | Text/Formula Color | Light Fill |
+| --- | --- | --- |
+| PD | `#935D00` | `#FFE3A3` |
+| TT | `#A719DB` | `#E8CCE6` |
+| NPD | `#007A00` | `#BFE6C0` |
+
+Match class symbols, substituted counts, and separate numerical contributions across E/F/G.
+Keep coefficients, operators, N, and combined totals neutral. Gene/pair colors retain their
+separate meaning. Use course blue for NCO/SCO/DCO definition terms; DCO has several outcomes.

@@ -1,87 +1,132 @@
 # Lecture 09 Review
 
-## 09B homework interference
+## 09H current artwork and opening terms
 
-The approved [plan](../../../docs/archive/lect09b_homework_interference.md) is implemented
-as 44 visible slides in [lect09b-crossover_interference.djot](lect09b-crossover_interference.djot).
-The local worked chapter has 23 slides including three roadmap uses. The closing nine
-reference pages preserve all three older datasets; all 23 preceding Djot slides have explicit
-dispositions in [LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md).
+09H now has 28 slides, with definitions at H3 and five refreshed generator-based figures.
+Keep all six patterns/counts and the 15 cM result. The current C-H inventory is 153 pages.
+See [LECT09H_REVIEW.md](LECT09H_REVIEW.md) for the artwork, page changes, and checks.
 
-### Homework and equation bridges
+## 09E/F/G color and readability
 
-- Freeze numeric-bank item 1 from the named interference generator's existing website bank.
-  [interference_problem_data.json](assets/lect09b-crossover_interference/interference_problem_data.json)
-  records its eight rows, traits, map, answer, hashes, and generator checkout revision at capture.
-  [interference_problem.html](assets/lect09b-crossover_interference/interference_problem.html) and
-  [interference_bank_item.txt](assets/lect09b-crossover_interference/interference_bank_item.txt)
-  preserve the original question and numeric answer. No historical seed is inferred.
-- Keep the phenotype column, three separate colored allele cells, original row order, and total
-  in five native table uses. Mutant fills and colored wild-type symbols match the saved homework;
-  headers use the course tint and black text. Grouped sizing preserves the table's column geometry.
-- Preserve all loci while identifying f++/+pw parents and f+w/+p+ doubles. The separate comparison
-  table explicitly changes from alphabetical F/P/W columns to physical F-W-P order, showing why
-  only W differs from a matching parent. Observed doubles are 23 + 31 = 54.
-- Explain each equation visibly: 25%/15% to 0.25/0.15; multiplication under independence;
-  0.0375 times all 1,800 offspring; fractional expectation 67.5; coincidence 54/67.5 = 0.8;
-  interference 1 - 0.8 = 0.2. Compare the 3%, 80%, and 20% denominators explicitly.
-- Finish with 1/5 = 0.20 = 20% and numeric entry 20. Correct the bank's distance/cM answer tips
-  in the teaching text while preserving the original HTML. Label its 34 outside-pair value as
-  observed recombination, distinct from the 40 cM map interval sum and the adjacent probabilities.
+09E now has 30 pages, including a separate static classification question/answer pair.
+09F/09G remain 24/42 pages. Use large class answers, colored definition terms and equations,
+homework-shaped ascus outcomes, and repaired SVG lettering. Keep the unlinked TT mechanisms
+later in the deck as taught material; remove misleading reference footers from covered recaps.
+All fixed data and calculations are preserved. The current C-H inventory is 153 pages.
+See [LECT09EFG_REVIEW.md](LECT09EFG_REVIEW.md) for page changes, figure/data contracts, and checks.
 
-### Preserved examples and corrections
+## 09D meiosis and figure revision
 
-- Lz/Su/Gl: preserve all 740 counts; 176 outside recombinants become 188 interval contributions
-  after counting six doubles twice. Correct 23.7% truncation to 23.8%. Use 79/740 and 109/740
-  to obtain 8611/740 expected doubles, coincidence 4440/8611, and about 48.4% interference.
-  This replaces the malformed 11.648.5 and contradictory rounded 48.3/48.5%/"no interference" text.
-- A-C-B: preserve all eight counts and phenotype names. Observed and expected doubles are 54,
-  coincidence is one, and interference is zero. Native data gives 23.4% outer-pair recombination;
-  the old chromosome drawing rounded this to 23%. Adjacent intervals still sum to 27 cM.
-- F-G-H: preserve all eight counts, parental phase, reciprocal doubles, both map orientations,
-  8/12 cM intervals, the question, expected 9.6, coincidence 62.5%, and interference 37.5%.
-- Retain the mapping-function, chromatin-packing, and physical/genetic-map artwork. Show the
-  graph and physical map large, with native captions. Correct the euchromatin definition and
-  the unsupported inference that crossover suppression proves stronger interference or gene activity.
+The instructor approved a two-slide split of Products of Meiosis, one or two section dividers,
+undistorted yeast figures, and generator-style ascus artwork. The deck grows from 14 to 17
+visible slides: dividers at D4/D12, split teaching content at D5-6. All original bullet prose,
+cover metadata, photographs, life-cycle figures, and bookends remain.
 
-The biology check used the local Hartl/Cochrane *Genetics: Analysis of Genes and Genomes*
-Markdown book (chromosome interference, mapping functions, physical/genetic distance) and
-the local Genetics textbook section 6.1 on chromatin packaging. These agree with observed/expected
-coincidence, the 2.8%/25% example, and the loose/dense packing distinction.
+The imported mating bitmaps had unequal x/y scales (about 1.20 horizontal stretch).
+Rebuild D9-11 with the same embedded artwork bytes, equal scaling, and live labels; focus
+on one large stage per slide. Earlier states remain on preceding slides. Two short native
+sentences distinguish cell fusion, separate haploid nuclei, and formation of a diploid nucleus.
+
+D6/D14 use set 3 of the fixed three-gene example: ++c, +bc, a++, ab+. Reuse the generator's
+actual sac, four spores, allele colors, and labels, adding ascus/ascospore callouts. The key
+distinguishes mutant/wild-type symbols and schematic colors from observed pigmentation;
+spore positions do not encode meiotic order. Provenance, dimensions, and hashes are in
+[lect09d_figure_sources.json](assets/lect09_tetrad_concepts/lect09d_figure_sources.json).
+
+- [x] Confirm every original bullet survives the split and all other lecture sources are unchanged.
+- [x] Check original art bytes, exact SVG/ODP proportions, PDF within 0.3% export precision,
+  and the four-spore genotype multiset. The inherited 20% horizontal stretch is removed.
+- [x] Pass strict native lint, the existing cover test, and the typography/capacity audits.
+- [x] Export only 09D through the repository CLI outside the sandbox. Source/ODP/PDF agree at 17 pages.
+- [x] Inspect all 17 final pages, including full-size mating and ascus figures. No replacement markers remain.
+- [x] Refresh page ownership, catalog, human guidance, decisions, and changelog.
+
+Evidence: `_temp/yeast_update/` contains the baseline, checks, export logs, inventory, and
+quality-90 review WebPs. Physical projection/pacing and Impress playback are untested.
+No build-engine or generator code changes, new dependencies, or permanent tests are added.
+
+## 09C mitotic crossover expansion
+
+Add five researched teaching steps, bringing 09C from seven to twelve visible slides:
+DNA-repair templates, LOH without chromosome loss, clonal patches, an RB1 second-hit example,
+and twin spots as a research tool. The source ledger, primary-paper links, figure assumptions,
+and rationale are in [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md).
+
+Retain both original twin-spot pages. Clarify repair before the next mitosis, remove the
+unsupported universal frequency ceiling, and update objectives/takeaways. Three original
+static SVGs keep the new diagrams editable; native DOI citations are visible and clickable.
+
+Strict lint, the existing 09C cover check, SVG checks, both possible segregation outcomes,
+and unchanged-other-source checks pass. Source/ODP/PDF agree at twelve pages; all exported
+pages are visually reviewed. No replacement markers, capacity concerns, or typography
+findings remain. Physical projection/pacing and Impress playback are untested.
+
+The 09B and tetrad records below describe their earlier updates. The current C-H inventory
+is 153 visible slides after the 09C-E and 09H updates; the original reorganization had 143.
+
+
+## 09B two generated examples
+
+The instructor requested removal of the reference problems and a second generated example.
+[lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) now has 46 visible pages:
+the original F-W-P homework example, unchanged mapping/chromatin context, and an A-J-E practice
+example. The previous reference section and all Lz/Su/Gl, A-C-B, and F-G-H questions/answers
+are absent from the active deck. The earlier [plan](../../../docs/archive/lect09b_homework_interference.md)
+records the superseded 44-page version; the source map records the explicit removals.
+
+### Homework presentation and teaching steps
+
+- Keep the first generated item unchanged: F-W-P, 1,800 offspring, 54 observed doubles,
+  67.5 expected, 80% coincidence, and 20% interference. Its visible equation bridges remain.
+- Use numeric-bank item 11 from the same interference generator for the second example:
+  A/E/J table columns, A-J-E order, 7,000 offspring, parents a+j/+e+, and doubles a++/+ej.
+  The observed sum is 47 + 23 = 70. Adjacent probabilities 0.16 and 0.25 predict 280 doubles.
+  Coincidence is 70/280 = 25%; interference is 75%, or 3/4. This contrast reinforces that
+  coincidence and interference are different answers.
+- Save the exact generated question, original HTML, hashes, traits, counts, map, and answer in
+  [interference_second_problem_data.json](assets/lect09b-crossover_interference/interference_second_problem_data.json),
+  [interference_second_problem.html](assets/lect09b-crossover_interference/interference_second_problem.html), and
+  [interference_second_bank_item.txt](assets/lect09b-crossover_interference/interference_second_bank_item.txt).
+  The recorded generator revision is the checkout at capture; no historical seed is inferred.
+- Preserve all three genes and the original phenotype column, row order, allele colors, counts,
+  and totals in eight native table states: five first-example and three second-example uses.
+  Keep four local roadmap repetitions. The new comparison uses three columns so its headings
+  remain readable. The separate DCO comparison explicitly uses physical A-J-E order.
+- Ask for a solution before revealing the parents, doubles, expected count, coincidence, and
+  interference on successive slides. Close by comparing the 20% and 75% examples.
+  Correct numeric-answer units and outside-pair labels in teaching text, preserving original HTML.
 
 ### Verification and limits
 
-- [x] Independently derive all four datasets' class identities, interval frequencies, expected
-  counts, and interference using exact rational arithmetic; compare the new answer to the bank.
-- [x] Verify every phenotype/genotype/count/fill in all five native homework tables, the original
-  frozen item hash, three local roadmap uses, eight-master discovery, and unchanged other sources.
-- [x] Pass strict native lint and 13 focused include/09B-cover tests (87 deselected).
-  Run the advisory typography audit: zero findings.
-- [x] Export only 09B using the repository CLI with LibreOffice outside the sandbox.
-  Source, ODP, and PDF all have 44 visible pages; no authored or rendered replacement markers remain.
-- [x] Inspect all 44 PDF pages in eight quality-90 contact sheets and full-size checks of data
-  tables, gene-order comparisons, formulas, repaired context figures, and reference answers.
-- [x] Accept the eight readable table sizing advisories: five main tables at 19 pt and three
-  reference tables at 19.5 pt. All exceed the instructor's 17 pt review threshold. No figure
-  readability or citation-capacity finding remains.
-- [x] Preserve native selectable cover text, unchanged date/Chapter 8, local lecture ownership,
-  original ODP/PDF inputs, and all other active Lecture 09 sources.
+- [x] Independently derive both examples from all eight genotype counts using exact fractions;
+  verify parental/DCO identities, middle-gene changes, adjacent probabilities, expected counts,
+  coincidence, interference, and agreement with the original generated numeric answers.
+- [x] Verify every native table phenotype, genotype, count, allele fill, total, and row order.
+  Check frozen-item hashes, four roadmap uses, and eight-master discovery.
+- [x] Confirm the first example, earlier concept/context content, takeaways, all other lecture
+  sources, and existing frozen data are unchanged. Confirm all reference problems are removed.
+- [x] Pass strict native lint and 13 focused include/09B cover tests (87 deselected).
+  The advisory typography audit has zero findings. Eight readable table advisories remain,
+  all at 19 pt, above the instructor's 17 pt review threshold.
+- [x] Export only 09B through the repository CLI with LibreOffice outside the sandbox.
+  Djot, ODP, and PDF agree at 46 pages, with no authored/rendered replacement markers.
+- [x] Inspect the new practice sequence, full-size homework table, comparison table, and closing
+  pages. Review the final exported deck; cover text remains selectable and metadata unchanged.
+- [x] Update the current page map/catalog, guidance, decisions, and changelog. Original source
+  presentations and prior frozen reference data remain historical evidence.
 
-Review artifacts and one-time authoring/check scripts are in `_temp/interference_bpw/`.
-No renderer changes, new dependencies, permanent tests, or generator/website edits are needed.
-Answers advance through separate slides; physical projection/pacing and Impress click playback
-were not tested. Announcement/schedule/import checklist sections are unchanged and not applicable.
+All support files are local to Lecture 09. Builds use saved Djot/data without the BPW checkout
+or a browser. Review artifacts and one-time checks are in `_temp/interference_second/`.
+Physical projection/pacing and Impress click playback remain untested; answers use separate slides.
 
 The tetrad review below describes the earlier reorganization, when 09B was untouched.
-Its earlier 09B hash statements and initial-conversion findings are historical; this section
-records their current resolution. Lecture 09A and C-H remain unchanged in this update.
-
+Its old 09B hash statements and initial-conversion findings are historical. The 09B update left other decks unchanged; the later 09C addition is recorded above.
 
 ## Six Topic Decks
 
 The approved reorganization replaces the overlapping 62-slide introduction and 90-slide worked
 deck with six independently buildable C-H decks. Lecture 09B remains crossover interference.
-The six new decks contain 143 visible slides; each has its own cover, objectives, takeaways,
+The six decks originally contained 143 visible slides, now 153 after the 09C-E and 09H updates; each has its own cover, objectives, takeaways,
 and ending. The two mixed masters are preserved with a pre_split.djot.retired suffix.
 Earlier full introduction/activity retirements and all original ODP/PDF inputs remain intact.
 
@@ -91,16 +136,16 @@ pre-split master retains its historical include path.
 
 | Deck | Topic | Slides | Source |
 | --- | --- | --- | --- |
-| 09C | Mitotic Crossover | 7 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
-| 09D | Yeast and Unordered Tetrads | 14 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
-| 09E | Crossovers and Tetrad Mapping | 29 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
+| 09C | Mitotic Crossover | 12 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
+| 09D | Yeast and Unordered Tetrads | 17 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
+| 09E | Crossovers and Tetrad Mapping | 30 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
 | 09F | Two-Gene Tetrad Mapping | 24 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |
 | 09G | Three-Gene Tetrad Mapping | 42 | [lect09g-three_gene_tetrad_mapping.djot](lect09g-three_gene_tetrad_mapping.djot) |
-| 09H | Ordered Tetrads and Centromeres | 27 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
+| 09H | Ordered Tetrads and Centromeres | 28 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
 
 ### Teaching Ownership and Coverage
 
-- 09C keeps the short mitotic-recombination topic and twin-spot illustrations.
+- 09C keeps the twin-spot illustrations and adds repair, LOH, mosaics, cancer, and research applications.
 - 09D owns yeast mating, haploid/diploid stages, the ascus, and four meiotic products.
 - 09E owns observed PD/NPD/TT versus NCO/SCO/DCO histories, independent assortment,
   linkage expectations, recombinant-spore counting, and the unordered distance derivation.
@@ -185,7 +230,7 @@ and the previously verified problem records.
 - [x] Preserve gene/class colors and the shared rainbow roadmaps: five unordered and two
   ordered uses. Check progressive classifications and cumulative pair distances.
 - [x] Finish with no typography findings in C-H. The only new-deck capacity advisory is
-  09D page 4 at 19.25 pt, above the instructor's 17 pt review threshold and visually readable.
+  the former 09D page 4 at 19.25 pt; the later approved split removes this advisory.
   The former three-gene small-table advisories are eliminated. Existing A/B typography and
   replacement findings remain outside this reorganization.
 - [x] Update documentation, current page ownership, historical source links, and the changelog.

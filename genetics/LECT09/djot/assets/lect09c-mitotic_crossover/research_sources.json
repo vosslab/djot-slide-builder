@@ -1,0 +1,73 @@
+{
+  "purpose": "Five concept-sized additions for upper-level genetics; illustrations are original conceptual SVGs embedded through native Djot image blocks.",
+  "added_slide_titles": [
+    "Repair Starts with a Matching Copy",
+    "Loss of Heterozygosity",
+    "One Event Can Make a Patch",
+    "LOH Can Supply a Second Hit",
+    "Twin Spots Can Test Gene Function"
+  ],
+  "clarifications": [
+    "Mitotic recombination refers to cycling cells; DNA repair can precede the next mitosis.",
+    "Remove the unsupported universal once-per-million upper limit. Rates depend on assay and context.",
+    "LOH is an allelic-state change, not necessarily chromosome loss; the illustrated crossover outcome is conditional on segregation.",
+    "Cancer and clone-growth examples describe possibilities, not inevitable outcomes."
+  ],
+  "assets": {
+    "repair_templates.svg": "Matching sister versus homolog; sequence-template arrow is not a crossover.",
+    "loh_outcome.svg": "Starting G1 diploid cell and two postmitotic diploid daughters; replicated intermediate omitted; two reciprocal recombinants and two intact chromatids represented by the final daughter chromosome colors.",
+    "clonal_patches.svg": "Conceptual clones within a heterozygous tissue; counts and positions are not data."
+  },
+  "sources": [
+    {
+      "authors": "Johnson and Jasin",
+      "year": 2000,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC313931/",
+      "doi": "10.1093/emboj/19.13.3398",
+      "supports": "Sister-template repair and preference for non-crossover products."
+    },
+    {
+      "authors": "Hagstrom and Dryja",
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10077618/",
+      "doi": "10.1073/pnas.96.6.2952",
+      "supports": "Somatic recombination with distal homozygosity and retained proximal heterozygosity in retinoblastomas."
+    },
+    {
+      "authors": "Graf",
+      "year": 1995,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7875256/",
+      "doi": "10.1007/BF01929364",
+      "supports": "Cell-lineage patches and the effect of developmental timing on spot sizes."
+    },
+    {
+      "authors": "Cavenee et al.",
+      "year": 1983,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6633649/",
+      "doi": "10.1038/305779a0",
+      "supports": "Somatic homozygosity for mutant RB1 alleles through chromosomal mechanisms."
+    },
+    {
+      "authors": "Griffin et al.",
+      "year": 2009,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2720837/",
+      "doi": "10.1038/nmeth.1349",
+      "supports": "Paired daughter-lineage labeling and comparisons of proliferation, shape, and viability."
+    }
+  ],
+  "drawing_references": [
+    "SVG skill corpus: A Handbook of Biological Illustration, Clarity section.",
+    "SVG skill corpus: Mastering SVG, viewBox and viewport section."
+  ],
+  "visual_contract": {
+    "viewBox": "Per-file intrinsic dimensions; aspect ratio preserved.",
+    "colors": {
+      "A_lineage": "#24578F",
+      "a_lineage": "#B74300",
+      "heterozygous_background": "#DCE2E8"
+    },
+    "labels": "Live SVG text; slide titles and teaching prose remain native Djot.",
+    "scale": "Conceptual diagrams, not to scale.",
+    "resources": "Static vectors with unique IDs, internal markers, no external resources."
+  }
+}

@@ -26,19 +26,19 @@ color-theme: genetics
 
 === include: lect09f2-two_gene_unlinked.djot
 
-=== layout: reference
+=== layout: one-panel
 
 # Unordered Tetrad Mapping Reference
 
 @body
 
-- PD and NPD are defined by the given parental combinations.
-- Linked genes: PD is much greater than NPD.
-- Unlinked genes: PD and NPD are approximately equal.
-- TT and NPD below are counts; N is the total number of tetrads.
+- [PD]{color=#935D00} and [NPD]{color=#007A00} are defined by the given parental combinations.
+- Linked genes: [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}.
+- Unlinked genes: [PD]{color=#935D00} and [NPD]{color=#007A00} are approximately equal.
+- [TT]{color=#A719DB} and [NPD]{color=#007A00} below are counts; N is the total number of tetrads.
 
 $$
-D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + 3\textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100 \;\mathrm{cM}
 $$
 
 === layout: bookend
@@ -49,7 +49,7 @@ $$
 
 - Use parental allele combinations to classify tetrads, not the size of a set.
 - The linked A-B example gives 20 cM; its observed RF is 18%.
-- The D-E example is unlinked: PD and NPD are approximately equal.
+- The D-E example is unlinked: [PD]{color=#935D00} and [NPD]{color=#007A00} are approximately equal.
 - Do not apply the linked-gene map correction to the unlinked example.
 
 === layout: theend

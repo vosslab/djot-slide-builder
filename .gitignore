@@ -49,3 +49,20 @@ import_report.json
 
 # Editable original tutorial illustrations are source assets.
 !biostats/LECT08/djot/assets/tutorial_overviews/*.svg
+# Editable original mitotic-crossover teaching diagrams are source assets.
+!genetics/LECT09/djot/assets/lect09c-mitotic_crossover/*.svg
+# Repaired 09D figures and its reused homework ascus are source assets.
+!genetics/LECT09/djot/assets/lect09_tetrad_concepts/yeast_*.svg
+!genetics/LECT09/djot/assets/lect09_tetrad_concepts/homework_ascus.svg
+# Homework-matched E/F/G figures and repaired source lettering.
+!genetics/LECT09/djot/assets/lect09e-tetrad_visuals/*.svg
+!genetics/LECT09/djot/assets/lect09_tetrad_concepts/unlinked_segregation.svg
+!genetics/LECT09/djot/assets/lect09_tetrad_concepts/crossover_histories.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_*.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/unlinked_table_*.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_*.svg
+# Refreshed 09H generator artwork with live teaching labels.
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_asci.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_classes.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_pairs.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_table_*.svg

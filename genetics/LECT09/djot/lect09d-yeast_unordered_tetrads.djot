@@ -32,6 +32,10 @@ color-theme: genetics
 - Tetrad: the four haploid products of one meiosis.
 - Ascospore: one haploid spore inside an ascus.
 
+=== layout: section
+
+# Yeast: Mating and Meiosis
+
 === layout: one-panel
 
 # Products of Meiosis
@@ -41,9 +45,24 @@ color-theme: genetics
 - With Drosophila, mice, peas, people, and other diploid organisms, each offspring represents only one of the four potential gametes generated from a meiosis.
 - Thus, until now, linkage mapping has been from examining the phenotypes of diploid progeny.
   - For such diploid organisms, we do not know the connection between individuals and parental gametes.
+
+=== layout: two-panels
+
+# All Four Products Stay Together
+
+@left
+
 - In contrast, some fungi [*maintain all four haploid products of meiosis in a single sac called an ascus*]{color=#FF33FF}.
 - These haploid cells survive as viable individuals that grow and perpetuate themselves by mitosis.
   - The phenotype of such haploid fungi is a direct representation of their genotype, without complications of dominance.
+
+@right
+
+![One ascus contains four labeled haploid spores](assets/lect09_tetrad_concepts/homework_ascus.svg)
+
+@citation
+
+Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors identify alleles.
 
 === layout: one-panel
 
@@ -83,6 +102,8 @@ color-theme: genetics
 
 ![Haploid Yeast Cells Mate](assets/lect09_tetrad_concepts/yeast_mating.svg)
 
+- The cells join; their two haploid nuclei are still separate.
+
 === layout: one-panel
 
 # Mating Produces a Diploid Cell
@@ -90,6 +111,12 @@ color-theme: genetics
 @body
 
 ![Mating Produces a Diploid Cell](assets/lect09_tetrad_concepts/yeast_diploid.svg)
+
+- The nuclei fuse, producing one diploid a/&#945; cell.
+
+=== layout: section
+
+# From Meiosis to Tetrads
 
 === layout: two-panels
 
@@ -106,20 +133,29 @@ color-theme: genetics
 
 - Formation of an ascus containing all of the four products of a single meiosis.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Why Keep the Four Products Together?
 
-@body
+@left
+
+![The homework ascus with its sac and an ascospore labeled](assets/lect09_tetrad_concepts/homework_ascus.svg)
+
+@right
 
 - Each ascus keeps the four products of a single meiosis together.
 - Each haploid spore can grow by mitosis.
 - Its phenotype directly reveals its genotype; dominance does not hide the alleles.
 - In unordered tetrads, the positions of the four spores do not preserve meiotic order.
 
+@citation
+
+The colored sectors represent alleles in the homework; they are not actual spore pigmentation.
+
 @notes
 
 The yeast mating types a and alpha describe mating compatibility. They are separate from the mutant allele symbols used in the mapping problems.
+Point to each of the four spores. The three characters within one spore are three loci in one haploid genotype. Two copies of each allele occur across these four spores; their positions do not identify the meiotic divisions.
 
 === layout: reference
 

@@ -19,7 +19,7 @@ color-theme: genetics
 @body
 
 - Distinguish crossover histories from observed tetrad classes.
-- Use PD and NPD counts to recognize linkage.
+- Use [PD]{color=#935D00} and [NPD]{color=#007A00} counts to recognize linkage.
 - Explain the different weights in recombination frequency and map distance.
 
 === layout: definitions
@@ -28,9 +28,9 @@ color-theme: genetics
 
 @body
 
-- Parental Ditype (PD): four spores with only the two parental allele combinations.
-- Nonparental Ditype (NPD): four spores with only the two nonparental allele combinations.
-- Tetratype (TT): one spore of each of the four allele combinations.
+- [*Parental Ditype (PD)*]{color=#935D00}: four spores with only the two parental allele combinations.
+- [*Nonparental Ditype (NPD)*]{color=#007A00}: four spores with only the two nonparental allele combinations.
+- [*Tetratype (TT)*]{color=#A719DB}: one spore of each of the four allele combinations.
 
 === layout: definitions
 
@@ -38,9 +38,9 @@ color-theme: genetics
 
 @body
 
-- NCO: a non-crossover meiosis in the interval being studied.
-- SCO: a single-crossover meiosis in that interval.
-- DCO: a double-crossover meiosis in that interval.
+- [*NCO*]{color=#24578F}: a non-crossover meiosis in the interval being studied.
+- [*SCO*]{color=#24578F}: a single-crossover meiosis in that interval.
+- [*DCO*]{color=#24578F}: a double-crossover meiosis in that interval.
 
 === layout: one-panel
 
@@ -51,7 +51,7 @@ color-theme: genetics
 | Labels | What Do They Describe? |
 | --- | --- |
 | NCO, SCO, DCO | How many crossovers occurred in a meiosis |
-| PD, NPD, TT | The allele combinations observed in its four spores |
+| [PD]{color=#935D00}, [NPD]{color=#007A00}, [TT]{color=#A719DB} | The allele combinations observed in its four spores |
 
 A tetrad class does not always tell us its crossover history.
 
@@ -61,11 +61,25 @@ A tetrad class does not always tell us its crossover history.
 
 @body
 
-![Classify All Four Spores](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+![Three tetrad sets to classify](assets/lect09c-tetrad_worked_examples_bpw/two_gene_asci.svg)
+
+Which sets are [PD]{color=#935D00}, [TT]{color=#A719DB}, and [NPD]{color=#007A00}?
 
 @citation
 
 Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use A and B for the wild-type alleles.
+
+=== layout: one-panel
+
+# The Three Classification Answers
+
+@body
+
+![Large classification answers](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
+
+@citation
+
+Parents: ++ / ab. Classify all four spores; the set count does not define its class.
 
 === layout: one-panel
 
@@ -89,9 +103,10 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-- Genes on different chromosomes: PD and NPD are approximately equal.
-- Linked genes: PD is much greater than NPD.
-- TT alone does not establish whether the genes are linked.
+- Genes on different chromosomes: [PD]{color=#935D00} and [NPD]{color=#007A00} are approximately equal.
+- Linked genes: [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}.
+- [TT]{color=#A719DB} alone does not establish whether the genes are linked.
+- Unlinked genes can also give [TT]{color=#A719DB}; we will see how later.
 
 === layout: one-panel
 
@@ -99,7 +114,11 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_016.png)
+![Lecture diagram](assets/lect09e-tetrad_visuals/nco_to_pd.svg)
+
+@citation
+
+Chromosome A/B = homework +; lowercase a/b = mutant alleles. Positions in the ascus are unordered.
 
 === layout: one-panel
 
@@ -107,7 +126,11 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_017.png)
+![Lecture diagram](assets/lect09e-tetrad_visuals/sco_to_tt.svg)
+
+@citation
+
+Chromosome A/B = homework +; lowercase a/b = mutant alleles. Positions in the ascus are unordered.
 
 === layout: one-panel
 
@@ -116,9 +139,13 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-- How can we obtain the [non-parental ditype (NPD)]{color=#00A933} using crossover events?
+- How can we obtain the [non-parental ditype (NPD)]{color=#007A00} using crossover events?
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_018.png)
+![Lecture diagram](assets/lect09e-tetrad_visuals/nco_to_pd.svg)
+
+@citation
+
+Chromosome A/B = homework +; lowercase a/b = mutant alleles. Positions in the ascus are unordered.
 
 === layout: one-panel
 
@@ -127,9 +154,13 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-- Obtain the [non-parental ditype (NPD)]{color=#00A933} using crossover events.
+- Obtain the [non-parental ditype (NPD)]{color=#007A00} using crossover events.
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_019.png)
+![Lecture diagram](assets/lect09e-tetrad_visuals/four_strand_dco_to_npd.svg)
+
+@citation
+
+Chromosome A/B = homework +; lowercase a/b = mutant alleles. Positions in the ascus are unordered.
 
 === layout: one-panel
 
@@ -137,7 +168,7 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-| Crossovers Between Linked Genes | PD, NPD, or TT? |
+| Crossovers Between Linked Genes | [PD]{color=#935D00}, [NPD]{color=#007A00}, or [TT]{color=#A719DB}? |
 | --- | --- |
 | None | ? |
 | One | ? |
@@ -159,7 +190,7 @@ Ask students to distinguish the number of exchanges from the number of chromatid
 
 @citation
 
-Two-strand DCO gives PD; three-strand DCO gives TT; four-strand DCO gives NPD. Three or more crossovers are assumed rare.
+Two-strand DCO gives [PD]{color=#935D00}; three-strand DCO gives [TT]{color=#A719DB}; four-strand DCO gives [NPD]{color=#007A00}. Three or more crossovers are assumed rare.
 
 === layout: one-panel
 
@@ -167,7 +198,7 @@ Two-strand DCO gives PD; three-strand DCO gives TT; four-strand DCO gives NPD. T
 
 @body
 
-![two gene classes](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
 
 - The parents are ++ / ab.
 - In each class, how many of the four spores have a nonparental combination?
@@ -182,7 +213,7 @@ Pause before showing the counts. Ask students to point to the a+ and +b spores. 
 
 @top
 
-![two gene classes](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
 
 @bottom
 
@@ -194,7 +225,7 @@ Pause before showing the counts. Ask students to point to the a+ and +b spores. 
 
 @notes
 
-The two parental combinations are ++ and ab. The two nonparental combinations are a+ and +b. This explains the half-weight for TT when counting recombinant spores. NPD has full weight in this count; the map correction comes later.
+The two parental combinations are ++ and ab. The two nonparental combinations are a+ and +b. This explains the half-weight for [TT]{color=#A719DB} when counting recombinant spores. [NPD]{color=#007A00} has full weight in this count; the map correction comes later.
 
 === layout: one-panel
 
@@ -202,22 +233,22 @@ The two parental combinations are ++ and ab. The two nonparental combinations ar
 
 @body
 
-- Each TT tetrad contributes two recombinant spores; each NPD contributes four.
+- Each [TT]{color=#A719DB} tetrad contributes two recombinant spores; each [NPD]{color=#007A00} contributes four.
 - N tetrads contain 4N spores in total.
 
 $$
-RF = \frac{2TT + 4NPD}{4N} \times 100\%
+RF = \frac{2\textcolor{#A719DB}{\mathrm{TT}} + 4\textcolor{#007A00}{\mathrm{NPD}}}{4N} \times 100\%
 $$
 
 Divide the top and bottom by four.
 
 $$
-RF = \frac{\frac{1}{2}TT + NPD}{N} \times 100\%
+RF = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + \textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100\%
 $$
 
 @notes
 
-Ask where the four went. It cancels; we have not changed what the fraction measures. TT, NPD, and N are tetrad counts throughout. This formula measures the fraction of spores with nonparental combinations.
+Ask where the four went. It cancels; we have not changed what the fraction measures. [TT]{color=#A719DB}, [NPD]{color=#007A00}, and N are tetrad counts throughout. This formula measures the fraction of spores with nonparental combinations.
 
 === layout: one-panel
 
@@ -240,7 +271,7 @@ For linked genes, considering zero, one, or two crossovers. Three or more are as
 
 @notes
 
-Ask the question before reading the answer. Recall the double-crossover diagrams we just followed. PD and TT do not tell us the crossover history by themselves. NPD gives us a way to estimate the hidden doubles.
+Ask the question before reading the answer. Recall the double-crossover diagrams we just followed. [PD]{color=#935D00} and [TT]{color=#A719DB} do not tell us the crossover history by themselves. [NPD]{color=#007A00} gives us a way to estimate the hidden doubles.
 
 === layout: one-panel
 
@@ -252,14 +283,14 @@ For double crossovers, four equally likely second exchanges give:
 
 | Outcome | Expected Share | Estimated Count |
 | --- | --- | --- |
-| [*PD*]{color=#935D00 background-color=#FFE3A3} | One of four | NPD |
-| [*TT*]{color=#A719DB background-color=#E8CCE6} | Two of four | 2NPD |
-| [*NPD*]{color=#007A00 background-color=#BFE6C0} | One of four | NPD |
+| [*PD*]{color=#935D00 background-color=#FFE3A3} | One of four | [NPD]{color=#007A00} |
+| [*TT*]{color=#A719DB background-color=#E8CCE6} | Two of four | 2[NPD]{color=#007A00} |
+| [*NPD*]{color=#007A00 background-color=#BFE6C0} | One of four | [NPD]{color=#007A00} |
 
-NPD is one quarter of the double-crossover count (DCO).
+[NPD]{color=#007A00} is one quarter of the double-crossover count (DCO).
 
 $$
-DCO = NPD + 2NPD + NPD = 4NPD
+DCO = \textcolor{#007A00}{\mathrm{NPD}} + 2\textcolor{#007A00}{\mathrm{NPD}} + \textcolor{#007A00}{\mathrm{NPD}} = 4\textcolor{#007A00}{\mathrm{NPD}}
 $$
 
 @citation
@@ -268,7 +299,7 @@ Model: random chromatid participation in the second exchange; three or more cros
 
 @notes
 
-These are estimates of the double-crossover part of each class, not the total PD and TT counts. With random chromatid participation, the four possible second exchanges give one PD outcome, two TT outcomes, and one NPD outcome. NPD therefore estimates one quarter of the double-crossover tetrads.
+These are estimates of the double-crossover part of each class, not the total [PD]{color=#935D00} and [TT]{color=#A719DB} counts. With random chromatid participation, the four possible second exchanges give one [PD]{color=#935D00} outcome, two [TT]{color=#A719DB} outcomes, and one [NPD]{color=#007A00} outcome. [NPD]{color=#007A00} therefore estimates one quarter of the double-crossover tetrads.
 
 === layout: one-panel
 
@@ -276,17 +307,17 @@ These are estimates of the double-crossover part of each class, not the total PD
 
 @body
 
-- The TT count includes single and double crossovers.
-- We just estimated that 2NPD of the TT tetrads came from doubles.
+- The [TT]{color=#A719DB} count includes single and double crossovers.
+- We just estimated that 2[NPD]{color=#007A00} of the [TT]{color=#A719DB} tetrads came from doubles.
 - Subtract those to estimate the single-crossover count (SCO).
 
 $$
-SCO = TT - 2NPD
+SCO = \textcolor{#A719DB}{\mathrm{TT}} - 2\textcolor{#007A00}{\mathrm{NPD}}
 $$
 
 @notes
 
-Ask why we subtract. The double-crossover tetrads will be counted in DCO, so we must remove them from TT before calling the remaining tetrads singles. Keep the observed classes separate from the estimated crossover histories.
+Ask why we subtract. The double-crossover tetrads will be counted in DCO, so we must remove them from [TT]{color=#A719DB} before calling the remaining tetrads singles. Keep the observed classes separate from the estimated crossover histories.
 
 === layout: one-panel
 
@@ -315,24 +346,24 @@ The map tracks exchanges per chromatid. Each exchange involves two chromatids, s
 Substitute our estimates for singles and doubles.
 
 $$
-\text{Weighted count} = \frac{1}{2}(TT - 2NPD) + 4NPD
+\text{Weighted count} = \frac{1}{2}(\textcolor{#A719DB}{\mathrm{TT}} - 2\textcolor{#007A00}{\mathrm{NPD}}) + 4\textcolor{#007A00}{\mathrm{NPD}}
 $$
 
 $$
-= \frac{1}{2}TT - NPD + 4NPD
+= \frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} - \textcolor{#007A00}{\mathrm{NPD}} + 4\textcolor{#007A00}{\mathrm{NPD}}
 $$
 
 $$
-= \frac{1}{2}TT + 3NPD
+= \frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + 3\textcolor{#007A00}{\mathrm{NPD}}
 $$
 
 Minus one plus four gives three.
 
-NPD still has four recombinant spores; three is a correction weight.
+[NPD]{color=#007A00} still has four recombinant spores; three is a correction weight.
 
 @notes
 
-Walk through the middle line before advancing. The three does not mean that an NPD tetrad has three recombinant spores. It comes from estimating the double crossovers hidden in all three tetrad classes. Ask students to explain the minus one and plus four in words.
+Walk through the middle line before advancing. The three does not mean that an [NPD]{color=#007A00} tetrad has three recombinant spores. It comes from estimating the double crossovers hidden in all three tetrad classes. Ask students to explain the minus one and plus four in words.
 
 === layout: one-panel
 
@@ -345,26 +376,26 @@ Walk through the middle line before advancing. The three does not mean that an N
 - Multiply by 100 to express that map distance in cM.
 
 $$
-D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + 3\textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100 \;\mathrm{cM}
 $$
 
 @notes
 
-TT, NPD, and N are counts, just as in the spore-frequency calculation. Dividing by N averages over the sampled meioses. The chromatid weighting is already included in the numerator. Ask students to identify the weighted count, the averaging step, and the conversion to cM before using the numbers.
+[TT]{color=#A719DB}, [NPD]{color=#007A00}, and N are counts, just as in the spore-frequency calculation. Dividing by N averages over the sampled meioses. The chromatid weighting is already included in the numerator. Ask students to identify the weighted count, the averaging step, and the conversion to cM before using the numbers.
 
-=== layout: reference
+=== layout: one-panel
 
 # Unordered Tetrad Mapping Reference
 
 @body
 
-- PD and NPD are defined by the given parental combinations.
-- Linked genes: PD is much greater than NPD.
-- Unlinked genes: PD and NPD are approximately equal.
-- TT and NPD below are counts; N is the total number of tetrads.
+- [PD]{color=#935D00} and [NPD]{color=#007A00} are defined by the given parental combinations.
+- Linked genes: [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}.
+- Unlinked genes: [PD]{color=#935D00} and [NPD]{color=#007A00} are approximately equal.
+- [TT]{color=#A719DB} and [NPD]{color=#007A00} below are counts; N is the total number of tetrads.
 
 $$
-D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + 3\textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100 \;\mathrm{cM}
 $$
 
 === layout: reference
@@ -391,17 +422,17 @@ $$
 D = 50m
 $$
 
-=== layout: reference
+=== layout: one-panel
 
-# Unlinked Tetrads Reference
+# Unlinked Genes Can Also Give TT
 
 @body
 
-![Unlinked Tetrads Reference](assets/lect09b-tetrads_1_introduction/image_015.png)
+![Two unlinked mechanisms that give TT](assets/lect09e-tetrad_visuals/unlinked_tt.svg)
 
 @citation
 
-Reference, not covered in lecture: unlinked genes can also give TT. The linkage test compares PD with NPD.
+Unlinked genes can also give [TT]{color=#A719DB}. Test linkage by comparing [PD]{color=#935D00} with [NPD]{color=#007A00}. Chromosome A/B = homework +.
 
 === layout: bookend
 
@@ -409,10 +440,10 @@ Reference, not covered in lecture: unlinked genes can also give TT. The linkage 
 
 @body
 
-- PD, NPD, and TT describe the four observed spores; NCO, SCO, and DCO describe exchanges.
-- Double crossovers can give PD, TT, or NPD.
+- [PD]{color=#935D00}, [NPD]{color=#007A00}, and [TT]{color=#A719DB} describe the four observed spores; NCO, SCO, and DCO describe exchanges.
+- Double crossovers can give [PD]{color=#935D00}, [TT]{color=#A719DB}, or [NPD]{color=#007A00}.
 - Observed RF counts recombinant spores; corrected map distance estimates exchanges.
-- Use counts throughout: half TT plus three NPD, divided by total tetrads, times 100.
+- Use counts throughout: half [TT]{color=#A719DB} plus three [NPD]{color=#007A00}, divided by total tetrads, times 100.
 
 === layout: theend
 

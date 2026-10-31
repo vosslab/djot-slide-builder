@@ -26,7 +26,7 @@ color-theme: genetics
 
 === include: lect09g2-gene_order.djot
 
-=== layout: reference
+=== layout: one-panel
 
 # Three-Gene Classification Reference
 
@@ -36,13 +36,17 @@ color-theme: genetics
 
 @citation
 
-Given parents: a++ / +bc. Each row is one set of complete tetrads; classifications depend on the selected pair.
+Gold outline: Set 6 (702) contains only a++ and +bc; it stays PD for every pair. Other sets can change class.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Your Turn: Tetrad Analysis Handout
 
-@body
+@left
+
+![Full second page of the in-class tetrad handout, with three-gene exercises](assets/lect09c-tetrad_worked_examples_bpw/tetrad_handout_page_2.webp)
+
+@right
 
 - Use the updated unordered tetrad handout provided in class.
 - First classify each set and decide whether the genes are linked.
@@ -89,8 +93,9 @@ https://youtu.be/gXUxH1aFRp0
 
 @body
 
-- All three genes stay visible; classify the pair named in the question.
+- Cover the unused gene; classify the pair named in the question.
 - Keep earlier pair classifications when you move to the next pair.
+- Set 6 stays [*PD*]{color=#935D00} for every pair: it contains the original parental genotypes.
 - A-B is 10 cM; A-C is 15 cM; B-C is 24 cM.
 - A is the middle gene. B-A-C and C-A-B describe the same map.
 - The adjacent intervals sum to 25 cM; retain the direct B-C estimate as 24 cM.

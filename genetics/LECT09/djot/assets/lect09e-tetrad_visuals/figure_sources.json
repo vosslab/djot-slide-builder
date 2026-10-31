@@ -1,0 +1,198 @@
+{
+  "scope": "09E/F/G classification readability, homework-shaped asci, and normal SVG lettering.",
+  "class_colors": {
+    "PD": [
+      "#935D00",
+      "#FFE3A3"
+    ],
+    "TT": [
+      "#A719DB",
+      "#E8CCE6"
+    ],
+    "NPD": [
+      "#007A00",
+      "#BFE6C0"
+    ]
+  },
+  "figures": [
+    {
+      "asset": "two_gene_classes_large.svg",
+      "source": "two_gene_asci.svg",
+      "class_font": 76,
+      "classes": [
+        "PD",
+        "TT",
+        "NPD"
+      ],
+      "rows": [
+        {
+          "spores": [
+            "++",
+            "++",
+            "ab",
+            "ab"
+          ],
+          "count": 650
+        },
+        {
+          "spores": [
+            "++",
+            "+b",
+            "a+",
+            "ab"
+          ],
+          "count": 340
+        },
+        {
+          "spores": [
+            "+b",
+            "+b",
+            "a+",
+            "a+"
+          ],
+          "count": 10
+        }
+      ]
+    },
+    {
+      "asset": "unlinked_classes_large.svg",
+      "source": "unlinked_asci.svg",
+      "class_font": 76,
+      "classes": [
+        "PD",
+        "TT",
+        "NPD"
+      ],
+      "rows": [
+        {
+          "spores": [
+            "++",
+            "++",
+            "de",
+            "de"
+          ],
+          "count": 402
+        },
+        {
+          "spores": [
+            "++",
+            "+e",
+            "d+",
+            "de"
+          ],
+          "count": 200
+        },
+        {
+          "spores": [
+            "+e",
+            "+e",
+            "d+",
+            "d+"
+          ],
+          "count": 398
+        }
+      ]
+    },
+    {
+      "asset": "nco_to_pd.svg",
+      "chromosome_source": "genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/image_016.png",
+      "chromosome_sha256": "bef51cbfd5422e041a41a4ac23a51e2392f9a4c5c97daf72fc4e84f87a1c7532",
+      "pixels": [
+        1016,
+        497
+      ],
+      "offset": [
+        0,
+        -70
+      ],
+      "outcome": "PD",
+      "genotypes": [
+        "++",
+        "ab",
+        "++",
+        "ab"
+      ],
+      "crop": "Remove the redundant source heading; replace the old right-hand ascus and caption."
+    },
+    {
+      "asset": "sco_to_tt.svg",
+      "chromosome_source": "genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/image_017.png",
+      "chromosome_sha256": "ced5ece12f57fa83dc989752c32d9bc5aaa6e59dda5966a55841aa685dad74cd",
+      "pixels": [
+        1016,
+        497
+      ],
+      "offset": [
+        0,
+        -70
+      ],
+      "outcome": "TT",
+      "genotypes": [
+        "++",
+        "a+",
+        "+b",
+        "ab"
+      ],
+      "crop": "Remove the redundant source heading; replace the old right-hand ascus and caption."
+    },
+    {
+      "asset": "four_strand_dco_to_npd.svg",
+      "chromosome_source": "genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/image_019.png",
+      "chromosome_sha256": "f39927a999a1935cdeb248de81093e58b4636dcc5051200e0a4f545771c90472",
+      "pixels": [
+        953,
+        462
+      ],
+      "offset": [
+        50,
+        -60
+      ],
+      "outcome": "NPD",
+      "genotypes": [
+        "+b",
+        "a+",
+        "+b",
+        "a+"
+      ],
+      "crop": "Remove the redundant source heading; replace the old right-hand ascus and caption."
+    },
+    {
+      "asset": "unlinked_tt.svg",
+      "chromosome_source": "genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/image_015.png",
+      "chromosome_sha256": "c150b805c09c45ca5ad72983c7ab032fa35e00a1ee5befa2019fe973881816de",
+      "outcome": "TT",
+      "mechanisms": 2,
+      "crop": "Redundant heading band and old right-hand asci/captions.",
+      "genotypes": [
+        "++",
+        "+b",
+        "a+",
+        "ab"
+      ]
+    },
+    {
+      "asset": "genetics/LECT09/djot/assets/lect09_tetrad_concepts/unlinked_segregation.svg",
+      "repair": "Remove per-glyph positioning and the inherited 20% horizontal bitmap stretch; reflow all labels.",
+      "bitmap_sha256": "c1c49f5061bd2b1fc5a822264b5c9b1b5b1871ad611a7cdb3aaa90b84fd05b9e",
+      "pixel_dimensions": [
+        858,
+        508
+      ],
+      "display_dimensions": [
+        858,
+        508
+      ]
+    },
+    {
+      "asset": "genetics/LECT09/djot/assets/lect09_tetrad_concepts/crossover_histories.svg",
+      "repair": "Replace per-glyph x arrays with natural text spacing and the course font; join split Roman numerals."
+    }
+  ],
+  "three_gene_table": "Keep all three genes, original rows/counts/colors/cumulative states; enlarge live class labels from 18 to 22.",
+  "two_gene_table": "render_tetrad_tables.py keeps source data; enlarge Type-column labels from 30 to 40.",
+  "source_boundary": "Original presentations and frozen problem data remain unchanged. New diagrams are conceptual, not to scale.",
+  "references": [
+    "A_Handbook_of_Biological_Illustration-1988.md: CLARITY",
+    "Mastering_SVG-2018.md: viewBox and viewport in SVG"
+  ]
+}

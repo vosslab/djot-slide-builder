@@ -2,6 +2,49 @@
 
 ### Additions
 
+- Refresh 09H's five generator-based ordered-ascus figures with the instructor's updated
+  artwork. Preserve image proportions, align pair brackets to current spore bounds, and
+  keep all fixed patterns/counts and the 15 cM solution. Add colored opening definitions
+  for spore/ascospore, ascus, FDS, and SDS; update the 28-page inventory and artwork provenance.
+  Rebuild ODP/PDF and inspect the definitions, figures, and retained teaching sequence.
+
+- Refine 09G's pairwise tables with static unused-gene covers and a persistent gold outline
+  for Set 6, the 702-tetrad parental reference. Highlight its contribution across all three
+  PD sums and add a full-page preview from the instructor-edited handout. Preserve data,
+  cumulative classifications, results, and 42-slide inventory. Update the shared pair-focus
+  reminder and rebuild F/G; inspect the export and verify masks, proportions, and classifications.
+
+- Revise 09E/F/G for homework-matched class colors and readable answers. Split E6 into
+  static question/answer slides, enlarge labels, color definition terms and all formulas/
+  substitutions, and replace old yellow asci beside retained crossover mechanisms.
+  Repair per-letter SVG positioning and inherited image stretch; enlarge F/G table answers.
+  Keep unlinked TT later as taught material; remove incorrect not-covered footers from covered recaps.
+  Preserve all fixed data, arithmetic, and gene-order results; rebuild/review 30/24/42 pages
+  and verify colors, artwork, equations, labels, existing tests, and clean audits.
+
+- Revise 09D from 14 to 17 slides: split Products of Meiosis with all original prose intact,
+  add two topic dividers, and reuse a genuine homework ascus on two concept slides.
+  Repair the imported horizontal stretch in all three mating figures, preserve the original
+  artwork bytes and labels, and enlarge each stage. Explain cell/nuclear fusion and the
+  homework allele symbols. Rebuild ODP/PDF, review every page, and verify image proportions,
+  genotype identity, source preservation, strict lint, the cover test, and clean audits.
+
+- Expand 09C from seven to twelve slides with five primary-research-backed additions:
+  repair templates, loss of heterozygosity, clonal patches, an RB1 second hit, and twin-spot
+  experiments. Add three original SVG diagrams, DOI citations, and a source/assumption ledger.
+  Keep the original fly examples, clarify repair timing and frequency, and update bookends,
+  page ownership, and the course catalog. Validate SVGs and segregation outcomes, pass strict
+  lint and the existing cover test, and inspect all twelve exported pages; no capacity or
+  typography findings remain. Preserve other lecture sources.
+
+- Replace 09B's three reference problems with a second fixed generated homework example.
+  Keep F-W-P at 20% interference; add A-J-E practice with 7,000 offspring, 70 observed
+  versus 280 expected doubles, 25% coincidence, and 75% interference. Preserve the homework
+  table/colors and reveal the solution in small steps. The deck now has 46 pages, eight
+  native table states, four local roadmaps, and a closing comparison of the two examples.
+  Verify both answers and table data, 13 focused tests, strict lint, and the exported pages;
+  update the source map and explicitly record the instructor-requested removals.
+
 - Implement the homework-matched Lecture 09B interference plan: 44 visible slides, one fixed
   F/P/W bank problem, five native homework-table states, and a local five-step roadmap.
   Explain the probability/count/expectation/coincidence/interference bridges and preserve all

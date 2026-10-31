@@ -33,8 +33,9 @@ Given cross: a++ / +bc. Counts describe complete tetrads. Spore positions carry 
 
 - The cross is a++ / +bc; this gives the parental combinations.
 - Each set still contains four spores from one meiosis.
-- Keep all three genes visible; compare one pair at a time.
-- The same set can change class when the selected pair changes.
+- Cover the unused gene; compare one pair at a time.
+- [*Set 6 (702 tetrads)*]{color=#935D00} contains only the original parents: a++ and +bc.
+- Set 6 stays [*PD*]{color=#935D00} for every pair. Other sets can change class.
 - Keep the set order and all tetrad counts unchanged.
 
 === include: unordered_tetrad_steps.djot
@@ -49,19 +50,19 @@ Given cross: a++ / +bc. Counts describe complete tetrads. Spore positions carry 
 
 @body
 
-![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_0.svg)
+![AB homework table with C covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_question.svg)
 
 For A-B, what class is Set 4?
 
 @citation
 
-Given parents: a++ / +bc. Read A and B only; all three genes remain visible. Count whole tetrads.
+Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD for every pair.
 
 @notes
 
 [*Step 2: Pick A and B*]{color=#B74300}
 
-- Read A and B; keep all three genes visible.
+- Read A and B; C is covered. Set 6 matches the original parents for every pair.
 - Parental combinations for this pair: a+ / +b.
 - Classify every set using all four spores.
 - What class is Set 4?
@@ -72,17 +73,17 @@ Given parents: a++ / +bc. Read A and B only; all three genes remain visible. Cou
 
 @body
 
-![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_1.svg)
+![AB homework table with C covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_answer.svg)
 
-Set 4 is PD for A-B: +b and a+ match the parents. Match the pair, not the count.
+[*Set 4 is PD for A-B:*]{color=#935D00} +b and a+ match the parents. Match the pair, not the count.
 
 @citation
 
-Given parents: a++ / +bc. Read A and B only; all three genes remain visible. Count whole tetrads.
+Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD for every pair.
 
 @notes
 
-- Set 4: +b and a+ match the parents. It is PD for A-B; read only A and B.
+- Set 4: +b and a+ match the parents. It is [PD]{color=#935D00} for A-B; read only A and B.
 - Classify allele combinations, not counts.
 
 === layout: two-panels
@@ -98,7 +99,7 @@ Given parents: a++ / +bc. Read A and B only; all three genes remain visible. Cou
 | 3 | 198 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
 | 4 | 11 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
 | 5 | 282 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
-| 6 | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [*6*]{color=#935D00 background-color=#FFE3A3} | [*702*]{color=#935D00 background-color=#FFE3A3} | [*PD*]{color=#935D00 background-color=#FFE3A3} |
 | [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
 
 Read the A-B classifications from the homework table.
@@ -107,9 +108,9 @@ Read the A-B classifications from the homework table.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- Add all PD counts.
-- Add all NPD counts.
-- Add all TT counts.
+- Add all [PD]{color=#935D00} counts.
+- Add all [NPD]{color=#007A00} counts.
+- Add all [TT]{color=#A719DB} counts.
 - Are the genes linked?
 
 | Pair | Distance (cM) |
@@ -141,10 +142,10 @@ Read the A-B classifications from the homework table.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- PD = 11 + 282 + 702 = 995.
-- NPD = 2 + 5 = 7.
-- TT = 198 = 198.
-- PD is much greater than NPD: *linked*.
+- [PD]{color=#935D00} = 11 + 282 + [*702*]{color=#935D00} = 995.
+- [NPD]{color=#007A00} = 2 + 5 = 7.
+- [TT]{color=#A719DB} = 198 = 198.
+- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
 
 | Pair | Distance (cM) |
 | --- | --- |
@@ -176,7 +177,7 @@ Read the A-B classifications from the homework table.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{\frac{1}{2}(198) + 3(7)}{1200} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}(\textcolor{#A719DB}{198}) + 3(\textcolor{#007A00}{7})}{1200} \times 100 \;\mathrm{cM}
 $$
 
 Use class counts, not the number of sets.
@@ -211,7 +212,7 @@ Read the A-B classifications from the homework table.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{99 + 21}{1200} \times 100
+D = \frac{\textcolor{#A719DB}{99} + \textcolor{#007A00}{21}}{1200} \times 100
 $$
 
 $$
@@ -277,19 +278,19 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @body
 
-![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_1.svg)
+![AC homework table with B covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_question.svg)
 
 For A-C, what class is Set 3?
 
 @citation
 
-Given parents: a++ / +bc. Read A and C only; all three genes remain visible. Count whole tetrads.
+Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD for every pair.
 
 @notes
 
 [*Step 2: Pick A and C*]{color=#B74300}
 
-- Read A and C; keep all three genes visible.
+- Read A and C; B is covered. Set 6 matches the original parents for every pair.
 - Parental combinations for this pair: a+ / +c.
 - Classify every set using all four spores.
 - What class is Set 3?
@@ -300,17 +301,17 @@ Given parents: a++ / +bc. Read A and C only; all three genes remain visible. Cou
 
 @body
 
-![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_2.svg)
+![AC homework table with B covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_answer.svg)
 
-Set 3 is PD for A-C: +c and a+ match the parents. Match the pair, not the count.
+[*Set 3 is PD for A-C:*]{color=#935D00} +c and a+ match the parents. Match the pair, not the count.
 
 @citation
 
-Given parents: a++ / +bc. Read A and C only; all three genes remain visible. Count whole tetrads.
+Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD for every pair.
 
 @notes
 
-- Set 3: +c and a+ match the parents. It is PD for A-C; read only A and C.
+- Set 3: +c and a+ match the parents. It is [PD]{color=#935D00} for A-C; read only A and C.
 - Classify allele combinations, not counts.
 
 === layout: two-panels
@@ -326,7 +327,7 @@ Given parents: a++ / +bc. Read A and C only; all three genes remain visible. Cou
 | 3 | 198 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
 | 4 | 11 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
 | 5 | 282 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
-| 6 | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [*6*]{color=#935D00 background-color=#FFE3A3} | [*702*]{color=#935D00 background-color=#FFE3A3} | [*PD*]{color=#935D00 background-color=#FFE3A3} |
 | [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
 
 Read the A-C classifications from the homework table.
@@ -335,9 +336,9 @@ Read the A-C classifications from the homework table.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- Add all PD counts.
-- Add all NPD counts.
-- Add all TT counts.
+- Add all [PD]{color=#935D00} counts.
+- Add all [NPD]{color=#007A00} counts.
+- Add all [TT]{color=#A719DB} counts.
 - Are the genes linked?
 
 | Pair | Distance (cM) |
@@ -369,10 +370,10 @@ Read the A-C classifications from the homework table.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- PD = 5 + 198 + 702 = 905.
-- NPD = 2 + 11 = 13.
-- TT = 282 = 282.
-- PD is much greater than NPD: *linked*.
+- [PD]{color=#935D00} = 5 + 198 + [*702*]{color=#935D00} = 905.
+- [NPD]{color=#007A00} = 2 + 11 = 13.
+- [TT]{color=#A719DB} = 282 = 282.
+- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
 
 | Pair | Distance (cM) |
 | --- | --- |
@@ -404,7 +405,7 @@ Read the A-C classifications from the homework table.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{\frac{1}{2}(282) + 3(13)}{1200} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}(\textcolor{#A719DB}{282}) + 3(\textcolor{#007A00}{13})}{1200} \times 100 \;\mathrm{cM}
 $$
 
 Use class counts, not the number of sets.
@@ -439,7 +440,7 @@ Read the A-C classifications from the homework table.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{141 + 39}{1200} \times 100
+D = \frac{\textcolor{#A719DB}{141} + \textcolor{#007A00}{39}}{1200} \times 100
 $$
 
 $$
@@ -505,19 +506,19 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @body
 
-![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_2.svg)
+![BC homework table with A covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_question.svg)
 
 For B-C, what class is Set 1?
 
 @citation
 
-Given parents: a++ / +bc. Read B and C only; all three genes remain visible. Count whole tetrads.
+Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD for every pair.
 
 @notes
 
 [*Step 2: Pick B and C*]{color=#B74300}
 
-- Read B and C; keep all three genes visible.
+- Read B and C; A is covered. Set 6 matches the original parents for every pair.
 - Parental combinations for this pair: ++ / bc.
 - Classify every set using all four spores.
 - What class is Set 1?
@@ -528,17 +529,17 @@ Given parents: a++ / +bc. Read B and C only; all three genes remain visible. Cou
 
 @body
 
-![Three-gene homework table](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_3.svg)
+![BC homework table with A covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_answer.svg)
 
-Set 1 is PD for B-C: ++ and bc match the parents. Match the pair, not the count.
+[*Set 1 is PD for B-C:*]{color=#935D00} ++ and bc match the parents. Match the pair, not the count.
 
 @citation
 
-Given parents: a++ / +bc. Read B and C only; all three genes remain visible. Count whole tetrads.
+Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD for every pair.
 
 @notes
 
-- Set 1: ++ and bc match the parents. It is PD for B-C, despite its small count.
+- Set 1: ++ and bc match the parents. It is [PD]{color=#935D00} for B-C, despite its small count.
 - Classify allele combinations, not counts.
 
 === layout: two-panels
@@ -554,7 +555,7 @@ Given parents: a++ / +bc. Read B and C only; all three genes remain visible. Cou
 | 3 | 198 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
 | 4 | 11 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
 | 5 | 282 | [*TT*]{color=#A719DB background-color=#E8CCE6} |
-| 6 | 702 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
+| [*6*]{color=#935D00 background-color=#FFE3A3} | [*702*]{color=#935D00 background-color=#FFE3A3} | [*PD*]{color=#935D00 background-color=#FFE3A3} |
 | [Total]{background-color=#BDD0E4} | [1,200]{background-color=#BDD0E4} | []{background-color=#BDD0E4} |
 
 Read the B-C classifications from the homework table.
@@ -563,9 +564,9 @@ Read the B-C classifications from the homework table.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- Add all PD counts.
-- Add all NPD counts.
-- Add all TT counts.
+- Add all [PD]{color=#935D00} counts.
+- Add all [NPD]{color=#007A00} counts.
+- Add all [TT]{color=#A719DB} counts.
 - Are the genes linked?
 
 | Pair | Distance (cM) |
@@ -597,10 +598,10 @@ Read the B-C classifications from the homework table.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- PD = 2 + 702 = 704.
-- NPD = 5 + 11 = 16.
-- TT = 198 + 282 = 480.
-- PD is much greater than NPD: *linked*.
+- [PD]{color=#935D00} = 2 + [*702*]{color=#935D00} = 704.
+- [NPD]{color=#007A00} = 5 + 11 = 16.
+- [TT]{color=#A719DB} = 198 + 282 = 480.
+- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
 
 | Pair | Distance (cM) |
 | --- | --- |
@@ -632,7 +633,7 @@ Read the B-C classifications from the homework table.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{\frac{1}{2}(480) + 3(16)}{1200} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}(\textcolor{#A719DB}{480}) + 3(\textcolor{#007A00}{16})}{1200} \times 100 \;\mathrm{cM}
 $$
 
 Use class counts, not the number of sets.
@@ -667,7 +668,7 @@ Read the B-C classifications from the homework table.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{240 + 48}{1200} \times 100
+D = \frac{\textcolor{#A719DB}{240} + \textcolor{#007A00}{48}}{1200} \times 100
 $$
 
 $$

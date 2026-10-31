@@ -22,6 +22,17 @@ color-theme: genetics
 - Classify first- and second-division segregation.
 - Explain the half-weight and calculate gene-to-centromere distance.
 
+=== layout: definitions
+
+# Ordered Tetrad Terms
+
+@body
+
+- [*Spore (Ascospore)*]{color=#24578F}: a haploid reproductive cell; here, one of eight cells inside an ascus.
+- [*Ascus*]{color=#24578F}: the sac that holds the ordered spores.
+- [*First-Division Segregation (FDS)*]{color=#076DAD}: alleles separate at meiosis I, giving a 4:4 pattern.
+- [*Second-Division Segregation (SDS)*]{color=#B74300}: alleles separate at meiosis II, giving 2:2:2:2 or 2:4:2.
+
 === layout: one-panel
 
 # Life Cycle of Neurospora crassa
@@ -60,8 +71,8 @@ color-theme: genetics
 
 ![First- and second-division pattern shapes](assets/lect09c-tetrad_worked_examples_bpw/ordered_classes.svg)
 
-- First-Division Segregation (FDS): alleles separate at meiosis I; 4:4.
-- Second-Division Segregation (SDS): alleles separate at meiosis II; 2:2:2:2 or 2:4:2.
+- [*First-Division Segregation (FDS)*]{color=#076DAD}: alleles separate at meiosis I; 4:4.
+- [*Second-Division Segregation (SDS)*]{color=#B74300}: alleles separate at meiosis II; 2:2:2:2 or 2:4:2.
 
 @notes
 

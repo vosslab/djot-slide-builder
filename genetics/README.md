@@ -147,34 +147,50 @@ recorded in the LECT08 review and slide map.
 
 ## Lectures 09 and 10
 
-Lecture 09B teaches crossover interference with one fixed homework problem and verified older
-reference examples. Six smaller C-H decks give the tetrad topics
+Lecture 09B teaches crossover interference with two fixed generated homework examples. Six smaller C-H decks give the tetrad topics
 separate homes, with one unordered derivation and ordered tetrads taught last:
 
 | Deck | Topic | Slides |
 | --- | --- | --- |
-| [09B](LECT09/djot/lect09b-crossover_interference.djot) | Crossover Interference | 44 |
-| [09C](LECT09/djot/lect09c-mitotic_crossover.djot) | Mitotic Crossover | 7 |
-| [09D](LECT09/djot/lect09d-yeast_unordered_tetrads.djot) | Yeast and Unordered Tetrads | 14 |
-| [09E](LECT09/djot/lect09e-tetrad_classes_map_distance.djot) | Crossovers and Tetrad Mapping | 29 |
+| [09B](LECT09/djot/lect09b-crossover_interference.djot) | Crossover Interference | 46 |
+| [09C](LECT09/djot/lect09c-mitotic_crossover.djot) | Mitotic Crossover | 12 |
+| [09D](LECT09/djot/lect09d-yeast_unordered_tetrads.djot) | Yeast and Unordered Tetrads | 17 |
+| [09E](LECT09/djot/lect09e-tetrad_classes_map_distance.djot) | Crossovers and Tetrad Mapping | 30 |
 | [09F](LECT09/djot/lect09f-two_gene_tetrad_mapping.djot) | Two-Gene Tetrad Mapping | 24 |
 | [09G](LECT09/djot/lect09g-three_gene_tetrad_mapping.djot) | Three-Gene Tetrad Mapping | 42 |
-| [09H](LECT09/djot/lect09h-ordered_tetrads_centromeres.djot) | Ordered Tetrads and Centromeres | 27 |
+| [09H](LECT09/djot/lect09h-ordered_tetrads_centromeres.djot) | Ordered Tetrads and Centromeres | 28 |
 
-09B preserves the homework's phenotype/allele/count table and teaches 54 observed versus
-67.5 expected doubles, giving 20% interference. Its equation bridges distinguish probabilities,
-counts, coincidence, and interference; the three older datasets remain reference problems.
-The worked chapter, repeated roadmap, and frozen data are local to Lecture 09.
+09B preserves the homework's phenotype/allele/count tables. The F-W-P example gives 54 observed
+versus 67.5 expected doubles and 20% interference. A-J-E practice gives 70 observed versus
+280 expected, 25% coincidence, and 75% interference. The old reference problems are removed.
+Both worked chapters, the repeated roadmap, and frozen data are local to Lecture 09.
+
+09C adds five researched steps connecting repair, loss of heterozygosity, clonal patches,
+retinoblastoma, and twin-spot experiments. Both original fly illustrations remain. Primary
+sources and diagram assumptions are in [LECT09C_RESEARCH.md](LECT09/djot/LECT09C_RESEARCH.md).
+
+09D splits the meiosis introduction, adds two topic dividers, and restores natural image
+proportions in the three mating stages. Its ascus anatomy uses the same artwork and allele
+symbols as the fixed homework example.
+
+09E/F/G use consistent PD/TT/NPD colors through formulas and worked substitutions, larger
+classification answers, and homework-matched asci. SVG lettering is repaired; covered
+recaps and unlinked TT no longer carry a not-covered footer. See
+[LECT09EFG_REVIEW.md](LECT09/djot/LECT09EFG_REVIEW.md).
 
 The tetrad examples retain 20 cM for the linked two-gene cross, an unlinked D-E cross, 10/15/24 cM
 and B-A-C/C-A-B for three genes, and 15 cM to the centromere from 150 SDS asci out of 500.
-The three-gene classification slides use the actual homework table with all genes visible
-and cumulative class answers. Calculation slides use readable native count summaries.
-Ordered asci use the generator's original shaded artwork; retained draft diagrams are repaired.
+The three-gene classification slides use the actual homework table with static covers over
+the unused gene and cumulative class answers. Set 6 stays outlined in gold across pairs;
+the recap shows all genes. Calculation slides use readable native count summaries.
+Ordered asci use the generator's current spore shapes, shading, and ascus outline. 09H adds
+opening definitions for spore/ascospore, ascus, FDS, and SDS; see
+[LECT09H_REVIEW.md](LECT09/djot/LECT09H_REVIEW.md). Retained draft diagrams are repaired.
 
 The two mixed masters and earlier conversion/activity sources remain as .djot.retired records.
 Existing asset directories and original ODP/PDF inputs are unchanged. Ordinary builds use saved
-Djot/SVG inputs without BPW or Chromium. The updated in-class handout remains separate.
+Djot/SVG inputs without BPW or Chromium. The updated in-class handout remains separate;
+09G shows a complete second-page preview beside its activity instructions.
 The two-gene working-table SVGs can still be rebuilt with `tools/render_tetrad_tables.py`
 and the adjacent saved problem data; the utility retains its original two-gene scope.
 

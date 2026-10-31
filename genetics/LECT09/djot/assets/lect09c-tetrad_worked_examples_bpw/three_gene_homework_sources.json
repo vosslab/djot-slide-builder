@@ -219,5 +219,90 @@
     }
   ],
   "source_html": "three_gene_homework.html",
-  "capture": "3x CSS resolution, quality-90 WebP; live SVG classification labels"
+  "capture": "3x CSS resolution, quality-90 WebP; live SVG classification labels",
+  "classification_labels": {
+    "font_size": 22,
+    "baseline_offset": 7.3,
+    "note": "Larger live class answers; original capture, cells, rows, and cumulative states are unchanged."
+  },
+  "pair_focus_views": [
+    {
+      "asset": "three_gene_homework_ab_question.svg",
+      "pair": "AB",
+      "covered_gene": "C",
+      "source_state": 0,
+      "covers": 28
+    },
+    {
+      "asset": "three_gene_homework_ab_answer.svg",
+      "pair": "AB",
+      "covered_gene": "C",
+      "source_state": 1,
+      "covers": 28
+    },
+    {
+      "asset": "three_gene_homework_ac_question.svg",
+      "pair": "AC",
+      "covered_gene": "B",
+      "source_state": 1,
+      "covers": 28
+    },
+    {
+      "asset": "three_gene_homework_ac_answer.svg",
+      "pair": "AC",
+      "covered_gene": "B",
+      "source_state": 2,
+      "covers": 28
+    },
+    {
+      "asset": "three_gene_homework_bc_question.svg",
+      "pair": "BC",
+      "covered_gene": "A",
+      "source_state": 2,
+      "covers": 28
+    },
+    {
+      "asset": "three_gene_homework_bc_answer.svg",
+      "pair": "BC",
+      "covered_gene": "A",
+      "source_state": 3,
+      "covers": 28
+    }
+  ],
+  "parental_reference": {
+    "set": 6,
+    "count": 702,
+    "spores": [
+      "+bc",
+      "+bc",
+      "a++",
+      "a++"
+    ],
+    "outline": "#935D00",
+    "stroke_width": 2.5,
+    "note": "Fixed original-parental reference; PD for AB, AC, and BC. Counts do not determine class."
+  },
+  "handout_preview": {
+    "asset": "tetrad_handout_page_2.webp",
+    "source": "/Volumes/Ex2GB/Documents/teaching/CLASS/biol_351-genetics/2026-Genetics-2fall/tetrad_handout.odt",
+    "source_sha256": "f6ce43c7648b24869c71901f88a6c0c9c2697a29699f37fab212d2b7a09f28ec",
+    "export_sha256": "c997caa218d283f4b69ce81cca7496fc48ff99303f1b336969b3cbbd84956e8c",
+    "page": 2,
+    "total_pages": 2,
+    "page_points": [
+      612,
+      792
+    ],
+    "capture_pixels": [
+      1224,
+      1584
+    ],
+    "quality": 90,
+    "note": "Full page, no crop or distortion; three-gene exercises from the instructor-edited handout. Source handout unchanged."
+  },
+  "focused_drawing_references": [
+    "A_Handbook_of_Biological_Illustration-1988.md: CLARITY and EMPHASIS AND COMPARISON",
+    "Mastering_SVG-2018.md: viewBox and viewport in SVG"
+  ],
+  "cover_measurement": "Use measured nested allele/header cell bounds from the saved homework HTML and original font mapping; confirm the 593.359375 x 313 table matches the capture. Inset covers 0.75 units horizontally and 1 unit vertically to retain spore borders."
 }

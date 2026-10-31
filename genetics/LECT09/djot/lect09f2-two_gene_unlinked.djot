@@ -51,13 +51,13 @@ Spores shown for D-E. Count tetrads, not individual spores.
 
 @top
 
-![unlinked classes](assets/lect09c-tetrad_worked_examples_bpw/unlinked_classes.svg)
+![unlinked classes](assets/lect09e-tetrad_visuals/unlinked_classes_large.svg)
 
 @bottom
 
-- Set 1 is PD: de and ++.
-- Set 2 is TT: all four combinations.
-- Set 3 is NPD: d+ and +e.
+- Set 1 is [PD]{color=#935D00}: de and ++.
+- Set 2 is [TT]{color=#A719DB}: all four combinations.
+- Set 3 is [NPD]{color=#007A00}: d+ and +e.
 
 === layout: two-panels
 
@@ -71,9 +71,9 @@ Spores shown for D-E. Count tetrads, not individual spores.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- PD = 402.
-- NPD = 398.
-- TT = 200.
+- [PD]{color=#935D00} = 402.
+- [NPD]{color=#007A00} = 398.
+- [TT]{color=#A719DB} = 200.
 
 Are 402 and 398 meaningfully different here?
 
@@ -94,7 +94,7 @@ Spores shown for D-E. Count tetrads, not individual spores.
 
 @right
 
-- PD and NPD are approximately equal.
+- [PD]{color=#935D00} and [NPD]{color=#007A00} are approximately equal.
 - This is the expected pattern for unlinked genes.
 - The difference of four tetrads is sampling variation.
 - *Stop at linkage*: do not assign a short intergenic map distance.
@@ -113,10 +113,10 @@ Spores shown for D-E. Count tetrads, not individual spores.
 @body
 
 - Expected recombinant spore frequency: about 50%.
-- Half the TT spores and all NPD spores are recombinant.
+- Half the [TT]{color=#A719DB} spores and all [NPD]{color=#007A00} spores are recombinant.
 
 $$
-RF = \frac{\frac{1}{2}(200) + 398}{1000} \times 100 = 49.8\%
+RF = \frac{\frac{1}{2}(\textcolor{#A719DB}{200}) + \textcolor{#007A00}{398}}{1000} \times 100 = 49.8\%
 $$
 
 - Unlinked genes assort independently.

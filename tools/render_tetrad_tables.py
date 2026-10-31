@@ -28,10 +28,11 @@ def element(parent: ET.Element, name: str, **attributes: object) -> ET.Element:
 
 #============================================
 def label(parent: ET.Element, x: float, y: float, value: object,
-		color: str = "#1D2433", bold: bool = False, anchor: str = "middle") -> None:
+		color: str = "#1D2433", bold: bool = False, anchor: str = "middle",
+		size: int = 30) -> None:
 	"""Keep headings, counts, and classifications as live SVG text."""
 	text = element(parent, "text", x=x, y=y, fill=color, font_family="sans-serif",
-		font_size=30, font_weight="bold" if bold else "normal", text_anchor=anchor)
+		font_size=size, font_weight="bold" if bold else "normal", text_anchor=anchor)
 	text.text = str(value)
 
 
@@ -135,8 +136,8 @@ def render_table(example: dict, asci: tuple[ET.Element, ...], reveal: bool) -> s
 		row_group.append(artwork)
 		label(row_group, 32, top + 76, i)
 		label(row_group, 326, top + 76, f"{row['count']:,}")
-		label(row_group, 427, top + 76, kind if reveal else "?",
-			CLASS_COLORS[kind][0] if reveal else "#1D2433", reveal)
+		label(row_group, 427, top + 80, kind if reveal else "?",
+			CLASS_COLORS[kind][0] if reveal else "#1D2433", reveal, size=40)
 	label(group, 14, 487, "Total", bold=True, anchor="start")
 	label(group, 326, 487, f"{example['total']:,}", bold=True)
 	grid = element(group, "g", fill="none", stroke="#2B5B8E", stroke_width=2)

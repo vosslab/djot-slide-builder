@@ -89,6 +89,22 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Labeled diagram reconstruction
 
+- Refresh 09H's images when I update the ordered-tetrad generator visuals. Add an opening
+  definitions slide for FDS, SDS, and spore.
+
+- In 09G, cover the unused gene while comparing a pair. Keep the main parental-ditype
+  row highlighted across pairs: its genotypes and count do not change.
+- Show a whole page of my handout on the Your Turn slide. I like visuals.
+
+- Make classification answers large; separate question/answer slides are fine instead of
+  animation for this content. Use my better colored tetrads in the crossover figures.
+- Keep PD gold, TT magenta, and NPD green through the tetrad formulas and examples.
+  Check 09F and 09G for the same presentation issues as 09E.
+- We do cover unlinked tetrads, even when the example comes later in the deck.
+
+- Stretched images are a pet peeve; I cannot tolerate them. Preserve image proportions,
+  including artwork embedded inside SVGs. Use the generator's ascus artwork in 09D.
+
 - Use the ordered-centromere problem generator's existing ordered-tetrad artwork in the slides.
 
 - When the export path cannot put SVG tetrads in table cells, use a whole-table SVG builder.
@@ -391,12 +407,16 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 - Use the three-point interference problem generator for Lecture 09B so the slides match
   the homework more closely.
+- Remove the reference problems in 09B and add a second generated example instead.
+- Add 3-5 researched slides to 09C on other useful mitotic-crossover topics.
+- Split 09D's Products of Meiosis into two slides and add one or two section headings.
 
 - Keep Lecture 09B as interference and split the tetrad material into six smaller topic decks:
   mitotic crossover; yeast/asci; crossover classes and distance formula; two genes; three genes;
   then ordered tetrads and centromeres. Repair the draft figures we retain.
 - The slides teach students how to do the homework. Keep the homework's table appearance,
-  with all three genes visible in separate spore boxes and the pairwise classification columns.
+  with all three genes in separate spore boxes and the pairwise classification columns.
+  Cover the unused gene in 09G's pairwise views; keep the full table for reference.
   The stripped-down genotype tables on the former 09C pages 37-43 do not look good.
 
 - Replace the old tetrad worked examples with fixed BPW examples: a linked two-gene problem,

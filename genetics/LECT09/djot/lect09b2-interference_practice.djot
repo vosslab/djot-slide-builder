@@ -1,0 +1,205 @@
+=== layout: section
+
+# Another Homework Problem
+
+=== layout: one-panel
+
+# A New Test Cross
+
+@body
+
+- *A: artsy* - colorful, patterned wings.
+- *E: eery* - crooked limbs and other twisted appendages.
+- *J: jerky* - rapid, sudden movements.
+
+*A -- 16 cM -- J -- 25 cM -- E*
+
+- Allele columns are alphabetical: A, E, J.
+- The supplied order is A-J-E; J is in the middle.
+- The supplied outer-pair value is 39% recombination.
+
+@citation
+
+A triple heterozygote is crossed with a homozygous aej tester.
+
+=== layout: one-panel
+
+# Your Turn: Calculate Interference
+
+@body
+
+Identify the parents and both DCO types. Then calculate percentage interference.
+
+{table-group="interference-second-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| artsy, eery, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
+| artsy, eery | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
+| artsy, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [2,112]{text-align=right} |
+| artsy | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [47]{text-align=right} |
+| eery, jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [23]{text-align=right} |
+| eery | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [2,088]{text-align=right} |
+| jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [7,000]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: A, E, J. Gene order: A-J-E. + = wild type; lowercase = recessive mutant.
+
+=== include: interference_steps.djot
+
+=== layout: one-panel
+
+# Check the Parental Types
+
+@body
+
+The largest reciprocal types are a+j and +e+: 2,112 + 2,088 = 4,200.
+
+{table-group="interference-second-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| artsy, eery, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
+| artsy, eery | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
+| *artsy, jerky* | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [*2,112*]{text-align=right color=#A719DB} |
+| artsy | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [47]{text-align=right} |
+| eery, jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [23]{text-align=right} |
+| *eery* | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [*2,088*]{text-align=right color=#A719DB} |
+| jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [7,000]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: A, E, J. Gene order: A-J-E. + = wild type; lowercase = recessive mutant.
+
+=== layout: one-panel
+
+# Check the Double-Crossover Types
+
+@body
+
+Arrange the alleles in *map order: A-J-E*.
+
+| Type | A | J | E | Count |
+| --- | --- | --- | --- | --- |
+| Parent | a | j | + | 2,112 |
+| DCO | a | [*+*]{background-color=#ece6ff} | + | 47 |
+| Parent | + | + | e | 2,088 |
+| DCO | + | [*j*]{background-color=#ece6ff} | e | 23 |
+
+Only the middle gene, J, changes relative to the matching parent.
+In the homework's A/E/J columns, the DCO types are *a++* and *+ej*.
+
+=== layout: one-panel
+
+# Add Both Double-Crossover Counts
+
+@body
+
+*Observed DCO = 47 + 23 = 70 offspring.*
+
+{table-group="interference-second-homework"}
+| Phenotype | [Genotypes]{colspan=3} | Progeny Count |
+| --- | --- | --- | --- | --- |
+| artsy, eery, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
+| artsy, eery | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
+| artsy, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [2,112]{text-align=right} |
+| *artsy* | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [*47*]{text-align=right color=#A719DB} |
+| *eery, jerky* | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [*23*]{text-align=right color=#A719DB} |
+| eery | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [2,088]{text-align=right} |
+| jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
+| _wildtype_ | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
+| [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [7,000]{background-color=#BDD0E4 text-align=right} |
+
+@citation
+
+Allele columns: A, E, J. Gene order: A-J-E. + = wild type; lowercase = recessive mutant.
+
+=== layout: one-panel
+
+# Predict Independent Doubles
+
+@body
+
+[*Step 2: Multiply Adjacent Probabilities*]{color=#B74300}
+
+| Interval | Percent | Probability |
+| --- | --- | --- |
+| A-J | 16% | 0.16 |
+| J-E | 25% | 0.25 |
+
+$$
+P(\mathrm{DCO})_{\mathrm{independent}} = 0.16 \times 0.25 = 0.04
+$$
+
+Independence predicts that *4%* of all offspring will be DCO.
+
+=== layout: one-panel
+
+# Find the Expected Count
+
+@body
+
+[*Step 3: Multiply by All Offspring*]{color=#007A00}
+
+$$
+E_{\mathrm{DCO}} = 0.04 \times 7000 = 280
+$$
+
+| DCO Count | Offspring |
+| --- | --- |
+| Observed | 70 |
+| Expected under independence | 280 |
+
+Which count belongs in the denominator for coincidence?
+
+=== layout: one-panel
+
+# Check Coincidence
+
+@body
+
+[*Step 4: Divide Observed by Expected*]{color=#003FFF}
+
+$$
+\mathrm{CoC} = \frac{70}{280} = \frac{1}{4} = 0.25
+$$
+
+We observed *25% of the expected doubles*.
+
+Is 25% also the interference?
+
+=== layout: one-panel
+
+# Check Interference
+
+@body
+
+[*Step 5: Subtract from One*]{color=#A719DB}
+
+$$
+I = 1 - 0.25 = 0.75 = \frac{3}{4} = 75\%
+$$
+
+- *25%* is the coincidence: the fraction of expected doubles observed.
+- *75%* is the interference: the reduction relative to the expectation.
+- For percentage interference, enter *75*.
+
+=== layout: one-panel
+
+# Compare the Two Examples
+
+@body
+
+| Quantity | F-W-P | A-J-E |
+| --- | --- | --- |
+| Observed DCO | 54 | 70 |
+| Expected DCO | 67.5 | 280 |
+| Coincidence | 80% | 25% |
+| Interference | 20% | 75% |
+
+In each example, coincidence and interference add to *100%*.
+A smaller fraction of expected doubles occurs in the A-J-E cross.
+

@@ -18,8 +18,9 @@ color-theme: genetics
 
 @body
 
-- Explain how mitotic recombination differs from meiotic crossing over.
-- Connect mitotic recombination to twin spots.
+- Connect DNA repair to crossover and loss of heterozygosity.
+- Explain how one altered cell can produce twin spots.
+- Apply these ideas to cancer and studies of gene function.
 
 === layout: one-panel
 
@@ -27,11 +28,56 @@ color-theme: genetics
 
 @body
 
-- Recombination can also occur during mitosis.
-- Unlike what happens in meiosis, mitotic crossovers are initiated by mistakes in chromosome replication or DNA damage.
-- As a result, mitotic recombination is a rare event
-  - occurring no more frequently than once in a million somatic cell divisions.
-  - Nonetheless, the growth of a yeast colony or a multicellular organism involves so many cell divisions, they can be detected.
+- Recombination can also occur in dividing body cells.
+- DNA damage or replication problems can initiate repair before the next mitosis.
+- A crossover between homologs is an uncommon repair outcome.
+- Many cell divisions give rare events a chance to become visible.
+
+@citation
+
+Johnson and Jasin (2000): https://doi.org/10.1093/emboj/19.13.3398
+
+=== layout: two-panels
+
+# Repair Starts with a Matching Copy
+
+@left
+
+- DNA replication produces sister chromatids.
+- The sister is a useful template for repairing DNA breaks.
+- Most repair finishes without a crossover.
+- A crossover with the other homolog can change allele combinations.
+
+@right
+
+![A damaged chromatid and two possible matching copies](assets/lect09c-mitotic_crossover/repair_templates.svg)
+
+@citation
+
+Johnson and Jasin (2000): https://doi.org/10.1093/emboj/19.13.3398
+
+=== layout: two-panels
+
+# Loss of Heterozygosity
+
+@left
+
+- Start with an A/a cell.
+- After replication and crossover, one segregation pattern gives *A/A* and *a/a* daughters.
+- *LOH*: instead of two allele versions, the cell now has only one version.
+- Here, both daughters still have two chromosome copies.
+
+@right
+
+![Two diploid daughters become homozygous at a distal marker](assets/lect09c-mitotic_crossover/loh_outcome.svg)
+
+@citation
+
+Hagstrom and Dryja (1999): https://doi.org/10.1073/pnas.96.6.2952
+
+@notes
+
+The diagram shows one possible segregation after an exchange between the centromere and A. The next figure also shows the outcome that retains heterozygosity. Markers distal to the exchange can become homozygous. LOH can also arise by mechanisms other than crossing over.
 
 === layout: one-panel
 
@@ -54,17 +100,77 @@ Patches sometimes show yellow color or singed bristles. Adjacent yellow and sing
 
 ![Single yellow spot, twin spot, and single singed spot](assets/lect09_tetrad_concepts/twin_spots.svg)
 
+=== layout: two-panels
+
+# One Event Can Make a Patch
+
+@left
+
+- Descendants of one altered cell form a *clone*.
+- A *mosaic* contains cells with different genotypes in one individual.
+- Earlier events often have more time to make larger patches.
+- Patch size also depends on cell division and survival.
+
+@right
+
+![Two daughter lineages produce neighboring clones](assets/lect09c-mitotic_crossover/clonal_patches.svg)
+
+@citation
+
+Graf (1995): https://doi.org/10.1007/BF01929364
+
+=== layout: one-panel
+
+# LOH Can Supply a Second Hit
+
+@body
+
+For a tumor-suppressor gene, let *R* work and *r* be a loss-of-function allele.
+
+| Cell | Genotype | Working Copies |
+| --- | --- | --- |
+| Before LOH | R/r | 1 |
+| One daughter | r/r | 0 |
+| Reciprocal daughter | R/R | 2 |
+
+- The r allele was already present; another point mutation is not required.
+- LOH at *RB1* can contribute to retinoblastoma, a cancer of the retina.
+
+@citation
+
+Cavenee et al. (1983): https://doi.org/10.1038/305779a0
+
+=== layout: two-panels
+
+# Twin Spots Can Test Gene Function
+
+@left
+
+- Researchers can induce recombination and label both daughter lineages.
+- Compare clone growth, survival, or cell shape within the same tissue.
+- If one clone is smaller, what could explain it?
+
+Slower division or more cell death are possibilities.
+
+@right
+
+![Paired clones allow comparison within one tissue](assets/lect09c-mitotic_crossover/clonal_patches.svg)
+
+@citation
+
+Griffin et al. (2009): https://doi.org/10.1038/nmeth.1349
+
 === layout: bookend
 
 # Key Takeaways
 
 @body
 
-- Crossing over can occur during mitosis after DNA damage or replication errors.
-- Rare events become detectable after many cell divisions.
-- Mitotic recombination can produce adjacent patches with different phenotypes.
+- Repair usually preserves the sequence; crossovers can change allele combinations.
+- Mitotic crossover can cause LOH while chromosome copy number stays the same.
+- Altered daughter cells can grow into genetically different patches.
+- These clones connect recessive alleles to cancer and studies of gene function.
 
 === layout: theend
 
 # THE END
-

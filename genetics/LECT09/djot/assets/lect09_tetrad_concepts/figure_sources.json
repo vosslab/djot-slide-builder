@@ -8,7 +8,10 @@
       674.6456848144531,
       208.346455078125
     ],
-    "live_text_nodes": 24
+    "live_text_nodes": 13,
+    "source_live_text_nodes": 24,
+    "repair": "Rebuild at natural bitmap proportions; enlarge one stage per slide and reposition live labels.",
+    "current_provenance": "lect09d_figure_sources.json"
   },
   {
     "asset": "yeast_mating.svg",
@@ -19,7 +22,10 @@
       674.6456848144531,
       327.401572265625
     ],
-    "live_text_nodes": 30
+    "live_text_nodes": 4,
+    "source_live_text_nodes": 30,
+    "repair": "Rebuild at natural bitmap proportions; enlarge one stage per slide and reposition live labels.",
+    "current_provenance": "lect09d_figure_sources.json"
   },
   {
     "asset": "yeast_diploid.svg",
@@ -30,7 +36,10 @@
       674.6456848144531,
       491.1023583984375
     ],
-    "live_text_nodes": 43
+    "live_text_nodes": 4,
+    "source_live_text_nodes": 43,
+    "repair": "Rebuild at natural bitmap proportions; enlarge one stage per slide and reposition live labels.",
+    "current_provenance": "lect09d_figure_sources.json"
   },
   {
     "asset": "unlinked_segregation.svg",
@@ -41,7 +50,10 @@
       777.8267895507812,
       486.141728515625
     ],
-    "live_text_nodes": 19
+    "live_text_nodes": 21,
+    "source_live_text_nodes": 19,
+    "repair": "Restore natural bitmap proportions; reflow all labels with normal text shaping in the course font.",
+    "current_provenance": "../lect09e-tetrad_visuals/figure_sources.json"
   },
   {
     "asset": "crossover_histories.svg",
@@ -52,7 +64,10 @@
       781.7952935791016,
       491.1023583984375
     ],
-    "live_text_nodes": 11
+    "live_text_nodes": 11,
+    "source_live_text_nodes": 11,
+    "repair": "Natural text shaping in the course font; remove inherited per-glyph x positions.",
+    "current_provenance": "../lect09e-tetrad_visuals/figure_sources.json"
   },
   {
     "asset": "centromere.svg",

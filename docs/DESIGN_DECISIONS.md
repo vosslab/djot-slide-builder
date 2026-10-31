@@ -1,20 +1,108 @@
 # Design decisions
 
+### Current ordered-ascus artwork in 09H
+
+**Decision.** Recapture the generator's updated ascus drawings for the five existing teaching
+figures. Add a definitions slide after the objectives for spore/ascospore, ascus, FDS, and SDS.
+
+**Why.** The updated spore shapes, shading, and ascus outline should match the homework.
+Defining the sac as well as its spores gives the segregation terms a clear starting point.
+
+**Consequence.** Keep all six fixed patterns and counts, the static question/answer sequence,
+and every calculation. Center naturally scaled artwork in the existing rows and measure the
+four pair brackets against the new spore bounds. Terms use the existing blue FDS/orange SDS
+colors. Record the current working-tree source/function hashes separately from the original
+numeric-problem revision. The deck grows from 27 to 28 slides; later pages shift by one.
+
+**Owner.** Lecture 09H and
+[ordered_problem_data.json](../genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_problem_data.json).
+
+### Pairwise focus and parental reference in 09G
+
+**Decision.** Add static gray covers over the unused gene in each pair's question/answer
+table. Keep Set 6 outlined in PD gold, emphasize its 702 contribution in the native summaries,
+and show a complete page of the instructor-edited handout beside the activity instructions.
+
+**Why.** Students need to focus on two loci while retaining the homework table's appearance.
+Set 6 contains only the original parental genotypes, so it stays PD for every pair; frequency
+does not determine classification. A page preview connects the activity to the actual handout.
+
+**Consequence.** Retain the original embedded table bytes, all counts, earlier classifications,
+and an uncovered final reference. Use measured allele-cell bounds for covers. The source
+handout remains unchanged; page 2 previews its three-gene problems without cropping or stretching.
+Change the shared roadmap reminder to focus on one pair, updating F's two uses as well.
+
+**Owner.** Lecture 09G, the local unordered roadmap, and
+[three_gene_homework_sources.json](../genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_sources.json).
+
+### Consistent tetrad classes across E/F/G
+
+**Decision.** Use a static question/large-answer pair in E and preserve existing question/answer
+sequences in F/G. Match class colors across terms, figures, tables, formulas, and substituted counts.
+
+**Why.** Small labels and black substitutions obscure connections students need for homework.
+Imported per-glyph coordinates also produced poor spacing after font substitution.
+
+**Consequence.** Reuse the generator's ascus geometry beside the original chromosome mechanisms;
+retain the A/B-to-plus key. Normalize imported labels to natural text shaping. Enlarge table
+class labels without altering genotype data, cumulative answers, arithmetic, or map results.
+Restore original bitmap proportions. Use ordinary layouts for already-taught recaps and the
+later unlinked TT slide, preserving reference treatment for additional material.
+No shared layout or equation renderer changes.
+
+**Owner.** Lecture 09 E/F/G sources, local figures, `tools/render_tetrad_tables.py`, and
+[LECT09EFG_REVIEW.md](../genetics/LECT09/djot/LECT09EFG_REVIEW.md).
+
+### Undistorted 09D mating and asci
+
+**Decision.** Preserve 09D's original prose across the approved meiosis split, add two section
+dividers, and show one enlarged mating stage per slide using the original bitmap proportions.
+
+**Why.** Imported figure matrices stretched the artwork horizontally; cumulative figures made
+the later states too small. Homework-matched asci connect the vocabulary to the upcoming problems.
+
+**Consequence.** Reuse original image bytes, reposition live labels, and retain all unique stages
+across D9-11. Reuse an actual three-gene homework ascus on D6/D14, preserving all loci and
+explaining symbols, schematic colors, and unordered positions. Keep figure provenance local.
+The deck has 17 pages; ordinary builds use saved SVGs without importing the generator.
+
+**Owner.** `genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot`, its figures,
+and `assets/lect09_tetrad_concepts/lect09d_figure_sources.json`.
+
+### Research-backed 09C mitotic crossover
+
+**Decision.** Add five steps connecting DNA repair to LOH, clonal patches, an RB1 second hit,
+and twin-spot experiments. Retain both original fly illustrations and keep the deck at twelve pages.
+
+**Why.** LOH links the existing allele/phenotype examples to a cellular mechanism and gives
+students useful applications. Primary papers support each addition; technical pathway catalogs
+would add detail without helping this short conceptual introduction.
+
+**Consequence.** Clarify repair timing and the context-dependent frequency of crossovers.
+Use three original, static SVG diagrams with large allele labels, preserve both segregation
+outcomes in the retained figure, and keep prose/tables/DOI citations native. Scope the SVG
+ignore exception to these authored source assets. Save the evidence and scientific assumptions
+in the lecture-local research report and ledger.
+
+**Owner.** `genetics/LECT09/djot/lect09c-mitotic_crossover.djot`, its adjacent mitotic-crossover
+assets, and [LECT09C_RESEARCH.md](../genetics/LECT09/djot/LECT09C_RESEARCH.md).
+
 ### Homework-matched 09B interference
 
-**Decision.** Use one frozen numeric-bank F/P/W item as 09B's main worked example, with
-native homework-shaped tables and a locally included five-step roadmap.
+**Decision.** Use two frozen numeric-bank items as 09B's worked examples, with native
+homework-shaped tables and a locally included five-step roadmap.
 
 **Why.** Students need to recognize their homework and understand each equation's quantities,
 including the difference between a fractional expectation, observed count, coincidence, and interference.
 
-**Consequence.** Save the bank item/HTML/data/hashes; build offline from authored Djot. Keep
-all three older datasets as verified reference problems. Distinguish 34% outside recombination
-from the 40 cM adjacent-interval sum, and correct source arithmetic/chromatin errors explicitly.
+**Consequence.** Save each bank item/HTML/data/hashes; build offline from authored Djot. Remove
+the three old reference problems at the instructor's request. Contrast 20% and 75% interference,
+including the distinction between coincidence and interference. Keep outside-pair recombination
+distinct from adjacent-interval sums and preserve the corrected chromatin explanations.
 Lecture-only chapter/roadmap files belong beside the master; no new dependency folder or
 problem-to-slide framework is required.
 
-**Owner.** `genetics/LECT09/djot/lect09b-crossover_interference.djot`, its worked chapter,
+**Owner.** `genetics/LECT09/djot/lect09b-crossover_interference.djot`, its worked chapters,
 `interference_steps.djot`, saved data, and the Lecture 09 source map/review.
 
 

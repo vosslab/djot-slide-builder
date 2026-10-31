@@ -2,43 +2,51 @@
 
 ## 09B homework interference
 
-[lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) now has 44 visible
-slides. The homework example is in [lect09b1-interference_worked_example.djot](lect09b1-interference_worked_example.djot),
-with three local uses of [interference_steps.djot](interference_steps.djot).
-All 23 pages of the preceding Djot deck are accounted for below. The original 20-page
-presentation and its initial-conversion map remain historical evidence further down.
+[lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) has 46 visible slides.
+The first example remains in [lect09b1-interference_worked_example.djot](lect09b1-interference_worked_example.djot).
+The second is [lect09b2-interference_practice.djot](lect09b2-interference_practice.djot).
+Together they include [interference_steps.djot](interference_steps.djot) four times.
+
+The immediately preceding 44-page version changes as follows: pages 1-32 remain unchanged;
+pages 33-42 (Reference Problems and all three old examples) are removed at the instructor's
+request; takeaways and THE END move from 43-44 to 45-46. New pages 33-44 teach a second
+generated homework item: 7,000 offspring, A-J-E order, 70 observed doubles, 280 expected,
+25% coincidence, and 75% interference. The first example remains 20% interference.
+
+The table below updates the disposition of all 23 pages from the earlier converted deck.
+Removed numerical examples remain recoverable from the original presentation and Git history.
 
 | Previous Djot Page | Action | Current Pages | Teaching Content |
 | --- | --- | --- | --- |
 | 1 | Retained | 1 | Same lecture, topic, Chapter 8, instructor, and date. |
-| 2 | Revised | 2 | Objectives include reciprocal doubles and interpreting the equations. |
-| 3 | Merged | 3-6 | Replace the generic opening divider with the motivation and homework transition. |
-| 4 | Repaired | 3-4 | Preserve the chromosome figure and 9%, 9.5%, 17% question; explain hidden doubles. |
-| 5 | Revised | 5, 18-25, 29 | Keep interference, non-independence, changed expectations, coincidence, and mapping meaning. |
-| 6 | Repaired/Moved | 34-36 | Retain all 740-offspring counts, 176 outside recombinants, six doubles, 188 corrected contributions, and 25.4 cM. |
-| 7 | Merged | 36-37 | Calculate from 79/740 and 109/740 without intermediate rounding. |
-| 8 | Corrected/Merged | 36-37 | Replace malformed 11.648.5 and inconsistent 48.3/48.5% rounding with about 48.4%; correctly identify positive interference. |
-| 9 | Moved | 29 | Retain the mapping-function graph and its model/missed-crossover explanation. |
-| 10 | Merged | 29 | Consolidate the identical graph into one full-size figure. |
-| 11 | Merged | 30-32 | Retain the chromatin topic within three focused context slides. |
-| 12 | Moved | 31 | Preserve the physical/genetic map and its 25% versus 2.8% comparison. |
-| 13 | Corrected | 30 | Keep the packing diagram; replace the incorrect euchromatin visibility claim. |
-| 14 | Corrected | 32 | Distinguish suppressed recombination from interference; do not infer gene expression from a linkage map. |
-| 15 | Renamed | 33 | Sample Problems becomes Reference Problems after the new main example. |
-| 16 | Repaired/Moved | 38 | Rebuild the full A/B/C table, including phenotype names; preserve the question and adjacent intervals. |
-| 17 | Repaired/Merged | 39 | Keep observed = expected = 54 and the zero-interference answer; correct the rounded outside-pair value to 23.4%. |
-| 18 | Merged | 39 | Preserve the complete coincidence/interference calculation without a duplicate solution page. |
-| 19 | Repaired/Moved | 40-41 | Rebuild all eight F/G/H counts; keep parents, reciprocal doubles, reversed order, 8/12 cM intervals, and question. |
-| 20 | Repaired/Merged | 41-42 | Preserve expected 9.6, coincidence 62.5%, and interference 37.5%. |
-| 21 | Merged | 42 | Consolidate the repeated F/G/H calculation. |
-| 22 | Revised | 43 | Keep the equations and add their count/probability interpretation. |
-| 23 | Retained | 44 | THE END follows the takeaways. |
+| 2 | Revised | 2 | Reciprocal doubles, equations, and interpretation objectives. |
+| 3 | Merged | 3-6 | Motivation, definitions, and first homework transition. |
+| 4 | Repaired | 3-4 | Original 9%, 9.5%, 17% chromosome question and hidden-double explanation. |
+| 5 | Revised | 5, 18-25, 29, 40-44 | Interference, independence, expected counts, coincidence, and mapping meaning. |
+| 6 | Removed | None | Lz/Su/Gl reference dataset removed at the instructor's request; hidden doubles remain in the generated example. |
+| 7 | Removed | None | Lz/Su/Gl reference calculation removed at the instructor's request. |
+| 8 | Removed | None | Duplicate Lz/Su/Gl reference calculation removed at the instructor's request. |
+| 9 | Moved | 29 | Mapping-function graph and explanation. |
+| 10 | Merged | 29 | One full-size copy of the graph. |
+| 11 | Merged | 30-32 | Three focused chromatin/context slides. |
+| 12 | Moved | 31 | Physical/genetic map and its 25% versus 2.8% comparison. |
+| 13 | Corrected | 30 | Packing diagram and corrected euchromatin definition. |
+| 14 | Corrected | 32 | Suppression versus interference; linkage maps do not measure expression. |
+| 15 | Superseded | 33 | A second generated problem replaces the older reference-problem section. |
+| 16 | Removed | None | A-C-B reference dataset removed at the instructor's request. |
+| 17 | Removed | None | A-C-B reference answer removed at the instructor's request. |
+| 18 | Removed | None | Duplicate A-C-B reference calculation removed at the instructor's request. |
+| 19 | Removed | None | F-G-H reference dataset/mapping removed at the instructor's request. |
+| 20 | Removed | None | F-G-H reference answer removed at the instructor's request. |
+| 21 | Removed | None | Duplicate F-G-H reference calculation removed at the instructor's request. |
+| 22 | Revised | 45 | Count/probability interpretation and the equations. |
+| 23 | Retained | 46 | THE END follows the takeaways. |
 
-New pages 6-28 teach one fixed numeric homework item: 1,800 offspring, F-W-P order,
-54 observed doubles, 67.5 expected doubles, and 20% interference. Native table states retain
-all phenotype names, allele columns/colors, counts, totals, and row order. The given outside-pair
-value is explicitly distinguished from the 40 cM adjacent-interval sum.
-Saved source and provenance: [interference_problem_data.json](assets/lect09b-crossover_interference/interference_problem_data.json).
+Both examples preserve the homework phenotype column, separate colored allele cells, row
+order, counts, and totals. Their provenance is in
+[interference_problem_data.json](assets/lect09b-crossover_interference/interference_problem_data.json) and
+[interference_second_problem_data.json](assets/lect09b-crossover_interference/interference_second_problem_data.json).
+Original HTML and bank items are saved beside those records. Neither problem is regenerated during builds.
 
 ### Current 09B page ownership
 
@@ -76,19 +84,20 @@ Saved source and provenance: [interference_problem_data.json](assets/lect09b-cro
 | 30 | Chromatin Packaging | lect09b-crossover_interference.djot |
 | 31 | Genetic and Physical Distance | lect09b-crossover_interference.djot |
 | 32 | Fewer Crossovers Is a Different Claim | lect09b-crossover_interference.djot |
-| 33 | Reference Problems | lect09b-crossover_interference.djot |
-| 34 | Reference: Lz-Su-Gl | lect09b-crossover_interference.djot |
-| 35 | The Outer Pair Misses Six Doubles | lect09b-crossover_interference.djot |
-| 36 | Reference: Expected Doubles | lect09b-crossover_interference.djot |
-| 37 | Reference: Lz-Su-Gl Answer | lect09b-crossover_interference.djot |
-| 38 | Reference: A-C-B Problem | lect09b-crossover_interference.djot |
-| 39 | Reference: A-C-B Answer | lect09b-crossover_interference.djot |
-| 40 | Reference: F-G-H Problem | lect09b-crossover_interference.djot |
-| 41 | Reference: F-G-H Mapping | lect09b-crossover_interference.djot |
-| 42 | Reference: F-G-H Answer | lect09b-crossover_interference.djot |
-| 43 | Key Takeaways | lect09b-crossover_interference.djot |
-| 44 | THE END | lect09b-crossover_interference.djot |
-
+| 33 | Another Homework Problem | lect09b2-interference_practice.djot |
+| 34 | A New Test Cross | lect09b2-interference_practice.djot |
+| 35 | Your Turn: Calculate Interference | lect09b2-interference_practice.djot |
+| 36 | Steps in Interference | interference_steps.djot |
+| 37 | Check the Parental Types | lect09b2-interference_practice.djot |
+| 38 | Check the Double-Crossover Types | lect09b2-interference_practice.djot |
+| 39 | Add Both Double-Crossover Counts | lect09b2-interference_practice.djot |
+| 40 | Predict Independent Doubles | lect09b2-interference_practice.djot |
+| 41 | Find the Expected Count | lect09b2-interference_practice.djot |
+| 42 | Check Coincidence | lect09b2-interference_practice.djot |
+| 43 | Check Interference | lect09b2-interference_practice.djot |
+| 44 | Compare the Two Examples | lect09b2-interference_practice.djot |
+| 45 | Key Takeaways | lect09b-crossover_interference.djot |
+| 46 | THE END | lect09b-crossover_interference.djot |
 
 ## Current Six-Deck Sequence
 
@@ -102,12 +111,12 @@ The repeated [unordered_tetrad_steps.djot](unordered_tetrad_steps.djot) and
 
 | Deck | Topic | Slides | Source |
 | --- | --- | --- | --- |
-| 09C | Mitotic Crossover | 7 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
-| 09D | Yeast and Unordered Tetrads | 14 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
-| 09E | Crossovers and Tetrad Mapping | 29 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
+| 09C | Mitotic Crossover | 12 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
+| 09D | Yeast and Unordered Tetrads | 17 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
+| 09E | Crossovers and Tetrad Mapping | 30 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
 | 09F | Two-Gene Tetrad Mapping | 24 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |
 | 09G | Three-Gene Tetrad Mapping | 42 | [lect09g-three_gene_tetrad_mapping.djot](lect09g-three_gene_tetrad_mapping.djot) |
-| 09H | Ordered Tetrads and Centromeres | 27 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
+| 09H | Ordered Tetrads and Centromeres | 28 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
 
 ## Coverage of the Previous 152 Slides
 
@@ -124,61 +133,61 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 1 | Lecture 09B | Superseded | Six topic-specific decks | Replace the mixed cover with six topic-specific covers. |
 | 2 | Learning Objectives | Superseded | Six topic-specific decks | Replace the mixed-deck bookend with topic-specific objectives, takeaways, and ending. |
 | 3 | Mitotic Cross-Over | Merged | 09C: 3 | The new cover replaces the repeated section divider. |
-| 4 | Mitotic Cross-Over | Moved | 09C: 3 | Retain the existing teaching content. |
-| 5 | Mitotic Recombination Can Lead to Twin Spots | Moved | 09C: 4 | Retain the existing teaching content. |
-| 6 | Untitled diagram | Repaired | 09C: 5 | Preserve the three phenotype panels; move their caption to native text and remove the textbook figure number. |
-| 7 | Tetrads | Merged | 09D: 3 | Topic dividers become the focused deck cover and introduction. |
-| 8 | Products of Meiosis | Moved | 09D: 4 | Retain the existing teaching content. |
-| 9 | Saccharomyces cerevisiae (Unordered Tetrads) | Merged | 09D: 3 | Topic dividers become the focused deck cover and introduction. |
-| 10 | Life Cycle of S. cerevisiae | Moved | 09D: 5 | Retain the existing teaching content. |
-| 11 | S. cerevisiae Mating | Moved | 09D: 6 | Retain the existing teaching content. |
-| 12 | Life Cycle of Yeast | Moved | 09D: 12 | Retain the existing teaching content. |
-| 13 | Untitled diagram | Repaired | 09D: 7 | Restore original mating artwork, positioned labels, and arrows; remove duplicated loose labels. |
-| 14 | Untitled diagram | Repaired | 09D: 8 | Restore original mating artwork, positioned labels, and arrows; remove duplicated loose labels. |
-| 15 | Untitled diagram | Repaired | 09D: 9 | Restore original mating artwork, positioned labels, and arrows; remove duplicated loose labels. |
-| 16 | Untitled diagram | Moved | 09D: 10 | Retain the existing teaching content. |
+| 4 | Mitotic Cross-Over | Revised | 09C: 3 | Clarify repair timing and remove the unsupported universal rate ceiling; preserve the rare-event motivation. |
+| 5 | Mitotic Recombination Can Lead to Twin Spots | Moved | 09C: 6 | Retain the existing teaching content. |
+| 6 | Untitled diagram | Repaired | 09C: 7 | Preserve the three phenotype panels; move their caption to native text and remove the textbook figure number. |
+| 7 | Tetrads | Merged | 09D: 3-4 | Topic dividers become the focused deck cover and introduction. |
+| 8 | Products of Meiosis | Split (approved) | 09D: 5-6 | Separate diploid-progeny mapping from fungi retaining all four products; preserve all prose. |
+| 9 | Saccharomyces cerevisiae (Unordered Tetrads) | Merged | 09D: 3-4 | Topic dividers become the focused deck cover and introduction. |
+| 10 | Life Cycle of S. cerevisiae | Moved | 09D: 7 | Retain the existing teaching content. |
+| 11 | S. cerevisiae Mating | Moved | 09D: 8 | Retain the existing teaching content. |
+| 12 | Life Cycle of Yeast | Moved | 09D: 15 | Retain the existing teaching content. |
+| 13 | Untitled diagram | Repaired | 09D: 9 | Restore natural bitmap proportions and live labels; enlarge one stage per slide. |
+| 14 | Untitled diagram | Repaired | 09D: 10 | Restore natural bitmap proportions and live labels; enlarge one stage per slide. |
+| 15 | Untitled diagram | Repaired | 09D: 11 | Restore natural bitmap proportions and live labels; enlarge one stage per slide. |
+| 16 | Untitled diagram | Moved | 09D: 13 | Retain the existing teaching content. |
 | 17 | Tetrad Analysis | Merged | 09E: 3 | Use the clean definitions and approved ascus artwork instead of the unfinished duplicate. |
 | 18 | Tetrad Analysis | Merged | 09E: 3 | Use the clean definitions and approved ascus artwork instead of the unfinished duplicate. |
-| 19 | Two Genes on Separated Chromosomes | Moved | 09E: 7 | Retain the two-chromosome mechanism and replace its section-only page with a useful title. |
-| 20 | Untitled diagram | Moved | 09E: 7 | Retain the two-chromosome mechanism and replace its section-only page with a useful title. |
-| 21 | Untitled diagram | Repaired | 09E: 8 | Restore metaphase, daughter-cell, and PD/NPD labels in their original positions. |
-| 22 | Untitled diagram | Moved | 09E: 27 | Keep this distinct unlinked-TT mechanism as reference, without teaching a gene-centromere distance extension. |
-| 23 | Two Genes on the Same Chromosomes | Merged | 09E: 10 | The linked-gene section is taught in the focused deck. |
-| 24 | NCO → PD | Moved | 09E: 10 | Retain the existing teaching content. |
-| 25 | SCO → TT | Moved | 09E: 11 | Retain the existing teaching content. |
-| 26 | Untitled diagram | Moved | 09E: 12 | Retain the existing teaching content. |
-| 27 | Untitled diagram | Moved | 09E: 13 | Retain the existing teaching content. |
-| 28 | Untitled diagram | Repaired | 09E: 15 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
-| 29 | How to Get the Recombination Frequency? (Derivation) | Merged | 09E: 18 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 30 | Observed Recombination Frequency | Merged | 09E: 18 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 31 | Recombination and Map Distance | Merged | 09E: 19 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 32 | Using Tetrad Analysis to Correct Map Distance for Double Crossovers | Merged | 09E: 19 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 33 | Untitled diagram | Merged | 09E: 15 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
+| 19 | Two Genes on Separated Chromosomes | Moved | 09E: 8 | Retain the two-chromosome mechanism and replace its section-only page with a useful title. |
+| 20 | Untitled diagram | Moved | 09E: 8 | Retain the two-chromosome mechanism and replace its section-only page with a useful title. |
+| 21 | Untitled diagram | Repaired | 09E: 9 | Restore metaphase, daughter-cell, and PD/NPD labels in their original positions. |
+| 22 | Untitled diagram | Moved | 09E: 28 | Teach both unlinked-TT mechanisms later in the deck, with homework asci and no centromere-distance extension. |
+| 23 | Two Genes on the Same Chromosomes | Merged | 09E: 11 | The linked-gene section is taught in the focused deck. |
+| 24 | NCO → PD | Moved | 09E: 11 | Retain the existing teaching content. |
+| 25 | SCO → TT | Moved | 09E: 12 | Retain the existing teaching content. |
+| 26 | Untitled diagram | Moved | 09E: 13 | Retain the existing teaching content. |
+| 27 | Untitled diagram | Moved | 09E: 14 | Retain the existing teaching content. |
+| 28 | Untitled diagram | Repaired | 09E: 16 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
+| 29 | How to Get the Recombination Frequency? (Derivation) | Merged | 09E: 19 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 30 | Observed Recombination Frequency | Merged | 09E: 19 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 31 | Recombination and Map Distance | Merged | 09E: 20 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 32 | Using Tetrad Analysis to Correct Map Distance for Double Crossovers | Merged | 09E: 20 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 33 | Untitled diagram | Merged | 09E: 16 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
 | 34 | Crossover Nomenclature | Repaired | 09E: 4 | Rebuild the source terminology as a clean definitions slide. |
-| 35 | Untitled diagram | Repaired | 09E: 14 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
-| 36 | Untitled diagram | Repaired | 09E: 15 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
-| 37 | Tetrad Analysis for Linked Genes in Unordered Tetrads | Repaired | 09E: 15 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
-| 38 | Untitled diagram | Repaired | 09E: 15 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
-| 39 | Untitled diagram | Merged | 09E: 20 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 40 | Untitled diagram | Merged | 09E: 21 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 41 | Untitled diagram | Merged | 09E: 26 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 42 | From Crossovers to Map Distance | Merged | 09E: 26 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 43 | Untitled diagram | Merged | 09E: 25 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 44 | Untitled diagram | Merged | 09E: 25 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 45 | How to Get the Recombination Frequency? (in Summary) | Merged | 09E: 25 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 46 | Map Distance from Tetrad Counts | Merged | 09E: 25 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
-| 47 | Neurospora crassa (Ordered Tetrads) | Merged | 09H: 3 | The ordered-tetrad section becomes its own final deck. |
-| 48 | Life Cycle of Neurospora crassa | Moved | 09H: 3 | Retain the existing teaching content. |
-| 49 | Ordered Tetrads | Moved | 09H: 4 | Retain the existing teaching content. |
-| 50 | Untitled diagram | Moved | 09H: 23 | Retain the existing teaching content. |
-| 51 | Untitled diagram | Repaired | 09H: 5 | Separate the original chromosome figure from the question; retain its p/q and centromere labels. |
-| 52 | Untitled diagram | Repaired | 09H: 7 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
-| 53 | Untitled diagram | Repaired | 09H: 7 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
-| 54 | Untitled diagram | Repaired | 09H: 8 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
-| 55 | Untitled diagram | Repaired | 09H: 9 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
-| 56 | Ordered Tetrads from Recombination Between an Allele Pair and Centromere | Moved | 09H: 24 | Preserve the distinct probability tree with its random-ordering assumption stated explicitly. |
-| 57 | Untitled diagram | Moved | 09H: 25 | Retain the distinct ws/ws+ phenotype illustration as reference. |
-| 58 | Untitled diagram | Merged | 09H: 22 | The ordered-spore patterns and normalized formula have one clear home. |
+| 35 | Untitled diagram | Repaired | 09E: 15 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
+| 36 | Untitled diagram | Repaired | 09E: 16 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
+| 37 | Tetrad Analysis for Linked Genes in Unordered Tetrads | Repaired | 09E: 16 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
+| 38 | Untitled diagram | Repaired | 09E: 16 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |
+| 39 | Untitled diagram | Merged | 09E: 21 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 40 | Untitled diagram | Merged | 09E: 22 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 41 | Untitled diagram | Merged | 09E: 27 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 42 | From Crossovers to Map Distance | Merged | 09E: 27 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 43 | Untitled diagram | Merged | 09E: 26 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 44 | Untitled diagram | Merged | 09E: 26 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 45 | How to Get the Recombination Frequency? (in Summary) | Merged | 09E: 26 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 46 | Map Distance from Tetrad Counts | Merged | 09E: 26 | Use one count-based explanation; preserve the old NCO/mean-crossover identities in the reference. |
+| 47 | Neurospora crassa (Ordered Tetrads) | Merged | 09H: 4 | The ordered-tetrad section becomes its own final deck. |
+| 48 | Life Cycle of Neurospora crassa | Moved | 09H: 4 | Retain the existing teaching content. |
+| 49 | Ordered Tetrads | Moved | 09H: 5 | Retain the existing teaching content. |
+| 50 | Untitled diagram | Moved | 09H: 24 | Retain the existing teaching content. |
+| 51 | Untitled diagram | Repaired | 09H: 6 | Separate the original chromosome figure from the question; retain its p/q and centromere labels. |
+| 52 | Untitled diagram | Repaired | 09H: 8 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
+| 53 | Untitled diagram | Repaired | 09H: 8 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
+| 54 | Untitled diagram | Repaired | 09H: 9 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
+| 55 | Untitled diagram | Repaired | 09H: 10 | Preserve the original chromosome/centromere relationships, arrows, division labels, and allele-order outcomes. |
+| 56 | Ordered Tetrads from Recombination Between an Allele Pair and Centromere | Moved | 09H: 25 | Preserve the distinct probability tree with its random-ordering assumption stated explicitly. |
+| 57 | Untitled diagram | Moved | 09H: 26 | Retain the distinct ws/ws+ phenotype illustration as reference. |
+| 58 | Untitled diagram | Merged | 09H: 23 | The ordered-spore patterns and normalized formula have one clear home. |
 | 59 | Summary | Superseded | Six topic-specific decks | Replace the mixed-deck bookend with topic-specific objectives, takeaways, and ending. |
 | 60 | More Content: | Merged | 09G: 40 | Retain the unique earlier video link. |
 | 61 | Key Takeaways | Superseded | Six topic-specific decks | Replace the mixed-deck bookend with topic-specific objectives, takeaways, and ending. |
@@ -198,15 +207,15 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 8 | Three Tetrad Classes | Moved | 09F: 7 | Retain the checked two-gene problem, counts, reveals, and calculations. |
 | 9 | Add the Tetrads in Each Class | Moved | 09F: 8 | Retain the checked two-gene problem, counts, reveals, and calculations. |
 | 10 | A and B Are Linked | Moved | 09F: 9 | Retain the checked two-gene problem, counts, reveals, and calculations. |
-| 11 | How Many Spores Are Recombinant? | Moved | 09E: 16 | Retain the existing teaching content. |
-| 12 | Count the Recombinant Spores | Moved | 09E: 17 | Retain the existing teaching content. |
-| 13 | From Spores to Recombination Frequency | Moved | 09E: 18 | Retain the existing teaching content. |
-| 14 | Can Crossovers Hide? | Moved | 09E: 19 | Retain the existing teaching content. |
-| 15 | Use NPD to Estimate the Doubles | Moved | 09E: 20 | Retain the existing teaching content. |
-| 16 | Which TT Tetrads Came From Singles? | Moved | 09E: 21 | Retain the existing teaching content. |
-| 17 | Count the Exchanges Per Chromatid | Moved | 09E: 22 | Retain the existing teaching content. |
-| 18 | Where Does the Three Come From? | Moved | 09E: 23 | Retain the existing teaching content. |
-| 19 | From the Weighted Count to cM | Moved | 09E: 24 | Retain the existing teaching content. |
+| 11 | How Many Spores Are Recombinant? | Moved | 09E: 17 | Retain the existing teaching content. |
+| 12 | Count the Recombinant Spores | Moved | 09E: 18 | Retain the existing teaching content. |
+| 13 | From Spores to Recombination Frequency | Moved | 09E: 19 | Retain the existing teaching content. |
+| 14 | Can Crossovers Hide? | Moved | 09E: 20 | Retain the existing teaching content. |
+| 15 | Use NPD to Estimate the Doubles | Moved | 09E: 21 | Retain the existing teaching content. |
+| 16 | Which TT Tetrads Came From Singles? | Moved | 09E: 22 | Retain the existing teaching content. |
+| 17 | Count the Exchanges Per Chromatid | Moved | 09E: 23 | Retain the existing teaching content. |
+| 18 | Where Does the Three Come From? | Moved | 09E: 24 | Retain the existing teaching content. |
+| 19 | From the Weighted Count to cM | Moved | 09E: 25 | Retain the existing teaching content. |
 | 20 | Substitute the Two-Gene Counts | Moved | 09F: 11 | Retain the checked two-gene problem, counts, reveals, and calculations. |
 | 21 | A to B: 20 cM | Moved | 09F: 12 | Retain the checked two-gene problem, counts, reveals, and calculations. |
 | 22 | Recombination Is Not Map Distance | Moved | 09F: 13 | Retain the checked two-gene problem, counts, reveals, and calculations. |
@@ -252,26 +261,26 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 62 | Which Gene Is in the Middle? | Moved | 09G: 34 | Use the full homework table for classification; use checked class-count summaries for sums and calculations. |
 | 63 | A Is the Middle Gene | Moved | 09G: 35 | Use the full homework table for classification; use checked class-count summaries for sums and calculations. |
 | 64 | Keep Pairwise Estimates Separate | Moved | 09G: 36 | Use the full homework table for classification; use checked class-count summaries for sums and calculations. |
-| 65 | Ordered Tetrads | Merged | 09H: 3 | The ordered section becomes its own deck. |
-| 66 | A New Ordered-Tetrad Problem | Moved | 09H: 10 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 67 | Read the Segregation Patterns | Moved | 09H: 6 | Define FDS/SDS before following the meiotic mechanism. |
-| 68 | The Six Ordered Patterns | Moved | 09H: 11 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 69 | Steps in Ordered Tetrad Mapping | Moved | 09H: 12, 16 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 70 | Which Sets Are SDS? | Moved | 09H: 13 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 71 | First or Second Division? | Moved | 09H: 14 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 72 | Add the Second-Division Asci | Moved | 09H: 15 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 73 | Steps in Ordered Tetrad Mapping | Moved | 09H: 12, 16 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 74 | Why Take Half? | Moved | 09H: 17 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 75 | Use the Ordered-Tetrad Formula | Moved | 09H: 18 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 76 | Substitute the Counts | Moved | 09H: 19 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 77 | Finish the Calculation | Moved | 09H: 20 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 78 | Gene A to Centromere: 15 cM | Moved | 09H: 21 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 65 | Ordered Tetrads | Merged | 09H: 4 | The ordered section becomes its own deck. |
+| 66 | A New Ordered-Tetrad Problem | Moved | 09H: 11 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 67 | Read the Segregation Patterns | Moved | 09H: 7 | Define FDS/SDS before following the meiotic mechanism. |
+| 68 | The Six Ordered Patterns | Moved | 09H: 12 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 69 | Steps in Ordered Tetrad Mapping | Moved | 09H: 13, 17 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 70 | Which Sets Are SDS? | Moved | 09H: 14 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 71 | First or Second Division? | Moved | 09H: 15 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 72 | Add the Second-Division Asci | Moved | 09H: 16 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 73 | Steps in Ordered Tetrad Mapping | Moved | 09H: 13, 17 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 74 | Why Take Half? | Moved | 09H: 18 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 75 | Use the Ordered-Tetrad Formula | Moved | 09H: 19 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 76 | Substitute the Counts | Moved | 09H: 20 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 77 | Finish the Calculation | Moved | 09H: 21 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 78 | Gene A to Centromere: 15 cM | Moved | 09H: 22 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
 | 79 | Summary and Practice | Superseded | Six topic-specific decks | Replace the mixed-deck bookend with topic-specific objectives, takeaways, and ending. |
 | 80 | Steps in Unordered Tetrad Mapping | Superseded | Six topic-specific decks | Keep the shared roadmap where the matching unordered application begins or changes pairs. |
-| 81 | Unordered Tetrad Mapping Reference | Moved | 09E: 25 | Retain the existing teaching content. |
+| 81 | Unordered Tetrad Mapping Reference | Moved | 09E: 26 | Retain the existing teaching content. |
 | 82 | Three-Gene Classification Reference | Repaired | 09G: 37 | Replace the dense genotype-string matrix with the completed homework table. |
-| 83 | Ordered Tetrad Mapping Reference | Moved | 09H: 22 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 84 | Your Turn: Tetrad Analysis Handout | Moved | 09G: 38 | Retain current face-to-face handout instructions. |
+| 83 | Ordered Tetrad Mapping Reference | Moved | 09H: 23 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
+| 84 | Your Turn: Tetrad Analysis Handout | Repaired | 09G: 38 | Retain current instructions beside a complete page-2 preview of the instructor-edited handout. |
 | 85 | Your Turn | Merged | 09G: 39 | Preserve every year label and full prior-year URL in one reference slide. |
 | 86 | Your Turn | Merged | 09G: 39 | Preserve every year label and full prior-year URL in one reference slide. |
 | 87 | Your Turn | Merged | 09G: 39 | Preserve every year label and full prior-year URL in one reference slide. |
@@ -283,36 +292,55 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 
 ### Lecture 09C: Mitotic Crossover
 
+Five research-backed additions are documented in [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md).
+Prior pages 1-3 stay at 1-3; the original twin-spot pages 4-5 move to 6-7; takeaways/end move to 11-12.
+
 | PDF Page | Topic | Djot Owner |
 | --- | --- | --- |
 | 1 | Lecture 09C | lect09c-mitotic_crossover.djot |
 | 2 | Learning Objectives | lect09c-mitotic_crossover.djot |
 | 3 | Mitotic Cross-Over | lect09c-mitotic_crossover.djot |
-| 4 | Mitotic Recombination and Twin Spots | lect09c-mitotic_crossover.djot |
-| 5 | Twin Spots After Mitotic Recombination | lect09c-mitotic_crossover.djot |
-| 6 | Key Takeaways | lect09c-mitotic_crossover.djot |
-| 7 | THE END | lect09c-mitotic_crossover.djot |
+| 4 | Repair Starts with a Matching Copy | lect09c-mitotic_crossover.djot |
+| 5 | Loss of Heterozygosity | lect09c-mitotic_crossover.djot |
+| 6 | Mitotic Recombination and Twin Spots | lect09c-mitotic_crossover.djot |
+| 7 | Twin Spots After Mitotic Recombination | lect09c-mitotic_crossover.djot |
+| 8 | One Event Can Make a Patch | lect09c-mitotic_crossover.djot |
+| 9 | LOH Can Supply a Second Hit | lect09c-mitotic_crossover.djot |
+| 10 | Twin Spots Can Test Gene Function | lect09c-mitotic_crossover.djot |
+| 11 | Key Takeaways | lect09c-mitotic_crossover.djot |
+| 12 | THE END | lect09c-mitotic_crossover.djot |
 
 ### Lecture 09D: Yeast and Unordered Tetrads
+
+The instructor approved splitting former D4 into D5-6 and adding section headings.
+D4 and D12 are new dividers; D6/D14 reuse an actual homework ascus. Former D5-9
+move to D7-11; former D10-14 move to D13-17. No original bullet or unique mating step is removed.
 
 | PDF Page | Topic | Djot Owner |
 | --- | --- | --- |
 | 1 | Lecture 09D | lect09d-yeast_unordered_tetrads.djot |
 | 2 | Learning Objectives | lect09d-yeast_unordered_tetrads.djot |
 | 3 | What Is a Tetrad? | lect09d-yeast_unordered_tetrads.djot |
-| 4 | Products of Meiosis | lect09d-yeast_unordered_tetrads.djot |
-| 5 | Life Cycle of S. cerevisiae | lect09d-yeast_unordered_tetrads.djot |
-| 6 | S. cerevisiae Mating | lect09d-yeast_unordered_tetrads.djot |
-| 7 | Exchange of Mating Factors | lect09d-yeast_unordered_tetrads.djot |
-| 8 | Haploid Yeast Cells Mate | lect09d-yeast_unordered_tetrads.djot |
-| 9 | Mating Produces a Diploid Cell | lect09d-yeast_unordered_tetrads.djot |
-| 10 | One Meiosis, One Ascus | lect09d-yeast_unordered_tetrads.djot |
-| 11 | Why Keep the Four Products Together? | lect09d-yeast_unordered_tetrads.djot |
-| 12 | Yeast Life Cycle Reference | lect09d-yeast_unordered_tetrads.djot |
-| 13 | Key Takeaways | lect09d-yeast_unordered_tetrads.djot |
-| 14 | THE END | lect09d-yeast_unordered_tetrads.djot |
+| 4 | Yeast: Mating and Meiosis | lect09d-yeast_unordered_tetrads.djot |
+| 5 | Products of Meiosis | lect09d-yeast_unordered_tetrads.djot |
+| 6 | All Four Products Stay Together | lect09d-yeast_unordered_tetrads.djot |
+| 7 | Life Cycle of S. cerevisiae | lect09d-yeast_unordered_tetrads.djot |
+| 8 | S. cerevisiae Mating | lect09d-yeast_unordered_tetrads.djot |
+| 9 | Exchange of Mating Factors | lect09d-yeast_unordered_tetrads.djot |
+| 10 | Haploid Yeast Cells Mate | lect09d-yeast_unordered_tetrads.djot |
+| 11 | Mating Produces a Diploid Cell | lect09d-yeast_unordered_tetrads.djot |
+| 12 | From Meiosis to Tetrads | lect09d-yeast_unordered_tetrads.djot |
+| 13 | One Meiosis, One Ascus | lect09d-yeast_unordered_tetrads.djot |
+| 14 | Why Keep the Four Products Together? | lect09d-yeast_unordered_tetrads.djot |
+| 15 | Yeast Life Cycle Reference | lect09d-yeast_unordered_tetrads.djot |
+| 16 | Key Takeaways | lect09d-yeast_unordered_tetrads.djot |
+| 17 | THE END | lect09d-yeast_unordered_tetrads.djot |
 
 ### Lecture 09E: Crossovers and Tetrad Mapping
+
+Former E6 is now a static question/answer pair at E6-7; former E7-29 shift by one.
+E28 remains later in the teaching sequence. Figures/formulas use consistent class colors.
+See [LECT09EFG_REVIEW.md](LECT09EFG_REVIEW.md) for E/F/G changes and verification.
 
 | PDF Page | Topic | Djot Owner |
 | --- | --- | --- |
@@ -322,29 +350,30 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 4 | Crossover Histories | lect09e-tetrad_classes_map_distance.djot |
 | 5 | Two Different Kinds of Labels | lect09e-tetrad_classes_map_distance.djot |
 | 6 | Classify All Four Spores | lect09e-tetrad_classes_map_distance.djot |
-| 7 | Unlinked Genes Can Give PD or NPD | lect09e-tetrad_classes_map_distance.djot |
-| 8 | Two Equally Likely Arrangements | lect09e-tetrad_classes_map_distance.djot |
-| 9 | Linkage Changes the Class Counts | lect09e-tetrad_classes_map_distance.djot |
-| 10 | NCO Gives PD | lect09e-tetrad_classes_map_distance.djot |
-| 11 | SCO Gives TT | lect09e-tetrad_classes_map_distance.djot |
-| 12 | How Can We Obtain NPD? | lect09e-tetrad_classes_map_distance.djot |
-| 13 | Two Crossovers, Four Chromatids | lect09e-tetrad_classes_map_distance.djot |
-| 14 | Which Tetrad Class? | lect09e-tetrad_classes_map_distance.djot |
-| 15 | Crossovers and Their Tetrad Outcomes | lect09e-tetrad_classes_map_distance.djot |
-| 16 | How Many Spores Are Recombinant? | lect09e-tetrad_classes_map_distance.djot |
-| 17 | Count the Recombinant Spores | lect09e-tetrad_classes_map_distance.djot |
-| 18 | From Spores to Recombination Frequency | lect09e-tetrad_classes_map_distance.djot |
-| 19 | Can Crossovers Hide? | lect09e-tetrad_classes_map_distance.djot |
-| 20 | Use NPD to Estimate the Doubles | lect09e-tetrad_classes_map_distance.djot |
-| 21 | Which TT Tetrads Came From Singles? | lect09e-tetrad_classes_map_distance.djot |
-| 22 | Count the Exchanges Per Chromatid | lect09e-tetrad_classes_map_distance.djot |
-| 23 | Where Does the Three Come From? | lect09e-tetrad_classes_map_distance.djot |
-| 24 | From the Weighted Count to cM | lect09e-tetrad_classes_map_distance.djot |
-| 25 | Unordered Tetrad Mapping Reference | lect09e-tetrad_classes_map_distance.djot |
-| 26 | Other Crossover Estimates | lect09e-tetrad_classes_map_distance.djot |
-| 27 | Unlinked Tetrads Reference | lect09e-tetrad_classes_map_distance.djot |
-| 28 | Key Takeaways | lect09e-tetrad_classes_map_distance.djot |
-| 29 | THE END | lect09e-tetrad_classes_map_distance.djot |
+| 7 | The Three Classification Answers | lect09e-tetrad_classes_map_distance.djot |
+| 8 | Unlinked Genes Can Give PD or NPD | lect09e-tetrad_classes_map_distance.djot |
+| 9 | Two Equally Likely Arrangements | lect09e-tetrad_classes_map_distance.djot |
+| 10 | Linkage Changes the Class Counts | lect09e-tetrad_classes_map_distance.djot |
+| 11 | NCO Gives PD | lect09e-tetrad_classes_map_distance.djot |
+| 12 | SCO Gives TT | lect09e-tetrad_classes_map_distance.djot |
+| 13 | How Can We Obtain NPD? | lect09e-tetrad_classes_map_distance.djot |
+| 14 | Two Crossovers, Four Chromatids | lect09e-tetrad_classes_map_distance.djot |
+| 15 | Which Tetrad Class? | lect09e-tetrad_classes_map_distance.djot |
+| 16 | Crossovers and Their Tetrad Outcomes | lect09e-tetrad_classes_map_distance.djot |
+| 17 | How Many Spores Are Recombinant? | lect09e-tetrad_classes_map_distance.djot |
+| 18 | Count the Recombinant Spores | lect09e-tetrad_classes_map_distance.djot |
+| 19 | From Spores to Recombination Frequency | lect09e-tetrad_classes_map_distance.djot |
+| 20 | Can Crossovers Hide? | lect09e-tetrad_classes_map_distance.djot |
+| 21 | Use NPD to Estimate the Doubles | lect09e-tetrad_classes_map_distance.djot |
+| 22 | Which TT Tetrads Came From Singles? | lect09e-tetrad_classes_map_distance.djot |
+| 23 | Count the Exchanges Per Chromatid | lect09e-tetrad_classes_map_distance.djot |
+| 24 | Where Does the Three Come From? | lect09e-tetrad_classes_map_distance.djot |
+| 25 | From the Weighted Count to cM | lect09e-tetrad_classes_map_distance.djot |
+| 26 | Unordered Tetrad Mapping Reference | lect09e-tetrad_classes_map_distance.djot |
+| 27 | Other Crossover Estimates | lect09e-tetrad_classes_map_distance.djot |
+| 28 | Unlinked Genes Can Also Give TT | lect09e-tetrad_classes_map_distance.djot |
+| 29 | Key Takeaways | lect09e-tetrad_classes_map_distance.djot |
+| 30 | THE END | lect09e-tetrad_classes_map_distance.djot |
 
 ### Lecture 09F: Two-Gene Tetrad Mapping
 
@@ -424,35 +453,38 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 
 ### Lecture 09H: Ordered Tetrads and Centromeres
 
+Definitions are added at H3; former H3-27 shift forward one page. See [LECT09H_REVIEW.md](LECT09H_REVIEW.md).
+
 | PDF Page | Topic | Djot Owner |
 | --- | --- | --- |
-| 1 | Lecture 09H | lect09h-ordered_tetrads_centromeres.djot |
+| 1 | Lecture 09H / Ordered Tetrads and Centromeres / Chapter 8 / Dr. Neil Voss / November 3, 2026 | lect09h-ordered_tetrads_centromeres.djot |
 | 2 | Learning Objectives | lect09h-ordered_tetrads_centromeres.djot |
-| 3 | Life Cycle of Neurospora crassa | lect09h-ordered_tetrads_centromeres.djot |
-| 4 | Meiosis Followed by Mitosis | lect09h-ordered_tetrads_centromeres.djot |
-| 5 | A Gene and Its Centromere | lect09h-ordered_tetrads_centromeres.djot |
-| 6 | Read the Segregation Patterns | lect09h-ordered_tetrads_centromeres.djot |
-| 7 | No Crossover or One Crossover? | lect09h-ordered_tetrads_centromeres.djot |
-| 8 | At Meiosis I and II | lect09h-ordered_tetrads_centromeres.djot |
-| 9 | After Mitosis: Eight Spores | lect09h-ordered_tetrads_centromeres.djot |
-| 10 | A New Ordered-Tetrad Problem | lect09h1-ordered_centromere.djot |
-| 11 | The Six Ordered Patterns | lect09h1-ordered_centromere.djot |
-| 12 | Steps in Ordered Tetrad Mapping | ordered_tetrad_steps.djot |
-| 13 | Which Sets Are SDS? | lect09h1-ordered_centromere.djot |
-| 14 | First or Second Division? | lect09h1-ordered_centromere.djot |
-| 15 | Add the Second-Division Asci | lect09h1-ordered_centromere.djot |
-| 16 | Steps in Ordered Tetrad Mapping | ordered_tetrad_steps.djot |
-| 17 | Why Take Half? | lect09h1-ordered_centromere.djot |
-| 18 | Use the Ordered-Tetrad Formula | lect09h1-ordered_centromere.djot |
-| 19 | Substitute the Counts | lect09h1-ordered_centromere.djot |
-| 20 | Finish the Calculation | lect09h1-ordered_centromere.djot |
-| 21 | Gene A to Centromere: 15 cM | lect09h1-ordered_centromere.djot |
-| 22 | Ordered Tetrad Mapping Reference | lect09h-ordered_tetrads_centromeres.djot |
-| 23 | Neurospora Life Cycle Reference | lect09h-ordered_tetrads_centromeres.djot |
-| 24 | Random Ordering Reference | lect09h-ordered_tetrads_centromeres.djot |
-| 25 | A Spore-Color Example | lect09h-ordered_tetrads_centromeres.djot |
-| 26 | Key Takeaways | lect09h-ordered_tetrads_centromeres.djot |
-| 27 | THE END | lect09h-ordered_tetrads_centromeres.djot |
+| 3 | Ordered Tetrad Terms | lect09h-ordered_tetrads_centromeres.djot |
+| 4 | Life Cycle of Neurospora crassa | lect09h-ordered_tetrads_centromeres.djot |
+| 5 | Meiosis Followed by Mitosis | lect09h-ordered_tetrads_centromeres.djot |
+| 6 | A Gene and Its Centromere | lect09h-ordered_tetrads_centromeres.djot |
+| 7 | Read the Segregation Patterns | lect09h-ordered_tetrads_centromeres.djot |
+| 8 | No Crossover or One Crossover? | lect09h-ordered_tetrads_centromeres.djot |
+| 9 | At Meiosis I and II | lect09h-ordered_tetrads_centromeres.djot |
+| 10 | After Mitosis: Eight Spores | lect09h-ordered_tetrads_centromeres.djot |
+| 11 | A New Ordered-Tetrad Problem | lect09h1-ordered_centromere.djot |
+| 12 | The Six Ordered Patterns | lect09h1-ordered_centromere.djot |
+| 13 | Steps in Ordered Tetrad Mapping | ordered_tetrad_steps.djot |
+| 14 | Which Sets Are SDS? | lect09h1-ordered_centromere.djot |
+| 15 | First or Second Division? | lect09h1-ordered_centromere.djot |
+| 16 | Add the Second-Division Asci | lect09h1-ordered_centromere.djot |
+| 17 | Steps in Ordered Tetrad Mapping | ordered_tetrad_steps.djot |
+| 18 | Why Take Half? | lect09h1-ordered_centromere.djot |
+| 19 | Use the Ordered-Tetrad Formula | lect09h1-ordered_centromere.djot |
+| 20 | Substitute the Counts | lect09h1-ordered_centromere.djot |
+| 21 | Finish the Calculation | lect09h1-ordered_centromere.djot |
+| 22 | Gene A to Centromere: 15 cM | lect09h1-ordered_centromere.djot |
+| 23 | Ordered Tetrad Mapping Reference | lect09h-ordered_tetrads_centromeres.djot |
+| 24 | Neurospora Life Cycle Reference | lect09h-ordered_tetrads_centromeres.djot |
+| 25 | Random Ordering Reference | lect09h-ordered_tetrads_centromeres.djot |
+| 26 | A Spore-Color Example | lect09h-ordered_tetrads_centromeres.djot |
+| 27 | Key Takeaways | lect09h-ordered_tetrads_centromeres.djot |
+| 28 | THE END | lect09h-ordered_tetrads_centromeres.djot |
 
 ## Pre-Split Maps (Historical)
 

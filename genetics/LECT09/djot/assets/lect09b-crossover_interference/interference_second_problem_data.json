@@ -1,0 +1,200 @@
+{
+  "source_bank": "/Users/vosslab/nsh/PROBLEMS/biology-problems-website/site_docs/genetics/topic08/bbq-three-point_test_cross-find_interence-NUM-questions.txt",
+  "item": 11,
+  "bank_sha256": "a3db050a64692b06eada47cf89f9308e99a30e73885a170ec2fb9e3c8e7c35b9",
+  "item_sha256": "6ad302562496cad0d4866e68b483aef1cbb3249a8efda4182e83b477172c45da",
+  "generator": "/Users/vosslab/nsh/PROBLEMS/biology-problems/problems/inheritance-problems/gene_mapping/three-point_test_cross-find_interence.py",
+  "generator_revision_at_capture": "6039b8ad72565b284c9a073060429df8f175545d",
+  "generator_sha256": "ace4cca5fb23cf91a37ba74de1f11552dbcbe1716a8249d92f050027ab8d82a6",
+  "provenance_note": "Existing generated numeric-bank item; checkout revision is recorded at capture, without inferring a historical seed.",
+  "column_order": "AEJ",
+  "gene_order": "AJE",
+  "traits": {
+    "A": "artsy",
+    "E": "eery",
+    "J": "jerky"
+  },
+  "trait_descriptions": [
+    "Gene A is linked with the 'artsy' phenotype. A fruit fly that is homozygous recessive for Gene A has wings that are colorful and distinctive patterns.",
+    "Gene E is associated with the 'eery' phenotype. A fruit fly that is homozygous recessive for Gene E appears to have something off, crooked limbs and other twisted appendages.",
+    "Gene J is analogous to the 'jerky' phenotype. A fruit fly that is homozygous recessive for Gene J moves in rapid and sudden movements, displaying an unpredictable flight pattern."
+  ],
+  "rows": [
+    {
+      "phenotype": "artsy, eery, jerky",
+      "genotype": "aej",
+      "count": 854,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #fce9b5; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ddecff; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe2e8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "artsy, eery",
+      "genotype": "ae+",
+      "count": 507,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #fce9b5; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ddecff; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #953668;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "artsy, jerky",
+      "genotype": "a+j",
+      "count": 2112,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #fce9b5; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #006591;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe2e8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "artsy",
+      "genotype": "a++",
+      "count": 47,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #fce9b5; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #006591;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #953668;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "eery, jerky",
+      "genotype": "+ej",
+      "count": 23,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #795700;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ddecff; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe2e8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "eery",
+      "genotype": "+e+",
+      "count": 2088,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #795700;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ddecff; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #953668;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "jerky",
+      "genotype": "++j",
+      "count": 543,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #795700;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #006591;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #000000;",
+          "cell": "border: 1px solid black; background-color: #ffe2e8; padding: 3px 5px;"
+        }
+      ]
+    },
+    {
+      "phenotype": "wildtype",
+      "genotype": "+++",
+      "count": 826,
+      "allele_colors": [
+        {
+          "text": "font-size: large; color: #795700;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #006591;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        },
+        {
+          "text": "font-size: large; color: #953668;",
+          "cell": "border: 1px solid black; background-color: #f8f8f8; padding: 3px 5px;"
+        }
+      ]
+    }
+  ],
+  "total": 7000,
+  "parents": [
+    "a+j",
+    "+e+"
+  ],
+  "double_crossovers": [
+    "a++",
+    "+ej"
+  ],
+  "given_distances_cM": {
+    "AJ": 16,
+    "JE": 25,
+    "AE": 39
+  },
+  "outer_pair_note": "The bank labels AE as 39 cM; its table gives 39 percent outer-pair recombination, while adjacent intervals sum to 41 cM.",
+  "answer": {
+    "observed_dco": 70,
+    "expected_dco": "280",
+    "coincidence": "1/4",
+    "interference": "3/4",
+    "percent": 75
+  },
+  "numeric_answer_tolerance": 0.1,
+  "wording_adjustment": "Teach percentage interference; omit the original distance/cM numeric-answer tips. Original HTML is preserved."
+}

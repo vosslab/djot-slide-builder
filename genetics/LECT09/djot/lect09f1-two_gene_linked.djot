@@ -51,13 +51,13 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 @top
 
-![two gene classes](assets/lect09c-tetrad_worked_examples_bpw/two_gene_classes.svg)
+![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
 
 @bottom
 
-- *PD*: only parental combinations, ab and ++.
-- *NPD*: only nonparental combinations, a+ and +b.
-- *TT*: all four combinations, one of each.
+- *[PD]{color=#935D00}*: only parental combinations, ab and ++.
+- *[NPD]{color=#007A00}*: only nonparental combinations, a+ and +b.
+- *[TT]{color=#A719DB}*: all four combinations, one of each.
 
 === layout: two-panels
 
@@ -71,9 +71,9 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-Add the counts of all PD, NPD, and TT sets.
+Add the counts of all [PD]{color=#935D00}, [NPD]{color=#007A00}, and [TT]{color=#A719DB} sets.
 
-Are PD and NPD approximately equal?
+Are [PD]{color=#935D00} and [NPD]{color=#007A00} approximately equal?
 
 - Given parents: ++ / ab.
 - Total: 1,000 tetrads.
@@ -94,10 +94,10 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- PD = 650.
-- NPD = 10.
-- TT = 340.
-- PD is much greater than NPD: *linked*.
+- [PD]{color=#935D00} = 650.
+- [NPD]{color=#007A00} = 10.
+- [TT]{color=#A719DB} = 340.
+- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
 - Check: 650 + 10 + 340 = 1,000.
 
 - Given parents: ++ / ab.
@@ -113,11 +113,11 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 @body
 
-- TT, NPD, and N are tetrad counts.
-- N includes all tetrads, including PD.
+- [TT]{color=#A719DB}, [NPD]{color=#007A00}, and N are tetrad counts.
+- N includes all tetrads, including [PD]{color=#935D00}.
 
 $$
-D = \frac{\frac{1}{2}TT + 3NPD}{N} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + 3\textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100 \;\mathrm{cM}
 $$
 
 - We already tested linkage. Now substitute the counts.
@@ -135,7 +135,7 @@ $$
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{\frac{1}{2}(340) + 3(10)}{1000} \times 100 \;\mathrm{cM}
+D = \frac{\frac{1}{2}(\textcolor{#A719DB}{340}) + 3(\textcolor{#007A00}{10})}{1000} \times 100 \;\mathrm{cM}
 $$
 
 Calculate the numerator first.
@@ -160,7 +160,7 @@ Spores shown for A-B. Count tetrads, not individual spores.
 [*Step 4: Calculate Distance*]{color=#007A00}
 
 $$
-D = \frac{170 + 30}{1000} \times 100 = 20 \;\mathrm{cM}
+D = \frac{\textcolor{#A719DB}{170} + \textcolor{#007A00}{30}}{1000} \times 100 = 20 \;\mathrm{cM}
 $$
 
 The weighted count is 200; the total is 1,000 tetrads.
@@ -183,14 +183,14 @@ Spores shown for A-B. Count tetrads, not individual spores.
 - The same tetrads give two answers because we are measuring different things.
 
 $$
-RF = \frac{\frac{1}{2}(340) + 10}{1000} \times 100 = 18\%
+RF = \frac{\frac{1}{2}(\textcolor{#A719DB}{340}) + \textcolor{#007A00}{10}}{1000} \times 100 = 18\%
 $$
 
 $$
-D = \frac{\frac{1}{2}(340) + 3(10)}{1000} \times 100 = 20 \;\mathrm{cM}
+D = \frac{\frac{1}{2}(\textcolor{#A719DB}{340}) + 3(\textcolor{#007A00}{10})}{1000} \times 100 = 20 \;\mathrm{cM}
 $$
 
 @notes
 
-Ask what changed between the formulas: the NPD weight changes from one to three. The correction adds 2 cM here. We still observed 18% recombinant spores; estimating hidden exchanges does not change those observed genotypes.
+Ask what changed between the formulas: the [NPD]{color=#007A00} weight changes from one to three. The correction adds 2 cM here. We still observed 18% recombinant spores; estimating hidden exchanges does not change those observed genotypes.
 
