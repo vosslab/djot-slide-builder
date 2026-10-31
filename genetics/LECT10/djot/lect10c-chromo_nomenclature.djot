@@ -1,0 +1,267 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 10C
+
+## Chromosomal Positions
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 10, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Identify the p and q arms of a chromosome.
+- Decode chromosome, arm, region, band, and subband in an address.
+- Interpret a cytogenetic address such as 7q31.2.
+
+=== layout: section
+
+# Chromosomal Positions
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_002.png)
+
+@top-right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_001.png)
+
+@bottom-right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_003.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Tan = Genes*
+
+@body
+
+- Gene density is not highly correlated with chromosome size!!!
+  - Chromosomes 19 and 22 have the highest gene densities
+  - Chromosomes 4 and 5 have the lowest gene densities
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_004.png)
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_005.png)
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_006.png)
+
+=== layout: two-over-one-panels
+@replaceme
+
+
+@top-left
+
+- *The short arm of a chromosome is called "p" and the long arm "q".*
+
+@top-right
+
+- p = petite
+- q = not p
+
+@bottom
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_007.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Karyotype Definitions*
+
+@body
+
+- Chromosomes are grouped into 7 sets denoted by letter A to G.
+  - X is included by group C
+  - Y is included in group G
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_008.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Karyotype Definitions*
+
+@body
+
+- Chromosomes are grouped into 7 sets denoted by letter A to G.
+  - X is included by group C
+  - Y is included in group G
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_008.png)
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_009.png)
+
+=== layout: two-panels
+@replaceme
+
+# *Karyotype Definitions*
+
+@left
+
+- Chromosomes are grouped into 7 sets denoted by letter A to G.
+  - X is included by group C
+  - Y is included in group G
+
+@right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_009.png)
+
+- SRY locus &#8211; Yp11.3
+
+=== layout: one-panel
+
+# *Banding Pattern*
+
+@body
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_010.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Conventions*
+
+@body
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_010.png)
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_011.png)
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+- "+21" presence of an extra copy of chromosome 21
+- "21+" chromosome is longer than usual
+
+@right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_011.png)
+
+=== layout: section
+
+# The CFTR Gene Is Located at Position 7q31.2. What Does 7q31.2 Mean?
+
+=== layout: two-panels
+
+# *7q31.2*
+
+@left
+
+- 7 &#8594; chromosome 7
+- q &#8594; long arm
+- 31.2
+  - region #3
+  - band #1
+  - subband #2
+
+@right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+
+=== layout: one-panel
+
+# *Dewey Decimal System for Genes*
+
+@body
+
+- Geneticists use a standardized way of describing a gene's cytogenetic location. In most cases, the location describes the position of a particular band on a stained chromosome\:
+  - 17q12
+- It can also be written as a range of bands, if less is known about the exact location\:
+  - 17q12-q21
+
+=== layout: one-panel
+@replaceme
+
+# *Gene Chromosomal Address*
+
+@body
+
+- 1. The first number or letter used to describe a gene's location represents the chromosome.
+  - Chromosomes 1 through 22 (the autosomes) are designated by their chromosome number.
+  - The sex chromosomes are designated by X or Y.
+
+- [7]{color=red}q31.2
+
+=== layout: one-panel
+@replaceme
+
+# *Gene Chromosomal Address*
+
+@body
+
+- 2. The chromosome arm is the second part of the gene's address.
+  - Choice of either [q]{color=red} or [p]{color=red} (petite)
+  - For example, 5q is the long arm of chromosome 5, and Xp is the short arm of the X chromosome.
+
+- 7[q]{color=red}31.2
+
+=== layout: stacked-panels
+
+# *Gene Chromosomal Address*
+
+@top
+
+- 3. The position of a gene is based on the pattern of light and dark bands on the stained chromosome.
+  - The position is usually designated by two digits (representing a region and a band)
+    - sometimes it is followed by a decimal point and one or more additional digits.
+  - The number indicating the gene position increases with distance from the centromere.
+    - For example\: 14q21 represents position 21 on the long arm of chromosome 14. 14q21 is closer to the centromere than 14q22.
+
+@bottom
+
+- 7q[31.2]{color=red}
+
+=== layout: two-panels
+
+# *7q31.2*
+
+@left
+
+- 7 &#8594; chromosome 7
+- q &#8594; long arm
+- 31.2
+  - region #3
+  - band #1
+  - sub-band #2
+
+@right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- The p arm is short; the q arm is long.
+- A chromosome address identifies a chromosome, arm, and band.
+- Band numbers increase with distance from the centromere.
+- An address can specify a single band or a range of bands.
+
+=== layout: theend
+
+# THE END

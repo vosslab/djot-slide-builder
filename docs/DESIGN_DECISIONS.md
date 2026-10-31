@@ -1,3 +1,16 @@
+# Design decisions
+
+## Genetics 09/10 conversion (2026-10-31)
+
+- Keep both existing Lecture 09 B filenames and identities distinct. Use the maintained 2026
+  announcement master for both weeks; the mislabeled 09 copy and 2025 10 announcements remain
+  historical evidence. Keep one source slide per content slide, with additions recorded in maps.
+- Expand source table merges only in temporary ODP copies for the current importer, then author
+  native Djot spans. Keep unresolved visual relationships explicitly marked for replacement.
+- Each equation-adjacent prose fragment owns its native ODP list. Start that fragment's list at
+  level zero while retaining the original measured paragraph indentation; a parent list cannot
+  span independent text frames.
+
 <!-- VENDORED HEADER: START -->
 Record each durable decision about how this code and repository are shaped, once it is settled, with
 the reasoning a later reader needs. Guidance Neil Voss states belongs in
@@ -5,7 +18,6 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 `docs/active_plans/decisions/`. [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
-# Design decisions
 
 - Table headers use black text and a course-accent tint with HSL lightness at least
   80%, preserving hue and saturation. Explicit native cell drawing fills prevent

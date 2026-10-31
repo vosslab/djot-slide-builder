@@ -30,7 +30,8 @@ def test_equation_bullets_keep_native_prose_and_reveals(
 	monkeypatch.setattr(slide_lib.math_render, "render_equations", measured_equations)
 	path = tmp_path / "inline.djot"
 	path.write_text("=== layout: one-panel\n# Example\n@body\n"
-		"=> cascade appear\n- A complete native prose paragraph.\n- $x$\n"
+		"=> cascade appear\n- A complete native prose paragraph.\n"
+		"  - A nested explanation.\n- $x$\n"
 		"=== layout: one-panel\n# Display\n@body\n$$x$$\n", encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme()
 	plan = slide_lib.layout_engine.compile_layout_deck(slide_lib.djot_parser.parse_deck(path), theme).plan
@@ -41,6 +42,8 @@ def test_equation_bullets_keep_native_prose_and_reveals(
 		assert len(images) == 2
 		paragraphs = root.findall(f".//{{{slide_lib.odp_export.TEXT_NS}}}p")
 		assert any("".join(paragraph.itertext()) == "A complete native prose paragraph."
+			for paragraph in paragraphs)
+		assert any("".join(paragraph.itertext()) == "A nested explanation."
 			for paragraph in paragraphs)
 		for image in images:
 			member = image.attrib[f"{{{slide_lib.odp_export.XLINK_NS}}}href"]

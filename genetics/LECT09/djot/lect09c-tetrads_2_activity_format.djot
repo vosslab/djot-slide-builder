@@ -1,0 +1,808 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09C
+
+## Tetrad Analysis, Part 2
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Identify the parental combinations for each gene pair.
+- Classify tetrads as PD, NPD, or TT for each pair.
+- Test linkage and calculate pairwise map distances.
+- Use the pairwise distances to construct a gene map.
+
+=== layout: section
+
+# Saccharomyces cerevisiae (Unordered Tetrad)
+
+=== layout: one-panel
+
+# *Life Cycle of S. cerevisiae*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_001.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_002.jpg)
+
+@right
+
+- *Ascomycete fungi form an* [*ascus*]{color=red} *with four haploid cells from meiosis*
+
+- Formation of an ascus containing all of the four products of a single meiosis.
+
+=== layout: two-panels
+@replaceme
+
+# *Tetrad Analysis*
+
+@left
+
+- [parental ditype]{color=#B47804} ([PD]{color=#B47804}) tetrad
+  - AB AB ab ab
+  - only parental genotypes are observed
+- [nonparental ditype]{color=#00A933} ([NPD]{color=#00A933}) tetrad
+  - Ab Ab aB aB
+  - only recombinant genotypes are observed
+- [tetratype (TT)]{color=#A1467E} tetrad
+  - AB Ab aB ab
+  - all four possible genotypes are present
+
+@right
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+- NCO, noncrossover meioses; SCO, single-crossover meioses; DCO, double-crossover meioses
+
+@bottom
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_006.png)
+
+- Triples and higher numbers of crossovers might occur, but we may assume that such crossovers are rare and therefore negligible.
+
+- NCO
+
+- SCO
+
+- DCO
+
+- DCO
+
+- DCO
+
+- DCO
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_007.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_008.png)
+
+- [*adjusted for double crossovers*]{color=red}
+
+=== layout: one-panel
+
+# *Map Distance*
+
+@body
+
+- The map distance for tetrads is given by the formula\:
+- with parentheses and below without\:
+
+$$
+\text{Map distance} = \frac{\frac{1}{2}(TT + 6 \cdot NPD)}{\text{total}}
+$$
+
+$$
+\text{Map distance} = \frac{\frac{1}{2}TT + 3 \cdot NPD}{\text{total}}
+$$
+
+=== layout: section
+
+# Tetrad Analysis with Three (3) Genes
+
+=== layout: one-panel
+
+# *Steps to Solve an Unordered Tetrad Problem*
+
+@body
+
+- _The yeast Saccharomyces cerevisiae has unordered tetrads. A cross is made to study the linkage relationships among three genes._
+- Step 1\: Find the Parental Ditypes (PD) for all three genes.
+- Step 2\: Pick any two genes (for example, a,b)
+- Step 3\: Determine if the two genes are linked.
+  - PD &#8811; NPD &#8594; linked; PD &#8776; NPD &#8594; unlinked
+- Step 4\: Determine the map distance between the two genes
+  - D = &#189; (TT + 6 NPD)/total = (3 NPD + &#189;TT)/total x 100%
+- Step 5\: Go to Step 2 and pick a new pair of genes until all pairs are complete.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_011.svg)
+
+- The yeast Saccharomyces cerevisiae has unordered tetrads.
+- In a cross made to study the linkage relationships among three genes, the following tetrads were obtained.
+- The cross was between a strain of genotype + b c and one of genotype a + +.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_011.svg)
+
+- Given\: parental genotypes of + b c / a + +.
+  - _You CANNOT determine parental genotypes based on progeny in tetrad analysis_
+- Q1\: Are genes a and b linked?
+- [Ignore gene c]{color=#FF0066} &#8594; [PD]{color=#B47804}\: +b / a+
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_012.svg)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+- Given\: parental genotypes of + b c / a + +.
+  - _You CANNOT determine parental genotypes based on progeny in tetrad analysis_
+- Q1\: Are genes a and b linked?
+- [Ignore gene c]{color=#FF0066} &#8594; [PD]{color=#B47804}\: +b / a+
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_012.svg)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+- Parental genotypes + b c / a + +.
+- Are genes a and b linked?
+- [Ignore gene c]{color=#FF0066} &#8594; [PD]{color=#B47804}\: +b / a+
+  - [PD]{color=#B47804} = 135 + 59 + 1 = 195
+  - [NPD]{color=#00A933} = 124 + 70 + 1 = 195
+- [*PD = NPD, so genes are unlinked*]{color=#FF4000}
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_011.svg)
+
+- Given\: parental genotypes of + b c / a + +.
+  - _You CANNOT determine parental genotypes based on progeny in tetrad analysis_
+- Q1\: Are genes b and c linked?
+- [*Ignore gene a*]{color=blue} &#8594; [*PD\: bc / ++*]{color=#B47804}
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_013.svg)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+- Q1\: Are genes b and c linked?
+- [Ignore gene a]{color=#073D7C} &#8594; [PD]{color=#A46509}\: b c / + + &#8211;
+  - [PD]{color=#A46509}=135+1=136
+  - [NPD]{color=#159D27} = 124 + 1 = 125
+  - [TT]{color=#8E306B}=59+70=129
+- [*While not equal, PD is close to NPD, so genes are unlinked*]{color=#FC2707}
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_011.svg)
+
+- Given\: parental genotypes of + b c / a + +.
+  - _You CANNOT determine parental genotypes based on progeny in tetrad analysis_
+- Q1\: Are genes a and c linked?
+- [*Ignore gene b*]{color=#B47804} &#8594; [*PD\: +c / a+*]{color=#B47804}
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_014.svg)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+- Ignore gene b &#8594; PD\: +c/a+
+  - PD  = 135 + 124 = 259
+  - NPD = 1 + 1     = 2
+  - TT  = 59 + 70   = 129
+- [PD >> NPD, so genes are linked!!]{color=#FF5429}
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_014.svg)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_005.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_004.png)
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_003.png)
+
+- Map Distance between genes a and c\:
+  - PD = 135 + 124 = 259
+  - NPD = 1 + 1 = 2
+  - TT = 59 + 70 = 129
+- m = &#189; ([TT]{color=#8D1D75} + 6 [NPD]{color=green})/total = &#189; (129 + 12)/390 = [18.1 m.u.]{color=#ED4C05}
+
+- censored
+
+- censored
+
+- censored
+
+- censored
+
+=== layout: section
+
+# Another Example, You Can Do This Yourself.
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_015.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_016.png)
+
+- For each pair of genes, classify the tetrads as [PD]{color=#B47804}, [NPD]{color=#00A933} and [TT]{color=#A1467E}, and tabulate the results as follows\:
+- leu2 &#8211; trp1 (l and t)
+  - [PD]{color=#B47804}\: 230 + 235 = 465
+  - [NPD]{color=#00A933}\: 215 + 220 = 435
+  - [TT]{color=#A1467E}\: 54 + 46 = 100
+- For this pair of genes, [PD]{color=#B47804} = [NPD]{color=#00A933}, therefore, [leu2 and trp1 are unlinked.]{color=#FF4000}
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_016.png)
+
+- For each pair of genes, classify the tetrads as [PD]{color=#B47804}, [NPD]{color=#00A933} and [TT]{color=#A1467E}, and tabulate the results as follows\:
+- leu2 &#8211; met14 (l and m)
+  - [PD\:]{color=#B47804} 235 + 220 = 455
+  - [NPD\:]{color=#00A933} 230 + 215 = 445
+  - [TT\:]{color=#A1467E} 54 + 46 = 100
+- For this pair of genes, [PD]{color=#B47804} &#8776; [NPD]{color=#00A933}, therefore, [leu2 and met14 are unlinked.]{color=#FF4000}
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_016.png)
+
+- For each pair of genes, classify the tetrads as [PD]{color=#B47804}, [NPD]{color=#00A933} and TT, and tabulate the results as follows\:
+- trp1 &#8211; met14 (t and m)
+  - [PD\:]{color=#B47804} 235 + 215 + 46 = 496
+  - [NPD\:]{color=#00A933} 230 + 220 + 54 = 504
+  - [TT\:]{color=#A1467E} = 0
+- For this pair of genes, [PD]{color=#B47804} = [NPD]{color=#00A933} and therefore, [trp1 and met14 are also unlinked.]{color=#FF4000}
+- However, there are no [TT]{color=#A1467E} for trp1 and met14, which means that both genes are [closely linked to their respective centromeres]{color=orange}.
+
+=== layout: section
+
+# Another One in the Format of the Quiz
+
+=== layout: one-panel
+
+# *Steps to Solve an Unordered Tetrad Problem*
+
+@body
+
+- _The yeast Saccharomyces cerevisiae has unordered tetrads. A cross is made to study the linkage relationships among three genes._
+- Step 1\: Find the Parental Ditypes (PD) for all three genes.
+- Step 2\: Pick any two genes (for example, a,b)
+- Step 3\: Determine if the two genes are linked.
+  - PD &#8811; NPD &#8594; linked; PD &#8776; NPD &#8594; unlinked
+- Step 4\: Determine the map distance between the two genes
+  - D = &#189; (TT + 6 NPD)/total = (3 NPD + &#189;TT)/total x 100%
+- Step 5\: Go to Step 2 and pick a new pair of genes until all pairs are complete.
+
+=== layout: one-panel
+
+# *Calculate All the Gene Distances*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: section
+
+# Genes A and B (Ignore C)
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and B*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and B*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and B*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+
+- total [PD]{color=#B47804} = 1357
+- total [NPD]{color=#00A933} = 47
+- genes A and B are linked
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and B*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+
+- total [PD]{color=#B47804} = 1357
+- total [NPD]{color=#00A933} = 47
+- genes A and B are linked
+
+- d = (0.5\*(408+688) + 3x47)/2500 \* 100%
+- [d = 27.56]{color=red}
+
+=== layout: section
+
+# Genes A and C (Ignore B)
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and C*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and C*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+- [NPD]{color=#00A933}
+- [PD]{color=#B47804}
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and C*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+- total [PD]{color=#B47804} = 2060
+- total [NPD]{color=#00A933} = 32
+- genes A and C are linked
+
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+- [NPD]{color=#00A933}
+- [PD]{color=#B47804}
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for A and C*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+- d = (0.5\*(408) + 3\*32)/2500 \* 100%
+- [d = 12.0 m.u.]{color=red}
+
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+- [NPD]{color=#00A933}
+- [PD]{color=#B47804}
+
+- total [PD]{color=#B47804} = 2060
+- total [NPD]{color=#00A933} = 32
+- genes A and C are linked
+
+=== layout: section
+
+# Genes B and C (Ignore A)
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for B and C*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for B and C*
+
+@body
+
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [NPD]{color=#00A933}
+- [PD]{color=#B47804}
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for B and C*
+
+@body
+
+- total [PD]{color=#B47804} = 1785
+- total [NPD]{color=#00A933} = 27
+- genes B and C are linked
+
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [NPD]{color=#00A933}
+- [PD]{color=#B47804}
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: one-panel
+@replaceme
+
+# *Calculate the Gene  Distance for B and C*
+
+@body
+
+- d = (0.5\*(688) + 3\*27)/2500 \* 100%
+- [d = 17.0 m.u.]{color=red}
+
+- total [PD]{color=#B47804} = 1785
+- total [NPD]{color=#00A933} = 27
+- genes B and C are linked
+
+- [PD]{color=#B47804}
+- [PD]{color=#B47804}
+- [NPD]{color=#00A933}
+- [TT]{color=#A1467E}
+- [NPD]{color=#00A933}
+- [PD]{color=#B47804}
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- TOTAL\: 2500
+
+=== layout: one-panel
+
+# *Calculate All the Gene Distances*
+
+@body
+
+![Lecture diagram](assets/lect09c-tetrads_2_activity_format/image_017.svg)
+
+- a - 12 - c - 17 - b
+
+=== layout: one-panel
+
+# Your Turn: Tetrad Analysis Handout
+
+@body
+
+- Use the unordered tetrad handout provided in class.
+- For each gene pair, classify the tetrads as PD, NPD, or TT.
+- Determine which genes are linked and calculate their map distances.
+- Use your results to construct the gene map.
+
+=== layout: one-panel
+
+# *Your Turn*
+
+@body
+
+- Past-year reference for practice outside class; use the handout in class.
+
+- Unordered Tetrad Three Gene Distances Group Activity
+- Fall 2024 Link\:
+  - [https\://docs.google.com/presentation/d/1hVxs5Qz7LSH8484HJMrAR7WwZ6KfQFz4Lo7gmOCJI10/edit](https://docs.google.com/presentation/d/1hVxs5Qz7LSH8484HJMrAR7WwZ6KfQFz4Lo7gmOCJI10/edit)
+- via Google Slides
+
+=== layout: one-panel
+
+# *Your Turn*
+
+@body
+
+- Past-year reference for practice outside class; use the handout in class.
+
+- Unordered Tetrad Three Gene Distances Group Activity
+- Fall 2023 Link\:
+  - [https\://docs.google.com/presentation/d/1SOhsJAvdCR2QvH8c5kVvtpH46KzVRh646gOjdyDZt9E/edit](https://docs.google.com/presentation/d/1SOhsJAvdCR2QvH8c5kVvtpH46KzVRh646gOjdyDZt9E/edit)
+- via Google Slides
+
+=== layout: one-panel
+
+# *Your Turn*
+
+@body
+
+- Past-year reference for practice outside class; use the handout in class.
+
+- Unordered Tetrad Three Gene Distances Group Activity
+- Fall 2022 Link\:
+  - [https\://docs.google.com/presentation/d/1\_DlBOqPbVyHJpIcmknIXKrQegnYpEjN0Fm5qd5xz604/edit?usp=sharing](https://docs.google.com/presentation/d/1_DlBOqPbVyHJpIcmknIXKrQegnYpEjN0Fm5qd5xz604/edit?usp=sharing)
+- via Google Slides
+
+=== layout: one-panel
+
+# *Dr. Voss YouTube Video*
+
+@body
+
+- Solving the Unordered Tetrad Problems
+- [https\://www.youtube.com/watch?v=szlcnLn5mc8](https://www.youtube.com/watch?v=szlcnLn5mc8)
+
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# *More Content\:*
+
+@body
+
+- Bozeman Science\:
+  - [https\://youtu.be/gXUxH1aFRp0](https://youtu.be/gXUxH1aFRp0)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Start with the given parental genotypes.
+- Consider two genes at a time and classify every tetrad.
+- Compare PD with NPD before calculating linked-gene distances.
+- Repeat for every pair, then use the distances to build the map.
+
+=== layout: theend
+
+# THE END

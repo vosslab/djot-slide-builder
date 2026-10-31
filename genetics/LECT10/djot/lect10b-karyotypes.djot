@@ -1,0 +1,604 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 10B
+
+## Karyotypes
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 10, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain how a karyotype is prepared from condensed chromosomes.
+- Compare chromosome banding with fluorescent chromosome painting.
+- Classify chromosome shapes by centromere position.
+- Describe the origin and research importance of HeLa cells.
+
+=== layout: section
+
+# Welcome to Chapter 9
+
+=== layout: one-panel
+@replaceme
+
+# *Abnormalities*
+
+@body
+
+- We study some of the chromosomal abnormalities encounter in human beings and other animals and plants
+- In general animals are much less tolerant of chromosomal changes than are plants.
+- Duplication of entire sets of chromosomes is not necessarily harmful in plants.
+
+=== layout: one-panel
+
+# *Sets of Chromosomes in Human Cells*
+
+@body
+
+- Human somatic cells have 23 pairs of chromosomes
+- A [*karyotype*]{color=red} is an ordered display of the pairs of chromosomes from a cell
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_001.jpg)
+
+- [*APPLICATION*]{color=#563A84}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_002.jpg)
+
+- [*Technique*]{color=#E97200}
+
+- [*Application*]{color=#E97200}
+
+- *Pair of homologous*
+- *duplicated chromosomes*
+
+- *Centromere*
+
+- *Metaphase*
+- *chromosome*
+
+- *Sister*
+- *chromatids*
+
+- *5 &#181;m*
+
+- A karyotype is a display of condensed chromosomes arranged in pairs.
+- Karyotyping can be used to screen for defective chromosomes
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_003.jpg)
+
+- [*TECHNIQUE*]{color=#563A84}
+
+- *Pair of homologous*
+- *replicated chromosomes*
+
+- *Centromere*
+
+- *Sister*
+- *chromatids*
+
+- *Metaphase*
+- *chromosome*
+
+- *5 &#181;m*
+
+=== layout: multiple-choice
+@replaceme
+
+@question
+
+![Lecture diagram](assets/lect10b-karyotypes/image_004.png)
+
+Q. You are preparing a karyotype for a patient, during which phase of cell division do you take a snapshot of the cell?
+
+- A. anaphase
+- B. interphase
+- C. metaphase
+- D. prometaphase
+- E. telophase
+
+@answer
+
+Answer\: C
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- A [*karyotype*]{underline=true} is a photograph of an individual's chromosomes arranged in pairs and arranged according to their lengths.
+  - The photograph is taken during mitosis when all of the chromosomes have been duplicated and condensed.
+    - Prophase they are in a bunch and usually not defined enough.
+  - The toxin [_colchicine_]{color=red} is added to the cells preventing the spindles from binding to the centromeres, so cell division is stuck in metaphase.
+- Two different ways to label the chromosomes\:
+  - *1. Traditional staining*
+  - *2. Chromosome painting*
+
+=== layout: section
+@replaceme
+
+# Traditional [Karyotype]{color=#B2B2B2} Chromosome [Staining]{color=#666666}
+
+=== layout: one-panel
+@replaceme
+
+# *1. Traditional Staining*
+
+@body
+
+- *1. Traditional staining* &#8211; to treat chromosomes with a  staining reagent called GIEMSA
+  - which causes the chromosomes to exhibit bands, called G-bands which are specific to each pair of homologs.
+- Heterochromatic regions, which tend to be rich with adenine and thymine (AT-rich) DNA and relatively gene-poor, stain more darkly in G-banding.
+  - Conversely, R-bands are less condensed chromatin, which tends to be rich with guanine and cytosine (GC-rich) and more transcriptionally active.
+
+=== layout: one-panel
+@replaceme
+
+# *Heterochromatin and Euchromatin*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_005.png)
+
+- Heterochromatin refers to regions of the chromosome that have a dense, compact structure in interphase.
+- Euchromatin is visible only after chromosome condensation in mitosis or meiosis.
+
+=== layout: two-plus-one-panels
+@replaceme
+
+# *1. Traditional Staining*
+
+@top-left
+
+- G-bands are relatively gene poor
+- R-bands are gene-rich
+
+@bottom-left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_007.png)
+
+@right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_006.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_008.png)
+
+=== layout: one-panel
+
+
+@body
+
+- In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
+- More than one maybe correct.
+  - A. length
+  - B. position of the centromere
+  - C. staining pattern
+  - D. character coded for by their genes
+  - E. X-shaped
+
+=== layout: multiple-choice
+@replaceme
+
+@question
+
+![Lecture diagram](assets/lect10b-karyotypes/image_009.png)
+
+In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
+
+- length
+- position of the centromere
+- staining pattern
+- character coded for by their genes
+- X-shaped
+
+@answer
+
+[Answer\: all of the above]{color=red}
+
+=== layout: section
+@replaceme
+
+# [Modern]{color=#579835} [Karyotype]{color=#C38312} [Chromosome]{color=#512480} [Painting]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *2. Chromosome Painting*
+
+@body
+
+- *2. Chromosome painting\:* Different colors are painted on each chromosome by hybridization with DNA strands labeled with different fluorescent dyes.
+  - Fluorescence in situ hybridization (FISH) is a technique that uses fluorescent probes that bind to only those parts of the chromosome with a high degree of sequence complementarity.
+- The hybridization of multiple chromosome painting probes, each tagged with a specific fluorochrome results in the differential color display of chromosomes, i.e. color karyotyping.
+
+=== layout: one-panel
+
+# *Fluorescence in Situ Hybridization (FISH)*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_010.png)
+
+=== layout: one-panel
+
+# *Multicolor FISH (mFISH) and Spectral Karyotype (SKY Technique)*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_011.png)
+
+=== layout: one-panel
+
+# *How Does SKY Work?*
+
+@body
+
+- Large collection of probes. Each probe is complementary to a unique region of one chromosome &#8211; together the "library" is complementary to all of the chromosomes within the human genome.
+- Each probe is labeled with a fluorescent color that is designated for a specific chromosome.
+  - For example, probes that are complementary to chromosome 1 are labeled with yellow molecules, while those that are complementary to chromosome 2 are labeled with red molecules, and so on.
+
+=== layout: one-panel
+
+# *Comparison*
+
+@body
+
+- There are two slightly different imaging systems that utilize the polarized fluorescence filters to distinguish a mixture of chromosomal paints in a karyotype.
+  - multicolor FISH (mFISH; Speicher et al., 1996).
+  - spectral karyotyping (SKY; Schrock et al., 1996)
+- Main difference\:
+  - one image acquisition with post-analysis in SKY versus sequential imaging with specific filters in mFISH.
+
+=== layout: two-panels
+
+# *Articles*
+
+@left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_012.png)
+
+@right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_013.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_014.png)
+
+![Lecture diagram](assets/lect10b-karyotypes/image_015.png)
+
+- *Two Color Systems*
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_016.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_003.jpg)
+
+- [*TECHNIQUE*]{color=#563A84}
+
+- *Pair of homologous*
+- *replicated chromosomes*
+
+- *Centromere*
+
+- *Sister*
+- *chromatids*
+
+- *Metaphase*
+- *chromosome*
+
+- *5 &#181;m*
+
+=== layout: section
+
+# Another Type of Cellular Painting\: BrainBow
+
+=== layout: one-panel
+
+# *Command and Control Center*
+
+@body
+
+- The human brain contains about 100 billion neurons, organized into circuits more complex than the most powerful supercomputers
+- Powerful imaging techniques allow researchers to monitor multiple areas of the brain while the subject performs various tasks
+- A recent advance uses expression of combinations of colored proteins in brain cells, a technique called "brainbow"
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_017.svg)
+
+@right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_018.svg)
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_019.svg)
+
+@right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_020.svg)
+
+=== layout: one-panel
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_021.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+- Chromosome Shapes
+
+=== layout: one-panel
+
+# *Based on Centromere Location*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_022.png)
+
+=== layout: one-panel
+
+# *Metacentric*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_023.png)
+
+=== layout: one-panel
+
+# *Submetacentric*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_024.png)
+
+=== layout: one-panel
+
+# *Acrocentric*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_025.png)
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Other Shapes*
+
+@left
+
+- [*Acentric*]{underline=true} &#8211; without centromere &#8211; gene typically unstable
+
+- [*Dicentric*]{underline=true} &#8211; two centromeres &#8211; unstable due to unpredictable transmission
+
+@top-right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_026.png)
+
+@bottom-right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_027.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Number of Chromosomes*
+
+@body
+
+- Mosquito\: 6
+- Drosophila (fruit fly)\: 8
+- Onion\: 16
+- Cat, Pig\: 38
+- Dolphin, Rabbit\: 44
+- Humans\: 46
+- Tobacco, Monkeys, Great Apes\: 48
+- Dog, Chicken\: 78
+- Carp\: 104
+
+=== layout: two-panels
+
+# *Great Apes*
+
+@left
+
+- Bonobo
+- Chimpanzee
+- Gorilla
+- Human
+- Orangutan
+
+@right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_028.png)
+
+=== layout: two-panels
+
+# *Great Apes*
+
+@left
+
+- 46 chromosomes
+  - Human
+- 48 chromosomes
+  - Bonobo
+  - Chimpanzee
+  - Gorilla
+  - Orangutan
+
+@right
+
+![Lecture diagram](assets/lect10b-karyotypes/image_029.png)
+
+=== layout: one-panel
+@replaceme
+
+# *The Proposed Mechanism for the Creation of the Long Human Chromosome 2 by Fusion of Two Shorter Chromosomes*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_030.jpg)
+
+- Genetically unstable
+
+- Chimpanzee
+- Gorilla &#8211; have
+- 48 chromosomes
+
+=== layout: one-panel
+
+# *Neanderthal Karyotype*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_031.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_032.jpg)
+
+=== layout: section
+
+# *The Story of* *HeLa Cells*
+
+=== layout: one-panel
+
+# *HeLa Cells*
+
+@body
+
+- a cell type in an immortal cell line used in scientific research.
+- the oldest and most commonly used human cell lines.
+- derived from cervical cancer cells taken from [*He*]{underline=true}nrietta [*La*]{underline=true}cks
+  - a patient who eventually died of her cancer on October 4, 1951.
+- remarkably durable and prolific
+  - contaminated many other cell lines used in research
+
+=== layout: two-panels
+
+# *Cause of Ms. Lacks Cancer*
+
+@left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_033.png)
+
+@right
+
+- Human papillomavirus (HPV) causes 70% of all cervical cancers. But less than 10% cases become cancer.
+- Sexually transmitted disease. More than 80% of American women will have contracted HPV by age 50.
+- In 2006, a vaccine was approved for use. There are efforts to require teenage girls to get vaccinated.
+
+=== layout: two-panels
+
+# *Significance of HeLa Cells*
+
+@left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_034.png)
+
+@right
+
+- Discovered that HeLa cells did something they'd never seen before\: They could be kept alive and grow.
+- First human cells that could be grown in a lab and were "immortal." They did not die after a few cell divisions and could be used for conducting many experiments.
+- Used to develop polio vaccine and research cancer, understand AIDS, develop drugs  the effects of radiation and toxic substances, and gene mapping.
+- Scientists have grown some 50 million metric tons of her cells.
+- this would fill all the skyscrapers in Chicago
+
+=== layout: two-panels
+
+# *Henrietta Lacks*
+
+@left
+
+![Lecture diagram](assets/lect10b-karyotypes/image_035.png)
+
+@right
+
+- an poor African&#8211;American woman without health insurance who was the unwitting donor of cells from her cancerous tumor in 1951.
+- In the early 1970s, the family started getting calls from researchers who wanted blood samples from them to learn the family's genetics.
+- Family wondered why and this is when they learned about the removal of Henrietta's cells.
+- Family members are still confused about how Henrietta's cells could have been taken without her consent and how they could still be alive 50 years after her death.
+
+=== layout: one-panel
+
+# *HeLa Karyotype Is Crazy!!!*
+
+@body
+
+![Lecture diagram](assets/lect10b-karyotypes/image_036.png)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Karyotypes arrange condensed chromosomes in homologous pairs.
+- Banding and fluorescent probes help identify chromosomes.
+- Centromere position distinguishes chromosome shapes.
+- HeLa cells connect chromosome variation, research, and consent.
+
+=== layout: theend
+
+# THE END

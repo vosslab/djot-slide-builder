@@ -1,0 +1,297 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 09B
+
+## Crossover Interference
+
+## Chapter 8
+
+## Dr. Neil Voss
+
+## November 3, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Calculate expected double crossovers from interval frequencies.
+- Calculate the coefficient of coincidence and interference.
+- Relate crossover frequency to genetic map distance.
+
+=== layout: section
+
+# Crossover Interference
+
+=== layout: one-panel
+@replaceme
+
+@body
+
+![Recombination Frequencies](assets/lect09b-crossover_interference/b_cn_vg.svg)
+
+- Wait 9% + 9.5% = 18.5% &#8800; 17%
+
+=== layout: one-panel
+
+# *Genetic Interference*
+
+@body
+
+- [*Interference*]{color=red}\: A phenomenon where one crossover event on a chromosome decreases the likelihood of another crossover nearby.
+- [*Reduced Crossovers*]{color=red}\: When crossovers are close together, they can stop each other from happening.
+- [*Non-Random Recombination*]{color=red}\: This process doesn't happen just; it's a specific pattern that disrupts normal crossover rates.
+- [*Changes Expected Ratios*]{color=red}\: The usual expected mix of offspring traits according to simple genetics rules gets altered.
+- [*Measuring Interference*]{color=red}\: Scientists use special calculations like Coefficient of Coincidence (CoC) to find out how much interference is happening.
+- [*Effects on Gene Maps*]{color=red}\: Interference is important for accurate mapping of genes, as it affects how often genes are exchanged during reproduction
+
+=== layout: two-panels
+@replaceme
+
+# *Step 5\: Find Distance Between Genes*
+
+@left
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_002.png)
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_003.png)
+
+@right
+
+- *distance between lz and gl genes*
+
+- [Expected\: 10.7 + 14.7 = 25.4 m.u.]{color=#0000CC}
+- 176 of 740 have crossovers between lz and gl.
+- 40+33+59+44
+- [176/740 = 23.7 m.u.]{color=orange}
+- 6 are double cross-overs that are usually not counted.
+- 176 + 6x2 = 188
+- 188/740 = 25.4 m.u.
+- how does this work...
+
+=== layout: one-panel
+
+# *Interference*
+
+@body
+
+- probability of crossover between [lz]{color=red} and [su]{color=#0000FF} was 0.107 (10.7 map units)
+- probability of crossover between [su]{color=#0000FF} and [gl]{color=red} was 0.147 (14.7 map units)
+- expected double crossover rate\:
+  - 0.107 &#215; 0.147 = 0.0157
+  - 0.0157 &#215; 740 offspring = [11.6 double crossovers]{color=blue}
+- only [6 double crossovers]{color=orange} were observed.
+- less double crossovers than expected is called [*interference*]{color=red underline=true}
+  - [*coefficient of coincidence = 6/11.6 = 51.7%*]{color=#FF33FF underline=true}
+  - [*interference = 1 &#8211; coc = 100 &#8211; 51.7 = 48.3%*]{color=#FF33FF underline=true}
+
+=== layout: one-panel
+@replaceme
+
+# *Interference Calculation Lz/Su/Gl*
+
+@body
+
+- Probability of Independent Crossovers\: Multiply individual probabilities of crossovers between genes Lz/Su and Su/Gl.
+  - [Calculation\: 0.107 (Lz/Su) &#215; 0.147 (Su/Gl) = 0.015729]{color=red}
+- Expected Double Crossovers\: Apply the combined probability to a total progeny counts (e.g., 1000 progeny).
+  - [Expected Number\: 0.015729 &#215; 740 = 11.648.5]{color=red}
+- Coefficient of Coincidence (CoC)\: Ratio of observed to expected double crossovers.
+  - [Calculation\: 6 (observed) / 11.64 (expected) = 0.5155 or 51.55%]{color=red}
+- Interference\: Measure of the reduction in expected crossovers due to interference.
+  - [Calculation\: Interference\: 1 - CoC = 1 &#8211; 0.5155 = 0.485 or 48.5%]{color=red}
+- This indicates a 48.5% decrease in expected double crossovers, showing no interference.
+
+=== layout: two-over-one-panels
+
+# *A Mapping Function*
+
+@top-left
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_004.jpg)
+
+@top-right
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_005.png)
+
+@bottom
+
+- A mapping function corrects for the loss of detectable recombinants due to multiple cross-overs
+- chromosome interference occurs when crossing-over reduces the probability of a second cross-over nearby
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_004.jpg)
+
+=== layout: section
+
+# Roles of Heterochromatin and Euchromatin
+
+=== layout: one-panel
+
+# *Less Recombination in* *_Heterochromatin_* *than* *_Euchromatin_*
+
+@body
+
+- Here, heterochromatin accounts for 2.8% of the total map length but is \~25% of the physical length.
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_006.jpg)
+
+=== layout: one-panel
+@replaceme
+
+# *Heterochromatin and Euchromatin*
+
+@body
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_007.png)
+
+- Heterochromatin refers to regions of the chromosome that have a dense, compact structure in interphase.
+- Euchromatin is visible only after chromosome condensation in mitosis or meiosis.
+
+=== layout: one-panel
+@replaceme
+
+# *Interference in Different Chromatin Regions*
+
+@body
+
+- Chromatin Structure Impact\: The compactness of heterochromatin restricts genetic recombination, unlike the more accessible euchromatin.
+  - [Due to its tightly packed structure, heterochromatin has fewer crossovers, demonstrating higher interference.]{color=blue}
+  - [Being loosely packed, euchromatin allows more frequent crossovers, indicating lower interference.]{color=orange}
+- Functional Dynamics\: Gene mapping uncovers the functional implications of chromatin structure on gene expression and regulation. It shows specific regions where genes are active or silent.
+  - [Gene maps reveal sparse gene activity within heterochromatin&#8212;unseen in traditional stains.]{color=blue}
+  - Interference patterns help identify boundaries of heterochromatin regions where crossovers are suppressed.
+
+=== layout: section
+
+# Sample Problems
+
+=== layout: stacked-panels
+@replaceme
+
+@top
+
+![Recombination Frequencies](assets/lect09b-crossover_interference/a_c_b.svg)
+
+@bottom
+
+![Offspring Data](assets/lect09b-crossover_interference/image_008.svg)
+
+- From the table on the right the total offspring was 3000 and there were 54 double crossovers. The gene distances are reported above.
+- What is the interference?
+
+=== layout: stacked-panels
+@replaceme
+
+@top
+
+![Recombination Frequencies](assets/lect09b-crossover_interference/a_c_b.svg)
+
+@bottom
+
+![Offspring Data](assets/lect09b-crossover_interference/image_008.svg)
+
+- 0.12 \* 0.15 \* 3000 = 54
+- number of double crossovers = 54
+- there is no interference
+
+=== layout: one-panel
+
+# *Interference Calculation ACB*
+
+@body
+
+- Probability of Independent Crossovers\: Multiply individual probabilities of crossovers between genes A/C and C/B.
+  - [Calculation\: 0.12 (A/C) &#215; 0.15 (C/B) = 0.018]{color=red}
+- Expected Double Crossovers\: Apply the combined probability to a total progeny counts (e.g., 1000 progeny).
+  - [Expected Number\: 0.018 &#215; 3000 = 54]{color=red}
+- Coefficient of Coincidence (CoC)\: Ratio of observed to expected double crossovers.
+  - [Calculation\: 54 (observed) / 54 (expected) = 1.0 or 100%]{color=red}
+- Interference\: Measure of the reduction in expected crossovers due to interference.
+  - [Calculation\: Interference\: 1 - CoC = 1 &#8211; 1.0 = 0.0 or 0%]{color=red}
+- This indicates a 0% decrease in expected double crossovers, showing no interference.
+
+=== layout: two-panels
+@replaceme
+
+# *Your Turn*
+
+@left
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_009.png)
+
+@right
+
+- (a)	F g H / f G h
+- (b)	F G H and f g h
+- (c)	F G H is correct order
+- (H G F is also valid)
+- (d)	F/G = 41+33 ;
+- G/H = 50+64
+- (e)	F to G\: 80/1000 = 8 m.u.
+- G to H\: 120/1000 = 12 m.u.
+
+- What is the interference ratio for this problem?
+
+=== layout: two-panels
+@replaceme
+
+# *Your Turn*
+
+@left
+
+![Lecture diagram](assets/lect09b-crossover_interference/image_009.png)
+
+@right
+
+- (a)	F g H / f G h
+- (b)	F G H and f g h
+- (c)	F G H is correct order
+- (H G F is also valid)
+- (d)	F/G = 41+33 ;
+- G/H = 50+64
+- (e)	F to G\: 80/1000 = 8 m.u.
+- G to H\: 120/1000 = 12 m.u.
+
+- What is the interference ratio for this problem?
+- probability\:	0.08 &#215; 0.12 = 0.0096
+- expected\:		0.0096 &#215; 1000 = 9.6
+- coefficient\:	6/9.6 = 62.5%
+- interference\:	1 &#8211; 0.625 = 37.5%
+
+=== layout: one-panel
+
+# *Interference Calculation FGH*
+
+@body
+
+- Probability of Independent Crossovers\: Multiply individual probabilities of crossovers between genes F/G and G/H.
+  - [Calculation\: 0.08 (F/G) &#215; 0.12 (G/H) = 0.0096]{color=red}
+- Expected Double Crossovers\: Apply the combined probability to a total progeny counts (e.g., 1000 progeny).
+  - [Expected Number\: 0.0096 &#215; 1000 = 9.6]{color=red}
+- Coefficient of Coincidence (CoC)\: Ratio of observed to expected double crossovers.
+  - [Calculation\: 6 (observed) / 9.6 (expected) = 0.625 or 62.5%]{color=red}
+- Interference\: Measure of the reduction in expected crossovers due to interference.
+  - [Calculation\: Interference\: 1 - CoC = 1 - 0.625 = 0.375 or 37.5%]{color=red}
+- This indicates a 37.5% decrease in expected double crossovers, illustrating the impact of interference.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Expected double crossovers use the two interval probabilities.
+- Coefficient of coincidence compares observed and expected doubles.
+- Interference equals one minus the coefficient of coincidence.
+
+=== layout: theend
+
+# THE END

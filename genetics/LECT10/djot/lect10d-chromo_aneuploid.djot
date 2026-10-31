@@ -1,0 +1,726 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 10D
+
+## Chromosome Aneuploidy
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 10, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish polyploidy, aneuploidy, trisomy, and monosomy.
+- Predict gametes after nondisjunction in meiosis I or II.
+- Relate trisomy 21 to chromosome segregation.
+- Compare prenatal screening with diagnostic chromosome testing.
+
+=== layout: section
+
+# Chromosome Aneuploidy
+
+=== layout: one-panel
+
+# *Chromosome Alterations*
+
+@body
+
+- Large-scale chromosomal alterations in humans and other mammals often lead to spontaneous abortions (miscarriages) or cause a variety of developmental disorders
+- Plants tolerate such genetic changes better than animals do
+
+=== layout: two-plus-one-panels
+
+
+@top-left
+
+- About 15% of all pregnancies terminate in spontaneous abortion.
+- many (\~50%) due to chromosomal abnormalities
+
+@bottom-left
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_002.png)
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_001.png)
+
+=== layout: one-panel
+
+# *Chromosome Errors*
+
+@body
+
+- [*Euploid*]{underline=true} &#8211; organism where chromosome number is an exact multiple of the haploid number
+  - [*balanced translocation*]{underline=true} &#8211; non-homologous chromosomes interchange parts, but all parts are present
+- [*Aneuploid*]{underline=true} &#8211; organism where chromosome number is NOT an exact multiple of haploid number
+  - [*unbalanced translocation*]{underline=true} &#8211; some or part of the genome is missing or duplicated.
+- [*Polyploid*]{underline=true} &#8211; organisms containing more than two paired (homologous) sets of chromosomes.
+
+=== layout: section
+
+# Polyploid
+
+=== layout: two-panels
+
+# *Polyploid*
+
+@left
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_003.png)
+
+@right
+
+- Polyploid cells and organisms are those containing more than two paired sets of chromosomes.
+  - Polyploidy is found in some organisms and is especially common in plants.
+- Most Eukaryotes are diploid
+  - one set inherited from each parent.
+- [Estimated that 30&#8211;80% of living plant species are polyploid.]{color=red}
+  - [Human breeding and cultivation methods have tended to produce these variants.]{color=red}
+- Polyploid plants are usually unable to interbreed with their diploid ancestors
+
+=== layout: one-panel
+
+# *Polyploidy*
+
+@body
+
+- Polyploidy is a condition in which an organism has more than two complete sets of chromosomes
+  - Triploidy (3n) is three sets of chromosomes
+  - Tetraploidy (4n) is four sets of chromosomes
+- [Polyploidy is common in plants, but not in animals]{color=red}
+- Polyploids are more normal in appearance than aneuploids
+
+=== layout: section
+
+# Aneuploid
+
+=== layout: two-panels
+@replaceme
+
+# *Aneuploid*
+
+@left
+
+- Aneuploid &#8211; organism where chromosome number is [NOT an exact multiple of haploid number]{color=red}
+  - [*Trisomy*]{underline=true} &#8211; diploid with extra copy of an individual chromosome
+  - [*Monosomy*]{underline=true} &#8211; diploid with missing copy of an individual chromosome
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_004.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_005.png)
+
+- [trisomy, 21]{color=red}
+
+=== layout: one-panel
+
+# *Most Common Trisomy*
+
+@body
+
+- Trisomy 13 (Patau Syndrome)
+  - more than 80% don't survive more than a few weeks, very rarely live into their teens.
+  - low birthweight, brain-structure problems, and undeveloped facial features
+- Trisomy 18 (Edward's Syndrome)
+  - many babies with the condition don't survive to birth; of those who survive, less than 10% live to reach age 1.
+  - born very small and frail, have many serious health problems and physical defects
+- Trisomy 21 (Down Syndrome)
+  - mild to moderate issues with thinking, reasoning, and understanding; tend to have certain physical features in common
+
+=== layout: two-panels
+
+# *Trisomy 13    Trisomy 18*
+
+@left
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_006.png)
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_007.png)
+
+=== layout: two-panels
+
+# *Down Syndrome*
+
+@left
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_008.png)
+
+@right
+
+- caused by the presence of an extra chromosome 21. In this case, instead of having two of chromosome 21, your baby will have three.
+- characterized by delayed physical and mental development.
+
+=== layout: one-panel
+@replaceme
+
+# *Down Syndrome Stats*
+
+@body
+
+- Down syndrome is an aneuploid condition that results from three copies of chromosome 21
+  - There are three types of Down syndrome\:
+    - 95% trisomy 21 (nondisjunction)
+    - 4% translocation accounts
+    - 1% mosaicism accounts
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_009.png)
+
+=== layout: two-panels
+@replaceme
+
+# *Down Syndrome Stats*
+
+@left
+
+- Down syndrome is the most commonly occurring chromosomal condition.
+  - Chromosomal trisomy has been reported to occur in at least 4% of all pregnancies
+  - Trisomy 21 occurs in about 1 in 700 live births
+  - Trisomy 21 is the only autosomal trisomy where the people survive to adulthood.
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_010.png)
+
+=== layout: one-panel
+
+# *Down Syndrome Stats*
+
+@body
+
+- Down syndrome occurs in people of all races and economic levels
+- Most people with Down syndrome lead healthy lives, but they have an increased risk for certain medical conditions
+  - such as congenital heart defects, respiratory and hearing problems, Alzheimer's disease, childhood leukemia and thyroid conditions.
+
+=== layout: two-panels
+
+# *Down Syndrome Incidence*
+
+@left
+
+- Risk for having a baby with Downs Syndrome increases with maternal age.
+  - Women who are 35 have a 1 in 350 chance of having a child with the syndrome
+    - Women who are 45 have a 1 in 30 chance.
+    - Woman less than 30, have 1 in 1000.
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_011.png)
+
+=== layout: two-panels
+
+# *Affect of Mother'S Age*
+
+@left
+
+- The incidence of births of children with Down syndrome increases with the age of the mother.
+  - The frequency of Down syndrome increases with the age of the mother, a correlation that has not been well explained
+- But due to higher fertility rates in younger women, 80% of children with Down syndrome are born to women under 35 years of age
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_012.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Why Is Age a Factor?*
+
+@body
+
+- Based on mice studies...
+- There are proteins (cohesin and securin) present that [_help keep chromosomes together_]{color=#00A933} at their centers.
+- Lower levels of these proteins cause the sister strands to be more [_loosely connected_]{color=#00A933} and [_further apart_]{color=#00A933}.
+- Researchers found that [_older female mice had lower amounts_]{color=#00A933} of these proteins in their eggs.
+- Less of these proteins leads to [_instability in the chromosome pairs_]{color=#00A933} and a [_higher likelihood of nondisjunction_]{color=#00A933}.
+
+- \^\^ literally the only source I can find on the internet
+- maybe this one\: [https\://www.ncbi.nlm.nih.gov/pmc/articles/PMC4013030/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4013030/)
+
+
+
+@citation
+
+https://utswmed.org/medblog/age-matters-down-syndrome/
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_013.jpg)
+
+=== layout: two-panels
+
+# *Video\: Is Iceland on Track to Eliminate Down Syndrome?*
+
+@left
+
+- CBS News on Assignment
+- Air Date\: Aug 14, 2017
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_014.png)
+
+
+
+@citation
+
+https://www.cbsnews.com/video/is-iceland-on-track-to-eliminate-down-syndrome/
+
+=== layout: stacked-panels
+
+
+@top
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_015.png)
+
+@bottom
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_016.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_015.png)
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_016.png)
+
+- chromosomes underwent replication with no cell division, resulting in a tetraploid.
+
+=== layout: section
+
+# Prenatal Testing
+
+=== layout: one-panel
+
+# *Prenatal Triple Screen Test*
+
+@body
+
+- The triple screen test is a maternal blood screening test that looks for three specific substances\: [AFP]{color=red}, [hCG]{color=red}, and [Estriol]{color=red}.
+  - Low levels of AFP and abnormal levels of hCG and estriol may indicate that the developing baby has a chromosome abnormality.
+
+=== layout: one-plus-two-panels
+
+# *Nuchal Translucency (NT) Scan*
+
+@left
+
+- prenatal ultrasound screening scan to detect chromosomal abnormalities
+  - Performed between 11 and 14 weeks of gestation
+- Nuchal scanning over biochemical blood profiling has reduced false positive rates
+  - Nuchal scanning alone detects 62% of all Down syndrome (sensitivity) with a false positive rate of 5.0%
+  - Nuchal scanning combined with blood testing gives corresponding values of 73% and 4.7%.
+- When screening is positive, chorionic villus sampling (CVS) or amniocentesis testing is required to confirm the presence of a genetic abnormality
+
+@top-right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_017.png)
+
+@bottom-right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_018.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Invasive Fetal Testing*
+
+@body
+
+- [*Amniocentesis*]{color=red}, the liquid that bathes the fetus is removed and tested
+  - Amniocentesis detects chromosome abnormalities, neural tube defects, and genetic disorders. Also provides access to DNA for paternity testing.
+- [*Chorionic villus sampling (CVS)*]{color=#168253}, a sample of the placenta is removed and tested
+  - Also detects chromosome abnormalities (e.g. Down syndrome) and genetic disorders (e.g. cystic fibrosis). It does not allow for testing for neural tube defects.
+- [*Percutaneous umbilical blood sampling (PUBS)*]{color=orange}, blood is removed from the umbilical cord
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_019.jpg)
+
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_020.jpg)
+
+- *(b) Chorionic villus sampling (CVS)*
+
+- *Bio-*
+- *chemical*
+- *tests*
+
+- *Placenta*
+
+- *Chorionic*
+- *villi*
+
+- *Fetus*
+
+- *Suction tube*
+- *inserted*
+- *through*
+- *cervix*
+
+- *Fetal*
+- *cells*
+
+- *Several*
+- *hours*
+
+- *Several*
+- *hours*
+
+- *Karyotyping*
+
+=== layout: two-panels
+
+# *Percutaneous Umbilical Blood Sampling (PUBS)*
+
+@left
+
+- Percutaneous umbilical blood sampling (PUBS). This is also done in the second trimester using blood removed from the umbilical cord.
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_021.png)
+
+=== layout: two-over-one-panels
+
+# *Newborn Screening*
+
+@top-left
+
+- One common test is for phenylketonuria (PKU)
+  - A recessively inherited disorder of phenylalanine metabolism
+  - A PKU test is done after a baby is 24 hours old and after the baby has ingested protein to ensure accurate results.
+
+@top-right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_022.png)
+
+@bottom
+
+- Some genetic disorders can be detected shortly after birth by simple tests that are now routinely performed in most hospitals.
+- Blood test results usually are ready by the time a baby is 5&#8211;7 days old. Parents won't often hear about results if screening tests were normal.
+
+=== layout: two-panels
+@replaceme
+
+# *Newborn Screening*
+
+@left
+
+- [Metabolic problems.]{color=#168253}
+  - phenylketonuria (PKU)
+  - methylmalonic acidemia
+  - maple syrup urine disease (MSUD)
+  - tyrosinemia
+  - citrullinema
+  - medium chain acyl CoA dehydrogenase (MCAD) deficiency
+- [Hemoglobin problems]{color=#F10D0C}
+  - sickle cell disease
+  - hemoglobin SC disease
+  - beta thalassemia
+
+@right
+
+- [Hormone problems.]{color=blue}
+  - congenital hypothyroidism
+  - congenital adrenal hyperplasia
+- [Other problems]{color=#B47804}
+  - galactosemia
+  - biotidinase deficiency
+  - cystic fibrosis
+  - severe combined immunodeficiency (SCID)
+  - Pompe disease (glycogen storage disease type II)
+  - mucopolysaccharidosis type 1
+  - X-linked adrenoleukodystropy
+  - spinal muscle atrophy (SMA)
+
+=== layout: section
+
+# Nondisjunction
+
+=== layout: one-panel
+
+# *Abnormal Chromosome Number*
+
+@body
+
+- In nondisjunction, pairs of homologous chromosomes do not separate normally during meiosis
+- As a result, one gamete receives two of the same type of chromosome, and another gamete receives no copy
+
+=== layout: one-panel
+@replaceme
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_023.jpg)
+
+- *Meiosis I*
+
+- *Nondisjunction*
+
+=== layout: one-panel
+@replaceme
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_024.jpg)
+
+- *Meiosis I*
+
+- *Meiosis II*
+
+- *Nondisjunction*
+
+- *Non- disjunction*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_025.jpg)
+
+
+=== layout: one-panel
+@replaceme
+
+# *Aneuploidy*
+
+@body
+
+- *Aneuploidy* results from the fertilization of gametes in which nondisjunction occurred
+- Offspring with this condition have an abnormal number of a particular chromosome
+  - A [*monosomic*]{color=red} zygote has only one copy of a particular chromosome [(n &#8211; 1)]{color=red}
+  - A [*trisomic*]{color=blue} zygote has three copies of a particular chromosome [(n + 1)]{color=blue}
+
+=== layout: multiple-choice
+
+@question
+
+If cell X enters meiosis, and nondisjunction of one chromosome occurs in one of its daughter cells during meiosis II, what will be the result at the completion of meiosis?
+
+- A) All the gametes descended from cell X will be diploid.
+- B) Half of the gametes descended from cell X will be n + 1, and half will be n - 1.
+- C) 1/4 of the gametes descended from cell X will be n + 1, 1/4 will be n - 1, and 1/2 will be n.
+- D) Two of the four gametes descended from cell X will be haploid, and two will be diploid.
+
+@answer
+
+[Answer\: C]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_026.png)
+
+- A. Mother has a nondisjunction, the X chromosome came from the father
+- B. Father has a nondisjunction, the X chromosome came from the mother
+- C. Cannot be determined
+
+- [Answer\: A]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_026.png)
+
+- because the 45, X daughter contains color blindness, she must have received it from her father.
+- The nondisjunction must have occurred in the mother creating an egg cell lacking an X chromosome.
+
+=== layout: section
+@replaceme
+
+# Question\: Are Adults with Down Syndrome [(A) Sterile]{color=#00A933}? or Can They [(B) Reproduce]{color=red}?
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Men with Down syndrome are commonly believed to be sterile.
+  - As of 2005, there are scientific reports of four pregnancies that were fathered by three male Down syndrome patients.
+  - Infertility in males has been attributed to defective spermatogenesis, but ignorance of the sexual act may be one of the contributing factors. (Pubmed\: 17094988)
+  - With Down syndrome individuals living longer into adulthood, we could see more men having offspring.
+- Women with Down syndrome can and do have children.
+  - [What is the likelihood that their offspring will have Down syndrome?]{color=#CC00CC}
+
+
+@citation
+
+https://www.ncbi.nlm.nih.gov/pubmed/17094988
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Women with Down syndrome can and do have children.
+- What is the likelihood that their offspring will have Down syndrome?
+  - A. None, 0%
+  - B. &#188;, 25%
+  - C. &#189;, 50%
+  - D. &#190;, 75%
+  - E. All, 100%
+
+=== layout: section
+
+# Trisomic Segregation If an Individual with Down Syndrome Has a Child, What Is the Likelihood That Their Child Will Also Have Down Syndrome?
+
+=== layout: section
+
+# Trisomic Segregation a.K.a. How Do Three Chromosomes Line Up at the Metaphase Plate?
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_027.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_028.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_029.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_030.png)
+
+- When a trisomic individual mates with a euploid individual, they are expected to produce a 1\:1 ratio of euploid to trisomic progeny.
+
+=== layout: one-panel
+
+# *Additional Reading*
+
+@body
+
+- The Last Children of Down Syndrome
+  - Prenatal testing is changing who gets born and who doesn't.
+  - This is just the beginning.
+
+- x
+
+
+
+@citation
+
+https://www.theatlantic.com/magazine/archive/2020/12/-/616928/
+
+=== layout: stacked-panels
+
+# *Extended Prenatal Tests*
+
+@top
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_031.png)
+
+@bottom
+
+- When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
+
+https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
+
+https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
+
+=== layout: two-panels
+
+# *NYTimes Daily Podcast*
+
+@left
+
+- Investigating the Prenatal Testing Market
+  - How screenings for chromosomal abnormalities that promised "peace of mind" instead caused anguish and confusion.
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_032.png)
+
+
+
+@citation
+
+https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
+
+=== layout: stacked-panels
+
+# *CBS on Assignment*
+
+@top
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_033.jpg)
+
+@bottom
+
+- "What kind of society do you want to live in?"\: Inside the country where Down syndrome is disappearing
+
+https://www.cbsnews.com/news/down-syndrome-iceland/
+
+https://www.youtube.com/watch?v=gxJfoftXh9Y
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Polyploidy changes whole sets; aneuploidy changes chromosome counts.
+- Nondisjunction produces gametes with missing or extra chromosomes.
+- Trisomy 21 involves an extra copy of chromosome 21.
+- Screening estimates risk; diagnostic testing examines fetal material.
+
+=== layout: theend
+
+# THE END

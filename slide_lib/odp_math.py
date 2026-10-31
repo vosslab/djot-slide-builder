@@ -50,6 +50,10 @@ def block_object(item: slide_lib.layout_model.LayoutObject,
 			run.style.link_url)
 		role = slide_lib.layout_primitives.PresentationRole.COMPONENT
 	else:
+		# Each positioned paragraph owns its list; its measured indentation stays intact.
+		if run.list_metadata is not None:
+			run = dataclasses.replace(run,
+				list_metadata=dataclasses.replace(run.list_metadata, level=0))
 		content = slide_lib.layout_content.TextContent((run,))
 		frame = slide_lib.layout_primitives.FrameTextProperties(
 			slide_lib.layout_primitives.Insets(0, 0, 0, 0),

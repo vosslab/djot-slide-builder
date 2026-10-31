@@ -377,6 +377,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Conversion review
 
+- Starting in 2025, my Genetics class meets face to face and uses handouts for group
+  activities. Use handout instructions for the current class activity; prior-year Google Slides
+  links may remain visible for students who want to practice outside class.
+
 
 - Include the latest Stump the Vibe Coder podcast episode after the `lect##a-` YouTube slide.
   Make this a semi-automated process reusable across lectures, with the episode thumbnail,

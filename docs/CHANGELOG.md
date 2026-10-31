@@ -1,3 +1,24 @@
+## 2026-10-31
+
+### Additions
+
+- Convert Genetics Lectures 09 and 10 to eight canonical Djot decks with component assets,
+  current 2026 announcements, learning objectives, takeaways, and source maps/review reports.
+  Retain original ODP/PDF inputs and explicit replacement markers for unresolved diagrams,
+  masks, label placement, reveal behavior, and source-content contradictions.
+- Add current in-class tetrad handout instructions; retain prior-year Google Slides links as
+  visible outside-class references. Record the instructor's face-to-face/handout guidance and
+  replace obsolete Zoom group-quiz wording in the shared Genetics quiz guidance.
+
+### Fixes
+
+- Preserve nested prose bullet indentation when exporting equation-adjacent paragraphs as
+  independent ODP frames. Extend the existing math export regression test; 40 focused tests pass.
+- Restore native tetrad tables and editable LaTeX derivations after expanding merged cells in
+  a temporary import copy. Reconstruct two interference figures with original artwork and live
+  SVG labels; move long reading URLs to citations or full-width panels. Imports and exports use
+  the external LibreOffice path; no original presentation is overwritten.
+
 ## 2026-10-28
 
 ### Additions

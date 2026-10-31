@@ -144,3 +144,13 @@ example has 30%, 20%, and 40% pairwise recombination with a 50 cM interval sum.
 The textbook predecessor is preserved as `.djot.retired` beside its assets, so folder builds omit it.
 Original ODP/PDF evidence remains available. Source selection and calculation verification are
 recorded in the LECT08 review and slide map.
+
+## Lectures 09 and 10
+
+Eight canonical decks now live in `LECT09/djot/` and `LECT10/djot/`, with current 2026
+announcements, source-grounded objectives/takeaways, and unchanged original ODP/PDF inputs.
+These are reviewed conversion drafts with explicit unresolved replacement slides. See
+[LECT09_REVIEW.md](LECT09/djot/LECT09_REVIEW.md) and
+[LECT10_REVIEW.md](LECT10/djot/LECT10_REVIEW.md) for findings and validation, and their adjacent
+source maps for source-to-PDF page correspondence. Build with `./build_slides.sh genetics/LECT09/`
+or `./build_slides.sh genetics/LECT10/`.
