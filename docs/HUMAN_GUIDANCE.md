@@ -184,6 +184,19 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Course links and evergreen announcements
 
+- Use root-level `evergreen/` for slides shared across courses. Keep course-specific reusable
+  slides in that course's `evergreen/` folder, and dated weather/podcast snapshots with the lecture.
+
+- Spring registration slides are evergreen. Show them roughly October 15 through December 1,
+  including in Genetics 09A and 10A.
+- I mostly teach seniors and graduate students. Give only the first registration day; students
+  can look up the registration date that applies to them.
+- Point students to the Registrar and Course Finder for registration. Do not assume which
+  registration system they use. The Course Finder is
+  https://banner.roosevelt.edu/ssbprod/bwskzenr.P_CourseFinder.
+- Keep my original spring-registration wording and the Registrar/Course Finder links;
+  do not expand it with new advising instructions.
+
 - A prior lecture's announcement deck copied into a new lecture folder is a starter for the
   new weekly A deck. Do not keep that starter or its unused extracted assets in the new folder.
 
@@ -638,6 +651,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 - Use the NWS Chicago weather story before the icebreaker, refreshed manually on lecture day
   or the day before. I like that the forecast office always finds something interesting.
+- Keep a saved weather story in upcoming announcements as a reminder to update it before class.
 - Use `big-image` with the full NWS description as its caption. Start with the initially
   displayed story; deal with tab selection later. About 15 pt is fine, and the caption can
   have a little more room downward.

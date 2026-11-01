@@ -3,10 +3,13 @@
 Evergreen content is used across courses or across more than one week. Content for a single
 lecture belongs with that lecture, including its repeated procedure slides.
 
-Weekly announcements reference these canonical sources with `=== include: repo:genetics/evergreen/<name>.djot`.
+Keep content shared across courses in [../../evergreen/](../../evergreen/), including the YouTube
+channel and spring registration. Genetics announcements include those groups using
+`repo:evergreen/youtube_channel.djot` and `repo:evergreen/spring_registration.djot`.
+
+Course-specific announcements reference the sources below with `=== include: repo:genetics/evergreen/<name>.djot`.
 Each weekly master controls visibility with its include's `hidden: true` or `hidden: false`.
 
-- `youtube_channel.djot`: informational divider and channel slide; insert the weekly podcast afterward.
 - `course_information.djot`: contact information, textbook, course links, and grading explanations.
 - `assessment_policies.djot`: technical difficulties and illness policies.
 - `quiz_guidance.djot`: quiz rules and grade guidance; show when a quiz is this week or next week.

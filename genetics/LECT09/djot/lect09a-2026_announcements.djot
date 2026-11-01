@@ -22,6 +22,20 @@ color-theme: genetics
 - Unordered Tetrad Handout Activity
 - Closing Remarks
 
+=== layout: big-image
+
+@image
+
+![Five Day Outlook](assets/weather_story/chicago_9fab097308eaca68887addd2b04b223be5f32de966e4b775fdcd9c5019695b09.png)
+
+@caption
+
+Intermittent shower chances will linger through at least the middle of the week with the best chances for rain on Tuesday and Wednesday&#46; While temperatures will remain above average to start the week&#44; cooler weather is forecast to arrive next weekend&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 01, 2026: https://www.weather.gov/lot/weatherstory
+
 === layout: one-panel
 
 # [Breakout Room Chat]{color=red}
@@ -32,7 +46,7 @@ color-theme: genetics
 - [What everyday task would you permanently hand over to a robot?]{color=red}
   - Examples: laundry, dishes, grocery shopping.
 
-=== include: repo:genetics/evergreen/youtube_channel.djot
+=== include: repo:evergreen/youtube_channel.djot
 
 === layout: big-image
 
@@ -47,6 +61,9 @@ Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtu
 Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === include: repo:genetics/evergreen/course_information.djot
+
+=== include: repo:evergreen/spring_registration.djot
+hidden: false
 
 === layout: section
 

@@ -1129,6 +1129,20 @@ the new lecture folder; they are not additional lecture material.
 **Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
 and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.
 
+### Shared evergreen slides
+
+**Decision.** Keep slides shared across courses in root-level `evergreen/`, starting with
+spring registration and the YouTube channel. Keep course-specific reusable groups in the
+course's own evergreen folder. Use the existing `repo:` includes and inherit the master's theme.
+
+**Why.** Common announcements need one source that any course can include without copying text.
+
+**Consequence.** Shared assets move with their owning group. Weekly podcast episodes and weather
+snapshots remain with the lecture; this organization does not change their refresh tools.
+
+**Owner.** [../evergreen/README.md](../evergreen/README.md) and
+[../genetics/evergreen/README.md](../genetics/evergreen/README.md).
+
 ### Bookend and definitions layouts
 
 **Decision.** Share one `bookend` layout for learning objectives and key takeaways. Use its

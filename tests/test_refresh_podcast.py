@@ -69,7 +69,7 @@ def test_project_link_uses_pages_and_never_substitutes_a_repository() -> None:
 def test_refresh_preserves_evergreen_includes() -> None:
 	"""Updating a weekly episode must retain the shared channel and following course slides."""
 	source = ("=== layout: title-slide\n# Announcements\n"
-		"=== include: repo:genetics/evergreen/youtube_channel.djot\n\n"
+		"=== include: repo:evergreen/youtube_channel.djot\n\n"
 		"=== include: repo:genetics/evergreen/course_information.djot\n\n"
 		"=== include: repo:genetics/evergreen/exam_guidance.djot\nhidden: true\n")
 	episode = {"id": "aaaaaaaaaaa", "title": "Example", "published": "2026-10-22T00:00:00Z",

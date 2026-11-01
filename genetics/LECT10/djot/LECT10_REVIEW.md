@@ -3,13 +3,41 @@
 Current revision and verification appear first. Earlier draft findings and replacement flags
 are preserved below as historical records. Original ODP/PDF files remain unchanged.
 
+## Weather story reminder
+
+Added the November 1 NWS Chicago Five Day Outlook at PDF 3, before the icebreaker. The existing
+tool saves the original PNG, complete native caption, and separate dated citation. Refresh before
+teaching with `source source_me.sh && python3 tools/refresh_weather.py genetics/LECT10 --write`.
+Builds use the saved snapshot. 10A now has 46 authored / 32 visible / 14 hidden slides, and
+registration moves to PDF 20-21. The registration-only review below retains its previous numbers.
+
+Rebuilt ODP/PDF and inspected the weather page. All 31 previous PDF pages retain their text;
+removing the weather block restores the previous source exactly. Verified image proportions and
+the clickable NWS link. Strict native lint passes; keep the accepted 15.25 pt caption capacity
+advisory. The unchanged office-hours runt is now PDF 9. Evidence is in
+`_temp/weather_announcements/`. Impress playback was not checked.
+
+## Spring registration evergreen
+
+Added the same `evergreen/spring_registration.djot` group used by 09A on November 1.
+PDF 19 is the divider; PDF 20 retains the original biotech registration/advising reminder and
+adds the Registrar and instructor's Course Finder links. Show the group roughly October 15
+through December 1, using the weekly include's hidden flag. At that stage, 10A had 45 authored / 31 visible /
+14 hidden slides. All previous master text and visibility settings are unchanged.
+
+Rebuilt ODP/PDF outside the sandbox and visually inspected both new pages. Strict native lint
+and capacity checks pass; the new pages have no typography findings. The unchanged contact slide
+at PDF 8 retains its office-hours runt advisory. Both links are clickable, and the registration
+page text matches 09A's export. Evidence is in `_temp/spring_registration/`.
+Impress playback was not checked.
+
 ## Approved revision completed
 
 The instructor approved the review's fixes, clarified that Lecture 10 is **disease-focused**,
 and assigned **deletion mapping and translocation segregation to Lecture 11**. Those are no
 longer gaps to fill in Lecture 10. No Lecture 11 files or homework generators were edited.
 
-Current outputs: **A29, B52, C24, D63 = 168 visible pages**. A retains 43 authored slides,
+Current outputs: **A32, B52, C24, D63 = 171 visible pages**. A retains 46 authored slides,
 including 14 hidden. B-D have **zero replacement markers**. The current page ownership is in
 [LECT10_SOURCE_MAP.md](LECT10_SOURCE_MAP.md); the older conversion tables below are historical.
 

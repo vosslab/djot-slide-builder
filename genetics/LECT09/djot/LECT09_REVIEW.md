@@ -1,5 +1,33 @@
 # Lecture 09 Review
 
+## Weather story reminder
+
+Added the November 1 NWS Chicago Five Day Outlook at PDF 3, immediately before the icebreaker,
+using the existing refresh tool. The original PNG, full native caption, and separate dated NWS
+citation are saved locally; builds do not fetch a new story. Refresh before teaching with
+`source source_me.sh && python3 tools/refresh_weather.py genetics/LECT09 --write`.
+
+09A now has 46 authored / 32 visible / 14 hidden slides. Registration moves to PDF 20-21;
+the earlier registration-only review below retains its previous page numbers. All 31 previous
+PDF pages retain their text, and removing the weather block restores the previous source exactly.
+Rebuilt ODP/PDF, inspected the weather page, and verified the PNG proportions and clickable NWS
+link. Strict native lint passes. Keep the accepted 15.25 pt caption capacity advisory; typography
+findings remain limited to the unchanged office-hours runt, now PDF 9. Evidence is in
+`_temp/weather_announcements/`. Impress playback was not checked.
+
+## Spring registration evergreen
+
+Added the shared `evergreen/spring_registration.djot` group on November 1: PDF 19 is
+the divider and PDF 20 keeps the original biotech reminder, with the Registrar and instructor's
+Course Finder links. The weekly include is visible; show this seasonal evergreen roughly
+October 15 through December 1. At that stage, 09A had 45 authored / 31 visible / 14 hidden slides.
+Removing the single new include reproduces the entire previous master exactly.
+
+Rebuilt ODP/PDF outside the sandbox and visually inspected both new pages. Strict native lint
+and capacity checks pass; the new pages have no typography findings. The unchanged contact slide
+at PDF 8 retains its office-hours runt advisory. Both links are clickable in the PDF. Evidence is
+in `_temp/spring_registration/`. Impress playback was not checked.
+
 ## Announcement starter cleanup
 
 The copied `lect08a-2026_announcements.odp` and PDF were starters for 09A, not Lecture 09

@@ -61,7 +61,7 @@ def test_refresh_previews_then_replaces_one_snapshot_without_changing_other_slid
 	path = tmp_path / "lect09a-2026_announcements.djot"
 	source = ("=== layout: one-panel\n# Today's Agenda\n@body\nAgenda.\n\n"
 		"=== layout: one-panel\n# [Breakout Room Chat]{color=red}\n@body\nQuestion.\n\n"
-		"=== include: repo:genetics/evergreen/youtube_channel.djot\n\n"
+		"=== include: repo:evergreen/youtube_channel.djot\n\n"
 		"=== layout: one-panel\nhidden: true\n# Later\n@body\nKeep this.\n")
 	path.write_text(source)
 	(tmp_path / "lect09c-topic.djot").write_text("Not an announcement.")

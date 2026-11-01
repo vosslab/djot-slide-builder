@@ -36,7 +36,7 @@ color-theme: genetics
 - Explain the useful trait and one possible tradeoff.
 - If no one is talking, please be the first to speak.
 
-=== include: repo:genetics/evergreen/youtube_channel.djot
+=== include: repo:evergreen/youtube_channel.djot
 
 === layout: big-image
 

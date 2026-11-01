@@ -5,14 +5,23 @@
 The instructor approved these changes on October 31, 2026. Lecture 10 remains disease-focused;
 deletion mapping and translocation segregation are assigned to Lecture 11.
 
-A remains 43 authored / 29 visible / 14 hidden. B52, C24, and D63 are all visible and have no
-replacement markers. Total: 182 authored / 168 visible / 14 hidden.
+A has 46 authored / 32 visible / 14 hidden slides. B52, C24, and D63 are all visible and have no
+replacement markers. Total: 185 authored / 171 visible / 14 hidden.
 
 Slide D9 restores the tetraploidy mechanism on November 1, 2026; subsequent D pages shift by one.
 All 62 slides from the October 31 revision remain unchanged.
 
 Previous pages below refer to the Djot/PDF decks immediately before the October 31 revision. The original
 ODP-to-Djot conversion tables are retained below as a historical bridge to the original inputs.
+
+### Current 10A announcements
+
+The November 1 additions share `evergreen/spring_registration.djot` with 09A and add a
+saved NWS Chicago weather story. PDF 3 is the weather story; PDF 4 is the icebreaker. PDF 20 is
+the registration divider; PDF 21 is the reminder. Compared with the original-conversion map
+below, pages 1-2 stay in place, pages 3-18 move to 4-19, and pages 19-29 move to 22-32. All existing
+content, order, and hidden status are preserved. The original map remains a pre-registration
+snapshot.
 
 ### lect10b-karyotypes
 

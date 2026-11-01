@@ -4,6 +4,16 @@ Current page numbers include the section revision in
 [LECT09_SECTIONS_REVIEW.md](LECT09_SECTIONS_REVIEW.md). Earlier review reports retain their
 dated page numbers; the historical pre-split maps below are unchanged.
 
+## Current 09A announcements
+
+The November 1 registration and weather additions bring 09A to 46 authored / 32 visible /
+14 hidden slides. PDF 3 is the saved NWS Chicago weather story, immediately before the
+icebreaker at PDF 4. The registration group belongs to
+`evergreen/spring_registration.djot`: PDF 20 is the divider; PDF 21 is the reminder.
+Compared with the pre-registration map below, pages 1-2 stay in place, pages 3-18 move to 4-19,
+and pages 19-29 move to 22-32. All existing content, order, and hidden status are preserved.
+The pre-registration ownership table below is historical.
+
 ## 09B homework interference
 
 [lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) has 50 visible slides.
@@ -723,7 +733,7 @@ maps still apply to their active decks.
 Every content source slide maps once, in its original order. No source slide was split.
 
 
-### lect09a-2026_announcements
+### lect09a-2026_announcements (before registration)
 
 Weekly master based on the maintained LECT08 2026 announcements. Includes expand to 43 authored slides; hidden assignment, evaluation, and exam groups remain retained.
 

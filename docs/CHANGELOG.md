@@ -2,6 +2,30 @@
 
 ### Fixes
 
+- Create root-level `evergreen/` for slides shared across courses. Move spring registration,
+  the YouTube channel, and its unchanged image there; update 08A, 09A, 10A, refresh-tool test
+  examples, and authoring/source-map documentation. Preserve all wording, layouts, colors,
+  visibility, and dated lecture snapshots; retain course-specific groups in `genetics/evergreen/`.
+  Pass 24 focused tests and strict native lint; rebuild all three ODP/PDF pairs and inspect the
+  shared slides. Normalized compiled plans are unchanged, and both groups also compile with the
+  Biotechnology theme. Preserve newly appearing sync-conflict copies, updating only their old
+  include paths. Evidence is in `_temp/shared_evergreen/`.
+
+- Add the November 1 NWS Chicago weather story to 09A and 10A as a reminder to refresh before
+  teaching. Use the existing refresh tool, `big-image`, the complete caption, and a separate
+  dated citation. Rebuild/review both ODP/PDF pairs: each has 46 authored / 32 visible / 14 hidden
+  slides, with weather at PDF 3 and registration at 20-21. Preserve all 31 previous PDF pages'
+  text and the graphic's aspect ratio. Strict native lint passes; retain the accepted 15.25 pt
+  caption advisory. No tool or layout changes.
+
+- Add the shared evergreen spring-registration group to Genetics 09A and 10A. Reuse the
+  original biotech registration/advising wording, keep the Registrar and instructor-provided
+  Course Finder links, and record the approximate October 15-December 1 display window.
+  Each weekly master controls the two-slide group with one hidden flag. Rebuild both ODP/PDF
+  pairs, inspect PDF 19-20, verify the original masters are otherwise unchanged and both links
+  are clickable, and update source maps/reviews. Each deck has 45 authored / 31 visible / 14 hidden
+  slides. Strict native lint and capacity pass; no new typography findings.
+
 - Restore the tetraploidy mechanism in 10D after the polyploid definitions. Compare normal
   division with retention of both daughter complements, reconnect 46,XY to 92,XXYY, and
   distinguish whole-set doubling from ordinary DNA replication. Keep all 62 existing slides
