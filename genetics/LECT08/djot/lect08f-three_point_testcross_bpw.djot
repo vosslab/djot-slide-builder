@@ -38,7 +38,7 @@ color-theme: genetics
 
 @right
 
-![A triple heterozygote crossed with a recessive tester, with each locus listed separately.](assets/lect08f-three_point_testcross_bpw/testcross.svg)
+![A triple heterozygote crossed with a recessive tester, with each locus listed separately.](assets/lect08f-three_point_testcross_bpw/testcross.drawn.svg)
 
 Offspring phenotypes reveal the heterozygote's gametes.
 
@@ -223,7 +223,7 @@ Which combinations are parental?
 
 @body
 
-![Two green parental references, c+ and +d, above offspring cd+ (120) and c+h (75); H is covered and P/R answers are withheld.](assets/lect08f-three_point_testcross_bpw/classify_cd_question.svg)
+![Two green parental references, c+ and +d, above offspring cd+ (120) and c+h (75); H is covered and P/R answers are withheld.](assets/lect08f-three_point_testcross_bpw/classify_cd_question.drawn.svg)
 
 
 === layout: one-panel
@@ -232,7 +232,7 @@ Which combinations are parental?
 
 @body
 
-![cd matches neither parent and is recombinant; c+ matches the first parent and is parental for C-D despite its different H allele.](assets/lect08f-three_point_testcross_bpw/classify_cd_answer.svg)
+![cd matches neither parent and is recombinant; c+ matches the first parent and is parental for C-D despite its different H allele.](assets/lect08f-three_point_testcross_bpw/classify_cd_answer.drawn.svg)
 
 @citation
 
@@ -495,7 +495,7 @@ Which combinations are parental?
 
 @body
 
-![Compare the C-H offspring combinations to both original parents, with D covered.](assets/lect08f-three_point_testcross_bpw/classify_ch_answer.svg)
+![Compare the C-H offspring combinations to both original parents, with D covered.](assets/lect08f-three_point_testcross_bpw/classify_ch_answer.drawn.svg)
 
 @citation
 
@@ -758,7 +758,7 @@ Which combinations are parental?
 
 @body
 
-![Compare the D-H offspring combinations to both original parents, with C covered.](assets/lect08f-three_point_testcross_bpw/classify_dh_answer.svg)
+![Compare the D-H offspring combinations to both original parents, with C covered.](assets/lect08f-three_point_testcross_bpw/classify_dh_answer.drawn.svg)
 
 @citation
 
@@ -975,7 +975,7 @@ Add the four bold R counts.
 
 @body
 
-![Observed recombination: CD 30%, CH 20%, DH 40%, shown on the same percentage scale.](assets/lect08f-three_point_testcross_bpw/pairwise_results.svg)
+![Observed recombination: CD 30%, CH 20%, DH 40%, shown on the same percentage scale.](assets/lect08f-three_point_testcross_bpw/pairwise_results.drawn.svg)
 
 Which pair has the largest recombination frequency?
 
@@ -1004,7 +1004,7 @@ D-H has the largest recombination frequency. If D and H are the ends,
 
 @body
 
-![D-C-H is the gene order; H-C-D is equivalent.](assets/lect08f-three_point_testcross_bpw/gene_order_middle.svg)
+![D-C-H is the gene order; H-C-D is equivalent.](assets/lect08f-three_point_testcross_bpw/gene_order_middle.drawn.svg)
 
 
 === layout: one-panel
@@ -1013,7 +1013,7 @@ D-H has the largest recombination frequency. If D and H are the ends,
 
 @body
 
-![A proportional map: D to C is 30 cM, C to H is 20 cM; the sum is 50 cM while D-H observed recombination is 40%.](assets/lect08f-three_point_testcross_bpw/gene_map.svg)
+![A proportional map: D to C is 30 cM, C to H is 20 cM; the sum is 50 cM while D-H observed recombination is 40%.](assets/lect08f-three_point_testcross_bpw/gene_map.drawn.svg)
 
 Which offspring count for both adjacent intervals, but not for D-H?
 
@@ -1029,7 +1029,7 @@ Which offspring count for both adjacent intervals, but not for D-H?
 
 @body
 
-![Trace a double-recombinant chromatid across two exchanges, one in CD and one in CH. It inherits + at D and H from the same parental chromatid, with + at C from the other.](assets/lect08f-three_point_testcross_bpw/two_exchanges.svg)
+![Trace a double-recombinant chromatid across two exchanges, one in CD and one in CH. It inherits + at D and H from the same parental chromatid, with + at C from the other.](assets/lect08f-three_point_testcross_bpw/two_exchanges.drawn.svg)
 
 @citation
 
@@ -1042,7 +1042,7 @@ Two participating nonsister chromatids are shown schematically in D-C-H order.
 
 @body
 
-![Parental and double-recombinant combinations in D-C-H map order: +c+ versus +++, and d+h versus dch. Only the middle C allele differs.](assets/lect08f-three_point_testcross_bpw/double_recombinants.svg)
+![Parental and double-recombinant combinations in D-C-H map order: +c+ versus +++, and d+h versus dch. Only the middle C allele differs.](assets/lect08f-three_point_testcross_bpw/double_recombinants.drawn.svg)
 
 With C covered, each double recombinant matches a parental D-H pair.
 
@@ -1091,7 +1091,7 @@ R = recombinant; P = parental for the indicated pair. Original labels use C-D-H 
 
 @right
 
-![D-C-H chromosome map: 30 cM plus 20 cM gives 50 cM. D-H observed recombination is 40%.](assets/lect08f-three_point_testcross_bpw/gene_map_summary.svg)
+![D-C-H chromosome map: 30 cM plus 20 cM gives 50 cM. D-H observed recombination is 40%.](assets/lect08f-three_point_testcross_bpw/gene_map_summary.drawn.svg)
 
 @citation
 

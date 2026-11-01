@@ -26,7 +26,8 @@ site/
 # Propagation preserves this section.
 # ------------------ END LOCAL REPOSITORY RULES ------------------
 *.svg
-!genetics/LECT08/djot/assets/lect08f-three_point_testcross_bpw/*.svg
+# Reviewed image-free drawings use a checked filename suffix.
+!*.drawn.svg
 *.pdf
 *.pptx
 *.gif
@@ -47,22 +48,19 @@ import_report.json
 
 /_temp/
 
-# Editable original tutorial illustrations are source assets.
-!biostats/LECT08/djot/assets/tutorial_overviews/*.svg
-# Editable original mitotic-crossover teaching diagrams are source assets.
-!genetics/LECT09/djot/assets/lect09c-mitotic_crossover/*.svg
-# Repaired 09D figures and its reused homework ascus are source assets.
-!genetics/LECT09/djot/assets/lect09_tetrad_concepts/yeast_*.svg
-!genetics/LECT09/djot/assets/lect09_tetrad_concepts/homework_ascus.svg
-# Homework-matched E/F/G figures and repaired source lettering.
-!genetics/LECT09/djot/assets/lect09e-tetrad_visuals/*.svg
-!genetics/LECT09/djot/assets/lect09_tetrad_concepts/unlinked_segregation.svg
-!genetics/LECT09/djot/assets/lect09_tetrad_concepts/crossover_histories.svg
-!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_*.svg
-!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/unlinked_table_*.svg
-!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_*.svg
-# Refreshed 09H generator artwork with live teaching labels.
+# Reviewed original generator captures contain images; keep explicit exceptions.
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_0.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_1.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_2.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_3.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_question.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_answer.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_question.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_answer.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_question.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_answer.svg
 !genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_asci.svg
 !genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_classes.svg
 !genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_pairs.svg
-!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_table_*.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_table_question.svg
+!genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/ordered_table_classified.svg

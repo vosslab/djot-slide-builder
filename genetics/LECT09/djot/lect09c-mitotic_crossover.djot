@@ -18,9 +18,13 @@ color-theme: genetics
 
 @body
 
-- Connect DNA repair to crossover and loss of heterozygosity.
-- Explain how one altered cell can produce twin spots.
-- Apply these ideas to cancer and studies of gene function.
+- Compare crossing over in meiosis with crossing over in body cells.
+- Follow an exchange and chromosome separation to explain twin spots.
+- Explain how one changed cell can grow into a visible patch.
+
+=== layout: section
+
+# Beyond Meiosis
 
 === layout: one-panel
 
@@ -28,56 +32,19 @@ color-theme: genetics
 
 @body
 
-- Recombination can also occur in dividing body cells.
-- DNA damage or replication problems can initiate repair before the next mitosis.
-- A crossover between homologs is an uncommon repair outcome.
-- Many cell divisions give rare events a chance to become visible.
+- We have used crossing over between linked genes to explain new allele combinations.
+- Crossing over can also happen naturally in a dividing body cell.
+- It is uncommon, but the changed cell can pass its genotype to many daughter cells.
+
+What would we see if those cells made one patch of the body?
 
 @citation
 
-Johnson and Jasin (2000): https://doi.org/10.1093/emboj/19.13.3398
-
-=== layout: two-panels
-
-# Repair Starts with a Matching Copy
-
-@left
-
-- DNA replication produces sister chromatids.
-- The sister is a useful template for repairing DNA breaks.
-- Most repair finishes without a crossover.
-- A crossover with the other homolog can change allele combinations.
-
-@right
-
-![A damaged chromatid and two possible matching copies](assets/lect09c-mitotic_crossover/repair_templates.svg)
-
-@citation
-
-Johnson and Jasin (2000): https://doi.org/10.1093/emboj/19.13.3398
-
-=== layout: two-panels
-
-# Loss of Heterozygosity
-
-@left
-
-- Start with an A/a cell.
-- After replication and crossover, one segregation pattern gives *A/A* and *a/a* daughters.
-- *LOH*: instead of two allele versions, the cell now has only one version.
-- Here, both daughters still have two chromosome copies.
-
-@right
-
-![Two diploid daughters become homozygous at a distal marker](assets/lect09c-mitotic_crossover/loh_outcome.svg)
-
-@citation
-
-Hagstrom and Dryja (1999): https://doi.org/10.1073/pnas.96.6.2952
+Lee et al. (2009): https://doi.org/10.1371/journal.pgen.1000410
 
 @notes
 
-The diagram shows one possible segregation after an exchange between the centromere and A. The next figure also shows the outcome that retains heterozygosity. Markers distal to the exchange can become homozygous. LOH can also arise by mechanisms other than crossing over.
+Start from the linked-gene crosses we just worked through. Ask what changes if an exchange happens in a cell making body tissue instead of gametes. "Mitotic" names the dividing-cell context; the exchange can happen before mitosis. Natural does not mean it happens in every division. DNA repair is a possible route to the exchange, explained later; it does not require an experimental treatment.
 
 === layout: one-panel
 
@@ -86,6 +53,10 @@ The diagram shows one possible segregation after an exchange between the centrom
 @body
 
 ![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_001.jpg)
+
+@notes
+
+The exchange shown is between the centromere and both linked genes. Follow the two possible ways the chromosomes separate afterward. The upper outcome keeps both daughter cells heterozygous. In the lower outcome, one daughter has two a alleles and the other has two b alleles. The recessive alleles were already there. The exchange and separation change which alleles end up together. A/a and B/b are generic labels for two linked genes; the fly example uses y and sn.
 
 === layout: one-panel
 
@@ -100,41 +71,71 @@ Patches sometimes show yellow color or singed bristles. Adjacent yellow and sing
 
 ![Single yellow spot, twin spot, and single singed spot](assets/lect09_tetrad_concepts/twin_spots.svg)
 
+@notes
+
+Each original X chromosome has a wild-type allele that covers the recessive allele on the other X. After the lower segregation pattern in the preceding diagram, one daughter can be y/y and the other sn/sn at these loci. Both daughters still have two X chromosomes. Each daughter can divide to make one of the neighboring patches. A new y or sn mutation is not needed.
+
 === layout: two-panels
 
 # One Event Can Make a Patch
 
 @left
 
-- Descendants of one altered cell form a *clone*.
-- A *mosaic* contains cells with different genotypes in one individual.
-- Earlier events often have more time to make larger patches.
-- Patch size also depends on cell division and survival.
+- Each daughter can divide to make a patch.
+- Cells from one starting cell form a *clone*.
+- An individual with cells of different genotypes is a *mosaic*.
+- An earlier exchange often gives a larger patch.
+- Cell growth and survival also affect patch size.
 
 @right
 
-![Two daughter lineages produce neighboring clones](assets/lect09c-mitotic_crossover/clonal_patches.svg)
+![Two daughter lineages produce neighboring clones](assets/lect09c-mitotic_crossover/clonal_patches.drawn.svg)
 
 @citation
 
 Graf (1995): https://doi.org/10.1007/BF01929364
 
+=== layout: two-panels
+
+# Two Copies of the Same Allele
+
+@left
+
+- Before the exchange, the cell is *A/a*.
+- One way of separating the chromosomes gives *A/A* and *a/a* daughters.
+- Each daughter still has two copies of the chromosome.
+- Two different alleles have become two matching alleles: *loss of heterozygosity (LOH)*.
+
+@right
+
+![Two diploid daughters become homozygous at a distal marker](assets/lect09c-mitotic_crossover/loh_outcome.drawn.svg)
+
+@citation
+
+Hagstrom and Dryja (1999): https://doi.org/10.1073/pnas.96.6.2952
+
+@notes
+
+Now name the genotype change we already saw in the twin spots. This diagram follows one gene. It omits replication and the four-chromatid intermediate. The exchange is between the centromere and A, followed by the lower segregation pattern in the earlier diagram. The other pattern can leave both daughters A/a. Loss of heterozygosity can also happen by other mechanisms.
+
 === layout: one-panel
 
-# LOH Can Supply a Second Hit
+# An Existing Allele Can Matter
 
 @body
 
-For a tumor-suppressor gene, let *R* work and *r* be a loss-of-function allele.
+The twin spots reveal recessive alleles that were already present. The same idea can matter in cancer.
+
+Let *R* be a working tumor-suppressor allele and *r* a nonworking allele.
 
 | Cell | Genotype | Working Copies |
 | --- | --- | --- |
-| Before LOH | R/r | 1 |
+| Before the exchange | R/r | 1 |
 | One daughter | r/r | 0 |
 | Reciprocal daughter | R/R | 2 |
 
-- The r allele was already present; another point mutation is not required.
-- LOH at *RB1* can contribute to retinoblastoma, a cancer of the retina.
+- The r/r cell has no working copy. A new r mutation was not needed.
+- This can contribute to retinoblastoma, a cancer of the retina, when the gene is *RB1*.
 
 @citation
 
@@ -142,23 +143,47 @@ Cavenee et al. (1983): https://doi.org/10.1038/305779a0
 
 === layout: two-panels
 
-# Twin Spots Can Test Gene Function
+# Use Twin Spots to Study Cells
 
 @left
 
-- Researchers can induce recombination and label both daughter lineages.
-- Compare clone growth, survival, or cell shape within the same tissue.
-- If one clone is smaller, what could explain it?
+- Researchers can trigger an exchange and mark both daughter cells.
+- Follow the two groups of cells as they grow in the same tissue.
+- Compare their size, survival, or cell shape.
 
-Slower division or more cell death are possibilities.
+If one patch is smaller, did its cells divide less or die more?
 
 @right
 
-![Paired clones allow comparison within one tissue](assets/lect09c-mitotic_crossover/clonal_patches.svg)
+![Paired clones allow comparison within one tissue](assets/lect09c-mitotic_crossover/clonal_patches.drawn.svg)
 
 @citation
 
 Griffin et al. (2009): https://doi.org/10.1038/nmeth.1349
+
+=== layout: two-panels
+
+# A Link to DNA Repair
+
+@left
+
+- DNA breaks can arise during ordinary cell activity.
+- A cell can use a matching DNA copy to help repair a break.
+- Often, that copy is a sister chromatid.
+- Repair usually finishes without a crossover.
+- Sometimes, repair using the other homolog produces a crossover.
+
+@right
+
+![A damaged chromatid and two possible matching copies](assets/lect09c-mitotic_crossover/repair_templates.drawn.svg)
+
+@citation
+
+Johnson and Jasin (2000): https://doi.org/10.1093/emboj/19.13.3398
+
+@notes
+
+This is a short explanation of how an exchange can arise, after students have seen its effect. DNA damage can come from ordinary cell activity, including problems while DNA is copied. It need not come from radiation or another laboratory treatment. The matching copy guides repair; that copying step alone is not a crossover. A crossover exchanges chromosome segments. Most repair does not produce that exchange. In meiosis, cells make controlled DNA breaks to start recombination, so a DNA break does not by itself mean an unnatural event. Keep the repair details brief; the main story is the twin spots.
 
 === layout: bookend
 
@@ -166,10 +191,11 @@ Griffin et al. (2009): https://doi.org/10.1038/nmeth.1349
 
 @body
 
-- Repair usually preserves the sequence; crossovers can change allele combinations.
-- Mitotic crossover can cause LOH while chromosome copy number stays the same.
-- Altered daughter cells can grow into genetically different patches.
-- These clones connect recessive alleles to cancer and studies of gene function.
+- Crossing over can happen naturally in body cells as well as in meiosis.
+- After an exchange, chromosome separation can give the daughters different genotypes.
+- Those cells can grow into neighboring patches: twin spots.
+- A recessive allele already present can become visible in a patch.
+- DNA repair helps explain how an exchange can arise in a body cell.
 
 === layout: theend
 

@@ -179,6 +179,10 @@ In the homework's F/P/W columns, the DCO types are *f+w* and *+p+*.
 
 Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive mutant.
 
+=== layout: subsection
+
+# Expected Doubles
+
 === include: interference_steps.djot
 
 === layout: one-panel
@@ -258,6 +262,10 @@ Keep *67.5* in the calculation. Rounding it to 68 would change the answer.
 Did we observe more doubles or fewer doubles than independence predicts?
 How much of the prediction did we observe?
 
+=== layout: subsection
+
+# Interpret Interference
+
 === include: interference_steps.djot
 
 === layout: one-panel
@@ -320,6 +328,10 @@ $$
 - For a numeric question asking for percentage interference, enter *20*.
 - For a fraction question, the equivalent answer is *1/5*.
 - Interference has no cM units; it compares two counts.
+
+=== layout: section
+
+# Reading a Genetic Map
 
 === layout: one-panel
 

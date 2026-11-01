@@ -28,7 +28,7 @@ Schematic unordered asci. Lowercase = mutant allele; + = wild type. Spore positi
 
 @left
 
-![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_question.svg)
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_question.drawn.svg)
 
 @right
 
@@ -51,7 +51,7 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 @top
 
-![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
+![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.drawn.svg)
 
 @bottom
 
@@ -65,7 +65,7 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 @left
 
-![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.drawn.svg)
 
 @right
 
@@ -88,7 +88,7 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 @left
 
-![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.drawn.svg)
 
 @right
 
@@ -106,6 +106,10 @@ Spores shown for A-B. Count tetrads, not individual spores.
 @citation
 
 Spores shown for A-B. Count tetrads, not individual spores.
+
+=== layout: subsection
+
+# Map Distance
 
 === layout: one-panel
 
@@ -128,7 +132,7 @@ $$
 
 @left
 
-![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.drawn.svg)
 
 @right
 
@@ -153,7 +157,7 @@ Spores shown for A-B. Count tetrads, not individual spores.
 
 @left
 
-![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.svg)
+![Two-gene tetrad working table](assets/lect09c-tetrad_worked_examples_bpw/two_gene_table_classified.drawn.svg)
 
 @right
 

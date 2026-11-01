@@ -1,5 +1,61 @@
 # Design decisions
 
+### Twin spots lead 09C
+
+**Decision.** Restore the linked-gene crossover to body-cell crossover to twin-spot sequence.
+Show the original chromosome and fly figures immediately after the introduction. Explain patch
+growth before naming loss of heterozygosity; keep cancer and research as extensions. Move the
+short repair explanation near the end and use plain language throughout.
+
+**Why.** Starting with repair changed the instructor's story and could make a natural, uncommon
+event sound as though it required laboratory damage. DNA breaks can arise naturally, and repair
+provides a route to exchange. The initiating lesion is distinct from the crossover outcome.
+
+**Consequence.** Retain 13 slides, every figure, all five researched additions, both segregation
+outcomes, and the two-copy distinction. Replace acronym-led headings with concrete descriptions.
+Keep detailed repair qualifications in teaching notes and the source ledger. Update current page
+ownership; earlier section/research verification remains a dated snapshot.
+
+**Owner.** [lect09c-mitotic_crossover.djot](../genetics/LECT09/djot/lect09c-mitotic_crossover.djot)
+and [LECT09C_RESEARCH.md](../genetics/LECT09/djot/LECT09C_RESEARCH.md).
+
+### Conceptual dividers in Lecture 09
+
+**Decision.** Add section and subsection slides at changes in the teaching task, using roughly
+one divider per ten slides as a pacing guide. Use the existing section and subsection
+layouts in the Genetics course hue.
+
+**Why.** Long worked examples need visible transitions between identifying evidence, calculating,
+and interpreting results. A useful boundary matters more than exact spacing.
+
+**Consequence.** Add 14 dividers across 09B-H, retaining 09D's existing two. Preserve every
+existing slide, its order, figures, colors, notes, equations, and fixed problem data. Update current
+page maps and exports; dated review reports retain their earlier page numbers. No new layout,
+automatic insertion, or permanent slide-count test is needed.
+
+**Owner.** Lecture 09 sources and
+[LECT09_SECTIONS_REVIEW.md](../genetics/LECT09/djot/LECT09_SECTIONS_REVIEW.md).
+
+### Distinguish drawings from SVG image wrappers
+
+**Decision.** Use `.drawn.svg` for reviewed, image-free drawings and allow that suffix in Git.
+Keep ordinary `.svg` files ignored by default, with exact-file exceptions for reviewed original
+generator captures. Reject `image` and `feImage` elements, including nested ones, in `.drawn.svg`.
+
+**Why.** Folder wildcards admit future imported artwork, while long lists of drawing names
+obscure the distinction. Repaired labels or an SVG wrapper do not establish rights to its image.
+
+**Consequence.** Rename 31 reviewed drawings without changing their bytes, update current
+references and the two-gene table builder, and retain 15 explicit generator-capture exceptions.
+Stop tracking other image-bearing SVGs while preserving local files. Existing validation uses
+the same restrictive XML parser (ASVS 1.5.1); the new structural check enforces the declared
+format at the shared validation boundary (ASVS 2.2.1). If it fails, use an ordinary ignored SVG
+and review image provenance before allowing it. Structure does not establish ownership.
+Earlier vector assets and Git history are outside this migration.
+
+**Owner.** [.gitignore](../.gitignore), [svg_images.py](../slide_lib/svg_images.py),
+and [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md).
+
 ### Current ordered-ascus artwork in 09H
 
 **Decision.** Recapture the generator's updated ascus drawings for the five existing teaching

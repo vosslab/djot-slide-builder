@@ -89,6 +89,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Labeled diagram reconstruction
 
+- I ignore SVGs with copyright information for a reason. Preserve that protection when
+  adding tracking exceptions.
+- We need a better way to distinguish drawn SVGs from SVGs containing images, because
+  the images are typically copyrighted.
+
 - Refresh 09H's images when I update the ordered-tetrad generator visuals. Add an opening
   definitions slide for FDS, SDS, and spore.
 
@@ -233,6 +238,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   checks from permanent tests; temporary checks must not become permanent without earning their place.
 
 ## Slide-writing advice
+
+- Use plain, concrete language. Prefer familiar words and direct sentences. Technical terms
+  should add precision; vocabulary and jargon add cognitive load. When in doubt, use the simpler word.
+- For Mitotic Cross-Over, start from crossing over between linked genes, then use twin spots.
+  Keep that story clear when adding the DNA-repair connection and other examples.
+
+- I would like more section and subsection slides, particularly in long decks such as 09B.
+  Aim for about one divider per ten slides, placed at conceptual transitions.
 
 - A bad font license file must not block slide rendering; license validation is not a build gate.
 

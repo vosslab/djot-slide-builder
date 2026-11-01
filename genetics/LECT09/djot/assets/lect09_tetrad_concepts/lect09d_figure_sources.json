@@ -71,7 +71,7 @@
       "repair": "Replace inherited 1.20 horizontal stretch with equal x/y scales; reposition live labels."
     },
     {
-      "asset": "homework_ascus.svg",
+      "asset": "homework_ascus.drawn.svg",
       "source": "genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_asci.svg",
       "source_sha256": "f04fb7f2b8d0f4faca08cfead37a04e7845aa86fc63d20b910b7057f6263ca56",
       "set": 3,

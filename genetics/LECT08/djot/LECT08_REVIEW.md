@@ -96,6 +96,14 @@ not in Djot notes or comments.
 
 ### Validation
 
+The SVG tracking review confirms that all twelve 08F components reproduce byte-for-byte from
+the local `_temp/author_bpw_visuals.py` primitive/text drawing code. They contain no embedded
+images or external artwork references. The textbook sources above supplied concepts rather
+than copied graphics. Their unchanged bytes now use the `.drawn.svg` suffix, which the shared
+validator requires to be image-free. The broad folder exception is removed. This is a provenance check, not a
+declaration that original diagrams are outside copyright protection. Verification copies and
+Git-ignore checks are in `_temp/svg_tracking_audit/`.
+
 Strict native Jotdown/structural lint passes: 49 slides, 12 images. The typography audit has
 no findings. The only capacity advisories remain the unchanged shared roadmaps at 19.75 pt
 versus the 20 pt advisory floor (slides 6, 20, 29). This revision changes content and assets,

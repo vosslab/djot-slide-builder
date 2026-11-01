@@ -2,6 +2,20 @@
 
 ### Additions
 
+- Restore 09C's original story: linked-gene crossing over, the same kind of exchange in a
+  body cell, twin spots, and patch growth. Move the short DNA-repair explanation after the
+  examples; explain that breaks can arise naturally during ordinary cell activity. Keep all
+  13 slides and figures, the five researched additions, both segregation outcomes, and the
+  cancer/research connections. Use concrete headings and plainer prose; refresh notes and sources.
+
+- Add 14 conceptual section/subsection dividers across Lecture 09B-H, bringing 09B from
+  two to six dividers and 46 to 50 slides. Separate expected doubles, interference, map meaning,
+  tetrad classes, crossover correction, and worked mapping stages. Retain 09D's two existing
+  breaks. Preserve all teaching slides, data, artwork, and question/answer sequences; refresh
+  current page ownership, catalog, and the section review. Rebuild/review six decks, pass
+  strict lint and clean typography audits, verify all 199 prior slides and 152 asset/data files,
+  and retain only the eight existing 09B table-capacity advisories. All new titles fit one line.
+
 - Refresh 09H's five generator-based ordered-ascus figures with the instructor's updated
   artwork. Preserve image proportions, align pair brackets to current spore bounds, and
   keep all fixed patterns/counts and the 15 cM solution. Add colored opening definitions
@@ -102,6 +116,13 @@
   replace obsolete Zoom group-quiz wording in the shared Genetics quiz guidance.
 
 ### Fixes
+
+- Separate reviewed image-free drawings with a `.drawn.svg` suffix and reject nested image
+  elements during shared SVG validation. Rename 31 drawings without changing artwork bytes;
+  update references and table-builder outputs. Keep ordinary SVGs ignored and retain only
+  15 explicit original-generator capture exceptions. Stop tracking 38 other image-bearing SVGs
+  while keeping them locally. Verify ignore behavior, references, byte preservation, and focused
+  tests; leave exported slides and earlier Git history intact.
 
 - Move the ordered/unordered tetrad roadmaps from Genetics evergreen into Lecture 09 and
   update all seven active includes. Reserve evergreen for content used across courses or

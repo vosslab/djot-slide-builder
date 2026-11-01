@@ -16,7 +16,7 @@
   },
   "figures": [
     {
-      "asset": "two_gene_classes_large.svg",
+      "asset": "two_gene_classes_large.drawn.svg",
       "source": "two_gene_asci.svg",
       "class_font": 76,
       "classes": [
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "asset": "unlinked_classes_large.svg",
+      "asset": "unlinked_classes_large.drawn.svg",
       "source": "unlinked_asci.svg",
       "class_font": 76,
       "classes": [

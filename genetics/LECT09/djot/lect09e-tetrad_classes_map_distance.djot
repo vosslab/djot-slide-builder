@@ -42,6 +42,10 @@ color-theme: genetics
 - [*SCO*]{color=#24578F}: a single-crossover meiosis in that interval.
 - [*DCO*]{color=#24578F}: a double-crossover meiosis in that interval.
 
+=== layout: section
+
+# Tetrad Classes
+
 === layout: one-panel
 
 # Two Different Kinds of Labels
@@ -75,7 +79,7 @@ Parents: ++ / ab. The homework uses + for wild type; the chromosome diagrams use
 
 @body
 
-![Large classification answers](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
+![Large classification answers](assets/lect09e-tetrad_visuals/two_gene_classes_large.drawn.svg)
 
 @citation
 
@@ -107,6 +111,10 @@ Parents: ++ / ab. Classify all four spores; the set count does not define its cl
 - Linked genes: [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}.
 - [TT]{color=#A719DB} alone does not establish whether the genes are linked.
 - Unlinked genes can also give [TT]{color=#A719DB}; we will see how later.
+
+=== layout: subsection
+
+# Crossover Outcomes
 
 === layout: one-panel
 
@@ -192,13 +200,17 @@ Ask students to distinguish the number of exchanges from the number of chromatid
 
 Two-strand DCO gives [PD]{color=#935D00}; three-strand DCO gives [TT]{color=#A719DB}; four-strand DCO gives [NPD]{color=#007A00}. Three or more crossovers are assumed rare.
 
+=== layout: section
+
+# Recombinant Spores
+
 === layout: one-panel
 
 # How Many Spores Are Recombinant?
 
 @body
 
-![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
+![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.drawn.svg)
 
 - The parents are ++ / ab.
 - In each class, how many of the four spores have a nonparental combination?
@@ -213,7 +225,7 @@ Pause before showing the counts. Ask students to point to the a+ and +b spores. 
 
 @top
 
-![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.svg)
+![two gene classes](assets/lect09e-tetrad_visuals/two_gene_classes_large.drawn.svg)
 
 @bottom
 
@@ -249,6 +261,10 @@ $$
 @notes
 
 Ask where the four went. It cancels; we have not changed what the fraction measures. [TT]{color=#A719DB}, [NPD]{color=#007A00}, and N are tetrad counts throughout. This formula measures the fraction of spores with nonparental combinations.
+
+=== layout: subsection
+
+# Hidden Crossovers
 
 === layout: one-panel
 

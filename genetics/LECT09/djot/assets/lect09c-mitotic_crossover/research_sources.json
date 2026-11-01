@@ -1,22 +1,26 @@
 {
-  "purpose": "Five concept-sized additions for upper-level genetics; illustrations are original conceptual SVGs embedded through native Djot image blocks.",
+  "purpose": "Keep the linked-gene crossover to body-cell exchange to twin-spot story; retain the five researched additions and place the short repair explanation near the end.",
   "added_slide_titles": [
-    "Repair Starts with a Matching Copy",
-    "Loss of Heterozygosity",
     "One Event Can Make a Patch",
-    "LOH Can Supply a Second Hit",
-    "Twin Spots Can Test Gene Function"
+    "Two Copies of the Same Allele",
+    "An Existing Allele Can Matter",
+    "Use Twin Spots to Study Cells",
+    "A Link to DNA Repair"
   ],
   "clarifications": [
     "Mitotic recombination refers to cycling cells; DNA repair can precede the next mitosis.",
     "Remove the unsupported universal once-per-million upper limit. Rates depend on assay and context.",
     "LOH is an allelic-state change, not necessarily chromosome loss; the illustrated crossover outcome is conditional on segregation.",
-    "Cancer and clone-growth examples describe possibilities, not inevitable outcomes."
+    "Cancer and clone-growth examples describe possibilities, not inevitable outcomes.",
+    "Mitotic crossover can occur spontaneously; DNA breaks can arise during ordinary cell activity. An experimental damage treatment is not required.",
+    "DNA-copying or break repair can lead to exchange; using a matching DNA copy is not itself a crossover. Do not claim one initiating lesion explains every spontaneous event.",
+    "Meiotic recombination also begins with controlled DNA breaks. This is instructor context, not a new repair-pathway lesson.",
+    "Explain daughter cells and patches before naming loss of heterozygosity. Keep the two chromosome-separation outcomes visible."
   ],
   "assets": {
-    "repair_templates.svg": "Matching sister versus homolog; sequence-template arrow is not a crossover.",
-    "loh_outcome.svg": "Starting G1 diploid cell and two postmitotic diploid daughters; replicated intermediate omitted; two reciprocal recombinants and two intact chromatids represented by the final daughter chromosome colors.",
-    "clonal_patches.svg": "Conceptual clones within a heterozygous tissue; counts and positions are not data."
+    "repair_templates.drawn.svg": "Matching sister versus homolog; sequence-template arrow is not a crossover.",
+    "loh_outcome.drawn.svg": "Starting G1 diploid cell and two postmitotic diploid daughters; replicated intermediate omitted; two reciprocal recombinants and two intact chromatids represented by the final daughter chromosome colors.",
+    "clonal_patches.drawn.svg": "Conceptual clones within a heterozygous tissue; counts and positions are not data."
   },
   "sources": [
     {
@@ -53,6 +57,27 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2720837/",
       "doi": "10.1038/nmeth.1349",
       "supports": "Paired daughter-lineage labeling and comparisons of proliferation, shape, and viability."
+    },
+    {
+      "authors": "Lee et al.",
+      "year": 2009,
+      "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000410",
+      "doi": "10.1371/journal.pgen.1000410",
+      "supports": "Spontaneous exchanges between homologs in mitotically dividing yeast; distinct chromosome-separation outcomes and DNA-break models."
+    },
+    {
+      "authors": "Saleh-Gohari et al.",
+      "year": 2005,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16055725/",
+      "doi": "10.1128/MCB.25.16.7158-7169.2005",
+      "supports": "Evidence that breaks arising within cells and replication problems initiate spontaneous homologous recombination; not an assay proving every event is a homolog crossover."
+    },
+    {
+      "authors": "Keeney et al.",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9039264/",
+      "doi": "10.1016/S0092-8674(00)81876-0",
+      "supports": "Controlled DNA cleavage starts meiotic recombination; instructor background for the distinction between a DNA break and an unnatural event."
     }
   ],
   "drawing_references": [

@@ -1,3 +1,7 @@
+=== layout: section
+
+# Ordered Tetrad Problem
+
 === layout: stacked-panels
 
 # A New Ordered-Tetrad Problem
@@ -88,6 +92,10 @@ $$
 
 - FDS: 188 + 162 = 350.
 - Check: 350 + 150 = 500 asci.
+
+=== layout: subsection
+
+# From SDS to Map Distance
 
 === include: ordered_tetrad_steps.djot
 

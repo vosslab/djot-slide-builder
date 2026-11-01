@@ -22,6 +22,10 @@ color-theme: genetics
 - Calculate expected doubles, coincidence, and interference.
 - Explain why outer-pair recombination differs from map length.
 
+=== layout: section
+
+# Hidden Double Crossovers
+
 === layout: one-panel
 
 # Why Do the Distances Not Add?

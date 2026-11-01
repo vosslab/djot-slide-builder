@@ -18,6 +18,27 @@ Do not convert a complete slide into a bitmap to preserve its layout.
 
 An embedded bitmap retains its original resolution; wrapping it in SVG does not add detail.
 
+## Drawing and image-wrapper filenames
+
+- Use `name.drawn.svg` for a reviewed original drawing composed of vector shapes and text.
+  Git permits this suffix. Lint and builds reject `image` and `feImage` elements anywhere
+  inside it, including nested SVGs and filter definitions.
+- Keep image-containing figures as ordinary `name.svg` files. Git ignores these by default.
+  The exact-file exceptions in [.gitignore](../.gitignore) cover reviewed captures of our own
+  generator artwork; importing or repairing textbook art does not qualify it for an exception.
+- Review ownership separately. Image-free geometry and the `.drawn.svg` suffix do not prove
+  that a drawing is original or that its source permits redistribution.
+
+If validation finds an image inside `.drawn.svg`, use an ordinary `.svg` filename and retain
+the file locally, ignored, until its provenance supports tracking. Do not remove source or
+copyright information to pass this check. Git ignore rules do not untrack existing files;
+`git rm --cached -- PATH` stops tracking while preserving the local file. This does not remove
+previous versions from Git history.
+
+The October 31, 2026 migration renamed 31 reviewed drawings with unchanged bytes and stopped
+tracking 38 image wrappers while preserving them locally. Fifteen original-generator captures
+remain explicit tracking exceptions. Earlier vector assets retain their existing filenames.
+
 ODP import prefers original metafiles over raster previews and converts them directly to SVG.
 Failures and converted figures without live text receive review reasons. The measured behavior
 and LibreOffice compatibility corrections are recorded in

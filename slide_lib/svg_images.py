@@ -20,6 +20,10 @@ def dimensions_blob(blob: bytes, source: str) -> tuple[float, float]:
 	if root.tag != "{http://www.w3.org/2000/svg}svg":
 		raise ValueError(f"{path}: expected an SVG root")
 	for element in root.iter():
+		# ASVS 2.2.1: enforce the declared image-free drawing format.
+		if source.endswith(".drawn.svg") and element.tag in {
+				"{http://www.w3.org/2000/svg}image", "{http://www.w3.org/2000/svg}feImage"}:
+			raise ValueError(f"{path}: .drawn.svg cannot contain image elements; use .svg and review its source before tracking")
 		if element.tag in {"{http://www.w3.org/2000/svg}script",
 				"{http://www.w3.org/2000/svg}foreignObject"}:
 			raise ValueError(f"{path}: SVG components must be static")

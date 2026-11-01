@@ -148,6 +148,26 @@ def test_svg_dimensions_require_local_static_positive_viewport(tmp_path: pathlib
 
 
 #============================================
+@pytest.mark.parametrize("tag", ["image", "feImage"])
+def test_drawn_svg_rejects_nested_images_without_blocking_image_wrappers(
+		tmp_path: pathlib.Path, tag: str) -> None:
+	"""An image wrapper cannot claim the trackable image-free drawing filename."""
+	path = tmp_path / "figure.drawn.svg"
+	path.write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10">'
+		'<rect width="20" height="10"/></svg>')
+	assert slide_lib.svg_images.dimensions(path) == (20, 10)
+	image = f'<{tag} href="data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoBAAEAAMASJaQAA3AA/v7deAAAAA=="/>'
+	if tag == "feImage":
+		image = '<defs><filter id="photo">' + image + '</filter></defs>'
+	wrapped = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10">'
+		'<g><svg>' + image + '</svg></g></svg>')
+	path.write_text(wrapped)
+	with pytest.raises(ValueError, match=r"\.drawn\.svg cannot contain image elements"):
+		slide_lib.svg_images.dimensions(path)
+	assert slide_lib.svg_images.dimensions_blob(wrapped.encode(), "figure.svg") == (20, 10)
+
+
+#============================================
 def parse_test_xml(source: str | bytes) -> lxml.etree._Element:
 	"""Parse test XML through the bounded production XML reader."""
 	data = source.encode("utf-8") if isinstance(source, str) else source

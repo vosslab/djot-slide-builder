@@ -1,18 +1,36 @@
 # Lecture 09 Review
 
+## 09C story and plain language
+
+09C still has 13 slides. Restore the instructor's linked-gene crossover to body-cell crossover
+to twin-spot story; move both original illustrations to C5-6, patch growth to C7, and the short
+repair explanation to C11. Keep the genotype change, cancer, and research examples at C8-10.
+Natural DNA breaks and experimentally induced damage are distinct; repair is a route to an
+exchange, not the opening reason for teaching it. Use concrete headings and explain terms after
+their examples. See [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md) for current sequence and sources.
+
+## Current conceptual section breaks
+
+Add 14 section/subsection dividers across B-H; D keeps its existing two. Current counts are
+B50, C13, D17, E34, F25, G43, and H31: 213 slides, including 24 dividers. C-H total 163.
+That divider-only revision preserved the teaching slides and their order. Current page numbers are in
+[LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md); the dated revision accounts below retain their
+earlier inventories. See [LECT09_SECTIONS_REVIEW.md](LECT09_SECTIONS_REVIEW.md) for the new breaks
+and verification.
+
 ## 09H current artwork and opening terms
 
-09H now has 28 slides, with definitions at H3 and five refreshed generator-based figures.
-Keep all six patterns/counts and the 15 cM result. The current C-H inventory is 153 pages.
+That revision brought 09H to 28 slides, with definitions at H3 and five refreshed generator-based figures.
+Keep all six patterns/counts and the 15 cM result. At that revision, C-H totaled 153 pages.
 See [LECT09H_REVIEW.md](LECT09H_REVIEW.md) for the artwork, page changes, and checks.
 
 ## 09E/F/G color and readability
 
-09E now has 30 pages, including a separate static classification question/answer pair.
-09F/09G remain 24/42 pages. Use large class answers, colored definition terms and equations,
+That revision brought 09E to 30 pages, including a separate static classification question/answer pair.
+09F/09G then retained 24/42 pages. Use large class answers, colored definition terms and equations,
 homework-shaped ascus outcomes, and repaired SVG lettering. Keep the unlinked TT mechanisms
 later in the deck as taught material; remove misleading reference footers from covered recaps.
-All fixed data and calculations are preserved. The current C-H inventory is 153 pages.
+All fixed data and calculations are preserved. At that revision, C-H totaled 153 pages.
 See [LECT09EFG_REVIEW.md](LECT09EFG_REVIEW.md) for page changes, figure/data contracts, and checks.
 
 ## 09D meiosis and figure revision
@@ -61,14 +79,14 @@ and unchanged-other-source checks pass. Source/ODP/PDF agree at twelve pages; al
 pages are visually reviewed. No replacement markers, capacity concerns, or typography
 findings remain. Physical projection/pacing and Impress playback are untested.
 
-The 09B and tetrad records below describe their earlier updates. The current C-H inventory
-is 153 visible slides after the 09C-E and 09H updates; the original reorganization had 143.
+The 09B and tetrad records below describe their earlier updates. C-H totaled 153 visible
+slides after the 09C-E and 09H updates; the original reorganization had 143.
 
 
 ## 09B two generated examples
 
 The instructor requested removal of the reference problems and a second generated example.
-[lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) now has 46 visible pages:
+[lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) then had 46 visible pages:
 the original F-W-P homework example, unchanged mapping/chromatin context, and an A-J-E practice
 example. The previous reference section and all Lz/Su/Gl, A-C-B, and F-G-H questions/answers
 are absent from the active deck. The earlier [plan](../../../docs/archive/lect09b_homework_interference.md)
@@ -126,7 +144,8 @@ Its old 09B hash statements and initial-conversion findings are historical. The 
 
 The approved reorganization replaces the overlapping 62-slide introduction and 90-slide worked
 deck with six independently buildable C-H decks. Lecture 09B remains crossover interference.
-The six decks originally contained 143 visible slides, now 153 after the 09C-E and 09H updates; each has its own cover, objectives, takeaways,
+The six decks originally contained 143 visible slides, then 153 after the 09C-E and 09H updates.
+They now total 163 with the conceptual dividers; each has its own cover, objectives, takeaways,
 and ending. The two mixed masters are preserved with a pre_split.djot.retired suffix.
 Earlier full introduction/activity retirements and all original ODP/PDF inputs remain intact.
 
@@ -136,12 +155,12 @@ pre-split master retains its historical include path.
 
 | Deck | Topic | Slides | Source |
 | --- | --- | --- | --- |
-| 09C | Mitotic Crossover | 12 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
+| 09C | Mitotic Crossover | 13 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
 | 09D | Yeast and Unordered Tetrads | 17 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
-| 09E | Crossovers and Tetrad Mapping | 30 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
-| 09F | Two-Gene Tetrad Mapping | 24 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |
-| 09G | Three-Gene Tetrad Mapping | 42 | [lect09g-three_gene_tetrad_mapping.djot](lect09g-three_gene_tetrad_mapping.djot) |
-| 09H | Ordered Tetrads and Centromeres | 28 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
+| 09E | Crossovers and Tetrad Mapping | 34 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
+| 09F | Two-Gene Tetrad Mapping | 25 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |
+| 09G | Three-Gene Tetrad Mapping | 43 | [lect09g-three_gene_tetrad_mapping.djot](lect09g-three_gene_tetrad_mapping.djot) |
+| 09H | Ordered Tetrads and Centromeres | 31 | [lect09h-ordered_tetrads_centromeres.djot](lect09h-ordered_tetrads_centromeres.djot) |
 
 ### Teaching Ownership and Coverage
 

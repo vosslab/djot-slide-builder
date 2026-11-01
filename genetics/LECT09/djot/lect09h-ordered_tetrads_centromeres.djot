@@ -33,6 +33,10 @@ color-theme: genetics
 - [*First-Division Segregation (FDS)*]{color=#076DAD}: alleles separate at meiosis I, giving a 4:4 pattern.
 - [*Second-Division Segregation (SDS)*]{color=#B74300}: alleles separate at meiosis II, giving 2:2:2:2 or 2:4:2.
 
+=== layout: section
+
+# Ordered Spore Patterns
+
 === layout: one-panel
 
 # Life Cycle of Neurospora crassa

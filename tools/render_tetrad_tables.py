@@ -165,7 +165,7 @@ def main() -> None:
 		prefix = "two_gene" if "distance" in example["pairs"][pair] else "unlinked"
 		artwork = load_asci(args.problem_data.parent / f"{prefix}_asci.svg")
 		for reveal, state in ((False, "question"), (True, "classified")):
-			path = args.problem_data.parent / f"{prefix}_table_{state}.svg"
+			path = args.problem_data.parent / f"{prefix}_table_{state}.drawn.svg"
 			if path in outputs:
 				raise ValueError("The input contains duplicate linked or unlinked two-gene examples")
 			outputs[path] = render_table(example, artwork, reveal)
