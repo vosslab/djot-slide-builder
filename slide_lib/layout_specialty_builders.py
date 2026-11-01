@@ -191,7 +191,7 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 	border = _decorative_shape(f"{contract.name}-frame",
 		slide_lib.layout_primitives.LogicalRectangle(105, 190, 1070, 420),
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		background_role,
+		None,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
 	surface = slide_lib.layout_primitives.SlideSurface(
@@ -217,7 +217,7 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
-	"""Give one component image the page and retain a short editable bottom caption."""
+	"""Give one component image the page and retain a wrapping native bottom caption."""
 	image_cell = next(cell for cell in source.cells if cell.name == "image")
 	caption_cell = next(cell for cell in source.cells if cell.name == "caption")
 	image = image_cell.blocks[0]
@@ -232,8 +232,18 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
 	inner = slide_lib.layout_primitives.LogicalRectangle(
 		0, 0, caption_rectangle.width - 36, caption_rectangle.height - 20)
+	items = slide_lib.layout_measurement.items_for(caption_cell.blocks)
+	required_height = slide_lib.layout_measurement.text_height(
+		items, CAPTION_FLOOR_SIZE_PT, inner.width, theme, session) + 20 + \
+		slide_lib.layout_measurement.point_height(slide_lib.layout_measurement.TEXT_FRAME_CLEARANCE_PT, theme)
+	# Use the lower margin only when no citation needs it; keep the image untouched.
+	bottom = caption_rectangle.y + caption_rectangle.height if source.citation else \
+		slide_lib.layout_primitives.LOGICAL_SLIDE_HEIGHT - 4
+	caption_rectangle = dataclasses.replace(caption_rectangle,
+		height=min(max(caption_rectangle.height, required_height), bottom - caption_rectangle.y))
+	inner = dataclasses.replace(inner, height=caption_rectangle.height - 20)
 	size = slide_lib.layout_measurement.select_size(
-		slide_lib.layout_measurement.items_for(caption_cell.blocks),
+		items,
 		slide_lib.layout_measurement.text_frame_measurement(inner),
 		CAPTION_SIZE_PT, CAPTION_FLOOR_SIZE_PT, theme, caption_cell.location,
 		contract.name, "caption", session)
@@ -253,7 +263,7 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 			slide_lib.layout_primitives.StyleRole.PANEL,
 			1, slide_lib.layout_primitives.LinePattern.NONE, 16),
 		slide_lib.layout_primitives.ObjectAccessibility(
-			"Caption", "Caption for the primary slide image"), caption_text)
+			decorative=True))
 	image_object = slide_lib.layout_object_builders.picture_object(
 		"big-image", deck, image, image_rectangle, "image", 0)
 	if not isinstance(image_object.content, slide_lib.layout_content.PictureContent):
@@ -263,11 +273,17 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		image_object.content.placement.displayed_rectangle, "image", index + 1, theme)
 		for index, overlay in enumerate(overlays))
 	caption_order = len(overlay_objects) + 1
+	# Native text frames wrap in LibreOffice; the separate master panel cannot block selection.
+	caption_background = slide_lib.layout_model.LayoutObject("caption-background",
+		slide_lib.layout_primitives.PresentationRole.GRAPHIC,
+		slide_lib.layout_primitives.StyleRole.PANEL, caption_rectangle,
+		slide_lib.layout_primitives.ObjectLayer.DECORATION, caption_order, caption_order,
+		caption_shape, origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
 	caption_object = slide_lib.layout_model.LayoutObject("caption",
 		slide_lib.layout_primitives.PresentationRole.CONTENT,
 		slide_lib.layout_primitives.StyleRole.BODY, caption_rectangle,
-		slide_lib.layout_primitives.ObjectLayer.CONTENT, caption_order, caption_order,
-		caption_shape, caption_frame, "caption", source=caption_cell.location)
+		slide_lib.layout_primitives.ObjectLayer.CONTENT, caption_order + 1, caption_order + 1,
+		caption_text, caption_frame, "caption", source=caption_cell.location)
 	image_slot = _slot("image", slide_lib.layout_primitives.PlaceholderKind.NONE,
 		slide_lib.layout_primitives.PresentationRole.COMPONENT,
 		image_rectangle, 0, None, slide_lib.layout_primitives.StyleRole.BODY)
@@ -275,7 +291,7 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		slide_lib.layout_primitives.PresentationRole.CONTENT,
 		caption_rectangle, 1, caption_frame, slide_lib.layout_primitives.StyleRole.BODY)
 	return SpecialtySlideComponents(
-		(image_slot, caption_slot), (image_object, *overlay_objects, caption_object))
+		(image_slot, caption_slot), (image_object, *overlay_objects, caption_background, caption_object))
 
 
 def _end_components(deck: slide_lib.native_model.Deck,
@@ -327,13 +343,13 @@ def _end_components(deck: slide_lib.native_model.Deck,
 	outer = _decorative_shape("end-outer-frame",
 		slide_lib.layout_primitives.LogicalRectangle(110, 40, 1060, 720),
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.TRANSITION,
+		None,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 3, 54, 0, 1)
 	inner = _decorative_shape("end-inner-frame",
 		slide_lib.layout_primitives.LogicalRectangle(155, 75, 970, 650),
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.ACCENT,
+		None,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 44, 1, 2)
 	total_width = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY,

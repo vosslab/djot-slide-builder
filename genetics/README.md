@@ -153,7 +153,7 @@ separate homes, with one unordered derivation and ordered tetrads taught last:
 | Deck | Topic | Slides |
 | --- | --- | --- |
 | [09B](LECT09/djot/lect09b-crossover_interference.djot) | Crossover Interference | 50 |
-| [09C](LECT09/djot/lect09c-mitotic_crossover.djot) | Mitotic Crossover | 13 |
+| [09C](LECT09/djot/lect09c-mitotic_crossover.djot) | Mitotic Crossover | 19 |
 | [09D](LECT09/djot/lect09d-yeast_unordered_tetrads.djot) | Yeast and Unordered Tetrads | 17 |
 | [09E](LECT09/djot/lect09e-tetrad_classes_map_distance.djot) | Crossovers and Tetrad Mapping | 34 |
 | [09F](LECT09/djot/lect09f-two_gene_tetrad_mapping.djot) | Two-Gene Tetrad Mapping | 25 |
@@ -161,14 +161,16 @@ separate homes, with one unordered derivation and ordered tetrads taught last:
 | [09H](LECT09/djot/lect09h-ordered_tetrads_centromeres.djot) | Ordered Tetrads and Centromeres | 31 |
 
 Section and subsection slides mark conceptual transitions, roughly one per ten slides.
-See [LECT09_SECTIONS_REVIEW.md](LECT09/djot/LECT09_SECTIONS_REVIEW.md) for the current breaks.
+See [LECT09_SOURCE_MAP.md](LECT09/djot/LECT09_SOURCE_MAP.md) for current page ownership and
+[LECT09_SECTIONS_REVIEW.md](LECT09/djot/LECT09_SECTIONS_REVIEW.md) for the earlier divider revision.
 
 09B preserves the homework's phenotype/allele/count tables. The F-W-P example gives 54 observed
 versus 67.5 expected doubles and 20% interference. A-J-E practice gives 70 observed versus
 280 expected, 25% coincidence, and 75% interference. The old reference problems are removed.
 Both worked chapters, the repeated roadmap, and frozen data are local to Lecture 09.
 
-09C follows linked-gene crossing over into body cells, twin spots, and patch growth. It then
+09C follows linked-gene crossing over into body cells, twin spots, a prediction problem with
+a worked answer, and patch growth. It then
 names the genotype change and connects it to cancer, experiments, and a short repair explanation.
 All five researched additions and both original fly illustrations remain. Primary
 sources and diagram assumptions are in [LECT09C_RESEARCH.md](LECT09/djot/LECT09C_RESEARCH.md).

@@ -1,5 +1,27 @@
 # Design decisions
 
+### Manual weather story snapshots
+
+**Decision.** Capture the NWS Chicago page's initially displayed PNG and its complete description
+in one `big-image` slide immediately before the icebreaker. Preview by default; save explicitly.
+Use the description as native caption text. Put attribution, retrieval date, and source URL in
+the separate `@citation` footer, as requested by the instructor.
+
+**Why.** The forecasters choose a useful conversation starter. A local snapshot preserves that
+choice for the lecture and keeps normal builds offline. The story's image filename can change.
+
+**Consequence.** Store immutable, content-addressed PNGs beside each selected deck and replace
+one managed weather slide. Validate the active story, official HTTPS URLs, image, and every
+insertion point before writing. Long captions may grow down into the unused lower margin,
+with image geometry fixed and citation clearance preserved. Keep existing font fitting and
+accept roughly 15 pt for this use. Tab selection and historical forecast lookup are outside v1.
+Downloaded text stays literal Djot; URL admission and redirect validation apply ASVS 2.2.1/1.2.2.
+Native caption text sits in a wrapping text frame; its rounded panel is master decoration.
+Text directly inside the rectangle ran off-page in LibreOffice despite measured wrapping.
+
+**Owner.** [refresh_weather.py](../tools/refresh_weather.py),
+[layout_specialty_builders.py](../slide_lib/layout_specialty_builders.py), and [USAGE.md](USAGE.md).
+
 ### Twin spots lead 09C
 
 **Decision.** Restore the linked-gene crossover to body-cell crossover to twin-spot sequence.
@@ -9,12 +31,17 @@ short repair explanation near the end and use plain language throughout.
 
 **Why.** Starting with repair changed the instructor's story and could make a natural, uncommon
 event sound as though it required laboratory damage. DNA breaks can arise naturally, and repair
-provides a route to exchange. The initiating lesion is distinct from the crossover outcome.
+can lead to an exchange. A DNA break and the exchange that can follow are different steps.
 
-**Consequence.** Retain 13 slides, every figure, all five researched additions, both segregation
+**Consequence.** Retain the 13 existing slides, every figure, all five researched additions, both segregation
 outcomes, and the two-copy distinction. Replace acronym-led headings with concrete descriptions.
 Keep detailed repair qualifications in teaching notes and the source ledger. Update current page
 ownership; earlier section/research verification remains a dated snapshot.
+Add four conceptual dividers at the instructor's request, bringing 09C to 17 pages. Mark the
+twin-spot mechanism, genotype change, cell-growth experiment, and repair explanation without
+reordering or rewriting the existing slides. Add the approved simple twin-spot prediction and
+worked answer after the fly illustration, bringing 09C to 19 pages. Specify the exchange and
+chromosome-separation pattern; keep optional harder extensions in the research report.
 
 **Owner.** [lect09c-mitotic_crossover.djot](../genetics/LECT09/djot/lect09c-mitotic_crossover.djot)
 and [LECT09C_RESEARCH.md](../genetics/LECT09/djot/LECT09C_RESEARCH.md).
@@ -87,6 +114,12 @@ does not determine classification. A page preview connects the activity to the a
 and an uncovered final reference. Use measured allele-cell bounds for covers. The source
 handout remains unchanged; page 2 previews its three-gene problems without cropping or stretching.
 Change the shared roadmap reminder to focus on one pair, updating F's two uses as well.
+Use the existing one-plus-two-panel layout for G11-15, G20-24, and G29-33: explanations occupy
+the top-right slot, and native distance tables share a table group in the bottom-right slot.
+Move each linkage conclusion below its left-hand count summary to keep the right-hand sums
+readable; show those sums as separate paragraphs so bullet indentation cannot force a wrap
+into the table below. Frame G39's unchanged handout capture with an unfilled gray SVG rectangle;
+keep this reviewed image-bearing wrapper distinct from `.drawn.svg` assets.
 
 **Owner.** Lecture 09G, the local unordered roadmap, and
 [three_gene_homework_sources.json](../genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_sources.json).
@@ -402,16 +435,23 @@ evidence; permanent tests protect supported authoring and export contracts.
 **Owner.** `slide_lib/math_render.py`, `slide_lib/math_layout.py`, and
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
-### Cover decoration belongs to the master
+### Decorative frames belong to masters
 
-Put the cover border and accent on a dedicated title-slide master derived from the course master.
-Use a pale tint of the course accent for the card fill on that background master.
-Keep the actual lecture identifier and
-metadata as native text on the slide. Ordinary slides retain
-the original course master. This keeps decorative furniture outside normal slide selection and
-paints it as background in PDF, without rasterizing text. Explicit stacking order alone did not
-resolve the reported selection problem. PDF text extraction and viewer copy interaction are separate
-acceptance checks.
+**Decision.** Put all theme-owned decorations on derived background masters; retain slide text
+on the slide. Use no fill for section/subsection and THE END outlines. Preserve the pale cover
+card and thin colored teaching bands. Citation backing bands also belong to the theme.
+
+**Why.** Foreground borders can intercept PDF text selection even with no fill. macOS PDFKit's
+point selection returned a graphic-object marker instead of the heading; moving decoration to
+the background master restores the text. Extraction alone did not detect this failure.
+
+**Consequence.** Share masters by decoration geometry and course-background visibility; retain
+the dark page surfaces and keep decorations above the course background within their master.
+An offline parametrized pytest covers eight layouts and two themes, including image captions.
+Real PDF point-selection and visual checks verify exports; a failed ownership/fill assertion
+requires repairing that boundary.
+
+**Owner.** [odp_export.py](../slide_lib/odp_export.py) and [test_odp_export.py](../tests/test_odp_export.py).
 
 ### Embedded ODF document references
 

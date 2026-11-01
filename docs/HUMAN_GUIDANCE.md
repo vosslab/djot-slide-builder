@@ -1,5 +1,9 @@
 # Human guidance
 
+- I must be able to select and copy PDF slide text, including framed bookends, definitions,
+  sections, THE END, and reference slides. Decorative borders must not block selection;
+  outline-only borders should have no fill.
+
 - Use black table-header text on light course-colored backgrounds.
 
 - Use comfortable default table-cell padding, center all table headings, and vertically
@@ -100,6 +104,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - In 09G, cover the unused gene while comparing a pair. Keep the main parental-ditype
   row highlighted across pairs: its genotypes and count do not change.
 - Show a whole page of my handout on the Your Turn slide. I like visuals.
+- In 09G, keep the bottom-right distance table the same size through slides 11-15,
+  20-24, and 29-33. Give the handout page on slide 39 a visible page outline.
 
 - Make classification answers large; separate question/answer slides are fine instead of
   animation for this content. Use my better colored tetrads in the crossover figures.
@@ -246,6 +252,10 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 - I would like more section and subsection slides, particularly in long decks such as 09B.
   Aim for about one divider per ten slides, placed at conceptual transitions.
+- Add more section/subsection slides to 09C because it moves quickly between topics.
+  Look in my local genetics books for twin-spot homework ideas.
+- I like the simple twin-spot prediction problem.
+- Put the twin-spot prediction problem into Lecture 09C, not just the research notes.
 
 - A bad font license file must not block slide rendering; license validation is not a build gate.
 
@@ -616,6 +626,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ### Reusable icebreakers
 
+- Use the NWS Chicago weather story before the icebreaker, refreshed manually on lecture day
+  or the day before. I like that the forecast office always finds something interesting.
+- Use `big-image` with the full NWS description as its caption. Start with the initially
+  displayed story; deal with tab selection later. About 15 pt is fine, and the caption can
+  have a little more room downward.
+- Put "NWS Chicago, retrieved [date]: https://www.weather.gov/lot/weatherstory" in
+  `@citation`, not in the weather caption.
+
 - Use restrained color on icebreaker slides: emphasize the main prompts with the preferred
   palette, keeping example answers mostly in ordinary text.
 
@@ -624,6 +642,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Build a reusable collection from old announcement slides, preserving their Breakout Room Chat
   format and wording. Keep subject-specific prompts and general fallbacks.
 - For Genetics on October 20, 2026, ask about pets: dog, cat, none, other.
+- For Genetics 09A on November 3, 2026, ask: "What everyday task would you permanently
+  hand over to a robot?"
 - The collection is in `icebreakers.yaml`; select prompts explicitly for each class.
 
 ### LECT07D title wording

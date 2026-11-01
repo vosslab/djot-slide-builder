@@ -29,8 +29,8 @@ color-theme: genetics
 @body
 
 - State your name, major, and post-grad plans
-- [What is the best dish you can cook?]{color=red}
-  - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
+- [What everyday task would you permanently hand over to a robot?]{color=red}
+  - Examples: laundry, dishes, grocery shopping.
 
 === include: repo:genetics/evergreen/youtube_channel.djot
 

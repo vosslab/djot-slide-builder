@@ -152,6 +152,49 @@ All required thumbnails are fetched and validated before source writes.
 Build the selected decks normally afterward. Builds use saved local assets and never refresh
 the episode automatically, so a past lecture retains the episode selected for it.
 
+## Refresh the weather story
+
+Run this on lecture day or the preceding day to preview the current Chicago weather story:
+
+```bash
+source source_me.sh && python3 tools/refresh_weather.py genetics/LECT09
+```
+
+Save the graphic and slide after reviewing the diff:
+
+```bash
+source source_me.sh && python3 tools/refresh_weather.py genetics/LECT09 --write
+```
+
+Like the podcast tool, this accepts specific announcement files or lecture folders, including
+multiple selectors. Folder selection includes matching announcement variants; use explicit
+filenames when a folder contains historical versions.
+
+The tool reads the initially displayed story from
+[NWS Chicago](https://www.weather.gov/lot/weatherstory). It discovers the current PNG URL,
+preserves the original graphic and complete forecast description, and inserts one `big-image`
+slide immediately before the unique Breakout Room Chat or Icebreaker heading. Refreshing replaces
+that slide. The forecast stays editable in `@caption`; the NWS credit, Chicago-local retrieval
+date, and complete source URL go in `@citation`. No extra discussion prompt or forecast summary
+is generated.
+
+Images are saved under `assets/weather_story/` beside the deck, with content-based filenames.
+Earlier images remain intact. All downloads, PNG validation, and insertion points are checked
+before source writes; errors leave existing snapshots intact. Preview downloads and validates
+the same resources but saves no files. Missing or ambiguous story content requires reviewing
+the NWS page before retrying; there are no tab-selection controls.
+
+Build normally afterward. Builds use saved local files and never refresh the forecast. This
+captures the current story, rather than looking up weather for the cover date. Use a temporary
+copy for testing instead of refreshing a past lecture unintentionally.
+
+Long `big-image` captions can grow downward into the unused lower margin. The image allocation
+and aspect ratio stay unchanged; short captions retain their existing geometry. A slide with
+`@citation` reserves its footer. Font fitting still applies after the extra room is used;
+approximately 15 pt is acceptable for the weather description, even if the 18 pt advisory remains.
+Caption text uses a native text frame for wrapping and selection; its rounded backing panel
+lives on the background master.
+
 ## Build native decks
 
 Check every tracked standalone deck's slide 1 against the universal title format:
@@ -214,6 +257,20 @@ textbook predecessor and original presentation evidence are retained for referen
 `.djot` source only, and folder discovery recursively selects only `.djot` files. Every deck compiles
 once: `odp` writes the editable format, `pdf` writes native ODP plus its LibreOffice-derived PDF,
 and `all` writes both. Outputs are written below `output/odp/` and `output/pdf/`.
+
+Slide text remains selectable in PDF. Theme frames, borders, and accents live on background
+masters so they cannot intercept text selection. Section/subsection and THE END outlines have
+no fill; their colors come from the page background. The cover retains its pale card.
+Rebuild existing outputs after a renderer fix. The fast regression is:
+
+```bash
+source source_me.sh && python3 -m pytest tests/test_odp_export.py -k decoration_is_master_owned -q
+```
+
+This checks decoration ownership, native text, and outline fills for eight layouts in two themes,
+including the image-caption panel.
+For real PDF acceptance, verify selection between points in the text and inspect the rendered
+page; successful `pdftotext` extraction alone does not establish viewer copy/paste behavior.
 
 Large decks can use a master `.djot` containing ordered `include: chapter.djot` lines.
 Edit each chapter separately and build the master for one combined ODP/PDF. Folder builds and lint

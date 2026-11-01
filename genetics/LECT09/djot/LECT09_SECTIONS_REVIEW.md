@@ -1,14 +1,16 @@
 # Lecture 09 section revision
 
-This records the divider-only revision. The later 09C story revision keeps 13 pages, retitles
-its opening section, and reorders the examples; see [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md).
+This records the earlier divider-only revision. The later 09C story revision retained 13 pages;
+four more 09C dividers then brought it to 17, and the twin-spot prediction/answer bring it to 19.
+See [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md)
+for the current sequence and [LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md) for page ownership.
 
 Add conceptual breaks to the Lecture 09 content decks, using roughly one divider per ten
 slides as a guide. Major sections use the existing dark Genetics surface; subsections use
 a darker course-hue variant. All teaching slides retain their wording, order, layouts,
 notes, images, equation markup, and fixed problem data.
 
-## Current inventory
+## Inventory at this revision
 
 The 199 preceding slides become 213, including 24 section/subsection dividers.
 The six C-H topic decks total 163 slides. Announcements and Lecture 10 are outside this revision.

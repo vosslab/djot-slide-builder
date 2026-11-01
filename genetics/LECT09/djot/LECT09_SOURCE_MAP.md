@@ -120,7 +120,7 @@ The repeated [unordered_tetrad_steps.djot](unordered_tetrad_steps.djot) and
 
 | Deck | Topic | Slides | Source |
 | --- | --- | --- | --- |
-| 09C | Mitotic Crossover | 13 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
+| 09C | Mitotic Crossover | 19 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
 | 09D | Yeast and Unordered Tetrads | 17 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
 | 09E | Crossovers and Tetrad Mapping | 34 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
 | 09F | Two-Gene Tetrad Mapping | 25 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |
@@ -143,8 +143,8 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 2 | Learning Objectives | Superseded | Six topic-specific decks | Replace the mixed-deck bookend with topic-specific objectives, takeaways, and ending. |
 | 3 | Mitotic Cross-Over | Merged | 09C: 4 | The new cover replaces the repeated section divider. |
 | 4 | Mitotic Cross-Over | Revised | 09C: 4 | Connect naturally occurring body-cell exchange to linked genes and twin spots; keep the rate qualitative. |
-| 5 | Mitotic Recombination Can Lead to Twin Spots | Moved | 09C: 5 | Retain the existing teaching content. |
-| 6 | Untitled diagram | Repaired | 09C: 6 | Preserve the three phenotype panels; move their caption to native text and remove the textbook figure number. |
+| 5 | Mitotic Recombination Can Lead to Twin Spots | Moved | 09C: 6 | Retain the existing teaching content. |
+| 6 | Untitled diagram | Repaired | 09C: 7 | Preserve the three phenotype panels; move their caption to native text and remove the textbook figure number. |
 | 7 | Tetrads | Merged | 09D: 3-4 | Topic dividers become the focused deck cover and introduction. |
 | 8 | Products of Meiosis | Split (approved) | 09D: 5-6 | Separate diploid-progeny mapping from fungi retaining all four products; preserve all prose. |
 | 9 | Saccharomyces cerevisiae (Unordered Tetrads) | Merged | 09D: 3-4 | Topic dividers become the focused deck cover and introduction. |
@@ -289,7 +289,7 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 81 | Unordered Tetrad Mapping Reference | Moved | 09E: 30 | Retain the existing teaching content. |
 | 82 | Three-Gene Classification Reference | Repaired | 09G: 38 | Replace the dense genotype-string matrix with the completed homework table. |
 | 83 | Ordered Tetrad Mapping Reference | Moved | 09H: 26 | Retain the checked ordered example, original generator artwork, sums, and half-weight explanation. |
-| 84 | Your Turn: Tetrad Analysis Handout | Repaired | 09G: 39 | Retain current instructions beside a complete page-2 preview of the instructor-edited handout. |
+| 84 | Your Turn: Tetrad Analysis Handout | Repaired | 09G: 39 | Retain current instructions beside a complete page-2 preview of the instructor-edited handout, with a visible page outline. |
 | 85 | Your Turn | Merged | 09G: 40 | Preserve every year label and full prior-year URL in one reference slide. |
 | 86 | Your Turn | Merged | 09G: 40 | Preserve every year label and full prior-year URL in one reference slide. |
 | 87 | Your Turn | Merged | 09G: 40 | Preserve every year label and full prior-year URL in one reference slide. |
@@ -301,9 +301,10 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 
 ### Lecture 09C: Mitotic Crossover
 
-Five research-backed additions are documented in [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md).
-C3 is Beyond Meiosis. C4-7 restore linked-gene crossover, twin spots, and patch growth;
-C8-10 extend the genotype change to cancer and experiments, with the short repair link at C11.
+Four additional dividers mark twin spots, the genotype change, cell-growth experiments, and
+the repair explanation. Those brought the 13-page story to 17 pages; the prediction problem
+and worked answer at C8-9 now bring it to 19. All preceding slides remain intact and in order.
+Research sources and the problem model are in [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md).
 
 | PDF Page | Topic | Djot Owner |
 | --- | --- | --- |
@@ -311,15 +312,21 @@ C8-10 extend the genotype change to cancer and experiments, with the short repai
 | 2 | Learning Objectives | lect09c-mitotic_crossover.djot |
 | 3 | Beyond Meiosis | lect09c-mitotic_crossover.djot |
 | 4 | Mitotic Cross-Over | lect09c-mitotic_crossover.djot |
-| 5 | Mitotic Recombination and Twin Spots | lect09c-mitotic_crossover.djot |
-| 6 | Twin Spots After Mitotic Recombination | lect09c-mitotic_crossover.djot |
-| 7 | One Event Can Make a Patch | lect09c-mitotic_crossover.djot |
-| 8 | Two Copies of the Same Allele | lect09c-mitotic_crossover.djot |
-| 9 | An Existing Allele Can Matter | lect09c-mitotic_crossover.djot |
-| 10 | Use Twin Spots to Study Cells | lect09c-mitotic_crossover.djot |
-| 11 | A Link to DNA Repair | lect09c-mitotic_crossover.djot |
-| 12 | Key Takeaways | lect09c-mitotic_crossover.djot |
-| 13 | THE END | lect09c-mitotic_crossover.djot |
+| 5 | How Twin Spots Form | lect09c-mitotic_crossover.djot |
+| 6 | Mitotic Recombination and Twin Spots | lect09c-mitotic_crossover.djot |
+| 7 | Twin Spots After Mitotic Recombination | lect09c-mitotic_crossover.djot |
+| 8 | Predict the Twin Spots | lect09c-mitotic_crossover.djot |
+| 9 | Twin-Spot Prediction: Answer | lect09c-mitotic_crossover.djot |
+| 10 | One Event Can Make a Patch | lect09c-mitotic_crossover.djot |
+| 11 | What Changes in the Cell? | lect09c-mitotic_crossover.djot |
+| 12 | Two Copies of the Same Allele | lect09c-mitotic_crossover.djot |
+| 13 | A Cancer Example | lect09c-mitotic_crossover.djot |
+| 14 | Following Cell Growth | lect09c-mitotic_crossover.djot |
+| 15 | Use Twin Spots to Study Cells | lect09c-mitotic_crossover.djot |
+| 16 | How Exchanges Start | lect09c-mitotic_crossover.djot |
+| 17 | A Link to DNA Repair | lect09c-mitotic_crossover.djot |
+| 18 | Key Takeaways | lect09c-mitotic_crossover.djot |
+| 19 | THE END | lect09c-mitotic_crossover.djot |
 
 ### Lecture 09D: Yeast and Unordered Tetrads
 

@@ -1,18 +1,47 @@
 # Lecture 09 Review
 
+## 09G table sizing and handout frame
+
+Use the existing one-plus-two-panel layout on G11-15, G20-24, and G29-33. The bottom-right
+distance table has its own slot and a shared table group, keeping its position, column widths,
+row heights, and text size constant throughout all three pairwise calculations. Keep each
+linkage conclusion below the left-hand count summary so the sums remain readable above the
+distance table. All wording, data, equations, colors, and cumulative answers are preserved.
+
+G39 shows the same complete handout capture inside a thin, unfilled gray page outline.
+The SVG embeds the original WebP bytes at their natural proportions. It is explicitly reviewed
+as an image-bearing handout wrapper rather than labeled as an image-free drawing.
+
+Strict native lint, capacity, and typography checks are clean. Source/ODP/PDF retain 43 pages.
+All 15 tables have identical compiled geometry, font size, and exported ODP frames. Every
+PDF page retains its words and numbers; all 16 changed pages were visually inspected. The
+three class sums use separate paragraphs to avoid bullet-induced wrapping. Evidence is in
+`_temp/09g_layout/`. No renderer changes, new dependencies, or permanent tests are needed.
+The existing table-sizing and decoration regressions pass in 17 focused cases. Physical
+projection, Impress playback, and the full unrelated test suite were not checked.
+
 ## 09C story and plain language
 
-09C still has 13 slides. Restore the instructor's linked-gene crossover to body-cell crossover
-to twin-spot story; move both original illustrations to C5-6, patch growth to C7, and the short
-repair explanation to C11. Keep the genotype change, cancer, and research examples at C8-10.
-Natural DNA breaks and experimentally induced damage are distinct; repair is a route to an
-exchange, not the opening reason for teaching it. Use concrete headings and explain terms after
+09C now has 19 slides, including the prediction problem and answer on C8-9. Retain the instructor's linked-gene
+crossover to body-cell crossover to twin-spot story. Both original illustrations are at C6-7,
+patch growth at C10, and the short repair explanation at C17. The genotype change, cancer,
+and research examples are at C12, C13,
+and C15. Additional dividers are C5, C11, C14, and C16.
+Breaks can arise during ordinary cell activity; a lab treatment is not required. Repair can lead
+to an exchange. Use concrete headings and explain terms after
 their examples. See [LECT09C_RESEARCH.md](LECT09C_RESEARCH.md) for current sequence and sources.
+The research report identifies Brooker's simple twin-spot prediction exercise. The original
+yellow/singed version is now in the teaching deck, with a separate native answer table.
+Specify one exchange between the centromere and both genes after copying, recombinant
+chromatids in opposite daughters, and two X chromosomes retained per daughter. The answer
+connects each genotype to its patch and explains why neither a new mutation nor chromosome
+loss is needed. All 17 preceding slides and figures remain intact and in order.
 
 ## Current conceptual section breaks
 
 Add 14 section/subsection dividers across B-H; D keeps its existing two. Current counts are
-B50, C13, D17, E34, F25, G43, and H31: 213 slides, including 24 dividers. C-H total 163.
+B50, C19, D17, E34, F25, G43, and H31: 219 slides, including 28 dividers. C-H total 169.
+The four extra 09C dividers respond to its frequent topic changes.
 That divider-only revision preserved the teaching slides and their order. Current page numbers are in
 [LECT09_SOURCE_MAP.md](LECT09_SOURCE_MAP.md); the dated revision accounts below retain their
 earlier inventories. See [LECT09_SECTIONS_REVIEW.md](LECT09_SECTIONS_REVIEW.md) for the new breaks
@@ -145,7 +174,7 @@ Its old 09B hash statements and initial-conversion findings are historical. The 
 The approved reorganization replaces the overlapping 62-slide introduction and 90-slide worked
 deck with six independently buildable C-H decks. Lecture 09B remains crossover interference.
 The six decks originally contained 143 visible slides, then 153 after the 09C-E and 09H updates.
-They now total 163 with the conceptual dividers; each has its own cover, objectives, takeaways,
+They now total 167 with the conceptual dividers; each has its own cover, objectives, takeaways,
 and ending. The two mixed masters are preserved with a pre_split.djot.retired suffix.
 Earlier full introduction/activity retirements and all original ODP/PDF inputs remain intact.
 
@@ -155,7 +184,7 @@ pre-split master retains its historical include path.
 
 | Deck | Topic | Slides | Source |
 | --- | --- | --- | --- |
-| 09C | Mitotic Crossover | 13 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
+| 09C | Mitotic Crossover | 17 | [lect09c-mitotic_crossover.djot](lect09c-mitotic_crossover.djot) |
 | 09D | Yeast and Unordered Tetrads | 17 | [lect09d-yeast_unordered_tetrads.djot](lect09d-yeast_unordered_tetrads.djot) |
 | 09E | Crossovers and Tetrad Mapping | 34 | [lect09e-tetrad_classes_map_distance.djot](lect09e-tetrad_classes_map_distance.djot) |
 | 09F | Two-Gene Tetrad Mapping | 25 | [lect09f-two_gene_tetrad_mapping.djot](lect09f-two_gene_tetrad_mapping.djot) |

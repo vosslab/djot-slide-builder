@@ -96,17 +96,19 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 	automatic = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "automatic-styles"))
 	page_style_names = _page_style_names(deck)
 	_add_page_styles(automatic, page_style_names, theme)
+	master_names = _decoration_master_names(deck)
 	slide_lib.odp_text.add_list_styles(automatic, deck, theme)
 	body = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "body"))
 	presentation = xml.etree.ElementTree.SubElement(body, _qname(OFFICE_NS, "presentation"))
 	for slide_index, slide in enumerate(deck.slides):
-		cover_decorations = _cover_decorations(slide)
+		decorations = _master_decorations(slide)
 		layout_key = slide.layout.topology.key_for_canvas(deck.canvas)
 		page_attributes = {
 			_qname(DRAW_NS, "name"): slide.identity.slide_id,
-			_qname(DRAW_NS, "style-name"): page_style_names[(slide.surface, slide.hidden)],
+			_qname(DRAW_NS, "style-name"):
+				page_style_names[(slide.surface, slide.hidden, bool(decorations))],
 			_qname(DRAW_NS, "master-page-name"):
-				"DjotTitle" if cover_decorations else theme.master_name,
+				master_names.get((slide.surface.show_master_objects, decorations), theme.master_name),
 			_qname(PRESENTATION_NS, "presentation-page-layout-name"): layout_names[layout_key],
 		}
 		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), page_attributes)
@@ -114,7 +116,7 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 		object_index = 0
 		for item in sorted(slide.objects,
 				key=lambda value: (value.z_index, value.reading_order, value.object_id)):
-			if item in cover_decorations:
+			if item in decorations:
 				continue
 			_write_object(page, automatic, item, deck, theme, slide.identity.slide_id,
 				slide_index, object_index, target_ids, picture_members)
@@ -124,24 +126,33 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 	return _xml_bytes(root)
 
 
-def _cover_decorations(slide: slide_lib.layout_model.LayoutSlide
+def _master_decorations(slide: slide_lib.layout_model.LayoutSlide
 		) -> tuple[slide_lib.layout_model.LayoutObject, ...]:
-	"""Keep cover furniture on its master, outside normal slide selection."""
-	if slide.layout.layout_name != "title-slide":
-		return ()
+	"""Keep theme furniture on its master, outside normal slide selection."""
 	decorations = tuple(item for item in slide.objects
-		if item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
-		and item.object_id in ("title-metadata-frame", "title-accent"))
+		if item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
 	return decorations
+
+
+def _decoration_master_names(deck: slide_lib.layout_model.LayoutDeck) -> dict[
+		tuple[bool, tuple[slide_lib.layout_model.LayoutObject, ...]], str]:
+	"""Share masters only when their decorations and course-background visibility match."""
+	names = {}
+	for slide in deck.slides:
+		decorations = _master_decorations(slide)
+		key = (slide.surface.show_master_objects, decorations)
+		if decorations and key not in names:
+			names[key] = f"DjotDecor{len(names) + 1}"
+	return names
 
 
 #============================================
 def _page_style_names(deck: slide_lib.layout_model.LayoutDeck) -> dict[
-		tuple[slide_lib.layout_primitives.SlideSurface, bool], str]:
+		tuple[slide_lib.layout_primitives.SlideSurface, bool, bool], str]:
 	"""Assign deterministic document-local names to used surface and visibility pairs."""
-	result: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool], str] = {}
+	result: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool, bool], str] = {}
 	for slide in deck.slides:
-		key = (slide.surface, slide.hidden)
+		key = (slide.surface, slide.hidden, bool(_master_decorations(slide)))
 		if key in result:
 			continue
 		result[key] = "DjotPage" if not result else f"DjotPage{len(result) + 1}"
@@ -150,10 +161,10 @@ def _page_style_names(deck: slide_lib.layout_model.LayoutDeck) -> dict[
 
 #============================================
 def _add_page_styles(automatic: xml.etree.ElementTree.Element,
-		style_names: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool], str],
+		style_names: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool, bool], str],
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
 	"""Define each native page surface and its slide-show visibility."""
-	for (surface, hidden), style_name in style_names.items():
+	for (surface, hidden, decorations), style_name in style_names.items():
 		style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
 			_qname(STYLE_NS, "name"): style_name,
 			_qname(STYLE_NS, "family"): "drawing-page",
@@ -161,7 +172,7 @@ def _add_page_styles(automatic: xml.etree.ElementTree.Element,
 		properties = {
 			_qname(PRESENTATION_NS, "background-visible"): "true",
 			_qname(PRESENTATION_NS, "background-objects-visible"):
-				"true" if surface.show_master_objects else "false",
+				"true" if surface.show_master_objects or decorations else "false",
 			_qname(PRESENTATION_NS, "display-page-number"): "false",
 			_qname(PRESENTATION_NS, "display-footer"): "false",
 			_qname(PRESENTATION_NS, "display-date-time"): "false",
@@ -581,16 +592,15 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 					_qname(SVG_NS, "width"): _cm_x(rectangle.width, deck, theme),
 					_qname(SVG_NS, "height"): _cm_y(rectangle.height, deck, theme),
 				})
-	_add_cover_master(root, deck, theme)
+	_add_decoration_masters(root, deck, theme)
 	return _XML_DECLARATION + lxml.etree.tostring(root, encoding="utf-8")
 
 
-def _add_cover_master(root: lxml.etree._Element, deck: slide_lib.layout_model.LayoutDeck,
+def _add_decoration_masters(root: lxml.etree._Element, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
-	"""Reuse the course master with cover-only, non-interactive background furniture."""
-	decorations = next((_cover_decorations(slide) for slide in deck.slides
-		if _cover_decorations(slide)), ())
-	if not decorations:
+	"""Paint theme shapes as background while keeping slide text selectable."""
+	names = _decoration_master_names(deck)
+	if not names:
 		return
 	masters = root.find(_qname(OFFICE_NS, "master-styles"))
 	automatic = root.find(_qname(OFFICE_NS, "automatic-styles"))
@@ -598,23 +608,34 @@ def _add_cover_master(root: lxml.etree._Element, deck: slide_lib.layout_model.La
 		raise ValueError("template styles.xml is missing master or automatic styles")
 	base = next(master for master in masters
 		if master.attrib.get(_qname(STYLE_NS, "name")) == theme.master_name)
-	master = copy.deepcopy(base)
-	master.set(_qname(STYLE_NS, "name"), "DjotTitle")
-	master.set(_qname(STYLE_NS, "display-name"), "Title slide")
-	# Use the same native shape writer and compiled geometry as ordinary slide objects.
-	shapes = xml.etree.ElementTree.Element("shapes")
-	styles = xml.etree.ElementTree.Element("styles")
-	for index, item in enumerate(decorations):
-		style_name = f"DjotCover{index}"
-		_add_frame_style(styles, style_name, item, deck, theme)
-		element = _write_shape(shapes, styles, item, item.content, deck, theme,
-			style_name, 0, index, {})
-		element.set(_qname(DRAW_NS, "layer"), "backgroundobjects")
-	for element in styles:
-		automatic.append(lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
-	for element in shapes:
-		master.insert(0, lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
-	masters.append(master)
+	for (show_course_objects, decorations), master_name in names.items():
+		master = copy.deepcopy(base)
+		master.set(_qname(STYLE_NS, "name"), master_name)
+		master.set(_qname(STYLE_NS, "display-name"), master_name)
+		if not show_course_objects:
+			for child in list(master):
+				if isinstance(child.tag, str) and child.tag.startswith(_qname(DRAW_NS, "")):
+					master.remove(child)
+		# Reuse the native shape writer and the compiler's exact geometry.
+		shapes = xml.etree.ElementTree.Element("shapes")
+		styles = xml.etree.ElementTree.Element("styles")
+		# Unnumbered master objects still occupy stacking positions.
+		first_z_index = max((int(child.get(_qname(DRAW_NS, "z-index"), str(index)))
+			for index, child in enumerate(master)), default=-1) + 1
+		for index, item in enumerate(decorations):
+			if not isinstance(item.content, slide_lib.layout_content.ShapeContent):
+				raise ValueError("theme decoration must be a native shape")
+			style_name = f"{master_name}_{index}"
+			_add_frame_style(styles, style_name, item, deck, theme)
+			element = _write_shape(shapes, styles, item, item.content, deck, theme,
+				style_name, 0, index, {})
+			element.set(_qname(DRAW_NS, "layer"), "backgroundobjects")
+			element.set(_qname(DRAW_NS, "z-index"), str(first_z_index + index))
+		for element in styles:
+			automatic.append(lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
+		for element in shapes:
+			master.append(lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
+		masters.append(master)
 
 
 #============================================

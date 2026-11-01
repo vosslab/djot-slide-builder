@@ -79,3 +79,13 @@ icebreakers:
     - State your name, major, and plans after graduation.
     - [What pets do you have?]{color=red}
       - Dog, cat, none, other.
+- id: robot-chores
+  tags:
+  - general
+  - fallback
+  source: Instructor selection, Genetics LECT09A, November 3, 2026; authored slide 3
+  title: '[Breakout Room Chat]{color=red}'
+  body: |-
+    - State your name, major, and post-grad plans
+    - [What everyday task would you permanently hand over to a robot?]{color=red}
+      - Examples: laundry, dishes, grocery shopping.

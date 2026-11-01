@@ -448,7 +448,10 @@ text lines. A native LibreOffice vector star sits inside the D; it is decoration
 character. Every authored character in the ODP and derived PDF remains a font-backed glyph. The
 layout never rasterizes lettering.
 
-Use `big-image` for a single focal image and a short editable caption:
+Use `big-image` for a single focal image and an editable caption. Longer captions can extend
+downward into the lower margin without moving or shrinking the image allocation. Short captions
+retain their usual geometry, and slides with `@citation` reserve that footer. Font fitting still
+applies when the available caption area is exhausted:
 
 ```djot
 === layout: big-image

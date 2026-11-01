@@ -86,7 +86,7 @@ Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD 
 - Set 4: +b and a+ match the parents. It is [PD]{color=#935D00} for A-B; read only A and B.
 - Classify allele combinations, not counts.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to B: Add the Class Counts
 
@@ -104,7 +104,7 @@ Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD 
 
 Read the A-B classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
@@ -113,6 +113,9 @@ Read the A-B classifications from the homework table.
 - Add all [TT]{color=#A719DB} counts.
 - Are the genes linked?
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
@@ -123,7 +126,7 @@ Read the A-B classifications from the homework table.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A and B Are Linked
 
@@ -138,15 +141,22 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-B classifications from the homework table.
 
-@right
+[PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
+
+@top-right
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- [PD]{color=#935D00} = 11 + 282 + [*702*]{color=#935D00} = 995.
-- [NPD]{color=#007A00} = 2 + 5 = 7.
-- [TT]{color=#A719DB} = 198 = 198.
-- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
+[PD]{color=#935D00} = 11 + 282 + [*702*]{color=#935D00} = 995.
 
+[NPD]{color=#007A00} = 2 + 5 = 7.
+
+[TT]{color=#A719DB} = 198 = 198.
+
+
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
@@ -157,7 +167,7 @@ Read the A-B classifications from the homework table.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to B: Substitute the Counts
 
@@ -172,7 +182,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-B classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Calculate Distance*]{color=#007A00}
 
@@ -182,6 +192,9 @@ $$
 
 Use class counts, not the number of sets.
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
@@ -192,7 +205,7 @@ Use class counts, not the number of sets.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to B: Simplify the Fraction
 
@@ -207,7 +220,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-B classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Calculate Distance*]{color=#007A00}
 
@@ -219,6 +232,9 @@ $$
 D = \frac{120}{1200} \times 100
 $$
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*?*]{color=#D40000} |
@@ -229,7 +245,7 @@ $$
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to B: 10 cM
 
@@ -244,7 +260,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-B classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Record the Result*]{color=#007A00}
 
@@ -256,6 +272,9 @@ $$
 
 Pick the next pair and classify again.
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -314,7 +333,7 @@ Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD 
 - Set 3: +c and a+ match the parents. It is [PD]{color=#935D00} for A-C; read only A and C.
 - Classify allele combinations, not counts.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to C: Add the Class Counts
 
@@ -332,7 +351,7 @@ Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD 
 
 Read the A-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
@@ -341,6 +360,9 @@ Read the A-C classifications from the homework table.
 - Add all [TT]{color=#A719DB} counts.
 - Are the genes linked?
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -351,7 +373,7 @@ Read the A-C classifications from the homework table.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A and C Are Linked
 
@@ -366,15 +388,22 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-C classifications from the homework table.
 
-@right
+[PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
+
+@top-right
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- [PD]{color=#935D00} = 5 + 198 + [*702*]{color=#935D00} = 905.
-- [NPD]{color=#007A00} = 2 + 11 = 13.
-- [TT]{color=#A719DB} = 282 = 282.
-- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
+[PD]{color=#935D00} = 5 + 198 + [*702*]{color=#935D00} = 905.
 
+[NPD]{color=#007A00} = 2 + 11 = 13.
+
+[TT]{color=#A719DB} = 282 = 282.
+
+
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -385,7 +414,7 @@ Read the A-C classifications from the homework table.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to C: Substitute the Counts
 
@@ -400,7 +429,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Calculate Distance*]{color=#007A00}
 
@@ -410,6 +439,9 @@ $$
 
 Use class counts, not the number of sets.
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -420,7 +452,7 @@ Use class counts, not the number of sets.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to C: Simplify the Fraction
 
@@ -435,7 +467,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Calculate Distance*]{color=#007A00}
 
@@ -447,6 +479,9 @@ $$
 D = \frac{180}{1200} \times 100
 $$
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -457,7 +492,7 @@ $$
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # A to C: 15 cM
 
@@ -472,7 +507,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the A-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Record the Result*]{color=#007A00}
 
@@ -484,6 +519,9 @@ $$
 
 Pick the next pair and classify again.
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -542,7 +580,7 @@ Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD 
 - Set 1: ++ and bc match the parents. It is [PD]{color=#935D00} for B-C, despite its small count.
 - Classify allele combinations, not counts.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # B to C: Add the Class Counts
 
@@ -560,7 +598,7 @@ Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD 
 
 Read the B-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
@@ -569,6 +607,9 @@ Read the B-C classifications from the homework table.
 - Add all [TT]{color=#A719DB} counts.
 - Are the genes linked?
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -579,7 +620,7 @@ Read the B-C classifications from the homework table.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # B and C Are Linked
 
@@ -594,15 +635,22 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the B-C classifications from the homework table.
 
-@right
+[PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
+
+@top-right
 
 [*Step 3: Test Linkage*]{color=#6C6C00}
 
-- [PD]{color=#935D00} = 2 + [*702*]{color=#935D00} = 704.
-- [NPD]{color=#007A00} = 5 + 11 = 16.
-- [TT]{color=#A719DB} = 198 + 282 = 480.
-- [PD]{color=#935D00} is much greater than [NPD]{color=#007A00}: *linked*.
+[PD]{color=#935D00} = 2 + [*702*]{color=#935D00} = 704.
 
+[NPD]{color=#007A00} = 5 + 11 = 16.
+
+[TT]{color=#A719DB} = 198 + 282 = 480.
+
+
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -613,7 +661,7 @@ Read the B-C classifications from the homework table.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # B to C: Substitute the Counts
 
@@ -628,7 +676,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the B-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Calculate Distance*]{color=#007A00}
 
@@ -638,6 +686,9 @@ $$
 
 Use class counts, not the number of sets.
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -648,7 +699,7 @@ Use class counts, not the number of sets.
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # B to C: Simplify the Fraction
 
@@ -663,7 +714,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the B-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Calculate Distance*]{color=#007A00}
 
@@ -675,6 +726,9 @@ $$
 D = \frac{288}{1200} \times 100
 $$
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |
@@ -685,7 +739,7 @@ $$
 
 The table summarizes the classifications just completed. Count tetrads, not individual spores.
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # B to C: 24 cM
 
@@ -700,7 +754,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 Read the B-C classifications from the homework table.
 
-@right
+@top-right
 
 [*Step 4: Record the Result*]{color=#007A00}
 
@@ -712,6 +766,9 @@ $$
 
 All three pairwise estimates are now known.
 
+@bottom-right
+
+{table-group="three-gene-results"}
 | Pair | Distance (cM) |
 | --- | --- |
 | [*AB*]{color=#D40000} | [*10*]{color=#D40000} |

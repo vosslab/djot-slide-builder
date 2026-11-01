@@ -2,11 +2,48 @@
 
 ### Additions
 
+- Add the approved twin-spot prediction to 09C as a question and separate worked answer on
+  slides 8-9. Follow the starting yellow/singed alleles through one specified crossover and
+  chromosome-separation pattern into two patch phenotypes. Keep all 17 existing slides and
+  artwork, use native editable text/table content, and update the 19-page map and research notes.
+
+- Move the weather slide's NWS credit, retrieval date, and complete source URL into `@citation`.
+  Keep the full forecast in `@caption` and reserve the existing citation footer. Update the
+  generator, caption/citation tests, and documentation. Pass 79 focused tests and the real PDF
+  export regression; rebuild/review the sample and verify all four caption/citation selections.
+  The caption fits at 15.25 pt with the accepted 18 pt advisory; all 29 existing pages are preserved.
+
+- Add a manual NWS Chicago weather-story refresh tool with preview/`--write`, an immutable
+  original PNG, complete native forecast caption, visible source/date, and one replaceable
+  slide before the icebreaker. Validate downloads and every insertion point before saving.
+  Give long `big-image` captions extra room downward, preserving image geometry and citation
+  clearance. Keep caption text in a native frame and its rounded panel on the master to fix
+  real LibreOffice wrapping/clipping and preserve selection. Add focused offline tests and
+  a real caption-export regression, and document the near-lecture workflow. Verify a live
+  story on a disposable 09A copy: 30 visible pages, 29 existing pages' text preserved,
+  original PNG bytes/proportions intact, and four PDFKit caption selections passing.
+  Pass 132 focused tests and one real LibreOffice caption regression. The sample caption
+  is readable at 15.75 pt; retain its accepted 18 pt capacity advisory. Real lecture sources
+  are unchanged by this implementation; the forecast is saved only in the demonstration.
+
+- Add four section/subsection dividers to 09C, marking the twin-spot mechanism, genotype
+  change, cell-growth experiments, and repair explanation. Preserve all 13 existing slides
+  and artwork; update the 17-page map, catalog, and research report. Review the instructor's
+  local textbooks for twin-spot homework, identify Brooker's linked-marker exercise, and
+  draft a small-step fly example with an answer key and source qualifications. Rebuild/review
+  ODP/PDF, verify content preservation, and check divider text selection.
+
+- Select the robot-chores icebreaker for Genetics 09A: "What everyday task would you
+  permanently hand over to a robot?" Include concrete examples, add it to the reusable
+  collection, and rebuild/review the announcement deck's ODP and PDF.
+
 - Restore 09C's original story: linked-gene crossing over, the same kind of exchange in a
   body cell, twin spots, and patch growth. Move the short DNA-repair explanation after the
   examples; explain that breaks can arise naturally during ordinary cell activity. Keep all
   13 slides and figures, the five researched additions, both segregation outcomes, and the
   cancer/research connections. Use concrete headings and plainer prose; refresh notes and sources.
+  Rebuild ODP/PDF, inspect all pages, verify unchanged artwork and other decks, and pass
+  strict lint with clean capacity and typography reports.
 
 - Add 14 conceptual section/subsection dividers across Lecture 09B-H, bringing 09B from
   two to six dividers and 46 to 50 slides. Separate expected doubles, interference, map meaning,
@@ -116,6 +153,22 @@
   replace obsolete Zoom group-quiz wording in the shared Genetics quiz guidance.
 
 ### Fixes
+
+- Keep 09G's distance tables fixed across slides 11-15, 20-24, and 29-33 using existing
+  bottom-right panels and shared column sizing. Preserve the native tables, class colors,
+  counts, equations, and cumulative answers; place the three linkage conclusions below
+  their count summaries. Add an unfilled gray page outline to slide 39's full handout preview,
+  preserving its original image bytes and proportions. Rebuild ODP/PDF, verify identical
+  table geometry and unchanged teaching content, and inspect all 16 changed pages.
+
+- Apply the cover's background-master fix to bookend, definitions, reference, section,
+  subsection, and THE END decoration. Remove redundant fills from transition/end outlines,
+  retain course backgrounds and editable slide text, and move citation backing bands into
+  the theme. Extend the fast cover regression across all seven framed layouts and two themes.
+  Reproduce the original macOS PDF point-selection failure and verify corrected text selection.
+  Pass 115 focused tests, two real cover round-trip tests, and 125 PDFKit selections; rebuild
+  all 12 Lecture 09/10 deck pairs and visually review 46 framed pages. Preserve slide sources
+  and the existing Lecture 10 draft-layout findings.
 
 - Separate reviewed image-free drawings with a `.drawn.svg` suffix and reject nested image
   elements during shared SVG validation. Rename 31 drawings without changing artwork bytes;

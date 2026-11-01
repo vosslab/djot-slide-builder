@@ -8,6 +8,7 @@ import zipfile
 
 import fontTools.ttLib
 import lxml.etree
+import PIL.Image
 import pytest
 
 import slide_lib.djot_parser
@@ -267,18 +268,41 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 
 
 @pytest.mark.parametrize("color_theme", ("genetics", "biotechnology"))
-def test_title_decoration_is_master_owned_and_text_remains_on_slide(
-		tmp_path: pathlib.Path, color_theme: str) -> None:
-	"""Cover furniture cannot intercept normal-slide selection of editable metadata."""
+@pytest.mark.parametrize("layout", (
+	"title-slide", "bookend", "definitions", "reference", "section", "subsection", "theend", "big-image"))
+def test_decoration_is_master_owned_and_text_remains_on_slide(
+		tmp_path: pathlib.Path, color_theme: str, layout: str) -> None:
+	"""Decorative frames cannot intercept selection of slide text."""
 	source_path = tmp_path / "title.djot"
-	source_path.write_text("=== layout: title-slide\n\n# Lecture 05D\n\n"
-		"## Probability Concepts\n\n## Chapter 5\n\n## Dr. Neil Voss\n\n## Sept 29, 2026\n"
-		"=== layout: one-panel\n# Teaching\n@body\nText\n", encoding="utf-8")
+	if layout == "title-slide":
+		text = "# Lecture 05D\n\n## Probability Concepts\n\n## Chapter 5\n\n"
+		text += "## Dr. Neil Voss\n\n## Sept 29, 2026\n"
+		expected = ["Lecture 05D", "Probability Concepts", "Chapter 5", "Dr. Neil Voss", "Sept 29, 2026"]
+	elif layout == "theend":
+		text = "# THE END\n"
+		expected = ["THE", "END"]
+	elif layout == "big-image":
+		PIL.Image.new("RGB", (32, 18), "blue").save(tmp_path / "figure.png")
+		text = "@image\n\n![Figure](figure.png)\n\n@caption\n\nCaption words.\n"
+		expected = ["Caption words."]
+	else:
+		text = "# Framed Heading\n"
+		expected = ["Framed Heading"]
+		if layout in ("bookend", "definitions", "reference"):
+			text += "\n@body\n\n" + ("- " if layout == "definitions" else "")
+			text += "Term: Its definition.\n"
+			expected.append("Term: Its definition.")
+		if layout == "reference":
+			expected.append("For reference - not covered in class.")
+	source_path.write_text(f"=== layout: {layout}\n\n" + text +
+		"\n=== layout: one-panel\n# Teaching\n@body\nText\n", encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme(color_theme)
 	plan = slide_lib.layout_engine.compile_layout_deck(
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
 	names = exporter._layout_names(plan)
-	root = package.parse_xml(exporter._content_xml(plan, theme, names, {}), "content.xml")
+	pictures = {(slide.identity.slide_id, item.object_id): "Pictures/figure.png"
+		for slide in plan.slides for item in slide.objects if isinstance(item.content, content.PictureContent)}
+	root = package.parse_xml(exporter._content_xml(plan, theme, names, pictures), "content.xml")
 	with zipfile.ZipFile(theme.template_path) as archive:
 		styles = package.parse_xml(exporter._styles_xml(
 			archive.read("styles.xml"), plan, theme, names), "styles.xml")
@@ -287,18 +311,30 @@ def test_title_decoration_is_master_owned_and_text_remains_on_slide(
 	assert master_name != pages[1].attrib[f"{{{exporter.DRAW_NS}}}master-page-name"]
 	master = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}master-page")
 		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == master_name)
-	border = next(item for item in master
-		if item.attrib.get(f"{{{exporter.DRAW_NS}}}name") == "title-metadata-frame")
-	assert border.attrib[f"{{{exporter.DRAW_NS}}}layer"] == "backgroundobjects"
-	assert not pages[0].findall(f"{{{exporter.DRAW_NS}}}rect")
+	decorations = {item.object_id for item in plan.slides[0].objects
+		if item.origin is primitives.LayoutObjectOrigin.THEME}
+	master_objects = {item.attrib.get(f"{{{exporter.DRAW_NS}}}name"): item for item in master}
+	assert decorations and decorations <= master_objects.keys()
+	assert all(master_objects[name].attrib[f"{{{exporter.DRAW_NS}}}layer"] == "backgroundobjects"
+		for name in decorations)
+	background_z = max((int(item.get(f"{{{exporter.DRAW_NS}}}z-index", str(index)))
+		for index, item in enumerate(master)
+		if item.get(f"{{{exporter.DRAW_NS}}}name") not in decorations), default=-1)
+	assert all(int(master_objects[name].attrib[f"{{{exporter.DRAW_NS}}}z-index"]) > background_z
+		for name in decorations)
+	assert not decorations.intersection(item.attrib.get(f"{{{exporter.DRAW_NS}}}name")
+		for item in pages[0])
 	paragraphs = pages[0].findall(f".//{{{exporter.TEXT_NS}}}p")
-	assert ["".join(item.itertext()) for item in paragraphs] == [
-		"Lecture 05D", "Probability Concepts", "Chapter 5", "Dr. Neil Voss", "Sept 29, 2026"]
-	style_name = border.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
-	style = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}style")
-		if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
-	properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
-	assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == "solid"
+	assert ["".join(item.itertext()) for item in paragraphs] == expected
+	for shape in master.findall(f"{{{exporter.DRAW_NS}}}rect"):
+		if shape.attrib.get(f"{{{exporter.DRAW_NS}}}name") not in decorations:
+			continue
+		style_name = shape.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
+		style = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}style")
+			if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
+		properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
+		assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == (
+			"solid" if layout in ("title-slide", "big-image") else "none")
 
 
 def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path) -> None:
@@ -346,7 +382,7 @@ def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, cour
 	colors = []
 	for slide in plan.slides:
 		frame = next(item for item in slide.objects if isinstance(item.content, content.ShapeContent))
-		assert frame.content.style.fill_role == slide.surface.background_role
+		assert frame.content.style.fill_role is None
 	for page in root.findall(f".//{{{exporter.DRAW_NS}}}page"):
 		style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
 			if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page.attrib[f"{{{exporter.DRAW_NS}}}style-name"])
@@ -368,23 +404,32 @@ def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) 
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
 	root = package.parse_xml(exporter._content_xml(
 		plan, theme, exporter._layout_names(plan), {}), "content.xml")
+	with zipfile.ZipFile(theme.template_path) as archive:
+		styles = package.parse_xml(exporter._styles_xml(
+			archive.read("styles.xml"), plan, theme, exporter._layout_names(plan)), "styles.xml")
 	page = root.find(f".//{{{exporter.DRAW_NS}}}page")
 	page_style_name = page.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
 	page_style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
 		if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page_style_name)
 	properties = page_style.find(f"{{{exporter.STYLE_NS}}}drawing-page-properties").attrib
-	star = next(shape for shape in page.findall(f"{{{exporter.DRAW_NS}}}custom-shape")
+	master = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}master-page")
+		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == page.attrib[
+			f"{{{exporter.DRAW_NS}}}master-page-name"])
+	star = next(shape for shape in master.findall(f"{{{exporter.DRAW_NS}}}custom-shape")
 		if shape.find(f"{{{exporter.DRAW_NS}}}enhanced-geometry").attrib[
 			f"{{{exporter.DRAW_NS}}}type"] == "star5")
 	star_style_name = star.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
-	star_style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
+	star_style = next(style for style in styles.findall(f".//{{{exporter.STYLE_NS}}}style")
 		if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == star_style_name)
 	star_properties = star_style.find(f"{{{exporter.STYLE_NS}}}graphic-properties").attrib
-	rounded_rectangles = tuple(page.findall(f"{{{exporter.DRAW_NS}}}rect"))
+	rounded_rectangles = tuple(master.findall(f"{{{exporter.DRAW_NS}}}rect"))
 	assert (properties[f"{{{exporter.DRAW_NS}}}fill"],
 		properties[f"{{{exporter.DRAW_NS}}}fill-color"],
 		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"]) == (
-		"solid", f"#{theme.accent_color}", "false")
+		"solid", f"#{theme.accent_color}", "true")
+	assert {item.attrib[f"{{{exporter.DRAW_NS}}}name"] for item in master
+		if item.tag.startswith(f"{{{exporter.DRAW_NS}}}")} == {
+		"end-outer-frame", "end-inner-frame", "end-star"}
 	assert star.find(f"{{{exporter.SVG_NS}}}title") is None
 	assert star_properties[f"{{{exporter.DRAW_NS}}}opacity"] == "100%"
 	assert rounded_rectangles and all(

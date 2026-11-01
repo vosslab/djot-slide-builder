@@ -484,13 +484,36 @@ Short editable caption.
 """).plan.slides[0]
 	picture = next(item for item in slide.objects
 		if isinstance(item.content, slide_lib.layout_content.PictureContent))
-	caption = next(item for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.ShapeContent))
+	caption = next(item for item in slide.objects if item.object_id == "caption")
+	assert isinstance(caption.content, slide_lib.layout_content.TextContent)
 	assert picture.rectangle.x == caption.rectangle.x
 	assert picture.rectangle.width == caption.rectangle.width
 	assert picture.rectangle.y + picture.rectangle.height < caption.rectangle.y
 	assert caption.rectangle.y + caption.rectangle.height < \
 		slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT
+
+
+def test_big_image_long_caption_grows_downward_without_moving_image_or_covering_citation(tmp_path) -> None:
+	"""Forecast paragraphs can use the free lower margin while cited slides retain their footer."""
+	write_image(tmp_path, "focal.png")
+	caption = ("Some may see intermittent light showers or sprinkles during trick or treating hours tonight. "
+		"Seasonably mild temps and mostly cloudy skies will then follow into early next week. "
+		"The highest chances of rain are expected towards mid-week.")
+	prefix = "=== layout: big-image\n@image\n![Weather](focal.png)\n@caption\n"
+	short = compile_source(tmp_path, prefix + "Short caption.").plan.slides[0]
+	long = compile_source(tmp_path, prefix + caption).plan.slides[0]
+	cited = compile_source(tmp_path, prefix + caption + "\n\n@citation\nSource: https://example.test/weather").plan.slides[0]
+	pictures = [next(item for item in slide.objects if item.object_id == "big-image") for slide in (short, long, cited)]
+	captions = [next(item for item in slide.objects if item.object_id == "caption") for slide in (short, long, cited)]
+	assert pictures[0].rectangle == pictures[1].rectangle == pictures[2].rectangle
+	assert pictures[0].content.placement == pictures[1].content.placement == pictures[2].content.placement
+	assert captions[0].rectangle.y == captions[1].rectangle.y == captions[2].rectangle.y
+	assert captions[1].rectangle.height > captions[0].rectangle.height == captions[2].rectangle.height
+	assert captions[1].rectangle.y + captions[1].rectangle.height < slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT
+	footer = next(item for item in cited.objects if item.object_id == "citation")
+	assert captions[2].rectangle.y + captions[2].rectangle.height <= footer.rectangle.y
+	assert captions[1].content.paragraphs[0].typography.selected_size_pt > \
+		captions[2].content.paragraphs[0].typography.selected_size_pt
 
 
 @pytest.mark.parametrize("label", ["https://example.test/short",

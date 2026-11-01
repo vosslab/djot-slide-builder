@@ -46,6 +46,10 @@ Lee et al. (2009): https://doi.org/10.1371/journal.pgen.1000410
 
 Start from the linked-gene crosses we just worked through. Ask what changes if an exchange happens in a cell making body tissue instead of gametes. "Mitotic" names the dividing-cell context; the exchange can happen before mitosis. Natural does not mean it happens in every division. DNA repair is a possible route to the exchange, explained later; it does not require an experimental treatment.
 
+=== layout: subsection
+
+# How Twin Spots Form
+
 === layout: one-panel
 
 # Mitotic Recombination and Twin Spots
@@ -77,6 +81,58 @@ Each original X chromosome has a wild-type allele that covers the recessive alle
 
 === layout: two-panels
 
+# Predict the Twin Spots
+
+@left
+
+A female fly has two X chromosomes:
+
+*y sn^+^ / y^+^ sn*
+
+Both mutations are recessive:
+
+- [*y*]{color=#935D00}: yellow body.
+- [*sn*]{color=#076DAD}: singed bristles.
+- The *+* alleles give the normal traits.
+
+@right
+
+- DNA has already been copied.
+- One crossover occurs between the centromere and both genes.
+- The exchanged chromatids go to opposite daughter cells.
+- Each daughter keeps two X chromosomes.
+
+Predict each daughter's *genotype* and the *patch phenotype* it could produce.
+
+Would either daughter need a new mutation?
+
+@notes
+
+Pause for predictions before showing the answer. Use the lower separation pattern in the earlier chromosome diagram. The genes start on opposite homologs: y is paired with sn+, and y+ is paired with sn. One exchange between the centromere and both genes swaps both distal alleles. With ordinary sister-chromatid separation and the exchanged chromatids going to opposite daughters, each daughter gets one exchanged and one unchanged chromatid. If the exchanged chromatids went together instead, both daughters could remain heterozygous; that is not the separation pattern specified here.
+
+=== layout: one-panel
+
+# Twin-Spot Prediction: Answer
+
+@body
+
+| Daughter | Two X Chromosomes | Patch Phenotype |
+| --- | --- | --- |
+| 1 | y sn^+^ / y sn^+^ | [*Yellow body*]{color=#935D00}; normal bristles |
+| 2 | y^+^ sn / y^+^ sn | Normal body; [*singed bristles*]{color=#076DAD} |
+
+- Two copies of *y* reveal yellow body color in one patch.
+- Two copies of *sn* reveal singed bristles in the other patch.
+- Neither daughter needed a new mutation or lost an X chromosome.
+
+The surrounding tissue stays normal: it has a normal allele for each gene.
+
+@notes
+
+Read the two copies of each gene separately. Daughter 1 is y/y and sn+/sn+: yellow body with normal bristles. Daughter 2 is y+/y+ and sn/sn: normal body color with singed bristles. Each daughter can divide to form a patch; the next slide follows that growth. The recessive alleles existed before the exchange. Labels 1 and 2 are arbitrary. The surrounding tissue retains the original y sn+ / y+ sn combination, so the normal allele covers the recessive allele at each gene. This is an original classroom question based on the simple linked-marker prediction idea identified in the local Brooker exercises; no textbook figure or question text is reproduced.
+
+=== layout: two-panels
+
 # One Event Can Make a Patch
 
 @left
@@ -95,6 +151,10 @@ Each original X chromosome has a wild-type allele that covers the recessive alle
 
 Graf (1995): https://doi.org/10.1007/BF01929364
 
+=== layout: section
+
+# What Changes in the Cell?
+
 === layout: two-panels
 
 # Two Copies of the Same Allele
@@ -104,7 +164,7 @@ Graf (1995): https://doi.org/10.1007/BF01929364
 - Before the exchange, the cell is *A/a*.
 - One way of separating the chromosomes gives *A/A* and *a/a* daughters.
 - Each daughter still has two copies of the chromosome.
-- Two different alleles have become two matching alleles: *loss of heterozygosity (LOH)*.
+- Two copies, but only one allele version: *loss of heterozygosity (LOH)*.
 
 @right
 
@@ -120,13 +180,13 @@ Now name the genotype change we already saw in the twin spots. This diagram foll
 
 === layout: one-panel
 
-# An Existing Allele Can Matter
+# A Cancer Example
 
 @body
 
 The twin spots reveal recessive alleles that were already present. The same idea can matter in cancer.
 
-Let *R* be a working tumor-suppressor allele and *r* a nonworking allele.
+A *tumor-suppressor gene* helps limit cell growth. Let *R* work and *r* not work.
 
 | Cell | Genotype | Working Copies |
 | --- | --- | --- |
@@ -140,6 +200,10 @@ Let *R* be a working tumor-suppressor allele and *r* a nonworking allele.
 @citation
 
 Cavenee et al. (1983): https://doi.org/10.1038/305779a0
+
+=== layout: subsection
+
+# Following Cell Growth
 
 === layout: two-panels
 
@@ -160,6 +224,10 @@ If one patch is smaller, did its cells divide less or die more?
 @citation
 
 Griffin et al. (2009): https://doi.org/10.1038/nmeth.1349
+
+=== layout: subsection
+
+# How Exchanges Start
 
 === layout: two-panels
 

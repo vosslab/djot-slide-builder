@@ -65,7 +65,8 @@ def add_citation(page: slide_lib.layout_model.LayoutSlide,
 			slide_lib.layout_content.ShapeContent(
 				slide_lib.layout_primitives.ShapeKind.RECTANGLE, style,
 				slide_lib.layout_primitives.ObjectAccessibility(decorative=True)),
-			None, source=source.citation[0].location)
+			None, source=source.citation[0].location,
+			origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
 		objects = (*objects, backing)
 		item = dataclasses.replace(item, reading_order=order + 1)
 	result = dataclasses.replace(page, objects=(*objects, item))
