@@ -6,6 +6,8 @@
   slides 8-9. Follow the starting yellow/singed alleles through one specified crossover and
   chromosome-separation pattern into two patch phenotypes. Keep all 17 existing slides and
   artwork, use native editable text/table content, and update the 19-page map and research notes.
+  Rebuild/review ODP/PDF, pass strict lint with clean capacity/typography checks, confirm the
+  answer with a chromatid model, and pass eight PDFKit selections including both answer rows.
 
 - Move the weather slide's NWS credit, retrieval date, and complete source URL into `@citation`.
   Keep the full forecast in `@caption` and reserve the existing citation footer. Update the

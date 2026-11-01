@@ -36,6 +36,11 @@ Specify one exchange between the centromere and both genes after copying, recomb
 chromatids in opposite daughters, and two X chromosomes retained per daughter. The answer
 connects each genotype to its patch and explains why neither a new mutation nor chromosome
 loss is needed. All 17 preceding slides and figures remain intact and in order.
+Source/ODP/PDF agree on 19 visible pages; strict lint, capacity, and typography checks are clean.
+The new pages and their transition were visually inspected, the genotypes match a chromatid
+model, and eight native PDFKit selections pass including both answer rows. Other Lecture 09 sources and
+artwork remain byte-identical. Evidence is in `_temp/09c_twin_spot_problem/`. Classroom playback
+and the full unrelated test suite were not checked.
 
 ## Current conceptual section breaks
 

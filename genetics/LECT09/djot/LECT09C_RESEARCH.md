@@ -181,7 +181,21 @@ frequencies can differ. Spot visibility and subsequent growth add further condit
 Keep the first homework focused on allele combinations, crossover position, segregation,
 and patches. The dictionary hits are useful definitions, not enough to construct the exercise.
 
-## Current divider verification
+## Current problem verification
+
+Add the prediction and worked answer at C8-9, preserving all 17 preceding source slides
+and their PDF text after page shifts. Source, ODP, and PDF agree on 19 visible pages. All
+other Lecture 09 Djot sources and artwork remain byte-identical. Strict native lint,
+capacity, and typography checks are clean. The two new pages and their surrounding transition
+were visually inspected; the answer remains a native editable table with real allele superscripts.
+A small chromatid model confirms the two daughter genotypes and the alternative heterozygous
+separation outcome. Eight PDFKit point selections pass, including both daughter genotypes
+and patch phenotypes. Selection points bracket whole text lines; points on a glyph boundary
+can select a neighboring line and are not a reliable test of an obstruction. No renderer changes
+or permanent content-specific tests are needed. No classroom playback or full-suite run was performed.
+Evidence is in `_temp/09c_twin_spot_problem/`.
+
+## Earlier divider verification
 
 Add dividers at C5, C9, C12, and C14. Keep all 13 preceding slides in order, producing 17
 pages with two sections and three subsections. Source-block identity, unchanged artwork
@@ -190,7 +204,7 @@ capacity, and typography checks pass. All 17 rendered pages were inspected; all 
 fit one line, and their native PDFKit text selections match. The existing decoration regression
 passes all 14 cases. A small chromatid model confirms the draft's two patch genotypes and the
 alternative heterozygous separation outcome. No classroom playback or full-suite run was performed.
-Current evidence is in `_temp/09c_sections_homework/`; earlier evidence below remains historical.
+Evidence is in `_temp/09c_sections_homework/`; the page numbers describe that 17-page revision.
 
 ## Earlier story-revision verification
 
