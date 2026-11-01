@@ -1,8 +1,7 @@
 # Lecture 10 conversion review
 
-Reviewed conversion draft, October 31, 2026. Replacement markers are intentional unresolved
-conversion or source-content findings; these decks are not yet classroom-ready replacements.
-Original ODP/PDF files remain unchanged in the lecture directory.
+Current revision and verification appear first. Earlier draft findings and replacement flags
+are preserved below as historical records. Original ODP/PDF files remain unchanged.
 
 ## Approved revision completed
 
@@ -10,11 +9,31 @@ The instructor approved the review's fixes, clarified that Lecture 10 is **disea
 and assigned **deletion mapping and translocation segregation to Lecture 11**. Those are no
 longer gaps to fill in Lecture 10. No Lecture 11 files or homework generators were edited.
 
-Current outputs: **A29, B52, C24, D62 = 167 visible pages**. A retains 43 authored slides,
+Current outputs: **A29, B52, C24, D63 = 168 visible pages**. A retains 43 authored slides,
 including 14 hidden. B-D have **zero replacement markers**. The current page ownership is in
 [LECT10_SOURCE_MAP.md](LECT10_SOURCE_MAP.md); the older conversion tables below are historical.
 
-### What changed
+### Tetraploidy restoration, November 1
+
+At the instructor's request, restored the missing mechanism as **D9, How Can a Cell Become
+Tetraploid?** It follows the polyploid definitions and precedes the basic-set/gamete distinction.
+Compare two daughter cells with retention of both daughter complements in one cell. Reconnect
+the original 46,XY to 92,XXYY example, specifying a tetraploid complement in one nucleus.
+Clarify that ordinary DNA replication produces sister chromatids while the cell remains diploid.
+Notes distinguish an initially binucleate cell after failed cell separation from the one-nucleus
+example. Primary evidence: [Pampalona et al., 2012](https://doi.org/10.1371/journal.pgen.1002679).
+
+All 62 existing slides, including the counting problems, remain unchanged and in order.
+Every following D page shifts by one; the current source map reflects that shift. The October 31
+page ranges and verification below remain a dated snapshot, rather than current D page numbers.
+
+Rebuilt 10D's ODP/PDF outside the sandbox. Strict native lint passes; capacity and typography
+audits report no findings. Inspected D8-10 at full size. All 62 previous PDF pages retain their
+text after the insertion, the comparison table is native, and all 18 new-page PDFKit point
+selections pass. Other Lecture 10 sources and exports retain their hashes. Evidence is in
+`_temp/tetraploidy_restoration/`. Impress playback was not checked.
+
+### October 31 changes
 
 - **10B:** retain the karyotype photographs, painting, Brainbow, chromosome-2, and HeLa stories.
   Replace three repeated preparation views with one large labeled homolog/chromatid/karyotype

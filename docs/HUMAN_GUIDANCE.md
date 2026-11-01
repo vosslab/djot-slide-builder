@@ -435,6 +435,8 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   some slide content with worked homework problems. Topic 09 is the intended homework group.
 - Lecture 10 is disease-focused. Apply the review's fixes, but leave deletion mapping and
   translocation segregation for Lecture 11.
+- Restore Lecture 10D's explanation of how DNA copying without completed cell division
+  can produce tetraploidy; keep this mechanism alongside the new counting problems.
 
 - Use the three-point interference problem generator for Lecture 09B so the slides match
   the homework more closely.

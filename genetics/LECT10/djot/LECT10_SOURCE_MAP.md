@@ -5,10 +5,13 @@
 The instructor approved these changes on October 31, 2026. Lecture 10 remains disease-focused;
 deletion mapping and translocation segregation are assigned to Lecture 11.
 
-A remains 43 authored / 29 visible / 14 hidden. B52, C24, and D62 are all visible and have no
-replacement markers. Total: 181 authored / 167 visible / 14 hidden.
+A remains 43 authored / 29 visible / 14 hidden. B52, C24, and D63 are all visible and have no
+replacement markers. Total: 182 authored / 168 visible / 14 hidden.
 
-Previous pages below refer to the Djot/PDF decks immediately before this revision. The original
+Slide D9 restores the tetraploidy mechanism on November 1, 2026; subsequent D pages shift by one.
+All 62 slides from the October 31 revision remain unchanged.
+
+Previous pages below refer to the Djot/PDF decks immediately before the October 31 revision. The original
 ODP-to-Djot conversion tables are retained below as a historical bridge to the original inputs.
 
 ### lect10b-karyotypes
@@ -109,60 +112,61 @@ ODP-to-Djot conversion tables are retained below as a historical bridge to the o
 | 6 | 6 | Repaired/revised | Chromosome Number and DNA Content |
 | 7 | 7 | Retained | Polyploid |
 | 8 | 8 | Repaired/revised | Polyploid: More Than Two Complete Sets |
-| 9 | 9 | Repaired/revised | One Basic Set or One Gamete? |
-| 10 | 24 | Repaired/revised | Practice: One Basic Set and One Gamete |
-| 11 | 25 | Repaired/revised | Count Sets First, Then Gametes |
-| 12 | Added | Added | Practice: Chromosomes in a Gamete |
-| 13 | Added | Added | Gamete Count: Answer |
-| 14 | 10 | Retained | Aneuploid |
-| 15 | 11 | Repaired/revised | Extra or Missing Chromosomes |
-| 16 | 12 | Repaired/revised | Find the Extra Chromosome |
-| 17 | Added | Added | Read the Extra Copy |
-| 18 | 35 | Retained | Nondisjunction |
-| 19 | 36 | Repaired/revised | What Failed to Separate? |
-| 20 | 37 | Repaired/revised | Nondisjunction in Meiosis I |
-| 21 | 38 | Repaired/revised | Nondisjunction in Meiosis II |
-| 22 | 39 | Repaired/revised | Follow the Four Gametes |
-| 23 | Added | Added | Check the Four Products |
-| 24 | 40 | Repaired/revised | Add a Normal Gamete |
-| 25 | 41 | Retained | (figure) |
-| 26 | 42 | Repaired/revised | Try It: Follow the X Chromosome |
-| 27 | 43 | Repaired/revised | Turner Syndrome: Follow the Allele |
-| 28 | 13 | Repaired/revised | Three Common Autosomal Trisomies |
-| 29 | 14 | Retained | *Trisomy 13    Trisomy 18* |
-| 30 | 15 | Retained | *Down Syndrome* |
-| 31 | 16 | Repaired/revised | Three Forms of Down Syndrome |
-| 32 | 17 | Repaired/revised | Trisomy 21 and Survival |
-| 33 | 18 | Retained | *Down Syndrome Stats* |
-| 34 | 19 | Retained | *Down Syndrome Incidence* |
-| 35 | 20 | Repaired/revised | Effect of Mother's Age |
-| 36 | 21 | Repaired/revised | Why Is Age a Factor? |
-| 37 | 22 | Retained | (figure) |
-| 38 | 23 | Repaired/revised | Video: Down Syndrome in Iceland |
-| 39 | 44 | Repaired/revised | Can People with Down Syndrome Have Children? |
-| 40 | 45 | Repaired/revised | Fertility and Chromosome Segregation |
-| 41 | 46 | Repaired/revised | A Simplified Segregation Problem |
-| 42 | 47, 48 | Merged consecutive dividers | How Do Three Homologs Separate? |
-| 43 | 49 | Retained | (figure) |
-| 44 | 50 | Repaired/revised | Two Copies Go One Way, One the Other |
-| 45 | 51 | Retained | (figure) |
-| 46 | 52 | Repaired/revised | The Model Gives a 1:1 Ratio |
-| 47 | 26 | Retained | Prenatal Testing |
-| 48 | Added | Added | Screening or Diagnosis? |
-| 49 | 27 | Repaired/revised | Prenatal Blood Screening |
-| 50 | 28 | Repaired/revised | Nuchal Translucency Scan |
-| 51 | 29 | Repaired/revised | Diagnostic Samples |
-| 52 | 30 | Repaired/revised | Amniocentesis |
-| 53 | 31 | Repaired/revised | Chorionic Villus Sampling |
-| 54 | 32 | Repaired/revised | Umbilical Blood Sampling (PUBS) |
-| 55 | 33 | Repaired/revised | Newborn Screening |
-| 56 | 34 | Repaired/revised | For Reference: Newborn Screening |
-| 57 | 53 | Repaired/revised | *Additional Reading* |
-| 58 | 54 | Retained | *Extended Prenatal Tests* |
-| 59 | 55 | Repaired/revised | *NYTimes Daily Podcast* |
-| 60 | 56 | Retained | *CBS on Assignment* |
-| 61 | 57 | Retained | Key Takeaways |
-| 62 | 58 | Retained | THE END |
+| 9 | 24, 25 | Tetraploidy mechanism restored Nov 1 | How Can a Cell Become Tetraploid? |
+| 10 | 9 | Repaired/revised | One Basic Set or One Gamete? |
+| 11 | 24 | Repaired/revised | Practice: One Basic Set and One Gamete |
+| 12 | 25 | Repaired/revised | Count Sets First, Then Gametes |
+| 13 | Added | Added | Practice: Chromosomes in a Gamete |
+| 14 | Added | Added | Gamete Count: Answer |
+| 15 | 10 | Retained | Aneuploid |
+| 16 | 11 | Repaired/revised | Extra or Missing Chromosomes |
+| 17 | 12 | Repaired/revised | Find the Extra Chromosome |
+| 18 | Added | Added | Read the Extra Copy |
+| 19 | 35 | Retained | Nondisjunction |
+| 20 | 36 | Repaired/revised | What Failed to Separate? |
+| 21 | 37 | Repaired/revised | Nondisjunction in Meiosis I |
+| 22 | 38 | Repaired/revised | Nondisjunction in Meiosis II |
+| 23 | 39 | Repaired/revised | Follow the Four Gametes |
+| 24 | Added | Added | Check the Four Products |
+| 25 | 40 | Repaired/revised | Add a Normal Gamete |
+| 26 | 41 | Retained | (figure) |
+| 27 | 42 | Repaired/revised | Try It: Follow the X Chromosome |
+| 28 | 43 | Repaired/revised | Turner Syndrome: Follow the Allele |
+| 29 | 13 | Repaired/revised | Three Common Autosomal Trisomies |
+| 30 | 14 | Retained | *Trisomy 13    Trisomy 18* |
+| 31 | 15 | Retained | *Down Syndrome* |
+| 32 | 16 | Repaired/revised | Three Forms of Down Syndrome |
+| 33 | 17 | Repaired/revised | Trisomy 21 and Survival |
+| 34 | 18 | Retained | *Down Syndrome Stats* |
+| 35 | 19 | Retained | *Down Syndrome Incidence* |
+| 36 | 20 | Repaired/revised | Effect of Mother's Age |
+| 37 | 21 | Repaired/revised | Why Is Age a Factor? |
+| 38 | 22 | Retained | (figure) |
+| 39 | 23 | Repaired/revised | Video: Down Syndrome in Iceland |
+| 40 | 44 | Repaired/revised | Can People with Down Syndrome Have Children? |
+| 41 | 45 | Repaired/revised | Fertility and Chromosome Segregation |
+| 42 | 46 | Repaired/revised | A Simplified Segregation Problem |
+| 43 | 47, 48 | Merged consecutive dividers | How Do Three Homologs Separate? |
+| 44 | 49 | Retained | (figure) |
+| 45 | 50 | Repaired/revised | Two Copies Go One Way, One the Other |
+| 46 | 51 | Retained | (figure) |
+| 47 | 52 | Repaired/revised | The Model Gives a 1:1 Ratio |
+| 48 | 26 | Retained | Prenatal Testing |
+| 49 | Added | Added | Screening or Diagnosis? |
+| 50 | 27 | Repaired/revised | Prenatal Blood Screening |
+| 51 | 28 | Repaired/revised | Nuchal Translucency Scan |
+| 52 | 29 | Repaired/revised | Diagnostic Samples |
+| 53 | 30 | Repaired/revised | Amniocentesis |
+| 54 | 31 | Repaired/revised | Chorionic Villus Sampling |
+| 55 | 32 | Repaired/revised | Umbilical Blood Sampling (PUBS) |
+| 56 | 33 | Repaired/revised | Newborn Screening |
+| 57 | 34 | Repaired/revised | For Reference: Newborn Screening |
+| 58 | 53 | Repaired/revised | *Additional Reading* |
+| 59 | 54 | Retained | *Extended Prenatal Tests* |
+| 60 | 55 | Repaired/revised | *NYTimes Daily Podcast* |
+| 61 | 56 | Retained | *CBS on Assignment* |
+| 62 | 57 | Retained | Key Takeaways |
+| 63 | 58 | Retained | THE END |
 
 ## Original conversion map
 

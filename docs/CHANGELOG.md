@@ -1,3 +1,14 @@
+## 2026-11-01
+
+### Fixes
+
+- Restore the tetraploidy mechanism in 10D after the polyploid definitions. Compare normal
+  division with retention of both daughter complements, reconnect 46,XY to 92,XXYY, and
+  distinguish whole-set doubling from ordinary DNA replication. Keep all 62 existing slides
+  and the homework examples; update the source map and review for the added slide. Rebuild
+  the 63-page ODP/PDF, inspect D8-10, pass clean lint/capacity/typography checks and 18 PDFKit
+  point selections, and verify all previous page text and other Lecture 10 decks are unchanged.
+
 ## 2026-10-31
 
 ### Additions

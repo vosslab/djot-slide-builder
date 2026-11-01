@@ -90,6 +90,37 @@ We will work through deletions and translocations in Lecture 11.
 
 === layout: one-panel
 
+# How Can a Cell Become Tetraploid?
+
+@body
+
+- Start with a *diploid* cell: two complete chromosome sets.
+- DNA is copied, but cell division does not finish.
+- The cell can keep the copies intended for *both daughter cells*.
+
+| Outcome | Chromosome Sets |
+| --- | --- |
+| Division finishes | Two daughter cells, two sets each |
+| Division fails | One cell can retain four sets: *tetraploid* |
+
+A human example, with all four sets in one nucleus: *46,XY* becomes *92,XXYY*.
+
+*DNA copying alone does not make a cell tetraploid.* A normally replicated diploid cell has sister chromatids.
+
+@citation
+
+https://doi.org/10.1371/journal.pgen.1002679
+
+@notes
+
+Follow the whole chromosome complement, not an extra copy of just one chromosome.
+Failure of cell separation can initially leave two diploid nuclei in one cell. The
+92,XXYY example describes a tetraploid complement in one nucleus, rather than every
+possible failed division. A normal replicated diploid cell still has 46 chromosomes,
+each with two sister chromatids; DNA replication alone does not change its ploidy.
+
+=== layout: one-panel
+
 # One Basic Set or One Gamete?
 
 @body
