@@ -1102,6 +1102,9 @@ with a published-deadline reminder. Future weekly decks reference these groups. 
 content and dated exam details in the master. Ordinary local includes retain their existing
 containment boundary; explicit repository includes and images stay inside the Git checkout.
 Podcast refresh recognizes include boundaries, preserving the shared channel and course slides.
+Prior-week announcement copies are temporary starters for the new weekly A source. Once that
+source uses the shared groups, remove unused starter copies and their extracted assets from
+the new lecture folder; they are not additional lecture material.
 
 **Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
 and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.

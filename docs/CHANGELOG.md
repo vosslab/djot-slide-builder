@@ -2,6 +2,11 @@
 
 ### Additions
 
+- Remove the unused Lecture 08 announcement starter ODP/PDF and extracted assets from
+  `genetics/LECT09/`. Keep a verified recovery copy under `_temp/lect09_starter_cleanup/`.
+  Record that prior-week A decks supplied in a new lecture folder are temporary starters.
+  All eight Lecture 09 masters still compile; slide sources and PDF/ODP exports are unchanged.
+
 - Add the approved twin-spot prediction to 09C as a question and separate worked answer on
   slides 8-9. Follow the starting yellow/singed alleles through one specified crossover and
   chromosome-separation pattern into two patch phenotypes. Keep all 17 existing slides and

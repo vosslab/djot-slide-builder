@@ -1,5 +1,15 @@
 # Lecture 09 Review
 
+## Announcement starter cleanup
+
+The copied `lect08a-2026_announcements.odp` and PDF were starters for 09A, not Lecture 09
+content. Removed those unused copies and `assets/lect08a-2026_announcements/`; no current
+Djot source references that extraction. The current weekly source uses the shared evergreen
+slides. Recovery copies and hashes are in `_temp/lect09_starter_cleanup/`. The original
+input inventory below is historical and does not require retaining these starter files here.
+All eight Lecture 09 masters compile after cleanup. Slide sources and existing PDF/ODP
+exports are byte-identical, so no export rebuild was needed.
+
 ## 09G table sizing and handout frame
 
 Use the existing one-plus-two-panel layout on G11-15, G20-24, and G29-33. The bottom-right

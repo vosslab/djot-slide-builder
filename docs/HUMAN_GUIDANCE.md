@@ -184,6 +184,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Course links and evergreen announcements
 
+- A prior lecture's announcement deck copied into a new lecture folder is a starter for the
+  new weekly A deck. Do not keep that starter or its unused extracted assets in the new folder.
+
 - Evergreen content is used across courses or across more than a single week. Tetrad content
   is for a single lecture; keep it with Lecture 09, including the repeated procedure slides.
 
