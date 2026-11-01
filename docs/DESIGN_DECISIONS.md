@@ -1143,6 +1143,20 @@ snapshots remain with the lecture; this organization does not change their refre
 **Owner.** [../evergreen/README.md](../evergreen/README.md) and
 [../genetics/evergreen/README.md](../genetics/evergreen/README.md).
 
+### Builds without Git
+
+**Decision.** Use the Git root when available and fall back to the current working directory
+when Git is missing or fails. Apply this to the launcher, environment setup, native build root,
+and shared slide/image resolution.
+
+**Why.** A copied project folder must build without `.git` metadata.
+
+**Consequence.** Run Git-free builds from the top-level project folder. The existing traversal
+and symlink-containment checks use that folder as their boundary.
+
+**Owner.** `build_slides.sh`, `source_me.sh`, `slide_lib/djot_sources.py`, and
+[USAGE.md](USAGE.md).
+
 ### Bookend and definitions layouts
 
 **Decision.** Share one `bookend` layout for learning objectives and key takeaways. Use its

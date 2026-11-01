@@ -3,6 +3,9 @@
 This repository runs local Python commands against the checkout to create editable ODP and PDF
 presentations. It imports trusted existing ODP into extended-Djot source.
 
+Building also works from a copied project folder without Git metadata or a Git executable.
+Run commands from the project root; when Git cannot identify it, the current directory is used.
+
 ## Requirements
 
 - macOS with Homebrew.

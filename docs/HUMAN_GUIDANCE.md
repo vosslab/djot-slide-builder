@@ -232,6 +232,9 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Robustness and simplicity
 
+- Builds must work without a `.git` checkout. If `git rev-parse` is unavailable or fails,
+  use the current working directory as the project root.
+
 - Focus on important issues, not bikeshedding. Address the highest-impact risks first.
   Spend review time on correctness, maintainability, validation, and delivery.
 - Robust software continues to function despite imperfect inputs, data, state, or behavior.

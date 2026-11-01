@@ -2,6 +2,7 @@
 
 # Standard Library
 import pathlib
+import subprocess
 import unittest.mock
 
 # Third-Party Modules
@@ -14,6 +15,30 @@ import slide_lib.djot_lint
 import slide_lib.djot_parser
 import slide_lib.native_export
 import slide_lib.layout_measurement
+
+
+#============================================
+@pytest.mark.parametrize("git_state", ("checkout", "not_checkout", "missing"))
+def test_project_roots_prefer_git_and_fall_back_to_cwd(
+		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch, git_state: str) -> None:
+	"""Native builds and shared includes agree when Git cannot supply a root."""
+	working = tmp_path / "working folder"
+	working.mkdir()
+	checkout = tmp_path / "checkout"
+	monkeypatch.chdir(working)
+
+	def run(command, **kwargs):
+		if git_state == "missing":
+			raise FileNotFoundError("git")
+		if git_state == "not_checkout" and kwargs.get("check"):
+			raise subprocess.CalledProcessError(128, command)
+		return subprocess.CompletedProcess(command, 0 if git_state == "checkout" else 128,
+			stdout=f"{checkout}\n" if git_state == "checkout" else "", stderr="")
+
+	monkeypatch.setattr(slide_lib.djot_sources.subprocess, "run", run)
+	expected = checkout if git_state == "checkout" else working
+	assert slide_lib.native_export.find_repo_root() == expected
+	assert slide_lib.djot_sources.repository_root(checkout / "lecture.djot") == expected
 
 
 #============================================
@@ -168,19 +193,23 @@ def test_repository_includes_share_guidance_and_enforce_checkout_boundary(
 
 #============================================
 def test_repository_images_lint_measure_and_package_from_shared_assets(
-		tmp_path: pathlib.Path) -> None:
-	"""Shared figures must work beyond parsing and cannot escape the checkout via symlinks."""
+		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
+	"""Git-free shared slides and images build from CWD while symlink escapes fail."""
 	root = tmp_path / "repo"
 	lecture = root / "genetics" / "LECT08"
 	assets = root / "genetics" / "evergreen" / "assets"
 	lecture.mkdir(parents=True)
 	assets.mkdir(parents=True)
-	(root / ".git").mkdir()
+	monkeypatch.chdir(root)
+	monkeypatch.setattr(slide_lib.djot_sources.subprocess, "run",
+		unittest.mock.Mock(side_effect=FileNotFoundError("git")))
 	image = assets / "figure.png"
 	PIL.Image.new("RGB", (32, 18)).save(image)
-	master = lecture / "announcements.djot"
-	master.write_text("=== layout: one-panel\n@body\n"
+	chapter = assets.parent / "figure.djot"
+	chapter.write_text("=== layout: one-panel\n@body\n"
 		"![Figure](repo:genetics/evergreen/assets/figure.png)\n")
+	master = lecture / "announcements.djot"
+	master.write_text("=== include: repo:genetics/evergreen/figure.djot\n")
 	problems, _summary = slide_lib.djot_lint.lint_paths([master])
 	assert not problems
 	deck = slide_lib.djot_parser.parse_deck(master)

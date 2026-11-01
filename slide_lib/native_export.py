@@ -5,7 +5,6 @@ import collections.abc
 import dataclasses
 import os
 import pathlib
-import subprocess
 import tempfile
 
 # Local Modules
@@ -43,10 +42,8 @@ class ExportResult:
 
 #============================================
 def find_repo_root() -> pathlib.Path:
-	"""Return the current Git repository root."""
-	result = subprocess.run(["git", "rev-parse", "--show-toplevel"], check=True,
-		capture_output=True, text=True)
-	return pathlib.Path(result.stdout.strip()).resolve()
+	"""Return the current Git root, falling back to CWD for unpacked projects."""
+	return slide_lib.djot_sources.repository_root()
 
 
 #============================================

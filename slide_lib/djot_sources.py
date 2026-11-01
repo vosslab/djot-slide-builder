@@ -85,10 +85,17 @@ def source_header(path: pathlib.Path, text: str) -> tuple[str | None, list[tuple
 
 
 #============================================
-def repository_root(path: pathlib.Path) -> pathlib.Path:
-	"""Resolve a shared include against its containing Git checkout."""
-	result = subprocess.run(["git", "-C", str(path.parent), "rev-parse", "--show-toplevel"],
-		check=True, capture_output=True, text=True)
+def repository_root(path: pathlib.Path | None = None) -> pathlib.Path:
+	"""Use the containing Git root, or CWD when Git is missing or fails."""
+	directory = path.parent if path is not None else pathlib.Path.cwd()
+	# ASVS 1.2.5: pass the directory as an argument, never through a shell.
+	try:
+		result = subprocess.run(["git", "-C", str(directory), "rev-parse", "--show-toplevel"],
+			check=False, capture_output=True, text=True)
+	except FileNotFoundError:
+		return pathlib.Path.cwd().resolve()
+	if result.returncode:
+		return pathlib.Path.cwd().resolve()
 	root = pathlib.Path(result.stdout.strip()).resolve()
 	return root
 

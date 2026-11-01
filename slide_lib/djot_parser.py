@@ -472,8 +472,7 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 			slide = assemble_slide(source.path, slide_source)
 			assembled.append(dataclasses.replace(slide, hidden=True) if source.hidden else slide)
 	slides = tuple(assembled)
-	repo_root = next((candidate for candidate in (path.parent, *path.parents)
-		if (candidate / ".git").exists()), path.parent).resolve()
+	repo_root = slide_lib.djot_sources.repository_root(path)
 	first_title = next((block for slide in slides if not slide.hidden for block in slide.blocks
 		if isinstance(block, slide_lib.native_model.Heading) and block.level == 1), None)
 	title = visible_text(first_title.inlines) if first_title is not None else ""

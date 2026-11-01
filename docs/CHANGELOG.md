@@ -2,6 +2,14 @@
 
 ### Fixes
 
+- Allow folder builds without Git metadata or a Git executable by falling back to CWD in the
+  shell launcher, environment setup, native build root, and shared slide/image resolution.
+  Reuse one Python Git-root resolver, preserve include/image containment, add focused Git/CWD
+  regression coverage, and document running unpacked projects from their top-level folder.
+  Pass 138 focused tests, Python lint, and shell syntax checks. Run the exact Lecture 09 folder
+  command in an isolated copy without Git metadata: all eight ODP/PDF pairs build successfully.
+  Evidence is in `_temp/no_git_build/`.
+
 - Create root-level `evergreen/` for slides shared across courses. Move spring registration,
   the YouTube channel, and its unchanged image there; update 08A, 09A, 10A, refresh-tool test
   examples, and authoring/source-map documentation. Preserve all wording, layouts, colors,

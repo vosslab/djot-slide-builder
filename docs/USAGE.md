@@ -243,6 +243,10 @@ Build only one lecture by targeting its lecture folder:
 ./build_slides.sh genetics/LECT04/
 ```
 
+Git is optional for building. When Git cannot supply the project root, the current working
+directory is used for shared `repo:` includes, assets, and output. For a copy without `.git`,
+run the command from the top-level folder containing `build_slides.sh` and `slide_lib/`.
+
 The same selector builds the Biotechnology lecture folder:
 
 ```bash

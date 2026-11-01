@@ -154,7 +154,8 @@ from PDF when hidden. Include blocks contain only the path and optional visibili
   A `repo:` prefix resolves from the containing Git checkout root, enabling course-wide evergreen
   sources. Only UTF-8 `.djot` files are accepted. Absolute paths, `..`, backslashes, missing files,
   and symlinks escaping the allowed tree are rejected. Includes use no network lookup, glob
-  expansion, or executable source code. Repository-root discovery uses `git rev-parse`.
+  expansion, or executable source code. Root discovery uses `git rev-parse` when available,
+  falling back to the current working directory when Git is missing or fails.
 - Nested manifests are supported up to 32 levels. Circular includes fail at the offending
   directive. Repeating a chapter deliberately repeats its slides in the combined deck.
 - The master controls the course theme. Chapters inherit it when omitted; an explicitly different

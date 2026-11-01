@@ -24,6 +24,6 @@ if [[ "$#" -ne 1 ]]; then
 	exit 2
 fi
 
-repo_root="$(git rev-parse --show-toplevel)"
+repo_root="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 source "$repo_root/source_me.sh"
 exec python3 "$repo_root/deck_tools.py" build --format all "$1"
