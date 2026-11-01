@@ -4,7 +4,246 @@ Reviewed conversion draft, October 31, 2026. Replacement markers are intentional
 conversion or source-content findings; these decks are not yet classroom-ready replacements.
 Original ODP/PDF files remain unchanged in the lecture directory.
 
-## Canonical decks
+## Approved revision completed
+
+The instructor approved the review's fixes, clarified that Lecture 10 is **disease-focused**,
+and assigned **deletion mapping and translocation segregation to Lecture 11**. Those are no
+longer gaps to fill in Lecture 10. No Lecture 11 files or homework generators were edited.
+
+Current outputs: **A29, B52, C24, D62 = 167 visible pages**. A retains 43 authored slides,
+including 14 hidden. B-D have **zero replacement markers**. The current page ownership is in
+[LECT10_SOURCE_MAP.md](LECT10_SOURCE_MAP.md); the older conversion tables below are historical.
+
+### What changed
+
+- **10B:** retain the karyotype photographs, painting, Brainbow, chromosome-2, and HeLa stories.
+  Replace three repeated preparation views with one large labeled homolog/chromatid/karyotype
+  figure. Restore its label positions and scale bar. Add chromosome-shape matching and a colored
+  answer on B37-38. Correct the euchromatin statement, the homolog question's X-shape claim, and
+  HPV's 70% statement. Shorten dense HeLa prose while keeping the origin, research uses,
+  contamination, family, and consent points. Remove the unsupported mass/skyscraper tally.
+- **10C:** retain the chromosome/band pictures, gene-density comparison, one CFTR worked
+  example, and its enlarged diagram. Replace repeated address prose with a token table,
+  a band-order question/answer on C14-15, and a simple trisomy-21 karyotype question/answer on
+  C18-19. Keep A-G groups, X/Y, SRY, and address ranges as readable reference slides.
+- **10D:** put a basic-set/gamete distinction before two saved polyploid count examples on
+  D10-13. Replace the photographed 92,XXYY exercise with those worked examples. Connect the
+  trisomy-21 karyotype photograph to its notation on D16-17. Move nondisjunction before the
+  disease and testing sections, restore the progressive figures, and follow all four gametes
+  into diploid zygotes on D18-27. Preserve the meiosis-II and Turner/color-blindness exercises.
+  Retain the clinical pictures, age connection, fertility, and discussion/readings. Merge two
+  consecutive segregation dividers. Frame the 1:1 outcome as an explicit equal-fertilization,
+  equal-survival model. Preserve testing procedures and make screening versus diagnosis clear;
+  keep the long newborn-condition list as reference material.
+
+This is an approved content revision, rather than a claim of byte-for-byte prose preservation.
+The source map records retained, combined, replaced, reordered, and added pages. The original
+ODP/PDF inputs remain unchanged. The announcement Djot is unchanged.
+
+### Saved homework inputs
+
+[question_sources.json](assets/lect10_homework_examples/question_sources.json) freezes four
+actual generated records, their original HTML/choices/keys and bank hashes, plus the selected
+chromosome-shape term set and source hash. This is enough to review the examples without
+rerunning random generators. Slides use native text and tables; normal builds stay offline.
+
+- Band order: saved 17q example, answer **17q41.3**. Labels are explicitly *schematic*, since
+  the generator does not validate actual human cytobands. The answer compares region first.
+- Karyotype: saved **47,+21,XY** example, answer one extra chromosome 21 with XY. The slides
+  use **47,XY,+21** and explain the homework's different token order. Choice meanings and
+  correct letter E are preserved; sex-chromosome complements are stated directly.
+- Basic set versus gamete: octoploid 64; **m = 8, h = 32**, choice C. The answer names each
+  quantity before dividing. Regular reduction is explicit.
+- Gamete count: octoploid 72; **36 chromosomes**, choice E. Nine is one basic set, not the
+  gamete count. Regular reduction is explicit.
+- Shapes: five terms from the matching YAML, using its term colors and shortened descriptions.
+
+The defective subband generator, unchecked rearrangement breakpoints, and unfinished mosaic
+stems were not adopted or repaired here. Their earlier review observations remain below.
+
+### Scientific corrections and sources
+
+- Arm/region/band/subband and outward numbering:
+  [MedlinePlus gene addresses](https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/).
+- Extra chromosome 21 and conventional notation:
+  [MedlinePlus Down syndrome](https://medlineplus.gov/genetics/condition/down-syndrome/).
+- Distinguish whole-set/individual-chromosome number from DNA balance in rearrangements:
+  [MedlinePlus structural changes](https://medlineplus.gov/genetics/understanding/mutationsanddisorders/structuralchanges/).
+- Correct gamete n +/- 1 versus diploid zygote 2n +/- 1, with 22+23=45 and 24+23=47.
+- The HPV 16/18 percentage concerns those two types, rather than all high-risk HPV:
+  [NCI cervical-cancer causes](https://www.cancer.gov/types/cervical/causes-risk-prevention).
+- Replace the trisomy-21-only adult-survival claim:
+  [primary trisomy-13 adult-survival report](https://pubmed.ncbi.nlm.nih.gov/2325123/).
+  Refresh the trisomy comparison using [trisomy 13](https://medlineplus.gov/genetics/condition/trisomy-13/)
+  and [trisomy 18](https://medlineplus.gov/genetics/condition/trisomy-18/).
+- Three forms of Down syndrome and the maternal-age association:
+  [CDC Down syndrome](https://www.cdc.gov/birth-defects/about/down-syndrome.html).
+- Remove source-search commentary and explain age-related cohesion loss, rather than suggesting
+  the mechanism is wholly unexplained:
+  [Tsutsumi et al., 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC4013030/).
+- Retain reduced male fertility and rare paternity reports without treating the 2006 tally as
+  current: [primary case report](https://pubmed.ncbi.nlm.nih.gov/17094988/).
+- Screening estimates likelihood; diagnostic testing addresses a condition in sampled material:
+  [CDC screening](https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html).
+
+### Figures and verification
+
+Seven figure crops restore original artwork with positioned labels: karyotype preparation,
+gene density, amniocentesis, CVS, and three nondisjunction stages. Preserve arrows, scale bars,
+image proportions, and copyright credits. Remove only the old master gradient and figure-number
+chrome. They contain original image artwork and stay ignored as ordinary SVGs; no tracking
+exceptions or drawn-SVG suffixes were added. Their crop/source/hash ledger is
+[figure_sources.json](assets/lect10_repaired_figures/figure_sources.json).
+The construction follows the local scientific-illustration guide's Labels passage and
+*Mastering SVG*'s viewBox discussion: keep labels beside structures and scale the complete figure.
+
+- Strict native lint passes for all four masters, 181 authored slides.
+- Capacity reports no concerns. B-D have no title-wrap or runt findings. The one remaining
+  typography advisory is the unchanged shared office-hours p.m. line in A.
+- All four ODP/PDF pairs rebuilt outside the sandbox through the repository export path.
+- Reviewed all **138 content pages** as quality-90 contact sheets. Inspected repaired figures,
+  reference slides, and worked tables at full size against the original material.
+- Confirmed zero source and PDF replacement markers, matching source/ODP/PDF counts, and
+  **18 native ODP tables**. Retained source blocks remain exact; revised blocks are mapped.
+- Checked the four saved numerical/notation keys and chromosome-shape key; independently checked
+  basic-set/gamete arithmetic, zygote counts, and the simplified trisomy model.
+- Passed **74 PDFKit point selections**, covering native text on covers, objectives, sections,
+  definitions, reference slides, questions, answers, and tables. This checks point selection,
+  not only PDF text extraction.
+- No renderer or generator code changed; no permanent content-inventory tests were added.
+  Scratch snapshots, scripts, audit, build log, selections, and final previews are in
+  `_temp/lect10_fixes/`.
+
+Unperformed: Impress click playback, classroom projection, a complete recheck of every retained
+historical clinical statistic, and repairs to the separate homework-generator repository.
+
+## Earlier review proposal
+
+This proposal is retained as the pre-approval snapshot. The implementation and Lecture 11
+scope clarification above supersede its proposed structural-changes deck and draft counts.
+
+The instructor clarified that this review should use **Topic 09, Chromosomal Disorders**,
+from `~/nsh/PROBLEMS/biology-problems-website/task_files/genetics_tasks2.csv`.
+Its 18 `chromosomal_disorders` tasks produce 20 problem banks, including matching and
+multiple-choice versions of the two term sets. Website Topic 10 is population genetics.
+
+**Recommendation:** start with 10C, then 10D. Replace repeated explanation with a few fixed,
+worked homework problems. Keep the karyotype photographs, chromosome-2 story, Brainbow image,
+and HeLa story. These give the lecture context and personality. This is a review proposal;
+the Djot teaching content and homework generators have not been changed.
+
+### Best replacements
+
+Page numbers below refer to the current Djot/PDF decks, not the original source slide numbers.
+
+| Priority | Current material | Recommended homework use |
+| --- | --- | --- |
+| First | 10C13-20 repeatedly decode 7q31.2; C7-9 repeat the A-G chromosome groups. | Keep one clear CFTR example and one chromosome diagram. Use `cytogenetic_notation-band_order.py` for a question/answer on which band is nearer the centromere. Move repeated A-G classification to a compact reference. |
+| First | 10D7-9 define polyploidy; D24-25 are a photographed textbook question/answer. | Use one fixed plant problem from `polyploid-monoploid_v_haploid.py`, followed by gamete-number practice from `polyploid-gametes.py`. Explain one basic set and one gamete separately. |
+| First | 10C11-12 use a small notation table; D11-17 introduce chromosome-number changes. | Work through a simple karyotype-reading problem: total chromosome count, sex-chromosome complement, and the extra/missing autosome. Then connect the notation to an actual karyotype image. Start with a simple aneuploid example before mosaics or rearrangements. |
+| Small addition | 10B33-38 show centromere shapes. | Keep the useful drawings and add a short prediction/matching question using `chromosome_shapes.yml`. Show the answer separately. B33's lone Chromosome Shapes bullet can become a proper divider. |
+| Additional topic | Deletion mapping is absent from the current decks. | Teach one four-gene `deletion_mutant_random.py --easy` problem, keeping the colored deletion table. Build the order from overlapping deletions, then check every deletion against it. Five- and six-gene problems can remain homework extensions. |
+| Additional topic | Translocation products and segregation receive little worked instruction. | Use one `robertsonian.py` or `translocation_meiosis_table.py` example after teaching the chromosome arrangement. Keep the generator's colored chromosomes and identify the DNA segments in each gamete. |
+
+The last two rows need their own teaching sequence. They would fit a short structural-changes
+deck following 10D. Introduce deletion, duplication, inversion, and translocation with the
+`chromosome_alterations.yml` concepts before either worked problem. The letter-translocation
+generator is another useful exercise, after students can preserve the order within each fragment.
+Adding every task variant would overwhelm this lecture; one four-gene example and one
+translocation example are sufficient starting points.
+
+### Concrete conceptual bridges
+
+- **Chromosome address:** mark chromosome, arm, region, band, and subband on the same enlarged
+  diagram. Compare labels on the same arm, then ask the homework band-order question.
+  Band numbering proceeds outward from the centromere; it is not a distance in cM or a decimal
+  measurement. See [MedlinePlus gene locations](https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/).
+- **Polyploid count:** the sampled octoploid problem has 64 chromosomes. One basic set has
+  64/8 = 8; a gamete following regular reduction has 64/2 = 32. Name the two quantities before
+  choosing which division to use. Keep the homework's m/h labels clear.
+- **Nondisjunction:** teach the two separation failures before the long clinical-testing section.
+  Follow chromosomes into four gametes, then add a normal gamete and count the zygote's copies.
+  Preserve D41's meiosis-II question; this CSV has no dedicated generated MI-versus-MII bank.
+- **Structural changes:** count chromosomes and track the copies of important DNA segments.
+  Balanced/unbalanced describes DNA gain or loss, a different distinction from whole-chromosome
+  number. See [MedlinePlus structural changes](https://medlineplus.gov/genetics/understanding/mutationsanddisorders/structuralchanges/).
+
+Each selected problem should use a saved question, its actual choices/artwork, and a separately
+verified answer. Present the problem first, then reveal one reasoning step at a time. Ordinary
+builds should use saved local assets, as in Lecture 09. A new automatic generator-to-slide system
+is unnecessary for this revision.
+
+### Homework inputs that need attention
+
+- `cytogenetic_notation-sub-band_notation.py` currently generates aneuploid-karyotype questions,
+  not subband questions. The generated bank confirms this; do not count it as subband practice.
+- The band-order generator selects region/band digits independently of the chromosome, without
+  checking an actual ideogram. Treat those labels as schematic, or select verified real bands
+  before placing them on a real chromosome illustration.
+- The aneuploid generator uses forms such as `47,+21,XY`; teach the conventional order
+  `47,XY,+21` and make that small notation difference explicit. MedlinePlus lists the latter
+  [trisomy-21 notation](https://medlineplus.gov/genetics/condition/down-syndrome/).
+- The rearrangement generator builds simplified breakpoints without validating actual cytobands.
+  Check a selected notation before treating it as a clinical example.
+- The polyploid banks use forms such as 8n while also distinguishing basic-set and gamete
+  numbers. Clarify that notation before adoption. Their supplied arithmetic hints are useful
+  for explaining the reasoning; keep students' task focused on naming the resulting quantity.
+- Sampled disorder-bank mosaic stems include unfinished text such as a line with followed
+  by a blank description. Use a checked simple example first; these cases need a wording pass.
+
+These are observations from the current local scripts/banks, not edits to the homework project.
+Exact sampled records and bank hashes are saved in `_temp/lect10_homework_review/homework_samples.json`.
+The four-gene sample's key was independently checked by enumerating all orders consistent with
+its deletions and first-gene hint; it has one matching solution.
+
+### Existing content and layout priorities
+
+- The 49 replacement markers remain: B20, C10, D19. Several reflect legacy colors or simple
+  decoration review; others mark genuinely tiny figures and lost labels. Classify each before
+  clearing it or replacing its teaching content.
+- B7-8 and B27 reduce chromosome diagrams to thumbnails and detach labels into bullets.
+  Repair one large labeled preparation diagram and retire its redundant repeats.
+- B13's euchromatin statement remains flagged. B47's HPV percentage needs correction: the
+  70% figure concerns types 16/18; persistent high-risk HPV causes virtually all cervical cancers.
+  See [NCI cervical-cancer causes](https://www.cancer.gov/types/cervical/causes-risk-prevention).
+- D6 mixes chromosome number with structural balance. D40 labels diploid monosomic/trisomic
+  zygotes n-1/n+1; revise those to 2n-1/2n+1 and reserve n-1/n+1 for gametes.
+- D17's claim that only trisomy 21 permits adult survival needs correction; a primary report
+  documents [adult trisomy-13 survival](https://pubmed.ncbi.nlm.nih.gov/2325123/).
+- D26-34's detailed screening procedures and newborn-disease lists are candidates for reference
+  material. Keep a clear screening-versus-diagnosis explanation and selected visuals. This
+  distinction is supported by [CDC screening guidance](https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html).
+- D37-39 need readable, labeled nondisjunction diagrams. D44-52 need a distinction between a
+  simplified segregation model and actual reproductive outcomes; a model's 1:1 ratio is not
+  itself a clinical live-birth probability. Keep the useful segregation drawings and revise
+  the framing before teaching that result.
+- B21/B42 and D48 have long wrapped headings. B46 breaks Henrietta Lacks within her surname.
+  D21 includes source-search commentary in the student text; D53 contains a stray x bullet.
+
+### Review evidence and next step
+
+Rebuilt all four current decks through the repository LibreOffice path outside the sandbox:
+A29, B52, C22, D58 = 161 visible PDF pages. Teaching sources remain unchanged. Inspected all
+132 content pages as contact sheets, plus C19 and D28 at full size. The typography audit still
+reports three runts and four title wraps. The export retains documented capacity warnings;
+successful export does not clear the 49 review markers.
+
+Current PDFs are again available in `output/pdf/`. Review inputs, samples, audit, and quality-90
+contact sheets are in `_temp/lect10_homework_review/`; the build log is
+`_temp/request_audit/lect10_build.txt`. No new permanent tests are needed for this review.
+Impress playback, classroom projection, and a complete clinical fact check were not performed.
+
+Recommended implementation order: revise C's practice, add D's count/notation problems and fix
+its mechanism diagrams, then decide how much structural-change homework belongs in a new deck.
+Record the retained/reference/replaced disposition of each affected original slide before
+editing, so the new examples do not silently remove the existing teaching story.
+
+## Original conversion snapshot
+
+The remaining sections preserve the original conversion record. Their counts, replacement flags,
+and unresolved-slide lists predate the approved revision above.
+
+### Canonical decks
 
 | Djot | Authored | Visible PDF | Hidden | Replacement markers |
 | --- | --- | --- | --- | --- |

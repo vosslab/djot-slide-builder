@@ -202,7 +202,9 @@ and the adjacent saved problem data; the utility retains its original two-gene s
 
 Twelve canonical decks now live in `LECT09/djot/` and `LECT10/djot/`, with current 2026
 announcements, source-grounded objectives/takeaways, and unchanged original ODP/PDF inputs.
-The updated 09B and C-H decks have no replacement markers; other conversion drafts retain their documented findings. See
+The updated 09B-H and 10B-D decks have no replacement markers. Lecture 10 keeps its disease
+focus, with worked Topic 09 notation/counting practice; deletion mapping and translocation
+segregation belong to Lecture 11. See
 [LECT09_REVIEW.md](LECT09/djot/LECT09_REVIEW.md) and
 [LECT10_REVIEW.md](LECT10/djot/LECT10_REVIEW.md) for findings and validation, and their adjacent
 source maps for source-to-PDF page correspondence. Build with `./build_slides.sh genetics/LECT09/`

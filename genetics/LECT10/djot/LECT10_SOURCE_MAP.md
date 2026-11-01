@@ -1,9 +1,176 @@
 # Lecture 10 source map
 
-Every content source slide maps once, in its original order. No source slide was split.
+## Current homework revision
+
+The instructor approved these changes on October 31, 2026. Lecture 10 remains disease-focused;
+deletion mapping and translocation segregation are assigned to Lecture 11.
+
+A remains 43 authored / 29 visible / 14 hidden. B52, C24, and D62 are all visible and have no
+replacement markers. Total: 181 authored / 167 visible / 14 hidden.
+
+Previous pages below refer to the Djot/PDF decks immediately before this revision. The original
+ODP-to-Djot conversion tables are retained below as a historical bridge to the original inputs.
+
+### lect10b-karyotypes
+
+| Current PDF | Previous Djot/PDF | Disposition | Current Title |
+| --- | --- | --- | --- |
+| 1 | 1 | Retained | Lecture 10B |
+| 2 | 2 | Retained | Learning Objectives |
+| 3 | 3 | Retained | Welcome to Chapter 9 |
+| 4 | 4 | Repaired/revised | Chromosomal Abnormalities |
+| 5 | 5 | Retained | *Sets of Chromosomes in Human Cells* |
+| 6 | 6 | Repaired/revised | Preparing a Karyotype |
+| 7 | 7, 8, 27 | One repaired labeled figure replaces repeated preparation views | Chromosomes Arranged in Pairs |
+| 8 | 9 | Repaired/revised | (figure) |
+| 9 | 10 | Repaired/revised | How Do We Make a Karyotype? |
+| 10 | 11 | Repaired/revised | Traditional Chromosome Staining |
+| 11 | 12 | Repaired/revised | Traditional Staining |
+| 12 | 13 | Repaired/revised | Heterochromatin and Euchromatin |
+| 13 | 14 | Repaired/revised | Different Bands Reveal Different Regions |
+| 14 | 15 | Retained | (figure) |
+| 15 | 16 | Repaired/revised | Your Turn: Recognizing Homologs |
+| 16 | 17 | Repaired/revised | Recognizing Homologs: Answer |
+| 17 | 18 | Repaired/revised | Chromosome Painting |
+| 18 | 19 | Repaired/revised | Chromosome Painting |
+| 19 | 20 | Retained | *Fluorescence in Situ Hybridization (FISH)* |
+| 20 | 21 | Repaired/revised | Multicolor FISH and SKY |
+| 21 | 22 | Retained | *How Does SKY Work?* |
+| 22 | 23 | Retained | *Comparison* |
+| 23 | 24 | Retained | *Articles* |
+| 24 | 25 | Repaired/revised | Two Color Systems |
+| 25 | 26 | Retained | (figure) |
+| 26 | 28 | Retained | Another Type of Cellular Painting\: BrainBow |
+| 27 | 29 | Retained | *Command and Control Center* |
+| 28 | 30 | Repaired/revised | (figure) |
+| 29 | 31 | Repaired/revised | (figure) |
+| 30 | 32 | Retained | (figure) |
+| 31 | 33 | Repaired/revised | Chromosome Shapes |
+| 32 | 34 | Retained | *Based on Centromere Location* |
+| 33 | 35 | Retained | *Metacentric* |
+| 34 | 36 | Retained | *Submetacentric* |
+| 35 | 37 | Retained | *Acrocentric* |
+| 36 | 38 | Repaired/revised | Other Chromosome Shapes |
+| 37 | Added | Added | Your Turn: Chromosome Shapes |
+| 38 | Added | Added | Chromosome Shapes: Answer |
+| 39 | 39 | Repaired/revised | *Number of Chromosomes* |
+| 40 | 40 | Retained | *Great Apes* |
+| 41 | 41 | Retained | *Great Apes* |
+| 42 | 42 | Repaired/revised | Human Chromosome 2: A Fusion |
+| 43 | 43 | Retained | *Neanderthal Karyotype* |
+| 44 | 44 | Retained | (figure) |
+| 45 | 45 | Retained | *The Story of* *HeLa Cells* |
+| 46 | 46 | Repaired/revised | HeLa Cells |
+| 47 | 47 | Repaired/revised | Cause of Ms. Lacks' Cancer |
+| 48 | 48 | Repaired/revised | Why HeLa Cells Matter |
+| 49 | 49 | Repaired/revised | Henrietta Lacks |
+| 50 | 50 | Retained | *HeLa Karyotype Is Crazy!!!* |
+| 51 | 51 | Retained | Key Takeaways |
+| 52 | 52 | Retained | THE END |
+
+### lect10c-chromo_nomenclature
+
+| Current PDF | Previous Djot/PDF | Disposition | Current Title |
+| --- | --- | --- | --- |
+| 1 | 1 | Retained | Lecture 10C |
+| 2 | 2 | Updated | Learning Objectives |
+| 3 | Added | Added | Chromosome Address Terms |
+| 4 | 3 | Retained | Chromosomal Positions |
+| 5 | 4 | Replaced small mixed figure with enlarged ideograms and native explanation | Chromosomes Have Recognizable Bands |
+| 6 | 5 | Repaired figure with all four chromosomes | Tan = Genes |
+| 7 | 6 | Repaired | Short Arm p, Long Arm q |
+| 8 | 10 | Retained | *Banding Pattern* |
+| 9 | 16, 17, 18, 19 | Combined repeated address prose into token table | Read an Address |
+| 10 | 13 | Replaced long divider with question | Try It: The CFTR Address |
+| 11 | 14, 20 | One worked answer replaces repeated answers | CFTR: Read Each Part |
+| 12 | 15 | Retained enlarged diagram | Where Is CFTR? |
+| 13 | 19 | Conceptual bridge before homework | Nearer or Farther? |
+| 14 | Added | Added | Practice: Band Order |
+| 15 | Added | Added | Band Order: Answer |
+| 16 | Added | Added | Reading a Karyotype |
+| 17 | 11, 12 | Replaced tiny notation table | Three Parts of a Simple Karyotype |
+| 18 | Added | Added | Practice: Read the Karyotype |
+| 19 | Added | Added | Karyotype: Answer |
+| 20 | 7, 8 | Combined repeats into reference | For Reference: A-G Groups |
+| 21 | 9 | Retained sex-chromosome figure | For Reference: X and Y |
+| 22 | 16 | Retained range concept as reference | For Reference: Address Ranges |
+| 23 | 21 | Updated | Key Takeaways |
+| 24 | 22 | Retained | THE END |
+
+### lect10d-chromo_aneuploid
+
+| Current PDF | Previous Djot/PDF | Disposition | Current Title |
+| --- | --- | --- | --- |
+| 1 | 1 | Retained | Lecture 10D |
+| 2 | 2 | Retained | Learning Objectives |
+| 3 | 3 | Retained | Chromosome Aneuploidy |
+| 4 | 4 | Retained | *Chromosome Alterations* |
+| 5 | 5 | Retained | (figure) |
+| 6 | 6 | Repaired/revised | Chromosome Number and DNA Content |
+| 7 | 7 | Retained | Polyploid |
+| 8 | 8 | Repaired/revised | Polyploid: More Than Two Complete Sets |
+| 9 | 9 | Repaired/revised | One Basic Set or One Gamete? |
+| 10 | 24 | Repaired/revised | Practice: One Basic Set and One Gamete |
+| 11 | 25 | Repaired/revised | Count Sets First, Then Gametes |
+| 12 | Added | Added | Practice: Chromosomes in a Gamete |
+| 13 | Added | Added | Gamete Count: Answer |
+| 14 | 10 | Retained | Aneuploid |
+| 15 | 11 | Repaired/revised | Extra or Missing Chromosomes |
+| 16 | 12 | Repaired/revised | Find the Extra Chromosome |
+| 17 | Added | Added | Read the Extra Copy |
+| 18 | 35 | Retained | Nondisjunction |
+| 19 | 36 | Repaired/revised | What Failed to Separate? |
+| 20 | 37 | Repaired/revised | Nondisjunction in Meiosis I |
+| 21 | 38 | Repaired/revised | Nondisjunction in Meiosis II |
+| 22 | 39 | Repaired/revised | Follow the Four Gametes |
+| 23 | Added | Added | Check the Four Products |
+| 24 | 40 | Repaired/revised | Add a Normal Gamete |
+| 25 | 41 | Retained | (figure) |
+| 26 | 42 | Repaired/revised | Try It: Follow the X Chromosome |
+| 27 | 43 | Repaired/revised | Turner Syndrome: Follow the Allele |
+| 28 | 13 | Repaired/revised | Three Common Autosomal Trisomies |
+| 29 | 14 | Retained | *Trisomy 13    Trisomy 18* |
+| 30 | 15 | Retained | *Down Syndrome* |
+| 31 | 16 | Repaired/revised | Three Forms of Down Syndrome |
+| 32 | 17 | Repaired/revised | Trisomy 21 and Survival |
+| 33 | 18 | Retained | *Down Syndrome Stats* |
+| 34 | 19 | Retained | *Down Syndrome Incidence* |
+| 35 | 20 | Repaired/revised | Effect of Mother's Age |
+| 36 | 21 | Repaired/revised | Why Is Age a Factor? |
+| 37 | 22 | Retained | (figure) |
+| 38 | 23 | Repaired/revised | Video: Down Syndrome in Iceland |
+| 39 | 44 | Repaired/revised | Can People with Down Syndrome Have Children? |
+| 40 | 45 | Repaired/revised | Fertility and Chromosome Segregation |
+| 41 | 46 | Repaired/revised | A Simplified Segregation Problem |
+| 42 | 47, 48 | Merged consecutive dividers | How Do Three Homologs Separate? |
+| 43 | 49 | Retained | (figure) |
+| 44 | 50 | Repaired/revised | Two Copies Go One Way, One the Other |
+| 45 | 51 | Retained | (figure) |
+| 46 | 52 | Repaired/revised | The Model Gives a 1:1 Ratio |
+| 47 | 26 | Retained | Prenatal Testing |
+| 48 | Added | Added | Screening or Diagnosis? |
+| 49 | 27 | Repaired/revised | Prenatal Blood Screening |
+| 50 | 28 | Repaired/revised | Nuchal Translucency Scan |
+| 51 | 29 | Repaired/revised | Diagnostic Samples |
+| 52 | 30 | Repaired/revised | Amniocentesis |
+| 53 | 31 | Repaired/revised | Chorionic Villus Sampling |
+| 54 | 32 | Repaired/revised | Umbilical Blood Sampling (PUBS) |
+| 55 | 33 | Repaired/revised | Newborn Screening |
+| 56 | 34 | Repaired/revised | For Reference: Newborn Screening |
+| 57 | 53 | Repaired/revised | *Additional Reading* |
+| 58 | 54 | Retained | *Extended Prenatal Tests* |
+| 59 | 55 | Repaired/revised | *NYTimes Daily Podcast* |
+| 60 | 56 | Retained | *CBS on Assignment* |
+| 61 | 57 | Retained | Key Takeaways |
+| 62 | 58 | Retained | THE END |
+
+## Original conversion map
+
+The tables below describe the original conversion before the approved homework revision.
+Their page numbers and replacement flags are historical.
 
 
-## lect10a-2026_announcements
+### lect10a-2026_announcements
 
 Weekly master based on the maintained LECT08 2026 announcements. Includes expand to 43 authored slides; hidden assignment, evaluation, and exam groups remain retained.
 
@@ -53,7 +220,7 @@ Weekly master based on the maintained LECT08 2026 announcements. Includes expand
 | 42 | - | True | course_evaluations.djot |
 | 43 | 29 | False | lect10a-2026_announcements.djot |
 
-## lect10b-karyotypes
+### lect10b-karyotypes
 
 Source ODP and PDF: `../lect10b-karyotypes.odp` and `../lect10b-karyotypes.pdf`. Content sources have no hidden slides, so source PDF page equals source slide.
 
@@ -113,7 +280,7 @@ Source ODP and PDF: `../lect10b-karyotypes.odp` and `../lect10b-karyotypes.pdf`.
 Added slides: 2: Learning Objectives, 51: Key Takeaways.
 
 
-## lect10c-chromo_nomenclature
+### lect10c-chromo_nomenclature
 
 Source ODP and PDF: `../lect10c-chromo_nomenclature.odp` and `../lect10c-chromo_nomenclature.pdf`. Content sources have no hidden slides, so source PDF page equals source slide.
 
@@ -142,7 +309,7 @@ Source ODP and PDF: `../lect10c-chromo_nomenclature.odp` and `../lect10c-chromo_
 Added slides: 2: Learning Objectives, 3: Opening Section, 21: Key Takeaways.
 
 
-## lect10d-chromo_aneuploid
+### lect10d-chromo_aneuploid
 
 Source ODP and PDF: `../lect10d-chromo_aneuploid.odp` and `../lect10d-chromo_aneuploid.pdf`. Content sources have no hidden slides, so source PDF page equals source slide.
 

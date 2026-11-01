@@ -18,108 +18,59 @@ color-theme: genetics
 
 @body
 
-- Identify the p and q arms of a chromosome.
-- Decode chromosome, arm, region, band, and subband in an address.
-- Interpret a cytogenetic address such as 7q31.2.
+- Identify the p and q arms of a chromosome
+- Decode chromosome, arm, region, band, and subband
+- Compare band positions on the same chromosome arm
+- Read a simple chromosome-number notation
+
+=== layout: definitions
+
+# Chromosome Address Terms
+
+@body
+
+- [*Centromere*]{color=#24578F}: the constricted region separating the two arms
+- [*p Arm*]{color=#24578F}: the short arm; p = petite
+- [*q Arm*]{color=#24578F}: the long arm; q = not p
+- [*Cytogenetic Address*]{color=#24578F}: chromosome, arm, and a stained band location
 
 === layout: section
 
 # Chromosomal Positions
 
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: two-panels
 
+# Chromosomes Have Recognizable Bands
 
 @left
 
 ![Lecture diagram](assets/lect10c-chromo_nomenclature/image_002.png)
 
-@top-right
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_001.png)
-
-@bottom-right
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_003.png)
-
-=== layout: one-panel
-@replaceme
-
-# *Tan = Genes*
-
-@body
-
-- Gene density is not highly correlated with chromosome size!!!
-  - Chromosomes 19 and 22 have the highest gene densities
-  - Chromosomes 4 and 5 have the lowest gene densities
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_004.png)
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_005.png)
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_006.png)
-
-=== layout: two-over-one-panels
-@replaceme
-
-
-@top-left
-
-- *The short arm of a chromosome is called "p" and the long arm "q".*
-
-@top-right
-
-- p = petite
-- q = not p
-
-@bottom
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_007.png)
-
-=== layout: one-panel
-@replaceme
-
-# *Karyotype Definitions*
-
-@body
-
-- Chromosomes are grouped into 7 sets denoted by letter A to G.
-  - X is included by group C
-  - Y is included in group G
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_008.png)
-
-=== layout: one-panel
-@replaceme
-
-# *Karyotype Definitions*
-
-@body
-
-- Chromosomes are grouped into 7 sets denoted by letter A to G.
-  - X is included by group C
-  - Y is included in group G
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_008.png)
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_009.png)
-
-=== layout: two-panels
-@replaceme
-
-# *Karyotype Definitions*
-
-@left
-
-- Chromosomes are grouped into 7 sets denoted by letter A to G.
-  - X is included by group C
-  - Y is included in group G
-
 @right
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_009.png)
+- Chromosomes differ in size, centromere position, and banding
+- Karyotypes put homologs together
+- Chromosomes 1-20 are ordered mainly by decreasing size
+- By historical convention, 21 precedes 22, even though 21 is smaller
 
-- SRY locus &#8211; Yp11.3
+=== layout: one-panel
+
+# Tan = Genes
+
+@body
+
+- Gene density is not highly correlated with chromosome size
+- 19 and 22: gene-rich; 4 and 5: lower gene density
+
+![Gene Density and Chromosome Size](assets/lect10_repaired_figures/gene_density.svg)
+
+=== layout: one-panel
+
+# Short Arm p, Long Arm q
+
+@body
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_007.png)
 
 === layout: one-panel
 
@@ -130,126 +81,203 @@ color-theme: genetics
 ![Lecture diagram](assets/lect10c-chromo_nomenclature/image_010.png)
 
 === layout: one-panel
-@replaceme
 
-# *Conventions*
+# Read an Address
 
 @body
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_010.png)
+A gene has a chromosome address, like a book has a library address.
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_011.png)
+| Part | What It Names | Example |
+| --- | --- | --- |
+| Chromosome | Which chromosome? | 7 |
+| Arm | Short p or long q? | q |
+| Region | Which region of that arm? | 3 |
+| Band | Which band in that region? | 1 |
+| Subband | Which part of that band? | .2 |
 
 === layout: two-panels
-@replaceme
 
+# Try It: The CFTR Address
 
 @left
 
-- "+21" presence of an extra copy of chromosome 21
-- "21+" chromosome is longer than usual
+*CFTR*: *7q31.2*
+
+- Which chromosome?
+- Which arm?
+- Which region?
+- Which band?
+- Which subband?
 
 @right
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_011.png)
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+
+=== layout: two-panels
+
+# CFTR: Read Each Part
+
+@left
+
+| Address Part | Meaning |
+| --- | --- |
+| [*7*]{color=#D40000} | Chromosome 7 |
+| [*q*]{color=#B74300} | Long arm |
+| [*3*]{color=#007A00} | Region 3 |
+| [*1*]{color=#003FFF} | Band 1 |
+| [*.2*]{color=#A719DB} | Subband 2 |
+
+@right
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+
+@citation
+
+https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
+
+=== layout: one-panel
+
+# Where Is CFTR?
+
+@body
+
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+
+=== layout: one-panel
+
+# Nearer or Farther?
+
+@body
+
+Band numbers increase as we move *away from the centromere*.
+
+| Same Arm | Nearer the Centromere | Farther from the Centromere |
+| --- | --- | --- |
+| Chromosome 14, q arm | 14q21 | 14q22 |
+
+- Compare chromosome and arm first
+- Then compare region, band, and subband
+- A band label is an address, not a distance in cM
+
+@citation
+
+https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
+
+=== layout: one-panel
+
+# Practice: Band Order
+
+@body
+
+For chromosome *17q*, which band lies most distal (farthest from the centromere)?
+
+- A. 17q36
+- B. 17q36.3
+- C. 17q11
+- D. 17q34.1
+- E. 17q41.3
+
+*Use these schematic labels to practice the numbering rule.*
+
+=== layout: one-panel
+
+# Band Order: Answer
+
+@body
+
+- Same chromosome and arm in every choice: *17q*
+- Compare the region first: *4* is farther out than *3* or *1*
+- Only *17q41.3* is in region 4
+- [*Answer: E. 17q41.3*]{color=#007A00}
+
+These are schematic labels, not a map of verified human chromosome 17 bands.
 
 === layout: section
 
-# The CFTR Gene Is Located at Position 7q31.2. What Does 7q31.2 Mean?
-
-=== layout: two-panels
-
-# *7q31.2*
-
-@left
-
-- 7 &#8594; chromosome 7
-- q &#8594; long arm
-- 31.2
-  - region #3
-  - band #1
-  - subband #2
-
-@right
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+# Reading a Karyotype
 
 === layout: one-panel
 
+# Three Parts of a Simple Karyotype
 
 @body
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+| Part | Meaning |
+| --- | --- |
+| 47 | Number of chromosomes |
+| XY | Sex-chromosome complement |
+| +21 | Extra copy of chromosome 21 |
+
+- +21 means an extra *whole chromosome 21*
+- This is different from an address such as 7q31.2
+
+@citation
+
+https://medlineplus.gov/genetics/condition/down-syndrome/
 
 === layout: one-panel
 
-# *Dewey Decimal System for Genes*
+# Practice: Read the Karyotype
 
 @body
 
-- Geneticists use a standardized way of describing a gene's cytogenetic location. In most cases, the location describes the position of a particular band on a stained chromosome\:
-  - 17q12
-- It can also be written as a range of bands, if less is known about the exact location\:
-  - 17q12-q21
+What does *47,XY,+21* describe?
+
+- A. XX with two extra copies of chromosome 21
+- B. XY with a partial deletion of chromosome 21
+- C. XY with an extra pair of chromosome 21
+- D. XX with one extra copy of chromosome 21
+- E. XY with one extra copy of chromosome 21
 
 === layout: one-panel
-@replaceme
 
-# *Gene Chromosomal Address*
-
-@body
-
-- 1. The first number or letter used to describe a gene's location represents the chromosome.
-  - Chromosomes 1 through 22 (the autosomes) are designated by their chromosome number.
-  - The sex chromosomes are designated by X or Y.
-
-- [7]{color=red}q31.2
-
-=== layout: one-panel
-@replaceme
-
-# *Gene Chromosomal Address*
+# Karyotype: Answer
 
 @body
 
-- 2. The chromosome arm is the second part of the gene's address.
-  - Choice of either [q]{color=red} or [p]{color=red} (petite)
-  - For example, 5q is the long arm of chromosome 5, and Xp is the short arm of the X chromosome.
+- *47*: one more than the usual 46 chromosomes
+- *XY*: the sex-chromosome complement
+- *+21*: one extra copy of chromosome 21
+- [*Answer: E*]{color=#007A00}
+- Three copies of chromosome 21: *trisomy 21*
 
-- 7[q]{color=red}31.2
+The homework may put the change before the sex chromosomes: *47,+21,XY*. It describes the same example.
 
-=== layout: stacked-panels
+=== layout: reference
 
-# *Gene Chromosomal Address*
+# For Reference: A-G Groups
 
-@top
+@body
 
-- 3. The position of a gene is based on the pattern of light and dark bands on the stained chromosome.
-  - The position is usually designated by two digits (representing a region and a band)
-    - sometimes it is followed by a decimal point and one or more additional digits.
-  - The number indicating the gene position increases with distance from the centromere.
-    - For example\: 14q21 represents position 21 on the long arm of chromosome 14. 14q21 is closer to the centromere than 14q22.
+- Reference: not covered in lecture
+- Seven older chromosome groups, A-G, based on size and shape
 
-@bottom
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_008.png)
 
-- 7q[31.2]{color=red}
+=== layout: reference
 
-=== layout: two-panels
+# For Reference: X and Y
 
-# *7q31.2*
+@body
 
-@left
+- Reference: not covered in lecture
+- X is in group C; Y is in group G
+- The SRY gene is on the short arm of Y
 
-- 7 &#8594; chromosome 7
-- q &#8594; long arm
-- 31.2
-  - region #3
-  - band #1
-  - sub-band #2
+![Lecture diagram](assets/lect10c-chromo_nomenclature/image_009.png)
 
-@right
+=== layout: reference
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+# For Reference: Address Ranges
+
+@body
+
+- Reference: not covered in lecture
+- A single band: *17q12*
+- A range of bands: *17q12-q21*
+- A range gives a broader location when the position is less precisely known
+- Decimal digits name finer subbands; they are not decimal distances
 
 === layout: bookend
 
@@ -257,10 +285,10 @@ color-theme: genetics
 
 @body
 
-- The p arm is short; the q arm is long.
-- A chromosome address identifies a chromosome, arm, and band.
-- Band numbers increase with distance from the centromere.
-- An address can specify a single band or a range of bands.
+- p is the short arm; q is the long arm
+- Read an address: chromosome, arm, region, band, subband
+- On the same arm, band numbers increase away from the centromere
+- Read a simple karyotype: total, sex chromosomes, chromosome change
 
 === layout: theend
 

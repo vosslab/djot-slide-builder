@@ -1,0 +1,113 @@
+[
+  {
+    "bank": "bbq-cytogenetic_notation-band_order-5_choices-questions.txt",
+    "sha256": "994c8f38278ce6e0508bb9903fa98baeac0a405251832e3658b67952c10f4013",
+    "item": 36,
+    "type": "MC",
+    "stem": "c428_1750 For chromosome 17q, which band lies most distal (farthest from the centromere)?",
+    "correct": [
+      "17q41.3"
+    ],
+    "raw_fields": [
+      "MC",
+      "<p>c428_1750</p> For chromosome 17q, which band lies most distal (farthest from the centromere)?",
+      "<span style='font-family: monospace; font-weight: bold;'>17q36</span>",
+      "Incorrect",
+      "<span style='font-family: monospace; font-weight: bold;'>17q36.3</span>",
+      "Incorrect",
+      "<span style='font-family: monospace; font-weight: bold;'>17q11</span>",
+      "Incorrect",
+      "<span style='font-family: monospace; font-weight: bold;'>17q34.1</span>",
+      "Incorrect",
+      "<span style='font-family: monospace; font-weight: bold;'>17q41.3</span>",
+      "Correct"
+    ]
+  },
+  {
+    "bank": "bbq-polyploid-monoploid_v_haploid-questions.txt",
+    "sha256": "e3e676dd49b43e6330af80b4ed1fac2db70318153909aeea617a88ea934fc939",
+    "item": 4,
+    "type": "MC",
+    "stem": "0dc4_77d0 A certain plant is found to be an octaploid (8n) with 64 chromosomes in total.What are the monoploid (m) and haploid (h) numbers for this plant?Note: 64/2 = 32 and 64/8 = 8",
+    "correct": [
+      "monoploid, m = 8 and haploid, h = 32"
+    ],
+    "raw_fields": [
+      "MC",
+      "<p>0dc4_77d0</p> <p>A certain plant is found to be an octaploid (8n) with 64 chromosomes in total.</p><h5>What are the monoploid (m) and haploid (h) numbers for this plant?</h5><p><i>Note: 64/2 = 32 and 64/8 = 8</i></p>",
+      "<p>monoploid, m = 8 and haploid, h = 8</p>",
+      "Incorrect",
+      "<p>monoploid, m = 32 and haploid, h = 32</p>",
+      "Incorrect",
+      "<p>monoploid, m = 8 and haploid, h = 32</p>",
+      "Correct",
+      "<p>monoploid, m = 32 and haploid, h = 8</p>",
+      "Incorrect",
+      "<p>monoploid, m = 64 and haploid, h = 32</p>",
+      "Incorrect",
+      "<p>monoploid, m = 64 and haploid, h = 8</p>",
+      "Incorrect"
+    ]
+  },
+  {
+    "bank": "bbq-polyploid-gametes-questions.txt",
+    "sha256": "00e7ffc4daa8e8a8913763191304ccc7c1c907ab2309154fba963e557be48cc2",
+    "item": 2,
+    "type": "MC",
+    "stem": "680d_d3ef A an octaploid plant species is found to be 8n = 72 chromosomes. How many chromosomes would present in the gametes of this species?Note: 72/2 = 36 and 72/8 = 9",
+    "correct": [
+      "36 chromosomes"
+    ],
+    "raw_fields": [
+      "MC",
+      "<p>680d_d3ef</p> <p>A an octaploid plant species is found to be 8n = 72 chromosomes.</p> <h5>How many chromosomes would present in the gametes of this species?</h5><p><i>Note: 72/2 = 36 and 72/8 = 9</i></p>",
+      "4 chromosomes",
+      "Incorrect",
+      "9 chromosomes",
+      "Incorrect",
+      "16 chromosomes",
+      "Incorrect",
+      "18 chromosomes",
+      "Incorrect",
+      "36 chromosomes",
+      "Correct"
+    ]
+  },
+  {
+    "bank": "bbq-cytogenetic_notation-aneuploidy-5_choices-questions.txt",
+    "sha256": "16498163248ef8d0f748cbcea729bcebb4b01703c81aa789f3203a478ebc9e8a",
+    "item": 32,
+    "type": "MC",
+    "stem": "0250_5b5f What does the notation 47,+21,XY describe in human karyotypes?",
+    "raw_fields": [
+      "MC",
+      "<p>0250_5b5f</p> What does the notation <span style=\"font-family: monospace; font-weight: bold; background-color: #eef3fa; padding: 2px 5px; \">47,+21,XY</span> describe in human karyotypes?",
+      "This indicates a <span style=\"color: #99004d;\">female (&female;)</span> human karyotype <span style=\"color: #4d0099;\">with two extra copies of</span> chromosome 21.",
+      "Incorrect",
+      "This indicates a <span style=\"color: #004d99;\">male (&male;)</span> human karyotype <span style=\"color: #4d0099;\">with a partial deletion of</span> chromosome 21.",
+      "Incorrect",
+      "This indicates a <span style=\"color: #004d99;\">male (&male;)</span> human karyotype <span style=\"color: #4d0099;\">with an extra pair of</span> chromosome 21.",
+      "Incorrect",
+      "This indicates a <span style=\"color: #99004d;\">female (&female;)</span> human karyotype <span style=\"color: #00994d;\">with an additional</span> copy of chromosome 21.",
+      "Incorrect",
+      "This indicates a <span style=\"color: #004d99;\">male (&male;)</span> human karyotype <span style=\"color: #00994d;\">with an extra</span> copy of chromosome 21.",
+      "Correct"
+    ],
+    "correct": [
+      "This indicates a male (\u2642) human karyotype with an extra copy of chromosome 21."
+    ]
+  },
+  {
+    "source": "/Users/vosslab/nsh/PROBLEMS/biology-problems/problems/matching_sets/inheritance/chromosome_shapes.yml",
+    "sha256": "42d1237e9d642be445d3b965071991c3c5cf4088b2aa087988a17c5a1ea72c2e",
+    "type": "matching term set",
+    "selected_pairs": {
+      "Metacentric": "Centromere near the middle; nearly equal arms",
+      "Submetacentric": "Centromere slightly off-center",
+      "Acrocentric": "Very short p arm and long q arm",
+      "Acentric": "No centromere",
+      "Dicentric": "Two centromeres"
+    },
+    "adaptation": "Shortened descriptions; colors match the source replacement rules."
+  }
+]

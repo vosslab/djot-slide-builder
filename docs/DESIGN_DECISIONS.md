@@ -1,5 +1,25 @@
 # Design decisions
 
+### Homework practice in Lecture 10
+
+**Decision.** Keep Lecture 10 focused on chromosome disorders. Use saved Topic 09 examples for
+band order, simple karyotype notation, and polyploid counts; add chromosome-shape matching from
+the homework term set. Present questions before worked answers. Leave deletion mapping and
+translocation segregation for Lecture 11, as the instructor clarified.
+
+**Why.** Students need to connect chromosome pictures and notation with the homework. Replacing
+repeated explanation creates room for practice without removing the disease and research stories.
+
+**Consequence.** Store fixed question records locally; normal builds need no generator checkout.
+Distinguish schematic band labels from real cytobands, and explain the homework's notation where
+it differs from the convention used in class. Teach nondisjunction before testing. Keep detailed
+reference material and discussion links, and distinguish a segregation model from live-birth risk.
+Repair original figure labels and preserve image proportions. Image-bearing source SVGs remain
+ignored; they do not use the reviewed-original-drawing suffix or new tracking exceptions.
+
+**Owner.** [LECT10_REVIEW.md](../genetics/LECT10/djot/LECT10_REVIEW.md) and
+[LECT10_SOURCE_MAP.md](../genetics/LECT10/djot/LECT10_SOURCE_MAP.md).
+
 ### Manual weather story snapshots
 
 **Decision.** Capture the NWS Chicago page's initially displayed PNG and its complete description

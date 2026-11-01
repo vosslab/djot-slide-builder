@@ -431,6 +431,11 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Conversion review
 
+- Review Lecture 10 against Topic 09 homework in `genetics_tasks2.csv`; consider replacing
+  some slide content with worked homework problems. Topic 09 is the intended homework group.
+- Lecture 10 is disease-focused. Apply the review's fixes, but leave deletion mapping and
+  translocation segregation for Lecture 11.
+
 - Use the three-point interference problem generator for Lecture 09B so the slides match
   the homework more closely.
 - Remove the reference problems in 09B and add a second generated example instead.

@@ -2,6 +2,21 @@
 
 ### Additions
 
+- Apply the approved Lecture 10 review while retaining its disease focus; reserve deletion
+  mapping and translocation segregation for Lecture 11. Add saved Topic 09 practice with worked
+  answers, repair labeled karyotype/nondisjunction/testing figures, correct chromosome-count and
+  clinical-claim errors, and move nondisjunction before testing. Preserve the HeLa, Brainbow,
+  chromosome-2, and disease/discussion stories. Update current source maps and distinguish the
+  earlier conversion reports as historical snapshots. Rebuild four ODP/PDF pairs; B52/C24/D62
+  have no replacement markers or capacity/title-wrap warnings. Verify 18 native tables, four
+  bank keys, and 74 PDFKit point selections; leave the announcement source and generators unchanged.
+
+- Review Lecture 10 against the 18 Topic 09 chromosome-disorder tasks and their generated
+  homework banks. Recommend specific practice replacements and identify missing structural-change
+  instruction, source-content corrections, and bank issues. Rebuild all four PDFs and review
+  132 content pages; preserve the teaching sources and generators. Save findings in the Lecture
+  10 review and question samples/hashes under `_temp/lect10_homework_review/`.
+
 - Remove the unused Lecture 08 announcement starter ODP/PDF and extracted assets from
   `genetics/LECT09/`. Keep a verified recovery copy under `_temp/lect09_starter_cleanup/`.
   Record that prior-week A decks supplied in a new lecture folder are temporary starters.

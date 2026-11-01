@@ -1,0 +1,93 @@
+[
+  {
+    "asset": "karyotype_preparation.svg",
+    "source": "lect10b-karyotypes",
+    "page": 7,
+    "crop": [
+      19.842520141601565,
+      19.84251953125,
+      773.858285522461,
+      488.6220434570312
+    ],
+    "live_text_nodes": 12,
+    "sha256": "2ce1beba02dcb6b9c7c6222594cb033aedf975916d85cb1ae409a15fe7c29595"
+  },
+  {
+    "asset": "gene_density.svg",
+    "source": "lect10c-chromo_nomenclature",
+    "page": 3,
+    "crop": [
+      71.43307250976562,
+      248.031494140625,
+      746.0787573242187,
+      488.6220434570312
+    ],
+    "live_text_nodes": 10,
+    "sha256": "6c63e104eb983a6e7e7e9d5057ff09c51f376dab4457aa2091487fca82fb144c"
+  },
+  {
+    "asset": "amniocentesis.svg",
+    "source": "lect10d-chromo_aneuploid",
+    "page": 28,
+    "crop": [
+      173.0267756347656,
+      9.921259765625,
+      627.0236364746094,
+      491.1023583984375
+    ],
+    "live_text_nodes": 24,
+    "sha256": "76fcfe1992153563c5b19b0e58322a6c1e8ced03c40a1db42518bb7a579545da"
+  },
+  {
+    "asset": "chorionic_villus_sampling.svg",
+    "source": "lect10d-chromo_aneuploid",
+    "page": 29,
+    "crop": [
+      182.55118530273438,
+      9.921259765625,
+      619.0866284179688,
+      491.1023583984375
+    ],
+    "live_text_nodes": 22,
+    "sha256": "6289ac62b0eecc88b2dfe7f420e4b8e41488e784b6aac14c4b498de19ad936d9"
+  },
+  {
+    "asset": "nondisjunction_meiosis_i.svg",
+    "source": "lect10d-chromo_aneuploid",
+    "page": 35,
+    "crop": [
+      103.18110473632812,
+      9.921259765625,
+      690.5197009277343,
+      131.45669189453125
+    ],
+    "live_text_nodes": 4,
+    "sha256": "9cc5353ff3ee6e6ba78246412f080b17b4a77cd99faf0d397e153625084d064e"
+  },
+  {
+    "asset": "nondisjunction_meiosis_ii.svg",
+    "source": "lect10d-chromo_aneuploid",
+    "page": 36,
+    "crop": [
+      103.18110473632812,
+      9.921259765625,
+      690.5197009277343,
+      312.5196826171875
+    ],
+    "live_text_nodes": 8,
+    "sha256": "b000afcedabec3b407a63fab1224d655c737528810e3292b3aafb68de91b199e"
+  },
+  {
+    "asset": "nondisjunction_gametes.svg",
+    "source": "lect10d-chromo_aneuploid",
+    "page": 37,
+    "crop": [
+      43.65354431152344,
+      9.921259765625,
+      690.5197009277343,
+      491.1023583984375
+    ],
+    "live_text_nodes": 47,
+    "sha256": "ddd335912f25fb7d45289bfa59cdcbe2d9959dada2cd31ab5f1f78738b1c8b47"
+  }
+]

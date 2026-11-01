@@ -28,15 +28,14 @@ color-theme: genetics
 # Welcome to Chapter 9
 
 === layout: one-panel
-@replaceme
 
-# *Abnormalities*
+# Chromosomal Abnormalities
 
 @body
 
-- We study some of the chromosomal abnormalities encounter in human beings and other animals and plants
-- In general animals are much less tolerant of chromosomal changes than are plants.
-- Duplication of entire sets of chromosomes is not necessarily harmful in plants.
+- Chromosome changes in humans, other animals, and plants
+- Animals generally tolerate these changes less well than plants
+- Duplicating an entire chromosome set is not necessarily harmful in plants
 
 === layout: one-panel
 
@@ -48,68 +47,22 @@ color-theme: genetics
 - A [*karyotype*]{color=red} is an ordered display of the pairs of chromosomes from a cell
 
 === layout: one-panel
-@replaceme
 
+# Preparing a Karyotype
 
 @body
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_001.jpg)
 
-- [*APPLICATION*]{color=#563A84}
-
 === layout: one-panel
-@replaceme
 
+# Chromosomes Arranged in Pairs
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_002.jpg)
-
-- [*Technique*]{color=#E97200}
-
-- [*Application*]{color=#E97200}
-
-- *Pair of homologous*
-- *duplicated chromosomes*
-
-- *Centromere*
-
-- *Metaphase*
-- *chromosome*
-
-- *Sister*
-- *chromatids*
-
-- *5 &#181;m*
-
-- A karyotype is a display of condensed chromosomes arranged in pairs.
-- Karyotyping can be used to screen for defective chromosomes
-
-=== layout: one-panel
-@replaceme
-
-
-@body
-
-![Lecture diagram](assets/lect10b-karyotypes/image_003.jpg)
-
-- [*TECHNIQUE*]{color=#563A84}
-
-- *Pair of homologous*
-- *replicated chromosomes*
-
-- *Centromere*
-
-- *Sister*
-- *chromatids*
-
-- *Metaphase*
-- *chromosome*
-
-- *5 &#181;m*
+![Homologs, Sister Chromatids, and a Painted Karyotype](assets/lect10_repaired_figures/karyotype_preparation.svg)
 
 === layout: multiple-choice
-@replaceme
 
 @question
 
@@ -128,61 +81,56 @@ Q. You are preparing a karyotype for a patient, during which phase of cell divis
 Answer\: C
 
 === layout: one-panel
-@replaceme
 
+# How Do We Make a Karyotype?
 
 @body
 
-- A [*karyotype*]{underline=true} is a photograph of an individual's chromosomes arranged in pairs and arranged according to their lengths.
-  - The photograph is taken during mitosis when all of the chromosomes have been duplicated and condensed.
-    - Prophase they are in a bunch and usually not defined enough.
-  - The toxin [_colchicine_]{color=red} is added to the cells preventing the spindles from binding to the centromeres, so cell division is stuck in metaphase.
-- Two different ways to label the chromosomes\:
-  - *1. Traditional staining*
-  - *2. Chromosome painting*
+- A *karyotype*: chromosomes displayed in pairs, ordered mainly by size
+- Photograph cells when chromosomes are condensed
+- Colchicine disrupts spindle formation, arresting dividing cells in metaphase
+- Identify chromosomes by:
+  - Traditional staining
+  - Chromosome painting
 
 === layout: section
-@replaceme
 
-# Traditional [Karyotype]{color=#B2B2B2} Chromosome [Staining]{color=#666666}
+# Traditional Chromosome Staining
 
 === layout: one-panel
-@replaceme
 
-# *1. Traditional Staining*
+# Traditional Staining
 
 @body
 
-- *1. Traditional staining* &#8211; to treat chromosomes with a  staining reagent called GIEMSA
-  - which causes the chromosomes to exhibit bands, called G-bands which are specific to each pair of homologs.
-- Heterochromatic regions, which tend to be rich with adenine and thymine (AT-rich) DNA and relatively gene-poor, stain more darkly in G-banding.
-  - Conversely, R-bands are less condensed chromatin, which tends to be rich with guanine and cytosine (GC-rich) and more transcriptionally active.
+- Giemsa staining gives each chromosome a recognizable pattern of *G-bands*
+- Dark G-bands: generally AT-rich; fewer genes
+- Reverse staining highlights *R-bands*: generally GC-rich and relatively gene-rich
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
-# *Heterochromatin and Euchromatin*
+# Heterochromatin and Euchromatin
 
-@body
+@left
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_005.png)
 
-- Heterochromatin refers to regions of the chromosome that have a dense, compact structure in interphase.
-- Euchromatin is visible only after chromosome condensation in mitosis or meiosis.
+@right
 
-=== layout: two-plus-one-panels
-@replaceme
+- [*Heterochromatin*]{color=#24578F}: more tightly packed in interphase
+- [*Euchromatin*]{color=#24578F}: less tightly packed in interphase
+- Both condense into visible chromosomes during cell division
 
-# *1. Traditional Staining*
+=== layout: two-panels
 
-@top-left
+# Different Bands Reveal Different Regions
 
-- G-bands are relatively gene poor
-- R-bands are gene-rich
-
-@bottom-left
+@left
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_007.png)
+
+- G-bands: relatively gene-poor
+- R-bands: relatively gene-rich
 
 @right
 
@@ -197,51 +145,43 @@ Answer\: C
 
 === layout: one-panel
 
+# Your Turn: Recognizing Homologs
 
 @body
 
-- In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
-- More than one maybe correct.
-  - A. length
-  - B. position of the centromere
-  - C. staining pattern
-  - D. character coded for by their genes
-  - E. X-shaped
+Two chromosome 14 homologs appear in a karyotype. What should they have in common?
 
-=== layout: multiple-choice
-@replaceme
-
-@question
-
-![Lecture diagram](assets/lect10b-karyotypes/image_009.png)
-
-In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
-
-- length
-- position of the centromere
-- staining pattern
-- character coded for by their genes
-- X-shaped
-
-@answer
-
-[Answer\: all of the above]{color=red}
-
-=== layout: section
-@replaceme
-
-# [Modern]{color=#579835} [Karyotype]{color=#C38312} [Chromosome]{color=#512480} [Painting]{color=red}
+- A. Similar length
+- B. Same centromere position
+- C. Same banding pattern
+- D. The same genes at corresponding locations
+- E. Always an X shape, even before DNA replication
 
 === layout: one-panel
-@replaceme
 
-# *2. Chromosome Painting*
+# Recognizing Homologs: Answer
 
 @body
 
-- *2. Chromosome painting\:* Different colors are painted on each chromosome by hybridization with DNA strands labeled with different fluorescent dyes.
-  - Fluorescence in situ hybridization (FISH) is a technique that uses fluorescent probes that bind to only those parts of the chromosome with a high degree of sequence complementarity.
-- The hybridization of multiple chromosome painting probes, each tagged with a specific fluorochrome results in the differential color display of chromosomes, i.e. color karyotyping.
+- [*A, B, C, and D*]{color=#007A00}
+- Homologs carry the same genes; their alleles can differ
+- The X shape comes from *DNA replication*
+- Each replicated homolog has two sister chromatids
+- A homolog is still the same chromosome before replication
+
+=== layout: section
+
+# Chromosome Painting
+
+=== layout: one-panel
+
+# Chromosome Painting
+
+@body
+
+- Fluorescent DNA probes bind to matching chromosome sequences
+- *Fluorescence in situ hybridization (FISH)* makes those sequences visible
+- A mixture of probes can give each chromosome type a different color
 
 === layout: one-panel
 
@@ -253,7 +193,7 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 === layout: one-panel
 
-# *Multicolor FISH (mFISH) and Spectral Karyotype (SKY Technique)*
+# Multicolor FISH and SKY
 
 @body
 
@@ -293,17 +233,17 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_013.png)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
+# Two Color Systems
 
-@body
+@left
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_014.png)
 
-![Lecture diagram](assets/lect10b-karyotypes/image_015.png)
+@right
 
-- *Two Color Systems*
+![Lecture diagram](assets/lect10b-karyotypes/image_015.png)
 
 === layout: one-panel
 
@@ -311,29 +251,6 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 @body
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_016.png)
-
-=== layout: one-panel
-@replaceme
-
-
-@body
-
-![Lecture diagram](assets/lect10b-karyotypes/image_003.jpg)
-
-- [*TECHNIQUE*]{color=#563A84}
-
-- *Pair of homologous*
-- *replicated chromosomes*
-
-- *Centromere*
-
-- *Sister*
-- *chromatids*
-
-- *Metaphase*
-- *chromosome*
-
-- *5 &#181;m*
 
 === layout: section
 
@@ -350,7 +267,6 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 - A recent advance uses expression of combinations of colored proteins in brain cells, a technique called "brainbow"
 
 === layout: two-panels
-@replaceme
 
 
 @left
@@ -362,7 +278,6 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 ![Lecture diagram](assets/lect10b-karyotypes/image_018.svg)
 
 === layout: two-panels
-@replaceme
 
 
 @left
@@ -379,12 +294,9 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_021.jpg)
 
-=== layout: one-panel
+=== layout: section
 
-
-@body
-
-- Chromosome Shapes
+# Chromosome Shapes
 
 === layout: one-panel
 
@@ -419,15 +331,13 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 ![Lecture diagram](assets/lect10b-karyotypes/image_025.png)
 
 === layout: one-plus-two-panels
-@replaceme
 
-# *Other Shapes*
+# Other Chromosome Shapes
 
 @left
 
-- [*Acentric*]{underline=true} &#8211; without centromere &#8211; gene typically unstable
-
-- [*Dicentric*]{underline=true} &#8211; two centromeres &#8211; unstable due to unpredictable transmission
+- [*Acentric*]{color=#D40000}: no centromere; usually lost during cell division
+- [*Dicentric*]{color=#076DAD}: two centromeres; may be unstable if pulled toward opposite poles
 
 @top-right
 
@@ -438,7 +348,38 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 ![Lecture diagram](assets/lect10b-karyotypes/image_027.png)
 
 === layout: one-panel
-@replaceme
+
+# Your Turn: Chromosome Shapes
+
+@body
+
+Match each description to a term.
+
+| Description | Your Answer |
+| --- | --- |
+| Centromere near the middle; nearly equal arms | ? |
+| Centromere slightly off-center | ? |
+| Very short p arm and long q arm | ? |
+| No centromere | ? |
+| Two centromeres | ? |
+
+*Metacentric, submetacentric, acrocentric, acentric, dicentric*
+
+=== layout: one-panel
+
+# Chromosome Shapes: Answer
+
+@body
+
+| Description | Term |
+| --- | --- |
+| Nearly equal arms | [*Metacentric*]{color=#0067CC} |
+| Slightly unequal arms | [*Submetacentric*]{color=#C80085} |
+| Very short p arm | [*Acrocentric*]{color=#007A00} |
+| No centromere | [*Acentric*]{color=#D40000} |
+| Two centromeres | [*Dicentric*]{color=#076DAD} |
+
+=== layout: one-panel
 
 # *Number of Chromosomes*
 
@@ -489,19 +430,16 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 ![Lecture diagram](assets/lect10b-karyotypes/image_029.png)
 
 === layout: one-panel
-@replaceme
 
-# *The Proposed Mechanism for the Creation of the Long Human Chromosome 2 by Fusion of Two Shorter Chromosomes*
+# Human Chromosome 2: A Fusion
 
 @body
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_030.jpg)
 
-- Genetically unstable
+@notes
 
-- Chimpanzee
-- Gorilla &#8211; have
-- 48 chromosomes
+Two ancestral chromosomes joined. One centromere became inactive. Two active centromeres can make a chromosome unstable.
 
 === layout: one-panel
 
@@ -524,20 +462,19 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 === layout: one-panel
 
-# *HeLa Cells*
+# HeLa Cells
 
 @body
 
-- a cell type in an immortal cell line used in scientific research.
-- the oldest and most commonly used human cell lines.
-- derived from cervical cancer cells taken from [*He*]{underline=true}nrietta [*La*]{underline=true}cks
-  - a patient who eventually died of her cancer on October 4, 1951.
-- remarkably durable and prolific
-  - contaminated many other cell lines used in research
+- An immortal human cell line used in research
+- Cervical cancer cells taken from *Henrietta Lacks* in 1951
+- *He* from Henrietta + *La* from Lacks
+- She died of her cancer on October 4, 1951
+- Durable and fast-growing; HeLa cells have also contaminated other cell lines
 
 === layout: two-panels
 
-# *Cause of Ms. Lacks Cancer*
+# Cause of Ms. Lacks' Cancer
 
 @left
 
@@ -545,13 +482,18 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 @right
 
-- Human papillomavirus (HPV) causes 70% of all cervical cancers. But less than 10% cases become cancer.
-- Sexually transmitted disease. More than 80% of American women will have contracted HPV by age 50.
-- In 2006, a vaccine was approved for use. There are efforts to require teenage girls to get vaccinated.
+- Persistent infection with high-risk *HPV* causes almost all cervical cancers
+- Types *16 and 18* account for about 70% worldwide
+- Most HPV infections clear without causing cancer
+- Vaccination helps prevent infection with cancer-causing types
+
+@citation
+
+https://www.cancer.gov/types/cervical/causes-risk-prevention
 
 === layout: two-panels
 
-# *Significance of HeLa Cells*
+# Why HeLa Cells Matter
 
 @left
 
@@ -559,15 +501,14 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 @right
 
-- Discovered that HeLa cells did something they'd never seen before\: They could be kept alive and grow.
-- First human cells that could be grown in a lab and were "immortal." They did not die after a few cell divisions and could be used for conducting many experiments.
-- Used to develop polio vaccine and research cancer, understand AIDS, develop drugs  the effects of radiation and toxic substances, and gene mapping.
-- Scientists have grown some 50 million metric tons of her cells.
-- this would fill all the skyscrapers in Chicago
+- Human cells that could keep growing in the laboratory
+- Cells for repeated experiments
+- Helped develop the polio vaccine
+- Used in cancer and HIV research, drug testing, radiation studies, and gene mapping
 
 === layout: two-panels
 
-# *Henrietta Lacks*
+# Henrietta Lacks
 
 @left
 
@@ -575,10 +516,9 @@ In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of 
 
 @right
 
-- an poor African&#8211;American woman without health insurance who was the unwitting donor of cells from her cancerous tumor in 1951.
-- In the early 1970s, the family started getting calls from researchers who wanted blood samples from them to learn the family's genetics.
-- Family wondered why and this is when they learned about the removal of Henrietta's cells.
-- Family members are still confused about how Henrietta's cells could have been taken without her consent and how they could still be alive 50 years after her death.
+- An African-American patient whose tumor cells were taken in 1951 without her knowledge or consent
+- Her family learned about the cells decades later, when researchers contacted them for blood samples
+- Her story raises questions about consent, privacy, and who benefits from research
 
 === layout: one-panel
 
