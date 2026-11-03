@@ -184,6 +184,41 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 ## Course links and evergreen announcements
 
+The working guide for `lect##a` preparation is
+[ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md). This section records the
+instructor's stated preferences; the guide assembles them into the current weekly workflow.
+
+- Canonical announcement order: title, agenda, Next Week, weather, icebreaker, Informational Slides,
+  YouTube channel, Stump the Vibe Coder, Discord, office hours, contact, anonymous messages,
+  Course Content, textbook, Syllabus Links, PREVIEW Slides, Grading and Assessment,
+  Assignments/Quizzes/Exams, Graded vs Total Percentage, Quiz/Exam schedule and policies,
+  Exam when needed, Quiz when needed, Weekly Assignments, General Announcements,
+  spring registration when needed, evaluations in their display period, Natural Science Club
+  (hidden for now), then THE END (November 3, 2026).
+- The three main sections are Informational Slides, Course Content, and General Announcements.
+  Title, agenda, Next Week, weather, and icebreaker are before the first section. Informational Slides
+  contains YouTube/STVC and contact information. Course Content contains textbook/syllabus,
+  Grading and Assessment, Exam/Quiz overview, Exam, Quiz, and Weekly Assignments. Use subsection dividers
+  for these course groups and for registration, evaluations, and club under General Announcements.
+- Keep the original opening order; registration belongs after course logistics.
+- Weekly announcement decks have not always been aligned; missing items often reflect
+  forgetting them, not an intentional alternate structure. Apply the consistent template going
+  forward while keeping seasonal groups conditional.
+- Put a Next Week slide immediately after the existing agenda, focused on work due and what
+  happens in class the following week. Use the current course schedule; do not invent events.
+- Textbook placement can be informational/syllabus or course-content/logistics; neither is a
+  correctness failure. The current shared Genetics group places it under Course Content.
+- There is no fixed historical Exam/Quiz order. Prefer assessment overview, Exam, Quiz,
+  then Assignments for consistency, rather than treating the reverse order as an error.
+- Discord signup and Student Profile assignments run until September 21 in fall and February 14
+  in spring; hide their assignment reminders afterward.
+- Biotechnology has a special Veridian Dynamics ending: retain it after general announcements
+  and before THE END.
+- General Announcements rarely has more than one active topic: Graduating Students in the first
+  two weeks, registration midsemester, evaluations at semester end, and one-off events such as
+  campus seminars when relevant. Natural Science Club remains hidden for now; the instructor
+  has not decided how to bring it back since COVID.
+
 - Use root-level `evergreen/` for slides shared across courses. Keep course-specific reusable
   slides in that course's `evergreen/` folder, and dated weather/podcast snapshots with the lecture.
 
@@ -196,6 +231,15 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   https://banner.roosevelt.edu/ssbprod/bwskzenr.P_CourseFinder.
 - Keep my original spring-registration wording and the Registrar/Course Finder links;
   do not expand it with new advising instructions.
+- Include a summary of all my upcoming courses and an individual slide on each in the
+  shared spring-registration group (November 3, 2026).
+- I generally teach the same courses every year; mostly change the year to 2027 and also
+  list my summer course.
+- BCHM 355/455 Biochemistry Lecture: Thursday afternoons, 1:30-4:30 p.m., face-to-face
+  Schaumburg. BCHM 356/456: face-to-face Schaumburg, less structured and more independent
+  study-like (November 3, 2026).
+- I am probably teaching BIOL 301 this spring as a third course, but it is not locked down yet.
+  Mark the teaching assignment as tentative in course announcements.
 
 - A prior lecture's announcement deck copied into a new lecture folder is a starter for the
   new weekly A deck. Do not keep that starter or its unused extracted assets in the new folder.
@@ -658,6 +702,7 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - Use `big-image` with the full NWS description as its caption. Start with the initially
   displayed story; deal with tab selection later. About 15 pt is fine, and the caption can
   have a little more room downward.
+- When the weather page has two options, make a slide for both (November 3, 2026).
 - Put "NWS Chicago, retrieved [date]: https://www.weather.gov/lot/weatherstory" in
   `@citation`, not in the weather caption.
 

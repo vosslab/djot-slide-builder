@@ -4,6 +4,8 @@ Use repository-owned `.djot` source to produce editable ODP and ODP-derived PDF 
 Existing-presentation import is a one-time source migration workflow.
 
 For lecture conversions, complete the [manager checklist](SLIDE_CONVERSION_CHECKLIST.md).
+For weekly `lect##a` preparation, use
+[ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md).
 
 ## Audit title wrapping and runts
 
@@ -171,18 +173,18 @@ multiple selectors. Folder selection includes matching announcement variants; us
 filenames when a folder contains historical versions.
 
 The tool reads the initially displayed story from
-[NWS Chicago](https://www.weather.gov/lot/weatherstory). It discovers the current PNG URL,
+[NWS Chicago](https://www.weather.gov/lot/weatherstory). It discovers every published tab's PNG URL,
 preserves the original graphic and complete forecast description, and inserts one `big-image`
-slide immediately before the unique Breakout Room Chat or Icebreaker heading. Refreshing replaces
-that slide. The forecast stays editable in `@caption`; the NWS credit, Chicago-local retrieval
+slide per story immediately before the unique Breakout Room Chat or Icebreaker heading.
+Refreshing replaces the saved weather slides. The forecast stays editable in `@caption`; the NWS credit, Chicago-local retrieval
 date, and complete source URL go in `@citation`. No extra discussion prompt or forecast summary
 is generated.
 
 Images are saved under `assets/weather_story/` beside the deck, with content-based filenames.
 Earlier images remain intact. All downloads, PNG validation, and insertion points are checked
 before source writes; errors leave existing snapshots intact. Preview downloads and validates
-the same resources but saves no files. Missing or ambiguous story content requires reviewing
-the NWS page before retrying; there are no tab-selection controls.
+the same resources but saves no files. Missing or mismatched story content requires reviewing
+the NWS page before retrying; all published tabs are included.
 
 Build normally afterward. Builds use saved local files and never refresh the forecast. This
 captures the current story, rather than looking up weather for the cover date. Use a temporary

@@ -56,17 +56,22 @@ def download(url: str, limit: int) -> bytes:
 	return data
 
 
-def weather_story(data: bytes) -> dict[str, str]:
-	"""Read the initially displayed graphic and its own description, without running scripts."""
+def weather_stories(data: bytes) -> list[dict[str, str]]:
+	"""Read every published graphic and its own description, in tab order."""
 	root = lxml.html.fromstring(data, parser=lxml.html.HTMLParser(no_network=True))
 	tabs = root.xpath('//*[@id="tabs"]')
 	if len(tabs) != 1:
 		raise ValueError("Expected one NWS weather-story tab container; decks unchanged")
-	active = [item for item in tabs[0].find_class("c-tab") if "is-active" in item.classes]
-	titles = [item for item in tabs[0].find_class("c-tabs-nav__link") if "is-active" in item.classes]
-	if len(active) != 1 or len(titles) != 1:
-		raise ValueError("Expected one initially displayed NWS story; decks unchanged")
-	graphics = active[0].find_class("graphicast")
+	panels = tabs[0].find_class("c-tab")
+	titles = tabs[0].find_class("c-tabs-nav__link")
+	if not panels or len(panels) != len(titles):
+		raise ValueError("Expected matching NWS story titles and panels; decks unchanged")
+	return [weather_story(panel, title.text_content()) for panel, title in zip(panels, titles)]
+
+
+def weather_story(panel, title: str) -> dict[str, str]:
+	"""Read one graphic and its complete description."""
+	graphics = panel.find_class("graphicast")
 	if len(graphics) != 1:
 		raise ValueError("Expected one graphic in the displayed NWS story; decks unchanged")
 	images = graphics[0].xpath('.//div[@class="image"]/img[@src]')
@@ -76,7 +81,7 @@ def weather_story(data: bytes) -> dict[str, str]:
 	# A line break separates words even when the source HTML has no surrounding spaces.
 	for line_break in descriptions[0].xpath(".//br"):
 		line_break.tail = " " + (line_break.tail or "")
-	title = " ".join(titles[0].text_content().split())
+	title = " ".join(title.split())
 	caption = " ".join(descriptions[0].text_content().split())
 	if not title or not caption:
 		raise ValueError("Weather story has an empty title or description; decks unchanged")
@@ -105,10 +110,8 @@ def weather_slide(story: dict[str, str], image_name: str, retrieved_on: datetime
 
 
 def update_source(source: str, slide: str) -> str:
-	"""Replace one managed weather slide and put it immediately before the icebreaker."""
+	"""Replace managed weather slides immediately before the icebreaker."""
 	parts = re.split(r"(?m)(?=^===\s+(?:layout|include):)", source)
-	if sum(WEATHER_ASSET_PATH in part for part in parts) > 1:
-		raise ValueError("Multiple managed weather slides; resolve duplicates before refreshing")
 	parts = [part for part in parts if WEATHER_ASSET_PATH not in part]
 	anchors = [index for index, part in enumerate(parts) if re.search(
 		r"(?im)^# .*\b(?:breakout room chat|ice[ -]?breaker)\b", part.split("@notes")[0])]
@@ -136,30 +139,35 @@ def announcement_paths(selectors: list[str]) -> list[pathlib.Path]:
 
 def refresh(paths: list[pathlib.Path], write: bool, retrieved_on: datetime.date) -> None:
 	"""Validate the forecast and every insertion point before saving any selected deck."""
-	story = weather_story(download(PAGE_URL, 2_000_000))
-	image_data = download(story["image_url"], 10_000_000)
-	with PIL.Image.open(io.BytesIO(image_data)) as image:
-		if image.format != "PNG":
-			raise ValueError("NWS weather graphic must be a PNG; decks unchanged")
-		image.verify()
-	# Immutable asset names keep other decks' earlier snapshots intact.
-	image_name = f"chicago_{hashlib.sha256(image_data).hexdigest()}.png"
-	slide = weather_slide(story, image_name, retrieved_on)
+	stories = weather_stories(download(PAGE_URL, 2_000_000))
+	images = {}
+	slide = ""
+	for story in stories:
+		image_data = download(story["image_url"], 10_000_000)
+		with PIL.Image.open(io.BytesIO(image_data)) as image:
+			if image.format != "PNG":
+				raise ValueError("NWS weather graphic must be a PNG; decks unchanged")
+			image.verify()
+		# Immutable asset names keep other decks' earlier snapshots intact.
+		image_name = f"chicago_{hashlib.sha256(image_data).hexdigest()}.png"
+		images[image_name] = image_data
+		slide += weather_slide(story, image_name, retrieved_on)
 	updates = []
 	for path in paths:
 		source = path.read_text(encoding="utf-8")
 		updated = update_source(source, slide)
 		updates.append((path, updated))
-		print(f"{path.name}: {story['title']} (retrieved {retrieved_on})")
+		print(f"{path.name}: {len(stories)} weather stories (retrieved {retrieved_on})")
 		print("".join(difflib.unified_diff(source.splitlines(keepends=True),
 			updated.splitlines(keepends=True), fromfile=str(path), tofile=str(path))), end="")
 	if not write:
 		print("Preview only. Run again with --write to save the weather story and graphic.")
 		return
 	for path, updated in updates:
-		image_path = path.parent / WEATHER_ASSET_PATH / image_name
-		image_path.parent.mkdir(parents=True, exist_ok=True)
-		image_path.write_bytes(image_data)
+		for image_name, image_data in images.items():
+			image_path = path.parent / WEATHER_ASSET_PATH / image_name
+			image_path.parent.mkdir(parents=True, exist_ok=True)
+			image_path.write_bytes(image_data)
 		path.write_text(updated, encoding="utf-8")
 		print(f"Updated {path}")
 

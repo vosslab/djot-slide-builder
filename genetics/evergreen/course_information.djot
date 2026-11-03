@@ -69,7 +69,7 @@ https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
 
 === layout: section
 
-# Textbooks
+# Course Content
 
 === layout: two-panels
 
@@ -88,10 +88,6 @@ https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
 @citation
 
 https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mechanisms_of_Inheritance_and_Analysis
-
-=== layout: section
-
-# Course Content
 
 === layout: one-panel
 
@@ -118,7 +114,7 @@ https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mec
   - They are labeled PREVIEW in the filename.
 - Full versions of lecture slides are available on Blackboard after class.
 
-=== layout: section
+=== layout: subsection
 
 # Grading and Assessment
 

@@ -86,6 +86,9 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 
 ## Recurring lecture announcement updates
 
+Use [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md) for the announcement order,
+section hierarchy, seasonal groups, and signup/profile deadlines.
+
 - [ ] Replace the copied agenda with this lecture's topics and activities; compare each agenda
   item with the content decks and current course schedule.
 - [ ] Check every assessment and assignment date against the schedule/spreadsheet. Update

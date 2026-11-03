@@ -5,8 +5,8 @@
 The instructor approved these changes on October 31, 2026. Lecture 10 remains disease-focused;
 deletion mapping and translocation segregation are assigned to Lecture 11.
 
-A has 46 authored / 32 visible / 14 hidden slides. B52, C24, and D63 are all visible and have no
-replacement markers. Total: 185 authored / 171 visible / 14 hidden.
+A has 54 authored / 38 visible / 16 hidden slides. B52, C24, and D63 are all visible and have no
+replacement markers. Total: 193 authored / 177 visible / 16 hidden.
 
 Slide D9 restores the tetraploidy mechanism on November 1, 2026; subsequent D pages shift by one.
 All 62 slides from the October 31 revision remain unchanged.
@@ -16,12 +16,19 @@ ODP-to-Djot conversion tables are retained below as a historical bridge to the o
 
 ### Current 10A announcements
 
-The November 1 additions share `evergreen/spring_registration.djot` with 09A and add a
-saved NWS Chicago weather story. PDF 3 is the weather story; PDF 4 is the icebreaker. PDF 20 is
-the registration divider; PDF 21 is the reminder. Compared with the original-conversion map
-below, pages 1-2 stay in place, pages 3-18 move to 4-19, and pages 19-29 move to 22-32. All existing
-content, order, and hidden status are preserved. The original map remains a pre-registration
-snapshot.
+The November 3 update has 54 authored / 38 visible / 16 hidden slides.
+PDF 3 is the dated Next Week lookahead immediately after the agenda. Weather when present
+and the icebreaker complete the opening before the three sections:
+
+| Main section | PDF range | Contents |
+| --- | --- | --- |
+| Informational Slides | 6-12 | YouTube/STVC, Discord, office hours, contact, anonymous messages |
+| Course Content | 13-29 | Textbook, syllabus, preview, grading, Exam/Quiz, Exam, Quiz, Weekly Assignments |
+| General Announcements | 30-37 | Relevant seasonal announcements; evaluations and club remain hidden |
+
+Exam guidance remains hidden; THE END is PDF 38. The shared signup/profile reminders
+state September 21 in fall and February 14 in spring and are hidden in this deck.
+Earlier inventory/page references below are historical.
 
 ### lect10b-karyotypes
 

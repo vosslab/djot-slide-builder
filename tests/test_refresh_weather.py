@@ -16,7 +16,7 @@ import tools.refresh_weather
 
 
 def weather_html() -> bytes:
-	"""Use the published page's active-story structure, with an unrelated inactive story."""
+	"""Use the published page's active-story structure, with a second story."""
 	return b'''<div id="tabs" class="c-tabs">
 		<div class="c-tabs-nav__link is-active">A *cool* outlook</div>
 		<div class="c-tabs-nav__link">Other story</div>
@@ -36,8 +36,11 @@ def png_bytes(color: str = "blue") -> bytes:
 	return data.getvalue()
 
 
-def test_active_story_and_generated_caption_preserve_literal_forecast(tmp_path: pathlib.Path) -> None:
-	story = tools.refresh_weather.weather_story(weather_html())
+def test_all_stories_and_generated_caption_preserve_literal_forecast(tmp_path: pathlib.Path) -> None:
+	stories = tools.refresh_weather.weather_stories(weather_html())
+	assert len(stories) == 2 and stories[1]["title"] == "Other story"
+	assert stories[1]["caption"] == "Unrelated forecast."
+	story = stories[0]
 	assert story == {"title": "A *cool* outlook", "caption": "Some sun & clouds. Then *rain*.",
 		"image_url": "https://www.weather.gov/images/lot/wxstory/Tab4FileL.png"}
 	image = tmp_path / "assets/weather_story/saved.png"
@@ -57,7 +60,7 @@ def test_active_story_and_generated_caption_preserve_literal_forecast(tmp_path: 
 	assert slide_lib.layout_validation.inline_text(link.children) == link.url
 
 
-def test_refresh_previews_then_replaces_one_snapshot_without_changing_other_slides(tmp_path, monkeypatch) -> None:
+def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(tmp_path, monkeypatch) -> None:
 	path = tmp_path / "lect09a-2026_announcements.djot"
 	source = ("=== layout: one-panel\n# Today's Agenda\n@body\nAgenda.\n\n"
 		"=== layout: one-panel\n# [Breakout Room Chat]{color=red}\n@body\nQuestion.\n\n"
@@ -74,7 +77,7 @@ def test_refresh_previews_then_replaces_one_snapshot_without_changing_other_slid
 	assert path.read_text() == source and not (tmp_path / "assets").exists()
 	tools.refresh_weather.refresh([path], True, date)
 	first = path.read_text()
-	assert first.count(tools.refresh_weather.WEATHER_ASSET_PATH) == 1
+	assert first.count(tools.refresh_weather.WEATHER_ASSET_PATH) == 2
 	assert first.index("Today's Agenda") < first.index("assets/weather_story/") < first.index("Breakout Room Chat")
 	assert first.endswith(source[source.index("=== layout: one-panel\n# [Breakout"):])
 	tools.refresh_weather.refresh([path], True, date)
@@ -83,7 +86,7 @@ def test_refresh_previews_then_replaces_one_snapshot_without_changing_other_slid
 	assert old_image.read_bytes() == image
 	image = png_bytes("red")
 	tools.refresh_weather.refresh([path], True, date)
-	assert path.read_text().count(tools.refresh_weather.WEATHER_ASSET_PATH) == 1
+	assert path.read_text().count(tools.refresh_weather.WEATHER_ASSET_PATH) == 2
 	assert old_image.read_bytes() == png_bytes()
 	assert len(list((tmp_path / "assets/weather_story").glob("*.png"))) == 2
 
@@ -116,12 +119,12 @@ def test_failed_refresh_preserves_every_selected_deck_and_saved_image(tmp_path, 
 	assert list(asset.parent.iterdir()) == [asset]
 
 
-def test_ambiguous_icebreaker_and_managed_slides_require_correction() -> None:
+def test_ambiguous_icebreaker_requires_correction() -> None:
 	slide = "=== layout: big-image\n@image\n![Story](assets/weather_story/saved.png)\n@caption\nForecast.\n\n"
 	anchor = "=== layout: one-panel\n# Breakout Room Chat\n@body\nTalk.\n"
-	for source in (anchor + anchor, slide + slide + anchor):
-		with pytest.raises(ValueError, match="one icebreaker|Multiple managed"):
-			tools.refresh_weather.update_source(source, slide)
+	assert tools.refresh_weather.update_source(slide + slide + anchor, slide) == slide + anchor
+	with pytest.raises(ValueError, match="one icebreaker"):
+		tools.refresh_weather.update_source(anchor + anchor, slide)
 
 
 def test_download_bounds_and_redirects_keep_remote_input_on_official_resources(monkeypatch) -> None:

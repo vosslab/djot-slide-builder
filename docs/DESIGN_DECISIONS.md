@@ -22,8 +22,8 @@ ignored; they do not use the reviewed-original-drawing suffix or new tracking ex
 
 ### Manual weather story snapshots
 
-**Decision.** Capture the NWS Chicago page's initially displayed PNG and its complete description
-in one `big-image` slide immediately before the icebreaker. Preview by default; save explicitly.
+**Decision.** Capture every published NWS Chicago weather-story tab's PNG and complete description
+in its own `big-image` slide immediately before the icebreaker (updated November 3, 2026). Preview by default; save explicitly.
 Use the description as native caption text. Put attribution, retrieval date, and source URL in
 the separate `@citation` footer, as requested by the instructor.
 
@@ -31,10 +31,10 @@ the separate `@citation` footer, as requested by the instructor.
 choice for the lecture and keeps normal builds offline. The story's image filename can change.
 
 **Consequence.** Store immutable, content-addressed PNGs beside each selected deck and replace
-one managed weather slide. Validate the active story, official HTTPS URLs, image, and every
+the managed weather slides. Validate matching tab titles/panels, official HTTPS URLs, images, and every
 insertion point before writing. Long captions may grow down into the unused lower margin,
 with image geometry fixed and citation clearance preserved. Keep existing font fitting and
-accept roughly 15 pt for this use. Tab selection and historical forecast lookup are outside v1.
+accept roughly 15 pt for this use. Include all published tabs; historical forecast lookup remains outside this workflow.
 Downloaded text stays literal Djot; URL admission and redirect validation apply ASVS 2.2.1/1.2.2.
 Native caption text sits in a wrapping text frame; its rounded panel is master decoration.
 Text directly inside the rectangle ran off-page in LibreOffice despite measured wrapping.
@@ -1392,3 +1392,63 @@ the same way. The saved host thumbnail is `output/pdf/stvc-flyer-assets/episode-
 copied from the existing `0zhh6g-DJFs` episode image. This supersedes the more cartoonish
 `_9HjPmVv_MU` thumbnail at the human's request. Final alternatives and print-review
 evidence are in `_temp/stvc-next/`; earlier explorations remain in `_temp/stvc-concepts/`.
+
+### Shared upcoming-course announcements
+
+**Decision.** Keep a summary of the instructor's spring and summer courses and one slide per
+course in `evergreen/spring_registration.djot`, following the registration reminder. Use the
+instructor's November 3, 2026 lecture/lab details and the recurring summer film-course format.
+Mark the BIOL 301 teaching assignment tentative in both its summary entry and individual slide.
+Omit historical enrollment counts, old session dates, and old grade/schedule spreadsheet links.
+
+**Why.** One shared group keeps course promotion consistent across weekly announcement decks.
+Refresh the term years each fall and update teaching details when the instructor changes them.
+
+### General announcement ordering
+
+**Decision.** Place general announcements after course-specific information, assessments, and
+assignments, before THE END. Keep registration/upcoming courses and evaluations in that closing
+sequence. Preserve the established weather, icebreaker, then YouTube/podcast opening, followed
+by course logistics. Only spring registration needed moving out of logistics (clarified
+November 3, 2026).
+
+**Why.** The instructor requested that registration and evaluations close the announcements
+instead of interrupting current-course material (November 3, 2026).
+
+### Announcement divider hierarchy
+
+**Decision.** Use exactly three main sections: Informational Slides, Course Content, and General
+Announcements. Title, agenda, Next Week, weather, and icebreaker precede the first section. Informational
+Slides contains YouTube/STVC and contact information. Course Content begins before the textbook
+and contains grading, Quiz/Exam, Quiz, Exam, and Weekly Assignments as subsections. General
+Announcements contains registration, evaluations, and Natural Science Club as subsections.
+Omit the redundant Textbooks divider. Use assessment overview, Exam, Quiz, then Assignments. Keep conditional groups controlled by
+weekly master visibility; Natural Science Club remains hidden.
+
+**Why.** The instructor clarified these three major sections on November 3, 2026 after supplying
+the complete announcement sequence. Preserve all substantive slide content and the established
+pre-section opening.
+
+### Weekly lookahead and conditional reminders
+
+**Decision.** Put a dated Next Week slide after the agenda, using the current course schedule
+for deadlines and class events. Keep course-specific assessment rules. The common assessment
+sequence is overview, Exam, Quiz, then Assignments; the old reverse order is not a defect.
+Textbooks may sit under information or course content; use the current shared Genetics placement.
+
+**Why.** The instructor is improving consistency across previously uneven weekly decks. Missing
+recurring material can be accidental, but seasonal absence is appropriate. Show signup/profile
+assignments through September 21 in fall or February 14 in spring. General Announcements usually
+has one active seasonal topic; preserve graduation/registration/evaluation windows, hide the club,
+and allow relevant one-off campus announcements.
+
+### Dedicated announcement preparation guide
+
+**Decision.** Keep the assembled `lect##a` structure, seasonal display rules, course exceptions,
+and weekly preparation steps in [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md).
+Link it from HG, usage, the conversion checklist, and evergreen READMEs. HG remains the record
+of human-stated preferences; the guide is the practical starting point for announcement work.
+
+**Why.** The growing workflow was scattered across HG and decision history. A focused guide
+is easier to find and apply without reading unrelated teaching guidance. Refresh the guide
+when the instructor changes an announcement preference.

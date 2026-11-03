@@ -1,5 +1,28 @@
 # Lecture 08 conversion review
 
+## November 3 next-week lookahead and seasonal rules
+
+Add a dated Next Week slide at PDF 3, immediately after the agenda, using the current local
+Genetics schedule for class events and work due. Use assessment overview, hidden Exam, Quiz,
+then Weekly Assignments. Keep three main sections and conditional seasonal groups. Shared
+signup/profile reminders now state September 21 in fall and February 14 in spring. Counts:
+46 authored / 30 visible / 16 hidden. Build ODP/PDF outside the sandbox; strict native
+lint passes. Verify lookahead placement, assessment order, visibility, and PDF text. Inspect the
+new lookahead slide. Existing weather caption advisories remain. Evidence is in
+`_temp/announcement_hierarchy/`; earlier counts/page numbers below are historical.
+
+## November 3 three-section hierarchy
+
+Use Informational Slides, Course Content, and General Announcements as the three main sections.
+Title, agenda, weather when present, and icebreaker precede them. Move Course Content before
+the textbook, remove the redundant Textbooks divider, and use subsection dividers for grading,
+Quiz/Exam, Quiz, Exam, Weekly Assignments, registration, evaluations, and club. Quiz precedes
+the hidden Exam group. Preserve evaluation visibility and add the hidden club group at the end.
+Counts: 45 authored / 29 visible / 16 hidden. Build ODP/PDF sequentially outside the sandbox and pass strict
+native lint. Verify the three major sections and exported order; visually inspect representative
+dividers. Existing weather caption advisories remain. Evidence: `_temp/announcement_hierarchy/`.
+Earlier page numbers below are historical.
+
 ## Active LECT08F: BPW worked example
 
 The active deck is `lect08f-three_point_testcross_bpw.djot`: 49 visible slides, 12 static SVG

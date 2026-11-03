@@ -6,13 +6,19 @@ dated page numbers; the historical pre-split maps below are unchanged.
 
 ## Current 09A announcements
 
-The November 1 registration and weather additions bring 09A to 46 authored / 32 visible /
-14 hidden slides. PDF 3 is the saved NWS Chicago weather story, immediately before the
-icebreaker at PDF 4. The registration group belongs to
-`evergreen/spring_registration.djot`: PDF 20 is the divider; PDF 21 is the reminder.
-Compared with the pre-registration map below, pages 1-2 stay in place, pages 3-18 move to 4-19,
-and pages 19-29 move to 22-32. All existing content, order, and hidden status are preserved.
-The pre-registration ownership table below is historical.
+The November 3 update has 55 authored / 39 visible / 16 hidden slides.
+PDF 3 is the dated Next Week lookahead immediately after the agenda. Weather when present
+and the icebreaker complete the opening before the three sections:
+
+| Main section | PDF range | Contents |
+| --- | --- | --- |
+| Informational Slides | 7-13 | YouTube/STVC, Discord, office hours, contact, anonymous messages |
+| Course Content | 14-30 | Textbook, syllabus, preview, grading, Exam/Quiz, Exam, Quiz, Weekly Assignments |
+| General Announcements | 31-38 | Relevant seasonal announcements; evaluations and club remain hidden |
+
+Exam guidance remains hidden; THE END is PDF 39. The shared signup/profile reminders
+state September 21 in fall and February 14 in spring and are hidden in this deck.
+Earlier inventory/page references below are historical.
 
 ## 09B homework interference
 

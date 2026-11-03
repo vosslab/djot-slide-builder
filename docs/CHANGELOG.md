@@ -1,3 +1,83 @@
+## 2026-11-03
+
+### Updates
+
+- Add `docs/ANNOUNCEMENT_DECK_GUIDE.md` as the practical `lect##a` preparation guide: opening,
+  three main sections, flexible textbook placement, assessment order, signup/profile deadlines,
+  seasonal announcements, course-specific exceptions, and weekly checks. Keep HG as the human
+  guidance record and link the guide from HG, usage, conversion checklist, and evergreen READMEs.
+  Check local Markdown links and diff whitespace; no deck content or build changes.
+
+- Add a dated Next Week slide immediately after the agenda in Genetics 08A-10A, using the
+  current syllabus schedule for the following week's class events, quizzes, and homework.
+  Use assessment overview, Exam, Quiz, then Weekly Assignments; preserve hidden Exam groups.
+  Set shared Discord signup/Student Profile deadlines to September 21 in fall and February 14
+  in spring. Record that textbook placement and past Exam/Quiz order are flexible, missing
+  items may be forgotten, and general announcements normally show one relevant seasonal topic.
+  Revise the cross-deck audit to distinguish actual omissions from acceptable seasonal absence.
+  Keep club hidden and preserve the Biotech ending. Rebuild 08A-10A and verify lookahead content,
+  assessment order, and hidden groups; strict native lint passes.
+
+- Clarify the cross-deck audit: missing recurring items are omissions; Biotechnology retains
+  its Veridian Dynamics ending before THE END. Graduating Students is shown only during the
+  first two weeks. Hide the mistakenly visible Genetics 03A graduation slide, preserving its
+  original text and layout, and document the remaining inventory gaps in the Lecture 09 review.
+  Strict lint and ODP/PDF build pass; PDF text confirms graduation is absent. The older 03A
+  build reports capacity failures on authored slides 19/66 and small-text advisories on
+  23/26/40/43; this visibility-only edit leaves those layouts unchanged.
+
+- Apply the instructor's final three-section announcement hierarchy to Genetics 08A-10A:
+  Informational Slides, Course Content, General Announcements; opening title/agenda/weather/
+  icebreaker precede sections. Move Course Content before textbook, remove redundant Textbooks
+  divider, use subsections for grading/assessments/assignments and general groups, move Quiz
+  before Exam, and add a hidden shared Natural Science Club group. Preserve conditional
+  visibility and substantive content. Update guidance, decisions, source maps, and reviews.
+  Strict native lint and all three ODP/PDF builds pass; verify section inventory and exported
+  order, inspect representative dividers. Existing weather-caption advisories remain.
+- Audit all 16 lect##a Djot files (14 unique weekly announcement decks, one duplicate copy,
+  and one older course introduction). Record missing groups, visibility/order gaps, stale
+  seasonal content, and reusable material in the Lecture 09 review. Leave older audited decks
+  unchanged beyond the explicitly documented 08A shared-fragment updates. Inventory evidence:
+  `_temp/announcement_hierarchy/all_decks.json`.
+
+- Restore the established 09A/10A opening: weather, icebreaker, then YouTube/podcast.
+  The instructor clarified that only spring registration needed moving out of course logistics.
+  Keep registration/upcoming courses and evaluations at the end. Correct the standing guidance
+  and current source maps; rebuild both ODP/PDF pairs and verify exported order.
+
+- Apply the instructor's clarified announcement order in 09A/10A: weather, YouTube/podcast,
+  icebreaker, course logistics, then registration/upcoming courses and evaluations before THE END.
+  Restore YouTube/podcast to the opening and retain registration at the end; preserve all slide
+  content and visibility. Correct ordering guidance/source maps, rebuild ODP/PDF, pass strict
+  native lint, and verify the exported opening and closing page order. A concurrent LibreOffice
+  export failed to create the 10A PDF; rebuilding 10A alone succeeded.
+
+- Move general announcement groups to the end of Genetics 09A/10A, after course information,
+  assessments, and assignments: YouTube/podcast, spring registration/upcoming courses, then
+  evaluations before THE END. Preserve the hidden evaluation group and all slide content.
+  Keep weather immediately before the icebreaker. Record the instructor's ordering guidance,
+  update current source maps/reviews, rebuild ODP/PDF, and verify exported page order.
+
+- Expand shared spring registration with a 2027 course summary and individual slides for
+  BCHM 355/455 lecture, BCHM 356/456 lab, tentative BIOL 301 teaching assignment, and summer
+  BIOL 383/483 Biology and Ethics in Film. Apply the instructor's updated lecture/lab details,
+  carry recurring summer information forward, and omit stale enrollment/session details.
+  Keep course codes in the body and shorter titles after visual review found title/body overlap
+  on long course titles. Update guidance, shared-group documentation, source maps, and reviews.
+  Rebuild 09A/10A ODP/PDF and pass strict native lint; inspect all five new 09A slides and compare
+  their text with 10A. Existing weather-caption capacity advisories remain. Evidence is in
+  `_temp/upcoming_courses/`.
+
+- Refresh Genetics 09A with both current NWS Chicago stories, "Rain Timing Today" and
+  "Four Day Outlook", before the icebreaker. Preserve complete captions and November 3
+  citations. Update the manual refresh tool to capture all published tabs and replace the
+  saved group on subsequent refreshes; retain validation before writes and immutable images.
+  Update guidance, workflow documentation, and the 09A source map. Pass eight focused tests
+  and strict native lint; rebuild ODP/PDF and visually inspect PDF 3-4. The deck now has
+  47 authored / 33 visible / 14 hidden slides. Caption capacity advisories remain at
+  11.25 pt (rain timing) and 15.25 pt (outlook); neither caption clips in the rendered PDF.
+  Review images are in `_temp/lect09_weather/`.
+
 ## 2026-11-01
 
 ### Fixes

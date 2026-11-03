@@ -6,9 +6,21 @@ Every original B-F slide maps one-to-one to one converted slide. No source slide
 retaining `@replaceme` is preferred over splitting. Any split requires human approval.
 Import reports: `assets/<source deck stem>/import_report.json`.
 
-A inherits the 38-slide maintained LECT07 2026 Djot inventory; weekly text and episode
-updates do not add, remove, reorder, or change hidden slides. Its 13 hidden authored slides
-are listed below. Its legacy Source notes identify inherited provenance, not the current week.
+## Current 08A announcements
+
+The November 3 update has 46 authored / 30 visible / 16 hidden slides.
+PDF 3 is the dated Next Week lookahead immediately after the agenda. Weather when present
+and the icebreaker complete the opening before the three sections:
+
+| Main section | PDF range | Contents |
+| --- | --- | --- |
+| Informational Slides | 5-11 | YouTube/STVC, Discord, office hours, contact, anonymous messages |
+| Course Content | 12-28 | Textbook, syllabus, preview, grading, Exam/Quiz, Exam, Quiz, Weekly Assignments |
+| General Announcements | 29 | Relevant seasonal announcements; evaluations and club remain hidden |
+
+Exam guidance remains hidden; THE END is PDF 30. The shared signup/profile reminders
+state September 21 in fall and February 14 in spring and are hidden in this deck.
+Earlier inventory/page references below are historical.
 
 ## lect08b-chap8-linked_genes
 

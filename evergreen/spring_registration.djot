@@ -1,4 +1,4 @@
-=== layout: section
+=== layout: subsection
 
 # Spring Registration
 
@@ -16,3 +16,56 @@ Course Finder: https://banner.roosevelt.edu/ssbprod/bwskzenr.P_CourseFinder
 @citation
 
 Registrar: https://www.roosevelt.edu/department/registrars-office
+
+=== layout: one-panel
+
+# Dr. Voss Upcoming Courses
+
+@body
+
+- [Spring 2027]{color=blue}
+  - BCHM 355/455: Biochemistry Lecture
+  - BCHM 356/456: Biochemistry Lab
+  - BIOL 301: [Dr. Voss teaching assignment tentative]{color=red}
+- [Summer 2027]{color=purple}
+  - BIOL 383/483: Biology and Ethics in Film
+
+=== layout: one-panel
+
+# Biochemistry Lecture
+
+@body
+
+- BCHM 355/455, [Spring 2027]{color=blue}
+- Thursday afternoons, 1:30-4:30 p.m.
+- Face-to-face, Schaumburg
+
+=== layout: one-panel
+
+# Biochemistry Lab
+
+@body
+
+- BCHM 356/456, [Spring 2027]{color=blue}
+- Face-to-face, Schaumburg
+- Less structured and more independent study-like
+
+=== layout: one-panel
+
+# BIOL 301: Tentative Spring Course
+
+@body
+
+- [Spring 2027]{color=blue}
+- I will probably teach BIOL 301 as my third spring course.
+- [My teaching assignment is not confirmed yet.]{color=red}
+
+=== layout: one-panel
+
+# Biology and Ethics in Film
+
+@body
+
+- BIOL 383/483, [Summer 2027]{color=purple}
+- Tuesday/Thursday evenings, 6-9 p.m., over Zoom
+- Most of the grade is a weekly writing prompt; getting it done is key.

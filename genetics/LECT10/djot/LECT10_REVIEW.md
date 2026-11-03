@@ -3,6 +3,48 @@
 Current revision and verification appear first. Earlier draft findings and replacement flags
 are preserved below as historical records. Original ODP/PDF files remain unchanged.
 
+## November 3 next-week lookahead and seasonal rules
+
+Add a dated Next Week slide at PDF 3, immediately after the agenda, using the current local
+Genetics schedule for class events and work due. Use assessment overview, hidden Exam, Quiz,
+then Weekly Assignments. Keep three main sections and conditional seasonal groups. Shared
+signup/profile reminders now state September 21 in fall and February 14 in spring. Counts:
+54 authored / 38 visible / 16 hidden. Build ODP/PDF outside the sandbox; strict native
+lint passes. Verify lookahead placement, assessment order, visibility, and PDF text. Inspect the
+new lookahead slide. Existing weather caption advisories remain. Evidence is in
+`_temp/announcement_hierarchy/`; earlier counts/page numbers below are historical.
+
+## November 3 three-section hierarchy
+
+Use Informational Slides, Course Content, and General Announcements as the three main sections.
+Title, agenda, weather when present, and icebreaker precede them. Move Course Content before
+the textbook, remove the redundant Textbooks divider, and use subsection dividers for grading,
+Quiz/Exam, Quiz, Exam, Weekly Assignments, registration, evaluations, and club. Quiz precedes
+the hidden Exam group. Preserve evaluation visibility and add the hidden club group at the end.
+Counts: 53 authored / 37 visible / 16 hidden. Build ODP/PDF sequentially outside the sandbox and pass strict
+native lint. Verify the three major sections and exported order; visually inspect representative
+dividers. Existing weather caption advisories remain. Evidence: `_temp/announcement_hierarchy/`.
+Earlier page numbers below are historical.
+
+## November 3 clarified announcement order
+
+Preserve the original opening; only registration needed moving out of logistics: weather PDF 3, icebreaker PDF 4, YouTube/podcast PDF 5-7,
+then course logistics at PDF 8-29, and registration/upcoming courses at PDF 30-36.
+Evaluations remain hidden before THE END. Content, counts, and visibility are unchanged.
+Rebuild ODP/PDF, pass strict native lint, and verify exported page order from PDF text in
+`_temp/announcement_order/`. Earlier page numbers below are historical.
+
+## November 3 upcoming courses
+
+Expanded the shared registration group with a spring/summer 2027 summary and individual slides
+for BCHM 355/455 lecture, BCHM 356/456 lab, tentative BIOL 301 teaching assignment, and
+BIOL 383/483 Biology and Ethics in Film. Use the instructor's updated lecture/lab details
+and recurring summer format; omit historical enrollment counts, links, and exact session dates.
+The deck has 51 authored / 37 visible / 14 hidden. New course slides are PDF 22-26.
+Rebuilt ODP/PDF outside the sandbox and passed strict native lint. Reviewed the five new slides
+in 09A; the same shared source supplies 10A. Earlier counts and page numbers below are historical.
+Review artifacts are in `_temp/upcoming_courses/`.
+
 ## Weather story reminder
 
 Added the November 1 NWS Chicago Five Day Outlook at PDF 3, before the icebreaker. The existing

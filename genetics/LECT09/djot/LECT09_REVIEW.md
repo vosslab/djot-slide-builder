@@ -1,5 +1,99 @@
 # Lecture 09 Review
 
+## November 3 next-week lookahead and seasonal rules
+
+Add a dated Next Week slide at PDF 3, immediately after the agenda, using the current local
+Genetics schedule for class events and work due. Use assessment overview, hidden Exam, Quiz,
+then Weekly Assignments. Keep three main sections and conditional seasonal groups. Shared
+signup/profile reminders now state September 21 in fall and February 14 in spring. Counts:
+55 authored / 39 visible / 16 hidden. Build ODP/PDF outside the sandbox; strict native
+lint passes. Verify lookahead placement, assessment order, visibility, and PDF text. Inspect the
+new lookahead slide. Existing weather caption advisories remain. Evidence is in
+`_temp/announcement_hierarchy/`; earlier counts/page numbers below are historical.
+
+## Cross-deck announcement inventory
+
+Reviewed all 16 `lect##a` Djot files: 14 unique weekly announcement decks, the duplicated Biotech
+03A source, and the older Genetics 01A course introduction. Missing recurring items are omissions,
+not evidence that the instructor wanted a different template. This is a source/inventory review,
+not a visual rebuild of every older deck. Current Genetics 08A-10A hierarchy changes are covered
+below. Full per-slide inventory: `_temp/announcement_hierarchy/all_decks.json`.
+
+### Gaps in other weekly decks
+
+Missing items often reflect forgotten material, but seasonal absence is appropriate. Lack of
+weather in older snapshots does not warrant adding today's forecast. Textbook placement and
+historical Exam/Quiz order vary; neither is a correctness finding. Use the preferred current
+assessment sequence (overview, Exam, Quiz, Assignments) going forward.
+
+| Decks | Items worth checking or carrying forward |
+| --- | --- |
+| Genetics 03A | Graduation was visible after its first-two-weeks window and is now hidden. Older hidden seasonal text contains stale dates. |
+| Genetics 04A | All icebreakers hidden; Student Profile reminders still visible after September 21. |
+| Genetics 05A | No icebreaker; first-week profile material remains visible after September 21. |
+| Genetics 06A | No icebreaker. |
+| Genetics 07A | No registration group despite October 20 falling in its display window. |
+| Genetics 08A | No registration group despite October 27 falling in its display window. No historical weather snapshot; do not invent one. |
+| Biotech 03A (both copies) | First-week profile reminder correctly visible before September 21; seasonal groups correctly hidden in September. Hierarchy can be aligned when reused. |
+| Biotech 04A | Student Profile remains visible after September 21. Seasonal groups need carrying forward if this deck is used as a later starter. |
+| Biotech 05A/06A | No visible Discord server reminder, only hidden completed signup. Completed signup/profile visibility is appropriate. |
+| Biotech 07A | No icebreaker; October 15 registration remains hidden and course-promotion slides are placeholders. |
+| Biostatistics 08A | No contact-method overview; October 21 registration is absent. Preserve tutorial, graduate, and project-specific content. |
+
+Genetics 01A is an older course introduction, not a weekly template. Missing evaluation slides
+in midsemester decks and missing graduation slides after the first two weeks are not display
+failures. Hidden reusable groups are useful, but do not show every seasonal group every week.
+
+### Retain the course-specific exceptions
+
+- Biotechnology ends with Veridian Dynamics, then THE END. Do not replace or relocate that
+  special ending while completing the common announcement structure.
+- Graduating Students appears only in the first two weeks. It is not missing from later decks.
+  The visible Genetics 03A copy carried a September 2025 deadline; hide it instead of promoting
+  stale dates. Rebuilt 03A and confirmed graduation is absent from PDF text; strict lint passes.
+  That old deck reports existing layout capacity issues on authored slides 19/66 and small-text
+  advisories on 23/26/40/43; those surfaces were not edited. The older Genetics 01A introductory
+  copy remains unchanged.
+- First-week signup/profile assignments remain hidden after their deadlines in current decks.
+- Old Zoom/preassigned-group quiz setup differs from the current in-class/self-formed groups.
+  Reuse only after updating that procedure, not by copying the old slides unchanged.
+- Biotech talking marks, news presentations, and evaluation-linked business-plan time are
+  course-specific; do not substitute Genetics quiz rules or final-exam extra-time wording.
+- Older hidden registration/evaluation slides contain stale years, dates, and course placeholders.
+  Refresh them before showing; use the corrected shared registration course group for upcoming
+  lectures.
+
+## November 3 three-section hierarchy
+
+Use Informational Slides, Course Content, and General Announcements as the three main sections.
+Title, agenda, weather when present, and icebreaker precede them. Move Course Content before
+the textbook, remove the redundant Textbooks divider, and use subsection dividers for grading,
+Quiz/Exam, Quiz, Exam, Weekly Assignments, registration, evaluations, and club. Quiz precedes
+the hidden Exam group. Preserve evaluation visibility and add the hidden club group at the end.
+Counts: 54 authored / 38 visible / 16 hidden. Build ODP/PDF sequentially outside the sandbox and pass strict
+native lint. Verify the three major sections and exported order; visually inspect representative
+dividers. Existing weather caption advisories remain. Evidence: `_temp/announcement_hierarchy/`.
+Earlier page numbers below are historical.
+
+## November 3 clarified announcement order
+
+Preserve the original opening; only registration needed moving out of logistics: weather PDF 3-4, icebreaker PDF 5, YouTube/podcast PDF 6-8,
+then course logistics at PDF 9-30, and registration/upcoming courses at PDF 31-37.
+Evaluations remain hidden before THE END. Content, counts, and visibility are unchanged.
+Rebuild ODP/PDF, pass strict native lint, and verify exported page order from PDF text in
+`_temp/announcement_order/`. Earlier page numbers below are historical.
+
+## November 3 upcoming courses
+
+Expanded the shared registration group with a spring/summer 2027 summary and individual slides
+for BCHM 355/455 lecture, BCHM 356/456 lab, tentative BIOL 301 teaching assignment, and
+BIOL 383/483 Biology and Ethics in Film. Use the instructor's updated lecture/lab details
+and recurring summer format; omit historical enrollment counts, links, and exact session dates.
+The deck has 52 authored / 38 visible / 14 hidden. New course slides are PDF 23-27.
+Rebuilt ODP/PDF outside the sandbox and passed strict native lint. Reviewed the five new slides
+in 09A; the same shared source supplies 10A. Earlier counts and page numbers below are historical.
+Review artifacts are in `_temp/upcoming_courses/`.
+
 ## Weather story reminder
 
 Added the November 1 NWS Chicago Five Day Outlook at PDF 3, immediately before the icebreaker,

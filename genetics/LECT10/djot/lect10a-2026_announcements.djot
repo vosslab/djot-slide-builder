@@ -22,6 +22,20 @@ color-theme: genetics
 - Chromosome Aneuploidy
 - Closing Remarks
 
+=== layout: one-panel
+
+# Next Week: Nov 17, 2026
+
+@body
+
+- Quiz 4 is due before class; group quiz during class.
+- Homework assignments 09 and 10 are due.
+- Movie Night is on the course schedule.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
 === layout: big-image
 
 @image
@@ -62,12 +76,9 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === include: repo:genetics/evergreen/course_information.djot
 
-=== include: repo:evergreen/spring_registration.djot
-hidden: false
+=== layout: subsection
 
-=== layout: section
-
-# Quiz/Exam
+# Exam/Quiz
 
 === layout: one-panel
 
@@ -85,7 +96,7 @@ hidden: false
 
 === include: repo:genetics/evergreen/assessment_policies.djot
 
-=== layout: section
+=== layout: subsection
 hidden: true
 
 # Exam
@@ -122,7 +133,7 @@ hidden: true
 === include: repo:genetics/evergreen/quiz_guidance.djot
 hidden: false
 
-=== layout: section
+=== layout: subsection
 
 # Weekly Assignments
 
@@ -173,7 +184,17 @@ hidden: true
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments, or post to Discord for help
 
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+hidden: false
+
 === include: repo:genetics/evergreen/course_evaluations.djot
+hidden: true
+
+=== include: repo:evergreen/natural_science_club.djot
 hidden: true
 
 === layout: theend

@@ -22,19 +22,46 @@ color-theme: genetics
 - Unordered Tetrad Handout Activity
 - Closing Remarks
 
+=== layout: one-panel
+
+# Next Week: Nov 10, 2026
+
+@body
+
+- In class: chromosome abnormalities, karyotypes, nomenclature, and aneuploidy.
+- No quiz or homework assignments are scheduled to be due next week.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
 === layout: big-image
 
 @image
 
-![Five Day Outlook](assets/weather_story/chicago_9fab097308eaca68887addd2b04b223be5f32de966e4b775fdcd9c5019695b09.png)
+![Rain Timing Today](assets/weather_story/chicago_7549cf07e32d1670da379bdc876b9146b8516d4f152992bea5710eabbd7f39ec.png)
 
 @caption
 
-Intermittent shower chances will linger through at least the middle of the week with the best chances for rain on Tuesday and Wednesday&#46; While temperatures will remain above average to start the week&#44; cooler weather is forecast to arrive next weekend&#46;
+Rain showers will gradually overspread the region into this evening ahead of a slow moving area of low pressure&#46; Refer to the inset maps for the approximate timing of increasing rain shower coverage&#46; Out ahead of the rain and low clouds&#44; expect stronger southerly winds&#44; gusting up to 40 mph&#46; A few isolated embedded thunderstorms may occur within the area of highest rain coverage&#46; Severe weather is not expected&#46;
 
 @citation
 
-NWS Chicago, retrieved Nov 01, 2026: https://www.weather.gov/lot/weatherstory
+NWS Chicago, retrieved Nov 03, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: big-image
+
+@image
+
+![Four Day Outlook](assets/weather_story/chicago_a77b6235efbd93e5c8f5851889a37f9ee9ab199c1a7e21885d1bddb593140146.png)
+
+@caption
+
+Expect windy and warm conditions today&#44; especially with eastward extent&#44; followed by a widespread soaking rain later today into early Wednesday&#46; Wednesday and Thursday will be breezy and a bit cooler each day&#44; and then Friday&#45;Friday night will be much closer to seasonable for early November&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 03, 2026: https://www.weather.gov/lot/weatherstory
 
 === layout: one-panel
 
@@ -62,12 +89,9 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === include: repo:genetics/evergreen/course_information.djot
 
-=== include: repo:evergreen/spring_registration.djot
-hidden: false
+=== layout: subsection
 
-=== layout: section
-
-# Quiz/Exam
+# Exam/Quiz
 
 === layout: one-panel
 
@@ -85,7 +109,7 @@ hidden: false
 
 === include: repo:genetics/evergreen/assessment_policies.djot
 
-=== layout: section
+=== layout: subsection
 hidden: true
 
 # Exam
@@ -122,7 +146,7 @@ hidden: true
 === include: repo:genetics/evergreen/quiz_guidance.djot
 hidden: false
 
-=== layout: section
+=== layout: subsection
 
 # Weekly Assignments
 
@@ -173,7 +197,17 @@ hidden: true
 - Homework has unlimited attempts and only keeps your highest score
 - I encourage students to work together on assignments, or post to Discord for help
 
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+hidden: false
+
 === include: repo:genetics/evergreen/course_evaluations.djot
+hidden: true
+
+=== include: repo:evergreen/natural_science_club.djot
 hidden: true
 
 === layout: theend
