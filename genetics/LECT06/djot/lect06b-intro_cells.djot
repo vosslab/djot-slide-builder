@@ -87,19 +87,19 @@ The cell cycle: interphase and the mitotic phase.
 
 === layout: image-comparison
 
-# G₁ checkpoint
+# G&#x2081; checkpoint
 
 @top-left
 
-![G₁ checkpoint: stop state](assets/lect06b-intro_cells/g1_checkpoint_stop.svg)
+![G&#x2081; checkpoint: stop state](assets/lect06b-intro_cells/g1_checkpoint_stop.svg)
 
 @top-right
 
-![G₁ checkpoint: go-ahead state](assets/lect06b-intro_cells/g1_checkpoint_go.svg)
+![G&#x2081; checkpoint: go-ahead state](assets/lect06b-intro_cells/g1_checkpoint_go.svg)
 
 @bottom-left
 
-Without a go-ahead signal, the cell enters G₀.
+Without a go-ahead signal, the cell enters G&#x2080;.
 
 @bottom-right
 
@@ -226,11 +226,11 @@ Which of the following is the correct sequence of mitotic phases?
 
 @image
 
-![G₂ of interphase and prophase.](assets/lect06b-intro_cells/mitosis_interphase_prophase.svg)
+![G&#x2082; of interphase and prophase.](assets/lect06b-intro_cells/mitosis_interphase_prophase.svg)
 
 @caption
 
-G₂ of interphase and prophase.
+G&#x2082; of interphase and prophase.
 
 === layout: big-image
 

@@ -85,12 +85,12 @@ Prophase I and metaphase I.
 
 @body
 
-- [*Homologous*]{underline=true} – Chromosomes with the same genes in the same order, but possibly different versions of those genes.
-- [*Homologous chromosomes*]{underline=true} – chromosome pairs (one from each parent) that are [similar]{color=red} in length, gene position, and centromere location
-- [*Sister chromatids*]{underline=true} – two [identical]{color=red} copies of a single replicated chromosome, joined at the centromere until they separate.
-- [*Synapsis*]{underline=true} – Side-by-side pairing of homologous chromosomes.
-- [*Crossing over*]{underline=true} – Swapping of matching DNA pieces between non-sister chromatids of homologous chromosomes, creating new gene combinations.
-- [*Chiasmata*]{underline=true} – the physical links between homologous chromosomes at crossover sites, holding them together until they separate
+- [*Homologous*]{underline=true} - Chromosomes with the same genes in the same order, but possibly different versions of those genes.
+- [*Homologous chromosomes*]{underline=true} - chromosome pairs (one from each parent) that are [similar]{color=red} in length, gene position, and centromere location
+- [*Sister chromatids*]{underline=true} - two [identical]{color=red} copies of a single replicated chromosome, joined at the centromere until they separate.
+- [*Synapsis*]{underline=true} - Side-by-side pairing of homologous chromosomes.
+- [*Crossing over*]{underline=true} - Swapping of matching DNA pieces between non-sister chromatids of homologous chromosomes, creating new gene combinations.
+- [*Chiasmata*]{underline=true} - the physical links between homologous chromosomes at crossover sites, holding them together until they separate
 
 
 === layout: section
@@ -183,12 +183,12 @@ Crossovers, chiasmata, and the Holliday junction.
 @body
 
 - Prophase I
-  - 1. Leptotene – chromosomes first become visible
-  - 2. Zygotene – synapsis or homologous chromosome pairing begins
-  - 3. Early Pachytene – pairing is complete
-  - 4. Late Pachytene – sister chromatids become visible
-  - 5. Diplotene – chromosomes become shorter and thicker; chiasmata are prominent
-  - 6. Diakinesis – homologous chromosomes repel; they are held together by chiasmata
+  - 1. Leptotene - chromosomes first become visible
+  - 2. Zygotene - synapsis or homologous chromosome pairing begins
+  - 3. Early Pachytene - pairing is complete
+  - 4. Late Pachytene - sister chromatids become visible
+  - 5. Diplotene - chromosomes become shorter and thicker; chiasmata are prominent
+  - 6. Diakinesis - homologous chromosomes repel; they are held together by chiasmata
 - Metaphase I
 
 
@@ -360,11 +360,11 @@ Meiosis I separates homologs; meiosis II separates sister chromatids.
 
 @body
 
-- [*Haploid*]{underline=true} – a single set of chromosomes
-- [*Diploid*]{underline=true} – two complete sets of chromosomes, [one from each parent]{color=red}
+- [*Haploid*]{underline=true} - a single set of chromosomes
+- [*Diploid*]{underline=true} - two complete sets of chromosomes, [one from each parent]{color=red}
 - Later when we discuss polyploids (week 11 or so), we will distinguish\:
-  - [*monoploid*]{underline=true} – basic set of chromosomes that is multiplied in a polyploid
-  - [*haploid*]{underline=true} – chromosomes present in a gamete, independent of total chromosome number – usually half the chromosome number
+  - [*monoploid*]{underline=true} - basic set of chromosomes that is multiplied in a polyploid
+  - [*haploid*]{underline=true} - chromosomes present in a gamete, independent of total chromosome number - usually half the chromosome number
 - For diploids\:
   - monoploid = haploid
 
@@ -465,7 +465,7 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
   - 2&#x2076;&#x00B3;&#x2070; = 4.5 x 10&#x00B9;&#x2078;&#x2079; combinations
   - That is 4.5 duosexagintillion
     - [https\://www.olsenhome.com/bignumbers/](https://www.olsenhome.com/bignumbers/)
-- Bread wheat is hexaploid and has six sets of its 7 chromosomes
+- Bread wheat is hexaploid and has six sets of its 7 chromosomes
   - 6&#x2077; = 279,936 combinations
 
 

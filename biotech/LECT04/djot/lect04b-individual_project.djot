@@ -105,13 +105,13 @@ hidden: true
 
 @body
 
-- Thurs, Sept 11 – Submit three ideas to Google Forms for review
-- Thurs, Sept 25 – deadline for Dr. Voss to give back comments on original three ideas (5 points)
-- Mon, Sept 29 – ask for feedback on other ideas – DM me on Discord (optional; 0 points)
-- Thurs, Oct 2 – select a project idea (2 points)
-- Thu, Oct 16/23 – write and submit executive summary to Blackboard (25 points)
-- Thu, Oct 16/23 – 4 minute presentation of idea to the class (45 points)
-- Thu, Oct 23 – complete Google Form on Milestones and competition (2 points)
+- Thurs, Sept 11 - Submit three ideas to Google Forms for review
+- Thurs, Sept 25 - deadline for Dr. Voss to give back comments on original three ideas (5 points)
+- Mon, Sept 29 - ask for feedback on other ideas - DM me on Discord (optional; 0 points)
+- Thurs, Oct 2 - select a project idea (2 points)
+- Thu, Oct 16/23 - write and submit executive summary to Blackboard (25 points)
+- Thu, Oct 16/23 - 4 minute presentation of idea to the class (45 points)
+- Thu, Oct 23 - complete Google Form on Milestones and competition (2 points)
   - Maximum of 7 slides!!!
 
 === layout: one-panel
@@ -134,7 +134,7 @@ hidden: true
 
 @body
 
-- Note\: I lied to you…
+- Note\: I lied to you...
   - so people would have their executive summary mostly finished for tonight
 
 === layout: one-panel
@@ -144,13 +144,13 @@ hidden: true
 
 @body
 
-- Thurs, Sept 12 – Submit three ideas to Google Forms for review
-- Fri, Sept 27 – deadline for Dr. Voss to give back comments on original three ideas (5 points)
-- Mon, Sept 30 – ask for feedback on other ideas – DM me on Discord (optional; 0 points)
-- Thurs, Oct 10 – select a project idea (2 points)
-- [Sun, Oct 20 – write and submit executive summary to Blackboard (25 points)]{color=red}
-- [Thu, Oct 24 – complete Google Form on Milestones and competition (2 points)]{color=red}
-- Thu, Oct 17-24 – 4 minute presentation of idea to the class (45 points)
+- Thurs, Sept 12 - Submit three ideas to Google Forms for review
+- Fri, Sept 27 - deadline for Dr. Voss to give back comments on original three ideas (5 points)
+- Mon, Sept 30 - ask for feedback on other ideas - DM me on Discord (optional; 0 points)
+- Thurs, Oct 10 - select a project idea (2 points)
+- [Sun, Oct 20 - write and submit executive summary to Blackboard (25 points)]{color=red}
+- [Thu, Oct 24 - complete Google Form on Milestones and competition (2 points)]{color=red}
+- Thu, Oct 17-24 - 4 minute presentation of idea to the class (45 points)
   - Maximum of 7 slides!!!
 
 === layout: section
@@ -202,7 +202,7 @@ hidden: true
 === layout: two-panels
 hidden: true
 
-# Three Ideas → One Good Idea
+# Three Ideas -> One Good Idea
 
 @left
 
@@ -220,7 +220,7 @@ hidden: true
 === layout: one-panel
 hidden: true
 
-# Three Ideas → One Good Idea
+# Three Ideas -> One Good Idea
 
 @body
 
@@ -377,7 +377,7 @@ hidden: true
   - [GOOD\:]{color=green} NIH-style SansSerif font (Arial, Calibri, Helvetica, Tahoma, Trebuchet MS, Verdana)
   - [GOOD\: ]{color=green}Business world Serif font (Baskerville, Book Antiqua, Bookman, Cambria, Garamond, Geneva, Georgia, Goudy, Times)
   - [BAD\:]{color=red} Monospace fonts (Courier, Menlo, Monaco, Roboto)
-  - [BAD\:]{color=red}[ ]{color=green}Do not use Comic Sans, Papyrus, Impact, Dyslexic, or other casual script fonts – they are unprofessional
+  - [BAD\:]{color=red}[ ]{color=green}Do not use Comic Sans, Papyrus, Impact, Dyslexic, or other casual script fonts - they are unprofessional
 - Full justification of text
 
 === layout: one-panel
@@ -455,7 +455,7 @@ hidden: true
 
 @bottom
 
-- only short answers are needed – link under Assignments on Blackboard
+- only short answers are needed - link under Assignments on Blackboard
 
 === layout: section
 hidden: true

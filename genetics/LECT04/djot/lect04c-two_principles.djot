@@ -208,7 +208,7 @@ hidden: true
 - Morphological phenotype
   - Morphology is shape and structure.
 - Molecular phenotyping involves determining phenotype at the molecular level.
-  - Useful to determine genotype 
+  - Useful to determine genotype
 
 === layout: stacked-panels
 
@@ -466,7 +466,7 @@ hidden: true
   - [AA]{color=red}
 - Homozygous Recessive - the two identical copies of the recessive allele
   - [aa]{color=blue}
-- Heterozygous – one of each allele, one dominant and one recessive
+- Heterozygous - one of each allele, one dominant and one recessive
   - [A]{color=red}[a]{color=blue}
 
 @right
@@ -503,7 +503,7 @@ hidden: true
   - [AA ]{color=red}shows[ dominant phenotype]{color=red}
 - Homozygous Recessive - the two identical copies of the recessive allele
   - [aa ]{color=blue}shows[ ]{color=red}[recessive phenotype]{color=blue}
-- Heterozygous – one of each allele, one dominant and one recessive
+- Heterozygous - one of each allele, one dominant and one recessive
   - [A]{color=red}[a ]{color=blue}shows[ dominant phenotype]{color=red}
 
 @right
@@ -540,7 +540,7 @@ hidden: true
   - [AA ]{color=red}shows[ dominant phenotype]{color=red}
 - Homozygous Recessive - the two identical copies of the recessive allele
   - [aa ]{color=blue}shows[ ]{color=red}[recessive phenotype]{color=blue}
-- Heterozygous – one of each allele, one dominant and one recessive
+- Heterozygous - one of each allele, one dominant and one recessive
   - [A]{color=red}[a ]{color=blue}shows[ dominant phenotype]{color=red}
 
 @right

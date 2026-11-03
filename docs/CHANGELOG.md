@@ -2,6 +2,17 @@
 
 ### Updates
 
+- Investigate the Dependabot xmldom alerts: remote main still locks MathJax 4.0.0 and xmldom
+  0.9.8, while the existing uncommitted lockfile resolves MathJax 4.1.3 and patched xmldom
+  0.9.12. Git history identifies commit `5865733` on November 1 reverting the previously
+  corrected lockfile (MathJax 4.1.3/xmldom 0.9.12 back to 4.0.0/0.9.8) during unrelated
+  announcement work; the manifest remained correct. No repository script writes the old range.
+  Local npm audit reports zero vulnerabilities. Require `@mathjax/src >=4.1.3` in
+  agent guidance, installation policy, and HG; add one focused manifest/lockfile regression
+  test because agents repeatedly restored `^4.0.0`. Validate math-layout tests and real local
+  equation rendering: four focused tests and real fraction/Greek/chemistry renders pass.
+  The corrected lockfile must reach GitHub before remote alerts can clear.
+
 - Add `docs/ANNOUNCEMENT_DECK_GUIDE.md` as the practical `lect##a` preparation guide: opening,
   three main sections, flexible textbook placement, assessment order, signup/profile deadlines,
   seasonal announcements, course-specific exceptions, and weekly checks. Keep HG as the human
@@ -78,6 +89,9 @@
   11.25 pt (rain timing) and 15.25 pt (outlook); neither caption clips in the rendered PDF.
   Review images are in `_temp/lect09_weather/`.
 
+### Fixes and Maintenance
+
+- Synchronized shared style guides, tests, and repository support files from the starter template.
 ## 2026-11-01
 
 ### Fixes

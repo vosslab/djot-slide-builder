@@ -44,7 +44,7 @@ color-theme: genetics
 
 === layout: section
 
-# What are the differences between molecular biology, biochemistry, cell biology, and genetics?
+# What are the differences between molecular biology, biochemistry, cell biology, and genetics?
 
 === layout: one-panel
 
@@ -67,7 +67,7 @@ color-theme: genetics
 
 @left
 
-- Each organism has its own "Genetic Blueprint" that makes it different from others.
+- Each organism has its own "Genetic Blueprint" that makes it different from others.
 - The genetic information is stored in the chromosomes located in the nucleus.
 - The genetic information is stored as discrete instructions called "genes".
 
@@ -179,8 +179,8 @@ Native reconstruction needed: 68 positioned diagram labels.
 @body
 
 - Blocks in metabolic pathways can cause disease
-  - Alkaptonuria – excretion of homogentisic acid
-  - Phenylketonuria – phenylalanine accumulation
+  - Alkaptonuria - excretion of homogentisic acid
+  - Phenylketonuria - phenylalanine accumulation
 
 === layout: stacked-panels
 
@@ -227,7 +227,7 @@ Native reconstruction needed: 68 positioned diagram labels.
 
 - George Beadle and Edward Tatum exposed bread mold to X-rays, creating mutants that were unable to survive on minimal medium as a result of inability to synthesize certain molecules
   - Using crosses, they identified three classes of arginine-deficient mutants, each lacking a different enzyme necessary for synthesizing arginine
-- They developed a one gene–one enzyme hypothesis, which states that each gene dictates production of a specific enzyme
+- They developed a one gene-one enzyme hypothesis, which states that each gene dictates production of a specific enzyme
 
 === layout: stacked-panels
 
@@ -424,7 +424,7 @@ Answer\: C
 
 - Enzyme C
 
-- A  →  B  →  C  →  D
+- A  ->  B  ->  C  ->  D
 
 Molecule D is the only molecule required for growth.
 
@@ -448,7 +448,7 @@ Answer\: D
 @body
 
 - Many proteins are composed of several polypeptides, each of which has its own gene. Beadle and Tatum's hypothesis is now\:
-  - one gene–one polypeptide
+  - one gene-one polypeptide
 - Note that it is common to refer to gene products as proteins rather than polypeptides
 
 === layout: multiple-choice

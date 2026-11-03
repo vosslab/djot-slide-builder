@@ -72,3 +72,15 @@ repository processing, but it does not sandbox LibreOffice or make an untrusted 
 to open.
 
 Continue with [USAGE.md](USAGE.md) for import, source validation, and native export commands.
+
+## MathJax dependency policy
+
+The instructor requires `"@mathjax/src": ">=4.1.3"` in `package.json` and the root dependency
+entry of `package-lock.json`. Do not replace it with `^4.0.0`, an exact pin, or an upper bound.
+Regenerate the lockfile when dependencies change and commit it with the manifest change.
+The lockfile records exact resolved packages normally; that does not change the open-ended
+manifest requirement.
+
+`tests/test_mathjax_dependency.py` protects this requirement because agents repeatedly restored
+the older range. If it fails, restore the required manifest range, regenerate the lockfile,
+and rerun the test plus the npm security audit. Do not lower the floor to make the test pass.

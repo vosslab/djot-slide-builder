@@ -536,8 +536,8 @@ def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> N
 	"""Keep numeric columns readable and totals distinct without changing cell text."""
 	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
 		"| Class | O-E | Value |\n| --- | --- | --- |\n"
-		"| A-B- | -1 | 0.033 |\n| C | −5 | 0.111 |\n| D | &#8211;15 | 1.000 |\n"
-		"| E | −150 | 10.00 |\n| Total | 0 | 0.178 |\n")
+		"| A-B- | -1 | 0.033 |\n| C | -5 | 0.111 |\n| D | &#8211;15 | 1.000 |\n"
+		"| E | -150 | 10.00 |\n| Total | 0 | 0.178 |\n")
 	table = next(item.content for item in result.plan.slides[0].objects
 		if isinstance(item.content, slide_lib.layout_content.TableContent))
 	for row in table.header_rows:
@@ -562,9 +562,9 @@ def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> N
 def test_cell_background_does_not_change_table_geometry_or_alignment(tmp_path: pathlib.Path) -> None:
 	"""A shaded reveal is a style change, retaining the exact measured numeric table."""
 	header = "=== layout: one-panel\n\n@body\n\n{table-group=shading}\n"
-	plain = "| Class | Count |\n| --- | --- |\n| R | −15 |\n| Total | 350 |\n"
-	shaded = plain.replace("| R | −15 |",
-		"| [R]{background-color=#F6E8FB} | [−15]{background-color=#F6E8FB} |")
+	plain = "| Class | Count |\n| --- | --- |\n| R | -15 |\n| Total | 350 |\n"
+	shaded = plain.replace("| R | -15 |",
+		"| [R]{background-color=#F6E8FB} | [-15]{background-color=#F6E8FB} |")
 	result = compile_source(tmp_path, header + plain + "\n" + header + shaded)
 	tables = [next(item for item in slide.objects
 		if isinstance(item.content, slide_lib.layout_content.TableContent))

@@ -99,11 +99,11 @@ color-theme: genetics
 
 @body
 
-- Nucleobase – Purine or Pyrimidine
-- Nucleoside – Base + Sugar
-- Nucleotide – Base + Sugar + Phosphate
-- Polynucleotide – More than one nucleotides in a chain
-- Nucleic acids – All of the above
+- Nucleobase - Purine or Pyrimidine
+- Nucleoside - Base + Sugar
+- Nucleotide - Base + Sugar + Phosphate
+- Polynucleotide - More than one nucleotides in a chain
+- Nucleic acids - All of the above
 
 === layout: one-panel
 
@@ -376,9 +376,9 @@ Answer\: A
 
 - A sample of dsDNA contains 14% Adenine, what percentages are the other nucleobases?
 - \[A\] = \[T\] = 14%
-- 100 – 14 – 14 = 72%
+- 100 - 14 - 14 = 72%
 - \[G\] + \[C\] = 72%; \[G\] = \[C\]
-- 2 \[G\] = 72%; → \[G\] = 36%
+- 2 \[G\] = 72%; -> \[G\] = 36%
 - \[G\] = \[C\] = 36%
 
 === layout: one-panel

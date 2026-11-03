@@ -178,8 +178,8 @@ applications; the old closing duplicate is superseded. No unique teaching topic 
 | 21 | Untitled diagram | Repaired | 09E: 10 | Restore metaphase, daughter-cell, and PD/NPD labels in their original positions. |
 | 22 | Untitled diagram | Moved | 09E: 32 | Teach both unlinked-TT mechanisms later in the deck, with homework asci and no centromere-distance extension. |
 | 23 | Two Genes on the Same Chromosomes | Merged | 09E: 13 | The linked-gene section is taught in the focused deck. |
-| 24 | NCO → PD | Moved | 09E: 13 | Retain the existing teaching content. |
-| 25 | SCO → TT | Moved | 09E: 14 | Retain the existing teaching content. |
+| 24 | NCO -> PD | Moved | 09E: 13 | Retain the existing teaching content. |
+| 25 | SCO -> TT | Moved | 09E: 14 | Retain the existing teaching content. |
 | 26 | Untitled diagram | Moved | 09E: 15 | Retain the existing teaching content. |
 | 27 | Untitled diagram | Moved | 09E: 16 | Retain the existing teaching content. |
 | 28 | Untitled diagram | Repaired | 09E: 18 | Consolidate repeated six-case diagrams; retain the question/answer, chromatid participation, and rare-higher-crossover assumption. |

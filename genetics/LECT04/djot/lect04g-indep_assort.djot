@@ -175,11 +175,11 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 - Hybrid crosses\:
   - A cross between two individuals that are both heterozygous for [one character]{color=red} is called a [monohybrid]{color=red} cross
-    - [Aa × Aa]{color=red}
+    - [Aa x Aa]{color=red}
   - A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
-    - AaBb × AaBb
+    - AaBb x AaBb
   - A cross between two individuals that are both heterozygous for [three characters]{color=green} is called a [trihybrid ]{color=green}cross
-    - [AaBbCc × AaBbCc]{color=green}
+    - [AaBbCc x AaBbCc]{color=green}
 
 === layout: one-panel
 
@@ -237,7 +237,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 === layout: section
 
-# One of the hardest things for many students when setting up a Punnett square is figuring out the gametes…
+# One of the hardest things for many students when setting up a Punnett square is figuring out the gametes...
 
 === layout: one-panel
 
@@ -256,7 +256,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 - What gametes are produced by individuals with the following genotype?
 - AaBb
-  - Aa, AB, Bb, ab – is this correct?
+  - Aa, AB, Bb, ab - is this correct?
 
 - [Aa]{color=red}Bb
 
@@ -276,7 +276,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 - What gametes are produced by individuals with the following genotype?
 - AaBb
-  - [Aa, AB, Bb, ab – is this correct? NO!]{color=red}
+  - [Aa, AB, Bb, ab - is this correct? NO!]{color=red}
 - AB, Ab, aB, ab
 
 - [Aa]{color=red}Bb
@@ -346,7 +346,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @body
 
-- AaBb × AaBb
+- AaBb x AaBb
 - Setup the gametes...
 
 === layout: stacked-panels
@@ -354,7 +354,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @top
 
-- AaBb × AaBb
+- AaBb x AaBb
 
 @bottom
 
@@ -365,7 +365,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @body
 
-- AaBb × AaBb
+- AaBb x AaBb
 
 - AB		Ab		aB		  ab
 

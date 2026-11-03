@@ -267,7 +267,7 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 			if header:
 				properties = dataclasses.replace(properties,
 					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER)
-			if not header and re.fullmatch(r"[+−–-]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?", labels[index].strip()):
+			if not header and re.fullmatch(r"[+---]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?", labels[index].strip()):
 				properties = dataclasses.replace(properties,
 					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.END)
 			if cell.text_alignment is not None:

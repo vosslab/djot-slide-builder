@@ -44,7 +44,7 @@
   instead of `&#8217;`; normalize literal curly quotes and their numeric or named entities.
 
 - Treat `@notes` as presentation note cards for lecturing: speaking prompts, explanations,
-  and reminders useful while teaching. 
+  and reminders useful while teaching.
 - Keep this administrative material out of Djot files, including comments; use separate
   reports or slide maps only when traceability is needed.
 
@@ -723,7 +723,7 @@ instructor's stated preferences; the guide assembles them into the current weekl
 - Omit redundant "(continued)" from LECT07D titles; it causes unnecessary wrapping.
   Retitling these slides for clarity is authorized.
 
-- Use prominent mathematical minus signs (−) for negative values and right-align them
+- Use prominent mathematical minus signs (-) for negative values and right-align them
   with positive numbers. Render chi-square with the Greek
   lowercase chi and superscript two, never a Latin X or a legacy Symbol-font character.
 
@@ -806,3 +806,8 @@ instructor's stated preferences; the guide assembles them into the current weekl
   and appeal while reducing their footprint.
 - Judge by whether a passerby would stop, look, and try a game; layout organization alone
   does not meet the brief. Inspect Letter-size rendering and verify QR functionality.
+
+## MathJax minimum version
+
+- Require `"@mathjax/src": ">=4.1.3"`. Agents keep putting back `"@mathjax/src": "^4.0.0"`;
+  do not restore that older range (November 3, 2026).

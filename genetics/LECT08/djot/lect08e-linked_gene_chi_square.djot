@@ -4,7 +4,7 @@ color-theme: genetics
 
 # Lecture 08E
 
-## Chi Square (χ^2^) for Linked Genes
+## Chi Square (&chi;^2^) for Linked Genes
 
 ## Chapter 8
 
@@ -43,7 +43,7 @@ color-theme: genetics
 
 === layout: one-panel
 
-# *Chi-Square (χ^2^) Test*
+# *Chi-Square (&chi;^2^) Test*
 
 @body
 
@@ -153,8 +153,8 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 {table-group="cosmos-chi-square"}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
-| (A&#8722;B&#8722;) | 225 | 220 | −5 |  |  |
-| (aaB&#8722;) | 225 | 210 | −15 |  |  |
+| (A&#8722;B&#8722;) | 225 | 220 | -5 |  |  |
+| (aaB&#8722;) | 225 | 210 | -15 |  |  |
 | (A&#8722;bb) | 225 | 231 | 6 |  |  |
 | (aabb) | 225 | 239 | 14 | |  |
 |  |  |  |  | $\chi^2 = \mathrm{Sum}$ |  |
@@ -168,8 +168,8 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 {table-group="cosmos-chi-square"}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
-| (A&#8722;B&#8722;) | 225 | 220 | −5 | 25 |  |
-| (aaB&#8722;) | 225 | 210 | −15 | 225 |  |
+| (A&#8722;B&#8722;) | 225 | 220 | -5 | 25 |  |
+| (aaB&#8722;) | 225 | 210 | -15 | 225 |  |
 | (A&#8722;bb) | 225 | 231 | 6 | 36 |  |
 | (aabb) | 225 | 239 | 14 | 196 |  |
 |  |  |  |  | $\chi^2 = \mathrm{Sum}$ |  |
@@ -183,8 +183,8 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 {table-group="cosmos-chi-square"}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
-| (A&#8722;B&#8722;) | 225 | 220 | −5 | 25 | 0.111 |
-| (aaB&#8722;) | 225 | 210 | −15 | 225 | 1.000 |
+| (A&#8722;B&#8722;) | 225 | 220 | -5 | 25 | 0.111 |
+| (aaB&#8722;) | 225 | 210 | -15 | 225 | 1.000 |
 | (A&#8722;bb) | 225 | 231 | 6 | 36 | 0.160 |
 | (aabb) | 225 | 239 | 14 | 196 | 0.871 |
 |  |  |  |  | $\chi^2 = \mathrm{Sum}$ |  |
@@ -198,8 +198,8 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 {table-group="cosmos-chi-square"}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
-| (A&#8722;B&#8722;) | 225 | 220 | −5 | 25 | 0.111 |
-| (aaB&#8722;) | 225 | 210 | −15 | 225 | 1.000 |
+| (A&#8722;B&#8722;) | 225 | 220 | -5 | 25 | 0.111 |
+| (aaB&#8722;) | 225 | 210 | -15 | 225 | 1.000 |
 | (A&#8722;bb) | 225 | 231 | 6 | 36 | 0.160 |
 | (aabb) | 225 | 239 | 14 | 196 | 0.871 |
 |  |  |  |  | $\chi^2 = \mathrm{Sum}$ | 2.142 |
@@ -207,14 +207,14 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 === layout: one-panel
 
-# *Chi-Square (χ^2^) Test*
+# *Chi-Square (&chi;^2^) Test*
 
 @body
 
-- The χ^2^ value means nothing on its own.
+- The &chi;^2^ value means nothing on its own.
 - It is used to find the probability that the observed data set could have resulted from random fluctuations.
   - A low probability suggests that the observed data are not consistent with the hypothesis and the thus the hypothesis should be rejected.
-- A standard cutoff point used by biologists is a probability of 0.05 (5%). If the probability corresponding to the χ^2^ value is 0.05 or less, the differences between observed and expected values are considered statistically significant and the hypothesis ([that the genes are unlinked]{color=red}) should be rejected.
+- A standard cutoff point used by biologists is a probability of 0.05 (5%). If the probability corresponding to the &chi;^2^ value is 0.05 or less, the differences between observed and expected values are considered statistically significant and the hypothesis ([that the genes are unlinked]{color=red}) should be rejected.
   - Likewise if the probability is above 0.05, the results are not statistically significant; the observed data are consistent with the hypothesis.
 
 === layout: one-panel
@@ -288,8 +288,8 @@ Under unlinked conditions we would expect the numbers to come closer to the 2250
 {table-group="cosmos-chi-square"}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
-| (A&#8722;B&#8722;) | 2250 | 2200 | −50 | 2,500 | 1.11 |
-| (aaB&#8722;) | 2250 | 2100 | −150 | 22,500 | 10.00 |
+| (A&#8722;B&#8722;) | 2250 | 2200 | -50 | 2,500 | 1.11 |
+| (aaB&#8722;) | 2250 | 2100 | -150 | 22,500 | 10.00 |
 | (A&#8722;bb) | 2250 | 2310 | 60 | 3,600 | 1.60 |
 | (aabb) | 2250 | 2390 | 140 | 19,600 | 8.71 |
 |  |  |  |  | $\chi^2 = \mathrm{Sum}$ | 21.42 |

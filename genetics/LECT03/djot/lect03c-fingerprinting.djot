@@ -103,7 +103,7 @@ color-theme: genetics
 @right
 
 - A genetic polymorphism in which the alleles in a population differ in the number of copies of a DNA sequence
-  - (typically 2–60 bp) that is repeated in tandem along the chromosome.
+  - (typically 2-60 bp) that is repeated in tandem along the chromosome.
 
 === layout: one-panel
 
@@ -113,7 +113,7 @@ color-theme: genetics
 
 - STR
   - Also called microsatellites
-  - tract of repetitive DNA in which certain DNA motifs (2–13 base pairs in length) are repeated, typically 5–50 times.
+  - tract of repetitive DNA in which certain DNA motifs (2-13 base pairs in length) are repeated, typically 5-50 times.
   - abundant in the human genome
   - often highly polymorphic in human populations
 - VNTR

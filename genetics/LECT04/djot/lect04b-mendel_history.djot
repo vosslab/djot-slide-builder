@@ -95,7 +95,7 @@ color-theme: genetics
 - When Gregor returned to the abbey after finishing the university, he taught science at a nearby school.
   - Though he liked teaching, Gregor wanted to make a great discovery himself.
 - He was fascinated by one of the hottest topics of the time\:
-  - "How do mothers and fathers – animals and plants – pass down traits to their children?"
+  - "How do mothers and fathers - animals and plants - pass down traits to their children?"
 
 @right
 
@@ -238,8 +238,8 @@ color-theme: genetics
 
 @body
 
-- Character – an observable feature of a particular group of organisms, such as [f]{color=red}[l]{color=orange}ower [c]{color=green}[o]{color=blue}[l]{color=purple}or
-- Trait – each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
+- Character - an observable feature of a particular group of organisms, such as [f]{color=red}[l]{color=orange}ower [c]{color=green}[o]{color=blue}[l]{color=purple}or
+- Trait - each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
 - Each character is associated with multiple traits.
 
 === layout: two-panels
@@ -292,7 +292,7 @@ color-theme: genetics
 
 @right
 
-- When Gregor mated true-breeding yellow and true-breeding green plants – it produced all yellow.
+- When Gregor mated true-breeding yellow and true-breeding green plants - it produced all yellow.
 - For all seven characters, all of the hybrid children looked like just one of the parents.
   - Were the traits lost forever?
   - What will their grandchildren and great-grandchildren look like?
@@ -382,8 +382,8 @@ color-theme: genetics
 
 @body
 
-- Character – an observable feature of a particular group of organisms, such as [f]{color=red}[l]{color=orange}ower [c]{color=green}[o]{color=blue}[l]{color=purple}or
-- Trait – each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
+- Character - an observable feature of a particular group of organisms, such as [f]{color=red}[l]{color=orange}ower [c]{color=green}[o]{color=blue}[l]{color=purple}or
+- Trait - each variant for a character, such as [purple]{color=purple} or [white]{color=gray} color for flowers
 - Each character is associated with multiple traits.
 
 === layout: theend

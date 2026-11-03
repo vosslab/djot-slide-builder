@@ -14,12 +14,12 @@ color-theme: biotechnology
 
 @body
 
-- `Sep 17` – Assignments 0 and 1; three project ideas
-- `Sep 24` – Assignment 2 and Student Profile
-- `Oct 01` – instructor feedback on project ideas; Assignment 3
-- `Oct 08` – One Great Idea form
-- `Oct 22` – Shark Tank company pitches; slides and individual executive summary
-- `Oct 29` – Milestones and competition form
+- `Sep 17` - Assignments 0 and 1; three project ideas
+- `Sep 24` - Assignment 2 and Student Profile
+- `Oct 01` - instructor feedback on project ideas; Assignment 3
+- `Oct 08` - One Great Idea form
+- `Oct 22` - Shark Tank company pitches; slides and individual executive summary
+- `Oct 29` - Milestones and competition form
 
 === layout: one-panel
 
@@ -39,7 +39,7 @@ hidden: true
 
 @body
 
-- Note\: I lied to you…
+- Note\: I lied to you...
   - so people would have their executive summary mostly finished for tonight
 
 === layout: one-panel
@@ -49,12 +49,12 @@ hidden: true
 
 @body
 
-- `Sep 17` – Assignments 0 and 1; three project ideas
-- `Sep 24` – Assignment 2 and Student Profile
-- `Oct 01` – instructor feedback on project ideas; Assignment 3
-- `Oct 08` – One Great Idea form
-- `Oct 22` – Shark Tank company pitches; slides and individual executive summary
-- `Oct 29` – Milestones and competition form
+- `Sep 17` - Assignments 0 and 1; three project ideas
+- `Sep 24` - Assignment 2 and Student Profile
+- `Oct 01` - instructor feedback on project ideas; Assignment 3
+- `Oct 08` - One Great Idea form
+- `Oct 22` - Shark Tank company pitches; slides and individual executive summary
+- `Oct 29` - Milestones and competition form
 
 === layout: section
 
@@ -105,7 +105,7 @@ hidden: true
 
 === layout: two-panels
 
-# Three Ideas → One Good Idea
+# Three Ideas -> One Good Idea
 
 @left
 
@@ -122,7 +122,7 @@ hidden: true
 
 === layout: one-panel
 
-# Three Ideas → One Good Idea
+# Three Ideas -> One Good Idea
 
 @body
 
@@ -277,7 +277,7 @@ hidden: true
   - [GOOD\:]{color=green} NIH-style SansSerif font (Arial, Calibri, Helvetica, Tahoma, Trebuchet MS, Verdana)
   - [GOOD\: ]{color=green}Business world Serif font (Baskerville, Book Antiqua, Bookman, Cambria, Garamond, Geneva, Georgia, Goudy, Times)
   - [BAD\:]{color=red} Monospace fonts (Courier, Menlo, Monaco, Roboto)
-  - [BAD\:]{color=red}[ ]{color=green}Do not use Comic Sans, Papyrus, Impact, Dyslexic, or other casual script fonts – they are unprofessional
+  - [BAD\:]{color=red}[ ]{color=green}Do not use Comic Sans, Papyrus, Impact, Dyslexic, or other casual script fonts - they are unprofessional
 - Full justification of text
 
 === layout: one-panel
@@ -354,7 +354,7 @@ hidden: true
 
 @bottom
 
-- only short answers are needed – link under Assignments on Blackboard
+- only short answers are needed - link under Assignments on Blackboard
 
 === layout: section
 
