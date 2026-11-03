@@ -22,9 +22,8 @@ site/
 
 # -------------------- LOCAL REPOSITORY RULES --------------------
 # ADD YOUR CUSTOM IGNORES BELOW
-/course_links.local.yaml
 # Propagation preserves this section.
-# ------------------ END LOCAL REPOSITORY RULES ------------------
+/course_links.local.yaml
 *.svg
 # Reviewed image-free drawings use a checked filename suffix.
 !*.drawn.svg
