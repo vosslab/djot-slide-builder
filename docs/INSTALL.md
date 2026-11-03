@@ -84,3 +84,8 @@ manifest requirement.
 `tests/test_mathjax_dependency.py` protects this requirement because agents repeatedly restored
 the older range. If it fails, restore the required manifest range, regenerate the lockfile,
 and rerun the test plus the npm security audit. Do not lower the floor to make the test pass.
+
+The root manifest also overrides `@xmldom/xmldom` with `>=0.9.12` across the dependency tree.
+This excludes vulnerable older releases even when an upstream dependency declares `^0.9.10`.
+Keep this security minimum when regenerating the lockfile; upstream metadata may still display
+its original range, but npm resolves it under the root override.

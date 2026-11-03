@@ -811,3 +811,6 @@ instructor's stated preferences; the guide assembles them into the current weekl
 
 - Require `"@mathjax/src": ">=4.1.3"`. Agents keep putting back `"@mathjax/src": "^4.0.0"`;
   do not restore that older range (November 3, 2026).
+
+- Do not allow vulnerable xmldom 0.9.10: require `@xmldom/xmldom >=0.9.12` across the
+  dependency tree, not only in the current resolved lockfile (November 3, 2026).

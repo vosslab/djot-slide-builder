@@ -2,6 +2,11 @@
 
 ### Updates
 
+- Require `@xmldom/xmldom >=0.9.12` through a root npm override so vulnerable versions are
+  excluded from future resolution, not merely absent from today's lockfile. Preserve upstream
+  metadata, regenerate the lockfile, and document/test the security minimum. Verify npm audit,
+  resolved dependency tree, focused tests, and real MathJax rendering.
+
 - Investigate the Dependabot xmldom alerts: remote main still locks MathJax 4.0.0 and xmldom
   0.9.8, while the existing uncommitted lockfile resolves MathJax 4.1.3 and patched xmldom
   0.9.12. Git history identifies commit `5865733` on November 1 reverting the previously
