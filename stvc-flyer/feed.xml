@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?playlist_id=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48"/>
+ <id>yt:playlist:PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48</id>
+ <yt:playlistId>PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48</yt:playlistId>
+ <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+ <title>Stump the Vibe Coder</title>
+ <author>
+  <name>Neil Voss</name>
+  <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+ </author>
+ <published>2026-02-09T18:57:33+00:00</published>
+ <entry>
+  <id>yt:video:udfGzdb9F1I</id>
+  <yt:videoId>udfGzdb9F1I</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 38: Markdown to Tutorial — Less Formatting | Stump the Vibe Coder Special Episode 38</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=udfGzdb9F1I"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-10-23T08:10:47+00:00</published>
+  <updated>2026-10-23T21:35:50+00:00</updated>
+  <media:group>
+   <media:title>StVC 38: Markdown to Tutorial — Less Formatting | Stump the Vibe Coder Special Episode 38</media:title>
+   <media:content url="https://www.youtube.com/v/udfGzdb9F1I?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/udfGzdb9F1I/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Special Episode 38
+
+Madeleine and I plan a Markdown-to-DOCX tool for my biostatistics tutorials. I would rather write the lesson once than fix the same spreadsheet reference in four places.
+
+Source code: https://github.com/vosslab/markdown-to-tutorial
+
+I start with the formatting problems in our existing tutorials: spreadsheet formulas, cell references, menu choices, and numbered parts and steps. We look at my exam-formatting and slide-building tools, create the new repository, and work through the requirements with Codex. The plan settles on one Markdown file containing readable instructions and worksheet tables, with DOCX, XLSX, and PDF outputs. Google Docs and Google Sheets are the intended classroom destinations, not something we verify on this stream.
+
+Most of this episode is planning, not a finished-software demo. We revise the authoring format, get a written specification and implementation plan, and send Codex off to build the converter and adapt the existing tutorials. It is still working when we sign off. The repository linked above includes work completed after the recording.
+
+Hosts: Neil Voss and Madeleine.
+
+I'm Dr. Neil Voss, a biology professor at Roosevelt University. On Stump the Vibe Coder, I use AI coding assistants to work through science and teaching projects live. You do not need programming experience to follow along.
+
+What part of preparing a class tutorial would you like to stop formatting by hand? Leave me a challenge in the comments.
+
+Chapters
+00:00 A special episode with Madeleine
+01:05 Why write tutorials in Markdown?
+04:52 Exam formatting and slide-building examples
+08:25 GitHub and creating the tutorial repository
+12:44 Trimming the template and setting coding rules
+15:52 Choosing Codex and preparing source tutorials
+20:57 What is inside a DOCX file?
+22:39 Defining the converter's requirements
+29:17 Choosing outputs for Google Docs and Sheets
+35:12 Making the authoring format easier to edit
+42:15 One Markdown file, three outputs
+44:38 Learning to code and a possible independent study
+47:02 A neural-network detour while Codex plans
+51:20 Reviewing the specification and starting the build
+56:39 Wrap-up while Codex keeps working
+
+#VibeCoding #Biostatistics #Markdown</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="54"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Iyz6WX2r8Rg</id>
+  <yt:videoId>Iyz6WX2r8Rg</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>Stump the Vibe Coder, Episode 39</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=Iyz6WX2r8Rg"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-10-22T00:09:49+00:00</published>
+  <updated>2026-10-25T19:54:40+00:00</updated>
+  <media:group>
+   <media:title>Stump the Vibe Coder, Episode 39</media:title>
+   <media:content url="https://www.youtube.com/v/Iyz6WX2r8Rg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/Iyz6WX2r8Rg/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Welcome to Stump the Vibe Coder. I'm Dr. Neil Voss, biology professor at Roosevelt University. I've been programming for thirty-plus years, and lately I can't stop vibe coding. It is a problem.
+
+Here's the show: one of us brings a challenge, an educational game, a simulation, a real lab protocol, and we try to build it live with AI coding assistants. My cohosts work in labs and are learning to code. Sometimes we nail it. Sometimes we just hang out and generate bad AI songs.
+
+Regular cohosts include Jaren Orbeck, Owais, and Ayesha Ahmed, with guest cohosts joining us along the way. The lineup and the challenge vary from week to week. Expect science, live coding, some debugging, and occasional disagreements about what counts as a playable game.
+
+What should we build? Bring your ideas to the live chat, or leave a comment with a science game, simulation, or lab tool you'd like us to try. Tell us what you'd want it to do; you don't need to know how to code. Keep patient information and private lab data private.
+
+Watch the Stump the Vibe Coder playlist:
+https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+
+Explore the code and projects:
+https://github.com/vosslab
+
+We record most Wednesdays, usually around 7:45 p.m. Chicago time. Exams and other conflicts sometimes mean a week off. Check each stream's scheduled date and time for the confirmed session.
+
+Bring a challenge. We'll see what we can build.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="0"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:syP64X9YvmY</id>
+  <yt:videoId>syP64X9YvmY</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>Stump the Vibe Coder, Episode 37</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=syP64X9YvmY"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-10-22T14:05:48+00:00</published>
+  <updated>2026-10-23T20:37:19+00:00</updated>
+  <media:group>
+   <media:title>Stump the Vibe Coder, Episode 37</media:title>
+   <media:content url="https://www.youtube.com/v/syP64X9YvmY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/syP64X9YvmY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 37
+
+We built a game last week. This week, we get distracted playing it—and eventually start the next one.
+
+Play Bad Cell Day: https://vosslab.github.io/bad-cell-day/
+Bad Cell Day source: https://github.com/vosslab/bad-cell-day
+Plaque Attack source (build started near the end): https://github.com/vosslab/plaque-attack
+
+Ayesha's Fireboy and Watergirl-inspired idea has grown into Bad Cell Day, a 58-level cooperative puzzle platformer starring Isp and Pac. We test its organ-themed levels, trade strategies for switches and moving platforms, and discover that Gem's bubble gun can be useful when it isn't getting in the way. Cana's boomerang is less popular. Controlling two characters on one keyboard remains a skill we are developing.
+
+Owais's search for his keys becomes an AI-generated song, “Run Owais Run.” Later, Ayesha pitches a cardiovascular take on Bubble Trouble: bouncing cholesterol-themed hazards and a treatment-inspired arsenal. Jaren names it Plaque Attack. I turn the short pitch into a game specification, set up a TypeScript repository, and start the AI coding run. We leave that build running; this episode does not include a finished Plaque Attack playtest.
+
+Hosts: Neil Voss, Ayesha Ahmed, Jaren Orbeck, and Owais, who joins for part of the episode.
+
+I'm a biology professor with thirty-plus years of programming experience. My cohosts work in labs and are learning to code. On Stump the Vibe Coder, we try building science games, simulations, and lab tools with AI coding assistants—and come back to see whether they actually work.
+
+What should we try next: another two-character puzzle, or a different science arcade game? Leave a challenge in the comments and tell us what the player should have to do. Keep patient information and private lab data private.
+
+Chapters
+00:00 Introductions and last week's game
+02:49 Bad Cell Day: first look and screen-sharing trouble
+11:33 Jaren takes on Isp and Pac
+14:24 Jump boosts, boxes, and boomerangs
+19:14 Run Owais Run: the lost-keys song
+26:43 Back to the game
+36:39 Into the bone marrow
+41:19 Helping Ayesha through level 14
+46:25 The Lost Skeleton of Cadavra detour
+49:25 A new idea: Bubble Trouble meets cardiology
+58:33 Turning the idea into an AI spec
+1:02:10 Setting up Plaque Attack
+1:06:33 Leaving the build running and signing off
+
+The games use playful biological metaphors, not clinical simulations or medical advice. Fireboy and Watergirl and Bubble Trouble are discussed as inspirations. The film excerpt discussed is from The Lost Skeleton of Cadavra.
+
+Watch the Stump the Vibe Coder playlist:
+https://www.youtube.com/playlist?list=PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48
+
+Explore the code and projects:
+https://github.com/vosslab
+
+#VibeCoding #ScienceGames #BadCellDay</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="46"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:0zhh6g-DJFs</id>
+  <yt:videoId>0zhh6g-DJFs</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 36: Bad Cell Day — Two Drugs, One Keyboard | Stump the Vibe Coder Episode 36</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=0zhh6g-DJFs"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-10-15T14:34:09+00:00</published>
+  <updated>2026-10-16T18:38:19+00:00</updated>
+  <media:group>
+   <media:title>StVC 36: Bad Cell Day — Two Drugs, One Keyboard | Stump the Vibe Coder Episode 36</media:title>
+   <media:content url="https://www.youtube.com/v/0zhh6g-DJFs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/0zhh6g-DJFs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 36
+
+Two drug-inspired heroes need teamwork. We need to remember which keys move which one.
+
+Project: https://vosslab.github.io/bad-cell-day/
+Repository: https://github.com/vosslab/bad-cell-day
+
+Ayesha brings us a pharmaceutical twist on Fireboy and Watergirl: two characters with different abilities who need each other to reach their goal. We turn that idea into Bad Cell Day, a cooperative puzzle platformer starring Isp and Pac, and hand the TypeScript build to our AI coding assistants. Naming the game is easy compared with pronouncing the drugs.
+
+We get a playable prototype onto GitHub Pages, then Jaren takes on both characters with one keyboard while the rest of us offer highly qualified advice. Shared switches, color-coded barriers, and uneven difficulty give us plenty to debug. We reshape the characters around molecular structures, ask for pink tissue and a little body horror, and leave more work for the agents overnight. This is a playful drug-inspired game, not a simulation of treatment or a claim about clinical effectiveness.
+
+Along the way we revisit Steroid Quest and Nobel Combat, argue with AI-generated thumbnails that do not look like us, and finish with drug chemistry and biotech movie ideas. The linked game may include improvements made after this recording.
+
+Hosts: Neil Voss, Ayesha Ahmed, Jaren Orbeck, Owais
+
+On Stump the Vibe Coder, we turn science questions, educational games, and lab ideas into live builds with AI coding assistants. I bring decades of programming experience; our lab-science cohosts bring the challenges and learn to code as we go. Sometimes we get a working game. Sometimes we find out what needs fixing.
+
+What should Isp and Pac have to solve together next? Suggest a co-op obstacle or bring us a science challenge for a future episode.
+
+Chapters
+00:00 Welcome and meet the team
+05:39 Jaren playtests Steroid Quest
+12:05 Ayesha pitches a two-drug co-op game
+18:31 Naming Bad Cell Day
+22:27 Launch the AI-assisted TypeScript build
+26:34 AI thumbnails versus our actual faces
+32:38 First prototype look and a comic-art detour
+43:15 The first playable co-op puzzles
+45:57 Deploy to GitHub Pages and rethink the visuals
+49:21 Jaren controls both characters
+54:12 Give Isp and Pac molecular shapes
+57:21 More thumbnail trouble and villain ideas
+1:03:21 Drug structures, solubility, and next steps
+1:08:37 Biotech pitches and movie ideas
+1:14:26 Wrap-up and closing music</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="148"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:vcB4skacFNw</id>
+  <yt:videoId>vcB4skacFNw</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 35: Steroid Quest — Can a Steroid Reach the DNA? | Stump the Vibe Coder Episode 35</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=vcB4skacFNw"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-10-08T15:46:22+00:00</published>
+  <updated>2026-10-24T14:41:34+00:00</updated>
+  <media:group>
+   <media:title>StVC 35: Steroid Quest — Can a Steroid Reach the DNA? | Stump the Vibe Coder Episode 35</media:title>
+   <media:content url="https://www.youtube.com/v/vcB4skacFNw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/vcB4skacFNw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 35
+
+Can we turn steroid signaling into an arcade game? We send a steroid hormone through the cell, into the nucleus, and toward its receptor and DNA target while Codex builds the route live.
+
+Project: https://vosslab.github.io/steroid-quest-into-the-nucleus/
+Repository: https://github.com/vosslab/steroid-quest-into-the-nucleus
+
+We start with the old mobile game Bounce and ask how to move that mechanic into biochemistry. The answer becomes Steroid Quest: a side-scrolling molecular platformer where a steroid crosses the membrane, navigates the cytoplasm, finds a nuclear pore, reaches its receptor, and heads for DNA. We deliberately choose arcade challenge over a formal lesson—and make it harder than our recent games.
+
+While Codex builds the prototype, we take a detour to make the thoroughly unnecessary Suno song “Run, Binay, Run.” Jaren then playtests the game, reaches the nucleus, and discovers a carrier-protein power-up that enables double jumping. The test also exposes what still needs work: the cytoplasm section runs long, the collectibles are unclear, movement feels heavy, and some organelles need better art. The final visual revision is pushed near the end but is not fully replay-tested on stream.
+
+The live build uses TypeScript, SolidJS, and Phaser 3. The linked project has continued to evolve since the recording and now uses a custom Canvas 2D game layer. It is a stylized arcade interpretation of steroid signaling, not a literal biological simulation.
+
+Hosts: Neil Voss, Ayesha Ahmed, Jaren Orbeck, Owais, Binay
+
+New here? Stump the Vibe Coder brings an experienced programmer and coding newcomers from science labs together to build software with AI, live—then test, debug, and sometimes derail it with a bad AI song. We record most Wednesdays, usually around 7:45 p.m. Chicago time, with occasional weeks off for exams or other conflicts. Check the upcoming stream listing for the confirmed time.
+
+What biology process should become our next arcade game? Tell us what the player should do—or suggest the next Steroid Quest stage—in the comments. Coding knowledge is not required.
+
+Chapters
+00:00 Introductions and the Stump the Vibe Coder format
+03:12 Choosing tonight's game concept
+05:21 Turning Bounce into a cell-biology game
+07:45 A steroid-hormone journey through a cell
+09:24 Naming Steroid Quest: Into the Nucleus
+11:01 Defining the cellular route and game specification
+12:43 Reviewing the stack and educational balance
+15:52 Arcade difficulty and keyboard-only controls
+19:54 Creating Run, Binay, Run in Suno
+28:41 Song premiere while Codex builds the game
+38:27 The build compiles and Jaren begins playtesting
+42:08 Entering the nucleus and unlocking double jump
+45:02 Carrier-protein mechanic and movement feedback
+49:00 Final visual revision and biology-art critique
+50:10 Closing thoughts and future game ideas
+
+Credits: The biology is intentionally simplified and exaggerated for arcade play. Steroid Quest is a VossLab project released under the MIT License.
+
+#SteroidQuest #CellBiology #VibeCoding</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="67"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:_9HjPmVv_MU</id>
+  <yt:videoId>_9HjPmVv_MU</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 34: Nobel Combat — Great Song, Questionable Fighting | Stump the Vibe Coder Episode 34</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=_9HjPmVv_MU"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-09-24T15:14:07+00:00</published>
+  <updated>2026-10-24T14:41:31+00:00</updated>
+  <media:group>
+   <media:title>StVC 34: Nobel Combat — Great Song, Questionable Fighting | Stump the Vibe Coder Episode 34</media:title>
+   <media:content url="https://www.youtube.com/v/_9HjPmVv_MU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/_9HjPmVv_MU/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 34
+
+We want Nobel Prize winners to fight each other, with their discoveries as special moves. I ask the AI for better-looking characters. They disappear. Meanwhile, a question about my skincare routine turns into a song about an undead biochemist. This is Nobel Combat.
+
+Project: https://vosslab.github.io/nobel-combat/
+Repository: https://github.com/vosslab/nobel-combat
+
+Ayesha, Jaren, Owais, and I give 3D another try with Babylon.js and Codex. We start with Otto Heinrich Warburg, argue about the roster, and decide Rosalind Franklin deserves a secret character slot even though she never received a Nobel Prize. The goal is a fun fighting game. The AI would first like us to answer several more planning questions.
+
+Our first playable duel has stiff red and blue fighters, a camera we can't figure out, and some very questionable punching. At one point I am getting beaten up by a character I can't even see. We keep changing the camera and movement, then try open character assets. That brings its own entertainment: loading errors, uncooperative arms, and a complaint about red eyebrows. By the end we can test punches and a movable camera, but the scientist identities and research-inspired powers are still work to do.
+
+While the agents work, we make a Suno song about my apparently suspicious height, skincare, and windowless office. The tallest undead biochemist gets a sequel before the fighters get sorted out. Sometimes the song is the better project. If you want the first game test, jump to 37:32; the song-making starts at 21:54.
+
+The linked game has improved substantially since this recording, including its scientist roster and special moves. This episode shows the rough original build, not all the features you can play today.
+
+Hosts: Neil Voss, Ayesha Ahmed, Jaren Orbeck, Owais
+
+Welcome to Stump the Vibe Coder. I'm Dr. Neil Voss, biology professor at Roosevelt University. I've been programming for thirty-plus years, and lately I really cannot stop vibe coding. It is a problem.
+
+Joining me this time are Ayesha Ahmed, Jaren Orbeck, and Owais, all in the MS in Pharmaceutical Sciences. They're new to coding and they work in labs. Here's the show: one of us brings a challenge, an educational game, a simulation, a real lab protocol, and we build it live with AI coding assistants. Sometimes we nail it. Sometimes we just hang out and generate bad AI songs. This week we give both a try.
+
+We record most Wednesdays, usually around 7:45 p.m. Chicago time. Exams and other conflicts sometimes mean a week off. Check the upcoming stream listing for the confirmed time.
+
+Who belongs in Nobel Combat, and what should their special move do? Give us the scientist and the discovery behind the move in the comments. Or suggest a different science game, simulation, or lab tool for us to build next. You don't need to know how to code. Keep patient information and private lab data private.
+
+Chapters
+00:00 Welcome: Neil, Ayesha, Jaren, and Owais
+02:31 Trying 3D again with Babylon.js
+04:32 Inventing Nobel Combat
+07:11 Choosing the coding model
+08:42 Warburg, Franklin, and the scientist roster
+10:51 Planning the first duel: enough questions already
+14:56 Music and banter while the agents work
+21:54 Turning my skincare routine into a vampire song
+31:26 Listening to the tallest undead biochemist
+37:32 First playable duel: stiff fighters and camera trouble
+39:48 The vampire song gets a sequel
+45:02 Our improved fighters have disappeared
+46:39 The characters return; the fighting is still goofy
+51:50 Searching for open character assets
+57:03 A detour into another 3D game concept
+1:01:00 Testing new assets: red eyebrows and stuck arms
+1:06:38 A movable camera and plans for scientist powers
+1:08:12 Wrap-up and next steps
+
+Credits: Nobel Combat is an independent, unofficial project inspired by arcade fighting games. The vampire songs are fictional jokes about the host, not health or skincare advice.</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="123"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:gNA7VV_AGp0</id>
+  <yt:videoId>gNA7VV_AGp0</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 33: Fold Spacer — Racing Through Proteins | Stump the Vibe Coder Episode 33</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=gNA7VV_AGp0"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-09-17T15:34:20+00:00</published>
+  <updated>2026-10-18T17:01:34+00:00</updated>
+  <media:group>
+   <media:title>StVC 33: Fold Spacer — Racing Through Proteins | Stump the Vibe Coder Episode 33</media:title>
+   <media:content url="https://www.youtube.com/v/gNA7VV_AGp0?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/gNA7VV_AGp0/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 33
+
+Can we turn a flight through a real protein structure into a three-lane arcade runner? We take Fold Spacer for a spin—and discover that dodging side chains is harder when we can't tell which lane they're in.
+
+Play the current project: https://vosslab.github.io/Fold-Spacer/
+Source code: https://github.com/vosslab/Fold-Spacer
+Original Fold Spacer by Martin Steinegger: https://github.com/martin-steinegger/Fold-Spacer
+
+Jaren, Owais, and I start with an open-source protein flight demo and try Owais's idea: give it a Subway Surfers-style lane system. We fork Fold Spacer, ask Codex to plan the redesign, and work through TypeScript, Rust/WebAssembly, and WebGL choices while keeping the protein structure as the game world.
+
+The session also includes a return to Ms Taq Man, Jaren's Meta Quest workspace demonstration, arcade and VR talk, and an extended AI-song detour for Ayesha.
+
+We get a playable three-lane version onto GitHub Pages and try an updated build with a ghost-like guide. But lane readability, collision feedback, and timing still leave us confused. The session ends with the coding credits running out and a game we can build on—not a polished final release. The linked project has continued to develop since this recording.
+
+Hosts: Neil Voss, Jaren Orbeck, Owais
+
+New here? Stump the Vibe Coder brings an experienced programmer and coding newcomers from science labs together to build software with AI, live. Sometimes we get a working prototype; sometimes we debug, change direction, or make an unnecessary song.
+
+What would make a protein runner easier to read: clearer lanes, different obstacles, or a better guide? Suggest a concrete change—or another science-game challenge—in the comments. Coding knowledge is not required.
+
+Chapters
+00:00 Welcome to Stump the Vibe Coder
+01:41 Revisiting MS TaqMan
+06:05 Discovering Fold Spacer
+08:51 Choosing Codex for the build
+10:24 Planning a three-lane protein runner
+14:51 VR games and the future of headsets
+21:30 Jaren demonstrates his Meta Quest workspace
+35:51 Making an AI song for Ayesha
+48:36 First Fold Spacer playtest
+55:35 Updating the runner and deploying to GitHub Pages
+1:13:26 The new three-lane build is playable
+1:25:31 Final playtest and lane guidance
+1:27:44 Wrap-up
+
+Credits: Adapted from Martin Steinegger's Fold Spacer. The project is MIT licensed. This is an arcade interpretation of protein structure, not a molecular-dynamics simulation.
+
+#FoldSpacer #ProteinStructure #VibeCoding</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="273"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:h1qDheNahLs</id>
+  <yt:videoId>h1qDheNahLs</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 32: Ms Taq Man — Trapped in the PCR Maze | Stump the Vibe Coder Episode 32</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=h1qDheNahLs"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-09-10T15:12:57+00:00</published>
+  <updated>2026-10-10T19:25:26+00:00</updated>
+  <media:group>
+   <media:title>StVC 32: Ms Taq Man — Trapped in the PCR Maze | Stump the Vibe Coder Episode 32</media:title>
+   <media:content url="https://www.youtube.com/v/h1qDheNahLs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/h1qDheNahLs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 32
+
+Can AI turn PCR into a playable arcade game before the livestream ends? Neil, Ayesha, Jaren, and Owais build Ms Taq Man live, then discover that their DNA-copying maze is nearly impossible to finish.
+
+Play the project: https://vosslab.github.io/ms-taq-man/
+Source code: https://github.com/vosslab/ms-taq-man
+
+The team turns Taq polymerase into an arcade hero that collects primers and synthesizes DNA through a Pac-Man-style maze. Coding agents produce a TypeScript browser prototype, but the real work begins during the playtest: fixing an impossible 100% coverage rule, deploying updates, chasing collision bugs, and polishing the music, CRT scanlines, power-ups, and denaturation animation until players can clear thermal cycles.
+
+Ms Taq Man is a stylized molecular-biology arcade game rather than a literal PCR simulation.
+
+Hosts: Neil Voss, Ayesha Ahmed, Jaren Orbeck, and Owais
+
+Chapters
+00:00 Cold open and introductions
+01:43 Choosing the Pac-Man challenge
+03:18 PCR twist: Taq polymerase copies DNA
+05:10 Naming Ms Taq Man and opening the repository
+07:16 Writing the AI build brief
+08:31 AI writing and frontier-model detour
+14:51 Designing primers, DNA trails, and enemies
+18:30 Choosing models and launching the coding agents
+28:26 First playable prototype
+30:23 Molecular redesign and visual feedback
+34:35 DNA-synthesis build and GitHub Pages deployment
+38:16 Public playtest exposes an impossible cycle
+46:33 Shipping the 50% win-condition fix
+55:04 Ayesha signs off; bug fixes and final polish
+1:07:30 Final music update and outro
+
+#VibeCoding #PCR #ScienceGame</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="33"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:nOsXGXtQGqQ</id>
+  <yt:videoId>nOsXGXtQGqQ</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 31: Cancer Clicker — From One Cell to a Colony | Stump the Vibe Coder Episode 31</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=nOsXGXtQGqQ"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-08-27T15:47:49+00:00</published>
+  <updated>2026-10-10T13:39:54+00:00</updated>
+  <media:group>
+   <media:title>StVC 31: Cancer Clicker — From One Cell to a Colony | Stump the Vibe Coder Episode 31</media:title>
+   <media:content url="https://www.youtube.com/v/nOsXGXtQGqQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/nOsXGXtQGqQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 31
+
+Neil, Jaren, and Owais turn a cancer-cell growth concept into Cancer Clicker, a browser game about harvesting resources, buying mutations, and building a strange cell colony.
+
+Play the project: https://vosslab.github.io/cancer-clicker/
+Source code: https://github.com/vosslab/cancer-clicker
+
+The team first revisits Attack on Cancer and its upgraded CRISPR, chemotherapy, immune-cell, and radiation towers, then checks progress on a virtual cell-culture lab. For the main build, they ask Codex to make a TypeScript resource-management game in which a transformed cell gathers nutrients, energy, and biomass to expand through its host.
+
+The first Tumor Tycoon prototype feels more like Cookie Clicker, so the design is simplified and renamed Cancer Clicker. They test visible mutation upgrades, immune pressure, host control, and the final playable loop—with a few AI-generated songs filling the build time.
+
+Cancer Clicker is a stylized, non-clinical strategy toy, not medical guidance or a prediction of real cancer outcomes.
+
+Hosts: Neil Voss, Jaren Orbeck, and Owais
+
+Chapters
+00:00 Episode intro and host introductions
+01:44 Owais’s shopping-list song
+04:50 Attack on Cancer tower-defense rematch
+13:29 Virtual cell-culture lab check-in
+19:46 Choosing the next game
+22:18 A cancer tycoon becomes Tumor Tycoon
+25:38 Prompting Codex and defining the resource loop
+40:15 First-build status and a songwriting break
+46:14 National Toilet Paper Day song
+58:23 First Tumor Tycoon prototype
+1:02:09 The Cancer Clicker name emerges
+1:07:19 Mutations and host control
+1:13:27 Owais signs off and the old songs return
+1:25:13 Jaren screen-shares Attack on Cancer
+1:30:14 Final Cancer Clicker build
+
+#VibeCoding #CancerClicker #GameDevelopment</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="25"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:o8akVrG4MHI</id>
+  <yt:videoId>o8akVrG4MHI</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 30: Attack on Cancer — Can Our Defenses Hold? | Stump the Vibe Coder Episode 30</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=o8akVrG4MHI"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-08-20T15:18:24+00:00</published>
+  <updated>2026-10-10T13:40:00+00:00</updated>
+  <media:group>
+   <media:title>StVC 30: Attack on Cancer — Can Our Defenses Hold? | Stump the Vibe Coder Episode 30</media:title>
+   <media:content url="https://www.youtube.com/v/o8akVrG4MHI?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/o8akVrG4MHI/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 30
+
+Jaren brought us a challenge: Bloons Tower Defense, but with cancer cells. So we built it live with AI. Then I told it the challenge should be more challenging. We eventually died on the first round.
+
+Project: https://vosslab.github.io/attack-on-cancer/
+Repository: https://github.com/vosslab/attack-on-cancer
+
+This is Attack on Cancer, one of our better games. We defend a tissue route with doctors, chemotherapy, cytotoxic T cells, radiation bots, and antibody therapy. Apparently, quite a few of them shoot lasers.
+
+Getting there takes a while. Codex keeps asking planning questions, I explain bikeshedding, and we play Glycolysis Okimon and Super Bowling while the agents work. Eventually we have a game to test instead of more questions to answer.
+
+We add clearer attacks, sound effects, faster waves, and a tumor-mass enemy. I enjoy the new sounds for a bit before finding out nobody else can hear them. Then we keep adjusting the difficulty until our defenses stop looking so impressive. We get the game onto GitHub Pages and finish with ideas for another map and tower upgrades.
+
+This recording is the original build and playtest; we've kept working on the linked game since then. It's a stylized biology game, not medical advice or a model of real treatment outcomes.
+
+Hosts: Neil Voss, Jaren Orbeck, Owais
+
+Welcome to Stump the Vibe Coder. I'm Dr. Neil Voss, biology professor at Roosevelt University. I've been programming for thirty-plus years, and lately I really cannot stop vibe coding. It is a problem.
+
+With me are Jaren Orbeck and Owais, both in the MS in Pharmaceutical Sciences. They're brand new to coding, and they both work in labs. I've known Owais since he was my undergrad. Here's the show: one of us brings a challenge, an educational game, a simulation, a real lab protocol, and we build it live with AI coding assistants. Sometimes we nail it. Sometimes we just hang out and generate bad AI songs.
+
+We record most Wednesdays, usually around 7:45 p.m. Chicago time. Exams and other conflicts sometimes mean a week off. Check the upcoming stream listing for the confirmed time.
+
+What should we try to build next? Leave us a science game, simulation, or lab-tool idea in the comments. Tell us what you'd want it to do; you don't need to know how to code it. And if you play Attack on Cancer, tell us what defense or enemy you'd add. Keep patient information and private lab data private.
+
+Chapters
+00:00 Introductions: science meets AI coding
+02:09 Virtual-lab progress and usability problems
+08:24 Jaren's cancer tower-defense challenge
+13:15 Naming Attack on Cancer and opening the repo
+19:29 Codex planning and a Glycolysis Okimon break
+28:15 Super Bowling while the plan takes shape
+34:12 Too many questions: stop bikeshedding
+46:53 First playable Attack on Cancer prototype
+50:25 Adding animations and clearer attacks
+55:18 Sound effects and a tougher challenge
+1:01:47 Faster waves, tighter resources, and losses
+1:06:04 Deploying the game to GitHub Pages
+1:09:45 Designing the tumor-mass enemy
+1:14:26 Testing the final-wave tumor
+1:18:23 Final result and plans for maps and upgrades
+
+Credits: Tower-defense concept inspired by Bloons Tower Defense; Attack on Cancer is an independent, unofficial project.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="85"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:mNd8tvDXgGM</id>
+  <yt:videoId>mNd8tvDXgGM</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 29: Glycolysis Okimon — From Speedrun to Biochem Quiz | Stump the Vibe Coder Episode 29</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=mNd8tvDXgGM"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-07-30T15:36:25+00:00</published>
+  <updated>2026-10-10T13:40:05+00:00</updated>
+  <media:group>
+   <media:title>StVC 29: Glycolysis Okimon — From Speedrun to Biochem Quiz | Stump the Vibe Coder Episode 29</media:title>
+   <media:content url="https://www.youtube.com/v/mNd8tvDXgGM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/mNd8tvDXgGM/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 29
+
+Owais wants a Pokémon-style game. I have never played the originals, so naturally we're going to make one about glycolysis. Jaren speedruns our first version. Apparently, collecting the enzymes needs to involve a little more biochemistry.
+
+Project: https://vosslab.github.io/glycolysis-okimon/
+Repository: https://github.com/vosslab/glycolysis-okimon
+
+We start with a trip through our old projects: my new Hermes assistant, some questionable bowling physics, molecular visualization, and a virtual lab that still needs a human touch. I manage a bowling score Jaren has never reached, mostly because my game has hundreds of pins. If you want to jump straight to the new build, start at 47:30.
+
+Then we ask Codex to build Glycolysis Okimon, a top-down TypeScript adventure through a comic-book cell. You recruit the ten glycolysis enzymes and they follow you around. The first version is cute and very easy to finish. We add substrate questions and enzyme-choice encounters so there's something to figure out along the way. Jaren keeps speedrunning and looking for ways to break it. His monitor gets another song. Please respect the curve.
+
+We get a playable version onto GitHub Pages and test it together. Near the end, a fresh build adds sound, an energy ledger, and a lipid-lockup enzyme puzzle. We still manage to argue about which enzyme cleaves what. Between builds, we take a fairly long detour through movies and the search for an available IMAX seat.
+
+This recording shows the original build, including its rough edges. The linked game has continued changing since then; the current cofactor-collection systems and optional side quests are not all part of this stream.
+
+Hosts: Neil Voss, Jaren Orbeck, Owais
+
+Welcome to Stump the Vibe Coder. I'm Dr. Neil Voss, biology professor at Roosevelt University. I've been programming for thirty-plus years, and lately I really cannot stop vibe coding. It is a problem.
+
+With me are Jaren Orbeck and Owais, both in the MS in Pharmaceutical Sciences. They're brand new to coding, and they both work in labs. I've known Owais since he was my undergrad. Here's the show: one of us brings a challenge, an educational game, a simulation, a real lab protocol, and we build it live with AI coding assistants. Sometimes we nail it. Sometimes we just hang out and generate bad AI songs.
+
+We record most Wednesdays, usually around 7:45 p.m. Chicago time. Exams and other conflicts sometimes mean a week off. Check the upcoming stream listing for the confirmed time.
+
+What should we try to build next? Leave us a science game, simulation, or lab-tool idea in the comments and tell us what you'd want to do in it. You don't need to know how to code. For this game, which pathway should get an adventure next: the citric acid cycle, the urea cycle, or something else? Keep patient information and private lab data private.
+
+Chapters
+00:00 Introductions: Jaren joins, Owais arrives later
+01:41 Hermes: my AI assistant remembers the zoo
+12:03 Super Bowling and some questionable physics
+16:14 Molecular visualization and older projects
+29:12 Revisiting the glycolysis card game and virtual lab
+34:10 Old physics videos and the surviving microwave
+43:41 What if we collected enzymes like Pokémon?
+47:30 Starting Glycolysis Okimon with Codex
+51:30 Movie detours while the agents work
+1:06:49 The hunt for an IMAX seat
+1:15:44 First playable enzyme-recruitment prototype
+1:23:08 The game goes live: Jaren's speedrun
+1:28:55 Adding substrate questions and enzyme choices
+1:35:42 Playtesting the new encounters and finding exploits
+1:47:18 Sound, energy ledger, and the lipid-lockup puzzle
+
+Credits: Game concept inspired by classic Pokémon adventures; Glycolysis Okimon is an independent, unofficial biochemistry game.</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="30"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:OEc8jUQEono</id>
+  <yt:videoId>OEc8jUQEono</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 28: M.U.L.E. Remake — Robots, Resources, and Bugs | Stump the Vibe Coder Episode 28</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=OEc8jUQEono"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-07-09T16:27:59+00:00</published>
+  <updated>2026-10-09T15:31:04+00:00</updated>
+  <media:group>
+   <media:title>StVC 28: M.U.L.E. Remake — Robots, Resources, and Bugs | Stump the Vibe Coder Episode 28</media:title>
+   <media:content url="https://www.youtube.com/v/OEc8jUQEono?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/OEc8jUQEono/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 28
+
+We try to rebuild M.U.L.E. in the browser, brainstorm a cancer-cell version, and discover that passing tests doesn't mean the robot will move.
+
+Project: https://vosslab.github.io/mule-game/
+Repository: https://github.com/vosslab/mule-game
+
+Jaren and I start with a look at the original M.U.L.E.: claim land, outfit robotic mules, produce resources, and trade at auction. The bigger idea is to turn that competition into a game about cancer cells competing for glucose, energy, and raw materials. We decide to build the ordinary economic game first, using TypeScript and AI coding assistance.
+
+Owais joins partway through, and we work through the biology behind a possible adaptation, with detours into the Warburg effect, enzyme kinetics, and a substantial amount of AI songwriting. The cancer-cell version remains a concept during this stream. Its initial repository is https://github.com/vosslab/cancer-cell-mule .
+
+By the final playtest, the browser prototype has land plots, mule purchases, and auction screens, but movement, placement, and production still need work. The linked project has developed since this recording; its current features are not all demonstrated here. This is the build session, including the parts that didn't work.
+
+Hosts: Neil Voss, Jaren Orbeck, Owais
+
+Stump the Vibe Coder brings an experienced programmer and science-lab coding newcomers together to build with AI, live. We usually record on Wednesdays around 7:45 p.m. Chicago time, with occasional weeks off; check the upcoming stream listing.
+
+What biology process would make a good resource-management game? Suggest a challenge in the comments and tell us what the player should actually do.
+
+Chapters
+00:00 Welcome and tonight's challenge
+00:34 How the original M.U.L.E. works
+04:10 Could M.U.L.E. become a cancer-cell game?
+06:39 Building the ordinary game first
+09:41 TypeScript setup and the remake plan
+14:12 The songwriting detour begins
+18:19 Reviewing the implementation plan
+20:54 Warburg effect and cellular respiration
+24:09 AI song iterations while the build runs
+37:21 Owais joins and gets the recap
+40:04 Designing the cancer-cell adaptation
+48:07 An enzyme kinetics detour
+1:00:00 First browser checks and the rough prototype
+1:08:49 Comparing M.U.L.E. versions and robots
+1:15:21 More songwriting while development continues
+1:28:19 Buying mules and testing the controls
+1:31:15 Future cancer conversion and a conversation break
+1:41:21 Final playtest: tests pass, controls still need work
+1:46:21 Closing theme
+
+Credits: Inspired by the original M.U.L.E. economic strategy game. The cancer-cell discussion is a game-design concept, not a validated biological model.</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="24"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:0Hhx8reCOnA</id>
+  <yt:videoId>0Hhx8reCOnA</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 27: Glycolysis Race to Pyruvate — What Are the Rules? | Stump the Vibe Coder Episode 27</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=0Hhx8reCOnA"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-06-30T15:27:22+00:00</published>
+  <updated>2026-10-09T19:46:26+00:00</updated>
+  <media:group>
+   <media:title>StVC 27: Glycolysis Race to Pyruvate — What Are the Rules? | Stump the Vibe Coder Episode 27</media:title>
+   <media:content url="https://www.youtube.com/v/0Hhx8reCOnA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/0Hhx8reCOnA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 27
+
+Can glycolysis become a rummy-style card game? We build a prototype, then discover that understanding the rules might be the harder challenge.
+
+Project: https://vosslab.github.io/glycolysis-race-to-pyruvate/
+Repository: https://github.com/vosslab/glycolysis-race-to-pyruvate
+
+We turn glycolysis molecules, enzymes, and cofactors into playing cards and ask Codex to build a TypeScript browser game. The plan is to assemble pathway melds, keep track of ATP and other cofactors, and race toward pyruvate. The first interface needs more work—and even we struggle to explain how to play it.
+
+While the agents work, we try biochemistry practice questions, revisit Science Career Survival and its possible scientific-misconduct outcomes, and make an increasingly elaborate AI song about Jaren's curved monitor. The response-time lyric needs a correction. Please note the decimal.
+
+We finish with a rough glycolysis prototype, unclear rules, and an exhausted token budget. The final commit is still a promise at the close, not a demonstrated release. The linked game has continued to develop since this recording; its current interface and rules are not a claim about what worked on stream.
+
+Hosts: Neil Voss, Jaren Orbeck, Owais
+
+New here? Stump the Vibe Coder brings an experienced programmer and coding newcomers from science labs together to build software with AI, live. We try the result, find the confusing parts, and sometimes turn the conversation into an unnecessary song.
+
+What card-game rule would make glycolysis easier to learn—and more fun to play? Suggest a move, a scoring rule, or another science challenge for us to build in the comments. Coding knowledge is not required.
+
+Chapters
+00:00 Welcome and the science-game catch-up
+02:25 Can glycolysis become a card game?
+07:22 Naming Race to Pyruvate
+11:10 TypeScript, Codex, and a build plan
+15:54 Hot-seat play and cofactor complexity
+22:28 Start the build; try biochemistry practice
+31:26 Revisiting science careers and misconduct
+47:28 First glycolysis prototype: how do we play?
+54:24 Jaren is back: the curved-monitor anthem
+1:05:17 Can our science career end in disgrace?
+1:10:46 Please respect the curve
+1:15:39 Please note the decimal: 0.5 milliseconds
+1:18:07 Back to the games, with musical interruptions
+1:26:05 Final interface work and one more song
+1:31:28 The verdict: unclear rules and no tokens
+
+Credits: Glycolysis Race to Pyruvate is a VossLab project released under the MIT License. This episode documents an experimental game build, not a validated teaching tool.
+
+#Glycolysis #VibeCoding #Biochemistry</media:description>
+   <media:community>
+    <media:starRating count="4" average="5.00" min="1" max="5"/>
+    <media:statistics views="20"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:f5o5MNtljLQ</id>
+  <yt:videoId>f5o5MNtljLQ</yt:videoId>
+  <yt:channelId>UCZdt-pe8pCkUXTAFUVfQwiA</yt:channelId>
+  <title>StVC 26: Pseudo-Code Mapper — Lost in the Plan | Stump the Vibe Coder Episode 26</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=f5o5MNtljLQ"/>
+  <author>
+   <name>Neil Voss</name>
+   <uri>https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA</uri>
+  </author>
+  <published>2026-06-27T04:45:45+00:00</published>
+  <updated>2026-10-10T03:20:46+00:00</updated>
+  <media:group>
+   <media:title>StVC 26: Pseudo-Code Mapper — Lost in the Plan | Stump the Vibe Coder Episode 26</media:title>
+   <media:content url="https://www.youtube.com/v/f5o5MNtljLQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/f5o5MNtljLQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Stump the Vibe Coder, Episode 26
+
+Can we turn a concept-map maker into a pseudo-code flowchart editor—or will our AI assistants spend the whole stream planning it?
+
+Project: https://vosslab.github.io/pseudo-code-mapper/
+Repository: https://github.com/vosslab/pseudo-code-mapper
+
+My student Pierre and I set out to turn Concept Map Maker into Pseudo-Code Mapper: write an algorithm as text, then turn it into a flowchart. We revisit the existing concept-map tool and Pierre's study-site improvements before creating a separate repository from the starter code. GitHub's fork workflow gives us trouble, so we take the simpler route.
+
+We design the text editor, decision diamonds, True/False branches, loop arrows, and pseudo-code grammar. The plan builds on TypeScript, SolidJS, Dagre, and SVG, with CodeMirror 6 selected for syntax highlighting. Claude drafts the plan, ChatGPT reviews it, and Codex takes a turn at implementation—but the plan and grammar keep getting revised while the app waits.
+
+Near the end, I check what actually changed, fire Codex, and hand implementation back to Claude. The build is still incomplete when we wrap up. The linked editor was developed further after this recording; its current working features are not a finished app demonstrated on stream.
+
+Hosts: Neil Voss, Pierre
+
+New here? Stump the Vibe Coder brings an experienced programmer and students from science and computing together to build software with AI, live. You see the ideas, the debugging, and the occasions when planning takes longer than coding.
+
+What short algorithm should we turn into a flowchart next—and where should its decisions or loops go? Suggest a concrete example or another challenge for us to build in the comments.
+
+Chapters
+00:00 Welcome: Neil and Pierre
+00:48 Revisiting Concept Map Maker
+07:28 Study-site streaks and answer feedback
+12:32 AI model availability discussion
+17:24 A cat exploring a molecular world
+20:02 Starting Pseudo-Code Mapper
+29:22 Asking Claude to plan the pivot
+34:54 Flowchart shapes, branches, and loops
+44:17 Choosing syntax and CodeMirror 6
+45:43 ChatGPT reviews Claude's plan
+51:40 Giving Codex the implementation
+58:23 When should code update the graph?
+1:03:29 Loop semantics and more planning
+1:10:05 Checking what Codex actually changed
+1:12:18 Switching back to Claude and wrapping up
+
+Credits: Starter project: https://github.com/vosslab/concept-map-maker
+Pseudo-Code Mapper source code is released under the MIT License.
+
+#Flowcharts #VibeCoding #Pseudocode</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="5"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>

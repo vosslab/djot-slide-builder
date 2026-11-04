@@ -1,0 +1,857 @@
+/* The HTML shell owns presentation; Canvas owns the game world. */
+:root {
+  color-scheme: dark;
+  font-family: ui-rounded, "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  color: #fff5e8;
+  background: #15152b;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; background: radial-gradient(ellipse at 80% 20%, #382137 0, transparent 55%), #15152b; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:disabled { cursor: default; opacity: .5; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid #ffc857; outline-offset: 5px; }
+button:focus-visible { position: relative; z-index: 3; }
+.game_shell {
+  --ink: #15152b;
+  --surface: #201e34;
+  --text: #fff5e8;
+  --muted: #bcb4c5;
+  --teal: #38d6c4;
+  --gold: #ffc857;
+  --line: #4a3e54;
+  width: min(1180px, calc(100% - 64px));
+  margin-inline: auto;
+}
+.game_header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 30px; }
+.wordmark { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: .67rem; font-weight: 800; letter-spacing: .16em; }
+.brand_mark { display: grid; place-items: center; width: 29px; height: 29px; border: 1px solid #38d6c470; border-radius: 8px; color: var(--teal); font-size: 26px; line-height: 1; }
+.header_note { display: flex; align-items: center; gap: 9px; color: var(--muted); font-size: .75rem; }
+.status_dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+.menu_panel { display: grid; grid-template-columns: 1fr 1fr; position: relative; isolation: isolate; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(115deg, #211e33 15%, #2c1f35 65%, #3c2239); overflow: hidden; }
+.menu_copy { position: relative; z-index: 2; padding: clamp(32px, 4.5vw, 64px); padding-right: 0; }
+.eyebrow { margin: 0 0 27px; color: var(--teal); font-size: .69rem; font-weight: 800; line-height: 1.6; letter-spacing: .13em; text-transform: uppercase; }
+.eyebrow > span { display: inline-block; margin-right: 12px; color: #d5bfca; }
+h1 { margin: 0; font-size: clamp(3.6rem, 7.4vw, 6.8rem); font-weight: 950; text-transform: uppercase; line-height: .91; letter-spacing: -.065em; transform: rotate(-3deg); transform-origin: left center; text-shadow: 0 5px 0 #111124, 2px 7px 0 #ffc85726; }
+h1 span { display: block; color: var(--gold); }
+.menu_intro { margin: 32px 0 27px; color: #d8cbd5; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.6; }
+.menu_intro strong { color: var(--text); font-weight: 650; }
+.action_button { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; min-height: 56px; padding: 15px 24px; border: 1px solid #85f1df; border-radius: 10px; color: var(--ink); background: var(--teal); box-shadow: 0 4px 0 #147a77; font-weight: 850; transition: background .15s, transform .15s, box-shadow .15s; }
+.action_button:hover { background: #86f0df; transform: translateY(-2px); box-shadow: 0 6px 0 #147a77; }
+.action_button:active { transform: translateY(2px); box-shadow: 0 2px 0 #147a77; }
+.action_button > span { font-size: 1.4em; line-height: 1; }
+.campaign_button { width: min(100%, 320px); font-size: 1rem; }
+.menu_secondary { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; max-width: 320px; margin-top: 23px; }
+.text_button { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; padding: 9px 0; color: #e0d4dd; background: none; border: 0; border-bottom: 1px solid #5c465a; font-size: .8rem; text-align: left; }
+.text_button span { color: #a895ad; }
+.text_button:hover { color: var(--teal); border-color: var(--teal); }
+.menu_art { position: relative; display: flex; min-width: 0; align-items: center; justify-content: center; padding: 35px 15px 70px 0; }
+.art_orbit { position: absolute; border: 1px solid #ab667526; border-radius: 50%; width: 470px; height: 470px; }
+.orbit_two { width: 365px; height: 365px; }
+.hero_arena { position: relative; isolation: isolate; width: 112%; min-width: 460px; aspect-ratio: 1.18; transform: rotate(-10deg); overflow: hidden; border: 2px solid #cb617d; border-radius: 46% 24% 35% 27%; background: #461d32; box-shadow: 0 24px 45px #0c0d2270, 0 0 0 12px #b8446012; }
+/* Keep the translucent artery behind the shot and foreground art. */
+.hero_artery { position: absolute; z-index: 0; width: 150%; height: 100%; max-width: none; left: -25%; object-fit: cover; opacity: .82; }
+.hero_shot { z-index: 1; }
+.hero_plaque, .hero_surgeon, .hit_spark { z-index: 2; }
+/* Rotate the scene once; keep its clipped foreground in the same paint space. */
+.hero_plaque { position: absolute; }
+.plaque_one { width: 32%; left: 24%; top: 11%; }
+.plaque_two { width: 18%; right: 9%; top: 40%; }
+.plaque_three { width: 12%; left: 12%; top: 57%; }
+.hero_surgeon { position: absolute; width: 21%; bottom: 8%; left: 45%; }
+.hero_shot { position: absolute; left: 60%; bottom: 22%; width: 8px; height: 40%; border: 1px solid #fff5e8; background: repeating-linear-gradient(45deg, #d7edf4 0 2px, #6e9baf 2px 6px); box-shadow: 0 0 17px #a9ece74d; }
+.hit_spark { position: absolute; color: var(--gold); font-size: 35px; font-weight: 500; }
+.spark_one { top: 22%; right: 15%; }
+.spark_two { bottom: 25%; left: 29%; font-size: 24px; }
+.art_annotation { position: absolute; bottom: 73px; right: 45px; display: flex; align-items: center; gap: 10px; color: #d1afb9; font-size: .59rem; font-weight: 800; letter-spacing: .16em; transform: rotate(-5deg); }
+.annotation_line { width: 34px; height: 1px; background: #a27687; }
+.art_caption { position: absolute; bottom: 19px; display: flex; gap: 23px; color: #dfc3c9; font-size: .58rem; font-weight: 800; letter-spacing: .13em; }
+.art_caption span + span::before { content: "/"; color: #94697e; margin-right: 23px; }
+.menu_bottom { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding: 19px 35px; border-top: 1px solid #5c3c50; background: #19182a70; }
+.control_hint { margin: 0; color: #c4b9cc; font-size: .73rem; line-height: 1.8; }
+kbd { display: inline-block; min-width: 22px; padding: 1px 5px; border: 1px solid #61536a; border-bottom-width: 2px; border-radius: 4px; color: #e9dfe9; font-family: inherit; font-size: .67rem; text-align: center; }
+.hint_divider { color: #85738f; margin-inline: 9px; }
+.mini_badge { color: #ac9db6; font-size: .56rem; letter-spacing: .1em; font-weight: 750; }
+.game_footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 9px; padding-block: 22px; color: #ac9fb6; font-size: .67rem; line-height: 1.6; }
+.game_footer span span { padding-inline: 8px; color: #776781; }
+h2 { margin: 0 0 24px; max-width: 750px; font-size: clamp(2rem, 4.5vw, 3.7rem); font-weight: 850; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
+.briefing_panel, .content_panel { padding: clamp(26px, 5vw, 65px); border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(125deg, #211e34, #302036); }
+.briefing_panel { display: grid; grid-template-columns: 1.4fr .7fr; gap: 30px; align-items: center; }
+.panel_intro { max-width: 630px; color: #e0d2df; font-size: 1.1rem; line-height: 1.7; }
+.tool_card { display: flex; align-items: center; gap: 19px; padding: 20px; margin-top: 30px; border: 1px solid #4e4d63; border-radius: 12px; background: #15152b80; }
+.tool_card img { width: 29px; height: 72px; object-fit: contain; }
+.small_label { display: block; margin-bottom: 5px; color: #b7abbe; font-size: .61rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.tool_card strong { font-size: 1.05rem; }
+.tool_card p { margin: 7px 0 0; color: #bdb2c9; font-size: .8rem; line-height: 1.6; }
+.medical_caption { margin: 22px 0 30px; color: #beb0c6; font-size: .78rem; line-height: 1.7; }
+.briefing_tactics { display: grid; gap: 10px; margin: 18px 0; padding-left: 20px; color: #e0d2df; font-size: .9rem; line-height: 1.55; }
+.briefing_tactics li::marker { color: var(--teal); }
+.panel_actions { display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-top: 30px; }
+.quiet_button { min-height: 56px; padding: 14px 20px; border: 1px solid #6f5d78; border-radius: 10px; color: var(--text); background: #15152b60; font-weight: 700; }
+.quiet_button:hover { border-color: var(--teal); color: var(--teal); background: #15152b; }
+.briefing_art { display: grid; place-items: center; position: relative; gap: 24px; padding: 30px 0; }
+.briefing_art img { width: 85%; max-width: 230px; z-index: 1; filter: drop-shadow(0 15px 15px #15152b70); }
+.briefing_art .small_label { text-align: center; font-size: .55rem; }
+.target_ring { position: absolute; width: 100%; max-width: 260px; aspect-ratio: 1; border: 1px solid #b16d824a; border-radius: 50%; top: 0; box-shadow: 0 0 0 25px #b16d8208; }
+.practice_levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 26px; }
+.practice_levels button { min-height: 80px; padding: 14px; color: var(--text); background: #15152b; border: 1px solid #665476; border-radius: 10px; text-align: left; }
+.practice_levels button:hover { border-color: var(--teal); }
+/* Reserve HUD and controls at their natural height; the arena takes the room left. */
+.game_shell:has(.gameplay:not([hidden])) { display: flex; flex-direction: column; min-height: 100svh; height: 100svh; }
+.game_shell:has(.gameplay:not([hidden])) > .game_header { flex: none; padding-block: clamp(5px, 2svh, 20px); }
+.game_shell:has(.gameplay:not([hidden])) > .game_footer { flex: none; padding-block: clamp(3px, 1svh, 14px); }
+.gameplay { display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto auto; align-content: start; flex: 1; min-height: 0; width: min(100%, 1000px); margin-inline: auto; container-type: inline-size; }
+.game_hud { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto 56px; gap: 8px 20px; align-items: center; min-width: 0; padding: 12px 16px; border: 1px solid var(--line); border-bottom: 0; border-radius: 15px 15px 0 0; background: #211e34; }
+.hud_content { display: contents; }
+.game_hud > div, .hud_content > div { min-width: 0; }
+.game_hud > #pause_button { grid-column: 5; grid-row: 1; }
+.game_hud strong { display: block; font-variant-numeric: tabular-nums; font-size: 1.08rem; }
+.hud_level strong { font-size: .88rem; line-height: 1.5; }
+.hud_lives strong { color: #ffbcbd; }
+.score_readout { display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+#hud_multiplier { color: #ffce55; font-size: .7rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.hud_objective { grid-column: 1 / 4; display: flex; flex-wrap: wrap; gap: 8px 20px; color: #f6e8e9; font-size: .8rem; line-height: 1.5; }
+.hud_objective strong { color: #ffbf69; font-size: .8rem; }
+.hud_weapon { grid-column: 4 / -1; display: flex; gap: 8px; align-items: baseline; justify-content: end; }
+.hud_weapon .small_label { margin: 0; }
+.hud_weapon strong { color: var(--teal); font-size: .8rem; }
+.hud_tactics { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.tactic_badge { display: inline-block; padding: 3px 7px; border: 1px solid #928099; border-radius: 5px; color: #eee4f2; background: #15152b; font-size: .8rem; font-weight: 700; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.phase_badge { border-left: 4px solid var(--gold); }
+.flow_badge { border-radius: 12px; border-style: dashed; }
+.flow_badge[data-state="active"] { border-style: solid; border-color: #85f1df; color: #baf8ea; }
+.flow_badge[data-state="cooldown"] { border-style: dotted; }
+.seam_badge { border-left: 4px double #baf8ea; }
+.seam_badge[data-state="spent"] { border-left-style: solid; color: #e1d4cb; }
+.shield_badge { border-bottom-width: 3px; }
+.shield_badge[data-state="armed"] { border-color: #85f1df; color: #baf8ea; }
+.visually_hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.icon_button { display: grid; place-items: center; min-width: 56px; min-height: 56px; padding: 12px; color: var(--text); border: 1px solid #706079; border-radius: 9px; background: #15152b; font-size: 1.05rem; }
+.icon_button:hover { border-color: var(--teal); color: var(--teal); }
+.arena_frame { position: relative; box-sizing: content-box; justify-self: center; align-self: start; height: calc(100% - 4px); max-height: calc((100cqw - 4px) * 9 / 16); aspect-ratio: 16 / 9; margin-inline: auto; border: 2px solid #96506b; background: #461d32 url("assets/artery.svg") center / cover; border-radius: 0 0 10px 10px; overflow: hidden; }
+#arena { display: block; width: 100%; height: 100%; object-fit: contain; aspect-ratio: 16 / 9; touch-action: none; }
+#arena:focus-visible { outline-offset: -5px; }
+.arena_overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: #15152bbf; text-align: center; padding: 22px; font-size: clamp(1.2rem, 4vw, 3rem); font-weight: 850; }
+.arena_overlay p { font-size: 1rem; max-width: 500px; line-height: 1.6; }
+.play_controls { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 14px; }
+.touch_controls { display: flex; gap: 10px; }
+.touch_button { min-height: 56px; min-width: 64px; padding: 11px 20px; border: 1px solid #706079; border-bottom-width: 3px; border-radius: 10px; color: var(--text); background: #29253d; font-size: 1.4rem; font-weight: 800; touch-action: none; user-select: none; -webkit-user-select: none; }
+.touch_button:active { background: #4b4260; border-color: var(--teal); }
+.fire_button { display: flex; gap: 23px; align-items: center; min-width: 120px; color: var(--ink); background: var(--teal); border-color: #83ecdc; border-bottom-color: #147a77; font-size: .9rem; }
+.fire_button:active { color: var(--ink); background: #89efdf; }
+.orientation_hint { display: none; color: #b8a9c3; font-size: .7rem; text-align: center; line-height: 1.6; }
+.result_panel { min-height: 400px; background: radial-gradient(ellipse at top right, #29474360, transparent 70%), #211e34; }
+.game_dialog { --ink: #15152b; --text: #fff5e8; --teal: #38d6c4; width: min(900px, calc(100% - 32px)); max-height: min(560px, calc(100dvh - 32px)); padding: clamp(18px, 3vw, 28px); border: 1px solid #71627b; border-radius: 18px; color: #fff5e8; background: #211e34; box-shadow: 0 25px 90px #0008; }
+.game_dialog::backdrop { background: #0b0b20cf; }
+.game_dialog h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+.game_dialog h3 { margin-top: 26px; color: #ffc857; }
+.game_dialog p, .game_dialog li { color: #d7cbdf; font-size: .95rem; line-height: 1.7; }
+.game_dialog button { min-height: 56px; }
+.game_dialog .action_button { --ink: #15152b; --teal: #38d6c4; }
+.game_dialog .panel_actions { gap: 12px; }
+.game_dialog label { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 14px; line-height: 1.6; }
+.game_dialog input[type="checkbox"] { width: 23px; height: 23px; accent-color: #38d6c4; }
+.game_dialog ol { padding-left: 25px; }
+.game_dialog { overflow: hidden; }
+.game_dialog[open] { display: flex; flex-direction: column; gap: 12px; }
+.game_dialog > h2 { flex: none; margin: 0; }
+.dialog_content { flex: 1 1 auto; min-height: 0; min-width: 0; overflow-y: auto; overscroll-behavior: contain; padding: 8px; }
+.dialog_content > :first-child { margin-top: 0; }
+.dialog_content > :last-child { margin-bottom: 0; }
+.dialog_actions { display: flex; flex: none; flex-wrap: wrap; gap: 10px; padding-top: 12px; border-top: 1px solid #4a3e54; }
+.dialog_actions > button { max-width: 100%; }
+@media (min-width: 761px) {
+  .game_dialog .surgeon_roster { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.game_dialog:has(.recovery_map) { width: min(1040px, calc(100vw - 32px)); }
+.game_dialog:has(.recovery_map)[open] {
+  display: flex;
+  flex-direction: column;
+  height: min(620px, 80dvh);
+  max-height: calc(100dvh - 32px);
+  padding: clamp(18px, 3vw, 28px);
+  overflow: hidden;
+}
+.game_dialog:has(.recovery_map) > h2 { flex: none; margin-bottom: 12px; }
+.game_dialog:has(.recovery_map) > div {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  flex: 1;
+  min-height: 0;
+  gap: 10px;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .menu_panel { min-height: 660px; }
+  .menu_copy { padding-block: 65px; }
+  .hero_arena { min-width: 555px; }
+}
+@media (max-width: 900px) {
+  .game_shell { width: calc(100% - 40px); }
+  .header_note { font-size: .65rem; }
+  .menu_copy { padding: 38px 0 36px 32px; }
+  h1 { font-size: clamp(3.3rem, 8.7vw, 5.6rem); }
+  .menu_art { padding-bottom: 60px; }
+  .hero_arena { min-width: 390px; }
+  .menu_bottom { padding: 17px 25px; }
+  .mini_badge { display: none; }
+  .game_hud { column-gap: 17px; }
+}
+@media (max-width: 620px) {
+  .game_shell { width: calc(100% - 28px); }
+  .game_header { padding-block: 20px; }
+  .wordmark { gap: 8px; font-size: .52rem; letter-spacing: .1em; }
+  .header_note { display: none; }
+  .menu_panel { grid-template-columns: 1fr; border-radius: 18px; }
+  .menu_copy { padding: 29px 27px 0; }
+  .eyebrow { font-size: .57rem; margin-bottom: 21px; }
+  h1 { font-size: clamp(3.35rem, 16.4vw, 6rem); }
+  .menu_intro { margin: 23px 0; font-size: .96rem; }
+  .menu_intro br { display: none; }
+  .menu_intro br::after { content: " "; }
+  .menu_intro strong { display: block; }
+  .campaign_button, .menu_secondary { width: 100%; max-width: none; }
+  .menu_secondary { margin-top: 15px; }
+  .menu_art { min-height: 230px; padding: 15px 0 27px; margin-top: 8px; overflow: hidden; }
+  .hero_arena { min-width: 0; width: 83%; aspect-ratio: 1.7; border-radius: 42% 22% 33% 25%; }
+  .art_orbit { width: 260px; height: 260px; }
+  .orbit_two { width: 210px; height: 210px; }
+  .hero_surgeon { width: 18%; bottom: 5%; }
+  .plaque_one { width: 25%; top: 3%; }
+  .plaque_two { width: 15%; top: 35%; }
+  .hero_shot { height: 45%; }
+  .art_annotation { display: none; }
+  .art_caption { bottom: 0; font-size: .48rem; gap: 15px; }
+  .art_caption span + span::before { margin-right: 15px; }
+  .menu_bottom { margin-top: 13px; padding: 14px 19px; }
+  .control_hint { font-size: .65rem; }
+  .hint_divider { margin-inline: 4px; }
+  .game_footer { padding-block: 17px; font-size: .59rem; }
+  .briefing_panel { grid-template-columns: 1fr; gap: 16px; }
+  .briefing_art { grid-row: 1; padding: 0; }
+  .briefing_art img { max-width: 100px; }
+  .briefing_art .small_label, .target_ring { display: none; }
+  .panel_intro { font-size: 1rem; }
+  .tool_card { padding: 15px; margin-top: 22px; }
+  .panel_actions { gap: 12px; }
+  .panel_actions > button { flex: 1 1 auto; }
+  .game_hud { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 56px; gap: 6px 9px; padding: 9px 10px; }
+  .hud_level { grid-column: 1 / -2; }
+  .hud_level strong { font-size: .75rem; line-height: 1.3; }
+  .hud_level > .small_label { display: none; }
+  .game_hud > #pause_button { grid-column: -2 / -1; grid-row: 1; }
+  .hud_lives { grid-column: 1; }
+  .hud_lives strong { white-space: nowrap; font-size: .8rem; }
+  .hud_score { grid-column: 2; }
+  .score_readout { flex-wrap: wrap; gap: 0 4px; }
+  .hud_score .small_label { font-size: .5rem; letter-spacing: .02em; }
+  .hud_time { grid-column: 3 / -1; }
+  .hud_time .small_label { font-size: .5rem; letter-spacing: .02em; }
+  .game_hud strong { font-size: 1rem; }
+  .hud_objective { grid-column: 1 / -1; gap: 2px; font-size: .8rem; line-height: 1.35; }
+  .hud_objective strong { font-size: .8rem; }
+  .hud_weapon { grid-column: 1 / -1; justify-content: start; gap: 6px; }
+  .hud_weapon strong { font-size: .8rem; }
+  .hud_weapon .small_label { font-size: .5rem; }
+  .hud_tactics { gap: 4px; }
+  .tactic_badge { padding: 2px 5px; font-size: .8rem; }
+  .phase_badge { flex-basis: 100%; }
+  .play_controls { justify-content: center; }
+  .desktop_hint { display: none; }
+  .touch_controls { width: 100%; }
+  .touch_button { flex: 1; }
+  .fire_button { flex: 1.5; justify-content: center; }
+  .orientation_hint { display: block; }
+  .result_panel { min-height: 0; }
+}
+@media (max-width: 620px) and (orientation: portrait) {
+  /* Width limits the whole-world view: spend it on the arena, then keep thumbs nearby. */
+  .game_shell:has(.gameplay:not([hidden])) { width: 100%; }
+  .gameplay { grid-template-rows: auto auto auto auto auto; flex: none; }
+  .arena_frame { width: calc(100% - 4px); height: auto; max-height: none; }
+  .gameplay .play_controls { padding: 12px 6px 0; }
+  .gameplay .touch_controls { gap: 12px; }
+  .gameplay .touch_button { min-height: 64px; }
+  .gameplay .orientation_hint { display: flex; align-items: center; gap: 12px; margin: 12px 6px; text-align: left; }
+  .orientation_hint > span { flex: 1; }
+  .arena_expand { flex: none; min-height: 56px; padding: 10px 12px; font-size: .75rem; }
+  .game_shell:has(.gameplay:not([hidden])) > .game_header,
+  .game_shell:has(.gameplay:not([hidden])) > .game_footer { padding-inline: 8px; }
+}
+@media (max-width: 620px) and (max-height: 620px) {
+  /* Short portrait screens reserve their height for readable status, arena and controls. */
+  .game_shell:has(.gameplay:not([hidden])) { padding-block: 6px; }
+  .game_shell:has(.gameplay:not([hidden])) > .game_header,
+  .game_shell:has(.gameplay:not([hidden])) > .game_footer { display: none; }
+}
+@media (min-width: 621px) and (max-height: 500px) {
+  .game_header { padding-block: 12px; }
+  /* Keep the stage goal, keyboard hint, and primary action together above optional facts. */
+  .briefing_panel, .result_panel { padding: 16px; }
+  .briefing_panel { grid-template-columns: 1fr; gap: 16px; align-items: start; }
+  .briefing_copy, .result_panel { display: flex; flex-direction: column; gap: 6px; }
+  .briefing_copy > *, .result_panel > * { margin: 0; }
+  .briefing_copy h2, .result_panel h2 { font-size: 2rem; }
+  .briefing_copy .panel_intro, .result_panel .panel_intro { font-size: 1rem; line-height: 1.5; }
+  .briefing_copy .panel_actions, .result_panel .panel_actions { margin-top: 0; align-self: start; }
+  .briefing_copy .stage_feel, .briefing_copy .tool_card,
+  .briefing_copy .medical_caption, .result_panel .medical_caption { order: 1; }
+  .briefing_copy .tool_card, .result_panel .medical_caption { margin-top: 10px; }
+  .menu_copy { padding-block: 26px; }
+  .menu_intro { font-size: .9rem; margin-block: 19px; }
+  .menu_intro br { display: none; }
+  .menu_intro strong { display: block; }
+  .menu_copy .eyebrow { margin-bottom: 17px; }
+  h1 { font-size: 4.4rem; }
+  .menu_art { overflow: hidden; }
+  .hero_arena { min-width: 350px; }
+  /* A sidebar gives the arena the full short viewport instead of stacking the HUD above it. */
+  .game_shell:has(.gameplay:not([hidden])) { width: calc(100% - 16px); padding-block: 6px; }
+  .game_shell:has(.gameplay:not([hidden])) > .game_header,
+  .game_shell:has(.gameplay:not([hidden])) > .game_footer { display: none; }
+  .gameplay { width: 100%; grid-template-columns: 260px minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 44px; gap: 6px 8px; }
+  .game_hud { grid-column: 1; grid-row: 1 / -1; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; gap: 8px; padding: 10px; border: 1px solid var(--line); border-radius: 10px; }
+  /* Status scrolls independently so Pause always owns a visible, unobstructed row. */
+  .hud_content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-self: stretch; align-content: start; align-items: center; gap: 3px; min-height: 0; overflow-y: auto; }
+  .game_hud .small_label { font-size: .65rem; letter-spacing: .03em; }
+  .hud_level { grid-column: 1 / -1; }
+  .hud_level > .small_label { display: none; }
+  .hud_level strong { font-size: .85rem; line-height: 1.4; }
+  .hud_lives { grid-column: 1; grid-row: 2; }
+  .hud_time { grid-column: 2; grid-row: 2; }
+  .hud_score { grid-column: 1 / -1; grid-row: 3; }
+  .hud_objective { grid-column: 1 / -1; grid-row: 4; gap: 4px; font-size: .8rem; }
+  .hud_objective strong { font-size: .8rem; }
+  .hud_weapon { grid-column: 1 / -1; grid-row: 5; justify-content: start; }
+  .hud_weapon strong { font-size: .8rem; }
+  .hud_tactics { grid-column: 1 / -1; grid-row: 6; gap: 4px; }
+  .tactic_badge { font-size: .75rem; }
+  .game_hud > #pause_button { grid-column: 1; grid-row: 2; min-height: 44px; padding: 8px; }
+  .arena_frame { grid-column: 2; grid-row: 1; max-height: calc((100cqw - 272px) * 9 / 16); border-radius: 8px; }
+  .play_controls { grid-column: 2; grid-row: 2; justify-content: center; padding: 0; }
+  .desktop_hint { display: none; }
+  .touch_controls { width: 100%; max-width: 530px; gap: 8px; }
+  .touch_button { flex: 1; min-height: 44px; padding: 6px 16px; }
+  .fire_button { flex: 1.5; justify-content: center; }
+  #celebration_status { grid-column: 2; margin: 0; }
+  .game_footer { padding-block: 10px; font-size: .57rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+  .action_button:hover, .action_button:active { transform: none; }
+}
+
+/* Campaign browsing stays separate from the viewport-fitted arena. */
+.stage_feel { margin: 0 0 14px; color: var(--teal); font-size: .9rem; font-weight: 700; }
+.practice_levels { grid-template-columns: 1fr; gap: 28px; }
+.practice_chapter h3 { margin: 0 0 12px; color: var(--teal); font-size: 1rem; }
+.practice_stages { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; }
+.practice_levels button:disabled { opacity: 1; color: #b7a9c1; border-color: #594763; background: #211c30; cursor: not-allowed; }
+.briefing_art .briefing_scene { width: 100%; max-width: 350px; border: 1px solid #665476; border-radius: 14px; filter: none; }
+@media (max-width: 620px) {
+  .briefing_art .briefing_scene { width: 100%; max-width: none; height: 82px; object-fit: contain; }
+  .briefing_art { grid-template-columns: 1fr 90px; gap: 14px; }
+}
+.medicine_cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-block: 22px; }
+.medicine_cards article { min-width: 0; border: 1px solid #665476; border-radius: 12px; padding: 12px; background: #15152b; }
+.medicine_cards img { display: block; width: 100%; height: 90px; object-fit: contain; border-radius: 8px; }
+.game_dialog .medicine_cards h3 { font-size: 1rem; margin: 12px 0 6px; }
+.game_dialog .medicine_cards p { font-size: .85rem; line-height: 1.5; margin: 0; }
+@media (max-width: 360px) { .medicine_cards { grid-template-columns: 1fr; } }
+
+/* Roster choice is intentionally cosmetic: every card has the same play contract. */
+.surgeon_roster_intro {
+  max-width: 52ch;
+  margin: -12px 0 18px;
+  color: #cbbdd2;
+  font-size: .84rem;
+  line-height: 1.55;
+}
+.surgeon_roster,
+.surgeon_cards {
+  display: grid;
+  /* Two columns preserve full names and the visible selection label in a dialog. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 24px;
+}
+.surgeon_card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  min-width: 0;
+  min-height: 110px;
+  /* A reserved caption row keeps every name clear of the selected badge. */
+  padding: 27px 10px 10px;
+  overflow: hidden;
+  border: 1px solid #665476;
+  border-radius: 13px;
+  color: var(--text);
+  background: linear-gradient(140deg, #17162a, #28213a);
+  box-shadow: inset 0 -2px 0 #0e0d1d80;
+  text-align: left;
+  transition: border-color .16s ease, background .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.surgeon_card:hover {
+  border-color: #ab95bf;
+  background: linear-gradient(140deg, #242039, #332443);
+  transform: translateY(-2px);
+}
+.surgeon_card::after {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  padding: 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: transparent;
+  content: "Selected";
+  font-size: .53rem;
+  font-weight: 850;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.surgeon_card[aria-pressed="true"] {
+  border-color: #85f1df;
+  background: linear-gradient(140deg, #18353a, #2d2843);
+  box-shadow: inset 0 0 0 2px #38d6c455, inset 0 -3px 0 #116c69, 0 7px 18px #090a183d;
+  transform: translateY(-2px);
+}
+.surgeon_card[aria-pressed="true"]::after {
+  border-color: #85f1df;
+  color: #d5fff7;
+  background: #123c3d;
+}
+.surgeon_portrait,
+.surgeon_portrait img {
+  grid-row: 1 / -1;
+  align-self: center;
+  width: 58px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 7px 5px #0a09165c);
+}
+.surgeon_name {
+  align-self: end;
+  font-size: .77rem;
+  line-height: 1.18;
+}
+.surgeon_name + span {
+  align-self: start;
+  color: #bdb0c5;
+  font-size: .63rem;
+  line-height: 1.35;
+}
+.surgeon_card[aria-pressed="true"] .surgeon_portrait,
+.surgeon_card[aria-pressed="true"] .surgeon_portrait img {
+  animation: roster_steady 2.8s ease-in-out infinite;
+}
+
+/* Horizontal portraits keep all six personalities in a compact desktop dialog. */
+.game_dialog:has(.surgeon_chooser) {
+  width: min(960px, calc(100% - 32px));
+  max-height: min(600px, calc(100dvh - 32px));
+}
+.game_dialog .surgeon_chooser .surgeon_roster_intro {
+  max-width: none;
+  margin: 0 0 14px;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+.surgeon_chooser .surgeon_roster { margin-bottom: 0; }
+.surgeon_chooser .surgeon_card {
+  grid-template-columns: 100px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 6px 10px;
+  min-height: 170px;
+  padding: 27px 12px 12px;
+  text-align: left;
+}
+.surgeon_chooser .surgeon_portrait {
+  grid-row: 1 / -1;
+  justify-self: center;
+  width: 100px;
+  height: 120px;
+  animation: none;
+}
+.surgeon_chooser .surgeon_name { font-size: .9rem; }
+.surgeon_chooser .surgeon_name + span {
+  display: block;
+  max-width: 25ch;
+  justify-self: start;
+  color: #d7cbdf;
+  font-size: .75rem;
+  line-height: 1.4;
+}
+.surgeon_chooser .surgeon_card::after {
+  top: 7px;
+  right: 8px;
+  padding: 2px 5px;
+  font-size: .53rem;
+}
+.surgeon_chooser .surgeon_card[aria-pressed="true"]::after { content: "Selected"; }
+.surgeon_chooser .surgeon_card:hover,
+.surgeon_chooser .surgeon_card[aria-pressed="true"] { transform: none; }
+.surgeon_chooser .surgeon_card:focus-visible {
+  outline: 3px solid #ffc857;
+  outline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .surgeon_chooser .surgeon_card {
+    grid-template-columns: 90px minmax(0, 1fr);
+    min-height: 156px;
+  }
+  .surgeon_chooser .surgeon_portrait { width: 90px; height: 110px; }
+}
+@media (max-width: 540px) {
+  .surgeon_chooser .surgeon_roster { grid-template-columns: 1fr; }
+}
+@media (max-width: 360px) {
+  .surgeon_chooser .surgeon_card {
+    grid-template-columns: 90px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    min-height: 142px;
+    gap: 6px 10px;
+    padding-inline: 8px;
+    text-align: left;
+  }
+  .surgeon_chooser .surgeon_portrait { grid-row: 1 / -1; width: 90px; height: 100px; }
+  .surgeon_chooser .surgeon_name + span { justify-self: start; }
+}
+@media (min-width: 621px) and (max-height: 620px) {
+  .game_dialog:has(.surgeon_chooser) { max-height: calc(100dvh - 24px); }
+  .surgeon_chooser .surgeon_card {
+    grid-template-columns: 76px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 5px 8px;
+    min-height: 128px;
+    padding: 24px 10px 10px;
+    text-align: left;
+  }
+  .surgeon_chooser .surgeon_portrait { grid-row: 1 / -1; width: 76px; height: 90px; }
+  .surgeon_chooser .surgeon_name { font-size: .8rem; }
+  .surgeon_chooser .surgeon_name + span { justify-self: start; font-size: .7rem; }
+}
+
+/* The campaign map is a heart-specific recovery view, not a numerical health claim. */
+.recovery_map {
+  --recovery-accent: #b84b67;
+  display: grid;
+  gap: clamp(18px, 3vw, 30px);
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 74% 32%, #8e384b25 0 9%, transparent 38%),
+    linear-gradient(135deg, #211e34, #302036);
+}
+.game_dialog .recovery_map {
+  grid-template-columns: minmax(280px, .9fr) minmax(360px, 1.1fr);
+  grid-template-areas:
+    "art intro"
+    "art stages"
+    "legend stages"
+    "notice notice";
+  column-gap: clamp(22px, 4vw, 46px);
+  align-items: start;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.recovery_map_intro { max-width: 710px; }
+.game_dialog .recovery_map_intro { grid-area: intro; }
+.game_dialog .recovery_map_intro .eyebrow { margin: 0 0 8px; font-size: .58rem; }
+.game_dialog .recovery_map_intro h2 { margin-bottom: 8px; font-size: clamp(1.25rem, 2.2vw, 1.7rem); }
+.game_dialog .recovery_vitality { font-size: .82rem; line-height: 1.4; }
+.recovery_map_intro h2 { margin-bottom: 12px; }
+.recovery_vitality {
+  margin: 0;
+  color: #d6c8d6;
+  font-size: clamp(.9rem, 1.6vw, 1.05rem);
+  line-height: 1.55;
+}
+.recovery_map_art {
+  position: relative;
+  width: min(100%, 720px);
+  margin-inline: auto;
+  /* Matches the 1000 x 640 cardiac recovery artwork so route overlays stay registered. */
+  aspect-ratio: 25 / 16;
+  overflow: clip;
+  border: 1px solid #775064;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 45%, #542335 0, #2d1b32 56%, #17162a 100%);
+  box-shadow: inset 0 0 0 1px #e1879540, 0 18px 34px #0e0d1d4f;
+}
+.game_dialog .recovery_map_art { grid-area: art; width: 100%; }
+.recovery_map_illustration,
+.recovery_patient_overlay,
+.recovery_map_svg,
+.recovery_stage_buttons {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.recovery_map_illustration { object-fit: cover; }
+.recovery_patient_overlay { pointer-events: none; }
+.recovery_map_svg { pointer-events: none; }
+.recovery_connector,
+.recovery_territory,
+.recovery_territory_vessel { transition: opacity .25s ease, filter .25s ease; }
+.recovery_connector { fill: none; stroke: #b9869a; stroke-width: 3; stroke-linecap: round; opacity: .38; }
+.recovery_connector[data-completed="true"] { stroke: #ffbdc4; opacity: .9; filter: drop-shadow(0 0 3px #ff9eab); }
+.recovery_territory { fill: #be5b72; opacity: .22; }
+.recovery_territory[data-completed="true"] { fill: #f48691; filter: drop-shadow(0 0 7px #ef7180); }
+.recovery_territory_vessel { fill: none; stroke: #9d5069; stroke-width: 2.4; stroke-linecap: round; opacity: .38; }
+.recovery_territory_vessel[data-completed="true"] { stroke: #ffbdc4; opacity: 1; filter: drop-shadow(0 0 4px #ff9eab); }
+.recovery_lesion {
+  fill: #f0a73f;
+  stroke: #ffe0a2;
+  stroke-width: .65;
+  opacity: .92;
+  filter: drop-shadow(0 0 3px #f3a640aa);
+  transition: opacity .25s ease, filter .25s ease;
+}
+.recovery_lesion[data-completed="true"] { opacity: 0; filter: none; }
+.recovery_marker { fill: #b7a4bd; }
+.recovery_marker[data-completed="true"] { fill: #baf8ea; }
+.recovery_stage_buttons { display: none; }
+.recovery_stage {
+  position: absolute;
+  left: var(--map-x);
+  top: var(--map-y);
+  display: grid;
+  place-items: center;
+  width: clamp(38px, 6vw, 52px);
+  aspect-ratio: 1;
+  padding: 2px;
+  border: 2px solid #8f788c;
+  border-radius: 50%;
+  color: #fff5e8;
+  background: #312339;
+  box-shadow: 0 3px 0 #140f20, 0 0 0 4px #1b1725b0;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  transition: border-color .15s ease, background .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+.recovery_stage:hover:not(:disabled) { transform: translate(-50%, calc(-50% - 2px)); }
+.recovery_stage[data-state="completed"] { border-color: #85f1df; background: #1a5b5c; box-shadow: 0 3px 0 #103d40, 0 0 0 4px #1b1725b0; }
+.recovery_stage[data-state="current"] { border-color: #ffc857; background: #75423a; box-shadow: 0 3px 0 #4d2928, 0 0 0 4px #1b1725b0, 0 0 15px #ffc85777; }
+.recovery_stage[data-state="unlocked"] { border-color: #d7c6e0; background: #493652; }
+.recovery_stage[data-state="locked"] { border-color: #57485e; color: #a196aa; background: #282032; }
+.recovery_stage[data-newly-completed="true"] { animation: recovery_pulse 1.15s ease-in-out 2; }
+.recovery_stage_chapter {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width: max-content;
+  max-width: 92px;
+  overflow: hidden;
+  color: #e2d5e0;
+  font-size: .49rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.recovery_stage_label { font-size: clamp(.55rem, 1.25vw, .69rem); }
+.recovery_stage:disabled { opacity: 1; cursor: not-allowed; }
+.recovery_stage[data-state="locked"] .recovery_stage_label { font-size: 0; }
+.recovery_stage[data-state="locked"] .recovery_stage_label::after { content: "LOCK"; font-size: .48rem; letter-spacing: .06em; }
+.recovery_map_legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  color: #c9bccf;
+  font-size: .72rem;
+  line-height: 1.4;
+}
+.game_dialog .recovery_map_legend { grid-area: legend; margin: 0; }
+.recovery_map_legend span { display: inline-flex; align-items: center; gap: 6px; }
+.recovery_map_legend span::before { width: 10px; height: 10px; border: 2px solid currentColor; border-radius: 50%; content: ""; }
+.recovery_stage_list {
+  grid-area: stages;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+.game_dialog .recovery_stage_list { max-height: 240px; overflow-y: auto; overscroll-behavior: contain; align-content: start; }
+.recovery_stage_list_button {
+  min-width: 0;
+  min-height: 42px;
+  padding: 7px 8px;
+  border: 1px solid #665476;
+  border-radius: 9px;
+  color: #fff5e8;
+  background: #1a182c;
+  overflow: hidden;
+  font-size: .58rem;
+  font-weight: 750;
+  line-height: 1.18;
+  text-align: left;
+}
+.recovery_stage_list_button[data-state="completed"] { border-color: #85f1df; background: #164849; }
+.recovery_stage_list_button[data-state="current"] { border-color: #ffc857; background: #553438; box-shadow: inset 0 0 0 1px #ffc85766; }
+.recovery_stage_list_button[data-state="locked"] { color: #aba0b1; border-color: #4b414f; background: #211c2d; }
+.recovery_stage_list_button:disabled { opacity: 1; cursor: not-allowed; }
+.recovery_newly_cleared {
+  grid-area: notice;
+  min-height: 1.5em;
+  margin: -14px 0 0;
+  color: #baf8ea;
+  font-size: .86rem;
+  font-weight: 700;
+}
+/* A clear ends with its visible patient consequence, followed by one next-stage action. */
+.result_panel:has(.recovery_result) { padding: clamp(18px, 3vw, 36px); }
+.result_panel:has(.recovery_result) > h2 { margin-bottom: 12px; font-size: clamp(1.6rem, 3.6vw, 2.6rem); }
+.recovery_outcome { margin: 0 0 14px; color: var(--teal); font-weight: 700; line-height: 1.45; }
+.recovery_result {
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(14px, 3vw, 32px);
+  padding: 16px;
+  border-radius: 18px;
+}
+.recovery_result .recovery_map_art { width: 100%; max-width: 480px; }
+.recovery_result .eyebrow { margin-bottom: 10px; }
+.recovery_result .recovery_map_intro h2 { font-size: clamp(1.25rem, 2.4vw, 1.8rem); }
+.recovery_result .recovery_territory[data-highlighted="true"],
+.recovery_result .recovery_territory_vessel[data-highlighted="true"] {
+  opacity: 1;
+  stroke: #baf8ea;
+  stroke-width: 1.4;
+  filter: drop-shadow(0 0 5px #85f1df);
+  animation: restored_route 1.2s ease-in-out 2;
+}
+.result_panel:has(.recovery_result) .panel_actions { margin-top: 10px; }
+.result_panel:has(.recovery_result) #result_summary { margin-top: 24px; font-size: .9rem; }
+@keyframes restored_route {
+  50% { opacity: .5; }
+}
+@media (max-width: 620px) {
+  .recovery_result { grid-template-columns: 1fr; gap: 12px; padding: 12px; }
+  .recovery_result .recovery_map_art { max-width: 340px; }
+  .recovery_result .recovery_map_intro h2 { margin-bottom: 6px; font-size: 1.15rem; }
+  .recovery_result .eyebrow { display: none; }
+  .recovery_result .recovery_vitality { font-size: .8rem; line-height: 1.4; }
+  .result_panel:has(.recovery_result) .panel_actions > #continue_button,
+  .result_panel:has(.recovery_result) .panel_actions > #retry_button { flex-basis: 100%; }
+}
+@media (min-width: 621px) and (max-height: 500px) {
+  .result_panel:has(.recovery_result) { padding: 12px; gap: 4px; }
+  .result_panel:has(.recovery_result) > h2 { margin-bottom: 4px; font-size: 1.6rem; }
+  .result_panel:has(.recovery_result) .panel_actions { margin-top: 0; }
+  .recovery_result { grid-template-columns: minmax(0, 180px) minmax(0, 1fr); padding: 10px; }
+  .recovery_outcome { margin-bottom: 0; font-size: .85rem; }
+  .recovery_result .recovery_map_intro h2 { margin-bottom: 6px; font-size: 1.1rem; }
+  .recovery_result .eyebrow { display: none; }
+  .recovery_result .recovery_vitality { font-size: .8rem; }
+}
+@keyframes roster_steady {
+  50% { transform: translateY(-2px) rotate(-1deg); }
+}
+@keyframes recovery_pulse {
+  50% { box-shadow: 0 3px 0 #4d2928, 0 0 0 8px #ffc85766, 0 0 20px #ffc857a3; }
+}
+@media (max-width: 620px) {
+  .game_dialog:has(.recovery_map) { width: min(560px, calc(100% - 32px)); }
+  .game_dialog:has(.recovery_map)[open] { height: calc(100dvh - 32px); }
+  .surgeon_roster,
+  .surgeon_cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .surgeon_card {
+    grid-template-columns: 50px minmax(0, 1fr);
+    min-height: 100px;
+    padding: 24px 8px 8px;
+  }
+  .surgeon_portrait,
+  .surgeon_portrait img { width: 50px; height: 64px; }
+  .surgeon_name { font-size: .72rem; }
+  .surgeon_card::after { top: 5px; right: 5px; padding: 1px 3px; font-size: .46rem; }
+  .surgeon_card[aria-pressed="true"]::after { content: "ON"; }
+  .game_dialog .recovery_map {
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "art" "legend" "stages" "notice";
+    gap: 18px;
+    padding: 16px;
+    border-radius: 18px;
+  }
+  .game_dialog .recovery_stage_list { max-height: 240px; }
+  .recovery_map_art { border-radius: 14px; }
+  .recovery_map_legend { justify-content: center; font-size: .66rem; }
+}
+@media (max-width: 360px) {
+  .surgeon_roster,
+  .surgeon_cards { grid-template-columns: 1fr; }
+  .surgeon_card { grid-template-columns: 62px minmax(0, 1fr); }
+  .surgeon_portrait,
+  .surgeon_portrait img { width: 62px; height: 70px; }
+  .recovery_stage_list { grid-template-columns: 1fr; }
+}
+@media (min-width: 621px) and (max-height: 620px) {
+  .game_dialog { max-height: calc(100dvh - 24px); padding: 18px 24px; }
+  .game_dialog h2 { margin-bottom: 12px; font-size: 1.75rem; }
+  .surgeon_roster_intro { margin: -4px 0 10px; font-size: .76rem; }
+  .surgeon_roster,
+  .surgeon_cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px; }
+  .surgeon_card { grid-template-columns: 42px minmax(0, 1fr); min-height: 70px; padding: 20px 7px 7px; column-gap: 6px; }
+  .surgeon_portrait,
+  .surgeon_portrait img { width: 42px; height: 48px; }
+  .surgeon_name { font-size: .67rem; }
+  .surgeon_name + span { display: none; }
+  .surgeon_card::after { top: 4px; right: 4px; padding: 1px 3px; font-size: .42rem; }
+  .game_dialog:has(.recovery_map) { max-height: calc(100dvh - 24px); }
+}
+
+/* A single patient's earned routes connect briefing, terminal clear and result. */
+.briefing_panel:has(.recovery_briefing) { padding: clamp(22px, 3vw, 38px); grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; }
+.briefing_panel:has(.recovery_briefing) h2 { margin-bottom: 16px; font-size: clamp(2rem, 3.5vw, 3rem); }
+.briefing_panel:has(.recovery_briefing) .tool_card { margin-top: 18px; padding: 14px; }
+.briefing_panel:has(.recovery_briefing) .medical_caption { margin-block: 14px; }
+.briefing_panel:has(.recovery_briefing) .panel_actions { margin-top: 14px; gap: 10px; }
+.briefing_details { margin-top: 18px; color: #d6c8d6; font-size: .85rem; line-height: 1.5; }
+.briefing_details summary { cursor: pointer; color: var(--teal); padding-block: 8px; }
+.briefing_details li + li { margin-top: 8px; }
+.recovery_briefing { gap: 16px; padding: 16px; border-radius: 18px; }
+.recovery_briefing .recovery_map_intro h2 { font-size: clamp(1.2rem, 2vw, 1.6rem); margin-bottom: 10px; }
+.recovery_briefing .eyebrow { margin-bottom: 10px; }
+.recovery_briefing .recovery_vitality { font-size: .85rem; }
+.recovery_route_focus { margin: 10px 0 0; color: #baf8ea; font-size: .85rem; line-height: 1.5; }
+.recovery_briefing .recovery_territory[data-highlighted="true"] { stroke: #ffc857; stroke-width: 1.2; opacity: 1; }
+.recovery_result .recovery_territory[data-highlighted="true"],
+.recovery_result .recovery_territory_vessel[data-highlighted="true"] { animation: none; }
+.recovery_result .recovery_territory[data-newly-completed="true"] { animation: route_recovery 1.4s ease-out both; }
+.recovery_result .recovery_territory_vessel[data-newly-completed="true"] { animation: vessel_recovery 1.4s ease-out both; }
+.recovery_result .recovery_lesion[data-newly-completed="true"] { animation: lesion_recovery 1.4s ease-out both; }
+@keyframes route_recovery { from { fill: #be5b72; opacity: .22; filter: none; } to { opacity: 1; } }
+@keyframes vessel_recovery { from { stroke: #9d5069; opacity: .38; filter: none; } to { opacity: 1; } }
+@keyframes lesion_recovery { from { opacity: .92; } to { opacity: 0; } }
+.celebration_recovery { position: absolute; z-index: 3; top: 12px; right: 12px; width: clamp(170px, 25%, 240px); pointer-events: none; }
+.celebration_recovery .recovery_result { display: flex; flex-direction: column; gap: 8px; padding: 8px; background: #211e34ed; }
+.celebration_recovery .recovery_map_art { border-radius: 10px; }
+.celebration_recovery .eyebrow, .celebration_recovery .recovery_vitality { display: none; }
+.celebration_recovery .recovery_map_intro h2 { margin: 0; font-size: 1rem; line-height: 1.3; }
+@media (max-width: 620px), (max-height: 500px) {
+  .briefing_panel:has(.recovery_briefing) { grid-template-columns: 1fr; gap: 18px; }
+  .recovery_briefing { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; padding: 12px; }
+  .recovery_briefing .eyebrow { display: none; }
+  .recovery_briefing .recovery_map_intro h2 { font-size: 1rem; }
+  .recovery_briefing .recovery_vitality, .recovery_route_focus { font-size: .8rem; }
+  .celebration_recovery { width: 150px; top: 8px; right: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recovery_result .recovery_territory[data-newly-completed="true"],
+  .recovery_result .recovery_territory_vessel[data-newly-completed="true"],
+  .recovery_result .recovery_lesion[data-newly-completed="true"] { animation: none; }
+}

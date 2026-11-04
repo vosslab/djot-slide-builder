@@ -1,3 +1,13 @@
+## 2026-11-04
+
+### Updates
+
+- Recover the Stump the Vibe Coder flyer from the October 29, 2026, 11:42:22 Time Machine
+  backup using `tmutil restore`. Restore `_temp/stvc-flyer/`, the
+  `_temp/stvc-next/current-flyer.png` review image, and the final PDF, WebP, builder, assets,
+  and three companion regeneration scripts in `output/pdf/`. All 63 restored files match
+  the backup byte-for-byte; visually inspect the recovered final WebP. Do not rebuild.
+
 ## 2026-11-03
 
 ### Updates
