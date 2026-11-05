@@ -30,19 +30,33 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 - [Summer 2027]{color=purple}
   - BIOL 383/483: Biology and Ethics in Film
 
-=== layout: one-panel
+=== layout: one-plus-two-panels
 
 # Biochemistry Lecture
 
-@body
+@left
 
-- BCHM 355/455, [Spring 2027]{color=blue}
-- Thursday afternoons, 1:30-4:30 p.m.
-- Face-to-face, Schaumburg
-- We go into great detail on protein structure, enzyme function, and other macromolecules.
-- Protein purification, separation methods, and enzyme kinetics.
-- Protein-structure assignments: make images in UCSF Chimera and explain what they show.
-- Connect a molecule's structure with what it does.
+- [*Structure explains function*]{color=blue}
+  - We go into great detail on protein structure, enzyme function, and other macromolecules.
+  - Protein purification, separation methods, and enzyme kinetics.
+- [*Protein-structure assignments*]{color=blue}
+  - Make images in UCSF Chimera and explain what they show.
+  - Connect a molecule's structure with what it does.
+
+@top-right
+
+![Upper-Level Introductory Biochemistry textbook cover](repo:evergreen/assets/upcoming_courses/biochemistry_textbook_cover.png)
+
+@bottom-right
+
+- BCHM 355-20 / 455-20, [Spring 2027]{color=blue}; 3 credits
+  - Thursdays, 2:00-4:30 p.m.; SCH 612
+  - January 19-May 10 (Session 1)
+  - CRNs: 355 = 24780; 455 = 24781
+
+@citation
+
+Textbook cover: Biology LibreTexts. https://bio.libretexts.org/@api/deki/files/93423/mindtouch.page%2523thumbnail?revision=5
 
 === layout: one-panel
 
@@ -50,13 +64,16 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 
 @body
 
-- BCHM 356/456, [Spring 2027]{color=blue}
-- Face-to-face, Schaumburg
-- Less structured and more independent study-like
-- Enzyme assays and kinetics: measure reaction rates and interpret the data.
-- Isolation and analysis of biological macromolecules.
-- Explore protein sequence, structure, and folding using molecular software and databases.
-- Experimental design, data collection, graphs, and interpretation are part of the lab work.
+- BCHM 356-20 / 456-20, [Spring 2027]{color=blue}; 3 credits
+  - Tuesdays, 10:00 a.m.-1:55 p.m.; SCH 550
+  - Face-to-face, Schaumburg; January 19-May 10 (Session 1)
+  - CRNs: BCHM 356 = 22046; BCHM 456 = 22049
+- [*Less structured and more independent study-like*]{color=blue}
+  - Enzyme assays and kinetics: measure reaction rates and interpret the data.
+  - Isolation and analysis of biological macromolecules.
+  - Explore protein sequence, structure, and folding using molecular software and databases.
+- [*Experimental design and analysis*]{color=blue}
+  - Data collection, graphs, and interpretation are part of the lab work.
 
 === layout: one-panel
 
@@ -65,12 +82,13 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 @body
 
 - BIOL 301, [Spring 2027]{color=blue}
-- The chemistry of life: biological molecules and how they work in cells.
-- Cell structure, membranes, transport, and communication.
-- Cellular energy: respiration and photosynthesis.
-- DNA, gene expression, and regulation.
-- The course combines lecture, laboratory, and discussion.
-- [My teaching assignment is not confirmed yet.]{color=red}
+  - [My teaching assignment is not confirmed yet.]{color=red}
+- [*The chemistry of life*]{color=blue}
+  - Biological molecules and how they work in cells.
+  - Cell structure, membranes, transport, and communication.
+  - Cellular energy: respiration and photosynthesis.
+  - DNA, gene expression, and regulation.
+- [*Lecture, laboratory, and discussion*]{color=blue}
 
 === layout: one-panel
 
@@ -78,9 +96,13 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 
 @body
 
-- BIOL 383/483, [Summer 2027]{color=purple}
-- Tuesday/Thursday evenings, 6-9 p.m., over Zoom
-- Watch a feature film, then discuss its biology, science, and ethical questions.
-- Weekly journal prompts ask you to make a case, include your opinions, and think critically.
-- Most of the grade is a weekly writing prompt; getting it done is key.
-- Give quick post-film "hot takes" and make a group movie-review podcast.
+- BIOL 383-20 / 483-20, [Summer 2027]{color=purple}; 3 credits
+  - Tuesdays/Thursdays, 6-9 p.m., over Zoom
+  - July 6-August 9 (Session D)
+  - CRNs: BIOL 383 = 32156; BIOL 483 = 32157
+- [*Watch a feature film, then discuss*]{color=purple}
+  - Explore its biology, science, and ethical questions.
+  - Give quick post-film "hot takes" and make a group movie-review podcast.
+- [*Weekly journal prompts*]{color=purple}
+  - Make a case, include your opinions, and think critically.
+  - Most of the grade is a weekly writing prompt; getting it done is key.

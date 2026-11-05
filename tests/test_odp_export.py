@@ -380,9 +380,9 @@ def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, cour
 	root = package.parse_xml(exporter._content_xml(
 		plan, theme, exporter._layout_names(plan), {}), "content.xml")
 	colors = []
-	for slide in plan.slides:
-		frame = next(item for item in slide.objects if isinstance(item.content, content.ShapeContent))
-		assert frame.content.style.fill_role is None
+	frame = next(item for item in plan.slides[0].objects
+		if isinstance(item.content, content.ShapeContent))
+	assert frame.content.style.fill_role is None
 	for page in root.findall(f".//{{{exporter.DRAW_NS}}}page"):
 		style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
 			if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page.attrib[f"{{{exporter.DRAW_NS}}}style-name"])
@@ -393,6 +393,22 @@ def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, cour
 	assert all(int(colors[1][index:index + 2], 16) <= int(colors[0][index:index + 2], 16)
 		for index in (1, 3, 5))
 	assert plan.slides[1].surface.background_role is primitives.StyleRole.SUBSECTION
+	# The hierarchy must remain visible without relying only on hue differences.
+	shapes = [next(item.content.kind for item in slide.objects
+		if isinstance(item.content, content.ShapeContent)) for slide in plan.slides]
+	assert shapes == [primitives.ShapeKind.ROUNDED_RECTANGLE, primitives.ShapeKind.RECTANGLE]
+	for slide, alignment in zip(plan.slides,
+			(primitives.HorizontalAlignment.CENTER, primitives.HorizontalAlignment.CENTER)):
+		title = next(item for item in slide.objects if isinstance(item.content, content.TextContent))
+		assert title.content.paragraphs[0].properties.horizontal_alignment is alignment
+	stripes = [item.rectangle for item in plan.slides[1].objects
+		if isinstance(item.content, content.ShapeContent)]
+	assert len(stripes) == 2
+	top, bottom = stripes
+	assert top.x == bottom.x == 0
+	assert top.width == bottom.width == primitives.LOGICAL_SLIDE_WIDTH
+	assert top.height == bottom.height
+	assert top.y == primitives.LOGICAL_SLIDE_HEIGHT - bottom.y - bottom.height
 
 
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:

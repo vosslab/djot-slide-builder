@@ -21,6 +21,10 @@ expanded current Djot study deck and are not Git-tracked.
 | 7 | `nonviral_delivery_legacy.png` | 25 | nonviral delivery comparison |
 | 7 | `nonviral_carriers_legacy.png` | 25 | second original carrier/uptake comparison, restored from imported image 015 |
 | 9 | `aptamer_ribozyme_legacy.png` | 30 | aptamer and ribozyme designs |
+| 2 | `ex_vivo_in_vivo_2025.png` | 2025 student slide 17, `image6.png` | ex vivo/in vivo delivery routes |
+| 6 | `retrovirus_structure_2025.png` | 2025 student slide 27, `image16.png` | retrovirus structure |
+| 9 | `aptamer_binding_2025.png` | 2025 student slide 34, `image47.png` | folded aptamer target binding |
+| 9 | `aptamer_selection_selex_2023.png` | 2023 student slide 34, `10000000000006620000031A67B1D2348472C172.png` | SELEX cycle: target binding, partition, elution, amplification, and enrichment |
 | 10 | `cf_airway_legacy.jpg` | 14 | CF airway biology |
 | 10 | `cf_gene_therapy_legacy.png` | 15 | CF delivery context |
 | 10 | `cf_adenovirus_legacy.png` | 16 | historical adenovirus result |
@@ -28,3 +32,11 @@ expanded current Djot study deck and are not Git-tracked.
 The legacy date-specific numerical and clinical claims are not adopted as
 current claims. The rewritten surrounding slides label historical results and
 ask students to identify vector, target, endpoint, comparison, and follow-up.
+
+The retained 2025 and 2023 student-deck figures are visual teaching prompts. Their original
+slide prose is not adopted as scientific authority; the existing surrounding
+native text supplies the explanation and evidence boundaries.
+
+Rejected during the final figure review: `aav_design_2025.png` labels loss after an
+episomal AAV in a non-dividing cell and is not shown. `aptamer_selection_2025.png`
+depicts generic transcription and translation rather than iterative selection. Their rejected local copies were removed; the original annual sources remain unchanged.

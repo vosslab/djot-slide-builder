@@ -28,7 +28,7 @@ color-theme: biotechnology
 - [*Form your group.*]{color=red} Bring ideas about who you can work with and which company you want to develop.
 - Set #6: Regulation Biotechnology
 - Homework 5 is assigned; check Blackboard for instructions and the submission deadline.
-- Looking ahead: select your group's project by November 19.
+- Looking ahead: select your group's project using the Company Vision Report (Form), due November 19.
 
 === layout: big-image
 
@@ -82,21 +82,7 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === include: repo:biotech/evergreen/course_information.djot
 
-=== layout: two-panels
-hidden: true
-
-# How to Use Zoom Like a Pro
-
-@left
-
-- Mute yourself when you are not speaking.
-- Plug in your headphones.
-- Turn off video if your connection is slow.
-- Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
-
-@right
-
-![Zoom guidance](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/image_003.png)
+=== include: repo:biotech/evergreen/zoom_guidance.djot
 
 === layout: section
 
@@ -160,8 +146,7 @@ https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 - Your individual projects are complete.
 - Now use the pitches, feedback, and executive summaries to choose a shared company.
 - [*Nov 12:* groups formed.]{color=red}
-- *Nov 19:* group project selected.
-- *Dec 3:* Company Vision Report form.
+- *Nov 19:* select your group project by completing the Company Vision Report (Form).
 - *Dec 10:* group presentations.
 - *Dec 17:* group business plan due.
 
@@ -277,6 +262,10 @@ hidden: true
 - Evaluation completion can add up to five more days.
 - I can see only total completion, not individual students' responses.
 - Watch for the confirmed evaluation window and any announced adjusted deadline.
+
+=== layout: subsection
+
+# Veridian Dynamics
 
 === layout: two-panels
 

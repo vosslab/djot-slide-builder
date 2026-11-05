@@ -40,6 +40,16 @@ Recognize an RNA sequence and catalyze a cut. The intended RNA and biological ef
 
 Topic 9: Nucleic Acids Can Recognize Targets
 
+=== layout: big-image
+
+@image
+
+![Aptamer target binding](assets/set5_gene_therapy/aptamer_binding_2025.png)
+
+@caption
+
+Topic 9: A Folded Aptamer Can Bind a Target
+
 === layout: four-panels
 
 # 9. How Do We Find a Useful Sequence?
@@ -67,6 +77,16 @@ Selection increases candidate binders; sequencing identifies them.
 ## Test in context
 
 High affinity in a tube is not proof of stability, entry, or action in a patient.
+
+=== layout: big-image
+
+@image
+
+![SELEX cycle enriches aptamers that bind a selected target](assets/set5_gene_therapy/aptamer_selection_selex_2023.png)
+
+@caption
+
+Topic 9: Iterative Aptamer Selection
 
 === layout: one-panel
 

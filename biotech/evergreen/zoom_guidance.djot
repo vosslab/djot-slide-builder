@@ -1,0 +1,58 @@
+=== layout: two-panels
+
+# How to Use Zoom Like a Pro
+
+@left
+
+- Mute yourself when you are not speaking.
+- Plug in your headphones or earbuds.
+- Turn off video if your connection is slow.
+- Join class: [{{course_url:zoom_short}}]({{course_url:zoom}})
+
+@right
+
+![Zoom guidance: avoid noisy audio](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/image_003.png)
+
+=== layout: two-panels
+
+# Setting Your Name in Zoom
+
+@left
+
+- Use your proper first name or a consistent nickname.
+- Discussion marks are assigned by sorting names alphabetically by first name.
+- Avoid:
+  - Last name first (e.g., "Smith Jane").
+  - Something obscure (e.g., "iPhone User").
+  - A different name each time: consistency is key.
+
+@right
+
+## Change Your Name During Class
+
+1. Open *Participants*.
+2. Find your name and choose *More* or the three-dot menu.
+3. Select *Rename*.
+4. Enter your display name and select *Change* (or *Done* on mobile).
+
+@citation
+
+Zoom display-name instructions: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061891
+
+=== layout: one-panel
+
+# Change Name Before a Meeting
+
+@body
+
+- Set your display name before class so it is ready when you join.
+  1. Sign in to the Zoom web portal.
+  2. Open your profile picture or initials, then *Profile*.
+  3. Select *Edit* beside your name.
+  4. Set your *Display Name* to your proper first name or consistent nickname.
+  5. Select *Save*.
+- In the desktop app, *Profile* then *My profile* opens the web profile.
+
+@citation
+
+Zoom display-name instructions: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061891

@@ -104,11 +104,22 @@ Topic 25: Historical Classification: Embryonic Stem-Cell Lines Are Pluripotent, 
 
 @right
 
-![Stem-cell sources and differentiated descendants](assets/set5_stem_cells/stem_cell_properties.png)
+![Embryonic stem-cell culture from an early embryo](assets/set5_stem_cells/embryonic_stem_cell_culture_2023.png)
 
 @citation
 
 Takahashi and Yamanaka, 2006: https://doi.org/10.1016/j.cell.2006.07.024
+
+=== layout: big-image
+
+@image
+
+![Embryonic stem-cell culture from an early embryo](assets/set5_stem_cells/embryonic_stem_cell_culture_2023.png)
+
+@caption
+
+Topic 25: From the Inner Cell Mass to an Embryonic Stem-Cell Culture
+
 
 === layout: subsection
 
@@ -334,7 +345,7 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 
 @right
 
-![A manufacturing path before an immune-cell infusion](assets/set5_stem_cells/immune_manufacturing_2025.png)
+![A T cell before and after addition of a chimeric antigen receptor](assets/set5_stem_cells/car_t_cell_2025.png)
 
 === layout: two-panels
 

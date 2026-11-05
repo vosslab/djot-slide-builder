@@ -153,12 +153,13 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
-	"""Build one centered transition card in LibreOffice's Centered Text member."""
+	"""Distinguish framed chapter cards from symmetric, striped topic dividers."""
+	is_subsection = contract.name == "subsection"
 	rectangle = slide_lib.layout_primitives.LogicalRectangle(150, 235, 980, 330)
 	frame = dataclasses.replace(_frame_text(),
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
 	transition_theme = dataclasses.replace(theme,
-		standard_title_size_pt=SECTION_TITLE_SIZE_PT,
+		standard_title_size_pt=42.0 if is_subsection else SECTION_TITLE_SIZE_PT,
 		ordinary_body_size_pt=SECTION_SUBTITLE_SIZE_PT)
 	sizes = slide_lib.layout_size_selection.select_centered_heading_sizes(
 		headings[0], headings[1:], rectangle, transition_theme, contract.name, session)
@@ -195,9 +196,18 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		None,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
+	decorations = (border,)
+	if is_subsection:
+		decorations = tuple(_decorative_shape(f"subsection-{edge}-stripe",
+			slide_lib.layout_primitives.LogicalRectangle(0, y, 1280, 8),
+			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
+			slide_lib.layout_primitives.StyleRole.DECORATION,
+			slide_lib.layout_primitives.StyleRole.DECORATION,
+			slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 0, order)
+			for order, (edge, y) in enumerate((("top", 80), ("bottom", 712)), 1))
 	surface = slide_lib.layout_primitives.SlideSurface(
 		background_role, False)
-	return SpecialtySlideComponents((slot,), (border, item), surface)
+	return SpecialtySlideComponents((slot,), (*decorations, item), surface)
 
 
 def theend_components(deck: slide_lib.native_model.Deck,

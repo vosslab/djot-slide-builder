@@ -404,6 +404,10 @@ outside a named slot; required named slots still appear where listed.
 | `gallery` | project custom | `gallery` | title only | Two through six component images are the teaching focus. |
 | `big-image` | project custom | `image`, `caption` | no | One focal image needs the main page area with a short bottom caption. |
 
+`section` uses a large centered title in a rounded frame. `subsection` uses a smaller,
+centered title and matching full-width horizontal stripes near the top and bottom,
+on a darker course background.
+
 For `two-panels` with an image and text, place either kind in `@left` and the other in `@right`.
 Vary the image side through the deck, alternating on consecutive image/text slides. Express the
 placement in these existing slots; the compiler renders the sides exactly as authored.

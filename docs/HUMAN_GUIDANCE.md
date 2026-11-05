@@ -181,6 +181,27 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 ## Course links and evergreen announcements
 
+- Keep subsection dividers bilaterally symmetric like the theme. Replace the short underline
+  with full horizontal stripes, one at the top and one at the bottom.
+
+- Remove the obsolete Gmail-account warning from my contact slide; that issue was in 2019.
+  Preserve the purple anonymous-form option and hanging bullet indents. Email addresses
+  should be italic and styled as clickable links, like URLs.
+
+- BIOL 480 Biotechnology has a course Zoom link, unlike Genetics and Biostatistics. Include
+  the class Zoom link and headphones/earbuds reminder in Biotechnology announcements, and
+  preserve its course-specific Zoom guidance in the announcement-deck guide.
+
+- Put a Veridian Dynamics subsection transition before its episode slide. Make section and
+  subsection dividers visibly distinct; their previous treatments were hard to tell apart.
+
+- Give course slides nested bullet hierarchy rather than a flat list. Use a textbook-cover
+  image for BCHM 355/455, using the LibreTexts image I supplied (November 5, 2026).
+
+- Use my November 5 Course Finder listings for Spring/Summer 2027 logistics: biochemistry
+  lecture Thursday 2-4:30 p.m. (SCH 612), lab Tuesday 10 a.m.-1:55 p.m. (SCH 550),
+  and film Tuesday/Thursday 6-9 p.m. on Zoom, July 6-August 9. Preserve the course descriptions.
+
 - The working guide for `lect##a` preparation is [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md). This section records the instructor's stated preferences; the guide assembles them into the current weekly workflow.
 
 - Canonical announcement order: title, agenda, Next Week, weather, icebreaker, Informational Slides,
@@ -209,6 +230,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - Roll out group-project details as needed. With presentations a month away, hide the finer
   presentation details; the current focus is group formation and the group vision form.
 - For now, show only that the group presentation exists, its point value, and its date.
+- Selecting the group project means completing the Company Vision Report (Form). Both are due
+  November 19, 2026; December 3 is too late.
+- Enrich the talking-point slides with more useful images from the annual student decks.
+  The instructional content is fine; improve the overly plain visual presentation while preserving it.
 - Use the successful Set #4 approach for Set #5: combine the Fall 2021-2026 student material
   with my expanded instructor ODP, using the 37-topic 2026 list to control coverage and order.
 - General Announcements rarely has more than one active topic: Graduating Students in the first
@@ -232,8 +257,8 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   and content. Preserve those descriptions instead of reducing each page to scheduling details.
 - I generally teach the same courses every year; mostly change the year to 2027 and also
   list my summer course.
-- BCHM 355/455 Biochemistry Lecture: Thursday afternoons, 1:30-4:30 p.m., face-to-face
-  Schaumburg. BCHM 356/456: face-to-face Schaumburg, less structured and more independent study-like (November 3, 2026).
+- BCHM 355/455 Biochemistry Lecture: Thursday afternoons, 2-4:30 p.m. (November 5
+  listing supersedes my earlier 1:30 start), face-to-face Schaumburg. BCHM 356/456: face-to-face Schaumburg, less structured and more independent study-like (November 3, 2026).
 - I am probably teaching BIOL 301 this spring as a third course, but it is not locked down yet.
   Mark the teaching assignment as tentative in course announcements.
 

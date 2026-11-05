@@ -142,7 +142,7 @@
 
 @right
 
-![DNA recognition model](assets/set5_genome_editing/zfn_2025.jpg)
+![ZFN and TALEN recognition comparison](assets/set5_genome_editing/zfn_talen_comparison_2025.jpg)
 
 === layout: one-panel
 
@@ -287,15 +287,19 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 - *mRNA:* cells make editor protein for a limited time; lipid particles can carry RNA to some tissues.
 - *RNP:* Cas protein plus guide acts directly and can be transient; useful for cells edited outside the body.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 17. Delivery Is A Biology Problem
 
-@body
+@left
 
 - Viral vectors, lipid nanoparticles, electroporation, and local injection reach different cells.
 - More exposure can raise editing frequency but broaden opportunities for toxicity or unwanted editing.
 - Measure cargo in target cells, edit frequency, tissue distribution, immune response, and clinical function.
+
+@right
+
+![Lipid nanoparticle delivery components](assets/set5_genome_editing/lnp_delivery_2025.jpg)
 
 === layout: one-panel
 
@@ -353,19 +357,33 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 ![in vivo delivery visual](assets/set5_genome_editing/in_vivo_2025.jpg)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 18. Compare The Evidence
 
-@body
+@left
 
 - *Ex vivo:* characterize the cell product before dosing; collection, conditioning, and engraftment add their own risks.
 - *In vivo:* may reach inaccessible cells, but target-cell access and whole-body distribution become central questions.
 - A molecular edit is not enough: durable cell function and clinical benefit must be measured.
 
+@right
+
+![Ex vivo and in vivo workflow comparison](assets/set5_genome_editing/ex_vivo_in_vivo_comparison_2025.jpg)
+
 === layout: subsection
 
 # 19. Off-Target Effects
+
+=== layout: big-image
+
+@image
+
+![On-target and off-target genome editing](assets/set5_genome_editing/off_target_effects_2026.png)
+
+@caption
+
+Topic 19: On-Target and Off-Target Effects in Genome Editing
 
 === layout: one-panel
 
@@ -498,15 +516,19 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 ![zygote-injection visual](assets/set5_genome_editing/zygote_injection_2025.png)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 21. Mosaicism Changes Interpretation
 
-@body
+@left
 
 - If cutting and repair occur after the first cell division, cells can acquire different DNA outcomes.
 - A small biopsy may not represent every future tissue.
 - Testing must examine intended sequence, unwanted edits, repair diversity, and the limits of an early sample.
+
+@right
+
+![Mosaicism after zygote editing](assets/set5_genome_editing/zygote_mosaicism_2025.png)
 
 === layout: one-panel
 

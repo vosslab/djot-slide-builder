@@ -35,6 +35,30 @@ Use `layout: section` for the divider, followed by:
 The evergreen Discord server reminder is separate from the credit-bearing signup assignment.
 Keep the reminder when the signup deadline has passed.
 
+Preserve the contact slide's four colored options: Office hours (green), Discord (red),
+Email (blue), and Anonymous Google Form (purple). Keep response details nested under their
+option and retain hanging list indents. Format visible email addresses as italic `mailto:`
+links, for example `[_nvoss@roosevelt.edu_](mailto:nvoss@roosevelt.edu)` in Djot.
+The former Gmail warning was a 2019 issue and is retired.
+
+### Biotechnology classroom Zoom
+
+BIOL 480 Biotechnology has a course Zoom component. Genetics and Biostatistics do not use
+this classroom Zoom group. Keep ordinary office-hours information separate.
+
+Include [zoom_guidance.djot](../biotech/evergreen/zoom_guidance.djot) visibly in Informational
+Slides, before Course Content. Preserve these three original Lecture 07 reminders:
+
+1. How to Use Zoom Like a Pro: course meeting link, mute when not speaking, headphones or
+   earbuds, and video advice for a slow connection.
+2. Setting Your Name in Zoom: proper first name or consistent nickname, discussion-mark
+   sorting, and renaming during class.
+3. Change Name Before a Meeting: set the profile display name before joining.
+
+The class meeting link uses `{{course_url:zoom}}`; office hours uses
+`{{course_url:office_hours}}`. Resolve both from the ignored local course-links file.
+Refresh software steps against Zoom's official instructions when editing the name slides.
+
 ### Course Content
 
 Use `layout: section` for the divider. The current Genetics arrangement is:

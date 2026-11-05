@@ -504,13 +504,14 @@ with no red-on-red dates or legacy midnight cutoff fragments.
 ### Chapter and topic divider hierarchy
 
 **Decision.** `section` remains the bright course-color chapter divider; `subsection` is a
-lower-weight burgundy divider for numbered topics within that chapter.
+darker topic divider with a smaller centered title and matching full-width top/bottom stripes. Sections retain
+their large centered titles and rounded frames.
 
 **Why.** A shared transition treatment flattened the teaching hierarchy between chapters and their
 individual talking points.
 
-**Consequence.** Both remain native editable Centered Text layouts, but their color contrast makes
-the chapter/topic relationship immediately visible.
+**Consequence.** Both retain their native editable layout identity. Symmetric stripes, framing, and type
+size distinguish chapter/topic levels even when their course colors look similar.
 
 **Owner.** `slide_lib.layout_registry.py` and
 `biotech/LECT03/djot/lect03c-talking_points_set_2.djot`.

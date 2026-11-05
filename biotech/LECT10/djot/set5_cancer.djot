@@ -487,15 +487,30 @@ Topic 36: Cancer-Causing and Cancer-Killing Viruses
 - A temperate phage can maintain its genome in the host and later enter the lytic cycle.
 - This is an analogy about persistence and lysis. Mammalian cancer-causing viruses and engineered oncolytic viruses have their own mechanisms.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 36. Designing an Oncolytic Virus
 
-@body
+@left
 
 - Specificity can use a tumor receptor, tumor-active promoter, deleted viral function, or local delivery.
 - Direct lysis can release tumor antigens and inflammatory signals, potentially recruiting immune responses.
 - Test route, shedding, prior immunity, off-target infection, and systemic inflammation.
+
+@right
+
+![Oncolytic infection, lysis, and tumor-directed immune activation](assets/set5_cancer/oncolytic_tumor_immune_cycle_2023.png)
+
+=== layout: big-image
+
+@image
+
+![Oncolytic infection, lysis, and tumor-directed immune activation](assets/set5_cancer/oncolytic_tumor_immune_cycle_2023.png)
+
+@caption
+
+Topic 36: Viral Lysis Can Release Tumor Antigens and Recruit Immune Responses
+
 
 === layout: one-panel
 
@@ -555,6 +570,34 @@ oncolytic-virus infection
 - A plausible combination can fail: poor viral reach, T-cell exclusion, or toxicity can limit dosing.
 - Radiation can alter antigen release and access; schedule changes benefit and harm.
 - A valid comparison needs a control arm, not only a response after two treatments.
+
+=== layout: big-image
+
+@image
+
+![Oncolytic infection to tumor-cell lysis and immune response](assets/set5_cancer/oncolytic_lysis_sequence_2025.png)
+
+@caption
+
+Topic 37: Oncolytic Infection, Tumor-Cell Lysis, and Antigen Release
+
+@citation
+
+Complementary mechanisms are a combination hypothesis, not proof of benefit in every tumor.
+
+=== layout: big-image
+
+@image
+
+![PD-1/PD-L1 checkpoint blockade permits T-cell attack](assets/set5_cancer/checkpoint_blockade_2025.png)
+
+@caption
+
+Topic 37: Checkpoint Blockade Can Release Inhibitory Signals on T Cells
+
+@citation
+
+Complementary mechanisms are a combination hypothesis, not proof of benefit in every tumor.
 
 === layout: two-panels
 

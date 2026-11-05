@@ -81,6 +81,16 @@ Systemic exposure can make the target reachable, but it also makes dose, antibod
 - Gamma-retroviral vectors work most readily when target cells divide. Lentiviral vectors can also deliver a pre-integration complex to many non-dividing cells.
 - Integration can support durable expression, but it creates a permanent genomic insertion that must be investigated.
 
+=== layout: big-image
+
+@image
+
+![Retrovirus structure](assets/set5_gene_therapy/retrovirus_structure_2025.png)
+
+@caption
+
+Topic 6: Retrovirus Structure
+
 === layout: two-panels
 
 # 6. Vector Biology, Not Magic

@@ -98,7 +98,9 @@ companion decks. Keep weekly dates, project-phase changes, media selection, and 
 `{{course_url:key}}` substitutions separate from the reusable science chapters.
 
 For group-project instructions, the original ODP supplies wording and formatting; use the
-syllabus for the timeline. Reveal the detailed presentation and business-plan chapters when
+syllabus for the timeline, applying explicit instructor corrections. Treat project selection and
+its submission form as one milestone when the form records that choice; for Fall 2026, the
+Company Vision Report (Form) is due November 19, not December 3. Reveal the detailed presentation and business-plan chapters when
 needed, keeping the early group-formation and vision-form sequence visible first.
 
 ### Understand the source files
@@ -357,6 +359,13 @@ visible beside it or in its caption. Otherwise replace or omit it. Do not use a 
 as a silent illustration of the corrected explanation.
 
 ### Keep assets local
+
+When a complete content deck still feels overly plain, make a separate visual pass across the
+annual student sources. Pair existing explanations with actual mechanism diagrams, anatomical
+context, treatment workflows, or experimental evidence. Inspect the image itself and its source
+slide; a filename or extracted heading does not establish its identity. Preserve useful prose
+and examples. Use a dedicated figure view when pairing would shrink labels or text too far.
+Record exact source/year/authored page and any crop, and review the final PDF after enrichment.
 
 Copyrighted images stay local and ignored. Track the authored Djot and text provenance where
 repository policy allows; do not stage image binaries to make a checker pass.

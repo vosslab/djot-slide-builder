@@ -10,13 +10,20 @@ appeared together on an earlier promotion slide.
 
 ## Current logistics
 
-[HUMAN_GUIDANCE.md](../docs/HUMAN_GUIDANCE.md) supplies the Spring/Summer 2027 teaching details:
-Thursday 1:30-4:30 p.m. biochemistry lecture in Schaumburg; face-to-face biochemistry lab with
-a less structured, independent study-like format; tentative BIOL 301 assignment; and summer
-film on Tuesday/Thursday evenings over Zoom. Keep BIOL 301 visibly tentative.
+The instructor supplied current Course Finder listings on November 5, 2026. These override
+older meeting-time guidance, including the biochemistry lecture's former 1:30 p.m. start.
+Keep BIOL 301 visibly tentative; the new listings do not establish its assignment.
 
-Do not carry forward old Zoom delivery for the biochemistry lecture, old lab meeting times,
-old summer session dates, old enrollment numbers, or unconfirmed course attributes.
+| Cross-listed sections | CRNs, in section order | Meeting | Session | Credits |
+| --- | --- | --- | --- | ---: |
+| BCHM 355-20 / 455-20 | 24780 / 24781 | Thursday 2:00-4:30 p.m., SCH 612 | Spring 2027 Session 1, January 19-May 10 | 3 |
+| BCHM 356-20 / 456-20 | 22046 / 22049 | Tuesday 10:00 a.m.-1:55 p.m., SCH 550, face-to-face | Spring 2027 Session 1, January 19-May 10 | 3 |
+| BIOL 383-20 / 483-20 | 32156 / 32157 | Tuesday/Thursday 6-9 p.m., Zoom, remote | Summer 2027 Session D, July 6-August 9 | 3 |
+
+The supplied listings show STAFF, so they do not independently confirm instructor assignments.
+BIOL 383 lists Natural Science and Remote attributes; BIOL 483 lists Remote. The lecture lists
+no attributes, and the lab lists Face to Face. Enrollment/wait-list counts are transient snapshots
+and are omitted from the promotion slides. Preserve the fuller course descriptions below.
 
 ## Biochemistry lecture
 
@@ -92,7 +99,8 @@ Instructor library source:
   about most of the grade coming from weekly writing prompts and getting the work done.
 
 Restore that description of the learning experience without promising a fixed film lineup,
-historical journal deadlines, old Google document links, or exact 2027 session dates.
+historical journal deadlines or old Google document links. The current instructor-supplied
+listing establishes the 2027 Session D dates shown above.
 
 ## Shared consumers
 
@@ -111,7 +119,28 @@ were visually reviewed in each deck. Source, ODP visibility, and PDF counts agre
 | --- | ---: | ---: | ---: | --- |
 | Genetics 09A | 55 | 16 | 39 | 34-38 |
 | Genetics 10A | 54 | 16 | 38 | 33-37 |
-| Biotechnology 10A | 41 | 9 | 32 | 26-30 |
+| Biotechnology 10A | 44 | 8 | 36 | 29-33 |
 
 Strict native lint and 1,184 focused checks pass. Existing weather-caption size advisories remain
 outside this course-description edit; there are no new capacity concerns in the restored pages.
+
+After applying the supplied Course Finder listings, all three ODP/PDF decks were rebuilt and
+all fifteen course-summary/detail pages were visually checked again. Page counts remain
+39, 38, and 32. All six CRNs appear in every PDF; 1,196 focused checks and strict native lint
+pass. The only Biotechnology capacity advisory remains the existing weather caption.
+Review WebPs for this update are under `_temp/course_listing_review/`.
+
+The subsequent visual revision groups logistics and teaching themes with nested bullets and
+colored emphasis. BCHM 355/455 uses separate content, cover, and logistics panels with the
+instructor-supplied LibreTexts cover; see [PROVENANCE.md](assets/upcoming_courses/PROVENANCE.md).
+All twelve revised detail pages were visually reviewed across the three rebuilt decks.
+Native lint and 1,197 focused checks pass; page counts and CRNs remain intact. The lecture
+content is 19.75 pt, its logistics 18.5 pt, and the lab 19.75 pt. These remain readable in the
+reviewed PDF despite the advisory 20 pt target. Review WebPs use the `hierarchy_` prefix under
+`_temp/course_listing_review/`. Live Impress playback remains untested.
+
+The later Veridian transition adds one Biotechnology page (42 authored / 9 hidden / 33 PDF).
+The course pages retain their positions; the new subsection styling applies on rebuild.
+
+Restoring the three visible Biotechnology Zoom reminders later brings 10A to 44 authored /
+8 hidden / 36 PDF pages. Course pages move to 29-33; Genetics exports are unaffected.

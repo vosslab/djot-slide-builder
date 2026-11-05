@@ -12,6 +12,62 @@
 
 ### Fixes and Maintenance
 
+- Center subsection titles and replace the short underline with matching full-width top/bottom
+  stripes, preserving the theme's bilateral symmetry and distinct chapter-frame treatment.
+  Update the existing transition regression to check centered titles and mirrored stripe geometry.
+
+- Restore the contact slide's original four colored options and nested response details,
+  including the purple anonymous-form prompt. Remove the retired Gmail warning and make
+  the email address an italic clickable mailto link; retain native hanging bullet indents.
+  Balance the options in two panels, rebuild, and inspect PDF page 12. Verify hyperlink/italic
+  and native hanging-list geometry; native lint and 1,201 focused checks pass.
+
+- Restore Biotechnology's three-slide classroom Zoom group: course link/headphones, display
+  name during class, and name before joining. Keep the shared fragment course-specific,
+  document the guide exception, and refresh name-changing steps against official Zoom help.
+  Rebuild 10A (44 authored / 8 hidden / 36 PDF), inspect all three restored pages, verify the
+  resolved class hyperlink, and pass native lint and 1,201 focused checks.
+
+- Enrich the Set5 science deck with fourteen student-source figures across gene therapy,
+  genome editing, stem cells, and cancer. Preserve the instructional prose and native workflows;
+  replace three repeated/less-specific figures and add nine dedicated diagram pages. Update
+  topic page maps for the 244-page deck and retain image provenance/local copyright exclusions.
+  Reject misleading diagrams during review; replace the delivery backdrop and aptamer mismatch
+  with actual LNP/SELEX figures. Inspect all sixteen changed PDF pages, reconcile ODP/PDF counts,
+  verify original prose and ignored assets, and pass native lint plus 1,201 focused checks.
+
+- Add a Veridian Dynamics subsection before the Lecture 10A Machines slide. Distinguish
+  subsections with smaller left-aligned titles and a short underline; retain centered framed
+  section dividers. Extend the existing transition regression to protect shape and alignment.
+  Rebuild Biotechnology 10A/10C and Genetics 09A/10A; inspect Veridian, chapter/topic divider
+  examples, and pass 1,311 focused checks. Biotechnology 10A now has 33 visible pages.
+
+- Give all four shared course-detail slides nested bullet hierarchy and colored topic emphasis.
+  Pair BCHM 355/455 with the instructor-supplied LibreTexts textbook cover; retain course
+  content and listing details, cite the image, and keep its binary local and ignored. Rebuild
+  all three consumers, inspect twelve revised detail pages, and pass native lint and 1,197 checks.
+
+- Apply the instructor-supplied Course Finder listings to shared upcoming-course slides:
+  correct the lecture start to 2 p.m., add lab meeting details, exact Spring/Summer session
+  dates, section numbers, CRNs, and credits. Preserve the expanded teaching descriptions.
+  Rebuild Genetics 09A/10A and Biotechnology 10A, inspect fifteen course pages, verify all six
+  CRNs in each PDF, and pass strict native lint and 1,196 focused checks.
+
+- Correct the Company Vision Report (Form) deadline to November 19: submitting the form is
+  selecting the group project, not a separate December 3 milestone. Update announcements,
+  the group timeline, form slide, takeaways, and source guidance; rebuild both affected decks.
+
+- Restore Lecture 10B's original ODP wording, color, hierarchy, forms, rubrics, and instructor
+  humor; use the syllabus for current dates. Focus today's 13 visible pages on group formation
+  and the vision form, with a December 10 / 50-point presentation preview. Keep 26 future and
+  reference pages hidden in the editable 39-slide deck; document source correspondence and
+  visibility controls in `biotech/LECT10/djot/GROUP_PROJECT_REVIEW.md`. Rebuild ODP/PDF, inspect
+  all 13 classroom pages, validate native syntax and visibility counts, and pass 1,202 focused checks.
+- Repair 122 conflict-marker hunks in 18 synchronized worktree files, preserving completed
+  lecture/documentation/podcast work and unaffected content. Keep original conflict inputs and
+  per-file receipts under `_temp/group_project_restore/`; leave Git staging unchanged.
+
+
 - Restore substance to the shared individual upcoming-course pages: biochemistry mechanisms
   and molecular-visualization assignments, experimental lab work and analysis, BIOL 301 topics
   and lecture/lab/discussion format, and the film course's screenings, discussion, writing,
@@ -33,7 +89,7 @@
   Rebuild editable ODP/PDF, inspect both changed pages, and verify 899 focused checks and native lint.
 
 - Build November 5 Biotechnology Lecture 10 as canonical Djot, editable ODP, and PDF: 32 visible
-  announcement pages, 23 group-guidance pages plus 16 hidden rubric/reference pages, and 235 science
+  announcement pages, 13 group-guidance pages plus 26 hidden future/reference pages, and 235 science
   pages. Follow the successful Set #4 merge across the six annual student sources and expanded
   instructor ODP, with the instructor's exact 37-topic 2026 list controlling chapter/topic order.
 - Update the group transition, current milestone dates and 91-point breakdown; retain detailed

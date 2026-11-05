@@ -5,9 +5,9 @@ announcements. Prior-year Lecture 09/10 material supplies the reusable project a
 
 | Deck | Canonical source | Authored | Hidden | Classroom PDF |
 | --- | --- | ---: | ---: | ---: |
-| Announcements | [lect10a-2026_biotech_announcements.djot](lect10a-2026_biotech_announcements.djot) | 41 | 9 | 32 |
-| Group project | [lect10b-2026_group_project.djot](lect10b-2026_group_project.djot) | 39 | 16 | 23 |
-| Medicinal biotechnology | [lect10c-set_5_medicinal_biotechnology.djot](lect10c-set_5_medicinal_biotechnology.djot) | 235 | 0 | 235 |
+| Announcements | [lect10a-2026_biotech_announcements.djot](lect10a-2026_biotech_announcements.djot) | 44 | 8 | 36 |
+| Group project | [lect10b-2026_group_project.djot](lect10b-2026_group_project.djot) | 39 | 26 | 13 |
+| Medicinal biotechnology | [lect10c-set_5_medicinal_biotechnology.djot](lect10c-set_5_medicinal_biotechnology.djot) | 244 | 0 | 244 |
 
 ## Schedule and project decisions
 
@@ -17,13 +17,15 @@ announcements. Prior-year Lecture 09/10 material supplies the reusable project a
 - November 5 is Set #5: Medicinal Biotechnology. Movie Night was October 29; its form is assigned
   this week. Do not repeat last year's movie-night agenda, Shark Tank awards, or student names.
 - Individual projects are complete. Group formation is November 12; project selection is
-  November 19; the Company Vision Report is December 3; presentations are December 10;
+  November 19, recorded by completing the Company Vision Report (Form); presentations are December 10;
   the business plan is due December 17. November 26 is Thanksgiving break.
 - Homework 5 is assigned November 12. Blackboard supplies assignment-specific links and deadlines;
   an assignment date is not silently converted into a due date.
-- Keep the published 91-point group-project breakdown from
-  [PROJECTS](https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/).
-- Adapt `biotech/LECT10/lect10b-2025_group_project_guide.odp` rather than discarding its concrete
+- Preserve the original ODP's 91-point group-project breakdown. The syllabus supplies dates;
+  the instructor deck supplies wording, formatting, and grading values.
+- Restore `biotech/LECT10/lect10b-2025_group_project_guide.odp`, preserving its teacher voice and
+  visual emphasis. Today show formation, roles, the vision form, and a 50-point presentation
+  preview for December 10. Hide detailed presentation and business-plan instructions. Retain its
   requirements: groups of 3-4; 20-30-minute presentations; at least three speaking minutes per member;
   short self-narrated videos and the pre-recorded option; shared research and review.
 - The detailed business-plan slide specifies 12-18 pages, superseding the old overview's
@@ -57,7 +59,8 @@ announcements. Prior-year Lecture 09/10 material supplies the reusable project a
   [UPCOMING_COURSES_SOURCES.md](../../../evergreen/UPCOMING_COURSES_SOURCES.md).
   Rebuilt ODP/PDF and visually reviewed PDF 26-30; the deck remains 41 authored / 9 hidden /
   32 PDF pages. Strict native lint and 1,184 focused checks pass.
-- Hide Zoom setup, completed profile/signup assignments, the December news reminder, Natural
+- Show the three-slide Biotechnology classroom Zoom group, including headphones/earbuds.
+  Hide completed profile/signup assignments, the December news reminder, Natural
   Science Club, and course evaluations. Retain the Biotechnology evaluation/business-plan extension
   policy hidden, removing the obsolete date; it does not activate a new deadline tonight.
 - The talking-marks page stays hidden until the instructor pastes and reviews current scores in
@@ -72,7 +75,9 @@ announcements. Prior-year Lecture 09/10 material supplies the reusable project a
   for the two-line "Man and Machines. Best Friends Forever." tagline and the short
   "Something strong and, we hope, loving." quotation. Retain the correct Veridian brand spelling;
   the transcript's opening spells it "Viridian."
-  Rebuilt ODP/PDF and visually checked the agenda and Veridian pages; the PDF remains 32 pages.
+  The later Veridian subsection transition brings the PDF to 33 pages; the episode slide
+  remains directly before THE END. Sections use centered framed titles, while subsections
+  use smaller centered titles and mirrored full-width horizontal stripes.
   Strict native lint and 899 focused checks pass. Video playback remains untested.
 
 ## Set #5 content
@@ -148,10 +153,10 @@ versus oncolytic viruses against primary sources:
   Topic 25 and retain the older inaccurate potency chart only as an explicitly critical example.
 - Correct the Laurent genomic-variation and Mandai retinal-study citations to their actual papers;
   expose complete clickable URLs in citation footers.
-- Restore detailed business-plan rubrics and presentation advice as sixteen hidden reference
-  slides, including the original section weights, formatting requirements, and instructor humor.
-- Repair the group-points and hidden rubric tables' total-row contrast with explicit white text
-  on their dark fill.
+- Restore the original forms, collaboration-role colors, rubric images, grading table, and
+  instructor humor. Keep 26 future/reference slides hidden until their teaching phase.
+  [GROUP_PROJECT_REVIEW.md](GROUP_PROJECT_REVIEW.md) records source correspondence, visibility,
+  provenance, and the final 13-page classroom review.
 
 ## Rebuild and review
 
@@ -173,13 +178,15 @@ Native Djot validation passes for the three master decks. ODP/PDF exports succee
 234-page science render was reviewed in full; all subsequently repaired formatting, figures,
 tables, new pages, and final artifact metadata are rechecked. All final announcement, group-guide,
 and hidden-reference pages were visually reviewed. Current reference pages are also exported
-separately for review. The focused Djot, ASCII, Markdown-link, cover, source-length, and guidance
+separately for review. The final group restoration and phased visibility are documented in
+[GROUP_PROJECT_REVIEW.md](GROUP_PROJECT_REVIEW.md). The focused Djot, ASCII, Markdown-link, cover, source-length, and guidance
 checks pass: 1,182 tests. One-time checks confirm source/ODP visibility and PDF counts agree,
 native bookend text remains selectable, and no lecture image binaries are tracked.
 
 Remaining size advisories are the full NWS caption at 15.25 pt and science text/table at 18.5-19.75 pt. These are within the instructor guidance of about 15 pt for weather and above 17 pt for ordinary body text; they remain documented rather than suppressed. The audit retains minor runt advisories; generated science titles fit on one line.
 
-No attended Impress click/video playback or Blackboard upload is claimed. Talking marks remain hidden until current scores are pasted and reviewed. No new permanent tests were added; implementation probes and renders stay in `_temp/`.
+No attended Impress click/video playback or Blackboard upload is claimed. Talking marks remain hidden until current scores are pasted and reviewed. Deck-specific implementation probes and renders stay in `_temp/`. The podcast refresher has
+focused permanent regressions for excluding special episodes and validating thumbnail origins.
 
 ## Inventory the inputs
 
@@ -348,3 +355,47 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   classroom readiness when replacement slides remain.
 - [x] Add a concise conversion/review entry to [CHANGELOG.md](../../../docs/CHANGELOG.md), naming the lecture
   and resulting artifacts; report the review and output paths to the instructor.
+
+## Student-source visual enrichment
+
+The visual pass preserves all original non-structural text while adding fourteen student-source
+figures across gene therapy, editing, stem cells, and cancer. Three replace less specific or
+repeated illustrations; nine new figure pages bring the science deck to 244 pages and 84 image
+placements. Topic order remains exactly 1-37; the topic guide records updated page ranges.
+Images remain ignored local classroom assets with original-slide provenance. Misidentified
+or unreliable source images were replaced or rejected during rendered review. Detailed culture,
+oncolytic-lysis, and checkpoint diagrams have enlarged views for readable labels.
+Review evidence is under `_temp/set5_visual_enrichment/`.
+
+Final ODP and PDF both contain 244 visible pages. All sixteen new/changed PDF pages were
+visually inspected after the figure-identity repairs and enlargements. Strict native lint and
+1,201 focused checks pass. One-time comparison confirms original non-structural chapter text
+is preserved, topic dividers remain exactly 1-37, and all fourteen added assets are ignored and
+untracked. Existing capacity advisories remain documented; no new permanent tests were added.
+Live Impress playback and a new full-suite run are not claimed.
+
+## Classroom Zoom restoration
+
+Lecture 07 supplies the three original reminder titles: How to Use Zoom Like a Pro,
+Setting Your Name in Zoom, and Change Name Before a Meeting. The reusable
+[zoom_guidance.djot](../../evergreen/zoom_guidance.djot) group is visible before Course Content.
+The class link resolves through the existing local `zoom` key rather than the office-hours key.
+Names and participation guidance preserve the source's first-name/consistent-nickname rule;
+UI steps are refreshed against [Zoom's instructions](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061891).
+The three-slide group replaces one hidden slide: 44 authored / 8 hidden / 36 classroom pages.
+The upcoming-course summary/details move to PDF 29-33; Veridian is PDF 34-35, then THE END.
+
+Rebuilt the editable ODP and PDF; reviewed all three Zoom pages (14-16). Native lint,
+source/ODP/PDF counts, resolved class hyperlink, and 1,201 focused checks pass. The name-rule
+panel has a readable 19.75 pt advisory. Live Zoom behavior and attended Impress playback were
+not tested. Review WebP and build/check logs are under `_temp/biotech_zoom_restore/`.
+
+## Contact slide restoration
+
+Restore Lecture 07's four contact options, including the purple anonymous Google Form and
+original response-time details. Remove the obsolete Gmail warning. Two balanced panels keep
+nested details readable without a contact-slide capacity advisory. The email is an italic
+clickable `mailto:` link. Native list styles retain their marker-to-text offset; wrapped lines
+align beneath the text, as verified on rendered PDF page 12. Counts remain 44 authored /
+8 hidden / 36 PDF pages. Native lint and 1,201 focused checks pass. Evidence is under
+`_temp/contact_slide_restore/`; no live mail-client launch or Impress playback was tested.
