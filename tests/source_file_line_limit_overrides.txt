@@ -3,3 +3,5 @@
 # Add one exact repo-relative POSIX path per line for a tracked external source
 # that must retain its upstream form.
 # Example: docs/EXTERNAL_SPECIFICATION.md
+genetics/LECT09/djot/LECT09_SOURCE_MAP.md
+docs/DESIGN_DECISIONS.md
