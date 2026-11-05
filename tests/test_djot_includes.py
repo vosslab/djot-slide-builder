@@ -27,7 +27,7 @@ def test_project_roots_prefer_git_and_fall_back_to_cwd(
 	checkout = tmp_path / "checkout"
 	monkeypatch.chdir(working)
 
-	def run(command, **kwargs):
+	def run(command: object, **kwargs) -> object:
 		if git_state == "missing":
 			raise FileNotFoundError("git")
 		if git_state == "not_checkout" and kwargs.get("check"):

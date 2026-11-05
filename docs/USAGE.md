@@ -84,7 +84,7 @@ not trim images, modify slides, or select layouts. See
 Generate a thumbnail, editable title, and full clickable YouTube watch URL:
 
 ```bash
-source source_me.sh && python3 tools/make_youtube_slide.py \
+source source_me.sh && python3 slide_lib.make_youtube_slide \
     -v WXPBoFDqNVk -o genetics/LECT07/djot/youtube_chi_squared_test.djot
 ```
 
@@ -110,13 +110,13 @@ master deck's theme and are omitted as standalone decks by folder builds.
 Preview the latest published Stump the Vibe Coder episode in a lecture's announcement deck:
 
 ```bash
-source source_me.sh && python3 tools/refresh_podcast.py genetics/LECT07
+source source_me.sh && python3 launchers/refresh_podcast.py genetics/LECT07
 ```
 
 Save it after reviewing the diff:
 
 ```bash
-source source_me.sh && python3 tools/refresh_podcast.py genetics/LECT07 --write
+source source_me.sh && python3 launchers/refresh_podcast.py genetics/LECT07 --write
 ```
 
 Supply multiple lecture folders or specific `lect##a-*.djot` files to refresh several decks
@@ -142,7 +142,7 @@ previous podcast slide rather than adding another. Old thumbnail files are retai
 For historical announcements, select by each cover's lecture date:
 
 ```bash
-source source_me.sh && python3 tools/refresh_podcast.py genetics biotech --by-lecture-date --write
+source source_me.sh && python3 launchers/refresh_podcast.py genetics biotech --by-lecture-date --write
 ```
 
 This selects the newest episode published on or before the lecture date in America/Chicago,
@@ -159,13 +159,13 @@ the episode automatically, so a past lecture retains the episode selected for it
 Run this on lecture day or the preceding day to preview the current Chicago weather story:
 
 ```bash
-source source_me.sh && python3 tools/refresh_weather.py genetics/LECT09
+source source_me.sh && python3 launchers/refresh_weather.py genetics/LECT09
 ```
 
 Save the graphic and slide after reviewing the diff:
 
 ```bash
-source source_me.sh && python3 tools/refresh_weather.py genetics/LECT09 --write
+source source_me.sh && python3 launchers/refresh_weather.py genetics/LECT09 --write
 ```
 
 Like the podcast tool, this accepts specific announcement files or lecture folders, including
@@ -255,7 +255,7 @@ The same selector builds the Biotechnology lecture folder:
 ./build_slides.sh biotech/LECT04/
 ```
 
-Retired lecture sources may retain a `.djot.retired` suffix beside their assets. Folder builds
+Removed lecture sources are not retained beside their assets. Folder builds
 and lint do not select them. For LECT08F, use `lect08f-three_point_testcross_bpw.djot`; the
 textbook predecessor and original presentation evidence are retained for reference.
 
@@ -312,7 +312,7 @@ Rebuild the three-row two-gene working tables from the saved problem data and ad
 ascus drawings:
 
 ```bash
-source source_me.sh && python3 tools/render_tetrad_tables.py \
+source source_me.sh && python3 slide_lib.render_tetrad_tables \
     genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/problem_data.json
 ```
 

@@ -146,7 +146,7 @@ The repeated [unordered_tetrad_steps.djot](unordered_tetrad_steps.djot) and
 ## Coverage of the Previous 152 Slides
 
 The tables refer to the immediately preceding 62-slide introduction and 90-slide BPW master.
-Both masters are preserved as pre_split.djot.retired sources. Their former 09B/09C labels
+Both obsolete masters were removed after their replacements were accepted. Their former 09B/09C labels
 are historical identifiers. The older original-conversion maps remain below for earlier provenance.
 Superseded bookends become six topic-specific sets. Shared roadmaps remain in the matching
 applications; the old closing duplicate is superseded. No unique teaching topic is dropped.
@@ -542,7 +542,7 @@ both current tetrad decks. Announcements retain their initial map below; the upd
 ### Revised Tetrad Introduction (09B)
 
 The original 66-slide ODP/PDF remains unchanged. The 68-slide initial Djot conversion is
-preserved as `.djot.retired`. Six old worked-example/divider states are superseded; all other
+removed after replacement acceptance. Six old worked-example/divider states are superseded; all other
 source positions retain their order. Mathematical revisions clarify quantities and units.
 
 | Original Source | Prior Djot | Current Djot / PDF | Action | Replacement |
@@ -620,7 +620,7 @@ source positions retain their order. Mathematical revisions clarify quantities a
 
 Sources: the BPW raw-count functions and independent solver named in the review; static
 Djot/SVG assets are canonical build inputs. The full old 53-slide activity conversion remains
-preserved as `.djot.retired`. Rows below identify the owning source for all new visible slides.
+removed after replacement acceptance. Rows below identify the owning source for all new visible slides.
 
 The conceptual equation bridge adds pages 11-18. Page 19 explains averaging and cM; page 22
 compares observed recombination and corrected map distance. All three problem datasets remain

@@ -216,7 +216,7 @@ Earlier inventory/page references below are historical.
 
 ## Retired: lect08f-3_point_testcross_textbook
 
-This historical map refers to `.djot.retired`; it is excluded from active deck discovery.
+This historical map names removed predecessor sources.
 
 | Source | Authored | PDF | Status / next action |
 | --- | --- | --- | --- |

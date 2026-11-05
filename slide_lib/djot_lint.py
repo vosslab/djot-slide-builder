@@ -7,6 +7,7 @@ import re
 import shutil
 import subprocess
 import sys
+import urllib.parse
 
 # Local Modules
 import slide_lib.djot_parser
@@ -14,6 +15,10 @@ import slide_lib.djot_sources
 import slide_lib.layout_registry
 import slide_lib.layout_validation
 import slide_lib.native_model
+
+
+HYPERLINK = re.compile(r"(?<!!)\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)")
+COURSE_URL_TOKEN = re.compile(r"\{\{course_url:[a-z][a-z0-9_]*\}\}")
 
 
 @dataclasses.dataclass(frozen=True)
@@ -89,6 +94,38 @@ def source_problem(path: pathlib.Path, error: ValueError) -> LintProblem:
 
 
 #============================================
+def hyperlink_problems(path: pathlib.Path) -> list[LintProblem]:
+	"""Validate literal Djot hyperlinks without expanding private course URLs."""
+	problems: list[LintProblem] = []
+	for source in slide_lib.djot_sources.load_sources(path).files:
+		for line_number, line in enumerate(source.text.splitlines(), start=1):
+			for match in HYPERLINK.finditer(line):
+				target = match.group(1)
+				if COURSE_URL_TOKEN.fullmatch(target):
+					continue
+				parsed = urllib.parse.urlsplit(target)
+				if parsed.scheme:
+					if ((parsed.scheme in {"https", "http"} and parsed.hostname) or
+							(parsed.scheme == "mailto" and parsed.path and "@" in parsed.path)):
+						continue
+					problems.append(LintProblem(source.path, line_number,
+						f"invalid external hyperlink: {target}"))
+					continue
+				local = target.split("#", 1)[0].split("?", 1)[0]
+				if not local:
+					continue
+				base = slide_lib.djot_sources.repository_root(source.path)
+				if not source.path.resolve().is_relative_to(base):
+					base = source.path.parent.resolve()
+				candidate = (base / local.removeprefix("repo:")).resolve() if target.startswith("repo:") \
+					else (source.path.parent / local).resolve()
+				if not candidate.is_relative_to(base) or not candidate.exists():
+					problems.append(LintProblem(source.path, line_number,
+						f"local hyperlink target not found: {target}"))
+	return problems
+
+
+#============================================
 def lint_source(path: pathlib.Path) -> tuple[list[LintProblem], int, int]:
 	"""Lint one source file through the parser and layout semantic authorities."""
 	try:
@@ -104,6 +141,7 @@ def lint_source(path: pathlib.Path) -> tuple[list[LintProblem], int, int]:
 		for cell in slide.cells:
 			images.extend(images_in_blocks(cell.blocks))
 	problems = [problem for image in images if (problem := image_problem(path, deck, image)) is not None]
+	problems.extend(hyperlink_problems(path))
 	return problems, len(deck.slides), len(images)
 
 

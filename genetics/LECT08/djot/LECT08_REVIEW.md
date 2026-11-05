@@ -27,7 +27,7 @@ Earlier page numbers below are historical.
 
 The active deck is `lect08f-three_point_testcross_bpw.djot`: 49 visible slides, 12 static SVG
 components, and three shared six-step recaps. The textbook predecessor remains preserved
-byte-for-byte as `.djot.retired` beside its assets. Original ODP/PDF evidence remains unchanged.
+as historical ODP/PDF evidence. Original ODP/PDF evidence remains unchanged.
 
 ### Generated classroom example
 
@@ -168,7 +168,7 @@ URLs need individual review; the URLs exceed their regions even at 12 pt.
 
 Evidence: `_temp/lect08_audit_before.json` and `_temp/lect08_audit_cleanup/` (source snapshots,
 after-edit and after-policy audits, diagnostic ODP/PDF, and title verification).
-[Representative preview](../../../output/pdf/lect08_audit_cleanup_preview.pdf) includes two pages
+The representative preview includes two pages
 per deck. Canonical lecture outputs and the older full-review PDF have not been replaced;
 the conversion review below describes that earlier render and is superseded here for typography.
 
@@ -246,7 +246,7 @@ These external facts were not refreshed in this pass.
   render with one line per bullet.
 - 184 focused parser, SVG, metafile, layout, capacity, native-export, image-cover, and ODP tests pass.
   Static repairs introduce no new renderer options, layouts, or dependencies.
-- [Full source/render review PDF](../../../output/pdf/lect08_full_review.pdf) includes every visible
+- The full source/render review PDF includes every visible
   page. Diagnostic inspection views omit watermarks and label unresolved pages explicitly.
 - Current slides: `output/odp/<deck stem>.odp` and `output/pdf/<deck stem>.pdf` for all six decks.
   Source-number mapping: [LECT08_SLIDE_MAP.md](LECT08_SLIDE_MAP.md).
@@ -330,7 +330,7 @@ N/A for this pass: previously reviewed selections and dates were retained.
 - N/A: Select the week's icebreaker explicitly from `icebreakers.yaml` or an instructor selection.
   Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
 - N/A: Preview the StVC refresh with
-  `source source_me.sh && python3 tools/refresh_podcast.py DECK.djot`.
+  `source source_me.sh && python3 launchers/refresh_podcast.py DECK.djot`.
   Inspect the selected episode before applying `--write`.
 - N/A: Confirm the latest published StVC episode available on the lecture date and use it as the
   default selection. Record the selected episode number; if another episode is more appropriate,

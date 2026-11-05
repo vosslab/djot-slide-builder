@@ -49,7 +49,7 @@ Review artifacts are in `_temp/upcoming_courses/`.
 
 Added the November 1 NWS Chicago Five Day Outlook at PDF 3, before the icebreaker. The existing
 tool saves the original PNG, complete native caption, and separate dated citation. Refresh before
-teaching with `source source_me.sh && python3 tools/refresh_weather.py genetics/LECT10 --write`.
+teaching with `source source_me.sh && python3 launchers/refresh_weather.py genetics/LECT10 --write`.
 Builds use the saved snapshot. 10A now has 46 authored / 32 visible / 14 hidden slides, and
 registration moves to PDF 20-21. The registration-only review below retains its previous numbers.
 
@@ -492,7 +492,7 @@ the instructor's decision before rewriting. No slide split is proposed or perfor
 - Focused renderer tests: 40 passed in `test_math_layout.py`, `test_odp_export.py`, and
   `test_native_export.py`; LibreOffice calls in those tests are mocked. All eight new covers pass
   their focused cover checks. The broader run has 123 passes and one existing failure: the
-  unchanged evergreen `three_point_gene_order_steps.djot` fragment is treated as a standalone
+  removed unused evergreen quick-gene-order fragment is absent from standalone deck discovery
   cover by `test_slide_one.py`. No unrelated cover or test source was changed.
 - Capacity and typography reports, source inventories, mapped image-area audits, and build logs
   are in `_temp/lect09_10/`. Audit findings are advisory; source wording is preserved for long
@@ -602,7 +602,7 @@ it is distinct from the LECT08 six-step three-point-testcross roadmap. No new ro
 - [x] Select the week's icebreaker explicitly from `icebreakers.yaml` or an instructor selection.
   Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
 - [x] Preview the StVC refresh with
-  `source source_me.sh && python3 tools/refresh_podcast.py DECK.djot`.
+  `source source_me.sh && python3 launchers/refresh_podcast.py DECK.djot`.
   Inspect the selected episode before applying `--write`.
 - [x] Confirm the latest published StVC episode available on the lecture date and use it as the
   default selection. Record the selected episode number; if another episode is more appropriate,

@@ -56,7 +56,7 @@ The linked two-gene example remains 20 cM with 18% observed RF. The unlinked exa
 
 Figure inputs, hashes, transformations, genotype multisets, font sizes, and construction
 references are in [figure_sources.json](assets/lect09e-tetrad_visuals/figure_sources.json).
-The existing [render_tetrad_tables.py](../../../tools/render_tetrad_tables.py) reproduces the
+The existing `slide_lib/render_tetrad_tables.py` reproduces the
 larger Type-column labels. Ordinary builds read saved assets and need no generator or browser.
 
 ## Verification and limits

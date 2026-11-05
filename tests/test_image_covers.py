@@ -15,7 +15,7 @@ import slide_lib.odf_package
 import slide_lib.presentation_theme
 
 
-def compile_source(tmp_path: pathlib.Path, source: str):
+def compile_source(tmp_path: pathlib.Path, source: str) -> tuple[object, object]:
 	path = tmp_path / 'cover.djot'
 	path.write_text(source)
 	PIL.Image.new('RGB', (400, 200), 'blue').save(tmp_path / 'diagram.png')

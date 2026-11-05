@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Render the fixed two-gene tetrad working tables as self-contained SVG figures."""
 
 # Standard Library
@@ -9,6 +8,8 @@ import json
 import pathlib
 import re
 import xml.etree.ElementTree as ET
+
+import defusedxml.ElementTree
 
 SVG_NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG_NS)
@@ -43,7 +44,7 @@ def load_asci(path: pathlib.Path) -> tuple[ET.Element, ...]:
 	# ASVS 1.5.1: accept self-contained SVG without DTDs or external entities/resources.
 	if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
 		raise ValueError(f"SVG must not contain a DTD or entity declaration: {path}")
-	root = ET.fromstring(data)
+	root = defusedxml.ElementTree.fromstring(data)
 	for node in root.iter():
 		if node.tag.rsplit("}", 1)[-1] in ("script", "foreignObject", "style"):
 			raise ValueError(f"Ascus SVG must contain only self-contained drawing content: {path}")

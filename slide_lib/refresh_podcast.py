@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Preview or refresh the Stump the Vibe Coder slide in announcement decks."""
 
 # Standard Library
@@ -12,6 +11,7 @@ import re
 import time
 import urllib.error
 import urllib.request
+import urllib.parse
 import zoneinfo
 
 # Third-Party Modules
@@ -29,9 +29,12 @@ NAMESPACES = {"atom": "http://www.w3.org/2005/Atom",
 #============================================
 def download(url: str, limit: int) -> bytes:
 	"""Read a bounded public YouTube resource with a network timeout."""
+	parsed = urllib.parse.urlsplit(url)
+	if parsed.scheme != "https" or parsed.hostname != "www.youtube.com":
+		raise ValueError(f"Expected a YouTube HTTPS URL: {url}")
 	time.sleep(random.random())
 	request = urllib.request.Request(url, headers={"User-Agent": "djot-slide-builder/1.0"})
-	with urllib.request.urlopen(request, timeout=30) as response:
+	with urllib.request.urlopen(request, timeout=30) as response:  # nosec B310
 		data = response.read(limit + 1)
 	if len(data) > limit:
 		raise ValueError(f"Resource exceeds {limit} bytes: {url}")

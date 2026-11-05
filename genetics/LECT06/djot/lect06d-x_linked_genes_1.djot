@@ -628,9 +628,9 @@ What proportion of their daughters would be color-blind and of average height?
 
 @bottom-right
 
-- ♀
+- &female;
 
-- ♂
+- &male;
 
 === layout: four-panels
 @replaceme
@@ -654,9 +654,9 @@ What proportion of their daughters would be color-blind and of average height?
 
 @bottom-right
 
-- ♀
+- &female;
 
-- ♂
+- &male;
 
 === layout: one-panel
 @replaceme

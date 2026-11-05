@@ -5,7 +5,7 @@ import pytest
 import slide_lib.course_links
 
 
-def test_local_links_preserve_source_and_resolve_by_course(tmp_path):
+def test_local_links_preserve_source_and_resolve_by_course(tmp_path: object) -> None:
 	config = tmp_path / 'links.yaml'
 	config.write_text('genetics:\n  discord: https://example.org/join?a=1&b=2\n')
 	text = '# Discord Server\n- {{course_url:discord}}\n'
@@ -19,7 +19,7 @@ def test_local_links_preserve_source_and_resolve_by_course(tmp_path):
 
 
 @pytest.mark.parametrize('url', ['javascript:alert(1)', 'https://example.org/[bad]', 'https://'])
-def test_invalid_local_url_is_rejected(tmp_path, url):
+def test_invalid_local_url_is_rejected(tmp_path: object, url: str) -> None:
 	config = tmp_path / 'links.yaml'
 	config.write_text(f'genetics:\n  discord: "{url}"\n')
 	with pytest.raises(ValueError):

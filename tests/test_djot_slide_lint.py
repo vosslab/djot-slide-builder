@@ -149,3 +149,21 @@ def test_linter_rejects_component_image_symlink_outside_deck_root(tmp_path: path
 
 	assert problems[0].line == 7
 	assert problems[0].message == "component image must be inside the repository: assets/escape.png"
+
+
+#============================================
+def test_hyperlink_lint_accepts_ignored_local_asset_and_course_token(tmp_path: pathlib.Path) -> None:
+	"""Link validation uses local files and does not need private course configuration."""
+	path = write_source(tmp_path,
+		"=== layout: one-panel\n@body\n[Figure](assets/gene.png)\n"
+		"[Course]({{course_url:homepage}})\n")
+	assert slide_lib.djot_lint.hyperlink_problems(path) == []
+
+
+#============================================
+def test_hyperlink_lint_reports_missing_local_target(tmp_path: pathlib.Path) -> None:
+	"""Literal local hyperlinks must resolve within their repository tree."""
+	path = write_source(tmp_path, "=== layout: one-panel\n@body\n[Missing](missing.pdf)\n")
+	problems = slide_lib.djot_lint.hyperlink_problems(path)
+	assert problems[0].line == 3
+	assert problems[0].message == "local hyperlink target not found: missing.pdf"

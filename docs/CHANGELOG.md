@@ -2,6 +2,10 @@
 
 ### Fixes and Maintenance
 
+- Restore source compliance and test contracts: validate Djot assets locally without tracking
+  copyrighted media, use ASCII character references, move reusable refresh/generation commands
+  into `slide_lib`, and remove obsolete retired source copies after historical notes are repaired.
+
 - Synchronized shared style guides, tests, and repository support files from the starter template.
 
 ## 2026-11-04

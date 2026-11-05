@@ -2,7 +2,7 @@
 
 import pathlib
 import zipfile
-import xml.etree.ElementTree
+import defusedxml.ElementTree
 
 import pytest
 
@@ -37,7 +37,7 @@ def test_equation_bullets_keep_native_prose_and_reveals(
 	plan = slide_lib.layout_engine.compile_layout_deck(slide_lib.djot_parser.parse_deck(path), theme).plan
 	output = slide_lib.odp_export.write_odp(plan, theme, tmp_path / "inline.odp")
 	with zipfile.ZipFile(output) as archive:
-		root = xml.etree.ElementTree.fromstring(archive.read("content.xml"))
+		root = defusedxml.ElementTree.fromstring(archive.read("content.xml"))
 		images = root.findall(f".//{{{slide_lib.odp_export.DRAW_NS}}}image")
 		assert len(images) == 2
 		paragraphs = root.findall(f".//{{{slide_lib.odp_export.TEXT_NS}}}p")

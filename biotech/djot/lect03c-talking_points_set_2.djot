@@ -85,7 +85,7 @@ color-theme: biotechnology
 
 @right
 
-![EtBr and GelRed comparison from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_004.png)
+![EtBr and GelRed comparison from the legacy 03C ODP](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/image_004.png)
 
 === layout: subsection
 
@@ -158,7 +158,7 @@ color-theme: biotechnology
 
 @right
 
-![FISH chromosome image from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_011.png)
+![FISH chromosome image from the legacy 03C ODP](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/image_011.png)
 
 === layout: subsection
 
@@ -516,7 +516,7 @@ color-theme: biotechnology
 
 @right
 
-![Ion semiconductor sequencing diagram from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_024.png)
+![Ion semiconductor sequencing diagram from the legacy 03C ODP](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/image_024.png)
 
 === layout: subsection
 
@@ -709,7 +709,7 @@ color-theme: biotechnology
 
 @right
 
-![CRISPR/Cas9 visual from the Fall 2025 03C PPTX](assets/lect03c-talking_points_set_2/pptx_crispr_cas9.jpg)
+![CRISPR/Cas9 visual from the Fall 2025 03C PPTX](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/pptx_crispr_cas9.jpg)
 
 === layout: subsection
 
@@ -783,7 +783,7 @@ color-theme: biotechnology
 
 @right
 
-![RNA interference pathway from the legacy 03C ODP](assets/lect03c-talking_points_set_2/image_060.png)
+![RNA interference pathway from the legacy 03C ODP](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/image_060.png)
 
 === layout: subsection
 
@@ -892,7 +892,7 @@ color-theme: biotechnology
 
 @right
 
-![Machine-learning transcriptomics visual from the Fall 2025 03C PPTX](assets/lect03c-talking_points_set_2/pptx_ml_transcriptomics.png)
+![Machine-learning transcriptomics visual from the Fall 2025 03C PPTX](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/pptx_ml_transcriptomics.png)
 
 === layout: subsection
 
@@ -931,7 +931,7 @@ color-theme: biotechnology
 
 @right
 
-![Synthetic-biology visual from the Fall 2025 03C PPTX](assets/lect03c-talking_points_set_2/pptx_synthetic_biology.png)
+![Synthetic-biology visual from the Fall 2025 03C PPTX](repo:biotech/LECT03/djot/assets/lect03c-talking_points_set_2/pptx_synthetic_biology.png)
 
 === layout: section
 

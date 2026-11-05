@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Generate one local big-image Djot slide from a YouTube video."""
 
 # Standard Library

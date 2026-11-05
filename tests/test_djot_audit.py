@@ -12,7 +12,7 @@ import slide_lib.native_model
 import slide_lib.presentation_theme
 
 
-def test_typography_distinguishes_runts_from_short_single_line_paragraphs():
+def test_typography_distinguishes_runts_from_short_single_line_paragraphs() -> None:
 	"""A lone word is fine alone; a short wrapped tail needs review."""
 	check = slide_lib.djot_audit.typography_issue
 	assert check([("Genes", 40)]) is None
@@ -22,7 +22,7 @@ def test_typography_distinguishes_runts_from_short_single_line_paragraphs():
 	assert check([("Many genes", 100), ("in cells", 80)], title=True) == "title-wrap"
 
 
-def test_audit_shares_compiler_wrapping_for_styled_bullets(tmp_path):
+def test_audit_shares_compiler_wrapping_for_styled_bullets(tmp_path: object) -> None:
 	"""Styled text and bullet indentation must use the compiler's line calculation."""
 	path = tmp_path / "deck.djot"
 	path.write_text("=== layout: two-panels\n\n# Genes\n\n@left\n\n- "
@@ -45,7 +45,7 @@ def test_audit_shares_compiler_wrapping_for_styled_bullets(tmp_path):
 		" ".join(slide_lib.layout_measurement.visible_text(inlines).split()))
 
 
-def test_audit_cli_reports_source_and_keeps_warnings_advisory(tmp_path, capsys):
+def test_audit_cli_reports_source_and_keeps_warnings_advisory(tmp_path: object, capsys: object) -> None:
 	"""A wrapping title is reported without changing source or failing the command."""
 	path = tmp_path / "deck.djot"
 	source = "=== layout: one-panel\n\n# " + "Linked genes and chromosomes " * 5
@@ -63,7 +63,7 @@ def test_audit_cli_reports_source_and_keeps_warnings_advisory(tmp_path, capsys):
 	assert path.read_text(encoding="utf-8") == source
 
 
-def test_fractional_font_sizes_do_not_collapse_to_one_measured_width():
+def test_fractional_font_sizes_do_not_collapse_to_one_measured_width() -> None:
 	"""Nearby selected sizes must retain distinct advances near wrap boundaries."""
 	theme = slide_lib.presentation_theme.default_theme()
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
@@ -74,7 +74,7 @@ def test_fractional_font_sizes_do_not_collapse_to_one_measured_width():
 		session.advance(family, False, False, large, "Chromosomes"))
 
 
-def test_wrapping_uses_existing_hyphens_but_preserves_nonbreaking_hyphens():
+def test_wrapping_uses_existing_hyphens_but_preserves_nonbreaking_hyphens() -> None:
 	"""Native break opportunities must not invent hyphens or lose source characters."""
 	theme = slide_lib.presentation_theme.default_theme()
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
@@ -87,7 +87,7 @@ def test_wrapping_uses_existing_hyphens_but_preserves_nonbreaking_hyphens():
 		assert first == ("genes" if separator == "\u2011" else f"genes non{separator}")
 
 
-def test_unfit_url_stops_at_floor_and_reports_without_losing_destination(tmp_path):
+def test_unfit_url_stops_at_floor_and_reports_without_losing_destination(tmp_path: object) -> None:
 	"""An excessive URL remains intact at 12 pt and produces an actionable warning."""
 	url = "https://example.test/" + "long-path/" * 20
 	path = tmp_path / "deck.djot"
@@ -99,7 +99,7 @@ def test_unfit_url_stops_at_floor_and_reports_without_losing_destination(tmp_pat
 	assert finding["text"] == url
 
 
-def test_final_runt_exemption_requires_maximum_body_size(tmp_path):
+def test_final_runt_exemption_requires_maximum_body_size(tmp_path: object) -> None:
 	"""Only a final paragraph at the theme ceiling is exempt, not earlier runts."""
 	path = tmp_path / "deck.djot"
 	text = "You can genetically modify one animal. What would you change?"

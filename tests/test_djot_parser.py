@@ -417,7 +417,7 @@ def test_adjacent_nested_list_items_retain_their_semantic_tree(tmp_path: pathlib
 		"Parent", "Child", "Grandchild")
 
 
-def test_explicit_link_target_wins_over_url_label(tmp_path):
+def test_explicit_link_target_wins_over_url_label(tmp_path: object) -> None:
 	deck = parse_source(tmp_path, '=== layout: one-panel\n@body\n[https://example.org/short](https://example.org/full?key=value)\n')
 	inline = deck.slides[0].cells[0].blocks[0].inlines[0]
 	assert inline.url == 'https://example.org/full?key=value'

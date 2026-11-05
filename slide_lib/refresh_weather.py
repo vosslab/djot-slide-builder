@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Preview or refresh the NWS Chicago weather story before an announcement icebreaker."""
 
 # Standard Library
@@ -37,7 +36,7 @@ def validate_url(url: str) -> None:
 class WeatherRedirectHandler(urllib.request.HTTPRedirectHandler):
 	"""Keep redirect requests on the same approved public resources."""
 
-	def redirect_request(self, request, response, code, message, headers, new_url):
+	def redirect_request(self, request: object, response: object, code: int, message: str, headers: object, new_url: str) -> object:
 		validate_url(new_url)
 		return super().redirect_request(request, response, code, message, headers, new_url)
 
@@ -69,7 +68,7 @@ def weather_stories(data: bytes) -> list[dict[str, str]]:
 	return [weather_story(panel, title.text_content()) for panel, title in zip(panels, titles)]
 
 
-def weather_story(panel, title: str) -> dict[str, str]:
+def weather_story(panel: object, title: str) -> dict[str, str]:
 	"""Read one graphic and its complete description."""
 	graphics = panel.find_class("graphicast")
 	if len(graphics) != 1:

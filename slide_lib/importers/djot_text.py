@@ -1,6 +1,7 @@
 """Escape and preserve imported inline formatting in canonical Djot."""
 
 import dataclasses
+import html
 import re
 
 import slide_lib.importers.source_model as source_model
@@ -21,10 +22,13 @@ def djot_text(text: str) -> str:
 	"""Escape raw source characters once and project settled DNA notation."""
 	# ASVS 1.2.1: output escaping occurs only at the Djot rendering boundary.
 	escaped = "".join(f"\\{character}" if character in DJOT_PUNCTUATION else character for character in text)
+	escaped = html.unescape(escaped)
 	escaped = PRIMED_SEQUENCE.sub(r"\1&prime;-`\2`-\3&prime;", escaped)
 	escaped = CONVENTIONAL_PRIMED_SEQUENCE.sub(r"\1&prime;-`\2`-\3&prime;", escaped)
 	escaped = PRIME_MARK.sub(r"\1&prime;", escaped)
-	return DNA_SEQUENCE.sub(r"`\1`", escaped)
+	escaped = DNA_SEQUENCE.sub(r"`\1`", escaped)
+	return "".join(character if character.isascii() else f"&#{ord(character)};"
+		for character in escaped)
 
 
 #============================================

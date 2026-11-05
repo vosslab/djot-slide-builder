@@ -473,6 +473,10 @@ def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
 			assembled.append(dataclasses.replace(slide, hidden=True) if source.hidden else slide)
 	slides = tuple(assembled)
 	repo_root = slide_lib.djot_sources.repository_root(path)
+	# Temporary and copied decks can live outside the checkout that launched the
+	# parser.  Their component assets belong to the deck directory, not that CWD.
+	if not path.is_relative_to(repo_root):
+		repo_root = path.parent
 	first_title = next((block for slide in slides if not slide.hidden for block in slide.blocks
 		if isinstance(block, slide_lib.native_model.Heading) and block.level == 1), None)
 	title = visible_text(first_title.inlines) if first_title is not None else ""

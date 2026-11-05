@@ -141,7 +141,7 @@ bridge/PDF evidence passed once, while attended Impress click playback remains o
 It includes parental/recombinant matching reminders for all three pairs and 11 SVG components
 for the setup, allele comparisons, chromosome map, and two-exchange mechanism. The generated
 example has 30%, 20%, and 40% pairwise recombination with a 50 cM interval sum.
-The textbook predecessor is preserved as `.djot.retired` beside its assets, so folder builds omit it.
+The obsolete textbook predecessor was removed after its replacement was accepted.
 Original ODP/PDF evidence remains available. Source selection and calculation verification are
 recorded in the LECT08 review and slide map.
 
@@ -193,11 +193,11 @@ Ordered asci use the generator's current spore shapes, shading, and ascus outlin
 opening definitions for spore/ascospore, ascus, FDS, and SDS; see
 [LECT09H_REVIEW.md](LECT09/djot/LECT09H_REVIEW.md). Retained draft diagrams are repaired.
 
-The two mixed masters and earlier conversion/activity sources remain as .djot.retired records.
+The obsolete mixed masters and earlier conversion/activity sources were removed after replacement acceptance.
 Existing asset directories and original ODP/PDF inputs are unchanged. Ordinary builds use saved
 Djot/SVG inputs without BPW or Chromium. The updated in-class handout remains separate;
 09G shows a complete second-page preview beside its activity instructions.
-The two-gene working-table SVGs can still be rebuilt with `tools/render_tetrad_tables.py`
+The two-gene working-table SVGs can still be rebuilt with `slide_lib.render_tetrad_tables`
 and the adjacent saved problem data; the utility retains its original two-gene scope.
 
 Twelve canonical decks now live in `LECT09/djot/` and `LECT10/djot/`, with current 2026

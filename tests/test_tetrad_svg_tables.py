@@ -3,9 +3,13 @@
 import copy
 import xml.etree.ElementTree as ET
 
+import defusedxml.ElementTree
+
 import pytest
 
-import tools.render_tetrad_tables
+import slide_lib.render_tetrad_tables as render_tetrad_tables
+
+
 
 
 def test_table_preserves_genotypes_counts_and_question_reveal() -> None:
@@ -23,7 +27,8 @@ def test_table_preserves_genotypes_counts_and_question_reveal() -> None:
 			ET.SubElement(artwork, ns + "g", {"data-genotype": genotype})
 		asci.append(artwork)
 	for reveal, expected in ((False, ["?", "?", "?"]), (True, ["PD", "TT", "NPD"])):
-		root = ET.fromstring(tools.render_tetrad_tables.render_table(example, tuple(asci), reveal))
+		root = defusedxml.ElementTree.fromstring(
+			render_tetrad_tables.render_table(example, tuple(asci), reveal))
 		rows = root.findall(".//" + ns + "g[@data-set]")
 		assert [row.attrib["data-count"] for row in rows] == ["1", "2", "7"]
 		assert [row.findall(ns + "text")[-1].text for row in rows] == expected
@@ -32,4 +37,4 @@ def test_table_preserves_genotypes_counts_and_question_reveal() -> None:
 	bad = copy.deepcopy(asci)
 	bad[0][0].set("data-genotype", "a+")
 	with pytest.raises(ValueError, match="does not match"):
-		tools.render_tetrad_tables.render_table(example, tuple(bad), False)
+		render_tetrad_tables.render_table(example, tuple(bad), False)

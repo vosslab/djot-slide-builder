@@ -19,6 +19,13 @@ import slide_lib.presentation_theme
 import slide_lib.svg_images
 
 
+#============================================
+def test_imported_djot_text_uses_character_references() -> None:
+	"""Imported visible Unicode remains ASCII-authored Djot source."""
+	assert slide_lib.importers.djot_text.djot_text("alpha &alpha;") == "alpha &#945;"
+
+
+#============================================
 def test_svg_payload_and_aspect_survive_comparison_export(tmp_path: pathlib.Path) -> None:
 	"""A figure stays SVG while unequal captions share a aligned native text row."""
 	svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">'

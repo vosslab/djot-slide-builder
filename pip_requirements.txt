@@ -1,4 +1,5 @@
 lxml  # Scoped DTD-free XML parsing for ODP slide imports
+defusedxml  # Safe standard-library-compatible XML parser
 Pillow>=10.0  # Raster validation and fractional-size font measurements
 fonttools  # Read metrics from bundled, hash-verified layout fonts
 rich  # Concise presentation-build progress, summaries, and error panels

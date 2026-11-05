@@ -2,7 +2,7 @@
 
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import PIL.Image
 

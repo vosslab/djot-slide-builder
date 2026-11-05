@@ -12,7 +12,9 @@ import pytest
 import slide_lib.djot_parser
 import slide_lib.layout_validation
 import slide_lib.native_model
-import tools.refresh_weather
+import slide_lib.refresh_weather as refresh_weather
+
+
 
 
 def weather_html() -> bytes:
@@ -37,7 +39,7 @@ def png_bytes(color: str = "blue") -> bytes:
 
 
 def test_all_stories_and_generated_caption_preserve_literal_forecast(tmp_path: pathlib.Path) -> None:
-	stories = tools.refresh_weather.weather_stories(weather_html())
+	stories = refresh_weather.weather_stories(weather_html())
 	assert len(stories) == 2 and stories[1]["title"] == "Other story"
 	assert stories[1]["caption"] == "Unrelated forecast."
 	story = stories[0]
@@ -47,7 +49,7 @@ def test_all_stories_and_generated_caption_preserve_literal_forecast(tmp_path: p
 	image.parent.mkdir(parents=True)
 	image.write_bytes(png_bytes())
 	path = tmp_path / "weather.djot"
-	path.write_text(tools.refresh_weather.weather_slide(story, image.name, datetime.date(2026, 11, 2)))
+	path.write_text(refresh_weather.weather_slide(story, image.name, datetime.date(2026, 11, 2)))
 	slide = slide_lib.djot_parser.parse_deck(path).slides[0]
 	caption = next(cell for cell in slide.cells if cell.name == "caption")
 	assert slide.layout_class == "big-image" and not slide.notes
@@ -56,11 +58,11 @@ def test_all_stories_and_generated_caption_preserve_literal_forecast(tmp_path: p
 	assert all(isinstance(inline, slide_lib.native_model.Text) for inline in caption.blocks[0].inlines)
 	assert "retrieved Nov 02, 2026" in slide_lib.layout_validation.inline_text(slide.citation[0].inlines)
 	link = next(inline for inline in slide.citation[0].inlines if isinstance(inline, slide_lib.native_model.Link))
-	assert link.url == tools.refresh_weather.PAGE_URL
+	assert link.url == refresh_weather.PAGE_URL
 	assert slide_lib.layout_validation.inline_text(link.children) == link.url
 
 
-def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(tmp_path, monkeypatch) -> None:
+def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(tmp_path: object, monkeypatch: object) -> None:
 	path = tmp_path / "lect09a-2026_announcements.djot"
 	source = ("=== layout: one-panel\n# Today's Agenda\n@body\nAgenda.\n\n"
 		"=== layout: one-panel\n# [Breakout Room Chat]{color=red}\n@body\nQuestion.\n\n"
@@ -68,31 +70,31 @@ def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(
 		"=== layout: one-panel\nhidden: true\n# Later\n@body\nKeep this.\n")
 	path.write_text(source)
 	(tmp_path / "lect09c-topic.djot").write_text("Not an announcement.")
-	assert tools.refresh_weather.announcement_paths([str(tmp_path), str(path)]) == [path.resolve()]
+	assert refresh_weather.announcement_paths([str(tmp_path), str(path)]) == [path.resolve()]
 	image = png_bytes()
-	monkeypatch.setattr(tools.refresh_weather, "download",
-		lambda url, limit: weather_html() if url == tools.refresh_weather.PAGE_URL else image)
+	monkeypatch.setattr(refresh_weather, "download",
+		lambda url, limit: weather_html() if url == refresh_weather.PAGE_URL else image)
 	date = datetime.date(2026, 11, 2)
-	tools.refresh_weather.refresh([path], False, date)
+	refresh_weather.refresh([path], False, date)
 	assert path.read_text() == source and not (tmp_path / "assets").exists()
-	tools.refresh_weather.refresh([path], True, date)
+	refresh_weather.refresh([path], True, date)
 	first = path.read_text()
-	assert first.count(tools.refresh_weather.WEATHER_ASSET_PATH) == 2
+	assert first.count(refresh_weather.WEATHER_ASSET_PATH) == 2
 	assert first.index("Today's Agenda") < first.index("assets/weather_story/") < first.index("Breakout Room Chat")
 	assert first.endswith(source[source.index("=== layout: one-panel\n# [Breakout"):])
-	tools.refresh_weather.refresh([path], True, date)
+	refresh_weather.refresh([path], True, date)
 	assert path.read_text() == first
 	old_image = next((tmp_path / "assets/weather_story").glob("*.png"))
 	assert old_image.read_bytes() == image
 	image = png_bytes("red")
-	tools.refresh_weather.refresh([path], True, date)
-	assert path.read_text().count(tools.refresh_weather.WEATHER_ASSET_PATH) == 2
+	refresh_weather.refresh([path], True, date)
+	assert path.read_text().count(refresh_weather.WEATHER_ASSET_PATH) == 2
 	assert old_image.read_bytes() == png_bytes()
 	assert len(list((tmp_path / "assets/weather_story").glob("*.png"))) == 2
 
 
 @pytest.mark.parametrize("failure", ["network", "image", "caption", "anchor"])
-def test_failed_refresh_preserves_every_selected_deck_and_saved_image(tmp_path, monkeypatch, failure) -> None:
+def test_failed_refresh_preserves_every_selected_deck_and_saved_image(tmp_path: object, monkeypatch: object, failure: str) -> None:
 	source = "=== layout: one-panel\n# Ice Breaker\n@body\nTalk.\n"
 	first = tmp_path / "lect09a-2026_announcements.djot"
 	second = tmp_path / "lect10a-2026_announcements.djot"
@@ -104,16 +106,16 @@ def test_failed_refresh_preserves_every_selected_deck_and_saved_image(tmp_path, 
 	asset.write_bytes(png_bytes("gold"))
 	old_image = asset.read_bytes()
 
-	def download(url, limit):
+	def download(url: str, limit: int) -> bytes:
 		if failure == "network":
 			raise urllib.error.URLError("Test outage")
-		if url == tools.refresh_weather.PAGE_URL:
+		if url == refresh_weather.PAGE_URL:
 			return weather_html().replace(b'class="description"', b'class="missing"') if failure == "caption" else weather_html()
 		return b"not an image" if failure == "image" else png_bytes()
 
-	monkeypatch.setattr(tools.refresh_weather, "download", download)
+	monkeypatch.setattr(refresh_weather, "download", download)
 	with pytest.raises((ValueError, urllib.error.URLError, PIL.UnidentifiedImageError)):
-		tools.refresh_weather.refresh([first, second], True, datetime.date(2026, 11, 2))
+		refresh_weather.refresh([first, second], True, datetime.date(2026, 11, 2))
 	assert [path.read_bytes() for path in (first, second)] == before
 	assert asset.read_bytes() == old_image
 	assert list(asset.parent.iterdir()) == [asset]
@@ -122,20 +124,20 @@ def test_failed_refresh_preserves_every_selected_deck_and_saved_image(tmp_path, 
 def test_ambiguous_icebreaker_requires_correction() -> None:
 	slide = "=== layout: big-image\n@image\n![Story](assets/weather_story/saved.png)\n@caption\nForecast.\n\n"
 	anchor = "=== layout: one-panel\n# Breakout Room Chat\n@body\nTalk.\n"
-	assert tools.refresh_weather.update_source(slide + slide + anchor, slide) == slide + anchor
+	assert refresh_weather.update_source(slide + slide + anchor, slide) == slide + anchor
 	with pytest.raises(ValueError, match="one icebreaker"):
-		tools.refresh_weather.update_source(anchor + anchor, slide)
+		refresh_weather.update_source(anchor + anchor, slide)
 
 
-def test_download_bounds_and_redirects_keep_remote_input_on_official_resources(monkeypatch) -> None:
+def test_download_bounds_and_redirects_keep_remote_input_on_official_resources(monkeypatch: object) -> None:
 	for url in ("http://www.weather.gov/lot/weatherstory", "https://example.test/graphic.png",
 		"https://www.weather.gov/images/lot/wxstory/../../private.png"):
 		with pytest.raises(ValueError, match="official"):
-			tools.refresh_weather.WeatherRedirectHandler().redirect_request(None, None, 302, "", {}, url)
+			refresh_weather.WeatherRedirectHandler().redirect_request(None, None, 302, "", {}, url)
 	response = io.BytesIO(b"oversized")
-	response.url = tools.refresh_weather.PAGE_URL
+	response.url = refresh_weather.PAGE_URL
 	opener = types.SimpleNamespace(open=lambda request, timeout: response)
-	monkeypatch.setattr(tools.refresh_weather.urllib.request, "build_opener", lambda handler: opener)
-	monkeypatch.setattr(tools.refresh_weather.time, "sleep", lambda delay: None)
+	monkeypatch.setattr(refresh_weather.urllib.request, "build_opener", lambda handler: opener)
+	monkeypatch.setattr(refresh_weather.time, "sleep", lambda delay: None)
 	with pytest.raises(ValueError, match="exceeds"):
-		tools.refresh_weather.download(tools.refresh_weather.PAGE_URL, 3)
+		refresh_weather.download(refresh_weather.PAGE_URL, 3)

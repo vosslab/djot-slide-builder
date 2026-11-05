@@ -98,7 +98,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [ ] Select the week's icebreaker explicitly from `icebreakers.yaml` or an instructor selection.
   Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
 - [ ] Preview the StVC refresh with
-  `source source_me.sh && python3 tools/refresh_podcast.py DECK.djot`.
+  `source source_me.sh && python3 launchers/refresh_podcast.py DECK.djot`.
   Inspect the selected episode before applying `--write`.
 - [ ] Confirm the latest published StVC episode available on the lecture date and use it as the
   default selection. Record the selected episode number; if another episode is more appropriate,

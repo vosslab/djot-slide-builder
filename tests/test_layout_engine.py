@@ -493,7 +493,7 @@ Short editable caption.
 		slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT
 
 
-def test_big_image_long_caption_grows_downward_without_moving_image_or_covering_citation(tmp_path) -> None:
+def test_big_image_long_caption_grows_downward_without_moving_image_or_covering_citation(tmp_path: object) -> None:
 	"""Forecast paragraphs can use the free lower margin while cited slides retain their footer."""
 	write_image(tmp_path, "focal.png")
 	caption = ("Some may see intermittent light showers or sprinkles during trick or treating hours tonight. "
@@ -519,7 +519,7 @@ def test_big_image_long_caption_grows_downward_without_moving_image_or_covering_
 @pytest.mark.parametrize("label", ["https://example.test/short",
 	"*https://example.test/short*", "`https://example.test/short`",
 	"[https://example.test/short]{color=red}"])
-def test_visible_url_style_cannot_be_overridden(tmp_path, label):
+def test_visible_url_style_cannot_be_overridden(tmp_path: object, label: str) -> None:
 	result = compile_source(tmp_path, "=== layout: one-panel\n@body\n"
 		f"[{label}](https://example.test/full?key=value)\n")
 	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
