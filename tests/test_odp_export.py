@@ -334,7 +334,7 @@ def test_decoration_is_master_owned_and_text_remains_on_slide(
 			if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
 		properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
 		assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == (
-			"solid" if layout in ("title-slide", "big-image") else "none")
+			"solid" if layout in ("title-slide", "big-image", "subsection") else "none")
 
 
 def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path) -> None:

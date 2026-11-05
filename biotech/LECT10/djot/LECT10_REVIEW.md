@@ -399,3 +399,11 @@ clickable `mailto:` link. Native list styles retain their marker-to-text offset;
 align beneath the text, as verified on rendered PDF page 12. Counts remain 44 authored /
 8 hidden / 36 PDF pages. Native lint and 1,201 focused checks pass. Evidence is under
 `_temp/contact_slide_restore/`; no live mail-client launch or Impress playback was tested.
+
+## Symmetric subsection styling
+
+Subsections now have centered titles and matching full-width white stripes near the top and
+bottom. Their darker course background and smaller titles remain distinct from framed section
+cards. Biotechnology 10A/10C and Genetics 09A/10A were rebuilt; representative red and blue
+subsections and the unchanged section-card contrast were visually inspected. All deck page
+counts remain unchanged. Review images/logs are under `_temp/subsection_stripes/`.

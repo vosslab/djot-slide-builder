@@ -15,6 +15,8 @@
 - Center subsection titles and replace the short underline with matching full-width top/bottom
   stripes, preserving the theme's bilateral symmetry and distinct chapter-frame treatment.
   Update the existing transition regression to check centered titles and mirrored stripe geometry.
+  Rebuild Biotechnology 10A/10C and Genetics 09A/10A, inspect both course hues, reconcile
+  unchanged PDF counts, and pass 1,312 focused checks.
 
 - Restore the contact slide's original four colored options and nested response details,
   including the purple anonymous-form prompt. Remove the retired Gmail warning and make
