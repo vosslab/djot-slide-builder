@@ -5,6 +5,8 @@ import math
 
 import slide_lib.capacity_report
 import slide_lib.layout_measurement
+import slide_lib.layout_flow_measurement
+import slide_lib.layout_source_facts
 import slide_lib.layout_registry
 import slide_lib.editable_text
 import slide_lib.layout_content
@@ -25,7 +27,7 @@ def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_mo
 		session: slide_lib.layout_measurement.MeasurementSession | None = None) -> slide_lib.layout_model.LayoutSlide:
 	"""Compile one validated semantic slide without publishing a partial deck."""
 	slide_lib.layout_model.reject_unsupported_source_facts(
-		slide_lib.layout_measurement.unsupported_facts(source))
+		slide_lib.layout_source_facts.unsupported_facts(source))
 	session = session or slide_lib.layout_measurement.MeasurementSession(theme)
 	contract = slide_lib.layout_registry.contract_for(source.layout_class)
 	if source.layout_class == "multiple-choice":
@@ -123,7 +125,7 @@ def _cell_fits_floor(deck: slide_lib.native_model.Deck, cell: slide_lib.native_m
 			slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
 	if tables or images and text or any(isinstance(block, slide_lib.native_model.Heading) for block in text) or (
 		len(text) > 1 and any(slide_lib.editable_text.has_reveal(block) for block in text)):
-		return slide_lib.layout_measurement.mixed_flow_allocation(deck, text + tables, images, rectangle,
+		return slide_lib.layout_flow_measurement.mixed_flow_allocation(deck, text + tables, images, rectangle,
 			theme.body_floor_size_pt, theme, session) is not None
 	if text:
 		measure = slide_lib.layout_measurement.text_frame_measurement(rectangle)
@@ -390,7 +392,7 @@ def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		text_blocks: tuple[slide_lib.native_model.Block, ...], images: tuple[slide_lib.native_model.Image, ...],
 		rectangle: slide_lib.layout_primitives.LogicalRectangle,
 		theme: slide_lib.presentation_theme.PresentationTheme, layout: str, slot: str,
-		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_measurement.MixedFlowAllocation:
+		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_flow_measurement.MixedFlowAllocation:
 	"""Maximize font sizes plus displayed image widths, preserving readability before review fallback."""
 	cause = (slide_lib.capacity_report.CapacityCause.MIXED_READABILITY if images
 		else slide_lib.capacity_report.CapacityCause.MIXED_FLOW)
@@ -398,7 +400,7 @@ def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		best = None
 		for half_point in range(math.floor(theme.ordinary_body_size_pt * 2),
 				math.ceil(theme.body_floor_size_pt * 2) - 1, -1):
-			allocation = slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks,
+			allocation = slide_lib.layout_flow_measurement.mixed_flow_allocation(deck, text_blocks,
 				images, rectangle, half_point / 2, theme, session, review=review)
 			if allocation is not None and (best is None or
 					(allocation.score, allocation.size_pt) > (best.score, best.size_pt)):
@@ -411,7 +413,7 @@ def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
 	def fits(value: float) -> bool:
 		"""Find physical geometry only for the explicitly marked review artifact."""
-		return slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks, images,
+		return slide_lib.layout_flow_measurement.mixed_flow_allocation(deck, text_blocks, images,
 			rectangle, value, theme, session, review=True) is not None
 	size = next((half_point / 2 for half_point in range(
 		math.floor(theme.ordinary_body_size_pt * 2), math.ceil(minimum * 2) - 1, -1)
@@ -419,7 +421,7 @@ def _select_mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 	if size is None:
 		raise slide_lib.capacity_report.PhysicalCapacityError(text_blocks[0].location, layout, slot,
 			theme.body_floor_size_pt, cause, minimum)
-	allocation = slide_lib.layout_measurement.mixed_flow_allocation(deck, text_blocks, images,
+	allocation = slide_lib.layout_flow_measurement.mixed_flow_allocation(deck, text_blocks, images,
 		rectangle, size, theme, session, review=True)
 	if allocation is None:
 		raise ValueError("mixed-flow selection lost its exact final allocation")
@@ -511,7 +513,7 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 	image_height = 0.0
 	if parts.image is not None:
 		# ASVS 5.3.2: image_size retains the existing repository-containment check.
-		width, height = slide_lib.layout_measurement.image_size(deck, parts.image)
+		width, height = slide_lib.layout_flow_measurement.image_size(deck, parts.image)
 		image_height = min(rectangle.width * height / width, rectangle.height * .30)
 	column_gap = 42.0
 	adaptive_result = slide_lib.multiple_choice_layout.select_adaptive_choice_geometry(parts,

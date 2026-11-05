@@ -3,7 +3,6 @@
 # Standard Library
 import dataclasses
 import hashlib
-import io
 import math
 import pathlib
 import re
@@ -11,18 +10,17 @@ import xml.etree.ElementTree
 import zipfile
 
 # PIP3 modules
-from PIL import Image
-
 # local repo modules
 import slide_lib.odf_package
 import slide_lib.importers.odf_styles as odf_styles
 import slide_lib.importers.odf_text as odf_text
 import slide_lib.importers.odp_metafile as odp_metafile
+import slide_lib.importers.odp_media as odp_media
 import slide_lib.importers.odp_reveals as odp_reveals
+import slide_lib.importers.odp_tables as odp_tables
 import slide_lib.importers.odp_visibility as odp_visibility
 import slide_lib.importers.source_model as source_model
 import slide_lib.presentation_theme
-import slide_lib.svg_images
 
 
 NS = {
@@ -37,13 +35,7 @@ NS = {
 	"xlink": "http://www.w3.org/1999/xlink",
 }
 ODP_MIMETYPE = "application/vnd.oasis.opendocument.presentation"
-SUPPORTED_IMAGE_SUFFIXES = frozenset({".gif", ".jpg", ".png", ".svg"})
-MAX_IMAGE_PIXELS = 100_000_000
-MAX_IMAGE_FRAMES = 100
-MAX_IMAGE_AGGREGATE_PIXELS = 500_000_000
 MAX_ODF_LENGTH_POINTS = 100_000.0
-MAX_TABLE_CELLS = 2_000
-MAX_TABLE_REPEAT = 100
 MAX_PRESENTATION_PAGES = 1_000
 MAX_PAGE_OBJECTS = 1_000
 MAX_DRAW_GROUP_DEPTH = 64
@@ -115,13 +107,6 @@ class _PageAccumulator:
 	next_ordinal: int = 0
 	object_count: int = 0
 
-
-@dataclasses.dataclass
-class _MediaBudget:
-	"""Bounded decoded media totals for one source presentation."""
-
-	frame_count: int = 0
-	pixel_count: int = 0
 
 #============================================
 def qname(prefix: str, local_name: str) -> str:
@@ -429,133 +414,6 @@ def rotation_degrees(element: xml.etree.ElementTree.Element) -> float:
 
 
 #============================================
-def validate_image_blob(blob: bytes, suffix: str, media_budget: _MediaBudget) -> None:
-	"""Validate SVG or decode every raster frame before publishing an asset."""
-	if len(blob) > slide_lib.odf_package.MAX_MEMBER_BYTES:
-		raise ValueError("ODP image exceeds the per-image size limit")
-	if suffix == ".svg":
-		slide_lib.svg_images.dimensions_blob(blob, "imported SVG")
-		return
-	# ASVS 5.2.2 and 5.2.6: decode all admitted media before it reaches staging.
-	if suffix not in SUPPORTED_IMAGE_SUFFIXES:
-		raise ValueError(f"unsupported ODP image type: {suffix}")
-	expected_format = {".gif": "GIF", ".jpg": "JPEG", ".png": "PNG"}[suffix]
-	with Image.open(io.BytesIO(blob)) as image:
-		if image.format != expected_format:
-			raise ValueError("ODP image bytes do not match their published extension")
-		frame_total = getattr(image, "n_frames", 1)
-		if frame_total < 1 or frame_total > MAX_IMAGE_FRAMES:
-			raise ValueError("ODP image frame count exceeds the supported limit")
-		if media_budget.frame_count + frame_total > MAX_IMAGE_FRAMES:
-			raise ValueError("ODP aggregate image frame count exceeds the supported limit")
-		image_pixels = 0
-		for frame_index in range(frame_total):
-			image.seek(frame_index)
-			image.load()
-			width, height = image.size
-			pixels = width * height
-			if width < 1 or height < 1 or pixels > MAX_IMAGE_PIXELS:
-				raise ValueError("ODP image dimensions exceed the supported limit")
-			image_pixels += pixels
-		if media_budget.pixel_count + image_pixels > MAX_IMAGE_AGGREGATE_PIXELS:
-			raise ValueError("ODP aggregate image pixels exceed the supported limit")
-		media_budget.frame_count += frame_total
-		media_budget.pixel_count += image_pixels
-
-
-#============================================
-def image_suffix(reference: str) -> str:
-	"""Normalize a claimed package suffix for bounded raster validation."""
-	suffix = pathlib.PurePosixPath(reference).suffix.lower()
-	if suffix == ".jpeg":
-		suffix = ".jpg"
-	return suffix
-
-
-#============================================
-def table_cell_runs(cell: xml.etree.ElementTree.Element,
-		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TextRun, ...]:
-	"""Read one ODF table cell into the native inline table vocabulary."""
-	result: list[source_model.TextRun] = []
-	for _level, runs in odf_text.text_paragraphs(cell, definitions):
-		if result:
-			result.append(source_model.TextRun(" "))
-		result.extend(runs)
-	return tuple(result)
-
-
-#============================================
-def repeat_count(element: xml.etree.ElementTree.Element, attribute: str) -> int:
-	"""Return one bounded ODF table repeat value."""
-	raw_value = element.get(qname("table", attribute), "1")
-	if not raw_value.isdigit() or not 1 <= int(raw_value) <= MAX_TABLE_REPEAT:
-		raise ValueError("ODF table repeat count exceeds the supported range")
-	return int(raw_value)
-
-
-#============================================
-def read_table(table: xml.etree.ElementTree.Element, left: float, top: float,
-		source_ordinal: int, definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TableBlock,
-		list[tuple[int, int, tuple[source_model.TextRun, ...]]]]:
-	"""Extract a rectangular ODF table and its planner-facing cell facts."""
-	rows: list[tuple[tuple[source_model.TextRun, ...], ...]] = []
-	header_row_count = 0
-	unsupported: list[str] = []
-	total_cell_count = 0
-
-	def add_row(row: xml.etree.ElementTree.Element, is_header: bool) -> None:
-		nonlocal header_row_count, total_cell_count
-		cells: list[tuple[source_model.TextRun, ...]] = []
-		for cell in row:
-			if cell.tag not in {qname("table", "table-cell"), qname("table", "covered-table-cell")}:
-				continue
-			if cell.tag == qname("table", "covered-table-cell"):
-				unsupported.append("covered source table cells require span-aware emission")
-			if cell.get(qname("table", "number-columns-spanned")) or \
-					cell.get(qname("table", "number-rows-spanned")):
-				unsupported.append("merged source table cells require span-aware emission")
-			for _repeat in range(repeat_count(cell, "number-columns-repeated")):
-				if len(cells) >= MAX_TABLE_CELLS:
-					raise ValueError("ODF table exceeds the supported cell range")
-				cells.append(table_cell_runs(cell, definitions))
-		row_repeats = repeat_count(row, "number-rows-repeated")
-		if total_cell_count + len(cells) * row_repeats > MAX_TABLE_CELLS:
-			raise ValueError("ODF table exceeds the supported cell range")
-		for _repeat in range(row_repeats):
-			if len(rows) >= MAX_TABLE_CELLS:
-				raise ValueError("ODF table exceeds the supported cell range")
-			rows.append(tuple(cells))
-			total_cell_count += len(cells)
-			if is_header:
-				header_row_count += 1
-
-	for child in table:
-		if child.tag == qname("table", "table-header-rows"):
-			for row in child.findall("./table:table-row", NS):
-				add_row(row, True)
-		elif child.tag == qname("table", "table-row"):
-			add_row(child, False)
-	if not rows:
-		raise ValueError("ODF table has no rows")
-	column_count = len(rows[0])
-	if not column_count or any(len(row) != column_count for row in rows):
-		unsupported.append("irregular source table rows require reconstruction")
-	if header_row_count > 1:
-		unsupported.append("multiple source table header rows require reconstruction")
-	headers = rows[0] if header_row_count == 1 else ()
-	body_rows = rows[1:] if header_row_count == 1 else rows
-	cell_facts: list[tuple[int, int, tuple[source_model.TextRun, ...]]] = []
-	for row_index, row in enumerate(rows):
-		for column_index, cell in enumerate(row):
-			if cell:
-				cell_facts.append((row_index, column_index, cell))
-	return source_model.TableBlock(
-		headers, tuple(body_rows), left, top, source_ordinal,
-		"; ".join(sorted(set(unsupported))) or None,
-	), cell_facts
-
-
-#============================================
 def append_geometry(accumulator: _PageAccumulator, source_ordinal: int,
 		source_kind: str, geometry: tuple[float, float, float, float],
 		z_order: tuple[int, ...]) -> None:
@@ -573,7 +431,7 @@ def add_picture(
 		archive: zipfile.ZipFile, member_names: frozenset[str], manifest_targets: frozenset[str],
 		assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		accumulator: _PageAccumulator, media_budget: _MediaBudget,
+		accumulator: _PageAccumulator, media_budget: odp_media.MediaBudget,
 		z_order: tuple[int, ...],
 ) -> bool:
 	"""Stage one validated package-local image, retaining external evidence."""
@@ -590,7 +448,7 @@ def add_picture(
 	if target not in manifest_targets:
 		raise ValueError("ODF image reference misses its manifest target")
 	blob = archive.read(target)
-	suffix = image_suffix(target)
+	suffix = odp_media.image_suffix(target)
 	# Embedded formula previews use extensionless ObjectReplacements members.
 	# Route their recognizable SVM header through the existing bounded validator.
 	if not suffix and blob.startswith(b"VCLMTF"):
@@ -598,7 +456,7 @@ def add_picture(
 	is_metafile = suffix in odp_metafile.METAFILE_SUFFIXES
 	try:
 		blob, suffix = odp_metafile.component_image(blob, suffix, geometry)
-		validate_image_blob(blob, suffix, media_budget)
+		odp_media.validate_image_blob(blob, suffix, media_budget)
 	except (OSError, ValueError) as error:
 		accumulator.review_reasons.append(f"source image requires review: {error}")
 		return True
@@ -673,7 +531,7 @@ def add_table(
 ) -> bool:
 	"""Add a real ODF table and its planning evidence without flattening cells."""
 	left, top, width, height = geometry
-	block, cells = read_table(table, left, top, source_ordinal, definitions)
+	block, cells = odp_tables.read_table(table, left, top, source_ordinal, definitions)
 	accumulator.tables.append(block)
 	has_fill, has_line = style_evidence(element, definitions)
 	row_count = len(block.rows) + (1 if block.headers else 0)
@@ -695,7 +553,7 @@ def read_frame(
 		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
 		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		accumulator: _PageAccumulator, media_budget: _MediaBudget,
+		accumulator: _PageAccumulator, media_budget: odp_media.MediaBudget,
 		z_order: tuple[int, ...], source_ordinal: int,
 		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> None:
@@ -745,7 +603,7 @@ def read_page_objects(
 		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
 		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		media_budget: _MediaBudget, definitions: dict[str, odf_styles.StyleDefinition],
+		media_budget: odp_media.MediaBudget, definitions: dict[str, odf_styles.StyleDefinition],
 		appear_targets: frozenset[str],
 ) -> _PageAccumulator:
 	"""Extract direct visible page objects in their original nested z-order."""
@@ -859,7 +717,7 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 		layout_dimensions = read_page_layout_dimensions(roots)
 		declared_roles = read_declared_placeholder_roles(roots)
 		known_images: dict[str, str] = {}
-		media_budget = _MediaBudget()
+		media_budget = odp_media.MediaBudget()
 		read_slides_result: list[ReadSlide] = []
 		pages = content_root.findall(".//draw:page", NS)
 		if len(pages) > MAX_PRESENTATION_PAGES:

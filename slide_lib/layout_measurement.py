@@ -2,23 +2,19 @@
 
 import collections.abc
 import dataclasses
-import itertools
 import math
 
-import PIL.Image
 import PIL.ImageFont
 
 import slide_lib.editable_text
-import slide_lib.djot_sources
 import slide_lib.layout_content
 import slide_lib.capacity_report
-import slide_lib.layout_model
 import slide_lib.layout_primitives
+import slide_lib.layout_source_facts
 import slide_lib.math_layout
 import slide_lib.math_render
 import slide_lib.native_model
 import slide_lib.presentation_theme
-import slide_lib.svg_images
 import slide_lib.typography
 
 
@@ -128,8 +124,8 @@ class MeasurementSession:
 		for source in deck.slides:
 			blocks = source.blocks + tuple(block for cell in source.cells for block in cell.blocks)
 			slide_lib.math_render.validate_equation_blocks(blocks)
-			for block in _descendant_blocks(blocks):
-				for inline in _block_inlines(block):
+			for block in slide_lib.layout_source_facts.descendant_blocks(blocks):
+				for inline in slide_lib.layout_source_facts.block_inlines(block):
 					if isinstance(inline, slide_lib.native_model.InlineMath):
 						requests.setdefault((inline.value, inline.display), block.location)
 		self.equations = slide_lib.math_render.render_equations(requests)
@@ -140,7 +136,7 @@ class MeasurementSession:
 		groups: dict[str, list[slide_lib.native_model.Table]] = {}
 		for source in deck.slides:
 			blocks = source.blocks + tuple(block for cell in source.cells for block in cell.blocks)
-			for block in _descendant_blocks(blocks):
+			for block in slide_lib.layout_source_facts.descendant_blocks(blocks):
 				if isinstance(block, slide_lib.native_model.Table) and block.table_group is not None:
 					groups.setdefault(block.table_group, []).append(block)
 		for name, tables in groups.items():
@@ -818,176 +814,3 @@ def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRecta
 	if name == "six-panels":
 		return grid(left, top, width, height, 3, 2)
 	raise ValueError(f"unknown physical geometry: {name}")
-
-
-def image_size(deck: slide_lib.native_model.Deck,
-		image: slide_lib.native_model.Image) -> tuple[float, float]:
-	"""Return the intrinsic dimensions of one ordinary image."""
-	path = slide_lib.djot_sources.image_path(deck, image)
-	if not path.is_relative_to(deck.repo_root) or not path.is_file():
-		raise ValueError(f"{image.location.path}:{image.location.line}: component image is missing or outside the repository: {image.source}")
-	if path.suffix.lower() == ".svg":
-		return slide_lib.svg_images.dimensions(path)
-	with PIL.Image.open(path) as opened:
-		result = opened.size
-	return result
-
-
-@dataclasses.dataclass(frozen=True)
-class MixedFlowAllocation:
-	"""Retain the exact proportional image/text heights for one final mixed-flow frame."""
-
-	size_pt: float
-	blocks: tuple[slide_lib.native_model.Block, ...]
-	heights: tuple[float, ...]
-	score: float
-
-
-def _image_width_heights(natural: tuple[float, ...], maximum: tuple[float, ...],
-		available: float, floor_ratio: float) -> tuple[float, ...] | None:
-	"""Maximize summed displayed widths at vertices of the bounded height constraint."""
-	minimum = tuple(height * floor_ratio for height in maximum)
-	if available < sum(minimum) - 1e-9:
-		return None
-	if available >= sum(maximum):
-		return maximum
-	best: tuple[float, ...] | None = None
-	best_score = -1.0
-	# A linear maximum has a vertex solution; the slide contract caps images at six.
-	for free in range(len(natural)):
-		others = tuple(index for index in range(len(natural)) if index != free)
-		for bounds in itertools.product((False, True), repeat=len(others)):
-			heights = list(minimum)
-			for index, upper in zip(others, bounds):
-				heights[index] = maximum[index] if upper else minimum[index]
-			remaining = available - sum(heights[index] for index in others)
-			if remaining < minimum[free] - 1e-9 or remaining > maximum[free] + 1e-9:
-				continue
-			heights[free] = max(minimum[free], min(maximum[free], remaining))
-			candidate = tuple(heights)
-			score = sum(height / full for height, full in zip(candidate, natural))
-			if (score, candidate) > (best_score, best or ()):
-				best, best_score = candidate, score
-	return best
-
-
-#============================================
-def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
-		text_blocks: tuple[slide_lib.native_model.Block, ...],
-		images: tuple[slide_lib.native_model.Image, ...],
-		rectangle: slide_lib.layout_primitives.LogicalRectangle, size_pt: float,
-		theme: slide_lib.presentation_theme.PresentationTheme,
-		session: MeasurementSession, *, review: bool = False) -> MixedFlowAllocation | None:
-	"""Allocate the whole region with a linear size score; retain bounds for review recovery."""
-	if not review and size_pt < theme.body_floor_size_pt:
-		return None
-	blocks = tuple(sorted(text_blocks + images, key=lambda block: block.location.line))
-	text_heights = {}
-	for block in text_blocks:
-		if isinstance(block, slide_lib.native_model.Heading):
-			height = paragraph_height(block.inlines, size_pt, rectangle.width, theme, bold=True, session=session)
-		elif isinstance(block, slide_lib.native_model.Table):
-			height = table_height(block, size_pt, rectangle.width, theme, session)
-		elif isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
-			height = text_height(items_for((block,)), size_pt, rectangle.width, theme, session)
-		else:
-			raise ValueError(f"{block.location}: unsupported flow content")
-		text_heights[id(block)] = height
-	natural_image_heights = {id(image): rectangle.width * image_size(deck, image)[1] /
-		image_size(deck, image)[0] for image in images}
-	available = rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme) - \
-		12 * (len(blocks) - 1) - sum(text_heights.values())
-	if available <= 0:
-		return None
-	natural = tuple(natural_image_heights[id(image)] for image in images)
-	maximum = tuple(min(height, rectangle.height - point_height(TEXT_FRAME_CLEARANCE_PT, theme))
-		for height in natural)
-	floor = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT if review else theme.body_floor_size_pt
-	image_heights = _image_width_heights(natural, maximum, available,
-		floor / theme.ordinary_body_size_pt)
-	if image_heights is None:
-		return None
-	allocated = {id(image): height for image, height in zip(images, image_heights)}
-	heights = tuple(allocated[id(block)] if isinstance(block,
-		slide_lib.native_model.Image) else text_heights[id(block)] for block in blocks)
-	if sum(heights) + 12 * (len(blocks) - 1) + point_height(TEXT_FRAME_CLEARANCE_PT, theme) > \
-			rectangle.height + 1e-9:
-		return None
-	# Font size represents fixed-width text; image widths use the same logical-pixel units.
-	score = len(text_blocks) * point_height(size_pt, theme) + rectangle.width * sum(
-		height / full for height, full in zip(image_heights, natural))
-	return MixedFlowAllocation(size_pt, blocks, heights, score)
-
-
-def unsupported_facts(slide: slide_lib.native_model.Slide) -> tuple[slide_lib.layout_model.UnsupportedSourceFact, ...]:
-	"""Collect constructs without a deliberately approved editable projection."""
-	facts: list[slide_lib.layout_model.UnsupportedSourceFact] = []
-	for block in _descendant_blocks(slide.blocks + tuple(block for cell in slide.cells for block in cell.blocks)):
-		attributes = _unsupported_attributes(block)
-		if isinstance(block, (slide_lib.native_model.CodeBlock,
-			slide_lib.native_model.QuoteBlock)):
-			facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, type(block).__name__, attributes))
-		elif attributes:
-			facts.append(slide_lib.layout_model.UnsupportedSourceFact(block.location, type(block).__name__, attributes))
-		if isinstance(block, slide_lib.native_model.ListBlock):
-			for item in _descendant_list_items(block):
-				attributes = _unsupported_attributes(item)
-				if attributes:
-					facts.append(slide_lib.layout_model.UnsupportedSourceFact(
-						item.location, type(item).__name__, attributes))
-	return tuple(facts)
-
-
-def _unsupported_attributes(item: slide_lib.native_model.Block |
-		slide_lib.native_model.ListItem) -> tuple[slide_lib.native_model.Attribute, ...]:
-	"""Return attributes left after the validated text-color projection."""
-	attributes = getattr(item, "attributes", ())
-	if isinstance(item, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph,
-			slide_lib.native_model.ListBlock, slide_lib.native_model.ListItem,
-			slide_lib.native_model.ImageArrow, slide_lib.native_model.ImageOutline)):
-		return tuple(attribute for attribute in attributes if attribute.name != "color")
-	return attributes
-
-
-def _block_inlines(block: slide_lib.native_model.Block) -> tuple[slide_lib.native_model.Inline, ...]:
-	"""Return recursive inline facts for every editable block container."""
-	if isinstance(block, (slide_lib.native_model.Heading, slide_lib.native_model.Paragraph)):
-		return _descendant_inlines(block.inlines)
-	if isinstance(block, slide_lib.native_model.ListBlock):
-		return tuple(inline for item in block.items for inline in _descendant_inlines(item.inlines))
-	if isinstance(block, slide_lib.native_model.Table):
-		return tuple(inline for row in (block.headers,) + block.rows for cell in row
-			for inline in _descendant_inlines(cell.inlines))
-	return ()
-
-
-def _descendant_inlines(inlines: tuple[slide_lib.native_model.Inline, ...]) -> tuple[slide_lib.native_model.Inline, ...]:
-	result: list[slide_lib.native_model.Inline] = []
-	for inline in inlines:
-		result.append(inline)
-		if isinstance(inline, (slide_lib.native_model.Strong, slide_lib.native_model.Emphasis,
-				slide_lib.native_model.Link, slide_lib.native_model.StyledSpan)):
-			result.extend(_descendant_inlines(inline.children))
-	return tuple(result)
-
-
-def _descendant_blocks(blocks: tuple[slide_lib.native_model.Block, ...]) -> tuple[slide_lib.native_model.Block, ...]:
-	result: list[slide_lib.native_model.Block] = []
-	for block in blocks:
-		result.append(block)
-		if isinstance(block, slide_lib.native_model.QuoteBlock):
-			result.extend(_descendant_blocks(block.blocks))
-		elif isinstance(block, slide_lib.native_model.ListBlock):
-			for item in block.items:
-				for child in item.children:
-					result.extend(_descendant_blocks((child,)))
-	return tuple(result)
-
-
-def _descendant_list_items(block: slide_lib.native_model.ListBlock) -> tuple[slide_lib.native_model.ListItem, ...]:
-	result: list[slide_lib.native_model.ListItem] = []
-	for item in block.items:
-		result.append(item)
-		for child in item.children:
-			result.extend(_descendant_list_items(child))
-	return tuple(result)

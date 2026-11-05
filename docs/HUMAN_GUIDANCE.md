@@ -1,5 +1,17 @@
 # Human guidance
 
+- Keep bytecode caches visible to detect agent mistakes; do not add a `__pycache__` ignore rule.
+  Honor the bootstrapped Python environment when running checks.
+
+- Keep source provenance portable instead of embedding machine-specific absolute paths.
+
+- Divide overly long files cohesively by responsibility instead of trimming them to pass
+  the source-file line limit.
+
+- Keep Biotechnology Djot folders inside their corresponding `LECT##/` folders.
+- Delete obsolete Djot assets along with their obsolete source copies instead of saving
+  another `old/djot_assets/` folder.
+
 - Remove obsolete retired slide sources once their replacements are accepted; preserve the
   meaningful history in documentation rather than keeping duplicate source files.
 

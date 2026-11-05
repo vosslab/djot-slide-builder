@@ -1,12 +1,12 @@
 """Geometry-first planning for imported presentation slides."""
 import dataclasses
 import itertools
-import math
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.heading_relation as heading_relation
 import slide_lib.importers.visual_relations as visual_relations
 import slide_lib.importers.rotated_vector_label as rotated_vector_label
-import slide_lib.importers.source_model as source_model
+import slide_lib.importers.source_regions as source_regions
+import slide_lib.importers.source_tables as source_tables
 import slide_lib.importers.topology as topology
 import slide_lib.layout_registry
 TITLE_TOP_RATIO = 0.24
@@ -44,133 +44,16 @@ MULTIPLE_CHOICE_FIGURE_MAX_HEIGHT_RATIO = 0.35
 MULTIPLE_CHOICE_FIGURE_CENTER_OFFSET_RATIO = 0.20
 MULTIPLE_CHOICE_FIGURE_TOP_CENTER_RATIO = 0.35
 @dataclasses.dataclass(frozen=True)
-class SourceTextRegion:
-	"""One source text shape, retaining paragraph structure and geometry."""
-	paragraphs: tuple[tuple[int, tuple[source_model.TextRun, ...]], ...]
-	bounds: geometry.NormalizedBounds
-	is_subtitle: bool
-	placeholder_confidence: float
-	title_identity: bool = False
-	source_kind: str = "text"
-	source_ordinal: int = 0
-	table_row: int | None = None
-	table_column: int | None = None
-	table_row_count: int = 0
-	table_column_count: int = 0
-	table_id: int | None = None
-	table_has_header: bool = False
-	table_unsupported_reason: str | None = None
-	rotation_degrees: float = 0.0
-	has_positive_fill: bool = False
-	has_positive_line: bool = False
-	placeholder_role: str | None = None
-	z_order: tuple[int, ...] = ()
-	def __post_init__(self) -> None:
-		if not self.paragraphs:
-			raise ValueError("source text region requires at least one paragraph")
-		if not 0.0 <= self.placeholder_confidence <= 1.0:
-			raise ValueError("placeholder confidence must be within zero and one")
-		if self.source_kind not in {"text", "text-box", "auto-shape", "table"}:
-			raise ValueError("source text kind is not supported")
-		if not math.isfinite(self.rotation_degrees):
-			raise ValueError("source text rotation must be finite")
-		rotation = self.rotation_degrees % 360.0
-		if rotation > 180.0:
-			rotation -= 360.0
-		object.__setattr__(self, "rotation_degrees", rotation)
-@dataclasses.dataclass(frozen=True)
-class SourceImageRegion:
-	"""One source image and its geometry, before any renderer conversion."""
-	asset_reference: str
-	bounds: geometry.NormalizedBounds
-	source_kind: str = "picture"
-	source_ordinal: int = 0
-	source_line: geometry.DegenerateConnectorFootprint | None = None
-	z_order: tuple[int, ...] = ()
-
-
-def text_regions(
-	positioned: tuple[source_model.PositionedText, ...],
-	slide_width: int,
-	slide_height: int,
-) -> tuple[SourceTextRegion, ...]:
-	"""Validate and normalize raw positioned text at the planning boundary."""
-	# ASVS 2.2.1 and 2.2.2: normalize external geometry at one trusted layer.
-	return tuple(SourceTextRegion(
-		source.paragraphs,
-		geometry.normalized_bounds(
-			source.left, source.top, source.width, source.height, slide_width, slide_height,
-		),
-		source.is_subtitle, source.placeholder_confidence, source.title_identity,
-		source.source_kind, source.source_ordinal, source.table_row, source.table_column,
-		source.table_row_count, source.table_column_count, source.table_id,
-		source.table_has_header, source.table_unsupported_reason, source.rotation_degrees,
-		source.has_positive_fill, source.has_positive_line, source.placeholder_role,
-		source.z_order,
-	) for source in positioned)
-
-
-#============================================
-def visual_regions(
-	positioned: tuple[source_model.PositionedVisual, ...],
-	slide_width: int,
-	slide_height: int,
-) -> tuple[SourceImageRegion, ...]:
-	"""Validate and normalize raw positioned visuals at the planning boundary."""
-	# ASVS 2.2.1 and 2.2.2: reject unusable external geometry before planning.
-	result: list[SourceImageRegion] = []
-	for source in positioned:
-		line = None
-		if source.width <= 0 or source.height <= 0:
-			if source.source_kind != "connector" or source.stroke_width is None:
-				continue
-			line = geometry.degenerate_connector_footprint(
-				source.left, source.top, source.width, source.height, source.stroke_width,
-				slide_width, slide_height,
-			)
-			if line is None:
-				continue
-			bounds = line.footprint
-		else:
-			bounds = geometry.normalized_bounds(
-				source.left, source.top, source.width, source.height,
-				slide_width, slide_height,
-			)
-		result.append(SourceImageRegion(source.asset_reference, bounds, source.source_kind,
-			source.source_ordinal, line, source.z_order))
-	return tuple(result)
-
-
-@dataclasses.dataclass(frozen=True)
-class TablePlan:
-	"""A source table retained as editable structured content."""
-	bounds: geometry.NormalizedBounds
-	text_regions: tuple[SourceTextRegion, ...]
-	rows: tuple[tuple["TableCellPlan", ...], ...]
-	row_count: int
-	column_count: int
-	has_header: bool = False
-	unsupported_reason: str | None = None
-	table_id: int = 0
-@dataclasses.dataclass(frozen=True)
-class TableCellPlan:
-	"""One native-table cell, including an intentional blank when no text exists."""
-	row: int
-	column: int
-	text_regions: tuple[SourceTextRegion, ...]
-	row_span: int = 1
-	column_span: int = 1
-@dataclasses.dataclass(frozen=True)
 class TitleDecision:
 	"""The deterministic title selection and the geometric evidence used."""
-	region: SourceTextRegion | None
+	region: source_regions.SourceTextRegion | None
 	reason: str
 @dataclasses.dataclass(frozen=True)
 class SlotPlan:
 	"""Editable source regions assigned to one named target slot."""
 	name: str
-	text_regions: tuple[SourceTextRegion, ...]
-	image_regions: tuple[SourceImageRegion, ...] = ()
+	text_regions: tuple[source_regions.SourceTextRegion, ...]
+	image_regions: tuple[source_regions.SourceImageRegion, ...] = ()
 	flows_in_source_order: bool = False
 	relation_id: str = ""
 @dataclasses.dataclass(frozen=True)
@@ -178,17 +61,17 @@ class ContentRegionPlan:
 	"""A legacy spatial relationship requiring native normalization or review."""
 	region_key: str
 	bounds: geometry.NormalizedBounds
-	text_regions: tuple[SourceTextRegion, ...]
-	image_regions: tuple[SourceImageRegion, ...]
+	text_regions: tuple[source_regions.SourceTextRegion, ...]
+	image_regions: tuple[source_regions.SourceImageRegion, ...]
 	kind: str = "diagram"
 	classification_reason: str = "qualified pictorial annotation component"
-	local_heading: SourceTextRegion | None = None
+	local_heading: source_regions.SourceTextRegion | None = None
 @dataclasses.dataclass(frozen=True)
 class MultipleChoicePlan:
 	"""A complete structural question-and-answer pattern from one source slide."""
-	question: SourceTextRegion
-	answer: SourceTextRegion
-	image: SourceImageRegion | None
+	question: source_regions.SourceTextRegion
+	answer: source_regions.SourceTextRegion
+	image: source_regions.SourceImageRegion | None
 	reason: str
 	question_visual_region: ContentRegionPlan | None = None
 @dataclasses.dataclass(frozen=True)
@@ -197,10 +80,10 @@ class SlidePlan:
 	title: TitleDecision
 	slots: tuple[SlotPlan, ...]
 	content_region: ContentRegionPlan | None = None
-	tables: tuple[TablePlan, ...] = ()
+	tables: tuple[source_tables.TablePlan, ...] = ()
 	review_reason: str | None = None
 	multiple_choice: MultipleChoicePlan | None = None
-def select_title(text_regions: tuple[SourceTextRegion, ...]) -> TitleDecision:
+def select_title(text_regions: tuple[source_regions.SourceTextRegion, ...]) -> TitleDecision:
 	"""Choose a native title from shallow, wide source evidence first."""
 	plausible = tuple(
 		region for region in text_regions
@@ -238,8 +121,8 @@ def select_title(text_regions: tuple[SourceTextRegion, ...]) -> TitleDecision:
 		return TitleDecision(region, "placeholder identity fallback")
 	return TitleDecision(None, "no native title evidence")
 def select_solitary_title(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 ) -> TitleDecision | None:
 	"""Allow one high-confidence title placeholder to own the sole text role.
 	Images and tables retain their independent source roles; only competing text
@@ -269,7 +152,7 @@ def center_is_near_image(inner: geometry.NormalizedBounds,
 		and image.top - margin_y <= center_y <= image.bottom + margin_y
 	)
 def annotation_centers_are_distributed(
-	annotations: tuple[SourceTextRegion, ...],
+	annotations: tuple[source_regions.SourceTextRegion, ...],
 ) -> bool:
 	"""Require several labels to occupy a real diagram component, not one caption."""
 	centers_x = tuple((item.bounds.left + item.bounds.right) / 2 for item in annotations)
@@ -278,78 +161,13 @@ def annotation_centers_are_distributed(
 		max(centers_x) - min(centers_x) >= ANNOTATION_CENTER_SPAN_RATIO
 		or max(centers_y) - min(centers_y) >= ANNOTATION_CENTER_SPAN_RATIO
 	)
-def regular_text_grid(text_regions: tuple[SourceTextRegion, ...]) -> bool:
-	"""Recognize a dense row-and-column lattice as an editable table candidate."""
-	if len(text_regions) < 8:
-		return False
-	centers_x = sorted((item.bounds.left + item.bounds.right) / 2 for item in text_regions)
-	centers_y = sorted((item.bounds.top + item.bounds.bottom) / 2 for item in text_regions)
-	x_breaks = sum(
-		second - first >= 0.08 for first, second in zip(centers_x, centers_x[1:])
-	)
-	y_breaks = sum(
-		second - first >= 0.08 for first, second in zip(centers_y, centers_y[1:])
-	)
-	return x_breaks >= 2 and y_breaks >= 2
-def table_plans(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
-	title: TitleDecision,
-) -> tuple[TablePlan, ...]:
-	"""Plan each actual source table independently before diagram coupling."""
-	available = tuple(region for region in text_regions if region is not title.region)
-	by_table: dict[int, list[SourceTextRegion]] = {}
-	for region in available:
-		if region.source_kind == "table" and region.table_id is not None:
-			by_table.setdefault(region.table_id, []).append(region)
-	plans: list[TablePlan] = []
-	for table_id in sorted(by_table):
-		table_regions = tuple(sorted(by_table[table_id], key=lambda item: item.source_ordinal))
-		bounds = table_regions[0].bounds
-		for region in table_regions[1:]:
-			bounds = bounds.union(region.bounds)
-		row_count = table_regions[0].table_row_count
-		column_count = table_regions[0].table_column_count
-		rows = table_rows(table_regions, row_count, column_count)
-		plans.append(TablePlan(
-			bounds,
-			table_regions,
-			rows,
-			row_count,
-			column_count,
-			table_regions[0].table_has_header,
-			table_regions[0].table_unsupported_reason,
-			table_id,
-		))
-	return tuple(plans)
-def table_rows(
-	regions: tuple[SourceTextRegion, ...],
-	row_count: int,
-	column_count: int,
-) -> tuple[tuple[TableCellPlan, ...], ...]:
-	"""Preserve actual row-major dimensions, blanks, and cell ownership."""
-	by_cell: dict[tuple[int, int], list[SourceTextRegion]] = {}
-	for region in regions:
-		key = (region.table_row, region.table_column)
-		by_cell.setdefault(key, []).append(region)
-	rows: list[tuple[TableCellPlan, ...]] = []
-	for row in range(row_count):
-		cells: list[TableCellPlan] = []
-		for column in range(column_count):
-			cell_regions = tuple(sorted(
-				by_cell.get((row, column), []), key=lambda item: item.source_ordinal,
-			))
-			cells.append(TableCellPlan(row, column, cell_regions))
-		rows.append(tuple(cells))
-	planned_rows = tuple(rows)
-	return planned_rows
-def has_visible_list_structure(region: SourceTextRegion) -> bool:
+def has_visible_list_structure(region: source_regions.SourceTextRegion) -> bool:
 	"""Require source hierarchy that separates one prompt from visible options."""
 	if len(region.paragraphs) < 2:
 		return False
 	prompt_level = region.paragraphs[0][0]
 	return any(level > prompt_level for level, _text in region.paragraphs[1:])
-def is_multiple_choice_answer(region: SourceTextRegion, question: SourceTextRegion) -> bool:
+def is_multiple_choice_answer(region: source_regions.SourceTextRegion, question: source_regions.SourceTextRegion) -> bool:
 	"""Recognize one short lower-right non-placeholder answer callout."""
 	center_x = (region.bounds.left + region.bounds.right) / 2
 	center_y = (region.bounds.top + region.bounds.bottom) / 2
@@ -371,8 +189,8 @@ def answer_below_question(answer: geometry.NormalizedBounds,
 		and answer.top - question.bottom <= MC_ANSWER_BELOW_GAP_RATIO
 		and min(answer.right, question.right) > max(answer.left, question.left))
 def is_multiple_choice_figure(
-	image: SourceImageRegion,
-	question: SourceTextRegion,
+	image: source_regions.SourceImageRegion,
+	question: source_regions.SourceTextRegion,
 ) -> bool:
 	"""Accept one bounded centered top figure inside a coarse question placeholder."""
 	image_center_x = (image.bounds.left + image.bounds.right) / 2
@@ -390,8 +208,8 @@ def is_multiple_choice_figure(
 		and image.bounds.height <= question.bounds.height * MULTIPLE_CHOICE_FIGURE_MAX_HEIGHT_RATIO
 	)
 def multiple_choice_plan(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 ) -> MultipleChoicePlan | None:
 	"""Recognize only a complete editable question/list/answer source structure."""
 	questions = tuple(region for region in text_regions if (
@@ -434,8 +252,8 @@ def multiple_choice_plan(
 	return MultipleChoicePlan(question, answer, None,
 		"complete question-list-answer structure with associated overlay", visual)
 def content_region(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Plan one diagram-plus-annotation region without flattening its labels."""
@@ -527,8 +345,8 @@ def content_region(
 		return vector_region
 	return mixed_visual_region(available_text, image_regions, title)
 def vector_scaffold_region(
-	available_text: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	available_text: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Retain one connected vector scaffold with its distributed native labels."""
@@ -573,8 +391,8 @@ def bounds_are_near(first: geometry.NormalizedBounds,
 		or second.bottom + VECTOR_COMPONENT_PROXIMITY_RATIO < first.top
 	)
 def mixed_visual_region(
-	available_text: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	available_text: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Reserve one irreducibly coupled mixed visual graph for renderer ownership."""
@@ -611,28 +429,28 @@ def mixed_visual_region(
 		remaining.difference_update(component)
 		components.append(component)
 	candidates = tuple(component for component in components if (
-		any(isinstance(nodes[index], SourceImageRegion) for index in component)
+		any(isinstance(nodes[index], source_regions.SourceImageRegion) for index in component)
 		and any(
 			geometry.strictly_overlaps(anchor.bounds, other.bounds)
 			for anchor in (nodes[index] for index in component
-				if isinstance(nodes[index], SourceImageRegion))
+				if isinstance(nodes[index], source_regions.SourceImageRegion))
 			for other in (nodes[index] for index in component)
 			if other is not anchor
 		)
 		and (
 			any(
-				isinstance(nodes[index], SourceTextRegion)
+				isinstance(nodes[index], source_regions.SourceTextRegion)
 				and nodes[index].source_kind in {"auto-shape", "text-box"}
 				for index in component
 			)
-			or sum(isinstance(nodes[index], SourceImageRegion) for index in component) >= 2
+			or sum(isinstance(nodes[index], source_regions.SourceImageRegion) for index in component) >= 2
 		)
 	))
 	if len(candidates) != 1:
 		return None
 	member_indexes = candidates[0]
-	text_members = tuple(nodes[index] for index in member_indexes if isinstance(nodes[index], SourceTextRegion))
-	anchor_members = tuple(nodes[index] for index in member_indexes if isinstance(nodes[index], SourceImageRegion))
+	text_members = tuple(nodes[index] for index in member_indexes if isinstance(nodes[index], source_regions.SourceTextRegion))
+	anchor_members = tuple(nodes[index] for index in member_indexes if isinstance(nodes[index], source_regions.SourceImageRegion))
 	bounds = nodes[next(iter(member_indexes))].bounds
 	for index in member_indexes:
 		node = nodes[index]
@@ -645,14 +463,14 @@ def mixed_visual_region(
 		"mixed-visual", "single connected materially coupled visual graph",
 	)
 def shared_figure_row_region(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Keep a shared caption with a coherent row of peer source figures."""
 	images = tuple(image for image in image_regions if image.source_kind == "picture")
 	available = tuple(region for region in text_regions if region is not title.region)
-	candidates: list[tuple[tuple[SourceImageRegion, ...], SourceTextRegion]] = []
+	candidates: list[tuple[tuple[source_regions.SourceImageRegion, ...], source_regions.SourceTextRegion]] = []
 	for count in (2, 3):
 		for row in itertools.combinations(images, count):
 			if not coherent_figure_row(row):
@@ -673,14 +491,14 @@ def shared_figure_row_region(
 		"shared-figure-row-1", bounds, (caption,), row,
 		"shared-figure-row", "peer figure row with one shared caption",
 	)
-def coherent_figure_row(row: tuple[SourceImageRegion, ...]) -> bool:
+def coherent_figure_row(row: tuple[source_regions.SourceImageRegion, ...]) -> bool:
 	"""Recognize two or three separated, similarly sized figures in one row."""
 	if len(row) not in {2, 3} or any(geometry.substantially_overlaps(first.bounds, second.bounds)
 		for index, first in enumerate(row) for second in row[index + 1:]):
 		return False
 	centers = tuple((item.bounds.top + item.bounds.bottom) / 2 for item in row)
 	return max(centers) - min(centers) <= SHARED_FIGURE_ROW_ALIGNMENT_RATIO
-def shared_row_caption(region: SourceTextRegion,
+def shared_row_caption(region: source_regions.SourceTextRegion,
 		row: geometry.NormalizedBounds) -> bool:
 	"""Require a non-placeholder caption immediately beneath the full figure row."""
 	center = (region.bounds.left + region.bounds.right) / 2
@@ -694,7 +512,7 @@ def shared_row_caption(region: SourceTextRegion,
 			or region.bounds.left <= row.left and row.right <= region.bounds.right)
 	)
 def repeated_labeled_figure_region(
-	text_regions: tuple[SourceTextRegion, ...], image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...], image_regions: tuple[source_regions.SourceImageRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Reserve two same-band figures only when their side labels are mutual."""
@@ -717,7 +535,7 @@ def repeated_labeled_figure_region(
 	bounds = union_bounds((*tuple(item.bounds for item in pictures), *(label.bounds for _picture, label in pairs)))
 	return ContentRegionPlan("repeated-labeled-figure-1", bounds, tuple(label for _picture, label in pairs),
 		pictures, "repeated-labeled-figure", "mutual same-band side labels")
-def nearest_side_label(picture: SourceImageRegion, labels: tuple[SourceTextRegion, ...]) -> SourceTextRegion | None:
+def nearest_side_label(picture: source_regions.SourceImageRegion, labels: tuple[source_regions.SourceTextRegion, ...]) -> source_regions.SourceTextRegion | None:
 	"""Return one unique, vertically aligned neighboring auto-shape label."""
 	candidates = tuple((side_gap(label.bounds, picture.bounds), label) for label in labels
 		if is_side_label(label.bounds, picture.bounds)
@@ -732,7 +550,7 @@ def side_gap(label: geometry.NormalizedBounds,
 		picture: geometry.NormalizedBounds) -> float:
 	"""Return horizontal separation for a disjoint side label."""
 	return max(picture.left - label.right, label.left - picture.right, 0.0)
-def nearest_side_picture(label: SourceTextRegion, pictures: tuple[SourceImageRegion, ...]) -> SourceImageRegion | None:
+def nearest_side_picture(label: source_regions.SourceTextRegion, pictures: tuple[source_regions.SourceImageRegion, ...]) -> source_regions.SourceImageRegion | None:
 	"""Confirm a label also has one unique neighboring picture."""
 	candidates = tuple((side_gap(label.bounds, picture.bounds), picture) for picture in pictures
 		if is_side_label(label.bounds, picture.bounds)
@@ -769,7 +587,7 @@ def title_is_component_member(
 		for image in content.image_regions)
 def absorb_connected_connectors(
 	content: ContentRegionPlan | None,
-	image_regions: tuple[SourceImageRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 ) -> ContentRegionPlan | None:
 	"""Add uniquely aligned visible connectors to an already-coupled source region."""
 	if content is None:
@@ -784,7 +602,7 @@ def absorb_connected_connectors(
 		classification_reason=f"{content.classification_reason}; aligned connectors")
 def absorb_coarse_relation_text(
 	content: ContentRegionPlan | None,
-	text_regions: tuple[SourceTextRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
 	title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Assign one short coarse placeholder only when its shape belongs to the relation."""
@@ -805,7 +623,7 @@ def absorb_coarse_relation_text(
 		text_regions=tuple(sorted((*content.text_regions, region), key=lambda item: item.source_ordinal)),
 		classification_reason=f"{content.classification_reason}; enclosed coarse text")
 def absorb_contained_vector_label(
-	content: ContentRegionPlan | None, text_regions: tuple[SourceTextRegion, ...], title: TitleDecision,
+	content: ContentRegionPlan | None, text_regions: tuple[source_regions.SourceTextRegion, ...], title: TitleDecision,
 ) -> ContentRegionPlan | None:
 	"""Keep one short coarse label with its already-qualified vector scaffold."""
 	if content is None:
@@ -841,8 +659,8 @@ def connector_belongs_to(connector: geometry.NormalizedBounds,
 	return axis_overlap >= (axis_end - axis_start) * CONNECTOR_AXIAL_OVERLAP_RATIO and \
 		perpendicular_gap <= CONNECTOR_PERPENDICULAR_PROXIMITY_RATIO
 def decorative_vectors(
-	text_regions: tuple[SourceTextRegion, ...], image_regions: tuple[SourceImageRegion, ...],
-) -> tuple[SourceImageRegion, ...]:
+	text_regions: tuple[source_regions.SourceTextRegion, ...], image_regions: tuple[source_regions.SourceImageRegion, ...],
+) -> tuple[source_regions.SourceImageRegion, ...]:
 	"""Omit only isolated tiny vectors; long or related marks remain reviewable."""
 	return tuple(item for item in image_regions if item.source_kind in {"vector", "connector"}
 		and item.bounds.width * item.bounds.height < TINY_DECORATIVE_VECTOR_AREA_RATIO
@@ -850,10 +668,10 @@ def decorative_vectors(
 		and not any(bounds_are_near(item.bounds, other.bounds) for other in (*text_regions, *image_regions)
 			if other is not item))
 def slot_plans(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 	content: ContentRegionPlan | None,
-	tables: tuple[TablePlan, ...],
+	tables: tuple[source_tables.TablePlan, ...],
 	title: TitleDecision, picture_inset: visual_relations.CoarsePictureInsetMembers | None = None,
 ) -> tuple[SlotPlan, ...]:
 	"""Keep ordinary prose editable in a live native topology where possible."""
@@ -917,8 +735,8 @@ def slot_plans(
 
 #============================================
 def plan_slide(
-	text_regions: tuple[SourceTextRegion, ...],
-	image_regions: tuple[SourceImageRegion, ...],
+	text_regions: tuple[source_regions.SourceTextRegion, ...],
+	image_regions: tuple[source_regions.SourceImageRegion, ...],
 ) -> SlidePlan:
 	"""Build one deterministic import plan from validated source regions."""
 	choice = multiple_choice_plan(text_regions, image_regions)
@@ -927,10 +745,10 @@ def plan_slide(
 			TitleDecision(None, "multiple-choice structure"), (), multiple_choice=choice,
 		)
 	title = select_solitary_title(text_regions, image_regions) or select_title(text_regions)
-	tables = table_plans(text_regions, image_regions, title); review_reason = None
+	tables = source_tables.table_plans(text_regions, title.region); review_reason = None
 	inset_pair = None if tables else visual_relations.coarse_body_styled_inset(text_regions, image_regions, title)
 	picture_inset = None if tables else visual_relations.coarse_body_picture_inset(text_regions, image_regions, title)
-	if not tables and regular_text_grid(text_regions):
+	if not tables and source_tables.regular_text_grid(text_regions):
 		review_reason = "regular text lattice requires border and span reconstruction"
 	omitted_vectors = decorative_vectors(text_regions, image_regions)
 	planning_images = tuple(item for item in image_regions if item not in omitted_vectors)

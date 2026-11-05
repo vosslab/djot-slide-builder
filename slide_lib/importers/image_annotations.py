@@ -4,7 +4,7 @@
 import dataclasses
 
 # Local modules
-import slide_lib.importers.slide_plan as slide_plan
+import slide_lib.importers.source_regions as source_regions
 import slide_lib.importers.source_model as source_model
 
 
@@ -41,7 +41,7 @@ def normalized_overlays(positioned: tuple[source_model.PositionedOverlay, ...],
 		for source in positioned)
 
 
-def contains_point(image: slide_plan.SourceImageRegion, x: float, y: float) -> bool:
+def contains_point(image: source_regions.SourceImageRegion, x: float, y: float) -> bool:
 	"""Return whether one normalized point lies within a source image."""
 	return image.bounds.left <= x <= image.bounds.right and \
 		image.bounds.top <= y <= image.bounds.bottom
@@ -53,7 +53,7 @@ def compact_percentage(value: float) -> str:
 
 
 def overlay_lines(overlay: SourceOverlay,
-		image: slide_plan.SourceImageRegion) -> tuple[str, ...]:
+		image: source_regions.SourceImageRegion) -> tuple[str, ...]:
 	"""Project one slide-relative annotation into its image coordinate space."""
 	first_x = (overlay.first_x - image.bounds.left) / image.bounds.width * 100.0
 	first_y = (overlay.first_y - image.bounds.top) / image.bounds.height * 100.0
@@ -70,7 +70,7 @@ def overlay_lines(overlay: SourceOverlay,
 
 
 def render_big_image(overlays: tuple[SourceOverlay, ...],
-		image: slide_plan.SourceImageRegion, image_line: str,
+		image: source_regions.SourceImageRegion, image_line: str,
 		caption_lines: list[str], review_reasons: tuple[str, ...]) \
 		-> tuple[list[str], str, list[str]] | None:
 	"""Emit one proven image-owned annotation composition as native Djot."""

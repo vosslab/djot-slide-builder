@@ -8,6 +8,7 @@ import slide_lib.editable_text
 import slide_lib.djot_sources
 import slide_lib.layout_content
 import slide_lib.layout_measurement
+import slide_lib.layout_flow_measurement
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.native_model
@@ -312,7 +313,7 @@ def picture_object(object_id: str, deck: slide_lib.native_model.Deck,
 		allocation: slide_lib.layout_primitives.LogicalRectangle,
 		slot: str, order: int) -> slide_lib.layout_model.LayoutObject:
 	"""Resolve contained display geometry and accessibility before adapter projection."""
-	width, height = slide_lib.layout_measurement.image_size(deck, image)
+	width, height = slide_lib.layout_flow_measurement.image_size(deck, image)
 	scale = math.nextafter(min(allocation.width / width, allocation.height / height), 0.0)
 	display_width, display_height = width * scale, height * scale
 	display = slide_lib.layout_primitives.LogicalRectangle(

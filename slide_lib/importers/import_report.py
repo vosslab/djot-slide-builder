@@ -5,11 +5,12 @@ import dataclasses
 
 # local repo modules
 import slide_lib.importers.slide_plan as slide_plan
+import slide_lib.importers.source_regions as source_regions
 import slide_lib.importers.source_model as source_model
 
 
 #============================================
-def text_region_record(region: slide_plan.SourceTextRegion) -> dict[str, object]:
+def text_region_record(region: source_regions.SourceTextRegion) -> dict[str, object]:
 	"""Retain canonical source runs and geometry for later native reconstruction."""
 	# ASVS 1.1.2: retain canonical text here; json.dumps performs final JSON escaping.
 	paragraphs = [
@@ -29,7 +30,7 @@ def text_region_record(region: slide_plan.SourceTextRegion) -> dict[str, object]
 
 
 #============================================
-def image_region_record(region: slide_plan.SourceImageRegion) -> dict[str, object]:
+def image_region_record(region: source_regions.SourceImageRegion) -> dict[str, object]:
 	"""Retain one normalized visual reference and its source geometry."""
 	return {
 		"source_ordinal": region.source_ordinal,

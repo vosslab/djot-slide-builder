@@ -8,6 +8,20 @@ enters only through the one-time import workflow.
 
 ## Major components
 
+- Physical text and table metrics remain in
+  [../slide_lib/layout_measurement.py](../slide_lib/layout_measurement.py).
+  [../slide_lib/layout_flow_measurement.py](../slide_lib/layout_flow_measurement.py) combines
+  those metrics with image dimensions for mixed-content allocation;
+  [../slide_lib/layout_source_facts.py](../slide_lib/layout_source_facts.py) inspects unsupported
+  source facts independently of physical measurement.
+- Import responsibilities have dedicated owners:
+  [../slide_lib/importers/odp_media.py](../slide_lib/importers/odp_media.py) validates media,
+  [../slide_lib/importers/odp_tables.py](../slide_lib/importers/odp_tables.py) reconstructs ODF tables,
+  [../slide_lib/importers/source_regions.py](../slide_lib/importers/source_regions.py) describes source regions,
+  and [../slide_lib/importers/source_tables.py](../slide_lib/importers/source_tables.py) plans table geometry.
+  [../slide_lib/importers/emission_flow.py](../slide_lib/importers/emission_flow.py) groups emitted components
+  into reading flows; the reader, slide planner, and emitter retain pipeline orchestration.
+
 - [../deck_tools.py](../deck_tools.py) is the user-facing application entry point. It exposes build,
   capacity, import, lint, and ODP visibility commands.
 - [../slide_lib/cli.py](../slide_lib/cli.py) parses command arguments and dispatches each operation

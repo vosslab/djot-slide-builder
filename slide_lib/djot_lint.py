@@ -129,7 +129,7 @@ def hyperlink_problems(path: pathlib.Path) -> list[LintProblem]:
 def lint_source(path: pathlib.Path) -> tuple[list[LintProblem], int, int]:
 	"""Lint one source file through the parser and layout semantic authorities."""
 	try:
-		deck = slide_lib.djot_parser.parse_deck(path)
+		deck = slide_lib.djot_parser.parse_deck(path, expand_course_links=False)
 		for slide in deck.slides:
 			contract = slide_lib.layout_registry.contract_for(slide.layout_class)
 			slide_lib.layout_validation.validate_layout_source(slide, contract)

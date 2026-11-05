@@ -8,6 +8,7 @@ import slide_lib.compilation_result
 import slide_lib.image_covers
 import slide_lib.layout_builders
 import slide_lib.layout_measurement
+import slide_lib.layout_source_facts
 import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.layout_specialty_builders
@@ -32,7 +33,7 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		diagnostic_start = len(session.capacity_diagnostics)
 		content_source, covers = slide_lib.image_covers.extract(source)
 		slide_lib.layout_model.reject_unsupported_source_facts(
-			slide_lib.layout_measurement.unsupported_facts(source))
+			slide_lib.layout_source_facts.unsupported_facts(source))
 		page = slide_lib.layout_builders.compile_slide(deck, content_source, theme, index, session)
 		page = slide_lib.image_covers.project(page, covers, theme)
 		page = slide_lib.citation_layout.add_citation(page, source, theme, session)

@@ -158,6 +158,8 @@ def test_hyperlink_lint_accepts_ignored_local_asset_and_course_token(tmp_path: p
 		"=== layout: one-panel\n@body\n[Figure](assets/gene.png)\n"
 		"[Course]({{course_url:homepage}})\n")
 	assert slide_lib.djot_lint.hyperlink_problems(path) == []
+	problems, _slides, _images = slide_lib.djot_lint.lint_source(path)
+	assert problems == []
 
 
 #============================================

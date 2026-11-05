@@ -12,6 +12,8 @@ import pytest
 
 # Local modules
 import slide_lib.importers.odp_reader as odp_reader
+import slide_lib.importers.odp_media as odp_media
+import slide_lib.importers.odp_tables as odp_tables
 import slide_lib.importers.odp_metafile as odp_metafile
 import slide_lib.odf_package
 import slide_lib.importers.odp_to_djot as odp_to_djot
@@ -579,7 +581,7 @@ def test_reader_enforces_total_repeated_table_cell_limit(tmp_path: pathlib.Path,
 	input_path = write_odp(tmp_path, CONTENT_PREFIX + page("table", frame(table)) + CONTENT_SUFFIX)
 	assets_dir = tmp_path / "assets"
 	assets_dir.mkdir()
-	monkeypatch.setattr(odp_reader, "MAX_TABLE_CELLS", 2)
+	monkeypatch.setattr(odp_tables, "MAX_TABLE_CELLS", 2)
 	with pytest.raises(ValueError, match="table exceeds"):
 		odp_reader.read_presentation(input_path, assets_dir, pathlib.PurePosixPath("assets/deck"))
 
@@ -587,12 +589,12 @@ def test_reader_enforces_total_repeated_table_cell_limit(tmp_path: pathlib.Path,
 #============================================
 def test_reader_decodes_all_raster_frames_and_rejects_claimed_format_mismatch() -> None:
 	"""Raster admission records aggregate decoding work before publication is possible."""
-	budget = odp_reader._MediaBudget()
-	odp_reader.validate_image_blob(gif_bytes(2), ".gif", budget)
+	budget = odp_media.MediaBudget()
+	odp_media.validate_image_blob(gif_bytes(2), ".gif", budget)
 	assert budget.frame_count == 2
 	assert budget.pixel_count == 8
 	with pytest.raises(ValueError, match="do not match"):
-		odp_reader.validate_image_blob(png_bytes(), ".jpg", odp_reader._MediaBudget())
+		odp_media.validate_image_blob(png_bytes(), ".jpg", odp_media.MediaBudget())
 
 
 #============================================

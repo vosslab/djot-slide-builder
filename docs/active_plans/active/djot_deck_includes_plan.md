@@ -156,7 +156,7 @@ Contract rules for the first implementation:
 | WS-A asset provenance | `slide_lib/djot_lint.py`, `slide_lib/layout_measurement.py`, `slide_lib/layout_object_builders.py`, `slide_lib/odp_export.py` | One source-local image resolver is used by lint, measurement, physical planning, and package export. |
 | WS-D discovery | `slide_lib/native_export.py`, `slide_lib/djot_lint.py` | Folder selection distinguishes top-level decks from reachable included fragments without changing explicit-file builds. |
 | WS-T tests | `tests/test_djot_parser.py`, `tests/test_djot_slide_lint.py`, `tests/test_layout_engine.py`, `tests/test_odp_export.py`, `tests/test_native_export.py` | Permanent behavior tests cover order, hidden slides, failures, source-local assets, and native package payloads. |
-| WS-C corpus integration | `shared/`, `genetics/LECT04/djot/lect04a-2026_announcements.djot`, `biotech/djot/lect03a-2026_announcements.djot` | One representative shared informational fragment proves the requested announcement workflow. |
+| WS-C corpus integration | `shared/`, `genetics/LECT04/djot/lect04a-2026_announcements.djot`, `biotech/LECT03/djot/lect03a-2026_announcements.djot` | One representative shared informational fragment proves the requested announcement workflow. |
 | WS-DOC documentation | `docs/DJOT_SLIDE_SYNTAX.md`, `docs/USAGE.md`, `docs/PIPELINE.md`, `docs/DESIGN_DECISIONS.md`, `docs/HUMAN_GUIDANCE.md`, `docs/CHANGELOG.md` | Syntax, ownership, rationale, user guidance, and evidence agree with the implementation. |
 
 ## Milestone plan

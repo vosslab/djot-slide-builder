@@ -15,6 +15,7 @@ import slide_lib.djot_lint
 import slide_lib.djot_parser
 import slide_lib.native_export
 import slide_lib.layout_measurement
+import slide_lib.layout_flow_measurement
 
 
 #============================================
@@ -214,7 +215,7 @@ def test_repository_images_lint_measure_and_package_from_shared_assets(
 	assert not problems
 	deck = slide_lib.djot_parser.parse_deck(master)
 	picture = deck.slides[0].cells[0].blocks[0]
-	assert slide_lib.layout_measurement.image_size(deck, picture) == (32, 18)
+	assert slide_lib.layout_flow_measurement.image_size(deck, picture) == (32, 18)
 	output = slide_lib.native_export.render_native_odp(deck, tmp_path / "shared.odp")
 	assert output.is_file()
 	outside = tmp_path / "outside.png"

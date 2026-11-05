@@ -5,14 +5,15 @@ import pytest
 
 # local repo modules
 import slide_lib.importers.djot_emitter as djot_emitter
+import slide_lib.importers.emission_flow as emission_flow
 import slide_lib.importers.geometry as geometry
 
 
 #============================================
 def component(bounds: tuple[float, float, float, float], *, coarse: bool = False,
-		source_kind: str = "text", kind: str = "text", reason: str = "", confidence: float = 0.0) -> djot_emitter.EmissionComponent:
+		source_kind: str = "text", kind: str = "text", reason: str = "", confidence: float = 0.0) -> emission_flow.EmissionComponent:
 	"""Build one concise geometric text component."""
-	return djot_emitter.EmissionComponent(
+	return emission_flow.EmissionComponent(
 		geometry.NormalizedBounds(*bounds), ("- item",), kind,
 		coarse_text_container=coarse, source_kind=source_kind, classification_reason=reason,
 		placeholder_confidence=confidence,
@@ -29,7 +30,7 @@ def test_coarse_columns_and_wide_footer_flow_match_existing_three_cell_layout() 
 		component((0.05, 0.79, 0.95, 0.87), source_kind="text-box"),
 	]
 
-	grouped = djot_emitter.coalesce_bottom_footer(components)
+	grouped = emission_flow.coalesce_bottom_footer(components)
 
 	assert djot_emitter.component_layout(grouped)[0] == "two-over-one-panels"
 	assert not djot_emitter.components_overlap(grouped)
@@ -51,7 +52,7 @@ def test_coarse_columns_and_wide_footer_flow_match_existing_three_cell_layout() 
 	],
 )
 def test_asymmetric_explanatory_pair_leaves_nonrelations_to_ordinary_matching(
-		components: list[djot_emitter.EmissionComponent],
+		components: list[emission_flow.EmissionComponent],
 ) -> None:
 	"""Only direct, separated, aligned one-coarse text pairs enter the local path."""
 	assert djot_emitter.asymmetric_explanatory_pair_layout(components) is None

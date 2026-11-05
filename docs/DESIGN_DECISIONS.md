@@ -1,5 +1,18 @@
 # Design decisions
 
+### Focused importer and measurement modules
+
+**Decision.** Separate source regions, table planning, ODP media validation, ODF table extraction,
+emission flow, mixed-content measurement, and source-fact inspection into their own modules.
+
+**Why.** These responsibilities change independently and made four pipeline modules approach
+the source-size limit. Moving cohesive groups keeps their algorithms and validation intact.
+
+**Consequence.** Callers import each symbol from its owning module. Pipeline orchestration stays
+in the reader, planner, emitter, and text-measurement modules.
+
+**Owner.** [CODE_ARCHITECTURE.md](CODE_ARCHITECTURE.md) and the `slide_lib` modules it identifies.
+
 ### Homework practice in Lecture 10
 
 **Decision.** Keep Lecture 10 focused on chromosome disorders. Use saved Topic 09 examples for

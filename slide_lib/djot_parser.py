@@ -460,14 +460,15 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 
 
 #============================================
-def parse_deck(input_path: pathlib.Path) -> slide_lib.native_model.Deck:
+def parse_deck(input_path: pathlib.Path, *, expand_course_links: bool = True) -> slide_lib.native_model.Deck:
 	"""Parse one source-only Djot deck into the native presentation-neutral IR."""
 	path = input_path.resolve()
 	bundle = slide_lib.djot_sources.load_sources(path)
 	assembled: list[slide_lib.native_model.Slide] = []
 	for source in bundle.files:
-		_color_theme, slide_sources = split_slides(source.path,
-			slide_lib.course_links.expand(source.text, bundle.color_theme))
+		text = slide_lib.course_links.expand(source.text, bundle.color_theme) if expand_course_links \
+			else slide_lib.course_links.TOKEN.sub("https://example.invalid/course", source.text)
+		_color_theme, slide_sources = split_slides(source.path, text)
 		for slide_source in slide_sources:
 			slide = assemble_slide(source.path, slide_source)
 			assembled.append(dataclasses.replace(slide, hidden=True) if source.hidden else slide)

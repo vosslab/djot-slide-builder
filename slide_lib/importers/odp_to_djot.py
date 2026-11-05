@@ -22,13 +22,15 @@ import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.image_annotations as image_annotations
 import slide_lib.importers.odp_reader as odp_reader
+import slide_lib.importers.odp_media as odp_media
 import slide_lib.importers.odp_reveals as odp_reveals
 import slide_lib.importers.slide_plan as slide_plan
+import slide_lib.importers.source_regions as source_regions
 import slide_lib.importers.source_model as source_model
 
 
 ASSET_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]*$")
-IMPORT_ASSET_SUFFIXES = odp_reader.SUPPORTED_IMAGE_SUFFIXES
+IMPORT_ASSET_SUFFIXES = odp_media.SUPPORTED_IMAGE_SUFFIXES
 
 
 @dataclasses.dataclass(frozen=True)
@@ -46,24 +48,24 @@ class ConversionSummary:
 
 #============================================
 def plan_imported_slide(
-		text_regions: tuple[slide_plan.SourceTextRegion, ...],
-		visual_regions: tuple[slide_plan.SourceImageRegion, ...],
+		text_regions: tuple[source_regions.SourceTextRegion, ...],
+		visual_regions: tuple[source_regions.SourceImageRegion, ...],
 		images: tuple[source_model.ImageAsset, ...], slide_width: float,
 		slide_height: float,
 ) -> slide_plan.SlidePlan:
 	"""Bind staged image assets to source geometry before semantic planning."""
-	picture_sources: dict[geometry.NormalizedBounds, list[slide_plan.SourceImageRegion]] = {}
+	picture_sources: dict[geometry.NormalizedBounds, list[source_regions.SourceImageRegion]] = {}
 	for region in visual_regions:
 		if region.source_kind == "picture":
 			picture_sources.setdefault(region.bounds, []).append(region)
-	extracted_images: list[slide_plan.SourceImageRegion] = []
+	extracted_images: list[source_regions.SourceImageRegion] = []
 	for image in images:
 		bounds = geometry.normalized_bounds(
 			image.left, image.top, image.width, image.height, slide_width, slide_height,
 		)
 		sources = picture_sources.get(bounds, [])
 		source = sources.pop(0) if sources else None
-		extracted_images.append(slide_plan.SourceImageRegion(
+		extracted_images.append(source_regions.SourceImageRegion(
 			image.asset_path, bounds, "picture", 0 if source is None else source.source_ordinal,
 			z_order=() if source is None else source.z_order,
 		))
@@ -82,10 +84,10 @@ def plan_slides(presentation: odp_reader.ImportedPresentation) -> list[djot_emit
 	for source_slide in presentation.slides:
 		if not source_slide.data.hidden:
 			visible_page_index += 1
-		text_regions = slide_plan.text_regions(
+		text_regions = source_regions.text_regions(
 			source_slide.positioned_text, source_slide.page_width, source_slide.page_height,
 		)
-		visual_regions = slide_plan.visual_regions(
+		visual_regions = source_regions.visual_regions(
 			source_slide.positioned_visual, source_slide.page_width, source_slide.page_height,
 		)
 		overlays = image_annotations.normalized_overlays(

@@ -6,6 +6,8 @@ import itertools
 
 # local repo modules
 import slide_lib.importers.djot_text as djot_text
+import slide_lib.importers.emission_flow as emission_flow
+import slide_lib.importers.source_regions as source_regions
 import slide_lib.layout_registry
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.image_annotations as image_annotations
@@ -21,47 +23,20 @@ GALLERY_AREA_VARIATION_RATIO = 1.30
 GALLERY_ASPECT_VARIATION_RATIO = 1.30
 GALLERY_LINE_CENTER_TOLERANCE = 0.12
 FLOW_VERTICAL_GAP_RATIO = 0.03
-FLOW_MIN_HORIZONTAL_OVERLAP_RATIO = 0.60
-FLOW_LANE_SPAN_VARIATION_RATIO = 1.35
-FLOW_LANE_CENTER_OFFSET_RATIO = 0.20
-FOOTER_MIN_WIDTH_RATIO = 0.70
-FOOTER_MAX_HEIGHT_RATIO = 0.50
-FOOTER_COLUMN_BOTTOM_PADDING_RATIO = 0.08
-FOOTER_VERTICAL_PADDING_RATIO = 0.05
-FOOTER_IMAGE_PADDING_RATIO = 0.05
 COARSE_IMAGE_ROW_CENTER_RATIO = 0.35
 COARSE_IMAGE_SIDE_BY_SIDE_RATIO = 0.50
 BOTTOM_FOOTER_SCORE_CEILING = 0.35
-BOTTOM_FOOTER_RELATION_REASON = "bottom-footer structural topology"
 ASYMMETRIC_EXPLANATORY_PAIR_MAX_SCORE = 0.33
 ASYMMETRIC_EXPLANATORY_COMPACT_AREA_RATIO = 0.75
-SHALLOW_FLOW_MAX_VERTICAL_OVERLAP = 0.03
-SHALLOW_FLOW_MAX_SMALLER_HEIGHT_RATIO = 0.25
 @dataclasses.dataclass(frozen=True)
 class PlannedSlide:
 	"""Imported-slide facts and their geometry-first projection."""
 	data: source_model.SlideData
 	plan: slide_plan.SlidePlan | None
-	text_regions: tuple[slide_plan.SourceTextRegion, ...] = ()
-	image_regions: tuple[slide_plan.SourceImageRegion, ...] = ()
+	text_regions: tuple[source_regions.SourceTextRegion, ...] = ()
+	image_regions: tuple[source_regions.SourceImageRegion, ...] = ()
 	visible_page_index: int | None = None
 	overlays: tuple[image_annotations.SourceOverlay, ...] = ()
-@dataclasses.dataclass(frozen=True)
-class EmissionComponent:
-	"""One bounded, single-kind source component assigned to one Djot Cell."""
-	bounds: geometry.NormalizedBounds
-	lines: tuple[str, ...]
-	kind: str
-	image_references: tuple[str, ...] = ()
-	source_image_ids: tuple[tuple[int, str], ...] = ()
-	coarse_text_container: bool = False
-	source_kind: str = ""
-	source_ordinals: tuple[int, ...] = ()
-	member_footprints: tuple[geometry.NormalizedBounds, ...] = ()
-	classification_reason: str = ""
-	placeholder_confidence: float = 0.0
-	rotation_degrees: float = 0.0
-	source_order: tuple[int, ...] = ()
 @dataclasses.dataclass(frozen=True)
 class OverlapPermission:
 	"""One exact component-pair overlap allowed by a uniquely matched composition."""
@@ -80,7 +55,7 @@ def image_djot(image: source_model.ImageAsset) -> str:
 
 
 #============================================
-def region_lines(regions: tuple[slide_plan.SourceTextRegion, ...]) -> list[str]:
+def region_lines(regions: tuple[source_regions.SourceTextRegion, ...]) -> list[str]:
 	"""Project retained source text without changing its paragraph hierarchy."""
 	lines: list[str] = []
 	for region in regions:
@@ -94,7 +69,7 @@ def region_lines(regions: tuple[slide_plan.SourceTextRegion, ...]) -> list[str]:
 
 
 #============================================
-def multiple_choice_question_lines(region: slide_plan.SourceTextRegion) -> list[str]:
+def multiple_choice_question_lines(region: source_regions.SourceTextRegion) -> list[str]:
 	"""Keep a source prompt before nested choices when hierarchy supplies one."""
 	paragraphs = region.paragraphs
 	first_level = paragraphs[0][0]
@@ -161,7 +136,7 @@ def table_lines(tables: tuple[source_model.TableBlock, ...]) -> list[str]:
 
 #============================================
 def slot_image_lines(
-	regions: tuple[slide_plan.SourceImageRegion, ...],
+	regions: tuple[source_regions.SourceImageRegion, ...],
 	images: tuple[source_model.ImageAsset, ...],
 ) -> tuple[list[str], list[str]]:
 	"""Resolve extracted image references; retain an explicit review lane otherwise."""
@@ -188,9 +163,9 @@ def region_bounds(regions: tuple[object, ...]) -> geometry.NormalizedBounds:
 
 #============================================
 def shared_footer_sources(
-		text_regions: tuple[slide_plan.SourceTextRegion, ...],
-		image_regions: tuple[slide_plan.SourceImageRegion, ...],
-) -> tuple[slide_plan.SourceTextRegion, ...]:
+		text_regions: tuple[source_regions.SourceTextRegion, ...],
+		image_regions: tuple[source_regions.SourceImageRegion, ...],
+) -> tuple[source_regions.SourceTextRegion, ...]:
 	"""Recognize one or more broad bottom references under a text/direct-picture pair."""
 	if len(image_regions) != 1 or image_regions[0].source_kind != "picture":
 		return ()
@@ -201,9 +176,9 @@ def shared_footer_sources(
 		return ()
 	peer = peers[0]
 	span = max(peer.bounds.right, image.bounds.right) - min(peer.bounds.left, image.bounds.left)
-	if any(item.bounds.width < span * FOOTER_MIN_WIDTH_RATIO or
-		item.bounds.top < peer.bounds.bottom - FOOTER_IMAGE_PADDING_RATIO or
-		item.bounds.top < image.bounds.bottom - FOOTER_IMAGE_PADDING_RATIO for item in footer):
+	if any(item.bounds.width < span * emission_flow.FOOTER_MIN_WIDTH_RATIO or
+		item.bounds.top < peer.bounds.bottom - emission_flow.FOOTER_IMAGE_PADDING_RATIO or
+		item.bounds.top < image.bounds.bottom - emission_flow.FOOTER_IMAGE_PADDING_RATIO for item in footer):
 		return ()
 	return footer
 
@@ -211,11 +186,11 @@ def shared_footer_sources(
 #============================================
 def emit_components(
 	planned: PlannedSlide,
-) -> tuple[list[EmissionComponent], list[str]]:
+) -> tuple[list[emission_flow.EmissionComponent], list[str]]:
 	"""Project planned components, retaining proven mixed vertical flows in one cell."""
 	if planned.plan is None:
 		raise ValueError("component emission requires a visible slide plan")
-	components: list[EmissionComponent] = []
+	components: list[emission_flow.EmissionComponent] = []
 	reasons: list[str] = []
 	for slot in planned.plan.slots:
 		if slot.flows_in_source_order:
@@ -242,7 +217,7 @@ def emit_components(
 					lines.extend(lines_for_image)
 					image_references.append(item.asset_reference)
 					source_image_ids.append((item.source_ordinal, item.asset_reference))
-			components.append(EmissionComponent(
+			components.append(emission_flow.EmissionComponent(
 				region_bounds(tuple(item[3] for item in flow_items)), tuple(lines), "flow",
 				tuple(image_references), tuple(source_image_ids), source_ordinals=tuple(source_ordinals),
 				member_footprints=tuple(item[0] for item in flow_items),
@@ -257,7 +232,7 @@ def emit_components(
 		paired_text = set(pairs.values())
 		for text in slot.text_regions:
 			if text not in paired_text:
-				components.append(EmissionComponent(
+				components.append(emission_flow.EmissionComponent(
 					text.bounds, tuple(region_lines((text,))), "text", (), (),
 					text.placeholder_confidence >= 0.75, text.source_kind, (text.source_ordinal,), (text.bounds,),
 					placeholder_confidence=text.placeholder_confidence,
@@ -275,7 +250,7 @@ def emit_components(
 						bounds = region.bounds.union(caption.bounds)
 					else:
 						bounds = region.bounds
-					components.append(EmissionComponent(
+					components.append(emission_flow.EmissionComponent(
 						bounds,
 						tuple(lines),
 						"image",
@@ -328,7 +303,7 @@ def emit_components(
 		reasons.append(
 			f"normalized {content.classification_reason} into native source-order content"
 		)
-		components.append(EmissionComponent(
+		components.append(emission_flow.EmissionComponent(
 			content.bounds if local_heading is None else content.bounds.union(local_heading.bounds),
 			tuple(lines), "flow", tuple(image_references), tuple(source_image_ids),
 			source_kind="native-reconstruction",
@@ -348,169 +323,43 @@ def emit_components(
 		source_table = tables_by_id[table.table_id]
 		if table.unsupported_reason and not source_table.unsupported_reason:
 			raise ValueError(f"source table requires review: {table.unsupported_reason}")
-		components.append(EmissionComponent(
+		components.append(emission_flow.EmissionComponent(
 			table.bounds, tuple(table_lines((source_table,))), "table",
 			member_footprints=(table.bounds,),
 			source_ordinals=(table.table_id,),
 			source_order=min((item.z_order for item in table.text_regions if item.z_order), default=()),
 		))
-	return sorted(coalesce_text_flows(coalesce_bottom_footer(components)), key=component_read_key), reasons
+	return sorted(emission_flow.coalesce_text_flows(emission_flow.coalesce_bottom_footer(components)), key=emission_flow.component_read_key), reasons
 
 
 #============================================
-def coalesce_bottom_footer(components: list[EmissionComponent]) -> list[EmissionComponent]:
-	"""Merge one or more broad bottom text boxes beneath exactly two disjoint peers."""
-	footer = [item for item in components if item.kind == "text" and item.source_kind == "text-box"]
-	peers = [item for item in components if item not in footer]
-	if len(peers) != 2 or not footer or raw_components_overlap(peers):
-		return components
-	if any(not shallow_broad_footer(components, item) or item.bounds.top < peer.bounds.bottom - column_footer_padding(peer)
-		for item in footer for peer in peers):
-		return components
-	footer.sort(key=component_read_key)
-	if any(not follows_footer_lane(first, second) for first, second in zip(footer, footer[1:])):
-		return components
-	lines = tuple(line for index, item in enumerate(footer)
-		for line in ((*item.lines, "") if index < len(footer) - 1 else item.lines))
-	merged = EmissionComponent(union_bounds(tuple(item.bounds for item in footer)), lines, "flow",
-		source_kind="text-box", source_ordinals=tuple(ordinal for item in footer for ordinal in item.source_ordinals),
-		member_footprints=tuple(footprint for item in footer for footprint in component_footprints(item)),
-		classification_reason=BOTTOM_FOOTER_RELATION_REASON,
-		source_order=min((item.source_order for item in footer if item.source_order), default=()))
-	return [item for item in components if item not in footer] + [merged]
 #============================================
-def column_footer_padding(column: EmissionComponent) -> float:
-	"""Bound source padding by both normalized and column-relative footer limits."""
-	return min(FOOTER_IMAGE_PADDING_RATIO, FOOTER_COLUMN_BOTTOM_PADDING_RATIO * column.bounds.height)
 #============================================
-def component_read_key(component: EmissionComponent) -> tuple[float, float, int]:
-	"""Order components geometrically; immutable source ordinals break exact ties."""
-	return component.bounds.top, component.bounds.left, min(component.source_ordinals, default=0)
 #============================================
-def component_footprints(component: EmissionComponent) -> tuple[geometry.NormalizedBounds, ...]:
-	"""Return immutable component members, with direct bounds for synthetic callers."""
-	return component.member_footprints or (component.bounds,)
 #============================================
-def coalesce_text_flows(components: list[EmissionComponent]) -> list[EmissionComponent]:
-	"""Join unique vertically stacked editable text blocks within one source lane."""
-	available = set(range(len(components)))
-	groups: list[tuple[int, ...]] = []
-	for first in sorted(available, key=lambda index: component_read_key(components[index])):
-		if first not in available or components[first].kind != "text":
-			continue
-		group = [first]
-		while True:
-			candidates = sorted((index for index in available - set(group)
-				if components[index].kind == "text" and follows_text_lane(components[group[-1]], components[index])),
-				key=lambda index: component_read_key(components[index]))
-			if len(candidates) != 1 or image_interleaves_lane(components, components[group[-1]], components[candidates[0]]) or \
-				(shallow_overlap_text_lane(components[group[-1]], components[candidates[0]]) and
-					(shallow_overlap_lane_competes(components, components[group[-1]], components[candidates[0]]) or
-						nontext_interleaves_lane(components, components[group[-1]], components[candidates[0]]))):
-				break
-			group.append(candidates[0])
-		if len(group) > 1:
-			groups.append(tuple(group))
-			available.difference_update(group)
-	result = [component for index, component in enumerate(components) if index in available]
-	for group in groups:
-		members = tuple(components[index] for index in group)
-		lines = tuple(line for member_index, member in enumerate(members)
-			for line in ((*member.lines, "") if member_index < len(members) - 1 else member.lines))
-		result.append(EmissionComponent(union_bounds(tuple(member.bounds for member in members)), lines, "flow",
-			source_ordinals=tuple(ordinal for member in members for ordinal in member.source_ordinals),
-			member_footprints=tuple(footprint for member in members for footprint in component_footprints(member)),
-			source_kind=members[0].source_kind if all(member.source_kind == members[0].source_kind for member in members) else "",
-			source_order=min((member.source_order for member in members if member.source_order), default=())))
-	return result
 #============================================
-def follows_text_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
-	"""Recognize a separated next text block that shares a substantial lane."""
-	gap = second.bounds.top - first.bounds.bottom
-	return gap >= 0.0 and follows_same_lane(first, second) or shallow_overlap_text_lane(first, second)
 #============================================
-def shallow_overlap_text_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
-	"""Recognize one adjacent direct text box with a bounded source border overlap."""
-	if component_read_key(first) >= component_read_key(second) or any(item.kind != "text" or
-		item.source_kind != "text-box" or item.coarse_text_container or abs(item.rotation_degrees) >= 1.0 or
-		len(component_footprints(item)) != 1 for item in (first, second)):
-		return False
-	overlap = min(first.bounds.bottom, second.bounds.bottom) - second.bounds.top
-	return abs(first.bounds.left - second.bounds.left) <= .01 and \
-		abs(first.bounds.width - second.bounds.width) <= max(first.bounds.width, second.bounds.width) * .02 and \
-		0.0 < overlap <= SHALLOW_FLOW_MAX_VERTICAL_OVERLAP and overlap <= min(first.bounds.height, second.bounds.height) * SHALLOW_FLOW_MAX_SMALLER_HEIGHT_RATIO
 #============================================
-def shallow_overlap_lane_competes(components: list[EmissionComponent], first: EmissionComponent,
-		second: EmissionComponent) -> bool:
-	"""Leave two independent overlapping text lanes unmerged for manual topology review."""
-	for candidate_first, candidate_second in itertools.permutations(components, 2):
-		if (candidate_first, candidate_second) != (first, second) and shallow_overlap_text_lane(candidate_first, candidate_second) and \
-			abs(candidate_first.bounds.left - first.bounds.left) > .01:
-			return True
-	return False
 #============================================
-def follows_footer_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
-	"""Allow bounded source padding only for ordered full-width footer members."""
-	gap = second.bounds.top - first.bounds.bottom
-	return component_read_key(first) < component_read_key(second) and gap >= -FOOTER_VERTICAL_PADDING_RATIO and \
-		first.bounds.width >= FOOTER_MIN_WIDTH_RATIO and second.bounds.width >= FOOTER_MIN_WIDTH_RATIO and \
-		follows_same_lane(first, second)
 #============================================
-def follows_same_lane(first: EmissionComponent, second: EmissionComponent) -> bool:
-	"""Require substantial overlap, span agreement, and center agreement in one lane."""
-	overlap = min(first.bounds.right, second.bounds.right) - max(first.bounds.left, second.bounds.left)
-	overlap_ratio = overlap / min(first.bounds.width, second.bounds.width)
-	center_offset = abs((first.bounds.left + first.bounds.right - second.bounds.left - second.bounds.right) / 2)
-	return overlap_ratio >= FLOW_MIN_HORIZONTAL_OVERLAP_RATIO and \
-		max(first.bounds.width, second.bounds.width) <= min(first.bounds.width, second.bounds.width) * FLOW_LANE_SPAN_VARIATION_RATIO and \
-		center_offset <= min(first.bounds.width, second.bounds.width) * FLOW_LANE_CENTER_OFFSET_RATIO
 #============================================
-def image_interleaves_lane(components: list[EmissionComponent], first: EmissionComponent,
-		second: EmissionComponent) -> bool:
-	"""Preserve a spatial image component instead of folding text around it."""
-	for component in components:
-		if component.kind != "image" or not first.bounds.top <= component.bounds.top <= second.bounds.bottom:
-			continue
-		overlap = min(component.bounds.right, max(first.bounds.right, second.bounds.right)) - max(component.bounds.left, min(first.bounds.left, second.bounds.left))
-		if overlap > 0:
-			return True
-	return False
 #============================================
-def nontext_interleaves_lane(components: list[EmissionComponent], first: EmissionComponent,
-		second: EmissionComponent) -> bool:
-	"""Keep a shallow text flow out of a lane occupied by another rendered component."""
-	for component in components:
-		if component in {first, second} or component.kind == "text" or \
-			not first.bounds.top <= component.bounds.top <= second.bounds.bottom:
-			continue
-		if min(component.bounds.right, max(first.bounds.right, second.bounds.right)) > \
-			max(component.bounds.left, min(first.bounds.left, second.bounds.left)):
-			return True
-	return False
 #============================================
-def components_overlap(components: list[EmissionComponent]) -> bool:
+def components_overlap(components: list[emission_flow.EmissionComponent]) -> bool:
 	"""Return whether direct components materially overlap beyond border contact."""
 	permitted_pairs = {(record.first_index, record.second_index) for record in overlap_permissions(components)}
 	for index, first in enumerate(components):
 		for second_index, second in enumerate(components[index + 1:], start=index + 1):
 			if (index, second_index) in permitted_pairs:
 				continue
-			for first_footprint in component_footprints(first):
-				for second_footprint in component_footprints(second):
+			for first_footprint in emission_flow.component_footprints(first):
+				for second_footprint in emission_flow.component_footprints(second):
 					if geometry.substantially_overlaps(first_footprint, second_footprint):
 						return True
 	return False
 #============================================
-def raw_components_overlap(components: list[EmissionComponent]) -> bool:
-	"""Check member collisions without treating any composition as an allowed relation."""
-	for index, first in enumerate(components):
-		for second in components[index + 1:]:
-			if any(geometry.substantially_overlaps(left, right) for left in component_footprints(first)
-				for right in component_footprints(second)):
-				return True
-	return False
 #============================================
-def overlap_permissions(components: list[EmissionComponent]) -> tuple[OverlapPermission, ...]:
+def overlap_permissions(components: list[emission_flow.EmissionComponent]) -> tuple[OverlapPermission, ...]:
 	"""Return only component-pair permissions proven by one unique native topology."""
 	records: list[OverlapPermission] = []
 	if coarse_inset_key_layout(components):
@@ -537,27 +386,27 @@ def overlap_permissions(components: list[EmissionComponent]) -> tuple[OverlapPer
 				for peer_index in range(len(components)):
 					if peer_index == footer_index:
 						continue
-					overlap = max(vertical_overlap(left, right) for left in component_footprints(components[footer_index])
-						for right in component_footprints(components[peer_index]))
-					if 0.0 < overlap <= FOOTER_IMAGE_PADDING_RATIO:
+					overlap = max(vertical_overlap(left, right) for left in emission_flow.component_footprints(components[footer_index])
+						for right in emission_flow.component_footprints(components[peer_index]))
+					if 0.0 < overlap <= emission_flow.FOOTER_IMAGE_PADDING_RATIO:
 						record = pair_permission(components, peer_index, footer_index, "bottom-footer-padding", selected)
 						if record is not None:
 							records.append(record)
 		caption_footer_indexes = [index for index, item in enumerate(components) if item.kind == "text" and item.source_kind == "text-box"]
 		caption_indexes = [index for index, item in enumerate(components) if item.kind == "image" and
-			item.source_kind == "picture" and len(component_footprints(item)) == 2]
+			item.source_kind == "picture" and len(emission_flow.component_footprints(item)) == 2]
 		if len(caption_footer_indexes) == 1 and len(caption_indexes) == 1:
 			footer_index, image_index = caption_footer_indexes[0], caption_indexes[0]
 			footer, image = components[footer_index], components[image_index]
-			overlap = vertical_overlap(component_footprints(image)[-1], footer.bounds)
-			if shallow_broad_footer(components, footer) and 0.0 < overlap <= FOOTER_IMAGE_PADDING_RATIO and \
-				not geometry.substantially_overlaps(component_footprints(image)[0], footer.bounds):
+			overlap = vertical_overlap(emission_flow.component_footprints(image)[-1], footer.bounds)
+			if emission_flow.shallow_broad_footer(components, footer) and 0.0 < overlap <= emission_flow.FOOTER_IMAGE_PADDING_RATIO and \
+				not geometry.substantially_overlaps(emission_flow.component_footprints(image)[0], footer.bounds):
 				record = pair_permission(components, footer_index, image_index, "caption-footer-padding", "two-plus-one-panels")
 				if record is not None:
 					records.append(record)
 	return tuple(records)
 #============================================
-def pair_permission(components: list[EmissionComponent], first_index: int, second_index: int,
+def pair_permission(components: list[emission_flow.EmissionComponent], first_index: int, second_index: int,
 		relation: str, layout: str) -> OverlapPermission | None:
 	"""Record one exact pair only after the full component set selects its native layout."""
 	try:
@@ -569,9 +418,9 @@ def pair_permission(components: list[EmissionComponent], first_index: int, secon
 	if first_index > second_index:
 		first_index, second_index = second_index, first_index
 	first, second = components[first_index], components[second_index]
-	return OverlapPermission(first_index, second_index, relation, component_footprints(first),
-		component_footprints(second), max(vertical_overlap(left, right) for left in component_footprints(first)
-		for right in component_footprints(second)), selected, order)
+	return OverlapPermission(first_index, second_index, relation, emission_flow.component_footprints(first),
+		emission_flow.component_footprints(second), max(vertical_overlap(left, right) for left in emission_flow.component_footprints(first)
+		for right in emission_flow.component_footprints(second)), selected, order)
 #============================================
 def vertical_overlap(first: geometry.NormalizedBounds, second: geometry.NormalizedBounds) -> float:
 	"""Measure signed vertical intersection for a recorded source-padding relation."""
@@ -579,31 +428,26 @@ def vertical_overlap(first: geometry.NormalizedBounds, second: geometry.Normaliz
 
 
 #============================================
-def bottom_footer_structure(components: list[EmissionComponent], footer_index: int) -> bool:
+def bottom_footer_structure(components: list[emission_flow.EmissionComponent], footer_index: int) -> bool:
 	"""Validate one merged footer against exactly two disjoint top peers."""
 	footer = components[footer_index]
 	peers = [item for index, item in enumerate(components) if index != footer_index]
-	return len(peers) == 2 and not raw_components_overlap(peers) and shallow_broad_footer(components, footer) and \
-		all(footprint.top >= peer.bounds.bottom - column_footer_padding(peer)
-			for footprint in component_footprints(footer) for peer in peers)
+	return len(peers) == 2 and not emission_flow.raw_components_overlap(peers) and emission_flow.shallow_broad_footer(components, footer) and \
+		all(footprint.top >= peer.bounds.bottom - emission_flow.column_footer_padding(peer)
+			for footprint in emission_flow.component_footprints(footer) for peer in peers)
 
 
 #============================================
-def shallow_broad_footer(components: list[EmissionComponent], footer: EmissionComponent) -> bool:
-	"""Recognize one short lower textbox broad enough to be a footer reference."""
-	envelope = union_bounds(tuple(item.bounds for item in components))
-	return footer.bounds.width >= envelope.width * FOOTER_MIN_WIDTH_RATIO and \
-		footer.bounds.height <= envelope.height * FOOTER_MAX_HEIGHT_RATIO
 
 
 #============================================
-def coarse_image_geometry(components: list[EmissionComponent]) -> bool:
+def coarse_image_geometry(components: list[emission_flow.EmissionComponent]) -> bool:
 	"""Recognize source geometry eligible for the explicit coarse-picture relation."""
 	if len(components) != 2:
 		return False
 	coarse = next((item for item in components if item.kind == "text" and item.coarse_text_container), None)
 	image = next((item for item in components if item.kind == "image" and item.source_kind == "picture"), None)
-	if coarse is None or image is None or len(component_footprints(coarse)) != 1 or len(component_footprints(image)) != 1:
+	if coarse is None or image is None or len(emission_flow.component_footprints(coarse)) != 1 or len(emission_flow.component_footprints(image)) != 1:
 		return False
 	coarse_center_y = (coarse.bounds.top + coarse.bounds.bottom) / 2
 	image_center_y = (image.bounds.top + image.bounds.bottom) / 2
@@ -616,7 +460,7 @@ def coarse_image_geometry(components: list[EmissionComponent]) -> bool:
 
 
 #============================================
-def gallery_eligible(components: list[EmissionComponent]) -> bool:
+def gallery_eligible(components: list[emission_flow.EmissionComponent]) -> bool:
 	"""Allow gallery only for equal-status, non-overlapping image components."""
 	if not 2 <= len(components) <= 6 or not all(item.kind == "image" for item in components):
 		return False
@@ -647,7 +491,7 @@ def gallery_eligible(components: list[EmissionComponent]) -> bool:
 
 
 #============================================
-def component_layout(components: list[EmissionComponent]) -> tuple[str, tuple[str, ...], tuple[int, ...]]:
+def component_layout(components: list[emission_flow.EmissionComponent]) -> tuple[str, tuple[str, ...], tuple[int, ...]]:
 	"""Match source components to native cell geometry without source-specific rules."""
 	if not 1 <= len(components) <= 6:
 		raise ValueError("source components require manual layout review before Djot emission")
@@ -676,7 +520,7 @@ def component_layout(components: list[EmissionComponent]) -> tuple[str, tuple[st
 	return name, slide_lib.layout_registry.contract_for(name).slot_names, order
 
 
-def coarse_inset_key_layout(components: list[EmissionComponent]) -> bool:
+def coarse_inset_key_layout(components: list[emission_flow.EmissionComponent]) -> bool:
 	"""Assign one body and wholly contained compact key to the existing two panels."""
 	if len(components) != 2:
 		return False
@@ -689,7 +533,7 @@ def coarse_inset_key_layout(components: list[EmissionComponent]) -> bool:
 		body.bounds.top <= key.bounds.top and key.bounds.bottom <= body.bounds.bottom
 
 
-def coarse_picture_inset_layout(components: list[EmissionComponent]) -> bool:
+def coarse_picture_inset_layout(components: list[emission_flow.EmissionComponent]) -> bool:
 	"""Assign one proven coarse body and direct picture inset to opposite panels."""
 	if len(components) != 2 or any(not item.classification_reason.startswith("coarse-body-picture-inset:") for item in components):
 		return False
@@ -699,10 +543,10 @@ def coarse_picture_inset_layout(components: list[EmissionComponent]) -> bool:
 
 
 #============================================
-def bottom_footer_layout(components: list[EmissionComponent]) -> tuple[float, tuple[int, ...]] | None:
+def bottom_footer_layout(components: list[emission_flow.EmissionComponent]) -> tuple[float, tuple[int, ...]] | None:
 	"""Accept only a unique same-band peer/footer relation within its local score ceiling."""
 	footer_indexes = [index for index, item in enumerate(components) if item.kind == "flow" and
-		item.source_kind == "text-box" and item.classification_reason == BOTTOM_FOOTER_RELATION_REASON]
+		item.source_kind == "text-box" and item.classification_reason == emission_flow.BOTTOM_FOOTER_RELATION_REASON]
 	if len(components) != 3 or len(footer_indexes) != 1 or not bottom_footer_structure(components, footer_indexes[0]):
 		return None
 	peers = [item for index, item in enumerate(components) if index != footer_indexes[0]]
@@ -722,7 +566,7 @@ def bottom_footer_layout(components: list[EmissionComponent]) -> tuple[float, tu
 
 
 #============================================
-def asymmetric_explanatory_pair_layout(components: list[EmissionComponent]) -> tuple[float, tuple[int, ...]] | None:
+def asymmetric_explanatory_pair_layout(components: list[emission_flow.EmissionComponent]) -> tuple[float, tuple[int, ...]] | None:
 	"""Accept one aligned, disjoint coarse-plus-compact text pair at a local ceiling."""
 	if not asymmetric_explanatory_pair(components):
 		return None
@@ -748,16 +592,16 @@ def asymmetric_explanatory_pair_layout(components: list[EmissionComponent]) -> t
 
 
 #============================================
-def asymmetric_explanatory_pair(components: list[EmissionComponent]) -> bool:
+def asymmetric_explanatory_pair(components: list[emission_flow.EmissionComponent]) -> bool:
 	"""Recognize only two direct, aligned textual components with asymmetric roles."""
 	if len(components) != 2 or any(item.kind != "text" or not any(line.strip() for line in item.lines) or
 		item.source_kind in {"table", "native-reconstruction"} or item.classification_reason or
-		len(component_footprints(item)) != 1 for item in components):
+		len(emission_flow.component_footprints(item)) != 1 for item in components):
 		return False
 	coarse = [item for item in components if item.coarse_text_container]
 	compact = [item for item in components if not item.coarse_text_container]
 	if len(coarse) != 1 or len(compact) != 1 or compact[0].placeholder_confidence != 0.0 or \
-		raw_components_overlap(components):
+		emission_flow.raw_components_overlap(components):
 		return False
 	large, small = coarse[0], compact[0]
 	if small.bounds.width * small.bounds.height > large.bounds.width * large.bounds.height * \
@@ -768,12 +612,6 @@ def asymmetric_explanatory_pair(components: list[EmissionComponent]) -> bool:
 
 
 #============================================
-def union_bounds(bounds: tuple[geometry.NormalizedBounds, ...]) -> geometry.NormalizedBounds:
-	"""Return the geometric union of already-normalized source rectangles."""
-	result = bounds[0]
-	for item in bounds[1:]:
-		result = result.union(item)
-	return result
 
 
 #============================================

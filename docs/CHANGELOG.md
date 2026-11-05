@@ -2,6 +2,25 @@
 
 ### Fixes and Maintenance
 
+- Replace the machine-specific handout provenance path with its filename and course context;
+  retain source/export hashes and page metadata. No runtime loader consumes this provenance field.
+
+- Split long importer and layout modules by responsibility: isolate source regions and tables,
+  ODP media and table extraction, emitted component flow, mixed-content measurement, and
+  source-fact validation. Update direct callers to the owning modules without compatibility
+  re-exports. Preserve existing algorithms and test contracts. Full pytest: 3901 passed,
+  no warnings; all four original modules are below the 900-line advisory band.
+- Exclude deleted Git paths before file-content discovery filters run, preventing collection
+  crashes after an unstaged documentation move. Verify the missing-path case directly.
+- Remove bytecode caches produced during explicit syntax compilation. Use in-memory compilation
+  and the bootstrapped pytest environment for syntax checks.
+
+- Remove the three obsolete `biotech/djot/` Lecture 03 source copies and their obsolete
+  assets and import reports. Remove the intermediate `old/djot_assets/` folder at the
+  instructor's request rather than retaining another legacy copy. Update old source references.
+  Verify all remaining Biotechnology Djot directories are lecture-local; 280 focused
+  Djot-link, cover, Markdown-link, and guidance-format checks pass.
+
 - Restore source compliance and test contracts: validate Djot assets locally without tracking
   copyrighted media, use ASCII character references, move reusable refresh/generation commands
   into `slide_lib`, and remove obsolete retired source copies after historical notes are repaired.

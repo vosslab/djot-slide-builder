@@ -5,15 +5,16 @@ import slide_lib.importers.djot_emitter as emitter
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.odp_to_djot as odp_to_djot
 import slide_lib.importers.slide_plan as slide_plan
+import slide_lib.importers.source_regions as source_regions
 import slide_lib.importers.source_model as source_model
 
 
 def text_region(
 	left: float, top: float, right: float, bottom: float, text: str,
 	*, placeholder_role: str | None = None,
-) -> slide_plan.SourceTextRegion:
+) -> source_regions.SourceTextRegion:
 	"""Build one small editable source region from direct import facts."""
-	return slide_plan.SourceTextRegion(
+	return source_regions.SourceTextRegion(
 		((0, (source_model.TextRun(text),)),),
 		geometry.NormalizedBounds(left, top, right, bottom), False, 0.0,
 		placeholder_role=placeholder_role,
@@ -22,16 +23,16 @@ def text_region(
 
 def image_region(
 	left: float, top: float, right: float, bottom: float,
-) -> slide_plan.SourceImageRegion:
+) -> source_regions.SourceImageRegion:
 	"""Build one small image region from direct import facts."""
-	return slide_plan.SourceImageRegion(
+	return source_regions.SourceImageRegion(
 		"assets/figure.png", geometry.NormalizedBounds(left, top, right, bottom),
 	)
 
 
 def test_direct_source_connector_retains_a_nonzero_planning_footprint() -> None:
 	"""A stroked zero-width ODP connector remains available to relation planning."""
-	regions = slide_plan.visual_regions((source_model.PositionedVisual(
+	regions = source_regions.visual_regions((source_model.PositionedVisual(
 		"connector-1", 500, 100, 0, 600, "connector", 1, 20,
 	),), 1000, 1000)
 
@@ -41,7 +42,7 @@ def test_direct_source_connector_retains_a_nonzero_planning_footprint() -> None:
 
 def test_direct_odp_asset_binding_keeps_source_visual_ordinal() -> None:
 	"""The direct ODP planner joins an extracted picture to its visual evidence."""
-	visual = slide_plan.SourceImageRegion(
+	visual = source_regions.SourceImageRegion(
 		"unresolved", geometry.NormalizedBounds(.55, .25, .90, .75), "picture", 7,
 	)
 	asset = source_model.ImageAsset(55, 25, 35, 50, "assets/photo.png", "Photo")
@@ -73,15 +74,15 @@ def test_planner_preserves_a_unique_interior_label_with_its_image() -> None:
 
 def test_vertical_mixed_sequence_shares_one_panel_before_caption_pairing() -> None:
 	"""An image, caption-like text, and next image form one sequence rather than equal panels."""
-	text = slide_plan.SourceTextRegion(
+	text = source_regions.SourceTextRegion(
 		((0, (source_model.TextRun("How many arrangements?"),)),),
 		geometry.NormalizedBounds(.10, .32, .90, .40), False, 0,
 		source_kind="text-box", source_ordinal=2,
 	)
 	images = (
-		slide_plan.SourceImageRegion("question.png", geometry.NormalizedBounds(.05, .10, .95, .30),
+		source_regions.SourceImageRegion("question.png", geometry.NormalizedBounds(.05, .10, .95, .30),
 			"picture", 1),
-		slide_plan.SourceImageRegion("diagram.svg", geometry.NormalizedBounds(.10, .45, .90, .85),
+		source_regions.SourceImageRegion("diagram.svg", geometry.NormalizedBounds(.10, .45, .90, .85),
 			"picture", 3),
 	)
 	plan = slide_plan.plan_slide((text,), images)

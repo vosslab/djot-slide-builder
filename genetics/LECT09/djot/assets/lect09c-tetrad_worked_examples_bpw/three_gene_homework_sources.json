@@ -284,7 +284,7 @@
   },
   "handout_preview": {
     "asset": "tetrad_handout_page_2.webp",
-    "source": "/Volumes/Ex2GB/Documents/teaching/CLASS/biol_351-genetics/2026-Genetics-2fall/tetrad_handout.odt",
+    "source": "tetrad_handout.odt",
     "source_sha256": "f6ce43c7648b24869c71901f88a6c0c9c2697a29699f37fab212d2b7a09f28ec",
     "export_sha256": "c997caa218d283f4b69ce81cca7496fc48ff99303f1b336969b3cbbd84956e8c",
     "page": 2,
@@ -298,7 +298,7 @@
       1584
     ],
     "quality": 90,
-    "note": "Full page, no crop or distortion; three-gene exercises from the instructor-edited handout. Source handout unchanged."
+    "note": "External instructor-owned source from the 2026 Genetics fall course. Full page, no crop or distortion; three-gene exercises from the instructor-edited handout. Source handout unchanged."
   },
   "focused_drawing_references": [
     "A_Handbook_of_Biological_Illustration-1988.md: CLARITY and EMPHASIS AND COMPARISON",

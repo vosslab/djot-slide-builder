@@ -7,6 +7,7 @@ import xml.etree.ElementTree
 # Local modules
 import slide_lib.importers.source_model as source_model
 import slide_lib.importers.slide_plan as slide_plan
+import slide_lib.importers.source_regions as source_regions
 
 
 ANIMATION_NS = "urn:oasis:names:tc:opendocument:xmlns:animation:1.0"
@@ -91,8 +92,8 @@ def read_text_reveals(page: xml.etree.ElementTree.Element,
 
 def plan_text_reveals(plan: slide_plan.SlidePlan,
 		texts: tuple[source_model.PositionedText, ...],
-		regions: tuple[slide_plan.SourceTextRegion, ...],
-		visuals: tuple[slide_plan.SourceImageRegion, ...]) -> tuple[slide_plan.SlidePlan, list[str]]:
+		regions: tuple[source_regions.SourceTextRegion, ...],
+		visuals: tuple[source_regions.SourceImageRegion, ...]) -> tuple[slide_plan.SlidePlan, list[str]]:
 	"""Map a single revealed answer onto the existing question/answer layout."""
 	revealed = {text.source_ordinal for text in texts if text.reveal}
 	if not revealed:
