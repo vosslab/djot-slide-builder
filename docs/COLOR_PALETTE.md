@@ -28,13 +28,29 @@ Names below preserve that source's labels.
 | Magenta | `#C80085` |
 | Pink | `#CC0066` |
 
+## Chromosome alteration names
+
+Use full alteration names and these fixed text colors in chromosome-alteration questions.
+Chromosome fills continue to identify the source chromosome; these text colors identify the
+type of alteration.
+
+| Alteration | Color role | Hex |
+| --- | --- | --- |
+| Deletion | Magenta-red (Pink) | `#CC0066` |
+| Duplication | Forest green (Green) | `#007A00` |
+| Inversion | Yellow-orange (Light orange) | `#935D00` |
+| Translocation | Navy | `#0067CC` |
+
 ## Procedure sequences
 
 Use well-separated colors from the fixed palette in rainbow order for new colored step sequences.
 For six steps, use Red, Dark orange, Dark yellow, Green, Blue, Purple. For four steps, use Red,
-Green, Blue, Purple. Keep each repeated roadmap identical and match step cross-references to its
-own method's colors. Preserve meaningful source colors when converting existing material unless
-recoloring is requested.
+Green, Blue, Purple. For other sequence lengths up to 14, choose evenly spaced entries from the
+14 colors in the standard text palette above, including its first and last entries. Longer
+sequences cycle through that palette. In randomized ordering questions, assign colors after the
+display order is shuffled so colors do not reveal the correct order. Keep each repeated roadmap
+identical and match step cross-references to its own method's colors. Preserve meaningful source
+colors when converting existing material unless recoloring is requested.
 
 ## Three-point testcross pairs
 
@@ -78,15 +94,3 @@ deck does not depend on a sibling checkout or silently change its colors.
 Choose text and background colors for their actual role and check the rendered result.
 Perceptual separation does not by itself guarantee readable text contrast.
 See [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) for the instructor's presentation requirements.
-
-## Tetrad classes
-
-| Observed Class | Text/Formula Color | Light Fill |
-| --- | --- | --- |
-| PD | `#935D00` | `#FFE3A3` |
-| TT | `#A719DB` | `#E8CCE6` |
-| NPD | `#007A00` | `#BFE6C0` |
-
-Match class symbols, substituted counts, and separate numerical contributions across E/F/G.
-Keep coefficients, operators, N, and combined totals neutral. Gene/pair colors retain their
-separate meaning. Use course blue for NCO/SCO/DCO definition terms; DCO has several outcomes.
