@@ -204,6 +204,11 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   leave Veridian Dynamics off the agenda. Use the local film transcripts to give its slide flair.
 - For Fall 2026 Biotechnology Lecture 10, the individual projects are complete. Adapt the
   prior-year group guidelines using the current syllabus schedule.
+- Use my original ODP language and formatting for the group-project slides; use the syllabus
+  for the timeline. Restore my color, emphasis, hierarchy, and visuals instead of walls of black text.
+- Roll out group-project details as needed. With presentations a month away, hide the finer
+  presentation details; the current focus is group formation and the group vision form.
+- For now, show only that the group presentation exists, its point value, and its date.
 - Use the successful Set #4 approach for Set #5: combine the Fall 2021-2026 student material
   with my expanded instructor ODP, using the 37-topic 2026 list to control coverage and order.
 - General Announcements rarely has more than one active topic: Graduating Students in the first

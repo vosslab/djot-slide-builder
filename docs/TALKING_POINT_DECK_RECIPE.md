@@ -97,6 +97,10 @@ When the request also includes announcements or project guidelines, use
 companion decks. Keep weekly dates, project-phase changes, media selection, and private
 `{{course_url:key}}` substitutions separate from the reusable science chapters.
 
+For group-project instructions, the original ODP supplies wording and formatting; use the
+syllabus for the timeline. Reveal the detailed presentation and business-plan chapters when
+needed, keeping the early group-formation and vision-form sequence visible first.
+
 ### Understand the source files
 
 Annual sources often have long names such as

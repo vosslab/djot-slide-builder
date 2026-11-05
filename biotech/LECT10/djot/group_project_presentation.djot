@@ -1,0 +1,130 @@
+=== layout: one-panel
+
+# Group Presentation
+
+@body
+
+- Longer presentation\: [20-30 minutes in length]{color=#CC00CC}
+  - you will be penalized if not with 10% of time
+    - 18 &#8211; 33 minutes
+- Every member has to talk for at least 3 minutes
+- Videos
+  - Videos are great
+  - But you should be the narrator, wherever possible
+  - Keep them short, less than 2 minutes
+
+=== layout: one-panel
+
+# Presentation Outline Suggestions
+
+@body
+
+- [The best presentations deviate from the outline guide and do their own thing]{color=red}
+- It is better to introduce the group members one at a time as they are ready speak, rather than all at once.
+- Choose an emcee (the most enthusiastic member) to run the show and introduce the other members for their subsections.
+- It is better to bring back different members and interact
+  - Don't just divide up the presentation into parts and go in linear order = boring!
+
+=== layout: two-panels
+
+# Pre-Recorded Videos
+
+@left
+
+- Pre-Recorded Videos are [ALLOWED]{color=green}
+- They must follow all of the guidelines
+- You must use your own voice, no playing videos or using AI generated voices
+- The runtime is expected to be
+  - within 10% of 20-30 minutes
+
+@right
+
+- Videos can be uploaded to [YouTube]{color=red} or uploaded to [Blackboard]{color=red} under Assignments.
+  - Facebook, Quibi, TikTok are not allowed.
+- Videos are due [Thursday, Dec 10 before 12PM noon]{color=red} (or Wed night) of the presentation day
+  - Dr. Voss plans to download all of the videos (including from YouTube) to his desktop and play them from his computer to avoid internet connectivity issues.
+
+=== layout: two-panels
+
+# Suggested Presentation Outline
+
+@left
+
+- [The best presentations deviate from this outline]{color=red}
+- Introduce problem in great detail
+- Two members talk about science in great detail
+  - switch back and forth between members for each slide
+  - Looking for specifics
+  - bonus if related to course material
+  - this should be the focus of the presentation
+
+@right
+
+- Reveal the Product
+  - Introduce your product as the solution to the problem
+  - Talk about how your product is better than competition
+- Marketing
+  - Discuss size of the market; Talk about revenue projections
+  - Show milestones and your plan to achieve them
+  - recommend to keep this short, it is usually pretty boring
+- Introduce team members as needed
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Presentation Rubric](assets/group_project_details/presentation_rubric_1.png)
+
+@caption
+
+Presentation Rubric
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Presentation Rubric](assets/group_project_details/presentation_rubric_2.png)
+
+@caption
+
+Presentation Rubric
+
+=== layout: two-panels
+hidden: true
+
+# Tips for a Good Presentation
+
+@left
+
+- Remember you telling a story. Should have a beginning, a middle, and an end.
+- [Respect the time]{color=#FF3300} allotted for the sake of your audience.
+  - If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop.
+- Explain at the [level of the class]{color=#FF3300}.
+  - Have a technical term, define it. If you don't quite understand it, no one will.
+  - Because we are all novices, you will need to have a long intro.
+
+@right
+
+- But try to engage the audience.
+  - Do not read from your slides; use notecards, if you must.\
+    [No complete sentences]{color=red} on slides, use short phrases, break the content up.
+  - Try to have a [picture on every slide,]{color=#FF3300} helps maintain attention of the audience
+  - If you have a movie, talk during the movie, do not use narrator\
+    use a [flip book animation]{color=#FF3300} to explain a concept
+- Be prepared for questions.
+- Show [ENTHUSIASM]{color=#FF3300} when you talk and make it exciting!
+
+=== layout: two-panels
+
+# Google Docs Peer Eval
+
+@left
+
+![Slide image 5](assets/group_project_details/peer_evaluation_form.png)
+
+@right
+
+- Peer Evaluation is more involved for each presentation, but there are less presentations
+

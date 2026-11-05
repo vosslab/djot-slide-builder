@@ -1,0 +1,8 @@
+=== layout: one-panel
+
+# Group Presentation
+
+@body
+
+- [Thursday, Dec 10]{color=red}
+- [50 points]{color=#CC00CC}
