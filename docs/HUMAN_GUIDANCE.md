@@ -200,6 +200,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - Use root-level `evergreen/` for slides shared across courses. Keep course-specific reusable
   slides in that course's `evergreen/` folder, and dated weather/podcast snapshots with the lecture.
+- Keep `icebreakers.yaml` and similar reusable teaching content in `evergreen/`.
 
 - Spring registration slides are evergreen. Show them roughly October 15 through December 1,
   including in Genetics 09A and 10A.
@@ -612,7 +613,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   format and wording. Keep subject-specific prompts and general fallbacks.
 - For Genetics on October 20, 2026, ask about pets: dog, cat, none, other.  - For Genetics 09A on November 3, 2026, ask: "What everyday task would you permanently
   hand over to a robot?"
-- The collection is in `icebreakers.yaml`; select prompts explicitly for each class.
+- The collection is in `evergreen/icebreakers.yaml`; select prompts explicitly for each class.
 
 ### LECT07D title wording
 

@@ -7,7 +7,7 @@ deck_tools.py        application CLI for build, capacity, import, lint, and visi
 slide_lib/           reusable Djot, native-export, and importer package
 genetics/            example and lecture Djot corpus
 biotech/             lecture-organized Biotechnology Djot corpus
-evergreen/           slides and assets shared across courses
+evergreen/           slides, prompt collections, and assets shared across courses
 tests/               fast tests and explicitly separate native E2E runners
 docs/                durable project documentation and working plans
 devel/               maintainer and repository-engineering helpers
@@ -48,7 +48,9 @@ Brewfile             declared macOS command-line and desktop dependencies
 - [../biotech/](../biotech/) follows the same lecture layout: each `LECT##/` folder owns `djot/`
   sources and assets plus `old/` original decks, PDFs, and course source material. The
   [Lecture 04 review](../biotech/LECT04/djot/LECT04_REVIEW.md) records its conversion scope.
-- [../evergreen/](../evergreen/) owns shared announcement groups and their assets. Course-specific
+- [../evergreen/](../evergreen/) owns shared announcement groups, the
+  [icebreaker catalog](../evergreen/icebreakers.yaml), and their assets, including the recording
+  reminder graphic. Fonts remain under `assets/fonts/`. Course-specific
   reusable groups remain in folders such as `genetics/evergreen/`; dated weather and podcast
   snapshots remain with their lecture.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.

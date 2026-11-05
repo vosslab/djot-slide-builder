@@ -16,7 +16,7 @@ Check the current schedule and this guide rather than treating the previous week
 5. Icebreaker: selected prompt and concrete examples.
 
 Keep this opening before the first section divider. Select the icebreaker from
-`icebreakers.yaml` or the instructor's explicit choice. Use the current course schedule for the
+`evergreen/icebreakers.yaml` or the instructor's explicit choice. Use the current course schedule for the
 lookahead; do not infer deadlines or events from last year's dates.
 
 ## Three main sections

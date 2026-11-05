@@ -701,6 +701,8 @@ and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.
 **Decision.** Keep slides shared across courses in root-level `evergreen/`, starting with
 spring registration and the YouTube channel. Keep course-specific reusable groups in the
 course's own evergreen folder. Use the existing `repo:` includes and inherit the master's theme.
+Shared prompt collections such as `evergreen/icebreakers.yaml` and reusable teaching graphics
+also belong here; catalog provenance stays repository-relative.
 
 **Why.** Common announcements need one source that any course can include without copying text.
 

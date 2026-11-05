@@ -2,6 +2,15 @@
 
 ### Fixes and Maintenance
 
+- Fix ASCII compliance in the 2025/2026 Biotechnology Lecture 10 talking points: use apostrophes
+  for nucleotide primes, spell out beta, and remove decorative emoji while preserving heading text.
+
+- Move the icebreaker catalog and recording-reminder graphic into `evergreen/`, using `git mv`
+  for tracked files. Keep the graphic's local ODG/PNG companions ignored; update catalog references
+  and document the shared content inventory. Preserve catalog wording and repository-relative provenance.
+  Focused checks: 767 passed; two ASCII failures concern Biotechnology Lecture 10
+  talking-point text files. Verify moved catalog/SVG bytes and ignored companion status directly.
+
 - Complete the responsibility split beyond the line-limit advisory: separate emitted topology,
   ODP geometry/page extraction, figure/multiple-choice recognition, fitting policy, and table
   measurement. Original emitter/reader/planner/text-measurement modules are now 445/136/242/498

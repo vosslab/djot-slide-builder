@@ -5,7 +5,7 @@ Oct 27, 2022
 Talking Points Guide
 
 Talking Points Guide
-Talking points were assigned during last week’s class
+Talking points were assigned during last week's class
 Each student was assigned to two talking points.
 Each talking point will have at least two students talking about it
 If you share a talking point with another student:
@@ -23,7 +23,7 @@ It is best to have as few words as possible on your slide -- you do the talking 
 Be prepared to give a 60-90 second presentation about each of your assigned talking point
 define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
 Try to be unique
-Don’t just copy the book, use the internet for research. 
+Don't just copy the book, use the internet for research.
 Provide your own perspective
 Please put into your own words
 It is okay if you read your notes, but put notes in your own words
@@ -31,19 +31,19 @@ No direct quoting of an article, wikipedia or the textbook
 Minimize jargon
 
 Tips for a Good Presentation
-Remember you telling a story. Should have a beginning, a middle, and an end. 
-Respect the time allotted for the sake of your audience. 
-If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
-Explain at the level of the class. 
-Have a technical term, define it. If you don't quite understand it, no one will. 
-Because we are all novices, you will need to have a long intro. 
-But try to engage the audience. 
+Remember you telling a story. Should have a beginning, a middle, and an end.
+Respect the time allotted for the sake of your audience.
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop.
+Explain at the level of the class.
+Have a technical term, define it. If you don't quite understand it, no one will.
+Because we are all novices, you will need to have a long intro.
+But try to engage the audience.
 Do not read from your slides; use notecards, if you must.
-No complete sentences on slides, use short phrases, break the content up. 
-Try to have a picture on every slide, helps maintain attention of the audience 
+No complete sentences on slides, use short phrases, break the content up.
+Try to have a picture on every slide, helps maintain attention of the audience
 If you have a movie, talk during the movie, do not use narrator
-Be prepared for questions. 
-Show ENTHUSIASM when you talk and make it exciting! 
+Be prepared for questions.
+Show ENTHUSIASM when you talk and make it exciting!
 
 Best Advice
 Be Enthusiastic
@@ -56,24 +56,24 @@ Be creative with your slide with look and content; go beyond the book
 
 Chapter 17
 
-#1 Tania  
+#1 Tania
 Types of defects
-Hereditary 
+Hereditary
 Multiple genes
 Haploinsufficiency
 Tandem repeats and dynamic mutations
 Imprinting and methylation
-Mitochondrial defects 
+Mitochondrial defects
 Defective gene identification
-Candidate cloning 
-Functional cloning 
-Positional cloning 
-Knockout nice  
+Candidate cloning
+Functional cloning
+Positional cloning
+Knockout nice
 1. What are some examples of how genes become defective? Discuss the methods to identify defective genes in humans. How can model organisms be used to identify defective genes?
 
-#1 Audrey  
+#1 Audrey
 
-#2 Laura 
+#2 Laura
 2. What are the five things to consider for preparing a gene for gene therapy. What was the first example of gene therapy? Provide an example of gene therapy that is coming soon.
 -5 things to consider: Identification and characterization of a gene, cloning of a gene, choice of vector, method of delivery, and expression of gene
 
@@ -81,22 +81,22 @@ Knockout nice
 
 -Future gene therapy treatment: sickle cell disease, cystic fibrosis, hemophilia
 
-#2 Meaghan- Gene Therapy  
-Gene Therapy Considerations 
-Could the condition be corrected by a few function genes? 
-Are the genes involved known? 
-Is the biology of the disorder known? 
-Can the genes be delivered to cells of affected tissues? 
-What are the risk factors? 
-What was the first example of gene therapy? 
+#2 Meaghan- Gene Therapy
+Gene Therapy Considerations
+Could the condition be corrected by a few function genes?
+Are the genes involved known?
+Is the biology of the disorder known?
+Can the genes be delivered to cells of affected tissues?
+What are the risk factors?
+What was the first example of gene therapy?
 Ashanthi de Silva
-September 14, 1990 
-SCID- lack of enzyme adenosine deaminase, ADA gene 
+September 14, 1990
+SCID- lack of enzyme adenosine deaminase, ADA gene
 LentiGlobin
-Single dose gene therapy for sickle cell disease 
-Lentivirus delivers genes to stem cells to adjust mutations in beta-globin gene 
+Single dose gene therapy for sickle cell disease
+Lentivirus delivers genes to stem cells to adjust mutations in beta-globin gene
 
-#3 Kimberly - Adenovirus Vectors 
+#3 Kimberly - Adenovirus Vectors
 Why adenoviruses?
 Almost fully harmless to humans
 Easy to produce and culture in lab
@@ -108,63 +108,63 @@ Infections do not last long - immune system gets rid of it in a manner of weeks.
 Second dosage will not work since body has grown immunity
 3. Describe the use of adenovirus in gene therapy. What is needed to get it to work? What are its limitations?
 
-#3 Adenovirus- Ozzie 
+#3 Adenovirus- Ozzie
 Adenvovirus therapy
 How it works and its limitations
 3. Describe the use of adenovirus in gene therapy. What is needed to get it to work? What are its limitations?
 
-#3 Adenovirus Deena 
-3. Describe the use of adenovirus in gene therapy. 
+#3 Adenovirus Deena
+3. Describe the use of adenovirus in gene therapy.
 
-#4 Meaghan- Cystic Fibrosis    
-Cystic Fibrosis 
-Affects cells that produce mucus, sweat, and digestive juices 
-Blocks ducts and passageways 
-Symptoms: cough, lung infections, inability to gain weight, fatty stools, pulmonary hypertension, SOB, fatigue, and more  
-Caused by a defective gene inherited by both parents 
-How does gene therapy for CF work? 
-Integrating gene therapy, non-integrating gene therapy, RNA therapy  
-CFTR gene introduced to cells 
-Only works in cells with treatment introduced 
+#4 Meaghan- Cystic Fibrosis
+Cystic Fibrosis
+Affects cells that produce mucus, sweat, and digestive juices
+Blocks ducts and passageways
+Symptoms: cough, lung infections, inability to gain weight, fatty stools, pulmonary hypertension, SOB, fatigue, and more
+Caused by a defective gene inherited by both parents
+How does gene therapy for CF work?
+Integrating gene therapy, non-integrating gene therapy, RNA therapy
+CFTR gene introduced to cells
+Only works in cells with treatment introduced
 Prevents further damage
 
 
-#4 Kher 
+#4 Kher
 4. Explain the Cystic Fibrosis (CF) disorder. How does gene therapy for CF work? What happened after 30 days to patients getting adenovirus gene therapy for CF? What does the future hold for CF gene therapy?
 The protein encoded by the cystic fibrosis gene = CFTR protein
 30 days post-adenovirus gene therapy for cystic fibrosis
 Expression of healthy cystic fibrosis gene decrease
 Repeated doses of virus had minimal effect
 Recognition and destruction of the virus by the immune system
-Major early disappointment to the field of gene therapy 
+Major early disappointment to the field of gene therapy
 
 #4 Deena
-4. What does the future 
+4. What does the future
 hold for CF gene therapy?
 
 
 
-#5 Sonia 
+#5 Sonia
 5. Discuss how retroviruses are used in gene therapy.  How does it differ from the adenovirus method? How is HIV used to treat leukemia?
 
 Vectors have retrovirus genes removed
 Packaging signal, cloned gene 6 to 8 kb, and 2 LTRs
 Cloned gene is integrated into host DNA
-Retrovirus 
+Retrovirus
 Adenovirus
 
-#5 Kher 
+#5 Kher
 5. Discuss how retroviruses are used in gene therapy.  How does it differ from the adenovirus method? How is HIV used to treat leukemia?
 Lentiviral vectors for gene therapy against leukemia
 Retroviridae family, the HIV genome
-Ability to transduce non-dividing cells 
-Deliver and integrate > 8 kb of transgenic DNA into target cell genomes without inducing a host immune response 
+Ability to transduce non-dividing cells
+Deliver and integrate > 8 kb of transgenic DNA into target cell genomes without inducing a host immune response
 Maintain long-term expression
-ex vivo gene therapy protocol that transduces the patient’s own T cells to harness them against leukemic B cells
+ex vivo gene therapy protocol that transduces the patient's own T cells to harness them against leukemic B cells
 
-#6-Tania  
+#6-Tania
 Liposome
-Phospholipid bilayer 
+Phospholipid bilayer
 Lipofection Gene Therapy
 Nonspecific
 Protein delivery
@@ -174,17 +174,17 @@ Protein delivery
 
 
 
-#6 Nathi 
+#6 Nathi
 6. What is a liposome? How can Liposomes be used to deliver genes? What advantages and disadvantages does it have compared to the viral delivery systems?
-Liposomes 
+Liposomes
 Advantages
 Non-infectious
 Long term stability
 Low degree of toxicity
 Protection of nucleic acid from degradation
 Easy to manipulate
-Easier to prepare than viral vectors 
-Disadvantages 
+Easier to prepare than viral vectors
+Disadvantages
 Non-specific targeting
 Low transfection efficiency
 Difficult in vivo application
@@ -204,10 +204,10 @@ Suicide gene therapy
 Immunotherapy
 siRNA therapy
 Pro-apoptotic gene therapy
-Oncolytic virotherapy 
+Oncolytic virotherapy
 Gene directed-enzyme prodrug therapy
 Cancer vs. hereditary gene therapy
-Cancer: using genetic material to modify cells in vitro or in vivo 
+Cancer: using genetic material to modify cells in vitro or in vivo
 Hereditary : replacement and inactivation of genes causing disease
 Suicide gene therapy
 transgenes are delivered into the tumor and expressed
@@ -227,7 +227,7 @@ CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats)
 
 
 
-Clustered Regularly Interspaced                  
+Clustered Regularly Interspaced
 Short Palindromic Repeats(CRISPR)
 
 
@@ -248,18 +248,18 @@ Ribozymes: RNA enzymes; Target specific RNA molecules.
 
 #9 Nathi
 9. How does gene editing differ from gene therapy? What methods of gene editing are there? What role can gene/genome editing do for future therapies?
-Gene Therapy 
-Gene therapy replaces a mutated gene or adds 
+Gene Therapy
+Gene therapy replaces a mutated gene or adds
 a new gene in an attempt to treat disease.
 
 Gene Editing
-In gene editing, a mutated gene is revised, 
+In gene editing, a mutated gene is revised,
 removed, or replaced at the DNA level.
 
 
 CRISPR/Cas9 gene editing
-Zinc-finger nucleases (ZFN) 
-Transcription activator-like effector nucleases 
+Zinc-finger nucleases (ZFN)
+Transcription activator-like effector nucleases
 (TALENs)
 
 
@@ -267,20 +267,20 @@ Transcription activator-like effector nucleases
 Genome editing methods: CRISPR, TALEN, ZINC FINGER NUCLEASES Etc
 
 #10 Brianna
-CRISPR stands for Clustered Regularly Interspaced Short Palindromic Repeats 
-10. How was CRISPR discovered? What does it stand for? How does it function as a bacterial immune system? (use internet/not in book) 
+CRISPR stands for Clustered Regularly Interspaced Short Palindromic Repeats
+10. How was CRISPR discovered? What does it stand for? How does it function as a bacterial immune system? (use internet/not in book)
 
 #10 Shahd
-Clustered Regularly Interspaced Short Palindromic Repeats 
+Clustered Regularly Interspaced Short Palindromic Repeats
 Japanese scientist in 1987; unusual repetitive DNA sequence in E. Coli
 Infected bacteria use viral DNA as their own
-Cas9 & CRISPR arrays 
-How was CRISPR discovered? What does it stand for? How does it function as a bacterial immune system? (use internet/not in book) 
+Cas9 & CRISPR arrays
+How was CRISPR discovered? What does it stand for? How does it function as a bacterial immune system? (use internet/not in book)
 
 
 #11 Rawan
-How is CRISPR a game-changer for gene editing? 
-High specificity 
+How is CRISPR a game-changer for gene editing?
+High specificity
 Easier and faster to use
 modifying several genomic sites simultaneously
 How did we edit DNA before CRISPR, e.g., ZNF proteins?
@@ -293,17 +293,17 @@ ZNF proteins and TALENs
 -CRISPR uses an enzyme, cas9, and a guide RNA that introduce a change into the DNA
 -Very precise and easy to use pair of molecular scissors
 -Restriction enzymes and Zinc Nuclear Fingers
--UC Berkley, Jennifer Doudna, discovered CRISPR, MIT’s, Feng Zang, was first to use CRISPR in eukaryotic cells
+-UC Berkley, Jennifer Doudna, discovered CRISPR, MIT's, Feng Zang, was first to use CRISPR in eukaryotic cells
 
 Chapter 18
 
 #12 Shahd
 Stem cell: special/undifferentiated human cell
 Embryonic
-Pluripotent 
-Totipotent  
+Pluripotent
+Totipotent
 Adult
-Multipotent, oligopotent, unipotent 
+Multipotent, oligopotent, unipotent
 Self renewal, unspecialized, differentiation
 
  What are stem cells? What makes a stem cell a stem cell? What are the three characteristics of stem cells? What is the difference between totipotent, pluripotent, unipotent, oligopotent, and multipotent stem cells? How can we obtain pluripotent stem cells without embryos?
@@ -311,33 +311,33 @@ Self renewal, unspecialized, differentiation
 
 #12 Stem Cells  Rikita
 12. What are stem cells? What makes a stem cell a stem cell? What are the three characteristics of stem cells? What is the difference between totipotent, pluripotent, unipotent, oligopotent, and multipotent stem cells? How can we obtain pluripotent stem cells without embryos?
-Stem Cells: Body’s raw material
-Stem cells are different from other cells in body 3 ways: 
+Stem Cells: Body's raw material
+Stem cells are different from other cells in body 3 ways:
 they can divide and renew
 they are unspecialized
 they have potential to become specialized cells.
 
 
 #13 Audrey
-Dolly the sheep → first cloned sheep from adult somatic cell 
+Dolly the sheep -> first cloned sheep from adult somatic cell
 Surrogate mother was Scottish balck face
 13. How does animal cloning work? Who was Dolly the sheep? What are the ethical problems that occur with cloned animals? What types of animals are cloned today?
-Scientists transfer the DNA from an animal’s somatic cell into an egg cell that has had its nucleus and DNA removed. The egg develops into an embryo that contains the same genes as the cell donor. Then the embryo is implanted into an adult female’s uterus to grow.
+Scientists transfer the DNA from an animal's somatic cell into an egg cell that has had its nucleus and DNA removed. The egg develops into an embryo that contains the same genes as the cell donor. Then the embryo is implanted into an adult female's uterus to grow.
 Dolly was cloned from a cell taken from the mammary gland of a six-year-old Finn Dorset sheep and an egg cell taken from a Scottish Blackface sheep born 5th July 1996. Over the years Dolly had a total of six lambs with a Welsh Mountain ram called David. Their first lamb, Bonnie, was born in April 1998, twins Sally and Rosie were born the following year and triplets Lucy, Darcy and Cotton the year after.
 
 #13 ETHAN
 13. How does animal cloning work? Who was Dolly the sheep? What are the ethical problems that occur with cloned animals? What types of animals are cloned today?
 Cloning process
 Nucleus from sheep 1
-Egg but no nucleus from sheep 2 
+Egg but no nucleus from sheep 2
 Sheep 1 clone birthed by shep 2
 Dolly the Sheep
 
 Ethical problems
 Playing God
-Cloning Humans 
+Cloning Humans
 Life vs. Specimen
-Dinosaurs and Diseases 
+Dinosaurs and Diseases
 Animals that are cloned today
 Mammal
 Amphibians
@@ -353,7 +353,7 @@ ONCOLYTIC
 #14 Kimberly
 Oncogenic Viruses
 Viruses that begin the growth of tumors
-[most] human cancers are not caused by cancer viruses 
+[most] human cancers are not caused by cancer viruses
 RNA Viruses:
 Hep. B
 DNA Viruses
@@ -362,7 +362,7 @@ Human herpes virus
 
 Oncolytic Viruses
 Viruses that destroy cancer-causing viruses
-Identifies cancer cells and causes cell lysis 
+Identifies cancer cells and causes cell lysis
 Examples:
 Adenoviruses
 Vaccinia virus (used for smallpox)
@@ -375,21 +375,21 @@ Liver cancer
 
 #15 Rawan
 Contact Inhibition
-Transformation  
-Treating Oncogene-Addicted Tumors: 
-Cancer growth inhibitors 
-FAK inhibitors 
+Transformation
+Treating Oncogene-Addicted Tumors:
+Cancer growth inhibitors
+FAK inhibitors
 
-How are oncogenes identified? How can we treat them? 
+How are oncogenes identified? How can we treat them?
 
 #15 Brianna
 Oncogenes are genes that promote cancer
-They are identified by using cell culture 
+They are identified by using cell culture
 15. How are oncogenes identified? How can we treat them? What role can biotech play with inherited susceptibility to cancer?
 
 #16 ETHAN
-16. How are chemicals tested if they are mutagenic? Explain and provide an example of how a substance can be a carcinogen and not a mutagen. 
-Mutagens can cause damage or mutation to DNA 
+16. How are chemicals tested if they are mutagenic? Explain and provide an example of how a substance can be a carcinogen and not a mutagen.
+Mutagens can cause damage or mutation to DNA
 Bacteria growth - Ames Test
 Animal Test
 Retro human data
@@ -397,13 +397,13 @@ Retro human data
 HPV is not a mutagen but is a carcinogen
 
 #16 Dlen
-16. How are chemicals tested if they are mutagenic? Explain and provide an example of how a substance can be a carcinogen and not a mutagen. 
+16. How are chemicals tested if they are mutagenic? Explain and provide an example of how a substance can be a carcinogen and not a mutagen.
 Ames Test: Bacterial test for identifying carcinogens
 Also known as Salmonella Typhimurium reverse mutation assay
 Carcinogens
 Substance which could cause cancer
 Example: Smoking, pathogens and radiation
-Mutations 
+Mutations
 Agent or substance which damage hereditary DNA
 Examples: X-ray, virus and UV radiation
 Ames-test

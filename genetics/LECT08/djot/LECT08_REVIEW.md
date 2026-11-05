@@ -327,7 +327,7 @@ N/A for this pass: previously reviewed selections and dates were retained.
   relative wording, deadline/status colors, and expired assignment entries for the lecture date.
 - N/A: Compare announcement visibility with this week's plan. Record every changed hidden flag;
   confirm evergreen Discord information remains even when its signup assignment expires.
-- N/A: Select the week's icebreaker explicitly from `icebreakers.yaml` or an instructor selection.
+- N/A: Select the week's icebreaker explicitly from `evergreen/icebreakers.yaml` or an instructor selection.
   Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
 - N/A: Preview the StVC refresh with
   `source source_me.sh && python3 launchers/refresh_podcast.py DECK.djot`.
