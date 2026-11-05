@@ -28,7 +28,7 @@
 
 @right
 
-![Annual comparison lead](assets/set5_genome_editing/editing_vs_therapy_2025.png)
+![Gene-editing and gene-therapy comparison](assets/set5_genome_editing/editing_vs_therapy_2025.png)
 
 === layout: two-panels
 
@@ -42,7 +42,7 @@
 
 @right
 
-![Legacy gene-editing overview](assets/set5_genome_editing/gene_editing_legacy.png)
+![gene-editing overview](assets/set5_genome_editing/gene_editing_legacy.png)
 
 === layout: two-panels
 
@@ -50,8 +50,8 @@
 
 @left
 
-- **Gene addition or RNA treatment:** a useful product is missing; native DNA can remain unchanged.
-- **Genome editing:** a specific DNA change is the therapeutic goal, such as disrupting a harmful sequence.
+- *Gene addition or RNA treatment:* a useful product is missing; native DNA can remain unchanged.
+- *Genome editing:* a specific DNA change is the therapeutic goal, such as disrupting a harmful sequence.
 - Neither label guarantees permanence, one dose, or clinical benefit.
 
 @right
@@ -60,13 +60,13 @@
 
 === layout: one-panel
 
-# 13. Compare The Risks, Not Just The Promise
+# 13. Compare Benefit and Risk
 
 @body
 
 - Editing can create unintended DNA changes, large repair products, or harmful consequences of the intended change.
 - Gene delivery can miss the needed cells, express too much or too little product, or provoke immunity.
-- Ask: **which cells changed, how many changed, for how long, and what did that change do?**
+- Ask: *which cells changed, how many changed, for how long, and what did that change do?*
 
 === layout: subsection
 
@@ -94,7 +94,7 @@
 
 @right
 
-![ZFN teaching figure from annual work](assets/set5_genome_editing/zfn_2025.jpg)
+![ZFN teaching figure](assets/set5_genome_editing/zfn_2025.jpg)
 
 === layout: one-panel
 
@@ -112,8 +112,8 @@
 
 @body
 
-- **End joining** often makes small insertions or deletions and can disrupt a gene.
-- **Template-directed repair** can copy a supplied sequence, but competes with end joining.
+- *End joining* often makes small insertions or deletions and can disrupt a gene.
+- *Template-directed repair* can copy a supplied sequence, but competes with end joining.
 - Sequence the target and plausible near-matches, then test the edited cells' protein and function.
 
 === layout: subsection
@@ -160,9 +160,9 @@
 
 @body
 
-- **ZFNs:** compact engineered protein recognition; target design can be demanding.
-- **TALENs:** modular protein recognition; flexible target choice but large cargo.
-- **CRISPR:** guide-RNA recognition makes retargeting fast; PAM, delivery, and repair still constrain results.
+- *ZFNs:* compact engineered protein recognition; target design can be demanding.
+- *TALENs:* modular protein recognition; flexible target choice but large cargo.
+- *CRISPR:* guide-RNA recognition makes retargeting fast; PAM, delivery, and repair still constrain results.
 - Choose from the target, cargo, cell type, and evidence requirements -- not popularity.
 
 === layout: subsection
@@ -185,7 +185,7 @@
 
 === layout: two-panels
 
-# 16. From Bacterial Defense To Editing Tool
+# 16. From Defense to Editing
 
 @left
 
@@ -195,7 +195,7 @@
 
 @right
 
-![Legacy bacterial-defense CRISPR diagram](assets/set5_genome_editing/crispr_bacterial_defense_legacy.png)
+![bacterial-defense CRISPR diagram](assets/set5_genome_editing/crispr_bacterial_defense_legacy.png)
 
 === layout: two-panels
 
@@ -209,7 +209,7 @@
 
 @right
 
-![Annual CRISPR guide illustration](assets/set5_genome_editing/crispr_guide_2025.jpg)
+![Guide RNA and Cas9 targeting a DNA sequence](assets/set5_instructor/crispr_cas9_targeting.png)
 
 === layout: two-panels
 
@@ -223,7 +223,7 @@
 
 @right
 
-![Annual CRISPR mechanism illustration](assets/set5_genome_editing/crispr_mechanism_2025.png)
+![CRISPR mechanism illustration](assets/set5_genome_editing/crispr_mechanism_2025.png)
 
 === layout: one-panel
 
@@ -247,7 +247,7 @@
 
 @right
 
-![Legacy Nobel 2020 figure](assets/set5_genome_editing/nobel_2020_legacy.png)
+![Nobel 2020 figure](assets/set5_genome_editing/nobel_2020_legacy.png)
 
 @citation
 
@@ -283,9 +283,9 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @body
 
-- **DNA:** cells make the editor; expression may persist, so packaging and duration matter.
-- **mRNA:** cells make editor protein for a limited time; lipid particles can carry RNA to some tissues.
-- **RNP:** Cas protein plus guide acts directly and can be transient; useful for cells edited outside the body.
+- *DNA:* cells make the editor; expression may persist, so packaging and duration matter.
+- *mRNA:* cells make editor protein for a limited time; lipid particles can carry RNA to some tissues.
+- *RNP:* Cas protein plus guide acts directly and can be transient; useful for cells edited outside the body.
 
 === layout: one-panel
 
@@ -323,7 +323,7 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @right
 
-![Annual ex vivo workflow lead](assets/set5_genome_editing/ex_vivo_2025.jpg)
+![ex vivo workflow lead](assets/set5_genome_editing/ex_vivo_2025.jpg)
 
 === layout: two-panels
 
@@ -337,7 +337,7 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @right
 
-![Annual cell-processing visual](assets/set5_genome_editing/ex_vivo_2025.jpg)
+![cell-processing visual](assets/set5_genome_editing/ex_vivo_2025.jpg)
 
 === layout: two-panels
 
@@ -351,7 +351,7 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @right
 
-![Annual in vivo delivery visual](assets/set5_genome_editing/in_vivo_2025.jpg)
+![in vivo delivery visual](assets/set5_genome_editing/in_vivo_2025.jpg)
 
 === layout: one-panel
 
@@ -359,8 +359,8 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @body
 
-- **Ex vivo:** characterize the cell product before dosing; collection, conditioning, and engraftment add their own risks.
-- **In vivo:** may reach inaccessible cells, but target-cell access and whole-body distribution become central questions.
+- *Ex vivo:* characterize the cell product before dosing; collection, conditioning, and engraftment add their own risks.
+- *In vivo:* may reach inaccessible cells, but target-cell access and whole-body distribution become central questions.
 - A molecular edit is not enough: durable cell function and clinical benefit must be measured.
 
 === layout: subsection
@@ -383,13 +383,13 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @body
 
-- An **off-target edit** is a DNA change at an unintended site.
-- An intended **on-target** edit can also have unintended biological consequences.
+- An *off-target edit* is a DNA change at an unintended site.
+- An intended *on-target* edit can also have unintended biological consequences.
 - A perfectly targeted disruption can still harm a cell if the target has an essential role or the repair outcome is unexpected.
 
 === layout: one-panel
 
-# 19. Find Changes Before Interpreting Them
+# 19. Find and Interpret Changes
 
 @body
 
@@ -482,7 +482,7 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @right
 
-![Annual zygote teaching visual](assets/set5_genome_editing/zygote_2025.png)
+![zygote teaching visual](assets/set5_genome_editing/zygote_2025.png)
 
 === layout: two-panels
 
@@ -496,7 +496,7 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @right
 
-![Annual zygote-injection visual](assets/set5_genome_editing/zygote_injection_2025.png)
+![zygote-injection visual](assets/set5_genome_editing/zygote_injection_2025.png)
 
 === layout: one-panel
 
@@ -552,9 +552,9 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 @body
 
-- **Liver:** disease-protein concentration plus liver safety measurements.
-- **Eye:** imaging and functional vision tests alongside local safety examinations.
-- **Blood cells:** edit frequency, cell counts, protein measurements, and disease symptoms.
+- *Liver:* disease-protein concentration plus liver safety measurements.
+- *Eye:* imaging and functional vision tests alongside local safety examinations.
+- *Blood cells:* edit frequency, cell counts, protein measurements, and disease symptoms.
 - The endpoint must make biological sense for the tissue.
 
 === layout: one-panel
@@ -603,12 +603,12 @@ Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
 
 === layout: one-panel
 
-# 23. Base Versus Prime: Choose The Exact Edit
+# 23. Base or Prime Editing?
 
 @body
 
-- **Base editing:** efficient for compatible single-letter conversions; constrained by chemistry and window.
-- **Prime editing:** potentially more versatile for specified small changes; design, delivery, and efficiency remain central constraints.
+- *Base editing:* efficient for compatible single-letter conversions; constrained by chemistry and window.
+- *Prime editing:* potentially more versatile for specified small changes; design, delivery, and efficiency remain central constraints.
 - Both need target sequencing, byproduct measurement, off-target assessment, and functional readout. Neither is a "fix any mutation" switch.
 
 === layout: subsection

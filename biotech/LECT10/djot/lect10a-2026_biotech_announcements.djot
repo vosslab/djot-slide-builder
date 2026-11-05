@@ -18,7 +18,6 @@ color-theme: biotechnology
 - From Individual Projects to Group Companies
 - Group Project Guidelines and Timeline
 - Set #5: Medicinal Biotechnology
-- Closing Remarks: Veridian Dynamics #9, Machines
 
 === layout: one-panel
 
@@ -73,13 +72,13 @@ Make Sure Dr. Voss Is Recording
 
 @image
 
-![StVC 38: Markdown to Tutorial](assets/stump_the_vibe_coder/udfGzdb9F1I.jpg)
+![Stump the Vibe Coder&#44; Episode 37](assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
 
 @caption
 
-Stump the Vibe Coder #38: Markdown to Tutorial &#8212; Less Formatting\
-Watch the Video: https://www.youtube.com/watch?v=udfGzdb9F1I\
-Explore the Tool: https://github.com/vosslab/markdown-to-tutorial
+Stump the Vibe Coder &#35;37\
+Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
+Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === include: repo:biotech/evergreen/course_information.djot
 
@@ -132,6 +131,25 @@ hidden: true
 === layout: subsection
 
 # Grading and Assessment
+
+=== layout: one-panel
+
+# Course Point Plan
+
+@body
+
+| Component | Points |
+| --- | --- |
+| Individual company project | 88 |
+| Group company project | 91 |
+| In-class discussion | 100 |
+| Talking-point assignments | 72 |
+
+Blackboard is the authoritative record for your scores.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
 === layout: one-panel
 
@@ -248,6 +266,18 @@ hidden: true
 - https://roosevelt.campuslabs.com/eval-home/
 - Watch for the actual evaluation window and deadline.
 
+=== layout: one-panel
+hidden: true
+
+# Evaluations and Business-Plan Submission
+
+@body
+
+- I link class evaluation completion to extra time for business-plan submission.
+- Evaluation completion can add up to five more days.
+- I can see only total completion, not individual students' responses.
+- Watch for the confirmed evaluation window and any announced adjusted deadline.
+
 === layout: two-panels
 
 # Veridian Dynamics
@@ -258,9 +288,13 @@ hidden: true
 
 @right
 
-- Video #9
-- Machines
-- Man and machines: best friends forever.
+## #9: Machines
+
+[*Man and Machines.*]{color=red}\
+[*Best Friends Forever.*]{color=red}
+
+"Something strong and,\
+[*we hope*]{color=red}, loving."
 
 === layout: theend
 

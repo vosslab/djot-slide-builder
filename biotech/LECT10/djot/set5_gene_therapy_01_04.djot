@@ -153,11 +153,11 @@ An intravenous dose can reach many tissues. The vector, particle, and route deci
 
 @body
 
-- **Identify and characterize:** Which gene, cell type, and disease mechanism are supported by evidence?
-- **Clone the payload:** Obtain a functional sequence and confirm its identity.
-- **Choose a vector:** What fits, reaches the target, and has an acceptable safety profile?
-- **Choose delivery:** Ex vivo or in vivo? Local or systemic?
-- **Confirm expression:** DNA presence is not proof of the right RNA, protein, dose, or effect.
+- [*Identify and characterize:*]{color=red} Which gene, cell type, and disease mechanism are supported by evidence?
+- [*Clone the payload:*]{color=red} Obtain a functional sequence and confirm its identity.
+- [*Choose a vector:*]{color=red} What fits, reaches the target, and has an acceptable safety profile?
+- [*Choose delivery:*]{color=red} Ex vivo or in vivo? Local or systemic?
+- [*Confirm expression:*]{color=red} DNA presence is not proof of the right RNA, protein, dose, or effect.
 
 === layout: two-panels
 
@@ -239,7 +239,7 @@ NHGRI, 1995 trial report: https://www.genome.gov/10000521/1995-release-first-hum
 
 @left
 
-![Legacy adenovirus-vector diagram](assets/set5_gene_therapy/adenovirus_vector_legacy.png)
+![adenovirus-vector diagram](assets/set5_gene_therapy/adenovirus_vector_legacy.png)
 
 @right
 
@@ -260,15 +260,15 @@ Topic 4: Adenovirus Vector Design
 
 === layout: two-panels
 
-# 4. Strong Delivery, Strong Immune Question
+# 4. Strong Delivery and Immunity
 
 @left
 
-![Legacy adenovirus-entry figure](assets/set5_gene_therapy/adenovirus_entry_legacy.jpg)
+![adenovirus-entry figure](assets/set5_gene_therapy/adenovirus_entry_legacy.jpg)
 
 @right
 
-![Legacy adenovirus-expression figure](assets/set5_gene_therapy/adenovirus_expression_legacy.jpg)
+![adenovirus-expression figure](assets/set5_gene_therapy/adenovirus_expression_legacy.jpg)
 
 === layout: big-image
 
@@ -296,7 +296,7 @@ Topic 4: Entering the Cell
 
 @left
 
-![Legacy adenovirus-packaging figure](assets/set5_gene_therapy/adenovirus_packaging_legacy.jpg)
+![adenovirus-packaging figure](assets/set5_gene_therapy/adenovirus_packaging_legacy.jpg)
 
 @right
 

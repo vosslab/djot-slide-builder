@@ -20,6 +20,8 @@ own `evergreen/` folder; single-lecture content and dated snapshots stay with th
   advising reminder, with Registrar and Course Finder links, an upcoming-course summary,
   and individual slides for the spring biochemistry lecture/lab, tentative BIOL 301 teaching
   assignment, and summer film course.
+  Keep their course content, activities, and learning format alongside meeting details; see
+  [UPCOMING_COURSES_SOURCES.md](UPCOMING_COURSES_SOURCES.md) for source correspondence.
   Show roughly October 15 through
   December 1; refresh the spring year each fall.
 

@@ -26,7 +26,7 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 - [Spring 2027]{color=blue}
   - BCHM 355/455: Biochemistry Lecture
   - BCHM 356/456: Biochemistry Lab
-  - BIOL 301: [Dr. Voss teaching assignment tentative]{color=red}
+  - BIOL 301: Cellular and Molecular Biology ([teaching tentative]{color=red})
 - [Summer 2027]{color=purple}
   - BIOL 383/483: Biology and Ethics in Film
 
@@ -39,6 +39,10 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 - BCHM 355/455, [Spring 2027]{color=blue}
 - Thursday afternoons, 1:30-4:30 p.m.
 - Face-to-face, Schaumburg
+- We go into great detail on protein structure, enzyme function, and other macromolecules.
+- Protein purification, separation methods, and enzyme kinetics.
+- Protein-structure assignments: make images in UCSF Chimera and explain what they show.
+- Connect a molecule's structure with what it does.
 
 === layout: one-panel
 
@@ -49,15 +53,23 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 - BCHM 356/456, [Spring 2027]{color=blue}
 - Face-to-face, Schaumburg
 - Less structured and more independent study-like
+- Enzyme assays and kinetics: measure reaction rates and interpret the data.
+- Isolation and analysis of biological macromolecules.
+- Explore protein sequence, structure, and folding using molecular software and databases.
+- Experimental design, data collection, graphs, and interpretation are part of the lab work.
 
 === layout: one-panel
 
-# BIOL 301: Tentative Spring Course
+# Cellular and Molecular Biology
 
 @body
 
-- [Spring 2027]{color=blue}
-- I will probably teach BIOL 301 as my third spring course.
+- BIOL 301, [Spring 2027]{color=blue}
+- The chemistry of life: biological molecules and how they work in cells.
+- Cell structure, membranes, transport, and communication.
+- Cellular energy: respiration and photosynthesis.
+- DNA, gene expression, and regulation.
+- The course combines lecture, laboratory, and discussion.
 - [My teaching assignment is not confirmed yet.]{color=red}
 
 === layout: one-panel
@@ -68,4 +80,7 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 
 - BIOL 383/483, [Summer 2027]{color=purple}
 - Tuesday/Thursday evenings, 6-9 p.m., over Zoom
+- Watch a feature film, then discuss its biology, science, and ethical questions.
+- Weekly journal prompts ask you to make a case, include your opinions, and think critically.
 - Most of the grade is a weekly writing prompt; getting it done is key.
+- Give quick post-film "hot takes" and make a group movie-review podcast.

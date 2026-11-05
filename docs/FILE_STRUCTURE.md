@@ -83,6 +83,8 @@ Brewfile             declared macOS command-line and desktop dependencies
 
 - [INSTALL.md](INSTALL.md) states platform requirements and installation commands.
 - [USAGE.md](USAGE.md) covers build, import, lint, and authoring workflows.
+- [TALKING_POINT_DECK_RECIPE.md](TALKING_POINT_DECK_RECIPE.md) covers recurring annual-source
+  Biotechnology study-deck merges, inputs, organization, assets, tools, and review.
 - [PIPELINE.md](PIPELINE.md) is the detailed conversion flow and component-ownership reference.
 - [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) records settled architecture choices.
 - [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) records durable instructor guidance.

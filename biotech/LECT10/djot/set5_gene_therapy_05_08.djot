@@ -58,7 +58,7 @@ Systemic exposure can make the target reachable, but it also makes dose, antibod
 
 === layout: one-panel
 
-# 5. The Practical Limit Is Not Only DNA Capacity
+# 5. AAV: Payload and Immunity
 
 @body
 
@@ -87,7 +87,7 @@ Systemic exposure can make the target reachable, but it also makes dose, antibod
 
 @left
 
-![Legacy HIV-vector teaching figure](assets/set5_gene_therapy/hiv_vector_legacy.png)
+![HIV-vector teaching figure](assets/set5_gene_therapy/hiv_vector_legacy.png)
 
 @right
 
@@ -101,7 +101,7 @@ Systemic exposure can make the target reachable, but it also makes dose, antibod
 
 @left
 
-![Legacy lentiviral-delivery figure](assets/set5_gene_therapy/lentiviral_delivery_legacy.png)
+![lentiviral-delivery figure](assets/set5_gene_therapy/lentiviral_delivery_legacy.png)
 
 @right
 
@@ -112,7 +112,7 @@ Systemic exposure can make the target reachable, but it also makes dose, antibod
 
 === layout: one-panel
 
-# 6. Integration Is the Central Safety Question
+# 6. Integration and Safety
 
 @body
 
@@ -141,7 +141,7 @@ Systemic exposure can make the target reachable, but it also makes dose, antibod
 
 @left
 
-![Legacy liposome-structure figure](assets/set5_gene_therapy/liposome_structure_legacy.png)
+![liposome-structure figure](assets/set5_gene_therapy/liposome_structure_legacy.png)
 
 @right
 
@@ -165,7 +165,7 @@ Topic 7: Liposomes and Their Cargo
 
 @left
 
-![Legacy liposome-entry figure](assets/set5_gene_therapy/liposome_entry_legacy.jpg)
+![liposome-entry figure](assets/set5_gene_therapy/liposome_entry_legacy.jpg)
 
 @right
 
@@ -190,11 +190,11 @@ Topic 7: From Uptake to Delivery
 
 @left
 
-![Legacy nonviral-therapy figure](assets/set5_gene_therapy/liposome_therapy_legacy.png)
+![nonviral-therapy figure](assets/set5_gene_therapy/liposome_therapy_legacy.png)
 
 @right
 
-![Legacy nonviral-comparison figure](assets/set5_gene_therapy/nonviral_delivery_legacy.png)
+![nonviral-comparison figure](assets/set5_gene_therapy/nonviral_delivery_legacy.png)
 
 === layout: big-image
 
@@ -235,7 +235,7 @@ Topic 7: Carriers and Cell Entry
 
 === layout: one-panel
 
-# 8. Treat the Message Without Rewriting DNA
+# 8. Treating the RNA Message
 
 @body
 
@@ -293,7 +293,7 @@ Check the tissues actually exposed, including liver tests or injection-site effe
 
 === layout: one-panel
 
-# 8. Choose the Measurement Before the Claim
+# 8. Measure Before Claiming
 
 @body
 

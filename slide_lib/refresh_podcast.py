@@ -30,8 +30,14 @@ NAMESPACES = {"atom": "http://www.w3.org/2005/Atom",
 def download(url: str, limit: int) -> bytes:
 	"""Read a bounded public YouTube resource with a network timeout."""
 	parsed = urllib.parse.urlsplit(url)
+<<<<<<< Updated upstream
 	if parsed.scheme != "https" or parsed.hostname != "www.youtube.com":
 		raise ValueError(f"Expected a YouTube HTTPS URL: {url}")
+=======
+	# ASVS 13.2.4: permit only the public feed and thumbnail service hosts.
+	if parsed.scheme != "https" or parsed.hostname not in {"www.youtube.com", "i.ytimg.com"}:
+		raise ValueError(f"Expected an allowed YouTube HTTPS URL: {url}")
+>>>>>>> Stashed changes
 	time.sleep(random.random())
 	request = urllib.request.Request(url, headers={"User-Agent": "djot-slide-builder/1.0"})
 	with urllib.request.urlopen(request, timeout=30) as response:  # nosec B310
@@ -43,12 +49,14 @@ def download(url: str, limit: int) -> bytes:
 
 #============================================
 def latest_episode(data: bytes, on_date: datetime.date | None = None) -> dict[str, str]:
-	"""Select the most recently published entry in YouTube's recent playlist feed."""
+	"""Select the most recently published regular episode in the recent playlist feed."""
 	parser = lxml.etree.XMLParser(resolve_entities=False, load_dtd=False, no_network=True)
 	root = lxml.etree.fromstring(data, parser=parser)
 	if root.getroottree().docinfo.doctype:
 		raise ValueError("Playlist feed must not contain a DTD")
 	entries = root.findall("atom:entry", NAMESPACES)
+	entries = [entry for entry in entries if not re.search(r"\bspecial\b",
+		entry.findtext("atom:title", namespaces=NAMESPACES) or "", re.IGNORECASE)]
 	if on_date is not None:
 		entries = [entry for entry in entries if datetime.datetime.fromisoformat(
 			entry.findtext("atom:published", namespaces=NAMESPACES)).astimezone(
@@ -108,7 +116,8 @@ def djot_text(text: str) -> str:
 def podcast_slide(episode: dict[str, str]) -> str:
 	"""Keep the episode title and visible clickable URL editable beneath its thumbnail."""
 	title = djot_text(episode["title"])
-	caption = re.sub(r"^StVC\s+(\d+):", r"Stump the Vibe Coder #\1:",
+	caption = re.sub(r"^(?:StVC\s+|Stump the Vibe Coder,\s*Episode\s+)(\d+)",
+		r"Stump the Vibe Coder #\1",
 		episode["title"].split(" | Stump the Vibe Coder")[0])
 	caption = djot_text(caption)
 	video_id = episode["id"]

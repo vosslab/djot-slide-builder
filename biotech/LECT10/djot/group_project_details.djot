@@ -1,3 +1,5 @@
+color-theme: biotechnology
+
 === layout: section
 
 # Business Plan Reference
@@ -17,7 +19,7 @@
 | Management team | 5% |
 | Investment summary | 5% |
 | Overall style | 20% |
-| **Total** | **100%** |
+| [*Total*]{color=#FFFFFF} | [*100%*]{color=#FFFFFF} |
 
 === layout: section
 

@@ -1,7 +1,56 @@
 ## 2026-11-05
 
+<<<<<<< Updated upstream
 ### Fixes and Maintenance
 
+=======
+### Additions and New Features
+
+- Add `docs/TALKING_POINT_DECK_RECIPE.md` for recurring Biotechnology talking-point builds:
+  input authority and inventory, annual-source merging, topic maps, cohesive chapter files,
+  local copyrighted assets, scientific verification, supported tools, rendered review, and handoff.
+  Link it from usage, the conversion checklist, and the documentation map; restore the supported
+  image-area audit instructions and replace the checklist's obsolete podcast launcher command.
+  Verify 1,010 focused documentation checks, direct recipe link/ASCII/size checks, and shell
+  syntax for all nine command examples; independent documentation review finds no material issues.
+
+### Fixes and Maintenance
+
+- Restore substance to the shared individual upcoming-course pages: biochemistry mechanisms
+  and molecular-visualization assignments, experimental lab work and analysis, BIOL 301 topics
+  and lecture/lab/discussion format, and the film course's screenings, discussion, writing,
+  hot takes, and podcast. Keep current logistics and the tentative BIOL 301 teaching assignment.
+  Record instructor/catalog sources and preserve descriptions during future announcement updates.
+  Rebuild Genetics 09A/10A and Biotechnology 10A; inspect all fifteen affected summary/detail
+  pages and reconcile source/ODP/PDF visibility counts. Strict native lint and 1,184 checks pass.
+
+- Skip marked StVC special episodes before selecting the latest regular publication; replace
+  Lecture 10A's #38 special with #37 and the playable Bad Cell Day link. Permit the official
+  thumbnail CDN through the existing HTTPS host restriction, normalize generic episode titles,
+  and cover regular-episode selection and thumbnail-origin validation with focused regressions.
+  Rebuild ODP/PDF, inspect the episode slide, verify the game destination responds, and pass
+  1,227 focused checks.
+
+- Remove Veridian Dynamics from Lecture 10A's agenda: it closes announcements, not the lecture.
+  Use the newly available #9 Machines transcript to give the logo slide its characteristic
+  tagline and "we hope" punchline; document transcript use for future announcement updates.
+  Rebuild editable ODP/PDF, inspect both changed pages, and verify 899 focused checks and native lint.
+
+- Build November 5 Biotechnology Lecture 10 as canonical Djot, editable ODP, and PDF: 32 visible
+  announcement pages, 23 group-guidance pages plus 16 hidden rubric/reference pages, and 235 science
+  pages. Follow the successful Set #4 merge across the six annual student sources and expanded
+  instructor ODP, with the instructor's exact 37-topic 2026 list controlling chapter/topic order.
+- Update the group transition, current milestone dates and 91-point breakdown; retain detailed
+  presentation/business-plan requirements and instructor voice. Confirm Veridian #9, Machines,
+  from the local video library. Refresh weather/podcast material and verify registration dates.
+- Review rendered pages and source correspondence: enlarge source diagrams, restore omitted
+  material, repair figure identities and Djot emphasis, remove student-page screenshots and unrelated
+  stock images, verify scientific citations, and retain copyrighted media as ignored local assets.
+  Add the topic/source guide, asset provenance, conversion checklist, and validation limitations.
+  Verify 1,182 focused checks and source/ODP/PDF visibility counts; review the rendered decks
+  and correct total-row contrast in both group-project tables.
+
+>>>>>>> Stashed changes
 - Fix ASCII compliance in the 2025/2026 Biotechnology Lecture 10 talking points: use apostrophes
   for nucleotide primes, spell out beta, and remove decorative emoji while preserving heading text.
 

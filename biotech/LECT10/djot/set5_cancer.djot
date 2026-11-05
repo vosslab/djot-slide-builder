@@ -18,11 +18,11 @@
 
 @right
 
-![TME cell and matrix components from a 2025 course source](assets/set5_cancer/tme_components_2025.png)
+![TME cell and matrix components](assets/set5_cancer/tme_components_2025.png)
 
 === layout: two-panels
 
-# 30. A Changing Neighborhood Changes the Experiment
+# 30. A Changing Tumor Neighborhood
 
 @left
 
@@ -32,7 +32,7 @@
 
 @right
 
-**Mechanistic prediction**
+*Mechanistic prediction*
 
 If a treatment needs T cells to enter a tumor, then a dense matrix, abnormal vessels, or suppressive cells can be as important as whether the cancer cell has the target molecule.
 
@@ -42,7 +42,7 @@ If a treatment needs T cells to enter a tumor, then a dense matrix, abnormal ves
 
 @left
 
-![One annual example of TME-mediated immune evasion](assets/set5_cancer/tme_immune_evasion_2025.png)
+![TME-mediated immune evasion](assets/set5_cancer/tme_immune_evasion_2025.png)
 
 @right
 
@@ -52,13 +52,13 @@ If a treatment needs T cells to enter a tumor, then a dense matrix, abnormal ves
 
 === layout: one-panel
 
-# 30. From Tissue Observation to Cautious Claim
+# 30. From Tissue to Evidence
 
 @body
 
 - A biomarker is useful only when the measurement, patient group, and decision are specified. A PD-L1 result is not a universal prediction of benefit.
 - Checkpoint blockade works by releasing an inhibitory signal on T cells; it does not manufacture a tumor-specific immune response from nothing.
-- Ask: **What barrier is visible? Which intervention is supposed to change it? What result would count as evidence?**
+- Ask: *What barrier is visible? Which intervention is supposed to change it? What result would count as evidence?*
 
 @citation
 
@@ -80,11 +80,11 @@ NCI, Tumor Microenvironment: https://www.cancer.gov/publications/dictionaries/ca
 
 @right
 
-![CAR-T recognition and killing mechanism from a 2025 course source](assets/set5_cancer/car_t_mechanism_2025.png)
+![CAR antigen-binding, membrane, and signaling domains](assets/set5_cancer/car_receptor_2025.png)
 
 === layout: two-panels
 
-# 31. Manufacturing Is Part of the Treatment
+# 31. Manufacturing Is Part of Therapy
 
 @left
 
@@ -102,18 +102,20 @@ NCI, Tumor Microenvironment: https://www.cancer.gov/publications/dictionaries/ca
 
 === layout: two-panels
 
-# 31. CAR-T and CAR-NK: Same Design, Different Cells
+# 31. CAR-T and CAR-NK Compared
 
 @left
 
-![CAR-NK example from a 2025 course source](assets/set5_cancer/car_nk_2025.png)
+![CAR prototype with a T-cell activation domain](assets/set5_cancer/car_receptor_2025.png)
 
 @right
 
 | Feature | CAR-T | CAR-NK |
 | --- | --- | --- |
-| Starting effector | T cell | natural killer cell |
-| Recognition added | CAR | CAR |
+| Effector | T cell | NK cell |
+| Added receptor | CAR | CAR |
+
+The pictured receptor has a T-cell activation domain; CAR-NK constructs use product-specific signaling designs.
 
 === layout: one-panel
 
@@ -145,7 +147,7 @@ NCI, CAR T-Cell Therapy: https://www.cancer.gov/about-cancer/treatment/research/
 
 @right
 
-![Liquid-biopsy concept from a 2025 course source](assets/set5_cancer/liquid_biopsy_2025.png)
+![Sampling tumor-derived material in blood](assets/set5_cancer/liquid_biopsy_workflow_crop.png)
 
 === layout: two-panels
 
@@ -153,7 +155,12 @@ NCI, CAR T-Cell Therapy: https://www.cancer.gov/about-cancer/treatment/research/
 
 @left
 
-![Minimal-residual-disease example from a 2025 course source](assets/set5_cancer/mrd_2025.png)
+## Follow a Trackable Signal
+
+1. Identify a tumor-associated marker.
+2. Sample at planned time points.
+3. Compare the signal with the assay's detection limit.
+4. Interpret the result with the clinical context.
 
 @right
 
@@ -163,11 +170,11 @@ NCI, CAR T-Cell Therapy: https://www.cancer.gov/about-cancer/treatment/research/
 
 === layout: two-panels
 
-# 32. Signal, Noise, and the Follow-Up Question
+# 32. Signal, Noise, and Follow-Up
 
 @left
 
-**Possible signal**
+*Possible signal*
 
 - Tumor-specific variant falls after therapy.
 - A targetable alteration is found.
@@ -175,7 +182,7 @@ NCI, CAR T-Cell Therapy: https://www.cancer.gov/about-cancer/treatment/research/
 
 @right
 
-**Possible misleading result**
+*Possible misleading result*
 
 - Too little DNA was shed into blood.
 - A single time point misses changing disease.
@@ -213,7 +220,7 @@ NCI Dictionary, Liquid Biopsy: https://www.cancer.gov/publications/dictionaries/
 
 @right
 
-**Three design families**
+*Three design families*
 
 1. Engineer immune cells to recognize a tumor marker.
 2. Deliver a toxic or pro-apoptotic function preferentially to tumor cells.
@@ -221,11 +228,13 @@ NCI Dictionary, Liquid Biopsy: https://www.cancer.gov/publications/dictionaries/
 
 === layout: two-panels
 
-# 33. Suicide-Gene Therapy: Enzyme Then Prodrug
+# 33. Enzyme, Prodrug, Cell Death
 
 @left
 
-![Suicide-gene / prodrug concept from a 2025 course source](assets/set5_cancer/suicide_gene_2025.png)
+![Engineered cell-killing gene](assets/set5_cancer/suicide_gene_2025.png)
+
+This simplified diagram shows cell killing. The enzyme/prodrug route needs the additional drug-conversion step.
 
 @right
 
@@ -275,8 +284,8 @@ NCI, Oncolytic Virus Therapy: https://www.cancer.gov/news-events/cancer-currents
 
 @left
 
-- A **mutagen** increases DNA sequence changes.
-- A **carcinogen** increases the chance of cancer.
+- A *mutagen* increases DNA sequence changes.
+- A *carcinogen* increases the chance of cancer.
 - How does the Ames test screen for mutagenic potential? Why is bacterial growth not a complete prediction of human cancer risk?
 
 @right
@@ -290,7 +299,7 @@ NCI, Oncolytic Virus Therapy: https://www.cancer.gov/news-events/cancer-currents
 
 @left
 
-![Legacy Ames comparison: treated and control bacterial growth](assets/set5_cancer/ames_comparison_a_legacy.png)
+![Ames comparison: treated and control bacterial growth](assets/set5_cancer/ames_comparison_a_legacy.png)
 
 @right
 
@@ -302,19 +311,19 @@ It is a screen, not a measure of human exposure, tissue specificity, or cancer i
 
 === layout: two-panels
 
-# 34. Ames Test: What Is Being Counted?
+# 34. Hormone Signaling
 
 @left
 
-![Legacy Ames comparison with a different control layout](assets/set5_cancer/ames_comparison_b_legacy.png)
+![Steroid hormone binds a receptor and changes gene expression](assets/set5_cancer/steroid_receptor_legacy.png)
 
 @right
 
-**Read the plate carefully**
+*A Different Route to Changed Cell Behavior*
 
-- First compare treated and control colony counts.
-- Ask if the chemical killed bacteria, metabolic activation was modeled, and dose response was tested.
-- A mutagenicity result is one risk mechanism, not a human-danger ranking.
+- A hormone binds a receptor and changes transcription and protein production.
+- Promoting cell division is different from directly creating a DNA mutation.
+- A chemical can act through multiple mechanisms. This diagram alone cannot prove that a substance is nonmutagenic.
 
 === layout: one-panel
 
@@ -325,11 +334,11 @@ It is a screen, not a measure of human exposure, tissue specificity, or cancer i
 | Mechanism | Mutagenic? | Cancer support |
 | --- | --- | --- |
 | DNA adduct or strand damage | often | creates heritable sequence changes |
-| Repair error | often | fixes a mutation |
+| Repair error | often | makes a DNA change permanent |
 | Hormonal signaling | not necessarily | increases division of susceptible cells |
 | Chronic inflammation | not necessarily | damage and growth signaling |
 
-Use the wording **hazard** for what an agent can do under some conditions and **risk** for the chance of harm at a particular exposure.
+Use the wording *hazard* for what an agent can do under some conditions and *risk* for the chance of harm at a particular exposure.
 
 === layout: subsection
 
@@ -353,11 +362,11 @@ Use the wording **hazard** for what an agent can do under some conditions and **
 
 === layout: two-panels
 
-# 35. Transformation Assay: Finding an Oncogene
+# 35. Finding an Oncogene
 
 @left
 
-![Legacy transfection assay used to identify transforming DNA](assets/set5_cancer/transfection_assay_legacy.png)
+![transfection assay used to identify transforming DNA](assets/set5_cancer/transfection_assay_legacy.png)
 
 @right
 
@@ -381,7 +390,7 @@ Topic 35: Follow the Transforming DNA
 
 @left
 
-**Oncogene**
+*Oncogene*
 
 - Usually activated or overexpressed.
 - Can send a persistent grow/survive signal.
@@ -389,7 +398,7 @@ Topic 35: Follow the Transforming DNA
 
 @right
 
-**Tumor suppressor or repair gene**
+*Tumor suppressor or repair gene*
 
 - Tumor suppressors help limit growth or promote apoptosis after damage.
 - DNA-repair genes prevent mutations from accumulating.
@@ -397,11 +406,11 @@ Topic 35: Follow the Transforming DNA
 
 === layout: two-panels
 
-# 35. Inherited Susceptibility Is Risk Information
+# 35. Inherited Cancer Risk
 
 @left
 
-![Legacy inherited-cancer-susceptibility visual](assets/set5_cancer/inherited_cancer_legacy.png)
+![inherited-cancer-susceptibility visual](assets/set5_cancer/inherited_cancer_legacy.png)
 
 @right
 
@@ -429,7 +438,7 @@ Topic 35: A Growth Driver in a Longer Story
 
 @left
 
-- What distinguishes an **oncogenic** virus from an **oncolytic** virus?
+- What distinguishes an onco[*genic*]{color=red} virus from an onco[*lytic*]{color=red} virus?
 - How can a virus contribute to cancer: persistent infection, altered host-cell control, chronic inflammation, or immune evasion?
 - How might a virus be selected or engineered to replicate more effectively in tumor cells and kill them?
 
@@ -443,7 +452,7 @@ They have distinct roles: oncogenic viruses can contribute to cancer; oncolytic 
 
 @left
 
-![Legacy oncogenic-versus-oncolytic comparison](assets/set5_cancer/oncogenic_oncolytic_legacy.png)
+![oncogenic-versus-oncolytic comparison](assets/set5_cancer/oncogenic_oncolytic_legacy.png)
 
 @right
 
@@ -466,13 +475,23 @@ Topic 36: Cancer-Causing and Cancer-Killing Viruses
 
 === layout: two-panels
 
-# 36. Designing an Oncolytic Virus
+# 36. Phage Cycles: An Analogy
 
 @left
 
-![A 2025 course source showing one oncolytic-virus delivery concept](assets/set5_cancer/oncolytic_delivery_2025.png)
+![Lytic and lysogenic bacteriophage cycles](assets/set5_cancer/oncolytic_delivery_2025.png)
 
 @right
+
+- A lytic phage makes new particles and lyses its bacterial host.
+- A temperate phage can maintain its genome in the host and later enter the lytic cycle.
+- This is an analogy about persistence and lysis. Mammalian cancer-causing viruses and engineered oncolytic viruses have their own mechanisms.
+
+=== layout: one-panel
+
+# 36. Designing an Oncolytic Virus
+
+@body
 
 - Specificity can use a tumor receptor, tumor-active promoter, deleted viral function, or local delivery.
 - Direct lysis can release tumor antigens and inflammatory signals, potentially recruiting immune responses.
@@ -508,7 +527,7 @@ NCI, Infectious Agents and Cancer: https://www.cancer.gov/about-cancer/causes-pr
 
 @right
 
-**Combination hypothesis**
+*Combination hypothesis*
 
 oncolytic-virus infection
 
@@ -520,11 +539,16 @@ oncolytic-virus infection
 
 === layout: two-panels
 
-# 37. Mechanistic Complementarity Is Not Synergy
+# 37. Complementarity and Synergy
 
 @left
 
-![Oncolytic-virus visual retained from a 2025 course source](assets/set5_cancer/oncovirus_2025.jpg)
+## Different Jobs in a Combination
+
+1. Virus reaches susceptible tumor cells.
+2. Lysis releases tumor material.
+3. Immune cells recognize and respond.
+4. Checkpoint blockade can release inhibitory signals.
 
 @right
 
@@ -556,8 +580,8 @@ oncolytic-virus infection
 
 @body
 
-- **Supported:** in this defined tumor type, schedule, and comparison, the combination changed the measured response or safety outcome.
-- **Not automatically supported:** the combination works for every cancer, the immune mechanism was the only cause, or an early response guarantees longer survival.
+- *Supported:* in this defined tumor type, schedule, and comparison, the combination changed the measured response or safety outcome.
+- *Not automatically supported:* the combination works for every cancer, the immune mechanism was the only cause, or an early response guarantees longer survival.
 - For a later study slide, identify the population, virus, partner treatment, route, endpoint, toxicity plan, and biomarker before interpreting a headline.
 
 @citation

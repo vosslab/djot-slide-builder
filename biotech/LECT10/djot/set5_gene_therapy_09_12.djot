@@ -18,7 +18,7 @@
 
 @left
 
-![Legacy aptamer and ribozyme figure](assets/set5_gene_therapy/aptamer_ribozyme_legacy.png)
+![aptamer and ribozyme figure](assets/set5_gene_therapy/aptamer_ribozyme_legacy.png)
 
 @right
 
@@ -112,7 +112,7 @@ High affinity in a tube is not proof of stability, entry, or action in a patient
 
 @left
 
-![Legacy cystic-fibrosis airway figure](assets/set5_gene_therapy/cf_airway_legacy.jpg)
+![cystic-fibrosis airway figure](assets/set5_gene_therapy/cf_airway_legacy.jpg)
 
 @right
 
@@ -126,13 +126,13 @@ High affinity in a tube is not proof of stability, entry, or action in a patient
 
 @left
 
-![Legacy CF gene-therapy figure](assets/set5_gene_therapy/cf_gene_therapy_legacy.png)
+![CF gene-therapy figure](assets/set5_gene_therapy/cf_gene_therapy_legacy.png)
 
 @right
 
-- **Gene addition:** provide a functional CFTR instruction.
-- **Gene correction:** change a disease-causing sequence in target cells.
-- **RNA replacement or modulation:** transiently supply or alter the message.
+- *Gene addition:* provide a functional CFTR instruction.
+- *Gene correction:* change a disease-causing sequence in target cells.
+- *RNA replacement or modulation:* transiently supply or alter the message.
 - Each must be judged by airway delivery, durability, and safety - not by mechanism alone.
 
 === layout: big-image
@@ -151,7 +151,7 @@ Topic 10: The Airway Delivery Problem
 
 @left
 
-![Legacy CF adenovirus figure](assets/set5_gene_therapy/cf_adenovirus_legacy.png)
+![CF adenovirus figure](assets/set5_gene_therapy/cf_adenovirus_legacy.png)
 
 @right
 
@@ -161,7 +161,7 @@ Topic 10: The Airway Delivery Problem
 
 === layout: one-panel
 
-# 10. Choose Endpoints That Match the Biology
+# 10. Choose Relevant Endpoints
 
 @body
 
@@ -314,7 +314,7 @@ Biodistribution measures target and unintended tissue exposure.
 
 === layout: one-panel
 
-# 12. Monitor the Risk That Follows the Platform
+# 12. Platform-Specific Monitoring
 
 @body
 

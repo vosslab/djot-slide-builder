@@ -9,6 +9,10 @@ require separate authorization.
 Any slide splitting requires human approval. Keep existing content slides one-to-one with their
 source slides; authorized opening and closing additions may shift numbering.
 
+For an explicitly authorized annual-source talking-point merge, use
+[TALKING_POINT_DECK_RECIPE.md](TALKING_POINT_DECK_RECIPE.md). Record the merge authorization and
+source/topic correspondence; mark one-to-one conversion items inapplicable with a reason.
+
 Managers must complete this checklist for each conversion and subsequent conversion review.
 Copy it into the lecture's review report. Check successful routine items without extra evidence.
 Record findings and evidence for failures, repairs, unresolved conversions, and significant
@@ -98,10 +102,14 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [ ] Select the week's icebreaker explicitly from `evergreen/icebreakers.yaml` or an instructor selection.
   Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
 - [ ] Preview the StVC refresh with
+<<<<<<< Updated upstream
   `source source_me.sh && python3 launchers/refresh_podcast.py DECK.djot`.
+=======
+  `source source_me.sh && python3 -m slide_lib.refresh_podcast DECK.djot`.
+>>>>>>> Stashed changes
   Inspect the selected episode before applying `--write`.
-- [ ] Confirm the latest published StVC episode available on the lecture date and use it as the
-  default selection. Record the selected episode number; if another episode is more appropriate,
+- [ ] Confirm the latest published regular StVC episode available on the lecture date, excluding
+  specials, and use it as the default. Record its number; if another episode is more appropriate,
   select it and document why.
 - [ ] Verify the saved StVC episode number/title, video URL, thumbnail, and playable game/tool
   URL all refer to the selected episode. Open both links and inspect the downloaded image.

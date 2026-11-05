@@ -1,6 +1,7 @@
 """Protect historical episode selection and repeatable announcement insertion."""
 
 import datetime
+import io
 import pathlib
 
 import pytest
@@ -8,6 +9,39 @@ import pytest
 import slide_lib.refresh_podcast as refresh_podcast
 
 
+<<<<<<< Updated upstream
+=======
+
+
+def test_selection_skips_newer_special_episodes() -> None:
+	"""A special must not replace the latest regular classroom game episode."""
+	feed = b'''<feed xmlns="http://www.w3.org/2005/Atom"
+		xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+		xmlns:media="http://search.yahoo.com/mrss/">
+		<entry><yt:videoId>aaaaaaaaaaa</yt:videoId><title>Stump the Vibe Coder, Episode 37</title>
+		<media:group><media:description>https://vosslab.github.io/game/</media:description></media:group>
+		<published>2026-10-22T14:00:00+00:00</published></entry>
+		<entry><yt:videoId>bbbbbbbbbbb</yt:videoId><title>StVC Special Episode</title>
+		<published>2026-10-23T08:00:00+00:00</published></entry></feed>'''
+	episode = refresh_podcast.latest_episode(feed)
+	assert episode["id"] == "aaaaaaaaaaa"
+	assert "Stump the Vibe Coder &#35;37" in refresh_podcast.podcast_slide(episode)
+	assert refresh_podcast.latest_episode(feed, datetime.date(2026, 11, 5))["id"] == "aaaaaaaaaaa"
+	special_only = feed.replace(b"Stump the Vibe Coder, Episode 37", b"Another SPECIAL")
+	with pytest.raises(ValueError, match="coverage"):
+		refresh_podcast.latest_episode(special_only)
+
+
+def test_download_admits_thumbnails_and_rejects_other_origins(monkeypatch: pytest.MonkeyPatch) -> None:
+	"""The thumbnail CDN must work without opening downloads to arbitrary origins."""
+	monkeypatch.setattr(refresh_podcast.time, "sleep", lambda _seconds: None)
+	monkeypatch.setattr(refresh_podcast.urllib.request, "urlopen",
+		lambda _request, timeout: io.BytesIO(b"image"))
+	assert refresh_podcast.download("https://i.ytimg.com/vi/aaaaaaaaaaa/maxresdefault.jpg", 64) == b"image"
+	for url in ("http://i.ytimg.com/image.jpg", "https://example.com/image.jpg"):
+		with pytest.raises(ValueError, match="HTTPS"):
+			refresh_podcast.download(url, 64)
+>>>>>>> Stashed changes
 
 
 def test_historical_selection_excludes_future_and_requires_feed_coverage() -> None:

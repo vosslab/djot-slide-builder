@@ -25,8 +25,8 @@ color-theme: biotechnology
 
 @left
 
-- **Self-renewal:** a stem cell makes at least one daughter that remains a stem cell.
-- **Differentiation:** it can make more specialized descendants under the right conditions.
+- *Self-renewal:* a stem cell makes at least one daughter that remains a stem cell.
+- *Differentiation:* it can make more specialized descendants under the right conditions.
 - A marker protein alone is not proof. Colony growth, repeated passaging, and a directed differentiation test ask what the cells can do.
 
 @right
@@ -39,10 +39,10 @@ color-theme: biotechnology
 
 @left
 
-- **Totipotent:** embryo plus supporting extraembryonic tissues.
-- **Pluripotent:** many body-cell types from all three germ layers.
-- **Multipotent:** related tissue lineages, such as blood cells.
-- **Oligopotent / unipotent:** a few / one closely related fate.
+- *Totipotent:* embryo plus supporting extraembryonic tissues.
+- *Pluripotent:* many body-cell types from all three germ layers.
+- *Multipotent:* related tissue lineages, such as blood cells.
+- *Oligopotent / unipotent:* a few / one closely related fate.
 
 @right
 
@@ -68,13 +68,13 @@ Topic 25: Historical Classification: Embryonic Stem-Cell Lines Are Pluripotent, 
 
 @left
 
-- **Symmetric self-renewal:** one stem cell makes two stem cells. Useful when a tissue must expand its reserve.
-- **Asymmetric division:** one daughter retains the stem-cell state while the other begins differentiation.
+- *Symmetric self-renewal:* one stem cell makes two stem cells. Useful when a tissue must expand its reserve.
+- *Asymmetric division:* one daughter retains the stem-cell state while the other begins differentiation.
 - The balance controls tissue maintenance. Too little renewal depletes a tissue; too much can expand an abnormal clone.
 
 @right
 
-![Stem-cell classification and examples](assets/set5_stem_cells/stem_cell_annual_2025.png)
+![Symmetric and asymmetric stem-cell division](assets/set5_stem_cells/stem_division_crop.png)
 
 === layout: two-panels
 
@@ -82,9 +82,9 @@ Topic 25: Historical Classification: Embryonic Stem-Cell Lines Are Pluripotent, 
 
 @left
 
-- A **niche** supplies neighboring cells, matrix, nutrients, and signals.
+- A *niche* supplies neighboring cells, matrix, nutrients, and signals.
 - Wnt often supports renewal; Notch can maintain state; BMP effects depend on tissue and context.
-- **Quiescence** is a reversible resting state that protects a long-lived pool.
+- *Quiescence* is a reversible resting state that protects a long-lived pool.
 - Bone marrow, intestinal crypts, and skin show that stem cells do not act alone.
 
 @right
@@ -116,7 +116,7 @@ Takahashi and Yamanaka, 2006: https://doi.org/10.1016/j.cell.2006.07.024
 
 === layout: one-panel
 
-# 26. Questions: Is The Cell Line Still What We Think It Is?
+# 26. Questions: Genome Quality
 
 @body
 
@@ -127,12 +127,12 @@ Takahashi and Yamanaka, 2006: https://doi.org/10.1016/j.cell.2006.07.024
 
 === layout: two-panels
 
-# 26. Reprogramming Does Not Erase Quality Control
+# 26. Reprogramming and Quality
 
 @left
 
 - Reprogramming changes gene activity, not every DNA change.
-- A **karyotype** reveals large chromosome changes.
+- A *karyotype* reveals large chromosome changes.
 - Copy-number assays and sequencing find smaller changes.
 - A rare faster-growing cell can take over a culture.
 
@@ -150,10 +150,10 @@ Takahashi and Yamanaka, 2006: https://doi.org/10.1016/j.cell.2006.07.024
 
 @left
 
-- **Identity:** records and cell-bank traceability.
-- **Genome:** karyotype plus copy-number or sequence assay.
-- **State:** marker pattern and directed differentiation.
-- **Control:** sterility, mycoplasma checks, passage history, early banked clones.
+- *Identity:* records and cell-bank traceability.
+- *Genome:* karyotype plus copy-number or sequence assay.
+- *State:* marker pattern and directed differentiation.
+- *Control:* sterility, mycoplasma checks, passage history, early banked clones.
 
 The result applies to a bank and passage range, not all future cultures.
 
@@ -169,7 +169,7 @@ The result applies to a bank and passage range, not all future cultures.
 
 === layout: two-panels
 
-# 26. Why A Growth Advantage Is A Warning
+# 26. Selection During Culture
 
 @left
 
@@ -184,7 +184,7 @@ The result applies to a bank and passage range, not all future cultures.
 | --- | --- |
 | Faster growth | Intended cell function |
 | Better survival in a dish | Controlled behavior in tissue |
-| A dominant subclone | Genome-quality evidence |
+| A dominant subclone | Genome checks |
 
 @citation
 
@@ -196,7 +196,7 @@ Laurent et al., 2011: https://doi.org/10.1016/j.stem.2010.12.003
 
 === layout: one-panel
 
-# 27. Questions: From Patient Cell To Cell Product
+# 27. Questions: iPSC Products
 
 @body
 
@@ -227,35 +227,27 @@ The iPSC is an expandable starting material. The clinical product is the selecte
 | Safety | Controlled growth and purity |
 | Benefit | Disease-relevant outcome |
 
-=== layout: two-panels
+=== layout: one-panel
 
-# 27. Identity, Function, And Safety Are Different Tests
+# 27. Identity, Function, and Safety
 
-@left
+@body
 
-- **Identity:** morphology and markers support the cell type.
-- **Function:** retinal, heart, or neural cells need relevant assays.
-- **Safety:** look for residual pluripotent cells and excess growth.
-- **Delivery:** cells must survive at the site without harmful immunity.
+- *Identity:* morphology and markers support the cell type.
+- *Function:* retinal, heart, or neural cells need relevant assays.
+- *Safety:* look for residual pluripotent cells and excess growth.
+- *Delivery:* cells must survive at the site without harmful immunity.
 
-@right
-
-![A phenotype must be tied to a specific cell type and assay](assets/set5_stem_cells/stem_cell_properties.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # 27. Autologous Or Allogeneic?
 
-@left
+@body
 
-- **Autologous:** closer genetic match; slow individualized manufacture.
-- **Allogeneic:** standardized batches; HLA matching and rejection can matter.
+- *Autologous:* closer genetic match; slow individualized manufacture.
+- *Allogeneic:* standardized batches; HLA matching and rejection can matter.
 - Neither label proves better clinical performance.
 - The disease, target tissue, manufacturing plan, and outcome decide credibility.
-
-@right
-
-![Stem-cell source and differentiated-cell comparison](assets/set5_stem_cells/stem_cell_properties.png)
 
 === layout: two-panels
 
@@ -286,7 +278,7 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 
 === layout: one-panel
 
-# 28. Questions: Can A Banked Immune Cell Become A Therapy?
+# 28. Questions: Immune-Cell Therapy
 
 @body
 
@@ -297,13 +289,13 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 
 === layout: two-panels
 
-# 28. Different Immune Jobs, Different Assays
+# 28. Match the Cell to the Assay
 
 @left
 
-- **NK cells** can kill stressed or antibody-tagged cells.
-- **T cells** can recognize antigens and can be engineered with a CAR.
-- **Macrophages** engulf material and shape inflammation.
+- *NK cells* can kill stressed or antibody-tagged cells.
+- *T cells* can recognize antigens and can be engineered with a CAR.
+- *Macrophages* engulf material and shape inflammation.
 - Killing, cytokine, and off-target assays answer different questions.
 
 @right
@@ -326,12 +318,12 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 | Cell Product | Example Functional Test |
 | --- | --- |
 | NK cell | Target-cell killing |
-| T cell | Antigen-directed response |
+| T cell | Response to antigen |
 | Macrophage | Phagocytosis |
 
 === layout: two-panels
 
-# 28. A CAR Changes Recognition, Not Every Limitation
+# 28. CARs Redirect Recognition
 
 @left
 
@@ -346,7 +338,7 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 
 === layout: two-panels
 
-# 28. What Would A Convincing Early Study Measure?
+# 28. Early-Study Measurements
 
 @left
 
@@ -365,7 +357,7 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 
 === layout: one-panel
 
-# 29. Questions: What Does SCNT Actually Copy?
+# 29. Questions: What Does SCNT Copy?
 
 @body
 
@@ -393,12 +385,12 @@ The clone receives nuclear DNA from the donor cell, but it does not receive a co
 
 === layout: two-panels
 
-# 29. Dolly: The Result And The Correct Numbers
+# 29. Dolly: Evidence and Efficiency
 
 @left
 
 - Born in 1996; announced with the 1997 paper.
-- First mammal cloned from an **adult somatic cell**, not the first cloned mammal.
+- First mammal cloned from an *adult somatic cell*, not the first cloned mammal.
 - 277 reconstructed embryos produced 29 suitable for transfer; one pregnancy produced Dolly.
 - Egg cytoplasm reprogrammed an adult-cell nucleus.
 
@@ -463,7 +455,7 @@ Topic 29: Following the Nucleus Through SCNT
 
 @right
 
-![Polo horses, an annual-course visual prompt](assets/set5_stem_cells/polo_video_2025.png)
+![Cloned polo horses](assets/set5_stem_cells/polo_video_2025.png)
 
 @citation
 
@@ -471,7 +463,7 @@ Cloning polo horses: https://www.wired.com/story/cloning-came-to-polo-things-got
 
 === layout: two-panels
 
-# 29. Pet Cloning: Genetic Preservation Is Not Identity Preservation
+# 29. Pet Cloning and Individuality
 
 @left
 
@@ -482,7 +474,7 @@ Cloning polo horses: https://www.wired.com/story/cloning-came-to-polo-things-got
 
 @right
 
-![Legacy course image: commercial pet cloning](assets/set5_stem_cells/pet_cloning_legacy.png)
+![commercial pet cloning](assets/set5_stem_cells/pet_cloning_legacy.png)
 
 === layout: one-panel
 

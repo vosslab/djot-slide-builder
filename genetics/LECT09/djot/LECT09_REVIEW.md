@@ -83,6 +83,18 @@ Evaluations remain hidden before THE END. Content, counts, and visibility are un
 Rebuild ODP/PDF, pass strict native lint, and verify exported page order from PDF text in
 `_temp/announcement_order/`. Earlier page numbers below are historical.
 
+## November 5 course descriptions
+
+Restore the shared course pages' substance: biochemistry mechanisms and protein-image assignments,
+lab techniques and experimental analysis, cellular/molecular biology topics and course format,
+and film/discussion/writing/podcast activities. Keep current logistics and the tentative BIOL 301
+assignment. [UPCOMING_COURSES_SOURCES.md](../../../evergreen/UPCOMING_COURSES_SOURCES.md) records
+the instructor and catalog sources.
+
+Rebuilt ODP/PDF; current counts are 55 authored, 16 hidden, and 39 PDF pages. Visually reviewed
+the course summary and individual pages at PDF 34-38. Strict native lint and 1,184 focused checks
+pass. Earlier inventories and counts below are historical.
+
 ## November 3 upcoming courses
 
 Expanded the shared registration group with a spring/summer 2027 summary and individual slides

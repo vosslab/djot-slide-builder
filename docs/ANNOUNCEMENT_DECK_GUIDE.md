@@ -80,8 +80,19 @@ Registration includes the reminder/links, a summary of upcoming teaching, and on
 course. Keep tentative assignments visibly tentative. Evaluation incentives belong to the
 specific course; do not copy Genetics final-exam incentives into Biotechnology.
 
+The individual upcoming-course pages explain both what students will study and how the course
+works. Preserve useful instructor descriptions, activities, and assignments while refreshing
+logistics; a title/time/location list is insufficient. See
+[UPCOMING_COURSES_SOURCES.md](../evergreen/UPCOMING_COURSES_SOURCES.md) for the shared pages' sources.
+
 Finish with THE END. Biotechnology retains its special Veridian Dynamics ending immediately
-before THE END, after general announcements.
+before THE END, after general announcements. This closes the announcements deck, not the whole
+lecture. Leave Veridian Dynamics off Today's Agenda.
+
+Use the selected film's transcript for a short, characteristic tagline or quotation beside the
+existing logo. The instructor's local film library has episode-specific text under
+`MOVIES/biotech_movies/Veridian_Dynamics/transcripts/`. Match the numbered film and title;
+keep transcript/source details in the review report rather than on the slide.
 
 ## Signup and profile deadlines
 
@@ -97,8 +108,9 @@ the graduation notice's first-two-weeks window for these assignments.
 - Update both agendas, assessment colors, due dates, and conditional visibility.
 - Refresh weather on lecture day or the preceding day. Keep original PNGs, full editable
   captions, and a separate dated NWS citation. Builds use saved files and never refresh weather.
-- Select the latest StVC episode available on the lecture date unless the instructor chooses
-  another; verify its thumbnail, title, episode number, video, and game/tool destination.
+- Select the latest regular StVC episode published by the lecture date; skip special episodes
+  such as #38. Unless the instructor selects another eligible episode, use publication time,
+  not episode-number order. Verify its thumbnail, title, video, and game/tool destination.
 - Reuse shared fragments: root `evergreen/` for cross-course groups and the course's own
   `evergreen/` for course-specific material. Keep dated agendas, weather, and episodes weekly.
 - Preserve course-specific material: Biotechnology talking marks/news and Veridian Dynamics;
