@@ -9,8 +9,6 @@ import pytest
 import slide_lib.refresh_podcast as refresh_podcast
 
 
-<<<<<<< Updated upstream
-=======
 
 
 def test_selection_skips_newer_special_episodes() -> None:
@@ -41,7 +39,6 @@ def test_download_admits_thumbnails_and_rejects_other_origins(monkeypatch: pytes
 	for url in ("http://i.ytimg.com/image.jpg", "https://example.com/image.jpg"):
 		with pytest.raises(ValueError, match="HTTPS"):
 			refresh_podcast.download(url, 64)
->>>>>>> Stashed changes
 
 
 def test_historical_selection_excludes_future_and_requires_feed_coverage() -> None:

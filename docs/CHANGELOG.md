@@ -1,9 +1,5 @@
 ## 2026-11-05
 
-<<<<<<< Updated upstream
-### Fixes and Maintenance
-
-=======
 ### Additions and New Features
 
 - Add `docs/TALKING_POINT_DECK_RECIPE.md` for recurring Biotechnology talking-point builds:
@@ -50,7 +46,6 @@
   Verify 1,182 focused checks and source/ODP/PDF visibility counts; review the rendered decks
   and correct total-row contrast in both group-project tables.
 
->>>>>>> Stashed changes
 - Fix ASCII compliance in the 2025/2026 Biotechnology Lecture 10 talking points: use apostrophes
   for nucleotide primes, spell out beta, and remove decorative emoji while preserving heading text.
 

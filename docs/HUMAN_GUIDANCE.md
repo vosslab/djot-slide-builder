@@ -1,14 +1,11 @@
 # Human guidance
 
-<<<<<<< Updated upstream
-=======
 - Keep an extensive, reusable recipe in `docs/` for future talking-point slide builds,
   covering best practices, tools, organization, and the input files.
 
 - Implement queued messages and finish their requests. Do not depend on feedback questions;
   I may never see them. Use the recorded guidance and available evidence to complete the work.
 
->>>>>>> Stashed changes
 - Retain tests enforcing Djot syntax and authoring guidelines even when their exact assertions
   would otherwise look fragile. Tests must not force implementation to stay in monolithic files.
 
@@ -203,12 +200,8 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - Discord signup and Student Profile assignments run until September 21 in fall and February 14
   in spring; hide their assignment reminders afterward.
 - Biotechnology has a special Veridian Dynamics ending: retain it after general announcements
-<<<<<<< Updated upstream
-  and before THE END.
-=======
   and before THE END in the announcements deck. It closes announcements, not the lecture;
   leave Veridian Dynamics off the agenda. Use the local film transcripts to give its slide flair.
->>>>>>> Stashed changes
 - For Fall 2026 Biotechnology Lecture 10, the individual projects are complete. Adapt the
   prior-year group guidelines using the current syllabus schedule.
 - Use the successful Set #4 approach for Set #5: combine the Fall 2021-2026 student material
@@ -475,14 +468,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   activities. Use handout instructions for the current class activity; prior-year Google Slides links may remain visible for students who want to practice outside class.
 
 
-<<<<<<< Updated upstream
-- Include the latest Stump the Vibe Coder podcast episode after the `lect##a-` YouTube slide.
-  Make this a semi-automated process reusable across lectures, with the episode thumbnail, title, and visible link in a `big-image` layout.
-=======
 - Include the latest regular Stump the Vibe Coder podcast episode after the `lect##a-` YouTube slide.
   Make this a semi-automated process reusable across lectures, with the episode thumbnail, title, and visible link in a `big-image` layout.
 - Skip StVC special episodes, including #38, when selecting the announcement slide.
->>>>>>> Stashed changes
 - Every StVC slide must link to both the episode video and the GitHub Pages game or tool
   so students can try it. Use `big-image` with three lines in the caption box: shorter title, `Watch the Video: <URL>`, and `Play the Game: <URL>`. Format titles as `Stump the Vibe Coder #36: Bad Cell Day -- Two Drugs, One Keyboard`
   (with an em dash); retain the episode subtitle and omit the repeated YouTube SEO series suffix. Do not link GitHub repositories. Citations are for a single line.

@@ -102,11 +102,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [ ] Select the week's icebreaker explicitly from `evergreen/icebreakers.yaml` or an instructor selection.
   Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
 - [ ] Preview the StVC refresh with
-<<<<<<< Updated upstream
-  `source source_me.sh && python3 launchers/refresh_podcast.py DECK.djot`.
-=======
   `source source_me.sh && python3 -m slide_lib.refresh_podcast DECK.djot`.
->>>>>>> Stashed changes
   Inspect the selected episode before applying `--write`.
 - [ ] Confirm the latest published regular StVC episode available on the lecture date, excluding
   specials, and use it as the default. Record its number; if another episode is more appropriate,

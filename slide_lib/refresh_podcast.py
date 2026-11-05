@@ -30,14 +30,9 @@ NAMESPACES = {"atom": "http://www.w3.org/2005/Atom",
 def download(url: str, limit: int) -> bytes:
 	"""Read a bounded public YouTube resource with a network timeout."""
 	parsed = urllib.parse.urlsplit(url)
-<<<<<<< Updated upstream
-	if parsed.scheme != "https" or parsed.hostname != "www.youtube.com":
-		raise ValueError(f"Expected a YouTube HTTPS URL: {url}")
-=======
 	# ASVS 13.2.4: permit only the public feed and thumbnail service hosts.
 	if parsed.scheme != "https" or parsed.hostname not in {"www.youtube.com", "i.ytimg.com"}:
 		raise ValueError(f"Expected an allowed YouTube HTTPS URL: {url}")
->>>>>>> Stashed changes
 	time.sleep(random.random())
 	request = urllib.request.Request(url, headers={"User-Agent": "djot-slide-builder/1.0"})
 	with urllib.request.urlopen(request, timeout=30) as response:  # nosec B310
