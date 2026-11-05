@@ -1,0 +1,775 @@
+Set #5: Medicinal BioTech
+Talking Points
+Nov 2, 2023
+
+Message to Students
+Sometime between noon and 3 PM today, we had an incident where all of our slides were inexplicably deleted. It’s important that we respect our shared digital space and the resources we all rely on.
+If these kinds of actions continue, I'll need to restrict editing access to the slides. This means I'll collect email addresses and set up permissions so that only logged-in users can make changes. It's a step I don't want to take, but it may be necessary to keep our materials safe and ensure that they are available to everyone when needed.
+Let's work together to maintain a respectful and productive learning environment.
+
+Talking Points Guide
+
+Slides will be
+locked immediately
+prior to class
+~5:45pm
+
+Talking Point #1: defective genes -- Sonia and Hiba
+Talking Point #2: gene prep -- Sienna and Bhargavi
+Talking Point #3: adenovirus -- Srilatha and Jocelyn
+Talking Point #4: cystic fib. -- Rutvi and Therese
+Talking Point #5: retrovirus -- Freny and Erick
+Talking Point #6: liposomes -- Kamalpreet and Anjali
+Talking Point #7: cancer gene ther. -- Jannela and Serene
+Talking Point #8: aptamer, r-zyme -- Jinal and 
+Talking Point #9: therapy v. editing -- Pegah and Kushil
+Talking Point #10: ZFNs / TALENs -- Justin and Mansi
+Talking Point #11: CRISPR immune -- Jackie and Rudra
+Talking Point #12: CRISPR tech -- Harnish and Dhruvi
+Talking Point #13: CRISPR patents -- Het and Nirali
+Talking Point #14: CRISPR effects -- Steve and Mit
+Talking Point #15: stem cells -- Lakshmidhar and Uzma
+Talking Point #16: animal cloning -- Qazi and Miraj
+Talking Point #17: oncoviruses -- Misbah and Sowmya
+Talking Point #18: oncogenes -- Veronica and Alfredo
+Talking Point #19: muta-/carcinogen -- Bharat and Shubham
+Primary Presenters
+
+Question Asker #1: defective genes -- Kamalpreet and Anjali
+Question Asker #2: gene prep -- Jannela and Serene
+Question Asker #3: adenovirus -- Jinal and 
+Question Asker #4: cystic fib. -- Pegah and Kushil
+Question Asker #5: retrovirus -- Justin and Mansi
+Question Asker #6: liposomes -- Sonia and Hiba
+Question Asker #7: cancer gene ther. -- Sienna and Bhargavi
+Question Asker #8: aptamer, r-zyme -- Srilatha and Jocelyn
+Question Asker #9: therapy v. editing -- Rutvi and Therese
+Question Asker #10: ZFNs / TALENs -- Freny and Erick
+Question Asker #11: CRISPR immune -- Qazi and Miraj
+Question Asker #12: CRISPR tech -- Misbah and Sowmya
+Question Asker #13: CRISPR patents -- Veronica and Alfredo
+Question Asker #14: CRISPR effects -- Bharat and Shubham
+Question Asker #15: stem cells -- Jackie and Rudra
+Question Asker #16: animal cloning -- Harnish and Dhruvi
+Question Asker #17: oncoviruses -- Het and Nirali
+Question Asker #18: oncogenes -- Steve and Mit
+Question Asker #19: muta-/carcinogen -- Lakshmidhar and Uzma
+Helper Question Askers
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Tips for a Good Presentation
+Remember you telling a story. Should have a beginning, a middle, and an end. 
+Respect the time allotted for the sake of your audience. 
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
+Explain at the level of the class. 
+Have a technical term, define it. If you don't quite understand it, no one will. 
+Because we are all novices, you will need to have a long intro. 
+But try to engage the audience. 
+Do not read from your slides; use notecards, if you must.
+No complete sentences on slides, use short phrases, break the content up. 
+Try to have a picture on every slide, helps maintain attention of the audience 
+If you have a movie, talk during the movie, do not use narrator
+Be prepared for questions. 
+Show ENTHUSIASM when you talk and make it exciting! 
+
+Best Advice
+Be Enthusiastic
+Use More Pictures and Diagrams on your Slides
+be a visual storyteller
+Use Less Words on your Slides
+put the words in your notes, not the slide
+Keep Things to the Point
+Be creative with your slide with look and content; go beyond the book
+
+
+Chapter 17
+
+#1 Defective Genes  
+What are common mutations that lead to gene defects?
+Discuss techniques like PCR and sequencing in identifying defective genes.
+Describe how model organisms like zebrafish or mice are used in studying genetic defects. Explain the significance of "knockout" experiments in model organisms.
+How do SNP arrays assist in identifying gene defects? Are there databases or resources that catalogue known defective genes in humans?
+Optional: Can AI or machine learning assist in defective gene identification?
+
+Gene Defects Types
+Hereditary = >gene
+Haploinsufficiency = loss func
+Dominant Mutations = gain func
+Tandem Repeats or Dynamic Mutations = ++codon repeats 
+Genetic Imprinting & Methylation = Methyl++
+Mitochondrial Defects = mom oocyte (egg)
+
+Identifying Gene Defects
+Candidate Cloning = educated guess
+Knockout Mice = inactivate genes 
+Functional Cloning = deduction 
+Positional Cloning = SNPs, RFLPs, VNTRs
+#1 Defective Genes - Sonia  
+Polymerase Chain Reaction
+Hereditary - involve more than one gene ex: down syndrome bc extra copy of chrom 21
+Haplo-insufficiency (loss of function) - one functional copy of gene is insufficient ex: ELN gene maskes elastin. If one copy – narrow aorta and have a congenital aortic stenosis
+Dominant mutations (change or gain of function) - single mutant allele cause significant phenotypic effects. Ex achondroplasia or dwarfism. 
+Tandem Repeats/Dynamic Mutations - reapets of codons are normal (5-30), but beyond threshold can cause disease. Number can expand and vary, hence dynamic mutation ex: Fragile X Syndrome (CGG) carriers up to 200 repeats and recessive up to 1200 repeats. 
+Imprinting -  Due to one copy of gene being methylated and inhibits its gene expression. Ex: Prader Willi Syndrome or Angelman Syndrome  
+Mitochondrial Defects - mtDNA from mom) VS nuclearDNA from dad. Ex: NARP syndrome - Neuropathy, ataxia, retinitis pigmentosa. MtDNA gene mutation → ATP production slowed → muscle weakness, seizures, sensory malfunction. 
+
+Candidate cloning - analyze sx and make informed guess depending on what kinds of proteins involved. Rarely successful, but proteomics research and help from AI is becoming more realistic. 
+Knockout Mice - using model organism mice and artificially inactivate genes (knock out) and than analyze symptoms. 
+Functional Cloning - Take a suspected protein involved in disorder, then amino acid seq determined, then deduce coding sequence of gene. 
+Positional Cloning - When gene product is unknown. Involved gene mapping and linkage studies. Markers used like SNPs, RFLPs, & VNTRs. 
+
+PCR = Can amplify genes or regions of genes, to identify gene defects. 1) DNA Extraction 2) Amplification via thermal cycling 3) Analysis via gel electrophoresis or sequencing machines 
+
+#1 Defective Genes - Hiba  
+Model organism’s Zebrafish & Mice to study genetic defects!
+Share DNA with us!
+Manipulation
+Observation
+Drug screening 
+Why “Knockout”?
+Mimic gene defect
+Determine function
+
+SNP arrays role in gene defects: 
+Cost efficient 
+Mass assessing of genome 
+Resources: 
+OMIM
+Clin Var
+HGMD
+And more!
+Describe how model organisms like zebrafish or mice are used in studying genetic defects. Explain the significance of "knockout" experiments in model organisms.
+How do SNP arrays assist in identifying gene defects? Are there databases or resources that catalogue known defective genes in humans?
+
+
+#2 Gene Preparation for Gene Therapy 
+From the textbook, what are the five things to consider for preparing a gene for gene therapy?
+Discuss the first example of gene therapy involving SCID. Discuss the role of plasmids in gene therapy preparation.
+Explain the significance of gene promoters in gene therapy. How is gene dosage considered when preparing a gene for therapy?
+What regulatory approvals are needed for gene therapy?
+Share an example of an upcoming gene therapy.
+
+#2 Gene Preparation for Gene Therapy - Sienna 
+Identification and characterization of the gene
+Cloning of gene
+Choice of vector 
+Method of delivery 
+Expression of gene
+Sienna
+
+#3 Adenovirus in Gene Therapy 
+What are the key components of adenoviral vectors in gene therapy?
+How is the payload capacity a limitation for adenovirus? How are adenoviral vectors engineered for maximum efficacy?
+Can adenoviruses trigger immune responses?
+Describe how adenoviruses are purified before use.
+What are the storage and handling requirements for adenoviruses?
+Which of the COVID vaccines contained adenovirus? Why was it not as successful as the mRNA vaccines?
+
+#3 Adenovirus in Gene Therapy  (srilatha) 
+Key components:
+Icosahedral protein capsid
+Linear duplex DNA genome
+Inverted terminal repeats
+Therapeutic gene cassette
+Limitation:
+ The payload capacity of adenovirus vector is 8.5kb,where they carry a limited amount of transgene DNA.
+Engineering viral vectors for maximum efficacy:
+Deleting non-essential viral genes
+Using high capacity adenoviral vectors
+Splitting the transgene
+Using helper viruses
+Can trigger both innate and acquired immunity:
+Adenovirus infects a different cell types, including epithelial cells,dendritic cells, and macrophages.upon infection they release its DNA into the cytoplasm of the cell,where it is replicated and transcribed.
+
+
+Adenoviruses in Gene Therapy
+Delete gene for E1A protein
+Cell Culture Harvest
+Cell Lysis 
+Desalting
+-80ºC or liquid nitrogen 
+Avoid freeze-thaw cycles
+Lab setting + PPE + biosafety cabinets
+Oxford-AstraZeneca (Vaxzevria)*
+Janssen COVID-19 Vaccine
+
+Jocelyn
+Joceyln
+
+#4 Gene Therapy for Cystic Fibrosis  
+Describe the Cystic Fibrosis (CF) disorder. 
+What is the defective gene responsible for CF? How does the defective gene affect mucus secretion? Explain how CFTR modulators work in treating CF.
+What vectors are typically used for CF gene therapy?
+Discuss patient responses 30 days after adenovirus gene therapy. Are there any long-term studies on CF gene therapy?
+What are the key challenges in developing a gene therapy cure for CF? What is the current status of CF gene therapy trials?
+
+Gene Therapy for Cystic Fibrosis - Rutvi 
+What is Cystic fibrosis ?
+Genetic disorder 
+Affects respiratory and digestive systems 
+Caused by mutation in gene called CFTR 
+Mucus that is too thick which which blocks airways leading to lung damage
+
+Defective gene responsible : CFTR (Cystic Fibrosis Transmembrane Conductance Regulator gene. 
+
+Vectors used for CF gene therapy : Adeno Associated Virus ( AAV )
+
+CFTR Modulators in treating CF :
+Proteinators 
+Correctors 
+ 
+ 
+
+#4 Gene Therapy for Cystic Fibrosis - Therese
+30 Days Post-AVGT
+“Did not meet primary endpoint of statistically significant improvement in lung function”
+→ 25% of those treated had >10% improvement in forced expiratory volume
+Long Term Studies
+Goal: monitor patients for years to understand SAFETY and EFFICACY of gene therapy for CF
+**As of 2022 studies**
+Key Challenges:
+-Effective delivery systems
+-Immune response
+-Long-term efficacy
+-Variability
+-Clinical trial design and ethical implications
+
+CURRENT STATUS
+
+#5 Retroviruses in Gene Therapy
+How are retroviruses, like HIV, used in gene therapy?
+How do retroviruses integrate their genetic information into the host genome?
+What are the risks of insertional mutagenesis? Describe the concept of a suicide gene in the context of retroviral vectors.
+Explain how HIV was engineered to treat leukemia. Compare the efficiency of retroviruses and adenoviruses: How do retroviruses fare in terms of payload capacity?
+Optional: Are there any commercial products based on retrovirus gene therapy?
+
+#5 Retroviruses in Gene Therapy - Freny
+Used in gene therapy
+Retroviruses are turned into vectors 
+vectors are used to deliver therapeutic genes into target cells, either ex vivo or in vivo 
+integrates the therapeutic gene into the target cell's genome
+
+
+Reverse Transcription: Converts its RNA genome into DNA.
+Formation of Provirus: A double-stranded DNA molecule called the provirus.
+Integration: Integrate into the host cell's genomic DNA.
+Stable Incorporation: Becomes a permanent part of the host genome.
+Long-term Gene Expression: Allows for long-term gene expression 
+Risks of Insertional Mutagenesis:
+Disruption of Host Genes
+Unintended Consequences: 
+
+Suicide Gene in Retroviral Vectors:
+A suicide gene is a safety mechanism 
+The suicide gene encodes a protein 
+
+#5 Retroviruses in Gene Therapy-Erick
+Retrovirus:
+8Kb capacity
+Infects only dividing cells
+Integrating
+Contains envelope
+Adenovirus:
+7.5 Kb capacity
+Infects dividing and non dividing cells
+Non-integrating
+Naked virus (no envelope)
+
+How was leukemia Treated with HIV?
+Transduced T-cells to harness them against leukemic B-cells
+Modified to produce Chimeric antigen receptor (CAR)
+
+#6 Liposomes in Gene Delivery 
+Define what a liposome is in the context of gene delivery.
+How are liposomes made? 
+Discuss the challenges with making liposomes a consistent size.
+Describe how pH-sensitive liposomes work.
+Discuss how liposomes evade immune detection. 
+Compare the efficiency of liposomes with viral methods. 
+What are the payload limitations for liposomes?
+Describe any known adverse reactions to liposome-based gene therapy.
+Optional: What is the role of pegylation in liposome gene therapy?
+
+#6 Liposomes in Gene Delivery - Preet 
+
+#6 Liposomes in Gene Delivery - Anjali 
+Viral methods: Viral vectors, like retroviruses, lentiviruses, adenoviruses, and adeno-associated viruses
+Liposomes are artificial lipid-based vesicles that can encapsulate and deliver various payloads
+Liposome-based gene therapy:  Immune response 
+Toxicity
+Off target effects
+Inflammatory responses
+Allergic reactions
+
+
+
+
+ 
+
+#7 Gene Therapy in Cancer
+Are there any gene therapy approaches for cancer? How does gene therapy for cancer differ from that for inherited diseases like CF?
+How do oncolytic viruses function in gene therapy? What are the biomarkers used to identify cancerous cells vs. normal cells? What is the mechanism of suicide gene therapy?
+What trials or treatments have shown promising results? Are there any FDA-approved gene therapy treatments for cancer?
+Optional: Are nanoparticles being considered for cancer gene therapy?
+
+Therapy for Cancer vs Inherited Disease 
+Suicide Gene Therapy
+ -Targets & Destroys cancer cells via inactive form of chemotherapy
+
+Gene Therapy for CF 
+-Target is to correct or replace the mutated genes 
+
+Oncolytic Viruses
+Gene Therapy
+ -Viruses are engineered to infect and replicate within cancer cells while sparing normal cells.
+
+Biomarkers
+ -Specific proteins that help distinguish cancer cells from normal cells
+          -Ex: EGFR mutations in lung cancer, 
+Gene Therapy in Cancer
+
+Trials & Treatments
+CRISPR-Cas
+Herceptin (FDA approved)
+Jannela
+Are there any gene therapy approaches for cancer? How does gene therapy for cancer differ from that for inherited diseases like CF?
+Suicide gene therapy selectively targets and destroys cancer cells by introducing a therapeutic gene that converts a prodrug into a toxic compound.  It is designed to enhance the precision and specificity of cancer treatment by targeting only the cancer cells that have been genetically modified to express the therapeutic enzyme. Unlike suicide gene therapy, Gene therapy for inherited diseases like cystic fibrosis aims to correct or replace the mutated genes responsible for the condition. The goal is to restore the function of the affected gene or provide a functional copy to address the genetic defect.
+
+How do oncolytic viruses function in gene therapy? What are the biomarkers used to identify cancerous cells vs. normal cells? 
+Oncolytic viruses are specialized gene therapy that infect and replicate within cancer cells while sparing healthy cells. They can also carry genes that induce cancer cell death, enhancing their cancer-targeting ability. Cancer cell biomarkers, such as proteins and genetic mutations like EGFR differentiate cancer cells from normal ones.
+
+What trials or treatments have shown promising results? Are there any FDA-approved gene therapy treatments for cancer?
+CRISPR is a bacterial immune system that remembers past virus infections and protects against reinfection by integrating viral DNA into the bacterial genome. It's been modified into a gene-editing tool, with CRISPR/Cas9 being the most common version. Herceptin is a targeted therapy for HER2-positive breast cancer, blocking the HER2 protein to inhibit cancer cell growth. It's not a gene therapy and is often used alongside other treatments.
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7987258/
+
+Optional: Are nanoparticles being considered for cancer gene therapy?
+Research in this area is ongoing, and various nanoparticle formulations are being tested in preclinical and clinical trials for cancer gene therapy. These nanoparticles have the potential to improve the precision, efficacy, and safety of gene therapy in cancer treatment. However, it's important to note that the field of nanoparticle-based gene therapy is still evolving, and clinical translation requires thorough testing and evaluation for safety and efficacy.
+
+
+
+
+
+Gene Therapy in Cancer - Serene
+ Gene Therapy:
+           Cancer vs Cystic Fibrosis
+
+
+ Oncolytic Viruses
+
+           Suicide Gene Therapy 
+Biomarkers for Cancer
+FDA Approved Treatments?
+Nanoparticles
+
+#8 Aptamers and Ribozymes in Gene Therapy
+What are aptamers and how do they work? What is the significance of in vitro selection techniques for aptamers?
+How are ribozymes employed in gene therapy?
+How are aptamers and ribozymes selected or designed for a specific target?
+How are they different from traditional RNA therapies?
+Describe their role in mRNA splicing.
+Are there commercial therapies using aptamers or ribozymes?
+
+#8 Aptamers and Ribozymes in Gene Therapy: Jinal
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DUIovvruH1Uw&psig=AOvVaw1uOaEpnWWzSs1USyo1hm8z&ust=1698702845904000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiZyfiun5yCAxXAJN4AHXzLAWIQr4kDegUIARCQAQ
+Aptamers: short, single-stranded DNA, RNA, or synthetic XNA molecules 
+
+Ribozymes: catalytic RNA molecules that recognize their target RNA in a highly sequence-specific manner
+
+Aptamers also known as SELEX (systematic evolution of ligands by exponential enrichment) 
+
+applied against a variety of viruses
+
+
+ RNA molecules able to break and form covalent bonds within a nucleic acid molecule
+
+Ribozyme: RNA molecules or RNA–protein complexes, in which solely the RNA provides catalytic activity
+
+Example: hammerhead ribozyme, leadzyme, and the hairpin ribozyme
+
+
+
+#9 Gene Editing vs. Gene Therapy
+How does gene editing differ from gene therapy in terms of their molecular mechanisms?
+If you had a treatable disease, would you prefer gene editing or gene therapy? Justify your choice.
+How do the costs compare between gene editing and gene therapy?
+How do the side effects compare between gene editing and gene therapy?
+Can gene editing correct mutations permanently? How about gene therapy?
+Optional: How is the patient's genetic makeup considered in choosing between gene editing and gene therapy?
+
+#9 Gene Editing vs. Gene Therapy- Pegah
+Gene Therapy 
+Gene Editing 
+Long term treatment 
+Single gene mutation 
+Challenges in delivering editing tools
+Immune Response 
+Immediate effect 
+Wild range of genes
+
+Immune response
+Insertional mutation 
+
+#9 Gene Editing vs. Gene Therapy
+Gene therapy refers to the addition of new genomes to human cells while genome editing involves the precise manipulation of the sequence of the human genome for disease management.
+Gene Editing typically involves altering specific genes in an individual’s DNA and is a one-time procedure.THE cost can be high due to the precision and technology required.
+GENE THERAPY:- THE COST OF GENE THERAPY CAN BE HIGH DUE TO THE COMPLEXITY OF CREATING AND ADMINISTERING GENE VECTORS.
+Kushil
+
+#10 Early Gene Editing (Before CRISPR)
+Describe how TALENs and ZFNs are used for gene editing. How do TALENs differ from ZFNs?
+How was gene specificity achieved in these early methods? What challenges are involved in designing a polypeptide sequence to bind to a specific DNA sequence?
+How reliable were these early techniques in targeting specific genes?
+What were the limitations in delivering TALENs and ZFNs into cells?
+Were TALENs and ZFNs ever used in clinical trials?
+
+#10 Early Gene Editing (Before CRISPR) Justin
+-zinc finger nuclease (ZFN) inducing double-stranded breaks (DSBs) at the target region in the genome
+-Two different (“left” and “right”) ZFN monomers consisting of a tandem array of different zinc finger protein (ZFP) recognize a nucleotide triplet (shown in blue, brown, and green color).
+-Each ZFN is fused with Flavobacterium okeanokoites (FokI) nuclease and results in dimerization of the FokI. DNA cleavage takes place in the 5–7 base pair (bp) of the spacer sequence (shown in red) between ZFP recognition sites.
+-Transcription activator-like nucleases (TALEN) is a gene editing tool that is based on chimeric nucleases similar to ZFN
+-TALEN induces gene modification by inducing double-strand breaks in DNA.
+-TALENs are composed of sequence-specific DNA-binding domains fused to a non-specific DNA cleavage module
+- It has FokI cleavage domains and DNA-binding domains derived from TALE proteins.
+
+#10 Early Gene Editing (Before CRISPR) - Mansi
+
+#11 CRISPR Native Bacteria Function
+How was CRISPR discovered? What does the CRISPR acronym stand for?
+What did Francisco Mojica at the University of Alicante in Spain find? How was CRISPR first identified in bacteria? What is the purpose of the repeated sequences? What organisms have been found to naturally possess CRISPR systems? 
+How does CRISPR function as a bacterial immune system? How did Philippe Horvath at Danisco improve their yogurt shelf life in 2005 using CRISPR without gene editing?
+What does the native Cas9 nuclease protein do in bacteria?
+Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline 
+
+#11 CRISPR Native Bacteria Function - Jackie
+Clustered Regularly Interspaced Short Palindromic Repeats
+Francisco Mojica
+Previously found DNA repeat sequences in bacterial genomes 
+Regularly interspaced
+Similar to structures in archaea
+1993: Characterized what’s now a “CRISPR locus”
+2005: Similar to bacteriophage genomes 
+CRISPR is a type of adaptive immune system
+
+Bacterial Identification
+1987: Yoshizumi Ishino found unusual repeat sequences with “spacers” while analyzing a gene
+Purpose of Repeats
+Sequences have spacers from DNA of previously invading viruses
+Genetic memory
+Found in 50% of bacteria and 90% of archaea
+Bacterial Immune System
+Spacer sequences transcribed into crRNAs → guide system to matching DNA
+Cas9 enzyme binds to DNA, cuts and shuts off targeted gene
+Philippe Horvath
+Used CRISPR to improve bacteria lifespan without gene editing
+Focused on bacteriophage resistance
+Bacteria for yogurt has adaptive immunity which can target viruses that previously infected bacteria
+
+How was CRISPR discovered? What does the CRISPR acronym stand for?
+What did Francisco Mojica at the University of Alicante in Spain find? How was CRISPR first identified in bacteria? What is the purpose of the repeated sequences? What organisms have been found to naturally possess CRISPR systems? 
+How does CRISPR function as a bacterial immune system? How did Philippe Horvath at Danisco improve their yogurt shelf life in 2005 using CRISPR without gene editing?
+What does the native Cas9 nuclease protein do in bacteria?
+
+#11 CRISPR Native Bacteria Function - Rudra
+
+#11 VIDEO: Bozeman Science: What is CRISPR?
+Published on Feb 18, 2016
+
+#12 CRISPR/Cas9 Invention and Design
+Emmanuelle Charpentier and Jennifer Doudna are considered the pioneers of CRISPR/Cas9 technology. What did they do to create the gene editing technology from the native Cas9 protein?
+What are CRISPR RNA (crRNA) and trans-activating CRISPR RNA (tracrRNA)? How do they form the guide RNA (gRNA)? Explain how the CRISPR/Cas9 system can be programmed to target specific DNA sequences.
+What is the protospacer adjacent motif (PAM)? How does PAM restrict the effectiveness of CRISPR/Cas9? Are there any limitations to the kinds of DNA sequences that CRISPR/Cas9 can target?
+CRISPR/Cas9 is often referred to as  “molecular scissors”. Why? Can CRISPR/Cas9 edit DNA on its own, or does it just cut?
+Resources: https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/crispr-timeline, https://www.nobelprize.org/prizes/chemistry/2020/popular-information/ 
+
+Contributions of Emmanuelle Charpentier and Jennifer Doudna 
+Recognition of CRISPR
+Guide RNA
+Cas9 Nuclease
+Double-Strand Breaks
+Broad Applicability
+crRNA (CRISPR RNA)
+short RNA molecule that contains a sequence complementary to the target DNA
+
+tracrRNA (trans-activating CRISPR RNA)
+It is a separate RNA molecule that interacts with crRNA.
+
+Formation of gRNA
+crRNA and tracrRNA hybridize or bind together through base pairing interactions.
+
+Targeting Specific DNA Sequences
+When the gRNA binds to the Cas9 protein, it forms a complex.Then scans the genomic DNA to find the sequence that perfectly matches the gRNA.
+Protospacer Adjacent Motif (PAM)
+specific DNA sequence that is required for the proper functioning of the CRISPR/Cas9 system
+
+Role of PAM in CRISPR/Cas9
+If the PAM is not present, Cas9 will not bind and cut the DNA.
+
+Limitations of CRISPR/Cas9
+PAM Sequence Specificity
+Sequence Constraints
+Off-Target Effects
+Delivery Challenges
+CRISPR/Cas9 as “molecular scissors”
+it acts like a pair of molecular scissors for precise cutting of DNA.
+it is more than just a cutting tool
+it is a versatile genome-editing system.
+CRISPR/Cas9 Invention and Design
+Dhruvi?
+
+Here are the points explaining why it's called "molecular scissors" and its editing capabilities:
+
+Molecular Scissors Analogy:
+Cas9's Cutting Function
+Role in Genome Editing
+DNA Repair Mechanisms
+Editing DNA:
+CRISPR/Cas9 Requires a                                                                                       Guide  RNA:
+Contextual Control:
+#12 CRISPR/Cas9 Invention and Design- HARNISH
+Here are the points explaining how PAM restricts the effectiveness 
+of CRISPR/Cas9 and the limitations to the kinds of DNA sequences it can target:
+PAM Recognition
+Role of PAM in Target 	                                                                  Recognition:
+sgRNA Binding:
+DNA Cleavage:
+
+Now, regarding the limitations of CRISPR/Cas9 in targeting DNA sequences
+Dependency on PAM:
+
+PAM Sequence Constraints
+Off-Target Effects:
+Accessibility of Target Sites:
+DNA Sequence Variation:
+Large Insertions or Deletions
+
+#13 CRISPR/Cas9 Patents
+Who were Emmanuelle Charpentier and Jennifer Doudna? Do you find their story inspiring? (Humble brag: Dr. Voss worked in Dr. Doudna’s lab for 3 months as a graduate student.)
+Explain the patent wars involving CRISPR technology. How did MIT get their patent approved before Berkeley when they submitted 7 months after them? 
+How did the MIT/Broadhead eukaryotic patent differ from the Berkeley prokaryotic patent? 
+How did Feng Zhang of the Broad Institute find out about CRISPR/Cas9 to create his patent?
+What was the final U.S. Patent and Trademark Office decision in the case from March 2022? How did this decision affect Biotech companies? How have the patent wars influenced the development and commercialization of CRISPR?
+Resources: https://www.nobelprize.org/prizes/chemistry/2020/popular-information/ , https://www.science.org/content/article/latest-round-crispr-patent-battle-has-apparent-victor-fight-continues 
+
+#13 CRISPR/Cas9 Patents - Het
+In 2012: Doudna and Charpentier ‘s group published a groundbreaking paper describing the CRISPR-Cas9 system's potential for gene editing in the journal Science. Their work demonstrated that CRISPR could be used to cut and edit DNA sequences.
+
+MIT and the Broad Institute were able to obtain a patent before UC Berkeley and Jennifer Doudna, despite filing their patent application after UC Berkeley, can be attributed to the differences in the scope and focus of their respective patent applications
+The patent wars involving CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats) technology have been a high-profile legal battle that revolved around the rights to this revolutionary gene-editing technology
+       MIT/Broad Eukaryotic Patent:
+The MIT/Broad patent application was specifically directed to the use of CRISPR-Cas9 in eukaryotic cells. 
+Broad Institute's patent claims covered the use of CRISPR-Cas9 to edit genes within eukaryotic cells
+       Berkeley Prokaryotic Patent:
+UC Berkeley's patent application, on the other hand, was more focused on the use of CRISPR-Cas9 in prokaryotic cells
+The patent claims from UC Berkeley were centered on the use of CRISPR-Cas9 in bacterial cells for various applications, including biotechnological and genetic research purposes.
+
+#13 CRISPR/Cas9 Patents - Nirali
+
+#14 CRISPR/Cas9 Implications
+List any major breakthroughs in disease treatment that have been achieved using CRISPR.
+Describe the regulatory landscape for CRISPR-based therapies. What are some alternatives to Cas9 in CRISPR systems?
+What are the considerations for using CRISPR in germline editing?
+What do you think about https://www.the-odin.com 
+What are the off-target effects of CRISPR? How often do off-target sites get edited? How do these off-target effects impact the clinical application of CRISPR?
+What are some applications of CRISPR that go beyond healthcare? How is CRISPR being used in agriculture?
+Resources: https://en.wikipedia.org/wiki/CRISPR_gene_editing 
+
+#14 CRISPR/Cas9 Implications - Steve
+Breakthroughs in Disease Treatment
+Sickle Cell & β-Thalassemia treatments.
+Cancer therapies with targeted gene editing.
+Clinical trials for inherited blindness 
+
+Regulatory Landscape
+Strict global oversight; categorized as IND by the FDA.
+EMA’s stringent approval process for gene therapies.
+Cas9 Alternatives
+Cas12/Cas13 for specificity, Cpf1 for different PAM & staggered cuts.
+Custom nucleases enhance precision.
+
+Germline Editing
+Ethical debates & potential for irreversible changes.
+
+
+#14 CRISPR/Cas9 Implications - Mit
+Off- target effects can impact the clinical application of CRISPR :
+-Safety concerns such as cause of diseases
+-
+
+#14 VIDEO: Kurzgesagt – In a Nutshell
+Genetic Engineering Will Change Everything Forever – CRISPR
+Published on Aug 10, 2016
+
+Chapter 18
+
+#15 Characteristics of Stem Cells
+What are stem cells? What makes a stem cell a stem cell? What are the three characteristics of stem cells?
+How do stem cells self-renew? What are the signaling pathways that maintain stem cell identity?
+What is the difference between totipotent, pluripotent, unipotent, oligopotent, and multipotent stem cells?
+How can we obtain pluripotent stem cells without embryos? Discuss methods to obtain pluripotent stem cells from adult tissues. How are stem cells cultured in the lab?
+
+
+#15 Characteristics of Stem Cells - Lakshmidhar
+
+#15 Characteristics of Stem Cells - Uzma
+
+
+
+Collecting Pluripotent Stem Cells
+Somatic cells
+Cell  reprogramming 
+scientists use viruses to insert four genes – Sox2, Oct4, Klf4, and cMyc – into the cells.
+
+
+Stem Cells in Lab
+
+#16 Animal Cloning
+How does animal cloning work? How does somatic cell nuclear transfer in cloning work?
+Who was Dolly the sheep and why was she significant? What are the technical challenges in cloning animals?
+What are the ethical problems that occur with cloned animals? True or False: Cloned animals live shorter lives than normal animals?
+What types of animals are cloned today? Are there any commercial applications for animal cloning?
+
+process of producing an organism with identical genome either naturally or artificially.
+Transfer of dna from one animal somatic cell into an egg cell whose dna and nucleus is removed.
+A technique in which the nucleus (DNA) of a somatic cell is transferred into an enucleated metaphase-II oocyte for the generation of a new individual, genetically identical to the somatic cell donor.
+Dolly was the first sheep to be cloned from the somatic cells of mammal.
+Hi
+I’m Dolly
+Cloning
+Challenges in transfer of somatic cell nuclear, low success rate, difficulties in reprogramming, abnormalities and shortened telomeres.
+#16 Animal Cloning - QAZI
+
+Ethical problems?
+Animal welfare
+Reduced Genetic Diversity
+Unpredictable Outcomes
+Unpredictable Outcomes
+Unsustainability
+
+Applications
+Agriculture and Livestock
+Medical Research
+Reproduction of Valuable Animals
+Pet Cloning
+Xenotransplantation Research
+Species Conservation
+Biotechnology and Genetic Engineering
+
+
+Miraj
+
+#16 VIDEO: 60 Minutes: The Clones of Polo
+Episode aired Mar 11, 2018
+
+Chapter 19
+
+#17 Oncogenic vs. Oncolytic Viruses
+What is the difference between oncogenic and oncolytic viruses?
+How do oncogenic viruses contribute to cancer? Provide some examples of oncogenic viruses? Are there any vaccines available that can prevent infection by oncogenic viruses?
+How do oncolytic viruses selectively kill cancer cells? Are there any safety concerns when using oncolytic viruses? What are the methods to enhance oncolytic virus specificity? How are oncolytic viruses administered to patients?
+How do oncogenic and oncolytic compare the to lytic and lysogenic bacteriophage replication cycles?
+
+#17 Oncogenic vs. Oncolytic Viruses - Misbah 
+
+
+Vaccines available: 
+A higher chance of developing liver cancer is linked to the hepatitis B virus (HBV). Almost everyone who is at risk of contracting HBV should get the hepatitis B vaccine, which is generally accessible.
+HPV is responsible for cervical cancer as well as anal, oropharyngeal, and genital cancers. Vaccines like Cervarix and Gardasil have been created to protect against the most prevalent forms of HPV that cause cancer.
+
+ Oncogenic vs. Oncolytic Viruses- Sowmya
+Oncolytic viruses are designed to selectively target and kill cancer cells while sparing normal, healthy cells
+Altered Signaling Pathways
+Defective Antiviral Response
+Immune System Evasion
+Specific Receptors
+While oncolytic viruses hold promise as potential cancer treatments, there are indeed safety concerns associated with their use
+Off-Target Effects
+Overstimulation of the Immune System
+Viral Mutations
+Patient-Specific Factors
+Both oncogenic and oncolytic viruses affect the replication cycles of infected cells, but in different ways
+
+#18 Oncogenes
+How are oncogenes identified? Which experiments led to the identification of oncogenes?
+Describe some common oncogenes: Ras, myc, others…
+How can oncogenes be targeted for treatment? What are the screening techniques available to identify oncogenes in cancer patients? Are there databases or resources that catalog known oncogenes?
+How do oncogenes differ from tumor-suppressor genes, such as p53 and BRCA2? How do oncogenes interact with tumor suppressor genes?
+What role does biotechnology play with inherited susceptibility to cancer? How can we treat them?
+Resources: https://en.wikipedia.org/wiki/Oncogene , https://en.wikipedia.org/wiki/Tumor_suppressor_gene 
+
+#18 Oncogenes - Veronica
+
+#18 Oncogenes (Alfredo)
+Oncogenes vs Tumor-Suppressor Genes
+Oncogenes refer to those genes whose alterations cause gain-of-function effects
+Tumor suppressor genes cause loss-of-function effects that contribute to the malignant phenotype.
+
+Interactions
+Inactivation of the APC anti-oncogene (both copies)
+Activation of the Ras oncogene
+Inactivation of the DCC anti-oncogene (both copies)
+Mutation of a single copy of the p53 gene
+
+Inherited Susceptibility to Cancer
+Inherited defects in anti-oncogenes, components of DNA replication, & DNA repair systems can predispose a person to cancer
+Some genetic differences make people more susceptible to certain cancers
+
+Treatment Options
+Oncolytic viruses
+Anti-cancer agents
+				
+			
+		
+
+How do oncogenes differ from tumor-suppressor genes, such as p53 and BRCA2? How do oncogenes interact with tumor suppressor genes?
+What role does biotechnology play with inherited susceptibility to cancer? How can we treat them?
+
+#19 Mutagenicity vs. Carcinogenicity
+How does the Ames test determine if chemicals are mutagenic? What are the limitations of Ames tests in predicting mutagenicity? What are the molecular mechanisms for a substance to induce mutations?
+Ethidium Bromide is a strong mutagen in the Ames test, but showed little to no carcinogenic effects in mice. Why? Are there any common substances previously thought to be safe but are now considered mutagenic?
+How do substances promote cancer without being mutagenic? Explain and provide an example of how a substance can be a carcinogen and not a mutagen.
+
+Mutagenicity vs. Carcinogenicity-shubham
+How does the Ames test determine if chemicals are mutagenic? What are the limitations of Ames tests in predicting mutagenicity? What are the molecular mechanisms for a substance to induce mutations?
+The Ames test is typically performed using bacteria, often strains of Salmonella typhimurium, which have mutations that make them unable to synthesize specific amino acids. These mutant bacteria require these amino acids to grow. the mutagenicity of the substance is determined by comparing the number of colonies in the treated and untreated samples. limitations  1.The Ames test uses bacteria, which are different from human cells.so it is Relevance to humans,2.False negatives and positives 3.Many mutagenic compounds require metabolic activation in the body to become mutagenic. The Ames test may not reflect these activation processes accurately 4.Limited endpoints. molecular mechanisms Base substitution,Insertions and deletions,Chemical modification and Cross-linking
+Ethidium Bromide is a strong mutagen in the Ames test, but showed little to no carcinogenic effects in mice. Why? Are there any common substances previously thought to be safe but are now considered mutagenic?
+Ethidium bromide is a chemical compound commonly used in molecular biology and genetics to stain DNA and RNA. lack of carcinogenicity can be explained by several factors 1.Differences in species sensitivity 2.Metabolic activation 3.Exposure levels 4.Genetic factors common substances  1.Radon gas: Radon is a naturally occurring radioactive gas that can accumulate in homes. It was not widely recognized as a health hazard until studies linked it to lung cancer. 2.Benzene: Benzene, a solvent used in various industries, was initially considered safe. However, it is now known to be a human carcinogen.
+How do substances promote cancer without being mutagenic? Explain and provide an example of how a substance can be a carcinogen and not a mutagen.
+Radon is a radioactive gas that can be found in the soil and rocks. It emits alpha particles, which are highly ionizing radiation. When radon gas is inhaled, it can decay within the lungs, releasing these alpha particles. These alpha particles can damage the surrounding lung tissue, causing inflammation and oxidative stress. This damage and inflammation can lead to the promotion of cancer, particularly lung cancer, by creating an environment in which cell growth and division are disrupted.
+
+#19 Mutagenicity vs. Carcinogenicity - Bharat
+
+Best Slide Award
+GREAT
+SLIDE
+GREAT
+SLIDE
+GREAT
+SLIDE
+
+The End

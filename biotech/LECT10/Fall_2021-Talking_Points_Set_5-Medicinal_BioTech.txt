@@ -1,0 +1,411 @@
+Medical BioTech
+Talking Points
+Oct 28, 2021
+
+Talking Points Guide
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Tips for a Good Presentation
+Remember you telling a story. Should have a beginning, a middle, and an end. 
+Respect the time allotted for the sake of your audience. 
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
+Explain at the level of the class. 
+Have a technical term, define it. If you don't quite understand it, no one will. 
+Because we are all novices, you will need to have a long intro. 
+But try to engage the audience. 
+Do not read from your slides; use notecards, if you must.
+No complete sentences on slides, use short phrases, break the content up. 
+Try to have a picture on every slide, helps maintain attention of the audience 
+If you have a movie, talk during the movie, do not use narrator
+Be prepared for questions. 
+Show ENTHUSIASM when you talk and make it exciting! 
+
+Best Advice
+Be Enthusiastic
+Use More Pictures and Diagrams on your Slides
+be a visual storyteller
+Use Less Words on your Slides
+put the words in your notes, not the slide
+Keep Things to the Point
+Be creative with your slide with look and content; go beyond the book
+
+Chapter 17
+
+#1 Vincent: What are some examples of how genes become defective? Discuss the methods to identify defective genes in humans. How can model organisms be used to identify defective genes?  
+Mutations
+Lacking/Extra genes
+Haploinsufficiency
+Imprinting/methylation
+Tandem repeats
+Mitochondrial defects
+
+Usage of “knockout mice”
+Candidate cloning
+RNAi
+Proteomics
+Functional cloning
+Positional cloning
+1. What are some examples of how genes become defective? Discuss the methods to identify defective genes in humans. How can model organisms be used to identify defective genes?
+
+#2 Ethan 
+Gene Therapy- Main steps:
+Identification and characterization of gene
+Cloning of gene
+Choice of vector
+Method of delivery
+Expression of gene
+History
+
+1960s - concept of gene therapy first introduced
+
+1970 - first human to receive gene therapy
+treatment for hyperargininemia
+
+1980s - Retroviral vector gene therapy
+
+1990 - First approved human trial for gene therapy
+Patient: 4 year old Ashanti DeSilva
+Condition: severe combined immunodeficiency
+1970- prevents production of arginase. injection of a rabbit virus known to induce the production of arginase. Unfortunately unsuccessful.
+
+1980- Richard Mulligan had managed to genetically modify a mouse leukemia retrovirus
+
+1990 - lacked a key enzyme adenosine deaminase, constantly put her immune system at risk of infection. After 12 day treatment, it was successful in returning her to a normally functioning immune system 
+
+#2 Riddhi 
+2. What are the five things to consider for preparing a gene for gene therapy. What was the first example of gene therapy? Provide an example of gene therapy that is coming soon.
+ID & characterization of a gene
+Cloning of gene
+Choice of vector
+Method of delivery
+Expression of gene
+Gene therapy: Axalimogene filolisbac (AXAL; ADXS11-001) and ADXS-DUAL
+Sponsor: Advaxis 
+Target: Metastatic cervical cancer
+Mechanism: uses  Listeria monocytogenes (Lm) for target immunotherapy 
+Secretes antigen/adjuvant fusion proteins 
+Newer gene therapies: https://www.genengnews.com/a-lists/25-up-and-coming-gene-therapies-of-2019/
+
+Updates: On May 15, 2019, the FDA imposed a partial clinical hold on AIM2CERV, saying Advaxis satisfactorily addressed questions on “certain AXAL chemistry, manufacturing, and controls (CMC) matters.” Advaxis is also assessing axalimogene filolisbac in combinations with Merck & Co.’s Keytruda® (pembrolizumab), Bristol-Myers Squibb’s Opdivo® (nivolumab), and AstraZeneca’s Imfinzi® (durvalumab).
+
+#3 Brittany 
+3. Describe the use of adenovirus in gene therapy. What is needed to get it to work? What are its limitations?
+Adenovirus express foreign antigens in gene 								therapies and vaccines.
+Viral genes are deleted and replaced by a cassette 								that expresses a foreign therapeutic gene.
+non-integration, immunogenicity, replication 							competence, no targeting, and small insert size,							lethal at lethal at high doses.
+
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4507798/
+https://www.intechopen.com/chapters/62883
+https://www.omicsonline.org/articles-images/2161-0932-S6-001-t001.html
+
+
+#3 Omar; Adenovirus vectors
+Adenoviruses; DS DNA viruses, enters the cell and injects DNA through the nuclear pores. 
+These viruses are harmless, disarmed, don't cause tumors,
+Limitations: Therapy lasts until elimination by the Immune system, adaptive immunity negates future therapies of the same virus. 
+Adenovirus is a double stranded virus used for gene therapy. Adenovirus can enter a wide variety of cells, using the receptor CAR and Integrin to enter cells. 
+Adenovirus is already relatively harmless, and most people have been infected with one type of Adenovirus already. However, it is still disarmed by deleting the E1A gene, which promotes transcription of virus genes and promotes DNA synthesis proteins in the host cell. 
+Adenovirus vectors can only be used once, because they are quickly eliminated by the Immune System, and an immunity is developed for the engineered virus. This is why they are ideal for a single use for cancers or vaccines, but not chronic diseases which need long term treatment. (Recently the COVID Johnson and Johnson and Sputnik vaccines are adenovirus based)
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4507798/
+https://www.news-medical.net/health/What-are-Adenovirus-Based-Vaccines.aspx#:~:text=Other%20adenovirus%2Dbased%20SARS%2DCoV,combat%20the%20COVID%2D19%20pandemic.
+
+#4 Vincent:  Explain the Cystic Fibrosis (CF) disorder. How does gene therapy for CF work? What happened after 30 days to patients getting adenovirus gene therapy for CF? What does the future hold for CF gene therapy?  
+Most common single gene mutation
+Homozygous recessive
+CFTR protein
+Defective chloride channel control
+Thick mucus lining lungs
+Airway obstruction
+Bacteria growth (infection)
+Scar tissue (fibrosis)
+4.
+
+#4 Dominique  
+Early candidate for gene therapy
+Healthy CF gene cloned
+Inserted in adenovirus
+Aerosol used to administer
+Healthy gene expressed; normal Cl- movement
+30 days - gene expression diminished
+Ivacaptor/Kalydeco
+Ataluren/Translana
+Phase 3 clinical trial
+4. Explain the Cystic Fibrosis (CF) disorder. How does gene therapy for CF work? What happened after 30 days to patients getting adenovirus gene therapy for CF? What does the future hold for CF gene therapy?
+
+
+#5 Shivam 
+5. Discuss how retroviruses are used in gene therapy.  How does it differ from the adenovirus method? How is HIV used to treat leukemia?
+Retroviruses gene therapy -
+Retrovirus - virus that utilizes RNA as its genetic material
+First make particles that contain the genome with desired gene
+Infect target cells
+Infected cells will be modified
+Differ from Adenovirus method - 
+Can insert desired gene in both dividing and nondividing cells
+Retrovirus method relies on mitotic cell division
+Infected cells will be modified by the insertion of your target gene
+Retrovirus method relies on mitotic cell division for transduction to effectively occur
+
+#5 Ethan 
+HIV Immunotherapy for cancer:
+-Modified T Cells using a Lentiviral Vector
+	-delivers anti-leukemia transgene
+	-can integrate into host cell genome
+
+https://www.sciencedirect.com/science/article/pii/S0929664613000612#:~:text=Immunotherapy%20based%20on%20chimeric%20antigen,deliver%20the%20anti%2Dleukemia%20transgene. 
+How is HIV used to treat leukemia?
+
+#6 Ashley 
+Liposomes
+Closed Bi-layer structures from Hydrated Phospholipids
+Useful application as delivery system:
+Encapsulate bioactive hydrophilic, amphipathic, and lipophilic molecules.
+Gene and Drug Delivery
+PEG-bearing liposomes, charged liposomes, stimuli-responsive liposomes
+Delivery nucleic acids and targeting ligands
+Efficacy based on liposomes physicochemical properties of their membranes.
+6. What is a liposome? How can Liposomes be used to deliver genes? What advantages and disadvantages does it have compared to the viral delivery systems?
+
+#6 Jamie 
+6. What is a liposome? How can Liposomes be used to deliver genes? What advantages and disadvantages does it have compared to the viral delivery systems?
+
+
+
+#7 Brittany
+7. Are there any gene therapy approaches for cancer? How does cancer gene therapy differ from hereditary gene therapy? What is suicide gene therapy?
+Gene therapy: experimental technique using genes to treat or prevent disease.
+Suicide gene therapy: therapeutic strategy where cell death inducing transgenes introduced into cancer cells. 
+cytosine deaminase/5-fluorocytosine 
+herpes simplex virus/ganciclovir.
+
+#7 Clinton
+Are there any gene therapy approaches for cancer? 
+Including anti-angiogenic gene therapy, suicide gene therapy, immunotherapy, siRNA therapy, pro-apoptotic gene therapy, oncolytic virotherapy, and gene directed-enzyme prodrug therapy
+
+How does cancer gene therapy differ from hereditary gene therapy?
+Cancer Gene Therapy: introduces new genes into a cancerous cell
+  Hereditary Gene Therapy: replacing or inactivating disease-causing genes.
+
+
+What is suicide gene therapy?
+cell suicide inducing transgenes are introduced into cancer cells
+
+Zarogoulidis, P., K. Darwiche, A. Sakkas, L. Yarmus, H. Huang, Q. Li, L. Freitag, K. Zarogoulidis, and M. Malecki. 2013. Suicide Gene Therapy for Cancer- Current Strategies. National Library of Medicine 4:16849.
+
+
+#8 Greg
+8. How are aptamers and ribozymes used in gene therapy?
+
+
+#8 Giovanni
+Aptamers in Gene Therapy
+Single strand DNA or RNA molecule
+Ribozyme Gene Therapy
+RNA enzyme
+Target specific RNA molecules
+
+#9 Riddhi
+9. How does gene editing differ from gene therapy? What methods of gene editing are there? What role can gene/genome editing do for future therapies?
+Gene editing: mutated gene is removed, replaced or revised at DNA level
+Gene therapy: inserts a ‘normal’ version of mutated gene 
+‘Diseased’ gene still remains in genome & passed down to offspring
+Methods: 
+Restriction enzymes 
+CRISPR
+ZFN:  increase length of DNA recognition site and increase specificity. Functions as a dimer
+TALENs: Uses transcription activators and amino acid repeats by single nucleotide recognition
+Future therapies
+correct, introduce or delete just about any DNA sequence 
+Used in different cells and organism
+Can cure genetic disease
+‘Create’ healthier babies
+Invent new vaccines 
+
+
+ZFN: Zinc finger nucleases: an engineered nuclease that is fused to zinc finger DNA-binding domains. Function as Dimers
+
+Talens: Transcription activator-like effector nucleases. Single nucleotide resolution. 
+
+#9 Greg
+9. How does gene editing differ from gene therapy? What methods of gene editing are there? What role can gene/genome editing do for future therapies?
+GENE EDITING WITH NUCLEASES
+
+#10 Jamie
+10. How was CRISPR discovered? What does it stand for? How does it function as a bacterial immune system? (use internet/not in book) 
+
+#10 Julia
+How was CRISPR discovered?
+1993, CRISPRs were for the first time observed in archaea, specifically in Haloferax mediterranei 
+Francisco Mojica 
+
+CRISPR → Clustered Interspaced Palindromic Repeats
+How does it function as a bacterial immune system?
+Crispr machinery is always on Cas 2 binds to foriegn material ( Bacterial DNA is mehtylated)
+Bacteria infected? Cas 2 will bind to foriegn dna and “vaccinate the cell” - basically place viral sequence as a spacer into bacterial DNA
+After many viral infections there will be many spacers
+RNA p will transcribe these spacers into pre - crRNA and chop up this RNA into the individual viral sequences and stored it as a collection of different guide RNA’s that match viral sequences 
+When one of the same viruses invades again, Cas 9 will bind to one of these free floating guide RNA’s and will then go and search for the complementary viral DNA within the cell and cut it.
+ 
+
+#11 Julia
+How is CRISPR a game-changer for gene editing?
+More specific (easier to ‘program’ CRISPR-Cas9 at a particular cutting point on the DNA strand.)
+Easy to produce
+Easy to use
+How did we edit DNA before CRISPR, e.g., ZNF proteins? 
+Restrictions Enzymes
+cut DNA at particular locations and insert new genes at the cutting sites. 
+Difficult to determine in advance where the gene will be inserted
+recognition sequences are just a few base pairs long and often arise several times in a genome
+
+Zinc Nuclear Fingers (ZNF’s)
+Artificial enzymes consist of a sub-unit that recognizes the desired DNA sequence (zinc ions)  and a DNA-cutting part of a restriction enzyme.
+Bind specific triplets of DNA bases
+Requires a lot of skill and effort, 
+Difficult to  modifying the zinc fingers so that they dock at a desired DNA sequence
+Who first discovered CRISPR? Explain the MIT/Berkeley patent controversy.
+UC - Jennifer Dounda - Patent over using CRISPR in testude
+MIT (Broad institute) - Feng Zang - Patent over using CRISPR in human mice cells
+Restriction enzymes
+ZNF’s
+Used restriction enzymes - have to recognize particular DNA sequev
+Znf - chain of zinc proteins that are endonucleases recognize and bind to specific triplets of DNA bases
+
+#11 Omar CRISPR 
+11. How is CRISPR a game-changer for gene editing? How did we edit DNA before CRISPR, e.g., ZNF proteins? Who first discovered CRISPR? Explain the MIT/Berkeley patent controversy.
+CRISPR Uses guide RNAs which bind to Cas9. RNAs are made from sequences in the bacterial chromosome known as Clustered Regularly Interspaced Short Palindromic Sequences.
+ZNF; Zinc Finger Nuclease do not use Guide RNA, Zinc ion + 25-30 AA bind DNA, and ZNFs can be added together
+Yoshizumi Ishino in Osaka in (1987) discovered CRISPR, Both MIT and Berkeley applied for intellectual property in 2012, thought MIT expedited their application, but the patent office switched to a first to file system.
+https://synbiobeta.com/who-owns-crispr-in-2021-its-even-more-complicated-than-you-think/
+
+Chapter 18
+
+#12 Leila
+Stem cell: A cell that can develop into different types of cells 
+3 characteristics: 
+Replicate
+Undifferentiated
+Produce daughter cells 
+12. What are stem cells? What makes a stem cell a stem cell? What are the three characteristics of stem cells? What is the difference between totipotent, pluripotent, unipotent, oligopotent, and multipotent stem cells? How can we obtain pluripotent stem cells without embryos?
+
+
+#12 Segun
+Induced Pluripotent Stem (iPS) Cells
+These are cells induced by taking  somatic cell to induce to pluripotent stem cells. 
+
+#13 Giovanni
+Animal Cloning
+Somatic Cell Nuclear Transfer
+Dolly the Sheep!
+First mammal cloned from adult somatic cell
+
+#13 Shivam
+Animal Cloning
+Somatic DNA            egg cell
+Egg cell - nucleus and DNA removed
+Egg Develops 
+Contains same gene as cell donor 
+Embryo           uterus of adult female
+Develops further in uterus
+Dolly the Sheep - 
+First mammal cloned from adult somatic cell 
+Roslin institute of Scotland
+Nuclear transfer from mammary gland cell
+Ethical Problems -
+Undergoes much pain
+Surrogate mother becomes ill and sometimes infertile
+Health of Cloned animals 
+testing  done on cloned animal
+Cloned today 
+Elizabeth Ann - black footed ferret
+Animal Testing 
+
+ 
+Testing done on cloned animals - they can be utilized to be tested for viruses and infections which leads to much pain and death of the animal. 
+Black footed ferret - endangered species, fewer then 500 left in the wild
+
+Chapter 19
+
+#14 Ashley
+Oncogenic Viruses
+Viruses that affect the host cell’s gene to cause tumors.
+Human Papilloma Virus (HPV), Epstein-Barr Virus (EBV), Hepatitis B or C virus (HBV/HCV)
+Oncolytic Viruses
+A form of immunotherapy to target and infect cancer cells specifically.
+Virus attacks cancer cells causing them to burst and release immune responses
+14. What is the difference between oncogenic and oncolytic viruses? How does each work? How does they compare the two bacteriophage replication cycles?
+
+#14 Leila
+Integrate
+Produce viral protein
+Block tumor suppressor genes
+
+
+Recognize only cancer cell
+Virus will infect and kill only cancer cells 
+Oncogenic 
+Oncolytic 
+14. What is the difference between oncogenic and oncolytic viruses? How does each work? How does they compare the two bacteriophage replication cycles?
+
+#15 Dominique
+Identify through transformation
+Extract DNA from cancerous cells
+Inserted into healthy cells
+Don’t follow contact inhibition
+Treatment
+Monoclonal antibodies
+Small molecular inhibitors
+Bevacizumab/Avastin
+Cetuximab
+15. How are oncogenes identified? How can we treat them? What role can biotech play with inherited susceptibility to cancer?
+
+
+#15 Segun
+Biotechnology and Cancer 
+
+Tumor suppressor genes
+DNA repair
+Angiogenesis
+
+#16 Clinton
+ How are chemicals tested if they are mutagenic?
+The Ames test (Salmonella typhimurium reverse mutation assay
+
+
+Explain and provide an example of how a substance can be a carcinogen and not a mutagen
+What is a carcinogen:
+Potential of causing cancer
+Just because you had contact with a carcinogen doesn't mean that you'll get cancer
+
+
+What is a Mutagen: 
+Certain Agent such as radiation- causes genetic mutation
+
+
+The End
