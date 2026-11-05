@@ -1,5 +1,9 @@
 # Markdown and Djot interview notes
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Status: research notes supporting the selected Djot foundation. This page records what a supplied
 John MacFarlane interview contributes to the extension's design; it is not a Djot tutorial or a
 slide-language specification.

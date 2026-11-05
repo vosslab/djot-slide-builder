@@ -18,7 +18,7 @@ boundary.
   lint, `build_slides.sh genetics`, two explicit native E2Es, and eight sequential matching
   ODP/PDF exports with editable text/direct images and the Lecture 02e native table.
 - [x] Build the bounded ODF/SMIL reveal model; the dated
-  [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md) records the
+  [wp_a1_animation_fidelity.md](archive/wp_a1_animation_fidelity.md) records the
   earlier OOXML design context.
 - [x] Record native ODP package semantics, headless LibreOffice open/save preservation, and
   ODP-derived PDF final-state evidence.
@@ -26,14 +26,27 @@ boundary.
 
 ## Compatibility and future language work
 
-- [ ] Pin the remaining formatter and editor-rule lanes of the strict-Djot compatibility suite.
-- [ ] Write a standalone extended-Djot authoring guide when that broader documentation task is
-  approved.
+- [ ] Review Biotechnology Lecture 03A policies and links, and revise the dense legacy pages
+  identified in [biotech_lecture_03_slide_review.md](active_plans/reports/biotech_lecture_03_slide_review.md).
+- [ ] Independently check the Lecture 03C claims identified in
+  [lect03c_topic_source_check.md](active_plans/reports/lect03c_topic_source_check.md).
+- [ ] Complete the remaining formatter and editor-rule lanes of the strict-Djot compatibility suite.
+- [x] Document authoring through [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
+  [USAGE.md](USAGE.md), and [COOKBOOK.md](COOKBOOK.md).
 - [ ] Add native editable mappings for currently source-located unsupported content only when a
   teaching need and an acceptance path are defined.
 
+## Deferred image investigation
+
+- Automatic border trimming and further image-allocation remedies remain deferred. The audit is
+  implemented; [image_area_regression_followup.md](archive/image_area_regression_followup.md)
+  preserves its findings and constraints, including the instruction to use existing layouts.
+
 ## Stable exclusions
 
+- [x] Keep Biotechnology source folders inside their lecture folders and delete obsolete duplicates.
+- [x] Keep copyrighted assets local and ignored while validating their real paths with Djot lint.
+- [x] Split large import and measurement modules into cohesive responsibilities.
 - [x] Keep one canonical Djot source for each maintained deck.
 - [x] Keep slide geometry in the layout registry rather than infer it from source order or images.
 - [x] Keep source-only lint separate from native E2E and attended visual checks.

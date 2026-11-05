@@ -1,5 +1,9 @@
 # WP-A1 animation fidelity evidence
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Date: 2026-09-07
 
 Status: implementation and headless acceptance complete; attended playback observation open.
@@ -28,7 +32,7 @@ no runtime XML templates or PowerPoint-authored reference decks are needed.
 The 2026-09-06 check found no PowerPoint app in the bounded macOS paths. LibreOffice 26.2.5.2 is
 installed. A direct UNO Python route was killed after its local dependency/process route proved
 unsuitable for this task; the established headless LibreOffice conversion boundary works. The
-command evidence is retained in [ENVIRONMENT.md](../../../devel/animation_reference/ENVIRONMENT.md).
+command evidence is retained in [ENVIRONMENT.md](../../devel/animation_reference/ENVIRONMENT.md).
 
 ## Acceptance evidence
 

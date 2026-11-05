@@ -408,7 +408,7 @@ conversion or missing live text for review.
 **Evidence.** The genotype table retains 56 text elements and 34 paths with no bitmap images.
 Actual PDF review exposed spurious RTL flags on Latin runs; a narrow correction restores positions
 while preserving genuine RTL text. Details:
-[metafile_vector_followup.md](active_plans/metafile_vector_followup.md).
+[metafile_vector_followup.md](archive/metafile_vector_followup.md).
 
 ### Image-area review without layout changes
 
@@ -420,7 +420,7 @@ artwork bytes per slide; flag uncertain correspondence for manual review.
 
 **Consequence.** The initial adjustable warning threshold is 30% relative area loss. Margin analysis
 is advisory, and the audit neither trims artwork nor introduces layouts. Details and limitations:
-[image_area_regression_followup.md](active_plans/image_area_regression_followup.md).
+[image_area_regression_followup.md](archive/image_area_regression_followup.md).
 
 ### SVG figures and definition emphasis
 

@@ -1,8 +1,12 @@
 # Mixed text and image scaling
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Status: implemented and verified on 2026-10-26. The approach below records the original plan;
-the settled bounds and outcomes are in [the review](../reports/mixed_content_scaling_review.md)
-and [design decisions](../../DESIGN_DECISIONS.md#mixed-text-and-image-area-optimization).
+the settled bounds and outcomes are in [the review](mixed_content_scaling_review.md)
+and [design decisions](../DESIGN_DECISIONS.md#mixed-text-and-image-area-optimization).
 
 ## Goal and evidence
 
@@ -11,8 +15,8 @@ collapse. Preserve authored prose, source order, image aspect ratios, and existi
 Use 0.5 pt font candidates and let every image scale independently.
 
 Current ownership: `layout_builders._select_mixed_flow_allocation` selects the font;
-`layout_measurement.mixed_flow_allocation` measures text and divides the remaining height.
-The latter currently forces a common image scale. Picture projection already preserves
+`layout_flow_measurement.mixed_flow_allocation` measures text and divides the remaining height.
+At the time of this plan, the latter forced a common image scale. Picture projection already preserves
 aspect ratio and must continue using the same measured allocation during export.
 
 Measured evidence in `_temp/flow_sizing/`: doubling slide 25's text produces a 2.3%-width

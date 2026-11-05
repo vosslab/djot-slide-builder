@@ -1,5 +1,8 @@
 # Track image shrinkage during conversion
 
+Archived 2026-11-05: the audit is implemented; optional trimming and layout remedies
+remain deferred in [TODO.md](../TODO.md). This is historical evidence, not an active plan.
+
 Status: audit implemented; layout remedies and automatic trimming deferred. The instructor clarified
 that audit code is welcome but new special layouts are not requested.
 

@@ -43,7 +43,8 @@ pytest rules rather than repeating them.
    ```
 
 4. Run `git diff --check` before handoff. Check links changed by documentation edits directly.
-   [GATE_AUDIT.md](GATE_AUDIT.md) records the retained checks and their failure actions.
+   [TROUBLESHOOTING.md](TROUBLESHOOTING.md) covers current failure recovery;
+   [GATE_AUDIT.md](GATE_AUDIT.md) retains historical gate-removal decisions.
 
 The permanent suite establishes fast, deterministic source and native-object behavior. Follow
 [PYTEST_STYLE.md](PYTEST_STYLE.md) to decide whether new coverage belongs there; use the separate
@@ -88,6 +89,16 @@ offline test suite.
 
 ## Maintain repository tooling
 
+- Run refresh utilities with `python3 -m slide_lib.refresh_weather` or
+  `python3 -m slide_lib.refresh_podcast` after sourcing the environment. Reusable refresh and
+  generation code belongs in `slide_lib/`; tests import those owning modules directly.
+- Keep temporary verification in `_temp/`. Use in-memory `compile()` for syntax-only checks:
+  `py_compile` and `compileall` explicitly write bytecode despite `PYTHONDONTWRITEBYTECODE=1`.
+- Run `tests/test_markdown_links.py` for GitHub-browsable documentation and
+  `tests/test_djot_links.py` for locally available slide assets and hyperlinks. Ignored teaching
+  images remain outside Git; source-only checks do not establish rendered layout or playback.
+- Split source modules by responsibility before reaching the 1,000-line limit. The advisory band
+  begins at 900 lines. Update callers to the new owners rather than adding re-export facades.
 - Use `devel/` for repository engineering commands. [devel/DEVEL_README.md](../devel/DEVEL_README.md)
   documents Graphify mapping and its generated, untracked `graphify-out/` data.
 - Preview a version or release operation before it writes changes:

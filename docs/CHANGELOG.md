@@ -2,6 +2,19 @@
 
 ### Fixes and Maintenance
 
+- Archive 15 completed or superseded planning, design-research, and implementation-review
+  documents with `git mv`. Remove the redundant native-layout-contract redirect, repair relative
+  links and inbound references, and mark snapshots as historical. Retain two active Biotechnology
+  Lecture 03 reports; keep their unresolved tasks and deferred image investigation in TODO.
+
+- Refresh README, architecture, file layout, setup, usage, related-project guidance, and agent
+  pointers from current code. Audit roadmap, TODO, development, troubleshooting, formats, and
+  historical gate guidance; document module refresh commands after launcher removal. Retain
+  the existing release-history boundary rather than label unreleased work as a published release.
+- Recapture the README's Disease vs. Disorder illustration from current Lecture 01 PDF page 4.
+  Replace the PNG with a quality-90 WebP and inspect the final image. The PDF build succeeds;
+  existing capacity advisories elsewhere in that lecture remain outside this documentation edit.
+
 - Replace the machine-specific handout provenance path with its filename and course context;
   retain source/export hashes and page metadata. No runtime loader consumes this provenance field.
 

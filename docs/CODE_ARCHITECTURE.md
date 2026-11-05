@@ -34,7 +34,8 @@ enters only through the one-time import workflow.
   uses the logical column grid and combined span width; ODP retains native fills and merges.
 - [../slide_lib/djot_grammar.py](../slide_lib/djot_grammar.py) derives directive and action
   spellings from the layout registry. [../slide_lib/djot_lint.py](../slide_lib/djot_lint.py)
-  performs source-only validation and can invoke a pinned strict-Djot tool.
+  performs source-only validation, including local Djot links and component assets whether or not
+  those assets are Git-tracked, and can invoke a pinned strict-Djot tool.
 - [../slide_lib/native_export.py](../slide_lib/native_export.py) discovers decks, drives export,
   and selects output paths. [../slide_lib/terminal_output.py](../slide_lib/terminal_output.py)
   presents build progress and expected failures in the terminal.
@@ -78,7 +79,11 @@ enters only through the one-time import workflow.
   colors, arrow-ended lines, and transparent rectangles survive import only when the closed native
   source vocabulary can represent them; annotations require one unambiguous owning image.
 - [../slide_lib/importers/slide_plan.py](../slide_lib/importers/slide_plan.py) owns the
-  deterministic, geometry-first `SlidePlan`; it uses
+  deterministic, geometry-first `SlidePlan` and final semantic-layout decisions.
+  [../slide_lib/importers/source_regions.py](../slide_lib/importers/source_regions.py) owns
+  normalized text and visual source-region facts, and
+  [../slide_lib/importers/source_tables.py](../slide_lib/importers/source_tables.py) owns source
+  table geometry and table plans. The planner uses
   [../slide_lib/importers/visual_relations.py](../slide_lib/importers/visual_relations.py) only for
   conservative visual-relation evidence. The emitter normalizes difficult spatial compositions into
   standard native source-order panels and records review reasons; it never renders source layout as
@@ -88,6 +93,12 @@ enters only through the one-time import workflow.
   limitations need later reconstruction.
 - [../build_slides.sh](../build_slides.sh) is a thin convenience wrapper that builds every Djot
   deck below one supplied folder.
+- Reusable instructor utilities live in [../slide_lib/](../slide_lib/):
+  [../slide_lib/make_youtube_slide.py](../slide_lib/make_youtube_slide.py),
+  [../slide_lib/refresh_weather.py](../slide_lib/refresh_weather.py),
+  [../slide_lib/refresh_podcast.py](../slide_lib/refresh_podcast.py), and
+  [../slide_lib/render_tetrad_tables.py](../slide_lib/render_tetrad_tables.py). Each module owns
+  its command-line interface as well as its reusable implementation.
 
 ## Data flow
 
@@ -107,9 +118,9 @@ The one-time import path is separate:
 
 ```text
 trusted ODP
-  -> slide_lib.importers reader
-  -> source_model records and geometry-first SlidePlan
-  -> djot_emitter
+  -> odp_reader, odp_media, and odp_tables raw facts
+  -> source_model records, source_regions/source_tables, and geometry-first SlidePlan
+  -> djot_emitter and emission_flow
   -> validated .djot source and local assets
 ```
 
@@ -141,8 +152,10 @@ full-slide or composite raster fallbacks.
 - Add a typed source construct in [../slide_lib/native_model.py](../slide_lib/native_model.py),
   its parser support, and a native layout owner before accepting it in authored source.
 - Add trusted-import extraction or planning behavior under
-  [../slide_lib/importers/](../slide_lib/importers/) without moving normalized-region ownership out
-  of `slide_plan.py` or output syntax out of `djot_emitter.py`.
+  [../slide_lib/importers/](../slide_lib/importers/). Keep normalized source-region facts in
+  `source_regions.py`, table planning in `source_tables.py`, and emitted reading-flow grouping in
+  `emission_flow.py`; keep final semantic planning in `slide_plan.py` and output syntax in
+  `djot_emitter.py`.
 - Add permanent behavior-focused coverage under [../tests/](../tests/); reserve complete native
   application runs for [../tests/e2e/](../tests/e2e/).
 

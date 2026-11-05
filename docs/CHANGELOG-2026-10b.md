@@ -62,9 +62,9 @@
 - Track image-area regression using Lecture 06D slide 9: image coverage fell from 47.19% to
   12.13% of the slide. Add a non-blocking import audit and `image-audit` command after scope
   clarification; leave layouts and trimming unchanged. See
-  [image_area_regression_followup.md](active_plans/image_area_regression_followup.md).
+  [image_area_regression_followup.md](archive/image_area_regression_followup.md).
 - Track vector-preserving GDI conversion and the current preference for raster previews in
-  [metafile_vector_followup.md](active_plans/metafile_vector_followup.md).
+  [metafile_vector_followup.md](archive/metafile_vector_followup.md).
 
 - SVG/definition work: 143 focused tests pass; direct SVG payloads, aspect ratios, native caption
   geometry, and inherited/reset emphasis are covered. Full repository checks with cleanup disabled

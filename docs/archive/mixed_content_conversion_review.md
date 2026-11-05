@@ -1,11 +1,15 @@
 # Mixed-content conversion strategy review
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Date: 2026-10-26.
 
 ## Implemented strategy
 
 A panel groups a teaching sequence, not a fixed number of objects. The normative
-[mixed-content example](../../DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel) shows PNG,
+[mixed-content example](../DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel) shows PNG,
 editable text, and SVG in one `@body`. The conversion workflow now explicitly asks reviewers to
 try that arrangement for sequential content before assigning one region per object or marking
 an otherwise representable layout for replacement.

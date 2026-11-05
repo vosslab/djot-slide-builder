@@ -22,10 +22,19 @@ The 16:10 master-slide theme is `genetics/xlect99-template_2023.otp`. ODP is the
 artifact and LibreOffice derives its PDF. The theme is native presentation structure, not CSS or a
 browser-rendered slide.
 
-The included genetics corpus demonstrates the complete path: seventeen canonical source decks cover
-874 visible slides, with text, nested lists, links, images, and source-derived tables retained as
-native content. The corresponding [genetics/README.md](genetics/README.md) records the
-lecture-organized corpus and all-format acceptance evidence.
+The lecture-oriented Genetics and Biotechnology source trees demonstrate the complete path: source
+decks and their course-local assets live beside the lectures that use them, while generated ODP and
+PDF files remain delivery artifacts. The [Genetics corpus record](genetics/README.md) preserves the
+import inventory and validation evidence for its migrated decks.
+
+The command-line tools let an instructor:
+
+- build one Djot deck or a lecture tree as editable ODP, PDF, or both;
+- lint source and referenced assets before a build;
+- inspect capacity, title wrapping, runts, and imported-image coverage without rewriting source;
+- import a trusted ODP once, then maintain its Djot source; and
+- refresh deliberately selected announcement material with `python3 -m slide_lib.refresh_weather`
+  or `python3 -m slide_lib.refresh_podcast`.
 
 ## Project status
 
@@ -35,12 +44,12 @@ for authored reveals remains open, so do not infer animation playback from a suc
 PDF. See [docs/ROADMAP.md](docs/ROADMAP.md) for the current verification boundary.
 
 <!-- screenshots:begin (managed by screenshot-docs) -->
-![Rendered one-panel Disease vs. Disorder slide with three definition bullets](docs/screenshots/genetic_disorder_rendered_slide.png)
+![Rendered one-panel Disease vs. Disorder slide with three definition bullets](docs/screenshots/genetic_disorder_rendered_slide.webp)
 <!-- screenshots:end -->
 
-This text-only page is an ODP-derived PDF render of the Djot excerpt below. It confirms readable
-static output only; it does not prove that slide content is editable or that animations play in
-LibreOffice Impress.
+The image is an ODP-derived PDF render of the Djot excerpt below. It confirms readable static
+output only; it does not prove that slide content is editable or that animations play in LibreOffice
+Impress.
 
 ## Quick start
 
@@ -53,6 +62,7 @@ for strict-Djot acceptance. Complete details are in
 ```bash
 brew bundle
 source source_me.sh && python3 -m pip install -r pip_requirements.txt
+npm ci
 source source_me.sh && python3 deck_tools.py build \
   genetics/LECT01/djot/lect01b-genetic_disorders.djot --format odp
 ```
@@ -123,6 +133,7 @@ Start here:
   reveal behavior.
 - [genetics/README.md](genetics/README.md) - lecture-organized deck inventory and corpus evidence.
 - [docs/ROADMAP.md](docs/ROADMAP.md) - current milestones and open acceptance gates.
+- [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) - common local setup and conversion failures.
 
 Understand the implementation:
 

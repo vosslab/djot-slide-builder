@@ -10,7 +10,8 @@ rendered-slide converter.
 ONE-TIME EXISTING-PRESENTATION IMPORT
 
 trusted ODP -> bounded ODF archive/XML/manifest facts
-  -> odp_reader raw facts -> SlidePlan geometry -> djot_emitter
+  -> odp_reader raw facts, odp_media validation, and odp_tables reconstruction
+  -> source_regions/source_tables normalization -> SlidePlan geometry -> emission_flow -> djot_emitter
   -> staged Djot validation and reachable local assets -> non-overwriting draft publication
   -> render draft -> LLM source/draft evaluation -> repair and re-render
   -> accepted canonical Djot, with unresolved @replaceme markers retained
@@ -22,8 +23,9 @@ Difficult spatial compositions normalize into standard native
 source-order layouts with review reasons; no source slide or composite region is rendered and
 inserted as substitute content.
 
-The reader returns raw positioned facts. `slide_plan.py` validates and normalizes their geometry at
-one trusted boundary before semantic planning.
+The reader returns raw positioned facts. `source_regions.py` normalizes text and visual regions and
+`source_tables.py` plans table geometry at the trusted source boundary. `slide_plan.py` consumes
+those facts for final semantic planning.
 
 CURRENT REPEATABLE BUILD
 
@@ -55,17 +57,15 @@ semantic Deck + PresentationTheme.template_path
   -> write_odp(LayoutDeck, PresentationTheme, Path) -> editable ODP -> LibreOffice PDF
 ```
 
-Before `compile_layout_deck` accepts capacity, the approved WP-T2 font-metric contract resolves
-every styled run to a bundled, readable font face profile. It measures Pillow `getlength()`
-token-aware line breaks with OTP list text-start/hanging indents and mixed-face ascent/descent line
-boxes. Atkinson Hyperlegible Next serves ordinary text, Atkinson Hyperlegible Mono serves inline
-code, and IBM Plex Sans Condensed serves displayed literal URLs. Each includes four real styles.
-Missing, hash-mismatched, or unresolved base faces fail before publication. Missing glyphs within
-a valid face remain the rendering backend's responsibility, without Djot font overrides.
-Font/hash/style and all
-measurement inputs participate in the cache key, so host substitution or a stale result cannot
-silently alter capacity. The obsolete `0.25em` heuristic and generic 10-percent width cap are not
-part of this pipeline.
+Before `compile_layout_deck` accepts capacity, the font-metric contract resolves every styled run
+to a bundled readable face profile. It measures Pillow `getlength()` token-aware line breaks with
+OTP list text-start/hanging indents and mixed-face ascent/descent line boxes. Atkinson
+Hyperlegible Next serves ordinary text, Atkinson Hyperlegible Mono serves inline code, and IBM
+Plex Sans Condensed serves displayed literal URLs. Each includes four real styles. Missing,
+unreadable, wrongly identified, or embedding-restricted bundled faces fail before publication;
+system-font discovery is not a substitute. Missing glyphs within a valid face remain the rendering
+backend's responsibility, without Djot font overrides. The obsolete `0.25em` heuristic and
+generic 10-percent width cap are not part of this pipeline.
 
 ODP export embeds the original validated font bytes as face-specific `Fonts/` resources and maps
 each editable run to its stable ODF face declaration using the public font family name.
@@ -118,10 +118,15 @@ or invoking LibreOffice, then reports the same source-located capacity diagnosti
 | `deck_tools.py` | Sole user-facing application entry point | Build, capacity, import, lint, and visibility commands |
 | `slide_lib/cli.py` | Argument parsing and direct operation dispatch | Format-neutral command routing |
 | `slide_lib/importers/odp_to_djot.py` | Direct ODP orchestration and staged non-overwriting publication | Djot source, assets, and provenance |
-| `slide_lib/importers/odp_reader.py` | Bounded native ODP extraction | Raw runs, tables, images, notes, geometry, visibility, and page evidence |
+| `slide_lib/importers/odp_reader.py` | Bounded native ODP extraction and raw-fact orchestration | Raw runs, tables, images, notes, geometry, visibility, and page evidence |
+| `slide_lib/importers/odp_media.py` | Bounded embedded-image validation | Admitted image blobs and media limits |
+| `slide_lib/importers/odp_tables.py` | ODF table-cell reconstruction | Source table rows and cell runs |
 | `slide_lib/importers/source_model.py` | Raw imported-presentation facts | Reader-to-planner/emitter records |
-| `slide_lib/importers/slide_plan.py` | Positioned-fact validation and geometry-first semantic planning | Normalized regions and `SlidePlan` |
+| `slide_lib/importers/source_regions.py` | Raw text and visual region normalization | Normalized source-region facts |
+| `slide_lib/importers/source_tables.py` | Source table geometry and table planning | Table plans and cell geometry |
+| `slide_lib/importers/slide_plan.py` | Geometry-first semantic planning | Final `SlidePlan` |
 | `slide_lib/importers/topology.py` | Shared ordinary-layout topology matching | Registry-derived layout candidate |
+| `slide_lib/importers/emission_flow.py` | Component reading-order and footer-flow grouping | Ordered emission components |
 | `slide_lib/importers/djot_emitter.py` | Escaping and atomic component-to-Djot projection | Source-located Djot components |
 | `slide_lib/importers/import_report.py` | Lossless normalized-region and note diagnostics | JSON-ready migration evidence |
 | `slide_lib/djot_parser.py` | Extended-Djot framing, slots, actions, and block assembly | Typed slide model |
@@ -129,7 +134,9 @@ or invoking LibreOffice, then reports the same source-located capacity diagnosti
 | `slide_lib/djot_grammar.py` | Exact directive and action spellings derived from the layout registry | Shared Djot contract |
 | `slide_lib/djot_lint.py` | Strict-tool invocation and source-only Djot semantics | Source diagnostics |
 | `slide_lib/layout_registry.py` | Names, slots, topology, and LibreOffice classifier policies | `LayoutContract` |
-| `slide_lib/layout_measurement.py` | Font-backed capacity, flow, and title measurement | Resolved physical facts |
+| `slide_lib/layout_measurement.py` | Font-backed text, table, and title measurement | Resolved physical facts |
+| `slide_lib/layout_flow_measurement.py` | Image dimensions and mixed text/image allocation | Mixed-flow physical facts |
+| `slide_lib/layout_source_facts.py` | Unsupported source-fact inspection | Source validation facts |
 | `slide_lib/layout_builders.py` | Standard and multiple-choice object construction | `LayoutSlide` objects |
 | `slide_lib/layout_specialty_builders.py` | Cover, transition, closer, and focal-image construction | Native specialty objects |
 | `slide_lib/layout_engine.py` | Public one-to-one compilation orchestration | Immutable `CompilationResult` |
@@ -232,7 +239,7 @@ does publication replace final PDFs.
 | Fast Python tests | Parser, layout validation, native object construction, and source diagnostics |
 | Native semantic E2E | ODP text, lists, links, component images, template master, counts, and no full-slide image |
 | ODP-derived PDF review | Final-page containment and visual teaching clarity |
-| Strict Jotdown gate | Raw-Djot syntax before project slide semantics |
+| Optional pinned strict-Djot validator | Raw-Djot syntax before project slide semantics |
 | Importer acceptance | Source conversion, full-corpus build, provenance, and visual comparisons |
 | Native all-format acceptance | Eight sequential editable ODP and LibreOffice-derived PDF exports with matching counts |
 | M5 permanent structural tests | Bounded ODF/SMIL timing structure and parser attachment rules |
@@ -285,8 +292,8 @@ round trip, and ODP-to-PDF conversion.
 It removes artifacts after success and retains diagnostic outputs after failure. Exact rendered-ink
 percentages, source-line inventories, and per-run retained screenshots are not permanent acceptance
 requirements.
-The strict Jotdown gate is a one-time/source-acceptance check, not a replacement for permanent
-offline parser tests. Importer conversion, a full-corpus build, visual comparisons, and native
+An optional pinned strict-Djot validator is a source-acceptance check, not a replacement for
+permanent offline parser tests. Importer conversion, a full-corpus build, visual comparisons, and native
 all-format output are likewise one-time acceptance evidence. The native gate passed through strict
 lint for 8 decks/336 visible slides/185 image occurrences, `build_slides.sh genetics`, the Djot
 native-layout E2E, and ODP/PDF exports with editable text/direct images and the Lecture 02e native
@@ -294,7 +301,7 @@ table retained. Permanent pytest remains offline, fast, and
 deterministic.
 M5 permanent tests passed separately from its native ODP/PDF evidence. The headless evidence
 passed; attended Impress playback remains open because macOS permissions blocked slideshow control.
-See [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
+See [wp_a1_animation_fidelity.md](archive/wp_a1_animation_fidelity.md).
 
 ## Durable source boundary
 

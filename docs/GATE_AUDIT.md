@@ -1,5 +1,19 @@
 # Gate audit
 
+## Historical audit and current checks
+
+This document records the October 15, 2026 gate-removal decisions. Its removed-module inventory
+is historical: subsequent template propagation restored repository hygiene checks.
+
+- The current collected `tests/test_*.py` files define the checks that run today, including
+  source-file size, typing, security lint, link validation, and support-directory imports.
+- [PYTEST_STYLE.md](PYTEST_STYLE.md) defines current test policy;
+  [../tests/TESTS_README.md](../tests/TESTS_README.md) describes discovery and report behavior.
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) covers current recovery paths. Keep the historical
+  decisions below as context rather than an instruction to remove currently required checks.
+
+## October 15 snapshot
+
 The October 15, 2026 human guidance supersedes earlier requirements for the checks removed here.
 Useful operation, simple recovery, and meaningful output contracts determine what remains.
 This audit covers the collected pytest modules, both E2E runners, source/lint/build entry points,

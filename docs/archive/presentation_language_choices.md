@@ -1,5 +1,9 @@
 # Presentation-language brainstorming
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Status: decision rationale and historical comparison, not a syntax guide. Djot is the selected
 source-language foundation; the spatial slide grammar and public language name remain unfinished.
 This page retains the comparison that led there. It authorizes neither parser work nor a public name.
@@ -69,7 +73,7 @@ input. It may be unnecessary and must not alter the selected Djot foundation.
 - Write ordinary nested bulleted and numbered lists inside a named region.
 - Use ordinary Markdown image source where an image belongs.
 - Use hand-writable LaTeX math in standalone blocks or equation-only list items and table cells.
-  Mixed prose/math is unsupported; see [the syntax guide](../../DJOT_SLIDE_SYNTAX.md#equations).
+  Mixed prose/math is unsupported; see [the syntax guide](../DJOT_SLIDE_SYNTAX.md#equations).
 - Name a recurring teaching layout instead of repeating geometry or CSS.
 - Name the region where content belongs instead of relying on its ordinal position.
 - Keep routine structure shorter than HTML tags, HTML comments, or deeply nested containers.

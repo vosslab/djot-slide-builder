@@ -8,12 +8,17 @@ locate editable deliverables.
 
 - Author decks as repository-local `.djot` files. The build command accepts one file or searches a
   repository-local folder recursively for `.djot` files.
-- Reference component images with paths relative to the `.djot` deck's directory. Paths must name
-  existing local files and remain inside the repository. An imported deck keeps its generated media
+- Reference component images relative to the master deck's directory, including images in included
+  chapters. Use `repo:` for assets explicitly relative to the repository root. Paths must name
+  existing local files and remain inside the allowed source tree. An imported deck keeps its generated media
   beside the source as `assets/<deck-name>/`; its `.djot` image references point directly into that
   deck-local namespace.
 - [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines the source language and editable native
   destinations. [USAGE.md](USAGE.md) provides build and import commands.
+- Write Djot source as ASCII, using character references such as `&alpha;` or `&#8242;` for
+  non-ASCII visible text. Code and math retain their context-specific notation.
+- Keep copyrighted teaching images outside Git. Djot lint checks their local existence and safety;
+  the Markdown gate separately checks GitHub-browsable `.md` documentation links.
 
 ## Imported presentations
 
@@ -42,13 +47,22 @@ that template's native master page and supplies the PDF. CSS and browser renderi
 | `all` | Both output paths | Native ODP followed by its LibreOffice-derived PDF. |
 
 The deck filename stem supplies each output filename. A PDF is a distribution and review artifact;
-edit the ODP rather than treating the PDF as source. Build and format-selection commands are
+revise canonical Djot for reproducible changes, or edit the ODP for classroom use. Build commands are
 in [USAGE.md](USAGE.md); installation and macOS conversion prerequisites are in [INSTALL.md](INSTALL.md).
+
+## Local configuration and notes
+
+- `course_links.local.yaml` stores private course-to-URL mappings and remains ignored. Djot uses
+  `{{course_url:key}}` tokens; runtime builds require valid configured HTTPS destinations.
+- Source-only lint recognizes course URL tokens without requiring the private configuration.
+  It does not establish that those destinations are configured or reachable.
+- An authored `@notes` section exports as native ODP speaker notes. Notes remain separate from
+  projected slide content; their syntax is defined in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
 ## OpenDocument package boundary
 
 ODP and OTP inputs are ZIP-based OpenDocument packages. Validation requires the correct
-uncompressed first `mimetype` member, required XML members, safe unique member names, and
+`mimetype` content, required XML members, safe unique member names, and
 entity-safe XML. It rejects encrypted or symbolic-link members. Limits are 256 MB compressed,
 128 MB for one member, 512 MB expanded, and 2,000 members. The theme writer stages and validates a
 complete ODP before replacing the destination.

@@ -127,13 +127,13 @@ source source_me.sh && python3 deck_tools.py lint \
 Jotdown is the raw-Djot parser-validation lane; it complements rather than replaces a formatter,
 editor rule, or standalone linter. The remaining compatibility-suite lanes still need explicit
 decisions before this corpus can claim to pass every applicable Djot tool. See the
-[language exploration record](../docs/active_plans/decisions/djot_slide_extension_exploration.md)
+[language exploration record](../docs/archive/djot_slide_extension_exploration.md)
 for that governing requirement and the upstream Djot and Jotdown sources.
 
 Native acceptance is one-time evidence, not a permanent test. The permanent suite remains separately
 offline, fast, and deterministic. M5 structural tests are permanent; its headless LibreOffice
 bridge/PDF evidence passed once, while attended Impress click playback remains open in
-[wp_a1_animation_fidelity.md](../docs/active_plans/reports/wp_a1_animation_fidelity.md).
+[wp_a1_animation_fidelity.md](../docs/archive/wp_a1_animation_fidelity.md).
 
 ## Lecture 08F replacement
 

@@ -1,5 +1,9 @@
 # Djot slide-extension syntax inventory
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Status: extended-Djot is an implemented second front end to the shared native pipeline. This page
 retains the grammar decisions and strict-Djot boundary. Exact `===`, `@`, `<=`, and `=>` forms are
 implemented; component images and dollar-delimited mathematics remain distinct language contracts.
@@ -60,7 +64,7 @@ a new current source of truth. This page records language exploration where it i
 
 ## Experimental genetics corpus
 
-[`genetics/`](../../../genetics/README.md) holds a regenerable source import of the lecture-organized
+[`genetics/`](../../genetics/README.md) holds a regenerable source import of the lecture-organized
 genetics presentations. It exercises real lecture material without replacing the
 existing Marp source. Its dedicated ODP/PPTX importers preserve source order, component images, and
 source-hidden-slide state while deliberately omitting presenter notes and arbitrary styling or
@@ -111,7 +115,7 @@ blocks, tables, component-image syntax, and the reserved `$equation$` and `$$dis
 forms. Inline verbatim renders as editable fixed-width text. A validated table renders only in a
 layout with a native table destination. MathJax renders whole equation blocks and equation-only
 paragraphs, list items, or table cells as SVG; mixed prose/math is rejected. Equations remain
-editable in Djot. See [the current syntax guide](../../DJOT_SLIDE_SYNTAX.md#equations).
+editable in Djot. See [the current syntax guide](../DJOT_SLIDE_SYNTAX.md#equations).
 Fenced code and quote blocks remain source-located native-export rejections. `=== layout:`
 replaces Marp's `---` slide separator, and Marp-specific image modifiers are not adopted.
 
@@ -185,7 +189,7 @@ semantics do not transfer to Djot merely because their raw lines parse. In parti
 
 ## Reserved forms
 
-- `![alt](path)` is the official component-image form. It is unavailable for slide, layout, region,
+- `![alt](../active_plans/decisions/path)` is the official component-image form. It is unavailable for slide, layout, region,
   reveal, or other extension syntax. This reservation covers the ordinary Marp and Djot image
   surface only; it does not adopt Marp-specific background, sizing, positioning, or filter modifiers.
 - `$inline$` and `$$display$$` are the official inline and display mathematics forms. They are
@@ -198,7 +202,7 @@ Djot attributes are metadata attached to an element. For example:
 
 ```djot
 {source=electron-microscopy}
-![Microtubule](assets/microtubule.png)
+![Microtubule](../active_plans/decisions/assets/microtubule.png)
 ```
 
 The one-line attribute belongs to the next element, here the image, not to a later sequence of
@@ -239,7 +243,7 @@ fences. Djot permits multiline attributes; that capability is outside the curren
 
 1. Pin the remaining formatter/editor-rule lanes of the strict-Djot suite.
 2. Record attended LibreOffice Impress click playback in
-   [wp_a1_animation_fidelity.md](../reports/wp_a1_animation_fidelity.md). This is the sole remaining
+   [wp_a1_animation_fidelity.md](wp_a1_animation_fidelity.md). This is the sole remaining
    animation acceptance gate; implementation, structural tests, native ODP package/open-save
    inspection, and PDF final-state export have passed.
 3. Keep future native mappings behind a focused source diagnostic, editable-object design, and

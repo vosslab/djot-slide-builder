@@ -42,7 +42,7 @@ remain explicit tracking exceptions. Earlier vector assets retain their existing
 ODP import prefers original metafiles over raster previews and converts them directly to SVG.
 Failures and converted figures without live text receive review reasons. The measured behavior
 and LibreOffice compatibility corrections are recorded in
-[metafile_vector_followup.md](active_plans/metafile_vector_followup.md).
+[metafile_vector_followup.md](archive/metafile_vector_followup.md).
 
 Existing labels already baked into source artwork remain raster labels. Newly reconstructed labels
 are editable text. Review both at presentation scale, particularly after changing crops or fonts.

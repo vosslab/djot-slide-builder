@@ -100,7 +100,7 @@ followed by the SVG repair record where applicable.
   The genotype table contains 56 text elements and 34 vector paths with no bitmap images. Actual
   PDF review verified the correction for spurious Latin RTL flags. The 22 markers remain unchanged.
   The focused metafile/import/export suite passes 48 tests; see
-  [metafile_vector_followup.md](../../../docs/active_plans/metafile_vector_followup.md).
+  [metafile_vector_followup.md](../../../docs/archive/metafile_vector_followup.md).
 - Interactive slide-show playback was not tested; these repairs target static compositions.
 
 Strict native Jotdown lint and semantic lint pass for 5 sources, 203 slides, and 115 visible-content

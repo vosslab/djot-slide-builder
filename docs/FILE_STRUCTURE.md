@@ -26,8 +26,16 @@ Brewfile             declared macOS command-line and desktop dependencies
 - [../slide_lib/importers/](../slide_lib/importers/) contains the trusted existing-presentation
   import pipeline: ODP reader, source records, geometry and topology analysis, slide
   planning, native normalization, Djot emission, and lossless migration reports.
+  `odp_media.py` owns bounded imported-media validation, `odp_tables.py` reconstructs ODF tables,
+  `source_regions.py` owns normalized text and visual regions, `source_tables.py` owns source-table
+  plans, and `emission_flow.py` owns reading-flow grouping before Djot emission.
   `image_annotations.py` owns the bounded image-overlay import projection, while `odf_styles.py`
   resolves inherited properties from already-admitted ODF XML.
+- [../slide_lib/make_youtube_slide.py](../slide_lib/make_youtube_slide.py),
+  [../slide_lib/refresh_weather.py](../slide_lib/refresh_weather.py),
+  [../slide_lib/refresh_podcast.py](../slide_lib/refresh_podcast.py), and
+  [../slide_lib/render_tetrad_tables.py](../slide_lib/render_tetrad_tables.py) are reusable
+  instructor utility implementations and their supported module command-line interfaces.
 - [../genetics/](../genetics/) contains lecture-organized Djot sources. Each `LECT##/` folder owns
   `djot/` canonical sources and adjacent assets plus `old/` original ODP/PDF/ODS evidence. The
   top-level [genetics README](../genetics/README.md) records the corpus inventory.
@@ -44,8 +52,10 @@ Brewfile             declared macOS command-line and desktop dependencies
   [../tests/e2e/](../tests/e2e/) subtree holds non-browser whole-system runners that pytest does
   not collect; [../tests/TESTS_README.md](../tests/TESTS_README.md) explains the test lanes.
 - [active_plans/](active_plans/) holds in-flight planning, audit, report, decision,
-  and workstream records. Durable policy and architecture documents remain directly under
-  `docs/`.
+  and workstream records. It currently retains two Biotechnology Lecture 03 review reports with
+  unresolved teaching-content follow-up, tracked in [TODO.md](TODO.md). Completed implementation
+  plans and historical evidence live in [archive/](archive/); archived snapshots retain their
+  original status text beneath an archive notice. Durable policy stays directly under `docs/`.
 - [../devel/](../devel/) contains maintainer scripts for cleanup, versioning, changelog work,
   release preparation, and repository mapping. See [../devel/DEVEL_README.md](../devel/DEVEL_README.md).
 
@@ -55,7 +65,9 @@ Brewfile             declared macOS command-line and desktop dependencies
   The directory is ignored by Git and is not an authored source. Folder PDF conversion stages a
   complete set below it before replacing published PDFs.
 - Imported decks may include genuine source-image assets under an adjacent `assets/` directory. The
-  importer validates and publishes only reachable assets with the Djot source.
+  importer validates and publishes only reachable assets with the Djot source. Local deck assets
+  may be ignored rather than Git-tracked, including copyrighted images: the Djot lint validates
+  their local existence and safe containment, not Git index membership.
 - `graphify-out/` contains repository-local Graphify mapping output and is
   ignored by Git.
 
@@ -72,7 +84,8 @@ Brewfile             declared macOS command-line and desktop dependencies
 ## Where to add work
 
 - Add reusable presentation behavior under [../slide_lib/](../slide_lib/), grouping import-specific
-  code under [../slide_lib/importers/](../slide_lib/importers/).
+  code under [../slide_lib/importers/](../slide_lib/importers/). Put reusable utility logic and
+  its supported module command-line interface in `slide_lib/`.
 - Add lecture source and associated local assets under the matching lecture folder, such as
   [../genetics/LECT04/djot/](../genetics/LECT04/djot/) or
   [../biotech/LECT04/djot/](../biotech/LECT04/djot/). Keep original presentation evidence in that

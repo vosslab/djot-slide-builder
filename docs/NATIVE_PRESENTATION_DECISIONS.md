@@ -97,7 +97,7 @@ suite's native parser-validation lane; a clean parse is a meaningful raw-Djot li
 not provide formatting, editor-rule, or slide-semantic diagnostics, so those remaining suite lanes
 still need explicit selection.
 
-**Owner.** [djot_slide_extension_exploration.md](active_plans/decisions/djot_slide_extension_exploration.md)
+**Owner.** [djot_slide_extension_exploration.md](archive/djot_slide_extension_exploration.md)
 and a future approved language guide.
 
 ### Djot is the sole authored deck source
@@ -162,7 +162,7 @@ backgrounds, sizing, position, or filters. The implemented grammar owns slide st
 `%%` and generic overlay geometry outside `multiple-choice` remain open. MathJax renders whole
 equation SVGs under the constraints in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#equations).
 
-**Owner.** [djot_slide_extension_exploration.md](active_plans/decisions/djot_slide_extension_exploration.md)
+**Owner.** [djot_slide_extension_exploration.md](archive/djot_slide_extension_exploration.md)
 and [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
 
 ### Multiple-choice is an implemented bounded layout
@@ -181,7 +181,7 @@ contract. The answer occupies an editable popup region; ODF/SMIL timing and Impr
 playback remain M5 acceptance questions. No generally available overlay slot follows from this
 bounded layout.
 
-**Owner.** [djot_slide_extension_exploration.md](active_plans/decisions/djot_slide_extension_exploration.md)
+**Owner.** [djot_slide_extension_exploration.md](archive/djot_slide_extension_exploration.md)
 and a future approved language guide.
 
 ### Static linter enforces the implemented source contract
@@ -231,7 +231,7 @@ it. This is a small project-owned vocabulary, not an HTML-entity parser; add eac
 Never transform raw or verbatim content, whose literal spelling is part of its meaning. The strict
 Djot gate and extension linter test the ASCII source separately from native-output projection.
 
-**Owner.** [djot_slide_extension_exploration.md](active_plans/decisions/djot_slide_extension_exploration.md)
+**Owner.** [djot_slide_extension_exploration.md](archive/djot_slide_extension_exploration.md)
 and a future approved language guide.
 
 ### Historical (2026-09-08): native layout registry owned 18 layouts
@@ -313,7 +313,7 @@ Author image/text variation with the existing `two-panels` slots, alternating th
 consecutive slides. Explicit `@left` and `@right` placement makes that choice reviewable in Djot
 and preserves it when slides are reordered or hidden.
 
-**Owner.** [presentation_language_choices.md](active_plans/decisions/presentation_language_choices.md).
+**Owner.** [presentation_language_choices.md](archive/presentation_language_choices.md).
 
 ### Historical (2026-09-08): ODP-derived PDF used sibling PPTX output
 
@@ -691,7 +691,7 @@ automated reveal-state harness are the acceptance evidence.
 
 **Owner.** `slide_lib/multiple_choice_layout.py`, `slide_lib/layout_builders.py`,
 `slide_lib/djot_parser.py`, and
-[wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
+[wp_a1_animation_fidelity.md](archive/wp_a1_animation_fidelity.md).
 
 ### Historical (2026-09-08): animation used OOXML and Impress evidence
 
@@ -715,5 +715,5 @@ acceptance evidence. Unsupported reveal intent fails with its source location in
 disappearing. The unused target-text `blue overlay` experiment was retired.
 
 **Owner.** `slide_lib/odp_animation.py`, `slide_lib/pptx_animation.py`, [PIPELINE.md](PIPELINE.md), and
-[wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
+[wp_a1_animation_fidelity.md](archive/wp_a1_animation_fidelity.md).
 

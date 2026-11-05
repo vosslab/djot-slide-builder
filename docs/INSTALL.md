@@ -1,28 +1,22 @@
 # Install
 
-This repository runs local Python commands against the checkout to create editable ODP and PDF
-presentations. It imports trusted existing ODP into extended-Djot source.
-
-Building also works from a copied project folder without Git metadata or a Git executable.
-Run commands from the project root; when Git cannot identify it, the current directory is used.
+This checkout provides a local Python CLI for compiling extended-Djot source into editable ODP
+presentations and ODP-derived PDFs. Run commands from the repository root.
 
 ## Requirements
 
 - macOS with Homebrew.
-- Python 3.12; run repository Python commands through `source source_me.sh && python3`.
-- LibreOffice Impress for ODP input, conversion of native content to editable ODP, application of
-  the repository OTP master, and ODP-derived PDF output.
-- Poppler, including `pdfinfo`, for native end-to-end PDF verification.
-- The packages in `pip_requirements.txt`.
-- yt-dlp (included in the Python requirements) for explicit YouTube slide generation.
-  Ordinary builds use saved thumbnails and do not access YouTube.
-- Node.js and the locked npm dependencies for local MathJax equation rendering.
-- Jotdown 0.10.0 on `PATH` for strict-Djot source acceptance. `source_me.sh` adds the conventional
-  Cargo bin directory when it exists.
+- Python 3.12. Use `source source_me.sh && python3` for every repository Python command.
+- LibreOffice Impress for ODP import, ODP output, and PDF export.
+- Poppler for PDF inspection tools such as `pdfinfo`.
+- Node.js and the locked npm dependencies for local MathJax rendering.
+- Packages declared in `pip_requirements.txt`, including yt-dlp for the explicit YouTube-slide tool.
+
+`Brewfile` declares Python 3.12, Node.js, Poppler, and LibreOffice. The normal compiler uses
+saved local assets and does not need network access. The YouTube, weather, and podcast helpers
+fetch external content only when explicitly invoked.
 
 ## Install tools
-
-From the repository root, install the declared macOS tools and Python packages:
 
 ```bash
 brew bundle
@@ -30,29 +24,25 @@ source source_me.sh && python3 -m pip install -r pip_requirements.txt
 npm ci
 ```
 
-The Brewfile installs Python 3.12, Node.js, Poppler, and LibreOffice. MathJax, STIX2 math
-font data, and chemistry symbols are installed locally by `npm ci`; equation builds then
-work offline. Generated equation SVGs are reusable build artifacts under `_temp/math/`.
+`npm ci` installs MathJax and its locked dependencies locally. Generated equation SVGs are reusable
+artifacts below `_temp/math/`.
 
-Jotdown is a separate strict-Djot
-validator. Confirm the required installed version before running the source-acceptance command in
-[USAGE.md](USAGE.md):
+Keep the root `package.json` and `package-lock.json` dependency entries for `@mathjax/src` at
+`>=4.1.3`; do not restore the older `^4.0.0` range. Keep the root `@xmldom/xmldom` override at
+`>=0.9.12` when regenerating the lockfile.
 
-```bash
-source source_me.sh && jotdown --version
-```
+## Optional strict Djot gate
 
-Expected output: `jotdown 0.10.0`.
-
-To install that optional strict-source validator, use Rust/Cargo 1.82 or later:
+Project lint runs without external Djot software. A separate source-acceptance gate currently
+uses Jotdown 0.10.0 on `PATH`; this is the recorded accepted version, not a claim that newer
+versions are supported. Install it only when that gate is needed:
 
 ```bash
 cargo install jotdown --version 0.10.0 --locked --features cli
 source source_me.sh && jotdown --version
 ```
 
-Rust and Cargo are needed only to install Jotdown for strict-source acceptance; the normal build
-prerequisites above do not require them.
+Rust and Cargo are needed only for this optional command.
 
 ## Verify install
 
@@ -60,32 +50,35 @@ prerequisites above do not require them.
 source source_me.sh && python3 deck_tools.py --help
 ```
 
-## Conversion boundary
+## Local course links
 
-The LibreOffice desktop application may remain open during a headless conversion. The repository
-uses direct sequential `soffice --headless --norestore --convert-to --outdir` commands and the
-Impress PDF export filter.
+Keep private Discord and Zoom URLs in the ignored root file `course_links.local.yaml`; do not put
+them in tracked Djot. Use `{{course_url:key}}` in a deck, with keys selected from its
+`color-theme`. Public URLs remain directly in tracked source. A missing local configuration,
+referenced key, or invalid HTTPS URL stops a build that needs it.
 
-Import only trusted instructor-owned ODP files. Save legacy PPTX as ODP in LibreOffice first.
-Archive and image validation bounds
-repository processing, but it does not sandbox LibreOffice or make an untrusted presentation safe
-to open.
+```yaml
+genetics:
+  discord: https://example.org/genetics-invite
+  zoom_short: https://example.org/meeting
+biotechnology:
+  discord: https://example.org/biotech-invite
+  zoom: https://example.org/biotech-meeting
+```
 
-Continue with [USAGE.md](USAGE.md) for import, source validation, and native export commands.
+Copy this local file separately when setting up another checkout. Built ODP and PDF artifacts
+contain the resolved URLs and are suitable for student distribution.
 
-## MathJax dependency policy
+## LibreOffice boundary
 
-The instructor requires `"@mathjax/src": ">=4.1.3"` in `package.json` and the root dependency
-entry of `package-lock.json`. Do not replace it with `^4.0.0`, an exact pin, or an upper bound.
-Regenerate the lockfile when dependencies change and commit it with the manifest change.
-The lockfile records exact resolved packages normally; that does not change the open-ended
-manifest requirement.
+Import only trusted, instructor-owned ODP files. Save legacy PPTX as ODP in LibreOffice before
+importing it. LibreOffice runs external to an agent sandbox on this macOS host; run any command
+that can invoke it outside the sandbox. A successful conversion does not make an untrusted
+presentation safe to open.
 
-`tests/test_mathjax_dependency.py` protects this requirement because agents repeatedly restored
-the older range. If it fails, restore the required manifest range, regenerate the lockfile,
-and rerun the test plus the npm security audit. Do not lower the floor to make the test pass.
+See [USAGE.md](USAGE.md) for build, lint, import, and helper commands.
 
-The root manifest also overrides `@xmldom/xmldom` with `>=0.9.12` across the dependency tree.
-This excludes vulnerable older releases even when an upstream dependency declares `^0.9.10`.
-Keep this security minimum when regenerating the lockfile; upstream metadata may still display
-its original range, but npm resolves it under the root override.
+## Known gaps
+
+- [ ] Establish and record compatibility evidence before treating a Jotdown version other than
+  0.10.0 as accepted for the strict source gate.

@@ -44,8 +44,9 @@ source source_me.sh && python3 deck_tools.py lint path/to/deck.djot
 
 Fix the directive, slot, block, inline syntax, or local image path named in the diagnostic. Every
 deck begins with an exact `=== layout: <name>` directive, and `@<slot>` names only slots declared
-by that layout. Component image paths are relative to the `.djot` deck directory, must name existing
-local files, and must remain inside the repository. The authoring contract and full commands are in
+by that layout. Component images resolve relative to the master deck, or use `repo:` for explicit
+repository assets. They must exist locally and remain inside the allowed source tree.
+The authoring contract and full commands are in
 [USAGE.md](USAGE.md).
 
 ### Build rejects an input path
@@ -72,6 +73,27 @@ means the selected decks are floor-safe. Capacity inspection creates no presenta
 uses no LibreOffice conversion.
 
 ## Restore Office conversions
+
+### LibreOffice crashes under agent execution
+
+On this macOS host, run every LibreOffice-capable command outside the sandbox through the
+repository scripts. That includes PDF export and ODP imports, which may invoke LibreOffice to
+convert embedded metafiles. Resolve the execution boundary before retrying a failed conversion.
+
+## Interpret repository checks
+
+- A Djot missing-asset failure names a local file problem; tracking a copyrighted image is not
+  the repair. Check the master deck's asset base and any explicit `repo:` path after folder moves.
+- The Markdown checker covers `.md` documentation. Local-only generated outputs belong in prose
+  or code spans rather than GitHub links to ignored artifacts.
+- Source-only lint accepts course URL tokens without private configuration. A build still requires
+  `course_links.local.yaml`; configure its named course and key when expansion fails.
+- Bytecode appearing after `py_compile` or `compileall` is explicit compilation output. Those
+  commands bypass `PYTHONDONTWRITEBYTECODE`; use in-memory compilation for syntax-only checks.
+- A Podman connection failure comes from the mandatory host-wide storage check. Inspect the
+  configured machine and connection before rerunning; retain the budget check.
+
+## LibreOffice desktop state
 
 ### Build says LibreOffice is running
 

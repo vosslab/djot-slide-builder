@@ -1,6 +1,10 @@
 # Mixed-content scaling implementation review
 
-Date: 2026-10-26. Implements [the plan](../active/mixed_content_scaling.md).
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
+Date: 2026-10-26. Implements [the plan](mixed_content_scaling.md).
 
 ## Result
 

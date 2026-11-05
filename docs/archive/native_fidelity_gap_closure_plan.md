@@ -1,5 +1,9 @@
 # Plan: Close native fidelity gaps
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Status: implemented on 2026-09-15. The optional strict-Jotdown acceptance lane remains pending
 because the pinned executable is not installed in this checkout.
 
@@ -32,7 +36,7 @@ ratios, and font glyphs throughout the final presentation and PDF.
 ## Design philosophy
 
 Apply **Fix the design, not the symptom**, **Use the scientific method**, and **Perfect is the enemy
-of good** from [REPO_STYLE.md](../../REPO_STYLE.md). Use one semantic fact from source through the
+of good** from [REPO_STYLE.md](../REPO_STYLE.md). Use one semantic fact from source through the
 format-neutral model and into native ODF. Keep each vocabulary closed and justified by an actual
 lecture slide.
 
@@ -79,10 +83,10 @@ Evidence strategy for uncertain methods:
 
 | Area | Existing support | Observed gap |
 | --- | --- | --- |
-| Text color | [layout_content.py](../../../slide_lib/layout_content.py) stores a resolved foreground on every `RunStyle`; [odp_text.py](../../../slide_lib/odp_text.py) writes it as native ODF text color. | [djot_blocks.py](../../../slide_lib/djot_blocks.py) parses one-line attributes, but [layout_validation.py](../../../slide_lib/layout_validation.py) rejects every attributed block because no presentation mapping exists. Inline nodes do not yet carry attributes. |
+| Text color | [layout_content.py](../../slide_lib/layout_content.py) stores a resolved foreground on every `RunStyle`; [odp_text.py](../../slide_lib/odp_text.py) writes it as native ODF text color. | [djot_blocks.py](../../slide_lib/djot_blocks.py) parses one-line attributes, but [layout_validation.py](../../slide_lib/layout_validation.py) rejects every attributed block because no presentation mapping exists. Inline nodes do not yet carry attributes. |
 | Image geometry | The physical picture model stores both allocation and aspect-preserving displayed rectangles. | Source has no small overlay record tied to the displayed image rectangle. |
-| Native shapes | [layout_content.py](../../../slide_lib/layout_content.py) and [odp_export.py](../../../slide_lib/odp_export.py) support rectangles, rounded rectangles, lines, and stars. | Shape fills are always solid, lines have no arrow marker, and line geometry assumes a top-left to bottom-right direction. |
-| Overlay import | The importer already extracts positioned visual facts and identifies some image/text overlay relationships. | It does not emit an authored arrow or outline contract. `blue overlay` remains a deferred action in [djot_grammar.py](../../../slide_lib/djot_grammar.py). |
+| Native shapes | [layout_content.py](../../slide_lib/layout_content.py) and [odp_export.py](../../slide_lib/odp_export.py) support rectangles, rounded rectangles, lines, and stars. | Shape fills are always solid, lines have no arrow marker, and line geometry assumes a top-left to bottom-right direction. |
+| Overlay import | The importer already extracts positioned visual facts and identifies some image/text overlay relationships. | It does not emit an authored arrow or outline contract. `blue overlay` remains a deferred action in [djot_grammar.py](../../slide_lib/djot_grammar.py). |
 | Tables | Djot tables remain native `draw:frame` plus `table:table` content with explicit physical column widths and row heights. | `TABLE_BODY` falls back to the dark foreground color as its background. The measurement pass computes content-dependent row heights, while `table_object()` serializes equal-height rows. |
 
 The Genetics source currently contains 21 table blocks, including a headerless 8-by-4 restriction
@@ -99,10 +103,10 @@ Import support maps only objects that the source and exporter can preserve.
 | Milestone / Workstream | Component | Review boundary |
 | --- | --- | --- |
 | M1 / WS-E | Corpus evidence and native ODF reference probes | One report settles the smallest required vocabularies and ODF forms before implementation. |
-| M2 / WS-T | [layout_measurement.py](../../../slide_lib/layout_measurement.py), [layout_object_builders.py](../../../slide_lib/layout_object_builders.py), and [odp_text.py](../../../slide_lib/odp_text.py) | One table patch owns palette, row sizing, and any evidence-triggered column allocation. |
-| M3 / WS-C | [djot_blocks.py](../../../slide_lib/djot_blocks.py), [djot_inline.py](../../../slide_lib/djot_inline.py), [native_model.py](../../../slide_lib/native_model.py), and text projection | One color patch owns source scope, semantic roles, diagnostics, and run projection. |
+| M2 / WS-T | [layout_measurement.py](../../slide_lib/layout_measurement.py), [layout_object_builders.py](../../slide_lib/layout_object_builders.py), and [odp_text.py](../../slide_lib/odp_text.py) | One table patch owns palette, row sizing, and any evidence-triggered column allocation. |
+| M3 / WS-C | [djot_blocks.py](../../slide_lib/djot_blocks.py), [djot_inline.py](../../slide_lib/djot_inline.py), [native_model.py](../../slide_lib/native_model.py), and text projection | One color patch owns source scope, semantic roles, diagnostics, and run projection. |
 | M4 / WS-O | Djot grammar, semantic overlay records, physical line/shape geometry, layout compilation, and ODF shape export | One overlay contract precedes native serialization and import support. |
-| M5 / WS-I | [slide_lib/importers/](../../../slide_lib/importers), Genetics Djot sources, full build, and documentation | Import and corpus changes consume settled contracts; validation reviews the integrated artifacts. |
+| M5 / WS-I | [slide_lib/importers/](../../slide_lib/importers), Genetics Djot sources, full build, and documentation | Import and corpus changes consume settled contracts; validation reviews the integrated artifacts. |
 
 Shared production fixtures remain owned by their implementing work package. Temporary comparison
 files live under `/private/tmp` or an ignored `output_*` directory and stay out of Git.
@@ -260,9 +264,9 @@ files live under `/private/tmp` or an ignored `output_*` directory and stay out 
 ### Work package: WP-T1 unify table styling and row sizing
 
 - Owner: table implementation owner.
-- Touch points: [layout_measurement.py](../../../slide_lib/layout_measurement.py),
-  [layout_object_builders.py](../../../slide_lib/layout_object_builders.py),
-  [layout_content.py](../../../slide_lib/layout_content.py), [odp_text.py](../../../slide_lib/odp_text.py),
+- Touch points: [layout_measurement.py](../../slide_lib/layout_measurement.py),
+  [layout_object_builders.py](../../slide_lib/layout_object_builders.py),
+  [layout_content.py](../../slide_lib/layout_content.py), [odp_text.py](../../slide_lib/odp_text.py),
   and focused table tests.
 - Depends on: WP-E1 and WP-E2.
 - Acceptance criteria:
@@ -298,9 +302,9 @@ files live under `/private/tmp` or an ignored `output_*` directory and stay out 
 ### Work package: WP-C1 define semantic color scope
 
 - Owner: source-language implementation owner.
-- Touch points: [djot_blocks.py](../../../slide_lib/djot_blocks.py),
-  [djot_inline.py](../../../slide_lib/djot_inline.py), [native_model.py](../../../slide_lib/native_model.py),
-  and [DJOT_SLIDE_SYNTAX.md](../../DJOT_SLIDE_SYNTAX.md).
+- Touch points: [djot_blocks.py](../../slide_lib/djot_blocks.py),
+  [djot_inline.py](../../slide_lib/djot_inline.py), [native_model.py](../../slide_lib/native_model.py),
+  and [DJOT_SLIDE_SYNTAX.md](../DJOT_SLIDE_SYNTAX.md).
 - Depends on: WP-E1.
 - Acceptance criteria:
   - Reuse `{color=<role>}` on the next block or list item for block-wide color.
@@ -380,7 +384,7 @@ files live under `/private/tmp` or an ignored `output_*` directory and stay out 
 ### Work package: WP-O3 serialize native arrows and outlines
 
 - Owner: native ODF implementation owner.
-- Touch points: [odp_export.py](../../../slide_lib/odp_export.py), ODF style/marker definitions,
+- Touch points: [odp_export.py](../../slide_lib/odp_export.py), ODF style/marker definitions,
   accessibility metadata, and focused export tests.
 - Depends on: WP-O2 and the WP-E2 ODF decision.
 - Acceptance criteria:
@@ -395,7 +399,7 @@ files live under `/private/tmp` or an ignored `output_*` directory and stay out 
 ### Work package: WP-I1 preserve supported legacy facts
 
 - Owner: importer implementation owner.
-- Touch points: [slide_lib/importers/](../../../slide_lib/importers), Djot emission, review diagnostics,
+- Touch points: [slide_lib/importers/](../../slide_lib/importers), Djot emission, review diagnostics,
   and focused importer tests.
 - Depends on: WP-C2 and WP-O3.
 - Acceptance criteria:
@@ -546,13 +550,13 @@ a command spelling that the product does not promise.
 ## Documentation close-out requirements
 
 - Active plan / progress tracker: update this file's status and checklist after each completed patch.
-- Syntax: update [DJOT_SLIDE_SYNTAX.md](../../DJOT_SLIDE_SYNTAX.md) only after color and overlay
+- Syntax: update [DJOT_SLIDE_SYNTAX.md](../DJOT_SLIDE_SYNTAX.md) only after color and overlay
   grammar pass their M1 decisions and implementation gates.
-- Architecture: update [CODE_ARCHITECTURE.md](../../CODE_ARCHITECTURE.md) and
-  [FILE_STRUCTURE.md](../../FILE_STRUCTURE.md) only where responsibilities or files actually change.
-- Human guidance: retain the stated priorities in [HUMAN_GUIDANCE.md](../../HUMAN_GUIDANCE.md).
+- Architecture: update [CODE_ARCHITECTURE.md](../CODE_ARCHITECTURE.md) and
+  [FILE_STRUCTURE.md](../FILE_STRUCTURE.md) only where responsibilities or files actually change.
+- Human guidance: retain the stated priorities in [HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md).
 - Design decisions: add settled color, overlay, and table contracts to
-  [DESIGN_DECISIONS.md](../../DESIGN_DECISIONS.md) during close-out, respecting its source-file line
+  [DESIGN_DECISIONS.md](../DESIGN_DECISIONS.md) during close-out, respecting its source-file line
   limit through the repository's normal rotation or consolidation process.
 - `docs/CHANGELOG.md` entry: record each shipped behavior and its real verification evidence.
 - Acceptance report: record representative source pages, generated pages, native object evidence,

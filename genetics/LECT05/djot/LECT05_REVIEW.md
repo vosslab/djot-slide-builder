@@ -131,7 +131,7 @@ and December 8; the midterm is October 13 (Chapters 1-4), and the cumulative fin
 Homework dates were updated from the same sheet. The announcement deck remains 35 slides.
 
 Static and weekly content are still in one authored file. Reusable source inclusion remains
-specified by the [deck-includes plan](../../../docs/active_plans/active/djot_deck_includes_plan.md)
+specified by the [deck-includes plan](../../../docs/archive/djot_deck_includes_plan.md)
 and is not implemented by these corrections.
 
 ## Pedigree color corrections

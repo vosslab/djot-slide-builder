@@ -1,5 +1,9 @@
 # Preserve vector metafile figures
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Status: implemented and checked on October 6, 2026. No new layouts introduced.
 
 The instructor's genotype-notation table is sharp in the source presentation but pixelated after

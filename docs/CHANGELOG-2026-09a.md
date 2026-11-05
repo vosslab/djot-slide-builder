@@ -31,7 +31,7 @@
   diagnostic; it has no silent approximation.
 - M5 animation timing remains unimplemented and unverified. PowerPoint is absent on the available
   host, so timing XML, first-advance playback, and ODP animation survival await the attended
-  experiment in [wp_a1_animation_fidelity.md](active_plans/reports/wp_a1_animation_fidelity.md).
+  experiment in [wp_a1_animation_fidelity.md](archive/wp_a1_animation_fidelity.md).
 
 ### Developer Tests and Notes
 

@@ -1,5 +1,9 @@
 # Plan: Add reusable Djot deck includes
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 ## Context
 
 Announcement decks repeat a substantial set of classroom-stable slides across courses and
@@ -128,7 +132,7 @@ The included file contains ordinary layout blocks and may itself contain include
 
 @right
 
-![Zoom guidance](assets/zoom.png)
+![Zoom guidance](../active_plans/active/assets/zoom.png)
 ```
 
 Contract rules for the first implementation:

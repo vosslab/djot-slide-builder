@@ -1,461 +1,111 @@
 # Usage
 
-Use repository-owned `.djot` source to produce editable ODP and ODP-derived PDF output.
-Existing-presentation import is a one-time source migration workflow.
+Use extended-Djot source to create editable ODP presentations and ODP-derived PDFs. The primary
+entry point is `deck_tools.py`; selected utilities run as `slide_lib` modules.
 
-For lecture conversions, complete the [manager checklist](SLIDE_CONVERSION_CHECKLIST.md).
-For weekly `lect##a` preparation, use
-[ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md).
+## Quick start
 
-## Audit title wrapping and runts
-
-```bash
-source source_me.sh && python3 deck_tools.py audit genetics/LECT08/djot
-```
-
-Pass one Djot file or a folder tree. The JSON report lists wrapping content titles and
-paragraphs/bullets with a single-word final line or a final line narrower than one-third of
-the preceding line. A final displayed paragraph at the theme's maximum body font size is
-exempt from runt warnings; the report counts these exemptions separately. Earlier paragraphs,
-smaller text, wrapping titles, and oversized URLs still receive warnings. Each finding includes the authored slide number, source frame's starting
-line, paragraph number within that frame, chosen font size, and predicted text lines.
-Redirect stdout to save the report. Warnings return exit status 0; invalid input or compilation
-failure returns nonzero. Source text and presentation artifacts are unchanged.
-
-The audit shares the compiler's font metrics and wrapping calculation at final layout sizes;
-it does not invoke LibreOffice. Review the final rendered slide before editing wording.
-Hidden slides and cover/section/subsection/end titles are excluded. The report counts skipped
-paragraphs containing math or explicit line breaks (including compiler-inserted breaks for long
-tokens). Checks cover native text frames, including local headings; table cells and text inside
-images/SVGs need separate visual review. This audit supplements source lint and capacity checks.
-
-Visible URLs use condensed text and shrink independently, down to 12 pt, to stay on one line.
-If the space after a label is insufficient at 12 pt, the URL moves intact to the next line.
-The audit reports `url-too-wide` when an address still exceeds the full region at that floor;
-provide more layout width or review the displayed address. The compiler preserves its text and
-clickable destination. Paragraphs with an inserted URL line break are included in skipped counts.
-
-Calibration before independent URL fitting, against LECT08 A-F diagnostic PDFs: all 53 wrapping content
-titles were detected without extra title warnings. All 63 runt warnings met the runt rule
-in the PDFs, with exact line breaks matching in 61 cases. The two differences are URLs;
-native URL breaking is not modeled exactly. Fractional font sizing and ordinary hyphen/en-dash
-breaks corrected seven of the nine line-break differences in the original calibration.
-This measures warning precision on this corpus; missed runts and other decks remain unmeasured.
-
-## Mixed text and images
-
-A panel can contain text and multiple images in source order. The compiler tries half-point
-font sizes down to the theme's readable body floor and maximizes occupied bounding-box area.
-Images keep their aspect ratios and scale independently. Each image retains at least the
-body-floor/ordinary-font fraction of its size when fitted alone in the panel (currently 20/28).
-Review embedded diagram labels separately; geometric bounds cannot establish their readability.
-
-For a question image followed by text and a diagram, try all three in `@body` before dividing
-them among stacked panels. They share the available height automatically. See the
-[mixed-content example and layout guidance](DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel).
-The ODP converter now prefers this grouping for a clear vertical sequence, while retaining
-separate columns for side-by-side material and existing warnings for unresolved source facts.
-
-When those bounds cannot fit, the exported review slide receives a REPLACE ME watermark and
-a recommendation to split in its speaker notes and build/capacity diagnostics. Add `@replaceme`
-immediately below the slide's `=== layout:` line during source review, then split content into
-separate slides or panels as appropriate. Builds never silently rewrite authored Djot or split
-slides automatically. Already marked slides receive a single watermark.
-
-## Audit image shrinkage
-
-Compare original ODP image coverage with the actual displayed area in a converted Djot deck:
-
-```bash
-source source_me.sh && python3 deck_tools.py image-audit \
-    genetics/LECT06/lect06d-x_linked_genes_1.odp \
-    genetics/LECT06/djot/lect06d-x_linked_genes_1.djot --loss-threshold 30
-```
-
-The JSON report includes original/converted percentages of slide area, percentage-point change,
-relative area loss, and exact-white/transparent margin estimates. The default warning threshold is
-30% relative loss. New imports also record this audit and print shrinkage warnings. Slide order
-must match; replaced artwork and transformed frames are marked for manual review. The audit does
-not trim images, modify slides, or select layouts. See
-[image_area_regression_followup.md](active_plans/image_area_regression_followup.md) for limitations.
-
-## Generate a YouTube slide
-
-Generate a thumbnail, editable title, and full clickable YouTube watch URL:
-
-```bash
-source source_me.sh && python3 slide_lib.make_youtube_slide \
-    -v WXPBoFDqNVk -o genetics/LECT07/djot/youtube_chi_squared_test.djot
-```
-
-`-v` also accepts a YouTube watch URL or `youtu.be` URL. Place the output fragment beside
-the master deck, then insert it at the desired slide boundary:
-
-```djot
-=== include: youtube_chi_squared_test.djot
-```
-
-The generator uses yt-dlp to fetch metadata and one thumbnail, never video or audio.
-It validates the downloaded image and saves a PNG in `assets/youtube/` beside the fragment.
-Downloads are staged under root `_temp/` and removed when the command finishes. Failed downloads
-or image validation leave existing outputs intact. The generated slide uses the ordinary
-`big-image` layout; titles are literal text and URLs omit tracking and playlist parameters.
-
-Regeneration explicitly replaces the output fragment and its thumbnail, including any manual
-edits to that fragment. Normal builds use saved files offline. Included fragments inherit the
-master deck's theme and are omitted as standalone decks by folder builds.
-
-## Refresh the podcast announcement
-
-Preview the latest published Stump the Vibe Coder episode in a lecture's announcement deck:
-
-```bash
-source source_me.sh && python3 launchers/refresh_podcast.py genetics/LECT07
-```
-
-Save it after reviewing the diff:
-
-```bash
-source source_me.sh && python3 launchers/refresh_podcast.py genetics/LECT07 --write
-```
-
-Supply multiple lecture folders or specific `lect##a-*.djot` files to refresh several decks
-in one run. Folder selection includes all matching announcement files beneath that folder;
-use explicit filenames when it contains historical variants.
-
-The helper reads the playlist's public YouTube Atom feed and chooses the newest publication
-date among its recent entries. YouTube limits this feed to recent entries; it is not a complete
-playlist archive. No API key or video download is needed. It downloads the full-size episode
-thumbnail when available, otherwise the standard thumbnail, to `assets/stump_the_vibe_coder/`
-beside each source. The `big-image` slide has three lines in its caption box: a shortened episode title,
-`Watch the Video:` with its clickable URL, and `Play the Game:` with the clickable
-GitHub Pages project URL. The project link comes from the
-episode description; repository links are excluded. Missing or ambiguous GitHub Pages links
-stop the refresh before any deck is written.
-
-The slide goes immediately after the unique slide mentioning YouTube. Its thumbnail path under
-`assets/stump_the_vibe_coder/` identifies it for replacement on future runs, without metadata
-in Djot notes or comments. Missing or
-ambiguous insertion points stop the command before source writes. A refresh replaces the
-previous podcast slide rather than adding another. Old thumbnail files are retained.
-
-For historical announcements, select by each cover's lecture date:
-
-```bash
-source source_me.sh && python3 launchers/refresh_podcast.py genetics biotech --by-lecture-date --write
-```
-
-This selects the newest episode published on or before the lecture date in America/Chicago,
-including same-day publications. It never substitutes a later episode. If the recent RSS feed
-has no eligible entry, the command stops before changing decks; an older archive is needed.
-Folder discovery includes announcement filenames, not other `lect##a` course-introduction decks.
-All required thumbnails are fetched and validated before source writes.
-
-Build the selected decks normally afterward. Builds use saved local assets and never refresh
-the episode automatically, so a past lecture retains the episode selected for it.
-
-## Refresh the weather story
-
-Run this on lecture day or the preceding day to preview the current Chicago weather story:
-
-```bash
-source source_me.sh && python3 launchers/refresh_weather.py genetics/LECT09
-```
-
-Save the graphic and slide after reviewing the diff:
-
-```bash
-source source_me.sh && python3 launchers/refresh_weather.py genetics/LECT09 --write
-```
-
-Like the podcast tool, this accepts specific announcement files or lecture folders, including
-multiple selectors. Folder selection includes matching announcement variants; use explicit
-filenames when a folder contains historical versions.
-
-The tool reads the initially displayed story from
-[NWS Chicago](https://www.weather.gov/lot/weatherstory). It discovers every published tab's PNG URL,
-preserves the original graphic and complete forecast description, and inserts one `big-image`
-slide per story immediately before the unique Breakout Room Chat or Icebreaker heading.
-Refreshing replaces the saved weather slides. The forecast stays editable in `@caption`; the NWS credit, Chicago-local retrieval
-date, and complete source URL go in `@citation`. No extra discussion prompt or forecast summary
-is generated.
-
-Images are saved under `assets/weather_story/` beside the deck, with content-based filenames.
-Earlier images remain intact. All downloads, PNG validation, and insertion points are checked
-before source writes; errors leave existing snapshots intact. Preview downloads and validates
-the same resources but saves no files. Missing or mismatched story content requires reviewing
-the NWS page before retrying; all published tabs are included.
-
-Build normally afterward. Builds use saved local files and never refresh the forecast. This
-captures the current story, rather than looking up weather for the cover date. Use a temporary
-copy for testing instead of refreshing a past lecture unintentionally.
-
-Long `big-image` captions can grow downward into the unused lower margin. The image allocation
-and aspect ratio stay unchanged; short captions retain their existing geometry. A slide with
-`@citation` reserves its footer. Font fitting still applies after the extra room is used;
-approximately 15 pt is acceptable for the weather description, even if the 18 pt advisory remains.
-Caption text uses a native text frame for wrapping and selection; its rounded backing panel
-lives on the background master.
-
-## Build native decks
-
-Check every tracked standalone deck's slide 1 against the universal title format:
-
-```bash
-source source_me.sh && python3 -m pytest tests/test_slide_one.py
-```
-
-The check resolves includes, allows an unknown chapter to be omitted, and requires announcement
-topics to be exactly "Announcements" with no chapter. Failures identify the source location and
-write `report_slide_one.txt`: correct that cover using
-[HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md#slide-1-title-slide), then rerun the check.
-Canonical chapter assignments still require editorial verification against BPW.
-
-The separate native export acceptance runner checks that cover text survives into the PDF:
-
-```bash
-source source_me.sh && python3 -m pytest tests/e2e/test_slide_one_pdf.py
-```
-
-On macOS agents must run LibreOffice conversions outside the sandbox. Extractable PDF text does
-not replace checking selection and copying in the intended PDF viewer.
-
-Write editable ODP for one source deck:
+Build one lecture deck as editable ODP:
 
 ```bash
 source source_me.sh && python3 deck_tools.py build \
-	genetics/LECT01/djot/lect01b-genetic_disorders.djot -f odp
+  genetics/LECT01/djot/lect01b-genetic_disorders.djot --format odp
 ```
 
-Select one output format for a deck or a recursively searched source folder:
+Build all eligible Djot decks below a lecture folder as ODP and PDF:
 
 ```bash
-source source_me.sh && python3 deck_tools.py build genetics --format pdf
+./build_slides.sh genetics/LECT04
 ```
 
-Build every eligible source deck recursively below a folder as ODP and PDF:
+Outputs are written under `output/odp/` and `output/pdf/`. Open the ODP in LibreOffice Impress
+to edit it. Run the build outside an agent sandbox because PDF output invokes LibreOffice.
+
+## Core commands
 
 ```bash
-./build_slides.sh genetics
+# Validate extended-Djot structure, links, and local assets without building.
+source source_me.sh && python3 deck_tools.py lint genetics/LECT04
+
+# Require the recorded strict Jotdown source gate as well.
+source source_me.sh && python3 deck_tools.py lint --require-native \
+  --native-executable "$(command -v jotdown)" genetics/LECT04
+
+# Inspect fitting concerns without writing ODP or PDF artifacts.
+source source_me.sh && python3 deck_tools.py capacity genetics/LECT04
+
+# Report title wrapping and short final lines as JSON.
+source source_me.sh && python3 deck_tools.py audit genetics/LECT04
 ```
 
-Build only one lecture by targeting its lecture folder:
+`lint` is the project-specific Djot checker: it validates Djot assets and hyperlinks from the
+working tree, including untracked local images. The repository Markdown checker separately scans
+only `.md` documentation links; it does not interpret Djot source.
+
+Use `build --format all`, `build --format odp`, or `build --format pdf`; `all` is the default.
+Folder selection is recursive and includes `.djot` source only. In a copied checkout without Git
+metadata, run commands from the top-level folder containing `build_slides.sh` and `slide_lib/`.
+
+## Import an existing deck
 
 ```bash
-./build_slides.sh genetics/LECT04/
-```
+# Report resolved source-slide visibility first.
+source source_me.sh && python3 deck_tools.py visibility genetics/lecture.odp
 
-Git is optional for building. When Git cannot supply the project root, the current working
-directory is used for shared `repo:` includes, assets, and output. For a copy without `.git`,
-run the command from the top-level folder containing `build_slides.sh` and `slide_lib/`.
-
-The same selector builds the Biotechnology lecture folder:
-
-```bash
-./build_slides.sh biotech/LECT04/
-```
-
-Removed lecture sources are not retained beside their assets. Folder builds
-and lint do not select them. For LECT08F, use `lect08f-three_point_testcross_bpw.djot`; the
-textbook predecessor and original presentation evidence are retained for reference.
-
-`deck_tools.py build` accepts `--format all`, `odp`, or `pdf`; `all` is the default. It recognizes
-`.djot` source only, and folder discovery recursively selects only `.djot` files. Every deck compiles
-once: `odp` writes the editable format, `pdf` writes native ODP plus its LibreOffice-derived PDF,
-and `all` writes both. Outputs are written below `output/odp/` and `output/pdf/`.
-
-Slide text remains selectable in PDF. Theme frames, borders, and accents live on background
-masters so they cannot intercept text selection. Section/subsection and THE END outlines have
-no fill; their colors come from the page background. The cover retains its pale card.
-Rebuild existing outputs after a renderer fix. The fast regression is:
-
-```bash
-source source_me.sh && python3 -m pytest tests/test_odp_export.py -k decoration_is_master_owned -q
-```
-
-This checks decoration ownership, native text, and outline fills for eight layouts in two themes,
-including the image-caption panel.
-For real PDF acceptance, verify selection between points in the text and inspect the rendered
-page; successful `pdftotext` extraction alone does not establish viewer copy/paste behavior.
-
-Large decks can use a master `.djot` containing ordered `include: chapter.djot` lines.
-Edit each chapter separately and build the master for one combined ODP/PDF. Folder builds and lint
-select that master once, and errors retain the chapter filename and line. See
-[chapter includes](DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes) for paths and theme inheritance.
-
-A slide marked `hidden: true` stays in the Djot source and is written with native hidden page-style
-metadata in ODP; LibreOffice PDF export and classroom playback omit it. Capacity inspection and lint
-include hidden slides and their assets. Remove that line or use `hidden: false` to show it. See
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#hidden-slides).
-
-Keep source filenames, source slide numbers, and conversion provenance in separate import reports,
-slide maps, or review files, outside Djot notes and comments. Use `@notes` as presentation note cards for lecturing: speaking prompts, explanations, and
-reminders. Exclude selection history, publication metadata, refresh commands, repair details,
-and verification logs from Djot files. Notes end at the next named slot or slide directive and
-become editable ODP speaker notes; the normal PDF export omits them. See
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes) for an example.
-
-Use `@replaceme` when an existing slide cannot be faithfully represented in Djot. It adds a large red
-**REPLACE ME** watermark in ODP and PDF while retaining the editable slide underneath. New imports
-add it wherever the import report records review reasons. Evaluate those findings during conversion:
-keep it for representation failures and remove it after a faithful repair. It is not a general
-editorial-review flag.
-See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#slides-needing-replacement).
-
-The 16:10 master-slide theme comes from `genetics/xlect99-template_2023.otp`. ODP pages use that
-native master and LibreOffice exports PDF from the themed ODP; no CSS or browser rendering is part
-of the build.
-
-## Tetrad working figures
-
-Rebuild the three-row two-gene working tables from the saved problem data and adjacent
-ascus drawings:
-
-```bash
-source source_me.sh && python3 slide_lib.render_tetrad_tables \
-    genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/problem_data.json
-```
-
-This writes four self-contained SVGs beside the input: question/classified states for the
-linked and unlinked examples. It checks counts, parental classifications, and each drawing's
-genotype multiset before writing outputs. It changes neither the problem data nor Djot text.
-Normal deck builds use the saved figures and do not run this utility.
-
-Lecture 09G uses the actual BPW homework calculation table from
-`tetradlib.make_progeny_html_table`, saved as `three_gene_homework.html` beside the fixed data.
-Four saved SVG states keep all three genes in four separate spore boxes and progressively
-fill the A-B, A-C, and B-C columns. They embed one quality-90, 3x-resolution table capture
-with live SVG classification labels. Classification slides show the table large; sums and
-calculations use native class-count summaries. `three_gene_homework_sources.json` records
-the generator source hash, capture geometry, row data, and state meanings. The two-gene
-utility above does not rebuild these authoring snapshots.
-
-The ordered-tetrad figures reuse the BPW ordered-centromere generator's original HTML/CSS
-drawings, saved as `ordered_generator_art.html` beside `ordered_problem_data.json`. Their
-self-contained SVGs embed quality-90 artwork captures at three times CSS resolution, with
-live counts, classification labels, and mitotic-pair brackets. Two full ordered classification
-tables use these figures; the compact summation/substitution tables remain native. The utility
-above only rebuilds the unordered two-gene tables.
-
-SVG cell images are not supported by the native table exporter. These bounded figure tables
-keep images, borders, and live SVG labels together. Their titles, prompts, and calculations
-stay native Djot. Native Impress table-cell editing does not apply to the figure; edit its
-source data/artwork and rebuild. For python-docx output, raw SVG still needs a raster fallback.
-
-## Inspect capacity before a build
-
-Inspect one Djot deck or a recursively discovered folder without writing presentation artifacts:
-
-```bash
-source source_me.sh && python3 deck_tools.py capacity genetics/LECT04/
-```
-
-The command parses and compiles each selected deck once. It does not create ODP or PDF
-files, and it does not invoke LibreOffice. Each concern line identifies the source path and line,
-layout, slot, selected required size or serializer-safe minimum, readable floor, and the compiler
-region that constrained the slide. Its final line groups concerns by cause. It exits `0` with no
-output when every selected region stays at its floor and exits `1` after reporting any representable
-recovery or physical-capacity boundary. A normal `build` still reports representable recovery from
-the same compilation it exports.
-
-The project-owned `multiple-choice` teaching layout retains its question, choices, and answer-popup
-semantics. Its adaptive capacity selection evaluates supported choice geometries before reporting
-only the final selected recovery or physical boundary.
-
-Use `big-image` for one focal image with a short full-width caption at the bottom. The image and
-caption remain separate editable native objects.
-
-## Import existing slides
-
-Import a trusted ODP into a new extended-Djot deck and adjacent asset directory:
-
-```bash
+# Create Djot source and an adjacent asset folder from one trusted ODP.
 source source_me.sh && python3 deck_tools.py import genetics/lecture.odp \
   --output genetics/lecture.djot
 ```
 
-Save a legacy PPTX as ODP in LibreOffice, then import that ODP.
+The importer accepts trusted ODP only. Save a legacy PPTX as ODP in LibreOffice first. It refuses
+an existing output target or asset directory, so use a new destination. Imported Djot becomes the
+canonical editable source after review; the original presentation is migration evidence, not a
+second authoring source.
 
-Djot is the only import target. Inspect resolved source-slide visibility before import:
+## Practical helpers
 
-```bash
-source source_me.sh && python3 deck_tools.py visibility genetics/lecture.odp
-```
-
-The ODP importer reads a validated, bounded ODF package directly; it does not create a temporary
-PPTX. It refuses an existing output target or its asset directory and keeps text, tables when their
-native source metadata is available, ordinary images, and geometry-supported layouts editable.
-Difficult spatial compositions become standard native source-order panels with a review reason.
-Unsupported relationships remain visibly incomplete or fail with a source-located diagnostic; the
-importer never renders the source slide or a composite region as substitute content.
-
-Import retains hidden slides in source order with `hidden: true`, including their referenced
-assets and import-report notes. Each report record includes `hidden`; hidden records have no
-`visible_page`. Even an entirely hidden deck can be imported for later editing.
-
-If final publication fails after the importer publishes its new asset leaf, it removes that exact
-leaf and publishes no Djot source. Fix the reported failure, then rerun the command.
-
-This is a one-time migration aid. Choose and maintain one canonical source after review; the
-imported ODP does not become a second authoring source. See [PIPELINE.md](PIPELINE.md) for
-ownership and [genetics/README.md](../genetics/README.md) for the regenerable corpus boundary.
-
-## Validate Djot source
-
-Run the fast, source-only structural check while authoring:
+Generate a Djot fragment and saved thumbnail for one YouTube video:
 
 ```bash
-source source_me.sh && python3 deck_tools.py lint genetics/LECT04/
+source source_me.sh && python3 -m slide_lib.make_youtube_slide \
+  --video WXPBoFDqNVk --output genetics/LECT07/djot/youtube_chi_squared_test.djot
 ```
 
-Before a Djot source-acceptance decision, run the separate strict native-parser gate followed by
-the same semantic lint:
+Insert the fragment in its master deck with `=== include: youtube_chi_squared_test.djot`. The
+tool fetches only metadata and a thumbnail; ordinary builds use the saved image offline.
+
+Preview a weather or podcast announcement update. Add `--write` only after reviewing the printed
+diff; preview is the default.
 
 ```bash
-source source_me.sh && python3 deck_tools.py lint \
-  --require-native --native-executable "$(command -v jotdown)" genetics/LECT04/
+source source_me.sh && python3 -m slide_lib.refresh_weather genetics/LECT09
+source source_me.sh && python3 -m slide_lib.refresh_podcast genetics/LECT07 --by-lecture-date
 ```
 
-Fast lint is a permanent, offline behavior check. Strict Jotdown validation, real native export,
-and visual/Office review are one-time acceptance evidence, not replacements for each other. The
-LibreOffice Impress animation implementation, structural tests, native ODP package inspection,
-headless ODP open/save preservation, and PDF final-state export have passed. Attended click playback
-in Impress remains the sole open visual gate; do not infer it from a successful export. See
-[ROADMAP.md](ROADMAP.md).
+Both module commands accept lecture folders or `lect##a` Djot files. They fetch and validate required
+images before a `--write` update. The weather helper captures the current Chicago NWS story; the
+podcast helper uses the public feed and can select the latest episode on or before each lecture
+date with `--by-lecture-date`.
 
-## Authoring boundaries
+Rebuild the saved two-gene tetrad working-table SVGs from their adjacent data and ascus drawings:
 
-Use [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) for the normative source language, including
-layouts, slots, content blocks, component images, tables, and reveals. Build and capacity commands
-report source-located unsupported-content and fitting concerns.
+```bash
+source source_me.sh && python3 -m slide_lib.render_tetrad_tables \
+  genetics/LECT09/djot/assets/lect09c-tetrad_worked_examples_bpw/problem_data.json
+```
+
+The utility writes four SVGs beside its input. It does not rebuild the separate saved three-gene
+homework snapshots.
+
+## More authoring guidance
+
+Use [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) for layouts, slots, tables, speaker notes, and
+chapter includes. Use [SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md) while
+converting a lecture and [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md) for weekly
+announcement decks. Put private course URLs in the ignored
+[`course_links.local.yaml` setup](INSTALL.md#local-course-links), rather than tracked source.
 
 ## Known gaps
 
-- [ ] Record attended LibreOffice Impress click playback before claiming native animation playback
-  support.
-
-## Local course links
-
-Keep private Discord and Zoom URLs in ignored root `course_links.local.yaml`. Keys are course theme
-names, matching `color-theme` in Djot:
-
-```yaml
-genetics:
-  discord: https://example.org/genetics-invite
-  office_hours: https://example.org/office-hours
-  zoom_short: https://example.org/meeting
-biotechnology:
-  discord: https://example.org/biotech-invite
-  office_hours: https://example.org/office-hours
-  zoom_short: https://example.org/meeting
-  zoom: https://example.org/biotech-meeting
-```
-
-Write `{{course_url:discord}}` wherever the visible, clickable URL belongs. Any key can be
-used for additional private links. Public links, including all YouTube URLs, stay directly
-in tracked Djot sources. Existing QR images remain alongside links; update their targets
-when changing a URL. Included chapters use the deck's course theme. Missing configuration,
-missing referenced keys, and invalid HTTPS URLs stop the build with a diagnostic. Decks
-without references do not need this file. Copy the local YAML separately to a new checkout.
-Generated ODP/PDF files contain the URLs and remain student distribution artifacts. Ignoring
-the configuration does not erase URLs already committed in source or Git history.
+- [ ] Record attended LibreOffice Impress click-playback evidence before claiming native animation
+  playback support.

@@ -1,5 +1,9 @@
 # Native fidelity gap closure
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 Date: 2026-09-15
 
 ## Corpus evidence

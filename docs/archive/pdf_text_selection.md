@@ -1,5 +1,9 @@
 # PDF text selection repair
 
+Archived 2026-11-05 as implementation, review, or design history. Original status and
+checklists below describe that snapshot; current verification tasks are tracked in
+[ROADMAP.md](../ROADMAP.md) and [TODO.md](../TODO.md).
+
 The instructor reported that decorative frames prevented copying text from 09D objectives,
 definitions, section, closing, and reference slides. The earlier cover fix applied only to
 title-slide decoration. This revision applies that background-master boundary to all theme shapes.
@@ -17,7 +21,7 @@ title-slide decoration. This revision applies that background-master boundary to
 
 ## Regression test
 
-[test_odp_export.py](../../../tests/test_odp_export.py) extends the existing cover regression
+[test_odp_export.py](../../tests/test_odp_export.py) extends the existing cover regression
 to seven layouts and two themes: 14 fast cases, without LibreOffice. It requires background
 ownership for theme decoration, native slide text, no fill on outline frames, and decoration
 stacking above the course background. A failure requires fixing that export boundary.

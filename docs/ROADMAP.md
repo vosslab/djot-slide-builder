@@ -18,10 +18,16 @@ editable-object pipeline.
 | M6 | Linter and corpus | Complete | Strict lint and one-time eight-deck corpus/reproducibility acceptance |
 | M7 | Verification and close-out | Complete | Permanent and native acceptance passed; attended animation observation remains separate |
 
-## Completed design and implementation
+## Completed implementation and historical acceptance
 
 - [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines the completed source language, layout,
   content, and reveal contract. The layout registry implements its canonical names and slots.
+- Authored `@notes` sections parse into speaker-note records and export to native ODP notes.
+  Includes preserve physical source locations and support shared repository assets.
+- Djot source lint checks local assets and hyperlinks independently of Git tracking and private
+  course URL configuration. Builds resolve configured course URLs before export.
+- Import and measurement responsibilities use the focused modules documented in
+  [CODE_ARCHITECTURE.md](CODE_ARCHITECTURE.md); their line-limit advisories are resolved.
 - M5's bounded adapters support object APPEAR/FADE and paragraph APPEAR on click. Permanent
   structural tests and parser contract tests passed; a LibreOffice ODP round trip retained native
   layouts and editable objects, and PDF export retained the final state.
@@ -45,8 +51,6 @@ editable-object pipeline.
    headless ODP round trip and ODP-derived PDF final state already passed.
 2. Complete the remaining strict-Djot formatter/editor-rule suite selection before claiming full
    compatibility-suite coverage.
-3. Decide whether presenter notes need authored Djot syntax before promoting their losslessly
-   retained import-report text into rebuilt native note objects.
 
 ## Planned layout extension
 
