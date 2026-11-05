@@ -1,5 +1,8 @@
 # Human guidance
 
+- Retain tests enforcing Djot syntax and authoring guidelines even when their exact assertions
+  would otherwise look fragile. Tests must not force implementation to stay in monolithic files.
+
 - Keep bytecode caches visible to detect agent mistakes; do not add a `__pycache__` ignore rule.
   Honor the bootstrapped Python environment when running checks.
 

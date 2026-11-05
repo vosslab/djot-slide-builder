@@ -2,6 +2,7 @@
 
 import dataclasses
 
+import slide_lib.layout_table_measurement
 import slide_lib.capacity_report
 import slide_lib.citation_layout
 import slide_lib.compilation_result
@@ -27,7 +28,7 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 		slide_lib.math_render.lower_display_math(source) for source in deck.slides))
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
 	session.prepare_equations(deck)
-	session.prepare_table_groups(deck)
+	slide_lib.layout_table_measurement.prepare_table_groups(deck, session)
 	slides: list[slide_lib.layout_model.LayoutSlide] = []
 	for index, source in enumerate(deck.slides):
 		diagnostic_start = len(session.capacity_diagnostics)

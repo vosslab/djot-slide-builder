@@ -1,10 +1,9 @@
 """Geometry-first planning for imported presentation slides."""
 import dataclasses
-import itertools
-import slide_lib.importers.geometry as geometry
+import slide_lib.importers.figure_regions as figure_regions
+import slide_lib.importers.multiple_choice_plan as multiple_choice_plan
 import slide_lib.importers.heading_relation as heading_relation
 import slide_lib.importers.visual_relations as visual_relations
-import slide_lib.importers.rotated_vector_label as rotated_vector_label
 import slide_lib.importers.source_regions as source_regions
 import slide_lib.importers.source_tables as source_tables
 import slide_lib.importers.topology as topology
@@ -14,35 +13,7 @@ TITLE_BOTTOM_RATIO = 0.28
 TITLE_MIN_WIDTH_RATIO = 0.34
 SOLITARY_TITLE_TOP_RATIO = 0.12
 SOLITARY_TITLE_MIN_WIDTH_RATIO = 0.75
-CONTENT_IMAGE_MIN_AREA_RATIO = 0.12
-SINGLE_ANNOTATION_IMAGE_MIN_AREA_RATIO = 0.50
-ANNOTATION_MINIMUM_COUNT = 2
-ANNOTATION_CENTER_SPAN_RATIO = 0.12
-ANNOTATION_PROXIMITY_RATIO = 0.08
-VECTOR_COMPONENT_PROXIMITY_RATIO = 0.08
-FLOW_VERTICAL_CENTER_SEPARATION_RATIO = 0.05
 FLOW_TEXT_BOUNDARY_EPSILON_RATIO = 0.02
-RELATION_EDGE_LABEL_PADDING = 0.02
-TINY_DECORATIVE_VECTOR_AREA_RATIO = 0.002
-TINY_DECORATIVE_VECTOR_SPAN_RATIO = 0.04
-SHARED_FIGURE_ROW_ALIGNMENT_RATIO = 0.06
-SHARED_FIGURE_CAPTION_MIN_SPAN_RATIO = 0.50
-CONNECTOR_AXIAL_OVERLAP_RATIO = 0.50
-CONNECTOR_PERPENDICULAR_PROXIMITY_RATIO = 0.04
-MULTIPLE_CHOICE_MIN_PLACEHOLDER_CONFIDENCE = 0.75
-MULTIPLE_CHOICE_ANSWER_MIN_CENTER_X_RATIO = 0.65
-MULTIPLE_CHOICE_ANSWER_MIN_CENTER_Y_RATIO = 0.65
-MULTIPLE_CHOICE_ANSWER_MAX_WIDTH_RATIO = 0.50
-MC_ANSWER_MAX_NORMALIZED_AREA_RATIO = 0.16
-MC_ANSWER_BELOW_GAP_RATIO = 0.08
-CONTAINED_VECTOR_LABEL_MAX_PARAGRAPHS = 3
-REPEATED_LABEL_SIDE_GAP_RATIO = 0.08
-REPEATED_LABEL_CENTER_TOLERANCE_RATIO = 0.10
-SIDE_LABEL_BORDER_OVERLAP = 0.02
-MULTIPLE_CHOICE_FIGURE_MAX_WIDTH_RATIO = 0.60
-MULTIPLE_CHOICE_FIGURE_MAX_HEIGHT_RATIO = 0.35
-MULTIPLE_CHOICE_FIGURE_CENTER_OFFSET_RATIO = 0.20
-MULTIPLE_CHOICE_FIGURE_TOP_CENTER_RATIO = 0.35
 @dataclasses.dataclass(frozen=True)
 class TitleDecision:
 	"""The deterministic title selection and the geometric evidence used."""
@@ -57,32 +28,14 @@ class SlotPlan:
 	flows_in_source_order: bool = False
 	relation_id: str = ""
 @dataclasses.dataclass(frozen=True)
-class ContentRegionPlan:
-	"""A legacy spatial relationship requiring native normalization or review."""
-	region_key: str
-	bounds: geometry.NormalizedBounds
-	text_regions: tuple[source_regions.SourceTextRegion, ...]
-	image_regions: tuple[source_regions.SourceImageRegion, ...]
-	kind: str = "diagram"
-	classification_reason: str = "qualified pictorial annotation component"
-	local_heading: source_regions.SourceTextRegion | None = None
-@dataclasses.dataclass(frozen=True)
-class MultipleChoicePlan:
-	"""A complete structural question-and-answer pattern from one source slide."""
-	question: source_regions.SourceTextRegion
-	answer: source_regions.SourceTextRegion
-	image: source_regions.SourceImageRegion | None
-	reason: str
-	question_visual_region: ContentRegionPlan | None = None
-@dataclasses.dataclass(frozen=True)
 class SlidePlan:
 	"""Presentation-neutral import plan consumed by source emitters/renderers."""
 	title: TitleDecision
 	slots: tuple[SlotPlan, ...]
-	content_region: ContentRegionPlan | None = None
+	content_region: figure_regions.ContentRegionPlan | None = None
 	tables: tuple[source_tables.TablePlan, ...] = ()
 	review_reason: str | None = None
-	multiple_choice: MultipleChoicePlan | None = None
+	multiple_choice: multiple_choice_plan.MultipleChoicePlan | None = None
 def select_title(text_regions: tuple[source_regions.SourceTextRegion, ...]) -> TitleDecision:
 	"""Choose a native title from shallow, wide source evidence first."""
 	plausible = tuple(
@@ -140,537 +93,10 @@ def select_solitary_title(
 	):
 		return None
 	return TitleDecision(region, "solitary title identity")
-def center_is_near_image(inner: geometry.NormalizedBounds,
-		image: geometry.NormalizedBounds) -> bool:
-	"""Keep nearby diagram labels in a bounded envelope scaled to its anchor."""
-	center_x = (inner.left + inner.right) / 2
-	center_y = (inner.top + inner.bottom) / 2
-	margin_x = image.width * ANNOTATION_PROXIMITY_RATIO
-	margin_y = image.height * ANNOTATION_PROXIMITY_RATIO
-	return (
-		image.left - margin_x <= center_x <= image.right + margin_x
-		and image.top - margin_y <= center_y <= image.bottom + margin_y
-	)
-def annotation_centers_are_distributed(
-	annotations: tuple[source_regions.SourceTextRegion, ...],
-) -> bool:
-	"""Require several labels to occupy a real diagram component, not one caption."""
-	centers_x = tuple((item.bounds.left + item.bounds.right) / 2 for item in annotations)
-	centers_y = tuple((item.bounds.top + item.bounds.bottom) / 2 for item in annotations)
-	return (
-		max(centers_x) - min(centers_x) >= ANNOTATION_CENTER_SPAN_RATIO
-		or max(centers_y) - min(centers_y) >= ANNOTATION_CENTER_SPAN_RATIO
-	)
-def has_visible_list_structure(region: source_regions.SourceTextRegion) -> bool:
-	"""Require source hierarchy that separates one prompt from visible options."""
-	if len(region.paragraphs) < 2:
-		return False
-	prompt_level = region.paragraphs[0][0]
-	return any(level > prompt_level for level, _text in region.paragraphs[1:])
-def is_multiple_choice_answer(region: source_regions.SourceTextRegion, question: source_regions.SourceTextRegion) -> bool:
-	"""Recognize one short lower-right non-placeholder answer callout."""
-	center_x = (region.bounds.left + region.bounds.right) / 2
-	center_y = (region.bounds.top + region.bounds.bottom) / 2
-	return (
-		region.placeholder_confidence == 0.0
-		and 1 <= len(region.paragraphs) <= 2
-		and len({level for level, _text in region.paragraphs}) == 1
-		and center_x >= MULTIPLE_CHOICE_ANSWER_MIN_CENTER_X_RATIO
-		and center_y >= MULTIPLE_CHOICE_ANSWER_MIN_CENTER_Y_RATIO
-		and region.bounds.width <= MULTIPLE_CHOICE_ANSWER_MAX_WIDTH_RATIO
-		and region.bounds.width * region.bounds.height <= MC_ANSWER_MAX_NORMALIZED_AREA_RATIO
-		and (bounds_contains(question.bounds, region.bounds, 0.0)
-			or answer_below_question(region.bounds, question.bounds))
-	)
-def answer_below_question(answer: geometry.NormalizedBounds,
-		question: geometry.NormalizedBounds) -> bool:
-	"""Allow a compact lower-right callout directly beneath its primary prompt."""
-	return (answer.top >= question.bottom - geometry.FLOW_BORDER_CONTACT_RATIO
-		and answer.top - question.bottom <= MC_ANSWER_BELOW_GAP_RATIO
-		and min(answer.right, question.right) > max(answer.left, question.left))
-def is_multiple_choice_figure(
-	image: source_regions.SourceImageRegion,
-	question: source_regions.SourceTextRegion,
-) -> bool:
-	"""Accept one bounded centered top figure inside a coarse question placeholder."""
-	image_center_x = (image.bounds.left + image.bounds.right) / 2
-	image_center_y = (image.bounds.top + image.bounds.bottom) / 2
-	question_center_y = (question.bounds.top + question.bounds.bottom) / 2
-	return (
-		question.bounds.left <= image.bounds.left <= image.bounds.right <= question.bounds.right
-		and question.bounds.top <= image.bounds.top <= image.bounds.bottom <= question.bounds.bottom
-		and abs(image_center_x - (question.bounds.left + question.bounds.right) / 2) <= \
-			question.bounds.width * MULTIPLE_CHOICE_FIGURE_CENTER_OFFSET_RATIO
-		and image_center_y < question_center_y
-		and image_center_y - question.bounds.top <= \
-			question.bounds.height * MULTIPLE_CHOICE_FIGURE_TOP_CENTER_RATIO
-		and image.bounds.width <= question.bounds.width * MULTIPLE_CHOICE_FIGURE_MAX_WIDTH_RATIO
-		and image.bounds.height <= question.bounds.height * MULTIPLE_CHOICE_FIGURE_MAX_HEIGHT_RATIO
-	)
-def multiple_choice_plan(
-	text_regions: tuple[source_regions.SourceTextRegion, ...],
-	image_regions: tuple[source_regions.SourceImageRegion, ...],
-) -> MultipleChoicePlan | None:
-	"""Recognize only a complete editable question/list/answer source structure."""
-	questions = tuple(region for region in text_regions if (
-		region.placeholder_confidence >= MULTIPLE_CHOICE_MIN_PLACEHOLDER_CONFIDENCE
-		and has_visible_list_structure(region)
-	))
-	if len(questions) != 1:
-		return None
-	question = questions[0]
-	answers = tuple(region for region in text_regions if is_multiple_choice_answer(region, question))
-	if len(answers) != 1:
-		return None
-	answer = answers[0]
-	if answer is question:
-		return None
-	overlay_text = tuple(region for region in text_regions if region not in (question, answer))
-	visuals = tuple(image for image in image_regions if image.source_kind in {"picture", "vector"})
-	connectors = tuple(image for image in image_regions if image.source_kind == "connector")
-	if len(visuals) + len(connectors) != len(image_regions):
-		return None
-	if not overlay_text and not image_regions:
-		return MultipleChoicePlan(question, answer, None, "complete question-list-answer structure")
-	if not overlay_text and len(visuals) == 1 and len(image_regions) == 1 and \
-		is_multiple_choice_figure(visuals[0], question):
-		return MultipleChoicePlan(question, answer, visuals[0],
-			"complete question-list-answer structure with top figure")
-	if any(not geometry.overlaps_or_contains(region.bounds, question.bounds) or
-			geometry.overlaps_or_contains(region.bounds, answer.bounds) for region in overlay_text) or \
-		any(not is_multiple_choice_figure(image, question) for image in visuals):
-		return None
-	members = (*overlay_text, *visuals)
-	if not members or any(not any(geometry.overlaps_or_contains(connector.bounds, member.bounds)
-		for member in members) for connector in connectors):
-		return None
-	bounds = question.bounds
-	for member in (*members, *connectors):
-		bounds = bounds.union(member.bounds)
-	visual = ContentRegionPlan("multiple-choice-visual-1", bounds, overlay_text, (*visuals, *connectors),
-		"multiple-choice-overlay", "question-associated overlay component")
-	return MultipleChoicePlan(question, answer, None,
-		"complete question-list-answer structure with associated overlay", visual)
-def content_region(
-	text_regions: tuple[source_regions.SourceTextRegion, ...],
-	image_regions: tuple[source_regions.SourceImageRegion, ...],
-	title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Plan one diagram-plus-annotation region without flattening its labels."""
-	if not image_regions:
-		return None
-	available_text = tuple(region for region in text_regions if region is not title.region)
-	for image_index, image in enumerate(image_regions, start=1):
-		if image.source_kind not in {"picture", "vector"} or \
-			image.bounds.width * image.bounds.height < CONTENT_IMAGE_MIN_AREA_RATIO:
-			continue
-		qualifying_annotations = tuple(
-			region for region in available_text
-			if (
-				(center_is_near_image(region.bounds, image.bounds)
-				or geometry.overlaps_or_contains(region.bounds, image.bounds))
-				and region.placeholder_confidence == 0.0
-			)
-		)
-		single_interior = tuple(region for region in available_text if (
-			region.source_kind == "auto-shape"
-			and region.placeholder_confidence == 0.0
-			and geometry.center_is_within(region.bounds, image.bounds)
-		))
-		single_caption_qualified = (
-			image.bounds.width * image.bounds.height >= SINGLE_ANNOTATION_IMAGE_MIN_AREA_RATIO
-			and len(image_regions) == 1
-			and len(single_interior) == 1
-			and all(
-				region is single_interior[0] or (
-					region.source_kind == "auto-shape"
-					and region.placeholder_confidence == 0.0
-					and not center_is_near_image(region.bounds, image.bounds)
-					and not geometry.overlaps_or_contains(region.bounds, image.bounds)
-				)
-				for region in available_text
-			)
-		)
-		if (
-			len(qualifying_annotations) >= ANNOTATION_MINIMUM_COUNT
-			and annotation_centers_are_distributed(qualifying_annotations)
-		) or single_caption_qualified:
-			component_images = {image}
-			while True:
-				updated = component_images | {
-					other for other in image_regions
-					if other.source_kind != "connector"
-					if any(
-						geometry.overlaps_or_contains(other.bounds, member.bounds)
-						or bounds_are_near(other.bounds, member.bounds)
-						for member in component_images
-					)
-				}
-				if updated == component_images:
-					break
-				component_images = updated
-			annotations = tuple(sorted((
-				region for region in available_text
-				if (
-					region.placeholder_confidence == 0.0
-					and (
-						any(center_is_near_image(region.bounds, member.bounds)
-							or geometry.overlaps_or_contains(region.bounds, member.bounds)
-							for member in component_images)
-					)
-				)
-			), key=lambda region: region.source_ordinal,
-			))
-			bounds = next(iter(component_images)).bounds
-			for member in component_images:
-				bounds = bounds.union(member.bounds)
-			for annotation in annotations:
-				bounds = bounds.union(annotation.bounds)
-			return ContentRegionPlan(
-				region_key=f"content-region-{image_index}",
-				bounds=bounds,
-				text_regions=annotations,
-				image_regions=tuple(sorted(component_images, key=lambda item: item.source_ordinal)),
-				kind="diagram",
-				classification_reason="distributed pictorial annotations",
-			)
-	rotated = rotated_vector_label.rotated_vector_label_members(available_text, image_regions)
-	if rotated is not None:
-		return ContentRegionPlan(
-			"rotated-vector-label-1", rotated.bounds, rotated.text_regions, rotated.image_regions,
-			"rotated-vector-label", "unique connected rotated vector-label graph",
-		)
-	vector_region = vector_scaffold_region(available_text, image_regions, title)
-	if vector_region is not None:
-		return vector_region
-	return mixed_visual_region(available_text, image_regions, title)
-def vector_scaffold_region(
-	available_text: tuple[source_regions.SourceTextRegion, ...],
-	image_regions: tuple[source_regions.SourceImageRegion, ...],
-	title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Retain one connected vector scaffold with its distributed native labels."""
-	vectors = tuple(image for image in image_regions if image.source_kind in {"vector", "connector"})
-	if len(vectors) < 2:
-		return None
-	annotations = tuple(region for region in available_text if region.placeholder_confidence == 0.0)
-	if len(annotations) < ANNOTATION_MINIMUM_COUNT or not annotation_centers_are_distributed(annotations):
-		return None
-	nodes = (*vectors, *annotations)
-	connected = {0}
-	while True:
-		updated = set(connected)
-		for index in connected:
-			for other_index, other in enumerate(nodes):
-				if other_index in connected:
-					continue
-				first = nodes[index].bounds
-				second = other.bounds
-				if geometry.overlaps_or_contains(first, second) or bounds_are_near(first, second):
-					updated.add(other_index)
-		if updated == connected:
-			break
-		connected = updated
-	if len(connected) != len(nodes):
-		return None
-	bounds = nodes[0].bounds
-	for node in nodes[1:]:
-		bounds = bounds.union(node.bounds)
-	return ContentRegionPlan(
-		"vector-component-1", bounds, tuple(sorted(annotations, key=lambda item: item.source_ordinal)),
-		tuple(sorted(vectors, key=lambda item: item.source_ordinal)),
-		"vector-scaffold", "connected vector scaffold with distributed annotations",
-	)
-def bounds_are_near(first: geometry.NormalizedBounds,
-		second: geometry.NormalizedBounds) -> bool:
-	"""Connect source scaffolds only across a bounded slide-relative gap."""
-	return not (
-		first.right + VECTOR_COMPONENT_PROXIMITY_RATIO < second.left
-		or second.right + VECTOR_COMPONENT_PROXIMITY_RATIO < first.left
-		or first.bottom + VECTOR_COMPONENT_PROXIMITY_RATIO < second.top
-		or second.bottom + VECTOR_COMPONENT_PROXIMITY_RATIO < first.top
-	)
-def mixed_visual_region(
-	available_text: tuple[source_regions.SourceTextRegion, ...],
-	image_regions: tuple[source_regions.SourceImageRegion, ...],
-	title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Reserve one irreducibly coupled mixed visual graph for renderer ownership."""
-	if any(region.source_kind == "table" for region in available_text):
-		return None
-	anchors = tuple(image for image in image_regions if image.source_kind in {"picture", "vector"})
-	if not anchors:
-		return None
-	# Coarse placeholders are containers, not proof that nearby ink is coupled.
-	# Keep them native while evaluating only the independent visual/text graph.
-	nodes = (*anchors, *(region for region in available_text if region.placeholder_confidence < 0.75))
-	edges = {
-		(index, other_index)
-		for index, node in enumerate(nodes)
-		for other_index, other in enumerate(nodes[index + 1:], start=index + 1)
-		if geometry.overlaps_or_contains(node.bounds, other.bounds) or bounds_are_near(node.bounds, other.bounds)
-	}
-	if not edges:
-		return None
-	components: list[set[int]] = []
-	remaining = set(range(len(nodes)))
-	while remaining:
-		component = {remaining.pop()}
-		while True:
-			updated = set(component)
-			for first, second in edges:
-				if first in component:
-					updated.add(second)
-				if second in component:
-					updated.add(first)
-			if updated == component:
-				break
-			component = updated
-		remaining.difference_update(component)
-		components.append(component)
-	candidates = tuple(component for component in components if (
-		any(isinstance(nodes[index], source_regions.SourceImageRegion) for index in component)
-		and any(
-			geometry.strictly_overlaps(anchor.bounds, other.bounds)
-			for anchor in (nodes[index] for index in component
-				if isinstance(nodes[index], source_regions.SourceImageRegion))
-			for other in (nodes[index] for index in component)
-			if other is not anchor
-		)
-		and (
-			any(
-				isinstance(nodes[index], source_regions.SourceTextRegion)
-				and nodes[index].source_kind in {"auto-shape", "text-box"}
-				for index in component
-			)
-			or sum(isinstance(nodes[index], source_regions.SourceImageRegion) for index in component) >= 2
-		)
-	))
-	if len(candidates) != 1:
-		return None
-	member_indexes = candidates[0]
-	text_members = tuple(nodes[index] for index in member_indexes if isinstance(nodes[index], source_regions.SourceTextRegion))
-	anchor_members = tuple(nodes[index] for index in member_indexes if isinstance(nodes[index], source_regions.SourceImageRegion))
-	bounds = nodes[next(iter(member_indexes))].bounds
-	for index in member_indexes:
-		node = nodes[index]
-		bounds = bounds.union(node.bounds)
-	if bounds.left == 0.0 and bounds.top == 0.0 and bounds.right == 1.0 and bounds.bottom == 1.0:
-		return None
-	return ContentRegionPlan(
-		"mixed-visual-1", bounds, tuple(sorted(text_members, key=lambda item: item.source_ordinal)),
-		tuple(sorted(anchor_members, key=lambda item: item.source_ordinal)),
-		"mixed-visual", "single connected materially coupled visual graph",
-	)
-def shared_figure_row_region(
-	text_regions: tuple[source_regions.SourceTextRegion, ...],
-	image_regions: tuple[source_regions.SourceImageRegion, ...],
-	title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Keep a shared caption with a coherent row of peer source figures."""
-	images = tuple(image for image in image_regions if image.source_kind == "picture")
-	available = tuple(region for region in text_regions if region is not title.region)
-	candidates: list[tuple[tuple[source_regions.SourceImageRegion, ...], source_regions.SourceTextRegion]] = []
-	for count in (2, 3):
-		for row in itertools.combinations(images, count):
-			if not coherent_figure_row(row):
-				continue
-			bounds = union_bounds(tuple(item.bounds for item in row))
-			captions = tuple(region for region in available if shared_row_caption(region, bounds))
-			if len(captions) == 1:
-				candidates.append((row, captions[0]))
-	maximal = tuple(candidate for candidate in candidates if not any(
-		candidate[1] is other[1] and set(candidate[0]) < set(other[0])
-		for other in candidates
-	))
-	if len(maximal) != 1:
-		return None
-	row, caption = maximal[0]
-	bounds = union_bounds((*tuple(item.bounds for item in row), caption.bounds))
-	return ContentRegionPlan(
-		"shared-figure-row-1", bounds, (caption,), row,
-		"shared-figure-row", "peer figure row with one shared caption",
-	)
-def coherent_figure_row(row: tuple[source_regions.SourceImageRegion, ...]) -> bool:
-	"""Recognize two or three separated, similarly sized figures in one row."""
-	if len(row) not in {2, 3} or any(geometry.substantially_overlaps(first.bounds, second.bounds)
-		for index, first in enumerate(row) for second in row[index + 1:]):
-		return False
-	centers = tuple((item.bounds.top + item.bounds.bottom) / 2 for item in row)
-	return max(centers) - min(centers) <= SHARED_FIGURE_ROW_ALIGNMENT_RATIO
-def shared_row_caption(region: source_regions.SourceTextRegion,
-		row: geometry.NormalizedBounds) -> bool:
-	"""Require a non-placeholder caption immediately beneath the full figure row."""
-	center = (region.bounds.left + region.bounds.right) / 2
-	row_center = (row.left + row.right) / 2
-	return (
-		region.placeholder_confidence == 0.0
-		and region.bounds.top >= row.bottom - geometry.FLOW_BORDER_CONTACT_RATIO
-		and region.bounds.top - row.bottom <= min(0.10, row.height * 0.25)
-		and region.bounds.width >= row.width * SHARED_FIGURE_CAPTION_MIN_SPAN_RATIO
-		and (abs(center - row_center) <= SHARED_FIGURE_ROW_ALIGNMENT_RATIO
-			or region.bounds.left <= row.left and row.right <= region.bounds.right)
-	)
-def repeated_labeled_figure_region(
-	text_regions: tuple[source_regions.SourceTextRegion, ...], image_regions: tuple[source_regions.SourceImageRegion, ...],
-	title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Reserve two same-band figures only when their side labels are mutual."""
-	pictures = tuple(item for item in image_regions if item.source_kind == "picture")
-	available = tuple(item for item in text_regions if item is not title.region)
-	if len(image_regions) != 2 or len(pictures) != 2 or len(available) != 2 or any(geometry.overlaps_or_contains(first.bounds, second.bounds)
-		for first, second in ((pictures[0], pictures[1]),)):
-		return None
-	if abs((pictures[0].bounds.top + pictures[0].bounds.bottom - pictures[1].bounds.top - pictures[1].bounds.bottom) / 2) > SHARED_FIGURE_ROW_ALIGNMENT_RATIO:
-		return None
-	labels = tuple(item for item in available if item.source_kind == "auto-shape"
-		and item.placeholder_confidence == 0.0 and len(item.paragraphs) <= 2)
-	if len(labels) != 2:
-		return None
-	pairs = tuple((picture, nearest_side_label(picture, labels)) for picture in pictures)
-	if any(label is None for _picture, label in pairs) or len({label for _picture, label in pairs}) != 2:
-		return None
-	if any(nearest_side_picture(label, pictures) is not picture for picture, label in pairs):
-		return None
-	bounds = union_bounds((*tuple(item.bounds for item in pictures), *(label.bounds for _picture, label in pairs)))
-	return ContentRegionPlan("repeated-labeled-figure-1", bounds, tuple(label for _picture, label in pairs),
-		pictures, "repeated-labeled-figure", "mutual same-band side labels")
-def nearest_side_label(picture: source_regions.SourceImageRegion, labels: tuple[source_regions.SourceTextRegion, ...]) -> source_regions.SourceTextRegion | None:
-	"""Return one unique, vertically aligned neighboring auto-shape label."""
-	candidates = tuple((side_gap(label.bounds, picture.bounds), label) for label in labels
-		if is_side_label(label.bounds, picture.bounds)
-		and side_gap(label.bounds, picture.bounds) <= REPEATED_LABEL_SIDE_GAP_RATIO
-		and abs((label.bounds.top + label.bounds.bottom - picture.bounds.top - picture.bounds.bottom) / 2) <= REPEATED_LABEL_CENTER_TOLERANCE_RATIO)
-	if not candidates:
-		return None
-	minimum = min(distance for distance, _label in candidates)
-	nearest = tuple(label for distance, label in candidates if abs(distance - minimum) <= 1e-9)
-	return nearest[0] if len(nearest) == 1 else None
-def side_gap(label: geometry.NormalizedBounds,
-		picture: geometry.NormalizedBounds) -> float:
-	"""Return horizontal separation for a disjoint side label."""
-	return max(picture.left - label.right, label.left - picture.right, 0.0)
-def nearest_side_picture(label: source_regions.SourceTextRegion, pictures: tuple[source_regions.SourceImageRegion, ...]) -> source_regions.SourceImageRegion | None:
-	"""Confirm a label also has one unique neighboring picture."""
-	candidates = tuple((side_gap(label.bounds, picture.bounds), picture) for picture in pictures
-		if is_side_label(label.bounds, picture.bounds)
-		and side_gap(label.bounds, picture.bounds) <= REPEATED_LABEL_SIDE_GAP_RATIO)
-	minimum = min(distance for distance, _picture in candidates)
-	nearest = tuple(picture for distance, picture in candidates if abs(distance - minimum) <= 1e-9)
-	return nearest[0] if len(nearest) == 1 else None
-def side_of(label: geometry.NormalizedBounds,
-		picture: geometry.NormalizedBounds) -> str:
-	"""Classify a side label relative to one picture."""
-	return "left" if (label.left + label.right) / 2 < (picture.left + picture.right) / 2 else "right"
-def is_side_label(label: geometry.NormalizedBounds,
-		picture: geometry.NormalizedBounds) -> bool:
-	"""Allow only a tiny border overlap when a label center remains lateral."""
-	return (label.right <= picture.left + SIDE_LABEL_BORDER_OVERLAP
-		if side_of(label, picture) == "left"
-		else label.left >= picture.right - SIDE_LABEL_BORDER_OVERLAP)
-def union_bounds(bounds: tuple[geometry.NormalizedBounds, ...]) -> geometry.NormalizedBounds:
-	"""Return the bounded union for a nonempty set of source rectangles."""
-	result = bounds[0]
-	for item in bounds[1:]:
-		result = result.union(item)
-	return result
-def title_is_component_member(
-	title: TitleDecision,
-	content: ContentRegionPlan | None,
-) -> bool:
-	"""Keep an unmarked heading inside the visual component it labels."""
-	if title.region is None or content is None:
-		return False
-	if title.region.placeholder_confidence > 0.0:
-		return False
-	return any(geometry.center_is_within(title.region.bounds, image.bounds)
-		for image in content.image_regions)
-def absorb_connected_connectors(
-	content: ContentRegionPlan | None,
-	image_regions: tuple[source_regions.SourceImageRegion, ...],
-) -> ContentRegionPlan | None:
-	"""Add uniquely aligned visible connectors to an already-coupled source region."""
-	if content is None:
-		return None
-	connectors = tuple(item for item in image_regions if item.source_kind == "connector"
-		and item not in content.image_regions and connector_belongs_to(item.bounds, content.bounds))
-	if not connectors:
-		return content
-	bounds = union_bounds((content.bounds, *(item.bounds for item in connectors)))
-	return dataclasses.replace(content, bounds=bounds,
-		image_regions=tuple(sorted((*content.image_regions, *connectors), key=lambda item: item.source_ordinal)),
-		classification_reason=f"{content.classification_reason}; aligned connectors")
-def absorb_coarse_relation_text(
-	content: ContentRegionPlan | None,
-	text_regions: tuple[source_regions.SourceTextRegion, ...],
-	title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Assign one short coarse placeholder only when its shape belongs to the relation."""
-	if content is None:
-		return None
-	candidates = tuple(region for region in text_regions if (
-		region is not title.region and region not in content.text_regions
-		and region.source_kind != "table" and region.placeholder_confidence >= 0.75
-		and len(region.paragraphs) <= 2 and bounds_contains(content.bounds, region.bounds, RELATION_EDGE_LABEL_PADDING)
-	))
-	if len(candidates) != 1:
-		return content
-	region = candidates[0]
-	bounds = content.bounds.union(region.bounds)
-	if bounds.left == 0.0 and bounds.top == 0.0 and bounds.right == 1.0 and bounds.bottom == 1.0:
-		raise ValueError("coarse relation expansion would cover the full slide")
-	return dataclasses.replace(content, bounds=bounds,
-		text_regions=tuple(sorted((*content.text_regions, region), key=lambda item: item.source_ordinal)),
-		classification_reason=f"{content.classification_reason}; enclosed coarse text")
-def absorb_contained_vector_label(
-	content: ContentRegionPlan | None, text_regions: tuple[source_regions.SourceTextRegion, ...], title: TitleDecision,
-) -> ContentRegionPlan | None:
-	"""Keep one short coarse label with its already-qualified vector scaffold."""
-	if content is None:
-		return None
-	vectors = tuple(item for item in content.image_regions if item.source_kind in {"vector", "connector"})
-	candidates = tuple(region for region in text_regions if region is not title.region
-		and region not in content.text_regions and region.source_kind != "table"
-		and region.placeholder_confidence >= 0.75 and len(region.paragraphs) <= CONTAINED_VECTOR_LABEL_MAX_PARAGRAPHS
-		and sum(bounds_contains(vector.bounds, region.bounds, 0.0) for vector in vectors) == 1)
-	if len(candidates) != 1:
-		return content
-	region = candidates[0]
-	return dataclasses.replace(content,
-		text_regions=tuple(sorted((*content.text_regions, region), key=lambda item: item.source_ordinal)),
-		classification_reason=f"{content.classification_reason}; contained vector label")
-def bounds_contains(outer: geometry.NormalizedBounds,
-		inner: geometry.NormalizedBounds, padding: float) -> bool:
-	"""Require center and every edge within a bounded relation padding envelope."""
-	return (outer.left - padding <= inner.left and inner.right <= outer.right + padding
-		and outer.top - padding <= inner.top and inner.bottom <= outer.bottom + padding
-		and geometry.center_is_within(inner, outer))
-def connector_belongs_to(connector: geometry.NormalizedBounds,
-		content: geometry.NormalizedBounds) -> bool:
-	"""Require a long-axis projection and close cross-axis relation to one component."""
-	horizontal = connector.width >= connector.height
-	axis_start, axis_end = (connector.left, connector.right) if horizontal else (connector.top, connector.bottom)
-	content_start, content_end = (content.left, content.right) if horizontal else (content.top, content.bottom)
-	axis_overlap = max(0.0, min(axis_end, content_end) - max(axis_start, content_start))
-	perpendicular_gap = max(
-		(content.top - connector.bottom if horizontal else content.left - connector.right),
-		(connector.top - content.bottom if horizontal else connector.left - content.right), 0.0,
-	)
-	return axis_overlap >= (axis_end - axis_start) * CONNECTOR_AXIAL_OVERLAP_RATIO and \
-		perpendicular_gap <= CONNECTOR_PERPENDICULAR_PROXIMITY_RATIO
-def decorative_vectors(
-	text_regions: tuple[source_regions.SourceTextRegion, ...], image_regions: tuple[source_regions.SourceImageRegion, ...],
-) -> tuple[source_regions.SourceImageRegion, ...]:
-	"""Omit only isolated tiny vectors; long or related marks remain reviewable."""
-	return tuple(item for item in image_regions if item.source_kind in {"vector", "connector"}
-		and item.bounds.width * item.bounds.height < TINY_DECORATIVE_VECTOR_AREA_RATIO
-		and max(item.bounds.width, item.bounds.height) < TINY_DECORATIVE_VECTOR_SPAN_RATIO
-		and not any(bounds_are_near(item.bounds, other.bounds) for other in (*text_regions, *image_regions)
-			if other is not item))
 def slot_plans(
 	text_regions: tuple[source_regions.SourceTextRegion, ...],
 	image_regions: tuple[source_regions.SourceImageRegion, ...],
-	content: ContentRegionPlan | None,
+	content: figure_regions.ContentRegionPlan | None,
 	tables: tuple[source_tables.TablePlan, ...],
 	title: TitleDecision, picture_inset: visual_relations.CoarsePictureInsetMembers | None = None,
 ) -> tuple[SlotPlan, ...]:
@@ -739,7 +165,7 @@ def plan_slide(
 	image_regions: tuple[source_regions.SourceImageRegion, ...],
 ) -> SlidePlan:
 	"""Build one deterministic import plan from validated source regions."""
-	choice = multiple_choice_plan(text_regions, image_regions)
+	choice = multiple_choice_plan.multiple_choice_plan(text_regions, image_regions)
 	if choice is not None:
 		return SlidePlan(
 			TitleDecision(None, "multiple-choice structure"), (), multiple_choice=choice,
@@ -750,10 +176,10 @@ def plan_slide(
 	picture_inset = None if tables else visual_relations.coarse_body_picture_inset(text_regions, image_regions, title)
 	if not tables and source_tables.regular_text_grid(text_regions):
 		review_reason = "regular text lattice requires border and span reconstruction"
-	omitted_vectors = decorative_vectors(text_regions, image_regions)
+	omitted_vectors = figure_regions.decorative_vectors(text_regions, image_regions)
 	planning_images = tuple(item for item in image_regions if item not in omitted_vectors)
-	repeated = None if tables else repeated_labeled_figure_region(text_regions, planning_images, title)
-	shared = None if tables or repeated is not None else shared_figure_row_region(text_regions, planning_images, title)
+	repeated = None if tables else figure_regions.repeated_labeled_figure_region(text_regions, planning_images, title.region)
+	shared = None if tables or repeated is not None else figure_regions.shared_figure_row_region(text_regions, planning_images, title.region)
 	interior = None if tables else visual_relations.single_interior_overlay_label(text_regions, image_regions, title,
 		lambda members: topology.ordinary_layout_viable(tuple(item.bounds for item in (*members.text_regions, *members.image_regions))))
 	potential_content = None
@@ -762,39 +188,39 @@ def plan_slide(
 	elif shared is not None:
 		potential_content = shared
 	elif not tables:
-		potential_content = content_region(
-			text_regions, planning_images, TitleDecision(None, "component check"),
+		potential_content = figure_regions.content_region(
+			text_regions, planning_images, None,
 		)
-	if interior is None and title_is_component_member(title, potential_content):
+	if interior is None and figure_regions.title_is_component_member(title.region, potential_content):
 		title = TitleDecision(None, "diagram component membership")
 	try:
 		content = repeated if repeated is not None else shared
 		if content is None and interior is not None:
-			content = ContentRegionPlan("single-interior-overlay-label-1", interior.bounds, interior.text_regions, interior.image_regions,
+			content = figure_regions.ContentRegionPlan("single-interior-overlay-label-1", interior.bounds, interior.text_regions, interior.image_regions,
 				"single-interior-overlay-label", "sole material interior overlay label")
 		if content is None:
-			content = None if tables else content_region(text_regions, planning_images, title)
+			content = None if tables else figure_regions.content_region(text_regions, planning_images, title.region)
 		if not tables:
 			relation = visual_relations.dominant_image_narrative(text_regions, planning_images, title)
 			if relation is not None:
-				content = ContentRegionPlan("dominant-image-narrative-1", relation.bounds, relation.text_regions,
+				content = figure_regions.ContentRegionPlan("dominant-image-narrative-1", relation.bounds, relation.text_regions,
 					relation.image_regions, "dominant-image-narrative", "unique bounded visual composition")
 			elif content is None:
 				relation = visual_relations.coupled_visual_sequence(text_regions, planning_images, title,
 					lambda members: topology.ordinary_layout_viable(tuple(item.bounds for item in members.image_regions)))
 				if relation is not None:
-					content = ContentRegionPlan("coupled-visual-sequence-1", relation.bounds, relation.text_regions, relation.image_regions,
+					content = figure_regions.ContentRegionPlan("coupled-visual-sequence-1", relation.bounds, relation.text_regions, relation.image_regions,
 						"coupled-visual-sequence", "unique bounded visual composition")
-		content = absorb_connected_connectors(content, planning_images)
+		content = figure_regions.absorb_connected_connectors(content, planning_images)
 		extension = visual_relations.styled_callout_extension(content, text_regions, title)
 		if extension is not None:
 			content = dataclasses.replace(content, bounds=extension.bounds, text_regions=extension.text_regions,
 				classification_reason=f"{content.classification_reason}; styled callout")
 		if content is None and inset_pair is not None:
-			content = ContentRegionPlan("styled-inset-key-1", inset_pair.key.bounds, (inset_pair.key,), (),
+			content = figure_regions.ContentRegionPlan("styled-inset-key-1", inset_pair.key.bounds, (inset_pair.key,), (),
 				"styled-inset-key", "styled inset key paired with coarse object body")
-		content = absorb_contained_vector_label(content, text_regions, title)
-		content = absorb_coarse_relation_text(content, text_regions, title)
+		content = figure_regions.absorb_contained_vector_label(content, text_regions, title.region)
+		content = figure_regions.absorb_coarse_relation_text(content, text_regions, title.region)
 		heading = heading_relation.local_figure_heading(content, text_regions,
 			planning_images, title, tables)
 		if heading is not None:

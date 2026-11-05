@@ -2,6 +2,7 @@
 
 import dataclasses
 
+import slide_lib.layout_size_selection
 import slide_lib.layout_content
 import slide_lib.layout_measurement
 import slide_lib.layout_model
@@ -29,7 +30,7 @@ def add_citation(page: slide_lib.layout_model.LayoutSlide,
 		slide_lib.layout_primitives.VerticalAlignment.TOP,
 		slide_lib.layout_primitives.TextWrap.WRAP,
 		slide_lib.layout_primitives.OverflowPolicy.SHRINK)
-	size = slide_lib.layout_measurement.select_size(
+	size = slide_lib.layout_size_selection.select_size(
 		slide_lib.layout_measurement.items_for(source.citation),
 		slide_lib.layout_measurement.text_frame_measurement(CITATION_RECTANGLE),
 		14.0, 12.0, theme, source.citation[0].location,

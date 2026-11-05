@@ -4,6 +4,7 @@ import dataclasses
 import math
 import re
 
+import slide_lib.layout_table_measurement
 import slide_lib.editable_text
 import slide_lib.djot_sources
 import slide_lib.layout_content
@@ -243,14 +244,14 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 	rows = ((table.headers, True),) if table.headers else ()
 	rows += tuple((row, False) for row in table.rows)
 	size = selected_size if selected_size is not None else \
-		slide_lib.layout_measurement.select_table_size(table, rectangle,
+		slide_lib.layout_table_measurement.select_table_size(table, rectangle,
 			theme.ordinary_body_size_pt, theme.body_floor_size_pt,
 			theme, layout, slot, session)
 	typography = slide_lib.layout_primitives.Typography(
 		slide_lib.layout_primitives.StyleRole.TABLE_BODY,
 		slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, size, size,
 		min(theme.body_floor_size_pt, size))
-	measurements = slide_lib.layout_measurement.table_measurements(
+	measurements = slide_lib.layout_table_measurement.table_measurements(
 		table, size, rectangle.width, theme, session)
 	def row_content(cells: tuple[slide_lib.native_model.TableCell, ...],
 			header: bool) -> slide_lib.layout_content.TableRow:
@@ -261,7 +262,7 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 			for cell in cells]
 		total = not header and labels[0].strip().casefold() in ("total", "totals", "grand total")
 		for index, (column, cell) in enumerate(slide_lib.native_model.table_cell_positions(cells)):
-			width = slide_lib.layout_measurement.table_cell_text_width(
+			width = slide_lib.layout_table_measurement.table_cell_text_width(
 				sum(measurements.column_widths[column:column + cell.column_span]), theme)
 			properties = slide_lib.layout_measurement.paragraph_properties(
 				cell.inlines, size, width, theme, terminal=True, bold=header or total, session=session)
@@ -282,10 +283,10 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 				typography, properties)
 			projected.append(slide_lib.layout_content.TableCell((paragraph,),
 				slide_lib.layout_primitives.Insets(
-					slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
-					slide_lib.layout_measurement.TABLE_VERTICAL_PADDING,
-					slide_lib.layout_measurement.TABLE_HORIZONTAL_PADDING,
-					slide_lib.layout_measurement.TABLE_VERTICAL_PADDING),
+					slide_lib.layout_table_measurement.TABLE_HORIZONTAL_PADDING,
+					slide_lib.layout_table_measurement.TABLE_VERTICAL_PADDING,
+					slide_lib.layout_table_measurement.TABLE_HORIZONTAL_PADDING,
+					slide_lib.layout_table_measurement.TABLE_VERTICAL_PADDING),
 				slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
 				fill_role=slide_lib.layout_primitives.StyleRole.ACCENT_TINT if total else None,
 				fill_color=cell.background_color[1:] if cell.background_color else None,
@@ -299,7 +300,7 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 			slide_lib.layout_primitives.StyleRole.TABLE_HEADER,
 			slide_lib.layout_primitives.StyleRole.TABLE_BODY,
 			slide_lib.layout_primitives.StyleRole.ACCENT,
-			slide_lib.layout_measurement.TABLE_BORDER_WIDTH_PT,
+			slide_lib.layout_table_measurement.TABLE_BORDER_WIDTH_PT,
 			slide_lib.layout_primitives.LinePattern.SOLID))
 	return slide_lib.layout_model.LayoutObject(object_id,
 		slide_lib.layout_primitives.PresentationRole.OUTLINE,

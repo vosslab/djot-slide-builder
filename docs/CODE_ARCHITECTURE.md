@@ -8,8 +8,11 @@ enters only through the one-time import workflow.
 
 ## Major components
 
-- Physical text and table metrics remain in
+- Physical text and font metrics remain in
   [../slide_lib/layout_measurement.py](../slide_lib/layout_measurement.py).
+  [../slide_lib/layout_size_selection.py](../slide_lib/layout_size_selection.py) owns fitting policy,
+  and [../slide_lib/layout_table_measurement.py](../slide_lib/layout_table_measurement.py) owns
+  table measurement and compile-scoped table-group preparation.
   [../slide_lib/layout_flow_measurement.py](../slide_lib/layout_flow_measurement.py) combines
   those metrics with image dimensions for mixed-content allocation;
   [../slide_lib/layout_source_facts.py](../slide_lib/layout_source_facts.py) inspects unsupported
@@ -21,6 +24,14 @@ enters only through the one-time import workflow.
   and [../slide_lib/importers/source_tables.py](../slide_lib/importers/source_tables.py) plans table geometry.
   [../slide_lib/importers/emission_flow.py](../slide_lib/importers/emission_flow.py) groups emitted components
   into reading flows; the reader, slide planner, and emitter retain pipeline orchestration.
+- Within those pipeline stages,
+  [../slide_lib/importers/odp_geometry.py](../slide_lib/importers/odp_geometry.py) reads source geometry,
+  [../slide_lib/importers/odp_page_objects.py](../slide_lib/importers/odp_page_objects.py) extracts page objects,
+  [../slide_lib/importers/figure_regions.py](../slide_lib/importers/figure_regions.py) recognizes figures,
+  [../slide_lib/importers/multiple_choice_plan.py](../slide_lib/importers/multiple_choice_plan.py) recognizes
+  multiple-choice content, and
+  [../slide_lib/importers/emission_topology.py](../slide_lib/importers/emission_topology.py) selects emitted
+  component topology. Each stage imports these owners directly without compatibility re-exports.
 
 - [../deck_tools.py](../deck_tools.py) is the user-facing application entry point. It exposes build,
   capacity, import, lint, and ODP visibility commands.

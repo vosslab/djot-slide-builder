@@ -29,8 +29,14 @@ Brewfile             declared macOS command-line and desktop dependencies
   `odp_media.py` owns bounded imported-media validation, `odp_tables.py` reconstructs ODF tables,
   `source_regions.py` owns normalized text and visual regions, `source_tables.py` owns source-table
   plans, and `emission_flow.py` owns reading-flow grouping before Djot emission.
+  `odp_geometry.py` and `odp_page_objects.py` separate document geometry from page extraction;
+  `figure_regions.py`, `multiple_choice_plan.py`, and `emission_topology.py` isolate recognition
+  policies from planner and emitter orchestration.
   `image_annotations.py` owns the bounded image-overlay import projection, while `odf_styles.py`
   resolves inherited properties from already-admitted ODF XML.
+- Physical measurement is divided among `layout_measurement.py` for text/font metrics,
+  `layout_size_selection.py` for fitting, `layout_table_measurement.py` for tables, and
+  `layout_flow_measurement.py` for mixed image/text allocation.
 - [../slide_lib/make_youtube_slide.py](../slide_lib/make_youtube_slide.py),
   [../slide_lib/refresh_weather.py](../slide_lib/refresh_weather.py),
   [../slide_lib/refresh_podcast.py](../slide_lib/refresh_podcast.py), and

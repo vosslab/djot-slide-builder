@@ -1,117 +1,32 @@
-"""Validate and read an imported ODP before Djot emission."""
+"""Coordinate validated ODP package admission and page extraction."""
 
 # Standard Library
 import dataclasses
-import hashlib
-import math
 import pathlib
-import re
-import xml.etree.ElementTree
 import zipfile
 
 # PIP3 modules
 # local repo modules
+import slide_lib.importers.odp_geometry as odp_geometry
+import slide_lib.importers.odp_page_objects as odp_page_objects
 import slide_lib.odf_package
 import slide_lib.importers.odf_styles as odf_styles
-import slide_lib.importers.odf_text as odf_text
-import slide_lib.importers.odp_metafile as odp_metafile
 import slide_lib.importers.odp_media as odp_media
 import slide_lib.importers.odp_reveals as odp_reveals
-import slide_lib.importers.odp_tables as odp_tables
 import slide_lib.importers.odp_visibility as odp_visibility
 import slide_lib.importers.source_model as source_model
-import slide_lib.presentation_theme
 
 
-NS = {
-	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
-	"fo": "urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0",
-	"office": "urn:oasis:names:tc:opendocument:xmlns:office:1.0",
-	"presentation": "urn:oasis:names:tc:opendocument:xmlns:presentation:1.0",
-	"style": "urn:oasis:names:tc:opendocument:xmlns:style:1.0",
-	"svg": "urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0",
-	"table": "urn:oasis:names:tc:opendocument:xmlns:table:1.0",
-	"text": "urn:oasis:names:tc:opendocument:xmlns:text:1.0",
-	"xlink": "http://www.w3.org/1999/xlink",
-}
 ODP_MIMETYPE = "application/vnd.oasis.opendocument.presentation"
-MAX_ODF_LENGTH_POINTS = 100_000.0
 MAX_PRESENTATION_PAGES = 1_000
-MAX_PAGE_OBJECTS = 1_000
-MAX_DRAW_GROUP_DEPTH = 64
-LENGTH_VALUE = re.compile(r"^([+-]?(?:\d+(?:\.\d*)?|\.\d+))(cm|in|mm|pc|pt|px)$")
-ROTATION_VALUE = re.compile(r"rotate\s*\(\s*([+-]?(?:\d+(?:\.\d*)?|\.\d+))")
-
-
-@dataclasses.dataclass(frozen=True)
-class ImportedSlide:
-	"""Imported slide identity and visibility retained from ODP XML."""
-
-	source_index: int
-	name: str
-	hidden: bool
-
-
-@dataclasses.dataclass(frozen=True)
-class RawObjectGeometry:
-	"""One raw ODF object rectangle retained for migration review."""
-
-	source_ordinal: int
-	source_kind: str
-	left: float
-	top: float
-	width: float
-	height: float
-	z_order: tuple[int, ...]
-
-
-@dataclasses.dataclass(frozen=True)
-class ReadSlide:
-	"""One physical ODP page and its planner-ready raw source facts."""
-
-	identity: ImportedSlide
-	data: source_model.SlideData
-	positioned_text: tuple[source_model.PositionedText, ...]
-	positioned_visual: tuple[source_model.PositionedVisual, ...]
-	page_width: float
-	page_height: float
-	raw_geometry: tuple[RawObjectGeometry, ...]
-	positioned_overlays: tuple[source_model.PositionedOverlay, ...] = ()
 
 
 @dataclasses.dataclass(frozen=True)
 class ImportedPresentation:
 	"""The bounded direct-reader result for one native ODP package."""
 
-	slides: tuple[ReadSlide, ...]
+	slides: tuple[odp_page_objects.ReadSlide, ...]
 
-
-@dataclasses.dataclass
-class _PageAccumulator:
-	"""Mutable extraction state used only while reading one XML page."""
-
-	titles: list[tuple[source_model.TextRun, ...]]
-	text_blocks: list[source_model.TextBlock]
-	tables: list[source_model.TableBlock]
-	images: list[source_model.ImageAsset]
-	positioned_text: list[source_model.PositionedText]
-	positioned_visual: list[source_model.PositionedVisual]
-	positioned_overlays: list[source_model.PositionedOverlay]
-	review_reasons: list[str]
-	populated_roles: list[str]
-	populated_text_roles: list[str]
-	populated_image_roles: list[str]
-	populated_table_roles: list[str]
-	raw_geometry: list[RawObjectGeometry]
-	meaningful_content_count: int = 0
-	next_ordinal: int = 0
-	object_count: int = 0
-
-
-#============================================
-def qname(prefix: str, local_name: str) -> str:
-	"""Build one namespace-qualified XML name."""
-	return f"{{{NS[prefix]}}}{local_name}"
 
 #============================================
 def validate_odp(input_path: pathlib.Path) -> list[zipfile.ZipInfo]:
@@ -122,7 +37,7 @@ def validate_odp(input_path: pathlib.Path) -> list[zipfile.ZipInfo]:
 
 
 #============================================
-def read_slides(input_path: pathlib.Path) -> list[ImportedSlide]:
+def read_slides(input_path: pathlib.Path) -> list[odp_page_objects.ImportedSlide]:
 	"""Read imported slide order and visibility from ODP XML."""
 	package = slide_lib.odf_package.admit_package(
 		input_path, ".odp", ODP_MIMETYPE, slide_lib.odf_package.REQUIRED_ODP_MEMBERS,
@@ -130,576 +45,22 @@ def read_slides(input_path: pathlib.Path) -> list[ImportedSlide]:
 	root = package.content_root
 	definitions = odp_visibility.style_definitions_from_root(package.styles_root)
 	definitions.update(odp_visibility.style_definitions_from_root(root))
-	pages = root.findall(".//draw:page", NS)
+	pages = root.findall(".//draw:page", odp_geometry.NS)
 	if len(pages) > MAX_PRESENTATION_PAGES:
 		raise ValueError("ODF presentation page limit exceeded")
-	slides: list[ImportedSlide] = []
+	slides: list[odp_page_objects.ImportedSlide] = []
 	for source_index, page in enumerate(pages, start=1):
-		slide_name = page.get(qname("draw", "name"), f"slide_{source_index:03d}")
-		slides.append(ImportedSlide(
+		slide_name = page.get(odp_geometry.qname("draw", "name"), f"slide_{source_index:03d}")
+		slides.append(odp_page_objects.ImportedSlide(
 			source_index, slide_name, odp_visibility.page_is_hidden(page, definitions),
 		))
 	return slides
 
 
 #============================================
-def local_name(element: xml.etree.ElementTree.Element) -> str:
-	"""Return an XML tag without its namespace."""
-	return element.tag.rsplit("}", 1)[-1]
-
-
-#============================================
-def parse_length(raw_value: str | None, *, field_name: str,
-		allow_negative: bool) -> float:
-	"""Convert one bounded ODF physical length to points."""
-	if raw_value is None:
-		raise ValueError(f"ODF object is missing {field_name}")
-	matched = LENGTH_VALUE.fullmatch(raw_value.strip())
-	if matched is None:
-		raise ValueError(f"ODF {field_name} is not a supported finite length")
-	value = float(matched.group(1))
-	points_per_unit = {
-		"cm": 72.0 / 2.54,
-		"in": 72.0,
-		"mm": 72.0 / 25.4,
-		"pc": 12.0,
-		"pt": 1.0,
-		"px": 0.75,
-	}[matched.group(2)]
-	points = value * points_per_unit
-	if not math.isfinite(points) or abs(points) > MAX_ODF_LENGTH_POINTS or \
-			(not allow_negative and points <= 0.0):
-		raise ValueError(f"ODF {field_name} is outside the supported physical range")
-	return points
-
-
-#============================================
-def page_style_layouts(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
-) -> dict[str, tuple[str, str]]:
-	"""Map drawing-page styles to their page-layout and parent style names."""
-	definitions: dict[str, tuple[str, str]] = {}
-	for root in roots:
-		for style in root.findall(".//style:style", NS):
-			if style.get(qname("style", "family")) != "drawing-page":
-				continue
-			name = style.get(qname("style", "name"))
-			if not name:
-				raise ValueError("ODF drawing-page style is missing its name")
-			definitions[name] = (
-				style.get(qname("style", "page-layout-name"), ""),
-				style.get(qname("style", "parent-style-name"), ""),
-			)
-	return definitions
-
-
-#============================================
-def resolve_page_layout(style_name: str, definitions: dict[str, tuple[str, str]],
-		ancestry: set[str]) -> str:
-	"""Resolve one drawing-page style's physical page-layout identity."""
-	if not style_name:
-		return ""
-	if style_name in ancestry:
-		raise ValueError("ODF drawing-page style inheritance contains a cycle")
-	definition = definitions.get(style_name)
-	if definition is None:
-		return ""
-	layout_name, parent_name = definition
-	if layout_name:
-		return layout_name
-	return resolve_page_layout(parent_name, definitions, ancestry | {style_name})
-
-
-#============================================
-def read_page_layout_dimensions(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
-) -> dict[str, tuple[float, float]]:
-	"""Read all named ODF physical page-layout dimensions."""
-	dimensions: dict[str, tuple[float, float]] = {}
-	for root in roots:
-		for layout in root.findall(".//style:page-layout", NS):
-			name = layout.get(qname("style", "name"))
-			properties = layout.find("./style:page-layout-properties", NS)
-			if not name or properties is None:
-				continue
-			dimensions[name] = (
-				parse_length(properties.get(qname("fo", "page-width")),
-					field_name="page width", allow_negative=False),
-				parse_length(properties.get(qname("fo", "page-height")),
-					field_name="page height", allow_negative=False),
-			)
-	return dimensions
-
-
-#============================================
-def master_page_layouts(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
-) -> dict[str, str]:
-	"""Map master-page names to their physical page-layout identities."""
-	definitions: dict[str, str] = {}
-	for root in roots:
-		for master in root.findall(".//style:master-page", NS):
-			name = master.get(qname("style", "name"))
-			layout_name = master.get(qname("style", "page-layout-name"))
-			if name and layout_name:
-				definitions[name] = layout_name
-	return definitions
-
-
-#============================================
-def page_dimensions(
-		page: xml.etree.ElementTree.Element,
-		style_layouts: dict[str, tuple[str, str]],
-		master_layouts: dict[str, str],
-		layout_dimensions: dict[str, tuple[float, float]],
-) -> tuple[float, float]:
-	"""Return the physical source dimensions declared for one ODP page."""
-	style_name = page.get(qname("draw", "style-name"), "")
-	layout_name = resolve_page_layout(style_name, style_layouts, set())
-	if not layout_name:
-		master_name = page.get(qname("draw", "master-page-name"), "")
-		layout_name = master_layouts.get(master_name, "")
-	if not layout_name:
-		raise ValueError("ODF page has no resolvable physical page layout")
-	dimensions = layout_dimensions.get(layout_name)
-	if dimensions is None:
-		raise ValueError("ODF drawing-page style references an unknown page layout")
-	return dimensions
-
-
-#============================================
-def read_declared_placeholder_roles(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
-) -> dict[str, tuple[str, ...]]:
-	"""Read page-layout placeholder roles without inferring target layouts."""
-	roles_by_layout: dict[str, tuple[str, ...]] = {}
-	for root in roots:
-		for layout in root.findall(".//style:presentation-page-layout", NS):
-			name = layout.get(qname("style", "name"))
-			if not name:
-				raise ValueError("ODF presentation-page-layout is missing its name")
-			roles_by_layout[name] = tuple(
-				placeholder.get(qname("presentation", "object"))
-				for placeholder in layout.findall(".//presentation:placeholder", NS)
-				if placeholder.get(qname("presentation", "object"))
-			)
-	return roles_by_layout
-
-
-#============================================
-def plain_text(runs: tuple[source_model.TextRun, ...]) -> str:
-	"""Return visible source characters for density and identity checks."""
-	return "".join(run.text for run in runs)
-
-
-#============================================
-def page_notes(page: xml.etree.ElementTree.Element,
-		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
-	"""Read presenter-note paragraphs from one ODP page."""
-	notes: list[str] = []
-	for notes_element in page.findall("./presentation:notes", NS):
-		for _level, runs in odf_text.text_paragraphs(notes_element, definitions):
-			text = plain_text(runs).strip()
-			if text:
-				notes.append(text)
-	return tuple(notes)
-
-
-def unrecognized_text_colors(page: xml.etree.ElementTree.Element,
-		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
-	"""Return explicit nonneutral source colors outside the semantic palette."""
-	text_tags = {qname("text", name) for name in ("a", "h", "p", "span")}
-	text_tags.update(qname("draw", name) for name in ("frame", "rect", "custom-shape"))
-	colors = {
-		color for element in page.iter() if element.tag in text_tags
-		if (color := odf_styles.attribute(element, definitions, qname("fo", "color")))
-		if slide_lib.presentation_theme.source_text_color_requires_review(color)
-	}
-	return tuple(sorted(colors))
-
-
-#============================================
-def frame_geometry(element: xml.etree.ElementTree.Element,
-		source_index: int) -> tuple[float, float, float, float]:
-	"""Read finite source geometry for one visible ODF object."""
-	left = parse_length(element.get(qname("svg", "x"), "0cm"),
-		field_name="x", allow_negative=True)
-	top = parse_length(element.get(qname("svg", "y"), "0cm"),
-		field_name="y", allow_negative=True)
-	width = parse_length(element.get(qname("svg", "width")),
-		field_name="width", allow_negative=False)
-	height = parse_length(element.get(qname("svg", "height")),
-		field_name="height", allow_negative=False)
-	return left, top, width, height
-
-
-#============================================
-def vector_geometry(element: xml.etree.ElementTree.Element,
-		source_index: int) -> tuple[float, float, float, float] | None:
-	"""Read a finite vector rectangle or line endpoints when ODF supplies them."""
-	if element.tag == qname("draw", "polyline"):
-		# ASVS 2.2.1: validate bounded lengths even for unsupported flat polylines.
-		dimensions = tuple(parse_length(element.get(qname("svg", name)),
-			field_name=f"polyline {name}", allow_negative=True) for name in ("width", "height"))
-		if min(dimensions) < 0.0:
-			raise ValueError("ODF polyline dimensions must be nonnegative")
-		if min(dimensions) == 0.0:
-			return None
-	if element.get(qname("svg", "width")) is not None and \
-			element.get(qname("svg", "height")) is not None:
-		return frame_geometry(element, source_index)
-	if element.tag != qname("draw", "line"):
-		return None
-	first_x = parse_length(element.get(qname("svg", "x1")), field_name="line x1",
-		allow_negative=True)
-	first_y = parse_length(element.get(qname("svg", "y1")), field_name="line y1",
-		allow_negative=True)
-	second_x = parse_length(element.get(qname("svg", "x2")), field_name="line x2",
-		allow_negative=True)
-	second_y = parse_length(element.get(qname("svg", "y2")), field_name="line y2",
-		allow_negative=True)
-	if first_x == second_x and first_y == second_y:
-		raise ValueError("ODF line has identical endpoints")
-	return min(first_x, second_x), min(first_y, second_y), \
-		abs(second_x - first_x), abs(second_y - first_y)
-
-
-def line_endpoints(element: xml.etree.ElementTree.Element) \
-		-> tuple[float, float, float, float]:
-	"""Read one native line without discarding its authored direction."""
-	first_x = parse_length(element.get(qname("svg", "x1")), field_name="line x1",
-		allow_negative=True)
-	first_y = parse_length(element.get(qname("svg", "y1")), field_name="line y1",
-		allow_negative=True)
-	second_x = parse_length(element.get(qname("svg", "x2")), field_name="line x2",
-		allow_negative=True)
-	second_y = parse_length(element.get(qname("svg", "y2")), field_name="line y2",
-		allow_negative=True)
-	if first_x == second_x and first_y == second_y:
-		raise ValueError("ODF line has identical endpoints")
-	return first_x, first_y, second_x, second_y
-
-
-#============================================
-def visible_geometry(
-		geometry: tuple[float, float, float, float], page_width: float,
-		page_height: float, source_index: int,
-) -> bool:
-	"""Reject fully outside objects and identify a partially outside rectangle."""
-	left, top, width, height = geometry
-	if left + width <= 0.0 or top + height <= 0.0 or left >= page_width or top >= page_height:
-		raise ValueError(f"source slide {source_index}: source geometry lies outside page bounds")
-	return left < 0.0 or top < 0.0 or left + width > page_width or top + height > page_height
-
-
-#============================================
-def style_evidence(element: xml.etree.ElementTree.Element,
-		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[bool, bool]:
-	"""Read direct positive style facts without treating ODF style names as data."""
-	fill = odf_styles.attribute(element, definitions, qname("draw", "fill"))
-	stroke = odf_styles.attribute(element, definitions, qname("svg", "stroke-color"))
-	return fill not in {None, "none"}, stroke not in {None, "none"}
-
-
-#============================================
-def rotation_degrees(element: xml.etree.ElementTree.Element) -> float:
-	"""Return a finite explicit ODF rotation or zero when none is declared."""
-	matched = ROTATION_VALUE.search(element.get(qname("draw", "transform"), ""))
-	if matched is None:
-		return 0.0
-	rotation = float(matched.group(1))
-	if not math.isfinite(rotation):
-		raise ValueError("ODF source rotation must be finite")
-	return rotation
-
-
-#============================================
-def append_geometry(accumulator: _PageAccumulator, source_ordinal: int,
-		source_kind: str, geometry: tuple[float, float, float, float],
-		z_order: tuple[int, ...]) -> None:
-	"""Retain the original rectangle for the direct-import audit report."""
-	left, top, width, height = geometry
-	accumulator.raw_geometry.append(RawObjectGeometry(
-		source_ordinal, source_kind, left, top, width, height, z_order,
-	))
-
-
-#============================================
-def add_picture(
-		image: xml.etree.ElementTree.Element,
-		geometry: tuple[float, float, float, float], source_ordinal: int,
-		archive: zipfile.ZipFile, member_names: frozenset[str], manifest_targets: frozenset[str],
-		assets_dir: pathlib.Path,
-		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		accumulator: _PageAccumulator, media_budget: odp_media.MediaBudget,
-		z_order: tuple[int, ...],
-) -> bool:
-	"""Stage one validated package-local image, retaining external evidence."""
-	reference = image.get(qname("xlink", "href"))
-	if not reference:
-		accumulator.review_reasons.append("source image is missing its package reference")
-		return True
-	target = slide_lib.odf_package.package_reference_target("content.xml", reference)
-	if target is None:
-		accumulator.review_reasons.append("external source image reference requires review")
-		return True
-	if target not in member_names:
-		raise ValueError("ODF image reference points to a missing package member")
-	if target not in manifest_targets:
-		raise ValueError("ODF image reference misses its manifest target")
-	blob = archive.read(target)
-	suffix = odp_media.image_suffix(target)
-	# Embedded formula previews use extensionless ObjectReplacements members.
-	# Route their recognizable SVM header through the existing bounded validator.
-	if not suffix and blob.startswith(b"VCLMTF"):
-		suffix = ".svm"
-	is_metafile = suffix in odp_metafile.METAFILE_SUFFIXES
-	try:
-		blob, suffix = odp_metafile.component_image(blob, suffix, geometry)
-		odp_media.validate_image_blob(blob, suffix, media_budget)
-	except (OSError, ValueError) as error:
-		accumulator.review_reasons.append(f"source image requires review: {error}")
-		return True
-	if is_metafile:
-		root = slide_lib.odf_package.parse_xml(blob, "converted metafile")
-		if not any("".join(node.itertext()).strip()
-				for node in root.iter("{http://www.w3.org/2000/svg}text")):
-			accumulator.review_reasons.append(
-				"metafile SVG has no live text; review bitmap content or glyph outlines")
-	digest = hashlib.sha256(blob).hexdigest()
-	asset_name = known_images.get(digest)
-	if asset_name is None:
-		asset_name = f"image_{len(known_images) + 1:03d}{suffix}"
-		# ASVS 5.3.2: digest-derived names select only the private staging path.
-		(assets_dir / asset_name).write_bytes(blob)
-		known_images[digest] = asset_name
-	left, top, width, height = geometry
-	asset_path = (djot_root / asset_name).as_posix()
-	accumulator.images.append(source_model.ImageAsset(
-		left, top, width, height, asset_path, f"Slide image {len(known_images)}",
-	))
-	accumulator.positioned_visual.append(source_model.PositionedVisual(
-		asset_path, left, top, width, height, "picture", source_ordinal,
-		z_order=z_order,
-	))
-	return True
-
-
-#============================================
-def add_text(
-		text_box: xml.etree.ElementTree.Element,
-		geometry: tuple[float, float, float, float], source_ordinal: int,
-		role: str | None, element: xml.etree.ElementTree.Element,
-		accumulator: _PageAccumulator, z_order: tuple[int, ...],
-		definitions: dict[str, odf_styles.StyleDefinition],
-) -> bool:
-	"""Add text runs and positioned facts from one visible ODP text object."""
-	context = odf_text.text_style(element, definitions, odf_text.TextStyle())
-	paragraphs = odf_text.text_paragraphs(text_box, definitions, context)
-	if not paragraphs:
-		return False
-	left, top, width, height = geometry
-	# Preserve the ODP subtitle role in page evidence and the raw placeholder
-	# field while the generalized emitter receives ordinary text.
-	is_subtitle = False
-	title_identity = role == "title"
-	source_kind = "text" if role else "text-box"
-	has_fill, has_line = style_evidence(element, definitions)
-	positioned = source_model.PositionedText(
-		paragraphs, left, top, width, height, is_subtitle, 1.0 if role else 0.0,
-		title_identity, source_kind, source_ordinal,
-		rotation_degrees=rotation_degrees(element), has_positive_fill=has_fill,
-		has_positive_line=has_line, placeholder_role=role, z_order=z_order,
-	)
-	accumulator.positioned_text.append(positioned)
-	if title_identity:
-		accumulator.titles.extend(runs for _level, runs in paragraphs)
-	else:
-		accumulator.text_blocks.append(source_model.TextBlock(
-			left, top, paragraphs, is_subtitle,
-		))
-	return True
-
-
-#============================================
-def add_table(
-		table: xml.etree.ElementTree.Element,
-		geometry: tuple[float, float, float, float], source_ordinal: int,
-		role: str | None, element: xml.etree.ElementTree.Element,
-		accumulator: _PageAccumulator, z_order: tuple[int, ...],
-		definitions: dict[str, odf_styles.StyleDefinition],
-) -> bool:
-	"""Add a real ODF table and its planning evidence without flattening cells."""
-	left, top, width, height = geometry
-	block, cells = odp_tables.read_table(table, left, top, source_ordinal, definitions)
-	accumulator.tables.append(block)
-	has_fill, has_line = style_evidence(element, definitions)
-	row_count = len(block.rows) + (1 if block.headers else 0)
-	column_count = len(block.headers or block.rows[0])
-	for row_index, column_index, runs in cells:
-		accumulator.positioned_text.append(source_model.PositionedText(
-			((0, runs),), left, top, width, height, False, 1.0 if role else 0.0,
-			False, "table", source_ordinal * 10_000 + row_index * column_count + column_index,
-			row_index, column_index, row_count, column_count, source_ordinal,
-			bool(block.headers), block.unsupported_reason, rotation_degrees(element),
-			has_fill, has_line, role, z_order,
-		))
-	return True
-
-
-#============================================
-def read_frame(
-		frame: xml.etree.ElementTree.Element, source_index: int, page_width: float,
-		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
-		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
-		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		accumulator: _PageAccumulator, media_budget: odp_media.MediaBudget,
-		z_order: tuple[int, ...], source_ordinal: int,
-		definitions: dict[str, odf_styles.StyleDefinition],
-) -> None:
-	"""Read one ODP frame into supported facts or an explicit review lane."""
-	text_box = frame.find("./draw:text-box", NS)
-	table = frame.find(".//table:table", NS)
-	image = odp_metafile.frame_image(frame)
-	ordinal = source_ordinal
-	geometry = frame_geometry(frame, source_index)
-	if visible_geometry(geometry, page_width, page_height, source_index):
-		accumulator.review_reasons.append("source object crosses physical page bounds")
-	role = frame.get(qname("presentation", "class"))
-	contains_text = False
-	contains_table = False
-	contains_image = False
-	if text_box is not None:
-		contains_text = add_text(text_box, geometry, ordinal, role, frame, accumulator, z_order,
-			definitions)
-	if table is not None:
-		contains_table = add_table(table, geometry, ordinal, role, frame, accumulator, z_order,
-			definitions)
-	if image is not None:
-		contains_image = add_picture(
-			image, geometry, ordinal, archive, member_names, manifest_targets, assets_dir,
-			djot_root, known_images, accumulator, media_budget, z_order,
-		)
-	if contains_text or contains_table or contains_image:
-		append_geometry(accumulator, ordinal, "frame", geometry, z_order)
-		accumulator.meaningful_content_count += 1
-		if role:
-			accumulator.populated_roles.append(role)
-			if contains_text:
-				accumulator.populated_text_roles.append(role)
-			if contains_image:
-				accumulator.populated_image_roles.append(role)
-			if contains_table:
-				accumulator.populated_table_roles.append(role)
-		return
-	append_geometry(accumulator, ordinal, "vector", geometry, z_order)
-	accumulator.review_reasons.append(
-		f"unsupported source object draw:{local_name(frame)} requires reconstruction")
-
-
-#============================================
-def read_page_objects(
-		page: xml.etree.ElementTree.Element, source_index: int, page_width: float,
-		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
-		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
-		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
-		media_budget: odp_media.MediaBudget, definitions: dict[str, odf_styles.StyleDefinition],
-		appear_targets: frozenset[str],
-) -> _PageAccumulator:
-	"""Extract direct visible page objects in their original nested z-order."""
-	accumulator = _PageAccumulator([], [], [], [], [], [], [], [], [], [], [], [], [])
-
-	def next_object() -> int:
-		accumulator.object_count += 1
-		if accumulator.object_count > MAX_PAGE_OBJECTS:
-			raise ValueError(f"source slide {source_index}: ODF page object limit exceeded")
-		accumulator.next_ordinal += 1
-		return accumulator.next_ordinal
-
-	def read_vector(element: xml.etree.ElementTree.Element, z_order: tuple[int, ...]) -> None:
-		ordinal = next_object()
-		geometry = vector_geometry(element, source_index)
-		if geometry is None:
-			accumulator.review_reasons.append(
-				f"source slide {source_index}: unsupported draw:{local_name(element)} has no bounded geometry",
-			)
-			return
-		crosses_bounds = visible_geometry(geometry, page_width, page_height, source_index)
-		if crosses_bounds:
-			accumulator.review_reasons.append("source object crosses physical page bounds")
-		append_geometry(accumulator, ordinal, "vector", geometry, z_order)
-		if any(element.findall(path, NS) for path in (
-			"./text:p", "./text:h", "./text:list",
-		)) and add_text(element, geometry, ordinal, None, element, accumulator, z_order,
-			definitions):
-			accumulator.meaningful_content_count += 1
-			return
-		color = slide_lib.presentation_theme.source_overlay_color_name(
-			odf_styles.attribute(element, definitions, qname("svg", "stroke-color")))
-		if not crosses_bounds and element.tag == qname("draw", "line") and color and \
-				odf_styles.attribute(element, definitions, qname("draw", "marker-end")) \
-				not in {None, "none"}:
-			first_x, first_y, second_x, second_y = line_endpoints(element)
-			accumulator.positioned_overlays.append(source_model.PositionedOverlay(
-				"arrow", first_x, first_y, second_x, second_y, color, ordinal, z_order,
-				odp_reveals.element_appears(element, appear_targets)))
-			accumulator.meaningful_content_count += 1
-			return
-		if not crosses_bounds and element.tag == qname("draw", "rect") and color and \
-				odf_styles.attribute(element, definitions, qname("draw", "fill")) == "none":
-			left, top, width, height = geometry
-			accumulator.positioned_overlays.append(source_model.PositionedOverlay(
-				"outline", left, top, left + width, top + height, color, ordinal, z_order,
-				odp_reveals.element_appears(element, appear_targets)))
-			accumulator.meaningful_content_count += 1
-			return
-		accumulator.review_reasons.append(
-			f"unsupported source object draw:{local_name(element)} requires reconstruction")
-
-	known_vectors = {
-		qname("draw", "rect"), qname("draw", "ellipse"), qname("draw", "line"),
-		qname("draw", "custom-shape"), qname("draw", "path"), qname("draw", "connector"),
-	}
-	stack = [
-		(child, (child_index,)) for child_index, child in reversed(list(enumerate(page)))
-		if child.tag not in {qname("presentation", "notes"), qname("office", "forms")}
-	]
-	while stack:
-		element, z_order = stack.pop()
-		if element.tag == qname("draw", "frame"):
-			ordinal = next_object()
-			read_frame(element, source_index, page_width, page_height, archive, member_names,
-				manifest_targets, assets_dir, djot_root, known_images, accumulator, media_budget,
-				z_order, ordinal, definitions)
-			continue
-		if element.tag == qname("draw", "g"):
-			if len(z_order) >= MAX_DRAW_GROUP_DEPTH:
-				raise ValueError(f"source slide {source_index}: ODF draw group depth limit exceeded")
-			stack.extend(
-				(child, (*z_order, child_index))
-				for child_index, child in reversed(list(enumerate(element)))
-			)
-			continue
-		if element.tag in known_vectors:
-			read_vector(element, z_order)
-			continue
-		if element.tag.startswith(f"{{{NS['draw']}}}"):
-			ordinal = next_object()
-			accumulator.meaningful_content_count += 1
-			accumulator.review_reasons.append(
-				f"source slide {source_index}: unsupported meaningful draw:{local_name(element)} requires review",
-			)
-			geometry = vector_geometry(element, source_index)
-			if geometry is not None:
-				append_geometry(accumulator, ordinal, "unknown", geometry, z_order)
-	return accumulator
-
-
-#============================================
 def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath) -> ImportedPresentation:
 	"""Read validated native ODP pages directly into raw semantic facts."""
-	# ASVS 1.5.1, 2.2.1, 5.2.2, and 5.2.3: admit bounded package facts before extraction.
 	admitted = slide_lib.odf_package.admit_package(
 		input_path, ".odp", ODP_MIMETYPE, slide_lib.odf_package.REQUIRED_ODP_MEMBERS,
 	)
@@ -712,26 +73,28 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 		definitions = odf_styles.definitions(roots)
 		visibility = odp_visibility.style_definitions_from_root(styles_root)
 		visibility.update(odp_visibility.style_definitions_from_root(content_root))
-		style_layouts = page_style_layouts(roots)
-		master_layouts = master_page_layouts(roots)
-		layout_dimensions = read_page_layout_dimensions(roots)
-		declared_roles = read_declared_placeholder_roles(roots)
+		style_layouts = odp_geometry.page_style_layouts(roots)
+		master_layouts = odp_geometry.master_page_layouts(roots)
+		layout_dimensions = odp_geometry.read_page_layout_dimensions(roots)
+		declared_roles = odp_geometry.read_declared_placeholder_roles(roots)
 		known_images: dict[str, str] = {}
 		media_budget = odp_media.MediaBudget()
-		read_slides_result: list[ReadSlide] = []
-		pages = content_root.findall(".//draw:page", NS)
+		read_slides_result: list[odp_page_objects.ReadSlide] = []
+		pages = content_root.findall(".//draw:page", odp_geometry.NS)
 		if len(pages) > MAX_PRESENTATION_PAGES:
 			raise ValueError("ODF presentation page limit exceeded")
 		for source_index, page in enumerate(pages, start=1):
-			identity = ImportedSlide(
-				source_index, page.get(qname("draw", "name"), f"slide_{source_index:03d}"),
+			identity = odp_page_objects.ImportedSlide(
+				source_index,
+				page.get(odp_geometry.qname("draw", "name"), f"slide_{source_index:03d}"),
 				odp_visibility.page_is_hidden(page, visibility),
 			)
-			page_width, page_height = page_dimensions(
+			page_width, page_height = odp_geometry.page_dimensions(
 				page, style_layouts, master_layouts, layout_dimensions,
 			)
-			layout_identity = page.get(qname("presentation", "presentation-page-layout-name"))
-			accumulator = read_page_objects(
+			layout_identity = page.get(
+				odp_geometry.qname("presentation", "presentation-page-layout-name"))
+			accumulator = odp_page_objects.read_page_objects(
 				page, source_index, page_width, page_height, archive, member_names,
 				admitted.manifest_targets, assets_dir, djot_root, known_images, media_budget,
 				definitions, odp_reveals.appear_target_ids(page),
@@ -739,12 +102,12 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 			accumulator.positioned_text, animation_reasons = odp_reveals.read_text_reveals(
 				page, accumulator.positioned_text, accumulator.positioned_overlays)
 			accumulator.review_reasons.extend(animation_reasons)
-			for color in unrecognized_text_colors(page, definitions):
+			for color in odp_page_objects.unrecognized_text_colors(page, definitions):
 				accumulator.review_reasons.append(
 					f"unrecognized source text color {color} requires review")
 			line_count = sum(len(block.lines) for block in accumulator.text_blocks)
 			character_count = sum(
-				len(plain_text(runs)) for block in accumulator.text_blocks
+				len(odp_page_objects.plain_text(runs)) for block in accumulator.text_blocks
 				for _level, runs in block.lines
 			)
 			if line_count > 10 or character_count > 1200:
@@ -759,10 +122,11 @@ def read_presentation(input_path: pathlib.Path, assets_dir: pathlib.Path,
 				source_index, identity.hidden, tuple(accumulator.titles),
 				tuple(sorted(accumulator.text_blocks, key=lambda block: (block.top, block.left))),
 				tuple(sorted(accumulator.images, key=lambda image: (image.top, image.left))),
-				page_notes(page, definitions), tuple(sorted(set(accumulator.review_reasons))),
+				odp_page_objects.page_notes(page, definitions),
+				tuple(sorted(set(accumulator.review_reasons))),
 				tuple(sorted(accumulator.tables, key=lambda table: (table.top, table.left))), evidence,
 			)
-			read_slides_result.append(ReadSlide(
+			read_slides_result.append(odp_page_objects.ReadSlide(
 				identity, data, tuple(accumulator.positioned_text),
 				tuple(accumulator.positioned_visual), page_width, page_height,
 				tuple(accumulator.raw_geometry), tuple(accumulator.positioned_overlays),

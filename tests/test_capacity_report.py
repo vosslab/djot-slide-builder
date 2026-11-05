@@ -60,13 +60,3 @@ def test_sort_and_aggregate_are_stable_across_compilation_order(tmp_path: pathli
 
 
 #============================================
-def test_physical_capacity_error_retains_the_same_structured_event(
-		tmp_path: pathlib.Path) -> None:
-	"""The exception transports its diagnostic to a corpus inspection caller."""
-	location = slide_lib.native_model.SourceLocation(tmp_path / "deck.djot", 11)
-	error = slide_lib.capacity_report.PhysicalCapacityError(location, "one-panel", "body", 24,
-		slide_lib.capacity_report.CapacityCause.GEOMETRY_SLOT_CONSTRAINT, 1)
-	assert error.diagnostic.required_size_pt is None
-	assert error.diagnostic.minimum_size_pt == 1
-	assert error.diagnostic.cause is slide_lib.capacity_report.CapacityCause.GEOMETRY_SLOT_CONSTRAINT
-	assert "one-panel/body cannot fit at the 1 pt serializer-safe minimum" in str(error)

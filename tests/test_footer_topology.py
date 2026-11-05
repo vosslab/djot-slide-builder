@@ -4,7 +4,7 @@
 import pytest
 
 # local repo modules
-import slide_lib.importers.djot_emitter as djot_emitter
+import slide_lib.importers.emission_topology as emission_topology
 import slide_lib.importers.emission_flow as emission_flow
 import slide_lib.importers.geometry as geometry
 
@@ -32,30 +32,12 @@ def test_coarse_columns_and_wide_footer_flow_match_existing_three_cell_layout() 
 
 	grouped = emission_flow.coalesce_bottom_footer(components)
 
-	assert djot_emitter.component_layout(grouped)[0] == "two-over-one-panels"
-	assert not djot_emitter.components_overlap(grouped)
+	assert emission_topology.component_layout(grouped)[0] == "two-over-one-panels"
+	assert not emission_topology.components_overlap(grouped)
 
 
 #============================================
 #============================================
-@pytest.mark.parametrize(
-	"components",
-	[
-		[
-			component((0.05, 0.20, 0.55, 0.80), coarse=True),
-			component((0.65, 0.50, 0.90, 0.69)),
-		],
-		[
-			component((0.05, 0.20, 0.55, 0.80), coarse=True),
-			component((0.50, 0.21, 0.75, 0.40)),
-		],
-	],
-)
-def test_asymmetric_explanatory_pair_leaves_nonrelations_to_ordinary_matching(
-		components: list[emission_flow.EmissionComponent],
-) -> None:
-	"""Only direct, separated, aligned one-coarse text pairs enter the local path."""
-	assert djot_emitter.asymmetric_explanatory_pair_layout(components) is None
 
 
 #============================================
@@ -68,6 +50,6 @@ def test_wide_lower_component_preserves_top_peer_and_footer_axis_relations() -> 
 	]
 	near_miss = [*components[:2], component((0.43, 0.58, 0.57, 0.85))]
 
-	assert djot_emitter.component_layout(components)[0] == "two-over-one-panels"
+	assert emission_topology.component_layout(components)[0] == "two-over-one-panels"
 	with pytest.raises(ValueError, match="ambiguous topology"):
-		djot_emitter.component_layout(near_miss)
+		emission_topology.component_layout(near_miss)

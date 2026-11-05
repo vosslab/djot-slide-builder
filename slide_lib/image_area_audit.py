@@ -9,8 +9,8 @@ import zipfile
 import PIL.Image
 import PIL.ImageChops
 
+import slide_lib.importers.odp_geometry as odp_geometry
 import slide_lib.djot_parser
-import slide_lib.importers.odp_reader as reader
 import slide_lib.layout_content
 import slide_lib.layout_engine
 import slide_lib.odf_package
@@ -57,10 +57,10 @@ def audit(source: pathlib.Path, converted: pathlib.Path,
 	package = slide_lib.odf_package.admit_package(source, ".odp",
 		slide_lib.odf_package.ODP_MIMETYPE, slide_lib.odf_package.REQUIRED_ODP_MEMBERS)
 	roots = (package.styles_root, package.content_root)
-	pages = package.content_root.findall(".//draw:page", reader.NS)
-	style_layouts = reader.page_style_layouts(roots)
-	masters = reader.master_page_layouts(roots)
-	dimensions = reader.read_page_layout_dimensions(roots)
+	pages = package.content_root.findall(".//draw:page", odp_geometry.NS)
+	style_layouts = odp_geometry.page_style_layouts(roots)
+	masters = odp_geometry.master_page_layouts(roots)
+	dimensions = odp_geometry.read_page_layout_dimensions(roots)
 	deck = slide_lib.djot_parser.parse_deck(converted)
 	plan = slide_lib.layout_engine.compile_layout_deck(deck,
 		slide_lib.presentation_theme.default_theme(deck.color_theme)).plan
@@ -69,7 +69,7 @@ def audit(source: pathlib.Path, converted: pathlib.Path,
 	results: list[dict[str, object]] = []
 	with zipfile.ZipFile(source) as archive:
 		for index, (page, output) in enumerate(zip(pages, plan.slides, strict=True), 1):
-			width, height = reader.page_dimensions(page, style_layouts, masters, dimensions)
+			width, height = odp_geometry.page_dimensions(page, style_layouts, masters, dimensions)
 			targets: dict[str, float] = {}
 			for item in output.objects:
 				if isinstance(item.content, slide_lib.layout_content.PictureContent):
@@ -81,26 +81,26 @@ def audit(source: pathlib.Path, converted: pathlib.Path,
 					targets[digest] = targets.get(digest, 0) + r.width * r.height / (
 						plan.canvas.width * plan.canvas.height)
 			sources: dict[str, tuple[str, float, float | None]] = {}
-			for frame in page.findall(".//draw:frame", reader.NS):
-				image = frame.find("draw:image", reader.NS)
+			for frame in page.findall(".//draw:frame", odp_geometry.NS):
+				image = frame.find("draw:image", odp_geometry.NS)
 				if image is None:
 					continue
-				ref = image.get(reader.qname("xlink", "href"), "")
+				ref = image.get(odp_geometry.qname("xlink", "href"), "")
 				member = slide_lib.odf_package.package_reference_target("content.xml", ref)
 				if member not in package.member_names:
 					results.append({"slide": index, "asset": ref,
 						"status": "manual review: missing or external artwork"})
 					continue
-				if any(node.get(reader.qname("draw", "transform")) is not None
+				if any(node.get(odp_geometry.qname("draw", "transform")) is not None
 						for node in (frame, *frame.iterancestors())):
 					results.append({"slide": index, "asset": ref,
 						"status": "manual review: transformed source frame"})
 					continue
 				payload = archive.read(member)
 				digest = hashlib.sha256(payload).hexdigest()
-				w = reader.parse_length(frame.get(reader.qname("svg", "width")),
+				w = odp_geometry.parse_length(frame.get(odp_geometry.qname("svg", "width")),
 					field_name="image width", allow_negative=False)
-				h = reader.parse_length(frame.get(reader.qname("svg", "height")),
+				h = odp_geometry.parse_length(frame.get(odp_geometry.qname("svg", "height")),
 					field_name="image height", allow_negative=False)
 				if w * h <= 0:
 					continue

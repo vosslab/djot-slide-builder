@@ -2,6 +2,16 @@
 
 ### Fixes and Maintenance
 
+- Complete the responsibility split beyond the line-limit advisory: separate emitted topology,
+  ODP geometry/page extraction, figure/multiple-choice recognition, fitting policy, and table
+  measurement. Original emitter/reader/planner/text-measurement modules are now 445/136/242/498
+  lines, with direct imports and no compatibility facades.
+- Apply the permanent-test checklist to affected repository-owned tests: remove three redundant
+  internal-only test functions (four parametrized cases), retain Djot syntax/guideline checks,
+  source-content preservation, and import-safety regressions. Add no permanent refactor tests.
+  Full suite: 3977 passed, no warnings. One-time physical-plan comparisons match for two real
+  decks; remove the temporary comparison input and migration script after verification.
+
 - Archive 15 completed or superseded planning, design-research, and implementation-review
   documents with `git mv`. Remove the redundant native-layout-contract redirect, repair relative
   links and inbound references, and mark snapshots as historical. Retain two active Biotechnology

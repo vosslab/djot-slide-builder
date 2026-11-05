@@ -6,6 +6,7 @@ import pathlib
 import PIL.Image
 import pytest
 
+import slide_lib.layout_size_selection
 import slide_lib.capacity_report
 import slide_lib.compilation_result
 import slide_lib.djot_parser
@@ -320,7 +321,7 @@ def test_fixed_title_frame_reports_an_unrepresentable_source_heading(tmp_path: p
 	theme = slide_lib.presentation_theme.default_theme()
 	session = slide_lib.layout_measurement.MeasurementSession(theme)
 	with pytest.raises(slide_lib.capacity_report.PhysicalCapacityError) as raised:
-		slide_lib.layout_measurement.select_fixed_heading_size((unrepresentable,),
+		slide_lib.layout_size_selection.select_fixed_heading_size((unrepresentable,),
 			slide_lib.layout_primitives.LogicalRectangle(110, 180, 1060, 250),
 			theme.standard_title_size_pt, theme.title_floor_size_pt, theme, "title-only", "title",
 			slide_lib.capacity_report.CapacityCause.TITLE, True, session)

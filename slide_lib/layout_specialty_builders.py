@@ -2,6 +2,7 @@
 
 import dataclasses
 
+import slide_lib.layout_size_selection
 import slide_lib.capacity_report
 import slide_lib.layout_content
 import slide_lib.layout_measurement
@@ -159,7 +160,7 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 	transition_theme = dataclasses.replace(theme,
 		standard_title_size_pt=SECTION_TITLE_SIZE_PT,
 		ordinary_body_size_pt=SECTION_SUBTITLE_SIZE_PT)
-	sizes = slide_lib.layout_measurement.select_centered_heading_sizes(
+	sizes = slide_lib.layout_size_selection.select_centered_heading_sizes(
 		headings[0], headings[1:], rectangle, transition_theme, contract.name, session)
 	subtitle_size = sizes.subtitle_size_pt if sizes.subtitle_size_pt is not None \
 		else theme.ordinary_body_size_pt
@@ -242,7 +243,7 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 	caption_rectangle = dataclasses.replace(caption_rectangle,
 		height=min(max(caption_rectangle.height, required_height), bottom - caption_rectangle.y))
 	inner = dataclasses.replace(inner, height=caption_rectangle.height - 20)
-	size = slide_lib.layout_measurement.select_size(
+	size = slide_lib.layout_size_selection.select_size(
 		items,
 		slide_lib.layout_measurement.text_frame_measurement(inner),
 		CAPTION_SIZE_PT, CAPTION_FLOOR_SIZE_PT, theme, caption_cell.location,
@@ -313,7 +314,7 @@ def _end_components(deck: slide_lib.native_model.Deck,
 		height = 2 * slide_lib.layout_measurement.point_height(line_spacing_pt, theme)
 		return width <= rectangle.width and slide_lib.layout_measurement.text_frame_fits(
 			height, slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
-	size = slide_lib.layout_measurement.largest_fitting_size(
+	size = slide_lib.layout_size_selection.largest_fitting_size(
 		END_TITLE_SIZE_PT, END_TITLE_FLOOR_SIZE_PT, fits)
 	if size is None:
 		raise slide_lib.capacity_report.PhysicalCapacityError(title.location, contract.name,

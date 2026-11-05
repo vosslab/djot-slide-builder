@@ -1,6 +1,8 @@
 """Focused geometry behavior for immutable emitter component members."""
 
 # local repo modules
+import slide_lib.importers.figure_regions as figure_regions
+import slide_lib.importers.emission_topology as emission_topology
 import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.emission_flow as emission_flow
 import slide_lib.importers.geometry as geometry
@@ -43,7 +45,7 @@ def test_member_footprints_avoid_false_collision_from_union_bounds() -> None:
 	)
 	second = emission_flow.EmissionComponent(bounds((0.45, 0.45, 0.55, 0.55)), ("- item",), "text")
 
-	assert not djot_emitter.components_overlap([first, second])
+	assert not emission_topology.components_overlap([first, second])
 
 
 #============================================
@@ -58,8 +60,8 @@ def test_only_coarse_direct_picture_peer_tolerates_raw_overlap() -> None:
 		source_kind="picture", member_footprints=(bounds((0.45, 0.30, 0.95, 0.70)),),
 	)
 
-	assert djot_emitter.component_layout([coarse, image])[0] == "two-panels"
-	assert not djot_emitter.components_overlap([coarse, image])
+	assert emission_topology.component_layout([coarse, image])[0] == "two-panels"
+	assert not emission_topology.components_overlap([coarse, image])
 
 
 #============================================
@@ -91,8 +93,8 @@ def test_caption_footer_and_shared_footer_relations_are_individually_bounded() -
 		bounds((0.60, 0.20, 0.95, 0.58)), ("![image](image.png)",), "image", source_kind="picture",
 	)
 
-	assert not djot_emitter.components_overlap([left, caption_footer, image_caption])
-	assert not djot_emitter.components_overlap(emission_flow.coalesce_bottom_footer([coarse, shared_footer, raw_image]))
+	assert not emission_topology.components_overlap([left, caption_footer, image_caption])
+	assert not emission_topology.components_overlap(emission_flow.coalesce_bottom_footer([coarse, shared_footer, raw_image]))
 
 
 #============================================
@@ -101,14 +103,14 @@ def test_native_normalization_retains_individual_source_member_footprints() -> N
 	text = source_regions.SourceTextRegion(((0, (source_model.TextRun("Label"),)),),
 		bounds((0.20, 0.20, 0.30, 0.30)), False, 0.0)
 	image = source_regions.SourceImageRegion("source.png", bounds((0.60, 0.60, 0.80, 0.80)))
-	content = slide_plan.ContentRegionPlan("relation", bounds((0.20, 0.20, 0.80, 0.80)), (text,), (image,))
+	content = figure_regions.ContentRegionPlan("relation", bounds((0.20, 0.20, 0.80, 0.80)), (text,), (image,))
 	plan = slide_plan.SlidePlan(slide_plan.TitleDecision(None, "test"), (), content)
 	planned = djot_emitter.PlannedSlide(source_model.SlideData(1, False, (), (), (), (), ()), plan)
 
 	components, _reasons = djot_emitter.emit_components(planned)
 	gap = emission_flow.EmissionComponent(bounds((0.40, 0.40, 0.50, 0.50)), ("- outside",), "text")
 
-	assert not djot_emitter.components_overlap([components[0], gap])
+	assert not emission_topology.components_overlap([components[0], gap])
 
 
 #============================================
@@ -131,4 +133,4 @@ def test_shallow_same_lane_text_boxes_form_a_two_panel_flow() -> None:
 	flow = next(component for component in result if component.kind == "flow")
 
 	assert flow.lines == ("- text 10", "", "- text 11")
-	assert djot_emitter.component_layout(result)[0] == "two-panels"
+	assert emission_topology.component_layout(result)[0] == "two-panels"

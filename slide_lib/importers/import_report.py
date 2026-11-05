@@ -4,6 +4,8 @@
 import dataclasses
 
 # local repo modules
+import slide_lib.importers.multiple_choice_plan as multiple_choice_plan
+import slide_lib.importers.figure_regions as figure_regions
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_regions as source_regions
 import slide_lib.importers.source_model as source_model
@@ -43,7 +45,7 @@ def image_region_record(region: source_regions.SourceImageRegion) -> dict[str, o
 
 #============================================
 def content_region_record(
-	content: slide_plan.ContentRegionPlan | None,
+	content: figure_regions.ContentRegionPlan | None,
 ) -> dict[str, object] | None:
 	"""Describe every retained member of one normalized spatial relationship."""
 	if content is None:
@@ -62,7 +64,7 @@ def content_region_record(
 
 #============================================
 def multiple_choice_record(
-	choice: slide_plan.MultipleChoicePlan | None,
+	choice: multiple_choice_plan.MultipleChoicePlan | None,
 ) -> dict[str, object] | None:
 	"""Describe source evidence for one recognized multiple-choice structure."""
 	if choice is None:

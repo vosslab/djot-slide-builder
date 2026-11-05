@@ -11,6 +11,7 @@ import stat
 import tempfile
 
 # local repo modules
+import slide_lib.importers.odp_page_objects as odp_page_objects
 import slide_lib.djot_lint as djot_lint
 import slide_lib.djot_parser
 import slide_lib.capacity_report
@@ -230,7 +231,7 @@ def publish_conversion(staging_djot: pathlib.Path, staging_assets: pathlib.Path,
 
 
 #============================================
-def direct_record(record: dict[str, object], source_slide: odp_reader.ReadSlide) -> dict[str, object]:
+def direct_record(record: dict[str, object], source_slide: odp_page_objects.ReadSlide) -> dict[str, object]:
 	"""Add ODP-only immutable source evidence to one normal import report record."""
 	evidence = source_slide.data.page_evidence
 	if evidence is None:

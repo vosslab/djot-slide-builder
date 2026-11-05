@@ -11,6 +11,8 @@ from PIL import Image
 import pytest
 
 # Local modules
+import slide_lib.importers.odp_geometry as odp_geometry
+import slide_lib.importers.odp_page_objects as odp_page_objects
 import slide_lib.importers.odp_reader as odp_reader
 import slide_lib.importers.odp_media as odp_media
 import slide_lib.importers.odp_tables as odp_tables
@@ -64,14 +66,6 @@ def test_answer_animation_survives_or_requires_review(tmp_path: pathlib.Path,
 		assert "animation" in summary.report_path.read_text()
 
 
-def test_flat_unsupported_polyline_remains_reviewable() -> None:
-	"""A vertical legacy polyline has no rectangle geometry to import."""
-	element = parse_test_xml(
-		'<draw:polyline xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" '
-		'xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" '
-		'svg:width="0cm" svg:height="4cm"/>'
-	)
-	assert odp_reader.vector_geometry(element, 1) is None
 
 
 def test_polyline_rejects_negative_dimensions() -> None:
@@ -82,7 +76,7 @@ def test_polyline_rejects_negative_dimensions() -> None:
 		'svg:width="0cm" svg:height="-4cm"/>'
 	)
 	with pytest.raises(ValueError, match="nonnegative"):
-		odp_reader.vector_geometry(element, 1)
+		odp_geometry.vector_geometry(element, 1)
 
 
 CONTENT_PREFIX = """<?xml version="1.0" encoding="UTF-8"?>
@@ -467,9 +461,9 @@ def test_reader_prefers_metafile_over_preview(tmp_path: pathlib.Path,
 	asset = slide.data.images[0]
 	assert asset.asset_path.endswith(".svg")
 	assert (assets_dir / pathlib.PurePosixPath(asset.asset_path).name).read_bytes().endswith(svg)
-	source_frame = parse_test_xml(content).find(".//draw:frame", odp_reader.NS)
+	source_frame = parse_test_xml(content).find(".//draw:frame", odp_geometry.NS)
 	assert (asset.left, asset.top, asset.width, asset.height) == \
-		odp_reader.frame_geometry(source_frame, 1)
+		odp_geometry.frame_geometry(source_frame, 1)
 	assert not any("source image requires review" in reason for reason in slide.data.review_reasons)
 
 
@@ -484,8 +478,8 @@ def test_reader_converts_metafile_without_preview(tmp_path: pathlib.Path,
 		with zipfile.ZipFile(input_path) as archive:
 			assert archive.read("Pictures/figure.svm").startswith(b"VCLMTF")
 			root = parse_test_xml(archive.read("content.xml"))
-			image = root.find(".//draw:image", odp_reader.NS)
-			assert image.get(odp_reader.qname("xlink", "href")) == "Pictures/figure.svm"
+			image = root.find(".//draw:image", odp_geometry.NS)
+			assert image.get(odp_geometry.qname("xlink", "href")) == "Pictures/figure.svm"
 		assert output_format == "svg"
 		output_path = output_dir / "figure.svg"
 		output_path.write_bytes(svg)
@@ -560,7 +554,7 @@ def test_reader_enforces_xml_and_page_object_limits(tmp_path: pathlib.Path,
 	input_path = write_odp(tmp_path, content)
 	assets_dir = tmp_path / "assets"
 	assets_dir.mkdir()
-	monkeypatch.setattr(odp_reader, "MAX_PAGE_OBJECTS", 1)
+	monkeypatch.setattr(odp_page_objects, "MAX_PAGE_OBJECTS", 1)
 	with pytest.raises(ValueError, match="page object limit"):
 		odp_reader.read_presentation(input_path, assets_dir, pathlib.PurePosixPath("assets/deck"))
 

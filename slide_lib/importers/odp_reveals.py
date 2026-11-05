@@ -5,6 +5,7 @@ import dataclasses
 import xml.etree.ElementTree
 
 # Local modules
+import slide_lib.importers.multiple_choice_plan as multiple_choice_plan
 import slide_lib.importers.source_model as source_model
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_regions as source_regions
@@ -105,7 +106,7 @@ def plan_text_reveals(plan: slide_plan.SlidePlan,
 		answer_text = " ".join(run.text for _, runs in answer.paragraphs for run in runs)
 		if ("?" in question_text and answer_text.strip().lower().startswith("answer")
 				and 1 <= len(answer.paragraphs) <= 2):
-			choice = slide_plan.MultipleChoicePlan(question, answer, None,
+			choice = multiple_choice_plan.MultipleChoicePlan(question, answer, None,
 				"question with source on-click answer reveal")
 			plan = slide_plan.SlidePlan(slide_plan.TitleDecision(None, "answer reveal"), (),
 				multiple_choice=choice)

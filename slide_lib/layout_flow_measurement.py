@@ -5,6 +5,7 @@ import itertools
 
 import PIL.Image
 
+import slide_lib.layout_table_measurement
 import slide_lib.djot_sources
 import slide_lib.layout_measurement
 import slide_lib.layout_primitives
@@ -78,7 +79,7 @@ def mixed_flow_allocation(deck: slide_lib.native_model.Deck,
 		if isinstance(block, slide_lib.native_model.Heading):
 			height = measure.paragraph_height(block.inlines, size_pt, rectangle.width, theme, bold=True, session=session)
 		elif isinstance(block, slide_lib.native_model.Table):
-			height = measure.table_height(block, size_pt, rectangle.width, theme, session)
+			height = slide_lib.layout_table_measurement.table_height(block, size_pt, rectangle.width, theme, session)
 		elif isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
 			height = measure.text_height(measure.items_for((block,)), size_pt, rectangle.width, theme, session)
 		else:

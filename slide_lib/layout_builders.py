@@ -3,6 +3,8 @@
 import dataclasses
 import math
 
+import slide_lib.layout_table_measurement
+import slide_lib.layout_size_selection
 import slide_lib.capacity_report
 import slide_lib.layout_measurement
 import slide_lib.layout_flow_measurement
@@ -70,12 +72,12 @@ def _title_size_for_source(deck: slide_lib.native_model.Deck, source: slide_lib.
 	def content_geometry(size: float) -> slide_lib.layout_primitives.LogicalRectangle | None:
 		geometry = _title_geometry(title, size, theme, contract, session)
 		return geometry[1] if geometry is not None else None
-	size = slide_lib.layout_measurement.largest_fitting_size(
+	size = slide_lib.layout_size_selection.largest_fitting_size(
 		theme.standard_title_size_pt, theme.title_floor_size_pt,
 		lambda candidate: content_geometry(candidate) is not None)
 	if size is not None:
 		return size
-	return slide_lib.layout_measurement.select_title_size(
+	return slide_lib.layout_size_selection.select_title_size(
 		theme.standard_title_size_pt, theme.title_floor_size_pt,
 		content_geometry,
 		lambda _content: False, title.location, contract.name, "title", session)
@@ -120,7 +122,7 @@ def _cell_fits_floor(deck: slide_lib.native_model.Deck, cell: slide_lib.native_m
 	text = tuple(block for block in blocks if isinstance(block,
 		(slide_lib.native_model.Heading, slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)))
 	if tables and len(blocks) == 1:
-		return slide_lib.layout_measurement.text_frame_fits(slide_lib.layout_measurement.table_height(
+		return slide_lib.layout_measurement.text_frame_fits(slide_lib.layout_table_measurement.table_height(
 			tables[0], theme.body_floor_size_pt, rectangle.width, theme, session),
 			slide_lib.layout_measurement.text_frame_measurement(rectangle), theme)
 	if tables or images and text or any(isinstance(block, slide_lib.native_model.Heading) for block in text) or (
@@ -204,7 +206,7 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 			slide_lib.layout_primitives.LogicalRectangle(110, 180, 1060, 250)
 		frame = dataclasses.replace(_frame_text(),
 			vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE) if is_title_slide else _frame_text()
-		size = slide_lib.layout_measurement.select_fixed_heading_size((title,), rectangle,
+		size = slide_lib.layout_size_selection.select_fixed_heading_size((title,), rectangle,
 			theme.standard_title_size_pt, theme.title_floor_size_pt, theme, contract.name, "title",
 			slide_lib.capacity_report.CapacityCause.TITLE, True, session)
 		slots.append(_slot("title", slide_lib.layout_primitives.PlaceholderKind.TITLE,
@@ -218,7 +220,7 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 		rectangle = _master_rectangle(theme.outline_frame, theme)
 		frame = dataclasses.replace(_frame_text(),
 			vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
-		size = slide_lib.layout_measurement.select_fixed_heading_size(headings[1:], rectangle,
+		size = slide_lib.layout_size_selection.select_fixed_heading_size(headings[1:], rectangle,
 			theme.ordinary_body_size_pt, theme.body_floor_size_pt, theme, contract.name, "subtitle",
 			slide_lib.capacity_report.CapacityCause.LOCAL_HEADING, False, session)
 		slots.append(_slot("subtitle", slide_lib.layout_primitives.PlaceholderKind.SUBTITLE,
@@ -241,7 +243,7 @@ def _title_only_slide(deck: slide_lib.native_model.Deck, source: slide_lib.nativ
 		raise ValueError("title-only requires its validated leading title")
 	title_rectangle = slide_lib.layout_primitives.LogicalRectangle(110, 180, 1060, 250)
 	frame = _frame_text()
-	title_size = slide_lib.layout_measurement.select_fixed_heading_size((title,), title_rectangle,
+	title_size = slide_lib.layout_size_selection.select_fixed_heading_size((title,), title_rectangle,
 		theme.standard_title_size_pt, theme.title_floor_size_pt, theme, contract.name, "title", slide_lib.capacity_report.CapacityCause.TITLE, True, session)
 	slots = [_slot("title", slide_lib.layout_primitives.PlaceholderKind.TITLE,
 		slide_lib.layout_primitives.PresentationRole.TITLE, title_rectangle, 0, frame, slide_lib.layout_primitives.StyleRole.TITLE)]
@@ -278,7 +280,7 @@ def _content_area(source: slide_lib.native_model.Slide, title: slide_lib.native_
 	geometry = _title_geometry(title, theme.standard_title_size_pt, theme, contract, session)
 	size = theme.standard_title_size_pt
 	if geometry is None:
-		size = slide_lib.layout_measurement.largest_fitting_size(
+		size = slide_lib.layout_size_selection.largest_fitting_size(
 			theme.standard_title_size_pt,
 			slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT,
 			lambda candidate: _title_geometry(title, candidate, theme, contract, session) is not None)
@@ -343,7 +345,7 @@ def _cell_objects(deck: slide_lib.native_model.Deck, cell: slide_lib.native_mode
 				placeholder_kind=slide_lib.layout_primitives.PlaceholderKind.OUTLINE)
 			return objects + flow
 		items = slide_lib.layout_measurement.items_for(text_blocks)
-		size = slide_lib.layout_measurement.select_size(items, slide_lib.layout_measurement.text_frame_measurement(rectangle), theme.ordinary_body_size_pt,
+		size = slide_lib.layout_size_selection.select_size(items, slide_lib.layout_measurement.text_frame_measurement(rectangle), theme.ordinary_body_size_pt,
 			theme.body_floor_size_pt, theme, text_blocks[0].location, contract.name, slot_name, session,
 			slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST)
 		objects.append(slide_lib.layout_object_builders.text_object(

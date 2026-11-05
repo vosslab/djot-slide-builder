@@ -119,14 +119,19 @@ or invoking LibreOffice, then reports the same source-located capacity diagnosti
 | `slide_lib/cli.py` | Argument parsing and direct operation dispatch | Format-neutral command routing |
 | `slide_lib/importers/odp_to_djot.py` | Direct ODP orchestration and staged non-overwriting publication | Djot source, assets, and provenance |
 | `slide_lib/importers/odp_reader.py` | Bounded native ODP extraction and raw-fact orchestration | Raw runs, tables, images, notes, geometry, visibility, and page evidence |
+| `slide_lib/importers/odp_geometry.py` | Page dimensions, transforms, and object geometry | Bounded raw geometry |
+| `slide_lib/importers/odp_page_objects.py` | Page-local text, image, table, and vector extraction | Raw page objects |
 | `slide_lib/importers/odp_media.py` | Bounded embedded-image validation | Admitted image blobs and media limits |
 | `slide_lib/importers/odp_tables.py` | ODF table-cell reconstruction | Source table rows and cell runs |
 | `slide_lib/importers/source_model.py` | Raw imported-presentation facts | Reader-to-planner/emitter records |
 | `slide_lib/importers/source_regions.py` | Raw text and visual region normalization | Normalized source-region facts |
 | `slide_lib/importers/source_tables.py` | Source table geometry and table planning | Table plans and cell geometry |
 | `slide_lib/importers/slide_plan.py` | Geometry-first semantic planning | Final `SlidePlan` |
+| `slide_lib/importers/figure_regions.py` | Figure and content-region recognition | Content region plans |
+| `slide_lib/importers/multiple_choice_plan.py` | Question, answer, and figure recognition | Multiple-choice plan |
 | `slide_lib/importers/topology.py` | Shared ordinary-layout topology matching | Registry-derived layout candidate |
 | `slide_lib/importers/emission_flow.py` | Component reading-order and footer-flow grouping | Ordered emission components |
+| `slide_lib/importers/emission_topology.py` | Component overlap and layout classification | Emitted component layout |
 | `slide_lib/importers/djot_emitter.py` | Escaping and atomic component-to-Djot projection | Source-located Djot components |
 | `slide_lib/importers/import_report.py` | Lossless normalized-region and note diagnostics | JSON-ready migration evidence |
 | `slide_lib/djot_parser.py` | Extended-Djot framing, slots, actions, and block assembly | Typed slide model |
@@ -134,7 +139,9 @@ or invoking LibreOffice, then reports the same source-located capacity diagnosti
 | `slide_lib/djot_grammar.py` | Exact directive and action spellings derived from the layout registry | Shared Djot contract |
 | `slide_lib/djot_lint.py` | Strict-tool invocation and source-only Djot semantics | Source diagnostics |
 | `slide_lib/layout_registry.py` | Names, slots, topology, and LibreOffice classifier policies | `LayoutContract` |
-| `slide_lib/layout_measurement.py` | Font-backed text, table, and title measurement | Resolved physical facts |
+| `slide_lib/layout_measurement.py` | Font-backed text metrics and wrapping | Resolved text facts |
+| `slide_lib/layout_size_selection.py` | Readable font-size fitting policy | Selected sizes |
+| `slide_lib/layout_table_measurement.py` | Table bounds and compile-scoped group measurement | Resolved table facts |
 | `slide_lib/layout_flow_measurement.py` | Image dimensions and mixed text/image allocation | Mixed-flow physical facts |
 | `slide_lib/layout_source_facts.py` | Unsupported source-fact inspection | Source validation facts |
 | `slide_lib/layout_builders.py` | Standard and multiple-choice object construction | `LayoutSlide` objects |

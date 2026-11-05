@@ -2,6 +2,7 @@
 
 import dataclasses
 
+import slide_lib.layout_size_selection
 import slide_lib.capacity_report
 import slide_lib.layout_measurement
 import slide_lib.layout_primitives
@@ -169,7 +170,7 @@ def answer_trial(items: tuple[
 	inner_width = width - 36
 	measurement = slide_lib.layout_measurement.text_frame_measurement(
 		slide_lib.layout_primitives.LogicalRectangle(0, 0, inner_width, 210))
-	size = slide_lib.layout_measurement.largest_fitting_size(theme.ordinary_body_size_pt,
+	size = slide_lib.layout_size_selection.largest_fitting_size(theme.ordinary_body_size_pt,
 		slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT,
 		lambda value: slide_lib.layout_measurement.text_height(items, value,
 			measurement.wrapping_extent, theme, session, bold=True) <= measurement.available_extent)

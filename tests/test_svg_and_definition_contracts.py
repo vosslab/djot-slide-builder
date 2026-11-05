@@ -6,6 +6,7 @@ import zipfile
 import pytest
 import lxml.etree
 
+import slide_lib.importers.odp_geometry
 import slide_lib.djot_parser
 import slide_lib.importers.djot_text
 import slide_lib.importers.odf_text
@@ -62,7 +63,7 @@ def test_svg_payload_and_aspect_survive_comparison_export(tmp_path: pathlib.Path
 def test_definition_emphasis_survives_import_and_export_without_leaking(
 		tmp_path: pathlib.Path) -> None:
 	"""An inherited bold/underlined term keeps its color and a normal definition stays normal."""
-	ns = slide_lib.importers.odp_reader.NS
+	ns = slide_lib.importers.odp_geometry.NS
 	declarations = ' '.join(f'xmlns:{key}="{value}"' for key, value in ns.items())
 	root = parse_test_xml(f'<root {declarations}>'
 		'<style:style style:name="base"><style:text-properties fo:font-weight="bold" '
@@ -98,7 +99,7 @@ def test_definition_emphasis_survives_import_and_export_without_leaking(
 
 def test_frame_formatting_resets_and_exact_color_survive_export(tmp_path: pathlib.Path) -> None:
 	"""Keep inherited emphasis, capitalization, unknown RGB, and explicit normal resets."""
-	ns = slide_lib.importers.odp_reader.NS
+	ns = slide_lib.importers.odp_geometry.NS
 	declarations = ' '.join(f'xmlns:{key}="{value}"' for key, value in ns.items())
 	root = parse_test_xml(f'<root {declarations}>'
 		'<style:style style:name="graphic"><style:graphic-properties draw:fill="none"/></style:style>'
