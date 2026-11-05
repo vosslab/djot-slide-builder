@@ -1,0 +1,43 @@
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Delivery Is Part of the Mechanism
+
+@body
+
+| Platform | Useful Feature | Important Constraint |
+| --- | --- | --- |
+| Adenovirus | Strong expression | Immune response and redosing |
+| AAV | Durable expression in some tissues | Small payload and capsid immunity |
+| Retroviral vector | Stable integration | Insertion site and cell selection |
+| Lipid particle | Transient RNA delivery | Tissue targeting and endosomal escape |
+| Engineered cells | Test cells before infusion | Manufacturing, persistence, and toxicity |
+
+=== layout: one-panel
+
+# Choose the Change Before the Tool
+
+@body
+
+- Add a useful gene: deliver an expression cassette to the right cells.
+- Reduce a harmful message: match an RNA medicine to its RNA target.
+- Change DNA: choose a nuclease, base editor, or prime editor that can make the needed edit.
+- Change gene activity: target regulatory machinery without changing the DNA letters.
+- Replace or redirect cells: establish their identity, function, and behavior after delivery.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Delivery is part of the mechanism: the same payload can succeed or fail in different tissues and formats.
+- Genome editing adds the challenge of permanent, cell-specific changes and unintended outcomes.
+- Cell and cancer therapies work only when their biological target, evidence, and limits are made explicit.
+
+=== layout: theend
+
+# THE END

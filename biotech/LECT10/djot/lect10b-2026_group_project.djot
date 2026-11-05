@@ -1,0 +1,250 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 10B
+
+## Biotechnology: Group Project
+## Dr. Neil Voss
+## Nov 5, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Choose a company that your group can explain and develop together.
+- Plan a connected scientific presentation and a complete business plan.
+- Use the current project milestones, required sections, and evaluation criteria.
+
+=== layout: section
+
+# The Group Company Project
+
+=== layout: one-panel
+
+# Individual Projects Are Complete
+
+@body
+
+- Your individual pitch, executive summary, and milestones work now become evidence for a shared company.
+- The group project can select one individual proposal and revise its name, product, market, or scientific strategy.
+- This is a deeper scientific and business case, not several individual projects stapled together.
+- Your group needs one clear company story, shared evidence, and a final product that reads as one document.
+
+=== layout: one-panel
+
+# Group Project Timeline
+
+@body
+
+| Date | Group milestone |
+| --- | --- |
+| Nov 12 | Groups formed |
+| Nov 19 | Group project selected |
+| Dec 3 | Company Vision Report form due |
+| Dec 10 | Group presentations |
+| Dec 17 | Group business plan due |
+
+=== layout: one-panel
+
+# Your First Two Decisions
+
+@body
+
+- Form a working group of 3-4 students on Nov 12.
+- Select one company proposal on Nov 19.
+- Choose one of the individual proposals and develop it as a group.
+- Decide what the company will make, who needs it, and what biotechnology makes it plausible.
+- Revise early when new people, evidence, and expertise make the original idea stronger.
+
+=== layout: section
+
+# Shared Company
+
+=== layout: two-panels
+
+# Company Vision Report
+
+@left
+
+## Define the company
+
+- Company name
+- Product and specific problem
+- Intended user or market
+- Scientific direction
+
+@right
+
+## Define the team
+
+- Initial member contributions
+- Major questions to research
+- First development milestones
+- One group submission through Blackboard
+
+=== layout: one-panel
+
+# Group Project: 91 Points
+
+@body
+
+| Component | Points |
+| --- | --- |
+| Group Vision Report | 2 |
+| Group presentation: instructor score | 25 |
+| Presentation peer evaluation | 2 |
+| Group presentation: peer score | 25 |
+| Member contribution form | 2 |
+| Contribution peer score | 10 |
+| Complete business plan | 25 |
+| [*Total*]{color=#FFFFFF} | [*91*]{color=#FFFFFF} |
+
+=== layout: section
+
+# Work as One Company
+
+=== layout: one-panel
+
+# Collaboration That Holds Together
+
+@body
+
+- Start the presentation and business plan early in shared documents.
+- Agree on the company's terms, evidence, visual style, and strategy before drafting deeply.
+- Have at least two people review each major section.
+- Use roles when useful: coordinator, researcher, formatter, and editor.
+- Every member remains responsible for both the science and the communication.
+
+=== layout: two-panels
+
+# Roles Help; Silos Hurt
+
+@left
+
+## Useful roles
+
+- Coordinator: schedules and checks progress
+- Researcher: finds and verifies evidence
+- Formatter: makes visuals consistent
+- Editor: improves clarity and flow
+
+@right
+
+## Avoid this outcome
+
+- One person writes a section alone.
+- Sections use different names or evidence.
+- The final document reads like unrelated reports.
+- A name appears on the submission without meaningful work.
+
+=== layout: section
+
+# Group Presentation
+
+=== layout: one-panel
+
+# Present One Connected Case
+
+@body
+
+- Establish the problem and why it matters before revealing the product.
+- Make the biotechnology the center: components, methods, evidence, and limits.
+- Compare direct and indirect competitors.
+- Explain market, development milestones, and the path forward.
+- Give every member a meaningful speaking role.
+
+=== layout: one-panel
+
+# Presentation Structure
+
+@body
+
+- Open with the problem and the people, patients, or systems affected.
+- Use the scientific explanation to show why your solution could work.
+- Introduce the product as the response to that problem.
+- Show what distinguishes it from alternatives.
+- Close with development milestones, the team, and the investment case.
+
+=== layout: one-panel
+
+# Presentation Requirements
+
+@body
+
+- Plan for 20-30 minutes. Every member speaks for at least 3 minutes.
+- Introduce members as they take responsibility for a part of the story.
+- Use an enthusiastic host or transitions when they make the presentation easier to follow.
+- Return to members when it helps the explanation; do not divide the talk into disconnected blocks.
+- Use short, purposeful videos under 2 minutes. Narrate them yourself whenever possible.
+
+=== layout: one-panel
+
+# Pre-Recorded Presentations
+
+@body
+
+- A pre-recorded presentation is allowed and must meet all presentation requirements.
+- Use your own voice. Do not use an AI-generated voice or substitute a video for your explanation.
+- Keep the full presentation within 10% of 20-30 minutes.
+- Upload instructions and peer-evaluation procedures will be announced in Blackboard before Dec 10.
+
+=== layout: section
+
+# Business Plan
+
+=== layout: one-panel
+
+# Required Sections and Order
+
+@body
+
+- Cover Page and Table of Contents (one page)
+- Executive Summary (one page)
+- Business and Technology Background
+- Market Opportunity
+- Management Team
+- Investment Summary
+- Appendix
+
+=== layout: one-panel
+
+# Business Plan Requirements
+
+@body
+
+- Submit one complete 12-18 page document, with the required sections in that order.
+- Explain the problem, relevant science, biotechnology, market, management team, and investment case with evidence, figures, tables, and citations.
+- Address direct and indirect competition. State the company's advantage and market niche.
+- Include at least three spaced development milestones. A milestone is a step toward the product, not the product itself.
+
+=== layout: one-panel
+
+# Formatting and Submission
+
+@body
+
+- Fully justify paragraphs. Keep the cover page and table of contents on one page, and the executive summary on one page.
+- Keep the final document in a shared location and review the complete assembled version together.
+- Check the uploaded document before the deadline: pages, figures, tables, citations, and references must survive conversion.
+- Submit the complete business plan by Dec 17. Blackboard provides the current upload and contribution-form instructions.
+
+=== include: group_project_details.djot
+hidden: true
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Form your group November 12 and choose its project November 19.
+- Build one shared scientific and business case, with meaningful work from every member.
+- Follow the presentation requirements and the business-plan section order.
+- Present December 10; submit the complete plan December 17.
+
+=== layout: theend
+
+# THE END

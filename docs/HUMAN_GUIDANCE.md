@@ -195,6 +195,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   in spring; hide their assignment reminders afterward.
 - Biotechnology has a special Veridian Dynamics ending: retain it after general announcements
   and before THE END.
+- For Fall 2026 Biotechnology Lecture 10, the individual projects are complete. Adapt the
+  prior-year group guidelines using the current syllabus schedule.
+- Use the successful Set #4 approach for Set #5: combine the Fall 2021-2026 student material
+  with my expanded instructor ODP, using the 37-topic 2026 list to control coverage and order.
 - General Announcements rarely has more than one active topic: Graduating Students in the first
   two weeks, registration midsemester, evaluations at semester end, and one-off events such as campus seminars when relevant. Natural Science Club remains hidden for now; the instructor has not decided how to bring it back since COVID.
 

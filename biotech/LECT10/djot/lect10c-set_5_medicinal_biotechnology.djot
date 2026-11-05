@@ -1,0 +1,8 @@
+color-theme: biotechnology
+
+include: set5_opening.djot
+include: set5_gene_therapy.djot
+include: set5_genome_editing.djot
+include: set5_stem_cells.djot
+include: set5_cancer.djot
+include: set5_summary.djot

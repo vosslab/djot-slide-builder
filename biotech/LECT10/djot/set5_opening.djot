@@ -1,0 +1,98 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 10C
+
+## Set #5: Medicinal Biotechnology
+## Chapters 17-19
+## Dr. Neil Voss
+## Nov 5, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain how a therapeutic payload, vector, route, and target tissue work together.
+- Compare genome-editing strategies and the safety questions that limit each one.
+- Connect stem-cell and cancer biotechnology to evidence, delivery, and clinical decisions.
+
+=== layout: definitions
+
+# A Few Useful Words
+
+@body
+
+- Payload: the DNA, RNA, protein, or cells that a treatment must deliver.
+- Vector: a carrier used to get genetic material into a cell.
+- Transgene: a gene introduced into a cell by genetic engineering.
+- Episome: DNA maintained outside the cell's chromosomes.
+
+=== layout: two-panels
+
+# Set #5: Gene Therapy
+
+@left
+
+- *1.* Defective genes
+- *2.* What is gene therapy?
+- *3.* Gene preparation
+- *4.* Adenovirus
+- *5.* AAV therapy
+- *6.* Retroviruses
+
+@right
+
+- *7.* Liposomes
+- *8.* RNA medicines
+- *9.* Aptamers and ribozymes
+- *10.* Cystic fibrosis
+- *11.* RNA payloads
+- *12.* Gene therapy safety
+
+=== layout: two-panels
+
+# Set #5: Genome Editing
+
+@left
+
+- *13.* Editing vs. therapy
+- *14.* Zinc-finger nucleases
+- *15.* TALENs
+- *16.* CRISPR limits
+- *17.* Editor delivery
+- *18.* Ex vivo and in vivo
+
+@right
+
+- *19.* Off-target edits
+- *20.* CRISPR implications
+- *21.* Zygote editing
+- *22.* Somatic editing
+- *23.* Prime editing
+- *24.* Epigenome editing
+
+=== layout: two-panels
+
+# Set #5: Stem Cells and Cancer
+
+@left
+
+- *25.* Stem cells
+- *26.* iPSC genomes
+- *27.* iPSC therapies
+- *28.* Stem-derived immune cells
+- *29.* Animal cloning
+- *30.* Tumor microenvironment
+
+@right
+
+- *31.* CAR-T cells
+- *32.* Liquid biopsy
+- *33.* Cancer gene therapy
+- *34.* Mutagens and carcinogens
+- *35.* Oncogenes
+- *36.* Oncogenic/oncolytic viruses
+- *37.* Oncolytic-virus combinations

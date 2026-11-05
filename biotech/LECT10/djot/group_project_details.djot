@@ -1,0 +1,193 @@
+=== layout: section
+
+# Business Plan Reference
+
+=== layout: one-panel
+
+# Rubric At A Glance
+
+@body
+
+| Section | Weight |
+| --- | --- |
+| Cover page and table of contents | 5% |
+| Executive summary | 30% |
+| Science and technology background | 15% |
+| Market opportunity | 20% |
+| Management team | 5% |
+| Investment summary | 5% |
+| Overall style | 20% |
+| **Total** | **100%** |
+
+=== layout: section
+
+# Writing the Business Plan
+
+=== layout: two-panels
+
+# Cover and Executive Summary
+
+@left
+
+## Cover page and TOC: 5%
+
+- Exactly one page.
+- Use a cool, effective logo and company name.
+- Include a fake address and contact information.
+- Put a clean table of contents on the same page.
+
+@right
+
+## Executive summary: 30%
+
+- Exactly one page; check it again after uploading to TurnItIn.
+- Make it a standalone, exciting summary.
+- Address the problem, background, analysis, solution, and future outlook.
+
+=== layout: one-panel
+
+# Science and Technology Background
+
+@body
+
+## Required Scope: 15%
+
+- Use at least two content pages.
+- Write for the rest of the class; define technical terms and avoid unnecessary jargon.
+- Treat this as a science proposal, not a fake lab report.
+- Explain the problem in enough detail to show why it matters.
+
+=== layout: one-panel
+
+# Science and Technology: Make the Mechanism Persuasive
+
+@body
+
+- Explain the science or technology, its course connection, and how your company uses it.
+- Include a figure when it helps explain the science.
+- Share the needed details; do not hide behind trade secrets.
+- Identify planned intellectual property.
+- Compare with existing methods: cheaper, more efficient, or better for an unmet need.
+
+=== layout: two-panels
+
+# Market Opportunity
+
+@left
+
+## Required scope: 20%
+
+- Use more than one page.
+- State what the company sells and the value it brings.
+- Define the niche and what makes the company distinct.
+- Establish demand, including disease prevalence when relevant.
+
+@right
+
+## Make the market believable
+
+- Identify the unmet market need.
+- Compare direct and indirect competition.
+- Explain how intellectual property supports an advantage.
+- Describe a sales strategy: clients, access, and differentiation.
+- Introduce development milestones.
+
+=== layout: one-panel
+
+# Management Team and Investment Summary
+
+@body
+
+## Management Team: 5%
+
+- Use about one page for company history and philosophy.
+- Have fun, but within reason. Keep an undergraduate character real to life; ambitious degrees are fine, time travelers are not.
+- Explain each person's contribution to milestones and motivation.
+- Optional: professional photos and an organization chart showing who is responsible for what.
+
+=== layout: one-panel
+
+# Investment Summary
+
+@body
+
+## Investment Summary: 5%
+
+- Offer funding ideas.
+- Show a timeline with at least three milestones.
+- Include a financial table with projected revenue and expenses.
+- A hockey-stick revenue figure can make the future case visible.
+
+=== layout: one-panel
+
+# Overall Style and Frequent Mistakes
+
+@body
+
+- Overall style is 20%: use effective font and paragraph spacing, white space, and strong figures, graphs, and tables.
+- Use at least 11-point body text. Use full justification for paragraphs.
+- Do not use Comic Sans or Papyrus for paragraphs. NIH-style sans serif fonts (Arial or Helvetica) and business serif fonts (Times or similar) are reliable choices.
+- Use the provided headings; do not make up replacements.
+- A weak executive summary that misses key areas or a background section without background loses the reader early.
+
+=== layout: section
+
+# Presentation Reference
+
+=== layout: big-image
+
+@image
+
+![Archived presentation rubric reference: time, slide formatting, and key aspects](assets/group_project_details/presentation_rubric_1.png)
+
+@caption
+
+Archived presentation-rubric reference: use the current assignment instructions for current grading details&#46;
+
+=== layout: big-image
+
+@image
+
+![Archived presentation rubric reference: slide quality, content depth, and delivery](assets/group_project_details/presentation_rubric_2.png)
+
+@caption
+
+Archived presentation-rubric reference: readable visuals, substantive evidence, and clear delivery remain useful goals&#46;
+
+=== layout: one-panel
+
+# Presentation Tips
+
+@body
+
+## Tell A Story
+
+- Give the presentation a beginning, middle, and end.
+- Respect the allotted time; once you run long, the audience starts watching the clock.
+- Explain at the level of the class. Define technical terms and give novices enough introduction to follow.
+- Engage the audience rather than reading slides.
+
+=== layout: one-panel
+
+# Presentation Tips: Design for Attention
+
+@body
+
+## Design For Attention
+
+- Use note cards if needed, but do not read the slides.
+- Prefer short phrases over complete sentences; break up large blocks of content.
+- Try to use a meaningful picture on every slide.
+- Narrate any movie yourself. A flip-book animation can explain a changing process.
+- Prepare for questions. Show enthusiasm and make the case exciting.
+
+=== layout: one-panel
+
+# Last-Minute Priorities
+
+@body
+
+- Submit early enough to use the plagiarism checker and resubmit before the deadline when needed.
+- Cite sources; do not copy them.
+- You can polish a turd: formatting is a meaningful part of the grade, so clear visual presentation helps good ideas land.
+- Spend the most effort on high-weight sections, especially the executive summary; management and investment deserve care but less time.

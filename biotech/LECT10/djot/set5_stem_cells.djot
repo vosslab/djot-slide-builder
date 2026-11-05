@@ -1,0 +1,496 @@
+color-theme: biotechnology
+
+=== layout: section
+
+# Chapter 18: Cloning and Stem Cells
+
+=== layout: subsection
+
+# Topic 25: Characteristics of Stem Cells
+
+=== layout: one-panel
+
+# 25. Questions: What Makes A Stem Cell?
+
+@body
+
+- State the two core properties: self-renewal and differentiation potential.
+- Compare totipotent, pluripotent, multipotent, oligopotent, and unipotent cells. Give an example of each.
+- Where do adult stem cells work in the body? How can pluripotent cells be made without using embryos?
+- How would you test whether a culture actually behaves like a stem-cell population?
+
+=== layout: two-panels
+
+# 25. Two Jobs, Not One Label
+
+@left
+
+- **Self-renewal:** a stem cell makes at least one daughter that remains a stem cell.
+- **Differentiation:** it can make more specialized descendants under the right conditions.
+- A marker protein alone is not proof. Colony growth, repeated passaging, and a directed differentiation test ask what the cells can do.
+
+@right
+
+![Self-renewal, proliferation, and differentiation](assets/set5_stem_cells/stem_cell_properties.png)
+
+=== layout: two-panels
+
+# 25. Potency Is A Developmental Range
+
+@left
+
+- **Totipotent:** embryo plus supporting extraembryonic tissues.
+- **Pluripotent:** many body-cell types from all three germ layers.
+- **Multipotent:** related tissue lineages, such as blood cells.
+- **Oligopotent / unipotent:** a few / one closely related fate.
+
+@right
+
+## Source Is Not Potency
+
+Established embryonic stem-cell lines are pluripotent. Totipotency belongs to the zygote and early blastomeres.
+
+Use the historical diagram on the next slide to identify why these categories should be kept separate.
+
+=== layout: big-image
+
+@image
+
+![25. Read This Potency Diagram Critically](assets/set5_stem_cells/stem_cell_potency_hierarchy.png)
+
+@caption
+
+Topic 25: Historical Classification: Embryonic Stem-Cell Lines Are Pluripotent, Not Totipotent.
+
+=== layout: two-panels
+
+# 25. Symmetric Or Asymmetric Division?
+
+@left
+
+- **Symmetric self-renewal:** one stem cell makes two stem cells. Useful when a tissue must expand its reserve.
+- **Asymmetric division:** one daughter retains the stem-cell state while the other begins differentiation.
+- The balance controls tissue maintenance. Too little renewal depletes a tissue; too much can expand an abnormal clone.
+
+@right
+
+![Stem-cell classification and examples](assets/set5_stem_cells/stem_cell_annual_2025.png)
+
+=== layout: two-panels
+
+# 25. The Niche Helps Set Cell Fate
+
+@left
+
+- A **niche** supplies neighboring cells, matrix, nutrients, and signals.
+- Wnt often supports renewal; Notch can maintain state; BMP effects depend on tissue and context.
+- **Quiescence** is a reversible resting state that protects a long-lived pool.
+- Bone marrow, intestinal crypts, and skin show that stem cells do not act alone.
+
+@right
+
+![Stem-cell properties in a tissue context](assets/set5_stem_cells/stem_cell_properties.png)
+
+=== layout: two-panels
+
+# 25. Different Sources, Different Potency
+
+@left
+
+- Embryonic stem cells: pluripotent cells from an early embryo.
+- Adult stem cells: usually multipotent cells that maintain a tissue.
+- iPSCs: differentiated cells reset toward pluripotency by reprogramming factors.
+- Every line still needs identity, function, and safety evidence.
+
+@right
+
+![Stem-cell sources and differentiated descendants](assets/set5_stem_cells/stem_cell_properties.png)
+
+@citation
+
+Takahashi and Yamanaka, 2006: https://doi.org/10.1016/j.cell.2006.07.024
+
+=== layout: subsection
+
+# Topic 26: Genomic Stability In iPSCs
+
+=== layout: one-panel
+
+# 26. Questions: Is The Cell Line Still What We Think It Is?
+
+@body
+
+- What is an iPSC, and how does it differ from an embryonic stem cell?
+- What can a karyotype reveal? What extra information comes from copy-number and sequence analysis?
+- Why can donor age, reprogramming, and long culture select cells with genetic changes?
+- Which routine practices reduce risk before a line is used for research or therapy?
+
+=== layout: two-panels
+
+# 26. Reprogramming Does Not Erase Quality Control
+
+@left
+
+- Reprogramming changes gene activity, not every DNA change.
+- A **karyotype** reveals large chromosome changes.
+- Copy-number assays and sequencing find smaller changes.
+- A rare faster-growing cell can take over a culture.
+
+@right
+
+| Assay | What It Can Reveal |
+| --- | --- |
+| Karyotype | Large chromosome changes |
+| Copy-number analysis | Gains and losses |
+| Sequencing | Smaller DNA variants |
+
+=== layout: two-panels
+
+# 26. A Useful Release Checklist
+
+@left
+
+- **Identity:** records and cell-bank traceability.
+- **Genome:** karyotype plus copy-number or sequence assay.
+- **State:** marker pattern and directed differentiation.
+- **Control:** sterility, mycoplasma checks, passage history, early banked clones.
+
+The result applies to a bank and passage range, not all future cultures.
+
+@right
+
+## A Defined Release Window
+
+1. Identify the bank.
+2. Specify the passage range.
+3. Check genome and cell state.
+4. Check contamination and function.
+5. Reassess after further culture.
+
+=== layout: two-panels
+
+# 26. Why A Growth Advantage Is A Warning
+
+@left
+
+- Culture rewards faster survival or division, not therapeutic benefit.
+- Chromosome changes can let one subclone outcompete the intended population.
+- Limit passages, bank early clones, and compare later cultures.
+- The product needs both its intended identity and controlled behavior.
+
+@right
+
+| Culture Can Select | Therapy Still Requires |
+| --- | --- |
+| Faster growth | Intended cell function |
+| Better survival in a dish | Controlled behavior in tissue |
+| A dominant subclone | Genome-quality evidence |
+
+@citation
+
+Laurent et al., 2011: https://doi.org/10.1016/j.stem.2010.12.003
+
+=== layout: subsection
+
+# Topic 27: iPSC-Derived Cell Therapies
+
+=== layout: one-panel
+
+# 27. Questions: From Patient Cell To Cell Product
+
+@body
+
+- Choose an eye, heart, or Parkinson's disease example. Which cell type is the intended product, and what function should it restore or support?
+- Trace the workflow: make iPSCs, guide differentiation, check identity and function, then deliver cells.
+- How can a team look for residual undifferentiated cells, inappropriate growth, and immune rejection?
+- Compare an autologous product with an allogeneic product. Where does HLA matching matter?
+
+=== layout: two-panels
+
+# 27. The Product Is The Differentiated Cell
+
+@left
+
+1. Start with a characterized iPSC bank.
+2. Apply timed signals to direct a chosen lineage.
+3. Enrich and test the intended cells.
+4. Deliver them where they can survive and function.
+
+The iPSC is an expandable starting material. The clinical product is the selected, tested descendant population.
+
+@right
+
+| Question | Evidence Needed |
+| --- | --- |
+| Identity | Intended cell markers |
+| Function | Relevant activity assay |
+| Safety | Controlled growth and purity |
+| Benefit | Disease-relevant outcome |
+
+=== layout: two-panels
+
+# 27. Identity, Function, And Safety Are Different Tests
+
+@left
+
+- **Identity:** morphology and markers support the cell type.
+- **Function:** retinal, heart, or neural cells need relevant assays.
+- **Safety:** look for residual pluripotent cells and excess growth.
+- **Delivery:** cells must survive at the site without harmful immunity.
+
+@right
+
+![A phenotype must be tied to a specific cell type and assay](assets/set5_stem_cells/stem_cell_properties.png)
+
+=== layout: two-panels
+
+# 27. Autologous Or Allogeneic?
+
+@left
+
+- **Autologous:** closer genetic match; slow individualized manufacture.
+- **Allogeneic:** standardized batches; HLA matching and rejection can matter.
+- Neither label proves better clinical performance.
+- The disease, target tissue, manufacturing plan, and outcome decide credibility.
+
+@right
+
+![Stem-cell source and differentiated-cell comparison](assets/set5_stem_cells/stem_cell_properties.png)
+
+=== layout: two-panels
+
+# 27. What Counts As An Outcome?
+
+@left
+
+- Use a disease-relevant outcome, not only a photograph of implanted cells.
+- Eye example: retinal imaging, graft survival, and prespecified visual function.
+- Heart example: function plus arrhythmia and abnormal-growth monitoring.
+- Early studies test safety and feasibility before durable efficacy.
+
+@right
+
+| Observation | Still Needs Testing |
+| --- | --- |
+| Cells remain at the site | Do they function? |
+| A marker is expressed | Is the mechanism restored? |
+| A symptom improves | Does the benefit persist? |
+
+@citation
+
+Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
+
+=== layout: subsection
+
+# Topic 28: Stem Cell-Derived Immune Cells
+
+=== layout: one-panel
+
+# 28. Questions: Can A Banked Immune Cell Become A Therapy?
+
+@body
+
+- Which immune-cell types can be made from pluripotent stem cells: NK cells, macrophages, or T cells? What does each normally do?
+- How would you test activity: target-cell killing for NK or T cells, or particle uptake for macrophages?
+- What does a CAR add to an immune cell? What can it not guarantee?
+- What safety signals and persistence questions matter after infusion?
+
+=== layout: two-panels
+
+# 28. Different Immune Jobs, Different Assays
+
+@left
+
+- **NK cells** can kill stressed or antibody-tagged cells.
+- **T cells** can recognize antigens and can be engineered with a CAR.
+- **Macrophages** engulf material and shape inflammation.
+- Killing, cytokine, and off-target assays answer different questions.
+
+@right
+
+![iPSC-derived immune-cell manufacturing sequence](assets/set5_stem_cells/immune_manufacturing_2025.png)
+
+=== layout: two-panels
+
+# 28. Manufacturing Is A Chain Of Evidence
+
+@left
+
+1. Differentiate a banked pluripotent line toward one immune lineage.
+2. Expand the population under controlled conditions.
+3. Confirm identity and test a relevant function.
+4. Test dose, persistence, unintended activity, and product consistency.
+
+@right
+
+| Cell Product | Example Functional Test |
+| --- | --- |
+| NK cell | Target-cell killing |
+| T cell | Antigen-directed response |
+| Macrophage | Phagocytosis |
+
+=== layout: two-panels
+
+# 28. A CAR Changes Recognition, Not Every Limitation
+
+@left
+
+- A CAR links target recognition to activation in an immune cell.
+- The target must be enriched on tumor cells; normal cells can also be attacked.
+- Overactivation can cause cytokine-release symptoms; persistence can help or harm.
+- Topic 31 returns to CAR-T and CAR-NK in the cancer chapter.
+
+@right
+
+![A manufacturing path before an immune-cell infusion](assets/set5_stem_cells/immune_manufacturing_2025.png)
+
+=== layout: two-panels
+
+# 28. What Would A Convincing Early Study Measure?
+
+@left
+
+- Product identity, viability, dose, and lot consistency.
+- In-body persistence and trafficking to the intended tissue.
+- Safety: infusion reactions, unintended injury, and infections.
+- A disease-relevant activity measure, not one dramatic patient story.
+
+@right
+
+![Manufacturing prompt for a defined immune-cell product](assets/set5_stem_cells/immune_manufacturing_2025.png)
+
+=== layout: subsection
+
+# Topic 29: Animal Cloning
+
+=== layout: one-panel
+
+# 29. Questions: What Does SCNT Actually Copy?
+
+@body
+
+- Trace somatic cell nuclear transfer (SCNT): donor cell, enucleated egg, activation, early embryo, surrogate.
+- Why was Dolly significant? What do the numbers say about efficiency?
+- Why can incomplete reprogramming and imprinting errors disrupt development?
+- Which applications raise animal-welfare, genetic-diversity, and commercialization questions?
+
+=== layout: two-panels
+
+# 29. Somatic Cell Nuclear Transfer
+
+@left
+
+1. Remove the nucleus from an unfertilized egg.
+2. Place a donor somatic-cell nucleus into that cytoplasm.
+3. Activate the reconstructed egg so that it begins early development.
+4. Transfer a suitable embryo to a synchronized surrogate.
+
+The clone receives nuclear DNA from the donor cell, but it does not receive a copied developmental history or the donor's egg cytoplasm.
+
+@right
+
+![SCNT steps used in the Dolly experiment](assets/set5_stem_cells/dolly_annual_2025.png)
+
+=== layout: two-panels
+
+# 29. Dolly: The Result And The Correct Numbers
+
+@left
+
+- Born in 1996; announced with the 1997 paper.
+- First mammal cloned from an **adult somatic cell**, not the first cloned mammal.
+- 277 reconstructed embryos produced 29 suitable for transfer; one pregnancy produced Dolly.
+- Egg cytoplasm reprogrammed an adult-cell nucleus.
+
+@right
+
+![The donor, egg, surrogate, and clone](assets/set5_stem_cells/dolly_legacy.png)
+
+@citation
+
+Wilmut et al., 1997: https://doi.org/10.1038/385810a0
+
+=== layout: big-image
+
+@image
+
+![29. Following the Nucleus Through SCNT](assets/set5_stem_cells/dolly_legacy.png)
+
+@caption
+
+Topic 29: Following the Nucleus Through SCNT
+
+=== layout: two-panels
+
+# 29. Low Efficiency Has Biological Meaning
+
+@left
+
+- SCNT asks egg cytoplasm to reset a differentiated nucleus for embryonic development.
+- Many embryos fail before implantation or during pregnancy.
+- Incomplete resetting and imprinting errors can disrupt placental or fetal development.
+- Do not use Dolly's history as a universal premature-aging claim.
+
+@right
+
+![Dolly as a case study in SCNT efficiency](assets/set5_stem_cells/dolly_annual_2025.png)
+
+=== layout: two-panels
+
+# 29. Why Clone Animals?
+
+@left
+
+- Research models can standardize a genotype for a focused experiment.
+- Livestock and performance-animal programs may try to preserve the genetics of an unusual animal.
+- Conservation proposals must still protect habitat, population size, and genetic diversity.
+- Animal welfare is central because low efficiency means many embryos, pregnancies, and surrogate animals can be involved.
+
+@right
+
+![Questions about animal welfare and cloning applications](assets/set5_stem_cells/cloning_ethics_2025.png)
+
+=== layout: two-panels
+
+# 29. Clones Of Polo Horses
+
+@left
+
+- What is preserved when a champion horse is cloned?
+- Nuclear genotype is only one contributor to athletic performance.
+- Training, development, microbiome, epigenetics, and environment are not copied as a finished product.
+- A clone is not a guaranteed duplicate career.
+
+@right
+
+![Polo horses, an annual-course visual prompt](assets/set5_stem_cells/polo_video_2025.png)
+
+@citation
+
+Cloning polo horses: https://www.wired.com/story/cloning-came-to-polo-things-got-uncivilized/
+
+=== layout: two-panels
+
+# 29. Pet Cloning: Genetic Preservation Is Not Identity Preservation
+
+@left
+
+- Commercial pet cloning preserves viable cells, then uses SCNT.
+- A clone shares much of a donor's nuclear genotype but has its own environment and experiences.
+- Ask about success rate, animal welfare, cost, and what outcome is actually promised.
+- The course video is for discussion, not an endorsement.
+
+@right
+
+![Legacy course image: commercial pet cloning](assets/set5_stem_cells/pet_cloning_legacy.png)
+
+=== layout: one-panel
+
+# 29. Pet-Cloning Resources
+
+@body
+
+- Compare the company's explanation with the biological constraints of SCNT.
+- Company information: https://viagenpets.com/dog-cloning/
+- Watch the video: https://youtu.be/8WM5ZH_8x2w
+- What evidence would distinguish shared nuclear DNA from a promise of the same appearance or behavior?

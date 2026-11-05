@@ -1,0 +1,565 @@
+=== layout: section
+
+# Chapter 19: Cancer
+
+=== layout: subsection
+
+# 30. Tumor Microenvironment and Immune Evasion
+
+=== layout: two-panels
+
+# 30. Tumor Microenvironment
+
+@left
+
+- The tumor microenvironment (TME) includes vessels, fibroblasts, immune cells, matrix, and signals around cancer cells.
+- How can each neighbor change tumor growth or treatment response?
+- Why can low oxygen, acidity, and poor blood flow make a drug or an immune response less effective?
+
+@right
+
+![TME cell and matrix components from a 2025 course source](assets/set5_cancer/tme_components_2025.png)
+
+=== layout: two-panels
+
+# 30. A Changing Neighborhood Changes the Experiment
+
+@left
+
+- Leaky, disorganized vessels can deliver much more drug to one region than another.
+- Fibroblasts deposit matrix that changes mechanics and immune-cell movement.
+- Hypoxia can select stress-tolerant cells and alter immune and drug response.
+
+@right
+
+**Mechanistic prediction**
+
+If a treatment needs T cells to enter a tumor, then a dense matrix, abnormal vessels, or suppressive cells can be as important as whether the cancer cell has the target molecule.
+
+=== layout: two-panels
+
+# 30. Immune Evasion Creates Barriers
+
+@left
+
+![One annual example of TME-mediated immune evasion](assets/set5_cancer/tme_immune_evasion_2025.png)
+
+@right
+
+- A tumor can reduce antigen display, express PD-L1, recruit suppressive cells, or exclude T cells.
+- "Hot" and "cold" describe immune context: hot tumors have more immune infiltration.
+- PD-L1 staining and the location or abundance of CD8 T cells are examples of tissue measurements that can support a treatment hypothesis.
+
+=== layout: one-panel
+
+# 30. From Tissue Observation to Cautious Claim
+
+@body
+
+- A biomarker is useful only when the measurement, patient group, and decision are specified. A PD-L1 result is not a universal prediction of benefit.
+- Checkpoint blockade works by releasing an inhibitory signal on T cells; it does not manufacture a tumor-specific immune response from nothing.
+- Ask: **What barrier is visible? Which intervention is supposed to change it? What result would count as evidence?**
+
+@citation
+
+NCI, Tumor Microenvironment: https://www.cancer.gov/publications/dictionaries/cancer-terms/def/tumor-microenvironment
+
+=== layout: subsection
+
+# 31. CAR-T and CAR-NK Cell Therapies
+
+=== layout: two-panels
+
+# 31. CAR Recognition Design
+
+@left
+
+- A CAR binds a chosen marker outside the cell and activates the immune cell inside.
+- What are the steps: collect, add CAR gene, expand, test, prepare, infuse?
+- Why are CD19 in B-cell malignancies and BCMA in myeloma useful examples of a matched target and disease?
+
+@right
+
+![CAR-T recognition and killing mechanism from a 2025 course source](assets/set5_cancer/car_t_mechanism_2025.png)
+
+=== layout: two-panels
+
+# 31. Manufacturing Is Part of the Treatment
+
+@left
+
+1. Collect or select immune cells.
+2. Deliver the CAR DNA or RNA construct.
+3. Expand the engineered population.
+4. Test identity, sterility, viability, and activity.
+5. Infuse and monitor the person, not merely the cells.
+
+@right
+
+- A cell product is variable biological material. Batch testing asks whether the intended cells were made; clinical follow-up asks what they do after infusion.
+- Response can be measured with marrow testing, imaging, tumor markers, or a complete-remission endpoint appropriate to the disease.
+- CAR-T and CAR-NK are distinct products; each needs product-specific safety and effectiveness evidence.
+
+=== layout: two-panels
+
+# 31. CAR-T and CAR-NK: Same Design, Different Cells
+
+@left
+
+![CAR-NK example from a 2025 course source](assets/set5_cancer/car_nk_2025.png)
+
+@right
+
+| Feature | CAR-T | CAR-NK |
+| --- | --- | --- |
+| Starting effector | T cell | natural killer cell |
+| Recognition added | CAR | CAR |
+
+=== layout: one-panel
+
+# 31. Why Solid Tumors Are Harder Targets
+
+@body
+
+- A good target should be present on tumor cells and limited on essential normal tissue. Few targets satisfy that perfectly.
+- Engineered cells must traffic into the tumor, remain active in a suppressive TME, and avoid on-target damage to healthy cells that share the antigen.
+- Cytokine-release syndrome and neurologic toxicity are important CAR-T risks. Fever, low blood pressure, confusion, or seizures require prompt clinical assessment; monitoring and management are part of therapy.
+
+@citation
+
+NCI, CAR T-Cell Therapy: https://www.cancer.gov/about-cancer/treatment/research/car-t-cells
+
+=== layout: subsection
+
+# 32. Liquid Biopsy and Minimal Residual Disease
+
+=== layout: two-panels
+
+# 32. What a Blood Sample Can Say
+
+@left
+
+- A liquid biopsy analyzes tumor material in fluid: often plasma ctDNA or circulating tumor cells.
+- Which assay can detect a tumor-associated alteration? What would a positive result mean in this clinical setting?
+- Why do blood volume, tumor shedding, sample timing, and assay depth affect detection?
+
+@right
+
+![Liquid-biopsy concept from a 2025 course source](assets/set5_cancer/liquid_biopsy_2025.png)
+
+=== layout: two-panels
+
+# 32. MRD Is Near the Detection Limit
+
+@left
+
+![Minimal-residual-disease example from a 2025 course source](assets/set5_cancer/mrd_2025.png)
+
+@right
+
+- MRD is very small amounts of cancer after treatment, measured by a specified assay.
+- Blood-cancer MRD uses flow cytometry, molecular assays, or sequencing; ctDNA is a related solid-tumor research marker.
+- A negative means "not detected by this assay now," not no cancer cells exist.
+
+=== layout: two-panels
+
+# 32. Signal, Noise, and the Follow-Up Question
+
+@left
+
+**Possible signal**
+
+- Tumor-specific variant falls after therapy.
+- A targetable alteration is found.
+- A rising tumor-associated signal prompts confirmatory evaluation.
+
+@right
+
+**Possible misleading result**
+
+- Too little DNA was shed into blood.
+- A single time point misses changing disease.
+- Clonal hematopoiesis creates blood-cell DNA variants that are not from the tumor.
+
+The next step is context, confirmation, and a decision rule - not treating one number as a diagnosis.
+
+=== layout: one-panel
+
+# 32. ctDNA and Circulating Tumor Cells
+
+@body
+
+- ctDNA is fragmented tumor-associated DNA; it can report variants but generally does not provide a living cell for functional study.
+- Circulating tumor cells are intact, rare cells. They may support cell-level measurements, but finding and characterizing them is technically difficult.
+- A liquid biopsy complements, rather than automatically replaces, a tissue biopsy: tissue supplies anatomy and can provide a larger, direct sample of the lesion.
+
+@citation
+
+NCI Dictionary, Liquid Biopsy: https://www.cancer.gov/publications/dictionaries/cancer-terms/def/liquid-biopsy
+
+=== layout: subsection
+
+# 33. Gene Therapy in Cancer
+
+=== layout: two-panels
+
+# 33. Genetic Functions That Attack Tumors
+
+@left
+
+- Cancer gene therapy changes a tumor or immune-cell function with delivered genetic material.
+- How does this differ from replacing a missing inherited-disease gene?
+- Which target is claimed: local injection, antigen, promoter, or viral replication?
+
+@right
+
+**Three design families**
+
+1. Engineer immune cells to recognize a tumor marker.
+2. Deliver a toxic or pro-apoptotic function preferentially to tumor cells.
+3. Use an oncolytic virus that replicates preferentially in tumor cells and can stimulate immunity.
+
+=== layout: two-panels
+
+# 33. Suicide-Gene Therapy: Enzyme Then Prodrug
+
+@left
+
+![Suicide-gene / prodrug concept from a 2025 course source](assets/set5_cancer/suicide_gene_2025.png)
+
+@right
+
+- A delivered enzyme gene converts a later prodrug into toxin.
+- Sequence: targeted delivery -> enzyme expression -> prodrug -> killing of transduced cells, sometimes with a local bystander effect.
+- Delivery, expression, and off-target toxicity determine outcome; the vector does not kill every tumor cell.
+
+=== layout: two-panels
+
+# 33. Selectivity Is a Design Problem
+
+@left
+
+| Choice | Advantage | Test failure |
+| --- | --- | --- |
+| Local delivery | concentrate | coverage |
+| Tumor promoter | restrict | healthy expression |
+| Tumor antigen | focus | normal antigen |
+| Viral replication | amplify | infection |
+
+@right
+
+- A biomarker may help select a person or a lesion, but it must be measured before claiming selectivity.
+- Efficacy measures can include local response, tumor burden, duration of response, and survival; safety includes inflammatory and organ-specific toxicities.
+
+=== layout: one-panel
+
+# 33. Evidence for Cancer Gene Therapy
+
+@body
+
+- Separate a biological rationale from an established indication. A promising vector, gene, or animal result is not automatically a proven treatment.
+- Compare local, regional, and systemic delivery by where the disease is, where the vector travels, and how adverse effects can be monitored.
+- Oncolytic-virus therapy, engineered immune cells, and gene replacement use related tools but are not interchangeable categories.
+
+@citation
+
+NCI, Oncolytic Virus Therapy: https://www.cancer.gov/news-events/cancer-currents-blog/2018/oncolytic-viruses-to-treat-cancer
+
+=== layout: subsection
+
+# 34. Mutagenicity and Carcinogenicity
+
+=== layout: two-panels
+
+# 34. DNA Damage and Cancer Risk
+
+@left
+
+- A **mutagen** increases DNA sequence changes.
+- A **carcinogen** increases the chance of cancer.
+- How does the Ames test screen for mutagenic potential? Why is bacterial growth not a complete prediction of human cancer risk?
+
+@right
+
+- Some carcinogens are mutagens. Others change cancer risk through chronic inflammation, hormones, cell proliferation, or signaling without directly changing DNA letters.
+- Exposure, dose, metabolism, tissue, and duration all matter.
+
+=== layout: two-panels
+
+# 34. Ames Test: A Reversion Experiment
+
+@left
+
+![Legacy Ames comparison: treated and control bacterial growth](assets/set5_cancer/ames_comparison_a_legacy.png)
+
+@right
+
+- Engineered bacteria cannot grow without a nutrient unless reverse mutation restores function.
+- More revertant colonies after chemical exposure suggest mutagenic potential.
+- An added liver-enzyme preparation can model metabolic activation of some compounds.
+
+It is a screen, not a measure of human exposure, tissue specificity, or cancer incidence.
+
+=== layout: two-panels
+
+# 34. Ames Test: What Is Being Counted?
+
+@left
+
+![Legacy Ames comparison with a different control layout](assets/set5_cancer/ames_comparison_b_legacy.png)
+
+@right
+
+**Read the plate carefully**
+
+- First compare treated and control colony counts.
+- Ask if the chemical killed bacteria, metabolic activation was modeled, and dose response was tested.
+- A mutagenicity result is one risk mechanism, not a human-danger ranking.
+
+=== layout: one-panel
+
+# 34. Mechanism Comparison
+
+@body
+
+| Mechanism | Mutagenic? | Cancer support |
+| --- | --- | --- |
+| DNA adduct or strand damage | often | creates heritable sequence changes |
+| Repair error | often | fixes a mutation |
+| Hormonal signaling | not necessarily | increases division of susceptible cells |
+| Chronic inflammation | not necessarily | damage and growth signaling |
+
+Use the wording **hazard** for what an agent can do under some conditions and **risk** for the chance of harm at a particular exposure.
+
+=== layout: subsection
+
+# 35. Oncogenes and Tumor Suppressors
+
+=== layout: two-panels
+
+# 35. Genetic Changes That Drive Growth
+
+@left
+
+- How were oncogenes identified, and what experiment connects a DNA change to a transformed-cell phenotype?
+- How do RAS, MYC, and BCR-ABL drive growth by different molecular routes?
+- How can sequencing connect a tumor alteration to a possible targeted-treatment strategy?
+
+@right
+
+- A proto-oncogene has a normal controlled role in growth or survival.
+- Gain-of-function, amplification, fusion, or inappropriate expression can create a driver.
+- A tumor usually contains many changes; a detected alteration is not automatically the driver.
+
+=== layout: two-panels
+
+# 35. Transformation Assay: Finding an Oncogene
+
+@left
+
+![Legacy transfection assay used to identify transforming DNA](assets/set5_cancer/transfection_assay_legacy.png)
+
+@right
+
+- In a classic transfection experiment, DNA from a tumor is introduced into recipient cells.
+- If cells transform, researchers isolate the responsible DNA and test it again.
+- Transfer a candidate and observe phenotype: this distinguishes causation from correlation.
+
+=== layout: big-image
+
+@image
+
+![35. Follow the Transforming DNA](assets/set5_cancer/transfection_assay_legacy.png)
+
+@caption
+
+Topic 35: Follow the Transforming DNA
+
+=== layout: two-panels
+
+# 35. Growth Drivers, Limits, and Repair
+
+@left
+
+**Oncogene**
+
+- Usually activated or overexpressed.
+- Can send a persistent grow/survive signal.
+- Examples: RAS signaling, MYC transcriptional control, BCR-ABL fusion kinase.
+
+@right
+
+**Tumor suppressor or repair gene**
+
+- Tumor suppressors help limit growth or promote apoptosis after damage.
+- DNA-repair genes prevent mutations from accumulating.
+- Loss can cooperate with an oncogene; "tumor suppressor" is not a synonym for every repair or death gene.
+
+=== layout: two-panels
+
+# 35. Inherited Susceptibility Is Risk Information
+
+@left
+
+![Legacy inherited-cancer-susceptibility visual](assets/set5_cancer/inherited_cancer_legacy.png)
+
+@right
+
+- An inherited variant can raise risk; more somatic changes may still be needed.
+- Counseling considers variant, penetrance, family history, and prevention or screening.
+- Do not treat a predisposition result as a diagnosis or a guarantee of cancer.
+
+=== layout: big-image
+
+@image
+
+![35. A Growth Driver in a Longer Story](assets/set5_cancer/inherited_cancer_legacy.png)
+
+@caption
+
+Topic 35: A Growth Driver in a Longer Story
+
+=== layout: subsection
+
+# 36. Oncogenic and Oncolytic Viruses
+
+=== layout: two-panels
+
+# 36. Viruses and Cancer: Two Roles
+
+@left
+
+- What distinguishes an **oncogenic** virus from an **oncolytic** virus?
+- How can a virus contribute to cancer: persistent infection, altered host-cell control, chronic inflammation, or immune evasion?
+- How might a virus be selected or engineered to replicate more effectively in tumor cells and kill them?
+
+@right
+
+They have distinct roles: oncogenic viruses can contribute to cancer; oncolytic viruses attack tumor cells. They are not simple opposite lytic/lysogenic categories.
+
+=== layout: two-panels
+
+# 36. Two Roles, Two Biological Questions
+
+@left
+
+![Legacy oncogenic-versus-oncolytic comparison](assets/set5_cancer/oncogenic_oncolytic_legacy.png)
+
+@right
+
+| Role | Main question |
+| --- | --- |
+| Oncogenic virus | How can infection raise cancer risk? |
+| Oncolytic virus | Can it kill tumors safely? |
+
+Vaccination can prevent particular causal infections; it does not treat every established tumor.
+
+=== layout: big-image
+
+@image
+
+![36. Cancer-Causing and Cancer-Killing Viruses](assets/set5_cancer/oncogenic_oncolytic_legacy.png)
+
+@caption
+
+Topic 36: Cancer-Causing and Cancer-Killing Viruses
+
+=== layout: two-panels
+
+# 36. Designing an Oncolytic Virus
+
+@left
+
+![A 2025 course source showing one oncolytic-virus delivery concept](assets/set5_cancer/oncolytic_delivery_2025.png)
+
+@right
+
+- Specificity can use a tumor receptor, tumor-active promoter, deleted viral function, or local delivery.
+- Direct lysis can release tumor antigens and inflammatory signals, potentially recruiting immune responses.
+- Test route, shedding, prior immunity, off-target infection, and systemic inflammation.
+
+=== layout: one-panel
+
+# 36. Evidence and Prevention
+
+@body
+
+- Human papillomavirus and hepatitis B virus are important prevention examples because vaccination can prevent the causal infection.
+- A report of tumor regression after a natural infection is historically interesting, but it is not a controlled test of dose, safety, or cause.
+- For an oncolytic candidate, report tumor type, route, dose, local and systemic safety, viral replication/shedding, immune effects, and a prespecified clinical endpoint.
+
+@citation
+
+NCI, Infectious Agents and Cancer: https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents
+
+=== layout: subsection
+
+# 37. Oncolytic-Virus Combinations
+
+=== layout: two-panels
+
+# 37. Why Combine an Oncolytic Virus?
+
+@left
+
+- Viral lysis releases tumor material; checkpoint inhibitors remove T-cell inhibitory signals.
+- Why might that combination help in a tumor with too few active T cells?
+- Which route, sequence, dosing, endpoint, biomarker, and safety measures must a study define?
+
+@right
+
+**Combination hypothesis**
+
+oncolytic-virus infection
+
+-> tumor-cell lysis and antigen release
+
+-> immune-cell recruitment or priming
+
+-> checkpoint blockade may allow activated T cells to keep working
+
+=== layout: two-panels
+
+# 37. Mechanistic Complementarity Is Not Synergy
+
+@left
+
+![Oncolytic-virus visual retained from a 2025 course source](assets/set5_cancer/oncovirus_2025.jpg)
+
+@right
+
+- A plausible combination can fail: poor viral reach, T-cell exclusion, or toxicity can limit dosing.
+- Radiation can alter antigen release and access; schedule changes benefit and harm.
+- A valid comparison needs a control arm, not only a response after two treatments.
+
+=== layout: two-panels
+
+# 37. Building a Combination Study
+
+@left
+
+| Design element | Why it belongs in the protocol |
+| --- | --- |
+| Route and timing | determines exposure and sequence |
+| Biomarkers | tests mechanism |
+| Response definition | shrinkage, durability, survival |
+| Safety monitoring | inflammation and organ toxicity |
+
+@right
+
+- A cold tumor may need more: access, antigenicity, and suppressive cells can limit response.
+- Genes such as GM-CSF can be included in a virus to recruit or activate antigen-presenting cells, but the outcome remains an empirical question.
+
+=== layout: one-panel
+
+# 37. Claims a Result Can Support
+
+@body
+
+- **Supported:** in this defined tumor type, schedule, and comparison, the combination changed the measured response or safety outcome.
+- **Not automatically supported:** the combination works for every cancer, the immune mechanism was the only cause, or an early response guarantees longer survival.
+- For a later study slide, identify the population, virus, partner treatment, route, endpoint, toxicity plan, and biomarker before interpreting a headline.
+
+@citation
+
+NCI, Cancer Immunotherapy: https://www.cancer.gov/about-cancer/treatment/types/immunotherapy

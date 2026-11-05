@@ -1,0 +1,305 @@
+=== layout: subsection
+
+# 5. AAV Therapy
+
+=== layout: one-panel
+
+# 5. What Makes AAV Different?
+
+@body
+
+- Adeno-associated virus (AAV) vectors have a protein capsid and a small single-stranded DNA genome.
+- Standard AAV payloads are limited to about 4.7 kb, including the therapeutic sequence and regulatory parts.
+- In many non-dividing target cells, vector DNA persists mainly as episomes rather than integrating at a chosen chromosome site.
+
+=== layout: four-panels
+
+# 5. Four AAV Design Questions
+
+@top-left
+
+## Does it fit?
+
+Gene, promoter, and regulatory sequences all compete for capacity.
+
+@top-right
+
+## Where does it go?
+
+Capsid, route, and dose influence tissue exposure.
+
+@bottom-left
+
+## How fast?
+
+Self-complementary designs can speed expression but sacrifice payload room.
+
+@bottom-right
+
+## How long?
+
+Non-dividing cells can retain episomes; cell division dilutes them.
+
+=== layout: two-panels
+
+# 5. Tissue Is Part of the Design
+
+@left
+
+## Retina or CNS
+
+Local delivery can place a small dose near a defined target. Limited access does not remove the need to check spread and immune response.
+
+@right
+
+## Liver or muscle
+
+Systemic exposure can make the target reachable, but it also makes dose, antibodies, and unintended tissue uptake important.
+
+=== layout: one-panel
+
+# 5. The Practical Limit Is Not Only DNA Capacity
+
+@body
+
+- Neutralizing antibodies can block vector entry before a dose reaches target cells.
+- Capsid choice can alter targeting, but no capsid is universally tissue-specific.
+- Redosing may be difficult after an immune response.
+- AAV is a delivery platform, not a guarantee of durable benefit. Name the molecular measurement and functional measurement you would use to test a proposed therapy.
+
+=== layout: subsection
+
+# 6. Retrovirus and Lentivirus
+
+=== layout: one-panel
+
+# 6. Why Integrate a Payload?
+
+@body
+
+- Retroviral vectors make a DNA copy of their RNA payload and integrate it into a host chromosome.
+- Gamma-retroviral vectors work most readily when target cells divide. Lentiviral vectors can also deliver a pre-integration complex to many non-dividing cells.
+- Integration can support durable expression, but it creates a permanent genomic insertion that must be investigated.
+
+=== layout: two-panels
+
+# 6. Vector Biology, Not Magic
+
+@left
+
+![Legacy HIV-vector teaching figure](assets/set5_gene_therapy/hiv_vector_legacy.png)
+
+@right
+
+- A lentiviral vector borrows delivery functions from HIV-like viruses while removing genes needed for viral replication.
+- The therapeutic payload is not "HIV treatment"; it is a redesigned vector system.
+- The relevant contrast is stable integration versus adenoviral gene addition, not "good virus" versus "bad virus."
+
+=== layout: two-panels
+
+# 6. Ex Vivo Adds Control
+
+@left
+
+![Legacy lentiviral-delivery figure](assets/set5_gene_therapy/lentiviral_delivery_legacy.png)
+
+@right
+
+- Collect hematopoietic stem cells or T cells.
+- Modify and characterize them outside the body.
+- Measure viability, vector copies, identity, and function before return.
+- Long-lived stem cells and T cells can pass an intended effect to descendants.
+
+=== layout: one-panel
+
+# 6. Integration Is the Central Safety Question
+
+@body
+
+- An insertion can disrupt a gene or activate nearby growth-control genes: *insertional mutagenesis*.
+- Self-inactivating vector designs and cellular promoters reduce some risks; they do not eliminate the need for follow-up.
+- A suicide-gene switch is a contingency: if the engineered cells become dangerous, a matching treatment can selectively remove them.
+- Why is a controlled ex vivo product often more practical to test than an in vivo integrating vector?
+
+=== layout: subsection
+
+# 7. Liposomes and Lipid Nanoparticles
+
+=== layout: one-panel
+
+# 7. A Nonviral Envelope for Nucleic Acid
+
+@body
+
+- Liposomes are phospholipid bilayer vesicles. Lipid nanoparticles (LNPs) are engineered mixtures, often including ionizable lipids, suited to nucleic-acid delivery.
+- These particles can protect RNA or DNA outside cells and help cargo cross the cell membrane.
+- Nonviral does not mean no delivery problem: formulation, dose, tissue exposure, and toxicity still matter.
+
+=== layout: two-panels
+
+# 7. Structure Determines Behavior
+
+@left
+
+![Legacy liposome-structure figure](assets/set5_gene_therapy/liposome_structure_legacy.png)
+
+@right
+
+- Particle size and composition influence circulation and tissue uptake.
+- A near-neutral particle at physiological pH can become more interactive in an acidic endosome.
+- PEG-containing lipids can affect circulation and immune recognition; the formulation is a system, not one ingredient.
+
+=== layout: big-image
+
+@image
+
+![7. Liposomes and Their Cargo](assets/set5_gene_therapy/liposome_structure_legacy.png)
+
+@caption
+
+Topic 7: Liposomes and Their Cargo
+
+=== layout: two-panels
+
+# 7. The Endosomal-Escape Bottleneck
+
+@left
+
+![Legacy liposome-entry figure](assets/set5_gene_therapy/liposome_entry_legacy.jpg)
+
+@right
+
+- Uptake is not delivery to the cytosol.
+- Cargo trapped in an endosome may be degraded or recycled.
+- Ionizable lipids are designed to help a fraction of cargo leave that compartment.
+- Measure target-cell protein or RNA response, not merely fluorescent particle uptake.
+
+=== layout: big-image
+
+@image
+
+![7. From Uptake to Delivery](assets/set5_gene_therapy/liposome_entry_legacy.jpg)
+
+@caption
+
+Topic 7: From Uptake to Delivery
+
+=== layout: two-panels
+
+# 7. What Is the Advantage?
+
+@left
+
+![Legacy nonviral-therapy figure](assets/set5_gene_therapy/liposome_therapy_legacy.png)
+
+@right
+
+![Legacy nonviral-comparison figure](assets/set5_gene_therapy/nonviral_delivery_legacy.png)
+
+=== layout: big-image
+
+@image
+
+![7. Delivery Through Lipid Carriers](assets/set5_gene_therapy/liposome_therapy_legacy.png)
+
+@caption
+
+Topic 7: Delivery Through Lipid Carriers
+
+=== layout: one-panel
+
+# 7. Compare Delivery Platforms
+
+@body
+
+| Question | Viral vector | Lipid particle |
+| --- | --- | --- |
+| Repeat dosing | Can be limited by anti-vector immunity | Often possible, but formulation and toxicity matter |
+| Payload behavior | Depends on vector | Especially useful for transient RNA cargo |
+| Major bottleneck | Targeting, immunity, and vector biology | Endosomal escape and tissue delivery |
+| Evidence needed | Expression, biodistribution, immune safety | Same, plus particle consistency and RNA integrity |
+
+=== layout: big-image
+
+@image
+
+![Nonviral carriers and cellular uptake](assets/set5_gene_therapy/nonviral_carriers_legacy.png)
+
+@caption
+
+Topic 7: Carriers and Cell Entry
+
+=== layout: subsection
+
+# 8. RNA Medicines
+
+=== layout: one-panel
+
+# 8. Treat the Message Without Rewriting DNA
+
+@body
+
+- RNA medicines can change protein production without permanently changing a chromosome.
+- siRNA guides a cellular complex to a matching RNA, lowering that message.
+- Antisense oligonucleotides (ASOs) bind a target RNA to block it, recruit degradation, or alter splicing.
+
+=== layout: two-panels
+
+# 8. siRNA and ASO Ask Different Questions
+
+@left
+
+## siRNA
+
+- Is the target RNA reduced?
+- Does the matching protein fall?
+- Are close off-target RNAs affected?
+
+@right
+
+## ASO
+
+- Is translation blocked, RNA degraded, or a splice choice changed?
+- Does the intended exon or isoform change?
+- Does the altered protein produce the expected phenotype?
+
+=== layout: four-panels
+
+# 8. Delivery Determines the Use Case
+
+@top-left
+
+## Liver
+
+Chemical targeting groups can help deliver some oligonucleotides to hepatocytes.
+
+@top-right
+
+## CNS
+
+Spinal-fluid dosing can bypass some barriers, while creating a different monitoring problem.
+
+@bottom-left
+
+## Duration
+
+An RNA effect is usually temporary. Follow RNA, protein, and a disease-relevant marker over time.
+
+@bottom-right
+
+## Safety
+
+Check the tissues actually exposed, including liver tests or injection-site effects when relevant.
+
+=== layout: one-panel
+
+# 8. Choose the Measurement Before the Claim
+
+@body
+
+- A lower target RNA is a mechanism measurement. It does not by itself prove clinical benefit.
+- A splice assay can show that an ASO changed RNA processing. A protein or functional assay tests the consequence.
+- For either class, delivery, chemical stability, sequence specificity, and repeated-dose tolerance are central design constraints.
+@citation
+
+FDA: https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products

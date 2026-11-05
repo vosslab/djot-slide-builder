@@ -1,0 +1,319 @@
+=== layout: section
+
+# Chapter 17A: Inherited Defects and Gene Therapy
+
+=== layout: subsection
+
+# 1. Defective Genes
+
+=== layout: one-panel
+
+# 1. What Makes a Gene Defective?
+
+@body
+
+- A disease-causing variant can change protein sequence, RNA processing, gene dosage, or gene regulation.
+- Start by separating a *DNA difference* from evidence that the difference causes disease.
+- What mutation types - missense, nonsense, frameshift, splice, copy-number, or repeat expansion - could explain the phenotype?
+
+=== layout: two-panels
+
+# 1. From Family Pattern to Mechanism
+
+@left
+
+## Find a candidate
+
+- Compare affected and unaffected relatives.
+- PCR and sequencing can identify small variants; arrays can find some larger copy changes.
+- ClinVar summarizes submitted interpretations, not a final answer by itself.
+
+@right
+
+## Test the explanation
+
+- Does the variant track with disease in the family?
+- Is the gene expressed in the affected tissue?
+- Does a cell or model-organism experiment change the predicted function?
+- Could multiple genes or environment contribute?
+
+=== layout: four-panels
+
+# 1. A Variant Can Fail in Different Ways
+
+@top-left
+
+## Too little product
+
+One good copy is not enough: *haploinsufficiency*.
+
+@top-right
+
+## A broken partner
+
+A changed protein interferes with normal protein: *dominant negative*.
+
+@bottom-left
+
+## Too much activity
+
+A variant makes a protein active in the wrong place, time, or amount.
+
+@bottom-right
+
+## Same letters, different use
+
+Methylation and imprinting can alter expression without changing sequence.
+
+=== layout: one-panel
+
+# 1. The Useful Question
+
+@body
+
+- If we add a normal gene copy, would it help every mechanism on the previous slide?
+- Why might gene addition make sense for too little product, but not automatically for a dominant-negative or gain-of-function variant?
+- Prediction tools can prioritize variants. A functional assay is still the evidence that tests the biological claim.
+
+=== layout: subsection
+
+# 2. What Is Gene Therapy?
+
+=== layout: one-panel
+
+# 2. What Change Are We Trying to Make?
+
+@body
+
+- Gene therapy uses genetic material, or genetically modified cells, to treat or prevent disease.
+- It may add a working instruction, lower a harmful RNA, alter splicing, or give a cell a new behavior.
+- A therapy can be genetic without permanently changing genomic DNA.
+
+=== layout: four-panels
+
+# 2. Match the Problem to the Strategy
+
+@top-left
+
+## Missing protein
+
+Deliver a working coding sequence.
+
+@top-right
+
+## Harmful RNA
+
+Use siRNA or an antisense oligonucleotide to lower or redirect the message.
+
+@bottom-left
+
+## Wrong cell behavior
+
+Modify cells outside the body, test them, then return them.
+
+@bottom-right
+
+## Wrong DNA sequence
+
+Genome editing is a separate strategy: it aims to change a chosen DNA site.
+
+=== layout: two-panels
+
+# 2. Local or Systemic?
+
+@left
+
+## Local delivery
+
+Eye, lung, spinal fluid, or a tumor can be reached directly. The dose has a smaller initial territory, but still needs biodistribution and safety checks.
+
+@right
+
+## Systemic delivery
+
+An intravenous dose can reach many tissues. The vector, particle, and route decide where most of it actually goes.
+
+=== layout: one-panel
+
+# 2. What Counts as Success?
+
+@body
+
+- Do not stop at "the vector entered cells." Measure a relevant protein, biomarker, cell behavior, or clinical function.
+- Ask how much effect, in which tissue, for how long, and compared with what control.
+- A durable benefit can require persistent cells, repeated dosing, or expression that lasts long enough for the disease.
+
+=== layout: subsection
+
+# 3. Gene Preparation
+
+=== layout: one-panel
+
+# 3. Five Decisions Before Delivery
+
+@body
+
+- **Identify and characterize:** Which gene, cell type, and disease mechanism are supported by evidence?
+- **Clone the payload:** Obtain a functional sequence and confirm its identity.
+- **Choose a vector:** What fits, reaches the target, and has an acceptable safety profile?
+- **Choose delivery:** Ex vivo or in vivo? Local or systemic?
+- **Confirm expression:** DNA presence is not proof of the right RNA, protein, dose, or effect.
+
+=== layout: two-panels
+
+# 3. The Expression Cassette
+
+@left
+
+- Promoter: where and how strongly transcription begins.
+- 5' UTR and 3' UTR: RNA stability and translation can change without altering the protein sequence.
+- Coding sequence: the protein instruction.
+- Poly(A) signal: helps create a stable mature RNA.
+
+@right
+
+## The Cassette Has Different Jobs
+
+1. Choose where transcription starts.
+2. Encode the intended protein.
+3. Control RNA processing and stability.
+4. Test how much functional product is made.
+
+=== layout: two-panels
+
+# 3. Early ADA-SCID Gene Addition
+
+@left
+
+![Patient in the historical ADA-SCID case](assets/set5_gene_therapy/ada_scid_patient_crop.png)
+
+@right
+
+- In 1990, NIH researchers treated children with ADA-deficient severe combined immunodeficiency.
+- They isolated T cells and used a retroviral vector to add a working ADA gene outside the body.
+- Modified cells were returned to the patient. This was gene addition, not precise replacement of the inherited variant.
+- This historical trial demonstrated feasibility; it is not a description of today's treatment protocol.
+
+@citation
+
+NHGRI, 1995 trial report: https://www.genome.gov/10000521/1995-release-first-human-gene-therapy-results
+
+=== layout: one-panel
+
+# 3. Design Is a Tradeoff, Not a Checkbox
+
+@body
+
+- A tissue-specific promoter can focus expression in liver, retina, or another target tissue, but may reduce total expression.
+- A larger promoter or regulatory region consumes precious vector capacity.
+- Dose is biological: too little expression may fail; too much or expression in the wrong tissue can cause harm.
+- Early immune-cell gene therapy taught two linked lessons: correction must persist, and vector design can create delayed risk.
+
+=== layout: one-panel
+
+# 3. Read the Cassette Like an Engineer
+
+@body
+
+- Which cassette feature decides cell specificity? Which feature changes the protein sequence?
+- If the coding sequence fits but the promoter and regulatory elements do not, what has to change: the payload, the vector, or the therapeutic goal?
+- Before clinical use, identity, expression level, and biological activity each require a separate measurement.
+
+=== layout: subsection
+
+# 4. Adenovirus
+
+=== layout: one-panel
+
+# 4. Why Use Adenovirus?
+
+@body
+
+- Adenoviral vectors are engineered from double-stranded DNA viruses with protein capsids.
+- Deleting genes needed for replication makes a delivery vector; it does not make the treatment automatically risk-free.
+- They can deliver relatively large payloads and drive strong expression, especially when a short, intense signal is useful.
+
+=== layout: two-panels
+
+# 4. Delivery Has a Physical Path
+
+@left
+
+![Legacy adenovirus-vector diagram](assets/set5_gene_therapy/adenovirus_vector_legacy.png)
+
+@right
+
+- Capsid proteins help determine cell entry.
+- The therapeutic cassette is carried to the nucleus for expression.
+- Adenoviral gene addition is not the same as repairing a chromosome sequence.
+- The key study question: what establishes expression, and what limits its duration?
+
+=== layout: big-image
+
+@image
+
+![4. Adenovirus Vector Design](assets/set5_gene_therapy/adenovirus_vector_legacy.png)
+
+@caption
+
+Topic 4: Adenovirus Vector Design
+
+=== layout: two-panels
+
+# 4. Strong Delivery, Strong Immune Question
+
+@left
+
+![Legacy adenovirus-entry figure](assets/set5_gene_therapy/adenovirus_entry_legacy.jpg)
+
+@right
+
+![Legacy adenovirus-expression figure](assets/set5_gene_therapy/adenovirus_expression_legacy.jpg)
+
+=== layout: big-image
+
+@image
+
+![4. Expressing the Delivered Gene](assets/set5_gene_therapy/adenovirus_expression_legacy.jpg)
+
+@caption
+
+Topic 4: Expressing the Delivered Gene
+
+=== layout: big-image
+
+@image
+
+![4. Entering the Cell](assets/set5_gene_therapy/adenovirus_entry_legacy.jpg)
+
+@caption
+
+Topic 4: Entering the Cell
+
+=== layout: two-panels
+
+# 4. Capacity and Packaging
+
+@left
+
+![Legacy adenovirus-packaging figure](assets/set5_gene_therapy/adenovirus_packaging_legacy.jpg)
+
+@right
+
+- The vector genome must be engineered within packaging constraints.
+- A larger payload competes with vector sequences and regulatory elements for space.
+- Delete replication functions in the vector, then supply needed production functions in controlled producer cells.
+- This legacy diagram teaches the design constraint; current products require product-specific manufacturing and safety evidence.
+
+=== layout: one-panel
+
+# 4. When Would You Choose It?
+
+@body
+
+- Pre-existing immunity and treatment-induced immune responses can shorten expression and complicate repeat dosing.
+- Innate inflammation can be useful in some vaccine or cancer settings, but it can also limit dose.
+- Compare adenovirus with AAV: which one favors larger payload/strong transient expression, and which one favors durable expression in non-dividing cells?
+@citation
+
+NHGRI: https://www.genome.gov/genetics-glossary/Gene-Therapy

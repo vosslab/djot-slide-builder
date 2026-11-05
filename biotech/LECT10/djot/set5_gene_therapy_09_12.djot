@@ -1,0 +1,337 @@
+=== layout: subsection
+
+# 9. Aptamers and Ribozymes
+
+=== layout: one-panel
+
+# 9. Binding and Catalysis
+
+@body
+
+- An *aptamer* is a short DNA or RNA sequence that folds into a shape able to bind a selected molecule.
+- A *ribozyme* is an RNA with catalytic activity; a designed ribozyme can cut a target RNA sequence.
+- Both require the right sequence, folded structure, target access, chemical stability, and delivery.
+
+=== layout: two-panels
+
+# 9. Binding Versus Cutting
+
+@left
+
+![Legacy aptamer and ribozyme figure](assets/set5_gene_therapy/aptamer_ribozyme_legacy.png)
+
+@right
+
+[*Aptamer*]{underline=true}
+
+Bind a protein, small molecule, or cell-surface target. It can block a target or act as a targeting ligand.
+
+[*Ribozyme*]{underline=true}
+
+Recognize an RNA sequence and catalyze a cut. The intended RNA and biological effect must both be measured.
+
+=== layout: big-image
+
+@image
+
+![9. Nucleic Acids Can Recognize Targets](assets/set5_gene_therapy/aptamer_ribozyme_legacy.png)
+
+@caption
+
+Topic 9: Nucleic Acids Can Recognize Targets
+
+=== layout: four-panels
+
+# 9. How Do We Find a Useful Sequence?
+
+@top-left
+
+## Start diverse
+
+SELEX begins with many random nucleic-acid sequences.
+
+@top-right
+
+## Keep binders
+
+Enrich sequences that bind the selected target.
+
+@bottom-left
+
+## Repeat and compare
+
+Selection increases candidate binders; sequencing identifies them.
+
+@bottom-right
+
+## Test in context
+
+High affinity in a tube is not proof of stability, entry, or action in a patient.
+
+=== layout: one-panel
+
+# 9. Compare Them With an Antibody
+
+@body
+
+| Feature | Aptamer | Antibody |
+| --- | --- | --- |
+| Core chemistry | Nucleic acid | Protein |
+| Recognition | Folded sequence makes a binding surface | Folded protein binding site |
+| Design issue | Nuclease stability and delivery | Protein production and immune recognition |
+| Possible role | Block a target or guide a cargo | Bind, block, recruit, or deliver |
+
+=== layout: one-panel
+
+# 9. What Would Convince You?
+
+@body
+
+- For an aptamer: show selective binding, then show that binding changes the intended cell behavior.
+- For a ribozyme: show the predicted cut or target-RNA loss, then show the protein and phenotype consequence.
+- Chemical modifications may improve blood stability, but they can change folding or function.
+- The older diagrams show possible designs; each therapeutic claim still needs its own delivery and efficacy evidence.
+
+=== layout: subsection
+
+# 10. Cystic Fibrosis
+
+=== layout: one-panel
+
+# 10. Why Is CFTR a Useful Case Study?
+
+@body
+
+- Cystic fibrosis results from variants affecting *CFTR*, an ion channel important in epithelial tissues.
+- In airways, altered ion transport contributes to dehydrated, difficult-to-clear mucus and chronic lung disease.
+- CF is a powerful teaching example because the missing or altered function is clear, but reaching the right airway cells is difficult.
+
+=== layout: two-panels
+
+# 10. The Airway Is a Delivery Environment
+
+@left
+
+![Legacy cystic-fibrosis airway figure](assets/set5_gene_therapy/cf_airway_legacy.jpg)
+
+@right
+
+- A treatment must move through mucus and reach relevant epithelial cells.
+- It needs enough CFTR activity in enough cells for enough time.
+- Mucus, inflammation, pre-existing immunity, and limited access to renewing basal cells all complicate delivery.
+
+=== layout: two-panels
+
+# 10. Three Strategy Families
+
+@left
+
+![Legacy CF gene-therapy figure](assets/set5_gene_therapy/cf_gene_therapy_legacy.png)
+
+@right
+
+- **Gene addition:** provide a functional CFTR instruction.
+- **Gene correction:** change a disease-causing sequence in target cells.
+- **RNA replacement or modulation:** transiently supply or alter the message.
+- Each must be judged by airway delivery, durability, and safety - not by mechanism alone.
+
+=== layout: big-image
+
+@image
+
+![10. The Airway Delivery Problem](assets/set5_gene_therapy/cf_gene_therapy_legacy.png)
+
+@caption
+
+Topic 10: The Airway Delivery Problem
+
+=== layout: two-panels
+
+# 10. What Did Early Viral Attempts Teach?
+
+@left
+
+![Legacy CF adenovirus figure](assets/set5_gene_therapy/cf_adenovirus_legacy.png)
+
+@right
+
+- Early adenoviral studies made the delivery barriers visible: expression can be brief, and immunity can limit repeat dosing.
+- The historical "30 days" text belongs to a particular older experiment, not a general current prediction.
+- Today, ask for the vector, route, target cell, outcome, comparison group, and follow-up interval before interpreting a claim.
+
+=== layout: one-panel
+
+# 10. Choose Endpoints That Match the Biology
+
+@body
+
+- Molecular: CFTR RNA or protein in target cells.
+- Channel function: ion-transport assays or nasal potential difference.
+- Physiological marker: sweat chloride where appropriate.
+- Clinical outcome: a prespecified lung or patient-centered measure, compared with the best available care.
+- A plausible gene-therapy mechanism is not the same as a demonstrated clinical outcome.
+
+=== layout: subsection
+
+# 11. RNA Payloads
+
+=== layout: one-panel
+
+# 11. Beyond Ordinary mRNA
+
+@body
+
+- Ordinary mRNA is translated and then degraded.
+- Self-amplifying RNA (saRNA) also encodes replication machinery intended to make more RNA inside a cell.
+- Circular RNA (circRNA) is joined into a loop; without free ends, it can resist some RNA-degradation pathways.
+
+=== layout: four-panels
+
+# 11. Design Tradeoffs
+
+@top-left
+
+## saRNA advantage
+
+More protein expression from less starting RNA is the goal.
+
+@top-right
+
+## saRNA challenge
+
+The replicase makes the RNA system larger and can create innate-immune-stimulating byproducts.
+
+@bottom-left
+
+## circRNA advantage
+
+The loop can extend RNA persistence in cells.
+
+@bottom-right
+
+## circRNA challenge
+
+Translation needs an engineered initiation strategy, such as an IRES-like element, and must remain reliable.
+
+=== layout: two-panels
+
+# 11. Which Measurement Fits the Claim?
+
+@left
+
+## Lower-dose claim
+
+Compare protein output across matched doses and measure innate immune activation.
+
+@right
+
+## Longer-duration claim
+
+Follow RNA and protein over time, then ask whether the duration matters for the intended therapeutic effect.
+
+=== layout: one-panel
+
+# 11. A Payload Is Not a Delivery System
+
+@body
+
+- Both saRNA and circRNA still need a carrier that reaches the intended cells.
+- RNA integrity, contaminating double-stranded RNA, translation efficiency, and tissue exposure can each alter outcome.
+- Decide whether the therapeutic goal needs a brief pulse, repeated pulses, or sustained expression before choosing a payload design.
+
+=== layout: one-panel
+
+# 11. Compare the Three Messages
+
+@body
+
+| Payload | Main design goal | Central limitation |
+| --- | --- | --- |
+| mRNA | Direct, transient protein production | Short persistence |
+| saRNA | More expression from lower starting dose | Larger, more complex RNA and innate sensing |
+| circRNA | Extended persistence | Engineered translation and reliable manufacturing |
+
+=== layout: subsection
+
+# 12. Gene Therapy Safety
+
+=== layout: one-panel
+
+# 12. Safety Begins Before the Dose
+
+@body
+
+- A product needs the right identity, purity, concentration, sterility, and biological activity.
+- For a viral vector, that includes vector identity and limits on unwanted cellular DNA or protein carryover.
+- For RNA, that includes sequence identity, integrity, formulation, and contaminants that could change immune sensing.
+
+=== layout: four-panels
+
+# 12. Four Questions for Every Product
+
+@top-left
+
+## Is it the right thing?
+
+Confirm sequence, vector or particle identity, and dose.
+
+@top-right
+
+## Is it clean?
+
+Measure sterility and relevant process-related impurities.
+
+@bottom-left
+
+## Does it work as intended?
+
+A potency assay measures a biological effect tied to the proposed mechanism.
+
+@bottom-right
+
+## Where does it go?
+
+Biodistribution measures target and unintended tissue exposure.
+
+=== layout: two-panels
+
+# 12. Potency Is Not a Generic Box
+
+@left
+
+## Match it to the therapy
+
+- Enzyme therapy: restored enzyme activity.
+- Channel therapy: restored ion transport.
+- RNA-lowering therapy: reduced target RNA and protein.
+
+@right
+
+## Then test the consequence
+
+- A mechanism assay is necessary but may not predict durable clinical function.
+- Use controls that distinguish delivery effects from the intended payload effect.
+
+=== layout: one-panel
+
+# 12. Monitor the Risk That Follows the Platform
+
+@body
+
+- Viral vectors: immune reactions, persistence, unintended tissue exposure, and delayed effects.
+- Integrating vectors: also follow insertion sites and long-term clonal behavior.
+- RNA and particle products: delivery distribution, repeated-dose tolerance, and product integrity.
+- Benefit-risk depends on disease severity, alternatives, dose, and the evidence for both benefit and harm.
+
+=== layout: one-panel
+
+# 12. The Last Study Question
+
+@body
+
+- What experiment would show that the payload reached the *right* tissue rather than merely some tissue?
+- What result would distinguish temporary expression from a durable therapeutic effect?
+- Which risk is created by the platform itself, even if the therapeutic gene sequence is correct?
+@citation
+
+FDA: https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products

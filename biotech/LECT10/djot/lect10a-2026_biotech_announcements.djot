@@ -1,0 +1,267 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 10A
+
+## Announcements
+## Dr. Neil Voss
+## Nov 5, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- _Announcements_
+- From Individual Projects to Group Companies
+- Group Project Guidelines and Timeline
+- Set #5: Medicinal Biotechnology
+- Closing Remarks: Veridian Dynamics #9, Machines
+
+=== layout: one-panel
+
+# Next Week: November 12
+
+@body
+
+- [*Form your group.*]{color=red} Bring ideas about who you can work with and which company you want to develop.
+- Set #6: Regulation Biotechnology
+- Homework 5 is assigned; check Blackboard for instructions and the submission deadline.
+- Looking ahead: select your group's project by November 19.
+
+=== layout: big-image
+
+@image
+
+![Four Day Outlook](assets/weather_story/chicago_2fd2de55923a37e43d3d4bf0dd8ab053d55b4a7796b4cfdaa070db7f1b6d9292.png)
+
+@caption
+
+A cold front will usher in cooler temperatures tonight through Saturday&#46; A widespread freeze is expected Friday night away from Lake Michigan and west of Interstate 57&#46; The cool down will be brief before temperatures warm early next week&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 05, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: one-panel
+
+# Week 10 Breakout Room Chat
+
+@body
+
+- If no one is talking, please be the first to speak and get things started.
+- State your name, major, and post-grad plans.
+- [What makes a good group member?]{color=red}
+  - Think of reliable communication, useful feedback, and following through.
+  - What is one group-work habit you would like your new team to adopt?
+
+=== layout: big-image
+
+@image
+
+![Recording reminder](repo:evergreen/assets/rec_reminder_image.png)
+
+@caption
+
+Make Sure Dr. Voss Is Recording
+
+=== include: repo:evergreen/youtube_channel.djot
+
+=== layout: big-image
+
+@image
+
+![StVC 38: Markdown to Tutorial](assets/stump_the_vibe_coder/udfGzdb9F1I.jpg)
+
+@caption
+
+Stump the Vibe Coder #38: Markdown to Tutorial &#8212; Less Formatting\
+Watch the Video: https://www.youtube.com/watch?v=udfGzdb9F1I\
+Explore the Tool: https://github.com/vosslab/markdown-to-tutorial
+
+=== include: repo:biotech/evergreen/course_information.djot
+
+=== layout: two-panels
+hidden: true
+
+# How to Use Zoom Like a Pro
+
+@left
+
+- Mute yourself when you are not speaking.
+- Plug in your headphones.
+- Turn off video if your connection is slow.
+- Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
+
+@right
+
+![Zoom guidance](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/image_003.png)
+
+=== layout: section
+
+# Course Content
+
+=== layout: one-panel
+
+# Important Course Links
+
+@body
+
+- Biotechnology syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/
+- Current course schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/
+- Projects and requirements
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/
+- Points and assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+
+=== layout: one-panel
+
+# Optional Background Reading
+
+@body
+
+- There is no required textbook for this course.
+- Optional reference: _Biotechnology: The Technological Applications of Genetics and Genomics_, third edition, Clark and colleagues.
+- Tonight: inherited defects, gene therapy and editing, stem cells, and cancer biotechnology.
+- Use the assigned Set #5 topic list and appropriate outside sources to prepare.
+
+=== layout: subsection
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# The Project Transition
+
+@body
+
+- Your individual projects are complete.
+- Now use the pitches, feedback, and executive summaries to choose a shared company.
+- [*Nov 12:* groups formed.]{color=red}
+- *Nov 19:* group project selected.
+- *Dec 3:* Company Vision Report form.
+- *Dec 10:* group presentations.
+- *Dec 17:* group business plan due.
+
+=== layout: one-panel
+
+# This Week's Work
+
+@body
+
+- Set #5: Medicinal Biotechnology is tonight's topic.
+- Complete the movie form assigned this week; check Blackboard for its link and deadline.
+- Start conversations about your group and possible company proposals.
+- Next week: Set #6, group formation, and Homework 5.
+
+=== layout: one-panel
+
+# Talking Points: One Slide, One Minute
+
+@body
+
+- Research your assigned topic and bring one useful angle to the class.
+- Use relevant images, short phrases, and your own words.
+- Put detailed speaking notes in the presenter notes.
+- If another student shares your topic, add a different example or explanation.
+- Ask thoughtful questions and make connections in the chat.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biotech/TALKING_POINTS/
+
+=== layout: one-panel
+
+# Discussion Marks
+
+@body
+
+- Be ready to contribute when class starts.
+- Ask a clarifying question, explain your reasoning, or connect two ideas.
+- Listen to the other presenters; build on what they say.
+- A greeting or agreement alone is not a discussion contribution.
+- Use your proper first name or a consistent nickname in Zoom.
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Paste current talking marks here](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/talking_marks_paste_here.png)
+
+@caption
+
+Talking Marks
+
+@notes
+
+Review the current talking marks with the class and explain how participation affects the totals.
+
+=== layout: one-panel
+hidden: true
+
+# Student Profile and Discord Signup
+
+@body
+
+- These assignments were due September 21 and are complete.
+- Keep using Discord for course communication.
+
+=== layout: one-panel
+hidden: true
+
+# BioTech News: December 3
+
+@body
+
+- Our next BioTech News discussion is December 3.
+- Choose a biotechnology article from the past two years with a clear biological mechanism.
+- Use the assigned slide and put the article link in the speaker notes.
+- Explain the product or process in one minute.
+
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+
+=== include: repo:evergreen/natural_science_club.djot
+hidden: true
+
+=== layout: subsection
+hidden: true
+
+# Course Evaluations
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- Complete the survey when the university sends the invitation.
+- https://roosevelt.campuslabs.com/eval-home/
+- Watch for the actual evaluation window and deadline.
+
+=== layout: two-panels
+
+# Veridian Dynamics
+
+@left
+
+![Veridian Dynamics](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/image_010.png)
+
+@right
+
+- Video #9
+- Machines
+- Man and machines: best friends forever.
+
+=== layout: theend
+
+# THE END

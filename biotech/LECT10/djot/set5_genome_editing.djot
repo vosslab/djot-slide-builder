@@ -1,0 +1,656 @@
+=== layout: section
+
+# Chapter 17B: Genome Editing
+
+=== layout: one-panel
+
+# Genome Editing Is A Design Problem
+
+@body
+
+- What molecular change is needed: DNA sequence, RNA message, or gene activity?
+- Which cells must receive the treatment, and how will we measure both benefit and harm?
+- The editor is only one part of a therapy. Delivery and DNA repair determine the outcome.
+
+=== layout: subsection
+
+# 13. Editing vs. Therapy
+
+=== layout: two-panels
+
+# Questions: Editing vs. Therapy
+
+@left
+
+- What does editing change at the DNA level?
+- What can gene therapy change without changing DNA letters?
+- Which goal fits a precise mutation correction, a missing protein, or lowering an overactive protein?
+
+@right
+
+![Annual comparison lead](assets/set5_genome_editing/editing_vs_therapy_2025.png)
+
+=== layout: two-panels
+
+# 13. Two Ways To Change Biology
+
+@left
+
+- Gene therapy uses genetic material or genetically modified cells to treat or prevent disease.
+- It can add a working gene, supply RNA, reduce harmful RNA, or alter gene activity.
+- Genome editing is one subset: it changes DNA at a chosen genomic site.
+
+@right
+
+![Legacy gene-editing overview](assets/set5_genome_editing/gene_editing_legacy.png)
+
+=== layout: two-panels
+
+# 13. Match The Tool To The Job
+
+@left
+
+- **Gene addition or RNA treatment:** a useful product is missing; native DNA can remain unchanged.
+- **Genome editing:** a specific DNA change is the therapeutic goal, such as disrupting a harmful sequence.
+- Neither label guarantees permanence, one dose, or clinical benefit.
+
+@right
+
+![Editing and gene-addition comparison](assets/set5_genome_editing/editing_vs_therapy_detail_2025.png)
+
+=== layout: one-panel
+
+# 13. Compare The Risks, Not Just The Promise
+
+@body
+
+- Editing can create unintended DNA changes, large repair products, or harmful consequences of the intended change.
+- Gene delivery can miss the needed cells, express too much or too little product, or provoke immunity.
+- Ask: **which cells changed, how many changed, for how long, and what did that change do?**
+
+=== layout: subsection
+
+# 14. Zinc Finger Nucleases
+
+=== layout: one-panel
+
+# Questions: Zinc Finger Nucleases
+
+@body
+
+- What are the DNA-binding zinc-finger array and the FokI cutting domain?
+- Why are ZFNs usually used as a pair on opposite DNA strands?
+- When would error-prone end joining versus template-directed repair be useful?
+
+=== layout: two-panels
+
+# 14. ZFN: Recognition Plus Cutting
+
+@left
+
+- A zinc finger is a protein module that recognizes a short DNA sequence.
+- Several fingers form an engineered DNA-binding array.
+- The array is fused to FokI, a nuclease that cuts efficiently only when paired with another FokI domain.
+
+@right
+
+![ZFN teaching figure from annual work](assets/set5_genome_editing/zfn_2025.jpg)
+
+=== layout: one-panel
+
+# 14. A Paired Cut Improves Specificity
+
+@body
+
+- Left and right ZFNs bind neighboring DNA half-sites; FokI dimerization cuts the spacer between them.
+- Requiring two nearby bindings can reduce accidental cutting.
+- Each new target still requires protein design and testing in the relevant cells.
+
+=== layout: one-panel
+
+# 14. Read The Repair Outcome
+
+@body
+
+- **End joining** often makes small insertions or deletions and can disrupt a gene.
+- **Template-directed repair** can copy a supplied sequence, but competes with end joining.
+- Sequence the target and plausible near-matches, then test the edited cells' protein and function.
+
+=== layout: subsection
+
+# 15. TALENs
+
+=== layout: one-panel
+
+# Questions: TALENs
+
+@body
+
+- How do TALE repeats recognize DNA one base at a time?
+- Why do TALENs also use paired FokI nuclease domains?
+- Compare reprogramming a TALEN protein with changing a CRISPR guide RNA.
+
+=== layout: two-panels
+
+# 15. TALEN Architecture
+
+@left
+
+- TALE repeats come from bacterial proteins that bind plant DNA.
+- Each repeat contributes base preference; a string of repeats recognizes a DNA sequence.
+- Two TALENs bind flanking sites and bring FokI domains together to cut.
+
+@right
+
+![DNA recognition model](assets/set5_genome_editing/zfn_2025.jpg)
+
+=== layout: one-panel
+
+# 15. TALENs: Strengths And Constraints
+
+@body
+
+- TALENs can target sites inconvenient for a particular CRISPR PAM requirement.
+- Their DNA-binding proteins are large, which can complicate packaging and delivery.
+- Like ZFNs, they require building and validating protein pairs rather than simply changing a guide sequence.
+
+=== layout: one-panel
+
+# 15. ZFN, TALEN, Or CRISPR?
+
+@body
+
+- **ZFNs:** compact engineered protein recognition; target design can be demanding.
+- **TALENs:** modular protein recognition; flexible target choice but large cargo.
+- **CRISPR:** guide-RNA recognition makes retargeting fast; PAM, delivery, and repair still constrain results.
+- Choose from the target, cargo, cell type, and evidence requirements -- not popularity.
+
+=== layout: subsection
+
+# 16. CRISPR-Cas9: Advantages And Limits
+
+=== layout: two-panels
+
+# Questions: CRISPR-Cas9
+
+@left
+
+- What are Cas9, the guide RNA, and a PAM?
+- Why does Cas9 cut DNA but not itself decide the final edit?
+- How do RNP, mRNA, and DNA delivery change editor duration?
+
+@right
+
+![Cas9 guide and target](assets/set5_instructor/crispr_cas9_targeting.png)
+
+=== layout: two-panels
+
+# 16. From Bacterial Defense To Editing Tool
+
+@left
+
+- Bacterial CRISPR-associated systems use stored sequence information to recognize invading genetic material.
+- A guide RNA provides sequence matching; a Cas nuclease provides the cut.
+- Biotechnology repurposes this logic to target a compatible DNA sequence.
+
+@right
+
+![Legacy bacterial-defense CRISPR diagram](assets/set5_genome_editing/crispr_bacterial_defense_legacy.png)
+
+=== layout: two-panels
+
+# 16. Guide, PAM, Cut, Repair
+
+@left
+
+- Guide RNA base-pairs with a matching DNA target.
+- Cas9 also needs a nearby PAM; not every sequence is equally targetable by one Cas system.
+- The cell's repair pathways create the observed edit after the cut.
+
+@right
+
+![Annual CRISPR guide illustration](assets/set5_genome_editing/crispr_guide_2025.jpg)
+
+=== layout: two-panels
+
+# 16. Why Fast Retargeting Matters
+
+@left
+
+- Retargeting CRISPR generally means redesigning a guide RNA rather than a whole DNA-binding protein.
+- This enables systematic testing and multiplexed targeting.
+- Fast design does not remove the need to test repair outcomes and cell response.
+
+@right
+
+![Annual CRISPR mechanism illustration](assets/set5_genome_editing/crispr_mechanism_2025.png)
+
+=== layout: one-panel
+
+# 16. Important Limits
+
+@body
+
+- PAM requirements limit targets for a particular enzyme.
+- Similar sequences can be cut; prolonged activity gives more chances for unwanted cutting.
+- A DNA break can yield indels, larger deletions, or rearrangements, not just a desired repair.
+- Delivery, immune response, and unequal editing across cell types remain practical limits.
+
+=== layout: two-panels
+
+# 16. A Historical Recognition
+
+@left
+
+- The 2020 Nobel Prize in Chemistry recognized Emmanuelle Charpentier and Jennifer A. Doudna for development of a genome-editing method.
+- The scientific history includes many contributors to CRISPR biology and application.
+
+@right
+
+![Legacy Nobel 2020 figure](assets/set5_genome_editing/nobel_2020_legacy.png)
+
+@citation
+
+Nobel Prize, 2020: https://www.nobelprize.org/prizes/chemistry/2020/summary/
+
+=== layout: one-panel
+
+# 16. Historical CRISPR Patent Dispute
+
+@body
+
+- Foundational CRISPR work led to overlapping patent claims and long-running priority disputes.
+- The historical teaching question: how did bacterial-system evidence relate to claims for editing eukaryotic cells?
+- Do not treat an old slide's litigation status as current legal advice. Patent scope is separate from whether an experiment works.
+
+=== layout: subsection
+
+# 17. Delivery For Genome Editing
+
+=== layout: one-panel
+
+# Questions: Delivery
+
+@body
+
+- Should the editor arrive as DNA, messenger RNA, or protein-guide complex?
+- Is local delivery enough, or must it travel systemically?
+- Which carrier reaches intended cells while limiting exposure elsewhere?
+
+=== layout: one-panel
+
+# 17. Three Editor Formats
+
+@body
+
+- **DNA:** cells make the editor; expression may persist, so packaging and duration matter.
+- **mRNA:** cells make editor protein for a limited time; lipid particles can carry RNA to some tissues.
+- **RNP:** Cas protein plus guide acts directly and can be transient; useful for cells edited outside the body.
+
+=== layout: one-panel
+
+# 17. Delivery Is A Biology Problem
+
+@body
+
+- Viral vectors, lipid nanoparticles, electroporation, and local injection reach different cells.
+- More exposure can raise editing frequency but broaden opportunities for toxicity or unwanted editing.
+- Measure cargo in target cells, edit frequency, tissue distribution, immune response, and clinical function.
+
+=== layout: one-panel
+
+# 17. Short Activity Is Often A Feature
+
+@body
+
+- The ideal exposure is long enough to edit enough relevant cells.
+- Longer expression can add chances to cut similar sites.
+- Delivery format is part of safety design, not a detail chosen after the guide.
+
+=== layout: subsection
+
+# 18. Ex Vivo And In Vivo Editing
+
+=== layout: two-panels
+
+# Questions: Ex Vivo Or In Vivo?
+
+@left
+
+- What are the workflows from collection to reinfusion, or from dose to edited tissue?
+- Which cells can be edited and tested before return?
+- Which tissues must be reached inside the body?
+
+@right
+
+![Annual ex vivo workflow lead](assets/set5_genome_editing/ex_vivo_2025.jpg)
+
+=== layout: two-panels
+
+# 18. Ex Vivo: Edit, Test, Return
+
+@left
+
+- Collect accessible cells, such as blood stem cells or T cells.
+- Deliver editor, then measure editing and cell health before infusion.
+- Patients may need conditioning so returned cells can engraft.
+
+@right
+
+![Annual cell-processing visual](assets/set5_genome_editing/ex_vivo_2025.jpg)
+
+=== layout: two-panels
+
+# 18. In Vivo: Reach Cells In Place
+
+@left
+
+- Dose editor directly to a tissue or through the bloodstream.
+- This can reach cells that cannot reasonably be removed and returned.
+- Infer editing from tissue sampling, biomarkers, imaging, and clinical outcomes.
+
+@right
+
+![Annual in vivo delivery visual](assets/set5_genome_editing/in_vivo_2025.jpg)
+
+=== layout: one-panel
+
+# 18. Compare The Evidence
+
+@body
+
+- **Ex vivo:** characterize the cell product before dosing; collection, conditioning, and engraftment add their own risks.
+- **In vivo:** may reach inaccessible cells, but target-cell access and whole-body distribution become central questions.
+- A molecular edit is not enough: durable cell function and clinical benefit must be measured.
+
+=== layout: subsection
+
+# 19. Off-Target Effects
+
+=== layout: one-panel
+
+# Questions: Off-Target Effects
+
+@body
+
+- What makes an unintended site different from the intended target?
+- Which tests examine predicted near-matches, and which look more broadly?
+- How can dose, editor duration, and guide design change risk?
+
+=== layout: one-panel
+
+# 19. Two Different Safety Questions
+
+@body
+
+- An **off-target edit** is a DNA change at an unintended site.
+- An intended **on-target** edit can also have unintended biological consequences.
+- A perfectly targeted disruption can still harm a cell if the target has an essential role or the repair outcome is unexpected.
+
+=== layout: one-panel
+
+# 19. Find Changes Before Interpreting Them
+
+@body
+
+- Start with the target and likely near-matches; use PCR and sequencing to measure changes there.
+- Complement targeted checks with a genome-wide strategy appropriate to editor, cell type, and decision.
+- Inspect the intended locus for large deletions or chromosome-scale joins that a short amplicon can miss.
+
+=== layout: one-panel
+
+# 19. Lowering Risk Is A Testable Choice
+
+@body
+
+- Select a guide with fewer risky near-matches; use a high-specificity editor when appropriate.
+- Limit editor dose and duration, for example with transient RNP delivery.
+- Test clinically relevant cells, then connect detected changes to cell behavior and plausible clinical consequences.
+
+=== layout: subsection
+
+# 20. CRISPR Implications
+
+=== layout: one-panel
+
+# Questions: CRISPR Implications
+
+@body
+
+- What is a convincing chain from edit to clinical benefit?
+- Why choose Cas12, Cas13, base editors, or prime editors instead of Cas9 cutting?
+- What evidence should appear before a first-in-human study?
+
+=== layout: two-panels
+
+# 20. Capability Is Not Justification
+
+@left
+
+- A programmable editor can change a target in a laboratory model.
+- A treatment must reach correct cells, produce a useful outcome, and have an acceptable risk-benefit balance.
+- A heritable change adds separate questions of consent and future risk.
+
+@right
+
+![CRISPR mechanism for evidence discussion](assets/set5_genome_editing/crispr_mechanism_2025.png)
+
+=== layout: one-panel
+
+# 20. A Preclinical Evidence Chain
+
+@body
+
+- Confirm the exact edit and repair products at the target.
+- Measure likely and broader unintended changes in relevant cells.
+- Show corrected molecular or cellular function, then a meaningful disease-model outcome when available.
+- Establish dose, distribution, durability, and monitoring before claiming clinical readiness.
+
+=== layout: one-panel
+
+# 20. Read Headlines Carefully
+
+@body
+
+- Clinical programs use distinct routes: edited blood stem cells returned ex vivo, or editor cargo delivered to organs such as liver in vivo.
+- A named technology, trial, or approval is not evidence that every disease or tissue is solved.
+- Check the target, delivery route, endpoint, follow-up, and population before generalizing.
+
+=== layout: one-panel
+
+# 20. Original Discussion Videos
+
+@body
+
+- Bozeman Science, *What Is CRISPR?* https://youtu.be/MnYppmstxIs
+- Kurzgesagt, *Genetic Engineering Will Change Everything Forever - CRISPR* https://youtu.be/jAhjPd4uNFY
+- Ask: which claims are mechanism, which are prediction, and what evidence would test each prediction?
+
+=== layout: subsection
+
+# 21. Zygote Editing
+
+=== layout: two-panels
+
+# Questions: Zygote Editing
+
+@left
+
+- What is a zygote, and how can editor components be introduced?
+- Why can early edits become mosaic rather than uniform?
+- What changes when an edit could be inherited?
+
+@right
+
+![Annual zygote teaching visual](assets/set5_genome_editing/zygote_2025.png)
+
+=== layout: two-panels
+
+# 21. The One-Cell Starting Point
+
+@left
+
+- A zygote is the single cell formed when sperm fertilizes egg.
+- Researchers can introduce mRNA or protein-guide complexes by microinjection.
+- Editing must occur early and consistently for descendants to share the same result.
+
+@right
+
+![Annual zygote-injection visual](assets/set5_genome_editing/zygote_injection_2025.png)
+
+=== layout: one-panel
+
+# 21. Mosaicism Changes Interpretation
+
+@body
+
+- If cutting and repair occur after the first cell division, cells can acquire different DNA outcomes.
+- A small biopsy may not represent every future tissue.
+- Testing must examine intended sequence, unwanted edits, repair diversity, and the limits of an early sample.
+
+=== layout: one-panel
+
+# 21. Historical Case: CCR5 Embryo Editing
+
+@body
+
+- In 2018, He Jiankui announced edited embryos involving CCR5, framed as an attempt to alter HIV susceptibility.
+- This case invites discussion of uncertainty, informed consent, oversight, heritability, and proposed benefit versus justified intervention.
+- The legacy slide's investigation statement belongs to its 2019 context; it is not a current-status claim.
+
+=== layout: subsection
+
+# 22. Somatic Editing In Adults
+
+=== layout: one-panel
+
+# Questions: Somatic Editing
+
+@body
+
+- Which adult tissues are practical targets: liver, eye, or blood cells?
+- How does delivery choice match each tissue?
+- What outcome shows benefit beyond detecting an edit?
+
+=== layout: two-panels
+
+# 22. Somatic Means Nonheritable By Intent
+
+@left
+
+- Somatic editing changes cells in one person's body; it is not intended to alter eggs, sperm, or descendants.
+- Target tissue sets delivery route and outcome measurement.
+- Eye dosing, liver-directed delivery, and ex vivo blood-cell editing are different biological problems.
+
+@right
+
+![In vivo delivery as a tissue-access problem](assets/set5_genome_editing/in_vivo_2025.jpg)
+
+=== layout: one-panel
+
+# 22. Measure The Tissue's Job
+
+@body
+
+- **Liver:** disease-protein concentration plus liver safety measurements.
+- **Eye:** imaging and functional vision tests alongside local safety examinations.
+- **Blood cells:** edit frequency, cell counts, protein measurements, and disease symptoms.
+- The endpoint must make biological sense for the tissue.
+
+=== layout: one-panel
+
+# 22. Durability Depends On The Cells
+
+@body
+
+- A long-lived or self-renewing edited population can preserve an effect; rapid turnover can dilute it.
+- Redosing may be limited by immune recognition of vector or editor.
+- Follow-up includes intended benefit, organ safety checks, and delayed adverse events.
+
+=== layout: subsection
+
+# 23. Base And Prime Editing
+
+=== layout: one-panel
+
+# Questions: Base And Prime Editing
+
+@body
+
+- Which single-base conversions can a base editor make?
+- How does a prime editor use a guide with a template to write a planned small change?
+- What sequencing result shows the intended product and nearby byproducts?
+
+=== layout: one-panel
+
+# 23. Base Editing: A Chemical Conversion
+
+@body
+
+- Base editors couple targeting to an enzyme that converts one DNA base into another within an editing window.
+- They can make particular transitions, such as C-to-T or A-to-G outcomes, without the same double-strand-break strategy as standard Cas9 cutting.
+- Nearby editable bases and the window location matter: more than one base can change.
+
+=== layout: one-panel
+
+# 23. Prime Editing: Write A Small Plan
+
+@body
+
+- A prime editor uses a Cas-derived targeting protein and reverse transcriptase.
+- Its prime-editing guide RNA identifies the site and carries a template encoding a small desired sequence change.
+- It can support selected substitutions, short insertions, or short deletions without a conventional double-strand break.
+
+=== layout: one-panel
+
+# 23. Base Versus Prime: Choose The Exact Edit
+
+@body
+
+- **Base editing:** efficient for compatible single-letter conversions; constrained by chemistry and window.
+- **Prime editing:** potentially more versatile for specified small changes; design, delivery, and efficiency remain central constraints.
+- Both need target sequencing, byproduct measurement, off-target assessment, and functional readout. Neither is a "fix any mutation" switch.
+
+=== layout: subsection
+
+# 24. Epigenome Editing
+
+=== layout: one-panel
+
+# Questions: Epigenome Editing
+
+@body
+
+- What is dCas9, and why can it target DNA without cutting it?
+- How can an attached activator or repressor alter gene expression?
+- How would we show RNA, protein, and cell behavior changed while DNA letters did not?
+
+=== layout: one-panel
+
+# 24. Target The Control System
+
+@body
+
+- Catalytically inactive Cas protein, often called dCas9, can still be guided to DNA.
+- Fusing dCas9 to an activator, repressor, or chromatin modifier recruits regulatory activity near a promoter or enhancer.
+- The intended product is altered gene activity, not a changed DNA sequence.
+
+=== layout: one-panel
+
+# 24. What Must Be Measured?
+
+@body
+
+- Sequence the target before and after to verify DNA letters were not intentionally changed.
+- Measure messenger RNA, protein, and relevant cell behavior; a transcriptional shift alone may not matter biologically.
+- Ask whether the effect persists, fades after editor removal, or changes as cells divide.
+
+=== layout: one-panel
+
+# 24. A Different Benefit-Risk Tradeoff
+
+@body
+
+- Reversible or temporary regulation may help when permanent DNA change is not wanted.
+- A transient signal may be a limitation when durable correction is needed.
+- Specificity still matters: guides can bind related sites, and recruited regulators can have broader effects.
