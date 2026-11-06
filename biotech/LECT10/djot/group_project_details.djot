@@ -1,6 +1,31 @@
 === layout: section
 
+<<<<<<< Updated upstream
 # Group Business Plan
+=======
+# Business Plan Reference
+
+=== layout: one-panel
+
+# Rubric At A Glance
+
+@body
+
+| Section | Weight |
+| --- | --- |
+| Cover page and table of contents | 5% |
+| Executive summary | 30% |
+| Science and technology background | 15% |
+| Market opportunity | 20% |
+| Management team | 5% |
+| Investment summary | 5% |
+| Overall style | 20% |
+| *Total* | *100%* |
+
+=== layout: section
+
+# Writing the Business Plan
+>>>>>>> Stashed changes
 
 === layout: two-panels
 

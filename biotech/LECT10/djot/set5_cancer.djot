@@ -311,7 +311,11 @@ It is a screen, not a measure of human exposure, tissue specificity, or cancer i
 
 === layout: two-panels
 
+<<<<<<< Updated upstream
 # 34. Hormone Signaling
+=======
+# 34. Hormone Signals Can Change Gene Expression
+>>>>>>> Stashed changes
 
 @left
 
@@ -476,6 +480,7 @@ Topic 36: Cancer-Causing and Cancer-Killing Viruses
 === layout: two-panels
 
 # 36. Phage Cycles: An Analogy
+<<<<<<< Updated upstream
 
 @left
 
@@ -493,6 +498,25 @@ Topic 36: Cancer-Causing and Cancer-Killing Viruses
 
 @left
 
+=======
+
+@left
+
+![Lytic and lysogenic bacteriophage cycles](assets/set5_cancer/oncolytic_delivery_2025.png)
+
+@right
+
+- A lytic phage makes new particles and lyses its bacterial host.
+- A temperate phage can maintain its genome in the host and later enter the lytic cycle.
+- This is an analogy about persistence and lysis. Mammalian cancer-causing viruses and engineered oncolytic viruses have their own mechanisms.
+
+=== layout: one-panel
+
+# 36. Designing an Oncolytic Virus
+
+@body
+
+>>>>>>> Stashed changes
 - Specificity can use a tumor receptor, tumor-active promoter, deleted viral function, or local delivery.
 - Direct lysis can release tumor antigens and inflammatory signals, potentially recruiting immune responses.
 - Test route, shedding, prior immunity, off-target infection, and systemic inflammation.

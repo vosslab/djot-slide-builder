@@ -263,10 +263,13 @@ hidden: true
 - I can see only total completion, not individual students' responses.
 - Watch for the confirmed evaluation window and any announced adjusted deadline.
 
+<<<<<<< Updated upstream
 === layout: subsection
 
 # Veridian Dynamics
 
+=======
+>>>>>>> Stashed changes
 === layout: two-panels
 
 # Veridian Dynamics

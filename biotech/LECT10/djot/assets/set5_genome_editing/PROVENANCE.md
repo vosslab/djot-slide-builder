@@ -12,6 +12,12 @@ and slide contribution; no external asset is claimed as a new repository work.
 | `editing_vs_therapy_2025.png`, `editing_vs_therapy_detail_2025.png` | `biotech/LECT10/Fall_2025_Talking_Points_Set_5-Medicinal_BioTech.pptx` | 2025 slides 43, annual discussion lead |
 | `zfn_2025.jpg` | `biotech/LECT10/Fall_2025_Talking_Points_Set_5-Medicinal_BioTech.pptx` | 2025 slide 45 |
 | `crispr_mechanism_2025.png` | `biotech/LECT10/Fall_2025_Talking_Points_Set_5-Medicinal_BioTech.pptx` | 2025 slides 49-50 |
+<<<<<<< Updated upstream
+=======
+
+The copied `crispr_guide_2025.jpg` proved to be a water-droplet photograph during rendered
+review. It was removed and replaced by the actual Cas9/guide diagram from the instructor ODP.
+>>>>>>> Stashed changes
 | `ex_vivo_2025.jpg`, `in_vivo_2025.jpg` | `biotech/LECT10/Fall_2025_Talking_Points_Set_5-Medicinal_BioTech.pptx` | 2025 slides 54-55 |
 | `zygote_2025.png`, `zygote_injection_2025.png` | `biotech/LECT10/Fall_2025_Talking_Points_Set_5-Medicinal_BioTech.pptx` | 2025 slide 61 |
 | `zfn_talen_comparison_2025.jpg` | `biotech/LECT10/Fall_2025_Talking_Points_Set_5-Medicinal_BioTech.pptx` | 2025 slide 45, `image61.jpg`; paired ZFN/TALEN recognition model |
