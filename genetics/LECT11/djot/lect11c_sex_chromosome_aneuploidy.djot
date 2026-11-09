@@ -1,0 +1,288 @@
+=== layout: section
+
+# Aneuploidy of Sex Chromosomes
+
+=== layout: multiple-choice
+
+@question
+
+What would be the sex of an XXY human? And why?
+
+- A) male
+- B) female
+- C) cannot be determined
+
+@answer
+
+[Answer\: A]{color=red}
+
+=== layout: one-panel
+
+# *Aneuploidy of Sex Chromosomes*
+
+@body
+
+- Nondisjunction of sex chromosomes produces a variety of aneuploid conditions
+- XXX females are healthy, with no unusual physical features
+- [*Klinefelter syndrome*]{underline=true} is the result of an extra chromosome in a male, producing XXY individuals
+- Monosomy X, called [*Turner syndrome,*]{underline=true} produces X0 females, who are sterile; it is the only known viable monosomy in humans
+
+=== layout: two-panels
+
+# *Female Sex Abnormalities &#8211; 45,X0*
+
+@left
+
+![Slide image 16](assets/lect11c-sex_dosage/image_016.png)
+
+@right
+
+- [Turner's syndrome]{underline=true} &#8211; occurs when females inherit only one X chromosome &#8211; their genotype is X0
+  - short in stature, adult average 4' 7&#8221;
+  - often have distinctive webbed necks (i.e., extra folds of skin), small jaws, and high arched palates.
+  - lack prominent female secondary sexual characteristics.
+    - exceptionally small, widely spaced breasts, broad shield-shaped chests, and turned-out elbows.
+    - ovaries do not develop normally and [are sterile.]{underline=true}
+  - between 1 in 2,000 to 1 in 5,000 female births
+
+=== layout: one-panel
+
+# *Female Sex Abnormalities &#8211; 47,XXX*
+
+@body
+
+- [Triple-X syndrome]{underline=true} &#8211; occurs in women who inherit three X chromosomes &#8211; their genotype is XXX (or more rarely XXXX or XXXXX).
+  - As adults, these "super-females" generally are an inch or so taller than average with unusually long legs and slender torsos, but [otherwise appear normal.]{underline=true}
+  - They tend to be emotionally immature for their size during childhood.  This sometimes results in teachers and other adults labeling them as troublemakers.
+  - 1 in 1,000 female births
+  - Approximately 100 cases of XXXX have been reported worldwide
+  - Approximately 25 females have been diagnosed with XXXXX syndrome.
+
+=== layout: two-panels
+
+# *Male Sex Abnormalities &#8211; 47,XXY*
+
+@left
+
+![Slide image 17](assets/lect11c-sex_dosage/image_017.png)
+
+@right
+
+- [Klinefelter syndrome]{underline=true} &#8211; males inherit one or more extra X chromosomes &#8211; their genotype is XXY (or more rarely XXXY or XY/XXY mosaic).
+  - high-pitched voices
+  - asexual to feminine body contours
+    - as well as breast enlargement, and comparatively little facial and body hair.
+  - [sterile or nearly so]{underline=true}
+    - testes and prostate gland are small.
+  - Slightly above average height and likely to be overweight.
+  - between 1 in 500 and 1 in 1000 male births
+
+=== layout: one-panel
+
+# *Male Sex Abnormalities &#8211; 47,XYY*
+
+@body
+
+- XYY syndrome &#8211; males inherit an extra Y chromosome &#8211; their genotype is XYY.
+  - As adults, these "super-males" are usually tall (above 6 feet) and generally appear and act normal.
+    - However, they produce high levels of testosterone.
+    - During adolescence, they often are slender, have severe facial acne, and are poorly coordinated.
+  - They are usually fertile and lead ordinary lives as adults.
+    - Many, if not most, are unaware that they have a chromosomal abnormality.
+  - Between 1 in 900 and 1 in 2,000 male births
+
+=== layout: two-panels
+
+# *Richard Speck*
+
+@left
+
+- an American mass murderer who systematically tortured, raped, and murdered 8 nurses from South Chicago Community Hospital in 1966
+- a Swiss endocrinologist suggested, based on Jacobs' unsubstantiated theory and Speck's height and acne that Speck might have XYY syndrome
+  - It was really taken up by the popular press
+
+@right
+
+![Slide image 18](assets/lect11c-sex_dosage/image_018.png)
+
+=== layout: one-panel
+
+# *XYY and Violent Crimes*
+
+@body
+
+- In 1965 and 1966, British cytogeneticist Patricia Jacobs' [hypothesis]{color=red}, that men with XYY syndrome are more prone to aggressive and violent behavior than males with the normal XY karyotype
+- [Speculation]{color=red} even ran that Richard Speck had natural propensity to violence to because he had an extra Y chromosome.
+  - a Swiss endocrinologist [suggested]{color=red}, based on Jacobs' [unsubstantiated]{color=red} theory and Speck's height that Speck [might have]{color=red} XYY syndrome
+  - analysis [revealed]{color=red} that Speck had a [normal]{color=red} XY karyotype
+  - fake news
+- In the mid-1970s, a Danish study showed that XYY men were [not more likely]{color=red} to commit violent crimes
+  - bias problems with original data were because they looked only a criminals and not the general population
+
+=== layout: one-panel
+
+# *Male Sex Abnormalities &#8211; 48, XXYY*
+
+@body
+
+- XXYY syndrome &#8211; sex chromosome anomaly in which males have an extra X and Y chromosome.
+  - The appearance of at least one Y chromosome with a properly functioning SRY gene makes a male. Therefore, humans with XXYY are normally males.
+  - Mostly similar to 47, XYY super males.
+    - additional learning disabilities and medical problems
+  - one in every 18,000&#8211;40,000 male births
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect11c-sex_dosage/image_019.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/lect11c-sex_dosage/image_019.png)
+
+- (a) 47, XXY &#8594; 1 Barr body
+- (b) 45, X &#8594; 0 Barr bodies
+- (c) 47, +21 &#8594; depends on sex
+- (d) 47, XYY &#8594; 0 Barr bodies
+- (e) 47, XXX &#8594; 2 Barr bodies
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 20](assets/lect11c-sex_dosage/image_020.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 20](assets/lect11c-sex_dosage/image_020.png)
+
+- No, it would be expected that only &#189;  of the progeny to be wildtype.
+- Because half of their gametes would have two sex chromosomes.
+
+=== layout: two-panels
+@replaceme
+
+# *Summary of Sex Determination in Fruit Flies*
+
+@left
+
+![Slide image 21](assets/lect11c-sex_dosage/image_021.png)
+
+@right
+
+- [metafemale]{color=red} (or superfemale) is a low viability Drosophila with a female phenotype [(X\:A ratio > 1)]{color=red}
+- [metamale]{color=blue} (or supermale) is a low viability Drosophila with a male phenotype [(X\:A ratio < &#189;)]{color=blue}
+- [intersex]{color=#800080} are are individuals born that do not fit the typical definitions for male or female bodies [(&#189; < X\:A ratio < 1)]{color=#800080}
+
+=== layout: two-panels
+@replaceme
+
+# *Sex determination*
+
+@left
+
+- Nomenclature\:
+  - X = female sex chromosome
+  - A = autosomes
+- Hypothesis\:
+  - ratio of 1 is female
+  - ratio of &#189; is male
+  - ratio in between is intersex
+
+@right
+
+- X\:AA ratio of 0.5
+  - Diploid with 1 X
+  - [normal male]{color=blue}
+- XX\:AAA ratio of 0.67
+  - Triploid with 2 X
+  - [intersex]{color=#800080}
+- XX\:AA ratio of 1.0
+  - Diploid with 2 X
+  - [normal female]{color=red}
+- X\:A ratio of 1
+  - Haploid with 1 X
+  - [initially female then dies]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Sex determination*
+
+@body
+
+- Nomenclature\:
+  - X = female sex chromosome
+  - A = autosomes
+- Hypothesis\:
+  - ratio of 1 is female
+  - ratio of &#189; is male
+  - ratio in between is intersex
+  - ratio > 1 is [metafemale]{color=orange} or super female
+  - ratio < 0.5 is [metamale]{color=green} or super male
+
+- X\:AAA, ratio of 0.33
+  - Triploid with 1 X
+  - [metamale]{color=green}, low viability
+- X\:AA, ratio of 0.5
+  - Diploid with 1 X
+  - [normal male]{color=blue}
+- XX\:AAA, ratio of 0.67
+  - Triploid with 2 X
+  - [intersex]{color=#800080}
+- X\:A, ratio of 1.0
+  - Haploid with 1 X
+  - [initially female then dies]{color=red}
+- XX\:AA, ratio of 1.0
+  - Diploid with 2 X
+  - [normal female]{color=red}
+- XXX\:AA, ratio of 1.5
+  - Diploid with 3 X
+  - [metafemale]{color=orange}, low viability
+
+- [*more female*]{color=red}
+- [*higher X/A ratio*]{color=red}
+
+=== layout: two-panels
+@replaceme
+
+# *Note on Nomenclature*
+
+@left
+
+- normal drosophila females are 8,XX
+  - 8 chromosomes total and 2 X chromosomes
+    - 2,2,3,3,4,4,X,X
+- XX\:AAA
+  - this drosophila would be 11,XX
+    - 11 chromosomes total and 2 X chromosomes
+      - 2,2,2,3,3,3,4,4,4,X,X
+  - AAA means that the organism is triploid, 3n, three copies of every chromosome
+    - so in drosophila\:
+      - 3 copies of chromosome 2
+      - 3 copies of chromosome 3
+      - 3 copies of chromosome 4
+  - but they would only have two X chromosomes
+
+@right
+
+![Slide image 22](assets/lect11c-sex_dosage/image_022.png)
+
+- A
+
+- AA
+
+- AAA
+
+- `AAAA`
+

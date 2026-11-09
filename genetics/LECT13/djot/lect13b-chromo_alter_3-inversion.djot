@@ -1,0 +1,458 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 13B
+
+## Chromosome Abnormalities: Inversions
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish paracentric and pericentric inversions.
+- Trace homolog pairing within an inversion loop.
+- Predict chromosome products after crossing over.
+- Relate chromosome position to gene expression.
+
+=== layout: section
+
+# Chromosome Abnormalities: Inversions
+
+=== layout: one-panel
+
+# *Alterations of Chromosome Structure*
+
+@body
+
+- Breakage of a chromosome can lead to four types of changes in chromosome structure
+  - [*Deletion*]{underline=true} removes a chromosomal segment
+  - [*Duplication*]{underline=true} repeats a segment
+  - [*Inversion*]{color=red underline=true} [reverses orientation of a segment within a chromosome]{color=red}
+  - [*Translocation*]{underline=true} moves a segment from one chromosome to another
+
+=== layout: section
+
+# Inversions
+
+=== layout: one-panel
+
+# *Inversion*
+
+@body
+
+![Slide image 1](assets/lect13b-chromo_alter_3-inversion/image_001.png)
+
+=== layout: two-panels
+
+# *Ectopic Recombination resulting in inversion*
+
+@left
+
+![Slide image 2](assets/lect13b-chromo_alter_3-inversion/image_002.png)
+
+@right
+
+- Blue and pink are inverted repeats
+- They couple in reverse orientation
+- Resulting in an inverted gene sequence
+  - A B &#8230; Y Z
+  - &#8594; Z Y &#8230; B A
+
+=== layout: two-panels
+
+# *Homologous chromosome pairing with an inversion*
+
+@left
+
+![Slide image 3](assets/lect13b-chromo_alter_3-inversion/image_003.png)
+
+@right
+
+- In an organism that carries a wildtype chromosome some and a inverted chromosome
+- the gene-for-gene attraction during synapsis causes
+- one of the chromosomes to form into a loop in the region in which the gene order is inverted.
+
+=== layout: two-over-one-panels
+
+# *No crossing over in an inversion loop = good*
+
+@top-left
+
+![Slide image 4](assets/lect13b-chromo_alter_3-inversion/image_004.png)
+
+@top-right
+
+![Slide image 5](assets/lect13b-chromo_alter_3-inversion/image_005.png)
+
+@bottom
+
+- If there is no crossing over within the inversion loop, then the homologous chromosomes disjoin without problems.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 6](assets/lect13b-chromo_alter_3-inversion/image_006.png)
+
+=== layout: section
+
+# Paracentric Inversion
+
+=== layout: one-panel
+
+# *Paracentric Inversion*
+
+@body
+
+![Slide image 7](assets/lect13b-chromo_alter_3-inversion/image_007.png)
+
+- does NOT include the centromere
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13b-chromo_alter_3-inversion/image_008.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Paracentric (*_beside_*) Inversion*
+
+@body
+
+![Slide image 9](assets/lect13b-chromo_alter_3-inversion/image_009.png)
+
+- Anaphase I configuration resulting from the crossover.
+- Acentric and Dicentric chromosomes are formed
+
+=== layout: section
+
+# Pericentric Inversion
+
+=== layout: one-panel
+@replaceme
+
+# *Pericentric (*_around_*) Inversion*
+
+@body
+
+![Slide image 10](assets/lect13b-chromo_alter_3-inversion/image_010.png)
+
+- DOES include the centromere
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect13b-chromo_alter_3-inversion/image_011.png)
+
+=== layout: one-panel
+
+# *Pericentric (*_around_*) Inversion*
+
+@body
+
+![Slide image 12](assets/lect13b-chromo_alter_3-inversion/image_012.png)
+
+- Anaphase I configuration resulting from the crossover.
+- Count the duplications and deletions
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect13b-chromo_alter_3-inversion/image_013.png)
+
+=== layout: one-panel
+
+# *Summary*
+
+@body
+
+- [*Paracentric Inversion*]{color=red} &#8211; results in one dicentric chromosome and one acentric chromosome
+- [*Pericentric Inversion*]{color=red} &#8211; results in two monocentric chromosomes with deletions and duplications of genes
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 14](assets/lect13b-chromo_alter_3-inversion/image_014.png)
+
+@bottom
+
+![Slide image 15](assets/lect13b-chromo_alter_3-inversion/image_015.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 16](assets/lect13b-chromo_alter_3-inversion/image_016.png)
+
+- single crossover\:
+- \[cen\] A B c d a \[cen\] - dicentric
+- e b C D E - acentric
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 16](assets/lect13b-chromo_alter_3-inversion/image_016.png)
+
+@bottom
+
+![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_017.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_016.png)
+
+![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_017.png)
+
+- \[cen\] A B c D E
+- e b C d a \[cen\] or \[cen\] a d C b e
+- both monocentric!
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 18](assets/lect13b-chromo_alter_3-inversion/image_018.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect13b-chromo_alter_3-inversion/image_019.png)
+
+- [How can we get the genotype\: A B c D E?]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/lect13b-chromo_alter_3-inversion/image_019.png)
+
+- [How can we get the genotype\: A B c D E?]{color=red}
+
+- Double crossover in the B-C and C-D regions
+- produces\:
+- a b C d e and A D c B E
+- genotyping would hide the inverted gene order.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+
+- Hint\: start with ancestral sequence (c); compare chromosomes pairwise to find those that differ by a single inversion.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+
+- comparing (c) to (d) we see an inversion in the I-d-c to c-d-i.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+
+- comparing (c) to (d) we see an inversion in the I-d-c to c-d-i.
+- Now compare (d) to (a) and (b) to find a match with only one inversion
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+
+- comparing (c) to (d) we see an inversion in the I-d-c to c-d-i.
+- comparing (d) to (a) we see an inversion of the h-g-c-d to d-c-g-h
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+
+- comparing (c) to (d) inversion in the I-d-c to c-d-i.
+- comparing (d) to (a) inversion of the h-g-c-d to d-c-g-h
+- comparing (a) to (b) inversion of f-e-d-c to c-d-e-f
+- from this the evolutionary history is c &#8594; d &#8594; a &#8594; b
+
+=== layout: section
+
+# Position-effect Variegation (PEV)
+
+=== layout: one-panel
+
+# *Position-effect Variegation (PEV)*
+
+@body
+
+- Expression of a gene can be affected by its position on the chromosome.
+  - most often whether a gene is in or near heterochromatin.
+
+![Slide image 21](assets/lect13b-chromo_alter_3-inversion/image_021.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 22](assets/lect13b-chromo_alter_3-inversion/image_022.png)
+
+![Slide image 22](assets/lect13b-chromo_alter_3-inversion/image_021.png)
+
+=== layout: section
+
+# The Sparrow with Four Sexes
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 23](assets/lect13b-chromo_alter_3-inversion/image_023.png)
+
+=== layout: one-panel
+
+# *White Stripe*
+
+@body
+
+![Slide image 24](assets/lect13b-chromo_alter_3-inversion/image_024.png)
+
+=== layout: one-panel
+
+# *Tan Stripe*
+
+@body
+
+![Slide image 25](assets/lect13b-chromo_alter_3-inversion/image_025.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 25](assets/lect13b-chromo_alter_3-inversion/image_024.png)
+
+@right
+
+![Slide image 25](assets/lect13b-chromo_alter_3-inversion/image_025.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 26](assets/lect13b-chromo_alter_3-inversion/image_026.png)
+
+- Remarkably, [white birds]{color=gray} of either sex almost exclusively mate with [tan birds]{color=#E8A202} of the opposite sex.
+- A pattern which results in four effective &#8216;sexes&#8217;, as any given individual can breed with only one-quarter (25%) of the population
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 27](assets/lect13b-chromo_alter_3-inversion/image_027.png)
+
+- [White]{color=gray} and [tan]{color=#E8A202} individuals also show alternative reproductive strategies\:
+  - [White males]{color=gray} are aggressive, provide little parental care, and are promiscuous, whereas [tan males]{color=#E8A202} are monogamous and invest highly in rearing their nestlings
+  - [White females]{color=gray} are more aggressive and solicit more copulations from their mates than do [tan females]{color=#E8A202}
+
+=== layout: one-panel
+
+# *How Four Sexes*
+
+@body
+
+![Slide image 28](assets/lect13b-chromo_alter_3-inversion/image_028.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 29](assets/lect13b-chromo_alter_3-inversion/image_029.png)
+
+=== layout: one-panel
+
+# *References*
+
+@body
+
+- Supergenes\: The Genomic Architecture of a Bird with Four Sexes (Feb 2016)
+  - [https\://doi.org/10.1016/j.cub.2015.12.005](https://doi.org/10.1016/j.cub.2015.12.005)
+- Divergence and Functional Degradation of a Sex Chromosome-like Supergene (Feb 2016)
+  - [https\://doi.org/10.1016/j.cub.2015.11.069](https://doi.org/10.1016/j.cub.2015.11.069)
+- The sparrow with four sexes (Nov 2016)
+  - [https\://doi.org/10.1038/539482a](https://doi.org/10.1038/539482a)
+- White Throated Sparrow Project
+  - [http\://mama.indstate.edu/whitethroatedsparrow/](http://mama.indstate.edu/whitethroatedsparrow/)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Inversions reverse a chromosome segment.
+- The centromere distinguishes the two inversion types.
+- Crossing over in an inversion can alter chromosome products.
+- A new chromosome position can change gene expression.
+
+=== layout: theend
+
+# THE END
+

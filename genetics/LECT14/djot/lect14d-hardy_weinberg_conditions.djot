@@ -1,0 +1,515 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 14D
+
+## Conditions for Hardy-Weinberg
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- State the five Hardy-Weinberg conditions.
+- Identify which conditions a population violates.
+- Compare observed and expected genotype frequencies.
+- Distinguish equilibrium tests from allele-frequency comparisons.
+
+=== layout: section
+
+# Conditions for Hardy-Weinberg
+
+=== layout: one-panel
+
+# *Conditions for Hardy-Weinberg Equilibrium*
+
+@body
+
+- The Hardy-Weinberg theorem describes a hypothetical population that is not evolving
+- In real populations, allele and genotype frequencies do change over time
+- If alleles frequencies are close the Hardy-Weinberg values, we can hypothesize that the population is not evolving for that allele.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- The five conditions for non-evolving populations are rarely met in nature
+  - No mutations
+  - Random mating
+  - No natural selection
+  - Extremely large population size
+  - No gene flow
+- When these conditions are NOT met then it implies the population is evolving.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect14d-hardy_weinberg_conditions/image_001.png)
+
+=== layout: two-panels
+@replaceme
+
+# *The Five Hardy-Weinberg Conditions for Not Evolving*
+
+@left
+
+- Negative conditions
+  - No mutations
+  - No selective mating
+  - No natural selection
+  - No genetic drift
+  - No gene flow
+
+@right
+
+- Positive conditions
+  - Alleles remain same
+  - Random mating
+  - All individuals equally likely to survive
+  - Large population size
+  - Isolated community
+
+=== layout: multiple-choice
+
+@question
+
+For biologists studying a large flatworm population in the lab, which Hardy-Weinberg condition is [*most difficult*]{underline=true} to meet?
+
+- A) no selection
+- B) no genetic drift
+- C) no gene flow
+- D) no mutation
+
+@answer
+
+[Answer\: D]{color=red}
+
+=== layout: multiple-choice
+
+@question
+
+For a biologist studying a small fish population in the lab, which Hardy-Weinberg condition is [*easiest*]{underline=true} to meet?
+
+- A) no selection
+- B) no genetic drift
+- C) no gene flow
+- D) no mutation
+
+@answer
+
+[Answer\: C]{color=red}
+
+=== layout: section
+
+# Assessing whether the population is in Hardy-Weinberg equilibrium
+
+=== layout: one-panel
+
+
+@body
+
+- Researchers studying a small milkweed population note that some plants produce a toxin and other plants do not.
+  - They identify the gene responsible for toxin production.
+- [dominant allele (T) codes for an enzyme that makes the toxin]{color=red}
+- [recessive allele (t) codes for a nonfunctional enzyme that cannot produce the toxin.]{color=gray}
+  - [Heterozygotes produce an intermediate amount of toxin.]{color=#BF819E}
+- The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+- The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
+- Refer to the figure above. Is this population in Hardy-Weinberg equilibrium?
+  - A) Yes.
+  - B) No; there are [more heterozygotes]{color=#EC9BA4} than expected.
+  - C) No; there are [more homozygotes]{color=red} than expected.
+  - D) More information is needed to answer this question.
+
+@top-right
+
+- [More Work...]{color=red}
+
+@bottom-left
+
+![Slide image 2](assets/lect14d-hardy_weinberg_conditions/image_002.svg)
+
+@bottom-right
+
+| TT | Tt | tt |
+| 0.56 | 0.28 | 0.16 |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+- The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
+- What is p?
+- What is q?
+
+@top-right
+
+![Slide image 3](assets/lect14d-hardy_weinberg_conditions/image_003.svg)
+
+@bottom-right
+
+| TT | Tt | tt |
+| 0.56 | 0.28 | 0.16 |
+
+=== layout: one-panel
+@replaceme
+
+# *Method 1\: Count individual alleles and divide by total*
+
+@body
+
+![Slide image 4](assets/lect14d-hardy_weinberg_conditions/image_004.jpg)
+
+- p = f(A) = 1780/2000 = 0.89 = 89%
+- q = f(a) = 220/2000 = 0.11 = 11%
+
+=== layout: one-panel
+@replaceme
+
+# *Method 2\: Only works with genotype frequencies*
+
+@body
+
+![Slide image 5](assets/lect14d-hardy_weinberg_conditions/image_005.jpg)
+
+- p = f(A) = 0.795 + 0.19/2 = 0.89 = 89%
+- q = f(a) = 0.015 + 0.19/2 = 0.11 = 11%
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+- The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
+- Method 2\:
+  - p = TT + &#189;Tt = 0.56 + &#189;&#215;0.28 = 0.7
+  - q = 1-p = 0.3
+  - q = tt + &#189;Tt = 0.16 + 0.14 = 0.3
+- Method 1\:
+  - p = (56\*2 + 28)/200 = 140/200 = 0.7
+  - q = (28 + 16\*2)/200 = 60/200 = 0.3
+
+@top-right
+
+![Slide image 6](assets/lect14d-hardy_weinberg_conditions/image_006.svg)
+
+@bottom-right
+
+| TT | Tt | tt |
+| 0.56 | 0.28 | 0.16 |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+- The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
+- p = 0.7; q = 0.3
+- p2 = 0.49
+- 2pq = 0.42
+- q2 = 0.09
+
+@top-right
+
+![Slide image 6](assets/lect14d-hardy_weinberg_conditions/image_006.svg)
+
+@bottom-right
+
+| TT | Tt | tt |
+| 0.56 | 0.28 | 0.16 |
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+- The genotypes of all individuals in the population are determined (see chart) and used to determine the actual allele frequencies in the population.
+- Refer to the figure above. Is this population in Hardy-Weinberg equilibrium?
+  - A) Yes.
+  - B) No; there are [more heterozygotes]{color=#EC9BA4} than expected.
+  - C) No; there are [more homozygotes]{color=red} than expected.
+  - D) More information is needed to answer this question.
+
+@top-right
+
+- [Answer\: C]{color=red}
+
+@bottom-left
+
+![Slide image 7](assets/lect14d-hardy_weinberg_conditions/image_007.svg)
+
+@bottom-right
+
+| genotype | TT | Tt | tt |
+| observed | 0.56 | 0.28 | 0.16 |
+| expected | 0.49 | 0.42 | 0.09 |
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 8](assets/lect14d-hardy_weinberg_conditions/image_008.png)
+
+@bottom
+
+![Slide image 9](assets/lect14d-hardy_weinberg_conditions/image_009.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect14d-hardy_weinberg_conditions/image_008.png)
+
+![Slide image 9](assets/lect14d-hardy_weinberg_conditions/image_009.png)
+
+- (a)
+- A1\: p = 2x2 + 13 = 17/70 = 24.2%
+- A2\: q = 20x2 + 13 = 53/70 = 75.7%
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect14d-hardy_weinberg_conditions/image_008.png)
+
+![Slide image 9](assets/lect14d-hardy_weinberg_conditions/image_009.png)
+
+- (b)
+- A1A1\: p2 = 5.9% 		(actual\: 2/35 = 5.7%)
+- A1A2\: 2pq = 36.8%	(actual\: 13/35 = 37.1%)
+- A2A2\: q2 = 57.3%		(actual\: 20/35 = 57.1%)
+
+=== layout: section
+
+# Exceptions to Hardy-Weinberg
+
+=== layout: one-panel
+
+# *Exceptions to the Hardy-Weinberg Principle*
+
+@body
+
+- Nonrandom mating
+- Unequal survival
+- Population subdivision
+- Migration
+
+=== layout: one-panel
+
+# *Nonrandom Mating*
+
+@body
+
+- Nonrandom mating includes
+  - Consanguineous mating (mating between genetically related individuals)
+  - Assortative mating (mating between individuals with similar phenotypes)
+- Both consanguineous mating (inbreeding) and assortative mating (sexual selection) reduce the frequency of heterozygotes and increase the frequency of homozygotes compared to the Hardy-Weinberg genotype frequencies.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect14d-hardy_weinberg_conditions/image_010.png)
+
+- Remarkably, [white birds]{color=gray} of either sex mate almost exclusively with [tan birds]{color=#E8A202} of the opposite sex.
+- A pattern which results in four effective &#8216;sexes&#8217;, as any given individual can breed with only one-quarter (25%) of the population
+
+=== layout: one-panel
+
+# *Unequal Survival*
+
+@body
+
+- If zygotes produced by random mating have different survival rates, the genotype frequencies of the individuals that develop from these zygotes are not expected to conform to the Hardy-Weinberg predictions.
+- Example\: Consider a randomly mating _Drosophila_ population segregation two alleles, _A1_ and _A2_, of an autosomal gene.
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Randomly mating* *_Drosophila_* *population*
+
+@left
+
+![Slide image 11](assets/lect14d-hardy_weinberg_conditions/image_011.svg)
+
+@top-right
+
+| Genotype | Observed | H-W Expected |
+| A1A1 | 26 | 46.1 |
+| A1A2 | 140 | 99.8 |
+| A2A2 | 34 | 54.1 |
+
+@bottom-right
+
+- A sample of 200 adults yielded the data in the table.
+  - The expected numbers were obtained by estimating the allele frequencies and applying the Hardy-Weinberg principle.
+- An excess of heterozygotes and a shortage of homozygotes is observed.
+  - The discrepancy is probably due to differential survival.
+
+=== layout: one-panel
+
+# *Population Subdivision*
+
+@body
+
+- When a population is a single interbreeding unit, it is [*panmictic*]{color=#339966}.
+- Panmixis implies that any member of the population is able to mate with any other member.
+- In nature, populations may be subdivided due to geographical or ecological barriers that may be correlated with genetic differences.
+- This violates the assumption that allele frequencies are uniform in the population.
+
+=== layout: section
+
+# How to test if a population is evolving
+
+=== layout: two-panels
+@replaceme
+
+# *The Five Hardy-Weinberg Conditions for Not Evolving*
+
+@left
+
+- Negative conditions
+  - No mutations
+  - No selective mating
+  - No natural selection
+  - No genetic drift
+  - No gene flow
+
+@right
+
+- Positive conditions
+  - Alleles remain same
+  - Random mating
+  - All individuals equally likely to survive
+  - Large population size
+  - Isolated community
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/lect14d-hardy_weinberg_conditions/image_012.png)
+
+![Slide image 13](assets/lect14d-hardy_weinberg_conditions/image_013.svg)
+
+![Slide image 14](assets/lect14d-hardy_weinberg_conditions/image_014.jpg)
+
+- Is the soybean population evolving? Let's look at the allele frequency.
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 14](assets/lect14d-hardy_weinberg_conditions/image_012.png)
+
+![Slide image 14](assets/lect14d-hardy_weinberg_conditions/image_013.svg)
+
+@top-right
+
+- p1 = 49\*2 + 111 = 209/(216\*2) = 0.484
+- q1 = 56\*2 + 111 = 223/432 = 0.516
+- p12 = 0.234
+- 2p1q1 = 0.499
+- q12 = 0.266
+- 0.234 + 0.499 + 0.266 &#8776; 1
+- 49/216 = 0.227
+- 111/216 = 0.514
+- 56/216 = 0.259
+
+@bottom-left
+
+![Slide image 15](assets/lect14d-hardy_weinberg_conditions/image_015.svg)
+
+@bottom-right
+
+| Day 7 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 0.234 | 0.499 | 0.266 |
+| observed | 0.227 | 0.514 | 0.259 |
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 15](assets/lect14d-hardy_weinberg_conditions/image_012.png)
+
+![Slide image 15](assets/lect14d-hardy_weinberg_conditions/image_013.svg)
+
+@top-right
+
+- p2 = 47\*2 + 106 = 200/346 = 0.578
+- q2 = 20\*2 + 106 = 146/346 = 0.422
+- p2\^2 = 0.334
+- 2p2q2 = 0.488
+- q2\^2 = 0.178
+- 0.334 + 0.488 + 0.178 = 1
+- 47/173 = 0.272
+- 106/173 = 0.613
+- 20/173 = 0.116
+
+@bottom-left
+
+![Slide image 16](assets/lect14d-hardy_weinberg_conditions/image_016.svg)
+
+@bottom-right
+
+| Day 21 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 0.334 | 0.488 | 0.178 |
+| observed | 0.272 | 0.613 | 0.116 |
+
+=== layout: section
+
+# Need the help of the chi-square test...
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Hardy-Weinberg provides a population-genetic baseline.
+- Its assumptions describe mating, population size, and gene changes.
+- Compare observations with the appropriate expectation.
+- Check allele changes and genotype proportions separately.
+
+=== layout: theend
+
+# THE END
+

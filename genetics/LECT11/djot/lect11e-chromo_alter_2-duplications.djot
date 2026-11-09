@@ -1,0 +1,377 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11E
+
+## Chromosome Abnormalities: Duplications
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain how unequal crossing over creates duplications.
+- Relate pigment-gene changes to color vision.
+- Describe how duplication contributes to gene evolution.
+- Connect copy-number changes with gene dosage.
+
+=== layout: section
+
+# Chromosome Alterations
+
+=== layout: one-panel
+
+# *Alterations of Chromosome Structure*
+
+@body
+
+- Breakage of a chromosome can lead to four types of changes in chromosome structure
+  - [*Deletion*]{underline=true} removes a chromosomal segment
+  - [*Duplication*]{color=red underline=true} [repeats a segment]{color=red}
+  - [*Inversion*]{underline=true} reverses orientation of a segment within a chromosome
+  - [*Translocation*]{underline=true} moves a segment from one chromosome to another
+
+=== layout: section
+
+# Duplications
+
+=== layout: one-panel
+
+# *Duplication*
+
+@body
+
+![Slide image 1](assets/lect11e-chromo_alter_2-duplications/image_001.png)
+
+=== layout: one-panel
+
+# *Unequal Crossing Over*
+
+@body
+
+![Slide image 2](assets/lect11e-chromo_alter_2-duplications/image_002.png)
+
+- A [*tandem duplication*]{underline=true} is one in which the duplicated segment is in the same orientation immediately adjacent to the normal region in the chromosome.
+- Tandem duplications can produce more duplicated copies by [*unequal crossing over*]{underline=true}.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect11e-chromo_alter_2-duplications/image_003.png)
+
+=== layout: section
+
+# Duplications and Color blindness
+
+=== layout: one-panel
+
+# *Pigment genes in the X chromosome*
+
+@body
+
+![Slide image 4](assets/lect11e-chromo_alter_2-duplications/image_004.png)
+
+=== layout: two-panels
+
+# *Unequal Crossing Over*
+
+@left
+
+![Slide image 5](assets/lect11e-chromo_alter_2-duplications/image_005.png)
+
+@right
+
+- The red and green pigment genes are highly similar.
+- Unequal crossing over can occur
+  - resulting in both deletion and duplication of the genes.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 6](assets/lect11e-chromo_alter_2-duplications/image_006.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 7](assets/lect11e-chromo_alter_2-duplications/image_007.png)
+
+=== layout: two-panels
+
+# *Green and Red Opsins*
+
+@left
+
+![Slide image 8](assets/lect11e-chromo_alter_2-duplications/image_008.png)
+
+@right
+
+- Comparison of the Amino Acid Sequences of the Green and Red Photoreceptors
+  - Open circles correspond to identical residues, whereas colored circles mark residues that are different.
+- The differences in the three black positions are responsible for most of the difference in their absorption spectra.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 9](assets/lect11e-chromo_alter_2-duplications/image_009.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 10](assets/lect11e-chromo_alter_2-duplications/image_010.jpg)
+
+- Rearrangements in the course of DNA replication may lead to (A) the loss of visual pigment genes or (B) the formation of hybrid pigment genes that encode photoreceptors with anomalous absorption spectra.
+- Because the amino acids most important for determining absorption spectra are in the carboxyl-terminal half of each photoreceptor protein, the part of the gene that encodes this region most strongly affects the absorption characteristics of hybrid receptors.
+
+=== layout: section
+
+# Tetrachromats
+
+=== layout: two-panels
+
+# *Tetrachromats*
+
+@left
+
+![Slide image 11](assets/lect11e-chromo_alter_2-duplications/image_011.svg)
+
+@right
+
+- Most birds and some insects are tetrachromats and can see some forms of Ultraviolet (UV)
+- Some *human women* are believed to have a second green cone receptor and therefore are tetrachromats
+
+=== layout: two-panels
+
+# *Human Tetrachromats*
+
+@left
+
+- In humans, two cone cell pigment genes are located on the sex X chromosome.
+- Women have two X chromosomes with variant cone cell pigments
+- Possibly born as tetrachromats with four different kinds of cone cells
+
+@right
+
+![Slide image 12](assets/lect11e-chromo_alter_2-duplications/image_012.png)
+
+=== layout: two-panels
+
+# *Tetrachromats*
+
+@left
+
+- One study suggested that 2&#8211;3% of the world's women have a 4th cone between red and green cones, giving, an increase in color differentiation.
+  - Another study suggests that as many as 50% of women and 8% of men may have four photopigments
+- Neuroscientist Gabriele Jordan has only been able to confirm the condition in one person in 20 years of research
+
+@right
+
+- Unfortunately, computer screens do not provide enough color information to be able to 'tap into' the extra dimension that tetrachromats may possess.
+  - It is therefore impossible for an online test to investigate tetrachromacy.
+
+=== layout: four-panels
+
+
+@top-left
+
+- *Sharp Quattron TVs*
+
+@top-right
+
+![Slide image 13](assets/lect11e-chromo_alter_2-duplications/image_013.png)
+
+@bottom-left
+
+- No longer sold in the US, only available in Asia
+
+@bottom-right
+
+![Slide image 14](assets/lect11e-chromo_alter_2-duplications/image_014.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- *Evolutionary Relationships among Visual Pigments*
+- Visual pigments have evolved by gene duplication along different branches of the animal evolutionary tree.
+- The branch lengths of the &#8220;trees&#8221; correspond to the percentage of amino acid divergence.
+
+![Slide image 15](assets/lect11e-chromo_alter_2-duplications/image_015.jpg)
+
+=== layout: four-panels
+
+# *Mantis Shrimp, kings of vision*
+
+@top-left
+
+![Slide image 16](assets/lect11e-chromo_alter_2-duplications/image_016.png)
+
+@top-right
+
+![Slide image 17](assets/lect11e-chromo_alter_2-duplications/image_017.png)
+
+@bottom-left
+
+- The vision of the mantis shrimp is so precise that it can perceive polarized light
+
+@bottom-right
+
+![Slide image 18](assets/lect11e-chromo_alter_2-duplications/image_018.png)
+
+=== layout: one-panel
+
+# *Mantis Shrimp have 16 cones!!*
+
+@body
+
+![Slide image 19](assets/lect11e-chromo_alter_2-duplications/image_019.png)
+
+=== layout: section
+
+# Copy Number Variations (CNVs) and disease
+
+=== layout: one-panel
+
+# *Copy Number Variation (CNV)*
+
+@body
+
+- CNV refers to the number of copies of a particular gene varies from one individual to the next.
+- CNVs can be generally categorized into two main groups\: short repeats and long repeats
+
+![Slide image 19](assets/lect11e-chromo_alter_2-duplications/image_002.png)
+
+=== layout: two-panels
+
+# *Gene Dosage*
+
+@left
+
+- Although people generally think of mutations as a lack of function in a particular gene, CNVs that are duplications show that varying the gene dosage can also lead to disease.
+  - Genes are generally present in two copies, one on each chromosome, or 2n.
+  - A deletion on a single chromosome leads to 1n, whereas duplication leads to 3n or more.
+
+@right
+
+![Slide image 20](assets/lect11e-chromo_alter_2-duplications/image_020.png)
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *Huntington&#8217;s disease*
+
+@top-left
+
+- short copy number variation is the tri-nucleotide repeat of the CAG base pairs in the huntingtin gene
+- once the CAG tri-nucleotide repeats [more than 36 times,]{color=red} Huntington&#8217;s disease will likely develop in the individual
+  - and it will likely be inherited by his or her offspring
+
+@top-right
+
+![Slide image 21](assets/lect11e-chromo_alter_2-duplications/image_021.png)
+
+@bottom
+
+![Slide image 22](assets/lect11e-chromo_alter_2-duplications/image_022.png)
+
+=== layout: section
+
+# Autism and Schizophrenia
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 23](assets/lect11e-chromo_alter_2-duplications/image_023.png)
+
+=== layout: one-panel
+
+# *Gene Dosage*
+
+@body
+
+- Duplications and deletions of the same region can often lead to different patterns of symptoms.
+  - For example, deletion of 16p11.2 leads to [autism]{color=blue} and enlarged head size macrocephaly whereas duplication leads to symptoms that resemble [schizophrenia]{color=red} and smaller head size (microcephaly).
+  - By contrast, duplication of another genetic region, 1q21.1, seems to favor [autism]{color=blue} and macrocephaly whereas deletion of the region causes [schizophrenia]{color=red} and microcephaly.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 24](assets/lect11e-chromo_alter_2-duplications/image_024.png)
+
+=== layout: two-panels
+
+# *Dup15q Alliance*
+
+@left
+
+- Dup15q syndrome is a neurodevelopmental disorder characterized by having an extra copy of a portion of chromosome 15 in the 11.2 &#8211; 13.1 region in combination with a number of symptoms that may include hypotonia and motor delays, intellectual disability, autism spectrum disorder (ASD), and epilepsy, including infantile spasms.
+- https\://dup15q.org
+
+@right
+
+![Slide image 25](assets/lect11e-chromo_alter_2-duplications/image_025.png)
+
+=== layout: two-panels
+
+# *22q Family Foundation*
+
+@left
+
+- 22q11.2 deletion syndrome is a chromosomal abnormality that can cause a wide range of health and developmental issues, including heart defects, breathing issues, problems with the gastrointestinal tract, immune and endocrine systems, differences in the palate, slow growth, autism/developmental delays or learning disabilities in some individuals.
+- https\://22qfamilyfoundation.org
+
+@right
+
+![Slide image 26](assets/lect11e-chromo_alter_2-duplications/image_026.png)
+
+=== layout: two-panels
+
+# *1p36 Deletion Support & Awareness*
+
+@left
+
+- 1p36 Deletion Syndrome is a chromosome disorder that can be characterized by moderate to severe intellectual disability, delayed growth, limited speech ability and distinct facial features. It is estimated that 1p36 Deletion Syndrome occurs in one in every 5,000 to 10,000 births though many individuals still go undiagnosed. Though many people have never heard of 1p36 Deletion Syndrome, it is the one of the most common chromosome deletions.
+- http\://www.1p36dsa.org
+
+@right
+
+![Slide image 27](assets/lect11e-chromo_alter_2-duplications/image_027.png)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Unequal crossing over can delete or duplicate genes.
+- Duplicated genes can evolve different functions.
+- Visual-pigment genes illustrate duplication and divergence.
+- Copy-number changes can alter gene dosage and phenotype.
+
+=== layout: theend
+
+# THE END

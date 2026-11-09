@@ -1,0 +1,369 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 15D
+
+## Genetic Drift
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain random changes in allele frequencies.
+- Compare founder effects with population bottlenecks.
+- Relate population size to loss of genetic variation.
+- Interpret the genetic-drift activity and graphs.
+
+=== layout: section
+
+# Genetic Drift
+
+=== layout: one-panel
+
+# *Random Genetic Drift*
+
+@body
+
+- Genetic Drift is a random process where allele frequencies change unpredictably in populations because of uncertainties during reproduction.
+  - The smaller a sample, the greater the chance of random deviation from a predicted result
+  - Genetic drift tends to reduce genetic variation through losses of alleles
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 1](assets/lect15d-genetic_drift/image_001.jpg)
+
+![Slide image 2](assets/lect15d-genetic_drift/image_002.svg)
+
+- *Generation 1* *_p_* *(frequency of* *_CR_**) = 0.7* *_q_* *(frequency of* *_CW_**) = 0.3*
+
+- *_CRCR_*
+
+- *_CRCR_*
+
+- *_CRCR_*
+
+- *_CRCR_*
+
+- *_CRCR_*
+
+- *_CRCW_*
+
+- *_CRCW_*
+
+- *_CRCW_*
+
+- *_CRCW_*
+
+- *_CWCW_*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 3](assets/lect15d-genetic_drift/image_003.jpg)
+
+![Slide image 3](assets/lect15d-genetic_drift/image_002.svg)
+
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 4](assets/lect15d-genetic_drift/image_004.jpg)
+
+![Slide image 4](assets/lect15d-genetic_drift/image_002.svg)
+
+
+=== layout: one-panel
+
+# *The Founder Effect*
+
+@body
+
+- The *founder effect* occurs when a few individuals become isolated from a larger population
+- Allele frequencies in the small founder population can be different from those in the larger parent population
+
+=== layout: section
+
+# The Bottleneck Effect
+
+=== layout: one-panel
+
+# *The Bottleneck Effect*
+
+@body
+
+- The *bottleneck effect* is a sudden reduction in population size due to a change in the environment
+  - The resulting gene pool may no longer be reflective of the original population&#8217;s gene pool
+- If the population remains small, it may be further affected by genetic drift
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 5](assets/lect15d-genetic_drift/image_005.jpg)
+
+![Slide image 5](assets/lect15d-genetic_drift/image_002.svg)
+
+- *Original population*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 6](assets/lect15d-genetic_drift/image_006.jpg)
+
+![Slide image 6](assets/lect15d-genetic_drift/image_002.svg)
+
+- *Original population*
+
+- *Bottlenecking event*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 7](assets/lect15d-genetic_drift/image_007.jpg)
+
+![Slide image 7](assets/lect15d-genetic_drift/image_002.svg)
+
+- *Original population*
+
+- *Bottlenecking event*
+
+- *Surviving population*
+
+- Understanding the bottleneck effect can increase understanding of how human activity affects other species
+
+=== layout: section
+
+# Case Study\: the Greater Prairie Chicken
+
+=== layout: one-panel
+
+# *Case Study\: the Greater Prairie Chicken*
+
+@body
+
+- Loss of prairie habitat caused a severe reduction in the population of greater prairie chickens in Illinois
+- The surviving birds had low levels of genetic variation, and only 50% of their eggs hatched
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect15d-genetic_drift/image_008.jpg)
+
+
+=== layout: one-panel
+
+# *Scientific Response*
+
+@body
+
+- Researchers used DNA from museum specimens to compare genetic variation in the population before and after the bottleneck
+  - The results showed a loss of alleles at several loci
+- Researchers introduced greater prairie chickens from populations in other states and were successful in introducing new alleles and increasing the egg hatch rate to 90%
+
+=== layout: section
+
+# Heterozygosity
+
+=== layout: one-panel
+
+# *Effects of Population Size*
+
+@body
+
+- In large populations, the effect of genetic drift is minimal.
+- In small populations, genetic drift may be the primary evolutionary force.
+  - The effect of population size is gauged by monitoring the frequency of heterozygotes, or the [heterozygosity]{color=green} of a population over time.
+
+=== layout: one-panel
+
+# *Change in Heterozygosity*
+
+@body
+
+- The current frequency of heterozygotes is defined as H, and the frequency of heterozygotes in the next generation is H'.
+- The population size is given by _N_.
+
+![Slide image 9](assets/lect15d-genetic_drift/image_009.svg)
+
+=== layout: one-panel
+
+
+@body
+
+- In one generation, random genetic drift causes the heterozygosity to decline by a factor of 1/2N.
+- In _t_ generations, the heterozygosity, H, will decline according to the equation below until it eventually reaches 0 and all genetic variability is lost.
+
+![Slide image 10](assets/lect15d-genetic_drift/image_010.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Larger Populations are Less Susceptible*
+
+@body
+
+![Slide image 11](assets/lect15d-genetic_drift/image_011.jpg)
+
+=== layout: one-panel
+
+# *Probability of Allele Fixation or Loss*
+
+@body
+
+- If alleles are selectively neutral and the population mates randomly,
+  - the probability that an allele will ultimately be fixed in the population is its current frequency.
+  - the probability that it will be lost is 1 minus its current frequency.
+
+=== layout: section
+
+# Genetic Drift Activity
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 12](assets/lect15d-genetic_drift/image_012.png)
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Random genetic drift in 12 hypothetical populations over 20 generations*
+
+@left
+
+- [*A = 0.5*]{underline=true}
+- [*a = 0.5*]{underline=true}
+- [*8*]{underline=true} *individuals*
+- *so 16 alleles*
+
+@top-right
+
+- In most of the 12 small populations (8 diploid individuals each), either the &#8220;A&#8221; or the &#8220;a&#8221; allele has become fixed.
+
+@bottom-right
+
+![Slide image 13](assets/lect15d-genetic_drift/image_013.png)
+
+=== layout: two-panels
+@replaceme
+
+# *Random genetic drift in 12 hypothetical populations over 20 generations*
+
+@left
+
+![Slide image 14](assets/lect15d-genetic_drift/image_014.jpg)
+
+@right
+
+- Overall, the frequency of the A (or a) allele has not changed when all 12 populations are looked at together
+
+=== layout: one-panel
+
+# *allele frequency is about constant when all populations are looked at together*
+
+@body
+
+![Slide image 15](assets/lect15d-genetic_drift/image_015.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Spreading out of allele frequencies means that the allele frequencies among the populations become progressively more different.
+- So, random genetic drift causes differences in allele frequency among subpopulations\:
+  - It is the major cause of genetic differentiation among subpopulations.
+
+=== layout: two-plus-one-panels
+
+# [*Actual results of genetic drift in 107 experimental populations of Drosophila*]{color=#CC3300}
+
+@top-left
+
+- *Each population consisted of 8 males and 8 females*.
+- The predicted and experimental results are similar except that the actual results show quite a bit more scatter.
+
+@bottom-left
+
+- [bw &#8211; brown eye]{color=#40458C}
+- [bw75 - wild type]{color=#40458C}
+
+@right
+
+![Slide image 16](assets/lect15d-genetic_drift/image_016.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 17](assets/lect15d-genetic_drift/image_017.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- So, if random genetic drift were the only one force at work, then all alleles would be eventually become either fixed or lost&#8230;
+  - there would be no polymorphism.
+- But this won&#8217;t happen? Why?
+
+=== layout: one-panel
+
+# *Summary of Genetic Drift*
+
+@body
+
+- Genetic drift is significant in small populations
+- Genetic drift can cause allele frequencies to change at random
+- Genetic drift can lead to a loss of genetic variation within populations
+- Genetic drift can cause harmful alleles to become fixed
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Drift changes allele frequencies through random sampling.
+- Small populations are more strongly affected.
+- Founder events and bottlenecks can change allele frequencies.
+- Drift can reduce heterozygosity and fix alleles.
+
+=== layout: theend
+
+# THE END
+

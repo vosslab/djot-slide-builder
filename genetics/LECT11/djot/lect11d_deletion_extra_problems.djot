@@ -1,0 +1,130 @@
+=== layout: section
+
+# Extra Book Problems
+
+=== layout: section
+
+# 8.14
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 21](assets/lect11d-chromo_alter_1-deletions/image_021.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 21](assets/lect11d-chromo_alter_1-deletions/image_021.png)
+
+- links\:
+- a b d
+- a d c e
+- e f
+- b (a/d) (c/e) &#8211;&#160;first two
+- b (a/d) c e f
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 21](assets/lect11d-chromo_alter_1-deletions/image_021.png)
+
+- b (a/d) c e f
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 21](assets/lect11d-chromo_alter_1-deletions/image_021.png)
+
+- b (a/d) c e f
+- test-cross between genes b, a, and d or between a, d, and c.
+
+=== layout: section
+
+# 8.15
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect11d-chromo_alter_1-deletions/image_022.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect11d-chromo_alter_1-deletions/image_022.png)
+
+- b and c are neighbors
+- d and f are neighbors
+- using a c and f are neighbors
+- put c and f on the ends and link others
+- c a f
+- b c a f d
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect11d-chromo_alter_1-deletions/image_022.png)
+
+- b c a f d
+- d e f are linked, so answer\:
+- b c a f d e
+- or (flipped)
+- e d f a c b
+
+=== layout: section
+
+# 8.16
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 23](assets/lect11d-chromo_alter_1-deletions/image_023.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 23](assets/lect11d-chromo_alter_1-deletions/image_023.png)
+
+- links\:
+- a d e
+- c d f
+- b c
+- (a/e) d (c/f)
+- (a/e) d f c b
+- or
+- b c f d (a/e)
+- we do not know order of a and e
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Deletions remove chromosome segments and their genes.
+- A deletion can uncover a recessive allele on its homolog.
+- Overlapping deletions constrain neighboring gene order.
+- Check every deletion against the proposed final order.
+
+=== layout: theend
+
+# THE END
+

@@ -1,0 +1,231 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 15B
+
+## Genetics and Evolution
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Describe evolution as changes in allele frequencies.
+- Compare mutation, gene flow, selection, and drift.
+- Explain how migration changes a population gene pool.
+- Trace allele changes under the mutation examples.
+
+=== layout: section
+
+# From this point forward, no more equations will appear on the exam. Only definitions.
+
+=== layout: one-panel
+@replaceme
+
+# *Genetics and Evolution*
+
+@body
+
+- Evolution consists of progressive changes in the gene pool
+  - progressive adaptation of a population to its  environment
+  - changes in the allele frequency
+- Four processes account for most changes in allele frequency\:
+  - Mutation
+  - Migration/Gene flow
+  - Natural Selection
+  - Random Genetic Drift
+- Only natural selection causes adaptive evolution
+
+=== layout: one-panel
+
+# *Genetic Drift*
+
+@body
+
+- The smaller a sample, the greater the chance of random deviation from a predicted result
+  - Genetic drift describes how allele frequencies fluctuate unpredictably from one generation to the next
+- Genetic drift tends to *reduce genetic variation* through losses of alleles
+
+=== layout: one-panel
+
+# *Natural Selection*
+
+@body
+
+- Evolution by natural selection involves both chance and &#8220;sorting&#8221;
+  - New genetic variations arise by chance
+  - Beneficial alleles are &#8220;sorted&#8221; and favored by natural selection
+- Only natural selection consistently increases the frequencies of alleles that provide *reproductive advantage*
+
+=== layout: one-panel
+
+# *Gene Flow/Migration*
+
+@body
+
+- Gene flow consists of the movement of alleles among populations
+  - Alleles can be transferred through the movement of fertile individuals or gametes (for example, pollen)
+- Gene flow tends to *reduce genetic variation* among populations over time
+
+=== layout: two-panels
+
+# *Migration*
+
+@left
+
+- The introduction of genes by recent migrations can alter allele and genotype frequencies within a population and disrupt Hardy-Weinberg equilibrium.
+
+@right
+
+![Slide image 1](assets/lect15b-genetic_evolution/image_001.png)
+
+=== layout: one-panel
+
+# *Merged Populations*
+
+@body
+
+- The merger of two randomly mating populations does not produce a population with Hardy-Weinberg genotype frequencies.
+- However, if the merged population mates randomly for one generation, Hardy-Weinberg genotype frequencies will be established.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Migration rates essentially work like Mutation rates, so we can treat them as one.
+- So, let&#8217;s learn about mutations...
+
+=== layout: one-panel
+@replaceme
+
+# *Mutation*
+
+@body
+
+- Ultimate source of genetic variation &#8211; however the rate of mutation is low and harmful mutations are eliminated by natural selection.
+- Low mutation rates are thought to be evolved as a compromise.
+  - What do we mean by this?
+
+=== layout: one-panel
+
+@body
+
+Irreversible Mutation [A]{color=red}&#8594;[a]{color=#800080}
+
+=== layout: one-panel
+@replaceme
+
+# *Irreversible Mutation*
+
+@body
+
+- Consider two alleles\: [*A*]{color=red} and [*a*]{color=#800080}, suppose [*A*]{color=red} undergoes mutation to [*a*]{color=#800080} ([A]{color=red}&#8594;[a]{color=#800080}) at a rate [*&#181;*]{color=blue} per generation
+  - Proportion of [*A*]{color=red} allele that do not mutate is 1-[&#181;]{color=blue}
+- If we let [p]{color=#00A933} and q represent frequencies of [*A*]{color=red} and [*a*]{color=#800080}
+  - The current n-th generation has the frequency, [pn]{color=#00A933}
+- Allele frequency of [*A*]{color=red} in the next (n+1)-th generation represents\:
+  - [pn]{color=#00A933} = [pn-1]{color=#00A933} (1-[&#181;]{color=blue})
+  - Frequency of allele in the previous generation times proportion of alleles that failed to mutate in that generation.
+
+=== layout: one-panel
+@replaceme
+
+# *Irreversible Mutation*
+
+@body
+
+- [*A*]{color=red} undergoes mutation to [*a*]{color=purple} ([A]{color=red}&#8594;[a]{color=purple}) at a rate [*&#181;*]{color=blue} per generation
+- [p0]{color=#00A933} is the frequency of [*A*]{color=red} in the original generation
+  - Allele frequency of [A]{color=red} in the n-th generation represents\:
+  - [pn]{color=#00A933} = [p0]{color=#00A933} (1-[&#181;]{color=blue})n
+- Eventually, the generations increase p goes to zero.
+  - [p&#8734;]{color=#00A933} = [p0]{color=#00A933} (1-[&#181;]{color=blue})&#8734; &#8594; 0
+- At equilibrium, the population is then 100% allele [a]{color=purple}.
+  - this is probably not realistic...
+
+=== layout: one-panel
+
+@body
+
+Reversible Mutations and Equilibrium [A]{color=red}&#8594;[a]{color=#800080} and [a]{color=#800080}&#8594;[A]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Reversible Mutation*
+
+@body
+
+- Forward mutation of [A]{color=red} &#8594; [a]{color=purple} is offset by reverse mutation of [a]{color=purple} &#8594; [A]{color=red}.
+  - Rate of [forward]{color=blue} mutation ([A]{color=red}&#8594;[a)]{color=purple} is [&#181;]{color=blue}
+  - Rate of [reverse]{color=#EA7500} mutation ([a]{color=purple}&#8594;[A]{color=red}) is [*&#957;*]{color=#EA7500} (greek nu)
+- At equilibrium (allele frequency becomes constant)&#8230; no changes in the allele frequency
+- Equilibrium value of [p]{color=#00A933} is denoted with a circumflex (carrot hat)\: [&#710;p]{color=#00A933}.
+
+![Slide image 2](assets/lect15b-genetic_evolution/image_002.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Effect of mutation on allele frequency*
+
+@body
+
+![Slide image 3](assets/lect15b-genetic_evolution/image_003.jpg)
+
+- Allele frequency is changed very slowly by mutation. In the case of reversible mutation, an equilibrium state is reached where the allele frequency becomes constant.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect15b-genetic_evolution/image_004.png)
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 4](assets/lect15b-genetic_evolution/image_004.png)
+
+@bottom
+
+![Slide image 5](assets/lect15b-genetic_evolution/image_005.svg)
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 5](assets/lect15b-genetic_evolution/image_004.png)
+
+@bottom
+
+![Slide image 6](assets/lect15b-genetic_evolution/image_006.svg)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Evolution changes allele frequencies across generations.
+- Mutation introduces new alleles.
+- Gene flow moves alleles among populations.
+- Selection and drift change frequencies by different processes.
+
+=== layout: theend
+
+# THE END
+

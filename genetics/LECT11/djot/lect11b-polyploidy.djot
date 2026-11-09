@@ -1,0 +1,695 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11B
+
+## Polyploidy in Plants
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish haploid, monoploid, and polyploid chromosome sets.
+- Explain why triploid plants are often seedless.
+- Compare autopolyploidy and allopolyploidy.
+- Trace how chromosome doubling can restore fertility.
+
+=== layout: section
+
+# Polyploidy in Plants
+
+=== layout: section
+hidden: true
+
+# 2019 - These slides are a hot mess!!! move to lecture 9
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect11b-polyploidy/image_001.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 2](assets/lect11b-polyploidy/image_002.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 4](assets/lect11b-polyploidy/image_004.png)
+
+@right
+
+![Slide image 3](assets/lect11b-polyploidy/image_003.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 5](assets/lect11b-polyploidy/image_004.png)
+
+@right
+
+![Slide image 5](assets/lect11b-polyploidy/image_005.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 6](assets/lect11b-polyploidy/image_004.png)
+
+@right
+
+![Slide image 6](assets/lect11b-polyploidy/image_006.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Polyploidy*
+
+@body
+
+![Slide image 7](assets/lect11b-polyploidy/image_007.png)
+
+- Polyploidy is the presence of extra sets of chromosomes due to accidents during cell division
+- Polyploidy is much more common in plants than in animals
+- Polyploidy can produce new biological species in sympatry within a single generation
+
+=== layout: one-panel
+
+# *Polyploidy*
+
+@body
+
+- Polyploidy is a condition in which an organism has more than two complete sets of chromosomes
+  - Triploidy (3n) is three sets of chromosomes
+  - Tetraploidy (4n) is four sets of chromosomes
+- Polyploidy is common in plants, but not in animals
+- Polyploids are more normal in appearance than aneuploids
+
+=== layout: two-panels
+
+# *Polyploid*
+
+@left
+
+![Slide image 8](assets/lect11b-polyploidy/image_008.png)
+
+@right
+
+- Polyploid cells and organisms are those containing more than two paired sets of chromosomes.
+- Most Eukaryotes are diploid &#8212;one set inherited from each parent.
+- Polyploidy is found in some organisms and is especially common in plants.
+- Estimates suggest that 30&#8211;80% of living plant species are polyploid.
+  - Human breeding and cultivation methods have tended to produce these variants.
+- Usually unable to interbreed with their diploid ancestors
+
+=== layout: one-panel
+
+# *Monoploid vs. Haploid*
+
+@body
+
+- The distinction between the terms monoploid and haploid is subtle\:
+  - The *monoploid* chromosome set is the basic set of chromosomes that is the number of unique chromosomes.
+  - The *haploid* chromosome set is the set of chromosomes present in a gamete
+    - irrespective of the chromosome number in the species.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- In a decaploid Chrysanthemum with 90 chromosomes, what are the monoploid and haploid numbers?
+
+- [Answer\:]{color=red}
+- [monoploid\: 90/10 = 9 chromosomes]{color=red}
+- [haploid\: 90/2 = 45 chromosomes]{color=red}
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 9](assets/lect11b-polyploidy/image_009.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect11b-polyploidy/image_010.png)
+
+=== layout: one-panel
+
+# *Important Crops are Polyploids*
+
+@body
+
+- At least five new plant species have originated by polyploid speciation since 1850
+  - For example, in the genus Tragopogon, two allopolyploid species have evolved from three diploid parent species
+- Many important crops are polyploids\:
+  - corn, apples, bananas, coffee, sugar cane, peanuts, oats, cotton, potatoes, tobacco, and wheat
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect11b-polyploidy/image_011.png)
+
+=== layout: section
+
+# Why do humans make polyploid plants? Humans have been doing so since ancient times.
+
+=== layout: two-panels
+
+# *Polyploids are bigger!!!*
+
+@left
+
+![Slide image 12](assets/lect11b-polyploidy/image_012.png)
+
+@right
+
+![Slide image 13](assets/lect11b-polyploidy/image_013.png)
+
+=== layout: two-panels
+
+# *Which of the following food products are likely GMO?*
+
+@left
+
+- 1 Beef
+- 2 Vege Burgers
+- 3 Pork/Chicken
+- 4 Papaya
+- 5 Seedless Watermelon
+
+@right
+
+- 6 Salmon
+- 7 Dairy Milk
+- 8 Soy Milk
+- 9 Tofu
+- 10 Corn
+
+=== layout: two-panels
+
+# *Which of the following food products are likely GMO?*
+
+@left
+
+- 1 Beef&#8225;
+- [2 Vege Burgers]{color=#00A933}[*\**]{color=#00A933}
+- 3 Pork/Chicken&#8225;
+- [4 Papaya]{color=#00A933}
+- 5 Seedless Watermelon
+
+@right
+
+- [6 Salmon]{color=red}
+- 7 Dairy Milk[&#8225;]{color=#00A933}
+- [8 Soy Milk\*]{color=#00A933}
+- [9 Tofu]{color=#00A933}
+- [10 Corn]{color=#00A933}
+
+@citation
+
+[\* Mostly GMO]{color=#00A933}
+- [&#8224; GMO exists, but not available in stores]{color=red}
+- &#8225; Often fed GMO food and hormones
+
+=== layout: section
+
+# How do we get seedless plants? like watermelon or bananas?
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 14](assets/lect11b-polyploidy/image_014.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 15](assets/lect11b-polyploidy/image_015.jpg)
+
+- *Ancestral species\:*
+
+- *AA*
+
+- *BB*
+
+- *DD*
+
+- *Wild*
+- *_T. tauschii_*
+- *(14)*
+
+- *Wild*
+- *_Triticum_*
+- *(14)*
+
+- *_Triticum_*
+- *_monococcum_*
+- *(14)*
+
+- *Product\:*
+
+- *AA*
+
+- *BB*
+
+- *DD*
+
+- *_T. aestivum_*
+- *(bread wheat)*
+- *(42)*
+
+=== layout: section
+
+# Sexual vs. Asexual Polyploidization
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 16](assets/lect11b-polyploidy/image_016.png)
+
+@bottom
+
+![Slide image 17](assets/lect11b-polyploidy/image_017.png)
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 17](assets/lect11b-polyploidy/image_016.png)
+
+@bottom
+
+![Slide image 18](assets/lect11b-polyploidy/image_018.png)
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 18](assets/lect11b-polyploidy/image_016.png)
+
+@bottom
+
+![Slide image 19](assets/lect11b-polyploidy/image_019.png)
+
+=== layout: section
+
+# Autoploidy and Alloploidy
+
+=== layout: one-panel
+
+# *Types of Polyploids*
+
+@body
+
+- An [*autopolyploid*]{underline=true} is an individual with more than two chromosome sets, derived from a [_single_]{underline=true} species
+- An [*allopolyploid*]{underline=true} is a species with multiple sets of chromosomes derived from [_different_]{underline=true} species
+  - A combination of chromosome sets from different species.
+  - Allopolyploid plant species are much more numerous than autopolyploids.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect11b-polyploidy/image_020.jpg)
+
+- *Cell*
+- *division*
+- *error*
+
+- *Tetraploid cell*
+- *4**_n_*
+
+- *2**_n_* *=* *_6_*
+
+- *2**_n_*
+
+- *2**_n_*
+
+- *Meiosis*
+
+- *New species*
+- *(4**_n_**)*
+
+- *Gametes produced*
+- *by tetraploids*
+
+- *Autopolyploid speciation*
+
+![Slide image 21](assets/lect11b-polyploidy/image_021.png)
+
+- An [*autopolyploid*]{underline=true} is an individual with more than two chromosome sets, derived from a single species
+
+=== layout: one-panel
+@replaceme
+
+# Hybridization Between Species
+
+@body
+
+![Slide image 22](assets/lect11b-polyploidy/image_022.jpg)
+
+- *Species A*
+- *2**_n_* *= 6*
+
+- *Normal gamete*
+- *_n_* *= 3*
+
+- *Normal gamete*
+- *_n_* *= 2*
+
+- *Species B*
+- *2**_n_* *= 4*
+
+=== layout: one-panel
+@replaceme
+
+# Hybridization Between Species
+
+@body
+
+![Slide image 23](assets/lect11b-polyploidy/image_023.jpg)
+
+- *Species A*
+- *2**_n_* *= 6*
+
+- *Normal gamete*
+- *_n_* *= 3*
+
+- *Normal gamete*
+- *_n_* *= 2*
+
+- *Species B*
+- *2**_n_* *= 4*
+
+- *Sterile hybrid with*
+- *5 chromosomes*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 24](assets/lect11b-polyploidy/image_024.jpg)
+
+- *Species A*
+- *2**_n_* *= 6*
+
+- *Normal gamete*
+- *_n_* *= 3*
+
+- *Normal gamete*
+- *_n_* *= 2*
+
+- *Species B*
+- *2**_n_* *= 4*
+
+- *Sterile hybrid with*
+- *5 chromosomes*
+
+- *Mitotic or meiotic error*
+- *doubles the chromosome*
+- *number.*
+
+- *New species\:*
+- *viable, fertile hybrid*
+- *(allopolyploid)*
+- *2**_n_* *= 10*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 24](assets/lect11b-polyploidy/image_024.jpg)
+
+- *Species A*
+- *2**_n_* *= 6*
+
+- *Normal gamete*
+- *_n_* *= 3*
+
+- *Normal gamete*
+- *_n_* *= 2*
+
+- *Species B*
+- *2**_n_* *= 4*
+
+- *Sterile hybrid with*
+- *5 chromosomes*
+
+- *Mitotic or meiotic error*
+- *doubles the chromosome*
+- *number.*
+
+- *New species\:*
+- *viable, fertile hybrid*
+- *(allopolyploid)*
+- *2**_n_* *= 10*
+
+- An [*allopolyploid*]{underline=true} is a species with multiple sets of chromosomes derived from different species
+
+![Slide image 25](assets/lect11b-polyploidy/image_025.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 26](assets/lect11b-polyploidy/image_026.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 26](assets/lect11b-polyploidy/image_015.jpg)
+
+- *Ancestral species\:*
+
+- *AA*
+
+- *BB*
+
+- *DD*
+
+- *Wild*
+- *_T. tauschii_*
+- *(14)*
+
+- *Wild*
+- *_Triticum_*
+- *(14)*
+
+- *_Triticum_*
+- *_monococcum_*
+- *(14)*
+
+- *Product\:*
+
+- *AA*
+
+- *BB*
+
+- *DD*
+
+- *_T. aestivum_*
+- *(bread wheat)*
+- *(42)*
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 28](assets/lect11b-polyploidy/image_028.png)
+
+@bottom
+
+![Slide image 27](assets/lect11b-polyploidy/image_027.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 29](assets/lect11b-polyploidy/image_029.jpg)
+
+- *_T. dubius_*
+- *(12)*
+
+- *Hybrid species\:*
+- *_T. miscellus_*
+- *(24)*
+
+- *Hybrid species\:*
+- *_T. mirus_*
+- *(24)*
+
+- *_T. pratensis_*
+- *(12)*
+
+- *_T. porrifolius_*
+- *(12)*
+
+- *Allopolyploid speciation in Tragopogon.*
+- The gray boxes indicate the three parent species.
+- The diploid chromosome number of each species is shown in parentheses.
+
+=== layout: one-panel
+
+# *Monoploid systems*
+
+@body
+
+- This can be done by treatment with colchicine, which inhibits formation of the mitotic spindle.
+
+![Slide image 30](assets/lect11b-polyploidy/image_030.jpg)
+
+- Production of a diploid from a monoploid by treatment with colchicine.
+
+=== layout: section
+
+# Polyploidy in Animals
+
+=== layout: one-panel
+
+# [*Polyploidy is Not Tolerated in Animals*]{color=red}
+
+@body
+
+- *Rare in Animals*\: Studies of fossils show that polyploidy is very rare in animals, meaning it hasn't been a successful way for animals to evolve. Unlike in plants where it's common and often helpful.
+- *More Complex in Animals*\: Animals have complex organ systems and developmental processes.  Polyploidy can cause serious problems in these systems, leading to major health issues.
+- *Larger Cell Size*\: Polyploid cells are bigger. Animal cells become too large with polyploidy. This can interfere with how cells and tissues work in animals, causing health problems.
+- *Gene Control*\: Animals need a careful balance of genes. Extra genes in animals lead to problems in controlling how genes work. In plants, this is less of an issue.
+- *Cancer Risk*\: In animals, polyploidy can increase cancer risk. Cells with too many genes can lead to the growth of tumors. This is not a common problem in plants.
+
+=== layout: one-panel
+
+
+@body
+
+- Question\: [Can you purchase GMO (genetically modified) animal meat in stores in the USA]{color=red}?
+  - A. [*Yes*]{color=green}, GMO meat is *commonly found and regularly eaten* in the U.S.
+  - B. [*Yes*]{color=green}, GMO meat is available, but I *choose not to buy it* due to health concerns.
+  - C. [*No*]{color=red}, *stores refuse to stock* any GMO meat because consumers are not willing to buy it.
+  - D. [*No*]{color=red}, selling GMO meat is hard in the U.S. because of *strict rules and labeling needs*.
+  - E. [*No*]{color=red}, it is *against the law* to sell GMO meat in the U.S., as it's not safe to eat.
+
+=== layout: one-panel
+@replaceme
+
+# [*AquAdvantage Salmon*]{color=#0000FF}
+
+@body
+
+- [Developed in 1989, approved for human consumption in 2015]{color=#424242}
+  - [not yet being sold in the U.S.]{color=#424242}
+  - [only sold in limited quantities in Canada]{color=#424242}
+- [Began raising the fish in indoor tanks at an Indiana plant]{color=#424242}
+
+- [[https\://www.fda.gov/animal-veterinary/animals-intentional-genomic-alterations/questions-and-answers-fdas-approval-aquadvantage-salmon](https://www.fda.gov/animal-veterinary/animals-intentional-genomic-alterations/questions-and-answers-fdas-approval-aquadvantage-salmon)]{color=#27278B underline=true}
+- [[https\://phys.org/news/2020-11-court-fda-environmental-impact-gm.html](https://phys.org/news/2020-11-court-fda-environmental-impact-gm.html)]{color=#27278B underline=true}
+
+![Slide image 31](assets/lect11b-polyploidy/image_031.png)
+
+- [Regular]{color=#980000}
+- [Salmon]{color=#980000}
+
+- [Transgenic]{color=#980000}
+- [Salmon]{color=#980000}
+
+![Slide image 32](assets/lect11b-polyploidy/image_032.png)
+
+![Slide image 33](assets/lect11b-polyploidy/image_033.png)
+
+- [&#10004;&#65038;]{color=#38761D}
+
+- [Took the Pacific's Chinook salmon growth hormone gene, the biggest salmon, and spliced it into the Atlantic species]{color=#424242}
+  - [come in only one sex -- female.]{color=#424242}
+  - [have three sets of chromosomes, making them sterile.]{color=#424242}
+
+![Slide image 34](assets/lect11b-polyploidy/image_034.png)
+
+- [&#10008;]{color=#980000}
+
+=== layout: one-panel
+
+
+@body
+
+- Atlantic Salmon have 29 haploid chromosomes.
+  - What fraction of the gametes from a triploid male salmon would be euploid, having exactly one copy of each chromosome (1 of each chromosome)?
+- If a male triploid salmon produces 1 billion sperm, how many of these will be euploid?
+
+=== layout: one-panel
+
+
+@body
+
+- Atlantic Salmon have 29 haploid chromosomes. If a male triploid salmon produces 1 billion sperm, how many of these will be euploid?
+  - Each chromosome has a &#189; chance of being euploid (segregating correctly into the gamete).
+  - For 29 chromosomes, the probability of all being correct is\:
+    - &#189; to the 29th power\: (1/2)29 = 1/536,870,912
+    - This means only 1 in 536,870,912 sperm will be euploid.
+  - The expected number of euploid sperm is\:
+    - 1,000,000,000 / 536,870,912 = 1.86 sperm
+- So, for Atlantic Salmon, [*only about 2 sperm out of 1 billion*]{color=red} will be euploid.
+  - Despite this extreme inefficiency, salmon produce an enormous number of sperm. Even a tiny fraction of functional gametes could theoretically fertilize an egg
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Polyploids have more than two complete chromosome sets.
+- Odd chromosome sets complicate pairing during meiosis.
+- Chromosome doubling can restore pairing in a hybrid.
+- Plant breeding uses polyploidy to change crop traits.
+
+=== layout: theend
+
+# THE END

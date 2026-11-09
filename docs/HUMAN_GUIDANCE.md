@@ -264,6 +264,8 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - A prior lecture's announcement deck copied into a new lecture folder is a starter for the
   new weekly A deck. Do not keep that starter or its unused extracted assets in the new folder.
+- Announcement conversions usually start with the most recent current-year deck, even if it
+  is from an earlier lecture, plus the target lecture's prior-year deck. Use both as starting points.
 
 - Evergreen content is used across courses or across more than a single week. Tetrad content
   is for a single lecture; keep it with Lecture 09, including the repeated procedure slides.

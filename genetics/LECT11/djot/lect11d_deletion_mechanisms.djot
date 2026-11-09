@@ -1,0 +1,545 @@
+=== layout: title-slide
+
+# Lecture 11D
+
+## Chromosome Alterations: Deletions
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish the four chromosome rearrangements.
+- Explain how deletions uncover recessive alleles.
+- Infer gene order from overlapping deletions.
+- Check a proposed order against every deletion.
+
+=== layout: section
+
+# Alterations of Chromosome Structure
+
+=== layout: one-panel
+
+# *Alterations of Chromosome Structure*
+
+@body
+
+- Breakage of a chromosome can lead to four types of changes in chromosome structure
+  - [*Deletion*]{underline=true} removes a chromosomal segment
+  - [*Duplication*]{underline=true} repeats a segment
+  - [*Inversion*]{underline=true} reverses orientation of a segment within a chromosome
+  - [*Translocation*]{underline=true} moves a segment from one chromosome to another
+
+=== layout: one-panel
+
+# *Deletion*
+
+@body
+
+![Slide image 1](assets/lect11d-chromo_alter_1-deletions/image_001.png)
+
+=== layout: one-panel
+
+# *Duplication*
+
+@body
+
+![Slide image 2](assets/lect11d-chromo_alter_1-deletions/image_002.png)
+
+=== layout: one-panel
+
+# *Inversion*
+
+@body
+
+![Slide image 3](assets/lect11d-chromo_alter_1-deletions/image_003.png)
+
+=== layout: one-panel
+
+# *Translocation*
+
+@body
+
+![Slide image 4](assets/lect11d-chromo_alter_1-deletions/image_004.png)
+
+=== layout: one-panel
+
+# *Human Disorders Due to Chromosomal Alterations*
+
+@body
+
+- Alterations of chromosome number and structure are associated with some serious disorders
+- Some types of aneuploidy appear to upset the genetic balance less than others, resulting in individuals surviving to birth and beyond
+- These surviving individuals have a set of symptoms, or syndrome, characteristic of the type of aneuploidy
+
+=== layout: multiple-choice
+
+@question
+
+One possible result of chromosomal breakage is for a fragment to join a non-homologous chromosome. What is this alteration called?
+
+- A) deletion
+- B) inversion
+- C) translocation
+- D) duplication
+
+@answer
+
+[Answer\: C]{color=red}
+
+=== layout: section
+
+# Deletions
+
+=== layout: two-panels
+
+# *Deletion Detection in Humans*
+
+@left
+
+![Slide image 5](assets/lect11d-chromo_alter_1-deletions/image_005.png)
+
+@right
+
+- Deletions can be detected in humans with 23andMe like SNP microarray chips
+- If regions of SNPs are missing from the analysis, a deletion is likely present.
+
+=== layout: two-panels
+
+# *Disorders Caused by Deletions*
+
+@left
+
+- The syndrome cri du chat (&#8220;cry of the cat&#8221;), results from a specific deletion in chromosome 5
+  - A child born with this syndrome is severely intellectually disabled and has a catlike cry; individuals usually die in infancy or early childhood
+
+@right
+
+![Slide image 6](assets/lect11d-chromo_alter_1-deletions/image_006.png)
+
+![Slide image 7](assets/lect11d-chromo_alter_1-deletions/image_007.png)
+
+=== layout: section
+
+# Deletions\: how do they happen?
+
+=== layout: one-panel
+@replaceme
+
+# *Deletions*
+
+@body
+
+- Deletions are generally harmful.
+  - the larger the deletion the greater the harm.
+- Formed in two ways\:
+  - chromosome breakage in two places and fused together with piece left out.
+  - ectopic recombination &#8211; recombination with repeated sequences on same chromosome.
+
+![Slide image 7](assets/lect11d-chromo_alter_1-deletions/image_001.png)
+
+=== layout: two-panels
+
+
+@left
+
+- *Ectopic Recombination*
+
+@right
+
+![Slide image 8](assets/lect11d-chromo_alter_1-deletions/image_008.png)
+
+=== layout: section
+
+# Deletion Detection in Drosophila
+
+=== layout: two-panels
+
+# *Deletion Mutant with wildtype Phenotype*
+
+@left
+
+![Slide image 9](assets/lect11d-chromo_alter_1-deletions/image_009.png)
+
+@right
+
+- In lab settings, deletions can be detected by missing _wildtype_ alleles in heterozygous organisms or by a test-cross.
+- Once a deletion is found, its size can be estimated by determining which genes were in the deleted region.
+
+=== layout: one-panel
+
+# *Test-cross*
+
+@body
+
+![Slide image 9](assets/lect11d-chromo_alter_1-deletions/image_009.png)
+
+![Slide image 10](assets/lect11d-chromo_alter_1-deletions/image_010.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 11](assets/lect11d-chromo_alter_1-deletions/image_011.png)
+
+- _1x2_
+- _Punnett_
+- _square_
+
+=== layout: two-panels
+
+# *Deletions*
+
+@left
+
+![Slide image 12](assets/lect11d-chromo_alter_1-deletions/image_012.png)
+
+@right
+
+- In lab settings, deletions can be detected by missing _wildtype_ alleles in heterozygous organisms or by a test-cross.
+- Once a deletion is found, its size can be estimated by determining which genes were in the deleted region.
+
+=== layout: section
+
+# Using Polytene Chromosomes to Find Deleted Regions
+
+=== layout: one-panel
+
+# *Drosophila chromosomes*
+
+@body
+
+![Slide image 13](assets/lect11d-chromo_alter_1-deletions/image_013.png)
+
+![Slide image 14](assets/lect11d-chromo_alter_1-deletions/image_014.png)
+
+=== layout: two-panels
+
+# *Polytene Chromosomes*
+
+@left
+
+![Slide image 15](assets/lect11d-chromo_alter_1-deletions/image_015.png)
+
+@right
+
+- Polytene chromosomes are giant chromosomes
+  - They begin as normal chromosomes, but through repeated rounds of DNA replication without any cell division, they become large, banded chromosomes
+  - It is possible to study deletions by physically looking at chromosomes
+
+=== layout: one-panel
+
+# *Polytene Chromosomes*
+
+@body
+
+![Slide image 15](assets/lect11d-chromo_alter_1-deletions/image_015.png)
+
+=== layout: one-panel
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 16](assets/lect11d-chromo_alter_1-deletions/image_016.png)
+
+=== layout: one-panel
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 17](assets/lect11d-chromo_alter_1-deletions/image_017.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 18](assets/lect11d-chromo_alter_1-deletions/image_018.png)
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Slide image 19](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+@right
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *Deletion Mapping*
+
+@top-left
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+@top-right
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+@bottom
+
+- [compare Del 1 and Del 2]{color=red}
+- [? \_ \_ \_ \_ \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *Deletion Mapping*
+
+@top-left
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+@top-right
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+@bottom
+
+- [compare Del 1 and Del 2]{color=red}
+- [b \_ \_ \_ \_ \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *Deletion Mapping*
+
+@top-left
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+@top-right
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+@bottom
+
+- [compare Del 2 and Del 3]{color=red}
+- [b \_ \_ ? \_ \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+- [compare Del 2 and Del 3]{color=red}
+- [b \_ \_ e \_ \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *Deletion Mapping*
+
+@top-left
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+@top-right
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+@bottom
+
+- [compare Del 3 and Del 4]{color=red}
+- [b ? \_ e ? \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [missing in Del 3]{color=#00A933}
+- [present in Del 4]{color=#00A933}
+
+- [compare Del 3 and Del 4]{color=red}
+- [b ? \_ e ? \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [missing in Del 3]{color=#00A933}
+- [present in Del 4]{color=#00A933}
+
+- [compare Del 3 and Del 4]{color=red}
+- [b a \_ e ? \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [present in Del 3]{color=orange}
+- [missing in Del 4]{color=orange}
+
+- [compare Del 3 and Del 4]{color=red}
+- [b a \_ e ? \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [present in Del 3]{color=orange}
+- [missing in Del 4]{color=orange}
+
+- [compare Del 3 and Del 4]{color=red}
+- [b a \_ e d \_]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [missing in Del 4]{color=#00A933}
+- [present in Del 5]{color=#00A933}
+
+- [compare Del 4 and Del 5]{color=red}
+- [b a ? e d ?]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [missing in Del 4]{color=#00A933}
+- [present in Del 5]{color=#00A933}
+
+- [compare Del 4 and Del 5]{color=red}
+- [b a c e d ?]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [present in Del 4]{color=orange}
+- [missing in Del 5]{color=orange}
+
+- [compare Del 4 and Del 5]{color=red}
+- [b a c e d ?]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Deletion Mapping*
+
+@body
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+- [present in Del 4]{color=orange}
+- [missing in Del 5]{color=orange}
+
+- [compare Del 4 and Del 5]{color=red}
+- [b a c e d f]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: two-over-one-panels
+
+# *Deletion Mapping*
+
+@top-left
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+
+@top-right
+
+![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+
+@bottom
+
+- [final answer!]{color=red}
+- [b a c e d f]{color=red}
+- [1 2 3 4 5 6]{color=red}
+
+=== layout: one-panel
+
+# *Deletion Quiz Questions*
+
+@body
+
+- I don&#8217;t always give the nice gene deletion picture, so it takes a different skill to map the gene order.
+- Some older questions 6.14, 6.15, and 6.16 in the book.
+  - answers to book questions, are at the end of the slides
+- I will go through a couple of examples, then you can try it yourself.
+

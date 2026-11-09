@@ -1,0 +1,742 @@
+=== layout: title-slide
+
+# Lecture 13D
+
+## Meiosis with Translocated Chromosomes
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Trace pairing of translocated chromosome homologs.
+- Compare alternate, adjacent-1, and adjacent-2 segregation.
+- Determine the gametes from each segregation pattern.
+- Identify balanced and unbalanced gametes.
+
+=== layout: section
+
+# Meiosis with Translocated Chromosomes
+
+=== layout: one-panel
+
+# *Translocation*
+
+@body
+
+![Slide image 1](assets/lect13d-meiosis_translocation/image_001.png)
+
+=== layout: one-panel
+
+# *Translocations*
+
+@body
+
+![Slide image 2](assets/lect13d-meiosis_translocation/image_002.png)
+
+- (A) Two pairs of non-homologous chromosomes in a diploid organism.
+- (B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
+- (C) Homozygous reciprocal translocation.
+
+=== layout: one-panel
+@replaceme
+
+# *Translocations*
+
+@body
+
+- [(A) Two pairs of non-homologous chromosomes in a diploid organism.]{color=#CCCCCC}
+- [(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.]{color=#CC00CC}
+- [(C) Homozygous reciprocal translocation.]{color=#CCCCCC}
+
+![Slide image 3](assets/lect13d-meiosis_translocation/image_003.png)
+
+- Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
+
+=== layout: one-panel
+
+# *Translocations*
+
+@body
+
+![Slide image 3](assets/lect13d-meiosis_translocation/image_003.png)
+
+- Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
+
+=== layout: section
+
+# Separation of Translocated Chromosomes During Cell Division
+
+=== layout: one-panel
+@replaceme
+
+# *Original Chromosomes*
+
+@body
+
+- original blue homologous chromosomes
+
+- original red homologous chromosomes
+
+=== layout: title-only
+@replaceme
+
+# *Translocation Event*
+
+=== layout: title-only
+@replaceme
+
+# *Translocation Event*
+
+=== layout: title-only
+@replaceme
+
+# *Translocation Event*
+
+=== layout: title-only
+@replaceme
+
+# *Duplicate DNA to Form Sister Chromatids*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+- Several homologous pairing combinations are possible
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: title-only
+@replaceme
+
+# *Time for Cell Division*
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+- All homologous regions are paired creating a complex four-way chromosome junction
+
+- The resulting gametes will be determined by how the spindles pull apart the centromeres
+
+- 1
+
+- 2
+
+- 3
+
+- 4
+
+=== layout: section
+
+# Spindle Binding during Cell Division
+
+=== layout: one-panel
+@replaceme
+
+# *Three Forms of Meiosis for Translocation Heterozygote*
+
+@body
+
+- chromosomes\:
+  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
+  - 2\: normal with [blue centromere]{color=#0066FF}
+  - 3\: normal with [red centromere]{color=red}
+  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- Is this scenario 1 is pairing with both 2 and 3, but during cell division it can only go with one of the two.
+
+![Slide image 4](assets/lect13d-meiosis_translocation/image_004.png)
+
+![Slide image 5](assets/lect13d-meiosis_translocation/image_005.png)
+
+- [4]{color=#FF00FF}
+- [1]{color=#FF00FF}
+- 2
+- 3
+
+=== layout: two-panels
+@replaceme
+
+# *Three Forms of Meiosis for Translocation Heterozygote*
+
+@left
+
+- chromosomes\:
+  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
+  - 2\: normal with [blue centromere]{color=#0066FF}
+  - 3\: normal with [red centromere]{color=red}
+  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- Adjacent-1
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+- Adjacent-2
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+- Alternate
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+@right
+
+![Slide image 5](assets/lect13d-meiosis_translocation/image_004.png)
+
+![Slide image 5](assets/lect13d-meiosis_translocation/image_005.png)
+
+- [4]{color=#FF00FF}
+- [1]{color=#FF00FF}
+- 2
+- 3
+
+=== layout: one-panel
+@replaceme
+
+# *Three Forms of Meiosis for Translocation Heterozygote*
+
+@body
+
+![Slide image 6](assets/lect13d-meiosis_translocation/image_006.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Three Forms of Meiosis for Translocation Heterozygote*
+
+@body
+
+![Slide image 6](assets/lect13d-meiosis_translocation/image_006.png)
+
+- Spindles bind to closest centromeres
+- 1+2 and 3+4 stay together
+
+- Alternate
+  - left binds to 1+4
+  - right binds to 2+3
+- Spindles have two possible choices
+
+- Spindles bind to closest centromeres
+- 1+3 and 2+4 stay together
+
+=== layout: section
+
+# Determine the Possible Gametes
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Rules of the Three Forms*
+
+@left
+
+- Numbers are arbitrary, but we'll stick with them to avoid confusion.
+- Setup\:
+  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
+  - 2\: normal with [blue centromere]{color=#0066FF}
+  - 3\: normal with [red centromere]{color=red}
+  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- Adjacent-1
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+- Adjacent-2
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+- Alternate
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+@top-right
+
+- Non-pairing\:
+  - 1 does not share DNA with 4
+  - 2 does not share DNA with 3
+- Pairing\:
+  - 1 pairs with 2 and 3
+  - 2 pairs with 1 and 4
+  - 3 pairs with 1 and 4
+  - 4 pairs with 2 and 3
+
+@bottom-right
+
+![Slide image 7](assets/lect13d-meiosis_translocation/image_007.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Each Form produces only two different gametes*
+
+@body
+
+![Slide image 8](assets/lect13d-meiosis_translocation/image_008.png)
+
+![Slide image 8](assets/lect13d-meiosis_translocation/image_006.png)
+
+- 50% are alternate
+
+=== layout: one-panel
+@replaceme
+
+# *Each Form produces only two different gametes*
+
+@body
+
+![Slide image 8](assets/lect13d-meiosis_translocation/image_008.png)
+
+![Slide image 8](assets/lect13d-meiosis_translocation/image_006.png)
+
+- unbalanced
+
+- balanced
+
+- 50% are alternate
+
+=== layout: one-panel
+
+# *Balancing Translocation*
+
+@body
+
+- [*balanced translocation*]{underline=true} &#8211; non-homologous chromosomes interchange parts, but all parts are present
+- [*unbalanced translocation*]{underline=true} &#8211; some or part of the genome is missing.
+  - unbalanced gametes tend to lead to  arrested embryos, failed implantation or spontaneous abortion.
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 9](assets/lect13d-meiosis_translocation/image_009.png)
+
+@bottom
+
+![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Rules of the Three Forms*
+
+@body
+
+- Old Setup\:
+  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
+  - 2\: normal with [blue centromere]{color=#0066FF}
+  - 3\: normal with [red centromere]{color=red}
+  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- New Setup\:
+  - [1\: X-2]{color=#FF00FF} with [red-like centromere]{color=red}
+  - 2\: 2 with [blue centromere]{color=#0066FF}
+  - 3\: Y with [red centromere]{color=red}
+  - [4\: 2-X]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- Double check pairing system &#8594;
+
+- Non-pairing\:
+  - 1 does not share DNA with 4
+  - 2 does not share DNA with 3
+- Pairing\:
+  - 1 pairs with 2 and 3
+  - 2 pairs with 1 and 4
+  - 3 pairs with 1 and 4
+  - 4 pairs with 2 and 3
+
+![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+
+- [1]{color=#FF00FF}
+- 3
+- [4]{color=#FF00FF}
+- 2
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+
+![Slide image 10](assets/lect13d-meiosis_translocation/image_008.png)
+
+- [1]{color=#FF00FF}
+- 3
+- [4]{color=#FF00FF}
+- 2
+
+- 50% are alternate
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+
+![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+
+- Possible gametes
+
+![Slide image 15](assets/lect13d-meiosis_translocation/image_008.png)
+
+![Slide image 11](assets/lect13d-meiosis_translocation/image_011.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+
+@top-right
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 16](assets/lect13d-meiosis_translocation/image_016.png)
+
+
+@bottom-left
+
+![Slide image 16](assets/lect13d-meiosis_translocation/image_016.png)
+
+![Slide image 11](assets/lect13d-meiosis_translocation/image_011.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_017.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_017.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+
+@bottom-right
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+- Adjacent-1 (25%)
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- Adjacent-2 (25%)
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- Alternate (50%)
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- [1]{color=#FF00FF}
+- 3
+- [4]{color=#FF00FF}
+- 2
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_010.png)
+
+- Possible gametes
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_011.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+
+@top-right
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_016.png)
+
+
+@bottom-left
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_016.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_011.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_017.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_017.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+
+@bottom-right
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+- Adjacent-1 (25%)
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- Adjacent-2 (25%)
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- Alternate (50%)
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- missing genetic info
+
+- missing genetic info
+
+- [1]{color=#FF00FF}
+- 3
+- [4]{color=#FF00FF}
+- 2
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_010.png)
+
+- Possible gametes
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+
+@right
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+- Adjacent-1 (25%)
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- Adjacent-2 (25%)
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- Alternate (50%)
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- aborted
+- zygotes
+
+- aborted
+- zygotes
+
+- [1]{color=#FF00FF}
+- 3
+- [4]{color=#FF00FF}
+- 2
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_012.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_014.png)
+
+- 50% wildtype non-ruby, non-dumpy females
+
+- 50% ruby, dumpy males
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_013.png)
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_015.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- A phenotypically normal prospective couple seeks genetic counseling because the man knows that he has a translocation of a portion of his chromosome 4 that has been exchanged with a portion of his chromosome 12.
+- Although his translocation is balanced, he and his wife want to know the probability that his sperm will be abnormal.
+  - Assume that all gametes produce viable sperm, even if genetic material is missing
+- What is your prognosis regarding his sperm?
+  - A. None will carry the translocation.
+  - B. 1/4 will be wildtype, 1/4 will have translocated chromosomes, and 1/2 will have both wildtype and translocated chromosomes.
+  - C. 1/2 will be wildtype and 1/2 will have the translocation.
+  - D. All will carry the same translocation as the father.
+
+- [Answer\: B]{color=red}
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+=== layout: one-panel
+@replaceme
+
+# *Rules of the Three Forms*
+
+@body
+
+- Situation\:
+  - translocation of a portion of his chromosome 4 that has been exchanged with a portion of his chromosome 12.
+  - translocation is balanced
+- Setup\:
+  - [1\: transl.]{color=#FF00FF} with [red centromere]{color=red}
+  - 2\: normal with [blue centromere]{color=#0066FF}
+  - 3\: normal with [red centromere]{color=red}
+  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- Double check pairing system &#8594;
+
+- Non-pairing\:
+  - 1 does not share DNA with 4
+  - 2 does not share DNA with 3
+- Pairing\:
+  - 1 pairs with 2 and 3
+  - 2 pairs with 1 and 4
+  - 3 pairs with 1 and 4
+  - 4 pairs with 2 and 3
+
+- 4
+
+- 12
+
+- 4
+
+- 12
+
+- 4
+
+=== layout: one-panel
+@replaceme
+
+# *Rules of the Three Forms*
+
+@body
+
+- Setup\:
+  - [1\: 4-12]{color=#FF00FF} with [red centromere]{color=red}
+  - 2\: normal 4 with [blue centromere]{color=#0066FF}
+  - 3\: normal 12 with [red centromere]{color=red}
+  - [4\: 12-4]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+- Double check pairing system &#8594;
+
+- Non-pairing\:
+  - 1 does not share DNA with 4
+  - 2 does not share DNA with 3
+- Pairing\:
+  - 1 pairs with 2 and 3
+  - 2 pairs with 1 and 4
+  - 3 pairs with 1 and 4
+  - 4 pairs with 2 and 3
+
+- [1]{color=#FF00FF}
+- 2
+- 3
+- [4]{color=#FF00FF}
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+

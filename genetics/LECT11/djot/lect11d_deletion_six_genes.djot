@@ -1,0 +1,507 @@
+=== layout: section
+
+# Deletion Quiz Question #2 six genes
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- A total of six genes A, B, C, D, E, and F are closely linked in a single chromosome, but their order is unknown.
+- A total of five deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the five genes A, C, D, E, and F;
+  - Deletion #2 uncovers the five genes A, B, C, D, and E;
+  - Deletion #3 uncovers the three genes A, D, and F;
+  - Deletion #4 uncovers the four genes A, C, D, and F;
+  - Deletion #5 uncovers the four genes A, B, C, and E;
+- What the correct order for the six genes?
+  - Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 1\: Simplify the Information]{color=red}
+- A total of six genes A, B, C, D, E, and F are closely linked in a single chromosome, but their order is unknown.
+- A total of five deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the five genes A, C, D, E, and F;
+  - Deletion #2 uncovers the five genes A, B, C, D, and E;
+  - Deletion #3 uncovers the three genes A, D, and F;
+  - Deletion #4 uncovers the four genes A, C, D, and F;
+  - Deletion #5 uncovers the four genes A, B, C, and E;
+- What the correct order for the six genes?
+  - Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 1\: Simplify the Information]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - Del#2\: A, B, C, D, E;
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+  - Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 2\: Create a template]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - Del#2\: A, B, C, D, E;
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+  - Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 2\: Create a template]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - Del#2\: A, B, C, D, E;
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+  - Hint\: the first gene on the end is gene B.
+- Six genes, starts with B
+- B \_ \_ \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 3\: Note the deletions that contain the first gene]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#800080}
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - [Del#5\: A, B, C, E;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- B \_ \_ \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain the first gene]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#800080}
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - [Del#5\: A, B, C, E;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Well B is next to (ACE) with #5 and (ACDE) with #2 &#8594; B (ACE) D is the start
+- B \_ \_ \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain the first gene]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#800080}
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - [Del#5\: A, B, C, E;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- For Deletion #5, we can have any of the following BACE, BAEC, BEAC, BECA, BCAE, BCEA, so I just write B (ACE)
+- B \_ \_ \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain the first gene]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#800080}
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - [Del#5\: A, B, C, E;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- For Deletion #5, we can have any of the following BACE, BAEC, BEAC, BECA, BCAE, BCEA, so I just write B (ACE)
+- B (ACE)  \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain the first gene]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#800080}
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - [Del#5\: A, B, C, E;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#2 is Del#5 with extra gene D. Therefore the D has to come after the B(ACE) part and we know gene 5.
+- B (ACE) D \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 5\: Analyze the deletions that contain only two of the three unordered genes (ACE)]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - Del#3\: A, D, F;
+  - [Del#4\: A, C, D, F;]{color=#800080}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- B (ACE) D \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 5\: Analyze the deletions that contain only two of the three unordered genes (ACE)]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - Del#3\: A, D, F;
+  - [Del#4\: A, C, D, F;]{color=#800080}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#4 tells us the A,C are next to D (and F). If A,C are next to D, then
+  - &#8594; E is next to B
+- B (ACE) D \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 5\: Analyze the deletions that contain only two of the three unordered genes (ACE)]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - Del#3\: A, D, F;
+  - [Del#4\: A, C, D, F;]{color=#800080}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#4 tells us the A,C are next to D (and F). If A,C are next to D, then
+  - &#8594; E is next to B
+- B E (AC) D \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 6\: Note the only unassigned gene is F and there is only one blank]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - Del#3\: A, D, F;
+  - [Del#4\: A, C, D, F;]{color=#800080}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- F is the only gene unassigned and we only have one open blank, so fill it in
+- B E (AC) D \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 6\: Note the only unassigned gene is F and there is only one blank]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - Del#3\: A, D, F;
+  - [Del#4\: A, C, D, F;]{color=#800080}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- F is the only gene unassigned and we only have one open blank, so fill it in
+- B E (AC) D F
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 7\: Analyze the deletions that contain only one of the two unordered genes (AC)]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - [Del#3\: A, D, F;]{color=#800080}
+  - [Del#4\: A, C, D, F;]{color=#B2B2B2}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#3 tells us that D is next to A not C
+- B E (AC) D F
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 7\: Analyze the deletions that contain only one of the two unordered genes (AC)]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - [Del#2\: A, B, C, D, E;]{color=#B2B2B2}
+  - [Del#3\: A, D, F;]{color=#800080}
+  - [Del#4\: A, C, D, F;]{color=#B2B2B2}
+  - [Del#5\: A, B, C, E;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#3 tells us that D is next to A not C
+- B E C A D F
+
+=== layout: one-panel
+
+# *Check Your Answer*
+
+@body
+
+- Deletion question can be hard to find the answer.
+- But once you have an answer, it is [really easy to check if it is correct]{color=red}!
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - Del#1\: A, C, D, E, F;
+  - Del#2\: A, B, C, D, E;
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+- Answer\:
+- B E C A D F
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - &#10004; [Del#1\: A, C, D, E, F;]{color=orange}
+  - Del#2\: A, B, C, D, E;
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+- Answer\:
+- B [E C A D F]{color=orange}
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - &#10004; Del#1\: A, C, D, E, F;
+  - &#10004; [Del#2\: A, B, C, D, E;]{color=#00A933}
+  - Del#3\: A, D, F;
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+- Answer\:
+- [B E C A D]{color=#00A933} F
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - &#10004; Del#1\: A, C, D, E, F;
+  - &#10004; Del#2\: A, B, C, D, E;
+  - &#10004; [Del#3\: A, D, F;]{color=orange}
+  - Del#4\: A, C, D, F;
+  - Del#5\: A, B, C, E;
+- Answer\:
+- B E C [A D F]{color=orange}
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - &#10004; Del#1\: A, C, D, E, F;
+  - &#10004; Del#2\: A, B, C, D, E;
+  - &#10004; Del#3\: A, D, F;
+  - &#10004; [Del#4\: A, C, D, F;]{color=#00A933}
+  - Del#5\: A, B, C, E;
+- Answer\:
+- B E [C A D F]{color=#00A933}
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - &#10004; Del#1\: A, C, D, E, F;
+  - &#10004; Del#2\: A, B, C, D, E;
+  - &#10004; Del#3\: A, D, F;
+  - &#10004; Del#4\: A, C, D, F;
+  - &#10004; [Del#5\: A, B, C, E;]{color=orange}
+- Answer\:
+- [B E C A]{color=orange} D F
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 8\: Double check the deletions]{color=red}
+  - &#10004; Del#1\: A, C, D, E, F;
+  - &#10004; Del#2\: A, B, C, D, E;
+  - &#10004; Del#3\: A, D, F;
+  - &#10004; Del#4\: A, C, D, F;
+  - &#10004; Del#5\: A, B, C, E;
+  - all of them work!
+- Answer\:
+- B E C A D F
+
+=== layout: one-panel
+
+# *Blackboard Assignment*
+
+@body
+
+- This week&#8217;s lecture assignment includes two deletion questions
+  - and a translocation meiosis question, if we get that far today.
+
+=== layout: one-panel
+@replaceme
+
+# *Challenge Yourself*
+
+@body
+
+- A total of nine genes A, B, C, D, E, F, G, H, and J are closely linked in a single chromosome, but their order is unknown.
+- A total of six deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the five genes A, D, E, F, and H;
+  - Deletion #2 uncovers the four genes B, D, G, and J;
+  - Deletion #3 uncovers the five genes B, D, E, F, and H;
+  - Deletion #4 uncovers the four genes A, C, E, and H;
+  - Deletion #5 uncovers the two genes B and G;
+  - Deletion #6 uncovers the five genes B, D, E, F, and G;
+- What the correct order for the nine genes?
+  - Hint\: the first gene on the end is gene C.
+
+=== layout: one-panel
+@replaceme
+
+# *Really Challenge Yourself*
+
+@body
+
+- A total of twenty genes A, B, C, D, E, F, G, H, J, K, M, P, Q, R, S, T, W, X, Y, and Z are closely linked in a single chromosome, but their order is unknown.
+- A total of seventeen deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the five genes A, D, F, M, and Z;
+  - Deletion #2 uncovers the three genes B, J, and S;
+  - Deletion #3 uncovers the five genes E, F, H, M, and Y;
+  - Deletion #4 uncovers the five genes B, C, J, P, and S;
+  - Deletion #5 uncovers the two genes K and R;
+  - Deletion #6 uncovers the four genes C, J, P, and S;
+  - Deletion #7 uncovers the four genes A, D, R, and W;
+  - Deletion #8 uncovers the four genes E, F, M, and Z;
+  - Deletion #9 uncovers the five genes A, K, Q, R, and W;
+  - Deletion #10 uncovers the five genes C, G, P, S, and T;
+  - Deletion #11 uncovers the five genes E, F, M, Y, and Z;
+  - Deletion #12 uncovers the four genes C, G, P, and S;
+  - Deletion #13 uncovers the four genes C, G, P, and T;
+  - Deletion #14 uncovers the four genes B, J, P, and S;
+  - Deletion #15 uncovers the four genes E, H, M, and Y;
+  - Deletion #16 uncovers the four genes B, J, Q, and S;
+  - Deletion #17 uncovers the five genes C, G, P, T, and X;
+- What the correct order for the twenty genes?
+  - Hint\: the first gene on the end is gene H.
+
+=== layout: one-panel
+
+# *Answer to Challenge Yourself*
+
+@body
+
+- A total of nine genes A, B, C, D, E, F, G, H, and J are closely linked in a single chromosome, but their order is unknown.
+- A total of six deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the five genes A, D, E, F, and H;
+  - Deletion #2 uncovers the four genes B, D, G, and J;
+  - Deletion #3 uncovers the five genes B, D, E, F, and H;
+  - Deletion #4 uncovers the four genes A, C, E, and H;
+  - Deletion #5 uncovers the two genes B and G;
+  - Deletion #6 uncovers the five genes B, D, E, F, and G;
+- What the correct order for the nine genes?
+  - Hint\: the first gene on the end is gene C.
+- [Answer\: CAHEFDBGJ]{color=#B7B3CA}
+
+=== layout: one-panel
+@replaceme
+
+# *Answer to Really Challenge Yourself*
+
+@body
+
+- A total of twenty genes A, B, C, D, E, F, G, H, J, K, M, P, Q, R, S, T, W, X, Y, and Z are closely linked in a single chromosome, but their order is unknown.
+- A total of seventeen deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the five genes A, D, F, M, and Z;
+  - Deletion #2 uncovers the three genes B, J, and S;
+  - Deletion #3 uncovers the five genes E, F, H, M, and Y;
+  - Deletion #4 uncovers the five genes B, C, J, P, and S;
+  - Deletion #5 uncovers the two genes K and R;
+  - Deletion #6 uncovers the four genes C, J, P, and S;
+  - Deletion #7 uncovers the four genes A, D, R, and W;
+  - Deletion #8 uncovers the four genes E, F, M, and Z;
+  - Deletion #9 uncovers the five genes A, K, Q, R, and W;
+  - Deletion #10 uncovers the five genes C, G, P, S, and T;
+  - Deletion #11 uncovers the five genes E, F, M, Y, and Z;
+  - Deletion #12 uncovers the four genes C, G, P, and S;
+  - Deletion #13 uncovers the four genes C, G, P, and T;
+  - Deletion #14 uncovers the four genes B, J, P, and S;
+  - Deletion #15 uncovers the four genes E, H, M, and Y;
+  - Deletion #16 uncovers the four genes B, J, Q, and S;
+  - Deletion #17 uncovers the five genes C, G, P, T, and X;
+- What the correct order for the twenty genes?
+- Hint\: the first gene on the end is gene H.
+- [Answer\: HYEMFZDAWRKQBJSPCGTX]{color=#B7B3CA}
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Deletions remove chromosome segments and their genes.
+- A deletion can uncover a recessive allele on its homolog.
+- Overlapping deletions constrain neighboring gene order.
+- Check every deletion against the proposed final order.
+
+=== layout: theend
+
+# THE END
+

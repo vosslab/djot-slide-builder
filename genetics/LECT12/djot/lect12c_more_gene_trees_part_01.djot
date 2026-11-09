@@ -1,0 +1,750 @@
+=== layout: title-slide
+
+# Lecture 12C
+
+## More Gene Trees
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## December 1, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Find the closest pair in a distance matrix.
+- Update distances after merging clusters.
+- Track branch lengths as a tree grows.
+- Check a completed tree against its matrix.
+
+=== layout: section
+
+# Full Example
+
+=== layout: two-panels
+@replaceme
+
+# *Another Example*
+
+@left
+
+![Slide image 1](assets/lect12c-more_gene_trees/image_001.svg)
+
+@right
+
+|  | a | b | c | d | e |
+| a |  |  |  |  |  |
+| b |  |  |  |  |  |
+| c |  |  |  |  |  |
+| d |  |  |  |  |  |
+| e |  |  |  |  |  |
+
+=== layout: one-panel
+
+# *Another Example*
+
+@body
+
+![Slide image 2](assets/lect12c-more_gene_trees/image_002.png)
+
+=== layout: two-panels
+@replaceme
+
+# *Properties of a distance matrix*
+
+@left
+
+![Slide image 3](assets/lect12c-more_gene_trees/image_003.svg)
+
+@right
+
+|  | a | b | c | d | e |
+| a | &#8212; | 17 | 20 | 30 | 23 |
+| b |  | &#8212; | 30 | 34 | 21 |
+| c |  |  | &#8212; | 28 | 35 |
+| d |  |  |  | &#8212; | 40 |
+| e |  |  |  |  | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Properties of a distance matrix*
+
+@left
+
+![Slide image 4](assets/lect12c-more_gene_trees/image_004.svg)
+
+@right
+
+|  | a | b | c | d | e |
+| a | &#8212; | 17 | 20 | 30 | 23 |
+| b | 17 | &#8212; | 30 | 34 | 21 |
+| c | 20 | 30 | &#8212; | 28 | 35 |
+| d | 30 | 34 | 28 | &#8212; | 40 |
+| e | 23 | 21 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *We&#8217;ll just ignore the top half to avoid confusion*
+
+@left
+
+![Slide image 5](assets/lect12c-more_gene_trees/image_005.svg)
+
+@right
+
+|  | a | b | c | d | e |
+| a | &#8212; | 17 | 20 | 30 | 23 |
+| b | 17 | &#8212; | 30 | 34 | 21 |
+| c | 20 | 30 | &#8212; | 28 | 35 |
+| d | 30 | 34 | 28 | &#8212; | 40 |
+| e | 23 | 21 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Find smallest value*
+
+@left
+
+![Slide image 6](assets/lect12c-more_gene_trees/image_006.svg)
+
+@right
+
+|  | a | b | c | d | e |
+| a | &#8212; | 17 | 20 | 30 | 23 |
+| b | 17 | &#8212; | 30 | 34 | 21 |
+| c | 20 | 30 | &#8212; | 28 | 35 |
+| d | 30 | 34 | 28 | &#8212; | 40 |
+| e | 23 | 21 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@left
+
+![Slide image 7](assets/lect12c-more_gene_trees/image_007.svg)
+
+@right
+
+|  | a | b | c | d | e |
+| a | &#8212; | 17 | 20 | 30 | 23 |
+| b | 17 | &#8212; | 30 | 34 | 21 |
+| c | 20 | 30 | &#8212; | 28 | 35 |
+| d | 30 | 34 | 28 | &#8212; | 40 |
+| e | 23 | 21 | 35 | 40 | &#8212; |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@left
+
+![Slide image 8](assets/lect12c-more_gene_trees/image_008.svg)
+
+@top-right
+
+|  | a | b | c | d | e |
+| a | &#8212; | 17 | 20 | 31 | 23 |
+| b | 17 | &#8212; | 30 | 34 | 21 |
+| c | 20 | 30 | &#8212; | 28 | 35 |
+| d | 30 | 34 | 28 | &#8212; | 40 |
+| e | 23 | 21 | 35 | 40 | &#8212; |
+
+@bottom-right
+
+- merge a,b; new values are the average
+- (20+30)/2 = 25; (30+34)/2 = 32; (23+21)/2 = 22
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@left
+
+![Slide image 9](assets/lect12c-more_gene_trees/image_009.svg)
+
+@top-right
+
+|  | (a,b) | (a,b) | c | d | e |
+| (a,b) | &#8212; | &#8212; | 25 | 32 | 22 |
+| (a,b) | &#8212; | &#8212; | 25 | 32 | 22 |
+| c | 25 | 25 | &#8212; | 28 | 35 |
+| d | 32 | 32 | 28 | &#8212; | 40 |
+| e | 22 | 22 | 35 | 40 | &#8212; |
+
+@bottom-right
+
+- merge a,b; new values are the average
+- (20+30)/2 = 25; (30+34)/2 = 32; (23+21)/2 = 22
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@left
+
+![Slide image 10](assets/lect12c-more_gene_trees/image_010.svg)
+
+- merge a,b; new values are the average
+- (20+30)/2 = 25; (30+34)/2 = 32; (23+21)/2 = 22
+
+@right
+
+|  | (a,b) | c | d | e |
+| (a,b) | &#8212; | 25 | 32 | 22 |
+| c | 25 | &#8212; | 28 | 35 |
+| d | 32 | 28 | &#8212; | 40 |
+| e | 22 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Find new lowest value*
+
+@left
+
+![Slide image 11](assets/lect12c-more_gene_trees/image_011.svg)
+
+@right
+
+|  | (a,b) | c | d | e |
+| (a,b) | &#8212; | 25 | 32 | 22 |
+| c | 25 | &#8212; | 28 | 35 |
+| d | 32 | 28 | &#8212; | 40 |
+| e | 22 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@left
+
+![Slide image 11](assets/lect12c-more_gene_trees/image_011.svg)
+
+@right
+
+|  | (a,b) | c | d | e |
+| (a,b) | &#8212; | 25 | 32 | 22 |
+| c | 25 | &#8212; | 28 | 35 |
+| d | 32 | 28 | &#8212; | 40 |
+| e | 22 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@left
+
+![Slide image 12](assets/lect12c-more_gene_trees/image_012.svg)
+
+- average (a,b)-c with e-c\: 25+35 = 30
+- average (a,b)-d with e-d\: 32+40 = 36
+
+@right
+
+|  | (a,b) | c | d | e |
+| (a,b) | &#8212; | 25 | 32 | 22 |
+| c | 25 | &#8212; | 28 | 35 |
+| d | 32 | 28 | &#8212; | 40 |
+| e | 22 | 35 | 40 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@left
+
+![Slide image 13](assets/lect12c-more_gene_trees/image_013.svg)
+
+- average (a,b)-c with e-c\: 25+35 = 30
+- average (a,b)-d with e-d\: 32+40 = 36
+
+@right
+
+|  | (a,b) | c | d | e |
+| (a,b) | &#8212; | 30 | 36 | 22 |
+| c | 30 | &#8212; | 28 | 30 |
+| d | 36 | 28 | &#8212; | 36 |
+| e | 22 | 30 | 36 | &#8212; |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@left
+
+![Slide image 14](assets/lect12c-more_gene_trees/image_014.svg)
+
+@top-right
+
+|  | ((a,b),e) | c | d |
+| ((a,b),e) | &#8212; | 30 | 36 |
+| c | 30 | &#8212; | 28 |
+| d | 36 | 28 | &#8212; |
+
+@bottom-right
+
+- average (a,b)-c with e-c\: 25+35 = 30
+- average (a,b)-d with e-d\: 32+40 = 36
+
+=== layout: two-panels
+@replaceme
+
+# *Find new lowest value*
+
+@left
+
+![Slide image 15](assets/lect12c-more_gene_trees/image_015.svg)
+
+@right
+
+|  | ((a,b),e) | c | d |
+| ((a,b),e) | &#8212; | 30 | 36 |
+| c | 30 | &#8212; | 28 |
+| d | 36 | 28 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Find new lowest value*
+
+@left
+
+![Slide image 16](assets/lect12c-more_gene_trees/image_016.svg)
+
+@right
+
+|  | ((a,b),e) | c | d |
+| ((a,b),e) | &#8212; | 30 | 36 |
+| c | 30 | &#8212; | 28 |
+| d | 36 | 28 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@left
+
+![Slide image 16](assets/lect12c-more_gene_trees/image_016.svg)
+
+@right
+
+|  | ((a,b),e) | c | d |
+| ((a,b),e) | &#8212; | 30 | 36 |
+| c | 30 | &#8212; | 28 |
+| d | 36 | 28 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@left
+
+![Slide image 17](assets/lect12c-more_gene_trees/image_017.svg)
+
+- average c-((a,b),e) with d-((a,b),e)\:
+- (30+36)/2 = 33
+
+@right
+
+|  | ((a,b),e) | c | d |
+| ((a,b),e) | &#8212; | 30 | 36 |
+| c | 30 | &#8212; | 28 |
+| d | 36 | 28 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@left
+
+![Slide image 18](assets/lect12c-more_gene_trees/image_018.svg)
+
+- average c-((a,b),e) with d-((a,b),e)\:
+- (30+36)/2 = 33
+
+@right
+
+|  | ((a,b),e) | c | d |
+| ((a,b),e) | &#8212; | 33 | 33 |
+| c | 33 | &#8212; | 28 |
+| d | 33 | 28 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@left
+
+![Slide image 19](assets/lect12c-more_gene_trees/image_019.svg)
+
+@right
+
+|  | ((a,b),e) | (c,d) |
+| ((a,b),e) | &#8212; | 33 |
+| (c,d) | 33 | &#8212; |
+
+=== layout: two-panels
+@replaceme
+
+# *Take the final distance*
+
+@left
+
+![Slide image 20](assets/lect12c-more_gene_trees/image_020.svg)
+
+@right
+
+|  | ((a,b),e) | (c,d) |
+| ((a,b),e) | &#8212; | 33 |
+| (c,d) | 33 | &#8212; |
+
+=== layout: two-panels
+
+# *Summarize Merges*
+
+@left
+
+- 1. a-b merge
+  - distance\: 17
+- 2. (a,b)-e merge
+  - distance\: 22
+- 3. c-d merge
+  - distance\: 28
+- 4. ((a,b),e)-(c,d)
+  - distance\: 33
+
+@right
+
+- Distances were taken from all the minimal distances.
+  - Gold colored boxes
+
+=== layout: two-panels
+@replaceme
+
+# *Draw the gene tree*
+
+@left
+
+- a-b\:
+  - 17 &#8594; 8.5
+- (a,b)-e\:
+  - 22 &#8594; 11
+    - 11-8.5 = 2.5
+- c-d\:
+  - 28 &#8594; 14
+- ((a,b),e)-(c,d)\:
+  - 33&#8594; 16.5
+    - 16.5-11 = 5.5
+    - 16.5-14 = 2.5
+
+@right
+
+![Slide image 21](assets/lect12c-more_gene_trees/image_021.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 21](assets/lect12c-more_gene_trees/image_021.png)
+
+=== layout: section
+
+# Hartl Question 17.27
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+- Note\: there is no A column and no D row
+  - it saves space
+
+@top-right
+
+![Slide image 22](assets/lect12c-more_gene_trees/image_022.svg)
+
+@bottom-right
+
+|  | B | C | D |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | 5 |
+
+=== layout: stacked-panels
+@replaceme
+
+# *Question 17.27*
+
+@top
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+
+@bottom
+
+|  | New column | B | C | D |
+| A |  | 8 | 15 | 19 |
+| B |  |  | 18 | 16 |
+| C |  |  |  | 5 |
+| New row |  |  |  |  |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+
+@top-right
+
+![Slide image 23](assets/lect12c-more_gene_trees/image_023.svg)
+
+@bottom-right
+
+|  | A | B | C | D |
+| A | x | 8 | 15 | 19 |
+| B |  | x | 18 | 16 |
+| C |  |  | x | 5 |
+| D |  |  |  | x |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+- Note\: there is no A column and no D row
+  - it saves space
+
+@top-right
+
+![Slide image 23](assets/lect12c-more_gene_trees/image_022.svg)
+
+@bottom-right
+
+|  | B | C | D |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | 5 |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+
+@top-right
+
+![Slide image 24](assets/lect12c-more_gene_trees/image_024.svg)
+
+@bottom-right
+
+|  | B | C | D |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | [5]{color=#FF00FF} |
+
+=== layout: four-panels
+@replaceme
+
+# *Question 17.27*
+
+@top-left
+
+- Merge C and D
+
+@top-right
+
+![Slide image 25](assets/lect12c-more_gene_trees/image_025.svg)
+
+@bottom-left
+
+|  | B | C | D |
+| A | 8 | [15]{color=#0066CC} | [19]{color=#0066CC} |
+| B |  | [18]{color=#CC3300} | [16]{color=#CC3300} |
+| C |  |  | [5]{color=#FF00FF} |
+
+@bottom-right
+
+- magenta number goes away
+- average colored numbers together
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+- Result of the merge
+
+@top-right
+
+![Slide image 26](assets/lect12c-more_gene_trees/image_026.svg)
+
+@bottom-right
+
+|  | B | (C,D) |
+| A | 8 | [17]{color=#0066CC} |
+| B |  | [17]{color=#CC3300} |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+- Finish the matrix shrinking
+
+@top-right
+
+![Slide image 27](assets/lect12c-more_gene_trees/image_027.svg)
+
+@bottom-right
+
+|  | B | (C,D) |
+| A | 8 | 17 |
+| B |  | 17 |
+
+=== layout: four-panels
+@replaceme
+
+# *Question 17.27*
+
+@top-left
+
+- Finish the matrix shrinking
+
+@top-right
+
+![Slide image 28](assets/lect12c-more_gene_trees/image_028.svg)
+
+@bottom-left
+
+|  | B | (C,D) |
+| A | [8]{color=#CC00CC} | [17]{color=#009999} |
+| B |  | [17]{color=#009999} |
+
+@bottom-right
+
+- magenta number goes away
+- average blue numbers together
+
+=== layout: four-panels
+@replaceme
+
+# *Question 17.27*
+
+@top-left
+
+- Create the gene tree
+
+@top-right
+
+![Slide image 29](assets/lect12c-more_gene_trees/image_029.svg)
+
+@bottom-left
+
+|  | (C,D) |
+| (A,B) | [17]{color=#006699} |
+
+@bottom-right
+
+- A
+- B
+- C
+- D
+
+=== layout: two-panels
+@replaceme
+
+# *Question 17.27*
+
+@left
+
+|  | B | C | D |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | 5 |
+
+@right
+
+- Create the gene tree
+
+- A
+- B
+- C
+- D
+
+![Slide image 30](assets/lect12c-more_gene_trees/image_030.svg)
+
+- 4.5
+
+- 2.5
+
+- 4.0
+
+- 6.0
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 31](assets/lect12c-more_gene_trees/image_031.jpg)
+
+- *Gene trees may not coincide with species trees*
+
+- A gene tree may not coincide with a species tree because of the sorting of polymorphic alleles in the different lineages.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Start with the smallest distance in the matrix.
+- Update the matrix after each merge.
+- Keep earlier branches when adding a new cluster.
+- Check the final tree against the original distances.
+
+=== layout: theend
+
+# THE END
+
+=== layout: section
+
+# Former Textbook Example of Gene Tree by Distance Method
+

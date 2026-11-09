@@ -1,0 +1,746 @@
+=== layout: title-slide
+
+# Lecture 14C
+
+## Hardy-Weinberg
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Relate allele frequencies to expected genotype frequencies.
+- Use p + q = 1 and the Hardy-Weinberg equation.
+- Solve the worked population-frequency problems.
+- Extend the method to three alleles and X-linked genes.
+
+=== layout: section
+
+# Hardy-Weinberg
+
+=== layout: one-panel
+@replaceme
+
+# *Hardy-Weinberg principle*
+
+@body
+
+- States that the frequencies of alleles and genotypes in a population&#8217;s gene pool will remain constant over generations unless acted upon by agents other than Mendelian segregation and recombination of alleles.
+
+- allele
+- frequencies
+- dominant or
+- recessive
+
+- genotype
+- frequencies
+- homozygous or
+- heterozygous
+
+- ?
+
+=== layout: one-panel
+@replaceme
+
+# *Hardy-Weinberg Principle*
+
+@body
+
+- HW
+
+- allele
+- frequencies
+- dominant or
+- recessive
+
+- genotype
+- frequencies
+- homozygous or
+- heterozygous
+
+- The [*Hardy-Weinberg principle*]{color=#339966} describes a mathematical relationship between allele frequencies and genotype frequencies and allows the prediction of a population&#8217;s genotype frequencies from its allele frequencies.
+
+=== layout: one-panel
+
+# *Hardy-Weinberg Equation*
+
+@body
+
+- The Hardy-Weinberg equation describes the genetic makeup we expect for a [population that is not evolving]{color=red} at a particular locus
+- If the observed genetic makeup of the population [differs from expectations]{color=#5983B0} under Hardy-Weinberg, it suggests that the [population may be evolving]{color=#5983B0}
+
+=== layout: one-panel
+
+# *Hardy-Weinberg Equilibrium*
+
+@body
+
+- In a population where gametes contribute to the next generation randomly and Mendelian inheritance occurs
+  - allele and genotype frequencies remain constant from generation to generation
+- Such a population is in [Hardy-Weinberg equilibrium]{color=red}
+
+=== layout: one-panel
+
+# *Two Mathematical Rules of Hardy-Weinberg*
+
+@body
+
+- p + q = 1
+  - p = dominant allele frequency
+  - q = recessive allele frequency
+- p^2^ + 2pq + q^2^ = 1
+  - p^2^ = homozygote dominant
+  - 2pq = heterozygotes
+  - q^2^ = homozygote recessive
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect14c-hardy_weinberg_1/image_001.jpg)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- If _p_ and _q_ represent the relative frequencies of the only two possible alleles in a population at a particular locus, then
+  - _p^2^_ + 2_pq_ + _q^2^_ = 1
+  - where _p^2^_ and _q^2^_ represent the frequencies of the homozygous genotypes and 2_pq_ represents the frequency of the heterozygous genotype
+
+- HW
+
+- allele
+- frequencies
+- dominant or
+- recessive
+
+- genotype
+- frequencies
+- homozygous or
+- heterozygous
+
+=== layout: one-panel
+
+# *Three Types of H-W Problems*
+
+@body
+
+- Type 1\:
+  - Given all allele frequencies, p and q
+  - Calculate expected genotype frequencies.
+- Type 2\:
+  - Given one or more genotype frequencies, p^2^
+  - Calculate allele frequencies.
+- Type 3\:
+  - Given all genotype frequencies,
+  - Determine whether or not population is evolving
+  - uses Chi-Square
+
+=== layout: section
+
+# Wildflower Example
+
+=== layout: two-panels
+
+# *Wildflower Example*
+
+@left
+
+- For example, imagine a population of 500 wildflower plants with two alleles, C^R^ and C^W^, for a locus that codes for flower pigment.
+  - These alleles show incomplete dominance; thus, each genotype has a distinct phenotype.
+- Incomplete dominance\:
+  - Plants homozygous for the C^R^ allele (C^R^C^R^) produce red pigment and have [red flowers]{color=red};
+  - plants homozygous for the C^W^ allele (C^W^C^W^) produce no red pigment and have [white flowers]{color=gray};
+  - and heterozygotes (C^R^C^W^) produce some red pigment and have [pink flowers]{color=#EC9BA4}.
+
+@right
+
+![Slide image 2](assets/lect14c-hardy_weinberg_1/image_002.png)
+
+=== layout: two-panels
+
+# *Allele Frequency*
+
+@left
+
+- Each allele has a frequency (proportion) in the population.
+- For example, suppose our population has\:
+  - [320 plants with red flowers]{color=red}
+  - [160 with pink flowers]{color=#EC9BA4}
+  - [20 with white flowers]{color=gray}
+- Because these are diploid organisms, these 500 individuals have a total of 1,000 copies of the gene for flower color.
+
+@right
+
+![Slide image 2](assets/lect14c-hardy_weinberg_1/image_002.png)
+
+=== layout: two-panels
+
+# *Allele Counts*
+
+@left
+
+- For example, consider a population of wildflowers that is incompletely dominant for color
+  - [320 red flowers (C^R^C^R^)]{color=red}
+  - [160 pink flowers (C^R^C^W^)]{color=#EC9BA4}
+  - [20 white flowers (C^W^C^W^)]{color=gray}
+- Calculate the number of copies of each allele
+  - C^R^ = (320 &#215; 2) + 160 = 800
+  - C^W^ = (20 &#215; 2) + 160 = 200
+
+@right
+
+![Slide image 2](assets/lect14c-hardy_weinberg_1/image_002.png)
+
+=== layout: one-panel
+
+# *Allele Frequency*
+
+@body
+
+![Slide image 3](assets/lect14c-hardy_weinberg_1/image_003.png)
+
+- To calculate the frequency of each allele
+  - p = freq C^R^ = 800 / (800 + 200) = 0.8
+  - q = freq C^W^ = 200 / (800 + 200) = 0.2
+- The sum of alleles is always 1
+  - 0.8 + 0.2 = 1
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect14c-hardy_weinberg_1/image_004.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect14c-hardy_weinberg_1/image_005.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 6](assets/lect14c-hardy_weinberg_1/image_006.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Apply Hardy-Weinberg*
+
+@body
+
+- [The probability of producing an AA homozygote is p &#215; p = p^2^.]{color=red}
+- [The probability of producing an aa homozygote is q &#215; q = q^2^.]{color=gray}
+- [A heterozygote may be produced by]{color=#EC9BA4}
+    - [an A sperm uniting with an a egg or]{color=#EC9BA4}
+    - [an a sperm uniting with an A egg]{color=#EC9BA4}
+  - [Each of these events occurs with probability p&#160;&#215;&#160;q, so the total probability of forming an Aa zygote is 2pq.]{color=#EC9BA4}
+
+![Slide image 7](assets/lect14c-hardy_weinberg_1/image_007.jpg)
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+|  | *p (0.8)* | *q (0.2)* |
+| *p (0.8)* | pp = 0.8 &#215; 0.8 = 0.64 | pq = 0.8 &#215; 0.2 = 0.16 |
+| *q (0.2)* | pq = 0.8 &#215; 0.2 = 0.16 | qq = 0.2 &#215; 0.2 = 0.04 |
+
+@right
+
+- The frequency of genotypes can be calculated\:
+  - C^R^C^R^\: p^2^ = (0.8)2 = 0.64
+  - C^R^C^W^\: 2pq = 2(0.8)(0.2) = 0.32
+    - (note\: there are two of these)
+  - C^W^C^W^\: q^2^ = (0.2)2 = 0.04
+- The frequency of genotypes can be confirmed using a Punnett square
+- For the wildflowers
+  - 0.64 + 0.32 + 0.04 = 1.
+
+=== layout: one-panel
+@replaceme
+
+# Wildflower Genotype Frequencies
+
+@body
+
+![Slide image 8](assets/lect14c-hardy_weinberg_1/image_008.png)
+
+![Slide image 9](assets/lect14c-hardy_weinberg_1/image_009.svg)
+
+
+=== layout: one-panel
+@replaceme
+
+# Wildflower Allele Frequencies
+
+@body
+
+![Slide image 10](assets/lect14c-hardy_weinberg_1/image_010.png)
+
+- *64%* *_C^R^C^R^_**, 32%* *_C^R^C^W^_**, and 4%* *_C^W^C^W^_*
+
+- *64%* *_C^R^_*  *(from* *_C^R^C^R^_* *plants)*
+
+- *16%* *_C^R^_*  *(from* *_C^R^C^W^_* *plants)*
+
+- *4%* *_C^W^_*  *(from* *_C^W^C^W^_* *plants)*
+
+- *16%* *_C^W^_*  *(from* *_C^R^C^W^_* *plants)*
+
+- *=   80%* *_C^R^_* *= 0.8 =* *_p_*
+
+- *=   20%* *_C^W^_* *= 0.2 =* *_q_*
+
+- *+*
+
+- *+*
+
+- *64%* *_C^R^C^R^_**, 32%* *_C^R^C^W^_**, and 4%* *_C^W^C^W^_* *plants*
+
+- *Gametes of this generation\:*
+
+- *With random mating, these gametes will result in the same mix of genotypes in the next generation\:*
+
+=== layout: two-panels
+@replaceme
+
+# *A plot of p^2^, 2pq and q^2^ as a function of the allele frequencies (p and q)*
+
+@left
+
+![Slide image 11](assets/lect14c-hardy_weinberg_1/image_011.jpg)
+
+@right
+
+- The frequency of the heterozygote Aa (2pq) is highest where A (p) or
+- a (q) are in the range 0.33 to 0.67
+
+=== layout: section
+
+# Applications
+
+=== layout: two-panels
+
+# *Tay-Sachs Disease*
+
+@left
+
+- 95% of all the alleles in the population are _wildtype_, but 5% of the alleles are the recessive allele which causes Tay-Sachs disease.
+- Assuming H-W, what frequency of the population would you expect to suffer from Tay-Sachs disease?
+
+@right
+
+![Slide image 12](assets/lect14c-hardy_weinberg_1/image_012.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect14c-hardy_weinberg_1/image_013.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 14](assets/lect14c-hardy_weinberg_1/image_014.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Using Allele Frequencies in Genetic Counseling*
+
+@body
+
+![Slide image 15](assets/lect14c-hardy_weinberg_1/image_015.jpg)
+
+=== layout: multiple-choice
+
+@question
+
+Cystic fibrosis is a genetic disorder in homozygous recessives that causes death during the teenage years.
+
+- If 9 in 10,000 newborn babies have the disease, what are the expected frequencies of the dominant (A1) and recessive (A2) alleles according to the Hardy-Weinberg model?
+  - A) f(A1) = 0.9997, f(A2) = 0.0003
+  - B) f(A1) = 0.9800, f(A2) = 0.0200
+  - C) f(A1) = 0.9700, f(A2) = 0.0300
+  - D) f(A1) = 0.9604, f(A2) = 0.0392
+
+@answer
+
+[Answer\: C]{color=red}
+
+=== layout: one-panel
+
+# *Solution*
+
+@body
+
+- q^2^ = 9/10000 = 0.0009
+- q = sqrt(0.0009) = 0.03
+  - even number, what a surprise
+- p = 1-q = 0.97
+- f(A1) = 0.97; f(A2) = 0.03 =
+- Answer\: C
+- Frequency of Heterozygote Carriers
+  - 2pq = 0.058
+  - 1 in 17 individuals are a carrier
+
+=== layout: one-panel
+
+# *Cystic Fibrosis &#8211; New Estimate*
+
+@body
+
+- New Estimate\: 1 in 1700 newborns have cystic fibrosis&#8230;
+  - disorder of pancreas and lungs &#8211; recessive genes
+  - q^2^ = 1/1700 = 0.00059
+  - q = 0.024
+  - p = 1-0.024 = 0.976
+- Frequency of heterozygote carriers\:
+  - 2pq = 2&#215;0.976&#215;0.024 = 0.047
+  - 1 in 21 is a carrier
+
+=== layout: one-panel
+
+# *Prevalence of Cystic Fibrosis in different ethnic groups*
+
+@body
+
+![Slide image 16](assets/lect14c-hardy_weinberg_1/image_016.png)
+
+=== layout: section
+
+# What percentage of population carries allele for PKU? causes mental retardation &#8211; recessive alleles
+
+=== layout: one-panel
+
+# *PKU Hardy Weinberg*
+
+@body
+
+- We know that frequency of homozygous recessive individuals (q^2^ in the Hardy-Weinberg theorem) = 1 in 10,000 or 0.0001.
+  - q^2^ = 0.0001
+- The frequency of the recessive allele (q) is the square root of 0.0001 = 0.01.
+  - q = 0.01
+- The frequency of normal alleles is
+  - p = 1 - q = 1 - 0.01 = 0.99
+- The frequency of carriers is
+  - 2pq = 2&#215;0.99&#215;0.01 = 0.0198
+  - or approximately 2% (1 in 50) of the U.S. population
+
+=== layout: one-panel
+
+# *Frequency of Heterozygous Genotype*
+
+@body
+
+- Frequencies\:
+  - 1 in 10,000 are affected by PKU disorder
+  - 1 in 50 carry the PKU allele.
+- Important implication of Hardy-Weinberg principle is that
+  - for a rare allele, the frequency of heterozygotes far exceeds the frequency of the rare homozygote.
+- [Why is this the case? What does this mean?]{color=red}
+
+=== layout: multiple-choice
+
+@question
+
+Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and must, therefore, have at least one copy of the dominant PTC taster allele.
+
+- If this population conforms to Hardy-Weinberg expectations for this gene, what percentage of the population must be heterozygous for this trait?
+  - A) 16%
+  - B) 32%
+  - C) 40%
+  - D) 48%
+
+@answer
+
+[Answer\: D]{color=red}
+
+=== layout: one-panel
+
+# *Solution*
+
+@body
+
+- 1-0.64 = q^2^
+- q = sqrt(0.36) = 0.6
+- p = 1-q = 0.4
+- 2pq = 0.4\*0.6\*2 = 0.48
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 17](assets/lect14c-hardy_weinberg_1/image_017.png)
+
+- What does the 1/14,000 represent?
+- A. p^2^
+- B. 2pq
+- C. q^2^
+- D. p
+- E. q
+- F. p^2^ + 2pq
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect14c-hardy_weinberg_1/image_017.png)
+
+- q^2^ = 1/14000
+- q = sqrt(1/14000) = 0.0085
+- p = 1-q = 0.9915
+- 2pq = 0.017 (about 1 in 60)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 18](assets/lect14c-hardy_weinberg_1/image_018.png)
+
+- What does the 10% represent?
+- A. p^2^
+- B. 2pq
+- C. q^2^
+- D. p
+- E. q
+- F. p^2^ + 2pq
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 18](assets/lect14c-hardy_weinberg_1/image_018.png)
+
+- q^2^ = 0.10
+- q = sqrt(0.1) = 0.316
+- p = 1-q = 0.684
+- 2pq = 2\*0.316\*0.684 = 0.43
+- f = 2pq/(p^2^+2pq) = 2pq/(1&#8211;q^2^)
+- f = 0.43/0.9 = 0.48
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+
+- What does the 60% represent?
+- A. p^2^
+- B. 2pq
+- C. q^2^
+- D. p
+- E. q
+- F. p^2^ + 2pq
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+
+- p^2^ + 2pq = 0.6  &#8592; how to solve?
+- q^2^ = 1 &#8211; 0.6 = 0.4
+- q = sqrt(0.4) = 0.63
+- p = 1 &#8211; q = 0.37
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+
+- q = 0.63
+- p = 0.37
+- f = homozygote dominant that grew
+- f = p^2^ / (p^2^ + 2pq)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+
+- q^2^ = 1 &#8211; 0.6 = 0.4
+- q = sqrt(0.4) = 0.63
+- p = 1-q = 0.37 (a)
+- p^2^ = 0.372 = 0.14
+- f = 0.14/0.6 = 0.23
+
+=== layout: section
+
+# H-W for Three Alleles
+
+=== layout: one-panel
+
+# *Genes with Multiple Alleles*
+
+@body
+
+- For genes with multiple alleles, the Hardy-Weinberg genotype proportions are obtained by expanding a binomial expression.
+
+=== layout: one-panel
+@replaceme
+
+# *Punnett square showing the results of random mating with three alleles*
+
+@body
+
+![Slide image 20](assets/lect14c-hardy_weinberg_1/image_020.jpg)
+
+- p1 + p^2^ + p3 = 1
+
+=== layout: one-panel
+
+# *Example\: A-B-O Blood Type*
+
+@body
+
+- The A-B-O blood types are determined by three alleles, _IA, IB,_ and _I_, with frequencies _p, q,_ and _r,_ respectively.
+- Genotypes can be calculated by expanding the trinomial
+  - (_p_ + _q_ + _r_)2 = _p^2^_ + _q^2^_ + _r_2 + 2_pq_ + 2_qr_ + 2_pr_
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- [*Blood Type*]{underline=true}	[*Genotype*]{underline=true}	[*Frequency*]{underline=true}
+- 	A		_IAIA_			_p^2^_
+- 			_IAi_			2_pr_
+- 	B		_IBIB_			_q^2^_
+- 			_IBi_			2_qr_
+- 	AB		_IAIB_			2_pq_
+- 	O		_ii_			_r_2
+
+=== layout: one-panel
+@replaceme
+
+# *H-W for human blood groups*
+
+@body
+
+![Slide image 21](assets/lect14c-hardy_weinberg_1/image_021.jpg)
+
+- 3977 Swiss people
+- &#8211; 0.27 A, 0.06 B, and 0.67 O
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect14c-hardy_weinberg_1/image_022.png)
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 22](assets/lect14c-hardy_weinberg_1/image_022.png)
+
+- p = 0.16; q = 0.10; r = 0.74
+
+@top-right
+
+![Slide image 23](assets/lect14c-hardy_weinberg_1/image_023.svg)
+
+@bottom-right
+
+| Blood Type | Genotype | Frequency |
+| A | IAIA | p^2^ |
+|  | IAi | 2pr |
+| B | IBIB | q^2^ |
+|  | IBi | 2qr |
+| AB | IAIB | 2pq |
+| O | ii | r^2^ |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 23](assets/lect14c-hardy_weinberg_1/image_022.png)
+
+- p = 0.16; q = 0.10; r = 0.74
+
+@top-right
+
+![Slide image 24](assets/lect14c-hardy_weinberg_1/image_024.svg)
+
+@bottom-right
+
+| Blood Type | Genotype | Frequency |
+| A | IAIA = p^2^ | 0.026 |
+|  | IAi = 2pr | 0.237 |
+| B | IBIB = q^2^ | 0.010 |
+|  | IBi = 2qr | 0.148 |
+| AB | IAIB = 2pq | 0.032 |
+| O | ii = r^2^ | 0.548 |
+
+=== layout: section
+
+# X-linked Alleles
+
+=== layout: one-panel
+
+# *H-W for X-Linked Genes*
+
+@body
+
+- For X-linked genes, allele frequencies are estimated from the frequencies of the genotypes in males.
+- The frequencies of the genotypes in females are obtained by applying the Hardy-Weinberg principle to these estimated allele frequencies. This assumes that the allele frequencies are equal in males and females.
+
+=== layout: one-panel
+@replaceme
+
+# *Allele and genotype frequencies for a X-linked gene in males and females*
+
+@body
+
+![Slide image 25](assets/lect14c-hardy_weinberg_1/image_025.jpg)
+
+- Males - Genotype frequency
+- is same as allele frequency
+
+- q^2^ affected
+
+- q affected
+

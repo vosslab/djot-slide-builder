@@ -1,0 +1,551 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 14E
+
+## Chi-Square Test (&chi;^2^) for Hardy-Weinberg
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Calculate expected genotype counts from allele frequencies.
+- Complete a chi-square calculation for population data.
+- Choose degrees of freedom for the worked examples.
+- Interpret observed differences from Hardy-Weinberg expectations.
+
+=== layout: section
+
+# Hardy-Weinberg and Chi-square test
+
+=== layout: one-panel
+@replaceme
+
+# *Predicting Genotype Frequencies*
+
+@body
+
+- With the Hardy-Weinberg principle, allele frequencies can be used to predict the genotype frequencies.
+- For the MN blood type example,
+  - p = 0.5395 and q = 0.4605
+- The predicted genotype frequencies are
+    - LMLM	p2 = (0.5395)2 = 0.2911
+    - LMLN	2pq = 2 (0.5395) (0.4605) = 0.4968
+    - LNLN	q2 = (0.4605)2 = 0.2121
+
+![Slide image 1](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
+
+=== layout: one-panel
+
+
+@body
+
+- Do these predictions fit the data?
+- First we must calculate the predicted genotype numbers by multiplying the Hardy-Weinberg frequencies by the sample size (6129).
+  - [*Genotype	Predicted Number*]{underline=true}
+  - LMLM					0.2911 &#61620; 6129 = 1784.2
+  - LMLN		0.4968 &#61620; 6129 = 3044.8
+  - LNLN		0.2121 &#61620; 6129 = 1300.0
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Chi-Square Table*
+
+@left
+
+![Slide image 2](assets/lect14e-hardy_weinberg_chi_square/image_002.svg)
+
+@top-right
+
+| *genotype* | *observed* |  |  |  |  |
+| LMLM | 1787 |  |  |  |  |
+| LMLN | 3039 |  |  |  |  |
+| LNLN | 1303 |  |  |  |  |
+|  |  |  |  |  |  |
+
+@bottom-right
+
+![Slide image 2](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Chi-Square Table*
+
+@top
+| *genotype* | *observed* | *H-W expected* | *(o-e)* | *(o-e)2* | *(o-e)2/e* |
+| LMLM | 1787 | 1784.2 |  |  |  |
+| LMLN | 3039 | 3044.8 |  |  |  |
+| LNLN | 1303 | 1300.0 |  |  |  |
+|  |  |  |  |  |  |
+
+@bottom
+
+![Slide image 3](assets/lect14e-hardy_weinberg_chi_square/image_003.svg)
+
+![Slide image 3](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Chi-Square Table*
+
+@top
+| *genotype* | *observed* | *H-W expected* | *(o-e)* |  |  |
+| LMLM | 1787 | 1784.2 | 2.8 |  |  |
+| LMLN | 3039 | 3044.8 | -5.8 |  |  |
+| LNLN | 1303 | 1300.0 | 3 |  |  |
+|  |  |  |  |  |  |
+
+@bottom
+
+![Slide image 3](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Chi-Square Table*
+
+@top
+| *genotype* | *observed* | *H-W expected* | *(o-e)* | *(o-e)2* | *(o-e)2/e* |
+| LMLM | 1787 | 1784.2 | 2.8 | 7.84 | 0.0044 |
+| LMLN | 3039 | 3044.8 | -5.8 | 33.64 | 0.0110 |
+| LNLN | 1303 | 1300.0 | 3 | 9.00 | 0.0069 |
+|  |  |  |  |  |  |
+
+@bottom
+
+![Slide image 4](assets/lect14e-hardy_weinberg_chi_square/image_004.svg)
+
+![Slide image 4](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
+
+=== layout: stacked-panels
+@replaceme
+
+# *Chi-Square Table*
+
+@top
+| *genotype* | *observed* | *H-W expected* | *(o-e)* | *(o-e)2* | *(o-e)2/e* |
+| LMLM | 1787 | 1784.2 | 2.8 | 7.84 | 0.0044 |
+| LMLN | 3039 | 3044.8 | -5.8 | 33.64 | 0.0110 |
+| LNLN | 1303 | 1300.0 | 3 | 9.00 | 0.0069 |
+|  |  |  |  | X2 sum | 0.0223 |
+
+@bottom
+
+![Slide image 5](assets/lect14e-hardy_weinberg_chi_square/image_005.svg)
+
+![Slide image 5](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Next, we check for agreement between the observed and predicted numbers by calculating a chi-square statistic.
+- This [chi-square has 3 &#8211; 2 = 1 degree of freedom]{color=#990099} because\:
+  - The sum of the three predicted numbers is fixed by the sample size
+  - The allele frequency _p_ was obtained directly from the sample data.
+
+![Slide image 6](assets/lect14e-hardy_weinberg_chi_square/image_006.svg)
+
+=== layout: two-panels
+
+# *WAIT, why subtract 2*
+
+@left
+
+![Slide image 7](assets/lect14e-hardy_weinberg_chi_square/image_007.png)
+
+@right
+
+- This [chi-square has]{color=#990099}
+- [3 &#8211; 2 = 1 degree of freedom]{color=#990099} because\:
+  - Subtract 1 because\:
+    - p + q = 1
+  - Subtract 1 because\:
+    - p2 + 2pq + q2 = 1
+- additional restrictions on the data, remove degrees of freedom
+
+=== layout: one-panel
+
+# *Why 1 degree of freedom?*
+
+@body
+
+- How many degrees of freedom does the test have?
+- You have to think about how many quantities are really free to vary
+  - remember that we used the population to estimate p and q, then we used p and q to get p2, 2pq, and q2.
+  - So really, once we decided on a value for p, everything else was decided for us. Whatever p was, q had to be 1-p, and p2, 2pq, and q2 were set as well.
+- SO, the moral of the story is, since only p is able to vary, there is ONLY ONE degree of freedom in this chi-square test.
+
+=== layout: one-panel
+@replaceme
+
+# *df = 1*
+
+@body
+
+![Slide image 8](assets/lect14e-hardy_weinberg_chi_square/image_008.png)
+
+=== layout: one-panel
+
+# *H-W &#967;2 Conclusion*
+
+@body
+
+- [Results]{color=#168253}
+  - &#967;2 value = 0.0223
+  - Degrees of freedom\: 1
+  - Critical value from _Table_\: 3.841
+  - Accept the Null Hypothesis (H0)\: population is NOT evolving
+- [Conclusions\:]{color=#168253}
+  - The predicted genotype frequencies are in agreement with the observed frequencies.
+  - In this population, the M-N genotypes are in Hardy-Weinberg proportions.
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 9](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
+
+![Slide image 10](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
+
+@top-right
+
+![Slide image 11](assets/lect14e-hardy_weinberg_chi_square/image_011.svg)
+
+@bottom-left
+
+| Day 7 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 0.234 | 0.499 | 0.266 |
+| observed | 0.227 | 0.514 | 0.259 |
+
+@bottom-right
+
+- [&#215; 216]{color=#990099}
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 11](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
+
+@top-right
+
+![Slide image 11](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
+
+@bottom-left
+
+![Slide image 12](assets/lect14e-hardy_weinberg_chi_square/image_012.svg)
+
+@bottom-right
+
+| Day 7 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 50.54 | 107.8 | 57.46 |
+| observed | 49 | 111 | 56 |
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 12](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
+
+@top-right
+
+![Slide image 12](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
+
+@bottom-left
+
+![Slide image 13](assets/lect14e-hardy_weinberg_chi_square/image_013.svg)
+
+@bottom-right
+
+| Day 7 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 50.54 | 107.8 | 57.46 |
+| observed | 49 | 111 | 56 |
+| diff | 1.54 | 3.2 | 1.46 |
+| (o-e)2/e | 0.0469 | 0.0950 | 0.0371 |
+| SUM | [0.179]{color=#CC00CC} | < 3.84 | [*ACCEPT*]{color=#168253} |
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 13](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
+
+![Slide image 13](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
+
+@top-right
+
+![Slide image 14](assets/lect14e-hardy_weinberg_chi_square/image_014.svg)
+
+@bottom-left
+
+| Day 21 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 0.334 | 0.488 | 0.178 |
+| observed | 0.272 | 0.613 | 0.116 |
+
+@bottom-right
+
+- [&#215; 173]{color=#990099}
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 14](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
+
+@top-right
+
+![Slide image 14](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
+
+@bottom-left
+
+![Slide image 15](assets/lect14e-hardy_weinberg_chi_square/image_015.svg)
+
+@bottom-right
+
+| Day 21 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 57.78 | 84.42 | 30.79 |
+| observed | 47 | 106 | 20 |
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 15](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
+
+@top-right
+
+![Slide image 15](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
+
+@bottom-left
+
+![Slide image 16](assets/lect14e-hardy_weinberg_chi_square/image_016.svg)
+
+@bottom-right
+
+| Day 21 |  |  |  |
+|  | p2 | 2pq | q2 |
+| hardy-weinberg | 57.78 | 84.42 | 30.79 |
+| observed | 47 | 106 | 20 |
+| diff | 10.78 | -21.58 | 10.79 |
+| (o-e)2/e | 2.01 | 5.52 | 3.78 |
+| SUM | [11.31]{color=#CC00CC} | > 3.84 | [*REJECT*]{color=red} |
+
+=== layout: one-panel
+
+# *More H-W Resources*
+
+@body
+
+- Bozeman Science
+    - [https\://www.youtube.com/watch?v=oEBNom3K9cQ](https://www.youtube.com/watch?v=oEBNom3K9cQ)
+    - [https\://www.youtube.com/watch?v=xPkOAnK20kw](https://www.youtube.com/watch?v=xPkOAnK20kw)
+- Khan Academy
+    - [https\://www.youtube.com/watch?v=4Kbruik\_LOo](https://www.youtube.com/watch?v=4Kbruik_LOo)
+    - [https\://www.youtube.com/watch?v=oc9fJCAIRJs](https://www.youtube.com/watch?v=oc9fJCAIRJs)
+    - [https\://www.youtube.com/watch?v=D5NVlAaT-OA](https://www.youtube.com/watch?v=D5NVlAaT-OA)
+- Practice Problems
+    - [https\://www.youtube.com/watch?v=IVGEusDdJGk](https://www.youtube.com/watch?v=IVGEusDdJGk)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Expected counts equal genotype frequency times sample size.
+- Chi-square compares observed counts with expected counts.
+- Degrees of freedom depend on the model being tested.
+- Interpret the result in the context of the population.
+
+=== layout: theend
+
+# THE END
+
+=== layout: section
+
+# Final Application
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+
+- Count the alleles&#8230;
+- A1 = 18 &#215; 2 + 68 + 115 = 219
+- A2 = 68 + 90 &#215; 2 + 360 = 608
+- A3 = 115 + 360 + 349 &#215; 2 = 1173
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+
+- Find the allele frequencies&#8230;
+- p1 = 219/2000 = 0.1095
+- p2 = 608/2000 = 0.3040
+- p3 = 1173/2000 = 0.5865
+- now the expected genotype frequencies&#8230;
+- how many genotypes do we have?
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+
+- Allele frequencies&#8230;
+- p1 = 0.1095; p2 = 0.3040; p3 = 	0.5865
+- six genotypes (presented above)\:
+- p12 = 0.012				2p1p2 = 0.067
+- p22 = 0.092				2p2p3 = 0.357
+- p32 = 0.344				2p1p3 = 0.128
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+
+@top-right
+
+![Slide image 18](assets/lect14e-hardy_weinberg_chi_square/image_018.svg)
+
+@bottom-left
+
+|  | A1A1 | A1A2 | A2A2 | A1A3 | A2A3 | A3A3 |
+| expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
+| observed | 18 | 68 | 90 | 115 | 360 | 349 |
+
+@bottom-right
+
+- Six genotype frequencies\:
+- p12 = 0.012		2p1p2 = 0.067
+- p22 = 0.092		2p2p3 = 0.357
+- p32 = 0.344		2p1p3 = 0.128
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 19](assets/lect14e-hardy_weinberg_chi_square/image_019.svg)
+
+@top-right
+
+|  | A1A1 | A1A2 | A2A2 | A1A3 | A2A3 | A3A3 |
+| expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
+| observed | 18 | 68 | 90 | 115 | 360 | 349 |
+| diff | 6 | 1.4 | 2.4 | 13.4 | 3.4 | 5 |
+| (o-e)2/e | 3.0 | 0.029 | 0.062 | 1.40 | 0.032 | 0.073 |
+| SUM | [4.595]{color=#990099} | DF=3?? |  |  |  |  |
+
+@bottom-right
+
+![Slide image 20](assets/lect14e-hardy_weinberg_chi_square/image_020.png)
+
+=== layout: two-panels
+
+# *Three Degrees of Freedom*
+
+@left
+
+![Slide image 20](assets/lect14e-hardy_weinberg_chi_square/image_007.png)
+
+@right
+
+- Six classes of data
+  - two allele frequencies came from the data (total alleles minus one)
+  - The sum of the predicted numbers is fixed by the sample size
+- [This chi-square has 6 &#8211; 2 &#8211; 1 = 3 degrees of freedom]{color=red}
+- Or once you have three values (total population, p1 and p2), you can calculate all of the other values.
+
+=== layout: one-panel
+@replaceme
+
+# *df = 3*
+
+@body
+
+![Slide image 20](assets/lect14e-hardy_weinberg_chi_square/image_008.png)
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+![Slide image 21](assets/lect14e-hardy_weinberg_chi_square/image_021.svg)
+
+@right
+
+|  | A1A1 | A1A2 | A2A2 | A1A3 | A2A3 | A3A3 |
+| expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
+| observed | 18 | 68 | 90 | 115 | 360 | 349 |
+| diff | 6 | 1.4 | 2.4 | 13.4 | 3.4 | 5 |
+| (o-e)2/e | 3.0 | 0.029 | 0.062 | 1.40 | 0.032 | 0.073 |
+| SUM | [4.595]{color=#990099} | < 7.82 | must [*ACCEPT*]{color=#168253} the null hypothesis sample is in H-W equilibrium |  |  |  |
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Expected counts equal genotype frequency times sample size.
+- Chi-square compares observed counts with expected counts.
+- Degrees of freedom depend on the model being tested.
+- Interpret the result in the context of the population.
+
+=== layout: theend
+
+# THE END
+

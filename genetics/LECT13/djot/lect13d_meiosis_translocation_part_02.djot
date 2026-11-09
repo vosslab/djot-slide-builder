@@ -1,0 +1,344 @@
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Possible gametes
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+
+- Alternate (50%)
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+- Adjacent-1 (25%)
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- Adjacent-2 (25%)
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- [1]{color=#FF00FF}
+- 2
+- 3
+- [4]{color=#FF00FF}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Possible gametes
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+
+- Alternate (50%)
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- Adjacent-1 (25%)
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- Adjacent-2 (25%)
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+- 12
+
+- 4
+
+- 4
+
+- 4
+
+- 12
+
+- 12
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 4
+
+- 12
+
+- [1]{color=#FF00FF}
+- 2
+- 3
+- [4]{color=#FF00FF}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- Possible gametes
+
+![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+
+- Alternate (50%)
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- Adjacent-1 (25%)
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- Adjacent-2 (25%)
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+- 12
+
+- 4
+
+- 4
+
+- 4
+
+- [25% normal]{color=green}
+
+- 12
+
+- 12
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 4
+
+- 12
+
+- 50% really bad
+
+- [25% balanced translocation]{color=#CC00CC}
+
+- [1]{color=#FF00FF}
+- 2
+- 3
+- [4]{color=#FF00FF}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- [Adjacent-1 (25%)]{color=blue}
+  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
+
+- [Adjacent-2 (25%)]{color=blue}
+  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
+
+- [Alternate (50%)]{color=#800080}
+  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+
+- 12
+
+- 4
+
+- 4
+
+- 4
+
+- [25% normal]{color=#00CC00}
+
+- 12
+
+- 12
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 4
+
+- 12
+
+- [25% translocated]{color=#CC00CC}
+
+- [Adjacent gametes]{color=blue} have both missing portions and duplicate portions of the chromosomes
+- [Alternate gametes]{color=#800080} have exactly 100% of the genome; but the chromosomes might be scrambled
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- A phenotypically normal prospective couple seeks genetic counseling because the man knows that he has a translocation of a portion of his chromosome 4 that has been exchanged with a portion of his chromosome 12.
+- Although his translocation is balanced, he and his wife want to know the probability that his sperm will be abnormal.
+  - Assume that all gametes produce viable sperm, even if genetic material is missing
+- What is your prognosis regarding his sperm?
+  - [A. None will carry the translocation.]{color=#DDDDDD}
+  - B. 1/4 will be normal,
+    - 1/4 will have translocated chromosomes, and
+    - 1/2 will have both normal and translocated chromosomes
+  - [C. 1/2 will be normal and 1/2 will have the translocation.]{color=#DDDDDD}
+  - [D. All will carry the same translocation as the father.]{color=#DDDDDD}
+
+- [Answer\: B]{color=red}
+
+- 4
+
+- 12
+
+- 4
+
+- 4
+
+- 12
+
+=== layout: section
+
+# Robertsonian Translocations
+
+=== layout: two-panels
+
+# *Robertsonian Translocations*
+
+@left
+
+![Slide image 18](assets/lect13d-meiosis_translocation/image_018.png)
+
+@right
+
+- Two non-homologous acrocentric chromosomes undergo fusion of their short arms
+- Important in human genetics
+  - risk factor in Down syndrome when chromosome 21 is involved.
+
+=== layout: one-panel
+@replaceme
+
+# *The proposed mechanism for the creation of the long human chromosome 2 by fusion of two shorter chromosomes*
+
+@body
+
+![Slide image 19](assets/lect13d-meiosis_translocation/image_019.jpg)
+
+- Genetically unstable
+
+- Chimpanzee
+- Gorilla &#8211; have
+- 48 chromosomes
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect13d-meiosis_translocation/image_020.png)
+
+- Which human chromosomes have the potential for a Robertsonian translocation?
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 20](assets/lect13d-meiosis_translocation/image_020.png)
+
+- 13, 14, 15, 21 and 22 are the most acrocentic human chromosomes with potential for Robertsonian translocations
+
+=== layout: one-panel
+
+
+@body
+
+- A Robertsonian translocation can join chromosome 21 to any other acrocentric chromosome
+
+![Slide image 21](assets/lect13d-meiosis_translocation/image_021.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 22](assets/lect13d-meiosis_translocation/image_022.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 22](assets/lect13d-meiosis_translocation/image_022.png)
+
+- [Adjacent gametes]{color=blue} have missing portions and duplicate portions of the chromosomes
+- [Alternate gametes]{color=#800080} have exactly 100% of the genome; but the chromosomes might be scrambled
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Translocation heterozygotes form a four-chromosome pairing.
+- The segregation pattern determines the chromosome pairs.
+- Alternate segregation produces balanced products.
+- Adjacent segregation produces duplication/deletion products.
+
+=== layout: theend
+
+# THE END
+

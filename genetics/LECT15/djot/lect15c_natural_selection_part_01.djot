@@ -1,0 +1,730 @@
+=== layout: title-slide
+
+# Lecture 15C
+
+## Natural Selection
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Relate inherited variation to reproductive success.
+- Compare fitness and selection coefficients.
+- Predict allele changes under the selection examples.
+- Explain how heterozygote advantage can maintain variation.
+
+=== layout: section
+
+# Natural Selection
+
+=== layout: one-panel
+hidden: true
+
+# [*2019 Update*]{color=red}
+
+@body
+
+- [Create worksheet where students plot out the allele frequencies over time]{color=red}
+
+=== layout: section
+
+# Natural Selection
+
+=== layout: one-panel
+
+# *Natural Selection*
+
+@body
+
+- Allele frequencies change systematically in populations because of [*differential survival and reproduction*]{color=#8D281E} among genotypes.
+  - Natural selection is selection for survival and reproduction in the face of [*competition*]{color=#8D281E}.
+- Natural selection is the mechanism that changes the physical and behavioral characteristics of a species.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- *Observation #1\:* Members of a population often vary in their inherited traits
+
+![Slide image 1](assets/lect15c-natural_selection/image_001.jpg)
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+- *Observation #2\:* All species can produce more offspring than the environment can support, and many of these offspring fail to survive and reproduce
+
+@right
+
+![Slide image 2](assets/lect15c-natural_selection/image_002.jpg)
+
+- *Spore*
+- *cloud*
+
+=== layout: one-panel
+@replaceme
+
+# Observations and Inferences
+
+@body
+
+![Slide image 3](assets/lect15c-natural_selection/image_003.jpg)
+
+- *Observations*
+
+- *Individuals in a population*
+- *vary in their heritable*
+- *characteristics.*
+
+- *Organisms produce more*
+- *offspring than the*
+- *environment can support.*
+
+- *Inferences*
+
+- *Individuals that are well suited*
+- *to their environment tend to leave more*
+- *offspring than other individuals.*
+
+- *Over time, favorable traits*
+- *accumulate in the population.*
+
+- *and*
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 4](assets/lect15c-natural_selection/image_004.png)
+
+=== layout: one-panel
+
+# *Population Evolution*
+
+@body
+
+- Note that individuals do not evolve; [*populations evolve over time*]{color=#8D281E}
+- Natural selection can only increase or decrease heritable traits that vary in a population
+  - the traits must already exist in the population, unless introduced through mutation
+
+=== layout: one-panel
+
+# *Natural Selection\: A Summary*
+
+@body
+
+- Individuals with certain heritable traits survive and reproduce at a higher rate than other individuals ([fitness]{color=#8D281E})
+- Natural selection increases the match between organisms and their environment over time
+
+=== layout: section
+
+# Selection in a Laboratory Experiment
+
+=== layout: one-panel
+@replaceme
+
+# *Selection in a Lab Experiment*
+
+@body
+
+- Bacteria are great for studying selection, because they grow fast.
+  - A study on the competition between two genotypes [A]{color=red} and [B]{color=blue}, under conditions in which [A]{color=red} is the superior competitor.
+- We can measure [relative fitness, W]{color=#800080} as the competitive ability of of [B]{color=blue} when competing against [A]{color=red}.
+  - [W]{color=#800080} &#8211; is called a relative fitness
+    - Individual&#8217;s relative ability to survive and transmit genes to next generation
+
+=== layout: one-panel
+@replaceme
+
+# *Effect of selection for a favored allele (A) in a haploid (**_E. coli_**)*
+
+@body
+
+![Slide image 5](assets/lect15c-natural_selection/image_005.jpg)
+
+- [A]{color=red} = 0.6 to .995
+- [B]{color=blue} = 0.4 to 0.005
+- [W]{color=purple} = 0.96 for B
+
+=== layout: one-panel
+
+@body
+
+[Individual Fitness, w,]{color=blue} [Relative Fitness, W,]{color=#800080} and [Selection Coefficient]{color=#FF860D}
+
+=== layout: one-panel
+
+# *Individual Fitness*
+
+@body
+
+- [Individual Fitness, w]{color=blue}, is the ability to survive and reproduce.
+- Each member of the population has its own [fitness value (w)]{color=blue}\:
+  - 0 if it dies or fails to reproduce,
+  - 1 if it survives and produces 1 offspring,
+  - 2 if it survives and produces 2 offspring, etc.
+- The [average fitness]{color=#00A933} of the population is calculated by averaging the fitness of individuals.
+
+=== layout: one-panel
+
+# *Average Fitness and Population Size*
+
+@body
+
+![Slide image 6](assets/lect15c-natural_selection/image_006.jpg)
+
+- &#169; John Wiley & Sons, Inc.
+
+=== layout: one-panel
+
+# *Relative Fitness and Selection*
+
+@body
+
+- [*Relative fitness, W*]{color=#800080} is the contribution an individual makes to the gene pool of the next generation [relative]{color=red} to the contributions of other individuals
+  - Selection favors certain genotypes by acting on the phenotypes of individuals
+- [Relative fitness, W,]{color=#800080} is calculated by taking the superior genotype ([strain A]{color=red}) as standard fitness of 1.0
+  - The [fitness]{color=#800080} of the inferior genotypes ([strain&#160;B]{color=blue}) is expressed as a deviation from 1.
+  - [Strain B]{color=blue} produces only 0.96 offspring for a each offspring of a [strain A]{color=red}
+  - [\^ 0.96 or 96% is the relative fitness \^]{color=#800080}
+
+=== layout: one-panel
+@replaceme
+
+# *Selection Coefficient*
+
+@body
+
+- Relative Fitness values\:
+  - [Strain A]{color=red} has the standard fitness of 1.0
+  - [Strain B]{color=blue} produces only 0.96 offspring for a each offspring of a [strain A]{color=red}
+- [Selection coefficient (s)]{color=orange}\: The selective disadvantage of a disfavored genotype.
+  - [s = 1.0 &#8211; 0.96 = 0.04 = 4%]{color=orange}
+  - [The selective disadvantage]{color=#00A933} of [strain B]{color=blue} is 4% per generation
+- The [selection coefficient]{color=orange} measures the intensity of natural selection acting on the genotypes in the population
+
+=== layout: two-panels
+
+# *Effect of selection for a favored allele (A) in a haploid (**_E. coli_**)*
+
+@left
+
+- [A]{color=red} = 0.6 to .995
+- [B]{color=blue} = 0.4 to 0.005
+- [*W*]{color=purple} = 0.96 for B
+- [*s*]{color=orange} = 0.04
+
+@right
+
+![Slide image 6](assets/lect15c-natural_selection/image_005.jpg)
+
+=== layout: section
+
+# Selection in Diploid Organisms
+
+=== layout: one-panel
+@replaceme
+
+# *Selection in Diploid Organisms*
+
+@body
+
+- Dominance and recessiveness create additional complications.
+  - Frequency of favored [dominant allele]{color=green} changes very slowly when the allele is [common]{color=green}.
+  - Frequency of favored [recessive allele]{color=#706E0C} changes very slowly when the allele is [rare]{color=#706E0C}.
+- Reason\: recessive alleles are found in heterozygotes, that are not exposed to selection.
+  - remember Hardy-Weinberg and rare diseases
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 7](assets/lect15c-natural_selection/image_007.jpg)
+
+- _Selection for a favored allele in a diploid depends upon whether the allele is dominant or recessive_
+- _Favored recessive alleles take longer to take over_
+
+=== layout: section
+
+# True or False\: Saving lives of persons with rare recessive disorders (e.g. cystic fibrosis) will cause a deterioration of gene pool.
+
+=== layout: one-panel
+@replaceme
+
+# *Rare Recessive Alleles and Selection*
+
+@body
+
+- Implication of widely held belief\: &#8220;_Saving lives of persons with rare recessive disorders will cause a deterioration of gene pool.&#8221;_
+  - [NOT TRUE&#8230;]{color=red} reservoirs of recessive alleles is already in normal human beings who are heterozygotes.
+- Selection for or against a recessive alleles is [*very inefficient*]{underline=true} when the recessive alleles is rare.
+
+=== layout: section
+
+# Dark-light Insect selection example
+
+=== layout: one-plus-two-panels
+
+# *Natural Selection and the Peppered Moth*
+
+@left
+
+- The light form is homozygous for a recessive allele a, and the dark form carries a dominant allele A.
+- In England, after 1850, the frequency of the dark form increased dramatically
+  - especially in industrialized areas.
+
+@top-right
+
+![Slide image 8](assets/lect15c-natural_selection/image_008.jpg)
+
+@bottom-right
+
+![Slide image 9](assets/lect15c-natural_selection/image_009.jpg)
+
+=== layout: two-over-one-panels
+
+# *Dark-Light Insects*
+
+@top-left
+
+![Slide image 9](assets/lect15c-natural_selection/image_008.jpg)
+
+@top-right
+
+![Slide image 9](assets/lect15c-natural_selection/image_009.jpg)
+
+@bottom
+
+- In a particular species of insect, the Peppered Moth, fitness is determined by a single gene with two alleles, A and [a]{color=gray}.
+  - Allele A causes insects to be dark
+  - Allele [a]{color=gray} causes them to be [light]{color=gray}
+  - A is completely dominant to [a]{color=gray}.
+
+=== layout: two-panels
+
+# *Light and Dark Forms of the Peppered Moth*
+
+@left
+
+![Slide image 9](assets/lect15c-natural_selection/image_008.jpg)
+
+@right
+
+![Slide image 9](assets/lect15c-natural_selection/image_009.jpg)
+
+=== layout: one-panel
+
+# *Dark-Light Insects*
+
+@body
+
+- In the Peppered Moth of insect, fitness is determined by a single gene with two alleles, A and [a]{color=gray}.
+  - Allele A causes insects to be dark
+  - Allele [a]{color=gray} causes them to be [light]{color=gray}
+  - A is completely dominant to [a]{color=gray}.
+- Differential survival\:
+  - In forests, dark insects (AA and Aa) survive better
+  - In open fields, light insects ([aa]{color=gray}) survive better.
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 10](assets/lect15c-natural_selection/image_010.svg)
+
+@top-right
+
+| Genotype | AA | Aa | aa |
+| Phenotype | dark | dark | light |
+| Relative fitness in forest | 1 | 1 | 1 &#8211; s1 |
+| Relative fitness in field | 1 &#8211; s2 | 1 &#8211; s2 | 1 |
+
+@bottom-right
+
+- Differential survival\:
+  - In forests, dark insects (AA and Aa) survive better
+  - In open fields, light insects ([aa]{color=gray}) survive better.
+
+=== layout: one-panel
+
+# [*Natural Selection in the Forest Habitat*]{color=#1E6A39}
+
+@body
+
+- Assume that initially, p = 0.5 and q = 0.5 and that s1 = 0.1 and Hardy-Weinberg
+- Genotype AA
+  - relative fitness = 1, and the frequency of AA at fertilization is p^2^ = 0.25.
+- Genotype Aa
+  - relative fitness = 1, and the frequency of Aa at fertilization is 2pq = 0.50.
+- [Genotype aa]{color=gray}
+  - relative fitness = 1&#8211;0.1 = 0.9, and the frequency of [aa]{color=gray} at fertilization is q^2^ = 0.25
+
+=== layout: one-panel
+
+# [*2nd Generation (Forest Habitat)*]{color=#1E6A39}
+
+@body
+
+- In forming the next generation, each genotype will contribute gametes in proportion to its frequency and relative fitness.
+- The relative contributions of the three genotypes will be
+  - For AA, 0.25 &#215; 1.0 = 0.25
+  - For Aa, 0.50 &#215; 1.0 = 0.50
+  - [For aa, 0.25]{color=gray} &#215; [0.9 = 0.225]{color=gray}
+
+=== layout: one-panel
+
+# [*Normalize Proportions (Forest Habitat)*]{color=#1E6A39}
+
+@body
+
+- To obtain the proportional contributions of each genotype to the 2nd generation, divide their relative contributions by their sum
+  - 0.25 + 0.50 + 0.225 = 0.975
+- The proportional contributions to the 2nd generation are\:
+  - For AA, 0.250 &#247; 0.975 = 0.256
+  - For Aa, 0.500 &#247; 0.975 = 0.513
+  - For aa, 0.225 &#247; 0.975 = 0.231
+    - Note\: 0.256+0.513+0.231 = 1.0
+
+=== layout: one-panel
+
+# [*New Allele Frequency (Forest Habitat)*]{color=#1E6A39}
+
+@body
+
+- In the 2nd generation all of the alleles transmitted by [aa]{color=gray} homozygotes are [a]{color=gray}, and half the alleles transmitted by the A[a]{color=gray} heterozygotes are [a]{color=gray}.
+- The frequency of a in the 2nd generation, symbolized by q' will be
+  - [q' = 0.231  +  &#189; &#215; 0.513 = 0.487]{color=gray}
+- This represents a loss of 2.6%
+  - (0.5-0.487)/0.5 = 0.026
+
+=== layout: one-panel
+
+# [*Natural Selection in the Forest Habitat*]{color=#1E6A39}
+
+@body
+
+![Slide image 11](assets/lect15c-natural_selection/image_011.jpg)
+
+=== layout: one-panel
+
+# [*Natural Selection in the Field Habitat*]{color=#5EB91E}
+
+@body
+
+- Assume that initially,
+  - p = 0.5 and q = 0.5 and that s2 = 0.1.
+- Assume that the population mates randomly and that the genotype are present in Hardy-Weinberg frequencies at fertilization in each generation.
+
+=== layout: one-panel
+
+# [*Natural Selection in the Field Habitat*]{color=#5EB91E}
+
+@body
+
+- The initial genetic composition is\:
+- For genotype AA,
+  - relative fitness = 1&#8211;0.1 = 0.9, and the frequency of AA  at fertilization is p^2^=0.25.
+- For genotype Aa,
+  - relative fitness = 1&#8211;0.1 = 0.9, and the frequency of Aa at fertilization is 2pq=0.50.
+- [For genotype aa,]{color=gray}
+  - relative fitness = 1, and the frequency of [aa]{color=gray} at fertilization is q^2^=0.25
+
+=== layout: one-panel
+
+# [*New Allele Frequency (Field Habitat)*]{color=#5EB91E}
+
+@body
+
+- Using the same method as before, after one generation of selection in the field habitat, the frequency of _a_ will be
+  - q'&#160;=&#160;0.513
+- In the field habitat, the frequency of recessive _a_ alleles will increase in every generation until it equals 1
+  - at a frequency of 1.0, it is said to be fixed in the population.
+
+=== layout: one-panel
+
+# [*Natural Selection in the Field Habitat*]{color=#5EB91E}
+
+@body
+
+![Slide image 12](assets/lect15c-natural_selection/image_012.jpg)
+
+=== layout: two-over-one-panels
+@replaceme
+
+# *Natural Selection Comparison*
+
+@top-left
+
+![Slide image 12](assets/lect15c-natural_selection/image_012.jpg)
+
+@top-right
+
+![Slide image 12](assets/lect15c-natural_selection/image_011.jpg)
+
+@bottom
+
+- Natural selection may act [for or against]{underline=true} a recessive allele.
+- Selection [*for*]{color=#5EB91E underline=true} [a recessive allele]{color=#5EB91E underline=true} and against a dominant allele is [more efficient]{color=#5EB91E underline=true}
+  - than [selection against a recessive allele]{color=#1E6A39}.
+
+=== layout: section
+
+# Directionality of Natural Selection
+
+=== layout: one-panel
+
+# *Natural Selection for Quantitative Traits*
+
+@body
+
+- Fitness can be influenced dramatically by different alleles of a single gene
+- but is more often influenced by many genes that affect quantitative traits such as body size, disease susceptibility, and fecundity.
+  - [_fecundity &#8211; the ability to produce an abundance of offspring_]{color=#666666}
+- Natural selection can affect the distribution of a quantitative trait through
+  - directional selection,
+  - disruptive selection, or
+  - stabilizing selection.
+
+=== layout: one-panel
+
+# *Modes of Natural Selection*
+
+@body
+
+- There are three modes of selection
+  - [*Directional selection*]{underline=true} favors variants of a trait at one extreme end of its distribution
+  - [*Disruptive selection*]{underline=true} favors both extreme variants of a trait at the expense of intermediate values
+  - [*Stabilizing selection*]{underline=true} favors intermediate variants of a trait and acts against extreme phenotypes
+
+=== layout: one-panel
+@replaceme
+
+# Modes of Natural Selection
+
+@body
+
+![Slide image 13](assets/lect15c-natural_selection/image_013.png)
+
+![Slide image 14](assets/lect15c-natural_selection/image_014.svg)
+
+- *(a) Directional selection*
+
+- *(b) Disruptive selection*
+
+- *(c) Stabilizing selection*
+
+- *Original population*
+
+- *Original population*
+
+- *Evolved population*
+
+- *Phenotypes (fur color)*
+
+- *Frequency of individuals*
+
+=== layout: section
+
+# Selection-Mutation Balance
+
+=== layout: two-panels
+
+# *Mutation-Drift Balance and Population Size*
+
+@left
+
+- In small populations, genetic drift dominates over mutation.
+- In large populations, mutation dominates over genetic drift.
+
+@right
+
+![Slide image 15](assets/lect15c-natural_selection/image_015.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Selection-Mutation Balance*
+
+@body
+
+- Selection acts to minimize the frequency of harmful alleles
+  - but never be eliminated because mutation keeps on producing harmful alleles
+- So both working in opposite directions, eventually reach state of equilibrium.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 16](assets/lect15c-natural_selection/image_016.jpg)
+
+=== layout: four-panels
+@replaceme
+
+# *S-M Equilibrium*
+
+@top-left
+
+- Equilibrium depends on whether recessive allele is completely recessive or has a small effect (partial effect on the fitness of heterozygotes..)
+- If completely recessive, the fitness of (A is wild type and a is recessive allele)\:
+    - s = selection coefficient against recessive genotypes
+- Selection coefficient measures the fraction of aa genotypes that fails to survive, So equilibrium value
+- Selection-mutation balance can be used to estimate human mutation rate.
+
+@top-right
+
+![Slide image 17](assets/lect15c-natural_selection/image_017.svg)
+
+@bottom-left
+
+![Slide image 18](assets/lect15c-natural_selection/image_018.svg)
+
+@bottom-right
+
+| Genotype | AA | Aa | aa |
+| Relative fitness | 1 | 1 | 1 &#8211; s |
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Effect of Degree of Dominance*
+
+@left
+
+- What if the recessive allele is partially dominant, meaning having a small effect on the fitness of heterozygotes
+- Then fitnesses of AA, Aa and aa can be written as\:
+  - &#8220;[h &#215; s]{color=purple}&#8221; is the selection coefficient against heterozygous carriers
+- h &#8211; is called [degree of dominance]{color=red}
+  - h = 1 &#8212; harmful allele is completely dominance
+  - h = 0 &#8212; it is completely recessive
+  - h = &#189; &#8212; heterozygote genotype has a fitness exactly half of homozygous genotypes
+
+@top-right
+
+![Slide image 19](assets/lect15c-natural_selection/image_019.svg)
+
+@bottom-right
+
+| Genotype | AA | Aa | aa |
+| Relative fitness | 1 | 1 &#8211; [h&#215;s]{color=purple} | 1 &#8211; s |
+
+=== layout: one-panel
+@replaceme
+
+# *Effect of the degree of dominance with recessive lethal allele*
+
+@body
+
+![Slide image 20](assets/lect15c-natural_selection/image_020.jpg)
+
+- h = degree of dominance.
+- If the deleterious allele is completely recessive, then h= 0
+
+- [Relative fitness of AA and Aa are 1\:1]{color=#706E0C}
+
+- [Relative fitness of AA and Aa are 1\:0.975]{color=#7B3D00}
+
+- [Relative fitness of AA and Aa are 1\:0.5]{color=#8D281E}
+
+=== layout: one-panel
+@replaceme
+
+# *Mutation-Drift Balance as Measured by Heterozygosity*
+
+@body
+
+![Slide image 21](assets/lect15c-natural_selection/image_021.jpg)
+
+=== layout: section
+
+# Heterozygote Superiority
+
+=== layout: one-panel
+@replaceme
+
+# *Heterozygote Superiority*
+
+@body
+
+- Conditions in which the heterozygote genotype has greater fitness than either of the homozygotes.
+  - Also called *overdominance*
+- So heterozygotes produce more offspring than homozygotes
+  - Example\: Sickle cell anemia and Malaria
+
+=== layout: one-panel
+
+# *Heterozygote Advantage*
+
+@body
+
+- When selection favors the heterozygotes at the expense of each type of homozygote, balancing selection, or a heterozygote advantage exists.
+  - The relative fitness of heterozygotes is 1
+  - and the relative fitness of the homozygotes is less than 1.
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 22](assets/lect15c-natural_selection/image_022.svg)
+
+@top-right
+
+| Genotype | AA | Aa | aa |
+| Relative Fitness | 1 &#8211; s | 1 | 1 &#8211; t |
+
+@bottom-left
+
+  - s and t and the selection coefficients against AA and aa, respectively
+- In cases of heterozygote advantage, selection tends to eliminate both A and a through its effects on the homozygotes, but it also preserves those alleles through its effects on the heterozygotes.
+- When these opposing tendencies balance each other, a dynamic equilibrium is established.
+
+@bottom-right
+
+![Slide image 23](assets/lect15c-natural_selection/image_023.svg)
+
+=== layout: one-panel
+
+# *Balanced Polymorphisms*
+
+@body
+
+- Suppose that _AA_ homozygotes are lethal _s_=1, and that the _aa_ homozygotes are 50% as fit as the heterozygotes, _t_=0.5.
+- A dynamic equilbrium will be reached when
+    - &#710;p = 0.5/(0.5 + 1) = 1/3 and
+    - &#710;q = 1/(0.5 + 1) = 2/3
+- In this case, both alleles will be maintained at appreciable frequencies through selection in favor of the heterozygotes.
+
+=== layout: one-panel
+@replaceme
+
+# *Distribution of the diseases sickle cell anemia and falciparum malaria*
+
+@body
+
+![Slide image 24](assets/lect15c-natural_selection/image_024.jpg)
+
+- The heterozygote is favored over the homozygous dominant genotype (over-dominance) in areas where malaria is prevalent.
+- Relative fitness's of the genotypes\:
+  - AA, AS and SS have been estimated as 0.85 \: 1.00 \: 0.00
+  - therefore s = 0.15 and t = 1
+  - &#710;p = 0.87, &#710;q = 0.13, which is close to measured values.
+

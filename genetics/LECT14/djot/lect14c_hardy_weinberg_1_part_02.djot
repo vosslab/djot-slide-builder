@@ -1,0 +1,75 @@
+=== layout: one-panel
+@replaceme
+
+# *X-linked color blindness*
+
+@body
+
+- So for an X-linked trait, the frequency of affected males  provides an estimate of the frequency of the recessive allele.
+- It affects 1 in 20 males among Caucasians
+  - So  q= 1/20 = 0.05
+- So frequency of color blind females
+  - q^2^ = (0.05)2 = 0.0025 = 0.25% = 1 in 400
+
+=== layout: one-panel
+@replaceme
+
+# *Example\: Color Vision*
+
+@body
+
+- [*Sex*]{underline=true}		[*Genotype*]{underline=true}	[*Frequency*]{underline=true}		[*Phenotype*]{underline=true}
+- Males	_C_		_p_ = 0.95		Normal vision
+- 		_c_		_q_ = 0.05		Color blind
+- Females	_CC_		_p^2^_ = 0.90		Normal vision
+- 		_Cc_		2_pq_ = 0.10	Normal vision
+- 		_cc_		_q^2^_ = 0.003		Color blind
+
+=== layout: one-panel
+@replaceme
+
+# *Example\: Color Vision*
+
+@body
+
+- [*Sex*]{underline=true}		[*Genotype*]{underline=true}	[*Frequency*]{underline=true}		[*Phenotype*]{underline=true}
+- Males	_C_		_p_ = 0.88		Normal vision
+- 		_c_		_q_ = 0.12		Color blind
+- Females	_CC_		_p^2^_ = 0.77		Normal vision
+- 		_Cc_		2_pq_ = 0.21	Normal vision
+- 		_cc_		_q^2^_ = 0.02		Color blind
+
+=== layout: one-panel
+@replaceme
+
+# *The frequencies of affected males and females for a recessive X-linked allele*
+
+@body
+
+![Slide image 26](assets/lect14c-hardy_weinberg_1/image_026.jpg)
+
+- [Frequency of affected]{color=#990099} [*male is q and female is q^2^*]{color=#990099}
+
+- Ratio of affected
+- males to affected
+- female increases
+- q= 0.3 (allele freq)
+- Male  genotype 0.3
+- Female  0.09 (q^2^)
+- *0.09/0.3 = 3.33*
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- For two alleles, p + q = 1.
+- Expected genotype frequencies are p^2^, 2pq, and q^2^.
+- Distinguish a genotype frequency from an allele frequency.
+- Check the inheritance model before choosing an equation.
+
+=== layout: theend
+
+# THE END
+

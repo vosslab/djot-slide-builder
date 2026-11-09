@@ -4,8 +4,11 @@ Use this guide when preparing or reviewing `lect##a` announcement decks. It coll
 working structure from [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md). HG retains the instructor's stated
 preferences; this file is the practical guide, not a requirement to show every reusable slide.
 
-Older decks are useful sources, but inconsistent inventories can reflect forgotten material.
-Check the current schedule and this guide rather than treating the previous week as complete.
+A conversion usually starts with two announcement decks: the most recent current-year
+`lect##a`, which may be from an earlier lecture, and the target lecture's `lect##a` from the
+prior year. Use the current-year deck for current formatting and course information, and the
+prior-year deck for useful week-specific activities and reminders. Combine them into the target
+lecture's current-year announcements, checking dates and relevance against the current schedule.
 
 ## Opening before sections
 
@@ -127,7 +130,7 @@ the graduation notice's first-two-weeks window for these assignments.
 ## Weekly preparation
 
 - Check the lecture date and the current instructor-maintained course schedule first.
-- Start from the current-year previous lecture, checking the matching prior-year lecture for
+- Start from the most recent current-year lecture, checking the matching prior-year lecture for
   useful activities and reminders. Refresh dates, policies, and links from current sources.
 - Update both agendas, assessment colors, due dates, and conditional visibility.
 - Refresh weather on lecture day or the preceding day. Keep original PNGs, full editable

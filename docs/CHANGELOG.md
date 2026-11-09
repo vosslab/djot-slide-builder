@@ -1,3 +1,52 @@
+## 2026-11-09
+
+### Additions and New Features
+
+- Convert Genetics LECT12, LECT13, and LECT1X into 17 canonical Djot decks with local assets,
+  per-folder source maps, and conversion reviews. Preserve all 642 original content slides
+  and their hidden status; add 45 opening/closing slides. Build 796 editable ODP slides and
+  760 visible PDF pages, retaining 307 explicit `@replaceme` slides for difficult conversions.
+- Convert Genetics LECT11 into five canonical Djot decks with local assets, source maps,
+  and a completed conversion review. Retain all 253 original B-E content slides and their
+  hidden status; add objectives and closing summaries. Build 320 editable ODP slides and
+  302 visible PDF pages, retaining 62 explicit `@replaceme` slides for difficult conversions.
+
+### Fixes and Maintenance
+
+- Split former Genetics LECT1X into LECT14 (allele frequencies and Hardy-Weinberg) and
+  LECT15 (evolution, selection, drift, and inbreeding), with four B-E decks in each.
+  Renumber covers and move original inputs, local assets, includes, and review/source maps
+  together. Rebuild 362 authored slides and 361 PDF pages; retain all 136 replacement markers.
+  Keep the existing December 8 cover date because the schedule assigns no Lecture 14/15 dates.
+- Prepare December 1/8 announcements from the latest current-year deck and matching prior-year
+  sources, with current quiz/homework/final dates and shared groups. Retain LECT1X's eight
+  separate population-genetics variants and document the supplied folders' schedule mismatch.
+- Compare every visible original content page with diagnostic renders. Mark missing tree,
+  chromosome, table, and mask relationships; restore basic superscripts and readable colored
+  definitions. Record temporary import fallbacks and unresolved work in each lecture review.
+- Prepare 2026 Lecture 11 announcements from the latest current-year material and matching
+  prior-year lecture, using shared groups and current assessment dates. Record the schedule's
+  content/date mismatch and keep the early weather snapshot hidden. Describe this usual
+  two-source starting point briefly in the announcement guide and human guidance.
+- Review paired original/diagnostic renders, restore the colored GMO comparison columns,
+  clear verified color-only deletion-walkthrough flags, and retain markers for missing
+  diagram geometry, labels, source reveals, or readable fit. Preserve the original ODP/PDF.
+
+### Developer Tests and Notes
+
+- LECT14/15 native lint and all-format LibreOffice builds pass. All 353 non-cover PDF pages
+  retain identical teaching text, and original input/media hashes and hidden flags reconcile.
+  Reviewed the eight updated covers and sampled minor differences in text rendering. Base suite:
+  4,051 passed, 3 failed, 87 errors in the pre-existing Biotechnology LECT10 edits.
+- LECT12/13/1X strict native lint and all-format LibreOffice builds pass; authored/hidden/PDF
+  counts and replacement watermarks reconcile. Base suite: 4,043 passed, 3 failed, 87 errors
+  from the existing Biotechnology LECT10 conflicts. All original ODP hashes remain unchanged.
+  Attended playback and classroom validation remain unperformed.
+- Strict native lint and all-format LibreOffice builds pass for LECT11; source/ODP/PDF
+  counts and replacement watermarks reconcile. Base suite: 4,041 passed, 3 failed,
+  87 errors in existing Biotechnology LECT10 working-tree edits, which remain untouched.
+  Attended Impress playback and classroom validation were not performed.
+
 ## 2026-11-05
 
 ### Additions and New Features

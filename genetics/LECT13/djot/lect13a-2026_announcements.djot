@@ -1,0 +1,206 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 13A
+
+## Announcements
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: section
+
+# Group Quiz 5
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Group Quiz 5
+- Ice Breaker and Announcements
+- Chromosome Inversions
+- Chromosome Translocations
+- Meiosis with Translocated Chromosomes
+- Closing Remarks
+
+=== layout: one-panel
+
+# Next Week: Dec 15, 2026
+
+@body
+
+- Cumulative final exam: December 15, during class.
+- Homework assignment 13 is due December 15.
+- Review your assignments and old quizzes before the exam.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Five Day Outlook](repo:genetics/LECT11/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
+
+@caption
+
+Dry and mild conditions will persist through Tuesday&#46; Areawide chances for rainfall return on Wednesday before cooler temperatures arrive for the latter half of the week and lake effect showers develop and move into portions of northwestern Indiana and possibly northeastern Illinois&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: one-panel
+
+# Breakout Room Chat
+
+@body
+
+- State your name, major, and post-grad plans
+- [What is the best dish you can cook?]{color=red}
+  - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
+
+=== include: repo:evergreen/youtube_channel.djot
+
+=== layout: big-image
+
+@image
+
+![Stump the Vibe Coder &#35;37&#58; Bad Cell Day](repo:genetics/LECT10/djot/assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
+
+@caption
+
+Stump the Vibe Coder &#35;37&#58; Bad Cell Day\
+Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
+Play the Game: https://vosslab.github.io/bad-cell-day/
+
+=== include: repo:genetics/evergreen/course_information.djot
+
+=== layout: subsection
+
+# Exam/Quiz
+
+=== layout: one-panel
+
+# Exam and Quiz Schedule
+
+@body
+
+- [Quiz 1: Sept 22]{color=#AAAAAA}
+- [Quiz 2: Oct 06]{color=#AAAAAA}
+- [Midterm: Oct 13]{color=#AAAAAA}
+- [Quiz 3: Nov 03]{color=#AAAAAA}
+- [Quiz 4: Nov 17]{color=#AAAAAA}
+- [Quiz 5: Dec 08]{color=red}
+- [Final exam: Dec 15]{color=#990000}
+
+=== include: repo:genetics/evergreen/assessment_policies.djot
+
+=== layout: subsection
+
+# Exam
+
+=== layout: one-panel
+
+# Final Exam: December 15
+
+@body
+
+- Cumulative, in-person written exam during class.
+- Completed individually; worth 100 points.
+- Check Blackboard and the syllabus for final instructions.
+
+=== include: repo:genetics/evergreen/exam_guidance.djot
+hidden: false
+
+=== layout: one-panel
+
+# Assignments Before the Final Exam
+
+@body
+
+- Homework assignments 11 and 12 are due December 8.
+- Homework assignment 13 is due December 15.
+- Retake available assignments to check your understanding.
+- Unlimited homework attempts; only your highest score counts.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== include: repo:genetics/evergreen/quiz_guidance.djot
+hidden: false
+
+=== layout: subsection
+
+# Weekly Assignments
+
+=== include: repo:genetics/evergreen/first_week_assignments.djot
+hidden: true
+
+=== layout: two-panels
+hidden: true
+
+# Homework Due Dates (Part 1)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 04]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
+| [Week 05]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
+| [Week 06]{color=#AAAAAA} | [Oct 13]{color=#AAAAAA} |
+
+@right
+
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+- https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== layout: two-panels
+
+# Homework Due Dates (Part 2)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
+| [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
+| [Week 09]{color=#AAAAAA} | [Nov 17]{color=#AAAAAA} |
+| [Week 10]{color=#AAAAAA} | [Nov 17]{color=#AAAAAA} |
+| [Week 11]{color=red} | [Dec 08]{color=red} |
+| [Week 12]{color=red} | [Dec 08]{color=red} |
+| [Week 13]{color=#990000} | [Dec 15]{color=#990000} |
+
+@right
+
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+hidden: true
+
+=== include: repo:genetics/evergreen/course_evaluations.djot
+hidden: true
+
+=== include: repo:evergreen/natural_science_club.djot
+hidden: true
+
+=== layout: theend
+
+# THE END

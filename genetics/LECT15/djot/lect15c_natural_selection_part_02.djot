@@ -1,0 +1,225 @@
+=== layout: one-panel
+
+# *Selection of Sickle-Cell Alleles*
+
+@body
+
+- Homozygotes for the S allele of the &#61538;-globin gene have sickle-cell anemia.
+  - The fitness of SS homozygotes has historically been 0.
+- However, in some parts of the world, notably in tropical Africa\:
+  - the frequency of the S allele is 0.2 due to moderate selection against homozygotes for A, the wild-type allele_._
+
+=== layout: two-panels
+
+# *Sickle-Cell Anemia*
+
+@left
+
+- AA homozygotes are more susceptible to infection by the parasites that cause malaria than SA heterozygotes.
+  - Malaria is widespread in regions of the world where the frequency of the S allele is high.
+
+@right
+
+![Slide image 25](assets/lect15c-natural_selection/image_025.jpg)
+
+=== layout: one-panel
+
+# *Measuring Balancing Selection*
+
+@body
+
+- If the equilibrium frequency of S allele is &#710;p = 0.1, and s = 1.0 because all SS homozygotes die
+- We can estimate the intensity of selection against the AA homozygotes due to increased susceptibility to malaria\:
+  - &#710;p = t/(s + t)
+  - 0.1 = t/(1.0 + t)
+    - 0.1(1.0 + t) = 0.1t + 0.1 = t
+    - 0.1 = (1.0 &#8211; 0.1)t = 0.9t
+  - *t = (0.1)/(0.9) = 0.111*
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 26](assets/lect15c-natural_selection/image_026.png)
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 26](assets/lect15c-natural_selection/image_026.png)
+
+@top-right
+
+- (a) Step 1\: figure out &#8216;s&#8217; and &#8216;t&#8217;
+
+@bottom-left
+
+![Slide image 27](assets/lect15c-natural_selection/image_027.svg)
+
+@bottom-right
+
+| Genotype | AA | Aa | aa |
+| Relative Fitness | 1 &#8211; s | 1 | 1 &#8211; t |
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 27](assets/lect15c-natural_selection/image_026.png)
+
+- (a)
+- s = 0.1
+- t = 0.5
+- Step 2\: what are &#710;p and &#710;q
+
+@bottom
+
+![Slide image 28](assets/lect15c-natural_selection/image_028.svg)
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (a)
+- s = 0.1
+- t = 0.5
+- &#710;p = 0.5/(0.1+0.5) = 5/6 = 0.833
+- &#710;q = 0.1/(0.1+0.5) = 1/6 = 0.167
+
+@bottom
+
+![Slide image 28](assets/lect15c-natural_selection/image_028.svg)
+
+=== layout: stacked-panels
+@replaceme
+
+
+@top
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (a)
+- s = 0.1
+- t = 0.5
+- &#710;p = 0.5/(0.1+0.5) = 5/6 = 0.833
+- &#710;q = 0.1/(0.1+0.5) = [1/6 = 0.167]{color=#990099}
+
+@bottom
+
+![Slide image 28](assets/lect15c-natural_selection/image_028.svg)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- &#710;p = 0.5/(0.1+0.5) = 5/6 = 0.833
+- &#710;q = 0.1/(0.1+0.5) = [1/6 = 0.167]{color=#990099}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- &#710;p = 0.5/(0.1+0.5) = 5/6 = 0.833
+- &#710;q = 0.1/(0.1+0.5) = 1/6 = 0.167
+- (b)
+- fAA = &#710;p^2^ = 5/6&#215;5/6 = 25/36 = 0.694
+- [fAa =]{color=red} 2&#710;p&#710;q = 2&#215;5/6&#215;1/6 = 5/18 [= 0.278]{color=red}
+- faa = &#710;q^2^ = 2&#215;1/6&#215;1/6 = 1/36 = 0.028
+- fAA + fAa + faa = 31/36 = [0.861]{color=green}
+- [f&#8217;Aa =]{color=#355269} [0.278]{color=red}/[0.861]{color=green} = [0.323]{color=#355269}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (c) Step 1\: figure out &#8216;s&#8217; and &#8216;t&#8217;
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (c)
+- s = 0.1
+- t = 1
+- &#710;q = 0.1/(0.1 + 1) = 1/11 = 0.091
+
+![Slide image 28](assets/lect15c-natural_selection/image_028.svg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (d)
+- &#710;p = 1/(0.1+1) = 10/11 = 0.909
+- &#710;q = 0.1/(0.1+1) = 1/11 = 0.091
+- 2&#710;p&#710;q =
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (d) &#710;p = 1/(0.1+1) = 10/11 = 0.909;
+- &#710;q = 0.1/(0.1+1) = 1/11 = 0.091
+- fAA = &#710;p^2^ = 10/11&#215;10/11 = 0.826
+- [fAa =]{color=red} 2&#710;p&#710;q = 2&#215;10/11&#215;1/11 = [0.165]{color=red}
+- faa = &#710;q^2^ = 1/11&#215;1/11 = 0.008 &#8211; but really they all die
+- fAA + fAa + faa = 120/121 = [0.992]{color=green}
+- [f&#8217;Aa]{color=#355269} = [0.165]{color=red}/[0.992]{color=green} = [0.167]{color=#355269}
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 28](assets/lect15c-natural_selection/image_026.png)
+
+- (b) fAa = 0.323
+- (d) fAa = 0.167
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Selection changes allele frequencies through reproductive success.
+- Fitness is measured relative to the comparison population.
+- Different environments can favor different phenotypes.
+- Heterozygote advantage can maintain both alleles.
+
+=== layout: theend
+
+# THE END
+

@@ -1,0 +1,383 @@
+=== layout: title-slide
+
+# Lecture 11C
+
+## Sex Dosage
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Compare sex determination in fruit flies and humans.
+- Compare dosage compensation in worms, flies, and mammals.
+- Relate X inactivation to Barr bodies and mosaic traits.
+- Predict sex-chromosome phenotypes in the quiz examples.
+
+=== layout: section
+
+# Review of Sex Determination in Drosophila
+
+=== layout: one-panel
+
+# *Drosophila Sex determination*
+
+@body
+
+- XX = wildtype fertile female
+- XY = wildtype fertile male
+- Same as humans...
+
+=== layout: two-panels
+@replaceme
+
+# *Drosophila Sex determination*
+
+@left
+
+- Drosophila
+- [XX = normal fertile female]{color=red}
+- [XY = normal fertile male]{color=blue}
+- [XXY = normal fertile female]{color=red}
+- [X0 = normal sterile male]{color=blue}
+- So Y does not factor into maleness.
+
+@right
+
+- Humans
+- [XX = normal fertile female]{color=red}
+- [XY = normal fertile male]{color=blue}
+- [XXY = male with female features]{color=blue}
+- [X0 = sterile female]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+# *Genetic control of sex determination in Drosophila*
+
+@body
+
+- The X-chromosome/autosome ratio controls the switching on/off of the master control gene _sex-lethal_ (_Sxl_)
+
+![Slide image 1](assets/lect11c-sex_dosage/image_001.jpg)
+
+- activity of the Sex-lethal gene _Sxl_.
+
+=== layout: two-panels
+@replaceme
+
+# *Sex determination*
+
+@left
+
+- X = sex chromosome
+- A = autosomes
+- XXAA ratio of 1
+  - Diploid with 2 X
+  - normal female
+- XAA ratio of &#189;
+  - Diploid with 1 X and 1 Y
+  - normal male
+- XXAAA ratio of 2/3
+  - Triploid with 2 X
+  - intersex
+- XA ratio of 1
+  - Haploid with 1 X
+  - initially female then dies
+
+@right
+
+- Hypothesis\:
+  - ratio of 1 is female
+  - ratio of &#189; is male
+  - ratio in between is intersex
+
+=== layout: section
+
+# Dosage Compensation
+
+=== layout: one-panel
+
+# *Dosage Compensation*
+
+@body
+
+- For organisms with XY sex determination, there is a problem with dosage of genes on the X and Y.
+  - Dosage compensation has evolved to correct the unequal dosage in the sexes.
+- [*Dosage Compensation*]{underline=true} describes the process organisms use to equalize the expression of genes between different biological sexes.
+
+=== layout: two-panels
+
+# *C. elegans = nematode worms*
+
+@left
+
+![Slide image 2](assets/lect11c-sex_dosage/image_002.png)
+
+@right
+
+- In females, each X chromosome expression is reduced by half.
+- Both X's have the same activity levels
+
+=== layout: two-panels
+
+# *Drosophila = fruit fly*
+
+@left
+
+- In males, a protein complex on the Y, increases transcriptional activity of the X.
+- The single male X does twice the work to equal the XX of the female.
+
+@right
+
+![Slide image 3](assets/lect11c-sex_dosage/image_003.png)
+
+=== layout: two-panels
+
+# *X Inactivation in Mammals*
+
+@left
+
+- In mammalian females, one of the two X chromosomes in each cell is randomly inactivated during embryonic development
+  - The inactive X condenses into a *Barr body*
+- Normally, the inactivated X is random.
+  - A single organism will have different inactive X's throughout their body.
+  - Heterozygous genes on the X chromosome, will produce a mosaic for that character.
+  - [_Marsupials always deactivate the paternal X._]{color=red}
+
+@right
+
+![Slide image 4](assets/lect11c-sex_dosage/image_004.png)
+
+=== layout: section
+
+# X inactivation
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 5](assets/lect11c-sex_dosage/image_005.png)
+
+=== layout: two-panels
+
+# *X-inactivation*
+
+@left
+
+![Slide image 6](assets/lect11c-sex_dosage/image_006.png)
+
+@right
+
+- Some of the genes that escape inactivation have function homologs on the Y chromosome.
+- about 15% of X genes escape inactivation
+
+=== layout: two-panels
+
+# *Mosaicism*
+
+@left
+
+- *Mosaicism* can be observed directly in women who are heterozygous for an X-linked recessive mutation that results in the absence of sweat glands
+- These women exhibit patches of skin in which sweat glands are present and other patches of skin in which sweat glands are absent.
+
+@right
+
+![Slide image 7](assets/lect11c-sex_dosage/image_007.png)
+
+=== layout: two-panels
+
+# *Calico Cat*
+
+@left
+
+- Males have only one X chromosome, a normal male has either the orange or the black allele.
+- A female can be heterozygous for orange and black will be &#8220;calico&#8221;
+  - a mosaic of orange and black patches mixed with patches of white.
+
+@right
+
+![Slide image 8](assets/lect11c-sex_dosage/image_008.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect11c-sex_dosage/image_009.jpg)
+
+- *X chromosomes*
+
+- *Allele for orange fur*
+
+- *Allele for black fur*
+
+- *Cell division and X chromosome inactivation*
+
+- *Early embryo\:*
+
+- *Two cell populations in adult cat\:*
+
+- *Active X*
+
+- *Inactive X*
+
+- *Black fur*
+
+- *Orange fur*
+
+- *Active X*
+
+- *X inactivation and the tortoiseshell cat.*
+- Two different alleles, one for orange fur and one for black fur.
+- If a female cat is heterozygous for the tortoiseshell gene, she is tortoiseshell.
+- Orange patches are formed by populations of cells in which the X chromosome with the orange allele is active; black patches have cells in which the X chromosome with the black allele is active.
+
+=== layout: two-panels
+
+# *Calico Cat*
+
+@left
+
+![Slide image 10](assets/lect11c-sex_dosage/image_010.png)
+
+@right
+
+- The white patches are due to an autosomal gene S for white spotting
+  - which prevents pigment formation in the cell lineages in which it is expressed.
+- Why the S gene is expressed in some cell lineages and not others is not known.
+  - Homozygous SS cats have more white than heterozygous Ss cats.
+
+=== layout: one-panel
+
+# *Summary of Dosage Compensation*
+
+@body
+
+![Slide image 11](assets/lect11c-sex_dosage/image_011.png)
+
+=== layout: section
+
+# Sex-Determining Region on the Y chromosome (SRY) for Mammals
+
+=== layout: one-panel
+
+# *Sex Chromosomes*
+
+@body
+
+- Humans use the XY chromosomal system to determine sex.
+  - if a Y chromosome is present during development ([XY]{underline=true}), the fetus will become a [male]{underline=true}
+  - if there is no Y present ([XX]{underline=true}), the fetus becomes [female]{underline=true}
+
+=== layout: two-panels
+
+# *Pseudoautosomal Region*
+
+@left
+
+- In humans, the tip of the short arm of the Y is homologous with a region at the tip of the short arm of the X chromosome.
+- The shared X&#8211;Y homology defines the pseudoautosomal region
+
+@right
+
+![Slide image 12](assets/lect11c-sex_dosage/image_012.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect11c-sex_dosage/image_013.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect11c-sex_dosage/image_013.png)
+
+- 8.1 Hold the chromosome together for proper orientation in metaphase I.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect11c-sex_dosage/image_013.png)
+
+- 8.2 alleles on the X can be interchanged with homologous alleles on the Y. Similar to autosomal inheritance.
+
+=== layout: one-panel
+
+# *Sex-determining Region on the Y*
+
+@body
+
+- Short segments at the ends of the Y chromosomes are homologous with the X, allowing the two to behave like homologues during meiosis in males
+- A gene on the Y chromosome called SRY (Sex-determining Region on the Y) is responsible for development of the testes in an embryo
+
+=== layout: one-panel
+
+# *SRY*
+
+@body
+
+- The Y chromosome has about 26 protein genes that are important for male fertility.
+- The Y chromosome contains the master sex-controller gene SRY at position Yp11.3.
+- SRY codes for a protein transcription factor, the *testis-determining factor (TDF)*, which triggers male embryonic development
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 14](assets/lect11c-sex_dosage/image_014.jpg)
+
+- Fig. 18-16-2
+
+- *Embryonic*
+- *precursor cell*
+
+- *Nucleus*
+
+- *OFF*
+
+- *DNA*
+
+- *Master regulatory gene* *_myoD_*
+
+- *Other muscle-specific genes*
+
+- *OFF*
+
+- *OFF*
+
+- *mRNA*
+
+- *MyoD protein*
+- *(transcription*
+- *factor)*
+
+- *Myoblast*
+- *(determined)*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 15](assets/lect11c-sex_dosage/image_015.jpg)
+
+

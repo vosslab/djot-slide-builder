@@ -1,0 +1,258 @@
+=== layout: section
+
+# Deletion Quiz Question #1 four genes
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- A total of four genes A, B, C, and D are closely linked in a single chromosome, but their order is unknown.
+- A total of three deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the 2 genes C and D;
+  - Deletion #2 uncovers the 3 genes A, C, and D;
+  - Deletion #3 uncovers the 3 genes A, B, and C;
+- What the correct order for the four genes?
+- Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 1\: Simplify the Information]{color=red}
+- A total of four genes A, B, C, and D are closely linked in a single chromosome, but their order is unknown.
+- A total of three deletions in the region are found to uncover recessive alleles of the genes as follows\:
+  - Deletion #1 uncovers the 2 genes C and D;
+  - Deletion #2 uncovers the 3 genes A, C, and D;
+  - Deletion #3 uncovers the 3 genes A, B, and C;
+- What the correct order for the four genes?
+- Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 1\: Simplify the Information]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - Del#3 A, B, C;
+  - Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 2\: Create a template]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - Del#3 A, B, C;
+  - Hint\: the first gene on the end is gene B.
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 2\: Create a template]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - Del#3 A, B, C;
+  - Hint\: the first gene on the end is gene B.
+- Four genes starts with B
+- B \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 3\: Note the deletions that contain the first gene]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - [Del#3 A, B, C;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- B \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 3\: Note the deletions that contain the first gene]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - [Del#3 A, B, C;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- For Deletion #3, we can have either of the following BAC or BCA, so I just write B (AC),
+  - because the order of A and C is unknown
+- B \_ \_ \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 3\: Note the deletions that contain the first gene]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - [Del#3 A, B, C;]{color=#800080}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- For Deletion #3, we can have either of the following BAC or BCA, so I just write B (AC),
+  - because the order of A and C is unknown
+- B (AC) \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain only one of the two unordered genes (AC)]{color=red}
+  - [Del#1 C, D;]{color=#800080}
+  - Del#2 A, C, D;
+  - [Del#3 A, B, C;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- B (AC) \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain only one of the two unordered genes (AC)]{color=red}
+  - [Del#1 C, D;]{color=#800080}
+  - Del#2 A, C, D;
+  - [Del#3 A, B, C;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#1 tells us that C is next to a unassigned gene, and must be on the end away from B
+- B (AC) \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 4\: Analyze the deletions that contain only one of the two unordered genes (AC)]{color=red}
+  - [Del#1 C, D;]{color=#800080}
+  - Del#2 A, C, D;
+  - [Del#3 A, B, C;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- Del#1 tells us that C is next to a unassigned gene, and must be on the end away from B
+- B A C \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 5\: only one gene left]{color=red}
+  - [Del#1 C, D;]{color=#B2B2B2}
+  - [Del#2 A, C, D;]{color=#B2B2B2}
+  - [Del#3 A, B, C;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- It should have been obvious that we have one blank and one unassigned gene, so the last blank has to be D
+- B A C \_
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 5\: only one gene left]{color=red}
+  - [Del#1 C, D;]{color=#B2B2B2}
+  - [Del#2 A, C, D;]{color=#B2B2B2}
+  - [Del#3 A, B, C;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- It should have been obvious that we have one blank and one unassigned gene, so the last blank has to be D
+- B A C D
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 5\: only one gene left]{color=red}
+  - [Del#1 C, D;]{color=#B2B2B2}
+  - [Del#2 A, C, D;]{color=#B2B2B2}
+  - [Del#3 A, B, C;]{color=#B2B2B2}
+  - [Hint\: the first gene on the end is gene B.]{color=#B2B2B2}
+- It should have been obvious that we have one blank and one unassigned gene, so the last blank has to be D
+- B A C D
+
+=== layout: one-panel
+
+# *Check Your Answer*
+
+@body
+
+- Deletion question can be hard to find the answer.
+- But once you have an answer, it is [really easy to check if it is correct]{color=red}!
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 6\: Double check the deletions]{color=red}
+  - Del#1 C, D;
+  - Del#2 A, C, D;
+  - Del#3 A, B, C;
+- Answer\:
+- B A C D
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 6\: Double check the deletions]{color=red}
+  - &#10004; [Del#1 C, D;]{color=orange}
+  - Del#2 A, C, D;
+  - Del#3 A, B, C;
+- Answer\:
+- B A [C D]{color=orange}
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 6\: Double check the deletions]{color=red}
+  - &#10004; Del#1 C, D;
+  - &#10004; [Del#2 A, C, D;]{color=#00A933}
+  - Del#3 A, B, C;
+- Answer\:
+- B [A C D]{color=#00A933}
+
+=== layout: one-panel
+
+# *Deletion Quiz Question*
+
+@body
+
+- [Step 6\: Double check the deletions]{color=red}
+  - &#10004; Del#1 C, D;
+  - &#10004; Del#2 A, C, D;
+  - &#10004; [Del#3 A, B, C;]{color=orange}
+- Answer\:
+- [B A C]{color=orange} D
+

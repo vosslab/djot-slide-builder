@@ -1,0 +1,401 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 13C
+
+## Chromosome Abnormalities: Translocations
+
+## Chapter 9
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Recognize reciprocal chromosome translocations.
+- Distinguish balanced and unbalanced chromosome products.
+- Relate translocations to semisterility and disease.
+- Identify chromosome changes in the worked examples.
+
+=== layout: section
+
+# Chromosome Abnormalities: Translocations
+
+=== layout: one-panel
+
+# *Alterations of Chromosome Structure*
+
+@body
+
+- Breakage of a chromosome can lead to four types of changes in chromosome structure
+  - [*Deletion*]{underline=true} removes a chromosomal segment
+  - [*Duplication*]{underline=true} repeats a segment
+  - [*Inversion*]{underline=true} reverses orientation of a segment within a chromosome
+  - [*Translocation*]{color=red underline=true} [moves a segment from one chromosome to another]{color=red}
+
+=== layout: section
+
+# Translocations
+
+=== layout: one-panel
+
+# *Translocation*
+
+@body
+
+![Slide image 1](assets/lect13c-chromo_alter_4-translocation/image_001.png)
+
+=== layout: one-panel
+
+# *Translocations*
+
+@body
+
+![Slide image 2](assets/lect13c-chromo_alter_4-translocation/image_002.png)
+
+- (A) Two pairs of non-homologous chromosomes in a diploid organism.
+- (B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
+- (C) Homozygous reciprocal translocation.
+
+=== layout: two-panels
+@replaceme
+
+# *Semi-sterility*
+
+@left
+
+![Slide image 3](assets/lect13c-chromo_alter_4-translocation/image_003.png)
+
+![Slide image 4](assets/lect13c-chromo_alter_4-translocation/image_004.png)
+
+![Slide image 5](assets/lect13c-chromo_alter_4-translocation/image_005.png)
+
+@right
+
+- half the gametes will be incapable of contributing to the next generation, a condition known as semisterility or &#8220;half sterility.&#8221;
+  - In plants, the 50 percent unbalanced meiotic products from segregation generally abort at the gametic stage.
+  - In animals, however, the duplication&#8211;deletion products are viable as gametes but lethal to the zygote.
+
+=== layout: one-panel
+@replaceme
+
+# *Disorders Caused by Translocations*
+
+@body
+
+![Slide image 6](assets/lect13c-chromo_alter_4-translocation/image_006.png)
+
+- Certain cancers, including chronic myelogenous leukemia (CML), are caused by translocations of chromosomes
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 7](assets/lect13c-chromo_alter_4-translocation/image_007.jpg)
+
+- *Normal chromosome 9*
+
+- *Normal chromosome 22*
+
+- *Reciprocal translocation*
+
+- *Translocated chromosome 9*
+
+- *Translocated chromosome 22 (Philadelphia chromosome)*
+
+- The cancerous cells in nearly all Chronic myelogenous leukemia (CML) patients contain\:
+  - an abnormally short [chromosome 22]{color=purple}, the so-called Philadelphia chromosome, and
+  - an abnormally long chromosome 9.
+- These altered chromosomes result from the reciprocal translocation shown here,
+  - which presumably occurred in a single white blood cell precursor undergoing mitosis and was then passed along to all descendant cells.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Really five questions\:
+- (a) C-E inversion\: A B E D C F G
+- (b) C-E deletion\: A B F G
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- My technique is add telomeres (\*\*) to the ends of the chromosomes, because telomeres (\*\*) cannot link up to the center of another chromosome.
+- \*\*ABCDE|FG\*\* and
+- \*\*MNOPQRS|TUV\*\*
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- There are two possible ways for the translocation to happen
+- 	\*\*ABCDE &#8211;  &#8211; FG\*\*
+- \*\*MNOPQRS &#8211; &#8211; TUV\*\*
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- There are two possible ways for the translocation to happen
+- 	\*\*ABCDE &#8211;  &#8211; FG\*\*
+- \*\*MNOPQRS &#8211; &#8211; TUV\*\*
+
+- #1
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- There are two possible ways for the translocation to happen
+- 	\*\*ABCDE &#8211;  &#8211; FG\*\*
+- \*\*MNOPQRS &#8211; &#8211; TUV\*\*
+- [\*\*ABCDE-SRQPONM\*\*]{color=red}
+- [\*\*GF-TUV\*\*]{color=#355269}
+
+- #1
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- There are two possible ways for the translocation to happen
+- 	\*\*ABCDE &#8211;  &#8211; FG\*\*
+- \*\*MNOPQRS &#8211; &#8211; TUV\*\*
+
+- #2
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- There are two possible ways for the translocation to happen
+- 	\*\*ABCDE &#8211;  &#8211; FG\*\*
+- \*\*MNOPQRS &#8211; &#8211; TUV\*\*
+- [\*\*ABCDE-TUV\*\*]{color=orange}
+- [\*\*MNOPQRS-FG\*\*]{color=#1E6A39}
+
+- #2
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- For the reciprocal translocation of two chromosomes.
+- One product solution is...
+- [\*\*ABCDE-TUV\*\*]{color=orange}  and [\*\*MNOPQRS-FG\*\*]{color=#1E6A39}
+- Another product solution is...
+- [\*\*ABCDE-SRQPONM\*\*]{color=red}  and [\*\*GF-TUV\*\*]{color=#355269}
+- The telomeres are always attached to A, G, M, and V.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Reciprocal translocation of two chromosomes.
+- 	\*\*ABCDE &#8211;  &#8211; FG\*\*
+- \*\*MNOPQRS &#8211; &#8211; TUV\*\*
+- TUV[\*\*]{color=red} &#8211; FG\*\*
+- Cannot happen because the telomeres would be in the center of the chromosome.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Last question\: which product pairs are genetically stable?
+- Pair 1\: [\*\*ABCDE-TUV\*\*]{color=orange}  and [\*\*MNOPQRS-FG\*\*]{color=#1E6A39}
+- Pair 2\: [\*\*ABCDE-SRQPONM\*\*]{color=red}  and [\*\*GF-TUV\*\*]{color=#355269}
+- [It depends on the location of the centromeres!]{color=red}
+- [The problem does not tell us]{color=purple} the centromere locations&#8230; so let&#8217;s [pretend]{color=red} the centromeres are between C#D and P#Q
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- [The problem does not tell us]{color=purple} the centromere locations&#8230; so let&#8217;s [pretend]{color=red} the centromeres are between C#D and P#Q
+- Pair 1\: [\*\*ABC]{color=orange}#[DE-TUV\*\*]{color=orange}  and [\*\*MNOP]{color=#1E6A39}#[QRS-FG\*\*]{color=#1E6A39}
+- Pair 2\: [\*\*ABC]{color=red}#[DE-SRQ]{color=red}#[PONM\*\*]{color=red}  and [\*\*GF-TUV\*\*]{color=#355269}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- [The problem does not tell us]{color=purple} the centromere locations&#8230; so let&#8217;s [pretend]{color=red} the centromeres are between C#D and P#Q
+- Pair 1\: [\*\*ABC]{color=orange}#[DE-TUV\*\*]{color=orange}  and [\*\*MNOP]{color=#1E6A39}#[QRS-FG\*\*]{color=#1E6A39}
+- Pair 2\: [\*\*ABC]{color=red}#[DE-SRQ]{color=red}#[PONM\*\*]{color=red}  and [\*\*GF-TUV\*\*]{color=#355269}
+- Pair 1 has both monocentric chromosomes, this is good.
+- Pair 2 has one dicentric and one acentric, this is genetically unstable
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- [Another one]{color=purple}&#8230; so let&#8217;s [pretend]{color=red} the centromeres are between C#D and T#U
+- Pair 1\: [\*\*ABC]{color=orange}#[DE-T]{color=orange}#[UV\*\*]{color=orange}  and [\*\*MNOPQRS-FG\*\*]{color=#1E6A39}
+- Pair 2\: [\*\*ABC]{color=red}#[DE-SRQPONM\*\*]{color=red}  and [\*\*GF-T]{color=#355269}#[UV\*\*]{color=#355269}
+- Pair 1 has one dicentric and one acentric, this is genetically unstable
+- Pair 2 has both monocentric chromosomes, this is good.
+- It switched!
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect13c-chromo_alter_4-translocation/image_008.png)
+
+- Summary
+- (a) C-E inversion\: A B E D C F G
+- (b) C-E deletion\: A B F G
+- (c) A B C D E / T U V and M N O P Q R S / F G
+- or A B C D E / S R Q P O M N and  V U T / F G
+- (d) two monocentric -OR- dicentric and acentric pair
+- (e) only monocentric chromosomes are stable
+
+=== layout: one-panel
+
+# *Typical Quiz Question*
+
+@body
+
+- Q1. Two chromosomes with the gene sequences ABCDEFGHJ and MPQRSTWXYZ undergo a reciprocal translocation after breaks between B|C and T|W.
+- Which one of the following is [NOT]{color=red} a possible product of this translocation?
+  - A. MPQRSTBA
+  - B. MPQRSTCDEFGHJ
+  - C. ZYXWCDEFGHJ
+  - D. BAZYXW
+  - E. ABWXYZ
+
+=== layout: one-panel
+@replaceme
+
+# *Typical Quiz Question*
+
+@body
+
+- Q1. Two chromosomes with the gene sequences
+- [\*AB&#8211;CDEFGHJ\*]{color=purple} and [\*MPQRST&#8211;WXYZ\*]{color=orange} undergo a reciprocal translocation after breaks between B|C and T|W.
+- Which one of the following is [NOT]{color=red} a possible product of this translocation?
+  - A. [\*MPQRST]{color=orange}&#8211;[BA\*]{color=purple}
+  - B. [\*MPQRST]{color=orange}&#8211;[CDEFGHJ\*]{color=purple}
+  - C. [\*ZYXW]{color=orange}&#8211;[CDEFGHJ\*]{color=purple}
+  - D. [BA\*]{color=purple}&#8211;[\*ZYXW]{color=orange}
+  - E. [\*AB]{color=purple}&#8211;[WXYZ\*]{color=orange}
+
+- [Answer\: D]{color=red}
+
+=== layout: one-panel
+
+# *Typical Quiz Question*
+
+@body
+
+- Q2. Two chromosomes with the gene sequences ABCDEFGHJK and  QRSTWXY undergo a reciprocal translocation after breaks between G|H and W|X.
+- Which one of the following is [NOT]{color=red} a possible product of this translocation?
+  - A. YXGFEDCBA
+  - B. ABCDEFGWTSRQ
+  - C. YXHJK
+  - D. KJHWTSRQ
+  - E. HJKYX
+
+=== layout: one-panel
+@replaceme
+
+# *Typical Quiz Question*
+
+@body
+
+- Q2. Two chromosomes with the gene sequences [\*ABCDEFG&#8211;HJK\*]{color=blue} and  [\*QRSTW&#8211;XY\*]{color=#B47804} undergo a reciprocal translocation after breaks between G|H and W|X.
+- Which one of the following is [NOT]{color=red} a possible product of this translocation?
+  - A. [\*YX]{color=#B47804}&#8211;[GFEDCBA\*]{color=blue}
+  - B. [\*ABCDEFG]{color=blue}&#8211;[WTSRQ\*]{color=#B47804}
+  - C. [\*YX]{color=#B47804}&#8211;[HJK\*]{color=blue}
+  - D. [\*KJH]{color=blue}&#8211;[WTSRQ\*]{color=#B47804}
+  - E. [HJK\*]{color=blue}&#8211;[\*YX]{color=#B47804}
+
+- [Answer\: E]{color=red}
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Translocations move DNA between chromosomes.
+- Reciprocal translocations exchange chromosome segments.
+- Unbalanced products have missing or extra DNA.
+- Translocations can affect fertility and gene function.
+
+=== layout: theend
+
+# THE END
+

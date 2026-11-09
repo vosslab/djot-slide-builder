@@ -1,0 +1,370 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 14B
+
+## Allele Frequencies
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish allele, genotype, and phenotype frequencies.
+- Count alleles from diploid genotype data.
+- Calculate allele frequencies from population counts.
+- Apply allele counting to the CCR5 and blood-group examples.
+
+=== layout: section
+
+# Allele Frequencies
+
+=== layout: one-panel
+
+# *Definitions*
+
+@body
+
+- [*Gene pool*]{underline=true} &#8211; Includes all alleles present in the population - total aggregate of genes
+- [*Phenotype frequency*]{underline=true} &#8211; proportion of individuals in a population that are a particular phenotype
+  - example\: population of flowers ..Red and white
+- [*Genotype frequency*]{underline=true} &#8211; proportion of individuals in a population that are a particular genotype.
+  - example\: Among flowers &#8211; RR, Rr and rr
+
+=== layout: one-panel
+
+# *Gene Pools and Allele Frequencies*
+
+@body
+
+- A [*population*]{underline=true} is a localized group of individuals capable of interbreeding and producing fertile offspring
+- A [*gene pool*]{underline=true} consists of all the alleles for all loci in a population
+- A locus is [*fixed*]{underline=true} if all individuals in a population are homozygous for the same allele
+
+=== layout: one-panel
+
+# *Definitions*
+
+@body
+
+- [*Allele frequency*]{underline=true} &#8211; proportion of all the alleles that are of specified type
+  - example\: allele frequency of R & allele frequency of  r
+- [*Evolution*]{underline=true} &#8211; rate of change in frequency of alleles in a population
+  - *Natural Selection* &#8211; differential success in the reproduction of different phenotypes resulting from the interaction of organisms with their environment.
+  - Evolution occurs when natural selection (or other factors) causes changes in relative frequencies of alleles in the gene pool.
+
+=== layout: one-panel
+
+# *Allele Frequency*
+
+@body
+
+- The frequency of an allele in a population can be calculated
+  - For diploid organisms, the total number of alleles at a locus is the total number of individuals times 2
+  - The total number of dominant alleles at a locus is two alleles for each homozygous dominant individual plus one allele for each heterozygous individual; the same logic applies for recessive alleles
+
+=== layout: one-panel
+
+# *Population Genetics*
+
+@body
+
+- Population genetics studies groups of individuals and includes studies of
+  - Allelic variation among individuals
+  - Transmission of allelic variants from parents to offspring generation after generation
+  - Temporal changes in the genetic makeup of a population due to systematic and random evolutionary forces
+
+=== layout: section
+
+# CCR5 gene
+
+=== layout: one-plus-two-panels
+
+# *AIDS-resistance phenotype*
+
+@left
+
+- Chemokine receptor gene (CCR5) found in human population
+- CCR5 receptor enables HIV virus infect CD4 class of T cells in immune system
+  - it is necessary for HIV infection to progress.
+- 10% humans contain CCR5 one allele known as &#916;32
+  - 32 bps deletion within coding region
+  - nonfunctional receptor
+
+@top-right
+
+![Slide image 1](assets/lect14b-allele_freq/image_001.png)
+
+@bottom-right
+
+- Individuals homozygous (&#916;32/&#916;32) do not have functional CCR5 receptors and are resistant to HIV-1 infection
+- Heterozygotes have 2-3-year-slower progression to AIDS relative to wild types
+
+=== layout: one-panel
+
+# *Partial CCR5 receptor gene sequence showing the &#916;32 mutation*
+
+@body
+
+![Slide image 2](assets/lect14b-allele_freq/image_002.jpg)
+
+=== layout: two-over-one-panels
+
+# *Chinese scientists are creating CRISPR babies*
+
+@top-left
+
+- planned to eliminate a gene called CCR5 in hopes of rendering the offspring resistant to HIV, smallpox, and cholera.
+  - CRISPR is employed to modify human embryos before they are transferred into women&#8217;s uteruses
+- According to lead scientist He Jiankui, one couple in the trial gave birth to twin girls in November 2018
+  - December 2019, the Shenzhen Nanshan District People's Court sentenced He to three years' imprisonment and a three-million-yuan fine.\[18\] He Jiankui was released from prison in April 2022
+
+@top-right
+
+- The birth of the first genetically tailored humans would be a stunning medical achievement, for both He and China.
+  - But it will prove controversial, too.
+- Where some see a new form of medicine that eliminates genetic disease,
+  - others see a slippery slope to enhancements, designer babies, and a new form of eugenics.
+
+@bottom
+
+- [https\://www.technologyreview.com/s/612458/crispr-babies/](https://www.technologyreview.com/s/612458/crispr-babies/)
+- [https\://en.wikipedia.org/wiki/He\_Jiankui](https://en.wikipedia.org/wiki/He_Jiankui)
+
+=== layout: one-panel
+@replaceme
+
+# *CCR5 alleles in 1000 people*
+
+@body
+
+![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+
+- How many of each
+- allele do we have?
+
+=== layout: one-panel
+@replaceme
+
+# *CCR5 alleles in 1000 people*
+
+@body
+
+![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+
+- How many of each
+- allele do we have?
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *CCR5 alleles in 1000 people*
+
+@left
+
+- Allele frequencies
+  - 1780 A alleles
+  - 220 a alleles
+  - 2000 total alleles
+- fA = 1780/2000
+  - fA = 0.89 = 89%
+- fa = 220/2000
+  - fa = 0.11 = 11%
+
+@top-right
+
+- Genotype frequencies
+  - fAA = 795/1000 =0.795
+  - fAa = 190/1000 =0.190
+  - faa = 15/1000 =0.015
+
+@bottom-right
+
+- In this section, the
+- main task is to find all
+- of the above values
+
+=== layout: one-panel
+@replaceme
+
+# *Method 1\: Count individual alleles and divide by total*
+
+@body
+
+![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+
+- f(A) = 1780/2000 = 0.89 = 89%
+- f(a) = 220/2000 = 0.11 = 11%
+
+=== layout: one-panel
+@replaceme
+
+# *Method 2\: Only works with genotype frequencies*
+
+@body
+
+![Slide image 4](assets/lect14b-allele_freq/image_004.jpg)
+
+- f(A) = 0.795 + 0.19/2 = 0.89 = 89%
+- f(a) = 0.015 + 0.19/2 = 0.11 = 11%
+
+=== layout: section
+
+# MN Blood Groups
+
+=== layout: stacked-panels
+
+# *ABO vs. MN blood group*
+
+@top
+
+- All refer to different antigens on the surface of red blood cells.
+- System\:
+  - The ABO system refers to one set of antigens on red blood cells coded by the ABO gene.
+    - The corresponding antibodies are anti-A and anti-B antibodies.
+  - The MN blood group also refers to a different antigen controlled by co-dominant alleles.
+- Discovery\:
+  - The ABO blood groups system was discovered in 1900.
+  - The MN groups system was discovered in 1927.
+- There are 346 red blood cell antigens and 33 platelet antigens
+
+@bottom
+
+- [https\://en.wikipedia.org/wiki/Human\_blood\_group\_systems](https://en.wikipedia.org/wiki/Human_blood_group_systems)
+
+=== layout: one-panel
+
+# *Estimating Allele Frequencies\:* *The MN Blood Type*
+
+@body
+
+- The M-N blood type is determined by two alleles of a gene on chromosome 4.
+  - LM produces the M blood type.
+  - LN produces the N blood type.
+  - LM/LN heterozygotes have the MN blood type.
+- After the MN blood groups have been determined for a sample, allele frequencies can be calculated.
+
+=== layout: one-panel
+
+# *Estimation of Allele Frequencies*
+
+@body
+
+![Slide image 5](assets/lect14b-allele_freq/image_005.jpg)
+
+- The total number of alleles is two times the sample size\: 2 &#10006;&#65039; 6129 = 12,258.
+
+- What are the allele frequencies?
+
+=== layout: one-panel
+
+
+@body
+
+- The frequency of the LM allele is 2 times the number of LMLM homozygotes plus the number of LMLN heterozygotes, all divided by the total number of alleles\:
+  - f(LM) = \[(2&#215;1787) + 3039\] / 12,258 = 0.5395 = 54%
+- The frequency of the LN allele is 2 times the number of LNLN homozygotes plus the number of LMLN heterozygotes, all divided by the total number of alleles\:
+  - f(LN) = \[(2&#215;1303) + 3039\] / 12,258 = 0.4605 = 46%
+
+![Slide image 5](assets/lect14b-allele_freq/image_005.jpg)
+
+=== layout: one-panel
+
+# *P,Q convention*
+
+@body
+
+- By convention, if there are two alleles at a locus, p and q are used to represent their frequencies
+- The frequency of all alleles in a population will add up to 1
+  - For example, p + q = 1
+
+=== layout: one-panel
+
+# *Allele Frequencies*
+
+@body
+
+- Letting p represent the frequency of the LM allele and letting q represent the frequency of the LN allele, we estimate that
+  - p = 0.5395 and
+  - q = 0.4605
+- Because LM and LN represent 100% of the alleles of this gene, p + q = 1.
+
+=== layout: stacked-panels
+
+
+@top
+
+![Slide image 6](assets/lect14b-allele_freq/image_006.png)
+
+@bottom
+
+![Slide image 7](assets/lect14b-allele_freq/image_007.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 7](assets/lect14b-allele_freq/image_006.png)
+
+![Slide image 7](assets/lect14b-allele_freq/image_007.png)
+
+- A1 = 2 + 2 + 5 + 1 = 10
+- A2 = 5 + 12 + 12 + 10 = 39
+- A3 = 10 + 5 + 5 + 1 = 21
+- Total alleles = 70
+- f(A1) = 10/70 = 0.14
+- f(A2) = 39/70 = 0.56
+- f(A3) = 21/70 = 0.30
+
+=== layout: one-panel
+
+# *Estimating Allele Frequencies*
+
+@body
+
+- When directly counting alleles is not possible due to the presence of a dominant allele, a different method must be used.
+  - because dominant homozygotes would be identical to heterozygotes
+  - Though if the gene is X-linked, allele can easily be counted in males.
+- When the second most frequent allele of a gene has a frequency greater than 0.01, the gene is [*polymorphic*]{color=#339966}.
+
+=== layout: one-panel
+
+# *Theory of Allele Frequencies*
+
+@body
+
+- [When the members of a population mate randomly, it is easy to predict the frequencies of the genotypes from the frequencies of their constituent alleles.]{color=#339966}
+- [Because of this we can make guesses on frequencies in the next section]{color=#339966}
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Diploid individuals contribute two alleles at a locus.
+- Count both alleles in each heterozygote.
+- Allele frequencies sum to one.
+- Genotype frequency and allele frequency are different.
+
+=== layout: theend
+
+# THE END
+

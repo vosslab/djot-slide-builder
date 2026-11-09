@@ -1,0 +1,672 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 15E
+
+## Inbreeding
+
+## Chapter 10
+
+## Dr. Neil Voss
+
+## December 8, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish nonrandom mating and inbreeding.
+- Relate inbreeding to homozygous genotype frequencies.
+- Trace common ancestors through a pedigree.
+- Calculate an inbreeding coefficient using closed loops.
+
+=== layout: section
+
+# Inbreeding
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 1](assets/lect15e-inbreeding/image_001.png)
+
+=== layout: two-over-one-panels
+
+# *'Incest Prevention Alarm'*
+
+@top-left
+
+- You meet someone, there's chemistry, and then come the introductory questions\:
+  - What's your name? Come here often? Are you my cousin?
+- In Iceland, a country with a population of 320,000 where most everyone is distantly related, inadvertently kissing cousins is a real risk.
+
+@top-right
+
+![Slide image 2](assets/lect15e-inbreeding/image_002.png)
+
+@bottom
+
+- [http\://www.cbc.ca/news/business/x-1.1390256](http://www.cbc.ca/news/business/x-1.1390256)
+
+=== layout: section
+
+# How can you tell if an animal is inbread?
+
+=== layout: one-panel
+
+# *Look for the Crust!*
+
+@body
+
+![Slide image 3](assets/lect15e-inbreeding/image_003.gif)
+
+=== layout: section
+
+# Effects of Inbreeding
+
+=== layout: one-panel
+
+# *Nonrandom Mating*
+
+@body
+
+- Nonrandom mating includes
+  - *Consanguineous mating* &#8211; mating between genetically related individuals
+  - *Assortative mating* &#8211; mating between individuals with similar phenotypes
+- Consanguineous mating reduces the frequency of heterozygotes and increase the frequency of homozygotes compared to the Hardy-Weinberg genotype frequencies.
+
+=== layout: one-panel
+
+# *INBREEDING*
+
+@body
+
+- Mating between relatives such as first cousins &#8211; frequency of heterozygotes gets smaller than it is with random mating.
+- Start with self fertilization of Aa plant\:
+  - After first generation &#8211; &#188; AA, &#189; Aa, &#188; aa
+    - it reduces proportion of heterozygous\: &#189;
+  - After second generation\: &#189; &#215; &#189;  = 1/4
+  - After third generation\: &#189; &#215; &#189; &#215; &#189;  = 1/8
+  - So on&#8230;
+- This section we measure the reduction in quantitative terms.
+
+=== layout: one-panel
+
+# *Effects of Inbreeding*
+
+@body
+
+- Most genetic diseases are caused by recessive alleles.
+- Inbreeding is harmful, and much  of the effect is due to rare recessive alleles that would not otherwise become homozygous.
+- Inbreeding increases the probability of forming recessive genotype.
+  - Among Caucasians, albinism 1 in 20,000 among offspring of non-relatives vs. 1&#160;in 2000 among relative offspring
+
+=== layout: two-panels
+
+# *Blue Fugates of Kentucky*
+
+@left
+
+![Slide image 4](assets/lect15e-inbreeding/image_004.png)
+
+@right
+
+- Fugates family lived in the hills of Kentucky
+  - commonly known as the "Blue Fugates" or the Blue People
+- Carriers of recessive disease methemo-globinemia, which gives sufferers blue-tinged skin
+- Due to remote area where they lived, there was a very high level of consanguinity in marriage between families.
+
+=== layout: one-panel
+
+# *Inbreeding increases the chance of having progeny that are homozygous for a rare recessive trait*
+
+@body
+
+![Slide image 5](assets/lect15e-inbreeding/image_005.jpg)
+
+=== layout: one-panel
+
+# *Effect of Inbreeding*
+
+@body
+
+- The frequencies of the two homozygotes have increased and the frequency of the heterozygotes has decreased compared to the Hardy-Weinberg frequency.
+  - For each genotype, the change in frequency is directly proportional to the [inbreeding coefficient, F]{color=#CC00CC}.
+- For a completely inbred population, F&#160;=&#160;1.
+  - The frequency of genotype AA will be p, the frequency of Aa will be 0, and the frequency of genotype aa will be q.
+
+=== layout: one-panel
+@replaceme
+
+# *The frequency of heterozygotes is reduced as inbreeding increases*
+
+@body
+
+- Heterozygosity (H1) Graph is given by
+  - H1 = 2pq (1-F)
+- F = 0 random mating
+- F = 1  no heterozygous remaining in the population
+
+![Slide image 6](assets/lect15e-inbreeding/image_006.png)
+
+- Inbreeding reduces the frequency of heterozygous genotypes, relative to random mating, and increases the frequency of homozygous genotypes.
+
+=== layout: section
+
+# Inbreeding Coefficient
+
+=== layout: one-panel
+@replaceme
+
+# *Inbreeding Coefficient*
+
+@body
+
+- Inbreeding coefficient\:  It is a measure of genetic effects of inbreeding, symbolized by letter  &#8220;F&#8221;
+- Proportionate reduction in heterozygosity (H1) in an inbred organism  compared with the heterozygosity expected with random mating.
+  - F = (2pq &#8211; H1)/2pq
+    - F = 0 (no inbreeding)
+    - F = 1 (complete inbreeding) ??
+  - H1 = 2pq (1-F)
+- So genotypic frequencies in inbred population\:
+  - AA\: p^2^ (1-F) + pF
+  - Aa\: 2pq (1-F)
+  - aa\: q^2^ (1-F) + qF
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- The effects of consanguineous mating can be quantified using the inbreeding coefficient, F.
+- Frequency with Genotype 	Consanguineous Mating
+  - AA\: p^2^ + pqF
+  - Aa\: 2pq &#8211; 2pqF
+  - aa\: q^2^ + pqF
+
+=== layout: one-panel
+
+@body
+
+[The]{color=#40458C} [*inbreeding coefficient of individual*]{color=#40458C} [is the probability that the individual carries alleles that are identical by descent.]{color=#40458C}
+
+=== layout: one-plus-two-panels
+@replaceme
+
+# *Inbreeding Coefficient*
+
+@left
+
+- Proportionate reduction in heterozygosity (H1) in an inbred organism  compared with the heterozygosity expected with random mating.
+  - F = (2pq &#8211; H1)/2pq
+    - F = 0 (no inbreeding)
+    - F = 1 (complete inbreeding)
+  - H1 = 2pq (1-F)
+
+@top-right
+
+![Slide image 7](assets/lect15e-inbreeding/image_007.svg)
+
+@bottom-right
+
+|  | AA | Aa | aa |
+| F (general) | p^2^ (1-F) + pF | 2pq (1-F) | q^2^ (1-F) + qF |
+| F=0 (no inbreeding) | p^2^ | 2pq | q^2^ |
+| F=1 (complete inbreeding) | p | 0 | q |
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 8](assets/lect15e-inbreeding/image_008.png)
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 9](assets/lect15e-inbreeding/image_009.svg)
+
+@top-right
+
+|  | A1A1 | A1A2 | A2A2 |
+| F (general formulas) | p^2^ (1-F) + pF | 2pq (1-F) | q^2^ (1-F) + qF |
+| Calculation | 0.432 (1-0.66) + 0.43&#215;0.66 | 2&#215;0.43&#215;0.57 (1-0.66) | 0.572 (1-0.66) + 0.57&#215;0.66 |
+| Expected frequency with F=0.66 | [*0.346*]{color=#990099} | [*0.167*]{color=#990099} | [*0.487*]{color=#990099} |
+| Normal H-W | [*0.432*]{color=#990099} [*= 0.185*]{color=#990099} | [*2(0.43)0.57*]{color=#990099} [*= 0.490*]{color=#990099} | [*0.572*]{color=#990099} [*= 0.324*]{color=#990099} |
+
+@bottom-right
+
+![Slide image 9](assets/lect15e-inbreeding/image_008.png)
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 9](assets/lect15e-inbreeding/image_009.svg)
+
+@top-right
+
+|  | A1A1 | A1A2 | A2A2 |
+| F (general formulas) | p^2^ (1-F) + pF | 2pq (1-F) | q^2^ (1-F) + qF |
+| Calculation | 0.432 (1-0.66) + 0.43&#215;0.66 | 2&#215;0.43&#215;0.57 (1-0.66) | 0.572 (1-0.66) + 0.57&#215;0.66 |
+| Expected frequency with F=0.66 | [*0.346*]{color=#990099} | [*0.167*]{color=#990099} | [*0.487*]{color=#990099} |
+| Normal H-W | [*0.432*]{color=#990099} [*= 0.185*]{color=#990099} | [*2(0.43)0.57*]{color=#990099} [*= 0.490*]{color=#990099} | [*0.572*]{color=#990099} [*= 0.324*]{color=#990099} |
+
+@bottom-right
+
+![Slide image 9](assets/lect15e-inbreeding/image_008.png)
+
+=== layout: section
+
+# Calculate the Inbreeding Coefficient of Individual (COI)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 10](assets/lect15e-inbreeding/image_010.png)
+
+- What percent DNA do you share with your aunt?
+
+=== layout: section
+
+# What percent DNA do you share with your aunt? 50% offspring (mother to son) &#215; 50% sisters (mother to aunt) = 25% DNA shared
+
+=== layout: section
+
+# What percent DNA do you share with your grandfather&#8217;s sister&#8217;s kids?
+
+=== layout: section
+
+# What percent DNA do you share with your grandfather&#8217;s sister&#8217;s kids? 25% grandfather &#215; 50% sibling (gpa to sister) &#215; 50% offspring (sister to kid) = 0.25&#215;0.5&#215;0.5 = 6.25%
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect15e-inbreeding/image_011.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 11](assets/lect15e-inbreeding/image_011.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/lect15e-inbreeding/image_012.png)
+
+- &#169; 2005 The Washington Post Company
+
+=== layout: one-panel
+
+# *Is it legal to marry your first cousin in Illinois?*
+
+@body
+
+- In Illinois, first cousins cannot legally marry unless\:
+  - both parties are 50 or older,
+  - or a licensed physician certifies that either one of the parties is &#8220;permanently and irreversibly sterile.&#8221;
+- This certification must be filed when applying for a marriage license.
+- Read more at\: [https\://www.bnd.com/news/state/illinois/article284904242.html](https://www.bnd.com/news/state/illinois/article284904242.html)
+- [https\://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=098-0597](https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=098-0597)
+
+=== layout: two-panels
+
+# *DNA Shared Between Relatives*
+
+@left
+
+- We will use the amount of shared DNA to calculate the inbreeding coefficient
+
+@right
+
+![Slide image 13](assets/lect15e-inbreeding/image_013.png)
+
+=== layout: section
+
+# My Family Story
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- My son was making an autobiography for the 5th grade class (during COVID).
+  - We wanted to make a family tree for the book
+- The story my grandmother (born 1930) has told is that her mother had her when she was 18 and her [father died when she was 2 years old]{color=red}.
+- The familysearch.org has some great tools for searching the U.S. Census, birth and death records, and grave stones.
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- I discovered her birth record online, which had her father&#8217;s name.
+- and it clearly says that my grandmother was not legitimate.
+
+![Slide image 14](assets/lect15e-inbreeding/image_014.png)
+
+=== layout: one-panel
+
+# *Census Record*
+
+@body
+
+- Census Records are quite useful for finding where ancestors lived.
+- According to the "72-Year Rule," the National Archives releases census records to the general public 72 years after Census Day.
+  - As a result, the 1930 census records were released April 1, 2002
+  - The 1940 records were released April 2, 2012
+  - The 1950 census records were newly released in April 2022.
+
+=== layout: one-panel
+@replaceme
+
+# *Pedigree Collapse Calculator*
+
+@body
+
+- Pedigree Collapse Calculator will tell you how much percentage of your DNA is homozygous indicating what level of relationship your parents had.
+- The tool will tell the percentage of collapse in your pedigree.
+  - It supports FTDNA, 23andMe and Ancestry files.
+
+- [https\://github.com/fiidau/Pedigree-Collapse-Calculator/](https://github.com/fiidau/Pedigree-Collapse-Calculator/)
+
+![Slide image 15](assets/lect15e-inbreeding/image_015.png)
+
+![Slide image 16](assets/lect15e-inbreeding/image_016.png)
+
+=== layout: one-panel
+
+@body
+
+The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreeding (COI)]{color=purple}
+
+=== layout: one-panel
+@replaceme
+
+# *Allelic Identity by Descent*
+
+@body
+
+- In human genetics, geneticists wish to calculate the inbreeding coefficient of a particular individual whose pedigree is known.
+- The method they use is called [*Closed loop method*]{color=red underline=true}
+  - [*Identity by descent*]{underline=true} &#8211; the condition in which two alleles are both replicas of a single ancestral allele in the recent past (same nucleotide sequence).
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect15e-inbreeding/image_017.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 17](assets/lect15e-inbreeding/image_017.png)
+
+=== layout: two-panels
+@replaceme
+
+
+@left
+
+![Slide image 18](assets/lect15e-inbreeding/image_018.png)
+
+@right
+
+![Slide image 18](assets/lect15e-inbreeding/image_017.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 19](assets/lect15e-inbreeding/image_019.png)
+
+- [If A is]{color=red}
+- [not inbred, then]{color=red}
+- [FA = 0]{color=red}
+
+=== layout: one-panel
+
+# *Find the Closed Loops*
+
+@body
+
+![Slide image 20](assets/lect15e-inbreeding/image_020.png)
+
+=== layout: two-panels
+
+# *Two Closed Loops*
+
+@left
+
+![Slide image 20](assets/lect15e-inbreeding/image_020.png)
+
+@right
+
+![Slide image 21](assets/lect15e-inbreeding/image_021.png)
+
+=== layout: two-panels
+
+# *Coefficient of Inbreeding*
+
+@left
+
+- An easy way to do this calculation is by determining the number of ancestors in path.
+- So for Path 1 above starting at I, that would be
+  - --> E --> C --> A --> D --> F
+- There are 5 ancestors in this complete path (from I back to I), and we know the probability of a particular allele being transmitted at each step is 0.5, so we can calculate the total probability as
+  - F = &#189; &#215; &#189; &#215; &#189; &#215; &#189; &#215; &#189; = (&#189;)5
+- ----> or, F = 0.03125 (3.1%).
+
+@right
+
+![Slide image 22](assets/lect15e-inbreeding/image_022.png)
+
+=== layout: two-panels
+
+# *Coefficient of Inbreeding*
+
+@left
+
+![Slide image 22](assets/lect15e-inbreeding/image_021.png)
+
+@right
+
+- About 3% of the genome of I will be homozygous with A.
+- So, for the next step, we have to consider both parents involved in this inbreeding, namely A and B.
+- The paths for B are just the same for A, so once again we have 5 ancester nodes, and the calculated F for B is once again 3.1%.
+- Finally, we compute the total probability of homozygosity in this breeding as\:
+  - &#8594; F = 3.125% + 3.125% = 6.25%;
+- &#8594; therefore the COI of animal/person I is 6.25%.
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 23](assets/lect15e-inbreeding/image_023.png)
+
+=== layout: two-panels
+@replaceme
+
+# *Complex pedigree with multiple paths*
+
+@left
+
+![Slide image 24](assets/lect15e-inbreeding/image_024.jpg)
+
+@right
+
+- Calculation of inbreeding coefficient in a complex pedigree is more involved because each path contributes to the final inbreeding coefficient.
+
+=== layout: two-panels
+@replaceme
+
+# *Complex pedigree with multiple paths*
+
+@left
+
+![Slide image 24](assets/lect15e-inbreeding/image_024.jpg)
+
+@right
+
+- Paths\:
+  - EBD\: (&#189;)3
+  - ECD\: (&#189;)3
+  - ECABD\: (&#189;)5
+  - EBACD\: (&#189;)5
+- FI = (&#189;)3 + (&#189;)3 + (&#189;)5 + (&#189;)5 = 5/16
+  - Individual I is 5/16 less likely to be heterozygous than a non-inbred individual
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 25](assets/lect15e-inbreeding/image_025.png)
+
+- what are the values of p and q?
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 25](assets/lect15e-inbreeding/image_025.png)
+
+- q^2^ = 8.5e-6
+- q = sqrt(8.5e-6) = 0.002915 = 2.9e-3
+- with inbreeding the expected freq of homoz. recessives is\: q^2^(1 - F) + qF
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 25](assets/lect15e-inbreeding/image_025.png)
+
+- q^2^ = 8.5e-6
+- q = sqrt(8.5e-6) = 0.002915
+- with inbreeding the expected freq of homoz. recessives is\: q^2^(1 - F) + qF
+- 8.5e-6 \* (1 - 1/16) + 0.0029\*1/16
+- = 0.00019 = 1.9 x 10-4
+- that is 22 times more likely
+- F = 1/64 &#8594; 5.3 x 10-5 &#8594; 6 times more likely
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 26](assets/lect15e-inbreeding/image_026.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 27](assets/lect15e-inbreeding/image_027.png)
+
+![Slide image 28](assets/lect15e-inbreeding/image_028.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15e-inbreeding/image_027.png)
+
+- (a) common ancestors\:
+- B, H, and I
+- (b) common paths\:
+- JHE[B]{underline=true}FIK
+- JIF[B]{underline=true}EHK
+- J[H]{underline=true}K
+- J[I]{underline=true}K
+
+![Slide image 28](assets/lect15e-inbreeding/image_028.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 28](assets/lect15e-inbreeding/image_027.png)
+
+- (b) common paths\:
+- JHE[B]{underline=true}FIK
+- JIF[B]{underline=true}EHK
+- J[H]{underline=true}K
+- J[I]{underline=true}K
+
+![Slide image 29](assets/lect15e-inbreeding/image_029.png)
+
+=== layout: two-over-one-panels
+
+
+@top-left
+
+![Slide image 29](assets/lect15e-inbreeding/image_027.png)
+
+@top-right
+
+- (b) common paths\:
+- JHE[B]{underline=true}FIK = (&#189;)7
+- JIF[B]{underline=true}EHK = (&#189;)7
+- J[H]{underline=true}K = (&#189;)3
+- J[I]{underline=true}K = (&#189;)3
+- (d) FL = (&#189;)7  + (&#189;)7  + (&#189;)3  + (&#189;)3
+- = (1+1+16+16)/128
+- = 17/64
+- = 26.6%
+
+@bottom
+
+![Slide image 29](assets/lect15e-inbreeding/image_029.png)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Related parents can transmit alleles from a common ancestor.
+- Inbreeding increases homozygosity.
+- Pedigree loops identify common ancestral paths.
+- Count each valid path when calculating the coefficient.
+
+=== layout: theend
+
+# THE END
+

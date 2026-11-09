@@ -1,0 +1,210 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11A
+
+## Announcements
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: section
+
+# Group Quiz 4
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Group Quiz 4
+- Ice Breaker and Announcements
+- Polyploidy and Sex Dosage
+- Chromosome Deletions and Deletion Mapping
+- Chromosome Duplications
+- Closing Remarks
+
+=== layout: one-panel
+
+# Next Week: Nov 24, 2026
+
+@body
+
+- Thanksgiving break starts Tuesday: no class on November 24.
+- Our next class is December 1.
+- Quiz 5 and homework assignments 11 and 12 are due December 8.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Five Day Outlook](assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
+
+@caption
+
+Dry and mild conditions will persist through Tuesday&#46; Areawide chances for rainfall return on Wednesday before cooler temperatures arrive for the latter half of the week and lake effect showers develop and move into portions of northwestern Indiana and possibly northeastern Illinois&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: one-panel
+
+# Breakout Room Chat
+
+@body
+
+- State your name, major, and post-grad plans
+- [You can genetically modify one animal. What would you change?]{color=red}
+- Choose a farm animal, pet, or wild species.
+- Explain the useful trait and one possible tradeoff.
+- If no one is talking, please be the first to speak.
+
+=== include: repo:evergreen/youtube_channel.djot
+
+=== layout: big-image
+
+@image
+
+![Stump the Vibe Coder &#35;37&#58; Bad Cell Day](repo:genetics/LECT10/djot/assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
+
+@caption
+
+Stump the Vibe Coder &#35;37&#58; Bad Cell Day\
+Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
+Play the Game: https://vosslab.github.io/bad-cell-day/
+
+=== include: repo:genetics/evergreen/course_information.djot
+
+=== layout: subsection
+
+# Exam/Quiz
+
+=== layout: one-panel
+
+# Exam and Quiz Schedule
+
+@body
+
+- [Quiz 1: Sept 22]{color=#AAAAAA}
+- [Quiz 2: Oct 06]{color=#AAAAAA}
+- [Midterm: Oct 13]{color=#AAAAAA}
+- [Quiz 3: Nov 03]{color=#AAAAAA}
+- [Quiz 4: Nov 17]{color=red}
+- [Quiz 5: Dec 08]{color=#000000}
+- [Final exam: Dec 15]{color=#000000}
+
+=== include: repo:genetics/evergreen/assessment_policies.djot
+
+=== layout: subsection
+hidden: true
+
+# Exam
+
+=== layout: one-panel
+hidden: true
+
+# *Midterm reference: October 13*
+
+@body
+
+- Tuesday, Oct 13, 2026\: in-person written exam during class
+- Chapters 1-4
+- Class meeting\: 1\:30-4\:25 p.m.
+- Worth 100 points; completed individually
+
+=== include: repo:genetics/evergreen/exam_guidance.djot
+hidden: true
+
+=== layout: one-panel
+hidden: true
+
+# *BB Assignments for Mid-Term Exam*
+
+@body
+
+- Prepare for the Oct 13 midterm\: Chapters 1-4
+- Retake available assignments until you understand the questions
+- Unlimited homework attempts; only the highest score counts
+- Assignments 4-5 were due Oct 6
+- Assignment 6 is due Oct 13
+- Check Blackboard for assignment availability and submission times
+
+=== include: repo:genetics/evergreen/quiz_guidance.djot
+hidden: false
+
+=== layout: subsection
+
+# Weekly Assignments
+
+=== include: repo:genetics/evergreen/first_week_assignments.djot
+hidden: true
+
+=== layout: two-panels
+hidden: true
+
+# Homework Due Dates (Part 1)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 04]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
+| [Week 05]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
+| [Week 06]{color=#AAAAAA} | [Oct 13]{color=#AAAAAA} |
+
+@right
+
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+- https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== layout: two-panels
+
+# Homework Due Dates (Part 2)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
+| [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
+| [Week 09]{color=red} | [Nov 17]{color=red} |
+| [Week 10]{color=red} | [Nov 17]{color=red} |
+| [Week 11]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 12]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
+
+@right
+
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+hidden: false
+
+=== include: repo:genetics/evergreen/course_evaluations.djot
+hidden: true
+
+=== include: repo:evergreen/natural_science_club.djot
+hidden: true
+
+=== layout: theend
+
+# THE END

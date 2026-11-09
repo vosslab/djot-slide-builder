@@ -1,0 +1,727 @@
+=== layout: title-slide
+
+# Lecture 12B
+
+## Gene Trees
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## December 1, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Read nodes, branches, and relationships in gene trees.
+- Compare sequence differences with genetic distances.
+- Build a tree from a distance matrix.
+- Read pairwise distances from a completed tree.
+
+=== layout: section
+
+# Gene Trees
+
+=== layout: two-panels
+
+# *Anniversary of &#8220;On the Origin of Species&#8221;*
+
+@left
+
+- [*Published Nov. 24, 1859*]{color=red}
+- This notebook sketch shows Darwin&#8217;s realization that species share common ancestors and diversify over time
+- parallels modern gene trees, which trace genetic divergence
+
+@right
+
+![Slide image 2](assets/lect12b-gene_trees/image_002.png)
+
+=== layout: section
+
+# Why do we want to study molecular evolution?
+
+=== layout: two-panels
+
+# *Why Evolution Matters*
+
+@left
+
+- How do new diseases emerge in a populations?
+- Why do disease persist in all living organisms?
+- What causes the diseases?
+- Why do pest under control resurge in high frequency?
+- Of course, evolutionary history
+
+@right
+
+![Slide image 3](assets/lect12b-gene_trees/image_003.png)
+
+=== layout: two-panels
+
+# *Why Evolution Matters*
+
+@left
+
+- Understanding evolution is crucial for grasping the complexities of biological diversity.
+- Evolution explains the mechanisms behind biodiversity and species adaptation.
+- It underpins genetic and phenotypic changes across diverse species.
+- Studying evolution is key to comprehending the intricate history of life on Earth.
+
+@right
+
+![Slide image 4](assets/lect12b-gene_trees/image_004.png)
+
+=== layout: section
+
+# Gene Trees
+
+=== layout: two-panels
+
+# *Unraveling Gene Trees*
+
+@left
+
+![Slide image 5](assets/lect12b-gene_trees/image_005.png)
+
+@right
+
+- Gene trees are visual representations that map genetic lineage and evolutionary relationships.
+- They differ from species trees by focusing on the evolutionary path of specific genes.
+- Essential tools in molecular genetics for tracing gene evolution across species.
+- Provide insights into how genetic variations contribute to evolutionary processes.
+
+=== layout: two-panels
+
+# *Interpreting Gene Trees*
+
+@left
+
+![Slide image 6](assets/lect12b-gene_trees/image_006.png)
+
+@right
+
+- Gene trees help decode the relationships and common ancestry between different species.
+- The time axis in gene trees is crucial for understanding the timing of divergences.
+- These trees are instrumental in visualizing the evolutionary pathways of genes.
+- They provide a context for understanding genetic evolution within the broader scope of species evolution.
+
+=== layout: one-panel
+
+# *Can You Interpret This!?!*
+
+@body
+
+![Slide image 7](assets/lect12b-gene_trees/image_007.png)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 8](assets/lect12b-gene_trees/image_008.svg)
+
+- Gene
+- Tree
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 9](assets/lect12b-gene_trees/image_009.svg)
+
+- 1. Which pair of species are the most closely related?
+- A. gorilla and human
+- B. gibbon and gorilla
+- C. bonobo and gorilla
+- D. bonobo and human
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 10](assets/lect12b-gene_trees/image_010.svg)
+
+- 2. Which pair of species are the most closely related?
+- A. Bornean orangutan and Sumatran orangutan
+- B. bonobo and chimpanzee
+- C. human and gorilla
+- D. gibbon and gorilla
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 11](assets/lect12b-gene_trees/image_011.svg)
+
+- 3. How millions of years separate the gorilla and bonobo?
+- A. 2 million
+- B. 5 million
+- C. 7 million
+- D. 15 million
+- E. 21 million
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/lect12b-gene_trees/image_012.svg)
+
+- 1. Which pair of species are the most closely related?
+- A. gorilla and human (7)
+- B. gibbon and gorilla (21)
+- C. bonobo and gorilla (7)
+- [D. bonobo and human (5)]{color=red}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/lect12b-gene_trees/image_012.svg)
+
+- 2. Which pair of species are the most closely related?
+- A. Bornean orangutan and Sumatran orangutan (3)
+- [B. bonobo and chimpanzee (2)]{color=red}
+- C. human and gorilla (7)
+- D. gibbon and gorilla (21)
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 12](assets/lect12b-gene_trees/image_012.svg)
+
+- 3. How millions of years separate the gorilla and bonobo?
+- A. 2 million
+- B. 5 million
+- [C. 7 million]{color=red}
+- D. 15 million
+- E. 21 million
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect12b-gene_trees/image_013.png)
+
+=== layout: section
+
+# Reading a Gene Tree
+
+=== layout: one-panel
+@replaceme
+
+# *Understanding Branch Points*
+
+@body
+
+- [*Branches*]{color=#355269 underline=true} [reflect evolutionary paths from common ancestors.]{color=#355269}
+- [Each divergence event is marked by a]{color=#355269} [*branch point*]{color=#355269 underline=true} [in the tree.]{color=#355269}
+- [These points signify the splitting of one group into two distinct lines.]{color=#355269}
+- [Interpretation of these points helps trace species' evolutionary history.]{color=#355269}
+
+![Slide image 14](assets/lect12b-gene_trees/image_014.png)
+
+- [https\://en.wikipedia.org/wiki/Phylogenetic\_tree](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+
+=== layout: one-panel
+@replaceme
+
+# *Tracing Common Ancestors*
+
+@body
+
+![Slide image 15](assets/lect12b-gene_trees/image_015.png)
+
+- [Closeness of species determined by recency of common ancestors.]{color=#55215B}
+- [To find the most recent common ancestor (MRCA), &#8220;walk backwards&#8221; to where species lines converge.]{color=#55215B}
+- [Example\: A and B share a more recent ancestor than B and C, indicating closer relation.]{color=#55215B}
+- [Understanding MRCA is crucial for interpreting evolutionary relationships.]{color=#55215B}
+
+- [https\://en.wikipedia.org/wiki/Most\_recent\_common\_ancestor](https://en.wikipedia.org/wiki/Most_recent_common_ancestor)
+
+=== layout: one-panel
+
+# *Different Forms, Same Gene Tree*
+
+@body
+
+![Slide image 16](assets/lect12b-gene_trees/image_016.png)
+
+- The three trees above represent identical relationships among species A, B, C, D, and E.
+- The same evolutionary relationships can be represented in multiple tree forms.
+- Orientation of branches doesn&#8217;t change the underlying genetic connections.
+
+- [https\://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees](https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees)
+
+=== layout: one-panel
+
+# *Rotating Branches in Trees*
+
+@body
+
+![Slide image 17](assets/lect12b-gene_trees/image_017.png)
+
+=== layout: two-over-one-panels
+
+# *Trees, trees, and trees, oh my*
+
+@top-left
+
+![Slide image 17](assets/lect12b-gene_trees/image_017.png)
+
+@top-right
+
+- [Another critical point is that if you rotate the structures, about the branch points as a pivot, you don&#8217;t change the relationships.]{color=#8D281E}
+- [So just like the two trees left, which show the same relationships, all of the trees below show the same relationships among four species.]{color=#8D281E}
+- [Despite different appearances, the underlying relationships remain constant.]{color=#8D281E}
+
+@bottom
+
+![Slide image 18](assets/lect12b-gene_trees/image_018.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Polytomy in Gene Trees*
+
+@body
+
+![Slide image 19](assets/lect12b-gene_trees/image_019.png)
+
+- [*Polytomy*]{color=#784B04 underline=true}[\: A branch point with three or more diverging species.]{color=#784B04}
+- [Indicates lack of sufficient information to determine precise branching order.]{color=#784B04}
+- [Common in complex evolutionary scenarios.]{color=#784B04}
+
+- [https\://en.wikipedia.org/wiki/Polytomy](https://en.wikipedia.org/wiki/Polytomy)
+
+=== layout: section
+
+# Constructing a Gene Tree from Sequences
+
+=== layout: one-panel
+
+# *Alignment of Hemoglobin sequences*
+
+@body
+
+![Slide image 20](assets/lect12b-gene_trees/image_020.png)
+
+- &#8220;.&#8221;
+  - exact match
+- &#8220;&#8211;&#8220;
+  - gap or missing amino acid
+- &#8220;A-Z&#8221;
+  - sequence difference
+
+=== layout: one-panel
+@replaceme
+
+# *Alignment of Hemoglobin sequences*
+
+@body
+
+![Slide image 20](assets/lect12b-gene_trees/image_020.png)
+
+- &#8220;.&#8221;
+  - exact match
+- &#8220;&#8211;&#8220;
+  - gap or missing amino acid
+- &#8220;A-Z&#8221;
+  - sequence difference
+
+=== layout: section
+
+# Gene Tree Methods
+
+=== layout: two-panels
+
+# *Distance-Based Methods*
+
+@left
+
+- Distance-based methods rely on genetic distance calculations between sequences.
+- Simple and efficient, ideal for large datasets with many species.
+- UPGMA and Neighbor-Joining are common examples.
+- Effective for providing a general view of phylogenetic relationships.
+
+@right
+
+![Slide image 21](assets/lect12b-gene_trees/image_021.png)
+
+=== layout: two-panels
+
+# *Understanding Distance Matrices*
+
+@left
+
+- Distance matrix\: A table showing genetic distances between pairs of sequences.
+- Essential in distance-based phylogenetic methods like UPGMA and Neighbor-Joining.
+- Provides a simplified, quantifiable view of genetic relationships.
+
+@right
+
+![Slide image 22](assets/lect12b-gene_trees/image_022.png)
+
+=== layout: two-panels
+
+# *UPGMA Distance Method*
+
+@left
+
+- UPGMA\: [*Unweighted Pair Group Method with Arithmetic Mean.*]{underline=true}
+- Constructs tree by grouping sequences based on minimum distance.
+- Assumes a molecular clock\: constant rate of evolution across all lineages.
+- Useful for simple, quick phylogenetic analysis with less complexity.
+- [https\://en.wikipedia.org/wiki/UPGMA](https://en.wikipedia.org/wiki/UPGMA)
+
+@right
+
+![Slide image 23](assets/lect12b-gene_trees/image_023.png)
+
+=== layout: two-panels
+
+# *Neighbor-Joining Distance Method*
+
+@left
+
+![Slide image 24](assets/lect12b-gene_trees/image_024.png)
+
+@right
+
+- Neighbor-Joining\: A bottom-up clustering method for tree construction.
+- Does not assume a constant rate of evolution, unlike UPGMA.
+- Iteratively groups closest pair of sequences, recalculates distances.
+- Preferred for its accuracy in more complex phylogenetic analyses.
+- Requires more math equations than UPGMA.
+
+=== layout: two-panels
+
+# *Character-Based Methods*
+
+@left
+
+- Analyze specific genetic characters or sequences.
+- Include methods like [Maximum Parsimony]{color=#00A933} and [Maximum Likelihood]{color=#00A933}.
+- Focus on evolutionary changes in genes or morphological features.
+- Provide detailed insights, suitable for various data complexities.
+
+@right
+
+- Character-based methods analyze specific genetic or morphological characters.
+- Distance-based methods calculate overall genetic distances between sequences.
+- Character-based (e.g., Maximum Parsimony, Maximum Likelihood) offer detailed insights.
+- Distance-based (e.g., UPGMA, Neighbor-Joining) are efficient for large datasets.
+- Choice depends on data complexity and desired level of detail in analysis.
+
+=== layout: one-panel
+
+# *The Parsimony Method*
+
+@body
+
+- Seeks the simplest explanation with the fewest evolutionary changes.
+- Ideal for datasets where evolutionary events are relatively infrequent.
+- Minimizes assumptions about evolutionary rates and patterns.
+- Balances between simplicity and explanatory power in tree construction.
+
+=== layout: one-panel
+
+# *Parsimony Example*
+
+@body
+
+![Slide image 25](assets/lect12b-gene_trees/image_025.png)
+
+- there are various trees that could explain the phylogeny of the sequences [AAG, AAA, GGA, AGA]{color=#00A933} including the two above.
+- parsimony prefers the first tree because it requires fewer substitution events (less [red letters]{color=red}\: 3 vs. 4)
+
+=== layout: one-panel
+
+# *Maximum Likelihood in Phylogenetics*
+
+@body
+
+- Evaluates probability of observed data under different tree hypotheses.
+- Utilizes statistical models to estimate tree likelihood.
+- Suitable for complex datasets requiring detailed evolutionary models.
+- Computationally intensive, offering nuanced understanding of relationships.
+
+=== layout: two-panels
+
+# *Bayesian Inference in Phylogenetics*
+
+@left
+
+![Slide image 26](assets/lect12b-gene_trees/image_026.png)
+
+@right
+
+- Bayesian methods incorporate prior knowledge with observed data.
+- They estimate the posterior probability of trees using statistical models.
+- Highly flexible and can incorporate various types of evolutionary models.
+- Provides a probabilistic framework for tree estimation and hypothesis testing.
+
+=== layout: section
+
+# Simple Example of Gene Tree by Distance Method
+
+=== layout: section
+
+# UPGMA Simple Example Part 1\: Create Distance Matrix
+
+=== layout: one-panel
+
+# *Step 1\: Get the sequences*
+
+@body
+
+- Northern White Rhinoceros
+  - KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- Southern White Rhinoceros
+  - KIFMPQSKDRGPCNTHCCNGCDCIRQYKVI
+- Black Rhinoceros
+  - KIFMPQCKDRGPSNTHSSNGSECLRQYKVI
+
+=== layout: one-panel
+
+# *Step 2\: Use Abbreviations*
+
+@body
+
+- Northern White Rhinoceros (N.Wh.)
+  - KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- Southern White Rhinoceros (S.Wh.)
+  - KIFMPQSKDRGPCNTHCCNGCDCIRQYKVI
+- Black Rhinoceros (Blk)
+  - KIFMPQCKDRGPSNTHSSNGSECLRQYKVI
+
+=== layout: one-panel
+@replaceme
+
+# *Step 2\: Align the Sequences*
+
+@body
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	KIFMPQSKDRGPCNTHCCNGCDCIRQYKVI
+- Blk.R	KIFMPQCKDRGPSNTHSSNGSECLRQYKVI
+
+=== layout: one-panel
+@replaceme
+
+# *Step 3\: Convert to Dots*
+
+@body
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+=== layout: four-panels
+@replaceme
+
+# *Step 4\: Setup Distance Table*
+
+@top-left
+
+![Slide image 27](assets/lect12b-gene_trees/image_027.svg)
+
+@top-right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. |  |  |  |
+| S.Wh. |  |  |  |
+| Blk.R |  |  |  |
+
+@bottom-left
+
+- 3 sequences &#8594; 4x4 table
+
+@bottom-right
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+=== layout: four-panels
+@replaceme
+
+# *Step 5\: Cancel Out the Diagonal*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 28](assets/lect12b-gene_trees/image_028.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; |  |  |
+| S.Wh. |  | &#215; |  |
+| Blk.R |  |  | &#215; |
+
+@bottom-right
+
+- There are no differences
+- between N.Wh. and itself
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 29](assets/lect12b-gene_trees/image_029.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; |  |  |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R |  |  | &#215; |
+
+@bottom-right
+
+- N.Wh. and S.Wh. have
+- 4 differences (QDNQ)
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 30](assets/lect12b-gene_trees/image_030.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 |  |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R |  |  | &#215; |
+
+@bottom-right
+
+- S.Wh. and N.Wh. have
+- 4 differences (QDNQ)
+- [\[table is symmetric\]]{color=red}
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 31](assets/lect12b-gene_trees/image_031.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R |  |  | &#215; |
+
+@bottom-right
+
+- N.Wh. and Blk.R have
+- 12 differences
+- (CDSQSSNSECLQ)
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+![Slide image 32](assets/lect12b-gene_trees/image_032.svg)
+
+@top-right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R | 12 |  | &#215; |
+
+@bottom-left
+
+- Likewise, Blk.R and N.Wh.
+- have 12 differences
+- [\[table is symmetric\]]{color=red}
+
+@bottom-right
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 32](assets/lect12b-gene_trees/image_032.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R | 12 |  | &#215; |
+
+@bottom-right
+
+- Our setup makes the
+- S.Wh. and Blk.R difficult
+

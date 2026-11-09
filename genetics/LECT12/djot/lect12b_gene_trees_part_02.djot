@@ -1,0 +1,512 @@
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 32](assets/lect12b-gene_trees/image_032.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R | 12 |  | &#215; |
+
+@bottom-right
+
+- Our setup makes the
+- S.Wh. and Blk.R difficult
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+![Slide image 33](assets/lect12b-gene_trees/image_033.svg)
+
+@top-right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | &#215; |  |
+| Blk.R | 12 | 8 | &#215; |
+
+@bottom-left
+
+- But if we highlight the
+- difference, we count 8
+
+@bottom-right
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+=== layout: four-panels
+@replaceme
+
+# *Step 6\: Figure Out Distances*
+
+@top-left
+
+- N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
+- S.Wh.	.....Q..D.........N......Q....
+- Blk.R	.....QC.D...S...SSN.SECL.Q....
+
+@top-right
+
+![Slide image 34](assets/lect12b-gene_trees/image_034.svg)
+
+@bottom-left
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | &#215; | 8 |
+| Blk.R | 12 | 8 | &#215; |
+
+@bottom-right
+
+- But if we highlight the
+- difference, we count 8
+- [\[table is symmetric\]]{color=red}
+
+=== layout: section
+
+# UPGMA Simple Example Part 2\: Create Gene Tree
+
+=== layout: two-panels
+@replaceme
+
+# *Step 1\: Ignore the top half*
+
+@left
+
+![Slide image 35](assets/lect12b-gene_trees/image_035.svg)
+
+@right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
+| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
+| Blk.R | 12 | 8 | &#215; |
+
+=== layout: two-panels
+@replaceme
+
+# *Step 1\: Ignore the top half*
+
+@left
+
+![Slide image 36](assets/lect12b-gene_trees/image_036.svg)
+
+@right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | 4 | 12 |
+| S.Wh. | 4 | [&#215;]{color=#EEEEEE} | 8 |
+| Blk.R | 12 | 8 | &#215; |
+
+=== layout: two-panels
+@replaceme
+
+# *Step 2\: Find Smallest Value*
+
+@left
+
+![Slide image 36](assets/lect12b-gene_trees/image_035.svg)
+
+@right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
+| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
+| Blk.R | 12 | 8 | &#215; |
+
+=== layout: two-panels
+@replaceme
+
+# *Step 2\: Find Smallest Value*
+
+@left
+
+![Slide image 36](assets/lect12b-gene_trees/image_035.svg)
+
+@right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
+| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
+| Blk.R | 12 | 8 | &#215; |
+
+=== layout: four-panels
+@replaceme
+
+# *Step 2\: Create Gene Tree*
+
+@top-left
+
+![Slide image 36](assets/lect12b-gene_trees/image_035.svg)
+
+- length on tree is
+- &#189; of the distance
+
+@top-right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
+| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
+| Blk.R | 12 | 8 | &#215; |
+
+@bottom-left
+
+- N.Wh.
+- S.Wh.
+- Blk.R
+
+@bottom-right
+
+- 2
+
+- 2
+
+=== layout: four-panels
+@replaceme
+
+# *Step 2\: Merge N.Wh. and S.Wh.*
+
+@top-left
+
+![Slide image 37](assets/lect12b-gene_trees/image_037.svg)
+
+- average of
+- 12 and 8 is 10
+
+@top-right
+
+|  | N.Wh. | S.Wh. | Blk.R |
+| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
+| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
+| Blk.R | 12 | 8 | &#215; |
+
+@bottom-left
+
+- N.Wh.
+- S.Wh.
+- Blk.R
+
+@bottom-right
+
+- 2
+
+- 2
+
+=== layout: four-panels
+@replaceme
+
+# *Step 2\: Merge N.Wh. and S.Wh.*
+
+@top-left
+
+![Slide image 38](assets/lect12b-gene_trees/image_038.svg)
+
+@top-right
+
+|  | (N.Wh., S.Wh.) | Blk.R |
+| (N.Wh., S.Wh.) | &#215; | [10]{color=#CCCCCC} |
+| Blk.R | 10 | &#215; |
+
+@bottom-left
+
+- N.Wh.
+- S.Wh.
+- Blk.R
+
+- 2
+
+- 2
+
+@bottom-right
+
+- average of
+- 12 and 8 is 10
+
+=== layout: four-panels
+@replaceme
+
+# *Step 3\: Find Next Smallest*
+
+@top-left
+
+![Slide image 39](assets/lect12b-gene_trees/image_039.svg)
+
+- length on tree is
+- &#189; of the distance
+
+@top-right
+
+|  | (N.Wh., S.Wh.) | Blk.R |
+| (N.Wh., S.Wh.) | &#215; | [10]{color=#CCCCCC} |
+| Blk.R | 10 | &#215; |
+
+@bottom-left
+
+- N.Wh.
+- S.Wh.
+- Blk.R
+
+- 2
+
+- 2
+
+@bottom-right
+
+- 5
+
+=== layout: six-panels
+@replaceme
+
+# *Step 3\: Find Next Smallest*
+
+@top-left
+
+![Slide image 39](assets/lect12b-gene_trees/image_039.svg)
+
+- subtract to fill
+- other distances
+
+@top-center
+
+|  | (N.Wh., S.Wh.) | Blk.R |
+| (N.Wh., S.Wh.) | &#215; | [10]{color=#CCCCCC} |
+| Blk.R | 10 | &#215; |
+
+@top-right
+
+- N.Wh.
+- S.Wh.
+- Blk.R
+
+@bottom-left
+
+- 2
+
+- 2
+
+@bottom-center
+
+- 5
+
+@bottom-right
+
+- 3
+
+=== layout: one-panel
+@replaceme
+
+# *DONE!!!*
+
+@body
+
+- N.Wh.
+- S.Wh.
+- Blk.R
+
+- 2
+
+- 2
+
+- 5
+
+- 3
+
+=== layout: section
+
+# 17.22 From Gene Tree to Distance Matrix
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 40](assets/lect12b-gene_trees/image_040.png)
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 40](assets/lect12b-gene_trees/image_040.png)
+
+@top-right
+
+![Slide image 41](assets/lect12b-gene_trees/image_041.svg)
+
+@bottom-left
+
+|  | A | B | C | D |
+| A |  |  | 6.4 |  |
+| B |  |  |  |  |
+| C |  |  |  |  |
+| D |  |  |  |  |
+
+@bottom-right
+
+- a-c distance times 2\:
+- 3.2 &#215; 2 = 6.4
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 41](assets/lect12b-gene_trees/image_040.png)
+
+@top-right
+
+![Slide image 42](assets/lect12b-gene_trees/image_042.svg)
+
+@bottom-left
+
+|  | A | B | C | D |
+| A |  |  | 6.4 | 12.6 |
+| B |  |  |  |  |
+| C |  |  |  | 12.6 |
+| D |  |  |  |  |
+
+@bottom-right
+
+- (a,c)-d distance times 2\:
+- 6.3 &#215; 2 = 12.6
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 42](assets/lect12b-gene_trees/image_040.png)
+
+@top-right
+
+![Slide image 43](assets/lect12b-gene_trees/image_043.svg)
+
+@bottom-left
+
+|  | A | B | C | D |
+| A |  |  | 6.4 | 12.9 |
+| B |  |  |  |  |
+| C |  |  |  | 12.3 |
+| D |  |  |  |  |
+
+@bottom-right
+
+- 12.6 is only the average
+- numbers can be different
+
+=== layout: four-panels
+@replaceme
+
+
+@top-left
+
+![Slide image 43](assets/lect12b-gene_trees/image_040.png)
+
+@top-right
+
+![Slide image 44](assets/lect12b-gene_trees/image_044.svg)
+
+@bottom-left
+
+|  | A | B | C | D |
+| A |  | 17.4 | 6.4 | 12.6 |
+| B |  |  | 17.4 | 17.4 |
+| C |  |  |  | 12.6 |
+| D |  |  |  |  |
+
+@bottom-right
+
+- 8.7 &#215; 2 = 17.4 for the rest
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 45](assets/lect12b-gene_trees/image_045.svg)
+
+@top-right
+
+|  | A | B | C | D |
+| A |  | 17.4 | 6.4 | 12.6 |
+| B | 17.4 |  | 17.4 | 17.4 |
+| C | 6.4 | 17.4 |  | 12.6 |
+| D | 12.6 | 17.4 | 12.6 |  |
+
+@bottom-right
+
+- tables are symmetric about the diagonal line
+
+=== layout: one-plus-two-panels
+@replaceme
+
+
+@left
+
+![Slide image 45](assets/lect12b-gene_trees/image_045.svg)
+
+@top-right
+
+|  | A | B | C | D |
+| A |  | 17.4 | 6.4 | 12.6 |
+| B | 17.4 |  | 17.4 | 17.4 |
+| C | 6.4 | 17.4 |  | 12.6 |
+| D | 12.6 | 17.4 | 12.6 |  |
+
+@bottom-right
+
+- tables are symmetric about the diagonal line
+
+=== layout: one-panel
+
+# *More Information*
+
+@body
+
+- Khan Academy
+  - [https\://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-phylogeny/a/phylogenetic-trees](https://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-phylogeny/a/phylogenetic-trees)
+  - [https\://www.khanacademy.org/science/biology/her/tree-of-life/a/building-an-evolutionary-tree](https://www.khanacademy.org/science/biology/her/tree-of-life/a/building-an-evolutionary-tree)
+- Open Stax
+  - [https\://cnx.org/contents/24nI-KJ8@24.18\:EmlvXoDL@7/Taxonomy-and-phylogeny](https://cnx.org/contents/24nI-KJ8@24.18:EmlvXoDL@7/Taxonomy-and-phylogeny)
+  - [https\://cnx.org/contents/24nI-KJ8@27.4\:EmlvXoDL@8/Taxonomy-and-phylogeny](https://cnx.org/contents/24nI-KJ8@27.4:EmlvXoDL@8/Taxonomy-and-phylogeny)
+- Other
+  - [https\://amphibiaweb.org/taxonomy/](https://amphibiaweb.org/taxonomy/)
+  - [https\://www.ncbi.nlm.nih.gov/books/NBK21122/](https://www.ncbi.nlm.nih.gov/books/NBK21122/)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Gene trees describe relationships among gene sequences.
+- Rotating a branch does not change the relationships.
+- Distance matrices summarize pairwise differences.
+- Clustering turns those distances into a tree.
+
+=== layout: theend
+
+# THE END
+

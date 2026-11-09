@@ -1,0 +1,399 @@
+=== layout: section
+
+# Sex Quiz
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- X\:AA
+
+- Drosophila
+
+- sterile male
+
+- Humans
+
+- Turner female sterile
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- D. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XX\:AA
+
+- Drosophila
+
+- normal
+- female
+
+- Humans
+
+- normal
+- female
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXX\:AA
+
+- Drosophila
+
+- dies
+- metafemale
+
+- Humans
+
+- nearly
+- normal
+- female
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXY\:AA
+
+- Drosophila
+
+- normal
+- female
+
+- Humans
+
+- Kleinfelter male sterile
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XY\:AA
+
+- Drosophila
+
+- normal male
+
+- Humans
+
+- normal male
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XYY\:AA
+
+- Drosophila
+
+- normal male
+
+- Humans
+
+- nearly
+- normal male
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- OY\:AA
+
+- Drosophila
+
+- dies,
+- probably
+- male
+
+- Humans
+
+- dies,
+- probably
+- male
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXYY\:AA
+
+- Drosophila
+
+- normal
+- female
+
+- Humans
+
+- nearly normal
+- male
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- D. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXX\:AAA
+
+- Drosophila
+
+- normal
+- female
+
+- Humans
+
+- usually
+- miscarriage
+- (polysperm)
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXY\:AAA
+
+- Drosophila
+
+- intersex
+
+- Humans
+
+- usually
+- miscarriage
+- (polysperm)
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXXX\:`AAAA`
+
+- Drosophila
+
+- normal
+- female
+
+- Humans
+
+- only seen in
+- miscarriages
+- & cancer cells
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXXY\:`AAAA`
+
+- Drosophila
+
+- intersex
+
+- Humans
+
+- male not
+- observed
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XXYY\:`AAAA`
+
+- Drosophila
+
+- normal
+- male
+
+- Humans
+
+- only seen in
+- miscarriages
+- & cancer cells
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+- XYYY\:`AAAA`
+
+- Drosophila
+
+- metamale
+
+- Humans
+
+- male not
+- observed
+
+- A. [both female]{color=red}
+- B. [both male]{color=blue}
+- C. [drosophila female]{color=red}
+- / [human male]{color=blue}
+- C. [drosophila male]{color=blue}
+- / [human female]{color=red}
+- E. [drosophila intersex]{color=#A1467E}
+
+=== layout: one-panel
+
+# *Summary of Sex Determination in Fruit Flies and Humans*
+
+@body
+
+![Slide image 23](assets/lect11c-sex_dosage/image_023.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Larger Summary with ZW*
+
+@body
+
+![Slide image 24](assets/lect11c-sex_dosage/image_024.png)
+
+- [https\://www.karger.com/Article/PDF/351998](https://www.karger.com/Article/PDF/351998)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Fruit flies and humans use different sex-determining signals.
+- Dosage compensation balances X-linked gene expression.
+- X inactivation produces cellular mosaics in mammals.
+- Sex-chromosome number and SRY can affect development.
+
+=== layout: theend
+
+# THE END
