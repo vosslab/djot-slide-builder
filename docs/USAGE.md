@@ -114,9 +114,16 @@ homework snapshots.
 
 ## More authoring guidance
 
-Use [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) for layouts, slots, tables, speaker notes, and
+Use the authoritative slide specifications for
+[slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md),
+[slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md), and
+[slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md). The
+[slide-specs/AUTHORING_GUIDE.md](slide-specs/AUTHORING_GUIDE.md) overview retains layout,
+typography, and source-evidence conventions.
+
+Use [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) for layouts, slots, tables, speaker notes, and
 chapter includes. Use [SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md) while
-converting a lecture and [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md) for weekly
+converting a lecture and [slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) for weekly
 announcement decks. Use [TALKING_POINT_DECK_RECIPE.md](TALKING_POINT_DECK_RECIPE.md) to merge
 annual student sources with expanded instructor material into an ordered study deck.
 Put private course URLs in the ignored

@@ -63,7 +63,8 @@ Brewfile             declared macOS command-line and desktop dependencies
   and workstream records. It currently retains two Biotechnology Lecture 03 review reports with
   unresolved teaching-content follow-up, tracked in [TODO.md](TODO.md). Completed implementation
   plans and historical evidence live in [archive/](archive/); archived snapshots retain their
-  original status text beneath an archive notice. Durable policy stays directly under `docs/`.
+  original status text beneath an archive notice. Durable slide specifications live in
+  `docs/slide-specs/`; other durable reference docs remain directly under `docs/`.
 - [../devel/](../devel/) contains maintainer scripts for cleanup, versioning, changelog work,
   release preparation, and repository mapping. See [../devel/DEVEL_README.md](../devel/DEVEL_README.md).
 
@@ -81,6 +82,11 @@ Brewfile             declared macOS command-line and desktop dependencies
 
 ## Documentation map
 
+- [slide-specs/README.md](slide-specs/README.md) indexes the slide authoring specifications,
+  announcement structure, diagram contract, supported syntax, and visual review criteria.
+- [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md), [slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md), and
+  [slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md) own authoritative slide guidance.
+  [slide-specs/AUTHORING_GUIDE.md](slide-specs/AUTHORING_GUIDE.md) is the authoring overview.
 - [INSTALL.md](INSTALL.md) states platform requirements and installation commands.
 - [USAGE.md](USAGE.md) covers build, import, lint, and authoring workflows.
 - [TALKING_POINT_DECK_RECIPE.md](TALKING_POINT_DECK_RECIPE.md) covers recurring annual-source

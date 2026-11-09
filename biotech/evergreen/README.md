@@ -6,4 +6,4 @@ contact, and anonymous-message slides. Include it with
 
 Cross-course content stays in [../../evergreen/](../../evergreen/). Dated agendas, weather, podcast
 episodes, assignments, and talking-mark screenshots stay with their lecture. Use the
-[announcement guide](../../docs/ANNOUNCEMENT_DECK_GUIDE.md) for weekly order and visibility.
+[announcement guide](../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) for weekly order and visibility.

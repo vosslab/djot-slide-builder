@@ -46,7 +46,7 @@ Source section order, `lect13d-meiosis_translocation`: 6 Separation of Transloca
 
 The current-year Lecture 11A Djot is the newest shared course-information and formatting
 source. The matching prior-year announcement deck supplies useful week-specific cues. This is
-the ordinary two-source workflow in [the announcement guide](../../../docs/ANNOUNCEMENT_DECK_GUIDE.md).
+the ordinary two-source workflow in [the announcement guide](../../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md).
 The instructor-cleaned Biotechnology Lecture 10A remains the guide's formatting example;
 no Biotechnology files were edited. The earlier Lecture 09 current-year starter is superseded.
 
@@ -355,7 +355,7 @@ replacement outcomes. N/A and unperformed checks are annotated explicitly.
 
 ### Recurring lecture announcement updates
 
-Use [ANNOUNCEMENT_DECK_GUIDE.md](../../../docs/ANNOUNCEMENT_DECK_GUIDE.md) for the announcement order,
+Use [../../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](../../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) for the announcement order,
 section hierarchy, seasonal groups, and signup/profile deadlines.
 
 - [x] Replace the copied agenda with this lecture's topics and activities; compare each agenda
@@ -450,7 +450,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [x] Run `source source_me.sh && python3 deck_tools.py build LECTURE_DIR --format all`
   outside the sandbox. Confirm an editable ODP and ODP-derived PDF exist for every deck.
 - [x] Inspect every visible PDF page against the source using
-  [the visual review rubric](../../../docs/SLIDE_VISUAL_REVIEW_RUBRIC.md) as assessment guidance. Inspect dense
+  [the visual review rubric](../../../docs/slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md) as assessment guidance. Inspect dense
   text, small diagram labels, tables, and repaired slides at readable size; record problems and
   repairs, then rerender and recheck subsequent edits. Routine conversion review does not require
   per-slide numerical scores; the separate scored review is advisory and runs on demand.

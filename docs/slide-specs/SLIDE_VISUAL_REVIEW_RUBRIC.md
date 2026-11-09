@@ -24,7 +24,11 @@ legacy geometry. Clear hierarchy, sensible margins, a balanced 16:10 area, and p
 proportions with natural fit make slides easy to understand. Simplification preserves instructional
 content and teaching sequence.
 
-[HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) remains the authoritative source for this guidance.
+[../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md) remains the authoritative source for this guidance.
+Apply the working specifications in [COLOR_GUIDE.md](COLOR_GUIDE.md),
+[VOICE_GUIDE.md](VOICE_GUIDE.md), and
+[PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md) when interpreting teaching intent, meaningful
+emphasis, and source-preservation exceptions. They do not change this rubric's scores or status.
 
 ## Review modes
 

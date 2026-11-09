@@ -69,7 +69,7 @@ reconstruction. B10-11 use two SVGs and two native captions. C33 retains one lar
 its shared stage labels explain both chromosome arrangements. Source PDF coordinates corroborate
 the original ODP composition; transparent artwork retains its masks. These are not page screenshots.
 Definition terms on C8 and other definition slides have bold/underline emphasis and selective color.
-See [SVG_DIAGRAMS.md](../../../docs/SVG_DIAGRAMS.md) for the authoring contract.
+See [../../../docs/slide-specs/SVG_DIAGRAMS.md](../../../docs/slide-specs/SVG_DIAGRAMS.md) for the authoring contract.
 
 Remaining markers identify the following explicit follow-up work:
 

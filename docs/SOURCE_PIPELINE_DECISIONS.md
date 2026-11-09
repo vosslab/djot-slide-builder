@@ -161,7 +161,7 @@ Recurring cover, transition, closer, and image-focus roles need a clear identity
 lettering.
 
 **Consequence.** Course covers use `Lecture ##<letter>` and separate subject, chapter, instructor,
-and teaching-date paragraphs, following [PEDAGOGICAL_SLIDE_STYLE_GUIDE.md](PEDAGOGICAL_SLIDE_STYLE_GUIDE.md).
+and teaching-date paragraphs, following [slide-specs/AUTHORING_GUIDE.md](slide-specs/AUTHORING_GUIDE.md).
 The unfilled metadata frame precedes both text boxes in the exported stacking order so the
 decoration does not obstruct text selection. `LayoutSlide.surface` controls the native page style and master visibility.
 Deck-level `color-theme` metadata selects the band and readable accent for native decorations,
@@ -169,7 +169,7 @@ links, tables, and transitions; every letter stays an editable font glyph. Exist
 
 **Owner.** `slide_lib/layout_model.py`, `slide_lib/layout_builders.py`,
 `slide_lib/layout_specialty_builders.py`, `slide_lib/odp_export.py`, and
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### Imported evidence keeps relations adaptable
 
@@ -273,7 +273,7 @@ Lecture 05 output. Imported Theranos evidence remains in its original import rep
 lecture review records subsequent authoring and visibility changes.
 
 **Owner.** `biotech/LECT05/djot/`, [USAGE.md](USAGE.md), and
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### Explicit table groups share compiler-measured column needs
 

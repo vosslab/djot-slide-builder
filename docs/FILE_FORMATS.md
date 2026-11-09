@@ -13,7 +13,7 @@ locate editable deliverables.
   existing local files and remain inside the allowed source tree. An imported deck keeps its generated media
   beside the source as `assets/<deck-name>/`; its `.djot` image references point directly into that
   deck-local namespace.
-- [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines the source language and editable native
+- [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) defines the source language and editable native
   destinations. [USAGE.md](USAGE.md) provides build and import commands.
 - Write Djot source as ASCII, using character references such as `&alpha;` or `&#8242;` for
   non-ASCII visible text. Code and math retain their context-specific notation.
@@ -57,7 +57,7 @@ in [USAGE.md](USAGE.md); installation and macOS conversion prerequisites are in 
 - Source-only lint recognizes course URL tokens without requiring the private configuration.
   It does not establish that those destinations are configured or reachable.
 - An authored `@notes` section exports as native ODP speaker notes. Notes remain separate from
-  projected slide content; their syntax is defined in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+  projected slide content; their syntax is defined in [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ## OpenDocument package boundary
 

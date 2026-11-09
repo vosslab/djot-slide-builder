@@ -6,7 +6,7 @@ import`, which reads native ODP directly to recover text, images, reading order,
 slide state. The corpus preserves that source evidence while using the shared native theme and
 layout system.
 
-[DJOT_SLIDE_SYNTAX.md](../docs/DJOT_SLIDE_SYNTAX.md) is the normative authoring reference for
+[../docs/slide-specs/DJOT_SLIDE_SYNTAX.md](../docs/slide-specs/DJOT_SLIDE_SYNTAX.md) is the normative authoring reference for
 these decks. This README records corpus provenance, inventory, and validation evidence.
 
 Each lecture owns both sides of its migration boundary:

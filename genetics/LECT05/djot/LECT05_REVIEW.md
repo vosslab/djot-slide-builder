@@ -88,7 +88,7 @@ source source_me.sh && python3 deck_tools.py build genetics/LECT05 --format all
 ## Selected visual checks
 
 Final ODP-derived pages were inspected at larger size after the contact-sheet sweep. Scores use
-[SLIDE_VISUAL_REVIEW_RUBRIC.md](../../../docs/SLIDE_VISUAL_REVIEW_RUBRIC.md): readability,
+[../../../docs/slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](../../../docs/slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md): readability,
 organization, hierarchy, space, and effectiveness, each out of four. These are advisory checks.
 
 | Page | Read | Organize | Hierarchy | Space | Effective | Total | Concern |

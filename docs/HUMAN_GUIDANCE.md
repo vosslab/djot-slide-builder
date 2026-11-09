@@ -1,5 +1,13 @@
 # Human guidance
 
+- Keep authoritative color, voice, and pedagogy specifications together in `docs/slide-specs/`;
+  other documentation should cross-link to them. Consolidate my established preferences without
+  reinterpreting them; BPQ guidance and research supply supplementary ideas.
+
+Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md),
+[slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md), and
+[slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md).
+
 - Keep an extensive, reusable recipe in `docs/` for future talking-point slide builds,
   covering best practices, tools, organization, and the input files.
 
@@ -76,7 +84,8 @@
   one-third of the text width. Generated objective wording may be shortened or lengthened for this purpose. Preserve instructor-authored wording unless changes are separately authorized.
 
 - Go through LECT08 and use a labeled image with a quality-90 WebP embedded in SVG where
-  it makes sense. Limit each figure to one image and its overlapping text boxes; keep slide titles and surrounding text native. This does not authorize whole-slide image conversion.
+  it makes sense. Limit each figure to one image and its associated labels; labels can sit
+  outside the image. Keep slide titles, captions, and surrounding text native.
 
 - Managers must follow the [slide conversion checklist](SLIDE_CONVERSION_CHECKLIST.md).
   Keep its items concrete actions with verifiable results; keep broader content policies here.
@@ -126,7 +135,8 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - When the export path cannot put SVG tetrads in table cells, use a whole-table SVG builder.
 
 - Use the artwork-plus-labels SVG pipeline only for labeled images, not whole-slide conversion.
-  A figure contains one image and its overlapping text boxes. Keep slide titles, ordinary prose, and layout outside that figure in native Djot.
+  A figure contains one image and its associated labels, including labels outside the image.
+  Keep slide titles, captions, ordinary prose, and layout outside that figure in native Djot.
 
 - Implement the LECT08B source-6 Punnett-square cover relative to its image content, so the
   box follows the image and disappears on click.
@@ -202,7 +212,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   lecture Thursday 2-4:30 p.m. (SCH 612), lab Tuesday 10 a.m.-1:55 p.m. (SCH 550),
   and film Tuesday/Thursday 6-9 p.m. on Zoom, July 6-August 9. Preserve the course descriptions.
 
-- The working guide for `lect##a` preparation is [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md). This section records the instructor's stated preferences; the guide assembles them into the current weekly workflow.
+- The working guide for `lect##a` preparation is [slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md). This section records the instructor's stated preferences; the guide assembles them into the current weekly workflow.
 
 - Canonical announcement order: title, agenda, Next Week, weather, icebreaker, Informational Slides,
   YouTube channel, Stump the Vibe Coder, Discord, office hours, contact, anonymous messages, Course Content, textbook, Syllabus Links, PREVIEW Slides, Grading and Assessment, Assignments/Quizzes/Exams, Graded vs Total Percentage, Quiz/Exam
@@ -293,6 +303,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   control. Refresh evaluation deadlines before displaying them; never copy an obsolete date forward as a current deadline.
 
 ## Robustness and simplicity
+
+- This codebase is pre-production and has no users. Improve foundational schemas, contracts,
+  abstractions, and ownership boundaries when that produces the stronger long-term design.
+  Update callers directly and remove obsolete interfaces instead of retaining compatibility pointers.
 
 - Builds must work without a `.git` checkout. If `git rev-parse` is unavailable or fails,
   use the current working directory as the project root.
@@ -541,7 +555,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   additions considered separately.
 
 - Managers must ensure that each converted lecture deck includes learning objectives and
-  summary slides. Preserve existing objectives and summaries where present; create missing ones from the lecture's existing instructional content, following [the pedagogical slide style guide](PEDAGOGICAL_SLIDE_STYLE_GUIDE.md). Use
+  summary slides. Preserve existing objectives and summaries where present; create missing ones from the lecture's existing instructional content, following [slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md). Use
   specific, student-centered objectives on slide 2 and a closing summary immediately before the separate THE END slide. These source-grounded additions are part of conversion and are authorized without a separate request.
 
 - Standardize layout, typography, spacing, colors, and reusable slide formats while retaining

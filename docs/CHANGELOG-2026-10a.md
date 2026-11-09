@@ -724,7 +724,7 @@
   Record source pages, crop coordinates, and hashes in the asset manifest and sample review.
 - Add ordered Djot chapter includes with theme inheritance, source-local diagnostics, local path
   validation, circular-include detection, and master-only folder discovery. Native lint validates
-  each included file. Document the [include contract](DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes).
+  each included file. Document the [include contract](slide-specs/DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes).
 - Expand Biotechnology Talking Points Set 4 from 125 to 248 slides using the annual 2021-2026
   material and exact 2026 numbering. Split the lecture into Chapters 12-16 plus opening and summary
   files, controlled by the existing master filename. Add a topic/source guide for all 33 topics.

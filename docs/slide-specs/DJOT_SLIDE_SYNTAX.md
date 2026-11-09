@@ -301,7 +301,7 @@ in the main slide content, not in `@citation`. Citation paragraphs may use nativ
 Use `@notes` as presentation note cards for lecturing: speaking prompts, explanations, and
 reminders. Keep source attributions, selection history, publication metadata, refresh commands,
 conversion details, and verification logs out of Djot files. See
-[HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) for the content policy.
+[../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md) for the content policy.
 
 Use one optional `@notes` section on any slide. It continues until the next exact named-slot
 directive, such as `@body` or `@answer`, the next `=== layout:` line, or the end of the file.
@@ -742,7 +742,7 @@ applies when content needs smaller type. Paragraph/list reveals include their eq
 
 Inside math, write normal TeX commands, braces, underscores, and escaped percent signs (`\%`).
 For a literal dollar in ordinary prose, use `\$`. Malformed equations report their source
-location during compilation. See [INSTALL.md](INSTALL.md) for the local renderer dependencies.
+location during compilation. See [../INSTALL.md](../INSTALL.md) for the local renderer dependencies.
 
 Write ASCII source where practical.  In ordinary text, `&prime;` projects to the Unicode prime
 character (U+2032).  Verbatim and raw content retain their literal characters.

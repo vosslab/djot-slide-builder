@@ -58,7 +58,7 @@ Impress playback evidence. Repeated teaching stages remain separate pages intent
 
 ## Per-slide visual review
 
-Scores follow [the repository rubric](../../../docs/SLIDE_VISUAL_REVIEW_RUBRIC.md), each out of four:
+Scores follow [the repository rubric](../../../docs/slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md), each out of four:
 R = readability, O = organization, H = hierarchy, S = space, E = effectiveness.
 Comparison is against the original PDF, not only the previous deficient Djot export.
 

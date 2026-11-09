@@ -8,7 +8,7 @@
   Preserve existing layouts and unresolved replacement markers.
 
 - Add direct self-contained SVG sizing and ODP embedding, plus `image-comparison` with two
-  diagrams above measured native captions. Document authoring in [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md).
+  diagrams above measured native captions. Document authoring in [slide-specs/SVG_DIAGRAMS.md](slide-specs/SVG_DIAGRAMS.md).
 - Preserve definition-term bold and underline through import and export, with optional color.
 - Repair 42 Lecture 06 replacement slides using original artwork, positioned labels, native
   captions, and editable tables. Retain 22 unresolved markers and the visible exam section.

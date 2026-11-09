@@ -115,7 +115,7 @@ blocks, tables, component-image syntax, and the reserved `$equation$` and `$$dis
 forms. Inline verbatim renders as editable fixed-width text. A validated table renders only in a
 layout with a native table destination. MathJax renders whole equation blocks and equation-only
 paragraphs, list items, or table cells as SVG; mixed prose/math is rejected. Equations remain
-editable in Djot. See [the current syntax guide](../DJOT_SLIDE_SYNTAX.md#equations).
+editable in Djot. See [the current syntax guide](../slide-specs/DJOT_SLIDE_SYNTAX.md#equations).
 Fenced code and quote blocks remain source-located native-export rejections. `=== layout:`
 replaces Marp's `---` slide separator, and Marp-specific image modifiers are not adopted.
 

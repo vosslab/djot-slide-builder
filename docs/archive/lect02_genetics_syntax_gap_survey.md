@@ -53,7 +53,7 @@ equations use SVG and remain editable in Djot.
 | --- | --- | --- |
 | Tables | Experimental-result grids, genome comparisons, recognition-site reference | Use Djot tables and render them as native readable tables. Table cells may remain static across a slide series. |
 | Fixed-width sequence text | Complementary-DNA and restriction-site exercises | Use Djot inline verbatim for short sequences and fenced code blocks for aligned multi-line sequences. |
-| Standalone mathematics | Base composition, genome-size values, and chemistry notation | Use MathJax SVG for whole equation blocks or equation-only list items/cells; use native Djot notation within prose. See [the syntax guide](../DJOT_SLIDE_SYNTAX.md#equations). |
+| Standalone mathematics | Base composition, genome-size values, and chemistry notation | Use MathJax SVG for whole equation blocks or equation-only list items/cells; use native Djot notation within prose. See [the syntax guide](../slide-specs/DJOT_SLIDE_SYNTAX.md#equations). |
 ## Slides outside the proposed surface
 
 None. The four non-multiple-choice click builds are covered by slot-scoped `blue overlay` behavior:

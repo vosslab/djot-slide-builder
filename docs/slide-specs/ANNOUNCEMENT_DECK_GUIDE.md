@@ -1,8 +1,12 @@
 # Weekly announcement decks
 
 Use this guide when preparing or reviewing `lect##a` announcement decks. It collects the current
-working structure from [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md). HG retains the instructor's stated
+working structure from [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md). HG retains the instructor's stated
 preferences; this file is the practical guide, not a requirement to show every reusable slide.
+
+Use [COLOR_GUIDE.md](COLOR_GUIDE.md) and
+[VOICE_GUIDE.md](VOICE_GUIDE.md) for color and wording. The content-deck structure in
+[PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md) is separate from the announcement sequence here.
 
 A conversion usually starts with two announcement decks: the most recent current-year
 `lect##a`, which may be from an earlier lecture, and the target lecture's `lect##a` from the
@@ -49,7 +53,7 @@ The former Gmail warning was a 2019 issue and is retired.
 BIOL 480 Biotechnology has a course Zoom component. Genetics and Biostatistics do not use
 this classroom Zoom group. Keep ordinary office-hours information separate.
 
-Include [zoom_guidance.djot](../biotech/evergreen/zoom_guidance.djot) visibly in Informational
+Include [../../biotech/evergreen/zoom_guidance.djot](../../biotech/evergreen/zoom_guidance.djot) visibly in Informational
 Slides, before Course Content. Preserve these three original Lecture 07 reminders:
 
 1. How to Use Zoom Like a Pro: course meeting link, mute when not speaking, headphones or
@@ -110,7 +114,7 @@ specific course; do not copy Genetics final-exam incentives into Biotechnology.
 The individual upcoming-course pages explain both what students will study and how the course
 works. Preserve useful instructor descriptions, activities, and assignments while refreshing
 logistics; a title/time/location list is insufficient. See
-[UPCOMING_COURSES_SOURCES.md](../evergreen/UPCOMING_COURSES_SOURCES.md) for the shared pages' sources.
+[../../evergreen/UPCOMING_COURSES_SOURCES.md](../../evergreen/UPCOMING_COURSES_SOURCES.md) for the shared pages' sources.
 
 Finish with THE END. Biotechnology retains its special Veridian Dynamics ending immediately
 before THE END, after general announcements. This closes the announcements deck, not the whole
@@ -150,7 +154,7 @@ the graduation notice's first-two-weeks window for these assignments.
   lecture review. Run Python with `source source_me.sh && python3`; run every LibreOffice build
   outside the sandbox. Use root `_temp/` for review artifacts.
 
-For refresh/build commands, see [USAGE.md](USAGE.md). For conversion and handoff checks, see
-[SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md). For layout syntax, see
+For refresh/build commands, see [../USAGE.md](../USAGE.md). For conversion and handoff checks, see
+[../SLIDE_CONVERSION_CHECKLIST.md](../SLIDE_CONVERSION_CHECKLIST.md). For layout syntax, see
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md). Existing historical decks are not automatically
 rewritten when this guide changes; honor any explicit preservation instruction.

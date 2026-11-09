@@ -160,10 +160,10 @@ colliding with ordinary teaching content.
 **Consequence.** This reserves ordinary component images only, not extra image modifiers for
 backgrounds, sizing, position, or filters. The implemented grammar owns slide starts and named slots;
 `%%` and generic overlay geometry outside `multiple-choice` remain open. MathJax renders whole
-equation SVGs under the constraints in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#equations).
+equation SVGs under the constraints in [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md#equations).
 
 **Owner.** [djot_slide_extension_exploration.md](archive/djot_slide_extension_exploration.md)
-and [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+and [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### Multiple-choice is an implemented bounded layout
 
@@ -341,7 +341,7 @@ and never becomes slide content.
 
 **Decision.** Review generated classroom pages from the PDF LibreOffice creates from the editable
 ODP. Use the five universal dimensions in
-[SLIDE_VISUAL_REVIEW_RUBRIC.md](SLIDE_VISUAL_REVIEW_RUBRIC.md) for standalone quality and as
+[slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md) for standalone quality and as
 comparison lenses for an original PDF paired with its corresponding generated PDF. Record migration
 as `improved`, `roughly equivalent`, or `materially worse` with the most important visible teaching
 reason.
@@ -358,7 +358,7 @@ correlated complementary lenses, not independent measurements. A small disposabl
 original/generated PDF check will calibrate migration-category repeatability. Visual review remains
 on demand and advisory; deterministic checks retain ownership of measurable output properties.
 
-**Owner.** [SLIDE_VISUAL_REVIEW_RUBRIC.md](SLIDE_VISUAL_REVIEW_RUBRIC.md),
+**Owner.** [slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md),
 [PIPELINE.md](PIPELINE.md), and rendered-review evidence recorded with the affected migration.
 
 ### Historical (2026-09-09): private-profile batch experiment

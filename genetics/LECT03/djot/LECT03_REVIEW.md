@@ -27,7 +27,7 @@ visible announcement slide blocks were preserved exactly when the hidden slides 
 
 To include a hidden slide in the classroom deck, remove its `hidden: true` line or change it to
 `hidden: false`, then rebuild. See
-[DJOT_SLIDE_SYNTAX.md](../../../docs/DJOT_SLIDE_SYNTAX.md#hidden-slides).
+[../../../docs/slide-specs/DJOT_SLIDE_SYNTAX.md](../../../docs/slide-specs/DJOT_SLIDE_SYNTAX.md#hidden-slides).
 
 - Covers use the existing title-slide layout and September 15, 2026 date. The announcement cover
   now says Lecture 3A, and its agenda lists the Lecture 03 topics.

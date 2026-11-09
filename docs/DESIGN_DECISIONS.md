@@ -118,7 +118,7 @@ and review image provenance before allowing it. Structure does not establish own
 Earlier vector assets and Git history are outside this migration.
 
 **Owner.** [.gitignore](../.gitignore), [svg_images.py](../slide_lib/svg_images.py),
-and [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md).
+and [slide-specs/SVG_DIAGRAMS.md](slide-specs/SVG_DIAGRAMS.md).
 
 ### Current ordered-ascus artwork in 09H
 
@@ -280,7 +280,7 @@ source and rendered artifacts. A foreground object works across images and red s
 marker clears the watermark on rebuild. Validation and capacity still inspect the marked slide.
 Code examples and note text cannot enable it; detailed import reasons stay in the import report.
 
-**Owner.** [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#slides-needing-replacement),
+**Owner.** [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md#slides-needing-replacement),
 `slide_lib/djot_parser.py`, `slide_lib/layout_engine.py`, `slide_lib/layout_specialty_builders.py`,
 and `slide_lib/importers/djot_emitter.py`.
 
@@ -313,7 +313,7 @@ and action-like text stay literal. Existing import reports continue to retain im
 automatic note emission during ODP import is outside this authoring change.
 
 **Owner.** `slide_lib/djot_parser.py`, `slide_lib/odp_export.py`, `slide_lib/libreoffice.py`, and
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#instructor-notes).
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md#instructor-notes).
 
 ### Wide legacy table teaching figures
 
@@ -694,7 +694,7 @@ Prior-week announcement copies are temporary starters for the new weekly A sourc
 source uses the shared groups, remove unused starter copies and their extracted assets from
 the new lecture folder; they are not additional lecture material.
 
-**Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
+**Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md),
 and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.
 
 ### Shared evergreen slides
@@ -745,7 +745,7 @@ Nested examples keep their authored formatting. Initial adoption covers LECT08B-
 takeaways plus LECT08B's linkage definitions, preserving their wording and sequence.
 
 **Owner.** `slide_lib/teaching_layouts.py`, `slide_lib/layout_specialty_builders.py`, and
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### Automatic runt balancing
 
@@ -802,7 +802,8 @@ geometry. Measurement and math/text traversal use the typed cell's inlines. Unat
 keep their previous behavior. Partial-cell and non-table backgrounds are source errors.
 
 **Owner.** `slide_lib/native_model.py`, `slide_lib/djot_blocks.py`,
-`slide_lib/layout_object_builders.py`, `slide_lib/odp_text.py`, and `docs/DJOT_SLIDE_SYNTAX.md`.
+`slide_lib/layout_object_builders.py`, `slide_lib/odp_text.py`, and
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### BPW replacement for LECT08F
 

@@ -2,6 +2,11 @@
 
 ### Additions and New Features
 
+- Consolidate authoritative slide guidance into `docs/slide-specs/COLOR_GUIDE.md`, `VOICE_GUIDE.md`, and
+  `PEDAGOGY_GUIDE.md`. Preserve recorded preferences and useful teaching examples, distinguish
+  instructor instructions from observed habits and inherited recommendations, and adapt the BPQ
+  material to slide teaching. Keep the older style guide as a layout/typography overview, remove
+  the superseded methods guide, and link authoring and review docs directly to the specifications.
 - Convert Genetics LECT12, LECT13, and LECT1X into 17 canonical Djot decks with local assets,
   per-folder source maps, and conversion reviews. Preserve all 642 original content slides
   and their hidden status; add 45 opening/closing slides. Build 796 editable ODP slides and
@@ -13,6 +18,20 @@
 
 ### Fixes and Maintenance
 
+- Move the announcement guide, authoring overview, visual rubric, Djot syntax, and SVG diagram
+  contract into `docs/slide-specs/`, naming the overview `AUTHORING_GUIDE.md`. Add a short README
+  index and update inbound and relative links, including course reviews and archived plans.
+  Keep vendored palette/contrast references at their managed paths; retain no compatibility files.
+- Review all 460 current replacement-marked slides against rendered diagnostics and mapped
+  source pages. Recommend the existing native-table import path as the largest bounded repair
+  target: 96 affected slides, compared with 69 artwork-composition candidates. Record the
+  per-slide findings in [replaceme_impact_review_2026-11-09.md](active_plans/replaceme_impact_review_2026-11-09.md).
+  Clarify that a composed figure has one artwork image and associated labels that may extend
+  outside it; slide titles, captions, and explanatory prose remain native.
+- Extend that review with a source-table feature census: 61 of the 96 slides use selective
+  borders, 40 have colored cells, nine have horizontal merges, and none has vertical merges.
+  Identify selective cell borders as the strongest new table feature; fills, horizontal spans,
+  column proportions, and shared column sizing already exist.
 - Split former Genetics LECT1X into LECT14 (allele frequencies and Hardy-Weinberg) and
   LECT15 (evolution, selection, drift, and inbreeding), with four B-E decks in each.
   Renumber covers and move original inputs, local assets, includes, and review/source maps
@@ -34,6 +53,22 @@
 
 ### Developer Tests and Notes
 
+- Slide-specification relocation: 1,384 Markdown link, ASCII, and whitespace checks pass.
+  Verify all five old paths are absent, fenced examples are unchanged, and all six local heading
+  links in the specification folder resolve. Full suite and slide exports are not repeated for
+  the documentation-only move.
+- Remove the superseded teaching-methods pointer and record the pre-production preference for
+  direct contract/caller updates over compatibility scaffolding. All 143 Markdown link checks
+  pass after cleanup; `git diff --check` is clean.
+- Slide-specification documentation checks: 1,386 link, ASCII, and whitespace checks pass.
+  Direct review confirms the five consolidated documents are ASCII and their 11 local heading
+  links resolve; a five-slide temporary formatting example passes project Djot lint. Base suite:
+  4,237 passed, 3 failed, 109 setup errors, all failures/errors tracing to existing Biotechnology
+  LECT10 parse problems in unchanged sources. No fresh slide exports or classroom validation.
+- Replacement-impact review reconciles all 460 physical markers and per-slide findings, with
+  no reviewed source/code drift after the sync warning. Documentation checks: 801 passed,
+  2 failed on missing links in the separate question pedagogy/voice guides. No production
+  behavior changes; the full base suite and attended playback are not rerun for this review.
 - LECT14/15 native lint and all-format LibreOffice builds pass. All 353 non-cover PDF pages
   retain identical teaching text, and original input/media hashes and hidden flags reconcile.
   Reviewed the eight updated covers and sampled minor differences in text rendering. Base suite:

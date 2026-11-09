@@ -1,7 +1,7 @@
 # Shared evergreen content
 
 For weekly order and conditional display rules, use
-[ANNOUNCEMENT_DECK_GUIDE.md](../docs/ANNOUNCEMENT_DECK_GUIDE.md).
+[../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md).
 
 Keep slides, prompt collections, and teaching graphics used across courses here.
 Course-specific reusable slides belong in the course's
@@ -43,4 +43,4 @@ The weather and podcast refresh tools are shared utilities; their saved graphics
 and dates stay with the weekly announcement deck.
 
 See [HUMAN_GUIDANCE.md](../docs/HUMAN_GUIDANCE.md) and
-[DJOT_SLIDE_SYNTAX.md](../docs/DJOT_SLIDE_SYNTAX.md) for authoring rules.
+[../docs/slide-specs/DJOT_SLIDE_SYNTAX.md](../docs/slide-specs/DJOT_SLIDE_SYNTAX.md) for authoring rules.

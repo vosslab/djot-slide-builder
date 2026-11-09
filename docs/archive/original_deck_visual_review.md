@@ -12,7 +12,7 @@ generated pages and the same 336 original/generated page pairs. `pdfinfo` report
 matching counts for every deck. All pages were rendered to 90 dpi contact sheets;
 the flagged pairs below were also rendered at 180 dpi and inspected at readable size.
 
-This report applies [SLIDE_VISUAL_REVIEW_RUBRIC.md](../SLIDE_VISUAL_REVIEW_RUBRIC.md).
+This report applies [../slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](../slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md).
 Its scores and comparison calls are advisory evidence, not deterministic gates.
 
 ## Standalone quality

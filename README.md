@@ -75,7 +75,7 @@ LibreOffice Impress. Use `--format pdf` or `--format all` when a PDF is needed.
 Layouts and slots make a slide's teaching structure visible in source. This small excerpt creates a
 titled panel with three flat definition bullets; the full 23-slide deck is
 [genetics/LECT01/djot/lect01b-genetic_disorders.djot](genetics/LECT01/djot/lect01b-genetic_disorders.djot).
-See [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) for the complete authoring reference.
+See [docs/slide-specs/DJOT_SLIDE_SYNTAX.md](docs/slide-specs/DJOT_SLIDE_SYNTAX.md) for the complete authoring reference.
 
 ```djot
 === layout: one-panel
@@ -127,10 +127,14 @@ boundary and import constraints are in [docs/INSTALL.md](docs/INSTALL.md) and
 
 Start here:
 
+- [docs/slide-specs/README.md](docs/slide-specs/README.md) - authoritative slide authoring and review guides.
 - [docs/INSTALL.md](docs/INSTALL.md) - macOS tools, Python environment, and conversion boundary.
 - [docs/USAGE.md](docs/USAGE.md) - build, import, lint, and authoring commands.
-- [docs/DJOT_SLIDE_SYNTAX.md](docs/DJOT_SLIDE_SYNTAX.md) - layouts, slots, source blocks, and
+- [docs/slide-specs/DJOT_SLIDE_SYNTAX.md](docs/slide-specs/DJOT_SLIDE_SYNTAX.md) - layouts, slots, source blocks, and
   reveal behavior.
+- [docs/slide-specs/COLOR_GUIDE.md](docs/slide-specs/COLOR_GUIDE.md) - authoritative slide color and continuity.
+- [docs/slide-specs/VOICE_GUIDE.md](docs/slide-specs/VOICE_GUIDE.md) - authoritative wording and voice preservation.
+- [docs/slide-specs/PEDAGOGY_GUIDE.md](docs/slide-specs/PEDAGOGY_GUIDE.md) - authoritative teaching and study patterns.
 - [genetics/README.md](genetics/README.md) - lecture-organized deck inventory and corpus evidence.
 - [docs/ROADMAP.md](docs/ROADMAP.md) - current milestones and open acceptance gates.
 - [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) - common local setup and conversion failures.

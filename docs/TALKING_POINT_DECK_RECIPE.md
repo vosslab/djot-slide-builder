@@ -59,10 +59,13 @@ Read these before authoring, with the instructor's current request taking preced
 
 - [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md): teaching voice, study slides, topic hierarchy,
   preservation, figures, visibility, and the recorded Set #4/Set #5 direction.
-- [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md): actual supported syntax and layouts.
-- [PEDAGOGICAL_SLIDE_STYLE_GUIDE.md](PEDAGOGICAL_SLIDE_STYLE_GUIDE.md): teaching structure.
+- [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md): actual supported syntax and layouts.
+- [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md): meaningful color and continuity.
+- [slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md): wording, humor, and preservation of teaching voice.
+- [slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md): teaching structure and complete study references.
+- [slide-specs/AUTHORING_GUIDE.md](slide-specs/AUTHORING_GUIDE.md): layout and typography overview.
 - [SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md): conversion accounting.
-- [SLIDE_VISUAL_REVIEW_RUBRIC.md](SLIDE_VISUAL_REVIEW_RUBRIC.md): rendered review criteria.
+- [slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md): rendered review criteria.
 - [USAGE.md](USAGE.md): supported commands.
 - [PYTEST_STYLE.md](PYTEST_STYLE.md): permanent tests versus implementation proof.
 
@@ -93,7 +96,7 @@ Keep lecture number, talking-point set number, and textbook chapter number disti
 was taught in LECT06; Set #5 was taught in LECT10 and covered Chapters 17-19.
 
 When the request also includes announcements or project guidelines, use
-[ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md) and the current syllabus for those
+[slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) and the current syllabus for those
 companion decks. Keep weekly dates, project-phase changes, media selection, and private
 `{{course_url:key}}` substitutions separate from the reusable science chapters.
 
@@ -413,7 +416,7 @@ comparison plus manual review, not a new permanent audit command.
 
 ## Author native Djot
 
-Follow [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md), not Markdown habits:
+Follow [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md), not Markdown habits:
 
 - Strong text is `*term*`, not `**term**`. Double asterisks appeared literally in an early PDF.
 - Keep source ASCII where possible. Use supported character references such as `&alpha;`,

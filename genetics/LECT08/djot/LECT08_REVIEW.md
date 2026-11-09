@@ -406,7 +406,7 @@ N/A for this pass: previously reviewed selections and dates were retained.
 - [x] Run `source source_me.sh && python3 deck_tools.py build LECTURE_DIR --format all`
   outside the sandbox. Confirm an editable ODP and ODP-derived PDF exist for every deck.
 - [x] Inspect every visible PDF page against the source using
-  [the visual review rubric](../../../docs/SLIDE_VISUAL_REVIEW_RUBRIC.md) as assessment guidance. Inspect dense
+  [the visual review rubric](../../../docs/slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md) as assessment guidance. Inspect dense
   text, small diagram labels, tables, and repaired slides at readable size; record problems and
   repairs, then rerender and recheck subsequent edits. Routine conversion review does not require
   per-slide numerical scores; the separate scored review is advisory and runs on demand.

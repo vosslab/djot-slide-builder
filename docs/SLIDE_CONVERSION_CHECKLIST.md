@@ -24,8 +24,11 @@ announcements and repeat the affected inventory, repair, build, and handoff chec
 existing slide map and import artifacts.
 
 For content policy, consult [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md). For slide construction,
-consult [the pedagogical guide](PEDAGOGICAL_SLIDE_STYLE_GUIDE.md) and
-[Djot syntax](DJOT_SLIDE_SYNTAX.md). Commands below run from the repository root; replace
+consult [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md),
+[slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md), and
+[slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md). Layout and typography remain in
+[slide-specs/AUTHORING_GUIDE.md](slide-specs/AUTHORING_GUIDE.md); supported source syntax is in
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md). Commands below run from the repository root; replace
 `LECTURE_DIR`, `SOURCE.odp`, and `DECK.djot` with actual paths. Run commands that can launch
 LibreOffice outside the sandbox on this Mac, including imports and builds.
 
@@ -90,7 +93,7 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
 
 ## Recurring lecture announcement updates
 
-Use [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md) for the announcement order,
+Use [slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) for the announcement order,
 section hierarchy, seasonal groups, and signup/profile deadlines.
 
 - [ ] Replace the copied agenda with this lecture's topics and activities; compare each agenda
@@ -185,7 +188,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [ ] Run `source source_me.sh && python3 deck_tools.py build LECTURE_DIR --format all`
   outside the sandbox. Confirm an editable ODP and ODP-derived PDF exist for every deck.
 - [ ] Inspect every visible PDF page against the source using
-  [the visual review rubric](SLIDE_VISUAL_REVIEW_RUBRIC.md) as assessment guidance. Inspect dense
+  [the visual review rubric](slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md) as assessment guidance. Inspect dense
   text, small diagram labels, tables, and repaired slides at readable size; record problems and
   repairs, then rerender and recheck subsequent edits. Routine conversion review does not require
   per-slide numerical scores; the separate scored review is advisory and runs on demand.

@@ -304,7 +304,7 @@ files live under `/private/tmp` or an ignored `output_*` directory and stay out 
 - Owner: source-language implementation owner.
 - Touch points: [djot_blocks.py](../../slide_lib/djot_blocks.py),
   [djot_inline.py](../../slide_lib/djot_inline.py), [native_model.py](../../slide_lib/native_model.py),
-  and [DJOT_SLIDE_SYNTAX.md](../DJOT_SLIDE_SYNTAX.md).
+  and [../slide-specs/DJOT_SLIDE_SYNTAX.md](../slide-specs/DJOT_SLIDE_SYNTAX.md).
 - Depends on: WP-E1.
 - Acceptance criteria:
   - Reuse `{color=<role>}` on the next block or list item for block-wide color.
@@ -550,7 +550,7 @@ a command spelling that the product does not promise.
 ## Documentation close-out requirements
 
 - Active plan / progress tracker: update this file's status and checklist after each completed patch.
-- Syntax: update [DJOT_SLIDE_SYNTAX.md](../DJOT_SLIDE_SYNTAX.md) only after color and overlay
+- Syntax: update [../slide-specs/DJOT_SLIDE_SYNTAX.md](../slide-specs/DJOT_SLIDE_SYNTAX.md) only after color and overlay
   grammar pass their M1 decisions and implementation gates.
 - Architecture: update [CODE_ARCHITECTURE.md](../CODE_ARCHITECTURE.md) and
   [FILE_STRUCTURE.md](../FILE_STRUCTURE.md) only where responsibilities or files actually change.

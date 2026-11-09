@@ -74,7 +74,7 @@ read bounded native ODF facts directly. The supported command shapes and native-
 
 ## Review rendered teaching pages
 
-Use [SLIDE_VISUAL_REVIEW_RUBRIC.md](SLIDE_VISUAL_REVIEW_RUBRIC.md) on demand after a presentation
+Use [slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md) on demand after a presentation
 change that may affect classroom clarity, hierarchy, or visual balance. Generate each review page by
 building editable ODP and letting LibreOffice create its PDF. Standalone review uses the generated
 PDF page. Migration review pairs the original PDF page with its corresponding LibreOffice-generated

@@ -20,7 +20,7 @@ editable-object pipeline.
 
 ## Completed implementation and historical acceptance
 
-- [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines the completed source language, layout,
+- [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) defines the completed source language, layout,
   content, and reveal contract. The layout registry implements its canonical names and slots.
 - Authored `@notes` sections parse into speaker-note records and export to native ODP notes.
   Includes preserve physical source locations and support shared repository assets.

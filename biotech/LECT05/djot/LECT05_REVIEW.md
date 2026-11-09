@@ -82,4 +82,4 @@ review artifacts. Rebuild with `./build_slides.sh biotech/LECT05/`.
 
 To show or hide a slide, change its `hidden: true` line immediately after `=== layout:`. Hidden
 slides remain editable in ODP and are omitted from the classroom PDF. See
-[DJOT_SLIDE_SYNTAX.md](../../../docs/DJOT_SLIDE_SYNTAX.md#hidden-slides).
+[../../../docs/slide-specs/DJOT_SLIDE_SYNTAX.md](../../../docs/slide-specs/DJOT_SLIDE_SYNTAX.md#hidden-slides).

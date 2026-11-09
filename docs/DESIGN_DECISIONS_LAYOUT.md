@@ -70,7 +70,7 @@ The importer does not infer animation from static rectangles. PDFs retain the in
 state-render checks and native save roundtrips remain separate from attended click playback.
 
 **Owner.** `slide_lib/image_covers.py`, `slide_lib/layout_object_builders.py`, and
-`slide_lib/odp_animation.py`; syntax in [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+`slide_lib/odp_animation.py`; syntax in [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### One allocator per content region
 
@@ -161,7 +161,7 @@ one table per region, and layout-specific content restrictions.
 rendering geometry. Unsupported block combinations still produce source-located errors.
 
 **Owner.** [layout_validation.py](../slide_lib/layout_validation.py) and
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### Explicit YouTube slide generation
 
@@ -200,7 +200,7 @@ requiring editable native equation objects. Representative rendering checks are 
 evidence; permanent tests protect supported authoring and export contracts.
 
 **Owner.** `slide_lib/math_render.py`, `slide_lib/math_layout.py`, and
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md).
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ### Decorative frames belong to masters
 
@@ -292,7 +292,7 @@ styles; braced emphasis uses the same model as ordinary emphasis.
 pale yellow. Scripts use native ODF text positioning at 70% size; layout measurement conservatively
 reserves the full-size text width. Existing color and underline attribute spans remain supported.
 
-**Owner.** [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) and
+**Owner.** [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) and
 [djot_inline.py](../slide_lib/djot_inline.py).
 
 ### Bare URLs with escaped colons
@@ -346,7 +346,7 @@ Brainbow stays in Chapter 15; the Summary remains a major closing transition.
 - **Decision.** Large lectures may use ordered, include-only Djot masters with separately edited
   chapter files, one shared image base, and physical chapter diagnostics.
   **Why.** Authors can edit a chapter without maintaining duplicate slide content or changing
-  the combined build command. [The include contract](DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes)
+  the combined build command. [The include contract](slide-specs/DJOT_SLIDE_SYNTAX.md#chapter-files-and-includes)
   defines ordering, theme inheritance, local paths, and folder discovery.
 
 - **Decision.** Set 4 retains all 121 original source-slide records and 90 image references,
@@ -393,7 +393,7 @@ a native vector star, and the established framed theme surface. Its ODP page use
 Centered Text classifier.
 
 **Owner.** `slide_lib/layout_registry.py`, `slide_lib/layout_validation.py`,
-`slide_lib/layout_specialty_builders.py`, and `docs/DJOT_SLIDE_SYNTAX.md`.
+`slide_lib/layout_specialty_builders.py`, and [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
 
 ## Current operational boundary
 
@@ -434,7 +434,7 @@ editing and readable sizing. Definition terms need the visual hierarchy of the o
 **Consequence.** SVG labels are editable in the SVG source; the figure is one Impress object.
 Keep replacement markers for unresolved relationships. Existing four-panel layouts are unchanged.
 
-**Owner.** [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md), `slide_lib/svg_images.py`,
+**Owner.** [slide-specs/SVG_DIAGRAMS.md](slide-specs/SVG_DIAGRAMS.md), `slide_lib/svg_images.py`,
 `slide_lib/comparison_layout.py`, and `slide_lib/importers/odf_text.py`.
 
 ### Lecture 06 conversion boundary
@@ -460,7 +460,7 @@ and allow relevant one-off campus announcements.
 ### Dedicated announcement preparation guide
 
 **Decision.** Keep the assembled `lect##a` structure, seasonal display rules, course exceptions,
-and weekly preparation steps in [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md).
+and weekly preparation steps in [slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md).
 Link it from HG, usage, the conversion checklist, and evergreen READMEs. HG remains the record
 of human-stated preferences; the guide is the practical starting point for announcement work.
 

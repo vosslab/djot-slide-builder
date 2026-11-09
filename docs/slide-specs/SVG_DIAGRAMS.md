@@ -1,7 +1,9 @@
 # SVG diagram components
 
 Use a self-contained SVG for a labeled diagram: embedded original artwork, editable SVG text,
-and vector leaders or arrows. Keep explanatory prose in native Djot text boxes. The SVG remains
+and vector leaders or arrows. Compose one artwork image with its associated labels; labels may
+extend beyond the image rectangle. Size the SVG viewport to include those labels and leaders.
+Keep slide titles, captions, and explanatory prose in native Djot text boxes. The SVG remains
 one image object in Impress; edit its labels in the SVG source rather than as Impress text boxes.
 Do not convert a complete slide into a bitmap to preserve its layout.
 
@@ -24,7 +26,7 @@ An embedded bitmap retains its original resolution; wrapping it in SVG does not 
   Git permits this suffix. Lint and builds reject `image` and `feImage` elements anywhere
   inside it, including nested SVGs and filter definitions.
 - Keep image-containing figures as ordinary `name.svg` files. Git ignores these by default.
-  The exact-file exceptions in [.gitignore](../.gitignore) cover reviewed captures of our own
+  The exact-file exceptions in [.gitignore](../../.gitignore) cover reviewed captures of our own
   generator artwork; importing or repairing textbook art does not qualify it for an exception.
 - Review ownership separately. Image-free geometry and the `.drawn.svg` suffix do not prove
   that a drawing is original or that its source permits redistribution.
@@ -42,7 +44,7 @@ remain explicit tracking exceptions. Earlier vector assets retain their existing
 ODP import prefers original metafiles over raster previews and converts them directly to SVG.
 Failures and converted figures without live text receive review reasons. The measured behavior
 and LibreOffice compatibility corrections are recorded in
-[metafile_vector_followup.md](archive/metafile_vector_followup.md).
+[../archive/metafile_vector_followup.md](../archive/metafile_vector_followup.md).
 
 Existing labels already baked into source artwork remain raster labels. Newly reconstructed labels
 are editable text. Review both at presentation scale, particularly after changing crops or fonts.
@@ -96,4 +98,4 @@ not in Djot notes or comments. Reserve `@notes` for instructor notes. Retain `@r
 teaching relationships or reveal sequence still need reconstruction.
 
 Lecture 06 results and remaining work are recorded in
-[LECT06_REVIEW.md](../genetics/LECT06/djot/LECT06_REVIEW.md).
+[../../genetics/LECT06/djot/LECT06_REVIEW.md](../../genetics/LECT06/djot/LECT06_REVIEW.md).

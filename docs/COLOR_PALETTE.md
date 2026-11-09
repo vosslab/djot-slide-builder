@@ -1,5 +1,9 @@
 # Preferred slide colors
 
+This reference owns the exact palette values and recorded mappings. Use
+[slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md) for authoritative guidance on where to apply color,
+how associations persist, and how question and answer states differ.
+
 The instructor's preferred emphasis palette is independent of LibreOffice's named colors.
 Use explicit hex values in Djot, for example `[Predict]{color=#D40000}`.
 Preserve meaningful color relationships in the original slides; match references to the

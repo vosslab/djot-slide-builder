@@ -1,7 +1,7 @@
 # Genetics evergreen slides
 
 For weekly order and conditional display rules, use
-[ANNOUNCEMENT_DECK_GUIDE.md](../../docs/ANNOUNCEMENT_DECK_GUIDE.md).
+[../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md).
 
 Evergreen content is used across courses or across more than one week. Content for a single
 lecture belongs with that lecture, including its repeated procedure slides.
@@ -29,7 +29,7 @@ exam/homework details in the announcement master. Refresh deadlines before showi
 Shared figures live in `assets/` and use explicit repository-relative image paths.
 
 See [HUMAN_GUIDANCE.md](../../docs/HUMAN_GUIDANCE.md) and
-[DJOT_SLIDE_SYNTAX.md](../../docs/DJOT_SLIDE_SYNTAX.md) for the content and include contracts.
+[../../docs/slide-specs/DJOT_SLIDE_SYNTAX.md](../../docs/slide-specs/DJOT_SLIDE_SYNTAX.md) for the content and include contracts.
 
 - `three_point_testcross_steps.djot`: the six-step pairwise mapping roadmap, repeated before full problems.
   Active LECT08F now follows the six-step pairwise method; its textbook predecessor is retired.

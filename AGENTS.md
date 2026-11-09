@@ -24,6 +24,10 @@ Use `_temp/` at the repository root for temporary scripts, renders, and review a
 - docs/CHANGELOG.md
 - docs/HUMAN_GUIDANCE.md
 - docs/DESIGN_DECISIONS.md
+- [docs/slide-specs/README.md](docs/slide-specs/README.md)
+- [docs/slide-specs/COLOR_GUIDE.md](docs/slide-specs/COLOR_GUIDE.md)
+- [docs/slide-specs/VOICE_GUIDE.md](docs/slide-specs/VOICE_GUIDE.md)
+- [docs/slide-specs/PEDAGOGY_GUIDE.md](docs/slide-specs/PEDAGOGY_GUIDE.md)
 
 ## Runtime constraints
 

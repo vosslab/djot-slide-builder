@@ -63,7 +63,7 @@ enters only through the one-time import workflow.
   [../slide_lib/layout_engine.py](../slide_lib/layout_engine.py) is their public compiler boundary.
   At that boundary, title slides and sections use master-backed frames; title-only keeps its native
   title placeholder and emits following root content as ordinary editable body objects. See
-  [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) for author-facing layout rules.
+  [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) for author-facing layout rules.
 - [../slide_lib/presentation_theme.py](../slide_lib/presentation_theme.py) validates and reads the
   format-neutral theme from `genetics/xlect99-template_2023.otp`.
   [../slide_lib/odp_export.py](../slide_lib/odp_export.py) writes native ODF page layouts and

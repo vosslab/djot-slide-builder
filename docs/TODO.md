@@ -1,6 +1,6 @@
 # TODO
 
-Extended-Djot is the repository's sole authored deck source. [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md)
+Extended-Djot is the repository's sole authored deck source. [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md)
 defines its current authoring contract; [PIPELINE.md](PIPELINE.md) records the source-to-native
 boundary.
 
@@ -31,7 +31,7 @@ boundary.
 - [ ] Independently check the Lecture 03C claims identified in
   [lect03c_topic_source_check.md](active_plans/reports/lect03c_topic_source_check.md).
 - [ ] Complete the remaining formatter and editor-rule lanes of the strict-Djot compatibility suite.
-- [x] Document authoring through [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md),
+- [x] Document authoring through [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md),
   [USAGE.md](USAGE.md), and [COOKBOOK.md](COOKBOOK.md).
 - [ ] Add native editable mappings for currently source-located unsupported content only when a
   teaching need and an acceptance path are defined.

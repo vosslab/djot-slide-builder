@@ -186,7 +186,7 @@ including image/text/image sequences where caption pairing would otherwise reser
 equal-height panels. Side-by-side relationships retain their existing comparison/grouping paths.
 Mixed flow searches half-point font candidates and independently scales images to maximize
 occupied area within the shared readability bounds. These routes use no slide-specific geometry
-exceptions. See [mixed-content authoring](DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel).
+exceptions. See [mixed-content authoring](slide-specs/DJOT_SLIDE_SYNTAX.md#mixed-content-in-one-panel).
 
 Before publication, mixed-flow import drafts are checked by the shared compiler. A readable
 one-panel sequence does not need a review reason merely because it mixes object types.
@@ -215,7 +215,7 @@ documented source-order normalization rather than inventing a legacy layout matc
 
 ## Authoring contract
 
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) is the single normative authoring reference. It owns
+[slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) is the single normative authoring reference. It owns
 legal layouts and slots, root content, supported blocks, component images, tables, and reveal
 spellings. `layout_registry` remains the implementation authority for the catalog, while
 `layout_engine` compiles its contracts into a `CompilationResult` and `odp_export` writes native
@@ -231,7 +231,7 @@ and installed `layoutlist.xml` definitions.
 At the physical-object boundary, `title-slide` uses the theme's master title and outline frames,
 and `section` uses its master outline frame with centered, middle-aligned text. `title-only` keeps
 its native title placeholder and places following root-body objects as ordinary editable objects in
-the free body region. [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) owns the author-facing rules.
+the free body region. [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) owns the author-facing rules.
 
 Folder `pdf` and `all` builds stage their generated ODPs, preflight the closed desktop once, and
 run direct headless `soffice` conversions one ODP at a time in source order. Each command has
@@ -286,7 +286,7 @@ enforce an LLM review. Repeatable builds from reviewed canonical Djot remain det
 
 LibreOffice converts the generated editable ODP to the PDF used for every generated-slide visual
 review. Standalone review supplies that generated PDF page and the
-[visual rubric](SLIDE_VISUAL_REVIEW_RUBRIC.md), then records five scores, a broad total band, and a
+[visual rubric](slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md), then records five scores, a broad total band, and a
 qualitative concern with its visible teaching reason. Migration review supplies the corresponding
 original PDF page alongside the LibreOffice-generated PDF page and records `improved`, `roughly
 equivalent`, or `materially worse` with the most important functional visual-equivalence reason.

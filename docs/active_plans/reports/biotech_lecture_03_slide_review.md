@@ -4,7 +4,7 @@
 
 This standalone review covers every page in the LibreOffice-derived PDFs for Biotechnology Lecture
 03A, 03B, and 03C. The reviewer inspected rendered page contact sheets and the source structure,
-then applied the five-dimension rubric in [SLIDE_VISUAL_REVIEW_RUBRIC.md](../../SLIDE_VISUAL_REVIEW_RUBRIC.md).
+then applied the five-dimension rubric in [../../slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md](../../slide-specs/SLIDE_VISUAL_REVIEW_RUBRIC.md).
 
 Scores are `readability / organization / hierarchy / space / effectiveness`, followed by the total.
 `OK` means no follow-up is visible; `minor` means review before the next teaching use; `material`

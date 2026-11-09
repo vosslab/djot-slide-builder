@@ -8,7 +8,7 @@ replaceable classroom artifacts.
 
 Use this loop when you are changing wording, a question, or a figure in an existing lecture.
 
-1. Edit the `.djot` source. [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) defines layout directives
+1. Edit the `.djot` source. [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) defines layout directives
    and the slots each layout supports.
 2. Check the deck's structural contract before producing a presentation:
 
