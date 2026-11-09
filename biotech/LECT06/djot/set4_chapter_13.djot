@@ -305,7 +305,7 @@ Starch: &#x03B1;(1-4) linkages. Cellulose: &#x03B2;(1-4) linkages.
 
 @body
 
-{column-widths="1,3"}
+{column-widths="1,3" table-style=comparison}
 | Step | The problem to solve |
 | --- | --- |
 | Feedstock | Collect bulky material without excessive cost |
@@ -408,6 +408,7 @@ More reduced carbon (left) releases more energy on oxidation to CO&#x2082; (righ
 
 @body
 
+{table-style=comparison}
 | Part of the process | What can go wrong? |
 | --- | --- |
 | Oil or fat | Water and free fatty acids complicate processing |
@@ -636,6 +637,7 @@ Historical estimate of photovoltaic land area.
 
 @body
 
+{table-style=comparison}
 | Material | Chemical change | Question to test |
 | --- | --- | --- |
 | xDNA | Expanded nucleobases | How does a wider pair fit a helix? |
@@ -812,6 +814,7 @@ Balance rates, replace damaged parts, supply inputs, and recover products.
 
 @body
 
+{table-style=comparison}
 | Cell | Why study it? |
 | --- | --- |
 | syn1.0 | Can a synthesized genome control a cell? |

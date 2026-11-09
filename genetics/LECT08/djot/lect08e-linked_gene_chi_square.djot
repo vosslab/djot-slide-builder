@@ -80,7 +80,7 @@ color-theme: genetics
 
 Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
-{column-widths="3,2,2,2"}
+{column-widths="3,2,2,2" padding="0.5pt 4pt" table-style=working}
 | | Expected ratio if the genes are unlinked | Expected number of offspring (of 900) | Observed number of offspring (of 900) |
 | --- | --- | --- | --- |
 | Purple stem/short petals (_A_&#8211;_B_&#8211;) | 1 | ??? | 220 |
@@ -105,7 +105,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
-{column-widths="3,2,2,2"}
+{column-widths="3,2,2,2" padding="0.5pt 4pt" table-style=working}
 | | Expected ratio if the genes are unlinked | Expected number of offspring (of 900) | Observed number of offspring (of 900) |
 | --- | --- | --- | --- |
 | Purple stem/short petals (_A_&#8211;_B_&#8211;) | 1 | 225 | 220 |
@@ -120,7 +120,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) |  | 220 |  |  |  |
@@ -135,7 +135,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 225 | 220 |  |  |  |
@@ -150,7 +150,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 225 | 220 | -5 |  |  |
@@ -165,7 +165,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 225 | 220 | -5 | 25 |  |
@@ -180,7 +180,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 225 | 220 | -5 | 25 | 0.111 |
@@ -195,7 +195,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 225 | 220 | -5 | 25 | 0.111 |
@@ -254,7 +254,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 225 | 220 |  |  |  |
@@ -270,7 +270,7 @@ Offspring from testcross of _AaBb_ (F~1~) &#215; _aabb_
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 2250 | 2200 | | | |
@@ -285,7 +285,7 @@ Under unlinked conditions we would expect the numbers to come closer to the 2250
 
 @body
 
-{table-group="cosmos-chi-square"}
+{table-group="cosmos-chi-square" padding="0.5pt 4pt" table-style=working}
 | Testcross Offspring | Expected (e) | Observed (o) | Deviation (o &#8722; e) | $(o-e)^2$ | $\frac{(o-e)^2}{e}$ |
 | --- | --- | --- | --- | --- | --- |
 | (A&#8722;B&#8722;) | 2250 | 2200 | -50 | 2,500 | 1.11 |

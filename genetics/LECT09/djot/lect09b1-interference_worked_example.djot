@@ -42,17 +42,17 @@ Offspring phenotypes reveal the heterozygote's gametes.
 
 Based on the offspring, calculate the percentage of interference between F and P.
 
-{table-group="interference-homework"}
+{table-group="interference-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
-| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
-| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
-| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
-| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
-| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
-| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| fuzzy, prickly, waxy | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [23]{text-align=right} |
+| fuzzy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [565]{text-align=right} |
+| prickly | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -69,17 +69,17 @@ Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive
 
 Which two reciprocal types have the largest counts?
 
-{table-group="interference-homework"}
+{table-group="interference-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
-| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
-| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
-| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
-| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
-| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
-| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| fuzzy, prickly, waxy | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [23]{text-align=right} |
+| fuzzy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [565]{text-align=right} |
+| prickly | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -94,17 +94,17 @@ Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive
 
 The parents are f++ and +pw: 569 + 565 = 1,134 offspring.
 
-{table-group="interference-homework"}
+{table-group="interference-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
-| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
-| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
-| *fuzzy* | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [*569*]{text-align=right color=#A719DB} |
-| *prickly, waxy* | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [*565*]{text-align=right color=#A719DB} |
-| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
-| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| fuzzy, prickly, waxy | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [23]{text-align=right} |
+| *fuzzy* | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [*569*]{text-align=right color=#A719DB} |
+| *prickly, waxy* | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [*565*]{text-align=right color=#A719DB} |
+| prickly | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -119,17 +119,17 @@ Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive
 
 Which types differ from a parent only at the middle gene, W?
 
-{table-group="interference-homework"}
+{table-group="interference-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
-| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
-| fuzzy, waxy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [23]{text-align=right} |
-| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
-| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
-| prickly | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
-| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| fuzzy, prickly, waxy | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| fuzzy, waxy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [23]{text-align=right} |
+| fuzzy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [565]{text-align=right} |
+| prickly | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [31]{text-align=right} |
+| waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -144,6 +144,7 @@ Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive
 
 Here the alleles are arranged in *map order: F-W-P*.
 
+{table-style=testcross}
 | Type | F | W | P | Count |
 | --- | --- | --- | --- | --- |
 | Parent | f | + | + | 569 |
@@ -162,17 +163,17 @@ In the homework's F/P/W columns, the DCO types are *f+w* and *+p+*.
 
 *Observed DCO = 23 + 31 = 54 offspring.*
 
-{table-group="interference-homework"}
+{table-group="interference-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| fuzzy, prickly, waxy | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [194]{text-align=right} |
-| fuzzy, prickly | [f]{text-align=center background-color=#ffe3df} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
-| *fuzzy, waxy* | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [*23*]{text-align=right color=#A719DB} |
-| fuzzy | [f]{text-align=center background-color=#ffe3df} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
-| prickly, waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [w]{text-align=center background-color=#ece6ff} | [565]{text-align=right} |
-| *prickly* | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [p]{text-align=center background-color=#d0f5dc} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [*31*]{text-align=right color=#A719DB} |
-| waxy | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [w]{text-align=center background-color=#ece6ff} | [106]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#F8F8F8 color=#9c3541} | [+]{text-align=center background-color=#F8F8F8 color=#097131} | [+]{text-align=center background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
+| fuzzy, prickly, waxy | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [194]{text-align=right} |
+| fuzzy, prickly | [f]{background-color=#ffe3df} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [110]{text-align=right} |
+| *fuzzy, waxy* | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [*23*]{text-align=right color=#A719DB} |
+| fuzzy | [f]{background-color=#ffe3df} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [569]{text-align=right} |
+| prickly, waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [w]{background-color=#ece6ff} | [565]{text-align=right} |
+| *prickly* | [+]{background-color=#F8F8F8 color=#9c3541} | [p]{background-color=#d0f5dc} | [+]{background-color=#F8F8F8 color=#4f50b1} | [*31*]{text-align=right color=#A719DB} |
+| waxy | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [w]{background-color=#ece6ff} | [106]{text-align=right} |
+| _wildtype_ | [+]{background-color=#F8F8F8 color=#9c3541} | [+]{background-color=#F8F8F8 color=#097131} | [+]{background-color=#F8F8F8 color=#4f50b1} | [202]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [1,800]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -193,6 +194,7 @@ Allele columns: F, P, W. Gene order: F-W-P. + = wild type; lowercase = recessive
 
 [*Step 2: Use the Adjacent Intervals*]{color=#B74300}
 
+{table-style=working}
 | Interval | Recombinant Fraction | Probability |
 | --- | --- | --- |
 | F-W | 25 out of 100 | 0.25 |
@@ -228,6 +230,7 @@ $$
 E_{\mathrm{DCO}} = 0.0375 \times 1800 = 67.5
 $$
 
+{table-style=comparison}
 | Quantity | Meaning |
 | --- | --- |
 | 0.0375 | Predicted fraction of offspring that are DCO |
@@ -254,6 +257,7 @@ Keep *67.5* in the calculation. Rounding it to 68 would change the answer.
 
 @body
 
+{table-style=working}
 | DCO Count | Offspring |
 | --- | --- |
 | Observed in the table | 54 |
@@ -306,6 +310,7 @@ $$
 
 @body
 
+{table-style=working}
 | Question | Calculation | Result |
 | --- | --- | --- |
 | What fraction of all offspring were DCO? | 54 / 1,800 | 3% |
@@ -355,6 +360,7 @@ $$
 
 @body
 
+{table-style=testcross}
 | F/P Combination | Genotypes in F/P/W Order | Count |
 | --- | --- | --- |
 | f / p | fpw and fp+ | 194 + 110 |

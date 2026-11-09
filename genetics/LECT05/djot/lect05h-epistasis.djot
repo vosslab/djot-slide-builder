@@ -136,6 +136,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Predictions with purple dominant
 
+{table-style=comparison}
 | Parental cross | Expected F1 |
 | --- | --- |
 | rr x rr | All rr: white |
@@ -216,6 +217,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Predict the flower color for each genotype. Both steps must work.
 
+{table-style=punnett}
 | Egg / pollen | CP | Cp | cP | cp |
 | --- | --- | --- | --- | --- |
 | CP | CCPP | CCPp | CcPP | CcPp |
@@ -231,6 +233,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Purple: both steps work. Gray: cc blocks C. Red: pp blocks P.
 
+{table-style=punnett}
 | Egg / pollen | CP | Cp | cP | cp |
 | --- | --- | --- | --- | --- |
 | CP | [CCPP]{color=purple} | [CCPp]{color=purple} | [CcPP]{color=purple} | [CcPp]{color=purple} |
@@ -246,6 +249,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Nine [purple]{color=purple} : seven [white]{color=gray}; genotype segregation is unchanged.
 
+{table-style=punnett}
 | Egg / pollen | CP | Cp | cP | cp |
 | --- | --- | --- | --- | --- |
 | CP | [CCPP]{color=purple} | [CCPp]{color=purple} | [CcPP]{color=purple} | [CcPp]{color=purple} |
@@ -267,6 +271,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor &rarr; intermediate
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | C\_ | [Functional]{color=green} | First reaction |
@@ -279,6 +284,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor &rarr; intermediate &rarr; final product
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | C\_ | [Functional]{color=green} | First reaction |
@@ -292,6 +298,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor &rarr; intermediate &rarr; [purple pigment]{color=purple}
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | C\_ | [Functional]{color=green} | Intermediate made |
@@ -306,6 +313,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## cc: predict the effect on the first reaction
 
+{table-style=comparison}
 | Genotype | Reaction | Prediction |
 | --- | --- | --- |
 | cc | [Recessive homozygote]{color=red} | Does C work? |
@@ -319,6 +327,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor [&nrightarrow;]{color=red} intermediate &rarr; pigment
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | cc | [BLOCKED]{color=red} | No intermediate |
@@ -333,6 +342,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor [&nrightarrow;]{color=red} intermediate &rarr; pigment
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | cc | [BLOCKED]{color=red} | No intermediate |
@@ -347,6 +357,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## pp: predict the effect on the second reaction
 
+{table-style=comparison}
 | Genotype | Reaction | Prediction |
 | --- | --- | --- |
 | C\_ | [Functional]{color=green} | Intermediate made |
@@ -360,6 +371,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor &rarr; intermediate [&nrightarrow;]{color=red} pigment
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | C\_ | [Functional]{color=green} | Intermediate made |
@@ -374,6 +386,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor &rarr; intermediate [&nrightarrow;]{color=red} pigment
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | C\_ | [Functional]{color=green} | Intermediate made |
@@ -388,6 +401,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 ## Precursor [&nrightarrow;]{color=red} intermediate [&nrightarrow;]{color=red} pigment
 
+{table-style=comparison}
 | Genotype | Reaction | Consequence |
 | --- | --- | --- |
 | cc | [BLOCKED]{color=red} | No intermediate |
@@ -510,6 +524,7 @@ Color is made, but the final step cannot display it.
 
 ## Four genotype classes: 9 W\_Y\_ : 3 W\_yy : 3 wwY\_ : 1 wwyy
 
+{table-style=punnett}
 | Egg / pollen | WY | Wy | wY | wy |
 | --- | --- | --- | --- | --- |
 | WY | [WWYY]{color=blue} | [WWYy]{color=blue} | [WwYY]{color=blue} | [WwYy]{color=blue} |
@@ -539,6 +554,7 @@ Color is made, but the final step cannot display it.
 
 @bottom
 
+{table-style=punnett}
 | Egg / pollen | WY | Wy | wY | wy |
 | --- | --- | --- | --- | --- |
 | WY | WWYY | WWYy | WwYY | WwYy |
@@ -554,6 +570,7 @@ Color is made, but the final step cannot display it.
 
 ## Four genotype classes: 9 W\_Y\_ : 3 W\_yy : 3 wwY\_ : 1 wwyy
 
+{table-style=punnett}
 | Egg / pollen | WY | Wy | wY | wy |
 | --- | --- | --- | --- | --- |
 | WY | [WWYY]{color=blue} | [WWYy]{color=blue} | [WwYY]{color=blue} | [WwYy]{color=blue} |
@@ -569,6 +586,7 @@ Color is made, but the final step cannot display it.
 
 ## [12 white]{color=gray} : [3 yellow]{color=orange} : [1 green]{color=green}; W\_ masks the Y locus
 
+{table-style=punnett}
 | Egg / pollen | WY | Wy | wY | wy |
 | --- | --- | --- | --- | --- |
 | WY | [WWYY]{color=gray} | [WWYy]{color=gray} | [WwYY]{color=gray} | [WwYy]{color=gray} |
@@ -635,6 +653,7 @@ Color is made, but the final step cannot display it.
 
 ## ee masks B: mark every ee genotype before assigning coat colors.
 
+{table-style=punnett}
 | Egg / sperm | BE | Be | bE | be |
 | --- | --- | --- | --- | --- |
 | BE | BBEE | BBEe | BbEE | BbEe |
@@ -650,6 +669,7 @@ Color is made, but the final step cannot display it.
 
 ## [Black: B\_E\_ (9)]{color=blue}; [brown: bbE\_ (3)]{color=purple}; [yellow: \_\_ee (4)]{color=gray}.
 
+{table-style=punnett}
 | Egg / sperm | BE | Be | bE | be |
 | --- | --- | --- | --- | --- |
 | BE | [BBEE]{color=blue} | [BBEe]{color=blue} | [BbEE]{color=blue} | [BbEe]{color=blue} |
@@ -665,6 +685,7 @@ Color is made, but the final step cannot display it.
 
 ## [Black: B\_E\_ (9)]{color=blue}; [brown: bbE\_ (3)]{color=purple}; [yellow: \_\_ee (4)]{color=gray}. Each gamete has probability 1/4.
 
+{table-style=punnett}
 | Egg / sperm | BE | Be | bE | be |
 | --- | --- | --- | --- | --- |
 | BE | [BBEE]{color=blue} | [BBEe]{color=blue} | [BbEE]{color=blue} | [BbEe]{color=blue} |
@@ -678,6 +699,7 @@ Color is made, but the final step cannot display it.
 
 @body
 
+{table-style=comparison}
 | Interaction | F2 ratio | Example or model |
 | --- | --- | --- |
 | No epistasis | 9:3:3:1 | Pea seed shape/color |
@@ -694,6 +716,7 @@ Color is made, but the final step cannot display it.
 
 @body
 
+{table-style=comparison}
 | Interaction | Group the 9, 3, 3, 1 classes | F2 ratio |
 | --- | --- | --- |
 | None | 9 : 3 : 3 : 1 | [9:3:3:1]{color=purple} |
@@ -1120,6 +1143,7 @@ Color is made, but the final step cannot display it.
 
 ## F2 class weights: 9, 3, 3, 1. Testcross class weights: 1, 1, 1, 1.
 
+{table-style=comparison}
 | Interaction | F2 phenotype ratio | Testcross phenotype ratio |
 | --- | --- | --- |
 | Duplicate recessive | [9:7]{color=purple} | [1:3]{color=green} |
@@ -1135,6 +1159,7 @@ Color is made, but the final step cannot display it.
 
 @body
 
+{table-style=comparison}
 | Interaction | Group 9:3:3:1 | F2 ratio |
 | --- | --- | --- |
 | Duplicate recessive | 9:[(3+3+1)]{color=blue} | [9:7]{color=purple} |
@@ -1150,6 +1175,7 @@ Color is made, but the final step cannot display it.
 
 @body
 
+{table-style=comparison}
 | Interaction | Group 1:1:1:1 | Testcross ratio |
 | --- | --- | --- |
 | Duplicate recessive | 1:[(1+1+1)]{color=blue} | [1:3]{color=green} |
@@ -1167,6 +1193,7 @@ Color is made, but the final step cannot display it.
 
 ## Assume independently assorting loci and complete dominance within each locus.
 
+{table-style=comparison}
 | Example | F2 phenotype ratio | Testcross phenotype ratio |
 | --- | --- | --- |
 | No epistasis | 9:3:3:1 | [1:1:1:1]{color=green} |
@@ -1203,6 +1230,7 @@ Color is made, but the final step cannot display it.
 
 @body
 
+{table-style=comparison}
 | Interaction | Group the 9, 3, 3, 1 classes | F2 ratio |
 | --- | --- | --- |
 | None | 9 : 3 : 3 : 1 | [9:3:3:1]{color=purple} |

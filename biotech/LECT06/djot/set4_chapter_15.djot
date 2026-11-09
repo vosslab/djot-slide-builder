@@ -256,6 +256,7 @@ Introduce the nutritional problem; it does not claim that Golden Rice alone solv
 
 @body
 
+{table-style=comparison}
 | Example | Proposed biological effect |
 | --- | --- |
 | Bt Cry proteins | Insect control through susceptible insect gut biology |
@@ -426,6 +427,7 @@ What is the reason farmers cultivate GMO crops?
 
 @body
 
+{table-style=comparison}
 | Consider the product | Explain your reasoning |
 | --- | --- |
 | Beef, pork, chicken, dairy milk | Animal genotype or animal feed? |
@@ -440,6 +442,7 @@ What is the reason farmers cultivate GMO crops?
 
 @body
 
+{table-style=comparison}
 | Example | Check the method |
 | --- | --- |
 | Milk from a cow fed GM corn | GM feed does not genetically engineer the cow. |
@@ -548,6 +551,7 @@ Evaluate the specific trait and farming system.
 
 @top
 
+{table-style=comparison}
 | Named example | Herbicide tolerance | How it was obtained |
 | --- | --- | --- |
 | LibertyLink canola | Glufosinate | Genetic engineering; a transgenic crop |
@@ -600,6 +604,7 @@ Purification and formulation produce the medicine.
 
 @body
 
+{table-style=comparison}
 | Observation | Possible mechanism | What would you test? |
 | --- | --- | --- |
 | Trait in a compatible relative | Pollen-mediated gene flow | Parentage and the transgene |
@@ -719,6 +724,7 @@ Headline wording is the discussion object, not the paper's conclusion.
 
 @body
 
+{table-style=comparison}
 | Bees / experiment | Glyphosate treatment | Endpoint |
 | --- | --- | --- |
 | Adult hive workers | 5 or 10 mg/L in food for 5 days | Gut microbiota before return and 3 days later |

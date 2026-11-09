@@ -2,6 +2,25 @@
 
 ### Additions and New Features
 
+- Add themed native table presets, whole-cell and table formatting overrides, measured padding,
+  selective borders, and coordinated question/answer column sizing. Publish
+  [slide-specs/TABLE_AUTHORING_GUIDE.md](slide-specs/TABLE_AUTHORING_GUIDE.md) and the maintained
+  [../examples/table_styles.djot](../examples/table_styles.djot) demonstration for editable ODP
+  and ODP-derived PDF output. Reconcile 424 physical teaching tables (421 existing plus three
+  restored), separately from the 14-table demo; preserve all 96 repaired source tables and clear
+  59 target markers while retaining 37 non-table blockers. Record native edit/save/reopen,
+  rendered comparison, source/hash evidence, and verification limits in the dated
+  [native table results](active_plans/native_table_styles_results.md). Verify 53 normal course ODP/PDF pairs plus the separate 14-page demo; retain 16
+  table-only fallback contexts in two blocked consumers. Final integration review is pending.
+  Raw ODP import now preserves every supplied valid source column proportion,
+  including equal and near-equal widths; curated course tables and accepted outputs
+  were unchanged. All 93 changed raw snippets preserve source facts, cell lines,
+  scripts, and spans, with maximum ratio error 1.039e-6. Two regressions, 50 importer
+  checks, and six selected security/typing/style gates pass. The final base suite
+  reports 4,380 passed, three failed, two warnings, and 109 errors in 24.86s; the
+  failures and setup errors trace to inherited Biotechnology LECT10 parse conflicts,
+  and no new table-code tests failed.
+
 - Consolidate authoritative slide guidance into `docs/slide-specs/COLOR_GUIDE.md`, `VOICE_GUIDE.md`, and
   `PEDAGOGY_GUIDE.md`. Preserve recorded preferences and useful teaching examples, distinguish
   instructor instructions from observed habits and inherited recommendations, and adapt the BPQ

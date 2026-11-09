@@ -148,14 +148,15 @@ hidden: true
 
 @left
 
+{table-style=comparison table-group=lect12-homework-dates}
 | Assignment | Due date |
 | --- | --- |
-| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 04]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
-| [Week 05]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
-| [Week 06]{color=#AAAAAA} | [Oct 13]{color=#AAAAAA} |
+| [Week 01]{color=#686868} | [Sept 22]{color=#686868} |
+| [Week 02]{color=#686868} | [Sept 22]{color=#686868} |
+| [Week 03]{color=#686868} | [Sept 22]{color=#686868} |
+| [Week 04]{color=#686868} | [Oct 06]{color=#686868} |
+| [Week 05]{color=#686868} | [Oct 06]{color=#686868} |
+| [Week 06]{color=#686868} | [Oct 13]{color=#686868} |
 
 @right
 
@@ -170,12 +171,13 @@ hidden: true
 
 @left
 
+{table-style=comparison table-group=lect12-homework-dates}
 | Assignment | Due date |
 | --- | --- |
-| [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 09]{color=#AAAAAA} | [Nov 17]{color=#AAAAAA} |
-| [Week 10]{color=#AAAAAA} | [Nov 17]{color=#AAAAAA} |
+| [Week 07]{color=#686868} | [Nov 03]{color=#686868} |
+| [Week 08]{color=#686868} | [Nov 03]{color=#686868} |
+| [Week 09]{color=#686868} | [Nov 17]{color=#686868} |
+| [Week 10]{color=#686868} | [Nov 17]{color=#686868} |
 | [Week 11]{color=#990000} | [Dec 08]{color=#990000} |
 | [Week 12]{color=#990000} | [Dec 08]{color=#990000} |
 | [Week 13]{color=#000000} | [Dec 15]{color=#000000} |

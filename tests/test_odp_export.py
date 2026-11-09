@@ -20,7 +20,9 @@ import slide_lib.native_model
 import slide_lib.odp_animation
 import slide_lib.odf_package as package
 import slide_lib.odp_export as exporter
+import slide_lib.odp_text
 import slide_lib.presentation_theme
+import slide_lib.table_formatting
 
 
 def source() -> slide_lib.native_model.SourceLocation:
@@ -56,6 +58,15 @@ def deck() -> model.LayoutDeck:
 
 def xml(value: str) -> bytes:
 	return value.encode("utf-8")
+
+
+def table_cell_properties(root: lxml.etree._Element) -> list[dict[str, str]]:
+	"""Resolve each native cell's formatting through its actual style reference."""
+	styles = {style.attrib[f"{{{exporter.STYLE_NS}}}name"]: style
+		for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")}
+	return [styles[cell.attrib[f"{{{slide_lib.odp_text.TABLE_NS}}}style-name"]].find(
+		f"{{{exporter.STYLE_NS}}}table-cell-properties").attrib
+		for cell in root.findall(f".//{{{slide_lib.odp_text.TABLE_NS}}}table-cell")]
 
 
 def payloads() -> dict[str, bytes]:
@@ -506,8 +517,8 @@ def test_object_reveal_target_is_a_native_rounded_answer_popup(tmp_path: pathlib
 	assert text_properties[f"{{{exporter.FO_NS}}}color"] == "#7B1E2B"
 
 
-def test_native_table_uses_light_body_cells_and_theme_header(tmp_path: pathlib.Path) -> None:
-	"""Native table styles keep body text readable while retaining the deck accent header."""
+def test_native_table_preserves_compiler_resolved_fills(tmp_path: pathlib.Path) -> None:
+	"""The native writer must use resolved fills without selecting its own theme defaults."""
 	source_path = tmp_path / "table.djot"
 	source_path.write_text("=== layout: one-panel\n\n@body\n\n"
 		"| Sample | Result |\n| - | - |\n| A | pass |\n", encoding="utf-8")
@@ -517,11 +528,14 @@ def test_native_table_uses_light_body_cells_and_theme_header(tmp_path: pathlib.P
 	output = exporter.write_odp(plan, theme, tmp_path / "table.odp")
 	with zipfile.ZipFile(output) as archive:
 		root = package.parse_xml(archive.read("content.xml"), "content.xml")
-	backgrounds = [element.attrib[f"{{{exporter.FO_NS}}}background-color"]
-		for element in root.findall(f".//{{{exporter.STYLE_NS}}}table-cell-properties")]
+	backgrounds = [properties[f"{{{exporter.FO_NS}}}background-color"]
+		for properties in table_cell_properties(root)]
+	table = next(item.content for item in plan.slides[0].objects
+		if isinstance(item.content, content.TableContent))
+	assert backgrounds == [f"#{cell.fill_color}"
+		for row in table.header_rows + table.body_rows for cell in row.cells]
 	assert backgrounds[0] == backgrounds[1]
 	assert backgrounds[0] != f"#{theme.accent_color}"
-	assert backgrounds[2:] == ["#F2F3F5", "#F2F3F5"]
 	cell_styles = root.findall(f".//{{{exporter.STYLE_NS}}}style[@{{{exporter.STYLE_NS}}}family='table-cell']")
 	for style in cell_styles:
 		fill = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
@@ -541,8 +555,8 @@ def test_native_table_exports_explicit_cell_fills_over_theme_defaults(tmp_path: 
 	output = exporter.write_odp(plan, theme, tmp_path / "fills.odp")
 	with zipfile.ZipFile(output) as archive:
 		root = package.parse_xml(archive.read("content.xml"), "content.xml")
-	backgrounds = [element.attrib[f"{{{exporter.FO_NS}}}background-color"]
-		for element in root.findall(f".//{{{exporter.STYLE_NS}}}table-cell-properties")]
+	backgrounds = [properties[f"{{{exporter.FO_NS}}}background-color"]
+		for properties in table_cell_properties(root)]
 	assert [backgrounds[index] for index in (0, 2, 3)] == ["#123456", "#E6E6E6", "#E6F2E6"]
 	assert backgrounds[-1] == "#F6E8FB"
 
@@ -563,6 +577,92 @@ def test_authored_colspan_exports_native_merge_and_covered_cells(tmp_path: pathl
 	assert row[0].get(f"{{{ns['table']}}}number-columns-spanned") == "3"
 	assert len(row.findall("table:covered-table-cell", ns)) == 2
 	assert len(row.findall("table:table-cell", ns)) == 2
+
+
+def test_native_tables_share_effective_styles_across_objects_and_slides() -> None:
+	"""Repeated formatting shares styles without colliding in wide tables or losing cell text."""
+	layout_deck = deck()
+	base_item = layout_deck.slides[0].objects[0]
+	paragraph = base_item.content.paragraphs[0]
+	border = slide_lib.table_formatting.Border(0.5, "solid", "123456")
+	rows = []
+	for row_index in range(2):
+		cells = []
+		for column_index in range(12):
+			text = f"R{row_index}C{column_index}"
+			cell_paragraph = dataclasses.replace(paragraph, inlines=(content.TextRun(
+				text, dataclasses.replace(paragraph.inlines[0].style, foreground="172033")),))
+			cell = content.TableCell((cell_paragraph,), primitives.Insets(2, 3, 4, 5),
+				primitives.VerticalAlignment.MIDDLE, "FFFFFF", tuple(
+					dataclasses.replace(border, priority=column_index) for _side in range(4)))
+			if row_index == 1 and column_index == 11:
+				cell = dataclasses.replace(cell, fill_color="ABCDEF")
+			cells.append(cell)
+		rows.append(content.TableRow(tuple(cells)))
+	table = content.TableContent((), tuple(rows), (20.0,) * 12, (24.0, 24.0))
+	table_item = dataclasses.replace(base_item, content=table)
+	slide = dataclasses.replace(layout_deck.slides[0], objects=(table_item,))
+	second = dataclasses.replace(slide,
+		identity=dataclasses.replace(slide.identity, slide_id="slide-2", index=1),
+		objects=(dataclasses.replace(table_item, object_id="second-table"),))
+	layout_deck = dataclasses.replace(layout_deck, slides=(slide, second))
+	theme = slide_lib.presentation_theme.default_theme()
+	root = package.parse_xml(exporter._content_xml(layout_deck, theme,
+		exporter._layout_names(layout_deck), {}), "content.xml")
+	styles = root.findall(f".//{{{exporter.STYLE_NS}}}style")
+	names = [style.attrib[f"{{{exporter.STYLE_NS}}}name"] for style in styles]
+	assert len(names) == len(set(names))
+	for family, count in (("table-cell", 2), ("paragraph", 1), ("text", 1),
+			("table-column", 1), ("table-row", 1)):
+		assert sum(style.attrib[f"{{{exporter.STYLE_NS}}}family"] == family for style in styles) == count
+	cells = root.findall(f".//{{{slide_lib.odp_text.TABLE_NS}}}table-cell")
+	references = [cell.attrib[f"{{{slide_lib.odp_text.TABLE_NS}}}style-name"] for cell in cells]
+	assert references[:24] == references[24:]
+	assert len(set(references[:23])) == 1 and references[23] != references[0]
+	assert ["".join(cell.itertext()) for cell in cells] == [
+		f"R{row_index}C{column_index}" for row_index in range(2) for column_index in range(12)] * 2
+
+
+def test_native_table_emits_each_border_padding_alignment_and_spanned_cell() -> None:
+	"""Concrete edge patterns and cell geometry survive native export, including a two-axis merge."""
+	layout_deck = deck()
+	base_item = layout_deck.slides[0].objects[0]
+	paragraph = base_item.content.paragraphs[0]
+	paragraph = dataclasses.replace(paragraph, properties=dataclasses.replace(
+		paragraph.properties, horizontal_alignment=primitives.HorizontalAlignment.END))
+	borders = tuple(slide_lib.table_formatting.Border(width, pattern, color)
+		for width, pattern, color in ((0, "none", "000000"), (1.25, "solid", "123456"),
+			(0.75, "dashed", "ABCDEF"), (0.5, "dotted", "654321")))
+	cell = content.TableCell((paragraph,), primitives.Insets(2, 3, 4, 5),
+		primitives.VerticalAlignment.BOTTOM, "FEDCBA", borders, column_span=2, row_span=2)
+	table = content.TableContent((), (content.TableRow((cell,)), content.TableRow(())),
+		(40, 60), (24, 30))
+	slide = dataclasses.replace(layout_deck.slides[0], objects=(
+		dataclasses.replace(base_item, content=table),))
+	layout_deck = dataclasses.replace(layout_deck, slides=(slide,))
+	theme = slide_lib.presentation_theme.default_theme()
+	root = package.parse_xml(exporter._content_xml(layout_deck, theme,
+		exporter._layout_names(layout_deck), {}), "content.xml")
+	properties = table_cell_properties(root)[0]
+	assert [properties[f"{{{exporter.FO_NS}}}border-{side}"]
+		for side in ("top", "right", "bottom", "left")] == [
+		"none", "1.2500pt solid #123456", "0.7500pt dashed #ABCDEF", "0.5000pt dotted #654321"]
+	assert f"{{{exporter.FO_NS}}}border" not in properties
+	assert properties[f"{{{exporter.STYLE_NS}}}vertical-align"] == "bottom"
+	for side, value, canvas, centimeters in (("left", 2, layout_deck.canvas.width, theme.slide_width_cm),
+			("right", 4, layout_deck.canvas.width, theme.slide_width_cm),
+			("top", 3, layout_deck.canvas.height, theme.slide_height_cm),
+			("bottom", 5, layout_deck.canvas.height, theme.slide_height_cm)):
+		assert float(properties[f"{{{exporter.FO_NS}}}padding-{side}"].removesuffix("cm")) == pytest.approx(
+			value * centimeters / canvas, abs=0.000001)
+	ns = {"table": slide_lib.odp_text.TABLE_NS}
+	cell_element = root.find(".//table:table-cell", ns)
+	assert [cell_element.attrib[f"{{{ns['table']}}}number-{axis}-spanned"]
+		for axis in ("columns", "rows")] == ["2", "2"]
+	assert len(root.findall(".//table:covered-table-cell", ns)) == 3
+	assert "".join(cell_element.itertext()) == "Body"
+	paragraph_style = root.find(f".//{{{exporter.STYLE_NS}}}paragraph-properties")
+	assert paragraph_style.attrib[f"{{{exporter.FO_NS}}}text-align"] == "end"
 
 
 def test_scoped_xml_parser_rejects_dtds() -> None:

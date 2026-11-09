@@ -58,6 +58,9 @@ def render_runs(runs: tuple[source_model.TextRun, ...]) -> str:
 			segments.append(run.text)
 			continue
 		text = djot_text(run.text.strip())
+		if run.script:
+			delimiter = "^" if run.script == "super" else "~"
+			text = f"{delimiter}{text}{delimiter}"
 		if run.italic:
 			text = f"_{text}_"
 		if run.bold:

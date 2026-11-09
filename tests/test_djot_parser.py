@@ -14,6 +14,7 @@ import slide_lib.djot_parser
 import slide_lib.djot_sources
 import slide_lib.layout_validation
 import slide_lib.native_model
+import slide_lib.table_formatting
 
 
 def test_table_colspan_uses_logical_columns_and_keeps_cell_attributes(tmp_path: pathlib.Path) -> None:
@@ -24,8 +25,8 @@ def test_table_colspan_uses_logical_columns_and_keeps_cell_attributes(tmp_path: 
 	assert table.column_count == 3
 	assert len(table.rows[0]) == 2
 	assert table.rows[0][0].column_span == 2
-	assert table.rows[0][0].text_alignment == "center"
-	assert table.rows[0][0].background_color == "#80BD80"
+	assert table.rows[0][0].formatting.text_alignment == "center"
+	assert table.rows[0][0].formatting.background_color == "#80BD80"
 	assert [column for column, cell in slide_lib.native_model.table_cell_positions(table.rows[0])] == [0, 2]
 
 
@@ -48,13 +49,14 @@ def test_cell_background_preserves_nested_text_and_empty_cells(tmp_path: pathlib
 		"| Gene | Count |\n| --- | --- |\n"
 		"| [*c*]{background-color=#e6f2e6 color=#007A00} | []{background-color=#E6E6E6} |\n"
 		"| [[link](https://example.org)]{background-color=#F6E8FB} | 350 |\n").blocks[0]
-	assert table.rows[0][0].background_color == "#E6F2E6"
+	assert table.rows[0][0].formatting.background_color == "#E6F2E6"
 	assert isinstance(table.rows[0][0].inlines[0], slide_lib.native_model.StyledSpan)
 	assert isinstance(table.rows[0][0].inlines[0].children[0], slide_lib.native_model.Strong)
-	assert table.rows[0][1] == slide_lib.native_model.TableCell((), "#E6E6E6")
+	assert table.rows[0][1] == slide_lib.native_model.TableCell((),
+		slide_lib.table_formatting.CellOverrides(background_color="#E6E6E6"))
 	assert isinstance(table.rows[1][0].inlines[0], slide_lib.native_model.Link)
-	assert table.rows[1][1].background_color is None
-	assert table.headers[0].background_color is None
+	assert table.rows[1][1].formatting.background_color is None
+	assert table.headers[0].formatting.background_color is None
 
 
 #============================================

@@ -43,26 +43,20 @@
 
 ![Slide image 26](assets/lect15c-natural_selection/image_026.png)
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
-
-@top-left
+@left
 
 ![Slide image 26](assets/lect15c-natural_selection/image_026.png)
 
-@top-right
-
 - (a) Step 1\: figure out &#8216;s&#8217; and &#8216;t&#8217;
 
-@bottom-left
+@right
 
-![Slide image 27](assets/lect15c-natural_selection/image_027.svg)
-
-@bottom-right
-
-| Genotype | AA | Aa | aa |
-| Relative Fitness | 1 &#8211; s | 1 | 1 &#8211; t |
+{table-style=comparison padding="2pt 4pt"}
+| Genotype | [AA]{text-align=center} | [Aa]{text-align=center} | [aa]{text-align=center} |
+| --- | --- | --- | --- |
+| Relative Fitness | [1 &#8211; s]{text-align=center} | [1]{text-align=center} | [1 &#8211; t]{text-align=center} |
 
 === layout: stacked-panels
 @replaceme

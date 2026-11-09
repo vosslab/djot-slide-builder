@@ -49,6 +49,8 @@ Keep large lectures divided into their established decks and cohesive chapter fi
 instead of duplicate shared slides. Do not merge decks solely for tidiness.
 Keep visible slide-number footers off the slides, following the instructor's recorded preference.
 [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) owns includes, layouts, slots, tables, and notes.
+Use [TABLE_AUTHORING_GUIDE.md](TABLE_AUTHORING_GUIDE.md) for native table selection, worked examples,
+and the maintained demonstration deck.
 
 Content-deck bookends and their teaching purpose are specified in
 [PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md#give-each-deck-a-structure).

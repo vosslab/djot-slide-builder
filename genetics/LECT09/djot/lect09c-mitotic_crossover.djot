@@ -116,6 +116,7 @@ Pause for predictions before showing the answer. Use the lower separation patter
 
 @body
 
+{table-style=comparison}
 | Daughter | Two X Chromosomes | Patch Phenotype |
 | --- | --- | --- |
 | 1 | y sn^+^ / y sn^+^ | [*Yellow body*]{color=#935D00}; normal bristles |
@@ -188,6 +189,7 @@ The twin spots reveal recessive alleles that were already present. The same idea
 
 A *tumor-suppressor gene* helps limit cell growth. Let *R* work and *r* not work.
 
+{table-style=comparison}
 | Cell | Genotype | Working Copies |
 | --- | --- | --- |
 | Before the exchange | R/r | 1 |

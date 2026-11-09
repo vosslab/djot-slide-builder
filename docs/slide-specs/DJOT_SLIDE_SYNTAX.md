@@ -533,8 +533,10 @@ The compiler fits them with preserved proportions.
 ```
 
 Use ordinary Djot paragraphs, unordered or ordered nested lists, strong emphasis, emphasis, and
-links.  Use a pipe table when its rows and cells carry the instructional structure.  A table owns
-its region, so place mixed prose or images in another slot or another slide.
+links. Use a pipe table when its rows and cells carry the instructional structure. A body or panel
+may contain one table alongside headings, prose, lists, and component images in source order.
+Use separate slots for multiple tables. Start with
+[TABLE_AUTHORING_GUIDE.md](TABLE_AUTHORING_GUIDE.md) for preset selection and teaching recipes.
 
 ```djot
 | Enzyme | Role |
@@ -544,6 +546,19 @@ its region, so place mixed prose or images in another slot or another slide.
 ```
 
 ### Cell formatting and spans
+
+Ordinary tables use the course-themed `standard` treatment. Select a named preset immediately
+before a table with `{table-style=working}`. The shared presets are `standard`, `comparison`,
+`working`, `testcross`, `punnett`, `matrix-lower`, and `matrix-upper`.
+Formatting precedence is theme defaults, preset/region rules, table attributes, then cell
+attributes. Region rules apply in this order: numeric, row header, header, total, matrix diagonal,
+unused matrix triangle. Numeric alignment recognizes plain numeric content; total rows recognize
+`Total`, `Totals`, and `Grand total`. Punnett and matrix presets mark first-column row headings.
+
+Matrix presets require a header, distinct nonempty axis labels, no spans, and corresponding row
+and column labels at every overlapping position. Cropped axes must have one consistent relative
+offset. Ambiguous axes produce an error; use `standard` with explicit cell borders instead.
+Presets format existing values without deleting cells or inferring scientific identity.
 
 Use the CSS property name `background-color` in Djot attribute syntax to fill one entire
 native table cell. Wrap all of the cell's content, including nested formatting:
@@ -562,16 +577,46 @@ partial-cell spans and uses outside tables are rejected. It may share the outer 
 This uses CSS property naming, not an arbitrary CSS `style` declaration.
 
 The explicit fill overrides normal header, body, and total fills. It does not change text color,
-padding, alignment, or measurement. Omit it to retain the existing theme fill. Use pale surfaces
+padding, or alignment. Omit it to retain the existing theme fill. Use pale surfaces
 with readable text and retain explicit labels alongside color. The ODP contains real editable
 cell backgrounds, not overlay shapes or rasterized tables.
 
 Use CSS-named `text-align=left`, `center`, or `right` in the same whole-cell wrapper.
-Table headers default to centered black text on a light course-colored fill; all cells default to middle vertical alignment.
-Cells have 12 logical units of left/right padding and 4 of top/bottom padding.
+Table headers default to centered black text on a light course-colored fill; all cells default
+to middle vertical alignment. The `standard` preset uses 9 pt horizontal and 4 pt vertical padding.
 
 Explicit alignment overrides header centering and numeric auto-alignment; it does not change column widths.
 For example, `[R]{background-color=#D38CED text-align=center}` centers a classification label.
+
+Formatting properties may appear immediately before the table to set its defaults, or on a
+whole-cell wrapper to override one cell:
+
+| Property | Accepted value |
+| --- | --- |
+| `background-color` | Six-digit `#RRGGBB` |
+| `text-align` | `left`, `center`, `right` |
+| `vertical-align` | `top`, `middle`, `bottom` |
+| `border`, `border-top`, `border-right`, `border-bottom`, `border-left` | `none` or `Npt solid\|dashed\|dotted COLOR` |
+| `padding` | One to four nonnegative finite point values |
+| `padding-top`, `padding-right`, `padding-bottom`, `padding-left` | One nonnegative finite point value |
+
+Border widths must be positive; use `none` for an absent border. `COLOR` is a six-digit hex color
+or an existing text color role such as `accent`. Quote multiword values. Padding shorthand uses
+CSS order: one value for all sides; two for vertical/horizontal; three for top/horizontal/bottom;
+four for top/right/bottom/left. Side-specific properties win over the shorthand regardless of
+attribute order. Unsupported properties, expressions, units, and duplicate attributes fail
+validation. These attributes do not accept arbitrary CSS `style` declarations.
+
+```djot
+{table-style=working padding="6pt 10pt" border=none}
+| Step | Explanation |
+| --- | --- |
+| [Define H~0~]{vertical-align=top border-left="2pt solid accent" padding-left=12pt} | State the expected relationship before inspecting the outcome. |
+```
+
+Each shared native edge has one resolved border. The stronger explicit scope wins; within the
+same scope, greater width wins. Equal-width ties use the lower or right candidate. A merged cell's entire side uses one
+uniform border across all touching neighbors. Specify compatible boundaries around merges.
 
 Use HTML-named `colspan` to merge adjacent columns. Supply one positive integer and omit the
 source cells covered by the merge; each row must still occupy the same logical column count.
@@ -778,9 +823,8 @@ without alignment metadata.
 Raw HTML and XML tokens remain literal editable text under the current subset parser. Generic divs,
 footnotes, raw blocks, definition lists, thematic breaks, Djot symbols, paired tilde or caret inline
 forms, and inline images have no presentation surface. One-line attributes have native meaning only
-for the color scopes, table groups, and column proportions documented above. Whole-cell
-cell wrappers additionally provide native `background-color`, `text-align`, and `colspan`
-surfaces described above. Fenced code and block quotes are
+for the color scopes and table attributes documented above. Whole-cell wrappers additionally
+provide native formatting and `colspan` surfaces described above. Fenced code and block quotes are
 recognized source forms that currently receive a native-destination diagnostic. Source-located
 diagnostics make the available editable forms clear.
 

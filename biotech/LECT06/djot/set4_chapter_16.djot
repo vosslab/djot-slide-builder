@@ -116,6 +116,7 @@ color-theme: biotechnology
 
 @body
 
+{table-style=comparison}
 | Strategy | What happens? | Key distinction |
 | --- | --- | --- |
 | Self-limiting transgene | Released males pass a harmful trait | Usually requires continued releases |
@@ -210,6 +211,7 @@ color-theme: biotechnology
 
 @body
 
+{table-style=comparison}
 | Mouse | What to investigate |
 | --- | --- |
 | Marathon | PPAR-delta and muscle metabolism |
@@ -360,6 +362,7 @@ Pig expressing a jellyfish gene: fluorescence.
 
 @body
 
+{table-style=comparison}
 | Example | Trait or intended use |
 | --- | --- |
 | AquAdvantage salmon | Engineered growth regulation |

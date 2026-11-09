@@ -56,94 +56,83 @@ color-theme: genetics
   - LMLN		0.4968 &#61620; 6129 = 3044.8
   - LNLN		0.2121 &#61620; 6129 = 1300.0
 
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: one-panel
 
 # *Chi-Square Table*
 
-@left
+@body
 
-![Slide image 2](assets/lect14e-hardy_weinberg_chi_square/image_002.svg)
-
-@top-right
-
-| *genotype* | *observed* |  |  |  |  |
-| LMLM | 1787 |  |  |  |  |
-| LMLN | 3039 |  |  |  |  |
-| LNLN | 1303 |  |  |  |  |
-|  |  |  |  |  |  |
-
-@bottom-right
+{table-style=working table-group=mn-chi-square padding="1pt 4pt"}
+| [*genotype*]{text-align=center} | [*observed*]{text-align=center} | []{text-align=center} | []{text-align=center} | []{text-align=center} | []{text-align=center} |
+| --- | --- | --- | --- | --- | --- |
+| [L^M^L^M^]{text-align=center} | [1787]{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} |
+| [L^M^L^N^]{text-align=center} | [3039]{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} |
+| [L^N^L^N^]{text-align=center} | [1303]{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} |
+| []{text-align=center} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{background-color=#F7D1D5 text-align=right} | []{background-color=#F7D1D5 text-align=right} |
 
 ![Slide image 2](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
 # *Chi-Square Table*
 
-@top
-| *genotype* | *observed* | *H-W expected* | *(o-e)* | *(o-e)2* | *(o-e)2/e* |
-| LMLM | 1787 | 1784.2 |  |  |  |
-| LMLN | 3039 | 3044.8 |  |  |  |
-| LNLN | 1303 | 1300.0 |  |  |  |
-|  |  |  |  |  |  |
+@body
 
-@bottom
-
-![Slide image 3](assets/lect14e-hardy_weinberg_chi_square/image_003.svg)
+{table-style=working table-group=mn-chi-square padding="1pt 4pt"}
+| [*genotype*]{text-align=center} | [*observed*]{text-align=center} | [*H-W expected*]{text-align=center} | [*(o-e)*]{text-align=center} | [*(o-e)**^2^*]{text-align=center} | [*(o-e)**^2^**/e*]{text-align=center} |
+| --- | --- | --- | --- | --- | --- |
+| [L^M^L^M^]{text-align=center} | [1787]{text-align=right} | [1784.2]{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} |
+| [L^M^L^N^]{text-align=center} | [3039]{text-align=right} | [3044.8]{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} |
+| [L^N^L^N^]{text-align=center} | [1303]{text-align=right} | [1300.0]{text-align=right} | []{text-align=right} | []{text-align=right} | []{text-align=right} |
+| []{text-align=center} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{background-color=#F7D1D5 text-align=right} | []{background-color=#F7D1D5 text-align=right} |
 
 ![Slide image 3](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
 # *Chi-Square Table*
 
-@top
-| *genotype* | *observed* | *H-W expected* | *(o-e)* |  |  |
-| LMLM | 1787 | 1784.2 | 2.8 |  |  |
-| LMLN | 3039 | 3044.8 | -5.8 |  |  |
-| LNLN | 1303 | 1300.0 | 3 |  |  |
-|  |  |  |  |  |  |
+@body
 
-@bottom
+{table-style=working table-group=mn-chi-square padding="1pt 4pt"}
+| [*genotype*]{text-align=center} | [*observed*]{text-align=center} | [*H-W expected*]{text-align=center} | [*(o-e)*]{text-align=center} | []{text-align=center} | []{text-align=center} |
+| --- | --- | --- | --- | --- | --- |
+| [L^M^L^M^]{text-align=center} | [1787]{text-align=right} | [1784.2]{text-align=right} | [2.8]{text-align=right} | []{text-align=right} | []{text-align=right} |
+| [L^M^L^N^]{text-align=center} | [3039]{text-align=right} | [3044.8]{text-align=right} | [-5.8]{text-align=right} | []{text-align=right} | []{text-align=right} |
+| [L^N^L^N^]{text-align=center} | [1303]{text-align=right} | [1300.0]{text-align=right} | [3]{text-align=right} | []{text-align=right} | []{text-align=right} |
+| []{text-align=center} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{background-color=#F7D1D5 text-align=right} | []{background-color=#F7D1D5 text-align=right} |
 
 ![Slide image 3](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
 # *Chi-Square Table*
 
-@top
-| *genotype* | *observed* | *H-W expected* | *(o-e)* | *(o-e)2* | *(o-e)2/e* |
-| LMLM | 1787 | 1784.2 | 2.8 | 7.84 | 0.0044 |
-| LMLN | 3039 | 3044.8 | -5.8 | 33.64 | 0.0110 |
-| LNLN | 1303 | 1300.0 | 3 | 9.00 | 0.0069 |
-|  |  |  |  |  |  |
+@body
 
-@bottom
-
-![Slide image 4](assets/lect14e-hardy_weinberg_chi_square/image_004.svg)
+{table-style=working table-group=mn-chi-square padding="1pt 4pt"}
+| [*genotype*]{text-align=center} | [*observed*]{text-align=center} | [*H-W expected*]{text-align=center} | [*(o-e)*]{text-align=center} | [*(o-e)**^2^*]{text-align=center} | [*(o-e)**^2^**/e*]{text-align=center} |
+| --- | --- | --- | --- | --- | --- |
+| [L^M^L^M^]{text-align=center} | [1787]{text-align=right} | [1784.2]{text-align=right} | [2.8]{text-align=right} | [7.84]{text-align=right} | [0.0044]{text-align=right} |
+| [L^M^L^N^]{text-align=center} | [3039]{text-align=right} | [3044.8]{text-align=right} | [-5.8]{text-align=right} | [33.64]{text-align=right} | [0.0110]{text-align=right} |
+| [L^N^L^N^]{text-align=center} | [1303]{text-align=right} | [1300.0]{text-align=right} | [3]{text-align=right} | [9.00]{text-align=right} | [0.0069]{text-align=right} |
+| []{text-align=center} | []{text-align=right} | []{text-align=right} | []{text-align=right} | []{background-color=#F7D1D5 text-align=right} | []{background-color=#F7D1D5 text-align=right} |
 
 ![Slide image 4](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
 
-=== layout: stacked-panels
-@replaceme
+=== layout: one-panel
 
 # *Chi-Square Table*
 
-@top
-| *genotype* | *observed* | *H-W expected* | *(o-e)* | *(o-e)2* | *(o-e)2/e* |
-| LMLM | 1787 | 1784.2 | 2.8 | 7.84 | 0.0044 |
-| LMLN | 3039 | 3044.8 | -5.8 | 33.64 | 0.0110 |
-| LNLN | 1303 | 1300.0 | 3 | 9.00 | 0.0069 |
-|  |  |  |  | X2 sum | 0.0223 |
+@body
 
-@bottom
-
-![Slide image 5](assets/lect14e-hardy_weinberg_chi_square/image_005.svg)
+{table-style=working table-group=mn-chi-square padding="1pt 4pt"}
+| [*genotype*]{text-align=center} | [*observed*]{text-align=center} | [*H-W expected*]{text-align=center} | [*(o-e)*]{text-align=center} | [*(o-e)**^2^*]{text-align=center} | [*(o-e)**^2^**/e*]{text-align=center} |
+| --- | --- | --- | --- | --- | --- |
+| [L^M^L^M^]{text-align=center} | [1787]{text-align=right} | [1784.2]{text-align=right} | [2.8]{text-align=right} | [7.84]{text-align=right} | [0.0044]{text-align=right} |
+| [L^M^L^N^]{text-align=center} | [3039]{text-align=right} | [3044.8]{text-align=right} | [-5.8]{text-align=right} | [33.64]{text-align=right} | [0.0110]{text-align=right} |
+| [L^N^L^N^]{text-align=center} | [1303]{text-align=right} | [1300.0]{text-align=right} | [3]{text-align=right} | [9.00]{text-align=right} | [0.0069]{text-align=right} |
+| []{text-align=center} | []{text-align=right} | []{text-align=right} | []{text-align=right} | [X^2^ sum]{background-color=#F7D1D5 text-align=right} | [0.0223]{background-color=#F7D1D5 text-align=right} |
 
 ![Slide image 5](assets/lect14e-hardy_weinberg_chi_square/image_001.jpg)
 
@@ -214,153 +203,111 @@ color-theme: genetics
   - The predicted genotype frequencies are in agreement with the observed frequencies.
   - In this population, the M-N genotypes are in Hardy-Weinberg proportions.
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
-
-@top-left
+@body
 
 ![Slide image 9](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
 
 ![Slide image 10](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
 
-@top-right
+- [&#215; 216]{color=#990099}
 
-![Slide image 11](assets/lect14e-hardy_weinberg_chi_square/image_011.svg)
-
-@bottom-left
-
-| Day 7 |  |  |  |
-|  | p2 | 2pq | q2 |
+{table-style=working table-group=day-chi-square padding="3pt 4pt"}
+| [Day 7]{colspan=4 text-align=center} |
+| --- | --- | --- | --- |
+|  | p^2^ | 2pq | q^2^ |
 | hardy-weinberg | 0.234 | 0.499 | 0.266 |
 | observed | 0.227 | 0.514 | 0.259 |
 
-@bottom-right
-
-- [&#215; 216]{color=#990099}
-
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
-
-@top-left
+@body
 
 ![Slide image 11](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
 
-@top-right
-
 ![Slide image 11](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
 
-@bottom-left
-
-![Slide image 12](assets/lect14e-hardy_weinberg_chi_square/image_012.svg)
-
-@bottom-right
-
-| Day 7 |  |  |  |
-|  | p2 | 2pq | q2 |
+{table-style=working table-group=day-chi-square padding="3pt 4pt"}
+| [Day 7]{colspan=4 text-align=center} |
+| --- | --- | --- | --- |
+|  | p^2^ | 2pq | q^2^ |
 | hardy-weinberg | 50.54 | 107.8 | 57.46 |
 | observed | 49 | 111 | 56 |
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
-
-@top-left
+@body
 
 ![Slide image 12](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
 
-@top-right
-
 ![Slide image 12](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
 
-@bottom-left
-
-![Slide image 13](assets/lect14e-hardy_weinberg_chi_square/image_013.svg)
-
-@bottom-right
-
-| Day 7 |  |  |  |
-|  | p2 | 2pq | q2 |
+{table-style=working table-group=day-chi-square padding="3pt 4pt"}
+| [Day 7]{colspan=4 text-align=center} |
+| --- | --- | --- | --- |
+|  | p^2^ | 2pq | q^2^ |
 | hardy-weinberg | 50.54 | 107.8 | 57.46 |
 | observed | 49 | 111 | 56 |
 | diff | 1.54 | 3.2 | 1.46 |
-| (o-e)2/e | 0.0469 | 0.0950 | 0.0371 |
+| (o-e)^2^/e | 0.0469 | 0.0950 | 0.0371 |
 | SUM | [0.179]{color=#CC00CC} | < 3.84 | [*ACCEPT*]{color=#168253} |
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
-
-@top-left
+@body
 
 ![Slide image 13](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
 
 ![Slide image 13](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
 
-@top-right
+- [&#215; 173]{color=#990099}
 
-![Slide image 14](assets/lect14e-hardy_weinberg_chi_square/image_014.svg)
-
-@bottom-left
-
-| Day 21 |  |  |  |
-|  | p2 | 2pq | q2 |
+{table-style=working table-group=day-chi-square padding="3pt 4pt"}
+| [Day 21]{colspan=4 text-align=center} |
+| --- | --- | --- | --- |
+|  | p^2^ | 2pq | q^2^ |
 | hardy-weinberg | 0.334 | 0.488 | 0.178 |
 | observed | 0.272 | 0.613 | 0.116 |
 
-@bottom-right
-
-- [&#215; 173]{color=#990099}
-
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
-
-@top-left
+@body
 
 ![Slide image 14](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
 
-@top-right
-
 ![Slide image 14](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
 
-@bottom-left
-
-![Slide image 15](assets/lect14e-hardy_weinberg_chi_square/image_015.svg)
-
-@bottom-right
-
-| Day 21 |  |  |  |
-|  | p2 | 2pq | q2 |
+{table-style=working table-group=day-chi-square padding="3pt 4pt"}
+| [Day 21]{colspan=4 text-align=center} |
+| --- | --- | --- | --- |
+|  | p^2^ | 2pq | q^2^ |
 | hardy-weinberg | 57.78 | 84.42 | 30.79 |
 | observed | 47 | 106 | 20 |
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
-
-@top-left
+@body
 
 ![Slide image 15](assets/lect14e-hardy_weinberg_chi_square/image_009.png)
 
-@top-right
-
 ![Slide image 15](assets/lect14e-hardy_weinberg_chi_square/image_010.svg)
 
-@bottom-left
-
-![Slide image 16](assets/lect14e-hardy_weinberg_chi_square/image_016.svg)
-
-@bottom-right
-
-| Day 21 |  |  |  |
-|  | p2 | 2pq | q2 |
+{table-style=working table-group=day-chi-square padding="3pt 4pt"}
+| [Day 21]{colspan=4 text-align=center} |
+| --- | --- | --- | --- |
+|  | p^2^ | 2pq | q^2^ |
 | hardy-weinberg | 57.78 | 84.42 | 30.79 |
 | observed | 47 | 106 | 20 |
 | diff | 10.78 | -21.58 | 10.79 |
-| (o-e)2/e | 2.01 | 5.52 | 3.78 |
-| SUM | [11.31]{color=#CC00CC} | > 3.84 | [*REJECT*]{color=red} |
+| (o-e)^2^/e | 2.01 | 5.52 | 3.78 |
+| SUM | [11.31]{color=#CC00CC} | > 3.84 | [*REJECT*]{color=#C9211E} |
 
 === layout: one-panel
 
@@ -447,9 +394,8 @@ color-theme: genetics
 - p22 = 0.092				2p2p3 = 0.357
 - p32 = 0.344				2p1p3 = 0.128
 
-=== layout: four-panels
+=== layout: two-over-one-panels
 @replaceme
-
 
 @top-left
 
@@ -457,39 +403,31 @@ color-theme: genetics
 
 @top-right
 
-![Slide image 18](assets/lect14e-hardy_weinberg_chi_square/image_018.svg)
-
-@bottom-left
-
-|  | A1A1 | A1A2 | A2A2 | A1A3 | A2A3 | A3A3 |
-| expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
-| observed | 18 | 68 | 90 | 115 | 360 | 349 |
-
-@bottom-right
-
 - Six genotype frequencies\:
 - p12 = 0.012		2p1p2 = 0.067
 - p22 = 0.092		2p2p3 = 0.357
 - p32 = 0.344		2p1p3 = 0.128
 
-=== layout: one-plus-two-panels
-@replaceme
+@bottom
 
+{table-style=working padding="2pt 4pt" table-group=three-allele-chi-square}
+|  | [A~1~A~1~]{text-align=center} | [A~1~A~2~]{text-align=center} | [A~2~A~2~]{text-align=center} | [A~1~A~3~]{text-align=center} | [A~2~A~3~]{text-align=center} | [A~3~A~3~]{text-align=center} |
+| --- | --- | --- | --- | --- | --- | --- |
+| expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
+| observed | 18 | 68 | 90 | 115 | 360 | 349 |
 
-@left
+=== layout: one-panel
 
-![Slide image 19](assets/lect14e-hardy_weinberg_chi_square/image_019.svg)
+@body
 
-@top-right
-
-|  | A1A1 | A1A2 | A2A2 | A1A3 | A2A3 | A3A3 |
+{table-style=working padding="2pt 4pt" table-group=three-allele-chi-square}
+|  | [A~1~A~1~]{text-align=center} | [A~1~A~2~]{text-align=center} | [A~2~A~2~]{text-align=center} | [A~1~A~3~]{text-align=center} | [A~2~A~3~]{text-align=center} | [A~3~A~3~]{text-align=center} |
+| --- | --- | --- | --- | --- | --- | --- |
 | expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
 | observed | 18 | 68 | 90 | 115 | 360 | 349 |
 | diff | 6 | 1.4 | 2.4 | 13.4 | 3.4 | 5 |
-| (o-e)2/e | 3.0 | 0.029 | 0.062 | 1.40 | 0.032 | 0.073 |
+| (o-e)^2^/e | 3.0 | 0.029 | 0.062 | 1.40 | 0.032 | 0.073 |
 | SUM | [4.595]{color=#990099} | DF=3?? |  |  |  |  |
-
-@bottom-right
 
 ![Slide image 20](assets/lect14e-hardy_weinberg_chi_square/image_020.png)
 
@@ -518,22 +456,19 @@ color-theme: genetics
 
 ![Slide image 20](assets/lect14e-hardy_weinberg_chi_square/image_008.png)
 
-=== layout: two-panels
-@replaceme
+=== layout: one-panel
 
+@body
 
-@left
-
-![Slide image 21](assets/lect14e-hardy_weinberg_chi_square/image_021.svg)
-
-@right
-
-|  | A1A1 | A1A2 | A2A2 | A1A3 | A2A3 | A3A3 |
+{table-style=working padding="2pt 4pt" table-group=three-allele-chi-square}
+|  | [A~1~A~1~]{text-align=center} | [A~1~A~2~]{text-align=center} | [A~2~A~2~]{text-align=center} | [A~1~A~3~]{text-align=center} | [A~2~A~3~]{text-align=center} | [A~3~A~3~]{text-align=center} |
+| --- | --- | --- | --- | --- | --- | --- |
 | expected | 12.0 | 66.6 | 92.4 | 128.4 | 356.6 | 344.0 |
 | observed | 18 | 68 | 90 | 115 | 360 | 349 |
 | diff | 6 | 1.4 | 2.4 | 13.4 | 3.4 | 5 |
-| (o-e)2/e | 3.0 | 0.029 | 0.062 | 1.40 | 0.032 | 0.073 |
-| SUM | [4.595]{color=#990099} | < 7.82 | must [*ACCEPT*]{color=#168253} the null hypothesis sample is in H-W equilibrium |  |  |  |
+| (o-e)^2^/e | 3.0 | 0.029 | 0.062 | 1.40 | 0.032 | 0.073 |
+| SUM | [4.595]{color=#990099} | < 7.82 | [must [*ACCEPT*]{color=#168253} the null hypothesis sample is in H-W equilibrium]{colspan=4} |
+
 === layout: bookend
 
 # Key Takeaways

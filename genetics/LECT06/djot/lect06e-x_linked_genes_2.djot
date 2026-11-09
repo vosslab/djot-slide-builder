@@ -185,6 +185,7 @@
 
 @right
 
+{table-style=comparison padding="3pt 4pt" column-widths="2.2,1.6,2.6"}
 | Formula | X:A | Outcome |
 | --- | --- | --- |
 | X:AA | 0.5 | Male |
@@ -207,6 +208,7 @@
 
 @right
 
+{table-style=comparison padding="3pt 4pt" column-widths="2.2,1.6,2.6"}
 | Formula | Ratio | Outcome |
 | --- | --- | --- |
 | X:AAA | 0.33 | Metamale; low viability |

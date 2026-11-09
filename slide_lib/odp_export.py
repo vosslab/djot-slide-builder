@@ -94,6 +94,7 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 			_qname(SVG_NS, "string"): face.format_name,
 		})
 	automatic = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "automatic-styles"))
+	table_styles = slide_lib.odp_text.TableStyleRegistry(automatic)
 	page_style_names = _page_style_names(deck)
 	_add_page_styles(automatic, page_style_names, theme)
 	master_names = _decoration_master_names(deck)
@@ -119,7 +120,7 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 			if item in decorations:
 				continue
 			_write_object(page, automatic, item, deck, theme, slide.identity.slide_id,
-				slide_index, object_index, target_ids, picture_members)
+				slide_index, object_index, target_ids, picture_members, table_styles)
 			object_index += 1 + len(slide_lib.odp_math.positioned_runs(item.content))
 		slide_lib.odp_animation.write_reveals(page, slide, target_ids)
 		_write_notes(page, slide, deck, theme)
@@ -208,7 +209,8 @@ def _write_object(page: xml.etree.ElementTree.Element,
 		deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme, slide_id: str,
 		slide_index: int, object_index: int, target_ids: dict[str, str],
-		picture_members: dict[tuple[str, str], str]) -> None:
+		picture_members: dict[tuple[str, str], str],
+		table_styles: slide_lib.odp_text.TableStyleRegistry) -> None:
 	"""Write one plan object without recomputing its physical placement."""
 	positioned = slide_lib.odp_math.positioned_runs(item.content)
 	if positioned:
@@ -230,12 +232,12 @@ def _write_object(page: xml.etree.ElementTree.Element,
 		background = slide_lib.odp_math.background_object(item)
 		if background is not None:
 			_write_object(group, automatic, background, deck, theme, slide_id,
-				slide_index, object_index, {}, picture_members)
+				slide_index, object_index, {}, picture_members, table_styles)
 		for index, placed in enumerate(positioned):
 			fragment = slide_lib.odp_math.block_object(item, placed, index)
 			parent = paragraph_groups.get(placed.paragraph_index, group)
 			_write_object(parent, automatic, fragment, deck, theme, slide_id,
-				slide_index, object_index + index + 1, {}, picture_members)
+				slide_index, object_index + index + 1, {}, picture_members, table_styles)
 		return
 	content = item.content
 	style_name = f"DjotFrame{slide_index + 1}_{object_index + 1}"
@@ -259,7 +261,7 @@ def _write_object(page: xml.etree.ElementTree.Element,
 			_frame_attributes(item, deck, theme, style_name, target_ids))
 		_write_accessibility(element, item)
 		slide_lib.odp_text.write_table(element, automatic, item.object_id, content,
-			deck, theme, slide_index, object_index)
+			deck, theme, slide_index, object_index, table_styles)
 	else:
 		element = xml.etree.ElementTree.SubElement(object_parent, _qname(DRAW_NS, "frame"),
 			_frame_attributes(item, deck, theme, style_name, target_ids))

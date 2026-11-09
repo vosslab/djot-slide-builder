@@ -15,6 +15,7 @@ import slide_lib.math_render
 import slide_lib.native_model
 import slide_lib.presentation_theme
 import slide_lib.typography
+import slide_lib.table_styles
 
 
 LEFT = 60.0
@@ -96,7 +97,17 @@ class MeasurementSession:
 		self._fragments: dict[tuple[object, ...], tuple[str, ...]] = {}
 		self.capacity_diagnostics: list[slide_lib.capacity_report.CapacityDiagnostic] = []
 		self.table_context: object | None = None
+		self.table_registry = slide_lib.table_styles.load_registry()
+		self._resolved_tables: dict[slide_lib.native_model.Table,
+			slide_lib.table_styles.ResolvedTable] = {}
 		self.equations: dict[tuple[str, bool], slide_lib.math_render.RenderedMath] = {}
+
+	def resolved_table(self, table: slide_lib.native_model.Table) -> slide_lib.table_styles.ResolvedTable:
+		"""Share one resolved style grid through group sizing, fitting, and construction."""
+		if table not in self._resolved_tables:
+			self._resolved_tables[table] = slide_lib.table_styles.resolve_table(
+				table, self.theme, self.table_registry)
+		return self._resolved_tables[table]
 
 	def prepare_equations(self, deck: slide_lib.native_model.Deck) -> None:
 		"""Render every distinct expression before fitting any candidate sizes."""

@@ -135,6 +135,7 @@ Express a candidate gene and measure its activity. Is the predicted function cor
 
 @body
 
+{table-style=comparison}
 | Method | What you get | What is missing? |
 | --- | --- | --- |
 | 16S amplicons | Bacterial/archaeal profile | Often limited strain resolution |
@@ -216,6 +217,7 @@ SSH compares DNA from different samples.
 
 @body
 
+{table-style=comparison}
 | Tool | What does it help identify? |
 | --- | --- |
 | SIP | Who incorporates a labeled substrate? |
@@ -523,6 +525,7 @@ Form a less-soluble solid. Test whether changing conditions release it.
 
 @body
 
+{table-style=comparison}
 | Process | Where did the PFAS go? | What should we measure? |
 | --- | --- | --- |
 | Sorption | Onto carbon, resin, or biomass | Spent material and breakthrough |
@@ -594,6 +597,7 @@ Measure products and follow the fluorine.
 
 @body
 
+{table-style=comparison}
 | Question | Hydrogen fuel cell | Microbial fuel cell |
 | --- | --- | --- |
 | Fuel | Hydrogen | Biodegradable organic matter |

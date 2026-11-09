@@ -40,9 +40,18 @@ enters only through the one-time import workflow.
 - [../slide_lib/djot_parser.py](../slide_lib/djot_parser.py),
   [../slide_lib/djot_blocks.py](../slide_lib/djot_blocks.py), and
   [../slide_lib/djot_inline.py](../slide_lib/djot_inline.py) parse extended-Djot into the typed
-  records in [../slide_lib/native_model.py](../slide_lib/native_model.py). Native table cells own
-  editable inlines, an optional `background-color`, `colspan`, and `text-align`. Measurement
-  uses the logical column grid and combined span width; ODP retains native fills and merges.
+  records in [../slide_lib/native_model.py](../slide_lib/native_model.py). Table formatting uses
+  the validated CSS named-property registry in
+  [../slide_lib/table_styles.yaml](../slide_lib/table_styles.yaml) and
+  [../slide_lib/table_styles.py](../slide_lib/table_styles.py), with seven built-in styles and
+  local cell overrides represented by `CellOverrides`, `CellFormatting`, and `Border` in
+  [../slide_lib/table_formatting.py](../slide_lib/table_formatting.py). Semantic table cells own
+  their formatting directly. The measurement session loads the registry and caches each resolved
+  table once; table geometry uses actual
+  padding, borders, bold text, spans, and equation placements. ODP cells receive concrete fills
+  and borders, preserving native editable cells and merges without table-style objects or
+  fill-role indirection. The document-scoped ODF registry interns equivalent table-cell,
+  paragraph, text, and dimension styles without changing object identity.
 - [../slide_lib/djot_grammar.py](../slide_lib/djot_grammar.py) derives directive and action
   spellings from the layout registry. [../slide_lib/djot_lint.py](../slide_lib/djot_lint.py)
   performs source-only validation, including local Djot links and component assets whether or not
@@ -68,7 +77,9 @@ enters only through the one-time import workflow.
   format-neutral theme from `genetics/xlect99-template_2023.otp`.
   [../slide_lib/odp_export.py](../slide_lib/odp_export.py) writes native ODF page layouts and
   presentation frames, while [../slide_lib/odp_text.py](../slide_lib/odp_text.py) owns editable
-  paragraphs, styled spans, links, lists, and tables. Standard-layout inference tokens remain
+  paragraphs, styled spans, links, lists, and tables. Imported tables retain source cells, spans,
+  blank cells, widths, scripts, and inherited formatting; exact-frame previews are suppressed
+  only when the native table is emitted. Standard-layout inference tokens remain
   separate from occupied editable frame roles.
 - [../slide_lib/math_render.py](../slide_lib/math_render.py) validates equation-only content
   and invokes local MathJax to produce measured SVG. [../slide_lib/math_layout.py](../slide_lib/math_layout.py)

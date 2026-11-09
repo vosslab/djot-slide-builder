@@ -88,6 +88,7 @@ color-theme: genetics
 
 A gene has a chromosome address, like a book has a library address.
 
+{table-style=comparison}
 | Part | What It Names | Example |
 | --- | --- | --- |
 | Chromosome | Which chromosome? | 7 |
@@ -120,6 +121,7 @@ A gene has a chromosome address, like a book has a library address.
 
 @left
 
+{table-style=comparison}
 | Address Part | Meaning |
 | --- | --- |
 | [*7*]{color=#D40000} | Chromosome 7 |
@@ -152,6 +154,7 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 Band numbers increase as we move *away from the centromere*.
 
+{table-style=comparison}
 | Same Arm | Nearer the Centromere | Farther from the Centromere |
 | --- | --- | --- |
 | Chromosome 14, q arm | 14q21 | 14q22 |
@@ -203,6 +206,7 @@ These are schematic labels, not a map of verified human chromosome 17 bands.
 
 @body
 
+{table-style=comparison}
 | Part | Meaning |
 | --- | --- |
 | 47 | Number of chromosomes |

@@ -54,6 +54,7 @@ criteria; they are not required to conduct laboratory experiments for this assig
 
 @body
 
+{table-style=comparison}
 | Stage | Evidence needed | Decision |
 | --- | --- | --- |
 | Mechanism | A result in the relevant model | Does the proposed action occur? |
@@ -73,6 +74,7 @@ Do not assume that success in one model guarantees success in the next setting.
 
 @body
 
+{table-style=comparison}
 | Uncertainty | What the plan should explain |
 | --- | --- |
 | Scientific | The result needed to support the mechanism |
@@ -119,6 +121,7 @@ For the course project, at least two members review each major section.
 
 @body
 
+{table-style=comparison}
 | Milestone | Cost categories | Funding buys |
 | --- | --- | --- |
 | Mechanism test | Staff time, materials, analysis | Evidence for the core claim |

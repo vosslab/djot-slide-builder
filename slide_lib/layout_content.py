@@ -2,6 +2,8 @@
 
 from dataclasses import dataclass
 
+import slide_lib.table_formatting
+
 from slide_lib.layout_primitives import (CropInsets, Insets, LineEndMarker, LinePattern, ListKind,
 	LogicalPoint, LogicalRectangle, ObjectAccessibility, ParagraphProperties, PictureFit, ShapeKind,
 	StyleRole, Typography, VerticalAlignment, canonicalize_tuple, require_nonempty,
@@ -112,19 +114,22 @@ class TableCell:
 	paragraphs: tuple[TextParagraph, ...]
 	padding: Insets
 	vertical_alignment: VerticalAlignment
+	fill_color: str
+	borders: tuple[slide_lib.table_formatting.Border, ...]
 	column_span: int = 1
 	row_span: int = 1
-	fill_role: StyleRole | None = None
-	fill_color: str | None = None
 
 	def __post_init__(self) -> None:
 		canonicalize_tuple(self, "paragraphs")
+		canonicalize_tuple(self, "borders")
 		require_positive_integer(self.column_span, "table column span")
 		require_positive_integer(self.row_span, "table row span")
-		if self.fill_color is not None and (
-				len(self.fill_color) != 6 or any(character not in "0123456789ABCDEFabcdef"
-				for character in self.fill_color)):
+		if len(self.fill_color) != 6 or any(character not in "0123456789ABCDEFabcdef"
+				for character in self.fill_color):
 			raise ValueError("resolved table fill colors require six hexadecimal digits")
+		if len(self.borders) != 4 or any(not isinstance(border,
+				slide_lib.table_formatting.Border) for border in self.borders):
+			raise ValueError("resolved table cells require top, right, bottom, and left borders")
 
 
 @dataclass(frozen=True)
@@ -136,24 +141,11 @@ class TableRow:
 
 
 @dataclass(frozen=True)
-class TableStyle:
-	header_role: StyleRole
-	body_role: StyleRole
-	border_role: StyleRole
-	border_width_pt: float
-	border_pattern: LinePattern
-
-	def __post_init__(self) -> None:
-		require_positive_finite(self.border_width_pt, "table border width")
-
-
-@dataclass(frozen=True)
 class TableContent:
 	header_rows: tuple[TableRow, ...]
 	body_rows: tuple[TableRow, ...]
 	column_widths: tuple[float, ...]
 	row_heights: tuple[float, ...]
-	style: TableStyle
 	positioned_runs: tuple[PositionedRun, ...] = ()
 
 	def __post_init__(self) -> None:

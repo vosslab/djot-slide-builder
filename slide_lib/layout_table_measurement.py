@@ -1,5 +1,6 @@
 """Measure table-specific geometry against one compile-scoped text session."""
 
+import math
 import dataclasses
 
 import slide_lib.layout_size_selection
@@ -10,11 +11,7 @@ import slide_lib.layout_source_facts
 import slide_lib.math_layout
 import slide_lib.native_model
 import slide_lib.presentation_theme
-
-
-TABLE_HORIZONTAL_PADDING = 12.0
-TABLE_VERTICAL_PADDING = 4.0
-TABLE_BORDER_WIDTH_PT = 1.0
+import slide_lib.table_formatting
 
 
 @dataclasses.dataclass(frozen=True)
@@ -69,46 +66,49 @@ def table_measurements(table: slide_lib.native_model.Table, size_pt: float, widt
 	active = session or slide_lib.layout_measurement.MeasurementSession(theme)
 	rows = (table.headers,) if table.headers else ()
 	rows += table.rows
-	columns = table.column_count
-	padding = TABLE_HORIZONTAL_PADDING * 2
-	clearance = slide_lib.layout_measurement.point_height(
-		(TABLE_BORDER_WIDTH_PT + slide_lib.layout_measurement.TEXT_FRAME_CLEARANCE_PT) * 2, theme)
-	content_width = width - (padding + clearance) * columns
+	resolved = active.resolved_table(table)
 	if table.column_weights:
 		total = sum(table.column_weights)
 		column_widths = tuple(width * (weight / total) for weight in table.column_weights)
 	else:
 		minimums, preferred = _table_context(active).group_bounds[table.table_group] \
 			if table.table_group is not None else _table_column_bounds((table,), size_pt, active)
-		column_widths = tuple(value + padding + clearance for value in
-			_distribute_table_widths(minimums, preferred, content_width))
-	row_heights = tuple(max(slide_lib.layout_measurement.paragraph_height(
-		cell.inlines, size_pt, table_cell_text_width(sum(column_widths[column:column + cell.column_span]), theme),
-		theme, bold=row_index == 0 and bool(table.headers), session=active) +
-		TABLE_VERTICAL_PADDING * 2 for column, cell in slide_lib.native_model.table_cell_positions(row))
-		for row_index, row in enumerate(rows))
-	return TableMeasurements(column_widths, row_heights)
+		column_widths = _distribute_table_widths(minimums, preferred, width)
+	row_heights = []
+	for row, formatting in zip(rows, resolved.cells):
+		heights = []
+		for (column, cell), appearance in zip(
+				slide_lib.native_model.table_cell_positions(row), formatting):
+			insets = formatting_insets(appearance, theme)
+			usable = sum(column_widths[column:column + cell.column_span]) - insets.left - insets.right
+			height = slide_lib.layout_measurement.paragraph_height(
+				cell.inlines, size_pt, usable, theme, bold=appearance.bold, session=active) \
+				if usable > 0 else math.inf
+			heights.append(height + insets.top + insets.bottom)
+		row_heights.append(max(heights))
+	return TableMeasurements(column_widths, tuple(row_heights))
 
 
 def _table_column_bounds(tables: tuple[slide_lib.native_model.Table, ...], size_pt: float,
 		session: slide_lib.layout_measurement.MeasurementSession) -> tuple[tuple[float, ...], tuple[float, ...]]:
 	"""Pool widest-token and full-line needs without inventing synthetic header rows."""
-	rows = []
-	for table in tables:
-		if table.headers:
-			rows.append((table.headers, True))
-		rows.extend((row, False) for row in table.rows)
 	minimums = [1.0] * tables[0].column_count
 	preferred = [1.0] * tables[0].column_count
 	spanning = []
-	for row, header in rows:
-		for column, cell in slide_lib.native_model.table_cell_positions(row):
-			low, high = _table_cell_widths(cell.inlines, size_pt, session, header)
-			if cell.column_span == 1:
-				minimums[column] = max(minimums[column], low)
-				preferred[column] = max(preferred[column], high)
-			else:
-				spanning.append((column, cell.column_span, low, high))
+	for table in tables:
+		rows = ((table.headers,) if table.headers else ()) + table.rows
+		for row, formatting in zip(rows, session.resolved_table(table).cells):
+			for (column, cell), appearance in zip(
+					slide_lib.native_model.table_cell_positions(row), formatting):
+				low, high = _table_cell_widths(cell.inlines, size_pt, session, appearance.bold)
+				insets = formatting_insets(appearance, session.theme)
+				low += insets.left + insets.right
+				high += insets.left + insets.right
+				if cell.column_span == 1:
+					minimums[column] = max(minimums[column], low)
+					preferred[column] = max(preferred[column], high)
+				else:
+					spanning.append((column, cell.column_span, low, high))
 	for column, span, low, high in spanning:
 		for bounds, required in ((minimums, low), (preferred, high)):
 			extra = max(0.0, required - sum(bounds[column:column + span])) / span
@@ -118,12 +118,42 @@ def _table_column_bounds(tables: tuple[slide_lib.native_model.Table, ...], size_
 	return tuple(minimums), tuple(preferred)
 
 
+def formatting_padding(formatting: slide_lib.table_formatting.CellFormatting,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> slide_lib.layout_primitives.Insets:
+	"""Convert point-valued cell padding into the physical plan's logical units once."""
+	result = slide_lib.layout_primitives.Insets(*(slide_lib.layout_measurement.point_height(
+		getattr(formatting, f"padding_{side}_pt"), theme) for side in ("left", "top", "right", "bottom")))
+	return result
+
+
+def cell_content_insets(padding: slide_lib.layout_primitives.Insets,
+		borders: tuple[slide_lib.table_formatting.Border, ...],
+		theme: slide_lib.presentation_theme.PresentationTheme) -> slide_lib.layout_primitives.Insets:
+	"""Share the native border occupancy and text clearance in both layout axes."""
+	values = []
+	for side, border in zip(("top", "right", "bottom", "left"), borders):
+		width_pt = border.width_pt if border.style != "none" else 0.0
+		values.append(getattr(padding, side) + slide_lib.layout_measurement.point_height(
+			width_pt + slide_lib.layout_measurement.TEXT_FRAME_CLEARANCE_PT, theme))
+	top, right, bottom, left = values
+	result = slide_lib.layout_primitives.Insets(left, top, right, bottom)
+	return result
+
+
+def formatting_insets(formatting: slide_lib.table_formatting.CellFormatting,
+		theme: slide_lib.presentation_theme.PresentationTheme) -> slide_lib.layout_primitives.Insets:
+	"""Calculate usable cell space from the exact resolved side properties."""
+	borders = tuple(getattr(formatting, f"border_{side}") for side in ("top", "right", "bottom", "left"))
+	result = cell_content_insets(formatting_padding(formatting, theme), borders, theme)
+	return result
+
+
 def table_cell_text_width(column_width: float,
+		formatting: slide_lib.table_formatting.CellFormatting,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> float:
-	"""Return serializer-safe text extent inside one bordered native cell."""
-	border_and_clearance = slide_lib.layout_measurement.point_height(
-		(TABLE_BORDER_WIDTH_PT + slide_lib.layout_measurement.TEXT_FRAME_CLEARANCE_PT) * 2, theme)
-	result = column_width - TABLE_HORIZONTAL_PADDING * 2 - border_and_clearance
+	"""Return the same usable span width for fitting and physical text construction."""
+	insets = formatting_insets(formatting, theme)
+	result = column_width - insets.left - insets.right
 	return result
 
 
@@ -183,10 +213,11 @@ def select_table_size(table: slide_lib.native_model.Table,
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		layout: str, slot: str, session: slide_lib.layout_measurement.MeasurementSession | None = None) -> float:
 	"""Choose a table size and report when it must cross the readable floor."""
+	active = session or slide_lib.layout_measurement.MeasurementSession(theme)
 	minimum = slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT
 	size = slide_lib.layout_size_selection.largest_fitting_size(preferred, minimum,
 		lambda value: slide_lib.layout_measurement.text_frame_fits(
-			table_height(table, value, rectangle.width, theme, session),
+			table_height(table, value, rectangle.width, theme, active),
 			slide_lib.layout_measurement.text_frame_measurement(rectangle), theme))
 	if size is None:
 		raise slide_lib.capacity_report.PhysicalCapacityError(table.location, layout, slot, floor,

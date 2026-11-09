@@ -36,7 +36,10 @@ Brewfile             declared macOS command-line and desktop dependencies
   resolves inherited properties from already-admitted ODF XML.
 - Physical measurement is divided among `layout_measurement.py` for text/font metrics,
   `layout_size_selection.py` for fitting, `layout_table_measurement.py` for tables, and
-  `layout_flow_measurement.py` for mixed image/text allocation.
+  `layout_flow_measurement.py` for mixed image/text allocation. `table_styles.yaml`,
+  `table_styles.py`, and `table_formatting.py` define the validated named-style registry, format
+  resolution, and shared cell-formatting records; `odp_text.py` interns equivalent native ODF
+  table styles for the document.
 - [../slide_lib/make_youtube_slide.py](../slide_lib/make_youtube_slide.py),
   [../slide_lib/refresh_weather.py](../slide_lib/refresh_weather.py),
   [../slide_lib/refresh_podcast.py](../slide_lib/refresh_podcast.py), and

@@ -299,6 +299,7 @@ hidden: true
 
 @body
 
+{table-style=comparison}
 | Page | Contents |
 | --- | --- |
 | 1: Cover | Company name, logo, optional table of contents |
@@ -321,6 +322,7 @@ hidden: true
 
 @body
 
+{table-style=comparison}
 | Criterion | Weight | Look for |
 | --- | --- | --- |
 | Cover | 10% | Effective company name; clean cover |

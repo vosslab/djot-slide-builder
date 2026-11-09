@@ -46,6 +46,7 @@ color-theme: biotechnology
 
 @body
 
+{table-style=comparison}
 | Approach | Key distinction |
 | --- | --- |
 | Blood sample | Direct sample of blood |

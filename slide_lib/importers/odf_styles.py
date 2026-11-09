@@ -11,6 +11,7 @@ NS = {
 	"presentation": "urn:oasis:names:tc:opendocument:xmlns:presentation:1.0",
 	"style": "urn:oasis:names:tc:opendocument:xmlns:style:1.0",
 	"text": "urn:oasis:names:tc:opendocument:xmlns:text:1.0",
+	"table": "urn:oasis:names:tc:opendocument:xmlns:table:1.0",
 }
 
 
@@ -50,7 +51,7 @@ def attribute(element: xml.etree.ElementTree.Element,
 	"""Resolve one direct or inherited style attribute with cycle detection."""
 	if name in element.attrib:
 		return element.attrib[name]
-	for prefix in ("text", "draw", "presentation"):
+	for prefix in ("text", "draw", "presentation", "table"):
 		style_name = element.get(qname(prefix, "style-name"), "")
 		ancestry: set[str] = set()
 		while style_name:
@@ -64,6 +65,26 @@ def attribute(element: xml.etree.ElementTree.Element,
 				return definition.properties[name]
 			style_name = definition.parent_name
 	return None
+
+
+def properties(element: xml.etree.ElementTree.Element,
+		style_definitions: dict[str, StyleDefinition]) -> dict[str, str]:
+	"""Retain resolved source properties, including parent-style inheritance."""
+	names = set(element.attrib)
+	for prefix in ("text", "draw", "presentation", "table"):
+		style_name = element.get(qname(prefix, "style-name"), "")
+		ancestry: set[str] = set()
+		while style_name:
+			if style_name in ancestry:
+				raise ValueError("ODF style inheritance contains a cycle")
+			ancestry.add(style_name)
+			definition = style_definitions.get(style_name)
+			if definition is None:
+				break
+			names.update(definition.properties)
+			style_name = definition.parent_name
+	result = {name: attribute(element, style_definitions, name) for name in sorted(names)}
+	return result
 
 
 def emphasis(element: xml.etree.ElementTree.Element,

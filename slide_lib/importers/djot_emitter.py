@@ -14,6 +14,7 @@ import slide_lib.importers.import_report as import_report
 import slide_lib.importers.native_normalization as native_normalization
 import slide_lib.importers.slide_plan as slide_plan
 import slide_lib.importers.source_model as source_model
+import slide_lib.importers.source_table_styles as source_table_styles
 import slide_lib.importers.visual_relations as visual_relations
 
 
@@ -102,6 +103,43 @@ def table_lines(tables: tuple[source_model.TableBlock, ...]) -> list[str]:
 			raise ValueError(f"source table requires review: {table.unsupported_reason}")
 		if lines:
 			lines.append("")
+		if table.cell_rows:
+			cell_styles = []
+			for row in table.cell_rows:
+				for cell in row:
+					if cell.covered:
+						continue
+					attributes, reason = source_table_styles.cell_attributes(cell)
+					if reason:
+						raise ValueError(f"source table requires review: {reason}")
+					cell_styles.append(attributes)
+			common = {name: value for name, value in cell_styles[0].items()
+				if name != "colspan" and all(attributes.get(name) == value for attributes in cell_styles)}
+			defaults = dict(common)
+			if table.column_widths:
+				widths = ",".join(f"{width / min(table.column_widths):.6g}" for width in table.column_widths)
+				defaults["column-widths"] = widths
+			if defaults:
+				encoded = source_table_styles.attribute_text(defaults)
+				lines.append(f"{{{encoded}}}")
+			for row_index, row in enumerate(table.cell_rows):
+				values: list[str] = []
+				for cell in row:
+					if cell.covered:
+						continue
+					text = djot_text.render_runs(cell.runs).replace("|", "\\|")
+					attributes, reason = source_table_styles.cell_attributes(cell)
+					if reason:
+						raise ValueError(f"source table requires review: {reason}")
+					attributes = {name: value for name, value in attributes.items() if name not in common}
+					if attributes:
+						encoded = source_table_styles.attribute_text(attributes)
+						text = f"[{text}]{{{encoded}}}"
+					values.append(text)
+				lines.append(f"| {' | '.join(values)} |")
+				if row_index == 0 and table.headers:
+					lines.append(f"| {' | '.join('---' for _cell in row)} |")
+			continue
 		if table.headers:
 			header_values = tuple(djot_text.render_runs(cell).replace("|", "\\|") for cell in table.headers)
 			lines.append(f"| {' | '.join(header_values)} |")

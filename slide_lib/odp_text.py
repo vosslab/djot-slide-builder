@@ -1,7 +1,6 @@
 """Project resolved text, lists, links, and tables into editable ODF content."""
 
 # Standard Library
-import colorsys
 import xml.etree.ElementTree
 
 # Local Modules
@@ -20,11 +19,6 @@ XLINK_NS = "http://www.w3.org/1999/xlink"
 TABLE_NS = "urn:oasis:names:tc:opendocument:xmlns:table:1.0"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 _FOREGROUND = "172033"
-_ROLE_COLORS = {
-	slide_lib.layout_primitives.StyleRole.MUTED: "526176",
-	slide_lib.layout_primitives.StyleRole.TABLE_BODY: "F2F3F5",
-	slide_lib.layout_primitives.StyleRole.DECORATION: "FFFFFF",
-}
 
 for _prefix, _namespace in (("office", OFFICE_NS), ("style", STYLE_NS),
 		("text", TEXT_NS), ("fo", FO_NS), ("xlink", XLINK_NS),
@@ -33,25 +27,39 @@ for _prefix, _namespace in (("office", OFFICE_NS), ("style", STYLE_NS),
 
 
 #============================================
-def _qname(namespace: str, local_name: str) -> str:
-	"""Build one ElementTree-qualified name."""
-	result = f"{{{namespace}}}{local_name}"
-	return result
+class TableStyleRegistry:
+	"""Share table styles by their serialized native formatting within one document."""
+
+	def __init__(self, automatic: xml.etree.ElementTree.Element) -> None:
+		self.automatic = automatic
+		self.names: dict[bytes, str] = {}
+
+	def intern(self, style: xml.etree.ElementTree.Element) -> str:
+		"""Return the shared name for formatting, excluding its proposed object-based name."""
+		style.attrib.pop(_qname(STYLE_NS, "name"))
+		key = xml.etree.ElementTree.tostring(style)
+		if key not in self.names:
+			self.names[key] = f"DjotTableStyle{len(self.names) + 1}"
+			style.set(_qname(STYLE_NS, "name"), self.names[key])
+			self.automatic.append(style)
+		return self.names[key]
 
 
 #============================================
-def _color_for(role: slide_lib.layout_primitives.StyleRole,
-		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
-	"""Return the resolved ODP palette color for a semantic role."""
-	if role is slide_lib.layout_primitives.StyleRole.ACCENT:
-		return theme.accent_color
-	if role is slide_lib.layout_primitives.StyleRole.TABLE_HEADER:
-		rgb = tuple(int(theme.accent_color[index:index + 2], 16) / 255 for index in (0, 2, 4))
-		hue, lightness, saturation = colorsys.rgb_to_hls(*rgb)
-		tint = colorsys.hls_to_rgb(hue, max(lightness, 0.8), saturation)
-		result = "".join(f"{round(channel * 255):02X}" for channel in tint)
-		return result
-	result = _ROLE_COLORS.get(role, _FOREGROUND)
+def _register_style(automatic: xml.etree.ElementTree.Element,
+		style: xml.etree.ElementTree.Element,
+		registry: TableStyleRegistry | None) -> str:
+	"""Publish one style, reusing table formatting independently of object identity."""
+	if registry is not None:
+		return registry.intern(style)
+	automatic.append(style)
+	return style.attrib[_qname(STYLE_NS, "name")]
+
+
+#============================================
+def _qname(namespace: str, local_name: str) -> str:
+	"""Build one ElementTree-qualified name."""
+	result = f"{{{namespace}}}{local_name}"
 	return result
 
 
@@ -136,7 +144,8 @@ def write_text(parent: xml.etree.ElementTree.Element,
 		automatic: xml.etree.ElementTree.Element,
 		content: slide_lib.layout_content.TextContent, slide_index: int,
 		object_index: int, target_ids: dict[str, str],
-		reveal_targets: tuple[slide_lib.layout_model.RevealTarget, ...]) -> None:
+		reveal_targets: tuple[slide_lib.layout_model.RevealTarget, ...],
+		registry: TableStyleRegistry | None = None) -> None:
 	"""Write editable paragraphs, native lists, styled runs, and links.
 
 	Args:
@@ -147,6 +156,7 @@ def write_text(parent: xml.etree.ElementTree.Element,
 		object_index: Zero-based object index used for deterministic names.
 		target_ids: Mapping from plan reveal targets to ODF XML identifiers.
 		reveal_targets: Reveal targets attached to the containing object.
+		registry: Document style sharing for native table text, when supplied.
 	"""
 	paragraph_targets = {target.paragraph_indexes[0]: target_ids[target.target_id]
 		for target in reveal_targets if target.paragraph_indexes}
@@ -156,7 +166,7 @@ def write_text(parent: xml.etree.ElementTree.Element,
 		if not paragraph.display:
 			continue
 		style_name = f"DjotParagraph{slide_index + 1}_{object_index + 1}_{paragraph_index + 1}"
-		_add_paragraph_style(automatic, style_name, paragraph)
+		style_name = _add_paragraph_style(automatic, style_name, paragraph, registry)
 		attributes = {_qname(TEXT_NS, "style-name"): style_name}
 		if paragraph_index in paragraph_targets:
 			attributes[_qname(XML_NS, "id")] = paragraph_targets[paragraph_index]
@@ -170,7 +180,7 @@ def write_text(parent: xml.etree.ElementTree.Element,
 		paragraph_element = xml.etree.ElementTree.SubElement(paragraph_parent,
 			_qname(TEXT_NS, "p"), attributes)
 		_write_inlines(paragraph_element, automatic, paragraph, slide_index,
-			object_index, paragraph_index)
+			object_index, paragraph_index, registry)
 
 
 #============================================
@@ -211,9 +221,10 @@ def _append_list_item(parent: xml.etree.ElementTree.Element,
 
 #============================================
 def _add_paragraph_style(automatic: xml.etree.ElementTree.Element, style_name: str,
-		paragraph: slide_lib.layout_content.TextParagraph) -> None:
+		paragraph: slide_lib.layout_content.TextParagraph,
+		registry: TableStyleRegistry | None = None) -> str:
 	"""Serialize compiler-resolved paragraph spacing without choosing new values."""
-	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
+	style = xml.etree.ElementTree.Element(_qname(STYLE_NS, "style"), {
 		_qname(STYLE_NS, "name"): style_name,
 		_qname(STYLE_NS, "family"): "paragraph",
 	})
@@ -237,13 +248,15 @@ def _add_paragraph_style(automatic: xml.etree.ElementTree.Element, style_name: s
 			xml.etree.ElementTree.SubElement(tabs, _qname(STYLE_NS, "tab-stop"), {
 				_qname(STYLE_NS, "position"): _points(position),
 			})
+	return _register_style(automatic, style, registry)
 
 
 #============================================
 def _write_inlines(parent: xml.etree.ElementTree.Element,
 		automatic: xml.etree.ElementTree.Element,
 		paragraph: slide_lib.layout_content.TextParagraph, slide_index: int,
-		object_index: int, paragraph_index: int) -> None:
+		object_index: int, paragraph_index: int,
+		registry: TableStyleRegistry | None = None) -> None:
 	"""Write styled text, explicit line breaks, and hyperlink semantics."""
 	for inline_index, inline in enumerate(paragraph.inlines):
 		if isinstance(inline, slide_lib.layout_content.LineBreak):
@@ -251,9 +264,9 @@ def _write_inlines(parent: xml.etree.ElementTree.Element,
 			continue
 		style_name = (f"DjotText{slide_index + 1}_{object_index + 1}_"
 			f"{paragraph_index + 1}_{inline_index + 1}")
-		_add_text_style(automatic, style_name, inline.style,
+		style_name = _add_text_style(automatic, style_name, inline.style,
 			inline.style.size_pt if inline.style.size_pt is not None else slide_lib.presentation_theme.inline_size_pt(
-				paragraph.typography.selected_size_pt, inline.style.literal_url))
+				paragraph.typography.selected_size_pt, inline.style.literal_url), registry)
 		span = xml.etree.ElementTree.SubElement(parent, _qname(TEXT_NS, "span"), {
 			_qname(TEXT_NS, "style-name"): style_name,
 		})
@@ -269,9 +282,10 @@ def _write_inlines(parent: xml.etree.ElementTree.Element,
 
 #============================================
 def _add_text_style(automatic: xml.etree.ElementTree.Element, style_name: str,
-		style_value: slide_lib.layout_content.RunStyle, size_pt: float) -> None:
+		style_value: slide_lib.layout_content.RunStyle, size_pt: float,
+		registry: TableStyleRegistry | None = None) -> str:
 	"""Define one resolved run style with no host-font substitution."""
-	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
+	style = xml.etree.ElementTree.Element(_qname(STYLE_NS, "style"), {
 		_qname(STYLE_NS, "name"): style_name,
 		_qname(STYLE_NS, "family"): "text",
 	})
@@ -297,6 +311,7 @@ def _add_text_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 	if style_value.position is not None:
 		attributes[_qname(STYLE_NS, "text-position")] = f"{style_value.position} 70%"
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "text-properties"), attributes)
+	return _register_style(automatic, style, registry)
 
 
 #============================================
@@ -304,7 +319,7 @@ def write_table(parent: xml.etree.ElementTree.Element,
 		automatic: xml.etree.ElementTree.Element, object_id: str,
 		content: slide_lib.layout_content.TableContent, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme,
-		slide_index: int, object_index: int) -> None:
+		slide_index: int, object_index: int, registry: TableStyleRegistry) -> None:
 	"""Write one editable native ODF table, including row and column spans.
 
 	Args:
@@ -316,14 +331,15 @@ def write_table(parent: xml.etree.ElementTree.Element,
 		theme: Validated presentation theme defining physical page size.
 		slide_index: Zero-based physical slide index used for deterministic names.
 		object_index: Zero-based object index used for deterministic names.
+		registry: Document-scoped sharing of native table formatting.
 	"""
 	table = xml.etree.ElementTree.SubElement(parent, _qname(TABLE_NS, "table"), {
 		_qname(TABLE_NS, "name"): object_id,
 	})
 	for column_index, width in enumerate(content.column_widths):
 		column_style = f"DjotColumn{slide_index + 1}_{object_index + 1}_{column_index + 1}"
-		_add_dimension_style(automatic, column_style, "table-column", "column-width",
-			_centimeters_x(width, deck, theme))
+		column_style = _add_dimension_style(automatic, column_style, "table-column", "column-width",
+			_centimeters_x(width, deck, theme), registry)
 		xml.etree.ElementTree.SubElement(table, _qname(TABLE_NS, "table-column"), {
 			_qname(TABLE_NS, "style-name"): column_style,
 		})
@@ -331,8 +347,8 @@ def write_table(parent: xml.etree.ElementTree.Element,
 	grid = _table_grid(content)
 	for row_index, _row in enumerate(rows):
 		row_style = f"DjotRow{slide_index + 1}_{object_index + 1}_{row_index + 1}"
-		_add_dimension_style(automatic, row_style, "table-row", "row-height",
-			_centimeters_y(content.row_heights[row_index], deck, theme))
+		row_style = _add_dimension_style(automatic, row_style, "table-row", "row-height",
+			_centimeters_y(content.row_heights[row_index], deck, theme), registry)
 		row_element = xml.etree.ElementTree.SubElement(table, _qname(TABLE_NS, "table-row"), {
 			_qname(TABLE_NS, "style-name"): row_style,
 		})
@@ -344,8 +360,7 @@ def write_table(parent: xml.etree.ElementTree.Element,
 			cell_style = (
 				f"DjotCell{slide_index + 1}_{object_index + 1}_"
 				f"{row_index + 1}_{column_index + 1}")
-			_add_cell_style(automatic, cell_style, row_index < len(content.header_rows),
-				cell, content, deck, theme)
+			cell_style = _add_cell_style(automatic, cell_style, cell, deck, theme, registry)
 			attributes = {
 				_qname(TABLE_NS, "style-name"): cell_style,
 				_qname(OFFICE_NS, "value-type"): "string",
@@ -358,7 +373,7 @@ def write_table(parent: xml.etree.ElementTree.Element,
 				_qname(TABLE_NS, "table-cell"), attributes)
 			write_text(cell_element, automatic,
 				slide_lib.layout_content.TextContent(cell.paragraphs), slide_index,
-				object_index * 100 + row_index * 10 + column_index, {}, ())
+				object_index, {}, (), registry)
 
 
 #============================================
@@ -384,9 +399,9 @@ def _table_grid(content: slide_lib.layout_content.TableContent) -> list[
 
 #============================================
 def _add_dimension_style(automatic: xml.etree.ElementTree.Element, name: str,
-		family: str, property_name: str, value: str) -> None:
+		family: str, property_name: str, value: str, registry: TableStyleRegistry) -> str:
 	"""Define one table row or column dimension selected by the compiler."""
-	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
+	style = xml.etree.ElementTree.Element(_qname(STYLE_NS, "style"), {
 		_qname(STYLE_NS, "name"): name,
 		_qname(STYLE_NS, "family"): family,
 	})
@@ -397,33 +412,36 @@ def _add_dimension_style(automatic: xml.etree.ElementTree.Element, name: str,
 		properties[_qname(STYLE_NS, "use-optimal-row-height")] = "false"
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, f"{family}-properties"),
 		properties)
+	return _register_style(automatic, style, registry)
 
 
 #============================================
 def _add_cell_style(automatic: xml.etree.ElementTree.Element, name: str,
-		header: bool, cell: slide_lib.layout_content.TableCell,
-		content: slide_lib.layout_content.TableContent,
+		cell: slide_lib.layout_content.TableCell,
 		deck: slide_lib.layout_model.LayoutDeck,
-		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		registry: TableStyleRegistry) -> str:
 	"""Define native table fill, border, and compiler-measured padding."""
-	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
+	style = xml.etree.ElementTree.Element(_qname(STYLE_NS, "style"), {
 		_qname(STYLE_NS, "name"): name,
 		_qname(STYLE_NS, "family"): "table-cell",
 	})
-	role = cell.fill_role or (content.style.header_role if header else content.style.body_role)
 	# Impress cell fills inherit drawing properties independently of FO backgrounds.
 	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), {
 		_qname(DRAW_NS, "fill"): "solid",
-		_qname(DRAW_NS, "fill-color"): f"#{cell.fill_color or _color_for(role, theme)}",
+		_qname(DRAW_NS, "fill-color"): f"#{cell.fill_color}",
 		_qname(DRAW_NS, "opacity"): "100%",
 	})
-	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "table-cell-properties"), {
-		_qname(FO_NS, "background-color"): f"#{cell.fill_color or _color_for(role, theme)}",
-		_qname(FO_NS, "border"): f"{_points(content.style.border_width_pt)} solid "
-			f"#{_color_for(content.style.border_role, theme)}",
+	properties = {
+		_qname(FO_NS, "background-color"): f"#{cell.fill_color}",
 		_qname(FO_NS, "padding-left"): _centimeters_x(cell.padding.left, deck, theme),
 		_qname(FO_NS, "padding-top"): _centimeters_y(cell.padding.top, deck, theme),
 		_qname(FO_NS, "padding-right"): _centimeters_x(cell.padding.right, deck, theme),
 		_qname(FO_NS, "padding-bottom"): _centimeters_y(cell.padding.bottom, deck, theme),
 		_qname(STYLE_NS, "vertical-align"): cell.vertical_alignment.value,
-	})
+	}
+	for side, border in zip(("top", "right", "bottom", "left"), cell.borders):
+		properties[_qname(FO_NS, f"border-{side}")] = "none" if border.style == "none" else (
+			f"{_points(border.width_pt)} {border.style} #{border.color}")
+	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "table-cell-properties"), properties)
+	return _register_style(automatic, style, registry)

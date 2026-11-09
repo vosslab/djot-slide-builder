@@ -52,6 +52,7 @@ color-theme: genetics
 
 @body
 
+{table-style=comparison}
 | Labels | What Do They Describe? |
 | --- | --- |
 | NCO, SCO, DCO | How many crossovers occurred in a meiosis |
@@ -176,6 +177,7 @@ Chromosome A/B = homework +; lowercase a/b = mutant alleles. Positions in the as
 
 @body
 
+{table-style=comparison}
 | Crossovers Between Linked Genes | [PD]{color=#935D00}, [NPD]{color=#007A00}, or [TT]{color=#A719DB}? |
 | --- | --- |
 | None | ? |
@@ -229,6 +231,7 @@ Pause before showing the counts. Ask students to point to the a+ and +b spores. 
 
 @bottom
 
+{table-style=working}
 | Tetrad Class | Recombinant Spores | Fraction |
 | --- | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 0 of 4 | None |
@@ -275,6 +278,7 @@ Ask where the four went. It cancels; we have not changed what the fraction measu
 - Does a parental combination prove that no crossover occurred?
 - Two exchanges can restore a parental combination.
 
+{table-style=comparison}
 | Tetrad Class | Possible Crossovers Between the Genes |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | None, or two |
@@ -297,6 +301,7 @@ Ask the question before reading the answer. Recall the double-crossover diagrams
 
 For double crossovers, four equally likely second exchanges give:
 
+{table-style=working}
 | Outcome | Expected Share | Estimated Count |
 | --- | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | One of four | [NPD]{color=#007A00} |

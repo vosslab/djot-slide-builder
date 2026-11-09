@@ -248,7 +248,7 @@ Transition: build the four possible offspring to test the claim visually.
 
 @top
 
-{table-group="four-allele-story"}
+{table-group="four-allele-story" table-style=punnett}
 |  | _A&#x2083;_ | _A&#x2084;_ |
 | --- | --- | --- |
 | _A&#x2081;_ | ? | ? |
@@ -273,7 +273,7 @@ Transition: mark which completed outcomes answer our question.
 
 @top
 
-{table-group="four-allele-story"}
+{table-group="four-allele-story" table-style=punnett}
 |  | _A&#x2083;_ | _A&#x2084;_ |
 | --- | --- | --- |
 | _A&#x2081;_ | [_A&#x2081;A&#x2083;_: both]{color=blue} | [_A&#x2081;A&#x2084;_: _A&#x2081;_ only]{color=blue} |
@@ -297,7 +297,7 @@ Transition: 'The answer is three-quarters, but adding gave one. Where did the ex
 
 @top
 
-{table-group="four-allele-story"}
+{table-group="four-allele-story" table-style=punnett}
 |  | _A&#x2083;_ | _A&#x2084;_ |
 | --- | --- | --- |
 | _A&#x2081;_ | [_A&#x2081;A&#x2083;_: counted twice]{color=orange} | _A&#x2081;A&#x2084;_: counted once |
@@ -359,7 +359,7 @@ Transition: return immediately to the same parents and square.
 
 @top
 
-{table-group="four-allele-story"}
+{table-group="four-allele-story" table-style=punnett}
 |  | _A&#x2083;_ | _A&#x2084;_ |
 | --- | --- | --- |
 | _A&#x2081;_ | [_A&#x2081;A&#x2083;_: &#x00BC;]{color=orange} | _A&#x2081;A&#x2084;_: &#x00BC; |
@@ -462,6 +462,7 @@ Transition: before multiplying cells, determine the pollen probabilities at fert
 
 ## Illustrative pollen counts
 
+{table-style=working}
 | Allele | Produced | Successful |
 | --- | --- | --- |
 | _A_ | 100 | 50 |
@@ -504,6 +505,7 @@ Ovules are unaffected: each allele still has probability &#x00BD;.
 
 ## Probabilities at fertilization
 
+{table-style=working}
 | Allele | Ovules | Pollen |
 | --- | --- | --- |
 | _A_ | &#x00BD; | &#x2153; |
@@ -521,7 +523,7 @@ Transition: 'Use these probabilities exactly as we used the halves in the previo
 
 @top
 
-{table-group="pollen-story"}
+{table-group="pollen-story" table-style=punnett}
 | Ovule | Pollen _A_: &#x2153; | Pollen _a_: &#x2154; |
 | --- | --- | --- |
 | _A_: &#x00BD; | [_AA_: &#x00BD; &times; &#x2153; = &#x2159;]{color=orange} | _Aa_: ? |
@@ -546,7 +548,7 @@ Transition: check the results, then find offspring genotypes that appear more th
 
 @top
 
-{table-group="pollen-story"}
+{table-group="pollen-story" table-style=punnett}
 | Ovule | Pollen _A_: &#x2153; | Pollen _a_: &#x2154; |
 | --- | --- | --- |
 | _A_: &#x00BD; | _AA_: &#x2159; | [_Aa_: &#x2153;]{color=blue} |
@@ -603,6 +605,7 @@ Transition: collect AA, Aa, and aa to answer the original F2 ratio question.
 
 @left
 
+{table-style=working}
 | Type | P | Ratio |
 | --- | --- | --- |
 | _AA_ | &#x2159; | 1 |
@@ -805,6 +808,7 @@ Transition: ask which condition mattered in each familiar example.
 
 @body
 
+{table-style=comparison}
 | Familiar problem | Which rule, and why? |
 | --- | --- |
 | _A&#x2081;_ OR _A&#x2083;_ in one offspring | ? |
@@ -823,6 +827,7 @@ Transition: reveal the reasoning, then show where the reusable rules live in the
 
 @body
 
+{table-style=working}
 | Problem | Reasoning | Result |
 | --- | --- | --- |
 | _A&#x2081;_ OR _A&#x2083;_ | [Add; subtract overlap]{color=blue} | &#x00BE; |

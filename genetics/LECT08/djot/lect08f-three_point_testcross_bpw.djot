@@ -58,7 +58,7 @@ Fictional fruit-fly traits; gene order is not yet known.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
@@ -79,7 +79,7 @@ Determine the order of C, D, and H and the recombination frequency for each pair
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
@@ -101,7 +101,7 @@ Determine the order of C, D, and H and the recombination frequency for each pair
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
@@ -122,7 +122,7 @@ Which two offspring classes are most frequent?
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
@@ -136,7 +136,7 @@ Which two offspring classes are most frequent?
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
@@ -159,7 +159,7 @@ Parent phase: c++ / +dh.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
@@ -182,7 +182,7 @@ Parent phase: c++ / +dh.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{text-align=center} | [d]{text-align=center} | []{background-color=#AAB2BC text-align=center} | 29 | [?]{text-align=center} |
@@ -205,7 +205,7 @@ Which combinations are parental?
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
@@ -245,7 +245,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
@@ -268,7 +268,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
@@ -286,7 +286,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
@@ -309,7 +309,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | ? | ? | ? |
@@ -327,7 +327,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
@@ -348,7 +348,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | ? | ? |
@@ -366,7 +366,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
@@ -387,7 +387,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | ? |
@@ -405,7 +405,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#FF8F8F text-align=center} | [d]{background-color=#FF8F8F text-align=center} | []{background-color=#AAB2BC text-align=center} | [*29*]{background-color=#FF8F8F} | [*R*]{background-color=#FF8F8F text-align=center} |
@@ -426,7 +426,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -452,7 +452,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
@@ -477,7 +477,7 @@ Which combinations are parental?
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -508,7 +508,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
@@ -531,7 +531,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -549,7 +549,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
@@ -572,7 +572,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -590,7 +590,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
@@ -611,7 +611,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -629,7 +629,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
@@ -650,7 +650,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -668,7 +668,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | [c]{background-color=#8FABFF text-align=center} | []{background-color=#AAB2BC text-align=center} | [h]{background-color=#8FABFF text-align=center} | [*29*]{background-color=#8FABFF} | [*R*]{background-color=#8FABFF text-align=center} |
@@ -689,7 +689,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -715,7 +715,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | []{background-color=#AAB2BC text-align=center} | [d]{text-align=center} | [h]{text-align=center} | 29 | [?]{text-align=center} |
@@ -740,7 +740,7 @@ Which combinations are parental?
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -771,7 +771,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
@@ -794,7 +794,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -812,7 +812,7 @@ Counts identify the original parents. Allele combinations classify the other row
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
@@ -835,7 +835,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -853,7 +853,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
@@ -874,7 +874,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -892,7 +892,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
@@ -913,7 +913,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -931,7 +931,7 @@ Add the four bold R counts.
 
 @left
 
-{column-widths="1,1,1,2,1.5"}
+{column-widths="1,1,1,2,1.5" padding="1pt 4pt" table-style=testcross}
 | [C]{text-align=center} | [D]{text-align=center} | [H]{text-align=center} | Count | [Class]{text-align=center} |
 | --- | --- | --- | --- | --- |
 | []{background-color=#AAB2BC text-align=center} | [d]{background-color=#D6FFAD text-align=center} | [h]{background-color=#D6FFAD text-align=center} | [29]{background-color=#D6FFAD} | [P]{background-color=#D6FFAD text-align=center} |
@@ -952,7 +952,7 @@ Add the four bold R counts.
 
 @bottom-right
 
-{table-group="bpw-progress"}
+{table-group="bpw-progress" table-style=working}
 | Pair | Sum | r | % |
 | --- | --- | --- | --- |
 | [*CD*]{color=#D40000 background-color=#FF8F8F} | [300]{background-color=#FF8F8F} | [0.30]{background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |
@@ -986,6 +986,7 @@ Which pair has the largest recombination frequency?
 
 @body
 
+{table-style=standard}
 | Middle Gene | Gene Order | Same Map Reversed |
 | --- | --- | --- |
 | C | D - *C* - H | H - *C* - D |
@@ -1057,7 +1058,7 @@ Alleles are now displayed in chromosome order: D-C-H.
 
 @body
 
-{column-widths="2.5,1,1,1,1"}
+{column-widths="2.5,1,1,1,1" padding="1pt 4pt" table-style=testcross}
 | Original Label | Count | [CD]{color=#182033 background-color=#FF8F8F text-align=center} | [CH]{color=#182033 background-color=#8FABFF text-align=center} | [DH]{color=#182033 background-color=#DC9AF4 text-align=center} |
 | --- | --- | --- | --- | --- |
 | cdh | 29 | [R]{background-color=#FF8F8F text-align=center} | [R]{background-color=#8FABFF text-align=center} | [P]{background-color=#D6FFAD text-align=center} |
@@ -1082,6 +1083,7 @@ R = recombinant; P = parental for the indicated pair. Original labels use C-D-H 
 
 @left
 
+{table-style=standard}
 | Gene Pair | Answer |
 | --- | --- |
 | [CD]{color=#D40000 background-color=#FF8F8F} | [30]{background-color=#FF8F8F} |

@@ -1,80 +1,62 @@
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 32](assets/lect12b-gene_trees/image_032.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R | 12 |  | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R | 12 |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - Our setup makes the
 - S.Wh. and Blk.R difficult
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
-![Slide image 33](assets/lect12b-gene_trees/image_033.svg)
-
-@top-right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R | 12 | 8 | &#215; |
-
-@bottom-left
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - But if we highlight the
 - difference, we count 8
 
-@bottom-right
-
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 34](assets/lect12b-gene_trees/image_034.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | &#215; | 8 |
-| Blk.R | 12 | 8 | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 8 |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - But if we highlight the
 - difference, we count 8
@@ -84,148 +66,126 @@
 
 # UPGMA Simple Example Part 2\: Create Gene Tree
 
-=== layout: two-panels
-@replaceme
+=== layout: one-panel
 
 # *Step 1\: Ignore the top half*
 
-@left
+@body
 
-![Slide image 35](assets/lect12b-gene_trees/image_035.svg)
-
-@right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
-| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
-| Blk.R | 12 | 8 | &#215; |
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | [4]{color=gray} | [12]{color=gray} |
+| S.Wh. | 4 | [[&#215;]{color=#CCCCCC}]{background-color=#000000} | [8]{color=gray} |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
-=== layout: two-panels
-@replaceme
+=== layout: one-panel
 
 # *Step 1\: Ignore the top half*
 
-@left
+@body
 
-![Slide image 36](assets/lect12b-gene_trees/image_036.svg)
-
-@right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | [&#215;]{color=#EEEEEE} | 8 |
-| Blk.R | 12 | 8 | &#215; |
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#EEEEEE}]{background-color=#000000} | 8 |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
-=== layout: two-panels
-@replaceme
+=== layout: one-panel
 
 # *Step 2\: Find Smallest Value*
 
-@left
+@body
 
-![Slide image 36](assets/lect12b-gene_trees/image_035.svg)
-
-@right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
-| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
-| Blk.R | 12 | 8 | &#215; |
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | [4]{color=gray} | [12]{color=gray} |
+| S.Wh. | 4 | [[&#215;]{color=#CCCCCC}]{background-color=#000000} | [8]{color=gray} |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
-=== layout: two-panels
-@replaceme
+=== layout: one-panel
 
 # *Step 2\: Find Smallest Value*
 
-@left
+@body
 
-![Slide image 36](assets/lect12b-gene_trees/image_035.svg)
-
-@right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
-| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
-| Blk.R | 12 | 8 | &#215; |
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | [[4]{color=#515F74}]{background-color=#F5ECEE border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [12]{color=gray} |
+| S.Wh. | [4]{background-color=#FAC6C8 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#215;]{color=#CCCCCC}]{background-color=#000000} | [8]{color=gray} |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
-=== layout: four-panels
+=== layout: two-panels
 @replaceme
 
 # *Step 2\: Create Gene Tree*
 
-@top-left
+@left
 
-![Slide image 36](assets/lect12b-gene_trees/image_035.svg)
+{table-style=matrix-lower table-group=lect12b-rhino-4 padding="5pt 3pt"}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | [4]{color=gray} | [12]{color=gray} |
+| S.Wh. | [4]{background-color=#FAC6C8 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#215;]{color=#CCCCCC}]{background-color=#000000} | [8]{color=gray} |
+| Blk.R | 12 | 8 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
+
+@right
 
 - length on tree is
 - &#189; of the distance
 
-@top-right
-
-|  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
-| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
-| Blk.R | 12 | 8 | &#215; |
-
-@bottom-left
-
 - N.Wh.
 - S.Wh.
 - Blk.R
 
-@bottom-right
-
 - 2
 
 - 2
 
-=== layout: four-panels
+=== layout: two-panels
 @replaceme
 
 # *Step 2\: Merge N.Wh. and S.Wh.*
 
-@top-left
+@left
 
-![Slide image 37](assets/lect12b-gene_trees/image_037.svg)
+{table-style=matrix-lower table-group=lect12b-rhino-4 padding="5pt 3pt"}
+|  | [N.Wh.]{background-color=#C2B8B0 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [S.Wh.]{background-color=#C2B8B0 border-top="1pt solid #000000" border-right="1pt solid #000000"} | Blk.R |
+| --- | --- | --- | --- |
+| [N.Wh.]{background-color=#B6C4D3 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [[&#215;]{color=#FFFFFF}]{background-color=#532A00 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [[4]{color=#445062}]{background-color=#F6CEA5 border-top="1pt solid #000000" border-right="1pt solid #000000"} | [[12]{color=#475366}]{background-color=#FFD2A4 border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| [S.Wh.]{background-color=#B6C4D3 border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [4]{background-color=#FBAF87 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#215;]{color=#CCCCCC}]{background-color=#532A00 border-bottom="1pt solid #000000" border-right="1pt solid #000000"} | [[8]{color=#475366}]{background-color=#FFD2A4 border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+| Blk.R | [12]{background-color=#F98F36 border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [8]{background-color=#F98F36 border-right="1pt solid #000000" border-bottom="1pt solid #000000"} | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
+
+@right
 
 - average of
 - 12 and 8 is 10
-
-@top-right
-
-|  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | [4]{color=#CCCCCC} | [12]{color=#CCCCCC} |
-| S.Wh. | 4 | [&#215;]{color=#CCCCCC} | [8]{color=#CCCCCC} |
-| Blk.R | 12 | 8 | &#215; |
-
-@bottom-left
 
 - N.Wh.
 - S.Wh.
 - Blk.R
 
-@bottom-right
-
 - 2
 
 - 2
 
-=== layout: four-panels
+=== layout: two-panels
 @replaceme
 
 # *Step 2\: Merge N.Wh. and S.Wh.*
 
-@top-left
+@left
 
-![Slide image 38](assets/lect12b-gene_trees/image_038.svg)
+{table-style=matrix-lower table-group=lect12b-rhino-3 padding="5pt 3pt"}
+|  | [(N.Wh., S.Wh.)]{background-color=#C2B8B0 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | Blk.R |
+| --- | --- | --- |
+| [(N.Wh., S.Wh.)]{background-color=#B6C4D3 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#215;]{color=#FFFFFF}]{background-color=#532A00 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [[10]{color=#475366}]{background-color=#FFD2A4 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+| Blk.R | [10]{background-color=#F98F36 border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
-@top-right
-
-|  | (N.Wh., S.Wh.) | Blk.R |
-| (N.Wh., S.Wh.) | &#215; | [10]{color=#CCCCCC} |
-| Blk.R | 10 | &#215; |
-
-@bottom-left
+@right
 
 - N.Wh.
 - S.Wh.
@@ -235,30 +195,26 @@
 
 - 2
 
-@bottom-right
-
 - average of
 - 12 and 8 is 10
 
-=== layout: four-panels
+=== layout: two-panels
 @replaceme
 
 # *Step 3\: Find Next Smallest*
 
-@top-left
+@left
 
-![Slide image 39](assets/lect12b-gene_trees/image_039.svg)
+{table-style=matrix-lower table-group=lect12b-rhino-3 padding="5pt 3pt"}
+|  | (N.Wh., S.Wh.) | Blk.R |
+| --- | --- | --- |
+| (N.Wh., S.Wh.) | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | [10]{color=gray} |
+| Blk.R | [10]{background-color=#F79448} | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
+
+@right
 
 - length on tree is
 - &#189; of the distance
-
-@top-right
-
-|  | (N.Wh., S.Wh.) | Blk.R |
-| (N.Wh., S.Wh.) | &#215; | [10]{color=#CCCCCC} |
-| Blk.R | 10 | &#215; |
-
-@bottom-left
 
 - N.Wh.
 - S.Wh.
@@ -267,46 +223,36 @@
 - 2
 
 - 2
-
-@bottom-right
 
 - 5
 
-=== layout: six-panels
+=== layout: two-panels
 @replaceme
 
 # *Step 3\: Find Next Smallest*
 
-@top-left
+@left
 
-![Slide image 39](assets/lect12b-gene_trees/image_039.svg)
+{table-style=matrix-lower table-group=lect12b-rhino-3 padding="5pt 3pt"}
+|  | (N.Wh., S.Wh.) | Blk.R |
+| --- | --- | --- |
+| (N.Wh., S.Wh.) | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | [10]{color=gray} |
+| Blk.R | [10]{background-color=#F79448} | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
+
+@right
 
 - subtract to fill
 - other distances
 
-@top-center
-
-|  | (N.Wh., S.Wh.) | Blk.R |
-| (N.Wh., S.Wh.) | &#215; | [10]{color=#CCCCCC} |
-| Blk.R | 10 | &#215; |
-
-@top-right
-
 - N.Wh.
 - S.Wh.
 - Blk.R
 
-@bottom-left
-
 - 2
 
 - 2
-
-@bottom-center
 
 - 5
-
-@bottom-right
 
 - 3
 
@@ -340,142 +286,108 @@
 
 ![Slide image 40](assets/lect12b-gene_trees/image_040.png)
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
-
-@top-left
+@left
 
 ![Slide image 40](assets/lect12b-gene_trees/image_040.png)
 
-@top-right
+@right
 
-![Slide image 41](assets/lect12b-gene_trees/image_041.svg)
-
-@bottom-left
-
+{table-style=matrix-upper table-group=lect12b-tree-matrix-5}
 |  | A | B | C | D |
+| --- | --- | --- | --- | --- |
 | A |  |  | 6.4 |  |
 | B |  |  |  |  |
 | C |  |  |  |  |
 | D |  |  |  |  |
 
-@bottom-right
-
 - a-c distance times 2\:
 - 3.2 &#215; 2 = 6.4
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
-
-@top-left
+@left
 
 ![Slide image 41](assets/lect12b-gene_trees/image_040.png)
 
-@top-right
+@right
 
-![Slide image 42](assets/lect12b-gene_trees/image_042.svg)
-
-@bottom-left
-
+{table-style=matrix-upper table-group=lect12b-tree-matrix-5}
 |  | A | B | C | D |
+| --- | --- | --- | --- | --- |
 | A |  |  | 6.4 | 12.6 |
 | B |  |  |  |  |
 | C |  |  |  | 12.6 |
 | D |  |  |  |  |
 
-@bottom-right
-
 - (a,c)-d distance times 2\:
 - 6.3 &#215; 2 = 12.6
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
-
-@top-left
+@left
 
 ![Slide image 42](assets/lect12b-gene_trees/image_040.png)
 
-@top-right
+@right
 
-![Slide image 43](assets/lect12b-gene_trees/image_043.svg)
-
-@bottom-left
-
+{table-style=matrix-upper table-group=lect12b-tree-matrix-5}
 |  | A | B | C | D |
+| --- | --- | --- | --- | --- |
 | A |  |  | 6.4 | 12.9 |
 | B |  |  |  |  |
 | C |  |  |  | 12.3 |
 | D |  |  |  |  |
 
-@bottom-right
-
 - 12.6 is only the average
 - numbers can be different
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
-
-@top-left
+@left
 
 ![Slide image 43](assets/lect12b-gene_trees/image_040.png)
 
-@top-right
+@right
 
-![Slide image 44](assets/lect12b-gene_trees/image_044.svg)
-
-@bottom-left
-
+{table-style=matrix-upper table-group=lect12b-tree-matrix-5}
 |  | A | B | C | D |
+| --- | --- | --- | --- | --- |
 | A |  | 17.4 | 6.4 | 12.6 |
 | B |  |  | 17.4 | 17.4 |
 | C |  |  |  | 12.6 |
 | D |  |  |  |  |
 
-@bottom-right
-
 - 8.7 &#215; 2 = 17.4 for the rest
 
-=== layout: one-plus-two-panels
+=== layout: one-panel
 @replaceme
 
+@body
 
-@left
-
-![Slide image 45](assets/lect12b-gene_trees/image_045.svg)
-
-@top-right
-
+{table-style=working table-group=lect12b-tree-matrix-5}
 |  | A | B | C | D |
+| --- | --- | --- | --- | --- |
 | A |  | 17.4 | 6.4 | 12.6 |
 | B | 17.4 |  | 17.4 | 17.4 |
 | C | 6.4 | 17.4 |  | 12.6 |
 | D | 12.6 | 17.4 | 12.6 |  |
-
-@bottom-right
 
 - tables are symmetric about the diagonal line
 
-=== layout: one-plus-two-panels
+=== layout: one-panel
 @replaceme
 
+@body
 
-@left
-
-![Slide image 45](assets/lect12b-gene_trees/image_045.svg)
-
-@top-right
-
+{table-style=working table-group=lect12b-tree-matrix-5}
 |  | A | B | C | D |
+| --- | --- | --- | --- | --- |
 | A |  | 17.4 | 6.4 | 12.6 |
 | B | 17.4 |  | 17.4 | 17.4 |
 | C | 6.4 | 17.4 |  | 12.6 |
 | D | 12.6 | 17.4 | 12.6 |  |
-
-@bottom-right
 
 - tables are symmetric about the diagonal line
 

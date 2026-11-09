@@ -92,6 +92,7 @@ Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD 
 
 @left
 
+{table-style=working}
 | Set | Tetrads | AB Class |
 | --- | --- | --- |
 | 1 | 2 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
@@ -132,6 +133,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
@@ -173,6 +175,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
@@ -211,6 +214,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
@@ -251,6 +255,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 995 |
@@ -339,6 +344,7 @@ Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD 
 
 @left
 
+{table-style=working}
 | Set | Tetrads | AC Class |
 | --- | --- | --- |
 | 1 | 2 | [*NPD*]{color=#007A00 background-color=#BFE6C0} |
@@ -379,6 +385,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
@@ -420,6 +427,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
@@ -458,6 +466,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
@@ -498,6 +507,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 905 |
@@ -586,6 +596,7 @@ Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD 
 
 @left
 
+{table-style=working}
 | Set | Tetrads | BC Class |
 | --- | --- | --- |
 | 1 | 2 | [*PD*]{color=#935D00 background-color=#FFE3A3} |
@@ -626,6 +637,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
@@ -667,6 +679,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
@@ -705,6 +718,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |
@@ -745,6 +759,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @left
 
+{table-style=working}
 | Class | Tetrads |
 | --- | --- |
 | [*PD*]{color=#935D00 background-color=#FFE3A3} | 704 |

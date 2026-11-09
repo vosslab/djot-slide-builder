@@ -197,6 +197,7 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @bottom
 
+{table-style=punnett}
 |  | A&#x2083; | A&#x2084; |
 | A&#x2081; |  |  |
 | A&#x2082; |  |  |
@@ -211,6 +212,7 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @bottom
 
+{table-style=punnett}
 |  | A&#x2083; | A&#x2084; |
 | A&#x2081; | A&#x2081;A&#x2083; | A&#x2081;A&#x2084; |
 | A&#x2082; | A&#x2082;A&#x2083; | A&#x2082;A&#x2084; |
@@ -229,6 +231,7 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @right
 
+{table-style=punnett}
 |  | A&#x2083; | A&#x2084; |
 | A&#x2081; | A&#x2081;A&#x2083; | A&#x2081;A&#x2084; |
 | A&#x2082; | A&#x2082;A&#x2083; | A&#x2082;A&#x2084; |

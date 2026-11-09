@@ -357,6 +357,7 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 
 @bottom-right
 
+{table-style=punnett}
 | gametes | &#8531; A | &#8532; a |
 | ½ A | 1/6 AA | 2/6 Aa |
 | ½ a | 1/6 Aa | 2/6 aa |

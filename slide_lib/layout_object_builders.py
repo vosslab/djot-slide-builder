@@ -2,7 +2,6 @@
 
 import dataclasses
 import math
-import re
 
 import slide_lib.layout_table_measurement
 import slide_lib.editable_text
@@ -14,6 +13,7 @@ import slide_lib.layout_model
 import slide_lib.layout_primitives
 import slide_lib.native_model
 import slide_lib.presentation_theme
+import slide_lib.table_formatting
 
 
 FOREGROUND = "172033"
@@ -219,7 +219,7 @@ def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], 
 			result.append(dataclasses.replace(inline, style=dataclasses.replace(style, size_pt=url_size)))
 			continue
 		run_size = slide_lib.presentation_theme.inline_size_pt(size, style.literal_url)
-		for token in re.findall(r"\s+|\S+", inline.text):
+		for token in slide_lib.layout_measurement._split_wrap_tokens(inline.text):
 			fragments = slide_lib.layout_measurement.fragment_text(token, style.font_family,
 				style.bold, style.italic, run_size, width, theme, session)
 			for index, fragment in enumerate(fragments):
@@ -241,67 +241,51 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 		session: slide_lib.layout_measurement.MeasurementSession | None = None,
 		) -> slide_lib.layout_model.LayoutObject:
 	"""Project a rectangular semantic table with resolved 28-to-24 point fitting."""
-	rows = ((table.headers, True),) if table.headers else ()
-	rows += tuple((row, False) for row in table.rows)
+	active = session or slide_lib.layout_measurement.MeasurementSession(theme)
 	size = selected_size if selected_size is not None else \
 		slide_lib.layout_table_measurement.select_table_size(table, rectangle,
 			theme.ordinary_body_size_pt, theme.body_floor_size_pt,
-			theme, layout, slot, session)
+			theme, layout, slot, active)
 	typography = slide_lib.layout_primitives.Typography(
 		slide_lib.layout_primitives.StyleRole.TABLE_BODY,
 		slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, size, size,
 		min(theme.body_floor_size_pt, size))
 	measurements = slide_lib.layout_table_measurement.table_measurements(
-		table, size, rectangle.width, theme, session)
+		table, size, rectangle.width, theme, active)
+	resolved = active.resolved_table(table)
 	def row_content(cells: tuple[slide_lib.native_model.TableCell, ...],
-			header: bool) -> slide_lib.layout_content.TableRow:
+			formatting: tuple[slide_lib.table_formatting.CellFormatting, ...]
+			) -> slide_lib.layout_content.TableRow:
 		"""Project one semantic table row."""
 		projected = []
-		labels = ["".join(run.text for run in resolved_runs(cell.inlines, FOREGROUND,
-			theme.accent_color, False) if isinstance(run, slide_lib.layout_content.TextRun))
-			for cell in cells]
-		total = not header and labels[0].strip().casefold() in ("total", "totals", "grand total")
-		for index, (column, cell) in enumerate(slide_lib.native_model.table_cell_positions(cells)):
+		for (column, cell), appearance in zip(
+				slide_lib.native_model.table_cell_positions(cells), formatting):
 			width = slide_lib.layout_table_measurement.table_cell_text_width(
-				sum(measurements.column_widths[column:column + cell.column_span]), theme)
+				sum(measurements.column_widths[column:column + cell.column_span]), appearance, theme)
 			properties = slide_lib.layout_measurement.paragraph_properties(
-				cell.inlines, size, width, theme, terminal=True, bold=header or total, session=session)
-			if header:
-				properties = dataclasses.replace(properties,
-					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER)
-			if not header and re.fullmatch(r"[-+\u2013\u2212]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?", labels[index].strip()):
-				properties = dataclasses.replace(properties,
-					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.END)
-			if cell.text_alignment is not None:
-				alignment = {"left": slide_lib.layout_primitives.HorizontalAlignment.START,
-					"center": slide_lib.layout_primitives.HorizontalAlignment.CENTER,
-					"right": slide_lib.layout_primitives.HorizontalAlignment.END}[cell.text_alignment]
-				properties = dataclasses.replace(properties, horizontal_alignment=alignment)
+				cell.inlines, size, width, theme, terminal=True, bold=appearance.bold, session=active)
+			alignment = {"left": slide_lib.layout_primitives.HorizontalAlignment.START,
+				"center": slide_lib.layout_primitives.HorizontalAlignment.CENTER,
+				"right": slide_lib.layout_primitives.HorizontalAlignment.END}[appearance.text_alignment]
+			properties = dataclasses.replace(properties, horizontal_alignment=alignment)
 			paragraph = slide_lib.layout_content.TextParagraph(_fragment_runs(
-				resolved_runs(cell.inlines, "000000" if header else FOREGROUND,
-					theme.accent_color, header or total), size, width, theme, session),
-				typography, properties)
+				resolved_runs(cell.inlines, appearance.text_color,
+					theme.accent_color, appearance.bold), size, width, theme, active),
+				typography, properties, measured_height=slide_lib.layout_measurement.paragraph_height(
+					cell.inlines, size, width, theme, bold=appearance.bold, session=active))
 			projected.append(slide_lib.layout_content.TableCell((paragraph,),
-				slide_lib.layout_primitives.Insets(
-					slide_lib.layout_table_measurement.TABLE_HORIZONTAL_PADDING,
-					slide_lib.layout_table_measurement.TABLE_VERTICAL_PADDING,
-					slide_lib.layout_table_measurement.TABLE_HORIZONTAL_PADDING,
-					slide_lib.layout_table_measurement.TABLE_VERTICAL_PADDING),
-				slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
-				fill_role=slide_lib.layout_primitives.StyleRole.ACCENT_TINT if total else None,
-				fill_color=cell.background_color[1:] if cell.background_color else None,
+				slide_lib.layout_table_measurement.formatting_padding(appearance, theme),
+				slide_lib.layout_primitives.VerticalAlignment(appearance.vertical_alignment),
+				appearance.background_color, tuple(getattr(appearance, f"border_{side}")
+					for side in ("top", "right", "bottom", "left")),
 				column_span=cell.column_span))
 		return slide_lib.layout_content.TableRow(tuple(projected))
-	headers = (row_content(table.headers, True),) if table.headers else ()
-	body = tuple(row_content(row, False) for row in table.rows)
+	header_count = int(bool(table.headers))
+	headers = (row_content(table.headers, resolved.cells[0]),) if table.headers else ()
+	body = tuple(row_content(row, formatting) for row, formatting in
+		zip(table.rows, resolved.cells[header_count:]))
 	content = slide_lib.layout_content.TableContent(headers, body,
-		measurements.column_widths, measurements.row_heights,
-		slide_lib.layout_content.TableStyle(
-			slide_lib.layout_primitives.StyleRole.TABLE_HEADER,
-			slide_lib.layout_primitives.StyleRole.TABLE_BODY,
-			slide_lib.layout_primitives.StyleRole.ACCENT,
-			slide_lib.layout_table_measurement.TABLE_BORDER_WIDTH_PT,
-			slide_lib.layout_primitives.LinePattern.SOLID))
+		measurements.column_widths, measurements.row_heights)
 	return slide_lib.layout_model.LayoutObject(object_id,
 		slide_lib.layout_primitives.PresentationRole.OUTLINE,
 		slide_lib.layout_primitives.StyleRole.BODY, rectangle,

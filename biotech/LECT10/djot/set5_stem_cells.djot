@@ -149,6 +149,7 @@ Topic 25: From the Inner Cell Mass to an Embryonic Stem-Cell Culture
 
 @right
 
+{table-style=comparison}
 | Assay | What It Can Reveal |
 | --- | --- |
 | Karyotype | Large chromosome changes |
@@ -191,6 +192,7 @@ The result applies to a bank and passage range, not all future cultures.
 
 @right
 
+{table-style=comparison}
 | Culture Can Select | Therapy Still Requires |
 | --- | --- |
 | Faster growth | Intended cell function |
@@ -231,6 +233,7 @@ The iPSC is an expandable starting material. The clinical product is the selecte
 
 @right
 
+{table-style=comparison}
 | Question | Evidence Needed |
 | --- | --- |
 | Identity | Intended cell markers |
@@ -273,6 +276,7 @@ The iPSC is an expandable starting material. The clinical product is the selecte
 
 @right
 
+{table-style=comparison}
 | Observation | Still Needs Testing |
 | --- | --- |
 | Cells remain at the site | Do they function? |
@@ -326,6 +330,7 @@ Mandai et al., 2017: https://doi.org/10.1056/NEJMoa1608368
 
 @right
 
+{table-style=comparison}
 | Cell Product | Example Functional Test |
 | --- | --- |
 | NK cell | Target-cell killing |

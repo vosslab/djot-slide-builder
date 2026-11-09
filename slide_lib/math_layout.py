@@ -138,13 +138,9 @@ def finalize_object(item: object, session: object) -> object:
 		content = dataclasses.replace(content, text=position_text(content.text,
 			item.rectangle.width, item.rectangle.height, item.frame_text, session))
 	elif isinstance(content, slide_lib.layout_content.TableContent):
-		if any(isinstance(run, slide_lib.layout_content.MathRun)
-				for row in content.header_rows + content.body_rows for cell in row.cells
-				for paragraph in cell.paragraphs for run in paragraph.inlines):
-			# Impress stretches rows to the frame height. Give it exactly the
-			# measured row sum so table backgrounds and equation baselines agree.
-			item = dataclasses.replace(item, rectangle=dataclasses.replace(
-				item.rectangle, height=sum(content.row_heights)))
+		# Impress stretches rows to the frame height; retain the measured content geometry.
+		item = dataclasses.replace(item, rectangle=dataclasses.replace(
+			item.rectangle, height=sum(content.row_heights)))
 		content = position_table(content, session)
 	return dataclasses.replace(item, content=content)
 
@@ -153,16 +149,24 @@ def finalize_object(item: object, session: object) -> object:
 def position_table(content: slide_lib.layout_content.TableContent,
 		session: object) -> slide_lib.layout_content.TableContent:
 	"""Place equation-only cell content over the native table's unchanged backgrounds."""
+	# Measurement imports math layout, so share insets at the call boundary.
+	import slide_lib.layout_table_measurement
 	placed = []
 	rows = []
 	y = 0.0
+	occupied = set()
 	for row_index, row in enumerate(content.header_rows + content.body_rows):
 		cells = []
-		x = 0.0
-		for column, cell in enumerate(row.cells):
+		column = 0
+		for cell in row.cells:
+			while (row_index, column) in occupied:
+				column += 1
+			x = sum(content.column_widths[:column])
 			width = sum(content.column_widths[column:column + cell.column_span])
 			height = sum(content.row_heights[row_index:row_index + cell.row_span])
-			frame = slide_lib.layout_primitives.FrameTextProperties(cell.padding,
+			insets = slide_lib.layout_table_measurement.cell_content_insets(
+				cell.padding, cell.borders, session.theme)
+			frame = slide_lib.layout_primitives.FrameTextProperties(insets,
 				cell.vertical_alignment, slide_lib.layout_primitives.TextWrap.WRAP,
 				slide_lib.layout_primitives.OverflowPolicy.CLIP)
 			text = position_text(slide_lib.layout_content.TextContent(cell.paragraphs),
@@ -173,7 +177,10 @@ def position_table(content: slide_lib.layout_content.TableContent,
 					for run in text.positioned_runs)
 				cell = dataclasses.replace(cell, paragraphs=())
 			cells.append(cell)
-			x += width
+			occupied.update((grid_row, grid_column)
+				for grid_row in range(row_index, row_index + cell.row_span)
+				for grid_column in range(column, column + cell.column_span))
+			column += cell.column_span
 		rows.append(dataclasses.replace(row, cells=tuple(cells)))
 		y += content.row_heights[row_index]
 	header_count = len(content.header_rows)

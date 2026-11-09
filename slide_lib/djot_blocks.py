@@ -12,6 +12,7 @@ import slide_lib.djot_errors
 import slide_lib.djot_grammar
 import slide_lib.djot_inline
 import slide_lib.native_model
+import slide_lib.table_styles
 
 
 _ATTRIBUTE_LINE = re.compile(r"^\{(?P<body>[^{}]*)\}$")
@@ -143,6 +144,25 @@ def add_attributes(block: slide_lib.native_model.Block,
 		attributes: tuple[slide_lib.native_model.Attribute, ...]) -> slide_lib.native_model.Block:
 	"""Attach pending metadata to the next parsed block."""
 	combined = block.attributes + attributes
+	format_attributes = tuple(item for item in combined
+		if item.name in slide_lib.table_styles.AUTHOR_PROPERTIES or item.name == "table-style")
+	if format_attributes:
+		if not isinstance(block, slide_lib.native_model.Table):
+			fail(block.location.path, block.location.line, "table formatting attributes require a table")
+		values = {}
+		for item in format_attributes:
+			if item.name in values:
+				fail(block.location.path, block.location.line, f"{item.name} requires a unique table attribute")
+			values[item.name] = item.value
+		style_name = values.pop("table-style", block.style_name)
+		if style_name is None or re.fullmatch(r"[a-z][a-z0-9-]*", style_name) is None:
+			fail(block.location.path, block.location.line, "table-style requires a lowercase style identifier")
+		formatting = slide_lib.table_styles.parse_overrides(values, block.location)
+		formatting = dataclasses.replace(block.formatting, **{
+			field.name: getattr(formatting, field.name) for field in dataclasses.fields(formatting)
+			if getattr(formatting, field.name) is not None})
+		block = dataclasses.replace(block, style_name=style_name, formatting=formatting)
+		combined = tuple(item for item in combined if item not in format_attributes)
 	width_attributes = tuple(item for item in combined if item.name == "column-widths")
 	if width_attributes:
 		# ASVS 2.2.1: validate table shape, numeric syntax, and positive finite proportions.
@@ -452,37 +472,38 @@ def parse_list(path: pathlib.Path, lines: list[str], index: int, base_line: int,
 #============================================
 def parse_table_cell(path: pathlib.Path, line: int, source: str) -> slide_lib.native_model.TableCell:
 	"""Read whole-cell attributes separately from inline text styles."""
-	if re.search(r"\{[^{}]*\b(?:background-color|colspan|text-align)(?:=|\s|\})", source) is None:
+	cell_properties = slide_lib.table_styles.AUTHOR_PROPERTIES | {"colspan"}
+	property_pattern = "|".join(sorted(cell_properties, key=len, reverse=True))
+	if re.search(r"\{[^{}]*\b(?:" + property_pattern + r")(?:=|\s|\})", source) is None:
 		return slide_lib.native_model.TableCell(
 			slide_lib.djot_inline.parse_inlines(path, line, source))
 	end = slide_lib.djot_inline.find_closing_bracket(source, 0, len(source)) \
 		if source.startswith("[") else None
 	match = _ATTRIBUTE_LINE.fullmatch(source[end + 1:]) if end is not None else None
 	if match is None:
-		fail(path, line, "background-color, colspan, and text-align require one whole-cell [content]{attributes} wrapper")
+		fail(path, line, "background-color, colspan, text-align, border, padding, and vertical-align "
+			"require one whole-cell [content]{attributes} wrapper")
 	attributes = parse_attribute_tokens(path, line, match.group("body"))
-	backgrounds = tuple(item for item in attributes if item.name == "background-color")
-	spans = tuple(item for item in attributes if item.name == "colspan")
-	aligns = tuple(item for item in attributes if item.name == "text-align")
-	if len(backgrounds) > 1 or len(spans) > 1 or len(aligns) > 1 or not (backgrounds or spans or aligns):
-		fail(path, line, "background-color, colspan, and text-align require unique whole-cell attributes")
-	color = backgrounds[0].value if backgrounds else None
-	if backgrounds and (color is None or re.fullmatch(r"#[0-9A-Fa-f]{6}", color) is None):
-		fail(path, line, "background-color requires a six-digit hex color (#RRGGBB)")
-	span = spans[0].value if spans else "1"
+	values = {}
+	for item in attributes:
+		if item.name in cell_properties:
+			if item.name in values:
+				fail(path, line, f"{item.name} requires a unique whole-cell attribute")
+			values[item.name] = item.value
+	if not values:
+		fail(path, line, "background-color, colspan, text-align, border, padding, and vertical-align "
+			"require one whole-cell [content]{attributes} wrapper")
+	span = values.pop("colspan", "1")
 	if span is None or re.fullmatch(r"[1-9][0-9]*", span) is None:
 		fail(path, line, "colspan requires a positive integer")
-	alignment = aligns[0].value if aligns else None
-	if aligns and alignment not in {"left", "center", "right"}:
-		fail(path, line, "text-align requires left, center, or right")
+	formatting = slide_lib.table_styles.parse_overrides(values, location(path, line))
 	content = source[1:end]
-	remaining = tuple(item for item in attributes if item.name not in {"background-color", "colspan", "text-align"})
+	remaining = tuple(item for item in attributes if item.name not in cell_properties)
 	if remaining:
 		content = "[" + content + "]{" + " ".join(
 			f"{item.name}={item.value}" for item in remaining) + "}"
 	return slide_lib.native_model.TableCell(
-		slide_lib.djot_inline.parse_inlines(path, line, content), color.upper() if color else None,
-		int(span), alignment)
+		slide_lib.djot_inline.parse_inlines(path, line, content), formatting, int(span))
 
 
 #============================================

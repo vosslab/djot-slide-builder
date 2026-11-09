@@ -87,6 +87,7 @@ The next slides introduce the terms used for those patterns.
 
 @right
 
+{table-style=punnett}
 | Egg / sperm | C&#x1D3F; | C&#x1D42; |
 | --- | --- | --- |
 | C&#x1D3F; | C&#x1D3F;C&#x1D3F;: red | C&#x1D3F;C&#x1D42;: pink |
@@ -191,6 +192,7 @@ The next slides introduce the terms used for those patterns.
 
 @right
 
+{table-style=comparison}
 | Blood group | Genotypes |
 | --- | --- |
 | A | I&#x1D2C;I&#x1D2C; or I&#x1D2C;i |
@@ -244,6 +246,7 @@ The next slides introduce the terms used for those patterns.
 
 @body
 
+{table-style=punnett}
 | Egg / sperm | I&#x1D2C; | I&#x1D2E; |
 | --- | --- | --- |
 | I&#x1D2C; | I&#x1D2C;I&#x1D2C;: type A | I&#x1D2C;I&#x1D2E;: type AB |
@@ -421,6 +424,7 @@ The next slides introduce the terms used for those patterns.
 
 @right
 
+{table-style=comparison}
 | Donor -> recipient | Accepted |
 | --- | --- |
 | P&#x2081; <-> P&#x2082; | 0% |
@@ -604,6 +608,7 @@ The next slides introduce the terms used for those patterns.
 
 @left
 
+{table-style=comparison}
 | Genotype | Blood group |
 | --- | --- |
 | I&#x1D2C;I&#x1D2C; | A |

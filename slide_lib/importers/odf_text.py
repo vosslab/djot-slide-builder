@@ -34,6 +34,8 @@ class TextStyle:
 	underline: bool = False
 	italic: bool = False
 	transform: str = "none"
+	script: str = ""
+	preserve_color: bool = False
 
 
 def text_style(element: xml.etree.ElementTree.Element,
@@ -42,7 +44,9 @@ def text_style(element: xml.etree.ElementTree.Element,
 	source_color = odf_styles.attribute(element, definitions, qname("fo", "color"))
 	color = inherited.color
 	if source_color is not None:
-		color = slide_lib.presentation_theme.source_text_color_name(source_color) or ""
+		color = source_color.upper() if inherited.preserve_color and re.fullmatch(
+			r"#[0-9a-fA-F]{6}", source_color) else (
+			slide_lib.presentation_theme.source_text_color_name(source_color) or "")
 		if not color and re.fullmatch(r"#[0-9a-fA-F]{6}", source_color):
 			if slide_lib.presentation_theme.source_text_color_requires_review(source_color):
 				color = source_color.upper()
@@ -52,8 +56,18 @@ def text_style(element: xml.etree.ElementTree.Element,
 	font_style = odf_styles.attribute(element, definitions, qname("fo", "font-style"))
 	italic = inherited.italic if font_style is None else font_style in {"italic", "oblique"}
 	transform = odf_styles.attribute(element, definitions, qname("fo", "text-transform"))
+	position = odf_styles.attribute(element, definitions, qname("style", "text-position"))
+	script = inherited.script
+	if position is not None:
+		offset = position.split()[0] if position.split() else ""
+		if offset in {"super", "sub"}:
+			script = offset
+		elif re.fullmatch(r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)%", offset):
+			script = "super" if float(offset[:-1]) > 0 else "sub" if float(offset[:-1]) < 0 else ""
+		else:
+			raise ValueError("ODF text position is not a supported script offset")
 	return TextStyle(color, bold, underline, italic,
-		inherited.transform if transform is None else transform)
+		inherited.transform if transform is None else transform, script, inherited.preserve_color)
 
 def qname(prefix: str, local_name: str) -> str:
 	"""Build an ODF text attribute name."""
@@ -95,7 +109,7 @@ def append_run(runs: list[source_model.TextRun], text: str, link: str,
 		elif style.transform == "lowercase":
 			text = text.lower()
 		runs.append(source_model.TextRun(text, link, style.color, style.bold,
-			style.underline, style.italic))
+			style.underline, style.italic, style.script))
 
 
 #============================================

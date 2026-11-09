@@ -14,6 +14,7 @@ class TextRun:
 	bold: bool = False
 	underline: bool = False
 	italic: bool = False
+	script: str = ""
 
 
 @dataclasses.dataclass(frozen=True)
@@ -102,6 +103,17 @@ class PositionedOverlay:
 
 
 @dataclasses.dataclass(frozen=True)
+class SourceTableCell:
+	"""One physical source grid position, including covered and blank cells."""
+
+	runs: tuple[TextRun, ...]
+	column_span: int = 1
+	row_span: int = 1
+	covered: bool = False
+	properties: tuple[tuple[str, str], ...] = ()
+
+
+@dataclasses.dataclass(frozen=True)
 class TableBlock:
 	"""One source table with raw inline runs, dimensions, and geometry."""
 
@@ -111,6 +123,9 @@ class TableBlock:
 	top: int
 	source_ordinal: int
 	unsupported_reason: str | None = None
+	cell_rows: tuple[tuple[SourceTableCell, ...], ...] = ()
+	column_widths: tuple[float, ...] = ()
+	properties: tuple[tuple[str, str], ...] = ()
 
 
 @dataclasses.dataclass(frozen=True)

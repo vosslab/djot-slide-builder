@@ -68,6 +68,7 @@ Sets 1 and 6: FDS. Sets 2, 3, 4, and 5: SDS. Reversing an ascus preserves its cl
 
 @left
 
+{table-style=working}
 | Set | n | Division |
 | --- | --- | --- |
 | 1 | 188 | [*FDS*]{color=#076DAD background-color=#DCECF8 text-align=center} |
@@ -142,6 +143,7 @@ Keep the counting unit as asci throughout. We did not count individual spores in
 
 @left
 
+{table-style=working}
 | Quantity | Asci |
 | --- | --- |
 | FDS | 350 |

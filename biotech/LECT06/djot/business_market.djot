@@ -136,6 +136,7 @@ Historical student proposals are used to discuss writing and design; their claim
 
 @body
 
+{table-style=comparison}
 | Option | Performance | Total cost | Practical limit |
 | --- | --- | --- | --- |
 | Current practice | Cite a result | State the unit | Identify the burden |
@@ -209,6 +210,7 @@ Historical student proposals are used to discuss writing and design; their claim
 
 @body
 
+{table-style=working}
 | Illustrative monthly scenario (USD) | Calculation | Result |
 | --- | --- | --- |
 | Revenue | 10 customers x 20 units x 50 | 10,000 |

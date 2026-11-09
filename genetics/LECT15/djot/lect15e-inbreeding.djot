@@ -195,8 +195,7 @@ color-theme: genetics
 
 [The]{color=#40458C} [*inbreeding coefficient of individual*]{color=#40458C} [is the probability that the individual carries alleles that are identical by descent.]{color=#40458C}
 
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: two-panels
 
 # *Inbreeding Coefficient*
 
@@ -208,16 +207,14 @@ color-theme: genetics
     - F = 1 (complete inbreeding)
   - H1 = 2pq (1-F)
 
-@top-right
+@right
 
-![Slide image 7](assets/lect15e-inbreeding/image_007.svg)
-
-@bottom-right
-
-|  | AA | Aa | aa |
-| F (general) | p^2^ (1-F) + pF | 2pq (1-F) | q^2^ (1-F) + qF |
-| F=0 (no inbreeding) | p^2^ | 2pq | q^2^ |
-| F=1 (complete inbreeding) | p | 0 | q |
+{table-style=working padding="2pt 4pt" column-widths="3.2,1.4,1.4,1.4"}
+|  | [AA]{text-align=center} | [Aa]{text-align=center} | [aa]{text-align=center} |
+| --- | --- | --- | --- |
+| [F (general)]{vertical-align=middle} | [p^2^ (1-F) + pF]{text-align=center vertical-align=middle} | [2pq (1-F)]{text-align=center vertical-align=middle} | [q^2^ (1-F) + qF]{text-align=center vertical-align=middle} |
+| [F=0 (no inbreeding)]{vertical-align=middle} | [p^2^]{text-align=center vertical-align=middle} | [2pq]{text-align=center vertical-align=middle} | [q^2^]{text-align=center vertical-align=middle} |
+| [F=1 (complete inbreeding)]{vertical-align=middle} | [p]{text-align=center vertical-align=middle} | [0]{text-align=center vertical-align=middle} | [q]{text-align=center vertical-align=middle} |
 
 === layout: one-panel
 
@@ -226,43 +223,33 @@ color-theme: genetics
 
 ![Slide image 8](assets/lect15e-inbreeding/image_008.png)
 
-=== layout: one-plus-two-panels
+=== layout: one-panel
 @replaceme
 
+@body
 
-@left
-
-![Slide image 9](assets/lect15e-inbreeding/image_009.svg)
-
-@top-right
-
-|  | A1A1 | A1A2 | A2A2 |
-| F (general formulas) | p^2^ (1-F) + pF | 2pq (1-F) | q^2^ (1-F) + qF |
-| Calculation | 0.432 (1-0.66) + 0.43&#215;0.66 | 2&#215;0.43&#215;0.57 (1-0.66) | 0.572 (1-0.66) + 0.57&#215;0.66 |
-| Expected frequency with F=0.66 | [*0.346*]{color=#990099} | [*0.167*]{color=#990099} | [*0.487*]{color=#990099} |
-| Normal H-W | [*0.432*]{color=#990099} [*= 0.185*]{color=#990099} | [*2(0.43)0.57*]{color=#990099} [*= 0.490*]{color=#990099} | [*0.572*]{color=#990099} [*= 0.324*]{color=#990099} |
-
-@bottom-right
+{table-style=working padding="2pt 4pt" column-widths="3,2,3,2"}
+|  | [A~1~A~1~]{text-align=center} | [A~1~A~2~]{text-align=center} | [A~2~A~2~]{text-align=center} |
+| --- | --- | --- | --- |
+| F (general formulas) | [p^2^ (1-F) + pF]{text-align=center} | [2pq (1-F)]{text-align=center} | [q^2^ (1-F) + qF]{text-align=center} |
+| Calculation | [0.43^2^ (1-0.66) + 0.43&#215;0.66]{text-align=center} | [2&#215;0.43&#215;0.57 (1-0.66)]{text-align=center} | [0.57^2^ (1-0.66) + 0.57&#215;0.66]{text-align=center} |
+| Expected frequency with F=0.66 | [[*0.346*]{color=#990099}]{text-align=center} | [[*0.167*]{color=#990099}]{text-align=center} | [[*0.487*]{color=#990099}]{text-align=center} |
+| Normal H-W | [[*0.43*]{color=#990099}[*^2^*]{color=#990099} [*= 0.185*]{color=#990099}]{text-align=center} | [[*2(0.43)0.57*]{color=#990099} [*= 0.490*]{color=#990099}]{text-align=center} | [[*0.57*]{color=#990099}[*^2^*]{color=#990099} [*= 0.324*]{color=#990099}]{text-align=center} |
 
 ![Slide image 9](assets/lect15e-inbreeding/image_008.png)
 
-=== layout: one-plus-two-panels
+=== layout: one-panel
 @replaceme
 
+@body
 
-@left
-
-![Slide image 9](assets/lect15e-inbreeding/image_009.svg)
-
-@top-right
-
-|  | A1A1 | A1A2 | A2A2 |
-| F (general formulas) | p^2^ (1-F) + pF | 2pq (1-F) | q^2^ (1-F) + qF |
-| Calculation | 0.432 (1-0.66) + 0.43&#215;0.66 | 2&#215;0.43&#215;0.57 (1-0.66) | 0.572 (1-0.66) + 0.57&#215;0.66 |
-| Expected frequency with F=0.66 | [*0.346*]{color=#990099} | [*0.167*]{color=#990099} | [*0.487*]{color=#990099} |
-| Normal H-W | [*0.432*]{color=#990099} [*= 0.185*]{color=#990099} | [*2(0.43)0.57*]{color=#990099} [*= 0.490*]{color=#990099} | [*0.572*]{color=#990099} [*= 0.324*]{color=#990099} |
-
-@bottom-right
+{table-style=working padding="2pt 4pt" column-widths="3,2,3,2"}
+|  | [A~1~A~1~]{text-align=center} | [A~1~A~2~]{text-align=center} | [A~2~A~2~]{text-align=center} |
+| --- | --- | --- | --- |
+| F (general formulas) | [p^2^ (1-F) + pF]{text-align=center} | [2pq (1-F)]{text-align=center} | [q^2^ (1-F) + qF]{text-align=center} |
+| Calculation | [0.43^2^ (1-0.66) + 0.43&#215;0.66]{text-align=center} | [2&#215;0.43&#215;0.57 (1-0.66)]{text-align=center} | [0.57^2^ (1-0.66) + 0.57&#215;0.66]{text-align=center} |
+| Expected frequency with F=0.66 | [[*0.346*]{color=#990099}]{text-align=center} | [[*0.167*]{color=#990099}]{text-align=center background-color=#FFCCCC border="0.75pt solid #333333"} | [[*0.487*]{color=#990099}]{text-align=center} |
+| Normal H-W | [[*0.43*]{color=#990099}[*^2^*]{color=#990099} [*= 0.185*]{color=#990099}]{text-align=center} | [[*2(0.43)0.57*]{color=#990099} [*= 0.490*]{color=#990099}]{text-align=center} | [[*0.57*]{color=#990099}[*^2^*]{color=#990099} [*= 0.324*]{color=#990099}]{text-align=center} |
 
 ![Slide image 9](assets/lect15e-inbreeding/image_008.png)
 

@@ -394,12 +394,12 @@ d = 18.0 map units
 - [9. BCAD]{color=red}
 - [10. BCDA]{color=red}
 
-=== layout: four-panels
+=== layout: two-panels
 @replaceme
 
 # *Your Turn*
 
-@top-left
+@left
 
 - A and B\: 25%
 - A and C\: 15%
@@ -407,19 +407,15 @@ d = 18.0 map units
 - B and C\: 10%
 - C and D\: 20%
 
-@top-right
-
 - Tip\: make a grid line, to help with the distances...
 
-@bottom-left
+@right
 
-![Slide image 4](assets/lect08d-3_point_testcross_voss/image_004.svg)
-
-@bottom-right
-
+{table-style=matrix-upper table-group=voss-distance-matrix}
 |  | *A* | *B* | *C* | *D* |
+| --- | --- | --- | --- | --- |
 | *A* | &#8212; | 25% | 15% | 5% |
-| *B* |  | &#8212; | 10% | [??]{color=red} |
+| *B* |  | &#8212; | 10% | [??]{color=#C9211E} |
 | *C* |  |  | &#8212; | 20% |
 
 === layout: one-panel

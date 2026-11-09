@@ -94,6 +94,7 @@ Topic 9: Iterative Aptamer Selection
 
 @body
 
+{table-style=comparison}
 | Feature | Aptamer | Antibody |
 | --- | --- | --- |
 | Core chemistry | Nucleic acid | Protein |
@@ -265,6 +266,7 @@ Follow RNA and protein over time, then ask whether the duration matters for the 
 
 @body
 
+{table-style=comparison}
 | Payload | Main design goal | Central limitation |
 | --- | --- | --- |
 | mRNA | Direct, transient protein production | Short persistence |

@@ -4,8 +4,9 @@
 import enum
 import math
 import pathlib
-import re
 from dataclasses import dataclass
+
+import slide_lib.table_formatting
 
 @dataclass(frozen=True)
 class SourceLocation:
@@ -234,20 +235,14 @@ class CodeBlock:
 
 @dataclass(frozen=True)
 class TableCell:
-	"""Editable cell text with whole-cell fill, horizontal span, and alignment."""
+	"""Editable cell text with whole-cell overrides and horizontal span."""
 	inlines: tuple[Inline, ...]
-	background_color: str | None = None
+	formatting: slide_lib.table_formatting.CellOverrides = slide_lib.table_formatting.CellOverrides()
 	column_span: int = 1
-	text_alignment: str | None = None
 
 	def __post_init__(self) -> None:
-		if self.text_alignment not in (None, "left", "center", "right"):
-			raise ValueError("table cell text-align requires left, center, or right")
 		if type(self.column_span) is not int or self.column_span < 1:
 			raise ValueError("table cell colspan requires a positive integer")
-		if self.background_color is not None and re.fullmatch(
-				r"#[0-9A-Fa-f]{6}", self.background_color) is None:
-			raise ValueError("table cell background-color requires a six-digit hex color")
 
 
 def table_cell_positions(row: tuple[TableCell, ...]) -> tuple[tuple[int, TableCell], ...]:
@@ -269,6 +264,8 @@ class Table:
 	attributes: tuple[Attribute, ...] = ()
 	column_weights: tuple[float, ...] = ()
 	table_group: str | None = None
+	style_name: str = "standard"
+	formatting: slide_lib.table_formatting.CellOverrides = slide_lib.table_formatting.CellOverrides()
 
 	def __post_init__(self) -> None:
 		"""Keep explicit column proportions positive and aligned with the table schema."""

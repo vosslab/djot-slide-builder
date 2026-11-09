@@ -1,0 +1,210 @@
+color-theme: genetics
+
+=== layout: one-panel
+
+# Ordinary Tables: Ready to Teach
+
+@body
+
+## No attributes: themed headings and aligned counts
+
+| Offspring phenotype | Observed | Expected |
+| --- | --- | --- |
+| Purple flowers | 787 | 750 |
+| White flowers | 213 | 250 |
+| Total | 1,000 | 1,000 |
+
+=== layout: one-panel
+
+# Standard: Keep the Science Visible
+
+@body
+
+## Standard style: native notation and equation cells
+
+{table-style=standard}
+| Quantity | Symbol or expression | Meaning |
+| --- | --- | --- |
+| Null hypothesis | H~0~ | The observed counts fit the model |
+| Squared deviation | x^2^ | Large deviations contribute more |
+| Chi-square statistic | $\chi^2=\sum\frac{(O-E)^2}{E}$ | Compare observed and expected counts |
+
+=== layout: one-panel
+
+# Comparison: Distinguish Two Models
+
+@body
+
+## Comparison style: open rows for parallel explanations
+
+{table-style=comparison}
+| Feature | Complete dominance | Incomplete dominance |
+| --- | --- | --- |
+| Heterozygote | Resembles one homozygote | Has an intermediate phenotype |
+| F~2~ genotype ratio | 1:2:1 | 1:2:1 |
+| F~2~ phenotype ratio | 3:1 | 1:2:1 |
+
+=== layout: one-panel
+
+# Working: Preserve the Calculation
+
+@body
+
+## Working style: a ruled workspace and a merged total
+
+{table-style=working column-widths="2,1.6,1.6,2.4"}
+| Offspring | Observed | Expected | Contribution |
+| --- | --- | --- | --- |
+| Purple | 787 | 750 | 1.825 |
+| White | 213 | 250 | 5.476 |
+| [Total]{colspan=3} | 7.301 |
+
+=== layout: one-panel
+
+# Testcross: Classify the Offspring
+
+@body
+
+## Testcross style: stable genotype columns and meaningful fills
+
+{table-style=testcross column-widths="1,1,2,2"}
+| Gene C | Gene D | Count | Class |
+| --- | --- | --- | --- |
+| _C_ | _D_ | 412 | Parental |
+| _c_ | _d_ | 398 | Parental |
+| [_C_]{background-color=#F6E8FB} | [_d_]{background-color=#F6E8FB} | [96]{background-color=#F6E8FB} | [Recombinant]{background-color=#F6E8FB} |
+| [_c_]{background-color=#F6E8FB} | [_D_]{background-color=#F6E8FB} | [94]{background-color=#F6E8FB} | [Recombinant]{background-color=#F6E8FB} |
+| [Total]{colspan=2} | 1,000 | |
+
+=== layout: one-panel
+
+# Punnett: Follow Both Gamete Axes
+
+@body
+
+## Punnett style: row headings and centered outcomes
+
+{table-style=punnett}
+| Gametes | _A_ | _a_ |
+| --- | --- | --- |
+| _A_ | _AA_ | _Aa_ |
+| _a_ | _Aa_ | [_aa_]{background-color=#FFF2CC} |
+
+=== layout: one-panel
+
+# Lower Matrix: Read Each Pair Once
+
+@body
+
+## Matrix-lower style: full axes, distances in cM
+
+{table-style=matrix-lower}
+| Gene | _A_ | _B_ | _C_ | _D_ |
+| --- | --- | --- | --- | --- |
+| _A_ | 0 | | | |
+| _B_ | 8 | 0 | | |
+| _C_ | 17 | 9 | 0 | |
+| _D_ | 23 | 15 | 6 | 0 |
+
+=== layout: one-panel
+
+# Upper Matrix: Crop Unused Axes
+
+@body
+
+## Matrix-upper style: cropped axes, distances in cM
+
+{table-style=matrix-upper}
+| Gene | _B_ | _C_ | _D_ |
+| --- | --- | --- | --- |
+| _A_ | 8 | 17 | 23 |
+| _B_ | 0 | 9 | 15 |
+| _C_ | | 0 | 6 |
+
+=== layout: one-panel
+
+# Local Borders: Direct Attention
+
+@body
+
+## Cell overrides: solid, dashed, dotted, and no rule
+
+{table-style=working border=none}
+| Evidence | Interpretation |
+| --- | --- |
+| [Observed difference]{border-bottom="2pt solid accent"} | [Keep the measured result visible]{border-bottom="2pt solid accent"} |
+| [Provisional model]{border-bottom="1pt dashed #24578F"} | [A hypothesis to test]{border-bottom="1pt dashed #24578F"} |
+| [Next observation]{border-bottom="1pt dotted #24578F"} | [Collect more evidence]{border-bottom="1pt dotted #24578F"} |
+| [No separating rule]{border=none} | [An open final row]{border=none background-color=#FFF2CC} |
+
+=== layout: one-panel
+
+# Cell Spacing: Align the Explanation
+
+@body
+
+## Local padding and vertical alignment inside one shared row
+
+{table-style=working column-widths="1,1,1"}
+| Top | Middle | Bottom |
+| --- | --- | --- |
+| [Start here]{vertical-align=top padding="8pt 14pt 20pt 5pt" border-left="2pt solid accent" border-top="1pt solid accent"} | [Read the full explanation before deciding whether the evidence supports the model.]{vertical-align=middle padding="8pt 12pt"} | [Then decide]{vertical-align=bottom padding-bottom=8pt padding-right=16pt border-right="2pt solid accent"} |
+
+=== layout: one-panel
+
+# Long Prose: Give Explanations Room
+
+@body
+
+## Explicit column proportions: narrow labels, generous explanations
+
+{table-style=comparison column-widths="1,3"}
+| Step | What you should check |
+| --- | --- |
+| Define H~0~ | State the expected relationship before inspecting the outcome. Use that model to predict the count in each category. |
+| Compare | Match observed and expected categories. Keep units, labels, and the total sample size visible. |
+| Interpret | Explain what the evidence says about the model. Connect the statistical result to a biological explanation. |
+
+=== layout: one-panel
+
+# Shared Workspace: Predict the Counts
+
+@body
+
+## Question: how many offspring do you expect in each class?
+
+{table-style=working table-group=dominance-example}
+| Offspring phenotype | Observed | Expected under H~0~ |
+| --- | --- | --- |
+| Purple flowers | 787 | ? |
+| White flowers | 213 | ? |
+| Total | 1,000 | 1,000 |
+
+=== layout: one-panel
+
+# Shared Workspace: Reveal the Model
+
+@body
+
+## Answer: a 3:1 model predicts 750 purple and 250 white
+
+{table-style=working table-group=dominance-example}
+| Offspring phenotype | Observed | Expected under H~0~ |
+| --- | --- | --- |
+| Purple flowers | 787 | [750]{background-color=#FFF2CC} |
+| White flowers | 213 | [250]{background-color=#FFF2CC} |
+| Total | 1,000 | 1,000 |
+
+=== layout: one-panel
+
+# Merged Headings: Set Cell Alignment
+
+@body
+
+## Merged header and explicit left, center, and right alignment
+
+{table-style=standard column-widths="2,1.5,2"}
+| [Observed Counts]{colspan=2 text-align=left} | [Classification]{text-align=right} |
+| --- | --- | --- |
+| Purple flowers | [787]{text-align=center} | [Purple]{text-align=right} |
+| White flowers | [213]{text-align=center} | [White]{text-align=right} |

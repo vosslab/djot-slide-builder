@@ -20,9 +20,10 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
   80%, preserving hue and saturation. Explicit native cell drawing fills prevent
   inherited template opacity from altering the palette.
 
-- Native tables use 12 logical units of horizontal padding and 4 vertically. Header
-  paragraphs default to centered; all cells use middle vertical alignment. Explicit
-  text-align remains authoritative. Shared measurement includes the full cell padding.
+- Native table padding comes from the selected named style and can be overridden per cell.
+  The `standard` style uses 4 pt vertical and 9 pt horizontal padding; header paragraphs default
+  to centered and cells use middle vertical alignment. Explicit alignment remains authoritative.
+  Shared measurement includes actual padding, borders, bold text, spans, and equation placement.
 
 ### Advisory typography audit
 

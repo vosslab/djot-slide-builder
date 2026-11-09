@@ -246,11 +246,13 @@ def read_frame(
 	if odp_geometry.visible_geometry(geometry, page_width, page_height, source_index):
 		accumulator.review_reasons.append("source object crosses physical page bounds")
 	role = frame.get(odp_geometry.qname("presentation", "class"))
-	contains_text = text_box is not None and add_text(
-		text_box, geometry, source_ordinal, role, frame, accumulator, z_order, definitions)
 	contains_table = table is not None and add_table(
 		table, geometry, source_ordinal, role, frame, accumulator, z_order, definitions)
-	contains_image = image is not None and add_picture(
+	usable_table = contains_table and accumulator.tables[-1].unsupported_reason is None
+	contains_text = not usable_table and text_box is not None and add_text(
+		text_box, geometry, source_ordinal, role, frame, accumulator, z_order, definitions)
+	# A same-frame image is the native table's preview; other frames remain independent.
+	contains_image = not usable_table and image is not None and add_picture(
 		image, geometry, source_ordinal, archive, member_names, manifest_targets, assets_dir,
 		djot_root, known_images, accumulator, media_budget, z_order)
 	if contains_text or contains_table or contains_image:

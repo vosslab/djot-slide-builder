@@ -341,26 +341,22 @@ hidden: true
   - In forests, dark insects (AA and Aa) survive better
   - In open fields, light insects ([aa]{color=gray}) survive better.
 
-=== layout: one-plus-two-panels
-@replaceme
-
+=== layout: two-panels
 
 @left
-
-![Slide image 10](assets/lect15c-natural_selection/image_010.svg)
-
-@top-right
-
-| Genotype | AA | Aa | aa |
-| Phenotype | dark | dark | light |
-| Relative fitness in forest | 1 | 1 | 1 &#8211; s1 |
-| Relative fitness in field | 1 &#8211; s2 | 1 &#8211; s2 | 1 |
-
-@bottom-right
 
 - Differential survival\:
   - In forests, dark insects (AA and Aa) survive better
   - In open fields, light insects ([aa]{color=gray}) survive better.
+
+@right
+
+{table-style=comparison padding="2pt 4pt"}
+| Genotype | [AA]{background-color=#999999 text-align=center} | [Aa]{background-color=#999999 text-align=center} | [aa]{background-color=#EEEEEE text-align=center} |
+| --- | --- | --- | --- |
+| Phenotype | [dark]{background-color=#999999 text-align=center} | [dark]{background-color=#999999 text-align=center} | [light]{background-color=#EEEEEE text-align=center} |
+| Relative fitness in forest | [1]{background-color=#999999 text-align=center} | [1]{background-color=#999999 text-align=center} | [1 &#8211; s~1~]{background-color=#EEEEEE text-align=center} |
+| Relative fitness in field | [1 &#8211; s~2~]{background-color=#999999 text-align=center} | [1 &#8211; s~2~]{background-color=#999999 text-align=center} | [1]{background-color=#EEEEEE text-align=center} |
 
 === layout: one-panel
 
@@ -575,12 +571,12 @@ hidden: true
 
 ![Slide image 16](assets/lect15c-natural_selection/image_016.jpg)
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *S-M Equilibrium*
 
-@top-left
+@body
 
 - Equilibrium depends on whether recessive allele is completely recessive or has a small effect (partial effect on the fitness of heterozygotes..)
 - If completely recessive, the fitness of (A is wild type and a is recessive allele)\:
@@ -588,25 +584,18 @@ hidden: true
 - Selection coefficient measures the fraction of aa genotypes that fails to survive, So equilibrium value
 - Selection-mutation balance can be used to estimate human mutation rate.
 
-@top-right
+{table-style=comparison padding="2pt 4pt"}
+| Genotype | [AA]{text-align=center} | [Aa]{text-align=center} | [aa]{text-align=center} |
+| --- | --- | --- | --- |
+| Relative fitness | [1]{text-align=center} | [1]{text-align=center} | [1 &#8211; s]{text-align=center} |
 
 ![Slide image 17](assets/lect15c-natural_selection/image_017.svg)
 
-@bottom-left
-
-![Slide image 18](assets/lect15c-natural_selection/image_018.svg)
-
-@bottom-right
-
-| Genotype | AA | Aa | aa |
-| Relative fitness | 1 | 1 | 1 &#8211; s |
-
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: one-panel
 
 # *Effect of Degree of Dominance*
 
-@left
+@body
 
 - What if the recessive allele is partially dominant, meaning having a small effect on the fitness of heterozygotes
 - Then fitnesses of AA, Aa and aa can be written as\:
@@ -616,14 +605,10 @@ hidden: true
   - h = 0 &#8212; it is completely recessive
   - h = &#189; &#8212; heterozygote genotype has a fitness exactly half of homozygous genotypes
 
-@top-right
-
-![Slide image 19](assets/lect15c-natural_selection/image_019.svg)
-
-@bottom-right
-
-| Genotype | AA | Aa | aa |
-| Relative fitness | 1 | 1 &#8211; [h&#215;s]{color=purple} | 1 &#8211; s |
+{table-style=comparison padding="0.5pt 4pt"}
+| Genotype | [AA]{text-align=center} | [Aa]{text-align=center} | [aa]{text-align=center} |
+| --- | --- | --- | --- |
+| Relative fitness | [1]{text-align=center} | [1 &#8211; [h&#215;s]{color=#55308D}]{text-align=center} | [1 &#8211; s]{text-align=center} |
 
 === layout: one-panel
 @replaceme
@@ -678,26 +663,20 @@ hidden: true
   - The relative fitness of heterozygotes is 1
   - and the relative fitness of the homozygotes is less than 1.
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
+@left
 
-@top-left
-
-![Slide image 22](assets/lect15c-natural_selection/image_022.svg)
-
-@top-right
-
-| Genotype | AA | Aa | aa |
-| Relative Fitness | 1 &#8211; s | 1 | 1 &#8211; t |
-
-@bottom-left
-
-  - s and t and the selection coefficients against AA and aa, respectively
+- s and t and the selection coefficients against AA and aa, respectively
 - In cases of heterozygote advantage, selection tends to eliminate both A and a through its effects on the homozygotes, but it also preserves those alleles through its effects on the heterozygotes.
 - When these opposing tendencies balance each other, a dynamic equilibrium is established.
 
-@bottom-right
+@right
+
+{table-style=comparison padding="2pt 4pt"}
+| Genotype | [AA]{text-align=center} | [Aa]{text-align=center} | [aa]{text-align=center} |
+| --- | --- | --- | --- |
+| Relative Fitness | [1 &#8211; s]{text-align=center} | [1]{text-align=center} | [1 &#8211; t]{text-align=center} |
 
 ![Slide image 23](assets/lect15c-natural_selection/image_023.svg)
 

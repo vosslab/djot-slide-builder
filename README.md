@@ -36,6 +36,18 @@ The command-line tools let an instructor:
 - refresh deliberately selected announcement material with `python3 -m slide_lib.refresh_weather`
   or `python3 -m slide_lib.refresh_podcast`.
 
+For native table authoring, start with
+[docs/slide-specs/TABLE_AUTHORING_GUIDE.md](docs/slide-specs/TABLE_AUTHORING_GUIDE.md). The maintained
+[examples/table_styles.djot](examples/table_styles.djot) demonstrates every preset and the local
+formatting tools. Build it with:
+
+```bash
+source source_me.sh && python3 deck_tools.py build examples/table_styles.djot --format all
+```
+
+This writes `output/odp/table_styles.odp` and `output/pdf/table_styles.pdf`. Run outside an agent
+sandbox because PDF export invokes LibreOffice.
+
 ## Project status
 
 This is a pre-production, Djot-first presentation pipeline. The native parser, layouts, exports,

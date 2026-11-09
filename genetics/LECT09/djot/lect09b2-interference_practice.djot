@@ -30,17 +30,17 @@ A triple heterozygote is crossed with a homozygous aej tester.
 
 Identify the parents and both DCO types. Then calculate percentage interference.
 
-{table-group="interference-second-homework"}
+{table-group="interference-second-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| artsy, eery, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
-| artsy, eery | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
-| artsy, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [2,112]{text-align=right} |
-| artsy | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [47]{text-align=right} |
-| eery, jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [23]{text-align=right} |
-| eery | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [2,088]{text-align=right} |
-| jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
+| artsy, eery, jerky | [a]{background-color=#fce9b5 color=#000000} | [e]{background-color=#ddecff color=#000000} | [j]{background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
+| artsy, eery | [a]{background-color=#fce9b5 color=#000000} | [e]{background-color=#ddecff color=#000000} | [+]{background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
+| artsy, jerky | [a]{background-color=#fce9b5 color=#000000} | [+]{background-color=#f8f8f8 color=#006591} | [j]{background-color=#ffe2e8 color=#000000} | [2,112]{text-align=right} |
+| artsy | [a]{background-color=#fce9b5 color=#000000} | [+]{background-color=#f8f8f8 color=#006591} | [+]{background-color=#f8f8f8 color=#953668} | [47]{text-align=right} |
+| eery, jerky | [+]{background-color=#f8f8f8 color=#795700} | [e]{background-color=#ddecff color=#000000} | [j]{background-color=#ffe2e8 color=#000000} | [23]{text-align=right} |
+| eery | [+]{background-color=#f8f8f8 color=#795700} | [e]{background-color=#ddecff color=#000000} | [+]{background-color=#f8f8f8 color=#953668} | [2,088]{text-align=right} |
+| jerky | [+]{background-color=#f8f8f8 color=#795700} | [+]{background-color=#f8f8f8 color=#006591} | [j]{background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
+| _wildtype_ | [+]{background-color=#f8f8f8 color=#795700} | [+]{background-color=#f8f8f8 color=#006591} | [+]{background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [7,000]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -57,17 +57,17 @@ Allele columns: A, E, J. Gene order: A-J-E. + = wild type; lowercase = recessive
 
 The largest reciprocal types are a+j and +e+: 2,112 + 2,088 = 4,200.
 
-{table-group="interference-second-homework"}
+{table-group="interference-second-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| artsy, eery, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
-| artsy, eery | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
-| *artsy, jerky* | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [*2,112*]{text-align=right color=#A719DB} |
-| artsy | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [47]{text-align=right} |
-| eery, jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [23]{text-align=right} |
-| *eery* | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [*2,088*]{text-align=right color=#A719DB} |
-| jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
+| artsy, eery, jerky | [a]{background-color=#fce9b5 color=#000000} | [e]{background-color=#ddecff color=#000000} | [j]{background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
+| artsy, eery | [a]{background-color=#fce9b5 color=#000000} | [e]{background-color=#ddecff color=#000000} | [+]{background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
+| *artsy, jerky* | [a]{background-color=#fce9b5 color=#000000} | [+]{background-color=#f8f8f8 color=#006591} | [j]{background-color=#ffe2e8 color=#000000} | [*2,112*]{text-align=right color=#A719DB} |
+| artsy | [a]{background-color=#fce9b5 color=#000000} | [+]{background-color=#f8f8f8 color=#006591} | [+]{background-color=#f8f8f8 color=#953668} | [47]{text-align=right} |
+| eery, jerky | [+]{background-color=#f8f8f8 color=#795700} | [e]{background-color=#ddecff color=#000000} | [j]{background-color=#ffe2e8 color=#000000} | [23]{text-align=right} |
+| *eery* | [+]{background-color=#f8f8f8 color=#795700} | [e]{background-color=#ddecff color=#000000} | [+]{background-color=#f8f8f8 color=#953668} | [*2,088*]{text-align=right color=#A719DB} |
+| jerky | [+]{background-color=#f8f8f8 color=#795700} | [+]{background-color=#f8f8f8 color=#006591} | [j]{background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
+| _wildtype_ | [+]{background-color=#f8f8f8 color=#795700} | [+]{background-color=#f8f8f8 color=#006591} | [+]{background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [7,000]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -82,6 +82,7 @@ Allele columns: A, E, J. Gene order: A-J-E. + = wild type; lowercase = recessive
 
 Arrange the alleles in *map order: A-J-E*.
 
+{table-style=testcross}
 | Type | A | J | E | Count |
 | --- | --- | --- | --- | --- |
 | Parent | a | j | + | 2,112 |
@@ -100,17 +101,17 @@ In the homework's A/E/J columns, the DCO types are *a++* and *+ej*.
 
 *Observed DCO = 47 + 23 = 70 offspring.*
 
-{table-group="interference-second-homework"}
+{table-group="interference-second-homework" table-style=testcross}
 | Phenotype | [Genotypes]{colspan=3} | Progeny Count |
 | --- | --- | --- | --- | --- |
-| artsy, eery, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
-| artsy, eery | [a]{text-align=center background-color=#fce9b5 color=#000000} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
-| artsy, jerky | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [2,112]{text-align=right} |
-| *artsy* | [a]{text-align=center background-color=#fce9b5 color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [*47*]{text-align=right color=#A719DB} |
-| *eery, jerky* | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [*23*]{text-align=right color=#A719DB} |
-| eery | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [e]{text-align=center background-color=#ddecff color=#000000} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [2,088]{text-align=right} |
-| jerky | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [j]{text-align=center background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
-| _wildtype_ | [+]{text-align=center background-color=#f8f8f8 color=#795700} | [+]{text-align=center background-color=#f8f8f8 color=#006591} | [+]{text-align=center background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
+| artsy, eery, jerky | [a]{background-color=#fce9b5 color=#000000} | [e]{background-color=#ddecff color=#000000} | [j]{background-color=#ffe2e8 color=#000000} | [854]{text-align=right} |
+| artsy, eery | [a]{background-color=#fce9b5 color=#000000} | [e]{background-color=#ddecff color=#000000} | [+]{background-color=#f8f8f8 color=#953668} | [507]{text-align=right} |
+| artsy, jerky | [a]{background-color=#fce9b5 color=#000000} | [+]{background-color=#f8f8f8 color=#006591} | [j]{background-color=#ffe2e8 color=#000000} | [2,112]{text-align=right} |
+| *artsy* | [a]{background-color=#fce9b5 color=#000000} | [+]{background-color=#f8f8f8 color=#006591} | [+]{background-color=#f8f8f8 color=#953668} | [*47*]{text-align=right color=#A719DB} |
+| *eery, jerky* | [+]{background-color=#f8f8f8 color=#795700} | [e]{background-color=#ddecff color=#000000} | [j]{background-color=#ffe2e8 color=#000000} | [*23*]{text-align=right color=#A719DB} |
+| eery | [+]{background-color=#f8f8f8 color=#795700} | [e]{background-color=#ddecff color=#000000} | [+]{background-color=#f8f8f8 color=#953668} | [2,088]{text-align=right} |
+| jerky | [+]{background-color=#f8f8f8 color=#795700} | [+]{background-color=#f8f8f8 color=#006591} | [j]{background-color=#ffe2e8 color=#000000} | [543]{text-align=right} |
+| _wildtype_ | [+]{background-color=#f8f8f8 color=#795700} | [+]{background-color=#f8f8f8 color=#006591} | [+]{background-color=#f8f8f8 color=#953668} | [826]{text-align=right} |
 | [TOTAL =]{colspan=4 background-color=#BDD0E4 text-align=right} | [7,000]{background-color=#BDD0E4 text-align=right} |
 
 @citation
@@ -125,6 +126,7 @@ Allele columns: A, E, J. Gene order: A-J-E. + = wild type; lowercase = recessive
 
 [*Step 2: Multiply Adjacent Probabilities*]{color=#B74300}
 
+{table-style=working}
 | Interval | Percent | Probability |
 | --- | --- | --- |
 | A-J | 16% | 0.16 |
@@ -148,6 +150,7 @@ $$
 E_{\mathrm{DCO}} = 0.04 \times 7000 = 280
 $$
 
+{table-style=working}
 | DCO Count | Offspring |
 | --- | --- |
 | Observed | 70 |
@@ -193,6 +196,7 @@ $$
 
 @body
 
+{table-style=comparison}
 | Quantity | F-W-P | A-J-E |
 | --- | --- | --- |
 | Observed DCO | 54 | 70 |

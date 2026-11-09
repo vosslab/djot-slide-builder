@@ -319,6 +319,7 @@ cover: 32.431 23.192 64.848 74.156
 
 @body
 
+{table-style=comparison}
 | PREDICTED RATIOS |  |  |  |  |
 | --- | --- | --- | --- | --- |
 | Genes on different chromosomes: | 1 | 1 | 1 | 1 |

@@ -46,6 +46,20 @@ Use `build --format all`, `build --format odp`, or `build --format pdf`; `all` i
 Folder selection is recursive and includes `.djot` source only. In a copied checkout without Git
 metadata, run commands from the top-level folder containing `build_slides.sh` and `slide_lib/`.
 
+## Build the table demonstration
+
+The maintained [../examples/table_styles.djot](../examples/table_styles.djot) demonstrates the
+ordinary default, all seven named treatments, scientific notation, local overrides, merges,
+matrices, and related question/answer workspaces:
+
+```bash
+source source_me.sh && python3 deck_tools.py build examples/table_styles.djot --format all
+```
+
+Open `output/odp/table_styles.odp` for native table editing and `output/pdf/table_styles.pdf` for
+the distribution copy. Run outside the sandbox because PDF export invokes LibreOffice. See
+[slide-specs/TABLE_AUTHORING_GUIDE.md](slide-specs/TABLE_AUTHORING_GUIDE.md) for authoring recipes.
+
 ## Import an existing deck
 
 ```bash

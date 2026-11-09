@@ -1,0 +1,94 @@
+styles:
+  standard:
+    defaults:
+      padding: 4pt 9pt
+      border-bottom: 0.5pt solid gray
+    regions:
+      numeric: {text-align: right}
+      header:
+        background-color: accent-tint
+        color: black
+        font-weight: bold
+        text-align: center
+        border-bottom: 1pt solid accent
+      total:
+        background-color: accent-tint
+        font-weight: bold
+        border-top: 1pt solid accent
+  comparison:
+    defaults:
+      padding: 6pt 10pt
+      border-bottom: 0.5pt solid gray
+    regions:
+      numeric: {text-align: right}
+      header:
+        background-color: accent-tint
+        color: black
+        font-weight: bold
+        text-align: center
+        border-bottom: 1pt solid accent
+      total: {font-weight: bold, border-top: 1pt solid accent}
+  working:
+    defaults:
+      padding: 5pt 9pt
+      border: '0.5pt solid #C5CBD2'
+    regions:
+      numeric: {text-align: right}
+      header:
+        background-color: accent-tint
+        color: black
+        font-weight: bold
+        text-align: center
+        border-bottom: 1pt solid accent
+      total: {background-color: accent-tint, font-weight: bold, border-top: 1pt solid accent}
+  testcross:
+    defaults:
+      text-align: center
+      padding: 4pt 10pt
+      border-bottom: '0.5pt solid #C5CBD2'
+    regions:
+      numeric: {text-align: right}
+      header:
+        background-color: accent-tint
+        color: black
+        font-weight: bold
+        text-align: center
+        border-bottom: 1pt solid accent
+      total: {background-color: accent-tint, font-weight: bold, border-top: 1pt solid accent}
+  punnett:
+    row-headings: true
+    defaults:
+      text-align: center
+      padding: 6pt 10pt
+      border: 0.75pt solid gray
+    regions:
+      numeric: {text-align: center}
+      row-header: {background-color: accent-tint, color: black, font-weight: bold, text-align: center}
+      header: {background-color: accent-tint, color: black, font-weight: bold, text-align: center}
+      total: {font-weight: bold}
+  matrix-lower:
+    row-headings: true
+    matrix: lower
+    defaults:
+      text-align: center
+      padding: 5pt 9pt
+      border: '0.5pt solid #C5CBD2'
+    regions:
+      numeric: {text-align: right}
+      row-header: {background-color: accent-tint, color: black, font-weight: bold, text-align: center}
+      header: {background-color: accent-tint, color: black, font-weight: bold, text-align: center}
+      matrix-diagonal: {background-color: '#E6E6E6'}
+      matrix-unused: {background-color: '#F2F3F5', border: none}
+  matrix-upper:
+    row-headings: true
+    matrix: upper
+    defaults:
+      text-align: center
+      padding: 5pt 9pt
+      border: '0.5pt solid #C5CBD2'
+    regions:
+      numeric: {text-align: right}
+      row-header: {background-color: accent-tint, color: black, font-weight: bold, text-align: center}
+      header: {background-color: accent-tint, color: black, font-weight: bold, text-align: center}
+      matrix-diagonal: {background-color: '#E6E6E6'}
+      matrix-unused: {background-color: '#F2F3F5', border: none}

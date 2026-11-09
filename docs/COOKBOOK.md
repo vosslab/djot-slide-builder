@@ -28,6 +28,20 @@ The result is `output/odp/lect01b-genetic_disorders.odp`. A successful lint prov
 structure and image references; it does not prove that a changed visual reads well on a projected
 slide. Open the output for that review before class.
 
+## Choose and preview a table
+
+Start with an ordinary pipe table, then select a preset only when its teaching job needs one.
+[slide-specs/TABLE_AUTHORING_GUIDE.md](slide-specs/TABLE_AUTHORING_GUIDE.md) provides recipes for
+comparisons, calculations, testcrosses, Punnett squares, matrices, and stable answer states.
+Build [../examples/table_styles.djot](../examples/table_styles.djot) to compare all treatments:
+
+```bash
+source source_me.sh && python3 deck_tools.py build examples/table_styles.djot --format all
+```
+
+Review `output/pdf/table_styles.pdf` and open `output/odp/table_styles.odp` to edit a native table.
+Keep lasting changes in Djot. Run the build outside the sandbox on this macOS host.
+
 ## Prepare a course folder
 
 Use this workflow when the full set of decks under a course area needs refreshed editable and PDF

@@ -259,9 +259,11 @@
 
 @left
 
-|  | *p (0.8)* | *q (0.2)* |
-| *p (0.8)* | pp = 0.8 &#215; 0.8 = 0.64 | pq = 0.8 &#215; 0.2 = 0.16 |
-| *q (0.2)* | pq = 0.8 &#215; 0.2 = 0.16 | qq = 0.2 &#215; 0.2 = 0.04 |
+{table-style=punnett}
+|  | [*p (0.8)*]{text-align=center} | [*q (0.2)*]{text-align=center} |
+| --- | --- | --- |
+| [*p (0.8)*]{text-align=center} | [pp = 0.8 &#215; 0.8 = 0.64]{background-color=#FF6D6D} | [pq = 0.8 &#215; 0.2 = 0.16]{background-color=#F7D1D5} |
+| [*q (0.2)*]{text-align=center} | [pq = 0.8 &#215; 0.2 = 0.16]{background-color=#F7D1D5} | qq = 0.2 &#215; 0.2 = 0.04 |
 
 @right
 
@@ -667,53 +669,41 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 ![Slide image 22](assets/lect14c-hardy_weinberg_1/image_022.png)
 
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: one-panel
 
-
-@left
+@body
 
 ![Slide image 22](assets/lect14c-hardy_weinberg_1/image_022.png)
 
 - p = 0.16; q = 0.10; r = 0.74
 
-@top-right
-
-![Slide image 23](assets/lect14c-hardy_weinberg_1/image_023.svg)
-
-@bottom-right
-
+{table-style=standard column-widths="1,1.5,1.6" padding="2pt 4pt"}
 | Blood Type | Genotype | Frequency |
-| A | IAIA | p^2^ |
-|  | IAi | 2pr |
-| B | IBIB | q^2^ |
-|  | IBi | 2qr |
-| AB | IAIB | 2pq |
+| --- | --- | --- |
+| A | I^A^I^A^ | p^2^ |
+|  | I^A^i | 2pr |
+| B | I^B^I^B^ | q^2^ |
+|  | I^B^i | 2qr |
+| AB | I^A^I^B^ | 2pq |
 | O | ii | r^2^ |
 
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: one-panel
 
-
-@left
+@body
 
 ![Slide image 23](assets/lect14c-hardy_weinberg_1/image_022.png)
 
 - p = 0.16; q = 0.10; r = 0.74
 
-@top-right
-
-![Slide image 24](assets/lect14c-hardy_weinberg_1/image_024.svg)
-
-@bottom-right
-
+{table-style=standard column-widths="1,1.5,1.6" padding="2pt 4pt"}
 | Blood Type | Genotype | Frequency |
-| A | IAIA = p^2^ | 0.026 |
-|  | IAi = 2pr | 0.237 |
-| B | IBIB = q^2^ | 0.010 |
-|  | IBi = 2qr | 0.148 |
-| AB | IAIB = 2pq | 0.032 |
-| O | ii = r^2^ | 0.548 |
+| --- | --- | --- |
+| [A]{text-align=center} | [I^A^I^A^ = p^2^]{text-align=left} | [0.026]{text-align=right} |
+| []{text-align=center} | [I^A^i = 2pr]{text-align=left} | [0.237]{text-align=right} |
+| [B]{text-align=center} | [I^B^I^B^ = q^2^]{text-align=left} | [0.010]{text-align=right} |
+| []{text-align=center} | [I^B^i = 2qr]{text-align=left} | [0.148]{text-align=right} |
+| [AB]{text-align=center} | [I^A^I^B^ = 2pq]{text-align=left} | [0.032]{text-align=right} |
+| [O]{text-align=center} | [ii = r^2^]{text-align=left} | [0.548]{text-align=right} |
 
 === layout: section
 

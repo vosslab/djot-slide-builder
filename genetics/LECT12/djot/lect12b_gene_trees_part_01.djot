@@ -534,193 +534,151 @@
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 4\: Setup Distance Table*
 
-@top-left
+@body
 
-![Slide image 27](assets/lect12b-gene_trees/image_027.svg)
-
-@top-right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
 | N.Wh. |  |  |  |
 | S.Wh. |  |  |  |
 | Blk.R |  |  |  |
 
-@bottom-left
-
 - 3 sequences &#8594; 4x4 table
-
-@bottom-right
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 5\: Cancel Out the Diagonal*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 28](assets/lect12b-gene_trees/image_028.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; |  |  |
-| S.Wh. |  | &#215; |  |
-| Blk.R |  |  | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |  |
+| S.Wh. |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R |  |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - There are no differences
 - between N.Wh. and itself
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 29](assets/lect12b-gene_trees/image_029.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; |  |  |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R |  |  | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |  |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R |  |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - N.Wh. and S.Wh. have
 - 4 differences (QDNQ)
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 30](assets/lect12b-gene_trees/image_030.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 |  |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R |  |  | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 |  |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R |  |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - S.Wh. and N.Wh. have
 - 4 differences (QDNQ)
 - [\[table is symmetric\]]{color=red}
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 31](assets/lect12b-gene_trees/image_031.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R |  |  | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R |  |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - N.Wh. and Blk.R have
 - 12 differences
 - (CDSQSSNSECLQ)
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
-![Slide image 32](assets/lect12b-gene_trees/image_032.svg)
-
-@top-right
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R | 12 |  | &#215; |
-
-@bottom-left
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R | 12 |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - Likewise, Blk.R and N.Wh.
 - have 12 differences
 - [\[table is symmetric\]]{color=red}
 
-@bottom-right
-
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-=== layout: four-panels
+=== layout: one-panel
 @replaceme
 
 # *Step 6\: Figure Out Distances*
 
-@top-left
+@body
 
 - N.Wh.	KIFMPNSKERGPCNTHCCQGCDSIRNYKVI
 - S.Wh.	.....Q..D.........N......Q....
 - Blk.R	.....QC.D...S...SSN.SECL.Q....
 
-@top-right
-
-![Slide image 32](assets/lect12b-gene_trees/image_032.svg)
-
-@bottom-left
-
+{table-style=matrix-lower table-group=lect12b-rhino-4}
 |  | N.Wh. | S.Wh. | Blk.R |
-| N.Wh. | &#215; | 4 | 12 |
-| S.Wh. | 4 | &#215; |  |
-| Blk.R | 12 |  | &#215; |
-
-@bottom-right
+| --- | --- | --- | --- |
+| N.Wh. | [[&#215;]{color=#FFFFFF}]{background-color=#000000} | 4 | 12 |
+| S.Wh. | 4 | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |  |
+| Blk.R | 12 |  | [[&#215;]{color=#FFFFFF}]{background-color=#000000} |
 
 - Our setup makes the
 - S.Wh. and Blk.R difficult

@@ -393,6 +393,7 @@ Without the green-sensitive photoreceptor, the scene appears mostly yellow.
 
 @left
 
+{table-style=punnett}
 | Egg / sperm | X | Y |
 | --- | --- | --- |
 | X | XX | XY |
@@ -606,96 +607,100 @@ What proportion of their daughters would be color-blind and of average height?
   - C) 1\:1 male to female
   - D) 3\:1 male to female
 
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
-@top-left
+@left
 
 - Birds: ZZ male, ZW female
 - Embryo-lethal recessive Z allele
 - Heterozygous male x normal female
 - Surviving male:female ratio?
 
-@top-right
+@right
 
-![Slide image 34](assets/lect06d-x_linked_genes_1/pigeon_cross_unfilled.svg)
+&male; (columns), &female; (rows)
 
-@bottom-left
-
-|  | Z&#x1D3A; | Z&#x02E1; |
-| Z&#x1D3A; |  |  |
+{table-style=punnett table-group=pigeon-cross}
+|  | Z^N^ | Z^l^ |
+| --- | --- | --- |
+| Z^N^ |  |  |
 | W |  |  |
 
-@bottom-right
+=== layout: two-panels
 
-- &female;
-
-- &male;
-
-=== layout: four-panels
-@replaceme
-
-@top-left
+@left
 
 - Birds: ZZ male, ZW female
 - Embryo-lethal recessive Z allele
 - Heterozygous male x normal female
 - Surviving male:female ratio?
 
-@top-right
+@right
 
-![Slide image 35](assets/lect06d-x_linked_genes_1/pigeon_cross_filled.svg)
+&male; (columns), &female; (rows)
 
-@bottom-left
+{table-style=punnett table-group=pigeon-cross}
+|  | Z^N^ | Z^l^ |
+| --- | --- | --- |
+| Z^N^ | Z^N^Z^N^ | Z^N^Z^l^ |
+| W | Z^N^W | Z^l^W |
 
-|  | Z&#x1D3A; | Z&#x02E1; |
-| Z&#x1D3A; | Z&#x1D3A;Z&#x1D3A; | Z&#x1D3A;Z&#x02E1; |
-| W | Z&#x1D3A;W | Z&#x02E1;W |
-
-@bottom-right
-
-- &female;
-
-- &male;
-
-=== layout: one-panel
+=== layout: two-panels
 @replaceme
 
-# Pigeon Z-linked Cross: Reconstruction Needed
-
-@body
+@left
 
 - In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
 - A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 - What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 
-Rebuild the Punnett-square stage from source slide 58.
+@right
 
-=== layout: one-panel
+&male; (columns), &female; (rows)
+
+{table-style=punnett table-group=pigeon-cross}
+|  | Z^N^ | Z^l^ |
+| --- | --- | --- |
+| Z^N^ | Z^N^Z^N^ | Z^N^Z^l^ |
+| W | Z^N^W | Z^l^W |
+
+=== layout: two-panels
 @replaceme
 
-# Pigeon Z-linked Cross: Reconstruction Needed
-
-@body
+@left
 
 - In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
 - A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 - What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 
-Rebuild the Punnett-square stage from source slide 59.
+@right
 
-=== layout: one-panel
+&male; (columns), &female; (rows)
+
+{table-style=punnett table-group=pigeon-cross}
+|  | Z^N^ | Z^l^ |
+| --- | --- | --- |
+| Z^N^ | Z^N^Z^N^ | Z^N^Z^l^ |
+| W | Z^N^W | Z^l^W |
+
+=== layout: two-panels
 @replaceme
 
-# Pigeon Z-linked Cross: Reconstruction Needed
-
-@body
+@left
 
 - In birds, sex is determined by a ZW chromosome scheme. Males are ZZ and females are ZW.
 - A recessive lethal allele that causes death of the embryo is sometimes present on the Z chromosome in pigeons.
 - What would be the sex ratio in the offspring of a cross between a male that is heterozygous for the lethal allele and a normal female?
 
-Rebuild the Punnett-square stage from source slide 60.
+@right
+
+&male; (columns), &female; (rows)
+
+{table-style=punnett table-group=pigeon-cross}
+|  | Z^N^ | Z^l^ |
+| --- | --- | --- |
+| Z^N^ | Z^N^Z^N^ | Z^N^Z^l^ |
+| W | Z^N^W | Z^l^W |
 
 === layout: multiple-choice
 @question

@@ -58,6 +58,7 @@ color-theme: genetics
 
 @body
 
+{table-style=comparison}
 | Question | Terms |
 | --- | --- |
 | Complete chromosome sets? | *Euploid*: whole sets; *polyploid*: more than two sets |
@@ -98,6 +99,7 @@ We will work through deletions and translocations in Lecture 11.
 - DNA is copied, but cell division does not finish.
 - The cell can keep the copies intended for *both daughter cells*.
 
+{table-style=comparison}
 | Outcome | Chromosome Sets |
 | --- | --- |
 | Division finishes | Two daughter cells, two sets each |
@@ -125,6 +127,7 @@ each with two sister chromatids; DNA replication alone does not change its ploid
 
 @body
 
+{table-style=comparison}
 | Quantity | What Are We Counting? |
 | --- | --- |
 | *Monoploid, m* | Chromosomes in one basic set |
@@ -144,6 +147,7 @@ An octoploid plant has *64 chromosomes* in a somatic cell.
 
 What are its monoploid (*m*) and haploid (*h*) numbers?
 
+{table-style=working}
 | Choice | m | h |
 | --- | --- | --- |
 | A | 8 | 8 |
@@ -161,6 +165,7 @@ Hint: 64 &divide; 8 = 8; 64 &divide; 2 = 32. Assume regular reduction in meiosis
 
 @body
 
+{table-style=working}
 | Quantity | Calculation | Answer |
 | --- | --- | --- |
 | One basic set | 64 &divide; 8 | [*m = 8*]{color=#076DAD} |
@@ -232,6 +237,7 @@ Hint: 72 &divide; 2 = 36; 72 &divide; 8 = 9.
 
 @body
 
+{table-style=comparison}
 | Karyotype Part | Meaning |
 | --- | --- |
 | 47 | Total chromosome count |
@@ -252,6 +258,7 @@ DNA replication changes chromatids, not this chromosome count.
 
 @body
 
+{table-style=comparison}
 | Division | Normal Separation | Nondisjunction |
 | --- | --- | --- |
 | Meiosis I | Homologous chromosomes | Homologs go to the same cell |
@@ -289,6 +296,7 @@ Follow *one chromosome pair* first. The other chromosomes can separate normally.
 
 @body
 
+{table-style=comparison}
 | Error | Gametes | What Changed? |
 | --- | --- | --- |
 | Meiosis I | n + 1, n + 1, n - 1, n - 1 | All four have the wrong count |
@@ -302,6 +310,7 @@ Count chromosomes in *all four products* before choosing an answer.
 
 @body
 
+{table-style=working}
 | Gamete After an Error | Normal Gamete | Zygote | Result |
 | --- | --- | --- | --- |
 | n - 1 | n | [*2n - 1*]{color=#D40000} | Monosomy |
@@ -362,6 +371,7 @@ This identifies the parent in this problem; it does not distinguish meiosis I fr
 
 @body
 
+{table-style=comparison}
 | Extra Chromosome | Syndrome | Examples of Effects |
 | --- | --- | --- |
 | 13 | *Patau* | Brain and heart defects; cleft lip/palate |
@@ -612,6 +622,7 @@ Actual reproductive outcomes also depend on fertilization and survival.
 
 @body
 
+{table-style=comparison}
 | Screening | Diagnostic Testing |
 | --- | --- |
 | Estimates the chance of a condition | Tests for a condition in sampled cells or DNA |
@@ -667,6 +678,7 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 @body
 
+{table-style=comparison}
 | Sample | Where It Comes From |
 | --- | --- |
 | [*Amniocentesis*]{color=#D40000} | Amniotic fluid containing fetal cells |
@@ -727,6 +739,7 @@ The sample provides cells or DNA. The laboratory test determines what can be det
 
 - Reference: not covered in lecture
 
+{table-style=comparison}
 | Group | Examples |
 | --- | --- |
 | Metabolism | PKU, methylmalonic acidemia, MSUD, tyrosinemia, citrullinemia, MCAD deficiency |
