@@ -1,0 +1,107 @@
+color-theme: biotechnology
+
+=== layout: one-panel
+
+# In Vitro DNA Synthesis
+
+@body
+
+*In vitro* occurs outside a living organism; *in vivo* occurs within a cell or organism.
+
+DNA polymerase extends a pre-existing synthetic DNA primer using template DNA and dNTPs.
+
+Cellular replication also requires coordinated helicase, primase, replication forks,
+and repair systems.
+
+=== layout: one-panel
+
+# What a Reaction Needs
+
+@body
+
+A simplified synthesis reaction supplies template, primer, polymerase, dNTPs, buffer,
+and suitable temperature conditions.
+
+- *In vitro control* makes it useful for copying or modifying chosen sequences outside a cell.
+- *In vivo replication* is integrated with chromosome management, cell division, damage
+  repair, and regulation.
+
+=== layout: one-panel
+
+# DNA Sequence Direction
+
+@body
+
+Polynucleotide chains have a 5&prime;-phosphate at one end and a 3&prime;-OH on the other end.
+
+@notes
+
+Pay attention to the 5-prime and 3-prime directions in the next question.
+
+=== layout: multiple-choice
+
+@question
+
+Which one of the following sequences is complementary to the sequence 5&prime;-`ATGC`-3&prime;?
+
+- A. 5&prime;-`CGTA`-3&prime;
+- B. 5&prime;-`GCAT`-3&prime;
+- C. 5&prime;-`CGAT`-3&prime;
+- D. 5&prime;-`TACG`-3&prime;
+- E. 5&prime;-`ATGC`-3&prime;
+
+@answer
+
+Answer: B
+
+3&prime;-`TACG`-5&prime;
+
+=== layout: one-panel
+
+# Chemical DNA Synthesis
+
+@body
+
+- Solid-phase phosphoramidite chemistry adds protected nucleotides sequentially to make
+  an oligonucleotide.
+- Chemical synthesis produces *custom primers, probes, and designed sequences* without
+  a DNA template.
+- Error accumulation limits practical length, so longer constructs often require
+  assembly or enzymatic copying.
+
+=== layout: one-panel
+
+# Chemical Synthesis: Strengths and Limits
+
+@body
+
+- Stepwise chemistry is especially useful when a researcher needs a known sequence
+  with deliberate changes.
+  - Custom oligonucleotides provide primers, probes, adapters, and short engineered elements.
+- Each synthesis cycle can introduce a small failure rate, which makes sequence
+  verification important for longer designs.
+
+=== layout: one-panel
+
+# PCR
+
+@body
+
+- PCR amplifies a target between two synthetic DNA primers through *denaturation,
+  annealing, and extension*.
+- Taq polymerase survives repeated high-temperature denaturation, allowing automated
+  thermal cycling.
+- Degenerate primers contain variable positions so they can amplify related but
+  nonidentical target sequences.
+
+=== layout: one-panel
+
+# PCR: Cycle and Specificity
+
+@body
+
+- Denaturation separates strands, annealing lets primers bind, and extension copies
+  DNA from each primer.
+- *Primer sequence and annealing conditions* determine which target is amplified.
+- Thermocyclers and heat-stable polymerases made repeated cycles practical without
+  manually moving samples between temperatures.

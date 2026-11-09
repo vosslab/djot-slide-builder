@@ -50,7 +50,7 @@ collect_ignore = ["e2e", "playwright", "_temp"]
 REPO_HYGIENE_FILTERS = {
 	"ascii_compliance": ["assets/fonts/licenses/**"],
 	# Feature showcase; it does not use the universal lecture-cover format.
-	"slide_one": ["examples/**"],
+	"slide_one": ["exemplars/**"],
 	"whitespace": ["assets/fonts/licenses/**"],
 }
 

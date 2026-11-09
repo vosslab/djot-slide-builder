@@ -27,6 +27,12 @@ decks and their course-local assets live beside the lectures that use them, whil
 PDF files remain delivery artifacts. The [Genetics corpus record](genetics/README.md) preserves the
 import inventory and validation evidence for its migrated decks.
 
+Browse [exemplars/README.md](exemplars/README.md) for seven short teaching-purpose
+decks drawn from instructor coursework. The visual index connects each example to its source,
+explains when to reuse the pattern, and includes local artwork credits and build instructions. The
+maintained table-styles deck is the companion full demo; `./build_slides.sh exemplars` builds all
+eight decks.
+
 The command-line tools let an instructor:
 
 - build one Djot deck or a lecture tree as editable ODP, PDF, or both;
@@ -38,11 +44,11 @@ The command-line tools let an instructor:
 
 For native table authoring, start with
 [docs/slide-specs/TABLE_AUTHORING_GUIDE.md](docs/slide-specs/TABLE_AUTHORING_GUIDE.md). The maintained
-[examples/table_styles.djot](examples/table_styles.djot) demonstrates every preset and the local
-formatting tools. Build it with:
+[exemplars/table_styles.djot](exemplars/table_styles.djot) is the companion full demo of every
+preset and the local formatting tools. Build it with:
 
 ```bash
-source source_me.sh && python3 deck_tools.py build examples/table_styles.djot --format all
+source source_me.sh && python3 deck_tools.py build exemplars/table_styles.djot --format all
 ```
 
 This writes `output/odp/table_styles.odp` and `output/pdf/table_styles.pdf`. Run outside an agent

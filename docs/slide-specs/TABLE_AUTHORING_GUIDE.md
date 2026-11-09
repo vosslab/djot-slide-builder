@@ -13,10 +13,10 @@ scientific notation in the source.
 ```
 
 For a maintained demonstration of every preset and the local formatting tools, build
-[../../examples/table_styles.djot](../../examples/table_styles.djot):
+[../../exemplars/table_styles.djot](../../exemplars/table_styles.djot):
 
 ```bash
-source source_me.sh && python3 deck_tools.py build examples/table_styles.djot --format all
+source source_me.sh && python3 deck_tools.py build exemplars/table_styles.djot --format all
 ```
 
 Run this command from the repository root, outside an agent sandbox on this macOS host. It writes

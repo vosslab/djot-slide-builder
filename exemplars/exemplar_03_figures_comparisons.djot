@@ -1,0 +1,178 @@
+color-theme: genetics
+
+=== layout: two-panels
+
+# All Four Products Stay Together
+
+@left
+
+- In contrast, some fungi [*maintain all four haploid products of meiosis in a single sac called an ascus*]{color=#ba00ba}.
+- These haploid cells survive as viable individuals that grow and perpetuate themselves by mitosis.
+  - The phenotype of such haploid fungi is a direct representation of their genotype, without complications of dominance.
+
+@right
+
+![One ascus contains four labeled haploid spores](assets/exemplar_03_figures_comparisons/homework_ascus.drawn.svg)
+
+@citation
+
+Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors identify alleles.
+
+=== layout: two-panels
+
+# Why Keep the Four Products Together?
+
+@left
+
+![The homework ascus with its sac and an ascospore labeled](assets/exemplar_03_figures_comparisons/homework_ascus.drawn.svg)
+
+@right
+
+- Each ascus keeps the four products of a single meiosis together.
+- Each haploid spore can grow by mitosis.
+- Its phenotype directly reveals its genotype; dominance does not hide the alleles.
+- In unordered tetrads, the positions of the four spores do not preserve meiotic order.
+
+@citation
+
+The colored sectors represent alleles in the homework; they are not actual spore pigmentation.
+
+@notes
+
+The yeast mating types a and alpha describe mating compatibility. They are separate from the mutant allele symbols used in the mapping problems.
+Point to each of the four spores. The three characters within one spore are three loci in one haploid genotype. Two copies of each allele occur across these four spores; their positions do not identify the meiotic divisions.
+
+=== layout: two-panels
+
+# Two Copies of the Same Allele
+
+@left
+
+- Before the exchange, the cell is *A/a*.
+- One way of separating the chromosomes gives *A/A* and *a/a* daughters.
+- Each daughter still has two copies of the chromosome.
+- Two copies, but only one allele version: *loss of heterozygosity (LOH)*.
+
+@right
+
+![Two diploid daughters become homozygous at a distal marker](assets/exemplar_03_figures_comparisons/loh_outcome.drawn.svg)
+
+@citation
+
+Hagstrom and Dryja (1999): https://doi.org/10.1073/pnas.96.6.2952
+
+@notes
+
+Name the genotype change shown here. This diagram follows one gene. It omits replication and the four-chromatid intermediate. The exchange is between the centromere and A, followed by the segregation that produces A/A and a/a daughters. The alternate segregation pattern can leave both daughters A/a. Loss of heterozygosity can also happen by other mechanisms.
+
+=== layout: two-panels
+
+# One Event Can Make a Patch
+
+@left
+
+- Each daughter can divide to make a patch.
+- Cells from one starting cell form a *clone*.
+- An individual with cells of different genotypes is a *mosaic*.
+- An earlier exchange often gives a larger patch.
+- Cell growth and survival also affect patch size.
+
+@right
+
+![Two daughter lineages produce neighboring clones](assets/exemplar_03_figures_comparisons/clonal_patches.drawn.svg)
+
+@citation
+
+Graf (1995): https://doi.org/10.1007/BF01929364
+
+=== layout: image-comparison
+
+# From Daughter Cells to Patches
+
+@top-left
+
+![Two diploid daughters become homozygous at a distal marker](assets/exemplar_03_figures_comparisons/loh_outcome.drawn.svg)
+
+@top-right
+
+![Two daughter lineages produce neighboring clones](assets/exemplar_03_figures_comparisons/clonal_patches.drawn.svg)
+
+@bottom-left
+
+*A/A* and *a/a*: two copies, one allele version.
+
+@bottom-right
+
+Each daughter can grow into a *clone*.
+
+=== layout: one-panel
+
+# What Is the Gene Order?
+
+@body
+
+![Observed recombination: CD 30%, CH 20%, DH 40%, shown on the same percentage scale.](assets/exemplar_03_figures_comparisons/pairwise_results.drawn.svg)
+
+Which pair has the largest recombination frequency?
+
+=== layout: one-panel
+
+# Three Choices, One Middle Gene
+
+@body
+
+{table-style=standard}
+| Middle Gene | Gene Order | Same Map Reversed |
+| --- | --- | --- |
+| C | D - *C* - H | H - *C* - D |
+| D | C - *D* - H | H - *D* - C |
+| H | C - *H* - D | D - *H* - C |
+
+Reversing a map gives the same order: only *three choices*.
+
+D-H has the largest recombination frequency. If D and H are the ends,
+*which gene is in the middle?*
+
+=== layout: big-image
+
+@image
+
+![D-C-H is the gene order; H-C-D is equivalent.](assets/exemplar_03_figures_comparisons/gene_order_middle.drawn.svg)
+
+@caption
+
+D-C-H and H-C-D describe the same gene order.
+
+=== layout: one-panel
+
+# Why Don't the Results Add?
+
+@body
+
+![A proportional map: D to C is 30 cM, C to H is 20 cM; the sum is 50 cM while D-H observed recombination is 40%.](assets/exemplar_03_figures_comparisons/gene_map.drawn.svg)
+
+Which offspring count for both adjacent intervals, but not for D-H?
+
+=== layout: one-panel
+
+# Count Both Adjacent Intervals
+
+@body
+
+{column-widths="2.5,1,1,1,1" padding="1pt 4pt" table-style=testcross}
+| Original Label | Count | [CD]{color=#182033 background-color=#FF8F8F text-align=center} | [CH]{color=#182033 background-color=#8FABFF text-align=center} | [DH]{color=#182033 background-color=#DC9AF4 text-align=center} |
+| --- | --- | --- | --- | --- |
+| cdh | 29 | [R]{background-color=#FF8F8F text-align=center} | [R]{background-color=#8FABFF text-align=center} | [P]{background-color=#D6FFAD text-align=center} |
+| +++ | 21 | [R]{background-color=#FF8F8F text-align=center} | [R]{background-color=#8FABFF text-align=center} | [P]{background-color=#D6FFAD text-align=center} |
+
+50 / 1,000 &times; 100 = *5%* double recombinants.
+
+These 50 offspring are *already counted in both intervals*: 100 interval counts.
+
+[30]{color=#D40000} + [20]{color=#003FFF} = *50 cM*
+
+[40]{color=#A719DB} + 2 &times; 5 = *50 cM*
+
+@citation
+
+R = recombinant; P = parental for the indicated pair. Original labels use C-D-H order.

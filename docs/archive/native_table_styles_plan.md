@@ -184,7 +184,7 @@ Each task has one owner, a reviewable result, and an independent verification st
 - Update existing parser, table records, measurement, layout construction, ODF serialization, and importers.
 - Update course Djot sources and meaningful contract tests.
 - Add `docs/slide-specs/TABLE_AUTHORING_GUIDE.md`.
-- Add the maintained source deck `examples/table_styles.djot`.
+- Add the maintained source deck `exemplars/table_styles.djot`.
 - Update syntax, documentation navigation, architecture guidance, and changelog.
 
 Use safe YAML loading and existing source-located validation conventions. Load shared definitions once per compilation.

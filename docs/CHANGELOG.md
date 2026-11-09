@@ -2,15 +2,22 @@
 
 ### Additions and New Features
 
+- Add seven short curated teaching-purpose decks and a visual authoring index in
+  [../exemplars/README.md](../exemplars/README.md). Preserve course context in
+  lightly polished copies, keep verified original artwork in deck-owned local folders, and document
+  source headings, teaching rationale, alternatives, adaptations, and historical logistics.
+  Link the collection from the root README and authoring overview; retain the canonical table-style
+  demonstration. Independent rendered review and integration are tracked separately.
+
 - Add themed native table presets, whole-cell and table formatting overrides, measured padding,
   selective borders, and coordinated question/answer column sizing. Publish
   [slide-specs/TABLE_AUTHORING_GUIDE.md](slide-specs/TABLE_AUTHORING_GUIDE.md) and the maintained
-  [../examples/table_styles.djot](../examples/table_styles.djot) demonstration for editable ODP
+  [../exemplars/table_styles.djot](../exemplars/table_styles.djot) demonstration for editable ODP
   and ODP-derived PDF output. Reconcile 424 physical teaching tables (421 existing plus three
   restored), separately from the 14-table demo; preserve all 96 repaired source tables and clear
   59 target markers while retaining 37 non-table blockers. Record native edit/save/reopen,
   rendered comparison, source/hash evidence, and verification limits in the dated
-  [native table results](active_plans/native_table_styles_results.md). Verify 53 normal course ODP/PDF pairs plus the separate 14-page demo; retain 16
+  [native table results](archive/native_table_styles_results.md). Verify 53 normal course ODP/PDF pairs plus the separate 14-page demo; retain 16
   table-only fallback contexts in two blocked consumers. Final integration review is pending.
   Raw ODP import now preserves every supplied valid source column proportion,
   including equal and near-equal widths; curated course tables and accepted outputs
@@ -37,6 +44,11 @@
 
 ### Fixes and Maintenance
 
+- Keep seven exemplar gallery WebPs and reuse the existing table screenshot; delete the other
+  61 slide previews. Publish the compact gallery and link all 68 authored slides to their Djot
+  source definitions instead of individual preview files.
+- Archive seven completed root-level planning and review documents and seven completed exemplar
+  review reports from `docs/active_plans/` in `docs/archive/`; update inbound and relative links.
 - Move the announcement guide, authoring overview, visual rubric, Djot syntax, and SVG diagram
   contract into `docs/slide-specs/`, naming the overview `AUTHORING_GUIDE.md`. Add a short README
   index and update inbound and relative links, including course reviews and archived plans.
@@ -44,7 +56,7 @@
 - Review all 460 current replacement-marked slides against rendered diagnostics and mapped
   source pages. Recommend the existing native-table import path as the largest bounded repair
   target: 96 affected slides, compared with 69 artwork-composition candidates. Record the
-  per-slide findings in [replaceme_impact_review_2026-11-09.md](active_plans/replaceme_impact_review_2026-11-09.md).
+  per-slide findings in [replaceme_impact_review_2026-11-09.md](archive/replaceme_impact_review_2026-11-09.md).
   Clarify that a composed figure has one artwork image and associated labels that may extend
   outside it; slide titles, captions, and explanatory prose remain native.
 - Extend that review with a source-table feature census: 61 of the 96 slides use selective

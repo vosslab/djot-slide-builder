@@ -3,7 +3,7 @@
 This dated report records the implementation and corpus evidence for the
 [approved plan](native_table_styles_plan.md). The
 [progress ledger](native_table_styles_progress.md) owns current completion status.
-The independent [integration review](reports/native_table_styles_integration_review_2026-11-09.md)
+The independent [integration review](../active_plans/reports/native_table_styles_integration_review_2026-11-09.md)
 accepted M4 and D18 SPEC/QUALITY on 2026-11-09; saved event evidence is recorded in
 `_temp/table_styles/final_verification/integration_review_evidence.json`.
 
@@ -12,7 +12,7 @@ accepted M4 and D18 SPEC/QUALITY on 2026-11-09; saved event evidence is recorded
 The maintained authoring references are the
 [table authoring guide](../slide-specs/TABLE_AUTHORING_GUIDE.md), exact
 [Djot table syntax](../slide-specs/DJOT_SLIDE_SYNTAX.md), and
-[production demonstration source](../../examples/table_styles.djot).
+[production demonstration source](../../exemplars/table_styles.djot).
 The normal demo outputs are `output/odp/table_styles.odp` and
 `output/pdf/table_styles.pdf`. Generated output files remain ignored production
 artifacts; the source and four guide WebP captures are maintained.

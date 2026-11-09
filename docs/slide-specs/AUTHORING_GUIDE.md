@@ -10,6 +10,11 @@ The authoritative subject specifications are:
 These specifications consolidate the earlier slide style and teaching-methods guides.
 Their examples apply across Genetics, Biotechnology, Biochemistry, and other science courses.
 
+For concrete patterns, browse [exemplars/README.md](../../exemplars/README.md).
+Its seven short decks pair visual previews with teaching purpose, source credits, alternatives,
+and adaptation notes. Copy a deck with its matching local asset folder; use the specifications
+below to guide new authoring rather than treating a curated example as a universal rule.
+
 ## Authority and evidence
 
 Apply the instructor's current request first, then explicit recorded preferences in

@@ -1,0 +1,139 @@
+color-theme: biostatistics
+
+=== layout: title-slide
+
+# Lecture 08A
+
+## Announcements
+## Dr. Neil Voss
+## Oct 21, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- _Announcements_
+- Variance comparisons; ANOVA
+- Microbes 4-5 tutorials released
+- Today: *in-person meeting*, SCH 612
+
+=== layout: one-panel
+
+# Important Course Links
+
+@body
+
+- Biostatistics syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/
+- Weekly schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
+- Points and assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/ASSIGNMENTS_AND_GRADING/
+- Practice problems
+  - https://biologyproblems.org/biostatistics/
+
+=== layout: one-panel
+
+# This Week: Oct 21
+
+@body
+
+- [*In person: Wednesday, 5:00-5:55 p.m.*]{color=#127622}
+  - SCH 612
+- *Topic:* Variance comparisons; ANOVA
+- *Tutorials released:* Microbes 4-5
+- *Due:* Joe's 1-3 assessment
+- *Graduate students:* Revised regression draft
+
+=== layout: one-panel
+
+# Next Week: Oct 28
+
+@body
+
+- [*Asynchronous week*]{color=#990000}
+- *Topic:* Linear to quadratic regression
+- *Due:* Microbes 1-3
+- *Graduate students:* Release-ready tutorial
+- *Target release:* Graduate regression tutorial
+
+@notes
+
+The schedule marks the graduate regression release as a target, not a guaranteed release date.
+
+=== layout: one-panel
+
+# Homework Due Dates (Part 2)
+
+@body
+
+{padding="4pt 18pt"}
+| Assignment | Due date |
+| --- | --- |
+| [Week 08: Joe's 1-3 assessment]{color=#990000} | [Oct 21]{color=#990000} |
+| [Week 09: Microbes 1-3]{color=#990000} | [Oct 28]{color=#990000} |
+| Week 10: Microbes 4-5; regression feedback | Nov 04 |
+| Week 11: Regression assignment | Nov 11 |
+| Week 14: Peer-trial video + feedback | Dec 09 |
+| Week 15: Final project | Dec 16 |
+
+=== layout: two-panels
+
+# Microbes #4: F-test
+
+@left
+
+- The same two years of Busse Woods data.
+- The newer diversity values appear more alike.
+- Attention shifts to variation across sampling locations.
+- *The comparison:* The spread of diversity values in one year vs. the other.
+
+@right
+
+![Microbes 4: schematic test comparison](assets/exemplar_07_logistics_study_support/microbes_4.drawn.svg)
+
+@citation
+
+https://docs.google.com/document/d/1tQE36lOQ_HJ2LsZdpqBnQl98xdz8G6YE7JRa6c9Mi9o/edit
+
+=== layout: reference
+
+# Working Through Tutorials
+
+@body
+
+- Self-paced Google Sheets tutorials outside class
+- Follow each assignment's directions for submission
+- Timed assignment attempts; unlimited retries
+- Work with classmates and ask questions
+- Blackboard is the authoritative record for scores
+
+@notes
+
+Retry policy applies to assignments, not limited-attempt quizzes.
+
+=== layout: two-panels
+hidden: true
+
+# Microbes #5: ANOVA
+
+@right
+
+- Busse Woods across several decades.
+- Older student theses add diversity data.
+- Samples from several years brought together.
+- *The comparison:* Average diversity across years.
+
+@left
+
+![Microbes 5: schematic test comparison](assets/exemplar_07_logistics_study_support/microbes_5.drawn.svg)
+
+@citation
+
+https://docs.google.com/document/d/1xkWsWENaOLRHUk6MO50anhL4DEbjmK8_xBmj22k3tts/edit
+
+=== layout: theend
+
+# THE END

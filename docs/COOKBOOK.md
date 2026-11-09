@@ -33,10 +33,10 @@ slide. Open the output for that review before class.
 Start with an ordinary pipe table, then select a preset only when its teaching job needs one.
 [slide-specs/TABLE_AUTHORING_GUIDE.md](slide-specs/TABLE_AUTHORING_GUIDE.md) provides recipes for
 comparisons, calculations, testcrosses, Punnett squares, matrices, and stable answer states.
-Build [../examples/table_styles.djot](../examples/table_styles.djot) to compare all treatments:
+Build [../exemplars/table_styles.djot](../exemplars/table_styles.djot) to compare all treatments:
 
 ```bash
-source source_me.sh && python3 deck_tools.py build examples/table_styles.djot --format all
+source source_me.sh && python3 deck_tools.py build exemplars/table_styles.djot --format all
 ```
 
 Review `output/pdf/table_styles.pdf` and open `output/odp/table_styles.odp` to edit a native table.

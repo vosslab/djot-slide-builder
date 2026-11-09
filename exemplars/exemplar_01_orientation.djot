@@ -1,0 +1,123 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 05D
+
+## Probability Concepts
+## Chapter 5
+## Dr. Neil Voss
+## Sept 29, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Distinguish overlap from independence
+- Choose [addition]{color=blue} or [multiplication]{color=#9f5600}
+
+=== layout: definitions
+
+# Probability Conditions
+
+@body
+
+- OR: either event qualifies, including both.
+- AND: both events must occur.
+- Mutually exclusive: cannot happen together.
+- Independent: knowing one happened does not change the other's probability.
+- Given: use only outcomes consistent with what we know.
+
+@notes
+
+Mutually exclusive and independent describe different relationships. Keep the condition
+attached to the rule rather than choosing a formula from a keyword alone.
+
+=== layout: one-panel
+
+# Context Before Calculation
+
+@body
+
+- Define the event and the population
+- [OR: add; subtract shared outcomes]{color=blue}
+- [AND: multiply; check independence]{color=#9f5600}
+- Given: restrict to the known group
+- Check totals against the biology
+
+@notes
+
+Use this sequence when deciding which probability rule applies. First name what we are
+counting, then check the relationship between events.
+
+=== layout: section
+
+# Probability Rules
+
+=== layout: subsection
+
+# Addition Rule
+
+## When Either Event Qualifies
+
+=== layout: one-panel
+
+# Addition Rules
+
+@body
+
+In general rules, *B and C* name two events. They are not allele names.
+
+- [Specific Addition Rule]{color=blue}: if two events, B and C, are *mutually exclusive*, then:
+  - [P(B or C) = P(B) + P(C)]{color=blue}
+- [General Addition Rule]{color=blue}: if two events, B and C, are NOT mutually exclusive, then:
+  - [P(B or C) = P(B) + P(C) &ndash; P(B and C)]{color=blue}
+
+@notes
+
+P means the probability of the event in parentheses. Read the condition before the formula.
+OR includes both events; subtract the overlap because simple addition counts it twice.
+
+=== layout: subsection
+
+# Multiplication Rule
+
+## When Both Events Must Occur
+
+=== layout: one-panel
+
+# Multiplication Rules
+
+@body
+
+- [Specific Multiplication Rule]{color=#9f5600}: if two events, B and C, are *independent*, then:
+  - [P(B and C) = P(B) &times; P(C)]{color=#9f5600}
+- [General Multiplication Rule]{color=#9f5600}:
+  - [P(B and C) = P(B) &times; P(C|B)]{color=#9f5600}
+
+P(C|B) is the probability that C occurs, given that B has occurred.
+
+@notes
+
+Read the vertical bar as "given." The general rule also works for independent events;
+independence lets us replace P(C|B) with P(C).
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- [OR: add probabilities; subtract any overlap]{color=blue}
+- [AND: multiply; account for dependence]{color=#9f5600}
+- Read "given" as a restriction on possible outcomes
+
+=== layout: theend
+
+# THE END
+
+@notes
+
+Pause for final questions before closing this deck.

@@ -16,7 +16,7 @@ Current evidence and limits are in the dated
 | M2e: Visual family, guide, and demo | Spec and quality accepted | Maintained 14-page/179-cell demo, authoring guide, and four WebP captures accepted; 842 focused checks passed. |
 | M3a: Import repair | Spec and quality accepted | Secure YAML/XML handling, exact preview suppression, source properties, and drawing-fill precedence verified against fresh native LibreOffice output. |
 | M3b: Corpus adoption | Spec and quality accepted | All 424 physical teaching tables reconciled; all three corpus groups accepted, including fresh LECT12 A-deck correction review. |
-| M4: Final verification | Complete; integration accepted | Physical sources, source/artifact hashes, semantics, render evidence, 53 normal course pairs, and base-suite result reconciled. The independent [integration review](reports/native_table_styles_integration_review_2026-11-09.md) accepted M4 and D18 SPEC/QUALITY with no open requirement gaps or architectural drift. |
+| M4: Final verification | Complete; integration accepted | Physical sources, source/artifact hashes, semantics, render evidence, 53 normal course pairs, and base-suite result reconciled. The independent [integration review](../active_plans/reports/native_table_styles_integration_review_2026-11-09.md) accepted M4 and D18 SPEC/QUALITY with no open requirement gaps or architectural drift. |
 
 The final source census finds 369 Genetics, 53 Biotechnology, and two Biostatistics
 tables. The disjoint owner sets contain 263 + 59 + 102 = 424 tables across 74 files;
@@ -47,7 +47,7 @@ Their native tables are verified; their original whole-slide contexts remain lim
 - **D11 - Header comparison:** Center comparison-table headers.
 - **D12 - Neutral fills:** Omit `draw:fill="none"` when no fill is intended; retain
   explicitly authored white rather than adding a blanket neutral reset.
-- **D13 - Example hygiene:** Exclude only `examples/**` lecture-cover hygiene checks.
+- **D13 - Example hygiene:** Exclude only `exemplars/**` lecture-cover hygiene checks.
   All other native source gates remain active. Spec and quality accepted.
 - **D14 - Source highlights:** Preserve cell-aligned source highlights through native
   fills and borders; retain separate tree/arrow blockers.
@@ -74,7 +74,7 @@ Their native tables are verified; their original whole-slide contexts remain lim
   The baseline retained two native tables and all 53 cells through ODP -> FODP -> ODP
   and matched PDFs. Separate actual UNO editing proves text/fill/border edits,
   resize, save/reopen, and neighbor independence; no GUI interaction claim.
-- **D2 - Production demonstration:** Maintain `examples/table_styles.djot`; normal
+- **D2 - Production demonstration:** Maintain `exemplars/table_styles.djot`; normal
   outputs are `output/odp/table_styles.odp` and `output/pdf/table_styles.pdf`.
 - **D3 - Authoring and backend:** Keep authoring simple; backend complexity serves
   accurate native output. SVG tables remain outside scope.
@@ -82,7 +82,7 @@ Their native tables are verified; their original whole-slide contexts remain lim
 ## Completion
 
 Implementation and M4 verification are complete. The independent AI
-[integration review](reports/native_table_styles_integration_review_2026-11-09.md)
+[integration review](../active_plans/reports/native_table_styles_integration_review_2026-11-09.md)
 accepted the combined result on 2026-11-09; saved evidence identifies event
 `amsg_01a1c251-e003-7c43-99b1-2b65b11d7bbb`. This records no human review, merge
 approval, or release authorization.
