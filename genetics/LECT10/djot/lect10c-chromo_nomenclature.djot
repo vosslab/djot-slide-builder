@@ -39,6 +39,10 @@ color-theme: genetics
 
 # Chromosomal Positions
 
+=== layout: subsection
+
+# Chromosome Arms
+
 === layout: two-panels
 
 # Chromosomes Have Recognizable Bands
@@ -80,6 +84,10 @@ color-theme: genetics
 @body
 
 ![Original banded chromosomes 11-14, showing short p arms, long q arms, centromeres, and numbered regions and bands](assets/lect10c-chromo_nomenclature/image_007.png)
+
+=== layout: subsection
+
+# Chromosome Groups
 
 === layout: stacked-panels
 

@@ -319,8 +319,8 @@ A short recall question can be large and centered with generous open space. A su
 problem needs its complete setup, data, assumptions, and task. Preserve the recognizable
 problem-statement treatment formerly supplied by textbook screenshots while using editable text.
 The exact new problem-panel design remains unsettled; this specification does not invent a
-layout or font override. Use `multiple-choice` with `@question` and `@answer` for every choice-based
-problem, including select-all-that-apply questions. Keep extended explanations on following slides.
+layout or font override. Use `multiple-choice` with `@question` and `@answer` for multiple-choice
+problems, including select-all-that-apply questions. Keep extended explanations on following slides.
 
 For a participation task, useful cues are **Predict**, **Discuss**, **Compare**, **Label**,
 **Explain**, or **Interpret**. A timing example is "30 sec alone -> 1 min with partner -> share
@@ -332,6 +332,18 @@ with a partner, then a few report out. On Zoom, choose a workable response chann
 instruction. MC, open questions, figure interpretation, and discussion can all serve the lesson.
 The earlier guide favors pair discussion over MC for in-person feedback without polling; retain
 that as contextual advice rather than a universal ranking of formats or a rule against Zoom MC.
+
+### Show complete matching answers
+
+Use the instructor-approved Genetics 10B slides 38-39 pattern for term-description matching.
+The question shows full descriptions, answer spaces, and a term bank. The answer repeats the
+same descriptions in the same row order, with the correct terms beside them. Students can read
+each complete match on the answer slide. Retain consistent term colors across the pair, with
+written labels that make each match clear independently of color.
+
+Copy the native editable two-slide example in
+[matching_questions.djot](../../exemplars/matching_questions.djot); see
+[exemplars/README.md](../../exemplars/README.md#matching-questions) for provenance and adaptation.
 
 ### Use mistakes and feedback
 

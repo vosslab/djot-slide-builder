@@ -2,6 +2,25 @@
 
 ### Fixes and Improvements
 
+- Add Genetics 10C subsection cards for Chromosome Arms and Chromosome Groups at the existing
+  topic boundaries. Preserve all teaching content and question/answer sequences; 30 slides.
+
+- Restore Genetics 10B48's original HeLa wording and two nested bullet relationships from
+  original B45, including the omitted oldest/most commonly used cell-line point.
+
+- Preserve the instructor-approved Genetics 10B38-39 matching pair as a standalone exemplar.
+  Document full descriptions beside matched terms, stable row order, and consistent term colors;
+  distinguish matching tables from multiple-choice layouts in the pedagogy guide.
+
+- Shorten Genetics 10B28's Command and Control Center text to three teaching points and pair
+  them with the original B31 Brainbow micrograph as a visual teaser. Retain the later full-size
+  image and mechanism slides, with 55 slides and native editable text.
+
+- Shorten Genetics 10B22's SKY explanation at the instructor's request. Use brief teaching
+  statements and move the display-color example to notes. Arrange B23's comparison in two
+  panels with orange mFISH and purple SKY labels; retain the original author references.
+  Check dye combinations and spectral readout against the original 1996 reports.
+
 - Set all four courses' ultra light colors to 90% HSL lightness while preserving their original
   accent hue and saturation within 8-bit rounding. Keep dark/medium/light divider colors intact;
   update the color guide and recheck the course contrast pairs.

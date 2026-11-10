@@ -9,6 +9,62 @@ Rejected LLM drawings and future repair targets are inventoried in
 including the four chromosome-shape drawings in the final queue pass. The inventory
 records exact paths, source baselines, current replacements, and the teaching detail to restore.
 
+## November 10 chromosome topic boundaries
+
+Add Chromosome Arms before the first band/arm figures and Chromosome Groups before the A-G
+sequence in 10C. Keep Reading Chromosome Addresses and Reading a Karyotype as subsections
+within Chromosomal Positions, with Summary as the closing section. All 28 existing slide blocks
+remain unchanged and in order; the two inserted subsection cards bring the deck to 30 slides.
+Temporary source comparison and rendered cards: `_temp/lect10c_subsections/`.
+Native lint passed; rebuilt ODP/PDF and visually checked both blue subsection cards.
+
+## November 10 HeLa bullet hierarchy
+
+Restore B48 from original B45's native ODP paragraphs and PDF: the death-date detail belongs
+under the Henrietta Lacks origin point; contamination belongs under durability/proliferation.
+Restore the omitted oldest/most commonly used cell-line point and original wording. Remove the
+conversion's added date and name mnemonic from this slide. Keep all other slides unchanged.
+Temporary comparison and render: `_temp/lect10b_hela_hierarchy/`.
+
+## November 10 Brainbow teaser
+
+At the instructor's request, shorten B28 Command and Control Center into three brief teaching
+points about neuronal circuits, fluorescent protein combinations, and distinguishing neighboring
+neurons. Use the existing two-panel layout to pair native text with the original B31 Brainbow
+micrograph (`image_021.jpg`). Keep the full-size micrograph on B31 and the B29-30 mechanism
+figures in place. All other source blocks remain unchanged, with 55 slides. Temporary source,
+export, and rendered comparison: `_temp/lect10b_brainbow/`.
+
+Rebuilt and visually inspected B28. The text and original micrograph are readable side by side;
+the other 54 source blocks and PDF page word sets remain intact. Native lint and capacity pass,
+along with 327 focused source/link/guidance checks. No permanent tests were added.
+
+## November 10 SKY explanation and comparison
+
+The instructor selected established B22-23 for a wording/format revision. Shorten B22 into a
+probe-library, sequence-matching, dye-combination, and software-readout sequence. Keep complete
+short statements and move the yellow/red display example into teaching notes. The chromosome
+type, rather than a particular homolog, receives the color identity.
+
+Use two editable panels on B23: mFISH in orange `#B74300`, SKY in purple `#A719DB`, with dark
+supporting text and the original 1996 author references in the footer. Repeat purple on B22's
+SKY label. Titles remain black; the G/R-band teal/magenta key retains its separate role.
+The comparison contrasts separate filter images with spectral readout. Preserve 55 slides and
+all other source blocks. Temporary source/export comparison and renders:
+`_temp/lect10b_sky_voice/`.
+
+Check the technical wording against the original primary reports:
+[Speicher et al., 1996](https://www.nature.com/articles/ng0496-368) describes chromosome paints
+labeled with different fluor combinations, filters, and software;
+[Schrock et al., 1996](https://pubmed.ncbi.nlm.nih.gov/8662537/) describes chromosome-specific
+spectra and computer classification. This replaces the oversimplified one-dye-per-chromosome
+wording. Both method-label colors meet 5.5:1 against the actual white panel surfaces.
+
+Rebuild and visually inspect B22-23. Native styles preserve the orange/purple labels, and
+neither page has off-page text or capacity concerns. The other 53 source blocks and PDF page
+word sets remain unchanged. Source/ODP/PDF counts agree at 55, and both B answer reveals remain.
+Native lint and 327 focused source/link/guidance checks pass. No permanent tests were added.
+
 ## November 10 sections and ultralight
 
 Restore the three major sections as the organizing structure for A. The opening remains title,

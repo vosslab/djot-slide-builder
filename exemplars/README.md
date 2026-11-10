@@ -64,6 +64,23 @@ two copied Microbes SVGs for deck 07. The measured text/surface pairs meet the h
 target while retaining their hues and semantic background fills. Original course files are
 unchanged. This is source/compiled contrast evidence, separate from rendered review.
 
+## Matching questions
+
+Copy [matching_questions.djot](matching_questions.djot) for an instructor-approved matching
+question/answer pair from Genetics Lecture 10B, slides 38-39. This standalone two-slide example
+supplements the seven decks above; it requires no picture assets.
+
+- Question: full descriptions in a native table, blank answer cells, and a visible term bank.
+- Answer: repeat each full description in the same row order, with its matched term alongside.
+- Carry each term's color from the bank into the answer; written labels carry the meaning too.
+- Keep both slides together so students can compare their choices with complete visible matches.
+
+The instructor approved this pair as an exemplar on November 10, 2026. The source is
+[lect10b-karyotypes.djot](../genetics/LECT10/djot/lect10b-karyotypes.djot), headed
+"Your Turn: Chromosome Shapes" and "Chromosome Shapes: Answer". Wording, colors, and layouts
+are copied unchanged. Use the pattern for brief term-description matching; adapt the content
+and review the rendered pair for longer entries.
+
 ## Build and adapt
 
 Run from the repository root after the setup in [INSTALL.md](../docs/INSTALL.md). Lint one deck,

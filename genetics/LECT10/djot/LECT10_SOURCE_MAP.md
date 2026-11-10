@@ -9,7 +9,7 @@ The full original/current comparison, local repairs, and restored agenda are rec
 | --- | --- | --- | --- |
 | A | 65 | 45 | 20 |
 | B | 55 | 55 | 0 |
-| C | 28 | 28 | 0 |
+| C | 30 | 30 | 0 |
 | D | 65 | 65 | 0 |
 
 The historical bridges below predate the latest topic dividers and question-layout repairs.
@@ -30,12 +30,13 @@ answer. B17 restores the original answer traits and chromosome-pair figure. The 
 "even before DNA replication" distractor and A-D answer are superseded by this source restoration.
 B33-36 restore the four original textbook chromosome-shape figures; their rejected SVG replacements
 remain in the repair backlog, with the restoration now complete. Native headings and matching stay intact.
-C5 and C8 restore original banded chromosome figures. C9-11 restore the original three
-chromosome-group teaching slides before Banding Pattern (C12), including X/Y and the SRY locus.
-C15-17 contain the unanswered CFTR question, worked answer with original band-location figure,
-and enlarged figure. C19 and C23 are the contrast-corrected multiple-choice questions. Summary
-is C25; chromosome-group content is taught in the main sequence. C has 28 visible pages, so
-Lecture 10 totals are 213 authored / 193 visible / 20 hidden. Earlier page bridges are historical.
+C5 introduces Chromosome Arms and C10 introduces Chromosome Groups with subsection cards.
+C6 and C9 restore original banded chromosome figures. C11-13 restore the original three
+chromosome-group teaching slides before Banding Pattern (C14), including X/Y and the SRY locus.
+C17-19 contain the unanswered CFTR question, worked answer with original band-location figure,
+and enlarged figure. C21 and C25 are the contrast-corrected multiple-choice questions. Summary
+is C27; chromosome-group content is taught in the main sequence. C has 30 visible pages, so
+Lecture 10 totals are 215 authored / 195 visible / 20 hidden. Earlier page bridges are historical.
 D32 now introduces Down Syndrome with `subsubsection`; D36 pairs the health text with the former
 standalone D39 image, and D39 illustrates cohesion. D41 retains `question-ask`; D42 restores the
 original fertility contrast and historical counts. D44 uses `subsubsection` for "How Three Homologs

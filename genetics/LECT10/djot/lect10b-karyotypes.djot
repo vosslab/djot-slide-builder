@@ -231,21 +231,47 @@ chromatids; the homologs carry genes for the same characters and may have differ
 
 @body
 
-- Large collection of probes. Each probe is complementary to a unique region of one chromosome &#8211; together the "library" is complementary to all of the chromosomes within the human genome.
-- Each probe is labeled with a fluorescent color that is designated for a specific chromosome.
-  - For example, probes that are complementary to chromosome 1 are labeled with yellow molecules, while those that are complementary to chromosome 2 are labeled with red molecules, and so on.
+- A *probe library* covers every chromosome type
+  - Each probe binds its matching DNA sequence
+- Each chromosome type gets a different *dye combination*
+- [*SKY*]{color=#A719DB}: software reads the fluorescence spectrum
+  - Each chromosome type gets its own display color
 
-=== layout: one-panel
+@notes
+
+The library contains many chromosome-specific DNA fragments. Probes for the same chromosome
+share a dye combination. Software assigns display colors; for example, chromosome 1 can appear
+yellow and chromosome 2 red.
+
+=== layout: two-panels
 
 # *Comparison*
 
-@body
+@left
 
-- There are two slightly different imaging systems that utilize the polarized fluorescence filters to distinguish a mixture of chromosomal paints in a karyotype.
-  - multicolor FISH (mFISH; Speicher et al., 1996).
-  - spectral karyotyping (SKY; Schrock et al., 1996)
-- Main difference\:
-  - one image acquisition with post-analysis in SKY versus sequential imaging with specific filters in mFISH.
+## [*mFISH*]{color=#B74300}
+
+- Multicolor FISH
+- Specific filters select each dye's signal
+- Separate images, then software combines them
+
+@right
+
+## [*SKY*]{color=#A719DB}
+
+- Spectral karyotyping
+- Measures the full fluorescence spectrum
+- Software identifies each chromosome's spectral signature
+
+@citation
+
+Speicher et al., 1996 (mFISH); Schrock et al., 1996 (SKY)
+
+@notes
+
+Both methods use chromosome-specific probe mixtures and fluorescent dye combinations.
+Compare their readout: mFISH collects separate filter images; SKY distinguishes the emission
+spectra. Both use software to identify chromosomes and produce the colored karyotype.
 
 === layout: two-panels
 
@@ -282,15 +308,24 @@ chromatids; the homologs carry genes for the same characters and may have differ
 
 # Another Type of Cellular Painting\: BrainBow
 
-=== layout: one-panel
+=== layout: two-panels
 
 # *Command and Control Center*
 
-@body
+@left
 
-- The human brain contains about 100 billion neurons, organized into circuits more complex than the most powerful supercomputers
-- Powerful imaging techniques allow researchers to monitor multiple areas of the brain while the subject performs various tasks
-- A recent advance uses expression of combinations of colored proteins in brain cells, a technique called "brainbow"
+- Billions of neurons form complex circuits
+- *Brainbow*: combinations of fluorescent proteins
+- Colors help distinguish neighboring neurons
+
+@right
+
+![Brainbow-labeled neurons](assets/lect10b-karyotypes/image_021.jpg)
+
+@notes
+
+Use the colors to follow individual neurons and their processes through the crowded tissue.
+The following slides show how Cre-mediated recombination produces different fluorescent labels.
 
 === layout: two-panels
 
@@ -508,11 +543,12 @@ Two ancestral chromosomes joined. One centromere became inactive. Two active cen
 
 @body
 
-- An immortal human cell line used in research
-- Cervical cancer cells taken from *Henrietta Lacks* in 1951
-- *He* from Henrietta + *La* from Lacks
-- She died of her cancer on October 4, 1951
-- Durable and fast-growing; HeLa cells have also contaminated other cell lines
+- a cell type in an immortal cell line used in scientific research.
+- the oldest and most commonly used human cell lines.
+- derived from cervical cancer cells taken from Henrietta&nbsp;Lacks
+  - a patient who eventually died of her cancer on October 4, 1951.
+- remarkably durable and prolific
+  - contaminated many other cell lines used in research
 
 === layout: two-panels
 

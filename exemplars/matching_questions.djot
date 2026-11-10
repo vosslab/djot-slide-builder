@@ -1,0 +1,36 @@
+color-theme: genetics
+
+=== layout: one-panel
+
+# Your Turn: Chromosome Shapes
+
+@body
+
+Match each description to a term.
+
+{table-style=comparison}
+| Description | Your Answer |
+| --- | --- |
+| Centromere near the middle; nearly equal arms | ? |
+| Centromere slightly off-center | ? |
+| Very short p arm and long q arm | ? |
+| No centromere | ? |
+| Two centromeres | ? |
+
+[*Metacentric*]{color=#0067CC}, [*submetacentric*]{color=#C80085}, [*acrocentric*]{color=#007A00}, [*acentric*]{color=#D40000}, [*dicentric*]{color=#076DAD}
+
+=== layout: one-panel
+
+# Chromosome Shapes: Answer
+
+@body
+
+{table-style=comparison}
+| Description | Term |
+| --- | --- |
+| Centromere near the middle; nearly equal arms | [*Metacentric*]{color=#0067CC} |
+| Centromere slightly off-center | [*Submetacentric*]{color=#C80085} |
+| Very short p arm and long q arm | [*Acrocentric*]{color=#007A00} |
+| No centromere | [*Acentric*]{color=#D40000} |
+| Two centromeres | [*Dicentric*]{color=#076DAD} |
+
