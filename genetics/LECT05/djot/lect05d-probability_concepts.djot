@@ -301,9 +301,9 @@ Introduce the opening challenge before defining the rules used to solve it.
 @body
 
 - The [multiplication rule]{color=orange} states that the probability that two or more [independent]{color=red} events will occur [together]{color=green} is the product of their individual probabilities
-  - [P(A and B) = P(A) × P(B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B)]{color=orange}
 - Probability in an F1 monohybrid cross can be determined using the [multiplication rule]{color=orange}
-- Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a ½ chance of carrying the dominant allele and a ½ chance of carrying the recessive allele
+- Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a &#189; chance of carrying the dominant allele and a &#189; chance of carrying the recessive allele
 
 === layout: one-panel
 
@@ -312,10 +312,10 @@ Introduce the opening challenge before defining the rules used to solve it.
 @body
 
 - The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred, P(B|A).
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B|A) = P(B) &#215; P(A|B)]{color=orange}
     - P(A|B) = The probability that Event A occurs, given that Event B has occurred, is called a conditional probability.
 - If A and B are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B)]{color=orange}
 
 === layout: two-panels
 
@@ -326,8 +326,8 @@ Introduce the opening challenge before defining the rules used to solve it.
 - The conditional probability of Event B, given Event A has happened, is denoted by the symbol P(B|A).
   - If A and B are independent then P(B|A) = P(B)
 - Conversion\:
-  - P(B|A) = P(A and B)/P(A)
-  - P(A|B) = P(A and B)/P(B)
+  - P(B|A) = P(A&#160;and&#160;B)/P(A)
+  - P(A|B) = P(A&#160;and&#160;B)/P(B)
 
 @right
 
@@ -413,12 +413,12 @@ Introduce the opening challenge before defining the rules used to solve it.
 - Part (B)
   - A\: chance that young man had bad allele
   - B\: chance that child will get bad allele
-  - [P(A and B) = P(B|A) × P(A)]{color=orange}
+  - [P(A and B) = P(B|A) &#215; P(A)]{color=orange}
   - P(B|A) = 50%
   - P(A) = 50%
   - [P(A and B) = 25%]{color=orange}
-  - [P(A and B) = P(A|B) × P(B)]{color=orange}
-  - 25% = 100% × P(B); P(B) = 100%
+  - [P(A and B) = P(A|B) &#215; P(B)]{color=orange}
+  - 25% = 100% &#215; P(B); P(B) = 100%
 
 === layout: section
 
@@ -431,9 +431,9 @@ Introduce the opening challenge before defining the rules used to solve it.
 @body
 
 - [Specific Multiplication Rule]{color=orange}, if two events, A and B, are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B)]{color=orange}
 - [General Multiplication Rule]{color=orange}, if two events, A and B, are NOT independent then\:
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B|A) = P(B) &#215; P(A|B)]{color=orange}
 
 === layout: one-panel
 

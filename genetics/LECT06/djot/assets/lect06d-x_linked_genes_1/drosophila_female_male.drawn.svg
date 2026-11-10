@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title description">
+<title id="title">Female and male Drosophila</title>
+<desc id="description">Original schematic dorsal comparison, not measured. A larger female on the left has a pointed, banded abdomen; the smaller male on the right has a rounded abdomen with a dark posterior. Each normal fly has red compound eyes, antennae, six articulated legs and a pair of transparent wings.</desc>
+<defs>
+ <linearGradient id="body-tone" x1="0" y1="0" x2="1" y2="0.8"><stop offset="0" stop-color="#EDD39B"/><stop offset="0.55" stop-color="#C7A66C"/><stop offset="1" stop-color="#9A784C"/></linearGradient>
+ <linearGradient id="eye-tone" x1="0" y1="0" x2="1" y2="0.8"><stop offset="0" stop-color="#D96950"/><stop offset="0.55" stop-color="#BA4539"/><stop offset="1" stop-color="#842F2D"/></linearGradient>
+</defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<g id="female-fly" transform="translate(250 77) scale(1.1) rotate(-7 0 210)">
+<g id="female-six-legs">
+<g id="female-leg-1">
+<path d="M -37 121 L -93 91 L -114 34 L -145 19 L -154 8" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M -37 121 L -93 91 L -114 34 L -145 19 L -154 8" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="female-leg-2">
+<path d="M 37 121 L 91 86 L 117 35 L 143 21 L 153 12" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M 37 121 L 91 86 L 117 35 L 143 21 L 153 12" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="female-leg-3">
+<path d="M -46 157 L -113 185 L -165 172 L -190 186 L -204 184" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M -46 157 L -113 185 L -165 172 L -190 186 L -204 184" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="female-leg-4">
+<path d="M 46 157 L 113 180 L 164 169 L 189 183 L 202 181" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M 46 157 L 113 180 L 164 169 L 189 183 L 202 181" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="female-leg-5">
+<path d="M -38 191 L -107 257 L -145 361 L -174 405 L -183 408" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M -38 191 L -107 257 L -145 361 L -174 405 L -183 408" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="female-leg-6">
+<path d="M 38 191 L 104 251 L 141 350 L 176 392 L 187 395" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M 38 191 L 104 251 L 141 350 L 176 392 L 187 395" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+</g>
+<g id="female-abdomen">
+<path d="M -36 190 C -66 221 -64 272 -52 313 C -40 353 -16 390 0 404 C 16 390 40 353 52 313 C 64 272 66 221 36 190 Z" fill="url(#body-tone)" stroke="#34434A" stroke-width="4" />
+<path d="M -56 235 Q 0 256 56 235 L 53 249 Q 0 266 -53 249 Z" fill="#4B4940" stroke="none" stroke-width="3" />
+<path d="M -58 269 Q 0 290 58 269 L 55 286 Q 0 303 -55 286 Z" fill="#4B4940" stroke="none" stroke-width="3" />
+<path d="M -50 305 Q 0 326 50 305 L 47 323 Q 0 340 -47 323 Z" fill="#4B4940" stroke="none" stroke-width="3" />
+<path d="M -37 340 Q 0 361 37 340 L 34 356 Q 0 373 -34 356 Z" fill="#4B4940" stroke="none" stroke-width="3" />
+<path d="M -19 375 Q 0 396 19 375 L 16 385 Q 0 402 -16 385 Z" fill="#4B4940" stroke="none" stroke-width="3" />
+<path d="M -29 209 C -43 247 -35 299 -21 330" fill="none" stroke="#F3DCA6" stroke-width="5" />
+</g>
+<g id="female-paired-wings">
+<g transform="scale(-1 1)">
+<path d="M 35 151 C 63 168 100 211 128 269 C 152 317 158 359 140 377 C 123 393 104 370 88 334 C 67 289 51 222 35 151 Z" fill="#E4EFF1" stroke="#7B929A" stroke-width="2.8" fill-opacity="0.64"/>
+<path d="M 40 160 C 70 213 110 291 141 368 M 45 171 C 66 235 91 313 133 372 M 73 224 L 98 237 M 97 276 L 123 289 M 88 311 L 117 319" fill="none" stroke="#95ABB0" stroke-width="1.9" />
+<path d="M 53 179 C 91 219 127 288 140 327" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.75"/>
+</g>
+<g transform="scale(1 1)">
+<path d="M 35 151 C 63 168 100 211 128 269 C 152 317 158 359 140 377 C 123 393 104 370 88 334 C 67 289 51 222 35 151 Z" fill="#E4EFF1" stroke="#7B929A" stroke-width="2.8" fill-opacity="0.64"/>
+<path d="M 40 160 C 70 213 110 291 141 368 M 45 171 C 66 235 91 313 133 372 M 73 224 L 98 237 M 97 276 L 123 289 M 88 311 L 117 319" fill="none" stroke="#95ABB0" stroke-width="1.9" />
+<path d="M 53 179 C 91 219 127 288 140 327" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.75"/>
+</g>
+</g>
+<g id="female-thorax">
+<path d="M -30 88 C -51 101 -57 137 -49 168 C -43 197 -26 218 0 224 C 26 218 43 197 49 168 C 57 137 51 101 30 88 Z" fill="url(#body-tone)" stroke="#34434A" stroke-width="4" />
+<path d="M -25 104 C -39 126 -35 169 -19 194" fill="none" stroke="#EED5A2" stroke-width="9" />
+<path d="M -17 104 C -23 134 -20 164 -12 183 M 17 104 C 23 134 20 164 12 183" fill="none" stroke="#927647" stroke-width="2.5" />
+<path d="M -26 198 Q 0 188 26 198 M -18 204 Q 0 230 18 204" fill="none" stroke="#785F3E" stroke-width="2" />
+<path d="M -44 112 L -60 100" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 44 112 L 59 100" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M -50 144 L -65 138" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 50 144 L 65 138" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M -43 174 L -58 180" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 43 174 L 58 180" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M -17 118 L -24 105" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 17 118 L 24 105" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+</g>
+<g id="female-head-and-antennae">
+<path d="M -32 45 C -49 53 -49 76 -32 93 Q 0 108 32 93 C 49 76 49 53 32 45 Q 0 32 -32 45 Z" fill="url(#body-tone)" stroke="#34434A" stroke-width="3.5" />
+<g transform="scale(-1 1)">
+<path d="M 23 44 C 45 40 54 54 51 72 C 49 90 40 100 28 94 C 17 86 14 55 23 44 Z" fill="url(#eye-tone)" stroke="#743C32" stroke-width="2.5" />
+<path d="M 29 49 Q 23 61 27 75" fill="none" stroke="#EA8C70" stroke-width="4" />
+<circle cx="36" cy="58" r="1.7" fill="#792F2B"/>
+<circle cx="40" cy="69" r="1.7" fill="#792F2B"/>
+<circle cx="34" cy="81" r="1.7" fill="#792F2B"/>
+<path d="M 10 48 Q 15 37 12 29" fill="none" stroke="#695638" stroke-width="5" />
+<path d="M 13 31 L 27 8 M 22 17 L 32 14 M 19 21 L 18 10" fill="none" stroke="#4D4D41" stroke-width="2.1" />
+</g>
+<g transform="scale(1 1)">
+<path d="M 23 44 C 45 40 54 54 51 72 C 49 90 40 100 28 94 C 17 86 14 55 23 44 Z" fill="url(#eye-tone)" stroke="#743C32" stroke-width="2.5" />
+<path d="M 29 49 Q 23 61 27 75" fill="none" stroke="#EA8C70" stroke-width="4" />
+<circle cx="36" cy="58" r="1.7" fill="#792F2B"/>
+<circle cx="40" cy="69" r="1.7" fill="#792F2B"/>
+<circle cx="34" cy="81" r="1.7" fill="#792F2B"/>
+<path d="M 10 48 Q 15 37 12 29" fill="none" stroke="#695638" stroke-width="5" />
+<path d="M 13 31 L 27 8 M 22 17 L 32 14 M 19 21 L 18 10" fill="none" stroke="#4D4D41" stroke-width="2.1" />
+</g>
+<circle cx="0" cy="58" r="2.2" fill="#493C2E"/><circle cx="-4" cy="64" r="1.8" fill="#493C2E"/><circle cx="4" cy="64" r="1.8" fill="#493C2E"/>
+</g></g>
+<g id="male-fly" transform="translate(749 99) scale(0.99) rotate(8 0 210)">
+<g id="male-six-legs">
+<g id="male-leg-1">
+<path d="M -37 121 L -93 91 L -114 34 L -145 19 L -154 8" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M -37 121 L -93 91 L -114 34 L -145 19 L -154 8" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="male-leg-2">
+<path d="M 37 121 L 91 86 L 117 35 L 143 21 L 153 12" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M 37 121 L 91 86 L 117 35 L 143 21 L 153 12" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="male-leg-3">
+<path d="M -46 157 L -113 185 L -165 172 L -190 186 L -204 184" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M -46 157 L -113 185 L -165 172 L -190 186 L -204 184" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="male-leg-4">
+<path d="M 46 157 L 113 180 L 164 169 L 189 183 L 202 181" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M 46 157 L 113 180 L 164 169 L 189 183 L 202 181" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="male-leg-5">
+<path d="M -38 191 L -107 257 L -145 361 L -174 405 L -183 408" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M -38 191 L -107 257 L -145 361 L -174 405 L -183 408" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+<g id="male-leg-6">
+<path d="M 38 191 L 104 251 L 141 350 L 176 392 L 187 395" fill="none" stroke="#3C4446" stroke-width="8" />
+<path d="M 38 191 L 104 251 L 141 350 L 176 392 L 187 395" fill="none" stroke="#C3A575" stroke-width="4" />
+</g>
+</g>
+<g id="male-abdomen">
+<path d="M -34 190 C -63 217 -65 268 -51 304 C -40 337 -17 349 0 349 C 22 349 44 332 53 305 C 65 268 61 218 34 190 Z" fill="url(#body-tone)" stroke="#34434A" stroke-width="4" />
+<path d="M -56 234 Q 0 254 56 234 L 59 248 Q 0 268 -59 248 Z" fill="#4B4940" stroke="none" stroke-width="3" />
+<path d="M -60 269 Q 0 289 60 269 C 59 316 35 350 0 350 C -34 350 -58 316 -60 269 Z" fill="#363A38" stroke="#34434A" stroke-width="3" />
+<path d="M -42 290 Q -24 326 0 330" fill="none" stroke="#565A50" stroke-width="5" />
+</g>
+<g id="male-paired-wings">
+<g transform="scale(-1 1)">
+<path d="M 35 151 C 63 168 100 211 128 269 C 152 317 158 359 140 377 C 123 393 104 370 88 334 C 67 289 51 222 35 151 Z" fill="#E4EFF1" stroke="#7B929A" stroke-width="2.8" fill-opacity="0.64"/>
+<path d="M 40 160 C 70 213 110 291 141 368 M 45 171 C 66 235 91 313 133 372 M 73 224 L 98 237 M 97 276 L 123 289 M 88 311 L 117 319" fill="none" stroke="#95ABB0" stroke-width="1.9" />
+<path d="M 53 179 C 91 219 127 288 140 327" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.75"/>
+</g>
+<g transform="scale(1 1)">
+<path d="M 35 151 C 63 168 100 211 128 269 C 152 317 158 359 140 377 C 123 393 104 370 88 334 C 67 289 51 222 35 151 Z" fill="#E4EFF1" stroke="#7B929A" stroke-width="2.8" fill-opacity="0.64"/>
+<path d="M 40 160 C 70 213 110 291 141 368 M 45 171 C 66 235 91 313 133 372 M 73 224 L 98 237 M 97 276 L 123 289 M 88 311 L 117 319" fill="none" stroke="#95ABB0" stroke-width="1.9" />
+<path d="M 53 179 C 91 219 127 288 140 327" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.75"/>
+</g>
+</g>
+<g id="male-thorax">
+<path d="M -30 88 C -51 101 -57 137 -49 168 C -43 197 -26 218 0 224 C 26 218 43 197 49 168 C 57 137 51 101 30 88 Z" fill="url(#body-tone)" stroke="#34434A" stroke-width="4" />
+<path d="M -25 104 C -39 126 -35 169 -19 194" fill="none" stroke="#EED5A2" stroke-width="9" />
+<path d="M -17 104 C -23 134 -20 164 -12 183 M 17 104 C 23 134 20 164 12 183" fill="none" stroke="#927647" stroke-width="2.5" />
+<path d="M -26 198 Q 0 188 26 198 M -18 204 Q 0 230 18 204" fill="none" stroke="#785F3E" stroke-width="2" />
+<path d="M -44 112 L -60 100" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 44 112 L 59 100" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M -50 144 L -65 138" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 50 144 L 65 138" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M -43 174 L -58 180" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 43 174 L 58 180" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M -17 118 L -24 105" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+<path d="M 17 118 L 24 105" fill="none" stroke="#4F4D41" stroke-width="2.1" />
+</g>
+<g id="male-head-and-antennae">
+<path d="M -32 45 C -49 53 -49 76 -32 93 Q 0 108 32 93 C 49 76 49 53 32 45 Q 0 32 -32 45 Z" fill="url(#body-tone)" stroke="#34434A" stroke-width="3.5" />
+<g transform="scale(-1 1)">
+<path d="M 23 44 C 45 40 54 54 51 72 C 49 90 40 100 28 94 C 17 86 14 55 23 44 Z" fill="url(#eye-tone)" stroke="#743C32" stroke-width="2.5" />
+<path d="M 29 49 Q 23 61 27 75" fill="none" stroke="#EA8C70" stroke-width="4" />
+<circle cx="36" cy="58" r="1.7" fill="#792F2B"/>
+<circle cx="40" cy="69" r="1.7" fill="#792F2B"/>
+<circle cx="34" cy="81" r="1.7" fill="#792F2B"/>
+<path d="M 10 48 Q 15 37 12 29" fill="none" stroke="#695638" stroke-width="5" />
+<path d="M 13 31 L 27 8 M 22 17 L 32 14 M 19 21 L 18 10" fill="none" stroke="#4D4D41" stroke-width="2.1" />
+</g>
+<g transform="scale(1 1)">
+<path d="M 23 44 C 45 40 54 54 51 72 C 49 90 40 100 28 94 C 17 86 14 55 23 44 Z" fill="url(#eye-tone)" stroke="#743C32" stroke-width="2.5" />
+<path d="M 29 49 Q 23 61 27 75" fill="none" stroke="#EA8C70" stroke-width="4" />
+<circle cx="36" cy="58" r="1.7" fill="#792F2B"/>
+<circle cx="40" cy="69" r="1.7" fill="#792F2B"/>
+<circle cx="34" cy="81" r="1.7" fill="#792F2B"/>
+<path d="M 10 48 Q 15 37 12 29" fill="none" stroke="#695638" stroke-width="5" />
+<path d="M 13 31 L 27 8 M 22 17 L 32 14 M 19 21 L 18 10" fill="none" stroke="#4D4D41" stroke-width="2.1" />
+</g>
+<circle cx="0" cy="58" r="2.2" fill="#493C2E"/><circle cx="-4" cy="64" r="1.8" fill="#493C2E"/><circle cx="4" cy="64" r="1.8" fill="#493C2E"/>
+</g></g>
+</g>
+<g id="sex-labels" fill="#213547" font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle">
+ <text x="250" y="580" font-size="39">Female <tspan font-family="Arial Unicode MS" font-size="49">&#9792;</tspan></text>
+ <text x="749" y="580" font-size="39">Male <tspan font-family="Arial Unicode MS" font-size="49">&#9794;</tspan></text>
+</g>
+</svg>

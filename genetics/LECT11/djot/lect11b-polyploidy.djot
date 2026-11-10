@@ -37,47 +37,47 @@ hidden: true
 
 @body
 
-![Slide image 1](assets/lect11b-polyploidy/image_001.png)
+![Slide image 1](assets/visual_renewal/chrysanthemum_18.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 2](assets/lect11b-polyploidy/image_002.png)
+![Slide image 2](assets/visual_renewal/chrysanthemum_18_36.drawn.svg)
 
 === layout: two-panels
 
 
 @left
 
-![Slide image 4](assets/lect11b-polyploidy/image_004.png)
+![Slide image 4](assets/visual_renewal/chrysanthemum_monoploid.drawn.svg)
 
 @right
 
-![Slide image 3](assets/lect11b-polyploidy/image_003.png)
+![Slide image 3](assets/visual_renewal/chrysanthemum_36_54.drawn.svg)
 
 === layout: two-panels
 
 
 @left
 
-![Slide image 5](assets/lect11b-polyploidy/image_004.png)
+![Slide image 5](assets/visual_renewal/chrysanthemum_monoploid.drawn.svg)
 
 @right
 
-![Slide image 5](assets/lect11b-polyploidy/image_005.png)
+![Slide image 5](assets/visual_renewal/chrysanthemum_54_72.drawn.svg)
 
 === layout: two-panels
 
 
 @left
 
-![Slide image 6](assets/lect11b-polyploidy/image_004.png)
+![Slide image 6](assets/visual_renewal/chrysanthemum_monoploid.drawn.svg)
 
 @right
 
-![Slide image 6](assets/lect11b-polyploidy/image_006.png)
+![Slide image 6](assets/visual_renewal/chrysanthemum_72_90.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -110,7 +110,7 @@ hidden: true
 
 @left
 
-![Slide image 8](assets/lect11b-polyploidy/image_008.png)
+![Slide image 8](assets/visual_renewal/ploidy_sets.drawn.svg)
 
 @right
 
@@ -190,7 +190,7 @@ hidden: true
 
 @right
 
-![Slide image 13](assets/lect11b-polyploidy/image_013.png)
+![Slide image 13](assets/lect11b-polyploidy/strawberry_polyploid.drawn.svg)
 
 === layout: two-panels
 

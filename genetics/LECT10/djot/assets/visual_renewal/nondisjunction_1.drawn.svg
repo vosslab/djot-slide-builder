@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Nondisjunction in meiosis 1</title>
+<desc id="desc">Simplified lineage follows one homologous chromosome pair; other chromosomes are omitted. Blue and orange identify the two homologs. All four gamete products are shown.</desc>
+<rect width="1200" height="650" fill="white"/>
+<text x="130" y="110" font-family="Arial" font-size="25" text-anchor="middle" fill="#222">Replicated pair</text>
+<text x="130" y="295" font-family="Arial" font-size="25" text-anchor="middle" fill="#222">After meiosis I</text>
+<text x="130" y="495" font-family="Arial" font-size="25" text-anchor="middle" fill="#222">After meiosis II</text>
+<g id="starting-pair">
+<ellipse cx="740" cy="105" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M 714.5,78 Q 733.5,105 714.5,132 M 734.5,78 Q 715.5,105 734.5,132" fill="none" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+<circle cx="724.5" cy="105" r="5" fill="#222"/>
+<path d="M 745.5,78 Q 764.5,105 745.5,132 M 765.5,78 Q 746.5,105 765.5,132" fill="none" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="755.5" cy="105" r="5" fill="#222"/>
+</g>
+<path d="M700,165 L500,226 M495,218 L500,226 L505,218" fill="none" stroke="#647681" stroke-width="3"/>
+<path d="M780,165 L980,226 M975,218 L980,226 L985,218" fill="none" stroke="#647681" stroke-width="3"/>
+<g id="meiosis-i-500">
+<ellipse cx="500" cy="290" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M 474.5,263 Q 493.5,290 474.5,317 M 494.5,263 Q 475.5,290 494.5,317" fill="none" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+<circle cx="484.5" cy="290" r="5" fill="#222"/>
+<path d="M 505.5,263 Q 524.5,290 505.5,317 M 525.5,263 Q 506.5,290 525.5,317" fill="none" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="515.5" cy="290" r="5" fill="#222"/>
+</g>
+<g id="meiosis-i-980">
+<ellipse cx="980" cy="290" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+</g>
+<g id="gamete-380">
+<ellipse cx="380" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M 364.5,463 L 364.5,517" stroke="#076DAD" stroke-width="10" stroke-linecap="round"/>
+<circle cx="364.5" cy="490" r="5" fill="#222"/>
+<path d="M 395.5,463 L 395.5,517" stroke="#B74300" stroke-width="10" stroke-linecap="round"/>
+<circle cx="395.5" cy="490" r="5" fill="#222"/>
+</g>
+<text x="380" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n + 1</text>
+<path d="M500,350 L380,421 M375,413 L380,421 L385,413" fill="none" stroke="#647681" stroke-width="3"/>
+<g id="gamete-620">
+<ellipse cx="620" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M 604.5,463 L 604.5,517" stroke="#076DAD" stroke-width="10" stroke-linecap="round"/>
+<circle cx="604.5" cy="490" r="5" fill="#222"/>
+<path d="M 635.5,463 L 635.5,517" stroke="#B74300" stroke-width="10" stroke-linecap="round"/>
+<circle cx="635.5" cy="490" r="5" fill="#222"/>
+</g>
+<text x="620" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n + 1</text>
+<path d="M500,350 L620,421 M615,413 L620,421 L625,413" fill="none" stroke="#647681" stroke-width="3"/>
+<g id="gamete-860">
+<ellipse cx="860" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+</g>
+<text x="860" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n - 1</text>
+<path d="M980,350 L860,421 M855,413 L860,421 L865,413" fill="none" stroke="#647681" stroke-width="3"/>
+<g id="gamete-1100">
+<ellipse cx="1100" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+</g>
+<text x="1100" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n - 1</text>
+<path d="M980,350 L1100,421 M1095,413 L1100,421 L1105,413" fill="none" stroke="#647681" stroke-width="3"/>
+<text x="745" y="208" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">Homologs together</text>
+<text x="745" y="635" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">One pair shown * chromosome counts are relative to a normal gamete</text>
+</svg>

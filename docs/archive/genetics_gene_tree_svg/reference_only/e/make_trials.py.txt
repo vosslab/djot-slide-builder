@@ -1,0 +1,129 @@
+from pathlib import Path
+from html import escape
+import subprocess
+import xml.etree.ElementTree as ET
+
+BASE=Path('_temp/genetics_visual_renewal/m3_phylogenetics/e')
+BLUE='#006CA8'; RED='#B54400'; INK='#222222'; GREEN='#007A52'; GOLD='#F2C94C'
+
+def text(x,y,t,size=24,color=INK,anchor='start'):
+    return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}" text-anchor="{anchor}">{escape(t)}</text>'
+def path(d,color=INK,width=3,dash=''):
+    return f'<path d="{d}" fill="none" stroke="{color}" stroke-width="{width}" stroke-linejoin="round" stroke-linecap="round"'+(f' stroke-dasharray="{dash}"' if dash else '')+'/>'
+def line(x1,y1,x2,y2,color=INK,width=3,dash=''):
+    return path(f'M{x1},{y1} L{x2},{y2}',color,width,dash)
+def cross(x,y,color=INK):
+    return path(f'M{x-7},{y-7} L{x+7},{y+7} M{x-7},{y+7} L{x+7},{y-7}',color,3)
+def save(name,w,h,title,desc,body):
+    svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title description"><title id="title">{escape(title)}</title><desc id="description">{escape(desc)}</desc><g font-family="Arial, sans-serif">'+body+'</g></svg>'
+    p=BASE/'assets'/name;p.write_text(svg)
+    root=ET.parse(p).getroot(); assert not root.findall('.//{http://www.w3.org/2000/svg}image')
+    for width in [320,1200]:
+        subprocess.run(['rsvg-convert','-b','white','-w',str(width),'-o',str(BASE/'previews'/f'{p.stem}_{width}.png'),str(p)],check=True)
+
+# Both species speciation events are explicit; allele tracks stop at source losses.
+b=''
+b+='<g id="species-scaffold">'+path('M70,210 H300 L550,350 H600 M300,210 L850,70 M600,350 L850,250 M600,350 L850,430','#D9E4EC',42)+'</g>'
+b+='<g id="allele-a1">'+path('M70,198 H300 L550,338 H600 L850,418',BLUE,4)+path('M300,198 L590,124',BLUE,4)+path('M600,338 L735,280',BLUE,4)+cross(590,124,BLUE)+cross(735,280,BLUE)+'</g>'
+b+='<g id="allele-a2">'+path('M205,222 H300 L850,82',RED,4,'9 7')+path('M300,222 L550,362 H600 L850,262',RED,4,'9 7')+path('M600,362 L725,402',RED,4,'9 7')+cross(725,402,RED)+'</g>'
+b+=text(65,168,'A1',26,BLUE)+text(230,258,'A2',26,RED)
+b+=text(560,102,'A1 lost',22,BLUE)+text(670,246,'A1 lost',22,BLUE)+text(650,451,'A2 lost',22,RED)
+b+=text(880,82,'Species 1',25)+text(880,112,'A2',25,RED)+text(880,262,'Species 2',25)+text(880,292,'A2',25,RED)+text(880,430,'Species 3',25)+text(880,460,'A1',25,BLUE)
+b+=text(65,36,'Ancestor: A1 fixed',26)+text(205,302,'Mutation',22)+text(205,328,'A1 + A2',22)
+b+=line(207,282,207,233,INK,2)
+b+=text(65,508,'Shading: species ancestry',22)+text(440,508,'Solid A1',22,BLUE)+text(610,508,'Dashed A2',22,RED)+text(820,508,'\xd7 = loss',22)
+save('phy_e_allele_sorting_a.drawn.svg',1040,530,'Sorting polymorphic alleles','Original conceptual reconstruction of LECT12E source page2 and C source page39. Two species splits; surviving A2 in species1 and2; A1 in species3. Branch lengths schematic.',b)
+mini=''
+for x,title,order,color in [(30,'Species tree',['1','2','3'],INK),(285,'Gene tree',['3','1','2'],RED)]:
+    mini+=text(x+95,35,title,25,anchor='middle')
+    mini+=path(f'M{x+20},230 V110 H{x+155} M{x+20},185 H{x+100} V150 H{x+155} M{x+100},185 V220 H{x+155}',color,4)
+    for y,label in [(110,order[0]),(150,order[1]),(220,order[2])]:mini+=text(x+170,y+8,label,26)
+mini+=text(265,290,'Species labels; lengths schematic',20,anchor='middle')
+save('phy_e_allele_comparison.drawn.svg',540,315,'Species and surviving-allele trees','Species2 and3 form a clade; the surviving A2 alleles in species1 and2 form the alternative gene relationship.',mini)
+
+# Original enhancer order is T2 T2 T1 T1 T2 T1, with source losses in order.
+slots=[2,2,1,1,2,1]
+left_loss=[1,0,4];right_loss=[5,2,3]
+def locus(x,y,lost=(),focus=None,scale=1):
+    s=f'<g transform="translate({x} {y}) scale({scale})">'
+    s+='<rect x="0" y="0" width="310" height="22" fill="#ABC2CC"/>'
+    for i,tissue in enumerate(slots):
+        color='#404040' if i in lost else (GOLD if tissue==1 else GREEN)
+        s+=f'<rect x="{25+i*34}" y="0" width="12" height="22" fill="{color}"/>'
+        if i in lost:s+=path(f'M{25+i*34},-6 L{37+i*34},28',INK,2)
+    s+='<rect x="245" y="0" width="25" height="22" fill="white" stroke="#222" stroke-width="2"/><rect x="270" y="0" width="80" height="22" fill="#C84458"/>'
+    s+=path('M270,31 V44 H330 M321,37 L331,44 L321,51',INK,2)
+    if focus is not None:s+=path(f'M{31+focus*34},-33 V-9 M{25+focus*34},-16 L{31+focus*34},-8 L{37+focus*34},-16',RED,3)
+    return s+'</g>'
+legend=text(30,31,'Tissue 1 enhancer',22)+f'<rect x="230" y="13" width="22" height="22" fill="{GOLD}" stroke="#222"/>'+text(300,31,'Tissue 2 enhancer',22)+f'<rect x="505" y="13" width="22" height="22" fill="{GREEN}"/>'+text(580,31,'Black / slash = loss',22)
+b=legend+locus(320,88)
+b+=text(320,78,'Enhancers',20)+text(555,78,'P',20)+text(600,78,'Coding region',20)
+b+=path('M490,150 L265,195 M490,150 L765,195',INK,2)+text(490,176,'Duplication',23,anchor='middle')
+for stage,y in enumerate([220,325,430,535]):
+    for x,losses in [(55,left_loss),(575,right_loss)]:
+        b+=locus(x,y,losses[:stage],losses[stage-1] if stage else None)
+    if stage: b+=text(490,y+15,f'Loss {stage}',22,anchor='middle')
+b+=text(230,615,'Active in tissue 1 only',25,anchor='middle')+text(750,615,'Active in tissue 2 only',25,anchor='middle')
+save('phy_e_enhancer_vertical.drawn.svg',1000,640,'Complementary enhancer losses after gene duplication','Source LECT12E final conceptual figure. Three tissue1 and three tissue2 enhancers before duplication. Left copy loses tissue2 enhancers in order2,1,3; right copy loses tissue1 enhancers in order3,1,2. Promoter and coding region remain.',b)
+b=legend
+b+=text(110,90,'Ancestral locus',24,anchor='middle')+locus(15,120,scale=.60)
+b+=path('M225,136 H270 M260,130 L272,136 L260,142',INK,2)
+b+=text(590,90,'Duplicated copies: three successive enhancer losses',24,anchor='middle')
+for k,x in enumerate([285,460,635,810]):
+    b+=text(x+80,145,'Intact' if k==0 else f'Loss {k}',22,anchor='middle')
+    b+=locus(x,190,left_loss[:k],scale=.45)+locus(x,340,right_loss[:k],scale=.45)
+    if k<3:
+        b+=path(f'M{x+160},205 H{x+171} M{x+160},355 H{x+171}',INK,2)
+b+=text(290,250,'Copy 1',22)+text(290,400,'Copy 2',22)
+b+=text(885,270,'Tissue 1 only',22,anchor='middle')+text(885,420,'Tissue 2 only',22,anchor='middle')
+save('phy_e_enhancer_horizontal.drawn.svg',1000,460,'Enhancer losses as two parallel sequences','Same six enhancer identities and three loss steps as the vertical trial. Promoter and coding region intact. P denotes promoter; arrow denotes transcription.',b)
+assert set(left_loss)=={i for i,x in enumerate(slots) if x==2}
+assert set(right_loss)=={i for i,x in enumerate(slots) if x==1}
+
+(BASE/'trial_e.djot').write_text('''color-theme: genetics
+
+=== layout: one-panel
+
+# Gene trees may differ from species trees
+
+@body
+
+![Sorting A1 and A2 through two species splits](assets/phy_e_allele_sorting_a.drawn.svg)
+
+An ancestor fixed for A1 gains A2 before the species split. Sorting of those polymorphic alleles gives a different gene tree.
+
+=== layout: two-panels
+
+# Follow the allele and the species
+
+@left
+
+![Sorting A1 and A2 through two species splits](assets/phy_e_allele_sorting_a.drawn.svg)
+
+@right
+
+![Compare species ancestry with allele ancestry](assets/phy_e_allele_comparison.drawn.svg)
+
+Species 2 and 3 are closest in the species tree; the surviving alleles in species 1 and 2 are closest in the gene tree.
+
+=== layout: one-panel
+
+# Specialization by subfunctionalization
+
+@body
+
+![Two duplicated copies lose complementary enhancer sets](assets/phy_e_enhancer_vertical.drawn.svg)
+
+Duplication preserves both functions. Three enhancer losses in each copy leave one active in tissue 1 and the other in tissue 2. P = promoter; arrow = transcription.
+
+=== layout: one-panel
+
+# Specialization by subfunctionalization
+
+@body
+
+![Parallel sequence of three losses per copy](assets/phy_e_enhancer_horizontal.drawn.svg)
+
+The two copies lose complementary enhancer sets. Coding regions and promoters remain; one copy is active in tissue 1, the other in tissue 2.
+''')
+print('Four scratch trial pages ready; 4 SVGs each rendered at320 and1200px; enhancer identities checked.')

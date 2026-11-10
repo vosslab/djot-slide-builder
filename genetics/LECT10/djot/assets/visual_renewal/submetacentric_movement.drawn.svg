@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="365" viewBox="0 0 1100 365" role="img" aria-labelledby="title desc"><title id="title">Submetacentric chromosome movement</title><desc id="desc">Original simplified chromosome silhouettes. Blue chromatids and dark centromeres preserve the source distinctions.</desc><rect width="1100" height="365" fill="white"/>
+<ellipse cx="235" cy="155" rx="205" ry="120" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M45 155 Q235 -35 425 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M45 155 Q235 35 425 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M45 155 Q235 155 425 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M45 155 Q235 275 425 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M45 155 Q235 345 425 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<ellipse cx="780" cy="155" rx="205" ry="120" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M590 155 Q780 -35 970 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M590 155 Q780 35 970 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M590 155 Q780 155 970 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M590 155 Q780 275 970 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M590 155 Q780 345 970 155" stroke="#B2BDC3" stroke-width="2" fill="none"/>
+<path d="M207 75 Q230 155 201 197 M263 75 Q240 155 269 197" stroke="#076DAD" stroke-width="18" fill="none" stroke-linecap="round"/>
+<ellipse cx="221" cy="155" rx="11" ry="14" fill="#444"/>
+<ellipse cx="249" cy="155" rx="11" ry="14" fill="#444"/>
+<path d="M750 75 Q660 120 660 155 Q660 176.0 705 197" stroke="#076DAD" stroke-width="17" fill="none" stroke-linecap="round"/><circle cx="660" cy="155" r="11" fill="#444"/>
+<path d="M810 75 Q900 120 900 155 Q900 176.0 855 197" stroke="#076DAD" stroke-width="17" fill="none" stroke-linecap="round"/><circle cx="900" cy="155" r="11" fill="#444"/>
+<path d="M460 155 H540 l-12 -7 m12 7 l-12 7" stroke="#333" stroke-width="3" fill="none"/>
+<text x="235" y="320" font-family="Arial" font-size="27" text-anchor="middle" fill="#222">Metaphase</text>
+<text x="780" y="320" font-family="Arial" font-size="27" text-anchor="middle" fill="#222">Anaphase</text>
+<text x="550" y="357" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Submetacentric (J-shaped)</text>
+</svg>

@@ -36,9 +36,9 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 @body
 
 - [Specific Multiplication Rule]{color=orange}, if two events, A and B, are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B)]{color=orange}
 - [General Multiplication Rule]{color=orange}, if two events, A and B, are NOT independent then\:
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B|A) = P(B) &#215; P(A|B)]{color=orange}
 
 === layout: one-panel
 
@@ -187,7 +187,7 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 - [P(hetero | round)]{color=red}
   - [This]{color=red} is equal to the [probability that the seed is both heterozygous and round]{color=orange} divided by the [probability the seed is round (with any genotype)]{color=gray}
 - [P(hetero | round)]{color=red}
-  - = [P(hetero and round)]{color=orange} ÷ [P(round)]{color=gray}
+  - = [P(hetero and round)]{color=orange} &#247; [P(round)]{color=gray}
 
 === layout: two-plus-one-panels
 
@@ -205,13 +205,13 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 - [Goal\:]{color=red}
   - [P(hetero | round)]{color=red}
 - [P(hetero | round)]{color=red}
-  - = [P(hetero and round)]{color=orange} ÷ [P(round)]{color=gray}
-- [P(round) = ¾]{color=gray}
-- [P(hetero) = 2 out of 4 = ½]{color=green}
+  - = [P(hetero and round)]{color=orange} &#247; [P(round)]{color=gray}
+- [P(round) = &#190;]{color=gray}
+- [P(hetero) = 2 out of 4 = &#189;]{color=green}
 - [P(round|hetero) = 1]{color=green}
 - [P(round and hetero)]{color=orange}
   - [= P(hetero)]{color=green} [&times;]{color=orange} [P(round|hetero)]{color=green}
-  - = [½]{color=green} [&times;]{color=orange} [1]{color=green} = [½]{color=orange}
+  - = [&#189;]{color=green} [&times;]{color=orange} [1]{color=green} = [&#189;]{color=orange}
 
 === layout: two-plus-one-panels
 
@@ -228,11 +228,11 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 
 - [Goal\:]{color=red}
   - [P(hetero | round)]{color=red}
-- [P(round) = ¾]{color=gray}
-- [P(round and hetero) = ½]{color=orange}
+- [P(round) = &#190;]{color=gray}
+- [P(round and hetero) = &#189;]{color=orange}
 - [P(hetero | round)]{color=red}
-  - [= ]{color=red}[P(hetero and round)]{color=orange} ÷ [P(round)]{color=gray}
-  - [= ½ ÷ ¾]{color=red}
+  - [= ]{color=red}[P(hetero and round)]{color=orange} &#247; [P(round)]{color=gray}
+  - [= &#189; &#247; &#190;]{color=red}
   - [= 4/6 = 2/3]{color=red}
 
 === layout: two-plus-one-panels
@@ -359,8 +359,8 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 
 {table-style=punnett}
 | gametes | &#8531; A | &#8532; a |
-| ½ A | 1/6 AA | 2/6 Aa |
-| ½ a | 1/6 Aa | 2/6 aa |
+| &#189; A | 1/6 AA | 2/6 Aa |
+| &#189; a | 1/6 Aa | 2/6 aa |
 
 === layout: section
 
@@ -423,10 +423,10 @@ Connect the objectives to mixed parental genotypes, selected round seeds, and un
 - B\: individual has disease
 - [P(A) = P(A and B) + P(A and not B)]{color=blue}
 - P(A and B)
-  - [= P(A|B) × P(B) = 1 × 0.002]{color=orange}
+  - [= P(A|B) &#215; P(B) = 1 &#215; 0.002]{color=orange}
 - P(A and not B)
-  - [= P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)]{color=orange}
-- [1×0.002]{color=orange} [+]{color=blue} [0.002×(1&ndash;0.002)]{color=orange}
+  - [= P(A|not B) &#215; P(not B) = 0.002 &#215; (1&ndash;0.002)]{color=orange}
+- [1&#215;0.002]{color=orange} [+]{color=blue} [0.002&#215;(1&ndash;0.002)]{color=orange}
   - = [0.003996]{color=blue}
 
 @top-right

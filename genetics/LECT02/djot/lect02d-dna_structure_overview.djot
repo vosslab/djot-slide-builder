@@ -42,7 +42,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect02d-dna_structure_overview/image_001.jpg)
+![Phosphate, pentose, and purine or pyrimidine base](assets/lect02d-dna_structure_overview/nucleotide.drawn.svg)
 
 === layout: section
 
@@ -54,7 +54,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 2](assets/lect02d-dna_structure_overview/image_002.jpg)
+![Numbered pyrimidine and purine rings](assets/lect02d-dna_structure_overview/numbered_bases.drawn.svg)
 
 === layout: section
 
@@ -65,7 +65,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect02d-dna_structure_overview/image_003.jpg)
+![Adenine and guanine chemical structures](assets/lect02d-dna_structure_overview/purines.drawn.svg)
 
 - "Purines = 2 rings" (try saying it with a funny accent)
 
@@ -78,7 +78,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 4](assets/lect02d-dna_structure_overview/image_004.jpg)
+![Cytosine, thymine, and uracil chemical structures](assets/lect02d-dna_structure_overview/pyrimidines.drawn.svg)
 
 - pYrimidines \: cYtosine, thYmine, uracYl (!)
 
@@ -91,7 +91,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 5](assets/lect02d-dna_structure_overview/image_005.jpg)
+![Ribose and deoxyribose structures](assets/lect02d-dna_structure_overview/ribose_deoxyribose.drawn.svg)
 
 === layout: one-panel
 
@@ -113,17 +113,28 @@ color-theme: genetics
 
 ![Slide image 6](assets/lect02d-dna_structure_overview/image_006.jpg)
 
+=== layout: one-panel
+
+# Nucleotides join to forma DNA or an RNA chain
+
+@body
+
+![Chemical structure of the 5-prime A-G-C 3-prime chain](assets/lect02d-dna_structure_overview/agc_chemical_chain.drawn.svg)
+
 === layout: two-panels
 
 # Nucleotides join to forma DNA or an RNA chain
 
 @left
 
-![Slide image 7](assets/lect02d-dna_structure_overview/image_007.jpg)
+![A-G-C polynucleotide schematic](assets/lect02d-dna_structure_overview/agc_schematic.drawn.svg)
 
 @right
 
-- Polynucleotide chains have a 5&prime;-phosphate at one end and a 3&prime;-OH on the other end
+- Polynucleotide chains have a 5&prime;-phosphate at one end and a 3&prime;-OH on the other end.
+- The 5&prime; end terminates with a phosphate group.
+- Phosphate is linked to the 5&prime; carbon and to the 3&prime; carbon by phosphodiester bonds.
+- The 3&prime; end terminates with hydroxyl (-OH).
 
 === layout: one-panel
 
@@ -131,22 +142,52 @@ color-theme: genetics
 
 @body
 
-![Slide image 8](assets/lect02d-dna_structure_overview/image_008.jpg)
+![Five sugar-phosphate units bearing bases](assets/lect02d-dna_structure_overview/sugar_phosphate_backbone.drawn.svg)
 
 === layout: section
 
 # Base Pairing
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Base Pairing
 
-@body
+@left
 
-![Slide image 9](assets/lect02d-dna_structure_overview/image_009.jpg)
+![Nine complementary base pairs in the original sequence](assets/lect02d-dna_structure_overview/base_pair_ladder.drawn.svg)
+
+@right
 
 - Standard base pairs
 - 1 base pair Mr = \~640
+
+=== layout: two-panels
+
+# Adenine-Thymine Base Pairing
+
+@left
+
+![Adenine-thymine chemical structure with C1-prime attachments](assets/lect02d-dna_structure_overview/at_pair_dimensions.drawn.svg)
+
+@right
+
+Upper H-bond: 2.8 &Aring;. Lower H-bond: 3.0 &Aring;.
+
+C1&prime; to C1&prime;: 11.1 &Aring;.
+
+=== layout: two-panels
+
+# Guanine-Cytosine Base Pairing
+
+@left
+
+![Guanine-cytosine chemical structure with C1-prime attachments](assets/lect02d-dna_structure_overview/gc_pair_dimensions.drawn.svg)
+
+@right
+
+Upper H-bond: 2.9 &Aring;. Middle H-bond: 3.0 &Aring;. Lower H-bond: 2.9 &Aring;.
+
+C1&prime; to C1&prime;: 10.8 &Aring;.
 
 === layout: two-panels
 
@@ -154,70 +195,96 @@ color-theme: genetics
 
 @left
 
-![Slide image 10](assets/lect02d-dna_structure_overview/image_010.png)
+![Guanine-cytosine with three hydrogen bonds](assets/lect02d-dna_structure_overview/gc_pair.drawn.svg)
 
 @right
 
-![Slide image 11](assets/lect02d-dna_structure_overview/image_011.png)
+![Adenine-thymine with two hydrogen bonds](assets/lect02d-dna_structure_overview/at_pair.drawn.svg)
 
-=== layout: one-plus-two-panels
+=== layout: image-comparison
 
-# Structure of A-T and G-C base pairs in DNA
+# Structure of A-T base pairs in DNA
 
-@left
+@top-left
 
-- A-T base pairs have two H-bonds.
-- G-C base pairs have three
-- H-bonds
+![A-T chemical pairing and deoxyribose attachments](assets/lect02d-dna_structure_overview/at_pair_deoxyribose.drawn.svg)
 
 @top-right
 
-![Slide image 12](assets/lect02d-dna_structure_overview/image_012.jpg)
+![Original A-T molecular model](assets/lect02d-dna_structure_overview/at_molecular_panel.png)
 
-- A-T base pairing.
+@bottom-left
+
+Two hydrogen bonds attract A and T.
 
 @bottom-right
 
-![Slide image 13](assets/lect02d-dna_structure_overview/image_013.jpg)
+A-T base pairing: molecular model.
 
-- G-C base pairing
+=== layout: image-comparison
+
+# Structure of G-C base pairs in DNA
+
+@top-left
+
+![G-C chemical pairing and deoxyribose attachments](assets/lect02d-dna_structure_overview/gc_pair_deoxyribose.drawn.svg)
+
+@top-right
+
+![Original G-C molecular model](assets/lect02d-dna_structure_overview/gc_molecular_panel.png)
+
+@bottom-left
+
+Three hydrogen bonds attract G and C.
+
+@bottom-right
+
+G-C base pairing: molecular model.
 
 === layout: section
 
 # The Double Strand
 
-=== layout: two-panels
+=== layout: image-comparison
 
 # The DNA double helix
 
-@left
+@top-left
 
-![Slide image 14](assets/lect02d-dna_structure_overview/image_014.jpg)
+![Original B-DNA molecular model](assets/lect02d-dna_structure_overview/b_dna_molecular_panel.png)
 
-@right
+@top-right
 
-- Molecular structure of the DNA double helix in the standard "B form."
+![B-DNA helix schematic](assets/lect02d-dna_structure_overview/b_dna_helix.drawn.svg)
 
-=== layout: one-panel
+@bottom-left
 
+Molecular structure: standard "B form."
 
-@body
+@bottom-right
 
-![Slide image 15](assets/lect02d-dna_structure_overview/image_015.png)
-
-=== layout: one-panel
-
-
-@body
-
-![Slide image 16](assets/lect02d-dna_structure_overview/image_016.jpg)
+Paired nucleotides (schematic).
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 16](assets/lect02d-dna_structure_overview/image_016.jpg)
+![Slide image 15](assets/lect02d-dna_structure_overview/polarity_quote.drawn.svg)
+
+=== layout: one-panel
+
+
+@body
+
+![Complementary T-A, C-G, A-T base pairs with labeled strand ends](assets/lect02d-dna_structure_overview/antiparallel_reveal.drawn.svg)
+
+=== layout: one-panel
+
+
+@body
+
+![Complementary T-A, C-G, A-T base pairs with labeled strand ends](assets/lect02d-dna_structure_overview/antiparallel_reveal.drawn.svg)
 
 - Anti-parallel
 
@@ -226,7 +293,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 17](assets/lect02d-dna_structure_overview/image_017.jpg)
+![Antiparallel complementary strands: TGCATG and ACGTAC](assets/lect02d-dna_structure_overview/antiparallel_segment.drawn.svg)
 
 @right
 
@@ -234,6 +301,8 @@ color-theme: genetics
 - are anti-parallel
 
 - A segment of a DNA molecule, showing the antiparallel orientation of the complementary strands.
+- A 5&prime; end terminates in a 5&prime; phosphate.
+- A 3&prime; end terminates in a 3&prime; hydroxyl.
 
 === layout: two-panels
 

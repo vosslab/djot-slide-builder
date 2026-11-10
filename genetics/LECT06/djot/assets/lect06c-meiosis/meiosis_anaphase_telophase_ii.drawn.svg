@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1288" viewBox="0 0 1200 1288" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Anaphase II, telephase II and cytokinesis</title><desc id="figure-desc">Original schematic after lecture 06C, preserving the source stage spelling Telephase. Sister centromeres separate. Each of four forming haploid daughter cells contains medium, short and long unreplicated chromosomes; exchanged segments remain attached to the same chromatid identities.</desc>
+<rect width="1200" height="1288" fill="white"/>
+<text x="295" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#213547">
+<tspan x="295" dy="0">Anaphase II</tspan>
+</text>
+<text x="912" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="bold" fill="#213547">
+<tspan x="912" dy="0">Telephase II and</tspan>
+<tspan x="912" dy="42.919999999999995">Cytokinesis</tspan>
+</text>
+<g id="anaphase-II-upper-cell" transform="translate(295 371) scale(1.19 1.14)">
+<path d="M-195,-28 C-191,-132 -112,-202 -12,-201 C89,-209 183,-151 199,-46 C217,57 151,167 55,194 C-46,224 -145,176 -185,83 C-200,46 -205,10 -195,-28 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-184,78 C-143,176 -43,214 55,185 C151,157 206,57 193,-42 C197,59 132,146 45,166 C-47,190 -134,152 -184,78 Z" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-164,-92 C-126,-154 -58,-184 15,-181" fill="none" stroke="#FFFCF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-II-upper-daughter-cells" transform="translate(922 371)">
+<path d="M0,-104 C-28,-173 -126,-181 -171,-100 C-210,-30 -201,86 -154,137 C-104,191 -31,171 0,113 C30,172 103,190 154,135 C204,82 209,-33 169,-102 C122,-183 28,-172 0,-104 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-178,93 C-141,157 -67,166 -17,113 C-51,183 -139,190 -178,93 M17,113 C65,166 140,157 178,91 C139,190 51,181 17,113" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-102 C-8,-40 -8,52 0,112" fill="none" stroke="#A48B6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-II-upper-left-nuclear-envelope">
+<ellipse cx="824" cy="371" rx="63" ry="125" fill="#EEE8F0" stroke="#9F8EAD" stroke-width="3"/>
+</g>
+<g id="telophase-II-upper-right-nuclear-envelope">
+<ellipse cx="1020" cy="371" rx="63" ry="125" fill="#EEE8F0" stroke="#9F8EAD" stroke-width="3"/>
+</g>
+<path d="M91,371 Q149.5,311.5 208,252" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-upper-left-attachment-0"/>
+<g id="anaphase-II-upper-left-pair-0" transform="translate(208 252) rotate(270)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-upper-left-pair-0-sister-2">
+<path d="M0,0 Q-19.38,7.6499999999999995 -35.699999999999996,31.62" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q19.38,7.6499999999999995 35.699999999999996,31.62" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.320895999999994,19.476288 Q31.130399999999998,24.9084 35.699999999999996,31.62" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-upper-left-pair-0" transform="translate(788 371) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-upper-left-pair-0-sister-2">
+<path d="M0,0.0 Q-26.5,0.0 -53,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q26.5,0.0 53,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M38.16,0.0 Q45.58,0.0 53,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M499,371 Q440.5,311.5 382,252" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-upper-right-attachment-0"/>
+<g id="anaphase-II-upper-right-pair-0" transform="translate(382 252) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-upper-right-pair-0-sister-1">
+<path d="M0,0 Q-19.38,7.6499999999999995 -35.699999999999996,31.62" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q19.38,7.6499999999999995 35.699999999999996,31.62" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-upper-right-pair-0" transform="translate(984 371) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-upper-right-pair-0-sister-1">
+<path d="M0,0.0 Q-26.5,0.0 -53,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q26.5,0.0 53,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M91,371 Q149.5,371.0 208,371" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-upper-left-attachment-1"/>
+<g id="anaphase-II-upper-left-pair-1" transform="translate(208 371) rotate(270)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-upper-left-pair-1-sister-1">
+<path d="M0,0 Q-12.92,5.1 -23.799999999999997,21.08" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q12.92,5.1 23.799999999999997,21.08" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-upper-left-pair-1" transform="translate(824 371) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-upper-left-pair-1-sister-1">
+<path d="M0,0.0 Q-17.5,0.0 -35,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q17.5,0.0 35,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M499,371 Q440.5,371.0 382,371" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-upper-right-attachment-1"/>
+<g id="anaphase-II-upper-right-pair-1" transform="translate(382 371) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-upper-right-pair-1-sister-2">
+<path d="M0,0 Q-12.92,5.1 -23.799999999999997,21.08" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q12.92,5.1 23.799999999999997,21.08" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M17.547264,12.984191999999998 Q20.753599999999995,16.6056 23.799999999999997,21.08" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-upper-right-pair-1" transform="translate(1020 371) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-upper-right-pair-1-sister-2">
+<path d="M0,0.0 Q-17.5,0.0 -35,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q17.5,0.0 35,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M25.2,0.0 Q30.1,0.0 35,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M91,371 Q149.5,427.5 208,484" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-upper-left-attachment-2"/>
+<g id="anaphase-II-upper-left-pair-2" transform="translate(208 484) rotate(270)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-upper-left-pair-2-sister-2">
+<path d="M0,0 Q-24.7,9.75 -45.5,40.3" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-33.54624,24.822719999999997 Q-39.676,31.746 -45.5,40.3" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q24.7,9.75 45.5,40.3" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M33.54624,24.822719999999997 Q39.676,31.746 45.5,40.3" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-upper-left-pair-2" transform="translate(860 371) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-upper-left-pair-2-sister-2">
+<path d="M0,0.0 Q-39.0,0.0 -78,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-56.16,0.0 Q-67.08,0.0 -78,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q39.0,0.0 78,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M56.16,0.0 Q67.08,0.0 78,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M499,371 Q440.5,427.5 382,484" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-upper-right-attachment-2"/>
+<g id="anaphase-II-upper-right-pair-2" transform="translate(382 484) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-upper-right-pair-2-sister-1">
+<path d="M0,0 Q-24.7,9.75 -45.5,40.3" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q24.7,9.75 45.5,40.3" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-upper-right-pair-2" transform="translate(1056 371) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-upper-right-pair-2-sister-1">
+<path d="M0,0.0 Q-39.0,0.0 -78,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q39.0,0.0 78,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="anaphase-II-upper-left-centrosome" transform="translate(91 371) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<g id="anaphase-II-upper-right-centrosome" transform="translate(499 371) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<path d="M552,371 L681,371" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M666.0,364.0 L681.0,371.0 L666.0,378.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-II-lower-cell" transform="translate(295 943) scale(1.19 1.14)">
+<path d="M-195,-28 C-191,-132 -112,-202 -12,-201 C89,-209 183,-151 199,-46 C217,57 151,167 55,194 C-46,224 -145,176 -185,83 C-200,46 -205,10 -195,-28 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-184,78 C-143,176 -43,214 55,185 C151,157 206,57 193,-42 C197,59 132,146 45,166 C-47,190 -134,152 -184,78 Z" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-164,-92 C-126,-154 -58,-184 15,-181" fill="none" stroke="#FFFCF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-II-lower-daughter-cells" transform="translate(922 943)">
+<path d="M0,-104 C-28,-173 -126,-181 -171,-100 C-210,-30 -201,86 -154,137 C-104,191 -31,171 0,113 C30,172 103,190 154,135 C204,82 209,-33 169,-102 C122,-183 28,-172 0,-104 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-178,93 C-141,157 -67,166 -17,113 C-51,183 -139,190 -178,93 M17,113 C65,166 140,157 178,91 C139,190 51,181 17,113" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-102 C-8,-40 -8,52 0,112" fill="none" stroke="#A48B6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-II-lower-left-nuclear-envelope">
+<ellipse cx="824" cy="943" rx="63" ry="125" fill="#EEE8F0" stroke="#9F8EAD" stroke-width="3"/>
+</g>
+<g id="telophase-II-lower-right-nuclear-envelope">
+<ellipse cx="1020" cy="943" rx="63" ry="125" fill="#EEE8F0" stroke="#9F8EAD" stroke-width="3"/>
+</g>
+<path d="M91,943 Q149.5,883.5 208,824" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-lower-left-attachment-0"/>
+<g id="anaphase-II-lower-left-pair-0" transform="translate(208 824) rotate(270)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-lower-left-pair-0-sister-2">
+<path d="M0,0 Q-19.38,7.6499999999999995 -35.699999999999996,31.62" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q19.38,7.6499999999999995 35.699999999999996,31.62" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.320895999999994,19.476288 Q31.130399999999998,24.9084 35.699999999999996,31.62" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-lower-left-pair-0" transform="translate(788 943) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-lower-left-pair-0-sister-2">
+<path d="M0,0.0 Q-26.5,0.0 -53,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q26.5,0.0 53,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M38.16,0.0 Q45.58,0.0 53,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M499,943 Q440.5,883.5 382,824" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-lower-right-attachment-0"/>
+<g id="anaphase-II-lower-right-pair-0" transform="translate(382 824) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-lower-right-pair-0-sister-1">
+<path d="M0,0 Q-19.38,7.6499999999999995 -35.699999999999996,31.62" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q19.38,7.6499999999999995 35.699999999999996,31.62" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-lower-right-pair-0" transform="translate(984 943) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-lower-right-pair-0-sister-1">
+<path d="M0,0.0 Q-26.5,0.0 -53,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q26.5,0.0 53,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M91,943 Q149.5,943.0 208,943" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-lower-left-attachment-1"/>
+<g id="anaphase-II-lower-left-pair-1" transform="translate(208 943) rotate(270)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-lower-left-pair-1-sister-1">
+<path d="M0,0 Q-12.92,5.1 -23.799999999999997,21.08" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q12.92,5.1 23.799999999999997,21.08" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-lower-left-pair-1" transform="translate(824 943) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-lower-left-pair-1-sister-1">
+<path d="M0,0.0 Q-17.5,0.0 -35,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q17.5,0.0 35,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M499,943 Q440.5,943.0 382,943" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-lower-right-attachment-1"/>
+<g id="anaphase-II-lower-right-pair-1" transform="translate(382 943) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-lower-right-pair-1-sister-2">
+<path d="M0,0 Q-12.92,5.1 -23.799999999999997,21.08" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q12.92,5.1 23.799999999999997,21.08" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M17.547264,12.984191999999998 Q20.753599999999995,16.6056 23.799999999999997,21.08" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-lower-right-pair-1" transform="translate(1020 943) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-lower-right-pair-1-sister-2">
+<path d="M0,0.0 Q-17.5,0.0 -35,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q17.5,0.0 35,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M25.2,0.0 Q30.1,0.0 35,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M91,943 Q149.5,999.5 208,1056" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-lower-left-attachment-2"/>
+<g id="anaphase-II-lower-left-pair-2" transform="translate(208 1056) rotate(270)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-lower-left-pair-2-sister-1">
+<path d="M0,0 Q-24.7,9.75 -45.5,40.3" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q24.7,9.75 45.5,40.3" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-lower-left-pair-2" transform="translate(860 943) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-lower-left-pair-2-sister-1">
+<path d="M0,0.0 Q-39.0,0.0 -78,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q39.0,0.0 78,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<path d="M499,943 Q440.5,999.5 382,1056" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="anaphase-II-lower-right-attachment-2"/>
+<g id="anaphase-II-lower-right-pair-2" transform="translate(382 1056) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="anaphase-II-lower-right-pair-2-sister-2">
+<path d="M0,0 Q-24.7,9.75 -45.5,40.3" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-33.54624,24.822719999999997 Q-39.676,31.746 -45.5,40.3" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0 Q24.7,9.75 45.5,40.3" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M33.54624,24.822719999999997 Q39.676,31.746 45.5,40.3" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="telophase-II-lower-right-pair-2" transform="translate(1056 943) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=both; recombinant-sister=1; chromatids=1</metadata>
+<g id="telophase-II-lower-right-pair-2-sister-2">
+<path d="M0,0.0 Q-39.0,0.0 -78,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-56.16,0.0 Q-67.08,0.0 -78,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,0.0 Q39.0,0.0 78,0" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M56.16,0.0 Q67.08,0.0 78,0" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="0.0" r="4.1" fill="#213547"/>
+</g>
+</g>
+<g id="anaphase-II-lower-left-centrosome" transform="translate(91 943) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<g id="anaphase-II-lower-right-centrosome" transform="translate(499 943) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<path d="M552,943 L681,943" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M666.0,936.0 L681.0,943.0 L666.0,950.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="74" y="642" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" fill="#213547">
+<tspan x="74" dy="0">Sister chromatids</tspan>
+<tspan x="74" dy="33.64">separate</tspan>
+</text>
+<path d="M253,602 L214,526 L208,484" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M276,602 L356,526 L382,484" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+<text x="921" y="1207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" fill="#213547">
+<tspan x="921" dy="0">Haploid daughter cells</tspan>
+<tspan x="921" dy="35.96">forming</tspan>
+</text>
+</svg>

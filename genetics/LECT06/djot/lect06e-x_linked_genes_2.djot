@@ -230,8 +230,8 @@
 @right
 
 - [*metafemale*]{color=red underline=true} (or superfemale) is a low viability Drosophila with a female phenotype [(X\:A ratio > 1)]{color=red}
-- [*metamale*]{color=blue underline=true} (or supermale) is a low viability Drosophila with a male phenotype [(X\:A ratio < ½)]{color=blue}
-- [*intersex*]{color=purple underline=true}: intermediate sexual development in this fruit-fly X:A model (½ < X\:A ratio < 1)
+- [*metamale*]{color=blue underline=true} (or supermale) is a low viability Drosophila with a male phenotype [(X\:A ratio < &#189;)]{color=blue}
+- [*intersex*]{color=purple underline=true}: intermediate sexual development in this fruit-fly X:A model (&#189; < X\:A ratio < 1)
 
 
 === layout: one-panel
@@ -326,11 +326,11 @@
 
 ![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
 
-- (a1) Xy/Y × Xy+/Xy+ ; homozygote female
-  - ½ Xy+/Y wt males and ½ Xy/Xy+ wt females
-- (a2) Xy/Y × Xy+/Xy ; heterozygote female
-  - ¼ Xy+/Y wt males, ¼ Xy/Y yellow males
-  - ¼ Xy+/Xy wt females, and ¼ Xy/Xy yellow females
+- (a1) Xy/Y &#215; Xy+/Xy+ ; homozygote female
+  - &#189; Xy+/Y wt males and &#189; Xy/Xy+ wt females
+- (a2) Xy/Y &#215; Xy+/Xy ; heterozygote female
+  - &#188; Xy+/Y wt males, &#188; Xy/Y yellow males
+  - &#188; Xy+/Xy wt females, and &#188; Xy/Xy yellow females
 
 
 === layout: one-panel
@@ -343,9 +343,9 @@
 
 ![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
 
-- (b) y/y × y+/Y\:
-  - ½ y/Y yellow males and
-  - ½ y/y+ wt females
+- (b) y/y &#215; y+/Y\:
+  - &#189; y/Y yellow males and
+  - &#189; y/y+ wt females
 
 
 === layout: one-panel
@@ -358,10 +358,10 @@
 
 ![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
 
-- (a1) y/Y male × y+/y+ female\:
-  - ½ y+/Y wt males and ½ y/y+ wt females
-- (c) y/y+ female × y+/Y male\:
-  - males\: ½ y+/Y wt, ½ y/Y yellow
+- (a1) y/Y male &#215; y+/y+ female\:
+  - &#189; y+/Y wt males and &#189; y/y+ wt females
+- (c) y/y+ female &#215; y+/Y male\:
+  - males\: &#189; y+/Y wt, &#189; y/Y yellow
   - all wt females
 
 
@@ -375,11 +375,11 @@
 
 ![Slide image 9](assets/lect06e-x_linked_genes_2/image_009.png)
 
-- (a1) y/Y male × y+/y+ female\:
-  - ½ y+/Y wt males and ½ y/y+ wt females
-- (d) y/y+ female × y/Y male\:
-  - males\: ½ y+/Y wt, ½ y/Y yellow
-  - females\: ½ y+/y wt, ½ y/y yellow
+- (a1) y/Y male &#215; y+/y+ female\:
+  - &#189; y+/Y wt males and &#189; y/y+ wt females
+- (d) y/y+ female &#215; y/Y male\:
+  - males\: &#189; y+/Y wt, &#189; y/Y yellow
+  - females\: &#189; y+/y wt, &#189; y/y yellow
 
 
 === layout: section

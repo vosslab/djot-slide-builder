@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="390" viewBox="0 0 1050 390" role="img" aria-labelledby="linkage_chromosomes-title linkage_chromosomes-desc">
+	<title id="linkage_chromosomes-title">Cis and trans arrangements of linked w and m loci</title>
+	<desc id="linkage_chromosomes-desc">Each panel shows a homologous pair schematically, with one rod per homolog. Cis has w m together and + + together; trans has w + and + m. Gene positions match between homologs. Colors track homolog identity, not dominance. No replication or crossover is depicted.</desc>
+	<!-- Source: LECT08B Cis and Trans Configurations and gamete sequence; LECT08C Cis and Trans Configurations. Original vector construction from the approved linkage pilot. -->
+	<g font-family="Liberation Sans, sans-serif">
+		<g id="cis">
+			<text x="215" y="47" font-size="34" fill="#253342" text-anchor="middle" font-style="italic">cis</text>
+			<g id="cis-blue-homolog">
+				<path d="M95 134 H137 Q151 134 155 146 Q159 134 173 134 H333 Q355 134 355 154 Q355 174 333 174 H173 Q159 174 155 162 Q151 174 137 174 H95 Q73 174 73 154 Q73 134 95 134 Z" fill="#24578F" stroke="#24578F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M210 134 V174" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="210" y="120" font-size="30" fill="#253342" text-anchor="middle">w</text>
+				<path d="M310 134 V174" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="310" y="120" font-size="30" fill="#253342" text-anchor="middle">m</text>
+			</g>
+			<g id="cis-orange-homolog">
+				<path d="M95 250 H137 Q151 250 155 262 Q159 250 173 250 H333 Q355 250 355 270 Q355 290 333 290 H173 Q159 290 155 278 Q151 290 137 290 H95 Q73 290 73 270 Q73 250 95 250 Z" fill="#B74300" stroke="#B74300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M210 250 V290" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="210" y="236" font-size="30" fill="#253342" text-anchor="middle">+</text>
+				<path d="M310 250 V290" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="310" y="236" font-size="30" fill="#253342" text-anchor="middle">+</text>
+			</g>
+		</g>
+		<g id="trans">
+			<text x="785" y="47" font-size="34" fill="#253342" text-anchor="middle" font-style="italic">trans</text>
+			<g id="trans-blue-homolog">
+				<path d="M665 134 H707 Q721 134 725 146 Q729 134 743 134 H903 Q925 134 925 154 Q925 174 903 174 H743 Q729 174 725 162 Q721 174 707 174 H665 Q643 174 643 154 Q643 134 665 134 Z" fill="#24578F" stroke="#24578F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M780 134 V174" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="780" y="120" font-size="30" fill="#253342" text-anchor="middle">w</text>
+				<path d="M880 134 V174" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="880" y="120" font-size="30" fill="#253342" text-anchor="middle">+</text>
+			</g>
+			<g id="trans-orange-homolog">
+				<path d="M665 250 H707 Q721 250 725 262 Q729 250 743 250 H903 Q925 250 925 270 Q925 290 903 290 H743 Q729 290 725 278 Q721 290 707 290 H665 Q643 290 643 270 Q643 250 665 250 Z" fill="#B74300" stroke="#B74300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M780 250 V290" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="780" y="236" font-size="30" fill="#253342" text-anchor="middle">+</text>
+				<path d="M880 250 V290" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="880" y="236" font-size="30" fill="#253342" text-anchor="middle">m</text>
+			</g>
+		</g>
+	</g>
+</svg>

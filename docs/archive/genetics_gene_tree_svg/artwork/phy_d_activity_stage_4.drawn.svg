@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="570" viewBox="0 0 860 570" role="img" aria-labelledby="title desc">
+<title id="title">phy_d_activity_stage_4</title>
+<desc id="desc">Metric tree. Horizontal branch lengths are proportional to distance. Source: original LECT12D PDF pages24-28; original reconstruction from displayed merge heights. Stage 4.</desc>
+<rect width="860" height="570" fill="white"/>
+<g font-family="Arial" font-size="27" fill="#172B3A">
+<g id="join-ac"><path d="M 565 55 V 130" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-ac-a" d="M 565 55 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="650.0" y="43" text-anchor="middle">2</text>
+<path id="edge-ac-c" d="M 565 130 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="650.0" y="118" text-anchor="middle">2</text>
+<circle cx="565" cy="92.5" r="5" fill="#006A69"/></g>
+<g id="join-be"><path d="M 480 205 V 280" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-be-b" d="M 480 205 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="607.5" y="193" text-anchor="middle">3</text>
+<path id="edge-be-e" d="M 480 280 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="607.5" y="268" text-anchor="middle">3</text>
+<circle cx="480" cy="242.5" r="5" fill="#006A69"/></g>
+<g id="join-df"><path d="M 395 355 V 430" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-df-d" d="M 395 355 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="565.0" y="343" text-anchor="middle">4</text>
+<path id="edge-df-f" d="M 395 430 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="565.0" y="418" text-anchor="middle">4</text>
+<circle cx="395" cy="392.5" r="5" fill="#006A69"/></g>
+<g id="join-acbe"><path d="M 310 92.5 V 242.5" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-acbe-ac" d="M 310 92.5 H 565" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="437.5" y="80.5" text-anchor="middle">3</text>
+<path id="edge-acbe-be" d="M 310 242.5 H 480" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="395.0" y="230.5" text-anchor="middle">2</text>
+<circle cx="310" cy="167.5" r="5" fill="#006A69"/></g>
+<text x="750" y="64">a</text>
+<text x="750" y="139">c</text>
+<text x="750" y="214">b</text>
+<text x="750" y="289">e</text>
+<text x="750" y="364">d</text>
+<text x="750" y="439">f</text>
+</g></svg>

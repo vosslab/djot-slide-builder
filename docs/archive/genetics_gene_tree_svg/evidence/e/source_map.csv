@@ -1,0 +1,17 @@
+original_pdf_page,baseline_djot_page,current_djot_pages,reason
+1,1,1,Title retained
+2,4,4,Allele sorting replacement
+3,5,5,Section retained
+4,6,6,Empirical substitution rates retained with native caption
+5,7,7,Adh empirical raster plus source-positioned labels and native study results
+6,8,8,Empirical genome-size mutation plot retained
+7,9,9,Native DNA evolution context retained
+8,10,10;11,Rate/context followed immediately by readable native50column alignment
+9,11,12,Empirical molecular clock retained with native caption
+10,12,13,Homology section retained
+11,13,14,Authorized origin-based homology definitions
+12,14,15,Authorized orthology wording correction; source context retained
+13,15,16,Globin family original SVG and native relationships
+14,16,17,Duplication/speciation original SVG plus source gene-pair examples
+15,17,18,All enhancer loss steps retained in original SVG with native explanation
+16,19,20,End retained

@@ -49,7 +49,9 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect13c-chromo_alter_4-translocation/image_001.png)
+![Slide image 1](assets/lect13c-chromo_alter_4-translocation/translocation_overview.drawn.svg)
+
+A translocation moves a segment from one chromosome to a nonhomologous chromosome.
 
 === layout: one-panel
 
@@ -57,7 +59,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 2](assets/lect13c-chromo_alter_4-translocation/image_002.png)
+![Slide image 2](assets/lect13c-chromo_alter_4-translocation/translocation-complements.drawn.svg)
 
 - (A) Two pairs of non-homologous chromosomes in a diploid organism.
 - (B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
@@ -70,9 +72,9 @@ color-theme: genetics
 
 @left
 
-![Slide image 3](assets/lect13c-chromo_alter_4-translocation/image_003.png)
+![Slide image 3](assets/lect13c-chromo_alter_4-translocation/translocation-heterozygote.drawn.svg)
 
-![Slide image 4](assets/lect13c-chromo_alter_4-translocation/image_004.png)
+![Slide image 4](assets/lect13c-chromo_alter_4-translocation/balanced-four-gametes.drawn.svg)
 
 ![Slide image 5](assets/lect13c-chromo_alter_4-translocation/image_005.png)
 
@@ -89,7 +91,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 6](assets/lect13c-chromo_alter_4-translocation/image_006.png)
+![Slide image 6](assets/lect13c-chromo_alter_4-translocation/blood-cell-comparison.drawn.svg)
 
 - Certain cancers, including chronic myelogenous leukemia (CML), are caused by translocations of chromosomes
 
@@ -99,7 +101,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 7](assets/lect13c-chromo_alter_4-translocation/image_007.jpg)
+![Slide image 7](assets/lect13c-chromo_alter_4-translocation/philadelphia-chromosome.drawn.svg)
 
 - *Normal chromosome 9*
 

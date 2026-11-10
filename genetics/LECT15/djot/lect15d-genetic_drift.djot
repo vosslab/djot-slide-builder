@@ -43,31 +43,11 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect15d-genetic_drift/image_001.jpg)
+![Slide image 1](assets/lect15d-genetic_drift/drift_flowers_1.drawn.svg)
 
 ![Slide image 2](assets/lect15d-genetic_drift/image_002.svg)
 
 - *Generation 1* *_p_* *(frequency of* *_CR_**) = 0.7* *_q_* *(frequency of* *_CW_**) = 0.3*
-
-- *_CRCR_*
-
-- *_CRCR_*
-
-- *_CRCR_*
-
-- *_CRCR_*
-
-- *_CRCR_*
-
-- *_CRCW_*
-
-- *_CRCW_*
-
-- *_CRCW_*
-
-- *_CRCW_*
-
-- *_CWCW_*
 
 === layout: one-panel
 @replaceme
@@ -75,7 +55,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect15d-genetic_drift/image_003.jpg)
+![Slide image 3](assets/lect15d-genetic_drift/drift_flowers_2.drawn.svg)
 
 ![Slide image 3](assets/lect15d-genetic_drift/image_002.svg)
 
@@ -86,7 +66,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 4](assets/lect15d-genetic_drift/image_004.jpg)
+![Slide image 4](assets/lect15d-genetic_drift/drift_flowers_3.drawn.svg)
 
 ![Slide image 4](assets/lect15d-genetic_drift/image_002.svg)
 
@@ -115,40 +95,34 @@ color-theme: genetics
 - If the population remains small, it may be further affected by genetic drift
 
 === layout: one-panel
-@replaceme
 
 
 @body
 
-![Slide image 5](assets/lect15d-genetic_drift/image_005.jpg)
+![Slide image 5](assets/lect15d-genetic_drift/bottleneck_1.drawn.svg)
 
-![Slide image 5](assets/lect15d-genetic_drift/image_002.svg)
 
 - *Original population*
 
 === layout: one-panel
-@replaceme
 
 
 @body
 
-![Slide image 6](assets/lect15d-genetic_drift/image_006.jpg)
+![Slide image 6](assets/lect15d-genetic_drift/bottleneck_2.drawn.svg)
 
-![Slide image 6](assets/lect15d-genetic_drift/image_002.svg)
 
 - *Original population*
 
 - *Bottlenecking event*
 
 === layout: one-panel
-@replaceme
 
 
 @body
 
-![Slide image 7](assets/lect15d-genetic_drift/image_007.jpg)
+![Slide image 7](assets/lect15d-genetic_drift/bottleneck_3.drawn.svg)
 
-![Slide image 7](assets/lect15d-genetic_drift/image_002.svg)
 
 - *Original population*
 
@@ -232,7 +206,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 11](assets/lect15d-genetic_drift/image_011.jpg)
+![Slide image 11](assets/lect15d-genetic_drift/drift_heterozygosity.drawn.svg)
 
 === layout: one-panel
 

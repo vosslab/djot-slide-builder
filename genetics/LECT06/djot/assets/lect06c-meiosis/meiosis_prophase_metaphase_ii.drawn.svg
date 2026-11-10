@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1288" viewBox="0 0 1200 1288" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Prophase II and metaphase II</title><desc id="figure-desc">Original schematic after lecture 06C. Both haploid products of meiosis I enter the second division with three replicated chromosomes. The same sister identities and terminal exchanges persist. Metaphase-II spindle fibers contact opposite sister centromeres.</desc>
+<rect width="1200" height="1288" fill="white"/>
+<text x="300" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#213547">
+<tspan x="300" dy="0">Prophase II</tspan>
+</text>
+<text x="900" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#213547">
+<tspan x="900" dy="0">Metaphase II</tspan>
+</text>
+<g id="prophase-II-upper-cell" transform="translate(300 365) scale(1.16 1.175)">
+<path d="M-195,-28 C-191,-132 -112,-202 -12,-201 C89,-209 183,-151 199,-46 C217,57 151,167 55,194 C-46,224 -145,176 -185,83 C-200,46 -205,10 -195,-28 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-184,78 C-143,176 -43,214 55,185 C151,157 206,57 193,-42 C197,59 132,146 45,166 C-47,190 -134,152 -184,78 Z" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-164,-92 C-126,-154 -58,-184 15,-181" fill="none" stroke="#FFFCF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="metaphase-II-upper-cell" transform="translate(900 365) scale(1.16 1.175)">
+<path d="M-195,-28 C-191,-132 -112,-202 -12,-201 C89,-209 183,-151 199,-46 C217,57 151,167 55,194 C-46,224 -145,176 -185,83 C-200,46 -205,10 -195,-28 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-184,78 C-143,176 -43,214 55,185 C151,157 206,57 193,-42 C197,59 132,146 45,166 C-47,190 -134,152 -184,78 Z" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-164,-92 C-126,-154 -58,-184 15,-181" fill="none" stroke="#FFFCF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-upper-envelope-fragments">
+<ellipse cx="300" cy="381" rx="164" ry="124" fill="#EEE8F0"/>
+<path d="M464.00,381.00 A164,124 0 0 1 442.03,443.00" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M419.94,465.57 A164,124 0 0 1 361.44,495.97" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M311.44,504.70 A164,124 0 0 1 235.92,495.14" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M199.03,478.71 A164,124 0 0 1 149.04,429.45" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M136.40,389.65 A164,124 0 0 1 150.18,330.56" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M174.37,301.29 A164,124 0 0 1 233.30,267.72" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M277.18,258.21 A164,124 0 0 1 356.09,264.48" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M394.07,279.43 A164,124 0 0 1 449.82,330.56" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-upper-pair-0" transform="translate(300 300) rotate(0)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="prophase-II-upper-pair-0-sister-1">
+<path d="M0,-2.75 Q-28.5,-3.5 -57,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q28.5,-3.5 57,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="prophase-II-upper-pair-0-sister-2">
+<path d="M0,2.75 Q-28.5,3.5 -57,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q28.5,3.5 57,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M41.04,6.8107999999999995 Q49.019999999999996,8.18 57,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-upper-pair-1" transform="translate(300 373) rotate(0)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="prophase-II-upper-pair-1-sister-1">
+<path d="M0,-2.75 Q-18.5,-3.5 -37,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q18.5,-3.5 37,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="prophase-II-upper-pair-1-sister-2">
+<path d="M0,2.75 Q-18.5,3.5 -37,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q18.5,3.5 37,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.639999999999997,6.8107999999999995 Q31.82,8.18 37,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-upper-pair-2" transform="translate(300 446) rotate(0)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=both; recombinant-sister=1; chromatids=2</metadata>
+<g id="prophase-II-upper-pair-2-sister-1">
+<path d="M0,-2.75 Q-38.5,-3.5 -77,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q38.5,-3.5 77,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="prophase-II-upper-pair-2-sister-2">
+<path d="M0,2.75 Q-38.5,3.5 -77,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-55.44,6.8107999999999995 Q-66.22,8.18 -77,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q38.5,3.5 77,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M55.44,6.8107999999999995 Q66.22,8.18 77,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M155,243 Q300,115 447,243" fill="none" stroke="#B58A24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M155,243 Q300,139 447,243" fill="none" stroke="#B58A24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M155,243 Q300,160 447,243" fill="none" stroke="#B58A24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="prophase-II-upper-left-centrosome" transform="translate(155 243) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<g id="prophase-II-upper-right-centrosome" transform="translate(447 243) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<path d="M705,365 Q789.0,297.5 897,230" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-upper-left-attachment-0"/>
+<path d="M1095,365 Q1011.0,297.5 903,230" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-upper-right-attachment-0"/>
+<g id="metaphase-II-upper-pair-0" transform="translate(900 230) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="metaphase-II-upper-pair-0-sister-1">
+<path d="M0,-2.75 Q-23.5,-3.5 -47,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q23.5,-3.5 47,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="metaphase-II-upper-pair-0-sister-2">
+<path d="M0,2.75 Q-23.5,3.5 -47,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q23.5,3.5 47,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M33.84,6.8107999999999995 Q40.419999999999995,8.18 47,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M705,365 Q789.0,362.5 897,360" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-upper-left-attachment-1"/>
+<path d="M1095,365 Q1011.0,362.5 903,360" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-upper-right-attachment-1"/>
+<g id="metaphase-II-upper-pair-1" transform="translate(900 360) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="metaphase-II-upper-pair-1-sister-1">
+<path d="M0,-2.75 Q-15.5,-3.5 -31,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q15.5,-3.5 31,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="metaphase-II-upper-pair-1-sister-2">
+<path d="M0,2.75 Q-15.5,3.5 -31,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q15.5,3.5 31,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M22.32,6.8107999999999995 Q26.66,8.18 31,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M705,365 Q789.0,429.5 897,494" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-upper-left-attachment-2"/>
+<path d="M1095,365 Q1011.0,429.5 903,494" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-upper-right-attachment-2"/>
+<g id="metaphase-II-upper-pair-2" transform="translate(900 494) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=both; recombinant-sister=1; chromatids=2</metadata>
+<g id="metaphase-II-upper-pair-2-sister-1">
+<path d="M0,-2.75 Q-29.5,-3.5 -59,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q29.5,-3.5 59,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="metaphase-II-upper-pair-2-sister-2">
+<path d="M0,2.75 Q-29.5,3.5 -59,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-42.480000000000004,6.8107999999999995 Q-50.739999999999995,8.18 -59,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q29.5,3.5 59,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M42.480000000000004,6.8107999999999995 Q50.739999999999995,8.18 59,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M900,156 L900,575" fill="none" stroke="#8793A0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 8"/>
+<g id="metaphase-II-upper-left-centrosome" transform="translate(705 365) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<g id="metaphase-II-upper-right-centrosome" transform="translate(1095 365) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<path d="M551,365 L644,365" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M629.0,358.0 L644.0,365.0 L629.0,372.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="prophase-II-lower-cell" transform="translate(300 957) scale(1.16 1.175)">
+<path d="M-195,-28 C-191,-132 -112,-202 -12,-201 C89,-209 183,-151 199,-46 C217,57 151,167 55,194 C-46,224 -145,176 -185,83 C-200,46 -205,10 -195,-28 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-184,78 C-143,176 -43,214 55,185 C151,157 206,57 193,-42 C197,59 132,146 45,166 C-47,190 -134,152 -184,78 Z" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-164,-92 C-126,-154 -58,-184 15,-181" fill="none" stroke="#FFFCF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="metaphase-II-lower-cell" transform="translate(900 957) scale(1.16 1.175)">
+<path d="M-195,-28 C-191,-132 -112,-202 -12,-201 C89,-209 183,-151 199,-46 C217,57 151,167 55,194 C-46,224 -145,176 -185,83 C-200,46 -205,10 -195,-28 Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-184,78 C-143,176 -43,214 55,185 C151,157 206,57 193,-42 C197,59 132,146 45,166 C-47,190 -134,152 -184,78 Z" fill="#E7D7BB" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-164,-92 C-126,-154 -58,-184 15,-181" fill="none" stroke="#FFFCF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-lower-envelope-fragments">
+<ellipse cx="300" cy="973" rx="164" ry="124" fill="#EEE8F0"/>
+<path d="M464.00,973.00 A164,124 0 0 1 442.03,1035.00" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M419.94,1057.57 A164,124 0 0 1 361.44,1087.97" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M311.44,1096.70 A164,124 0 0 1 235.92,1087.14" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M199.03,1070.71 A164,124 0 0 1 149.04,1021.45" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M136.40,981.65 A164,124 0 0 1 150.18,922.56" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M174.37,893.29 A164,124 0 0 1 233.30,859.72" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M277.18,850.21 A164,124 0 0 1 356.09,856.48" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M394.07,871.43 A164,124 0 0 1 449.82,922.56" fill="none" stroke="#9F8EAD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-lower-pair-0" transform="translate(300 892) rotate(0)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="prophase-II-lower-pair-0-sister-1">
+<path d="M0,-2.75 Q-28.5,-3.5 -57,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q28.5,-3.5 57,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="prophase-II-lower-pair-0-sister-2">
+<path d="M0,2.75 Q-28.5,3.5 -57,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q28.5,3.5 57,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M41.04,6.8107999999999995 Q49.019999999999996,8.18 57,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-lower-pair-1" transform="translate(300 965) rotate(0)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="prophase-II-lower-pair-1-sister-1">
+<path d="M0,-2.75 Q-18.5,-3.5 -37,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q18.5,-3.5 37,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="prophase-II-lower-pair-1-sister-2">
+<path d="M0,2.75 Q-18.5,3.5 -37,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q18.5,3.5 37,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.639999999999997,6.8107999999999995 Q31.82,8.18 37,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="prophase-II-lower-pair-2" transform="translate(300 1038) rotate(0)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=both; recombinant-sister=1; chromatids=2</metadata>
+<g id="prophase-II-lower-pair-2-sister-1">
+<path d="M0,-2.75 Q-38.5,-3.5 -77,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q38.5,-3.5 77,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="prophase-II-lower-pair-2-sister-2">
+<path d="M0,2.75 Q-38.5,3.5 -77,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-55.44,6.8107999999999995 Q-66.22,8.18 -77,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q38.5,3.5 77,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M55.44,6.8107999999999995 Q66.22,8.18 77,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M155,835 Q300,707 447,835" fill="none" stroke="#B58A24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M155,835 Q300,731 447,835" fill="none" stroke="#B58A24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M155,835 Q300,752 447,835" fill="none" stroke="#B58A24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="prophase-II-lower-left-centrosome" transform="translate(155 835) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<g id="prophase-II-lower-right-centrosome" transform="translate(447 835) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<path d="M705,957 Q789.0,889.5 897,822" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-lower-left-attachment-0"/>
+<path d="M1095,957 Q1011.0,889.5 903,822" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-lower-right-attachment-0"/>
+<g id="metaphase-II-lower-pair-0" transform="translate(900 822) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="metaphase-II-lower-pair-0-sister-1">
+<path d="M0,-2.75 Q-23.5,-3.5 -47,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q23.5,-3.5 47,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="metaphase-II-lower-pair-0-sister-2">
+<path d="M0,2.75 Q-23.5,3.5 -47,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q23.5,3.5 47,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M33.84,6.8107999999999995 Q40.419999999999995,8.18 47,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M705,957 Q789.0,954.5 897,952" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-lower-left-attachment-1"/>
+<path d="M1095,957 Q1011.0,954.5 903,952" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-lower-right-attachment-1"/>
+<g id="metaphase-II-lower-pair-1" transform="translate(900 952) rotate(90)">
+<metadata>centromere-ancestry=#007FAD; terminal-exchange=right; recombinant-sister=1; chromatids=2</metadata>
+<g id="metaphase-II-lower-pair-1-sister-1">
+<path d="M0,-2.75 Q-15.5,-3.5 -31,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q15.5,-3.5 31,-10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="metaphase-II-lower-pair-1-sister-2">
+<path d="M0,2.75 Q-15.5,3.5 -31,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q15.5,3.5 31,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M22.32,6.8107999999999995 Q26.66,8.18 31,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M705,957 Q789.0,1021.5 897,1086" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-lower-left-attachment-2"/>
+<path d="M1095,957 Q1011.0,1021.5 903,1086" fill="none" stroke="#B58A24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="metaphase-II-lower-right-attachment-2"/>
+<g id="metaphase-II-lower-pair-2" transform="translate(900 1086) rotate(90)">
+<metadata>centromere-ancestry=#BE443C; terminal-exchange=both; recombinant-sister=1; chromatids=2</metadata>
+<g id="metaphase-II-lower-pair-2-sister-1">
+<path d="M0,-2.75 Q-29.5,-3.5 -59,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,-2.75 Q29.5,-3.5 59,-10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="-2.75" r="4.1" fill="#213547"/>
+</g>
+<g id="metaphase-II-lower-pair-2-sister-2">
+<path d="M0,2.75 Q-29.5,3.5 -59,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-42.480000000000004,6.8107999999999995 Q-50.739999999999995,8.18 -59,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0,2.75 Q29.5,3.5 59,10" fill="none" stroke="#BE443C" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M42.480000000000004,6.8107999999999995 Q50.739999999999995,8.18 59,10" fill="none" stroke="#007FAD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="0" cy="2.75" r="4.1" fill="#213547"/>
+</g>
+<path d="M0,-3 L0,3" fill="none" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M900,748 L900,1167" fill="none" stroke="#8793A0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 8"/>
+<g id="metaphase-II-lower-left-centrosome" transform="translate(705 957) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<g id="metaphase-II-lower-right-centrosome" transform="translate(1095 957) rotate(0)">
+<path d="M12.00,0.00 L28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,8.49 L19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.00,12.00 L0.00,28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,8.49 L-19.80,19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.00,0.00 L-28.00,0.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-8.49,-8.49 L-19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.00,-12.00 L-0.00,-28.00" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.49,-8.49 L19.80,-19.80" fill="none" stroke="#B58A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-12" y="-6" width="19" height="7" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+<rect x="2" y="-1" width="7" height="19" rx="2" fill="#D6AC4A" stroke="#85651C" stroke-width="1.8"/>
+</g>
+<path d="M551,957 L644,957" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M629.0,950.0 L644.0,957.0 L629.0,964.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

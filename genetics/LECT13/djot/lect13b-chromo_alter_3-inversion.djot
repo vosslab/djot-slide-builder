@@ -49,7 +49,9 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect13b-chromo_alter_3-inversion/image_001.png)
+![Slide image 1](assets/lect13b-chromo_alter_3-inversion/inversion_overview.drawn.svg)
+
+- An inversion reverses a segment within a chromosome.
 
 === layout: two-panels
 
@@ -73,7 +75,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 3](assets/lect13b-chromo_alter_3-inversion/image_003.png)
+![Slide image 3](assets/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg)
 
 @right
 
@@ -115,7 +117,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 7](assets/lect13b-chromo_alter_3-inversion/image_007.png)
+![Slide image 7](assets/lect13b-chromo_alter_3-inversion/paracentric-pairing.drawn.svg)
 
 - does NOT include the centromere
 
@@ -133,7 +135,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 9](assets/lect13b-chromo_alter_3-inversion/image_009.png)
+![Slide image 9](assets/lect13b-chromo_alter_3-inversion/paracentric-anaphase.drawn.svg)
 
 - Anaphase I configuration resulting from the crossover.
 - Acentric and Dicentric chromosomes are formed
@@ -149,7 +151,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 10](assets/lect13b-chromo_alter_3-inversion/image_010.png)
+![Slide image 10](assets/lect13b-chromo_alter_3-inversion/pericentric-pairing.drawn.svg)
 
 - DOES include the centromere
 
@@ -166,7 +168,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 12](assets/lect13b-chromo_alter_3-inversion/image_012.png)
+![Slide image 12](assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg)
 
 - Anaphase I configuration resulting from the crossover.
 - Count the duplications and deletions
@@ -203,7 +205,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 16](assets/lect13b-chromo_alter_3-inversion/image_016.png)
+![Slide image 16](assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
 
 - single crossover\:
 - \[cen\] A B c d a \[cen\] - dicentric
@@ -215,7 +217,7 @@ color-theme: genetics
 
 @top
 
-![Slide image 16](assets/lect13b-chromo_alter_3-inversion/image_016.png)
+![Slide image 16](assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
 
 @bottom
 
@@ -227,7 +229,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_016.png)
+![Slide image 17](assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
 
 ![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_017.png)
 
@@ -247,7 +249,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 19](assets/lect13b-chromo_alter_3-inversion/image_019.png)
+![Slide image 19](assets/lect13b-chromo_alter_3-inversion/inversion-problem-829.drawn.svg)
 
 - [How can we get the genotype\: A B c D E?]{color=red}
 
@@ -257,7 +259,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 19](assets/lect13b-chromo_alter_3-inversion/image_019.png)
+![Slide image 19](assets/lect13b-chromo_alter_3-inversion/inversion-problem-829.drawn.svg)
 
 - [How can we get the genotype\: A B c D E?]{color=red}
 
@@ -340,7 +342,7 @@ color-theme: genetics
 - Expression of a gene can be affected by its position on the chromosome.
   - most often whether a gene is in or near heterochromatin.
 
-![Slide image 21](assets/lect13b-chromo_alter_3-inversion/image_021.png)
+![Slide image 21](assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -350,7 +352,7 @@ color-theme: genetics
 
 ![Slide image 22](assets/lect13b-chromo_alter_3-inversion/image_022.png)
 
-![Slide image 22](assets/lect13b-chromo_alter_3-inversion/image_021.png)
+![Slide image 22](assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg)
 
 === layout: section
 
@@ -417,14 +419,21 @@ color-theme: genetics
 
 @body
 
-![Slide image 28](assets/lect13b-chromo_alter_3-inversion/image_028.png)
+![Slide image 28](assets/lect13b-chromo_alter_3-inversion/sparrow-supergene.drawn.svg)
+
+- An ancient mutation inverted a large section of chromosome 2, creating a supergene.
+- Reduced effective genetic exchange lets the two versions diverge and accumulate mutations.
+- Their divergence is thought to resemble the evolution of mammalian XY and bird ZW sex chromosomes.
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 29](assets/lect13b-chromo_alter_3-inversion/image_029.png)
+![Slide image 29](assets/lect13b-chromo_alter_3-inversion/sparrow-offspring.drawn.svg)
+
+- Males mate with females; white-stripes almost always mate with tan-stripes (disassortative mating).
+- On average, half the offspring inherit the inverted chromosome 2: half tan-striped and half white-striped.
 
 === layout: one-panel
 

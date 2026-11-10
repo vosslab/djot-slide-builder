@@ -1,0 +1,60 @@
+from pathlib import Path
+import xml.etree.ElementTree as ET
+
+OUT = Path('genetics/LECT12/djot/assets/lect12b-gene_trees')
+NS = 'http://www.w3.org/2000/svg'
+ET.register_namespace('', NS)
+DARK, BLUE, ORANGE = '#253342', '#0067CC', '#9C4510'
+
+def element(parent, tag, **attrs):
+    return ET.SubElement(parent, f'{{{NS}}}{tag}', {k.replace('_', '-'): str(v) for k, v in attrs.items()})
+
+def label(parent, text, x, y, size, color=DARK, **attrs):
+    e = element(parent, 'text', x=x, y=y, font_size=size, fill=color, text_anchor='middle', **attrs)
+    e.text = text
+
+def make(name, width, height, title, desc):
+    root = ET.Element(f'{{{NS}}}svg', {'width': str(width), 'height': str(height), 'viewBox': f'0 0 {width} {height}', 'role': 'img', 'aria-labelledby': f'{name}-title {name}-desc'})
+    element(root, 'title', id=f'{name}-title').text = title
+    element(root, 'desc', id=f'{name}-desc').text = desc
+    return root, element(root, 'g', font_family='Liberation Sans, sans-serif')
+
+def tree(parent, ident, order, left, spacing, tip_y, yz_y, xyz_y, root_y, stem_y, font_size):
+    g = element(parent, 'g', id=ident)
+    xs = dict(zip(order, (left+i*spacing for i in range(4))))
+    yz = ((xs['Y']+xs['Z'])/2, yz_y)
+    xyz = ((xs['X']+yz[0])/2, xyz_y)
+    root = ((xs['W']+xyz[0])/2, root_y)
+    paths = element(g, 'g', id=f'{ident}-branches', fill='none', stroke_width=5, stroke_linecap='round', stroke_linejoin='round')
+    for taxon in order:
+        label(g, taxon, xs[taxon], tip_y-23, font_size, BLUE if taxon in 'YZ' else DARK, id=f'{ident}-tip-{taxon}')
+    for taxon in 'YZ':
+        element(paths, 'path', id=f'{ident}-{taxon}', d=f'M{xs[taxon]} {tip_y} V{yz_y} H{yz[0]}', stroke=BLUE)
+    element(paths, 'path', id=f'{ident}-X', d=f'M{xs["X"]} {tip_y} V{xyz_y} H{xyz[0]}', stroke=DARK)
+    element(paths, 'path', id=f'{ident}-YZ', d=f'M{yz[0]} {yz_y} V{xyz_y} H{xyz[0]}', stroke=DARK)
+    element(paths, 'path', id=f'{ident}-W', d=f'M{xs["W"]} {tip_y} V{root_y} H{root[0]}', stroke=DARK)
+    element(paths, 'path', id=f'{ident}-XYZ', d=f'M{xyz[0]} {xyz_y} V{root_y} H{root[0]}', stroke=DARK)
+    element(paths, 'path', id=f'{ident}-root', d=f'M{root[0]} {root_y} V{stem_y}', stroke=DARK)
+    element(g, 'circle', cx=yz[0], cy=yz_y, r=7, fill=BLUE)
+    return xyz
+
+def save(root, name):
+    ET.indent(root, space='\t')
+    ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='utf-8', xml_declaration=True)
+
+r,g=make('tree_rotation',1200,415,'Same tree after rotating the X-Y-Z subtree','W remains the outgroup; Y and Z remain sisters; X remains sister to the Y-Z clade. Left tip order W X Y Z; right W Z Y X. Orange identifies the branch around which the X-Y-Z subtree rotates. Branch lengths are schematic. Source sequence: LECT12B, Rotating Branches in Trees.')
+xyz=tree(g,'before','WXYZ',65,125,85,175,265,355,390,43)
+tree(g,'after','WZYX',750,125,85,175,265,355,390,43)
+element(g,'path',id='comparison-arrow',d='M525 205 H645',fill='none',stroke=DARK,stroke_width=4)
+element(g,'polygon',points='645,205 628,196 628,214',fill=DARK)
+label(g,'rotate',585,175,29)
+x,y=xyz
+element(g,'path',id='rotation-cue',d=f'M{x+28} 313 C{x+70} 286 {x-70} 286 {x-28} 313 C{x-10} 324 {x+21} 322 {x+34} 311',fill='none',stroke=ORANGE,stroke_width=5,stroke_linecap='round')
+element(g,'polygon',points=f'{x+34},311 {x+17},310 {x+29},326',fill=ORANGE)
+save(r,'tree_rotation')
+r,g=make('tree_rotation_four_forms',1600,435,'Four arrangements of the same rooted tree','Tip orders from left to right: W X Y Z; W Z Y X; W X Z Y; X Z Y W. Every form has W as outgroup, sister taxa Y and Z, and clade X Y Z. Equal signs mean equal topology. Branch lengths are schematic. Source sequence: LECT12B, Trees, trees, and trees, oh my.')
+for i,order in enumerate(('WXYZ','WZYX','WXZY','XZYW')):
+    tree(g,f'form-{i+1}',order,35+i*405,100,95,185,280,370,410,48)
+for x in (385,790,1195):
+    label(g,'=',x,255,65,ORANGE)
+save(r,'tree_rotation_four_forms')

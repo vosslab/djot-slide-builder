@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="944" viewBox="40 95 1120 880" role="img" aria-labelledby="title description">
+<title id="title">Magnetic-sector mass analyzer</title>
+<desc id="description">Original schematic cutaway of a source feeding three initially overlapping dotted ion trajectories through an open curved magnet channel. The tighter inner path reaches the left detector and is labeled lighter atom or molecule. The outer path reaches the right detector and is labeled heavier atom or molecule. The middle path reaches the middle detector. Source: Biotechnology LECT04 original ODP page 81, image_044.png. Geometry and hardware proportions are illustrative, unmeasured and not to scale; the shallow parallel projection exposes the beam plane.</desc>
+<rect id="background" x="40" y="95" width="1120" height="880" fill="#ffffff"/>
+<g stroke="#213547" stroke-width="3" stroke-linejoin="round">
+<!-- A shallow parallel depth vector (+26,-26) gives every structural mass a rear face. -->
+<g id="magnet-solid">
+<path id="magnet-rear" d="M436 134 C718 134 956 370 956 624 L706 624 C706 432 590 294 436 294 Z" fill="#bdccd4"/>
+<path id="magnet-outer-depth" d="M410 160 L436 134 C718 134 956 370 956 624 L930 650 C930 396 692 160 410 160 Z" fill="#dce7ec"/>
+<path id="magnet-exit-depth" d="M680 650 L706 624 L956 624 L930 650 Z" fill="#9eafb9"/>
+<path id="magnet-face" d="M410 160 C692 160 930 396 930 650 L680 650 C680 458 564 320 410 320 Z" fill="#afc2ce"/>
+<!-- The exposed channel is a recessed cut, with solid rims above and below it. -->
+<path id="open-channel" d="M410 197 C670 197 893 407 893 650 L710 650 C710 419 562 246 410 246 Z" fill="#f5faf9"/>
+<path id="channel-upper-wall" d="M410 197 C670 197 893 407 893 650 L883 650 C883 412 664 211 410 211 Z" fill="#dce7e8" stroke-width="1.5"/>
+<path id="channel-inner-wall" d="M410 246 C562 246 710 419 710 650 L723 650 C723 420 565 234 410 234 Z" fill="#d8e4e7" stroke-width="1.5"/>
+<path d="M429 172 C682 183 910 402 916 631" fill="none" stroke="#edf4f6" stroke-width="3"/>
+<path d="M422 302 C577 312 692 469 692 636" fill="none" stroke="#819aa9" stroke-width="1.5"/>
+</g>
+<g id="source-housing">
+<path d="M70 139 L96 113 L245 113 L219 139 Z" fill="#e5edf1"/>
+<path d="M219 139 L245 113 L245 287 L219 313 Z" fill="#8fa7b8"/>
+<rect x="70" y="139" width="149" height="174" rx="5" fill="#c3d3de"/>
+<rect x="87" y="157" width="113" height="138" rx="3" fill="#dce7ec" stroke="#90a7b5" stroke-width="1.5"/>
+<path d="M219 202 L244 184 L244 231 L219 249 Z" fill="#415d71"/>
+<path id="source-outlet" d="M238 206 L410 206 L410 232 L238 232 Z" fill="#f5faf9" stroke-width="2"/>
+<ellipse cx="238" cy="219" rx="5" ry="13" fill="#627e8e" stroke-width="1.5"/>
+<path d="M246 209 L404 209" stroke="#dce7e8" stroke-width="2"/>
+</g>
+<!-- Open receiving cups: the back wall and dark cavity sit behind each trajectory. -->
+<g id="detector-assembly">
+<path id="detector-mount" d="M698 853 L872 853 L887 838 L713 838 Z" fill="#dce7ec"/>
+<path d="M698 853 L872 853 L872 868 L698 868 Z" fill="#a3b8c5"/>
+
+<g id="lighter-cup" data-route="trajectory-lighter">
+<path d="M709 795 L709 839 Q730 853 751 839 L751 795 Z" fill="#b6c9d4"/>
+<ellipse cx="730" cy="795" rx="21" ry="11" fill="#edf3f5"/>
+<ellipse id="lighter-cup-opening" cx="730" cy="796" rx="15" ry="7" fill="#415d71" stroke-width="1.5"/>
+<path d="M715 809 L715 835" stroke="#e7f0f4" stroke-width="2"/>
+</g>
+<g id="middle-cup" data-route="trajectory-middle">
+<path d="M764 795 L764 839 Q785 853 806 839 L806 795 Z" fill="#b6c9d4"/>
+<ellipse cx="785" cy="795" rx="21" ry="11" fill="#edf3f5"/>
+<ellipse id="middle-cup-opening" cx="785" cy="796" rx="15" ry="7" fill="#415d71" stroke-width="1.5"/>
+<path d="M770 809 L770 835" stroke="#e7f0f4" stroke-width="2"/>
+</g>
+<g id="heavier-cup" data-route="trajectory-heavier">
+<path d="M819 795 L819 839 Q840 853 861 839 L861 795 Z" fill="#b6c9d4"/>
+<ellipse cx="840" cy="795" rx="21" ry="11" fill="#edf3f5"/>
+<ellipse id="heavier-cup-opening" cx="840" cy="796" rx="15" ry="7" fill="#415d71" stroke-width="1.5"/>
+<path d="M825 809 L825 835" stroke="#e7f0f4" stroke-width="2"/>
+</g>
+</g></g>
+<g id="ion-trajectories" fill="none" stroke="#187b72" stroke-width="4.2" stroke-dasharray="1 11" stroke-linecap="round">
+<path id="trajectory-lighter" data-detector="lighter-cup" d="M238 218 H410 A320 320 0 0 1 730 538 V797"/>
+<path id="trajectory-middle" data-detector="middle-cup" d="M238 218 H410 A375 375 0 0 1 785 593 V797"/>
+<path id="trajectory-heavier" data-detector="heavier-cup" d="M238 218 H410 A430 430 0 0 1 840 648 V797"/>
+</g>
+<g id="label-leaders" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path id="source-leader" d="M145 348 V316"/>
+<path id="beam-leader" d="M320 176 V202"/>
+<path id="magnet-leader" d="M485 383 L537 340"/>
+<path id="lighter-leader" data-target="trajectory-lighter" d="M436 650 H579 L719 704"/>
+<path id="heavier-leader" data-target="trajectory-heavier" d="M925 715 H889 L850 736"/>
+<path id="detectors-leader" d="M596 827 H671 L709 821"/>
+<path id="faradays-leader" d="M785 885 V871"/>
+</g>
+<g id="live-labels" fill="#213547" font-family="Arial, Helvetica, sans-serif" font-size="34">
+<text id="label-source" x="145" y="388" text-anchor="middle">source</text>
+<text id="label-ion-beam" x="320" y="159" text-anchor="middle">ion beam</text>
+<text id="label-magnet" x="467" y="418" text-anchor="middle">magnet</text>
+<text id="label-lighter" x="165" y="631"><tspan x="165">lighter atom</tspan><tspan x="165" dy="40">or molecule</tspan></text>
+<text id="label-heavier" x="928" y="689"><tspan x="928">heavier atom</tspan><tspan x="928" dy="40">or molecule</tspan></text>
+<text id="label-detectors" x="382" y="839">ion detectors</text>
+<text id="label-faradays" x="785" y="923" text-anchor="middle" font-size="31">Faradays Detector</text>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc"><title id="title">Pea flower inheritance</title><desc id="desc">Source slide 10; original accepted pea family recomposed. Icons identify phenotypes, not observed sample sizes. Source: lect02b-genes_dogma original ODP. Original schematic, not to scale.</desc><g id="pea_recap-diagram"><defs xmlns="http://www.w3.org/2000/svg">
+		<g id="pea_cross_recap-purple">
+			<path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			<g transform="translate(0 0) scale(1)">
+				<path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</g>
+		<g id="pea_cross_recap-white">
+			<path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			<g transform="translate(0 0) scale(1)">
+				<path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</g>
+	</defs>
+	<text x="170" y="45" font-family="Arial" font-size="36" text-anchor="middle" fill="#243247">P</text><text x="600" y="45" font-family="Arial" font-size="36" text-anchor="middle" fill="#243247">F1</text><text x="1010" y="45" font-family="Arial" font-size="36" text-anchor="middle" fill="#243247">F2</text><use href="#pea_cross_recap-purple" transform="translate(110 165) scale(.63)"/><use href="#pea_cross_recap-white" transform="translate(250 165) scale(.63)"/><use href="#pea_cross_recap-purple" transform="translate(600 165) scale(.63)"/><use href="#pea_cross_recap-purple" transform="translate(940 165) scale(.63)"/><use href="#pea_cross_recap-white" transform="translate(1090 165) scale(.63)"/><text x="180" y="390" font-family="Arial" font-size="28" text-anchor="middle" fill="#243247">True-breeding parents</text><text x="180" y="430" font-family="Arial" font-size="27" text-anchor="middle" fill="#243247">Purple &#215; white</text><text x="600" y="390" font-family="Arial" font-size="28" text-anchor="middle" fill="#243247">Hybrids: all purple</text><text x="1010" y="390" font-family="Arial" font-size="28" text-anchor="middle" fill="#243247">Purple and white</text><path d="M330 230 L460 230" fill="none" stroke="#53687D" stroke-width="4" stroke-linecap="round"/><path d="M448 221 L460 230 L448 239" fill="none" stroke="#53687D" stroke-width="4"/><path d="M710 230 L820 230" fill="none" stroke="#53687D" stroke-width="4" stroke-linecap="round"/><path d="M808 221 L820 230 L808 239" fill="none" stroke="#53687D" stroke-width="4"/></g></svg>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="440" viewBox="0 0 650 440" role="img" aria-labelledby="title desc">
+  <title id="title">True-breeding purple flowers</title>
+  <desc id="desc">Two purple parent flowers produce four purple offspring, preserving the source counts. Source: lect04b-mendel_history.djot. Simplified teaching illustration; not to scale.</desc>
+  <defs>
+    <g id="purple-plant">
+      <path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(0 0) scale(1)">
+        <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+    <g transform="translate(0 0) scale(1)" id="purple-flower">
+      <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g id="white-plant">
+      <path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(0 0) scale(1)">
+        <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+    <g transform="translate(0 0) scale(1)" id="white-flower">
+      <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </defs>
+  <g font-family="Liberation Sans, sans-serif">
+    <use href="#purple-flower" transform="translate(235 115) scale(0.85)" />
+    <use href="#purple-flower" transform="translate(415 115) scale(0.85)" />
+    <text x="325" y="110" font-size="40" text-anchor="middle" fill="#253342">&#215;</text>
+    <path d="M325 180 V235 M80 235 H570" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M80 235 V280" fill="none" stroke="#253342" stroke-width="3" />
+    <use href="#purple-flower" transform="translate(80 350) scale(0.8)" />
+    <path d="M245 235 V280" fill="none" stroke="#253342" stroke-width="3" />
+    <use href="#purple-flower" transform="translate(245 350) scale(0.8)" />
+    <path d="M405 235 V280" fill="none" stroke="#253342" stroke-width="3" />
+    <use href="#purple-flower" transform="translate(405 350) scale(0.8)" />
+    <path d="M570 235 V280" fill="none" stroke="#253342" stroke-width="3" />
+    <use href="#purple-flower" transform="translate(570 350) scale(0.8)" />
+  </g>
+</svg>

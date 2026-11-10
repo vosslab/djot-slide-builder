@@ -1,0 +1,208 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 12E
+
+## Evolutionary Time
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## December 1, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain why gene trees can differ from species trees.
+- Compare substitution rates among sequence regions.
+- Explain how molecular clocks estimate divergence.
+- Distinguish orthologous and paralogous genes.
+
+=== layout: section
+
+# Evolutionary Time
+
+=== layout: one-panel
+
+# Gene trees may differ from species trees
+
+@body
+
+![Sorting polymorphic A1 and A2 alleles through two species splits](assets/lect12e-evol_time/phy_e_allele_sorting.drawn.svg)
+
+Sorting of polymorphic alleles can make gene and species trees differ: species 2 and 3 are closest as species, while the surviving alleles in species 1 and 2 are closest. Branch lengths are schematic.
+
+=== layout: section
+
+# Molecular Clocks and Evolutionary Time
+
+=== layout: one-panel
+
+# *Rates of nucleotide substitution in mammalian genes*
+
+@body
+
+![Measured synonymous and nonsynonymous substitution-rate distributions](assets/lect12e-evol_time/image_003.jpg)
+
+Compare the distributions for synonymous and nonsynonymous sites. The source axis gives substitutions per site per billion years.
+
+
+=== layout: one-panel
+
+# Observed variation in fruit-fly Adh
+
+@body
+
+![Observed Adh variants with source-positioned exon, intron, insertion, deletion, and substitution labels](assets/lect12e-evol_time/phy_e_adh_annotated.svg)
+
+- A study compared the alcohol dehydrogenase (Adh) gene in several fruit flies: 43 variable nucleotide sites, plus insertions and deletions.
+- Of 18 variable sites within the four exons, only the variation at site 1,490 changes an amino acid.
+
+=== layout: two-panels
+
+# *Rapid Reproduction*
+
+@left
+
+- Mutation rates are low in animals and plants
+- The average is about one mutation in every 100,000 genes per generation
+- Mutation rates are often lower in prokaryotes and higher in viruses
+- Mutations accumulate quickly in prokaryotes and viruses because they have short generation times
+
+@right
+
+![Slide image 6](assets/lect12e-evol_time/image_006.png)
+
+=== layout: one-panel
+
+# *Rates of DNA Evolution*
+
+@body
+
+- There are only 4 nucleotides, but there are 20 aa&#8230;smaller number of subunits means changes at nucleotide sites are more likely than at amino acid sites
+- Again, nucleotide sites evolve at different rates&#8230; depending on the function and position in the genome
+  - Synonymous substitution &#8211; doesn&#8217;t result in aa replacement (Third codon position)
+  - Non-synonymous substitution &#8211; results in aa replacement&#8230; (First and second position.)
+  - Pseudogenes &#8211; fastest evolving then fourfold degenerate site
+
+=== layout: one-panel
+
+# *Rate of Protein Evolution*
+
+@body
+
+Rate = fraction of sites changing in an interval. Mouse-human beta globin: 1.23 replacements per amino-acid site per billion years.
+Last common ancestor: 80 million years ago. Of 147 amino acids, about 29 differ in total; about 8 differ in the first 50 positions.
+
+=== layout: one-panel
+
+# Beta-globin alignment: first 50 positions
+
+@body
+
+Dot = same as Human; dash = gap.
+
+{table-style=comparison column-widths="2,10" padding="3pt"}
+| Species | Aligned amino acids |
+|---|---|
+| Human (Hu) | `MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLS` |
+| Baboon (Ba) | `.........N.................................D......` |
+| Cow (Co) | `.--..A...A....F....K..............................` |
+| Sheep (Sh) | `.--..A...A...GF....K.....A..................H.....` |
+| Mouse (Mo) | `.....DA..A..SG......A....................Y.D......` |
+| Hamster (Ha) | `.....DA..AL..G......A.A..A..................H.....` |
+| Chicken (Ch) | `...W.A...QLI.G.......A.C.A...A...I.........A...N..` |
+
+
+=== layout: one-panel
+
+# *Molecular Clock*
+
+@body
+
+![Molecular-clock evidence comparing fibrinopeptides, hemoglobin, and cytochrome c](assets/lect12e-evol_time/image_008.png)
+
+Compare the three protein trends using amino-acid substitutions per 100 residues and divergence time in millions of years.
+
+=== layout: section
+
+# Homologous Genes
+
+=== layout: one-panel
+
+# *Homologous Genes*
+
+@body
+
+- Orthologous genes
+  - homologous genes whose lineages diverged by speciation.
+- Paralogous genes
+  - homologous genes whose lineages diverged by gene duplication.
+- Function can be conserved or change after either event; the origin of the relationship defines the term.
+
+=== layout: one-panel
+
+# *Origin of New Species*
+
+@body
+
+- New genes come from preexisting genes&#8230;raw material comes from duplications of the regions of the genome
+- [*Orthologous genes*]{underline=true}\: Genes in different species whose lineages diverged by speciation are orthologous; shared function alone does not establish this relationship
+- [*Paralogous genes*]{underline=true}\: Two homologous sequences (e.g., sequences that share a common evolutionary ancestor) that diverged by gene duplication, as opposed to orthologs, which diverged by speciation
+
+=== layout: one-panel
+
+
+# Homologous globin genes
+
+@body
+
+![Globin duplication gives alpha and beta lineages, each with frog, chick, and mouse orthologs](assets/lect12e-evol_time/phy_e_globin_homology.drawn.svg)
+
+All six genes are homologs. Compare orthologs within each lineage with the mouse alpha/beta paralogs. Branch lengths are schematic.
+
+=== layout: two-panels
+
+
+# Duplication and speciation
+
+@left
+
+![Ancestral alpha duplicates into alpha and beta, then species 1 and species 2 inherit both](assets/lect12e-evol_time/phy_e_duplication_speciation.drawn.svg)
+
+@right
+
+- Orthologs: alpha1-alpha2 or beta1-beta2; their lineages diverged by speciation.
+- Paralogs: alpha1-beta1 or alpha1-beta2; their lineages diverged by duplication.
+- Crossed lines are not branching nodes. Branch lengths are schematic.
+
+=== layout: one-panel
+
+# Specialization by subfunctionalization
+
+@body
+
+![Three complementary enhancer losses in each duplicated gene copy](assets/lect12e-evol_time/phy_e_enhancer_losses.drawn.svg)
+
+Gene duplication allows specialized functions: each copy loses a different tissue's enhancers, leaving one active in tissue 1 and the other in tissue 2. The white promoter and red coding region remain; arrows show transcription.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- A gene tree can differ from the species tree.
+- Sequence regions can evolve at different rates.
+- Molecular clocks connect divergence with time.
+- Homologous genes can arise by speciation or duplication.
+
+=== layout: theend
+
+# THE END
+

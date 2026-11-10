@@ -338,6 +338,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 ## Slide-writing advice
 
+- For original Genetics artwork, use source images for scientific facts and teaching purpose, not
+  as visual templates. Develop a shared visual language from representative equipment, organism
+  and scientific-diagram examples; allow different compositions and drawing techniques by subject.
+
 - Use plain, concrete language. Prefer familiar words and direct sentences. Technical terms
   should add precision; vocabulary and jargon add cognitive load. When in doubt, use the simpler word.
 - For Mitotic Cross-Over, start from crossing over between linked genes, then use twin spots.
@@ -542,6 +546,17 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   including I with superscript A and F/P generation indices.
 
 ## Preserve teaching voice
+
+- Prioritize high-quality original SVG replacements for rasterized drawings and clipart by
+  potential visual improvement and creation difficulty: achievable high-impact art first,
+  complex work later. `@replaceme` status does not determine artwork priority.
+
+- For a pure-text image, faithful OCR may become a blockquote-style card; preserve the original
+  wording, errors and voice, and retain the source image.
+
+- This job is drawing and clipart replacement for rasterized images. Preserve my voice, titles,
+  prose, examples, layouts and sequence; check sources only as needed to draw accurately, not for
+  a global science audit. Focus on important issues and avoid bikeshedding.
 
 - Any slide splitting requires human approval. Keep existing content slides one-to-one with
   their source slides through the middle of the lecture. Added opening and closing slides may shift numbering; record those additions in the slide map without treating them as permission to split source slides.

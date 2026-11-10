@@ -1,0 +1,109 @@
+from pathlib import Path
+import xml.etree.ElementTree as ET
+import re,json
+P=Path(__file__).parent
+pairs={'ab':17,'ac':20,'ad':30,'ae':23,'bc':30,'bd':34,'be':21,'cd':28,'ce':35,'de':40}
+def averages(labels,values,merges):
+ d={frozenset(p):v for p,v in values.items()};clusters=set(labels);got=[]
+ for a,b,c in merges:
+  height=d[frozenset((a,b))]/2;got.append(height)
+  for other in clusters-{a,b}:d[frozenset((c,other))]=(d[frozenset((a,other))]+d[frozenset((b,other))])/2
+  clusters-={a,b};clusters.add(c)
+ return got,d
+heights,df=averages('abcde',pairs,[('a','b','u'),('u','e','v'),('c','d','w'),('v','w','r')])
+assert heights==[8.5,11,14,16.5]
+assert df[frozenset(('u','c'))]==25 and df[frozenset(('v','c'))]==30
+p={'ab':12,'ac':4,'ad':15,'ae':9,'af':18,'bc':10,'bd':13,'be':6,'bf':15,'cd':13,'ce':9,'cf':14,'de':11,'df':8,'ef':13}
+h,dd=averages('abcdef',p,[('a','c','ac'),('b','e','be'),('d','f','df'),('ac','be','acbe'),('acbe','df','root')])
+assert h==[2,3,4,5,7]
+assert [dd[frozenset(('ac',t))] for t in ('b','d','e','f')]==[11,14,9,16]
+assert dd[frozenset(('ac','be'))]==10 and dd[frozenset(('ac','df'))]==15 and dd[frozenset(('be','df'))]==13
+assert (6+9+7+10)/4==8 and (8+9+7+10)/4==8.5
+assert (8+9+7+10+11+12+12+9)/8==9.75 and 9.75/2==4.875
+assert (13+13+16+15+16+14)/6==14.5 and 7.25-4.875==2.375
+ns={'s':'http://www.w3.org/2000/svg'}
+checks=[]
+for f in (P/'frozen/assets').glob('*.drawn.svg'):
+ root=ET.parse(f).getroot();ids=[e.get('id') for e in root.iter() if e.get('id')];assert len(ids)==len(set(ids));assert root.find('s:title',ns) is not None;assert root.find('s:desc',ns) is not None
+ assert not root.findall('.//s:image',ns)
+ edges=[e for e in root.iter() if (e.get('id') or '').startswith('edge-')]
+ if 'stage_' in f.name:assert len(edges)==2*int(re.search(r'stage_(\d+)',f.name).group(1))
+ checks.append({'asset':f.name,'edges':len(edges),'xml':True})
+# Confirm the C stage sequence does not leak later joins.
+c=Path('genetics/LECT12/djot/lect12c_more_gene_trees_part_02.djot').read_text().replace('assets/lect12c-more_gene_trees/','assets/')
+assert re.findall(r'\]\(assets/phy_c_seven_stage_(\d+)',c)==list('12334456')
+d=Path('genetics/LECT12/djot/lect12d-gene_tree_activity.djot').read_text().replace('assets/lect12d-gene_tree_activity/','assets/')
+assert re.findall(r'\]\(assets/phy_d_activity_stage_(\d+)',d)==list('12345')
+# Every source repeated teaching slide survives.
+for name in ('lect12c_more_gene_trees_part_01.djot','lect12c_more_gene_trees_part_02.djot','lect12d-gene_tree_activity.djot'):
+ assert (P/'frozen'/name).read_text().count('=== layout:') + (1 if name=='lect12c_more_gene_trees_part_02.djot' else 0)==Path('genetics/LECT12/djot',name).read_text().count('=== layout:')
+(P/'checks.json').write_text(json.dumps({'five_taxa_heights':heights,'activity_heights':h,'seven_species_arithmetic':True,'reveal_sequences':True,'slide_counts_preserved':True,'assets':checks},indent=2)+'\n')
+print('All source arithmetic, stage, slide-count and SVG checks passed.')
+def tables(text):
+ blocks=re.findall(r'(?m)^\|.*(?:\n\|.*)+',text)
+ result=[]
+ for b in blocks:
+  if 'Aligned amino acids' in b:continue
+  rows=[]
+  for line in b.splitlines()[2:]:
+   vals=[]
+   for cell in line.strip('|').split('|')[1:]:
+    cell=re.sub(r'\{[^}]*\}','',cell).replace('[','').replace(']','').replace('*','').strip()
+    vals.append(None if cell in ('','-','&#8212;') else int(cell))
+   rows.append(vals)
+  result.append(rows)
+ return result
+expected7=[2,6,9,8,9,13,7,10,7,10,13,3,11,12,16,12,9,15,7,16,14]
+seven_tables=tables(c)
+assert len(seven_tables)==9
+for rows in seven_tables:
+ assert [v for i,row in enumerate(rows) for j,v in enumerate(row) if j>i]==expected7
+triangles=[[12,4,15,9,18,10,13,6,15,13,9,14,11,8,13],[11,14,9,16,13,6,15,11,8,13],[10,14,16,12,14,8],[10,15,13],[14]]
+state_ids=[0,0,0,1,0,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,0,1,2,3,4]
+rows_list=tables(d);assert len(rows_list)==27
+for k,(rows,state) in enumerate(zip(rows_list,state_ids)):
+ n=len(rows);expected=iter(triangles[state]);assert n==6-state
+ for i in range(n):
+  assert rows[i][i] is None
+  for j in range(i+1,n):
+   value=next(expected)
+   if k==3 and i==0:assert rows[i][j] is None and rows[j][i] is None
+   else:assert rows[i][j]==rows[j][i]==value,(k,i,j,rows[i][j],value)
+print('Native table checks passed: 9 seven-species matrices; 27 activity matrices, including blank ac state.')
+metric_specs=[('phy_c_seven',80,{'Hu':0,'Ba':0,'Co':0,'Sh':0,'Mo':0,'Ha':0,'Ch':0,'a':1,'b':1.5,'c':3.5,'d':4,'e':4.875,'f':7.25}),('phy_c_five',36,{'a':0,'b':0,'c':0,'d':0,'e':0,'u':8.5,'v':11,'w':14,'r':16.5}),('phy_c_hartl',65,{'A':0,'B':0,'C':0,'D':0,'AB':4,'CD':2.5,'root':8.5}),('phy_d_activity',85,{'a':0,'b':0,'c':0,'d':0,'e':0,'f':0,'ac':2,'be':3,'df':4,'acbe':5,'root':7})]
+for f in (P/'frozen/assets').glob('*.drawn.svg'):
+ spec=next((s for s in metric_specs if f.name.startswith(s[0])),None)
+ if not spec:continue
+ _,scale,heights=spec
+ for e in ET.parse(f).getroot().iter():
+  id=e.get('id','')
+  if not id.startswith('edge-'):continue
+  _,node,child=id.split('-');coords=[float(v) for v in re.findall(r'-?\d+(?:\.\d+)?',e.get('d'))];x,y,xend=coords
+  assert abs((xend-x)/scale-(heights[node]-heights[child]))<1e-9,(f,id)
+print('Every rendered SVG horizontal branch coordinate matches its source metric length.')
+family_clades={'phy_c_seven':[{'Hu','Ba'},{'Co','Sh'},{'Mo','Ha'},{'Hu','Ba','Co','Sh'},{'Hu','Ba','Co','Sh','Mo','Ha'},{'Hu','Ba','Co','Sh','Mo','Ha','Ch'}], 'phy_c_five':[{'a','b'},{'a','b','e'},{'c','d'},{'a','b','c','d','e'}], 'phy_c_hartl':[{'C','D'},{'A','B'},{'A','B','C','D'}], 'phy_d_activity':[{'a','c'},{'b','e'},{'d','f'},{'a','c','b','e'},{'a','b','c','d','e','f'}]}
+for f in (P/'frozen/assets').glob('*.drawn.svg'):
+ prefix=next((k for k in family_clades if f.name.startswith(k)),None)
+ if not prefix:continue
+ children={}
+ for e in ET.parse(f).getroot().iter():
+  id=e.get('id','')
+  if id.startswith('edge-'):
+   _,node,child=id.split('-');children.setdefault(node,[]).append(child)
+ def tips(node):return {node} if node not in children else set.union(*(tips(c) for c in children[node]))
+ actual={frozenset(tips(n)) for n in children}
+ n=int(re.search(r'stage_(\d+)',f.name).group(1)) if 'stage_' in f.name else len(family_clades[prefix])
+ assert actual=={frozenset(c) for c in family_clades[prefix][:n]},f
+print('Independent SVG edge graph reconstructs every source rooted clade at each reveal.')
+
+# C alignment strings must independently recreate the source matrix.
+seq=re.findall(r'`([A-Z.\-]+)`',c)
+assert len(seq)==7 and all(len(x)==50 for x in seq)
+full=[seq[0]]+[''.join(seq[0][i] if ch=='.' else ch for i,ch in enumerate(row)) for row in seq[1:]]
+assert [sum(a!=b for a,b in zip(full[i],full[j])) for i in range(7) for j in range(i+1,7)]==expected7
+print('All21 distances independently reproduced from the canonical7x50 alignment.')
+import hashlib
+report=json.loads((P/'checks.json').read_text());report.pop('slide_counts_preserved',None)
+report.update({'original_teaching_states_preserved':True,'c_added_slides':1,'c_added_slide_reason':'Full-width native alignment after unchanged original prose','native_seven_species_tables_checked':9,'native_activity_tables_checked':27,'alignment_shape':[7,50],'alignment_distances_all21_match':True,'svg_metric_geometry_checked':True,'svg_rooted_clades_checked':True})
+report['canonical_sha256']={name:hashlib.sha256(Path('genetics/LECT12/djot',name).read_bytes()).hexdigest() for name in ('lect12c_more_gene_trees_part_01.djot','lect12c_more_gene_trees_part_02.djot','lect12d-gene_tree_activity.djot')}
+(P/'checks.json').write_text(json.dumps(report,indent=2)+'\n')

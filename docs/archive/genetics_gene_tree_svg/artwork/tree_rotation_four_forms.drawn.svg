@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="435" viewBox="0 0 1600 435" role="img" aria-labelledby="tree_rotation_four_forms-title tree_rotation_four_forms-desc">
+	<title id="tree_rotation_four_forms-title">Four arrangements of the same rooted tree</title>
+	<desc id="tree_rotation_four_forms-desc">Tip orders from left to right: W X Y Z; W Z Y X; W X Z Y; X Z Y W. Every form has W as outgroup, sister taxa Y and Z, and clade X Y Z. Equal signs mean equal topology. Branch lengths are schematic. Source sequence: LECT12B, Trees, trees, and trees, oh my.</desc>
+	<g font-family="Liberation Sans, sans-serif">
+		<g id="form-1">
+			<g id="form-1-branches" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+				<path id="form-1-Y" d="M235 95 V185 H285.0" stroke="#0067CC" />
+				<path id="form-1-Z" d="M335 95 V185 H285.0" stroke="#0067CC" />
+				<path id="form-1-X" d="M135 95 V280 H210.0" stroke="#253342" />
+				<path id="form-1-YZ" d="M285.0 185 V280 H210.0" stroke="#253342" />
+				<path id="form-1-W" d="M35 95 V370 H122.5" stroke="#253342" />
+				<path id="form-1-XYZ" d="M210.0 280 V370 H122.5" stroke="#253342" />
+				<path id="form-1-root" d="M122.5 370 V410" stroke="#253342" />
+			</g>
+			<text x="35" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-1-tip-W">W</text>
+			<text x="135" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-1-tip-X">X</text>
+			<text x="235" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-1-tip-Y">Y</text>
+			<text x="335" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-1-tip-Z">Z</text>
+			<circle cx="285.0" cy="185" r="7" fill="#0067CC" />
+		</g>
+		<g id="form-2">
+			<g id="form-2-branches" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+				<path id="form-2-Y" d="M640 95 V185 H590.0" stroke="#0067CC" />
+				<path id="form-2-Z" d="M540 95 V185 H590.0" stroke="#0067CC" />
+				<path id="form-2-X" d="M740 95 V280 H665.0" stroke="#253342" />
+				<path id="form-2-YZ" d="M590.0 185 V280 H665.0" stroke="#253342" />
+				<path id="form-2-W" d="M440 95 V370 H552.5" stroke="#253342" />
+				<path id="form-2-XYZ" d="M665.0 280 V370 H552.5" stroke="#253342" />
+				<path id="form-2-root" d="M552.5 370 V410" stroke="#253342" />
+			</g>
+			<text x="440" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-2-tip-W">W</text>
+			<text x="540" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-2-tip-Z">Z</text>
+			<text x="640" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-2-tip-Y">Y</text>
+			<text x="740" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-2-tip-X">X</text>
+			<circle cx="590.0" cy="185" r="7" fill="#0067CC" />
+		</g>
+		<g id="form-3">
+			<g id="form-3-branches" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+				<path id="form-3-Y" d="M1145 95 V185 H1095.0" stroke="#0067CC" />
+				<path id="form-3-Z" d="M1045 95 V185 H1095.0" stroke="#0067CC" />
+				<path id="form-3-X" d="M945 95 V280 H1020.0" stroke="#253342" />
+				<path id="form-3-YZ" d="M1095.0 185 V280 H1020.0" stroke="#253342" />
+				<path id="form-3-W" d="M845 95 V370 H932.5" stroke="#253342" />
+				<path id="form-3-XYZ" d="M1020.0 280 V370 H932.5" stroke="#253342" />
+				<path id="form-3-root" d="M932.5 370 V410" stroke="#253342" />
+			</g>
+			<text x="845" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-3-tip-W">W</text>
+			<text x="945" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-3-tip-X">X</text>
+			<text x="1045" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-3-tip-Z">Z</text>
+			<text x="1145" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-3-tip-Y">Y</text>
+			<circle cx="1095.0" cy="185" r="7" fill="#0067CC" />
+		</g>
+		<g id="form-4">
+			<g id="form-4-branches" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+				<path id="form-4-Y" d="M1450 95 V185 H1400.0" stroke="#0067CC" />
+				<path id="form-4-Z" d="M1350 95 V185 H1400.0" stroke="#0067CC" />
+				<path id="form-4-X" d="M1250 95 V280 H1325.0" stroke="#253342" />
+				<path id="form-4-YZ" d="M1400.0 185 V280 H1325.0" stroke="#253342" />
+				<path id="form-4-W" d="M1550 95 V370 H1437.5" stroke="#253342" />
+				<path id="form-4-XYZ" d="M1325.0 280 V370 H1437.5" stroke="#253342" />
+				<path id="form-4-root" d="M1437.5 370 V410" stroke="#253342" />
+			</g>
+			<text x="1250" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-4-tip-X">X</text>
+			<text x="1350" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-4-tip-Z">Z</text>
+			<text x="1450" y="72" font-size="48" fill="#0067CC" text-anchor="middle" id="form-4-tip-Y">Y</text>
+			<text x="1550" y="72" font-size="48" fill="#253342" text-anchor="middle" id="form-4-tip-W">W</text>
+			<circle cx="1400.0" cy="185" r="7" fill="#0067CC" />
+		</g>
+		<text x="385" y="255" font-size="65" fill="#9C4510" text-anchor="middle">=</text>
+		<text x="790" y="255" font-size="65" fill="#9C4510" text-anchor="middle">=</text>
+		<text x="1195" y="255" font-size="65" fill="#9C4510" text-anchor="middle">=</text>
+	</g>
+</svg>

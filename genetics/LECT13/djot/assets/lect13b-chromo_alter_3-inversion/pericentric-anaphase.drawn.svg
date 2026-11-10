@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="790" viewBox="0 0 1460 790" role="img" aria-labelledby="title description">
+<title id="title">Pericentric inversion: crossover and anaphase I</title><desc id="description">Stage A repeats the source four-chromatid inversion loop. Stage B shows two unchanged chromatids and the two reciprocal recombinant products, with source allele order, ancestry colors and centromeres retained. Both recombinant chromatids are monocentric, with reciprocal a/d duplication and deficiency.</desc>
+<metadata>Original editable schematic, created 2026-11-10. Source facts: genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/image_012.png; original ODP slides 6, 10, 12, 14, 16. Geometry newly composed, not traced. Unmeasured. Source labels and stage/copy counts preserved.</metadata>
+<rect width="1460" height="790" fill="white"/><g font-family="Arial, sans-serif">
+<g id="stage-a-pairing" transform="translate(0,67) scale(.57)">
+<text x="30" y="42" font-size="34" text-anchor="start" font-weight="bold" fill="#213547">(A)  Pericentric inversion</text>
+<g id="paired-orange-chromatid" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 55,440 C 235,440 515.4300000000001,474.85 477.43,427.85 A 160,160 0 0 1 627.78,167.43A 160,160 0 0 1 722.57,222.15 A 160,160 0 0 1 722.57,427.85 C 684.57,474.85 970,440 1145,440" stroke="white" stroke-width="27"/>
+<path d="M 55,440 C 235,440 515.4300000000001,474.85 477.43,427.85 A 160,160 0 0 1 627.78,167.43A 160,160 0 0 1 722.57,222.15 A 160,160 0 0 1 722.57,427.85 C 684.57,474.85 970,440 1145,440" stroke="#213547" stroke-opacity=".34" stroke-width="22"/>
+<path d="M 55,440 C 235,440 515.4300000000001,474.85 477.43,427.85 A 160,160 0 0 1 627.78,167.43A 160,160 0 0 1 722.57,222.15 A 160,160 0 0 1 722.57,427.85 C 684.57,474.85 970,440 1145,440" stroke="#E97627" stroke-width="19"/>
+<path d="M 55,440 C 235,440 515.4300000000001,474.85 477.43,427.85 A 160,160 0 0 1 627.78,167.43A 160,160 0 0 1 722.57,222.15 A 160,160 0 0 1 722.57,427.85 C 684.57,474.85 970,440 1145,440" stroke="white" stroke-opacity=".18" stroke-width="4.75"/>
+</g>
+<g id="paired-ochre-chromatid" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 55,477 C 235,477 492.45,494.13 454.45,447.13 A 190,190 0 0 1 632.99,137.89 C 658.71,144.3 680.1,136.3 702.5,147.46 C 723.37,161.28 727.13,183.8 745.55,202.87 A 190,190 0 0 1 745.55,447.13 C 707.55,494.13 970,477 1145,477" stroke="white" stroke-width="27"/>
+<path d="M 55,477 C 235,477 492.45,494.13 454.45,447.13 A 190,190 0 0 1 632.99,137.89 C 658.71,144.3 680.1,136.3 702.5,147.46 C 723.37,161.28 727.13,183.8 745.55,202.87 A 190,190 0 0 1 745.55,447.13 C 707.55,494.13 970,477 1145,477" stroke="#213547" stroke-opacity=".34" stroke-width="22"/>
+<path d="M 55,477 C 235,477 492.45,494.13 454.45,447.13 A 190,190 0 0 1 632.99,137.89 C 658.71,144.3 680.1,136.3 702.5,147.46 C 723.37,161.28 727.13,183.8 745.55,202.87 A 190,190 0 0 1 745.55,447.13 C 707.55,494.13 970,477 1145,477" stroke="#B88B28" stroke-width="19"/>
+<path d="M 55,477 C 235,477 492.45,494.13 454.45,447.13 A 190,190 0 0 1 632.99,137.89 C 658.71,144.3 680.1,136.3 702.5,147.46 C 723.37,161.28 727.13,183.8 745.55,202.87 A 190,190 0 0 1 745.55,447.13 C 707.55,494.13 970,477 1145,477" stroke="white" stroke-opacity=".18" stroke-width="4.75"/>
+</g>
+<g id="paired-green-chromatid" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 55,555 C 275,595 730.53,513.4100000000001 768.53,466.41 A 220,220 0 0 0 768.53,183.59 C 747.21,161.51 723.37,161.28 702.5,147.46 C 680.1,136.3 667.98,115.77 638.2,108.34 A 220,220 0 0 0 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="white" stroke-width="27"/>
+<path d="M 55,555 C 275,595 730.53,513.4100000000001 768.53,466.41 A 220,220 0 0 0 768.53,183.59 C 747.21,161.51 723.37,161.28 702.5,147.46 C 680.1,136.3 667.98,115.77 638.2,108.34 A 220,220 0 0 0 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="#213547" stroke-opacity=".34" stroke-width="22"/>
+<path d="M 55,555 C 275,595 730.53,513.4100000000001 768.53,466.41 A 220,220 0 0 0 768.53,183.59 C 747.21,161.51 723.37,161.28 702.5,147.46 C 680.1,136.3 667.98,115.77 638.2,108.34 A 220,220 0 0 0 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="#25966F" stroke-width="19"/>
+<path d="M 55,555 C 275,595 730.53,513.4100000000001 768.53,466.41 A 220,220 0 0 0 768.53,183.59 C 747.21,161.51 723.37,161.28 702.5,147.46 C 680.1,136.3 667.98,115.77 638.2,108.34 A 220,220 0 0 0 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="white" stroke-opacity=".18" stroke-width="4.75"/>
+</g>
+<g id="paired-green-foreground-overpass" fill="none" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="white" stroke-width="27"/>
+<path d="M 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="#213547" stroke-opacity=".34" stroke-width="22"/>
+<path d="M 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="#25966F" stroke-width="19"/>
+<path d="M 431.47,466.41 C 469.47,513.4100000000001 850,600 1145,563" stroke="white" stroke-opacity=".18" stroke-width="4.75"/>
+</g>
+<g id="paired-blue-chromatid" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 55,602 C 275,642 753.51,532.7 791.51,485.7 A 250,250 0 0 0 791.51,164.3A 250,250 0 0 0 643.41,78.8 A 250,250 0 0 0 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="white" stroke-width="27"/>
+<path d="M 55,602 C 275,642 753.51,532.7 791.51,485.7 A 250,250 0 0 0 791.51,164.3A 250,250 0 0 0 643.41,78.8 A 250,250 0 0 0 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="#213547" stroke-opacity=".34" stroke-width="22"/>
+<path d="M 55,602 C 275,642 753.51,532.7 791.51,485.7 A 250,250 0 0 0 791.51,164.3A 250,250 0 0 0 643.41,78.8 A 250,250 0 0 0 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="#357EB9" stroke-width="19"/>
+<path d="M 55,602 C 275,642 753.51,532.7 791.51,485.7 A 250,250 0 0 0 791.51,164.3A 250,250 0 0 0 643.41,78.8 A 250,250 0 0 0 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="white" stroke-opacity=".18" stroke-width="4.75"/>
+</g>
+<g id="paired-blue-foreground-overpass" fill="none" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="white" stroke-width="27"/>
+<path d="M 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="#213547" stroke-opacity=".34" stroke-width="22"/>
+<path d="M 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="#357EB9" stroke-width="19"/>
+<path d="M 408.49,485.7 C 446.49,532.7 850,647 1145,610" stroke="white" stroke-opacity=".18" stroke-width="4.75"/>
+</g>
+<rect x="216" y="421" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="230" y="450" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="1006" y="421" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1020" y="450" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<rect x="447.44" y="226.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="461.44" y="255.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="724.56" y="226.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="738.56" y="255.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<g id="paired-orange-centromere"><ellipse cx="600.0" cy="165.0" rx="16" ry="20" fill="#E97627" stroke="white" stroke-width="3"/><ellipse cx="600.0" cy="165.0" rx="16" ry="20" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="216" y="458" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="230" y="487" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="1006" y="458" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1020" y="487" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<rect x="421.46" y="211.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="435.46" y="240.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="750.54" y="211.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="764.54" y="240.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<g id="paired-ochre-centromere"><ellipse cx="600.0" cy="135.0" rx="16" ry="20" fill="#B88B28" stroke="white" stroke-width="3"/><ellipse cx="600.0" cy="135.0" rx="16" ry="20" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="216" y="558" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="230" y="587" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="1006" y="559" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1020" y="588" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<rect x="395.47" y="196.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="409.47" y="225.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="776.53" y="196.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="790.53" y="225.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<g id="paired-green-centromere"><ellipse cx="600.0" cy="105.0" rx="16" ry="20" fill="#25966F" stroke="white" stroke-width="3"/><ellipse cx="600.0" cy="105.0" rx="16" ry="20" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="216" y="603" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="230" y="632" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="1006" y="604" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1020" y="633" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<rect x="369.49" y="181.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="383.49" y="210.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="802.51" y="181.0" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="816.51" y="210.0" font-size="27" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<g id="paired-blue-centromere"><ellipse cx="600.0" cy="75.0" rx="16" ry="20" fill="#357EB9" stroke="white" stroke-width="3"/><ellipse cx="600.0" cy="75.0" rx="16" ry="20" fill="none" stroke="#213547" stroke-width="2"/></g>
+<text x="865" y="101" font-size="25" text-anchor="start" font-weight="normal" fill="#213547">Position of crossing over</text>
+<text x="865" y="133" font-size="25" text-anchor="start" font-weight="normal" fill="#213547">within inversion loop</text>
+<path d="M 870,147 L 822,170 L 702.5,147.46" fill="none" stroke="#213547" stroke-width="2.5"/>
+<circle cx="702.5" cy="147.46" r="5" fill="#213547"/>
+</g>
+<text x="710" y="37" font-size="29" text-anchor="start" font-weight="bold" fill="#213547">(B)  Anaphase I</text>
+<text x="710" y="72" font-size="29" text-anchor="start" font-weight="bold" fill="#213547">      chromosome separation</text>
+<path id="anaphase-cell" d="M 745,110 C 840,40 918,110 1000,115 C 1080,120 1195,55 1305,110 C 1450,186 1440,410 1320,475 C 1210,535 1100,465 1010,490 C 900,520 775,505 723,416 C 664,316 668,175 745,110 Z" fill="#F3EEE7" stroke="#697788" stroke-width="2.5"/>
+<g id="spindle-728">
+<path d="M 728,305 L 783,270" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 728,305 L 783,305" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 728,305 L 783,340" fill="none" stroke="#213547" stroke-width="2.5"/>
+</g>
+<g id="spindle-1390">
+<path d="M 1390,265 L 1335,230" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 1390,265 L 1335,265" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 1390,265 L 1335,300" fill="none" stroke="#213547" stroke-width="2.5"/>
+</g>
+<g id="unchanged-normal" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 1022,132 C 926,142 807,212 784,290 C 767,362 892,420 1010,444" stroke="white" stroke-width="26"/>
+<path d="M 1022,132 C 926,142 807,212 784,290 C 767,362 892,420 1010,444" stroke="#213547" stroke-opacity=".34" stroke-width="21"/>
+<path d="M 1022,132 C 926,142 807,212 784,290 C 767,362 892,420 1010,444" stroke="#357EB9" stroke-width="18"/>
+<path d="M 1022,132 C 926,142 807,212 784,290 C 767,362 892,420 1010,444" stroke="white" stroke-opacity=".18" stroke-width="4.5"/>
+</g>
+<g id="unchanged-normal-centromere"><ellipse cx="784" cy="290" rx="14" ry="18" fill="#357EB9" stroke="white" stroke-width="3"/><ellipse cx="784" cy="290" rx="14" ry="18" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="968" y="121" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="982" y="150" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="847" y="175" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="861" y="204" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<rect x="837" y="374" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="851" y="403" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="959" y="417" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="973" y="446" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<g id="left-recombinant-ochre" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 1020,202 C 951,205 847,237 831,297" stroke="white" stroke-width="26"/>
+<path d="M 1020,202 C 951,205 847,237 831,297" stroke="#213547" stroke-opacity=".34" stroke-width="21"/>
+<path d="M 1020,202 C 951,205 847,237 831,297" stroke="#B88B28" stroke-width="18"/>
+<path d="M 1020,202 C 951,205 847,237 831,297" stroke="white" stroke-opacity=".18" stroke-width="4.5"/>
+</g>
+<g id="left-recombinant-green" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 831,297 C 814,351 920,376 1023,381" stroke="#213547" stroke-opacity=".34" stroke-width="21"/>
+<path d="M 831,297 C 814,351 920,376 1023,381" stroke="#25966F" stroke-width="18"/>
+<path d="M 831,297 C 814,351 920,376 1023,381" stroke="white" stroke-opacity=".18" stroke-width="4.5"/>
+</g>
+<g id="left-recombinant-centromere"><ellipse cx="831" cy="297" rx="14" ry="18" fill="#25966F" stroke="white" stroke-width="3"/><ellipse cx="831" cy="297" rx="14" ry="18" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="975" y="185" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="989" y="214" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<rect x="872" y="215" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="886" y="244" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<rect x="869" y="346" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="883" y="375" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="976" y="361" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="990" y="390" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<g id="unchanged-inverted" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 1102,129 C 1222,115 1335,183 1342,256 C 1348,332 1262,411 1143,443" stroke="white" stroke-width="26"/>
+<path d="M 1102,129 C 1222,115 1335,183 1342,256 C 1348,332 1262,411 1143,443" stroke="#213547" stroke-opacity=".34" stroke-width="21"/>
+<path d="M 1102,129 C 1222,115 1335,183 1342,256 C 1348,332 1262,411 1143,443" stroke="#E97627" stroke-width="18"/>
+<path d="M 1102,129 C 1222,115 1335,183 1342,256 C 1348,332 1262,411 1143,443" stroke="white" stroke-opacity=".18" stroke-width="4.5"/>
+</g>
+<g id="unchanged-inverted-centromere"><ellipse cx="1342" cy="256" rx="14" ry="18" fill="#E97627" stroke="white" stroke-width="3"/><ellipse cx="1342" cy="256" rx="14" ry="18" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="1124" y="109" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1138" y="138" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="1261" y="135" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1275" y="164" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="1297" y="318" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1311" y="347" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<rect x="1165" y="412" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1179" y="441" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">d</text>
+<g id="right-recombinant-ochre" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 1109,194 C 1204,181 1288,211 1292,264" stroke="white" stroke-width="26"/>
+<path d="M 1109,194 C 1204,181 1288,211 1292,264" stroke="#213547" stroke-opacity=".34" stroke-width="21"/>
+<path d="M 1109,194 C 1204,181 1288,211 1292,264" stroke="#B88B28" stroke-width="18"/>
+<path d="M 1109,194 C 1204,181 1288,211 1292,264" stroke="white" stroke-opacity=".18" stroke-width="4.5"/>
+</g>
+<g id="right-recombinant-green" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 1292,264 C 1292,321 1220,356 1128,371" stroke="#213547" stroke-opacity=".34" stroke-width="21"/>
+<path d="M 1292,264 C 1292,321 1220,356 1128,371" stroke="#25966F" stroke-width="18"/>
+<path d="M 1292,264 C 1292,321 1220,356 1128,371" stroke="white" stroke-opacity=".18" stroke-width="4.5"/>
+</g>
+<g id="right-recombinant-centromere"><ellipse cx="1292" cy="264" rx="14" ry="18" fill="#B88B28" stroke="white" stroke-width="3"/><ellipse cx="1292" cy="264" rx="14" ry="18" fill="none" stroke="#213547" stroke-width="2"/></g>
+<rect x="1130" y="172" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1144" y="201" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<rect x="1224" y="184" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1238" y="213" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">c</text>
+<rect x="1251" y="302" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1265" y="331" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">b</text>
+<rect x="1154" y="344" width="28" height="35" rx="8" fill="white" fill-opacity=".94"/>
+<text x="1168" y="373" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547" font-style="italic">a</text>
+<text x="715" y="560" font-size="24" text-anchor="start" font-weight="normal" fill="#213547">Spindle pole</text>
+<path d="M 759,535 L 728,305" fill="none" stroke="#213547" stroke-width="2.5"/>
+<text x="1380" y="560" font-size="24" text-anchor="end" font-weight="normal" fill="#213547">Spindle pole</text>
+<path d="M 1340,535 L 1390,265" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 30,590 H 1420" stroke="#D1DCE2" stroke-width="2"/>
+<text x="36" y="634" font-size="28" text-anchor="start" font-weight="normal" fill="#213547">When the centromere is included in the inversion loop, one of the crossover products</text>
+<text x="36" y="674" font-size="28" text-anchor="start" font-weight="normal" fill="#213547">is duplicated for a and deficient for d; the other is duplicated for d and deficient for a.</text>
+<text x="36" y="714" font-size="28" text-anchor="start" font-weight="normal" fill="#213547">Among the two chromatids not involved in the crossover, one carries the inversion</text>
+<text x="36" y="754" font-size="28" text-anchor="start" font-weight="normal" fill="#213547">and the other is normal.</text>
+</g></svg>

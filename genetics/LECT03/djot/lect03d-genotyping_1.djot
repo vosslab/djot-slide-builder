@@ -89,7 +89,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 1](assets/lect03d-genotyping_1/image_001.png)
+![Slide image 1](assets/lect03d-genotyping_1/three_person_snp.drawn.svg)
 
 @right
 
@@ -107,7 +107,18 @@ color-theme: genetics
 
 @body
 
-![Slide image 2](assets/lect03d-genotyping_1/image_002.jpg)
+![Slide image 2](assets/lect03d-genotyping_1/snp_chip_probes.drawn.svg)
+
+=== layout: one-panel
+
+# Complementary strands bind on the SNP chip
+
+@body
+
+- Fragments of genomic DNA are labeled with a fluorescent molecule.
+- In this example the SNP consists of a TA base pair in some DNA duplexes and a CG base pair in others.
+- Strands from each duplex will hybridize only with their complementary oligonucleotides.
+- Each oligonucleotide in a SNP chip is attached to a glass slide.
 
 === layout: two-panels
 
@@ -115,7 +126,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 3](assets/lect03d-genotyping_1/image_003.jpg)
+![Slide image 3](assets/lect03d-genotyping_1/snp_chip_signals.drawn.svg)
 
 @right
 

@@ -150,15 +150,15 @@ The Punnett square has 32 x 4 = 128 cells.
 
 - Assuming complete dominance and independent assortment. George Aa Bb Cc dd Ee ff Gg and Linda AA bb cc dd ee Ff Gg are crossed answer the following questions.
   - (a) How many different gametes does George produce?
-    - [32 gametes]{color=red}
+    - [32&#160;gametes]{color=red}
   - (b) How many different gametes does Linda produce?
-    - [4 gametes]{color=red}
+    - [4&#160;gametes]{color=red}
   - (c) How big would a Punnett square for this cross be?
-    - [32 x 4]{color=red}
+    - [32&#160;x&#160;4]{color=red}
   - (d) How many possible genotypes are created in this cross?
-    - [96 genotypes]{color=red}
+    - [96&#160;genotypes]{color=red}
   - (e) How many possible phenotypes are possible from this cross?
-    - [32 phenotypes]{color=red}
+    - [32&#160;phenotypes]{color=red}
   - Note\: the number of phenotypes is always less than or equal to the number of genotypes
     - [phenotypes <= genotypes]{color=red}
 

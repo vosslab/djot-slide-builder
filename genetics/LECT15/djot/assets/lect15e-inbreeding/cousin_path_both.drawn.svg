@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1144" viewBox="0 0 1200 1144" role="img" aria-labelledby="title desc">
+  <title id="title">Two closed paths through common ancestors A and B</title>
+  <desc id="desc">Path 1 follows I-E-C-A-D-F-I; Path 2 follows I-E-C-B-D-F-I. The two panels show the same individual I and shared intermediate people twice to isolate the two closed paths, not two different families. Source LECT15E authored slides 46 and 48 (image_021.png). Circles A, C, D and E; squares B, F and I. Conventional schematic; paths are undirected and spacing is not quantitative.</desc>
+  <rect id="background" width="1200" height="1144" fill="#FFFFFF"/>
+  <text x="270" y="80" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#213547">Path 1</text>
+  <text x="930" y="80" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#213547">Path 2</text>
+  <g id="path-1">
+    <path id="path-1-connections" d="M 130,200 L 130,470 V 740 L 270,1020 L 410,740 V 470 Z" fill="none" stroke="#213547" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="path-1-A">
+      <circle cx="130" cy="200" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="130" y="218" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">A</text>
+    </g>
+    <g id="path-1-C">
+      <circle cx="130" cy="470" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="130" y="488" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">C</text>
+    </g>
+    <g id="path-1-D">
+      <circle cx="410" cy="470" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="410" y="488" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">D</text>
+    </g>
+    <g id="path-1-E">
+      <circle cx="130" cy="740" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="130" y="758" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">E</text>
+    </g>
+    <g id="path-1-F">
+      <rect x="367" y="697" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="410" y="758" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">F</text>
+    </g>
+    <g id="path-1-I">
+      <rect x="227" y="977" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="270" y="1038" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">I</text>
+    </g>
+  </g>
+  <g id="path-2">
+    <path id="path-2-connections" d="M 1070,200 L 790,470 V 740 L 930,1020 L 1070,740 V 470 Z" fill="none" stroke="#213547" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="path-2-B">
+      <rect x="1027" y="157" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="1070" y="218" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">B</text>
+    </g>
+    <g id="path-2-C">
+      <circle cx="790" cy="470" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="790" y="488" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">C</text>
+    </g>
+    <g id="path-2-D">
+      <circle cx="1070" cy="470" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="1070" y="488" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">D</text>
+    </g>
+    <g id="path-2-E">
+      <circle cx="790" cy="740" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="790" y="758" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">E</text>
+    </g>
+    <g id="path-2-F">
+      <rect x="1027" y="697" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="1070" y="758" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">F</text>
+    </g>
+    <g id="path-2-I">
+      <rect x="887" y="977" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="930" y="1038" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">I</text>
+    </g>
+  </g>
+</svg>

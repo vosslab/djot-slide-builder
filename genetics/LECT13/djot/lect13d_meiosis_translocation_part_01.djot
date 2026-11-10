@@ -31,7 +31,9 @@
 
 @body
 
-![Slide image 1](assets/lect13d-meiosis_translocation/image_001.png)
+![Slide image 1](assets/lect13d-meiosis_translocation/translocation_overview.drawn.svg)
+
+A translocation moves a segment from one chromosome to a nonhomologous chromosome.
 
 === layout: one-panel
 
@@ -39,7 +41,7 @@
 
 @body
 
-![Slide image 2](assets/lect13d-meiosis_translocation/image_002.png)
+![Slide image 2](assets/lect13d-meiosis_translocation/translocation-complements.drawn.svg)
 
 - (A) Two pairs of non-homologous chromosomes in a diploid organism.
 - (B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
@@ -56,7 +58,7 @@
 - [(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.]{color=#CC00CC}
 - [(C) Homozygous reciprocal translocation.]{color=#CCCCCC}
 
-![Slide image 3](assets/lect13d-meiosis_translocation/image_003.png)
+![Slide image 3](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
 
 - Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
 
@@ -66,7 +68,7 @@
 
 @body
 
-![Slide image 3](assets/lect13d-meiosis_translocation/image_003.png)
+![Slide image 3](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
 
 - Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
 
@@ -81,34 +83,47 @@
 
 @body
 
+![Pairing stage 7](assets/lect13d-meiosis_translocation/pairing-stage-07.drawn.svg)
+
 - original blue homologous chromosomes
 
 - original red homologous chromosomes
 
-=== layout: title-only
+=== layout: one-panel
 @replaceme
 
 # *Translocation Event*
 
-=== layout: title-only
+@body
+
+![Pairing stage 8](assets/lect13d-meiosis_translocation/pairing-stage-08.drawn.svg)
+
+=== layout: one-panel
 @replaceme
 
 # *Translocation Event*
 
-=== layout: title-only
+@body
+
+![Pairing stage 9](assets/lect13d-meiosis_translocation/pairing-stage-09.drawn.svg)
+
+=== layout: one-panel
 @replaceme
 
 # *Translocation Event*
 
-=== layout: title-only
+@body
+
+![Pairing stage 10](assets/lect13d-meiosis_translocation/pairing-stage-10.drawn.svg)
+
+=== layout: one-panel
 @replaceme
 
 # *Duplicate DNA to Form Sister Chromatids*
 
-=== layout: title-only
-@replaceme
+@body
 
-# *Time for Cell Division*
+![Pairing stage 11](assets/lect13d-meiosis_translocation/pairing-stage-11.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -116,63 +131,28 @@
 # *Time for Cell Division*
 
 @body
+
+![Pairing stage 12](assets/lect13d-meiosis_translocation/pairing-stage-12.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 13](assets/lect13d-meiosis_translocation/pairing-stage-13.drawn.svg)
 
 - Several homologous pairing combinations are possible
 
-=== layout: title-only
+=== layout: one-panel
 @replaceme
 
 # *Time for Cell Division*
 
-=== layout: title-only
-@replaceme
+@body
 
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
-
-=== layout: title-only
-@replaceme
-
-# *Time for Cell Division*
+![Pairing stage 14](assets/lect13d-meiosis_translocation/pairing-stage-14.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -180,18 +160,106 @@
 # *Time for Cell Division*
 
 @body
+
+![Pairing stage 15](assets/lect13d-meiosis_translocation/pairing-stage-15.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 16](assets/lect13d-meiosis_translocation/pairing-stage-16.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 17](assets/lect13d-meiosis_translocation/pairing-stage-17.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 18](assets/lect13d-meiosis_translocation/pairing-stage-18.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 19](assets/lect13d-meiosis_translocation/pairing-stage-19.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 20](assets/lect13d-meiosis_translocation/pairing-stage-20.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 21](assets/lect13d-meiosis_translocation/pairing-stage-21.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 22](assets/lect13d-meiosis_translocation/pairing-stage-22.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 23](assets/lect13d-meiosis_translocation/pairing-stage-23.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 24](assets/lect13d-meiosis_translocation/pairing-stage-24.drawn.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Time for Cell Division*
+
+@body
+
+![Pairing stage 25](assets/lect13d-meiosis_translocation/pairing-stage-25.drawn.svg)
 
 - All homologous regions are paired creating a complex four-way chromosome junction
 
 - The resulting gametes will be determined by how the spindles pull apart the centromeres
 
-- 1
 
-- 2
 
-- 3
 
-- 4
 
 === layout: section
 
@@ -211,9 +279,9 @@
   - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
 - Is this scenario 1 is pairing with both 2 and 3, but during cell division it can only go with one of the two.
 
-![Slide image 4](assets/lect13d-meiosis_translocation/image_004.png)
+![Slide image 4](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
 
-![Slide image 5](assets/lect13d-meiosis_translocation/image_005.png)
+![Slide image 5](assets/lect13d-meiosis_translocation/pairing-spindle.drawn.svg)
 
 - [4]{color=#FF00FF}
 - [1]{color=#FF00FF}
@@ -241,9 +309,9 @@
 
 @right
 
-![Slide image 5](assets/lect13d-meiosis_translocation/image_004.png)
+![Slide image 5](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
 
-![Slide image 5](assets/lect13d-meiosis_translocation/image_005.png)
+![Slide image 5](assets/lect13d-meiosis_translocation/pairing-spindle.drawn.svg)
 
 - [4]{color=#FF00FF}
 - [1]{color=#FF00FF}
@@ -257,7 +325,7 @@
 
 @body
 
-![Slide image 6](assets/lect13d-meiosis_translocation/image_006.png)
+![Slide image 6](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -266,7 +334,7 @@
 
 @body
 
-![Slide image 6](assets/lect13d-meiosis_translocation/image_006.png)
+![Slide image 6](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 - Spindles bind to closest centromeres
 - 1+2 and 3+4 stay together
@@ -316,7 +384,7 @@
 
 @bottom-right
 
-![Slide image 7](assets/lect13d-meiosis_translocation/image_007.png)
+![Slide image 7](assets/lect13d-meiosis_translocation/pairing-flat.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -325,9 +393,9 @@
 
 @body
 
-![Slide image 8](assets/lect13d-meiosis_translocation/image_008.png)
+![Slide image 8](assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
 
-![Slide image 8](assets/lect13d-meiosis_translocation/image_006.png)
+![Slide image 8](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 - 50% are alternate
 
@@ -338,9 +406,9 @@
 
 @body
 
-![Slide image 8](assets/lect13d-meiosis_translocation/image_008.png)
+![Slide image 8](assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
 
-![Slide image 8](assets/lect13d-meiosis_translocation/image_006.png)
+![Slide image 8](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 - unbalanced
 
@@ -367,7 +435,7 @@
 
 @bottom
 
-![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+![Slide image 10](assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -397,7 +465,7 @@
   - 3 pairs with 1 and 4
   - 4 pairs with 2 and 3
 
-![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+![Slide image 10](assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
 
 - [1]{color=#FF00FF}
 - 3
@@ -410,9 +478,9 @@
 
 @body
 
-![Slide image 10](assets/lect13d-meiosis_translocation/image_010.png)
+![Slide image 10](assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
 
-![Slide image 10](assets/lect13d-meiosis_translocation/image_008.png)
+![Slide image 10](assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
 
 - [1]{color=#FF00FF}
 - 3

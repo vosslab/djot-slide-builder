@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="ccr5-title ccr5-desc">
+<title id="ccr5-title">CCR5 genotypes and entry of R5 HIV-1 into human CD4 T cells</title>
+<desc id="ccr5-desc">Three schematic membrane cutaways compare CCR5/CCR5, CCR5/CCR5-Delta32, and Delta32/Delta32. Spiked enveloped HIV virions contain a conical core. Blue CD4 is present in all three. Green functional surface CCR5 is present in the first two, allowing R5 entry, and absent in the third, blocking R5 entry. The first genotype has infection with normal progression; the heterozygote has infection with delayed progression; the Delta32 homozygote is resistant to R5 HIV-1. Receptor abundance, spike number, and molecular sizes are illustrative. Resistance does not extend to every HIV strain.</desc>
+<defs>
+ <g id="ccr5-env-spike" stroke="#79462e" stroke-width="2.4" stroke-linejoin="round">
+  <path d="M-3 -66 L-4 -78 Q-14 -82 -10 -89 Q-7 -94 -1 -91 Q3 -97 9 -91 Q16 -85 8 -80 L4 -66Z" fill="#bb7450"/>
+  <path d="M-7 -87 Q-3 -90 1 -86" fill="none" stroke="#efd2b6" stroke-width="2"/>
+ </g>
+ <g id="ccr5-virion">
+  <circle r="70" fill="#f2d8a5" stroke="#79462e" stroke-width="3.8"/>
+  <circle r="61" fill="#f9ebcf" stroke="#be884b" stroke-width="2.6"/>
+  <path d="M-48 -29 A55 55 0 0 1 20 -50" fill="none" stroke="#fff9ec" stroke-width="5" stroke-linecap="round"/>
+  <g id="ccr5-viral-core" transform="rotate(-13)">
+   <path d="M-15 -40 Q0 -48 15 -40 L32 37 Q0 55 -32 37Z" fill="#bc7180" stroke="#753e51" stroke-width="2.7"/>
+   <path d="M-15 -40 Q-7 -42 -2 -42 L-9 41 Q-23 42 -32 37Z" fill="#d99dab"/>
+   <ellipse cx="0" cy="37" rx="32" ry="10" fill="#a3586c" stroke="#753e51" stroke-width="2.4"/>
+   <path d="M-6 -24 Q21 -12 -3 -2 Q-21 10 9 17 Q24 24 2 30" fill="none" stroke="#f8dbe1" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <use xlink:href="#ccr5-env-spike" transform="rotate(0)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(36)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(72)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(108)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(144)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(180)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(216)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(252)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(288)"/>
+  <use xlink:href="#ccr5-env-spike" transform="rotate(324)"/>
+ </g>
+ <g id="ccr5-cd4" stroke="#205f8a" stroke-width="2.8">
+  <path d="M0 -8 L0 27" fill="none" stroke-width="7" stroke-linecap="round"/>
+  <path d="M-8 -73 C-16 -80 -12 -94 -3 -96 C8 -97 15 -88 10 -80 C5 -73 7 -69 11 -63 C16 -54 7 -45 1 -46 C-9 -46 -14 -53 -10 -62Z" fill="#91bdd8"/>
+  <path d="M1 -46 C14 -47 16 -34 9 -27 C4 -22 7 -17 9 -12 C14 -1 3 7 -5 2 C-15 -2 -10 -12 -7 -18 C-4 -25 -14 -33 -9 -40 C-6 -44 -3 -46 1 -46Z" fill="#91bdd8"/>
+  <path d="M-4 -86 Q-8 -81 -4 -77 M-3 -38 Q-8 -34 -3 -29" fill="none" stroke="#d9ecf6" stroke-width="3.5" stroke-linecap="round"/>
+ </g>
+ <g id="ccr5-functional" stroke="#176b45" stroke-width="2.6" stroke-linejoin="round">
+  <path d="M-23 12 L-23 -12 Q-27 -26 -15 -32 Q-10 -45 1 -39 Q14 -46 23 -31 Q31 -25 25 -12 L25 13Z" fill="#93c9a5"/>
+  <path d="M-18 11 L-18 -13 Q-14 -21 -10 -13 L-10 13 Q-6 19 -2 12 L-2 -14 Q2 -20 6 -13 L6 13 Q10 20 14 12 L14 -12 Q18 -19 21 -12 L21 12" fill="none" stroke-width="3"/>
+  <path d="M-13 -29 Q-5 -36 2 -30 Q9 -36 15 -28" fill="none" stroke="#d8eddf" stroke-width="3.5" stroke-linecap="round"/>
+ </g>
+</defs>
+<rect width="1200" height="600" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#213547" text-anchor="middle">
+ <text x="600" y="34" font-size="31">R5 HIV-1 and human CD4 T cells</text>
+
+<g id="ccr5-genotype-0" transform="translate(0 0)">
+ <use xlink:href="#ccr5-virion" transform="translate(190 145)"/>
+ <path d="M24 346 Q188 305 376 343 L376 404 Q205 418 24 404Z" fill="#f0ebf5"/>
+ <path d="M24 328 Q188 287 376 325 L376 347 Q188 309 24 350Z" fill="#d8c9e5" stroke="#806393" stroke-width="2.7"/>
+
+ <path d="M31 329.7 l-1 7 M37 329.7 l1 7 M31 343.7 l-1 -5 M37 343.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="34" cy="325.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="34" cy="347.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M47 326.4 l-1 7 M53 326.4 l1 7 M47 340.4 l-1 -5 M53 340.4 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="50" cy="322.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="50" cy="344.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M63 323.3 l-1 7 M69 323.3 l1 7 M63 337.3 l-1 -5 M69 337.3 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="66" cy="319.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="66" cy="341.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M79 320.6 l-1 7 M85 320.6 l1 7 M79 334.6 l-1 -5 M85 334.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="82" cy="316.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="82" cy="338.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M95 318.3 l-1 7 M101 318.3 l1 7 M95 332.3 l-1 -5 M101 332.3 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="98" cy="314.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="98" cy="336.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M111 316.2 l-1 7 M117 316.2 l1 7 M111 330.2 l-1 -5 M117 330.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="114" cy="312.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="114" cy="334.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M127 314.5 l-1 7 M133 314.5 l1 7 M127 328.5 l-1 -5 M133 328.5 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="130" cy="310.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="130" cy="332.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M143 313.1 l-1 7 M149 313.1 l1 7 M143 327.1 l-1 -5 M149 327.1 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="146" cy="309.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="146" cy="331.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M159 312.0 l-1 7 M165 312.0 l1 7 M159 326.0 l-1 -5 M165 326.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="162" cy="308.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="162" cy="330.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M175 311.2 l-1 7 M181 311.2 l1 7 M175 325.2 l-1 -5 M181 325.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="178" cy="307.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="178" cy="329.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M191 310.8 l-1 7 M197 310.8 l1 7 M191 324.8 l-1 -5 M197 324.8 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="194" cy="306.8" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="194" cy="328.8" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M207 310.7 l-1 7 M213 310.7 l1 7 M207 324.7 l-1 -5 M213 324.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="210" cy="306.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="210" cy="328.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M223 311.0 l-1 7 M229 311.0 l1 7 M223 325.0 l-1 -5 M229 325.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="226" cy="307.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="226" cy="329.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M239 311.5 l-1 7 M245 311.5 l1 7 M239 325.5 l-1 -5 M245 325.5 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="242" cy="307.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="242" cy="329.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M255 312.4 l-1 7 M261 312.4 l1 7 M255 326.4 l-1 -5 M261 326.4 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="258" cy="308.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="258" cy="330.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M271 313.6 l-1 7 M277 313.6 l1 7 M271 327.6 l-1 -5 M277 327.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="274" cy="309.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="274" cy="331.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M287 315.1 l-1 7 M293 315.1 l1 7 M287 329.1 l-1 -5 M293 329.1 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="290" cy="311.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="290" cy="333.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M303 317.0 l-1 7 M309 317.0 l1 7 M303 331.0 l-1 -5 M309 331.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="306" cy="313.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="306" cy="335.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M319 319.2 l-1 7 M325 319.2 l1 7 M319 333.2 l-1 -5 M325 333.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="322" cy="315.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="322" cy="337.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M335 321.7 l-1 7 M341 321.7 l1 7 M335 335.7 l-1 -5 M341 335.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="338" cy="317.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="338" cy="339.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M351 324.6 l-1 7 M357 324.6 l1 7 M351 338.6 l-1 -5 M357 338.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="354" cy="320.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="354" cy="342.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M367 327.7 l-1 7 M373 327.7 l1 7 M367 341.7 l-1 -5 M373 341.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="370" cy="323.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="370" cy="345.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <use xlink:href="#ccr5-cd4" transform="translate(162 312)"/>
+ <use xlink:href="#ccr5-functional" transform="translate(220 323)"/>
+ <path d="M295 255 V364 M280 349 L295 365 L310 349" fill="none" stroke="#176b45" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="295" y="391" font-size="25" fill="#176b45">Entry</text>
+ <text x="200" y="451" font-size="30" font-weight="bold">CCR5 / CCR5</text>
+ <text x="200" y="493" font-size="31">Infection</text><text x="200" y="532" font-size="29">Normal progression</text>
+</g>
+<g id="ccr5-genotype-1" transform="translate(400 0)">
+ <use xlink:href="#ccr5-virion" transform="translate(190 145)"/>
+ <path d="M24 346 Q188 305 376 343 L376 404 Q205 418 24 404Z" fill="#f0ebf5"/>
+ <path d="M24 328 Q188 287 376 325 L376 347 Q188 309 24 350Z" fill="#d8c9e5" stroke="#806393" stroke-width="2.7"/>
+
+ <path d="M31 329.7 l-1 7 M37 329.7 l1 7 M31 343.7 l-1 -5 M37 343.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="34" cy="325.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="34" cy="347.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M47 326.4 l-1 7 M53 326.4 l1 7 M47 340.4 l-1 -5 M53 340.4 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="50" cy="322.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="50" cy="344.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M63 323.3 l-1 7 M69 323.3 l1 7 M63 337.3 l-1 -5 M69 337.3 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="66" cy="319.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="66" cy="341.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M79 320.6 l-1 7 M85 320.6 l1 7 M79 334.6 l-1 -5 M85 334.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="82" cy="316.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="82" cy="338.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M95 318.3 l-1 7 M101 318.3 l1 7 M95 332.3 l-1 -5 M101 332.3 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="98" cy="314.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="98" cy="336.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M111 316.2 l-1 7 M117 316.2 l1 7 M111 330.2 l-1 -5 M117 330.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="114" cy="312.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="114" cy="334.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M127 314.5 l-1 7 M133 314.5 l1 7 M127 328.5 l-1 -5 M133 328.5 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="130" cy="310.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="130" cy="332.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M143 313.1 l-1 7 M149 313.1 l1 7 M143 327.1 l-1 -5 M149 327.1 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="146" cy="309.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="146" cy="331.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M159 312.0 l-1 7 M165 312.0 l1 7 M159 326.0 l-1 -5 M165 326.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="162" cy="308.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="162" cy="330.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M175 311.2 l-1 7 M181 311.2 l1 7 M175 325.2 l-1 -5 M181 325.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="178" cy="307.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="178" cy="329.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M191 310.8 l-1 7 M197 310.8 l1 7 M191 324.8 l-1 -5 M197 324.8 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="194" cy="306.8" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="194" cy="328.8" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M207 310.7 l-1 7 M213 310.7 l1 7 M207 324.7 l-1 -5 M213 324.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="210" cy="306.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="210" cy="328.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M223 311.0 l-1 7 M229 311.0 l1 7 M223 325.0 l-1 -5 M229 325.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="226" cy="307.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="226" cy="329.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M239 311.5 l-1 7 M245 311.5 l1 7 M239 325.5 l-1 -5 M245 325.5 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="242" cy="307.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="242" cy="329.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M255 312.4 l-1 7 M261 312.4 l1 7 M255 326.4 l-1 -5 M261 326.4 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="258" cy="308.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="258" cy="330.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M271 313.6 l-1 7 M277 313.6 l1 7 M271 327.6 l-1 -5 M277 327.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="274" cy="309.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="274" cy="331.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M287 315.1 l-1 7 M293 315.1 l1 7 M287 329.1 l-1 -5 M293 329.1 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="290" cy="311.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="290" cy="333.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M303 317.0 l-1 7 M309 317.0 l1 7 M303 331.0 l-1 -5 M309 331.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="306" cy="313.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="306" cy="335.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M319 319.2 l-1 7 M325 319.2 l1 7 M319 333.2 l-1 -5 M325 333.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="322" cy="315.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="322" cy="337.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M335 321.7 l-1 7 M341 321.7 l1 7 M335 335.7 l-1 -5 M341 335.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="338" cy="317.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="338" cy="339.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M351 324.6 l-1 7 M357 324.6 l1 7 M351 338.6 l-1 -5 M357 338.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="354" cy="320.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="354" cy="342.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M367 327.7 l-1 7 M373 327.7 l1 7 M367 341.7 l-1 -5 M373 341.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="370" cy="323.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="370" cy="345.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <use xlink:href="#ccr5-cd4" transform="translate(162 312)"/>
+ <use xlink:href="#ccr5-functional" transform="translate(220 323)"/>
+ <path d="M295 255 V364 M280 349 L295 365 L310 349" fill="none" stroke="#176b45" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="295" y="391" font-size="25" fill="#176b45">Entry</text>
+ <text x="200" y="451" font-size="30" font-weight="bold">CCR5 / CCR5-&#916;32</text>
+ <text x="200" y="493" font-size="31">Infection</text><text x="200" y="532" font-size="29">Delayed progression</text>
+</g>
+<g id="ccr5-genotype-2" transform="translate(800 0)">
+ <use xlink:href="#ccr5-virion" transform="translate(190 145)"/>
+ <path d="M24 346 Q188 305 376 343 L376 404 Q205 418 24 404Z" fill="#f0ebf5"/>
+ <path d="M24 328 Q188 287 376 325 L376 347 Q188 309 24 350Z" fill="#d8c9e5" stroke="#806393" stroke-width="2.7"/>
+
+ <path d="M31 329.7 l-1 7 M37 329.7 l1 7 M31 343.7 l-1 -5 M37 343.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="34" cy="325.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="34" cy="347.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M47 326.4 l-1 7 M53 326.4 l1 7 M47 340.4 l-1 -5 M53 340.4 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="50" cy="322.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="50" cy="344.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M63 323.3 l-1 7 M69 323.3 l1 7 M63 337.3 l-1 -5 M69 337.3 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="66" cy="319.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="66" cy="341.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M79 320.6 l-1 7 M85 320.6 l1 7 M79 334.6 l-1 -5 M85 334.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="82" cy="316.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="82" cy="338.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M95 318.3 l-1 7 M101 318.3 l1 7 M95 332.3 l-1 -5 M101 332.3 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="98" cy="314.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="98" cy="336.3" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M111 316.2 l-1 7 M117 316.2 l1 7 M111 330.2 l-1 -5 M117 330.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="114" cy="312.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="114" cy="334.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M127 314.5 l-1 7 M133 314.5 l1 7 M127 328.5 l-1 -5 M133 328.5 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="130" cy="310.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="130" cy="332.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M143 313.1 l-1 7 M149 313.1 l1 7 M143 327.1 l-1 -5 M149 327.1 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="146" cy="309.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="146" cy="331.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M159 312.0 l-1 7 M165 312.0 l1 7 M159 326.0 l-1 -5 M165 326.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="162" cy="308.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="162" cy="330.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M175 311.2 l-1 7 M181 311.2 l1 7 M175 325.2 l-1 -5 M181 325.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="178" cy="307.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="178" cy="329.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M191 310.8 l-1 7 M197 310.8 l1 7 M191 324.8 l-1 -5 M197 324.8 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="194" cy="306.8" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="194" cy="328.8" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M207 310.7 l-1 7 M213 310.7 l1 7 M207 324.7 l-1 -5 M213 324.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="210" cy="306.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="210" cy="328.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M223 311.0 l-1 7 M229 311.0 l1 7 M223 325.0 l-1 -5 M229 325.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="226" cy="307.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="226" cy="329.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M239 311.5 l-1 7 M245 311.5 l1 7 M239 325.5 l-1 -5 M245 325.5 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="242" cy="307.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="242" cy="329.5" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M255 312.4 l-1 7 M261 312.4 l1 7 M255 326.4 l-1 -5 M261 326.4 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="258" cy="308.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="258" cy="330.4" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M271 313.6 l-1 7 M277 313.6 l1 7 M271 327.6 l-1 -5 M277 327.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="274" cy="309.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="274" cy="331.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M287 315.1 l-1 7 M293 315.1 l1 7 M287 329.1 l-1 -5 M293 329.1 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="290" cy="311.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="290" cy="333.1" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M303 317.0 l-1 7 M309 317.0 l1 7 M303 331.0 l-1 -5 M309 331.0 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="306" cy="313.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="306" cy="335.0" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M319 319.2 l-1 7 M325 319.2 l1 7 M319 333.2 l-1 -5 M325 333.2 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="322" cy="315.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="322" cy="337.2" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M335 321.7 l-1 7 M341 321.7 l1 7 M335 335.7 l-1 -5 M341 335.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="338" cy="317.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="338" cy="339.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M351 324.6 l-1 7 M357 324.6 l1 7 M351 338.6 l-1 -5 M357 338.6 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="354" cy="320.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="354" cy="342.6" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <path d="M367 327.7 l-1 7 M373 327.7 l1 7 M367 341.7 l-1 -5 M373 341.7 l1 -5" fill="none" stroke="#ab91bc" stroke-width="1.6"/>
+ <circle cx="370" cy="323.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/><circle cx="370" cy="345.7" r="4.5" fill="#e9dff1" stroke="#806393" stroke-width="1.5"/>
+ <use xlink:href="#ccr5-cd4" transform="translate(162 312)"/>
+ <path d="M295 255 V286 M282 274 L295 288 L308 274 M277 299 H313" fill="none" stroke="#a33748" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="200" y="382" font-size="25" fill="#a33748">No functional CCR5</text>
+ <text x="200" y="451" font-size="30" font-weight="bold">&#916;32 / &#916;32</text>
+ <text x="200" y="493" font-size="31">Resistant to</text><text x="200" y="532" font-size="29">R5 HIV-1</text>
+</g>
+<g id="ccr5-legend" text-anchor="start" font-size="25">
+ <path d="M123 565 Q113 572 123 581 Q132 586 138 579 Q145 570 134 565Z" fill="#91bdd8" stroke="#205f8a" stroke-width="2.5"/><text x="152" y="582" fill="#205f8a">CD4</text>
+ <path d="M300 582 L300 569 Q307 559 315 566 Q326 561 334 570 L334 582Z" fill="#93c9a5" stroke="#176b45" stroke-width="2.5"/><text x="346" y="582" fill="#176b45">Functional CCR5</text>
+ <text x="760" y="582" font-size="22" fill="#526879">Schematic; not to scale</text>
+</g>
+</g>
+</svg>

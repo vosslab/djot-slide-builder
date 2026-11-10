@@ -56,7 +56,7 @@
 - q= 0.3 (allele freq)
 - Male  genotype 0.3
 - Female  0.09 (q^2^)
-- *0.09/0.3 = 3.33*
+- *0.3/0.09 = 3.33*
 
 === layout: bookend
 

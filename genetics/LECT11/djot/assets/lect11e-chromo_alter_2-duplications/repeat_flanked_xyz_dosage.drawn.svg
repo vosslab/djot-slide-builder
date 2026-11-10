@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title description">
+<title id="title">Repeated DNA can produce a duplication or deletion of genes X, Y, Z</title>
+<desc id="description">A: two normal chromosomes have genes X, Y, Z between red repeat sequences. B: offset repeats mispair and cross over in meiosis. C: reciprocal products have two copies or no copies of the gene region. D: fertilization with normal gametes gives three copies or one copy of each gene. Source Figure 8.19 caption is retained.</desc>
+<metadata id="provenance">Original editable schematic constructed from instructor asset genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_003.png; source meaning and labels retained, geometry recomposed. Unmeasured chromosome lengths. 2026-11-09.</metadata>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#213547" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect width="1200" height="1000" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<g id="A-repeat-flanked-genes">
+<text x="280" y="40" font-size="26" text-anchor="start" fill="#213547" font-weight="bold" >(A)</text>
+<text x="600" y="35" font-size="25" text-anchor="middle" fill="#213547" font-weight="normal" >Genes</text>
+<text x="600" y="67" font-size="24" text-anchor="middle" fill="#213547" font-weight="normal" >X, Y, Z</text>
+<text x="414" y="67" font-size="24" text-anchor="middle" fill="#213547" font-weight="normal" >Repeat</text>
+<text x="786" y="67" font-size="24" text-anchor="middle" fill="#213547" font-weight="normal" >Repeat</text>
+<path d="M383 102 L821 102" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M383 102 L821 102" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="401" y="84.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="427" y="84.5" width="350" height="35" fill="#728da3"/><rect x="777" y="84.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M383 90 L821 90" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M383 157 L821 157" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M383 157 L821 157" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="401" y="139.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="427" y="139.5" width="350" height="35" fill="#728da3"/><rect x="777" y="139.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M383 145 L821 145" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+</g>
+<path d="M600 192 L600 272" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<text x="630" y="213" font-size="24" text-anchor="start" fill="#213547" font-weight="normal" >Mispairing and</text>
+<text x="630" y="243" font-size="24" text-anchor="start" fill="#213547" font-weight="normal" >crossing over</text>
+<text x="630" y="273" font-size="24" text-anchor="start" fill="#213547" font-weight="normal" >in meiosis</text>
+<g id="B-misaligned-repeat-exchange">
+<text x="208" y="310" font-size="26" text-anchor="start" fill="#213547" font-weight="bold" >(B)</text>
+<path d="M258 343 L646 343" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M258 343 L646 343" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="276" y="325.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="302" y="325.5" width="300" height="35" fill="#728da3"/><text x="452.0" y="351" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="602" y="325.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M258 331 L646 331" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M584 413 L972 413" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M584 413 L972 413" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="602" y="395.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="628" y="395.5" width="300" height="35" fill="#728da3"/><text x="778.0" y="421" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="928" y="395.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M584 401 L972 401" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M608 367 L628 389 M628 367 L608 389" stroke="#213547" stroke-width="2.5"/>
+</g>
+<path d="M600 455 L372 505" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<path d="M638 455 L953 505" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<g id="C-reciprocal-products">
+<text x="35" y="527" font-size="26" text-anchor="start" fill="#213547" font-weight="bold" >(C)</text>
+<path d="M88 558 L662 558" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M88 558 L662 558" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="106" y="540.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="132" y="540.5" width="230" height="35" fill="#728da3"/><text x="247.0" y="566" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="362" y="540.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="388" y="540.5" width="230" height="35" fill="#728da3"/><text x="503.0" y="566" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="618" y="540.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M88 546 L662 546" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M945 558 L1007 558" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M945 558 L1007 558" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="963" y="540.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M945 546 L1007 546" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<text x="790" y="565" font-size="32" text-anchor="middle" fill="#213547" font-weight="normal" >+</text>
+<text x="375" y="609" font-size="25" text-anchor="middle" fill="#213547" font-weight="normal" >Duplication of genes X, Y, Z</text>
+<text x="965" y="609" font-size="25" text-anchor="middle" fill="#213547" font-weight="normal" >Deletion of genes X, Y, Z</text>
+</g>
+<path d="M365 633 L365 722" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<text x="391" y="655" font-size="22" text-anchor="start" fill="#213547" font-weight="normal" >Fertilization with</text>
+<text x="391" y="683" font-size="22" text-anchor="start" fill="#213547" font-weight="normal" >normal gametes</text>
+<path d="M967 633 L967 722" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<text x="993" y="655" font-size="22" text-anchor="start" fill="#213547" font-weight="normal" >Fertilization with</text>
+<text x="993" y="683" font-size="22" text-anchor="start" fill="#213547" font-weight="normal" >normal gametes</text>
+<g id="D-fertilization-with-normal-gametes">
+<text x="35" y="755" font-size="26" text-anchor="start" fill="#213547" font-weight="bold" >(D)</text>
+<path d="M88 776 L662 776" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M88 776 L662 776" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="106" y="758.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="132" y="758.5" width="230" height="35" fill="#728da3"/><text x="247.0" y="784" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="362" y="758.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="388" y="758.5" width="230" height="35" fill="#728da3"/><text x="503.0" y="784" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="618" y="758.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M88 764 L662 764" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M218 833 L536 833" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M218 833 L536 833" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="236" y="815.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="262" y="815.5" width="230" height="35" fill="#728da3"/><text x="377.0" y="841" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="492" y="815.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M218 821 L536 821" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M945 776 L1007 776" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M945 776 L1007 776" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="963" y="758.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M945 764 L1007 764" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<path d="M828 833 L1146 833" fill="none" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M828 833 L1146 833" fill="none" stroke="#a9a1bc" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/><rect x="846" y="815.5" width="26" height="35" rx="2" fill="#b92b36"/><rect x="872" y="815.5" width="230" height="35" fill="#728da3"/><text x="987.0" y="841" font-size="23" text-anchor="middle" fill="white" font-weight="normal" >X, Y, Z</text><rect x="1102" y="815.5" width="26" height="35" rx="2" fill="#b92b36"/><path d="M828 821 L1146 821" stroke="white" stroke-opacity=".26" stroke-width="3" fill="none"/>
+<text x="377" y="888" font-size="24" text-anchor="middle" fill="#213547" font-weight="normal" >Three copies of each of genes X, Y, Z</text>
+<text x="963" y="888" font-size="24" text-anchor="middle" fill="#213547" font-weight="normal" >One copy of each of genes X, Y, Z</text>
+</g>
+<g id="source-figure-caption">
+<path d="M30 916 H1170" stroke="#d8e0e6"/>
+<text x="30" y="946" font-size="20" text-anchor="start" fill="#b92b36" font-weight="bold" >FIGURE 8.19</text>
+<text x="186" y="946" font-size="19" text-anchor="start" fill="#213547" font-weight="normal" >Origin of chromosomes bearing a duplication or deletion of a genomic region by means of unequal</text>
+<text x="30" y="976" font-size="19" text-anchor="start" fill="#213547" font-weight="normal" >crossing-over between repeated DNA sequences that flank the region. The repeated sequences are indicated in red.</text>
+</g>
+</g></svg>

@@ -18,7 +18,7 @@ color-theme: genetics
 - [(1) Principle of Paired Factors]{color=red}
   - [Each organism has two alleles that make up the genotype for a given trait]{color=red}
 - [(2) Principle of Dominance]{color=gray}
-  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=gray}
+  - [Under complete dominance, a heterozygote displays the dominant phenotype]{color=gray}
 - [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
   - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
 - [(4) Law of Independent Assortment]{color=gray}
@@ -34,7 +34,7 @@ color-theme: genetics
 - [(1) Principle of Paired Factors]{color=gray}
   - [Each organism has two alleles that make up the genotype for a given trait]{color=gray}
 - [(2) Principle of Dominance]{color=red}
-  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=red}
+  - [Under complete dominance, a heterozygote displays the dominant phenotype]{color=red}
 - [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
   - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
 - [(4) Law of Independent Assortment]{color=gray}
@@ -220,7 +220,7 @@ hidden: true
 
 @bottom
 
-![Slide image 1](assets/lect04c-two_principles/image_001.jpg)
+![Slide image 1](assets/lect04c-two_principles/sbei_locus_and_gel.drawn.svg)
 
 - (A) W (round) is an allele of a gene that specifies the amino acid sequence of starch branching enzyme I (SBEI). (B) w (wrinkled) is an allele that encodes an inactive form of the enzyme because its DNA sequence is interrupted by the insertion of a transposable element. (C) At the level of the morphological phenotype, W is dominant to w\: Genotypes WW and Ww have round seeds, whereas genotype ww has wrinkled seeds.
 
@@ -230,7 +230,7 @@ hidden: true
 
 @body
 
-![Slide image 2](assets/lect04c-two_principles/image_002.png)
+![Slide image 2](assets/lect04c-two_principles/seed_genotype_gel.drawn.svg)
 
 === layout: section
 
@@ -245,7 +245,7 @@ hidden: true
 - [(1) Principle of Paired Factors]{color=red}
   - [Each organism has two alleles that make up the genotype for a given character]{color=red}
 - [(2) Principle of Dominance]{color=gray}
-  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=gray}
+  - [Under complete dominance, a heterozygote displays the dominant phenotype]{color=gray}
 - [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
   - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
 - [(4) Law of Independent Assortment]{color=gray}
@@ -382,7 +382,7 @@ hidden: true
 
 @body
 
-![Slide image 3](assets/lect04c-two_principles/image_003.png)
+![Slide image 3](assets/lect04c-two_principles/blending_generations.drawn.svg)
 
 - The "blending" hypothesis is the idea that genetic material from the two parents blends together
   - like blue and yellow paint blend to make green
@@ -407,19 +407,21 @@ hidden: true
 
 @bottom
 
-![Slide image 4](assets/lect04c-two_principles/image_003.png)
+![Slide image 4](assets/lect04c-two_principles/blending_generations.drawn.svg)
 
-=== layout: one-panel
+=== layout: stacked-panels
 
 # Particulate Hypothesis
 
-@body
-
-![Slide image 5](assets/lect04c-two_principles/image_005.png)
+@top
 
 - The "particulate" hypothesis is the idea that parents pass on discrete heritable units (genes)
 - Mendel documented a particulate mechanism through his experiments with garden peas
 - Mendel came up with the idea of dominance
+
+@bottom
+
+![Slide image 5](assets/lect04c-two_principles/particulate_units.drawn.svg)
 
 === layout: section
 
@@ -434,7 +436,7 @@ hidden: true
 - [(1) Principle of Paired Factors]{color=gray}
   - [Each organism has two alleles that make up the genotype for a given trait]{color=gray}
 - [(2) Principle of Dominance]{color=red}
-  - [In each genotype there is a dominant allele, the phenotype is determined by dominant allele]{color=red}
+  - [Under complete dominance, a heterozygote displays the dominant phenotype]{color=red}
 - [(3) Law of Segregation or Law of Purity of Gametes]{color=gray}
   - [In sexual reproduction, each parent contributes just one of their alleles to its offspring]{color=gray}
 - [(4) Law of Independent Assortment]{color=gray}
@@ -447,12 +449,13 @@ hidden: true
 
 @left
 
-- In each genotype there is a dominant allele, the phenotype is determined by dominant allele
-- Since purple is more common than [white]{color=gray}, purple is likely dominant to [white]{color=gray}
+- Purple is dominant because _Ww_ hybrids have purple flowers, like _WW_ plants.
+- Crossing true-breeding _WW_ purple and _ww_ white plants produces purple _Ww_ F1 plants.
+- How common a phenotype is does not establish dominance.
 
 @right
 
-![Slide image 6](assets/lect04c-two_principles/image_006.png)
+![Nine pea plants: three purple WW, four purple Ww, and two white ww](assets/lect04c-two_principles/pea_dominance_population.drawn.svg)
 
 === layout: two-panels
 

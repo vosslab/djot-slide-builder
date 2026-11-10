@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">Hydrogen fuel cell</title><desc id="desc">Original cutaway schematic preserving source image_011.png and original ODP slide 12. Hydrogen enters the anode side; oxygen enters the cathode side; water exits the cathode side. The external electron path rises from the anode and descends to the cathode. Heat leaves both sides. Green hydrogen particles, teal oxygen particles and assembled water particles preserve the source convention; shapes are illustrative.</desc>
+<metadata>Original editable illustration, 2026-11-10. Scientific topology and wording from the existing course raster, matched to biotech/LECT06/old/lect06c-set_4_TP-chapter_12-16_material.odp. Schematic, not measured apparatus or microscopy.</metadata>
+<defs>
+<linearGradient id="steel"><stop stop-color="#eef4f7"/><stop offset=".48" stop-color="#c7d7df"/><stop offset="1" stop-color="#8ba3b2"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7fcfd"/><stop offset="1" stop-color="#dceff2"/></linearGradient>
+<linearGradient id="membrane-shade"><stop stop-color="#e5f0cb"/><stop offset=".5" stop-color="#afc779"/><stop offset="1" stop-color="#78954a"/></linearGradient>
+<linearGradient id="cell-shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0edba"/><stop offset=".5" stop-color="#b4cd81"/><stop offset="1" stop-color="#769b48"/></linearGradient>
+<radialGradient id="hydrogen-shade" cx=".28" cy=".22" r=".8"><stop stop-color="#d6efa8"/><stop offset="1" stop-color="#77a93e"/></radialGradient>
+<radialGradient id="oxygen-shade" cx=".28" cy=".22" r=".8"><stop stop-color="#75cbd8"/><stop offset="1" stop-color="#16798d"/></radialGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#213547" stroke-width="1.6" stroke-linejoin="round"/></marker>
+<marker id="gold-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d39922"/></marker>
+<g id="hydrogen-pair"><circle cx="-9" cy="-5" r="13" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/><circle cx="9" cy="5" r="13" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/></g>
+<g id="oxygen-pair"><circle cx="0" cy="-10" r="17" fill="url(#oxygen-shade)" stroke="#175f70" stroke-width="1.5"/><circle cx="0" cy="10" r="17" fill="url(#oxygen-shade)" stroke="#175f70" stroke-width="1.5"/></g>
+<g id="water-particle"><circle r="19" fill="url(#oxygen-shade)" stroke="#175f70" stroke-width="1.5"/><circle cx="-20" cy="-9" r="12" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/><circle cx="20" cy="-9" r="12" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/></g>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#213547" stroke-linejoin="round" stroke-linecap="round">
+<g id="housing-cutaway">
+<ellipse cx="608" cy="589" rx="321" ry="23" fill="#edf1f3"/>
+<path d="M280 248 L318 220 H898 V550 L860 578 H280 Z" fill="#9fb7c6" stroke="#213547" stroke-width="3.5"/>
+<path d="M280 248 L318 220 H898 L860 248 Z" fill="#e5eef2" stroke="#213547" stroke-width="3"/>
+<path d="M860 248 L898 220 V550 L860 578 Z" fill="#7c9aaa" stroke="#213547" stroke-width="3"/>
+<path d="M280 248 H860 V578 H280 Z" fill="#385e74" stroke="#213547" stroke-width="3.5"/>
+<rect x="301" y="270" width="538" height="249" rx="4" fill="url(#glass)" stroke="#213547" stroke-width="2.5"/>
+<path d="M303 271 L328 251 H859 L838 271" fill="#f4fafb" stroke="#526879" stroke-width="2"/>
+<path d="M302 518 H839 L857 503" fill="none" stroke="#85abbc" stroke-width="3"/>
+</g>
+<g id="anode-flow-plate">
+<path d="M430 270 L448 254 H473 V503 L455 519 H430 Z" fill="#7596a7" stroke="#213547" stroke-width="2.5"/>
+<path d="M430 270 H455 V519 H430 Z" fill="url(#steel)" stroke="#213547" stroke-width="2.5"/>
+<path d="M302 310 H378 Q410 310 410 336 Q410 362 378 362 H343 Q320 362 320 389 Q320 416 343 416 H378 Q410 416 410 442 Q410 467 378 467 H302" fill="none" stroke="#4b7489" stroke-width="13"/>
+<path d="M302 307 H378 Q406 307 406 336" fill="none" stroke="#9dc1cf" stroke-width="3"/>
+</g>
+<g id="membrane"><path d="M573 270 L591 254 H623 V503 L605 519 H573 Z" fill="#79944d" stroke="#466329" stroke-width="2.5"/><rect x="573" y="270" width="32" height="249" fill="url(#membrane-shade)" stroke="#466329" stroke-width="2.5"/><path d="M580 279 V509" stroke="#eef6db" stroke-width="3"/></g>
+<g id="cathode-flow-plate">
+<path d="M718 270 L736 254 H761 V503 L743 519 H718 Z" fill="#7596a7" stroke="#213547" stroke-width="2.5"/>
+<path d="M718 270 H743 V519 H718 Z" fill="url(#steel)" stroke="#213547" stroke-width="2.5"/>
+<path d="M839 310 H797 Q766 310 766 336 Q766 362 797 362 H803 Q826 362 826 389 Q826 416 803 416 H797 Q766 416 766 442 Q766 467 797 467 H839" fill="none" stroke="#4b7489" stroke-width="13"/>
+<path d="M838 307 H797 Q770 307 770 336" fill="none" stroke="#9dc1cf" stroke-width="3"/>
+</g>
+<g id="external-electron-circuit">
+<path d="M447 255 V111 H739 V255" fill="none" stroke="#87651f" stroke-width="8"/>
+<path d="M447 255 V111 H739 V255" fill="none" stroke="#e8b645" stroke-width="4"/>
+<path d="M447 211 V162 M473 111 H531 M670 111 H714 M739 162 V211" fill="none" stroke="#d39922" stroke-width="6" marker-end="url(#gold-arrow)"/>
+<path d="M620 35 L561 116 H597 L576 183 L647 93 H608 Z" fill="#f8c848" stroke="#b98213" stroke-width="2.5"/>
+</g>
+<text x="481" y="184" font-size="32" text-anchor="middle" fill="#213547" font-weight="normal">-e</text>
+<text x="704" y="184" font-size="32" text-anchor="middle" fill="#213547" font-weight="normal">-e</text>
+<g id="heat-output"><path d="M327 230 C325 195 287 206 285 173 C284 151 264 145 256 135" fill="none" stroke="#c06d42" stroke-width="9"/><path d="M849 230 C851 195 889 206 891 173 C892 151 912 145 920 135" fill="none" stroke="#c06d42" stroke-width="9"/></g><text x="239" y="106" font-size="32" text-anchor="middle" fill="#213547" font-weight="normal">Heat</text>
+<text x="937" y="106" font-size="32" text-anchor="middle" fill="#213547" font-weight="normal">Heat</text>
+<g id="gas-and-water-flows">
+<path d="M50 310 H273" stroke="#d39922" stroke-width="7" marker-end="url(#gold-arrow)"/>
+<path d="M1149 310 H911" stroke="#d39922" stroke-width="7" marker-end="url(#gold-arrow)"/>
+<path d="M910 467 H1149" stroke="#d39922" stroke-width="7" marker-end="url(#gold-arrow)"/>
+</g>
+<g id="source-particles">
+<use xlink:href="#hydrogen-pair" transform="translate(225 367) scale(1.15)"/>
+<use xlink:href="#hydrogen-pair" transform="translate(210 436) scale(1.15)"/>
+<use xlink:href="#oxygen-pair" transform="translate(971 372)"/>
+<circle cx="547" cy="335" r="13" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/>
+<circle cx="547" cy="365" r="13" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/>
+<circle cx="547" cy="435" r="13" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/>
+<circle cx="547" cy="465" r="13" fill="url(#hydrogen-shade)" stroke="#557d2d" stroke-width="1.5"/>
+<use xlink:href="#water-particle" transform="translate(666 351)"/>
+<use xlink:href="#water-particle" transform="translate(666 451)"/>
+</g>
+<text x="155" y="277" font-size="32" text-anchor="middle" fill="#213547" font-weight="bold">Hydrogen in</text>
+<text x="1030" y="277" font-size="32" text-anchor="middle" fill="#213547" font-weight="bold">Oxygen in</text>
+<text x="1033" y="432" font-size="32" text-anchor="middle" fill="#213547" font-weight="bold">Water out</text>
+<text x="390" y="557" font-size="32" text-anchor="middle" fill="#ffffff" font-weight="normal">anode</text>
+<text x="758" y="557" font-size="32" text-anchor="middle" fill="#ffffff" font-weight="normal">cathode</text>
+<path d="M589 521 V597" fill="none" stroke="#526879" stroke-width="2"/>
+<text x="589" y="633" font-size="32" text-anchor="middle" fill="#213547" font-weight="normal">membrane</text>
+<text x="580" y="557" font-size="28" text-anchor="middle" fill="#ffffff" font-weight="bold">FUEL CELL</text>
+</g></svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="570" viewBox="0 0 860 570" role="img" aria-labelledby="title desc">
+<title id="title">phy_d_activity_stage_2</title>
+<desc id="desc">Metric tree. Horizontal branch lengths are proportional to distance. Source: original LECT12D PDF pages24-28; original reconstruction from displayed merge heights. Stage 2.</desc>
+<rect width="860" height="570" fill="white"/>
+<g font-family="Arial" font-size="27" fill="#172B3A">
+<g id="join-ac"><path d="M 565 55 V 130" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-ac-a" d="M 565 55 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="650.0" y="43" text-anchor="middle">2</text>
+<path id="edge-ac-c" d="M 565 130 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="650.0" y="118" text-anchor="middle">2</text>
+<circle cx="565" cy="92.5" r="5" fill="#006A69"/></g>
+<g id="join-be"><path d="M 480 205 V 280" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-be-b" d="M 480 205 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="607.5" y="193" text-anchor="middle">3</text>
+<path id="edge-be-e" d="M 480 280 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+<text x="607.5" y="268" text-anchor="middle">3</text>
+<circle cx="480" cy="242.5" r="5" fill="#006A69"/></g>
+<text x="750" y="64">a</text>
+<text x="750" y="139">c</text>
+<text x="750" y="214">b</text>
+<text x="750" y="289">e</text>
+</g></svg>

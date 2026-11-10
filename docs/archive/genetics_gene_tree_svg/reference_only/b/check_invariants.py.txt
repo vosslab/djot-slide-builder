@@ -1,0 +1,40 @@
+from pathlib import Path
+import re,json,xml.etree.ElementTree as ET
+P=Path(__file__).parent;D=Path('genetics/LECT12/djot');A=D/'assets/lect12b-gene_trees';report={}
+for part in ('01','02'):
+ old=(P/f'baseline_part_{part}.djot').read_text();new=(D/f'lect12b_gene_trees_part_{part}.djot').read_text()
+ tables=re.findall(r'(?m)^\|[^\n]*(?:\n\|[^\n]*)+',old)
+ assert all(t in new for t in tables),part
+ report[f'part_{part}_original_native_tables_unchanged']=len(tables)
+ for pattern in (r'^- [A-E]\. .+$',r'^- \[[A-E]\. .+$',r'^- (?:N\.Wh\.|S\.Wh\.|Blk\.R)\t.+$'):
+  for line in re.findall(pattern,old,re.M):assert line in new,line
+ report[f'part_{part}_question_choices_rhino_sequences_preserved']=True
+old=(P/'baseline_part_01.djot').read_text();new=(D/'lect12b_gene_trees_part_01.djot').read_text()
+for title in ('Rotating Branches in Trees','Trees, trees, and trees, oh my'):
+ def block(s):return next(b.strip() for b in s.split('=== layout:') if '# *'+title+'*' in b)
+ assert block(old)==block(new),title
+report['M2_rotation_source_blocks_unchanged']=True
+ns={'s':'http://www.w3.org/2000/svg'}
+for p in A.glob('phy_b_*.drawn.svg'):
+ root=ET.parse(p).getroot();assert root.find('s:title',ns) is not None and root.find('s:desc',ns) is not None,p
+ assert not root.findall('.//s:image',ns),p
+ ids=[e.attrib['id'] for e in root.iter() if 'id'in e.attrib];assert len(ids)==len(set(ids)),p
+ assert all(float(v)>0 for v in root.attrib['viewBox'].split()[2:]),p
+report['svg_xml_ids_image_free_positive_viewports']='passed'
+def graph(name):
+ root=ET.parse(A/name).getroot();g={}
+ for e in root.iter():
+  if 'data-edge'in e.attrib:
+   p,c=e.attrib['data-edge'].split('_');g.setdefault(p,set()).add(c)
+ return g
+def clade(g,n):return frozenset().union(*(clade(g,k) for k in g[n])) if n in g else frozenset([n])
+for name in ('branch_points','mrca','three_forms'):
+ g=graph('phy_b_'+name+'.drawn.svg');assert clade(g,'AB')==frozenset('AB') and clade(g,'CD')==frozenset('CD') and clade(g,'ABCD')==frozenset('ABCD') and clade(g,'root')==frozenset('ABCDE')
+g=graph('phy_b_polytomy.drawn.svg');assert g['PQR']==set('PQR') and clade(g,'ST')==frozenset('ST') and g['root']=={'PQRST','U'}
+g=graph('phy_b_tree_matrix.drawn.svg');assert clade(g,'AC')==frozenset('AC') and clade(g,'ACD')==frozenset('ACD')
+assert round(3.2*2,1)==6.4 and round((3.2+3.1)*2,1)==12.6 and round(8.7*2,1)==17.4
+report['topology_clades_polytomy_metric_paths']='passed'
+rows=json.loads((P/'hemoglobin_50_columns.json').read_text());assert len(rows)==7 and all(len(s)==50 for s in rows.values());report['hemoglobin']='7x50; all21source distances independently corroborated by C owner'
+report['UPGMA']='manual current-cluster exact calculation in current_cluster_average_check.json; displayed source overview rounding retained with approximate caption'
+report['NJ']='AB/CD minimum adjusted-score tie verified; source matrices3/6/5 and final2 preserved'
+(P/'invariants.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

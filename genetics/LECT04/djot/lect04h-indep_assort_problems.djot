@@ -108,7 +108,7 @@ color-theme: genetics
 
 - The multiplication rule states that the probability that two or more independent events will occur together is the product of their individual probabilities
 - Probability in an F1 monohybrid cross can be determined using the multiplication rule
-- Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a ½ chance of carrying the dominant allele and a ½ chance of carrying the recessive allele
+- Segregation in a heterozygous plant is like flipping a coin\: Each gamete has a &#189; chance of carrying the dominant allele and a &#189; chance of carrying the recessive allele
 
 === layout: one-panel
 
@@ -119,9 +119,9 @@ color-theme: genetics
 ![Slide image 3](assets/lect04h-indep_assort_problems/image_003.png)
 
 - Proportion for each gene is\:
-  - A\: ½ , B\: ½ , C\: ½ , D\: ½
+  - A\: &#189; , B\: &#189; , C\: &#189; , D\: &#189;
 - A, B, C, and D are independent, so multiplication rule applies\:
-- ½ x ½ x ½ x ½ = [1/16]{color=red}
+- &#189; x &#189; x &#189; x &#189; = [1/16]{color=red}
 
 === layout: section
 
@@ -347,7 +347,7 @@ color-theme: genetics
 - Step 4\: Are they independent?
   - Yes, states independent assortment above
 - Multiplication rule\:
-- 1 x ½ x ½ x 1 x ½ = [1/8]{color=red}
+- 1 x &#189; x &#189; x 1 x &#189; = [1/8]{color=red}
 
 === layout: section
 

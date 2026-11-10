@@ -1,0 +1,94 @@
+from pathlib import Path
+import xml.etree.ElementTree as ET
+import re, json, hashlib, base64
+
+ROOT=Path('genetics/LECT12/djot')
+ASSETS=ROOT/'assets/lect12e-evol_time'
+NS={'s':'http://www.w3.org/2000/svg'}
+checks={}
+for p in sorted(ASSETS.glob('phy_e_*.svg')):
+    r=ET.parse(p).getroot()
+    assert r.find('s:title',NS) is not None and r.find('s:desc',NS) is not None
+    ids=[n.attrib['id'] for n in r.iter() if 'id' in n.attrib]
+    assert len(ids)==len(set(ids))
+    box=[float(v) for v in r.attrib['viewBox'].split()]; assert box[2]>0 and box[3]>0
+    assert not any(n.tag.rsplit('}',1)[-1] in ['script','foreignObject'] for n in r.iter())
+    if '.drawn.svg' in p.name: assert r.find('.//s:image',NS) is None
+    checks[p.name]={'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'xml':'pass'}
+
+def edges(path):
+    tokens=re.findall(r'[MLHV]|-?\d+(?:\.\d+)?',path)
+    out=[];i=0;point=None
+    while i<len(tokens):
+        cmd=tokens[i];i+=1
+        if cmd in 'ML': new=(float(tokens[i]),float(tokens[i+1]));i+=2
+        elif cmd=='H': new=(float(tokens[i]),point[1]);i+=1
+        elif cmd=='V': new=(point[0],float(tokens[i]));i+=1
+        else: raise AssertionError(cmd)
+        if cmd!='M':out.append((point,new))
+        point=new
+    return out
+
+def topology(name,root,leaves,expected):
+    r=ET.parse(ASSETS/name).getroot()
+    g=r.find('.//s:g[@id="gene-tree"]',NS)
+    graph={}
+    for path in g.findall('s:path',NS):
+        for a,b in edges(path.attrib['d']):graph.setdefault(a,[]).append(b)
+    clades=[]
+    def descendants(point):
+        if point in leaves:return {leaves[point]}
+        assert point in graph,point
+        result=set().union(*(descendants(q) for q in graph[point]))
+        if len(result)>1:clades.append(sorted(result))
+        return result
+    assert descendants(root)==set(leaves.values())
+    for expected_clade in expected:assert sorted(expected_clade) in clades
+    checks[name]['reconstructed_clades']=clades
+
+topology('phy_e_globin_homology.drawn.svg',(500,415),{(70,150):'frog_alpha',(250,150):'chick_alpha',(420,150):'mouse_alpha',(580,150):'mouse_beta',(750,150):'chick_beta',(930,150):'frog_beta'},[['chick_alpha','mouse_alpha'],['chick_beta','mouse_beta'],['frog_alpha','chick_alpha','mouse_alpha'],['frog_beta','chick_beta','mouse_beta']])
+topology('phy_e_duplication_speciation.drawn.svg',(470,460),{(120,120):'alpha1',(350,120):'beta1',(540,120):'alpha2',(800,120):'beta2'},[['alpha1','alpha2'],['beta1','beta2']])
+# Extract each emitted locus: exact six enhancer identities and cumulative losses.
+r=ET.parse(ASSETS/'phy_e_enhancer_losses.drawn.svg').getroot()
+loci=[]
+for g in r.findall('.//s:g',NS):
+    rects=g.findall('s:rect',NS)
+    if len(rects)==9:
+        fills=[x.attrib['fill'] for x in rects[1:7]];loci.append(fills)
+assert len(loci)==9
+original=['#007A52','#007A52','#F2C94C','#F2C94C','#007A52','#F2C94C']
+assert loci[0]==original and loci[1]==original and loci[2]==original
+for stage in range(4):
+    left=loci[1+stage*2];right=loci[2+stage*2]
+    assert left.count('#404040')==stage and right.count('#404040')==stage
+    assert left.count('#F2C94C')==3 and right.count('#007A52')==3
+    assert [i for i,c in enumerate(left) if c=='#404040']==sorted([1,0,4][:stage])
+    assert [i for i,c in enumerate(right) if c=='#404040']==sorted([5,2,3][:stage])
+assert loci[-2].count('#007A52')==0 and loci[-1].count('#F2C94C')==0
+checks['phy_e_enhancer_losses.drawn.svg']['locus_states']=loci
+r=ET.parse(ASSETS/'phy_e_allele_sorting.drawn.svg').getroot()
+scaffold=r.find('.//s:g[@id="species-scaffold"]/s:path',NS)
+graph={}
+for a,b in edges(scaffold.attrib['d']):graph.setdefault(a,[]).append(b)
+assert graph[(300,210)]==[(550,350),(850,70)]
+assert graph[(600,350)]==[(850,250),(850,430)]
+assert graph[(550,350)]==[(600,350)]
+ends={}
+for group in ['allele-a1','allele-a2']:
+    paths=r.find(f'.//s:g[@id="{group}"]',NS).findall('s:path',NS)
+    ends[group]=[e[-1][1] for p in paths if 'L' in p.attrib['d'] and (e:=edges(p.attrib['d']))]
+assert (850,418) in ends['allele-a1']
+assert (850,82) in ends['allele-a2'] and (850,262) in ends['allele-a2']
+checks['phy_e_allele_sorting.drawn.svg']['species_clade']='species2/species3 from emitted scaffold endpoints'
+checks['phy_e_allele_sorting.drawn.svg']['survivors']='A1 species3; A2 species1/species2; loss marks at stopped tracks'
+r=ET.parse(ASSETS/'phy_e_adh_annotated.svg').getroot()
+original=(ASSETS/'image_004.png').read_bytes()
+for node in r.findall('.//s:image',NS):assert base64.b64decode(node.attrib['href'].split(',')[1])==original
+checks['phy_e_adh_annotated.svg']['empirical_pixels']='both embedded image payloads exactly equal original image_004.png bytes'
+s=(ROOT/'lect12e-evol_time.djot').read_text()
+for name in ['image_003.jpg','image_006.png','image_008.png']:assert name in s
+checks['retained_empirical']={name:hashlib.sha256((ASSETS/name).read_bytes()).hexdigest() for name in ['image_003.jpg','image_004.png','image_006.png','image_008.png']}
+for row in Path('_temp/genetics_visual_renewal/m3_phylogenetics/b/hemoglobin_table.djot').read_text().splitlines():assert row in s
+checks['hemoglobin']='exact agreement with independently transcribed seven50column rows'
+Path('_temp/genetics_visual_renewal/m3_phylogenetics/e/verification.json').write_text(json.dumps(checks,indent=2)+'\n')
+print('E checks pass: XML/static/original drawings;2 reconstructed tree graphs;9 enhancer locus states; exact empirical raster payload;7x50 alignment.')

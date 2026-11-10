@@ -83,7 +83,7 @@ The cell cycle: interphase and the mitotic phase.
 
 @body
 
-![Cell cycle with G1, G2, and M checkpoints](assets/lect06b-intro_cells/cell_cycle_checkpoints.svg)
+![Cell cycle with G1, G2, and M checkpoints](assets/lect06b-intro_cells/cell_cycle_checkpoints.drawn.svg)
 
 === layout: image-comparison
 
@@ -91,11 +91,11 @@ The cell cycle: interphase and the mitotic phase.
 
 @top-left
 
-![G&#x2081; checkpoint: stop state](assets/lect06b-intro_cells/g1_checkpoint_stop.svg)
+![G&#x2081; checkpoint: stop state](assets/lect06b-intro_cells/g1_checkpoint_stop.drawn.svg)
 
 @top-right
 
-![G&#x2081; checkpoint: go-ahead state](assets/lect06b-intro_cells/g1_checkpoint_go.svg)
+![G&#x2081; checkpoint: go-ahead state](assets/lect06b-intro_cells/g1_checkpoint_go.drawn.svg)
 
 @bottom-left
 
@@ -111,11 +111,11 @@ With a go-ahead signal, the cell continues the cell cycle.
 
 @top-left
 
-![M checkpoint: stop state](assets/lect06b-intro_cells/m_checkpoint_stop.svg)
+![M checkpoint: stop state](assets/lect06b-intro_cells/m_checkpoint_stop.drawn.svg)
 
 @top-right
 
-![M checkpoint: go-ahead state](assets/lect06b-intro_cells/m_checkpoint_go.svg)
+![M checkpoint: go-ahead state](assets/lect06b-intro_cells/m_checkpoint_go.drawn.svg)
 
 @bottom-left
 
@@ -226,7 +226,7 @@ Which of the following is the correct sequence of mitotic phases?
 
 @image
 
-![G&#x2082; of interphase and prophase.](assets/lect06b-intro_cells/mitosis_interphase_prophase.svg)
+![G&#x2082; of interphase and prophase.](assets/lect06b-intro_cells/mitosis_interphase_prophase.drawn.svg)
 
 @caption
 
@@ -236,7 +236,7 @@ G&#x2082; of interphase and prophase.
 
 @image
 
-![Prometaphase and metaphase.](assets/lect06b-intro_cells/mitosis_prometaphase_metaphase.svg)
+![Prometaphase and metaphase.](assets/lect06b-intro_cells/mitosis_prometaphase_metaphase.drawn.svg)
 
 @caption
 
@@ -246,7 +246,7 @@ Prometaphase and metaphase.
 
 @image
 
-![Anaphase, telophase, and cytokinesis.](assets/lect06b-intro_cells/mitosis_anaphase_telophase.svg)
+![Anaphase, telophase, and cytokinesis.](assets/lect06b-intro_cells/mitosis_anaphase_telophase.drawn.svg)
 
 @caption
 

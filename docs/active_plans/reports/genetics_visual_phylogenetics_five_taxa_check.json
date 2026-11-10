@@ -1,0 +1,1 @@
+{"dataset":"later native source tables; not initial raster","steps":[{"left":["a"],"right":["b"],"distance":17.0,"height":8.5},{"left":["e"],"right":["a","b"],"distance":22.0,"height":11.0},{"left":["c"],"right":["d"],"distance":28.0,"height":14.0},{"left":["e","a","b"],"right":["c","d"],"distance":31.5,"height":15.75}],"abe_to_d":34.666666666666664,"abe_to_c":28.333333333333332}

@@ -312,8 +312,8 @@ Students should explain which family relationships support or exclude a model, r
 
 - [DISEASED ALLELE IS DOMINANT]{color=red}
 - Since disease is rare and dominant\:
-- Affected individuals would have genotype "Aa"
-- Unaffected individuals would have genotype "aa"
+- Affected individuals would have genotype&#160;"Aa"
+- Unaffected individuals would have genotype&#160;"aa"
 
 === layout: two-panels
 

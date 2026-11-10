@@ -33,7 +33,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 1](assets/lect04d-cross_experiments/image_001.png)
+![True-breeding purple AA plants produce purple AA offspring in each generation](assets/lect04d-cross_experiments/pea_true_breeding.drawn.svg)
 
 === layout: two-panels
 
@@ -48,7 +48,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 2](assets/lect04d-cross_experiments/image_002.png)
+![AA purple and aa white parents produce Aa purple hybrids; the next generation includes purple and white plants](assets/lect04d-cross_experiments/pea_hybrid_plants.drawn.svg)
 
 === layout: one-panel
 
@@ -72,82 +72,37 @@ color-theme: genetics
 
 === layout: one-panel
 
+# Cross Experiment: P Generation
 
 @body
 
-![Slide image 3](assets/lect04d-cross_experiments/image_003.jpg)
+![True-breeding purple-flowered and white-flowered parents](assets/lect04d-cross_experiments/pea_experiment_p.drawn.svg)
 
-- Purple
-- flowers
-
-- White
-- flowers
-
-- P Generation
-- (true-breeding
-- parents)
-
-- Experiment
+- Cross true-breeding purple-flowered and white-flowered plants.
+- Predict: What flower color will their offspring have?
 
 === layout: one-panel
 
+# Cross Experiment: F1 Generation
 
 @body
 
-![Slide image 4](assets/lect04d-cross_experiments/image_004.jpg)
+![The parental cross produces F1 hybrids with purple flowers](assets/lect04d-cross_experiments/pea_experiment_f1.drawn.svg)
 
-- Self- or cross-pollination
-
-- All plants had purple flowers
-
-- Purple
-- flowers
-
-- White
-- flowers
-
-- P Generation
-- (true-breeding
-- parents)
-
-- F1 Generation
-- (hybrids)
-
-- Experiment
+- All F1 plants had purple flowers.
+- Allow self-pollination or cross-pollination between F1 plants.
+- Predict: What flower colors will appear in the F2 generation?
 
 === layout: one-panel
 
+# Cross Experiment: F2 Generation
 
 @body
 
-![Slide image 5](assets/lect04d-cross_experiments/image_005.jpg)
+![Self- or cross-pollination of F1 plants produces purple and white F2 plants](assets/lect04d-cross_experiments/pea_experiment_f2.drawn.svg)
 
-- 705 purple-flowered
-- plants
-
-- 224 white-flowered
-- plants
-
-- Self- or cross-pollination
-
-- All plants had purple flowers
-
-- Purple
-- flowers
-
-- White
-- flowers
-
-- P Generation
-- (true-breeding
-- parents)
-
-- F1 Generation
-- (hybrids)
-
-- F2 Generation
-
-- Experiment
+- Observed F2 offspring: [*705 purple-flowered plants*]{color=purple} and *224 white-flowered plants*.
+- The white-flower phenotype reappeared after self- or cross-pollination of the F1 hybrids.
 
 === layout: two-panels
 
@@ -155,21 +110,15 @@ color-theme: genetics
 
 @left
 
-- P\: parental generation
-  - true-breeding, i.e., homozygous for all genes
-  - mates have different phenotype, e.g., purple and white flowers
-- F1\: offspring of P
-  - heterozygous for all genes
-  - all display dominant phenotype, purple
-- F2\: offspring of F1
-  - exhibit interesting ratios of phenotypes
-  - e.g., 3\:1 ratio in monohybrid cross
-- F3\: offspring of F2
-- F4\: ...
+- *P*: parental generation; true-breeding purple and white parents, homozygous for flower color.
+- *F1*: offspring of P; heterozygous hybrids, all with purple flowers.
+- *F2*: offspring of F1 after self- or cross-pollination.
+  - Observed: 705 purple-flowered and 224 white-flowered plants, approximately 3\:1.
+- *F3*: offspring of F2; *F4*: offspring of F3, and so on.
 
 @right
 
-![Slide image 6](assets/lect04d-cross_experiments/image_006.png)
+![P parents produce purple F1 hybrids; F1 self- or cross-pollination produces purple and white F2 offspring](assets/lect04d-cross_experiments/pea_cross_recap.drawn.svg)
 
 === layout: one-panel
 
@@ -178,11 +127,11 @@ color-theme: genetics
 @body
 
 - A cross between two individuals that are both heterozygous for [one character]{color=red} is called a [monohybrid]{color=red} cross
-  - [Aa × Aa]{color=red}
+  - [Aa &times; Aa]{color=red}
 - A cross between two individuals that are both heterozygous for two characters is called a dihybrid cross
-  - AaBb × AaBb
+  - AaBb &times; AaBb
 - A cross between two individuals that are both heterozygous for [three characters]{color=green} is called a [trihybrid ]{color=green}cross
-  - [AaBbCc × AaBbCc]{color=green}
+  - [AaBbCc &times; AaBbCc]{color=green}
 
 === layout: section
 

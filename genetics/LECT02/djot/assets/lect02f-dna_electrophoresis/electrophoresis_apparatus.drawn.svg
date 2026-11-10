@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="550" viewBox="0 0 1000 550" role="img" aria-labelledby="gel_angled-title gel_angled-desc">
+  <title id="gel_angled-title">Agarose electrophoresis chamber</title>
+  <desc id="gel_angled-desc">Schematic open chamber with wells nearest the negative electrode and DNA migration toward the positive electrode. Bands illustrate migration, not experimental measurements. The angled view uses parallel projection to show the tank and buffer; proportions are illustrative. Source slide: LECT02F apparatus, original image_003.jpg. Buffer, gel, wells and bands are separately labeled; visible bands require suitable treatment.</desc>
+  <g font-family="Liberation Sans, sans-serif" id="apparatus">
+    <path d="M140 150 L770 150 L920 300 L290 300 Z" fill="#EBF3F7" stroke="#527080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-1" />
+    <path d="M290 300 L920 300 L920 425 L290 425 Z" fill="#CADFEA" stroke="#527080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-2" />
+    <path d="M140 150 L290 300 L290 425 L140 275 Z" fill="#DCEBF1" stroke="#527080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-3" />
+    <path d="M157 190 L753 190 L890 327 L294 327 Z" fill="#B6D9E8" stroke="#719CAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-4" />
+    <g transform="matrix(0.88 0 0.5 0.5 205 205)" id="apparatus-part-5">
+      <rect x="0" y="0" width="555" height="230" rx="5" fill="#F8F3DA" stroke="#978B61" stroke-width="3" />
+      <rect x="35" y="45" width="15" height="32" rx="2" fill="#45647B" />
+      <rect x="140" y="49" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="260" y="49" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="405" y="49" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="35" y="100" width="15" height="32" rx="2" fill="#45647B" />
+      <rect x="140" y="104" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="260" y="104" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="405" y="104" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="35" y="155" width="15" height="32" rx="2" fill="#45647B" />
+      <rect x="140" y="159" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="260" y="159" width="9" height="24" rx="2" fill="#774A9B" />
+      <rect x="405" y="159" width="9" height="24" rx="2" fill="#774A9B" />
+    </g>
+    <text x="95" y="125" font-size="48" fill="#253342" text-anchor="middle" id="apparatus-part-6">-</text>
+    <text x="930" y="125" font-size="48" fill="#D40000" text-anchor="middle" id="apparatus-part-7">+</text>
+    <text x="95" y="56" font-size="25" fill="#253342" text-anchor="middle" id="apparatus-part-8">Negative</text>
+    <text x="930" y="56" font-size="25" fill="#253342" text-anchor="middle" id="apparatus-part-9">Positive</text>
+    <path d="M95 140 V195 H177 L297 315" fill="none" stroke="#253342" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-10" />
+    <path d="M930 140 V195 H743 L863 315" fill="none" stroke="#D40000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-11" />
+    <text x="330" y="111" font-size="27" fill="#253342" text-anchor="middle" id="apparatus-part-12">Wells</text>
+    <path d="M327 121 L267 235" fill="none" stroke="#253342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-13" />
+    <path d="M310 485 L795 485" fill="none" stroke="#24578F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-14" />
+    <polygon points="795,485 780.0,492.0 780.0,478.0" fill="#24578F" id="apparatus-part-15" />
+    <text x="550" y="532" font-size="29" fill="#24578F" text-anchor="middle" id="apparatus-part-16">DNA migration</text>
+    <text x="95" y="84" font-size="24" text-anchor="middle" fill="#253342">electrode</text>
+    <text x="930" y="84" font-size="24" text-anchor="middle" fill="#253342">electrode</text>
+    <text x="330" y="78" font-size="25" text-anchor="middle" fill="#253342">Sample slots</text>
+    <text x="100" y="370" font-size="27" text-anchor="middle" fill="#253342">Buffer</text>
+    <text x="100" y="401" font-size="27" text-anchor="middle" fill="#253342">solution</text>
+    <path d="M160 370 L210 195" fill="none" stroke="#253342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="550" y="392" font-size="27" text-anchor="middle" fill="#253342">Agarose gel</text>
+    <path d="M550 365 L550 305" fill="none" stroke="#253342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="670" y="105" font-size="27" text-anchor="middle" fill="#253342">DNA bands</text>
+    <path d="M670 117 L588 240" fill="none" stroke="#253342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

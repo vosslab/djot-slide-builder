@@ -18,93 +18,79 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect03g-chap2_challenges/image_001.png)
+![Slide image 1](assets/lect03g-chap2_challenges/challenge-problem-2.drawn.svg)
 
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 Compare victim X with the five parent pairs at both loci. Account for both bands at each locus.
 
-@right
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 At each locus, compare X with each mother-father pair. One band comes from each parent.
 
-@right
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 Start with locus 1. Which parent pairs can account for both bands in X?
 
-@right
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 After comparing locus 1, keep A, C, and E. Exclude B and D.
 
-@right
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 Now compare the two bands in X at locus 2 with A, C, and E.
 
-@right
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 After comparing locus 2, keep A and C. Check which parent supplied each allele.
 
-@right
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
-
-=== layout: two-panels
+=== layout: one-panel
 
 # Review Challenge: Identify the Parents
 
-@left
+@body
 
 If each locus is a single gene, the father in A would have to supply both alleles. That is not allowed.
 
 *Answer: C.*
 
-@right
-
-![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/image_002.png)
+![DNA profiles for parent pairs A-E and victim X at two loci](assets/lect03g-chap2_challenges/parent-pair-profiles.drawn.svg)
 
 === layout: theend
 

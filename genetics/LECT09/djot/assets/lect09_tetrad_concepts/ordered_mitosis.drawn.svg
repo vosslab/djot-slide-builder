@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940" role="img" aria-labelledby="figure-title figure-description">
+  <title id="figure-title">Mitosis makes eight ordered spores</title>
+  <desc id="figure-description">Each of four meiotic products gives two adjacent genetically identical spores. Two FDS octads are AAAAaaaa and aaaaAAAA. Four SDS octads are AAaaAAaa, aaAAAAaa, aaAAaaAA and AAaaaaAA, in source order. Branches explicitly connect each of four products to its two spores in every alternative. Alternative product orders arise during meiosis, not mitosis.</desc>
+  <metadata id="provenance">Original editable schematic after source slide 60. Source: genetics/LECT09/lect09b-tetrads_1_introduction.odp, source art in ordered_before_meiosis.svg, ordered_meiosis_ii.svg and ordered_mitosis.svg. Unmeasured. A is green, a is purple. Source and stage ledger: SOURCE_STATE.json. Reconstruction 2026-11-09.</metadata>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L8 4 L0 8" fill="none" stroke="#526879" stroke-width="1.6" />
+    </marker>
+    <marker id="back-arrow" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M8 0 L0 4 L8 8" fill="none" stroke="#526879" stroke-width="1.6" />
+    </marker>
+    <linearGradient id="ascus-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#E8F0ED" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="940" fill="white" />
+  <g font-family="Arial, Helvetica, sans-serif">
+    <path d="M600 22 V916" fill="none" stroke="#D9E2E6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="300" y="40" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">First-Division Segregation</text>
+    <text x="900" y="40" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Second-Division Segregation</text>
+    <text x="300" y="81" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Centromeres split and separate</text>
+    <g id="fds-meiotic-product-1" data-allele="A" data-centromere-ancestry="green">
+      <path d="M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M140 168 C136 173 144 185 140 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M140 168 C136 173 144 185 140 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M140 168 C136 173 144 185 140 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="140" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="140" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="fds-meiotic-product-2" data-allele="A" data-centromere-ancestry="green">
+      <path d="M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M250 168 C246 173 254 185 250 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M250 168 C246 173 254 185 250 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M250 168 C246 173 254 185 250 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="250" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="250" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="fds-meiotic-product-3" data-allele="a" data-centromere-ancestry="purple">
+      <path d="M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M360 168 C356 173 364 185 360 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M360 168 C356 173 364 185 360 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M360 168 C356 173 364 185 360 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="360" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="360" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <g id="fds-meiotic-product-4" data-allele="a" data-centromere-ancestry="purple">
+      <path d="M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M470 168 C466 173 474 185 470 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M470 168 C466 173 474 185 470 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M470 168 C466 173 474 185 470 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="470" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="470" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <path d="M157 126 L233 126" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <path d="M377 126 L453 126" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <text x="305" y="266" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">Mitosis</text>
+    <g id="fds-octad-1" data-octad="AAAAaaaa" data-products="AAaa">
+      <g id="fds-octad-1-product-1-duplication" data-parent="A" data-daughters="AA">
+        <path d="M140 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M140 276 L117 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M140 276 L163 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <g id="fds-octad-1-product-2-duplication" data-parent="A" data-daughters="AA">
+        <path d="M250 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M250 276 L227 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M250 276 L273 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <g id="fds-octad-1-product-3-duplication" data-parent="a" data-daughters="aa">
+        <path d="M360 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M360 276 L337 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M360 276 L383 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <g id="fds-octad-1-product-4-duplication" data-parent="a" data-daughters="aa">
+        <path d="M470 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M470 276 L447 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M470 276 L493 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <path d="M63 329 C78 327 77 305 99 302 C208 296 423 300 500 301 C544 300 552 325 544 346 C539 364 522 368 501 368 L106 368 C81 366 80 342 63 339" fill="url(#ascus-wall)" stroke="#213547" stroke-width="2.4" />
+      <g id="fds-octad-1-spore-1" data-allele="A">
+        <path d="M100 337 C94 322 105 310 118 310 C134 311 140 327 135 343 C131 357 119 361 107 354 C102 350 101 344 100 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M105 327 C106 317 113 315 120 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="117" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-1-spore-2" data-allele="A">
+        <path d="M146 337 C140 322 151 310 164 310 C180 311 186 327 181 343 C177 357 165 361 153 354 C148 350 147 344 146 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M151 327 C152 317 159 315 166 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="163" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-1-spore-3" data-allele="A">
+        <path d="M210 337 C204 322 215 310 228 310 C244 311 250 327 245 343 C241 357 229 361 217 354 C212 350 211 344 210 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M215 327 C216 317 223 315 230 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="227" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-1-spore-4" data-allele="A">
+        <path d="M256 337 C250 322 261 310 274 310 C290 311 296 327 291 343 C287 357 275 361 263 354 C258 350 257 344 256 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M261 327 C262 317 269 315 276 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="273" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-1-spore-5" data-allele="a">
+        <path d="M320 337 C314 322 325 310 338 310 C354 311 360 327 355 343 C351 357 339 361 327 354 C322 350 321 344 320 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M325 327 C326 317 333 315 340 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="337" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-1-spore-6" data-allele="a">
+        <path d="M366 337 C360 322 371 310 384 310 C400 311 406 327 401 343 C397 357 385 361 373 354 C368 350 367 344 366 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M371 327 C372 317 379 315 386 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="383" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-1-spore-7" data-allele="a">
+        <path d="M430 337 C424 322 435 310 448 310 C464 311 470 327 465 343 C461 357 449 361 437 354 C432 350 431 344 430 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M435 327 C436 317 443 315 450 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="447" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-1-spore-8" data-allele="a">
+        <path d="M476 337 C470 322 481 310 494 310 C510 311 516 327 511 343 C507 357 495 361 483 354 C478 350 477 344 476 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M481 327 C482 317 489 315 496 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="493" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <path d="M98 376 V381 H182 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M208 376 V381 H292 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M318 376 V381 H402 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M428 376 V381 H512 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="305" y="403" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">or</text>
+    <g id="fds-octad-2" data-octad="aaaaAAAA" data-products="aaAA">
+      <text x="140" y="415" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="fds-octad-2-product-1-duplication" data-parent="a" data-daughters="aa">
+        <path d="M140 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M140 436 L117 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M140 436 L163 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="250" y="415" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="fds-octad-2-product-2-duplication" data-parent="a" data-daughters="aa">
+        <path d="M250 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M250 436 L227 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M250 436 L273 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="360" y="415" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="fds-octad-2-product-3-duplication" data-parent="A" data-daughters="AA">
+        <path d="M360 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M360 436 L337 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M360 436 L383 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="470" y="415" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="fds-octad-2-product-4-duplication" data-parent="A" data-daughters="AA">
+        <path d="M470 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M470 436 L447 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M470 436 L493 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <path d="M63 489 C78 487 77 465 99 462 C208 456 423 460 500 461 C544 460 552 485 544 506 C539 524 522 528 501 528 L106 528 C81 526 80 502 63 499" fill="url(#ascus-wall)" stroke="#213547" stroke-width="2.4" />
+      <g id="fds-octad-2-spore-1" data-allele="a">
+        <path d="M100 497 C94 482 105 470 118 470 C134 471 140 487 135 503 C131 517 119 521 107 514 C102 510 101 504 100 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M105 487 C106 477 113 475 120 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="117" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-2-spore-2" data-allele="a">
+        <path d="M146 497 C140 482 151 470 164 470 C180 471 186 487 181 503 C177 517 165 521 153 514 C148 510 147 504 146 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M151 487 C152 477 159 475 166 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="163" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-2-spore-3" data-allele="a">
+        <path d="M210 497 C204 482 215 470 228 470 C244 471 250 487 245 503 C241 517 229 521 217 514 C212 510 211 504 210 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M215 487 C216 477 223 475 230 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="227" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-2-spore-4" data-allele="a">
+        <path d="M256 497 C250 482 261 470 274 470 C290 471 296 487 291 503 C287 517 275 521 263 514 C258 510 257 504 256 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M261 487 C262 477 269 475 276 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="273" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="fds-octad-2-spore-5" data-allele="A">
+        <path d="M320 497 C314 482 325 470 338 470 C354 471 360 487 355 503 C351 517 339 521 327 514 C322 510 321 504 320 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M325 487 C326 477 333 475 340 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="337" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-2-spore-6" data-allele="A">
+        <path d="M366 497 C360 482 371 470 384 470 C400 471 406 487 401 503 C397 517 385 521 373 514 C368 510 367 504 366 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M371 487 C372 477 379 475 386 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="383" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-2-spore-7" data-allele="A">
+        <path d="M430 497 C424 482 435 470 448 470 C464 471 470 487 465 503 C461 517 449 521 437 514 C432 510 431 504 430 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M435 487 C436 477 443 475 450 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="447" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="fds-octad-2-spore-8" data-allele="A">
+        <path d="M476 497 C470 482 481 470 494 470 C510 471 516 487 511 503 C507 517 495 521 483 514 C478 510 477 504 476 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M481 487 C482 477 489 475 496 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="493" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <path d="M98 536 V541 H182 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M208 536 V541 H292 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M318 536 V541 H402 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M428 536 V541 H512 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="305" y="642" font-size="25" text-anchor="middle" fill="#213547" font-weight="bold">Possible spore patterns</text>
+    <text x="305" y="674" font-size="24" text-anchor="middle" fill="#213547" font-weight="normal">with first-division segregation</text>
+    <path d="M80 653 H42 V334 H64 M42 494 H64" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <path d="M42 334 L64 334" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <text x="795" y="81" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">A and a separated</text>
+    <text x="1015" y="81" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">A and a separated</text>
+    <g id="sds-meiotic-product-1" data-allele="A" data-centromere-ancestry="green">
+      <path d="M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M740 168 C736 173 744 185 740 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M740 168 C736 173 744 185 740 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M740 168 C736 173 744 185 740 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="740" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="740" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="sds-meiotic-product-2" data-allele="a" data-centromere-ancestry="green">
+      <path d="M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M850 168 C846 173 854 185 850 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M850 168 C846 173 854 185 850 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M850 168 C846 173 854 185 850 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="850" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="850" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <g id="sds-meiotic-product-3" data-allele="A" data-centromere-ancestry="purple">
+      <path d="M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M960 168 C956 173 964 185 960 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M960 168 C956 173 964 185 960 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M960 168 C956 173 964 185 960 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="960" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="960" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="sds-meiotic-product-4" data-allele="a" data-centromere-ancestry="purple">
+      <path d="M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1070 168 C1066 173 1074 185 1070 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1070 168 C1066 173 1074 185 1070 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M1070 168 C1066 173 1074 185 1070 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="1070" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="1070" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <path d="M757 126 L833 126" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <path d="M977 126 L1053 126" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <text x="905" y="266" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">Mitosis</text>
+    <g id="sds-octad-1" data-octad="AAaaAAaa" data-products="AaAa">
+      <g id="sds-octad-1-product-1-duplication" data-parent="A" data-daughters="AA">
+        <path d="M740 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M740 276 L717 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M740 276 L763 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <g id="sds-octad-1-product-2-duplication" data-parent="a" data-daughters="aa">
+        <path d="M850 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M850 276 L827 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M850 276 L873 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <g id="sds-octad-1-product-3-duplication" data-parent="A" data-daughters="AA">
+        <path d="M960 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M960 276 L937 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M960 276 L983 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <g id="sds-octad-1-product-4-duplication" data-parent="a" data-daughters="aa">
+        <path d="M1070 246 V276" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M1070 276 L1047 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M1070 276 L1093 297" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <path d="M663 329 C678 327 677 305 699 302 C808 296 1023 300 1100 301 C1144 300 1152 325 1144 346 C1139 364 1122 368 1101 368 L706 368 C681 366 680 342 663 339" fill="url(#ascus-wall)" stroke="#213547" stroke-width="2.4" />
+      <g id="sds-octad-1-spore-1" data-allele="A">
+        <path d="M700 337 C694 322 705 310 718 310 C734 311 740 327 735 343 C731 357 719 361 707 354 C702 350 701 344 700 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M705 327 C706 317 713 315 720 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="717" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-1-spore-2" data-allele="A">
+        <path d="M746 337 C740 322 751 310 764 310 C780 311 786 327 781 343 C777 357 765 361 753 354 C748 350 747 344 746 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M751 327 C752 317 759 315 766 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="763" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-1-spore-3" data-allele="a">
+        <path d="M810 337 C804 322 815 310 828 310 C844 311 850 327 845 343 C841 357 829 361 817 354 C812 350 811 344 810 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M815 327 C816 317 823 315 830 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="827" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-1-spore-4" data-allele="a">
+        <path d="M856 337 C850 322 861 310 874 310 C890 311 896 327 891 343 C887 357 875 361 863 354 C858 350 857 344 856 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M861 327 C862 317 869 315 876 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="873" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-1-spore-5" data-allele="A">
+        <path d="M920 337 C914 322 925 310 938 310 C954 311 960 327 955 343 C951 357 939 361 927 354 C922 350 921 344 920 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M925 327 C926 317 933 315 940 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="937" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-1-spore-6" data-allele="A">
+        <path d="M966 337 C960 322 971 310 984 310 C1000 311 1006 327 1001 343 C997 357 985 361 973 354 C968 350 967 344 966 337 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M971 327 C972 317 979 315 986 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="983" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-1-spore-7" data-allele="a">
+        <path d="M1030 337 C1024 322 1035 310 1048 310 C1064 311 1070 327 1065 343 C1061 357 1049 361 1037 354 C1032 350 1031 344 1030 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M1035 327 C1036 317 1043 315 1050 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1047" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-1-spore-8" data-allele="a">
+        <path d="M1076 337 C1070 322 1081 310 1094 310 C1110 311 1116 327 1111 343 C1107 357 1095 361 1083 354 C1078 350 1077 344 1076 337 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M1081 327 C1082 317 1089 315 1096 316" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1093" y="343" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <path d="M698 376 V381 H782 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M808 376 V381 H892 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M918 376 V381 H1002 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1028 376 V381 H1112 V376" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="905" y="403" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">or</text>
+    <g id="sds-octad-2" data-octad="aaAAAAaa" data-products="aAAa">
+      <text x="740" y="415" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="sds-octad-2-product-1-duplication" data-parent="a" data-daughters="aa">
+        <path d="M740 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M740 436 L717 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M740 436 L763 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="850" y="415" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="sds-octad-2-product-2-duplication" data-parent="A" data-daughters="AA">
+        <path d="M850 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M850 436 L827 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M850 436 L873 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="960" y="415" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="sds-octad-2-product-3-duplication" data-parent="A" data-daughters="AA">
+        <path d="M960 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M960 436 L937 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M960 436 L983 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="1070" y="415" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="sds-octad-2-product-4-duplication" data-parent="a" data-daughters="aa">
+        <path d="M1070 426 V436" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M1070 436 L1047 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M1070 436 L1093 457" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <path d="M663 489 C678 487 677 465 699 462 C808 456 1023 460 1100 461 C1144 460 1152 485 1144 506 C1139 524 1122 528 1101 528 L706 528 C681 526 680 502 663 499" fill="url(#ascus-wall)" stroke="#213547" stroke-width="2.4" />
+      <g id="sds-octad-2-spore-1" data-allele="a">
+        <path d="M700 497 C694 482 705 470 718 470 C734 471 740 487 735 503 C731 517 719 521 707 514 C702 510 701 504 700 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M705 487 C706 477 713 475 720 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="717" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-2-spore-2" data-allele="a">
+        <path d="M746 497 C740 482 751 470 764 470 C780 471 786 487 781 503 C777 517 765 521 753 514 C748 510 747 504 746 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M751 487 C752 477 759 475 766 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="763" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-2-spore-3" data-allele="A">
+        <path d="M810 497 C804 482 815 470 828 470 C844 471 850 487 845 503 C841 517 829 521 817 514 C812 510 811 504 810 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M815 487 C816 477 823 475 830 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="827" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-2-spore-4" data-allele="A">
+        <path d="M856 497 C850 482 861 470 874 470 C890 471 896 487 891 503 C887 517 875 521 863 514 C858 510 857 504 856 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M861 487 C862 477 869 475 876 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="873" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-2-spore-5" data-allele="A">
+        <path d="M920 497 C914 482 925 470 938 470 C954 471 960 487 955 503 C951 517 939 521 927 514 C922 510 921 504 920 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M925 487 C926 477 933 475 940 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="937" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-2-spore-6" data-allele="A">
+        <path d="M966 497 C960 482 971 470 984 470 C1000 471 1006 487 1001 503 C997 517 985 521 973 514 C968 510 967 504 966 497 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M971 487 C972 477 979 475 986 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="983" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-2-spore-7" data-allele="a">
+        <path d="M1030 497 C1024 482 1035 470 1048 470 C1064 471 1070 487 1065 503 C1061 517 1049 521 1037 514 C1032 510 1031 504 1030 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M1035 487 C1036 477 1043 475 1050 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1047" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-2-spore-8" data-allele="a">
+        <path d="M1076 497 C1070 482 1081 470 1094 470 C1110 471 1116 487 1111 503 C1107 517 1095 521 1083 514 C1078 510 1077 504 1076 497 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M1081 487 C1082 477 1089 475 1096 476" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1093" y="503" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <path d="M698 536 V541 H782 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M808 536 V541 H892 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M918 536 V541 H1002 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1028 536 V541 H1112 V536" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="905" y="563" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">or</text>
+    <g id="sds-octad-3" data-octad="aaAAaaAA" data-products="aAaA">
+      <text x="740" y="575" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="sds-octad-3-product-1-duplication" data-parent="a" data-daughters="aa">
+        <path d="M740 586 V596" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M740 596 L717 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M740 596 L763 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="850" y="575" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="sds-octad-3-product-2-duplication" data-parent="A" data-daughters="AA">
+        <path d="M850 586 V596" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M850 596 L827 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M850 596 L873 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="960" y="575" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="sds-octad-3-product-3-duplication" data-parent="a" data-daughters="aa">
+        <path d="M960 586 V596" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M960 596 L937 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M960 596 L983 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="1070" y="575" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="sds-octad-3-product-4-duplication" data-parent="A" data-daughters="AA">
+        <path d="M1070 586 V596" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M1070 596 L1047 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M1070 596 L1093 617" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <path d="M663 649 C678 647 677 625 699 622 C808 616 1023 620 1100 621 C1144 620 1152 645 1144 666 C1139 684 1122 688 1101 688 L706 688 C681 686 680 662 663 659" fill="url(#ascus-wall)" stroke="#213547" stroke-width="2.4" />
+      <g id="sds-octad-3-spore-1" data-allele="a">
+        <path d="M700 657 C694 642 705 630 718 630 C734 631 740 647 735 663 C731 677 719 681 707 674 C702 670 701 664 700 657 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M705 647 C706 637 713 635 720 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="717" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-3-spore-2" data-allele="a">
+        <path d="M746 657 C740 642 751 630 764 630 C780 631 786 647 781 663 C777 677 765 681 753 674 C748 670 747 664 746 657 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M751 647 C752 637 759 635 766 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="763" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-3-spore-3" data-allele="A">
+        <path d="M810 657 C804 642 815 630 828 630 C844 631 850 647 845 663 C841 677 829 681 817 674 C812 670 811 664 810 657 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M815 647 C816 637 823 635 830 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="827" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-3-spore-4" data-allele="A">
+        <path d="M856 657 C850 642 861 630 874 630 C890 631 896 647 891 663 C887 677 875 681 863 674 C858 670 857 664 856 657 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M861 647 C862 637 869 635 876 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="873" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-3-spore-5" data-allele="a">
+        <path d="M920 657 C914 642 925 630 938 630 C954 631 960 647 955 663 C951 677 939 681 927 674 C922 670 921 664 920 657 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M925 647 C926 637 933 635 940 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="937" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-3-spore-6" data-allele="a">
+        <path d="M966 657 C960 642 971 630 984 630 C1000 631 1006 647 1001 663 C997 677 985 681 973 674 C968 670 967 664 966 657 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M971 647 C972 637 979 635 986 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="983" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-3-spore-7" data-allele="A">
+        <path d="M1030 657 C1024 642 1035 630 1048 630 C1064 631 1070 647 1065 663 C1061 677 1049 681 1037 674 C1032 670 1031 664 1030 657 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M1035 647 C1036 637 1043 635 1050 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1047" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-3-spore-8" data-allele="A">
+        <path d="M1076 657 C1070 642 1081 630 1094 630 C1110 631 1116 647 1111 663 C1107 677 1095 681 1083 674 C1078 670 1077 664 1076 657 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M1081 647 C1082 637 1089 635 1096 636" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1093" y="663" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <path d="M698 696 V701 H782 V696" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M808 696 V701 H892 V696" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M918 696 V701 H1002 V696" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1028 696 V701 H1112 V696" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="905" y="723" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">or</text>
+    <g id="sds-octad-4" data-octad="AAaaaaAA" data-products="AaaA">
+      <text x="740" y="735" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="sds-octad-4-product-1-duplication" data-parent="A" data-daughters="AA">
+        <path d="M740 746 V756" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M740 756 L717 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M740 756 L763 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="850" y="735" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="sds-octad-4-product-2-duplication" data-parent="a" data-daughters="aa">
+        <path d="M850 746 V756" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M850 756 L827 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M850 756 L873 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="960" y="735" font-size="28" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <g id="sds-octad-4-product-3-duplication" data-parent="a" data-daughters="aa">
+        <path d="M960 746 V756" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M960 756 L937 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M960 756 L983 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <text x="1070" y="735" font-size="28" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <g id="sds-octad-4-product-4-duplication" data-parent="A" data-daughters="AA">
+        <path d="M1070 746 V756" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M1070 756 L1047 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+        <path d="M1070 756 L1093 777" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+      </g>
+      <path d="M663 809 C678 807 677 785 699 782 C808 776 1023 780 1100 781 C1144 780 1152 805 1144 826 C1139 844 1122 848 1101 848 L706 848 C681 846 680 822 663 819" fill="url(#ascus-wall)" stroke="#213547" stroke-width="2.4" />
+      <g id="sds-octad-4-spore-1" data-allele="A">
+        <path d="M700 817 C694 802 705 790 718 790 C734 791 740 807 735 823 C731 837 719 841 707 834 C702 830 701 824 700 817 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M705 807 C706 797 713 795 720 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="717" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-4-spore-2" data-allele="A">
+        <path d="M746 817 C740 802 751 790 764 790 C780 791 786 807 781 823 C777 837 765 841 753 834 C748 830 747 824 746 817 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M751 807 C752 797 759 795 766 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="763" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-4-spore-3" data-allele="a">
+        <path d="M810 817 C804 802 815 790 828 790 C844 791 850 807 845 823 C841 837 829 841 817 834 C812 830 811 824 810 817 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M815 807 C816 797 823 795 830 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="827" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-4-spore-4" data-allele="a">
+        <path d="M856 817 C850 802 861 790 874 790 C890 791 896 807 891 823 C887 837 875 841 863 834 C858 830 857 824 856 817 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M861 807 C862 797 869 795 876 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="873" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-4-spore-5" data-allele="a">
+        <path d="M920 817 C914 802 925 790 938 790 C954 791 960 807 955 823 C951 837 939 841 927 834 C922 830 921 824 920 817 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M925 807 C926 797 933 795 940 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="937" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-4-spore-6" data-allele="a">
+        <path d="M966 817 C960 802 971 790 984 790 C1000 791 1006 807 1001 823 C997 837 985 841 973 834 C968 830 967 824 966 817 Z" fill="#7D438D" stroke="#7D438D" stroke-width="1.5" />
+        <path d="M971 807 C972 797 979 795 986 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="983" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">a</text>
+      </g>
+      <g id="sds-octad-4-spore-7" data-allele="A">
+        <path d="M1030 817 C1024 802 1035 790 1048 790 C1064 791 1070 807 1065 823 C1061 837 1049 841 1037 834 C1032 830 1031 824 1030 817 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M1035 807 C1036 797 1043 795 1050 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1047" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <g id="sds-octad-4-spore-8" data-allele="A">
+        <path d="M1076 817 C1070 802 1081 790 1094 790 C1110 791 1116 807 1111 823 C1107 837 1095 841 1083 834 C1078 830 1077 824 1076 817 Z" fill="#347A40" stroke="#347A40" stroke-width="1.5" />
+        <path d="M1081 807 C1082 797 1089 795 1096 796" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" />
+        <text x="1093" y="823" font-size="29" text-anchor="middle" fill="white" font-weight="bold">A</text>
+      </g>
+      <path d="M698 856 V861 H782 V856" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M808 856 V861 H892 V856" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M918 856 V861 H1002 V856" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1028 856 V861 H1112 V856" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="905" y="887" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">Possible spore patterns</text>
+    <text x="905" y="915" font-size="23" text-anchor="middle" fill="#213547" font-weight="normal">with second-division segregation</text>
+    <path d="M665 895 H635 V334 H664 M635 494 H664 M635 654 H664 M635 814 H664" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <path d="M635 334 L664 334" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <path d="M635 494 L664 494" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <path d="M635 654 L664 654" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <text x="305" y="754" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Each branch gives an adjacent pair.</text>
+    <text x="305" y="786" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">Alternative product orders arise</text>
+    <text x="305" y="814" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">during meiosis; mitosis keeps the order.</text>
+  </g>
+</svg>

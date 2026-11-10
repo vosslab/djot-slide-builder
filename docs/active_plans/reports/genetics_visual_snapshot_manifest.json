@@ -1,0 +1,321 @@
+[
+  {
+    "source": "_temp/genetics_visual_renewal/foundations/BRIEFS.md",
+    "source_sha256": "1ab8c213a6c5138459b83bbeedbc049dafbbab826b96866aae6a44e9c7f79d7e",
+    "saved": "docs/active_plans/workstreams/genetics_visual_foundations.md",
+    "saved_sha256": "4fd0f13c008e79f079c09eca4015559f0d1b8b80f28d75719019955c84907ddf"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/foundations/EVIDENCE.md",
+    "source_sha256": "9817bae0ee1f6b174075e138cfe409bcd21e1af6072fd2030d2fcab1e15aef81",
+    "saved": "docs/active_plans/reports/genetics_visual_foundations_evidence.md",
+    "saved_sha256": "3abae9c3844b9a14861330156fd5b30162c39d6d96b4ed2bb71f20a8c3cc256b"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/foundations/classification.csv",
+    "source_sha256": "e8241704e63c40f77e4b19692a507840bb946cae25ebcc905ad7de0df7106c73",
+    "saved": "docs/active_plans/reports/genetics_visual_foundations_classification.csv",
+    "saved_sha256": "e8241704e63c40f77e4b19692a507840bb946cae25ebcc905ad7de0df7106c73"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/foundations/SOURCE_CONTEXTS.md",
+    "source_sha256": "ea29ab09bccc906a9f5379c3b24c451a9878faf91f00181358349728c9d88b22",
+    "saved": "docs/active_plans/reports/genetics_visual_foundations_source_contexts.md",
+    "saved_sha256": "9e6903fde7e4143cfe06dd5ce26d6585cd8d5ebbb9a64c386c6abda86718c700"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/foundations/shared_consumers.csv",
+    "source_sha256": "cf58c036e94eb01c4c9ffe26bf611968117de023a81b42d9de9061efca633201",
+    "saved": "docs/active_plans/reports/genetics_visual_foundations_shared_consumers.csv",
+    "saved_sha256": "cf58c036e94eb01c4c9ffe26bf611968117de023a81b42d9de9061efca633201"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/foundations/coverage.json",
+    "source_sha256": "a81191e88787107ed283d378aad0f5407e3617901869a139639bac2bfd2da19c",
+    "saved": "docs/active_plans/reports/genetics_visual_foundations_coverage.json",
+    "saved_sha256": "7f20f56a79e3f923203558ab2ae59c999464ec416fefdf12cb7451bf9528fac9"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/BRIEFS.md",
+    "source_sha256": "f5015a3a2efb4c0b73a40fca041527d5ddaaadda35df4fa6f25bd05d083eb99b",
+    "saved": "docs/active_plans/workstreams/genetics_visual_inheritance.md",
+    "saved_sha256": "e1b21194ab64bd09740fdba36f08c17ffe097013c1f087d17021438f00dc2fe5"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/EVIDENCE.md",
+    "source_sha256": "f1bdf83ac3b7a3a152ad7aa29bf8423089fbc77f4a93cab8ab4bfb8249f30cfd",
+    "saved": "docs/active_plans/reports/genetics_visual_inheritance_evidence.md",
+    "saved_sha256": "c41c15deb54c41e712cccb3de8827433993efe5e9ac43058dae4e28306b06844"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/classification.csv",
+    "source_sha256": "1b7e9c21452b4faf40122976216db913ecc10c9787aad446150fb847ca0f49ac",
+    "saved": "docs/active_plans/reports/genetics_visual_inheritance_classification.csv",
+    "saved_sha256": "1b7e9c21452b4faf40122976216db913ecc10c9787aad446150fb847ca0f49ac"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/summary.json",
+    "source_sha256": "0eab1cf51e728074b4259379a84ba67019e288dfde79fe8f5790fafe3a323ff6",
+    "saved": "docs/active_plans/reports/genetics_visual_inheritance_summary.json",
+    "saved_sha256": "2348a4715d2160f517b808ed8d3e30e8d83253eddbb13cd0f9adbf9e9010f088"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/M2_PEA_BRIEF.md",
+    "source_sha256": "f4433b7f528f1a563231f63856f99b1f9272e96bde8e367b086273d2c90ab688",
+    "saved": "docs/active_plans/reports/genetics_visual_inheritance_m2_pea_brief.md",
+    "saved_sha256": "2d1c98f8d85b390eec90b8b28c782fb6e322354f7cf870a0232b97004586e826"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/SOURCE_RECOVERY.md",
+    "source_sha256": "2b61b2016b7557eb85eb85f8ffd2fa06d063d590ff2de3d96bee52343522391d",
+    "saved": "docs/active_plans/reports/genetics_visual_inheritance_source_recovery.md",
+    "saved_sha256": "e511fce1242a7f0b929285713d6c1aa44325c475bac9d4a6031177fdfa6e55e8"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/inheritance/physical_ownership.csv",
+    "source_sha256": "4f20672018e70f8c1ef4373d7aff1a771cd14678a4d25e133cc2b31e49d6699d",
+    "saved": "docs/active_plans/reports/genetics_visual_inheritance_physical_ownership.csv",
+    "saved_sha256": "4f20672018e70f8c1ef4373d7aff1a771cd14678a4d25e133cc2b31e49d6699d"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/BRIEFS.md",
+    "source_sha256": "7202756f670c4b8ee689ea7fa8c2487b3c77bba63a89777be870c2c6cef2cf60",
+    "saved": "docs/active_plans/workstreams/genetics_visual_linkage.md",
+    "saved_sha256": "b188041174217d0c8991efdfadfecb1e157ef91c86c2fcece6c937e27ade4f0b"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/EVIDENCE.md",
+    "source_sha256": "b5d4976ae1b66bf97bf1cd39ee23d4c4e3f2abd17812e2c1ffa521cc7a6978f9",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_evidence.md",
+    "saved_sha256": "a63e829e4cf568ec1d80a1eca9a70775fc0c87d50e27bd5b22f59e86b29371f8"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/classification.csv",
+    "source_sha256": "851307df77608981cba1560ff9ca416101145e88bb7bff58b00cce6856c56d7e",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_classification.csv",
+    "saved_sha256": "851307df77608981cba1560ff9ca416101145e88bb7bff58b00cce6856c56d7e"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/USE_ANCHORS.md",
+    "source_sha256": "53c0a221044de97b123e265345fde499b7e3c15b4bb6859126566d5ea902e1c7",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_use_anchors.md",
+    "saved_sha256": "3616a9847f2ed9359d3f586bca6edd5bd8ab01eb118e2ba6a375c93d995c5f7b"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/DUPLICATES.md",
+    "source_sha256": "13ab062f5f37ccd6299019a93a9681c743f78bf41feef3b5fae622ae20e5f29d",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_duplicates.md",
+    "saved_sha256": "2120f4d44f31a669d0e3c34646041d7dcec324e6e592f5e025746924ab9c1d8c"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/assets.txt",
+    "source_sha256": "7d99739c48164215bafedee7fcce119b2e24fe96a0b98ee1308843f95d535917",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_assets.md",
+    "saved_sha256": "dab26ab0e9bafce0cb964fdcc2d04e3c2488f57c9310446da4d75c01dfd66f5c"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/summary.json",
+    "source_sha256": "278525c9508db91a106bf42212b8ec4aaea5dc03b72bbe48983bd35a007aad65",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_summary.json",
+    "saved_sha256": "9bd91acd0f52a5e1be32940534af105da7e5e4b93f40097563a62de5a149be15"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/linkage/baseline_sources.json",
+    "source_sha256": "86e2225919b3893036cb424c830c7e29e1df1597ea3120b53e07bdd962d9eeee",
+    "saved": "docs/active_plans/reports/genetics_visual_linkage_baseline_sources.json",
+    "saved_sha256": "d581c9dc2fdb038328508e2565be89e1fb285d0f8aaa1c6c0835ee66828d3bdb"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/variation/BRIEFS.md",
+    "source_sha256": "e5cd01c3348b5de9e67f7f7b96f579fe19b9e5abd2ff9c8be9efbccd79425e10",
+    "saved": "docs/active_plans/workstreams/genetics_visual_variation.md",
+    "saved_sha256": "d1cd3a92a99bd33dd655d656126f49d10c3937de6c25d2d67e717534ba221ef6"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/variation/EVIDENCE.md",
+    "source_sha256": "ec2160ed6e46b922f487b83eff97e3d3ef73612361e99300c338159d370086a9",
+    "saved": "docs/active_plans/reports/genetics_visual_variation_evidence.md",
+    "saved_sha256": "72d27c14b06766e3b5c088dc190dcf7d211568d38be5ce89f5649868707bb2fc"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/variation/classification.csv",
+    "source_sha256": "d5e0c971c6523e19c2daf1ac4e232d2c510949a62c343d1c4c852966fb77fb7c",
+    "saved": "docs/active_plans/reports/genetics_visual_variation_classification.csv",
+    "saved_sha256": "d5e0c971c6523e19c2daf1ac4e232d2c510949a62c343d1c4c852966fb77fb7c"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/variation/assets.txt",
+    "source_sha256": "bcfe95bee719672808b6a24145ee526f1d7d1d75dfcf99576071060f7b4f4a53",
+    "saved": "docs/active_plans/reports/genetics_visual_variation_assets.md",
+    "saved_sha256": "385078652a15d73193b49f6398bffdf51f252a5f34e29af766dacd6ce320f92a"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/variation/coverage.json",
+    "source_sha256": "8b4ce3e9b3511ca11bef5eba647e35aed3550c991c29d860abb6a1bc0f30bb7f",
+    "saved": "docs/active_plans/reports/genetics_visual_variation_coverage.json",
+    "saved_sha256": "d13f28e748373f07dac6e4cc00f42c629ad92170b18bf055b639381164043ab1"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/variation/source_checks.json",
+    "source_sha256": "ee70657731b9ded63453fd967ae81e08caecefc52eff2df6dacced81a269bd69",
+    "saved": "docs/active_plans/reports/genetics_visual_variation_source_checks.json",
+    "saved_sha256": "840dd61a590e3336fb89d46d5835b65a75c572de0ec28b98daa5d4bf3a2f475d"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/BRIEFS.md",
+    "source_sha256": "a90e0c6441aedbcfc01eb81398a5f59c8a421bbab25446167e3ac9b48f9186f1",
+    "saved": "docs/active_plans/workstreams/genetics_visual_phylogenetics.md",
+    "saved_sha256": "92446c6e4b7f67d2d7fe9d13373779f3e45593c13b7ddc5ece4951778070a19c",
+    "saved_edit": "D2 latest instructor clarification preserves made-up-species manual averaging and worked answers; original fourth rotation order corrected to XZYW."
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/EVIDENCE.md",
+    "source_sha256": "59e008030bbb174164aa779d586b536cfe50a12a05c482ab9853035d00bff924",
+    "saved": "docs/active_plans/reports/genetics_visual_phylogenetics_evidence.md",
+    "saved_sha256": "5f40a9b428ae9dc224987b86b3783d6938cc9cf0317fc0ef8368e5a310115bc0"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/classification.csv",
+    "source_sha256": "5e9d622fbac27b6dabe102d34a632f9a2c033898a27ec2a8bec8744be7d8fefa",
+    "saved": "docs/active_plans/reports/genetics_visual_phylogenetics_classification.csv",
+    "saved_sha256": "5e9d622fbac27b6dabe102d34a632f9a2c033898a27ec2a8bec8744be7d8fefa"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/asset_index.txt",
+    "source_sha256": "f300befc9e0030eee88c511e363ee1818057f6b80e5571ccfd2888935bfdbf32",
+    "saved": "docs/active_plans/reports/genetics_visual_phylogenetics_asset_index.md",
+    "saved_sha256": "ca7da4695a737e510a535566a6d64012ba9e6b51f046ef1515a9a27108289e6a"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/shared_sources.json",
+    "source_sha256": "aee81bcafff9ee2a58ba9f035dd10fc0a994b910bd05308e357ab86d33c67250",
+    "saved": "docs/active_plans/reports/genetics_visual_phylogenetics_shared_sources.json",
+    "saved_sha256": "fedc2fa53f32b81f05033487cc9d9ffa3a9f363baf117833e2b7e8b7e838976e"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/coverage.json",
+    "source_sha256": "30ae44fae91b1e2e3bf7c97c127e45c82c536a34fa924afefcdeabed418d382f",
+    "saved": "docs/active_plans/reports/genetics_visual_phylogenetics_coverage.json",
+    "saved_sha256": "4d34317ea1f3d4f99b4917424849daea80edd89e2826bf53f862bde7ec3d736c"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/phylogenetics/five_taxa_check.json",
+    "source_sha256": "182925f3fe31ed5d55d6fce3e9206976548c42c9193becd827603ae5688cea49",
+    "saved": "docs/active_plans/reports/genetics_visual_phylogenetics_five_taxa_check.json",
+    "saved_sha256": "3da2ed849c12d815853143c908153592c33b4364b071b9b97fbde7ae75ab2fd0"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/BRIEFS.md",
+    "source_sha256": "b62fe1f0be3ddaecb8e5d5f10816cb34603bc12400192d11720475dd3bfb0cf7",
+    "saved": "docs/active_plans/workstreams/genetics_visual_population.md",
+    "saved_sha256": "52e97f51d80c4ceac0299c7ba253033d05016d499d17db243c8dba26359372e1"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/EVIDENCE.md",
+    "source_sha256": "92a3c31b10fc5d071b41c795984e5cc4752369352f88373e6dc787f34949c034",
+    "saved": "docs/active_plans/reports/genetics_visual_population_evidence.md",
+    "saved_sha256": "65763180af916ac36e6af2eae39232d22d4952f793e3163066f78b9ee189686f"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/classification.csv",
+    "source_sha256": "6ce52601d74cd72c8b111a7833e0bd2ec4fb01d9c6950b8a104a4d5aa1b9ec28",
+    "saved": "docs/active_plans/reports/genetics_visual_population_classification.csv",
+    "saved_sha256": "6ce52601d74cd72c8b111a7833e0bd2ec4fb01d9c6950b8a104a4d5aa1b9ec28"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/shared_sources.txt",
+    "source_sha256": "d897d9da6d939c36e3e8e1427408f5874cfa357e6081e1f9ef30c1d5290f6afb",
+    "saved": "docs/active_plans/reports/genetics_visual_population_shared_sources.md",
+    "saved_sha256": "75918d9390b72578c311e649a924f4be223a5834404c17211889097cefc33f21"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/coverage.txt",
+    "source_sha256": "ed9d2ed17e931814ce0f75211aff5b32b73e919d701dced4e4b75c9d015beb80",
+    "saved": "docs/active_plans/reports/genetics_visual_population_coverage.md",
+    "saved_sha256": "1896e3de2c69afb771a217f1da3a4acfaf28499d6c20888be6e23b093a3d34d0"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/uses.txt",
+    "source_sha256": "fdb150c2580e027ce4c42e52ad86caeec7fdea855ed10900aa6c777a1803322b",
+    "saved": "docs/active_plans/reports/genetics_visual_population_uses.md",
+    "saved_sha256": "fd3a6cd622d3aa86d614c87369014f3f64e72a9f0ab058c752f58555428088d5"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/drift_activity_data.csv",
+    "source_sha256": "d6311563f5ad3bf544413e7083ba9d90425a687dd229fe34caff2712afd41e2d",
+    "saved": "docs/active_plans/reports/genetics_visual_population_drift_activity_data.csv",
+    "saved_sha256": "d6311563f5ad3bf544413e7083ba9d90425a687dd229fe34caff2712afd41e2d"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/population/original_odp_text.txt",
+    "source_sha256": "955f7f83fdf32e2fb571673eb3c1e483d59dadfef386c7b1070dd3ed51b66530",
+    "saved": "docs/active_plans/reports/genetics_visual_population_original_odp_text.md",
+    "saved_sha256": "958ea55375734ec8352d81b5c5227c891dc672c50bbd0b003584bbcd1510e69a"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_electrophoresis/HANDOFF.md",
+    "source_sha256": "a539b7732db24560435197d0bda94997ff38ee59d5709c544d3577ff2d03b691",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_electrophoresis_handoff.md",
+    "saved_sha256": "0f9a38df62f93642e8de4bb0ca9146572813d33e681225278b7f47c1b24ab5dd"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_electrophoresis/verification.json",
+    "source_sha256": "bc6d67651b63618f5bab558ea82795906df5a9bec02ff7db549a9fb5982e33ee",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_electrophoresis_verification.json",
+    "saved_sha256": "8da192ea5514e08e5a769417dadfa5e2f9f9b8078e5fb3d13a8bc21bca5b0918"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_peas/HANDOFF.md",
+    "source_sha256": "41ff2b357d94ed8a3093629c0b2907866cf4073f43a73784292ecc781a88dd21",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_peas_handoff.md",
+    "saved_sha256": "5f997129bedc4c34620d2dfad0a09e2dd296e636fa2b91df8ad15efc6ffd3a62"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_linkage/HANDOFF.md",
+    "source_sha256": "e320f5ebe629b537e2462fe319af0e6e6c6b6bda09804b9f23e19a37641d3196",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_linkage_handoff.md",
+    "saved_sha256": "84b65ff74803fdd7a2e012bfe5551b5dcaf64aadd9241a7825ca23a530aaa233"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_linkage/verification.json",
+    "source_sha256": "c880c2fa4bb44fb7061aae4a9b83c5635ff48b39fb3de190d74c6e6699ef4329",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_linkage_verification.json",
+    "saved_sha256": "a15cde8f0939ce518d60985b2f49dc3471b456a42f16b5fa4b9adc4b2f22bb3b"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_deletion/HANDOFF.md",
+    "source_sha256": "89c5752d50021a7c02906a0c65f587b23e7b1920eaa4d83786ed99fcd25a8277",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_deletion_handoff.md",
+    "saved_sha256": "436275bb135beec6b957ae1897d256a99a9b4b7b43b3fcc2a55750d767268a11"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_deletion/checks.txt",
+    "source_sha256": "8b051b963945d92c26427318a21458f8300194f52e82af291a94350d4791220f",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_deletion_checks.md",
+    "saved_sha256": "268a8f4798117f68ca1eda31e06496f8677e5d85e9bc36442f1e449657957fdd"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_tree_rotation/HANDOFF.md",
+    "source_sha256": "bf701e9bbdd2a3c645b4e9cbaff2d0d9270b034c118ee9ca6f3358189f0545ff",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_tree_rotation_handoff.md",
+    "saved_sha256": "6cf5c98940c98a6a9543e691ec37d2b2672e9f815a3f662bede1d7aba074fa84"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_tree_rotation/verification.json",
+    "source_sha256": "5161501b51382fd9e99b66c48af1f98c7383f61a3aa524be6cf27b87bbfab18d",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_tree_rotation_verification.json",
+    "saved_sha256": "d325cc1617db95d3ef39444d3fc314da7652aeffe04063340201b6cf462eb228"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_deletion_layout_fix/HANDOFF.md",
+    "source_sha256": "96028cd8ae37fdbea797665b7ec2923e8f62d0e0ed8e55937c6c97f66c0c3108",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_deletion_layout_fix_handoff.md",
+    "saved_sha256": "ab5f3f1dbc5cf0ef6bb29230eedeab047b667efbaf83411912c37f05e67addba"
+  },
+  {
+    "source": "_temp/genetics_visual_renewal/m2_deletion_layout_fix/checks.txt",
+    "source_sha256": "16040250fd67bdeefe09d8a0d8130375374964c8279fb8b672dd5764d15600cf",
+    "saved": "docs/active_plans/reports/genetics_visual_m2_deletion_layout_fix_checks.md",
+    "saved_sha256": "9d3903384e2a544c5a205aad1cbd69138e6af798f3d5e498e4293f046ca5abd9"
+  }
+]

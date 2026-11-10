@@ -43,7 +43,9 @@
 
 @body
 
-![Slide image 1](assets/lect11d-chromo_alter_1-deletions/image_001.png)
+![Slide image 1](assets/lect11d-chromo_alter_1-deletions/deletion_overview.drawn.svg)
+
+A deletion removes a chromosomal segment.
 
 === layout: one-panel
 
@@ -51,7 +53,9 @@
 
 @body
 
-![Slide image 2](assets/lect11d-chromo_alter_1-deletions/image_002.png)
+![Slide image 2](assets/lect11d-chromo_alter_1-deletions/duplication_overview.drawn.svg)
+
+A duplication repeats a segment.
 
 === layout: one-panel
 
@@ -59,7 +63,9 @@
 
 @body
 
-![Slide image 3](assets/lect11d-chromo_alter_1-deletions/image_003.png)
+![Slide image 3](assets/lect11d-chromo_alter_1-deletions/inversion_overview.drawn.svg)
+
+An inversion reverses a segment within a chromosome.
 
 === layout: one-panel
 
@@ -67,7 +73,9 @@
 
 @body
 
-![Slide image 4](assets/lect11d-chromo_alter_1-deletions/image_004.png)
+![Slide image 4](assets/lect11d-chromo_alter_1-deletions/translocation_overview.drawn.svg)
+
+A translocation moves a segment from one chromosome to a nonhomologous chromosome.
 
 === layout: one-panel
 
@@ -104,7 +112,9 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @left
 
-![Slide image 5](assets/lect11d-chromo_alter_1-deletions/image_005.png)
+![SNP arrays and comparative genomic hybridization workflows](assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg)
+
+![Original measured copy-number trace](assets/lect11d-chromo_alter_1-deletions/array_trace.evidence.png)
 
 @right
 
@@ -130,12 +140,11 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 # Deletions\: how do they happen?
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Deletions*
 
-@body
+@left
 
 - Deletions are generally harmful.
   - the larger the deletion the greater the harm.
@@ -143,18 +152,17 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
   - chromosome breakage in two places and fused together with piece left out.
   - ectopic recombination &#8211; recombination with repeated sequences on same chromosome.
 
-![Slide image 7](assets/lect11d-chromo_alter_1-deletions/image_001.png)
-
-=== layout: two-panels
-
-
-@left
-
-- *Ectopic Recombination*
-
 @right
 
-![Slide image 8](assets/lect11d-chromo_alter_1-deletions/image_008.png)
+![Deletion gene order](assets/lect11d-chromo_alter_1-deletions/deletion_overview.drawn.svg)
+
+=== layout: one-panel
+
+# *Ectopic Recombination*
+
+@body
+
+![Direct repeats recombine and release an acentric ring](assets/lect11d-chromo_alter_1-deletions/direct_repeat_loop.drawn.svg)
 
 === layout: section
 
@@ -166,7 +174,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @left
 
-![Slide image 9](assets/lect11d-chromo_alter_1-deletions/image_009.png)
+![Slide image 9](assets/lect11d-chromo_alter_1-deletions/deletion_parent.drawn.svg)
 
 @right
 
@@ -179,9 +187,9 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @body
 
-![Slide image 9](assets/lect11d-chromo_alter_1-deletions/image_009.png)
+![Slide image 9](assets/lect11d-chromo_alter_1-deletions/deletion_parent.drawn.svg)
 
-![Slide image 10](assets/lect11d-chromo_alter_1-deletions/image_010.png)
+![Slide image 10](assets/lect11d-chromo_alter_1-deletions/mutant_tester.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -201,7 +209,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @left
 
-![Slide image 12](assets/lect11d-chromo_alter_1-deletions/image_012.png)
+![Slide image 12](assets/lect11d-chromo_alter_1-deletions/deletion_progeny.drawn.svg)
 
 @right
 
@@ -220,7 +228,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 ![Slide image 13](assets/lect11d-chromo_alter_1-deletions/image_013.png)
 
-![Slide image 14](assets/lect11d-chromo_alter_1-deletions/image_014.png)
+![Slide image 14](assets/lect11d-chromo_alter_1-deletions/chromosome_complements.drawn.svg)
 
 === layout: two-panels
 
@@ -258,14 +266,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @body
 
-![Slide image 17](assets/lect11d-chromo_alter_1-deletions/image_017.png)
-
-=== layout: one-panel
-
-
-@body
-
-![Slide image 18](assets/lect11d-chromo_alter_1-deletions/image_018.png)
+![Slide image 17](assets/lect11d-chromo_alter_1-deletions/cytological_deletion_intervals.drawn.svg)
 
 === layout: two-panels
 
@@ -273,264 +274,436 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @left
 
-![Slide image 19](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
 @right
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+Six bands in a salivary gland chromosome of _Drosophila_ are shown, along with the extent of five deletions (Del 1-Del 5).
 
-=== layout: two-over-one-panels
-@replaceme
+Recessive alleles _a_, _b_, _c_, _d_, _e_, and _f_ are known to be in the region, but their order is unknown.
 
-# *Deletion Mapping*
+When the deletions are heterozygous with each allele, the results on the next slide are obtained.
 
-@top-left
+Infer the gene order.
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-@top-right
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-@bottom
-
-- [compare Del 1 and Del 2]{color=red}
-- [? \_ \_ \_ \_ \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: two-over-one-panels
-@replaceme
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@top-left
+@left
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-@top-right
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | \_ | \_ | \_ | \_ | \_ | \_ |
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+@right
 
-@bottom
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
 
-- [compare Del 1 and Del 2]{color=red}
-- [b \_ \_ \_ \_ \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
+- + = wildtype phenotype; the wildtype allele is present.
+- - = mutant phenotype; the wildtype allele is missing.
 
-=== layout: two-over-one-panels
-@replaceme
-
-# *Deletion Mapping*
-
-@top-left
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-@top-right
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-@bottom
-
-- [compare Del 2 and Del 3]{color=red}
-- [b \_ \_ ? \_ \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@body
+@left
 
-- [compare Del 2 and Del 3]{color=red}
-- [b \_ \_ e \_ \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | ? | \_ | \_ | \_ | \_ | \_ |
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+@right
 
-=== layout: two-over-one-panels
-@replaceme
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 1 and Del 2]{color=#D40000}]{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+| []{colspan=7 border=none} |
 
-# *Deletion Mapping*
 
-@top-left
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-@top-right
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-@bottom
-
-- [compare Del 3 and Del 4]{color=red}
-- [b ? \_ e ? \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@body
+@left
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | \_ | \_ | \_ | \_ | \_ |
 
-- [missing in Del 3]{color=#00A933}
-- [present in Del 4]{color=#00A933}
+@right
 
-- [compare Del 3 and Del 4]{color=red}
-- [b ? \_ e ? \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 1 and Del 2]{color=#D40000}]{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+| []{colspan=7 border=none} |
 
-=== layout: one-panel
-@replaceme
 
-# *Deletion Mapping*
-
-@body
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-- [missing in Del 3]{color=#00A933}
-- [present in Del 4]{color=#00A933}
-
-- [compare Del 3 and Del 4]{color=red}
-- [b a \_ e ? \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@body
+@left
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | \_ | \_ | ? | \_ | \_ |
 
-- [present in Del 3]{color=orange}
-- [missing in Del 4]{color=orange}
+@right
 
-- [compare Del 3 and Del 4]{color=red}
-- [b a \_ e ? \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 2 and Del 3]{color=#D40000}]{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+| []{colspan=7 border=none} |
 
-=== layout: one-panel
-@replaceme
 
-# *Deletion Mapping*
-
-@body
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-- [present in Del 3]{color=orange}
-- [missing in Del 4]{color=orange}
-
-- [compare Del 3 and Del 4]{color=red}
-- [b a \_ e d \_]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@body
+@left
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | \_ | \_ | [_e_]{color=#D40000} | \_ | \_ |
 
-- [missing in Del 4]{color=#00A933}
-- [present in Del 5]{color=#00A933}
+@right
 
-- [compare Del 4 and Del 5]{color=red}
-- [b a ? e d ?]{color=red}
-- [1 2 3 4 5 6]{color=red}
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 2 and Del 3]{color=#D40000}]{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+| []{colspan=7 border=none} |
 
-=== layout: one-panel
-@replaceme
 
-# *Deletion Mapping*
-
-@body
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-- [missing in Del 4]{color=#00A933}
-- [present in Del 5]{color=#00A933}
-
-- [compare Del 4 and Del 5]{color=red}
-- [b a c e d ?]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@body
+@left
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | ? | \_ | [_e_]{color=#D40000} | ? | \_ |
 
-- [present in Del 4]{color=orange}
-- [missing in Del 5]{color=orange}
+@right
 
-- [compare Del 4 and Del 5]{color=red}
-- [b a c e d ?]{color=red}
-- [1 2 3 4 5 6]{color=red}
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 3 and Del 4]{color=#D40000}]{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+| []{colspan=7 border=none} |
 
-=== layout: one-panel
-@replaceme
 
-# *Deletion Mapping*
-
-@body
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
-
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
-
-- [present in Del 4]{color=orange}
-- [missing in Del 5]{color=orange}
-
-- [compare Del 4 and Del 5]{color=red}
-- [b a c e d f]{color=red}
-- [1 2 3 4 5 6]{color=red}
-
-=== layout: two-over-one-panels
+=== layout: two-panels
 
 # *Deletion Mapping*
 
-@top-left
+@left
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_019.png)
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
-@top-right
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | ? | \_ | [_e_]{color=#D40000} | ? | \_ |
 
-![Slide image 20](assets/lect11d-chromo_alter_1-deletions/image_020.png)
+@right
 
-@bottom
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 3 and Del 4]{color=#D40000}]{colspan=7 border=none} |
+| [[missing in Del 3]{color=#007A00}]{colspan=7 border=none} |
+| [[present in Del 4]{color=#007A00}]{colspan=7 border=none} |
 
-- [final answer!]{color=red}
-- [b a c e d f]{color=red}
-- [1 2 3 4 5 6]{color=red}
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | \_ | [_e_]{color=#D40000} | ? | \_ |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 3 and Del 4]{color=#D40000}]{colspan=7 border=none} |
+| [[missing in Del 3]{color=#007A00}]{colspan=7 border=none} |
+| [[present in Del 4]{color=#007A00}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | \_ | [_e_]{color=#D40000} | ? | \_ |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 3 and Del 4]{color=#D40000}]{colspan=7 border=none} |
+| [[present in Del 3]{color=#B74300}]{colspan=7 border=none} |
+| [[missing in Del 4]{color=#B74300}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | \_ | [_e_]{color=#D40000} | [_d_]{color=#D40000} | \_ |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 3 and Del 4]{color=#D40000}]{colspan=7 border=none} |
+| [[present in Del 3]{color=#B74300}]{colspan=7 border=none} |
+| [[missing in Del 4]{color=#B74300}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | ? | [_e_]{color=#D40000} | [_d_]{color=#D40000} | ? |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 4 and Del 5]{color=#D40000}]{colspan=7 border=none} |
+| [[missing in Del 4]{color=#007A00}]{colspan=7 border=none} |
+| [[present in Del 5]{color=#007A00}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | [_c_]{color=#D40000} | [_e_]{color=#D40000} | [_d_]{color=#D40000} | ? |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 4 and Del 5]{color=#D40000}]{colspan=7 border=none} |
+| [[missing in Del 4]{color=#007A00}]{colspan=7 border=none} |
+| [[present in Del 5]{color=#007A00}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | [_c_]{color=#D40000} | [_e_]{color=#D40000} | [_d_]{color=#D40000} | ? |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 4 and Del 5]{color=#D40000}]{colspan=7 border=none} |
+| [[present in Del 4]{color=#B74300}]{colspan=7 border=none} |
+| [[missing in Del 5]{color=#B74300}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | [_c_]{color=#D40000} | [_e_]{color=#D40000} | [_d_]{color=#D40000} | [_f_]{color=#D40000} |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[compare Del 4 and Del 5]{color=#D40000}]{colspan=7 border=none} |
+| [[present in Del 4]{color=#B74300}]{colspan=7 border=none} |
+| [[missing in Del 5]{color=#B74300}]{colspan=7 border=none} |
+
+
+=== layout: two-panels
+
+# *Deletion Mapping*
+
+@left
+
+![Five deleted intervals aligned to chromosome positions 1 through 6](assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Position | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gene | [_b_]{color=#D40000} | [_a_]{color=#D40000} | [_c_]{color=#D40000} | [_e_]{color=#D40000} | [_d_]{color=#D40000} | [_f_]{color=#D40000} |
+
+@right
+
+{table-style=working column-widths="4,1,1,1,1,1,1" padding="0pt 4pt"}
+| Deletion | _a_ | _b_ | _c_ | _d_ | _e_ | _f_ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Del 1 | - | - | - | + | + | + |
+| Del 2 | - | + | - | + | + | + |
+| Del 3 | - | + | - | + | - | + |
+| Del 4 | + | + | - | - | - | + |
+| Del 5 | + | + | + | - | - | - |
+| [[final answer!]{color=#D40000}]{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+| []{colspan=7 border=none} |
+
 
 === layout: one-panel
 

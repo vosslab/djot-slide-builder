@@ -1,0 +1,5 @@
+# NJ label correction
+
+Source image024 values fully preserved in3native matrices and3unrooted SVG states. Source Min(Dij) is replaced by adjusted NJ score; AB is a legitimate minimum tie with CD, although raw AB7 is not smallest. Row sums A26/B20/C18/D24 yield QAB=QCD=-32; all other off-diagonal Q=-28. Reduced EC3, ED6, CD5 and final EF2 match source exactly. Independent checker: nj_check.json; parent independently corroborated.
+
+Primary source: Saitou and Nei1987, The neighbor-joining method: a new method for reconstructing phylogenetic trees, DOI10.1093/oxfordjournals.molbev.a040454; https://pubmed.ncbi.nlm.nih.gov/3447015/ (abstract explicitly minimizes total branch length, not raw pair distance). Gascuel and Steel2006, Neighbor-Joining Revealed, https://academic.oup.com/mbe/article-pdf/23/11/1997/4146478/msl072.pdf (indexed text states the Q criterion; direct PDF retrieval failed). No new branch lengths asserted in art. Parent authorized bounded clear-error terminology correction after arithmetic proof.

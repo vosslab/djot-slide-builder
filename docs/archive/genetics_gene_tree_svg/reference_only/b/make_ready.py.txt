@@ -1,0 +1,108 @@
+exec(open('_temp/genetics_visual_renewal/m3_phylogenetics/b/make_trials.py').read().split("# Exact qualitative")[0])
+# Topology graph encoded independently of layout.
+graph={'root':['ABCD','E'],'ABCD':['AB','CD'],'AB':['A','B'],'CD':['C','D']}
+coords={'root':(50,290),'ABCD':(170,190),'AB':(290,90),'CD':(290,290),'A':(430,40),'B':(430,140),'C':(430,240),'D':(430,340),'E':(430,440)}
+def edges(g,xy,diagonal=False):
+ out=''
+ for parent,kids in g.items():
+  x,y=xy[parent]
+  for child in kids:
+   xx,yy=xy[child];out+=f'<g data-edge="{parent}_{child}">'+path(f'M{x} {y} '+(f'L{xx} {yy}' if diagonal else f'V{yy} H{xx}'))+'</g>'
+ return out
+for variant in ('branch_points','mrca'):
+ body=edges(graph,coords)+''.join(t(450,coords[k][1]+8,k,30) for k in 'ABCDE')
+ if variant=='branch_points':
+  body+=f'<circle cx="290" cy="290" r="8" fill="{BLUE}"/>'+path('M295 290 L535 300',BLUE)+t(535,295,'Branch point',24,BLUE)
+  body+=path('M355 440 L535 410',PURPLE)+t(535,407,'Branch',24,PURPLE)
+ else:
+  for key,label,x,y in [('AB','MRCA(A, B)',520,100),('ABCD','MRCA(B, C)',520,200)]:
+   xx,yy=coords[key];body+=f'<circle cx="{xx}" cy="{yy}" r="9" fill="{BLUE}"/>'+path(f'M{xx} {yy} L{x-10} {y-8}',BLUE)+t(x,y,label,24,BLUE)
+ body+=t(30,500,'Branch lengths are schematic.',23)
+ svg('phy_b_'+variant,780,530,body,'Rooted tree (((A,B),(C,D)),E). AB and CD clades; E outgroup. '+('A-B MRCA nested within B-C MRCA.' if variant=='mrca' else 'Branch point marked on CD; branch marked leading to E.'))
+body=''
+for j,kind in enumerate(('horizontal','upright','diagonal')):
+ xy={}
+ if j==0:xy={k:(x*.62,y*.7+30) for k,(x,y) in coords.items()}
+ else:
+  xy={'A':(20,60),'B':(80,60),'C':(160,60),'D':(220,60),'E':(300,60),'AB':(50,150),'CD':(190,150),'ABCD':(120,240),'root':(220,340)}
+ body+=f'<g transform="translate({j*360+15} 0)">'
+ if j==1:
+  for parent,kids in graph.items():
+   x,y=xy[parent]
+   for child in kids:
+    xx,yy=xy[child];body+=path(f'M{x} {y} H{xx} V{yy}')
+ else:body+=edges(graph,xy,j==2)
+ for key in 'ABCDE':
+  x,y=xy[key];body+=t(x+(10 if j==0 else -8),y+(8 if j==0 else -16),key,29)
+ body+='</g>'
+body+=t(25,425,'Same clades: AB, CD, ABCD. E remains the outgroup.',27)+t(25,465,'Branch lengths are schematic.',23)
+svg('phy_b_three_forms',1100,500,body,'Three drawings of (((A,B),(C,D)),E), horizontal, upright rectangular, and diagonal.')
+g={'root':['PQRST','U'],'PQRST':['PQR','ST'],'PQR':['P','Q','R'],'ST':['S','T']}
+xy={'root':(40,300),'PQRST':(150,220),'PQR':(280,110),'ST':(280,330),'P':(440,40),'Q':(440,110),'R':(440,180),'S':(440,290),'T':(440,370),'U':(440,450)}
+body=f'<rect x="260" y="15" width="245" height="190" rx="20" fill="#FFF2C2"/>'+edges(g,xy)+''.join(t(465,xy[k][1]+8,k,30) for k in 'PQRSTU')+t(540,105,'Three branches',26)+t(540,140,'leave one node.',26)+t(25,520,'Unresolved branching order within P, Q, R.',25)
+svg('phy_b_polytomy',810,550,body,'Polytomy P Q R has three children, no binary resolution; sister clade ST and U outgroup. Lengths schematic.')
+# Metric problem tree: actual branch distances control x positions.
+xy={'root':(40,300),'ACD':(40+2.4*62,210),'AC':(40+5.5*62,100),'A':(40+8.7*62,45),'C':(40+8.7*62,155),'D':(40+8.7*62,265),'B':(40+8.7*62,375)}
+g={'root':['ACD','B'],'ACD':['AC','D'],'AC':['A','C']}
+body=edges(g,xy)+''.join(t(610,xy[k][1]+8,k,32) for k in 'ACDB')
+for x,y,s in [(435,33,'3.2'),(435,143,'3.2'),(260,88,'3.1'),(90,198,'2.4'),(355,253,'6.3'),(310,363,'8.7')]:body+=t(x,y,s,29)
+svg('phy_b_tree_matrix',680,420,body,'17.22 tree with AC tips3.2; AC stem3.1; D tip6.3; ACD stem2.4; B tip8.7. Leaf order A C D B.')
+for stage in ('pair','joined','complete'):
+ body=''.join(t(20,y+8,k,29) for y,k in [(60,'N.Wh.'),(160,'S.Wh.'),(300,'Blk.R')])+path('M160 60 H320 V160 H160',BLUE)+t(220,45,'2',29,BLUE)+t(220,145,'2',29,BLUE)
+ if stage!='pair':
+  body+=path('M320 110 H560 V300 H160',INK)+path('M560 205 H605',INK)+t(330,285,'5',29)
+  if stage=='complete':body+=t(425,95,'3',29)
+ svg('phy_b_rhino_'+stage,650,350,body,'Rhinoceros UPGMA stage '+stage+'. White rhino pair has branches2 each; black rhino branch5 and white-pair stem3 when revealed. Horizontal lengths metric.')
+# Parsimony preserves source ancestral sequences and explicitly highlights changes.
+body='';counts=[]
+for j,(tips,anc) in enumerate([(['AAG','AAA','GGA','AGA'],['AAA','AGA']),(['AAG','AGA','AAA','GGA'],['AAA','AAA'])]):
+ xoff=40+j*540; xy={'root':(225,35),'left':(105,145),'right':(365,145),'t0':(35,280),'t1':(175,280),'t2':(295,280),'t3':(435,280)};g={'root':['left','right'],'left':['t0','t1'],'right':['t2','t3']}; seq={'root':'AAA','left':anc[0],'right':anc[1],**{f't{i}':s for i,s in enumerate(tips)}}
+ body+=f'<g transform="translate({xoff} 0)">'
+ for parent,kids in g.items():
+  x,y=xy[parent]
+  for child in kids:
+   xx,yy=xy[child];body+=path(f'M{x} {y+15} V{y+45} H{xx} V{yy-30}',BLUE)
+   n=sum(a!=b for a,b in zip(seq[parent],seq[child]));counts.append(n)
+ for key,s in seq.items():
+  x,y=xy[key];par=next((p for p,ch in g.items() if key in ch),None)
+  for i,c in enumerate(s):body+=t(x-27+i*19,y,c,29,RED if par and c!=seq[par][i] else '#17643A')
+ body+='</g>'
+body+=t(110,345,'3 substitutions',29)+t(650,345,'4 substitutions',29)+t(40,395,'Red letters mark changes from the displayed ancestor. Lengths are schematic.',24)
+assert sum(counts[:6])==3 and sum(counts[6:])==4
+svg('phy_b_parsimony',1100,430,body,'Two source parsimony trees. Left3 substitutions; right4. Right terminal GGA differs twice from AAA. Ancestors preserved exactly.')
+# Primate numbered tree preserves the source pixel-derived coordinates and 20-to-0 axis.
+labels=['gibbon','orangutan','sumatran','gorilla','human','chimpanzee','bonobo']
+# Source asset007: x axis20=16, 0=361; source node x=16,77,212,254,325,289.
+xx=lambda x:35+(x-16)*2.0
+xy={k:(xx(361),45+i*70) for i,k in enumerate(labels)}
+xy.update({'1':(xx(16),185),'2':(xx(77),230),'3':(xx(212),320),'4':(xx(254),385),'5':(xx(325),430),'6':(xx(289),150)})
+g={'1':['gibbon','2'],'2':['6','3'],'6':['orangutan','sumatran'],'3':['gorilla','4'],'4':['human','5'],'5':['chimpanzee','bonobo']}
+body=edges(g,xy)
+for key in labels:body+=t(xx(361)+15,xy[key][1]+8,key,26)
+for key in '123456':
+ x,y=xy[key];body+=f'<circle cx="{x}" cy="{y}" r="15" fill="white" stroke="{BLUE}" stroke-width="2"/>'+t(x-7,y+8,key,23,BLUE)
+body+=path(f'M{xx(16)} 525 H{xx(361)}','#647482')
+for age in (20,15,10,5,0):
+ x=xx(361-age*17.25);body+=path(f'M{x} 518 V532','#647482')+t(x-10,560,age,24)
+body+=t(250,605,'Millions of years ago',27)
+svg('phy_b_primate_nodes',970,635,body,'Numbered source primate tree. Node positions preserve original unrounded graphical coordinates. Axis20to0 million years. Source tip labels and node numbers1to6 unchanged.')
+# Historical estimates: node badges map directly to a native data table.
+labels=['gibbon','sumatran','orangutan','gorilla','bonobo','chimpanzee','human'];xx=lambda age:40+(21-age)*24
+xy={k:(xx(0),40+i*65) for i,k in enumerate(labels)}
+xy.update({'1':(xx(20.903),145),'2':(xx(14.757),220),'3':(xx(7.258),310),'4':(xx(5.487),365),'5':(xx(1.818),332.5),'6':(xx(3.206),137.5)})
+g={'1':['gibbon','2'],'2':['6','3'],'6':['sumatran','orangutan'],'3':['gorilla','4'],'4':['5','human'],'5':['bonobo','chimpanzee']}
+body=edges(g,xy)
+for key in labels:body+=t(xx(0)+15,xy[key][1]+8,key,24)
+for key in '123456':
+ x,y=xy[key];body+=f'<circle cx="{x}" cy="{y}" r="15" fill="white" stroke="{BLUE}" stroke-width="2"/>'+t(x-7,y+8,key,23,BLUE)
+body+=t(25,480,'Soft calibration: node 2 = 14 million years',22)+t(25,515,'Soft calibration: node 4 = 7 million years',22)
+svg('phy_b_primate_estimates',760,550,body,'Historical source estimated ages mapped to native table. Original tip order and calibration targets preserved:14MY at node2,7MY at node4. Branch horizontal lengths proportional to displayed central estimates.')
+# Terminology tree retains source seven anonymous tips and node/lineage distinctions.
+g={'root':['upper','lower'],'upper':['pair','t2'],'pair':['t0','t1'],'lower':['pair2','pair3'],'pair2':['t3','t4'],'pair3':['t5','t6']}
+xy={'root':(40,230),'upper':(150,100),'pair':(255,55),'lower':(150,355),'pair2':(255,290),'pair3':(255,430),**{f't{i}':(370,25+70*i) for i in range(7)}}
+body=edges(g,xy)
+for i in (1,2):body+=f'<circle cx="370" cy="{25+70*i}" r="8" fill="#17643A"/>'
+for key in ('lower','pair2','pair3'):
+ x,y=xy[key];body+=f'<circle cx="{x}" cy="{y}" r="10" fill="white" stroke="{BLUE}" stroke-width="4"/>'
+body+=path('M150 100 H255 V25 H370',PURPLE)+t(430,70,'Branches',27,PURPLE)+t(430,105,'(lineages)',25,PURPLE)+t(430,180,'Tips (leaves)',27,'#17643A')+t(430,350,'Nodes',27,BLUE)+t(430,385,'(ancestors)',25,BLUE)+t(25,515,'Branch lengths are schematic.',23)
+svg('phy_b_tree_terms',720,550,body,'Seven anonymous tips with branches, tips and ancestral nodes identified. Same topology as source terminology tree. Schematic lengths.')

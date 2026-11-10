@@ -36,9 +36,9 @@ This practice deck revisits weighted pollen and selection of round seeds. The bo
 @body
 
 - [Specific Multiplication Rule]{color=orange}, if two events, A and B, are [independent]{color=red}, then\:
-  - [P(A and B) = P(A) × P(B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B)]{color=orange}
 - [General Multiplication Rule]{color=orange}, if two events, A and B, are NOT independent then\:
-  - [P(A and B) = P(A) × P(B|A) = P(B) × P(A|B)]{color=orange}
+  - [P(A and B) = P(A) &#215; P(B|A) = P(B) &#215; P(A|B)]{color=orange}
 
 === layout: one-panel
 
@@ -137,8 +137,8 @@ This practice deck revisits weighted pollen and selection of round seeds. The bo
 
 {table-style=punnett}
 | gametes | &#8531; A | &#8532; a |
-| ½ A | 1/6 AA | 2/6 Aa |
-| ½ a | 1/6 Aa | 2/6 aa |
+| &#189; A | 1/6 AA | 2/6 Aa |
+| &#189; a | 1/6 Aa | 2/6 aa |
 
 === layout: section
 
@@ -201,10 +201,10 @@ This practice deck revisits weighted pollen and selection of round seeds. The bo
 - B\: individual has disease
 - [P(A) = P(A and B) + P(A and not B)]{color=blue}
 - P(A and B)
-  - [= P(A|B) × P(B) = 1 × 0.002]{color=orange}
+  - [= P(A|B) &#215; P(B) = 1 &#215; 0.002]{color=orange}
 - P(A and not B)
-  - [= P(A|not B) × P(not B) = 0.002 × (1&ndash;0.002)]{color=orange}
-- [1×0.002]{color=orange} [+]{color=blue} [0.002×(1&ndash;0.002)]{color=orange}
+  - [= P(A|not B) &#215; P(not B) = 0.002 &#215; (1&ndash;0.002)]{color=orange}
+- [1&#215;0.002]{color=orange} [+]{color=blue} [0.002&#215;(1&ndash;0.002)]{color=orange}
   - = [0.003996]{color=blue}
 
 @top-right

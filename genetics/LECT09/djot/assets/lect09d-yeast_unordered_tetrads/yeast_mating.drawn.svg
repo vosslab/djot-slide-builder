@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+<title id="title">Haploid yeast cells mate</title>
+<desc id="desc">One connected cell envelope encloses two separate haploid nuclei, a and alpha, after cytoplasmic fusion and before nuclear fusion. Schematic, not to scale. Original vector construction based on lecture source relationships.</desc>
+<defs>
+<linearGradient id="wall" x1="0" y1="0" x2="0.8" y2="1" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#FFF9E7"/><stop offset="0.55" stop-color="#F7E4B2"/>
+<stop offset="1" stop-color="#DDB973"/></linearGradient>
+<linearGradient id="sac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F7EF"/>
+<stop offset="1" stop-color="#C6DFD2"/></linearGradient>
+<marker id="arrow" markerWidth="11" markerHeight="10" refX="10" refY="5" orient="auto"
+markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#526879"/></marker>
+</defs>
+<g transform="translate(600 210) scale(2.2)"><path d="M-142 10 C-153-22-136-60-103-72 C-70-85-44-64-22-46 C-7-34 5-34 22-44 C45-59 65-78 94-70 C126-62 147-38 148-7 C150 26 127 55 98 65 C69 75 48 63 25 49 C8 39-6 40-23 50 C-49 66-75 81-103 66 C-126 54-138 32-142 10Z" fill="url(#wall)" stroke="#213547" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M-130 14 C-114 55-83 70-53 53 Q0 21 41 46 C78 72 123 49 136 13" fill="none" stroke="#BA8D45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M-126-30 Q-110-59-84-59 M49-46 Q74-63 93-56" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="-68" cy="-1" rx="26" ry="23.400000000000002" fill="#EDF3FC" stroke="#345B91" stroke-width="2.5"/><text x="-68" y="7" font-family="Arial, sans-serif" font-size="25" fill="#345B91" text-anchor="middle">a</text><ellipse cx="70" cy="-1" rx="26" ry="23.400000000000002" fill="#FAEEF5" stroke="#A43F77" stroke-width="2.5"/><text x="70" y="7" font-family="Arial, sans-serif" font-size="25" fill="#A43F77" text-anchor="middle">&#945;</text></g><circle cx="42" cy="40" r="19" fill="#345B91"/><text x="42" y="48" font-family="Arial, sans-serif" font-size="23" fill="#FFFFFF" text-anchor="middle">2</text><text x="600" y="430" font-family="Arial, sans-serif" font-size="34" fill="#213547" text-anchor="middle">Mating</text>
+</svg>

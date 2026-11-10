@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="900" viewBox="0 0 1800 900" role="img" aria-labelledby="art_title art_desc">
+<title id="art_title">Three sexual life cycles</title>
+<desc id="art_desc">Original schematic comparison. Animals are diploid multicellular organisms with haploid gametes. Plants and some algae alternate haploid gametophytes and diploid sporophytes. Most fungi and some protists have haploid organisms and only a diploid zygote. Teal arrows show haploid stages and terracotta arrows diploid stages. Every meiosis forks to two illustrated haploid products; every fertilization joins two gametes. Organisms and cells are not to scale.</desc>
+<defs>
+<marker id="n_arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="2.3" markerHeight="2.3" orient="auto"><path d="M0 0 L10 5 L0 10 L2.6 5Z" fill="#188A86"/></marker>
+<marker id="2n_arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="2.3" markerHeight="2.3" orient="auto"><path d="M0 0 L10 5 L0 10 L2.6 5Z" fill="#BE6952"/></marker>
+</defs>
+<g font-family="Arial, Helvetica, sans-serif" stroke-linejoin="round"><rect width="1800" height="900" fill="#FFFFFF"/>
+<g id="ploidy_key">
+<text x="30" y="37" font-size="23" fill="#213547" text-anchor="start" font-weight="700">Key</text>
+<path id="key_haploid" d="M100 29 H155" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<text x="171" y="37" font-size="24" fill="#213547" text-anchor="start" font-weight="400">Haploid (n)</text>
+<path id="key_diploid" d="M370 29 H425" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<text x="441" y="37" font-size="24" fill="#213547" text-anchor="start" font-weight="400">Diploid (2n)</text>
+</g>
+<path d="M594 82 V865 M1204 82 V865" stroke="#D8E3E6" stroke-width="2"/>
+<g id="animal_cycle">
+<text x="297" y="100" font-size="29" fill="#213547" text-anchor="middle" font-weight="700">(a) Animals</text>
+<g id="animal_routes">
+<path id="animal_organism_to_meiosis" d="M269 264 H404" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<path id="animal_meiosis_to_gamete" d="M410 280 V374" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="animal_extra_meiotic_product" d="M410 313 Q456 313 481 340" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="animal_gamete_to_fertilization" d="M410 426 V501" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="animal_other_gamete_to_fertilization" d="M520 455 Q515 502 440 523" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="animal_fertilization_to_zygote" d="M410 534 V616" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<path id="animal_zygote_to_organism" d="M410 674 V729 Q410 755 383 755 H104 Q72 755 72 723 V350 Q72 306 112 288" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+</g>
+<g id="mouse" transform="translate(105 158)">
+<path d="M126 102 C183 135 188 184 143 185 C106 185 88 165 57 177" fill="none" stroke="#8A6657" stroke-width="11" stroke-linecap="round"/><path d="M126 102 C183 135 188 184 143 185 C106 185 88 165 57 177" fill="none" stroke="#D4A893" stroke-width="6" stroke-linecap="round"/>
+<path d="M94 111 Q73 137 109 143 L137 143 Q148 135 130 131 L118 124" fill="#C6A17B" stroke="#634D3E" stroke-width="3"/>
+<path d="M22 78 C26 23 68 10 107 24 C151 40 161 76 144 108 C127 139 76 132 54 112 C37 105 24 96 22 78Z" fill="#B68E65" stroke="#634D3E" stroke-width="3.5"/>
+<path d="M42 53 C70 19 118 27 132 55 C111 47 77 44 57 70Z" fill="#D7B48A"/>
+<path d="M43 88 Q43 127 90 129 C102 128 99 121 89 120 L74 116 Q61 99 60 88" fill="#E7CEAA"/>
+<path d="M46 37 C33 11 7 13 6 33 C5 51 25 62 42 51Z" fill="#C29C79" stroke="#634D3E" stroke-width="3"/><path d="M31 38 C22 20 10 24 13 36 C15 46 25 50 33 47Z" fill="#DFAFAC"/>
+<path d="M40 44 C22 38 8 52 -1 66 L-26 81 Q-35 88 -22 96 L7 102 Q36 113 55 85 C67 68 60 52 40 44Z" fill="#CDA77E" stroke="#634D3E" stroke-width="3.4"/>
+<path d="M8 97 Q26 103 42 88 Q32 108 12 107Z" fill="#EFDDC2"/>
+<ellipse cx="23" cy="68" rx="6" ry="7" fill="#202D31"/><circle cx="21" cy="65" r="2" fill="white"/><ellipse cx="-26" cy="86" rx="5" ry="4" fill="#9D6562"/>
+<path d="M-12 91 L-43 83 M-10 95 L-44 98 M-7 99 L-36 110" fill="none" stroke="#7D6956" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M38 101 L30 128 Q29 134 39 134 L59 134 Q66 129 54 126 L47 122 L52 105" fill="#CAA27E" stroke="#634D3E" stroke-width="3"/>
+</g>
+<g><circle cx="258" cy="186" r="25" fill="#FBE6D9" stroke="#BE6952" stroke-width="3"/>
+<text x="258" y="195" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">2n</text>
+</g>
+<text x="215" y="385" font-size="25" fill="#213547" text-anchor="middle" font-weight="400">Diploid multicellular</text>
+<text x="215" y="415" font-size="25" fill="#213547" text-anchor="middle" font-weight="400">organism</text>
+<g><rect x="350.0" y="240" width="120" height="33" rx="7" fill="#FFF3CC"/>
+<text x="410" y="264" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">MEIOSIS</text>
+</g>
+<g><circle cx="410" cy="400" r="24" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="410" y="409" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><circle cx="500" cy="360" r="21" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="500" y="369" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<text x="326" y="451" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Gametes</text>
+<g><circle cx="523" cy="431" r="21" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="523" y="440" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><rect x="308.0" y="501" width="204" height="33" rx="7" fill="#FFF3CC"/>
+<text x="410" y="525" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">FERTILIZATION</text>
+</g>
+<g><circle cx="410" cy="648" r="29" fill="#FBE6D9" stroke="#BE6952" stroke-width="3"/>
+<text x="410" y="657" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">2n</text>
+</g>
+<text x="325" y="655" font-size="25" fill="#213547" text-anchor="middle" font-weight="400">Zygote</text>
+<g><rect x="160.0" y="732" width="120" height="33" rx="7" fill="#FFFFFF"/>
+<text x="220" y="756" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">Mitosis</text>
+</g>
+</g>
+<g id="plant_algal_cycle">
+<text x="900" y="100" font-size="29" fill="#213547" text-anchor="middle" font-weight="700">(b) Plants and some algae</text>
+<g id="plant_routes">
+<path id="plant_sporophyte_to_meiosis" d="M755 620 Q681 620 681 552 V468" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<path id="plant_meiosis_to_spores" d="M681 429 V270" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="plant_extra_meiotic_product" d="M681 375 Q644 375 637 327" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="plant_spore_to_gametophyte" d="M708 242 H836" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="plant_gametophyte_to_gamete" d="M984 242 Q1090 242 1090 370" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="plant_gamete_to_fertilization" d="M1090 426 V501" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="plant_other_gamete_to_fertilization" d="M1160 455 Q1160 494 1120 521" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="plant_fertilization_to_zygote" d="M1090 534 V616" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<path id="plant_zygote_to_sporophyte" d="M1090 678 V705 Q1090 731 1062 731 H914 Q884 731 866 695" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+</g>
+<g id="gametophyte">
+<g transform="translate(916 256) scale(1.05)" stroke-linejoin="round">
+<path d="M-50 16 Q-43 -22 -50 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(-50 5) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-50 -19) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-50 -43) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<path d="M-22 16 Q-15 -22 -22 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(-22 -7) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-22 -31) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-22 -55) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<path d="M12 16 Q19 -22 12 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(12 2) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(12 -22) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(12 -46) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<path d="M43 16 Q50 -22 43 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(43 12) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(43 -12) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(43 -36) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+</g>
+</g>
+<g><circle cx="987" cy="170" r="24" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="987" y="179" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<text x="905" y="337" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Haploid multicellular</text>
+<text x="905" y="366" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">organism (gametophyte)</text>
+<g><circle cx="681" cy="242" r="25" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="681" y="251" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<text x="681" y="203" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Spores</text>
+<g><circle cx="636" cy="301" r="20" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="636" y="310" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><rect x="715.0" y="219" width="120" height="33" rx="7" fill="#FFFFFF"/>
+<text x="775" y="243" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">Mitosis</text>
+</g>
+<g><rect x="1008.0" y="292" width="120" height="33" rx="7" fill="#FFFFFF"/>
+<text x="1068" y="316" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">Mitosis</text>
+</g>
+<g><circle cx="1090" cy="400" r="24" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1090" y="409" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<text x="1004" y="451" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Gametes</text>
+<g><circle cx="1160" cy="431" r="20" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1160" y="440" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><rect x="988.0" y="501" width="204" height="33" rx="7" fill="#FFF3CC"/>
+<text x="1090" y="525" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">FERTILIZATION</text>
+</g>
+<g><circle cx="1090" cy="648" r="29" fill="#FBE6D9" stroke="#BE6952" stroke-width="3"/>
+<text x="1090" y="657" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">2n</text>
+</g>
+<text x="1003" y="655" font-size="25" fill="#213547" text-anchor="middle" font-weight="400">Zygote</text>
+<g><rect x="917.0" y="708" width="120" height="33" rx="7" fill="#FFFFFF"/>
+<text x="977" y="732" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">Mitosis</text>
+</g>
+<g><rect x="621.0" y="426" width="120" height="33" rx="7" fill="#FFF3CC"/>
+<text x="681" y="450" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">MEIOSIS</text>
+</g>
+<g id="sporophyte" transform="translate(815 672)">
+<g transform="translate(0 0) scale(0.95)" stroke-linejoin="round">
+<path d="M-50 16 Q-43 -22 -50 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(-50 5) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-50 -19) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-50 -43) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<path d="M-22 16 Q-15 -22 -22 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(-22 -7) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-22 -31) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(-22 -55) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<path d="M12 16 Q19 -22 12 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(12 2) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(12 -22) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(12 -46) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<path d="M43 16 Q50 -22 43 -64" fill="none" stroke="#34664C" stroke-width="5"/>
+<g transform="translate(43 12) rotate(-65) scale(0.7)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(43 -12) rotate(65) scale(0.68)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+<g transform="translate(43 -36) rotate(0) scale(0.53)"><path d="M0 0 C-28 -9 -40 -35 -27 -66 C-3 -54 12 -30 0 0Z" fill="#71AB58" stroke="#34664C" stroke-width="2.6"/><path d="M0 -3 Q-15 -31 -26 -61" fill="none" stroke="#D6E7A9" stroke-width="2"/></g>
+</g>
+<path d="M-24 -14 C-31 -62 -5 -109 -22 -159 M18 -4 C12 -59 48 -104 40 -170" fill="none" stroke="#8C8250" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M-26 -166 C-47 -183 -64 -174 -60 -151 C-58 -139 -49 -129 -44 -122 C-34 -135 -25 -146 -26 -166Z" fill="#B88943" stroke="#725C36" stroke-width="3"/><path d="M-48 -166 Q-54 -151 -44 -136" fill="none" stroke="#E8C67A" stroke-width="4"/>
+<path d="M40 -173 C48 -193 68 -187 71 -168 C74 -152 61 -135 57 -129 C47 -141 36 -157 40 -173Z" fill="#B88943" stroke="#725C36" stroke-width="3"/><path d="M49 -175 Q58 -184 62 -169" fill="none" stroke="#E8C67A" stroke-width="4"/>
+</g>
+<g><circle cx="895" cy="533" r="24" fill="#FBE6D9" stroke="#BE6952" stroke-width="3"/>
+<text x="895" y="542" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">2n</text>
+</g>
+<path d="M873 532 L851 548" fill="none" stroke="#526879" stroke-width="2"/>
+<text x="824" y="786" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Diploid multicellular</text>
+<text x="824" y="815" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">organism (sporophyte)</text>
+<path d="M900 753 L925 753 L925 480 L883 500" fill="none" stroke="#526879" stroke-width="2"/>
+</g>
+<g id="fungal_protist_cycle">
+<text x="1501" y="100" font-size="29" fill="#213547" text-anchor="middle" font-weight="700">(c) Most fungi and</text>
+<text x="1501" y="134" font-size="29" fill="#213547" text-anchor="middle" font-weight="700">some protists</text>
+<g id="fungal_protist_routes">
+<path id="protist_products_to_organism" d="M1300 442 V280 Q1300 240 1340 240 H1376" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="protist_organism_to_gamete" d="M1559 246 Q1640 246 1640 370" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="protist_gamete_to_fertilization" d="M1640 426 V501" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="protist_other_gamete_to_fertilization" d="M1750 455 Q1745 497 1670 522" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="protist_fertilization_to_zygote" d="M1640 534 V610 Q1640 636 1617 642" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<path id="protist_zygote_to_meiosis" d="M1559 650 H1420" fill="none" stroke="#BE6952" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2n_arrow)"/>
+<path id="protist_meiosis_to_products" d="M1384 650 H1326 Q1300 650 1300 623 V496" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+<path id="protist_extra_meiotic_product" d="M1300 568 Q1256 560 1249 522" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>
+</g>
+<g id="flagellated_protist" transform="translate(1403 184)">
+<path d="M110 26 C151 14 133 -7 162 -12 C185 -17 184 -27 198 -30 M115 34 C156 37 160 18 181 34 C203 50 205 20 228 29" fill="none" stroke="#526879" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M13 29 C46 -2 101 -13 120 13 C141 42 94 90 50 100 C4 111 -15 66 13 29Z" fill="#71BFA9" stroke="#386F64" stroke-width="3.6"/>
+<path d="M13 58 C25 26 64 8 95 15 C68 15 34 52 34 78 C29 94 7 86 13 58Z" fill="#BCE7C7"/>
+<path d="M41 83 C63 80 104 55 117 27 C120 59 78 91 52 94Z" fill="#398D72"/>
+<ellipse cx="74" cy="43" rx="22" ry="18" transform="rotate(-28 74 43)" fill="#F5E7BA" stroke="#739480" stroke-width="2"/><ellipse cx="73" cy="43" rx="7" ry="6" fill="#C7B680"/>
+</g>
+<g><circle cx="1391" cy="185" r="24" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1391" y="194" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<text x="1480" y="352" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Haploid unicellular or</text>
+<text x="1480" y="381" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">multicellular organism</text>
+<g><rect x="1240.0" y="307" width="120" height="33" rx="7" fill="#FFFFFF"/>
+<text x="1300" y="331" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">Mitosis</text>
+</g>
+<g><rect x="1562.0" y="292" width="120" height="33" rx="7" fill="#FFFFFF"/>
+<text x="1622" y="316" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">Mitosis</text>
+</g>
+<g><circle cx="1300" cy="469" r="24" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1300" y="478" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><circle cx="1248" cy="496" r="20" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1248" y="505" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><circle cx="1640" cy="400" r="24" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1640" y="409" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<text x="1554" y="451" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">Gametes</text>
+<g><circle cx="1750" cy="431" r="21" fill="#E1F4EC" stroke="#188A86" stroke-width="3"/>
+<text x="1750" y="440" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">n</text>
+</g>
+<g><rect x="1538.0" y="501" width="204" height="33" rx="7" fill="#FFF3CC"/>
+<text x="1640" y="525" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">FERTILIZATION</text>
+</g>
+<g><circle cx="1589" cy="650" r="29" fill="#FBE6D9" stroke="#BE6952" stroke-width="3"/>
+<text x="1589" y="659" font-size="27" fill="#213547" text-anchor="middle" font-weight="600">2n</text>
+</g>
+<text x="1589" y="704" font-size="25" fill="#213547" text-anchor="middle" font-weight="400">Zygote</text>
+<g><rect x="1345.0" y="627" width="120" height="33" rx="7" fill="#FFF3CC"/>
+<text x="1405" y="651" font-size="23" fill="#213547" text-anchor="middle" font-weight="600">MEIOSIS</text>
+</g>
+</g>
+</g></svg>

@@ -45,7 +45,7 @@
 
 @image
 
-![Chromosome duplication before meiosis.](assets/lect06c-meiosis/meiosis_interphase.svg)
+![Chromosome duplication before meiosis.](assets/lect06c-meiosis/meiosis_interphase.drawn.svg)
 
 @caption
 
@@ -73,7 +73,7 @@ Chromosome duplication before meiosis.
 
 @image
 
-![Prophase I and metaphase I.](assets/lect06c-meiosis/meiosis_prophase_metaphase_i.svg)
+![Prophase I and metaphase I.](assets/lect06c-meiosis/meiosis_prophase_metaphase_i.drawn.svg)
 
 @caption
 
@@ -198,11 +198,11 @@ Crossovers, chiasmata, and the Holliday junction.
 
 @top-left
 
-![Two equally likely chromosome alignments: left diagram](assets/lect06c-meiosis/assortment_alternative_a.svg)
+![Two equally likely chromosome alignments: left diagram](assets/lect06c-meiosis/assortment_alignment_a.drawn.svg)
 
 @top-right
 
-![Two equally likely chromosome alignments: right diagram](assets/lect06c-meiosis/assortment_alternative_b.svg)
+![Two equally likely chromosome alignments: right diagram](assets/lect06c-meiosis/assortment_alignment_b.drawn.svg)
 
 @bottom-left
 
@@ -218,7 +218,7 @@ Arrangement B produces Ab and aB gametes.
 
 @left
 
-![Independent assortment](assets/lect06c-meiosis/assortment_17.svg)
+![Independent assortment](assets/lect06c-meiosis/assortment_alignment_a.drawn.svg)
 
 @right
 
@@ -233,7 +233,7 @@ Arrangement B produces Ab and aB gametes.
 
 @left
 
-![Independent assortment](assets/lect06c-meiosis/assortment_18.svg)
+![Independent assortment](assets/lect06c-meiosis/assortment_alignment_b.drawn.svg)
 
 @right
 
@@ -246,7 +246,7 @@ Arrangement B produces Ab and aB gametes.
 
 @image
 
-![Anaphase I, telophase I, and cytokinesis.](assets/lect06c-meiosis/meiosis_anaphase_telophase_i.svg)
+![Anaphase I, telophase I, and cytokinesis.](assets/lect06c-meiosis/meiosis_anaphase_telophase_i.drawn.svg)
 
 @caption
 
@@ -286,7 +286,7 @@ Crossing over and the formation of recombinant chromosomes.
 
 @image
 
-![Prophase II and metaphase II.](assets/lect06c-meiosis/meiosis_prophase_metaphase_ii.svg)
+![Prophase II and metaphase II.](assets/lect06c-meiosis/meiosis_prophase_metaphase_ii.drawn.svg)
 
 @caption
 
@@ -296,7 +296,7 @@ Prophase II and metaphase II.
 
 @image
 
-![Anaphase II, telophase II, and cytokinesis.](assets/lect06c-meiosis/meiosis_anaphase_telophase_ii.svg)
+![Anaphase II, telophase II, and cytokinesis.](assets/lect06c-meiosis/meiosis_anaphase_telophase_ii.drawn.svg)
 
 @caption
 
@@ -388,7 +388,7 @@ Crossing over and the formation of recombinant chromosomes.
 
 @image
 
-![Independent assortment, including the shared stage labels](assets/lect06c-meiosis/assortment_full.svg)
+![Independent assortment, including the shared stage labels](assets/lect06c-meiosis/assortment_full.drawn.svg)
 
 @caption
 
@@ -400,7 +400,7 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
 
 @left
 
-![Independent assortment](assets/lect06c-meiosis/assortment_34.svg)
+![Independent assortment](assets/lect06c-meiosis/assortment_alignment_a.drawn.svg)
 
 @right
 
@@ -415,7 +415,7 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
 
 @left
 
-![Independent assortment](assets/lect06c-meiosis/assortment_35.svg)
+![Independent assortment](assets/lect06c-meiosis/assortment_alignment_b.drawn.svg)
 
 @right
 
@@ -439,7 +439,7 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
 
 @top-right
 
-![Slide image 22](assets/lect06c-meiosis/image_022.png)
+![Slide image 22](assets/lect06c-meiosis/fly_chromosome_pairs.drawn.svg)
 
 @bottom-right
 
@@ -457,7 +457,7 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
 
 ![Slide image 25](assets/lect06c-meiosis/image_025.png)
 
-![Slide image 26](assets/lect06c-meiosis/image_026.png)
+![Slide image 26](assets/lect06c-meiosis/wheat_genomes.drawn.svg)
 
 - Chickens have 39 pairs of chromosomes
   - 2&#x00B3;&#x2079; = 550 billion combinations.
@@ -480,14 +480,14 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
 
 @body
 
-![Slide image 27](assets/lect06c-meiosis/image_027.jpg)
+![Slide image 27](assets/lect06c-meiosis/mouse_life_cycle.drawn.svg)
 
 
 === layout: big-image
 
 @image
 
-![The life cycle of a diploid animal.](assets/lect06c-meiosis/animal_life_cycle.svg)
+![The life cycle of a diploid animal.](assets/lect06c-meiosis/human_life_cycle.drawn.svg)
 
 @caption
 
@@ -505,14 +505,14 @@ The life cycle of a diploid animal.
 
 @right
 
-![Egg vs. sperm](assets/lect06c-meiosis/oogenesis.svg)
+![Egg vs. sperm](assets/lect06c-meiosis/oogenesis.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 30](assets/lect06c-meiosis/image_030.png)
+![Slide image 30](assets/lect06c-meiosis/gametogenesis_comparison.drawn.svg)
 
 
 === layout: one-panel
@@ -521,14 +521,14 @@ The life cycle of a diploid animal.
 
 @body
 
-![Slide image 31](assets/lect06c-meiosis/image_031.jpg)
+![Slide image 31](assets/lect06c-meiosis/corn_life_cycle.drawn.svg)
 
 
 === layout: big-image
 
 @image
 
-![Sexual life cycles in animals, plants and algae, and fungi and protists.](assets/lect06c-meiosis/sexual_life_cycles.svg)
+![Sexual life cycles in animals, plants and algae, and fungi and protists.](assets/lect06c-meiosis/sexual_life_cycles.drawn.svg)
 
 @caption
 
@@ -553,7 +553,7 @@ Sexual life cycles in animals, plants and algae, and fungi and protists.
 
 @image
 
-![Compare chromosome behavior in mitosis and meiosis.](assets/lect06c-meiosis/mitosis_meiosis_comparison.svg)
+![Compare chromosome behavior in mitosis and meiosis.](assets/lect06c-meiosis/mitosis_meiosis_comparison.drawn.svg)
 
 @caption
 
@@ -615,17 +615,16 @@ The diploid number of a roundworm species is 4. Assuming there is no crossover, 
 [Answer\: C]{color=red}
 
 === layout: big-image
-@replaceme
 
 
 
 @image
 
-![Slide image 35](assets/lect06c-meiosis/image_035.jpg)
+![Slide image 35](assets/lect06c-meiosis/mendel_chromosome_basis.drawn.svg)
 
 @caption
 
-Source slide 52: restore diagram labels and relationships.
+The chromosomal basis of Mendel's laws.
 
 === layout: theend
 

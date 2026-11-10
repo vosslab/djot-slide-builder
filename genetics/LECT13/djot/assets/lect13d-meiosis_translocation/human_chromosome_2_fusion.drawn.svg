@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc"><title id="title">Human chromosome 2: telomere fusion</title><desc id="desc">Two ancestral acrocentric chromosomes fuse at short-arm telomeres. The fused chromosome initially has two centromeres; the long-arm centromere becomes inactive. Bands are schematic, not a cytogenetic map.</desc><rect width="1200" height="570" fill="white"/>
+<g id="ancestor-a"><rect x="77" y="100" width="36" height="150" rx="15" fill="#EBD8A0"/>
+<rect x="78" y="115" width="34" height="10" fill="#89749B"/>
+<rect x="78" y="142" width="34" height="10" fill="#89749B"/>
+<rect x="78" y="169" width="34" height="10" fill="#89749B"/>
+<rect x="78" y="196" width="34" height="10" fill="#89749B"/>
+<rect x="78" y="223" width="34" height="10" fill="#89749B"/>
+<circle cx="95" cy="220" r="17" fill="#C45462" stroke="#C45462" stroke-width="3"/>
+</g>
+<g id="ancestor-b"><rect x="162" y="275" width="36" height="180" rx="15" fill="#EBD8A0"/>
+<rect x="163" y="290" width="34" height="10" fill="#89749B"/>
+<rect x="163" y="317" width="34" height="10" fill="#89749B"/>
+<rect x="163" y="344" width="34" height="10" fill="#89749B"/>
+<rect x="163" y="371" width="34" height="10" fill="#89749B"/>
+<rect x="163" y="398" width="34" height="10" fill="#89749B"/>
+<rect x="163" y="425" width="34" height="10" fill="#89749B"/>
+<circle cx="180" cy="305" r="17" fill="#C45462" stroke="#C45462" stroke-width="3"/>
+</g>
+<g id="dicentric"><rect x="402" y="100" width="36" height="355" rx="15" fill="#EBD8A0"/>
+<rect x="403" y="115" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="142" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="169" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="196" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="223" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="250" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="277" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="304" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="331" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="358" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="385" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="412" width="34" height="10" fill="#89749B"/>
+<rect x="403" y="439" width="34" height="10" fill="#89749B"/>
+<circle cx="420" cy="220" r="17" fill="#C45462" stroke="#C45462" stroke-width="3"/>
+<circle cx="420" cy="285" r="17" fill="#C45462" stroke="#C45462" stroke-width="3"/>
+</g>
+<g id="inactivation"><rect x="702" y="100" width="36" height="355" rx="15" fill="#EBD8A0"/>
+<rect x="703" y="115" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="142" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="169" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="196" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="223" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="250" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="277" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="304" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="331" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="358" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="385" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="412" width="34" height="10" fill="#89749B"/>
+<rect x="703" y="439" width="34" height="10" fill="#89749B"/>
+<circle cx="720" cy="220" r="17" fill="#C45462" stroke="#C45462" stroke-width="3"/>
+<circle cx="720" cy="285" r="17" fill="white" stroke="#C45462" stroke-width="3"/>
+</g>
+<g id="human-2"><rect x="1002" y="100" width="36" height="355" rx="15" fill="#EBD8A0"/>
+<rect x="1003" y="115" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="142" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="169" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="196" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="223" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="250" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="277" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="304" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="331" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="358" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="385" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="412" width="34" height="10" fill="#89749B"/>
+<rect x="1003" y="439" width="34" height="10" fill="#89749B"/>
+<circle cx="1020" cy="220" r="17" fill="#C45462" stroke="#C45462" stroke-width="3"/>
+</g>
+<path d="M250 270 H350 l-12 -7 m12 7 l-12 7" stroke="#333" stroke-width="3" fill="none"/>
+<path d="M550 270 H650 l-12 -7 m12 7 l-12 7" stroke="#333" stroke-width="3" fill="none"/>
+<path d="M850 270 H950 l-12 -7 m12 7 l-12 7" stroke="#333" stroke-width="3" fill="none"/>
+<path d="M389 253 H451" stroke="#333" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M689 253 H751" stroke="#333" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="140" y="40" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Ancestral chromosomes</text>
+<text x="420" y="40" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Telomere fusion</text>
+<text x="720" y="40" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Centromere inactivation</text>
+<text x="1020" y="40" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Human chromosome 2</text>
+<text x="140" y="510" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Two acrocentrics</text>
+<text x="420" y="510" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Two centromeres</text>
+<text x="720" y="510" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">One active centromere</text>
+<text x="1020" y="510" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">One active centromere</text>
+<path d="M1056 100 H1070 V205 H1056 M1056 239 H1070 V455 H1056" fill="none" stroke="#333" stroke-width="2"/>
+<text x="1130" y="155" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">Short</text>
+<text x="1130" y="183" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">arm</text>
+<text x="1130" y="335" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">Long</text>
+<text x="1130" y="363" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">arm</text>
+<text x="610" y="555" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Filled circle: active centromere   *   Open circle: inactive centromere</text>
+</svg>

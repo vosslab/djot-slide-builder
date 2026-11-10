@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="850" viewBox="0 0 1500 850" role="img" aria-labelledby="title desc">
+  <title id="title">ABO glycans: compare the added terminal sugar</title>
+  <desc id="desc">Three aligned rows pair a large symbolic glycan with its chemical chain. The O antigen source label is retained. Each row has Fuc alpha-1,2 Gal beta-1,3 GlcNAc beta-1,3 Gal. A adds GalNAc alpha-1,3 to the first Gal; B adds Gal alpha-1,3 at the same branch. Source-specific symbols are a pink triangle for Fuc, yellow circles for Gal, a blue square for GlcNAc, and a yellow square for GalNAc. Darker outlines emphasize the added sugars. These are schematic relationships, not molecular shapes or scale.</desc>
+  <rect width="1500" height="850" fill="white"/>
+  <defs>
+    <g id="symbol-backbone" stroke="#213547" stroke-width="2.8">
+      <path d="M 0 0 H 430" fill="none"/>
+      <path d="M 418 0 H 455" fill="none" stroke="#C00070"/>
+      <polygon points="0,-30 -29,24 29,24" fill="#EC007F"/>
+      <circle cx="130" r="28" fill="#F3D828"/>
+      <rect x="232" y="-28" width="56" height="56" fill="#149ED0"/>
+      <circle cx="390" r="28" fill="#F3D828"/>
+      <g font-family="Arial, sans-serif" font-size="26" fill="#213547" stroke="none" text-anchor="middle">
+        <text x="65" y="49">&#945;2</text>
+        <text x="195" y="49">&#946;3</text>
+        <text x="325" y="49">&#946;3</text>
+      </g>
+    </g>
+    <g id="chemical-backbone" font-family="Arial, sans-serif" font-size="33" fill="#213547" text-anchor="middle">
+      <g stroke="#526879" stroke-width="2.8" fill="none">
+        <path d="M 45 0 H 112"/>
+        <path d="M 194 0 H 268"/>
+        <path d="M 404 0 H 482"/>
+        <path d="M 558 0 H 605" stroke="#C00070"/>
+      </g>
+      <text x="0" y="11" fill="#C00070">Fuc</text>
+      <text x="155" y="11">Gal</text>
+      <text x="335" y="11" fill="#087FA1">GlcNAc</text>
+      <text x="525" y="11">Gal</text>
+      <g font-size="26">
+        <text x="78" y="49">&#945;-1,2</text>
+        <text x="231" y="49">&#946;-1,3</text>
+        <text x="443" y="49">&#946;-1,3</text>
+      </g>
+    </g>
+  </defs>
+  <g font-family="Arial, sans-serif" fill="#213547">
+    <g id="representation-headings" font-size="29" fill="#526879" text-anchor="middle">
+      <text x="470" y="65">Symbolic glycan</text>
+      <text x="1150" y="65">Chemical chain</text>
+    </g>
+    <g id="o-antigen" transform="translate(0 190)">
+      <text x="40" y="12" font-size="36">O antigen</text>
+      <use xlink:href="#symbol-backbone" x="275"/>
+      <use xlink:href="#chemical-backbone" x="865"/>
+    </g>
+    <g id="a-antigen" transform="translate(0 455)">
+      <text x="40" y="12" font-size="36">A antigen</text>
+      <use xlink:href="#symbol-backbone" x="275"/>
+      <g id="a-symbol-terminal" stroke="#213547" stroke-width="4.5">
+        <path d="M 405 -28 V -77" fill="none"/>
+        <rect x="377" y="-133" width="56" height="56" fill="#F3D828"/>
+      </g>
+      <text x="405" y="-152" font-size="31" font-weight="bold" text-anchor="middle">GalNAc</text>
+      <text x="446" y="-48" font-size="26">&#945;3</text>
+      <use xlink:href="#chemical-backbone" x="865"/>
+      <g id="a-chemical-terminal">
+        <text x="1020" y="-95" font-size="35" font-weight="bold" text-anchor="middle">GalNAc</text>
+        <path d="M 1020 -81 V -25" fill="none" stroke="#213547" stroke-width="4.5"/>
+        <text x="1050" y="-45" font-size="26">&#945;-1,3</text>
+      </g>
+    </g>
+    <g id="b-antigen" transform="translate(0 720)">
+      <text x="40" y="12" font-size="36">B antigen</text>
+      <use xlink:href="#symbol-backbone" x="275"/>
+      <g id="b-symbol-terminal" stroke="#213547" stroke-width="4.5">
+        <path d="M 405 -28 V -77" fill="none"/>
+        <circle cx="405" cy="-105" r="28" fill="#F3D828"/>
+      </g>
+      <text x="405" y="-152" font-size="31" font-weight="bold" text-anchor="middle">Gal</text>
+      <text x="446" y="-48" font-size="26">&#945;3</text>
+      <use xlink:href="#chemical-backbone" x="865"/>
+      <g id="b-chemical-terminal">
+        <text x="1020" y="-95" font-size="35" font-weight="bold" text-anchor="middle">Gal</text>
+        <path d="M 1020 -81 V -25" fill="none" stroke="#213547" stroke-width="4.5"/>
+        <text x="1050" y="-45" font-size="26">&#945;-1,3</text>
+      </g>
+    </g>
+    <text x="1460" y="822" font-size="22" fill="#526879" text-anchor="end">Source-specific symbols &#183; schematic</text>
+  </g>
+</svg>

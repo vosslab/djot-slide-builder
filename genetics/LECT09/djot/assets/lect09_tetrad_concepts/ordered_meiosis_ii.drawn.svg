@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="figure-title figure-description">
+  <title id="figure-title">Allele segregation at meiosis I and meiosis II</title>
+  <desc id="figure-description">After meiosis I, homologous centromeres are separated but sister chromatids remain joined. Without a crossover the homologs carry AA and aa. With a crossover each carries A and a. Meiosis II separates sister centromeres, giving AAaa or AaAa ordered products. Mitosis follows.</desc>
+  <metadata id="provenance">Original editable schematic after source slide 59. Source: genetics/LECT09/lect09b-tetrads_1_introduction.odp, source art in ordered_before_meiosis.svg, ordered_meiosis_ii.svg and ordered_mitosis.svg. Unmeasured. A is green, a is purple. Source and stage ledger: SOURCE_STATE.json. Reconstruction 2026-11-09.</metadata>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L8 4 L0 8" fill="none" stroke="#526879" stroke-width="1.6" />
+    </marker>
+    <marker id="back-arrow" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M8 0 L0 4 L8 8" fill="none" stroke="#526879" stroke-width="1.6" />
+    </marker>
+    <linearGradient id="ascus-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#E8F0ED" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="white" />
+  <g font-family="Arial, Helvetica, sans-serif">
+    <path d="M600 22 V726" fill="none" stroke="#D9E2E6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="300" y="40" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">First-Division Segregation</text>
+    <text x="900" y="40" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Second-Division Segregation</text>
+    <text x="300" y="83" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Homologous centromeres separate</text>
+    <g id="fds-MI-green" data-alleles="AA">
+      <path d="M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M182 199 C177 230 187 243 182 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M182 199 C177 230 187 243 182 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M182 199 C177 230 187 243 182 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="182" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <path d="M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M228 199 C223 230 233 243 228 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M228 199 C223 230 233 243 228 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M228 199 C223 230 233 243 228 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="228" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <circle cx="205" cy="151" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+    </g>
+    <g id="fds-MI-purple" data-alleles="aa">
+      <path d="M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M372 199 C367 230 377 243 372 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M372 199 C367 230 377 243 372 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M372 199 C367 230 377 243 372 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="372" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <path d="M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M418 199 C413 230 423 243 418 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M418 199 C413 230 423 243 418 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M418 199 C413 230 423 243 418 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="418" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <circle cx="395" cy="151" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+    </g>
+    <path d="M226 151 L374 151" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <text x="300" y="332" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">A and a separated</text>
+    <path d="M300 351 L300 397" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <text x="321" y="382" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Meiosis II</text>
+    <text x="300" y="433" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Centromeres split and separate</text>
+    <g id="fds-MII-product-1" data-allele="A" data-centromere-ancestry="green">
+      <path d="M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M140 542 C136 584 144 596 140 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M140 542 C136 584 144 596 140 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M140 542 C136 584 144 596 140 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="140" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="140" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="fds-MII-product-2" data-allele="A" data-centromere-ancestry="green">
+      <path d="M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M250 542 C246 584 254 596 250 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M250 542 C246 584 254 596 250 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M250 542 C246 584 254 596 250 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="250" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="250" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="fds-MII-product-3" data-allele="a" data-centromere-ancestry="purple">
+      <path d="M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M360 542 C356 584 364 596 360 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M360 542 C356 584 364 596 360 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M360 542 C356 584 364 596 360 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="360" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="360" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <g id="fds-MII-product-4" data-allele="a" data-centromere-ancestry="purple">
+      <path d="M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M470 542 C466 584 474 596 470 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M470 542 C466 584 474 596 470 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M470 542 C466 584 474 596 470 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="470" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="470" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <path d="M157 500 L233 500" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <path d="M377 500 L453 500" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <path d="M300 684 L300 727" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <text x="321" y="713" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Mitosis</text>
+    <text x="900" y="83" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Homologous centromeres separate</text>
+    <g id="sds-MI-green" data-alleles="Aa">
+      <path d="M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M782 199 C777 230 787 243 782 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M782 199 C777 230 787 243 782 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M782 199 C777 230 787 243 782 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="782" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <path d="M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M828 199 C823 230 833 243 828 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M828 199 C823 230 833 243 828 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M828 199 C823 230 833 243 828 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="828" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <circle cx="805" cy="151" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+    </g>
+    <g id="sds-MI-purple" data-alleles="Aa">
+      <path d="M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M972 199 C967 230 977 243 972 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M972 199 C967 230 977 243 972 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M972 199 C967 230 977 243 972 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="972" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+      <path d="M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1018 199 C1013 230 1023 243 1018 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1018 199 C1013 230 1023 243 1018 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M1018 199 C1013 230 1023 243 1018 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <text x="1018" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+      <circle cx="995" cy="151" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+    </g>
+    <path d="M826 151 L974 151" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <text x="900" y="332" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">A and a not yet separated</text>
+    <path d="M900 351 L900 397" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <text x="921" y="382" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Meiosis II</text>
+    <text x="900" y="433" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Centromeres split and separate</text>
+    <g id="sds-MII-product-1" data-allele="A" data-centromere-ancestry="green">
+      <path d="M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M740 542 C736 584 744 596 740 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M740 542 C736 584 744 596 740 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M740 542 C736 584 744 596 740 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="740" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="740" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="sds-MII-product-2" data-allele="a" data-centromere-ancestry="green">
+      <path d="M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M850 542 C846 584 854 596 850 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M850 542 C846 584 854 596 850 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M850 542 C846 584 854 596 850 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="850" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <text x="850" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <g id="sds-MII-product-3" data-allele="A" data-centromere-ancestry="purple">
+      <path d="M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M960 542 C956 584 964 596 960 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M960 542 C956 584 964 596 960 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M960 542 C956 584 964 596 960 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="960" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="960" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
+    </g>
+    <g id="sds-MII-product-4" data-allele="a" data-centromere-ancestry="purple">
+      <path d="M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1070 542 C1066 584 1074 596 1070 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1070 542 C1066 584 1074 596 1070 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <path d="M1070 542 C1066 584 1074 596 1070 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <circle cx="1070" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <text x="1070" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
+    </g>
+    <path d="M757 500 L833 500" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <path d="M977 500 L1053 500" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
+    <text x="795" y="674" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">A and a separated</text>
+    <text x="1015" y="674" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">A and a separated</text>
+    <path d="M900 684 L900 727" fill="none" stroke="#526879" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+    <text x="921" y="713" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Mitosis</text>
+  </g>
+</svg>

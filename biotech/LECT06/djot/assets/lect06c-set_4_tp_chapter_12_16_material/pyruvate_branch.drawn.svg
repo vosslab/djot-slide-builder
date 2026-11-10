@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="figure-title figure-description">
+  <title id="figure-title">Pyruvate as a branch point in catabolism</title>
+  <desc id="figure-description">Glucose passes through glycolysis to pyruvate in the cytosol. The two source-conditioned branches are: no oxygen present, fermentation to ethanol or lactate outside the mitochondrion; oxygen present, aerobic cellular respiration to acetyl CoA inside the mitochondrion, then into the closed citric acid cycle. A schematic mitochondrial cutaway exposes the folded inner membrane. Membrane folds and proportions are illustrative, not measured.</desc>
+  <metadata id="provenance">Original vector construction, 2026-11-10. Scientific wording retained from original ODP slide 21, biotech/LECT06/old/lect06c-set_4_TP-chapter_12-16_material.odp, Pictures/100000000000048500000438470B31DB.jpg. Fig. 9-19; Figure 9.19 Pyruvate as a key juncture in catabolism. Original media credit: Copyright &#169; 2008 Pearson Education, Inc., publishing as Pearson Benjamin Cummings. Original JPEG SHA256: 6023f46346ec584f6c69946a71a37107680a81cdb172a82978bee06b40ffb847. Current wrapper SHA256: 6a93f70a80f64392d56b945e21be006ed23b690ffbe5c6b767b80d8db6088f68. Source-conditioned oxygen simplification retained. No empirical image region. All original media retained separately.</metadata>
+  <defs>
+    <marker id="route-arrow" markerWidth="27" markerHeight="25" refX="23" refY="12.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L25 12.5 L1 24 Z" fill="#234c59"/>
+    </marker>
+  </defs>
+  <g id="cytosol-field">
+    <rect width="1600" height="1000" fill="#ffffff"/>
+    <path d="M40 55 Q40 25 75 25 H1525 Q1560 25 1560 60 V940 Q1560 975 1525 975 H75 Q40 975 40 940 Z" fill="#f1f8fa"/>
+    <text x="105" y="130" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#526879">CYTOSOL</text>
+  </g>
+  <g id="mitochondrion-cutaway" stroke-linejoin="round" transform="translate(0 -25)">
+    <path id="outer-shell-depth" d="M676 643 C695 524 809 426 943 431 C1031 435 1051 472 1156 437 C1295 390 1456 429 1514 544 C1567 650 1511 806 1390 887 C1275 963 1157 940 1047 933 C923 926 805 971 724 876 C671 816 657 718 676 643 Z" fill="#c77b45" stroke="#213547" stroke-width="5"/>
+    <path id="outer-membrane-cut-face" d="M675 620 C695 501 809 403 943 408 C1031 412 1051 449 1156 414 C1295 367 1456 406 1514 521 C1567 627 1511 783 1390 864 C1275 940 1157 917 1047 910 C923 903 805 948 724 853 C671 793 657 695 675 620 Z" fill="#f5c38a" stroke="#213547" stroke-width="4"/>
+    <path id="outer-shell-light" d="M695 616 C725 501 829 429 940 430 C1034 433 1064 465 1164 434 C1301 391 1435 431 1490 526" fill="none" stroke="#ffe3bd" stroke-width="10" stroke-linecap="round"/>
+    <path id="inner-membrane-and-cristae" d="M711 631
+      C729 524 834 446 945 449
+      C972 450 980 455 1004 460
+      C995 482 974 516 995 530 C1017 545 1040 498 1044 469
+      C1089 479 1129 467 1170 453
+      C1177 470 1177 503 1198 507 C1222 511 1225 473 1215 443
+      C1252 437 1295 440 1329 450
+      C1322 477 1281 506 1297 526 C1313 546 1350 513 1363 465
+      C1403 483 1431 510 1451 542
+      C1430 557 1375 564 1378 586 C1381 613 1436 603 1470 578
+      C1486 620 1478 668 1457 708
+      C1435 694 1393 659 1379 680 C1365 704 1411 735 1436 740
+      C1404 788 1366 817 1323 837
+      C1289 854 1251 860 1216 862
+      C1193 863 1170 862 1144 860
+      C1105 857 1076 850 1046 851
+      C1038 824 1041 781 1018 783 C993 785 1004 831 1010 855
+      C972 862 940 872 909 869
+      C919 839 949 799 926 787 C901 774 879 829 873 863
+      C837 856 811 841 792 818
+      C816 801 853 773 837 754 C820 733 785 768 770 790
+      C744 751 730 716 725 685
+      C754 680 789 661 781 642 C771 620 736 641 719 651
+      C715 645 712 638 711 631 Z" fill="#fff0cc" stroke="#9f6337" stroke-width="4"/>
+    <path id="front-cut-rim" d="M724 853 C805 948 923 903 1047 910 C1157 917 1275 940 1390 864" fill="none" stroke="#9f6337" stroke-width="7" stroke-linecap="round"/>
+    <path id="front-shell-highlight" d="M745 870 C826 945 927 910 1047 917 C1165 925 1274 942 1373 883" fill="none" stroke="#e9ac70" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g id="glycolysis-in-cytosol" font-family="Arial, sans-serif" fill="#213547" text-anchor="middle">
+    <text x="590" y="105" font-size="48" font-weight="bold">Glucose</text>
+    <path id="glycolysis-progression" d="M590 128 V227" fill="none" stroke="#234c59" stroke-width="11" marker-end="url(#route-arrow)"/>
+    <text x="745" y="185" font-size="38">Glycolysis</text>
+    <rect x="440" y="246" width="300" height="80" rx="34" fill="#b5dedb" stroke="#234c59" stroke-width="4"/>
+    <text x="590" y="300" font-size="45" font-weight="bold">Pyruvate</text>
+  </g>
+  <g id="fermentation-outside-mitochondrion" font-family="Arial, sans-serif" fill="#213547" text-anchor="middle">
+    <path id="pyruvate-to-fermentation" d="M530 329 C484 390 391 495 310 587" fill="none" stroke="#234c59" stroke-width="11" stroke-linecap="round" marker-end="url(#route-arrow)"/>
+    <text x="137" y="390" font-size="39" text-anchor="start">No O<tspan dy="10" font-size="27">2</tspan><tspan dy="-10"> present:</tspan></text>
+    <text x="265" y="442" font-size="41" font-weight="bold">Fermentation</text>
+    <rect x="155" y="615" width="300" height="200" rx="34" fill="#d3e8f3" stroke="#436a81" stroke-width="3"/>
+    <text x="305" y="674" font-size="44">Ethanol</text>
+    <text x="305" y="727" font-size="36">or</text>
+    <text x="305" y="782" font-size="44">lactate</text>
+  </g>
+  <g id="aerobic-route-into-mitochondrion" font-family="Arial, sans-serif" fill="#213547" text-anchor="middle">
+    <path id="pyruvate-to-acetyl-coa" d="M652 329 C728 394 828 454 940 543" fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <path id="aerobic-branch" d="M652 329 C728 394 828 454 940 543" fill="none" stroke="#234c59" stroke-width="11" stroke-linecap="round" marker-end="url(#route-arrow)"/>
+    <text x="970" y="242" font-size="39" text-anchor="start">O<tspan dy="10" font-size="27">2</tspan><tspan dy="-10"> present:</tspan></text>
+    <text x="1080" y="294" font-size="41" font-weight="bold">Aerobic cellular</text>
+    <text x="1080" y="344" font-size="41" font-weight="bold">respiration</text>
+    <rect x="831" y="556" width="280" height="72" rx="25" fill="#f6cfb2" stroke="#9f6337" stroke-width="3"/>
+    <text x="971" y="606" font-size="42">Acetyl CoA</text>
+    <path id="acetyl-coa-entry" d="M1090 621 Q1124 638 1140 650" fill="none" stroke="#234c59" stroke-width="10" marker-end="url(#route-arrow)"/>
+  </g>
+  <g id="citric-acid-cycle-in-matrix" font-family="Arial, sans-serif" fill="#213547" text-anchor="middle">
+    <circle cx="1208" cy="699" r="99" fill="#f8d4b7"/>
+    <path id="closed-cycle" d="M1208 588 A111 111 0 1 1 1207.9 588 Z" fill="none" stroke="#234c59" stroke-width="10"/>
+    <path id="cycle-clockwise-right" d="M1318 684 L1317 710" fill="none" stroke="#234c59" stroke-width="10" marker-end="url(#route-arrow)"/>
+    <path id="cycle-clockwise-left" d="M1098 715 L1099 688" fill="none" stroke="#234c59" stroke-width="10" marker-end="url(#route-arrow)"/>
+    <text x="1208" y="669" font-size="39">Citric</text>
+    <text x="1208" y="712" font-size="39">acid</text>
+    <text x="1208" y="755" font-size="39">cycle</text>
+    <text x="1125" y="968" font-size="37" font-weight="bold">MITOCHONDRION</text>
+  </g>
+</svg>

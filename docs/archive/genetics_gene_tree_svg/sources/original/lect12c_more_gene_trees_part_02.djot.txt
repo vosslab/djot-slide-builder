@@ -1,0 +1,161 @@
+=== layout: one-panel
+
+# *Gene Trees by Distance Method*
+
+@body
+
+- Differences can be a measure of evolutionary separation.
+- Two problems with this assumption\:
+  - 1. mutations are chance and differences are not really correlated with evolutionary time.
+  - 2. some mutations increase survival rate and have better chance of being [*fixed*]{underline=true}.
+
+![Slide image 32](assets/lect12c-more_gene_trees/image_032.png)
+
+=== layout: one-panel
+@replaceme
+
+# *Distance Matrix*
+
+@body
+
+![Slide image 32](assets/lect12c-more_gene_trees/image_032.png)
+
+![Slide image 33](assets/lect12c-more_gene_trees/image_033.png)
+
+![Slide image 34](assets/lect12c-more_gene_trees/image_034.png)
+
+![Slide image 35](assets/lect12c-more_gene_trees/image_035.svg)
+
+![Slide image 36](assets/lect12c-more_gene_trees/image_036.svg)
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- length of line is &#189; the differences
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- length of line is &#189; the differences
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- length of line is &#189; the differences
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- Next step join Hu/Ba with either Co/Sh or Mo/Ha
+- Hu/Ba&#8211;Co/Sh\: (6+9+7+10)/4 = 8
+- Hu/Ba&#8211;Mo/Ha\: (8+9+7+10)/4 = 8.5
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- Next step join Hu/Ba with either Co/Sh or Mo/Ha
+- Hu/Ba&#8211;Co/Sh\: (6+9+7+10)/4 = 8
+- Hu/Ba&#8211;Mo/Ha\: (8+9+7+10)/4 = 8.5
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- distance of 4\:
+- 3.0 + 1.0 = 4
+- 2.5 + 1.5 = 4
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- connect &#8220;c&#8221; with &#8220;d&#8221;
+- distance is average of
+- (8+9+7+10+11+12+12+9)/8 = 9.75
+- branch length = 9.75/2 = 4.875
+- Mo/Ha to Ch is (16+14)/2 = 15
+
+=== layout: one-panel
+@replaceme
+
+# *Neighbor Joining*
+
+@body
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_037.png)
+
+![Slide image 37](assets/lect12c-more_gene_trees/image_033.png)
+
+- join e with Ch
+- (13+13+16+15+16+14)/6 = 14.5
+- branch length = 7.25
+- 7.25 &#8211; 4.875 = 2.375
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Start with the smallest distance in the matrix.
+- Update the matrix after each merge.
+- Keep earlier branches when adding a new cluster.
+- Check the final tree against the original distances.
+
+=== layout: theend
+
+# THE END
+

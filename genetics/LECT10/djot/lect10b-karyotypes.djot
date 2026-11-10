@@ -304,7 +304,7 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_022.png)
+![Lecture diagram](assets/visual_renewal/centromere_positions.drawn.svg)
 
 === layout: one-panel
 
@@ -312,7 +312,7 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_023.png)
+![Lecture diagram](assets/visual_renewal/metacentric_movement.drawn.svg)
 
 === layout: one-panel
 
@@ -320,7 +320,7 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_024.png)
+![Lecture diagram](assets/visual_renewal/submetacentric_movement.drawn.svg)
 
 === layout: one-panel
 
@@ -328,7 +328,7 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_025.png)
+![Lecture diagram](assets/visual_renewal/acrocentric_movement.drawn.svg)
 
 === layout: one-plus-two-panels
 
@@ -437,7 +437,11 @@ Match each description to a term.
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_030.jpg)
+![Lecture diagram](assets/visual_renewal/human_chromosome_2_fusion.drawn.svg)
+
+- A chromosome with two functional centromeres cannot persist for very long.
+- The centromere in the long arm became inactivated.
+- No obvious indication of the inactivated centromere remains.
 
 @notes
 

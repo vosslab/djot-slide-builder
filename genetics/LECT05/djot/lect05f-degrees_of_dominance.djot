@@ -140,7 +140,7 @@ The next slides introduce the terms used for those patterns.
   - M&ndash;, mm = 2
   - S&ndash;, ss =2
   - TT, Tt, tt = 3
-- [2 × 2 × 3 = 12]{color=orange}
+- [2 &#215; 2 &#215; 3 = 12]{color=orange}
 
 === layout: two-panels
 
@@ -153,10 +153,10 @@ The next slides introduce the terms used for those patterns.
 
 - Each gene is independent, [multiplication rule]{color=orange}
 - Incompleteness does not matter, since we are discussing genotype.
-- (b) MM is ¼, SS is ¼, and tt is ¼
-- [¼ × ¼ × ¼ = 1/64]{color=orange}
-- (c) MM [or]{color=blue} mm is ½, SS [or]{color=blue} ss is ½, TT [or]{color=blue} tt is ½
-- [½ × ½ × ½ = 1/8]{color=orange}
+- (b) MM is &#188;, SS is &#188;, and tt is &#188;
+- [&#188; &#215; &#188; &#215; &#188; = 1/64]{color=orange}
+- (c) MM [or]{color=blue} mm is &#189;, SS [or]{color=blue} ss is &#189;, TT [or]{color=blue} tt is &#189;
+- [&#189; &#215; &#189; &#215; &#189; = 1/8]{color=orange}
 
 === layout: section
 
@@ -349,7 +349,7 @@ The next slides introduce the terms used for those patterns.
 
 ![Slide image 11](assets/lect05f-degrees_of_dominance/image_011.png)
 
-![Slide image 12](assets/lect05f-degrees_of_dominance/image_012.png)
+![Slide image 12](assets/lect05f-degrees_of_dominance/mouse_graft_network.drawn.svg)
 
 ![Slide image 12](assets/lect05f-degrees_of_dominance/image_010.png)
 
@@ -359,7 +359,7 @@ The next slides introduce the terms used for those patterns.
 
 @left
 
-![Slide image 12](assets/lect05f-degrees_of_dominance/image_012.png)
+![Slide image 12](assets/lect05f-degrees_of_dominance/mouse_graft_network.drawn.svg)
 
 ![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
 
@@ -377,7 +377,7 @@ The next slides introduce the terms used for those patterns.
 
 @left
 
-![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
+![Slide image 13](assets/lect05f-degrees_of_dominance/mouse_graft_network.drawn.svg)
 
 ![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
 
@@ -396,7 +396,7 @@ The next slides introduce the terms used for those patterns.
 
 @left
 
-![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
+![Slide image 13](assets/lect05f-degrees_of_dominance/mouse_graft_network.drawn.svg)
 
 ![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
 
@@ -418,7 +418,7 @@ The next slides introduce the terms used for those patterns.
 - P&#x2081;: [AA]{color=red}; P&#x2082;: [aa]{color=red}; F&#x2081;: [Aa]{color=red}
 - F&#x2082;: [1 AA : 2 Aa : 1 aa]{color=red}
 
-![Slide image 13](assets/lect05f-degrees_of_dominance/image_012.png)
+![Slide image 13](assets/lect05f-degrees_of_dominance/mouse_graft_network.drawn.svg)
 
 ![Slide image 13](assets/lect05f-degrees_of_dominance/image_013.png)
 

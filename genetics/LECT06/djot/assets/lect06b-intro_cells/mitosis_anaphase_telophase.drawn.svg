@@ -1,0 +1,328 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Anaphase, Telophase and Cytokinesis</title><desc id="figure-desc">Anaphase has twelve daughter chromosomes, six moving to each pole with centromeres leading and arms trailing. Telophase has two emerging animal daughter cells joined at a cleavage furrow, with reforming envelopes, nucleoli and decondensing chromatin. Original unmeasured animal-cell schematics after lecture 06B source figures. Purple denotes chromosomes; yellow denotes microtubules and centrosomes. Counts of chromatin loops and spindle fibers are illustrative.</desc>
+<rect width="1200" height="760" fill="white"/>
+<path d="M560,390 H625 M613,382 L625,390 L613,398" fill="none" stroke="#758994" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<text x="280" y="53" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
+<tspan x="280" dy="0">Anaphase</tspan>
+</text>
+<text x="900" y="53" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#213547" text-anchor="middle" font-weight="700">
+<tspan x="900" dy="0">Telophase and Cytokinesis</tspan>
+</text>
+<g id="anaphase-cell-cutaway" transform="translate(280 390) scale(1 1.08)">
+<path d="M-219,-27 C-215,-144 -129,-218 -14,-219 C111,-227 211,-146 225,-33 C242,83 161,205 44,220 C-77,239 -193,168 -216,61 C-223,32 -224,0 -219,-27 Z" fill="#F3DDC4" stroke="#A48268" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-210,70 C-177,172 -73,231 44,211 C160,195 230,89 217,-27 C211,67 149,161 38,178 C-66,196 -160,153 -210,70 Z" fill="#DDBF9F" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-195,-65 C-163,-154 -83,-198 9,-198 C94,-205 177,-158 204,-84 C155,-133 97,-142 23,-140 C-75,-145 -151,-116 -195,-65 Z" fill="#FFF4E3" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-199,1 C-197,-89 -128,-153 -28,-159 C82,-174 184,-105 198,-14 C212,82 136,171 35,186 C-70,200 -178,141 -198,55 Z" fill="#FAEBD9" stroke="#C7A488" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-198,53 C-178,141 -70,200 35,186 C136,171 212,82 198,-14" fill="none" stroke="#B99375" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-175,-83 C-132,-140 -63,-164 11,-159" fill="none" stroke="#FFFDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<path d="M280,205 Q94,270 94,426" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q94,270 94,426" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q102,520 102,379" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q102,520 102,379" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q466,270 466,426" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q466,270 466,426" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q474,520 474,379" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q474,520 474,379" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q124,264.0 124,323" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q124,264.0 124,323" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-upper-daughter-1" data-chromosomes="1" data-chromatids="1">
+<path d="M107,347 Q111,332 124,323 Q137,332 142,344" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M107,347 Q111,332 124,323 Q137,332 142,344" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="124" cy="323" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,205 Q186,264.0 186,323" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q186,264.0 186,323" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-upper-daughter-2" data-chromosomes="1" data-chromatids="1">
+<path d="M169,359 Q173,332 186,323 Q199,332 204,356" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M169,359 Q173,332 186,323 Q199,332 204,356" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="186" cy="323" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,205 Q248,264.0 248,323" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q248,264.0 248,323" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-upper-daughter-3" data-chromosomes="1" data-chromatids="1">
+<path d="M231,370 Q235,332 248,323 Q261,332 266,367" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M231,370 Q235,332 248,323 Q261,332 266,367" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="248" cy="323" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,205 Q310,264.0 310,323" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q310,264.0 310,323" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-upper-daughter-4" data-chromosomes="1" data-chromatids="1">
+<path d="M293,347 Q297,332 310,323 Q323,332 328,344" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M293,347 Q297,332 310,323 Q323,332 328,344" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="310" cy="323" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,205 Q372,264.0 372,323" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q372,264.0 372,323" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-upper-daughter-5" data-chromosomes="1" data-chromatids="1">
+<path d="M355,359 Q359,332 372,323 Q385,332 390,356" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M355,359 Q359,332 372,323 Q385,332 390,356" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="372" cy="323" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,205 Q434,264.0 434,323" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,205 Q434,264.0 434,323" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-upper-daughter-6" data-chromosomes="1" data-chromatids="1">
+<path d="M417,370 Q421,332 434,323 Q447,332 452,367" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M417,370 Q421,332 434,323 Q447,332 452,367" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="434" cy="323" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,577 Q124,519.0 124,461" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q124,519.0 124,461" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-lower-daughter-1" data-chromosomes="1" data-chromatids="1">
+<path d="M107,437 Q111,452 124,461 Q137,452 142,440" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M107,437 Q111,452 124,461 Q137,452 142,440" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="124" cy="461" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,577 Q186,519.0 186,461" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q186,519.0 186,461" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-lower-daughter-2" data-chromosomes="1" data-chromatids="1">
+<path d="M169,425 Q173,452 186,461 Q199,452 204,428" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M169,425 Q173,452 186,461 Q199,452 204,428" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="186" cy="461" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,577 Q248,519.0 248,461" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q248,519.0 248,461" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-lower-daughter-3" data-chromosomes="1" data-chromatids="1">
+<path d="M231,414 Q235,452 248,461 Q261,452 266,417" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M231,414 Q235,452 248,461 Q261,452 266,417" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="248" cy="461" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,577 Q310,519.0 310,461" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q310,519.0 310,461" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-lower-daughter-4" data-chromosomes="1" data-chromatids="1">
+<path d="M293,437 Q297,452 310,461 Q323,452 328,440" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M293,437 Q297,452 310,461 Q323,452 328,440" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="310" cy="461" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,577 Q372,519.0 372,461" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q372,519.0 372,461" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-lower-daughter-5" data-chromosomes="1" data-chromatids="1">
+<path d="M355,425 Q359,452 372,461 Q385,452 390,428" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M355,425 Q359,452 372,461 Q385,452 390,428" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="372" cy="461" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<path d="M280,577 Q434,519.0 434,461" fill="none" stroke="#A17D28" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M280,577 Q434,519.0 434,461" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g id="anaphase-lower-daughter-6" data-chromosomes="1" data-chromatids="1">
+<path d="M417,414 Q421,452 434,461 Q447,452 452,417" fill="none" stroke="#35396D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M417,414 Q421,452 434,461 Q447,452 452,417" fill="none" stroke="#56529A" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="434" cy="461" rx="4.5" ry="3" fill="#213547" stroke="none" stroke-width="0" />
+</g>
+<g id="anaphase-upper-centrosome" transform="translate(280 205) scale(0.85)">
+<ellipse cx="0" cy="0" rx="20" ry="17" fill="#F7E39A" stroke="none" stroke-width="0" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g transform="translate(-9 -1) rotate(-25)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g transform="translate(8 -5) rotate(65)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+</g>
+<g id="anaphase-lower-centrosome" transform="translate(280 577) scale(0.85)">
+<ellipse cx="0" cy="0" rx="20" ry="17" fill="#F7E39A" stroke="none" stroke-width="0" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g transform="translate(-9 -1) rotate(-25)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g transform="translate(8 -5) rotate(65)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+</g>
+<g id="telophase-cleaving-cell">
+<path d="M904,170 C1020,164 1102,234 1108,307 C1116,359 1085,394 1030,405 C1086,419 1117,455 1107,517 C1091,602 1003,646 899,635 C789,643 705,591 698,512 C691,455 717,421 772,405 C718,390 686,354 697,296 C710,221 791,168 904,170 Z" fill="#F3DDC4" stroke="#A48268" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M699,511 C714,586 791,626 899,618 C1005,630 1083,587 1107,517 C1091,602 1003,646 899,635 C789,643 705,591 699,511 Z" fill="#DDBF9F" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M708,307 C720,235 791,194 899,190 C1005,184 1083,238 1091,302 C1099,350 1050,382 991,393 C943,404 835,404 788,391 C729,374 700,352 708,307 Z" fill="#FAEBD9" stroke="#C7A488" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M788,420 C835,408 943,407 991,419 C1057,434 1097,464 1091,510 C1081,579 997,617 899,609 C801,617 722,578 714,512 C709,465 733,438 788,420 Z" fill="#FAEBD9" stroke="#C7A488" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M731,263 C765,217 825,202 893,202" fill="none" stroke="#FFFDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M773,405 C834,420 970,423 1030,405" fill="none" stroke="#B99375" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-upper-nuclear-envelope">
+<ellipse cx="900" cy="312" rx="133" ry="76" fill="#ECE8F4" stroke="none" stroke-width="0" />
+<path d="M1032.68,317.30 A133,76 0 0 1 1012.79,352.27" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M987.26,369.36 A133,76 0 0 1 929.92,386.05" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M890.72,387.81 A133,76 0 0 1 829.52,376.45" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M799.62,361.86 A133,76 0 0 1 770.41,329.10" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M767.32,306.70 A133,76 0 0 1 787.21,271.73" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M812.74,254.64 A133,76 0 0 1 870.08,237.95" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M909.28,236.19 A133,76 0 0 1 970.48,247.55" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1000.38,262.14 A133,76 0 0 1 1029.59,294.90" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-upper-uncondensed-chromatin" transform="translate(900 312) scale(1.02 0.72)">
+<path d="M-103,-20 C-120,-68 -38,-88 -34,-48 S-87,-16 -68,30 S-13,60 3,18 S59,-28 85,12" fill="none" stroke="#655CA0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-98,38 C-57,5 -25,51 10,55 S79,32 61,-8 S10,-81 50,-72 S113,-17 94,38" fill="none" stroke="#8C81B8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-74,-66 C-65,-14 -18,-29 -17,4 S-35,74 -73,61 S-118,10 -80,1 S19,-35 50,7" fill="none" stroke="#655CA0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-16,-79 C-10,-43 36,-43 34,-12 S-13,19 16,42 S78,73 94,42" fill="none" stroke="#8C81B8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-106,-1 C-62,-32 -36,14 -55,35 S-6,85 24,63 S17,20 53,20 S107,-16 85,-53" fill="none" stroke="#655CA0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-50,-82 C-13,-83 6,-47 -23,-38 S-19,25 12,-2 S82,-49 102,-5" fill="none" stroke="#8C81B8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<ellipse cx="941" cy="305" rx="20" ry="15" fill="#9381B8" stroke="#35396D" stroke-width="1.5" />
+<ellipse cx="935" cy="301" rx="6" ry="4" fill="#B8A6D0" stroke="none" stroke-width="0" />
+<g id="telophase-lower-nuclear-envelope">
+<ellipse cx="900" cy="510" rx="133" ry="76" fill="#ECE8F4" stroke="none" stroke-width="0" />
+<path d="M1032.68,515.30 A133,76 0 0 1 1012.79,550.27" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M987.26,567.36 A133,76 0 0 1 929.92,584.05" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M890.72,585.81 A133,76 0 0 1 829.52,574.45" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M799.62,559.86 A133,76 0 0 1 770.41,527.10" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M767.32,504.70 A133,76 0 0 1 787.21,469.73" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M812.74,452.64 A133,76 0 0 1 870.08,435.95" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M909.28,434.19 A133,76 0 0 1 970.48,445.55" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1000.38,460.14 A133,76 0 0 1 1029.59,492.90" fill="none" stroke="#A699BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="telophase-lower-uncondensed-chromatin" transform="translate(900 510) scale(1.02 0.72)">
+<path d="M-103,-20 C-120,-68 -38,-88 -34,-48 S-87,-16 -68,30 S-13,60 3,18 S59,-28 85,12" fill="none" stroke="#655CA0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-98,38 C-57,5 -25,51 10,55 S79,32 61,-8 S10,-81 50,-72 S113,-17 94,38" fill="none" stroke="#8C81B8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-74,-66 C-65,-14 -18,-29 -17,4 S-35,74 -73,61 S-118,10 -80,1 S19,-35 50,7" fill="none" stroke="#655CA0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-16,-79 C-10,-43 36,-43 34,-12 S-13,19 16,42 S78,73 94,42" fill="none" stroke="#8C81B8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-106,-1 C-62,-32 -36,14 -55,35 S-6,85 24,63 S17,20 53,20 S107,-16 85,-53" fill="none" stroke="#655CA0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-50,-82 C-13,-83 6,-47 -23,-38 S-19,25 12,-2 S82,-49 102,-5" fill="none" stroke="#8C81B8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<ellipse cx="941" cy="503" rx="20" ry="15" fill="#9381B8" stroke="#35396D" stroke-width="1.5" />
+<ellipse cx="935" cy="499" rx="6" ry="4" fill="#B8A6D0" stroke="none" stroke-width="0" />
+<g id="telophase-upper-centrosome" transform="translate(900 210) scale(0.65)">
+<ellipse cx="0" cy="0" rx="20" ry="17" fill="#F7E39A" stroke="none" stroke-width="0" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g transform="translate(-9 -1) rotate(-25)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g transform="translate(8 -5) rotate(65)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+</g>
+<g id="telophase-lower-centrosome" transform="translate(900 600) scale(0.65)">
+<ellipse cx="0" cy="0" rx="20" ry="17" fill="#F7E39A" stroke="none" stroke-width="0" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M14.0,0.0 L36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,7.0 L26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,12.1 L18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M0.0,14.0 L0.0,31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,12.1 L-18.0,31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,7.0 L-26.8,15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-14.0,0.0 L-36.0,0.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-12.1,-7.0 L-26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-7.0,-12.1 L-18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M-0.0,-14.0 L-0.0,-31.0" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M7.0,-12.1 L18.0,-31.2" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#A17D28" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.1,-7.0 L26.8,-15.5" fill="none" stroke="#EDC54B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<g transform="translate(-9 -1) rotate(-25)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g transform="translate(8 -5) rotate(65)">
+<rect x="-5" y="-12" width="10" height="24" rx="3" fill="#EDC54B" stroke="#A17D28" stroke-width="1.8"/>
+<path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+</g>
+<text x="41" y="675" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#213547" text-anchor="start" font-weight="400">
+<tspan x="41" dy="0">Daughter</tspan>
+<tspan x="41" dy="28.32">chromosomes</tspan>
+</text>
+<path d="M149,637 L83,566 L83,410 L107,347" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M149,637 L83,566 L83,410 L107,347" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M163,637 L163,562 L169,425" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M163,637 L163,562 L169,425" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<text x="641" y="113" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
+<tspan x="641" dy="0">Cleavage</tspan>
+<tspan x="641" dy="27.139999999999997">furrow</tspan>
+</text>
+<path d="M716,151 L659,258 L697,384 L772,405" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M716,151 L659,258 L697,384 L772,405" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1034" y="112" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
+<tspan x="1034" dy="0">Nucleolus</tspan>
+<tspan x="1034" dy="27.139999999999997">forming</tspan>
+</text>
+<path d="M1049,148 L1057,224 L955,300" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1049,148 L1057,224 L955,300" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<text x="877" y="685" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">
+<tspan x="877" dy="0">Nuclear envelope forming</tspan>
+</text>
+<path d="M807,654 L763,604 L785,548" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M807,654 L763,604 L785,548" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M850,654 L851,617 L869,583" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M850,654 L851,617 L869,583" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

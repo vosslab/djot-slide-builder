@@ -1,0 +1,210 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 12E
+
+## Evolutionary Time
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## December 1, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain why gene trees can differ from species trees.
+- Compare substitution rates among sequence regions.
+- Explain how molecular clocks estimate divergence.
+- Distinguish orthologous and paralogous genes.
+
+=== layout: section
+
+# Evolutionary Time
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 2](assets/lect12e-evol_time/image_002.jpg)
+
+- *Gene trees may not coincide with species trees*
+
+- A gene tree may not coincide with a species tree because of the sorting of polymorphic alleles in the different lineages.
+
+=== layout: section
+
+# Molecular Clocks and Evolutionary Time
+
+=== layout: one-panel
+
+# *Rates of nucleotide substitution in mammalian genes*
+
+@body
+
+![Slide image 3](assets/lect12e-evol_time/image_003.jpg)
+
+
+=== layout: one-panel
+@replaceme
+
+
+@body
+
+![Slide image 4](assets/lect12e-evol_time/image_004.png)
+
+![Slide image 5](assets/lect12e-evol_time/image_005.svg)
+
+- There are 43 nucleotide sites with variable base pairs, as well as several sites where insertions or deletions have occurred.
+- Although 18 variable sites occur within the 4 exons of the Adh gene, only 1 of these variations (at site 1,490) results in an amino acid change.
+
+- *Base-pair substitutions*
+
+- *Insertion sites*
+
+- *Exon*
+
+- *Intron*
+
+- *Deletion*
+
+- *Substitution resulting in translation of different amino acid*
+
+- [*1*]{color=#0A92DB}
+
+- [*500*]{color=#009EE7}
+
+- [*1,000*]{color=#009EE7}
+
+- [*1,500*]{color=#009EE7}
+
+- [*2,000*]{color=#009EE7}
+
+- [*2,500*]{color=#009EE7}
+
+- data from a study comparing the DNA sequence of the alcohol dehydrogenase (Adh) gene in several fruit flies
+
+=== layout: two-panels
+
+# *Rapid Reproduction*
+
+@left
+
+- Mutation rates are low in animals and plants
+- The average is about one mutation in every 100,000 genes per generation
+- Mutation rates are often lower in prokaryotes and higher in viruses
+- Mutations accumulate quickly in prokaryotes and viruses because they have short generation times
+
+@right
+
+![Slide image 6](assets/lect12e-evol_time/image_006.png)
+
+=== layout: one-panel
+
+# *Rates of DNA Evolution*
+
+@body
+
+- There are only 4 nucleotides, but there are 20 aa&#8230;smaller number of subunits means changes at nucleotide sites are more likely than at amino acid sites
+- Again, nucleotide sites evolve at different rates&#8230; depending on the function and position in the genome
+  - Synonymous substitution &#8211; doesn&#8217;t result in aa replacement (Third codon position)
+  - Non-synonymous substitution &#8211; results in aa replacement&#8230; (First and second position.)
+  - Pseudogenes &#8211; fastest evolving then fourfold degenerate site
+
+=== layout: one-panel
+
+# *Rate of Protein Evolution*
+
+@body
+
+- Fraction of sites that undergo a change in some designated interval of time&#8230;
+  - Ex\: beta globin molecule between Mouse and Human is 1.23 aa replacement per aa site per billion years.
+- Mouse and Human lineages have been separated for 80 million years&#8230;.
+  - the last time shared a common ancestor
+- 147 aa long Beta globin chain&#8230;
+  - About 29 different aa changes total or about 8 aa change in first 50 aa..
+
+![Slide image 7](assets/lect12e-evol_time/image_007.png)
+
+=== layout: one-panel
+
+# *Molecular Clock*
+
+@body
+
+![Slide image 8](assets/lect12e-evol_time/image_008.png)
+
+=== layout: section
+
+# Homologous Genes
+
+=== layout: one-panel
+
+# *Homologous Genes*
+
+@body
+
+- Orthologous genes
+  - genes that are duplicated as an accompaniment to speciation and that retain the same function.
+- Paralogous genes
+  - duplicated genes that take on new gene functions.
+
+=== layout: one-panel
+
+# *Origin of New Species*
+
+@body
+
+- New genes come from preexisting genes&#8230;raw material comes from duplications of the regions of the genome
+- [*Orthologous genes*]{underline=true}\: Groups of genes or proteins from different organisms that have the same function are said to be orthologous
+- [*Paralogous genes*]{underline=true}\: Two homologous sequences (e.g., sequences that share a common evolutionary ancestor) that diverged by gene duplication, as opposed to orthologs, which diverged by speciation
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 9](assets/lect12e-evol_time/image_009.png)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 10](assets/lect12e-evol_time/image_010.png)
+
+=== layout: two-panels
+
+
+@left
+
+![Slide image 11](assets/lect12e-evol_time/image_011.jpg)
+
+@right
+
+- *Specialization of paralogous genes by subfunctionalization*
+
+- Gene duplication allows the paralogous copies to evolve more specialized functions.
+- Specialization of paralogs accompanying the loss of functional capabilities is called subfunctionalization.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- A gene tree can differ from the species tree.
+- Sequence regions can evolve at different rates.
+- Molecular clocks connect divergence with time.
+- Homologous genes can arise by speciation or duplication.
+
+=== layout: theend
+
+# THE END
+

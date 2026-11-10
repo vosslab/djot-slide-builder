@@ -70,7 +70,7 @@ Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors iden
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_003.png)
+![Lecture diagram](assets/lect09d-yeast_unordered_tetrads/yeast_cycle.drawn.svg)
 
 === layout: two-panels
 
@@ -92,7 +92,7 @@ Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors iden
 
 @body
 
-![Exchange of Mating Factors](assets/lect09_tetrad_concepts/yeast_signals.svg)
+![Exchange of Mating Factors](assets/lect09d-yeast_unordered_tetrads/yeast_signals.drawn.svg)
 
 === layout: one-panel
 
@@ -100,7 +100,7 @@ Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors iden
 
 @body
 
-![Haploid Yeast Cells Mate](assets/lect09_tetrad_concepts/yeast_mating.svg)
+![Haploid Yeast Cells Mate](assets/lect09d-yeast_unordered_tetrads/yeast_mating.drawn.svg)
 
 - The cells join; their two haploid nuclei are still separate.
 
@@ -110,7 +110,7 @@ Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors iden
 
 @body
 
-![Mating Produces a Diploid Cell](assets/lect09_tetrad_concepts/yeast_diploid.svg)
+![Mating Produces a Diploid Cell](assets/lect09d-yeast_unordered_tetrads/yeast_diploid.drawn.svg)
 
 - The nuclei fuse, producing one diploid a/&#945; cell.
 
@@ -125,7 +125,7 @@ Homework symbols: lowercase letters = mutant alleles; + = wild type. Colors iden
 
 @left
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_009.jpg)
+![Lecture diagram](assets/lect09d-yeast_unordered_tetrads/yeast_meiosis.drawn.svg)
 
 @right
 
@@ -163,7 +163,7 @@ Point to each of the four spores. The three characters within one spore are thre
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_005.jpg)
+![Lecture diagram](assets/lect09d-yeast_unordered_tetrads/yeast_reference.drawn.svg)
 
 
 === layout: bookend

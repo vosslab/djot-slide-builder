@@ -1,0 +1,61 @@
+from pathlib import Path
+import re, shutil, hashlib
+P=Path(__file__).parent;D=Path('genetics/LECT12/djot');A=D/'assets/lect12b-gene_trees'
+for p in P.glob('phy_b_*.drawn.svg'):
+ if 'bayes' not in p.name and 'upgma' not in p.name:shutil.copyfile(p,A/p.name)
+for part in ('01','02'):
+ target=D/f'lect12b_gene_trees_part_{part}.djot'
+ baseline=P/f'baseline_part_{part}.djot'
+ if not baseline.exists():shutil.copyfile(target,baseline)
+ s=baseline.read_text();slides=re.split(r'(?=^=== layout:)',s,flags=re.M)
+ result=[]
+ for block in slides:
+  # Preserve all unaffected native data and M2 rotations verbatim.
+  replacements={'006':'tree_terms','007':'primate_nodes','014':'branch_points','015':'mrca','016':'three_forms','019':'polytomy','025':'parsimony','040':'tree_matrix'}
+  for old,new in replacements.items():block=re.sub(r'!\[Slide image \d+\]\(assets/lect12b-gene_trees/image_'+old+r'\.png\)',f'![Gene tree diagram](assets/lect12b-gene_trees/phy_b_{new}.drawn.svg)',block)
+  if 'The time axis in gene trees is crucial' in block:block=block.replace('The time axis in gene trees is crucial for understanding the timing of divergences.','In time-scaled gene trees, the time axis shows when divergences occurred. This diagram has schematic branch lengths.')
+  if 'image_020.png' in block:
+   block=re.sub(r'!\[Slide image 20\]\([^\n]+\)', '{column-widths="1,5.5"}\n'+P.joinpath('hemoglobin_table.djot').read_text().rstrip(),block).replace('@replaceme\n','')
+   block=block.replace('&#8220;&#8211;&#8220;','`-`').replace('&#8220;.&#8221;','`.`').replace('&#8220;A-Z&#8221;','`A-Z`')
+  if re.search(r'image_0(?:08|09|10|11|12)\.svg',block):
+   block=block.replace('@replaceme\n',''); im=re.search(r'!\[[^\n]+',block).group(0); before,after=block.split(im,1)
+   if '- Gene\n- Tree' in after:block='=== layout: one-panel\n\n# Gene Tree\n\n@body\n\n'+im+'\n'
+   else:
+    title='Gene Tree: '+('Answer' if '(7)' in after or 'color=red' in after else 'Question')
+    block='=== layout: two-panels\n\n# '+title+'\n\n@left\n\n'+im+'\n\n@right\n'+after
+  if 'image_013.png' in block:
+   block='''=== layout: two-panels
+
+# Primate Divergence Estimates
+
+@left
+
+![Primate tree with six numbered ancestral nodes](assets/lect12b-gene_trees/phy_b_primate_estimates.drawn.svg)
+
+@right
+
+| Node | Estimate (million years) |
+|---|---|
+| 1 | 20.903 &#177; 1.503 |
+| 2 | 14.757 &#177; 0.217 |
+| 3 | 7.258 &#177; 0.530 |
+| 4 | 5.487 &#177; 0.434 |
+| 5 | 1.818 &#177; 0.180 |
+| 6 | 3.206 &#177; 0.280 |
+
+- Historical estimates from the source figure.
+'''
+  if any(f'phy_b_{k}.' in block for k in ('branch_points','mrca','polytomy')):
+   im=re.search(r'!\[[^\n]+',block).group(0);block=block.replace(im+'\n','');block=block.replace('layout: one-panel','layout: two-panels').replace('@replaceme\n','').replace('@body','@left\n\n'+im+'\n\n@right')
+  if part=='02' and any(k in block for k in ('# *Step 2\\: Create Gene Tree*','# *Step 2\\: Merge N.Wh. and S.Wh.*','# *Step 3\\: Find Next Smallest*','# *DONE!!!*')):
+   stage='complete' if '- 3\n' in block else 'joined' if '- 5\n' in block else 'pair'
+   marker='@right' if '@right' in block else '@body';before,after=block.split(marker,1)
+   # Floating labels are replaced by their source-authoritative geometry; prose stays native.
+   after=re.sub(r'^- (N\.Wh\.|S\.Wh\.|Blk\.R|2|3|5)\n','',after,flags=re.M)
+   block=before.replace('@replaceme\n','')+marker+'\n\n![Rhino tree construction stage](assets/lect12b-gene_trees/phy_b_rhino_'+stage+'.drawn.svg)\n'+after
+  if 'phy_b_tree_matrix' in block:
+   block=block.replace('@left','@left\n\n')
+   if 'layout: one-panel' in block:block=block.replace('@body','@body\n\n- 17.22 What is the UPGMA distance matrix for the gene tree shown here?')
+   if '12.6 is only the average' in block:block=block.replace('- 12.6 is only the average\n- numbers can be different','- The tree implies 12.6 for both path distances.\n- Original observed distances can differ: 12.9 and 12.3 have the same average, 12.6.')
+  result.append(block)
+ target.write_text(''.join(result))

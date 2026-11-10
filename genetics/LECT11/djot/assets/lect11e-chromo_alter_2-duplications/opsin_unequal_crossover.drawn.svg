@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title description">
+<title id="title">Unequal crossing over of red and green opsin genes</title>
+<desc id="description">Two active chromatids are misaligned. A crossover in the homologous region between genes produces an r-only chromatid and an r-g-g chromatid. Red r and green g identities and the source panel B callout are retained. White clearance at the crossing denotes an overpass, not a fused four-way junction.</desc>
+<metadata id="provenance">Original editable schematic constructed from instructor asset genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_005.png; source meaning and labels retained, geometry recomposed. Unmeasured chromosome lengths. 2026-11-09.</metadata>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#213547" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect width="1200" height="1200" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="45" y="63" font-size="32" text-anchor="start" fill="#213547" font-weight="bold" >(B)</text>
+<g id="misaligned-active-chromatids">
+<path d="M350 110 C420 105 500 115 570 110 S800 105 990 110" fill="none" stroke="white" stroke-width="59" stroke-linecap="round" stroke-linejoin="round"/><path d="M350 110 C420 105 500 115 570 110 S800 105 990 110" fill="none" stroke="#aaa1c4" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="440" y="83" width="102" height="54" rx="15" fill="#b92b36" stroke="white" stroke-width="2"/><text x="491" y="122" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >r</text>
+<rect x="625" y="83" width="102" height="54" rx="15" fill="#388440" stroke="white" stroke-width="2"/><text x="676" y="122" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >g</text>
+<path d="M175 218 C245 213 325 223 395 218 S625 213 815 218" fill="none" stroke="white" stroke-width="59" stroke-linecap="round" stroke-linejoin="round"/><path d="M175 218 C245 213 325 223 395 218 S625 213 815 218" fill="none" stroke="#aaa1c4" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="265" y="191" width="102" height="54" rx="15" fill="#b92b36" stroke="white" stroke-width="2"/><text x="316" y="230" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >r</text>
+<rect x="450" y="191" width="102" height="54" rx="15" fill="#388440" stroke="white" stroke-width="2"/><text x="501" y="230" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >g</text>
+</g>
+<path d="M610 278 L610 348" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<g id="crossover-between-genes">
+<path d="M175 535 L574 535 C625 535 653 425 710 425 L1065 425" fill="none" stroke="white" stroke-width="59" stroke-linecap="round" stroke-linejoin="round"/><path d="M175 535 L574 535 C625 535 653 425 710 425 L1065 425" fill="none" stroke="#aaa1c4" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M350 425 L574 425 C625 425 653 535 710 535 L1065 535" fill="none" stroke="white" stroke-width="59" stroke-linecap="round" stroke-linejoin="round"/><path d="M350 425 L574 425 C625 425 653 535 710 535 L1065 535" fill="none" stroke="#aaa1c4" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="265" y="508" width="102" height="54" rx="15" fill="#b92b36" stroke="white" stroke-width="2"/><text x="316" y="547" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >r</text>
+<rect x="450" y="508" width="102" height="54" rx="15" fill="#388440" stroke="white" stroke-width="2"/><text x="501" y="547" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >g</text>
+<rect x="440" y="398" width="102" height="54" rx="15" fill="#b92b36" stroke="white" stroke-width="2"/><text x="491" y="437" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >r</text>
+<rect x="745" y="398" width="102" height="54" rx="15" fill="#388440" stroke="white" stroke-width="2"/><text x="796" y="437" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >g</text>
+</g>
+<path d="M610 595 L610 669" fill="none" stroke="#213547" stroke-width="2.8" marker-end="url(#arrow)"/>
+<g id="reciprocal-opsin-products">
+<path d="M350 730 Q490 726 650 730 L725 730" fill="none" stroke="white" stroke-width="59" stroke-linecap="round" stroke-linejoin="round"/><path d="M350 730 Q490 726 650 730 L725 730" fill="none" stroke="#aaa1c4" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="440" y="703" width="102" height="54" rx="15" fill="#b92b36" stroke="white" stroke-width="2"/><text x="491" y="742" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >r</text>
+<path d="M175 843 Q350 839 520 843 T1065 843" fill="none" stroke="white" stroke-width="59" stroke-linecap="round" stroke-linejoin="round"/><path d="M175 843 Q350 839 520 843 T1065 843" fill="none" stroke="#aaa1c4" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="265" y="816" width="102" height="54" rx="15" fill="#b92b36" stroke="white" stroke-width="2"/><text x="316" y="855" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >r</text>
+<rect x="450" y="816" width="102" height="54" rx="15" fill="#388440" stroke="white" stroke-width="2"/><text x="501" y="855" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >g</text>
+<rect x="635" y="816" width="102" height="54" rx="15" fill="#388440" stroke="white" stroke-width="2"/><text x="686" y="855" font-size="38" text-anchor="middle" fill="white" font-weight="normal" >g</text>
+</g>
+<g id="green-opsin-callout">
+<path d="M585 925 L600 768 M710 925 L755 881" fill="none" stroke="#287caf" stroke-width="4"/>
+<circle cx="600" cy="768" r="6" fill="#287caf"/><circle cx="755" cy="881" r="6" fill="#287caf"/>
+<rect x="105" y="925" width="990" height="240" rx="22" fill="#edf5fa" stroke="#287caf" stroke-width="2"/>
+<text x="150" y="973" font-size="37" text-anchor="start" fill="#213547" font-weight="normal" >Unequal crossing over in the region</text>
+<text x="150" y="1020" font-size="37" text-anchor="start" fill="#213547" font-weight="normal" >of homology between the genes</text>
+<text x="150" y="1067" font-size="37" text-anchor="start" fill="#213547" font-weight="normal" >results in deletion or duplication of</text>
+<text x="150" y="1114" font-size="37" text-anchor="start" fill="#213547" font-weight="normal" >the green-opsin gene.</text>
+</g>
+</g></svg>

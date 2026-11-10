@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc"><title id="title">Random X inactivation is inherited within cell lineages</title><desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc><rect width="1200" height="660" fill="white"/>
+<g id="zygote"><ellipse cx="700" cy="65" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M683 38 V92" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<path d="M717 38 V92" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<text x="180" y="70" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Zygote</text>
+<path d="M700 110 L400 177" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="early-0"><ellipse cx="400" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M383 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<path d="M417 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M400 264 L400 337" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="inactivated-0"><ellipse cx="400" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<circle cx="383" cy="380" r="12" fill="#B74300"/>
+<path d="M417 353 V407" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M400 425 L350 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-0-0"><ellipse cx="350" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<circle cx="333" cy="540" r="12" fill="#B74300"/>
+<path d="M367 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M400 425 L450 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-0-1"><ellipse cx="450" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<circle cx="433" cy="540" r="12" fill="#B74300"/>
+<path d="M467 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M700 110 L600 177" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="early-1"><ellipse cx="600" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M583 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<path d="M617 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M600 264 L600 337" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="inactivated-1"><ellipse cx="600" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M583 353 V407" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="617" cy="380" r="12" fill="#076DAD"/>
+</g>
+<path d="M600 425 L550 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-1-0"><ellipse cx="550" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M533 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="567" cy="540" r="12" fill="#076DAD"/>
+</g>
+<path d="M600 425 L650 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-1-1"><ellipse cx="650" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M633 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="667" cy="540" r="12" fill="#076DAD"/>
+</g>
+<path d="M700 110 L800 177" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="early-2"><ellipse cx="800" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M783 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<path d="M817 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M800 264 L800 337" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="inactivated-2"><ellipse cx="800" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<circle cx="783" cy="380" r="12" fill="#B74300"/>
+<path d="M817 353 V407" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M800 425 L750 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-2-0"><ellipse cx="750" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<circle cx="733" cy="540" r="12" fill="#B74300"/>
+<path d="M767 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M800 425 L850 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-2-1"><ellipse cx="850" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<circle cx="833" cy="540" r="12" fill="#B74300"/>
+<path d="M867 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M700 110 L1000 177" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="early-3"><ellipse cx="1000" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M983 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<path d="M1017 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
+</g>
+<path d="M1000 264 L1000 337" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="inactivated-3"><ellipse cx="1000" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M983 353 V407" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="1017" cy="380" r="12" fill="#076DAD"/>
+</g>
+<path d="M1000 425 L950 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-3-0"><ellipse cx="950" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M933 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="967" cy="540" r="12" fill="#076DAD"/>
+</g>
+<path d="M1000 425 L1050 497" stroke="#647681" stroke-width="2" fill="none"/>
+<g id="descendant-3-1"><ellipse cx="1050" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path d="M1033 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
+<circle cx="1067" cy="540" r="12" fill="#076DAD"/>
+</g>
+<text x="180" y="215" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Early cleavage</text>
+<text x="180" y="245" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">Both X chromosomes active</text>
+<text x="180" y="375" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Random X inactivation</text>
+<text x="180" y="540" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Somatic descendants</text>
+<text x="700" y="635" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Line: active X    *    Compact circle: inactive X</text>
+</svg>

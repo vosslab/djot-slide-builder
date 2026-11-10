@@ -1,0 +1,377 @@
+{
+  "status": "complete; all 45 verified duplicates removed",
+  "candidate_count": 45,
+  "canonical_djots_checked": 186,
+  "canonical_references": 0,
+  "original_assets_unchanged": 105,
+  "restored_djots_unchanged": 6,
+  "archive_xml_valid": 46,
+  "files": [
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_bayes_columns.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_bayes_columns.drawn.svg",
+      "canonical_sha256": "2aa3e51f832ac4bb28f6eef4751ca0889a2cdaa36c334d97e6d87423c094e3a8",
+      "archive_sha256": "2aa3e51f832ac4bb28f6eef4751ca0889a2cdaa36c334d97e6d87423c094e3a8",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_branch_points.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_branch_points.drawn.svg",
+      "canonical_sha256": "bc19b48e9ce394f5ca17d2f5797a5d74dac32a9ed2306a0857b41f3b1f91afbe",
+      "archive_sha256": "bc19b48e9ce394f5ca17d2f5797a5d74dac32a9ed2306a0857b41f3b1f91afbe",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_mrca.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_mrca.drawn.svg",
+      "canonical_sha256": "8cb3d4615b852ca1ada640f23897230c0f52cc7e8fd0e134eb81f266fe65b113",
+      "archive_sha256": "8cb3d4615b852ca1ada640f23897230c0f52cc7e8fd0e134eb81f266fe65b113",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_nj_stage_1.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_nj_stage_1.drawn.svg",
+      "canonical_sha256": "537be93f5a4d4a0406cd7843187d9bf72ee093588276c65f2fb18de4e1383b52",
+      "archive_sha256": "537be93f5a4d4a0406cd7843187d9bf72ee093588276c65f2fb18de4e1383b52",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_nj_stage_2.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_nj_stage_2.drawn.svg",
+      "canonical_sha256": "1318a658180eced0eed73420fb7e59c964eab40fb7d16923c9b97e9be13804e3",
+      "archive_sha256": "1318a658180eced0eed73420fb7e59c964eab40fb7d16923c9b97e9be13804e3",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_nj_stage_3.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_nj_stage_3.drawn.svg",
+      "canonical_sha256": "ae6c2a0850f89dbd0c3f28e45d54d96392a93de8f55b346b9d1ba100f930b063",
+      "archive_sha256": "ae6c2a0850f89dbd0c3f28e45d54d96392a93de8f55b346b9d1ba100f930b063",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_parsimony.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_parsimony.drawn.svg",
+      "canonical_sha256": "e6be65801e711e6a8dcfbc768b04a662618509036e52f06b01323c660c4ec723",
+      "archive_sha256": "e6be65801e711e6a8dcfbc768b04a662618509036e52f06b01323c660c4ec723",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_polytomy.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_polytomy.drawn.svg",
+      "canonical_sha256": "8275bc84fd80fb2c7fa0e6e21c9dfe6ffbc45d51f09d6adf602644cd39f647a3",
+      "archive_sha256": "8275bc84fd80fb2c7fa0e6e21c9dfe6ffbc45d51f09d6adf602644cd39f647a3",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_primate_estimates.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_primate_estimates.drawn.svg",
+      "canonical_sha256": "b0aac3eb978811fc75076cf276dff4028bcdc0d39c15818fc9066ba754723198",
+      "archive_sha256": "b0aac3eb978811fc75076cf276dff4028bcdc0d39c15818fc9066ba754723198",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_primate_nodes.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_primate_nodes.drawn.svg",
+      "canonical_sha256": "25863ecc6f14822d2fe648dec6d1f5cff3a611cd3a07ac27ec867b1978c67887",
+      "archive_sha256": "25863ecc6f14822d2fe648dec6d1f5cff3a611cd3a07ac27ec867b1978c67887",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_rhino_complete.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_rhino_complete.drawn.svg",
+      "canonical_sha256": "2a6e1880629f88b3db817cc447f7a32355211756a17ef1ab67b5161c7d737285",
+      "archive_sha256": "2a6e1880629f88b3db817cc447f7a32355211756a17ef1ab67b5161c7d737285",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_rhino_joined.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_rhino_joined.drawn.svg",
+      "canonical_sha256": "0f29286060653d97430dbb6872f0a9a7d249c153568ae7e5db3ebeef41e6ee54",
+      "archive_sha256": "0f29286060653d97430dbb6872f0a9a7d249c153568ae7e5db3ebeef41e6ee54",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_rhino_pair.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_rhino_pair.drawn.svg",
+      "canonical_sha256": "f1049911d41316e9fd0d99b6a21ed6f3df50f3d08e78812d7bf211254d437418",
+      "archive_sha256": "f1049911d41316e9fd0d99b6a21ed6f3df50f3d08e78812d7bf211254d437418",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_selection.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_selection.drawn.svg",
+      "canonical_sha256": "3a5b3919bc0d48128ed7d62ff9792202e16d58d82361fb3ff1ed6510733255f8",
+      "archive_sha256": "3a5b3919bc0d48128ed7d62ff9792202e16d58d82361fb3ff1ed6510733255f8",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_taxonomy.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_taxonomy.drawn.svg",
+      "canonical_sha256": "34246c5a95a5af6cda0854077401a186031dcf48bd3bf73dc3493c1c79361d5b",
+      "archive_sha256": "34246c5a95a5af6cda0854077401a186031dcf48bd3bf73dc3493c1c79361d5b",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_three_forms.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_three_forms.drawn.svg",
+      "canonical_sha256": "dbf437402c15f95e306d1258567fd67004fa27f65924da132d56f62cd1bde2a3",
+      "archive_sha256": "dbf437402c15f95e306d1258567fd67004fa27f65924da132d56f62cd1bde2a3",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_tree_matrix.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_tree_matrix.drawn.svg",
+      "canonical_sha256": "aa9b7a94d8d59b79116ded07a190d4f9e4f32e29bd0e5538ff3aec7ca377110f",
+      "archive_sha256": "aa9b7a94d8d59b79116ded07a190d4f9e4f32e29bd0e5538ff3aec7ca377110f",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_tree_terms.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_tree_terms.drawn.svg",
+      "canonical_sha256": "f43ea55bebe706f706cacfbd6c54f7856de82c18323298a3a300ee29a91c8e4e",
+      "archive_sha256": "f43ea55bebe706f706cacfbd6c54f7856de82c18323298a3a300ee29a91c8e4e",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_upgma_stage_1.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_upgma_stage_1.drawn.svg",
+      "canonical_sha256": "4967e20c2a6460eda4e34a438745adb09c94f1b025b5d2d14bb8424ffa8151b0",
+      "archive_sha256": "4967e20c2a6460eda4e34a438745adb09c94f1b025b5d2d14bb8424ffa8151b0",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_upgma_stage_2.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_upgma_stage_2.drawn.svg",
+      "canonical_sha256": "bfcfe41e2800aba127b8ab9bdcc9b8d5babb477a1ea756fead1bf4c3329b3e4c",
+      "archive_sha256": "bfcfe41e2800aba127b8ab9bdcc9b8d5babb477a1ea756fead1bf4c3329b3e4c",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_upgma_stage_3.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_upgma_stage_3.drawn.svg",
+      "canonical_sha256": "a8670607c05e42ec471c67e5c50078ca1001a2934a2382c5e8504c812eb31e8b",
+      "archive_sha256": "a8670607c05e42ec471c67e5c50078ca1001a2934a2382c5e8504c812eb31e8b",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_upgma_stage_4.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_upgma_stage_4.drawn.svg",
+      "canonical_sha256": "aa164f5c0d9cbc39b79ad90d1e4eef61ed4211a042711fa49065f3fda24f89ef",
+      "archive_sha256": "aa164f5c0d9cbc39b79ad90d1e4eef61ed4211a042711fa49065f3fda24f89ef",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_upgma_stage_5.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_upgma_stage_5.drawn.svg",
+      "canonical_sha256": "2feaf157f930153a592309830e37dd95fd9ecaee2ddd65a7903d19e4e7a4de2a",
+      "archive_sha256": "2feaf157f930153a592309830e37dd95fd9ecaee2ddd65a7903d19e4e7a4de2a",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/phy_b_upgma_stage_6.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_b_upgma_stage_6.drawn.svg",
+      "canonical_sha256": "c50813f09a43e6a061c4df53809026ffe6d589b358316d313717e8d5266154c9",
+      "archive_sha256": "c50813f09a43e6a061c4df53809026ffe6d589b358316d313717e8d5266154c9",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/tree_rotation.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/tree_rotation.drawn.svg",
+      "canonical_sha256": "b1790a54eecd9d6c9c4a950a0ed84eab6125e66d69503a96bf0689ad706e5d49",
+      "archive_sha256": "b1790a54eecd9d6c9c4a950a0ed84eab6125e66d69503a96bf0689ad706e5d49",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12b-gene_trees/tree_rotation_four_forms.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/tree_rotation_four_forms.drawn.svg",
+      "canonical_sha256": "2c6624613341035b5ad9296d93a6ccc081075abba105cb0629d77e6c684ac26a",
+      "archive_sha256": "2c6624613341035b5ad9296d93a6ccc081075abba105cb0629d77e6c684ac26a",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_five_taxa.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_five_taxa.drawn.svg",
+      "canonical_sha256": "f925ebd63cab9f1db2eb520e648a14e7fee5afa15185e07e77f1147eb18cde0b",
+      "archive_sha256": "f925ebd63cab9f1db2eb520e648a14e7fee5afa15185e07e77f1147eb18cde0b",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_hartl_answer.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_hartl_answer.drawn.svg",
+      "canonical_sha256": "7e319fae3828ad0f4b9bc12ba0518015b280b4afd87b82470bf9173fea34b0ec",
+      "archive_sha256": "7e319fae3828ad0f4b9bc12ba0518015b280b4afd87b82470bf9173fea34b0ec",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_hartl_question.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_hartl_question.drawn.svg",
+      "canonical_sha256": "a858850f216ac7b014fd6e583a067cfdcb75b59bead5e1e5c71642a4d4a4eb75",
+      "archive_sha256": "a858850f216ac7b014fd6e583a067cfdcb75b59bead5e1e5c71642a4d4a4eb75",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_seven_stage_1.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_seven_stage_1.drawn.svg",
+      "canonical_sha256": "8a2eedc0dd6e07e65cd51b315bb04bdaafbecb0ba94db7b812fa82ace836ca2f",
+      "archive_sha256": "8a2eedc0dd6e07e65cd51b315bb04bdaafbecb0ba94db7b812fa82ace836ca2f",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_seven_stage_2.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_seven_stage_2.drawn.svg",
+      "canonical_sha256": "e452c388e897d922e0e0a46900c23bbb553cf21c137163e21b4c8083353f4805",
+      "archive_sha256": "e452c388e897d922e0e0a46900c23bbb553cf21c137163e21b4c8083353f4805",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_seven_stage_3.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_seven_stage_3.drawn.svg",
+      "canonical_sha256": "311923eada1b23ea7c5b45f968f3d3670f63d36f11b32a3af8c8c9d2b8e60a7c",
+      "archive_sha256": "311923eada1b23ea7c5b45f968f3d3670f63d36f11b32a3af8c8c9d2b8e60a7c",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_seven_stage_4.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_seven_stage_4.drawn.svg",
+      "canonical_sha256": "9fad081ec91b8843b0f05a837252a9645a57a35da11041ea8727959f079b2752",
+      "archive_sha256": "9fad081ec91b8843b0f05a837252a9645a57a35da11041ea8727959f079b2752",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_seven_stage_5.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_seven_stage_5.drawn.svg",
+      "canonical_sha256": "bd2c32dd3c7624dfc6a19fffb4c075a8c0ca2d42372cbd228435ce2b2ffb6550",
+      "archive_sha256": "bd2c32dd3c7624dfc6a19fffb4c075a8c0ca2d42372cbd228435ce2b2ffb6550",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/phy_c_seven_stage_6.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_c_seven_stage_6.drawn.svg",
+      "canonical_sha256": "2b775499bcc48528942389556a25fcdd4c2a5855d07fa2a5c063739f7f691d3f",
+      "archive_sha256": "2b775499bcc48528942389556a25fcdd4c2a5855d07fa2a5c063739f7f691d3f",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/phy_d_activity_stage_1.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_d_activity_stage_1.drawn.svg",
+      "canonical_sha256": "d475843a21e17de11ef5bdc327b47b50e3e5172dec72756ce13ebd28824d2158",
+      "archive_sha256": "d475843a21e17de11ef5bdc327b47b50e3e5172dec72756ce13ebd28824d2158",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/phy_d_activity_stage_2.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_d_activity_stage_2.drawn.svg",
+      "canonical_sha256": "24397b6a97b87989da1362ada2360af1af1e7bd4a1552a72f5f7eb5f44200515",
+      "archive_sha256": "24397b6a97b87989da1362ada2360af1af1e7bd4a1552a72f5f7eb5f44200515",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/phy_d_activity_stage_3.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_d_activity_stage_3.drawn.svg",
+      "canonical_sha256": "4591859e3d27e715d968b77a2633f3875937762a0d7e371ca56090dbf0839f2a",
+      "archive_sha256": "4591859e3d27e715d968b77a2633f3875937762a0d7e371ca56090dbf0839f2a",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/phy_d_activity_stage_4.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_d_activity_stage_4.drawn.svg",
+      "canonical_sha256": "3e35de7009cbe7195c164a01dd4b3c264ec1cbef22a91451205404a2582d4dde",
+      "archive_sha256": "3e35de7009cbe7195c164a01dd4b3c264ec1cbef22a91451205404a2582d4dde",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/phy_d_activity_stage_5.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_d_activity_stage_5.drawn.svg",
+      "canonical_sha256": "57c159f09485c53f653ed2b8118e305b578f8315e03f9ad9b929d43573b76729",
+      "archive_sha256": "57c159f09485c53f653ed2b8118e305b578f8315e03f9ad9b929d43573b76729",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12e-evol_time/phy_e_adh_annotated.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_e_adh_annotated.svg",
+      "canonical_sha256": "032c513b3002db64d56c5420a7527404d58b8ecf6af0903226ef363cf3af8831",
+      "archive_sha256": "032c513b3002db64d56c5420a7527404d58b8ecf6af0903226ef363cf3af8831",
+      "match": "exact bytes",
+      "was_staged": false
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12e-evol_time/phy_e_allele_sorting.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_e_allele_sorting.drawn.svg",
+      "canonical_sha256": "d4e7dbb892bfc2c77a2e03c46251d969c055f0867e6632b794bf5c2a0e3cf90d",
+      "archive_sha256": "4201f76d251dd639ccb3589e2e98201d96a5e160b15a3062e086422ff177e347",
+      "match": "equivalent XML",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12e-evol_time/phy_e_duplication_speciation.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_e_duplication_speciation.drawn.svg",
+      "canonical_sha256": "ae70522342a8859d6857db6b93a4d564ed8639bd53d62aa4af3b67151237ed4d",
+      "archive_sha256": "ae70522342a8859d6857db6b93a4d564ed8639bd53d62aa4af3b67151237ed4d",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12e-evol_time/phy_e_enhancer_losses.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_e_enhancer_losses.drawn.svg",
+      "canonical_sha256": "c8412c18ff0cf31ae3eb60baa65a6523d4b7622c0c650d7d2c03710bb2b01acf",
+      "archive_sha256": "c8412c18ff0cf31ae3eb60baa65a6523d4b7622c0c650d7d2c03710bb2b01acf",
+      "match": "exact bytes",
+      "was_staged": true
+    },
+    {
+      "removed_path": "genetics/LECT12/djot/assets/lect12e-evol_time/phy_e_globin_homology.drawn.svg",
+      "archive_path": "docs/archive/genetics_gene_tree_svg/artwork/phy_e_globin_homology.drawn.svg",
+      "canonical_sha256": "44661de1f7c02150fc7a7ebadd96555b7f0d881d0e1f2f8535c2a9d4994b69a9",
+      "archive_sha256": "44661de1f7c02150fc7a7ebadd96555b7f0d881d0e1f2f8535c2a9d4994b69a9",
+      "match": "exact bytes",
+      "was_staged": true
+    }
+  ],
+  "removed_count": 45,
+  "unmatched_preserved": [],
+  "unrelated_index_entries_unchanged": true,
+  "archive_provenance_payloads_unchanged": 90,
+  "replay_exact_matches": 14,
+  "remaining_task_created_lect12_svgs": 0
+}

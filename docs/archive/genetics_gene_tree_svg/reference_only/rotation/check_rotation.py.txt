@@ -1,0 +1,79 @@
+"""One-time path-derived topology and SVG checks for the M2 source handoff."""
+from collections import defaultdict
+from pathlib import Path
+import json
+import re
+import xml.etree.ElementTree as ET
+import slide_lib.svg_images
+
+BASE = Path('genetics/LECT12/djot/assets/lect12b-gene_trees')
+SCRATCH = Path('_temp/genetics_visual_renewal/m2_tree_rotation')
+NS = '{http://www.w3.org/2000/svg}'
+
+
+def clades_from_paths(group):
+    graph = defaultdict(set)
+    paths = group.find(NS+'g')
+    for path in paths:
+        tokens = re.findall(r'[A-Za-z]|-?\d+(?:\.\d+)?', path.attrib['d'])
+        point = None
+        while tokens:
+            op = tokens.pop(0)
+            if op == 'M':
+                next_point = (float(tokens.pop(0)), float(tokens.pop(0)))
+            elif op == 'H':
+                next_point = (float(tokens.pop(0)), point[1])
+            elif op == 'V':
+                next_point = (point[0], float(tokens.pop(0)))
+            else:
+                raise AssertionError(f'Unexpected branch command {op}')
+            if op != 'M':
+                graph[point].add(next_point)
+                graph[next_point].add(point)
+            point = next_point
+    labels = {(float(e.attrib['x']), float(e.attrib['y'])+23): e.text for e in group.findall(NS+'text')}
+    root = max(graph, key=lambda p: p[1])
+    assert len(graph[root]) == 1
+    assert {p for p in graph if len(graph[p]) == 1} == set(labels) | {root}
+    seen, clades = set(), set()
+    def visit(point, parent=None):
+        assert point not in seen, 'Cycle in branch geometry'
+        seen.add(point)
+        if point in labels:
+            return frozenset((labels[point],))
+        leaves = frozenset().union(*(visit(p, point) for p in graph[point] if p != parent))
+        if 1 < len(leaves) < 4:
+            clades.add(''.join(sorted(leaves)))
+        return leaves
+    assert visit(root) == frozenset('WXYZ')
+    assert seen == set(graph), 'Disconnected branch geometry'
+    return sorted(clades)
+
+
+results = []
+for name, orders in [('tree_rotation', ['WXYZ', 'WZYX']), ('tree_rotation_four_forms', ['WXYZ', 'WZYX', 'WXZY', 'XZYW'])]:
+    path = BASE / f'{name}.drawn.svg'
+    slide_lib.svg_images.dimensions(path)
+    root = ET.parse(path).getroot()
+    ids = [e.attrib['id'] for e in root.iter() if 'id' in e.attrib]
+    assert len(ids) == len(set(ids))
+    assert root.find(NS+'title').text and root.find(NS+'desc').text
+    assert set(root.attrib['aria-labelledby'].split()) <= set(ids)
+    for e in root.iter():
+        for key, value in e.attrib.items():
+            if key.rsplit('}', 1)[-1] == 'href':
+                assert value.startswith('#') and value[1:] in ids
+            assert all(ref in ids for ref in re.findall(r'url\(#([^)]+)\)', value))
+    groups = root.find(NS+'g').findall(NS+'g')
+    assert len(groups) == len(orders)
+    for group, order in zip(groups, orders):
+        labels = sorted(group.findall(NS+'text'), key=lambda e: float(e.attrib['x']))
+        assert ''.join(e.text for e in labels) == order
+        assert clades_from_paths(group) == ['XYZ', 'YZ']
+    # A wrong outgroup must fail the independent graph comparison.
+    labels = groups[0].findall(NS+'text')
+    labels[0].text, labels[1].text = labels[1].text, labels[0].text
+    assert clades_from_paths(groups[0]) != ['XYZ', 'YZ']
+    results.append({'asset': str(path), 'orders': orders, 'clades': ['XYZ', 'YZ'], 'checks': 'static image-free SVG, unique IDs, references, title/desc; connected acyclic path graphs; exact labeled leaf orders and nontrivial clades; wrong-outgroup negative control'})
+(SCRATCH/'verification.json').write_text(json.dumps(results, indent=2)+'\n')
+print(json.dumps(results, indent=2))

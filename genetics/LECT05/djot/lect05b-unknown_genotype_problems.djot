@@ -128,9 +128,9 @@ Tie the objectives to the gel lanes and coat-color families. Ask students to jus
 - (a) 1,3 = gene; 2,4 = gene
 - (b) Lane D has 1,2,3, but not 4
   - D is heterozygote for gene 1,3
-    - probability of ½ for heteroz. from heteroz. parents
+    - probability of &#189; for heteroz. from heteroz. parents
   - D is homozygote for gene 2,4
-    - probability of ¼ for homoz. from heteroz. parents
+    - probability of &#188; for homoz. from heteroz. parents
 
 === layout: two-panels
 
@@ -143,7 +143,7 @@ Tie the objectives to the gel lanes and coat-color families. Ask students to jus
 
 - (a) 1,3 = gene; 2,4 = gene
 - (b) genes are independent
-  - hetero ½ × homo ¼ = [1/8]{color=red}
+  - hetero &#189; &#215; homo &#188; = [1/8]{color=red}
 
 === layout: section
 

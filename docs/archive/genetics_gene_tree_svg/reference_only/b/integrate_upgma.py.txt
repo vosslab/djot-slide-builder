@@ -1,0 +1,42 @@
+exec(open('_temp/genetics_visual_renewal/m3_phylogenetics/b/make_trials.py').read().split("# Exact qualitative")[0])
+import re,shutil
+A=Path('genetics/LECT12/djot/assets/lect12b-gene_trees');target=Path('genetics/LECT12/djot/lect12b_gene_trees_part_01.djot')
+x={'A':55,'D':140,'B':260,'F':345,'G':460,'C':610,'E':740};y0=65;scale=24
+nodes={k:(v,y0) for k,v in x.items()};body=''.join(t(v-9,35,k,29) for k,v in x.items())
+merges=[('BF','B','F',.5),('AD','A','D',4),('BFG','BF','G',6.25),('ADBFG','AD','BFG',7.9),('ADBFGC','ADBFG','C',14.2),('root','ADBFGC','E',18.2)]
+for step,(name,a,b,height) in enumerate(merges):
+ xa,ya=nodes[a];xb,yb=nodes[b];yy=y0+height*scale;nodes[name]=((xa+xb)/2,yy);body+=f'<g id="clade_{name}">'+path(f'M{xa} {ya} V{yy} H{xb} V{yb}',BLUE)+'</g>'
+ for xx,yold in ((xa,ya),(xb,yb)):
+  length=round((yy-yold)/scale,2);body+=t(xx+8,(yy+yold)/2+7,f'{length:g}',21)
+ axis=path('M812 65 V502','#647482')
+ for ht in (0,.5,4,6.25,7.9,14.2,18.2):
+  yy2=y0+ht*scale;axis+=path(f'M805 {yy2} H820','#647482')+t(830,yy2+7,str(ht),21)
+ # Separate close top axis values to avoid label overlap; retain branch .5 labels.
+ axis=axis.replace(t(830,65+12+7,str(.5),21),'')
+ svg(f'phy_b_upgma_stage_{step+1}',910,575,body+axis+t(25,555,'Heights use the source overview rounding.',22),'A-G manual example with equal weighting of current cluster entries. Stage '+str(step+1)+'. Source overview rounded heights preserved; unjoined taxa remain unconnected.')
+ shutil.copyfile(P/f'phy_b_upgma_stage_{step+1}.drawn.svg',A/f'phy_b_upgma_stage_{step+1}.drawn.svg')
+# Source exact starting inputs and displayed reduced matrices from image021.
+matrices=[('A B C D E F G'.split(),[['A'],['B','19.00'],['C','27.00','31.00'],['D','8.00','18.00','26.00'],['E','33.00','36.00','41.00','31.00'],['F','18.00','1.00','32.00','17.00','35.00'],['G','13.00','13.00','29.00','14.00','28.00','12.00']]),('A BF C D E'.split(),[['BF','18.50'],['C','27.00','31.50'],['D','8.00','17.50','26.00'],['E','33.00','35.50','41.00','31.00'],['G','13.00','12.50','29.00','14.00','28.00']]),('AD BF C E'.split(),[['BF','18.00'],['C','26.50','31.50'],['E','32.00','35.50','41.00'],['G','13.50','12.50','29.00','28.00']]),('AD BFG C'.split(),[['BFG','15.80'],['C','26.50','30.30'],['E','32.00','31.80','41.00']]),('ADBFG C'.split(),[['C','28.40'],['E','31.90','41.00']]),(['ADBFGC'],[['E','36.40']])]
+def table(cols,rows):
+ n=len(cols)+1;return '{padding="4pt 3pt"}\n| | '+' | '.join(cols)+' |\n|'+'---|'*n+'\n'+''.join('| '+' | '.join(row+['']*(n-len(row)))+' |\n' for row in rows)
+blocks=[]
+for i,((cols,rows),(name,a,b,height)) in enumerate(zip(matrices,merges)):
+ blocks.append('=== layout: two-panels\n\n# UPGMA Distance Method: Join '+a+' and '+b+'\n\n@left\n\n'+table(cols,rows)+'\n- Average the two current entries after each join.\n- Merge height: '+str(height)+'.\n\n@right\n\n![A-G tree after this join](assets/lect12b-gene_trees/phy_b_upgma_stage_'+str(i+1)+'.drawn.svg)\n\n')
+s=target.read_text();parts=re.split(r'(?=^=== layout:)',s,flags=re.M)
+for i,b in enumerate(parts):
+ if 'image_023.png' in b:
+  # Original definition/method explanation remains as a distinct introduction.
+  intro=b.replace('=== layout: two-panels','=== layout: one-panel').replace('@left','@body').split('@right')[0]
+  parts[i]=intro+'\n'+''.join(blocks)
+ if 'image_021.png' in b:parts[i]=b.replace('![Slide image 21](assets/lect12b-gene_trees/image_021.png)','![Completed A-G manual distance example](assets/lect12b-gene_trees/phy_b_upgma_stage_6.drawn.svg)')
+target.write_text(''.join(parts))
+P.joinpath('UPGMA_DECISION.md').write_text('''# Authorized B consistency repair
+
+Root authorized the original manual rule: average the two current entries after each join, not taxon-count weighted averages. All21 starting inputs and merge order BF, AD, BFG, ADBFG, ADBFGC, ADBFGCE remain unchanged. Source overview image021 supplies all displayed rounding. Its complete exact-data check is current_cluster_average_check.json.
+
+Old detail image023: AD-BFG16.50; C-BFG30.67; E-BFG33.00; ADBFG-C29.00; ADBFG-E32.60; final34.00; heights8.25,14.5,17.0. These are taxon-weighted, unlike the intended manual example.
+
+New detail copies overview image021 displayed values: AD-BFG15.80; C-BFG30.30; E-BFG31.80; ADBFG-C28.40; ADBFG-E31.90; final36.40; heights7.9,14.2,18.2. The exact unrounded manual computation gives15.75,30.25,31.75,28.375,31.875,36.4375 and heights7.875,14.1875,18.21875. Source rounding is preserved at display precision rather than silently replacing it with freshly rounded intermediates.
+
+The full6matrix/6tree teaching sequence retains every source matrix and branch increment, now consistently with the overview. The method heading and original definition remain; native text explicitly states current-entry averaging. This is an instructor-authorized source consistency change, not a claim that equal-current-cluster averaging is standard size-weighted UPGMA.
+''')

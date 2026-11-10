@@ -1,0 +1,49 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc"><ns0:title id="title">All four gametes after nondisjunction</ns0:title><ns0:desc id="desc">Meiosis I: two disomic, two nullisomic. Meiosis II in one cell: one disomic, one nullisomic, two normal.</ns0:desc><ns0:rect width="1200" height="460" fill="white" /><ns0:g transform="translate(0,-370)"><ns0:g id="meiosis-1-gamete-380">
+<ns0:ellipse cx="380" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+<ns0:path d="M 364.5,463 L 364.5,517" stroke="#076DAD" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="364.5" cy="490" r="5" fill="#222" />
+<ns0:path d="M 395.5,463 L 395.5,517" stroke="#B74300" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="395.5" cy="490" r="5" fill="#222" />
+</ns0:g>
+<ns0:text x="380" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n + 1</ns0:text>
+<ns0:g id="meiosis-1-gamete-620">
+<ns0:ellipse cx="620" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+<ns0:path d="M 604.5,463 L 604.5,517" stroke="#076DAD" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="604.5" cy="490" r="5" fill="#222" />
+<ns0:path d="M 635.5,463 L 635.5,517" stroke="#B74300" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="635.5" cy="490" r="5" fill="#222" />
+</ns0:g>
+<ns0:text x="620" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n + 1</ns0:text>
+<ns0:g id="meiosis-1-gamete-860">
+<ns0:ellipse cx="860" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+</ns0:g>
+<ns0:text x="860" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n - 1</ns0:text>
+<ns0:g id="meiosis-1-gamete-1100">
+<ns0:ellipse cx="1100" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+</ns0:g>
+<ns0:text x="1100" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n - 1</ns0:text>
+</ns0:g><ns0:text x="30" y="135" font-family="Arial" font-size="30" fill="#222">Meiosis 1</ns0:text><ns0:g transform="translate(0,-160)"><ns0:g id="meiosis-2-gamete-380">
+<ns0:ellipse cx="380" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+<ns0:path d="M 364.5,463 L 364.5,517" stroke="#076DAD" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="364.5" cy="490" r="5" fill="#222" />
+<ns0:path d="M 395.5,463 L 395.5,517" stroke="#076DAD" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="395.5" cy="490" r="5" fill="#222" />
+</ns0:g>
+<ns0:text x="380" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n + 1</ns0:text>
+<ns0:g id="meiosis-2-gamete-620">
+<ns0:ellipse cx="620" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+</ns0:g>
+<ns0:text x="620" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n - 1</ns0:text>
+<ns0:g id="meiosis-2-gamete-860">
+<ns0:ellipse cx="860" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+<ns0:path d="M 860.0,463 L 860.0,517" stroke="#B74300" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="860.0" cy="490" r="5" fill="#222" />
+</ns0:g>
+<ns0:text x="860" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n</ns0:text>
+<ns0:g id="meiosis-2-gamete-1100">
+<ns0:ellipse cx="1100" cy="490" rx="70" ry="54" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+<ns0:path d="M 1100.0,463 L 1100.0,517" stroke="#B74300" stroke-width="10" stroke-linecap="round" />
+<ns0:circle cx="1100.0" cy="490" r="5" fill="#222" />
+</ns0:g>
+<ns0:text x="1100" y="575" font-family="Arial" font-size="30" text-anchor="middle" fill="#222">n</ns0:text>
+</ns0:g><ns0:text x="30" y="345" font-family="Arial" font-size="30" fill="#222">Meiosis 2</ns0:text></ns0:svg>

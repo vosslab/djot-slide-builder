@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="570" viewBox="0 0 860 570" role="img" aria-labelledby="title desc">
+<title id="title">phy_c_hartl_question</title>
+<desc id="desc">Metric tree. Horizontal branch lengths are proportional to distance. Source: original LECT12C PDF page39, question17.27. Stage 3.</desc>
+<rect width="860" height="570" fill="white"/>
+<g font-family="Arial" font-size="27" fill="#172B3A">
+<g id="join-CD"><path d="M 572.5 205 V 280" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-CD-C" d="M 572.5 205 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+
+<path id="edge-CD-D" d="M 572.5 280 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+
+<circle cx="572.5" cy="242.5" r="5" fill="#006A69"/></g>
+<g id="join-AB"><path d="M 475 55 V 130" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-AB-A" d="M 475 55 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+
+<path id="edge-AB-B" d="M 475 130 H 735" stroke="#006A69" stroke-width="4" fill="none"/>
+
+<circle cx="475" cy="92.5" r="5" fill="#006A69"/></g>
+<g id="join-root"><path d="M 182.5 92.5 V 242.5" stroke="#006A69" stroke-width="4" fill="none"/>
+<path id="edge-root-AB" d="M 182.5 92.5 H 475" stroke="#006A69" stroke-width="4" fill="none"/>
+
+<path id="edge-root-CD" d="M 182.5 242.5 H 572.5" stroke="#006A69" stroke-width="4" fill="none"/>
+
+<circle cx="182.5" cy="167.5" r="5" fill="#006A69"/></g>
+<text x="750" y="64">A</text>
+<text x="750" y="139">B</text>
+<text x="750" y="214">C</text>
+<text x="750" y="289">D</text>
+</g></svg>

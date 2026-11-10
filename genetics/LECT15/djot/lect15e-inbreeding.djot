@@ -446,7 +446,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 20](assets/lect15e-inbreeding/image_020.png)
+![Slide image 20](assets/lect15e-inbreeding/cousin_pedigree.drawn.svg)
 
 === layout: two-panels
 
@@ -454,11 +454,11 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @left
 
-![Slide image 20](assets/lect15e-inbreeding/image_020.png)
+![Slide image 20](assets/lect15e-inbreeding/cousin_pedigree.drawn.svg)
 
 @right
 
-![Slide image 21](assets/lect15e-inbreeding/image_021.png)
+![Slide image 21](assets/lect15e-inbreeding/cousin_path_both.drawn.svg)
 
 === layout: two-panels
 
@@ -475,7 +475,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @right
 
-![Slide image 22](assets/lect15e-inbreeding/image_022.png)
+![Slide image 22](assets/lect15e-inbreeding/cousin_path_a.drawn.svg)
 
 === layout: two-panels
 
@@ -483,7 +483,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @left
 
-![Slide image 22](assets/lect15e-inbreeding/image_021.png)
+![Slide image 22](assets/lect15e-inbreeding/cousin_path_both.drawn.svg)
 
 @right
 

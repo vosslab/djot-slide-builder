@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="migration-title migration-desc">
+  <title id="migration-title">DNA migration in an agarose gel</title>
+  <desc id="migration-desc">Top view of a schematic electrophoresis tank. Wells are beside the negative cathode; DNA moves toward the positive anode. The power source connects the two electrodes. Illustrative DNA bands show longer molecules near the wells and shorter molecules farther toward the positive electrode; positions are not measurements and visualization requires suitable treatment. Source slide: LECT02F loading and migration sequence, original image_008.jpg and ODP page 11.</desc>
+  <g id="tank" font-family="Liberation Sans, sans-serif">
+    <rect x="80" y="155" width="640" height="310" rx="18" fill="#DCEBF1" stroke="#527080" stroke-width="3" />
+    <rect id="agarose-gel" x="150" y="205" width="500" height="210" rx="5" fill="#F8F3DA" stroke="#978B61" stroke-width="3" />
+    <g id="power-source">
+      <rect x="300" y="25" width="200" height="62" rx="7" fill="#F1F3F5" stroke="#527080" stroke-width="3" />
+      <text x="400" y="65" font-size="25" text-anchor="middle" fill="#253342">Power source</text>
+    </g>
+    <path d="M300 56 H110 V435" fill="none" stroke="#253342" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M500 56 H690 V435" fill="none" stroke="#D40000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="210" y="127" font-size="27" text-anchor="middle" fill="#253342">Cathode</text>
+    <text x="65" y="153" font-size="35" text-anchor="middle" fill="#253342">-</text>
+    <text x="590" y="127" font-size="27" text-anchor="middle" fill="#253342">Anode</text>
+    <text x="735" y="153" font-size="35" text-anchor="middle" fill="#D40000">+</text>
+    <g id="sample-wells">
+      <rect x="170" y="235" width="20" height="30" rx="2" fill="#45647B" />
+      <rect x="170" y="295" width="20" height="30" rx="2" fill="#45647B" />
+      <rect x="170" y="355" width="20" height="30" rx="2" fill="#45647B" />
+    </g>
+    <text x="228" y="192" font-size="27" text-anchor="middle" fill="#253342">Wells</text>
+    <path d="M220 197 L187 233" fill="none" stroke="#253342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="405" y="452" font-size="27" text-anchor="middle" fill="#253342">Agarose gel</text>
+    <g id="illustrative-dna-bands" fill="#774A9B">
+      <rect id="lane-1-band-1" x="260" y="239" width="10" height="22" rx="2" />
+      <rect id="lane-1-band-2" x="400" y="239" width="10" height="22" rx="2" />
+      <rect id="lane-1-band-3" x="575" y="239" width="10" height="22" rx="2" />
+      <rect id="lane-2-band-1" x="260" y="299" width="10" height="22" rx="2" />
+      <rect id="lane-2-band-2" x="400" y="299" width="10" height="22" rx="2" />
+      <rect id="lane-2-band-3" x="575" y="299" width="10" height="22" rx="2" />
+      <rect id="lane-3-band-1" x="260" y="359" width="10" height="22" rx="2" />
+      <rect id="lane-3-band-2" x="400" y="359" width="10" height="22" rx="2" />
+      <rect id="lane-3-band-3" x="575" y="359" width="10" height="22" rx="2" />
+    </g>
+    <text x="265" y="501" font-size="27" text-anchor="middle" fill="#253342">Longer DNA</text>
+    <text x="575" y="501" font-size="27" text-anchor="middle" fill="#253342">Shorter DNA</text>
+    <path d="M210 540 H615" fill="none" stroke="#24578F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <polygon points="630,540 612,531 612,549" fill="#24578F" />
+    <text x="420" y="582" font-size="29" text-anchor="middle" fill="#24578F">DNA migration</text>
+  </g>
+</svg>

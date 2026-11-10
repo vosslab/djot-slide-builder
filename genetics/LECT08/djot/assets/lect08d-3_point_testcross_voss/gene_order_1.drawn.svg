@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-labelledby="title desc">
+<title id="title">Where are these genes on a chromosome?</title>
+<desc id="desc">Original schematic gene-placement diagram. Positions show the current candidates; letters and colors identify genes. Where are these genes on a chromosome?</desc>
+<g id="chromosome"><rect x="40" y="95" width="920" height="44" rx="12" fill="#F0F1F3" stroke="#67717D" stroke-width="2"/></g>
+</svg>

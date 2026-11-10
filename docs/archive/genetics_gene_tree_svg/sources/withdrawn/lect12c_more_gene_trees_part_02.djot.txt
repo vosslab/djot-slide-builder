@@ -1,0 +1,273 @@
+=== layout: one-panel
+
+# *Gene Trees by Distance Method*
+
+@body
+
+- Differences can be a measure of evolutionary separation.
+- Two problems with this assumption\:
+  - 1. mutations are chance and differences are not really correlated with evolutionary time.
+  - 2. some mutations increase survival rate and have better chance of being [*fixed*]{underline=true}.
+
+
+=== layout: one-panel
+
+# Alignment of Hemoglobin Sequences
+
+@body
+
+{table-style=standard padding="3pt"}
+| Species | Aligned amino acids |
+|---|---|
+| Human (Hu) | `MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLS` |
+| Baboon (Ba) | `.........N.................................D......` |
+| Cow (Co) | `.--..A...A....F....K..............................` |
+| Sheep (Sh) | `.--..A...A...GF....K.....A..................H.....` |
+| Mouse (Mo) | `.....DA..A..SG......A....................Y.D......` |
+| Hamster (Ha) | `.....DA..AL..G......A.A..A..................H.....` |
+| Chicken (Ch) | `...W.A...QLI.G.......A.C.A...A...I.........A...N..` |
+
+- A dot matches human; a dash marks a gap; letters show differences.
+
+
+=== layout: two-panels
+
+# Distance Matrix
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+@right
+
+- Each entry counts amino-acid differences between two sequences.
+- Seven species give (7 x 6)/2 = 21 pairwise distances.
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 1](assets/lect12c-more_gene_trees/phy_c_seven_stage_1.drawn.svg)
+
+- length of line is &#189; the differences
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 2](assets/lect12c-more_gene_trees/phy_c_seven_stage_2.drawn.svg)
+
+- length of line is &#189; the differences
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 3](assets/lect12c-more_gene_trees/phy_c_seven_stage_3.drawn.svg)
+
+- length of line is &#189; the differences
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 3](assets/lect12c-more_gene_trees/phy_c_seven_stage_3.drawn.svg)
+
+- Next step join Hu/Ba with either Co/Sh or Mo/Ha
+- Hu/Ba&#8211;Co/Sh\: (6+9+7+10)/4 = 8
+- Hu/Ba&#8211;Mo/Ha\: (8+9+7+10)/4 = 8.5
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 4](assets/lect12c-more_gene_trees/phy_c_seven_stage_4.drawn.svg)
+
+- Next step join Hu/Ba with either Co/Sh or Mo/Ha
+- Hu/Ba&#8211;Co/Sh\: (6+9+7+10)/4 = 8
+- Hu/Ba&#8211;Mo/Ha\: (8+9+7+10)/4 = 8.5
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 4](assets/lect12c-more_gene_trees/phy_c_seven_stage_4.drawn.svg)
+
+- distance of 4\:
+- 3.0 + 1.0 = 4
+- 2.5 + 1.5 = 4
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 5](assets/lect12c-more_gene_trees/phy_c_seven_stage_5.drawn.svg)
+
+- connect &#8220;c&#8221; with &#8220;d&#8221;
+- distance is average of
+- (8+9+7+10+11+12+12+9)/8 = 9.75
+- branch length = 9.75/2 = 4.875
+- Mo/Ha to Ch is (16+14)/2 = 15
+
+=== layout: two-panels
+
+# Manual average-distance tree
+
+@left
+
+{table-style=matrix-upper table-group=phy-c-seven padding="5pt 2pt"}
+|  | Hu | Ba | Co | Sh | Mo | Ha | Ch |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hu | - | 2 | 6 | 9 | 8 | 9 | 13 |
+| Ba |  | - | 7 | 10 | 7 | 10 | 13 |
+| Co |  |  | - | 3 | 11 | 12 | 16 |
+| Sh |  |  |  | - | 12 | 9 | 15 |
+| Mo |  |  |  |  | - | 7 | 16 |
+| Ha |  |  |  |  |  | - | 14 |
+| Ch |  |  |  |  |  |  | - |
+
+
+@right
+
+![Seven-species tree, stage 6](assets/lect12c-more_gene_trees/phy_c_seven_stage_6.drawn.svg)
+
+- join e with Ch
+- (13+13+16+15+16+14)/6 = 14.5
+- branch length = 7.25
+- 7.25 &#8211; 4.875 = 2.375
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Start with the smallest distance in the matrix.
+- Update the matrix after each merge.
+- Keep earlier branches when adding a new cluster.
+- Check the final tree against the original distances.
+
+=== layout: theend
+
+# THE END
+

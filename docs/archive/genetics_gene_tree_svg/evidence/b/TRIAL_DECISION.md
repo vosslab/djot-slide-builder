@@ -1,0 +1,5 @@
+# B bounded trial decision
+
+Inspected all4 actual exported pages at exports_m3/phylogenetics_b/page_001.webp through page_004.webp. Native matrix+one merge has clear separation and usable cell type. Fulltree view also works; final canonical detail combines a stable fullA-G tree scaffold with native reducedmatrix stages to preserve every source value. The trial's source17height was predecision evidence; canonical uses separately authorized18.2 overview-derived manual values.
+
+Bayes chosen: fullwidth left-to-right probability panels (page4). Halfwidth stacked panel(page3) is understandable but its native conditional-probability definitions break awkwardly across lines; fullwidth preserves broad comparison and readable candidate labels. Canonical introductory source prose remains on its own native slide; following comparison keeps native probabilities and avoids the trial's potentially misleading plus sign between prior and likelihood. Equalpriors and orderTree2>Tree1>Tree3 retained, no exact probability scale invented.

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="660" viewBox="0 0 580 660" role="img" aria-labelledby="linkage_portrait-title linkage_portrait-desc">
+	<title id="linkage_portrait-title">Cis and trans arrangements in a narrow panel</title>
+	<desc id="linkage_portrait-desc">Two homologs in each arrangement; w m and + + in cis, w + and + m in trans. Homolog identity uses blue and orange. The view is schematic, with no replication or crossing over.</desc>
+	<!-- Source: LECT08B Cis and Trans Configurations and gamete sequence; LECT08C Cis and Trans Configurations. Original vector construction from the approved linkage pilot. -->
+	<g font-family="Liberation Sans, sans-serif">
+		<g id="cis">
+			<text x="290" y="68" font-size="46" fill="#253342" text-anchor="middle" font-style="italic">cis</text>
+			<g id="cis-blue-homolog">
+				<path d="M165 148 H207 Q221 148 225 160 Q229 148 243 148 H403 Q425 148 425 168 Q425 188 403 188 H243 Q229 188 225 176 Q221 188 207 188 H165 Q143 188 143 168 Q143 148 165 148 Z" fill="#24578F" stroke="#24578F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M280 148 V188" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="280" y="134" font-size="44" fill="#253342" text-anchor="middle">w</text>
+				<path d="M380 148 V188" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="380" y="134" font-size="44" fill="#253342" text-anchor="middle">m</text>
+			</g>
+			<g id="cis-orange-homolog">
+				<path d="M165 253 H207 Q221 253 225 265 Q229 253 243 253 H403 Q425 253 425 273 Q425 293 403 293 H243 Q229 293 225 281 Q221 293 207 293 H165 Q143 293 143 273 Q143 253 165 253 Z" fill="#B74300" stroke="#B74300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M280 253 V293" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="280" y="239" font-size="44" fill="#253342" text-anchor="middle">+</text>
+				<path d="M380 253 V293" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="380" y="239" font-size="44" fill="#253342" text-anchor="middle">+</text>
+			</g>
+		</g>
+		<g id="trans">
+			<text x="290" y="390" font-size="46" fill="#253342" text-anchor="middle" font-style="italic">trans</text>
+			<g id="trans-blue-homolog">
+				<path d="M165 470 H207 Q221 470 225 482 Q229 470 243 470 H403 Q425 470 425 490 Q425 510 403 510 H243 Q229 510 225 498 Q221 510 207 510 H165 Q143 510 143 490 Q143 470 165 470 Z" fill="#24578F" stroke="#24578F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M280 470 V510" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="280" y="456" font-size="44" fill="#253342" text-anchor="middle">w</text>
+				<path d="M380 470 V510" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="380" y="456" font-size="44" fill="#253342" text-anchor="middle">+</text>
+			</g>
+			<g id="trans-orange-homolog">
+				<path d="M165 575 H207 Q221 575 225 587 Q229 575 243 575 H403 Q425 575 425 595 Q425 615 403 615 H243 Q229 615 225 603 Q221 615 207 615 H165 Q143 615 143 595 Q143 575 165 575 Z" fill="#B74300" stroke="#B74300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M280 575 V615" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="280" y="561" font-size="44" fill="#253342" text-anchor="middle">+</text>
+				<path d="M380 575 V615" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<text x="380" y="561" font-size="44" fill="#253342" text-anchor="middle">m</text>
+			</g>
+		</g>
+	</g>
+</svg>

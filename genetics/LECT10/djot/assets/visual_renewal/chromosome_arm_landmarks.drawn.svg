@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="650" viewBox="0 0 600 650" role="img" aria-labelledby="title desc">
+<title id="title">Chromosome arm landmarks</title><desc id="desc">A chromosome schematic shows short p arm, centromere, and long q arm. It is paired with the original source chromosome band reference; this drawing is not a chromosome-specific band map.</desc>
+<rect width="600" height="650" fill="white"/>
+<g id="chromosome" stroke="#475762" stroke-width="3"><path d="M230 70 Q205 70 205 100 V220 Q205 245 230 250 Q205 260 205 285 V545 Q205 575 235 575 H255 Q285 575 285 545 V285 Q285 260 260 250 Q285 245 285 220 V100 Q285 70 260 70 Z" fill="#E3EDF9"/><ellipse cx="245" cy="250" rx="22" ry="10" fill="#475762"/></g>
+<g id="leaders" stroke="#475762" stroke-width="3" fill="none"><path d="M305 70 H330 V230 H305 M305 275 H330 V575 H305 M265 250 H385"/></g>
+<g font-family="Arial" font-size="30" fill="#222"><text x="360" y="140">p arm</text><text x="360" y="180" font-size="25">short</text><text x="390" y="259" font-size="25">Centromere</text><text x="360" y="405">q arm</text><text x="360" y="445" font-size="25">long</text><text x="300" y="625" text-anchor="middle" font-size="23">Landmarks, not a band map</text></g>
+</svg>

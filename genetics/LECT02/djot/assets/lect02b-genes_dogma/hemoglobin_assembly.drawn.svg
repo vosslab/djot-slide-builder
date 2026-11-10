@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-labelledby="hb-title hb-desc">
+<title id="hb-title">Normal and clumped hemoglobin</title>
+<desc id="hb-desc">Seven separate hemoglobin tetramers on the left and seven touching tetramers in a curved assembly on the right. Each tetramer contains two blue and two yellow folded subunits. Original schematic ribbons illustrate folded proteins; they do not trace atomic coordinates or a specific molecular interface. Source context: Genetics LECT02B original slide 42, image_015.png.</desc>
+<defs>
+<g id="hb-blue" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M 10,16 C -6,14 -5,38 5,46 C 15,57 30,44 42,53 C 54,62 45,75 27,65 C 8,55 39,36 43,20 C 45,9 31,3 24,11" fill="none" stroke="#174D73" stroke-width="5"/>
+  <path d="M 10,16 C -6,14 -5,38 5,46 C 15,57 30,44 42,53 C 54,62 45,75 27,65 C 8,55 39,36 43,20 C 45,9 31,3 24,11" fill="none" stroke="#B7E1F3" stroke-width="2.7"/>
+<g transform="translate(1 5) rotate(-23 11 24)">
+<path d="M 4,2 C 22,-3 26,8 18,13 C -1,21 -2,27 17,32 C 28,35 23,45 8,49" fill="none" stroke="#174D73" stroke-width="6"/>
+<path d="M 1,4 C 7,9 17,9 23,4 L 23,11 C 17,16 7,16 1,11 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,6 Q 12,11 21,6" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+<path d="M 1,15 C 7,20 17,20 23,15 L 23,22 C 17,27 7,27 1,22 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,17 Q 12,22 21,17" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+<path d="M 1,26 C 7,31 17,31 23,26 L 23,33 C 17,38 7,38 1,33 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,28 Q 12,33 21,28" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+<path d="M 1,37 C 7,42 17,42 23,37 L 23,44 C 17,49 7,49 1,44 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,39 Q 12,44 21,39" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+</g>
+<g transform="translate(30 15) rotate(29 11 24)">
+<path d="M 4,2 C 22,-3 26,8 18,13 C -1,21 -2,27 17,32 C 28,35 23,45 8,49" fill="none" stroke="#174D73" stroke-width="6"/>
+<path d="M 1,4 C 7,9 17,9 23,4 L 23,11 C 17,16 7,16 1,11 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,6 Q 12,11 21,6" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+<path d="M 1,15 C 7,20 17,20 23,15 L 23,22 C 17,27 7,27 1,22 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,17 Q 12,22 21,17" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+<path d="M 1,26 C 7,31 17,31 23,26 L 23,33 C 17,38 7,38 1,33 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,28 Q 12,33 21,28" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+<path d="M 1,37 C 7,42 17,42 23,37 L 23,44 C 17,49 7,49 1,44 Z" fill="#348BC0" stroke="#174D73" stroke-width="1.2"/>
+<path d="M 3,39 Q 12,44 21,39" fill="none" stroke="#B7E1F3" stroke-width="2.6"/>
+</g>
+</g>
+<g id="hb-yellow" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M 10,16 C -6,14 -5,38 5,46 C 15,57 30,44 42,53 C 54,62 45,75 27,65 C 8,55 39,36 43,20 C 45,9 31,3 24,11" fill="none" stroke="#8E6814" stroke-width="5"/>
+  <path d="M 10,16 C -6,14 -5,38 5,46 C 15,57 30,44 42,53 C 54,62 45,75 27,65 C 8,55 39,36 43,20 C 45,9 31,3 24,11" fill="none" stroke="#FFF2AB" stroke-width="2.7"/>
+<g transform="translate(1 5) rotate(-23 11 24)">
+<path d="M 4,2 C 22,-3 26,8 18,13 C -1,21 -2,27 17,32 C 28,35 23,45 8,49" fill="none" stroke="#8E6814" stroke-width="6"/>
+<path d="M 1,4 C 7,9 17,9 23,4 L 23,11 C 17,16 7,16 1,11 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,6 Q 12,11 21,6" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+<path d="M 1,15 C 7,20 17,20 23,15 L 23,22 C 17,27 7,27 1,22 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,17 Q 12,22 21,17" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+<path d="M 1,26 C 7,31 17,31 23,26 L 23,33 C 17,38 7,38 1,33 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,28 Q 12,33 21,28" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+<path d="M 1,37 C 7,42 17,42 23,37 L 23,44 C 17,49 7,49 1,44 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,39 Q 12,44 21,39" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+</g>
+<g transform="translate(30 15) rotate(29 11 24)">
+<path d="M 4,2 C 22,-3 26,8 18,13 C -1,21 -2,27 17,32 C 28,35 23,45 8,49" fill="none" stroke="#8E6814" stroke-width="6"/>
+<path d="M 1,4 C 7,9 17,9 23,4 L 23,11 C 17,16 7,16 1,11 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,6 Q 12,11 21,6" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+<path d="M 1,15 C 7,20 17,20 23,15 L 23,22 C 17,27 7,27 1,22 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,17 Q 12,22 21,17" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+<path d="M 1,26 C 7,31 17,31 23,26 L 23,33 C 17,38 7,38 1,33 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,28 Q 12,33 21,28" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+<path d="M 1,37 C 7,42 17,42 23,37 L 23,44 C 17,49 7,49 1,44 Z" fill="#EBC44C" stroke="#8E6814" stroke-width="1.2"/>
+<path d="M 3,39 Q 12,44 21,39" fill="none" stroke="#FFF2AB" stroke-width="2.6"/>
+</g>
+</g>
+<g id="hb-tetramer">
+ <use xlink:href="#hb-blue" transform="translate(-48,-57) rotate(-12 26 35)"/>
+ <use xlink:href="#hb-yellow" transform="translate(-1,-58) rotate(15 26 35)"/>
+ <use xlink:href="#hb-yellow" transform="translate(-47,-2) rotate(-28 26 35)"/>
+ <use xlink:href="#hb-blue" transform="translate(0,-4) rotate(22 26 35)"/>
+</g>
+</defs>
+<g id="normal-hemoglobin">
+<use id="normal-tetramer-1" xlink:href="#hb-tetramer" transform="translate(160 115) rotate(-13)"/>
+<use id="normal-tetramer-2" xlink:href="#hb-tetramer" transform="translate(366 119) rotate(18)"/>
+<use id="normal-tetramer-3" xlink:href="#hb-tetramer" transform="translate(77 276) rotate(9)"/>
+<use id="normal-tetramer-4" xlink:href="#hb-tetramer" transform="translate(270 270) rotate(-7)"/>
+<use id="normal-tetramer-5" xlink:href="#hb-tetramer" transform="translate(472 277) rotate(22)"/>
+<use id="normal-tetramer-6" xlink:href="#hb-tetramer" transform="translate(175 416) rotate(-20)"/>
+<use id="normal-tetramer-7" xlink:href="#hb-tetramer" transform="translate(381 413) rotate(7)"/>
+</g>
+<g id="clumped-hemoglobin">
+<use id="clumped-tetramer-1" xlink:href="#hb-tetramer" transform="translate(667 397) rotate(-20)"/>
+<use id="clumped-tetramer-2" xlink:href="#hb-tetramer" transform="translate(739 370) rotate(-12)"/>
+<use id="clumped-tetramer-3" xlink:href="#hb-tetramer" transform="translate(812 338) rotate(-4)"/>
+<use id="clumped-tetramer-4" xlink:href="#hb-tetramer" transform="translate(882 298) rotate(7)"/>
+<use id="clumped-tetramer-5" xlink:href="#hb-tetramer" transform="translate(943 246) rotate(18)"/>
+<use id="clumped-tetramer-6" xlink:href="#hb-tetramer" transform="translate(994 181) rotate(27)"/>
+<use id="clumped-tetramer-7" xlink:href="#hb-tetramer" transform="translate(1027 106) rotate(35)"/>
+</g>
+<g id="hemoglobin-labels" fill="#213547" font-family="Arial, sans-serif" text-anchor="middle">
+ <text x="280" y="523" font-size="35">Normal hemoglobin</text>
+ <text x="885" y="523" font-size="35">Clumped hemoglobin</text>
+ <text x="600" y="566" font-size="24" fill="#526879">Schematic folded subunits and assembly</text>
+</g>
+</svg>

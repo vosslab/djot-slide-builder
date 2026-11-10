@@ -1,0 +1,76 @@
+[
+  {
+    "merge": [
+      "B",
+      "F"
+    ],
+    "distance": 1,
+    "height": 0.5,
+    "new_distances": {
+      "A": 18.5,
+      "C": 31.5,
+      "D": 17.5,
+      "E": 35.5,
+      "G": 12.5
+    }
+  },
+  {
+    "merge": [
+      "A",
+      "D"
+    ],
+    "distance": 8,
+    "height": 4.0,
+    "new_distances": {
+      "C": 26.5,
+      "E": 32.0,
+      "G": 13.5,
+      "BF": 18.0
+    }
+  },
+  {
+    "merge": [
+      "BF",
+      "G"
+    ],
+    "distance": 12.5,
+    "height": 6.25,
+    "new_distances": {
+      "C": 30.25,
+      "E": 31.75,
+      "AD": 15.75
+    }
+  },
+  {
+    "merge": [
+      "AD",
+      "BFG"
+    ],
+    "distance": 15.75,
+    "height": 7.875,
+    "new_distances": {
+      "C": 28.375,
+      "E": 31.875
+    }
+  },
+  {
+    "merge": [
+      "ADBFG",
+      "C"
+    ],
+    "distance": 28.375,
+    "height": 14.1875,
+    "new_distances": {
+      "E": 36.4375
+    }
+  },
+  {
+    "merge": [
+      "ADBFGC",
+      "E"
+    ],
+    "distance": 36.4375,
+    "height": 18.21875,
+    "new_distances": {}
+  }
+]

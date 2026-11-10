@@ -44,9 +44,17 @@ color-theme: genetics
 
 @left
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_002.png)
+![Original exact band reference for chromosomes 1-3](assets/lect10c-chromo_nomenclature/image_002.png)
 
 @right
+
+![Chromosome arm landmarks](assets/visual_renewal/chromosome_arm_landmarks.drawn.svg)
+
+=== layout: one-panel
+
+# Compare the Chromosome Landmarks
+
+@body
 
 - Chromosomes differ in size, centromere position, and banding
 - Karyotypes put homologs together
@@ -64,13 +72,17 @@ color-theme: genetics
 
 ![Gene Density and Chromosome Size](assets/lect10_repaired_figures/gene_density.svg)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Short Arm p, Long Arm q
 
-@body
+@left
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_007.png)
+![Chromosome arm landmarks](assets/visual_renewal/chromosome_arm_landmarks.drawn.svg)
+
+@right
+
+![Original exact band reference for chromosomes 11-14](assets/lect10c-chromo_nomenclature/image_007.png)
 
 === layout: one-panel
 
@@ -113,7 +125,7 @@ A gene has a chromosome address, like a book has a library address.
 
 @right
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+![CFTR chromosome address hierarchy: 7q31.2](assets/visual_renewal/cftr_address.drawn.svg)
 
 === layout: two-panels
 
@@ -132,7 +144,7 @@ A gene has a chromosome address, like a book has a library address.
 
 @right
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+![CFTR chromosome address hierarchy: 7q31.2](assets/visual_renewal/cftr_address.drawn.svg)
 
 @citation
 
@@ -144,7 +156,7 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @body
 
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_012.png)
+![CFTR chromosome address hierarchy: 7q31.2](assets/visual_renewal/cftr_address.drawn.svg)
 
 === layout: one-panel
 

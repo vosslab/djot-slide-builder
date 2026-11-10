@@ -389,7 +389,12 @@ def main() -> int:
 		print(read_error, file=sys.stderr)
 		return 1
 
-	fixed_text, changed = fix_ascii_compliance(content)
+	if os.path.splitext(input_file)[1].lower() in (".svg", ".xml"):
+		# XML does not define HTML named entities; preserve characters with numeric references.
+		fixed_text = normalize_line_endings(content).encode("ascii", "xmlcharrefreplace").decode("ascii")
+		changed = fixed_text != content
+	else:
+		fixed_text, changed = fix_ascii_compliance(content)
 	issues = find_non_latin1_chars(fixed_text)
 
 	for line_number, column_number, codepoint in issues:

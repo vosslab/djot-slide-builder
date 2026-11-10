@@ -64,7 +64,9 @@ hidden: true
 
 @body
 
-![Slide image 1](assets/lect08c-gene_mapping/image_001.jpg)
+![Cis and trans arrangements of linked w and m loci](assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg)
+
+*Cis:* wm/++ &emsp; *Trans:* w+/+m
 
 - Recombination occurs at the same frequency whether the alleles are in _cis_ or _trans_
 
@@ -163,7 +165,9 @@ hidden: true
 
 @body
 
-![Slide image 6](assets/lect08c-gene_mapping/image_006.jpg)
+![Slide image 6](assets/lect08c-gene_mapping/one_map_unit.drawn.svg)
+
+1/50 = 2% crossover meioses; 2/200 = 1% recombinant products = 1 map unit = 1 cM.
 
 === layout: two-panels
 
@@ -197,7 +201,7 @@ $\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%
 - map distance =
   - 1/2 x the average crossovers between two genes per meiotic cell x 100
 
-![Slide image 9](assets/lect08c-gene_mapping/image_009.png)
+![Slide image 9](assets/lect08c-gene_mapping/b_cn_vg_frequencies.drawn.svg)
 
 === layout: two-panels
 
@@ -217,7 +221,7 @@ $\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%
 
 @body
 
-![Chromosome recombination frequencies](assets/lect08c-gene_mapping/c20_labeled.svg)
+![Chromosome recombination frequencies](assets/lect08c-gene_mapping/b_cn_vg_frequencies.drawn.svg)
 
 => appear
 - Wait 9%+9.5% = 18.5% &#8800; 17%
@@ -253,7 +257,9 @@ $\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%
 
 @body
 
-![Labeled diagram from source slide 24](assets/lect08c-gene_mapping/c24_labeled.svg)
+![Labeled diagram from source slide 24](assets/lect08c-gene_mapping/seven_locus_fly_map.drawn.svg)
+
+Map coordinates in cM; locus spacing is schematic. Aristae are appendages on the head.
 
 
 === include: repo:genetics/evergreen/three_point_testcross_steps.djot
@@ -469,7 +475,7 @@ d = 6 map units
 
 @body
 
-![Chromosome recombination frequencies](assets/lect08c-gene_mapping/c45_labeled.svg)
+![Chromosome recombination frequencies](assets/lect08c-gene_mapping/b_cn_vg_frequencies.drawn.svg)
 
 => appear
 - Wait 9%+9.5% = 18.5% &#8800; 17%

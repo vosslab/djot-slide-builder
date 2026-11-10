@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1010" viewBox="0 0 760 1010" role="img" aria-labelledby="title desc">
+  <title id="title">Seed-color inheritance</title>
+  <desc id="desc">Yellow and green parental seeds yield yellow F1. F2 is three yellow and one green; four F3 branches are all yellow, two segregating 3:1, and all green. Source factor notation YY, YG, GG retained. Source: lect04b-mendel_history.djot. Simplified teaching illustration; not to scale.</desc>
+  <defs>
+    <g id="purple-plant">
+      <path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(0 0) scale(1)">
+        <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+    <g transform="translate(0 0) scale(1)" id="purple-flower">
+      <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g id="white-plant">
+      <path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(0 0) scale(1)">
+        <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+    <g transform="translate(0 0) scale(1)" id="white-flower">
+      <path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </defs>
+  <g font-family="Liberation Sans, sans-serif">
+    <g id="parents">
+      <g transform="translate(90 80)">
+        <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+        <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+        <g transform="translate(0 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+        </g>
+        <g transform="translate(67 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+        </g>
+        <g transform="translate(134 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+        </g>
+        <g transform="translate(201 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+        </g>
+      </g>
+      <g transform="translate(455 80)">
+        <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+        <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+        <g transform="translate(0 0)">
+          <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+        </g>
+        <g transform="translate(67 0)">
+          <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+        </g>
+        <g transform="translate(134 0)">
+          <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+        </g>
+        <g transform="translate(201 0)">
+          <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+        </g>
+      </g>
+      <text x="190" y="28" font-size="27" text-anchor="middle" fill="#253342">Yellow</text>
+      <text x="555" y="28" font-size="27" text-anchor="middle" fill="#253342">Green</text>
+      <g transform="translate(300 195)">
+        <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+        <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+        <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+      </g>
+      <g transform="translate(460 195)">
+        <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+        <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+        <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+      </g>
+    </g>
+    <path d="M190 124 L275 175 M555 124 L485 175 M332 195 H428 M380 195 V245 M280 245 H481" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M280 245 V277" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M347 245 V277" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M414 245 V277" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M481 245 V277" fill="none" stroke="#253342" stroke-width="3" />
+    <g transform="translate(280 320)">
+      <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+      <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+      <g transform="translate(0 0)">
+        <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+        <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+        <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+      </g>
+      <g transform="translate(67 0)">
+        <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+        <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+        <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+      </g>
+      <g transform="translate(134 0)">
+        <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+        <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+        <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+      </g>
+      <g transform="translate(201 0)">
+        <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+        <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+        <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+      </g>
+    </g>
+    <text x="105" y="330" font-size="27" text-anchor="middle" fill="#253342">First</text>
+    <text x="105" y="361" font-size="27" text-anchor="middle" fill="#253342">generation</text>
+    <path d="M280 362 V425 H481 M280 425 V459" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M347 425 V459" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M414 425 V459" fill="none" stroke="#253342" stroke-width="3" />
+    <path d="M481 425 V459" fill="none" stroke="#253342" stroke-width="3" />
+    <g id="second-generation">
+      <g transform="translate(280 500)">
+        <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+        <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+        <g transform="translate(0 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+        </g>
+        <g transform="translate(67 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+        </g>
+        <g transform="translate(134 0)">
+          <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+        </g>
+        <g transform="translate(201 0)">
+          <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+          <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+          <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+          <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+        </g>
+      </g>
+    </g>
+    <text x="105" y="500" font-size="27" text-anchor="middle" fill="#253342">Second</text>
+    <text x="105" y="531" font-size="27" text-anchor="middle" fill="#253342">generation</text>
+    <g id="third-generation">
+      <g id="f3-branch-1">
+        <path d="M280 543 L170 620 V906" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M170 705 H129" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M170 772 H129" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M170 839 H129" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M170 906 H129" fill="none" stroke="#253342" stroke-width="3" />
+        <g transform="translate(95 705) rotate(90)">
+          <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+          <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+          <g transform="translate(0 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+            </g>
+          </g>
+          <g transform="translate(67 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+            </g>
+          </g>
+          <g transform="translate(134 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+            </g>
+          </g>
+          <g transform="translate(201 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="f3-branch-2">
+        <path d="M347 543 L360 620 V906" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M360 705 H319" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M360 772 H319" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M360 839 H319" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M360 906 H319" fill="none" stroke="#253342" stroke-width="3" />
+        <g transform="translate(285 705) rotate(90)">
+          <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+          <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+          <g transform="translate(0 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+            </g>
+          </g>
+          <g transform="translate(67 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+            </g>
+          </g>
+          <g transform="translate(134 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+            </g>
+          </g>
+          <g transform="translate(201 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="f3-branch-3">
+        <path d="M414 543 L550 620 V906" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M550 705 H509" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M550 772 H509" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M550 839 H509" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M550 906 H509" fill="none" stroke="#253342" stroke-width="3" />
+        <g transform="translate(475 705) rotate(90)">
+          <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+          <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+          <g transform="translate(0 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YY</text>
+            </g>
+          </g>
+          <g transform="translate(67 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+            </g>
+          </g>
+          <g transform="translate(134 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#F2CF53" stroke="#997225" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#FFF6CE" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#997225" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">YG</text>
+            </g>
+          </g>
+          <g transform="translate(201 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="f3-branch-4">
+        <path d="M481 543 L740 620 V906" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M740 705 H699" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M740 772 H699" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M740 839 H699" fill="none" stroke="#253342" stroke-width="3" />
+        <path d="M740 906 H699" fill="none" stroke="#253342" stroke-width="3" />
+        <g transform="translate(665 705) rotate(90)">
+          <path d="M-43 -36 Q100 -58 253 -35 Q230 52 0 39 Q-31 19 -43 -36Z" fill="#FBF6D7" stroke="#9DAD63" stroke-width="3" />
+          <path d="M-47 -40 L-33 -52 L-25 -31 L-44 -28Z" fill="#4A7141" />
+          <g transform="translate(0 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+            </g>
+          </g>
+          <g transform="translate(67 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+            </g>
+          </g>
+          <g transform="translate(134 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+            </g>
+          </g>
+          <g transform="translate(201 0) rotate(-90)">
+            <g transform="translate(0 0)">
+              <circle cx="0" cy="0" r="31" fill="#86AD65" stroke="#365D37" stroke-width="2.5" />
+              <path d="M-20.150000000000002 -7.4399999999999995 Q-12.4 -24.18 3.1 -21.7" fill="none" stroke="#C9DC9C" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="21.080000000000002" cy="-15.5" rx="2.79" ry="5.58" fill="#365D37" transform="rotate(35 21.080000000000002 -15.5)" />
+              <text x="0" y="8" font-size="25" text-anchor="middle" fill="#253342">GG</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text x="380" y="989" font-size="28" text-anchor="middle" fill="#253342">Third generation</text>
+  </g>
+</svg>

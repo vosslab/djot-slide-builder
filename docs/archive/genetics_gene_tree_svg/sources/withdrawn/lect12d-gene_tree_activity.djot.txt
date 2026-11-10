@@ -1,0 +1,525 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 12D
+
+## Gene Tree Group Activity
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## December 1, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Construct a gene tree from the handout matrix.
+- Record each merge and the updated distances.
+- Calculate branch lengths from cluster distances.
+- Explain your completed tree to your group.
+
+=== layout: section
+
+# Gene Tree Group Activity
+
+=== layout: one-panel
+
+# *2025 Gene Tree Group Activity*
+
+@body
+
+- Group 01\: [https\://docs.google.com/spreadsheets/d/1vFbPLbcMca1Z5VYfN\_QQ9C2gz4j0E5vaZ05vSCB9Z9o/edit](https://docs.google.com/spreadsheets/d/1vFbPLbcMca1Z5VYfN_QQ9C2gz4j0E5vaZ05vSCB9Z9o/edit)
+- Group 02\: [https\://docs.google.com/spreadsheets/d/16BmExBLB7DUsrMWwGTf1eJWQYHiSfvSK0Zf2ETSb0TE/edit](https://docs.google.com/spreadsheets/d/16BmExBLB7DUsrMWwGTf1eJWQYHiSfvSK0Zf2ETSb0TE/edit)
+
+=== layout: one-panel
+@replaceme
+
+# *2024 Gene Tree Group Activity*
+
+@body
+
+- Group 01\: [https\://docs.google.com/spreadsheets/d/1YIE6tgZ2Vq7DQjKFES\_ckRq\_6ZAEKrCjPlChnTU\_Ch0/edit](https://docs.google.com/spreadsheets/d/1YIE6tgZ2Vq7DQjKFES_ckRq_6ZAEKrCjPlChnTU_Ch0/edit)
+- Group 02\: [https\://docs.google.com/spreadsheets/d/1TI1qN1h2DECb4FDWIJdlkirp4CAJBtAYuepnWNskkZY/edit](https://docs.google.com/spreadsheets/d/1TI1qN1h2DECb4FDWIJdlkirp4CAJBtAYuepnWNskkZY/edit)
+- Group 03\: [https\://docs.google.com/spreadsheets/d/1I11t3OeOHytd6SkB\_ofMXFgelkKn\_9c6Y8PDNJVo43U/edit](https://docs.google.com/spreadsheets/d/1I11t3OeOHytd6SkB_ofMXFgelkKn_9c6Y8PDNJVo43U/edit)
+- Group 04\: [https\://docs.google.com/spreadsheets/d/1TbTGCwNxNTZ9i4aIntVf70E0WbARgKiN7quZS5olGgc/edit](https://docs.google.com/spreadsheets/d/1TbTGCwNxNTZ9i4aIntVf70E0WbARgKiN7quZS5olGgc/edit)
+- Group 05\: [https\://docs.google.com/spreadsheets/d/19n\_li2fQDMh7uXAHQQ9g7kr6BhskwyVlcglxhDlzxEY/edit](https://docs.google.com/spreadsheets/d/19n_li2fQDMh7uXAHQQ9g7kr6BhskwyVlcglxhDlzxEY/edit)
+- Group 06\: [https\://docs.google.com/spreadsheets/d/1aTyhDu33eDwAj1fSIv3JqVnB9XSB2fzpPtHZka9YbuU/edit](https://docs.google.com/spreadsheets/d/1aTyhDu33eDwAj1fSIv3JqVnB9XSB2fzpPtHZka9YbuU/edit)
+- Group 07\: [https\://docs.google.com/spreadsheets/d/1oFBmUTyfH\_ozQz7XLDp204krbxFHXvVePRwGg6JZ2sE/edit](https://docs.google.com/spreadsheets/d/1oFBmUTyfH_ozQz7XLDp204krbxFHXvVePRwGg6JZ2sE/edit)
+- Group 08\: [https\://docs.google.com/spreadsheets/d/15cpBNOqZO3UBurI7\_dgOj2ocX6SmPp6c840uyw2QeoA/edit](https://docs.google.com/spreadsheets/d/15cpBNOqZO3UBurI7_dgOj2ocX6SmPp6c840uyw2QeoA/edit)
+- Group 09\: [https\://docs.google.com/spreadsheets/d/1HPWVOAvCtNiKokuCCFuvfAAWxzgwOtRNEjIQ2UyaamI/edit](https://docs.google.com/spreadsheets/d/1HPWVOAvCtNiKokuCCFuvfAAWxzgwOtRNEjIQ2UyaamI/edit)
+- Group 10\: [https\://docs.google.com/spreadsheets/d/1MIqQ\_8dXe807wDBjoc0wccjeQH1eL3GRuaiFo1URK-g/edit](https://docs.google.com/spreadsheets/d/1MIqQ_8dXe807wDBjoc0wccjeQH1eL3GRuaiFo1URK-g/edit)
+- Group 11\: [https\://docs.google.com/spreadsheets/d/1q3rXHB-yMnXqBaW99TvFYjq1RE0\_t\_C-VEJzp7ZpLpY/edit](https://docs.google.com/spreadsheets/d/1q3rXHB-yMnXqBaW99TvFYjq1RE0_t_C-VEJzp7ZpLpY/edit)
+- Group 12\: [https\://docs.google.com/spreadsheets/d/1bjaPSKqpedRzDRr6h5AN0YSgwv6hdUHi65-\_Bgk\_OVs/edit](https://docs.google.com/spreadsheets/d/1bjaPSKqpedRzDRr6h5AN0YSgwv6hdUHi65-_Bgk_OVs/edit)
+
+=== layout: one-panel
+
+# *2023 Gene Tree Group Activity*
+
+@body
+
+- Group 01\: [https\://docs.google.com/spreadsheets/d/1ia514pbMCMEy4DMQlNxsFyxD3uY8CMsl3kUGR6\_\_2GM/edit](https://docs.google.com/spreadsheets/d/1ia514pbMCMEy4DMQlNxsFyxD3uY8CMsl3kUGR6__2GM/edit)
+- Group 02\: [https\://docs.google.com/spreadsheets/d/1nUP4HYd1wxtBwtwWyjm1Q9GChet2TiT2iY9s1aKLlPM/edit](https://docs.google.com/spreadsheets/d/1nUP4HYd1wxtBwtwWyjm1Q9GChet2TiT2iY9s1aKLlPM/edit)
+- Group 03\: [https\://docs.google.com/spreadsheets/d/1FLYUQ0MnkbjTKgDKfkSabXHbbz7\_iW2BdhxhnGb9Vj4/edit](https://docs.google.com/spreadsheets/d/1FLYUQ0MnkbjTKgDKfkSabXHbbz7_iW2BdhxhnGb9Vj4/edit)
+- Group 04\: [https\://docs.google.com/spreadsheets/d/1Xk-37HalEa8H4WAcg0vKnEkkYMMUkrulR0Sggy4hbek/edit](https://docs.google.com/spreadsheets/d/1Xk-37HalEa8H4WAcg0vKnEkkYMMUkrulR0Sggy4hbek/edit)
+- Group 05\: [https\://docs.google.com/spreadsheets/d/1mhgaAXmpUVQ7c6pmWw7IDqH\_4RFN1HX0YqeTax6i8G4/edit](https://docs.google.com/spreadsheets/d/1mhgaAXmpUVQ7c6pmWw7IDqH_4RFN1HX0YqeTax6i8G4/edit)
+- Group 06\: [https\://docs.google.com/spreadsheets/d/1lGsDovRzuk\_nJKQhOEjAX4uk1aqI7DsJ1qe88eYAn98/edit](https://docs.google.com/spreadsheets/d/1lGsDovRzuk_nJKQhOEjAX4uk1aqI7DsJ1qe88eYAn98/edit)
+- Group 07\: [https\://docs.google.com/spreadsheets/d/1pCza43axXCx1t3msgUEOkcOIB\_T-R6LMADgjNwgg1Iw/edit](https://docs.google.com/spreadsheets/d/1pCza43axXCx1t3msgUEOkcOIB_T-R6LMADgjNwgg1Iw/edit)
+- Group 08\: [https\://docs.google.com/spreadsheets/d/1aEzRrQv5X1HChhk4Clfu1kKWlqmG71cjUl7IXA9joXE/edit](https://docs.google.com/spreadsheets/d/1aEzRrQv5X1HChhk4Clfu1kKWlqmG71cjUl7IXA9joXE/edit)
+- Group 09\: [https\://docs.google.com/spreadsheets/d/1HoBqTo24tc\_RQOu7BEdqvYGgV6eswiyxFmuSMp32aX8/edit](https://docs.google.com/spreadsheets/d/1HoBqTo24tc_RQOu7BEdqvYGgV6eswiyxFmuSMp32aX8/edit)
+- Group 10\: [https\://docs.google.com/spreadsheets/d/1V2VVHkKkmRy09CT2nX7k3QTH5otoCMZN5aQJdzoPZaM/edit](https://docs.google.com/spreadsheets/d/1V2VVHkKkmRy09CT2nX7k3QTH5otoCMZN5aQJdzoPZaM/edit)
+
+=== layout: one-panel
+
+# *2021 Gene Tree Group Activity*
+
+@body
+
+- Group 1\: [https\://docs.google.com/spreadsheets/d/1XbkbsMy3AP9TCV2iq3-WJLNFHLpoLTfXYKjsU-Ir7Xg/edit](https://docs.google.com/spreadsheets/d/1XbkbsMy3AP9TCV2iq3-WJLNFHLpoLTfXYKjsU-Ir7Xg/edit)
+- Group 2\: [https\://docs.google.com/spreadsheets/d/1J\_PV8SkKrOhOJnb6-1hXUw39NGscO9NiW0EuHexDnEw/edit](https://docs.google.com/spreadsheets/d/1J_PV8SkKrOhOJnb6-1hXUw39NGscO9NiW0EuHexDnEw/edit)
+- Group 3\: [https\://docs.google.com/spreadsheets/d/1Te2skGoTIGcVGaL0xE9BT65Gfknq3-V5HkWaGj0S-d0/edit](https://docs.google.com/spreadsheets/d/1Te2skGoTIGcVGaL0xE9BT65Gfknq3-V5HkWaGj0S-d0/edit)
+- Group 4\: [https\://docs.google.com/spreadsheets/d/1bW9MB9117QF5Ru2bmoI4rt2sjzaeu8meAsywn4gynDo/edit](https://docs.google.com/spreadsheets/d/1bW9MB9117QF5Ru2bmoI4rt2sjzaeu8meAsywn4gynDo/edit)
+- Group 5\: [https\://docs.google.com/spreadsheets/d/1Nt1mRPlphd1NLYs-mrP4AP-B-3BAUozlG2IbJsX9vm0/edit](https://docs.google.com/spreadsheets/d/1Nt1mRPlphd1NLYs-mrP4AP-B-3BAUozlG2IbJsX9vm0/edit)
+- Group 6\: [https\://docs.google.com/spreadsheets/d/1DMsl8LrUXY5CE0RXW9uaNHc0fiJNtcEtvFBc4UJ8t7U/edit](https://docs.google.com/spreadsheets/d/1DMsl8LrUXY5CE0RXW9uaNHc0fiJNtcEtvFBc4UJ8t7U/edit)
+
+=== layout: section
+
+# Gene Tree Handout
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-7}
+|  | a | b | c | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| a | [&#8212;]{background-color=#DDE1E5} | 12 | [4]{color=#870087} | 15 | 9 | 18 |
+| b | 12 | [&#8212;]{background-color=#DDE1E5} | 10 | 13 | [6]{color=#870087} | 15 |
+| c | [4]{color=#870087} | 10 | [&#8212;]{background-color=#DDE1E5} | 13 | 9 | 14 |
+| d | 15 | 13 | 13 | [&#8212;]{background-color=#DDE1E5} | 11 | [8]{color=#870087} |
+| e | 9 | [6]{color=#870087} | 9 | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | 18 | 15 | 14 | [8]{color=#870087} | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-7}
+|  | [a]{background-color=#F4D7DF} | b | [c]{background-color=#F4D7DF} | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [12]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [18]{background-color=#F4D7DF} |
+| b | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [10]{background-color=#F4D7DF} | 13 | [6]{color=#870087} | 15 |
+| [c]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [10]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| d | [15]{background-color=#F4D7DF} | 13 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | 11 | [8]{color=#870087} |
+| e | [9]{background-color=#F4D7DF} | [6]{color=#870087} | [9]{background-color=#F4D7DF} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | [18]{background-color=#F4D7DF} | 15 | [14]{background-color=#F4D7DF} | [8]{color=#870087} | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: two-panels
+
+# Compress the distance matrix
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-7}
+|  | [a]{background-color=#F4D7DF} | b | [c]{background-color=#F4D7DF} | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [12]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [18]{background-color=#F4D7DF} |
+| b | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [10]{background-color=#F4D7DF} | 13 | [6]{color=#870087} | 15 |
+| [c]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [10]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| d | [15]{background-color=#F4D7DF} | 13 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | 11 | [8]{color=#870087} |
+| e | [9]{background-color=#F4D7DF} | [6]{color=#870087} | [9]{background-color=#F4D7DF} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | [18]{background-color=#F4D7DF} | 15 | [14]{background-color=#F4D7DF} | [8]{color=#870087} | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+@right
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| [(a,c)]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | []{background-color=#F4D7DF} | []{background-color=#F4D7DF} | []{background-color=#F4D7DF} | []{background-color=#F4D7DF} |
+| b | []{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | 13 | 6 | 15 |
+| d | []{background-color=#F4D7DF} | 13 | [&#8212;]{background-color=#DDE1E5} | 11 | 8 |
+| e | []{background-color=#F4D7DF} | 6 | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | []{background-color=#F4D7DF} | 15 | 8 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+- b to a is 12 and b to c is 10
+- so b to (a,c) is (12+10)/2 = 11
+- d-a is 15, d-c is 13, so d-(a,c) is 14
+=== layout: two-panels
+
+# Compress the distance matrix
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-7}
+|  | [a]{background-color=#F4D7DF} | b | [c]{background-color=#F4D7DF} | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [12]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [18]{background-color=#F4D7DF} |
+| b | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [10]{background-color=#F4D7DF} | 13 | [6]{color=#870087} | 15 |
+| [c]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [10]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| d | [15]{background-color=#F4D7DF} | 13 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | 11 | [8]{color=#870087} |
+| e | [9]{background-color=#F4D7DF} | [6]{color=#870087} | [9]{background-color=#F4D7DF} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | [18]{background-color=#F4D7DF} | 15 | [14]{background-color=#F4D7DF} | [8]{color=#870087} | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+@right
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 11 | 14 | 9 | 16 |
+| b | 11 | [&#8212;]{background-color=#DDE1E5} | 13 | [6]{color=#870087} | 15 |
+| d | 14 | 13 | [&#8212;]{background-color=#DDE1E5} | 11 | 8 |
+| e | 9 | [6]{color=#870087} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | 16 | 15 | 8 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 11 | 14 | 9 | 16 |
+| b | 11 | [&#8212;]{background-color=#DDE1E5} | 13 | [6]{color=#870087} | 15 |
+| d | 14 | 13 | [&#8212;]{background-color=#DDE1E5} | 11 | 8 |
+| e | 9 | [6]{color=#870087} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | 16 | 15 | 8 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 11 | 14 | 9 | 16 |
+| b | 11 | [&#8212;]{background-color=#DDE1E5} | 13 | [6]{color=#870087} | 15 |
+| d | 14 | 13 | [&#8212;]{background-color=#DDE1E5} | 11 | 8 |
+| e | 9 | [6]{color=#870087} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | 16 | 15 | 8 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | [b]{background-color=#F4D7DF} | d | [e]{background-color=#F4D7DF} | f |
+| --- | --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | [11]{background-color=#F4D7DF} | 14 | [9]{background-color=#F4D7DF} | 16 |
+| [b]{background-color=#F4D7DF} | [11]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [6]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} |
+| d | 14 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [11]{background-color=#F4D7DF} | 8 |
+| [e]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [6]{background-color=#F4D7DF color=#870087} | [11]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} |
+| f | 16 | [15]{background-color=#F4D7DF} | 8 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: two-panels
+
+# Compress the distance matrix
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | [b]{background-color=#F4D7DF} | d | [e]{background-color=#F4D7DF} | f |
+| --- | --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | [11]{background-color=#F4D7DF} | 14 | [9]{background-color=#F4D7DF} | 16 |
+| [b]{background-color=#F4D7DF} | [11]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [6]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} |
+| d | 14 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [11]{background-color=#F4D7DF} | 8 |
+| [e]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [6]{background-color=#F4D7DF color=#870087} | [11]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} |
+| f | 16 | [15]{background-color=#F4D7DF} | 8 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} |
+
+@right
+
+{table-style=matrix-lower table-group=phy-d-activity-5}
+|  | (a,c) | (b,e) | d | f |
+| --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 10 | 14 | 16 |
+| (b,e) | 10 | [&#8212;]{background-color=#DDE1E5} | 12 | 14 |
+| d | 14 | 12 | [&#8212;]{background-color=#DDE1E5} | [8]{color=#870087} |
+| f | 16 | 14 | [8]{color=#870087} | [&#8212;]{background-color=#DDE1E5} |
+
+- b to (a,c) is 11, e to (a,c) is 9
+- (b,e) to (a,c) is (11+9)/2 = 10
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-5}
+|  | (a,c) | (b,e) | d | f |
+| --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 10 | 14 | 16 |
+| (b,e) | 10 | [&#8212;]{background-color=#DDE1E5} | 12 | 14 |
+| d | 14 | 12 | [&#8212;]{background-color=#DDE1E5} | [8]{color=#870087} |
+| f | 16 | 14 | [8]{color=#870087} | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-5}
+|  | (a,c) | (b,e) | d | f |
+| --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 10 | 14 | 16 |
+| (b,e) | 10 | [&#8212;]{background-color=#DDE1E5} | 12 | 14 |
+| d | 14 | 12 | [&#8212;]{background-color=#DDE1E5} | [8]{color=#870087} |
+| f | 16 | 14 | [8]{color=#870087} | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-5}
+|  | (a,c) | (b,e) | [d]{background-color=#F4D7DF} | [f]{background-color=#F4D7DF} |
+| --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 10 | [14]{background-color=#F4D7DF} | [16]{background-color=#F4D7DF} |
+| (b,e) | 10 | [&#8212;]{background-color=#DDE1E5} | [12]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| [d]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [8]{background-color=#F4D7DF color=#870087} |
+| [f]{background-color=#F4D7DF} | [16]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} | [8]{background-color=#F4D7DF color=#870087} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} |
+
+
+=== layout: two-panels
+
+# Compress the distance matrix
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-5}
+|  | (a,c) | (b,e) | [d]{background-color=#F4D7DF} | [f]{background-color=#F4D7DF} |
+| --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 10 | [14]{background-color=#F4D7DF} | [16]{background-color=#F4D7DF} |
+| (b,e) | 10 | [&#8212;]{background-color=#DDE1E5} | [12]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| [d]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [8]{background-color=#F4D7DF color=#870087} |
+| [f]{background-color=#F4D7DF} | [16]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} | [8]{background-color=#F4D7DF color=#870087} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} |
+
+@right
+
+{table-style=matrix-lower table-group=phy-d-activity-4}
+|  | (a,c) | (b,e) | (d,f) |
+| --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | [10]{color=#870087} | 15 |
+| (b,e) | [10]{color=#870087} | [&#8212;]{background-color=#DDE1E5} | 13 |
+| (d,f) | 15 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-4}
+|  | (a,c) | (b,e) | (d,f) |
+| --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | [10]{color=#870087} | 15 |
+| (b,e) | [10]{color=#870087} | [&#8212;]{background-color=#DDE1E5} | 13 |
+| (d,f) | 15 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-4}
+|  | (a,c) | (b,e) | (d,f) |
+| --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | [10]{color=#870087} | 15 |
+| (b,e) | [10]{color=#870087} | [&#8212;]{background-color=#DDE1E5} | 13 |
+| (d,f) | 15 | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-4}
+|  | [(a,c)]{background-color=#F4D7DF} | [(b,e)]{background-color=#F4D7DF} | (d,f) |
+| --- | --- | --- | --- |
+| [(a,c)]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [10]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} |
+| [(b,e)]{background-color=#F4D7DF} | [10]{background-color=#F4D7DF color=#870087} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} |
+| (d,f) | [15]{background-color=#F4D7DF} | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: two-panels
+
+# Compress the distance matrix
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-4}
+|  | [(a,c)]{background-color=#F4D7DF} | [(b,e)]{background-color=#F4D7DF} | (d,f) |
+| --- | --- | --- | --- |
+| [(a,c)]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [10]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} |
+| [(b,e)]{background-color=#F4D7DF} | [10]{background-color=#F4D7DF color=#870087} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} |
+| (d,f) | [15]{background-color=#F4D7DF} | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} |
+
+@right
+
+{table-style=matrix-lower table-group=phy-d-activity-3}
+|  | ((a,c),(b,e)) | (d,f) |
+| --- | --- | --- |
+| ((a,c),(b,e)) | [&#8212;]{background-color=#DDE1E5} | [14]{color=#870087} |
+| (d,f) | [14]{color=#870087} | [&#8212;]{background-color=#DDE1E5} |
+
+
+=== layout: one-panel
+
+# Gene Tree Handout
+
+@body
+
+{table-style=matrix-lower table-group=phy-d-activity-3}
+|  | ((a,c),(b,e)) | (d,f) |
+| --- | --- | --- |
+| ((a,c),(b,e)) | [&#8212;]{background-color=#DDE1E5} | [14]{color=#870087} |
+| (d,f) | [14]{color=#870087} | [&#8212;]{background-color=#DDE1E5} |
+
+- nothing left to compress
+=== layout: two-panels
+
+# Build the gene tree
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-7}
+|  | [a]{background-color=#F4D7DF} | b | [c]{background-color=#F4D7DF} | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [12]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [18]{background-color=#F4D7DF} |
+| b | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [10]{background-color=#F4D7DF} | 13 | [6]{color=#870087} | 15 |
+| [c]{background-color=#F4D7DF} | [4]{background-color=#F4D7DF color=#870087} | [10]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| d | [15]{background-color=#F4D7DF} | 13 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | 11 | [8]{color=#870087} |
+| e | [9]{background-color=#F4D7DF} | [6]{color=#870087} | [9]{background-color=#F4D7DF} | 11 | [&#8212;]{background-color=#DDE1E5} | 13 |
+| f | [18]{background-color=#F4D7DF} | 15 | [14]{background-color=#F4D7DF} | [8]{color=#870087} | 13 | [&#8212;]{background-color=#DDE1E5} |
+
+- a|c = 4/2 = 2
+
+@right
+
+![Activity tree through merge 1](assets/lect12d-gene_tree_activity/phy_d_activity_stage_1.drawn.svg)
+=== layout: two-panels
+
+# Build the gene tree
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-6}
+|  | (a,c) | [b]{background-color=#F4D7DF} | d | [e]{background-color=#F4D7DF} | f |
+| --- | --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | [11]{background-color=#F4D7DF} | 14 | [9]{background-color=#F4D7DF} | 16 |
+| [b]{background-color=#F4D7DF} | [11]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} | [6]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} |
+| d | 14 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} | [11]{background-color=#F4D7DF} | 8 |
+| [e]{background-color=#F4D7DF} | [9]{background-color=#F4D7DF} | [6]{background-color=#F4D7DF color=#870087} | [11]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} |
+| f | 16 | [15]{background-color=#F4D7DF} | 8 | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} |
+
+- a|c = 4/2 = 2
+- b|e = 6/2 = 3
+
+@right
+
+![Activity tree through merge 2](assets/lect12d-gene_tree_activity/phy_d_activity_stage_2.drawn.svg)
+=== layout: two-panels
+
+# Build the gene tree
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-5}
+|  | (a,c) | (b,e) | [d]{background-color=#F4D7DF} | [f]{background-color=#F4D7DF} |
+| --- | --- | --- | --- | --- |
+| (a,c) | [&#8212;]{background-color=#DDE1E5} | 10 | [14]{background-color=#F4D7DF} | [16]{background-color=#F4D7DF} |
+| (b,e) | 10 | [&#8212;]{background-color=#DDE1E5} | [12]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} |
+| [d]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} | [12]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [8]{background-color=#F4D7DF color=#870087} |
+| [f]{background-color=#F4D7DF} | [16]{background-color=#F4D7DF} | [14]{background-color=#F4D7DF} | [8]{background-color=#F4D7DF color=#870087} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} |
+
+- a|c = 4/2 = 2
+- b|e = 6/2 = 3
+- d|f = 8/2 = 4
+
+@right
+
+![Activity tree through merge 3](assets/lect12d-gene_tree_activity/phy_d_activity_stage_3.drawn.svg)
+=== layout: two-panels
+
+# Build the gene tree
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-4}
+|  | [(a,c)]{background-color=#F4D7DF} | [(b,e)]{background-color=#F4D7DF} | (d,f) |
+| --- | --- | --- | --- |
+| [(a,c)]{background-color=#F4D7DF} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [10]{background-color=#F4D7DF color=#870087} | [15]{background-color=#F4D7DF} |
+| [(b,e)]{background-color=#F4D7DF} | [10]{background-color=#F4D7DF color=#870087} | [&#8212;]{background-color=#7B1B69 color=#FFFFFF} | [13]{background-color=#F4D7DF} |
+| (d,f) | [15]{background-color=#F4D7DF} | [13]{background-color=#F4D7DF} | [&#8212;]{background-color=#DDE1E5} |
+
+- a|c = 4/2 = 2
+- b|e = 6/2 = 3
+- d|f = 8/2 = 4
+- ac|be = 10/2 = 5
+
+@right
+
+![Activity tree through merge 4](assets/lect12d-gene_tree_activity/phy_d_activity_stage_4.drawn.svg)
+=== layout: two-panels
+
+# Build the gene tree
+
+@left
+
+{table-style=matrix-lower table-group=phy-d-activity-3}
+|  | ((a,c),(b,e)) | (d,f) |
+| --- | --- | --- |
+| ((a,c),(b,e)) | [&#8212;]{background-color=#DDE1E5} | [14]{color=#870087} |
+| (d,f) | [14]{color=#870087} | [&#8212;]{background-color=#DDE1E5} |
+
+- a|c = 4/2 = 2
+- b|e = 6/2 = 3
+- d|f = 8/2 = 4
+- ac|be = 10/2 = 5
+- acbe|df = 14/2 = 7
+
+@right
+
+![Activity tree through merge 5](assets/lect12d-gene_tree_activity/phy_d_activity_stage_5.drawn.svg)
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Use the smallest distance to choose the next merge.
+- Compress the matrix after each merge.
+- Calculate each new branch from its cluster height.
+- Check your tree using the original matrix.
+
+=== layout: theend
+
+# THE END
+

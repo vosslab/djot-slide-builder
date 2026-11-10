@@ -1,0 +1,106 @@
+{
+  "five_taxa_heights": [
+    8.5,
+    11.0,
+    14.0,
+    16.5
+  ],
+  "activity_heights": [
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    7.0
+  ],
+  "seven_species_arithmetic": true,
+  "reveal_sequences": true,
+  "assets": [
+    {
+      "asset": "phy_d_activity_stage_2.drawn.svg",
+      "edges": 4,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_seven_stage_5.drawn.svg",
+      "edges": 10,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_hartl_answer.drawn.svg",
+      "edges": 6,
+      "xml": true
+    },
+    {
+      "asset": "phy_d_activity_stage_4.drawn.svg",
+      "edges": 8,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_five_taxa.drawn.svg",
+      "edges": 8,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_seven_stage_3.drawn.svg",
+      "edges": 6,
+      "xml": true
+    },
+    {
+      "asset": "phy_d_activity_stage_3.drawn.svg",
+      "edges": 6,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_hartl_question.drawn.svg",
+      "edges": 6,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_seven_stage_4.drawn.svg",
+      "edges": 8,
+      "xml": true
+    },
+    {
+      "asset": "phy_d_activity_stage_5.drawn.svg",
+      "edges": 10,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_seven_stage_2.drawn.svg",
+      "edges": 4,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_seven_stage_1.drawn.svg",
+      "edges": 2,
+      "xml": true
+    },
+    {
+      "asset": "phy_d_activity_stage_1.drawn.svg",
+      "edges": 2,
+      "xml": true
+    },
+    {
+      "asset": "phy_c_seven_stage_6.drawn.svg",
+      "edges": 12,
+      "xml": true
+    }
+  ],
+  "original_teaching_states_preserved": true,
+  "c_added_slides": 1,
+  "c_added_slide_reason": "Full-width native alignment after unchanged original prose",
+  "native_seven_species_tables_checked": 9,
+  "native_activity_tables_checked": 27,
+  "alignment_shape": [
+    7,
+    50
+  ],
+  "alignment_distances_all21_match": true,
+  "svg_metric_geometry_checked": true,
+  "svg_rooted_clades_checked": true,
+  "canonical_sha256": {
+    "lect12c_more_gene_trees_part_01.djot": "fcf5232a28e6c8a41fdf34562e29dd35c2783e3900b1be6ff35f5686132e7e9c",
+    "lect12c_more_gene_trees_part_02.djot": "7f54ecb50ad70fe7d13dacedc5e845da2b137540481ef0cefa0128d0107e1064",
+    "lect12d-gene_tree_activity.djot": "9c2acf5606a40ed74df77af6739d19125abb7e0e3d3bda142fdab13f2822547b"
+  }
+}

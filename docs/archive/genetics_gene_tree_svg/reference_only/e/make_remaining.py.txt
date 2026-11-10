@@ -1,0 +1,44 @@
+from pathlib import Path
+import base64
+import subprocess
+exec(Path('_temp/genetics_visual_renewal/m3_phylogenetics/e/make_trials.py').read_text().split('# Both species')[0])
+
+# Duplication before separate alpha and beta species divergences.
+b=''
+b+='<g id="gene-tree">'+path('M500,415 V365 M500,365 L245,280 M500,365 L755,280 M245,280 L70,150 M245,280 L325,215 M325,215 L250,150 M325,215 L420,150 M755,280 L930,150 M755,280 L675,215 M675,215 L580,150 M675,215 L750,150',INK,4)+'</g>'
+for x,label,color in [(70,'frog \u03b1',BLUE),(250,'chick \u03b1',BLUE),(420,'mouse \u03b1',BLUE),(580,'mouse \u03b2',RED),(750,'chick \u03b2',RED),(930,'frog \u03b2',RED)]:b+=text(x,131,label,27,color,'middle')
+b+=text(500,455,'Early globin gene',26,anchor='middle')+text(245,321,'\u03b1-chain gene',25,BLUE,'middle')+text(755,321,'\u03b2-chain gene',25,RED,'middle')
+b+='<circle cx="500" cy="365" r="8" fill="#007A52"/>'+text(520,375,'Duplication',24,GREEN)
+b+=path('M60,91 V75 H430 V91',BLUE,3)+text(245,64,'Orthologs',25,BLUE,'middle')
+b+=path('M570,91 V75 H940 V91',RED,3)+text(755,64,'Orthologs',25,RED,'middle')
+b+=path('M425,105 V91 H575 V105',GREEN,3)+text(500,40,'Paralogs',25,GREEN,'middle')
+save('phy_e_globin_homology.drawn.svg',1000,480,'Globin gene homology','Original reconstruction of LECT12E source figure9. Early globin duplicates to alpha and beta. Each lineage retains frog, chick, mouse; chick and mouse share their more recent branch. Orthology groups within each lineage; mousealpha and mousebeta exemplify paralogy. All six genes are homologs; lengths schematic.',b)
+
+b='<g id="gene-tree">'+path('M470,460 V385',INK,4)+path('M470,385 L280,295 M280,295 L120,120 M280,295 L540,120',BLUE,4)+path('M470,385 L660,295 M660,295 L350,120 M660,295 L800,120',RED,4)+'</g>'
+b+=text(470,505,'Ancestral \u03b1',27,anchor='middle')+text(260,335,'\u03b1',30,BLUE)+text(665,335,'\u03b2',30,RED)
+for x,y,label,col in [(120,95,'\u03b11',BLUE),(350,95,'\u03b21',RED),(540,95,'\u03b12',BLUE),(800,95,'\u03b22',RED)]:b+=text(x,y,label,30,col,'middle')
+b+=text(235,40,'Species 1',27,anchor='middle')+text(670,40,'Species 2',27,anchor='middle')
+b+=path('M80,58 H390 M500,58 H840','#777777',2)
+b+='<circle cx="470" cy="385" r="8" fill="#007A52"/>'+text(490,400,'Duplication',24,GREEN)
+b+='<circle cx="280" cy="295" r="7" fill="#222"/><circle cx="660" cy="295" r="7" fill="#222"/>'+text(470,270,'Speciation',24,anchor='middle')
+save('phy_e_duplication_speciation.drawn.svg',930,530,'Gene duplication followed by speciation','Original reconstruction of LECT12E source figure10. Ancestral alpha duplicates into alpha and beta before species1/species2 split. Descendants alpha1 beta1 alpha2 beta2. Crossings are not nodes; lengths schematic.',b)
+
+# Original empirical pixels retain all observed positions; only whitespace is excluded.
+original=Path('genetics/LECT12/djot/assets/lect12e-evol_time/image_004.png')
+data='data:image/png;base64,'+base64.b64encode(original.read_bytes()).decode()
+scale=1100/1402
+b=''
+for top,y in [(170,70),(660,280)]:
+    b+=f'<svg x="25" y="{y}" width="1100" height="94.15" viewBox="0 {top} 1402 120"><image x="0" y="0" width="1402" height="820" href="{data}"/></svg>'
+for x,label in [(100,'1'),(586,'500'),(1071,'1,000')]:b+=text(25+x*scale,190,label,25,BLUE,'middle')
+for x,label in [(335,'1,500'),(822,'2,000'),(1306,'2,500')]:b+=text(25+x*scale,395,label,25,BLUE,'middle')
+b+=text(50,28,'Base-pair substitutions',23)+path(f'M180,36 L{25+100*scale},108 M180,36 L{25+267*scale},108',INK,2)
+b+=text(405,28,'Insertion sites',23)+path(f'M485,36 L{25+535*scale},78 M485,36 L{25+637*scale},78',INK,2)
+b+=path(f'M{25+100*scale},202 V212 H{25+186*scale} V202',INK,2)+text(25+143*scale,241,'Exon',23,anchor='middle')
+b+=path(f'M{25+186*scale},202 V212 H{25+787*scale} V202',INK,2)+text(25+486*scale,241,'Intron',23,anchor='middle')
+b+=text(30,280,'Amino-acid-changing substitution (1,490)',22)+line(370,287,25+325*scale,321,INK,2)
+b+=text(960,259,'Deletion',23,anchor='middle')+line(960,267,25+1200*scale,295,INK,2)
+svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="415" viewBox="0 0 1150 415" role="img" aria-labelledby="title description"><title id="title">Observed variants in fruit-fly Adh</title><desc id="description">Retained original empirical raster image004 with source-positioned labels from original LECT12E PDF page5. The original pixel positions and two coordinate strips are preserved.</desc><g font-family="Arial, sans-serif">{b}</g></svg>'
+p=BASE/'assets/phy_e_adh_annotated.svg';p.write_text(svg)
+for width in [320,1200]:subprocess.run(['rsvg-convert','-b','white','-w',str(width),'-o',str(BASE/'previews'/f'{p.stem}_{width}.png'),str(p)],check=True)
+print('Remaining E figures prepared in scratch; original empirical raster embedded unchanged.')

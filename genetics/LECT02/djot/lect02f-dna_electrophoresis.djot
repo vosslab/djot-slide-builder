@@ -65,21 +65,17 @@ color-theme: genetics
 
 ![Slide image 2](assets/lect02f-dna_electrophoresis/image_002.png)
 
-- Agar melts at 85 °C (185 °F) and solidifies around 32-40 °C (90-104 °F). This property lends a suitable balance between easy melting and good gel stability at relatively high temperatures. Gel density is controlled by concentration of agarose
+- Agar melts at 85 &deg;C (185 &deg;F) and solidifies around 32-40 &deg;C (90-104 &deg;F). This property lends a suitable balance between easy melting and good gel stability at relatively high temperatures. Gel density is controlled by concentration of agarose
 
-=== layout: stacked-panels
+=== layout: one-panel
 
-# Size separation of DNA fragmentsby electrophoresis in agarose gels
+# Size separation in an agarose gel
 
-@top
+@body
 
-- Negatively charged DNA moves toward the positive pole
+![Electrophoresis apparatus with wells near the negative electrode](assets/lect02f-dna_electrophoresis/electrophoresis_apparatus.drawn.svg)
 
-@bottom
-
-![Slide image 3](assets/lect02f-dna_electrophoresis/image_003.jpg)
-
-- Apparatus for gel electrophoresis.
+Negatively charged DNA moves toward the positive pole. Bands become visible after suitable treatment.
 
 === layout: one-panel
 
@@ -108,21 +104,25 @@ color-theme: genetics
 
 ![Slide image 7](assets/lect02f-dna_electrophoresis/image_007.png)
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![DNA mixtures loaded into wells beside the negative cathode](assets/lect02f-dna_electrophoresis/electrophoresis_loading.drawn.svg)
 
-![Slide image 8](assets/lect02f-dna_electrophoresis/image_008.jpg)
+@caption
 
+*1. Load.* Place mixtures of DNA molecules of different sizes into the wells near the negative electrode.
 
+=== layout: big-image
 
+@image
 
+![Illustrative DNA bands migrating toward the positive anode](assets/lect02f-dna_electrophoresis/electrophoresis_migration.drawn.svg)
 
+@caption
 
-
-
-Native reconstruction needed: 16 positioned diagram labels.
+*2. Separate.* Apply an electric field. Shorter molecules move farther through the gel than longer molecules. Bands shown are illustrative and require treatment to see.
 
 === layout: one-panel
 

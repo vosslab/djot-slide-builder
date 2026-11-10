@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="wall-title wall-desc">
+	<title id="wall-title">Plant primary cell wall cutaway</title>
+	<desc id="wall-desc">Middle lamella above the primary cell wall and plasma membrane. Green cellulose microfibrils cross in several directions; red cross-linking glycans contact and bridge the rods; blue pectin strands interweave throughout the matrix and middle lamella. A source-retained 50 nm bar indicates molecular scale; the open layer spacing is schematic.</desc>
+	<metadata id="provenance">Original vector reconstruction of the illustrative content in Figure 19-71. Molecular Biology of the Cell, 4th Edition. Course source: biotech/LECT06/djot/assets/lect06c-set_4_tp_chapter_12_16_material/image_022.jpg; SHA256 78e1088a662716d1a658e5b0807ac01ac872bac74cbe550babb8c1444a18e1c3. Exact original ODP media: slide 25, Pictures/10000000000002CC00000201BC584610.jpg. Molecular rods, networks and open layer separation are schematic. Scale bar length 238 drawing units; fibril diameters 22-26 units preserve the source's approximate bar-to-rod ratio. No wall-thickness dimension is implied.</metadata>
+	<defs>
+	<linearGradient id="cellulose-shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d1eca0"/><stop offset="0.38" stop-color="#9dca68"/><stop offset="1" stop-color="#5f943f"/></linearGradient>
+	<clipPath id="lamella-clip"><path d="M270 180L450 70 940 145 760 255Z"/></clipPath>
+	</defs>
+	<rect width="1200" height="860" fill="#ffffff"/>
+	<g id="membrane">
+	<path d="M270 620L450 510 940 585 760 695Z" fill="#e3edef" stroke="#748d97" stroke-width="2"/>
+	<path d="M270 620L760 695 760 719 270 644Z" fill="#b7cbd0" stroke="#748d97" stroke-width="2"/>
+	<path d="M760 695L940 585 940 609 760 719Z" fill="#90acb7" stroke="#748d97" stroke-width="2"/>
+	<path d="M270 628L760 703 940 593" fill="none" stroke="#f4f8f8" stroke-width="3"/>
+	<path d="M270 638L760 713 940 603" fill="none" stroke="#6e939f" stroke-width="2"/>
+	</g>
+<g id="pectin-back" fill="none">
+<path d="M289 582 C340 530 351 586 413 545 S490 530 528 486 S590 451 620 480 S707 510 752 454 S837 412 919 397" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M305 529 C343 545 366 493 406 504 S475 556 523 527 S569 448 626 434 S691 451 731 413 S807 353 883 375" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M321 451 C370 408 398 456 445 425 S478 356 537 376 S591 421 646 378 S731 324 785 340 S850 313 909 282" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M295 370 C339 383 348 322 402 338 S475 338 504 306 S556 285 609 305 S701 303 759 279 S850 263 917 273" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M306 620 C356 613 350 562 396 567 S455 620 507 597 S570 577 614 600 S668 640 718 608 S835 585 901 570" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M441 230 C413 290 455 307 426 352 S384 414 417 457 S470 500 441 553 S409 588 445 641" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M606 262 C589 312 635 338 608 390 S585 443 612 487 S664 544 635 591 S601 643 644 675" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M798 241 C761 283 794 321 768 369 S725 421 762 456 S822 498 804 549 S754 613 785 656" fill="none" stroke="#167e91" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="fibril-rear-low" transform="translate(410 490) rotate(8.373)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="11.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -11.0 H466.978 A5.5 11.0 0 0 1 466.978 11.0 H0 A5.5 11.0 0 0 0 0 -11.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -5.28 H462.978" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 5.17 H462.978" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="466.978" cy="0" rx="5.5" ry="11.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="466.978" cy="0" rx="2.2" ry="7.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<g id="fibril-rear-rising" transform="translate(325 535) rotate(-23.791)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="11.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -11.0 H508.183 A5.5 11.0 0 0 1 508.183 11.0 H0 A5.5 11.0 0 0 0 0 -11.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -5.28 H504.183" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 5.17 H504.183" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="508.183" cy="0" rx="5.5" ry="11.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="508.183" cy="0" rx="2.2" ry="7.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<path d="M378 512 C394 501 398 483 412 490 L487 501 C505 506 507 468 525 448" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="fibril-rear-oblique" transform="translate(470 280) rotate(32.152)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="12.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -12.0 H413.401 A5.5 12.0 0 0 1 413.401 12.0 H0 A5.5 12.0 0 0 0 0 -12.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -5.76 H409.401" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 5.64 H409.401" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="413.401" cy="0" rx="5.5" ry="12.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="413.401" cy="0" rx="2.2" ry="8.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<g id="fibril-mid-rising" transform="translate(400 470) rotate(-19.113)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="12.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -12.0 H534.462 A5.5 12.0 0 0 1 534.462 12.0 H0 A5.5 12.0 0 0 0 0 -12.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -5.76 H530.462" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 5.64 H530.462" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="534.462" cy="0" rx="5.5" ry="12.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="534.462" cy="0" rx="2.2" ry="8.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<path d="M565 342 C585 354 605 378 618 394 C632 404 650 391 663 379 L720 359" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M750 458 L782 447 C799 437 800 416 818 406 L861 390 C875 382 872 333 884 302" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="fibril-mid-crossing" transform="translate(305 365) rotate(12.470)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="12.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -12.0 H532.565 A5.5 12.0 0 0 1 532.565 12.0 H0 A5.5 12.0 0 0 0 0 -12.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -5.76 H528.565" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 5.64 H528.565" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="532.565" cy="0" rx="5.5" ry="12.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="532.565" cy="0" rx="2.2" ry="8.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<path d="M343 373 L402 386 C422 388 440 408 458 409 L505 434 C523 445 540 467 558 474 L604 518" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="fibril-front-oblique" transform="translate(425 430) rotate(35.399)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="12.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -12.0 H288.295 A5.5 12.0 0 0 1 288.295 12.0 H0 A5.5 12.0 0 0 0 0 -12.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -5.76 H284.295" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 5.64 H284.295" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="288.295" cy="0" rx="5.5" ry="12.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="288.295" cy="0" rx="2.2" ry="8.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<g id="fibril-front-rising" transform="translate(385 600) rotate(-19.290)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="13.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -13.0 H529.741 A5.5 13.0 0 0 1 529.741 13.0 H0 A5.5 13.0 0 0 0 0 -13.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -6.24 H525.741" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 6.11 H525.741" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="529.741" cy="0" rx="5.5" ry="13.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="529.741" cy="0" rx="2.2" ry="9.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<path d="M479 567 L534 548 C547 543 550 562 564 569 L598 595 C620 610 639 588 654 584" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<g id="pectin-front" fill="none">
+<path d="M316 485 C348 467 353 437 381 444 S420 488 459 476 S516 438 546 453 S588 503 631 492 S680 458 707 472 S754 509 797 493 S841 469 913 483" fill="none" stroke="#167e91" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M294 607 C346 634 371 609 404 622 S456 668 505 650 S557 621 597 639 S649 674 686 660 S729 624 773 640" fill="none" stroke="#167e91" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M386 322 C410 298 436 293 466 311 S507 356 543 339 S600 311 645 332 S688 366 724 343 S766 313 806 328 S866 333 905 307" fill="none" stroke="#167e91" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M840 257 C816 275 827 306 851 324 S887 360 866 388 S835 422 849 451 S883 485 861 522 S816 568 835 601" fill="none" stroke="#167e91" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="fibril-front-horizontal" transform="translate(280 575) rotate(8.531)">
+	<ellipse cx="0" cy="0" rx="5.5" ry="13.0" fill="#9acc65" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M0 -13.0 H505.594 A5.5 13.0 0 0 1 505.594 13.0 H0 A5.5 13.0 0 0 0 0 -13.0Z" fill="url(#cellulose-shade)" stroke="#436d36" stroke-width="1.7"/>
+	<path d="M3 -6.24 H501.594" fill="none" stroke="#d2ed9e" stroke-width="2.3"/>
+	<path d="M3 6.11 H501.594" fill="none" stroke="#669c46" stroke-width="1.2"/>
+	<ellipse cx="505.594" cy="0" rx="5.5" ry="13.0" fill="#b9df86" stroke="#436d36" stroke-width="1.7"/>
+	<ellipse cx="505.594" cy="0" rx="2.2" ry="9.0" fill="none" stroke="#88b65a" stroke-width="1"/>
+	</g>
+<g id="glycan-front-bridges">
+<path d="M317 580 L385 590 C403 590 409 551 430 542 L466 526 C482 516 477 497 490 486" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M549 615 L615 625 C637 627 644 590 660 574 L700 550 C718 535 716 508 735 478" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M688 636 L726 642 C744 640 742 610 747 593 L771 553 C782 537 791 545 801 548" fill="none" stroke="#c93f49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="middle-lamella">
+	<path d="M270 180L760 255 760 287 270 212Z" fill="#e6ce71" stroke="#a59148" stroke-width="1.7"/>
+	<path d="M760 255L940 145 940 177 760 287Z" fill="#c3b35e" stroke="#a59148" stroke-width="1.7"/>
+	<path d="M270 180L450 70 940 145 760 255Z" fill="#fbf0b7" stroke="#a59148" stroke-width="1.7"/>
+	<g clip-path="url(#lamella-clip)" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round">
+<path d="M264 188 C322 176 341 145 392 154 S451 190 507 171 S594 113 654 135 S743 174 797 149 S883 110 950 124" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M282 216 C345 192 381 217 424 195 S498 145 545 162 S609 219 668 197 S744 153 798 183 S877 197 944 169" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M335 139 C384 123 424 141 465 123 S515 89 561 108 S637 151 689 129 S744 95 787 116 S869 145 938 130" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M368 96 C411 102 423 119 456 140 S499 179 542 182 S586 208 625 222 S709 229 762 254" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M447 66 C486 85 486 112 521 127 S561 154 588 174 S632 189 663 210 S695 239 737 259" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M593 85 C610 114 635 125 670 149 S711 160 736 184 S765 221 820 226" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M742 105 C755 130 789 133 807 152 S834 181 883 184" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M289 178 C344 167 356 177 381 186 S431 192 462 177 S514 153 550 154" fill="none" stroke="#167e91" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+</g></g>
+<g id="region-brackets" fill="none" stroke="#526879" stroke-width="2">
+<path d="M247 180H232V212H247 M247 224H232V612H247 M247 620H232V646H247"/>
+</g>
+<text x="212" y="187" font-size="28" fill="#213547" text-anchor="end" font-family="Arial, sans-serif">middle</text>
+<text x="212" y="219" font-size="28" fill="#213547" text-anchor="end" font-family="Arial, sans-serif">lamella</text>
+<text x="212" y="412" font-size="28" fill="#213547" text-anchor="end" font-family="Arial, sans-serif">primary</text>
+<text x="212" y="444" font-size="28" fill="#213547" text-anchor="end" font-family="Arial, sans-serif">cell wall</text>
+<text x="212" y="627" font-size="28" fill="#213547" text-anchor="end" font-family="Arial, sans-serif">plasma</text>
+<text x="212" y="659" font-size="28" fill="#213547" text-anchor="end" font-family="Arial, sans-serif">membrane</text>
+<g id="constituent-leaders">
+<path d="M966 267H929L886 269" fill="none" stroke="#213547" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M955 431H922L886 426" fill="none" stroke="#213547" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M947 608H882L747 593" fill="none" stroke="#213547" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<text x="975" y="275" font-size="29" fill="#213547" text-anchor="start" font-family="Arial, sans-serif">pectin</text>
+<text x="965" y="427" font-size="29" fill="#213547" text-anchor="start" font-family="Arial, sans-serif">cellulose</text>
+<text x="965" y="460" font-size="29" fill="#213547" text-anchor="start" font-family="Arial, sans-serif">microfibril</text>
+<text x="956" y="606" font-size="29" fill="#213547" text-anchor="start" font-family="Arial, sans-serif">cross-linking</text>
+<text x="956" y="639" font-size="29" fill="#213547" text-anchor="start" font-family="Arial, sans-serif">glycan</text>
+<g id="scale-bar"><path d="M295 746V756H533V746" fill="none" stroke="#213547" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /><text x="414" y="791" font-size="28" fill="#213547" text-anchor="middle" font-family="Arial, sans-serif">50 nm</text></g>
+<text x="36" y="838" font-size="23" fill="#213547" text-anchor="start" font-family="Arial, sans-serif">Figure 19-71. Molecular Biology of the Cell, 4th Edition.</text>
+</svg>

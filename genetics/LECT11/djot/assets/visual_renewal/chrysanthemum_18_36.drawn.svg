@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="630" viewBox="0 0 1100 630" role="img" aria-labelledby="title desc"><title id="title">Chrysanthemum chromosome sets</title><desc id="desc">Schematic chromosome types retain stable color and shape. Each row contains one complete set of nine types. Each enclosing outline represents one cell.</desc><rect width="1100" height="630" fill="white"/>
+<g id="cell-1-50-240" data-sets="1" data-chromosomes="9"><rect x="35" y="215" width="460" height="56" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path id="set-1-50-240-0-type-1" transform="translate(65,240)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-2" transform="translate(115,240)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-3" transform="translate(165,240)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-4" transform="translate(215,240)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-5" transform="translate(265,240)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-6" transform="translate(315,240)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-7" transform="translate(365,240)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-8" transform="translate(415,240)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-1-50-240-0-type-9" transform="translate(465,240)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="265" y="335" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Monoploid set: 9</text>
+<g id="cell-2-620-100" data-sets="2" data-chromosomes="18"><rect x="605" y="75" width="460" height="92" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path id="set-2-620-100-0-type-1" transform="translate(635,100)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-2" transform="translate(685,100)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-3" transform="translate(735,100)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-4" transform="translate(785,100)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-5" transform="translate(835,100)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-6" transform="translate(885,100)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-7" transform="translate(935,100)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-8" transform="translate(985,100)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-0-type-9" transform="translate(1035,100)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-1" transform="translate(635,136)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-2" transform="translate(685,136)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-3" transform="translate(735,136)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-4" transform="translate(785,136)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-5" transform="translate(835,136)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-6" transform="translate(885,136)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-7" transform="translate(935,136)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-8" transform="translate(985,136)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-2-620-100-1-type-9" transform="translate(1035,136)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="835" y="212" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Diploid (18)</text>
+<g id="cell-4-620-365" data-sets="4" data-chromosomes="36"><rect x="605" y="340" width="460" height="164" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
+<path id="set-4-620-365-0-type-1" transform="translate(635,365)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-2" transform="translate(685,365)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-3" transform="translate(735,365)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-4" transform="translate(785,365)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-5" transform="translate(835,365)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-6" transform="translate(885,365)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-7" transform="translate(935,365)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-8" transform="translate(985,365)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-0-type-9" transform="translate(1035,365)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-1" transform="translate(635,401)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-2" transform="translate(685,401)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-3" transform="translate(735,401)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-4" transform="translate(785,401)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-5" transform="translate(835,401)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-6" transform="translate(885,401)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-7" transform="translate(935,401)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-8" transform="translate(985,401)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-1-type-9" transform="translate(1035,401)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-1" transform="translate(635,437)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-2" transform="translate(685,437)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-3" transform="translate(735,437)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-4" transform="translate(785,437)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-5" transform="translate(835,437)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-6" transform="translate(885,437)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-7" transform="translate(935,437)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-8" transform="translate(985,437)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-2-type-9" transform="translate(1035,437)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-1" transform="translate(635,473)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-2" transform="translate(685,473)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-3" transform="translate(735,473)" d="M-14 6 Q12 -15 14 6" fill="none" stroke="#92734A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-4" transform="translate(785,473)" d="M-14 8 Q0 -18 14 8" fill="none" stroke="#398DB5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-5" transform="translate(835,473)" d="M-17 8 L0 -8 L17 8" fill="none" stroke="#A1467E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-6" transform="translate(885,473)" d="M-18 -5 Q-8 -18 2 0 T18 5" fill="none" stroke="#2B896B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-7" transform="translate(935,473)" d="M-18 6 Q-8 -12 18 6" fill="none" stroke="#7E9C22" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-8" transform="translate(985,473)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="set-4-620-365-3-type-9" transform="translate(1035,473)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="835" y="549" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Tetraploid (36)</text>
+</svg>

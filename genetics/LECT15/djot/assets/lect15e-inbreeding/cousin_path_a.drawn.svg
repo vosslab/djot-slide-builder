@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1105" viewBox="0 0 480 1105" role="img" aria-labelledby="title desc">
+  <title id="title">Path 1 through ancestor A</title>
+  <desc id="desc">Single-path reveal for LECT15E authored slide 47 (image_022.png). I-E-C-A-D-F-I is the complete closed path, with five ancestors between I and I. Circles A, C, D and E; squares F and I. Conventional schematic; the line is undirected and spacing is not quantitative.</desc>
+  <rect id="background" width="480" height="1105" fill="#FFFFFF"/>
+  <text x="240" y="80" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#213547">Path 1</text>
+  <g id="path-1">
+    <path id="path-1-connections" d="M 100,200 L 100,470 V 740 L 240,1020 L 380,740 V 470 Z" fill="none" stroke="#213547" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="path-1-A">
+      <circle cx="100" cy="200" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="100" y="218" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">A</text>
+    </g>
+    <g id="path-1-C">
+      <circle cx="100" cy="470" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="100" y="488" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">C</text>
+    </g>
+    <g id="path-1-D">
+      <circle cx="380" cy="470" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="380" y="488" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">D</text>
+    </g>
+    <g id="path-1-E">
+      <circle cx="100" cy="740" r="43" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="100" y="758" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">E</text>
+    </g>
+    <g id="path-1-F">
+      <rect x="337" y="697" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="380" y="758" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">F</text>
+    </g>
+    <g id="path-1-I">
+      <rect x="197" y="977" width="86" height="86" fill="#FFFFFF" stroke="#213547" stroke-width="5"/>
+      <text x="240" y="1038" font-family="Arial, Helvetica, sans-serif" font-size="54" text-anchor="middle" fill="#213547">I</text>
+    </g>
+  </g>
+</svg>

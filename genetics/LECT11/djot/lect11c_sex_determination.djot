@@ -66,7 +66,10 @@
 
 - The X-chromosome/autosome ratio controls the switching on/off of the master control gene _sex-lethal_ (_Sxl_)
 
-![Slide image 1](assets/lect11c-sex_dosage/image_001.jpg)
+![Slide image 1](assets/visual_renewal/sxl_signals.drawn.svg)
+
+- Input: amount of protein from X-linked signal elements (XSE).
+- Intermediate: SXL protein is produced in some cells, but not in others. Female-specific transcripts occur in some cells; male-specific transcripts occur in other cells.
 
 - activity of the Sex-lethal gene _Sxl_.
 
@@ -119,7 +122,7 @@
 
 @left
 
-![Slide image 2](assets/lect11c-sex_dosage/image_002.png)
+![Slide image 2](assets/visual_renewal/worms_dosage.drawn.svg)
 
 @right
 
@@ -137,7 +140,7 @@
 
 @right
 
-![Slide image 3](assets/lect11c-sex_dosage/image_003.png)
+![Slide image 3](assets/visual_renewal/flies_dosage.drawn.svg)
 
 === layout: two-panels
 
@@ -154,7 +157,7 @@
 
 @right
 
-![Slide image 4](assets/lect11c-sex_dosage/image_004.png)
+![Slide image 4](assets/visual_renewal/mammals_dosage.drawn.svg)
 
 === layout: section
 
@@ -165,7 +168,9 @@
 
 @body
 
-![Slide image 5](assets/lect11c-sex_dosage/image_005.png)
+![Slide image 5](assets/visual_renewal/x_inactivation_lineages.drawn.svg)
+
+Once a particular X chromosome is inactivated, it remains the inactive X in all descendant cells.
 
 === layout: two-panels
 
@@ -193,49 +198,41 @@
 
 ![Slide image 7](assets/lect11c-sex_dosage/image_007.png)
 
-=== layout: two-panels
+=== layout: one-panel
 
 # *Calico Cat*
 
-@left
+@body
 
 - Males have only one X chromosome, a normal male has either the orange or the black allele.
 - A female can be heterozygous for orange and black will be &#8220;calico&#8221;
   - a mosaic of orange and black patches mixed with patches of white.
 
-@right
-
-![Slide image 8](assets/lect11c-sex_dosage/image_008.png)
-
 === layout: one-panel
-@replaceme
 
+# Calico Crosses
 
 @body
 
-![Slide image 9](assets/lect11c-sex_dosage/image_009.jpg)
+![Black and orange male crosses with calico females](assets/visual_renewal/calico_crosses.drawn.svg)
 
-- *X chromosomes*
+=== layout: two-panels
 
-- *Allele for orange fur*
+# Cell Division and X Chromosome Inactivation
 
-- *Allele for black fur*
+@left
 
-- *Cell division and X chromosome inactivation*
+![Orange and black X-linked alleles in two cell populations](assets/visual_renewal/calico_x_lineages.drawn.svg)
 
-- *Early embryo\:*
+@right
 
-- *Two cell populations in adult cat\:*
+![Original photographic cat specimen](assets/visual_renewal/original_calico_specimen.jpg)
 
-- *Active X*
+=== layout: one-panel
 
-- *Inactive X*
+# X Inactivation and the Tortoiseshell Cat
 
-- *Black fur*
-
-- *Orange fur*
-
-- *Active X*
+@body
 
 - *X inactivation and the tortoiseshell cat.*
 - Two different alleles, one for orange fur and one for black fur.
@@ -290,7 +287,7 @@
 
 @right
 
-![Slide image 12](assets/lect11c-sex_dosage/image_012.png)
+![Slide image 12](assets/visual_renewal/pseudoautosomal_crossover.drawn.svg)
 
 === layout: one-panel
 

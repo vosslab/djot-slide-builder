@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1000" viewBox="0 0 900 1000" role="img" aria-labelledby="ames-title ames-desc">
+<title id="ames-title">Ames test: experimental and control tubes</title>
+<desc id="ames-desc">Liver extract enters both his-minus Salmonella cultures. Suspected mutagen enters only the experimental tube. Cultures are plated on medium lacking histidine and incubated. Five illustrative revertant his-plus colonies grow on the experimental plate; the control has no growth. Simplified schematic, not measured data.</desc>
+<metadata>Original editable geometry created for this course. Source reference: legacy Ames PNG, original ODP slide 59; raster credit Pearson Education, Inc., Benjamin Cummings, 2006. That source credit is provenance, not authorship of this new drawing.</metadata>
+<defs>
+ <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#d5e7ee"/><stop offset=".28" stop-color="#ffffff"/><stop offset=".72" stop-color="#f5fafc"/><stop offset="1" stop-color="#c7dce7"/></linearGradient>
+ <marker id="arrow" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#213547"/></marker>
+ <g id="tube">
+  <path d="M-39 0V182 A39 39 0 0 0 39 182V0" fill="url(#glass)" stroke="#213547" stroke-width="3.5"/>
+  <path d="M-31 75V179 A31 31 0 0 0 31 179V75" fill="#f2c6b5" stroke="#ad7765" stroke-width="1.5"/>
+  <ellipse cy="75" rx="31" ry="9" fill="#fae2d6" stroke="#ad7765" stroke-width="1.5"/>
+  <path d="M-27 18V171" stroke="white" stroke-width="5" fill="none"/>
+  <ellipse rx="43" ry="12" fill="#e9f3f7" stroke="#213547" stroke-width="3"/>
+  <ellipse rx="33" ry="6" fill="#ffffff" stroke="#526879" stroke-width="1.5"/>
+  <g stroke="#627d3e" stroke-width="5" stroke-linecap="round"><path d="M-15 101l5 12M10 95l-4 13M15 133l-6 11M-12 151l3 12M7 178l-6 10"/></g>
+ </g>
+ <g id="dish">
+  <path d="M-145 0V33 A145 48 0 0 0 145 33V0" fill="url(#glass)" stroke="#213547" stroke-width="3"/>
+  <path d="M-137 14V30 A137 40 0 0 0 137 30V14" fill="#ead5a3" stroke="#aa925b" stroke-width="1.5"/>
+  <ellipse cy="14" rx="137" ry="40" fill="#fbf0d3" stroke="#aa925b" stroke-width="1.5"/>
+  <ellipse rx="145" ry="48" fill="none" stroke="#213547" stroke-width="3"/>
+  <path d="M-139 4 A139 44 0 0 0 139 4" fill="none" stroke="white" stroke-width="3"/>
+ </g>
+ <g id="pipette">
+  <path d="M-9 -95H9L7 -27 0 0 -7 -27Z" fill="url(#glass)" stroke="#526879" stroke-width="2.5"/>
+  <path d="M-5 -57H5L4 -27 0 -10 -4 -27Z" fill="currentColor"/>
+  <ellipse cy="-95" rx="9" ry="3" fill="#e8f1f5" stroke="#526879" stroke-width="2"/>
+  <path d="M0 10C-10 25 -7 30 0 30S10 25 0 10Z" fill="currentColor"/>
+ </g>
+</defs>
+<rect width="900" height="1000" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#213547" font-size="31" text-anchor="middle">
+<path d="M450 25V410M450 520V950" stroke="#dce5e9" stroke-width="2"/>
+<text x="220" y="45" font-size="36" font-weight="bold">Experimental tube</text>
+<text x="680" y="45" font-size="36" font-weight="bold">Control tube</text>
+<g id="experimental-inputs"><text x="98" y="90">Liver</text><text x="98" y="125">extract</text>
+<text x="341" y="90">Suspected</text><text x="341" y="125">mutagen</text>
+<use xlink:href="#pipette" transform="translate(195 217) rotate(-28)" color="#6b8e40"/>
+<use xlink:href="#pipette" transform="translate(245 217) rotate(28)" color="#8060a4"/></g>
+<g id="control-input"><text x="560" y="90">Liver</text><text x="560" y="125">extract</text>
+<use xlink:href="#pipette" transform="translate(669 217) rotate(-28)" color="#6b8e40"/></g>
+<use id="experimental-culture" xlink:href="#tube" transform="translate(220 257)"/>
+<use id="control-culture" xlink:href="#tube" transform="translate(680 257)"/>
+<g id="culture-label"><rect x="283" y="290" width="334" height="116" rx="8" fill="white"/>
+<text x="450" y="324">Culture of</text><text x="440" y="360" font-style="italic">his</text><text x="474" y="346" font-size="23">-</text><text x="450" y="397" font-style="italic">Salmonella</text>
+<path d="M290 385 247 402M610 385 653 402" stroke="#213547" stroke-width="2.5" fill="none"/>
+<circle cx="247" cy="402" r="4"/><circle cx="653" cy="402" r="4"/></g>
+<g id="plating" fill="none" stroke="#213547" stroke-width="4" marker-end="url(#arrow)"><path d="M220 490V546"/><path d="M680 490V546"/></g>
+<use id="experimental-medium" xlink:href="#dish" transform="translate(220 600) scale(.9 1)"/>
+<use id="control-medium" xlink:href="#dish" transform="translate(680 600) scale(.9 1)"/>
+<g id="medium-label"><rect x="361" y="548" width="178" height="121" fill="white"/>
+<text x="450" y="581">Medium</text><text x="450" y="618">lacking</text><text x="450" y="655">histidine</text>
+<path d="M362 615H325M538 615H575" stroke="#213547" stroke-width="2.5"/><circle cx="325" cy="615" r="4"/><circle cx="575" cy="615" r="4"/></g>
+<g id="incubation"><path d="M220 690V758M680 690V758" stroke="#213547" stroke-width="4" marker-end="url(#arrow)"/><rect x="350" y="700" width="200" height="45" fill="white"/><text x="450" y="733" font-weight="bold">Incubation</text></g>
+<use id="experimental-result" xlink:href="#dish" transform="translate(220 815) scale(.9 1)"/>
+<use id="control-result" xlink:href="#dish" transform="translate(680 815) scale(.9 1)"/>
+<g id="revertant-colonies" fill="#b85948" stroke="#8b4037" stroke-width="1.5">
+<ellipse cx="151" cy="815" rx="10" ry="5"/><path d="M146 813q4 -3 8 -1" fill="none" stroke="#e9a694" stroke-width="2"/>
+<ellipse cx="226" cy="800" rx="10" ry="5"/><path d="M221 798q4 -3 8 -1" fill="none" stroke="#e9a694" stroke-width="2"/>
+<ellipse cx="290" cy="826" rx="10" ry="5"/><path d="M285 824q4 -3 8 -1" fill="none" stroke="#e9a694" stroke-width="2"/>
+<ellipse cx="200" cy="840" rx="10" ry="5"/><path d="M195 838q4 -3 8 -1" fill="none" stroke="#e9a694" stroke-width="2"/>
+<ellipse cx="263" cy="851" rx="10" ry="5"/><path d="M258 849q4 -3 8 -1" fill="none" stroke="#e9a694" stroke-width="2"/>
+</g>
+<text x="220" y="925" font-weight="bold">Colony of revertant</text>
+<g font-style="italic" text-anchor="start"><text x="91" y="964">(his</text><text x="144" y="950" font-size="22">+</text><text x="160" y="964">) Salmonella</text></g>
+<text x="680" y="925" font-size="36" font-weight="bold">No growth</text>
+</g></svg>

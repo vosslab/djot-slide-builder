@@ -32,7 +32,7 @@ color-theme: genetics
 
 @body
 
-![Recombination Frequencies](assets/lect09b-crossover_interference/b_cn_vg.svg)
+![Recombination Frequencies](repo:genetics/LECT08/djot/assets/lect08c-gene_mapping/b_cn_vg_frequencies.drawn.svg)
 
 Wait: *9% + 9.5% = 18.5%*, but the outside pair gives *17%*.
 What is missing from the outside-pair comparison?
@@ -73,7 +73,7 @@ This is why a map can be longer than its observed outer-pair recombination sugge
 
 @body
 
-![Recombination frequency and map distance under different interference assumptions](assets/lect09b-crossover_interference/image_004.jpg)
+![Recombination frequency and map distance under different interference assumptions](assets/lect09b-crossover_interference/mapping_models.drawn.svg)
 
 @citation
 
@@ -92,7 +92,7 @@ These are differences in packaging within the nucleus.
 
 @right
 
-![Loosely packed euchromatin and densely packed heterochromatin](assets/lect09b-crossover_interference/image_007.png)
+![Loosely packed euchromatin and densely packed heterochromatin](assets/lect09b-crossover_interference/chromatin_packaging.drawn.svg)
 
 === layout: one-panel
 
@@ -100,7 +100,7 @@ These are differences in packaging within the nucleus.
 
 @body
 
-![Physical and genetic maps compare euchromatin with heterochromatin](assets/lect09b-crossover_interference/image_006.jpg)
+![Physical and genetic maps compare euchromatin with heterochromatin](assets/lect09b-crossover_interference/physical_genetic_distance.drawn.svg)
 
 @citation
 

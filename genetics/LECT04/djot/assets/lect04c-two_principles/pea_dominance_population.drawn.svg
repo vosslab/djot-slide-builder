@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="760" viewBox="0 0 650 760" role="img" aria-labelledby="pea_dominance_population-title pea_dominance_population-desc">
+	<title id="pea_dominance_population-title">Flower color and genotype in nine pea plants</title>
+	<desc id="pea_dominance_population-desc">The source example contains three WW purple plants, four Ww purple plants and two ww white plants. Phenotype frequency does not establish dominance. Source slide: lect04c-two_principles.djot, Dominance. Pea plants are simplified, not measured specimens. The nine icons preserve the source illustrative population, not experimental observations.</desc>
+	<defs>
+		<g id="pea_dominance_population-purple">
+			<path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<g transform="translate(0 0) scale(1)">
+				<path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</g>
+		</g>
+		<g id="pea_dominance_population-white">
+			<path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<g transform="translate(0 0) scale(1)">
+				<path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</g>
+		</g>
+	</defs>
+	<g font-family="Liberation Sans, sans-serif">
+		<g id="plant-1">
+			<use href="#pea_dominance_population-purple" transform="translate(115 95) scale(0.48)" />
+			<text x="115" y="235" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">WW</text>
+		</g>
+		<g id="plant-2">
+			<use href="#pea_dominance_population-purple" transform="translate(325 95) scale(0.48)" />
+			<text x="325" y="235" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">Ww</text>
+		</g>
+		<g id="plant-3">
+			<use href="#pea_dominance_population-white" transform="translate(535 95) scale(0.48)" />
+			<text x="535" y="235" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">ww</text>
+		</g>
+		<g id="plant-4">
+			<use href="#pea_dominance_population-purple" transform="translate(115 340) scale(0.48)" />
+			<text x="115" y="480" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">WW</text>
+		</g>
+		<g id="plant-5">
+			<use href="#pea_dominance_population-purple" transform="translate(325 340) scale(0.48)" />
+			<text x="325" y="480" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">Ww</text>
+		</g>
+		<g id="plant-6">
+			<use href="#pea_dominance_population-white" transform="translate(535 340) scale(0.48)" />
+			<text x="535" y="480" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">ww</text>
+		</g>
+		<g id="plant-7">
+			<use href="#pea_dominance_population-purple" transform="translate(115 585) scale(0.48)" />
+			<text x="115" y="725" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">Ww</text>
+		</g>
+		<g id="plant-8">
+			<use href="#pea_dominance_population-purple" transform="translate(325 585) scale(0.48)" />
+			<text x="325" y="725" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">Ww</text>
+		</g>
+		<g id="plant-9">
+			<use href="#pea_dominance_population-purple" transform="translate(535 585) scale(0.48)" />
+			<text x="535" y="725" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">WW</text>
+		</g>
+	</g>
+</svg>

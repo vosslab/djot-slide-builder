@@ -1,0 +1,164 @@
+{
+  "phy_e_adh_annotated.svg": {
+    "sha256": "032c513b3002db64d56c5420a7527404d58b8ecf6af0903226ef363cf3af8831",
+    "xml": "pass",
+    "empirical_pixels": "both embedded image payloads exactly equal original image_004.png bytes"
+  },
+  "phy_e_allele_sorting.drawn.svg": {
+    "sha256": "d4e7dbb892bfc2c77a2e03c46251d969c055f0867e6632b794bf5c2a0e3cf90d",
+    "xml": "pass",
+    "species_clade": "species2/species3 from emitted scaffold endpoints",
+    "survivors": "A1 species3; A2 species1/species2; loss marks at stopped tracks"
+  },
+  "phy_e_duplication_speciation.drawn.svg": {
+    "sha256": "05a455e2221ceb8601bf082d82158256d8ecf8339c2551cf007dfafcd8c0664c",
+    "xml": "pass",
+    "reconstructed_clades": [
+      [
+        "alpha1",
+        "alpha2"
+      ],
+      [
+        "beta1",
+        "beta2"
+      ],
+      [
+        "alpha1",
+        "alpha2",
+        "beta1",
+        "beta2"
+      ],
+      [
+        "alpha1",
+        "alpha2",
+        "beta1",
+        "beta2"
+      ]
+    ]
+  },
+  "phy_e_enhancer_losses.drawn.svg": {
+    "sha256": "c8412c18ff0cf31ae3eb60baa65a6523d4b7622c0c650d7d2c03710bb2b01acf",
+    "xml": "pass",
+    "locus_states": [
+      [
+        "#007A52",
+        "#007A52",
+        "#F2C94C",
+        "#F2C94C",
+        "#007A52",
+        "#F2C94C"
+      ],
+      [
+        "#007A52",
+        "#007A52",
+        "#F2C94C",
+        "#F2C94C",
+        "#007A52",
+        "#F2C94C"
+      ],
+      [
+        "#007A52",
+        "#007A52",
+        "#F2C94C",
+        "#F2C94C",
+        "#007A52",
+        "#F2C94C"
+      ],
+      [
+        "#007A52",
+        "#404040",
+        "#F2C94C",
+        "#F2C94C",
+        "#007A52",
+        "#F2C94C"
+      ],
+      [
+        "#007A52",
+        "#007A52",
+        "#F2C94C",
+        "#F2C94C",
+        "#007A52",
+        "#404040"
+      ],
+      [
+        "#404040",
+        "#404040",
+        "#F2C94C",
+        "#F2C94C",
+        "#007A52",
+        "#F2C94C"
+      ],
+      [
+        "#007A52",
+        "#007A52",
+        "#404040",
+        "#F2C94C",
+        "#007A52",
+        "#404040"
+      ],
+      [
+        "#404040",
+        "#404040",
+        "#F2C94C",
+        "#F2C94C",
+        "#404040",
+        "#F2C94C"
+      ],
+      [
+        "#007A52",
+        "#007A52",
+        "#404040",
+        "#404040",
+        "#007A52",
+        "#404040"
+      ]
+    ]
+  },
+  "phy_e_globin_homology.drawn.svg": {
+    "sha256": "ce26e5de8b974ef30ff68745beb9178b680cf6364af1e0f894f2096b99b86bb4",
+    "xml": "pass",
+    "reconstructed_clades": [
+      [
+        "chick_alpha",
+        "mouse_alpha"
+      ],
+      [
+        "chick_alpha",
+        "frog_alpha",
+        "mouse_alpha"
+      ],
+      [
+        "chick_beta",
+        "mouse_beta"
+      ],
+      [
+        "chick_beta",
+        "frog_beta",
+        "mouse_beta"
+      ],
+      [
+        "chick_alpha",
+        "chick_beta",
+        "frog_alpha",
+        "frog_beta",
+        "mouse_alpha",
+        "mouse_beta"
+      ],
+      [
+        "chick_alpha",
+        "chick_beta",
+        "frog_alpha",
+        "frog_beta",
+        "mouse_alpha",
+        "mouse_beta"
+      ]
+    ]
+  },
+  "retained_empirical": {
+    "image_003.jpg": "c29d8fcf4e9f4615e197e693a8a970b3911f17a4c70047dff3f06ee22b0dd843",
+    "image_004.png": "853bf5f58aa8f68c729144a0ddc4d053908afbeb53a8e1106198cffb39c575b7",
+    "image_006.png": "0fcd192d44eb53b368cd92d8090b30f470168ca0f3d115a942856621c79f714b",
+    "image_008.png": "d12e04374d6786058f159007362ea509ba927f27e70f5bed47e200b9614c2659"
+  },
+  "hemoglobin": "exact agreement with independently transcribed seven50column rows"
+}

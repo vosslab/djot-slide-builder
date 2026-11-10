@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title description">
+ <title id="title">Amniocentesis</title>
+ <desc id="description">A cutaway uterus with a curled fetus and placenta. A needle ends in amniotic fluid. Centrifugation separates fluid from fetal cells. Fluid leads to biochemical tests in Several hours. Cells enter a culture dish, then biochemical tests and schematic karyotyping in Several weeks. Anatomy, equipment and chromosome icon are schematic and not to scale. The chromosome icon is not a patient result.</desc>
+ <metadata id="provenance">Original geometry drawn for this repository, 2026-11-09. Teaching labels and workflow preserved from genetics/LECT10/djot/assets/lect10_repaired_figures/amniocentesis.svg; reference artwork credit: Copyright 2006 Pearson Education, Inc., publishing as Pearson Benjamin Cummings. That source credit does not attribute this new geometry to Pearson. Source preserved unchanged. No clinical timing updates or diagnostic claims added. Landscape composition derived from accepted repository original-art parent under _temp/svg_prenatal_sampling_art; anatomy and equipment path geometry retained, labels and workflow repositioned. Parent hashes recorded in adjacent freeze.json.</metadata>
+ <style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#213547;font-size:32px}
+.label{font-weight:600}.small{font-size:24px}.caption{font-size:34px;font-weight:700}
+.outline{stroke:#213547;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.leader{fill:none;stroke:#526879;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.flow{fill:none;stroke:#526879;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+</style>
+ <defs>
+  <marker id="arrow" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+   <path d="M0 0L9 4L0 8Z" fill="#526879" />
+  </marker>
+  <g id="test-tube" class="outline">
+   <path d="M0 0V126C0 157 48 157 48 126V0" fill="#e9f4f6" />
+   <path d="M7 53V126C7 147 41 147 41 126V53Z" fill="#59b6ce" stroke="none" />
+   <path d="M32 55V130Q30 140 22 143Q40 144 41 127V55Z" fill="#318da6" stroke="none" />
+   <ellipse cx="24" cy="53" rx="17" ry="5" fill="#88d1df" stroke="none" />
+   <path d="M9 10V125" stroke="#ffffff" stroke-width="4" fill="none" />
+   <ellipse cx="24" cy="0" rx="24" ry="7" fill="#f8fcfd" />
+   <ellipse cx="24" cy="0" rx="17" ry="3.5" fill="#c6e2e9" stroke="none" />
+  </g>
+  <g id="chromosome" fill="#8c76b2" stroke="#584577" stroke-width="1.7" stroke-linejoin="round">
+   <path d="M0 0C-5 -5 -9 -2 -9 4L-7 17L-9 32Q-9 39 -4 38Q1 38 1 32L0 22L3 22L2 32Q2 39 7 38Q12 38 12 32L10 17L12 4Q12 -5 6 -1L3 12Z" />
+   <path d="M-5 3L-3 14M7 3L6 14M-4 25L-4 33M7 25L7 33" fill="none" stroke="#b6a4d0" stroke-width="2" />
+  </g>
+ </defs>
+ <rect width="1600" height="800" fill="#ffffff" />
+ <g transform="translate(-100 40) scale(1.3)">
+  <g id="maternal-cutaway">
+   <path d="M139 28C172 42 190 61 205 86C132 143 133 264 189 347C224 396 272 425 327 454L341 503M588 34C621 108 635 160 619 236C610 292 592 349 552 400L494 482" fill="#f7eee7" stroke="#cfbdb0" stroke-width="2" />
+   <path d="M205 86C158 132 154 220 183 289C211 359 271 395 327 416C349 425 349 453 351 476L379 481L409 475C408 450 407 426 431 415C489 390 551 348 574 277C604 187 578 102 520 65C430 8 284 25 205 86Z" fill="#ce7868" class="outline" />
+   <path d="M206 99C179 132 176 192 189 246C202 298 231 335 268 359" fill="none" stroke="#e8a495" stroke-width="15" stroke-linecap="round" />
+   <path d="M226 103C190 147 190 218 215 278C240 340 288 371 339 389Q364 399 367 435L369 474L389 474L390 433Q393 400 418 388C477 361 522 325 544 265C569 193 551 123 504 91C429 41 293 44 226 103Z" fill="#f8d8cc" stroke="#8d514b" stroke-width="2" />
+   <path d="M302 101C278 134 274 202 289 265C302 327 327 370 378 373C437 377 503 326 521 264C541 201 529 132 487 105C425 64 344 67 302 101Z" fill="#fff0ba" stroke="#aa9350" stroke-width="2.5" />
+   <path d="M310 111C292 144 290 192 300 226" fill="none" stroke="#fff9de" stroke-width="11" stroke-linecap="round" />
+   <path d="M352 450Q367 438 371 452M388 452Q398 438 409 449" fill="none" stroke="#8d514b" stroke-width="2" />
+   <path d="M351 476Q364 491 379 481Q396 490 409 475" fill="#e7a593" stroke="#8d514b" stroke-width="2" />
+  </g>
+ </g>
+ <g transform="translate(-100 40) scale(1.3)">
+  <g id="placenta-and-villi" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M237 122C202 157 202 226 225 279L250 305C239 245 239 185 263 136Z" fill="#b95150" stroke="#753d42" stroke-width="2.5" />
+   <path d="M240 139C219 180 218 225 238 272" fill="none" stroke="#db8170" stroke-width="10" />
+   <g fill="none" stroke="#a94549" stroke-width="6">
+    <path d="M246 153L259 155L271 142M258 155L269 163M236 182L253 185L264 173M252 185L265 196M237 213L251 214L261 204M250 214L262 226M243 244L257 248L267 237M257 248L269 257M250 274L267 278L278 267M267 278L275 288" />
+   </g>
+   <g fill="none" stroke="#df8c78" stroke-width="2.2">
+    <path d="M247 153L258 155M237 182L252 185M238 213L250 214M244 244L257 248M252 274L267 278" />
+   </g>
+  </g>
+ </g>
+ <g transform="translate(-100 40) scale(1.3)">
+  <g id="curled-fetus" class="outline">
+   <path d="M412 220C411 180 393 143 359 131C328 119 298 132 291 157C284 181 294 213 315 239C335 261 357 259 373 241C386 226 393 222 412 220Z" fill="#d6a078" />
+   <path d="M305 151C319 134 343 134 361 141C382 149 394 171 401 190" fill="none" stroke="#f0c5a0" stroke-width="12" />
+   <path d="M302 172C302 190 311 207 321 218M337 151C357 150 375 165 381 180" fill="none" stroke="#b78061" stroke-width="2" />
+   <path d="M408 220C438 194 475 208 487 238C500 268 485 303 459 315C439 325 417 316 405 300L399 291L389 282Q387 278 395 275L403 270Q396 249 408 220Z" fill="#e8b58d" />
+   <path d="M421 221C443 208 468 221 476 240" fill="none" stroke="#f5d0ae" stroke-width="11" />
+   <path d="M474 279Q462 308 437 309" fill="none" stroke="#c38a69" stroke-width="9" />
+   <path d="M405 269Q410 263 416 267M401 291L408 292" fill="none" stroke="#6c5147" stroke-width="2" />
+   <path d="M445 250C457 243 463 260 452 267Q444 270 444 261Q451 254 453 259" fill="#d6a078" stroke="#976b56" stroke-width="1.8" />
+   <path d="M315 222C326 210 345 211 355 226L371 249C379 261 374 275 361 280L335 294L344 303Q347 311 339 312L319 306Q308 302 314 290L340 263L323 249" fill="#e8b58d" />
+   <path d="M325 225Q339 219 348 235L361 254" fill="none" stroke="#f4ccaa" stroke-width="8" />
+   <path d="M383 184C376 180 368 183 367 191L358 216L383 229L395 220Q402 216 405 221L403 227L409 229Q414 233 409 237L399 244Q392 248 384 242L349 230Q341 225 346 214L360 186" fill="#e8b58d" />
+   <path d="M353 221L382 235" fill="none" stroke="#f4ccaa" stroke-width="5" />
+   <path d="M400 227L395 232M405 232L399 236M330 299L326 304M336 302L332 307" stroke="#976b56" stroke-width="1.5" fill="none" />
+  </g>
+ </g>
+ <g transform="translate(-100 40) scale(1.3)">
+  <g id="umbilical-cord" fill="none" stroke-linecap="round">
+   <path d="M350 233C328 269 290 266 290 232C290 212 278 205 259 213" stroke="#916252" stroke-width="12" />
+   <path d="M350 233C328 269 290 266 290 232C290 212 278 205 259 213" stroke="#f2d1a4" stroke-width="8" />
+   <path d="M340 247L346 250M326 255L326 262M305 249L300 253M290 230L296 230M279 215L282 208" stroke="#b88c69" stroke-width="2" />
+  </g>
+ </g>
+ <g transform="translate(-100 40) scale(1.3)">
+  <g id="amniotic-fluid-withdrawal">
+   <g transform="translate(645 49) rotate(44)" class="outline">
+    <path d="M-6 4H6V38H-6Z" fill="#c7d9df" />
+    <path d="M-22 1H22V9H-22Z" fill="#aebfc8" />
+    <path d="M-16 37H16V118L7 136H-7L-16 118Z" fill="#e7f4f7" />
+    <path d="M-10 80H10V117L4 129H-4L-10 117Z" fill="#eed88f" stroke="none" />
+    <path d="M-10 46V73" fill="none" stroke="#ffffff" stroke-width="4" />
+    <path d="M-16 51H-7M-16 65H-7M-16 79H-7" stroke="#526879" stroke-width="1.5" />
+    <path d="M-25 34H25" stroke-width="5" />
+    <path d="M0 136V229" stroke="#536b78" stroke-width="4" />
+    <path d="M1 137V225" stroke="#ffffff" stroke-width="1.2" />
+   </g>
+  </g>
+ </g>
+ <g>
+  <g id="withdrawal-label">
+   <text x="795" y="73" class="label">Amniotic fluid</text>
+   <text x="795" y="112" class="label">withdrawn</text>
+   <path class="leader" d="M780 108L716 162" />
+  </g>
+  <g id="anatomy-labels">
+   <text x="20" y="160" class="label">Placenta</text>
+   <path class="leader" d="M169 152L176 262" />
+   <text x="20" y="470" class="label">Fetus</text>
+   <path class="leader" d="M115 461H150L445 430" />
+   <text x="650" y="465" class="label">Uterus</text>
+   <path class="leader" d="M638 453L627 433" />
+   <text x="650" y="690" class="label">Cervix</text>
+   <path class="leader" d="M637 681H540L432 642" />
+  </g>
+  <g id="centrifugation-step">
+   <path class="flow" d="M790 180C876 160 951 177 951 250" />
+   <text x="1000" y="215" class="label">Centrifugation</text>
+  </g>
+ </g>
+ <g transform="translate(646 -437) scale(1.2)">
+  <g id="separated-fluid-and-cells" class="outline">
+   <path d="M230 585V704C230 734 278 734 278 704V585" fill="#e9f4f6" />
+   <path d="M237 612H271V697H237Z" fill="#f0dc8d" stroke="none" />
+   <ellipse cx="254" cy="612" rx="17" ry="5" fill="#faf0bc" stroke="none" />
+   <path d="M237 697H271V704C271 724 237 724 237 704Z" fill="#d8b783" stroke="none" />
+   <path d="M240 699L245 708M251 704L256 711M263 699L265 707" stroke="#a8804f" stroke-width="2" />
+   <path d="M239 594V694" stroke="#ffffff" stroke-width="3" />
+   <ellipse cx="254" cy="585" rx="24" ry="7" fill="#f8fcfd" />
+   <ellipse cx="254" cy="585" rx="17" ry="3.5" fill="#c6e2e9" stroke="none" />
+  </g>
+ </g>
+ <g>
+  <g id="sample-labels">
+   <text x="765" y="330" class="label">Fluid</text>
+   <path class="leader" d="M845 320H930" />
+   <text x="745" y="416" class="label">Fetal cells</text>
+   <path class="leader" d="M900 406H930" />
+  </g>
+  <g id="fluid-to-biochemical-tests">
+   <path class="flow" d="M995 330H1240" />
+   <text x="1025" y="300">Several hours</text>
+  </g>
+  <g id="cell-culture-step">
+   <path class="flow" d="M951 455V529" />
+  </g>
+ </g>
+ <g transform="translate(671 -332) scale(1.1)">
+  <g id="culture-dish" class="outline">
+   <path d="M169 811V832C169 872 339 872 339 832V811Z" fill="#bad0da" />
+   <ellipse cx="254" cy="811" rx="85" ry="28" fill="#e9f3f5" />
+   <ellipse cx="254" cy="813" rx="73" ry="20" fill="#f7edce" stroke="#9cb9c5" stroke-width="1.5" />
+   <path d="M182 836C211 853 300 854 327 836" fill="none" stroke="#edf7fa" stroke-width="4" />
+   <g fill="#d8b783" stroke="#aa8752" stroke-width="1.2">
+    <ellipse cx="206" cy="810" rx="8" ry="4" />
+    <ellipse cx="235" cy="802" rx="7" ry="4" />
+    <ellipse cx="265" cy="809" rx="8" ry="4" />
+    <ellipse cx="290" cy="802" rx="7" ry="4" />
+    <ellipse cx="302" cy="819" rx="7" ry="4" />
+    <ellipse cx="246" cy="824" rx="7" ry="4" />
+    <ellipse cx="218" cy="821" rx="7" ry="4" />
+   </g>
+  </g>
+ </g>
+ <g>
+  <g id="culture-to-biochemical-tests">
+   <path class="flow" d="M1055 564Q1170 543 1240 410" />
+   <text x="1005" y="420">Several weeks</text>
+  </g>
+  <g id="culture-to-karyotyping">
+   <path class="flow" d="M1055 603H1240" />
+   <text x="1025" y="650">Several weeks</text>
+  </g>
+ </g>
+ <g transform="translate(586 -375)">
+  <g id="biochemical-tests">
+   <rect x="674" y="590" width="295" height="172" rx="12" fill="#f3f8fa" stroke="#bccdd5" stroke-width="2" />
+   <use href="#test-tube" transform="translate(893 607) scale(.82)" />
+   <text x="695" y="634" class="label">Bio-</text>
+   <text x="695" y="669" class="label">chemical</text>
+   <text x="695" y="704" class="label">tests</text>
+  </g>
+ </g>
+ <g transform="translate(586 -320)">
+  <g id="schematic-karyotyping">
+   <rect x="674" y="840" width="295" height="174" rx="12" fill="#f7f4fa" stroke="#c6bfd1" stroke-width="2" />
+   <g transform="translate(706 858)">
+    <use href="#chromosome" transform="scale(1.15 1.15)" />
+    <use href="#chromosome" transform="translate(27 0) scale(1.15 1.15)" />
+    <use href="#chromosome" transform="translate(85 8) scale(1 0.9)" />
+    <use href="#chromosome" transform="translate(110 8) scale(1 0.9)" />
+    <use href="#chromosome" transform="translate(167 8) scale(1 .9)" />
+    <use href="#chromosome" transform="translate(192 8) scale(1 .9)" />
+    <use href="#chromosome" transform="translate(0 58) scale(1 .85)" />
+    <use href="#chromosome" transform="translate(26 58) scale(1 .85)" />
+    <use href="#chromosome" transform="translate(85 63) scale(.95 .72)" />
+    <use href="#chromosome" transform="translate(109 63) scale(.95 .72)" />
+    <use href="#chromosome" transform="translate(178 63) scale(.95 .72)" />
+   </g>
+   <text x="821" y="994" text-anchor="middle" class="label">Karyotyping</text>
+  </g>
+ </g>
+ <text x="30" y="780" class="caption">(a) Amniocentesis</text>
+</svg>

@@ -107,7 +107,9 @@ color-theme: genetics
 
 @left
 
-![Slide image 7](assets/lect04b-mendel_history/image_007.png)
+![Slide image 7](assets/lect04b-mendel_history/mendel_lily_hybrid.drawn.svg)
+
+This plant family tree shows the outcome when two different parent plants pass on traits, such as color, to a hybrid offspring.
 
 @right
 
@@ -266,7 +268,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 13](assets/lect04b-mendel_history/image_013.png)
+![Slide image 13](assets/lect04b-mendel_history/mendel_pea_anatomy.drawn.svg)
 
 === layout: two-panels
 
@@ -282,13 +284,15 @@ color-theme: genetics
 
 @right
 
-![Slide image 14](assets/lect04b-mendel_history/image_014.png)
+![Slide image 14](assets/lect04b-mendel_history/mendel_true_breeding.drawn.svg)
 
 === layout: two-panels
 
 @left
 
-![Slide image 15](assets/lect04b-mendel_history/image_015.png)
+![Slide image 15](assets/lect04b-mendel_history/mendel_seed_f1.drawn.svg)
+
+Gregor observed that one trait disappeared in the first generation of hybrids, but showed up again in later generations.
 
 @right
 
@@ -303,7 +307,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 16](assets/lect04b-mendel_history/image_016.png)
+![Slide image 16](assets/lect04b-mendel_history/mendel_seed_f3.drawn.svg)
 
 @right
 
@@ -311,12 +315,14 @@ color-theme: genetics
 - At harvest time, he discovered green and yellow peas sitting side by side in the same pod.
 - The missing traits reappeared.
 
+Gregor observed that one trait disappeared in the first generation of hybrids, but showed up again in later generations.
+
 === layout: two-panels
 
 
 @left
 
-![Slide image 17](assets/lect04b-mendel_history/image_017.png)
+![Slide image 17](assets/lect04b-mendel_history/mendel_seed_factors.drawn.svg)
 
 @right
 

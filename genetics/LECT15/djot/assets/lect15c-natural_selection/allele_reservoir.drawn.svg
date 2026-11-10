@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="660" viewBox="0 0 640 660" role="img" aria-labelledby="title desc">
+<title id="title">Alleles gained via mutation and lost via drift</title>
+<desc id="desc">A glass reservoir holds colored allele beads. A dropper adds a blue bead through the open neck; a connected side spigot releases beads. Bead counts and positions are illustrative.</desc>
+<g stroke="#213547" stroke-linejoin="round" stroke-linecap="round">
+<!-- The axis-aligned neck and base ellipses share a shallow viewing angle. -->
+<g id="glass-reservoir">
+<path d="M211 201 L211 232 C211 254 133 264 133 329 L133 581 C133 616 365 616 365 581 L365 329 C365 264 287 254 287 232 L287 201 Z" fill="#e5f1f2" stroke-width="4"/>
+<path d="M265 234 C269 275 341 279 341 334 L341 579 C341 591 317 599 296 601 L350 593 Q365 589 365 581 L365 329 C365 264 287 254 287 232 Z" fill="#c5dce1" stroke="none"/>
+<ellipse cx="249" cy="582" rx="115" ry="23" fill="#d3e4e7" stroke-width="2"/>
+<path d="M163 546 L163 333 C163 294 213 282 226 260" fill="none" stroke="#ffffff" stroke-width="13"/>
+<path d="M179 331 L179 390" fill="none" stroke="#ffffff" stroke-width="5"/>
+<path d="M211 201 L211 227 C211 241 287 241 287 227 L287 201" fill="#edf7f7" stroke-width="3"/>
+<ellipse cx="249" cy="201" rx="43" ry="13" fill="#f7fcfc" stroke-width="4"/>
+<ellipse cx="249" cy="201" rx="31" ry="7" fill="#627f8a" stroke-width="1.5"/>
+<path d="M216 218 Q249 228 282 218" fill="none" stroke="#bdd5dc" stroke-width="3"/>
+</g>
+<g id="allele-beads" stroke-width="2.3">
+<g><circle cx="235" cy="306" r="12" fill="#9856a5"/><circle cx="231" cy="302" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+<g><circle cx="206" cy="428" r="12" fill="#d65e61"/><circle cx="202" cy="424" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+<g><circle cx="292" cy="425" r="12" fill="#d6c537"/><circle cx="288" cy="421" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+<g><circle cx="244" cy="490" r="12" fill="#39a66d"/><circle cx="240" cy="486" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+<g><circle cx="183" cy="548" r="12" fill="#3b58b8"/><circle cx="179" cy="544" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+<g><circle cx="299" cy="551" r="12" fill="#35b3ba"/><circle cx="295" cy="547" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+<g><circle cx="251" cy="567" r="12" fill="#e8a43a"/><circle cx="247" cy="563" r="3.5" fill="#ffffff" stroke="none" opacity="0.6"/></g>
+</g>
+<g id="spigot">
+<ellipse cx="358" cy="468" rx="12" ry="23" fill="#90a9b3" stroke-width="3"/>
+<path d="M361 456 L402 456 Q438 456 438 490 L438 506 L416 506 L416 490 Q416 478 402 478 L361 478 Z" fill="#d6e1e5" stroke-width="4"/>
+<path d="M370 462 L402 462 Q431 462 431 489" fill="none" stroke="#ffffff" stroke-width="4"/>
+<ellipse cx="427" cy="506" rx="11" ry="4" fill="#45616f" stroke-width="2"/>
+<path d="M392 455 L392 440" stroke-width="8"/>
+<path d="M378 438 L407 438" stroke-width="8" stroke="#526879"/>
+</g>
+<g id="dropper" transform="rotate(28 130 82)">
+<path d="M73 70 L202 70 L234 80 L202 90 L73 90 Z" fill="#e5f1f2" stroke-width="3"/>
+<path d="M91 75 L197 75 L224 80" fill="none" stroke="#ffffff" stroke-width="4"/>
+<circle cx="159" cy="80" r="7" fill="#35b3ba" stroke-width="1.5"/>
+<circle cx="184" cy="80" r="7" fill="#e8a43a" stroke-width="1.5"/>
+<path d="M29 61 C8 61 8 99 29 99 L65 99 Q79 97 79 80 Q79 63 65 61 Z" fill="#526879" stroke-width="3"/>
+<path d="M28 68 L60 68" stroke="#9cabb2" stroke-width="5"/>
+<path d="M73 69 L73 91" stroke-width="3"/>
+</g>
+<g id="incoming-bead">
+<circle cx="249" cy="167" r="10" fill="#3b58b8" stroke-width="2"/>
+<circle cx="246" cy="164" r="3" fill="#b9cafa" stroke="none"/>
+</g>
+<g id="outgoing-beads" stroke-width="2">
+<circle cx="427" cy="538" r="10" fill="#39a66d"/>
+<circle cx="412" cy="585" r="10" fill="#e8a43a"/>
+<circle cx="449" cy="615" r="10" fill="#9856a5"/>
+</g>
+<g id="direction-arrows" fill="none" stroke="#526879" stroke-width="4">
+<path d="M326 135 Q286 135 276 174"/>
+<path d="M269 163 L276 177 L290 168"/>
+<path d="M459 484 Q488 504 481 542"/>
+<path d="M472 530 L480 546 L493 534"/>
+</g>
+</g>
+<g id="labels" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">
+<text x="249" y="370" text-anchor="middle" fill="#213547">Alleles</text>
+<text x="351" y="75" fill="#237344">Gained via</text>
+<text x="351" y="114" fill="#237344">Mutation</text>
+<text x="494" y="437" fill="#ad3436">Lost via</text>
+<text x="494" y="476" fill="#ad3436">Drift</text>
+</g>
+</svg>

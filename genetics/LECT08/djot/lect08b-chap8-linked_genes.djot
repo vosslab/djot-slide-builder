@@ -63,7 +63,9 @@ color-theme: genetics
 
 @body
 
-![Labeled diagram from source slide 4](assets/lect08b-chap8-linked_genes/b4_labeled.svg)
+![Labeled diagram from source slide 4](assets/lect08b-chap8-linked_genes/assortment_YR.drawn.svg)
+
+F~1~ plants produce yellow-round seeds (_YyRr_). The two alleles for each gene separate; genes on non-homologous chromosomes assort independently.
 
 === layout: two-panels
 
@@ -71,7 +73,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 2](assets/lect08b-chap8-linked_genes/image_002.jpg)
+![Slide image 2](assets/lect08b-chap8-linked_genes/independent_WG.drawn.svg)
 
 @right
 
@@ -83,7 +85,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 2](assets/lect08b-chap8-linked_genes/image_002.jpg)
+![Slide image 2](assets/lect08b-chap8-linked_genes/independent_WG.drawn.svg)
 
 @right
 
@@ -99,7 +101,7 @@ cover: 32.431 23.192 64.848 74.156
 
 @left
 
-![Slide image 4](assets/lect08b-chap8-linked_genes/image_004.jpg)
+![Slide image 4](assets/lect08b-chap8-linked_genes/unlinked_testcross_seeds.drawn.svg)
 
 @right
 
@@ -113,7 +115,7 @@ cover: 32.431 23.192 64.848 74.156
 
 @body
 
-![Slide image 5](assets/lect08b-chap8-linked_genes/image_005.jpg)
+![Slide image 5](assets/lect08b-chap8-linked_genes/assortment_AB.drawn.svg)
 
 - *Assortment Across Chromosomes*
 - A double heterozygote produces four possible types of gametes in equal proportions
@@ -137,7 +139,11 @@ cover: 32.431 23.192 64.848 74.156
 
 @body
 
-![Slide image 6](assets/lect08b-chap8-linked_genes/image_006.jpg)
+![Cis and trans arrangements of linked w and m loci](assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg)
+
+*Cis:* wm/++ &emsp; *Trans:* w+/+m
+
+The slash separates the two homologous chromosomes.
 
 === layout: two-over-one-panels
 
@@ -147,13 +153,13 @@ cover: 32.431 23.192 64.848 74.156
 
 ## [*_cis_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on the same side.*
 
-![Cis isomer](assets/lect08b-chap8-linked_genes/cis_isomer.svg)
+![Cis isomer](assets/lect08b-chap8-linked_genes/cis_isomer.drawn.svg)
 
 @top-right
 
 ## [*_trans_*]{color=red} [*isomer*]{color=red}*\: The two Xs are on opposite sides.*
 
-![Trans isomer](assets/lect08b-chap8-linked_genes/trans_isomer.svg)
+![Trans isomer](assets/lect08b-chap8-linked_genes/trans_isomer.drawn.svg)
 
 @bottom
 
@@ -175,102 +181,73 @@ cover: 32.431 23.192 64.848 74.156
 - When you have two different alleles for two genes on the same chromosome, we need more specific nomenclature
   - You could have the recessive alleles for both genes on the same chromosome, or they could be split
 
-=== layout: two-over-one-panels
-@replaceme
+=== layout: two-panels
 
 # *What gametes are produced?*
 
-@top-left
+@left
 
-- Trans
+![Cis and trans arrangements of linked w and m loci](assets/lect08b-chap8-linked_genes/cis_trans_portrait.drawn.svg)
 
-@top-right
+@right
 
-- Cis
+Assume *no crossing over between w and m*.
 
-@bottom
+- *Cis:* which gamete types?
+- *Trans:* which gamete types?
 
-![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
-
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
 # *What gametes are produced?*
 
-@top-left
+@left
 
-- Trans
+![Cis and trans arrangements of linked w and m loci](assets/lect08b-chap8-linked_genes/cis_trans_portrait.drawn.svg)
 
-@top-right
+@right
 
-- Cis
+Assume *no crossing over between w and m*.
 
-@bottom-left
+- *Unlinked:* ++, w+, +m, wm
 
-- unlinked\:
-- ++
-- w+
-- +m
-- wm
+Now predict the gametes for each linked arrangement:
 
-@bottom-right
+- *Cis:* which gamete types?
+- *Trans:* which gamete types?
 
-![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
-
-=== layout: four-panels
-@replaceme
+=== layout: two-panels
 
 # *What gametes are produced?*
 
-@top-left
+@left
 
-- Trans
-  - w+
-  - +m
+![Cis and trans arrangements of linked w and m loci](assets/lect08b-chap8-linked_genes/cis_trans_portrait.drawn.svg)
 
-@top-right
+@right
 
-- Cis
-  - wm
-  - ++
+Assume *no crossing over between w and m*.
 
-@bottom-left
+- *Cis:* wm and ++
+- *Trans:* w+ and +m
+- *Unlinked:* ++, w+, +m, wm
 
-- unlinked\:
-- ++
-- w+
-- +m
-- wm
-
-@bottom-right
-
-![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
-
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *What gametes are produced?*
 
-@body
+@left
 
-- Trans
-  - w+
-  - +m
+![Cis and trans arrangements of linked w and m loci](assets/lect08b-chap8-linked_genes/cis_trans_portrait.drawn.svg)
 
-- Cis
-  - wm
-  - ++
+@right
 
-![Slide image 9](assets/lect08b-chap8-linked_genes/image_006.jpg)
+Assume *no crossing over between w and m*.
 
-- In either case, only half of the
-- normal gametes are produced
+- *Cis:* wm and ++
+- *Trans:* w+ and +m
+- *Unlinked:* ++, w+, +m, wm
 
-- unlinked\:
-- ++
-- w+
-- +m
-- wm
+In either linked arrangement, only two of the four gamete types possible for unlinked genes are produced.
 
 === layout: section
 
@@ -289,9 +266,18 @@ cover: 32.431 23.192 64.848 74.156
 
 @body
 
-![Labeled diagram from source slide 21](assets/lect08b-chap8-linked_genes/b21_labeled.svg)
+![True-breeding P cross produces wild-type F1 dihybrids](assets/lect08b-chap8-linked_genes/morgan_parental_cross.drawn.svg)
 
 - Morgan mated true-breeding P (parental) generation flies to produce heterozygous F1 dihybrids all of which are wild-type in appearance.
+
+=== layout: one-panel
+
+# The F~1~ Testcross
+
+@body
+
+![F1 dihybrid female testcross with recessive male](assets/lect08b-chap8-linked_genes/morgan_testcross.drawn.svg)
+
 - He then mated wild-type F1 dihybrid females with homozygous recessive males.
 - This testcross will reveal the genotype of the eggs made by the dihybrid female.
 
@@ -307,7 +293,7 @@ cover: 32.431 23.192 64.848 74.156
 
 @body
 
-![Labeled diagram from source slide 23](assets/lect08b-chap8-linked_genes/b23_labeled.svg)
+![Labeled diagram from source slide 23](assets/lect08b-chap8-linked_genes/morgan_most_offspring.drawn.svg)
 
 === layout: one-panel
 
@@ -399,11 +385,22 @@ Both predictions are wrong...
 
 @left
 
-![Slide image 17](assets/lect08b-chap8-linked_genes/image_017.jpg)
+![No crossing over: four parental products](assets/lect08b-chap8-linked_genes/no_crossover.drawn.svg)
 
 @right
 
 - (A) Alleles in the same chromosome remain together when there is no crossing over between them.
+
+=== layout: two-panels
+
+# *Crossing Over and Recombinant Gametes*
+
+@left
+
+![Single nonsister crossover: two parental and two recombinant products](assets/lect08b-chap8-linked_genes/single_crossover.drawn.svg)
+
+@right
+
 - (B) When there is crossing over, the result is two recombinant and two non-recombinant products, because the exchange is between only two of the four chromatids.
 
 === layout: definitions
@@ -422,7 +419,7 @@ Both predictions are wrong...
 
 @body
 
-![Labeled diagram from source slide 34](assets/lect08b-chap8-linked_genes/b34_labeled.svg)
+![Labeled diagram from source slide 34](assets/lect08b-chap8-linked_genes/morgan_parental_cross.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -449,7 +446,7 @@ Both predictions are wrong...
 
 @body
 
-![Labeled diagram from source slide 37](assets/lect08b-chap8-linked_genes/b37_labeled.svg)
+![Labeled diagram from source slide 37](assets/lect08b-chap8-linked_genes/pea_parental_recombinant.drawn.svg)
 
 === layout: section
 
@@ -460,7 +457,7 @@ Both predictions are wrong...
 
 @body
 
-![Slide image 22](assets/lect08b-chap8-linked_genes/image_022.jpg)
+![Slide image 22](assets/lect08b-chap8-linked_genes/trans_bvg_recap.drawn.svg)
 
 === layout: one-panel
 @replaceme

@@ -1,0 +1,92 @@
+from pathlib import Path
+import re,shutil,json
+P=Path(__file__).parent
+R=Path('genetics/LECT12/djot')
+F=P/'frozen';F.mkdir(exist_ok=True)
+A=F/'assets';A.mkdir(exist_ok=True)
+for f in P.glob('*.drawn.svg'):shutil.copy2(f,A/f.name)
+
+# C1 stays native except for its sourced tree geometry and opening matrix.
+c=(R/'lect12c_more_gene_trees_part_01.djot').read_text()
+initial='''{table-style=matrix-upper table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| a | - | 17 | 20 | 30 | 23 |
+| b |  | - | 30 | 34 | 21 |
+| c |  |  | - | 28 | 35 |
+| d |  |  |  | - | 40 |
+| e |  |  |  |  | - |
+'''
+c=c.replace('![Slide image 2](assets/lect12c-more_gene_trees/image_002.png)',initial)
+c=c.replace('[31]{background-color=#DBC2DE','[30]{background-color=#DBC2DE')
+c=c.replace('25+35 = 30','(25+35)/2 = 30').replace('32+40 = 36','(32+40)/2 = 36')
+c=c.replace('![Slide image 21](assets/lect12c-more_gene_trees/image_021.png)','![Five-taxon tree with source merge heights](assets/phy_c_five_taxa.drawn.svg)')
+c=c.replace('- Create the gene tree\n\n- A\n- B\n- C\n- D\n\n- 4.5\n\n- 2.5\n\n- 4.0\n\n- 6.0','- Create the gene tree\n\n![Hartl 17.27 tree with branch lengths](assets/phy_c_hartl_answer.drawn.svg)')
+c=c.replace('- Create the gene tree\n\n- A\n- B\n- C\n- D','- Create the gene tree\n\n![Hartl 17.27 tree before branch-length answers](assets/phy_c_hartl_question.drawn.svg)')
+shutil.copy2(R/'assets/lect12c-more_gene_trees/image_031.jpg',A/'original_allele.jpg')
+# Parent integrates shared allele SVG after its family trial.
+c=c.replace('assets/lect12c-more_gene_trees/image_031.jpg','assets/original_allele.jpg')
+blocks=c.split('=== layout:')
+blocks=[b.replace('@replaceme\n','') if 'phy_c_' in b else b for b in blocks]
+c='=== layout:'.join(blocks)
+(F/'lect12c_more_gene_trees_part_01.djot').write_text(c)
+
+alignment=Path('_temp/genetics_visual_renewal/m3_phylogenetics/b/hemoglobin_table.djot').read_text()
+legend='- A dot matches human; a dash marks a gap; letters show differences.\n'
+old=(R/'lect12c_more_gene_trees_part_02.djot').read_text().split('=== layout:')
+out=[]
+for i,b in enumerate(old):
+ if not b.strip():continue
+ if i==1:
+  b=b.replace('![Slide image 32](assets/lect12c-more_gene_trees/image_032.png)',alignment+'\n'+legend)
+ elif i==2:
+  b=' one-panel\n\n# Distance Matrix\n\n@body\n\n'+__import__('draw_trials').matrix+'\n- Each entry counts amino-acid differences between two sequences.\n- Seven species give (7 x 6)/2 = 21 pairwise distances.\n'
+ elif 3<=i<=10:
+  stage=[1,2,3,3,4,4,5,6][i-3]
+  prose='\n'.join(line for line in b.splitlines() if line.startswith('- '))
+  b=' two-panels\n\n# Manual average-distance tree\n\n@left\n\n'+__import__('draw_trials').matrix+'\n'+prose+'\n\n@right\n\n'+f'![Seven-species tree, stage {stage}](assets/phy_c_seven_stage_{stage}.drawn.svg)\n'
+ out.append(b)
+(F/'lect12c_more_gene_trees_part_02.djot').write_text(''.join('=== layout:'+b for b in out))
+(F/'lect12c-more_gene_trees.djot').write_text('color-theme: genetics\n\ninclude: lect12c_more_gene_trees_part_01.djot\ninclude: lect12c_more_gene_trees_part_02.djot\n')
+
+# All repeated D states remain distinct native tables.
+labels=[['a','b','c','d','e','f'],['(a,c)','b','d','e','f'],['(a,c)','(b,e)','d','f'],['(a,c)','(b,e)','(d,f)'],['((a,c),(b,e))','(d,f)']]
+triangles=[[12,4,15,9,18,10,13,6,15,13,9,14,11,8,13],[11,14,9,16,13,6,15,11,8,13],[10,14,16,12,14,8],[10,15,13],[14]]
+def matrix(state,selected=(),blank=False):
+ names=labels[state];n=len(names);data={};k=0
+ for i in range(n):
+  for j in range(i+1,n):data[i,j]=data[j,i]=triangles[state][k];k+=1
+ def paint(s,bg):return f'[{s}]{{background-color={bg}}}'
+ lines=[f'{{table-style=matrix-lower table-group=phy-d-activity-{n+1}}}','|  | '+' | '.join(paint(t,'#F4D7DF') if i in selected else t for i,t in enumerate(names))+' |','| '+' | '.join(['---']*(n+1))+' |']
+ for i,t in enumerate(names):
+  row=[paint(t,'#F4D7DF') if i in selected or blank and i==0 else t]
+  for j in range(n):
+   value='&#8212;' if i==j else str(data[i,j])
+   if blank and (i==0 or j==0) and i!=j:value=''
+   attrs=[]
+   if i==j:attrs.append('background-color='+('#7B1B69' if i in selected else '#DDE1E5'))
+   elif i in selected or j in selected or blank and (i==0 or j==0):attrs.append('background-color=#F4D7DF')
+   highlight=i!=j and ((state==0 and (i,j) in ((2,0),(0,2),(4,1),(1,4),(5,3),(3,5))) or data[i,j]==min(triangles[state])) and not blank
+   if highlight:attrs.append('color=#870087')
+   if i==j and i in selected:attrs.append('color=#FFFFFF')
+   if attrs:value='['+value+']{'+ ' '.join(attrs)+'}'
+   row.append(value)
+  lines.append('| '+' | '.join(row)+' |')
+ return '\n'.join(lines)+'\n'
+# Entries map the twenty-two source image-use slides, including intentionally repeated states.
+states=[[(0,())],[(0,(0,2))],[(0,(0,2)),(1,(),True)],[(0,(0,2)),(1,())],[(1,())],[(1,())],[(1,(1,3))],[(1,(1,3)),(2,())],[(2,())],[(2,())],[(2,(2,3))],[(2,(2,3)),(3,())],[(3,())],[(3,())],[(3,(0,1))],[(3,(0,1)),(4,())],[(4,())],[(0,(0,2))],[(1,(1,3))],[(2,(2,3))],[(3,(0,1))],[(4,())]]
+d=(R/'lect12d-gene_tree_activity.djot').read_text().split('=== layout:');count=0;result=[]
+for b in d:
+ if 'assets/lect12d-gene_tree_activity/' not in b:result.append(b);continue
+ st=states[count];prose='\n'.join(line for line in b.splitlines() if line.startswith('- '))
+ if count>=17:
+  stage=count-16
+  b=' two-panels\n\n# Build the gene tree\n\n@left\n\n'+matrix(*st[0])+'\n'+prose+'\n\n@right\n\n'+f'![Activity tree through merge {stage}](assets/phy_d_activity_stage_{stage}.drawn.svg)\n'
+ elif len(st)==2:
+  b=' two-panels\n\n# Compress the distance matrix\n\n@left\n\n'+matrix(*st[0])+'\n@right\n\n'+matrix(*st[1])+'\n'+prose+'\n'
+ else:
+  b=' one-panel\n\n# Gene Tree Handout\n\n@body\n\n'+matrix(*st[0])+'\n'+prose+'\n'
+ result.append(b);count+=1
+assert count==22
+(F/'lect12d-gene_tree_activity.djot').write_text('=== layout:'.join(result))
+(P/'activity_trials.djot').write_text('color-theme: genetics\n\n=== layout: two-panels\n\n# Activity: matrix and tree\n\n@left\n\n'+matrix(0,(0,2))+'\n- a|c = 4/2 = 2\n\n@right\n\n![First join](phy_d_activity_stage_1.drawn.svg)\n\n=== layout: stacked-panels\n\n# Activity: full-width matrix\n\n@top\n\n'+matrix(0,(0,2))+'\n@bottom\n\n![First join](phy_d_activity_stage_1.drawn.svg)\n\n- a|c = 4/2 = 2\n')

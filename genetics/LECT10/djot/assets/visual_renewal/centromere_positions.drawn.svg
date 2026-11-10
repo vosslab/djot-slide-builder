@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc"><title id="title">Centromere positions</title><desc id="desc">Original simplified chromosome silhouettes. Blue chromatids and dark centromeres preserve the source distinctions.</desc><rect width="1100" height="420" fill="white"/>
+<path d="M107 150 Q130 150 101 315 M163 150 Q140 150 169 315" stroke="#076DAD" stroke-width="18" fill="none" stroke-linecap="round"/>
+<ellipse cx="121" cy="150" rx="11" ry="14" fill="#444"/>
+<ellipse cx="149" cy="150" rx="11" ry="14" fill="#444"/>
+<text x="135" y="365" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Telocentric</text>
+<path d="M377 128 Q400 150 371 293 M433 128 Q410 150 439 293" stroke="#076DAD" stroke-width="18" fill="none" stroke-linecap="round"/>
+<ellipse cx="391" cy="150" rx="11" ry="14" fill="#444"/>
+<ellipse cx="419" cy="150" rx="11" ry="14" fill="#444"/>
+<text x="405" y="365" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Acrocentric</text>
+<path d="M647 85 Q670 150 641 250 M703 85 Q680 150 709 250" stroke="#076DAD" stroke-width="18" fill="none" stroke-linecap="round"/>
+<ellipse cx="661" cy="150" rx="11" ry="14" fill="#444"/>
+<ellipse cx="689" cy="150" rx="11" ry="14" fill="#444"/>
+<text x="675" y="365" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Submetacentric</text>
+<path d="M725 85 H740 V135 H725 M725 168 H740 V250 H725" stroke="#333" stroke-width="2" fill="none"/>
+<text x="762" y="115" font-family="Arial" font-size="22" text-anchor="middle" fill="#222">p</text>
+<text x="762" y="215" font-family="Arial" font-size="22" text-anchor="middle" fill="#222">q</text>
+<path d="M917 60 Q940 150 911 240 M973 60 Q950 150 979 240" stroke="#076DAD" stroke-width="18" fill="none" stroke-linecap="round"/>
+<ellipse cx="931" cy="150" rx="11" ry="14" fill="#444"/>
+<ellipse cx="959" cy="150" rx="11" ry="14" fill="#444"/>
+<text x="945" y="365" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Metacentric</text>
+<text x="550" y="410" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">p = short arm     q = long arm     dark ovals = replicated centromere</text>
+</svg>

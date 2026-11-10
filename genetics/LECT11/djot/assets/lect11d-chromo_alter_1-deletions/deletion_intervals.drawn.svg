@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="870" height="520" viewBox="0 0 870 520" role="img" aria-labelledby="deletion-intervals-title deletion-intervals-desc">
+	<title id="deletion-intervals-title">Deletion intervals for the source mapping problem</title>
+	<desc id="deletion-intervals-desc">Five deletion intervals reproduce the source membership across six numbered positions. A solid magenta segment denotes the region deleted, not retained. Del 1 covers 1-3, Del 2 2-3, Del 3 2-4, Del 4 3-5, and Del 5 4-6. Source: Lecture 11D mapping problem, original images 018 and 019. Positions are schematic, not genetic distances.</desc>
+	<g font-family="Liberation Sans, sans-serif">
+		<text x="240" y="42" font-size="40" fill="#253342" text-anchor="middle">1</text>
+		<path d="M240 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="345" y="42" font-size="40" fill="#253342" text-anchor="middle">2</text>
+		<path d="M345 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="450" y="42" font-size="40" fill="#253342" text-anchor="middle">3</text>
+		<path d="M450 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="555" y="42" font-size="40" fill="#253342" text-anchor="middle">4</text>
+		<path d="M555 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="660" y="42" font-size="40" fill="#253342" text-anchor="middle">5</text>
+		<path d="M660 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="765" y="42" font-size="40" fill="#253342" text-anchor="middle">6</text>
+		<path d="M765 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M195 88 H810" fill="none" stroke="#24578F" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M240 76 V100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M345 76 V100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M450 76 V100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M555 76 V100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M660 76 V100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path d="M765 76 V100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="135" y="194" font-size="36" fill="#253342" text-anchor="end">Del 1</text>
+		<path id="deletion-1" d="M210 185 H480" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="135" y="256" font-size="36" fill="#253342" text-anchor="end">Del 2</text>
+		<path id="deletion-2" d="M315 247 H480" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="135" y="318" font-size="36" fill="#253342" text-anchor="end">Del 3</text>
+		<path id="deletion-3" d="M315 309 H585" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="135" y="380" font-size="36" fill="#253342" text-anchor="end">Del 4</text>
+		<path id="deletion-4" d="M420 371 H690" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="135" y="442" font-size="36" fill="#253342" text-anchor="end">Del 5</text>
+		<path id="deletion-5" d="M525 433 H795" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+		<text x="435" y="505" font-size="32" fill="#CC0066" text-anchor="middle">Magenta segment = deleted region</text>
+	</g>
+</svg>

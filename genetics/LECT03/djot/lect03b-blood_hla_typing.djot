@@ -62,7 +62,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect03b-blood_hla_typing/image_003.png)
+![Slide image 3](assets/lect03b-blood_hla_typing/abo_cells.drawn.svg)
 
 === layout: two-panels
 
@@ -70,7 +70,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 4](assets/lect03b-blood_hla_typing/image_004.jpg)
+![Slide image 4](assets/lect03b-blood_hla_typing/abo_cells.drawn.svg)
 
 @right
 
@@ -85,7 +85,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 5](assets/lect03b-blood_hla_typing/image_005.jpg)
+![Slide image 5](assets/lect03b-blood_hla_typing/abo_glycans.drawn.svg)
 
 === layout: two-panels
 
@@ -254,11 +254,11 @@ What blood type is being displayed?
 
 @left
 
-![Slide image 6](assets/lect03b-blood_hla_typing/image_006.png)
+![Slide image 6](assets/lect03b-blood_hla_typing/abo_reactions_oa.drawn.svg)
 
 @right
 
-![Slide image 7](assets/lect03b-blood_hla_typing/image_007.png)
+![Slide image 7](assets/lect03b-blood_hla_typing/abo_reactions_bab.drawn.svg)
 
 === layout: section
 
@@ -276,7 +276,7 @@ What blood type is being displayed?
 
 @right
 
-![Slide image 8](assets/lect03b-blood_hla_typing/image_008.png)
+![Slide image 8](assets/lect03b-blood_hla_typing/hla_cell_haplotypes.drawn.svg)
 
 === layout: one-panel
 
@@ -284,7 +284,7 @@ What blood type is being displayed?
 
 @body
 
-![Slide image 9](assets/lect03b-blood_hla_typing/image_009.png)
+![Slide image 9](assets/lect03b-blood_hla_typing/hla_region.drawn.svg)
 
 === layout: two-panels
 
@@ -292,7 +292,7 @@ What blood type is being displayed?
 
 @left
 
-![Slide image 10](assets/lect03b-blood_hla_typing/image_010.png)
+![Slide image 10](assets/lect03b-blood_hla_typing/hla_family.drawn.svg)
 
 @right
 
@@ -436,7 +436,9 @@ What blood type is being displayed?
 
 @right
 
-![Slide image 12](assets/lect03b-blood_hla_typing/image_012.png)
+![Slide image 12](assets/lect03b-blood_hla_typing/hla_numbered_family.drawn.svg)
+
+*Identical match: You and Brother.*
 
 === layout: one-panel
 
@@ -562,7 +564,7 @@ Answer: B.
 
 @body
 
-![Slide image 13](assets/lect03b-blood_hla_typing/image_013.png)
+![Slide image 13](assets/lect03b-blood_hla_typing/hla_matching_six.drawn.svg)
 
 === layout: one-panel
 
@@ -570,7 +572,9 @@ Answer: B.
 
 @body
 
-![Slide image 14](assets/lect03b-blood_hla_typing/image_014.png)
+![Slide image 14](assets/lect03b-blood_hla_typing/hla_cord_matching.drawn.svg)
+
+Better outcomes ->
 
 === layout: one-panel
 
@@ -578,7 +582,7 @@ Answer: B.
 
 @body
 
-![Slide image 15](assets/lect03b-blood_hla_typing/image_015.png)
+![Slide image 15](assets/lect03b-blood_hla_typing/hla_matching_eight.drawn.svg)
 
 === layout: section
 

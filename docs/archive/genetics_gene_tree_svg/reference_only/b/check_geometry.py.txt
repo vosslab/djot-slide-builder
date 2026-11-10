@@ -1,0 +1,50 @@
+"""Scratch check: recover graph connectivity from emitted SVG line segments."""
+from pathlib import Path
+import xml.etree.ElementTree as E
+import re,json,math
+A=Path('genetics/LECT12/djot/assets/lect12b-gene_trees');P=Path(__file__).parent;N={'s':'http://www.w3.org/2000/svg'}
+def segments(paths):
+ out=[]
+ for p in paths:
+  tokens=re.findall('[MLHV]|-?\\d+(?:\\.\\d+)?',p.attrib['d']);i=0;point=None
+  while i<len(tokens):
+   op=tokens[i];i+=1
+   if op in 'ML':new=(float(tokens[i]),float(tokens[i+1]));i+=2
+   elif op=='H':new=(float(tokens[i]),point[1]);i+=1
+   else:new=(point[0],float(tokens[i]));i+=1
+   if op!='M':out.append((point,new))
+   point=new
+ return out
+def on(p,a,b):
+ return abs((p[0]-a[0])*(b[1]-a[1])-(p[1]-a[1])*(b[0]-a[0]))<1e-5 and min(a[0],b[0])-1e-6<=p[0]<=max(a[0],b[0])+1e-6 and min(a[1],b[1])-1e-6<=p[1]<=max(a[1],b[1])+1e-6
+def recover(paths,root,tips,claims):
+ lines=segments(paths);points={p for line in lines for p in line}|{root}|set(tips.values())|set(claims.values());adj={p:set() for p in points}
+ for a,b in lines:
+  pts=sorted((p for p in points if on(p,a,b)),key=lambda p:math.dist(a,p))
+  for x,y in zip(pts,pts[1:]):
+   if x!=y:adj[x].add(y);adj[y].add(x)
+ parents={root:None};stack=[root]
+ while stack:
+  a=stack.pop()
+  for b in adj[a]:
+   if b!=parents[a]:assert b not in parents,'unexpected cycle';parents[b]=a;stack.append(b)
+ assert all(p in parents for p in tips.values()),'missing terminal connection'
+ tip_at={p:k for k,p in tips.items()}
+ def descendants(p):return ({tip_at[p]} if p in tip_at else set())|set().union(*(descendants(q) for q in adj[p] if parents.get(q)==p))
+ for names,point in claims.items():assert descendants(point)==set(names),(names,descendants(point))
+ return {'connected_tips':list(tips),'claims':{k:sorted(descendants(v)) for k,v in claims.items()}}
+def tree_paths(root):
+ # data-edge marks branch-layer groups only; the assertion reads their path geometry, not values.
+ return [p for g in root.iter() if 'data-edge' in g.attrib for p in g.findall('s:path',N)]
+report={}
+for name in ('branch_points','mrca'):
+ r=E.parse(A/f'phy_b_{name}.drawn.svg').getroot();report[name]=recover(tree_paths(r),(50,290),dict(zip('ABCDE',[(430,y) for y in (40,140,240,340,440)])),{'AB':(290,90),'CD':(290,290),'ABCD':(170,190)})
+r=E.parse(A/'phy_b_three_forms.drawn.svg').getroot();groups=[g for g in r.findall('.//s:g',N) if 'transform'in g.attrib]
+for i,g in enumerate(groups):
+ paths=g.findall('.//s:path',N)
+ if i==0:
+  f=lambda x,y:(x*.62,y*.7+30);root=f(50,290);tips=dict(zip('ABCDE',[f(430,y) for y in (40,140,240,340,440)]));claims={'AB':f(290,90),'CD':f(290,290),'ABCD':f(170,190)}
+ else:root=(220,340);tips=dict(zip('ABCDE',[(x,60) for x in (20,80,160,220,300)]));claims={'AB':(50,150),'CD':(190,150),'ABCD':(120,240)}
+ report[f'form{i+1}']=recover(paths,root,tips,claims)
+r=E.parse(A/'phy_b_polytomy.drawn.svg').getroot();report['polytomy']=recover(tree_paths(r),(40,300),dict(zip('PQRSTU',[(440,y) for y in (40,110,180,290,370,450)])),{'PQR':(280,110),'ST':(280,330),'PQRST':(150,220)})
+(P/'geometry_invariants.json').write_text(json.dumps(report,indent=2)+'\n');print('PASS: emitted paths reconstruct A-E clades in5 drawings and P/Q/R true polytomy.')

@@ -1,0 +1,30 @@
+{
+  "archive_xml_files": 46,
+  "replayed_xml_files": 14,
+  "replay_matches_artwork": [
+    "phy_d_activity_stage_2.drawn.svg",
+    "phy_c_seven_stage_5.drawn.svg",
+    "phy_c_hartl_answer.drawn.svg",
+    "phy_d_activity_stage_4.drawn.svg",
+    "phy_c_five_taxa.drawn.svg",
+    "phy_c_seven_stage_3.drawn.svg",
+    "phy_d_activity_stage_3.drawn.svg",
+    "phy_c_hartl_question.drawn.svg",
+    "phy_c_seven_stage_4.drawn.svg",
+    "phy_d_activity_stage_5.drawn.svg",
+    "phy_c_seven_stage_2.drawn.svg",
+    "phy_c_seven_stage_1.drawn.svg",
+    "phy_d_activity_stage_1.drawn.svg",
+    "phy_c_seven_stage_6.drawn.svg"
+  ],
+  "replay_differs_from_artwork": [],
+  "original_asset_count_unchanged": 105,
+  "render": "evidence/five_taxa_replay.webp",
+  "native_lint": {
+    "roots": 4,
+    "slides": 184,
+    "image_uses": 97,
+    "require_native": true,
+    "executable": "/Users/vosslab/.cargo/bin/jotdown"
+  }
+}

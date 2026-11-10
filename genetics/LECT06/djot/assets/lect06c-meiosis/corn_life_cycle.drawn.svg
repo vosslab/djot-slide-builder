@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="corn-title corn-desc">
+<title id="corn-title">The life cycle of corn</title>
+<desc id="corn-desc">A maize sporophyte has a tassel and an ear shoot. In two parallel tracks, diploid microsporocytes and megasporocytes undergo meiosis. Haploid microspores develop by mitosis into pollen with two sperm nuclei. One surviving megaspore develops by mitosis into an embryo sac with an egg and two polar nuclei. Double fertilization produces a diploid embryo and triploid endosperm in the mature kernel. Growth by mitosis returns to the mature sporophyte. Anatomical stages and nuclei are schematic and not to scale.</desc>
+<metadata>Original editable vector construction. Source facts: genetics/LECT06/djot/assets/lect06c-meiosis/image_031.jpg; source consumer: lect06c-meiosis.djot, The life cycle of corn. Natural organ contours are newly constructed. Nuclear colors retain source fusion partners. Diagram schematic, not to scale.</metadata>
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#526879"/></marker>
+ <marker id="large-arrow" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L15 7.5L0 15Z" fill="#526879"/></marker>
+ <linearGradient id="leaf-value" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#9dbb63"/><stop offset=".5" stop-color="#5d8a3f"/><stop offset="1" stop-color="#355a2f"/></linearGradient>
+ <linearGradient id="kernel-value" x1="0" x2="1" y1="0" y2=".7"><stop stop-color="#ffe6a0"/><stop offset=".6" stop-color="#e9b947"/><stop offset="1" stop-color="#bd8128"/></linearGradient>
+ <g id="haploid-cell"><circle r="26" fill="#fff9ec" stroke="#7d6d51" stroke-width="2.5"/><circle r="7" fill="#334757"/></g>
+ <g id="diploid-cell"><circle r="31" fill="#f8eee5" stroke="#7d6d51" stroke-width="2.5"/><circle r="11" fill="#334757"/></g>
+ <g id="spikelet"><path d="M0 0Q-9-8-5-16Q3-14 0 0Z" fill="#c8ad54" stroke="#716b36" stroke-width="1.2"/><path d="M1-1Q9-9 7-18Q-1-16 1-1Z" fill="#e0c878" stroke="#716b36" stroke-width="1.2"/></g>
+ <g id="polar-nucleus"><circle r="8" fill="#e2ac1b" stroke="#8a5e00" stroke-width="1.5"/></g>
+ <g id="egg-nucleus"><circle r="9" fill="#5c9643" stroke="#315f30" stroke-width="1.5"/></g>
+ <g id="other-nucleus"><circle r="6" fill="#334757"/></g>
+</defs>
+<style>
+ text{font-family:"DejaVu Sans",Arial,sans-serif;fill:#213547;font-size:24px}
+ .small{font-size:21px}.tiny{font-size:19px}.label{font-size:24px}.head{font-size:27px;font-weight:bold}
+ .leader{fill:none;stroke:#526879;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+ .flow{fill:none;stroke:#526879;stroke-width:3;marker-end:url(#arrow)}
+ .return{fill:none;stroke:#526879;stroke-width:4;marker-end:url(#large-arrow)}
+ .cell{fill:#fff9ec;stroke:#7d6d51;stroke-width:2.5}
+ .organ{stroke:#355936;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+</style>
+<rect width="1600" height="1000" fill="#fff"/>
+<!-- Background bands distinguish processes without implying a diploid pollen grain. -->
+<g id="process-headings">
+ <path d="M340 74H830" stroke="#edd6d2" stroke-width="4"/>
+ <text class="head" x="585" y="58" text-anchor="middle" fill="#9a4545">Meiosis</text>
+ <path d="M850 74H1212" stroke="#d8e7ec" stroke-width="4"/>
+ <text class="head" x="1031" y="58" text-anchor="middle" fill="#28617a">Mitosis</text>
+ <text class="tiny" x="1560" y="32" text-anchor="end">Schematic; not to scale</text>
+</g>
+<g id="maize-sporophyte">
+ <!-- Joined, tapering stalk with internodes and alternating, folded strap leaves. -->
+ <path d="M156 751C160 617 164 451 159 287L166 199L174 199L171 286C178 451 172 622 173 751Z" fill="#6f9444" class="organ"/>
+ <path d="M166 733C149 732 134 744 125 762M170 735C186 738 199 748 205 759M161 740L146 768M174 742L180 770" fill="none" stroke="#927745" stroke-width="3" stroke-linecap="round"/>
+ <path d="M166 660C125 607 77 589 35 609C83 615 94 646 136 658C149 662 160 665 166 660Z" fill="url(#leaf-value)" class="organ"/>
+ <path d="M169 593C202 528 249 508 295 527C257 526 236 551 211 577C197 591 182 597 169 593Z" fill="url(#leaf-value)" class="organ"/>
+ <path d="M166 516C124 457 71 448 31 471C75 468 101 506 138 518C151 523 160 522 166 516Z" fill="url(#leaf-value)" class="organ"/>
+ <path d="M170 441C194 389 243 357 286 379C250 377 227 409 200 430C188 440 178 445 170 441Z" fill="url(#leaf-value)" class="organ"/>
+ <path d="M167 373C141 329 104 308 68 328C103 330 119 359 145 372C154 376 162 377 167 373Z" fill="url(#leaf-value)" class="organ"/>
+ <path d="M171 309C189 275 216 258 243 275C218 277 207 297 190 308C180 313 174 314 171 309Z" fill="url(#leaf-value)" class="organ"/>
+ <path d="M167 259C148 235 128 226 110 239C132 241 142 259 167 265Z" fill="url(#leaf-value)" class="organ"/>
+ <g fill="none" stroke="#bdcb89" stroke-width="1.7" opacity=".85">
+  <path d="M42 608Q100 614 163 660M171 591Q239 531 283 527M41 471Q102 478 165 516M174 440Q235 387 278 379M74 329Q119 340 166 373M175 308Q209 279 239 276"/>
+ </g>
+ <g stroke="#416735" stroke-width="3"><path d="M160 662L174 664M163 595L174 597M162 520L174 522M162 444L174 445M161 375L173 377M160 310L173 312"/></g>
+ <!-- Lateral ear in its husk, with silk, attached to an axillary ear shoot. -->
+ <g id="ear-shoot" transform="translate(176 493) rotate(24)">
+  <path d="M0 42C-13 11-12-39 0-72C18-54 28-12 16 22L5 49Z" fill="#a9bd62" class="organ"/>
+  <path d="M4 44C6 2 12-36 1-65C17-49 24-13 16 22Z" fill="#779848"/>
+  <path d="M0 44C-18 12-28-10-27-31C-9-13 7 13 4 44Z" fill="#5e843d" class="organ"/>
+  <path d="M2-66Q-9-89-3-100M5-65Q9-92 1-105M7-63Q24-91 18-100M4-65Q2-94-12-99M8-64Q17-80 27-83" fill="none" stroke="#a27a48" stroke-width="2.1"/>
+ </g>
+ <!-- Terminal branched tassel; open branching silhouette differentiates maize. -->
+ <g id="tassel" stroke="#768343" fill="none" stroke-width="2.5" stroke-linecap="round">
+  <path d="M170 211L169 111M169 199Q141 187 118 157M170 190Q199 172 218 141M169 177Q145 157 134 131M169 166Q184 142 190 116M169 151L158 120"/>
+ </g>
+ <g id="tassel-spikelets">
+  <use xlink:href="#spikelet" transform="translate(169 125)"/><use xlink:href="#spikelet" transform="translate(169 144)"/><use xlink:href="#spikelet" transform="translate(169 165)"/>
+  <use xlink:href="#spikelet" transform="translate(131 174) rotate(-40)"/><use xlink:href="#spikelet" transform="translate(145 187) rotate(-45)"/><use xlink:href="#spikelet" transform="translate(119 158) rotate(-30)"/>
+  <use xlink:href="#spikelet" transform="translate(142 146) rotate(-25)"/><use xlink:href="#spikelet" transform="translate(151 164) rotate(-35)"/>
+  <use xlink:href="#spikelet" transform="translate(182 137) rotate(20)"/><use xlink:href="#spikelet" transform="translate(193 171) rotate(40)"/><use xlink:href="#spikelet" transform="translate(208 155) rotate(35)"/>
+ </g>
+ <text class="label" x="32" y="103">Tassel</text><path class="leader" d="M105 108L145 143"/>
+ <text class="label" x="32" y="410">Ear shoot</text><path class="leader" d="M137 416L192 456"/>
+ <text class="head" x="168" y="805" text-anchor="middle">Mature sporophyte</text>
+ <text x="168" y="839" text-anchor="middle">(2n)</text>
+</g>
+<g id="organ-to-cell-branches">
+ <path class="flow" d="M231 177C290 177 306 218 359 218"/>
+ <path class="flow" d="M233 470C282 470 307 490 359 490"/>
+</g>
+<g id="male-meiosis">
+ <text x="396" y="137" text-anchor="middle">Microsporocyte</text><text x="396" y="166" text-anchor="middle">(2n)</text>
+ <use xlink:href="#diploid-cell" x="396" y="218"/>
+ <path class="flow" d="M435 218H500"/>
+ <g id="male-dyad"><ellipse class="cell" cx="536" cy="218" rx="26" ry="38" transform="rotate(-30 536 218)"/><path class="leader" d="M512 226L558 211"/><use xlink:href="#other-nucleus" x="526" y="202"/><use xlink:href="#other-nucleus" x="546" y="233"/></g>
+ <path class="flow" d="M571 218H637"/>
+ <g id="microspore-tetrad"><use xlink:href="#haploid-cell" x="671" y="196"/><use xlink:href="#haploid-cell" x="713" y="196"/><use xlink:href="#haploid-cell" x="671" y="239"/><use xlink:href="#haploid-cell" x="713" y="239"/></g>
+ <text class="small" x="692" y="293" text-anchor="middle">Four microspores (n)</text>
+ <path class="flow" d="M744 218H838"/>
+ <use xlink:href="#haploid-cell" x="872" y="218"/>
+ <text x="872" y="137" text-anchor="middle">Microspore</text><text x="872" y="166" text-anchor="middle">(n)</text>
+ <path class="flow" d="M909 218H1029"/>
+</g>
+<g id="germinated-pollen">
+ <text x="1115" y="137" text-anchor="middle">Germinated</text><text x="1115" y="166" text-anchor="middle">pollen grain</text>
+ <!-- Exine body joins a long growing tube; rounded tip approaches the sac. -->
+ <path d="M1095 243C1064 260 1033 236 1044 204C1053 177 1098 179 1110 205C1115 216 1111 228 1107 233C1153 229 1190 263 1225 296C1266 334 1309 359 1352 396C1366 408 1365 423 1354 428C1344 433 1333 421 1324 411C1284 374 1244 350 1208 317C1169 282 1139 251 1095 243Z" fill="#fff9ec" stroke="#7d6d51" stroke-width="2.7"/>
+ <path d="M1052 204C1042 231 1069 251 1094 236" fill="none" stroke="#c3a972" stroke-width="4"/>
+ <g fill="#bca273"><circle cx="1060" cy="199" r="2.3"/><circle cx="1077" cy="190" r="2.3"/><circle cx="1096" cy="197" r="2.3"/><circle cx="1050" cy="217" r="2.3"/><circle cx="1060" cy="237" r="2.3"/></g>
+ <use xlink:href="#polar-nucleus" x="1216" y="303"/><use xlink:href="#egg-nucleus" x="1254" y="338"/><use xlink:href="#other-nucleus" x="1339" y="406"/>
+ <text x="1392" y="244" text-anchor="middle">Two sperm</text><text x="1392" y="273" text-anchor="middle">nuclei (n)</text>
+ <path class="leader" d="M1346 285L1222 300M1363 285L1260 335"/>
+ <path class="flow" d="M1366 422C1385 439 1394 451 1400 467"/>
+</g>
+<g id="female-meiosis">
+ <text x="396" y="401" text-anchor="middle">Megasporocyte</text><text x="396" y="430" text-anchor="middle">(2n)</text>
+ <use xlink:href="#diploid-cell" x="396" y="490"/>
+ <path class="flow" d="M435 490H500"/>
+ <g id="female-dyad"><ellipse class="cell" cx="536" cy="490" rx="25" ry="40"/><path class="leader" d="M511 490H561"/><use xlink:href="#other-nucleus" x="536" y="474"/><use xlink:href="#other-nucleus" x="536" y="507"/></g>
+ <path class="flow" d="M572 490H650"/>
+ <g id="megaspore-tetrad"><path class="cell" d="M666 447C666 424 712 424 712 447V533C712 556 666 556 666 533Z"/><path class="leader" d="M666 460H712M666 490H712M666 520H712"/><use xlink:href="#other-nucleus" x="689" y="446"/><use xlink:href="#other-nucleus" x="689" y="475"/><use xlink:href="#other-nucleus" x="689" y="505"/><use xlink:href="#other-nucleus" x="689" y="534"/></g>
+ <text class="small" x="689" y="588" text-anchor="middle">Megaspores (n)</text>
+ <path class="flow" d="M726 490H804"/>
+ <g id="surviving-megaspore">
+  <path d="M829 439Q849 425 870 438L866 448L833 447Z M834 454Q848 445 866 454L862 465L835 465Z M838 471Q850 463 862 471L860 482L839 482Z" fill="#ece9e1" stroke="#b5b4aa" stroke-width="1.8"/>
+  <path class="cell" d="M825 506C822 482 835 477 850 480C869 481 878 503 867 522C854 545 830 532 825 506Z"/>
+  <use xlink:href="#other-nucleus" x="849" y="500"/>
+ </g>
+ <text x="850" y="393" text-anchor="middle">Surviving</text><text x="850" y="423" text-anchor="middle">megaspore</text>
+ <path class="flow" d="M884 502C936 502 936 509 983 509"/>
+</g>
+<g id="mature-embryo-sac">
+ <text x="1073" y="393" text-anchor="middle">Mature</text><text x="1073" y="423" text-anchor="middle">embryo sac</text>
+ <path d="M1000 482C1010 459 1034 450 1062 454C1101 453 1118 469 1140 491L1157 505L1144 523C1122 552 1090 563 1059 560C1028 559 1001 543 996 520C993 505 995 492 1000 482Z" fill="#f5eddb" stroke="#9d8b65" stroke-width="3"/>
+ <path d="M1010 486C1020 470 1039 465 1065 468C1100 465 1116 484 1144 505C1120 533 1096 551 1066 547C1034 548 1010 535 1008 514C1005 504 1005 494 1010 486Z" fill="#fffdf6" stroke="#b3a48a" stroke-width="1.5"/>
+ <use xlink:href="#other-nucleus" x="1023" y="492"/><use xlink:href="#other-nucleus" x="1020" y="510"/><use xlink:href="#other-nucleus" x="1030" y="527"/>
+ <use xlink:href="#polar-nucleus" x="1070" y="498"/><use xlink:href="#polar-nucleus" x="1070" y="522"/>
+ <use xlink:href="#other-nucleus" x="1117" y="490"/><use xlink:href="#egg-nucleus" x="1129" y="507"/><use xlink:href="#other-nucleus" x="1117" y="527"/>
+ <text class="small" x="1011" y="600" text-anchor="middle">Polar nuclei (n)</text>
+ <path class="leader" d="M1044 577L1066 526M1030 577L1053 549L1065 503"/>
+ <text class="small" x="1194" y="600" text-anchor="middle">Egg nucleus (n)</text><path class="leader" d="M1166 577L1133 515"/>
+ <path class="flow" d="M1170 510H1313"/>
+</g>
+<g id="double-fertilization">
+ <path d="M1340 480C1354 467 1384 470 1408 478C1432 485 1454 490 1478 487L1489 504L1478 523C1451 523 1441 545 1417 551C1387 565 1357 556 1341 535C1328 520 1328 496 1340 480Z" fill="#fff9ec" stroke="#7d6d51" stroke-width="2.7"/>
+ <use xlink:href="#other-nucleus" x="1351" y="501"/><use xlink:href="#other-nucleus" x="1355" y="517"/><use xlink:href="#other-nucleus" x="1367" y="533"/>
+ <use xlink:href="#polar-nucleus" x="1392" y="503"/><use xlink:href="#polar-nucleus" x="1401" y="524"/><use xlink:href="#polar-nucleus" x="1412" y="505"/>
+ <use xlink:href="#other-nucleus" x="1450" y="489"/><use xlink:href="#other-nucleus" x="1448" y="530"/>
+ <use xlink:href="#egg-nucleus" x="1454" y="509"/><use xlink:href="#egg-nucleus" x="1475" y="506"/>
+ <text class="head" x="1409" y="600" text-anchor="middle" fill="#725072">Fertilization</text>
+ <path class="flow" d="M1408 617C1408 647 1400 655 1389 679"/>
+</g>
+<g id="mature-kernel" transform="translate(-22 0)">
+ <!-- Oblique kernel cutaway, pericarp enclosing a broad starchy endosperm. -->
+ <path d="M1348 691C1365 677 1402 683 1425 709C1443 736 1443 781 1430 811C1420 835 1396 855 1375 873C1362 866 1348 849 1339 824C1324 791 1325 752 1330 727C1333 710 1338 698 1348 691Z" fill="#b7842a" stroke="#805b24" stroke-width="3"/>
+ <path d="M1338 685C1368 665 1398 689 1414 717C1430 749 1427 790 1415 815C1405 835 1384 853 1367 868C1346 854 1331 836 1323 809C1311 775 1314 738 1318 718C1322 701 1328 690 1338 685Z" fill="url(#kernel-value)" stroke="#805b24" stroke-width="3"/>
+ <path d="M1337 700C1358 682 1384 703 1398 726C1413 751 1413 778 1402 799C1396 806 1388 812 1381 812C1367 785 1352 771 1329 776C1325 741 1326 714 1337 700Z" fill="#f9df84" stroke="#b89238" stroke-width="1.5"/>
+ <path d="M1333 783C1345 774 1364 788 1372 803C1382 821 1380 843 1365 853C1352 843 1341 828 1338 813C1333 805 1328 791 1333 783Z" fill="#8cab61" stroke="#416539" stroke-width="2.5"/>
+ <path d="M1343 794Q1364 797 1367 818Q1353 811 1343 794Z" fill="#d3dda7" stroke="#5d7e43" stroke-width="1.3"/>
+ <path d="M1367 818Q1361 835 1366 846" fill="none" stroke="#416539" stroke-width="3" stroke-linecap="round"/>
+ <text x="1461" y="714">Endosperm</text><text x="1461" y="744">(3n)</text><path class="leader" d="M1451 721L1393 744"/>
+ <text x="1454" y="817">Embryo</text><text x="1454" y="847">(2n)</text><path class="leader" d="M1445 823L1372 819"/>
+ <text class="head" x="1368" y="917" text-anchor="middle">Mature kernel</text>
+</g>
+<g id="fusion-explanations">
+ <path d="M377 693H791" stroke="#dab660" stroke-width="4"/>
+ <text class="head" x="377" y="728">Endosperm (3n)</text>
+ <text class="small" x="377" y="766"><tspan x="377">The endosperm (triploid) results</tspan><tspan x="377" dy="29">from the fusion of two haploid</tspan><tspan x="377" dy="29">maternal nuclei and one haploid</tspan><tspan x="377" dy="29">paternal nucleus.</tspan></text>
+ <path d="M828 693H1241" stroke="#7e9d64" stroke-width="4"/>
+ <text class="head" x="828" y="728">Embryo (2n)</text>
+ <text class="small" x="828" y="766"><tspan x="828">The embryo (diploid) results</tspan><tspan x="828" dy="29">from the fusion of one</tspan><tspan x="828" dy="29">haploid maternal nucleus</tspan><tspan x="828" dy="29">and one haploid paternal nucleus.</tspan></text>
+</g>
+<g id="cycle-return">
+ <path class="return" d="M1292 850C1251 882 1254 958 1199 958H260C180 958 168 915 168 865"/>
+ <rect x="622" y="936" width="299" height="43" fill="#fff"/>
+ <text class="head" x="772" y="966" text-anchor="middle" fill="#28617a">Growth by mitosis</text>
+</g>
+</svg>

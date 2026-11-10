@@ -73,7 +73,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 1](assets/lect02b-genes_dogma/image_001.png)
+![Architectural genetic-blueprint metaphor](assets/lect02b-genes_dogma/genetic_blueprint.drawn.svg)
 
 === layout: one-panel
 
@@ -86,39 +86,15 @@ color-theme: genetics
 - Friedrich Meischer discovered nucleic acids in 1869.
   - Molecular genetics is the analysis of differences between species through the study of DNA itself.
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![True-breeding purple and white parents yield purple F1 hybrids, then both F2 phenotypes](assets/lect02b-genes_dogma/pea_recap.drawn.svg)
 
-![Slide image 2](assets/lect02b-genes_dogma/image_002.jpg)
+@caption
 
-- 705 purple-flowered
-- plants
-
-- 224 white-flowered
-- plants
-
-- Self- or cross-pollination
-
-- All plants had purple flowers
-
-- Purple
-- flowers
-
-- White
-- flowers
-
-- P Generation
-- (true-breeding
-- parents)
-
-- F1 Generation
-- (hybrids)
-
-- F2 Generation
-
-- Experiment
+Experiment: P generation (true-breeding parents) &#8594; F1 generation (hybrids), all plants had purple flowers. Self- or cross-pollination gives F2: *705 purple-flowered plants* and *224 white-flowered plants*.
 
 === layout: one-panel
 
@@ -130,30 +106,25 @@ color-theme: genetics
   - Chromosomes split and each daughter cell receives an identical set
 - Chromosome number may differ between species but is the same within a particular species
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![F1 YyRr with two equally likely metaphase I orientations and anaphase I segregation](assets/lect02b-genes_dogma/meiosis_assortment_i.drawn.svg)
 
-![Slide image 3](assets/lect02b-genes_dogma/image_003.jpg)
+@caption
 
+All F1 plants produce yellow-round seeds (YyRr). Meiosis: the two orientations at metaphase I are equally likely. LAW OF SEGREGATION: the two alleles for each gene separate.
 
+=== layout: big-image
 
+@image
 
+![Metaphase II and gametes YR, yr, Yr and yR, each one quarter](assets/lect02b-genes_dogma/meiosis_assortment_ii.drawn.svg)
 
+@caption
 
-
-
-
-
-
-
-
-
-
-
-
-Native reconstruction needed: 68 positioned diagram labels.
+LAW OF INDEPENDENT ASSORTMENT: alleles of genes on non-homologous chromosomes assort independently. YR, yr, Yr, and yR each occur with probability 1/4.
 
 === layout: section
 
@@ -192,32 +163,7 @@ Native reconstruction needed: 68 positioned diagram labels.
 
 @bottom
 
-![Slide image 5](assets/lect02b-genes_dogma/image_005.jpg)
-
-- Enzyme 1
-
-- Enzyme 2
-
-- Enzyme 3
-
-- D
-
-- C
-
-- B
-
-- A
-
-- Reaction 1
-
-- Reaction 3
-
-- Reaction 2
-
-- Starting
-- molecule
-
-- Product
+![A to B to C to D, catalyzed by enzymes 1, 2, and 3](assets/lect02b-genes_dogma/metabolic_abcd.drawn.svg)
 
 === layout: one-panel
 
@@ -229,28 +175,15 @@ Native reconstruction needed: 68 positioned diagram labels.
   - Using crosses, they identified three classes of arginine-deficient mutants, each lacking a different enzyme necessary for synthesizing arginine
 - They developed a one gene-one enzyme hypothesis, which states that each gene dictates production of a specific enzyme
 
-=== layout: stacked-panels
+=== layout: big-image
 
+@image
 
-@top
+![Wild-type growth and mutant no growth on minimal medium](assets/lect02b-genes_dogma/neurospora_growth.drawn.svg)
 
-- X-rays
+@caption
 
-@bottom
-
-![Slide image 6](assets/lect02b-genes_dogma/image_006.jpg)
-
-- Minimal medium
-
-- No growth\:Mutant cellscannot growand divide
-
-- Growth\:Wild-typecells growingand dividing
-
-- EXPERIMENT
-
-
-
-
+EXPERIMENT: X-rays. Minimal medium. Growth: wild-type cells growing and dividing. No growth: mutant cells cannot grow and divide.
 
 === layout: one-panel
 
@@ -363,7 +296,7 @@ Native reconstruction needed: 37 positioned diagram labels.
 
 @question
 
-![Slide image 9](assets/lect02b-genes_dogma/image_009.emf)
+![A to B to C; enzyme A catalyzes the first step and enzyme B the second](assets/lect02b-genes_dogma/metabolic_abc.drawn.svg)
 
 The figure above shows a simple metabolic pathway. According to Beadle and Tatum's hypothesis, how many genes are necessary for this pathway?
 
@@ -380,7 +313,7 @@ Answer\: B
 
 @question
 
-![Slide image 9](assets/lect02b-genes_dogma/image_009.emf)
+![A to B to C; enzyme A catalyzes the first step and enzyme B the second](assets/lect02b-genes_dogma/metabolic_abc.drawn.svg)
 
 Product C is required for growth.
 
@@ -399,7 +332,7 @@ Answer\: D
 
 @question
 
-![Slide image 9](assets/lect02b-genes_dogma/image_009.emf)
+![A to B to C; enzyme A catalyzes the first step and enzyme B the second](assets/lect02b-genes_dogma/metabolic_abc.drawn.svg)
 
 Product C is required for growth.
 
@@ -470,40 +403,15 @@ Answer\: D
 
 # The Genetic Code From RNA to Protein
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![DNA template, mRNA codons, and Trp-Phe-Gly-Ser protein](assets/lect02b-genes_dogma/dna_rna_protein.drawn.svg)
 
-![Slide image 10](assets/lect02b-genes_dogma/image_010.jpg)
+@caption
 
-
-- DNA
-- molecule
-
-
-- Gene 1
-
-- Gene 2
-
-- Gene 3
-
-- DNA
-- template
-- strand
-
-
-- TRANSCRIPTION
-
-- TRANSLATION
-
-- mRNA
-
-- Protein
-
-- Codon
-
-- Amino acid
+DNA molecule: genes 1, 2, and 3. Transcription uses the DNA template strand; translation reads mRNA codons to produce amino acids in a protein.
 
 === layout: one-panel
 
@@ -563,42 +471,46 @@ Answer\: D
 
 # Mutation
 
+=== layout: big-image
+
+@image
+
+![The M1V mutant in the PAH gene, codons 1 through 7](assets/lect02b-genes_dogma/pah_m1v.drawn.svg)
+
+@caption
+
+Mutations can lead to altered proteins. The M1V mutant in the PAH gene: mutation of A/T to G/C at codon 1 changes the initiation codon. No PAH polypeptide is produced because tRNA^Val^ cannot be used to initiate polypeptide synthesis.
+
+=== layout: big-image
+
+@image
+
+![The R408W mutant in the PAH gene, with DNA, mRNA, tRNA anticodons and polypeptide](assets/lect02b-genes_dogma/pah_r408w.drawn.svg)
+
+@caption
+
+The R408W mutant in the PAH gene: mutation of C/G to T/A at codon 408. Mutant codon in PAH mRNA; mutant amino acid in PAH polypeptide.
+
+=== layout: big-image
+
+@image
+
+![Template DNA CTT versus CAT gives mRNA GAA versus GUA and Glu versus Val](assets/lect02b-genes_dogma/hemoglobin_point_mutation.drawn.svg)
+
+@caption
+
+The molecular basis of sickle-cell disease: a point mutation.
+
 === layout: two-panels
 
-# Mutations can lead toaltered proteins
 
 @left
 
-![Slide image 12](assets/lect02b-genes_dogma/image_012.jpg)
-
-- The M1V mutant in the PAH gene.
+![Schematic normal and clumped hemoglobin tetramers](assets/lect02b-genes_dogma/hemoglobin_assembly.drawn.svg)
 
 @right
 
-![Slide image 13](assets/lect02b-genes_dogma/image_013.jpg)
-
-- The R408W mutant in the PAH gene.
-
-=== layout: one-panel
-
-
-@body
-
-
-![Slide image 14](assets/lect02b-genes_dogma/image_014.jpg)
-
-Native reconstruction needed: 38 positioned diagram labels.
-
-=== layout: two-panels
-
-
-@left
-
-![Slide image 15](assets/lect02b-genes_dogma/image_015.png)
-
-@right
-
-![Slide image 16](assets/lect02b-genes_dogma/image_016.png)
+![Retained molecular surface with mutation callout](assets/lect02b-genes_dogma/image_016.png)
 
 === layout: one-panel
 
@@ -607,40 +519,55 @@ Native reconstruction needed: 38 positioned diagram labels.
 
 ![Slide image 17](assets/lect02b-genes_dogma/image_017.jpg)
 
-=== layout: one-panel
+=== layout: big-image
 
+@image
 
-@body
+![DNA-to-product analogy: normal](assets/lect02b-genes_dogma/analogy_normal.drawn.svg)
 
-![Slide image 18](assets/lect02b-genes_dogma/image_018.png)
+@caption
 
-=== layout: one-panel
+Suppose there is a strand of DNA that codes for a chair-shaped protein.
 
+=== layout: big-image
 
-@body
+@image
 
-![Slide image 19](assets/lect02b-genes_dogma/image_019.png)
+![DNA-to-product analogy: silent](assets/lect02b-genes_dogma/analogy_silent.drawn.svg)
 
-=== layout: one-panel
+@caption
 
+If that DNA got a "silent" mutation, it would not change the protein at all.
 
-@body
+=== layout: big-image
 
-![Slide image 20](assets/lect02b-genes_dogma/image_020.png)
+@image
 
-=== layout: one-panel
+![DNA-to-product analogy: missense](assets/lect02b-genes_dogma/analogy_missense.drawn.svg)
 
+@caption
 
-@body
+However, if a "missense" mutation occurs, a single portion of the protein's structure would change (which can massively alter the function).
 
-![Slide image 21](assets/lect02b-genes_dogma/image_021.png)
+=== layout: big-image
 
-=== layout: one-panel
+@image
 
+![DNA-to-product analogy: nonsense](assets/lect02b-genes_dogma/analogy_nonsense.drawn.svg)
 
-@body
+@caption
 
-![Slide image 22](assets/lect02b-genes_dogma/image_022.png)
+In the case of a "nonsense" (or chain-termination) mutation, the translation into a chair would be stopped early, leading to an incomplete structure.
+
+=== layout: big-image
+
+@image
+
+![DNA-to-product analogy: frameshift](assets/lect02b-genes_dogma/analogy_frameshift.drawn.svg)
+
+@caption
+
+But a "frameshift" mutation turns the rest of the information into a completely different sequence, resulting in the creation of an entirely different protein.
 
 === layout: theend
 

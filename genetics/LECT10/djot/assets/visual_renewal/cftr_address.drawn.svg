@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 800 650" role="img" aria-labelledby="title desc">
+<title id="title">CFTR address: 7q31.2</title>
+<desc id="desc">An original schematic hierarchy, not a complete band map. Chromosome 7 contains the q arm; region 3 contains band 1 and its subband 2, the CFTR example.</desc>
+<rect width="800" height="650" fill="white"/>
+<g id="chromosome-7" fill="#E5E9EC" stroke="#475762" stroke-width="3">
+<path d="M170 70 Q145 70 145 95 V225 Q145 245 168 253 Q145 263 145 283 V555 Q145 580 170 580 H190 Q215 580 215 555 V283 Q215 263 192 253 Q215 245 215 225 V95 Q215 70 190 70 Z"/>
+<ellipse cx="180" cy="253" rx="22" ry="10" fill="#475762"/>
+</g>
+<g font-family="Arial" fill="#222" font-size="27">
+<text x="180" y="38" text-anchor="middle">Chromosome 7</text>
+<text x="95" y="155" text-anchor="end">p</text>
+<text x="95" y="390" text-anchor="end">q</text>
+<text x="270" y="260">Centromere</text>
+<text x="490" y="90" text-anchor="middle" font-size="36">CFTR: 7q31.2</text>
+</g>
+<path d="M215 253 H255" stroke="#475762" stroke-width="2"/>
+<g id="region-3">
+<rect x="130" y="420" width="100" height="160" fill="#DFF2D9" fill-opacity="0.8" stroke="#007A00" stroke-width="3"/>
+<path d="M230 420 L335 330 M230 580 L335 570" stroke="#007A00" stroke-width="2"/>
+<rect x="335" y="330" width="330" height="240" fill="#F2F8EF" stroke="#007A00" stroke-width="3"/>
+<text x="500" y="370" text-anchor="middle" font-family="Arial" font-size="28" fill="#007A00">Region 3</text>
+</g>
+<g id="band-1">
+<rect x="365" y="395" width="270" height="145" fill="#E3EDF9" stroke="#076DAD" stroke-width="3"/>
+<text x="500" y="435" text-anchor="middle" font-family="Arial" font-size="28" fill="#076DAD">Band 1</text>
+</g>
+<g id="subband-2">
+<rect x="395" y="458" width="210" height="60" fill="#F2E4F2" stroke="#A1467E" stroke-width="3"/>
+<text x="500" y="497" text-anchor="middle" font-family="Arial" font-size="27" fill="#823A70">Subband 2</text>
+</g>
+<text x="400" y="630" text-anchor="middle" font-family="Arial" font-size="23" fill="#444">Address hierarchy - schematic positions, not physical distances</text>
+</svg>

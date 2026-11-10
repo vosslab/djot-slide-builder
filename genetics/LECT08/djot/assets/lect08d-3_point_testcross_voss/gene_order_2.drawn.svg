@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-labelledby="title desc">
+<title id="title">Place A and B first.</title>
+<desc id="desc">Original schematic gene-placement diagram. Positions show the current candidates; letters and colors identify genes. Place A and B first.</desc>
+<g id="chromosome"><rect x="40" y="95" width="920" height="44" rx="12" fill="#F0F1F3" stroke="#67717D" stroke-width="2"/></g>
+<g id="gene-A-0"><rect x="347" y="88" width="46" height="58" rx="4" fill="#C9211E"/><text x="370" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="white">A</text></g>
+<g id="gene-B-1"><rect x="827" y="88" width="46" height="58" rx="4" fill="#506C16"/><text x="850" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="white">B</text></g>
+</svg>

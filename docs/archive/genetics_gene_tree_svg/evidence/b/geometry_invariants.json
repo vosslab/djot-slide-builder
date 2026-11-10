@@ -1,0 +1,155 @@
+{
+  "branch_points": {
+    "connected_tips": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "claims": {
+      "AB": [
+        "A",
+        "B"
+      ],
+      "CD": [
+        "C",
+        "D"
+      ],
+      "ABCD": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  },
+  "mrca": {
+    "connected_tips": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "claims": {
+      "AB": [
+        "A",
+        "B"
+      ],
+      "CD": [
+        "C",
+        "D"
+      ],
+      "ABCD": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  },
+  "form1": {
+    "connected_tips": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "claims": {
+      "AB": [
+        "A",
+        "B"
+      ],
+      "CD": [
+        "C",
+        "D"
+      ],
+      "ABCD": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  },
+  "form2": {
+    "connected_tips": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "claims": {
+      "AB": [
+        "A",
+        "B"
+      ],
+      "CD": [
+        "C",
+        "D"
+      ],
+      "ABCD": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  },
+  "form3": {
+    "connected_tips": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "claims": {
+      "AB": [
+        "A",
+        "B"
+      ],
+      "CD": [
+        "C",
+        "D"
+      ],
+      "ABCD": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  },
+  "polytomy": {
+    "connected_tips": [
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "claims": {
+      "PQR": [
+        "P",
+        "Q",
+        "R"
+      ],
+      "ST": [
+        "S",
+        "T"
+      ],
+      "PQRST": [
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+exec(open('_temp/genetics_visual_renewal/m3_phylogenetics/b/make_trials.py').read().split("# Exact qualitative")[0])
+import re,shutil
+A=Path('genetics/LECT12/djot/assets/lect12b-gene_trees')
+for stage in (1,2,3):
+ if stage==1:
+  xy={'A':(60,55),'B':(490,55),'C':(60,340),'D':(490,340),'u':(275,195)};links=[('u',k) for k in 'ABCD']
+ elif stage==2:
+  xy={'A':(55,340),'B':(205,340),'C':(370,340),'D':(520,340),'E':(130,200),'u':(290,65)};links=[('E','A'),('E','B'),('u','E'),('u','C'),('u','D')]
+ else:
+  xy={'A':(40,340),'B':(190,340),'C':(390,340),'D':(540,340),'E':(115,190),'F':(465,190)};links=[('E','A'),('E','B'),('E','F'),('F','C'),('F','D')]
+ body=''
+ for a,b in links:
+  x,y=xy[a];xx,yy=xy[b];body+=path(f'M{x} {y} L{xx} {yy}',BLUE)
+ for label,(x,y) in xy.items():
+  if label=='u':body+=f'<circle cx="{x}" cy="{y}" r="8" fill="{INK}"/>'
+  else:body+=f'<circle cx="{x}" cy="{y}" r="25" fill="white" stroke="{INK}" stroke-width="2"/>'+t(x-9,y+10,label,29)
+ body+=t(20,415,'Unrooted joins; layout lengths are schematic.',23)
+ name=f'phy_b_nj_stage_{stage}';svg(name,600,450,body,'Source neighbor joining topology stage'+str(stage)+'. Retains A B C D and created nodes E F as applicable. Diagram lengths schematic; matrix gives distances.');shutil.copyfile(P/(name+'.drawn.svg'),A/(name+'.drawn.svg'))
+matrices=['''| | A | B | C | D |
+|---|---|---|---|---|
+| A | 0 | 7 | 8 | 11 |
+| B | 7 | 0 | 5 | 8 |
+| C | 8 | 5 | 0 | 5 |
+| D | 11 | 8 | 5 | 0 |
+''','''| | C | D | E |
+|---|---|---|---|
+| C | 0 | 5 | 3 |
+| D | 5 | 0 | 6 |
+| E | 3 | 6 | 0 |
+''','''| | E | F |
+|---|---|---|
+| E | 0 | 2 |
+| F | 2 | 0 |
+''']
+notes=['Choose A and B using the adjusted NJ score. AB and CD tie; retain the source AB choice.','After joining A and B as E, retain the source choice of C and D for the next join.','E joins F at distance 2. The finished tree is unrooted.']
+blocks=[]
+for i,(mat,note) in enumerate(zip(matrices,notes),1):blocks.append(f'=== layout: two-panels\n\n# Neighbor-Joining Distance Method: Step {i}\n\n@left\n\n'+mat+'\n- '+note+f'\n\n@right\n\n![Unrooted neighbor-joining stage{i}](assets/lect12b-gene_trees/phy_b_nj_stage_{i}.drawn.svg)\n\n')
+p=Path('genetics/LECT12/djot/lect12b_gene_trees_part_01.djot');parts=re.split(r'(?=^=== layout:)',p.read_text(),flags=re.M)
+for i,b in enumerate(parts):
+ if 'image_024.png' in b:
+  prose=b.split('@right')[1].replace('Iteratively groups closest pair of sequences, recalculates distances.','Iteratively joins a pair using an adjusted NJ score, then recalculates distances.')
+  parts[i]='=== layout: one-panel\n\n# Neighbor-Joining Distance Method\n\n@body\n'+prose+'\n'+''.join(blocks)
+p.write_text(''.join(parts))
+P.joinpath('NJ_DECISION.md').write_text('''# NJ label correction
+
+Source image024 values fully preserved in3native matrices and3unrooted SVG states. Source Min(Dij) is replaced by adjusted NJ score; AB is a legitimate minimum tie with CD, although raw AB7 is not smallest. Row sums A26/B20/C18/D24 yield QAB=QCD=-32; all other off-diagonal Q=-28. Reduced EC3, ED6, CD5 and final EF2 match source exactly. Independent checker: nj_check.json; parent independently corroborated.
+
+Primary source: Saitou and Nei1987, The neighbor-joining method: a new method for reconstructing phylogenetic trees, DOI10.1093/oxfordjournals.molbev.a040454; https://pubmed.ncbi.nlm.nih.gov/3447015/ (abstract explicitly minimizes total branch length, not raw pair distance). Gascuel and Steel2006, Neighbor-Joining Revealed, https://academic.oup.com/mbe/article-pdf/23/11/1997/4146478/msl072.pdf (indexed text states the Q criterion; direct PDF retrieval failed). No new branch lengths asserted in art. Parent authorized bounded clear-error terminology correction after arithmetic proof.
+''')

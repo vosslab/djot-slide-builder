@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="organic-title organic-desc">
+<title id="organic-title">Drosophila &#8212; organic form study</title>
+<desc id="organic-desc">Original lateral-oblique generalized adult fruit fly. Red compound eye, tan bristled head and thorax, dark transverse abdominal bands, six articulated legs and two translucent wings. One visible haltere. Selective anatomy, unmeasured proportions and simplified wing venation; not a sex or species identification plate.</desc>
+<rect width="1200" height="800" fill="white"/>
+<g id="organic-fly" stroke="#213547" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<g id="organic-far-legs" fill="none" stroke="#9a8972" stroke-width="5">
+<path id="organic-far-front-leg" d="M468 446 Q402 459 362 508 L321 543 L267 564 L248 561"/>
+<path id="organic-far-middle-leg" d="M527 461 L546 525 L632 558 L674 574 L699 571"/>
+<path id="organic-far-hind-leg" d="M576 455 L674 492 L755 535 L789 547 L809 544"/>
+</g>
+<g id="organic-abdomen">
+<path d="M602 378 C694 359 783 406 850 450 C889 476 919 492 946 493 C931 520 893 534 844 539 C751 546 659 506 608 458 C589 440 587 399 602 378Z" fill="#bea277"/>
+<path d="M618 381 Q721 370 829 444 Q883 480 932 494 C837 466 786 417 710 413 Q650 409 617 420Z" fill="#e2c999" stroke="none"/>
+<path d="M610 443 C711 497 847 545 939 498 Q910 535 844 539 C749 548 651 501 608 458Z" fill="#8c7358" stroke="none"/>
+<g fill="#5e554a" stroke-width="1.3">
+<path d="M663 378 Q684 430 667 500 L688 510 Q704 444 686 382Z"/>
+<path d="M723 395 Q748 453 737 527 L760 531 Q767 463 747 405Z"/>
+<path d="M785 425 Q807 472 803 537 L826 539 Q828 482 806 440Z"/>
+<path d="M846 451 Q863 488 859 538 L881 534 Q886 501 871 466Z"/>
+<path d="M908 486 Q921 510 914 521 Q938 510 946 493Z"/>
+</g>
+<g fill="none" stroke-width="1.3"><path d="M691 386 L690 369 M720 395 L723 377 M751 409 L759 393 M783 425 L794 412 M815 445 L828 432 M848 465 L862 453 M686 508 L683 524 M719 522 L718 539 M774 534 L779 550 M828 539 L833 555"/></g>
+</g>
+<g id="organic-far-wing" fill="#edf8fc" fill-opacity="0.87" stroke="#7daaba" stroke-width="2">
+<path d="M559 348 C633 269 777 186 925 191 C971 192 1008 206 1008 229 C1000 265 932 288 867 302 C760 324 656 344 559 348Z"/>
+<g fill="none" stroke-width="1.4"><path d="M571 343 Q750 219 983 220 M584 344 Q756 277 983 238 M641 321 L647 299 M744 294 L760 256 M848 277 L866 232"/></g>
+</g>
+<g id="organic-thorax">
+<path d="M407 350 C437 309 487 302 528 319 C579 332 611 370 622 413 C630 441 615 471 590 479 C545 489 481 465 437 434 C410 415 390 380 407 350Z" fill="#b49a74"/>
+<path d="M408 353 Q453 308 511 326 C471 338 447 361 440 398 Q415 392 408 353Z" fill="#e5d3b1" stroke="none"/>
+<path d="M462 418 Q541 445 612 406 Q633 446 590 479 Q522 486 462 446Z" fill="#8e785d" stroke="none"/>
+<path d="M546 368 Q569 359 594 369 Q616 382 625 401 Q604 421 580 420Z" fill="#d4bd96" stroke-width="1.6"/>
+<path d="M434 405 Q481 420 510 456 M459 351 Q504 339 546 368 M486 431 L496 400 M532 438 L543 408 M570 449 L577 429" fill="none" stroke-width="1.6"/>
+<g id="organic-thoracic-bristles" fill="none" stroke-width="1.6"><path d="M426 337 Q414 313 401 308 M449 324 L442 296 M479 319 L478 287 M508 324 L516 294 M533 333 L548 306 M563 348 L588 322 M423 381 L398 363 M450 395 L430 373 M487 377 L472 353 M522 383 L514 355 M549 407 L555 383 M589 456 L612 466"/></g>
+</g>
+<g id="organic-visible-haltere" fill="#d6be95" stroke-width="1.6"><path d="M614 437 Q639 420 650 423" fill="none"/><ellipse cx="655" cy="424" rx="13" ry="9" transform="rotate(18 655 424)"/></g>
+<g id="organic-near-wing" fill="#edf8fc" fill-opacity="0.78" stroke="#7b9ca9" stroke-width="2.5">
+<path d="M556 375 C625 335 748 310 903 311 C989 312 1049 335 1050 363 C1048 395 991 411 924 408 C794 401 676 395 556 375Z"/>
+<g fill="none" stroke-width="1.6"><path d="M568 375 Q794 318 1034 350 M569 375 Q811 347 1043 367 M573 378 Q778 378 1009 398 M614 384 Q749 400 924 408 M670 355 L676 367 M802 341 L814 357 M817 357 L815 380 M701 365 L704 384"/></g>
+<path d="M651 352 Q798 319 948 324" stroke="white" stroke-width="4" fill="none" opacity="0.8"/>
+</g>
+<g id="organic-near-legs" fill="#c7aa7f" stroke-width="1.8">
+<path id="organic-near-front-leg" d="M454 434 C434 462 420 491 393 510 L357 545 L337 601 L311 622 L289 626 L311 618 L332 597 L349 540 L383 505 L437 428Z"/>
+<path id="organic-near-middle-leg" d="M503 458 Q493 497 479 524 L480 578 L451 632 L425 646 L404 645 L426 641 L447 625 L473 575 L469 520 L487 450Z"/>
+<path id="organic-near-hind-leg" d="M570 466 L613 510 L616 566 L674 619 L708 631 L730 627 L709 636 L669 627 L608 572 L601 516 L555 472Z"/>
+<g fill="none" stroke-width="1.3"><path d="M350 554 L356 559 M346 568 L351 572 M342 584 L347 587 M466 595 L471 599 M458 611 L463 614 M629 588 L625 592 M641 599 L637 604 M656 613 L651 617"/></g>
+</g>
+<g id="organic-head">
+<path d="M304 331 C325 301 368 298 398 322 C421 340 427 385 412 414 C397 441 359 443 331 427 C304 412 286 363 304 331Z" fill="#c1a477"/>
+<path d="M306 337 Q329 302 370 311 Q391 319 401 337 C365 323 334 337 319 365Z" fill="#e8d5ac" stroke="none"/>
+<path d="M381 323 Q414 325 420 356 L425 382 Q414 399 404 408 Q411 349 381 323Z" fill="#9b7c59" stroke="none"/>
+<path id="organic-compound-eye" d="M311 345 C324 326 350 322 371 338 C395 356 402 394 385 413 C370 430 345 422 328 404 C311 388 300 365 311 345Z" fill="#bc4438"/>
+<path d="M312 348 C327 330 351 329 368 340 Q339 340 326 361 L322 385 Q306 365 312 348Z" fill="#e77965" stroke="none"/>
+<path d="M380 351 Q400 392 383 412 Q367 427 345 412 Q383 414 380 351Z" fill="#8d302c" stroke="none"/>
+<g id="organic-eye-facet-suggestion" fill="#932f2a" stroke="none" opacity="0.5">
+<circle cx="335" cy="354" r="2"/><circle cx="349" cy="352" r="2"/><circle cx="363" cy="357" r="2"/><circle cx="327" cy="366" r="2"/><circle cx="342" cy="367" r="2"/><circle cx="357" cy="370" r="2"/><circle cx="373" cy="373" r="2"/><circle cx="332" cy="383" r="2"/><circle cx="346" cy="383" r="2"/><circle cx="362" cy="388" r="2"/><circle cx="376" cy="391" r="2"/><circle cx="343" cy="400" r="2"/><circle cx="359" cy="405" r="2"/>
+</g>
+<g id="organic-mouthparts" fill="#b69b70" stroke-width="1.6"><path d="M312 397 Q297 404 299 420 L307 434 Q319 441 327 429 L319 410Z"/><path d="M299 419 Q288 423 294 432 Q302 440 310 433"/></g>
+<g id="organic-antennae-aristae" fill="#c4a77a" stroke-width="1.6"><ellipse cx="301" cy="336" rx="10" ry="17" transform="rotate(-34 301 336)"/><ellipse cx="322" cy="319" rx="7" ry="12" transform="rotate(-29 322 319)"/><g fill="none"><path d="M296 326 Q272 310 254 287 M319 310 Q311 286 297 271 M280 313 L266 313 M279 310 L278 297 M266 300 L253 301 M266 299 L265 287 M308 290 L297 287 M308 291 L316 282"/></g></g>
+<g fill="none" stroke-width="1.6"><path d="M338 311 L334 282 M361 310 L369 282 M391 324 L411 305 M406 340 L428 326 M334 425 L332 444 M363 438 L368 456"/></g>
+</g>
+</g>
+<text x="600" y="738" fill="#213547" font-family="Arial, sans-serif" font-size="29" font-style="italic" text-anchor="middle">Drosophila melanogaster</text>
+<text x="600" y="773" fill="#526879" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">Organic forms &#183; generalized adult</text>
+</svg>

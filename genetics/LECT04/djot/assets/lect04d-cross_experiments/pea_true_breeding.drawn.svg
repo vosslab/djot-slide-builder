@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="760" viewBox="0 0 650 760" role="img" aria-labelledby="pea_true_breeding-title pea_true_breeding-desc">
+	<title id="pea_true_breeding-title">True-breeding purple peas</title>
+	<desc id="pea_true_breeding-desc">AA purple parents produce AA purple offspring through P, F1 and F2. Source slide: lect04d-cross_experiments.djot, True Breeding. Pea plants are simplified, not measured specimens. Each icon identifies a phenotype, not a sample size.</desc>
+	<defs>
+		<g id="pea_true_breeding-purple">
+			<path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<g transform="translate(0 0) scale(1)">
+				<path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#C4A1E4" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#9F72C5" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#774A9B" stroke="#59356B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M0 10 Q7 27 0 49" fill="none" stroke="#59356B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</g>
+		</g>
+		<g id="pea_true_breeding-white">
+			<path d="M0 210 C-8 153 12 95 0 55" fill="none" stroke="#315C3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 160 C-65 169 -74 111 -68 105 C-25 106 -3 127 0 160 Z" fill="#7EAA73" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M1 128 C48 147 73 112 68 98 C28 91 8 106 1 128 Z" fill="#9CBE83" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M0 184 C37 165 69 174 63 194 C54 216 34 199 49 191" fill="none" stroke="#315C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<g transform="translate(0 0) scale(1)">
+				<path d="M0 0 C-56 -5 -80 -70 -42 -91 C-20 -105 -4 -91 0 -83 C18 -105 48 -102 61 -79 C85 -37 35 -5 0 0 Z" fill="#FAFAF1" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-5 -8 C-45 -42 -83 -32 -73 -1 C-63 27 -28 32 1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M5 -8 C45 -42 83 -32 73 -1 C63 27 28 32 -1 16 Z" fill="#E8EADF" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-34 6 Q0 -5 34 6 Q28 54 0 57 Q-28 54 -34 6 Z" fill="#CCD3C2" stroke="#596478" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M0 10 Q7 27 0 49" fill="none" stroke="#596478" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</g>
+		</g>
+	</defs>
+	<g font-family="Liberation Sans, sans-serif">
+		<g id="pea_true_breeding-P">
+			<text x="40" y="135" font-size="39" fill="#253342" text-anchor="middle" font-style="normal">P</text>
+			<use href="#pea_true_breeding-purple" transform="translate(245 95) scale(0.46)" />
+			<text x="245" y="230" font-size="38" fill="#253342" text-anchor="middle" font-style="italic">AA</text>
+			<use href="#pea_true_breeding-purple" transform="translate(515 95) scale(0.46)" />
+			<text x="515" y="230" font-size="38" fill="#253342" text-anchor="middle" font-style="italic">AA</text>
+			<text x="380" y="130" font-size="48" fill="#253342" text-anchor="middle" font-style="normal">&#215;</text>
+		</g>
+		<path d="M380 160 V255 M245 255 H515" fill="none" stroke="#253342" stroke-width="3.5" />
+		<path d="M245 255 L245 280" fill="none" stroke="#253342" stroke-width="3.5" />
+		<polygon points="245,280 237,266 253,266" fill="#253342" />
+		<path d="M515 255 L515 280" fill="none" stroke="#253342" stroke-width="3.5" />
+		<polygon points="515,280 507,266 523,266" fill="#253342" />
+		<g id="pea_true_breeding-F1">
+			<text x="40" y="380" font-size="39" fill="#253342" text-anchor="middle" font-style="normal">F1</text>
+			<use href="#pea_true_breeding-purple" transform="translate(245 340) scale(0.46)" />
+			<text x="245" y="475" font-size="38" fill="#253342" text-anchor="middle" font-style="italic">AA</text>
+			<use href="#pea_true_breeding-purple" transform="translate(515 340) scale(0.46)" />
+			<text x="515" y="475" font-size="38" fill="#253342" text-anchor="middle" font-style="italic">AA</text>
+			<text x="380" y="375" font-size="48" fill="#253342" text-anchor="middle" font-style="normal">&#215;</text>
+		</g>
+		<path d="M380 405 V500 M245 500 H515" fill="none" stroke="#253342" stroke-width="3.5" />
+		<path d="M245 500 L245 525" fill="none" stroke="#253342" stroke-width="3.5" />
+		<polygon points="245,525 237,511 253,511" fill="#253342" />
+		<path d="M515 500 L515 525" fill="none" stroke="#253342" stroke-width="3.5" />
+		<polygon points="515,525 507,511 523,511" fill="#253342" />
+		<g id="pea_true_breeding-F2">
+			<text x="40" y="625" font-size="39" fill="#253342" text-anchor="middle" font-style="normal">F2</text>
+			<use href="#pea_true_breeding-purple" transform="translate(245 585) scale(0.46)" />
+			<text x="245" y="720" font-size="38" fill="#253342" text-anchor="middle" font-style="italic">AA</text>
+			<use href="#pea_true_breeding-purple" transform="translate(515 585) scale(0.46)" />
+			<text x="515" y="720" font-size="38" fill="#253342" text-anchor="middle" font-style="italic">AA</text>
+		</g>
+	</g>
+</svg>

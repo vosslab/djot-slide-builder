@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1700" height="900" viewBox="0 0 1700 900" role="img" aria-labelledby="wells-title wells-desc">
+<title id="wells-title">Bioremediation wells and microbial uranium transformations</title>
+<desc id="wells-desc">Schematic, not to scale. Injection flows down the right well; extraction rises in the left well and groundwater flows left. Two sampled subsurface locations connect to a bacterium reducing U(VI) to U(IV) while organic carbon becomes carbon dioxide, and an exposed versus coated U(IV) comparison. Oxygen, nitrate and iron relationships surround exposed U(IV). Low permeability coatings stop incoming arrows outside the protected U(IV) core. Particle counts are illustrative.</desc>
+<metadata>Original editable geometry. Source of labels and relationships: image_009.png, original lect06c-set_4_TP-chapter_12-16_material.odp slide 10. Current native slide title stays outside this asset.</metadata>
+<defs>
+ <linearGradient id="well-metal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9daeb3"/><stop offset=".28" stop-color="#f5f8f6"/><stop offset=".64" stop-color="#e0e8e4"/><stop offset="1" stop-color="#81979d"/></linearGradient>
+ <linearGradient id="cell-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffdc90"/><stop offset=".48" stop-color="#efb25e"/><stop offset="1" stop-color="#ce783c"/></linearGradient>
+ <marker id="blue-arrow" markerWidth="19" markerHeight="16" refX="17" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 18 8 0 16Z" fill="#287b9d"/></marker>
+ <marker id="ink-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 9 5 0 10Z" fill="#3d6279"/></marker>
+ <g id="tree"><path d="M0 0V-56" stroke="#725e3d" stroke-width="7"/><path d="M0 -93C-31 -89 -34 -65 -21 -57C-40 -38 -18 -21 0 -29C23 -19 39 -38 24 -55C36 -74 19 -95 0 -93Z" fill="#4d7851" stroke="#385b41" stroke-width="2"/><path d="M-11 -74Q-23 -62 -16 -52M-7 -42L4 -59 13 -66" fill="none" stroke="#84a875" stroke-width="4" stroke-linecap="round"/></g>
+ <g id="well"><path d="M-13 0V408Q0 420 13 408V0" fill="url(#well-metal)" stroke="#3e5964" stroke-width="2.8"/><path d="M-11 5V35Q0 42 11 35V5" fill="#aebfc7" stroke="#526879" stroke-width="1.8"/><ellipse rx="13" ry="5" fill="#cdd9dd" stroke="#3e5964" stroke-width="2.8"/><ellipse rx="7" ry="2.5" fill="#4e666c"/><path d="M-7 51V389" stroke="#ffffff" stroke-width="2.5" opacity=".75"/></g>
+ <g id="particle"><circle r="6.5" fill="#b56853" stroke="#824936" stroke-width="1.5"/><path d="M-3 -3Q0 -5 3 -2" fill="none" stroke="#eab9a0" stroke-width="1.5"/></g>
+</defs>
+<rect width="1700" height="900" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#213547" font-size="27" stroke-linejoin="round" stroke-linecap="round">
+<g id="ground-cutaway">
+ <!-- One shallow oblique depth vector joins ground, factory and rock planes. -->
+ <path d="M30 298 154 245 592 322 468 377Z" fill="#aac38a" stroke="#53694d" stroke-width="3"/>
+ <path d="M30 298 468 377V790L30 711Z" fill="#dab58d" stroke="#7e6550" stroke-width="3.5"/>
+ <path d="M468 377 592 322V735L468 790Z" fill="#bb916c" stroke="#7e6550" stroke-width="3.5"/>
+ <path d="M30 449 468 529V727L30 647Z" fill="#c9d9ce"/>
+ <path d="M468 529 592 474V672L468 727Z" fill="#a8c0b9"/>
+ <path d="M30 647 468 727V790L30 711Z" fill="#a98260"/>
+ <path d="M468 727 592 672V735L468 790Z" fill="#93704e"/>
+ <path d="M30 449 468 529 592 474" fill="none" stroke="#568c9a" stroke-width="3" stroke-dasharray="10 8"/>
+ <path d="M31 340 467 420M31 377 467 457M31 682 467 761M469 420 590 367M469 457 590 404" stroke="#b78f68" stroke-width="2" fill="none"/>
+ <path d="M30 298 468 377 592 322M468 377V790" fill="none" stroke="#665b46" stroke-width="3.5"/>
+ <g id="surface-plant">
+  <path d="M250 252 288 233 390 252 352 271Z" fill="#dbe4e6" stroke="#526879" stroke-width="2.5"/>
+  <path d="M250 252 352 271V332L250 313Z" fill="#b8c6cb" stroke="#526879" stroke-width="2.5"/>
+  <path d="M352 271 390 252V313L352 332Z" fill="#899fa9" stroke="#526879" stroke-width="2.5"/>
+  <path d="M293 242 297 183H322L326 249Z" fill="url(#well-metal)" stroke="#526879" stroke-width="2.5"/>
+  <ellipse cx="309.5" cy="183" rx="12.5" ry="4" fill="#627f88" stroke="#526879" stroke-width="2"/>
+  <path d="M304 164Q294 151 307 138M316 163Q329 149 317 133" stroke="#aeb8b0" stroke-width="2" fill="none"/>
+  <path d="M264 271 287 275V290L264 286ZM297 277 320 281V296L297 292ZM330 283 343 286V301L330 298Z" fill="#edf5ee" stroke="#526879" stroke-width="1.5"/>
+  <path d="M363 295 379 288V318L363 325Z" fill="#3d6279"/>
+  <path d="M271 272V288M280 274V289M305 279V294M313 280V295" stroke="#78919a" stroke-width="1"/>
+ </g>
+ <use xlink:href="#tree" transform="translate(86 286) scale(.8)"/>
+ <use xlink:href="#tree" transform="translate(196 280) scale(.95)"/>
+ <g id="surface-rocks" fill="#b59b77" stroke="#816e53" stroke-width="1.8">
+  <path d="M108 302 123 280 143 284 154 306Z"/><path d="M140 304 153 270 173 273 187 311Z"/><path d="M172 310 188 291 207 298 215 317Z"/><path d="M126 302 136 288 151 295 149 309Z"/>
+ </g>
+ <use id="extraction-well" xlink:href="#well" transform="translate(224 331)"/>
+ <use id="injection-well" xlink:href="#well" transform="translate(436 337)"/>
+ <g id="extraction-up" fill="#bc684e" stroke="#84442f" stroke-width="1.3">
+  <path d="M224 412 213 433H220V473H228V433H235Z"/><path d="M224 631 213 652H220V692H228V652H235Z"/>
+ </g>
+ <g id="injection-down" fill="#3487a5" stroke="#20607d" stroke-width="1.3">
+  <path d="M432 418H440V458H447L436 479 425 458H432Z"/><path d="M432 619H440V659H447L436 680 425 659H432Z"/>
+ </g>
+ <text x="35" y="110" font-weight="bold">Extraction Well</text>
+ <path d="M182 121 216 288 222 320" stroke="#526879" stroke-width="2" fill="none"/>
+ <text x="356" y="110" font-weight="bold">Injection Well</text>
+ <path d="M448 121 438 325" stroke="#526879" stroke-width="2" fill="none"/>
+ <path d="M369 585 100 536" stroke="#287b9d" stroke-width="5" marker-end="url(#blue-arrow)"/>
+ <text x="111" y="582" transform="rotate(10 111 582)" font-size="25" fill="#205d74">Groundwater Flow</text>
+ <g fill="#eef6e8" stroke="#4c6972" stroke-width="2.5"><circle cx="510" cy="553" r="12"/><circle cx="510" cy="680" r="12"/></g>
+</g>
+<g id="sample-leaders" fill="none" stroke="#758790" stroke-width="2">
+ <path d="M520 547 624 438M521 559 624 540"/>
+ <path d="M518 689 607 817H1090L1118 697M521 677 607 791H1074L1118 581"/>
+</g>
+<g id="inset-a">
+ <rect x="624" y="154" width="426" height="589" rx="92" fill="#fff7e7" stroke="#526879" stroke-width="2.8"/>
+ <text x="837" y="115" text-anchor="middle" font-size="36" font-weight="bold">(a)</text>
+ <g id="bacterium" transform="translate(0 55)">
+  <path d="M844 258C800 248 770 300 785 345C806 403 800 445 782 493C765 544 789 602 831 608C871 614 889 578 879 540C862 481 874 452 887 402C899 354 903 271 844 258Z" fill="url(#cell-fill)" stroke="#a66336" stroke-width="3.5"/>
+  <path d="M834 276C802 278 796 305 805 337M803 521Q790 565 819 586" fill="none" stroke="#ffdfa0" stroke-width="8"/>
+  <path d="M824 326C847 307 875 334 853 351C825 374 860 391 848 412C829 436 857 454 840 475C819 497 854 516 826 541" fill="none" stroke="#b98043" stroke-width="3" opacity=".65"/>
+ </g>
+ <text x="706" y="294" text-anchor="middle" font-weight="bold">U(VI)</text>
+ <path d="M725 314Q766 402 715 481" fill="none" stroke="#3d6279" stroke-width="5" marker-end="url(#ink-arrow)"/>
+ <text x="692" y="521" text-anchor="middle" font-weight="bold">U(IV)</text>
+ <text x="837" y="202" text-anchor="middle" font-size="25">Organic Carbon</text>
+ <text x="837" y="234" text-anchor="middle" font-size="23">(Acetate, Lactate,</text>
+ <text x="837" y="265" text-anchor="middle" font-size="23">Ethanol)</text>
+ <path d="M950 337Q914 411 958 461" fill="none" stroke="#3d6279" stroke-width="5" marker-end="url(#ink-arrow)"/>
+ <g text-anchor="start"><text x="946.0" y="505">CO</text><text x="980.0" y="512" font-size="19">2</text></g>
+
+<use xlink:href="#particle" transform="translate(765 407)"/>
+<use xlink:href="#particle" transform="translate(755 431)"/>
+<use xlink:href="#particle" transform="translate(772 451)"/>
+<use xlink:href="#particle" transform="translate(753 473)"/>
+<use xlink:href="#particle" transform="translate(769 497)"/>
+<use xlink:href="#particle" transform="translate(753 519)"/>
+<use xlink:href="#particle" transform="translate(745 543)"/>
+<use xlink:href="#particle" transform="translate(768 557)"/>
+<use xlink:href="#particle" transform="translate(732 568)"/>
+<use xlink:href="#particle" transform="translate(752 587)"/>
+<use xlink:href="#particle" transform="translate(777 579)"/>
+<use xlink:href="#particle" transform="translate(722 443)"/>
+<use xlink:href="#particle" transform="translate(732 464)"/>
+</g>
+<g id="inset-b">
+ <rect x="1118" y="154" width="544" height="589" rx="55" fill="#faf8ef" stroke="#526879" stroke-width="2.8"/>
+ <path d="M1118 480H1662" stroke="#899a92" stroke-width="2"/>
+ <text x="1390" y="115" text-anchor="middle" font-size="36" font-weight="bold">(b)</text>
+ <g id="exposed-uiv">
+  <path d="M1297 283Q1327 257 1385 276Q1434 293 1433 344Q1416 382 1358 374Q1300 375 1280 339Z" fill="#d1ddd1" stroke="#91a49a" stroke-width="2"/>
+
+<use xlink:href="#particle" transform="translate(1302 298)"/>
+<use xlink:href="#particle" transform="translate(1324 278)"/>
+<use xlink:href="#particle" transform="translate(1351 278)"/>
+<use xlink:href="#particle" transform="translate(1380 283)"/>
+<use xlink:href="#particle" transform="translate(1405 294)"/>
+<use xlink:href="#particle" transform="translate(1421 320)"/>
+<use xlink:href="#particle" transform="translate(1424 348)"/>
+<use xlink:href="#particle" transform="translate(1406 369)"/>
+<use xlink:href="#particle" transform="translate(1291 322)"/>
+<use xlink:href="#particle" transform="translate(1295 350)"/>
+<use xlink:href="#particle" transform="translate(1312 370)"/>
+<circle cx="1309" cy="395" r="3.3" fill="#7e8776"/>
+<circle cx="1319" cy="417" r="3.3" fill="#7e8776"/>
+<circle cx="1331" cy="398" r="3.3" fill="#7e8776"/>
+<circle cx="1390" cy="402" r="3.3" fill="#7e8776"/>
+<circle cx="1411" cy="417" r="3.3" fill="#7e8776"/>
+<circle cx="1405" cy="390" r="3.3" fill="#7e8776"/>
+<circle cx="1289" cy="407" r="3.3" fill="#7e8776"/>
+<circle cx="1425" cy="403" r="3.3" fill="#7e8776"/>
+
+  <text x="1355" y="340" font-weight="bold" text-anchor="middle">U(IV)</text>
+  <path d="M1355 350V399M1310 379 1304 417M1405 378 1417 421" stroke="#3d6279" stroke-width="3" fill="none" marker-end="url(#ink-arrow)"/>
+  <text x="1355" y="448" font-weight="bold" text-anchor="middle">U(VI)</text>
+  <g text-anchor="start"><text x="1296.5" y="201">O</text><text x="1313.5" y="208" font-size="19">2</text></g>
+  <g text-anchor="start"><text x="1348.0" y="201">NO</text><text x="1382.0" y="208" font-size="19">3</text><text x="1393.0" y="192" font-size="19">&#8722;</text></g>
+  <path d="M1311 218C1323 232 1298 239 1310 252L1315 270M1380 218C1392 233 1368 242 1380 255L1380 269" fill="none" stroke="#3d6279" stroke-width="3" marker-end="url(#ink-arrow)"/>
+  <g text-anchor="start"><text x="1423.0" y="254">Fe</text><text x="1457.0" y="245" font-size="19">3+</text></g>
+  <g text-anchor="start"><text x="1167.5" y="285">O</text><text x="1184.5" y="292" font-size="19">2</text></g>
+  <path d="M1197 305Q1215 349 1182 386" fill="none" stroke="#3d6279" stroke-width="4" marker-end="url(#ink-arrow)"/>
+  <g text-anchor="start"><text x="1159" y="430">H</text><text x="1179" y="437" font-size="19">2</text><text x="1191" y="430">O</text></g>
+  <g text-anchor="start"><text x="1469.0" y="301">NO</text><text x="1503.0" y="308" font-size="19">3</text><text x="1514.0" y="292" font-size="19">&#8722;</text></g>
+  <path d="M1505 319Q1481 357 1506 386" fill="none" stroke="#3d6279" stroke-width="4" marker-end="url(#ink-arrow)"/>
+  <g text-anchor="start"><text x="1490.5" y="430">N</text><text x="1507.5" y="437" font-size="19">2</text></g>
+  <g text-anchor="start"><text x="1569.0" y="301">Fe</text><text x="1603.0" y="292" font-size="19">3+</text></g>
+  <path d="M1592 319Q1578 357 1598 386" fill="none" stroke="#3d6279" stroke-width="4" marker-end="url(#ink-arrow)"/>
+  <g text-anchor="start"><text x="1569.0" y="430">Fe</text><text x="1603.0" y="421" font-size="19">2+</text></g>
+ </g>
+ <g id="protected-uiv">
+  <path d="M1229 602C1251 568 1306 585 1341 578S1426 585 1464 579S1548 583 1555 619S1535 684 1498 683S1425 695 1388 685S1303 699 1263 685S1201 639 1229 602Z" fill="#f2d38b" stroke="#b49449" stroke-width="3"/>
+  <path d="M1245 608C1284 587 1310 607 1344 597S1427 604 1467 596S1539 601 1539 626" fill="none" stroke="#fff0bc" stroke-width="7"/>
+  <path d="M1274 614C1306 605 1322 619 1354 610S1419 615 1451 607S1508 617 1512 641S1465 664 1434 659S1370 670 1337 662S1277 671 1261 649S1252 626 1274 614Z" fill="#becfc1" stroke="#8a9e90" stroke-width="2"/>
+
+<use xlink:href="#particle" transform="translate(1278 624) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1294 614) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1320 625) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1344 617) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1447 618) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1475 620) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1497 631) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1492 650) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1465 654) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1439 648) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1291 652) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1275 642) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1314 654) scale(.7)"/>
+<use xlink:href="#particle" transform="translate(1334 647) scale(.7)"/>
+
+  <text x="1381" y="647" font-weight="bold" text-anchor="middle">U(IV)</text>
+  <g text-anchor="start"><text x="1151.0" y="566">NO</text><text x="1185.0" y="573" font-size="19">3</text><text x="1196.0" y="557" font-size="19">&#8722;</text></g>
+  <g text-anchor="start"><text x="1286.5" y="523">O</text><text x="1303.5" y="530" font-size="19">2</text></g>
+  <g text-anchor="start"><text x="1573.5" y="541">O</text><text x="1590.5" y="548" font-size="19">2</text></g>
+  <g fill="none" stroke="#3d6279" stroke-width="3" marker-end="url(#ink-arrow)">
+   <path d="M1166 591C1186 585 1185 606 1202 604L1222 611"/>
+   <path d="M1159 639C1174 626 1184 648 1199 637L1217 635"/>
+   <path d="M1274 539C1286 540 1280 556 1293 557L1300 578"/>
+   <path d="M1331 537C1317 546 1336 555 1324 567L1326 580"/>
+   <path d="M1590 559C1572 556 1575 577 1558 576L1544 594"/>
+   <path d="M1624 608C1609 595 1598 614 1584 605L1558 617"/>
+  </g>
+ </g>
+ <g id="coating-caption" text-anchor="middle" font-size="27">
+  <path d="M1390 765V699" stroke="#526879" stroke-width="2" fill="none" marker-end="url(#ink-arrow)"/>
+  <text x="1390" y="802">Low Permeability Coatings</text>
+  <text x="1390" y="838">(e.g. biomass, FeS)</text>
+  <text x="1390" y="874">Diffusional Barrier</text>
+ </g>
+</g>
+</g></svg>

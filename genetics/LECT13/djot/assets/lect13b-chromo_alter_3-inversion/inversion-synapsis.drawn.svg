@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1090" viewBox="0 0 1000 1090" role="img" aria-labelledby="title description">
+<title id="title">Homologous chromosome pairing with an inversion</title><desc id="description">Two chromosome ribbons show reversed gene-for-gene attraction within an inverted interval, then a physical pairing loop. This overview does not depict four chromatids or crossing over.</desc>
+<metadata>Original editable schematic, created 2026-11-10. Source facts: genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/image_003.png; original ODP slides 6, 10, 12, 14, 16. Geometry newly composed, not traced. Unmeasured. Source labels and stage/copy counts preserved.</metadata>
+<rect width="1000" height="1090" fill="white"/><g font-family="Arial, sans-serif">
+<defs><linearGradient id="wildtype-blue-direction"><stop offset="0" stop-color="#237EB3"/><stop offset="1" stop-color="#DCEBF5"/></linearGradient><linearGradient id="inverted-blue-direction"><stop offset="0" stop-color="#DCEBF5"/><stop offset="1" stop-color="#237EB3"/></linearGradient></defs>
+<text x="40" y="40" font-size="30" text-anchor="start" font-weight="bold" fill="#213547">Wildtype chromosome</text>
+<text x="40" y="242" font-size="30" text-anchor="start" font-weight="bold" fill="#213547">Inversion chromosome</text>
+<path d="M 70,91 L 70,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 108,91 L 108,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 146,91 L 146,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 184,91 L 184,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 222,91 L 222,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 260,91 L 260,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 298,91 L 298,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 340,91 L 770,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 395,91 L 715,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 450,91 L 660,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 505,91 L 605,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 560,91 L 550,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 615,91 L 495,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 670,91 L 440,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 725,91 L 385,179" stroke="#8DB8D4" stroke-width="2.5" fill="none"/>
+<path d="M 825,91 L 825,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 860,91 L 860,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 895,91 L 895,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<path d="M 930,91 L 930,179" fill="none" stroke="#213547" stroke-width="2.5"/>
+<g id="overview-proximal-0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 45,80 H 310" stroke="#213547" stroke-opacity=".34" stroke-width="31"/>
+<path d="M 45,80 H 310" stroke="#E88A3C" stroke-width="28"/>
+<path d="M 45,80 H 310" stroke="white" stroke-opacity=".18" stroke-width="7.0"/>
+</g>
+<rect id="overview-inverted-interval-0" x="310" y="66" width="490" height="28" rx="8" fill="url(#wildtype-blue-direction)"/>
+<g id="overview-distal-0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 800,80 H 955" stroke="#213547" stroke-opacity=".34" stroke-width="31"/>
+<path d="M 800,80 H 955" stroke="#269875" stroke-width="28"/>
+<path d="M 800,80 H 955" stroke="white" stroke-opacity=".18" stroke-width="7.0"/>
+</g>
+<g id="overview-centromere-0"><ellipse cx="185" cy="80" rx="24" ry="28" fill="#E88A3C" stroke="white" stroke-width="3"/><ellipse cx="185" cy="80" rx="24" ry="28" fill="none" stroke="#213547" stroke-width="2"/></g>
+<g id="overview-proximal-1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 45,190 H 310" stroke="#213547" stroke-opacity=".34" stroke-width="31"/>
+<path d="M 45,190 H 310" stroke="#E88A3C" stroke-width="28"/>
+<path d="M 45,190 H 310" stroke="white" stroke-opacity=".18" stroke-width="7.0"/>
+</g>
+<rect id="overview-inverted-interval-1" x="310" y="176" width="490" height="28" rx="8" fill="url(#inverted-blue-direction)"/>
+<g id="overview-distal-1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 800,190 H 955" stroke="#213547" stroke-opacity=".34" stroke-width="31"/>
+<path d="M 800,190 H 955" stroke="#269875" stroke-width="28"/>
+<path d="M 800,190 H 955" stroke="white" stroke-opacity=".18" stroke-width="7.0"/>
+</g>
+<g id="overview-centromere-1"><ellipse cx="185" cy="190" rx="24" ry="28" fill="#E88A3C" stroke="white" stroke-width="3"/><ellipse cx="185" cy="190" rx="24" ry="28" fill="none" stroke="#213547" stroke-width="2"/></g>
+<path d="M 325,267 v 14 H 785 v -14" fill="none" stroke="#213547" stroke-width="2.5"/>
+<text x="555" y="317" font-size="28" text-anchor="middle" font-weight="normal" fill="#213547">Inverted region</text>
+<text x="500" y="365" font-size="25" text-anchor="middle" font-weight="normal" fill="#213547">Gene-for-gene attraction in chromosome pairing (synapsis)</text>
+<path d="M 500,393 V 443 M 488,431 L 500,445 L 512,431" fill="none" stroke="#213547" stroke-width="2.5"/>
+<g id="paired-wildtype-proximal" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 115,764 C 200,771 289,795 374,800" stroke="white" stroke-width="37"/>
+<path d="M 115,764 C 200,771 289,795 374,800" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 115,764 C 200,771 289,795 374,800" stroke="#E88A3C" stroke-width="29"/>
+<path d="M 115,764 C 200,771 289,795 374,800" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<g id="paired-wildtype-centromere"><ellipse cx="210" cy="778" rx="23" ry="27" fill="#E88A3C" stroke="white" stroke-width="3"/><ellipse cx="210" cy="778" rx="23" ry="27" fill="none" stroke="#213547" stroke-width="2"/></g>
+<g id="paired-wildtype-distal" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 475,834 C 605,850 750,842 885,825" stroke="white" stroke-width="37"/>
+<path d="M 475,834 C 605,850 750,842 885,825" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 475,834 C 605,850 750,842 885,825" stroke="#269875" stroke-width="29"/>
+<path d="M 475,834 C 605,850 750,842 885,825" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<g id="paired-inversion-proximal" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 115,719 C 215,720 315,731 375,746" stroke="white" stroke-width="37"/>
+<path d="M 115,719 C 215,720 315,731 375,746" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 115,719 C 215,720 315,731 375,746" stroke="#E88A3C" stroke-width="29"/>
+<path d="M 115,719 C 215,720 315,731 375,746" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<g id="paired-inversion-centromere"><ellipse cx="210" cy="721" rx="23" ry="27" fill="#E88A3C" stroke="white" stroke-width="3"/><ellipse cx="210" cy="721" rx="23" ry="27" fill="none" stroke="#213547" stroke-width="2"/></g>
+<g id="paired-inversion-distal" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 641,751 C 737,771 800,770 885,766" stroke="white" stroke-width="37"/>
+<path d="M 641,751 C 737,771 800,770 885,766" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 641,751 C 737,771 800,770 885,766" stroke="#269875" stroke-width="29"/>
+<path d="M 641,751 C 737,771 800,770 885,766" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<g id="paired-inversion-blue-loop" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 375,746 C 310,648 362,510 477,493 C 612,473 718,581 684,689 C 675,716 660,737 641,751" stroke="white" stroke-width="37"/>
+<path d="M 375,746 C 310,648 362,510 477,493 C 612,473 718,581 684,689 C 675,716 660,737 641,751" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 375,746 C 310,648 362,510 477,493 C 612,473 718,581 684,689 C 675,716 660,737 641,751" stroke="#398BBD" stroke-width="29"/>
+<path d="M 375,746 C 310,648 362,510 477,493 C 612,473 718,581 684,689 C 675,716 660,737 641,751" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<g id="paired-wildtype-blue-loop" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 374,800 C 523,851 647,750 636,628 C 626,518 489,511 421,574 C 332,657 363,794 475,834" stroke="white" stroke-width="37"/>
+<path d="M 374,800 C 523,851 647,750 636,628 C 626,518 489,511 421,574 C 332,657 363,794 475,834" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 374,800 C 523,851 647,750 636,628 C 626,518 489,511 421,574 C 332,657 363,794 475,834" stroke="#6AA7CF" stroke-width="29"/>
+<path d="M 374,800 C 523,851 647,750 636,628 C 626,518 489,511 421,574 C 332,657 363,794 475,834" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<g id="paired-wildtype-foreground-overpass" fill="none" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M 421,574 C 332,657 363,794 475,834" stroke="white" stroke-width="37"/>
+<path d="M 421,574 C 332,657 363,794 475,834" stroke="#213547" stroke-opacity=".34" stroke-width="32"/>
+<path d="M 421,574 C 332,657 363,794 475,834" stroke="#6AA7CF" stroke-width="29"/>
+<path d="M 421,574 C 332,657 363,794 475,834" stroke="white" stroke-opacity=".18" stroke-width="7.25"/>
+</g>
+<text x="40" y="916" font-size="27" text-anchor="start" font-weight="normal" fill="#213547">The gene-for-gene pairing causes either the inversion chromosome</text>
+<text x="40" y="954" font-size="27" text-anchor="start" font-weight="normal" fill="#213547">or the wildtype chromosome to form a loop in the region in which</text>
+<text x="40" y="992" font-size="27" text-anchor="start" font-weight="normal" fill="#213547">the inversion chromosome has the inversion.</text>
+</g></svg>

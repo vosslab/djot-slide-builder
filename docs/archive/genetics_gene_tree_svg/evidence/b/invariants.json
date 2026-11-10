@@ -1,0 +1,12 @@
+{
+  "part_01_original_native_tables_unchanged": 7,
+  "part_01_question_choices_rhino_sequences_preserved": true,
+  "part_02_original_native_tables_unchanged": 18,
+  "part_02_question_choices_rhino_sequences_preserved": true,
+  "M2_rotation_source_blocks_unchanged": true,
+  "svg_xml_ids_image_free_positive_viewports": "passed",
+  "topology_clades_polytomy_metric_paths": "passed",
+  "hemoglobin": "7x50; all21source distances independently corroborated by C owner",
+  "UPGMA": "manual current-cluster exact calculation in current_cluster_average_check.json; displayed source overview rounding retained with approximate caption",
+  "NJ": "AB/CD minimum adjusted-score tie verified; source matrices3/6/5 and final2 preserved"
+}

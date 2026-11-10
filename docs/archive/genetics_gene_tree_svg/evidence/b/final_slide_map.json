@@ -1,0 +1,699 @@
+[
+  {
+    "page": 1,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Lecture 12B",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 2,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Learning Objectives",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 3,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Trees",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 4,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Anniversary of &#8220;On the Origin of Species&#8221;*",
+    "images": [
+      "assets/lect12b-gene_trees/image_002.png"
+    ],
+    "changed": false
+  },
+  {
+    "page": 5,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Why do we want to study molecular evolution?",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 6,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Why Evolution Matters*",
+    "images": [
+      "assets/lect12b-gene_trees/image_003.png"
+    ],
+    "changed": false
+  },
+  {
+    "page": 7,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Why Evolution Matters*",
+    "images": [
+      "assets/lect12b-gene_trees/image_004.png"
+    ],
+    "changed": false
+  },
+  {
+    "page": 8,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Trees",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 9,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Unraveling Gene Trees*",
+    "images": [
+      "assets/lect12b-gene_trees/image_005.png"
+    ],
+    "changed": false
+  },
+  {
+    "page": 10,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Interpreting Gene Trees*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_tree_terms.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 11,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Can You Interpret This!?!*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_primate_nodes.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 12,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree",
+    "images": [
+      "assets/lect12b-gene_trees/image_008.svg"
+    ],
+    "changed": false
+  },
+  {
+    "page": 13,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree: Question",
+    "images": [
+      "assets/lect12b-gene_trees/image_009.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 14,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree: Question",
+    "images": [
+      "assets/lect12b-gene_trees/image_010.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 15,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree: Question",
+    "images": [
+      "assets/lect12b-gene_trees/image_011.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 16,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree: Answer",
+    "images": [
+      "assets/lect12b-gene_trees/image_012.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 17,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree: Answer",
+    "images": [
+      "assets/lect12b-gene_trees/image_012.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 18,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree: Answer",
+    "images": [
+      "assets/lect12b-gene_trees/image_012.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 19,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Primate Divergence Estimates",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_primate_estimates.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 20,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Reading a Gene Tree",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 21,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Understanding Branch Points*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_branch_points.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 22,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Tracing Common Ancestors*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_mrca.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 23,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Different Forms, Same Gene Tree*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_three_forms.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 24,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Rotating Branches in Trees*",
+    "images": [
+      "assets/lect12b-gene_trees/tree_rotation.drawn.svg"
+    ],
+    "changed": false
+  },
+  {
+    "page": 25,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Trees, trees, and trees, oh my*",
+    "images": [
+      "assets/lect12b-gene_trees/tree_rotation_four_forms.drawn.svg"
+    ],
+    "changed": false
+  },
+  {
+    "page": 26,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Polytomy in Gene Trees*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_polytomy.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 27,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Constructing a Gene Tree from Sequences",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 28,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Alignment of Hemoglobin sequences*",
+    "images": [],
+    "changed": true
+  },
+  {
+    "page": 29,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Alignment of Hemoglobin sequences*",
+    "images": [],
+    "changed": true
+  },
+  {
+    "page": 30,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Gene Tree Methods",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 31,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Distance-Based Methods*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_6.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 32,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Understanding Distance Matrices*",
+    "images": [
+      "assets/lect12b-gene_trees/image_022.png"
+    ],
+    "changed": false
+  },
+  {
+    "page": 33,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*UPGMA Distance Method*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 34,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Distance Method: Join B and F",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_1.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 35,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Distance Method: Join A and D",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_2.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 36,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Distance Method: Join BF and G",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_3.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 37,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Distance Method: Join AD and BFG",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_4.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 38,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Distance Method: Join ADBFG and C",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_5.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 39,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Distance Method: Join ADBFGC and E",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_upgma_stage_6.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 40,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Neighbor-Joining Distance Method",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 41,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Neighbor-Joining Distance Method: Step 1",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_nj_stage_1.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 42,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Neighbor-Joining Distance Method: Step 2",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_nj_stage_2.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 43,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Neighbor-Joining Distance Method: Step 3",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_nj_stage_3.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 44,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Character-Based Methods*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 45,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*The Parsimony Method*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 46,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Parsimony Example*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_parsimony.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 47,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Maximum Likelihood in Phylogenetics*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 48,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Bayesian Inference in Phylogenetics",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 49,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Comparing Candidate Trees",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_bayes_columns.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 50,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "Simple Example of Gene Tree by Distance Method",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 51,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "UPGMA Simple Example Part 1\\: Create Distance Matrix",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 52,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 1\\: Get the sequences*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 53,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 2\\: Use Abbreviations*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 54,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 2\\: Align the Sequences*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 55,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 3\\: Convert to Dots*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 56,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 4\\: Setup Distance Table*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 57,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 5\\: Cancel Out the Diagonal*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 58,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 59,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 60,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 61,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 62,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 63,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 64,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 65,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 6\\: Figure Out Distances*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 66,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "UPGMA Simple Example Part 2\\: Create Gene Tree",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 67,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 1\\: Ignore the top half*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 68,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 1\\: Ignore the top half*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 69,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 2\\: Find Smallest Value*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 70,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 2\\: Find Smallest Value*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 71,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 2\\: Create Gene Tree*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_rhino_pair.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 72,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 2\\: Merge N.Wh. and S.Wh.*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_rhino_pair.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 73,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 2\\: Merge N.Wh. and S.Wh.*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_rhino_pair.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 74,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 3\\: Find Next Smallest*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_rhino_joined.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 75,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*Step 3\\: Find Next Smallest*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_rhino_complete.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 76,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*DONE!!!*",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_rhino_complete.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 77,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "17.22 From Gene Tree to Distance Matrix",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 78,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_tree_matrix.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 79,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_tree_matrix.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 80,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_tree_matrix.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 81,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_tree_matrix.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 82,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [
+      "assets/lect12b-gene_trees/phy_b_tree_matrix.drawn.svg"
+    ],
+    "changed": true
+  },
+  {
+    "page": 83,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 84,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "(untitled)",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 85,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "*More Information*",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 86,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "Key Takeaways",
+    "images": [],
+    "changed": false
+  },
+  {
+    "page": 87,
+    "physical_source": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+    "title": "THE END",
+    "images": [],
+    "changed": false
+  }
+]

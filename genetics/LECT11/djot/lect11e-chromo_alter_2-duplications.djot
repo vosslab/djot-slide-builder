@@ -49,7 +49,9 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect11e-chromo_alter_2-duplications/image_001.png)
+![Slide image 1](assets/lect11e-chromo_alter_2-duplications/duplication_overview.drawn.svg)
+
+A duplication repeats a chromosomal segment.
 
 === layout: one-panel
 
@@ -57,7 +59,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 2](assets/lect11e-chromo_alter_2-duplications/image_002.png)
+![Slide image 2](assets/lect11e-chromo_alter_2-duplications/unequal_tandem_crossover.drawn.svg)
 
 - A [*tandem duplication*]{underline=true} is one in which the duplicated segment is in the same orientation immediately adjacent to the normal region in the chromosome.
 - Tandem duplications can produce more duplicated copies by [*unequal crossing over*]{underline=true}.
@@ -67,7 +69,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect11e-chromo_alter_2-duplications/image_003.png)
+![Slide image 3](assets/lect11e-chromo_alter_2-duplications/repeat_flanked_xyz_dosage.drawn.svg)
 
 === layout: section
 
@@ -79,7 +81,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 4](assets/lect11e-chromo_alter_2-duplications/image_004.png)
+![Slide image 4](assets/lect11e-chromo_alter_2-duplications/opsin_arrays.drawn.svg)
 
 === layout: two-panels
 
@@ -87,7 +89,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 5](assets/lect11e-chromo_alter_2-duplications/image_005.png)
+![Slide image 5](assets/lect11e-chromo_alter_2-duplications/opsin_unequal_crossover.drawn.svg)
 
 @right
 
@@ -259,7 +261,7 @@ color-theme: genetics
 - CNV refers to the number of copies of a particular gene varies from one individual to the next.
 - CNVs can be generally categorized into two main groups\: short repeats and long repeats
 
-![Slide image 19](assets/lect11e-chromo_alter_2-duplications/image_002.png)
+![Slide image 19](assets/lect11e-chromo_alter_2-duplications/unequal_tandem_crossover.drawn.svg)
 
 === layout: two-panels
 
@@ -273,7 +275,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 20](assets/lect11e-chromo_alter_2-duplications/image_020.png)
+![Slide image 20](assets/lect11e-chromo_alter_2-duplications/copy_number_interval.drawn.svg)
 
 === layout: two-over-one-panels
 @replaceme
@@ -288,7 +290,7 @@ color-theme: genetics
 
 @top-right
 
-![Slide image 21](assets/lect11e-chromo_alter_2-duplications/image_021.png)
+![Slide image 21](assets/lect11e-chromo_alter_2-duplications/cag_repeat_tract.drawn.svg)
 
 @bottom
 

@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="600" viewBox="0 0 1400 600" role="img" font-family="Arial, Helvetica, sans-serif" aria-labelledby="title desc">
+<title id="title">Algae Based Fuel Process</title>
+<desc id="desc">Original schematic illustration. Sun and Power Generation / Factory Emission feed cultivation in three Open Algae Ponds, with an Algae + Nonpotable Water detail. Cultivate leads to Harvest &amp; Extract, then Refine. A fuel nozzle connects the Drop-In Replacement Fuel to Jet Fuel, Gasoline and Diesel, represented by an aircraft, a car and a truck. Equipment and organisms are illustrative, not measured.</desc>
+<metadata>Original editable artwork composed from course source image_050.png, original ODP slide 50. No raster content. Source facts and route preserved; no commercial or environmental efficacy claim. Construction: shallow parallel projection, cylindrical sections and coherent upper-left lighting.</metadata>
+<defs>
+ <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#95a9b5"/><stop offset="0.28" stop-color="#edf2f3"/><stop offset="0.55" stop-color="#cbd8de"/><stop offset="1" stop-color="#7d96a5"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#dceee9"/><stop offset="0.3" stop-color="#f4fbf6"/><stop offset="1" stop-color="#b4d8ce"/></linearGradient>
+ <linearGradient id="algae-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7ea952"/><stop offset="1" stop-color="#4c7c3c"/></linearGradient>
+ <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 9 5 L 0 10 Z" fill="#526879"/></marker>
+ <clipPath id="detail-clip"><circle cx="311" cy="466" r="43"/></clipPath>
+</defs>
+<rect width="1400" height="600" fill="#fff"/>
+
+<text x="34" y="51" font-size="36" text-anchor="start" fill="#213547" font-weight="bold">Algae Based Fuel Process</text>
+<g id="landscape">
+<path d="M 39 390 Q 70 363 205 370 L 470 345 L 1051 396 L 1087 431 L 1039 456 L 375 448 L 175 429 Z" fill="#eef1e6" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 188 369 L 461 336 L 632 377 L 570 429 L 319 426 Z" fill="#e2e8ce" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 618 413 L 1017 413 L 1051 432 L 652 432 Z" fill="#d4dfe2" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+</g><g id="sun-input">
+<path d="M 139.0 133.0 L 150.0 133.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 133.2 154.5 L 142.8 160.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 117.5 170.2 L 123.0 179.8" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 96.0 176.0 L 96.0 187.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 74.5 170.2 L 69.0 179.8" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 58.8 154.5 L 49.2 160.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 53.0 133.0 L 42.0 133.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 58.8 111.5 L 49.2 106.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 74.5 95.8 L 69.0 86.2" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 96.0 90.0 L 96.0 79.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 117.5 95.8 L 123.0 86.2" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 133.2 111.5 L 142.8 106.0" fill="none" stroke="#d5a329" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="96" cy="133" r="33" fill="#f8d35b" stroke="#d5a329" stroke-width="2.5"/>
+<path d="M 150 153 C 206 170 228 194 265 230" fill="none" stroke="#526879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+</g><g id="power-generation-factory">
+<path d="M 90 215 C 73 205 69 190 88 187 C 89 172 111 173 115 184 C 130 169 150 182 148 194 C 168 191 171 212 153 215 Z" fill="#c5ced0" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 96.0 213 V 296 A 8.0 4 0 0 0 112.0 296 V 213" fill="url(#steel)" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="104" cy="213" rx="8.0" ry="4" fill="#e3ebee" stroke="#526879" stroke-width="1.8"/>
+<path d="M 123.0 222 V 297 A 8.0 4 0 0 0 139.0 297 V 222" fill="url(#steel)" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="131" cy="222" rx="8.0" ry="4" fill="#e3ebee" stroke="#526879" stroke-width="1.8"/>
+<path d="M 96 230 Q 104 235 112 230" fill="none" stroke="#7d96a5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 96 251 Q 104 256 112 251" fill="none" stroke="#7d96a5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 123 239 Q 131 244 139 239" fill="none" stroke="#7d96a5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 123 260 Q 131 265 139 260" fill="none" stroke="#7d96a5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 62 302 L 127 278 L 180 301 L 114 326 Z" fill="#dce4e8" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 62 302 L 114 326 V 374 L 62 350 Z" fill="#9cb0ba" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 114 326 L 180 301 V 349 L 114 374 Z" fill="#7f99a8" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 62 302 L 62 280 L 83 290 L 83 269 L 105 280 L 105 261 L 127 273 V 278" fill="#c2d0d7" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M73 317 l 9 4 v 9 l -9 -4 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M91 325 l 9 4 v 9 l -9 -4 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M73 335 l 9 4 v 9 l -9 -4 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M91 343 l 9 4 v 9 l -9 -4 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M123 332 l 8 -3 v 12 l -8 3 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M145 324 l 8 -3 v 12 l -8 3 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M166 316 l 8 -3 v 12 l -8 3 Z" fill="#405c6a" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 164 205 C 213 204 239 241 270 263" fill="none" stroke="#526879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="117" y="410" font-size="20" text-anchor="middle" fill="#213547" font-weight="normal">Power Generation</text>
+<text x="117" y="436" font-size="20" text-anchor="middle" fill="#213547" font-weight="normal">/ Factory Emission</text>
+</g>
+<g id="open-algae-ponds">
+<text x="436" y="185" font-size="26" text-anchor="middle" fill="#213547" font-weight="bold">Open Algae Ponds</text>
+<g id="raceway-pond-1" transform="matrix(1 .19 -.66 .54 327 217.0)">
+<rect x="0" y="12" width="280" height="62" rx="31" fill="#88977b" stroke="#536548" stroke-width="2.4"/>
+<rect x="0" y="0" width="280" height="62" rx="31" fill="#d7ddc7" stroke="#536548" stroke-width="2.4"/>
+<rect x="8" y="7" width="264" height="47" rx="23.5" fill="url(#algae-water)" stroke="#456a35" stroke-width="1.6"/>
+<rect x="34" y="25" width="212" height="9" rx="4.5" fill="#d8dec7" stroke="#6b8056" stroke-width="1.3"/>
+<path d="M 35 15 H 227 M 47 45 H 238" fill="none" stroke="#a7c27b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 34 8 V 25" fill="none" stroke="#526879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 24 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 29 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 34 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 39 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 44 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 22 16 H 46" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<g id="raceway-pond-2" transform="matrix(1 .19 -.66 .54 327 259.12)">
+<rect x="0" y="12" width="280" height="62" rx="31" fill="#88977b" stroke="#536548" stroke-width="2.4"/>
+<rect x="0" y="0" width="280" height="62" rx="31" fill="#d7ddc7" stroke="#536548" stroke-width="2.4"/>
+<rect x="8" y="7" width="264" height="47" rx="23.5" fill="url(#algae-water)" stroke="#456a35" stroke-width="1.6"/>
+<rect x="34" y="25" width="212" height="9" rx="4.5" fill="#d8dec7" stroke="#6b8056" stroke-width="1.3"/>
+<path d="M 35 15 H 227 M 47 45 H 238" fill="none" stroke="#a7c27b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 34 8 V 25" fill="none" stroke="#526879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 24 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 29 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 34 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 39 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 44 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 22 16 H 46" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<g id="raceway-pond-3" transform="matrix(1 .19 -.66 .54 327 301.24)">
+<rect x="0" y="12" width="280" height="62" rx="31" fill="#88977b" stroke="#536548" stroke-width="2.4"/>
+<rect x="0" y="0" width="280" height="62" rx="31" fill="#d7ddc7" stroke="#536548" stroke-width="2.4"/>
+<rect x="8" y="7" width="264" height="47" rx="23.5" fill="url(#algae-water)" stroke="#456a35" stroke-width="1.6"/>
+<rect x="34" y="25" width="212" height="9" rx="4.5" fill="#d8dec7" stroke="#6b8056" stroke-width="1.3"/>
+<path d="M 35 15 H 227 M 47 45 H 238" fill="none" stroke="#a7c27b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 34 8 V 25" fill="none" stroke="#526879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 24 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 29 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 34 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 39 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 44 10 V 22" fill="none" stroke="#d8e4dd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 22 16 H 46" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<path d="M 430 358 L 337 429" fill="none" stroke="#526879" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="430" cy="358" r="3" fill="#526879"/>
+<circle cx="311" cy="466" r="46" fill="#fff" stroke="#526879" stroke-width="2"/>
+<g clip-path="url(#detail-clip)"><circle cx="311" cy="466" r="43" fill="#dbeac8"/>
+<g transform="rotate(-25 283 445)"><ellipse cx="283" cy="445" rx="9" ry="13" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 280 436 Q 290 445 280 454" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="281" cy="445" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(30 311 437)"><ellipse cx="311" cy="437" rx="8" ry="11" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 308 430 Q 317 437 308 444" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="309" cy="437" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(35 334 448)"><ellipse cx="334" cy="448" rx="11" ry="15" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 331 437 Q 343 448 331 459" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="332" cy="448" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(-20 295 467)"><ellipse cx="295" cy="467" rx="13" ry="10" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 292 461 Q 306 467 292 473" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="293" cy="467" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(-10 321 473)"><ellipse cx="321" cy="473" rx="9" ry="13" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 318 464 Q 328 473 318 482" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="319" cy="473" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(25 277 482)"><ellipse cx="277" cy="482" rx="8" ry="12" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 274 474 Q 283 482 274 490" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="275" cy="482" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(35 300 494)"><ellipse cx="300" cy="494" rx="10" ry="13" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 297 485 Q 308 494 297 503" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="298" cy="494" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(-35 342 488)"><ellipse cx="342" cy="488" rx="12" ry="9" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 339 483 Q 352 488 339 493" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="340" cy="488" r="2.5" fill="#c9dca1"/></g>
+<g transform="rotate(0 342 426)"><ellipse cx="342" cy="426" rx="7" ry="9" fill="#8bb854" stroke="#4c7c3c" stroke-width="1.5"/><path d="M 339 421 Q 347 426 339 431" fill="none" stroke="#557f34" stroke-width="3"/><circle cx="340" cy="426" r="2.5" fill="#c9dca1"/></g>
+</g>
+<text x="376" y="465" font-size="23" text-anchor="start" fill="#213547" font-weight="normal">Algae +</text>
+<text x="376" y="494" font-size="23" text-anchor="start" fill="#213547" font-weight="normal">Nonpotable Water</text>
+</g>
+<g id="cultivation-to-extraction">
+<path d="M 579 328 H 624 Q 637 328 637 315 V 270 Q 637 257 650 257 H 677" fill="none" stroke="#213547" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 579 328 H 624 Q 637 328 637 315 V 270 Q 637 257 650 257 H 677" fill="none" stroke="#617988" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 593 232 H 653" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+</g><g id="harvest-extraction-vessel">
+<path d="M 672 264 V 397 Q 718 426 764 397 V 264" fill="url(#glass)" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="718" cy="264" rx="46" ry="15" fill="#e6f3e8" stroke="#526879" stroke-width="2"/>
+<path d="M 677 324 V 394 Q 718 419 759 394 V 324" fill="url(#algae-water)" stroke="#4c7c3c" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="718" cy="324" rx="41" ry="13" fill="#9ac864" stroke="#4c7c3c" stroke-width="1.5"/>
+<path d="M 685 282 V 307 M 685 342 V 386" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 672 396 Q 718 425 764 396" fill="none" stroke="#526879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 679 409 V 421 M 756 409 V 421" fill="none" stroke="#526879" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 660 257 H 698 Q 710 257 710 269 V 287" fill="none" stroke="#213547" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 660 257 H 698 Q 710 257 710 269 V 287" fill="none" stroke="#617988" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 710 293 Q 699 306 710 311 Q 721 306 710 293" fill="#608c3d" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+</g><g id="extraction-to-refinery">
+<path d="M 764 368 H 799 Q 811 368 811 356 V 334 H 855" fill="none" stroke="#213547" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 764 368 H 799 Q 811 368 811 356 V 334 H 855" fill="none" stroke="#617988" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 779 303 H 839" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+</g>
+<g id="refinery">
+<path d="M 902.0 158 V 398 A 23.0 11 0 0 0 948.0 398 V 158" fill="url(#steel)" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="925" cy="158" rx="23.0" ry="11" fill="#e3ebee" stroke="#526879" stroke-width="1.8"/>
+<ellipse cx="925" cy="209" rx="24" ry="6" fill="none" stroke="#718895" stroke-width="1.6"/>
+<ellipse cx="925" cy="252" rx="24" ry="6" fill="none" stroke="#718895" stroke-width="1.6"/>
+<ellipse cx="925" cy="297" rx="24" ry="6" fill="none" stroke="#718895" stroke-width="1.6"/>
+<ellipse cx="925" cy="341" rx="24" ry="6" fill="none" stroke="#718895" stroke-width="1.6"/>
+<path d="M 906 169 V 387" fill="none" stroke="#f7fafb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 925 146 V 129 H 948" fill="none" stroke="#213547" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 925 146 V 129 H 948" fill="none" stroke="#617988" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 180 V 398 M 961 180 V 398" fill="none" stroke="#526879" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 185 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 199 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 213 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 227 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 241 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 255 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 269 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 283 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 297 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 311 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 325 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 339 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 353 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 367 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 950 381 H 961" fill="none" stroke="#526879" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 891 253 H 969 V 264 H 891 Z" fill="#aabdc6" stroke="#213547" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 891 253 V 237 H 969 V 253 M 907 237 V 253 M 949 237 V 253" fill="none" stroke="#526879" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 843.0 299 V 399 A 19.0 10 0 0 0 881.0 399 V 299" fill="url(#steel)" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="862" cy="299" rx="19.0" ry="10" fill="#e3ebee" stroke="#526879" stroke-width="1.8"/>
+<path d="M 987.0 249 V 399 A 19.0 10 0 0 0 1025.0 399 V 249" fill="url(#steel)" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="1006" cy="249" rx="19.0" ry="10" fill="#e3ebee" stroke="#526879" stroke-width="1.8"/>
+<path d="M 854 315 V 382 M 998 264 V 382" fill="none" stroke="#f6fafb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 881 327 H 899 V 287 H 902" fill="none" stroke="#213547" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 881 327 H 899 V 287 H 902" fill="none" stroke="#617988" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 948 319 H 977 V 278 H 987" fill="none" stroke="#213547" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 948 319 H 977 V 278 H 987" fill="none" stroke="#617988" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1015 237 V 222 H 977 V 193 H 949" fill="none" stroke="#213547" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1015 237 V 222 H 977 V 193 H 949" fill="none" stroke="#617988" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 847 405 V 419" fill="none" stroke="#526879" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 877 405 V 419" fill="none" stroke="#526879" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 910 405 V 419" fill="none" stroke="#526879" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 940 405 V 419" fill="none" stroke="#526879" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 991 405 V 419" fill="none" stroke="#526879" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1021 405 V 419" fill="none" stroke="#526879" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<g id="drop-in-fuel-nozzle">
+<path d="M 1026 372 C 1071 373 1069 316 1076 280 C 1080 256 1091 240 1114 224" fill="none" stroke="#344c59" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1026 370 C 1069 370 1065 315 1072 280" fill="none" stroke="#879da7" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1104 223 L 1120 196 Q 1124 189 1133 191 L 1161 199 L 1154 218 L 1143 217 L 1133 237 L 1115 235 Z" fill="#5d8b45" stroke="#213547" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1119 221 L 1127 206 L 1143 211 L 1133 228 Z" fill="#eaf0e4" stroke="#213547" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1159 201 L 1184 211 L 1199 229" fill="none" stroke="#526879" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1160 199 L 1185 209 L 1200 227" fill="none" stroke="#a8bbc4" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text x="1210" y="112" font-size="27" text-anchor="middle" fill="#213547" font-weight="bold">Drop-In</text>
+<text x="1210" y="144" font-size="27" text-anchor="middle" fill="#213547" font-weight="bold">Replacement Fuel</text>
+<path d="M 1201 233 L 1211 252" fill="none" stroke="#526879" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1211 258 V 459 M 1211 279 H 1235 M 1211 369 H 1235 M 1211 459 H 1235" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<g id="jet-fuel-aircraft" transform="translate(1247 242)">
+<path d="M 1 30 L 39 24 L 65 4 L 78 4 L 61 25 L 102 25 L 112 10 L 120 10 L 116 32 Q 126 37 115 40 L 57 40 L 76 57 L 63 57 L 36 40 L 7 39 Q -2 38 1 30 Z" fill="#d8e2e7" stroke="#213547" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 4 31 L 16 28 L 20 32 L 4 34 Z" fill="#526879" stroke="none" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 23 32 H 91" fill="none" stroke="#789cad" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 50 39 L 58 42 L 54 47 L 43 44 Z" fill="#526879" stroke="#213547" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<text x="1287" y="322" font-size="23" text-anchor="middle" fill="#213547" font-weight="normal">Jet Fuel</text>
+<g id="gasoline-car" transform="translate(1246 335)">
+<path d="M 3 25 L 18 21 L 35 5 L 74 5 L 94 22 L 111 25 Q 116 27 116 34 V 43 H 0 V 33 Q 0 27 3 25 Z" fill="#b56a42" stroke="#213547" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 24 22 L 39 9 H 53 V 22 Z M 58 9 H 72 L 86 22 H 58 Z" fill="#d7e8ed" stroke="#213547" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1 33 H 13 M 104 32 H 115" fill="none" stroke="#f0d491" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="25" cy="43" rx="11" ry="11" fill="#263b47" stroke="#213547" stroke-width="1.5"/>
+<ellipse cx="25" cy="43" rx="5" ry="5" fill="#bdccd3" stroke="#bdccd3" stroke-width="1"/>
+<ellipse cx="91" cy="43" rx="11" ry="11" fill="#263b47" stroke="#213547" stroke-width="1.5"/>
+<ellipse cx="91" cy="43" rx="5" ry="5" fill="#bdccd3" stroke="#bdccd3" stroke-width="1"/>
+<path d="M 48 28 H 55" fill="none" stroke="#713f29" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<text x="1287" y="412" font-size="23" text-anchor="middle" fill="#213547" font-weight="normal">Gasoline</text>
+<g id="diesel-truck" transform="translate(1243 427)">
+<path d="M 0 0 H 76 V 42 H 0 Z" fill="#c3d0d7" stroke="#213547" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 0 0 L 7 -5 H 82 L 76 0 Z" fill="#e8eef0" stroke="#213547" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 76 0 L 82 -5 V 35 L 76 42 Z" fill="#879fad" stroke="#213547" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 82 13 H 105 L 120 29 V 43 H 80 Z" fill="#618897" stroke="#213547" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 88 17 H 103 L 113 29 H 88 Z" fill="#d7e8ed" stroke="#213547" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 3 43 H 120" fill="none" stroke="#213547" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="19" cy="46" rx="10" ry="10" fill="#263b47" stroke="#213547" stroke-width="1.5"/>
+<ellipse cx="19" cy="46" rx="4.5" ry="4.5" fill="#bdccd3" stroke="#bdccd3" stroke-width="1"/>
+<ellipse cx="64" cy="46" rx="10" ry="10" fill="#263b47" stroke="#213547" stroke-width="1.5"/>
+<ellipse cx="64" cy="46" rx="4.5" ry="4.5" fill="#bdccd3" stroke="#bdccd3" stroke-width="1"/>
+<ellipse cx="103" cy="46" rx="10" ry="10" fill="#263b47" stroke="#213547" stroke-width="1.5"/>
+<ellipse cx="103" cy="46" rx="4.5" ry="4.5" fill="#bdccd3" stroke="#bdccd3" stroke-width="1"/>
+<path d="M 116 34 H 121" fill="none" stroke="#f0d491" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+</g>
+<text x="1287" y="506" font-size="23" text-anchor="middle" fill="#213547" font-weight="normal">Diesel</text>
+<g id="process-stage-labels">
+<text x="436" y="566" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Cultivate</text>
+<text x="718" y="566" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Harvest &amp; Extract</text>
+<text x="938" y="566" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Refine</text>
+<path d="M 510 556 H 580" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 850 556 H 880" fill="none" stroke="#526879" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+</g></svg>

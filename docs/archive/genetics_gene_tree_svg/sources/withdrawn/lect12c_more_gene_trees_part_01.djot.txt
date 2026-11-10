@@ -1,0 +1,621 @@
+=== layout: title-slide
+
+# Lecture 12C
+
+## More Gene Trees
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## December 1, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Find the closest pair in a distance matrix.
+- Update distances after merging clusters.
+- Track branch lengths as a tree grows.
+- Check a completed tree against its matrix.
+
+=== layout: section
+
+# Full Example
+
+=== layout: one-panel
+
+# *Another Example*
+
+@body
+
+{table-style=working table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| a |  |  |  |  |  |
+| b |  |  |  |  |  |
+| c |  |  |  |  |  |
+| d |  |  |  |  |  |
+| e |  |  |  |  |  |
+
+=== layout: one-panel
+
+# *Another Example*
+
+@body
+
+{table-style=matrix-upper table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| a | - | 17 | 20 | 30 | 23 |
+| b |  | - | 30 | 34 | 21 |
+| c |  |  | - | 28 | 35 |
+| d |  |  |  | - | 40 |
+| e |  |  |  |  | - |
+
+
+=== layout: one-panel
+
+# *Properties of a distance matrix*
+
+@body
+
+{table-style=matrix-upper table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| a | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 17 | 20 | 30 | 23 |
+| b |  | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 30 | 34 | 21 |
+| c |  |  | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d |  |  |  | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e |  |  |  |  | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Properties of a distance matrix*
+
+@body
+
+{table-style=working table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#DDDDDD} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 17 | 20 | 30 | 23 |
+| [b]{background-color=#DDDDDD} | 17 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 30 | 34 | 21 |
+| [c]{background-color=#DDDDDD} | 20 | 30 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| [d]{background-color=#DDDDDD} | 30 | 34 | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| [e]{background-color=#DDDDDD} | 23 | 21 | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *We&#8217;ll just ignore the top half to avoid confusion*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| a | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 17 | 20 | 30 | 23 |
+| b | 17 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 30 | 34 | 21 |
+| c | 20 | 30 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d | 30 | 34 | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e | 23 | 21 | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Find smallest value*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-6}
+|  | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| a | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 17 | 20 | 30 | 23 |
+| b | [17]{background-color=#CC9900} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 30 | 34 | 21 |
+| c | 20 | 30 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d | 30 | 34 | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e | 23 | 21 | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-6}
+|  | [a]{background-color=#A5A2D5 border-top="1pt solid #333333" border-left="1pt solid #333333"} | [b]{background-color=#A5A2D5 border-top="1pt solid #333333" border-right="1pt solid #333333"} | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#A5A2D5 border-top="1pt solid #333333" border-left="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-left="1pt solid #333333" border-top="1pt solid #333333"} | [17]{background-color=#C99BCB border-right="1pt solid #333333" border-top="1pt solid #333333"} | [20]{background-color=#DBC2DE border-top="1pt solid #333333"} | [30]{background-color=#DBC2DE border-top="1pt solid #333333"} | [23]{background-color=#DBC2DE border-top="1pt solid #333333" border-right="1pt solid #333333"} |
+| [b]{background-color=#A5A2D5 border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [[17]{color=#000000}]{background-color=#C46D33 border-left="1pt solid #333333" border-bottom="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-right="1pt solid #333333" border-bottom="1pt solid #333333"} | [30]{background-color=#DBC2DE border-bottom="1pt solid #333333"} | [34]{background-color=#DBC2DE border-bottom="1pt solid #333333"} | [21]{background-color=#DBC2DE border-right="1pt solid #333333" border-bottom="1pt solid #333333"} |
+| c | [20]{background-color=#BFB9DE border-left="1pt solid #333333"} | [30]{background-color=#BFB9DE border-right="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d | [30]{background-color=#BDA3E6 border-left="1pt solid #333333"} | [34]{background-color=#BDA3E6 border-right="1pt solid #333333"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e | [23]{background-color=#BDCCBD border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [21]{background-color=#BDCCBD border-right="1pt solid #333333" border-bottom="1pt solid #333333"} | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-6}
+|  | [a]{background-color=#A5A2D5 border-top="1pt solid #333333" border-left="1pt solid #333333"} | [b]{background-color=#A5A2D5 border-top="1pt solid #333333" border-right="1pt solid #333333"} | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| [a]{background-color=#A5A2D5 border-top="1pt solid #333333" border-left="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-left="1pt solid #333333" border-top="1pt solid #333333"} | [17]{background-color=#C99BCB border-right="1pt solid #333333" border-top="1pt solid #333333"} | [20]{background-color=#DBC2DE border-top="1pt solid #333333"} | [30]{background-color=#DBC2DE border-top="1pt solid #333333"} | [23]{background-color=#DBC2DE border-top="1pt solid #333333" border-right="1pt solid #333333"} |
+| [b]{background-color=#A5A2D5 border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [[17]{color=#000000}]{background-color=#C46D33 border-left="1pt solid #333333" border-bottom="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-right="1pt solid #333333" border-bottom="1pt solid #333333"} | [30]{background-color=#DBC2DE border-bottom="1pt solid #333333"} | [34]{background-color=#DBC2DE border-bottom="1pt solid #333333"} | [21]{background-color=#DBC2DE border-right="1pt solid #333333" border-bottom="1pt solid #333333"} |
+| c | [20]{background-color=#BFB9DE border-left="1pt solid #333333"} | [30]{background-color=#BFB9DE border-right="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d | [30]{background-color=#BDA3E6 border-left="1pt solid #333333"} | [34]{background-color=#BDA3E6 border-right="1pt solid #333333"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e | [23]{background-color=#BDCCBD border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [21]{background-color=#BDCCBD border-right="1pt solid #333333" border-bottom="1pt solid #333333"} | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+- merge a,b; new values are the average
+- (20+30)/2 = 25; (30+34)/2 = 32; (23+21)/2 = 22
+
+=== layout: one-panel
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@body
+
+{table-style=standard table-group=lect12c-five-taxa-6 border="0.5pt solid #C5CBD2"}
+|  | [(a,b)]{background-color=#A5A2D5 border-top="1pt solid #333333" border-left="1pt solid #333333"} | [(a,b)]{background-color=#A5A2D5 border-top="1pt solid #333333" border-right="1pt solid #333333"} | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| [(a,b)]{background-color=#CAB1CA border-top="1pt solid #333333" border-left="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-left="1pt solid #333333" border-top="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-right="1pt solid #333333" border-top="1pt solid #333333"} | [25]{background-color=#E6CC94 border-top="1pt solid #333333"} | [32]{background-color=#E6CC94 border-top="1pt solid #333333"} | [22]{background-color=#E6CC94 border-top="1pt solid #333333" border-right="1pt solid #333333"} |
+| [(a,b)]{background-color=#CAB1CA border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-left="1pt solid #333333" border-bottom="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-right="1pt solid #333333" border-bottom="1pt solid #333333"} | [25]{background-color=#E6CC94 border-bottom="1pt solid #333333"} | [32]{background-color=#E6CC94 border-bottom="1pt solid #333333"} | [22]{background-color=#E6CC94 border-right="1pt solid #333333" border-bottom="1pt solid #333333"} |
+| [c]{background-color=#DDDDDD} | [25]{background-color=#BFB9DE border-left="1pt solid #333333"} | [25]{background-color=#BFB9DE border-right="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| [d]{background-color=#DDDDDD} | [32]{background-color=#BDA3E6 border-left="1pt solid #333333"} | [32]{background-color=#BDA3E6 border-right="1pt solid #333333"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| [e]{background-color=#DDDDDD} | [22]{background-color=#BDCCBD border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [22]{background-color=#BDCCBD border-right="1pt solid #333333" border-bottom="1pt solid #333333"} | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+- merge a,b; new values are the average
+- (20+30)/2 = 25; (30+34)/2 = 32; (23+21)/2 = 22
+
+=== layout: one-panel
+
+# *Merge &#8216;a&#8217; and &#8216;b&#8217; columns*
+
+@body
+
+- merge a,b; new values are the average
+- (20+30)/2 = 25; (30+34)/2 = 32; (23+21)/2 = 22
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-5}
+|  | [(a,b)]{background-color=#A5A2D5 border-top="1pt solid #333333" border-right="1pt solid #333333" border-left="1pt solid #333333"} | c | d | e |
+| --- | --- | --- | --- | --- |
+| [(a,b)]{background-color=#A5A2D5 border-top="1pt solid #333333" border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#2E002E border-right="1pt solid #333333" border-left="1pt solid #333333" border-top="1pt solid #333333" border-bottom="1pt solid #333333"} | [25]{background-color=#DBC2DE border-top="1pt solid #333333" border-bottom="1pt solid #333333"} | [32]{background-color=#DBC2DE border-top="1pt solid #333333" border-bottom="1pt solid #333333"} | [22]{background-color=#DBC2DE border-top="1pt solid #333333" border-right="1pt solid #333333" border-bottom="1pt solid #333333"} |
+| c | [25]{background-color=#BFB9DE border-right="1pt solid #333333" border-left="1pt solid #333333"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d | [32]{background-color=#BDA3E6 border-right="1pt solid #333333" border-left="1pt solid #333333"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e | [22]{background-color=#BDCCBD border-right="1pt solid #333333" border-bottom="1pt solid #333333" border-left="1pt solid #333333"} | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Find new lowest value*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-5}
+|  | (a,b) | c | d | e |
+| --- | --- | --- | --- | --- |
+| (a,b) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 25 | 32 | 22 |
+| c | 25 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | 35 |
+| d | 32 | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 40 |
+| e | [22]{background-color=#CC9900} | 35 | 40 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-5}
+|  | [(a,b)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | c | d | [e]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| --- | --- | --- | --- | --- |
+| [(a,b)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [25]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [32]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [22]{background-color=#9BD8AF border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+| c | [25]{background-color=#CCEED6 border-right="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | [35]{background-color=#C2E4CE border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| d | [32]{background-color=#CCEED6 border-right="1pt solid #000000" border-left="1pt solid #000000"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [40]{background-color=#C2E4CE border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| [e]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [22]{background-color=#829F12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [35]{background-color=#CCEED6 border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [40]{background-color=#CCEED6 border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@body
+
+- average (a,b)-c with e-c\: (25+35)/2 = 30
+- average (a,b)-d with e-d\: (32+40)/2 = 36
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-5}
+|  | [(a,b)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | c | d | [e]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| --- | --- | --- | --- | --- |
+| [(a,b)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [25]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [32]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [22]{background-color=#9BD8AF border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+| c | [25]{background-color=#CC9CAD border-right="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | [35]{background-color=#C2E4CE border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| d | [32]{background-color=#7AEEAD border-right="1pt solid #000000" border-left="1pt solid #000000"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [40]{background-color=#C2E4CE border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| [e]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [22]{background-color=#829F12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [35]{background-color=#CC9CAD border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [40]{background-color=#7AEEAD border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@body
+
+- average (a,b)-c with e-c\: (25+35)/2 = 30
+- average (a,b)-d with e-d\: (32+40)/2 = 36
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-5}
+|  | [(a,b)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | c | d | [e]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| --- | --- | --- | --- | --- |
+| [(a,b)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [30]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [36]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [22]{background-color=#9BD8AF border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+| c | [30]{background-color=#CC9CAD border-right="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 | [30]{background-color=#C2E4CE border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| d | [36]{background-color=#7AEEAD border-right="1pt solid #000000" border-left="1pt solid #000000"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [36]{background-color=#C2E4CE border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| [e]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [22]{background-color=#829F12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [30]{background-color=#CC9CAD border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [36]{background-color=#7AEEAD border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Merge &#8216;(a,b)&#8217; and &#8216;e&#8217;*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-4}
+|  | [((a,b),e)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | c | d |
+| --- | --- | --- | --- |
+| [((a,b),e)]{background-color=#8BC4C5 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#003D12 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | [30]{background-color=#C2E4CE border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [36]{background-color=#C2E4CE border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+| c | [30]{background-color=#CC9CAD border-right="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 |
+| d | [36]{background-color=#7AEEAD border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+- average (a,b)-c with e-c\: (25+35)/2 = 30
+- average (a,b)-d with e-d\: (32+40)/2 = 36
+
+=== layout: one-panel
+
+# *Find new lowest value*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-4}
+|  | ((a,b),e) | c | d |
+| --- | --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 30 | 36 |
+| c | 30 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 |
+| d | 36 | 28 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Find new lowest value*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-4}
+|  | ((a,b),e) | c | d |
+| --- | --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 30 | 36 |
+| c | 30 | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 28 |
+| d | 36 | [28]{background-color=#CC9900} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: one-panel
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-4}
+|  | ((a,b),e) | [c]{background-color=#BEA2BB border-top="1pt solid #000000" border-left="1pt solid #000000"} | [d]{background-color=#BEA2BB border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| --- | --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [30]{background-color=#F5C2C4 border-left="1pt solid #000000"} | [36]{background-color=#F5C2C4 border-right="1pt solid #000000"} |
+| [c]{background-color=#BEA2BB border-top="1pt solid #000000" border-left="1pt solid #000000"} | [30]{background-color=#FFCCCC border-top="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [28]{background-color=#F79B9D border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| [d]{background-color=#BEA2BB border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [36]{background-color=#FFCCCC border-bottom="1pt solid #000000"} | [[28]{color=#07090E}]{background-color=#DE6200 border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@body
+
+- average c-((a,b),e) with d-((a,b),e)\:
+- (30+36)/2 = 33
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-4}
+|  | ((a,b),e) | [c]{background-color=#BEA2BB border-top="1pt solid #000000" border-left="1pt solid #000000"} | [d]{background-color=#BEA2BB border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| --- | --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [30]{background-color=#F5C2C4 border-left="1pt solid #000000"} | [36]{background-color=#F5C2C4 border-right="1pt solid #000000"} |
+| [c]{background-color=#BEA2BB border-top="1pt solid #000000" border-left="1pt solid #000000"} | [30]{background-color=#D67ACC border-top="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [28]{background-color=#F79B9D border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| [d]{background-color=#BEA2BB border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [36]{background-color=#D67ACC border-bottom="1pt solid #000000"} | [[28]{color=#07090E}]{background-color=#DE6200 border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@body
+
+- average c-((a,b),e) with d-((a,b),e)\:
+- (30+36)/2 = 33
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-4}
+|  | ((a,b),e) | [c]{background-color=#BEA2BB border-top="1pt solid #000000" border-left="1pt solid #000000"} | [d]{background-color=#BEA2BB border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| --- | --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [33]{background-color=#F5C2C4 border-left="1pt solid #000000"} | [33]{background-color=#F5C2C4 border-right="1pt solid #000000"} |
+| [c]{background-color=#BEA2BB border-top="1pt solid #000000" border-left="1pt solid #000000"} | [33]{background-color=#D67ACC border-top="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [28]{background-color=#F79B9D border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| [d]{background-color=#BEA2BB border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [33]{background-color=#D67ACC border-bottom="1pt solid #000000"} | [[28]{color=#07090E}]{background-color=#DE6200 border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Merge &#8216;c&#8217; and &#8216;d&#8217;*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-3}
+|  | ((a,b),e) | [(c,d)]{background-color=#BEA2BB border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | [33]{background-color=#F5C2C4 border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| [(c,d)]{background-color=#BEA2BB border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [33]{background-color=#D67ACC border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | [[&#8212;]{color=#FFFFFF}]{background-color=#5C0000 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Take the final distance*
+
+@body
+
+{table-style=matrix-lower table-group=lect12c-five-taxa-3}
+|  | ((a,b),e) | (c,d) |
+| --- | --- | --- |
+| ((a,b),e) | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} | 33 |
+| (c,d) | [33]{background-color=#CC9900} | [[&#8212;]{color=#FFFFFF}]{background-color=#000000} |
+
+=== layout: two-panels
+
+# *Summarize Merges*
+
+@left
+
+- 1. a-b merge
+  - distance\: 17
+- 2. (a,b)-e merge
+  - distance\: 22
+- 3. c-d merge
+  - distance\: 28
+- 4. ((a,b),e)-(c,d)
+  - distance\: 33
+
+@right
+
+- Distances were taken from all the minimal distances.
+  - Gold colored boxes
+
+=== layout: two-panels
+
+# *Draw the gene tree*
+
+@left
+
+- a-b\:
+  - 17 &#8594; 8.5
+- (a,b)-e\:
+  - 22 &#8594; 11
+    - 11-8.5 = 2.5
+- c-d\:
+  - 28 &#8594; 14
+- ((a,b),e)-(c,d)\:
+  - 33&#8594; 16.5
+    - 16.5-11 = 5.5
+    - 16.5-14 = 2.5
+
+@right
+
+![Five-taxon tree with source merge heights](assets/lect12c-more_gene_trees/phy_c_five_taxa.drawn.svg)
+
+=== layout: one-panel
+
+
+@body
+
+![Five-taxon tree with source merge heights](assets/lect12c-more_gene_trees/phy_c_five_taxa.drawn.svg)
+
+=== layout: section
+
+# Hartl Question 17.27
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+- Note\: there is no A column and no D row
+  - it saves space
+
+{table-style=matrix-upper table-group=lect12c-hartl-4}
+|  | B | C | D |
+| --- | --- | --- | --- |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | 5 |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+
+{table-style=working table-group=lect12c-new-axis-5}
+|  | [New column]{background-color=#DDE8CB} | B | C | D |
+| --- | --- | --- | --- | --- |
+| A | []{background-color=#DDE8CB} | 8 | 15 | 19 |
+| B | []{background-color=#DDE8CB} |  | 18 | 16 |
+| C | []{background-color=#DDE8CB} |  |  | 5 |
+| [New row]{background-color=#DDE8CB} | []{background-color=#DDE8CB} | []{background-color=#DDE8CB} | []{background-color=#DDE8CB} | []{background-color=#DDE8CB} |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+
+{table-style=matrix-upper table-group=lect12c-hartl-5}
+|  | A | B | C | D |
+| --- | --- | --- | --- | --- |
+| A | [x]{background-color=#CCCCCC} | 8 | 15 | 19 |
+| B |  | [x]{background-color=#CCCCCC} | 18 | 16 |
+| C |  |  | [x]{background-color=#CCCCCC} | 5 |
+| D |  |  |  | [x]{background-color=#CCCCCC} |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+- Note\: there is no A column and no D row
+  - it saves space
+
+{table-style=matrix-upper table-group=lect12c-hartl-4}
+|  | B | C | D |
+| --- | --- | --- | --- |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | 5 |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- In the distance matrix shown here, which pair of taxa should be joined first?
+
+{table-style=matrix-upper table-group=lect12c-hartl-4}
+|  | B | C | D |
+| --- | --- | --- | --- |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | [5]{color=#A600A6} |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- Merge C and D
+
+{table-style=matrix-upper table-group=lect12c-hartl-4}
+|  | B | [C]{background-color=#C4CDE4 border-top="1pt solid #000000" border-left="1pt solid #000000"} | [D]{background-color=#C4CDE4 border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| --- | --- | --- | --- |
+| A | 8 | [[15]{color=#0060BF}]{background-color=#FDF1F2 border-left="1pt solid #000000"} | [[19]{color=#0060BF}]{background-color=#FDF1F2 border-right="1pt solid #000000"} |
+| B |  | [[18]{color=#B82E00}]{background-color=#FDF1F2 border-left="1pt solid #000000"} | [[16]{color=#B82E00}]{background-color=#FDF1F2 border-right="1pt solid #000000"} |
+| [C]{background-color=#C4CDE4 border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | []{background-color=#F3E9EB border-top="1pt solid #000000" border-bottom="1pt solid #000000"} | []{background-color=#EFDBDD border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[5]{color=#A600A6}]{background-color=#FBE7E9 border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+
+- magenta number goes away
+- average colored numbers together
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- Result of the merge
+
+{table-style=matrix-upper table-group=lect12c-hartl-3}
+|  | B | [(C,D)]{background-color=#C4CDE4 border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| --- | --- | --- |
+| A | 8 | [[17]{color=#0060BF}]{background-color=#FDF1F2 border-right="1pt solid #000000" border-left="1pt solid #000000"} |
+| B |  | [[17]{color=#B82E00}]{background-color=#FDF1F2 border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- Finish the matrix shrinking
+
+{table-style=matrix-upper table-group=lect12c-hartl-3}
+|  | B | (C,D) |
+| --- | --- | --- |
+| A | 8 | 17 |
+| B |  | 17 |
+
+=== layout: one-panel
+
+# *Question 17.27*
+
+@body
+
+- Finish the matrix shrinking
+
+{table-style=matrix-upper table-group=lect12c-hartl-3}
+|  | [B]{background-color=#CEE0CF border-top="1pt solid #000000" border-right="1pt solid #000000" border-left="1pt solid #000000"} | (C,D) |
+| --- | --- | --- |
+| [A]{background-color=#CEE0CF border-top="1pt solid #000000" border-left="1pt solid #000000"} | [[8]{color=#B600B6}]{background-color=#FFFFC6 border-right="1pt solid #000000" border-left="1pt solid #000000" border-top="1pt solid #000000"} | [[17]{color=#007374}]{background-color=#FFFFDB border-top="1pt solid #000000" border-right="1pt solid #000000"} |
+| [B]{background-color=#CEE0CF border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | []{background-color=#F6F6BD border-right="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[17]{color=#007374}]{background-color=#FFFFDB border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+
+- magenta number goes away
+- average blue numbers together
+
+=== layout: two-panels
+
+# *Question 17.27*
+
+@left
+
+{table-style=standard table-group=lect12c-hartl-2 border="0.5pt solid #C5CBD2"}
+|  | (C,D) |
+| --- | --- |
+| [(A,B)]{background-color=#FFFFDB border-top="1pt solid #000000" border-bottom="1pt solid #000000" border-left="1pt solid #000000"} | [[17]{color=#006699}]{background-color=#FFFFDB border-top="1pt solid #000000" border-right="1pt solid #000000" border-bottom="1pt solid #000000"} |
+
+@right
+
+- Create the gene tree
+
+![Hartl 17.27 tree before branch-length answers](assets/lect12c-more_gene_trees/phy_c_hartl_question.drawn.svg)
+
+=== layout: two-panels
+
+# *Question 17.27*
+
+@left
+
+{table-style=matrix-upper table-group=lect12c-hartl-4}
+|  | B | C | D |
+| --- | --- | --- | --- |
+| A | 8 | 15 | 19 |
+| B |  | 18 | 16 |
+| C |  |  | 5 |
+
+@right
+
+- Create the gene tree
+
+![Hartl 17.27 tree with branch lengths](assets/lect12c-more_gene_trees/phy_c_hartl_answer.drawn.svg)
+
+=== layout: big-image
+
+@image
+
+![Sorting polymorphic A1 and A2 alleles](assets/lect12e-evol_time/phy_e_allele_sorting.drawn.svg)
+
+@caption
+
+*Gene trees may not coincide with species trees.* Sorting of polymorphic alleles groups the surviving A2 alleles in species 1 and 2, although species 2 and 3 are closest as species. Branch lengths are schematic.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Start with the smallest distance in the matrix.
+- Update the matrix after each merge.
+- Keep earlier branches when adding a new cluster.
+- Check the final tree against the original distances.
+
+=== layout: theend
+
+# THE END
+
+=== layout: section
+
+# Former Textbook Example of Gene Tree by Distance Method
+

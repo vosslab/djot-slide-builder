@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1200" height="620" viewBox="0 0 1200 620" role="img"
+  aria-labelledby="complement-title complement-desc">
+  <title id="complement-title">Drosophila chromosome complements</title>
+  <desc id="complement-desc">Two Drosophila chromosome complements, XX on the left and XY on the right. Both contain two copies each of chromosomes 2, 3 and 4: four long bent autosomes and two small dot chromosomes. The lower pair contains two X rods on the left, and one X rod and one hooked Y on the right. Each complement contains eight separate chromosomes. Aligned positions support comparison; they do not depict pairing or a cell-cycle phase. Schematic, not to scale.</desc>
+  <defs>
+    <path id="complement-chromosome-2" d="M0 0 C24 25 46 45 48 64 C46 84 23 107 0 132"
+      fill="none" stroke="#54798D" stroke-width="21" stroke-linecap="round"/>
+    <path id="complement-chromosome-3" d="M48 0 C24 25 2 45 0 64 C2 84 25 107 48 132"
+      fill="none" stroke="#54798D" stroke-width="21" stroke-linecap="round"/>
+    <circle id="complement-chromosome-4" r="12" fill="#54798D"/>
+    <path id="complement-chromosome-X" d="M0 0 C-3 35 -3 78 0 119"
+      fill="none" stroke="#086898" stroke-width="25" stroke-linecap="round"/>
+    <path id="complement-chromosome-Y" d="M0 106 C-3 74 -3 38 0 0 C15 0 29 9 40 20"
+      fill="none" stroke="#417521" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  </defs>
+  <rect width="1200" height="620" fill="#FFFFFF"/>
+  <g id="complement-guides" fill="none" stroke="#D7E0E5" stroke-width="2">
+    <path d="M600 22 V568"/>
+    <path d="M56 350 H544 M656 350 H1144"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#213547">
+    <g id="complement-XX">
+      <text x="300" y="67" font-size="48" font-weight="bold">XX</text>
+      <g id="complement-XX-autosomes">
+        <g id="complement-XX-pair-2">
+          <use id="complement-XX-2a" xlink:href="#complement-chromosome-2" x="80" y="126"/>
+          <use id="complement-XX-2b" xlink:href="#complement-chromosome-2" x="125" y="126"/>
+          <text x="126" y="313" font-size="34">2</text>
+        </g>
+        <g id="complement-XX-pair-3">
+          <use id="complement-XX-3a" xlink:href="#complement-chromosome-3" x="270" y="126"/>
+          <use id="complement-XX-3b" xlink:href="#complement-chromosome-3" x="315" y="126"/>
+          <text x="316" y="313" font-size="34">3</text>
+        </g>
+        <g id="complement-XX-pair-4">
+          <use id="complement-XX-4a" xlink:href="#complement-chromosome-4" x="465" y="206"/>
+          <use id="complement-XX-4b" xlink:href="#complement-chromosome-4" x="510" y="206"/>
+          <text x="488" y="313" font-size="34">4</text>
+        </g>
+      </g>
+      <g id="complement-XX-sex-chromosomes">
+        <use id="complement-XX-Xa" xlink:href="#complement-chromosome-X" x="225" y="393"/>
+        <use id="complement-XX-Xb" xlink:href="#complement-chromosome-X" x="355" y="393"/>
+        <text x="225" y="561" font-size="34" fill="#086898">X</text>
+        <text x="355" y="561" font-size="34" fill="#086898">X</text>
+      </g>
+    </g>
+    <g id="complement-XY" transform="translate(600,0)">
+      <text x="300" y="67" font-size="48" font-weight="bold">XY</text>
+      <g id="complement-XY-autosomes">
+        <g id="complement-XY-pair-2">
+          <use id="complement-XY-2a" xlink:href="#complement-chromosome-2" x="80" y="126"/>
+          <use id="complement-XY-2b" xlink:href="#complement-chromosome-2" x="125" y="126"/>
+          <text x="126" y="313" font-size="34">2</text>
+        </g>
+        <g id="complement-XY-pair-3">
+          <use id="complement-XY-3a" xlink:href="#complement-chromosome-3" x="270" y="126"/>
+          <use id="complement-XY-3b" xlink:href="#complement-chromosome-3" x="315" y="126"/>
+          <text x="316" y="313" font-size="34">3</text>
+        </g>
+        <g id="complement-XY-pair-4">
+          <use id="complement-XY-4a" xlink:href="#complement-chromosome-4" x="465" y="206"/>
+          <use id="complement-XY-4b" xlink:href="#complement-chromosome-4" x="510" y="206"/>
+          <text x="488" y="313" font-size="34">4</text>
+        </g>
+      </g>
+      <g id="complement-XY-sex-chromosomes">
+        <use id="complement-XY-X" xlink:href="#complement-chromosome-X" x="225" y="393"/>
+        <use id="complement-XY-Y" xlink:href="#complement-chromosome-Y" x="355" y="393"/>
+        <text x="225" y="561" font-size="34" fill="#086898">X</text>
+        <text x="355" y="561" font-size="34" fill="#417521">Y</text>
+      </g>
+    </g>
+    <text x="600" y="608" font-size="24" fill="#526879">Schematic, not to scale</text>
+  </g>
+</svg>

@@ -43,7 +43,7 @@ color-theme: genetics
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_035.png)
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/neurospora_life_cycle.svg)
 
 === layout: one-panel
 
@@ -88,7 +88,7 @@ Read each ascus from one end to the other. The numbers describe consecutive bloc
 
 @body
 
-![No Crossover or One Crossover?](assets/lect09_tetrad_concepts/ordered_before_meiosis.svg)
+![No Crossover or One Crossover?](assets/lect09_tetrad_concepts/ordered_before_meiosis.drawn.svg)
 
 @citation
 
@@ -100,7 +100,7 @@ A in these chromosome diagrams is the wild-type allele, written + in the homewor
 
 @body
 
-![At Meiosis I and II](assets/lect09_tetrad_concepts/ordered_meiosis_ii.svg)
+![At Meiosis I and II](assets/lect09_tetrad_concepts/ordered_meiosis_ii.drawn.svg)
 
 @citation
 
@@ -112,7 +112,7 @@ A in these chromosome diagrams is the wild-type allele, written + in the homewor
 
 @body
 
-![After Mitosis: Eight Spores](assets/lect09_tetrad_concepts/ordered_mitosis.svg)
+![After Mitosis: Eight Spores](assets/lect09_tetrad_concepts/ordered_mitosis.drawn.svg)
 
 @citation
 

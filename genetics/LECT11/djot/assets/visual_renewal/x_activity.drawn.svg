@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="540" viewBox="0 0 650 540" role="img" aria-labelledby="title desc"><title id="title">X inactivation is not complete silencing</title><desc id="desc">Conceptual active X and condensed inactive X. A green symbol indicates escape from inactivation without assigning genes to genomic coordinates. The actual gene distribution is retained in the source reference figure.</desc><rect width="650" height="540" fill="white"/>
+<g id="active-x"><rect x="120" y="80" width="65" height="290" rx="30" fill="#A1467E"/></g>
+<g id="inactive-x"><circle cx="450" cy="240" r="72" fill="#A1467E"/><circle cx="473" cy="213" r="17" fill="#007A00" stroke="white" stroke-width="3"/></g>
+<g font-family="Arial" fill="#222" text-anchor="middle"><text x="153" y="430" font-size="29">Active X</text><text x="450" y="430" font-size="29">Inactive X</text><text x="450" y="472" font-size="24">Some genes escape</text><text x="325" y="525" font-size="21">Conceptual symbols - no gene positions are assigned</text></g>
+</svg>

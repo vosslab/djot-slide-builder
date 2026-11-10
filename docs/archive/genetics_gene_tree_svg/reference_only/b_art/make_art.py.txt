@@ -1,0 +1,84 @@
+from pathlib import Path
+import xml.etree.ElementTree as ET
+P=Path('_temp/genetics_visual_renewal/m3_phylogenetics/b_art')
+def svg(body,w,h,title):
+ return f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img"><title>{title}</title><desc>Original simplified organism illustrations. Branch lengths are schematic.</desc><rect width="100%" height="100%" fill="white"/>{body}</svg>'
+def bird(x,y,s=1,variant=False):
+ c='#b83b32' if variant else '#986013'; beak='M18 20 L0 28 L20 31Z' if variant else 'M18 20 L4 24 L20 25Z'
+ return f'<g transform="translate({x} {y}) scale({s})" fill="#fff5e4" stroke="{c}" stroke-width="2.5" stroke-linejoin="round"><path d="M18 20 Q23 5 38 12 Q50 15 63 34 L92 44 L70 48 Q42 59 27 39Z"/><path d="M38 28 Q55 25 69 46 Q48 47 38 28Z" fill="{c}" fill-opacity="0.2"/><path d="{beak}" fill="{c}"/><circle cx="27" cy="20" r="2" fill="#262626" stroke="none"/><path d="M45 50 L43 63 M43 60 L37 64 M56 50 L55 63 M55 60 L61 64" fill="none"/></g>'
+def plant(x,y,s=1,variant=False):
+ c='#32785f' if variant else '#9dceb4'; b=f'<g transform="translate({x} {y}) scale({s})" fill="{c}" stroke="#32785f" stroke-width="2"><path d="M35 78 Q30 44 35 10" fill="none"/>'
+ for yy in [25,44,62]:
+  b+=f'<path d="M34 {yy} Q8 {yy} 8 {yy-19} Q29 {yy-17} 34 {yy}Z M34 {yy+8} Q59 {yy+8} 62 {yy-11} Q42 {yy-9} 34 {yy+8}Z"/>'
+ return b+'<path d="M35 16 Q21 0 35 -12 Q48 0 35 16Z"/></g>'
+def selection(wide=False):
+ w,h=(1200,550) if wide else (900,660); b=''
+ for row,fn in enumerate([plant,bird]):
+  yy=80+row*(250 if wide else 310)
+  for stage,count in enumerate([3,6,3]):
+   xx=25+stage*(400 if wide else 300)
+   b+=f'<g id="{["plants","birds"][row]}-stage-{stage+1}" data-count="{count}">'
+   for i in range(count):
+    x=xx+(i%3)*(110 if wide else 85); y=yy+(i//3)*105
+    b+=f'<g id="{["plant","bird"][row]}-{stage}-{i}" data-variant="{str(stage==2 or (stage==1 and i==4)).lower()}">'+fn(x,y,0.9,stage==2 or (stage==1 and i==4))+'</g>'
+   b+='</g>'
+  for xx in ([368,768] if wide else [273,573]): b+=f'<path d="M{xx} {yy+65} h25 m-10 -8 l10 8 -10 8" fill="none" stroke="#555" stroke-width="3"/>'
+ return svg(b,w,h,'Plants and birds: original, variant, selected phenotype')
+(P/'selection_a.svg').write_text(selection())
+(P/'selection_b.svg').write_text(selection(True))
+# Organism silhouettes use a 100 by 80 local frame.
+icons={
+'salamander':'<path d="M12 41 Q32 24 60 36 Q82 48 89 19 Q100 48 73 54 Q43 61 12 51Z"/><path d="M32 38 L24 23 L16 24 M31 51 L25 66 L15 67 M61 38 L70 25 L78 26 M62 52 L73 65 L82 62" fill="none" stroke-width="7"/>',
+'frog':'<path d="M29 33 Q35 15 52 24 Q65 22 69 37 L79 57 L91 64 L68 64 L56 48 Q44 39 30 57 L51 63 L17 63 Q5 52 29 33Z"/><circle cx="55" cy="26" r="4" fill="white"/>',
+'caecilian':'<path d="M14 58 C53 78 84 50 49 43 C3 33 25 5 78 20" fill="none" stroke-width="13"/><circle cx="76" cy="18" r="2" fill="white"/>',
+'snake':'<path d="M10 62 C70 82 91 49 48 43 C14 38 26 19 48 24 C72 30 80 20 74 8" fill="none" stroke-width="11"/><path d="M66 7 Q74 -3 83 7 L79 18 L70 17Z"/><path d="M76 0 L76 -5 M76 -5 L72 -9 M76 -5 L80 -9" fill="none" stroke-width="2"/>',
+'human':'<circle cx="48" cy="12" r="10"/><path d="M48 29 L48 51 M48 32 L23 17 M48 32 L73 17 M48 49 L34 76 M48 49 L62 76" fill="none" stroke-width="13"/>',
+'cow':'<path d="M24 28 L70 28 L78 18 L90 21 L92 37 L78 43 L72 64 L64 64 L64 48 L34 48 L29 64 L21 64Z"/><path d="M23 30 Q7 24 10 13 M80 21 L78 10 M87 21 L93 12" fill="none" stroke-width="5"/>',
+'fish':'<path d="M20 39 Q55 7 89 39 Q55 71 20 39 L4 21 L4 58Z"/><path d="M48 24 L57 10 L67 24 M48 54 L60 65 L66 53Z"/><circle cx="73" cy="36" r="4" fill="white"/>'}
+def icon(name,x,y,s):
+ if name=='bird':return bird(x,y,s)
+ return f'<g id="icon-{name}" transform="translate({x} {y}) scale({s})" fill="#243c43" stroke="#243c43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{icons[name]}</g>'
+names=['salamander','frog','caecilian','snake','bird','human','cow','fish']
+b=''
+for i,name in enumerate(names):
+ x=25+(i%4)*220;y=25+(i//4)*180
+ b+=icon(name,x+40,y,1.2)+f'<text x="{x+100}" y="{y+125}" font-family="Arial" font-size="24" text-anchor="middle">{name}</text>'
+(P/'organisms.svg').write_text(svg(b,900,380,'Eight original organism tips'))
+for p in P.glob('*.svg'):ET.parse(p)
+# Taxonomy topology copied from original Figure 3, including the unnumbered join.
+nodes={'sf':(130,415),'3':(195,505),'5':(455,415),'6':(715,415),'4':(585,505),'2':(390,600),'1':(650,680)}
+xs=[65,195,325,455,585,715,845,975]
+# Source reptile pair occupies tips snake/bird, centered between those tips.
+nodes['5']=(520,415);nodes['6']=(780,415);nodes['4']=(650,505);nodes['3']=(227.5,505);nodes['2']=(438.75,600);nodes['1']=(706.875,680)
+children={'sf':['salamander','frog'],'3':['sf','caecilian'],'5':['snake','bird'],'6':['human','cow'],'4':['5','6'],'2':['3','4'],'1':['2','fish']}
+pos=dict(nodes);pos.update({n:(x,350) for n,x in zip(names,xs)})
+b='<g id="tree-edges" fill="none" stroke="#243c43" stroke-width="5" stroke-linejoin="round">'
+for parent,ch in children.items():
+ px,py=pos[parent]
+ for child in ch:
+  cx,cy=pos[child];b+=f'<path id="edge-{parent}-{child}" data-parent="{parent}" data-child="{child}" d="M{px} {py} H{cx} V{cy}"/>'
+b+='<path d="M706.875 680 V720"/></g>'
+for name,x in zip(names,xs):
+ b+=f'<g id="tip-{name}">'+icon(name,x-43,265,0.85)+f'<text x="{x}" y="343" text-anchor="middle" font-family="Arial" font-size="19">{name}</text></g>'
+for n,(x,y) in nodes.items():
+ if n!='sf':b+=f'<g id="node-{n}"><circle cx="{x}" cy="{y}" r="21" fill="#e1edf0" stroke="#243c43" stroke-width="2"/><text x="{x}" y="{y+8}" text-anchor="middle" font-size="26" font-family="Arial">{n}</text></g>'
+def bar(id,label,x1,x2,y):
+ return f'<g id="group-{id}"><path d="M{x1} {y+30} V{y} H{x2} V{y+30}" fill="none" stroke="#53666c" stroke-width="2"/><text x="{(x1+x2)/2}" y="{y+23}" text-anchor="middle" font-family="Arial" font-size="25" fill="#243c43">{label}</text></g>'
+b+=bar('vertebrates','1. Vertebrates',20,1020,12)+bar('tetrapods','2. Tetrapods',20,890,57)+bar('amniotes','4. Amniotes',410,890,102)+bar('herpetofauna','Herpetofauna',20,500,147)+bar('amphibians','3. Amphibians',20,370,202)+bar('reptiles','5. Reptiles',410,630,202)+bar('mammals','6. Mammals',670,890,202)+bar('fish','Fish',930,1020,202)
+(P/'taxonomy.svg').write_text(svg(b,1040,740,'Eight vertebrate tips with original numbered groups'))
+assert set(children)=={'sf','1','2','3','4','5','6'}
+def tips(n):return {n} if n not in children else set().union(*(tips(c) for c in children[n]))
+assert tips('3')=={'salamander','frog','caecilian'}
+assert tips('5')=={'snake','bird'} and tips('6')=={'human','cow'}
+assert tips('1')==set(names) and tips('2')==set(names)-{'fish'}
+for p in P.glob('*.svg'):
+ root=ET.parse(p).getroot(); ids=[e.get('id') for e in root.iter() if e.get('id')];assert len(ids)==len(set(ids)),p
+ assert not any(e.tag.endswith('image') for e in root.iter())
+for p in [P/'selection_a.svg',P/'selection_b.svg']:
+ root=ET.parse(p).getroot()
+ for e in root.iter():
+  if e.get('data-count'):
+   assert len(e)==int(e.get('data-count'))
+   variants=sum(x.get('data-variant')=='true' for x in e)
+   assert variants==[0,1,3][int(e.get('id')[-1])-1]
+print('PASS: XML, unique IDs, image-free art, 3/6/3 counts and 0/1/3 variants; all source topology clades.')

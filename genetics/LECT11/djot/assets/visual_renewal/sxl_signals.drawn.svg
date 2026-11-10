@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc"><title id="title">X-linked signals and Sxl</title><desc id="desc">High, intermediate, and low X-linked signals lead to female, mixed, and male transcript states. The intermediate state includes both Sxl ON and OFF cells.</desc><rect width="1200" height="460" fill="white"/>
+<g id="lane-0-step-0"><rect x="15" y="55" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#A1467E" stroke-width="2"/>
+<text x="117" y="90" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">High</text>
+<text x="117" y="119" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">2 X equivalents</text>
+</g>
+<path d="M225 100 H247 l-7 -5 m7 5 l-7 5" fill="none" stroke="#A1467E" stroke-width="2"/>
+<g id="lane-0-step-1"><rect x="255" y="55" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#A1467E" stroke-width="2"/>
+<text x="357" y="90" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Sxl ON</text>
+<text x="357" y="119" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M465 100 H487 l-7 -5 m7 5 l-7 5" fill="none" stroke="#A1467E" stroke-width="2"/>
+<g id="lane-0-step-2"><rect x="495" y="55" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#A1467E" stroke-width="2"/>
+<text x="597" y="90" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">SXL protein</text>
+<text x="597" y="119" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M705 100 H727 l-7 -5 m7 5 l-7 5" fill="none" stroke="#A1467E" stroke-width="2"/>
+<g id="lane-0-step-3"><rect x="735" y="55" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#A1467E" stroke-width="2"/>
+<text x="837" y="90" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Female-specific</text>
+<text x="837" y="119" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">transcripts</text>
+</g>
+<path d="M945 100 H967 l-7 -5 m7 5 l-7 5" fill="none" stroke="#A1467E" stroke-width="2"/>
+<g id="lane-0-step-4"><rect x="975" y="55" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#A1467E" stroke-width="2"/>
+<text x="1077" y="90" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Normal female</text>
+<text x="1077" y="119" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<g id="lane-1-step-0"><rect x="15" y="190" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#926029" stroke-width="2"/>
+<text x="117" y="225" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Intermediate</text>
+<text x="117" y="254" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M225 235 H247 l-7 -5 m7 5 l-7 5" fill="none" stroke="#926029" stroke-width="2"/>
+<g id="lane-1-step-1"><rect x="255" y="190" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#926029" stroke-width="2"/>
+<text x="357" y="225" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">ON / OFF</text>
+<text x="357" y="254" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M465 235 H487 l-7 -5 m7 5 l-7 5" fill="none" stroke="#926029" stroke-width="2"/>
+<g id="lane-1-step-2"><rect x="495" y="190" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#926029" stroke-width="2"/>
+<text x="597" y="225" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">SXL in some cells</text>
+<text x="597" y="254" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M705 235 H727 l-7 -5 m7 5 l-7 5" fill="none" stroke="#926029" stroke-width="2"/>
+<g id="lane-1-step-3"><rect x="735" y="190" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#926029" stroke-width="2"/>
+<text x="837" y="225" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Female / male</text>
+<text x="837" y="254" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">transcripts</text>
+</g>
+<path d="M945 235 H967 l-7 -5 m7 5 l-7 5" fill="none" stroke="#926029" stroke-width="2"/>
+<g id="lane-1-step-4"><rect x="975" y="190" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#926029" stroke-width="2"/>
+<text x="1077" y="225" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Intersex</text>
+<text x="1077" y="254" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<g id="lane-2-step-0"><rect x="15" y="325" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#076DAD" stroke-width="2"/>
+<text x="117" y="360" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Low</text>
+<text x="117" y="389" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">1 X equivalent</text>
+</g>
+<path d="M225 370 H247 l-7 -5 m7 5 l-7 5" fill="none" stroke="#076DAD" stroke-width="2"/>
+<g id="lane-2-step-1"><rect x="255" y="325" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#076DAD" stroke-width="2"/>
+<text x="357" y="360" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Sxl OFF</text>
+<text x="357" y="389" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M465 370 H487 l-7 -5 m7 5 l-7 5" fill="none" stroke="#076DAD" stroke-width="2"/>
+<g id="lane-2-step-2"><rect x="495" y="325" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#076DAD" stroke-width="2"/>
+<text x="597" y="360" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">No SXL protein</text>
+<text x="597" y="389" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+<path d="M705 370 H727 l-7 -5 m7 5 l-7 5" fill="none" stroke="#076DAD" stroke-width="2"/>
+<g id="lane-2-step-3"><rect x="735" y="325" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#076DAD" stroke-width="2"/>
+<text x="837" y="360" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Male-specific</text>
+<text x="837" y="389" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">transcripts</text>
+</g>
+<path d="M945 370 H967 l-7 -5 m7 5 l-7 5" fill="none" stroke="#076DAD" stroke-width="2"/>
+<g id="lane-2-step-4"><rect x="975" y="325" width="205" height="90" rx="12" fill="#F4F6F7" stroke="#076DAD" stroke-width="2"/>
+<text x="1077" y="360" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Normal male</text>
+<text x="1077" y="389" font-family="Arial" font-size="20" text-anchor="middle" fill="#222"></text>
+</g>
+</svg>

@@ -1,0 +1,108 @@
+from pathlib import Path
+from html import escape
+import subprocess
+import xml.etree.ElementTree as ET
+P=Path(__file__).parent
+BLUE='#0067CC'; RED='#AD193D'; PURPLE='#713A9B'; INK='#243746'
+def svg(name,w,h,body,desc):
+ s=f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc"><title id="title">{escape(name)}</title><desc id="desc">{escape(desc)}</desc><rect width="{w}" height="{h}" fill="white"/><g font-family="Arial, sans-serif" font-size="26" fill="{INK}">{body}</g></svg>'
+ p=P/(name+'.drawn.svg');p.write_text(s);ET.parse(p)
+ for width in (320,1200):subprocess.run(['rsvg-convert','-w',str(width),str(p),'-o',str(P/f'{name}_{width}.png')],check=True)
+def t(x,y,s,size=26,color=INK):return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}">{escape(str(s))}</text>'
+def path(d,color=INK):return f'<path d="{d}" fill="none" stroke="{color}" stroke-width="4" stroke-linejoin="round"/>'
+def tree(x,y,order,col):
+ return f'<g transform="translate({x} {y})">'+path('M20 60 H45 V30 H85 M45 60 V90 H85 M20 60 V130 H85',col)+''.join(t(92,yy,s,24,col) for yy,s in zip((38,98,138),order))+'</g>'
+colors=[RED,BLUE,PURPLE]
+# Exact qualitative source only: relative bar heights carry order, no numerical axis.
+for orient in ('rows','columns'):
+ body=''
+ if orient=='rows':
+  for i,order in enumerate(('ABC','ACB','BCA')):body+=tree(280+i*155,0,order,colors[i])+t(300+i*155,175,f'Tree {i+1}',23,colors[i])
+  for j,label in enumerate(('Prior','Likelihood','Posterior')):
+   y=230+j*120;body+=t(20,y+35,label,27)+path(f'M275 {y+75} H745','#647482')
+   for i,v in enumerate(([45,45,45],[25,65,7],[25,65,7])[j]):body+=f'<rect x="{300+i*155}" y="{y+75-v}" width="65" height="{v}" fill="{colors[i]}"/>'
+  body+=t(20,620,'Illustrative heights; no numerical probability scale.',22)
+  svg('phy_b_bayes_rows',790,650,body,'Three candidate topologies AB|C, AC|B, BC|A. Equal priors; tree 2 has greatest likelihood and posterior; tree 3 least.')
+ else:
+  for i,order in enumerate(('ABC','ACB','BCA')):body+=tree(70+i*340,0,order,colors[i])+t(200+i*340,88,f'Tree {i+1}',26,colors[i])
+  for j,label in enumerate(('Prior','Likelihood','Posterior')):
+   x=30+j*360;body+=t(x+30,220,label,30)+path(f'M{x} 420 H{x+300}','#647482')
+   for i,v in enumerate(([90,90,90],[45,140,14],[45,140,14])[j]):body+=f'<rect x="{x+25+i*90}" y="{420-v}" width="55" height="{v}" fill="{colors[i]}"/>'+t(x+25+i*90,458,str(i+1),24,colors[i])
+  body+=t(30,520,'Illustrative heights; tree numbers and colors connect the three panels.',25)
+  svg('phy_b_bayes_columns',1100,550,body,'Left to right prior, likelihood, posterior. AB|C red tree 1; AC|B blue tree 2; BC|A purple tree 3. Equal priors; tree 2 highest and tree 3 lowest.')
+# Full source metric tree: geometry follows source heights exactly.
+x={'A':55,'D':140,'B':260,'F':345,'G':460,'C':610,'E':740};y0=65;scale=26
+nodes={k:(v,y0) for k,v in x.items()};body=''
+for k,v in x.items():body+=t(v-9,35,k,29)
+for name,a,b,height in [('AD','A','D',4),('BF','B','F',.5),('BFG','BF','G',6.25),('ADBFG','AD','BFG',8.25),('ADBFGC','ADBFG','C',14.5),('root','ADBFGC','E',17)]:
+ xa,ya=nodes[a];xb,yb=nodes[b];yy=y0+height*scale;xx=(xa+xb)/2;nodes[name]=(xx,yy)
+ col=BLUE if name=='BFG' else INK
+ body+=f'<g id="clade_{name}">'+path(f'M{xa} {ya} V{yy} H{xb} V{yb}',col)+'</g>'
+for height in (0,.5,4,6.25,8.25,14.5,17):
+ yy=y0+height*scale;body+=path(f'M805 {yy} H820','#647482')+t(830,yy+7,str(height),21)
+body+=path(f'M812 {y0} V{y0+17*scale}','#647482')+t(30,575,'Source merge heights; branch lengths retain the supplied values.',23)
+svg('phy_b_upgma_metric',900,600,body,'Source A-G UPGMA detail tree. Tip order A D B F G C E. Heights BF .5; AD 4; BFG 6.25; ADBFG 8.25; C join 14.5; E join 17.0. Blue marks BFG.')
+# One currently selected stage, preserving disconnected clusters.
+body=tree(20,20,'BFG',BLUE) # replace geometry with quantitative BF/G stage
+body=t(100,35,'B',30)+t(250,35,'F',30)+t(450,35,'G',30)+path('M110 60 V85 H260 V60',BLUE)+path('M185 85 V372 H460 V60',BLUE)+t(125,80,'0.5',23)+t(275,80,'0.5',23)+t(195,230,'5.75',25)+t(475,230,'6.25',25)+t(30,440,'BF joins G at height 6.25.',27)
+svg('phy_b_upgma_bfg',620,480,body,'Selected source merge BF plus G: BF tip branches .5, BF stem5.75, G branch6.25. Other A D C E clusters remain in native matrix.')
+mat='''| | AD | BF | C | E |
+|---|---|---|---|---|
+| BF | 18.00 | | | |
+| C | 26.50 | 31.50 | | |
+| E | 32.00 | 35.50 | 41.00 | |
+| G | 13.50 | 12.50 | 29.00 | 28.00 |
+'''
+P.joinpath('trial.djot').write_text('''color-theme: genetics
+
+=== layout: two-panels
+
+# UPGMA Trial A: One Merge
+
+@left
+
+'''+mat+'''
+- Merge BF and G at distance 12.50.
+- Height = 12.50 / 2 = 6.25.
+- A, D, C and E remain in the example.
+
+@right
+
+![BF joins G](phy_b_upgma_bfg.drawn.svg)
+
+=== layout: one-panel
+
+# UPGMA Trial B: Full Tree Context
+
+@body
+
+![Full A-G tree with BFG highlighted](phy_b_upgma_metric.drawn.svg)
+
+- Highlighted stage: BF joins G; merge height 6.25.
+
+=== layout: two-panels
+
+# Bayes Trial A: Stacked Rows
+
+@left
+
+![Three probability comparisons](phy_b_bayes_rows.drawn.svg)
+
+@right
+
+- Prior: Pr[Tree_i], before considering these observations.
+- Likelihood: Pr[Data|Tree_i], observations given a tree.
+- Posterior: Pr[Tree_i|Data], tree given observations.
+- Equal priors; Tree 2 receives most support.
+
+=== layout: one-panel
+
+# Bayes Trial B: Left to Right
+
+@body
+
+![Prior, likelihood and posterior](phy_b_bayes_columns.drawn.svg)
+
+- Prior Pr[Tree_i] + likelihood Pr[Data|Tree_i] determine posterior Pr[Tree_i|Data].
+- Bars are illustrative; no numerical probability scale.
+''')
