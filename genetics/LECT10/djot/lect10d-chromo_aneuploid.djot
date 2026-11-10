@@ -67,7 +67,7 @@ color-theme: genetics
 
 These are different questions. Count chromosomes *and* track their DNA.
 
-We will work through deletions and translocations in Lecture 11.
+We will return to chromosome rearrangements on December 1.
 
 === layout: section
 
@@ -127,7 +127,7 @@ each with two sister chromatids; DNA replication alone does not change its ploid
 
 @body
 
-{table-style=comparison}
+{table-style=comparison column-widths="1.5,3"}
 | Quantity | What Are We Counting? |
 | --- | --- |
 | *Monoploid, m* | Chromosomes in one basic set |
@@ -137,27 +137,22 @@ each with two sister chromatids; DNA replication alone does not change its ploid
 - Octoploid: one gamete has *four* basic sets
 - These numbers need not be equal in a polyploid
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# Practice: One Basic Set and One Gamete
+@question
 
-@body
+An octoploid plant has 64 chromosomes in a somatic cell. What are its monoploid (m) and haploid (h) numbers? Assume regular reduction in meiosis.
 
-An octoploid plant has *64 chromosomes* in a somatic cell.
+- A. m = 8, h = 8
+- B. m = 32, h = 32
+- C. m = 8, h = 32
+- D. m = 32, h = 8
+- E. m = 64, h = 32
+- F. m = 64, h = 8
 
-What are its monoploid (*m*) and haploid (*h*) numbers?
+@answer
 
-{table-style=working}
-| Choice | m | h |
-| --- | --- | --- |
-| A | 8 | 8 |
-| B | 32 | 32 |
-| C | 8 | 32 |
-| D | 32 | 8 |
-| E | 64 | 32 |
-| F | 64 | 8 |
-
-Hint: 64 &divide; 8 = 8; 64 &divide; 2 = 32. Assume regular reduction in meiosis.
+C. m = 8, h = 32
 
 === layout: one-panel
 
@@ -175,11 +170,9 @@ Hint: 64 &divide; 8 = 8; 64 &divide; 2 = 32. Assume regular reduction in meiosis
 - A gamete still contains *four basic sets*
 - The homework writes octoploid as 8n; here, eight refers to the number of basic sets
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# Practice: Chromosomes in a Gamete
-
-@body
+@question
 
 An octoploid plant has *72 chromosomes* in a somatic cell. How many chromosomes would be present in its gametes after regular reduction?
 
@@ -190,6 +183,10 @@ An octoploid plant has *72 chromosomes* in a somatic cell. How many chromosomes 
 - E. 36
 
 Hint: 72 &divide; 2 = 36; 72 &divide; 8 = 9.
+
+@answer
+
+E. 36 chromosomes
 
 === layout: one-panel
 
@@ -237,7 +234,7 @@ Hint: 72 &divide; 2 = 36; 72 &divide; 8 = 9.
 
 @body
 
-{table-style=comparison}
+{table-style=comparison text-align=left}
 | Karyotype Part | Meaning |
 | --- | --- |
 | 47 | Total chromosome count |
@@ -258,7 +255,7 @@ DNA replication changes chromatids, not this chromosome count.
 
 @body
 
-{table-style=comparison}
+{table-style=comparison column-widths="1.5,2,2"}
 | Division | Normal Separation | Nondisjunction |
 | --- | --- | --- |
 | Meiosis I | Homologous chromosomes | Homologs go to the same cell |
@@ -296,7 +293,7 @@ Follow *one chromosome pair* first. The other chromosomes can separate normally.
 
 @body
 
-{table-style=comparison}
+{table-style=comparison column-widths="1.6,2.6,2.3"}
 | Error | Gametes | What Changed? |
 | --- | --- | --- |
 | Meiosis I | n + 1, n + 1, n - 1, n - 1 | All four have the wrong count |

@@ -826,7 +826,7 @@ No BPW repository changes or permanent conversion generator are required.
 The semantic cell retains a positive horizontal span and optional left/center/right alignment.
 Grid validation counts logical columns, measurement uses the combined spanned width, and the
 existing ODP writer emits merged cells plus native covered positions. Explicit text alignment
-wins over numeric auto-alignment. Existing unspanned cells keep their original behavior.
+wins over numeric auto-alignment.
 
 **Why.** The BPW example needs equal gene columns, a Total label spanning all three genes,
 and centered class labels separated from right-aligned counts.
@@ -838,6 +838,23 @@ a gray covered column. Eight section/subsection dividers separate the lesson's t
 
 **Owner.** `slide_lib/native_model.py`, `slide_lib/djot_blocks.py`,
 `slide_lib/layout_measurement.py`, `slide_lib/layout_object_builders.py`, and table syntax docs.
+
+### Column-based numeric alignment
+
+**Decision.** Classify numeric columns from nonempty, unmerged body cells. Apply the preset's
+numeric region only to unmerged cells in columns whose values are all recognized numbers.
+Mixed columns keep preset defaults, so identifiers such as 47, XY, and +21 align consistently.
+Headers and merged cells do not classify columns. Equations and question marks are nonnumeric;
+empty columns and merged cells keep preset alignment. Matrix styles retain cell-based roles.
+
+**Why.** Per-cell numeric detection made scientific notation drift across a single column.
+The shared style resolver can correct this without changing source syntax, geometry, or export.
+
+**Consequence.** Rebuilt ordinary tables may change alignment. Existing table/cell overrides
+still win; Punnett and testcross preset defaults remain centered. The numeric matcher retains
+its existing vocabulary of signed integers, decimals, comma-separated numbers, and percentages.
+
+**Owner.** `slide_lib/table_styles.py` and the native table authoring guide.
 
 ### Persistent parental references
 

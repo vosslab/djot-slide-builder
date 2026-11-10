@@ -231,6 +231,24 @@ def _label(inlines: tuple[slide_lib.native_model.Inline, ...]) -> str:
 	return "".join(parts).strip()
 
 
+def _numeric_columns(table: slide_lib.native_model.Table) -> set[int]:
+	"""Classify columns from nonempty, unmerged body cells rather than individual values."""
+	numeric = set()
+	nonnumeric = set()
+	for row in table.rows:
+		for column, cell in slide_lib.native_model.table_cell_positions(row):
+			if cell.column_span != 1:
+				continue
+			label = _label(cell.inlines)
+			if label:
+				if _NUMERIC.fullmatch(label):
+					numeric.add(column)
+				else:
+					nonnumeric.add(column)
+	result = numeric - nonnumeric
+	return result
+
+
 def _matrix_offset(table: slide_lib.native_model.Table) -> int:
 	"""Require unique corresponding labels and one consistent cropped-axis offset."""
 	message = "matrix axes are ambiguous; use standard with explicit cell borders for this table"
@@ -316,6 +334,7 @@ def resolve_table(table: slide_lib.native_model.Table,
 		none, none, none, none, 4.0, 9.0, 4.0, 9.0)
 	base = _apply(base, definition.defaults, 10, theme)
 	offset = _matrix_offset(table) if definition.matrix is not None else 0
+	numeric_columns = _numeric_columns(table)
 	rows = ((table.headers,) if table.headers else ()) + table.rows
 	resolved = []
 	for row_index, row in enumerate(rows):
@@ -324,7 +343,11 @@ def resolve_table(table: slide_lib.native_model.Table,
 		projected = []
 		for column, cell in slide_lib.native_model.table_cell_positions(row):
 			roles = []
-			if not header and _NUMERIC.fullmatch(_label(cell.inlines)):
+			numeric = cell.column_span == 1 and column in numeric_columns
+			if definition.matrix is not None:
+				# Matrix axes and unused triangles retain their existing cell-based roles.
+				numeric = bool(_NUMERIC.fullmatch(_label(cell.inlines)))
+			if not header and numeric:
 				roles.append("numeric")
 			if definition.row_headings and column == 0 and not header:
 				roles.append("row-header")

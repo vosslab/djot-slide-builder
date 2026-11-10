@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="office-hours-title office-hours-desc">
+  <title id="office-hours-title">Office Hours</title>
+  <desc id="office-hours-desc">A yellow reminder note held by a red pushpin, with the words Office Hours in dark blue.</desc>
+  <g id="reminder-note" transform="rotate(-4 200 210)">
+    <path id="note-shadow" d="M53 67 H357 V328 L321 365 H53 Z" fill="#D9D5B6"/>
+    <path id="yellow-paper" d="M43 57 H347 V318 L311 355 H43 Z" fill="#FFF49A"/>
+    <path id="turned-corner" d="M311 355 V318 H347 Z" fill="#E4CF57"/>
+    <g id="note-label" fill="#183575" font-family="Arial, sans-serif" font-size="66" font-weight="700" text-anchor="middle">
+      <text x="195" y="179">Office</text>
+      <text x="195" y="260">Hours</text>
+    </g>
+  </g>
+  <g id="red-pushpin" transform="rotate(25 200 50)">
+    <path id="pin-needle" d="M197 65 L200 94 L204 65" fill="#6C6C6C"/>
+    <ellipse id="pin-base" cx="200" cy="63" rx="23" ry="11" fill="#B42131"/>
+    <path id="pin-body" d="M189 37 L185 61 Q200 71 215 61 L211 37 Z" fill="#D82F40"/>
+    <ellipse id="pin-head" cx="200" cy="35" rx="22" ry="13" fill="#F04452"/>
+    <ellipse id="pin-highlight" cx="194" cy="31" rx="9" ry="4" fill="#FFABB1"/>
+  </g>
+</svg>

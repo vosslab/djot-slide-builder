@@ -585,6 +585,11 @@ Use CSS-named `text-align=left`, `center`, or `right` in the same whole-cell wra
 Table headers default to centered black text on a light course-colored fill; all cells default
 to middle vertical alignment. The `standard` preset uses 9 pt horizontal and 4 pt vertical padding.
 
+Numeric auto-alignment is selected for whole body columns whose nonempty, unmerged cells are all
+recognized numbers. Mixed columns keep the preset's ordinary alignment. Headers and merged cells
+do not classify columns; merged cells keep preset alignment. Equations and `?` are nonnumeric.
+Entirely empty columns keep preset alignment. Matrix styles retain their cell-based numeric rules.
+
 Explicit alignment overrides header centering and numeric auto-alignment; it does not change column widths.
 For example, `[R]{background-color=#D38CED text-align=center}` centers a classification label.
 

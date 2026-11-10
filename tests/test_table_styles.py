@@ -61,18 +61,49 @@ def test_roles_are_conservative_and_heading_structure_is_authored(tmp_path: path
 	assert resolved.cells[0][1].text_alignment == "center"
 	assert resolved.cells[1][0].text_alignment == "center"
 	assert not resolved.cells[1][0].bold
-	assert resolved.cells[1][1].text_alignment == "right"
+	assert resolved.cells[1][1].text_alignment == "center"
 	assert resolved.cells[2][1].text_alignment == "center"
 	assert resolved.cells[3][0].bold
 	no_header = dataclasses.replace(table, headers=(), rows=(table.headers,) + table.rows)
 	assert not slide_lib.table_styles.resolve_table(no_header, theme, registry).cells[0][0].bold
 
 
+@pytest.mark.parametrize("style,normal,numeric", (
+	("standard", "left", "right"), ("comparison", "left", "right"),
+	("working", "left", "right"), ("testcross", "center", "right"),
+	("punnett", "center", "center"),
+))
+def test_columns_keep_mixed_notation_together(tmp_path: pathlib.Path,
+		style: str, normal: str, numeric: str) -> None:
+	"""Mixed notation and equations keep preset alignment; numeric columns include blanks."""
+	table = slide_lib.djot_blocks.parse_blocks(tmp_path / "columns.djot",
+		f"{{table-style={style}}}\n| Part | Count | Symbol | Empty |\n| --- | --- | --- | --- |\n"
+		"| 47 | *1,400* | 7 | |\n| XY | -12.5% | $x$ | |\n| +21 | | | |\n").blocks[0]
+	resolved = slide_lib.table_styles.resolve_table(table,
+		slide_lib.presentation_theme.default_theme(), slide_lib.table_styles.load_registry())
+	assert all(cell.text_alignment == "center" for cell in resolved.cells[0])
+	assert [[cell.text_alignment for cell in row] for row in resolved.cells[1:]] == \
+		[[normal, numeric, normal, normal]] * 3
+
+
+def test_merged_cells_do_not_classify_columns(tmp_path: pathlib.Path) -> None:
+	"""Merged totals neither contaminate numeric columns nor inherit one column's alignment."""
+	table = slide_lib.djot_blocks.parse_blocks(tmp_path / "merged.djot",
+		"| [Region]{colspan=2} | Count |\n| --- | --- | --- |\n"
+		"| First | 10 | 12 |\n| Second | 20 | 24 |\n"
+		"| [Total]{colspan=2} | 36 |\n| Combined | [30]{colspan=2} |\n").blocks[0]
+	resolved = slide_lib.table_styles.resolve_table(table,
+		slide_lib.presentation_theme.default_theme(), slide_lib.table_styles.load_registry())
+	assert [cell.text_alignment for cell in resolved.cells[1]] == ["left", "right", "right"]
+	assert [cell.text_alignment for cell in resolved.cells[3]] == ["left", "right"]
+	assert resolved.cells[4][1].text_alignment == "left"
+
+
 def test_matrix_cropped_axes_use_correspondence_and_preserve_values(tmp_path: pathlib.Path) -> None:
 	"""Cropped labels A/B/C versus B/C/D do not create a false geometric diagonal."""
 	table = slide_lib.djot_blocks.parse_blocks(tmp_path / "matrix.djot",
 		"{table-style=matrix-lower}\n| | B | C | D |\n| --- | --- | --- | --- |\n"
-		"| A | 11 | 12 | 13 |\n| B | 0 | 22 | 23 |\n| C | 31 | 0 | 33 |\n").blocks[0]
+		"| A | ? | 12 | 13 |\n| B | 0 | 22 | 23 |\n| C | 31 | 0 | 33 |\n").blocks[0]
 	before = table.rows
 	resolved = slide_lib.table_styles.resolve_table(table,
 		slide_lib.presentation_theme.default_theme(), slide_lib.table_styles.load_registry())
@@ -80,6 +111,7 @@ def test_matrix_cropped_axes_use_correspondence_and_preserve_values(tmp_path: pa
 	assert resolved.cells[2][1].background_color == "E6E6E6"
 	assert resolved.cells[3][2].background_color == "E6E6E6"
 	assert resolved.cells[3][1].background_color == "FFFFFF"
+	assert resolved.cells[3][1].text_alignment == "right"
 	assert resolved.cells[1][1].border_right.style == "none"
 	assert table.rows == before
 

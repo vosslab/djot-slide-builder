@@ -1382,3 +1382,78 @@ actions. The provisional guide/example and existing changelog archive remain byt
 to the pre-delivery freeze. Final snapshots, exact diffs, hashes and scoped ASCII, whitespace
 and Git-aware canonical nonignored-link checks are in `_temp/mouse_strawberry_mass_checkpoint/`.
 This five-drawing batch is complete; the broader all-lecture artwork goal remains **OPEN**.
+
+## Flower, cattle and assay queue
+
+**QUEUE checkpoint DONE_WITH_CONCERNS; artwork underway, 2026-11-10.** The manager promotes
+the optional Four-o-clock drawing from the frozen Genetics selection. The resulting queue is
+**16 SVGs in seven artist families, 60 uses: 57 visible and three hidden**, across three roots.
+Authored/hidden/visible counts remain Genetics LECT05f **55/0/55**, Genetics LECT05h **89/0/89**
+and Biotechnology LECT04c **390/6/384**. Current sources are ASCII. Frozen selection reports:
+`_temp/remaining_art_round5/genetics/REPORT.md`, SHA256
+`f7d2806e6505b240694dd1f083b6c42921dee1fecb0b85560129f6d82d1c2437`, and
+`_temp/remaining_art_round5/biotech/REPORT.md`, SHA256
+`f5ba53985d14cb4b2daa678c48de0c43358422e2083ee612a9f72be728edf802`.
+Their maps retain exact physical owners, placements, source blocks and original-media evidence.
+
+Seven active `gpt-6-astra` artists use high reasoning, with scratch-only ownership:
+
+- `/root/pea_flower_states_clipart`: `_temp/svg_pea_flower_states_art/`; six candidates
+  `pea_mendel_p.drawn.svg`, `pea_mendel_f1.drawn.svg`, `pea_mendel_f2.drawn.svg`,
+  `pea_complementary_p.drawn.svg`, `pea_complementary_f1.drawn.svg` and
+  `pea_complementary_f2.drawn.svg`, covering ten uses.
+- `/root/snapdragon_generations_clipart`: `_temp/svg_snapdragon_generations_art/`;
+  `snapdragon_generations.drawn.svg`, one use.
+- `/root/cattle_color_cross_clipart`: `_temp/svg_cattle_color_cross_art/`;
+  `cattle_color_cross.drawn.svg`, one use.
+- `/root/four_oclock_cross_clipart`: `_temp/svg_four_oclock_cross_art/`;
+  `four_oclock_incomplete_cross.drawn.svg`, one use.
+- `/root/western_workflow_clipart`: `_temp/remaining_art_round5_art/western_workflow/`;
+  `western_transfer_primary.drawn.svg` (11 uses) and `western_secondary_detection.drawn.svg`
+  (ten uses, with three hidden placements across the pair).
+- `/root/western_detection_clipart`: `_temp/remaining_art_round5_art/western_detection/`;
+  `western_detection_detail.drawn.svg`, seven uses.
+- `/root/elisa_assay_clipart`: `_temp/remaining_art_round5_art/elisa/`;
+  `elisa_indirect_sandwich.drawn.svg` (six uses), `elisa_indirect_hrpo.drawn.svg` (three),
+  `elisa_sandwich_biotin.drawn.svg` (seven) and `elisa_plate_readout.drawn.svg` (three).
+
+Independent source/art review, actual-source proofs and fresh quality review, canonical
+integration, full-root builds and a fresh base suite are all **PENDING**. LibreOffice owner is
+**NONE**; artists do not run LibreOffice. No staging changes occur for this queue. On restart,
+check owner handoffs and freeze candidate bytes before the manager dispatches fresh reviewers
+and assigns the single LibreOffice owner. The completed five-drawing delivery's **5791 passed,
+2 warnings in 26.79s** is historical evidence only; it validates none of this new artwork.
+
+Create original geometry rather than pixel tracing. Preserve native voice, prose, tables,
+layouts, markers, reveals, notes, hidden states, examples and original assets; replace art only.
+The inherited LECT05h three-purple/one-white icons beside native 382/269 counts and 9:7 wording
+remain documented, not globally repaired. Current LECT05f Four-o-clock wording governs that
+subject over the old ODP's snapdragon caption; its artist independently checks a primary
+botanical reference. Keep it distinct from the actual snapdragon family. New roan artwork
+depicts the taught intermixed red/white hair instead of copying old patch contours; native
+wording stays unchanged, and the separate `image_022.png` photograph stays exact.
+
+The narrow source-label exception follows [HUMAN_GUIDANCE.md](../../HUMAN_GUIDANCE.md), lines
+104-105: omit only textbook identifiers `Figure 6-23 part 1`, `Figure 6-23 part 2` and
+`Figure 5.22` from the new SVGs. Preserve full useful captions, credits, stage text and the
+descriptive `Diagram 1`/`Diagram 2` web-source captions. This supersedes the manager's broad
+all-words brief only for those textbook identifiers; no other omission is authorized.
+
+Hidden placement review covers three Western uses on authored pages 77-78: `image_030.jpg`
+twice and `image_031.jpg` once. Read-only explorer `/root/hidden_slide_review_export_route`
+found no CLI option: `slide_lib/libreoffice.py` fixes `ExportHiddenSlides` to false. The scratch
+route is recorded in `_temp/flower_assay_queue_checkpoint/HIDDEN_EXPORT_ROUTE.md`: a process-local
+`unittest.mock.patch.object` changes only that exact property for the existing
+`slide_lib.native_export.convert_odps_to_pdfs` call on untouched paired ODPs, writing distinct
+scratch supplemental PDFs. Require exactly one matching property and identical ODP hashes
+before/after. Ordinary proofs and canonical PDFs retain false; source/ODP hidden flags remain.
+The sole export owner must run all actual LibreOffice commands outside the sandbox. This route
+has not been externally validated and adds no production feature, option, framework or test.
+A full 390-page ODP would yield 390 supplemental pages; extracted-proof counts must derive
+from their actual authored counts. Supplements serve hidden-placement review only.
+
+This append accepts no artwork and runs no tests, builds, exports or index operations. Existing
+ledger bytes, other files and index entries remain intact; the existing changelog archive/link
+baseline is preserved. Before/after snapshots, exact append diff, hashes and scoped
+ASCII, whitespace, Git-aware canonical-link and unchanged-index checks are in
+`_temp/flower_assay_queue_checkpoint/`. The broader all-lecture artwork goal remains **OPEN**.

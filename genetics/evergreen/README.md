@@ -13,7 +13,7 @@ channel and spring registration. Genetics announcements include those groups usi
 Course-specific announcements reference the sources below with `=== include: repo:genetics/evergreen/<name>.djot`.
 Each weekly master controls visibility with its include's `hidden: true` or `hidden: false`.
 
-- `course_information.djot`: contact information, textbook, course links, and grading explanations.
+- `course_information.djot`: shared instructor contact slides, Genetics textbook, course links, and grading explanations.
 - `assessment_policies.djot`: technical difficulties and illness policies.
 - `quiz_guidance.djot`: quiz rules and grade guidance; show when a quiz is this week or next week.
 - `exam_guidance.djot`: exam rules, what to bring, and reviewing old quiz answers.

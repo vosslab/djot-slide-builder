@@ -14,6 +14,30 @@ color-theme: genetics
 | White flowers | 213 | 250 |
 | Total | 1,000 | 1,000 |
 
+=== layout: two-panels
+
+# Align by Column
+
+@left
+
+## Mixed notation stays together
+
+| Part | Meaning |
+| --- | --- |
+| 47 | Chromosome count |
+| XY | Sex-chromosome complement |
+| +21 | Extra copy of chromosome 21 |
+
+@right
+
+## Counts align as numbers
+
+| Offspring | Count |
+| --- | --- |
+| Purple | 787 |
+| White | 213 |
+| Total | 1,000 |
+
 === layout: one-panel
 
 # Standard: Keep the Science Visible

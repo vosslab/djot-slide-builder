@@ -2,6 +2,11 @@
 
 ### Additions and New Features
 
+- Align ordinary table bodies by column: numeric-only columns use their preset's numeric
+  alignment, while mixed notation keeps consistent preset alignment. Ignore headers, blanks,
+  and merged cells when classifying columns; preserve merged-cell defaults, matrix rules,
+  and explicit table/cell overrides. Add a mixed-notation example to the native table showcase.
+
 - Accept and integrate five original mouse-graft, strawberry, MALDI, electrospray and magnetic
   sector drawings through 24 image URLs in three ASCII sources. Independent source/art and
   actual-context reviews accept 34 paired contexts across 68 inspected PDF pages, preserving

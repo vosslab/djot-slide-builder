@@ -28,15 +28,27 @@ color-theme: genetics
 
 @body
 
-- Quiz 4 is due before class; group quiz during class.
+- Gene trees and population genetics; gene-tree activity.
 - Homework assignments 09 and 10 are due.
-- Movie Night is on the course schedule.
+- Movie Night: choose our movie today!
+- Quiz 4 is due December 1; no class November 24.
 
 @citation
 
 https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
+=== layout: one-panel
+
+# Movie Night: Choose Our Movie
+
+@body
+
+- Movie Night is Tuesday, November 17.
+- Choose from *Our Times*, *Biosphere*, *Vesper*, and *The Animal Kingdom*.
+- See the separate movie-choice slides for descriptions and details.
+
 === layout: big-image
+hidden: true
 
 @image
 
@@ -82,7 +94,7 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === layout: one-panel
 
-# Exam and Quiz Schedule
+# Current Exam and Quiz Schedule
 
 @body
 
@@ -90,9 +102,59 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Nov 17]{color=#990000}
+- [Quiz 4: Dec 01]{color=#000000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
+
+=== layout: two-panels
+
+# Two Proposed Schedules
+
+@left
+
+## Option 1: Keep Quiz 5
+
+- *Dec 1*: Group Quiz 4
+- *Dec 8*: Group Quiz 5
+- *Dec 15*: Final Exam
+
+@right
+
+## Option 2: Drop Quiz 5
+
+- *Dec 1*: Group Quiz 4
+- *Dec 8*: No Quiz 5
+- *Dec 15*: Final Exam
+
+=== layout: two-panels
+
+# Keeping Quiz 5: The Tradeoff
+
+@left
+
+## Benefits
+
+- Group quizzes are easier to do well on and can boost your grade.
+- Another quiz helps you prepare for the Final Exam.
+
+@right
+
+## Cost
+
+- You have to study for another quiz.
+
+=== layout: one-panel
+
+# Vote: Which Schedule Do You Prefer?
+
+@body
+
+- *1. Keep Quiz 5*
+  - Group Q4: Dec 1; Group Q5: Dec 8; Final Exam: Dec 15
+- *2. Drop Quiz 5*
+  - Group Q4: Dec 1; no Q5; Final Exam: Dec 15
+
+*Vote for option 1 or option 2.*
 
 === include: repo:genetics/evergreen/assessment_policies.djot
 
@@ -131,7 +193,7 @@ hidden: true
 - Check Blackboard for assignment availability and submission times
 
 === include: repo:genetics/evergreen/quiz_guidance.djot
-hidden: false
+hidden: true
 
 === layout: subsection
 

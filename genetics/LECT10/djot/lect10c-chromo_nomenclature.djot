@@ -100,7 +100,7 @@ color-theme: genetics
 
 A gene has a chromosome address, like a book has a library address.
 
-{table-style=comparison}
+{table-style=comparison text-align=left}
 | Part | What It Names | Example |
 | --- | --- | --- |
 | Chromosome | Which chromosome? | 7 |
@@ -133,7 +133,7 @@ A gene has a chromosome address, like a book has a library address.
 
 @left
 
-{table-style=comparison}
+{table-style=comparison text-align=left}
 | Address Part | Meaning |
 | --- | --- |
 | [*7*]{color=#D40000} | Chromosome 7 |
@@ -179,11 +179,9 @@ Band numbers increase as we move *away from the centromere*.
 
 https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# Practice: Band Order
-
-@body
+@question
 
 For chromosome *17q*, which band lies most distal (farthest from the centromere)?
 
@@ -194,6 +192,10 @@ For chromosome *17q*, which band lies most distal (farthest from the centromere)
 - E. 17q41.3
 
 *Use these schematic labels to practice the numbering rule.*
+
+@answer
+
+E. 17q41.3
 
 === layout: one-panel
 
@@ -218,7 +220,7 @@ These are schematic labels, not a map of verified human chromosome 17 bands.
 
 @body
 
-{table-style=comparison}
+{table-style=comparison text-align=left}
 | Part | Meaning |
 | --- | --- |
 | 47 | Number of chromosomes |
@@ -232,11 +234,9 @@ These are schematic labels, not a map of verified human chromosome 17 bands.
 
 https://medlineplus.gov/genetics/condition/down-syndrome/
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# Practice: Read the Karyotype
-
-@body
+@question
 
 What does *47,XY,+21* describe?
 
@@ -245,6 +245,10 @@ What does *47,XY,+21* describe?
 - C. XY with an extra pair of chromosome 21
 - D. XX with one extra copy of chromosome 21
 - E. XY with one extra copy of chromosome 21
+
+@answer
+
+E. XY with one extra copy of chromosome 21
 
 === layout: one-panel
 

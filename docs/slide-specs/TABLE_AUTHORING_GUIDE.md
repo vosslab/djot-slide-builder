@@ -4,6 +4,15 @@ Write an ordinary pipe table first. The builder supplies course-colored headings
 spacing, numeric alignment, and a distinct total row. Keep the table's labels, units, and
 scientific notation in the source.
 
+Alignment follows each body column. If every nonempty, unmerged value is recognized as numeric,
+the column receives the preset's numeric alignment (normally right). Mixed columns such as
+`47`, `XY`, and `+21` keep the preset's ordinary alignment (normally left). Headers and merged
+cells do not classify columns; entirely empty columns and merged cells keep preset alignment.
+Equations and placeholders such as `?` count as nonnumeric. Numeric recognition includes signed
+integers, decimals, comma-separated numbers, and percentages. Testcross symbols and Punnett
+outcomes keep their centered preset alignment; matrix styles retain their existing cell rules.
+Explicit table and cell alignment overrides still take precedence.
+
 ```djot
 | Offspring phenotype | Observed | Expected |
 | --- | --- | --- |

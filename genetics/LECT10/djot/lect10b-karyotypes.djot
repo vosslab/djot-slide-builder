@@ -375,9 +375,9 @@ Match each description to a term.
 {table-style=comparison}
 | Description | Term |
 | --- | --- |
-| Nearly equal arms | [*Metacentric*]{color=#0067CC} |
-| Slightly unequal arms | [*Submetacentric*]{color=#C80085} |
-| Very short p arm | [*Acrocentric*]{color=#007A00} |
+| Centromere near the middle; nearly equal arms | [*Metacentric*]{color=#0067CC} |
+| Centromere slightly off-center | [*Submetacentric*]{color=#C80085} |
+| Very short p arm and long q arm | [*Acrocentric*]{color=#007A00} |
 | No centromere | [*Acentric*]{color=#D40000} |
 | Two centromeres | [*Dicentric*]{color=#076DAD} |
 

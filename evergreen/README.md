@@ -11,6 +11,7 @@ own `evergreen/` folder; single-lecture content and dated snapshots stay with th
   and copy the chosen title and body into the weekly deck; provenance paths are repository-relative.
 - [assets/rec_reminder_image.svg](assets/rec_reminder_image.svg): reusable recording reminder.
   Its editable ODG source and PNG companion remain local and ignored by Git.
+- [instructor_contact.djot](instructor_contact.djot): Discord, office hours, contact options, and anonymous message slides.
 - [youtube_channel.djot](youtube_channel.djot): Informational Slides divider and channel slide.
   Insert the weekly podcast episode immediately afterward. The channel image is in
   `assets/youtube_channel.png`.
