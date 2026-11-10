@@ -1,5 +1,53 @@
 ## 2026-11-10
 
+### Fixes and Improvements
+
+- Set all four courses' ultra light colors to 90% HSL lightness while preserving their original
+  accent hue and saturation within 8-bit rounding. Keep dark/medium/light divider colors intact;
+  update the color guide and recheck the course contrast pairs.
+
+- Restore Genetics 10A's three main sections as the organizing structure. Keep title, agenda,
+  weather, icebreaker, and Next Week in the opening; move Quiz 5 Vote to the normal Quiz position
+  under Course Content and movie selection to a Movie Night subsection under General Announcements.
+  Preserve every existing slide's wording and visibility; add the movie subsection card.
+
+- Save refreshed NWS weather graphics as quality-90 WebP snapshots at their original dimensions.
+  Keep PNG input validation and immutable names based on the saved bytes; finish conversion
+  before writing decks. Update the existing refresh regression and authoring/usage guidance.
+
+- Finish the queued Genetics 10B chromosome-shape reversion: restore the original textbook
+  figures on B33-36 while retaining native headings, the matching exercise, and 55 slides.
+  Original embedded image bytes match the four restored PNGs. Update the repair inventory
+  from seven dropped/four recommended to eleven dropped drawings, retaining their source files.
+
+- Ground the voice guide in original Lecture 10 ODP/PDF evidence. Check fourteen exact excerpts
+  across announcements and content decks, retain original slide/PDF references and word counts,
+  and include longer prose as counterexamples to a universal short-word limit. Replace invented
+  wording/title examples with original-slide examples. Distinguish observed usage, recorded
+  preferences, and editorial recommendations in a linked source-evidence record.
+
+- Correct the slide-voice guidance: short complete sentences are welcome. The instructor's
+  concern is long, fully decorated prose with embedded definitions or clauses, with roughly
+  10-15 words as an editorial cue and flexibility for long subjects. Replace the earlier
+  categorical sentence ban in human guidance; add the instructor's trisomy 21 example and a
+  possible split in the voice guide. Preserve established instructor wording.
+
+- Add `docs/SVG_REPAIR_BACKLOG.md` as the official rejected-drawing inventory. Record seven
+  removed Lecture 10 drawings and four chromosome-shape drawings still in use with replacement
+  recommended, including exact asset paths, reasons, replacements, source baselines, and repair
+  targets. Link it from SVG guidance, the slide-spec index, and the Lecture 10 review.
+
+- Refresh Genetics 10A's NWS Chicago weather story with the weather script on lecture day.
+  Replace the hidden November 1 snapshot with today's visible story before the icebreaker.
+  Clarify the required today/tomorrow refresh command and visible-slide verification in the
+  announcement-deck guide. Keep the original PNG and full editable caption with dated citation.
+
+- Restore Genetics 10B's original homolog question (original B15, current B16): retain its
+  karyotype context, original five choices, and all-of-the-above answer. Replace the generated
+  follow-up with the original answer traits and chromosome-pair figure. The conversion had added
+  a before-replication condition to the X-shaped choice and changed the correct answer.
+  Keep the native answer reveal and 55-slide count; rebuild and inspect both corrected pages.
+
 ### Additions and New Features
 
 - Add `movie-panel` with editable text on the left and a narrower 2:3 poster slot on the right.
@@ -306,6 +354,20 @@
   [genetics_visual_renewal_progress.md](active_plans/reports/genetics_visual_renewal_progress.md).
 
 ### Fixes and Maintenance
+
+- Give Genetics 10B's banding/chromatin comparison consistent teal G-band/heterochromatin
+  and magenta R-band/euchromatin labels. Keep stain names and shared condensation neutral;
+  replace generic blue/gold highlights with bold neutral text elsewhere while preserving
+  wording, figures, chromosome-shape keys, and answer reveals. Record the comparison key.
+
+- Add Genetics 10B's early `question-ask` pause, "How Many Sets of Chromosomes in Human Cells?",
+  before the unchanged original explanatory slide. Keep the somatic-cell/gamete distinction
+  in speaker notes; retain every prior source block and rebuild the now-55-slide deck.
+
+- Enlarge Genetics 10A's Movie Night vote posters using the existing four-across `gallery`
+  layout instead of the existing two-by-two `four-panels` recap. Posters are about 2.2 times
+  taller, with original files/order and editable title/year legend retained. Keep 43 visible
+  slides and the shared pipeline unchanged; inspect the rebuilt vote page.
 
 - Restore Genetics 10C's original three chromosome-group teaching slides before Banding Pattern,
   with the instructor's wording, group D/E and X/Y figures, and SRY locus callout. Remove their

@@ -68,15 +68,15 @@ colors illustrate the roles.
 
 Preserve the course accent's hue and saturation, changing lightness. Keep every step in
 `black -> dark -> medium -> light -> white` at least 2:1, aiming near `21**(1/4)` (2.14:1).
-Ultra light sits between light and white; its HSL lightness is their midpoint. These surfaces
+Ultra light uses 90% HSL lightness, retaining the course accent's hue and saturation. These surfaces
 remain recognizably blue, green, purple, or red. Native shapes and title sizes reinforce the levels.
 
 | Course | Dark | Medium | Light | Ultra light | Original HSL saturation |
 | --- | --- | --- | --- | --- | --- |
-| Genetics | `#1C4470` | `#3177C3` | `#8CB5E2` | `#C6DAF0` | 59.8% |
-| Biostatistics | `#0C4F17` | `#158928` | `#1FCC3B` | `#88ED98` | 73.5% |
-| Biochemistry | `#45405C` | `#78709C` | `#B3AEC7` | `#D9D7E3` | 18.2% |
-| Biotechnology | `#861614` | `#DF2D2A` | `#F09B9A` | `#F7CDCC` | 74.0% |
+| Genetics | `#1C4470` | `#3177C3` | `#8CB5E2` | `#d6e5f5` | 59.8% |
+| Biostatistics | `#0C4F17` | `#158928` | `#1FCC3B` | `#d3f8d9` | 73.5% |
+| Biochemistry | `#45405C` | `#78709C` | `#B3AEC7` | `#e3e1ea` | 18.2% |
+| Biotechnology | `#861614` | `#DF2D2A` | `#F09B9A` | `#f8d3d3` | 74.0% |
 
 The source of these values is `CourseColorTheme` in
 [presentation_theme.py](../../slide_lib/presentation_theme.py). Saturation and hue vary slightly
@@ -125,6 +125,9 @@ Established examples:
   gray. A step color and a data-class color are separate roles.
 - **Tetrads:** retain PD gold, TT magenta, and NPD green through related formulas and examples,
   following the instructor's labeled-diagram guidance.
+- **Banding/chromatin comparison:** use teal `#00775F` for G-bands and heterochromatin,
+  and magenta `#C80085` for R-bands and euchromatin. Carry these cues through the comparison.
+  Keep stain names and shared processes, such as both forms condensing, in neutral text.
 - **Chromosome alterations:** use the full alteration names and the mappings recorded in
   [../COLOR_PALETTE.md](../COLOR_PALETTE.md); chromosome fills still identify source chromosomes.
 - **Contact options:** preserve green Office hours, red Discord, blue Email, and purple

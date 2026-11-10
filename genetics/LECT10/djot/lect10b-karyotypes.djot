@@ -18,10 +18,10 @@ color-theme: genetics
 
 @body
 
-- Explain [*karyotype preparation*]{color=#24578F}
-- Compare [*banding*]{color=#24578F} and [*chromosome painting*]{color=#935D00}
-- Classify chromosome shapes by [*centromere position*]{color=#24578F}
-- Connect [*HeLa cells*]{color=#24578F} with research and consent
+- Explain *karyotype preparation*
+- Compare *banding* and *chromosome painting*
+- Classify chromosome shapes by *centromere position*
+- Connect *HeLa cells* with research and consent
 
 === layout: section
 
@@ -36,6 +36,16 @@ color-theme: genetics
 - Chromosome changes in humans, other animals, and plants
 - Animals generally tolerate these changes less well than plants
 - Duplicating an entire chromosome set is not necessarily harmful in plants
+
+=== layout: question-ask
+
+# How Many Sets of Chromosomes in Human Cells?
+
+@notes
+
+Start with somatic cells: two sets of 23 chromosomes, one maternal and one paternal.
+Distinguish two chromosome sets from 23 homologous pairs. Human gametes have one set of 23.
+Use the following original slide to introduce karyotypes after students respond.
 
 === layout: one-panel
 
@@ -103,9 +113,9 @@ Answer\: C
 
 @body
 
-- Giemsa staining gives each chromosome a recognizable pattern of *G-bands*
-- Dark G-bands: generally AT-rich; fewer genes
-- Reverse staining highlights *R-bands*: generally GC-rich and relatively gene-rich
+- Giemsa staining gives each chromosome a recognizable pattern of [*G-bands*]{color=#00775F}
+- [*Dark G-bands*]{color=#00775F}: generally AT-rich; fewer genes
+- Reverse staining highlights [*R-bands*]{color=#C80085}: generally GC-rich and relatively gene-rich
 
 === layout: two-panels
 
@@ -117,8 +127,8 @@ Answer\: C
 
 @right
 
-- [*Heterochromatin*]{color=#24578F}: more tightly packed in interphase
-- [*Euchromatin*]{color=#24578F}: less tightly packed in interphase
+- [*Heterochromatin*]{color=#00775F}: more tightly packed in interphase
+- [*Euchromatin*]{color=#C80085}: less tightly packed in interphase
 - Both condense into visible chromosomes during cell division
 
 === layout: two-panels
@@ -129,8 +139,8 @@ Answer\: C
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_007.png)
 
-- G-bands: relatively gene-poor
-- R-bands: relatively gene-rich
+- [*G-bands*]{color=#00775F}: relatively gene-poor
+- [*R-bands*]{color=#C80085}: relatively gene-rich
 
 @right
 
@@ -147,31 +157,42 @@ Answer\: C
 
 @question
 
-*Your Turn: Recognizing Homologs*
+In a human karyotype, chromosomes are arranged in 23 pairs. If we choose one of these pairs, such as pair 14, which of the following do the two chromosomes of the pair have in common?
 
-Two chromosome 14 [*homologs*]{color=#24578F}: what should they have in common? *Select all that apply.*
+More than one may be correct.
 
-- A. Similar length
-- B. Same centromere position
-- C. Same banding pattern
-- D. The same genes at corresponding locations
-- E. Always an X shape, even before DNA replication
+- A. length
+- B. position of the centromere
+- C. staining pattern
+- D. character coded for by their genes
+- E. X-shaped
 
 @answer
 
-A, B, C, and D.
+Answer\: all of the above
 
-=== layout: one-panel
+=== layout: two-panels
 
-# Recognizing Homologs: Explanation
+# Recognizing Homologs: Answer
 
-@body
+@left
 
-- [*A, B, C, and D*]{color=#007A00}
-- [*Homologs*]{color=#24578F}: same genes; possibly different alleles
-- [*X shape*]{color=#935D00}: after DNA replication
-- Replicated homolog: *two sister chromatids*
-- Before replication: *the same chromosome*
+- [*All of the above*]{color=#007A00}
+- length
+- position of the centromere
+- staining pattern
+- character coded for by their genes
+- X-shaped
+
+@right
+
+![Original homolog comparison](assets/lect10b-karyotypes/image_009.png)
+
+@notes
+
+The question concerns chromosomes in a human karyotype: condensed, replicated chromosomes.
+The original X-shaped choice refers to that context. Each replicated chromosome has two sister
+chromatids; the homologs carry genes for the same characters and may have different alleles.
 
 === layout: subsection
 
@@ -183,10 +204,10 @@ A, B, C, and D.
 
 @body
 
-- [*DNA probes*]{color=#24578F}: binding to matching chromosome sequences
-- [*FISH*]{color=#935D00}: fluorescence in situ hybridization
+- *DNA probes*: binding to matching chromosome sequences
+- *FISH*: fluorescence in situ hybridization
 - Fluorescent labels: visible chromosome sequences
-- [*Chromosome painting*]{color=#24578F}: probe mixtures; different chromosome colors
+- *Chromosome painting*: probe mixtures; different chromosome colors
 
 === layout: one-panel
 
@@ -309,7 +330,7 @@ A, B, C, and D.
 
 @body
 
-![Lecture diagram](assets/visual_renewal/centromere_positions.drawn.svg)
+![Original textbook comparison of centromere positions and chromosome arms](assets/lect10b-karyotypes/image_022.png)
 
 === layout: one-panel
 
@@ -317,7 +338,7 @@ A, B, C, and D.
 
 @body
 
-![Lecture diagram](assets/visual_renewal/metacentric_movement.drawn.svg)
+![Original textbook diagram of metacentric chromosome movement](assets/lect10b-karyotypes/image_023.png)
 
 === layout: one-panel
 
@@ -325,7 +346,7 @@ A, B, C, and D.
 
 @body
 
-![Lecture diagram](assets/visual_renewal/submetacentric_movement.drawn.svg)
+![Original textbook diagram of submetacentric chromosome movement](assets/lect10b-karyotypes/image_024.png)
 
 === layout: one-panel
 
@@ -333,7 +354,7 @@ A, B, C, and D.
 
 @body
 
-![Lecture diagram](assets/visual_renewal/acrocentric_movement.drawn.svg)
+![Original textbook diagram of acrocentric chromosome movement](assets/lect10b-karyotypes/image_025.png)
 
 === layout: one-plus-two-panels
 
@@ -559,10 +580,10 @@ https://www.cancer.gov/types/cervical/causes-risk-prevention
 
 @body
 
-- [*Karyotypes*]{color=#24578F}: condensed chromosomes in homologous pairs
-- [*Banding and probes*]{color=#24578F}: chromosome identification
-- [*Centromere position*]{color=#24578F}: chromosome shapes
-- [*HeLa cells*]{color=#24578F}: chromosome variation, research, consent
+- *Karyotypes*: condensed chromosomes in homologous pairs
+- *Banding and probes*: chromosome identification
+- *Centromere position*: chromosome shapes
+- *HeLa cells*: chromosome variation, research, consent
 
 === layout: theend
 

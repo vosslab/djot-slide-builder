@@ -7,29 +7,39 @@ The full original/current comparison, local repairs, and restored agenda are rec
 
 | Deck | Authored / ODP | Visible PDF | Hidden |
 | --- | --- | --- | --- |
-| A | 64 | 43 | 21 |
-| B | 54 | 54 | 0 |
+| A | 65 | 45 | 20 |
+| B | 55 | 55 | 0 |
 | C | 28 | 28 | 0 |
 | D | 65 | 65 | 0 |
 
 The historical bridges below predate the latest topic dividers and question-layout repairs.
 Use the November 10 review for current page references. The continuation on chromosome
 rearrangements is December 1; November 17 covers gene trees/population genetics and movie night.
-The approved opening order is agenda, icebreaker, Next Week, quiz schedule/vote, then movie
-choices/vote. Routine announcements follow. Pages A12-15 present the four movie choices in `movie-panel`; A16 recaps their titles and posters
-for the vote. Their wording and poster bytes come from the supplied movie-choice ODP. The five
-inserted pages place the existing contact slides at A22-23. See
+The opening is title, agenda, today's weather (A3), icebreaker (A4), and Next Week (A5).
+The three main sections guide the rest: Informational Slides at A6-12, Course Content at A13-29,
+and General Announcements at A30-44. Contact slides are A11-12. The assessment schedule is A23;
+Quiz 5 Vote is A24-27 at the normal Quiz position before Weekly Assignments.
+Movie Night has its own subsection at A31, followed by the setup at A32, the four original
+`movie-panel` choices at A33-36, and the four-across `gallery` vote at A37. Registration follows.
+Movie wording and poster bytes come from the supplied movie-choice ODP. See
 [LECT10_REVIEW.md](LECT10_REVIEW.md#november-10-movie-choices).
+B5 adds the opening question-to-ponder about chromosome sets; B6 retains the original explanatory
+slide. B has 55 visible slides, with all prior content retained in order.
+B16 restores the original B15 homolog question, its five choices, and the original all-of-the-above
+answer. B17 restores the original answer traits and chromosome-pair figure. The earlier generated
+"even before DNA replication" distractor and A-D answer are superseded by this source restoration.
+B33-36 restore the four original textbook chromosome-shape figures; their rejected SVG replacements
+remain in the repair backlog, with the restoration now complete. Native headings and matching stay intact.
 C5 and C8 restore original banded chromosome figures. C9-11 restore the original three
 chromosome-group teaching slides before Banding Pattern (C12), including X/Y and the SRY locus.
 C15-17 contain the unanswered CFTR question, worked answer with original band-location figure,
 and enlarged figure. C19 and C23 are the contrast-corrected multiple-choice questions. Summary
 is C25; chromosome-group content is taught in the main sequence. C has 28 visible pages, so
-Lecture 10 totals are 211 authored / 190 visible / 21 hidden. Earlier page bridges are historical.
+Lecture 10 totals are 213 authored / 193 visible / 20 hidden. Earlier page bridges are historical.
 D32 now introduces Down Syndrome with `subsubsection`; D36 pairs the health text with the former
 standalone D39 image, and D39 illustrates cohesion. D41 retains `question-ask`; D42 restores the
 original fertility contrast and historical counts. D44 uses `subsubsection` for "How Three Homologs
-Separate during Meiosis". A3 remains an icebreaker using `prompt`; counts are unchanged.
+Separate during Meiosis". A4 is the icebreaker using `prompt`.
 D26 restores the original D39 question's full-width choices, with shorter wording and counts
 out of four gametes. Its answer remains C with the native reveal.
 The initial text/color follow-up overreached into established instructor prose. The subsequent

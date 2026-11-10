@@ -55,20 +55,22 @@ ignored; they do not use the reviewed-original-drawing suffix or new tracking ex
 
 ### Manual weather story snapshots
 
-**Decision.** Capture every published NWS Chicago weather-story tab's PNG and complete description
-in its own `big-image` slide immediately before the icebreaker (updated November 3, 2026). Preview by default; save explicitly.
+**Decision.** Fetch every published NWS Chicago weather-story tab's PNG, save it as quality-90
+WebP at its original dimensions, and capture the complete description in its own `big-image`
+slide immediately before the icebreaker (updated November 10, 2026). Preview by default; save explicitly.
 Use the description as native caption text. Put attribution, retrieval date, and source URL in
 the separate `@citation` footer, as requested by the instructor.
 
 **Why.** The forecasters choose a useful conversation starter. A local snapshot preserves that
 choice for the lecture and keeps normal builds offline. The story's image filename can change.
 
-**Consequence.** Store immutable, content-addressed PNGs beside each selected deck and replace
+**Consequence.** Store immutable, content-addressed WebP snapshots beside each selected deck and replace
 the managed weather slides. Validate matching tab titles/panels, official HTTPS URLs, images, and every
 insertion point before writing. Long captions may grow down into the unused lower margin,
 with image geometry fixed and citation clearance preserved. Keep existing font fitting and
 accept roughly 15 pt for this use. Include all published tabs; historical forecast lookup remains outside this workflow.
 Downloaded text stays literal Djot; URL admission and redirect validation apply ASVS 2.2.1/1.2.2.
+Validate PNG input before WebP encoding (ASVS 5.2.2), completing conversion before saving any deck.
 Native caption text sits in a wrapping text frame; its rounded panel is master decoration.
 Text directly inside the rectangle ran off-page in LibreOffice despite measured wrapping.
 
@@ -525,7 +527,8 @@ native master shapes and slide-owned text. `section` uses dark color, white text
 `subsection` uses a light full-width center band with medium top/bottom and black text.
 `subsubsection` uses a dark rectangular center with light edges and white text. Course palettes
 provide `dark_color`, `medium_color`, `light_color`, and `ultra_light_color`; ordinary accents
-remain separate. Cover cards use ultra light, the top gradient starts at medium, and THE END
+remain separate. Ultra light uses 90% HSL lightness while retaining the course accent's hue
+and saturation. Cover cards use ultra light, the top gradient starts at medium, and THE END
 uses ultra light type on dark color.
 
 **Why.** A shared transition treatment flattened the teaching hierarchy between chapters and their
@@ -1048,10 +1051,11 @@ instead of interrupting current-course material (November 3, 2026).
 ### Announcement divider hierarchy
 
 **Decision.** Use exactly three main sections: Informational Slides, Course Content, and General
-Announcements. Title, agenda, Next Week, weather, and icebreaker precede the first section. Informational
+Announcements. Title, agenda, weather, icebreaker, and Next Week precede the first section. Informational
 Slides contains YouTube/STVC and contact information. Course Content begins before the textbook
 and contains grading, Quiz/Exam, Quiz, Exam, and Weekly Assignments as subsections. General
-Announcements contains registration, evaluations, and Natural Science Club as subsections.
+Announcements contains movie selection, registration, evaluations, and Natural Science Club as
+subsections. Quiz-schedule votes belong at the normal Quiz position under Course Content.
 Omit the redundant Textbooks divider. Use assessment overview, Exam, Quiz, then Assignments. Keep conditional groups controlled by
 weekly master visibility; Natural Science Club remains hidden.
 
@@ -1061,7 +1065,7 @@ pre-section opening.
 
 ### Weekly lookahead and conditional reminders
 
-**Decision.** Put a dated Next Week slide after the agenda, using the current course schedule
+**Decision.** Put a dated Next Week slide after the icebreaker, using the current course schedule
 for deadlines and class events. Keep course-specific assessment rules. The common assessment
 sequence is overview, Exam, Quiz, then Assignments; the old reverse order is not a defect.
 Textbooks may sit under information or course content; use the current shared Genetics placement.

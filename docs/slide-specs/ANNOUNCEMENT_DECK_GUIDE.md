@@ -18,9 +18,9 @@ lecture's current-year announcements, checking dates and relevance against the c
 
 1. Title page: lecture number/letter, Announcements, instructor, and lecture date.
 2. Today's Agenda: topics and activities in the current content decks.
-3. Next Week: dated lookahead, mainly work due and what happens in class the following week.
-4. Weather: saved NWS Chicago stories, one slide per published option.
-5. Icebreaker: fun content-related prompt, with concrete examples and suggestions.
+3. Weather: saved NWS Chicago stories, one slide per published option.
+4. Icebreaker: fun content-related prompt, with concrete examples and suggestions.
+5. Next Week: dated lookahead, mainly work due and what happens in class the following week.
 
 Keep this opening before the first section divider. Choose a fun question tangentially related
 to some aspect of the week's content. Compare the previous two lectures' prompts and examples,
@@ -35,11 +35,6 @@ Present examples as sample responses, and use
 instructor answers when supplied. The catalog's body fragments contain both required slots.
 See [QUESTION_LAYOUTS.md](QUESTION_LAYOUTS.md#open-prompts-and-icebreakers) for the format.
 Use the current course schedule for the lookahead's dates, deadlines, and events.
-
-For movie selection, bring the supplied `movie-slide-maker` ODP choices into the announcement
-deck using `movie-panel`. Preserve the movie wording, ratings, and posters. Follow the individual
-choices with a vote recap showing their titles and posters together. See
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#movie-choices) for the text/poster slots.
 
 ## Today's agenda
 
@@ -63,6 +58,11 @@ source can supply its topic map. Record its status in the lecture review and add
 when the teaching week is assigned.
 
 ## Three main sections
+
+Keep participation activities within their main sections. The icebreaker belongs in the opening,
+an assessment vote belongs with Quiz under Course Content, and movie selection belongs under
+General Announcements. Use subsection cards for the votes and movie selection while retaining
+the three main section dividers.
 
 ### Informational Slides
 
@@ -124,6 +124,9 @@ Use `layout: section` for the divider. The current Genetics arrangement is:
 9. Quiz subsection, when relevant.
 10. Weekly Assignments subsection: current work and deadlines.
 
+Place a quiz-schedule vote, such as Quiz 5 Vote, at the normal Quiz position before Weekly
+Assignments. Retain its setup and tradeoff slides together with the vote.
+
 Use `layout: subsection` for the topic dividers within this main section. Prefer assessment
 overview, Exam, Quiz, then Assignments for consistency. The instructor has used both Exam/Quiz
 orders; the old reverse order is not a correctness defect. Textbook placement is also flexible:
@@ -149,6 +152,11 @@ this is a menu of relevant groups, not a list to display every week.
 | Course evaluations | End of semester, during the actual evaluation period. |
 | Natural Science Club | Hidden for now; the instructor has not decided how to restart it after COVID. |
 | One-off announcements | Relevant campus seminars, events, and other timely notices. |
+
+For movie selection, use a Movie Night subsection within General Announcements. Bring the supplied
+`movie-slide-maker` ODP choices into the deck using `movie-panel`. Preserve the movie wording,
+ratings, and posters. Follow the individual choices with a vote recap showing their titles and
+posters together. See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#movie-choices) for the slots.
 
 Registration includes the reminder/links, a summary of upcoming teaching, and one slide per
 course. Keep tentative assignments visibly tentative. Evaluation incentives belong to the
@@ -181,8 +189,14 @@ the graduation notice's first-two-weeks window for these assignments.
   useful activities and reminders. Refresh dates, policies, and links from current sources.
 - Update Today's Agenda with short deck titles or topic labels in the instructor's voice, then update
   Next Week, assessment colors, due dates, and conditional visibility.
-- Refresh weather on lecture day or the preceding day. Keep original PNGs, full editable
-  captions, and a separate dated NWS citation. Builds use saved files and never refresh weather.
+- When the lecture date is today or tomorrow in America/Chicago, run the weather refresh script
+  as a required preparation step. Preview with
+  `source source_me.sh && python3 -m slide_lib.refresh_weather PATH_TO_ANNOUNCEMENT_DECK.djot`,
+  review the diff, then run the same command with `--write` to save it. Verify that every fetched
+  story is visible immediately before the icebreaker and its citation records today's retrieval
+  date. Fetch the original PNGs and save quality-90 WebP snapshots at their original dimensions,
+  with full editable captions and a separate dated NWS citation.
+  Builds use saved files and never refresh weather.
 - Select the latest regular StVC episode published by the lecture date; skip special episodes
   such as #38. Unless the instructor selects another eligible episode, use publication time,
   not episode-number order. Verify its thumbnail, title, video, and game/tool destination.

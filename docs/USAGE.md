@@ -112,8 +112,9 @@ source source_me.sh && python3 -m slide_lib.refresh_podcast genetics/LECT07 --by
 ```
 
 Both module commands accept lecture folders or `lect##a` Djot files. They fetch and validate required
-images before a `--write` update. The weather helper captures the current Chicago NWS story; the
-podcast helper skips episodes marked special and uses publication time to select the latest regular
+images before a `--write` update. The weather helper fetches the current Chicago NWS PNG graphics
+and saves only quality-90 WebP snapshots at their original dimensions. It retains complete captions.
+The podcast helper skips episodes marked special and uses publication time to select the latest regular
 episode. Use `--by-lecture-date` to limit selection to episodes published by each lecture date.
 
 Rebuild the saved two-gene tetrad working-table SVGs from their adjacent data and ascus drawings:

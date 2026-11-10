@@ -6,20 +6,48 @@ recorded preferences in [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md) take preced
 The [AUTHORING_GUIDE.md](AUTHORING_GUIDE.md#authority-and-evidence) explains how
 to distinguish explicit preferences, established conventions, and observed habits.
 
+Wording examples below come from the original instructor-used LECT10 ODP/PDF files, with
+source slides, exact quotations, and limitations recorded in
+[VOICE_SOURCE_EVIDENCE.md](VOICE_SOURCE_EVIDENCE.md). Observed patterns illustrate the voice;
+recorded preferences set authoring choices, and editorial recommendations guide new writing.
+
 ## Practical summary
 
 Write direct, concrete scientific teaching in the instructor's recognizable voice. Use familiar
 words when they preserve meaning. Preserve the instructor's existing prose and first-person voice.
-For new live teaching material, favor short phrases and keywords: the instructor does the talking.
+For new live teaching material, use concise statements, phrases, and labels: the instructor does
+the talking. Short complete sentences fit this voice.
 Keep useful technical terms, humor, and deliberate emphasis. Match the amount of text to the task.
 
 - Preserve existing instructor wording during conversion, including useful informal phrasing.
 - Write new material plainly; name the particular mechanism, comparison, prediction, or task.
-- Default to short phrases, labels, and keywords when writing new teaching material.
+- Write concise statements, phrases, and labels when developing new teaching material.
 - Keep complete questions, problem assumptions, and needed study-reference explanations readable.
 - Put newly written spoken elaboration and transitions in `@notes`.
 - Give students enough visible information to solve the problem and study afterward.
 - Distinguish actual instructor wording from proposed examples and generated prose.
+
+## Keep statements easy to scan
+
+The original slides use complete sentences as concise teaching points:
+
+- 10B4: "Human somatic cells have 23 pairs of chromosomes" (8 words).
+- 10B13: "G-bands are relatively gene poor" (5 words).
+- 10D43: "Women with Down syndrome can and do have children." (9 words).
+
+The last example keeps the full subject and emphatic "can and do". Preserve that force when
+writing a direct statement. A short label can serve another purpose, as in original 10C4's
+"p = petite" and "q = not p." Use the grammatical form that conveys the relationship clearly.
+
+**Recorded preference:** review statements longer than roughly 10-15 words for embedded
+definitions, extra modifiers, or several clauses that would read better as separate points.
+Allow more room for long subjects and necessary scientific names. This is the instructor's
+editorial cue, rather than a limit derived from the source sample. The original 10B15 question
+uses 35 words of setup and task; its karyotype context is essential to interpreting the choices.
+
+Use line breaks, bullets, or a term-and-definition arrangement to separate the ideas within the
+slide. Preserve causal relationships, conditions, and qualifications, and keep direct short
+sentences where they work. The conversion rules below protect established instructor wording.
 
 ## Preserve before polishing
 
@@ -53,20 +81,20 @@ material follows the scope of the current request. See
 
 ## Ground the voice in evidence
 
-These source phrases illustrate the recorded requirement to preserve teaching voice:
+These original-slide observations support concrete writing choices. Numbers refer to original
+ODP slides, rather than current Djot pages:
 
-| Source wording | What the example illustrates |
-| --- | --- |
-| "How do we do questions like this???" | A conversational problem-solving question. |
-| "where did we go wrong???" | An invitation to inspect a tempting mistake. |
-| "completely cover up the third so it does not confuse you!!!" | Direct procedural advice with deliberate emphasis. |
+| Exact source wording | Original slide | Supported choice |
+| --- | --- | --- |
+| "Gene density is not highly correlated with chromosome size!!!" | 10C3 | Keep a necessary qualification and deliberate emphasis in a concise statement. |
+| "Chromosomes are grouped into 7 sets denoted by letter A to G." | 10C5-7 | Keep a complete teaching statement and useful repetition across a visual sequence. |
+| "The CFTR gene is located at position 7q31.2." / "What does 7q31.2 mean?" | 10C11 | Pair a specific setup with a direct interpretation question. |
+| "I took great care to make sure it is completely anonymous" | 10A10 | Preserve first-person reassurance in announcements. |
+| "I receive 20 emails per day and only check once per day for mental health reasons" | 10A8 | Preserve the personal explanation even when it exceeds the short-word cue. |
 
-The first two occur in
-[lect05d-probability_concepts.djot](../../genetics/LECT05/djot/lect05d-probability_concepts.djot);
-the third is in
-[three_point_testcross_steps.djot](../../genetics/evergreen/three_point_testcross_steps.djot).
-They illustrate source wording, not a requirement to add triple punctuation to new slides or a
-claim that every part of those decks is an ideal template.
+[VOICE_SOURCE_EVIDENCE.md](VOICE_SOURCE_EVIDENCE.md) records fourteen checked excerpts, including
+longer source prose and the original problem stem. This selected one-lecture sample demonstrates
+variation by purpose; it does not establish a universal sentence length or idealize every old slide.
 
 Prefer instructor-authored originals and identified instructor-cleaned material when choosing
 examples. A recent import, generated expansion, unusual line break, or inconsistent old title is
@@ -84,15 +112,9 @@ Prefer a useful biological explanation to a generic paragraph that could fit any
 citation or caveat belongs visibly when it is necessary to interpret the claim; administrative
 provenance and repair history belong in separate review documents.
 
-Illustrative new wording, not instructor quotations:
-
-- General: "Consider the importance of vector design."
-- More specific: "Will the Gene Fit in This Vector?"
-- General: "Evaluate the implications of this result."
-- More specific: "Which Progeny Classes Did This Calculation Leave Out?"
-
-Use these as comparisons of specificity, not instructions to turn every explanation into a
-question.
+Original 10C11 names the actual gene and address before asking what the address means. Original
+10D43 first states that women with Down syndrome can have children, then asks about their
+offspring. These examples support keeping the specific setup and question connected.
 
 ## Match wording to purpose
 
@@ -100,7 +122,7 @@ question.
 | --- | --- |
 | Diagram or visual anchor | Short, direct labels near the objects they identify. |
 | Definition or rule | A plain definition, its condition, and enough context to use it. |
-| Teaching explanation | Short phrases, keywords, comparisons, and visual relationships for the instructor to explain. |
+| Teaching explanation | Concise statements, phrases, comparisons, and visual relationships for the instructor to explain. |
 | Problem statement | The full setup, relevant assumptions, data, and an explicit task. |
 | Guided worked step | Name what changed or ask students to attempt the next step. |
 | Study reference | Complete sentences or coherent paragraphs explaining reasoning and assumptions. |
@@ -108,10 +130,9 @@ question.
 | Announcement or assignment | Direct instructions with accurate dates, expectations, and course context. |
 | Speaker notes | Natural speaking prompts, transitions, explanations, reminders, and expected answers. |
 
-For example, "hydrophobic core," "signal amplification," and "structure determines function"
-can be useful labels. A teaching cue such as "Signal amplification: many downstream molecules"
-leaves the spoken explanation to the instructor. Complete opening questions, problem statements,
-quoted headlines, and later-study references have their own purpose and may use sentences.
+Original 10B13 pairs the short G/R-band comparison with a figure. Original 10C11 gives a setup
+and a question, while 10A8 explains a personal contact policy. Match that variation in purpose
+when choosing between a label, a complete statement, and a longer explanation.
 
 Preserve meaningful list hierarchy. Prefer a comparison, figure, sequence, or table when that
 expresses the relationship better; a real list can remain a list. There is no universal word or
@@ -134,6 +155,10 @@ invented names or answer choices, and jokes are not required on every slide.
 
 Use notes for delivery-only jokes or personal reminders. Keep student-facing humor visible when
 it is part of the source's intended teaching character.
+
+Original 10C4's "q = not p" and 10C14's "Dewey Decimal System for Genes" are concrete examples
+of informal shorthand and a familiar analogy. They support recognizable phrasing without making
+humor mandatory or attributing new jokes to the instructor.
 
 ## Introduce terms and notation
 
@@ -189,12 +214,12 @@ Use Title Case for slide titles while preserving acronyms, proper names, gene sy
 scientific notation. This differs from sentence-case Markdown documentation headings. Prefer a
 short title that fits on one line and identifies the slide's job.
 
-Inherited title examples, normalized to the existing title-case convention:
+Original title examples, normalized to the recorded Title Case convention:
 
-- Topic: `Gel Electrophoresis`
-- Question: `Which Band Moved Farthest?`
-- Contrast: `Kinetics vs. Thermodynamics`
-- Takeaway: `Smaller DNA Fragments Move Farther`
+- Topic: `Number of Chromosomes` (10B38).
+- Mechanism question: `How Does SKY Work?` (10B21).
+- Familiar analogy: `Dewey Decimal System for Genes` (10C14).
+- Explanation question: `Why Is Age a Factor?` (10D19).
 
 Shorten generated titles when useful. Flag a proposed substantive change to an instructor-authored
 title rather than silently rewriting it to fit. Remove textbook figure identifiers while keeping
@@ -203,6 +228,7 @@ useful captions and diagram content, following the recorded conversion guidance.
 ## Review the wording
 
 - Is the original task, scientific meaning, humor, and useful emphasis still present?
+- Does each claimed voice pattern have an original-slide example or a recorded preference?
 - Does new prose sound direct and specific rather than generic or falsely attributed?
 - Can students read the complete problem and its assumptions without access to speaker notes?
 - Are unfamiliar terms and symbols introduced before use?

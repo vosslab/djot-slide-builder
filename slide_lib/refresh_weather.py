@@ -147,8 +147,13 @@ def refresh(paths: list[pathlib.Path], write: bool, retrieved_on: datetime.date)
 			if image.format != "PNG":
 				raise ValueError("NWS weather graphic must be a PNG; decks unchanged")
 			image.verify()
+		# ASVS 5.2.2: validate the downloaded PNG before re-encoding the saved snapshot.
+		with PIL.Image.open(io.BytesIO(image_data)) as image:
+			encoded = io.BytesIO()
+			image.save(encoded, format="WEBP", quality=90)
+		image_data = encoded.getvalue()
 		# Immutable asset names keep other decks' earlier snapshots intact.
-		image_name = f"chicago_{hashlib.sha256(image_data).hexdigest()}.png"
+		image_name = f"chicago_{hashlib.sha256(image_data).hexdigest()}.webp"
 		images[image_name] = image_data
 		slide += weather_slide(story, image_name, retrieved_on)
 	updates = []

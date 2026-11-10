@@ -63,13 +63,13 @@ class CourseColorTheme:
 # Divider levels retain the accent hue and saturation, near 21**(1/4) contrast steps.
 _COURSE_COLOR_THEMES = {
 	"genetics": CourseColorTheme(
-		"genetics", "24578F", "1C4470", "3177C3", "8CB5E2", "C6DAF0"),
+		"genetics", "24578F", "1C4470", "3177C3", "8CB5E2", "D6E5F5"),
 	"biostatistics": CourseColorTheme(
-		"biostatistics", "127622", "0C4F17", "158928", "1FCC3B", "88ED98"),
+		"biostatistics", "127622", "0C4F17", "158928", "1FCC3B", "D3F8D9"),
 	"biochemistry": CourseColorTheme(
-		"biochemistry", "6B638F", "45405C", "78709C", "B3AEC7", "D9D7E3"),
+		"biochemistry", "6B638F", "45405C", "78709C", "B3AEC7", "E3E1EA"),
 	"biotechnology": CourseColorTheme(
-		"biotechnology", "C9211E", "861614", "DF2D2A", "F09B9A", "F7CDCC"),
+		"biotechnology", "C9211E", "861614", "DF2D2A", "F09B9A", "F8D3D3"),
 }
 
 _TEXT_COLORS = {

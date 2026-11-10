@@ -27,6 +27,20 @@ color-theme: genetics
   - Prenatal Testing
 - Closing Remarks
 
+=== layout: big-image
+
+@image
+
+![Five Day Outlook](assets/weather_story/chicago_f53f5a0fb8f85416bd32f3d1e99437661a5611d4697af631bc4a16c3690fe455.webp)
+
+@caption
+
+Today will be dry and mild once again&#46; There will be a chance for showers on Wednesday&#44; followed by a transition to lake effect showers and cooler temperatures through the end of the workweek&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 10, 2026: https://www.weather.gov/lot/weatherstory
+
 === layout: prompt
 
 # Icebreaker
@@ -60,6 +74,24 @@ State your name, major, and post-grad plans.
 
 https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
+=== include: repo:evergreen/youtube_channel.djot
+
+=== layout: big-image
+
+@image
+
+![Stump the Vibe Coder &#35;37&#58; Bad Cell Day](assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
+
+@caption
+
+Stump the Vibe Coder &#35;37&#58; Bad Cell Day\
+Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
+Play the Game: https://vosslab.github.io/bad-cell-day/
+
+=== include: repo:genetics/evergreen/course_information.djot
+
+=== include: repo:genetics/evergreen/assessment_policies.djot
+
 === layout: subsection
 
 # Exam/Quiz
@@ -77,6 +109,43 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 - [Quiz 4: Dec 01]{color=#000000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
+
+=== layout: subsection
+hidden: true
+
+# Exam
+
+=== layout: one-panel
+hidden: true
+
+# *Midterm reference: October 13*
+
+@body
+
+- Tuesday, Oct 13, 2026\: in-person written exam during class
+- Chapters 1-4
+- Class meeting\: 1\:30-4\:25 p.m.
+- Worth 100 points; completed individually
+
+=== include: repo:genetics/evergreen/exam_guidance.djot
+hidden: true
+
+=== layout: one-panel
+hidden: true
+
+# *BB Assignments for Mid-Term Exam*
+
+@body
+
+- Prepare for the Oct 13 midterm\: Chapters 1-4
+- Retake available assignments until you understand the questions
+- Unlimited homework attempts; only the highest score counts
+- Assignments 4-5 were due Oct 6
+- Assignment 6 is due Oct 13
+- Check Blackboard for assignment availability and submission times
+
+=== include: repo:genetics/evergreen/quiz_guidance.djot
+hidden: true
 
 === layout: subsection
 
@@ -132,6 +201,65 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
   - Group Q4: Dec 1; no Q5; Final Exam: Dec 15
 
 *Vote for option 1 or option 2.*
+
+=== layout: subsection
+
+# Weekly Assignments
+
+=== include: repo:genetics/evergreen/first_week_assignments.djot
+hidden: true
+
+=== layout: two-panels
+hidden: true
+
+# Homework Due Dates (Part 1)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
+| [Week 04]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
+| [Week 05]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
+| [Week 06]{color=#AAAAAA} | [Oct 13]{color=#AAAAAA} |
+
+@right
+
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+- https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== layout: two-panels
+
+# Homework Due Dates (Part 2)
+
+@left
+
+| Assignment | Due date |
+| --- | --- |
+| [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
+| [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
+| [Week 09]{color=#990000} | [Nov 17]{color=#990000} |
+| [Week 10]{color=#990000} | [Nov 17]{color=#990000} |
+| [Week 11]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 12]{color=#000000} | [Dec 08]{color=#000000} |
+| [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
+
+@right
+
+- Homework has unlimited attempts and only keeps your highest score
+- I encourage students to work together on assignments, or post to Discord for help
+
+=== layout: section
+
+# General Announcements
+
+=== layout: subsection
+
+# Movie Night
 
 === layout: one-panel
 
@@ -217,158 +345,23 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 ![The Animal Kingdom (2023) movie poster](assets/movie_choices/image_004.jpg)
 
-=== layout: four-panels
+=== layout: gallery
 
 # Movie Night: Vote
 
-@top-left
+@gallery
 
-## Our Times (2025)
+![Our Times (2025) poster](assets/movie_choices/image_001.jpg)
 
-![Our Times poster](assets/movie_choices/image_001.jpg)
+![Biosphere (2023) poster](assets/movie_choices/image_002.jpg)
 
-@top-right
+![Vesper (2022) poster](assets/movie_choices/image_003.jpg)
 
-## Biosphere (2023)
-
-![Biosphere poster](assets/movie_choices/image_002.jpg)
-
-@bottom-left
-
-## Vesper (2022)
-
-![Vesper poster](assets/movie_choices/image_003.jpg)
-
-@bottom-right
-
-## The Animal Kingdom (2023)
-
-![The Animal Kingdom poster](assets/movie_choices/image_004.jpg)
-
-=== layout: big-image
-hidden: true
-
-@image
-
-![Five Day Outlook](assets/weather_story/chicago_9fab097308eaca68887addd2b04b223be5f32de966e4b775fdcd9c5019695b09.png)
-
-@caption
-
-Intermittent shower chances will linger through at least the middle of the week with the best chances for rain on Tuesday and Wednesday&#46; While temperatures will remain above average to start the week&#44; cooler weather is forecast to arrive next weekend&#46;
+![The Animal Kingdom (2023) poster](assets/movie_choices/image_004.jpg)
 
 @citation
 
-NWS Chicago, retrieved Nov 01, 2026: https://www.weather.gov/lot/weatherstory
-
-=== include: repo:evergreen/youtube_channel.djot
-
-=== layout: big-image
-
-@image
-
-![Stump the Vibe Coder &#35;37&#58; Bad Cell Day](assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
-
-@caption
-
-Stump the Vibe Coder &#35;37&#58; Bad Cell Day\
-Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
-Play the Game: https://vosslab.github.io/bad-cell-day/
-
-=== include: repo:genetics/evergreen/course_information.djot
-
-=== include: repo:genetics/evergreen/assessment_policies.djot
-
-=== layout: subsection
-hidden: true
-
-# Exam
-
-=== layout: one-panel
-hidden: true
-
-# *Midterm reference: October 13*
-
-@body
-
-- Tuesday, Oct 13, 2026\: in-person written exam during class
-- Chapters 1-4
-- Class meeting\: 1\:30-4\:25 p.m.
-- Worth 100 points; completed individually
-
-=== include: repo:genetics/evergreen/exam_guidance.djot
-hidden: true
-
-=== layout: one-panel
-hidden: true
-
-# *BB Assignments for Mid-Term Exam*
-
-@body
-
-- Prepare for the Oct 13 midterm\: Chapters 1-4
-- Retake available assignments until you understand the questions
-- Unlimited homework attempts; only the highest score counts
-- Assignments 4-5 were due Oct 6
-- Assignment 6 is due Oct 13
-- Check Blackboard for assignment availability and submission times
-
-=== include: repo:genetics/evergreen/quiz_guidance.djot
-hidden: true
-
-=== layout: subsection
-
-# Weekly Assignments
-
-=== include: repo:genetics/evergreen/first_week_assignments.djot
-hidden: true
-
-=== layout: two-panels
-hidden: true
-
-# Homework Due Dates (Part 1)
-
-@left
-
-| Assignment | Due date |
-| --- | --- |
-| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 04]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
-| [Week 05]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
-| [Week 06]{color=#AAAAAA} | [Oct 13]{color=#AAAAAA} |
-
-@right
-
-- Homework has unlimited attempts and only keeps your highest score
-- I encourage students to work together on assignments, or post to Discord for help
-
-- https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
-
-=== layout: two-panels
-
-# Homework Due Dates (Part 2)
-
-@left
-
-| Assignment | Due date |
-| --- | --- |
-| [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 09]{color=#990000} | [Nov 17]{color=#990000} |
-| [Week 10]{color=#990000} | [Nov 17]{color=#990000} |
-| [Week 11]{color=#000000} | [Dec 08]{color=#000000} |
-| [Week 12]{color=#000000} | [Dec 08]{color=#000000} |
-| [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
-
-@right
-
-- Homework has unlimited attempts and only keeps your highest score
-- I encourage students to work together on assignments, or post to Discord for help
-
-=== layout: section
-
-# General Announcements
+Our Times (2025) | Biosphere (2023) | Vesper (2022) | The Animal Kingdom (2023)
 
 === include: repo:evergreen/spring_registration.djot
 hidden: false

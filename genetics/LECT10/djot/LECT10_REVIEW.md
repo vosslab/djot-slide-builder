@@ -4,6 +4,148 @@ Current revision and verification appear first. Earlier conversion proposals, in
 checks are preserved in [LECT10_CONVERSION_HISTORY.md](LECT10_CONVERSION_HISTORY.md).
 Original ODP/PDF files remain unchanged.
 
+Rejected LLM drawings and future repair targets are inventoried in
+[SVG_REPAIR_BACKLOG.md](../../../docs/SVG_REPAIR_BACKLOG.md). Eleven drawings have been removed,
+including the four chromosome-shape drawings in the final queue pass. The inventory
+records exact paths, source baselines, current replacements, and the teaching detail to restore.
+
+## November 10 sections and ultralight
+
+Restore the three major sections as the organizing structure for A. The opening remains title,
+agenda, weather, icebreaker, Next Week (A1-5). Informational Slides occupies A6-12. Course Content
+is A13-29, with the assessment schedule at A23 and Quiz 5 Vote at A24-27 in the normal Quiz
+position before Weekly Assignments. General Announcements is A30-44: add a Movie Night
+subsection at A31, then the original setup, four choices, and poster vote at A32-37, followed by
+registration. Every pre-existing source block and hidden flag is preserved; only a new Movie Night
+subsection card is added. A now has 65 authored / 45 visible / 20 hidden slides. Lecture totals
+are 213 authored / 193 visible / 20 hidden. This supersedes the earlier front-loaded vote order.
+
+Set ultra light to 90% HSL lightness across all four course palettes, retaining the original
+accent hue/saturation within 8-bit rounding. Genetics is `#D6E5F5`, Biostatistics `#D3F8D9`,
+Biochemistry `#E3E1EA`, and Biotechnology `#F8D3D3`. Dark/medium/light values remain unchanged.
+The regenerated source-derived palette audit passes all 44 role-specific comparisons, with
+minimum text contrast 7.13:1. Rebuild all four LECT10 ODP/PDF decks. Temporary source-order,
+palette, contrast, and rendered evidence: `_temp/lect10a_sections_ultralight/`.
+
+Visually inspect the new cover/icebreaker tint and the section/vote boundaries. All 44 prior A
+page word sets remain, plus the new Movie Night card. Source/ODP/PDF counts agree across all
+four decks and all eight native answer reveals remain. Native lint passes. The full base suite
+passes 5,907 checks with the same two pre-existing LECT14/15 agenda-cover failures outside this
+LECT10 scope. Existing A weather/movie/contact/registration font-size advisories remain.
+
+## November 10 WebP weather snapshot
+
+Refresh the current A3 weather story with the updated script: validate the NWS PNG, then save
+only a quality-90 WebP at the original 1536x864 dimensions. The current graphic falls from
+1,962,461 PNG bytes to 229,772 WebP bytes, an 88.3% reduction. Only the weather image path
+changes in the source; the full editable caption and dated citation remain intact.
+
+Rebuild A and visually inspect its exported weather page. The ODP embeds the WebP directly;
+all 44 visible page word sets remain unchanged. Existing size advisories remain. The focused
+weather/link/guidance suite passes 224 checks. Historical snapshots in other decks retain their
+existing paths. Temporary encoding, size, export, and rendered evidence: `_temp/weather_webp/`.
+
+## November 10 chromosome-shape restoration
+
+The queue-completion audit found that the four recommended chromosome-shape reversions had
+remained recommendations. Restore B33-36 to their original textbook PNGs, verified byte-for-byte
+against the original ODP: `image_022.png` through `image_025.png`. The original figures better
+preserve replicated-chromosome structure, spindle relationships, unequal arms, and the V/J/I
+shape distinctions. Retain native editable slide headings and the existing matching exercise.
+All other B source blocks remain intact, with 55 slides. Update the rejected-SVG inventory to
+eleven completed removals; retain the SVG source files for future repairs. Temporary comparison
+and rendered verification: `_temp/lect10b_shape_restore/`.
+
+Rebuilt all four current LECT10 ODP/PDF decks and visually inspected the four restored shape
+pages. The other 51 B pages retain their PDF words; all four original PNG byte streams are
+embedded unchanged. ODP/PDF counts agree at A64/44 (20 hidden), B55/55, C28/28, and D65/65.
+All eight native answer reveals remain. Native lint and 327 focused source/link/guidance checks
+pass. All eleven rejected drawings remain available for repair and have no current LECT10
+references. Existing A weather/movie/contact/registration font-size advisories remain.
+
+## November 10 lecture-day weather refresh
+
+The previous A deck kept a hidden November 1 weather story. Run the existing weather script
+with `--write` on November 10, matching the lecture date. It retrieves one NWS Chicago Five Day
+Outlook, saves the original PNG, retains its full editable caption and dated citation, and makes
+the weather visible as A3 before the icebreaker (now A4). All other source blocks remain intact.
+A retains 64 authored slides, now 44 visible and 20 hidden. The movie vote moves to A17 and
+contact slides to A23-24. Lecture totals are 212 authored / 192 visible / 20 hidden.
+Clarify the required today/tomorrow script step and visibility check in the announcement guide.
+Temporary source/export comparison and rendered evidence: `_temp/lect10a_weather_refresh/`.
+
+Rebuilt and visually inspected A3: the graphic is dated November 10, 2026 at 3:29 AM, and the
+complete caption and dated source are readable. The full caption remains editable; the original
+PNG is embedded unchanged. All other source blocks and all 43 prior visible page word sets are
+unchanged. ODP visibility agrees with the 44-page PDF. Native lint and 222 focused weather/link/
+guidance checks pass. The weather caption fits at 16 pt, below the 18 pt capacity target; existing
+movie, contact, and registration size advisories remain.
+
+## November 10 original homolog question restored
+
+Original B15 (current B16) asks about a pair in a human karyotype. The conversion replaced
+its wording and choices, adding "even before DNA replication" to the X-shaped choice and
+changing the original answer from all of the above to A-D. Restore the original stem and
+five choices, with only "maybe" corrected to "may be" in the instruction. Keep the native
+answer reveal and restore "Answer: all of the above". On B17, replace the generated explanation
+with the original answer traits and original chromosome-pair figure; put the replicated-karyotype
+context in speaker notes. All other B source blocks remain intact, with 55 visible slides.
+Temporary original/current comparisons and rendered evidence: `_temp/lect10b_question_compare/`.
+
+Rebuilt and visually inspected B16-17. The original stem and all five choices match the original
+ODP; the original answer figure is embedded byte-for-byte. Native XML retains the on-click answer
+reveal. The other 53 source blocks and PDF page words are unchanged. Source/ODP/PDF counts agree
+at 55, with no off-page text on the changed pages. Native lint, capacity, and 325 focused
+source/link/guidance checks pass.
+
+## November 10 banding color roles
+
+On B12-14, use teal (`#00775F`) for G-bands/heterochromatin and magenta (`#C80085`) for
+R-bands/euchromatin. Reserve these cues for the contrasted labels; Giemsa, shared condensation,
+and explanatory prose remain neutral. Remove generic blue/gold emphasis from the generated
+objectives, homolog question/explanation, chromosome-painting definitions, and takeaways while
+retaining their bold text. Preserve the original wording and images, original red karyotype
+term, chromosome-shape color key, answers/reveals, 55-slide count, and blue course theme.
+Document the comparison key in the color guide. Temporary native/source/contrast checks and
+rendered evidence: `_temp/lect10b_color_roles/`.
+
+Rebuilt and inspected the eight changed pages. All 55 PDF pages retain their words; native
+run checks confirm the seven G/R/chromatin label occurrences use the intended colors, with
+Giemsa and shared condensation in neutral text. Native labels contrast at 5.52:1 (teal) and
+5.53:1 (magenta) on their actual white surface. Original figures retain their source colors.
+Native lint, capacity, and 325 focused source/link/guidance checks pass.
+
+## November 10 opening chromosome-set question
+
+The original 10B ODP/PDF has "Sets of Chromosomes in Human Cells" with its two explanatory
+bullets on the same slide; neither original contains a separate question-only card. Restore the
+instructor's intended early discussion by adding B5 as `question-ask`: "How Many Sets of
+Chromosomes in Human Cells?" Original/current answer wording remains unchanged on B6.
+Speaker notes distinguish two sets of 23 chromosomes in somatic cells from 23 homologous pairs
+and one set in gametes. All pre-existing B source blocks remain intact and in order.
+B now has 55 visible slides. Temporary comparison and rendered evidence:
+`_temp/lect10b_opening_question/`.
+
+Rebuilt and inspected B5-6. The new question is editable; all 54 prior source blocks and visible
+page texts remain unchanged in order. ODP/PDF agree at 55 slides. Native lint and capacity
+pass, along with 325 focused source/link/guidance checks.
+
+## November 10 movie-vote poster size
+
+The existing A16 vote recap already used the `four-panels` layout. Its two rows constrained
+portrait posters to about 115-118 pt tall. Use the existing `gallery` layout instead: four posters
+across at 257.19 pt tall, about 2.2 times their former height. Keep the same image order and
+original poster files, current title, and editable movie-name/year legend in the footer. All
+other A source blocks remain unchanged; A retains 64 authored / 43 visible / 21 hidden slides.
+This revision changes authoring only; the shared pipeline remains unchanged. Temporary comparison
+and final rendered evidence: `_temp/lect10a_vote_layout/`.
+
+Rebuilt and inspected A16. Only the vote source block changes; all 43 visible pages retain their
+words (the legend adds separators), and the four original poster byte streams are embedded
+unchanged. The vote page has no capacity warning; the prior movie-description/contact/registration
+advisories remain. After both restorations, native lint passes across 211 authored slides and
+94 images; 325 focused source/link/guidance checks pass.
+
 ## November 10 chromosome groups restored
 
 The instructor identified a substantive coverage error: original C5-7 taught chromosome groups
@@ -22,10 +164,19 @@ the karyotype table/question/answer to C22-24; Summary to C25. Original covers a
 teaching blocks remain intact. Temporary original/source/export comparison and rendered checks:
 `_temp/lect10c_groups_restore/`. The voice and pedagogy guides now explicitly preserve the
 instructor's coverage decisions and repeated visual teaching sequence.
+Rebuilt and visually compared C9-11 with original C5-7. Original group sentences, all other
+source blocks except the expanded objective, and both native answer reveals are preserved.
+ODP/PDF counts agree at 28; no exported text is off-page, and capacity reports no concerns.
+The original SRY address is preserved as authored; this pass restores coverage rather than
+rechecking every original scientific claim.
 
 The instructor also suggested course-aware general accents: teal/magenta for Genetics and
 blue/gold for Biotechnology. Record the generic selection principle in the color guide; retain
 the approved address-component key and existing authored content while evaluating this suggestion.
+Preferred teal `#00775F` and magenta `#C80085` each exceed 5.5:1 against white,
+but measure approximately 2:1 against the sampled header blue `#6F9FD5`. General accent hue
+selection complements the explicit-black question-header treatment; the five-part address key
+and existing authored emphasis remain intact.
 
 ## November 10 question-header contrast
 
@@ -138,6 +289,9 @@ in the unchanged Lecture 14/15 agenda-only sources, outside this Lecture 10 revi
 authored schematics use the repository's tracked `.drawn.svg` suffix.
 
 ## November 10 presentation order and trisomy table
+
+The ordering below is superseded by
+[the section-grouping correction](#november-10-sections-and-ultralight). The D30 table styling remains.
 
 Reorder 10A as approved: cover, agenda, icebreaker, Next Week, quiz schedule and Quiz 5 vote,
 movie choices and movie vote, then the routine announcements. All existing source blocks, wording,

@@ -91,6 +91,10 @@ formatting from leaking into the rest of a paragraph. Unknown span attributes ar
 
 ## Visual acceptance
 
+Record rejected LLM drawings and their repair targets in
+[../SVG_REPAIR_BACKLOG.md](../SVG_REPAIR_BACKLOG.md). Keep exact asset paths and distinguish
+completed removals from drawings still in use with replacement recommended.
+
 Compare each repaired slide with its original source and the actual exported PDF. Check labels,
 leaders, subscripts, transparency, crop boundaries, and readable captions. Confirm direct SVG
 packaging in ODP. Keep source provenance in separate import reports, slide maps, or review files,

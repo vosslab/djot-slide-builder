@@ -8,6 +8,14 @@ Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md)
 [slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md), and
 [slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md).
 
+- Ground my voice guide in evidence from my established slides, with exact examples and sources.
+  Distinguish what the slides demonstrate from my stated preferences and editorial suggestions.
+
+- I consider quality-90 WebP a permanent replacement for PNG: smaller, with similar quality.
+  For weather stories, fetch the PNG and save it as WebP.
+
+- Use 90% HSL lightness for the ultra light course color, retaining its hue and saturation.
+
 - Keep an extensive, reusable recipe in `docs/` for future talking-point slide builds,
   covering best practices, tools, organization, and the input files.
 
@@ -230,21 +238,24 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - The working guide for `lect##a` preparation is [slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md). This section records the instructor's stated preferences; the guide assembles them into the current weekly workflow.
 
-- Canonical announcement order: title, agenda, Next Week, weather, icebreaker, Informational Slides,
+- Canonical announcement order: title, agenda, weather, icebreaker, Next Week, Informational Slides,
   YouTube channel, Stump the Vibe Coder, Discord, office hours, contact, anonymous messages, Course Content, textbook, Syllabus Links, PREVIEW Slides, Grading and Assessment, Assignments/Quizzes/Exams, Graded vs Total Percentage, Quiz/Exam
   schedule and policies, Exam when needed, Quiz when needed, Weekly Assignments, General Announcements, spring registration when needed, evaluations in their display period, Natural Science Club (hidden for now), then THE END (November 3, 2026).
 - The three main sections are Informational Slides, Course Content, and General Announcements.
-  Title, agenda, Next Week, weather, and icebreaker are before the first section. Informational Slides contains YouTube/STVC and contact information. Course Content contains textbook/syllabus, Grading and Assessment, Exam/Quiz overview,
+  Title, agenda, weather, icebreaker, and Next Week are before the first section. Informational Slides contains YouTube/STVC and contact information. Course Content contains textbook/syllabus, Grading and Assessment, Exam/Quiz overview,
   Exam, Quiz, and Weekly Assignments. Use subsection dividers for these course groups and for registration, evaluations, and club under General Announcements.
 - Keep the original opening order; registration belongs after course logistics.  - Weekly announcement decks have not always been aligned; missing items often reflect
   forgetting them, not an intentional alternate structure. Apply the consistent template going forward while keeping seasonal groups conditional.
-- Put a Next Week slide immediately after the existing agenda, focused on work due and what
+- Put a Next Week slide after the icebreaker, focused on work due and what
   happens in class the following week. Use the current course schedule; do not invent events.
+- Keep the major announcement sections guiding the deck. Put Quiz 5 Vote at the normal Quiz
+  position under Course Content, and movie selection under General Announcements, with subsection
+  cards. Participation order does not mean putting all activities at the front.
 - Keep my voice in agenda slides. Use slide-deck titles and a few words for topic labels,
   such as "Natural selection". Match my original agenda examples.
-- For new live teaching text, use short phrases and keywords; I do the talking. Preserve my existing
-  prose and first-person wording. Target the LLM-authored additions in a voice review; my long
-  established slides supply the baseline.
+- For new live teaching text, use concise statements, phrases, and labels; I do the talking.
+  Short complete sentences are fine. Target LLM-authored additions in a voice review; preserve
+  my established prose and first-person wording as the baseline.
 - Use color for meaningful distinctions. Keep announcement explanations in regular dark type;
   use spacing and hierarchy to make them readable, with the original contact-method colors.
 - Use a `movie-panel` layout for movie-slide-maker output: editable text fills the left, with a
@@ -467,8 +478,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - Add instructor notes to the custom Djot slide format; `@notes` works as the section marker.  - "Be a Visual Storyteller - limit the amount of text - you do the talking, not your slide."  - "Images Are Required: Try to have several
 - pictures on your slide to maintain audience
   attention. You should have some text though."
-- "Limit Text: No complete sentences on slides; use short phrases and keywords only."  - Clarification: "I think the opening question should be a full question, which allows it to
-  have complete sentences. There are exceptions to most rules."
+- By avoiding complete sentences, I mean fully decorated, elaborated sentences, usually longer
+  than 10-15 words; long subjects allow more room. "Billy threw the ball" is fine. Break up long
+  embedded definitions and clauses, as in my trisomy 21 example in [slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md#keep-statements-easy-to-scan).
 - "These slides are not for presentation, so the 'instructor does the talking, not the slides' is
   not fully true."
 - "Split the 04C protein material into 04C, 04D, 04E, and 04F by chapter; structural biology is a

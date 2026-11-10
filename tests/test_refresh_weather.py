@@ -84,13 +84,19 @@ def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(
 	assert first.endswith(source[source.index("=== layout: one-panel\n# [Breakout"):])
 	refresh_weather.refresh([path], True, date)
 	assert path.read_text() == first
-	old_image = next((tmp_path / "assets/weather_story").glob("*.png"))
-	assert old_image.read_bytes() == image
+	assets = tmp_path / "assets/weather_story"
+	old_image = next(assets.glob("*.webp"))
+	old_bytes = old_image.read_bytes()
+	with PIL.Image.open(old_image) as saved:
+		assert saved.format == "WEBP" and saved.size == (32, 18)
+		red, green, blue = saved.getpixel((16, 9))
+		assert blue > red and blue > green
+	assert not list(assets.glob("*.png"))
 	image = png_bytes("red")
 	refresh_weather.refresh([path], True, date)
 	assert path.read_text().count(refresh_weather.WEATHER_ASSET_PATH) == 2
-	assert old_image.read_bytes() == png_bytes()
-	assert len(list((tmp_path / "assets/weather_story").glob("*.png"))) == 2
+	assert old_image.read_bytes() == old_bytes
+	assert len(list(assets.glob("*.webp"))) == 2
 
 
 @pytest.mark.parametrize("failure", ["network", "image", "caption", "anchor"])
