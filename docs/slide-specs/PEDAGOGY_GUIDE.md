@@ -361,6 +361,10 @@ Students may receive exported slides without speaker notes. Keep full problems a
 explanations in the slides themselves. A concise live teaching slide can be followed by a fuller
 study reference; do not expand every visual beat into prose.
 
+Keep material taught in the original lecture in the main teaching sequence, including repeated
+visual steps. Use the instructor's explicit coverage decisions to identify optional study material
+and apply the reference treatment. A conversion preserves those decisions alongside the content.
+
 For material intended only for later study, use `=== layout: reference` with a title and `@body`.
 The layout supplies an unfilled light gray outline and the footer "For reference - not covered
 in class." Do not repeat that footer in the body. Complete sentences and coherent paragraphs

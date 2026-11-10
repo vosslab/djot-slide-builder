@@ -307,6 +307,42 @@
 
 ### Fixes and Maintenance
 
+- Restore Genetics 10C's original three chromosome-group teaching slides before Banding Pattern,
+  with the instructor's wording, group D/E and X/Y figures, and SRY locus callout. Remove their
+  incorrect "not covered" Summary classification; the deck now has 28 slides. Clarify preservation
+  of instructor coverage and repeated visual steps in voice/pedagogy guidance, and record the
+  course-aware general-accent selection principle while preserving established concept keys.
+
+- Set Genetics 10C question stems on slides 16 and 20 explicitly black over the blue header
+  gradient. Retain component colors in the choices and worked answers, preserve native reveals,
+  and measure contrast over the actual rendered prompt backgrounds. Record the treatment in
+  the slide color guide.
+
+- Carry Genetics 10C's chromosome/arm/region/band/subband colors through editable definitions,
+  compound addresses, comparisons, practice choices, references, and takeaways. Keep the CFTR
+  identification question neutral until the worked answer, preserve original band figures and
+  reveal answers, and document the five component colors in the slide color guide.
+
+- Improve Genetics 10C's address and karyotype tables with centered, larger bold key cells:
+  28 pt part labels, 30-32 pt address/example tokens, and 36 pt karyotype tokens.
+  Match existing address-component colors and preserve left-aligned explanatory text. Reuse
+  per-cell font/alignment overrides and inspect the rebuilt editable tables.
+
+- Restore Genetics 10C's original banded chromosome figures on C5, C8, and C13, replacing
+  the unbanded arm/hierarchy SVGs and their landmark disclaimer. Show actual bands beside the
+  CFTR region/band/subband answer, retain the enlarged C14 view and unanswered C12 question,
+  and rebuild/inspect the 27-slide deck.
+
+- Restore the original labeled raster figures for Genetics 10D Amniocentesis and Chorionic
+  Villus Sampling, replacing the SVG drawings. Preserve their anatomy/workflow labels and
+  credits, current editable titles, order, and 65-slide count; rebuild and inspect both pages.
+
+- Give Genetics 10D Down Syndrome its own subsubsection within Autosomal Trisomies. Pair the
+  loose karyotype/photograph with the existing health text, illustrate weakened cohesion with
+  two simple schematics and editable labels, and restore the original fertility contrast and
+  historical paternity counts. Retain the D41 open-ended question; make D44 an explanatory
+  heading. Keep 65 slides, rebuild ODP/PDF, and retain lecture-specific verification temporarily.
+
 - Remove four stale untracked announcement copies reappearing after synchronization: three
   2025 decks in Lectures 11-13 and an older Lecture 09 copy misplaced in Lecture 11. Verify
   recovery copies under `_temp/synology_recovery_20261110/` before removing the active copies.

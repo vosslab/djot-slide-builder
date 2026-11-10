@@ -18,9 +18,10 @@ color-theme: genetics
 
 @body
 
-- Identify [*p and q arms*]{color=#24578F}
+- Identify [*p and q arms*]{color=#B74300}
+- Recognize chromosome groups A-G
 - Decode a [*chromosome address*]{color=#24578F}
-- Compare band positions on the same arm
+- Compare [*band*]{color=#003FFF} positions on the same [*arm*]{color=#B74300}
 - Read [*karyotype notation*]{color=#24578F}
 
 === layout: definitions
@@ -29,10 +30,10 @@ color-theme: genetics
 
 @body
 
-- [*Centromere*]{color=#24578F}: constriction between the arms
-- [*p Arm*]{color=#24578F}: short; p = petite
+- *Centromere*: constriction between the arms
+- [*p Arm*]{color=#B74300}: short; p = petite
 - [*q Arm*]{color=#B74300}: long; q = not p
-- [*Cytogenetic Address*]{color=#24578F}: chromosome, arm, band location
+- [*Cytogenetic Address*]{color=#24578F}: [*chromosome*]{color=#D40000}, [*arm*]{color=#B74300}, [*band*]{color=#003FFF} location
 
 === layout: section
 
@@ -48,7 +49,7 @@ color-theme: genetics
 
 @right
 
-![Chromosome arm landmarks](assets/visual_renewal/chromosome_arm_landmarks.drawn.svg)
+![Original banded chromosomes 21 and 22, with p and q arms and region/band numbering](assets/lect10c-chromo_nomenclature/image_003.png)
 
 === layout: one-panel
 
@@ -72,17 +73,61 @@ color-theme: genetics
 
 ![Gene Density and Chromosome Size](assets/lect10_repaired_figures/gene_density.svg)
 
-=== layout: two-panels
+=== layout: one-panel
 
 # Short Arm p, Long Arm q
 
+@body
+
+![Original banded chromosomes 11-14, showing short p arms, long q arms, centromeres, and numbered regions and bands](assets/lect10c-chromo_nomenclature/image_007.png)
+
+=== layout: stacked-panels
+
+# Karyotype Definitions
+
+@top
+
+- Chromosomes are grouped into 7 sets denoted by letter A to G.
+  - X is included by group C
+  - Y is included in group G
+
+@bottom
+
+![Original chromosomes 13-17 showing their D and E group labels](assets/lect10c-chromo_nomenclature/image_008.png)
+
+=== layout: one-plus-two-panels
+
+# Karyotype Definitions
+
 @left
 
-![Chromosome arm landmarks](assets/visual_renewal/chromosome_arm_landmarks.drawn.svg)
+- Chromosomes are grouped into 7 sets denoted by letter A to G.
+  - X is included by group C
+  - Y is included in group G
+
+@top-right
+
+![Original chromosomes 13-17 with chromosome-group labels](assets/lect10c-chromo_nomenclature/image_008.png)
+
+@bottom-right
+
+![Original X and Y chromosomes labeled group C and group G](assets/lect10c-chromo_nomenclature/image_009.png)
+
+=== layout: two-panels
+
+# Karyotype Definitions
+
+@left
+
+- Chromosomes are grouped into 7 sets denoted by letter A to G.
+  - X is included by group C
+  - Y is included in group G
 
 @right
 
-![Original exact band reference for chromosomes 11-14](assets/lect10c-chromo_nomenclature/image_007.png)
+SRY locus &ndash; [*Y*]{color=#D40000}[*p*]{color=#B74300}[*1*]{color=#007A00}[*1*]{color=#003FFF}[*.3*]{color=#A719DB}
+
+![Original X and Y banded chromosome figures, with p and q arms and centromere](assets/lect10c-chromo_nomenclature/image_009.png)
 
 === layout: one-panel
 
@@ -104,14 +149,14 @@ color-theme: genetics
 
 [*Gene address*]{color=#24578F}: like a book's library address
 
-{table-style=comparison text-align=left}
-| Part | What It Names | Example |
+{table-style=comparison text-align=left padding="3pt 10pt"}
+| [Part]{text-align=center} | What It Names | [Example]{text-align=center} |
 | --- | --- | --- |
-| Chromosome | Which chromosome? | 7 |
-| Arm | Short p or long q? | q |
-| Region | Which region of that arm? | 3 |
-| Band | Which band in that region? | 1 |
-| Subband | Which part of that band? | .2 |
+| [*Chromosome*]{color=#D40000 font-size=28pt text-align=center} | Which chromosome? | [*7*]{color=#D40000 font-size=30pt text-align=center} |
+| [*Arm*]{color=#B74300 font-size=28pt text-align=center} | Short p or long q? | [*q*]{color=#B74300 font-size=30pt text-align=center} |
+| [*Region*]{color=#007A00 font-size=28pt text-align=center} | Which region of that arm? | [*3*]{color=#007A00 font-size=30pt text-align=center} |
+| [*Band*]{color=#003FFF font-size=28pt text-align=center} | Which band in that region? | [*1*]{color=#003FFF font-size=30pt text-align=center} |
+| [*Subband*]{color=#A719DB font-size=28pt text-align=center} | Which part of that band? | [*.2*]{color=#A719DB font-size=30pt text-align=center} |
 
 === layout: one-panel
 
@@ -119,13 +164,13 @@ color-theme: genetics
 
 @body
 
-[*CFTR*: *7q31.2*]{color=#24578F}
+*CFTR*: *7q31.2*
 
-- Which chromosome?
-- Which arm?
-- Which region?
-- Which band?
-- Which subband?
+- Which [*chromosome*]{color=#D40000}?
+- Which [*arm*]{color=#B74300}?
+- Which [*region*]{color=#007A00}?
+- Which [*band*]{color=#003FFF}?
+- Which [*subband*]{color=#A719DB}?
 
 === layout: two-panels
 
@@ -133,18 +178,18 @@ color-theme: genetics
 
 @left
 
-{table-style=comparison text-align=left}
-| Address Part | Meaning |
+{table-style=comparison text-align=left padding="3pt 10pt"}
+| [Address Part]{text-align=center} | Meaning |
 | --- | --- |
-| [*7*]{color=#D40000} | Chromosome 7 |
-| [*q*]{color=#B74300} | Long arm |
-| [*3*]{color=#007A00} | Region 3 |
-| [*1*]{color=#003FFF} | Band 1 |
-| [*.2*]{color=#A719DB} | Subband 2 |
+| [*7*]{color=#D40000 font-size=32pt text-align=center} | Chromosome 7 |
+| [*q*]{color=#B74300 font-size=32pt text-align=center} | Long arm |
+| [*3*]{color=#007A00 font-size=32pt text-align=center} | Region 3 |
+| [*1*]{color=#003FFF font-size=32pt text-align=center} | Band 1 |
+| [*.2*]{color=#A719DB font-size=32pt text-align=center} | Subband 2 |
 
 @right
 
-![CFTR chromosome address hierarchy: 7q31.2](assets/visual_renewal/cftr_address.drawn.svg)
+![Original chromosome 7 band-location figure showing region 3, band 1, and subband 2 at CFTR address 7q31.2](assets/lect10c-chromo_nomenclature/image_012.png)
 
 @citation
 
@@ -164,16 +209,16 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @body
 
-[*Higher band numbers*]{color=#24578F}: farther from the centromere
+[*Higher band numbers*]{color=#003FFF}: farther from the centromere
 
 {table-style=comparison}
 | Same Arm | Nearer the Centromere | Farther from the Centromere |
 | --- | --- | --- |
-| Chromosome 14, q arm | [*14q21*]{color=#24578F} | [*14q22*]{color=#B74300} |
+| Chromosome 14, q arm | [[*14*]{color=#D40000}[*q*]{color=#B74300}[*2*]{color=#007A00}[*1*]{color=#003FFF}]{font-size=32pt text-align=center} | [[*14*]{color=#D40000}[*q*]{color=#B74300}[*2*]{color=#007A00}[*2*]{color=#003FFF}]{font-size=32pt text-align=center} |
 
-- Compare chromosome and arm first
-- Then compare region, band, and subband
-- [*Band label*]{color=#24578F}: address, not distance in cM
+- Compare [*chromosome*]{color=#D40000} and [*arm*]{color=#B74300} first
+- Then compare [*region*]{color=#007A00}, [*band*]{color=#003FFF}, and [*subband*]{color=#A719DB}
+- [*Band label*]{color=#003FFF}: address, not distance in cM
 
 @citation
 
@@ -183,19 +228,19 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @question
 
-On chromosome *17q*, which band is most distal (farthest from the centromere)?
+[On chromosome *17q*, which band is most distal (farthest from the centromere)?]{color=#000000}
 
-- A. 17q36
-- B. 17q36.3
-- C. 17q11
-- D. 17q34.1
-- E. 17q41.3
+- A. [*17*]{color=#D40000}[*q*]{color=#B74300}[*3*]{color=#007A00}[*6*]{color=#003FFF}
+- B. [*17*]{color=#D40000}[*q*]{color=#B74300}[*3*]{color=#007A00}[*6*]{color=#003FFF}[*.3*]{color=#A719DB}
+- C. [*17*]{color=#D40000}[*q*]{color=#B74300}[*1*]{color=#007A00}[*1*]{color=#003FFF}
+- D. [*17*]{color=#D40000}[*q*]{color=#B74300}[*3*]{color=#007A00}[*4*]{color=#003FFF}[*.1*]{color=#A719DB}
+- E. [*17*]{color=#D40000}[*q*]{color=#B74300}[*4*]{color=#007A00}[*1*]{color=#003FFF}[*.3*]{color=#A719DB}
 
 [*Numbering practice: schematic labels*]{color=#24578F}
 
 @answer
 
-E. 17q41.3
+E. [*17*]{color=#D40000}[*q*]{color=#B74300}[*4*]{color=#007A00}[*1*]{color=#003FFF}[*.3*]{color=#A719DB}
 
 === layout: one-panel
 
@@ -203,10 +248,10 @@ E. 17q41.3
 
 @body
 
-- Same chromosome and arm: [*17q*]{color=#24578F}
-- Region first: [*4*]{color=#007A00} farther out than *3* or *1*
-- Region 4: [*17q41.3*]{color=#007A00}
-- [*Answer: E. 17q41.3*]{color=#007A00}
+- Same chromosome and arm: [*17*]{color=#D40000}[*q*]{color=#B74300}
+- [*Region*]{color=#007A00} first: [*4*]{color=#007A00} farther out than [*3*]{color=#007A00} or [*1*]{color=#007A00}
+- [*Region 4*]{color=#007A00}: [*17*]{color=#D40000}[*q*]{color=#B74300}[*4*]{color=#007A00}[*1*]{color=#003FFF}[*.3*]{color=#A719DB}
+- [*Answer: E.*]{color=#007A00} [*17*]{color=#D40000}[*q*]{color=#B74300}[*4*]{color=#007A00}[*1*]{color=#003FFF}[*.3*]{color=#A719DB}
 
 *Schematic labels; not a real chromosome 17 band map*
 
@@ -221,14 +266,14 @@ E. 17q41.3
 @body
 
 {table-style=comparison text-align=left}
-| Part | Meaning |
+| [Part]{text-align=center} | Meaning |
 | --- | --- |
-| [*47*]{color=#D40000} | Number of chromosomes |
-| [*XY*]{color=#B74300} | Sex-chromosome complement |
-| [*+21*]{color=#003FFF} | Extra copy of chromosome 21 |
+| [*47*]{color=#D40000 font-size=36pt text-align=center} | Number of chromosomes |
+| [*XY*]{color=#B74300 font-size=36pt text-align=center} | Sex-chromosome complement |
+| [*+21*]{color=#003FFF font-size=36pt text-align=center} | Extra copy of chromosome 21 |
 
 - [*+21*]{color=#003FFF}: extra *whole chromosome 21*
-- [*7q31.2*]{color=#24578F}: chromosome address
+- [*7*]{color=#D40000}[*q*]{color=#B74300}[*3*]{color=#007A00}[*1*]{color=#003FFF}[*.2*]{color=#A719DB}: chromosome address
 
 @citation
 
@@ -238,7 +283,7 @@ https://medlineplus.gov/genetics/condition/down-syndrome/
 
 @question
 
-What does *47,XY,+21* describe?
+[What does *47,XY,+21* describe?]{color=#000000}
 
 - A. XX with two extra copies of chromosome 21
 - B. XY with a partial deletion of chromosome 21
@@ -270,37 +315,14 @@ Homework notation: *47,+21,XY* -- same example, different order
 
 === layout: reference
 
-# For Reference: A-G Groups
-
-@body
-
-- Reference: not covered in lecture
-- Seven older chromosome groups, A-G, based on size and shape
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_008.png)
-
-=== layout: reference
-
-# For Reference: X and Y
-
-@body
-
-- Reference: not covered in lecture
-- X is in group C; Y is in group G
-- The SRY gene is on the short arm of Y
-
-![Lecture diagram](assets/lect10c-chromo_nomenclature/image_009.png)
-
-=== layout: reference
-
 # For Reference: Address Ranges
 
 @body
 
-- A single band: [*17q12*]{color=#24578F}
-- A range of bands: [*17q12-q21*]{color=#B74300}
+- A single [*band*]{color=#003FFF}: [*17*]{color=#D40000}[*q*]{color=#B74300}[*1*]{color=#007A00}[*2*]{color=#003FFF}
+- A range of [*bands*]{color=#003FFF}: [*17*]{color=#D40000}[*q*]{color=#B74300}[*1*]{color=#007A00}[*2*]{color=#003FFF}-[*q*]{color=#B74300}[*2*]{color=#007A00}[*1*]{color=#003FFF}
 - A range gives a broader location when the position is less precisely known
-- Decimal digits name finer subbands; they are not decimal distances
+- Decimal digits name finer [*subbands*]{color=#A719DB}; they are not decimal distances
 
 === layout: bookend
 
@@ -308,9 +330,9 @@ Homework notation: *47,+21,XY* -- same example, different order
 
 @body
 
-- [*p*]{color=#24578F}: short arm; [*q*]{color=#B74300}: long arm
-- [*Address*]{color=#24578F}: chromosome, arm, region, band, subband
-- Same arm: higher band numbers farther from the centromere
+- [*p*]{color=#B74300}: short arm; [*q*]{color=#B74300}: long arm
+- [*Address*]{color=#24578F}: [*chromosome*]{color=#D40000}, [*arm*]{color=#B74300}, [*region*]{color=#007A00}, [*band*]{color=#003FFF}, [*subband*]{color=#A719DB}
+- Same [*arm*]{color=#B74300}: higher [*band*]{color=#003FFF} numbers farther from the centromere
 - [*Karyotype*]{color=#24578F}: total, sex chromosomes, chromosome change
 
 === layout: theend

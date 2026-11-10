@@ -4,6 +4,139 @@ Current revision and verification appear first. Earlier conversion proposals, in
 checks are preserved in [LECT10_CONVERSION_HISTORY.md](LECT10_CONVERSION_HISTORY.md).
 Original ODP/PDF files remain unchanged.
 
+## November 10 chromosome groups restored
+
+The instructor identified a substantive coverage error: original C5-7 taught chromosome groups
+in three consecutive "Karyotype Definitions" slides before "Banding Pattern". The conversion
+collapsed this sequence into two Summary references and explicitly labeled it untaught. Those
+labels and that classification are superseded by the instructor's correction.
+
+Restore all three teaching steps as C9-11, preserving the original sentences about seven groups
+A-G, X in C, and Y in G, the original chromosome 13-17 and X/Y figures, and the original SRY locus
+callout (Yp11.3). Use native editable text with existing layouts; retain the five component colors
+in the restored address. C12 is now Banding Pattern. Add chromosome groups to the generated
+objectives. Remove the two former Summary references; 10C now has 28 visible slides.
+
+The CFTR question/answer/enlarged figure move to C15-17; the band-order question/answer to C19-20;
+the karyotype table/question/answer to C22-24; Summary to C25. Original covers and all other
+teaching blocks remain intact. Temporary original/source/export comparison and rendered checks:
+`_temp/lect10c_groups_restore/`. The voice and pedagogy guides now explicitly preserve the
+instructor's coverage decisions and repeated visual teaching sequence.
+
+The instructor also suggested course-aware general accents: teal/magenta for Genetics and
+blue/gold for Biotechnology. Record the generic selection principle in the color guide; retain
+the approved address-component key and existing authored content while evaluating this suggestion.
+
+## November 10 question-header contrast
+
+Set both 10C multiple-choice stems (C16 and C20) explicitly black over the course header gradient.
+C20's current ODP used dark navy; black gives clearer separation from the blue surface. C16's
+new component colors also crossed that gradient; keep the stem neutral and retain the component
+key throughout its choices and worked answer. Words, choices, reveals, and 27 slides remain.
+Check the rendered gradient under the whole prompt footprint, rather than assuming white.
+Document this treatment in the color guide. Temporary evidence: `_temp/lect10c_question_contrast/`.
+
+Rebuilt and visually checked C16/C20. The first question paragraph is explicitly `#000000` in
+both ODP styles and PDF text. Sampling the rendered horizontal gradient at every row across
+the complete prompt footprint gives a minimum 7.596:1 contrast (darkest background `#6F9FD5`),
+above the 5.5:1 target. All 27 visible texts and both native answer reveals remain; only C16/C20
+source formatting changes in this pass. Native lint, capacity, and 325 focused checks pass.
+
+## November 10 address-color continuity
+
+Carry the established five component colors through 10C's editable definitions, question prompts,
+complete addresses, band-order choices and answers, address ranges, and takeaways. Chromosome
+red, arm orange (both p and q), region green, band blue, and subband purple now keep their roles
+instead of recoloring a whole address for proximity or answer status. Region numerals in the
+worked comparison share green. C12's target address remains neutral while students identify its
+parts; C16 treats every alternative equally and retains its answer reveal. Preserve all words,
+27 slides, existing table font/alignment overrides, original figures, and separate karyotype keys.
+Document the reusable address key in [COLOR_GUIDE.md](../../../docs/slide-specs/COLOR_GUIDE.md).
+Temporary comparison and contrast/render evidence: `_temp/lect10c_address_colors/`.
+
+Rebuilt ODP/PDF and inspected the twelve color-key/context pages. All 27 visible pages retain
+their words, both native reveals remain, and no PDF text extends off-page. Native table runs
+match the component key; colors against actual white cell fills measure at least 5.5027:1.
+All six source text colors pass the 5.5:1 white-background audit. The extraction invocation
+enables `.djot` locally for the skill scanner; shared skill files are unchanged. Native lint
+passes across 210 Lecture 10 slides and 92 image references. Capacity reports no concerns for
+10C; 372 focused table/source/link/guidance checks pass. No permanent tests are added.
+
+## November 10 address-table emphasis
+
+Center and enlarge the key cells in 10C using the existing per-cell overrides, following the
+10D trisomy table. C11 uses centered bold 28 pt part labels and 30 pt example tokens; their
+colors match the existing C13 address components. C13 uses 32 pt address parts, and C19 uses
+36 pt karyotype parts. Reduce vertical padding on the five-row tables to preserve readable
+left-aligned explanations. Center their identifying column headers. C15's two comparison addresses use centered bold 32 pt text. Wording, answers,
+figures, order, and the 27-slide count remain unchanged. Temporary rendered checks and native
+cell verification: `_temp/lect10c_table_emphasis/`. Rebuilt and visually inspected all four
+tables; native cell sizes, centering, and bold text agree. All 27 pages retain their words.
+Native lint, capacity, and 261 focused table/documentation checks pass.
+
+## November 10 chromosome band figures
+
+Replace the insufficient unbanded chromosome-arm and CFTR hierarchy SVGs in 10C with the
+original banded figures. C5 pairs original chromosomes 1-3 with 21-22, as in original C2.
+C8 restores the original C4 full-width chromosome 11-14 band diagram. C13 pairs the existing
+editable answer table with the original CFTR chromosome-7 figure, explicitly showing region 3,
+band 1, and subband 2. C14 retains the enlarged original figure for discussion. C12 remains an
+unanswered question. The "Landmarks, not a band map" text leaves the deck with its discarded
+SVG references; earlier favorable assessments of those replacements are superseded.
+Keep 27 slides and all other source blocks unchanged. Temporary comparison and rendered
+verification: `_temp/lect10c_band_restore/`.
+
+Rebuilt ODP/PDF and visually inspected C5, C8, C13, and C14. Both exports retain 27 slides;
+source comparison limits this pass to C5/C8/C13, and the original image bytes are embedded
+unchanged in ODP. Native lint, capacity, and 325 focused source/link/guidance checks pass.
+
+## November 10 prenatal raster restoration
+
+At the instructor's request, replace the SVG drawings on D54 (Amniocentesis) and D55
+(Chorionic Villus Sampling) with the original labeled raster figures. Render each complete
+figure from original D28-29 at 3x, preserving the overlaid anatomy/workflow labels and credit;
+the separate imported JPEGs alone omit those labels. Keep current editable titles, order, and
+all 65 slides. Earlier positive assessments of the replacement SVGs are superseded.
+Temporary comparison and rendered evidence: `_temp/lect10d_prenatal_raster/`.
+
+## November 10 Down syndrome sequence
+
+The instructor's original D13-20 already follows the broad sequence retained by the conversion:
+karyotype, forms, prevalence/survival, health, maternal-age graphs, and cohesion. The conversion
+substantially rewrote the fertility answer from original D43, losing its numerical evidence and
+men/women contrast. This follow-up restores that teaching point and improves the visual sequence.
+
+- D32: new `subsubsection` for Down Syndrome within Autosomal Trisomies.
+- D33-36: karyotype, three forms, survival, then health. Pair the original standalone photograph/
+  karyotype from former D39 with the established health wording on D36 (formerly D35).
+- D37-39: incidence graph, maternal-age context, then a new two-state cohesion schematic.
+  Blue sisters and orange cohesin rings distinguish maintained versus weakened connections.
+  Labels remain editable text. The schematic is illustrative, not microscopy or a measured
+  age comparison, and cites [Tsutsumi et al. (2014)](https://doi.org/10.1371/journal.pone.0096710).
+- D41: retain the `question-ask` pause, "Can People with Down Syndrome Have Children?"
+- D42: restore the original women/men contrast and four pregnancies fathered by three men,
+  explicitly dated as of 2005. Keep male fertility frequency uncertain while acknowledging
+  documented paternity. The historical counts come from the instructor's original D43;
+  [Pradhan et al. (2006)](https://doi.org/10.1016/j.fertnstert.2006.03.071) and the
+  [2015 primary case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC4595396/) support documented
+  male fertility. They are not a current census or a claim of universal male sterility.
+- D43-48: retain the explicit segregation-model assumptions and answer. D44 becomes the
+  `subsubsection` "How Three Homologs Separate during Meiosis", introducing the visual explanation.
+  D42 returns to the original offspring question, removing the duplicate homolog-separation prompt.
+
+Adding the divider and pairing the loose image keeps 65 authored/ODP/PDF slides. D1-31 and D40-41,
+D43, D45-65 remain unchanged in source. All original images remain present; the two new SVGs use
+no external resources. One-time comparison, XML checks, and rendered review are under
+`_temp/lect10d_down_revision/`; this content revision adds no permanent tests.
+
+Rebuilt the editable ODP and PDF and visually inspected D32-48, including the two-state
+schematic at full size. All 65 pages fit; capacity reports no concerns, all 30 original image
+references remain, and exported text is selectable with no off-page text. Strict native lint
+passes for all four Lecture 10 sources (210 authored slides, 93 image references). The 214
+focused documentation checks pass. The full base suite has 5,901 passes and two cover failures
+in the unchanged Lecture 14/15 agenda-only sources, outside this Lecture 10 revision. Image-free
+authored schematics use the repository's tracked `.drawn.svg` suffix.
+
 ## November 10 presentation order and trisomy table
 
 Reorder 10A as approved: cover, agenda, icebreaker, Next Week, quiz schedule and Quiz 5 vote,

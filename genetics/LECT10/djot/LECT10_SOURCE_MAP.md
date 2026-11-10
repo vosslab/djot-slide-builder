@@ -9,7 +9,7 @@ The full original/current comparison, local repairs, and restored agenda are rec
 | --- | --- | --- | --- |
 | A | 64 | 43 | 21 |
 | B | 54 | 54 | 0 |
-| C | 27 | 27 | 0 |
+| C | 28 | 28 | 0 |
 | D | 65 | 65 | 0 |
 
 The historical bridges below predate the latest topic dividers and question-layout repairs.
@@ -20,8 +20,16 @@ choices/vote. Routine announcements follow. Pages A12-15 present the four movie 
 for the vote. Their wording and poster bytes come from the supplied movie-choice ODP. The five
 inserted pages place the existing contact slides at A22-23. See
 [LECT10_REVIEW.md](LECT10_REVIEW.md#november-10-movie-choices).
-Pages D41 and D44 use `question-ask` for the existing questions to ponder. A3 remains an
-icebreaker using the separate `prompt` layout with required examples; counts are unchanged.
+C5 and C8 restore original banded chromosome figures. C9-11 restore the original three
+chromosome-group teaching slides before Banding Pattern (C12), including X/Y and the SRY locus.
+C15-17 contain the unanswered CFTR question, worked answer with original band-location figure,
+and enlarged figure. C19 and C23 are the contrast-corrected multiple-choice questions. Summary
+is C25; chromosome-group content is taught in the main sequence. C has 28 visible pages, so
+Lecture 10 totals are 211 authored / 190 visible / 21 hidden. Earlier page bridges are historical.
+D32 now introduces Down Syndrome with `subsubsection`; D36 pairs the health text with the former
+standalone D39 image, and D39 illustrates cohesion. D41 retains `question-ask`; D42 restores the
+original fertility contrast and historical counts. D44 uses `subsubsection` for "How Three Homologs
+Separate during Meiosis". A3 remains an icebreaker using `prompt`; counts are unchanged.
 D26 restores the original D39 question's full-width choices, with shorter wording and counts
 out of four gametes. Its answer remains C with the native reveal.
 The initial text/color follow-up overreached into established instructor prose. The subsequent

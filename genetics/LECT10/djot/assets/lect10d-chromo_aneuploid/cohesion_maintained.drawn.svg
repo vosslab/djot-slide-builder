@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-labelledby="title desc">
+<title id="title">cohesion maintained</title>
+<desc id="desc">Two sister chromatids, blue, held by four orange cohesin rings.</desc>
+<g transform="translate(320 0) rotate(90)">
+<g id="sister-chromatids" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="round">
+<path d="M 78 24 C 76 90 78 122 85 157 C 78 192 76 230 78 296"/>
+<path d="M 122 24 C 124 90 122 122 115 157 C 122 192 124 230 122 296"/>
+</g>
+<g id="cohesin" fill="none" stroke="#935D00" stroke-width="7">
+<ellipse cx="100" cy="64" rx="41" ry="12"/>
+<ellipse cx="100" cy="116" rx="41" ry="12"/>
+<ellipse cx="100" cy="190" rx="41" ry="12"/>
+<ellipse cx="100" cy="254" rx="41" ry="12"/>
+</g>
+</g>
+</svg>

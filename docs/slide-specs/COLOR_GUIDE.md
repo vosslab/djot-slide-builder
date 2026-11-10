@@ -44,6 +44,10 @@ standardizing; investigate uncertain relationships before recoloring them.
 | Current focus | The object or change being discussed now | Use a clear outline, arrow, mask, or selective highlight while retaining stable identities. |
 | Answer or feedback | A result after students respond | Preserve the intended reveal and include a verbal or symbolic explanation. |
 
+Choose general emphasis accents with the course hue in mind, using colors that remain distinct
+from its theme surfaces. Measure foreground/background contrast on the actual surface, including
+gradients. Preserve an established concept key while choosing accents for unrelated emphasis.
+
 Theme colors and concept colors serve different purposes. A red Biotechnology theme does not
 require every concept to be red. A procedure can use the same palette entries as a data figure
 without implying that a step and a gene pair are the same thing; make their local roles clear.
@@ -138,6 +142,30 @@ See the actual shared
 for a multicolor procedure with cross-references. It illustrates recorded instructor guidance;
 its punctuation and line breaks are not universal requirements for new methods.
 
+## Chromosome address colors
+
+Use this key across chromosome-address definitions, examples, comparisons, worked answers,
+reference slides, and summaries. Both p and q identify the arm and share orange.
+
+| Address component | Text color | Example in 7q31.2 |
+| --- | --- | --- |
+| Chromosome | Red `#D40000` | 7 |
+| Arm | Orange `#B74300` | q |
+| Region | Green `#007A00` | 3 |
+| Band | Blue `#003FFF` | 1 |
+| Subband | Purple `#A719DB` | .2 |
+
+Color each part of a complete address according to its identity, including repeated prefixes
+and range endpoints. Keep the explanation readable in regular dark text; color the relevant
+terms when students compare these five components. Preserve the established banded source
+figures and their labels.
+
+A question asking students to identify an address's parts can keep that address neutral until
+the worked answer. Its response prompts can use the five concept colors. In band-order
+questions, apply the same component key to every choice and retain the answer reveal.
+Karyotype counts, sex-chromosome complements, and whole-chromosome changes retain the separate
+key introduced by their own comparison table.
+
 ## Preserve questions and reveals
 
 Before students answer, apply concept colors equally to correct and incorrect alternatives.
@@ -154,6 +182,10 @@ and more than color alone to distinguish changed conditions. Hints and worked ex
 be visible teaching scaffolds; their placement follows [PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md).
 
 ## Keep theme and content readable
+
+Use explicit black for multiple-choice question stems that cross the course header gradient.
+Measure against the gradient under the entire text footprint. Carry component colors in the
+choices and explanations over their white content area.
 
 Use black table-header text on light course-colored backgrounds. Explicit cell fills do not
 automatically change text color; check headers, colored rows, and total rows together. Distinguish

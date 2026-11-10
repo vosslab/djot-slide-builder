@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-labelledby="title desc">
+<title id="title">cohesion weakened</title>
+<desc id="desc">Two sister chromatids, blue, held by one orange cohesin ring, with loosened arms.</desc>
+<g transform="translate(320 0) rotate(90)">
+<g id="sister-chromatids" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="round">
+<path d="M 46 24 C 42 85 60 123 85 157 C 59 192 43 235 46 296"/>
+<path d="M 154 24 C 158 85 140 123 115 157 C 141 192 157 235 154 296"/>
+</g>
+<g id="cohesin" fill="none" stroke="#935D00" stroke-width="7">
+<ellipse cx="100" cy="157" rx="41" ry="12"/>
+</g>
+</g>
+</svg>

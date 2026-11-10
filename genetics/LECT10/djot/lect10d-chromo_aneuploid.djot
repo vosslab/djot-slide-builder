@@ -401,6 +401,10 @@ https://medlineplus.gov/genetics/condition/trisomy-13/  https://medlineplus.gov/
 
 ![Lecture diagram](assets/lect10d-chromo_aneuploid/image_007.png)
 
+=== layout: subsubsection
+
+# Down Syndrome
+
 === layout: two-panels
 
 # *Down Syndrome*
@@ -450,15 +454,19 @@ https://www.cdc.gov/birth-defects/about/down-syndrome.html
 
 https://pubmed.ncbi.nlm.nih.gov/2325123/
 
-=== layout: one-panel
+=== layout: two-panels
 
 # *Down Syndrome Stats*
 
-@body
+@left
 
 - Down syndrome occurs in people of all races and economic levels
 - Most people with Down syndrome lead healthy lives, but they have an increased risk for certain medical conditions
   - such as congenital heart defects, respiratory and hearing problems, Alzheimer's disease, childhood leukemia and thyroid conditions.
+
+@right
+
+![Chromosome 21 trisomy karyotype beside a child with Down syndrome](assets/lect10d-chromo_aneuploid/image_013.jpg)
 
 === layout: two-panels
 
@@ -494,28 +502,40 @@ https://pubmed.ncbi.nlm.nih.gov/2325123/
 
 https://www.cdc.gov/birth-defects/about/down-syndrome.html
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Why Is Age a Factor?
 
-@body
+@left
 
-- *Cohesin* helps hold sister chromatids together
-- These connections help chromosomes separate correctly during meiosis
-- Studies of mouse and human eggs find age-related loss of meiotic cohesin
-- Weaker connections can contribute to segregation errors
-- One part of the explanation; age does not determine an individual outcome
+[*More cohesin*]{color=#935D00}
+
+![Two blue sister chromatids held close together by four orange cohesin rings](assets/lect10d-chromo_aneuploid/cohesion_maintained.drawn.svg)
+
+- Sister chromatids held together
+
+@right
+
+[*Less cohesin*]{color=#935D00}
+
+![Two blue sister chromatids with fewer orange cohesin rings and loosened arms](assets/lect10d-chromo_aneuploid/cohesion_weakened.drawn.svg)
+
+- Weaker connections
+- More segregation errors
 
 @citation
 
-https://pmc.ncbi.nlm.nih.gov/articles/PMC4013030/
+Simplified schematic. Age-related cohesin loss in mouse and human eggs: https://doi.org/10.1371/journal.pone.0096710
 
-=== layout: one-panel
+@notes
 
-
-@body
-
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_013.jpg)
+Blue: sister chromatids of one replicated chromosome. Orange rings: cohesin complexes,
+shown schematically, not to scale. Both panels show the same chromosome identity and DNA amount.
+The changed spacing illustrates weakened cohesion, not a measured distance or a specific age.
+Arm cohesion helps maintain chiasmata between homologs; centromeric cohesion keeps sisters
+associated. Loss can disturb homolog segregation or permit premature sister separation.
+Tsutsumi et al. (2014) measured age-related loss of meiosis-specific cohesin subunits in
+human and mouse oocytes. Cohesion deterioration is one contributor to maternal-age effects.
 
 === layout: two-panels
 
@@ -540,21 +560,38 @@ https://www.cbsnews.com/video/is-iceland-on-track-to-eliminate-down-syndrome/
 
 # Can People with Down Syndrome Have Children?
 
-=== layout: one-panel
+=== layout: two-panels
 
-# Fertility and Chromosome Segregation
+# Down Syndrome and Fertility
 
-@body
+@left
 
-- Women with Down syndrome can and do have children
-- Fertility is usually reduced in men; rare paternity reports exist
-- Now ask a simpler chromosome question:
-  - How can *three homologs* separate during meiosis?
-  - What gametes would that produce?
+[*Men: commonly believed to be sterile*]{color=#24578F}
+
+- As of 2005: *four pregnancies* fathered by *three men* with Down syndrome
+- Defective spermatogenesis
+- How common is male fertility? *Still uncertain*
+
+@right
+
+[*Women can and do have children*]{color=#935D00}
+
+- What is the likelihood that their offspring will have Down syndrome?
 
 @citation
 
-https://pubmed.ncbi.nlm.nih.gov/17094988/
+Historical reports: Pradhan et al. (2006), https://doi.org/10.1016/j.fertnstert.2006.03.071
+
+@notes
+
+Restore the original slide's teaching contrast and historical counts, not a current census.
+The original phrasing was: "Men with Down syndrome are commonly believed to be sterile."
+The 2006 case report documents paternity in a man with nonmosaic Down syndrome.
+Rare documented paternity establishes that male infertility is not absolute; population
+fertility and paternal transmission risk remain poorly quantified. Do not describe all men
+as sterile or male fertility as completely unknown. See also the 2015 primary case report:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4595396/
+The offspring question leads into the explicit chromosome-segregation model on the next slide.
 
 === layout: one-panel
 
@@ -572,9 +609,9 @@ https://pubmed.ncbi.nlm.nih.gov/17094988/
 
 *Chromosome model; not live-birth risk*
 
-=== layout: question-ask
+=== layout: subsubsection
 
-# How Do Three Homologs Separate?
+# How Three Homologs Separate during Meiosis
 
 === layout: one-panel
 
@@ -698,7 +735,7 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 @body
 
-![Amniocentesis](assets/lect10_repaired_figures/amniocentesis.drawn.svg)
+![Amniocentesis](assets/lect10d-chromo_aneuploid/amniocentesis_original_labeled.png)
 
 === layout: one-panel
 
@@ -706,7 +743,7 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 @body
 
-![Chorionic Villus Sampling](assets/lect10_repaired_figures/chorionic_villus_sampling.drawn.svg)
+![Chorionic Villus Sampling](assets/lect10d-chromo_aneuploid/chorionic_villus_sampling_original_labeled.png)
 
 === layout: two-panels
 

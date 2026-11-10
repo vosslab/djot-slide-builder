@@ -28,6 +28,10 @@ clarity corrections. This is an approximate preservation target, not an exact au
 Preserve the examples, questions, explanations, scientific meaning, and relative sequence.
 Color and layout improvements do not authorize a rewrite.
 
+Preserve the instructor's stated coverage, teaching sequence, and repeated visual steps as part
+of their voice. Keep originally taught material in the teaching sequence. Use the instructor's
+explicit designation when labeling material optional or for later study.
+
 Keep existing first-person instructions, explanations, and announcements in the instructor's
 wording, including complete sentences. Apply the preference for short teaching cues to new or
 specifically identified verbose material. Preserve the rhythm and personal statements of existing
