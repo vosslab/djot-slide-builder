@@ -50,6 +50,20 @@ The permanent suite establishes fast, deterministic source and native-object beh
 [PYTEST_STYLE.md](PYTEST_STYLE.md) to decide whether new coverage belongs there; use the separate
 acceptance lanes for real LibreOffice conversion, strict native Djot validation, and rendered review.
 
+Layout regressions are grouped by responsibility:
+
+- [../tests/test_layout_engine.py](../tests/test_layout_engine.py): source preservation, capacity
+  diagnostics, and teaching-layout semantics.
+- [../tests/test_layout_tables.py](../tests/test_layout_tables.py): table sizing, grouped reveals,
+  spans, and native cell formatting.
+- [../tests/test_layout_text.py](../tests/test_layout_text.py): links, citations, and text wrapping.
+- [../tests/test_layout_media.py](../tests/test_layout_media.py): images, captions, mixed content,
+  and question/answer separation.
+
+Use `tests/_temp/` for temporary pytest checks, then promote or delete them before handoff.
+Lecture-specific counts, rebuild comparisons, and rendered acceptance checks stay task evidence;
+they do not become permanent tests or fixtures. Keep renders and review artifacts in root `_temp/`.
+
 ## Validate a presentation change
 
 Use `deck_tools.py` as the application front door. Build a folder only when the change requires

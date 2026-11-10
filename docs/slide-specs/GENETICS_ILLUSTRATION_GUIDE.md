@@ -151,6 +151,13 @@ comparison without letting surface detail compete with their relationships. Sour
 remain live and unchanged. Actual-source ODP/PDF review accepts the composition; canonical
 full-root delivery status remains in the progress ledger.
 
+[pea_mendel_p.drawn.svg](../../genetics/LECT05/djot/assets/lect05h-epistasis/pea_mendel_p.drawn.svg)
+builds each pea flower from a standard, paired wings and a cupped keel, while
+[four_oclock_incomplete_cross.drawn.svg](../../genetics/LECT05/djot/assets/lect05f-degrees_of_dominance/four_oclock_incomplete_cross.drawn.svg)
+uses a continuous funnel. Related line weights and restrained shading keep the drawings
+coherent while their different silhouettes preserve botanical identity. Both pass actual-source
+ODP/PDF contextual review; canonical delivery status remains in the progress ledger.
+
 ## Shared drawing choices
 
 | Choice | Apply it to the subject |

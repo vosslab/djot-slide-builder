@@ -155,6 +155,8 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
 	"""Distinguish framed chapter cards from symmetric, striped topic dividers."""
 	is_subsection = contract.name == "subsection"
+	foreground = slide_lib.presentation_theme.resolve_text_color("black", theme.accent_color) \
+		if is_subsection else WHITE
 	rectangle = slide_lib.layout_primitives.LogicalRectangle(150, 235, 980, 330)
 	frame = dataclasses.replace(_frame_text(),
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
@@ -167,11 +169,11 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		else theme.ordinary_body_size_pt
 	title = slide_lib.layout_object_builders.text_content(
 		(headings[0],), sizes.title_size_pt, theme.title_floor_size_pt,
-		slide_lib.layout_primitives.StyleRole.TITLE, WHITE,
+		slide_lib.layout_primitives.StyleRole.TITLE, foreground,
 		rectangle.width, theme, bold=True, session=session)
 	subtitle = slide_lib.layout_object_builders.text_content(
 		headings[1:], subtitle_size, theme.body_floor_size_pt,
-		slide_lib.layout_primitives.StyleRole.SUBTITLE, WHITE,
+		slide_lib.layout_primitives.StyleRole.SUBTITLE, foreground,
 		rectangle.width, theme, session=session)
 	paragraphs = tuple(dataclasses.replace(paragraph, properties=dataclasses.replace(
 		paragraph.properties,
@@ -201,8 +203,8 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		decorations = tuple(_decorative_shape(f"subsection-{edge}-stripe",
 			slide_lib.layout_primitives.LogicalRectangle(0, y, 1280, 8),
 			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
-			slide_lib.layout_primitives.StyleRole.DECORATION,
-			slide_lib.layout_primitives.StyleRole.DECORATION,
+			slide_lib.layout_primitives.StyleRole.SUBSECTION_INK,
+			slide_lib.layout_primitives.StyleRole.SUBSECTION_INK,
 			slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 0, order)
 			for order, (edge, y) in enumerate((("top", 80), ("bottom", 712)), 1))
 	surface = slide_lib.layout_primitives.SlideSurface(

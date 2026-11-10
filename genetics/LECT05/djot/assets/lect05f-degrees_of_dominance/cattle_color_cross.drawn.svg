@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1034" height="880" viewBox="0 0 1034 880" role="img" aria-labelledby="cattle-title cattle-desc">
+<title id="cattle-title">Red and white cattle cross</title>
+<desc id="cattle-desc">Schematic cattle cross from Genetics LECT05F, authored slide 47. A red parent and a white parent lead to one roan offspring with intermixed red and white hair. Original illustration, unmeasured proportions.</desc>
+<rect id="background" width="1034" height="880" fill="#FFFFFF"/>
+<g id="red-parent" transform="translate(12 35) scale(1)" stroke="#293D46" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<path id="red-parent-far-legs" d="M115 164 L137 167 L130 211 L143 254 L122 254 L108 215 Z M291 163 L310 162 L317 252 L295 252 L289 212 Z" fill="#783B2C"/>
+<path id="red-parent-far-hooves" d="M121 246 L140 246 L146 260 L121 260 Z M295 244 L316 244 L322 258 L295 258 Z" fill="#293D46"/>
+<path id="red-parent-tail" d="M68 99 C32 103 48 159 29 174" fill="none" stroke="#783B2C" stroke-width="12"/>
+<path id="red-parent-tail-outline" d="M68 99 C32 103 48 159 29 174" fill="none" stroke="#293D46" stroke-width="4"/>
+<path id="red-parent-tail-tuft" d="M27 168 C17 171 15 187 18 197 C27 194 36 184 35 175 Z" fill="#783B2C"/>
+<path id="red-parent-body-neck" d="M70 82 C83 59 112 55 145 59 C190 62 225 63 262 57 C285 53 296 64 308 72 C318 58 324 45 339 42 C365 43 374 64 367 91 C365 110 346 127 330 144 C319 158 322 180 305 186 C296 189 289 177 280 183 C235 201 177 202 133 186 C119 193 91 185 78 167 C63 149 59 109 70 82 Z" fill="#A64D32"/>
+<path id="red-parent-belly-volume" d="M74 136 C99 175 141 179 180 182 C230 190 278 178 312 151 L319 165 C316 179 311 189 302 185 C293 181 290 178 280 183 C235 201 177 202 133 186 C116 194 91 181 80 168 Z" fill="#783B2C" stroke="none"/>
+<path id="red-parent-back-light" d="M88 81 C109 68 126 69 150 72 C188 77 227 74 261 69 C280 66 289 72 298 79 C251 85 210 88 164 84 C130 80 109 78 88 87 Z" fill="#BD6748" stroke="none"/>
+<path id="red-parent-near-hind-leg" d="M86 152 C111 151 126 165 119 185 L105 216 L111 265 L89 265 L80 218 L88 194 C74 183 75 169 86 152 Z" fill="#A64D32"/>
+<path id="red-parent-near-front-leg" d="M274 173 C285 180 294 181 306 174 L299 219 L305 265 L281 265 L273 219 Z" fill="#A64D32"/>
+<path id="red-parent-near-hooves" d="M87 254 L110 254 L115 271 L87 271 Z M280 254 L304 254 L311 271 L281 271 Z" fill="#293D46"/>
+<path id="red-parent-hoof-clefts" d="M102 259 L103 270 M296 259 L298 270" fill="none" stroke="#BAC5C5" stroke-width="2.5"/>
+<path id="red-parent-hip-fold" d="M100 123 C124 132 131 155 119 174" fill="none" stroke="#783B2C" stroke-width="4"/>
+<path id="red-parent-far-horn" d="M363 51 C376 34 380 19 377 7 C389 25 386 46 375 60 Z" fill="#D6C9AA" stroke="#293D46" stroke-width="3.5"/>
+<path id="red-parent-far-ear" d="M370 57 C384 47 402 51 408 61 C394 73 379 74 368 67 Z" fill="#783B2C" stroke="#293D46" stroke-width="4"/>
+<path id="red-parent-head" d="M333 47 C345 36 369 40 380 54 C388 67 381 88 388 108 C391 125 378 140 363 139 C347 139 331 124 331 110 C335 92 321 64 333 47 Z" fill="#A64D32"/>
+<path id="red-parent-head-shadow" d="M373 55 C384 67 378 88 384 106 L370 122 C360 114 363 98 366 82 Z" fill="#783B2C" stroke="none"/>
+<path id="red-parent-near-ear" d="M335 62 C321 50 302 49 291 58 C303 74 319 78 335 71 Z" fill="#A64D32" stroke="#293D46" stroke-width="4"/>
+<path id="red-parent-ear-inner" d="M327 65 C317 59 309 58 302 60 C311 67 318 69 327 68 Z" fill="#C79C89" stroke="none"/>
+<path id="red-parent-near-horn" d="M337 47 C326 36 325 18 330 5 C317 12 315 33 323 51 Z" fill="#F2E4C8" stroke="#293D46" stroke-width="3.5"/>
+<path id="red-parent-forehead-lock" d="M332 47 Q343 35 350 43 Q359 36 369 45 L366 53 Q349 48 336 55 Z" fill="#783B2C" stroke="none"/>
+<ellipse id="red-parent-eye" cx="365" cy="78" rx="5.8" ry="7.2" fill="#293D46" stroke="none"/>
+<circle id="red-parent-eye-light" cx="366.8" cy="75.5" r="1.8" fill="#FFFFFF" stroke="none"/>
+<path id="red-parent-brow" d="M357 66 Q364 62 371 67" fill="none" stroke="#293D46" stroke-width="3"/>
+<path id="red-parent-muzzle" d="M355 104 C365 98 383 99 395 106 C405 113 404 130 394 139 C382 149 358 145 349 133 C342 123 345 111 355 104 Z" fill="#C89586"/>
+<path id="red-parent-muzzle-volume" d="M348 126 C361 138 383 139 400 124 C397 144 371 152 353 137 Z" fill="#AF7C70" stroke="none"/>
+<ellipse id="red-parent-nostril" cx="389" cy="117" rx="3.6" ry="5.5" fill="#6C514B" stroke="none" transform="rotate(18 389 117)"/>
+<path id="red-parent-mouth" d="M373 137 Q383 138 389 133" fill="none" stroke="#6C514B" stroke-width="2.5"/>
+</g>
+<g id="white-parent" transform="translate(1022 35) scale(-1 1)" stroke="#293D46" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<path id="white-parent-far-legs" d="M115 164 L137 167 L130 211 L143 254 L122 254 L108 215 Z M291 163 L310 162 L317 252 L295 252 L289 212 Z" fill="#D8DDD8"/>
+<path id="white-parent-far-hooves" d="M121 246 L140 246 L146 260 L121 260 Z M295 244 L316 244 L322 258 L295 258 Z" fill="#293D46"/>
+<path id="white-parent-tail" d="M68 99 C32 103 48 159 29 174" fill="none" stroke="#D8DDD8" stroke-width="12"/>
+<path id="white-parent-tail-outline" d="M68 99 C32 103 48 159 29 174" fill="none" stroke="#293D46" stroke-width="4"/>
+<path id="white-parent-tail-tuft" d="M27 168 C17 171 15 187 18 197 C27 194 36 184 35 175 Z" fill="#D8DDD8"/>
+<path id="white-parent-body-neck" d="M70 82 C83 59 112 55 145 59 C190 62 225 63 262 57 C285 53 296 64 308 72 C318 58 324 45 339 42 C365 43 374 64 367 91 C365 110 346 127 330 144 C319 158 322 180 305 186 C296 189 289 177 280 183 C235 201 177 202 133 186 C119 193 91 185 78 167 C63 149 59 109 70 82 Z" fill="#FCFAF2"/>
+<path id="white-parent-belly-volume" d="M74 136 C99 175 141 179 180 182 C230 190 278 178 312 151 L319 165 C316 179 311 189 302 185 C293 181 290 178 280 183 C235 201 177 202 133 186 C116 194 91 181 80 168 Z" fill="#D8DDD8" stroke="none"/>
+<path id="white-parent-back-light" d="M88 81 C109 68 126 69 150 72 C188 77 227 74 261 69 C280 66 289 72 298 79 C251 85 210 88 164 84 C130 80 109 78 88 87 Z" fill="#FFFFFF" stroke="none"/>
+<path id="white-parent-near-hind-leg" d="M86 152 C111 151 126 165 119 185 L105 216 L111 265 L89 265 L80 218 L88 194 C74 183 75 169 86 152 Z" fill="#FCFAF2"/>
+<path id="white-parent-near-front-leg" d="M274 173 C285 180 294 181 306 174 L299 219 L305 265 L281 265 L273 219 Z" fill="#FCFAF2"/>
+<path id="white-parent-near-hooves" d="M87 254 L110 254 L115 271 L87 271 Z M280 254 L304 254 L311 271 L281 271 Z" fill="#293D46"/>
+<path id="white-parent-hoof-clefts" d="M102 259 L103 270 M296 259 L298 270" fill="none" stroke="#BAC5C5" stroke-width="2.5"/>
+<path id="white-parent-hip-fold" d="M100 123 C124 132 131 155 119 174" fill="none" stroke="#D8DDD8" stroke-width="4"/>
+<path id="white-parent-far-horn" d="M363 51 C376 34 380 19 377 7 C389 25 386 46 375 60 Z" fill="#D6C9AA" stroke="#293D46" stroke-width="3.5"/>
+<path id="white-parent-far-ear" d="M370 57 C384 47 402 51 408 61 C394 73 379 74 368 67 Z" fill="#D8DDD8" stroke="#293D46" stroke-width="4"/>
+<path id="white-parent-head" d="M333 47 C345 36 369 40 380 54 C388 67 381 88 388 108 C391 125 378 140 363 139 C347 139 331 124 331 110 C335 92 321 64 333 47 Z" fill="#FCFAF2"/>
+<path id="white-parent-head-shadow" d="M373 55 C384 67 378 88 384 106 L370 122 C360 114 363 98 366 82 Z" fill="#D8DDD8" stroke="none"/>
+<path id="white-parent-near-ear" d="M335 62 C321 50 302 49 291 58 C303 74 319 78 335 71 Z" fill="#FCFAF2" stroke="#293D46" stroke-width="4"/>
+<path id="white-parent-ear-inner" d="M327 65 C317 59 309 58 302 60 C311 67 318 69 327 68 Z" fill="#C79C89" stroke="none"/>
+<path id="white-parent-near-horn" d="M337 47 C326 36 325 18 330 5 C317 12 315 33 323 51 Z" fill="#F2E4C8" stroke="#293D46" stroke-width="3.5"/>
+<path id="white-parent-forehead-lock" d="M332 47 Q343 35 350 43 Q359 36 369 45 L366 53 Q349 48 336 55 Z" fill="#D8DDD8" stroke="none"/>
+<ellipse id="white-parent-eye" cx="365" cy="78" rx="5.8" ry="7.2" fill="#293D46" stroke="none"/>
+<circle id="white-parent-eye-light" cx="366.8" cy="75.5" r="1.8" fill="#FFFFFF" stroke="none"/>
+<path id="white-parent-brow" d="M357 66 Q364 62 371 67" fill="none" stroke="#293D46" stroke-width="3"/>
+<path id="white-parent-muzzle" d="M355 104 C365 98 383 99 395 106 C405 113 404 130 394 139 C382 149 358 145 349 133 C342 123 345 111 355 104 Z" fill="#C89586"/>
+<path id="white-parent-muzzle-volume" d="M348 126 C361 138 383 139 400 124 C397 144 371 152 353 137 Z" fill="#AF7C70" stroke="none"/>
+<ellipse id="white-parent-nostril" cx="389" cy="117" rx="3.6" ry="5.5" fill="#6C514B" stroke="none" transform="rotate(18 389 117)"/>
+<path id="white-parent-mouth" d="M373 137 Q383 138 389 133" fill="none" stroke="#6C514B" stroke-width="2.5"/>
+</g>
+<g id="parental-cross" stroke="#293D46" stroke-width="12" stroke-linecap="round"><path d="M497 175 L537 215 M537 175 L497 215"/></g>
+<g id="offspring-arrow" fill="#293D46"><path d="M511 380 H523 V437 H544 L517 467 L490 437 H511 Z"/></g>
+<g id="roan-offspring" transform="translate(270 480) scale(1.12)" stroke="#293D46" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<path id="roan-offspring-far-legs" d="M115 164 L137 167 L130 211 L143 254 L122 254 L108 215 Z M291 163 L310 162 L317 252 L295 252 L289 212 Z" fill="#783B2C"/>
+<path id="roan-offspring-far-hooves" d="M121 246 L140 246 L146 260 L121 260 Z M295 244 L316 244 L322 258 L295 258 Z" fill="#293D46"/>
+<path id="roan-offspring-tail" d="M68 99 C32 103 48 159 29 174" fill="none" stroke="#783B2C" stroke-width="12"/>
+<path id="roan-offspring-tail-outline" d="M68 99 C32 103 48 159 29 174" fill="none" stroke="#293D46" stroke-width="4"/>
+<path id="roan-offspring-tail-tuft" d="M27 168 C17 171 15 187 18 197 C27 194 36 184 35 175 Z" fill="#783B2C"/>
+<path id="roan-offspring-body-neck" d="M70 82 C83 59 112 55 145 59 C190 62 225 63 262 57 C285 53 296 64 308 72 C318 58 324 45 339 42 C365 43 374 64 367 91 C365 110 346 127 330 144 C319 158 322 180 305 186 C296 189 289 177 280 183 C235 201 177 202 133 186 C119 193 91 185 78 167 C63 149 59 109 70 82 Z" fill="#A64D32"/>
+<path id="roan-offspring-belly-volume" d="M74 136 C99 175 141 179 180 182 C230 190 278 178 312 151 L319 165 C316 179 311 189 302 185 C293 181 290 178 280 183 C235 201 177 202 133 186 C116 194 91 181 80 168 Z" fill="#783B2C" stroke="none"/>
+<path id="roan-offspring-back-light" d="M88 81 C109 68 126 69 150 72 C188 77 227 74 261 69 C280 66 289 72 298 79 C251 85 210 88 164 84 C130 80 109 78 88 87 Z" fill="#BD6748" stroke="none"/>
+<path id="roan-offspring-near-hind-leg" d="M86 152 C111 151 126 165 119 185 L105 216 L111 265 L89 265 L80 218 L88 194 C74 183 75 169 86 152 Z" fill="#A64D32"/>
+<path id="roan-offspring-near-front-leg" d="M274 173 C285 180 294 181 306 174 L299 219 L305 265 L281 265 L273 219 Z" fill="#A64D32"/>
+<path id="roan-offspring-near-hooves" d="M87 254 L110 254 L115 271 L87 271 Z M280 254 L304 254 L311 271 L281 271 Z" fill="#293D46"/>
+<path id="roan-offspring-hoof-clefts" d="M102 259 L103 270 M296 259 L298 270" fill="none" stroke="#BAC5C5" stroke-width="2.5"/>
+<path id="roan-offspring-hip-fold" d="M100 123 C124 132 131 155 119 174" fill="none" stroke="#783B2C" stroke-width="4"/>
+<path id="roan-offspring-far-horn" d="M363 51 C376 34 380 19 377 7 C389 25 386 46 375 60 Z" fill="#D6C9AA" stroke="#293D46" stroke-width="3.5"/>
+<path id="roan-offspring-far-ear" d="M370 57 C384 47 402 51 408 61 C394 73 379 74 368 67 Z" fill="#783B2C" stroke="#293D46" stroke-width="4"/>
+<path id="roan-offspring-head" d="M333 47 C345 36 369 40 380 54 C388 67 381 88 388 108 C391 125 378 140 363 139 C347 139 331 124 331 110 C335 92 321 64 333 47 Z" fill="#A64D32"/>
+<path id="roan-offspring-head-shadow" d="M373 55 C384 67 378 88 384 106 L370 122 C360 114 363 98 366 82 Z" fill="#783B2C" stroke="none"/>
+<path id="roan-offspring-near-ear" d="M335 62 C321 50 302 49 291 58 C303 74 319 78 335 71 Z" fill="#A64D32" stroke="#293D46" stroke-width="4"/>
+<path id="roan-offspring-ear-inner" d="M327 65 C317 59 309 58 302 60 C311 67 318 69 327 68 Z" fill="#C79C89" stroke="none"/>
+<path id="roan-offspring-near-horn" d="M337 47 C326 36 325 18 330 5 C317 12 315 33 323 51 Z" fill="#F2E4C8" stroke="#293D46" stroke-width="3.5"/>
+<path id="roan-offspring-forehead-lock" d="M332 47 Q343 35 350 43 Q359 36 369 45 L366 53 Q349 48 336 55 Z" fill="#783B2C" stroke="none"/>
+<g id="roan-offspring-intermixed-white-hairs" fill="#FFFDF7" stroke="none">
+<path id="roan-offspring-hair-1" d="M96 100 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-2" d="M128 93 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-3" d="M160 103 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-4" d="M192 97 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-5" d="M225 96 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-6" d="M258 94 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-7" d="M285 107 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-8" d="M87 124 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-9" d="M119 119 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-10" d="M148 132 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-11" d="M178 124 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-12" d="M210 128 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-13" d="M242 123 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-14" d="M272 135 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-15" d="M97 147 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-16" d="M130 149 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-17" d="M161 158 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-18" d="M192 148 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-19" d="M223 153 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-20" d="M251 148 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-21" d="M286 157 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-22" d="M143 172 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-23" d="M177 176 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-24" d="M211 172 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-25" d="M241 169 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-26" d="M307 100 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-27" d="M315 126 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-28" d="M102 183 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-29" d="M98 209 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-30" d="M286 201 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-31" d="M289 234 q6 -3 10 -1 l-8 14 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-32" d="M347 72 q6 -3 10 -1 l-11 17 q-5 4 -8 2 Z"/>
+<path id="roan-offspring-hair-33" d="M351 96 q6 -3 10 -1 l-14 20 q-5 4 -8 2 Z"/>
+</g>
+<ellipse id="roan-offspring-eye" cx="365" cy="78" rx="5.8" ry="7.2" fill="#293D46" stroke="none"/>
+<circle id="roan-offspring-eye-light" cx="366.8" cy="75.5" r="1.8" fill="#FFFFFF" stroke="none"/>
+<path id="roan-offspring-brow" d="M357 66 Q364 62 371 67" fill="none" stroke="#293D46" stroke-width="3"/>
+<path id="roan-offspring-muzzle" d="M355 104 C365 98 383 99 395 106 C405 113 404 130 394 139 C382 149 358 145 349 133 C342 123 345 111 355 104 Z" fill="#C89586"/>
+<path id="roan-offspring-muzzle-volume" d="M348 126 C361 138 383 139 400 124 C397 144 371 152 353 137 Z" fill="#AF7C70" stroke="none"/>
+<ellipse id="roan-offspring-nostril" cx="389" cy="117" rx="3.6" ry="5.5" fill="#6C514B" stroke="none" transform="rotate(18 389 117)"/>
+<path id="roan-offspring-mouth" d="M373 137 Q383 138 389 133" fill="none" stroke="#6C514B" stroke-width="2.5"/>
+</g>
+<g id="phenotype-labels" fill="#293D46" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" text-anchor="middle"><text id="red-label" x="229" y="368">Red</text><text id="white-label" x="805" y="368">White</text><text id="roan-label" x="517" y="854">Roan</text></g>
+</svg>

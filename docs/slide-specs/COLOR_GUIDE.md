@@ -46,6 +46,13 @@ without implying that a step and a gene pair are the same thing; make their loca
 These are local teaching associations, not a global dictionary assigning every scientific term
 one color across all courses.
 
+## Distinguish divider levels
+
+Use a saturated course-color section with white text and its rounded frame. Use a pale course
+tint for subsections, with black text and symmetric black full-width horizontal stripes. Keep
+background contrast above 3:1 between these two levels, and keep text and stripes at the 5.5:1
+house readability target against their own surfaces. Shape and type size reinforce the hierarchy.
+
 ## Highlight the important reference
 
 Color the words students need to distinguish. A short label can carry color across its full name.

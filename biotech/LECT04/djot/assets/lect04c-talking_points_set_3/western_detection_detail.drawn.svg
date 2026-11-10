@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="732.743363" viewBox="0 0 1200 732.743363" role="img" aria-labelledby="wd-title wd-desc">
+  <title id="wd-title">Detection in Western Blots</title>
+  <desc id="wd-desc">Original schematic reconstruction of Biotechnology LECT04 original page 45, image_032.png. A transferred green target protein rests on the membrane. A red primary antibody binds the target through a Fab tip. A blue secondary antibody binds the primary and carries an attached red enzyme. Two red arrows show gray enzyme substrate approaching the enzyme and yellow detection signal leaving it. Unmeasured symbolic molecular forms; no empirical data.</desc>
+  <defs>
+    <marker id="wd-arrow" viewBox="0 0 12 10" markerWidth="23" markerHeight="21" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L12 5L0 10Z" fill="#bd2942"/></marker>
+  </defs>
+  <rect width="1200" height="732.743363" fill="#ffffff"/>
+  <g id="wd-heading" font-family="Arial, Helvetica, sans-serif" fill="#213547">
+    <text x="600" y="50" font-size="39" font-weight="700" text-anchor="middle">Detection in Western Blots</text>
+  </g>
+  <g id="wd-membrane" stroke-linejoin="round">
+    <path id="wd-membrane-top" d="M217 535H867L1055 614H66Z" fill="#f5f4df" stroke="#92a0a5" stroke-width="2.5"/>
+    <path d="M66 614H1055V628H66Z" fill="#dce1d4" stroke="#526879" stroke-width="2.7"/>
+    <path d="M217 535H867" fill="none" stroke="#b0bab7" stroke-width="1.5"/>
+    <path d="M238 550L153 595M340 550L285 595M744 550L789 595M846 550L926 595" fill="none" stroke="#c6cec1" stroke-width="1.5"/>
+    <ellipse cx="523" cy="551" rx="89" ry="19" fill="#dce3c7"/>
+  </g>
+  <g id="wd-target-protein" stroke-linejoin="round">
+    <path id="wd-target-contour" d="M446 542C425 528 435 505 454 501C448 482 468 470 485 478C498 460 520 470 526 484C545 473 566 484 567 501C591 498 604 516 593 534C610 554 591 567 570 561C560 578 537 572 528 562C506 578 490 568 485 558C466 568 450 560 446 542Z" fill="#73ba68" stroke="#285d43" stroke-width="3.3"/>
+    <path d="M449 527C456 511 469 520 477 506C486 492 501 499 510 489M477 545C492 531 508 548 518 533C531 516 545 524 555 511M537 550C546 537 566 547 579 532" fill="none" stroke="#d8efc8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M457 541C473 550 483 535 482 525M522 492C519 510 532 514 540 505M557 552C573 558 585 548 583 541" fill="none" stroke="#3c8950" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <g id="wd-primary-antibody" stroke-linecap="round" stroke-linejoin="round" data-contacts="wd-target-protein wd-secondary-antibody">
+    <path id="wd-primary-shape" d="M558 328Q570 320 582 328V399L643 463Q651 474 640 482Q632 487 624 477L570 421L516 489Q509 498 500 490Q493 484 499 475L558 400Z" fill="#d34b59" stroke="#8e253e" stroke-width="3.2"/>
+    <path d="M567 335V404L507 484M575 407L634 473" fill="none" stroke="#f59ba3" stroke-width="4"/>
+    <path d="M548 414L558 422M582 420L593 411" stroke="#8e253e" stroke-width="2"/>
+  </g>
+  <g id="wd-secondary-antibody" stroke-linecap="round" stroke-linejoin="round" data-contacts="wd-primary-antibody wd-enzyme">
+    <path id="wd-secondary-shape" d="M655 204L678 212L656 274L714 334Q721 343 711 351Q702 357 695 347L644 296L588 351Q579 359 572 350Q567 343 575 335L632 276Z" fill="#4291c4" stroke="#20577d" stroke-width="3.2"/>
+    <path d="M663 215L643 281L580 344M648 286L705 344" fill="none" stroke="#a7d7ec" stroke-width="4"/>
+    <path d="M622 297L630 305M658 300L668 292" stroke="#20577d" stroke-width="2"/>
+  </g>
+  <g id="wd-enzyme" data-contacts="wd-secondary-antibody">
+    <circle cx="675" cy="184" r="29" fill="#bf3158" stroke="#842441" stroke-width="3"/>
+    <path d="M653 179C657 157 683 155 692 171C679 165 666 169 660 184Z" fill="#ea8096"/>
+    <path d="M655 196C666 207 682 208 694 194" fill="none" stroke="#992342" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="wd-substrate" fill="#c4cbd0" stroke="#6b7d89" stroke-width="2">
+    <circle cx="802" cy="238" r="10"/><circle cx="830" cy="246" r="10"/><circle cx="813" cy="269" r="10"/><circle cx="786" cy="263" r="10"/>
+    <path d="M798 234L802 232M826 242L830 240M809 265L813 263M782 259L786 257" stroke="#f4f6f6" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="wd-signal" fill="#ffd64e" stroke="#ad800e" stroke-width="2">
+    <circle cx="795" cy="105" r="10"/><circle cx="822" cy="114" r="10"/><circle cx="806" cy="138" r="10"/><circle cx="779" cy="130" r="10"/>
+    <path d="M791 101L795 99M818 110L822 108M802 134L806 132M775 126L779 124" stroke="#fff3b6" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="wd-conversion" fill="none" stroke="#bd2942" stroke-width="5" stroke-linecap="round">
+    <path id="wd-substrate-to-enzyme" d="M766 251Q724 252 705 209" marker-end="url(#wd-arrow)" data-from="wd-substrate" data-to="wd-enzyme"/>
+    <path id="wd-enzyme-to-signal" d="M689 149Q712 108 756 115" marker-end="url(#wd-arrow)" data-from="wd-enzyme" data-to="wd-signal"/>
+  </g>
+  <g id="wd-label-leaders" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M435 212H535L636 250"/>
+    <path d="M348 378H558"/>
+    <path d="M784 494H658L595 519"/>
+    <path d="M858 254H849"/>
+    <path d="M852 123H842"/>
+    <path d="M66 643V655H332M1055 643V655H906"/>
+  </g>
+  <g id="wd-labels" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#213547">
+    <text id="wd-secondary-label" x="70" y="199"><tspan x="70">Enzyme-conjugated</tspan><tspan x="70" dy="37">Secondary Antibody</tspan></text>
+    <text id="wd-primary-label" x="70" y="387">Primary Antibody</text>
+    <text id="wd-target-label" x="800" y="503">Target Protein</text>
+    <text id="wd-substrate-label" x="865" y="263">Enzyme Substrate</text>
+    <text id="wd-signal-label" x="863" y="101"><tspan x="863">Detection Signal</tspan><tspan x="863" dy="32" font-size="25">(colorimetric or</tspan><tspan x="863" dy="30" font-size="25">chemiluminescent)</tspan></text>
+    <text id="wd-membrane-label" x="619" y="665" text-anchor="middle" font-size="27">Membrane Containing Transferred Protein</text>
+    <text id="wd-caption" x="70" y="716" font-size="24" font-style="italic"><tspan font-weight="700">Diagram 2:</tspan> Illustration of detection in Western Blots.</text>
+  </g>
+</svg>

@@ -405,8 +405,9 @@ outside a named slot; required named slots still appear where listed.
 | `big-image` | project custom | `image`, `caption` | no | One focal image needs the main page area with a short bottom caption. |
 
 `section` uses a large centered title in a rounded frame. `subsection` uses a smaller,
-centered title and matching full-width horizontal stripes near the top and bottom,
-on a darker course background.
+centered black title and matching black full-width horizontal stripes near the top and bottom,
+on a pale course tint. The section and subsection backgrounds exceed 3:1 contrast across course
+themes; subsection text and stripes exceed the 5.5:1 house readability target.
 
 For `two-panels` with an image and text, place either kind in `@left` and the other in `@right`.
 Vary the image side through the deck, alternating on consecutive image/text slides. Express the

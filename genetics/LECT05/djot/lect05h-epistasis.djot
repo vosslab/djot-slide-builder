@@ -36,7 +36,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 # Mendel: one-gene inheritance
 @left
 
-![Slide image 1](assets/lect05h-epistasis/image_001.jpg)
+![Slide image 1](assets/lect05h-epistasis/pea_mendel_p.drawn.svg)
 @right
 
 - [Experiment:]{color=orange} [Mendel, 1865]{color=red}
@@ -47,7 +47,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 # Mendel: one-gene inheritance
 @left
 
-![Slide image 2](assets/lect05h-epistasis/image_002.jpg)
+![Slide image 2](assets/lect05h-epistasis/pea_mendel_f1.drawn.svg)
 @right
 
 - [Experiment:]{color=orange} [Mendel, 1865]{color=red}
@@ -59,7 +59,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 # Mendel: one-gene inheritance
 @left
 
-![Slide image 3](assets/lect05h-epistasis/image_003.jpg)
+![Slide image 3](assets/lect05h-epistasis/pea_mendel_f2.drawn.svg)
 @right
 
 - [Experiment:]{color=orange} [Mendel, 1865]{color=red}
@@ -74,7 +74,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 @left
 
-![Two white-flowered parental lines](assets/lect05h-epistasis/image_004.png)
+![Two white-flowered parental lines](assets/lect05h-epistasis/pea_complementary_p.drawn.svg)
 
 @right
 
@@ -89,7 +89,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 @left
 
-![Two true-breeding white-flowered parents](assets/lect05h-epistasis/image_004.png)
+![Two true-breeding white-flowered parents](assets/lect05h-epistasis/pea_complementary_p.drawn.svg)
 
 @right
 
@@ -104,7 +104,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 @left
 
-![White parents producing purple-flowered F1 hybrids](assets/lect05h-epistasis/image_005.png)
+![White parents producing purple-flowered F1 hybrids](assets/lect05h-epistasis/pea_complementary_f1.drawn.svg)
 
 @right
 
@@ -115,7 +115,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 === layout: two-panels
 @left
 
-![Slide image 5](assets/lect05h-epistasis/image_005.png)
+![Slide image 5](assets/lect05h-epistasis/pea_complementary_f1.drawn.svg)
 @right
 
 - [Experiment:]{color=orange} [Bateson and Punnett, 1909]{color=blue}
@@ -130,7 +130,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 @left
 
-![Two white-flowered parents producing purple F1 flowers](assets/lect05h-epistasis/image_005.png)
+![Two white-flowered parents producing purple F1 flowers](assets/lect05h-epistasis/pea_complementary_f1.drawn.svg)
 
 @right
 
@@ -149,7 +149,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 
 @left
 
-![White parents, purple F1, and purple and white F2 offspring](assets/lect05h-epistasis/image_006.png)
+![White parents, purple F1, and purple and white F2 offspring](assets/lect05h-epistasis/pea_complementary_f2.drawn.svg)
 
 @right
 
@@ -162,7 +162,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 === layout: two-panels
 @left
 
-![Slide image 6](assets/lect05h-epistasis/image_006.png)
+![Slide image 6](assets/lect05h-epistasis/pea_complementary_f2.drawn.svg)
 @right
 
 - [Experiment:]{color=orange} [Bateson and Punnett, 1909]{color=blue}

@@ -16,7 +16,7 @@ color-theme: genetics
 
 @body
 
-- Ice Breaker and Announcements
+- Icebreaker and Announcements
 - Karyotypes
 - Chromosomal Positions and Nomenclature
 - Chromosome Aneuploidy
@@ -64,7 +64,7 @@ NWS Chicago, retrieved Nov 01, 2026: https://www.weather.gov/lot/weatherstory
 
 === layout: one-panel
 
-# Breakout Room Chat
+# Icebreaker
 
 @body
 
@@ -105,6 +105,10 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 4: Dec 01]{color=#000000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
+
+=== layout: subsection
+
+# Quiz 5 Vote
 
 === layout: two-panels
 

@@ -35,6 +35,15 @@ def frame_text() -> primitives.FrameTextProperties:
 		primitives.OverflowPolicy.SHRINK)
 
 
+def relative_luminance(hex_color: str) -> float:
+	"""Measure sRGB surfaces with the WCAG relative-luminance formula."""
+	channels = [int(hex_color.lstrip("#")[index:index + 2], 16) / 255 for index in (0, 2, 4)]
+	linear = [value / 12.92 if value <= 0.04045 else ((value + 0.055) / 1.055) ** 2.4
+		for value in channels]
+	result = sum(value * weight for value, weight in zip(linear, (0.2126, 0.7152, 0.0722)))
+	return result
+
+
 def deck() -> model.LayoutDeck:
 	rectangle = primitives.LogicalRectangle(0.0, 0.0, 500.0, 300.0)
 	slot = model.LayoutSlot("body", primitives.PlaceholderKind.OUTLINE,
@@ -381,7 +390,8 @@ def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path)
 
 
 @pytest.mark.parametrize("course", slide_lib.presentation_theme.color_theme_names())
-def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, course: str) -> None:
+def test_subsection_has_a_distinct_readable_course_tint(tmp_path: pathlib.Path, course: str) -> None:
+	"""Divider surfaces exceed 3:1; subsection text/stripes remain black on the pale tint."""
 	source_path = tmp_path / "transitions.djot"
 	source_path.write_text(f"color-theme: {course}\n\n=== layout: section\n\n# Topic\n\n"
 		"=== layout: subsection\n\n# Subtopic\n", encoding="utf-8")
@@ -400,9 +410,9 @@ def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, cour
 		colors.append(style.find(f"{{{exporter.STYLE_NS}}}drawing-page-properties").attrib[
 			f"{{{exporter.DRAW_NS}}}fill-color"])
 	assert colors[0] == f"#{theme.accent_color}"
-	assert colors[1] != colors[0]
-	assert all(int(colors[1][index:index + 2], 16) <= int(colors[0][index:index + 2], 16)
-		for index in (1, 3, 5))
+	dark, light = sorted(relative_luminance(color) for color in colors)
+	assert (light + 0.05) / (dark + 0.05) > 3.0
+	assert (relative_luminance(colors[1]) + 0.05) / 0.05 >= 5.5
 	assert plan.slides[1].surface.background_role is primitives.StyleRole.SUBSECTION
 	# The hierarchy must remain visible without relying only on hue differences.
 	shapes = [next(item.content.kind for item in slide.objects
@@ -412,6 +422,13 @@ def test_subsection_uses_a_darker_course_transition(tmp_path: pathlib.Path, cour
 			(primitives.HorizontalAlignment.CENTER, primitives.HorizontalAlignment.CENTER)):
 		title = next(item for item in slide.objects if isinstance(item.content, content.TextContent))
 		assert title.content.paragraphs[0].properties.horizontal_alignment is alignment
+	subsection_runs = [run for item in plan.slides[1].objects
+		if isinstance(item.content, content.TextContent)
+		for paragraph in item.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, content.TextRun)]
+	assert subsection_runs and all(run.style.foreground == "000000" for run in subsection_runs)
+	assert all(exporter._color_for(item.content.style.fill_role, theme) == "000000"
+		for item in plan.slides[1].objects if isinstance(item.content, content.ShapeContent))
 	stripes = [item.rectangle for item in plan.slides[1].objects
 		if isinstance(item.content, content.ShapeContent)]
 	assert len(stripes) == 2

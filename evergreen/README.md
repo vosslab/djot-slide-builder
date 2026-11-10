@@ -7,8 +7,9 @@ Keep slides, prompt collections, and teaching graphics used across courses here.
 Course-specific reusable slides belong in the course's
 own `evergreen/` folder; single-lecture content and dated snapshots stay with the lecture.
 
-- [icebreakers.yaml](icebreakers.yaml): reusable Breakout Room Chat prompts. Select explicitly
-  and copy the chosen title and body into the weekly deck; provenance paths are repository-relative.
+- [icebreakers.yaml](icebreakers.yaml): reusable icebreaker prompts and concrete examples.
+  Select explicitly and use **Icebreaker** for face-to-face classes, including Genetics.
+  Source paths identify prompt provenance.
 - [assets/rec_reminder_image.svg](assets/rec_reminder_image.svg): reusable recording reminder.
   Its editable ODG source and PNG companion remain local and ignored by Git.
 - [instructor_contact.djot](instructor_contact.djot): Discord, office hours, contact options, and anonymous message slides.

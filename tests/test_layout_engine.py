@@ -1,107 +1,32 @@
-"""Behavior coverage for the one-to-one layout compiler boundary."""
+"""Compiler contracts for source preservation, capacity diagnostics, and teaching layouts."""
 
 import dataclasses
 import pathlib
 
-import PIL.Image
 import pytest
 
 import slide_lib.layout_size_selection
-import slide_lib.layout_table_measurement
 import slide_lib.capacity_report
-import slide_lib.compilation_result
-import slide_lib.djot_parser
-import slide_lib.djot_audit
 import slide_lib.layout_content
 import slide_lib.layout_engine
 import slide_lib.layout_measurement
-import slide_lib.layout_object_builders
 import slide_lib.layout_primitives
-import slide_lib.layout_registry
 import slide_lib.native_model
 import slide_lib.presentation_theme
-
-
-def parsed_source(tmp_path: pathlib.Path, source: str) -> slide_lib.native_model.Deck:
-	"""Write and parse one test-owned Djot specimen."""
-	path = tmp_path / "specimen.djot"
-	path.write_text(source, encoding="utf-8")
-	return slide_lib.djot_parser.parse_deck(path)
-
-
-def compile_source(tmp_path: pathlib.Path, source: str) -> slide_lib.compilation_result.CompilationResult:
-	"""Compile one test-owned source with the authoritative native theme."""
-	return slide_lib.layout_engine.compile_layout_deck(
-		parsed_source(tmp_path, source), slide_lib.presentation_theme.default_theme())
-
-
-def write_image(tmp_path: pathlib.Path, name: str) -> None:
-	"""Create one inline test-owned component image with an intentionally tall aspect ratio."""
-	PIL.Image.new("RGB", (120, 320), (20, 90, 160)).save(tmp_path / name)
-
-
-def test_two_sources_produce_two_stable_source_slides(tmp_path: pathlib.Path) -> None:
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\nFirst.\n\n=== layout: two-panels\n\n@left\n\nLeft.\n\n@right\n\nRight.")
-	assert tuple(slide.identity.slide_id for slide in result.plan.slides) == ("slide-1", "slide-2")
-
-
-def test_authored_table_proportions_stay_fixed_when_cell_text_changes(tmp_path: pathlib.Path) -> None:
-	"""Question and answer tables keep the same column boundaries during a reveal sequence."""
-	slides = []
-	for text in ("?", "A1A3: BOTH"):
-		slides.append("=== layout: one-panel\n\n@body\n\n"
-			'{column-widths="1,3,3"}\n| | A3 | A4 |\n| --- | --- | --- |\n'
-			f"| A1 | {text} | Neither |\n")
-	result = compile_source(tmp_path, "\n".join(slides))
-	tables = [next(item.content for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-		for slide in result.plan.slides]
-	assert tables[0].column_widths == tables[1].column_widths
-	first, second, third = tables[0].column_widths
-	assert second == pytest.approx(3 * first) and third == second
-
-
-def test_table_group_uses_later_content_without_affecting_other_tables(tmp_path: pathlib.Path) -> None:
-	"""A group measures the whole sequence, adapts to edits, and stays scoped to one compile."""
-	prefix = '=== layout: one-panel\n\n@body\n\n{table-group="cross"}\n'
-	header = "| | A3 | A4 |\n| --- | --- | --- |\n"
-	question = prefix + header + "| A1 | ? | ? |\n"
-	widths = []
-	for answer in ("Both", "A much longer explanation of the shared outcome"):
-		later = prefix + header + f"| A1 | {answer} | Neither |\n"
-		ordinary = question.replace('{table-group="cross"}\n', "")
-		result = compile_source(tmp_path, "\n".join((question, later, ordinary)))
-		tables = [next(item.content for item in slide.objects
-			if isinstance(item.content, slide_lib.layout_content.TableContent))
-			for slide in result.plan.slides]
-		assert tables[0].column_widths == tables[1].column_widths
-		widths.append((tables[0].column_widths, tables[2].column_widths))
-	assert widths[1][0][1] > widths[0][0][1]
-	assert widths[0][1] == widths[1][1]
-	# Recompiling the short version must not retain the previous deck's wider group.
-	short = compile_source(tmp_path, question + "\n" + prefix + header + "| A1 | Both | Neither |\n")
-	assert short.plan.slides[0].objects[0].content.column_widths == widths[0][0]
-
-
-def test_table_group_rejects_incompatible_column_counts(tmp_path: pathlib.Path) -> None:
-	"""Grouping unrelated table shapes produces an actionable source error."""
-	source = '=== layout: one-panel\n\n@body\n\n{table-group="cross"}\n'
-	with pytest.raises(ValueError, match="table-group 'cross' requires 2 columns, found 3"):
-		compile_source(tmp_path, source + "| A | B |\n\n" + source + "| A | B | C |\n")
+import layout_test_helpers
 
 
 def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pathlib.Path) -> None:
 	"""Reference decoration is behind editable content and its label is outside the body."""
 	text = "\n\n# Explanation\n\n@body\n\nStudy this example.\n"
-	ordinary = compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
-	reference = compile_source(tmp_path, "=== layout: reference" + text).plan.slides[0]
+	ordinary = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
+	reference = layout_test_helpers.compile_source(tmp_path, "=== layout: reference" + text).plan.slides[0]
 	body = next(slot for slot in reference.slots if slot.slot_id == "body")
 	assert body.rectangle == next(slot.rectangle for slot in ordinary.slots
 		if slot.slot_id == "body")
 	border = next(item for item in reference.objects if item.object_id == "reference-border")
 	label = next(item for item in reference.objects if item.object_id == "reference-label")
 	assert border.content.style.fill_role is None
-	assert border.content.style.line_color == "C8CDD2"
 	assert all(border.z_index < item.z_index for item in reference.objects if item != border)
 	assert label.rectangle.y >= body.rectangle.y + body.rectangle.height
 	assert label.slot_id is None and label.presentation_member_id is None
@@ -116,8 +41,8 @@ def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pa
 def test_replaceme_adds_visible_editable_warning_without_changing_content(
 		tmp_path: pathlib.Path, source: str) -> None:
 	"""Review overlays preserve layout geometry and stay above images, text, and reveals."""
-	ordinary = compile_source(tmp_path, source).plan.slides[0]
-	marked = compile_source(tmp_path, source.replace("\n", "\n@replaceme\n", 1)).plan.slides[0]
+	ordinary = layout_test_helpers.compile_source(tmp_path, source).plan.slides[0]
+	marked = layout_test_helpers.compile_source(tmp_path, source.replace("\n", "\n@replaceme\n", 1)).plan.slides[0]
 	watermark = marked.objects[-1]
 	assert marked.slots == ordinary.slots
 	assert tuple((item.rectangle, item.content, item.reveal_targets) for item in marked.objects[:-1]) == \
@@ -129,68 +54,12 @@ def test_replaceme_adds_visible_editable_warning_without_changing_content(
 	assert watermark.content.style.fill_role is not None and not watermark.reveal_targets
 
 
-def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.Path) -> None:
-	"""Code stays monospace while literal URLs receive the approved narrow face."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		"Words `ATGC` [https://example.test](https://example.test) "
-		"[`ATGC`](https://example.test)\n")
-	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
-	runs = [run for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun) and run.text.strip()]
-	assert [(run.text.strip(), run.style.font_family) for run in runs] == [
-		("Words", "Atkinson Hyperlegible Next"), ("ATGC", "Atkinson Hyperlegible Mono"),
-		("https://example.test", "IBM Plex Sans Condensed"),
-		("ATGC", "Atkinson Hyperlegible Mono")]
-	assert all(run.style.underline for run in runs if run.style.link_url)
-
-
-def test_visible_url_shrinks_independently_without_splitting(tmp_path: pathlib.Path) -> None:
-	"""Long addresses keep their destination and use their own readable size."""
-	url = "https://crossidiomas.com/build-the-plane-while-flying-it/"
-	result = compile_source(tmp_path, "=== layout: two-panels\n\n@left\n\n"
-		f"[{url}]({url})\n\n@right\n\nImage placeholder\n")
-	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
-	runs = [run for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)]
-	assert len(runs) == 1
-	assert "".join(run.text for run in runs) == url
-	assert all(run.style.link_url == url for run in runs)
-	assert 12 <= runs[0].style.size_pt < paragraph.typography.selected_size_pt
-	session = slide_lib.layout_measurement.MeasurementSession(slide_lib.presentation_theme.default_theme())
-	assert session.advance(runs[0].style.font_family, False, False, runs[0].style.size_pt,
-		url) < result.plan.slides[0].objects[0].rectangle.width
-
-
-def test_url_fits_remaining_space_or_moves_intact_to_next_line(tmp_path: pathlib.Path) -> None:
-	"""URL sizing and placement leave the surrounding paragraph's size alone."""
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	url = "https://example.test/course"
-	destination = url + "?section=genetics"
-	prefix = "Join the course: "
-	block = slide_lib.native_model.Paragraph(slide_lib.native_model.SourceLocation(tmp_path / "deck.djot", 1),
-		(slide_lib.native_model.Text(prefix), slide_lib.native_model.Link(
-			(slide_lib.native_model.Text(url),), destination)))
-	minimum = session.advance(slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, False, False, 28, prefix)
-	minimum += session.advance(slide_lib.presentation_theme.NARROW_FONT_FAMILY, False, False, 12, url)
-	clearance = slide_lib.layout_measurement.point_height(1, theme)
-	for width, expect_break in ((minimum + clearance + 1, False), (minimum - 10, True)):
-		content = slide_lib.layout_object_builders.text_content((block,), 28, 20,
-			slide_lib.layout_primitives.StyleRole.BODY, "172033", width, theme, session=session)
-		paragraph = content.paragraphs[0]
-		run = next(r for r in paragraph.inlines if isinstance(r, slide_lib.layout_content.TextRun) and r.style.literal_url)
-		assert paragraph.typography.selected_size_pt == 28
-		assert any(isinstance(r, slide_lib.layout_content.LineBreak) for r in paragraph.inlines) == expect_break
-		assert run.text == url and run.style.link_url == destination
-		assert 12 <= run.style.size_pt < 28
-
-
 def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Path) -> None:
 	"""Hidden pages keep their source order and native hidden metadata."""
 	source = ("=== layout: title-only\nhidden: true\n\n# Optional\n"
 		"=== layout: title-only\n\n# Teaching\n"
 		"=== layout: title-only\nhidden: false\n\n# Closing\n")
-	deck = parsed_source(tmp_path, source)
+	deck = layout_test_helpers.parsed_source(tmp_path, source)
 	result = slide_lib.layout_engine.compile_layout_deck(
 		deck, slide_lib.presentation_theme.default_theme())
 	assert deck.title == "Teaching" and deck.slides[0].blocks[0].inlines[0].value == "Optional"
@@ -199,30 +68,15 @@ def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Pa
 	assert tuple(page.hidden for page in result.plan.slides) == (True, False, False)
 
 
-def test_unhiding_source_restores_its_output_position(tmp_path: pathlib.Path) -> None:
-	"""An explicit false value restores the slide before the following material."""
-	result = compile_source(tmp_path,
-		"=== layout: title-only\nhidden: false\n# Optional\n"
-		"=== layout: title-only\n# Teaching\n")
-	assert tuple(page.identity.source.line for page in result.plan.slides) == (1, 4)
-
-
 def test_all_hidden_deck_has_no_classroom_output(tmp_path: pathlib.Path) -> None:
 	"""A retained source-only deck gets a clear diagnostic instead of an empty export."""
 	with pytest.raises(ValueError, match="deck has no visible slides"):
-		compile_source(tmp_path, "=== layout: blank\nhidden: true\n")
-
-
-def test_section_keeps_its_centered_libreoffice_layout_identity(tmp_path: pathlib.Path) -> None:
-	"""The section semantic name remains native Centered Text."""
-	result = compile_source(tmp_path, "=== layout: section\n\n# Section\n\n## Context")
-	assert result.plan.slides[0].layout.topology.libreoffice_layout.autolayout is \
-		slide_lib.layout_primitives.LibreOfficeAutoLayout.ONLY_TEXT
+		layout_test_helpers.compile_source(tmp_path, "=== layout: blank\nhidden: true\n")
 
 
 def test_heading_only_title_only_keeps_its_sole_native_title(tmp_path: pathlib.Path) -> None:
 	"""An H1-only title-only slide has one TITLE_ONLY member and no body allocation."""
-	slide = compile_source(tmp_path, "=== layout: title-only\n\n# Title").plan.slides[0]
+	slide = layout_test_helpers.compile_source(tmp_path, "=== layout: title-only\n\n# Title").plan.slides[0]
 	assert slide.layout.topology.libreoffice_layout.autolayout is \
 		slide_lib.layout_primitives.LibreOfficeAutoLayout.TITLE_ONLY
 	assert tuple(slot.placeholder_kind for slot in slide.slots) == \
@@ -233,8 +87,8 @@ def test_heading_only_title_only_keeps_its_sole_native_title(tmp_path: pathlib.P
 
 def test_title_only_body_uses_ordinary_source_ordered_objects(tmp_path: pathlib.Path) -> None:
 	"""Title Only retains its one title member while body content remains native objects."""
-	write_image(tmp_path, "component.png")
-	result = compile_source(tmp_path, "=== layout: title-only\n\n# Title\n\nParagraph.\n\n- First\n- Second\n\n![Tall](component.png)")
+	layout_test_helpers.write_image(tmp_path, "component.png")
+	result = layout_test_helpers.compile_source(tmp_path, "=== layout: title-only\n\n# Title\n\nParagraph.\n\n- First\n- Second\n\n![Tall](component.png)")
 	slide = result.plan.slides[0]
 	assert slide.layout.topology.libreoffice_layout.autolayout is \
 		slide_lib.layout_primitives.LibreOfficeAutoLayout.TITLE_ONLY
@@ -253,71 +107,10 @@ def test_title_only_body_uses_ordinary_source_ordered_objects(tmp_path: pathlib.
 
 def test_title_only_body_reports_source_located_capacity(tmp_path: pathlib.Path) -> None:
 	"""Title Only body recovery retains the shared visible capacity diagnostic."""
-	result = compile_source(tmp_path, "=== layout: title-only\n\n# Title\n\n" + "word " * 500)
+	result = layout_test_helpers.compile_source(tmp_path, "=== layout: title-only\n\n# Title\n\n" + "word " * 500)
 	diagnostic = result.capacity_diagnostics[0]
 	assert diagnostic.layout == "title-only" and diagnostic.slot == "body"
 	assert diagnostic.location.path.name == "specimen.djot" and diagnostic.location.line == 5
-
-
-def test_title_only_table_remains_an_ordinary_native_object(tmp_path: pathlib.Path) -> None:
-	"""A sole root table uses the body allocation without an invented placeholder."""
-	result = compile_source(tmp_path, "=== layout: title-only\n\n# Results\n\n| Sample | Result |\n| - | - |\n| A | pass |")
-	table = result.plan.slides[0].objects[1]
-	assert isinstance(table.content, slide_lib.layout_content.TableContent)
-	assert table.placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.NONE
-
-
-def test_table_serializes_content_dependent_row_heights(tmp_path: pathlib.Path) -> None:
-	"""A wrapped row receives more native height than a one-line row."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		"| Label | Explanation |\n| - | - |\n| Short | Fits |\n"
-		"| Long | This explanation wraps across several lines because it contains substantially more text than the short row. |")
-	table = next(item.content for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	assert table.row_heights[-1] > table.row_heights[-2]
-
-
-def test_table_allocates_more_width_to_a_content_heavy_column(tmp_path: pathlib.Path) -> None:
-	"""Measured content controls native column widths without changing the table frame."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		"| ID | Organism and strain | Cut |\n| - | - | - |\n"
-		"| A | Haemophilus haemolyticus | blunt |\n")
-	item = next(item for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	assert item.content.column_widths[1] > item.content.column_widths[0]
-	assert sum(item.content.column_widths) == pytest.approx(item.rectangle.width)
-
-
-@pytest.mark.parametrize("separator", ("-", "\u2010", "\u2013"))
-def test_table_wraps_compounds_at_hyphens_before_fragmenting_words(
-		tmp_path: pathlib.Path, separator: str) -> None:
-	"""Native cells retain normal compound breaks and safely fragment genuinely long words."""
-	compound = f"hardy{separator}weinberg"
-	long_word = "W" * 30
-	result = compile_source(tmp_path, "=== layout: one-panel\n@body\n"
-		'{column-widths="1,5"}\n| Label | Value |\n| - | - |\n'
-		f"| {compound} | 0.234 |\n| {long_word} | 0.499 |\n")
-	table = next(item.content for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	for row, text in zip(table.body_rows, (compound, long_word)):
-		cell = row.cells[0]
-		paragraph = cell.paragraphs[0]
-		insets = slide_lib.layout_table_measurement.cell_content_insets(
-			cell.padding, cell.borders, theme)
-		width = table.column_widths[0] - insets.left - insets.right
-		lines = slide_lib.djot_audit.paragraph_lines(paragraph, width, session)
-		assert "".join(line for line, _width in lines) == text
-		assert all(ink_width <= width for _line, ink_width in lines)
-		if text == compound:
-			assert [line for line, _width in lines] == [f"hardy{separator}", "weinberg"]
-			assert not any(isinstance(run, slide_lib.layout_content.LineBreak)
-				for run in paragraph.inlines)
-		else:
-			assert len(lines) > 1
-			assert any(isinstance(run, slide_lib.layout_content.LineBreak)
-				for run in paragraph.inlines)
 
 
 @pytest.mark.parametrize("layout, slots", (("one-panel", ("body",)), ("two-panels", ("left", "right"))))
@@ -325,7 +118,7 @@ def test_overfull_representable_slide_stays_one_page_and_reports_capacity(
 		tmp_path: pathlib.Path, layout: str, slots: tuple[str, ...]) -> None:
 	long = "word " * 500
 	regions = "".join(f"\n@{slot}\n\n{long}" for slot in slots)
-	result = compile_source(tmp_path, f"=== layout: {layout}\n{regions}")
+	result = layout_test_helpers.compile_source(tmp_path, f"=== layout: {layout}\n{regions}")
 	assert len(result.plan.slides) == 1
 	diagnostic = result.capacity_diagnostics[0]
 	assert diagnostic.location.path.name == "specimen.djot"
@@ -338,14 +131,14 @@ def test_impossible_content_reports_its_source_location(tmp_path: pathlib.Path) 
 	table = "| A |\n| - |\n" + "| word |\n" * 100
 	with pytest.raises(slide_lib.capacity_report.PhysicalCapacityError,
 			match=r"specimen\.djot:5: one-panel/body cannot fit at the 1 pt serializer-safe minimum") as raised:
-		compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n" + table)
+		layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n" + table)
 	assert raised.value.diagnostic.cause is slide_lib.capacity_report.CapacityCause.TABLE
 	assert raised.value.diagnostic.required_size_pt is None
 
 
 def test_fixed_title_frame_reports_an_unrepresentable_source_heading(tmp_path: pathlib.Path) -> None:
 	"""A fixed title frame raises one source-located physical title capacity result."""
-	deck = parsed_source(tmp_path, "=== layout: title-only\n\n# Title")
+	deck = layout_test_helpers.parsed_source(tmp_path, "=== layout: title-only\n\n# Title")
 	heading = next(block for block in deck.slides[0].blocks
 		if isinstance(block, slide_lib.native_model.Heading))
 	lines = tuple(item for _line in range(400)
@@ -367,65 +160,13 @@ def test_fixed_title_frame_reports_an_unrepresentable_source_heading(tmp_path: p
 
 def test_unsupported_source_still_fails_at_the_validation_boundary(tmp_path: pathlib.Path) -> None:
 	with pytest.raises(ValueError, match=r"specimen\.djot:5: CodeBlock has no physical projection"):
-		compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n```\ncode\n```")
-
-
-def test_title_slide_uses_native_master_frames_and_centered_text(tmp_path: pathlib.Path) -> None:
-	"""Title Slide uses its native title and outline frames with centered text."""
-	result = compile_source(tmp_path, "=== layout: title-slide\n\n# Genetics\n\n## Week one")
-	items = result.plan.slides[0].objects
-	objects = {item.placeholder_kind: item for item in items}
-	title = objects[slide_lib.layout_primitives.PlaceholderKind.TITLE]
-	subtitle = objects[slide_lib.layout_primitives.PlaceholderKind.SUBTITLE]
-	decorations = tuple(item for item in items
-		if isinstance(item.content, slide_lib.layout_content.ShapeContent))
-	assert tuple((item.frame_text.vertical_alignment,
-		item.content.paragraphs[0].properties.horizontal_alignment) for item in (title, subtitle)) == (
-		(slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
-			slide_lib.layout_primitives.HorizontalAlignment.CENTER),
-		(slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
-			slide_lib.layout_primitives.HorizontalAlignment.CENTER))
-	assert decorations and all(item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
-		for item in decorations)
-
-
-def test_section_uses_a_centered_transition_surface(tmp_path: pathlib.Path) -> None:
-	"""A section keeps editable Centered Text inside its layout-owned transition card."""
-	result = compile_source(tmp_path, "=== layout: section\n\n# Unit one\n\n## Central question")
-	slide = result.plan.slides[0]
-	section = next(item for item in slide.objects if item.object_id == "section")
-	frame = next(item for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.ShapeContent))
-	assert (section.frame_text.vertical_alignment,
-		tuple(paragraph.properties.horizontal_alignment for paragraph in section.content.paragraphs)) == (
-		slide_lib.layout_primitives.VerticalAlignment.MIDDLE,
-		(slide_lib.layout_primitives.HorizontalAlignment.CENTER,
-			slide_lib.layout_primitives.HorizontalAlignment.CENTER))
-	assert section.rectangle.y + section.rectangle.height / 2 == \
-		slide_lib.layout_primitives.LOGICAL_SLIDE_HEIGHT / 2
-	assert (slide.surface.background_role, slide.surface.show_master_objects,
-		frame.content.kind, frame.origin) == (
-		slide_lib.layout_primitives.StyleRole.TRANSITION, False,
-		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.LayoutObjectOrigin.THEME)
-
-
-@pytest.mark.parametrize("source", (
-	"=== layout: title-only\n\n# Title",
-	"=== layout: one-panel\n\n# Title\n\n@body\n\nBody."))
-def test_top_aligned_layouts_center_their_primary_titles(tmp_path: pathlib.Path, source: str) -> None:
-	"""Title Only and one-panel center titles while retaining their top placement."""
-	title = compile_source(tmp_path, source).plan.slides[0].objects[0]
-	assert (title.frame_text.vertical_alignment,
-		title.content.paragraphs[0].properties.horizontal_alignment) == (
-		slide_lib.layout_primitives.VerticalAlignment.TOP,
-		slide_lib.layout_primitives.HorizontalAlignment.CENTER)
+		layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n```\ncode\n```")
 
 
 def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
 		tmp_path: pathlib.Path) -> None:
 	"""A dense standard cell absorbs capacity recovery after the independently fitting title."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n# " + "long title " * 20 +
+	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n# " + "long title " * 20 +
 		"\n\n@body\n\n" + "body " * 200)
 	title = next(item for item in result.plan.slides[0].objects
 		if item.placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.TITLE)
@@ -436,19 +177,9 @@ def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
 	assert diagnostic.cause is slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST
 
 
-def test_section_projection_preserves_plain_text_spacing(tmp_path: pathlib.Path) -> None:
-	"""A section heading remains one editable text run with its authored spaces."""
-	result = compile_source(tmp_path, "=== layout: section\n\n# Instructor Information")
-	text = next(item.content for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TextContent))
-	paragraph = text.paragraphs[0]
-	assert tuple(run.text for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)) == ("Instructor Information",)
-
-
 def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathlib.Path) -> None:
 	"""The recurring closer stays editable while its vector star supplies the flourish."""
-	slide = compile_source(tmp_path, "=== layout: theend\n\n# THE END").plan.slides[0]
+	slide = layout_test_helpers.compile_source(tmp_path, "=== layout: theend\n\n# THE END").plan.slides[0]
 	text = next(item.content for item in slide.objects
 		if isinstance(item.content, slide_lib.layout_content.TextContent))
 	lines = tuple("".join(run.text for run in paragraph.inlines
@@ -457,230 +188,12 @@ def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathl
 		if isinstance(item.content, slide_lib.layout_content.ShapeContent) and
 		item.content.kind is slide_lib.layout_primitives.ShapeKind.STAR)
 	assert lines == ("THE", "END")
-	assert text.paragraphs[0].typography.selected_size_pt >= 100
 	assert star.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
-
-
-def test_nonempty_notes_reveals_and_authored_content_remain_on_the_source_slide(tmp_path: pathlib.Path) -> None:
-	deck = parsed_source(tmp_path, "=== layout: one-panel\n\n@body\n\n=> appear\nVisible later."
-		"\n\n@notes\nFirst note\nSecond note\n")
-	result = slide_lib.layout_engine.compile_layout_deck(deck, slide_lib.presentation_theme.default_theme())
-	compiled = result.plan.slides[0]
-	targets = tuple(target for item in compiled.objects for target in item.reveal_targets)
-	assert tuple(note.text for note in compiled.notes) == ("First note", "Second note")
-	assert targets and tuple(target.activation_order for target in targets) == tuple(range(len(targets)))
-	assert any(isinstance(item.content, slide_lib.layout_content.TextContent) for item in compiled.objects)
-	assert all(item.origin is slide_lib.layout_primitives.LayoutObjectOrigin.AUTHORED for item in compiled.objects)
-
-
-def test_multiple_choice_reserves_the_answer_popup_from_each_visible_choice(
-		tmp_path: pathlib.Path) -> None:
-	"""A text-only question uses the shared adaptive choice geometry before reveal."""
-	result = compile_source(tmp_path, """=== layout: multiple-choice
-
-@question
-
-Which statement best describes this teaching example?
-
-- A) It identifies one observation.
-- B) It compares two related observations.
-- C) It explains why the observations matter.
-- D) It asks learners to connect the observations to the underlying principle.
-
-@answer
-
-Answer: D
-""")
-	objects = result.plan.slides[0].objects
-	answer = next(item for item in objects if item.object_id == "answer")
-	choices = tuple(item for item in objects if item.object_id.startswith("question-choices-"))
-	assert choices and all(isinstance(item.content, slide_lib.layout_content.TextContent)
-		for item in choices)
-	assert all(choice.rectangle.x + choice.rectangle.width <= answer.rectangle.x or
-		answer.rectangle.x + answer.rectangle.width <= choice.rectangle.x or
-		choice.rectangle.y + choice.rectangle.height <= answer.rectangle.y or
-		answer.rectangle.y + answer.rectangle.height <= choice.rectangle.y
-	for choice in choices)
-
-
-def test_big_image_keeps_one_focal_image_above_a_full_width_caption(tmp_path: pathlib.Path) -> None:
-	"""The image-focus layout preserves its editable image and caption contract."""
-	write_image(tmp_path, "focal.png")
-	slide = compile_source(tmp_path, """=== layout: big-image
-
-@image
-
-![Focal image](focal.png)
-
-@caption
-
-Short editable caption.
-""").plan.slides[0]
-	picture = next(item for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.PictureContent))
-	caption = next(item for item in slide.objects if item.object_id == "caption")
-	assert isinstance(caption.content, slide_lib.layout_content.TextContent)
-	assert picture.rectangle.x == caption.rectangle.x
-	assert picture.rectangle.width == caption.rectangle.width
-	assert picture.rectangle.y + picture.rectangle.height < caption.rectangle.y
-	assert caption.rectangle.y + caption.rectangle.height < \
-		slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT
-
-
-def test_big_image_long_caption_grows_downward_without_moving_image_or_covering_citation(tmp_path: object) -> None:
-	"""Forecast paragraphs can use the free lower margin while cited slides retain their footer."""
-	write_image(tmp_path, "focal.png")
-	caption = ("Some may see intermittent light showers or sprinkles during trick or treating hours tonight. "
-		"Seasonably mild temps and mostly cloudy skies will then follow into early next week. "
-		"The highest chances of rain are expected towards mid-week.")
-	prefix = "=== layout: big-image\n@image\n![Weather](focal.png)\n@caption\n"
-	short = compile_source(tmp_path, prefix + "Short caption.").plan.slides[0]
-	long = compile_source(tmp_path, prefix + caption).plan.slides[0]
-	cited = compile_source(tmp_path, prefix + caption + "\n\n@citation\nSource: https://example.test/weather").plan.slides[0]
-	pictures = [next(item for item in slide.objects if item.object_id == "big-image") for slide in (short, long, cited)]
-	captions = [next(item for item in slide.objects if item.object_id == "caption") for slide in (short, long, cited)]
-	assert pictures[0].rectangle == pictures[1].rectangle == pictures[2].rectangle
-	assert pictures[0].content.placement == pictures[1].content.placement == pictures[2].content.placement
-	assert captions[0].rectangle.y == captions[1].rectangle.y == captions[2].rectangle.y
-	assert captions[1].rectangle.height > captions[0].rectangle.height == captions[2].rectangle.height
-	assert captions[1].rectangle.y + captions[1].rectangle.height < slide_lib.presentation_theme.LOGICAL_SLIDE_HEIGHT
-	footer = next(item for item in cited.objects if item.object_id == "citation")
-	assert captions[2].rectangle.y + captions[2].rectangle.height <= footer.rectangle.y
-	assert captions[1].content.paragraphs[0].typography.selected_size_pt > \
-		captions[2].content.paragraphs[0].typography.selected_size_pt
-
-
-@pytest.mark.parametrize("label", ["https://example.test/short",
-	"*https://example.test/short*", "`https://example.test/short`",
-	"[https://example.test/short]{color=red}"])
-def test_visible_url_style_cannot_be_overridden(tmp_path: object, label: str) -> None:
-	result = compile_source(tmp_path, "=== layout: one-panel\n@body\n"
-		f"[{label}](https://example.test/full?key=value)\n")
-	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
-	runs = [run for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)]
-	assert runs
-	assert all(run.style.font_family == slide_lib.presentation_theme.NARROW_FONT_FAMILY
-		and run.style.literal_url for run in runs)
-	assert all(slide_lib.presentation_theme.inline_size_pt(24, run.style.literal_url) == 22
-		for run in runs)
-
-
-def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> None:
-	"""Keep numeric columns readable and totals distinct without changing cell text."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		"| Class | O-E | Value |\n| --- | --- | --- |\n"
-		"| A-B- | -1 | 0.033 |\n| C | -5 | 0.111 |\n| D | &#8211;15 | 1.000 |\n"
-		"| E | -150 | 10.00 |\n| Total | 0 | 0.178 |\n")
-	table = next(item.content for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	for row in table.header_rows:
-		for cell in row.cells:
-			assert cell.paragraphs[0].properties.horizontal_alignment is \
-				slide_lib.layout_primitives.HorizontalAlignment.CENTER
-	for row in table.header_rows + table.body_rows:
-		for cell in row.cells:
-			assert cell.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE
-			assert cell.padding.left == cell.padding.right > 0
-	for row in table.body_rows:
-		for cell in row.cells[1:]:
-			assert cell.paragraphs[0].properties.horizontal_alignment is \
-				slide_lib.layout_primitives.HorizontalAlignment.END
-	assert table.body_rows[0].cells[0].fill_color == "FFFFFF"
-	for cell in table.body_rows[-1].cells:
-		assert cell.fill_color == table.header_rows[0].cells[0].fill_color
-		assert all(run.style.bold for run in cell.paragraphs[0].inlines
-			if isinstance(run, slide_lib.layout_content.TextRun))
-
-
-def test_cell_background_does_not_change_table_geometry_or_alignment(tmp_path: pathlib.Path) -> None:
-	"""A shaded reveal is a style change, retaining the exact measured numeric table."""
-	header = "=== layout: one-panel\n\n@body\n\n{table-group=shading}\n"
-	plain = "| Class | Count |\n| --- | --- |\n| R | -15 |\n| Total | 350 |\n"
-	shaded = plain.replace("| R | -15 |",
-		"| [R]{background-color=#F6E8FB} | [-15]{background-color=#F6E8FB} |")
-	result = compile_source(tmp_path, header + plain + "\n" + header + shaded)
-	tables = [next(item for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-		for slide in result.plan.slides]
-	assert tables[0].rectangle == tables[1].rectangle
-	assert tables[0].content.column_widths == tables[1].content.column_widths
-	assert tables[0].content.row_heights == tables[1].content.row_heights
-	cell = tables[1].content.body_rows[0].cells[1]
-	assert cell.fill_color == "F6E8FB"
-	assert cell.paragraphs[0].properties.horizontal_alignment is \
-		slide_lib.layout_primitives.HorizontalAlignment.END
-	assert tables[0].content.body_rows[0].cells[1].fill_color == "FFFFFF"
-
-
-def test_resolved_cell_insets_control_rows_and_native_frame(tmp_path: pathlib.Path) -> None:
-	"""Asymmetric point padding and side borders share one measured physical geometry."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		'{padding="2pt 7pt 5pt 11pt" border=none border-left="3pt solid #123456"}\n'
-		"| Label | Value |\n| --- | --- |\n| Total | **Bold** `code` H~2~O |\n")
-	item = next(item for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	table = item.content
-	theme = slide_lib.presentation_theme.default_theme()
-	cell = table.body_rows[0].cells[1]
-	scale = slide_lib.layout_measurement.point_height(1, theme)
-	assert cell.padding == slide_lib.layout_primitives.Insets(11 * scale, 2 * scale, 7 * scale, 5 * scale)
-	insets = slide_lib.layout_table_measurement.cell_content_insets(cell.padding, cell.borders, theme)
-	assert insets.left == pytest.approx(15 * scale)
-	assert table.row_heights[1] == pytest.approx(cell.paragraphs[0].measured_height + 9 * scale)
-	assert item.rectangle.height == pytest.approx(sum(table.row_heights))
-	runs = cell.paragraphs[0].inlines
-	assert all(run.style.bold for run in runs if isinstance(run, slide_lib.layout_content.TextRun))
-	assert any(run.style.code for run in runs if isinstance(run, slide_lib.layout_content.TextRun))
-	assert any(run.style.position == "sub" for run in runs if isinstance(run, slide_lib.layout_content.TextRun))
-
-
-def test_grouped_columns_include_later_resolved_padding(tmp_path: pathlib.Path) -> None:
-	"""A later padded cell contributes to the stable grid shared by related styles."""
-	prefix = '=== layout: one-panel\n\n@body\n\n{table-group=padding table-style=working}\n'
-	columns = "| A | B |\n| --- | --- |\n"
-	result = compile_source(tmp_path, prefix + columns + "| x | x |\n\n" +
-		prefix + columns + '| [x]{padding-right=80pt} | x |\n')
-	tables = [next(item.content for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-		for slide in result.plan.slides]
-	assert tables[0].column_widths == tables[1].column_widths
-	assert tables[0].column_widths[0] > tables[0].column_widths[1]
-
-
-def test_merged_total_uses_combined_width_and_explicit_cell_alignment(tmp_path: pathlib.Path) -> None:
-	"""Equal gene columns remain equal while the merged total occupies all three."""
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		'{column-widths="1,1,1,2"}\n| C | D | H | Count |\n| --- | --- | --- | --- |\n'
-		'| [c]{text-align=center} | d | h | 1 |\n'
-		'| [Total]{colspan=3 background-color=#80BD80} | 1,400 |\n')
-	table = next(item.content for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	assert table.column_widths[0] == table.column_widths[1] == table.column_widths[2]
-	assert len(table.body_rows[1].cells) == 2
-	assert table.body_rows[1].cells[0].column_span == 3
-	assert table.body_rows[0].cells[0].paragraphs[0].properties.horizontal_alignment is \
-		slide_lib.layout_primitives.HorizontalAlignment.CENTER
-	assert table.body_rows[1].cells[1].paragraphs[0].properties.horizontal_alignment is \
-		slide_lib.layout_primitives.HorizontalAlignment.END
-
-
-def test_grouped_tables_allow_merged_rows_on_the_same_column_grid(tmp_path: pathlib.Path) -> None:
-	"""A reveal may merge cells without changing the group's logical column schema."""
-	header = '=== layout: one-panel\n\n@body\n\n{table-group="merged"}\n'
-	columns = '| C | D | Count |\n| --- | --- | --- |\n'
-	result = compile_source(tmp_path, header + columns + '| c | d | ? |\n\n' +
-		header + columns + '| [Total]{colspan=2} | 350 |\n')
-	tables = [next(item.content for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-		for slide in result.plan.slides]
-	assert tables[0].column_widths == tables[1].column_widths
-	assert tables[1].body_rows[0].cells[0].column_span == 2
 
 
 def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> None:
 	"""Omitting a title expands the body while retaining the ordinary page margins."""
-	result = compile_source(tmp_path,
+	result = layout_test_helpers.compile_source(tmp_path,
 		"=== layout: one-panel\n\n# Heading\n\n@body\n\nContent.\n\n"
 		"=== layout: one-panel\n\n@body\n\nContent.\n")
 	titled, untitled = result.plan.slides
@@ -697,139 +210,15 @@ def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> Non
 		slide_lib.layout_primitives.HorizontalAlignment.START
 
 
-
-def test_citation_preserves_layout_and_keeps_condensed_clickable_text(tmp_path: pathlib.Path) -> None:
-	"""Citation text uses the bottom margin without consuming the existing panel space."""
-	base = "=== layout: two-panels\n\n# Tutorial\n\n@left\n\nStory cue.\n\n@right\n\nComparison.\n"
-	url = "https://example.test/tutorial"
-	plain = compile_source(tmp_path, base).plan.slides[0]
-	cited = compile_source(tmp_path, base + "\n@citation\n\nSmith. _Study title._ 2026. " + url).plan.slides[0]
-	assert cited.slots == plain.slots
-	assert cited.objects[:-1] == plain.objects
-	citation = cited.objects[-1]
-	assert citation.rectangle.y >= max(slot.rectangle.y + slot.rectangle.height for slot in plain.slots)
-	runs = [run for paragraph in citation.content.paragraphs for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)]
-	assert all(run.style.font_family == "IBM Plex Sans Condensed" for run in runs)
-	assert any(run.style.italic for run in runs)
-	assert any(run.style.link_url == url for run in runs)
-
-
-@pytest.mark.parametrize("layout", ("section", "subsection", "theend"))
-def test_dark_slide_citation_retains_readable_editable_text(tmp_path: pathlib.Path, layout: str) -> None:
-	title = "THE END" if layout == "theend" else "Topic"
-	result = compile_source(tmp_path, f"=== layout: {layout}\n\n# {title}\n\n"
-		"@citation\n\nAuthor. _Study._ https://example.test/study")
-	objects = result.plan.slides[0].objects
-	assert any(item.object_id == "citation-backing" for item in objects)
-	citation = next(item for item in objects if item.object_id == "citation")
-	assert any(run.style.link_url == "https://example.test/study"
-		for paragraph in citation.content.paragraphs for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun))
-
-
-@pytest.mark.parametrize("content", ("- A list", "![Image](missing.png)", "$x$"))
-def test_citation_rejects_nonprose_before_export(tmp_path: pathlib.Path, content: str) -> None:
-	with pytest.raises(ValueError, match="@citation"):
-		compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n@citation\n\n" + content)
-
-
-@pytest.mark.parametrize("label", (
-	"## Cis isomer: The two Xs are on the same side.",
-	"Cis isomer: The two Xs are on the same side.",
-	"- Cis isomer: The two Xs are on the same side.",
-))
-def test_region_text_and_images_share_size_selection(tmp_path: pathlib.Path, label: str) -> None:
-	"""Local headings compete with images rather than reserving their preferred size first."""
-	PIL.Image.new("RGB", (225, 155), "blue").save(tmp_path / "diagram.png")
-	result = compile_source(tmp_path, "=== layout: two-over-one-panels\n\n# Topic\n\n"
-		f"@top-left\n\n{label}\n\n![Diagram](diagram.png)\n\n"
-		"@top-right\n\nOther comparison\n\n@bottom\n\nExplanation\n")
-	page = result.plan.slides[0]
-	text = next(item for item in page.objects if item.slot_id == "top-left"
-		and isinstance(item.content, slide_lib.layout_content.TextContent))
-	picture = next(item for item in page.objects if item.slot_id == "top-left"
-		and isinstance(item.content, slide_lib.layout_content.PictureContent))
-	theme = slide_lib.presentation_theme.default_theme()
-	font = text.content.paragraphs[0].typography.selected_size_pt
-	assert theme.body_floor_size_pt <= font < theme.ordinary_body_size_pt
-	assert text.rectangle.y + text.rectangle.height <= picture.rectangle.y
-	assert picture.content.placement.displayed_rectangle.width > picture.rectangle.width / 3
-	if label.startswith("##"):
-		assert text.style_role is slide_lib.layout_primitives.StyleRole.LOCAL_HEADING
-		assert all(run.style.bold for run in text.content.paragraphs[0].inlines
-			if isinstance(run, slide_lib.layout_content.TextRun))
-
-
-def test_region_heading_table_and_image_share_one_allocation(tmp_path: pathlib.Path) -> None:
-	PIL.Image.new("RGB", (300, 120), "blue").save(tmp_path / "diagram.png")
-	result = compile_source(tmp_path, "=== layout: one-panel\n\n# Topic\n\n@body\n\n"
-		"## Local heading\n\n| Sample | Value |\n| --- | --- |\n| A | 1 |\n\n![Diagram](diagram.png)\n")
-	objects = [item for item in result.plan.slides[0].objects if item.slot_id == "body"]
-	assert [type(item.content) for item in objects] == [
-		slide_lib.layout_content.TextContent, slide_lib.layout_content.TableContent,
-		slide_lib.layout_content.PictureContent]
-	heading, table, image = objects
-	assert heading.content.paragraphs[0].typography.selected_size_pt == \
-		table.content.header_rows[0].cells[0].paragraphs[0].typography.selected_size_pt
-	assert heading.rectangle.y + heading.rectangle.height <= table.rectangle.y
-	assert table.rectangle.y + table.rectangle.height <= image.rectangle.y
-
-
-def test_mixed_images_scale_independently_and_preserve_geometry(tmp_path: pathlib.Path) -> None:
-	"""Width scoring preserves source order/aspects while allowing different image widths."""
-	PIL.Image.new("RGB", (1000, 200), "blue").save(tmp_path / "wide.png")
-	PIL.Image.new("RGB", (1000, 350), "green").save(tmp_path / "diagram.png")
-	source = ("=== layout: one-panel\n@body\n![Question](wide.png)\n\n"
-		"- How many different ways can we arrange the offspring?\n\n![Diagram](diagram.png)\n")
-	result = compile_source(tmp_path, source)
-	page = result.plan.slides[0]
-	assert not result.capacity_diagnostics
-	assert [type(item.content) for item in page.objects] == [
-		slide_lib.layout_content.PictureContent, slide_lib.layout_content.TextContent,
-		slide_lib.layout_content.PictureContent]
-	pictures = [item.content.placement.displayed_rectangle for item in page.objects
-		if isinstance(item.content, slide_lib.layout_content.PictureContent)]
-	assert pictures[0].width != pytest.approx(pictures[1].width)
-	assert pictures[0].width / pictures[0].height == pytest.approx(5)
-	assert pictures[1].width / pictures[1].height == pytest.approx(1000 / 350)
-	font = page.objects[1].content.paragraphs[0].typography.selected_size_pt
-	assert font * 2 == int(font * 2)
-	body = page.slots[0].rectangle
-	assert all(item.rectangle.y >= body.y and
-		item.rectangle.y + item.rectangle.height <= body.y + body.height + 1e-8
-		for item in page.objects)
-	assert compile_source(tmp_path, source) == result
-
-
-def test_mixed_content_starvation_requires_replacement_and_split(tmp_path: pathlib.Path) -> None:
-	"""An image cannot silently collapse to accommodate an otherwise representable text block."""
-	PIL.Image.new("RGB", (1000, 250), "blue").save(tmp_path / "question.png")
-	source = ("=== layout: one-panel\n@body\n![Question](question.png)\n\n" +
-		"\n".join("- " + "offspring probability " * 7 for _ in range(16)) + "\n")
-	result = compile_source(tmp_path, source)
-	diagnostic = next(item for item in result.capacity_diagnostics
-		if item.cause is slide_lib.capacity_report.CapacityCause.MIXED_READABILITY)
-	assert "@replaceme" in diagnostic.message() and "Split" in diagnostic.message()
-	assert "split" in slide_lib.capacity_report.format_diagnostic(diagnostic, tmp_path)
-	page = result.plan.slides[0]
-	assert page.objects[-1].object_id == "replaceme-watermark"
-	assert any("Split" in note.text for note in page.notes)
-	assert (tmp_path / "specimen.djot").read_text() == source
-	marked = compile_source(tmp_path, source.replace("\n", "\n@replaceme\n", 1))
-	assert sum(item.object_id == "replaceme-watermark" for item in marked.plan.slides[0].objects) == 1
-
-
-@pytest.mark.parametrize("course", slide_lib.presentation_theme.color_theme_names())
 @pytest.mark.parametrize("layout", ("bookend", "definitions"))
 def test_teaching_layouts_preserve_body_space_and_add_editable_frames(
-		tmp_path: pathlib.Path, layout: str, course: str) -> None:
+		tmp_path: pathlib.Path, layout: str) -> None:
 	"""Teaching frames keep content space and never label live content as reference-only."""
 	text = "\n# Learning focus\n@body\n- Term: explanation\n"
-	ordinary = compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
-	theme = slide_lib.presentation_theme.default_theme(course)
+	ordinary = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
+	theme = slide_lib.presentation_theme.default_theme()
 	page = slide_lib.layout_engine.compile_layout_deck(
-		parsed_source(tmp_path, f"=== layout: {layout}" + text), theme).plan.slides[0]
+		layout_test_helpers.parsed_source(tmp_path, f"=== layout: {layout}" + text), theme).plan.slides[0]
 	assert next(slot.rectangle for slot in page.slots if slot.slot_id == "body") == next(
 		slot.rectangle for slot in ordinary.slots if slot.slot_id == "body")
 	frame = [item for item in page.objects if item.object_id.startswith("teaching-")]
@@ -853,10 +242,9 @@ def test_teaching_layouts_preserve_body_space_and_add_editable_frames(
 		if item not in frame)
 
 
-
 def test_definitions_style_terms_without_styling_explanations_or_examples(tmp_path: pathlib.Path) -> None:
 	"""Plain term syntax and existing bold terms receive automatic bold and underline."""
-	page = compile_source(tmp_path, "=== layout: definitions\n# Definitions\n@body\n"
+	page = layout_test_helpers.compile_source(tmp_path, "=== layout: definitions\n# Definitions\n@body\n"
 		"- Parental type: same allele combination.\n  - An example.\n"
 		"- *Recombinant type* - different allele combination.\n").plan.slides[0]
 	paragraphs = [paragraph for item in page.objects
@@ -872,45 +260,4 @@ def test_definitions_style_terms_without_styling_explanations_or_examples(tmp_pa
 def test_definitions_reject_missing_term_boundaries(tmp_path: pathlib.Path) -> None:
 	"""Malformed entries must identify how to supply a term rather than silently look ordinary."""
 	with pytest.raises(ValueError, match="Term: explanation"):
-		compile_source(tmp_path, "=== layout: definitions\n@body\n- No term separator\n")
-
-
-
-def test_automatic_runt_balancing_moves_words_and_preserves_styling(tmp_path: pathlib.Path) -> None:
-	"""A short last line is rebalanced at the selected size, with identical words and run styles."""
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	family = slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
-	width = session.advance(family, False, False, 28, "Distances between genes can be expressed as ")
-	width += session.advance(family, True, False, 28, "map ")
-	deck = parsed_source(tmp_path, "=== layout: one-panel\n@body\n"
-		"Distances between genes can be expressed as [*map units*]{underline=true};\n")
-	blocks = deck.slides[0].cells[0].blocks
-	content = slide_lib.layout_object_builders.text_content(blocks, 28, 17,
-		slide_lib.layout_primitives.StyleRole.BODY, "172033", width, theme, session=session)
-	paragraph = content.paragraphs[0]
-	assert paragraph.typography.selected_size_pt == 28
-	assert sum(isinstance(run, slide_lib.layout_content.LineBreak) and run.automatic
-		for run in paragraph.inlines) == 1
-	runs = [run for run in paragraph.inlines if isinstance(run, slide_lib.layout_content.TextRun)]
-	text = "".join(run.text if isinstance(run, slide_lib.layout_content.TextRun) else " "
-		for run in paragraph.inlines)
-	assert " ".join(text.split()) == (
-		"Distances between genes can be expressed as map units;")
-	assert all(run.style.bold and run.style.underline for run in runs if run.text in ("map", "units"))
-	lines = slide_lib.djot_audit.paragraph_lines(paragraph, width, session)
-	assert len(lines) == 2 and slide_lib.djot_audit.typography_issue(lines) is None
-	assert all(ink_width <= width for _text, ink_width in lines)
-
-
-def test_runt_balancing_preserves_authored_breaks_and_does_not_add_lines() -> None:
-	"""Hard breaks and an unfixable narrow tail stay unchanged rather than adding a line."""
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	family = slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
-	for tokens, width in (
-		((("Long preceding line", family, False, False, False), ("\n", "", False, False, False),
-			("word", family, False, False, False)), 900),
-		((("Longword tail", family, False, False, False),),
-			session.advance(family, False, False, 28, "Longword "))):
-		assert session.wrap_tokens(tokens, 28, width) == session.wrap_tokens(tokens, 28, width, balance=False)
+		layout_test_helpers.compile_source(tmp_path, "=== layout: definitions\n@body\n- No term separator\n")

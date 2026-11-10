@@ -503,18 +503,19 @@ with no red-on-red dates or legacy midnight cutoff fragments.
 
 ### Chapter and topic divider hierarchy
 
-**Decision.** `section` remains the bright course-color chapter divider; `subsection` is a
-darker topic divider with a smaller centered title and matching full-width top/bottom stripes. Sections retain
-their large centered titles and rounded frames.
+**Decision.** `section` remains the saturated course-color chapter divider with white text and a
+rounded frame. `subsection` uses the existing pale course tint, a smaller centered black title,
+and black full-width top/bottom stripes.
 
 **Why.** A shared transition treatment flattened the teaching hierarchy between chapters and their
 individual talking points.
 
-**Consequence.** Both retain their native editable layout identity. Symmetric stripes, framing, and type
-size distinguish chapter/topic levels even when their course colors look similar.
+**Consequence.** Both retain their native editable layout identity. Background contrast exceeds
+3:1 between the two divider levels across course themes. Black subsection text and stripes exceed
+the 5.5:1 house readability target. Shape, type size, and symmetric stripes reinforce the hierarchy.
 
-**Owner.** `slide_lib.layout_registry.py` and
-`biotech/LECT03/djot/lect03c-talking_points_set_2.djot`.
+**Owner.** `slide_lib/layout_specialty_builders.py`, `slide_lib/odp_export.py`, and
+`slide_lib/layout_primitives.py`.
 
 The native-ODP decision below supersedes earlier decisions that describe a maintained PPTX reader,
 writer, animation adapter, temporary conversion, or sibling artifact. Current operation builds one

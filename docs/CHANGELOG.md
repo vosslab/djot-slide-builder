@@ -2,6 +2,36 @@
 
 ### Additions and New Features
 
+- Give subsections a pale course tint with black titles, subtitles, and symmetric full-width
+  stripes. Preserve saturated section cards and their rounded white frames. Measured background
+  separation increases from 1.31-1.39:1 to 4.49-5.94:1 across all four course themes; black ink
+  on the subsection tints exceeds 16.68:1. Update the existing divider regression to protect
+  background separation above 3:1 and readable subsection ink.
+
+- Integrate sixteen original pea, Four-o-clock, snapdragon, cattle, Western and ELISA SVGs
+  through 60 image URLs in three sources, preserving native teaching content and original art.
+  Independent actual-context reviews cover 78 authored contexts per variant: all 150 ordinary
+  and six hidden page images are individually inspected. Preserve 306 native paragraph/style
+  instances and 1,082 SVG text instances: 1,060 selectable plus 22 decorative book-cover words
+  outlined in PDF but live in SVG. Recompile all six proofs under current R1 runtime; every
+  reviewed R0 ODP ZIP payload is byte-exact, with only container timestamps changed. This
+  qualifies the existing proof PDFs without claiming unchanged tables throughout the course.
+  Retain the corrected ELISA plate well, useful captions and credits, and the narrow authorized
+  textbook-ID omissions. Add one pea/Four-o-clock paragraph to the provisional botanical guide.
+  Preserve four available prior Genetics outputs; the two absent Biotechnology outputs have
+  historical hashes only. Canonical full-root builds and a fresh exact base suite are pending;
+  the earlier 5791-test result belongs to the preceding batch. See
+  [genetics_visual_renewal_progress.md](active_plans/reports/genetics_visual_renewal_progress.md).
+
+- Give the reusable prompt catalog neutral Icebreaker titles and use Icebreaker in Genetics
+  Lecture 10. Document the in-person format in announcement guidance and the conversion checklist;
+  keep Zoom-specific discussion naming with the Zoom guidance.
+
+- Split layout regression tests into compiler, table, text, and media modules. Apply the
+  permanent-test checklist to remove incidental style/identity assertions and duplicate native
+  export checks; reduce redundant parameter sweeps. Keep one-time rebuild and rendered-review
+  checks as task evidence. The former 916-line module is now below the advisory band.
+
 - Align ordinary table bodies by column: numeric-only columns use their preset's numeric
   alignment, while mixed notation keeps consistent preset alignment. Ignore headers, blanks,
   and merged cells when classifying columns; preserve merged-cell defaults, matrix rules,

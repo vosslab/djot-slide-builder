@@ -105,6 +105,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   from converted slides, including headings, captions, citations, and editable diagram labels.  They are textbook-slide artifacts. Preserve the useful explanatory caption and diagram content.
 
 - Subsection backgrounds should be a variation of the course-dependent section color.
+- Use pale course-tint subsections with black text and black horizontal stripes. Keep the
+  background contrast between section and subsection above 3:1; sections retain their saturated
+  course color, white text, and rounded frame.
 
 ## Labeled diagram reconstruction
 
@@ -684,8 +687,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - Give students concrete examples with icebreaker questions to help them get talking and share.
 
-- Build a reusable collection from old announcement slides, preserving their Breakout Room Chat
-  format and wording. Keep subject-specific prompts and general fallbacks.
+- Build a reusable collection from old announcement slides, preserving prompt wording, examples,
+  and source provenance. Keep subject-specific prompts and general fallbacks.
+- Use "Icebreaker" for face-to-face classes, including Genetics. Give the reusable catalog
+  neutral "Icebreaker" titles.
 - For Genetics on October 20, 2026, ask about pets: dog, cat, none, other.  - For Genetics 09A on November 3, 2026, ask: "What everyday task would you permanently
   hand over to a robot?"
 - The collection is in `evergreen/icebreakers.yaml`; select prompts explicitly for each class.

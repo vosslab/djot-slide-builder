@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="1056" viewBox="0 0 808 1056" role="img" aria-labelledby="title desc"><title id="title">Four-o-clock incomplete dominance cross</title><desc id="desc">Schematic Mirabilis jalapa flowers. Red and white parents produce a pink F1. A two-by-two offspring grid shows red and pink above pink and white. Eight gamete circles are intentionally empty. Source: Genetics LECT05F, current authored slide 8. Flower dimensions and perspective are illustrative.</desc><defs><marker id="arrowhead" markerWidth="16" markerHeight="14" refX="13" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L14 7 L0 14Z" fill="#354651" /></marker></defs>
+<rect id="white-background" width="808" height="1056" fill="#ffffff" />
+<g id="stage-separators" stroke="#e1e6e6" stroke-width="2"><path d="M70 346 H738 M70 650 H738" /></g>
+<g id="parent-red" data-phenotype="red" transform="translate(217 94) scale(1.12)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="parent-red-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="parent-red-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#db3449" stroke="#73192e" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#f15c68" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#ab1839" />
+      </g>
+      <g id="parent-red-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#db3449" stroke="#73192e" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#f15c68" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#f15c68" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#f15c68" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#f15c68" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#ab1839" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#ab1839" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#73192e" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#ff9b9e" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#73192e" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="parent-white" data-phenotype="white" transform="translate(565 94) scale(1.12)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="parent-white-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="parent-white-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#fffefa" stroke="#707b74" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#ffffff" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#e2e4dd" />
+      </g>
+      <g id="parent-white-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#fffefa" stroke="#707b74" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#ffffff" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#ffffff" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#ffffff" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#ffffff" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#e2e4dd" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#e2e4dd" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#707b74" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#ffffff" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#707b74" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="parent-cross" stroke="#354651" stroke-width="6" stroke-linecap="round"><path d="M389 128 L419 158 M419 128 L389 158" /></g>
+<g id="inheritance-routes" fill="none" stroke="#354651" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<path id="red-parent-to-gamete" d="M274 260 L315 281" marker-end="url(#arrowhead)" />
+<path id="white-parent-to-gamete" d="M603 260 L493 281" marker-end="url(#arrowhead)" />
+<path id="parent-gamete-merge" d="M346 317 L404 358 L462 317" />
+<path id="merge-to-f1" d="M404 358 L404 387" marker-end="url(#arrowhead)" />
+<path id="f1-to-left-gamete" d="M414 566 L350 586" marker-end="url(#arrowhead)" />
+<path id="f1-to-right-gamete" d="M450 566 L464 585" marker-end="url(#arrowhead)" />
+</g>
+<g id="f1-pink" data-phenotype="pink" transform="translate(392 448) scale(0.78)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="f1-pink-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="f1-pink-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#f4a3bd" stroke="#a54d71" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#ffd0df" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#da6c98" />
+      </g>
+      <g id="f1-pink-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#f4a3bd" stroke="#a54d71" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#ffd0df" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#ffd0df" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#ffd0df" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#ffd0df" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#da6c98" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#da6c98" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#a54d71" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#fff0f5" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#a54d71" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="offspring-grid" fill="none" stroke="#889b9d" stroke-width="2.5"><rect x="190" y="742" width="460" height="286" /><path d="M420 742 V1028 M190 885 H650" /></g>
+<g id="f2-top-left-red" data-phenotype="red" transform="translate(295 791) scale(0.56)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="f2-top-left-red-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="f2-top-left-red-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#db3449" stroke="#73192e" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#f15c68" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#ab1839" />
+      </g>
+      <g id="f2-top-left-red-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#db3449" stroke="#73192e" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#f15c68" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#f15c68" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#f15c68" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#f15c68" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#ab1839" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#ab1839" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#73192e" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#ff9b9e" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#73192e" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="f2-top-right-pink" data-phenotype="pink" transform="translate(525 791) scale(0.56)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="f2-top-right-pink-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="f2-top-right-pink-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#f4a3bd" stroke="#a54d71" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#ffd0df" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#da6c98" />
+      </g>
+      <g id="f2-top-right-pink-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#f4a3bd" stroke="#a54d71" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#ffd0df" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#ffd0df" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#ffd0df" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#ffd0df" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#da6c98" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#da6c98" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#a54d71" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#fff0f5" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#a54d71" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="f2-bottom-left-pink" data-phenotype="pink" transform="translate(295 934) scale(0.56)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="f2-bottom-left-pink-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="f2-bottom-left-pink-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#f4a3bd" stroke="#a54d71" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#ffd0df" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#da6c98" />
+      </g>
+      <g id="f2-bottom-left-pink-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#f4a3bd" stroke="#a54d71" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#ffd0df" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#ffd0df" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#ffd0df" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#ffd0df" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#da6c98" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#da6c98" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#a54d71" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#fff0f5" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#a54d71" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="f2-bottom-right-white" data-phenotype="white" transform="translate(525 934) scale(0.56)" stroke-linejoin="round" stroke-linecap="round">
+      <g id="f2-bottom-right-white-green-base" stroke="#416d47" stroke-width="2.4">
+        <path d="M49 112 Q55 125 65 141" fill="none" stroke="#548650" stroke-width="7" />
+        <path d="M51 125 C40 120 34 110 33 95 L43 105 L43 91 L52 105 L60 94 C66 109 64 118 51 125Z" fill="#649953" />
+        <path d="M52 121 Q52 109 60 99 L59 116Z" fill="#94b877" stroke="none" />
+      </g>
+      <g id="f2-bottom-right-white-funnel-tube">
+        <path d="M-55 9 C-36 31 12 47 27 76 Q34 91 43 109 Q47 114 53 108 C48 84 42 64 42 45 C42 22 60 6 60 -15Z" fill="#fffefa" stroke="#707b74" stroke-width="2.5" />
+        <path d="M-38 18 C-9 44 21 46 35 80 L48 108 L43 78 C35 51 19 29 -2 17Z" fill="#ffffff" />
+        <path d="M45 10 C30 40 34 73 52 108 L57 105 C48 76 44 45 58 18Z" fill="#e2e4dd" />
+      </g>
+      <g id="f2-bottom-right-white-five-lobed-limb">
+        <path d="M-42 -33 C-32 -62 18 -69 36 -38 C62 -39 81 -4 58 17 C61 42 28 53 9 36 C-17 50 -49 32 -47 12 C-78 7 -73 -29 -42 -33Z" fill="#fffefa" stroke="#707b74" stroke-width="3" />
+        <path d="M-38 -33 C-28 -58 15 -63 33 -38 C16 -32 6 -17 5 5 C-10 -15 -22 -24 -38 -33Z" fill="#ffffff" />
+        <path d="M-42 -29 C-63 -26 -72 0 -47 8 C-26 8 -10 8 5 5 C-14 -5 -30 -20 -42 -29Z" fill="#ffffff" />
+        <path d="M-43 13 C-44 32 -15 44 6 34 C4 23 4 13 5 5 C-12 12 -31 16 -43 13Z" fill="#ffffff" />
+        <path d="M38 -34 C32 -19 21 -4 5 5 C26 8 46 9 55 15 C74 -3 58 -32 38 -34Z" fill="#ffffff" />
+        <path d="M55 19 C39 16 22 10 5 5 C10 21 12 30 12 35 C29 49 56 39 55 19Z" fill="#e2e4dd" opacity="0.62" />
+        <path d="M-43 13 C-28 14 -11 8 5 5 C-12 3 -43 4 -65 -3 C-63 6 -52 11 -43 13Z" fill="#e2e4dd" opacity="0.6" />
+        <path d="M-39 -31 Q-15 -18 5 5 M34 -35 Q22 -13 5 5 M54 17 Q31 10 5 5 M9 34 Q5 19 5 5 M-44 12 Q-22 13 5 5" fill="none" stroke="#707b74" stroke-width="1.45" opacity="0.58" />
+        <path d="M-31 -44 Q-8 -65 23 -45 M-60 -19 Q-72 -5 -53 4 M-37 25 Q-19 40 0 34" fill="none" stroke="#ffffff" stroke-width="2.6" />
+        <ellipse cx="5" cy="5" rx="7" ry="5" fill="#707b74" />
+        <path d="M5 5 Q1 -9 -11 -16 M5 5 Q12 -12 22 -17 M5 5 Q-7 -8 -22 -8 M5 5 Q-2 -15 0 -23 M5 5 Q13 -6 28 -4" fill="none" stroke="#fff2d2" stroke-width="2.1" />
+        <g fill="#dfb33f" stroke="#9b7934" stroke-width="0.7">
+          <ellipse cx="-11" cy="-16" rx="3.4" ry="1.8" transform="rotate(25 -11 -16)" />
+          <ellipse cx="22" cy="-17" rx="3.4" ry="1.8" transform="rotate(-25 22 -17)" />
+          <ellipse cx="-22" cy="-8" rx="3.4" ry="1.8" />
+          <ellipse cx="0" cy="-23" rx="3.4" ry="1.8" transform="rotate(15 0 -23)" />
+          <ellipse cx="28" cy="-4" rx="3.4" ry="1.8" />
+        </g>
+      </g>
+    </g>
+<g id="empty-gametes" fill="#ffffff" stroke="#647e85" stroke-width="3">
+<circle id="gamete-parent-left" cx="331" cy="299" r="26" />
+<circle id="gamete-parent-right" cx="477" cy="299" r="26" />
+<circle id="gamete-f1-left" cx="331" cy="605" r="26" />
+<circle id="gamete-f1-right" cx="477" cy="605" r="26" />
+<circle id="gamete-grid-top-left" cx="305" cy="701" r="26" />
+<circle id="gamete-grid-top-right" cx="535" cy="701" r="26" />
+<circle id="gamete-grid-left-top" cx="132" cy="813.5" r="26" />
+<circle id="gamete-grid-left-bottom" cx="132" cy="956.5" r="26" />
+</g></svg>

@@ -1457,3 +1457,76 @@ ledger bytes, other files and index entries remain intact; the existing changelo
 baseline is preserved. Before/after snapshots, exact append diff, hashes and scoped
 ASCII, whitespace, Git-aware canonical-link and unchanged-index checks are in
 `_temp/flower_assay_queue_checkpoint/`. The broader all-lecture artwork goal remains **OPEN**.
+
+## Flower, cattle and assay integration
+
+**Sixteen drawings integrated; canonical delivery pending, 2026-11-10.** Independent source/art
+and actual-context reviews accept all nine Genetics and seven assay SVGs. The final contextual
+verdicts are `_temp/flower_dominance_context_quality/REVIEW.md`,
+`_temp/elisa_context_quality/REVIEW.md` and `_temp/western_context_quality/REVIEW.md`.
+They supersede the queue's pending artwork state; the Western review's later R0 runtime-hash
+failure remains historical evidence, qualified by the separate current-runtime receipt below.
+
+`_temp/flower_assay_context_export/REVIEW.md` records 78 authored contexts per variant,
+including three hidden contexts: 75 ordinary PDF pages per variant, all 150 ordinary images
+and all six paired hidden images individually opened. All 306 native paragraph/style instances
+are preserved. The 1,082 SVG text instances comprise 1,060 selectable instances and 22 outlined
+decorative book-cover words, two words at eleven placements. Those words remain live in the
+exact embedded SVGs and visibly identifiable; no teaching label is waived. The small Weight
+leader crosses the initial letters of Biochemistry without a material reading defect.
+Native Biotechnology PDF export varies horizontally by at most 0.214 pt, with no vertical
+shift and exact source/ODP frames, styles and character streams; this is not artwork drift.
+
+`_temp/flower_assay_runtime_revalidation/HANDOFF.md` and `equivalence.json` resolve the runtime
+qualification for these six exact proof sources. R1 compilation reproduces every reviewed R0
+ODP ZIP payload byte-exact, including native tables, styles, graphics and fonts; only ZIP
+timestamps differ. Existing inspected PDFs therefore represent this R1 content. The receipt
+does not establish unchanged tables elsewhere in the course. Its 279 current dependencies
+are distinct from the historical 579-entry census with five unrelated source changes and four
+cleared generated outputs; no old manifest or failure is rewritten.
+
+`_temp/flower_assay_integration/HANDOFF.md`, `accepted_hashes.json` and `checks.json` record
+sixteen exact canonical SVG additions and 60 image-URL-only substitutions in three ASCII
+sources: ten pea, three dominance/cattle and 47 assay uses, including three hidden uses.
+Complete URL reversal restores source bytes and parsed models. Native voice, prose, titles,
+alt text, tables/styles, notes, layouts, markers, reveals, hidden states and sequence remain
+unchanged. All 277 other actual inputs and 514 sealed proof/review/runtime artifacts remain
+intact, including original assets, empirical photographs and experimental images.
+Authored/hidden/visible counts stay 89/0/89 for Genetics LECT05h, 55/0/55 for LECT05f and
+390/6/384 for Biotechnology LECT04c. No source cleanup or general science correction is made.
+
+Only textbook identifiers Figure 6-23 part 1, Figure 6-23 part 2 and Figure 5.22 are omitted
+under [HUMAN_GUIDANCE.md](../../HUMAN_GUIDANCE.md); useful captions, credits and Diagram 1/2
+remain. The corrected ELISA plate retains brown well r2c8 at all three uses; its rejected parent
+is not promoted. The accepted source is `_temp/elisa_plate_color_fix/elisa_plate_readout.drawn.svg`,
+SHA256 `a4e16baeb35ae50212d918492088ac30674bb50c7ba60d56ae5a13867c919dde`.
+
+The existing hidden-export route is now validated: process-local `ExportHiddenSlides=true`
+produces 58-page scratch supplements for the paired Biotechnology proofs, with unchanged ODP
+hashes and visibility. The filter is restored; ordinary proofs retain 55 pages. No production
+code, CLI option or permanent test is added. All LibreOffice work is released.
+
+Four matching prior Genetics ODP/PDF files are preserved byte-exact from frozen copies under
+`_temp/flower_assay_integration/prior_canonical/`. The two Biotechnology outputs were already
+unavailable and have historical hashes only; six preserved output archives are not claimed.
+`availability_supersession.json` records the authorized future canonical output replacements.
+The integration's 869-entry `delivery_freeze.json` has SHA256
+`abf94adfff13b13c5da78447c69ec528a7011fd74a53e9707892738a85ae8911`; governing documents are
+archived by version. External work added four test-only intent-to-add entries after preflight;
+all preflight entries remain exact. Integration made no index writes. This documentation
+checkpoint preserves that current index, flags, external edits and commits.
+
+One paragraph in the existing botanical section of
+[GENETICS_ILLUSTRATION_GUIDE.md](../../slide-specs/GENETICS_ILLUSTRATION_GUIDE.md) compares reviewed
+pea and Four-o-clock anatomy within a shared drawing language. The guide remains provisional.
+The three delivery documents and unchanged changelog archive are sealed in
+`_temp/flower_assay_checkpoint/pre_delivery_freeze.json`, with before/after snapshots, exact
+diff and scoped ASCII, whitespace, Git-aware canonical-link and unchanged-index checks.
+
+Canonical full-root builds, changed/neighbor inspection and a fresh exact base suite remain
+**PENDING**. The prior **5791 passed, 2 warnings in 26.79s** belongs only to the five-drawing
+mouse/strawberry/mass-spectrometry batch. Accepted limits persist: three-purple/one-white pea
+icons beside native 9:7 wording, fine snapdragon/assay labels requiring full view or existing
+large repeats, and inherited tight native margins. These bounded reviews do not establish
+attended playback, learner acceptance or a whole-deck science audit. No tests, builds, exports
+or index operations run for this prose checkpoint. The broader artwork goal remains **OPEN**.

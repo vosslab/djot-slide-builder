@@ -40,6 +40,7 @@ _ROLE_COLORS = {
 	slide_lib.layout_primitives.StyleRole.ANSWER: "7B1E2B",
 	slide_lib.layout_primitives.StyleRole.PANEL: "F2F3F5",
 	slide_lib.layout_primitives.StyleRole.DECORATION: "FFFFFF",
+	slide_lib.layout_primitives.StyleRole.SUBSECTION_INK: "000000",
 }
 
 for _prefix, _namespace in (("office", OFFICE_NS), ("draw", DRAW_NS),
@@ -511,11 +512,8 @@ def _clip_value(item: slide_lib.layout_model.LayoutObject,
 def _color_for(role: slide_lib.layout_primitives.StyleRole,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the shared resolved palette color for a semantic role."""
-	if role is slide_lib.layout_primitives.StyleRole.SUBSECTION:
-		shade = "".join(f"{round(int(theme.accent_color[index:index + 2], 16) * 0.8):02X}"
-			for index in (0, 2, 4))
-		return shade
-	if role is slide_lib.layout_primitives.StyleRole.ACCENT_TINT:
+	if role in (slide_lib.layout_primitives.StyleRole.SUBSECTION,
+			slide_lib.layout_primitives.StyleRole.ACCENT_TINT):
 		# A pale course-derived surface keeps the hue without competing with dark text.
 		channels = [int(theme.accent_color[index:index + 2], 16) for index in (0, 2, 4)]
 		tint = "".join(f"{round(channel * 0.14 + 255 * 0.86):02X}" for channel in channels)

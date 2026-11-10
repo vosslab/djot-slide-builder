@@ -82,6 +82,7 @@ class StyleRole(enum.Enum):
 	DECORATION = "decoration"
 	TRANSITION = "transition"
 	SUBSECTION = "subsection"
+	SUBSECTION_INK = "subsection-ink"
 	ANSWER = "answer"
 	PANEL = "panel"
 

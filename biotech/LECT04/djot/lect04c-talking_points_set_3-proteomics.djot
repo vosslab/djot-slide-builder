@@ -651,7 +651,7 @@ Protein Gels And Western Blotting
 @bottom-left
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 
 @right
@@ -937,7 +937,7 @@ Nucleic Acid gels [usually]{color=red} require UV light, whereas protein gels do
 @bottom-left
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 
 @right
@@ -989,7 +989,7 @@ Nucleic Acid gels [usually]{color=red} require UV light, whereas protein gels do
 @image
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 
 @caption
@@ -1003,7 +1003,7 @@ Protein Gels And Western Blotting
 @image
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 
 
 @caption
@@ -1017,7 +1017,7 @@ Protein Gels And Western Blotting
 @image
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 
 
 @caption
@@ -1322,7 +1322,7 @@ Protein Gels And Western Blotting
 
 @bottom-right
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 === layout: one-plus-two-panels
 
 # Answer 6: Protein
@@ -1338,7 +1338,7 @@ Protein Gels And Western Blotting
 
 @bottom-right
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 === layout: one-plus-two-panels
 
 # Question 7
@@ -1350,11 +1350,11 @@ Protein Gels And Western Blotting
 
 @top-right
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 @bottom-right
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 === layout: one-plus-two-panels
 
 # Answer 7: BOTH
@@ -1366,11 +1366,11 @@ Protein Gels And Western Blotting
 
 @top-right
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 @bottom-right
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -1422,7 +1422,7 @@ hidden: true
 @bottom-right
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -1442,13 +1442,13 @@ hidden: true
 @top-right
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 === layout: four-panels
 
 
@@ -2044,13 +2044,13 @@ Mass Spectrometry And Protein Identification
 @top-right
 
 
-![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_050.jpg)
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/elisa_indirect_sandwich.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_051.png)
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/elisa_indirect_hrpo.drawn.svg)
 === layout: two-panels
 
 
@@ -2130,7 +2130,7 @@ Phage Display And Elisa
 @image
 
 
-![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_050.jpg)
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/elisa_indirect_sandwich.drawn.svg)
 
 
 @caption
@@ -2144,7 +2144,7 @@ Phage Display And Elisa
 @image
 
 
-![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_051.png)
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/elisa_indirect_hrpo.drawn.svg)
 
 
 @caption
@@ -2158,7 +2158,7 @@ Phage Display And Elisa
 @image
 
 
-![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 
 
 @caption
@@ -2172,7 +2172,7 @@ Phage Display And Elisa
 @image
 
 
-![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/image_053.png)
+![Instructor figure related to phage display and elisa](assets/lect04c-talking_points_set_3/elisa_plate_readout.drawn.svg)
 
 
 @caption
@@ -2831,13 +2831,13 @@ Phage Display And Elisa
 @top-left
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 
 
 @bottom-left
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 
 
 @right
@@ -2863,13 +2863,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -2887,7 +2887,7 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 
 
 @bottom-right
@@ -2935,7 +2935,7 @@ Phage Display And Elisa
 @bottom-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -2953,13 +2953,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_030.jpg)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_transfer_primary.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -2977,13 +2977,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 === layout: two-plus-one-panels
 
 
@@ -4038,7 +4038,7 @@ Phage Display And Elisa
 @bottom-right
 
 
-![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_050.jpg)
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/elisa_indirect_sandwich.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4056,13 +4056,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_050.jpg)
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/elisa_indirect_sandwich.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_051.png)
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/elisa_indirect_hrpo.drawn.svg)
 === layout: two-panels
 
 
@@ -4098,13 +4098,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_053.png)
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/elisa_plate_readout.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4122,7 +4122,7 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/image_053.png)
+![Instructor figure related to antigen capture](assets/lect04c-talking_points_set_3/elisa_plate_readout.drawn.svg)
 
 
 @bottom-right
@@ -4176,7 +4176,7 @@ Phage Display And Elisa
 @bottom-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4194,13 +4194,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_031.jpg)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/western_secondary_detection.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4218,13 +4218,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_032.png)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_050.jpg)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/elisa_indirect_sandwich.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4242,13 +4242,13 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_050.jpg)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/elisa_indirect_sandwich.drawn.svg)
 
 
 @bottom-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4266,7 +4266,7 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 
 
 @bottom-right
@@ -4338,7 +4338,7 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 
 
 @bottom-right
@@ -4416,7 +4416,7 @@ Phage Display And Elisa
 @bottom-right
 
 
-![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 === layout: one-plus-two-panels
 
 
@@ -4434,7 +4434,7 @@ Phage Display And Elisa
 @top-right
 
 
-![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/image_052.png)
+![Instructor figure related to molecular contacts](assets/lect04c-talking_points_set_3/elisa_sandwich_biotin.drawn.svg)
 
 
 @bottom-right

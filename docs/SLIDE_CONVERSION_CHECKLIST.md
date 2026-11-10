@@ -103,7 +103,8 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [ ] Compare announcement visibility with this week's plan. Record every changed hidden flag;
   confirm evergreen Discord information remains even when its signup assignment expires.
 - [ ] Select the week's icebreaker explicitly from `evergreen/icebreakers.yaml` or an instructor selection.
-  Copy its prompt/examples and remove any stale week/date label; record the selected catalog key.
+  Use its prompt/examples with **Icebreaker** for face-to-face classes; record the selected
+  catalog key.
 - [ ] Preview the StVC refresh with
   `source source_me.sh && python3 -m slide_lib.refresh_podcast DECK.djot`.
   Inspect the selected episode before applying `--write`.

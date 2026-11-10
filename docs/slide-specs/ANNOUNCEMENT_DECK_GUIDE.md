@@ -23,8 +23,11 @@ lecture's current-year announcements, checking dates and relevance against the c
 5. Icebreaker: selected prompt and concrete examples.
 
 Keep this opening before the first section divider. Select the icebreaker from
-`evergreen/icebreakers.yaml` or the instructor's explicit choice. Use the current course schedule for the
-lookahead; do not infer deadlines or events from last year's dates.
+[../../evergreen/icebreakers.yaml](../../evergreen/icebreakers.yaml) or the instructor's explicit
+choice. Use **Icebreaker** as the title for face-to-face classes, including Genetics, followed by
+the selected prompt and concrete examples. The catalog supplies neutral Icebreaker titles and
+source references for the original prompts.
+Use the current course schedule for the lookahead's dates, deadlines, and events.
 
 ## Three main sections
 
@@ -52,6 +55,8 @@ The former Gmail warning was a 2019 issue and is retired.
 
 BIOL 480 Biotechnology has a course Zoom component. Genetics and Biostatistics do not use
 this classroom Zoom group. Keep ordinary office-hours information separate.
+
+For Zoom breakout activities, title the selected icebreaker **Breakout Room Chat**.
 
 Include [../../biotech/evergreen/zoom_guidance.djot](../../biotech/evergreen/zoom_guidance.djot) visibly in Informational
 Slides, before Course Content. Preserve these three original Lecture 07 reminders:
