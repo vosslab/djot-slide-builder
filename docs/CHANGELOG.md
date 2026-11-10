@@ -2,6 +2,21 @@
 
 ### Fixes and Improvements
 
+- Record Genetics 10A's class votes on one new results slide: The Animal Kingdom for November
+  17 Movie Night and Keep Quiz 5. Preserve all original vote slides as the historical record.
+
+- Add Urszula Westrom's November 12 Pfizer career-pathways presentation and Q&A to Genetics
+  10A General Announcements. Pair the supplied flyer with editable event details, the flyer's
+  Senior Study Operations Manager title, Zoom meeting ID, and in-person refreshments RSVP.
+
+- Restore Genetics 10D's disorder-to-testing progression: Down syndrome, maternal blood and
+  NT ultrasound screening, explicit false positives/negatives, then invasive sampling for a
+  karyotype. Use wildtype in the posed color-vision and segregation questions and explanations.
+  Move the Iceland video after all testing content, followed by parental-choice/eugenics and
+  NYTimes discussion. Add a sourced eye-color-selection slide with ADHD, disease, and athletic
+  ability prompts; distinguish advertised embryo selection from gene editing. Rebuild 70-slide
+  ODP/PDF and check the rendered changed slides; native lint, capacity, and layout audit pass.
+
 - Add Genetics 10C subsection cards for Chromosome Arms and Chromosome Groups at the existing
   topic boundaries. Preserve all teaching content and question/answer sequences; 30 slides.
 

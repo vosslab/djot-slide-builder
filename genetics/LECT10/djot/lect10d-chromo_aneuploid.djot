@@ -303,12 +303,12 @@ Count [*all four products*]{color=#24578F} before choosing an answer
 
 === layout: one-panel
 
-# Add a Normal Gamete
+# Add a Wildtype Gamete
 
 @body
 
 {table-style=working}
-| Gamete After an Error | Normal Gamete | Zygote | Result |
+| Gamete After an Error | Wildtype Gamete | Zygote | Result |
 | --- | --- | --- | --- |
 | [*n - 1*]{color=#D40000} | n | [*2n - 1*]{color=#D40000} | [*Monosomy*]{color=#D40000} |
 | [*n + 1*]{color=#003FFF} | n | [*2n + 1*]{color=#003FFF} | [*Trisomy*]{color=#003FFF} |
@@ -338,7 +338,7 @@ Answer\: C
 
 *Try It: Follow the X Chromosome*
 
-[*Father*]{color=#24578F}: X-linked recessive color blindness. [*Mother*]{color=#935D00}: two normal color-vision alleles. Daughter: color-blind, *45,X*.
+[*Father*]{color=#24578F}: X-linked recessive color blindness. [*Mother*]{color=#935D00}: two wildtype color-vision alleles. Daughter: color-blind, *45,X*.
 
 Assume no new mutation or chromosome loss after fertilization.
 
@@ -537,25 +537,6 @@ associated. Loss can disturb homolog segregation or permit premature sister sepa
 Tsutsumi et al. (2014) measured age-related loss of meiosis-specific cohesin subunits in
 human and mouse oocytes. Cohesion deterioration is one contributor to maternal-age effects.
 
-=== layout: two-panels
-
-# Video: Down Syndrome in Iceland
-
-@left
-
-- CBS News on Assignment
-- Air Date\: Aug 14, 2017
-
-@right
-
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_014.png)
-
-
-
-@citation
-
-https://www.cbsnews.com/video/is-iceland-on-track-to-eliminate-down-syndrome/
-
 === layout: question-ask
 
 # Can People with Down Syndrome Have Children?
@@ -602,7 +583,7 @@ The offspring question leads into the explicit chromosome-segregation model on t
 - Trisomic cell: [*two equally common gamete types*]{color=#24578F}
   - One copy of chromosome 21
   - Two copies of chromosome 21
-- Normal gamete: *one copy*
+- Wildtype gamete: *one copy*
 - Model assumptions: [*equal fertilization and survival*]{color=#935D00}
 
 *What fraction of the resulting zygotes would have trisomy 21?*
@@ -646,7 +627,7 @@ The offspring question leads into the explicit chromosome-segregation model on t
 @right
 
 - Gametes: half with [*one copy*]{color=#24578F}, half with [*two*]{color=#935D00}
-- Normal gamete: *one more copy*
+- Wildtype gamete: *one more copy*
 - Zygotes: half with two copies, half with three
 - [*Model answer: 50% trisomy*]{color=#007A00}
 
@@ -658,65 +639,126 @@ Actual outcomes: additional effects of *fertilization and survival*
 
 === layout: one-panel
 
-# Screening or Diagnosis?
+# Screening for Down Syndrome
 
 @body
+
+- Start with a *maternal blood test* or *ultrasound*
+- Estimate the chance of [*Down syndrome*]{color=#003FFF}
+- No needle enters the uterus for these screening tests
+- A positive screen is *not a diagnosis*
+
+@citation
+
+https://www.nichd.nih.gov/health/topics/down/conditioninfo/diagnosis
+
+=== layout: one-panel
+
+# Down Syndrome: Triple Screen
+
+@body
+
+- *Maternal blood test*: AFP, hCG, and estriol
+- Low AFP/estriol and high hCG can suggest [*Down syndrome*]{color=#003FFF}
+- *Second trimester*; a quad screen adds inhibin-A
+- Estimates chance; does not count fetal chromosomes
+
+@citation
+
+https://www.testing.com/tests/maternal-serum-screening-second-trimester/
+
+@notes
+
+Keep the question anchored to trisomy 21: does this marker pattern suggest an increased chance?
+The triple/quad screen is not the first-trimester blood panel used with the NT scan.
+These are established serum-screening examples; cell-free DNA is another screening option.
+
+=== layout: one-plus-two-panels
+
+# Down Syndrome: Nuchal Translucency
+
+@left
+
+- *Ultrasound*: fluid behind the fetal neck
+- Increased NT can suggest [*Down syndrome*]{color=#003FFF}
+- First trimester: about *11-14 weeks*
+- Combined with first-trimester blood markers
+- Estimates chance; does not confirm trisomy 21
+
+@top-right
+
+![Ultrasound measuring nuchal translucency](assets/lect10d-chromo_aneuploid/image_017.png)
+
+@bottom-right
+
+![Ultrasound showing the nuchal translucency region](assets/lect10d-chromo_aneuploid/image_018.png)
+
+@citation
+
+https://www.nichd.nih.gov/health/topics/down/conditioninfo/diagnosis
+
+@notes
+
+Both ultrasound images illustrate NT measurement, not a karyotype diagnosis.
+Increased NT is not specific to Down syndrome. Do not label an image as diagnostic by appearance.
+First-trimester blood markers are PAPP-A and hCG, not the second-trimester triple screen.
+
+=== layout: one-panel
+
+# Screening Can Be Wrong
+
+@body
+
+{table-style=comparison column-widths="1.3,2,2"}
+| Result | Screen Says | Actual Chromosomes |
+| --- | --- | --- |
+| [*False positive*]{color=#935D00} | Higher chance of Down syndrome | Wildtype: two copies of 21 |
+| [*False negative*]{color=#24578F} | Lower chance of Down syndrome | Trisomy 21: three copies |
+
+- A *positive* result does not prove Down syndrome
+- A *negative* result does not rule it out
+
+@citation
+
+https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
+
+@notes
+
+For this comparison, wildtype means two copies of chromosome 21; it is not a judgment about people.
+Ask students which error could lead to unnecessary worry and which could miss a pregnancy
+with trisomy 21. Both serum screening and NT screening can produce either kind of error.
+
+=== layout: one-panel
+
+# A Positive Screen: What Next?
+
+@body
+
+- Offer genetic counseling and *diagnostic testing*
+- Sample cells for a [*karyotype*]{color=#935D00}: check chromosome 21
 
 {table-style=comparison}
 | Screening | Diagnostic Testing |
 | --- | --- |
-| [*Chance estimate*]{color=#24578F} | [*Testing sampled cells or DNA*]{color=#935D00} |
-| Blood tests, ultrasound | Chromosome testing after CVS or amniocentesis |
-| False positives and false negatives possible | Answers specific to the laboratory test |
+| Blood tests, ultrasound | Sample cells using CVS or amniocentesis |
+| Chance of Down syndrome | Karyotype can show extra chromosome 21 |
 
-[*Positive screen*]{color=#24578F}: follow-up testing, *not a diagnosis*
+- Sampling is *invasive* and carries a risk of miscarriage
+- Parents may accept or decline further testing
 
 @citation
 
-https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
+https://www.nichd.nih.gov/health/topics/down/conditioninfo/diagnosis
+
+@notes
+
+The teaching sequence follows a positive screen into confirmation. A positive screen is not
+required to choose diagnostic testing; patients can also choose it directly after counseling.
+CVS and amniocentesis are sampling procedures. The laboratory karyotype examines chromosomes.
 
 === layout: one-panel
 
-# Prenatal Blood Screening
-
-@body
-
-- Blood screening estimates the chance of a condition
-- A triple screen measures *AFP*, *hCG*, and *estriol*
-- A quad screen also measures *inhibin-A*
-- An unusual result can occur in a pregnancy without the condition
-- A screening result is not a diagnosis
-
-@citation
-
-https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
-
-=== layout: one-plus-two-panels
-
-# Nuchal Translucency Scan
-
-@left
-
-- Ultrasound looks for extra fluid behind the fetal neck
-- Used with blood tests in first-trimester screening
-- Estimates likelihood; does not establish a diagnosis
-- An abnormal screen can lead to an offer of diagnostic testing
-
-@top-right
-
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_017.png)
-
-@bottom-right
-
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_018.png)
-
-@citation
-
-https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
-
-=== layout: one-panel
-
-# Diagnostic Samples
+# Invasive Testing: Getting Cells
 
 @body
 
@@ -727,7 +769,7 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 | [*Chorionic Villus Sampling (CVS)*]{color=#007A00} | Placental tissue |
 | [*Umbilical Blood Sampling (PUBS)*]{color=#B74300} | Fetal blood from the umbilical cord |
 
-[*Sample*]{color=#24578F}: cells or DNA; [*lab test*]{color=#935D00}: what can be detected
+Cells -> [*karyotype*]{color=#935D00} -> extra chromosome 21?
 
 === layout: one-panel
 
@@ -751,11 +793,18 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 @left
 
-- Percutaneous umbilical blood sampling (PUBS). This is also done in the second trimester using blood removed from the umbilical cord.
+- *Percutaneous umbilical blood sampling*: fetal blood from the umbilical cord
+- Cells can be used for chromosome testing
+- Used later in pregnancy for selected indications
+- CVS/amniocentesis usually preferred for chromosome diagnosis
 
 @right
 
 ![Lecture diagram](assets/lect10d-chromo_aneuploid/image_021.png)
+
+@citation
+
+https://publications.smfm.org/publications/589-society-for-maternal-fetal-medicine-clinical-guideline-6/
 
 === layout: two-panels
 
@@ -773,10 +822,6 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 ![Lecture diagram](assets/lect10d-chromo_aneuploid/image_022.png)
 
-=== layout: section
-
-# Summary
-
 === layout: reference
 
 # For Reference: Newborn Screening
@@ -793,30 +838,72 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 Panels vary by screening program.
 
-=== layout: one-panel
+=== layout: section
 
-# *Additional Reading*
+# Testing and Choice
 
-@body
+=== layout: stacked-panels
 
-- The Last Children of Down Syndrome
-  - Prenatal testing is changing who gets born and who doesn't.
-  - This is just the beginning.
+# *CBS on Assignment*
 
+@top
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_033.jpg)
+
+@bottom
+
+- "What kind of society do you want to live in?"\: Inside the country where Down syndrome is disappearing
+
+https://www.cbsnews.com/news/down-syndrome-iceland/
+
+https://www.youtube.com/watch?v=gxJfoftXh9Y
+
+=== layout: two-panels
+
+# Video: Down Syndrome in Iceland
+
+@left
+
+- CBS News on Assignment
+- Air Date\: Aug 14, 2017
+
+@right
+
+![Lecture diagram](assets/lect10d-chromo_aneuploid/image_014.png)
 
 
 
 @citation
 
-https://www.theatlantic.com/magazine/archive/2020/12/-/616928/
+https://www.cbsnews.com/video/is-iceland-on-track-to-eliminate-down-syndrome/
+
+=== layout: one-panel
+
+# Parental Choice or Eugenics?
+
+@body
+
+- How do we protect parents' reproductive choices?
+- When could individual choices become social pressure?
+- How does support for people with Down syndrome affect those choices?
+- What distinguishes personal choice from eugenics?
+
+@notes
+
+Pause for discussion before advancing to the testing-market material.
+Allow quiet thinking, partner discussion, then several viewpoints. No personal disclosure is needed.
+Ask students to distinguish reproductive autonomy, coercion, discrimination, and population goals.
+Avoid assuming that every decision after a diagnosis is the same or has the same motivation.
 
 === layout: two-panels
 
-# *Extended Prenatal Tests*
+# Prenatal Testing: Testing Too Much?
 
 @left
 
-- When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
+- NYTimes investigation: screening for *rare disorders*
+- Many positive results were *false positives*
+- Does more testing always mean better information?
 
 @right
 
@@ -825,6 +912,12 @@ https://www.theatlantic.com/magazine/archive/2020/12/-/616928/
 @citation
 
 NYTimes: [January 2022 investigation](https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html); [April 2022 follow-up](https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html).
+
+@notes
+
+The investigation concerns expanded screening for rare conditions. Do not apply its
+false-positive proportions to Down syndrome screening or to diagnostic karyotypes.
+Return to the denominator: among positive screens, how many were confirmed?
 
 === layout: two-panels
 
@@ -845,21 +938,63 @@ NYTimes: [January 2022 investigation](https://www.nytimes.com/2022/01/01/upshot/
 
 https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
 
-=== layout: stacked-panels
+=== layout: two-panels
 
-# *CBS on Assignment*
+# You Can Shop for Eye Color
 
-@top
+@left
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_033.jpg)
+- *The Fertility Institutes* and *Simple Fertility* advertise eye-color selection
+- IVF produces embryos; genetic testing helps choose which to transfer
+- Embryo selection, not gene editing
+- Predicted eye color; no guarantee
 
-@bottom
+https://www.simplefertility.com/eye-color-selection
 
-- "What kind of society do you want to live in?"\: Inside the country where Down syndrome is disappearing
+@right
 
-https://www.cbsnews.com/news/down-syndrome-iceland/
+*If eye color, what else?*
 
-https://www.youtube.com/watch?v=gxJfoftXh9Y
+- Other diseases?
+- ADHD?
+- Athletic ability?
+
+*Would you draw a line? Where?*
+
+@citation
+
+https://www.fertility-docs.com/programs-and-services/pgd-screening/choose-your-babys-eye-color/
+
+@notes
+
+These are real advertisements, not an endorsement or independent proof of accuracy.
+The named clinics list US locations. Eye-color predictions depend on inherited variants and
+available embryos; the advertised service does not guarantee a particular child or outcome.
+This is selection before pregnancy, unlike prenatal testing and decisions during pregnancy.
+The right-hand examples are discussion questions, not claims that any trait can reliably be chosen.
+ADHD and athletic ability involve many genetic and environmental influences.
+Ask what evidence would be needed before trusting a prediction for a complex trait.
+
+=== layout: one-panel
+
+# *Additional Reading*
+
+@body
+
+- The Last Children of Down Syndrome
+  - Prenatal testing is changing who gets born and who doesn't.
+  - This is just the beginning.
+
+
+
+
+@citation
+
+https://www.theatlantic.com/magazine/archive/2020/12/-/616928/
+
+=== layout: section
+
+# Summary
 
 === layout: bookend
 

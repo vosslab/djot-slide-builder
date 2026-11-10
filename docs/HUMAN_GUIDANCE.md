@@ -8,6 +8,16 @@ Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md)
 [slide-specs/VOICE_GUIDE.md](slide-specs/VOICE_GUIDE.md), and
 [slide-specs/PEDAGOGY_GUIDE.md](slide-specs/PEDAGOGY_GUIDE.md).
 
+- Avoid "Down syndrome vs normal"; I prefer "Down syndrome vs wildtype." Check posed
+  questions as well as explanations, so the wording does not classify people as "other."
+- In Genetics 10D, connect the testing sequence to the disorder: Down syndrome, then the
+  easy blood and ultrasound screening tests, then invasive diagnostic sampling for a karyotype
+  after a positive screen. Keep false positives and false negatives explicit.
+- Finish the Genetics 10D content, including CVS/PUBS, before the Iceland video. Leave space
+  afterward for parental choice vs eugenics, then the NYTimes testing-too-much discussion.
+- Introduce companies advertising eye-color selection and ask what else students would consider:
+  other diseases, ADHD, or athletic ability.
+
 - Ground my voice guide in evidence from my established slides, with exact examples and sources.
   Distinguish what the slides demonstrate from my stated preferences and editorial suggestions.
 

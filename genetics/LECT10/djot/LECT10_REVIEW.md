@@ -9,6 +9,79 @@ Rejected LLM drawings and future repair targets are inventoried in
 including the four chromosome-shape drawings in the final queue pass. The inventory
 records exact paths, source baselines, current replacements, and the teaching detail to restore.
 
+## November 10 class vote results
+
+Add one Class Vote Results slide after the movie-vote recap and before spring registration.
+The instructor reports that students selected The Animal Kingdom and Keep Quiz 5. Show the
+November 17 movie date and retained quiz schedule: December 1 Group Quiz 4, December 8 Group
+Quiz 5, and December 15 Final Exam. Preserve every prior slide, including both sets of voting
+slides, exactly as the historical record. Temporary source comparison and rendered review:
+`_temp/lect10a_vote_results/`.
+
+Rebuilt 67 native ODP slides and 47 visible PDF pages; results appear on PDF page 39. Strict
+native lint, Markdown links, and visual review pass. The new slide has no capacity concern.
+Removing its block reproduces the exact preceding source, confirming that every voting slide
+and all other existing content remain unchanged.
+
+## November 10 guest speaker announcement
+
+Add one visible slide immediately after 10A's General Announcements divider, before Movie Night.
+The supplied `Guest Speaker Flyer 2.pdf` confirms Thursday, November 12, 2026, 12:30-1:30 pm,
+SCH 135 (Tucker Boardroom, Schaumburg), and Zoom meeting ID 365 317 4313. Use the flyer's
+Senior Study Operations Manager title rather than the differing titles in the accompanying
+email. Preserve the full presentation title, RU alumna affiliation, presentation/Q&A format,
+and Dr. Robert Seiser's in-person RSVP request for refreshments.
+
+Save a complete quality-90 WebP of the flyer beside the Djot source. Keep its essential event
+details native and editable beside the image, with a clickable contact email. All other
+source slides and include directives remain unchanged. Temporary source comparison, capacity
+report, and rendered review belong under `_temp/lect10a_guest_speaker/`.
+
+Rebuilt 66 native ODP slides and 46 visible PDF pages; the new announcement is PDF page 31.
+Visual review and strict native lint pass. The new slide has no capacity concern; eight
+pre-existing concerns remain on other slides. Removing the new block reproduces the exact
+prior source. The base suite reports 5,925 passed and the same two untouched LECT14/LECT15
+agenda-title failures recorded below.
+
+## November 10 post-lecture testing sequence
+
+This revision supersedes earlier 10D slide numbers and the former Iceland-video placement.
+The instructor identified the lost Down syndrome connection and the premature introduction of
+invasive testing after teaching the deck. Keep the biology and all testing content before the
+video, then leave room for discussion without returning to testing procedures.
+
+- D25/D27/D42/D47: use wildtype for the gamete and color-vision allele comparisons, including
+  the posed questions. Descriptions of normal meiotic separation refer to a process, not people.
+- D48-52: introduce blood and ultrasound screening for Down syndrome, explain the triple-screen
+  markers and NT scan, then define false positives and false negatives explicitly. Distinguish
+  first-trimester NT/blood screening from the second-trimester triple/quad screen.
+- D53-57: a positive screen leads to an offer of diagnostic testing. Explain invasive sampling,
+  the karyotype's chromosome-21 readout, procedure risks, and parental choice. Retain the original
+  labeled amniocentesis/CVS figures. PUBS remains included, with its selected-use role explained.
+- D58-59: newborn screening and its adjacent study reference finish the testing content.
+- D60-65: Testing and Choice, the CBS links, the Iceland video, a dedicated parental-choice vs
+  eugenics discussion, then NYTimes expanded-screening concerns and the podcast. Keep the rare-
+  disorder false-positive discussion distinct from Down syndrome screening and diagnostic tests.
+- D66: new eye-color selection discussion. The Fertility Institutes and Simple Fertility
+  advertise the service on their own websites. Show full links, distinguish embryo selection
+  from gene editing, and state that the prediction is not guaranteed. Ask about other diseases,
+  ADHD, and athletic ability without claiming those outcomes can reliably be selected.
+- D67-70: additional reading, Summary, Key Takeaways, and THE END.
+
+Original D26 explicitly named Down syndrome and gave historical NT sensitivity/false-positive
+rates. Restore the disorder connection and both error definitions without presenting those old
+performance estimates as current clinical benchmarks. Scientific sources are linked in the
+slides: NICHD/CDC for screening, the maternal-serum marker reference, and SMFM's fetal-blood-
+sampling guidance. The clinic pages list US locations; do not label these examples as UK clinics.
+The searched Biotechnology ODP/PPTX text did not locate the recalled UK eye-color slide.
+
+All 32 image references are retained. The revised source and generated ODP/PDF have 70 slides.
+Native lint, capacity, and layout audit pass, and the affected questions and D48-69 were visually
+reviewed in the exported PDF. One-time sequence/image/text checks and quality-90 WebP renders
+are under `_temp/lect10d_sequence/`; no permanent tests were added. The base suite reports
+5,925 passed and two title-format failures in the untouched LECT14/LECT15 agenda sources;
+both failing files match HEAD byte for byte.
+
 ## November 10 chromosome topic boundaries
 
 Add Chromosome Arms before the first band/arm figures and Chromosome Groups before the A-G

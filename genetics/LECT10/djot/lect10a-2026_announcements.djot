@@ -257,6 +257,34 @@ hidden: true
 
 # General Announcements
 
+=== layout: two-panels
+
+# Guest Speaker: Urszula Westrom
+
+@left
+
+*Career Pathways in Clinical Research and Program Management*
+
+- *Pfizer*: Senior Study Operations Manager; RU alumna
+- *Thursday, November 12*: 12:30-1:30 pm
+- *SCH 135*: Tucker Boardroom, Schaumburg
+- Presentation and Q&A
+- In-person RSVP: Dr. Robert Seiser (refreshments)
+
+@right
+
+![Flyer for Urszula Westrom's November 12 guest presentation, with Zoom meeting ID 365 317 4313](assets/guest_speakers/urszula_westrom_2026-11-12.webp)
+
+@citation
+
+Event contact: [_rseiser@roosevelt.edu_](mailto:rseiser@roosevelt.edu) | Zoom meeting ID: 365 317 4313
+
+@notes
+
+DBPS invited alumni speaker: everyone and their students are invited to attend.
+Bob is planning refreshments and asks anyone attending in person to let him know.
+The flyer lists Urszula as Senior Study Operations Manager at Pfizer.
+
 === layout: subsection
 
 # Movie Night
@@ -362,6 +390,28 @@ hidden: true
 @citation
 
 Our Times (2025) | Biosphere (2023) | Vesper (2022) | The Animal Kingdom (2023)
+
+=== layout: two-panels
+
+# Class Vote Results
+
+@left
+
+## Movie Night
+
+[*The Animal Kingdom (2023)*]{color=#24578F}
+
+- *Tuesday, November 17*
+
+@right
+
+## Quiz Schedule
+
+[*Keep Quiz 5*]{color=#24578F}
+
+- *Dec 1*: Group Quiz 4
+- *Dec 8*: Group Quiz 5
+- *Dec 15*: Final Exam
 
 === include: repo:evergreen/spring_registration.djot
 hidden: false
