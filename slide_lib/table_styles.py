@@ -11,11 +11,12 @@ import yaml
 import slide_lib.djot_errors
 import slide_lib.native_model
 import slide_lib.table_formatting
+import slide_lib.layout_primitives
 import slide_lib.presentation_theme
 
 
 SIDES = ("top", "right", "bottom", "left")
-AUTHOR_PROPERTIES = frozenset({"background-color", "text-align", "vertical-align", "border", "padding"} |
+AUTHOR_PROPERTIES = frozenset({"background-color", "text-align", "vertical-align", "border", "padding", "font-size"} |
 	{f"{kind}-{side}" for kind in ("border", "padding") for side in SIDES})
 REGIONS = ("numeric", "row-header", "header", "total", "matrix-diagonal", "matrix-unused")
 _NUMERIC = re.compile(r"[-+\u2013\u2212]?(?:[0-9][0-9,]*(?:\.[0-9]+)?|\.[0-9]+)%?")
@@ -110,6 +111,11 @@ def parse_overrides(properties: dict, location: slide_lib.native_model.SourceLoc
 			if value not in ("normal", "bold"):
 				_fail(location, "font-weight requires normal or bold")
 			values["bold"] = value == "bold"
+		elif name == "font-size":
+			size = _points(value, location, name)
+			if size < slide_lib.layout_primitives.MIN_SERIALIZABLE_FONT_SIZE_PT:
+				_fail(location, "font-size requires at least 1pt")
+			values["font_size_pt"] = size
 		elif name in ("text-align", "vertical-align"):
 			options = ("left", "center", "right") if name == "text-align" else ("top", "middle", "bottom")
 			if value not in options:

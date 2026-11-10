@@ -137,6 +137,7 @@ def test_ambiguous_matrix_axes_request_explicit_formatting(tmp_path: pathlib.Pat
 	'border="1pt solid unknown"', 'padding="1pt 2pt 3pt 4pt 5pt"',
 	'padding="-1pt"', 'padding-left=auto', 'vertical-align=baseline',
 	'border=none border=none', 'background-color=red',
+	'font-size=0pt', 'font-size=0.5pt', 'font-size=24px',
 ))
 def test_invalid_native_formatting_is_source_located(tmp_path: pathlib.Path, attributes: str) -> None:
 	"""Reject unsupported values before native measurement or export."""

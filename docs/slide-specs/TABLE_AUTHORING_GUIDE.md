@@ -137,6 +137,11 @@ neighboring cells cannot subdivide that side into different appearances.
 Use `colspan` in a header as well as in a total row. Explicit `text-align` overrides the preset or
 numeric default for one cell; choose `left`, `center`, or `right`.
 
+Use a whole-cell `font-size` override when a key value needs larger type, for example
+`[*13*]{font-size=36pt text-align=center color=#007A00}`. Sizes use points and must be at least
+`1pt`. Column widths and row heights include the requested size; other cells keep their normal
+fitted type. Pair a value's color with the category or syndrome it identifies.
+
 ```djot
 {table-style=standard column-widths="2,1.5,2"}
 | [Observed Counts]{colspan=2 text-align=left} | [Classification]{text-align=right} |

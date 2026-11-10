@@ -260,19 +260,22 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 		projected = []
 		for (column, cell), appearance in zip(
 				slide_lib.native_model.table_cell_positions(cells), formatting):
+			cell_size = appearance.font_size_pt if appearance.font_size_pt is not None else size
+			cell_typography = dataclasses.replace(typography, start_size_pt=cell_size,
+				selected_size_pt=cell_size, floor_size_pt=min(theme.body_floor_size_pt, cell_size))
 			width = slide_lib.layout_table_measurement.table_cell_text_width(
 				sum(measurements.column_widths[column:column + cell.column_span]), appearance, theme)
 			properties = slide_lib.layout_measurement.paragraph_properties(
-				cell.inlines, size, width, theme, terminal=True, bold=appearance.bold, session=active)
+				cell.inlines, cell_size, width, theme, terminal=True, bold=appearance.bold, session=active)
 			alignment = {"left": slide_lib.layout_primitives.HorizontalAlignment.START,
 				"center": slide_lib.layout_primitives.HorizontalAlignment.CENTER,
 				"right": slide_lib.layout_primitives.HorizontalAlignment.END}[appearance.text_alignment]
 			properties = dataclasses.replace(properties, horizontal_alignment=alignment)
 			paragraph = slide_lib.layout_content.TextParagraph(_fragment_runs(
 				resolved_runs(cell.inlines, appearance.text_color,
-					theme.accent_color, appearance.bold), size, width, theme, active),
-				typography, properties, measured_height=slide_lib.layout_measurement.paragraph_height(
-					cell.inlines, size, width, theme, bold=appearance.bold, session=active))
+					theme.accent_color, appearance.bold), cell_size, width, theme, active),
+				cell_typography, properties, measured_height=slide_lib.layout_measurement.paragraph_height(
+					cell.inlines, cell_size, width, theme, bold=appearance.bold, session=active))
 			projected.append(slide_lib.layout_content.TableCell((paragraph,),
 				slide_lib.layout_table_measurement.formatting_padding(appearance, theme),
 				slide_lib.layout_primitives.VerticalAlignment(appearance.vertical_alignment),

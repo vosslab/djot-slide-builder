@@ -13,6 +13,24 @@ import slide_lib.presentation_theme
 import layout_test_helpers
 
 
+def test_cell_font_size_controls_native_text_and_measured_table_geometry(tmp_path: pathlib.Path) -> None:
+	"""An enlarged cell stays editable and gets enough column width and row height."""
+	prefix = '=== layout: one-panel\n\n@body\n\n| ID | Name |\n| --- | --- |\n'
+	plain = prefix + '| 123456789 | Syndrome |\n'
+	enlarged = prefix + '| [*123456789*]{font-size=36pt text-align=center} | Syndrome |\n'
+	result = layout_test_helpers.compile_source(tmp_path, plain + '\n' + enlarged)
+	tables = [next(item.content for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.TableContent)) for slide in result.plan.slides]
+	paragraph = tables[1].body_rows[0].cells[0].paragraphs[0]
+	assert paragraph.typography.selected_size_pt == 36
+	assert paragraph.properties.horizontal_alignment is slide_lib.layout_primitives.HorizontalAlignment.CENTER
+	assert all(run.style.bold for run in paragraph.inlines)
+	assert tables[1].row_heights[1] > tables[0].row_heights[1]
+	assert tables[1].column_widths[0] > tables[0].column_widths[0]
+	assert tables[1].body_rows[0].cells[1].paragraphs[0].typography.selected_size_pt == \
+		tables[0].body_rows[0].cells[1].paragraphs[0].typography.selected_size_pt
+
+
 def test_authored_table_proportions_stay_fixed_when_cell_text_changes(tmp_path: pathlib.Path) -> None:
 	"""Question and answer tables keep the same column boundaries during a reveal sequence."""
 	slides = []

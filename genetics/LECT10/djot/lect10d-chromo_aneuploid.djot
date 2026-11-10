@@ -378,9 +378,9 @@ Parent identified; meiotic stage *undetermined*
 {table-style=comparison}
 | Extra Chromosome | Syndrome | Examples of Effects |
 | --- | --- | --- |
-| 13 | [*Patau*]{color=#007A00} | Brain and heart defects; cleft lip/palate |
-| 18 | [*Edwards*]{color=#935D00} | Low birthweight; organ defects; clenched fists |
-| 21 | [*Down*]{color=#003FFF} | Developmental delay; variable health effects |
+| [*13*]{color=#007A00 font-size=36pt text-align=center} | [*Patau*]{color=#007A00} | Brain and heart defects; cleft lip/palate |
+| [*18*]{color=#935D00 font-size=36pt text-align=center} | [*Edwards*]{color=#935D00} | Low birthweight; organ defects; clenched fists |
+| [*21*]{color=#003FFF font-size=36pt text-align=center} | [*Down*]{color=#003FFF} | Developmental delay; variable health effects |
 
 - Trisomy *13 and 18*: often fatal early in life
 - Trisomy *21*: survival into adulthood common

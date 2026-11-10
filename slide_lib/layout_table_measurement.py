@@ -81,8 +81,9 @@ def table_measurements(table: slide_lib.native_model.Table, size_pt: float, widt
 				slide_lib.native_model.table_cell_positions(row), formatting):
 			insets = formatting_insets(appearance, theme)
 			usable = sum(column_widths[column:column + cell.column_span]) - insets.left - insets.right
+			cell_size = appearance.font_size_pt if appearance.font_size_pt is not None else size_pt
 			height = slide_lib.layout_measurement.paragraph_height(
-				cell.inlines, size_pt, usable, theme, bold=appearance.bold, session=active) \
+				cell.inlines, cell_size, usable, theme, bold=appearance.bold, session=active) \
 				if usable > 0 else math.inf
 			heights.append(height + insets.top + insets.bottom)
 		row_heights.append(max(heights))
@@ -100,7 +101,8 @@ def _table_column_bounds(tables: tuple[slide_lib.native_model.Table, ...], size_
 		for row, formatting in zip(rows, session.resolved_table(table).cells):
 			for (column, cell), appearance in zip(
 					slide_lib.native_model.table_cell_positions(row), formatting):
-				low, high = _table_cell_widths(cell.inlines, size_pt, session, appearance.bold)
+				cell_size = appearance.font_size_pt if appearance.font_size_pt is not None else size_pt
+				low, high = _table_cell_widths(cell.inlines, cell_size, session, appearance.bold)
 				insets = formatting_insets(appearance, session.theme)
 				low += insets.left + insets.right
 				high += insets.left + insets.right

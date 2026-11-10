@@ -637,6 +637,7 @@ whole-cell wrapper to override one cell:
 | `background-color` | Six-digit `#RRGGBB` |
 | `text-align` | `left`, `center`, `right` |
 | `vertical-align` | `top`, `middle`, `bottom` |
+| `font-size` | Finite point value of at least `1pt`, such as `36pt` |
 | `border`, `border-top`, `border-right`, `border-bottom`, `border-left` | `none` or `Npt solid\|dashed\|dotted COLOR` |
 | `padding` | One to four nonnegative finite point values |
 | `padding-top`, `padding-right`, `padding-bottom`, `padding-left` | One nonnegative finite point value |

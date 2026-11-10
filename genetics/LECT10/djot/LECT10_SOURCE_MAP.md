@@ -15,11 +15,12 @@ The full original/current comparison, local repairs, and restored agenda are rec
 The historical bridges below predate the latest topic dividers and question-layout repairs.
 Use the November 10 review for current page references. The continuation on chromosome
 rearrangements is December 1; November 17 covers gene trees/population genetics and movie night.
-Pages A5-8 present the four movie choices in `movie-panel`; A9 recaps their titles and posters
+The approved opening order is agenda, icebreaker, Next Week, quiz schedule/vote, then movie
+choices/vote. Routine announcements follow. Pages A12-15 present the four movie choices in `movie-panel`; A16 recaps their titles and posters
 for the vote. Their wording and poster bytes come from the supplied movie-choice ODP. The five
-inserted pages move the existing contact slides to A16-17. See
+inserted pages place the existing contact slides at A22-23. See
 [LECT10_REVIEW.md](LECT10_REVIEW.md#november-10-movie-choices).
-Pages D41 and D44 use `question-ask` for the existing questions to ponder. A10 remains an
+Pages D41 and D44 use `question-ask` for the existing questions to ponder. A3 remains an
 icebreaker using the separate `prompt` layout with required examples; counts are unchanged.
 D26 restores the original D39 question's full-width choices, with shorter wording and counts
 out of four gametes. Its answer remains C with the native reveal.

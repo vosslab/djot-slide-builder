@@ -30,6 +30,7 @@ class CellOverrides:
 	padding_right_pt: float | None = None
 	padding_bottom_pt: float | None = None
 	padding_left_pt: float | None = None
+	font_size_pt: float | None = None
 
 
 @dataclasses.dataclass(frozen=True)
@@ -49,3 +50,4 @@ class CellFormatting:
 	padding_right_pt: float
 	padding_bottom_pt: float
 	padding_left_pt: float
+	font_size_pt: float | None = None

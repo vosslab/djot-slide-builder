@@ -307,6 +307,14 @@
 
 ### Fixes and Maintenance
 
+- Put Genetics 10A's icebreaker before the lookahead, then group the quiz schedule/vote and
+  movie choices/vote ahead of routine announcements. Preserve every existing slide block.
+  Enlarge D30's chromosome numbers to bold centered 36 pt and match their syndrome colors;
+  leave D31's two-image layout intact. Add native table/cell `font-size` overrides with validated
+  point values and matching width/height measurements. Keep the lecture checks temporary and
+  protect the shared sizing behavior with one regression plus existing invalid-input cases.
+  Separate earlier conversion history from the current Lecture 10 review.
+
 - Correct the overreaching Lecture 10 voice pass: restore established instructor wording and
   emphasis on 39 B-D pages, plus 10A's shared announcements, policies, and homework instructions.
   Restore the full-width contact prose and plain anonymous-message instructions. Clarify that

@@ -27,6 +27,22 @@ color-theme: genetics
   - Prenatal Testing
 - Closing Remarks
 
+=== layout: prompt
+
+# Icebreaker
+
+@prompt
+
+Is a hot dog a sandwich?\
+Is ice cream a soup?
+
+@examples
+
+State your name, major, and post-grad plans.
+
+- Pick one and defend your rule: ingredients, shape, temperature, or how it is eaten.
+- Examples: "A sandwich needs two slices of bread." "Ice cream becomes soup when it melts!"
+
 === layout: one-panel
 
 # Next Week: Nov 17, 2026
@@ -43,6 +59,79 @@ color-theme: genetics
 @citation
 
 https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+
+=== layout: subsection
+
+# Exam/Quiz
+
+=== layout: one-panel
+
+# Current Exam and Quiz Schedule
+
+@body
+
+- [Quiz 1: Sept 22]{color=#AAAAAA}
+- [Quiz 2: Oct 06]{color=#AAAAAA}
+- [Midterm: Oct 13]{color=#AAAAAA}
+- [Quiz 3: Nov 03]{color=#AAAAAA}
+- [Quiz 4: Dec 01]{color=#000000}
+- [Quiz 5: Dec 08]{color=#000000}
+- [Final exam: Dec 15]{color=#000000}
+
+=== layout: subsection
+
+# Quiz 5 Vote
+
+=== layout: two-panels
+
+# Two Proposed Schedules
+
+@left
+
+## [Option 1: Keep Quiz 5]{color=#24578F}
+
+- *Dec 1*: Group Quiz 4
+- *Dec 8*: [*Group Quiz 5*]{color=#24578F}
+- *Dec 15*: Final Exam
+
+@right
+
+## [Option 2: Drop Quiz 5]{color=#935D00}
+
+- *Dec 1*: Group Quiz 4
+- *Dec 8*: [*No Quiz 5*]{color=#935D00}
+- *Dec 15*: Final Exam
+
+=== layout: two-panels
+
+# Keeping Quiz 5: The Tradeoff
+
+@left
+
+## [Benefits]{color=#24578F}
+
+- Group quizzes: easier to do well
+  - Possible *grade boost*
+- [*Final Exam practice*]{color=#24578F}
+
+@right
+
+## [Cost]{color=#935D00}
+
+- Study for *another quiz*
+
+=== layout: one-panel
+
+# Vote: Which Schedule Do You Prefer?
+
+@body
+
+- [*1. Keep Quiz 5*]{color=#24578F}
+  - Group Q4: Dec 1; Group Q5: Dec 8; Final Exam: Dec 15
+- [*2. Drop Quiz 5*]{color=#935D00}
+  - Group Q4: Dec 1; no Q5; Final Exam: Dec 15
+
+*Vote for option 1 or option 2.*
 
 === layout: one-panel
 
@@ -171,22 +260,6 @@ Intermittent shower chances will linger through at least the middle of the week 
 
 NWS Chicago, retrieved Nov 01, 2026: https://www.weather.gov/lot/weatherstory
 
-=== layout: prompt
-
-# Icebreaker
-
-@prompt
-
-Is a hot dog a sandwich?\
-Is ice cream a soup?
-
-@examples
-
-State your name, major, and post-grad plans.
-
-- Pick one and defend your rule: ingredients, shape, temperature, or how it is eaten.
-- Examples: "A sandwich needs two slices of bread." "Ice cream becomes soup when it melts!"
-
 === include: repo:evergreen/youtube_channel.djot
 
 === layout: big-image
@@ -202,79 +275,6 @@ Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtu
 Play the Game: https://vosslab.github.io/bad-cell-day/
 
 === include: repo:genetics/evergreen/course_information.djot
-
-=== layout: subsection
-
-# Exam/Quiz
-
-=== layout: one-panel
-
-# Current Exam and Quiz Schedule
-
-@body
-
-- [Quiz 1: Sept 22]{color=#AAAAAA}
-- [Quiz 2: Oct 06]{color=#AAAAAA}
-- [Midterm: Oct 13]{color=#AAAAAA}
-- [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Dec 01]{color=#000000}
-- [Quiz 5: Dec 08]{color=#000000}
-- [Final exam: Dec 15]{color=#000000}
-
-=== layout: subsection
-
-# Quiz 5 Vote
-
-=== layout: two-panels
-
-# Two Proposed Schedules
-
-@left
-
-## [Option 1: Keep Quiz 5]{color=#24578F}
-
-- *Dec 1*: Group Quiz 4
-- *Dec 8*: [*Group Quiz 5*]{color=#24578F}
-- *Dec 15*: Final Exam
-
-@right
-
-## [Option 2: Drop Quiz 5]{color=#935D00}
-
-- *Dec 1*: Group Quiz 4
-- *Dec 8*: [*No Quiz 5*]{color=#935D00}
-- *Dec 15*: Final Exam
-
-=== layout: two-panels
-
-# Keeping Quiz 5: The Tradeoff
-
-@left
-
-## [Benefits]{color=#24578F}
-
-- Group quizzes: easier to do well
-  - Possible *grade boost*
-- [*Final Exam practice*]{color=#24578F}
-
-@right
-
-## [Cost]{color=#935D00}
-
-- Study for *another quiz*
-
-=== layout: one-panel
-
-# Vote: Which Schedule Do You Prefer?
-
-@body
-
-- [*1. Keep Quiz 5*]{color=#24578F}
-  - Group Q4: Dec 1; Group Q5: Dec 8; Final Exam: Dec 15
-- [*2. Drop Quiz 5*]{color=#935D00}
-  - Group Q4: Dec 1; no Q5; Final Exam: Dec 15
-
-*Vote for option 1 or option 2.*
 
 === include: repo:genetics/evergreen/assessment_policies.djot
 

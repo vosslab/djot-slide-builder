@@ -481,7 +481,7 @@ def parse_table_cell(path: pathlib.Path, line: int, source: str) -> slide_lib.na
 		if source.startswith("[") else None
 	match = _ATTRIBUTE_LINE.fullmatch(source[end + 1:]) if end is not None else None
 	if match is None:
-		fail(path, line, "background-color, colspan, text-align, border, padding, and vertical-align "
+		fail(path, line, "background-color, colspan, text-align, border, padding, font-size, and vertical-align "
 			"require one whole-cell [content]{attributes} wrapper")
 	attributes = parse_attribute_tokens(path, line, match.group("body"))
 	values = {}
@@ -491,7 +491,7 @@ def parse_table_cell(path: pathlib.Path, line: int, source: str) -> slide_lib.na
 				fail(path, line, f"{item.name} requires a unique whole-cell attribute")
 			values[item.name] = item.value
 	if not values:
-		fail(path, line, "background-color, colspan, text-align, border, padding, and vertical-align "
+		fail(path, line, "background-color, colspan, text-align, border, padding, font-size, and vertical-align "
 			"require one whole-cell [content]{attributes} wrapper")
 	span = values.pop("colspan", "1")
 	if span is None or re.fullmatch(r"[1-9][0-9]*", span) is None:
