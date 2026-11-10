@@ -12,7 +12,7 @@ color-theme: genetics
 
 === layout: section
 
-# Group Quiz 5
+# Group Quiz 5 (if retained)
 
 === layout: one-panel
 
@@ -20,11 +20,12 @@ color-theme: genetics
 
 @body
 
-- Group Quiz 5
-- Ice Breaker and Announcements
-- Chromosome Inversions
-- Chromosome Translocations
-- Meiosis with Translocated Chromosomes
+- Group Quiz 5 (if retained)
+- Icebreaker and Announcements
+- Chapter 9:
+  - Inversions
+  - Translocations
+  - Meiosis Translocations
 - Closing Remarks
 
 === layout: one-panel
@@ -96,7 +97,7 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Nov 17]{color=#AAAAAA}
+- [Quiz 4: Dec 01]{color=#AAAAAA}
 - [Quiz 5: Dec 08]{color=red}
 - [Final exam: Dec 15]{color=#990000}
 

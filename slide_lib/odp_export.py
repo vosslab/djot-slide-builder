@@ -40,7 +40,6 @@ _ROLE_COLORS = {
 	slide_lib.layout_primitives.StyleRole.ANSWER: "7B1E2B",
 	slide_lib.layout_primitives.StyleRole.PANEL: "F2F3F5",
 	slide_lib.layout_primitives.StyleRole.DECORATION: "FFFFFF",
-	slide_lib.layout_primitives.StyleRole.SUBSECTION_INK: "000000",
 }
 
 for _prefix, _namespace in (("office", OFFICE_NS), ("draw", DRAW_NS),
@@ -512,9 +511,18 @@ def _clip_value(item: slide_lib.layout_model.LayoutObject,
 def _color_for(role: slide_lib.layout_primitives.StyleRole,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> str:
 	"""Return the shared resolved palette color for a semantic role."""
-	if role in (slide_lib.layout_primitives.StyleRole.SUBSECTION,
-			slide_lib.layout_primitives.StyleRole.ACCENT_TINT):
-		# A pale course-derived surface keeps the hue without competing with dark text.
+	if role in (slide_lib.layout_primitives.StyleRole.SECTION,
+			slide_lib.layout_primitives.StyleRole.SUBSECTION,
+			slide_lib.layout_primitives.StyleRole.SUBSUBSECTION,
+			slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT):
+		palette = slide_lib.presentation_theme.course_color_theme(theme.color_theme_name)
+		return {
+			slide_lib.layout_primitives.StyleRole.SECTION: palette.dark_color,
+			slide_lib.layout_primitives.StyleRole.SUBSECTION: palette.medium_color,
+			slide_lib.layout_primitives.StyleRole.SUBSUBSECTION: palette.light_color,
+			slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT: palette.ultra_light_color,
+		}[role]
+	if role is slide_lib.layout_primitives.StyleRole.ACCENT_TINT:
 		channels = [int(theme.accent_color[index:index + 2], 16) for index in (0, 2, 4)]
 		tint = "".join(f"{round(channel * 0.14 + 255 * 0.86):02X}" for channel in channels)
 		return tint

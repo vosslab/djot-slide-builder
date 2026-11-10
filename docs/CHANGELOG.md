@@ -2,11 +2,101 @@
 
 ### Additions and New Features
 
-- Give subsections a pale course tint with black titles, subtitles, and symmetric full-width
-  stripes. Preserve saturated section cards and their rounded white frames. Measured background
-  separation increases from 1.31-1.39:1 to 4.49-5.94:1 across all four course themes; black ink
-  on the subsection tints exceeds 16.68:1. Update the existing divider regression to protect
-  background separation above 3:1 and readable subsection ink.
+- Add `movie-panel` with editable text on the left and a narrower 2:3 poster slot on the right.
+  Import the four supplied movie choices into Genetics 10A with their ODP wording and original
+  posters, followed by a vote recap showing all titles/posters. Reuse the existing layout compiler
+  and image containment; add one layout-contract regression and extend the existing native-layout
+  acceptance specimen. Keep movie-specific import and rendered verification temporary.
+  All 5,880 base tests pass; source/export checks preserve the four ODP text sets and poster bytes.
+  Visually review the movie/vote pages and their surrounding 10A context. The complete descriptions
+  fit at 15.5-16.75 pt, below the ordinary body target.
+
+- Review Genetics Lecture 10's visible text for the instructor's voice, short teaching phrases,
+  and meaningful color. Inspect 112 text-rich or changed pages; revise wording or emphasis on
+  96 pages while preserving problem assumptions, all eight answers/reveals, and figure references.
+  Rebuild all four decks and check the exports. Improve the newborn reference table's widths
+  and announcement text fit; keep lecture-specific verification temporary.
+
+- Improve Genetics 10D slide 26 readability with a shorter meiosis-II question and parallel
+  choices stated as counts out of four gametes. The existing layout now fits four full-width,
+  single-line choices at 28 pt above the answer reveal. Rebuild and visually verify the PDF;
+  keep this slide-specific check temporary.
+
+- Distinguish the sparingly used `question-ask` card from the icebreaker `prompt` layout.
+  Put one editable centered question in the reference's ultra light hexagon with dark corners;
+  keep icebreaker prompts and required examples on a pale rounded card. Apply `question-ask` to
+  Genetics 04H slide 5, 06D slide 43, and the two existing question-only Lecture 10D dividers.
+  Move the three question-layout recipes into a dedicated authoring guide so the main syntax
+  reference has room to grow. Review all four course proofs and the affected classroom cards;
+  all 5,878 base tests pass. Keep rendered implementation proof under `_temp/`.
+
+- Implement the instructor's section-header ODP/PDF reference with native editable master shapes:
+  framed dark sections, light center bands with medium edges for subsections, dark inset panels
+  with light edges for the new `subsubsection`, and ultra light hexagons with dark corners for
+  `question-ask`. Preserve measured course hues/saturations, add ultra light colors, lighten the header
+  gradient from medium to white, and use ultra light closer text on dark backgrounds. Update the
+  existing behavior/export checks and authoring guidance; keep reference-specific proofs temporary.
+  Explicit dark list markers and bundled marker fonts preserve readable examples over the pale
+  prompt center. All 44 measured color pairs pass; the minimum text contrast is 6.81:1.
+  Clarify that editable text is required and decorative shapes are an implementation choice.
+
+- Revise Genetics Lecture 09-15 agendas using the instructor's original short deck titles and
+  topic labels, preserving chapter groupings and class activities. Add undated agenda-only sources
+  for Lectures 14 and 15,
+  correct remaining November 17 Quiz 4 references to December 1, and keep Quiz 5 conditional on
+  the class vote. Document brief agenda wording and calendar checks in the announcement-deck guide.
+
+- Restore Lecture 10's agenda with chapter grouping and brief topic labels from the original,
+  including karyotypes, chromosome nomenclature, aneuploidy, and polyploidy. Include the movie choice
+  and Quiz 5 vote; check the rendered agenda against the original and current content decks.
+
+- Compare all 149 original Lecture 10 pages with all 184 current visible pages. Record the
+  improvement in teaching structure, questions, and explanations alongside remaining dense
+  reference figures. Repair answer leakage in CFTR/polyploidy questions, restore the original
+  CFTR band-location illustration, enlarge ultrasound and screening visuals, replace graph-
+  inconsistent risk prose with interpretation prompts, and correct the chromosome-2 centromere
+  claim against primary evidence. Refresh the current review and source-map counts; keep the
+  lecture-specific verification as temporary evidence.
+
+- Restore the original three-stage nondisjunction comparison in Lecture 10D slides 21-23.
+  The replacement lineages omitted original segregation details, and the products replacement
+  rendered blank in LibreOffice. Rebuild the current 65-slide ODP/PDF and visually verify both
+  branches and all eight illustrated gametes. Review the two remaining prenatal replacement
+  figures in 10D and retain their complete anatomy/workflow diagrams.
+
+- Add the native editable `prompt` layout for icebreakers and open discussions. Required
+  question/examples slots supply automatic red emphasis and dark supporting text on a pale card.
+  Migrate Lecture 10's food-classification icebreaker and all 14 catalog entries to plain-text
+  slots. Keep two behavior tests for default styling/readability and required supporting examples.
+
+- Make Lecture 10B-D hierarchy consistent: retain broad opening and Summary sections, use
+  subsections for teaching topics, and split the long chromosome-shape, address, and trisomy
+  runs at existing conceptual boundaries. Clarify the roughly ten-slide divider target in the
+  teaching guide and conversion checklist. Use automatic answer colors throughout Lecture 10
+  by removing three local answer-block overrides.
+
+- Complete the Lecture 10 question-layout audit: give Recognizing Homologs and Follow the X
+  Chromosome the native question/answer layout and answer popup, retaining their fuller follow-up
+  explanations. Label the homolog question select-all-that-apply. All eight choice-based problems
+  now use the dedicated layout; clarify this requirement in the teaching guidance.
+
+- Replace Lecture 10's unfinished pop-culture fallback with the instructor's hot-dog/sandwich
+  and ice-cream/soup classification debate, with a colored prompt and dark examples and suggestions.
+  Add six varied, ready-to-use catalog options spanning debate, recognition, missing pairs,
+  directions, traditions, and movie perspectives. Compare the previous two lectures when selecting
+  prompts so premises and examples vary. Complete older entries' examples and prompt colors.
+
+- Replace nearly white subsection tints with saturated course-color divider pairs. Keep the
+  original course hue and saturation, with dark framed sections and brighter striped
+  subsections. Use the instructor's revised 2:1 minimum for all background comparisons:
+  between levels and from each to black and white. Define all three background colors for
+  each course, reserving the third for a future subsubsection layout. Every adjacent step
+  from black through the three backgrounds to white measures 2.10-2.17:1. Genetics uses
+  #1C4470 / #3177C3 / #8CB5E2; black subsection headings
+  exceed 4.5:1 and white section headings exceed 9.7:1. Update the existing native-export
+  regression and measured palette audit; ordinary accents and decorative tints retain their
+  existing colors. The initial pale treatment lost recognizable course color, while the proposed
+  simultaneous 3:1 background limits exceeded the available black-to-white range.
 
 - Integrate sixteen original pea, Four-o-clock, snapdragon, cattle, Western and ELISA SVGs
   through 60 image URLs in three sources, preserving native teaching content and original art.
@@ -216,6 +306,12 @@
   [genetics_visual_renewal_progress.md](active_plans/reports/genetics_visual_renewal_progress.md).
 
 ### Fixes and Maintenance
+
+- Correct the overreaching Lecture 10 voice pass: restore established instructor wording and
+  emphasis on 39 B-D pages, plus 10A's shared announcements, policies, and homework instructions.
+  Restore the full-width contact prose and plain anonymous-message instructions. Clarify that
+  voice edits target LLM-authored additions and that color marks meaningful distinctions.
+  Preserve the existing scientific corrections, current dates, question layouts, and reveals.
 
 - Omit the XML declaration from `write_svg()` output to avoid the observed blank LibreOffice
   imports associated with `encoding="ASCII"`. Preserve ASCII bytes, numeric character

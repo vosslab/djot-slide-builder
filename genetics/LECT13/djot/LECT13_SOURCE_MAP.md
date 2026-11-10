@@ -15,7 +15,7 @@ The review records changed visibility and dated replacements. Complete current i
 | Djot | PDF | Hidden | Title or layout |
 | --- | --- | --- | --- |
 | 1 | 1 | no | Lecture 13A / Announcements / Dr. Neil Voss / December 8, 2026 |
-| 2 | 2 | no | Group Quiz 5 |
+| 2 | 2 | no | Group Quiz 5 (if retained) |
 | 3 | 3 | no | Today's Agenda |
 | 4 | 4 | no | Next Week: Dec 15, 2026 |
 | 5 | - | yes | big-image |

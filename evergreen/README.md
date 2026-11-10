@@ -8,7 +8,12 @@ Course-specific reusable slides belong in the course's
 own `evergreen/` folder; single-lecture content and dated snapshots stay with the lecture.
 
 - [icebreakers.yaml](icebreakers.yaml): reusable icebreaker prompts and concrete examples.
-  Select explicitly and use **Icebreaker** for face-to-face classes, including Genetics.
+  Choose a fun connection to the week's content and use **Icebreaker** for face-to-face classes,
+  including Genetics. Use `layout: prompt` and copy the entry's body fragment below the title;
+  its `@prompt` and `@examples` slots inherit dark red question and dark gray supporting text inside
+  an ultra light course-color rounded card.
+  Compare the previous two lectures for variety. New options cover food classification, look-alike
+  mix-ups, missing pairs, unhelpful directions, group traditions, and movie perspectives.
   Source paths identify prompt provenance.
 - [assets/rec_reminder_image.svg](assets/rec_reminder_image.svg): reusable recording reminder.
   Its editable ODG source and PNG companion remain local and ignored by Git.

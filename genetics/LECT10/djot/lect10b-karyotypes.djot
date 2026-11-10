@@ -18,14 +18,14 @@ color-theme: genetics
 
 @body
 
-- Explain how a karyotype is prepared from condensed chromosomes.
-- Compare chromosome banding with fluorescent chromosome painting.
-- Classify chromosome shapes by centromere position.
-- Describe the origin and research importance of HeLa cells.
+- Explain [*karyotype preparation*]{color=#24578F}
+- Compare [*banding*]{color=#24578F} and [*chromosome painting*]{color=#935D00}
+- Classify chromosome shapes by [*centromere position*]{color=#24578F}
+- Connect [*HeLa cells*]{color=#24578F} with research and consent
 
 === layout: section
 
-# Welcome to Chapter 9
+# Karyotypes
 
 === layout: one-panel
 
@@ -93,7 +93,7 @@ Answer\: C
   - Traditional staining
   - Chromosome painting
 
-=== layout: section
+=== layout: subsection
 
 # Traditional Chromosome Staining
 
@@ -143,13 +143,13 @@ Answer\: C
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_008.png)
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# Your Turn: Recognizing Homologs
+@question
 
-@body
+*Your Turn: Recognizing Homologs*
 
-Two chromosome 14 homologs appear in a karyotype. What should they have in common?
+Two chromosome 14 [*homologs*]{color=#24578F}: what should they have in common? *Select all that apply.*
 
 - A. Similar length
 - B. Same centromere position
@@ -157,19 +157,23 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 - D. The same genes at corresponding locations
 - E. Always an X shape, even before DNA replication
 
+@answer
+
+A, B, C, and D.
+
 === layout: one-panel
 
-# Recognizing Homologs: Answer
+# Recognizing Homologs: Explanation
 
 @body
 
 - [*A, B, C, and D*]{color=#007A00}
-- Homologs carry the same genes; their alleles can differ
-- The X shape comes from *DNA replication*
-- Each replicated homolog has two sister chromatids
-- A homolog is still the same chromosome before replication
+- [*Homologs*]{color=#24578F}: same genes; possibly different alleles
+- [*X shape*]{color=#935D00}: after DNA replication
+- Replicated homolog: *two sister chromatids*
+- Before replication: *the same chromosome*
 
-=== layout: section
+=== layout: subsection
 
 # Chromosome Painting
 
@@ -179,9 +183,10 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 @body
 
-- Fluorescent DNA probes bind to matching chromosome sequences
-- *Fluorescence in situ hybridization (FISH)* makes those sequences visible
-- A mixture of probes can give each chromosome type a different color
+- [*DNA probes*]{color=#24578F}: binding to matching chromosome sequences
+- [*FISH*]{color=#935D00}: fluorescence in situ hybridization
+- Fluorescent labels: visible chromosome sequences
+- [*Chromosome painting*]{color=#24578F}: probe mixtures; different chromosome colors
 
 === layout: one-panel
 
@@ -252,7 +257,7 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_016.png)
 
-=== layout: section
+=== layout: subsection
 
 # Another Type of Cellular Painting\: BrainBow
 
@@ -294,7 +299,7 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_021.jpg)
 
-=== layout: section
+=== layout: subsection
 
 # Chromosome Shapes
 
@@ -336,8 +341,10 @@ Two chromosome 14 homologs appear in a karyotype. What should they have in commo
 
 @left
 
-- [*Acentric*]{color=#D40000}: no centromere; usually lost during cell division
-- [*Dicentric*]{color=#076DAD}: two centromeres; may be unstable if pulled toward opposite poles
+- [*Acentric*]{color=#D40000}: no centromere
+  - Usually lost during division
+- [*Dicentric*]{color=#076DAD}: two centromeres
+  - Opposite pulls: possible instability
 
 @top-right
 
@@ -364,7 +371,7 @@ Match each description to a term.
 | No centromere | ? |
 | Two centromeres | ? |
 
-*Metacentric, submetacentric, acrocentric, acentric, dicentric*
+[*Metacentric*]{color=#0067CC}, [*submetacentric*]{color=#C80085}, [*acrocentric*]{color=#007A00}, [*acentric*]{color=#D40000}, [*dicentric*]{color=#076DAD}
 
 === layout: one-panel
 
@@ -380,6 +387,10 @@ Match each description to a term.
 | Very short p arm and long q arm | [*Acrocentric*]{color=#007A00} |
 | No centromere | [*Acentric*]{color=#D40000} |
 | Two centromeres | [*Dicentric*]{color=#076DAD} |
+
+=== layout: subsection
+
+# Chromosome Numbers and Evolution
 
 === layout: one-panel
 
@@ -439,9 +450,13 @@ Match each description to a term.
 
 ![Lecture diagram](assets/visual_renewal/human_chromosome_2_fusion.drawn.svg)
 
-- A chromosome with two functional centromeres cannot persist for very long.
+- Two functional centromeres can make a chromosome unstable.
 - The centromere in the long arm became inactivated.
-- No obvious indication of the inactivated centromere remains.
+- DNA remnants of the ancestral centromere are still detectable.
+
+@citation
+
+https://pubmed.ncbi.nlm.nih.gov/1587535/
 
 @notes
 
@@ -462,7 +477,7 @@ Two ancestral chromosomes joined. One centromere became inactive. Two active cen
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_032.jpg)
 
-=== layout: section
+=== layout: subsection
 
 # *The Story of* *HeLa Cells*
 
@@ -534,16 +549,20 @@ https://www.cancer.gov/types/cervical/causes-risk-prevention
 
 ![Lecture diagram](assets/lect10b-karyotypes/image_036.png)
 
+=== layout: section
+
+# Summary
+
 === layout: bookend
 
 # Key Takeaways
 
 @body
 
-- Karyotypes arrange condensed chromosomes in homologous pairs.
-- Banding and fluorescent probes help identify chromosomes.
-- Centromere position distinguishes chromosome shapes.
-- HeLa cells connect chromosome variation, research, and consent.
+- [*Karyotypes*]{color=#24578F}: condensed chromosomes in homologous pairs
+- [*Banding and probes*]{color=#24578F}: chromosome identification
+- [*Centromere position*]{color=#24578F}: chromosome shapes
+- [*HeLa cells*]{color=#24578F}: chromosome variation, research, consent
 
 === layout: theend
 

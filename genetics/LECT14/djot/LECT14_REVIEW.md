@@ -7,6 +7,16 @@ Preserves 155 original content slides and 12 previously added bookends/dividers.
 
 [LECT14_SOURCE_MAP.md](LECT14_SOURCE_MAP.md) maps every original and final slide.
 
+## November 10 agenda addition
+
+Add `lect14a-agenda.djot`, a one-slide agenda using brief labels from B-E: Allele Frequencies,
+Hardy-Weinberg, Conditions for Hardy-Weinberg, and Chi-Square Test, grouped under Chapter 10.
+This is an undated agenda-only deck; the course schedule supplies no Lecture 14 teaching date.
+No full announcement deck was supplied. Rebuilt ODP/PDF, passed strict native lint, and inspected
+the agenda. The wording correction passes 213 documentation/guidance checks. Evidence:
+`_temp/genetics_agendas_09_15/`; the wording correction is verified separately in
+`_temp/genetics_agenda_voice/`. The existing B-E conversion limitations below are unchanged.
+
 ## Outputs and counts
 
 Canonical Djot and local assets are in this directory. Editable ODP and ODP-derived PDF
@@ -14,18 +24,20 @@ use the same deck stem under `output/odp/` and `output/pdf/` at the repository r
 
 | Canonical deck | Authored ODP | Hidden | PDF pages | Replacements |
 | --- | --- | --- | --- | --- |
+| lect14a-agenda | 1 | 0 | 1 | 0 |
 | lect14b-allele_freq | 31 | 0 | 31 | 6 |
 | lect14c-hardy_weinberg_1 | 64 | 0 | 64 | 24 |
 | lect14d-hardy_weinberg_conditions | 36 | 0 | 36 | 16 |
 | lect14e-hardy_weinberg_chi_square | 36 | 0 | 36 | 21 |
 
-Total: 167 authored, 0 hidden, 167 visible PDF pages.
+Total including the new agenda: 168 authored, 0 hidden, 168 visible PDF pages.
 
 ## Organization and source files
 
 Whole content decks were assigned to the two lectures; no teaching slide was split, merged,
 or reordered within a deck. Content filenames and covers now use letters B-E, reserving A
-for announcements. No announcement source or teaching date was supplied for these numbers.
+for announcements. No original announcement source or teaching date was supplied for these numbers;
+the new A source supplies only the agenda.
 Original ODP/PDF inputs and extracted assets moved with their corresponding content.
 Original input files retain identical bytes; their old filenames remain provenance below.
 Import reports retain their original input labels. Includes and live asset references use
@@ -329,7 +341,7 @@ replacement outcomes. N/A and unperformed checks are annotated explicitly.
 Use [../../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](../../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) for the announcement order,
 section hierarchy, seasonal groups, and signup/profile deadlines.
 
-- [ ] N/A: no announcement source supplied. Replace the copied agenda with this lecture's topics and activities; compare each agenda
+- [x] Add an undated agenda-only source with this lecture's topics and activities; compare each agenda
   item with the content decks and current course schedule.
 - [ ] N/A: no announcement source supplied. Check every assessment and assignment date against the schedule/spreadsheet. Update
   relative wording, deadline/status colors, and expired assignment entries for the lecture date.

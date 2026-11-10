@@ -1,5 +1,21 @@
 # Design decisions
 
+### Open prompts own their emphasis
+
+**Decision.** Use the `prompt` layout's required question and examples slots for icebreakers and
+open discussions. Render the question prominently in dark red and its supporting paragraphs/lists
+in dark gray, inside an ultra light course-color rounded card. Keep both visible by
+default and brief participation cues with the examples.
+
+**Why.** A reusable layout preserves the question/examples hierarchy while authors write plain text.
+
+**Consequence.** The shared validator and direct compiler require a nonempty question and examples.
+The prompt catalog stores complete slot fragments; weekly selection varies recent premises and
+example answers.
+
+**Owner.** [slide-specs/QUESTION_LAYOUTS.md](slide-specs/QUESTION_LAYOUTS.md#open-prompts-and-icebreakers)
+and [../slide_lib/layout_builders.py](../slide_lib/layout_builders.py).
+
 ### Focused importer and measurement modules
 
 **Decision.** Separate source regions, table planning, ODP media validation, ODF table extraction,
@@ -503,19 +519,44 @@ with no red-on-red dates or legacy midnight cutoff fragments.
 
 ### Chapter and topic divider hierarchy
 
-**Decision.** `section` remains the saturated course-color chapter divider with white text and a
-rounded frame. `subsection` uses the existing pale course tint, a smaller centered black title,
-and black full-width top/bottom stripes.
+**Decision.** Follow the instructor's November 10 section-header appearance reference and retain
+editable slide text. Decorative shapes are an implementation choice; the current exporter uses
+native master shapes and slide-owned text. `section` uses dark color, white text, and a rounded frame.
+`subsection` uses a light full-width center band with medium top/bottom and black text.
+`subsubsection` uses a dark rectangular center with light edges and white text. Course palettes
+provide `dark_color`, `medium_color`, `light_color`, and `ultra_light_color`; ordinary accents
+remain separate. Cover cards use ultra light, the top gradient starts at medium, and THE END
+uses ultra light type on dark color.
 
 **Why.** A shared transition treatment flattened the teaching hierarchy between chapters and their
 individual talking points.
 
-**Consequence.** Both retain their native editable layout identity. Background contrast exceeds
-3:1 between the two divider levels across course themes. Black subsection text and stripes exceed
-the 5.5:1 house readability target. Shape, type size, and symmetric stripes reinforce the hierarchy.
+**Consequence.** All three dividers retain distinct layouts with editable text. The four course
+palettes preserve the accent hue/saturation within 8-bit rounding. Every adjacent step from
+black through dark, medium, and light to white exceeds 2:1, aiming near `21**(1/4)` (2.14:1).
+Ultra light lies between light and white. All divider, closer, and prompt text pairs meet the
+5.5:1 house target. The supplied reference's guessed colors serve as role illustrations.
 
-**Owner.** `slide_lib/layout_specialty_builders.py`, `slide_lib/odp_export.py`, and
-`slide_lib/layout_primitives.py`.
+**Owner.** `slide_lib/layout_specialty_builders.py`, `slide_lib/odp_export.py`,
+`slide_lib/layout_primitives.py`, and `slide_lib/presentation_theme.py`.
+
+### Questions to ponder and icebreakers
+
+**Decision.** Use `question-ask` sparingly for one prominent centered question, like Genetics
+Lecture 04H slide 5 and Lecture 06D slide 43. Its ultra light hexagon, dark corners, and dark red
+text follow the instructor's section-header appearance reference. Icebreakers use the separate
+`prompt` layout: a colored prompt with required dark supporting examples on a pale rounded card.
+Keep text editable in both layouts.
+
+**Why.** A question-to-ponder card creates an occasional pause in the lesson. An icebreaker
+introduces a participation activity with examples and suggestions.
+
+**Consequence.** Author question cards with one H1 heading and icebreakers with `@prompt` and
+`@examples`. Apply the question-card layout at the instructor's identified examples and existing
+Lecture 10 question-only dividers; preserve their wording and position.
+
+**Owner.** `slide_lib/layout_registry.py`, `slide_lib/layout_specialty_builders.py`,
+`slide_lib/layout_builders.py`, and `slide_lib/layout_validation.py`.
 
 The native-ODP decision below supersedes earlier decisions that describe a maintained PPTX reader,
 writer, animation adapter, temporary conversion, or sibling artifact. Current operation builds one

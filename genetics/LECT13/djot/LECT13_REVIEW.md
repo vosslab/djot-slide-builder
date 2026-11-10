@@ -4,6 +4,17 @@ Reviewed draft, November 9, 2026. 4 canonical Djot decks produce editable ODP
 and LibreOffice-derived PDF. 70 explicit `@replaceme` slides retain difficult conversions.
 Those slides need reconstruction before classroom use.
 
+## November 10 agenda wording
+
+Use short Chapter 9 labels from the original agenda and deck titles: Inversions, Translocations,
+and Meiosis Translocations. Mark the Quiz 5
+opening and agenda item conditional on the class vote; correct the past Quiz 4 date to December 1.
+A retains 55 authored / 18 hidden / 37 PDF pages; its agenda is PDF 3. Rebuilt ODP/PDF, passed
+strict native lint, and inspected the agenda and changed logistics. The wording correction passes
+213 documentation/guidance checks. Evidence: `_temp/genetics_agendas_09_15/`. Existing weather/registration
+capacity advisories remain. The wording correction is verified separately in
+`_temp/genetics_agenda_voice/`. The content/date mismatch below remains a scheduling task.
+
 ## Outputs and counts
 
 Editable sources are in this directory. Generated artifacts use the same stem under

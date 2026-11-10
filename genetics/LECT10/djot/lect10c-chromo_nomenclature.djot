@@ -18,10 +18,10 @@ color-theme: genetics
 
 @body
 
-- Identify the p and q arms of a chromosome
-- Decode chromosome, arm, region, band, and subband
-- Compare band positions on the same chromosome arm
-- Read a simple chromosome-number notation
+- Identify [*p and q arms*]{color=#24578F}
+- Decode a [*chromosome address*]{color=#24578F}
+- Compare band positions on the same arm
+- Read [*karyotype notation*]{color=#24578F}
 
 === layout: definitions
 
@@ -29,10 +29,10 @@ color-theme: genetics
 
 @body
 
-- [*Centromere*]{color=#24578F}: the constricted region separating the two arms
-- [*p Arm*]{color=#24578F}: the short arm; p = petite
-- [*q Arm*]{color=#24578F}: the long arm; q = not p
-- [*Cytogenetic Address*]{color=#24578F}: chromosome, arm, and a stained band location
+- [*Centromere*]{color=#24578F}: constriction between the arms
+- [*p Arm*]{color=#24578F}: short; p = petite
+- [*q Arm*]{color=#B74300}: long; q = not p
+- [*Cytogenetic Address*]{color=#24578F}: chromosome, arm, band location
 
 === layout: section
 
@@ -92,13 +92,17 @@ color-theme: genetics
 
 ![Lecture diagram](assets/lect10c-chromo_nomenclature/image_010.png)
 
+=== layout: subsection
+
+# Reading Chromosome Addresses
+
 === layout: one-panel
 
 # Read an Address
 
 @body
 
-A gene has a chromosome address, like a book has a library address.
+[*Gene address*]{color=#24578F}: like a book's library address
 
 {table-style=comparison text-align=left}
 | Part | What It Names | Example |
@@ -109,23 +113,19 @@ A gene has a chromosome address, like a book has a library address.
 | Band | Which band in that region? | 1 |
 | Subband | Which part of that band? | .2 |
 
-=== layout: two-panels
+=== layout: one-panel
 
 # Try It: The CFTR Address
 
-@left
+@body
 
-*CFTR*: *7q31.2*
+[*CFTR*: *7q31.2*]{color=#24578F}
 
 - Which chromosome?
 - Which arm?
 - Which region?
 - Which band?
 - Which subband?
-
-@right
-
-![CFTR chromosome address hierarchy: 7q31.2](assets/visual_renewal/cftr_address.drawn.svg)
 
 === layout: two-panels
 
@@ -156,7 +156,7 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @body
 
-![CFTR chromosome address hierarchy: 7q31.2](assets/visual_renewal/cftr_address.drawn.svg)
+![Original chromosome 7 band-location illustration for CFTR at 7q31.2](assets/lect10c-chromo_nomenclature/image_012.png)
 
 === layout: one-panel
 
@@ -164,16 +164,16 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @body
 
-Band numbers increase as we move *away from the centromere*.
+[*Higher band numbers*]{color=#24578F}: farther from the centromere
 
 {table-style=comparison}
 | Same Arm | Nearer the Centromere | Farther from the Centromere |
 | --- | --- | --- |
-| Chromosome 14, q arm | 14q21 | 14q22 |
+| Chromosome 14, q arm | [*14q21*]{color=#24578F} | [*14q22*]{color=#B74300} |
 
 - Compare chromosome and arm first
 - Then compare region, band, and subband
-- A band label is an address, not a distance in cM
+- [*Band label*]{color=#24578F}: address, not distance in cM
 
 @citation
 
@@ -183,7 +183,7 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @question
 
-For chromosome *17q*, which band lies most distal (farthest from the centromere)?
+On chromosome *17q*, which band is most distal (farthest from the centromere)?
 
 - A. 17q36
 - B. 17q36.3
@@ -191,7 +191,7 @@ For chromosome *17q*, which band lies most distal (farthest from the centromere)
 - D. 17q34.1
 - E. 17q41.3
 
-*Use these schematic labels to practice the numbering rule.*
+[*Numbering practice: schematic labels*]{color=#24578F}
 
 @answer
 
@@ -203,14 +203,14 @@ E. 17q41.3
 
 @body
 
-- Same chromosome and arm in every choice: *17q*
-- Compare the region first: *4* is farther out than *3* or *1*
-- Only *17q41.3* is in region 4
+- Same chromosome and arm: [*17q*]{color=#24578F}
+- Region first: [*4*]{color=#007A00} farther out than *3* or *1*
+- Region 4: [*17q41.3*]{color=#007A00}
 - [*Answer: E. 17q41.3*]{color=#007A00}
 
-These are schematic labels, not a map of verified human chromosome 17 bands.
+*Schematic labels; not a real chromosome 17 band map*
 
-=== layout: section
+=== layout: subsection
 
 # Reading a Karyotype
 
@@ -223,12 +223,12 @@ These are schematic labels, not a map of verified human chromosome 17 bands.
 {table-style=comparison text-align=left}
 | Part | Meaning |
 | --- | --- |
-| 47 | Number of chromosomes |
-| XY | Sex-chromosome complement |
-| +21 | Extra copy of chromosome 21 |
+| [*47*]{color=#D40000} | Number of chromosomes |
+| [*XY*]{color=#B74300} | Sex-chromosome complement |
+| [*+21*]{color=#003FFF} | Extra copy of chromosome 21 |
 
-- +21 means an extra *whole chromosome 21*
-- This is different from an address such as 7q31.2
+- [*+21*]{color=#003FFF}: extra *whole chromosome 21*
+- [*7q31.2*]{color=#24578F}: chromosome address
 
 @citation
 
@@ -256,13 +256,17 @@ E. XY with one extra copy of chromosome 21
 
 @body
 
-- *47*: one more than the usual 46 chromosomes
-- *XY*: the sex-chromosome complement
-- *+21*: one extra copy of chromosome 21
+- [*47*]{color=#D40000}: one more than 46
+- [*XY*]{color=#B74300}: sex-chromosome complement
+- [*+21*]{color=#003FFF}: one extra chromosome 21
 - [*Answer: E*]{color=#007A00}
-- Three copies of chromosome 21: *trisomy 21*
+- Three copies: [*trisomy 21*]{color=#003FFF}
 
-The homework may put the change before the sex chromosomes: *47,+21,XY*. It describes the same example.
+Homework notation: *47,+21,XY* -- same example, different order
+
+=== layout: section
+
+# Summary
 
 === layout: reference
 
@@ -293,9 +297,8 @@ The homework may put the change before the sex chromosomes: *47,+21,XY*. It desc
 
 @body
 
-- Reference: not covered in lecture
-- A single band: *17q12*
-- A range of bands: *17q12-q21*
+- A single band: [*17q12*]{color=#24578F}
+- A range of bands: [*17q12-q21*]{color=#B74300}
 - A range gives a broader location when the position is less precisely known
 - Decimal digits name finer subbands; they are not decimal distances
 
@@ -305,10 +308,10 @@ The homework may put the change before the sex chromosomes: *47,+21,XY*. It desc
 
 @body
 
-- p is the short arm; q is the long arm
-- Read an address: chromosome, arm, region, band, subband
-- On the same arm, band numbers increase away from the centromere
-- Read a simple karyotype: total, sex chromosomes, chromosome change
+- [*p*]{color=#24578F}: short arm; [*q*]{color=#B74300}: long arm
+- [*Address*]{color=#24578F}: chromosome, arm, region, band, subband
+- Same arm: higher band numbers farther from the centromere
+- [*Karyotype*]{color=#24578F}: total, sex chromosomes, chromosome change
 
 === layout: theend
 

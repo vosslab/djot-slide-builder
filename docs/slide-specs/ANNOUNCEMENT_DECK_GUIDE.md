@@ -20,14 +20,47 @@ lecture's current-year announcements, checking dates and relevance against the c
 2. Today's Agenda: topics and activities in the current content decks.
 3. Next Week: dated lookahead, mainly work due and what happens in class the following week.
 4. Weather: saved NWS Chicago stories, one slide per published option.
-5. Icebreaker: selected prompt and concrete examples.
+5. Icebreaker: fun content-related prompt, with concrete examples and suggestions.
 
-Keep this opening before the first section divider. Select the icebreaker from
-[../../evergreen/icebreakers.yaml](../../evergreen/icebreakers.yaml) or the instructor's explicit
-choice. Use **Icebreaker** as the title for face-to-face classes, including Genetics, followed by
-the selected prompt and concrete examples. The catalog supplies neutral Icebreaker titles and
-source references for the original prompts.
+Keep this opening before the first section divider. Choose a fun question tangentially related
+to some aspect of the week's content. Compare the previous two lectures' prompts and examples,
+then choose a different premise and type of response. Select or adapt a prompt from
+[../../evergreen/icebreakers.yaml](../../evergreen/icebreakers.yaml), write one for the topic, or
+use the instructor's explicit choice. The popular-culture question is a fallback for weeks
+without a topic idea. Use **Icebreaker** as the title for face-to-face classes, including Genetics.
+Use `layout: prompt` with `@prompt` for the main question and `@examples` for participation cues,
+concrete examples, and suggestions. The layout supplies a dark red question and dark gray supporting
+text inside an ultra light course-color rounded card; write plain text in both slots.
+Present examples as sample responses, and use
+instructor answers when supplied. The catalog's body fragments contain both required slots.
+See [QUESTION_LAYOUTS.md](QUESTION_LAYOUTS.md#open-prompts-and-icebreakers) for the format.
 Use the current course schedule for the lookahead's dates, deadlines, and events.
+
+For movie selection, bring the supplied `movie-slide-maker` ODP choices into the announcement
+deck using `movie-panel`. Preserve the movie wording, ratings, and posters. Follow the individual
+choices with a vote recap showing their titles and posters together. See
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#movie-choices) for the text/poster slots.
+
+## Today's agenda
+
+Use the instructor's original agendas and slide-deck titles as the wording model. Agenda bullets
+are short topic labels, usually a few words: **Karyotypes**, **Sex Dosage**, **Natural Selection**.
+Put mechanisms, comparisons, and worked details on the teaching slides.
+
+- Preserve the instructor's voice and recognizable topic names. Start with the original agenda;
+  use the current deck titles to update its coverage.
+- Group short topic labels under a chapter or unit when that matches the original agenda.
+- Include the day's group activity, quiz, vote, or movie selection when scheduled.
+- Follow the current content and teaching order when topics move between lectures. Use the course
+  schedule for dated activities and assessments, and record conflicts between numbered content
+  bundles and calendar weeks in the lecture review.
+- Choose a layout that keeps the chapter grouping and brief topic labels readable. Inspect the rendered
+  agenda for wrapping and fit.
+
+Chapter labels belong in the agenda body; the announcement cover's topic remains **Announcements**.
+When a numbered content bundle has no announcement deck or assigned teaching date, an agenda-only
+source can supply its topic map. Record its status in the lecture review and add dated logistics
+when the teaching week is assigned.
 
 ## Three main sections
 
@@ -50,6 +83,11 @@ Email (blue), and Anonymous Google Form (purple). Keep response details nested u
 option and retain hanging list indents. Format visible email addresses as italic `mailto:`
 links, for example `[_nvoss@roosevelt.edu_](mailto:nvoss@roosevelt.edu)` in Djot.
 The former Gmail warning was a 2019 issue and is retired.
+
+Preserve the established first-person contact and anonymous-message wording. Keep explanatory
+text in regular dark type. Give the contact details the slide's full width, and organize related
+lines together. The anonymous-message slide pairs plain instructions with the original form image
+and a visible clickable form URL.
 
 ### Biotechnology classroom Zoom
 
@@ -141,7 +179,8 @@ the graduation notice's first-two-weeks window for these assignments.
 - Check the lecture date and the current instructor-maintained course schedule first.
 - Start from the most recent current-year lecture, checking the matching prior-year lecture for
   useful activities and reminders. Refresh dates, policies, and links from current sources.
-- Update both agendas, assessment colors, due dates, and conditional visibility.
+- Update Today's Agenda with short deck titles or topic labels in the instructor's voice, then update
+  Next Week, assessment colors, due dates, and conditional visibility.
 - Refresh weather on lecture day or the preceding day. Keep original PNGs, full editable
   captions, and a separate dated NWS citation. Builds use saved files and never refresh weather.
 - Select the latest regular StVC episode published by the lecture date; skip special episodes

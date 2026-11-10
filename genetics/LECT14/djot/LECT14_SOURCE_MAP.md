@@ -7,6 +7,11 @@ slides. Every source content slide retains its original position within its deck
 See [LECT14_REVIEW.md](LECT14_REVIEW.md) for the topic split, cover-date limitation,
 replacement tasks, and verification.
 
+## lect14a-agenda
+
+New undated agenda-only source, authored November 10 from the B-E topic sequence.
+One authored ODP slide / one visible PDF page; no original announcement source was supplied.
+
 ## lect14b-allele_freq
 
 Original: `lect1Xc-allele_freq.odp` (now `../lect14b-allele_freq.odp`, identical bytes). Import report: `assets/lect14b-allele_freq/import_report.json`.

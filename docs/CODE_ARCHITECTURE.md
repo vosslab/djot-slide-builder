@@ -65,6 +65,9 @@ enters only through the one-time import workflow.
   contracts, distinct LibreOffice classifier signatures, font-backed capacity, and format-neutral
   physical object construction. [../slide_lib/multiple_choice_layout.py](../slide_lib/multiple_choice_layout.py)
   isolates the context, stem, choice, and answer measurement policy for the adaptive teaching layout.
+  The builders also own the `prompt` layout's question/examples card, the occasional `question-ask`
+  hexagon with one centered question, and the framed/banded/inset three-level dividers. Required
+  prompt examples are enforced in the shared layout validator.
   [../slide_lib/layout_object_builders.py](../slide_lib/layout_object_builders.py) maps semantic text
   colors and image-relative annotations into resolved text runs, explicit line endpoints, and
   transparent shapes. [../slide_lib/layout_specialty_builders.py](../slide_lib/layout_specialty_builders.py)

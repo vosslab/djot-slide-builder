@@ -134,10 +134,14 @@ not make every detail of the revised deck a template. See
 
 Sections and subsections help students reset and find their place. Keep them visually distinct
 and simple: a short title, an optional meaningful visual or preview question, and little
-explanatory text. Use the course's established major/minor hierarchy.
+explanatory text. Use `section` for a content deck's broad teaching theme and closing Summary.
+Use `subsection` for the teaching topics within that theme, consistently across the lecture's decks.
+Use `subsubsection` for a sustained subdivision within one topic. Their framed, banded, and inset
+appearances follow [COLOR_GUIDE.md](COLOR_GUIDE.md#distinguish-divider-levels).
 
-The instructor suggested roughly one divider per ten slides for long Genetics decks, placed at
-conceptual transitions. Preserve that approximate context; it is not a universal interval.
+For long Genetics decks, aim for a topic divider roughly every ten slides, using subsections
+within the broad unit. Place these at nearby conceptual transitions and preserve complete
+question/explanation sequences. Treat ten slides as an approximate pacing target.
 Headings cannot repair a missing explanation between slides. Put spoken transitions in notes and
 enough of the connection visibly for students studying later.
 
@@ -307,11 +311,16 @@ easier than the categories, names, structures, or order students actually need.
 
 ### Make the task recognizable
 
+Use `question-ask` sparingly for a question to ponder: a divider-like pause with one large,
+centered question, followed by the lesson's explanation. Genetics Lecture 04H slide 5 and Lecture
+06D slide 43 are instructor examples. Icebreakers use `prompt` with concrete supporting examples.
+
 A short recall question can be large and centered with generous open space. A substantial
 problem needs its complete setup, data, assumptions, and task. Preserve the recognizable
 problem-statement treatment formerly supplied by textbook screenshots while using editable text.
 The exact new problem-panel design remains unsettled; this specification does not invent a
-layout or font override. Use existing supported layouts, including question-and-answer for MC.
+layout or font override. Use `multiple-choice` with `@question` and `@answer` for every choice-based
+problem, including select-all-that-apply questions. Keep extended explanations on following slides.
 
 For a participation task, useful cues are **Predict**, **Discuss**, **Compare**, **Label**,
 **Explain**, or **Interpret**. A timing example is "30 sec alone -> 1 min with partner -> share

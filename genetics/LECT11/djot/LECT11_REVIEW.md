@@ -4,6 +4,18 @@ Reviewed draft, November 9, 2026. Five canonical Djot masters produce editable O
 LibreOffice-derived PDF. Difficult conversions retain 62 explicit `@replaceme` slides;
 this draft is not classroom-ready wherever those watermarks appear.
 
+## November 10 agenda wording
+
+Keep the original Chapter 9: Chromosomal Disorders grouping and short labels: Polyploidy,
+Sex Dosage, Deletions, and Duplications. Quiz 4 is December 1:
+hide its obsolete November 17 opening card, remove it from today's agenda, and correct the
+assessment schedule and lookahead. Quiz 5 remains conditional on the class vote.
+A now has 55 authored / 18 hidden / 37 PDF pages; its agenda is PDF 2. Rebuilt ODP/PDF, passed
+strict native lint, and inspected the agenda and changed logistics. The wording correction passes
+213 documentation/guidance checks. Evidence: `_temp/genetics_agendas_09_15/`. Existing weather/registration
+capacity advisories remain. The wording correction is verified separately in
+`_temp/genetics_agenda_voice/`. The content/date mismatch below remains a scheduling task.
+
 ## Outputs and counts
 
 Sources are in this directory; generated decks are under `output/odp/` and `output/pdf/`
@@ -12,13 +24,13 @@ content slide, hidden status, source PDF page, and final page.
 
 | Deck | Authored ODP | Hidden | PDF pages | Replacement slides |
 | --- | --- | --- | --- | --- |
-| lect11a-2026_announcements | 55 | 17 | 38 | 0 |
+| lect11a-2026_announcements | 55 | 18 | 37 | 0 |
 | lect11b-polyploidy | 49 | 1 | 48 | 13 |
 | lect11c-sex_dosage | 67 | 0 | 67 | 26 |
 | lect11d-chromo_alter_1-deletions | 112 | 0 | 112 | 20 |
 | lect11e-chromo_alter_2-duplications | 37 | 0 | 37 | 3 |
 
-Total: 320 authored slides, 18 hidden slides, 302 PDF pages. B-E retain all 253 original
+Total: 320 authored slides, 19 hidden slides, 301 PDF pages. B-E retain all 253 original
 content slides in order and add 12 opening/closing slides. C and D use sibling topic includes
 to keep editable source files below the repository size limit. No slides were split.
 The original D95 THE END and subsequent book-problem appendix remain in their original order;
@@ -62,7 +74,8 @@ No course rescheduling was inferred. Covers use Lecture 11's November 17 date. R
 content/date correspondence before teaching. No translocation-meiosis deck was supplied, so
 none was invented; D retains its original conditional reference to that homework.
 
-Quiz 4 and assignments 09/10 are due November 17; Quiz 4/homework are red for the current week.
+Assignments 09/10 are due November 17. Quiz 4 moved to December 1; its November 17 opening
+card is now hidden and the schedule/lookahead reflect December 1.
 Past assessments remain gray and future ones black. The November 24 lookahead states no class
 and the December 1 return. Quiz guidance is visible through its single include setting; exam,
 first-week assignments, evaluation, and club groups remain hidden. Registration remains visible.

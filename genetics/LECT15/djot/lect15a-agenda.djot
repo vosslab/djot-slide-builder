@@ -1,0 +1,16 @@
+color-theme: genetics
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Icebreaker and Announcements
+- Chapter 10:
+  - Genetics and Evolution
+  - Natural Selection
+  - Genetic Drift
+  - Genetic Drift Activity
+  - Inbreeding
+- Closing Remarks

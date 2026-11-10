@@ -137,6 +137,14 @@ def add_list_styles(automatic: xml.etree.ElementTree.Element,
 						level_theme.text_position - level_theme.bullet_position, deck, theme),
 				})
 			properties.set(_qname(TEXT_NS, "min-label-distance"), "0cm")
+			# Markers stay dark over pale panels even when the page background is dark.
+			xml.etree.ElementTree.SubElement(level_style, _qname(STYLE_NS, "text-properties"), {
+				_qname(FO_NS, "color"): f"#{_FOREGROUND}",
+				_qname(STYLE_NS, "font-name"): slide_lib.presentation_theme.odf_font_face_name(
+					slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, False, False),
+				_qname(FO_NS, "font-family"): slide_lib.presentation_theme.odf_font_family(
+					slide_lib.presentation_theme.ORDINARY_FONT_FAMILY, False, False),
+			})
 
 
 #============================================

@@ -12,6 +12,10 @@ Use color to help students recognize a concept, follow a relationship, or find t
 Keep useful distinctions and repeat them consistently. Select fewer incidental words to highlight
 when prose becomes busy; preserve meaningful multicolor roadmaps, figures, and comparisons.
 
+Keep announcement explanations in regular dark type. Use the established color on a contact-method
+label or another meaningful category, and let spacing and hierarchy organize its details. Choose
+emphasis for a specific reading task; preserve the instructor's prose while formatting it.
+
 - Start with [../COLOR_PALETTE.md](../COLOR_PALETTE.md), including its existing role mappings.
 - Match references to the objects, concepts, or numbered steps they identify.
 - Carry associations through the question, explanation, worked calculation, and summary.
@@ -48,10 +52,35 @@ one color across all courses.
 
 ## Distinguish divider levels
 
-Use a saturated course-color section with white text and its rounded frame. Use a pale course
-tint for subsections, with black text and symmetric black full-width horizontal stripes. Keep
-background contrast above 3:1 between these two levels, and keep text and stripes at the 5.5:1
-house readability target against their own surfaces. Shape and type size reinforce the hierarchy.
+Use the instructor's November 10 `section_headers.odp` / `section_headers.pdf` design as the
+shape reference and the measured course palette as the color source. The reference's guessed
+colors illustrate the roles.
+
+- `section`: dark background, white centered text, and a white rounded frame.
+- `subsection`: light full-width center band, medium top/bottom regions, and black centered text.
+- `subsubsection`: dark rectangular center panel, light surrounding edges, and white centered text.
+- `question-ask`: ultra light hexagon across a dark background, with a centered dark red question.
+- `prompt`: pale rounded icebreaker card, with a colored prompt and dark gray examples.
+
+Preserve the course accent's hue and saturation, changing lightness. Keep every step in
+`black -> dark -> medium -> light -> white` at least 2:1, aiming near `21**(1/4)` (2.14:1).
+Ultra light sits between light and white; its HSL lightness is their midpoint. These surfaces
+remain recognizably blue, green, purple, or red. Native shapes and title sizes reinforce the levels.
+
+| Course | Dark | Medium | Light | Ultra light | Original HSL saturation |
+| --- | --- | --- | --- | --- | --- |
+| Genetics | `#1C4470` | `#3177C3` | `#8CB5E2` | `#C6DAF0` | 59.8% |
+| Biostatistics | `#0C4F17` | `#158928` | `#1FCC3B` | `#88ED98` | 73.5% |
+| Biochemistry | `#45405C` | `#78709C` | `#B3AEC7` | `#D9D7E3` | 18.2% |
+| Biotechnology | `#861614` | `#DF2D2A` | `#F09B9A` | `#F7CDCC` | 74.0% |
+
+The source of these values is `CourseColorTheme` in
+[presentation_theme.py](../../slide_lib/presentation_theme.py). Saturation and hue vary slightly
+after rounding to 8-bit RGB. All four steps measure 2.10-2.17:1 across the course palettes.
+
+The header gradient runs from medium to white. Cover metadata uses an ultra light rounded card.
+The closer uses a dark background and ultra light THE END text, retaining its white frames/star.
+All divider and prompt text/surface pairs meet the 5.5:1 house target.
 
 ## Highlight the important reference
 

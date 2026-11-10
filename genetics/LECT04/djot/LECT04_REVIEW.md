@@ -1,5 +1,9 @@
 # Lecture 04 conversion
 
+November 10 layout clarification: Lecture 04H slide 5 uses the sparingly used `question-ask`
+layout for its existing gamete question. Rebuilt 04H and inspected page 5; all 37 pages remain,
+with the question editable in ODP and selectable in PDF. Its wording and position are unchanged.
+
 The nine Lecture 04 decks were imported from `genetics/LECT04/` on 2026-09-21 for the
 September 22 lecture. The 2026 announcement ODP is the current-year source. Its announcement
 content combines current Lecture 03 guidance with recurring Lecture 04 material corroborated by

@@ -10,6 +10,7 @@ import slide_lib.layout_measurement
 import slide_lib.layout_flow_measurement
 import slide_lib.layout_source_facts
 import slide_lib.layout_registry
+import slide_lib.layout_validation
 import slide_lib.editable_text
 import slide_lib.layout_content
 import slide_lib.layout_model
@@ -34,6 +35,11 @@ def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_mo
 	contract = slide_lib.layout_registry.contract_for(source.layout_class)
 	if source.layout_class == "multiple-choice":
 		return _multiple_choice(deck, source, theme, index, contract, session)
+	if source.layout_class in ("prompt", "movie-panel"):
+		# Validate specialized slots at direct compiler entry too.
+		slide_lib.layout_validation.validate_layout_source(source, contract)
+	if source.layout_class == "prompt":
+		return _prompt_slide(deck, source, theme, index, contract, session)
 	if source.layout_class == "gallery":
 		return _gallery(deck, source, theme, index, contract, session)
 	if source.layout_class == "big-image":
@@ -51,6 +57,69 @@ def compile_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_mo
 	if not contract.slot_names:
 		return _heading_slide(source, theme, index, contract, session)
 	return _standard_slide(deck, source, theme, index, contract, session)
+
+
+def _prompt_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
+		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
+		contract: slide_lib.layout_primitives.LayoutContract,
+		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
+	"""Give an icebreaker a colored prompt and room for required examples."""
+	title = _root_title(source)
+	prompt_rectangle = slide_lib.layout_primitives.LogicalRectangle(
+		155, 190 if title else 155, 970, 165 if title else 200)
+	examples_rectangle = slide_lib.layout_primitives.LogicalRectangle(155, 390, 970, 315)
+	panel = slide_lib.layout_content.ShapeContent(slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
+		slide_lib.layout_content.ShapeStyle(slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT,
+			slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT, 1,
+			slide_lib.layout_primitives.LinePattern.NONE, 22),
+		slide_lib.layout_primitives.ObjectAccessibility(decorative=True))
+	objects = [slide_lib.layout_model.LayoutObject("prompt-card",
+		slide_lib.layout_primitives.PresentationRole.GRAPHIC,
+		slide_lib.layout_primitives.StyleRole.DECORATION,
+		slide_lib.layout_primitives.LogicalRectangle(105, 140, 1070, 605),
+		slide_lib.layout_primitives.ObjectLayer.DECORATION, 0, 0, panel,
+		origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME)]
+	slots = []
+	regions = []
+	if title is not None:
+		regions.append(("title", (title,),
+			slide_lib.layout_primitives.LogicalRectangle(110, 55, 1060, 70), 36.0, "172033", True))
+	for name, rectangle, preferred, color, bold in (
+			("prompt", prompt_rectangle, 40.0, ANSWER, True),
+			("examples", examples_rectangle, 26.0, "333333", False)):
+		cell = next(cell for cell in source.cells if cell.name == name)
+		regions.append((name, cell.blocks, rectangle, preferred, color, bold))
+	for name, blocks, rectangle, preferred, color, bold in regions:
+		location = blocks[0].location
+		frame = _frame_text()
+		measurement = slide_lib.layout_measurement.text_frame_measurement(rectangle)
+		size = slide_lib.layout_size_selection.select_size(
+			slide_lib.layout_measurement.items_for(blocks), measurement, preferred,
+			theme.body_floor_size_pt, theme, location, contract.name, name, session, bold=bold)
+		text_role = slide_lib.layout_primitives.StyleRole.TITLE if name == "title" \
+			else slide_lib.layout_primitives.StyleRole.BODY
+		text = slide_lib.layout_object_builders.text_content(blocks, size,
+			theme.body_floor_size_pt, text_role, color,
+			measurement.wrapping_extent, theme, bold=bold, session=session)
+		if name != "examples":
+			frame = dataclasses.replace(frame,
+				vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
+			text = dataclasses.replace(text, paragraphs=tuple(dataclasses.replace(paragraph,
+				properties=dataclasses.replace(paragraph.properties,
+					horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER))
+				for paragraph in text.paragraphs))
+		placeholder = slide_lib.layout_primitives.PlaceholderKind.TITLE if name == "title" \
+			else slide_lib.layout_primitives.PlaceholderKind.OUTLINE
+		role = slide_lib.layout_primitives.PresentationRole.TITLE if name == "title" \
+			else slide_lib.layout_primitives.PresentationRole.OUTLINE
+		order = len(slots)
+		slots.append(_slot(name, placeholder, role, rectangle, order, frame, text_role))
+		objects.append(slide_lib.layout_model.LayoutObject(name, role, text_role, rectangle,
+			slide_lib.layout_primitives.ObjectLayer.LAYOUT, order + 1, order, text, frame,
+			name, name, placeholder, location,
+			slide_lib.layout_object_builders.reveal_targets(name, blocks, order)))
+	return _slide(source, index, contract, slots, objects)
+
 
 def _standard_slide(deck: slide_lib.native_model.Deck, source: slide_lib.native_model.Slide,
 		theme: slide_lib.presentation_theme.PresentationTheme, index: int,
@@ -191,7 +260,7 @@ def _heading_slide(source: slide_lib.native_model.Slide,
 			headings[0], theme, contract, session)
 		return _slide(source, index, contract, list(components.slots),
 			list(components.objects), components.surface)
-	if contract.name in ("section", "subsection"):
+	if contract.name in ("section", "subsection", "subsubsection", "question-ask"):
 		components = slide_lib.layout_specialty_builders.section_components(
 			headings, theme, contract, session)
 		return _slide(source, index, contract, list(components.slots),

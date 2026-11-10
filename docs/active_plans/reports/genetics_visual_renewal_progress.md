@@ -24,6 +24,32 @@ within the shared visual language. Genetics remains first; `remaining_lecture_ar
 covers Biotechnology, Biostatistics and shared lecture art as reference inventory only.
 Genetics completion alone will not establish completion of the broader goal.
 
+## Lecture 10D nondisjunction fallback
+
+The instructor reported the unfinished replacement's empty left side on slide 21. The early
+three-figure nondisjunction replacements are withdrawn from the active deck. They changed the
+original progressive, side-by-side comparison into separate single-pair lineages, removing
+segregation scenes and other original details. The products replacement also rendered blank in
+LibreOffice; the precise cause remains unisolated. The prior diagnosis and original comparison
+are under `_temp/nondisjunction_blank_diagnosis/`.
+
+The three source URLs now use the retained `nondisjunction_meiosis_i.svg`,
+`nondisjunction_meiosis_ii.svg`, and `nondisjunction_gametes.svg` under
+`assets/lect10_repaired_figures/`. These preserve original raster artwork and positioned SVG text.
+The first two still match the original figure manifest's digests. The gametes file has 47 text
+nodes and a different current digest; its actual rendered diagram and labels were compared with
+original PDF page 37. Current asset and embedded-payload digests are in
+`_temp/lect10_figure_recovery/checks.json`.
+
+The current canonical 10D ODP/PDF rebuild passes with 65/65/0/65
+source/ODP/hidden/PDF pages, reflecting the later lecture-structure edits. Actual final pages
+21-23 preserve both meiosis-error branches, cells, spindle/chromosome scenes, error markers,
+and all eight gametes. Pages 24/26/27 retain their table and question/answer layouts. The remaining
+two replacement SVGs, amniocentesis and CVS on pages 54/55, were also visually reviewed and retain
+their complete anatomy and workflow. Native lint passes; the existing newborn-screening reference
+capacity advisory remains. This is bounded asset/render verification, with no new permanent tests
+or full-suite rerun. The broader illustration work remains open.
+
 ## Current scope and state
 
 The outcome is ambitious original SVG art throughout Genetics, with a shared visual language

@@ -1,5 +1,9 @@
 # Genetics Lecture 06 conversion
 
+November 10 layout clarification: Lecture 06D slide 43 uses `question-ask` for its existing
+parental-phenotype/genotype question. Rebuilt 06D and inspected page 43; all 62 pages remain,
+with the question editable in ODP and selectable in PDF. Its wording and position are unchanged.
+
 Lecture date: October 6, 2026. Five canonical Djot decks preserve the lecture split.
 The four science decks retain one output slide per original source slide, in source order.
 Original ODP/PDF files remain reference inputs.

@@ -364,6 +364,10 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 			raise source_error(source.location, f"{spec.name} is missing required cell slot: {missing}")
 	elif cells:
 		raise source_error(cells[0].location, f"{spec.name} slides do not accept component cells")
+	if spec.name == "movie-panel":
+		poster = next(cell for cell in cells if cell.name == "poster")
+		if len(poster.blocks) != 1 or not isinstance(poster.blocks[0], slide_lib.native_model.Image):
+			raise source_error(poster.location, "movie-panel poster requires exactly one component image")
 	if spec.name == "blank":
 		if source.blocks or cells:
 			offending = source.blocks[0].location if source.blocks else cells[0].location
@@ -372,6 +376,22 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 	if spec.name == "multiple-choice":
 		validate_multiple_choice(source)
 		return
+	if spec.name == "question-ask":
+		if len(source.blocks) != 1 or len(headings) != 1 or headings[0].level != 1 or \
+				not inline_text(headings[0].inlines):
+			raise source_error(source, "question-ask slides require one visible level-one question heading")
+		return
+	if spec.name == "prompt":
+		prompt = next(cell for cell in cells if cell.name == "prompt")
+		if len(prompt.blocks) != 1 or not isinstance(prompt.blocks[0],
+				slide_lib.native_model.Paragraph) or not inline_text(prompt.blocks[0].inlines):
+			raise source_error(prompt.location, "prompt slot requires one visible question paragraph")
+		examples = next(cell for cell in cells if cell.name == "examples")
+		for block in examples.blocks:
+			if not isinstance(block, (slide_lib.native_model.Paragraph, slide_lib.native_model.ListBlock)):
+				raise source_error(block.location, "prompt examples support editable paragraphs and lists")
+		if not has_visible_items(body_parts(examples.blocks)[1]):
+			raise source_error(examples.location, "prompt requires visible examples or suggestions")
 	if spec.name == "image-comparison":
 		for cell in cells:
 			if cell.name.startswith("top-"):
@@ -406,7 +426,7 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 					slide_lib.native_model.Image)):
 			raise source_error(source, "theend slides accept only '# THE END' and one optional component image")
 		return
-	if spec.name in ("title-slide", "section", "gallery") and root_tables:
+	if spec.name in ("title-slide", "section", "subsection", "subsubsection", "gallery") and root_tables:
 		raise source_error(root_tables[0].location, f"{spec.name} slides do not have a native table destination")
 	if spec.cell_count and not spec.allows_root_body and spec.name != "gallery":
 		if items or images or root_tables or any(heading.level != 1 for heading in headings):
@@ -432,7 +452,7 @@ def validate_layout_source(source: slide_lib.native_model.Slide, spec: object) -
 			if not cell_headings and not cell_items and not cell_images:
 				raise source_error(cell.location, f"{spec.name} cell {index} requires editable text or component images")
 		return
-	if spec.name in ("title-slide", "section", "subsection"):
+	if spec.name in ("title-slide", "section", "subsection", "subsubsection"):
 		if not headings or headings[0].level != 1 or items or images:
 			raise source_error(source, f"{spec.name} slides support a title and level-two subtitle lines only")
 		if any(heading.level != 2 for heading in headings[1:]):

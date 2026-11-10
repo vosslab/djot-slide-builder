@@ -92,6 +92,8 @@ def cell_source(spec: slide_lib.layout_primitives.LayoutContract, slot_name: str
 		return ["![Djot focal image](component.png)"]
 	if spec.name == "big-image" and slot_name == "caption":
 		return ["Editable focal-image caption"]
+	if spec.name == "movie-panel" and slot_name == "poster":
+		return ["![Movie poster](component.png)"]
 	return [f"Editable {spec.name} {slot_name}"]
 
 

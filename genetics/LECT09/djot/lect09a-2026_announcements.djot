@@ -16,10 +16,13 @@ color-theme: genetics
 
 @body
 
-- Ice Breaker and Announcements
-- Crossover Interference
-- Tetrad Analysis
-- Unordered Tetrad Handout Activity
+- Icebreaker and Announcements
+- Chapter 8:
+  - Crossover Interference
+  - Mitotic Crossover
+  - Tetrad Analysis
+  - Unordered Tetrad Handout Activity
+  - Ordered Tetrads
 - Closing Remarks
 
 === layout: one-panel
@@ -103,7 +106,7 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#990000}
-- [Quiz 4: Nov 17]{color=#000000}
+- [Quiz 4: Dec 01]{color=#000000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
 

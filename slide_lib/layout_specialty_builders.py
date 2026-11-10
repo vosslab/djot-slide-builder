@@ -44,7 +44,7 @@ def title_slide_decorations(theme: slide_lib.presentation_theme.PresentationThem
 		title.x + (title.width - 140) / 2, title.y + title.height + 24, 140, 7)
 	border = _decorative_shape("title-metadata-frame", card,
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
-		slide_lib.layout_primitives.StyleRole.ACCENT_TINT,
+		slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT,
 		slide_lib.layout_primitives.StyleRole.TRANSITION,
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 22, 0, 2)
 	border = dataclasses.replace(border, content=dataclasses.replace(border.content,
@@ -153,15 +153,24 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		theme: slide_lib.presentation_theme.PresentationTheme,
 		contract: slide_lib.layout_primitives.LayoutContract,
 		session: slide_lib.layout_measurement.MeasurementSession) -> SpecialtySlideComponents:
-	"""Distinguish framed chapter cards from symmetric, striped topic dividers."""
+	"""Build the divider hierarchy and occasional question-to-ponder cards."""
 	is_subsection = contract.name == "subsection"
+	is_subsubsection = contract.name == "subsubsection"
+	is_question = contract.name == "question-ask"
 	foreground = slide_lib.presentation_theme.resolve_text_color("black", theme.accent_color) \
 		if is_subsection else WHITE
+	if is_question:
+		foreground = "7B1E2B"
 	rectangle = slide_lib.layout_primitives.LogicalRectangle(150, 235, 980, 330)
+	if is_subsubsection:
+		rectangle = slide_lib.layout_primitives.LogicalRectangle(190, 205, 900, 390)
+	elif is_question:
+		rectangle = slide_lib.layout_primitives.LogicalRectangle(240, 200, 800, 400)
 	frame = dataclasses.replace(_frame_text(),
 		vertical_alignment=slide_lib.layout_primitives.VerticalAlignment.MIDDLE)
 	transition_theme = dataclasses.replace(theme,
-		standard_title_size_pt=42.0 if is_subsection else SECTION_TITLE_SIZE_PT,
+		standard_title_size_pt=36.0 if is_subsubsection else
+			42.0 if is_subsection else SECTION_TITLE_SIZE_PT,
 		ordinary_body_size_pt=SECTION_SUBTITLE_SIZE_PT)
 	sizes = slide_lib.layout_size_selection.select_centered_heading_sizes(
 		headings[0], headings[1:], rectangle, transition_theme, contract.name, session)
@@ -191,7 +200,9 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		headings[0].location,
 		slide_lib.layout_object_builders.reveal_targets(contract.name, headings, 0))
 	background_role = (slide_lib.layout_primitives.StyleRole.SUBSECTION
-		if contract.name == "subsection" else slide_lib.layout_primitives.StyleRole.TRANSITION)
+		if contract.name == "subsection" else slide_lib.layout_primitives.StyleRole.SECTION)
+	if is_subsubsection:
+		background_role = slide_lib.layout_primitives.StyleRole.SUBSUBSECTION
 	border = _decorative_shape(f"{contract.name}-frame",
 		slide_lib.layout_primitives.LogicalRectangle(105, 190, 1070, 420),
 		slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE,
@@ -200,13 +211,33 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		slide_lib.layout_primitives.LinePattern.SOLID, 2.5, 24, 0, 1)
 	decorations = (border,)
 	if is_subsection:
-		decorations = tuple(_decorative_shape(f"subsection-{edge}-stripe",
-			slide_lib.layout_primitives.LogicalRectangle(0, y, 1280, 8),
+		decorations = (_decorative_shape("subsection-center-band",
+			slide_lib.layout_primitives.LogicalRectangle(0, 190, 1280, 420),
 			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
-			slide_lib.layout_primitives.StyleRole.SUBSECTION_INK,
-			slide_lib.layout_primitives.StyleRole.SUBSECTION_INK,
-			slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 0, order)
-			for order, (edge, y) in enumerate((("top", 80), ("bottom", 712)), 1))
+			slide_lib.layout_primitives.StyleRole.SUBSUBSECTION,
+			slide_lib.layout_primitives.StyleRole.SUBSUBSECTION,
+			slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 0, 1),)
+	elif is_subsubsection:
+		decorations = (_decorative_shape("subsubsection-center-panel",
+			slide_lib.layout_primitives.LogicalRectangle(146, 146, 988, 508),
+			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
+			slide_lib.layout_primitives.StyleRole.SECTION,
+			slide_lib.layout_primitives.StyleRole.SECTION,
+			slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 0, 1),)
+	elif is_question:
+		panel = slide_lib.layout_content.ShapeContent(slide_lib.layout_primitives.ShapeKind.POLYGON,
+			slide_lib.layout_content.ShapeStyle(slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT,
+				slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT, 1,
+				slide_lib.layout_primitives.LinePattern.NONE),
+			slide_lib.layout_primitives.ObjectAccessibility(decorative=True),
+			points=tuple(slide_lib.layout_primitives.LogicalPoint(x, y)
+				for x, y in ((320, 0), (960, 0), (1280, 400), (960, 800), (320, 800), (0, 400))))
+		decorations = (slide_lib.layout_model.LayoutObject("question-ask-center-hexagon",
+			slide_lib.layout_primitives.PresentationRole.GRAPHIC,
+			slide_lib.layout_primitives.StyleRole.DECORATION,
+			slide_lib.layout_primitives.LogicalRectangle(0, 0, 1280, 800),
+			slide_lib.layout_primitives.ObjectLayer.DECORATION, 0, 1, panel,
+			origin=slide_lib.layout_primitives.LayoutObjectOrigin.THEME),)
 	surface = slide_lib.layout_primitives.SlideSurface(
 		background_role, False)
 	return SpecialtySlideComponents((slot,), (*decorations, item), surface)
@@ -336,7 +367,8 @@ def _end_components(deck: slide_lib.native_model.Deck,
 	end_heading = dataclasses.replace(title, inlines=(slide_lib.native_model.Text("END"),))
 	content = slide_lib.layout_object_builders.text_content(
 		(the_heading, end_heading), size, END_TITLE_FLOOR_SIZE_PT,
-		slide_lib.layout_primitives.StyleRole.TITLE, WHITE,
+		slide_lib.layout_primitives.StyleRole.TITLE,
+		slide_lib.presentation_theme.course_color_theme(theme.color_theme_name).ultra_light_color,
 		rectangle.width, theme, bold=True, session=session)
 	line_spacing_pt = size * END_LINE_SPACING_EM
 	content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph,
@@ -385,7 +417,7 @@ def _end_components(deck: slide_lib.native_model.Deck,
 		slide_lib.layout_primitives.StyleRole.DECORATION,
 		slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 3, 3)
 	surface = slide_lib.layout_primitives.SlideSurface(
-		slide_lib.layout_primitives.StyleRole.TRANSITION, False)
+		slide_lib.layout_primitives.StyleRole.SECTION, False)
 	if image is None:
 		return SpecialtySlideComponents((slot,), (outer, inner, text, star), surface)
 	image_rectangle = slide_lib.layout_primitives.LogicalRectangle(720, 175, 370, 460)

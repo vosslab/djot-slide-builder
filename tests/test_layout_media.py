@@ -12,6 +12,88 @@ import slide_lib.presentation_theme
 import layout_test_helpers
 
 
+def test_movie_panel_gives_text_the_space_left_of_a_portrait_poster(tmp_path: pathlib.Path) -> None:
+	"""Movie descriptions stay editable beside a narrower, uncropped 2:3 poster."""
+	PIL.Image.new("RGB", (120, 180), "navy").save(tmp_path / "poster.png")
+	source = ("=== layout: movie-panel\n\n# Movie (2026)\n\n@body\n\n"
+		"Original plot and review wording.\n\n@poster\n\n![Poster](poster.png)\n")
+	slide = layout_test_helpers.compile_source(tmp_path, source).plan.slides[0]
+	body = next(slot for slot in slide.slots if slot.slot_id == "body")
+	poster = next(slot for slot in slide.slots if slot.slot_id == "poster")
+	assert body.rectangle.width > poster.rectangle.width
+	assert body.rectangle.x + body.rectangle.width < poster.rectangle.x
+	assert poster.rectangle.width / poster.rectangle.height == pytest.approx(2 / 3)
+	text = next(item.content for item in slide.objects
+		if item.slot_id == "body" and isinstance(item.content, slide_lib.layout_content.TextContent))
+	assert "".join(run.text for run in text.paragraphs[0].inlines) == "Original plot and review wording."
+	picture = next(item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.PictureContent))
+	assert picture.rectangle == poster.rectangle
+	with pytest.raises(ValueError, match="poster requires exactly one component image"):
+		layout_test_helpers.compile_source(tmp_path,
+			source.replace("![Poster](poster.png)", "Poster description"))
+
+
+def test_prompt_supplies_emphasis_and_readable_examples_without_color_markup(
+		tmp_path: pathlib.Path) -> None:
+	"""Icebreakers retain their prompt/examples hierarchy and editable text."""
+	slide = layout_test_helpers.compile_source(tmp_path, """=== layout: prompt
+
+# Icebreaker
+
+@prompt
+
+Is a hot dog a sandwich? Is ice cream a soup?
+
+@examples
+
+State your name, major, and post-grad plans.
+
+- Pick one and defend your rule: ingredients, shape, temperature, or how it is eaten.
+- Examples: "A sandwich needs two slices." "Ice cream becomes soup when it melts!"
+""").plan.slides[0]
+	prompt = next(item for item in slide.objects if item.slot_id == "prompt")
+	examples = next(item for item in slide.objects if item.slot_id == "examples")
+	assert isinstance(prompt.content, slide_lib.layout_content.TextContent)
+	assert isinstance(examples.content, slide_lib.layout_content.TextContent)
+	assert all(run.style.foreground == "7B1E2B" and run.style.bold
+		for paragraph in prompt.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun))
+	assert all(run.style.foreground == "333333"
+		for paragraph in examples.content.paragraphs for run in paragraph.inlines
+		if isinstance(run, slide_lib.layout_content.TextRun))
+	assert prompt.content.paragraphs[0].typography.selected_size_pt > \
+		examples.content.paragraphs[0].typography.selected_size_pt >= \
+		slide_lib.presentation_theme.default_theme().body_floor_size_pt
+	assert prompt.rectangle.y + prompt.rectangle.height <= examples.rectangle.y
+	assert not prompt.reveal_targets and not examples.reveal_targets
+
+
+def test_question_ask_is_one_editable_centered_question_without_examples(tmp_path: pathlib.Path) -> None:
+	"""A lesson pause remains a single question rather than inheriting the icebreaker contract."""
+	question = "Given Ss Yy Aa, what gametes are possible?"
+	slide = layout_test_helpers.compile_source(tmp_path,
+		f"=== layout: question-ask\n\n# {question}\n").plan.slides[0]
+	text = [item for item in slide.objects
+		if isinstance(item.content, slide_lib.layout_content.TextContent)]
+	assert len(text) == 1
+	paragraph = text[0].content.paragraphs[0]
+	assert "".join(run.text for run in paragraph.inlines) == question
+	assert paragraph.properties.horizontal_alignment is slide_lib.layout_primitives.HorizontalAlignment.CENTER
+	assert all(run.style.foreground == "7B1E2B" for run in paragraph.inlines)
+	assert not text[0].reveal_targets
+	with pytest.raises(ValueError, match="subtitle"):
+		layout_test_helpers.compile_source(tmp_path,
+			f"=== layout: question-ask\n\n# {question}\n\n## Supporting examples\n")
+
+
+def test_prompt_requires_supporting_examples(tmp_path: pathlib.Path) -> None:
+	"""An icebreaker cannot silently regress to a question with empty supporting space."""
+	with pytest.raises(ValueError, match="visible examples or suggestions"):
+		layout_test_helpers.compile_source(tmp_path,
+			"=== layout: prompt\n@prompt\nWhat is your sorting rule?\n@examples\n")
+
+
 def test_multiple_choice_reserves_the_answer_popup_from_each_visible_choice(
 		tmp_path: pathlib.Path) -> None:
 	"""A text-only question uses the shared adaptive choice geometry before reveal."""

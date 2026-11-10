@@ -16,10 +16,12 @@ color-theme: genetics
 
 @body
 
-- Ice Breaker and Announcements
-- Gene Trees and Distance Matrices
-- Gene Tree Group Activity
-- Molecular Clocks and Evolutionary Time
+- Group Quiz 4
+- Icebreaker and Announcements
+- Chapter 11:
+  - Gene Trees
+  - Gene Tree Handout Activity
+  - Evolutionary Time
 - Closing Remarks
 
 === layout: one-panel
@@ -28,7 +30,7 @@ color-theme: genetics
 
 @body
 
-- Quiz 5 is due before class; group quiz during class.
+- Quiz 5, if retained, is due before class; group quiz during class.
 - Homework assignments 11 and 12 are due December 8.
 - The cumulative final exam is December 15.
 
@@ -91,7 +93,7 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Nov 17]{color=#AAAAAA}
+- [Quiz 4: Dec 01]{color=#990000}
 - [Quiz 5: Dec 08]{color=#990000}
 - [Final exam: Dec 15]{color=#000000}
 

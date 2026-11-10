@@ -1,6 +1,34 @@
 # Lecture 10 source map
 
-## Current homework revision
+## November 10 current artifacts
+
+The full original/current comparison, local repairs, and restored agenda are recorded in
+[LECT10_REVIEW.md](LECT10_REVIEW.md#november-10-whole-lecture-comparison).
+
+| Deck | Authored / ODP | Visible PDF | Hidden |
+| --- | --- | --- | --- |
+| A | 64 | 43 | 21 |
+| B | 54 | 54 | 0 |
+| C | 27 | 27 | 0 |
+| D | 65 | 65 | 0 |
+
+The historical bridges below predate the latest topic dividers and question-layout repairs.
+Use the November 10 review for current page references. The continuation on chromosome
+rearrangements is December 1; November 17 covers gene trees/population genetics and movie night.
+Pages A5-8 present the four movie choices in `movie-panel`; A9 recaps their titles and posters
+for the vote. Their wording and poster bytes come from the supplied movie-choice ODP. The five
+inserted pages move the existing contact slides to A16-17. See
+[LECT10_REVIEW.md](LECT10_REVIEW.md#november-10-movie-choices).
+Pages D41 and D44 use `question-ask` for the existing questions to ponder. A10 remains an
+icebreaker using the separate `prompt` layout with required examples; counts are unchanged.
+D26 restores the original D39 question's full-width choices, with shorter wording and counts
+out of four gametes. Its answer remains C with the native reveal.
+The initial text/color follow-up overreached into established instructor prose. The subsequent
+correction restores that wording on 39 B-D pages and the shared 10A announcements. Slide order,
+counts, figures, and eight question answers remain unchanged. See
+[LECT10_REVIEW.md](LECT10_REVIEW.md#november-10-instructor-wording-correction).
+
+## October 31-November 3 homework revision (historical)
 
 The instructor approved these changes on October 31, 2026. Lecture 10 remains disease-focused;
 deletion mapping and translocation segregation are assigned to Lecture 11.

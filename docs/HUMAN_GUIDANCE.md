@@ -105,9 +105,22 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   from converted slides, including headings, captions, citations, and editable diagram labels.  They are textbook-slide artifacts. Preserve the useful explanatory caption and diagram content.
 
 - Subsection backgrounds should be a variation of the course-dependent section color.
-- Use pale course-tint subsections with black text and black horizontal stripes. Keep the
-  background contrast between section and subsection above 3:1; sections retain their saturated
-  course color, white text, and rounded frame.
+- Keep divider backgrounds recognizably course-colored, with the original course hue and saturation.
+- Define dark, medium, light, and ultra light course colors. Keep the steps from black through
+  dark, medium, and light to white at least 2:1, aiming near `21**(1/4)` (2.14:1).
+- Use my November 10 `section_headers.odp` / `section_headers.pdf` as the appearance reference.
+  Their colors are guesses; use the measured course colors.
+- Keep slide text editable. Decorative shapes are an implementation choice; my LibreOffice
+  shapes demonstrate the appearance I want using the tool available to me.
+- Sections use dark color, white text, and a rounded frame. Subsections use a light center band,
+  medium top/bottom, and black text. Subsubsections use a dark center panel, light edges, and
+  white text.
+- Use an ultra light center hexagon and dark corners for the open-ended `question-ask` layout,
+  with dark red question text. Use ultra light cover cards,
+  a medium-to-white header gradient, and dark end slides with ultra light THE END text.
+- Use question-ask slides sparingly: a divider-like card with a question to ponder. Genetics
+  Lecture 04H slide 5 and Lecture 06D slide 43 are examples. Icebreakers use the separate `prompt`
+  layout with a colored prompt and required dark supporting examples.
 
 ## Labeled diagram reconstruction
 
@@ -194,8 +207,8 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 ## Course links and evergreen announcements
 
-- Keep subsection dividers bilaterally symmetric like the theme. Replace the short underline
-  with full horizontal stripes, one at the top and one at the bottom.
+- Keep subsection dividers bilaterally symmetric, with a light center band and equal medium-color
+  regions at the top and bottom, following the November 10 reference.
 
 - Remove the obsolete Gmail-account warning from my contact slide; that issue was in 2019.
   Preserve the purple anonymous-form option and hanging bullet indents. Email addresses
@@ -227,6 +240,15 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   forgetting them, not an intentional alternate structure. Apply the consistent template going forward while keeping seasonal groups conditional.
 - Put a Next Week slide immediately after the existing agenda, focused on work due and what
   happens in class the following week. Use the current course schedule; do not invent events.
+- Keep my voice in agenda slides. Use slide-deck titles and a few words for topic labels,
+  such as "Natural selection". Match my original agenda examples.
+- For new live teaching text, use short phrases and keywords; I do the talking. Preserve my existing
+  prose and first-person wording. Target the LLM-authored additions in a voice review; my long
+  established slides supply the baseline.
+- Use color for meaningful distinctions. Keep announcement explanations in regular dark type;
+  use spacing and hierarchy to make them readable, with the original contact-method colors.
+- Use a `movie-panel` layout for movie-slide-maker output: editable text fills the left, with a
+  designated portrait-poster area on the right that preserves the poster's consistent aspect ratio.
 - Textbook placement can be informational/syllabus or course-content/logistics; neither is a
   correctness failure. The current shared Genetics group places it under Course Content.
 - There is no fixed historical Exam/Quiz order. Prefer assessment overview, Exam, Quiz,
@@ -350,8 +372,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - For Mitotic Cross-Over, start from crossing over between linked genes, then use twin spots.
   Keep that story clear when adding the DNA-repair connection and other examples.
 
-- I would like more section and subsection slides, particularly in long decks such as 09B.
-  Aim for about one divider per ten slides, placed at conceptual transitions.
+- Use sections for broad units and subsections for the teaching topics within them. Keep the
+  hierarchy consistent across a lecture's content decks, and aim for a subsection every ten slides
+  or so at conceptual transitions, particularly in long Genetics decks such as 09B.
 - Add more section/subsection slides to 09C because it moves quickly between topics.
   Look in my local genetics books for twin-spot homework ideas.
 - I like the simple twin-spot prediction problem.  - Put the twin-spot prediction problem into Lecture 09C, not just the research notes.
@@ -585,8 +608,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - For Genetics Lecture 08 conversion, apply this prose-preservation policy and try the existing
   built-in layouts; use `@replaceme` when they cannot faithfully represent difficult source material.
-- Use the question-and-answer layout for multiple-choice questions. Emphasize changed
-  conditions with more than color alone, and separate alternatives visually in word problems.
+- Use the question-and-answer layout for every multiple-choice or select-all-that-apply problem,
+  including added homework problems. Keep extended explanations on following slides. Emphasize
+  changed conditions with more than color alone, and separate alternatives visually in word problems.
 
 - Put visible spacing on both sides of multiplication signs in equations and factorial examples.
 
@@ -682,10 +706,14 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - When the weather page has two options, make a slide for both (November 3, 2026).  - Put "NWS Chicago, retrieved [date]: https://www.weather.gov/lot/weatherstory" in
   `@citation`, not in the weather caption.
 
-- Use restrained color on icebreaker slides: emphasize the main prompts with the preferred
-  palette, keeping example answers mostly in ordinary text.
-
-- Give students concrete examples with icebreaker questions to help them get talking and share.
+- Make icebreakers fun and tangentially related to some aspect of the week's content. Use the
+  new-movie/popular-culture question as a fallback for weeks without a topic idea.
+- Vary the premise, type of response, and example answers across weeks. Compare the previous
+  two lectures when choosing the next icebreaker.
+- Always color the main icebreaker prompt with the preferred palette. Every icebreaker requires
+  concrete examples and suggestions in black or dark gray to help students start talking.
+- Use a reusable `prompt` layout for icebreakers and discussion questions, with automatic main
+  prompt emphasis and dark supporting examples.
 
 - Build a reusable collection from old announcement slides, preserving prompt wording, examples,
   and source provenance. Keep subject-specific prompts and general fallbacks.

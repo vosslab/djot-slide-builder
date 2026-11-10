@@ -17,9 +17,14 @@ color-theme: genetics
 @body
 
 - Icebreaker and Announcements
-- Karyotypes
-- Chromosomal Positions and Nomenclature
-- Chromosome Aneuploidy
+  - Movie Selection
+  - Quiz 5 Vote
+- [*Chapter 9:*]{color=#24578F}
+  - Karyotypes
+  - Chromosome Nomenclature
+  - Chromosome Aneuploidy
+  - Polyploidy
+  - Prenatal Testing
 - Closing Remarks
 
 === layout: one-panel
@@ -28,10 +33,12 @@ color-theme: genetics
 
 @body
 
-- Gene trees and population genetics; gene-tree activity.
-- Homework assignments 09 and 10 are due.
-- Movie Night: choose our movie today!
-- Quiz 4 is due December 1; no class November 24.
+- [*Gene Trees and Population Genetics*]{color=#24578F}
+  - Gene-tree activity
+- [*Homework 09 and 10*]{color=#990000}: due November 17
+- [*Movie Night*]{color=#24578F}: choose our movie today!
+- Quiz 4: December 1
+- November 24: *no class*
 
 @citation
 
@@ -43,9 +50,111 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 @body
 
-- Movie Night is Tuesday, November 17.
+- [*Movie Night*]{color=#24578F}: Tuesday, November 17
 - Choose from *Our Times*, *Biosphere*, *Vesper*, and *The Animal Kingdom*.
-- See the separate movie-choice slides for descriptions and details.
+- Vote after the four movie slides.
+
+=== layout: movie-panel
+
+# *Our Times (2025)*
+
+@body
+
+- Plot\: In 1966, married scientists Nora and H&#233;ctor invent a time machine that transports them to 2025. While Nora thrives in a world offering women greater opportunities in science, H&#233;ctor struggles to adapt, putting their marriage and careers to the test.
+  - IMDb *5.4*,&#160;3.3k&#160;votes
+  - RT&#160;audience\:&#160;&#127871;&#128078;&#160;48%
+- Genre\: Science Fiction, Romance, Comedy
+- Director\: Chava Cartas
+- Run time\: 90 min
+- *Original language*\: Spanish
+- *Review Summary*\: Critics praised the film&#8217;s exploration of changing gender roles and its engaging performances, but found the writing uneven, with predictable conflicts and an unsatisfying conclusion.
+
+@poster
+
+![Our Times (2025) movie poster](assets/movie_choices/image_001.jpg)
+
+=== layout: movie-panel
+
+# *Biosphere (2023)*
+
+@body
+
+- Two men believe they are the last humans alive, surviving inside a sealed biosphere after an unexplained catastrophe. When their carefully maintained ecosystem begins to change, they face an unexpected biological challenge that could determine humanity&#8217;s future.
+  - IMDb *5.5*,&#160;3.3k&#160;votes | Metacritic\:&#160;&#129000;&#160;59
+  - RT&#160;critics\:&#160;&#127813;&#160;80% | RT&#160;audience\:&#160;&#127871;&#160;60%
+- Genre\: Comedy, Drama, Science Fiction, Fantasy
+- Director\: Mel Eslyn
+- Run time\: 106 min
+- *Review Summary*\: Critics praised the chemistry between the two leads, quirky humor, and unusual scientific premise, but some found the story repetitive, poorly paced, and ultimately unsatisfying.
+
+@poster
+
+![Biosphere (2023) movie poster](assets/movie_choices/image_002.jpg)
+
+=== layout: movie-panel
+
+# *Vesper (2022)*
+
+@body
+
+- After Earth&#8217;s ecosystems collapse, a 13-year-old girl uses her skills in genetic engineering to survive while caring for her paralyzed father. When she encounters a mysterious stranger, she discovers an opportunity that could change their future.
+  - IMDb *6.0*,&#160;28k&#160;votes | Metacritic\:&#160;&#129001;&#160;70
+  - RT&#160;critics\:&#160;&#127813;&#127942;&#160;91% | RT&#160;audience\:&#160;&#127871;&#128078;&#160;58%
+- Genre\: Science Fiction, Drama, Adventure, Fantasy
+- Director\: Kristina Buo&#382;yt&#279;, Bruno Samper
+- Run time\: 112 min
+- *Review Summary*\: Critics praised the stunning visuals, imaginative biological world, and intelligent ideas, but found the story slow-moving and less compelling than its impressive setting.
+
+@poster
+
+![Vesper (2022) movie poster](assets/movie_choices/image_003.jpg)
+
+=== layout: movie-panel
+
+# *The Animal Kingdom (2023)*
+
+@body
+
+- A mysterious condition is transforming humans into animal-like creatures. As society struggles to respond, a father and his teenage son search for their missing wife and mother, who is undergoing the transformation herself.
+  - IMDb *6.7*,&#160;12k&#160;votes | Metacritic\:&#160;&#129001;&#160;69
+  - RT&#160;critics\:&#160;&#127813;&#127942;&#160;83% | RT&#160;audience\:&#160;&#127871;&#160;75%
+- Genre\: Adventure, Drama, Science Fiction
+- Director\: Thomas Cailley
+- Run time\: 127 min
+- *Original language*\: French
+- *Review Summary*\: Critics praised the strong performances, emotional storytelling, and imaginative creature designs, but some felt the film explored its intriguing scientific and social themes only superficially.
+
+@poster
+
+![The Animal Kingdom (2023) movie poster](assets/movie_choices/image_004.jpg)
+
+=== layout: four-panels
+
+# Movie Night: Vote
+
+@top-left
+
+## Our Times (2025)
+
+![Our Times poster](assets/movie_choices/image_001.jpg)
+
+@top-right
+
+## Biosphere (2023)
+
+![Biosphere poster](assets/movie_choices/image_002.jpg)
+
+@bottom-left
+
+## Vesper (2022)
+
+![Vesper poster](assets/movie_choices/image_003.jpg)
+
+@bottom-right
+
+## The Animal Kingdom (2023)
+
+![The Animal Kingdom poster](assets/movie_choices/image_004.jpg)
 
 === layout: big-image
 hidden: true
@@ -62,15 +171,21 @@ Intermittent shower chances will linger through at least the middle of the week 
 
 NWS Chicago, retrieved Nov 01, 2026: https://www.weather.gov/lot/weatherstory
 
-=== layout: one-panel
+=== layout: prompt
 
 # Icebreaker
 
-@body
+@prompt
 
-- State your name, major, and post-grad plans
-- What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?
-  - Dr. Voss\:
+Is a hot dog a sandwich?\
+Is ice cream a soup?
+
+@examples
+
+State your name, major, and post-grad plans.
+
+- Pick one and defend your rule: ingredients, shape, temperature, or how it is eaten.
+- Examples: "A sandwich needs two slices of bread." "Ice cream becomes soup when it melts!"
 
 === include: repo:evergreen/youtube_channel.djot
 
@@ -116,18 +231,18 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 @left
 
-## Option 1: Keep Quiz 5
+## [Option 1: Keep Quiz 5]{color=#24578F}
 
 - *Dec 1*: Group Quiz 4
-- *Dec 8*: Group Quiz 5
+- *Dec 8*: [*Group Quiz 5*]{color=#24578F}
 - *Dec 15*: Final Exam
 
 @right
 
-## Option 2: Drop Quiz 5
+## [Option 2: Drop Quiz 5]{color=#935D00}
 
 - *Dec 1*: Group Quiz 4
-- *Dec 8*: No Quiz 5
+- *Dec 8*: [*No Quiz 5*]{color=#935D00}
 - *Dec 15*: Final Exam
 
 === layout: two-panels
@@ -136,16 +251,17 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 @left
 
-## Benefits
+## [Benefits]{color=#24578F}
 
-- Group quizzes are easier to do well on and can boost your grade.
-- Another quiz helps you prepare for the Final Exam.
+- Group quizzes: easier to do well
+  - Possible *grade boost*
+- [*Final Exam practice*]{color=#24578F}
 
 @right
 
-## Cost
+## [Cost]{color=#935D00}
 
-- You have to study for another quiz.
+- Study for *another quiz*
 
 === layout: one-panel
 
@@ -153,9 +269,9 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 
 @body
 
-- *1. Keep Quiz 5*
+- [*1. Keep Quiz 5*]{color=#24578F}
   - Group Q4: Dec 1; Group Q5: Dec 8; Final Exam: Dec 15
-- *2. Drop Quiz 5*
+- [*2. Drop Quiz 5*]{color=#935D00}
   - Group Q4: Dec 1; no Q5; Final Exam: Dec 15
 
 *Vote for option 1 or option 2.*

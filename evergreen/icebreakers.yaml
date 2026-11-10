@@ -1,6 +1,10 @@
-usage: Reusable one-panel Djot icebreaker prompts. Select explicitly and copy the prompt and examples
-  into the weekly announcement opening under the Icebreaker title. Source references identify
-  prompt provenance.
+usage: Reusable prompt-layout Djot icebreakers. Choose a fun prompt tangentially related to the week's
+  content, or write one for that topic. Compare the previous two lectures' prompts and examples,
+  then choose a different premise and type of response. Start with layout prompt and the Icebreaker
+  title, then copy the body fragment containing the required prompt and examples slots. The layout
+  supplies dark red question text and dark gray supporting text automatically. Use popular-culture as
+  a fallback for weeks without a topic idea.
+  Source references identify the original prompts; examples and formatting may be adapted.
 icebreakers:
 - id: outdoor-activities
   tags:
@@ -9,9 +13,15 @@ icebreakers:
   source: genetics/LECT03/djot/lect03a-2026_announcements.djot, authored slide 3
   title: Icebreaker
   body: |-
-    - State your name, major, and post-grad plans
-    - We had great weather this weekend. What is your favorite outdoor activity?
-      - Dr. Voss\: riding my bicycle, watching my kids play sports, go on a walk
+    @prompt
+
+    We had great weather this weekend. What is your favorite outdoor activity?
+
+    @examples
+
+    State your name, major, and post-grad plans
+
+    - Dr. Voss\: riding my bicycle, watching my kids play sports, go on a walk
 - id: popular-culture
   tags:
   - general
@@ -19,9 +29,16 @@ icebreakers:
   source: genetics/LECT03/djot/lect03a-2026_announcements.djot, authored slide 4
   title: Icebreaker
   body: |-
-    - State your name, major, and post-grad plans
-    - What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?
-      - Dr. Voss\:
+    @prompt
+
+    What piece of popular culture are you looking forward to?
+
+    @examples
+
+    State your name, major, and post-grad plans
+
+    - Ideas: a movie, album, book, concert, or video game.
+    - Example: "I'm looking forward to the next season of my favorite show."
 - id: soft-drink-names
   tags:
   - general
@@ -29,9 +46,17 @@ icebreakers:
   source: biotech/LECT03/djot/lect03a-2026_announcements.djot, authored slide 5
   title: Icebreaker
   body: |-
+    @prompt
+
+    What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?
+
+    @examples
+
+    State your name, major, and plans after graduation.
+
     - If no one is talking, please be the first to speak and get things started.
-    - State your name, major, and plans after graduation.
-    - [What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?]{color=red}
+    - Examples: soda, pop, soft drink, or coke.
+    - Does your family use the same word as your friends?
 - id: cooking
   tags:
   - general
@@ -39,9 +64,15 @@ icebreakers:
   source: biotech/LECT03/djot/lect03a-2026_announcements.djot, authored slide 7
   title: Icebreaker
   body: |-
-    - State your name, major, and post-grad plans
-    - [What is the best dish you can cook?]{color=red}
-      - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
+    @prompt
+
+    What is the best dish you can cook?
+
+    @examples
+
+    State your name, major, and post-grad plans
+
+    - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
 - id: scientific-misconduct
   tags:
   - biotechnology
@@ -50,8 +81,14 @@ icebreakers:
   source: biotech/LECT05/djot/lect05a-2026_biotech_announcements.djot, authored slide 3
   title: Icebreaker
   body: |-
-    - State your name, major, and plans after graduation.
-    - [You discover scientific misconduct at your company. What would you do?]{color=red}
+    @prompt
+
+    You discover scientific misconduct at your company. What would you do?
+
+    @examples
+
+    State your name, major, and plans after graduation.
+
     - Consider falsified data, hidden negative results, or false product claims.
     - Gather evidence, confront leadership, consult an expert, or report outside the company?
     - If no one is talking, please be the first to speak.
@@ -63,9 +100,16 @@ icebreakers:
   source: biotech/LECT06/djot/lect06a-2026_biotech_announcements.djot, authored slide 3
   title: Icebreaker
   body: |-
-    - State your name, major, and plans after graduation.
-    - [You can genetically modify one animal. What would you change?]{color=red}
+    @prompt
+
+    You can genetically modify one animal. What would you change?
+
+    @examples
+
+    State your name, major, and plans after graduation.
+
     - Choose a farm animal, pet, or wild species.
+    - Ideas: a glow-in-the-dark cat, a heat-tolerant cow, or a dog that sheds less.
     - Explain the useful trait and one possible tradeoff.
     - If no one is talking, please be the first to speak.
 - id: pets
@@ -75,10 +119,16 @@ icebreakers:
   source: Instructor request, October 20, 2026; Genetics LECT07A
   title: Icebreaker
   body: |-
+    @prompt
+
+    What pets do you have?
+
+    @examples
+
+    State your name, major, and plans after graduation.
+
     - If no one is talking, please be the first to speak and get things started.
-    - State your name, major, and plans after graduation.
-    - [What pets do you have?]{color=red}
-      - Dog, cat, none, other.
+    - Dog, cat, none, other.
 - id: robot-chores
   tags:
   - general
@@ -86,6 +136,125 @@ icebreakers:
   source: Instructor selection, Genetics LECT09A, November 3, 2026; authored slide 3
   title: Icebreaker
   body: |-
-    - State your name, major, and post-grad plans
-    - [What everyday task would you permanently hand over to a robot?]{color=red}
-      - Examples: laundry, dishes, grocery shopping.
+    @prompt
+
+    What everyday task would you permanently hand over to a robot?
+
+    @examples
+
+    State your name, major, and post-grad plans
+
+    - Examples: laundry, dishes, grocery shopping.
+- id: food-classification
+  tags:
+  - general
+  - genetics
+  - classification
+  - debate
+  source: Instructor food-classification questions, November 10, 2026; Genetics LECT10A
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    Is a hot dog a sandwich?\
+    Is ice cream a soup?
+
+    @examples
+
+    State your name, major, and post-grad plans.
+
+    - Pick one and defend your rule: ingredients, shape, temperature, or how it is eaten.
+    - Examples: "A sandwich needs two slices of bread." "Ice cream becomes soup when it melts!"
+- id: look-alike-mixup
+  tags:
+  - general
+  - karyotypes
+  - recognition
+  - personal-experience
+  source: Newly authored, November 10, 2026; recognizing similar-looking chromosomes
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    What two things do you keep mixing up because they look alike?
+
+    @examples
+
+    State your name, major, and post-grad plans.
+
+    - Ideas: remote controls, look-alike actors, spice jars, or similar app icons.
+    - Example: "I grab the TV remote when I want the fan remote."
+- id: missing-half-a-pair
+  tags:
+  - general
+  - chromosome-segregation
+  - everyday-frustrations
+  source: Newly authored, November 10, 2026; keeping paired objects together
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    Which item is most annoying to lose one of a pair?
+
+    @examples
+
+    State your name, major, and post-grad plans.
+
+    - Ideas: gloves, socks, earbuds, shoes, or chopsticks.
+    - Example: "One missing earbud ruins my entire bus ride."
+- id: unhelpful-directions
+  tags:
+  - general
+  - chromosome-addresses
+  - mapping
+  - short-story
+  source: Newly authored, November 10, 2026; precise addresses and useful landmarks
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    What is the least helpful set of directions you have ever received?
+
+    @examples
+
+    State your name, major, and post-grad plans.
+
+    - Ideas: "Turn at the big tree," "It's just over there," or a landmark that is gone.
+    - Example: "Turn where the gas station used to be."
+- id: group-traditions
+  tags:
+  - general
+  - population-variation
+  - social-customs
+  source: Newly authored, November 10, 2026; variation among groups
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    What harmless tradition is unique to your family or friend group?
+
+    @examples
+
+    State your name, major, and post-grad plans.
+
+    - Ideas: a birthday ritual, a game-night rule, or a word only your group uses.
+    - Example: "We have breakfast for dinner on birthdays."
+- id: movie-perspectives
+  tags:
+  - general
+  - movie-night
+  - perspective
+  - storytelling
+  source: Newly authored, November 10, 2026; movie-night discussion
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    Which movie or story would you retell from another character's point of view?
+
+    @examples
+
+    State your name, major, and post-grad plans.
+
+    - Ideas: Jaws from the shark's side, Jurassic Park from a dinosaur's side, or a fairy tale from the sidekick's.
+    - Example: "Jurassic Park, narrated by a dinosaur defending its home."

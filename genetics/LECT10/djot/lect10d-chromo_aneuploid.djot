@@ -18,10 +18,10 @@ color-theme: genetics
 
 @body
 
-- Distinguish polyploidy, aneuploidy, trisomy, and monosomy.
-- Predict gametes after nondisjunction in meiosis I or II.
-- Relate trisomy 21 to chromosome segregation.
-- Compare prenatal screening with diagnostic chromosome testing.
+- Distinguish [*polyploidy*]{color=#24578F} and [*aneuploidy*]{color=#935D00}
+- Compare [*trisomy*]{color=#003FFF} and [*monosomy*]{color=#D40000}
+- Predict gametes after [*nondisjunction*]{color=#24578F}
+- Compare [*screening*]{color=#24578F} and [*diagnostic testing*]{color=#935D00}
 
 === layout: section
 
@@ -61,15 +61,15 @@ color-theme: genetics
 {table-style=comparison}
 | Question | Terms |
 | --- | --- |
-| Complete chromosome sets? | *Euploid*: whole sets; *polyploid*: more than two sets |
-| Extra or missing individual chromosomes? | *Aneuploid* |
-| DNA gained or lost in a rearrangement? | *Unbalanced* if gained/lost; *balanced* if neither |
+| Complete chromosome sets? | [*Euploid*]{color=#24578F}: whole sets; [*polyploid*]{color=#24578F}: more than two sets |
+| Extra or missing individual chromosomes? | [*Aneuploid*]{color=#935D00} |
+| DNA gained or lost in a rearrangement? | *Unbalanced*: gained/lost; *balanced*: neither |
 
-These are different questions. Count chromosomes *and* track their DNA.
+[*Chromosome count*]{color=#24578F} and [*DNA content*]{color=#935D00}: separate questions
 
-We will return to chromosome rearrangements on December 1.
+Chromosome rearrangements: December 1
 
-=== layout: section
+=== layout: subsection
 
 # Polyploid
 
@@ -95,19 +95,19 @@ We will return to chromosome rearrangements on December 1.
 
 @body
 
-- Start with a *diploid* cell: two complete chromosome sets.
-- DNA is copied, but cell division does not finish.
-- The cell can keep the copies intended for *both daughter cells*.
+- [*Diploid cell*]{color=#24578F}: two complete sets
+- DNA copying, then *incomplete cell division*
+- Copies for [*both daughter cells*]{color=#935D00} retained
 
 {table-style=comparison}
 | Outcome | Chromosome Sets |
 | --- | --- |
 | Division finishes | Two daughter cells, two sets each |
-| Division fails | One cell can retain four sets: *tetraploid* |
+| Division fails | One cell, four sets: [*tetraploid*]{color=#935D00} |
 
-A human example, with all four sets in one nucleus: *46,XY* becomes *92,XXYY*.
+One human nucleus: [*46,XY*]{color=#24578F} -> [*92,XXYY*]{color=#935D00}
 
-*DNA copying alone does not make a cell tetraploid.* A normally replicated diploid cell has sister chromatids.
+*DNA copying alone*: sister chromatids, [*still diploid*]{color=#24578F}
 
 @citation
 
@@ -130,18 +130,20 @@ each with two sister chromatids; DNA replication alone does not change its ploid
 {table-style=comparison column-widths="1.5,3"}
 | Quantity | What Are We Counting? |
 | --- | --- |
-| *Monoploid, m* | Chromosomes in one basic set |
-| *Haploid, h* | Chromosomes in a gamete after regular reduction |
+| [*Monoploid, m*]{color=#076DAD} | Chromosomes in one basic set |
+| [*Haploid, h*]{color=#B74300} | Chromosomes in a gamete after regular reduction |
 
-- Diploid: one gamete has one basic set
-- Octoploid: one gamete has *four* basic sets
-- These numbers need not be equal in a polyploid
+- Diploid parent: gamete with *one basic set*
+- Octoploid parent: gamete with *four basic sets*
+- Polyploids: [*m*]{color=#076DAD} and [*h*]{color=#B74300} can differ
 
 === layout: multiple-choice
 
 @question
 
-An octoploid plant has 64 chromosomes in a somatic cell. What are its monoploid (m) and haploid (h) numbers? Assume regular reduction in meiosis.
+An octoploid plant has *64 chromosomes* per somatic cell.
+
+What are its [*monoploid (m)*]{color=#076DAD} and [*haploid (h)*]{color=#B74300} numbers? Assume regular reduction in meiosis.
 
 - A. m = 8, h = 8
 - B. m = 32, h = 32
@@ -167,8 +169,8 @@ C. m = 8, h = 32
 | One gamete | Half of 64 chromosomes | [*h = 32*]{color=#B74300} |
 
 - [*Answer: C*]{color=#007A00}
-- A gamete still contains *four basic sets*
-- The homework writes octoploid as 8n; here, eight refers to the number of basic sets
+- One gamete: *four basic sets*
+- Homework notation *8n*: [*eight basic sets*]{color=#076DAD}
 
 === layout: multiple-choice
 
@@ -182,8 +184,6 @@ An octoploid plant has *72 chromosomes* in a somatic cell. How many chromosomes 
 - D. 18
 - E. 36
 
-Hint: 72 &divide; 2 = 36; 72 &divide; 8 = 9.
-
 @answer
 
 E. 36 chromosomes
@@ -194,13 +194,13 @@ E. 36 chromosomes
 
 @body
 
-- Meiosis reduces the chromosome count by half
+- [*Meiosis*]{color=#B74300}: chromosome count halved
 - 72 &divide; 2 = [*36 chromosomes per gamete*]{color=#007A00}
 - [*Answer: E*]{color=#007A00}
-- 72 &divide; 8 = 9 is the number in *one basic set*
+- [*One basic set*]{color=#076DAD}: 72 &divide; 8 = 9
 - Four basic sets per gamete: 4 &times; 9 = 36
 
-=== layout: section
+=== layout: subsection
 
 # Aneuploid
 
@@ -212,7 +212,7 @@ E. 36 chromosomes
 
 - [*Trisomy*]{color=#003FFF}: three copies of one chromosome
 - [*Monosomy*]{color=#D40000}: one copy of one chromosome
-- The change affects an individual chromosome, rather than a whole set
+- [*Aneuploidy*]{color=#935D00}: individual chromosomes, not whole sets
 
 @right
 
@@ -237,15 +237,15 @@ E. 36 chromosomes
 {table-style=comparison text-align=left}
 | Karyotype Part | Meaning |
 | --- | --- |
-| 47 | Total chromosome count |
-| XY | Sex-chromosome complement |
-| +21 | Extra copy of chromosome 21 |
+| [*47*]{color=#D40000} | Total chromosome count |
+| [*XY*]{color=#B74300} | Sex-chromosome complement |
+| [*+21*]{color=#003FFF} | Extra copy of chromosome 21 |
 
-The extra chromosome in the photograph is the *+21* in *47,XY,+21*.
+Photograph's extra chromosome: [*+21*]{color=#003FFF} in *47,XY,+21*
 
-DNA replication changes chromatids, not this chromosome count.
+DNA replication: more chromatids, *same chromosome count*
 
-=== layout: section
+=== layout: subsection
 
 # Nondisjunction
 
@@ -258,10 +258,10 @@ DNA replication changes chromatids, not this chromosome count.
 {table-style=comparison column-widths="1.5,2,2"}
 | Division | Normal Separation | Nondisjunction |
 | --- | --- | --- |
-| Meiosis I | Homologous chromosomes | Homologs go to the same cell |
-| Meiosis II | Sister chromatids | Sisters go to the same cell |
+| [*Meiosis I*]{color=#24578F} | Homologous chromosomes | Homologs together in one cell |
+| [*Meiosis II*]{color=#935D00} | Sister chromatids | Sisters together in one cell |
 
-Follow *one chromosome pair* first. The other chromosomes can separate normally.
+[*One chromosome pair*]{color=#24578F}; other chromosomes separating normally
 
 === layout: one-panel
 
@@ -269,7 +269,7 @@ Follow *one chromosome pair* first. The other chromosomes can separate normally.
 
 @body
 
-![Nondisjunction in Meiosis I](assets/visual_renewal/nondisjunction_1.drawn.svg)
+![Nondisjunction in Meiosis I](assets/lect10_repaired_figures/nondisjunction_meiosis_i.svg)
 
 === layout: one-panel
 
@@ -277,7 +277,7 @@ Follow *one chromosome pair* first. The other chromosomes can separate normally.
 
 @body
 
-![Nondisjunction in Meiosis II](assets/visual_renewal/nondisjunction_2.drawn.svg)
+![Nondisjunction in Meiosis II](assets/lect10_repaired_figures/nondisjunction_meiosis_ii.svg)
 
 === layout: one-panel
 
@@ -285,7 +285,7 @@ Follow *one chromosome pair* first. The other chromosomes can separate normally.
 
 @body
 
-![Follow the Four Gametes](assets/visual_renewal/nondisjunction_products.drawn.svg)
+![Follow the Four Gametes](assets/lect10_repaired_figures/nondisjunction_gametes.svg)
 
 === layout: one-panel
 
@@ -296,10 +296,10 @@ Follow *one chromosome pair* first. The other chromosomes can separate normally.
 {table-style=comparison column-widths="1.6,2.6,2.3"}
 | Error | Gametes | What Changed? |
 | --- | --- | --- |
-| Meiosis I | n + 1, n + 1, n - 1, n - 1 | All four have the wrong count |
-| Meiosis II in one cell | n + 1, n - 1, n, n | Two have the normal count |
+| [*Meiosis I*]{color=#24578F} | n + 1, n + 1, n - 1, n - 1 | All four abnormal |
+| [*Meiosis II*]{color=#935D00} in one cell | n + 1, n - 1, n, n | Two normal |
 
-Count chromosomes in *all four products* before choosing an answer.
+Count [*all four products*]{color=#24578F} before choosing an answer
 
 === layout: one-panel
 
@@ -310,43 +310,47 @@ Count chromosomes in *all four products* before choosing an answer.
 {table-style=working}
 | Gamete After an Error | Normal Gamete | Zygote | Result |
 | --- | --- | --- | --- |
-| n - 1 | n | [*2n - 1*]{color=#D40000} | Monosomy |
-| n + 1 | n | [*2n + 1*]{color=#003FFF} | Trisomy |
+| [*n - 1*]{color=#D40000} | n | [*2n - 1*]{color=#D40000} | [*Monosomy*]{color=#D40000} |
+| [*n + 1*]{color=#003FFF} | n | [*2n + 1*]{color=#003FFF} | [*Trisomy*]{color=#003FFF} |
 
-- Gamete notation: *n - 1* or *n + 1*
-- Diploid zygote notation: *2n - 1* or *2n + 1*
+- *Gamete*: n - 1 or n + 1
+- *Diploid zygote*: 2n - 1 or 2n + 1
 - For humans: 22 + 23 = 45; 24 + 23 = 47
 
 === layout: multiple-choice
 
 @question
 
-If cell X enters meiosis, and nondisjunction of one chromosome occurs in one of its daughter cells during meiosis II, what will be the result at the completion of meiosis?
+Meiosis I is normal. Nondisjunction of one chromosome occurs in [*one daughter cell*]{color=#24578F} during *meiosis II*. What chromosome counts will the four gametes have?
 
-- A) All the gametes descended from cell X will be diploid.
-- B) Half of the gametes descended from cell X will be n + 1, and half will be n - 1.
-- C) 1/4 of the gametes descended from cell X will be n + 1, 1/4 will be n - 1, and 1/2 will be n.
-- D) Two of the four gametes descended from cell X will be haploid, and two will be diploid.
+- A) Four diploid gametes (2n).
+- B) Two n + 1 and two n - 1.
+- C) One n + 1, one n - 1, and two n.
+- D) Two haploid (n) and two diploid (2n).
 
 @answer
 
-[Answer\: C]{color=red}
+Answer\: C
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# Try It: Follow the X Chromosome
+@question
 
-@body
+*Try It: Follow the X Chromosome*
 
-A father has X-linked recessive color blindness. The mother has two normal color-vision alleles. Their daughter has *45,X* and is color-blind.
+[*Father*]{color=#24578F}: X-linked recessive color blindness. [*Mother*]{color=#935D00}: two normal color-vision alleles. Daughter: color-blind, *45,X*.
+
+Assume no new mutation or chromosome loss after fertilization.
 
 Which parent produced the gamete missing a sex chromosome?
 
-- A. Mother; the daughter received her X from her father
-- B. Father; the daughter received her X from her mother
+- A. Mother; X from father
+- B. Father; X from mother
 - C. Cannot be determined
 
-Assume no new mutation or chromosome loss after fertilization.
+@answer
+
+A. Mother.
 
 === layout: one-panel
 
@@ -354,13 +358,16 @@ Assume no new mutation or chromosome loss after fertilization.
 
 @body
 
-- The daughter has one X chromosome
-- Her color-blindness allele came from her father
-- Her father contributed an X-bearing sperm
-- Her mother contributed an egg without an X
+- Daughter: *one X*, carrying the color-blindness allele
+- [*Father*]{color=#24578F}: X-bearing sperm; source of the allele
+- [*Mother*]{color=#935D00}: egg without an X
 - [*Answer: A*]{color=#007A00}
 
-This identifies the parent in this problem; it does not distinguish meiosis I from meiosis II.
+Parent identified; meiotic stage *undetermined*
+
+=== layout: subsection
+
+# Autosomal Trisomies
 
 === layout: one-panel
 
@@ -371,12 +378,12 @@ This identifies the parent in this problem; it does not distinguish meiosis I fr
 {table-style=comparison}
 | Extra Chromosome | Syndrome | Examples of Effects |
 | --- | --- | --- |
-| 13 | *Patau* | Brain and heart defects; cleft lip/palate |
-| 18 | *Edwards* | Low birthweight; organ defects; clenched fists |
-| 21 | *Down* | Developmental delay; variable health effects |
+| 13 | [*Patau*]{color=#007A00} | Brain and heart defects; cleft lip/palate |
+| 18 | [*Edwards*]{color=#935D00} | Low birthweight; organ defects; clenched fists |
+| 21 | [*Down*]{color=#003FFF} | Developmental delay; variable health effects |
 
-- Trisomy 13 and 18: many affected infants die early in life
-- Trisomy 21: survival into adulthood is common
+- Trisomy *13 and 18*: often fatal early in life
+- Trisomy *21*: survival into adulthood common
 
 @citation
 
@@ -459,10 +466,11 @@ https://pubmed.ncbi.nlm.nih.gov/2325123/
 
 @left
 
-- Risk for having a baby with Downs Syndrome increases with maternal age.
-  - Women who are 35 have a 1 in 350 chance of having a child with the syndrome
-    - Women who are 45 have a 1 in 30 chance.
-    - Woman less than 30, have 1 in 1000.
+[*Read the graph:*]{color=#24578F}
+
+- How does the frequency of Down syndrome change with maternal age?
+- Compare ages *25, 35, and 45*
+- Over which age range does the curve rise most steeply?
 
 @right
 
@@ -528,7 +536,7 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC4013030/
 
 https://www.cbsnews.com/video/is-iceland-on-track-to-eliminate-down-syndrome/
 
-=== layout: subsection
+=== layout: question-ask
 
 # Can People with Down Syndrome Have Children?
 
@@ -554,18 +562,17 @@ https://pubmed.ncbi.nlm.nih.gov/17094988/
 
 @body
 
-Assume a trisomic cell produces two equally common gamete types:
-
-- One copy of chromosome 21
-- Two copies of chromosome 21
-
-Each gamete joins a normal gamete with one copy. Assume equal fertilization and survival.
+- Trisomic cell: [*two equally common gamete types*]{color=#24578F}
+  - One copy of chromosome 21
+  - Two copies of chromosome 21
+- Normal gamete: *one copy*
+- Model assumptions: [*equal fertilization and survival*]{color=#935D00}
 
 *What fraction of the resulting zygotes would have trisomy 21?*
 
-This is a chromosome model, not an estimate of live-birth risk.
+*Chromosome model; not live-birth risk*
 
-=== layout: subsection
+=== layout: question-ask
 
 # How Do Three Homologs Separate?
 
@@ -601,15 +608,14 @@ This is a chromosome model, not an estimate of live-birth risk.
 
 @right
 
-- Half the gametes have one copy
-- Half have two copies
-- Add one copy from a normal gamete
-- Half the zygotes have two copies; half have three
+- Gametes: half with [*one copy*]{color=#24578F}, half with [*two*]{color=#935D00}
+- Normal gamete: *one more copy*
+- Zygotes: half with two copies, half with three
 - [*Model answer: 50% trisomy*]{color=#007A00}
 
-Actual reproductive outcomes also depend on fertilization and survival.
+Actual outcomes: additional effects of *fertilization and survival*
 
-=== layout: section
+=== layout: subsection
 
 # Prenatal Testing
 
@@ -622,11 +628,11 @@ Actual reproductive outcomes also depend on fertilization and survival.
 {table-style=comparison}
 | Screening | Diagnostic Testing |
 | --- | --- |
-| Estimates the chance of a condition | Tests for a condition in sampled cells or DNA |
-| Blood tests and ultrasound | For example, chromosome testing after CVS or amniocentesis |
-| Can have false positives and false negatives | Answers the question addressed by that laboratory test |
+| [*Chance estimate*]{color=#24578F} | [*Testing sampled cells or DNA*]{color=#935D00} |
+| Blood tests, ultrasound | Chromosome testing after CVS or amniocentesis |
+| False positives and false negatives possible | Answers specific to the laboratory test |
 
-A positive screen is a reason to discuss further testing, not a diagnosis.
+[*Positive screen*]{color=#24578F}: follow-up testing, *not a diagnosis*
 
 @citation
 
@@ -648,7 +654,7 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
 https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # Nuchal Translucency Scan
 
@@ -659,9 +665,11 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 - Estimates likelihood; does not establish a diagnosis
 - An abnormal screen can lead to an offer of diagnostic testing
 
-@right
+@top-right
 
 ![Lecture diagram](assets/lect10d-chromo_aneuploid/image_017.png)
+
+@bottom-right
 
 ![Lecture diagram](assets/lect10d-chromo_aneuploid/image_018.png)
 
@@ -682,7 +690,7 @@ https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 | [*Chorionic Villus Sampling (CVS)*]{color=#007A00} | Placental tissue |
 | [*Umbilical Blood Sampling (PUBS)*]{color=#B74300} | Fetal blood from the umbilical cord |
 
-The sample provides cells or DNA. The laboratory test determines what can be detected.
+[*Sample*]{color=#24578F}: cells or DNA; [*lab test*]{color=#935D00}: what can be detected
 
 === layout: one-panel
 
@@ -728,21 +736,23 @@ The sample provides cells or DNA. The laboratory test determines what can be det
 
 ![Lecture diagram](assets/lect10d-chromo_aneuploid/image_022.png)
 
+=== layout: section
+
+# Summary
+
 === layout: reference
 
 # For Reference: Newborn Screening
 
 @body
 
-- Reference: not covered in lecture
-
-{table-style=comparison}
+{table-style=comparison column-widths="1,4"}
 | Group | Examples |
 | --- | --- |
-| Metabolism | PKU, methylmalonic acidemia, MSUD, tyrosinemia, citrullinemia, MCAD deficiency |
-| Hemoglobin | Sickle cell disease, hemoglobin SC disease, beta thalassemia |
-| Hormones | Congenital hypothyroidism, congenital adrenal hyperplasia |
-| Other | Galactosemia, biotinidase deficiency, cystic fibrosis, SCID, Pompe disease, MPS I, X-linked adrenoleukodystrophy, spinal muscular atrophy |
+| [*Metabolism*]{color=#24578F} | PKU, methylmalonic acidemia, MSUD, tyrosinemia, citrullinemia, MCAD deficiency |
+| [*Hemoglobin*]{color=#24578F} | Sickle cell disease, hemoglobin SC disease, beta thalassemia |
+| [*Hormones*]{color=#24578F} | Congenital hypothyroidism, congenital adrenal hyperplasia |
+| [*Other*]{color=#24578F} | Galactosemia, biotinidase deficiency, cystic fibrosis, SCID, Pompe disease, MPS I, X-linked adrenoleukodystrophy, spinal muscular atrophy |
 
 Panels vary by screening program.
 
@@ -763,21 +773,21 @@ Panels vary by screening program.
 
 https://www.theatlantic.com/magazine/archive/2020/12/-/616928/
 
-=== layout: stacked-panels
+=== layout: two-panels
 
 # *Extended Prenatal Tests*
 
-@top
-
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_031.png)
-
-@bottom
+@left
 
 - When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
 
-https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
+@right
 
-https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
+![Original infographic comparing correct and false-positive rare-condition screening results](assets/lect10d-chromo_aneuploid/image_031.png)
+
+@citation
+
+NYTimes: [January 2022 investigation](https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html); [April 2022 follow-up](https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html).
 
 === layout: two-panels
 
@@ -820,10 +830,10 @@ https://www.youtube.com/watch?v=gxJfoftXh9Y
 
 @body
 
-- Polyploidy changes whole sets; aneuploidy changes chromosome counts.
-- Nondisjunction produces gametes with missing or extra chromosomes.
-- Trisomy 21 involves an extra copy of chromosome 21.
-- Screening estimates risk; diagnostic testing examines fetal material.
+- [*Polyploidy*]{color=#24578F}: whole sets; [*aneuploidy*]{color=#935D00}: individual chromosomes
+- [*Nondisjunction*]{color=#24578F}: missing or extra chromosomes in gametes
+- [*Trisomy 21*]{color=#003FFF}: extra chromosome 21
+- [*Screening*]{color=#24578F}: chance estimate; [*diagnostic testing*]{color=#935D00}: sample testing
 
 === layout: theend
 

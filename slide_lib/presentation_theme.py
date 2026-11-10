@@ -50,18 +50,26 @@ class ThemeError(ValueError):
 
 @dataclasses.dataclass(frozen=True)
 class CourseColorTheme:
-	"""Name one course palette with separate band and readable accent colors."""
+	"""Name one course palette with readable accents and saturated divider levels."""
 
 	name: str
-	band_color: str
 	accent_color: str
+	dark_color: str
+	medium_color: str
+	light_color: str
+	ultra_light_color: str
 
 
+# Divider levels retain the accent hue and saturation, near 21**(1/4) contrast steps.
 _COURSE_COLOR_THEMES = {
-	"genetics": CourseColorTheme("genetics", "24578F", "24578F"),
-	"biostatistics": CourseColorTheme("biostatistics", "77BC65", "127622"),
-	"biochemistry": CourseColorTheme("biochemistry", "B7B3CA", "6B638F"),
-	"biotechnology": CourseColorTheme("biotechnology", "FF6D6D", "C9211E"),
+	"genetics": CourseColorTheme(
+		"genetics", "24578F", "1C4470", "3177C3", "8CB5E2", "C6DAF0"),
+	"biostatistics": CourseColorTheme(
+		"biostatistics", "127622", "0C4F17", "158928", "1FCC3B", "88ED98"),
+	"biochemistry": CourseColorTheme(
+		"biochemistry", "6B638F", "45405C", "78709C", "B3AEC7", "D9D7E3"),
+	"biotechnology": CourseColorTheme(
+		"biotechnology", "C9211E", "861614", "DF2D2A", "F09B9A", "F7CDCC"),
 }
 
 _TEXT_COLORS = {
@@ -775,7 +783,7 @@ def default_theme(color_theme: str = DEFAULT_COLOR_THEME) -> PresentationTheme:
 	"""Return the repository theme using one authored course palette."""
 	colors = course_color_theme(color_theme)
 	return dataclasses.replace(load_theme(DEFAULT_TEMPLATE_PATH),
-		gradient_start_color=colors.band_color, accent_color=colors.accent_color,
+		gradient_start_color=colors.medium_color, accent_color=colors.accent_color,
 		color_theme_name=colors.name)
 
 

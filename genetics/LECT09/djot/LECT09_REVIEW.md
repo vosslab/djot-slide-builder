@@ -1,5 +1,15 @@
 # Lecture 09 Review
 
+## November 10 agenda wording
+
+Use the original short topic labels: Crossover Interference, Tetrad Analysis, and the handout
+activity. Add Mitotic Crossover and Ordered Tetrads from the current content, under Chapter 8.
+Correct the future Quiz 4 date to December 1. A retains 55 authored / 16 hidden / 39 PDF pages;
+the agenda is PDF 2. Rebuilt ODP/PDF, passed strict native lint, and inspected the agenda.
+The wording correction passes 213 documentation/guidance checks. Temporary review evidence is in
+`_temp/genetics_agendas_09_15/`; the wording correction is verified separately in
+`_temp/genetics_agenda_voice/`. Existing weather and registration capacity advisories remain.
+
 ## November 3 next-week lookahead and seasonal rules
 
 Add a dated Next Week slide at PDF 3, immediately after the agenda, using the current local

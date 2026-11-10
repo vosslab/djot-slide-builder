@@ -484,6 +484,12 @@ def slot_rectangles(name: str, content: slide_lib.layout_primitives.LogicalRecta
 		return (content,)
 	if name == "two-panels":
 		return grid(left, top, width, height, 2, 1)
+	if name == "movie-panel":
+		poster_width = height * 2 / 3
+		return (slide_lib.layout_primitives.LogicalRectangle(
+			left, top, width - poster_width - CELL_GUTTER, height),
+			slide_lib.layout_primitives.LogicalRectangle(
+				left + width - poster_width, top, poster_width, height))
 	if name == "one-plus-two-panels":
 		cell_width = (width - CELL_GUTTER) / 2
 		half = (height - GRID_GUTTER) / 2

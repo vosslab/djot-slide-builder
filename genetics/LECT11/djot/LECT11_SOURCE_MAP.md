@@ -15,11 +15,11 @@ Lecture 09 starter. The prior-year Lecture 11 supplies the Group Quiz 4 cue and 
 | --- | --- |
 | Supplied lect09a-2026_announcements.odp, 1-52 | Current-year starter; current Lecture 10 Djot supersedes it. |
 | Prior-year lect11a-2025_announcements.odp, 1 | Current title/date; November 11 holiday graphics omitted. |
-| Prior-year 2-3 | Group Quiz 4 at A2; agenda at A3, limited to supplied B-E content. |
+| Prior-year 2-3 | Hidden Group Quiz 4 at A2; detailed B-E agenda at A3 (PDF 2). |
 | Prior-year 4-5 | Hidden icebreaker alternatives; catalog modify-an-animal selected at A6. |
 | Prior-year 6-25 | Current shared informational and course-content groups, A7-24. |
 | Prior-year 26-30 | Current hidden exam group, A25-30; historical final-homework deadline omitted. |
-| Prior-year 31-34 | Current shared quiz group, A31-34, visible because Quiz 4 is this week. |
+| Prior-year 31-34 | Current shared quiz group, A31-34, retained as preparation for Quiz 4 on December 1. |
 | Prior-year 35 | Historical exam-corrections deadline not carried into 2026 without a current source. |
 | Prior-year 36-44 | Current schedule/homework, A22 and A35-39; first-week groups hidden. |
 | Prior-year 45-48 | General announcements and current 2027 course information, A40-47. |
@@ -28,7 +28,8 @@ Lecture 09 starter. The prior-year Lecture 11 supplies the Group Quiz 4 cue and 
 
 A4 adds the November 24 no-class lookahead. A5 is a hidden November 9 weather snapshot.
 A8-9 use the shared YouTube slide and verified regular StVC episode 37. A has 55 authored
-slides, 17 hidden slides, and 38 PDF pages. See the review for the schedule/topic mismatch.
+slides, 18 hidden slides, and 37 PDF pages. The November 10 agenda update corrects Quiz 4 to
+December 1 and hides its premature opening card. See the review for the schedule/topic mismatch.
 
 ## lect11b-polyploidy
 

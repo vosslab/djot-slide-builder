@@ -8,6 +8,7 @@ Current instructor instructions and [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md)
 - [COLOR_GUIDE.md](COLOR_GUIDE.md): meaningful emphasis, consistent associations, and reveals.
 - [VOICE_GUIDE.md](VOICE_GUIDE.md): wording, notation, humor, and preservation of teaching voice.
 - [PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md): teaching sequences, worked examples, questions, and study use.
+- [QUESTION_LAYOUTS.md](QUESTION_LAYOUTS.md): questions to ponder, icebreakers, and choice/answer layouts.
 - [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md): supported Djot syntax and layout contracts.
 - [TABLE_AUTHORING_GUIDE.md](TABLE_AUTHORING_GUIDE.md): native table presets, local formatting, and recipes.
 - [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md): diagram composition, editable labels, and asset requirements.

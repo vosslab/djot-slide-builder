@@ -87,9 +87,10 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
   slide in the slide map.
 - [ ] Locate the closing summary in each content deck. If absent, add content-derived
   takeaways immediately before THE END; verify the closing slide order in the PDF.
-- [ ] Check section boundaries against the existing lecture outline. Insert missing dividers
-  only to label existing topic boundaries, without reorganizing the teaching sequence;
-  list any inserted dividers in the slide map.
+- [ ] Check the hierarchy across the lecture's content decks: sections for broad units and
+  Summary, subsections for teaching topics. Aim for a topic divider roughly every ten slides in
+  long Genetics decks, at conceptual transitions. Preserve the teaching sequence and complete
+  question/explanation pairs; list inserted dividers in the slide map.
 
 ## Recurring lecture announcement updates
 
@@ -102,9 +103,11 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   relative wording, deadline/status colors, and expired assignment entries for the lecture date.
 - [ ] Compare announcement visibility with this week's plan. Record every changed hidden flag;
   confirm evergreen Discord information remains even when its signup assignment expires.
-- [ ] Select the week's icebreaker explicitly from `evergreen/icebreakers.yaml` or an instructor selection.
-  Use its prompt/examples with **Icebreaker** for face-to-face classes; record the selected
-  catalog key.
+- [ ] Select or write a fun icebreaker tangentially related to the week's content, using
+  `evergreen/icebreakers.yaml` or an instructor selection. Compare the previous two lectures'
+  prompts and examples, then vary the premise and type of response. Use `layout: prompt` and the
+  **Icebreaker** title for face-to-face classes. Verify automatic prompt emphasis and dark examples
+  in the render; record the selected catalog key or new prompt's content connection.
 - [ ] Preview the StVC refresh with
   `source source_me.sh && python3 -m slide_lib.refresh_podcast DECK.djot`.
   Inspect the selected episode before applying `--write`.

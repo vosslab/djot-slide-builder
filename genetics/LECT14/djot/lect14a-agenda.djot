@@ -1,0 +1,15 @@
+color-theme: genetics
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Icebreaker and Announcements
+- Chapter 10:
+  - Allele Frequencies
+  - Hardy-Weinberg
+  - Conditions for Hardy-Weinberg
+  - Chi-Square Test
+- Closing Remarks

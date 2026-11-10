@@ -9,12 +9,15 @@ to distinguish explicit preferences, established conventions, and observed habit
 ## Practical summary
 
 Write direct, concrete scientific teaching in the instructor's recognizable voice. Use familiar
-words when they preserve meaning. Keep useful technical terms, complete questions, explanations,
-humor, and deliberate emphasis. Match the amount of text to the teaching task.
+words when they preserve meaning. Preserve the instructor's existing prose and first-person voice.
+For new live teaching material, favor short phrases and keywords: the instructor does the talking.
+Keep useful technical terms, humor, and deliberate emphasis. Match the amount of text to the task.
 
 - Preserve existing instructor wording during conversion, including useful informal phrasing.
 - Write new material plainly; name the particular mechanism, comparison, prediction, or task.
-- Use short labels where labels suffice and complete sentences where students need reasoning.
+- Default to short phrases, labels, and keywords when writing new teaching material.
+- Keep complete questions, problem assumptions, and needed study-reference explanations readable.
+- Put newly written spoken elaboration and transitions in `@notes`.
 - Give students enough visible information to solve the problem and study afterward.
 - Distinguish actual instructor wording from proposed examples and generated prose.
 
@@ -24,6 +27,15 @@ Conversion preserves approximately 98% of the original slide prose, allowing min
 clarity corrections. This is an approximate preservation target, not an exact automated test.
 Preserve the examples, questions, explanations, scientific meaning, and relative sequence.
 Color and layout improvements do not authorize a rewrite.
+
+Keep existing first-person instructions, explanations, and announcements in the instructor's
+wording, including complete sentences. Apply the preference for short teaching cues to new or
+specifically identified verbose material. Preserve the rhythm and personal statements of existing
+prose when improving its spacing, hierarchy, or emphasis.
+
+For a voice review, identify LLM-authored additions first and target those passages. Treat
+established instructor content as the wording baseline. Apply individual content changes to that
+baseline when the instructor specifically requests them.
 
 Retain deliberate ALL CAPS, bold, italics, underline, color, and meaningful punctuation. A
 spelling correction is different from replacing an informal question with a formal explanation.
@@ -84,21 +96,26 @@ question.
 | --- | --- |
 | Diagram or visual anchor | Short, direct labels near the objects they identify. |
 | Definition or rule | A plain definition, its condition, and enough context to use it. |
-| Teaching explanation | Concise sentences that preserve the causal or logical connection. |
+| Teaching explanation | Short phrases, keywords, comparisons, and visual relationships for the instructor to explain. |
 | Problem statement | The full setup, relevant assumptions, data, and an explicit task. |
 | Guided worked step | Name what changed or ask students to attempt the next step. |
 | Study reference | Complete sentences or coherent paragraphs explaining reasoning and assumptions. |
+| Today's agenda | The instructor's deck titles or short topic labels, such as "Natural Selection". |
 | Announcement or assignment | Direct instructions with accurate dates, expectations, and course context. |
 | Speaker notes | Natural speaking prompts, transitions, explanations, reminders, and expected answers. |
 
 For example, "hydrophobic core," "signal amplification," and "structure determines function"
-can be useful labels. "This pathway amplifies the signal by activating many downstream
-molecules" can be a useful explanation. The sentence is not wrong merely because it is complete.
-Do not force four-word lines or fragments when meaning needs more space.
+can be useful labels. A teaching cue such as "Signal amplification: many downstream molecules"
+leaves the spoken explanation to the instructor. Complete opening questions, problem statements,
+quoted headlines, and later-study references have their own purpose and may use sentences.
 
 Preserve meaningful list hierarchy. Prefer a comparison, figure, sequence, or table when that
 expresses the relationship better; a real list can remain a list. There is no universal word or
 bullet quota, and these choices do not authorize splitting an existing slide.
+
+For agendas, follow the instructor's original examples and reuse their brief topic wording.
+Use chapter groupings and scheduled activities where appropriate. Keep explanations and detailed
+subtopic lists on the teaching slides. See [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md#todays-agenda).
 
 ## Keep the humor recognizable
 

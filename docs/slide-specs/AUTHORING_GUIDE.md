@@ -80,9 +80,14 @@ every deck needs five fields. The detailed authority is [../HUMAN_GUIDANCE.md](.
 
 Use supported layouts for recurring jobs. The shared `bookend` layout serves Learning Objectives
 and Key Takeaways; `definitions` gives terms a recognizable frame. Keep their thin angular frames,
-opposite-corner symmetry, and light/dark accents in the selected course hue. Section/subsection
-hierarchy and backgrounds follow the course theme. The `reference` layout supplies its gray
-outline and later-study footer, described in [PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md#keep-explanations-visible).
+opposite-corner symmetry, and light/dark accents in the selected course hue. `section`, `subsection`,
+and `subsubsection` use the course's framed, banded, and inset transitions. Use `question-ask`
+sparingly for one question to ponder in a pale hexagon with dark corners. Icebreakers use `prompt`
+with required examples inside a pale rounded card. These decorations remain
+native master shapes in the current exporter. Keep slide text editable in ODP and selectable in
+PDF; choose the simplest decoration implementation that reproduces the reference appearance.
+The `reference` layout supplies its gray outline and later-study footer, described in
+[PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md#keep-explanations-visible).
 
 ## Typography and visible URLs
 

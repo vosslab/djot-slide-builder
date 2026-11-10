@@ -96,6 +96,10 @@ The selected theme controls the top band, links, table headers, cover accents, s
 and the closer. Keep the line exact and unindented. A duplicate, an unknown value, or placement
 after the first layout is an error.
 
+Each course defines dark, medium, light, and ultra light colors in the
+[course palette](COLOR_GUIDE.md#distinguish-divider-levels). The three divider layouts combine
+them into distinct frames, full-width bands, and inset panels; `question-ask` uses an ultra light hexagon.
+
 ## Chapter files and includes
 
 A large lecture can use a small master `.djot` file containing ordered chapter includes:
@@ -370,14 +374,15 @@ all source slides in order and emits `hidden: true` for hidden pages.
 
 `#` is the level-one slide title in title-bearing layouts.  In `section`, it is instead the centered
 text in that layout's only outline box on the dark transition surface.  `##` is a subtitle on
-`title-slide` and `section`. The `theend` layout accepts exactly one level-one `THE END` heading.
+`title-slide`, `section`, `subsection`, and `subsubsection`. The `theend` layout accepts exactly
+one level-one `THE END` heading.
 Inside a named content slot, `##` is that slot's optional local heading. Other heading levels have
 no native slide destination.
 
 ## Layout catalog
 
-The first twelve rows are LibreOffice-backed catalog layouts. `multiple-choice`, `gallery`,
-`big-image`, and `theend` are intentional project layouts. "Root" means ordinary content may appear
+The catalog includes LibreOffice-backed layouts and intentional project layouts such as
+`multiple-choice`, `question-ask`, `prompt`, `gallery`, `big-image`, and `theend`. "Root" means ordinary content may appear
 outside a named slot; required named slots still appear where listed.
 
 | Djot layout | Impress layout and AutoLayout | Slots | Root | Choose it when |
@@ -391,8 +396,10 @@ outside a named slot; required named slots still appear where listed.
 | `reference` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One-panel study material with an unfilled light gray border and automatic reference-only footer. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
 | `theend` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | `# THE END` plus an optional root image | You are closing a lecture with the framed native closer. |
-| `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A lighter framed topic transition belongs within a chapter. |
+| `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A light center band with medium top/bottom regions marks a topic within a chapter. |
+| `subsubsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark inset panel with light surrounding edges marks a subdivision within a topic. |
 | `two-panels` | Title, 2 Content, `AUTOLAYOUT_TITLE_2CONTENT` | `left`, `right` | no | Two related ideas, figures, or comparisons belong side by side. |
+| `movie-panel` | project custom | `body`, `poster` | optional H1 | Movie text fills the left beside a narrower 2:3 poster area on the right. |
 | `one-plus-two-panels` | Title, Content over 2 Content, `AUTOLAYOUT_TITLE_CONTENT_2CONTENT` | `left`, `top-right`, `bottom-right` | no | One broad idea pairs with two stacked supporting items. |
 | `two-plus-one-panels` | Title, 2 Content over Content, `AUTOLAYOUT_TITLE_2CONTENT_CONTENT` | `top-left`, `bottom-left`, `right` | no | Two stacked supporting items pair with one broad idea. |
 | `stacked-panels` | Title, Content over Content, `AUTOLAYOUT_TITLE_CONTENT_OVER_CONTENT` | `top`, `bottom` | no | The reading sequence is top to bottom. |
@@ -401,17 +408,44 @@ outside a named slot; required named slots still appear where listed.
 | `image-comparison` | project custom | `top-left`, `top-right`, `bottom-left`, `bottom-right` | title only | Two diagrams above two independently editable captions; captions determine the shared lower row height. |
 | `six-panels` | Title, 6 Content, `AUTOLAYOUT_TITLE_6CONTENT` | `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` | no | Six short, comparable items need a 3 by 2 grid. |
 | `multiple-choice` | project custom | `question`, `answer` | no | You are asking a closed question with visible choices and a revealed answer. |
+| `question-ask` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | one H1 question | An occasional divider-like pause gives students one question to ponder. |
+| `prompt` | project custom | `prompt`, `examples` | optional H1 | You are opening an icebreaker or discussion with a prominent question and visible examples. |
 | `gallery` | project custom | `gallery` | title only | Two through six component images are the teaching focus. |
 | `big-image` | project custom | `image`, `caption` | no | One focal image needs the main page area with a short bottom caption. |
 
-`section` uses a large centered title in a rounded frame. `subsection` uses a smaller,
-centered black title and matching black full-width horizontal stripes near the top and bottom,
-on a pale course tint. The section and subsection backgrounds exceed 3:1 contrast across course
-themes; subsection text and stripes exceed the 5.5:1 house readability target.
+`section` uses a large centered white title on dark color, inside a rounded white frame.
+`subsection` uses a smaller black title in a light full-width band with medium color above/below.
+`subsubsection` uses a smaller white title inside a dark rectangular panel with light surrounding
+edges. Each accepts a `#` heading and optional `##` subtitle lines. The colors retain the course
+accent's hue and saturation. Successive dark/medium/light steps and their black/white endpoints
+meet 2:1 background separation; actual title/surface pairs exceed 5.5:1.
 
 For `two-panels` with an image and text, place either kind in `@left` and the other in `@right`.
 Vary the image side through the deck, alternating on consecutive image/text slides. Express the
 placement in these existing slots; the compiler renders the sides exactly as authored.
+
+### Movie choices
+
+Use `movie-panel` for slides from the companion `movie-slide-maker` project. Put the original
+plot, ratings, details, and review wording in `@body`, and exactly one poster image in `@poster`.
+The poster slot has a 2:3 aspect ratio and fits the available body height. Text uses the remaining
+width on the left, with the standard gutter between it and the poster. Images retain their own
+aspect ratio with containment; text remains editable.
+
+```djot
+=== layout: movie-panel
+
+# Movie Title (2026)
+
+@body
+
+- Original movie description.
+- Run time: 100 min
+
+@poster
+
+![Movie poster](assets/movie_poster.jpg)
+```
 
 A body or panel may contain paragraphs, lists, component images, and one table together.
 The compiler lays out mixed table content vertically in source order. An optional local heading
@@ -427,7 +461,8 @@ the useful semantic surface.
 
 `theend` selects a dedicated closer through its layout name. It requires one exact `# THE END`
 heading. A single component image may follow the heading; the closer keeps its two large editable
-text lines and places the image on the right side of its framed surface.
+ultra light text lines on a dark background and places the image on the right side of its framed
+surface.
 
 Bare `http://` and `https://` URLs become editable native hyperlinks automatically. Use a labeled
 Markdown link only when the displayed text should differ from the destination URL.
@@ -812,12 +847,9 @@ item at a time in source order.
 - Complementary pairing
 ```
 
-`multiple-choice` has fixed teaching semantics.  `@question` supplies an optional first component
-image, an optional prompt, and a visible choice list.  `@answer` supplies one or two editable
-paragraphs.  The layout measures the question, choices, and answer, then places the answer popup
-in the available left or right region with its bounded on-click appear reveal. The popup is a native
-rounded light-gray rectangle with dark-red outline and editable text. Authors write no reveal directive
-in `@answer`.
+`multiple-choice` supplies its answer popup's reveal automatically. Use
+[QUESTION_LAYOUTS.md](QUESTION_LAYOUTS.md) for its question/answer contract and the separate
+`question-ask` and icebreaker `prompt` layouts, with authoring examples.
 
 ## Supported boundaries
 

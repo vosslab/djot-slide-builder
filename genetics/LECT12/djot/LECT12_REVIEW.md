@@ -4,6 +4,17 @@ Reviewed draft, November 9, 2026. 5 canonical Djot decks produce editable ODP
 and LibreOffice-derived PDF. 101 explicit `@replaceme` slides retain difficult conversions.
 Those slides need reconstruction before classroom use.
 
+## November 10 agenda wording
+
+Use brief deck and activity labels under Chapter 11: Gene Trees, Gene Tree Handout Activity,
+and Evolutionary Time. Include Group Quiz 4 on the
+December 1 agenda and correct its schedule date; next week's Quiz 5 remains conditional.
+A retains 54 authored / 17 hidden / 37 PDF pages; its agenda is PDF 2. Rebuilt ODP/PDF, passed
+strict native lint, and inspected the agenda and changed logistics. The wording correction passes
+213 documentation/guidance checks. Evidence: `_temp/genetics_agendas_09_15/`. Existing weather/registration
+capacity advisories remain. The wording correction is verified separately in
+`_temp/genetics_agenda_voice/`. The content/date mismatch below remains a scheduling task.
+
 ## Outputs and counts
 
 Editable sources are in this directory. Generated artifacts use the same stem under
@@ -84,8 +95,9 @@ Refresh weather on the day before class. YouTube/anonymous-message/Discord/Zoom 
 the shared groups, local artwork, and existing private course-link references.
 
 The canonical announcement deck is `lect12a-2026_announcements.djot`, dated December 1.
-The popular-culture icebreaker comes from `evergreen/icebreakers.yaml`. Group Quiz 4 from
-2025 was not carried into this week. The December 8 quiz/homework lookahead is visible.
+The popular-culture icebreaker comes from `evergreen/icebreakers.yaml`. The November 10 calendar
+follow-up adds Group Quiz 4 on December 1. The December 8 quiz/homework lookahead is visible;
+Quiz 5 is conditional on the class vote.
 Exam guidance remains hidden, registration remains visible through its documented December 1
 window, and early homework dates remain hidden. The complete updated visibility inventory is
 in the source map. The duplicate `lect12a-2025_announcements 2.odp` has exactly the same ZIP

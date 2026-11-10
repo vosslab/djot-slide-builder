@@ -11,6 +11,7 @@ color-theme: genetics
 ## November 17, 2026
 
 === layout: section
+hidden: true
 
 # Group Quiz 4
 
@@ -20,11 +21,12 @@ color-theme: genetics
 
 @body
 
-- Group Quiz 4
-- Ice Breaker and Announcements
-- Polyploidy and Sex Dosage
-- Chromosome Deletions and Deletion Mapping
-- Chromosome Duplications
+- Icebreaker and Announcements
+- Chapter 9: Chromosomal Disorders
+  - Polyploidy
+  - Sex Dosage
+  - Deletions
+  - Duplications
 - Closing Remarks
 
 === layout: one-panel
@@ -34,8 +36,9 @@ color-theme: genetics
 @body
 
 - Thanksgiving break starts Tuesday: no class on November 24.
-- Our next class is December 1.
-- Quiz 5 and homework assignments 11 and 12 are due December 8.
+- Our next class is December 1, with Group Quiz 4.
+- Homework assignments 11 and 12 are due December 8.
+- Quiz 5 would also be December 8 if retained.
 
 @citation
 
@@ -98,7 +101,7 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Nov 17]{color=red}
+- [Quiz 4: Dec 01]{color=#000000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
 

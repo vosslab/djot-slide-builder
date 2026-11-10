@@ -1,6 +1,7 @@
 """Fast XML and ZIP contract tests for the native ODP package skeleton."""
 
 # Standard Library
+import colorsys
 import dataclasses
 import io
 import pathlib
@@ -289,7 +290,8 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 
 @pytest.mark.parametrize("color_theme", ("genetics", "biotechnology"))
 @pytest.mark.parametrize("layout", (
-	"title-slide", "bookend", "definitions", "reference", "section", "subsection", "theend", "big-image"))
+	"title-slide", "bookend", "definitions", "reference", "section", "subsection",
+	"subsubsection", "question-ask", "prompt", "theend", "big-image"))
 def test_decoration_is_master_owned_and_text_remains_on_slide(
 		tmp_path: pathlib.Path, color_theme: str, layout: str) -> None:
 	"""Decorative frames cannot intercept selection of slide text."""
@@ -301,6 +303,9 @@ def test_decoration_is_master_owned_and_text_remains_on_slide(
 	elif layout == "theend":
 		text = "# THE END\n"
 		expected = ["THE", "END"]
+	elif layout == "prompt":
+		text = "# Discussion\n\n@prompt\n\nWhat is your rule?\n\n@examples\n\n- Give one example.\n"
+		expected = ["Discussion", "What is your rule?", "Give one example."]
 	elif layout == "big-image":
 		PIL.Image.new("RGB", (32, 18), "blue").save(tmp_path / "figure.png")
 		text = "@image\n\n![Figure](figure.png)\n\n@caption\n\nCaption words.\n"
@@ -346,6 +351,11 @@ def test_decoration_is_master_owned_and_text_remains_on_slide(
 		for item in pages[0])
 	paragraphs = pages[0].findall(f".//{{{exporter.TEXT_NS}}}p")
 	assert ["".join(item.itertext()) for item in paragraphs] == expected
+	if layout == "prompt":
+		markers = root.findall(f".//{{{exporter.TEXT_NS}}}list-level-style-bullet/"
+			f"{{{exporter.STYLE_NS}}}text-properties")
+		assert markers and all(item.attrib[f"{{{exporter.FO_NS}}}color"] == "#172033"
+			for item in markers)
 	for shape in master.findall(f"{{{exporter.DRAW_NS}}}rect"):
 		if shape.attrib.get(f"{{{exporter.DRAW_NS}}}name") not in decorations:
 			continue
@@ -354,7 +364,7 @@ def test_decoration_is_master_owned_and_text_remains_on_slide(
 			if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
 		properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
 		assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == (
-			"solid" if layout in ("title-slide", "big-image", "subsection") else "none")
+			"solid" if layout in ("title-slide", "big-image", "subsection", "subsubsection", "prompt") else "none")
 
 
 def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path) -> None:
@@ -390,11 +400,13 @@ def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path)
 
 
 @pytest.mark.parametrize("course", slide_lib.presentation_theme.color_theme_names())
-def test_subsection_has_a_distinct_readable_course_tint(tmp_path: pathlib.Path, course: str) -> None:
-	"""Divider surfaces exceed 3:1; subsection text/stripes remain black on the pale tint."""
+def test_dividers_preserve_course_color_and_background_contrast(
+		tmp_path: pathlib.Path, course: str) -> None:
+	"""Prevent washed-out tints while preserving the agreed 2:1 background separation."""
 	source_path = tmp_path / "transitions.djot"
 	source_path.write_text(f"color-theme: {course}\n\n=== layout: section\n\n# Topic\n\n"
-		"=== layout: subsection\n\n# Subtopic\n", encoding="utf-8")
+		"=== layout: subsection\n\n# Subtopic\n\n"
+		"=== layout: subsubsection\n\n# Detail\n", encoding="utf-8")
 	theme = slide_lib.presentation_theme.default_theme(course)
 	plan = slide_lib.layout_engine.compile_layout_deck(
 		slide_lib.djot_parser.parse_deck(source_path), theme).plan
@@ -409,34 +421,45 @@ def test_subsection_has_a_distinct_readable_course_tint(tmp_path: pathlib.Path, 
 			if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page.attrib[f"{{{exporter.DRAW_NS}}}style-name"])
 		colors.append(style.find(f"{{{exporter.STYLE_NS}}}drawing-page-properties").attrib[
 			f"{{{exporter.DRAW_NS}}}fill-color"])
-	assert colors[0] == f"#{theme.accent_color}"
-	dark, light = sorted(relative_luminance(color) for color in colors)
-	assert (light + 0.05) / (dark + 0.05) > 3.0
-	assert (relative_luminance(colors[1]) + 0.05) / 0.05 >= 5.5
+	palette = slide_lib.presentation_theme.course_color_theme(course)
+	luminances = [0.0, *(relative_luminance(color) for color in colors), 1.0]
+	for dark, light in zip(luminances, luminances[1:]):
+		assert (light + 0.05) / (dark + 0.05) >= 2.0
+	assert 1.05 / (relative_luminance(colors[0]) + 0.05) >= 5.5
+	assert (relative_luminance(colors[2]) + 0.05) / 0.05 >= 5.5
+	assert relative_luminance(colors[2]) < relative_luminance(palette.ultra_light_color) < 1
+	assert theme.gradient_start_color == palette.medium_color
+	palette_hls = [colorsys.rgb_to_hls(*(int(color.lstrip("#")[index:index + 2], 16) / 255
+		for index in (0, 2, 4))) for color in (theme.accent_color, *colors, palette.ultra_light_color)]
+	accent_hue, _, accent_saturation = palette_hls[0]
+	for hue, _, saturation in palette_hls[1:]:
+		# Broad tolerances allow 8-bit rounding without pinning the palette's exact hex values.
+		hue_difference = abs(hue - accent_hue)
+		assert min(hue_difference, 1 - hue_difference) < 0.01
+		assert abs(saturation - accent_saturation) < 0.02
 	assert plan.slides[1].surface.background_role is primitives.StyleRole.SUBSECTION
+	assert plan.slides[2].surface.background_role is primitives.StyleRole.SUBSUBSECTION
 	# The hierarchy must remain visible without relying only on hue differences.
 	shapes = [next(item.content.kind for item in slide.objects
 		if isinstance(item.content, content.ShapeContent)) for slide in plan.slides]
-	assert shapes == [primitives.ShapeKind.ROUNDED_RECTANGLE, primitives.ShapeKind.RECTANGLE]
-	for slide, alignment in zip(plan.slides,
-			(primitives.HorizontalAlignment.CENTER, primitives.HorizontalAlignment.CENTER)):
+	assert shapes == [primitives.ShapeKind.ROUNDED_RECTANGLE,
+		primitives.ShapeKind.RECTANGLE, primitives.ShapeKind.RECTANGLE]
+	for slide in plan.slides:
 		title = next(item for item in slide.objects if isinstance(item.content, content.TextContent))
-		assert title.content.paragraphs[0].properties.horizontal_alignment is alignment
-	subsection_runs = [run for item in plan.slides[1].objects
-		if isinstance(item.content, content.TextContent)
-		for paragraph in item.content.paragraphs for run in paragraph.inlines
-		if isinstance(run, content.TextRun)]
-	assert subsection_runs and all(run.style.foreground == "000000" for run in subsection_runs)
-	assert all(exporter._color_for(item.content.style.fill_role, theme) == "000000"
-		for item in plan.slides[1].objects if isinstance(item.content, content.ShapeContent))
-	stripes = [item.rectangle for item in plan.slides[1].objects
-		if isinstance(item.content, content.ShapeContent)]
-	assert len(stripes) == 2
-	top, bottom = stripes
-	assert top.x == bottom.x == 0
-	assert top.width == bottom.width == primitives.LOGICAL_SLIDE_WIDTH
-	assert top.height == bottom.height
-	assert top.y == primitives.LOGICAL_SLIDE_HEIGHT - bottom.y - bottom.height
+		assert title.content.paragraphs[0].properties.horizontal_alignment is \
+			primitives.HorizontalAlignment.CENTER
+	for slide, ink, fill in zip(plan.slides[1:], ("000000", "FFFFFF"),
+			(palette.light_color, palette.dark_color)):
+		runs = [run for item in slide.objects if isinstance(item.content, content.TextContent)
+			for paragraph in item.content.paragraphs for run in paragraph.inlines
+			if isinstance(run, content.TextRun)]
+		assert runs and all(run.style.foreground == ink for run in runs)
+		panel = next(item for item in slide.objects if isinstance(item.content, content.ShapeContent))
+		assert exporter._color_for(panel.content.style.fill_role, theme) == fill
+		assert panel.rectangle.y + panel.rectangle.height / 2 == primitives.LOGICAL_SLIDE_HEIGHT / 2
+	band = next(item.rectangle for item in plan.slides[1].objects
+		if isinstance(item.content, content.ShapeContent))
+	assert band.x == 0 and band.width == primitives.LOGICAL_SLIDE_WIDTH
 
 
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
@@ -470,7 +493,7 @@ def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) 
 	assert (properties[f"{{{exporter.DRAW_NS}}}fill"],
 		properties[f"{{{exporter.DRAW_NS}}}fill-color"],
 		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"]) == (
-		"solid", f"#{theme.accent_color}", "true")
+		"solid", f"#{slide_lib.presentation_theme.course_color_theme(theme.color_theme_name).dark_color}", "true")
 	assert {item.attrib[f"{{{exporter.DRAW_NS}}}name"] for item in master
 		if item.tag.startswith(f"{{{exporter.DRAW_NS}}}")} == {
 		"end-outer-frame", "end-inner-frame", "end-star"}
