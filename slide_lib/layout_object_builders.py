@@ -240,7 +240,7 @@ def table_object(object_id: str, table: slide_lib.native_model.Table,
 		selected_size: float | None = None,
 		session: slide_lib.layout_measurement.MeasurementSession | None = None,
 		) -> slide_lib.layout_model.LayoutObject:
-	"""Project a rectangular semantic table with resolved 28-to-24 point fitting."""
+	"""Project an editable table with measured geometry and resolved cell sizes."""
 	active = session or slide_lib.layout_measurement.MeasurementSession(theme)
 	size = selected_size if selected_size is not None else \
 		slide_lib.layout_table_measurement.select_table_size(table, rectangle,

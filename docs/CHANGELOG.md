@@ -307,6 +307,10 @@
 
 ### Fixes and Maintenance
 
+- Remove four stale untracked announcement copies reappearing after synchronization: three
+  2025 decks in Lectures 11-13 and an older Lecture 09 copy misplaced in Lecture 11. Verify
+  recovery copies under `_temp/synology_recovery_20261110/` before removing the active copies.
+
 - Put Genetics 10A's icebreaker before the lookahead, then group the quiz schedule/vote and
   movie choices/vote ahead of routine announcements. Preserve every existing slide block.
   Enlarge D30's chromosome numbers to bold centered 36 pt and match their syndrome colors;

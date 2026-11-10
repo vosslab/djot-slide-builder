@@ -17,6 +17,10 @@ leave D31's two-image layout as it is. Native `font-size` cell overrides now par
 widths, row heights, and text export. Temporary verification: `_temp/lect10a_order/` and
 `_temp/lect10d_30/`.
 
+Rebuilt all four decks; native lint passes. The D30 colors measure 5.52-6.66:1 against their white
+cells. The 94 focused table/export checks pass; the full suite has 5,897 passes and two cover
+failures in the Lecture 14/15 agenda-only sources, outside this Lecture 10 pass.
+
 ## November 10 movie choices
 
 Add the four choices from `~/genetics/LECTURES-2026-351genetics/movie_choices.odp` after the
