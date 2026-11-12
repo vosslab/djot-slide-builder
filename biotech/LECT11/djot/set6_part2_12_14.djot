@@ -2,9 +2,9 @@
 
 # 12. APHIS and the Plant Protection Act
 
-=== layout: one-panel
+=== layout: bookend
 
-# 12. Questions (1 of 2)
+# 12. Questions
 
 @body
 
@@ -14,13 +14,6 @@
 - How are confined field trials inspected and approved?
 - How are inspections done during the growing season, and what happens after harvest?
 - What criteria lead to a "regulated article" classification?
-
-=== layout: one-panel
-
-# 12. Questions (2 of 2)
-
-@body
-
 - What are possible sanctions if a trial violates containment standards?
 
 === layout: one-panel
@@ -67,21 +60,23 @@ https://www.aphis.usda.gov/biotechnology-guidance
 
 https://www.aphis.usda.gov/biotechnology-guidance
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 12. Think Past the Field Boundary
 
-![12. Think Past the Field Boundary](assets/set6_sources/topic_12_148.png)
-
-@caption
+@left
 
 Pollen movement, compatible relatives, and volunteers are possible routes of gene flow or persistence. The diagram is a conceptual route map, not a prediction that every route occurs in every crop.
+
+@right
+
+![12. Think Past the Field Boundary](assets/set6_sources/topic_12_148.png)
 
 === layout: subsection
 
 # 13. The Food Safety Modernization Act
 
-=== layout: one-panel
+=== layout: bookend
 
 # 13. Questions
 
@@ -143,9 +138,9 @@ https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-s
 
 # 14. SECURE: the 2020 Rule and What Changed
 
-=== layout: one-panel
+=== layout: bookend
 
-# 14. Questions (1 of 2)
+# 14. Questions
 
 @body
 
@@ -155,13 +150,6 @@ https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-s
 - How does SECURE aim to speed innovation while maintaining environmental safeguards?
 - How are developer self-determinations used, and what makes them credible?
 - How can a developer request and document Regulatory Status Reviews?
-
-=== layout: one-panel
-
-# 14. Questions (2 of 2)
-
-@body
-
 - How do international partners view SECURE, and what trade issues may arise?
 
 === layout: one-panel

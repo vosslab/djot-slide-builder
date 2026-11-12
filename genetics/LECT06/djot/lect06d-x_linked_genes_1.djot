@@ -176,7 +176,7 @@ Human X and Y chromosomes.
 
 @body
 
-![Slide image 10](assets/lect06d-x_linked_genes_1/image_010.jpg)
+![Slide image 10](assets/lect06d-x_linked_genes_1/xy_sex_determination.drawn.svg)
 
 - Females are homogametic (two X) while males are heterogametic (X and Y)
 
@@ -199,7 +199,7 @@ Human X and Y chromosomes.
 
 @left
 
-![X-Y system](assets/lect06d-x_linked_genes_1/xy_inheritance.svg)
+![X-Y system](assets/lect06d-x_linked_genes_1/xy_inheritance.drawn.svg)
 
 @right
 
@@ -438,7 +438,7 @@ Expected female : male ratio = 1 : 1.
 
 @body
 
-![Slide image 26](assets/lect06d-x_linked_genes_1/image_026.jpg)
+![Slide image 26](assets/lect06d-x_linked_genes_1/punnett_carrier_phenotypes.drawn.svg)
 
 === layout: two-panels
 # Color-Blind Male and Wild-Type Female

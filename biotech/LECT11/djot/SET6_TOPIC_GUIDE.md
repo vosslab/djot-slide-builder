@@ -4,7 +4,7 @@ Build the master for one combined deck; edit its small included topic files.
 
 - Master: [lect11c-set_6_regulation_of_biotechnology.djot](lect11c-set_6_regulation_of_biotechnology.djot).
 - Teaching date: November 12, 2026. Set 6 is internet-based; no textbook chapter is invented.
-- Authority: all 38 topics and questions in the current 2026 source, in their exact numbered order.
+- Authority: the instructor's official 38-topic list supplied November 12, 2026, with the current source questions in that exact numbered order.
 - Merge authorized by the instructor on November 12: use the Set 4/5 method, annual sources, and expanded instructor material.
 - All science slides are visible, including the study explanations and questions without an assigned presenter.
 - Objectives, definitions, four parts, numbered topic dividers, summaries, and a separate THE END are retained.
@@ -20,48 +20,80 @@ Run LibreOffice operations outside the sandbox. Outputs use the master stem unde
 
 ## Topic and page map
 
-PDF page numbers refer to the final combined deck.
+PDF page numbers refer to the latest refined combined deck. Each topic starts with a subsection,
+one complete framed questions slide, then content. The setup slides deliberately permit smaller
+text; the questions remain verbatim. The official short labels below reproduce the instructor's list. Topic 27, "patent life," means patentable living organisms in the source questions
+(Chakrabarty), rather than patent duration; duration is also addressed in topic 26.
 
-| Topic | Current Topic | Editable File | PDF Pages | Primary Reading |
-| ---: | --- | --- | --- | --- |
-| 1 | The Biologics Control Act of 1902 | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 8-15 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
-| 2 | The Pure Food and Drug Act of 1906 | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 16-21 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
-| 3 | The Food, Drug, and Cosmetic Act of 1938 | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 22-27 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
-| 4 | FIFRA: Registration, Risk, and Bt Crops | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 28-35 | [EPA: plant-incorporated protectants](https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-plant-incorporated-protectants) |
-| 5 | The Durham-Humphrey Amendment of 1951 | [set6_part1_05_07.djot](set6_part1_05_07.djot) | 36-42 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
-| 6 | The Kefauver-Harris Amendments of 1962 | [set6_part1_05_07.djot](set6_part1_05_07.djot) | 43-48 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
-| 7 | Plant Breeders' Rights and Farmers' Rights | [set6_part1_05_07.djot](set6_part1_05_07.djot) | 49-55 | [USDA: Plant Variety Protection](https://www.ams.usda.gov/services/plant-variety-protection) |
-| 8 | Asilomar and Recombinant DNA | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 58-65 | [NIH: biosafety and biosecurity policy](https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/) |
-| 9 | NIH Guidelines and Biosafety | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 66-75 | [CDC/NIH: BMBL, sixth edition](https://www.cdc.gov/labs/bmbl/index.html) |
-| 10 | Engineered Microbes under TSCA | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 76-81 | [EPA: biotechnology under TSCA](https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biotechnology-under-tsca) |
-| 11 | The Coordinated Framework | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 82-89 | [FDA: U.S. GMO oversight](https://www.fda.gov/food/agricultural-biotechnology/how-gmos-are-regulated-united-states) |
-| 12 | APHIS and the Plant Protection Act | [set6_part2_12_14.djot](set6_part2_12_14.djot) | 90-96 | [APHIS: current biotechnology processes and suspended SECURE processes](https://www.aphis.usda.gov/biotechnology-guidance) |
-| 13 | The Food Safety Modernization Act | [set6_part2_12_14.djot](set6_part2_12_14.djot) | 97-101 | [FDA: Food Safety Modernization Act](https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma) |
-| 14 | SECURE: the 2020 Rule and What Changed | [set6_part2_12_14.djot](set6_part2_12_14.djot) | 102-107 | [APHIS: current biotechnology processes and suspended SECURE processes](https://www.aphis.usda.gov/biotechnology-guidance) |
-| 15 | Drug Scheduling | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 110-114 | [DEA: drug scheduling](https://www.dea.gov/drug-information/drug-scheduling) |
-| 16 | Federal and State Regulation | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 115-119 | [DOJ: medical-marijuana registrations and scope of the 2026 order](https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries) |
-| 17 | Marijuana Legalization | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 120-125 | [DOJ: medical-marijuana registrations and scope of the 2026 order](https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries) |
-| 18 | Psilocybin and Other Substances | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 126-131 | [Oregon Health Authority: regulated psilocybin services](https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/Pages/oregon-psilocybin-services.aspx) |
-| 19 | Drug Approval and Clinical Evidence | [set6_part3_19_21.djot](set6_part3_19_21.djot) | 132-139 | [FDA: drug review process](https://www.fda.gov/drugs/information-consumers-and-patients-drugs/fdas-drug-review-process-ensuring-drugs-are-safe-and-effective) |
-| 20 | Clinical Trial Phases | [set6_part3_19_21.djot](set6_part3_19_21.djot) | 140-149 | [FDA: clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research) |
-| 21 | Orphan Drugs and Expedited Programs | [set6_part3_19_21.djot](set6_part3_19_21.djot) | 150-156 | [FDA: expedited programs](https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review) |
-| 22 | Supplements and DSHEA | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 157-169 | [FDA: dietary supplement questions and answers](https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements) |
-| 23 | Generic Drug Regulation | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 170-178 | [FDA: generic drug facts](https://www.fda.gov/drugs/generic-drugs/generic-drug-facts) |
-| 24 | International Generic Drug Quality | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 179-185 | [DOJ: documented Ranbaxy manufacturing and false-statement case, 2013](https://www.justice.gov/archives/opa/pr/generic-drug-manufacturer-ranbaxy-pleads-guilty-and-agrees-pay-500-million-resolve-false) |
-| 25 | PFAS: Forever Chemicals | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 186-194 | [EPA: drinking-water PFAS standards and proposed changes](https://www.epa.gov/dwreginfo/pfas-rule-implementation) |
-| 26 | Patents, Discovery, and Other Intellectual Property | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 197-220 | [USPTO: patent basics](https://www.uspto.gov/patents/basics) |
-| 27 | Diamond v. Chakrabarty | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 221-227 | [U.S. Supreme Court: Diamond v. Chakrabarty, 1980](https://tile.loc.gov/storage-services/service/ll/usrep/usrep447/usrep447303/usrep447303.pdf) |
-| 28 | The Cohen-Boyer Recombinant DNA Patents | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 228-232 | [Stanford OTL: Cohen-Boyer licensing history](https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable) |
-| 29 | Genentech, Recombinant Insulin, and Licensing | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 233-239 | [FDA: 100 Years of Insulin](https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin) |
-| 30 | AMP v. Myriad Genetics | [set6_part4_30_32.djot](set6_part4_30_32.djot) | 240-245 | [U.S. Supreme Court: AMP v. Myriad Genetics, 2013](https://tile.loc.gov/storage-services/service/ll/usrep/usrep569/usrep569576/usrep569576.pdf) |
-| 31 | CRISPR/Cas9 Patent Disputes | [set6_part4_30_32.djot](set6_part4_30_32.djot) | 246-252 | [Federal Circuit: Regents v. Broad, May 12, 2025](https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.pdf) |
-| 32 | First Inventor to File and Prior Art | [set6_part4_30_32.djot](set6_part4_30_32.djot) | 253-258 | [USPTO: first-inventor-to-file applicability](https://www.uspto.gov/web/offices/pac/mpep/s2159.html) |
-| 33 | Patents, Instruments, and Data | [set6_part4_33_35.djot](set6_part4_33_35.djot) | 259-264 | [USPTO: subject matter eligibility, including Diehr](https://www.uspto.gov/web/offices/pac/mpep/s2106.html) |
-| 34 | Right to Repair | [set6_part4_33_35.djot](set6_part4_33_35.djot) | 265-270 | [FTC: Nixing the Fix](https://www.ftc.gov/system/files/documents/reports/nixing-fix-ftc-report-congress-repair-restrictions/nixing_the_fix_report_final_5521_630pm-508_002.pdf) |
-| 35 | Copyleft and the Public Domain | [set6_part4_33_35.djot](set6_part4_33_35.djot) | 271-279 | [Creative Commons: license conditions](https://creativecommons.org/cc-licenses/) |
-| 36 | Patent Trolls and Overbroad Claims | [set6_part4_36_38.djot](set6_part4_36_38.djot) | 280-291 | [USPTO: patent basics and claim scope](https://www.uspto.gov/patents/basics) |
-| 37 | Nondisclosure Agreement Pitfalls | [set6_part4_36_38.djot](set6_part4_36_38.djot) | 292-297 | [USPTO: trade secrets](https://www.uspto.gov/ip-policy/trade-secret-policy) |
-| 38 | Noncompetes and Biotechnology Employees | [set6_part4_36_38.djot](set6_part4_36_38.djot) | 298-302 | [Illinois: Freedom to Work Act, Section 10](https://www.ilga.gov/legislation/ilcs/fulltext?DocName=082000900K10) |
+| Topic | Official Label | Current Topic | Editable File | PDF Pages | Primary Reading |
+| ---: | --- | --- | --- | --- | --- |
+| 1 | biologics 1902 | The Biologics Control Act of 1902 | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 8-14 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
+| 2 | pure food 1906 | The Pure Food and Drug Act of 1906 | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 15-20 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
+| 3 | FDCA 1938 | The Food, Drug, and Cosmetic Act of 1938 | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 21-26 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
+| 4 | FIFRA 1972 | FIFRA: Registration, Risk, and Bt Crops | [set6_part1_01_04.djot](set6_part1_01_04.djot) | 27-34 | [EPA: plant-incorporated protectants](https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-plant-incorporated-protectants) |
+| 5 | D-H Amend 1951 | The Durham-Humphrey Amendment of 1951 | [set6_part1_05_07.djot](set6_part1_05_07.djot) | 35-40 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
+| 6 | K-H Drugs 1962 | The Kefauver-Harris Amendments of 1962 | [set6_part1_05_07.djot](set6_part1_05_07.djot) | 41-46 | [FDA: milestones in U.S. food and drug law](https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law) |
+| 7 | Plant Rights 1970 | Plant Breeders' Rights and Farmers' Rights | [set6_part1_05_07.djot](set6_part1_05_07.djot) | 47-52 | [USDA: Plant Variety Protection](https://www.ams.usda.gov/services/plant-variety-protection) |
+| 8 | Asilomar 1975 | Asilomar and Recombinant DNA | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 55-61 | [NIH: biosafety and biosecurity policy](https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/) |
+| 9 | Biosafety 1976 | NIH Guidelines and Biosafety | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 62-71 | [CDC/NIH: BMBL, sixth edition](https://www.cdc.gov/labs/bmbl/index.html) |
+| 10 | TSCA 1976 | Engineered Microbes under TSCA | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 72-76 | [EPA: biotechnology under TSCA](https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biotechnology-under-tsca) |
+| 11 | Framework 1986 | The Coordinated Framework | [set6_part2_08_11.djot](set6_part2_08_11.djot) | 77-83 | [FDA: U.S. GMO oversight](https://www.fda.gov/food/agricultural-biotechnology/how-gmos-are-regulated-united-states) |
+| 12 | APHIS 2000 | APHIS and the Plant Protection Act | [set6_part2_12_14.djot](set6_part2_12_14.djot) | 84-89 | [APHIS: current biotechnology processes and suspended SECURE processes](https://www.aphis.usda.gov/biotechnology-guidance) |
+| 13 | FSMA 2011 | The Food Safety Modernization Act | [set6_part2_12_14.djot](set6_part2_12_14.djot) | 90-94 | [FDA: Food Safety Modernization Act](https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma) |
+| 14 | SECURE 2020 | SECURE: the 2020 Rule and What Changed | [set6_part2_12_14.djot](set6_part2_12_14.djot) | 95-99 | [APHIS: current biotechnology processes and suspended SECURE processes](https://www.aphis.usda.gov/biotechnology-guidance) |
+| 15 | drug scheduling | Drug Scheduling | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 102-106 | [DEA: drug scheduling](https://www.dea.gov/drug-information/drug-scheduling) |
+| 16 | state regulation | Federal and State Regulation | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 107-111 | [DOJ: medical-marijuana registrations and scope of the 2026 order](https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries) |
+| 17 | marijuana | Marijuana Legalization | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 112-117 | [DOJ: medical-marijuana registrations and scope of the 2026 order](https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries) |
+| 18 | psilocybin | Psilocybin and Other Substances | [set6_part3_15_18.djot](set6_part3_15_18.djot) | 118-123 | [Oregon Health Authority: regulated psilocybin services](https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/Pages/oregon-psilocybin-services.aspx) |
+| 19 | drug approval | Drug Approval and Clinical Evidence | [set6_part3_19_21.djot](set6_part3_19_21.djot) | 124-130 | [FDA: drug review process](https://www.fda.gov/drugs/information-consumers-and-patients-drugs/fdas-drug-review-process-ensuring-drugs-are-safe-and-effective) |
+| 20 | trials/phases | Clinical Trial Phases | [set6_part3_19_21.djot](set6_part3_19_21.djot) | 131-139 | [FDA: clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research) |
+| 21 | orphan drugs | Orphan Drugs and Expedited Programs | [set6_part3_19_21.djot](set6_part3_19_21.djot) | 140-145 | [FDA: expedited programs](https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review) |
+| 22 | supplements | Supplements and DSHEA | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 146-155 | [FDA: dietary supplement questions and answers](https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements) |
+| 23 | generic drug reg. | Generic Drug Regulation | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 156-162 | [FDA: generic drug facts](https://www.fda.gov/drugs/generic-drugs/generic-drug-facts) |
+| 24 | foreign generics | International Generic Drug Quality | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 163-167 | [DOJ: documented Ranbaxy manufacturing and false-statement case, 2013](https://www.justice.gov/archives/opa/pr/generic-drug-manufacturer-ranbaxy-pleads-guilty-and-agrees-pay-500-million-resolve-false) |
+| 25 | forever chem | PFAS: Forever Chemicals | [set6_part3_22_25.djot](set6_part3_22_25.djot) | 168-176 | [EPA: drinking-water PFAS standards and proposed changes](https://www.epa.gov/dwreginfo/pfas-rule-implementation) |
+| 26 | patents overview | Patents, Discovery, and Other Intellectual Property | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 179-194 | [USPTO: patent basics](https://www.uspto.gov/patents/basics) |
+| 27 | patent life | Diamond v. Chakrabarty | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 195-200 | [U.S. Supreme Court: Diamond v. Chakrabarty, 1980](https://tile.loc.gov/storage-services/service/ll/usrep/usrep447/usrep447303/usrep447303.pdf) |
+| 28 | Cohen-Boyer | The Cohen-Boyer Recombinant DNA Patents | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 201-206 | [Stanford OTL: Cohen-Boyer licensing history](https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable) |
+| 29 | Genentech | Genentech, Recombinant Insulin, and Licensing | [set6_part4_26_29.djot](set6_part4_26_29.djot) | 207-214 | [FDA: 100 Years of Insulin](https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin) |
+| 30 | AMP v Myriad | AMP v. Myriad Genetics | [set6_part4_30_32.djot](set6_part4_30_32.djot) | 215-220 | [U.S. Supreme Court: AMP v. Myriad Genetics, 2013](https://tile.loc.gov/storage-services/service/ll/usrep/usrep569/usrep569576/usrep569576.pdf) |
+| 31 | CRISPR patents | CRISPR/Cas9 Patent Disputes | [set6_part4_30_32.djot](set6_part4_30_32.djot) | 221-226 | [Federal Circuit: Regents v. Broad, May 12, 2025](https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.pdf) |
+| 32 | file/invent | First Inventor to File and Prior Art | [set6_part4_30_32.djot](set6_part4_30_32.djot) | 227-231 | [USPTO: first-inventor-to-file applicability](https://www.uspto.gov/web/offices/pac/mpep/s2159.html) |
+| 33 | data laws | Patents, Instruments, and Data | [set6_part4_33_35.djot](set6_part4_33_35.djot) | 232-236 | [USPTO: subject matter eligibility, including Diehr](https://www.uspto.gov/web/offices/pac/mpep/s2106.html) |
+| 34 | right to repair | Right to Repair | [set6_part4_33_35.djot](set6_part4_33_35.djot) | 237-241 | [FTC: Nixing the Fix](https://www.ftc.gov/system/files/documents/reports/nixing-fix-ftc-report-congress-repair-restrictions/nixing_the_fix_report_final_5521_630pm-508_002.pdf) |
+| 35 | copyleft | Copyleft and the Public Domain | [set6_part4_33_35.djot](set6_part4_33_35.djot) | 242-248 | [Creative Commons: license conditions](https://creativecommons.org/cc-licenses/) |
+| 36 | patent troll | Patent Trolls and Overbroad Claims | [set6_part4_36_38.djot](set6_part4_36_38.djot) | 249-258 | [USPTO: patent basics and claim scope](https://www.uspto.gov/patents/basics) |
+| 37 | NDA | Nondisclosure Agreement Pitfalls | [set6_part4_36_38.djot](set6_part4_36_38.djot) | 259-263 | [USPTO: trade secrets](https://www.uspto.gov/ip-policy/trade-secret-policy) |
+| 38 | non-compete | Noncompetes and Biotechnology Employees | [set6_part4_36_38.djot](set6_part4_36_38.djot) | 264-268 | [Illinois: Freedom to Work Act, Section 10](https://www.ilga.gov/legislation/ilcs/fulltext?DocName=082000900K10) |
+
+## Refinement research and visuals
+
+The latest pass adds seven unchanged student-PPTX images for seed saving, facility containment,
+clinical-trial phases, membrane filtration, the experiment/measurement cycle, iFixit, and phones.
+Their placement supports the adjacent explanation. Whole student-slide screenshots, anonymous
+stock science decoration, outdated policy maps, and unclear drug packaging were rejected.
+[PROVENANCE.md](assets/set6_sources/PROVENANCE.md) records media members, dimensions, hashes,
+identity checks, and the CDC Cannabis replacement. The original ten editable drawings remain.
+
+All seven Discovery or Invention examples use native `multiple-choice` answer popups. The
+original subjects, classifications, and feedback wording remain intact. Dark Waters uses the
+existing `movie-panel` layout with the retained poster, verified film details, and the instructor's
+recommendation. Eight low-resolution images use regular image/text panels, including the two small legacy
+patent illustrations.
+
+The split patent topics receive additional researched teaching, beyond reusing the overview:
+
+| Topic | Added depth | Evidence |
+| --- | --- | --- |
+| 27, patentable life | Retain the engineered-organism case and distinguish eligibility, freedom to operate, and authorization. | [Supreme Court opinion](https://tile.loc.gov/storage-services/service/ll/usrep/usrep447/usrep447303/usrep447303.pdf); [USPTO living subject matter](https://www.uspto.gov/web/offices/pac/mpep/s2105.html) |
+| 28, Cohen-Boyer | Cut/join/transform/select mechanism; functional propagation versus protein expression; existing nonexclusive-license account retained. | [Cohen et al., 1973](https://pmc.ncbi.nlm.nih.gov/articles/PMC427208/); [Stanford licensing history](https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable) |
+| 29, Genentech | Separate synthetic insulin-chain production, 1982 approval, platform licenses, and named patent cases. Add the Regents/Lilly written-description example. | [Goeddel et al., 1979](https://pubmed.ncbi.nlm.nih.gov/85300/); [FDA insulin history](https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin); [USPTO written description](https://www.uspto.gov/web/offices/pac/mpep/s2163.html); [Ariad/Lilly opinion](https://www.cafc.uscourts.gov/opinions-orders/08-1248.pdf) |
+| 33, data laws | Replace the generic patent citation for Bayh-Dole with the directly relevant NIH source; preserve the teaching prose. | [NIH intellectual-property compliance](https://www.grants.nih.gov/policy-and-compliance/policy-topics/intellectual-property) |
+
+The questions' historical premises are retained for discussion. The content explicitly identifies
+1982 as Humulin approval, not one universal Genentech patent date, and distinguishes the UCSF/
+Genentech growth-hormone case from insulin-cDNA litigation. Research checked November 12, 2026;
+this is a bounded educational source review rather than an exhaustive legal-status search.
 
 ## Input inventory
 

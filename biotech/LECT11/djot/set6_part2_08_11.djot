@@ -2,9 +2,9 @@
 
 # 8. Asilomar and Recombinant DNA
 
-=== layout: one-panel
+=== layout: bookend
 
-# 8. Questions (1 of 2)
+# 8. Questions
 
 @body
 
@@ -12,13 +12,6 @@
 - How did the conference sort experiments into different risk groups, and what new safety rules or lab standards came from that system?
 - Which experiments were first banned or restricted, and what reasons did scientists give for calling them too risky?
 - How did the Asilomar guidelines become part of the NIH rules for recombinant DNA research, and how did these rules create local biosafety committees at universities?
-
-=== layout: one-panel
-
-# 8. Questions (2 of 2)
-
-@body
-
 - How did scientists at Asilomar try to stay open about their research while still protecting public safety, and what ethics shaped their decisions?
 - How did the conference influence later global discussions about gene transfer, viral vectors, and gene editing safety?
 - Which of the original banned experiment types still appear in biosafety rules today, and which ones are now allowed due to better data or technology?
@@ -96,9 +89,9 @@ https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.htm
 
 # 9. NIH Guidelines and Biosafety
 
-=== layout: one-panel
+=== layout: bookend
 
-# 9. Questions (1 of 2)
+# 9. Questions
 
 @body
 
@@ -107,13 +100,6 @@ https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.htm
 - How is greenhouse research contained compared with open-field research, and why are these differences important?
 - What basic steps are required for safe handling and disposal of biological waste in a biotechnology lab?
 - What role do Institutional Biosafety Committees (IBCs) play in checking research plans and enforcing biosafety compliance?
-
-=== layout: one-panel
-
-# 9. Questions (2 of 2)
-
-@body
-
 - How are training, lab records, and incident reports reviewed during biosafety audits?
 
 === layout: one-panel
@@ -161,6 +147,16 @@ https://www.cdc.gov/labs/bmbl/index.html
 @citation
 
 https://www.cdc.gov/labs/bmbl/index.html
+
+=== layout: big-image
+
+@image
+
+![9. Containment Is Built Into the Facility](assets/set6_sources/containment_facility.png)
+
+@caption
+
+Follow the filtered air, breathing-air supply, and liquid-waste treatment. The numbered levels in this building cutaway are floors, not biosafety levels. Containment combines equipment, facility design, and work practices.
 
 === layout: big-image
 
@@ -221,9 +217,9 @@ https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.htm
 
 # 10. Engineered Microbes Under TSCA
 
-=== layout: one-panel
+=== layout: bookend
 
-# 10. Questions (1 of 2)
+# 10. Questions
 
 @body
 
@@ -233,13 +229,6 @@ https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.htm
 - How are containment levels and kill-switch designs weighed in TSCA decisions?
 - How do TSCA and FIFRA differ when a microbe both performs a function and acts as a pesticide?
 - How do Tier I and Tier II exemptions reduce burden for well-understood hosts?
-
-=== layout: one-panel
-
-# 10. Questions (2 of 2)
-
-@body
-
 - How do monitoring plans verify that engineered microbes remain confined to the intended niche?
 
 === layout: one-panel
@@ -290,9 +279,9 @@ https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biote
 
 # 11. The Coordinated Framework
 
-=== layout: one-panel
+=== layout: bookend
 
-# 11. Questions (1 of 2)
+# 11. Questions
 
 @body
 
@@ -301,13 +290,6 @@ https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biote
 - How does the framework decide whether a biotech product is evaluated based on its process (how it is made) or its product (what it does)?
 - How did the 2017 update adapt the policy for new technologies like CRISPR, gene drives, and synthetic biology?
 - What are the strengths and limits of using existing laws instead of writing a new biotechnology act?
-
-=== layout: one-panel
-
-# 11. Questions (2 of 2)
-
-@body
-
 - How does this framework help coordinate environmental safety, food safety, and public communication about biotech research?
 
 === layout: one-panel

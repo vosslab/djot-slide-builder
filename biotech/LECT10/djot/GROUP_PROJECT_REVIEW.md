@@ -1,5 +1,24 @@
 # Group project restoration
 
+For the long-term weekly teaching plan, see
+[GROUP_PROJECT_PROGRESSION.md](../../GROUP_PROJECT_PROGRESSION.md).
+
+## Latest link refinement
+
+November 12, 2026: add a dedicated Group Vision Report Form link slide to 10B only, immediately
+after the existing report instructions. The supplied link resolves to "BIOL 480: Group Vision
+Report" and remains clickable native text in both exports. Existing slide prose and all 11B
+sources/exports remain unchanged. The Nov 19 form deadline is unchanged.
+
+The current deck has 42 authored slides, 28 hidden slides, and 14 classroom PDF pages; the new
+link is PDF page 11. The restoration inventory below describes the earlier build. Strict native
+Djot lint and 352 focused include/link checks pass. All 14 PDF pages were rendered and visually
+reviewed, with the new slide also inspected at full size; no words extend beyond page bounds.
+The 13 inherited capacity advisories
+are on hidden reference slides. Native text and the exact form destination are verified in the
+ODP and PDF. Evidence and backup exports live under `_temp/group_project_link_refinement/`.
+Attended playback and form submission are not tested.
+
 ## Source authority
 
 The instructor's `biotech/LECT10/lect10b-2025_group_project_guide.odp` supplies the language,

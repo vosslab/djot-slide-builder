@@ -2,9 +2,9 @@
 
 # 22. Supplements and DSHEA
 
-=== layout: one-panel
+=== layout: bookend
 
-# 22. Questions (1 of 4)
+# 22. Questions
 
 @body
 
@@ -14,35 +14,14 @@
 - Can vitamin C prevent the common cold?
 - What role did Linus Pauling play in the myth of vitamin C?
 - Politics around the DSHEA of 1994: How did the media create a narrative of governmental overreach and interference with personal health freedoms?
-
-=== layout: one-panel
-
-# 22. Questions (2 of 4)
-
-@body
-
 - How did FDA Commissioner Dr. David Kessler's statements regarding dietary supplements get misinterpreted by the media and public?
 - How did those statements contribute to the 'keep the government away from my vitamins' campaign?
 - How did lobbying by the dietary supplement industry make it to where supplements would be regulated more like foods than drugs?
 - How did public opinion and industry pressure overrule the role of scientific evidence?
 - After DSHEA of 1994: Who bears the responsibility for proving the safety and efficacy of dietary supplements: the FDA or the manufacturer?
-
-=== layout: one-panel
-
-# 22. Questions (3 of 4)
-
-@body
-
 - And what is required for the FDA to demonstrate that a supplement is harmful?
 - What is the role of the FDA in dietary supplements today?
 - Why are dietary supplements permitted to state they 'support the immune system' but prohibited from claiming they 'prevent illness,' and what criteria does the FDA use to distinguish between permissible support claims and impermissible health claims?"
-
-=== layout: one-panel
-
-# 22. Questions (4 of 4)
-
-@body
-
 - Future of Supplement Industry: Can you identify some private regulatory bodies that oversee dietary supplements (NPA, Ul, USP, NSF International, ConsumerLab.com) and describe the types of certifications or assurances they provide to consumers?
 - Why do we need private regulatory bodies?
 - What recent high-profile cases have there been regarding supplement safety or false claims, e.g. Herbalife?
@@ -125,25 +104,29 @@ https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
 
 https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 22. Read a Real Supplement Disclaimer
 
-![22. Read a Real Supplement Disclaimer](assets/set6_sources/topic_22_014.png)
-
-@caption
+@left
 
 Compare a structure/function claim with the adjacent disclaimer. Which claim would require evidence of disease treatment, and what does this label actually establish?
 
-=== layout: big-image
+@right
 
-@image
+![22. Read a Real Supplement Disclaimer](assets/set6_sources/topic_22_014.png)
 
-![22. What Does USP Verification Establish?](assets/set6_sources/topic_22_183.png)
+=== layout: two-panels
 
-@caption
+# 22. What Does USP Verification Establish?
+
+@right
 
 A quality-verification mark has a defined scope. Identity, amount, contaminants, and manufacturing quality are different claims from prevention or treatment of a disease.
+
+@left
+
+![22. What Does USP Verification Establish?](assets/set6_sources/topic_22_183.png)
 
 === layout: one-panel
 
@@ -164,9 +147,9 @@ https://www.ftc.gov/system/files/documents/public_statements/971213/160715herbal
 
 # 23. Generic Drug Regulation
 
-=== layout: one-panel
+=== layout: bookend
 
-# 23. Questions (1 of 3)
+# 23. Questions
 
 @body
 
@@ -175,25 +158,11 @@ https://www.ftc.gov/system/files/documents/public_statements/971213/160715herbal
 - How do pricing strategies differ between generic and brand-name drug manufacturers?
 - What is the role of market exclusivity periods in the Hatch-Waxman Act, and how do they impact the entry of generic drugs into the market?
 - In what ways have consumers benefited from the Hatch-Waxman Act economically?
-
-=== layout: one-panel
-
-# 23. Questions (2 of 3)
-
-@body
-
 - How have patent litigations under the Hatch-Waxman Act influenced the pharmaceutical landscape?
 - What are some significant legal precedents set by Hatch-Waxman-related court cases that have shaped the generic drug industry?
 - How has the introduction of generic drugs under the Abbreviated New Drug Application (ANDA) influenced healthcare costs?
 - What are the requirements for an ANDA submission, and how do they ensure that generic drugs are safe and effective?
 - What are the scientific and regulatory challenges in establishing bioequivalence for complex drug products?
-
-=== layout: one-panel
-
-# 23. Questions (3 of 3)
-
-@body
-
 - How does the FDA address variations in bioequivalence standards for drugs with narrow therapeutic indices?
 - How does the FDA ensure that generic drugs continue to meet safety and efficacy standards post-approval?
 
@@ -271,9 +240,9 @@ https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
 # 24. International Generic Drug Quality
 
-=== layout: one-panel
+=== layout: bookend
 
-# 24. Questions (1 of 3)
+# 24. Questions
 
 @body
 
@@ -282,25 +251,11 @@ https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 - How do economic and political pressures affect the oversight and quality assurance of generic drug production?
 - Regulatory Challenges: What obstacles do organizations like the FDA face when monitoring international pharmaceutical manufacturers?
 - What are the specific challenges associated with conducting surprise inspections at these international facilities?
-
-=== layout: one-panel
-
-# 24. Questions (2 of 3)
-
-@body
-
 - How does the manipulation of data and fraudulent reporting endanger drug safety?
 - Can you identify cases of corporate misconduct in generic drug production and their consequences?
 - What methods can regulators use to uncover and deter test result falsification by drug companies?
 - Issues of Inefficacy: How does cost reduction in production affect the trustworthiness of generic drugs?
 - Can you provide instances where substandard generics have led to treatment failures?
-
-=== layout: one-panel
-
-# 24. Questions (3 of 3)
-
-@body
-
 - What is the impact of ineffective (less active ingredient than labeled) or contaminated generics on patient health and public trust in the pharmaceutical industry?
 - Consumer Knowledge: What approaches can consumers take to better understand the origins and quality of their medications?
 - How can medical professionals promote higher standards in drug manufacturing?
@@ -355,9 +310,9 @@ https://www.justice.gov/archives/opa/pr/generic-drug-manufacturer-ranbaxy-pleads
 
 # 25. PFAS: Forever Chemicals
 
-=== layout: one-panel
+=== layout: bookend
 
-# 25. Questions (1 of 2)
+# 25. Questions
 
 @body
 
@@ -367,13 +322,6 @@ https://www.justice.gov/archives/opa/pr/generic-drug-manufacturer-ranbaxy-pleads
 - For the following items, describe how PFAS exposure can impact human health: drinking water, dental floss, food packaging, nonstick cookware, stain-resistant carpets, and waterproof clothing. How do consumer choices affect the presence of PFAS in products?
 - What health risks are tied to PFAS exposure?
 - How much PFAS does the average American have in their bodies?
-
-=== layout: one-panel
-
-# 25. Questions (2 of 2)
-
-@body
-
 - How is the EPA addressing PFAS concerns?
 - Which PFAS are banned and for what reason?
 - How are environmental PFAS levels monitored and managed?
@@ -441,6 +389,25 @@ https://www.epa.gov/dwreginfo/pfas-rule-implementation
 
 https://www.epa.gov/dwreginfo/pfas-rule-implementation
 
+=== layout: two-panels
+
+# 25. A Membrane Separates Material
+
+@left
+
+![Membrane separation](assets/set6_sources/membrane_filtration.jpg)
+
+@right
+
+- Measure the treated water and the retained material.
+- Separation can move chemicals to another stream.
+- Destruction requires different evidence.
+- This image is conceptual; it does not report a PFAS removal rate.
+
+@citation
+
+https://www.epa.gov/dwreginfo/pfas-rule-implementation
+
 === layout: big-image
 
 @image
@@ -451,13 +418,24 @@ https://www.epa.gov/dwreginfo/pfas-rule-implementation
 
 Measure the outgoing water and the retained material. Removal from water alone does not demonstrate destruction.
 
-=== layout: big-image
+=== layout: movie-panel
 
-@image
+# 25. Dark Waters (2019)
 
-![25. Dark Waters: Follow the Evidence](assets/set6_sources/topic_25_115.png)
+@body
 
-@caption
+- Plot\: Attorney Rob Bilott investigates contamination linked to a chemical company and challenges its account of the evidence.
+- Genre\: Drama, Thriller
+- Director\: Todd Haynes
+- Run time\: 127 min; PG-13
 
 The instructor recommends Dark Waters (2019). Ask who measured exposure, who controlled the records, and what it took to connect a local observation to a public response.
+
+@poster
+
+![Dark Waters (2019) movie poster](assets/set6_sources/topic_25_115.png)
+
+@citation
+
+https://www.focusfeatures.com/dark-waters
 

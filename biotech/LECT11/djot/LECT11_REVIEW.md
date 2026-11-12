@@ -8,13 +8,19 @@ Canonical sources live here. Generated ODPs are editable; final PDFs come from L
 
 | Deck | Djot Master | ODP Slides | Hidden | PDF Pages |
 | --- | --- | ---: | ---: | ---: |
-| lect11a-2026_biotech_announcements | [lect11a-2026_biotech_announcements.djot](lect11a-2026_biotech_announcements.djot) | 46 | 8 | 38 |
+| lect11a-2026_biotech_announcements | [lect11a-2026_biotech_announcements.djot](lect11a-2026_biotech_announcements.djot) | 49 | 8 | 41 |
 | lect11b-2026_group_project | [lect11b-2026_group_project.djot](lect11b-2026_group_project.djot) | 45 | 17 | 28 |
-| lect11c-set_6_regulation_of_biotechnology | [lect11c-set_6_regulation_of_biotechnology.djot](lect11c-set_6_regulation_of_biotechnology.djot) | 308 | 0 | 308 |
+| lect11c-set_6_regulation_of_biotechnology | [lect11c-set_6_regulation_of_biotechnology.djot](lect11c-set_6_regulation_of_biotechnology.djot) | 274 | 0 | 274 |
 
 Outputs are `output/odp/<master-stem>.odp` and `output/pdf/<master-stem>.pdf`. See [SET6_TOPIC_GUIDE.md](SET6_TOPIC_GUIDE.md) for all inputs, 38-topic navigation, original-slide correspondence, corrections, and primary sources.
 
+The table reflects the latest 11A and Set 6 refinements. Earlier receipts below describe the
+initial build and formatting-only quality pass; the latest request-specific receipts are appended.
+
 ## Weekly state and emphasis
+
+The week-to-week teaching plan is maintained in
+[GROUP_PROJECT_PROGRESSION.md](../../GROUP_PROJECT_PROGRESSION.md).
 
 - November 12: form groups of 3-4; confirm communication, a next meeting, and a product shortlist.
 - November 19: choose one product by submitting the Company Vision Report (Form), once per group; Set 7 and Homework 6.
@@ -228,7 +234,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [x] Add a concise conversion/review entry to [CHANGELOG.md](../../../docs/CHANGELOG.md), naming the lecture
   and resulting artifacts; report the review and output paths to the instructor.
 
-## Final artifact receipt
+## Initial artifact receipt
 
 All three masters passed strict native Djot lint: 399 authored slides and 46 image uses.
 The final LibreOffice build completed successfully; PDFs were exported from the ODPs.
@@ -366,3 +372,132 @@ remain historical evidence; the current PDF/ODP files are the handoff artifacts.
 
 The earlier base-suite exceptions remain documented above. The mutating full suite was not
 repeated for this formatting-only pass. Live playback, gameplay, and upload remain untested.
+
+## Latest 11A refinements
+
+The instructor requested eight specific announcement refinements. Current artifacts are
+`output/odp/lect11a-2026_biotech_announcements.odp` and
+`output/pdf/lect11a-2026_biotech_announcements.pdf`: **49 authored slides, 8 hidden, 41 PDF pages**.
+The group-project and Set 6 sources and ODPs remain unchanged. Their missing PDFs were
+re-exported from the existing ODPs during the final delivery recovery described below.
+
+| Request | Result | PDF Pages |
+| --- | --- | --- |
+| Shared genetics contact wording | Exact canonical contact slide, including first-person details, four colors, and italic mailto link | 14 |
+| Zoom subsection and course meeting | Native divider and meeting slide; class link is separate from office hours | 16-18 |
+| Original Zoom images | Original name badge, annotated Rename menu, and annotated profile menu | 19-21 |
+| Optional textbook cover | Supplied third-edition cover beside the existing native reading text | 24 |
+| Instructor's talking-point voice and timing | Earlier slide wording restored; 90-second presentation reminder | 29-30 |
+| Drop Discussion Marks | Removed the slide, 100-point grading row, and Zoom-name sorting claim | 19, 26, 29-30 |
+| Film examples | Three labeled, clickable historical schedules | 38 |
+| Remove lab CRNs | Removed only BCHM 356 = 22046 and BCHM 456 = 22049 | 36 |
+
+### Source and scope
+
+- Extracted the exact contact block from `evergreen/instructor_contact.djot` into the shared
+  `evergreen/ways_to_contact.djot`; both the original group and Biotechnology now include it.
+  Expanding that include reproduces the prior shared contact group verbatim.
+- The class meeting had incorrectly reused the office-hours URL. Its supplied join link now
+  resolves from `biotechnology.zoom`, with `class_zoom_short` as the visible URL. Office hours
+  retains its own `office_hours` and `zoom_short` values in ignored local configuration.
+- Original Zoom images come from authored slides 26-27 of
+  `biotech/LECT11/old/lect11a-2025_announcements.odp`. The during-class rename steps have their
+  own visual page so both the instructions and original menu image remain readable.
+- Talking-point wording comes from the instructor's earlier guide in
+  `biotech/LECT11/old/Fall_2023_Talking_Points_Set_6-Regulation_of_BioTech.txt`.
+  The explicit current correction changes the presentation duration to 90 seconds.
+  Original informal wording, capitalization, and instructions are retained; the unreviewed
+  syllabus rewrite is no longer the voice model. The older source files were not edited.
+- Cover and Zoom-image provenance is in `biotech/evergreen/assets/PROVENANCE.md`. All five
+  added/restored image files are embedded verbatim in the ODP and remain ignored source assets.
+- Both supplied cover URLs returned valid 391 x 500 JPEGs. The CloudFront original was used.
+  Each supplied Google Sheet returned HTTP 200 with the matching Spring 2022, Summer 2024,
+  or Summer 2026 title. These are examples of prior movie content, distinct from Summer 2027
+  logistics. The film slide groups logistics/examples beside the existing learning experience.
+- Shared registration and Zoom sources and their guidance were updated. Earlier weekly
+  exports and genetics conversion artifacts were not rebuilt or edited.
+
+### Verification
+
+- Strict native Djot lint passes: one master, 49 authored slides, 19 image uses.
+- Focused course-link, include, hyperlink, and Markdown checks pass: **355 tests**.
+- Actual ODP/PDF checks verify the slide/hidden/page counts, 231 native paragraphs, 26 PDF
+  hyperlinks, the separate class/office-hours destinations, all three film destinations,
+  all five embedded image hashes, and zero text words outside PDF page bounds.
+- Reviewed all 41 pages through numbered contact sheets and enlarged the contact page,
+  meeting details, name/profile graphics, textbook cover, talking-point guide, lab, and film
+  pages. Rechecked the corrected Zoom rename paragraph after export.
+- Capacity remains advisory. The current narrow text regions are 18.75 pt (background reading),
+  19.5 pt (profile instructions and canonical contact), and 19.25 pt (film description), with
+  an inherited 19.75 pt biochemistry-content region. Their rendered output is readable.
+  The inherited office-hours runt and anonymous-message title wrap remain unchanged.
+- Current receipts, source snapshots, recovered-member inventory, web-fetch metadata,
+  validation hashes, build log, and quality-90 WebP renders are under
+  `_temp/biotech_lect11/refinements/`. `final_validation.json` is the current 11A export receipt.
+
+No meeting was joined and no upload or attended Zoom playback was performed. The earlier
+full-suite exceptions remain documented above; the mutating full suite was not repeated.
+
+### Output recovery
+
+A final file check found the LECT11 PDFs absent from `output/pdf/` despite completed builds.
+The ODPs and source decks were intact; the cause of the disappearance was not established.
+All three PDFs were re-exported through the repository's LibreOffice helper from the existing
+ODPs. The group-project and Set 6 ODP hashes are unchanged, and their PDF text was compared
+page-by-page with the earlier accepted render text. No genetics output was regenerated.
+
+Current PDF copies are also retained in `_temp/biotech_lect11/refinements/final_exports/`.
+`pdf_recovery.json` records their hashes and confirms that PDF recovery changed no ODP bytes.
+
+## Latest Set 6 refinements
+
+November 12, 2026. The instructor called this deck "10C," but the named slides and official
+38-topic list identify the current Set 6 master, 11C. The Set 5/10C source remains unchanged.
+The instructor's exact official labels and the refreshed page map are in
+[SET6_TOPIC_GUIDE.md](SET6_TOPIC_GUIDE.md). Topic 27's short label "patent life" is resolved by
+the original source questions as patentable living organisms (Chakrabarty), not patent duration.
+
+| Request | Final implementation |
+| --- | --- |
+| One setup page per talking point | Each of 38 numbered subsections is immediately followed by one `bookend` questions slide, then content. All 71 prior question-page bodies are retained verbatim and consolidated into 38 pages. Smaller setup text is the instructor's explicit exception. |
+| More coherent student visuals | Seven additional unchanged PPTX media assets: seed-saving photo, containment cutaway, clinical-phase staircase, membrane separation, experiment/measurement cycle, iFixit, and phones. No student names or whole-slide screenshots added. |
+| Discovery or Invention game | All seven subjects/classifications/feedback use native `multiple-choice` answer popups. Word-preserving line breaks fix final-export answer overflow. Seven native on-click steps verified. |
+| Dark Waters movie format | Existing `movie-panel`, retained original poster, original recommendation/question wording, and distributor-verified director, genre, runtime, and synopsis. |
+| Small/pixelated source images | Eight regular image/text panel pages replace enlarged views, including the three named images, the small historical drug images, prior-art cartoon, and one-click interface. The PFAS explanation keeps its original full-width text; a separate regular panel page carries the membrane illustration. |
+| Cannabis identity | Replace the isolated student leaf view with CDC PHIL 16340, identified as Cannabis sativa, credited to CDC / Dr. Louis Alexander (1973). Preserve the original caption's point about chemistry and legal status. No claim is made that the old image was another species. |
+| Research for split topics | Add Cohen-Boyer experimental steps, the early recombinant-insulin chain strategy, and the named Regents/Lilly written-description example. Check Chakrabarty against the Court/USPTO; give the disclosure and Bayh-Dole slides directly supporting primary citations. |
+| Official topic order | All 38 topics remain visible in the supplied order, with exact short labels recorded beside the expanded teaching titles. |
+
+### Evidence and checks
+
+- Final source/ODP/PDF counts: 274 authored, 0 hidden, 274 PDF pages. The reduction is
+  33 consolidated question pages and 7 combined question/answer pairs, with 3 research pages
+  and 3 visual pages added to the original 308.
+- All 298 original body paragraphs and captions checked for preservation, allowing line wrapping.
+  Existing questions, instructor wording, and the seven game explanations remain intact.
+- Seven new PPTX assets and the CDC image are embedded byte-for-byte. The ten original editable
+  diagrams are retained. Asset hashes, media members, and identity limitations are recorded in
+  the source and instructor asset provenance files.
+- Strict native Djot lint and 361 focused include/link/audit/documentation checks pass, recorded under
+  `_temp/set6_refinements/`. The one-time source/native/PDF verifier lives there too.
+- Every visible PDF page was reviewed in 23 contact sheets. Dense questions, new visuals,
+  movie/panel repairs, research additions, and all seven game pages receive enlarged checks.
+  Final checks confirm complete game-answer text, no review placeholders, and no words outside
+  page bounds. The final PFAS explanation and separate membrane page were rechecked; the other
+  272 rendered frames match the already reviewed export byte-for-byte after the page insertion.
+- The ODP contains 1,469 native paragraphs; the PDF retains 148 links. All eight newly selected
+  image assets are embedded unchanged. Explanatory content remains at or above 17 pt in the
+  compiler; smaller setup-question text is explicitly authorized.
+- The questions use the Key Takeaways frame, with deliberately smaller text. The dense setup
+  pages are not a precedent for shrinking the explanatory content.
+- A/B ODP and PDF hashes match the pre-refinement snapshot. No genetics sources, shared renderer
+  code, or Set 5 content was edited. Backup final exports are retained in
+  `_temp/set6_refinements/final_exports/`.
+
+### Limits
+
+The static PDF shows the revealed answers. The ODP carries native on-click reveals; attended
+Impress playback is not tested. No Blackboard upload or classroom projection is claimed. The
+primary-source research is bounded to the added teaching and does not claim exhaustive clinical
+or legal currency. The base suite was not rerun; this content-only pass uses focused checks and
+artifact inspection, avoiding the known unrelated automatic source-fixer behavior of a full run.

@@ -98,9 +98,18 @@ Instructor library source:
 - The older Biotechnology Lecture 10A summer-course promotion supplies the retained sentence
   about most of the grade coming from weekly writing prompts and getting the work done.
 
-Restore that description of the learning experience without promising a fixed film lineup,
-historical journal deadlines or old Google document links. The current instructor-supplied
-listing establishes the 2027 Session D dates shown above.
+Restore that description of the learning experience without promising a fixed film lineup or
+historical journal deadlines. The current instructor-supplied listing establishes the 2027
+Session D dates shown above. On November 12, the instructor requested these historical schedules
+on the film slide as examples of movie content:
+
+- [Spring 2022](https://docs.google.com/spreadsheets/d/1a2F5pshoAtGjknMw3oUXjmI4SEjpVIvc1xiNHdJsD6Q/edit).
+- [Summer 2024](https://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit).
+- [Summer 2026](https://docs.google.com/spreadsheets/d/1O5rjL8j6IocYQdYKjUiwwuhyOEoRfpEuqCcYse3VF8c/edit).
+
+Their page titles confirm the terms. They are historical examples, separate from the upcoming
+course's dates. The instructor also requested removal of the BCHM 356/456 CRN line from the lab
+slide; the lecture and film CRNs remain unchanged.
 
 ## Shared consumers
 

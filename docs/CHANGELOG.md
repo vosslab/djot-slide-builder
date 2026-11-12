@@ -2,6 +2,68 @@
 
 ### Fixes and Improvements
 
+- Integrate selection182 original Punnett carrier-phenotype SVG through one local41 image URL;
+  all other Djot bytes and fallback retained. Actual full62/focused41 models/plans/diagnostics
+  and every ODP member/order equal the accepted candidate; bounded title export variance retained.
+  Artwork DONE; independent integration review pending; broader goal ACTIVE.
+  Evidence: _temp/punnett_carrier_phenotypes_182/integration/REPORT.md.
+
+- Complete selection179 original X-Y chromosome-count SVG through one local20 image URL;
+  preserve every other Djot byte and fallback. Fresh actual full62/focused1 models/plans/
+  diagnostics and all raw ODP members/order equal the accepted candidate. Root accepted
+  the bounded title export exception; right-panel geometry/pixels remain exact.
+  Fresh independent integration review PASS; metadata-only closure COMPLETE; broader goal ACTIVE.
+  Five existing metadata owners updated; all219 protections and70/7/53 sealed members exact.
+  Closure: _temp/xy_inheritance_179/closure.json. 180/181 HOLD;
+  182 image022 HOLD, image026 READY after POST179 re-freeze; no182 artwork yet.
+  Evidence: _temp/xy_inheritance_179/integration/REPORT.md. No export replay or full suite.
+
+- Refine Biotechnology Set 6 (11C): consolidate 38 complete question sets into framed setup
+  slides, add seven student visuals and a CDC-identified Cannabis photo, use native game-answer
+  reveals and the Dark Waters movie layout, and reduce eight low-resolution image views.
+  Add researched patent explanations; preserve existing prose and record the official topic map.
+
+- Add a dedicated Group Vision Report Form link slide to Biotechnology 10B only; preserve
+  existing slide prose and review the rebuilt 14-page PDF and editable ODP. Add the long-term
+  weekly teaching plan in `biotech/GROUP_PROJECT_PROGRESSION.md`, grounded in the original guides.
+
+- Complete selection178 original X-Y sex determination SVG through one image URL;
+  all other Djot bytes, original JPEG and fixed proof preserved. Independent integration
+  review PASS; accepted native evidence preserves 16 words/full boxes and 51 SVG tokens
+  in 30 authored line groups (correcting historical prose count 29). Actual full62/
+  focused1 and raw ODP identity: _temp/xy_sex_determination_178/integration/REPORT.md.
+  Broader goal ACTIVE; 179 READY, no drawing yet.
+
+- Refine Biotechnology LECT11A using the canonical genetics contact wording, a Zoom subsection
+  and correct class meeting, original name/profile graphics, and the optional textbook cover.
+  Restore the instructor's talking-point voice at 90 seconds and remove Discussion Marks.
+  Add three historical film schedules to the shared course slide and remove lab CRNs.
+  Rebuild and review the 41-page PDF and editable ODP. Recover missing PDFs from existing
+  LECT11 ODPs, preserving B/C sources and ODP bytes; retain verified PDF backup copies.
+
+- Complete selection173: six05G question URLs reuse the unchanged accepted170 card;
+  all other consumer bytes, flower URLs, rasters and artwork preserved. Actual guarded
+  full21/focused6 models/plans and raw ODP members/order equal the accepted candidate;
+  root accepted all six native pages. No export replay. COMPLETE, independent review PASS;
+  broader goal ACTIVE. 174/175/176 HOLD;176 diagnostic PASS, no product fix.
+  177 both assets HOLD; next178 unopened. Metadata closure records one external
+  guidance exception;194 other fixed protections and all proof members remain exact.
+  Evidence: _temp/pollen_question_reuse_173/integration/REPORT.md.
+
+- Complete selection171: two05G source002 URLs reuse the accepted shared flower SVG;
+  all other source bytes, source rasters, artwork and frames preserved. COMPLETE,
+  fresh independent integration review PASS; broader goal ACTIVE. Fresh specification/
+  quality PASS and root native-page acceptance. Actual full21/focused2 model/plan/
+  empty diagnostics and every raw ODP member/order match candidate; no export replay.
+  Accepted proof retains42 native words and exact x bounds; five bold table vertical
+  metric exceptions retain exact native pixels. Ten SVG words/page;560/414 edge pixels,
+  zero changes outside artwork+2px. 172 HOLD (B-only versus P(A|B)=1);173 READY for
+  exact170 quote reuse in six placements after fresh context proof, not implemented.
+  Evidence: _temp/flower_punnett_reuse_171/integration/REPORT.md. No full-suite,
+  classroom or print claim. Metadata-only closure changed five metadata owners; all179 fixed
+  protections and64 baseline/56 candidate sealed members remain exact.
+  Closure: _temp/flower_punnett_reuse_171/closure.json.
+
 - Complete selection170: six source005 URLs on local24-29 use the accepted editable
   pollen_survival_question.quote.svg; every other consumer byte exact. COMPLETE,
   fresh independent integration review PASS; broader goal ACTIVE. Source/art and all six native

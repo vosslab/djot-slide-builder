@@ -129,3 +129,88 @@ Copyrighted source artwork remains local and ignored. No image was cropped or st
 - Scientific statements were reconstructed as native teaching text; the image is not authority for current regulatory status.
 
 The antitoxin horse photograph is used for animal-source context. Its people, horse identity, and precise date are not independently established; it is not identified as Jim.
+
+## November 12 refinement additions
+
+The additional images below are extracted verbatim from student PPTX media members.
+Their explanatory text remains native Djot. No whole student slides or names are imported.
+
+### seed_saving_photo.png
+
+- Use: seed_saving_photo.
+- Source: `biotech/LECT11/old/Fall_2025_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 30.
+- Embedded member: `ppt/media/image23.png`.
+- Original dimensions: 290 x 174.
+- SHA-256: `a2a35d431f88626be39d2dee85fee1e32b4184a1d5f7abaae3fbf08d033634e2`.
+
+### containment_facility.png
+
+- Use: containment_facility.
+- Source: `biotech/LECT11/old/Fall_2025_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 36.
+- Embedded member: `ppt/media/image49.png`.
+- Original dimensions: 1064 x 1334.
+- SHA-256: `dcbe56665df3f4ca6d396b04eca88bf6df128becb9e47f8fc4585b9753e3dd36`.
+
+### clinical_phase_staircase.png
+
+- Use: clinical_phase_staircase.
+- Source: `biotech/LECT11/old/Fall_2025_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 55.
+- Embedded member: `ppt/media/image76.png`.
+- Original dimensions: 800 x 400.
+- SHA-256: `5e5192245d294aaf6768b929c113e1d0048db0a07ddd3198b84291f20fb39039`.
+
+### membrane_filtration.jpg
+
+- Use: membrane_filtration.
+- Source: `biotech/LECT11/old/Fall_2024_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 44.
+- Embedded member: `ppt/media/image60.jpg`.
+- Original dimensions: 750 x 500.
+- SHA-256: `78820ec617477abf9ebe7713bb0690700e25af38f1d5ae2c581a6bced75a5a46`.
+
+### experiment_measurement_cycle.png
+
+- Use: experiment_measurement_cycle.
+- Source: `biotech/LECT11/old/Fall_2024_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 51.
+- Embedded member: `ppt/media/image73.png`.
+- Original dimensions: 750 x 570.
+- SHA-256: `13db4564896b7ba61d168648f1a6668e850c760894572901a5ee7ad9d09ff4f3`.
+
+### ifixit_logo.png
+
+- Use: ifixit_logo.
+- Source: `biotech/LECT11/old/Fall_2024_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 57.
+- Embedded member: `ppt/media/image85.png`.
+- Original dimensions: 1033 x 322.
+- SHA-256: `62ad02bf00961e478be165f61ce791a10d27ffcd846974137a568841fa543995`.
+
+### smartphones.png
+
+- Use: smartphones.
+- Source: `biotech/LECT11/old/Fall_2024_Talking_Points_Set_6-Regulation_of_BioTech.pptx`; authored slide 57.
+- Embedded member: `ppt/media/image95.png`.
+- Original dimensions: 680 x 425.
+- SHA-256: `d7a592dc9a4f3d3d8470ca94f0643555d02fe4ccf09247ccb38e3d59176bcff1`.
+
+The containment cutaway labels building floors, not biosafety levels. The phase staircase
+illustrates study purposes; its icons do not report actual sample sizes. The membrane image
+illustrates separation, not a validated PFAS-treatment performance claim. The instrument cycle
+illustrates measurement and interpretation, not the legal ownership of the resulting data.
+
+### cannabis_cdc_16340.jpg
+
+- Identity: *Cannabis sativa* leaves, identified by CDC Public Health Image Library record 16340.
+- Creator: CDC / Dr. Louis Alexander, 1973. Public domain; attribution retained on the slide.
+- Source: https://wwwn.cdc.gov/PHIL/Details.aspx?pid=16340
+- Image: https://wwwn.cdc.gov/phil/PHIL_Images/16340/16340_lores.jpg
+- Downloaded unchanged; dimensions 700 x 1063.
+- SHA-256: `91d2db5d67adea9a27737abdbcf7ce0863a93988ef1adca95b01c10eee3358c7`.
+
+This replaces `topic_17_187.png` in the active deck because its isolated leaf view did not
+make the identity clear to the instructor. The original student image remains local evidence;
+no claim is made that it was a different species. The replacement does not establish chemical
+content or legal status.
+
+The low-resolution sulfanilamide, prescription, 1962 notice, pollen, supplement-label, and
+USP-mark images now share regular panels with native text. The existing Dark Waters poster
+is retained without modification in the `movie-panel` layout. Film metadata is verified against
+[Focus Features](https://www.focusfeatures.com/dark-waters).

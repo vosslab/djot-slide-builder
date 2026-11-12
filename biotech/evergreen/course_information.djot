@@ -34,27 +34,7 @@
 - Also available by appointment; suggest two or three meeting times.
 - Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
 
-=== layout: two-panels
-
-# Ways to Contact Dr. Voss
-
-@left
-
-- [*Office hours*]{color=green}
-  - Attend to ask in person or over Zoom.
-- [*Discord*]{color=red}
-  - By far the quickest; I check multiple times per day.
-  - Send me a direct message (DM) or post to the whole class.
-  - Response time: 1-2 calendar days.
-@right
-
-- [*Email*]{color=blue}
-  - [_nvoss@roosevelt.edu_](mailto:nvoss@roosevelt.edu)
-  - About 20 emails daily; I check once daily for mental health.
-  - Response time: 2 business days.
-- [*Anonymous Google Form*]{color=purple}
-  - Goes to my email, but I can only read it on my laptop.
-  - Response time: 2-4 business days.
+=== include: repo:evergreen/ways_to_contact.djot
 
 === layout: two-panels
 

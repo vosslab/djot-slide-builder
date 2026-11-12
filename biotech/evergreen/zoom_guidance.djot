@@ -1,3 +1,23 @@
+=== layout: subsection
+
+# Zoom
+
+=== layout: two-panels
+
+# Biotechnology Class Zoom
+
+@left
+
+- Meeting ID:
+  - *972 4581 5713*
+- Password: *biotech*
+- Join class:
+  - [{{course_url:class_zoom_short}}]({{course_url:zoom}})
+
+@right
+
+![Zoom Video Conferencing](repo:biotech/evergreen/assets/zoom_logo.png)
+
 === layout: two-panels
 
 # How to Use Zoom Like a Pro
@@ -7,7 +27,7 @@
 - Mute yourself when you are not speaking.
 - Plug in your headphones or earbuds.
 - Turn off video if your connection is slow.
-- Join class: [{{course_url:zoom_short}}]({{course_url:zoom}})
+- Join class: [{{course_url:class_zoom_short}}]({{course_url:zoom}})
 
 @right
 
@@ -20,7 +40,6 @@
 @left
 
 - Use your proper first name or a consistent nickname.
-- Discussion marks are assigned by sorting names alphabetically by first name.
 - Avoid:
   - Last name first (e.g., "Smith Jane").
   - Something obscure (e.g., "iPhone User").
@@ -28,22 +47,33 @@
 
 @right
 
-## Change Your Name During Class
+![Name badge](repo:biotech/evergreen/assets/zoom_name_badge.png)
+
+=== layout: two-panels
+
+# Change Your Name During Class
+
+@left
 
 1. Open *Participants*.
-2. Find your name and choose *More* or the three-dot menu.
+2. Find your name\
+   and choose *More* or the three-dot menu.
 3. Select *Rename*.
 4. Enter your display name and select *Change* (or *Done* on mobile).
+
+@right
+
+![Zoom Participants menu with Rename highlighted](repo:biotech/evergreen/assets/zoom_rename_participants.png)
 
 @citation
 
 Zoom display-name instructions: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061891
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Change Name Before a Meeting
 
-@body
+@left
 
 - Set your display name before class so it is ready when you join.
   1. Sign in to the Zoom web portal.
@@ -52,6 +82,10 @@ Zoom display-name instructions: https://support.zoom.com/hc/en/article?id=zm_kb&
   4. Set your *Display Name* to your proper first name or consistent nickname.
   5. Select *Save*.
 - In the desktop app, *Profile* then *My profile* opens the web profile.
+
+@right
+
+![Zoom profile menu with My Profile highlighted](repo:biotech/evergreen/assets/zoom_profile_menu.png)
 
 @citation
 

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="485" viewBox="0 0 1160 485" role="img" aria-labelledby="xy-title xy-desc">
+<title id="xy-title">X-Y sex determination</title>
+<desc id="xy-desc">Two schematic parents produce X-bearing eggs and X- or Y-bearing sperm. One egg and one sperm contribute chromosomes to each XX or XY progeny. Two representative autosome pairs are shown; chromosome counts are schematic.</desc>
+<defs>
+ <radialGradient id="cell-fill" cx="32%" cy="25%" r="80%"><stop offset="0" stop-color="#fffdf4"/><stop offset="1" stop-color="#f3dfaa"/></radialGradient>
+ <radialGradient id="sperm-fill" cx="30%" cy="25%" r="85%"><stop offset="0" stop-color="#faf8ff"/><stop offset="1" stop-color="#e0d8ef"/></radialGradient>
+ <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 6 3 L 0 6" fill="none" stroke="#455166" stroke-width="1.3" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="1160" height="485" fill="#ffffff"/>
+<g font-family="Atkinson Hyperlegible Next" fill="#172b3a">
+<path d="M 840 22 V 463" stroke="#d9dfe6" stroke-width="1.5"/>
+
+<path id="m-f-1" data-phase="meiosis" data-from="female" data-to="egg-1" d="M 188 137 Q 145 163 125 201" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path id="m-m-1" data-phase="meiosis" data-from="male" data-to="sperm-X" d="M 578 132 C 520 163 390 166 336 206" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M 262 132 C 320 163 450 166 504 206" fill="none" stroke="white" stroke-width="10"/>
+<path id="m-f-2" data-phase="meiosis" data-from="female" data-to="egg-2" d="M 262 132 C 320 163 450 166 504 206" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path id="m-m-2" data-phase="meiosis" data-from="male" data-to="sperm-Y" d="M 652 137 Q 695 163 715 201" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path id="f-e-1" data-phase="fertilization" data-from="egg-1" data-to="progeny-XX" d="M 151 284 Q 170 326 188 356" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path id="f-s-1" data-phase="fertilization" data-from="sperm-X" data-to="progeny-XX" d="M 287 284 Q 270 326 252 356" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path id="f-e-2" data-phase="fertilization" data-from="egg-2" data-to="progeny-XY" d="M 551 284 Q 570 326 588 356" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path id="f-s-2" data-phase="fertilization" data-from="sperm-Y" data-to="progeny-XY" d="M 687 284 Q 670 326 652 356" fill="none" stroke="#455166" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="16" y="170" font-size="20" text-anchor="start" font-weight="650">Meiosis</text>
+<text x="16" y="345" font-size="20" text-anchor="start" font-weight="650">Fertilization</text>
+<text x="420" y="408" font-size="23" text-anchor="middle" font-weight="650">Progeny</text>
+<g id="female" data-cell="parent" data-sex="XX" transform="translate(220 88)">
+<circle r="52" fill="url(#cell-fill)" stroke="#b19553" stroke-width="1.8"/>
+<g id="female-blue-0" data-rod="1" transform="translate(-29 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="female-blue-1" data-rod="1" transform="translate(-15 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="female-green-0" data-rod="1" transform="translate(15 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="female-green-1" data-rod="1" transform="translate(29 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="female-sex-0" data-rod="1" transform="translate(-9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-24" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+<g id="female-sex-1" data-rod="1" transform="translate(9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="24" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+</g>
+<g id="male" data-cell="parent" data-sex="XY" transform="translate(620 88)">
+<circle r="52" fill="url(#cell-fill)" stroke="#b19553" stroke-width="1.8"/>
+<g id="male-blue-0" data-rod="1" transform="translate(-29 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="male-blue-1" data-rod="1" transform="translate(-15 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="male-green-0" data-rod="1" transform="translate(15 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="male-green-1" data-rod="1" transform="translate(29 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="male-sex-0" data-rod="1" transform="translate(-9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-24" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+<g id="male-sex-1" data-rod="1" transform="translate(9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 1.73 Q -2 2.73 -4 3.73 L -4 16 Q -4 21 -2 21 L 2 21 Q 4 21 4 16 L 4 3.73 Q 2 2.73 4 1.73 L 4 1 Q 4 0 2 0 Z" fill="#c58aab" stroke="#895777" stroke-width="1.2"/></g>
+<text x="24" y="35" font-size="16" text-anchor="middle" font-weight="400">Y</text>
+</g>
+<text x="210" y="22" font-size="22" text-anchor="middle" font-weight="650">Female</text>
+<g transform="translate(262 14)" fill="none" stroke="#172b3a" stroke-width="2"><circle r="6"/>
+<path d="M 0 6 V 17 M -5 12 H 5"/>
+</g>
+<text x="608" y="22" font-size="22" text-anchor="middle" font-weight="650">Male</text>
+<g transform="translate(649 16)" fill="none" stroke="#172b3a" stroke-width="2"><circle r="6"/>
+<path d="M 4 -4 L 12 -12 M 5 -12 H 12 V -5"/>
+</g>
+<g id="egg-1" data-cell="egg" data-sex="X" transform="translate(120 250)">
+<circle r="46" fill="url(#cell-fill)" stroke="#b19553" stroke-width="1.8"/>
+<g id="egg-1-blue-0" data-rod="1" transform="translate(-14 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="egg-1-green-0" data-rod="1" transform="translate(14 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="egg-1-sex-0" data-rod="1" transform="translate(0 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-15" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+</g>
+<g id="sperm-X" data-cell="sperm" data-sex="X" transform="translate(320 250)">
+<path d="M 31 0 C 55 -24 62 26 79 3" fill="none" stroke="#857195" stroke-width="2.6" stroke-linecap="round"/>
+<ellipse rx="34" ry="47" fill="url(#sperm-fill)" stroke="#857195" stroke-width="1.8"/>
+<g id="sperm-X-blue-0" data-rod="1" transform="translate(-14 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="sperm-X-green-0" data-rod="1" transform="translate(14 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="sperm-X-sex-0" data-rod="1" transform="translate(0 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-15" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+</g>
+<g id="egg-2" data-cell="egg" data-sex="X" transform="translate(520 250)">
+<circle r="46" fill="url(#cell-fill)" stroke="#b19553" stroke-width="1.8"/>
+<g id="egg-2-blue-0" data-rod="1" transform="translate(-14 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="egg-2-green-0" data-rod="1" transform="translate(14 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="egg-2-sex-0" data-rod="1" transform="translate(0 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-15" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+</g>
+<g id="sperm-Y" data-cell="sperm" data-sex="Y" transform="translate(720 250)">
+<path d="M 31 0 C 55 -24 62 26 79 3" fill="none" stroke="#857195" stroke-width="2.6" stroke-linecap="round"/>
+<ellipse rx="34" ry="47" fill="url(#sperm-fill)" stroke="#857195" stroke-width="1.8"/>
+<g id="sperm-Y-blue-0" data-rod="1" transform="translate(-14 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="sperm-Y-green-0" data-rod="1" transform="translate(14 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="sperm-Y-sex-0" data-rod="1" transform="translate(0 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 1.73 Q -2 2.73 -4 3.73 L -4 16 Q -4 21 -2 21 L 2 21 Q 4 21 4 16 L 4 3.73 Q 2 2.73 4 1.73 L 4 1 Q 4 0 2 0 Z" fill="#c58aab" stroke="#895777" stroke-width="1.2"/></g>
+<text x="-15" y="35" font-size="16" text-anchor="middle" font-weight="400">Y</text>
+</g>
+<text x="120" y="313" font-size="20" text-anchor="middle" font-weight="600">Eggs</text>
+<text x="320" y="313" font-size="20" text-anchor="middle" font-weight="600">Sperm</text>
+<text x="520" y="313" font-size="20" text-anchor="middle" font-weight="600">Eggs</text>
+<text x="720" y="313" font-size="20" text-anchor="middle" font-weight="600">Sperm</text>
+<g id="progeny-XX" data-cell="progeny" data-sex="XX" transform="translate(220 408)">
+<circle r="52" fill="url(#cell-fill)" stroke="#b19553" stroke-width="1.8"/>
+<g id="progeny-XX-blue-0" data-rod="1" transform="translate(-29 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="progeny-XX-blue-1" data-rod="1" transform="translate(-15 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="progeny-XX-green-0" data-rod="1" transform="translate(15 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="progeny-XX-green-1" data-rod="1" transform="translate(29 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="progeny-XX-sex-0" data-rod="1" transform="translate(-9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-24" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+<g id="progeny-XX-sex-1" data-rod="1" transform="translate(9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="24" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+</g>
+<g id="progeny-XY" data-cell="progeny" data-sex="XY" transform="translate(620 408)">
+<circle r="52" fill="url(#cell-fill)" stroke="#b19553" stroke-width="1.8"/>
+<g id="progeny-XY-blue-0" data-rod="1" transform="translate(-29 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="progeny-XY-blue-1" data-rod="1" transform="translate(-15 -31) rotate(15)"><path d="M -2 0 Q -4 0 -4 5 L -4 15.16 Q -2 20.16 -4 25.16 L -4 37 Q -4 42 -2 42 L 2 42 Q 4 42 4 37 L 4 25.16 Q 2 20.16 4 15.16 L 4 5 Q 4 0 2 0 Z" fill="#1389bb" stroke="#126282" stroke-width="1.2"/></g>
+<g id="progeny-XY-green-0" data-rod="1" transform="translate(15 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="progeny-XY-green-1" data-rod="1" transform="translate(29 -31) rotate(-15)"><path d="M -2 0 Q -4 0 -4 5 L -4 14.60 Q -2 19.60 -4 24.60 L -4 35 Q -4 40 -2 40 L 2 40 Q 4 40 4 35 L 4 24.60 Q 2 19.60 4 14.60 L 4 5 Q 4 0 2 0 Z" fill="#168e69" stroke="#0e644a" stroke-width="1.2"/></g>
+<g id="progeny-XY-sex-0" data-rod="1" transform="translate(-9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 2.77 Q -2 3.77 -4 4.77 L -4 24 Q -4 29 -2 29 L 2 29 Q 4 29 4 24 L 4 4.77 Q 2 3.77 4 2.77 L 4 1 Q 4 0 2 0 Z" fill="#b5d1e0" stroke="#526f83" stroke-width="1.2"/></g>
+<text x="-24" y="35" font-size="16" text-anchor="middle" font-weight="400">X</text>
+<g id="progeny-XY-sex-1" data-rod="1" transform="translate(9 9) rotate(0)"><path d="M -2 0 Q -4 0 -4 1 L -4 1.73 Q -2 2.73 -4 3.73 L -4 16 Q -4 21 -2 21 L 2 21 Q 4 21 4 16 L 4 3.73 Q 2 2.73 4 1.73 L 4 1 Q 4 0 2 0 Z" fill="#c58aab" stroke="#895777" stroke-width="1.2"/></g>
+<text x="24" y="35" font-size="16" text-anchor="middle" font-weight="400">Y</text>
+</g>
+<g transform="translate(189 464)" fill="none" stroke="#172b3a" stroke-width="2"><circle r="6"/>
+<path d="M 0 6 V 17 M -5 12 H 5"/>
+</g>
+<text x="230" y="477" font-size="21" text-anchor="middle" font-weight="400">(XX)</text>
+<g transform="translate(588 467)" fill="none" stroke="#172b3a" stroke-width="2"><circle r="6"/>
+<path d="M 4 -4 L 12 -12 M 5 -12 H 12 V -5"/>
+</g>
+<text x="630" y="477" font-size="21" text-anchor="middle" font-weight="400">(XY)</text>
+<path d="M 863 73 V 160" stroke="#607c91" stroke-width="4"/>
+<text x="880" y="98" font-size="23" text-anchor="start" font-weight="400">The result of meiosis</text>
+<text x="880" y="126" font-size="23" text-anchor="start" font-weight="400">is one type of egg</text>
+<text x="880" y="154" font-size="23" text-anchor="start" font-weight="400">and two types of sperm.</text>
+<path d="M 863 305 V 420" stroke="#607c91" stroke-width="4"/>
+<text x="880" y="330" font-size="23" text-anchor="start" font-weight="400">Sex of the progeny is</text>
+<text x="880" y="358" font-size="23" text-anchor="start" font-weight="400">determined by the sex</text>
+<text x="880" y="386" font-size="23" text-anchor="start" font-weight="400">chromosome contained</text>
+<text x="880" y="414" font-size="23" text-anchor="start" font-weight="400">in the sperm.</text>
+</g></svg>

@@ -11,3 +11,9 @@ Extracted using the repository importer; original bytes retained, no crops.
 
 These copyrighted examples remain local and ignored. Whole-slide prose screenshots were
 replaced by native explanations and the agency responsibility comparison.
+
+## November 12 display refinement
+
+The original prior-art cartoon (300 x 350) and one-click interface (186 x 135) remain
+unchanged image files. Their captions are now native text in regular two-panel slides,
+reducing enlargement of these small legacy rasters. Copyright marks are retained.

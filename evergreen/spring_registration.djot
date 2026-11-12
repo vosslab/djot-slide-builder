@@ -67,7 +67,6 @@ Textbook cover: Biology LibreTexts. https://bio.libretexts.org/@api/deki/files/9
 - BCHM 356-20 / 456-20, [Spring 2027]{color=blue}; 3 credits
   - Tuesdays, 10:00 a.m.-1:55 p.m.; SCH 550
   - Face-to-face, Schaumburg; January 19-May 10 (Session 1)
-  - CRNs: BCHM 356 = 22046; BCHM 456 = 22049
 - [*Less structured and more independent study-like*]{color=blue}
   - Enzyme assays and kinetics: measure reaction rates and interpret the data.
   - Isolation and analysis of biological macromolecules.
@@ -90,16 +89,24 @@ Textbook cover: Biology LibreTexts. https://bio.libretexts.org/@api/deki/files/9
   - DNA, gene expression, and regulation.
 - [*Lecture, laboratory, and discussion*]{color=blue}
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Biology and Ethics in Film
 
-@body
+@left
 
 - BIOL 383-20 / 483-20, [Summer 2027]{color=purple}; 3 credits
   - Tuesdays/Thursdays, 6-9 p.m., over Zoom
   - July 6-August 9 (Session D)
   - CRNs: BIOL 383 = 32156; BIOL 483 = 32157
+
+- [*Example movie schedules*]{color=purple}
+  - [Spring 2022](https://docs.google.com/spreadsheets/d/1a2F5pshoAtGjknMw3oUXjmI4SEjpVIvc1xiNHdJsD6Q/edit)
+  - [Summer 2024](https://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit)
+  - [Summer 2026](https://docs.google.com/spreadsheets/d/1O5rjL8j6IocYQdYKjUiwwuhyOEoRfpEuqCcYse3VF8c/edit)
+
+@right
+
 - [*Watch a feature film, then discuss*]{color=purple}
   - Explore its biology, science, and ethical questions.
   - Give quick post-film "hot takes" and make a group movie-review podcast.

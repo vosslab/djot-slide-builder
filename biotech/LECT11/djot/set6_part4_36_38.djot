@@ -2,9 +2,9 @@
 
 # 36. Patent Trolls and Overbroad Claims
 
-=== layout: one-panel
+=== layout: bookend
 
-# 36. Questions (1 of 3)
+# 36. Questions
 
 @body
 
@@ -12,23 +12,9 @@
 - Discuss how the business models of patent trolls impact innovation, particularly in tech and biotechnology, and consider why biotech may be especially vulnerable.
 - What are some notable cases involving patent trolls or overly broad patents in technology?
 - Examples include: BlackBerry v. NTP, Inc. and Eolas Technologies Inc. v. Microsoft. How did these cases highlight challenges in patent enforcement and reform?
-
-=== layout: one-panel
-
-# 36. Questions (2 of 3)
-
-@body
-
 - What are some examples of "silly" or trivial patents that illustrate the sometimes excessive scope of patent claims?
 - Consider how these cases underscore weaknesses in the patent approval process. Examples include: (1) Apple v. Samsung over the "Slide to Unlock" patent, (2) Amazon v. Barnes & Noble over the 1-click buy patent, and (3) Oracle v. Google over the Java API.
 - What steps can be taken within the biotechnology sector to protect against patent trolling and avoid stifling innovation?
-
-=== layout: one-panel
-
-# 36. Questions (3 of 3)
-
-@body
-
 - Discuss both legal strategies and industry-based solutions, such as cross-licensing agreements or shared patent pools.
 - How do patent trolls increase costs and delay the development of new biotechnological products or methods?
 - Consider the downstream effects on smaller biotech companies and how these effects could impact competition, innovation, and accessibility in the biotech industry.
@@ -114,15 +100,17 @@ The last holding is a copyright example; a company's lawsuit history can involve
 
 https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 36. Prior Art
 
-![36. Prior Art](assets/set6_instructor/prior_art_cartoon.png)
-
-@caption
+@left
 
 What counts as prior art? The joke is about incentives; actual patentability still depends on the evidence and the law.
+
+@right
+
+![36. Prior Art](assets/set6_instructor/prior_art_cartoon.png)
 
 === layout: big-image
 
@@ -134,23 +122,25 @@ What counts as prior art? The joke is about incentives; actual patentability sti
 
 A patent drawing and an interface feature are different objects. Ask what the issued claims cover before deciding that a company owns an idea.
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 36. One-Click Buying
 
-![36. One-Click Buying](assets/set6_instructor/one_click.png)
-
-@caption
+@left
 
 A familiar interface connects to a claimed transaction method. The scope and life of an actual patent matter more than the feature name.
+
+@right
+
+![36. One-Click Buying](assets/set6_instructor/one_click.png)
 
 === layout: subsection
 
 # 37. Nondisclosure Agreement Pitfalls
 
-=== layout: one-panel
+=== layout: bookend
 
-# 37. Questions (1 of 2)
+# 37. Questions
 
 @body
 
@@ -160,13 +150,6 @@ A familiar interface connects to a claimed transaction method. The scope and lif
 - What are some things to watch out for in an NDA?
 - What is a non-compete clause?
 - What is a IP assignment clause?
-
-=== layout: one-panel
-
-# 37. Questions (2 of 2)
-
-@body
-
 - What types of durations and obligations are in an NDA?
 - What is a perpetual clause or obligation?
 - What is an attorney's fee provision?
@@ -223,7 +206,7 @@ https://www.uspto.gov/ip-policy/trade-secret-policy
 
 # 38. Noncompetes and Biotechnology Employees
 
-=== layout: one-panel
+=== layout: bookend
 
 # 38. Questions
 

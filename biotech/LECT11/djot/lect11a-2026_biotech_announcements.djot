@@ -127,16 +127,24 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - Points and assessment
   - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Optional Background Reading
 
-@body
+@left
 
 - There is no required textbook for this course.
 - Optional reference: _Biotechnology: The Technological Applications of Genetics and Genomics_, third edition, Clark and colleagues.
 - Tonight: regulation, biosafety, clinical evidence, and intellectual property. This set uses outside sources rather than one textbook chapter.
 - Use the assigned Set #6 topic list and appropriate outside sources to prepare.
+
+@right
+
+![Biotechnology, third edition textbook cover](repo:biotech/evergreen/assets/biotechnology_textbook_cover.jpg)
+
+@citation
+
+https://d16jkos453if22.cloudfront.net/9780443184840.jpg
 
 === layout: subsection
 
@@ -152,7 +160,6 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 | --- | --- |
 | Individual company project | 88 |
 | Group company project | 91 |
-| In-class discussion | 100 |
 | Talking-point assignments | 72 |
 
 Blackboard is the authoritative record for your scores.
@@ -186,33 +193,35 @@ https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 - Prepare one shared company vision for November 19.
 - Next week: Set #7, the Company Vision Report (Form), and Homework 6.
 
+=== layout: two-panels
+
+# Talking Points Guide
+
+@left
+
+- Edit and update your slide
+- Add several pictures and some text
+- It is best to have as few words as possible on your slide -- you do the talking not your slide
+- Be prepared to give a *90 second presentation* about each of your assigned talking point
+
+@right
+
+- define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+- Try to be unique
+- Don't just copy the book, use the internet for research.
+- Provide your own perspective
+
 === layout: one-panel
 
-# Talking Points: One Slide, One Minute
+# Talking Points Guide
 
 @body
 
-- Research your assigned topic and bring one useful angle to the class.
-- Use relevant images, short phrases, and your own words.
-- Put detailed speaking notes in the presenter notes.
-- If another student shares your topic, add a different example or explanation.
-- Ask thoughtful questions and make connections in the chat.
-
-@citation
-
-https://vosslab.github.io/syllabus/fall_2026/biotech/TALKING_POINTS/
-
-=== layout: one-panel
-
-# Discussion Marks
-
-@body
-
-- Be ready to contribute when class starts.
-- Ask a clarifying question, explain your reasoning, or connect two ideas.
-- Listen to the other presenters; build on what they say.
-- A greeting or agreement alone is not a discussion contribution.
-- Use your proper first name or a consistent nickname in Zoom.
+- Please put into your own words
+- It is okay if you read your notes, but put notes in your own words
+- No direct quoting of an article, wikipedia or the textbook
+- Minimize jargon
+- Show ENTHUSIASM when you talk and make it exciting!
 
 === layout: big-image
 hidden: true
@@ -227,7 +236,7 @@ Talking Marks
 
 @notes
 
-Review the current talking marks with the class and explain how participation affects the totals.
+Review the current talking-point presentation marks with the class.
 
 === layout: one-panel
 hidden: true

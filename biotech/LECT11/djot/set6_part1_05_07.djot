@@ -2,9 +2,9 @@
 
 # 5. The Durham-Humphrey Amendment of 1951
 
-=== layout: one-panel
+=== layout: bookend
 
-# 5. Questions (1 of 2)
+# 5. Questions
 
 @body
 
@@ -14,13 +14,6 @@
 - How did the amendment reduce the risk of misuse and self-medication with potent new drugs?
 - Why is the phrase "Caution: Federal law prohibits dispensing without prescription" important in drug labeling history?
 - How did this law lead to later drug scheduling systems under the Controlled Substances Act of 1970?
-
-=== layout: one-panel
-
-# 5. Questions (2 of 2)
-
-@body
-
 - How did the Controlled Substances Act classify drugs into Schedules I-V, and what criteria were used for each class?
 - How did the Controlled Substances Act formalize federal control, and when was the Drug Enforcement Administration (DEA) established?
 - How have prescription laws and controlled-substance schedules together shaped modern pharmaceutical regulation in the United States?
@@ -69,21 +62,23 @@ https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
 https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 5. What Does the Prescription Requirement Do?
 
-![5. What Does the Prescription Requirement Do?](assets/set6_sources/topic_05_030.jpg)
-
-@caption
+@right
 
 Professional supervision and controlled-substance scheduling serve different purposes. Which risks does requiring a prescription address?
+
+@left
+
+![5. What Does the Prescription Requirement Do?](assets/set6_sources/topic_05_030.jpg)
 
 === layout: subsection
 
 # 6. The Kefauver-Harris Amendments of 1962
 
-=== layout: one-panel
+=== layout: bookend
 
 # 6. Questions
 
@@ -140,23 +135,25 @@ https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
 https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 6. A New Standard for Drug Evidence
 
-![6. A New Standard for Drug Evidence](assets/set6_sources/topic_06_032.jpg)
-
-@caption
+@left
 
 A historical announcement of stronger drug law makes the shift visible. Safety, effectiveness, consent, and reliable investigations need evidence rather than promises.
+
+@right
+
+![6. A New Standard for Drug Evidence](assets/set6_sources/topic_06_032.jpg)
 
 === layout: subsection
 
 # 7. Plant Breeders' Rights and Farmers' Rights
 
-=== layout: one-panel
+=== layout: bookend
 
-# 7. Questions (1 of 2)
+# 7. Questions
 
 @body
 
@@ -166,13 +163,6 @@ A historical announcement of stronger drug law makes the shift visible. Safety, 
 - How long does PVPA protection last compared with patent protection?
 - How do Plant Breeders' Rights under the PVPA differ from Farmers' Rights?
 - What conflicts arise, such as limits on seed replanting, and how might they be resolved?
-
-=== layout: one-panel
-
-# 7. Questions (2 of 2)
-
-@body
-
 - What is the terminator gene technology, and what implications does it have for sustainable agriculture?
 - How could it affect seed-saving traditions, biodiversity, and farmers' livelihoods?
 - How do international treaties like the International Treaty on Plant Genetic Resources for Food and Agriculture (ITPGRFA) balance breeders' incentives with farmers' rights?
@@ -191,15 +181,19 @@ A historical announcement of stronger drug law makes the shift visible. Safety, 
 
 https://www.ams.usda.gov/services/plant-variety-protection
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 7. Seed Saving and Sterility Differ
 
-@body
+@left
 
 - Hybrid seeds may produce a variable next generation because alleles segregate; that does not make all hybrid seed sterile.
 - Genetic use restriction technology is a proposed biological strategy for restricting propagation or trait use. It is not an explanation for every restriction on commercial seed saving.
 - Distinguish biological inheritance, patent or variety rights, and a license agreement before deciding what prevents replanting.
+
+@right
+
+![7. Seed Saving and Sterility Differ](assets/set6_sources/seed_saving_photo.png)
 
 @citation
 

@@ -2,9 +2,9 @@
 
 # 26. Patents, Discovery, and Other Intellectual Property
 
-=== layout: one-panel
+=== layout: bookend
 
-# 26. Questions (1 of 2)
+# 26. Questions
 
 @body
 
@@ -14,13 +14,6 @@
 - What advantages do patents offer in science and industry?
 - Discuss how patents encourage innovation by granting exclusivity and fostering investments.
 - What are the criteria to be patentable?
-
-=== layout: one-panel
-
-# 26. Questions (2 of 2)
-
-@body
-
 - Explain the concepts of utility, novelty, and "non-obvious" with examples.
 - What is the difference between discovery and invention?
 - Provide general examples. Provide examples from biotechnology to illustrate each.
@@ -135,183 +128,150 @@ https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
 Choose A: *Discovery* or B: *Invention*. Then ask a harder question: would a specific claim satisfy all patent requirements?
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 CRISPR bacterial immune system
 
+- A. Discovery
+- B. Invention
+
+@answer
+
 A. Discovery
 
-B. Invention
-
-=== layout: one-panel
-
-# 26. Discovery
-
-@body
-
-CRISPR bacterial immune system
-
-Identifying a natural defense system adds knowledge about biology.
+Identifying a natural defense system\
+adds knowledge about biology.
 
 @citation
 
 https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 CRISPR/Cas9 gene-editing system
 
-A. Discovery
+- A. Discovery
+- B. Invention
+
+@answer
 
 B. Invention
 
-=== layout: one-panel
-
-# 26. Invention
-
-@body
-
-CRISPR/Cas9 gene-editing system
-
-An engineered tool applies biological knowledge; the precise claims still matter.
+An engineered tool applies biological knowledge;\
+the precise claims still matter.
 
 @citation
 
 https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 Gasoline-powered automobile
 
-A. Discovery
+- A. Discovery
+- B. Invention
+
+@answer
 
 B. Invention
 
-=== layout: one-panel
-
-# 26. Invention
-
-@body
-
-Gasoline-powered automobile
-
-An engineered machine applies known physical and chemical processes.
+An engineered machine applies known\
+physical and chemical processes.
 
 @citation
 
 https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 Energy from gasoline combustion
 
+- A. Discovery
+- B. Invention
+
+@answer
+
 A. Discovery
 
-B. Invention
-
-=== layout: one-panel
-
-# 26. Discovery
-
-@body
-
-Energy from gasoline combustion
-
-A natural physical and chemical relationship is not made patentable by discovering it.
+A natural physical and chemical relationship\
+is not made patentable by discovering it.
 
 @citation
 
 https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 Structure of a plant cell
 
+- A. Discovery
+- B. Invention
+
+@answer
+
 A. Discovery
 
-B. Invention
-
-=== layout: one-panel
-
-# 26. Discovery
-
-@body
-
-Structure of a plant cell
-
-Observing and describing a natural structure does not create that structure.
+Observing and describing a natural structure\
+does not create that structure.
 
 @citation
 
 https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 Pathogenic BRCA variants can increase cancer risk
+
+- A. Discovery
+- B. Invention
+
+@answer
 
 A. Discovery
 
-B. Invention
-
-=== layout: one-panel
-
-# 26. Discovery
-
-@body
-
-Pathogenic BRCA variants can increase cancer risk
-
-The relationship is discovered. Do not describe ordinary BRCA function as simply causing cancer.
+The relationship is discovered.\
+Do not describe ordinary BRCA function\
+as simply causing cancer.
 
 @citation
 
 https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
-=== layout: one-panel
+=== layout: multiple-choice
 
-# 26. Your Choice: Discovery or Invention?
+@question
 
-@body
-
+*Topic 26: Discovery or Invention?*\
 Introducing a drought-related gene into corn
 
-A. Discovery
+- A. Discovery
+- B. Invention
+
+@answer
 
 B. Invention
 
-=== layout: one-panel
-
-# 26. Invention
-
-@body
-
-Introducing a drought-related gene into corn
-
-An engineered construct or organism may raise eligibility questions; inventiveness alone does not guarantee a patent.
+An engineered construct or organism may raise\
+eligibility questions; inventiveness alone\
+does not guarantee a patent.
 
 @citation
 
@@ -321,9 +281,9 @@ https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 
 # 27. Diamond V. Chakrabarty
 
-=== layout: one-panel
+=== layout: bookend
 
-# 27. Questions (1 of 2)
+# 27. Questions
 
 @body
 
@@ -331,13 +291,6 @@ https://www.uspto.gov/web/offices/pac/mpep/s2106.html
 - How did Ananda Chakrabarty's oil-degrading bacterium differ from natural bacteria, and why was that difference important to the Court's decision?
 - How did the U.S. Supreme Court decide that the engineered bacterium qualified as a "manufacture" or "composition of matter" under the Patent Act?
 - How did the ruling change how scientists and companies thought about the value of genetically modified organisms?
-
-=== layout: one-panel
-
-# 27. Questions (2 of 2)
-
-@body
-
 - How did patent eligibility change the industry's view of engineered organisms?
 - Why did the dissent want Congress to decide whether life could be patented?
 - How did the ruling influence later patents on recombinant insulin, GM crops, and gene therapy?
@@ -402,7 +355,7 @@ Patent eligibility and claims, freedom to operate, and regulatory authorization 
 
 # 28. The Cohen-Boyer Recombinant DNA Patents
 
-=== layout: one-panel
+=== layout: bookend
 
 # 28. Questions
 
@@ -428,6 +381,22 @@ Patent eligibility and claims, freedom to operate, and regulatory authorization 
 @citation
 
 https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
+
+=== layout: one-panel
+
+# 28. Cut, Join, Transform, Select
+
+@body
+
+- Cohen, Chang, Boyer, and Helling's 1973 experiment joined restriction-enzyme fragments from different bacterial plasmids.
+- Compatible ends allowed DNA fragments to be joined into recombinant plasmids.
+- Transformation introduced the DNA into *E. coli*; selection identified bacteria carrying useful genetic markers.
+- The introduced DNA could replicate and function in its new host. Making the recombinant molecule was only part of the result.
+- Inserting a human coding sequence uses the platform; producing a functional protein adds expression and processing problems.
+
+@citation
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC427208/
 
 === layout: one-panel
 
@@ -464,9 +433,9 @@ https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
 
 # 29. Genentech, Recombinant Insulin, and Licensing
 
-=== layout: one-panel
+=== layout: bookend
 
-# 29. Questions (1 of 2)
+# 29. Questions
 
 @body
 
@@ -474,13 +443,6 @@ https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
 - How did this patent lead to conflicts with other patent holders such as the University of California, which held related claims through the Cohen-Boyer patents?
 - How did courts interpret the broad wording of Genentech's patent claims that covered using microbial hosts to make human proteins?
 - How did these disputes shape the later concept of "freedom to operate" for biotechnology companies using recombinant DNA?
-
-=== layout: one-panel
-
-# 29. Questions (2 of 2)
-
-@body
-
 - How did Genentech's collaboration\
   with Eli Lilly influence how intellectual property was shared or licensed in early biotechnology?
 - How did later court rulings limit the scope of broad biotechnology patents by emphasizing written description and enablement?
@@ -500,6 +462,22 @@ https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
 @citation
 
 https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin
+
+=== layout: one-panel
+
+# 29. Build the Chains, Then Build Insulin
+
+@body
+
+- The early recombinant-insulin work used chemically synthesized DNA for the insulin A and B chains.
+- Bacteria produced the chains as parts of larger fusion proteins.
+- The researchers recovered the separate chains and joined them to form insulin.
+- The 1979 paper demonstrated a production strategy; commercial manufacturing and the 1982 Humulin approval were further steps.
+- A patent claim must identify the particular molecule, construct, or process being claimed.
+
+@citation
+
+https://pubmed.ncbi.nlm.nih.gov/85300/
 
 === layout: one-panel
 
@@ -529,7 +507,23 @@ https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin
 
 @citation
 
-https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin
+https://www.uspto.gov/web/offices/pac/mpep/s2163.html
+
+=== layout: one-panel
+
+# 29. A Concrete Insulin Patent Dispute
+
+@body
+
+- In *Regents of the University of California v. Eli Lilly* (1997), the court examined insulin-cDNA claims.
+- Describing rat insulin cDNA did not adequately describe every claimed mammalian insulin cDNA or the claimed human sequence.
+- A desired function is not automatically a description of the molecules that perform it.
+- *Ariad v. Lilly* (2010) reaffirmed that written description is separate from enablement.
+- Keep this dispute distinct from the Cohen-Boyer platform licenses and the UCSF/Genentech growth-hormone litigation.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2163.html
 
 === layout: one-panel
 

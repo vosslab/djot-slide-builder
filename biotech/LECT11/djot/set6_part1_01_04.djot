@@ -2,9 +2,9 @@
 
 # 1. The Biologics Control Act of 1902
 
-=== layout: one-panel
+=== layout: bookend
 
-# 1. Questions (1 of 2)
+# 1. Questions
 
 @body
 
@@ -14,13 +14,6 @@
 - Why did the government decide to require licenses for facilities that made biological products?
 - What role did the Hygienic Laboratory (later the NIH) play in enforcing the new rules?
 - How did this law begin the idea that the federal government should inspect and approve medical products before use?
-
-=== layout: one-panel
-
-# 1. Questions (2 of 2)
-
-@body
-
 - How did the Biologics Control Act influence later drug and vaccine laws in the United States?
 
 === layout: one-panel
@@ -90,7 +83,7 @@ A historical photograph links antitoxin production to its animal source. Which r
 
 # 2. The Pure Food and Drug Act of 1906
 
-=== layout: one-panel
+=== layout: bookend
 
 # 2. Questions
 
@@ -159,7 +152,7 @@ The 1906 campaign made adulteration and misleading labels visible to consumers. 
 
 # 3. The Food, Drug, and Cosmetic Act of 1938
 
-=== layout: one-panel
+=== layout: bookend
 
 # 3. Questions
 
@@ -214,21 +207,23 @@ https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
 https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 3. The Elixir Sulfanilamide Formulation
 
-![3. The Elixir Sulfanilamide Formulation](assets/set6_sources/topic_03_171.png)
-
-@caption
+@right
 
 The active drug and the liquid formulation were different safety questions. The solvent turned a useful antibacterial compound into a deadly preparation.
+
+@left
+
+![3. The Elixir Sulfanilamide Formulation](assets/set6_sources/topic_03_171.png)
 
 === layout: subsection
 
 # 4. FIFRA: Registration, Risk, and Bt Crops
 
-=== layout: one-panel
+=== layout: bookend
 
 # 4. Questions
 

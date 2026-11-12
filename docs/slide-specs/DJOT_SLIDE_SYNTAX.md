@@ -391,7 +391,7 @@ outside a named slot; required named slots still appear where listed.
 | `title-only` | Title Only, `AUTOLAYOUT_TITLE_ONLY` | none | H1 plus ordinary root body | A title introduces flexible editable text, lists, component images, or one table below when no panel layout fits. |
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
-| `bookend` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Learning objectives and key takeaways share a thin, symmetric course-colored frame, with ordinary one-panel content space. |
+| `bookend` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Learning objectives, key takeaways, and complete talking-point setup questions share a thin, symmetric course-colored frame, with ordinary one-panel content space. |
 | `definitions` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Definition entries receive automatic bold, underlined terms inside a course-colored frame. |
 | `reference` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One-panel study material with an unfilled light gray border and automatic reference-only footer. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |

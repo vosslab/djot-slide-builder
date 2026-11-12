@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg" width="1160" height="540" viewBox="0 0 1160 540" role="img">
+  <title id="title">Color-blindness inheritance Punnett square</title>
+  <desc id="desc">Parental gametes, a two-by-two Punnett square, and four offspring phenotypes. Alleles appear as superscripts on X.</desc>
+  <rect width="1160" height="540" fill="white" />
+  <g font-family="Atkinson Hyperlegible Next" fill="#25343d" text-anchor="middle">
+    <text id="parent-male" x="150" y="42" font-size="38" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-13.68" font-size="25.080000000000002">C</tspan>
+      <tspan dy="13.68"> Y</tspan>
+    </text>
+    <text id="parent-female" x="455" y="42" font-size="38" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-13.68" font-size="25.080000000000002">C</tspan>
+      <tspan dy="13.68"> X</tspan>
+      <tspan dy="-13.68" font-size="25.080000000000002">c</tspan>
+    </text>
+    <text id="male-label" x="150" y="78" font-size="25" font-weight="600">
+      <tspan x="150" dy="0">Normal male</tspan>
+    </text>
+    <text id="female-label" x="455" y="78" font-size="23" font-weight="600">
+      <tspan x="455" dy="0">Normal female who</tspan>
+      <tspan x="455" dy="25.99">carries recessive gene</tspan>
+    </text>
+    <text id="meiosis-label" x="305" y="160" font-size="22" font-weight="600">
+      <tspan x="305" dy="0">Meiosis</tspan>
+    </text>
+    <line id="parent-branch-1" x1="131" y1="113" x2="91" y2="199" stroke="#35434a" stroke-width="2.3" />
+    <line id="parent-branch-2" x1="169" y1="113" x2="209" y2="199" stroke="#35434a" stroke-width="2.3" />
+    <line id="parent-branch-3" x1="436" y1="122" x2="396" y2="199" stroke="#35434a" stroke-width="2.3" />
+    <line id="parent-branch-4" x1="474" y1="122" x2="514" y2="199" stroke="#35434a" stroke-width="2.3" />
+    <g id="sperm-parent-C">
+      <path id="sperm-parent-C-tail" d="M90 256 C76 267 105 270 90 280 S84 295 92 301" fill="none" stroke="#626396" stroke-width="2" stroke-linecap="round" />
+      <path id="sperm-parent-C-head" d="M90 202 C114 202 125 246 100 256 Q90 263 80 256 C55 246 66 202 90 202 Z" fill="#dcdcf0" stroke="#626396" stroke-width="1.8" />
+      <text id="sperm-parent-C-genotype" x="90" y="240" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">X</tspan>
+        <tspan dy="-10.44" font-size="19.14">C</tspan>
+      </text>
+    </g>
+    <g id="sperm-parent-Y">
+      <path id="sperm-parent-Y-tail" d="M210 256 C196 267 225 270 210 280 S204 295 212 301" fill="none" stroke="#626396" stroke-width="2" stroke-linecap="round" />
+      <path id="sperm-parent-Y-head" d="M210 202 C234 202 245 246 220 256 Q210 263 200 256 C175 246 186 202 210 202 Z" fill="#dcdcf0" stroke="#626396" stroke-width="1.8" />
+      <text id="sperm-parent-Y-genotype" x="210" y="240" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">Y</tspan>
+      </text>
+    </g>
+    <g id="ovum-parent-C">
+      <circle id="ovum-parent-C-circle" cx="395" cy="231" r="29" fill="#f6b493" stroke="#a64d36" stroke-width="1.8" />
+      <text id="ovum-parent-C-genotype" x="395" y="241" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">X</tspan>
+        <tspan dy="-10.44" font-size="19.14">C</tspan>
+      </text>
+    </g>
+    <g id="ovum-parent-c">
+      <circle id="ovum-parent-c-circle" cx="515" cy="231" r="29" fill="#f6b493" stroke="#a64d36" stroke-width="1.8" />
+      <text id="ovum-parent-c-genotype" x="515" y="241" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">X</tspan>
+        <tspan dy="-10.44" font-size="19.14">c</tspan>
+      </text>
+    </g>
+    <text id="sperm-label" x="150" y="334" font-size="23" font-weight="600">
+      <tspan x="150" dy="0">Possible sperm types</tspan>
+    </text>
+    <text id="ova-label" x="455" y="334" font-size="23" font-weight="600">
+      <tspan x="455" dy="0">Possible ova types</tspan>
+    </text>
+    <text id="square-label" x="930" y="31" font-size="25" font-weight="600">
+      <tspan x="930" dy="0">Punnett square</tspan>
+    </text>
+    <g id="ovum-column-C">
+      <circle id="ovum-column-C-circle" cx="849" cy="90" r="29" fill="#f6b493" stroke="#a64d36" stroke-width="1.8" />
+      <text id="ovum-column-C-genotype" x="849" y="100" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">X</tspan>
+        <tspan dy="-10.44" font-size="19.14">C</tspan>
+      </text>
+    </g>
+    <g id="ovum-column-c">
+      <circle id="ovum-column-c-circle" cx="1011" cy="90" r="29" fill="#f6b493" stroke="#a64d36" stroke-width="1.8" />
+      <text id="ovum-column-c-genotype" x="1011" y="100" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">X</tspan>
+        <tspan dy="-10.44" font-size="19.14">c</tspan>
+      </text>
+    </g>
+    <g id="sperm-row-C">
+      <path id="sperm-row-C-tail" d="M719 208 C705 219 734 222 719 232 S713 247 721 253" fill="none" stroke="#626396" stroke-width="2" stroke-linecap="round" />
+      <path id="sperm-row-C-head" d="M719 154 C743 154 754 198 729 208 Q719 215 709 208 C684 198 695 154 719 154 Z" fill="#dcdcf0" stroke="#626396" stroke-width="1.8" />
+      <text id="sperm-row-C-genotype" x="719" y="192" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">X</tspan>
+        <tspan dy="-10.44" font-size="19.14">C</tspan>
+      </text>
+    </g>
+    <g id="sperm-row-Y">
+      <path id="sperm-row-Y-tail" d="M719 312 C705 323 734 326 719 336 S713 351 721 357" fill="none" stroke="#626396" stroke-width="2" stroke-linecap="round" />
+      <path id="sperm-row-Y-head" d="M719 258 C743 258 754 302 729 312 Q719 319 709 312 C684 302 695 258 719 258 Z" fill="#dcdcf0" stroke="#626396" stroke-width="1.8" />
+      <text id="sperm-row-Y-genotype" x="719" y="296" font-size="29" font-style="italic" font-weight="500">
+        <tspan dy="0">Y</tspan>
+      </text>
+    </g>
+    <rect id="grid-cell-1" x="768" y="132" width="162" height="104" fill="#f8d7b0" stroke="#48565c" stroke-width="1.8" />
+    <text id="cell-genotype-1" x="849" y="197" font-size="40" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-14.399999999999999" font-size="26.400000000000002">C</tspan>
+      <tspan dy="14.399999999999999"> X</tspan>
+      <tspan dy="-14.399999999999999" font-size="26.400000000000002">C</tspan>
+    </text>
+    <rect id="grid-cell-2" x="930" y="132" width="162" height="104" fill="#f8d7b0" stroke="#48565c" stroke-width="1.8" />
+    <text id="cell-genotype-2" x="1011" y="197" font-size="40" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-14.399999999999999" font-size="26.400000000000002">C</tspan>
+      <tspan dy="14.399999999999999"> X</tspan>
+      <tspan dy="-14.399999999999999" font-size="26.400000000000002">c</tspan>
+    </text>
+    <rect id="grid-cell-3" x="768" y="236" width="162" height="104" fill="#f8d7b0" stroke="#48565c" stroke-width="1.8" />
+    <text id="cell-genotype-3" x="849" y="301" font-size="40" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-14.399999999999999" font-size="26.400000000000002">C</tspan>
+      <tspan dy="14.399999999999999"> Y</tspan>
+    </text>
+    <rect id="grid-cell-4" x="930" y="236" width="162" height="104" fill="#f8d7b0" stroke="#48565c" stroke-width="1.8" />
+    <text id="cell-genotype-4" x="1011" y="301" font-size="40" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-14.399999999999999" font-size="26.400000000000002">c</tspan>
+      <tspan dy="14.399999999999999"> Y</tspan>
+    </text>
+    <text id="zygotes-label" x="930" y="371" font-size="21" font-weight="400">
+      <tspan x="930" dy="0">Possible genotypes of zygotes</tspan>
+      <tspan x="930" dy="23.729999999999997">(in boxes)</tspan>
+    </text>
+    <line id="phenotype-divider" x1="25" y1="410" x2="1135" y2="410" stroke="#bec5c6" stroke-width="1" />
+    <text id="phenotypes-label" x="580" y="433" font-size="23" font-weight="600">
+      <tspan x="580" dy="0">Possible phenotypes of offspring</tspan>
+    </text>
+    <text id="outcome-genotype-1" x="150" y="479" font-size="34" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-12.24" font-size="22.44">C</tspan>
+      <tspan dy="12.24"> X</tspan>
+      <tspan dy="-12.24" font-size="22.44">C</tspan>
+    </text>
+    <path id="phenotype-brace-1" d="M98 485 Q98 493 107 493 H139 Q150 493 150 501 Q150 493 161 493 H193 Q202 493 202 485" fill="none" stroke="#35434a" stroke-width="1.8" stroke-linecap="round" />
+    <text id="outcome-label-1" x="150" y="529" font-size="22" font-weight="500">
+      <tspan x="150" dy="0">Normal female</tspan>
+    </text>
+    <text id="outcome-genotype-2" x="435" y="479" font-size="34" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-12.24" font-size="22.44">C</tspan>
+      <tspan dy="12.24"> X</tspan>
+      <tspan dy="-12.24" font-size="22.44">c</tspan>
+    </text>
+    <path id="phenotype-brace-2" d="M383 485 Q383 493 392 493 H424 Q435 493 435 501 Q435 493 446 493 H478 Q487 493 487 485" fill="none" stroke="#35434a" stroke-width="1.8" stroke-linecap="round" />
+    <text id="outcome-label-2" x="435" y="529" font-size="22" font-weight="500">
+      <tspan x="435" dy="0">Normal female (carrier)</tspan>
+    </text>
+    <text id="outcome-genotype-3" x="720" y="479" font-size="34" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-12.24" font-size="22.44">C</tspan>
+      <tspan dy="12.24"> Y</tspan>
+    </text>
+    <path id="phenotype-brace-3" d="M668 485 Q668 493 677 493 H709 Q720 493 720 501 Q720 493 731 493 H763 Q772 493 772 485" fill="none" stroke="#35434a" stroke-width="1.8" stroke-linecap="round" />
+    <text id="outcome-label-3" x="720" y="529" font-size="22" font-weight="500">
+      <tspan x="720" dy="0">Normal male</tspan>
+    </text>
+    <text id="outcome-genotype-4" x="1005" y="479" font-size="34" font-style="italic" font-weight="500">
+      <tspan dy="0">X</tspan>
+      <tspan dy="-12.24" font-size="22.44">c</tspan>
+      <tspan dy="12.24"> Y</tspan>
+    </text>
+    <path id="phenotype-brace-4" d="M953 485 Q953 493 962 493 H994 Q1005 493 1005 501 Q1005 493 1016 493 H1048 Q1057 493 1057 485" fill="none" stroke="#35434a" stroke-width="1.8" stroke-linecap="round" />
+    <text id="outcome-label-4" x="1005" y="529" font-size="22" font-weight="500">
+      <tspan x="1005" dy="0">Color-blind male</tspan>
+    </text>
+  </g>
+</svg>

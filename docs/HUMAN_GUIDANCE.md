@@ -242,6 +242,11 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - BIOL 480 Biotechnology has a course Zoom link, unlike Genetics and Biostatistics. Include
   the class Zoom link and headphones/earbuds reminder in Biotechnology announcements, and
   preserve its course-specific Zoom guidance in the announcement-deck guide.
+- Use my established slides as the wording model for talking-point guidance; the syllabus
+  manager made prose changes I have not cleaned up. It is 90 seconds in Fall 2026 because the
+  class is smaller. Discussion Marks were dropped because some students attend face-to-face.
+- Keep visuals in the Zoom name reminders and optional textbook slide. Use the shared genetics
+  contact slide. Include the three historical film-course schedules as movie-content examples.
 
 - Put a Veridian Dynamics subsection transition before its episode slide. Make section and
   subsection dividers visibly distinct; their previous treatments were hard to tell apart.
@@ -297,6 +302,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   November 19, 2026; December 3 is too late.
 - Enrich the talking-point slides with more useful images from the annual student decks.
   The instructional content is fine; improve the overly plain visual presentation while preserving it.
+- Put each talking point's complete questions on one setup slide after its subsection, then content.
+  Smaller text is okay there; use the Key Takeaways frame to make the questions stand out.
+- Use question-answer layouts for the Discovery or Invention guessing game, and the movie layout
+  for Dark Waters. Keep low-quality images in regular panels rather than enlarging them.
 - Use the successful Set #4 approach for Set #5: combine the Fall 2021-2026 student material
   with my expanded instructor ODP, using the 37-topic 2026 list to control coverage and order.
 - General Announcements rarely has more than one active topic: Graduating Students in the first

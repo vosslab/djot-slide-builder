@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="540" viewBox="0 0 560 540" role="img" aria-labelledby="xyi-title xyi-desc">
+<title id="xyi-title">X-Y chromosome inheritance</title>
+<desc id="xyi-desc">Schematic chromosome counts: a male parent, 44 + XY, produces alternative sperm, 22 + X or 22 + Y. A female parent, 44 + XX, produces an egg, 22 + X. The alternatives yield a female zygote, 44 + XX, or a male zygote, 44 + XY. Cell outlines are schematic, not to scale.</desc>
+<defs><radialGradient id="xyi-cell" cx="32%" cy="25%" r="80%"><stop offset="0" stop-color="#fffdf4"/><stop offset="1" stop-color="#f3dfaa"/></radialGradient></defs>
+<rect width="560" height="540" fill="#ffffff"/>
+<g font-family="Atkinson Hyperlegible Next" fill="#172b3a" text-anchor="middle">
+<text x="280" y="30" font-size="29" font-weight="600">Parents</text>
+<g id="parent-male" data-cell="parent-male" data-count="44 + XY"><ellipse cx="160" cy="106" rx="61" ry="58" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="160" y="103" font-size="28" font-weight="600">44 +</text>
+<text x="160" y="134" font-size="28" font-weight="600">XY</text>
+</g>
+<g id="parent-female" data-cell="parent-female" data-count="44 + XX"><ellipse cx="450" cy="106" rx="61" ry="58" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="450" y="103" font-size="28" font-weight="600">44 +</text>
+<text x="450" y="134" font-size="28" font-weight="600">XX</text>
+</g>
+<g id="parent-male-symbol" data-sex-symbol="male" transform="translate(74 109)" fill="none" stroke="#263e4d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle r="10"/>
+<path d="M 7 -7 L 22 -22 M 11 -22 H 22 V -11"/>
+</g>
+<g id="parent-female-symbol" data-sex-symbol="female" transform="translate(535 99)" fill="none" stroke="#263e4d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle r="10"/>
+<path d="M 0 10 V 29 M -9 21 H 9"/>
+</g>
+<g id="male-to-sperm" data-arrow="down" fill="#455166"><path d="M 160 172 V 195" fill="none" stroke="#455166" stroke-width="3" stroke-linecap="round"/><path d="M 153 192 L 160 204 L 167 192 Z"/></g>
+<g id="female-to-egg" data-arrow="down" fill="#455166"><path d="M 450 172 V 195" fill="none" stroke="#455166" stroke-width="3" stroke-linecap="round"/><path d="M 443 192 L 450 204 L 457 192 Z"/></g>
+<path id="sperm-X-tail" data-tail="1" d="M 112 235 C 133 233 123 210 139 209 C 146 208 147 212 153 209" fill="none" stroke="#857195" stroke-width="3.2" stroke-linecap="round"/>
+<path id="sperm-Y-tail" data-tail="1" d="M 282 235 C 303 233 293 210 309 209 C 316 208 317 212 323 209" fill="none" stroke="#857195" stroke-width="3.2" stroke-linecap="round"/>
+<g id="sperm-X" data-cell="sperm-X" data-count="22 + X"><ellipse cx="75" cy="261" rx="56" ry="44" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="75" y="258" font-size="28" font-weight="600">22 +</text>
+<text x="75" y="289" font-size="28" font-weight="600">X</text>
+</g>
+<g id="sperm-Y" data-cell="sperm-Y" data-count="22 + Y"><ellipse cx="245" cy="261" rx="56" ry="44" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="245" y="258" font-size="28" font-weight="600">22 +</text>
+<text x="245" y="289" font-size="28" font-weight="600">Y</text>
+</g>
+<g id="egg" data-cell="egg" data-count="22 + X"><ellipse cx="450" cy="261" rx="55" ry="49" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="450" y="258" font-size="28" font-weight="600">22 +</text>
+<text x="450" y="289" font-size="28" font-weight="600">X</text>
+</g>
+<text x="160" y="272" font-size="27" font-weight="500">or</text>
+<text x="350" y="273" font-size="36" font-weight="500">+</text>
+<text x="160" y="340" font-size="28" font-weight="600">Sperm</text>
+<text x="450" y="340" font-size="28" font-weight="600">Egg</text>
+<g id="gametes-to-zygotes" data-arrow="down" fill="#455166"><path d="M 280 354 V 378" fill="none" stroke="#455166" stroke-width="3" stroke-linecap="round"/><path d="M 273 375 L 280 387 L 287 375 Z"/></g>
+<g id="zygote-female" data-cell="zygote-female" data-count="44 + XX"><ellipse cx="160" cy="447" rx="61" ry="58" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="160" y="444" font-size="28" font-weight="600">44 +</text>
+<text x="160" y="475" font-size="28" font-weight="600">XX</text>
+</g>
+<g id="zygote-male" data-cell="zygote-male" data-count="44 + XY"><ellipse cx="420" cy="447" rx="61" ry="58" fill="url(#xyi-cell)" stroke="#8c7547" stroke-width="2.2"/>
+<text x="420" y="444" font-size="28" font-weight="600">44 +</text>
+<text x="420" y="475" font-size="28" font-weight="600">XY</text>
+</g>
+<g id="zygote-female-symbol" data-sex-symbol="female" transform="translate(73 437)" fill="none" stroke="#263e4d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle r="10"/>
+<path d="M 0 10 V 29 M -9 21 H 9"/>
+</g>
+<g id="zygote-male-symbol" data-sex-symbol="male" transform="translate(508 452)" fill="none" stroke="#263e4d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle r="10"/>
+<path d="M 7 -7 L 22 -22 M 11 -22 H 22 V -11"/>
+</g>
+<text x="290" y="458" font-size="27" font-weight="500">or</text>
+<text x="280" y="530" font-size="29" font-weight="600">Zygotes (offspring)</text>
+</g></svg>

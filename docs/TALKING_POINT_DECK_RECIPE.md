@@ -274,7 +274,7 @@ cannot use a stale PDF page number as permanent identity.
 A useful topic sequence is:
 
 1. A numbered `subsection` divider.
-2. The current questions in clear, complete form.
+2. All current questions for that topic on one `bookend` setup slide, using the Key Takeaways frame.
 3. An overview answering the central question.
 4. Mechanism, comparison, experiment, or worked interpretation.
 5. Useful instructor examples and figures, including enlarged views when needed.
@@ -282,6 +282,12 @@ A useful topic sequence is:
 
 This is a teaching pattern, not a fixed slide quota. A short topic may need less; a mechanism
 with several useful source figures may need substantially more.
+
+Keep the sequence `subsection` divider, one complete questions slide, then content. Preserve
+the assigned questions verbatim; smaller text is acceptable on this setup slide. Do not split
+the question set across pages or apply this density exception to the explanatory slides.
+Use `multiple-choice` with `@question` and `@answer` for guessing games such as Discovery or
+Invention, retaining the native answer reveal.
 
 Start each major chapter with `section`. Repeat the current topic number in supporting
 titles or meaningful captions so students can navigate. Do not add visible slide-number
@@ -444,7 +450,7 @@ A topic starts with this structure:
 
 # Topic 1: A Specific Mechanism
 
-=== layout: one-panel
+=== layout: bookend
 
 # 1. Questions: How Does It Work?
 

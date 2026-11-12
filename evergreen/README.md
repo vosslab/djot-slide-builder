@@ -18,6 +18,8 @@ own `evergreen/` folder; single-lecture content and dated snapshots stay with th
 - [assets/rec_reminder_image.svg](assets/rec_reminder_image.svg): reusable recording reminder.
   Its editable ODG source and PNG companion remain local and ignored by Git.
 - [instructor_contact.djot](instructor_contact.djot): Discord, office hours, contact options, and anonymous message slides.
+- [ways_to_contact.djot](ways_to_contact.djot): the canonical contact-options slide used by both
+  the shared instructor group and Biotechnology, with the original wording and four colors.
 - [youtube_channel.djot](youtube_channel.djot): Informational Slides divider and channel slide.
   Insert the weekly podcast episode immediately afterward. The channel image is in
   `assets/youtube_channel.png`.

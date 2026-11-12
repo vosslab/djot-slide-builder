@@ -97,17 +97,25 @@ this classroom Zoom group. Keep ordinary office-hours information separate.
 For Zoom breakout activities, title the selected icebreaker **Breakout Room Chat**.
 
 Include [../../biotech/evergreen/zoom_guidance.djot](../../biotech/evergreen/zoom_guidance.djot) visibly in Informational
-Slides, before Course Content. Preserve these three original Lecture 07 reminders:
+Slides, before Course Content. Begin with a Zoom subsection and retain the class meeting page
+and original visual reminders:
 
-1. How to Use Zoom Like a Pro: course meeting link, mute when not speaking, headphones or
+1. Biotechnology Class Zoom: meeting ID, password, and clickable class link.
+2. How to Use Zoom Like a Pro: course meeting link, mute when not speaking, headphones or
    earbuds, and video advice for a slow connection.
-2. Setting Your Name in Zoom: proper first name or consistent nickname, discussion-mark
-   sorting, and renaming during class.
-3. Change Name Before a Meeting: set the profile display name before joining.
+3. Setting Your Name in Zoom: proper first name or consistent nickname and the original name badge.
+4. Change Your Name During Class: native steps beside the original Rename-menu image.
+5. Change Name Before a Meeting: native steps beside the original profile-menu image.
 
-The class meeting link uses `{{course_url:zoom}}`; office hours uses
-`{{course_url:office_hours}}`. Resolve both from the ignored local course-links file.
+The class link uses `{{course_url:zoom}}` and display URL `{{course_url:class_zoom_short}}`;
+office hours uses `{{course_url:office_hours}}` and its existing `{{course_url:zoom_short}}`.
+Resolve these distinct meetings from the ignored local course-links file.
 Refresh software steps against Zoom's official instructions when editing the name slides.
+Discussion Marks were dropped for Fall 2026 because some students attend face-to-face;
+omit the grading slide, the discussion-points row, and the name-sorting explanation.
+
+For talking-point reminders, use the instructor's established slide wording. The Fall 2026
+presentation time is 90 seconds. Do not replace that voice with unreviewed syllabus rewrites.
 
 ### Course Content
 
@@ -166,6 +174,8 @@ The individual upcoming-course pages explain both what students will study and h
 works. Preserve useful instructor descriptions, activities, and assignments while refreshing
 logistics; a title/time/location list is insufficient. See
 [../../evergreen/UPCOMING_COURSES_SOURCES.md](../../evergreen/UPCOMING_COURSES_SOURCES.md) for the shared pages' sources.
+The film course includes linked Spring 2022, Summer 2024, and Summer 2026 movie schedules as
+historical examples. The Biochemistry Lab slide omits the BCHM 356/456 CRN line.
 
 Finish with THE END. Biotechnology retains its special Veridian Dynamics ending immediately
 before THE END, after general announcements. This closes the announcements deck, not the whole

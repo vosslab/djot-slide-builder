@@ -2,7 +2,7 @@
 
 # 30. AMP V. Myriad Genetics
 
-=== layout: one-panel
+=== layout: bookend
 
 # 30. Questions
 
@@ -73,9 +73,9 @@ The colored blocks track exon sequences through a simplified example. Laboratory
 
 # 31. CRISPR/Cas9 Patent Disputes
 
-=== layout: one-panel
+=== layout: bookend
 
-# 31. Questions (1 of 2)
+# 31. Questions
 
 @body
 
@@ -85,13 +85,6 @@ The colored blocks track exon sequences through a simplified example. Laboratory
 - Explain the patent wars involving CRISPR technology. How did MIT get their patent approved before Berkeley when they submitted 7 months after them?
 - How did the disputed eukaryotic claims differ from the broader CRISPR claims, and why is a simple prokaryote/eukaryote ownership division misleading?
 - How did Feng Zhang of the Broad Institute find out about CRISPR/Cas9 to create his patent?
-
-=== layout: one-panel
-
-# 31. Questions (2 of 2)
-
-@body
-
 - What did the 2022 PTAB decision conclude, and what changed after the 2025 appeal?
 - How did this decision affect Biotech companies?
 - How have the patent wars influenced the development and commercialization of CRISPR?
@@ -161,9 +154,9 @@ https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.
 
 # 32. First Inventor to File and Prior Art
 
-=== layout: one-panel
+=== layout: bookend
 
-# 32. Questions (1 of 2)
+# 32. Questions
 
 @body
 
@@ -173,13 +166,6 @@ https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.
 - What are the potential impacts of the "First Inventor to File" system on small-scale inventors or biotech startups?
 - How does prior art influence patentability?
 - What is prior art, and how have definitions of prior art and publication changed since the 2013 America Invents Act?
-
-=== layout: one-panel
-
-# 32. Questions (2 of 2)
-
-@body
-
 - What mechanisms exist to invalidate a patent?
 - Consider reexamination, challenges based on prior art, or disputes over ownership. How might these laws benefit or harm innovation?
 

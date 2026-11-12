@@ -1,3 +1,26 @@
+## Selection 182 integration - 2026-11-12
+
+Artwork DONE; actual integration checks PASS; fresh independent integration review pending.
+Broader goal ACTIVE. Selections 183 and 184 OCR cards remain READY for future work.
+One existing URL at local slide 41/source line 441 now uses the approved original
+`punnett_carrier_phenotypes.drawn.svg`; all other Djot bytes and original JPEG are preserved.
+Fresh full62/focused41 models, plans and diagnostics equal the accepted candidate, including
+only the existing local9/line96 mixed-readability warning; focused diagnostics are empty.
+Every raw ODP member and member order equal the accepted candidate, carrying forward root's
+actual final PDF proof acceptance without an additional export. Native heading/objects are exact
+in model/ODP. Decision 182-FIT preserves allocation (60,159.474286,1160,540.525714), with
+contained display (60,159.737143,1160,540). Decision 182-TITLE records the accepted export
+variance: all three heading xMin values -0.057pt, first two xMax -0.057pt and third -0.021pt,
+y exact; 871 outside-image-union pixels confined to title bbox (371,68,908,119), zero elsewhere.
+A byte-identical baseline ODP control re-export reproduced the candidate title geometry/pixels;
+this does not claim exact title geometry against the sealed baseline PDF.
+Accepted candidate PDF evidence has 88 selectable words (3 native plus 85 SVG), 30 SVG text
+blocks and 18 genotypes with raised C/c and aligned X/Y bases. All 70 baseline, 10 art and
+64 candidate fixed members remain exact; protected artwork, fallbacks and neighbors are intact.
+Evidence: `_temp/punnett_carrier_phenotypes_182/integration/REPORT.md`.
+No full suite, whole-deck PDF, classroom or print validation. Independent integration review and
+metadata-only closure remain pending; no broader-goal completion claim.
+
 # Genetics visual renewal progress
 
 Goal status: **ACTIVE**. Guide/helper/ABO/bottleneck batch complete, including canonical ABO/drift exports and
@@ -40,6 +63,129 @@ rasters remain fallback/reference, not completed SVG work. Historical mixed SVG 
 in this ledger as history; they do not fulfill the current pure-vector goal. Defer or skip a
 candidate with a brief reason when difficulty exceeds reliable drawing ability. Human figures,
 including the rejected prenatal drawings, remain deferred rather than forced into weak art.
+
+## X-Y chromosome counts (selection 179)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+One local20 image URL uses the accepted original xy_inheritance.drawn.svg; all other
+Djot bytes and original fallback remain exact. Fresh specification and quality PASS;
+root personally accepted source, frame, baseline, both final art proofs and final native
+candidate, including its bounded title export exception. Decision179-FIT preserves the
+559 by 540.5257143 allocation; contained display is 559 by 539.0357143.
+Accepted proof has 49 original versus 50 candidate tokens: 2 title, 19 right-panel
+(including 3 bullets), and 28 versus 29 figure tokens. The editable joining plus adds one.
+All 21 SVG line groups survive. Right-panel boxes/pixels are exact. Two title words shift
+-0.028 pt; 443 title pixels differ, bbox487,70,790,119, maximum channel delta80.
+Unchanged-baseline ODP control reproduces candidate title geometry; this is export
+variability. All other pixels outside figure union plus3px are exact. Original baseline
+is retained; original title boxes/pixels are not claimed exact.
+Fresh actual full62/focused1 model/plan/diagnostic and every raw ODP member/order match
+the accepted candidate. Full local9 line96 mixed warning remains; focused20 has none.
+Evidence: _temp/xy_inheritance_179/integration/REPORT.md and checks.json. No export replay.
+180/181 HOLD: photographic wrappers retained. 182 HOLD image022 human figure; READY
+image026 full C/c Punnett contract, root source/frame viewed. Re-freeze POST179 consumer
+before182; no182 art started. Next image030 remains unopened. Broader goal ACTIVE.
+Fresh independent integration review confirms 23 exact raw ODP members/order and all
+219 fixed protections, 70 baseline, 7 art and 53 candidate sealed members. PDF extraction
+stream order differs; spatial right-panel words/boxes and raw pixels remain exact.
+Footer clearance is tight but intact, accepted by root. Metadata-only closure edits five
+existing metadata owners; integration previously edited three existing owners and created
+two unsealed status owners under Decision179-STATUS. No fixed evidence is rewritten.
+Evidence: _temp/xy_inheritance_179/integration_review.md and closure.json.
+182 next contract retains all source C/c genotypes, 8 gamete icons and 4 phenotype
+braces/labels after a current POST179 consumer freeze; no182 artwork started.
+No full-suite, classroom or print claim.
+
+## X-Y sex determination (selection 178)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+One local18 image URL now uses the accepted original xy_sex_determination.drawn.svg.
+All other Djot bytes and the original JPEG remain exact. Fresh specification/quality PASS;
+root personally accepted source, three final art proofs, baseline and candidate native page.
+Decision178-FIT permits the contained landscape display within the unchanged allocation.
+Accepted native proof preserves all16 original words/full boxes and51 SVG tokens/30 authored line groups;
+zero raw pixels change outside the old/new target union plus3px. Fine centromere notches
+remain subtle at actual size, an accepted limit. Fresh guarded actual full62/focused1
+model/plan/diagnostic and raw ODP member/order identity checks are recorded in
+_temp/xy_sex_determination_178/integration/REPORT.md. No native export replay.
+179 READY: simple44+XY/XX count schematic; re-freeze its consumer after178 before work.
+Next unopened path remains xo_system.svg. No179 drawing, full-suite or classroom claim.
+Metadata closure corrects the historical 29-line prose error to 30; fixed proof remains unchanged.
+Evidence: _temp/xy_sex_determination_178/integration_review.md and closure.json in that scratch root.
+
+## Shared pollen question reuse (selection 173)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Six source001 URLs on 05G local slides 7-12 reuse the unchanged accepted170
+pollen_survival_question.quote.svg through repo: paths. Every other consumer byte,
+both accepted171 flower URLs, source rasters and artwork remain exact. Fresh specification
+and quality PASS; root personally accepted all six baseline and all six candidate native pages.
+Actual guarded full21/focused6 models, plans, empty diagnostics and every raw ODP member/order
+match the accepted candidate. Only contained target display fit changes within identical
+allocations; native and neighboring objects are exact. No export replay or new SVG copy.
+Accepted native proof preserves all145 original words and complete bounding boxes; each page
+adds81 faithful question tokens after joining two extracted F + 2 pairs. No raw pixel changes
+outside the old/new target union plus3px. No stronger pixel-identity claim.
+174 HOLD: progressive chromosome trio retains empirical micrographs and family continuity.
+175 HOLD: dense multiscale mitosis needs coordinated composition and subject review.
+176 HOLD: dense crossover topology and recombinant empirical TEM panels remain unsuitable
+for bounded pure-vector renewal; native-frame proof correction pending. Its mutable report
+and proof files are outside integration protections; original seal bytes are preserved.
+Evidence: _temp/pollen_question_reuse_173/integration/REPORT.md and checks.json.
+Independent integration review and metadata closure remain pending. No full-suite,
+classroom or print check; broader creative renewal remains ACTIVE.
+
+## Metadata closure, November 12, 2026
+
+Selection173 COMPLETE; fresh independent integration review PASS; broader goal ACTIVE.
+Current authority supersedes earlier pending statuses without altering their historical receipts.
+Exactly five metadata owners changed; consumer, shared artwork, rasters and fixed proof remain
+unchanged. Of195 fixed protections,194 match and one authorized external guidance change
+is preserved (root decision173-GUIDANCE). Current HUMAN_GUIDANCE adds five lines on unrelated
+teaching guidance; close/guidance.diff records the exact change against existing frozen bytes.
+Original protection maps remain unchanged; every71 baseline/61 candidate sealed member verifies.
+The accepted full21/focused6 and all24 raw ODP members/order equality, all145 native words
+and boxes,81 question tokens per page after two F + 2 joins, and zero raw pixels outside
+target union plus3px are upstream proof findings, not new compilation/export measurements.
+Root personally accepted all six baseline and all six candidate pages.
+174 HOLD: progressive empirical trio;175 HOLD: dense mitosis;176 HOLD: crossover/TEM family.
+Fresh176 diagnostic review PASS: original20/31 proofs byte-identical, reproducibly nonblank;
+root alternate PNG complete. Exact cause of earlier blank viewer display remains unknown.
+No176 product fix, original seal unchanged, and no173 dependency on that separate diagnosis.
+177 both assets HOLD (terminal ASSESSMENT.md); next178: 06D image_010.jpg, then xy_inheritance.svg, unopened.
+See integration_review.md (at selection173 root), close/verification.json and closure.json.
+Original integration/check.py retains exact pre-closure metadata assertions; use the recorded
+closure deltas/preimages for current metadata, without rewriting its original maps or seals.
+No Git, source_me.sh, compilation, export, full-suite, classroom or print checks at closure.
+
+
+## Shared flower Punnett reuse (selection 171)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly two source002 URLs in05G local11/12 now reuse the accepted05E
+flower_punnett.drawn.svg through repo: paths. Every other consumer byte is exact;
+source rasters and accepted owner remain unchanged. Fresh specification/quality PASS;
+root personally accepted both baseline and candidate native pages before integration.
+Actual guarded full21/focused2 models, plans, empty diagnostics and every raw ODP
+member/order match the accepted candidate. No frame changes or export replay.
+Accepted proof preserves42 native words, exact horizontal bounds and37 full boxes;
+five bold table words retain documented vertical PDF font-metric exceptions with
+unchanged native pixels. Ten SVG words extract per page. Strict-frame edge changes
+are560/414 pixels; zero changes outside artwork+2px. No stronger identity claim.
+172 remains HOLD: the B-only lobe contradicts P(A|B)=1. 173 is READY for exact
+accepted170 quote reuse in six placements, pending fresh current-context review/proof;
+post171 consumer is refrozen for that next task. No173 implementation or new assessment.
+Evidence: _temp/flower_punnett_reuse_171/integration/REPORT.md and checks.json.
+Metadata-only closure complete: exactly five existing metadata owners changed;
+all 179 fixed protections and all 64 baseline/56 candidate sealed members remain exact.
+Fresh independent actual-package review PASS; original integration checks remain historical.
+See _temp/flower_punnett_reuse_171/integration_review.md,
+integration_review/results.json and closure.json. No historical seal was rewritten.
+Source rasters and shared SVG owner are retained. Selection 173 still requires fresh
+specification/quality review and native baseline/candidate context proof for six exact
+accepted170 quote-card URL substitutions, using integration/post171_consumer.djot
+as its current baseline. Only the authorized Sup-/pose and genera-/tion OCR joins apply.
+No selection 173 implementation, full-suite, classroom or print acceptance is claimed.
 
 ## Pollen survival question OCR card (selection 170)
 

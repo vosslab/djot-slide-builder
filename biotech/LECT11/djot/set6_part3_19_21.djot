@@ -2,9 +2,9 @@
 
 # 19. Drug Approval and Clinical Evidence
 
-=== layout: one-panel
+=== layout: bookend
 
-# 19. Questions (1 of 2)
+# 19. Questions
 
 @body
 
@@ -14,13 +14,6 @@
 - What are medical devices?
 - How do medical devices differ from drugs in their clinical trial processes?
 - Drug Approval: What are the criteria for a drug to pass or fail a clinical trial?
-
-=== layout: one-panel
-
-# 19. Questions (2 of 2)
-
-@body
-
 - What statistical methods are used to determine the efficacy of a drug?
 - How is the risk-benefit ratio evaluated during clinical trials?
 
@@ -98,9 +91,9 @@ The diagram summarizes different study purposes. Optional exploratory work and c
 
 # 20. Clinical Trial Phases
 
-=== layout: one-panel
+=== layout: bookend
 
-# 20. Questions (1 of 3)
+# 20. Questions
 
 @body
 
@@ -110,26 +103,12 @@ The diagram summarizes different study purposes. Optional exploratory work and c
 - How is the initial dosage determined in Phase 0/I, and how is it adjusted in subsequent phases?
 - What criteria are used to select participants for each phase?
 - How many participants are tested in each clinical trial phase?
-
-=== layout: one-panel
-
-# 20. Questions (2 of 3)
-
-@body
-
 - How are results scaled from a small cohort in early phases to a larger population in later phases?
 - What is the average or expected duration of each phase?
 - What are the typical costs for each phase?
 - What is the likelihood of succeeding in each phase?
 - In what situations might a clinical trial be halted prematurely, and why?
 - What is your opinion of the cost of clinical trials?
-
-=== layout: one-panel
-
-# 20. Questions (3 of 3)
-
-@body
-
 - Are they too expensive and driving up the cost of medication?
 - Or is that the cost of safety?
 
@@ -147,6 +126,16 @@ The diagram summarizes different study purposes. Optional exploratory work and c
 @citation
 
 https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
+
+=== layout: big-image
+
+@image
+
+![20. Read the Phase Staircase](assets/set6_sources/clinical_phase_staircase.png)
+
+@caption
+
+Phase 0 is optional. The staircase organizes study purposes; phases can overlap or combine. The icons are not actual sample sizes, and moving to the next phase is not guaranteed.
 
 === layout: one-panel
 
@@ -226,9 +215,9 @@ https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
 
 # 21. Orphan Drugs and Expedited Programs
 
-=== layout: one-panel
+=== layout: bookend
 
-# 21. Questions (1 of 2)
+# 21. Questions
 
 @body
 
@@ -238,13 +227,6 @@ https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
 - Fast-Track: Are there expedited processes for drug approval?
 - What qualifies a drug to be fast-tracked?
 - How does the FDA's "Breakthrough Therapy" designation connect with the fast-track approval?
-
-=== layout: one-panel
-
-# 21. Questions (2 of 2)
-
-@body
-
 - How did the FDA's response to the AIDS crisis reform the approval process for life-threatening diseases?
 - What implications does the use of accelerated approval mechanisms have for new medications?
 

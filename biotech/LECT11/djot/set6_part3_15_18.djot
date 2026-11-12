@@ -2,7 +2,7 @@
 
 # 15. Drug Scheduling
 
-=== layout: one-panel
+=== layout: bookend
 
 # 15. Questions
 
@@ -61,7 +61,7 @@ https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-reg
 
 # 16. Federal and State Regulation
 
-=== layout: one-panel
+=== layout: bookend
 
 # 16. Questions
 
@@ -120,7 +120,7 @@ https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-reg
 
 # 17. Marijuana Legalization
 
-=== layout: one-panel
+=== layout: bookend
 
 # 17. Questions
 
@@ -177,21 +177,29 @@ https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-reg
 
 https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries
 
-=== layout: big-image
+=== layout: two-panels
 
-@image
+# 17. The Plant Does Not Specify the Legal Category
 
-![17. The Plant Does Not Specify the Legal Category](assets/set6_sources/topic_17_187.png)
-
-@caption
+@left
 
 A photograph cannot tell you the cannabinoid content, manufacturing quality, intended use, or governing license. Those facts change the regulatory question.
+
+*Cannabis sativa* leaves. CDC / Dr. Louis Alexander, 1973.
+
+@right
+
+![Cannabis sativa leaves identified by CDC](assets/set6_sources/cannabis_cdc_16340.jpg)
+
+@citation
+
+https://wwwn.cdc.gov/PHIL/Details.aspx?pid=16340
 
 === layout: subsection
 
 # 18. Psilocybin and Other Substances
 
-=== layout: one-panel
+=== layout: bookend
 
 # 18. Questions
 

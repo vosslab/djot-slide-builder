@@ -9,6 +9,14 @@ The [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) layout catalog supplies the com
 | `question-ask` | An occasional question to ponder during the lesson | One H1 question. |
 | `prompt` | An icebreaker with examples and suggestions | Optional H1, required `@prompt` and `@examples`. |
 | `multiple-choice` | A choice-based problem with a revealed answer | Required `@question` and `@answer`. |
+| `bookend` | A complete talking-point question set before its teaching content | H1 topic number/questions title and `@body`. |
+
+## Talking-point setup slides
+
+Put each topic's complete assigned questions on one `bookend` slide immediately after its
+`subsection` divider, then show the content. This reuses the Key Takeaways frame. Preserve the
+questions verbatim; smaller text is acceptable on this setup page. The exception does not extend
+to explanatory slides. See [../TALKING_POINT_DECK_RECIPE.md](../TALKING_POINT_DECK_RECIPE.md).
 
 ## Questions to ponder
 
