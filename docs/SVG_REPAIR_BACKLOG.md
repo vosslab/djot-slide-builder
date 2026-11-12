@@ -153,3 +153,37 @@ are the durable comparison baseline.
 
 See [slide-specs/SVG_DIAGRAMS.md](slide-specs/SVG_DIAGRAMS.md) for the asset contract and
 [LECT10_REVIEW.md](../genetics/LECT10/djot/LECT10_REVIEW.md) for the dated restoration reviews.
+
+## Tool specimen rejection: November 12, 2026
+
+The instructor rejects the thin, tapered sister silhouette in the v1
+[chromosome_tool.drawn.svg](slide-specs/illustration_examples/chromosome_tool.drawn.svg).
+This supersedes earlier visual acceptance for that silhouette only. Preserve the v1 specimen
+and its reviews as historical evidence. The repair target is two thick, rounded chromatids
+forming an open X with clear space between the arms; the
+[v2 stabilization plan](active_plans/active/chromosome_svg_tool_v2_plan.md) owns this repair.
+This entry does not reject the tool's separate DNA track or authorize course-art substitutions.
+
+Repair update, November 12, 2026: the new manager-reviewed
+[chromosome_tool_v2.drawn.svg](slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg)
+uses rounded continuous open-X sisters, a broad labelable generic centromere marker, and
+source-backed named chr7 bands. Corrected specification, independent quality and integration
+reviews PASS; root viewed all five final proofs. This closes the standalone tool repair only.
+The original v1 rejection above remains; the user has not personally approved the final v2
+shape. No withdrawn LECT10 course art is restored. See
+[closure.md](../_temp/chromosome_svg_tool_v2/closure.md).
+
+### Subsequent v2 rejection: shared visual theme, November 12, 2026
+
+The instructor then rejected the current
+[chromosome_tool_v2.drawn.svg](slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg):
+"I can appreciate that you tried to accommodate my requests ... but they don't look like they
+share a common theme anymore". The preceding standalone closure and review passes do not
+establish acceptance of this v2 artwork. Keep the public specimen as the current repair
+baseline; no course fallback or course-art substitution changes here.
+
+A bounded [theme-revision concept](../_temp/chromosome_theme_revision/PLAN.md) uses the same
+source-backed chromosome in single/sister views, common per-chromatid proportions and hollow
+centromere collars, and a linked flat-ended internal crop. Root personally viewed and approved
+that concept direction; production implementation and fresh review remain pending. This is not
+instructor or classroom acceptance. Preserve both earlier rejection entries.

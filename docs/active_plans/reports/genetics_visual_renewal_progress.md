@@ -1,7 +1,112 @@
-## Selection 182 integration - 2026-11-12
+## Answer184 complete - 2026-11-12
 
-Artwork DONE; actual integration checks PASS; fresh independent integration review pending.
-Broader goal ACTIVE. Selections 183 and 184 OCR cards remain READY for future work.
+Selection184 DONE: the sole answer-image URL at local49/source517 is integrated, and
+fresh independent [integration review](../../../_temp/hemophilia_response_184/integration_review.md)
+PASS. Root and reviewer viewed all three final native proofs. Actual full62/focused3 models,
+plans and diagnostics and all27 raw ODP members/order equal the accepted candidate. The
+57-word answer, actual Next font, fractions, cube and restored baseline are accepted at the
+reviewed size. The measured92-pixel old-raster fringe is accepted within a one-pixel expanded
+answer union; strict outside-union identity is not claimed. Original masked local50/source528
+and the completed183 question URLs remain. [Closure](../../../_temp/hemophilia_response_184/closure.md)
+records exact hashes and limits. Broader visual-renewal goal ACTIVE;185 masked fragment HOLD.
+The chromosome v2 gallery's common visual theme remains under revision, with no final course
+theme acceptance or migration claimed. No new export, full suite or classroom/Zoom/print
+acceptance. Earlier dated checkpoints below remain historical.
+
+## Answer184 integrated - 2026-11-12
+
+Selection184 integrated through only the answer URL at local49/source517. Fresh full62/
+focused3 models, plans, diagnostics and all27 raw ODP members/order equal the accepted
+candidate. Root accepted the actual Next font, fractions, cube, restored body baseline and
+all57 answer words at the native proof size. Original masked local50 remains unchanged.
+The measured92-pixel upper-edge fringe (maximum channel delta12) is explicitly accepted;
+zero differences lie outside the answer union expanded by one pixel. Focused diagnostics
+are empty; the existing full-deck local9 warning remains. Exact183 metadata closure deltas
+are recorded separately; historical seals remain unchanged.
+[REPORT.md](../../../_temp/hemophilia_response_184/integration/REPORT.md) records checks.
+Fresh independent integration review and metadata-only closure pending. Broader goal ACTIVE;
+185 masked fragment HOLD. No export replay, full suite or classroom/Zoom/print acceptance.
+Earlier dated checkpoints below remain historical.
+
+## Question183 complete - 2026-11-12
+
+Selection 183 DONE: the exact two question-image URLs are integrated, root accepted all
+three final native proofs, and fresh independent integration review PASS. Original masked
+local50/source528 remains; source507/513 use the corrected SVG. Actual full62/focused3
+models, plans and diagnostics plus all 27 ODP raw members/order equal the accepted candidate.
+Only the existing local9/source96 warning remains; focused diagnostics are empty. Fixed
+baseline121, old-art14, corrected-art14 and candidate63 evidence remains unchanged.
+[Integration review](../../../_temp/hemophilia_problem_183/integration_review.md) and
+[closure](../../../_temp/hemophilia_problem_183/closure.md) record exact hashes and limits.
+Broader visual-renewal goal ACTIVE. Selection 184 answer art and isolated native proof PASS;
+production integration pending. Selection 185 masked fragment HOLD. Chromosome tool v2 is
+complete; no new course tool migration is claimed. Biotechnology LECT11 remains excluded.
+No new export, full suite or classroom/Zoom/print acceptance is claimed. Earlier dated
+checkpoints below are historical and retain their original status at the time written.
+
+## Question183 integrated - 2026-11-12
+
+Selection183 integrated, pending fresh independent integration review and separate metadata
+closure. Root personally reopened and accepted all three final exact-two candidate pages.
+Only question URLs at local48/source507 and local49/source513 change; the original masked
+local50/source528 image remains. Inverse substitutions restore every original consumer byte.
+Fresh actual full62/focused3 models, plans, diagnostics and all raw ODP members/order equal
+the accepted candidate. Only existing local9/source96 mixed-readability warning remains;
+focused diagnostics are empty. Current compiler inputs match the accepted candidate.
+Exact bounded chromosome-tool v2 metadata deltas are recorded without rewriting historical seals.
+Evidence: [REPORT.md](../../../_temp/hemophilia_problem_183/integration/REPORT.md).
+No export replay, full suite or classroom/Zoom/print acceptance. Small stacked-card readability
+remains bounded to the root-accepted proof size. Broader goal ACTIVE; later queue unchanged.
+Earlier dated checkpoints below remain historical.
+
+## Chromosome tool v2 complete - 2026-11-12
+
+Library and standalone v2 artifact DONE. Source-backed named chr7 hg38 bands, the larger
+labelable generic centromere marker, and rounded continuous open-X sisters satisfy the tool
+revision. The corrected real-map marker leaves all 44 source stains visible, including both
+acen intervals; original segments drive the q/q3/q31/q31.2 hierarchy and CFTR zoom.
+Fresh corrected specification, different quality, and integration reviews PASS. Root personally
+viewed all five final frozen proofs. Integration recorded 11 focused tests and clean pyflakes;
+51 actual embedded Atkinson Hyperlegible Next Regular glyph outlines/advances were verified.
+Reviewed sizes: galleries 1600 x 1000 and 1200 x 750; shape 452 x 724; map 530 x 724;
+zoom 538 x 724. These are demonstrated placements, not universal minimum sizes.
+
+The v1 user rejection remains historical authority for that silhouette. The user has not
+personally approved final v2 art. Tool acceptance restores no withdrawn LECT10 art and changes
+no course Djot. No full suite, native export, classroom, Zoom or print acceptance is claimed.
+Broader lecture-art goal ACTIVE. Selection 183's corrected two-URL native question candidate
+has all three pages root-viewed and accepted, but is not integrated. Selection 184 answer
+quality PASS, native pending. Selection 185 fragment HOLD, masked. Biotechnology LECT11 remains
+excluded and owned by another manager. Earlier metadata authorizations and exceptions remain.
+
+Evidence: [closure.md](../../../_temp/chromosome_svg_tool_v2/closure.md) and
+[integration_review.md](../../../_temp/chromosome_svg_tool_v2/integration_review.md).
+The complete earlier progress record follows unchanged; its pending v2/predecessor states are
+historical and superseded by this bounded tool checkpoint only.
+
+## Chromosome drawing tool complete - 2026-11-12
+
+Dedicated Python chromosome SVG tool DONE for the library and standalone specimen. Fresh
+specification, rendered quality and integration reviews PASS; root accepted all seven final proofs.
+Ten focused tests pass; all three README Python examples run and the actual recipe reproduces
+the shipped SVG byte for byte. Legacy callers, historical artwork and 13 fixed evidence members
+are preserved. Actual-font proof identifies Next Regular and 14 matched semibold glyphs.
+Usage: [README.md](../../../svg_tools/README.md#chromosome-drawing-tool).
+Evidence: [closure.md](../../../_temp/chromosome_svg_tool/closure.md).
+
+Tool priority is complete; broader artwork goal remains ACTIVE with its existing objective.
+Selection 183 question-card art v2: specification/quality PASS and baseline complete; native
+candidate and integration pending. Selection 184 answer art: specification PASS; quality/native
+work pending. Biotechnology LECT11 remains excluded and owned by another manager.
+The 480-pixel gallery is overview-only; sisters are demonstrated at 1150 pixels wide.
+Approximate label fitting needs intended-placement review. No full suite, native compatibility,
+lecture migration, classroom/Zoom or print acceptance is claimed. Earlier progress follows intact.
+
+## Selection 182 complete - 2026-11-12
+
+Selection 182 DONE; fresh specification, quality, native and independent integration reviews PASS.
+Root accepted the final native proof; metadata-only closure COMPLETE. Broader goal ACTIVE.
+Selection 183 OCR artwork IN PROGRESS in its isolated art directory; selection 184 READY.
 One existing URL at local slide 41/source line 441 now uses the approved original
 `punnett_carrier_phenotypes.drawn.svg`; all other Djot bytes and original JPEG are preserved.
 Fresh full62/focused41 models, plans and diagnostics equal the accepted candidate, including
@@ -18,8 +123,11 @@ Accepted candidate PDF evidence has 88 selectable words (3 native plus 85 SVG), 
 blocks and 18 genotypes with raised C/c and aligned X/Y bases. All 70 baseline, 10 art and
 64 candidate fixed members remain exact; protected artwork, fallbacks and neighbors are intact.
 Evidence: `_temp/punnett_carrier_phenotypes_182/integration/REPORT.md`.
-No full suite, whole-deck PDF, classroom or print validation. Independent integration review and
-metadata-only closure remain pending; no broader-goal completion claim.
+All 24 integration fixed members and 161 protections remain exact. Closure changes only five
+metadata owners; historical seals and reports retain their original temporal meaning.
+Evidence: `_temp/punnett_carrier_phenotypes_182/integration_review.md` and `closure.json`
+in the same selection directory. No full suite, whole-deck PDF, classroom or print validation.
+Scope exclusions remain unchanged; no broader-goal completion claim.
 
 # Genetics visual renewal progress
 

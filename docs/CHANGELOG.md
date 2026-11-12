@@ -2,10 +2,39 @@
 
 ### Fixes and Improvements
 
+- Integrate Answer184 through the single local49 image URL; preserve the masked local50.
+  Fresh full62/focused3 models/plans/diagnostics and all27 raw ODP members/order equal the
+  root-accepted native candidate, including its measured one-pixel edge-fringe exception.
+  Fresh independent integration review PASS; metadata-only closure COMPLETE. Broader goal ACTIVE.
+  No export replay or full suite. Evidence:
+  [REPORT.md](../_temp/hemophilia_response_184/integration/REPORT.md) and
+  [closure.md](../_temp/hemophilia_response_184/closure.md).
+
+- Integrate question183 through exactly two image URLs at local48/49; retain the original
+  masked local50 image. Fresh full62/focused3 models/plans/diagnostics and all raw ODP members
+  and order equal the root-accepted candidate. Independent integration review and metadata
+  closure COMPLETE after fresh independent integration review PASS; broader art goal ACTIVE.
+  Selection184 isolated native proof PASS, production integration pending;185 masked HOLD.
+  No export replay or full suite. Evidence: [closure.md](../_temp/hemophilia_problem_183/closure.md).
+
+- Complete chromosome tool v2: source-backed named hg38 chr7 cytobands, a larger labelable
+  centromere target, and rounded continuous open-X sisters replace the rejected wedge shape.
+  Correct map-marker occlusion while exposing all 44 source stains. Fresh corrected specification,
+  independent quality and integration reviews PASS; 11 focused tests and actual-font proofs.
+  Library/standalone artifact DONE; v1 rejection preserved and broader lecture art ACTIVE.
+  Evidence: [closure.md](../_temp/chromosome_svg_tool_v2/closure.md).
+
+- Complete the reusable Python chromosome SVG tool: requested sizes/colors, plain/banded rods,
+  joined sisters, bounded deletion/tail exchange and distinct exon/intron tracks. Preserve legacy
+  callers; fresh specification, quality and integration reviews PASS with 10 focused tests and
+  actual-font proofs. Standalone SVG acceptance only; broader artwork remains ACTIVE.
+  Evidence: [closure.md](../_temp/chromosome_svg_tool/closure.md).
+
 - Integrate selection182 original Punnett carrier-phenotype SVG through one local41 image URL;
   all other Djot bytes and fallback retained. Actual full62/focused41 models/plans/diagnostics
   and every ODP member/order equal the accepted candidate; bounded title export variance retained.
-  Artwork DONE; independent integration review pending; broader goal ACTIVE.
+  Selection182 DONE; fresh independent integration review PASS; metadata-only closure COMPLETE.
+  Broader goal ACTIVE;183 OCR artwork IN PROGRESS;184 READY.
   Evidence: _temp/punnett_carrier_phenotypes_182/integration/REPORT.md.
 
 - Complete selection179 original X-Y chromosome-count SVG through one local20 image URL;
