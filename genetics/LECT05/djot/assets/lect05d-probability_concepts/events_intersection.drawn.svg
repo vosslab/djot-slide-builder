@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="406" viewBox="0 0 664 406" role="img" aria-labelledby="intersection-title intersection-desc">
+  <title id="intersection-title">Intersection of events A and B</title>
+  <desc id="intersection-desc">Two equal overlapping circles inside sample space S. Only their shared lens is shaded gray. A has a blue-violet outline and B a green outline. The separate parts of A and B are white.</desc>
+  <defs>
+    <clipPath id="intersection-clip">
+      <circle cx="244" cy="231" r="116"/>
+    </clipPath>
+  </defs>
+  <rect width="664" height="406" fill="#ffffff"/>
+  <rect id="sample-space" x="12" y="62" width="640" height="332" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <circle id="intersection-fill" cx="420" cy="231" r="116" fill="#d8d8d8" clip-path="url(#intersection-clip)"/>
+  <g id="event-outlines" fill="none" stroke-width="4">
+    <circle id="event-a" cx="244" cy="231" r="116" stroke="#4925d9"/>
+    <circle id="event-b" cx="420" cy="231" r="116" stroke="#188126"/>
+  </g>
+  <g id="labels" fill="#111111" font-family="Atkinson Hyperlegible Next" font-size="40" font-style="italic" text-anchor="middle">
+    <text x="244" y="245">A</text>
+    <text x="420" y="245">B</text>
+    <text x="610" y="45" text-anchor="start">S</text>
+  </g>
+</svg>

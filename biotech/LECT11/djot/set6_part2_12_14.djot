@@ -1,0 +1,213 @@
+=== layout: subsection
+
+# 12. APHIS and the Plant Protection Act
+
+=== layout: one-panel
+
+# 12. Questions (1 of 2)
+
+@body
+
+- What is APHIS's authority under the Plant Protection Act of 2000?
+- How are potential plant pest risks evaluated in GM field trials?
+- What role does NEPA play in environmental assessments for transgenic crops?
+- How are confined field trials inspected and approved?
+- How are inspections done during the growing season, and what happens after harvest?
+- What criteria lead to a "regulated article" classification?
+
+=== layout: one-panel
+
+# 12. Questions (2 of 2)
+
+@body
+
+- What are possible sanctions if a trial violates containment standards?
+
+=== layout: one-panel
+
+# 12. A Field Trial Is an Exposure Scenario
+
+@body
+
+- APHIS Biotechnology Regulatory Services administers applicable oversight of organisms developed using genetic engineering under plant-health authorities.
+- A field trial can expose nearby crops, wild relatives, insects, soil, and later plantings.
+- Review asks what organism is present, how it can move or reproduce, and what plant-pest risks the proposed activity creates.
+- An outdoor trial is not a larger greenhouse with the same containment assumptions.
+
+@citation
+
+https://www.aphis.usda.gov/biotechnology-guidance
+
+=== layout: one-panel
+
+# 12. Containment Extends Past Harvest
+
+@body
+
+- An appropriate plan can address transport, site boundaries, reproductive isolation, handling, equipment cleaning, and disposal.
+- After harvest, volunteers or persistent material can remain. Monitoring and restrictions may continue.
+- Inspectors can compare what was authorized with records and actual practice.
+- Noncompliance can lead to corrective actions and enforcement; the exact response depends on the authorization, law, and circumstances.
+
+@citation
+
+https://www.aphis.usda.gov/biotechnology-guidance
+
+=== layout: one-panel
+
+# 12. Environmental Review and Status
+
+@body
+
+- NEPA concerns federal agencies' consideration of environmental effects in applicable decisions. It is not a universal certification that a crop is harmless.
+- Under the restored pre-2020 processes, regulated-article status and the available permit, notification, inquiry, and petition routes matter.
+- Use current APHIS instructions. Regulatory Status Review and exemption-confirmation terminology from SECURE cannot be assumed to describe an open pathway today.
+
+@citation
+
+https://www.aphis.usda.gov/biotechnology-guidance
+
+=== layout: big-image
+
+@image
+
+![12. Think Past the Field Boundary](assets/set6_sources/topic_12_148.png)
+
+@caption
+
+Pollen movement, compatible relatives, and volunteers are possible routes of gene flow or persistence. The diagram is a conceptual route map, not a prediction that every route occurs in every crop.
+
+=== layout: subsection
+
+# 13. The Food Safety Modernization Act
+
+=== layout: one-panel
+
+# 13. Questions
+
+@body
+
+- Why did Congress pass the Food Safety Modernization Act in 2011, and what problems was it meant to fix?
+- How did this law shift the FDA's focus from responding to food contamination to preventing it before it happens?
+- What new responsibilities did the law create for farmers, food manufacturers, and importers?
+- How does the FDA now work with the CDC and USDA to trace foodborne outbreaks more quickly?
+- How does the law affect food produced with biotechnology or genetic modification?
+- What challenges do small producers and international exporters face when following FSMA rules?
+
+=== layout: one-panel
+
+# 13. Prevent the Contamination
+
+@body
+
+- FSMA was signed in 2011 and shifted emphasis toward preventing food-safety problems rather than responding only after people become ill.
+- The framework includes preventive controls, produce safety, supplier verification, and other requirements that differ by activity and coverage.
+- Genetic engineering does not remove ordinary responsibilities for safe food production.
+- An engineered food ingredient can still be contaminated during fermentation, processing, packing, or storage.
+
+@citation
+
+https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma
+
+=== layout: one-panel
+
+# 13. Follow the Hazard Through Production
+
+@body
+
+- For a fermentation-made ingredient, identify plausible biological, chemical, and physical hazards at each step.
+- Determine which controls prevent or reduce the hazards and how staff will check that the controls worked.
+- Supplier checks and records support prevention; traceability and recall capability support a response when prevention fails.
+- A negative result from one finished sample cannot establish that every package is safe.
+
+@citation
+
+https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma
+
+=== layout: one-panel
+
+# 13. One Rule, Different Costs
+
+@body
+
+- Validation, equipment, recordkeeping, and verification require time and money.
+- Small producers and importers can face different practical constraints, and coverage or modified requirements must be checked for the specific operation.
+- The policy question is how to prevent real hazards while making compliance workable.
+- Ask which evidence shows that a control improves safety, rather than merely creating paperwork.
+
+@citation
+
+https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma
+
+=== layout: subsection
+
+# 14. SECURE: the 2020 Rule and What Changed
+
+=== layout: one-panel
+
+# 14. Questions (1 of 2)
+
+@body
+
+- What changes did the SECURE rule make to earlier USDA oversight of engineered plants?
+- How does SECURE handle certain genome edits that could have occurred by conventional breeding?
+- What steps lead to a plant being found not to require regulation, and what evidence is reviewed?
+- How does SECURE aim to speed innovation while maintaining environmental safeguards?
+- How are developer self-determinations used, and what makes them credible?
+- How can a developer request and document Regulatory Status Reviews?
+
+=== layout: one-panel
+
+# 14. Questions (2 of 2)
+
+@body
+
+- How do international partners view SECURE, and what trade issues may arise?
+
+=== layout: one-panel
+
+# 14. What the 2020 Rule Tried to Do
+
+@body
+
+- The SECURE rule revised APHIS biotechnology oversight,\
+  emphasizing characteristics of modified organisms\
+  and certain changes achievable through\
+  conventional breeding.
+- It introduced exemptions, confirmation requests, and Regulatory Status Reviews.
+- Teach these as the design of the 2020 framework. They are not a description of every currently available APHIS process.
+
+@citation
+
+https://www.aphis.usda.gov/biotechnology-guidance
+
+=== layout: one-panel
+
+# 14. The Court Changed the Path
+
+@body
+
+- A federal court vacated the 2020 rule on December 2, 2024.
+- APHIS restored permitting and Am I Regulated inquiries in January 2025, notifications in February, and petitions in March.
+- APHIS says pre-vacatur responses and active permits remain valid. New use of the vacated exemption and review processes is suspended.
+- Status checked for November 12, 2026: distinguish an old valid decision from an available route for a new product.
+
+@citation
+
+https://www.aphis.usda.gov/biotechnology-guidance
+
+=== layout: one-panel
+
+# 14. A Product Can Outlast Its Rulebook
+
+@body
+
+- Compare three things: the law authorizing an agency, the agency's implementing rule, and a decision for a particular product.
+- A court can invalidate a rule without erasing every earlier product decision.
+- Developers must check which pathway exists when they act, including destination-country rules for international trade.
+- Your company's regulatory milestone should name a real decision and the evidence needed to obtain it.
+
+@citation
+
+https://www.aphis.usda.gov/biotechnology-guidance
+

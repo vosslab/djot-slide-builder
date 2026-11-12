@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title description">
+<title id="title">Flower Punnett square</title>
+<desc id="description">Pollen and pistil each supply B or b. Four equal outcome cells contain BB, Bb, Bb, and bb. BB and both Bb flowers are purple; bb is white. Two purple flowers identify the pollen and pistil headers.</desc>
+<defs>
+<g id="purple-flower" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M51 81 C60 88 54 102 70 111 C74 115 66 117 61 112 C50 104 53 91 46 88" fill="#56a845" stroke="#285d2b" stroke-width="2.4"/>
+  <path d="M36 83 L26 88 L41 88 L46 94 L51 86 L64 81 L47 79 Z" fill="#71b950" stroke="#285d2b" stroke-width="2"/>
+  <path d="M47 29 C47 18 45 10 35 8 C25 3 14 10 12 21 C3 32 4 48 6 60 C6 77 25 86 48 86 C72 87 93 81 95 65 C99 45 90 24 78 12 C69 3 55 3 49 14 C47 19 47 25 47 29 Z" fill="#ba70d6" stroke="#67307d" stroke-width="2.4"/>
+  <path d="M14 24 C17 13 30 9 36 14 C28 15 23 23 20 34 C17 45 18 52 20 58 C11 54 10 38 14 24 Z" fill="#e3b3ef"/>
+  <path d="M51 19 C63 8 76 17 84 34 C91 49 91 65 85 73 C75 82 63 83 51 82 C67 72 69 52 60 34 C56 26 53 24 51 19 Z" fill="#e3b3ef" opacity="0.5"/>
+  <path d="M46 47 C33 36 20 36 15 48 C10 62 16 78 31 82 L48 83 Z" fill="#9148b0" stroke="#67307d" stroke-width="2.1"/>
+  <path d="M28 60 C18 51 15 65 19 75 C22 84 34 87 44 84 C44 75 39 66 28 60 Z" fill="#ce8ee3" stroke="#67307d" stroke-width="2.1"/>
+  <path d="M26 40 C33 36 37 43 48 42 C54 43 50 55 56 67 C60 76 56 86 51 88 C40 88 33 77 31 65 C29 55 23 46 26 40 Z" fill="#ce8ee3" stroke="#67307d" stroke-width="2.4"/>
+  <path d="M29 43 C32 43 34 45 37 46 C33 56 38 72 44 80 C34 75 34 63 31 55 C29 49 28 46 29 43 Z" fill="#e3b3ef"/>
+</g>
+<g id="white-flower" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M51 81 C60 88 54 102 70 111 C74 115 66 117 61 112 C50 104 53 91 46 88" fill="#56a845" stroke="#285d2b" stroke-width="2.4"/>
+  <path d="M36 83 L26 88 L41 88 L46 94 L51 86 L64 81 L47 79 Z" fill="#71b950" stroke="#285d2b" stroke-width="2"/>
+  <path d="M47 29 C47 18 45 10 35 8 C25 3 14 10 12 21 C3 32 4 48 6 60 C6 77 25 86 48 86 C72 87 93 81 95 65 C99 45 90 24 78 12 C69 3 55 3 49 14 C47 19 47 25 47 29 Z" fill="#fffef1" stroke="#55574f" stroke-width="2.4"/>
+  <path d="M14 24 C17 13 30 9 36 14 C28 15 23 23 20 34 C17 45 18 52 20 58 C11 54 10 38 14 24 Z" fill="#ffffff"/>
+  <path d="M51 19 C63 8 76 17 84 34 C91 49 91 65 85 73 C75 82 63 83 51 82 C67 72 69 52 60 34 C56 26 53 24 51 19 Z" fill="#ffffff" opacity="0.5"/>
+  <path d="M46 47 C33 36 20 36 15 48 C10 62 16 78 31 82 L48 83 Z" fill="#d9d9c5" stroke="#55574f" stroke-width="2.1"/>
+  <path d="M28 60 C18 51 15 65 19 75 C22 84 34 87 44 84 C44 75 39 66 28 60 Z" fill="#f2f1df" stroke="#55574f" stroke-width="2.1"/>
+  <path d="M26 40 C33 36 37 43 48 42 C54 43 50 55 56 67 C60 76 56 86 51 88 C40 88 33 77 31 65 C29 55 23 46 26 40 Z" fill="#f2f1df" stroke="#55574f" stroke-width="2.4"/>
+  <path d="M29 43 C32 43 34 45 37 46 C33 56 38 72 44 80 C34 75 34 63 31 55 C29 49 28 46 29 43 Z" fill="#ffffff"/>
+</g>
+</defs>
+<rect width="600" height="600" fill="#ffffff"/>
+<g id="cell-backgrounds">
+<path d="M196 4 H596 V126 H196 Z M4 196 H116 V596 H4 Z M396 196 H596 V396 H396 Z M196 396 H396 V596 H196 Z" fill="#d0f3cf"/>
+<path d="M196 126 H396 V196 H196 Z M116 196 H196 V396 H116 Z M196 196 H396 V396 H196 Z" fill="#fff9bd"/>
+<path d="M396 126 H596 V196 H396 Z M116 396 H196 V596 H116 Z M396 396 H596 V596 H396 Z" fill="#ded7f5"/>
+</g>
+<path id="grid" d="M196 196 V4 H596 V596 H4 V196 Z M196 126 H596 M196 196 H596 M116 196 V596 M196 196 V596 M396 126 V596 M116 396 H596" fill="none" stroke="#20241f" stroke-width="2.5" stroke-linejoin="round"/>
+<g id="parent-flowers">
+<use xlink:href="#purple-flower" transform="translate(294 15) scale(.86)"/>
+<use xlink:href="#purple-flower" transform="translate(17 266) scale(.86)"/>
+</g>
+<g id="offspring-flowers">
+<use id="BB-flower" xlink:href="#purple-flower" transform="translate(253 220) scale(.86)"/>
+<use id="Bb-top-flower" xlink:href="#purple-flower" transform="translate(453 220) scale(.86)"/>
+<use id="Bb-bottom-flower" xlink:href="#purple-flower" transform="translate(253 420) scale(.86)"/>
+<use id="bb-flower" xlink:href="#white-flower" transform="translate(453 420) scale(.86)"/>
+</g>
+<g id="labels" font-family="Atkinson Hyperlegible Next" fill="#111510" text-anchor="middle">
+<g font-size="36"><text x="449" y="48">pollen</text><text x="60" y="418">pistil</text></g>
+<g font-size="43" font-weight="700">
+<text x="296" y="177">B</text><text x="496" y="177">b</text>
+<text x="156" y="311">B</text><text x="156" y="511">b</text>
+<text x="296" y="372">BB</text><text x="496" y="372">Bb</text>
+<text x="296" y="572">Bb</text><text x="496" y="572">bb</text>
+</g></g>
+<g id="sex-symbols" stroke="#111510" stroke-width="4.7" fill="none">
+<g id="male" aria-label="male"><circle cx="442" cy="91" r="17"/><path d="M454 79 L473 60 M457 60 H473 V76"/></g>
+<g id="female" aria-label="female"><circle cx="60" cy="457" r="17"/><path d="M60 474 V505 M48 493 H72"/></g>
+</g>
+</svg>

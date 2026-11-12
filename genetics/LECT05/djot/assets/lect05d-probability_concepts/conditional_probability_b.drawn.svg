@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="723" height="715" viewBox="0 0 723 715" role="img" aria-labelledby="conditional-title conditional-desc">
+  <title id="conditional-title">Conditional probability of A given B</title>
+  <desc id="conditional-desc">Equal overlapping circles A and B inside sample space S. A-only is white, B-only light gray, and their intersection darker gray. An outward arrow leads from a dot in the intersection to its label. P(A|B) equals P(A intersection B) divided by P(B), shown as a stacked fraction.</desc>
+  <defs>
+    <clipPath id="conditional-lens-clip">
+      <circle cx="244" cy="278" r="166"/>
+    </clipPath>
+  </defs>
+  <rect width="723" height="715" fill="#ffffff"/>
+  <rect id="sample-space" x="12" y="62" width="699" height="428" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <g id="conditional-regions">
+    <circle id="conditioning-b-fill" cx="474" cy="278" r="166" fill="#d8d8d8"/>
+    <circle id="intersection-fill" cx="474" cy="278" r="166" fill="#aaaaaa" clip-path="url(#conditional-lens-clip)"/>
+  </g>
+  <g id="event-outlines" fill="none" stroke-width="4">
+    <circle id="event-a" cx="244" cy="278" r="166" stroke="#4925d9"/>
+    <circle id="event-b" cx="474" cy="278" r="166" stroke="#188126"/>
+  </g>
+  <g id="event-labels" fill="#111111" font-family="Atkinson Hyperlegible Next" font-size="40" font-style="italic">
+    <text x="56" y="117">A</text>
+    <text x="642" y="117">B</text>
+    <text x="665" y="45">S</text>
+  </g>
+  <g id="intersection-callout" stroke="#111111" stroke-width="2.5">
+    <circle id="intersection-dot" cx="359" cy="278" r="7" fill="#111111" stroke="none"/>
+    <line id="outward-leader" x1="359" y1="278" x2="584" y2="525"/>
+    <polyline id="outward-arrowhead" points="573,522 584,525 582,514" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="mathematical-labels" fill="#111111" font-family="Atkinson Hyperlegible Next" font-size="40">
+    <text id="intersection-label" x="590" y="573" text-anchor="middle">A &#8745; B</text>
+    <text id="conditional-left" x="180" y="654">P(A|B) =</text>
+    <text id="numerator" x="482" y="625" text-anchor="middle">P(A &#8745; B)</text>
+    <text id="denominator" x="482" y="690" text-anchor="middle">P(B)</text>
+  </g>
+  <line id="fraction-rule" x1="375" y1="642" x2="589" y2="642" stroke="#111111" stroke-width="2.5"/>
+</svg>

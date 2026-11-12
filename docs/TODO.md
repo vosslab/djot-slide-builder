@@ -4,7 +4,7 @@ Extended-Djot is the repository's sole authored deck source. [slide-specs/DJOT_S
 defines its current authoring contract; [PIPELINE.md](PIPELINE.md) records the source-to-native
 boundary.
 
-- [ ] add a today is "national ice cream day" slide before the ice breaker, we will need a possible day for all 366 
+- [ ] add a today is "national ice cream day" slide before the ice breaker, we will need a possible day for all 366
 calendar days to pull from ideally with an image like I have used for Nov 11 singles day.
 - [ ] clear out completed todo items to another file, this TODO file is hard to parse
 

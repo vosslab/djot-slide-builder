@@ -1,0 +1,280 @@
+=== layout: section
+
+# Group Business Plan
+
+## Business Plan Reference
+
+=== layout: one-panel
+hidden: true
+
+# Rubric At A Glance
+
+@body
+
+| Section | Weight |
+| --- | --- |
+| Cover page and table of contents | 5% |
+| Executive summary | 30% |
+| Science and technology background | 15% |
+| Market opportunity | 20% |
+| Management team | 5% |
+| Investment summary | 5% |
+| Overall style | 20% |
+| *Total* | *100%* |
+
+=== layout: two-panels
+
+# Group Projects
+
+@left
+
+- Group Business Plan
+  - One large complete document
+  - Dive more into the science
+  - minimum 12 pages; maximum 18 pages.
+  - Put it all together in one final document
+- [Due during Finals Week: Dec 17]{color=red}
+
+
+@right
+
+All of the required sections, in this order:
+
+1. Cover page and TOC (1 page)
+2. Executive summary (1 page)
+3. Business and Technology Background
+4. Market Opportunity
+5. Management Team
+6. Investment Summary
+7. Appendix
+
+=== layout: one-panel
+
+# Required Sections in Order
+
+@body
+
+1. [Cover page and TOC (1 page)]{color=#780373}
+2. [Executive summary (1 page)]{color=#780373}
+3. [Business and Technology Background]{color=#780373}
+4. [Market Opportunity]{color=#780373}
+5. [Management Team]{color=#780373}
+6. [Investment Summary]{color=#780373}
+7. [Appendix]{color=#780373}
+_Note\: you are encouraged to create your own subsections within these major sections._
+
+=== layout: section
+hidden: true
+
+# Business Plan Rubric
+
+=== layout: one-panel
+hidden: true
+
+# 480 Business Plan Rubric (1 of 7)
+
+@body
+
+- Cover page \[5% of grade\]
+  - Exactly one page
+  - cool and effective logo
+  - Effective company name
+  - Provide fake address and contact info
+  - clean table of contents (TOC) on same page
+
+=== layout: one-panel
+hidden: true
+
+# 480 Business Plan Rubric (2 of 7)
+
+@body
+
+- Executive summary \[30% of grade\]
+  - Exactly one page
+    - Double check after uploading to TurnItIn
+  - Key concepts\:
+    - Problem
+    - Background
+    - Analysis
+    - Solution
+    - Future outlook
+  - Make it exciting for the reader!!!
+  - Should be a complete summary that stands alone
+
+=== layout: one-panel
+hidden: true
+
+# 480 Business Plan Rubric (3 of 7)
+
+@body
+
+- Science and technology background \[15% of grade\]
+  - At least 2 pages of content
+  - Your audience is the rest of the class, so avoid complex jargon.
+    - more of science proposal than a fake lab report
+  - 1. address the problem being solved in more detail
+  - 2. what is the science/technology, relate to course concepts, how is it being used
+    - Include a figure of the science if possible
+    - Provide all details, no hiding trade secrets
+    - Any planned intellectual property (IP)
+  - 3. how does your technology compare to existing methods
+    - unmet market need in terms of technology
+      - We can do it cheaper, more efficient, or just better
+
+=== layout: one-panel
+hidden: true
+
+# 480 Business Plan Rubric (4 of 7)
+
+@body
+
+- Market opportunity \[20% of grade\]
+  - More than one page
+  - what is the company and what are you selling?
+  - what value do you bring to market?
+  - what is your niche, what makes you unique?
+  - what is the demand for your product?
+    - Disease prevalence
+    - unmet market need in terms of market demand
+  - What is your direct and indirect competition
+  - how does your IP give you an advantage
+  - what is your sales strategy, how do you find your clients, how do you stand out?
+  - Introduce milestones
+
+=== layout: one-panel
+hidden: true
+
+# 480 Business Plan Rubric (5 of 7)
+
+@body
+
+- Management team \[5% of grade\]
+  - About 1 page
+  - Provide some company history and philosophy
+  - Have fun, but within reason
+    - Keep your undergrad real to life, but get a Ph.D. from Oxford or an M.D. from Hopkins
+    - No time travelers, e.g., Steve jobs
+    - learn about your past, but also hear about some far off dreams.
+  - How does each person contribute to milestones
+  - What is the motivation for each person to do this project
+  - Optional\:
+    - Include professional photos of your team members
+    - Have an Organization Chart, who is the boss?
+
+=== layout: two-panels
+hidden: true
+
+# 480 Business Plan Rubric (6 of 7)
+
+@left
+
+![Slide image 6](repo:biotech/LECT10/djot/assets/group_project_details/hockey_stick_growth.png)
+
+@right
+
+- Investment summary \[5% of grade\]
+  - Funding ideas
+  - timeline w/ milestones
+  - MILESTONES; key steps in the process (at least three)
+  - Required to have a financial table
+    - projected revenues and expenses
+    - Big hockey stick revenue figure \_\_\_\_\_/
+
+=== layout: one-panel
+hidden: true
+
+# 480 Business Plan Rubric (7 of 7)
+
+@body
+
+- Overall style \[20% of grade\]
+  - Based on the overall look and formatting
+  - Things I look for\:
+    - Effective font and paragraph spacing
+      - No _Comic Sans_ or Papyrus for paragraphs
+    - Font size at least 11pt
+      - My eyes are getting old
+    - Full justification in paragraphs
+    - Effective use of white space
+    - Awesome figures, graphs, and tables
+
+=== layout: section
+
+# Business Plan Tips and Penalties
+
+=== layout: one-panel
+hidden: true
+
+# Main Errors from 2016
+
+@body
+
+- use the provided headings, do not make up your own.
+- executive summary does not hit all four areas
+- background did not provide any background
+- use NIH-style SansSerif font (Arial, Helvetica) or Business world Serif font (Times) or anything similar
+- full justification of text
+
+=== layout: one-panel
+
+# Major Business Plan Penalties
+
+@body
+
+- Single cover page with table of contents (TOC)
+  - Do not put TOC on a separate page.
+- Use mandatory section headings in proper order
+  - See rubric
+- Executive summary must be 1 page
+- Paragraphs must be full justified
+- Failing to address competition
+  - there is competition, most assume they are irrelevant
+  - indirect competition is competition.
+- You need to address and out compete, form a niche.
+  - insufficient milestones, at least three.
+  - should be spaced out. milestone is not a product, but a step towards a product.
+
+=== layout: one-panel
+
+# [*Double Check the Formatting!!!*]{color=red}
+
+@body
+
+- The executive summary is just like a resume. If it is more than one page, the extra pages are thrown in the trash
+- Check the formatting after uploading
+  - I grade the format that is shown in turn-it-in
+  - Two groups last thought that it was one page, but the formatting changed after uploading
+    - Small changes to font sizes and can make big changes
+  - Do you trust your group member to upload it and check?
+- Difficulties with formatting? Try saving your document as a PDF and then upload the PDF to TurnItIn.
+
+=== layout: one-panel
+hidden: true
+
+# Last Minute Tips
+
+@body
+
+- (1) Submit it early to check for plagiarism, you can resubmit as many times as you want as long as it is before the deadline. Make sure your group members are citing their sources, not copying them.
+- (2) You can polish a turd and formatting is a key component to your grade. So, if you make the poor writing look nice, you'll generally receive more points based on my rubric.
+- (3) Focus on the components that have higher point values, e.g., "Executive Summary." I spend very little time reading the "Management Team" and "Investment Summary" sections.
+
+=== layout: one-panel
+hidden: true
+
+# Project Due Dates
+
+@body
+
+- After Presentations Left to Do
+- [Presentation Evaluations]{color=red}
+  - Link to Google Form on BB under Assignments
+  - Due TBD
+- [Group Business Plan]{color=red}
+  - SafeAssign system on BB under Assignments
+  - Due Thursday, Dec 17
+- [Group Member Contribution Form]{color=red}
+  - [Opens only after Business Plan has been Submitted]{color=green}
+  - Link to Google Form on BB under Assignments
+  - Due TBD
+

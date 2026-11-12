@@ -71,11 +71,11 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @top-right
 
-![Slide image 2](assets/lect05d-probability_concepts/image_002.png)
+![Slide image 2](assets/lect05d-probability_concepts/events_union.drawn.svg)
 
 @bottom-right
 
-![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
+![Slide image 3](assets/lect05d-probability_concepts/events_intersection.drawn.svg)
 
 === layout: one-panel
 
@@ -113,11 +113,11 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @top
 
-![Slide image 3](assets/lect05d-probability_concepts/image_002.png)
+![Slide image 3](assets/lect05d-probability_concepts/events_union.drawn.svg)
 
 @bottom
 
-![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
+![Slide image 3](assets/lect05d-probability_concepts/events_intersection.drawn.svg)
 
 === layout: one-plus-two-panels
 
@@ -132,11 +132,11 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @top-right
 
-![Slide image 3](assets/lect05d-probability_concepts/image_002.png)
+![Slide image 3](assets/lect05d-probability_concepts/events_union.drawn.svg)
 
 @bottom-right
 
-![Slide image 3](assets/lect05d-probability_concepts/image_003.png)
+![Slide image 3](assets/lect05d-probability_concepts/events_intersection.drawn.svg)
 
 === layout: one-panel
 
@@ -331,7 +331,7 @@ Introduce the opening challenge before defining the rules used to solve it.
 
 @right
 
-![Slide image 6](assets/lect05d-probability_concepts/image_006.png)
+![Slide image 6](assets/lect05d-probability_concepts/conditional_probability_b.drawn.svg)
 
 === layout: stacked-panels
 

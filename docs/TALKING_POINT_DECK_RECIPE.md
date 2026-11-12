@@ -11,6 +11,10 @@ The working examples are Set #4 in
 review method. Their dates, topic counts, page counts, and scientific claims are examples,
 not defaults for the next set.
 
+Set #6 provides another completed example in
+[SET6_TOPIC_GUIDE.md](../biotech/LECT11/djot/SET6_TOPIC_GUIDE.md), including current-law
+corrections, annual-source figures, original diagrams, and a separate weekly project guide.
+
 Follow the stages in order:
 
 1. [Establish input authority](#establish-input-authority) and

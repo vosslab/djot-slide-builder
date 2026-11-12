@@ -1,0 +1,282 @@
+=== layout: subsection
+
+# 36. Patent Trolls and Overbroad Claims
+
+=== layout: one-panel
+
+# 36. Questions (1 of 3)
+
+@body
+
+- What are patent trolls, and how do they differ from traditional patent holders?
+- Discuss how the business models of patent trolls impact innovation, particularly in tech and biotechnology, and consider why biotech may be especially vulnerable.
+- What are some notable cases involving patent trolls or overly broad patents in technology?
+- Examples include: BlackBerry v. NTP, Inc. and Eolas Technologies Inc. v. Microsoft. How did these cases highlight challenges in patent enforcement and reform?
+
+=== layout: one-panel
+
+# 36. Questions (2 of 3)
+
+@body
+
+- What are some examples of "silly" or trivial patents that illustrate the sometimes excessive scope of patent claims?
+- Consider how these cases underscore weaknesses in the patent approval process. Examples include: (1) Apple v. Samsung over the "Slide to Unlock" patent, (2) Amazon v. Barnes & Noble over the 1-click buy patent, and (3) Oracle v. Google over the Java API.
+- What steps can be taken within the biotechnology sector to protect against patent trolling and avoid stifling innovation?
+
+=== layout: one-panel
+
+# 36. Questions (3 of 3)
+
+@body
+
+- Discuss both legal strategies and industry-based solutions, such as cross-licensing agreements or shared patent pools.
+- How do patent trolls increase costs and delay the development of new biotechnological products or methods?
+- Consider the downstream effects on smaller biotech companies and how these effects could impact competition, innovation, and accessibility in the biotech industry.
+
+=== layout: one-panel
+
+# 36. Enforcement as a Business Model
+
+@body
+
+- A patent assertion entity primarily earns money by asserting or licensing patent rights rather than making the covered product.
+- The label patent troll is argumentative. Non-practicing owners also include universities, individual inventors, and other organizations with different goals.
+- Evaluate the claim, ownership, notice, litigation conduct, and effect on development.
+- A disputed patent can be costly even when the accused company believes the claim is weak.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 36. Keep the Type of Case Straight
+
+@body
+
+- NTP's litigation against Research In Motion is a patent-enforcement example associated with BlackBerry.
+- Apple/Samsung disputes included different patent issues; a phone feature's name does not identify the exact claim at issue.
+- Amazon's one-click example concerns a particular claimed transaction method, not ownership of every online purchase.
+- The Supreme Court's Google v. Oracle Java-API decision concerned copyright and fair use. Do not present that holding as a patent ruling.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 36. Reducing the Cost of Weak Claims
+
+@body
+
+- Earlier searches and freedom-to-operate work can identify potential conflicts, though they cannot guarantee that no dispute will arise.
+- Licensing, cross-licensing, patent pools, insurance, challenges, and changes to a design solve different problems and have costs of their own.
+- For a small biotech company, money spent on a dispute can displace experiments, validation, or manufacturing work.
+- Compare legitimate compensation for invention with strategies that impose costs without a corresponding technical contribution.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 36. Can You Patent Playground Fun?
+
+@body
+
+- U.S. patent 6,368,227, issued in 2002, described a method of swinging sideways on a suspended swing.
+- Read a specific claim before deciding whether something sounds novel or obvious. What earlier playground activity would you look for as prior art?
+- The example makes the instructor's silly-patent question concrete. A granted patent is not a guarantee of validity, and its existence does not establish a present enforceable right.
+- Now ask the harder biotechnology version: how broad should a claim to a familiar tool's new use be?
+
+@citation
+
+https://patents.google.com/patent/US6368227B1/en
+
+=== layout: one-panel
+
+# 36. What Kind of Case Was It?
+
+@body
+
+{table-style=comparison}
+| Example | The Dispute to Identify |
+| --- | --- |
+| NTP / Research In Motion | Patents associated with wireless email |
+| Eolas / Microsoft | Patents concerning interactive browser content |
+| Apple / Samsung | Specific design and utility patent claims |
+| Amazon / Barnes & Noble | A claimed online-purchase method |
+| Google / Oracle, Supreme Court 2021 | Copyright and fair use of Java API material |
+
+The last holding is a copyright example; a company's lawsuit history can involve several distinct rights.
+
+@citation
+
+https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf
+
+=== layout: big-image
+
+@image
+
+![36. Prior Art](assets/set6_instructor/prior_art_cartoon.png)
+
+@caption
+
+What counts as prior art? The joke is about incentives; actual patentability still depends on the evidence and the law.
+
+=== layout: big-image
+
+@image
+
+![36. Slide to Unlock](assets/set6_instructor/slide_to_unlock.png)
+
+@caption
+
+A patent drawing and an interface feature are different objects. Ask what the issued claims cover before deciding that a company owns an idea.
+
+=== layout: big-image
+
+@image
+
+![36. One-Click Buying](assets/set6_instructor/one_click.png)
+
+@caption
+
+A familiar interface connects to a claimed transaction method. The scope and life of an actual patent matter more than the feature name.
+
+=== layout: subsection
+
+# 37. Nondisclosure Agreement Pitfalls
+
+=== layout: one-panel
+
+# 37. Questions (1 of 2)
+
+@body
+
+- What is a confidentiality agreement or nondisclosure agreement (NDA)?
+- When would you need one?
+- How does one define "Confidential Information"?
+- What are some things to watch out for in an NDA?
+- What is a non-compete clause?
+- What is a IP assignment clause?
+
+=== layout: one-panel
+
+# 37. Questions (2 of 2)
+
+@body
+
+- What types of durations and obligations are in an NDA?
+- What is a perpetual clause or obligation?
+- What is an attorney's fee provision?
+- How would you change them?
+- How might NDAs impact academic and industry partnerships in biotechnology research and development?
+- How do NDAs and confidentiality requirements affect the open communication of scientific findings and peer review in biotechnology?
+
+=== layout: one-panel
+
+# 37. Define Information and Allowed Use
+
+@body
+
+- An NDA specifies obligations concerning defined confidential information. It does not automatically establish a partnership or transfer ownership of an invention.
+- Check which parties and disclosures are covered, the permitted purpose, exclusions, duration, and what happens when information must legally be disclosed.
+- Public information and independently developed knowledge need different treatment from a genuinely confidential disclosure.
+- A label such as mutual does not prove that both sides receive equivalent protection.
+
+@citation
+
+https://www.uspto.gov/ip-policy/trade-secret-policy
+
+=== layout: one-panel
+
+# 37. Read the Rest of the Agreement
+
+@body
+
+- A confidentiality obligation, an IP-assignment clause, a noncompete, and a nonsolicitation restriction do different things.
+- Watch for definitions so broad that ordinary knowledge becomes confidential, or terms that reach unrelated future work.
+- Check attorney-fee provisions, return or destruction duties, publication review, authorized signatories, and how disputes are handled.
+- A perpetual obligation is not automatically the right term for every kind of information.
+
+@citation
+
+https://www.uspto.gov/ip-policy/trade-secret-policy
+
+=== layout: one-panel
+
+# 37. Protect Collaboration and Science
+
+@body
+
+- A company may need to protect unpublished technical details while an academic team needs to publish methods and results.
+- Agree on how review, limited delays, student work, and existing obligations will be handled before sharing the information.
+- The instructor's recurring caution applies: we signed an NDA does not mean we are all good.
+- Ask what additional agreement governs the actual development work, ownership, responsibilities, and commercialization.
+
+@citation
+
+https://www.uspto.gov/ip-policy/trade-secret-policy
+
+=== layout: subsection
+
+# 38. Noncompetes and Biotechnology Employees
+
+=== layout: one-panel
+
+# 38. Questions
+
+@body
+
+- What are non-compete clauses?
+- Who do they benefit: the employee, the employer, or both?
+- Why were they made illegal in California?
+- Are they legal today in Illinois?
+- In Chicago?
+
+=== layout: one-panel
+
+# 38. What Work Would You Give Up?
+
+@body
+
+- A noncompete restricts specified competitive work after employment or another relationship ends.
+- An NDA restricts covered disclosures; an IP assignment allocates rights in inventions. They are not interchangeable.
+- Compare the employer's interest in investments or confidential information with the employee's ability to earn a living and move knowledge into new work.
+- The text, scope, duration, location, and governing law matter.
+
+@citation
+
+https://www.ilga.gov/legislation/ilcs/fulltext?DocName=082000900K10
+
+=== layout: one-panel
+
+# 38. Illinois Is Not a Blanket Yes or No
+
+@body
+
+- As of November 12, 2026, Illinois law generally prohibits covered employee noncompetes unless annualized earnings exceed $75,000, with additional enforceability requirements and exclusions.
+- The statutory earnings threshold rises to $80,000 on January 1, 2027. Higher earnings alone do not make a covenant enforceable.
+- California generally prohibits employee noncompetes subject to statutory exceptions.
+- Chicago is within Illinois; do not invent a separate nationwide or citywide rule without an applicable source.
+
+@citation
+
+https://www.ilga.gov/legislation/ilcs/fulltext?DocName=082000900K10
+
+=== layout: one-panel
+
+# 38. The Federal Ban Did Not Take Effect
+
+@body
+
+- The FTC's 2024 nationwide noncompete rule was blocked. The FTC acceded to its vacatur and moved to dismiss its appeals in September 2025.
+- That development did not erase existing state laws or every possible competition-law issue.
+- An introduced bill is not an enacted statute, even if its summary contains a date that has already passed.
+- For a biotechnology career, identify which clause you are considering and which current law applies before making a claim about its effect.
+
+@citation
+
+https://www.ftc.gov/legal-library/browse/rules/noncompete-rule
+

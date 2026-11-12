@@ -2,21 +2,138 @@
 
 ### Fixes and Improvements
 
-- Complete selection 159 through exactly one LECT05C 028 URL at local slide 48;
-  COMPLETE after fresh integration PASS; broader goal ACTIVE. Approved gated BPQ
-  SVG preserves two families, 27 people, 9 unions, 16 edges, headings and arrows.
-  Actual full 51-slide/focused 1-slide models/plans and all 23 raw ODP member bytes
-  and order match the accepted candidate. Native title bbox exact; candidate raw
-  1280 comparison has zero changed pixels outside [106,159,1174,700]. Preserve
-  source, prior assets, guide and 013/015/027 holds. Selection 160 assessment,
-  all 16 named seal members and SHA256SUMS unchanged. Next 029 READY assessment-only:
-  two five-row families, 47 people, 14 unions, 31 edges, six half-fills (four right,
-  two left); future BPQ geometry remains unproven, no 160 art.
-  Evidence: _temp/two_panel_four_row_families_159/integration/REPORT.md and
-  _temp/two_panel_four_row_families_159/integration_review.md (fresh PASS).
-  Five metadata closure edits; unsealed status/report appends, no integration seal.
-  Closure: _temp/two_panel_four_row_families_159/closure.json.
-  No new builds, export replay, full suite or external acceptance during closure.
+- Complete selection170: six source005 URLs on local24-29 use the accepted editable
+  pollen_survival_question.quote.svg; every other consumer byte exact. COMPLETE,
+  fresh independent integration review PASS; broader goal ACTIVE. Source/art and all six native
+  baseline/candidate pages accepted; fresh specification/quality PASS. Actual guarded
+  full38/focused6 model/plan/empty diagnostics and every raw ODP member/order match
+  candidate exactly. Target display/fitted frames change within identical allocations;
+  native/neighbors exact. PDF preserves native boxes/counts and adds81 question tokens;
+  zero changed pixels outside old/new target union+3px on all six pages. No global
+  pixel-identity claim. Only authorized two OCR wrap joins; no answer/prose edit.
+  Fixed art/baseline/candidate seals, assessments168-171 members, prior167 opaque
+  closure/flower and scope receipt preserved. Five owners changed; no integration seal.
+  Next171 READY for shared accepted flower reuse after current context/neighbor proof;
+  168/169 HOLD,172 unopened. Biotechnology LECT11 excluded. Evidence:
+  _temp/pollen_survival_question_170/integration/REPORT.md. No export replay,
+  full suite, classroom or print check.
+  Metadata-only closure: exactly five metadata owners; all389 bounded integration
+  protections and protected prefixes/suffixes preserved under exact current exceptions.
+  _temp/pollen_survival_question_170/closure.json. Art statuses remain unsealed.
+
+- Complete selection167: exactly two source006 URLs at local28/29 use accepted
+  flower_punnett.drawn.svg; all other consumer bytes exact, native A/a comparison and005
+  retained. COMPLETE after fresh independent integration review PASS; broader goal ACTIVE. Source,
+  standalone art and both native baseline/candidate accepted; specification/quality PASS.
+  Actual full38/focused2 models/plans/empty diagnostics and every raw ODP member/order
+  match candidate exactly;297/559-square frames unchanged. No export replay.
+  PDF retains42 native words/x bounds and37 complete boxes; five bold-table y bounds
+  vary -2.769677/+1.142909pt with native/table pixels exact. Ten SVG words added/page;
+ 560/414 nominal-edge changed pixels, ZERO outside1px-expanded frames.
+  Art13/baseline63/protected97/opaque1/candidate57 and assessment164-169 seals/members,
+  prior166 asset/opaque closure, scope receipt and fixed ART_REPORT preserved.
+  Five existing owners changed; art status appends only. 164/165/168/169 HOLD
+  (169: unknown blank ABO labels/reveal intent; incompatible reuse counts/labels). Retain009 and ABO JPG.
+  Next170 READY: faithful OCR005 quote card, six uses/local24-29; proposed559x290
+  fits559x297. Only Sup-/pose and genera-/tion dehyphenation authorized; final live
+  italic/subscript fit and all-neighbor candidate checks remain. No170 art started.
+  Assessment170 seal/all nine members preserved. Biotechnology LECT11 excluded.
+  Metadata-only closure: exactly five metadata owners, protected prefixes/suffixes
+  and all419 integration protections preserved. _temp/flower_punnett_167/closure.json.
+  Evidence: _temp/flower_punnett_167/integration/REPORT.md. No integration seal.
+  Skipped full-deck export, full suite, classroom and print validation.
+
+- Complete selection 166: exactly one source 004 URL at local 22 now uses accepted
+  round_f2_alternatives.drawn.svg; all other consumer bytes remain exact. COMPLETE after
+  fresh independent integration review PASS; broader goal ACTIVE. Root accepted final art and native evidence;
+  specification/quality/native PASS. Decision166-FIT/GROUP permits taller target display and
+  fitted ODP frame within the same 178.333333x618 allocation, with three parallel RR/rR/Rr
+  groups. Actual full38/focused1 models/plans/empty diagnostics and every raw ODP member/order
+  match candidate exactly. Accepted PDF preserves30 native word boxes, adds six diagram words
+  and changes zero pixels outside expanded target. No export replay or unchanged-target-frame claim.
+  Art11/protected9, baseline63/protected97/opaque3, candidate52, prior163 owner/opaque closure,
+  assessment164/165/166/167 seals and all members, original PNGs and scope receipt preserved.
+  Five existing owners changed; art status appends only and fixed ART_REPORT untouched.
+  164/165 HOLD retained. Next167 READY: B/b flower square006, two297/559-square uses, six icons,
+  three purple/one white offspring, BB/Bb/Bb/bb and pollen/pistil/sex symbols preserved;
+  native A/a example separate. 168 unopened; Biotechnology LECT11 excluded.
+  Evidence: _temp/round_f2_alternatives_166/integration/REPORT.md. No integration seal.
+  Five-owner metadata closure: _temp/round_f2_alternatives_166/closure.json.
+  No builds, export replay, full suite or external acceptance in closure.
+  Skipped full-deck export, full suite, classroom and print validation; sibling tiny labels remain.
+
+- Prepare Biotechnology LECT11 announcements, a week-specific group-project guide, and
+  the full Set #6 study deck: all 38 topics, annual-source synthesis, current primary
+  references, native tables, and ten original SVG diagrams. Export and visually review
+  editable ODPs and 38/28/308-page PDFs. Record coverage, repairs, validation, and
+  unperformed checks in `biotech/LECT11/djot/SET6_TOPIC_GUIDE.md` and `LECT11_REVIEW.md`.
+  Second quality pass preserves all slide wording and emphasis, repairs twelve internal
+  paragraph gaps, balances short final lines, and improves two project-role colors.
+
+- Complete selection 163: exactly one source 006 URL at local 24 now uses accepted
+  conditional_probability_b.drawn.svg. COMPLETE after fresh independent integration
+  review PASS; broader goal ACTIVE. All other consumer bytes remain exact. Full 34/focused 1
+  models/plans/diagnostics and raw ODP members/order match accepted candidate; existing
+  6/29 warnings remain, focused24 clean. Accepted PDF retains all 45 native words/bboxes,
+  adds twelve diagram tokens and changes zero outside-image pixels. No export replay.
+  Art9/baseline60/candidate62, frozen protections, prior162 opaque closure, original PNGs,
+  prior assets and scope receipt preserved. Three existing edits plus two new unsealed
+  art status files; fixed ART_REPORT untouched. Assessments164/165 and all sealed members
+  unchanged: HOLD dense prompt/gel178x104 and inheritance legend/alleles178x136; retain PNGs.
+  Next166 source05E004 unopened; LECT11 excluded. No integration seal.
+  Evidence: _temp/conditional_probability_b_163/integration/REPORT.md.
+  Five-owner metadata closure: _temp/conditional_probability_b_163/closure.json.
+  No builds, export replay, full suite or external acceptance in closure.
+
+- Complete selection 162 through exactly three source 003 URLs at local 6/10/11 using
+  accepted events_intersection.drawn.svg. COMPLETE after fresh independent integration
+  review PASS; broader goal ACTIVE. All other consumer bytes and accepted union references exact.
+  Actual full 34/focused 3 models/plans/diagnostics and every raw ODP member/order match
+  accepted candidate. Narrow gray lens, white lobes, complete boundaries and A/B/S retained.
+  Existing 6/29 prose warnings remain. Prior candidate title shift RIGHT 0.029pt and 661
+  title-only outside-image pixels/page, max 37, box [401,66,898,119]; body/math/top union
+  boxes exact, bottom A/B/S added. No export replay or coordinate/global pixel identity claim.
+  Art 10/protected 20, baseline 125/protected 107/opaque 6/reused 17 and candidate 65 remain
+  fixed; prior 161 candidate 63 checked in place, immediate closure opaque. Sources, v2,
+  guides, LECT11 exclusion and scope receipt preserved. Selection 163 assessment/seal/all
+  13 members unchanged: conditional-on-B 006 READY, one use 24, two gray roles, outward
+  arrow, exact stacked fraction. Refreeze POST162 later; no future art.
+  Evidence: _temp/events_intersection_162/integration/REPORT.md. No integration seal.
+  Five-owner metadata closure: _temp/events_intersection_162/closure.json.
+  No builds, export replay, full suite or external acceptance in closure.
+
+- Complete selection 161 through exactly three original probability source 002 URLs
+  at local 6/10/11 using accepted events_union.drawn.svg. COMPLETE after fresh independent
+  integration review PASS; broader goal ACTIVE. Native text/formulas/alt/order unchanged.
+  Actual full 34/focused 3 models/plans/diagnostics and raw ODP bytes/order match candidate;
+  uniform gray union, complete crossing outlines and A/B/S retained. Existing 6/29
+  prose warnings unchanged. Prior candidate PDF has exact body boxes and title-only
+  -0.029pt x variation: 661 outside-image pixels/page, max 37, box [401,66,898,119].
+  No export replay or global pixel identity claim. Art 10/baseline 65/candidate 63 seals,
+  original sources, v2 owners, prior 160 owner/opaque closure/proofs and guide remain exact.
+  Preserve LECT11 exclusion and scope receipt; selection 162 assessment/seal/all 17 members
+  unchanged. Next 003 intersection READY, internal A/B and unshaded lobes; refreeze POST161.
+  Evidence: _temp/events_union_161/integration/REPORT.md. No integration seal;
+  five-owner metadata closure complete: _temp/events_union_161/closure.json.
+  No builds, export replay, full suite or external acceptance in closure.
+
+- Complete selection 160 through exactly one LECT05C 029 URL at local slide 49;
+  COMPLETE after fresh integration PASS, broader goal ACTIVE. Accepted gated
+  BPQ SVG retains 47 people, 14 unions, 31 child endpoints, six half-fills and headings.
+  Actual full 51/focused 1 models/plans and raw ODP member bytes/order match candidate.
+  Exact native title bbox and zero outside-image pixel difference are prior candidate
+  evidence only; no export replay. Painted divider clearance is 34 source pixels
+  (about 18.9 displayed), correcting artist's centerline measurement of 37.
+  Preserve source, prior assets, guide/helpers and 013/015/027 holds; prior 159 closure
+  opaque, baseline 60/candidate 57 seals exact. Decision160-HANDOFF preserves its
+  sealed preimage/prefix with append only; other 12 art members and SHA256SUMS exact.
+  Selection 161 assessment, all 18 members and SHA256SUMS unchanged: source 002 READY,
+  three uses, uniform A/B gray union inside S border, no art started. Existing native
+  left-prose capacity warning is outside scope. Staged LECT11 exclusion preserved;
+  durable scope update pending closure. Evidence: _temp/two_panel_five_row_families_160/
+  integration/REPORT.md and integration_review.md. Five-owner metadata closure complete;
+  closure: _temp/two_panel_five_row_families_160/closure.json.
+  No integration seal, full suite, export replay or external acceptance.
 
 - Complete selection157 through exactly two LECT05C026 URLs on local44/45;
   COMPLETE after fresh integration PASS, broader goal ACTIVE. Gated BPQ static SVG

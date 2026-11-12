@@ -1,0 +1,387 @@
+=== layout: subsection
+
+# 8. Asilomar and Recombinant DNA
+
+=== layout: one-panel
+
+# 8. Questions (1 of 2)
+
+@body
+
+- What scientific and social worries led to the Asilomar meeting, and why did scientists agree to pause recombinant DNA research?
+- How did the conference sort experiments into different risk groups, and what new safety rules or lab standards came from that system?
+- Which experiments were first banned or restricted, and what reasons did scientists give for calling them too risky?
+- How did the Asilomar guidelines become part of the NIH rules for recombinant DNA research, and how did these rules create local biosafety committees at universities?
+
+=== layout: one-panel
+
+# 8. Questions (2 of 2)
+
+@body
+
+- How did scientists at Asilomar try to stay open about their research while still protecting public safety, and what ethics shaped their decisions?
+- How did the conference influence later global discussions about gene transfer, viral vectors, and gene editing safety?
+- Which of the original banned experiment types still appear in biosafety rules today, and which ones are now allowed due to better data or technology?
+
+=== layout: one-panel
+
+# 8. A New Capability, an Uncertain Risk
+
+@body
+
+- Recombinant DNA let researchers combine sequences that had not previously occurred together in that experimental setting.
+- Scientists worried about introducing hazardous traits into organisms able to persist, spread, or infect people.
+- A voluntary pause on selected experiments preceded the 1975 Asilomar conference. The response was to examine plausible hazards and conditions for proceeding.
+
+@citation
+
+https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/
+
+=== layout: one-panel
+
+# 8. Contain Organisms and Experiments
+
+@body
+
+- Physical containment uses facilities, equipment, and practices that limit exposure and escape.
+- Biological containment uses properties of the host and vector that reduce survival, transfer, or spread outside the experiment.
+- Risk depends on the host, inserted sequence, vector, scale, procedures, and environment.
+- An experiment involving a harmless laboratory strain is not equivalent to giving a pathogen a more hazardous trait.
+
+@citation
+
+https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/
+
+=== layout: one-panel
+
+# 8. A Precedent, Not a Permanent Answer
+
+@body
+
+- The conference helped shape the NIH recombinant-DNA guidelines and institutional oversight.
+- It also raised enduring questions: who participates, how uncertainty is communicated, and when voluntary restraint is credible.
+- Current restrictions must be checked in current guidance. A 1975 prohibited category is not automatically a complete description of a 2026 rule.
+- For a new editor or vector, ask what changed biologically and which containment assumptions still hold.
+
+@citation
+
+https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/
+
+=== layout: big-image
+
+@image
+
+![8. The Experiment Behind the Concern](assets/set6_sources/topic_08_047.png)
+
+@caption
+
+A recombinant-plasmid workflow: construct the DNA, introduce it into a host, select cells, and propagate the construct. Where could host range or an inserted trait change the hazard?
+
+=== layout: one-panel
+
+# 8. From a Pause to Specified Review
+
+@body
+
+- The original concerns included DNA from highly pathogenic organisms, toxin-related experiments, and large-scale work with recombinant DNA.
+- Current NIH Guidelines distinguish categories requiring different approvals and containment, including high-potency toxin cloning, specified hazardous drug-resistance transfers, work with higher-risk agents, and cultures above 10 liters.
+- Some formerly deferred categories can proceed under specified review and controls. A historic pause is not a permanent universal ban.
+- Use the actual experiment and current category rather than assuming a kill switch or an IBC signature resolves every requirement.
+
+@citation
+
+https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.htm
+
+=== layout: subsection
+
+# 9. NIH Guidelines and Biosafety
+
+=== layout: one-panel
+
+# 9. Questions (1 of 2)
+
+@body
+
+- Why did NIH choose a broad title, "Recombinant or Synthetic Nucleic Acid Molecules," instead of naming plants or animals directly?
+- How do the four biosafety levels (BSL-1 to BSL-4) differ for labs that work with microorganisms or transgenic plants?
+- How is greenhouse research contained compared with open-field research, and why are these differences important?
+- What basic steps are required for safe handling and disposal of biological waste in a biotechnology lab?
+- What role do Institutional Biosafety Committees (IBCs) play in checking research plans and enforcing biosafety compliance?
+
+=== layout: one-panel
+
+# 9. Questions (2 of 2)
+
+@body
+
+- How are training, lab records, and incident reports reviewed during biosafety audits?
+
+=== layout: one-panel
+
+# 9. Start with the Risk Assessment
+
+@body
+
+- Biosafety combines practices, safety equipment, and facilities to protect workers, the community, and the environment.
+- BSL-1 through BSL-4 describe increasingly protective laboratory arrangements; risk groups and biosafety levels are related but different concepts.
+- The organism's name alone cannot determine every procedure. Aerosols, concentration, scale, host range, and the inserted material also matter.
+
+@citation
+
+https://www.cdc.gov/labs/bmbl/index.html
+
+=== layout: one-panel
+
+# 9. The Biosafety Committee at Work
+
+@body
+
+- The IBC reviews covered recombinant or synthetic nucleic-acid research and proposed containment under the NIH Guidelines.
+- Review includes the biological material, procedures, training, facilities, and incident-response arrangements.
+- An IBC review is not permission to market a drug or release any organism anywhere.
+- Research oversight, environmental authorization, and product approval answer different questions.
+
+@citation
+
+https://www.cdc.gov/labs/bmbl/index.html
+
+=== layout: one-panel
+
+# 9. Containment During Ordinary Work
+
+@body
+
+- Consider a transgenic greenhouse: screens, controlled access, pollen management, pest control, and waste treatment can matter as much as a locked door.
+- Validate the inactivation method for the actual waste and material. A waste container is not an inactivation procedure.
+- Training records, inventory, incident reports, and checks of equipment make the controls reviewable.
+- The CDC/NIH BMBL is advisory best-practice guidance;\
+  the NIH Guidelines have their own applicability\
+  and institutional obligations.
+
+@citation
+
+https://www.cdc.gov/labs/bmbl/index.html
+
+=== layout: big-image
+
+@image
+
+![9. Three Layers of Containment](assets/set6_drawings/containment.drawn.svg)
+
+@caption
+
+A host/vector limitation, a careful procedure, and a suitable facility address different routes of exposure or escape.
+
+=== layout: big-image
+
+@image
+
+![9. A Greenhouse Is a Containment System](assets/set6_sources/topic_09_057.png)
+
+@caption
+
+Plants need space, air, light, and water. Pollen, insects, seed, runoff, and waste can all cross boundaries unless the containment plan addresses them.
+
+=== layout: one-panel
+
+# 9. Comparing Laboratory Levels
+
+@body
+
+{table-style=comparison}
+| Level | Illustrative Emphasis |
+| --- | --- |
+| BSL-1 | Basic practices for suitable low-risk work |
+| BSL-2 | Controlled access; biological safety cabinet for relevant aerosol risks |
+| BSL-3 | Higher containment for serious inhalation risks; controlled directional airflow |
+| BSL-4 | Specialized maximum containment with a suitable cabinet or suit system |
+
+Select controls through protocol-specific risk assessment; this is a comparison, not a laboratory operating procedure.
+
+@citation
+
+https://www.cdc.gov/labs/bmbl/index.html
+
+=== layout: one-panel
+
+# 9. Plant Containment Has Its Own Details
+
+@body
+
+- The NIH plant appendix describes BL1-P through BL4-P containment arrangements for covered plant research.
+- For plants, reproductive biology, pollen, seeds, insects, drainage, and the survival of volunteer plants change what containment must accomplish.
+- A greenhouse category is not simply a laboratory BSL label pasted onto a building.
+- Compare a screened greenhouse with a field trial: which boundaries disappear, and what new controls or authorizations would be needed?
+
+@citation
+
+https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.htm
+
+=== layout: subsection
+
+# 10. Engineered Microbes Under TSCA
+
+=== layout: one-panel
+
+# 10. Questions (1 of 2)
+
+@body
+
+- What makes a microorganism "intergeneric" under TSCA, and why does that trigger EPA review?
+- How does the Microbial Commercial Activity Notice process work for new industrial strains?
+- What information on fate, persistence, and gene transfer is required before environmental release?
+- How are containment levels and kill-switch designs weighed in TSCA decisions?
+- How do TSCA and FIFRA differ when a microbe both performs a function and acts as a pesticide?
+- How do Tier I and Tier II exemptions reduce burden for well-understood hosts?
+
+=== layout: one-panel
+
+# 10. Questions (2 of 2)
+
+@body
+
+- How do monitoring plans verify that engineered microbes remain confined to the intended niche?
+
+=== layout: one-panel
+
+# 10. The Law Came Before the Rule
+
+@body
+
+- TSCA dates to 1976. EPA's biotechnology rule for certain new microorganisms was issued in 1997.
+- An intergeneric microorganism generally combines genetic material originally isolated from organisms in different taxonomic genera, subject to regulatory definitions and exclusions.
+- Industrial microorganisms can fall under TSCA. Microbes intended as pesticides can instead trigger FIFRA requirements; the intended use matters.
+
+@citation
+
+https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biotechnology-under-tsca
+
+=== layout: one-panel
+
+# 10. Commercial Use and Release
+
+@body
+
+- A Microbial Commercial Activity Notice provides EPA information before covered commercial manufacture or import.
+- Environmental research can require a TSCA Experimental Release Application. These are different pathways.
+- EPA considers identity, intended use, production, exposure, persistence, transfer of genetic material, and potential effects.
+- Some eligible microorganisms and contained activities qualify for exemptions when specified conditions are met.
+
+@citation
+
+https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biotechnology-under-tsca
+
+=== layout: one-panel
+
+# 10. A Kill Switch Outside the Flask?
+
+@body
+
+- A genetic containment system may reduce survival under a defined condition. It must be tested, not treated as a promise.
+- Ask about escape mutants, horizontal transfer, the availability of missing nutrients, and environmental persistence.
+- Compare the intended contained use with a spill or intentional field release.
+- Monitoring needs a way to distinguish the engineered strain, detect escape, and decide what action follows a finding.
+
+@citation
+
+https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-biotechnology-under-tsca
+
+=== layout: subsection
+
+# 11. The Coordinated Framework
+
+=== layout: one-panel
+
+# 11. Questions (1 of 2)
+
+@body
+
+- Why did the U.S. government create a Coordinated Framework instead of a single biotechnology law?
+- Which agencies share responsibility for GMOs under this policy,  USDA, EPA, and FDA,  and what does each regulate?
+- How does the framework decide whether a biotech product is evaluated based on its process (how it is made) or its product (what it does)?
+- How did the 2017 update adapt the policy for new technologies like CRISPR, gene drives, and synthetic biology?
+- What are the strengths and limits of using existing laws instead of writing a new biotechnology act?
+
+=== layout: one-panel
+
+# 11. Questions (2 of 2)
+
+@body
+
+- How does this framework help coordinate environmental safety, food safety, and public communication about biotech research?
+
+=== layout: one-panel
+
+# 11. One Product, Several Questions
+
+@body
+
+- The U.S. Coordinated Framework uses existing laws rather than a single biotechnology approval act.
+- FDA addresses food and medical-product responsibilities; EPA addresses pesticides and certain microorganisms; USDA-APHIS addresses specified agricultural risks.
+- NIH oversight helps govern covered research. It is not a fourth general commercial-product approval agency.
+- The framework began in 1986; later updates clarified coordination as biotechnology changed.
+
+@citation
+
+https://www.fda.gov/food/agricultural-biotechnology/how-gmos-are-regulated-united-states
+
+=== layout: one-panel
+
+# 11. Trace Bt Corn Through the Framework
+
+@body
+
+- The expressed insecticidal protein raises EPA pesticide questions, including effects on organisms and resistance management.
+- The engineered plant raises applicable APHIS plant-pest regulatory questions.
+- Food and feed from the plant raise FDA food-safety questions, including composition and new proteins.
+- Passing one review does not answer the other agencies' questions.
+
+@citation
+
+https://www.fda.gov/food/agricultural-biotechnology/how-gmos-are-regulated-united-states
+
+=== layout: one-panel
+
+# 11. Product Features Still Need a Pathway
+
+@body
+
+- Product characteristics and intended use help identify the applicable law, hazards, and evidence.
+- That does not mean every agency ignores how the organism was made or how it will be used.
+- A familiar technique can produce an unfamiliar hazard, and a new technique can produce a familiar trait.
+- For your company, describe the actual product before asking who regulates it.
+
+@citation
+
+https://www.fda.gov/food/agricultural-biotechnology/how-gmos-are-regulated-united-states
+
+=== layout: big-image
+
+@image
+
+![11. One Crop, Several Responsibilities](assets/set6_drawings/agency_map.drawn.svg)
+
+@caption
+
+Ask separate questions about research, plant-pest risks, the pesticidal trait, and food/feed safety.
+
+=== layout: one-panel
+
+# 11. From the Lab to the Field to Food
+
+@body
+
+{table-style=comparison}
+| Stage | A Question That Needs an Answer |
+| --- | --- |
+| Construct the organism | What host, vector, inserted sequence, and containment apply? |
+| Grow it in a field | What authorization and controls address the organism and the trial? |
+| Use an insecticidal trait | What pesticide obligations apply to the expressed protectant? |
+| Sell it as food or feed | What food-safety obligations apply to composition and new proteins? |
+
+The transformation method alone does not give FDA jurisdiction only over Agrobacterium products.
+
+@citation
+
+https://www.fda.gov/food/agricultural-biotechnology/how-gmos-are-regulated-united-states
+

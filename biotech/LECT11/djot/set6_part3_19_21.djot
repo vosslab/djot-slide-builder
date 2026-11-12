@@ -1,0 +1,316 @@
+=== layout: subsection
+
+# 19. Drug Approval and Clinical Evidence
+
+=== layout: one-panel
+
+# 19. Questions (1 of 2)
+
+@body
+
+- What types of products are subject to clinical trials?
+- What are biologics?
+- How do biologics differ from drugs in their clinical trial processes?
+- What are medical devices?
+- How do medical devices differ from drugs in their clinical trial processes?
+- Drug Approval: What are the criteria for a drug to pass or fail a clinical trial?
+
+=== layout: one-panel
+
+# 19. Questions (2 of 2)
+
+@body
+
+- What statistical methods are used to determine the efficacy of a drug?
+- How is the risk-benefit ratio evaluated during clinical trials?
+
+=== layout: one-panel
+
+# 19. From Bench to Patients
+
+@body
+
+- Developers characterize the product, study nonclinical effects, and provide manufacturing and safety information before covered human research begins.
+- An IND concerns investigational use of a drug or biologic. NDA and BLA are marketing-application pathways for drugs and biologics, respectively.
+- The evidence must support the proposed population, dose, route, and indication.
+- Permission to conduct a trial does not establish that the product is approved for sale.
+
+@citation
+
+https://www.fda.gov/drugs/information-consumers-and-patients-drugs/fdas-drug-review-process-ensuring-drugs-are-safe-and-effective
+
+=== layout: one-panel
+
+# 19. Drugs, Biologics, and Devices
+
+@body
+
+- Biologics include products such as vaccines, therapeutic proteins, and cell therapies. Their manufacturing process and consistency can be central to product identity.
+- Both drugs and biologics require appropriate evidence of safety and effectiveness; biologics do not bypass clinical evaluation.
+- Device pathways depend on classification, intended use, and applicable requirements. Not every device follows drug-style phases or requires the same kind of clinical trial.
+- Classify the actual product before drawing its development pathway.
+
+@citation
+
+https://www.fda.gov/drugs/information-consumers-and-patients-drugs/fdas-drug-review-process-ensuring-drugs-are-safe-and-effective
+
+=== layout: one-panel
+
+# 19. Beyond Statistical Significance
+
+@body
+
+- A prespecified endpoint defines what the trial will measure. Randomization and appropriate controls help support a causal interpretation.
+- Effect size describes how much changed; confidence intervals describe uncertainty. A small p-value does not establish a large or worthwhile benefit.
+- Safety findings, missing data, multiple comparisons, and the clinical importance of the endpoint affect interpretation.
+- Approval weighs benefits and risks for the intended use, including manufacturing quality and the credibility of the evidence.
+
+@citation
+
+https://www.fda.gov/drugs/information-consumers-and-patients-drugs/fdas-drug-review-process-ensuring-drugs-are-safe-and-effective
+
+=== layout: one-panel
+
+# 19. Read a Simple Trial Result
+
+@body
+
+- Illustrative data: 20 of 100 control patients and 10 of 100 treated patients experience a specified event.
+- The absolute reduction is 10 percentage points. The relative reduction is 50 percent.
+- Both statements describe the same result, but they can create different impressions. Examine uncertainty, adverse effects, follow-up, and the severity of the event before judging value.
+- These invented numbers teach interpretation; they are not evidence for an actual treatment.
+
+@citation
+
+https://www.fda.gov/drugs/information-consumers-and-patients-drugs/fdas-drug-review-process-ensuring-drugs-are-safe-and-effective
+
+=== layout: big-image
+
+@image
+
+![19. Follow the Evidence through Development](assets/set6_drawings/trial_path.drawn.svg)
+
+@caption
+
+The diagram summarizes different study purposes. Optional exploratory work and combined phases can occur; no phase label guarantees success.
+
+=== layout: subsection
+
+# 20. Clinical Trial Phases
+
+=== layout: one-panel
+
+# 20. Questions (1 of 3)
+
+@body
+
+- Clinical research can include exploratory Phase 0 and Phases I, II, III, and IV; Phase 0 is optional.
+- What specific objectives does each phase aim to achieve?
+- What particular aspects are under investigation in each phase?
+- How is the initial dosage determined in Phase 0/I, and how is it adjusted in subsequent phases?
+- What criteria are used to select participants for each phase?
+- How many participants are tested in each clinical trial phase?
+
+=== layout: one-panel
+
+# 20. Questions (2 of 3)
+
+@body
+
+- How are results scaled from a small cohort in early phases to a larger population in later phases?
+- What is the average or expected duration of each phase?
+- What are the typical costs for each phase?
+- What is the likelihood of succeeding in each phase?
+- In what situations might a clinical trial be halted prematurely, and why?
+- What is your opinion of the cost of clinical trials?
+
+=== layout: one-panel
+
+# 20. Questions (3 of 3)
+
+@body
+
+- Are they too expensive and driving up the cost of medication?
+- Or is that the cost of safety?
+
+=== layout: one-panel
+
+# 20. Each Phase Has a Different Job
+
+@body
+
+- Phase 0 is an optional exploratory approach, often using very small exposures to study early pharmacology; it is not a mandatory step for every product.
+- Phase I focuses on initial human safety, tolerability, and dose. Phase II explores activity, dosing, and further safety in people with the condition.
+- Phase III evaluates benefit and risk in larger studies. Phase IV studies take place after approval.
+- Some phases overlap or combine. The labels organize questions rather than guarantee a rigid five-step staircase.
+
+@citation
+
+https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
+
+=== layout: one-panel
+
+# 20. Who Participates, and for How Long?
+
+@body
+
+- FDA's typical descriptions list roughly 20-100 people for Phase I, up to several hundred for Phase II, and about 300-3,000 for Phase III.
+- Phase I may use healthy volunteers or patients. Oncology and other higher-risk contexts often require patients.
+- Typical durations run from months in early studies to months or years in later studies, with variation by product and endpoint.
+- Rare diseases, vaccines, cells, and long-term outcomes can require different designs and follow-up.
+
+@citation
+
+https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
+
+=== layout: one-panel
+
+# 20. Dose Is a Scientific Question
+
+@body
+
+- Starting dose draws on the nonclinical safety package, pharmacology, expected human exposure, and the proposed population.
+- Escalation uses planned rules and safety review; the highest tolerated dose is not always the best useful dose.
+- Stopping can follow unacceptable toxicity, lack of benefit, convincing benefit under prespecified rules, or operational problems.
+- Participant protection and interpretability belong in the protocol before the first result appears.
+
+@citation
+
+https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
+
+=== layout: one-panel
+
+# 20. Why Published Estimates Differ
+
+@body
+
+- Per-patient cost, the cost of one trial, total clinical-program cost, and total discovery-to-approval investment are different quantities.
+- A success rate depends on indication, modality, period, dataset, and the transition being measured.
+- A published dollar amount or success percentage is a dated estimate for a defined dataset, not a universal current price or probability.
+- Compare the cost of collecting useful evidence with the cost of approving an ineffective or harmful product. Faster recruitment is not a substitute for a valid endpoint.
+
+@citation
+
+https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
+
+=== layout: big-image
+
+@image
+
+![20. What the Body Does and What the Drug Does](assets/set6_sources/topic_20_101.png)
+
+@caption
+
+Pharmacokinetics follows exposure through the body. Pharmacodynamics concerns the effects associated with that exposure. A mechanistic link still needs testing against meaningful outcomes.
+
+=== layout: one-panel
+
+# 20. Keep the Study Questions Separate
+
+@body
+
+{table-style=comparison}
+| Study | Central Question | What It Cannot Establish Alone |
+| --- | --- | --- |
+| Phase 0, when used | What happens at exploratory exposure? | A therapeutic benefit |
+| Phase I | What dose and initial risks? | Effectiveness in all patients |
+| Phase II | Is there activity and a useful dose? | A complete benefit-risk picture |
+| Phase III | Does benefit justify risk in this use? | Absence of every rare harm |
+| Phase IV | What happens after approval? | That every observed event was caused by the drug |
+
+@citation
+
+https://www.fda.gov/patients/drug-development-process/step-3-clinical-research
+
+=== layout: subsection
+
+# 21. Orphan Drugs and Expedited Programs
+
+=== layout: one-panel
+
+# 21. Questions (1 of 2)
+
+@body
+
+- Designations: What impact does the "orphan drug" designation have on the clinical trial process?
+- How does the FDA's "Breakthrough Therapy" designation impact clinical trial phases?
+- What are the criteria for receiving a "Breakthrough Therapy" designation?
+- Fast-Track: Are there expedited processes for drug approval?
+- What qualifies a drug to be fast-tracked?
+- How does the FDA's "Breakthrough Therapy" designation connect with the fast-track approval?
+
+=== layout: one-panel
+
+# 21. Questions (2 of 2)
+
+@body
+
+- How did the FDA's response to the AIDS crisis reform the approval process for life-threatening diseases?
+- What implications does the use of accelerated approval mechanisms have for new medications?
+
+=== layout: one-panel
+
+# 21. Orphan Status and Approval Differ
+
+@body
+
+- Orphan-drug designation supports development for rare diseases or conditions under the statutory criteria, generally fewer than 200,000 people in the United States or the applicable cost-recovery criterion.
+- Incentives can include tax credits, fee relief, and potential orphan exclusivity following approval.
+- Designation does not demonstrate that a drug is safe or effective and does not itself grant marketing approval.
+- Small eligible populations create study-design challenges; they do not eliminate the need for credible evidence.
+
+@citation
+
+https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review
+
+=== layout: one-panel
+
+# 21. Four Names, Four Different Tools
+
+@body
+
+- Fast Track supports development and review for serious conditions with unmet need.
+- Breakthrough Therapy requires preliminary clinical evidence of substantial improvement over available therapy on a clinically significant endpoint.
+- Priority Review changes the review goal. Accelerated Approval can use a surrogate or intermediate endpoint under defined criteria.
+- These tools can overlap, but they are not synonyms and do not guarantee approval.
+
+@citation
+
+https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review
+
+=== layout: one-panel
+
+# 21. What Does the Surrogate Predict?
+
+@body
+
+- A surrogate such as a biomarker may change before survival, functioning, or symptoms can be evaluated.
+- The key question is whether that change predicts a meaningful benefit in the particular setting.
+- Confirmatory evidence and continuing oversight matter after accelerated approval; an approval can be withdrawn when the evidence does not support benefit or required conditions are not met.
+- The AIDS crisis helped motivate faster access. Speed and uncertainty still need to be explained together.
+
+@citation
+
+https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review
+
+=== layout: one-panel
+
+# 21. Compare the Designations
+
+@body
+
+{table-style=comparison}
+| Program | What It Changes |
+| --- | --- |
+| Orphan designation | Incentives for qualifying rare-disease development |
+| Fast Track | Development and review interactions for serious unmet needs |
+| Breakthrough Therapy | Intensive support based on preliminary clinical evidence |
+| Priority Review | The review goal for a marketing application |
+| Accelerated Approval | The endpoint basis for approval under defined criteria |
+
+None of these names alone establishes that a product is approved.
+
+@citation
+
+https://www.fda.gov/patients/learn-about-drug-and-device-approvals/fast-track-breakthrough-therapy-accelerated-approval-priority-review
+

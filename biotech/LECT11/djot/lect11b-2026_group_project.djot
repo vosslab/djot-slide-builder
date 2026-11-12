@@ -1,0 +1,8 @@
+color-theme: biotechnology
+
+include: group_project_opening.djot
+include: group_project_collaboration.djot
+include: group_project_tonight.djot
+include: group_project_presentation.djot
+include: group_project_details.djot
+include: group_project_closing.djot

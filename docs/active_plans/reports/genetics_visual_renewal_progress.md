@@ -30,12 +30,241 @@ unfinished drafts; it is not an unfinished-art list. Human-figure drawing is exc
 work. Photographs and empirical images remain outside the redraw scope. Continue the existing
 execution plan; no new M1 inventory campaign is needed.
 
+`biotech/LECT11` is excluded entirely from this goal because another manager will process
+those slides. Continue Genetics and Biostatistics work; this exclusion overrides the
+permission to finish already-started Biotechnology work in that directory.
+
 The current deliverable contract is **pure vector SVG**, with no `<image>` elements, embedded
 bitmaps or raster wrappers. Quality-90 WebP serves raster previews/review assets only. Original
 rasters remain fallback/reference, not completed SVG work. Historical mixed SVG deliveries remain
 in this ledger as history; they do not fulfill the current pure-vector goal. Defer or skip a
 candidate with a brief reason when difficulty exceeds reliable drawing ability. Human figures,
 including the rejected prenatal drawings, remain deferred rather than forced into weak art.
+
+## Pollen survival question OCR card (selection 170)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly six source005 URLs at local24-29 now use pollen_survival_question.quote.svg;
+every other consumer byte is exact. Decision170-OCR joins only Sup-/pose and genera-/tion;
+all 81 question tokens, punctuation, six italic spans and both F₂ subscripts are preserved.
+No answer or native A/a prose change. Root accepted source, both standalone proofs and all
+six baseline/candidate pages; fresh independent specification and quality reviews PASS.
+Actual guarded full38/focused6 compilation matches every accepted candidate model/plan,
+empty diagnostics, every raw ODP member byte and ZIP order. No LibreOffice replay.
+Target displayed rectangles and fitted ODP frames change inside identical allocations;
+all native and neighboring objects remain exact. Accepted PDF retains native word counts
+[0,28,27,28,10,52] and exact boxes; each page adds 81 question tokens after legitimate
+F₂ extraction-fragment joining. All six pages have zero changed pixels outside the union
+of old/new target display rectangles expanded3px. No global pixel-identity claim.
+Art8/protected7, baseline71/protected98, candidate59 and prior167 opaque closure remain
+intact; only the historical live consumer hash changes, with all frozen bytes preserved.
+Assessments168-171 seals/all named members, accepted flower167, fixed ART_REPORT and
+scope-exclusion receipt remain intact. Five existing owners changed; art status appends only.
+Evidence: _temp/pollen_survival_question_170/integration/REPORT.md and checks.json.
+No integration seal. 168/169 remain HOLD. Next171 READY for accepted flower SVG reuse
+in05G: source002 decoded pixels equal167 source006; actual297/559 placements require
+current context/neighbor proof before shared repo-path integration. 172 unopened.
+Biotechnology LECT11 excluded. Skipped full-deck export, full suite, classroom and print checks.
+
+Metadata-only closure: exactly five existing metadata owners; fresh independent
+integration review PASS. All389 bounded integration protections preserved under
+the authorized current consumer hash and exact metadata deltas. Fixed ART_REPORT,
+seals, old status/report prefixes and scope receipt unchanged. Art statuses remain
+unsealed; no integration seal. Evidence: _temp/pollen_survival_question_170/closure.json
+and integration_review.md. Source/art and all12 baseline/candidate pages accepted.
+
+## Flower B/b Punnett square (selection 167)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly two source006 URLs at local28/29 now use flower_punnett.drawn.svg; every other
+consumer byte is exact, including native A/a unequal-ratio comparison, sibling005,
+alt text, ordering and reveals. Source and final297/559/1022 artwork accepted by root;
+independent specification/quality PASS and both native baseline/candidate pages accepted.
+Six folded flowers, pollen/pistil and sex symbols preserve BB/Bb/Bb/bb and three purple/
+one white offspring. Square297/559 frames remain unchanged; no FIT exception.
+Actual guarded full38/focused2 compilation matches every accepted candidate model/plan
+value, empty diagnostics, every raw ODP member byte and ZIP order. No export replay.
+Accepted PDF adds ten SVG words per page and retains42 native words and x bounds;
+37 complete boxes are exact. Five bold table words differ in extracted y bounds
+(-2.769677/+1.142909pt), while visible native/table pixels remain exact. Outside nominal
+image frames560/414 edge pixels differ; outside one-pixel-expanded frames ZERO differ.
+No global PDF bbox or pixel identity claim. Native example and original005 remain intact.
+Art13, baseline63/protected97/one opaque closure and candidate57 remain intact;
+historical live-protection exception is only this consumer; frozen preimages exact.
+Prior166 asset/opaque closure, assessment164-169 seals and every named member, scope
+receipt and fixed ART_REPORT preserved. Five existing owners changed with status appends.
+Evidence: _temp/flower_punnett_167/integration/REPORT.md and checks.json. No integration seal.
+164/165 remain HOLD. 168 HOLD retains009: native P(A|B)=1 conflicts with B-only lobe,
+despite pixel-identical source reuse potential. 169 HOLD: retain JPG;
+blank ABO scaffold labels/reveal intent unknown and existing art is not exact-count reuse.
+Next170 READY for exact OCR quote-card creation: source05E005 has six references on
+local24-29. Proposed559x290 fits the limiting559x297 allocation; preliminary23px
+Atkinson Hyperlegible Next regular measurement gives nine lines/234px plus padding.
+Decision170-OCR authorizes only Sup-/pose to Suppose and genera-/tion to generation;
+all other words/errors/punctuation/case, F₂ and italic roles stay exact. Final italic/
+subscript shaping and all-neighbor candidate preservation remain future checks.
+Assessment170 seal and all nine named members preserved; no170 artwork started.
+Biotechnology LECT11 excluded. Skipped full-deck export, full suite, classroom and print checks.
+Fresh independent integration review PASS; metadata-only closure COMPLETE167.
+Broader goal ACTIVE. Exactly five existing metadata owners changed; no product edits.
+Scope header, older166 ledger suffix, other changelog bytes and all status/report
+prefixes preserved. Art13/baseline63/protected97/opaque1/candidate57,419 integration
+protections, assessment164-170 seals and every named member remain intact. The sole
+historical consumer exception is the already accepted two-URL integration; current
+consumer/art hashes remain fixed. Fixed ART_REPORT and all seals unchanged.
+Closure: _temp/flower_punnett_167/closure.json. No integration seal or resealing.
+No builds, exports, full suite, classroom, print or screenreader validation in closure.
+Biotechnology LECT11 excluded; scope-exclusion receipt preserved.
+
+## Three round F2 alternatives (selection 166)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly one source 004 URL at local 22, line 264 now uses `round_f2_alternatives.drawn.svg`.
+Every other consumer byte remains exact, including sibling 002/003, alt text and native red 2/3.
+Specification, quality and fresh native candidate PASS; root accepted source, final 178/400/800
+artwork and native baseline/candidate. The source horizontal RR/rR/Rr order becomes vertical
+parallel alternatives in separate equal containers, preserving round seeds and allele colors.
+Decision166-FIT/GROUP permits the target displayed y/height and fitted ODP frame to change
+within the same 178.333333x618 allocation; all other native objects and allocations remain exact.
+Actual guarded full 38/focused 1 models, plans, empty diagnostics and every raw ODP member byte
+and order match the accepted candidate. Candidate image ZIP sorting may differ from baseline;
+actual integration matches candidate ordering exactly. No native export replay.
+Accepted PDF preserves all 30 native word bounding boxes exactly, adds six diagram words,
+and changes zero pixels outside the target expanded by 2px. No unchanged-target-frame claim.
+Art11/protected9, baseline63/protected97/opaque3 and candidate52 fixed evidence remain intact.
+Original PNGs, prior163 owner and opaque closure, scope-exclusion receipt and all completed
+164/165/166/167 assessment seals and named members remain exact. Only the authorized consumer
+is a historical live-protection exception; frozen preimages remain exact.
+Five existing owners changed: consumer, this ledger, changelog and appended art status files.
+Fixed ART_REPORT remains untouched. Evidence: _temp/round_f2_alternatives_166/integration/REPORT.md
+and checks.json. Fresh independent integration review PASS; metadata-only closure complete.
+Exactly five existing metadata owners changed; status/report prefixes preserved.
+Closure: _temp/round_f2_alternatives_166/closure.json. No integration seal.
+No builds, exports, full suite or external acceptance in closure.
+Selections164/165 remain HOLD: retain dense prompt/gel002 and inheritance legend/alleles003 PNGs.
+Next167 READY: source006 flower B/b Punnett square, two uses at local28/29, 297/559 square;
+six flower icons including three purple/one white offspring, exact BB/Bb/Bb/bb spellings,
+pollen/pistil headers and sex symbols. Native A/a example remains separate. Refreeze POST166
+before future artwork. Selection168 remains unopened; Biotechnology LECT11 entirely excluded.
+Skipped full-deck export, full suite, classroom and print validation; sibling tiny labels remain.
+
+## Conditional probability on B (selection 163)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly one source 006 URL at local 24 now uses `conditional_probability_b.drawn.svg`.
+Every other consumer byte remains exact, including alt text, native formulas and earlier union/intersection references.
+Fresh specification, quality and native candidate checks PASS; root accepted source on white,
+both 547/1446 artwork proofs and baseline/candidate native views. White A-only, light B-only,
+dark intersection, outward callout and stacked P(A|B)=P(A intersection B)/P(B) remain clear.
+Actual guarded full 34/focused 1 models, plans, diagnostics and raw ODP member bytes/order
+match the accepted candidate. Existing full warnings local 6 left 19.75/20pt and local 29
+right 14.25/20pt remain; focused local 24 is clean. No LibreOffice replay.
+Accepted candidate PDF preserves all 45 native words and every bbox coordinate exactly,
+adds twelve diagram tokens, and changes zero pixels outside the image rectangle.
+Art 9, baseline 60 and candidate 62 fixed evidence, original PNG, accepted prior assets,
+frozen preimages, opaque prior 162 closure and scope-exclusion receipt remain unchanged.
+Historical live protection exceptions are only this consumer, progress ledger and changelog.
+Status decision163-STATUS: three existing owners edited and two previously absent unsealed
+art/HANDOFF.md and art/TASK_LEDGER.md created; sealed ART_REPORT stays untouched.
+Both completed 164/165 assessments, SHA256SUMS and every named member remain exact.
+Selection 164 HOLD: dense question/gel prompt at 178x104; retain PNG, no art.
+Selection 165 HOLD: inheritance legend/alleles at 178x136; retain PNG, no art.
+Next 166 is source 05E004, unopened. Biotechnology LECT11 remains entirely excluded.
+Evidence: _temp/conditional_probability_b_163/integration/REPORT.md and checks.json.
+Fresh independent integration review PASS; metadata-only closure complete.
+Exactly five existing metadata owners changed; status/report prefixes preserved.
+Closure: _temp/conditional_probability_b_163/closure.json. No integration seal.
+No builds, exports, full suite or external acceptance in closure.
+
+## Intersection of overlapping events (selection 162)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly three source 003 URLs at local slides 6/10/11 now use `events_intersection.drawn.svg`.
+All other consumer bytes, including alt text, formulas, notes, reveals, order and accepted union references, remain exact.
+Fresh artwork specification and quality reviews PASS; root accepted white source, 422/1328 art
+and all three candidate native pages, with the prior three baseline views applicable by exact package identity.
+Narrow gray intersection, white exclusive lobes/exterior, complete colored boundaries and live A/B/S remain clear.
+Actual full 34/focused 3 models, plans, diagnostics and every raw ODP member byte/order match
+accepted candidate evidence. Existing warnings remain local 6 left 19.75/20pt and local 29
+right 14.25/20pt. No LibreOffice export replay occurred during integration.
+Prior candidate PDF adds bottom A/B/S; existing body/math/top-union word boxes remain exact.
+Titles move RIGHT 0.029pt on all three pages; 661 outside-image pixels/page, max channel
+change 37, are confined to title box [401,66,898,119]. No PDF coordinate/global pixel identity claim.
+Art 10/protected 20, baseline 125/protected 107/opaque 6/reused 17 and candidate 65 fixed
+proofs remain unchanged; prior 161 candidate 63 is hashed in place. Historical protection
+preimages remain exact, with only the authorized live consumer excepted where present.
+Source 003/002, accepted union/v2 assets, guides/helpers, immediate 161 closure and fixed seals
+remain exact. HANDOFF/TASK_LEDGER append their status; sealed ART_REPORT remains untouched.
+Selection 163 ASSESSMENT, all 13 named members and SHA256SUMS remain unchanged.
+Next 163 is READY assessment-only: source 006 conditional-on-B schematic, one use at local 24,
+723:715 fit 546.57x540.53; preserve two gray roles, outward arrow and exact stacked fraction
+P(A|B)=P(A intersection B)/P(B). Refreeze POST162 before future work; no future art started.
+Current Biotechnology LECT11 exclusion and opaque scope-application receipt remain preserved.
+Evidence: _temp/events_intersection_162/integration/REPORT.md and checks.json. No integration seal.
+
+Fresh independent integration review PASS; metadata-only closure complete.
+Exactly five metadata owners changed; prior status/report prefixes remain preserved.
+Closure: _temp/events_intersection_162/closure.json. No integration seal.
+No builds, exports, rendered review, full suite or external acceptance in closure.
+
+## Union of overlapping events (selection 161)
+
+**COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
+Exactly three source 002 URLs at local slides 6/10/11 now use `events_union.drawn.svg`.
+All other consumer bytes, including varying alt text, formulas, reveals and order, remain exact.
+Fresh artwork specification and quality reviews PASS; root accepted source on white,
+384/1208 art proofs and all six 1280px baseline/candidate native pages.
+Editable A/B/S, two complete crossing outlines, uniformly gray union and S border are retained.
+Actual full 34/focused 3 models, plans, diagnostics and every raw ODP member byte/order
+match the accepted candidate. Existing warnings remain: local 6 left 19.75/20pt and
+local 29 right 14.25/20pt. No LibreOffice export replay occurred during integration.
+Prior candidate PDF evidence retains all body word boxes and adds A/B/S on each page;
+title x shifts -0.029pt on each page, with 661 outside-image changed pixels per page,
+max channel delta 37, confined to title box [401,66,898,119]. No coordinate/global pixel identity claim.
+Source 002/003, accepted v2 assets, guide/helpers, immediate 160 owner/opaque closure and
+fixed proofs/seals remain unchanged. Art 10, baseline 65 and candidate 63 fixed seals remain exact;
+historical 18 art/106 baseline protections retain their preimages, with only live consumer excepted.
+HANDOFF/TASK_LEDGER status appends preserve their exact prior prefixes; ART_REPORT remains sealed.
+Selection 162 assessment, all 17 named members and SHA256SUMS remain unchanged.
+Next 162 is READY assessment-only: source 003 intersection, 664:406, three uses at
+422.38x258.26; retain internal A/B, unshaded lobes and S border. Refreeze POST161 first; no 162 art.
+The current Biotechnology LECT11 exclusion header and scope-application receipt are preserved.
+Evidence: _temp/events_union_161/integration/REPORT.md and checks.json.
+Fresh independent integration review PASS; metadata-only closure complete.
+Exactly five metadata owners changed; status/report appends preserve prior bytes.
+Closure: _temp/events_union_161/closure.json. No integration seal.
+No builds, exports, rendered review, full suite or external acceptance in closure.
+
+## Two-panel five-row families (selection 160)
+
+**COMPLETE, November 12, 2026; broader goal ACTIVE.**
+Exactly one existing source 029 URL at local slide 49 now uses
+`two_panel_five_row_families.drawn.svg`; alt Slide image 29 and all non-URL
+consumer bytes remain exact. Fresh artwork specification and quality reviews PASS.
+Root accepted source 029, final 1068/1920 art proofs and 1280 native baseline/candidate.
+Two fixed gated BPQ Diagrams retain 47 people, 14 unions, 31 child endpoints and
+six half-fills (four right/two left), five rows and both original headings.
+Actual full 51-slide/focused 1-slide models/plans and all raw ODP member bytes/order
+match the accepted candidate. No export replay: the exact native title bbox and zero
+changed pixels outside [106,159,1174,700] are prior candidate evidence only.
+Corrected measurement: left III7 painted white divider clearance is 34 source pixels
+(about 18.9 at placement); artist's 37 measures to the divider centerline. No art fix.
+Source 029, prior assets, guide/helpers and 013/015/027 holds remain unchanged.
+Prior 159 closure is an opaque hash; baseline 60 and candidate 57 fixed seal members
+remain exact. Art 13 historical seal members are preserved: Decision160-HANDOFF
+allows only an append to live HANDOFF, with exact sealed prefix/preimage retained;
+other 12 members and SHA256SUMS remain exact. No reseal or integration seal.
+Selection 161 ASSESSMENT, all 18 named members and SHA256SUMS remain unchanged.
+Next 161 is READY assessment-only: source 002 in lect05d-probability_concepts,
+three uses, A/B uniformly gray union within S border. Existing native left-prose
+capacity warning is outside image scope; no 161 art started.
+Staged Biotechnology LECT11 scope-exclusion files are preserved; durable update
+remains pending after 160 closure. That lecture was not inspected or touched.
+Evidence: _temp/two_panel_five_row_families_160/integration/REPORT.md and checks.json.
+Fresh independent integration review PASS; metadata-only closure complete.
+Exactly five metadata owners changed; status/report appends preserve prior bytes.
+Closure: _temp/two_panel_five_row_families_160/closure.json.
+No new builds, exports, rendered review, full suite or external acceptance in closure.
 
 ## Two-panel four-row families (selection 159)
 
@@ -1036,14 +1265,14 @@ unverified. Broader renewal remains active.
 
 Evidence: `_temp/dominance_comparison/` retains source/detail view, snapshots, authoring/check recipes,
 final previews, frozen handoff, specification/quality reviews and integration receipt. Biological-illustration
-clarity/comparison and upper-left-lighting passages278–288 plus SVG grouping/reuse2349–2362 informed the
+clarity/comparison and upper-left-lighting passages278-288 plus SVG grouping/reuse2349-2362 informed the
 aligned comparison and semantic figure groups.
 
 ## Dihybrid seed testcross outcomes delivered
 
 **COMPLETE, November 11:** LECT04G's sole `image_008.jpg` use now references
 `testcross_WG_seed_outcomes.drawn.svg` in its unchanged left panel. Original editable composition
-reuses the four accepted smooth/folded yellow/green seed drawings and preserves Ww Gg × ww gg,
+reuses the four accepted smooth/folded yellow/green seed drawings and preserves Ww Gg x ww gg,
 five circled gametes, four offspring genotypes, eight quarter fractions, four phenotype phrases,
 two parent arrows, both complete callouts and source three-blue/one-peach cell grouping. All
 genetic italics, heading emphasis and source words/case/punctuation remain. Exact631:553aspect
@@ -1060,7 +1289,7 @@ rebuilt half-panel placement remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_123/` and `_temp/testcross_WG_seed_outcomes/`
 retain source view/contract, snapshots, recipe, artist/manager checks, final previews, frozen
-handoff and integration receipt. Handbook clarity/comparison278–294 and SVG grouping2349–2362
+handoff and integration receipt. Handbook clarity/comparison278-294 and SVG grouping2349-2362
 informed the aligned outcomes and exact local seed reuse. Bounded inheritance-map narrowing
 also viewed04H002 fork and05F023 dominance comparison; those remain separate candidates.
 
@@ -1087,8 +1316,8 @@ rebuilt placements remain unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_122/` and `_temp/probability_svg_reuse/` retain
 source views/contracts, snapshots, reuse recipe, artist/independent manager checks, final
-previews, frozen handoff and integration receipt. Handbook clarity/comparison278–294 and SVG
-grouping/reuse2349–2362 supported preserving the strong existing artwork. Bounded foundations
+previews, frozen handoff and integration receipt. Handbook clarity/comparison278-294 and SVG
+grouping/reuse2349-2362 supported preserving the strong existing artwork. Bounded foundations
 shortlist retained label-deficient02B007, human-portrait03C009 and unlabeled02C001 wallpaper.
 
 ## Five-stage mitosis overview delivered
@@ -1115,7 +1344,7 @@ multiple-choice placement remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_121/` and `_temp/mitosis_karyotype_stages/` retain
 full/detail source views, source contract, snapshots, recipe, artist/manager checks, final previews,
-frozen handoff and integration receipt. Handbook clarity/shading278–294 and SVG grouping2349–2362
+frozen handoff and integration receipt. Handbook clarity/shading278-294 and SVG grouping2349-2362
 informed original cells and semantic stage groups. Accepted06B art supplied construction vocabulary;
 its different chromosome complement was not copied. Bounded variation-map narrowing retained
 the separate11B027 wheat ancestry/photo composite rather than replacing its source evidence.
@@ -1143,7 +1372,7 @@ full suite ran; rebuilt placement remains unverified. Broader renewal remains ac
 
 Evidence: `_temp/genetics_next_simple_art_120/` and `_temp/random_ascus_ordering/` retain
 source contracts/views, snapshots, recipe, artist/manager checks, final previews, frozen handoff
-and integration receipt. Handbook clarity/comparison278–294 and SVG grouping2349–2362 informed
+and integration receipt. Handbook clarity/comparison278-294 and SVG grouping2349-2362 informed
 the branch spacing and semantic ascus/spore groups. Accepted spore-color art supplied visual
 context; source-specific green/purple asci use original geometry and all prior owners stay intact.
 
@@ -1170,7 +1399,7 @@ unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_119/` and `_temp/dihybrid_WG_punnett/` retain full
 source view/contract, snapshots, recipe, artist/manager checks, final previews, frozen handoff
-and integration receipt. Handbook clarity/comparison278–294 and SVG grouping2349–2362 informed
+and integration receipt. Handbook clarity/comparison278-294 and SVG grouping2349-2362 informed
 the aligned source grid and exact local seed reuse. Bounded existing-linkage-map narrowing
 identified this sound diagram; empirical08B014/TEM composites remain retained.
 
@@ -1199,7 +1428,7 @@ suite ran; rebuilt placement remains unverified. Broader renewal remains active.
 Evidence: `_temp/genetics_next_simple_art_118/` and
 `_temp/pericentric_inversion_loop_comparison/` retain full/detail source views, explicit path
 contract, snapshots, recipe, artist/manager checks, final previews, frozen handoff and integration
-receipt. Handbook clarity/overlap278–294 and SVG grouping2349–2362 informed line hierarchy and
+receipt. Handbook clarity/overlap278-294 and SVG grouping2349-2362 informed line hierarchy and
 semantic path groups. The inspected11B022/023/024 polyploid figures retain their documented
 placement deferrals; none was redrawn or reflowed.
 
@@ -1219,8 +1448,8 @@ source aspects and pure ASCII/vector/local resources. Eight inverse URL substitu
 every previous byte of both consumers; all retained source/sibling hashes remain unchanged.
 No deck export or full suite ran; rebuilt placement remains unverified. Broader renewal stays active.
 Evidence: `_temp/short_tail_challenge/` retains snapshots, recipe, artist/manager checks,
-final previews, frozen handoff and integration receipt. Handbook clarity278–294 and SVG
-grouping2349–2362 informed the editable badge and restrained text composition.
+final previews, frozen handoff and integration receipt. Handbook clarity278-294 and SVG
+grouping2349-2362 informed the editable badge and restrained text composition.
 
 **Source defect verified and deferred:** Byte-identical LECT07B/07C `image_019.png` binomial
 seed diagrams have20 rows in the3-yellow/3-green column but only19 unique patterns: rows11/17
@@ -1249,8 +1478,8 @@ renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_116/primary_source_contract.md` and
 `_temp/complementary_testcross_question/` retain source inspection, recipe, artist/manager
-checks, final previews, frozen handoff and integration receipt. Handbook clarity278–282 and
-SVG organization2349–2353 informed the compact composition and scoped editable text styles.
+checks, final previews, frozen handoff and integration receipt. Handbook clarity278-282 and
+SVG organization2349-2353 informed the compact composition and scoped editable text styles.
 A current local Biostatistics boundary check still finds one announcements Djot with ten pure
 SVG illustrations and five retained identity/QR/interface rasters; this is local coverage only.
 
@@ -1274,8 +1503,8 @@ remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_115/primary_source_contract.md` and
 `_temp/yellow_body_question/` retain source contract, recipe, artist/manager checks, final
-previews, frozen handoff and integration receipt. Handbook clarity/emphasis278–286 and SVG
-organization2349–2355 informed the compact card composition and scoped editable text styles.
+previews, frozen handoff and integration receipt. Handbook clarity/emphasis278-286 and SVG
+organization2349-2355 informed the compact card composition and scoped editable text styles.
 
 ## Squash inheritance generations delivered
 
@@ -1299,8 +1528,8 @@ Broader renewal remains active.
 Evidence: `_temp/genetics_next_simple_art_114/primary_source_contract.md` and
 `_temp/squash_epistasis_generations/` retain source inspection, reproducible recipe, artist/manager
 checks, final previews, frozen handoff and integration receipt. Handbook clarity/comparison
-278–294 and SVG grouping2349–2362 informed composition and local reuse; botanical form/contrast
-90–98/810–827 supported retaining the accepted lobes, stems, shading and distinct fruit colors.
+278-294 and SVG grouping2349-2362 informed composition and local reuse; botanical form/contrast
+90-98/810-827 supported retaining the accepted lobes, stems, shading and distinct fruit colors.
 
 ## Brainbow-2.1 inversion construct delivered
 
@@ -1324,8 +1553,8 @@ half-panel placement remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_113/primary_source_contract.md` and
 `_temp/brainbow_inversion/` retain source contracts, recipe, artist/manager checks, final previews,
-frozen handoff and integration receipt. Handbook clarity/comparison278–287 and SVG
-grouping2349–2362 informed repeated cassette shapes, line hierarchy and grouped rotations.
+frozen handoff and integration receipt. Handbook clarity/comparison278-287 and SVG
+grouping2349-2362 informed repeated cassette shapes, line hierarchy and grouped rotations.
 
 ## Brainbow-1.0 excision construct delivered
 
@@ -1349,7 +1578,7 @@ panel placement remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_112/REPORT.md` and `_temp/brainbow_excision/` retain
 source contracts, reproducible recipe, artist/independent manager checks, final previews, frozen
-handoff and integration receipt. Handbook clarity/comparison278–294 and SVG grouping2349–2362
+handoff and integration receipt. Handbook clarity/comparison278-294 and SVG grouping2349-2362
 informed line hierarchy, repeated site vocabulary and local hatching. Denser Brainbow-2.1
 inversion source019 was inspected as a separate possible task, not included in this delivery.
 
@@ -1378,8 +1607,8 @@ Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_111/REPORT.md` and `_temp/morgan_recombinant_offspring/`
 retain source/style contracts, reproducible recipe, artist/independent manager checks, final
-previews, frozen handoff and integration receipt. Handbook clarity/shading278–294 and SVG
-semantic grouping2349–2362 informed consistent chromosome reuse and source-specific table layout.
+previews, frozen handoff and integration receipt. Handbook clarity/shading278-294 and SVG
+semantic grouping2349-2362 informed consistent chromosome reuse and source-specific table layout.
 Pandora's themed Avatar identity still and phenotype table were retained after inspection.
 
 ## Complete Morgan meiosis/testcross composite delivered
@@ -1408,8 +1637,8 @@ rebuilt placement remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_110/REPORT.md` and `_temp/morgan_meiosis_testcross/`
 retain full source/style contracts, authoring recipe, artist/independent manager checks, final
-previews, frozen handoff and integration receipt. Handbook clarity/shading278–294 and animal
-masses338–340 plus SVG grouping2349–2362 informed construction and exact local reuse.
+previews, frozen handoff and integration receipt. Handbook clarity/shading278-294 and animal
+masses338-340 plus SVG grouping2349-2362 informed construction and exact local reuse.
 
 ## Double-exchange meiosis products delivered
 
@@ -1436,8 +1665,8 @@ No deck export or full suite ran; rebuilt placement remains unverified. Broader 
 
 Evidence: `_temp/genetics_next_simple_art_109/REPORT.md` and `_temp/double_crossover_meiosis/`
 retain sources/contracts, authoring recipe, independent manager checks, final previews and
-integration receipt. Handbook clarity/comparison/shading278–294 and SVG semantic grouping
-2349–2362 informed the restrained cells and grouped chromatids. Nearby b31, which includes a
+integration receipt. Handbook clarity/comparison/shading278-294 and SVG semantic grouping
+2349-2362 informed the restrained cells and grouped chromatids. Nearby b31, which includes a
 real TEM inset, remains retained; the denser b35 composite remains a separate candidate.
 
 ## Morgan testcross offspring results delivered
@@ -1464,8 +1693,8 @@ remains unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_108/REPORT.md` and `_temp/morgan_testcross_offspring/`
 retain source/style contracts, reproducible recipe, artist and independent manager checks,
-all final previews, frozen handoff and integration receipt. Handbook clarity/comparison278–284
-and animal masses338–340 plus SVG grouping2349–2362 informed anatomy and source-specific layout.
+all final previews, frozen handoff and integration receipt. Handbook clarity/comparison278-284
+and animal masses338-340 plus SVG grouping2349-2362 informed anatomy and source-specific layout.
 
 ## Linked and unlinked gene cell delivered
 
@@ -1492,7 +1721,7 @@ ran; rebuilt placement remains unverified. Broader renewal remains active.
 Evidence: `_temp/genetics_next_simple_art_107/REPORT.md` and `_temp/linked_unlinked_gene_cell/`
 retain full source/style contracts, authoring recipe, artist and independent manager checks,
 final previews, frozen handoff and integration receipt. Handbook clarity/comparison/shading
-278–294 and SVG semantic grouping2349–2362 informed the cell/rod construction. The original
+278-294 and SVG semantic grouping2349-2362 informed the cell/rod construction. The original
 unlabeled JPEG alone would omit essential explanation, so the full current wrapper was the source.
 
 ## Reciprocal fly eye-color crosses delivered
@@ -1519,8 +1748,8 @@ export or full suite ran; rebuilt placements remain unverified. Broader renewal 
 
 Evidence: `_temp/genetics_next_simple_art_106/REPORT.md` and `_temp/reciprocal_eye_crosses/`
 retain source contracts, authoring recipe, artist and independent manager checks, final previews,
-frozen handoff and integration receipt. Handbook clarity/comparison278–284 and animal masses
-338–340 plus SVG grouping2349–2362 informed the construction. Existing single-cross Morgan
+frozen handoff and integration receipt. Handbook clarity/comparison278-284 and animal masses
+338-340 plus SVG grouping2349-2362 informed the construction. Existing single-cross Morgan
 artwork was unsuitable for whole-figure reuse because its labels, ancestry colors and layout differ.
 
 ## Three color-blindness crosses delivered
@@ -1547,8 +1776,8 @@ placements remain unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_105/REPORT.md` and `_temp/colorblind_cross_family/`
 retain full sources/contracts, reproducible recipe, artist and independent manager checks,
-all final previews, frozen handoff and integration receipt. Handbook clarity/comparison278–284
-and SVG semantic grouping2349–2362 informed the matched construction. Existing sex-ratio SVG
+all final previews, frozen handoff and integration receipt. Handbook clarity/comparison278-284
+and SVG semantic grouping2349-2362 informed the matched construction. Existing sex-ratio SVG
 remains unchanged because its notation, objects and color meanings differ from this family.
 
 ## Sex-ratio Punnett square delivered
@@ -1571,8 +1800,8 @@ unverified. Broader renewal remains active.
 
 Evidence: `_temp/genetics_next_simple_art_104/REPORT.md` and `_temp/sex_ratio_punnett/` contain
 source contract, authoring recipe, artist checks, manager actual-XML checks, final previews,
-frozen handoff and integration receipt. Handbook clarity/comparison278–284 and SVG semantic
-grouping2349–2355 informed the construction. Adjacent024comparison collage remains retained.
+frozen handoff and integration receipt. Handbook clarity/comparison278-284 and SVG semantic
+grouping2349-2355 informed the construction. Adjacent024comparison collage remains retained.
 
 ## Complete Sxl signal workflow delivered
 
@@ -1695,7 +1924,7 @@ against enlarged source. Source 406:383 aspect and all native explanation stay u
 
 Artist and manager personally inspected final quality-90 WebP previews at400/700/1000px wide.
 Independent actual XML checks infer edges from arrow coordinates and outcome rectangle bounds:
-parent→W/w, W→WG/Wg, w→wG/wg. Parsed fractions verify half×half=quarter and four outcomes sum1.
+parent->W/w, W->WG/Wg, w->wG/wg. Parsed fractions verify halfxhalf=quarter and four outcomes sum1.
 Full text, mixed styles, open arrowhead geometry and XML/ASCII/pure-vector/local-resource/
 unique-ID checks pass. One inverse URL substitution restores every prior consumer byte; original
 source and accepted sibling hashes remain unchanged.
@@ -1872,7 +2101,7 @@ No deck export or full suite ran; rebuilt placements remain unverified. Broader 
 **COMPLETE, November 11:** All four LECT02F image_013.png uses now reference
 `aatii_xhoi_linear_exercise.quote.svg`, completing the editable source-art family with the
 accepted linear map and blank gel. Full problem2.8 preserves five prose/list paragraphs,
-wording, punctuation and1–12en dash. Only dia-/gram typesetting is joined. Number2.8alone is
+wording, punctuation and1-12en dash. Only dia-/gram typesetting is joined. Number2.8alone is
 red/bold; option letters(a)/(b)/(c)black/bold. Eight italic spans comprise six enzyme prefixes
 and two parenthetic aliases; enzyme suffixes, parentheses and remaining prose stay upright.
 Source812:346aspect is unchanged. No solutions or extra headings are added.
@@ -1942,7 +2171,7 @@ No deck export or full suite ran; rebuilt placements remain unverified. Broader 
 
 **COMPLETE, November 11:** Both LECT02F image_010.png uses now reference
 `dna_fragment_size_exercise.drawn.svg`. The complete problem2.7 prompt preserves all wording,
-including literal “fragments sizes”, double-stranded and punctuation; only dia-/gram line wrap
+including literal "fragments sizes", double-stranded and punctuation; only dia-/gram line wrap
 is joined. Number2.7 is red/bold, prose regular live Atkinson. One original shallow blue slab
 retains its open well, four purple bands, four bold question marks and four plain leaders.
 Source814:555aspect and gel regionx392..521/y206..529 remain. Native loading text, options,
@@ -2055,7 +2284,7 @@ No deck export or full suite ran; rebuilt placement remains unverified. Broader 
 **COMPLETE, November 11:** LECT03C image_011.png now references
 `two_locus_paternity_exercise.quote.svg` through its sole body use beside the accepted gel
 schematic and native Answer:A. The full problem2.30 prompt preserves source wording,
-parentheses, curly locus quotes, “Does either or both”, questions and punctuation. Only the
+parentheses, curly locus quotes, "Does either or both", questions and punctuation. Only the
 source line-wrap split in possible is joined. Number2.30 alone is red/bold; all prose is regular
 upright live Atkinson. The828:346 aspect remains unchanged; no extra hint or heading is added.
 
@@ -2120,7 +2349,7 @@ No deck export or full suite ran; rebuilt placement remains unverified. Broader 
 **COMPLETE, November 11:** LECT03C image_023.png now reuses the existing
 `assets/lect03g-chap2_challenges/challenge-problem-2.drawn.svg` through its sole body use.
 The accepted shared question already preserves the entire source, including the literal
-“is a one”, A–E, X, curly-quoted locus numbers and punctuation. No duplicate SVG or absent
+"is a one", A-E, X, curly-quoted locus numbers and punctuation. No duplicate SVG or absent
 accompanying diagram was created. Existing LECT03G body use21 shares the same artwork.
 
 Eleven font-family attributes now use Atkinson Hyperlegible Next. Inverse substitution restores

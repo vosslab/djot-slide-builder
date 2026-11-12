@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="540" viewBox="0 0 200 540" role="img" aria-labelledby="round-f2-title round-f2-desc">
+  <title id="round-f2-title">Three round F2 seeds</title>
+  <desc id="round-f2-desc">Three equally round green seeds, arranged top to bottom, labeled RR, rR, and Rr. Each pair has a blue first letter and a pink second letter. A separate short downward arrow fragment sits above each seed.</desc>
+  <defs>
+    <radialGradient id="round-f2-green" cx="38%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#c8d86d"/>
+      <stop offset="0.29" stop-color="#8ebf51"/>
+      <stop offset="0.64" stop-color="#398c43"/>
+      <stop offset="0.88" stop-color="#15643c"/>
+      <stop offset="1" stop-color="#104f34"/>
+    </radialGradient>
+    <linearGradient id="round-f2-rim-light" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c5d976" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#79aa59" stop-opacity="0"/>
+    </linearGradient>
+    <g id="round-f2-pea">
+      <path d="M -1,-40 C 21,-41 39,-24 40,-2 C 42,20 24,40 2,40 C -21,42 -40,24 -40,2 C -42,-20 -24,-39 -1,-40 Z" fill="url(#round-f2-green)" stroke="#225f3b" stroke-width="2.3"/>
+      <path d="M -31,12 C -38,-8 -27,-29 -10,-34" fill="none" stroke="url(#round-f2-rim-light)" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M 29,-19 C 37,-3 32,18 17,28" fill="none" stroke="#72ab50" stroke-opacity="0.25" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+    <g id="round-f2-incoming" fill="#181818">
+      <path d="M -1.6,0 H 1.6 V 8 H 5.8 L 0,19 L -5.8,8 H -1.6 Z"/>
+    </g>
+  </defs>
+  <g font-family="Atkinson Hyperlegible Next" fill="#202620">
+    <text x="100" y="33" font-size="23" text-anchor="middle">F<tspan font-size="15" dy="5">2</tspan><tspan dy="-5" dx="4">generation</tspan></text>
+    <g id="round-f2-RR" transform="translate(100 128)">
+      <rect x="-80" y="-76" width="160" height="152" rx="12" fill="#ffffff" stroke="#dde2dc" stroke-width="1"/>
+      <use href="#round-f2-incoming" y="-65"/>
+      <use href="#round-f2-pea"/>
+      <text y="67" text-anchor="middle" font-size="24" font-style="italic"><tspan fill="#285f91">R</tspan><tspan fill="#bc3b65">R</tspan></text>
+    </g>
+    <g id="round-f2-rR" transform="translate(100 288)">
+      <rect x="-80" y="-76" width="160" height="152" rx="12" fill="#ffffff" stroke="#dde2dc" stroke-width="1"/>
+      <use href="#round-f2-incoming" y="-65"/>
+      <use href="#round-f2-pea"/>
+      <text y="67" text-anchor="middle" font-size="24" font-style="italic"><tspan fill="#285f91">r</tspan><tspan fill="#bc3b65">R</tspan></text>
+    </g>
+    <g id="round-f2-Rr" transform="translate(100 448)">
+      <rect x="-80" y="-76" width="160" height="152" rx="12" fill="#ffffff" stroke="#dde2dc" stroke-width="1"/>
+      <use href="#round-f2-incoming" y="-65"/>
+      <use href="#round-f2-pea"/>
+      <text y="67" text-anchor="middle" font-size="24" font-style="italic"><tspan fill="#285f91">R</tspan><tspan fill="#bc3b65">r</tspan></text>
+    </g>
+  </g>
+</svg>

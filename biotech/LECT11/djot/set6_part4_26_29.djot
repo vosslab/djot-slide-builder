@@ -1,0 +1,548 @@
+=== layout: subsection
+
+# 26. Patents, Discovery, and Other Intellectual Property
+
+=== layout: one-panel
+
+# 26. Questions (1 of 2)
+
+@body
+
+- What is a patent?
+- How would you distinguish between a patent and other forms of intellectual property (e.g., copyright, trademark, trade secrets)?
+- How long does a patent last today, and what rights does it confer to the patent holder?
+- What advantages do patents offer in science and industry?
+- Discuss how patents encourage innovation by granting exclusivity and fostering investments.
+- What are the criteria to be patentable?
+
+=== layout: one-panel
+
+# 26. Questions (2 of 2)
+
+@body
+
+- Explain the concepts of utility, novelty, and "non-obvious" with examples.
+- What is the difference between discovery and invention?
+- Provide general examples. Provide examples from biotechnology to illustrate each.
+- What is copyright?
+- How long does copyright last, and how does copyright compare with patents in terms of duration, scope, and nature of protection?
+- When did copyright in the 1928 film Steamboat Willie expire in the United States, and how is that different from a patent or trademark?
+
+=== layout: one-panel
+
+# 26. What Are You Protecting?
+
+@body
+
+- A patent protects qualifying claimed inventions. Copyright protects original expression, not the underlying scientific fact.
+- A trademark identifies the source of goods or services. A trade secret protects qualifying confidential information through secrecy rather than publication.
+- One company can use several forms of protection at once.
+- The name on the box, the text in the manual, the engineered process, and the confidential production settings are different things.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 26. A Patent Is a Right to Exclude
+
+@body
+
+- A U.S. patent can let its owner exclude others from specified acts involving the claimed invention, within the law's scope.
+- It is not affirmative permission to sell the product, practice every necessary process, or ignore another owner's patent.
+- Utility patents generally run 20 years from the relevant filing date, subject to rules including adjustments, extensions, and fees.
+- The issued claims define the protected invention; an impressive title does not establish ownership of an entire field.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 26. An Invention Still Needs to Qualify
+
+@body
+
+- Patent eligibility is one question. Utility, novelty, nonobviousness, and adequate disclosure are additional requirements.
+- Discovering a natural relationship can be scientifically important without making the relationship itself patentable.
+- An engineered tool that uses the relationship may raise a different question, but invention is not an automatic stamp of patentability.
+- Steamboat Willie concerns copyright in a film, not a Mickey Mouse patent. Its 1928 film entered the U.S. public domain in 2024; later works and trademarks are separate issues.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 26. Four Forms of Protection
+
+@body
+
+{table-style=comparison}
+| Tool | What It Protects | Biotechnology Example |
+| --- | --- | --- |
+| Patent | Qualifying claimed invention | Engineered production process |
+| Copyright | Original expression | Manual, figure, or software code |
+| Trademark | Source-identifying brand | Company or product mark |
+| Trade secret | Qualifying secret information | Confidential production settings |
+
+Copyright often lasts the author's life plus 70 years for qualifying modern works; other categories have different terms.
+
+@citation
+
+https://www.copyright.gov/help/faq/faq-duration.html
+
+=== layout: one-panel
+
+# 26. Why Disclose the Invention?
+
+@body
+
+- The patent bargain exchanges public technical disclosure for a limited right to exclude under the law.
+- Protection can support investment in development, manufacturing, and commercialization. It can also limit access or increase the cost of follow-on work.
+- Trade secrecy offers a different bargain: qualifying information remains protected while it remains secret, rather than being disclosed in exchange for a patent.
+- Design patents concern qualifying ornamental designs; plant variety protection has its own requirements. These add to the four tools in the comparison.
+
+@citation
+
+https://www.uspto.gov/patents/basics
+
+=== layout: one-panel
+
+# 26. Discovery and Application
+
+@body
+
+{table-style=comparison}
+| Discovered Relationship | Engineered Application |
+| --- | --- |
+| Electrical phenomena | A particular electric lamp |
+| Properties of steam | A particular steam engine |
+| Biological sequence relationships | A particular molecular tool or process |
+
+A valuable discovery can motivate an invention. A particular invention must still satisfy every applicable patent requirement.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Discovery or Invention?
+
+@body
+
+Choose A: *Discovery* or B: *Invention*. Then ask a harder question: would a specific claim satisfy all patent requirements?
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+CRISPR bacterial immune system
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Discovery
+
+@body
+
+CRISPR bacterial immune system
+
+Identifying a natural defense system adds knowledge about biology.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+CRISPR/Cas9 gene-editing system
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Invention
+
+@body
+
+CRISPR/Cas9 gene-editing system
+
+An engineered tool applies biological knowledge; the precise claims still matter.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+Gasoline-powered automobile
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Invention
+
+@body
+
+Gasoline-powered automobile
+
+An engineered machine applies known physical and chemical processes.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+Energy from gasoline combustion
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Discovery
+
+@body
+
+Energy from gasoline combustion
+
+A natural physical and chemical relationship is not made patentable by discovering it.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+Structure of a plant cell
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Discovery
+
+@body
+
+Structure of a plant cell
+
+Observing and describing a natural structure does not create that structure.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+Pathogenic BRCA variants can increase cancer risk
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Discovery
+
+@body
+
+Pathogenic BRCA variants can increase cancer risk
+
+The relationship is discovered. Do not describe ordinary BRCA function as simply causing cancer.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: one-panel
+
+# 26. Your Choice: Discovery or Invention?
+
+@body
+
+Introducing a drought-related gene into corn
+
+A. Discovery
+
+B. Invention
+
+=== layout: one-panel
+
+# 26. Invention
+
+@body
+
+Introducing a drought-related gene into corn
+
+An engineered construct or organism may raise eligibility questions; inventiveness alone does not guarantee a patent.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2106.html
+
+=== layout: subsection
+
+# 27. Diamond V. Chakrabarty
+
+=== layout: one-panel
+
+# 27. Questions (1 of 2)
+
+@body
+
+- What new question did Diamond v. Chakrabarty raise about whether living things made by humans could be patented?
+- How did Ananda Chakrabarty's oil-degrading bacterium differ from natural bacteria, and why was that difference important to the Court's decision?
+- How did the U.S. Supreme Court decide that the engineered bacterium qualified as a "manufacture" or "composition of matter" under the Patent Act?
+- How did the ruling change how scientists and companies thought about the value of genetically modified organisms?
+
+=== layout: one-panel
+
+# 27. Questions (2 of 2)
+
+@body
+
+- How did patent eligibility change the industry's view of engineered organisms?
+- Why did the dissent want Congress to decide whether life could be patented?
+- How did the ruling influence later patents on recombinant insulin, GM crops, and gene therapy?
+
+=== layout: one-panel
+
+# 27. Living Was Not the Deciding Boundary
+
+@body
+
+- Chakrabarty developed a bacterium combining capabilities for breaking down components of crude oil.
+- In 1980, the Supreme Court held that the human-made microorganism could be eligible subject matter under the patent statute.
+- The key distinction was the claimed organism's human-made characteristics, rather than a rule that all life is unpatentable.
+- Eligibility did not establish environmental safety or authorize a field release.
+
+@citation
+
+https://tile.loc.gov/storage-services/service/ll/usrep/usrep447/usrep447303/usrep447303.pdf
+
+=== layout: one-panel
+
+# 27. Two Sides of the Policy Debate
+
+@body
+
+- The majority read the statutory categories broadly enough to encompass the engineered microorganism.
+- The dissent argued that Congress should decide whether the patent system should extend to such living organisms.
+- Both positions concern the interpretation and reach of the statute. Neither determines that every genetically modified organism satisfies every patent requirement.
+- Separate what a court held from broader opinions about whether patenting life is desirable.
+
+@citation
+
+https://tile.loc.gov/storage-services/service/ll/usrep/usrep447/usrep447303/usrep447303.pdf
+
+=== layout: one-panel
+
+# 27. Return to the Oil-Degrading Microbe
+
+@body
+
+- The microorganism may be patent eligible, yet its developer still needs to address containment, environmental behavior, performance, and applicable regulatory oversight.
+- A company could also need licenses to other claimed processes or tools.
+- Ask three separate questions: can this invention qualify,\
+  may the company practice it, and may the proposed product be used or sold this way?
+- These questions connect patents back to the regulatory framework.
+
+@citation
+
+https://tile.loc.gov/storage-services/service/ll/usrep/usrep447/usrep447303/usrep447303.pdf
+
+=== layout: big-image
+
+@image
+
+![27. Three Questions for the Same Product](assets/set6_drawings/three_permissions.drawn.svg)
+
+@caption
+
+Patent eligibility and claims, freedom to operate, and regulatory authorization are separate questions.
+
+=== layout: subsection
+
+# 28. The Cohen-Boyer Recombinant DNA Patents
+
+=== layout: one-panel
+
+# 28. Questions
+
+@body
+
+- How did Stanley Cohen and Herbert Boyer's recombinant DNA technique enable scientists to insert human genes into bacteria?
+- What did their patent cover, and why was it so broad in scope?
+- How did the University of California and Stanford manage licensing, and why did they choose a nonexclusive, low-cost model?
+- How much revenue did these patents generate, and what impact did they have on early biotechnology startups?
+- How did the Cohen-Boyer patents influence how future biotech inventions were shared, licensed, and commercialized?
+
+=== layout: one-panel
+
+# 28. The Process Was the Platform
+
+@body
+
+- Cohen, Boyer, and colleagues demonstrated methods for constructing recombinant plasmids and propagating introduced DNA in bacteria.
+- The patent family concerned recombinant-DNA technology, not ownership of every natural gene.
+- The application dates to 1974; patents issued later, beginning in 1980.
+- Keep experiment, filing, patent issuance, and product approval as separate events on the timeline.
+
+@citation
+
+https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
+
+=== layout: one-panel
+
+# 28. A Broad Licensing Strategy
+
+@body
+
+- Stanford managed licensing for the shared\
+  Stanford/UCSF inventions using a broadly available, nonexclusive approach.
+- A nonexclusive license allows multiple licensees to use covered technology under their agreements.
+- Stanford reports about $255 million in licensing fees and royalties from the program.
+- Revenue is one outcome. Broad access to a foundational research and production tool is another.
+
+@citation
+
+https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
+
+=== layout: one-panel
+
+# 28. Platform and Product Patents
+
+@body
+
+- A company using a covered cloning process could need a platform license as well as rights to a particular engineered construct or manufacturing method.
+- The license's field, territory, term, and scope matter.
+- Compare the incentives created by a broadly licensed platform with those created by an exclusive license for one narrow product.
+- Which approach helps development, competition, and access in the specific setting?
+
+@citation
+
+https://otl.stanford.edu/news/otls-first-50-years-executive-roundtable
+
+=== layout: subsection
+
+# 29. Genentech, Recombinant Insulin, and Licensing
+
+=== layout: one-panel
+
+# 29. Questions (1 of 2)
+
+@body
+
+- How did Genentech's 1982 patent on recombinant insulin define ownership over producing human proteins using recombinant DNA methods?
+- How did this patent lead to conflicts with other patent holders such as the University of California, which held related claims through the Cohen-Boyer patents?
+- How did courts interpret the broad wording of Genentech's patent claims that covered using microbial hosts to make human proteins?
+- How did these disputes shape the later concept of "freedom to operate" for biotechnology companies using recombinant DNA?
+
+=== layout: one-panel
+
+# 29. Questions (2 of 2)
+
+@body
+
+- How did Genentech's collaboration\
+  with Eli Lilly influence how intellectual property was shared or licensed in early biotechnology?
+- How did later court rulings limit the scope of broad biotechnology patents by emphasizing written description and enablement?
+- How did the resolution of these patent conflicts shape how companies today protect biopharmaceutical inventions?
+
+=== layout: one-panel
+
+# 29. 1982 Is an Approval Milestone
+
+@body
+
+- Genentech helped demonstrate production of human insulin using recombinant DNA; Eli Lilly developed and commercialized Humulin.
+- FDA approved Humulin in 1982, an important recombinant-medicine milestone.
+- Do not identify 1982 as one universal Genentech patent date. A company can hold many patents with different filing dates, claims, owners, and terms.
+- Approval, invention, licensing, and patent issuance are separate milestones.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin
+
+=== layout: one-panel
+
+# 29. Several Contributions, One Product
+
+@body
+
+- A recombinant medicine can depend on cloning methods, expression constructs, host strains, fermentation, purification, formulation, and delivery.
+- Different contributions can be owned or licensed separately.
+- Owning an improvement does not automatically give freedom to practice an underlying patented technology.
+- A collaboration can allocate development work and commercial rights without making every participant an owner of every underlying invention.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin
+
+=== layout: one-panel
+
+# 29. Claims Must Match Disclosure
+
+@body
+
+- A broad patent claim needs adequate written description and enablement; naming a desired result is not the same as teaching how to achieve the claimed scope.
+- Do not treat a claim to one demonstrated molecule as automatic ownership of all human proteins made in all microbial hosts.
+- For your company's plan, identify the invention and the rights you would need.
+- An intellectual-property milestone should be more specific than get a patent.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin
+
+=== layout: one-panel
+
+# 29. Do Not Merge Different Patent Stories
+
+@body
+
+- Recombinant insulin approval in 1982 and the Cohen-Boyer platform licenses are distinct historical events.
+- A well-known UCSF/Genentech dispute concerned human growth hormone and techniques used to make Protropin. Contemporary UCSF reporting described that litigation in May 1999.
+- That is not evidence for one universal 1982 insulin patent covering all recombinant proteins.
+- For a disputed claim, name the patent, invention, parties, and proceeding before drawing a lesson about the whole industry.
+
+@citation
+
+https://synapse.ucsf.edu/articles/2019/05/21/date-ucsf-history-ucsf-genentech-battle
+

@@ -1,0 +1,69 @@
+=== layout: section
+
+# Summary
+
+=== layout: one-panel
+
+# Same Product, Different Questions
+
+@body
+
+{table-style=comparison}
+| Question | Evidence or Decision Needed |
+| --- | --- |
+| What did you make? | Identity, composition, mechanism, and reproducibility |
+| What could go wrong? | Hazard, exposure, containment, and monitoring |
+| Does it help? | Meaningful outcomes, comparisons, and uncertainty |
+| Can you make and sell it? | Applicable authorization and manufacturing controls |
+| Can you protect or practice it? | Claims, ownership, licenses, and freedom to operate |
+
+=== layout: two-panels
+
+# Return to Bt Corn and Insulin
+
+@left
+
+## Bt Corn
+
+- Connect protein action to exposure and resistant insects.
+- Separate research, field, pesticide, and food questions.
+- Identify the trait, rights, and limits of the relevant decisions.
+
+@right
+
+## Recombinant Insulin
+
+- Connect the gene to manufacturing and the final formulation.
+- Test identity, potency, consistency, and clinical performance.
+- Separate a platform license, a product approval, and a patent claim.
+
+=== layout: one-panel
+
+# Apply This to Your Group Company
+
+@body
+
+- Name one specific product and explain the biological mechanism.
+- Identify a major uncertainty and an experiment or comparison that could reduce it.
+- Identify the likely oversight questions for research, production, use, and sale.
+- Explain what you might protect, what you might license, and what you would share.
+- Turn those questions into meaningful development milestones.
+
+@notes
+
+This is a discussion bridge to the existing group project, not an extra required submission. Ask groups to choose one concrete uncertainty rather than invent a complete regulatory plan tonight.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Regulation developed around real failures; different controls answer different questions.
+- A plausible mechanism, legal availability, a quality seal, and clinical benefit are distinct claims.
+- A patent does not establish safety, approval, or freedom to practice every needed technology.
+- Use dated evidence, specific products, and clear comparisons when defending your company's plan.
+
+=== layout: theend
+
+# THE END

@@ -1,0 +1,230 @@
+=== layout: subsection
+
+# 30. AMP V. Myriad Genetics
+
+=== layout: one-panel
+
+# 30. Questions
+
+@body
+
+- Discuss the case "Association for Molecular Pathology v. Myriad Genetics". What was the impact of the ruling on Biotechnology?
+- What ways are currently used to patent genes?
+- How has the AMP v. Myriad Genetics ruling influenced the approach to patenting biotechnological innovations related to human genetics?
+- What are the long-term effects of this ruling on patient access to genetic testing and personalized medicine?
+- How do current patent laws address the complexity of genetic information and its uses in biotechnology?
+
+=== layout: one-panel
+
+# 30. Finding BRCA Was Not Creating BRCA
+
+@body
+
+- The 2013 Supreme Court decision held that a naturally occurring DNA segment is a product of nature and is not patent eligible merely because it has been isolated.
+- The importance and difficulty of locating BRCA1 and BRCA2 did not change that conclusion.
+- Pathogenic variants can increase cancer risk; the ordinary biological role of the BRCA genes is not simply to cause cancer.
+- Scientific importance and patent eligibility are different judgments.
+
+@citation
+
+https://tile.loc.gov/storage-services/service/ll/usrep/usrep569/usrep569576/usrep569576.pdf
+
+=== layout: one-panel
+
+# 30. Why cDNA Was Different
+
+@body
+
+- Complementary DNA is made from an RNA template and can omit introns present in genomic DNA.
+- The Court distinguished cDNA that is not naturally occurring, while noting that short sequences without intervening introns may not be distinguishable.
+- The decision did not make every laboratory-made molecule automatically patentable.
+- Other eligibility questions and the requirements for novelty, nonobviousness, and disclosure still apply.
+
+@citation
+
+https://tile.loc.gov/storage-services/service/ll/usrep/usrep569/usrep569576/usrep569576.pdf
+
+=== layout: one-panel
+
+# 30. Protection After Myriad
+
+@body
+
+- Specific engineered constructs, qualifying methods, new compositions, and other inventions can raise different questions from a claim to an isolated natural sequence.
+- Diagnostic-method claims also have eligibility limits; do not assume that adding measure a gene makes a natural relationship patentable.
+- Discuss access to testing, competing laboratories, and incentives using evidence about the particular setting.
+- The ruling did not erase every patent related to genetics or guarantee identical prices and access everywhere.
+
+@citation
+
+https://tile.loc.gov/storage-services/service/ll/usrep/usrep569/usrep569576/usrep569576.pdf
+
+=== layout: big-image
+
+@image
+
+![30. Why Genomic DNA and cDNA Differ](assets/set6_drawings/dna_cdna.drawn.svg)
+
+@caption
+
+The colored blocks track exon sequences through a simplified example. Laboratory synthesis alone does not decide patent eligibility.
+
+=== layout: subsection
+
+# 31. CRISPR/Cas9 Patent Disputes
+
+=== layout: one-panel
+
+# 31. Questions (1 of 2)
+
+@body
+
+- Who were Emmanuelle Charpentier and Jennifer Doudna?
+- Do you find their story inspiring?
+- (Humble brag: Dr. Voss worked in Dr. Doudna's lab for 3 months as a graduate student.)
+- Explain the patent wars involving CRISPR technology. How did MIT get their patent approved before Berkeley when they submitted 7 months after them?
+- How did the disputed eukaryotic claims differ from the broader CRISPR claims, and why is a simple prokaryote/eukaryote ownership division misleading?
+- How did Feng Zhang of the Broad Institute find out about CRISPR/Cas9 to create his patent?
+
+=== layout: one-panel
+
+# 31. Questions (2 of 2)
+
+@body
+
+- What did the 2022 PTAB decision conclude, and what changed after the 2025 appeal?
+- How did this decision affect Biotech companies?
+- How have the patent wars influenced the development and commercialization of CRISPR?
+
+=== layout: one-panel
+
+# 31. The Biological Discovery and the Tool
+
+@body
+
+- Bacterial CRISPR systems are part of microbial defense. Researchers adapted molecular components into programmable genome-editing tools.
+- Charpentier and Doudna's contributions are central to the story; Zhang and others developed important applications in eukaryotic cells.
+- The Broad Institute is affiliated with MIT and Harvard; these institutions are not interchangeable names for one patent claim.
+- Different claims can cover different systems,\
+  components, applications, or settings. Nobel recognition and patent priority answer different questions.
+
+@citation
+
+https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.pdf
+
+=== layout: one-panel
+
+# 31. Filing Date and Issue Date Differ
+
+@body
+
+- Filing, examination, issuance, claim scope, and priority disputes are separate events.
+- Accelerated examination can affect when a patent issues; issuance order alone does not settle every question of invention priority or overlapping scope.
+- The dispute involves how the tool was conceived and applied in eukaryotic cells, not a clean division in which one institution owns all bacteria and the other all eukaryotes.
+- Read the actual claims and the decision rather than the headline.
+
+@citation
+
+https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.pdf
+
+=== layout: one-panel
+
+# 31. The 2022 Decision Was Not the End
+
+@body
+
+- The 2022 PTAB decision awarded priority to Broad in the interference concerning the disputed eukaryotic CRISPR-Cas9 system.
+- On May 12, 2025, the Federal Circuit affirmed part of the decision, vacated the conception determination, and remanded for further proceedings.
+- A remand requires further consideration; it is not a declaration that the other side has won every patent.
+- Explain these dated decisions and identify unresolved scope. Do not label the 2022 result a final present-day settlement.
+
+@citation
+
+https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.pdf
+
+=== layout: one-panel
+
+# 31. What a Startup Needs to Know
+
+@body
+
+- Which editing system, target cell, indication, delivery method, and territory will the company use?
+- Which issued claims, licenses, or disputes could affect that use?
+- An existing patent does not prove the product works, and a pending dispute does not prove that all research or commercialization has stopped.
+- Your scientific milestone and your freedom-to-operate work should remain connected without collapsing into one checkbox.
+
+@citation
+
+https://www.cafc.uscourts.gov/opinions-orders/22-1653.OPINION.5-12-2025_2512679.pdf
+
+=== layout: subsection
+
+# 32. First Inventor to File and Prior Art
+
+=== layout: one-panel
+
+# 32. Questions (1 of 2)
+
+@body
+
+- What is the difference between "First to File" vs. "First to Invent"?
+- What is "First Inventor to File"?
+- How does each system balance the interests of individual inventors with those of the public?
+- What are the potential impacts of the "First Inventor to File" system on small-scale inventors or biotech startups?
+- How does prior art influence patentability?
+- What is prior art, and how have definitions of prior art and publication changed since the 2013 America Invents Act?
+
+=== layout: one-panel
+
+# 32. Questions (2 of 2)
+
+@body
+
+- What mechanisms exist to invalidate a patent?
+- Consider reexamination, challenges based on prior art, or disputes over ownership. How might these laws benefit or harm innovation?
+
+=== layout: one-panel
+
+# 32. It Still Has to Be Your Invention
+
+@body
+
+- The America Invents Act introduced first-inventor-to-file provisions effective March 16, 2013 for the applicable applications and claims.
+- This is not permission to take another person's invention and file first. Inventorship and derivation still matter.
+- The earlier first-to-invent framework could require evidence about conception and other invention events.
+- Current and transitional rules depend on the application's circumstances; do not apply one slogan to every old patent.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2159.html
+
+=== layout: one-panel
+
+# 32. Prior Art Can Be More Than a Patent
+
+@body
+
+- Earlier patents, publications, public uses, sales, and other qualifying disclosures can matter under the applicable rules.
+- A concept need not have been sold as a working commercial product to appear in prior art.
+- Publication can help communicate science while affecting future patent options. U.S. grace-period provisions are limited and are not a worldwide safety net.
+- For your company, consider disclosure and filing before publicly sharing a new invention.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2159.html
+
+=== layout: one-panel
+
+# 32. How a Patent Can Be Challenged
+
+@body
+
+- An examiner's allowance is not a guarantee that every claim will survive later review.
+- Available proceedings can test issues such as earlier disclosures or other requirements, depending on the forum and procedure.
+- Distinguish a dispute about who invented something from a challenge to whether a claim is valid.
+- Compare the cost and accessibility of challenges with the public interest in removing claims that should not have issued.
+
+@citation
+
+https://www.uspto.gov/web/offices/pac/mpep/s2159.html
+

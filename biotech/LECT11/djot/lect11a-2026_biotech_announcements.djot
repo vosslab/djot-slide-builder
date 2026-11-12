@@ -1,0 +1,313 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 11A
+
+## Announcements
+## Dr. Neil Voss
+## Nov 12, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- _Announcements_
+- Form Your Group Company
+- Group Project Guidelines
+- Set #6: Regulation of Biotechnology
+
+=== layout: one-panel
+
+@body
+
+![Lake Effect Snow Tonight &#45; Friday AM](assets/weather_story/chicago_701e291e1fe76d14608fb7b2edd3525577fdef2bfec5a19197233cd71133e8e9.webp)
+
+Snow is expected to mix in at times tonight through Friday morning and may lead to slushy accumulations&#44; especially near the Illinois&#45;Indiana state line&#46;\
+  Be prepared for slowed to at times slippery travel\
+  and reduced visibility in snow if traveling&#33;
+
+@citation
+
+NWS Chicago, retrieved Nov 12, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: one-panel
+
+@body
+
+![Approximate Lake Effect Timing and Precip Type](assets/weather_story/chicago_ac2a5c9e89059c545783b5a586e890a97cc17f9c3f07e5fa3f0ab6b578e8efb0.webp)
+
+Here&#39;s a look at approximate timing of lake effect showers expected Thursday through Friday afternoon&#46; Snow will mix in at times&#44; especially tonight into Friday morning near the IL&#45;IN state line&#46; The band begins to focus mainly into northwest Indiana Friday night into early Saturday when additional snow showers may occur&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 12, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: one-panel
+
+@body
+
+![Five Day Outlook](assets/weather_story/chicago_4ab1cf2b00dc61981cb3b38e35e4e91325648018bd5b4132334711f1c8b34442.webp)
+
+Chilly weather settles into the region through the end of the week with a multi&#45;day stretch of lake effect rain showers expected&#44; at times mixed with or changing over to snow&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 12, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: prompt
+
+# Breakout Room Chat
+
+@prompt
+
+What everyday object deserves a warning label, and what should it say?
+
+@examples
+
+Introduce yourself, then share your warning. A snooze button: "May cause accidental time travel." A LEGO brick: "Shoes strongly recommended." What would your group put on the label?
+
+=== layout: one-panel
+
+# Next Week: November 19
+
+@body
+
+- [*Company Vision Report (Form) due Nov 19.*]{color=red} Select one product and submit once per group.
+- Set #7: Bioethics in Biotechnology
+- Homework 6 is assigned; check Blackboard for its instructions and deadline.
+- Nov 26: no class, Thanksgiving week.
+
+=== layout: big-image
+
+@image
+
+![Recording reminder](repo:evergreen/assets/rec_reminder_image.png)
+
+@caption
+
+Make Sure Dr. Voss Is Recording
+
+=== include: repo:evergreen/youtube_channel.djot
+
+=== layout: big-image
+
+@image
+
+![Stump the Vibe Coder&#44; Episode 37](assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
+
+@caption
+
+Stump the Vibe Coder &#35;37\
+Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
+Play the Game: https://vosslab.github.io/bad-cell-day/
+
+=== include: repo:biotech/evergreen/course_information.djot
+
+=== include: repo:biotech/evergreen/zoom_guidance.djot
+
+=== layout: section
+
+# Course Content
+
+=== layout: one-panel
+
+# Important Course Links
+
+@body
+
+- Biotechnology syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/
+- Current course schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/
+- Projects and requirements
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/
+- Points and assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+
+=== layout: one-panel
+
+# Optional Background Reading
+
+@body
+
+- There is no required textbook for this course.
+- Optional reference: _Biotechnology: The Technological Applications of Genetics and Genomics_, third edition, Clark and colleagues.
+- Tonight: regulation, biosafety, clinical evidence, and intellectual property. This set uses outside sources rather than one textbook chapter.
+- Use the assigned Set #6 topic list and appropriate outside sources to prepare.
+
+=== layout: subsection
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# Course Point Plan
+
+@body
+
+| Component | Points |
+| --- | --- |
+| Individual company project | 88 |
+| Group company project | 91 |
+| In-class discussion | 100 |
+| Talking-point assignments | 72 |
+
+Blackboard is the authoritative record for your scores.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+
+=== layout: one-panel
+
+# The Project Transition
+
+@body
+
+- Your individual projects are complete.
+- Now use the pitches, feedback, and executive summaries to choose a shared company.
+- [*Tonight, Nov 12: groups formed.*]{color=red}
+- *Nov 19:* select your group project by completing the Company Vision Report (Form).
+- *Dec 10:* group presentations.
+- *Dec 17:* group business plan due.
+
+=== layout: one-panel
+
+# This Week's Work
+
+@body
+
+- Set #6: Regulation of Biotechnology is tonight's topic.
+- [*Form your group tonight.*]{color=red} Agree on how you will communicate and meet.
+- Homework 5 is assigned; use Blackboard for instructions and the submission deadline.
+- Prepare one shared company vision for November 19.
+- Next week: Set #7, the Company Vision Report (Form), and Homework 6.
+
+=== layout: one-panel
+
+# Talking Points: One Slide, One Minute
+
+@body
+
+- Research your assigned topic and bring one useful angle to the class.
+- Use relevant images, short phrases, and your own words.
+- Put detailed speaking notes in the presenter notes.
+- If another student shares your topic, add a different example or explanation.
+- Ask thoughtful questions and make connections in the chat.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biotech/TALKING_POINTS/
+
+=== layout: one-panel
+
+# Discussion Marks
+
+@body
+
+- Be ready to contribute when class starts.
+- Ask a clarifying question, explain your reasoning, or connect two ideas.
+- Listen to the other presenters; build on what they say.
+- A greeting or agreement alone is not a discussion contribution.
+- Use your proper first name or a consistent nickname in Zoom.
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Paste current talking marks here](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/talking_marks_paste_here.png)
+
+@caption
+
+Talking Marks
+
+@notes
+
+Review the current talking marks with the class and explain how participation affects the totals.
+
+=== layout: one-panel
+hidden: true
+
+# Student Profile and Discord Signup
+
+@body
+
+- These assignments were due September 21 and are complete.
+- Keep using Discord for course communication.
+
+=== layout: one-panel
+hidden: true
+
+# BioTech News: December 3
+
+@body
+
+- Our next BioTech News discussion is December 3.
+- Choose a biotechnology article from the past two years with a clear biological mechanism.
+- Use the assigned slide and put the article link in the speaker notes.
+- Explain the product or process in one minute.
+
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+
+=== include: repo:evergreen/natural_science_club.djot
+hidden: true
+
+=== layout: subsection
+hidden: true
+
+# Course Evaluations
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- Complete the survey when the university sends the invitation.
+- https://roosevelt.campuslabs.com/eval-home/
+- Watch for the actual evaluation window and deadline.
+
+=== layout: one-panel
+hidden: true
+
+# Evaluations and Business-Plan Submission
+
+@body
+
+- I link class evaluation completion to extra time for business-plan submission.
+- Evaluation completion can add up to five more days.
+- I can see only total completion, not individual students' responses.
+- Watch for the confirmed evaluation window and any announced adjusted deadline.
+
+=== layout: subsection
+
+# Veridian Dynamics
+
+=== layout: two-panels
+
+# Veridian Dynamics
+
+@left
+
+![Veridian Dynamics](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/image_010.png)
+
+@right
+
+## #10: Mistakes
+
+[*Mistakes. We all make them.*]{color=red}
+
+"We're sorry. You're welcome."
+
+=== layout: theend
+
+# THE END

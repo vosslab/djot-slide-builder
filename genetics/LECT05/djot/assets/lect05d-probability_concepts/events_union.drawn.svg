@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="604" height="406" viewBox="0 0 604 406" role="img" aria-labelledby="union-title union-desc">
+  <title id="union-title">Union of events A and B</title>
+  <desc id="union-desc">Two equal overlapping circles inside sample space S. The whole of A and B, including their overlap, is shaded uniformly gray. A has a blue-violet outline and B a green outline.</desc>
+  <rect width="604" height="406" fill="#ffffff"/>
+  <rect id="sample-space" x="12" y="62" width="580" height="332" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <g id="union-fill" fill="#d8d8d8">
+    <circle cx="243" cy="231" r="116"/>
+    <circle cx="361" cy="231" r="116"/>
+  </g>
+  <g id="event-outlines" fill="none" stroke-width="4">
+    <circle id="event-a" cx="243" cy="231" r="116" stroke="#4925d9"/>
+    <circle id="event-b" cx="361" cy="231" r="116" stroke="#188126"/>
+  </g>
+  <g id="labels" fill="#111111" font-family="Atkinson Hyperlegible Next" font-size="40" font-style="italic">
+    <text x="111" y="126">A</text>
+    <text x="461" y="126">B</text>
+    <text x="550" y="45">S</text>
+  </g>
+</svg>

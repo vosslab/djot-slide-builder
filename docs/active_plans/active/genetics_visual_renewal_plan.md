@@ -15,6 +15,10 @@ progress and evidence; historical reviews and exports do not establish acceptanc
 
 ## Scope and priorities
 
+`biotech/LECT11` is excluded entirely from this goal because another manager will process
+those slides. Continue Genetics and Biostatistics work; this exclusion overrides the
+permission to finish already-started Biotechnology work in that directory.
+
 - Draw suitable clipart, organisms, apparatus, biological structures and mechanisms, and other
   scientific illustrations. Keep or reuse strong accepted artwork and refine promising work.
 - Select images actually used in lectures, including raster artwork inside mixed SVGs, by likely

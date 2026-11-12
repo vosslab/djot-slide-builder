@@ -1,0 +1,331 @@
+=== layout: subsection
+
+# 1. The Biologics Control Act of 1902
+
+=== layout: one-panel
+
+# 1. Questions (1 of 2)
+
+@body
+
+- What event led to the first U.S. law regulating biological products such as vaccines and antitoxins?
+- Who was Jim the Horse?
+- How did the Biologics Control Act make sure that vaccines and other biologics were safe for public use?
+- Why did the government decide to require licenses for facilities that made biological products?
+- What role did the Hygienic Laboratory (later the NIH) play in enforcing the new rules?
+- How did this law begin the idea that the federal government should inspect and approve medical products before use?
+
+=== layout: one-panel
+
+# 1. Questions (2 of 2)
+
+@body
+
+- How did the Biologics Control Act influence later drug and vaccine laws in the United States?
+
+=== layout: one-panel
+
+# 1. A Medicine Can Carry a Second Disease
+
+@body
+
+- In 1901, diphtheria antitoxin contaminated with tetanus killed children in St. Louis. The antitoxin came from a horse named Jim.
+- The intended active ingredient was useful. The contaminated preparation was lethal.
+- This is a manufacturing problem: the identity of the treatment alone cannot establish the safety of each lot.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: one-panel
+
+# 1. License Producers, Inspect Production
+
+@body
+
+- The 1902 Act required federal licensing of establishments and biological products, with inspection and oversight of production.
+- The Hygienic Laboratory helped test products and establish standards; this institution later became part of NIH.
+- Biologics vary with their living source and manufacturing process. Traceability, testing, and control of contamination matter before a product reaches patients.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: one-panel
+
+# 1. Follow One Lot Backward
+
+@body
+
+- A patient becomes ill after an antitoxin injection. Which lot did they receive? Which other patients received it?
+- Can the producer identify the source animal, preparation date, tests, storage conditions, and distribution records?
+- The modern connection is lot control: a vaccine or recombinant protein needs reproducible identity, purity, potency, and appropriate safety testing.
+- Knowing the gene sequence does not prove that a vial contains the right, uncontaminated product.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: big-image
+
+@image
+
+![1. From Source Material to Patients](assets/set6_drawings/lot_control.drawn.svg)
+
+@caption
+
+Identity, purity, potency, and traceability connect the production system to a patient receiving one lot.
+
+=== layout: big-image
+
+@image
+
+![1. Animal-Derived Antitoxin](assets/set6_sources/topic_01_019.png)
+
+@caption
+
+A historical photograph links antitoxin production to its animal source. Which records would connect a source animal to a particular distributed lot?
+
+=== layout: subsection
+
+# 2. The Pure Food and Drug Act of 1906
+
+=== layout: one-panel
+
+# 2. Questions
+
+@body
+
+- What public health problems led to the creation of the Pure Food and Drug Act?
+- How did the law define misbranding and adulteration, and why were these ideas important for consumer safety?
+- Who was Dr. Harvey Wiley, and how did his "Poison Squad" experiments help convince Congress to act?
+- How did the 1906 Act change how medicines and foods were labeled and sold in the United States?
+- Why was this law considered the foundation for the future Food and Drug Administration (FDA)?
+- How did this act help build public trust in science-based health regulation?
+
+=== layout: one-panel
+
+# 2. What Is Actually in the Bottle?
+
+@body
+
+- Adulteration concerns a product's composition or quality. Misbranding concerns false or misleading labeling.
+- The 1906 law attacked adulterated and misbranded foods and drugs moving through interstate commerce.
+- A customer needs to know what they are buying. An honest label still does not prove that a treatment works.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: one-panel
+
+# 2. The Poison Squad and Public Pressure
+
+@body
+
+- Harvey Wiley led investigations of food adulteration and experiments on preservatives using volunteers nicknamed the Poison Squad.
+- Investigative journalism and public concern helped turn food and drug problems into a federal responsibility.
+- The Bureau of Chemistry enforced the 1906 law. The agency acquired the FDA name in 1930; the modern organization did not appear fully formed in 1906.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: one-panel
+
+# 2. Truthful Label, Useless Cure
+
+@body
+
+- Imagine a bottle accurately labeled as containing alcohol and an herbal extract, marketed as a cure for diabetes.
+- Identifying the ingredients answers one question. Establishing safety and clinical benefit answers two different questions.
+- The limits of labeling-based enforcement help explain why later laws added stronger premarket and efficacy requirements.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: big-image
+
+@image
+
+![2. A Public Campaign for Pure Food](assets/set6_sources/topic_02_023.jpg)
+
+@caption
+
+The 1906 campaign made adulteration and misleading labels visible to consumers. What can a truthful label establish, and what does it leave untested?
+
+=== layout: subsection
+
+# 3. The Food, Drug, and Cosmetic Act of 1938
+
+=== layout: one-panel
+
+# 3. Questions
+
+@body
+
+- What tragic event led to Congress passing the 1938 FD&C Act?
+- How did the FD&C Act expand the government's ability to test and approve drugs before they reached the public?
+- What new powers did the FDA receive to inspect manufacturing plants and control drug labeling?
+- How did the Act change the meaning of "safe for use" when applied to drugs and cosmetics?
+- How did this law build the structure for modern drug approval systems still used today?
+- How did the new requirements protect consumers from untested or mislabeled medical products?
+
+=== layout: one-panel
+
+# 3. The Solvent Was the Problem
+
+@body
+
+- In 1937, Elixir Sulfanilamide used diethylene glycol as a solvent. More than 100 people died.
+- Sulfanilamide had antibacterial activity. That did not make the new liquid formulation safe.
+- A product includes the active molecule, formulation, contaminants, dose, route, and conditions of use. Changing one can change the risk.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: one-panel
+
+# 3. Safety Before the Sale
+
+@body
+
+- The 1938 FD&C Act required evidence of safety for new drugs before marketing and strengthened inspection and enforcement powers.
+- It also extended federal oversight to cosmetics and therapeutic devices.
+- These categories did not all acquire the same approval system. Ordinary cosmetics generally do not undergo FDA premarket approval, apart from applicable requirements such as color-additive approval.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: one-panel
+
+# 3. Do Not Give 1938 Credit for 1962
+
+@body
+
+- The central 1938 advance was new-drug safety review. The 1962 amendments added the modern requirement for substantial evidence of effectiveness.
+- Safe and effective are separate claims. A useless treatment can harm patients by delaying useful care.
+- For biotechnology, ask both whether the proposed mechanism can work and whether the manufactured product produces a worthwhile clinical outcome.
+
+@citation
+
+https://www.fda.gov/about-fda/fda-history/milestones-us-food-and-drug-law
+
+=== layout: big-image
+
+@image
+
+![3. The Elixir Sulfanilamide Formulation](assets/set6_sources/topic_03_171.png)
+
+@caption
+
+The active drug and the liquid formulation were different safety questions. The solvent turned a useful antibacterial compound into a deadly preparation.
+
+=== layout: subsection
+
+# 4. FIFRA: Registration, Risk, and Bt Crops
+
+=== layout: one-panel
+
+# 4. Questions
+
+@body
+
+- Why did the U.S. first pass Federal Insecticide, Fungicide, and Rodenticide Act in 1947, and what problem was it meant to solve?
+- How does FIFRA help the government protect the environment as well as public health?
+- How did the 1972 revision change the law from simple registration to full safety testing under the EPA?
+- Why was it important to move pesticide regulation from the USDA to the EPA?
+- How did FIFRA set the legal groundwork for regulating genetically modified pest-resistant crops like Bt corn?
+- What kind of data do manufacturers have to provide to show a pesticide or GM crop is safe?
+
+=== layout: one-panel
+
+# 4. From Labels to Risk Review
+
+@body
+
+- FIFRA began in 1947 and was substantially strengthened in 1972 after EPA was established in 1970.
+- Pesticide registration evaluates proposed uses, exposure, and risks under the applicable legal standards.
+- The label specifies legally enforceable conditions of use. A pesticide is not safe under every dose, route, or use just because a product is registered.
+
+@citation
+
+https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-plant-incorporated-protectants
+
+=== layout: one-panel
+
+# 4. The Plant Makes the Pesticide
+
+@body
+
+- Bt corn produces an insecticidal protein derived from Bacillus thuringiensis.
+- EPA regulates the pesticidal substance and the genetic material needed to produce it as a plant-incorporated protectant.
+- Relevant questions include effects on target pests, non-target organisms, food-related exposures, and the evolution of resistant insects.
+- The entire plant is not simply treated as a bottle of sprayed pesticide.
+
+@citation
+
+https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-plant-incorporated-protectants
+
+=== layout: one-panel
+
+# 4. Hazard, Exposure, and Resistance
+
+@body
+
+- Hazard asks what harm an agent can cause. Risk also depends on exposure and conditions of use.
+- Do not confuse Bt insect resistance with herbicide tolerance. These are different traits with different biological consequences.
+- Resistance management can require refuges and monitoring. A successful insecticidal trait creates selection pressure for insects that survive it.
+- Ask what evidence would change the proposed use, restrictions, or monitoring plan.
+
+@citation
+
+https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/overview-plant-incorporated-protectants
+
+=== layout: big-image
+
+@image
+
+![4. Bt Corn: the Pesticidal Trait](assets/set6_drawings/bt_crop.drawn.svg)
+
+@caption
+
+The trait, exposure, target susceptibility, and selection for resistance connect the molecular mechanism to regulatory questions.
+
+=== layout: one-panel
+
+# 4. Glyphosate: Hazard and Exposure
+
+@body
+
+- The insecticidal Bt trait and herbicide tolerance are different examples. Herbicide exposure raises its own questions.
+- IARC classified glyphosate as probably carcinogenic to humans in 2015, a hazard classification.
+- Risk assessments also consider exposure, formulation, route, duration, and use. Different bodies can answer different questions or weigh evidence differently.
+- The word WHO does not identify one interchangeable conclusion: IARC and the joint FAO/WHO pesticide-residue assessment have different roles.
+
+@citation
+
+https://www.iarc.who.int/wp-content/uploads/2018/07/MonographVolume112-1.pdf
+
+=== layout: one-panel
+
+# 4. Ask Which Exposure Was Studied
+
+@body
+
+{table-style=comparison}
+| Scenario | What You Need to Know |
+| --- | --- |
+| An occupational applicator | Product, frequency, protective measures, and cumulative exposure |
+| A dietary residue | Chemical, concentration, consumption, and the exposure estimate |
+| An animal experiment | Dose, route, duration, controls, and relevance to people |
+
+An old news headline or a breakfast-cereal serving calculation cannot replace this comparison.
+
+@citation
+
+https://www.iarc.who.int/wp-content/uploads/2018/07/MonographVolume112-1.pdf
+
